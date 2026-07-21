@@ -1,0 +1,18 @@
+media:
+  input: assets
+  output: assets
+
+content:
+  - name: pages
+    label: Site Pages
+    type: collection
+    path: ""
+    filename: "{slug}"
+    format: raw
+    fields:
+      - name: body
+        label: Page Content
+        type: code
+    view:
+      fields: [filename]
+      primary: filename
