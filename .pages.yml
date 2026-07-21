@@ -3,8 +3,48 @@ media:
   output: /assets
 
 content:
+  - name: notes
+    label: Notes & Articles
+    type: collection
+    path: notes
+    subfolders: true
+    format: yaml-frontmatter
+    filename:
+      template: "{primary}/index.md"
+      field: create
+    exclude:
+      - index.html
+    view:
+      primary: title
+      fields: [title, eyebrow]
+    fields:
+      - name: layout
+        label: Layout
+        type: string
+        hidden: true
+        default: base.njk
+      - name: title
+        label: Title (page ka bada heading)
+        type: string
+        required: true
+      - name: description
+        label: Short description (heading ke neeche + Google par dikhega)
+        type: text
+      - name: eyebrow
+        label: Chhota label (heading ke upar) — jaise "Notes · Literary Ages"
+        type: string
+      - name: mark
+        label: Decorative letter — jaise "N"
+        type: string
+      - name: crumb_label
+        label: Breadcrumb text (chhota naam)
+        type: string
+      - name: body
+        label: Article
+        type: rich-text
+
   - name: pages
-    label: Site Pages
+    label: Site Pages (raw HTML)
     type: collection
     path: ""
     subfolders: true
@@ -18,7 +58,11 @@ content:
       - sitemap.xml
       - _redirects
       - .pages.yml
-      - CNAME
+      - .gitignore
+      - .node-version
+      - package.json
+      - package-lock.json
+      - eleventy.config.js
 
   - name: redirects
     label: Redirects (_redirects)
