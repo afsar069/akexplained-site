@@ -19,11 +19,6 @@ content:
       - _redirects
       - .pages.yml
       - CNAME
-    view:
-      layout: tree
-      node:
-        filename: index.html
-        hideDirs: others
 
   - name: redirects
     label: Redirects (_redirects)
