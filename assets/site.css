@@ -184,3 +184,22 @@ details.faq .body p:last-child{margin-bottom:0}
   *{animation:none!important;transition-duration:.01ms!important}
   html{scroll-behavior:auto}
 }
+
+/* ---------- Article body (notes / guides long-form content) ---------- */
+.article{max-width:740px;margin:0 auto;padding:36px 0 64px}
+.article h2{margin-top:34px;margin-bottom:14px}
+.article h2:first-child{margin-top:0}
+.article h3{font-family:var(--serif);color:var(--ink);font-weight:600;font-size:1.15rem;margin-top:26px;margin-bottom:10px}
+.article p{margin-bottom:16px}
+.article ul,.article ol{margin:0 0 16px 22px}
+.article li{margin-bottom:6px}
+.article blockquote{border-left:3px solid var(--teal);background:var(--tint);padding:14px 18px;margin:0 0 20px;border-radius:0 8px 8px 0;color:var(--ink);font-family:var(--serif)}
+.article img{border-radius:12px;margin:22px 0;border:1px solid var(--border)}
+.article figure{margin:22px 0}
+.article figcaption{font-size:.85rem;color:var(--body);text-align:center;margin-top:8px}
+.article table{width:100%;border-collapse:collapse;margin:0 0 20px;font-size:.94rem}
+.article th,.article td{border:1px solid var(--border);padding:8px 12px;text-align:left}
+.article th{background:var(--tint);font-weight:600;color:var(--ink)}
+.article a{text-decoration:underline;text-decoration-color:var(--border)}
+.article code{background:var(--tint);padding:2px 6px;border-radius:4px;font-size:.9em}
+.article hr{border:none;border-top:1px solid var(--border);margin:32px 0}
