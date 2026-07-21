@@ -1,18 +1,50 @@
 media:
   input: assets
-  output: assets
+  output: /assets
 
 content:
   - name: pages
     label: Site Pages
     type: collection
     path: ""
-    filename: "{slug}"
-    format: raw
-    fields:
-      - name: body
-        label: Page Content
-        type: code
+    subfolders: true
+    format: code
+    filename:
+      template: "{primary}/index.html"
+      field: create
+    exclude:
+      - 404.html
+      - robots.txt
+      - sitemap.xml
+      - _redirects
+      - .pages.yml
+      - CNAME
     view:
-      fields: [filename]
-      primary: filename
+      layout: tree
+      node:
+        filename: index.html
+        hideDirs: others
+
+  - name: redirects
+    label: Redirects (_redirects)
+    type: file
+    path: _redirects
+    format: code
+
+  - name: sitemap
+    label: Sitemap
+    type: file
+    path: sitemap.xml
+    format: code
+
+  - name: robots
+    label: robots.txt
+    type: file
+    path: robots.txt
+    format: code
+
+  - name: notfound
+    label: 404 Page
+    type: file
+    path: 404.html
+    format: code
