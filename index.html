@@ -931,59 +931,66 @@
   </div>
 </section>
 
-<section id="quizzes" style="padding:26px 0 64px;background:linear-gradient(var(--tint),var(--bg));border-top:1px solid var(--border)">
-  <div style="max-width:var(--maxw);margin:0 auto;padding:0 20px">
-    <div style="text-align:center;max-width:62ch;margin:0 auto 34px">
-      <h2 style="font-family:var(--serif);color:var(--ink);line-height:1.25;font-size:clamp(1.5rem,3vw,2.05rem);margin-bottom:8px">Test Yourself — The Quiz Section</h2>
-      <p style="font-size:1rem">Real PYQ papers, concept MCQs and topic quizzes — explanations built in.</p>
+<section id="quizzes" style="padding:34px 0 44px;background:linear-gradient(var(--tint),var(--bg));border-top:1px solid var(--border)">
+  <div style="max-width:720px;margin:0 auto;padding:0 20px">
+
+    <div style="text-align:center;max-width:62ch;margin:0 auto 24px">
+      <h2 style="font-family:var(--serif);color:var(--ink);line-height:1.25;font-size:clamp(1.5rem,3vw,2.05rem);margin-bottom:6px">Test Yourself — The Quiz Section</h2>
+      <p style="font-size:.95rem">Real PYQ papers, concept MCQs and topic quizzes — explanations built in.</p>
+      <span style="display:block;width:70px;height:3px;background:var(--teal);border-radius:2px;margin:12px auto 0"></span>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:22px;align-items:stretch;max-width:1020px;margin:0 auto">
 
-      <div style="background:#E3F1EC;border:2px solid var(--ink);border-radius:16px;padding:22px 20px 18px;box-shadow:6px 6px 0 var(--ink);transition:transform .18s,box-shadow .18s" style-hover="transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--ink)">
-        <span style="display:block;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)">Previous Year Questions</span>
-        <span style="display:block;font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,3.4vw,3rem);line-height:1;color:var(--teal);margin-top:8px">PYQ</span>
-        <span style="display:block;font-family:var(--serif);font-size:1.25rem;color:var(--ink);margin-top:6px">English Literature</span>
-        <span style="display:block;border-top:2px solid var(--ink);margin:15px 0 12px"></span>
-        <span style="display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--body);margin-bottom:12px">Choose a paper</span>
-        <div style="display:grid;gap:13px">
-          <sc-for list="{{ pyqPapers }}" as="p" hint-placeholder-count="4">
-            <a href="{{ p.href }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:10px 15px;font-weight:700;font-size:.92rem;color:var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s" style-hover="transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);color:var(--ink)">
-              <span>{{ p.label }}</span><span aria-hidden="true">→</span>
-            </a>
-          </sc-for>
-        </div>
-        <span style="display:flex;align-items:center;gap:9px;margin-top:18px;font-size:.86rem;font-weight:600;color:var(--body)"><span style="width:7px;height:7px;border-radius:50%;background:var(--body);flex:none"></span>Real exam questions · with explanations</span>
+    <div style="background:#fff;border:1px solid var(--border);border-radius:16px;padding:18px;box-shadow:0 6px 18px rgba(11,27,43,.05)">
+
+      <span style="display:block;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:12px">Choose your practice type</span>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+        <a href="/quizzes/pyq/" style="display:block;text-align:center;background:#EAF3EE;border:1px solid #CFE4D7;border-radius:12px;padding:16px 10px 14px;transition:transform .18s,box-shadow .18s" style-hover="transform:translateY(-3px);box-shadow:0 8px 18px rgba(15,107,74,.14)">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(11,27,43,.08);margin-bottom:9px">
+            <svg sc-camel-view-box="0 0 24 24" width="19" height="19" fill="none" stroke="var(--teal)" stroke-width="1.7"><path d="M7 3h7l4 4v14H7z"/><path d="M14 3v4h4"/><path d="M9.5 12.5l1.5 1.5 3-3.5"/></svg>
+          </span>
+          <span style="display:block;font-family:var(--serif);font-weight:700;font-size:1.4rem;color:var(--teal);line-height:1">PYQ</span>
+          <span style="display:block;font-size:.78rem;color:var(--body);margin-top:5px">Previous Year Questions</span>
+          <span style="display:block;font-size:1.05rem;color:var(--teal);margin-top:8px" aria-hidden="true">&rarr;</span>
+        </a>
+        <a href="/quizzes/mcq/" style="display:block;text-align:center;background:#FCEEE2;border:1px solid #F3D8C2;border-radius:12px;padding:16px 10px 14px;transition:transform .18s,box-shadow .18s" style-hover="transform:translateY(-3px);box-shadow:0 8px 18px rgba(214,110,42,.14)">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:#fff;box-shadow:0 3px 8px rgba(11,27,43,.08);margin-bottom:9px">
+            <svg sc-camel-view-box="0 0 24 24" width="19" height="19" fill="none" stroke="var(--accent)" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M9.2 9.3a2.8 2.8 0 0 1 5.4 1c0 1.8-2.6 2.2-2.6 3.7"/><circle cx="12" cy="17" r=".8" fill="var(--accent)" stroke="none"/></svg>
+          </span>
+          <span style="display:block;font-family:var(--serif);font-weight:700;font-size:1.4rem;color:var(--accent);line-height:1">MCQs</span>
+          <span style="display:block;font-size:.78rem;color:var(--body);margin-top:5px">Concept &amp; Topic Questions</span>
+          <span style="display:block;font-size:1.05rem;color:var(--accent);margin-top:8px" aria-hidden="true">&rarr;</span>
+        </a>
       </div>
 
-      <div style="background:#FAE7D8;border:2px solid var(--ink);border-radius:16px;padding:22px 20px 18px;box-shadow:6px 6px 0 var(--ink);transition:transform .18s,box-shadow .18s" style-hover="transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--ink)">
-        <span style="display:block;font-size:.74rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink)">Practice Questions</span>
-        <span style="display:block;font-family:var(--serif);font-weight:700;font-size:clamp(2.3rem,3.4vw,3rem);line-height:1;color:var(--accent);margin-top:8px">MCQ</span>
-        <span style="display:block;font-family:var(--serif);font-size:1.25rem;color:var(--ink);margin-top:6px">English Literature</span>
-        <span style="display:block;border-top:2px solid var(--ink);margin:15px 0 12px"></span>
-        <span style="display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--body);margin-bottom:12px">Choose a term</span>
-        <div style="display:grid;gap:13px">
-          <sc-for list="{{ mcqTerms }}" as="p" hint-placeholder-count="4">
-            <a href="{{ p.href }}" style="display:flex;align-items:center;justify-content:space-between;gap:12px;background:#fff;border:2px solid var(--ink);border-radius:10px;padding:10px 15px;font-weight:700;font-size:.92rem;color:var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .15s,box-shadow .15s" style-hover="transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--ink);color:var(--ink)">
-              <span>{{ p.label }}</span><span aria-hidden="true">→</span>
-            </a>
-          </sc-for>
-        </div>
-        <span style="display:flex;align-items:center;gap:9px;margin-top:18px;font-size:.86rem;font-weight:600;color:var(--body)"><span style="width:7px;height:7px;border-radius:50%;background:var(--body);flex:none"></span>Concept drills · one minute each</span>
-      </div>
+      <span style="display:block;border-top:1px solid var(--border);margin:16px 0 14px"></span>
+      <span style="display:block;font-size:.68rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);margin-bottom:12px">Topic Quizzes</span>
 
-      <div style="display:grid;gap:14px;align-content:stretch">
-        <sc-for list="{{ quizTopics }}" as="t" hint-placeholder-count="4">
-          <a href="{{ t.href }}" style="display:flex;align-items:center;justify-content:space-between;gap:14px;background:{{ t.bg }};border:2px solid var(--ink);border-radius:14px;padding:15px 18px;box-shadow:4px 4px 0 var(--ink);transition:transform .18s,box-shadow .18s" style-hover="transform:translate(-3px,-3px);box-shadow:9px 9px 0 var(--ink);color:var(--ink)">
-            <span>
-              <span style="display:block;font-weight:700;font-size:1.08rem;color:var(--ink);line-height:1.3">{{ t.name }}</span>
-              <span style="display:block;font-size:.84rem;color:var(--body);margin-top:3px">{{ t.meta }}</span>
-            </span>
-            <span aria-hidden="true" style="font-size:1.15rem;color:var(--ink);flex:none">→</span>
-          </a>
-        </sc-for>
+      <div style="display:grid;gap:9px">
+        <a href="/quizzes/british-literature/" style="display:flex;align-items:center;gap:11px;background:#EAF3EE;border-radius:11px;padding:10px 13px;transition:transform .16s" style-hover="transform:translateX(3px)">
+          <span style="flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:#fff"><svg sc-camel-view-box="0 0 24 24" width="16" height="16" fill="none" stroke="var(--teal)" stroke-width="1.7"><path d="M6 4h11a2 2 0 0 1 2 2v14H8a2 2 0 0 1-2-2z"/><path d="M6 4v14"/></svg></span>
+          <span style="flex:1"><b style="display:block;color:var(--teal);font-size:.9rem;line-height:1.3">British Literature</b><span style="font-size:.74rem;color:var(--body)">Ages &amp; Authors</span></span>
+          <span aria-hidden="true" style="color:var(--ink);font-size:.95rem">&rarr;</span>
+        </a>
+        <a href="/quizzes/literary-theory/" style="display:flex;align-items:center;gap:11px;background:#ECE9F6;border-radius:11px;padding:10px 13px;transition:transform .16s" style-hover="transform:translateX(3px)">
+          <span style="flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:#fff"><svg sc-camel-view-box="0 0 24 24" width="16" height="16" fill="none" stroke="#5B3FA6" stroke-width="1.7"><path d="M9 3a3 3 0 0 0-3 3 3 3 0 0 0-1 5 3 3 0 0 0 2 5 3 3 0 0 0 5 1V4a3 3 0 0 0-3-1Z"/><path d="M12 3a3 3 0 0 1 3 3 3 3 0 0 1 1 5 3 3 0 0 1-2 5 3 3 0 0 1-5 1"/></svg></span>
+          <span style="flex:1"><b style="display:block;color:#5B3FA6;font-size:.9rem;line-height:1.3">Literary Theory &amp; Cultural Study</b><span style="font-size:.74rem;color:var(--body)">Plato to Derrida</span></span>
+          <span aria-hidden="true" style="color:var(--ink);font-size:.95rem">&rarr;</span>
+        </a>
+        <a href="/quizzes/american-literature/" style="display:flex;align-items:center;gap:11px;background:#FCEEE2;border-radius:11px;padding:10px 13px;transition:transform .16s" style-hover="transform:translateX(3px)">
+          <span style="flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:#fff"><svg sc-camel-view-box="0 0 24 24" width="16" height="16" fill="none" stroke="var(--accent)" stroke-width="1.7"><path d="M20 5c-8 1-13 6-14 14M6 19c6-1 8-5 8-9"/></svg></span>
+          <span style="flex:1"><b style="display:block;color:var(--accent);font-size:.9rem;line-height:1.3">American Literature</b><span style="font-size:.74rem;color:var(--body)">Poe to Morrison</span></span>
+          <span aria-hidden="true" style="color:var(--ink);font-size:.95rem">&rarr;</span>
+        </a>
+        <a href="/quizzes/world-literature/" style="display:flex;align-items:center;gap:11px;background:#E4EDF7;border-radius:11px;padding:10px 13px;transition:transform .16s" style-hover="transform:translateX(3px)">
+          <span style="flex:none;display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:9px;background:#fff"><svg sc-camel-view-box="0 0 24 24" width="16" height="16" fill="none" stroke="#2E6BB5" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span>
+          <span style="flex:1"><b style="display:block;color:#2E6BB5;font-size:.9rem;line-height:1.3">World Literature</b><span style="font-size:.74rem;color:var(--body)">Homer to Marquez</span></span>
+          <span aria-hidden="true" style="color:var(--ink);font-size:.95rem">&rarr;</span>
+        </a>
       </div>
 
     </div>
+
   </div>
 </section>
 
