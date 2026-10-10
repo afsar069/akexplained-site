@@ -238,3 +238,37 @@ Reading time apne aap nikalta hai, koi field nahi chahiye.
   har page par poora pose fit ho. Purana bada feeka letter hata diya — dono takrate the.
 - Print stylesheet: print par menu, rail, footer gayab, sirf saaf text.
 - Bug fix: Victorian page ke lede me `**Queen Victoria**` ke asterisks dikh rahe the.
+
+---
+
+## 12. Review system aur chhote fixes
+
+### Scrollbars
+- Menu ka apna grey scrollbar **poora hata diya** — sirf green stroke bacha.
+- Page ka scrollbar **7px** (default ka aadha), colour `--scroll:#A3C8C1` (theme wala halka green).
+
+### Timeline
+Home page ke age cards ab seedhe article par jaate hain.
+`assets/home.js` ke `ages` array me jis age ka article ban chuka ho, usme
+`article:'/notes/<slug>/'` jod dein — bas. Jiska nahi bana, wo timeline page par jaata hai.
+Abhi sirf Victorian ka article hai.
+
+### Author section
+Photo ab **square** (132px, 16px corner radius), bio text chouda, quote box patla.
+
+### Reviews — kaise kaam karta hai
+1. Reader `/write-a-review/` par form bharta hai (naam, kaun hai, heading, stars, review, email).
+2. Review **Prof. Afsar Khan ko jaata hai**.
+3. Wo approve karke Pages CMS me daalte hain (**Student Reviews** → `assets/reviews.json`).
+4. Tabhi wo home page par dikhta hai. Koi review apne aap live nahi hota.
+
+**Email setup (abhi baki):** `assets/review-form.js` me sabse upar `ACCESS_KEY` khaali hai.
+web3forms.com par apna email daal kar key lijiye aur wahan chipka dijiye — phir review
+email par aayega. **Tab tak form WhatsApp par bhejta hai**, to kuch toota hua nahi hai.
+(Cloudflare Pages par forms built-in nahi hote, isliye ye raasta liya.)
+
+Photo upload abhi nahi hai — user ne baad me ke liye kaha. Default avatar lagta hai;
+kisi ka photo chahiye to wo WhatsApp par bheje, CMS me laga dijiye.
+
+**Safety:** review ka text bahar se aata hai, isliye page me daalne se pehle HTML
+escape hota hai (`esc()` in home.js). Test kiya gaya — script tag plain text banta hai.

@@ -223,7 +223,7 @@
     { slug:'restoration',    yr:'1660', name:'Restoration',        era:'1660 \u2013 1700',  who:'Dryden \u00b7 Behn \u00b7 Congreve' },
     { slug:'augustan',       yr:'1700', name:'Augustan',           era:'1700 \u2013 1798',  who:'Pope \u00b7 Swift \u00b7 Johnson' },
     { slug:'romantic',       yr:'1798', name:'Romantic',           era:'1798 \u2013 1837',  who:'Wordsworth \u00b7 Coleridge \u00b7 Keats' },
-    { slug:'victorian',      yr:'1837', name:'Victorian',          era:'1837 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy' },
+    { slug:'victorian',      yr:'1837', name:'Victorian',          era:'1837 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy', article:'/notes/victorian-age/' },
     { slug:'modern',         yr:'1901', name:'Modern',             era:'1901 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce' },
     { slug:'contemporary',   yr:'1945', name:'Contemporary',       era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie' },
   ];
@@ -239,12 +239,12 @@
   ];
 
   /* ---------- Student reviews ----------
-     Naya review add karne ke liye yahan ek object daal dijiye:
-       { name:'Priya Sharma', role:'NET Aspirant', stars:5,
-         photo:'/assets/reviews/priya.webp', text:'...' }
-     photo chhod dein to default avatar lag jayega.
-     4 ya zyada reviews hone par carousel apne aap chalne lagega. */
-  const reviews = [];
+     Reviews assets/reviews.json se aate hain, taaki Pages CMS se approve
+     karke publish kiye ja sakein. Code chhoone ki zarurat nahi.
+     Har item: { name, role, stars, photo, text }
+     4 ya zyada hone par carousel apne aap chalne lagta hai. */
+  let reviews = [];
+
 
   const MONTHS = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
@@ -351,7 +351,9 @@
     const grid = document.getElementById('ageGrid');
     if (!grid) return;
     grid.innerHTML = ages.map(function (a) {
-      return '<a class="agecard" href="/english-literature/#' + a.slug + '">' +
+      // Article ban chuka ho to reader seedha wahan jaaye; warna timeline page par.
+      const to = a.article || ('/english-literature/#' + a.slug);
+      return '<a class="agecard" href="' + to + '">' +
              '<span class="thumb"><img src="/assets/ages/' + a.slug + '.webp" alt="" width="480" height="300" loading="lazy">' +
              '<span class="yr">' + a.yr + '</span></span>' +
              '<h3>' + a.name + '</h3>' +
@@ -377,6 +379,14 @@
     }).join('');
   }
 
+  /* Review ka text bahar se aata hai, isliye page me daalne se pehle
+     HTML escape karna zaroori hai. */
+  function esc(v) {
+    return String(v == null ? '' : v)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   /* ---------- Reviews carousel ---------- */
   function renderReviews() {
     const track = document.getElementById('reviewTrack');
@@ -391,7 +401,6 @@
         '<div class="rvcard placeholder">' +
         '<img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60">' +
         '<p class="txt">Be the first one to review</p>' +
-        '<a class="btn gold" href="/go/whatsapp" rel="noopener">Write a review</a>' +
         '</div>' +
         '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>' +
         '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>';
@@ -399,13 +408,16 @@
     }
 
     track.innerHTML = reviews.map(function (r) {
-      const stars = '\u2605'.repeat(Math.max(1, Math.min(5, r.stars || 5)));
+      const n = Math.max(1, Math.min(5, parseInt(r.stars, 10) || 5));
+      const stars = '\u2605'.repeat(n) + '<span class="off">' + '\u2605'.repeat(5 - n) + '</span>';
+      const photo = /^\/[\w\-./]*$/.test(r.photo || '') ? r.photo : '/assets/avatar-placeholder.webp';
       return '<div class="rvcard">' +
              '<p class="stars">' + stars + '</p>' +
-             '<p class="txt">\u201C' + r.text + '\u201D</p>' +
+             (r.heading ? '<h3 class="rvhead">' + esc(r.heading) + '</h3>' : '') +
+             '<p class="txt">\u201C' + esc(r.text) + '\u201D</p>' +
              '<div class="who">' +
-             '<img class="face" src="' + (r.photo || '/assets/avatar-placeholder.webp') + '" alt="" width="46" height="46" loading="lazy">' +
-             '<span><b>' + r.name + '</b>' + (r.role ? '<i>' + r.role + '</i>' : '') + '</span>' +
+             '<img class="face" src="' + photo + '" alt="" width="46" height="46" loading="lazy">' +
+             '<span><b>' + esc(r.name) + '</b>' + (r.role ? '<i>' + esc(r.role) + '</i>' : '') + '</span>' +
              '</div></div>';
     }).join('');
 
@@ -448,10 +460,17 @@
     show();
   }
 
+  function loadReviews() {
+    return fetch('/assets/reviews.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { if (d && Array.isArray(d.items)) reviews = d.items; })
+      .catch(function () { /* file na mile to placeholder hi dikhega */ });
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     renderAges();
     renderVideos();
-    renderReviews();
+    loadReviews().then(renderReviews);
     renderBirthday();
     runTypewriter();
     wireSearch();

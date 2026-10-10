@@ -15,10 +15,19 @@
   --sans:'Source Sans 3',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   --maxw:1180px; --navw:272px;
   --glow:0 0 0 3px rgba(15,118,110,.14);
+  --scroll:#A3C8C1;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+html{
+  scroll-behavior:smooth;-webkit-text-size-adjust:100%;
+  scrollbar-width:thin;scrollbar-color:var(--scroll) transparent;
+}
+/* Page ka scrollbar: default se aadha patla, aur theme ke halke green me */
+::-webkit-scrollbar{width:7px;height:7px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:var(--scroll);border-radius:4px}
+::-webkit-scrollbar-thumb:hover{background:var(--teal)}
 body{
   background:var(--bg);color:var(--body);font-family:var(--sans);
   font-size:16.5px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:clip;
@@ -66,9 +75,13 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   background:linear-gradient(170deg,#FAF5E9,#F3EEDF);
   border-right:2px solid var(--teal);box-shadow:4px 0 26px rgba(22,48,74,.10);
   display:flex;flex-direction:column;overflow-y:auto;overscroll-behavior:contain;
+  /* Menu ka apna grey scrollbar design kharab kar raha tha — poora hata diya.
+     Sirf dayein taraf ka green stroke rehta hai. */
+  scrollbar-width:none;-ms-overflow-style:none;
   transform:translateX(-100%);visibility:hidden;
   transition:transform .3s cubic-bezier(.3,.8,.3,1),visibility .3s;
 }
+.side-nav::-webkit-scrollbar{width:0;height:0;display:none}
 .nav-open .side-nav{transform:translateX(0);visibility:visible}
 .side-nav .navhead{padding:20px 18px 16px;border-bottom:1px solid var(--border)}
 .side-nav ul{list-style:none;margin:0;padding:12px 12px 26px;display:flex;flex-direction:column;gap:3px}
@@ -396,3 +409,47 @@ a.railbox:hover .go{color:var(--teal-dark)}
   *{animation:none!important;transition-duration:.01ms!important}
   html{scroll-behavior:auto}
 }
+
+/* ==========================================================
+   FORMS — review form (aage contact form bhi isi style me)
+   ========================================================== */
+.formcard{
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:16px;
+  padding:26px 28px;max-width:620px;
+}
+.field{margin-bottom:18px}
+.field label{display:block;font-weight:600;color:var(--ink);font-size:.92rem;margin-bottom:6px}
+.field .hint{display:block;font-weight:400;font-size:.82rem;color:var(--body);margin-top:2px}
+.field input[type=text],.field input[type=email],.field textarea{
+  width:100%;font-family:var(--sans);font-size:.98rem;color:var(--ink);
+  background:#fff;border:1.5px solid var(--border);border-radius:11px;padding:11px 14px;
+  transition:border-color .2s,box-shadow .25s;
+}
+.field textarea{min-height:150px;resize:vertical;line-height:1.6}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:var(--glow)}
+.field .req{color:var(--accent)}
+
+/* Stars — radio buttons, keyboard se bhi chalte hain */
+.stars{display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+.stars input{position:absolute;opacity:0;width:0;height:0}
+.stars label{
+  cursor:pointer;font-size:2rem;line-height:1;color:#DCD6C2;margin:0;
+  transition:color .15s,transform .15s;
+}
+.stars label:hover,.stars label:hover ~ label,
+.stars input:checked ~ label{color:var(--gold)}
+.stars label:hover{transform:scale(1.14)}
+.stars input:focus-visible + label{outline:3px solid var(--teal);outline-offset:3px;border-radius:5px}
+
+.formnote{
+  background:var(--tint);border:1px solid var(--border);border-radius:12px;
+  padding:14px 17px;font-size:.88rem;margin-bottom:22px;
+}
+.formnote p{margin:0;max-width:none}
+.formnote p + p{margin-top:7px}
+
+.formmsg{border-radius:12px;padding:14px 17px;margin-top:18px;font-size:.92rem;display:none}
+.formmsg.show{display:block}
+.formmsg.ok{background:#E7F2EA;border:1px solid #9FCBAE;color:#15803D}
+.formmsg.bad{background:#FBECE6;border:1px solid #E8BBA4;color:#A33A12}
+.formactions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:4px}

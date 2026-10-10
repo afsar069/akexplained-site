@@ -95,6 +95,39 @@ content:
       - package-lock.json
       - eleventy.config.js
 
+  - name: reviews
+    label: Student Reviews (approve karke publish)
+    type: file
+    path: assets/reviews.json
+    format: json
+    fields:
+      - name: items
+        label: Published reviews
+        type: object
+        list: true
+        fields:
+          - name: name
+            label: Student ka naam
+            type: string
+            required: true
+          - name: role
+            label: Kaun hai (jaise "NET Aspirant")
+            type: string
+          - name: heading
+            label: Heading (review ki ek line)
+            type: string
+          - name: stars
+            label: Stars (1 se 5)
+            type: number
+            default: 5
+          - name: photo
+            label: Photo (khaali chhodein to default avatar lagega)
+            type: image
+          - name: text
+            label: Review
+            type: text
+            required: true
+
   - name: redirects
     label: Redirects (_redirects)
     type: file
