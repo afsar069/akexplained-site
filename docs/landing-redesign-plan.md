@@ -209,8 +209,11 @@ Inner / article page ka design (user ne kaha: "usko baad me change karenge").
 Colour, font, menu, footer, hover glow — teeno me same.
 
 ### Reading column
-- **545px chaudi, 16px Literata = ~71 characters per line** (browser me naapa gaya).
-  Aaram se padhne ki range 65-75 hai.
+- **640px chaudi, 19px Literata = 70 characters per line** (browser me naapa gaya).
+  Mobile par 39 characters — phone ki sahi range (35-45) me.
+- Ye naap un sites se milaya gaya hai jahan sabse zyada lambe article padhe jaate hain:
+  Medium ~21px/680px, NYT ~19px/660px, Substack ~20px/728px, Guardian ~17px/620px.
+  Sab serif body font par hain aur sabka font 16px se bada hai.
 - Times New Roman **nahi** li gayi: wo print ke liye bani thi, screen par patli
   padti hai, aur Android par wo font hoti hi nahi (system kuch aur laga deta hai).
   Literata screen reading ke liye hi banayi gayi hai aur pehle se load ho rahi hai.
@@ -229,6 +232,9 @@ Colour, font, menu, footer, hover glow — teeno me same.
 Reading time apne aap nikalta hai, koi field nahi chahiye.
 
 ### Aur
-- Har page ke pagehead me halka floral motif — build ke waqt apne aap lagta hai.
+- Har page ke pagehead me kitaab padhti ladki ka motif (`assets/reader-motif.webp`,
+  hero artwork se kaata hua) — sir se kitaab tak, 42% opacity, right kinare tak bleed.
+  Build ke waqt apne aap lag jata hai. Pagehead ki min-height 290px rakhi hai taaki
+  har page par poora pose fit ho. Purana bada feeka letter hata diya — dono takrate the.
 - Print stylesheet: print par menu, rail, footer gayab, sirf saaf text.
 - Bug fix: Victorian page ke lede me `**Queen Victoria**` ke asterisks dikh rahe the.

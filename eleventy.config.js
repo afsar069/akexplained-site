@@ -48,8 +48,8 @@ module.exports = function (eleventyConfig) {
 
     // Har page ke pagehead me wahi halka floral motif lagao, taaki hub pages
     // aur article pages dono par brand ka ek jaisa feel rahe.
-    const MOTIF = '<img class="motif" src="/assets/leaf-motif.webp" alt="" ' +
-                  'width="400" height="233" aria-hidden="true">';
+    const MOTIF = '<img class="motif" src="/assets/reader-motif.webp" alt="" ' +
+                  'width="440" height="525" aria-hidden="true">';
     if (out.includes('<section class="pagehead">') && !out.includes('class="motif"')) {
       out = out.replace('<section class="pagehead">', '<section class="pagehead">\n  ' + MOTIF);
     }
