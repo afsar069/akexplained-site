@@ -21,6 +21,8 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.ignores.add("404.html");
+  // Internal file hai — isse koi public page nahi banna chahiye.
+  eleventyConfig.ignores.add("CLAUDE.md");
   // Review system login ke saath chalu hoga. Tab tak ye page build nahi hota —
   // file repo me padi hai, chalu karne ke liye bas ye line hata dein.
   eleventyConfig.ignores.add("write-a-review/**");
