@@ -40,9 +40,9 @@
     }
 
     function asText(v) {
-      return 'Naya review — AK Explained\n\n' +
-             'Naam: ' + v.name + '\n' +
-             (v.role ? 'Kaun: ' + v.role + '\n' : '') +
+      return 'New review — AK Explained\n\n' +
+             'Name: ' + v.name + '\n' +
+             (v.role ? 'Preparing for: ' + v.role + '\n' : '') +
              'Heading: ' + v.heading + '\n' +
              'Stars: ' + v.stars + '/5\n' +
              (v.email ? 'Email: ' + v.email + '\n' : '') +
@@ -54,21 +54,21 @@
       const v = values();
 
       if (!v.name || !v.heading || !v.review) {
-        return say('bad', 'Naam, heading aur review — teeno bharna zaroori hai.');
+        return say('bad', 'Please fill in your name, a heading and your review.');
       }
       if (v.review.length < 20) {
-        return say('bad', 'Review thoda aur likhiye — kam se kam 20 akshar.');
+        return say('bad', 'Please write a little more — at least 20 characters.');
       }
 
       // Key nahi lagi hai to WhatsApp par bhej do, taaki review kabhi khoye nahi.
       if (!ACCESS_KEY) {
         window.open(WHATSAPP + encodeURIComponent(asText(v)), '_blank', 'noopener');
-        return say('ok', '<strong>Shukriya!</strong> Aapka review WhatsApp par khul gaya hai — bas send dabaa dijiye. ' +
-                         'Prof. Afsar Khan padh kar approve karenge, phir wo site par dikhega.');
+        return say('ok', '<strong>Thank you.</strong> Your review has opened in WhatsApp — just press send. ' +
+                         'Prof. Afsar Khan will read it, and it will appear on the site once he approves it.');
       }
 
       btn.disabled = true;
-      btn.textContent = 'Bhej rahe hain…';
+      btn.textContent = 'Sending…';
 
       fetch('https://api.web3forms.com/submit', {
         method: 'POST',
@@ -85,12 +85,12 @@
         .then(function (d) {
           if (!d.success) throw new Error(d.message || 'send failed');
           form.reset();
-          say('ok', '<strong>Shukriya!</strong> Aapka review Prof. Afsar Khan ko pahunch gaya hai. ' +
-                    'Wo padh kar approve karenge, phir wo site par dikhega.');
+          say('ok', '<strong>Thank you.</strong> Your review has reached Prof. Afsar Khan. ' +
+                    'It will appear on the site once he has approved it.');
         })
         .catch(function () {
-          say('bad', 'Bhejne me dikkat aayi. <a href="' + WHATSAPP + encodeURIComponent(asText(v)) +
-                     '" target="_blank" rel="noopener">WhatsApp par bhej dijiye</a> — wo zaroor pahunchega.');
+          say('bad', 'That did not go through. <a href="' + WHATSAPP + encodeURIComponent(asText(v)) +
+                     '" target="_blank" rel="noopener">Send it on WhatsApp instead</a> — it will reach him.');
         })
         .then(function () { btn.disabled = false; btn.textContent = 'Send my review'; });
     });

@@ -249,7 +249,11 @@
   min-height:184px;gap:13px;
 }
 .rvcard.placeholder .face{width:60px;height:60px;opacity:.75}
-.rvcard.placeholder .txt{flex:0;color:var(--body);font-style:italic}
+.rvcard.placeholder .txt{flex:0;color:var(--body);font-style:italic;max-width:30ch}
+.rvcard.placeholder .soonbadge{
+  display:inline-block;background:var(--gold);color:#fff;font-size:.62rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;padding:4px 11px;border-radius:999px;
+}
 .rvcard.placeholder.dim{opacity:.5}
 .rvbtn{
   position:absolute;top:50%;translate:0 -50%;z-index:5;width:40px;height:40px;border-radius:50%;
@@ -271,5 +275,3 @@
 }
 @media (max-width:860px){.deco-books{display:none}}
 
-/* Write-a-review call to action */
-.writecta{text-align:center;margin:26px 0 0}

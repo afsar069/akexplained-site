@@ -333,7 +333,7 @@
             return '<a href="' + r.href + '"><span class="tag" style="background:' + r.bg + '">' +
                    r.type + '</span><span class="nm">' + r.name + '</span><span class="go">→</span></a>';
           }).join('')
-        : '<p class="empty">Kuch nahi mila — try "Victorian", "NET", "MCQ" ya "Renaissance".</p>';
+        : '<p class="empty">Nothing found. Try &ldquo;Victorian&rdquo;, &ldquo;NET&rdquo;, &ldquo;MCQ&rdquo; or &ldquo;Renaissance&rdquo;.</p>';
 
       panel.hidden = false;
       input.setAttribute('aria-expanded', 'true');
@@ -397,13 +397,15 @@
 
     if (!reviews.length) {
       track.classList.add('empty');
+      // Reviews login ke saath chalu honge. Tab tak Coming soon.
       track.innerHTML =
         '<div class="rvcard placeholder">' +
         '<img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60">' +
-        '<p class="txt">Be the first one to review</p>' +
+        '<span class="soonbadge">Coming soon</span>' +
+        '<p class="txt">Student reviews will appear here once accounts are ready.</p>' +
         '</div>' +
-        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>' +
-        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>';
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Coming soon</p></div>' +
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Coming soon</p></div>';
       return;
     }
 

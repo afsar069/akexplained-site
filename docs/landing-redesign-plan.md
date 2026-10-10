@@ -243,6 +243,9 @@ Reading time apne aap nikalta hai, koi field nahi chahiye.
 
 ## 12. Review system aur chhote fixes
 
+> **Rule:** site par sab kuch **simple English** me likha jaata hai, Hinglish me nahi.
+> Ye `CLAUDE.md` me bhi likh diya gaya hai.
+
 ### Scrollbars
 - Menu ka apna grey scrollbar **poora hata diya** — sirf green stroke bacha.
 - Page ka scrollbar **7px** (default ka aadha), colour `--scroll:#A3C8C1` (theme wala halka green).
@@ -256,7 +259,13 @@ Abhi sirf Victorian ka article hai.
 ### Author section
 Photo ab **square** (132px, 16px corner radius), bio text chouda, quote box patla.
 
-### Reviews — kaise kaam karta hai
+### Status: COMING SOON
+Review section abhi band hai. Login/accounts ke saath chalu hoga.
+- Home page par "Coming soon" dikhta hai.
+- `/write-a-review/` page bana hua hai par build se bahar hai
+  (`eleventy.config.js` me ek ignore line). Chalu karne ke liye wo line hata dein.
+
+### Reviews — chalu hone par kaise kaam karega
 1. Reader `/write-a-review/` par form bharta hai (naam, kaun hai, heading, stars, review, email).
 2. Review **Prof. Afsar Khan ko jaata hai**.
 3. Wo approve karke Pages CMS me daalte hain (**Student Reviews** → `assets/reviews.json`).
