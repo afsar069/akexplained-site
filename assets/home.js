@@ -232,10 +232,10 @@
      `title` khaali hai to card par "Watch on YouTube" dikhta hai.
      Asli title likh dene par wahi dikhne lagega. */
   const videos = [
-    { id:'D9Smtxac0B4', title:'', note:'' },
-    { id:'sQ-PS8MT7cI', title:'', note:'' },
-    { id:'95rzAsRpbEk', title:'', note:'' },
-    { id:'M5gV6mMxf_k', title:'', note:'' },
+    { id:'D9Smtxac0B4', title:'The Rime of the Ancient Mariner',        note:'Samuel Taylor Coleridge' },
+    { id:'sQ-PS8MT7cI', title:'The Solitary Reaper by William Wordsworth', note:'Romantic poetry' },
+    { id:'95rzAsRpbEk', title:'Philosophy of Paul de Man',              note:'Criticism & literary theory' },
+    { id:'M5gV6mMxf_k', title:'Biography of Franz Kafka',               note:'Modern fiction' },
   ];
 
   /* ---------- Student reviews ----------

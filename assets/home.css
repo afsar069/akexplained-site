@@ -177,7 +177,7 @@
   box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .22s;
 }
 .vidcard:hover .play{transform:scale(1.12)}
-.vidcard h3{font-size:.98rem;margin-bottom:3px}
+.vidcard h3{font-size:.98rem;margin-bottom:3px;line-height:1.3;min-height:2.6em;display:flex;align-items:flex-start}
 .vidcard p{font-size:.83rem;margin:0}
 
 /* ---------- Meet the author ---------- */

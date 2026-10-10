@@ -180,14 +180,15 @@ Redesign ke waqt tay karna hai: in cards ko **hide** karein, ya **"Coming Soon"*
 
 ### Abhi bhi user se chahiye
 
-1. **4 asli YouTube video links** — abhi video cards placeholder hain aur `/video-lessons/`
-   par jaate hain. Asli link milte hi real thumbnail lag jayega.
+1. ~~4 asli YouTube video links~~ — **ho gaya.** Links aur titles dono lag gaye
+   (`videos` array, `assets/home.js`). Thumbnail YouTube se aata hai.
 2. **Asli student reviews** — "What Our Students Say" me koi banaya hua review nahi daala gaya.
    Abhi wahan review bhejne ka invite hai. Asli reviews aate hi lag jayenge.
 3. **Subscriber / member counts** — mockup me "700+ YouTube", "5,000+ Telegram" tha.
    Confirm nahi tha isliye number nahi daale. Confirm karke bhejein to add ho jayenge.
-4. **Ages ke naam** — mockup me "Middle English" aur "Contemporary" tha; site ki apni
-   purani periodisation ("Age of Chaucer", "Postmodern") rakhi gayi hai. Badalna ho to bolein.
+4. ~~Ages ke naam~~ — **confirm ho gaya.** 10 British periods final:
+   Old English, Middle English, Renaissance, Jacobean & Caroline, Restoration,
+   Augustan, Romantic, Victorian, Modern, Contemporary.
 5. **State PSC ka asli syllabus** — koi pattern/syllabus khud se nahi likha gaya.
    Commission batayein to uska page banega.
 
