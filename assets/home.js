@@ -183,21 +183,25 @@
 
   /* ---------- Search index: only pages that really exist ---------- */
   const searchIndex = [
-    ['Age', '#0B5750', 'Old English (450–1066)', '/english-literature/#old-english'],
-    ['Age', '#0B5750', 'Age of Chaucer (1340–1400)', '/english-literature/#age-of-chaucer'],
-    ['Age', '#0B5750', 'Renaissance (1558–1660)', '/english-literature/#renaissance'],
-    ['Age', '#0B5750', 'Neoclassical (1660–1798)', '/english-literature/#neoclassical'],
-    ['Age', '#0B5750', 'Romantic (1798–1837)', '/english-literature/#romantic'],
-    ['Age', '#0B5750', 'Victorian (1837–1901)', '/english-literature/#victorian'],
-    ['Age', '#0B5750', 'Modern (1901–1945)', '/english-literature/#modern'],
-    ['Age', '#0B5750', 'Postmodern (1945 →)', '/english-literature/#postmodern'],
-    ['Note', '#4A5A6A', 'The Victorian Age — full notes', '/notes/victorian-age/'],
+    ['Age', '#0B5750', 'Old English (450\u20131066)', '/english-literature/#old-english'],
+    ['Age', '#0B5750', 'Middle English (1066\u20131500)', '/english-literature/#middle-english'],
+    ['Age', '#0B5750', 'Renaissance (1500\u20131603)', '/english-literature/#renaissance'],
+    ['Age', '#0B5750', 'Jacobean & Caroline (1603\u20131660)', '/english-literature/#jacobean'],
+    ['Age', '#0B5750', 'Restoration (1660\u20131700)', '/english-literature/#restoration'],
+    ['Age', '#0B5750', 'Augustan (1700\u20131798)', '/english-literature/#augustan'],
+    ['Age', '#0B5750', 'Romantic (1798\u20131837)', '/english-literature/#romantic'],
+    ['Age', '#0B5750', 'Victorian (1837\u20131901)', '/english-literature/#victorian'],
+    ['Age', '#0B5750', 'Modern (1901\u20131945)', '/english-literature/#modern'],
+    ['Age', '#0B5750', 'Contemporary (1945 \u2192)', '/english-literature/#contemporary'],
+    ['Note', '#4A5A6A', 'The Victorian Age \u2014 full notes', '/notes/victorian-age/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
-    ['Exam', '#C2410C', 'MA / BA — University syllabus', '/exams/ma-ba/'],
+    ['Exam', '#C2410C', 'MA / BA \u2014 University syllabus', '/exams/ma-ba/'],
+    ['Quiz', '#B45309', 'Daily Quiz', '/quizzes/daily/'],
     ['Quiz', '#B45309', 'MCQ practice', '/quizzes/mcq/'],
     ['Quiz', '#B45309', 'Previous year questions (PYQ)', '/quizzes/pyq/'],
+    ['Quiz', '#B45309', 'Mock Tests', '/quizzes/mock-tests/'],
     ['Page', '#0F766E', 'Video Lessons', '/video-lessons/'],
     ['Page', '#0F766E', 'My Publisher', '/publish-with-us/'],
     ['Page', '#0F766E', 'Research Support', '/research-support/'],
@@ -207,6 +211,40 @@
   ].map(function (r) {
     return { type: r[0], bg: r[1], name: r[2], href: r[3], hay: r[2].toLowerCase() };
   });
+
+
+  /* ---------- Ages: British literary periods ----------
+     Image swap karne ke liye bas assets/ages/<slug>.webp file replace kar dijiye. */
+  const ages = [
+    { slug:'old-english',    yr:'450',  name:'Old English',        era:'450 \u2013 1066',   who:'Beowulf \u00b7 Caedmon \u00b7 Cynewulf' },
+    { slug:'middle-english', yr:'1066', name:'Middle English',     era:'1066 \u2013 1500',  who:'Chaucer \u00b7 Langland \u00b7 Malory' },
+    { slug:'renaissance',    yr:'1500', name:'Renaissance',        era:'1500 \u2013 1603',  who:'Shakespeare \u00b7 Marlowe \u00b7 Spenser' },
+    { slug:'jacobean',       yr:'1603', name:'Jacobean & Caroline',era:'1603 \u2013 1660',  who:'Donne \u00b7 Jonson \u00b7 Webster' },
+    { slug:'restoration',    yr:'1660', name:'Restoration',        era:'1660 \u2013 1700',  who:'Dryden \u00b7 Behn \u00b7 Congreve' },
+    { slug:'augustan',       yr:'1700', name:'Augustan',           era:'1700 \u2013 1798',  who:'Pope \u00b7 Swift \u00b7 Johnson' },
+    { slug:'romantic',       yr:'1798', name:'Romantic',           era:'1798 \u2013 1837',  who:'Wordsworth \u00b7 Coleridge \u00b7 Keats' },
+    { slug:'victorian',      yr:'1837', name:'Victorian',          era:'1837 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy' },
+    { slug:'modern',         yr:'1901', name:'Modern',             era:'1901 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce' },
+    { slug:'contemporary',   yr:'1945', name:'Contemporary',       era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie' },
+  ];
+
+  /* ---------- Videos: real lessons on the channel ----------
+     `title` khaali hai to card par "Watch on YouTube" dikhta hai.
+     Asli title likh dene par wahi dikhne lagega. */
+  const videos = [
+    { id:'D9Smtxac0B4', title:'', note:'' },
+    { id:'sQ-PS8MT7cI', title:'', note:'' },
+    { id:'95rzAsRpbEk', title:'', note:'' },
+    { id:'M5gV6mMxf_k', title:'', note:'' },
+  ];
+
+  /* ---------- Student reviews ----------
+     Naya review add karne ke liye yahan ek object daal dijiye:
+       { name:'Priya Sharma', role:'NET Aspirant', stars:5,
+         photo:'/assets/reviews/priya.webp', text:'...' }
+     photo chhod dein to default avatar lag jayega.
+     4 ya zyada reviews hone par carousel apne aap chalne lagega. */
+  const reviews = [];
 
   const MONTHS = ['January','February','March','April','May','June',
                   'July','August','September','October','November','December'];
@@ -307,7 +345,113 @@
     });
   }
 
+
+  /* ---------- Ages grid ---------- */
+  function renderAges() {
+    const grid = document.getElementById('ageGrid');
+    if (!grid) return;
+    grid.innerHTML = ages.map(function (a) {
+      return '<a class="agecard" href="/english-literature/#' + a.slug + '">' +
+             '<span class="thumb"><img src="/assets/ages/' + a.slug + '.webp" alt="" width="480" height="300" loading="lazy">' +
+             '<span class="yr">' + a.yr + '</span></span>' +
+             '<h3>' + a.name + '</h3>' +
+             '<p class="era">' + a.era + '</p>' +
+             '<p class="who">' + a.who + '</p></a>';
+    }).join('');
+  }
+
+  /* ---------- Video grid ---------- */
+  function renderVideos() {
+    const grid = document.getElementById('vidGrid');
+    if (!grid) return;
+    grid.innerHTML = videos.map(function (v) {
+      const label = v.title || 'Watch on YouTube';
+      const note = v.note || 'AK Explained \u00b7 YouTube';
+      return '<a class="vidcard" href="https://youtu.be/' + v.id + '" target="_blank" rel="noopener">' +
+             '<span class="thumb">' +
+             '<img src="https://img.youtube.com/vi/' + v.id + '/hqdefault.jpg" alt="" width="480" height="360" ' +
+             'loading="lazy" onerror="this.style.display=\'none\'">' +
+             '<span class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">' +
+             '<path d="M8 5.5v13l11-6.5Z"/></svg></span></span>' +
+             '<h3>' + label + '</h3><p>' + note + '</p></a>';
+    }).join('');
+  }
+
+  /* ---------- Reviews carousel ---------- */
+  function renderReviews() {
+    const track = document.getElementById('reviewTrack');
+    if (!track) return;
+    const wrapEl = track.parentElement;
+    const prev = wrapEl.querySelector('.rvbtn.prev');
+    const next = wrapEl.querySelector('.rvbtn.next');
+
+    if (!reviews.length) {
+      track.classList.add('empty');
+      track.innerHTML =
+        '<div class="rvcard placeholder">' +
+        '<img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60">' +
+        '<p class="txt">Be the first one to review</p>' +
+        '<a class="btn gold" href="/go/whatsapp" rel="noopener">Write a review</a>' +
+        '</div>' +
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>' +
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Be the first one to review</p></div>';
+      return;
+    }
+
+    track.innerHTML = reviews.map(function (r) {
+      const stars = '\u2605'.repeat(Math.max(1, Math.min(5, r.stars || 5)));
+      return '<div class="rvcard">' +
+             '<p class="stars">' + stars + '</p>' +
+             '<p class="txt">\u201C' + r.text + '\u201D</p>' +
+             '<div class="who">' +
+             '<img class="face" src="' + (r.photo || '/assets/avatar-placeholder.webp') + '" alt="" width="46" height="46" loading="lazy">' +
+             '<span><b>' + r.name + '</b>' + (r.role ? '<i>' + r.role + '</i>' : '') + '</span>' +
+             '</div></div>';
+    }).join('');
+
+    function perView() {
+      if (window.matchMedia('(min-width:1000px)').matches) return 3;
+      if (window.matchMedia('(min-width:640px)').matches) return 2;
+      return 1;
+    }
+
+    let at = 0;
+    let timer = null;
+
+    function maxAt() { return Math.max(0, reviews.length - perView()); }
+
+    function show() {
+      const card = track.querySelector('.rvcard');
+      if (!card) return;
+      const step = card.getBoundingClientRect().width + 16; // 16px = track gap
+      if (at > maxAt()) at = 0;
+      track.style.transform = 'translateX(-' + (at * step) + 'px)';
+    }
+
+    function go(n) { at = n < 0 ? maxAt() : (n > maxAt() ? 0 : n); show(); }
+
+    // Arrows and auto-advance only pay their way once the row actually overflows.
+    if (reviews.length > perView()) {
+      prev.hidden = next.hidden = false;
+      prev.addEventListener('click', function () { go(at - 1); rest(); });
+      next.addEventListener('click', function () { go(at + 1); rest(); });
+
+      const slow = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      function start() { if (!slow) timer = setInterval(function () { go(at + 1); }, 4500); }
+      function rest() { clearInterval(timer); start(); }
+      wrapEl.addEventListener('mouseenter', function () { clearInterval(timer); });
+      wrapEl.addEventListener('mouseleave', start);
+      start();
+    }
+
+    window.addEventListener('resize', show);
+    show();
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
+    renderAges();
+    renderVideos();
+    renderReviews();
     renderBirthday();
     runTypewriter();
     wireSearch();
