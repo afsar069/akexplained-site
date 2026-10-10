@@ -1,13 +1,22 @@
-# AK Explained — short links used by the home page and footer
-# Replace the destinations below with your real profile URLs, then re-upload.
+# AK Explained — short links used by the site and the footer
 /go/whatsapp   https://api.whatsapp.com/send?phone=919760001569   302
 /go/telegram   https://t.me/akexplained                           302
 /go/facebook   https://www.facebook.com/akexplained               302
 /go/instagram  https://www.instagram.com/akexplained              302
 /go/youtube    https://www.youtube.com/channel/UC3MKGiItBxSbP0r1VSTrpxA  302
 
-# Safety net: if anyone lands on an old .html path, send them to the folder URL
+# Pages removed or renamed in the 2026 redesign — keep old links working
+/exams/university/*  /exams/ma-ba/   301
+/exams/university    /exams/ma-ba/   301
+/exams/tgt/*         /exams/pgt/     301
+/exams/tgt           /exams/pgt/     301
+/guides/*            /english-literature/   301
+/guides              /english-literature/   301
+/help/*              /contact/       301
+/help                /contact/       301
+
+# Safety net: old .html paths go to the folder URL
 /about.html    /about/    301
-/help.html     /help/     301
 /notes.html    /notes/    301
-/guides.html   /guides/   301
+/guides.html   /english-literature/   301
+/help.html     /contact/  301

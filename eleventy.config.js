@@ -39,6 +39,12 @@ module.exports = function (eleventyConfig) {
       out = out.slice(0, fStart) + NEW_FOOTER + out.slice(fEnd + "</footer>".length);
     }
 
+    // Sidebar ko chalane ke liye nav.js chahiye. Purane pages me wo tag nahi hai,
+    // isliye yahan jod dete hain — tabhi mobile ka hamburger aur submenu kaam karega.
+    if (!out.includes("/assets/nav.js") && out.includes("</body>")) {
+      out = out.replace("</body>", '<script src="/assets/nav.js" defer></script>\n</body>');
+    }
+
     return out;
   });
 

@@ -1,0 +1,205 @@
+/* ==========================================================
+   AK Explained — landing page only
+   ========================================================== */
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;overflow:hidden;text-align:center;
+  background:var(--cream) url('/assets/hero-floral.webp') center/cover no-repeat;
+  border-bottom:2px solid var(--border);
+  padding:clamp(30px,5vw,62px) 0 clamp(26px,4vw,46px);
+  min-height:clamp(300px,33vw,430px);display:flex;align-items:center;
+}
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 62% 78% at 50% 48%,
+    rgba(253,251,245,.95) 0%,rgba(253,251,245,.82) 42%,rgba(253,251,245,.18) 78%,rgba(253,251,245,0) 100%);
+}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{
+  font-family:var(--serif);color:var(--ink);font-weight:700;line-height:1.12;
+  font-size:clamp(1.85rem,5vw,3.35rem);margin-bottom:6px;text-wrap:balance;
+}
+.hero h1 .sub{display:block;font-size:.62em;font-weight:600;color:var(--teal)}
+.hero .motto{
+  font-family:var(--serif);font-size:clamp(.95rem,1.6vw,1.12rem);color:#3D4B59;
+  margin-bottom:20px;letter-spacing:.01em;
+}
+
+/* Today in Literary History */
+.today{
+  display:inline-flex;align-items:center;gap:13px;flex-wrap:wrap;justify-content:center;
+  background:#fff;border:1px solid var(--border);border-left:4px solid var(--gold);
+  border-radius:13px;padding:11px 20px;margin-bottom:18px;text-align:left;
+  box-shadow:0 4px 16px rgba(22,48,74,.07);max-width:100%;
+}
+.today .tag{
+  font-size:.68rem;font-weight:700;letter-spacing:.14em;color:var(--gold);
+  text-transform:uppercase;white-space:nowrap;
+}
+.today .txt{font-family:var(--serif);color:var(--ink);font-size:.97rem;line-height:1.45}
+
+/* Search */
+.searchbox{max-width:600px;margin:0 auto;position:relative;text-align:left}
+.searchbox .field{
+  display:flex;align-items:center;gap:11px;background:#fff;
+  border:1.5px solid var(--border);border-radius:999px;padding:5px 7px 5px 20px;
+  box-shadow:0 5px 18px rgba(22,48,74,.08);transition:box-shadow .25s,border-color .2s;
+}
+.searchbox .field:focus-within{border-color:var(--teal);box-shadow:var(--glow),0 10px 26px rgba(15,118,110,.22)}
+.searchbox input{
+  flex:1;border:none;outline:none;background:transparent;min-width:0;
+  font-family:var(--sans);font-size:.96rem;color:var(--ink);padding:9px 0;
+}
+.searchbox .btn{padding:10px 22px;border-radius:999px;flex:none}
+#searchPanel{
+  position:absolute;top:calc(100% + 9px);left:0;right:0;z-index:90;
+  background:#fff;border:1px solid var(--border);border-radius:15px;padding:8px;
+  box-shadow:0 20px 44px rgba(22,48,74,.17);max-height:340px;overflow-y:auto;
+}
+#searchPanel a{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;transition:background .18s}
+#searchPanel a:hover{background:var(--cream)}
+#searchPanel .tag{
+  font-size:.6rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#fff;
+  border-radius:5px;padding:3px 8px;white-space:nowrap;flex:none;
+}
+#searchPanel .nm{font-size:.93rem;color:var(--ink);font-weight:500}
+#searchPanel .go{margin-left:auto;color:var(--teal);font-weight:700}
+#searchPanel .empty{padding:12px 14px;font-size:.9rem;margin:0}
+
+/* Animated opening line */
+.quoteline{margin-top:20px;min-height:3.4em}
+.quoteline .q{
+  font-family:var(--serif);font-style:italic;color:var(--ink);
+  font-size:clamp(.92rem,1.5vw,1.04rem);line-height:1.5;max-width:60ch;margin:0 auto;
+}
+.quoteline .q::after{
+  content:"";display:inline-block;width:2px;height:1em;background:var(--teal);
+  vertical-align:-.14em;margin-left:3px;animation:blink 1s steps(2) infinite;
+}
+.quoteline .who{display:block;font-size:.82rem;color:var(--teal);font-weight:600;margin-top:7px;min-height:1.3em}
+@keyframes blink{50%{opacity:0}}
+
+/* ---------- Pick your exam ---------- */
+.examgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(205px,1fr))}
+.examcard{
+  position:relative;display:block;border-radius:15px;padding:20px 20px 52px;
+  border:1px solid var(--card-line);color:inherit;overflow:hidden;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
+}
+.examcard:hover{transform:translateY(-5px);border-color:var(--teal);
+  box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32)}
+.examcard .ic{width:34px;height:34px;margin-bottom:12px;color:var(--teal)}
+.examcard h3{font-size:1.06rem;margin-bottom:3px}
+.examcard p{font-size:.85rem;margin:0;color:var(--body)}
+.examcard .arrow{
+  position:absolute;right:16px;bottom:15px;width:30px;height:30px;border-radius:50%;
+  background:#fff;border:1px solid var(--card-line);display:flex;align-items:center;justify-content:center;
+  color:var(--teal);font-weight:700;font-size:.92rem;transition:background .22s,color .22s,transform .22s;
+}
+.examcard:hover .arrow{background:var(--teal);color:#fff;transform:translateX(3px)}
+
+/* ---------- Quizzes ---------- */
+.quizzone{overflow:hidden;background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.quizgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.quizcard{
+  display:flex;align-items:center;gap:15px;background:var(--paper);
+  border:1px solid var(--card-line);border-radius:15px;padding:18px 20px;color:inherit;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
+}
+.quizcard:hover{transform:translateY(-4px);border-color:var(--teal);
+  box-shadow:var(--glow),0 18px 34px -12px rgba(22,48,74,.30)}
+.quizcard .ic{
+  flex:none;width:48px;height:48px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  background:var(--teal-soft);color:var(--teal);
+}
+.quizcard h3{margin-bottom:2px}
+.quizcard p{font-size:.86rem;margin:0}
+
+/* ---------- Ages ---------- */
+.agegrid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
+@media(min-width:680px){.agegrid{grid-template-columns:repeat(3,1fr)}}
+@media(min-width:1000px){.agegrid{grid-template-columns:repeat(4,1fr)}}
+.agecard{
+  display:block;position:relative;overflow:hidden;color:inherit;
+  background:var(--paper);border:1px solid var(--card-line);border-radius:15px;padding:18px 18px 16px;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
+}
+.agecard:hover{transform:translateY(-5px);border-color:var(--teal);
+  box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32)}
+.agecard .yr{
+  font-family:var(--serif);font-size:2.15rem;font-weight:700;line-height:1;
+  color:rgba(185,137,47,.34);margin-bottom:10px;transition:color .22s;
+}
+.agecard:hover .yr{color:rgba(185,137,47,.72)}
+.agecard h3{font-size:1rem;margin-bottom:3px}
+.agecard .era{font-size:.79rem;font-weight:600;color:var(--teal);letter-spacing:.03em;margin-bottom:7px}
+.agecard .who{font-size:.8rem;color:var(--body);margin:0;line-height:1.45}
+
+/* ---------- Videos ---------- */
+.videos{background:var(--paper);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.vidgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(222px,1fr))}
+.vidcard{display:block;color:inherit;transition:transform .22s cubic-bezier(.2,.7,.3,1)}
+.vidcard:hover{transform:translateY(-5px)}
+.vidcard .thumb{
+  position:relative;aspect-ratio:16/9;border-radius:13px;overflow:hidden;margin-bottom:11px;
+  background:linear-gradient(135deg,#1E4A47,#16304A);
+  border:1px solid var(--card-line);display:flex;align-items:center;justify-content:center;
+  transition:box-shadow .28s;
+}
+.vidcard:hover .thumb{box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.42)}
+.vidcard .thumb img{width:100%;height:100%;object-fit:cover}
+.vidcard .play{
+  position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.93);
+  display:flex;align-items:center;justify-content:center;color:var(--teal);
+  box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .22s;
+}
+.vidcard:hover .play{transform:scale(1.12)}
+.vidcard h3{font-size:.98rem;margin-bottom:3px}
+.vidcard p{font-size:.83rem;margin:0}
+
+/* ---------- Meet the author ---------- */
+.author{background:linear-gradient(180deg,var(--bg),var(--cream))}
+.authorbox{display:grid;gap:28px;grid-template-columns:minmax(0,210px) minmax(0,1fr);align-items:start}
+.authorbox .photo{
+  width:100%;max-width:200px;aspect-ratio:1;border-radius:50%;object-fit:cover;
+  border:4px solid #fff;box-shadow:0 14px 32px rgba(22,48,74,.20);
+}
+.authorbox .says{
+  background:var(--paper);border:1px solid var(--card-line);border-left:4px solid var(--gold);
+  border-radius:0 13px 13px 0;padding:16px 20px;margin-top:18px;
+}
+.authorbox .says p{font-family:var(--serif);font-style:italic;color:var(--ink);margin:0 0 6px}
+.authorbox .says .by{font-size:.83rem;font-weight:600;color:var(--teal);font-style:normal}
+@media (max-width:720px){
+  .authorbox{grid-template-columns:1fr;justify-items:center;text-align:center}
+  .authorbox .says{border-left:none;border-top:4px solid var(--gold);border-radius:0 0 13px 13px;text-align:left}
+}
+
+/* ---------- Community ---------- */
+.commgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(205px,1fr))}
+.commcard{
+  display:flex;align-items:center;gap:14px;background:var(--paper);color:inherit;
+  border:1px solid var(--card-line);border-radius:15px;padding:17px 19px;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
+}
+.commcard:hover{transform:translateY(-4px);border-color:var(--teal);
+  box-shadow:var(--glow),0 18px 34px -12px rgba(22,48,74,.30)}
+.commcard .ic{flex:none;width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;color:#fff}
+.commcard h3{font-size:.99rem;margin-bottom:1px}
+.commcard p{font-size:.83rem;margin:0}
+
+/* ---------- Students say ---------- */
+.saybox{
+  background:var(--paper);border:1px dashed var(--card-line);border-radius:16px;
+  padding:38px 26px;text-align:center;
+}
+.saybox .quotemark{font-family:var(--serif);font-size:3.2rem;color:rgba(185,137,47,.34);line-height:.7;margin-bottom:14px}
+.saybox p{margin:0 auto 20px;max-width:50ch}
+
+/* ---------- Decorative books ---------- */
+.deco-books{
+  position:absolute;right:-34px;bottom:-26px;width:clamp(120px,14vw,180px);
+  opacity:.24;pointer-events:none;user-select:none;
+}
+@media (max-width:860px){.deco-books{display:none}}

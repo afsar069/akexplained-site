@@ -4,8 +4,8 @@ permalink: false
 
 # AK Explained — Landing Page Redesign Plan
 
-**Status:** Planning locked. Kaam shuru nahi hua.
-**Blocker:** Prof. Afsar Khan ki taraf se hero wali floral/books image aani hai.
+**Status:** Landing page BAN GAYA. Inner / article page design abhi baaki hai.
+**Images:** mil gayi — `assets/hero-floral.webp`, `assets/books-stack.webp`
 **Branch:** `claude/determined-davinci-33jhlj`
 **Reference:** Mockup screenshot jo chat me diya gaya (right-side drawer menu wala).
 
@@ -87,22 +87,20 @@ Mobile par ☰ hamburger ban jayega.
 
 ---
 
-## 4. ⚠️ OPEN — ye abhi decide nahi hua
+## 4. Deleted pages — DECIDED
 
-Naye menu me **ye pages nahi hain**, lekin site par maujood hain aur inme content likha hua hai:
+User ne delete karne ko kaha. Delete kar diye gaye, har ek ka **301 redirect** `_redirects` me daal diya
+taaki purane link aur Google ranking na toote:
 
-- `/exams/tgt/` — TGT English Literature
-- `/university/ccs-meerut/` — CCS University Meerut
-- `/university/ignou/` — IGNOU
-- `/university/du/` — Delhi University
-- `/guides/` — Guides
-- `/help/` — Help
+| Deleted page | Redirect jaata hai |
+|---|---|
+| `/exams/tgt/` | `/exams/pgt/` |
+| `/guides/` | `/english-literature/` |
+| `/help/` | `/contact/` |
+| `/exams/university/` | `/exams/ma-ba/` (rename, delete nahi) |
 
-**Mera suggestion:** inhe **delete mat karo**. Sirf menu se hata do aur page zinda rakho.
-Wajah: delete karne se Google ki ranking jaati hai, aur jo link pehle se share ho chuke hain wo toot jaate hain.
-Behtar: TGT ko PGT page ke andar le aao, aur university waale pages ko MA/BA page se link kar do.
-
-**Agar user delete hi chahta hai** → to har purane URL ka `_redirects` me 301 redirect banana zaroori hai.
+**Zinda rakhe gaye** (menu me nahi, par page chalu hai, MA/BA page se link hain):
+`/university/ccs-meerut/`, `/university/ignou/`, `/university/du/`
 
 ---
 
@@ -165,3 +163,33 @@ Home page par **43+ links aise hain jo un pages par jaate hain jo bane hi nahi**
 jaise saare writer pages (`/notes/chaucer/` etc.), 8 video pages, 6 Hindi pages, 8 quiz pages.
 
 Redesign ke waqt tay karna hai: in cards ko **hide** karein, ya **"Coming Soon"** badge lagayein.
+
+---
+
+## 10. Landing page — ban gaya (Phase 1 complete)
+
+**Nayi files:**
+- `index.html` — landing page, plain HTML (113 KB → 25 KB)
+- `assets/home.css`, `assets/home.js` — landing-only style aur behaviour
+- `assets/nav.js` — sidebar menu (har page par)
+- `assets/hero-floral.webp`, `assets/books-stack.webp` — user ki di hui artwork
+- Nayi pages: `/english-literature/`, `/video-lessons/`, `/exams/state-psc/`,
+  `/research-support/`, `/download/`, `/login/`
+
+**Build:** 25 pages, 0 dead internal links.
+
+### Abhi bhi user se chahiye
+
+1. **4 asli YouTube video links** — abhi video cards placeholder hain aur `/video-lessons/`
+   par jaate hain. Asli link milte hi real thumbnail lag jayega.
+2. **Asli student reviews** — "What Our Students Say" me koi banaya hua review nahi daala gaya.
+   Abhi wahan review bhejne ka invite hai. Asli reviews aate hi lag jayenge.
+3. **Subscriber / member counts** — mockup me "700+ YouTube", "5,000+ Telegram" tha.
+   Confirm nahi tha isliye number nahi daale. Confirm karke bhejein to add ho jayenge.
+4. **Ages ke naam** — mockup me "Middle English" aur "Contemporary" tha; site ki apni
+   purani periodisation ("Age of Chaucer", "Postmodern") rakhi gayi hai. Badalna ho to bolein.
+5. **State PSC ka asli syllabus** — koi pattern/syllabus khud se nahi likha gaya.
+   Commission batayein to uska page banega.
+
+### Agla kaam
+Inner / article page ka design (user ne kaha: "usko baad me change karenge").
