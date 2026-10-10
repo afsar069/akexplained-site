@@ -13,6 +13,13 @@ const NEW_FOOTER = base.slice(
 );
 
 module.exports = function (eleventyConfig) {
+  // Article ke upar "X min read" dikhane ke liye. 200 words/minute
+  // aam padhne ki raftaar hai.
+  eleventyConfig.addFilter("readingTime", function (content) {
+    const words = String(content).replace(/<[^>]*>/g, " ").trim().split(/\s+/).length;
+    return Math.max(1, Math.round(words / 200));
+  });
+
   eleventyConfig.ignores.add("404.html");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("404.html");
@@ -37,6 +44,14 @@ module.exports = function (eleventyConfig) {
     const fEnd = out.indexOf("</footer>", fStart);
     if (fStart !== -1 && fEnd !== -1) {
       out = out.slice(0, fStart) + NEW_FOOTER + out.slice(fEnd + "</footer>".length);
+    }
+
+    // Har page ke pagehead me wahi halka floral motif lagao, taaki hub pages
+    // aur article pages dono par brand ka ek jaisa feel rahe.
+    const MOTIF = '<img class="motif" src="/assets/leaf-motif.webp" alt="" ' +
+                  'width="400" height="233" aria-hidden="true">';
+    if (out.includes('<section class="pagehead">') && !out.includes('class="motif"')) {
+      out = out.replace('<section class="pagehead">', '<section class="pagehead">\n  ' + MOTIF);
     }
 
     // Sidebar ko chalane ke liye nav.js chahiye. Purane pages me wo tag nahi hai,

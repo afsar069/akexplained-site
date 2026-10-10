@@ -194,3 +194,41 @@ Redesign ke waqt tay karna hai: in cards ko **hide** karein, ya **"Coming Soon"*
 
 ### Agla kaam
 Inner / article page ka design (user ne kaha: "usko baad me change karenge").
+
+---
+
+## 11. Article / inner page design (Phase 2 complete)
+
+### Teen page types, ek hi system
+| Type | Kaun se | Layout |
+|---|---|---|
+| Article | `_includes/base.njk` se bani markdown pages (Pages CMS) | Reading column + study rail |
+| Hub | `exams/`, `quizzes/`, `english-literature/` jaisi HTML pages | Cards ka grid, rail nahi |
+| Utility | privacy, terms, coming-soon | Simple ek column |
+
+Colour, font, menu, footer, hover glow — teeno me same.
+
+### Reading column
+- **545px chaudi, 16px Literata = ~71 characters per line** (browser me naapa gaya).
+  Aaram se padhne ki range 65-75 hai.
+- Times New Roman **nahi** li gayi: wo print ke liye bani thi, screen par patli
+  padti hai, aur Android par wo font hoti hi nahi (system kuch aur laga deta hai).
+  Literata screen reading ke liye hi banayi gayi hai aur pehle se load ho rahi hai.
+  Badalna ho to `assets/site.css` me `.article` ke upar comment me ek line likhi hai.
+
+### Study rail (right side, sticky)
+1. Download important books for NET → `/download/`
+2. Need guidance? Contact here → `/contact/`
+3. **Enrol now** — placeholder, "Coming soon" badge.
+   Login/dashboard banne par bas iska href aur text badalna hai (`_includes/base.njk`).
+
+1180px se chhoti screen par rail article ke neeche chala jaata hai.
+
+### Naye CMS fields (`.pages.yml` me add ho gaye)
+`updated` · `exams` (tags) · `prev` · `next` · `rail` (on/off)
+Reading time apne aap nikalta hai, koi field nahi chahiye.
+
+### Aur
+- Har page ke pagehead me halka floral motif — build ke waqt apne aap lagta hai.
+- Print stylesheet: print par menu, rail, footer gayab, sirf saaf text.
+- Bug fix: Victorian page ke lede me `**Queen Victoria**` ke asterisks dikh rahe the.

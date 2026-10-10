@@ -2,13 +2,23 @@
 layout: base.njk
 title: The Victorian Age (1837-1901)
 description: The Victorian Age (1837-1901) was the period during the reign of
-  **Queen Victoria**, marked by rapid industrial growth, scientific progress,
+  Queen Victoria, marked by rapid industrial growth, scientific progress,
   imperial expansion, and significant social change. Victorian literature
   focused on realism, morality, social issues, and the conflicts between
   tradition and modernity.
 eyebrow: Notes · Literary Ages
 mark: V
 crumb_label: Victorian
+exams:
+  - UGC-NET
+  - PGT
+  - MA / BA
+prev:
+  label: Romantic Age
+  href: /english-literature/#romantic
+next:
+  label: Modern Age
+  href: /english-literature/#modern
 ---
 ### The Victorian Age in English Literature: An Era of Transition and Contradiction
 

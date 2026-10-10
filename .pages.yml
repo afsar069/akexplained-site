@@ -39,6 +39,37 @@ content:
       - name: crumb_label
         label: Breadcrumb text (chhota naam)
         type: string
+      - name: updated
+        label: Last updated (heading ke neeche dikhega)
+        type: date
+      - name: exams
+        label: Kaun se exams me aata hai (tags)
+        type: string
+        list: true
+      - name: prev
+        label: Pichhla article (series me)
+        type: object
+        fields:
+          - name: label
+            label: Dikhne wala naam
+            type: string
+          - name: href
+            label: Link (jaise /notes/romantic/)
+            type: string
+      - name: next
+        label: Agla article (series me)
+        type: object
+        fields:
+          - name: label
+            label: Dikhne wala naam
+            type: string
+          - name: href
+            label: Link (jaise /notes/modern/)
+            type: string
+      - name: rail
+        label: Side ke study boxes dikhayein?
+        type: boolean
+        default: true
       - name: body
         label: Article
         type: rich-text
