@@ -88,6 +88,16 @@
   background:linear-gradient(160deg,var(--c1,#F4F1E6),var(--c2,#EAE6D6));
   transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
 }
+/* Piche ki halki image: right-bottom se crop, opacity kam, left par fade taaki text saaf padhe. */
+.examcard::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:var(--img) right bottom/cover no-repeat;opacity:.42;
+  -webkit-mask-image:linear-gradient(to top left,#000 22%,transparent 82%);
+  mask-image:linear-gradient(to top left,#000 22%,transparent 82%);
+  transition:opacity .28s,transform .5s;
+}
+.examcard:hover::before{opacity:.7;transform:scale(1.05)}
+.examcard>*{position:relative;z-index:1}
 .examcard:hover{transform:translateY(-5px);border-color:var(--teal);
   box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32)}
 .examcard .ic{
