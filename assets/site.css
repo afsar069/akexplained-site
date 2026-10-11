@@ -453,3 +453,37 @@ a.railbox:hover .go{color:var(--teal-dark)}
 .formmsg.ok{background:#E7F2EA;border:1px solid #9FCBAE;color:#15803D}
 .formmsg.bad{background:#FBECE6;border:1px solid #E8BBA4;color:#A33A12}
 .formactions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:4px}
+
+/* ---------- Age rows (English Literature by Ages) ----------
+   Image 16:10 landscape rakhi hai; pehle narrow column me khinch kar vertical ho jaati thi. */
+.age-list{display:grid;gap:20px}
+.age-row{
+  display:grid;grid-template-columns:minmax(0,500px) minmax(0,1fr);gap:36px;align-items:center;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:18px;padding:16px;
+  transition:box-shadow .28s,border-color .22s,transform .22s cubic-bezier(.2,.7,.3,1);
+}
+.age-row:hover{border-color:var(--teal);transform:translateY(-3px);
+  box-shadow:var(--glow),0 18px 34px -14px rgba(22,48,74,.28)}
+.age-row .pic{
+  display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;
+  border-radius:12px;border:1px solid var(--card-line);box-shadow:0 8px 20px -10px rgba(22,48,74,.35);
+}
+.age-row .txt{padding:6px 8px}
+.age-row .era{
+  display:inline-block;background:var(--teal-soft);color:var(--teal-dark);
+  font-family:var(--serif);font-weight:700;font-size:.82rem;letter-spacing:.04em;
+  padding:4px 12px;border-radius:999px;
+}
+.age-row h3{font-size:clamp(1.3rem,2.4vw,1.75rem);margin:12px 0 6px;line-height:1.2}
+.age-row .who{font-size:1.02rem;color:var(--body);margin:0 0 16px}
+.age-row .chip.pending{border-style:dashed;border-color:var(--card-line);color:var(--body);cursor:default}
+.age-row .chip.pending:hover{background:transparent;color:var(--body);transform:none;box-shadow:none}
+@media(min-width:761px){
+  .age-row:nth-child(even){grid-template-columns:minmax(0,1fr) minmax(0,500px)}
+  .age-row:nth-child(even) .pic{order:2}
+  .age-row:nth-child(even) .txt{padding-left:14px}
+}
+@media(max-width:760px){
+  .age-row{grid-template-columns:1fr;gap:14px;padding:12px}
+  .age-row .txt{padding:0 4px 6px}
+}
