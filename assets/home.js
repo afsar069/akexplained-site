@@ -193,6 +193,7 @@
     ['Age', '#0B5750', 'Victorian (1837\u20131901)', '/english-literature/#victorian'],
     ['Age', '#0B5750', 'Modern (1901\u20131945)', '/english-literature/#modern'],
     ['Age', '#0B5750', 'Contemporary (1945 \u2192)', '/english-literature/#contemporary'],
+    ['Note', '#4A5A6A', 'Old English Literature \u2014 full notes', '/notes/old-english/'],
     ['Note', '#4A5A6A', 'The Victorian Age \u2014 full notes', '/notes/victorian-age/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
@@ -216,7 +217,7 @@
   /* ---------- Ages: British literary periods ----------
      Image swap karne ke liye bas assets/ages/<slug>.webp file replace kar dijiye. */
   const ages = [
-    { slug:'old-english',    yr:'450',  name:'Old English',        era:'450 \u2013 1066',   who:'Beowulf \u00b7 Caedmon \u00b7 Cynewulf' },
+    { slug:'old-english',    yr:'450',  name:'Old English',        era:'450 \u2013 1066',   who:'Beowulf \u00b7 Caedmon \u00b7 Cynewulf', article:'/notes/old-english/' },
     { slug:'middle-english', yr:'1066', name:'Middle English',     era:'1066 \u2013 1500',  who:'Chaucer \u00b7 Langland \u00b7 Malory' },
     { slug:'renaissance',    yr:'1500', name:'Renaissance',        era:'1500 \u2013 1603',  who:'Shakespeare \u00b7 Marlowe \u00b7 Spenser' },
     { slug:'jacobean',       yr:'1603', name:'Jacobean & Caroline',era:'1603 \u2013 1660',  who:'Donne \u00b7 Jonson \u00b7 Webster' },
