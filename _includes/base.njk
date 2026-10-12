@@ -98,7 +98,7 @@
     {% if description %}<p class="lede">{{ description }}</p>{% endif %}
     <p class="artmeta">
       <span class="rt">{{ content | readingTime }} min read</span>
-      {% if updated %}<span class="up">Updated {{ updated }}</span>{% endif %}
+      {% if updated %}<span class="up">Updated {{ updated | niceDate }}</span>{% endif %}
       {% if exams %}{% for e in exams %}<span class="xt">{{ e }}</span>{% endfor %}{% endif %}
     </p>
   </div>

@@ -20,6 +20,19 @@ module.exports = function (eleventyConfig) {
     return Math.max(1, Math.round(words / 200));
   });
 
+  // "Updated" tarikh ko saaf roop me dikhane ke liye. Pages CMS date ko
+  // 2026-10-12 likhta hai, aur YAML use Date bana deta hai — bina is filter ke
+  // page par lambi technical date ("Mon Oct 12 2026 00:00:00 GMT...") dikhti hai.
+  const MONTHS = ["January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"];
+  eleventyConfig.addFilter("niceDate", function (value) {
+    if (!value) return "";
+    const d = value instanceof Date ? value
+      : /^\d{4}-\d{2}-\d{2}/.test(String(value)) ? new Date(String(value)) : null;
+    if (!d || isNaN(d.getTime())) return String(value); // jaisa likha hai waisa hi dikhao
+    return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
+  });
+
   eleventyConfig.ignores.add("404.html");
   // Internal file hai — isse koi public page nahi banna chahiye.
   eleventyConfig.ignores.add("CLAUDE.md");
