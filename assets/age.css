@@ -1,0 +1,183 @@
+/* ==========================================================
+   AK Explained — literary age pages (layout: age.njk)
+   Sirf age.njk is file ko load karta hai. Colours, fonts aur naam
+   site.css ke hi hain (--teal, --gold, --card-paper ...), koi naya system nahi.
+   Site me abhi dark mode nahi hai, isliye yahan bhi nahi.
+   ========================================================== */
+
+/* ---------- Hero: image, text, meta row, buttons ---------- */
+.agehead{display:block;min-height:0;padding:28px 0 26px}
+.agehero{
+  margin:0 0 22px;max-width:640px;aspect-ratio:16/10;overflow:hidden;
+  border-radius:16px;border:1px solid var(--card-line);background:var(--tint);
+  box-shadow:0 14px 30px -18px rgba(22,48,74,.35);
+}
+.agehero img{width:100%;height:100%;object-fit:cover}
+.agehead .artmeta .per,.agehead .artmeta .pub{display:inline-flex;align-items:center;gap:6px}
+.agehead .artmeta .per::before,.agehead .artmeta .pub::before{content:"";width:6px;height:6px;border-radius:50%}
+.agehead .artmeta .per::before{background:var(--accent)}
+.agehead .artmeta .pub::before{background:var(--sage)}
+.agehead .artmeta .per{font-weight:600;color:var(--ink)}
+
+.agetools{display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;margin-top:18px}
+.agetools .btn{display:inline-flex;align-items:center;gap:8px;padding:9px 17px;font-family:inherit;font-size:.9rem}
+.agetools .btn .ico{width:18px;height:18px;color:currentColor}
+.agetools__msg{font-size:.88rem;font-weight:600;color:var(--teal-dark)}
+
+/* ---------- Layout: contents list + article + study rail ---------- */
+.agelayout{row-gap:24px}
+.agelayout .toc,.agelayout .rail{width:100%;max-width:640px;justify-self:center}
+
+/* ---------- "On this page" (contents) ---------- */
+.toc{font-family:var(--sans)}
+.toc details{
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;padding:14px 16px;
+}
+.toc summary{
+  display:flex;align-items:center;justify-content:space-between;cursor:pointer;list-style:none;
+  font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);
+}
+.toc summary::-webkit-details-marker{display:none}
+.toc summary::after{content:"\2013";font-size:1.1rem;letter-spacing:0}
+.toc details:not([open]) summary::after{content:"+"}
+.toc ol{list-style:none;margin:10px 0 0;padding:0;max-width:none}
+.toc li{margin:0}
+.toc a{
+  display:block;padding:5px 0 5px 12px;border-left:2px solid var(--border);
+  font-size:.88rem;line-height:1.4;color:var(--body);
+  transition:color .2s,border-color .2s;
+}
+.toc a:hover{color:var(--teal-dark);border-left-color:var(--teal)}
+
+@media (min-width:1180px){
+  .agelayout{
+    grid-template-areas:"article toc" "rail .";
+    row-gap:40px;
+  }
+  .agelayout .article{grid-area:article}
+  .agelayout .toc{grid-area:toc;align-self:stretch;max-width:none}
+  /* Contents list article ke saath chalti hai: sticky */
+  .toc details{position:sticky;top:22px;max-height:calc(100vh - 44px);overflow-y:auto}
+  .toc summary{pointer-events:none;cursor:default}
+  .toc summary::after{display:none}
+  /* Study boxes ab article ke neeche ek row me (sticky TOC ke saath takraate nahi) */
+  .agelayout .rail{
+    grid-area:rail;position:static;
+    grid-template-columns:repeat(auto-fit,minmax(248px,1fr));
+  }
+}
+
+/* Markdown tables me wrapper nahi hota, aur site.css ka table min-width 460px chhote phone par
+   page ko side me kheench deta tha. Table ko apne andar scroll hone do. */
+.agearticle table{display:block;overflow-x:auto;min-width:0;-webkit-overflow-scrolling:touch}
+
+/* ---------- Boxes (article ke andar aur article ke end me) ---------- */
+.abox{
+  font-family:var(--sans);font-size:.95rem;line-height:1.6;color:var(--body);
+  background:var(--card-paper);border:1px solid var(--card-line);border-left:4px solid var(--teal);
+  border-radius:14px;padding:18px 20px 16px;margin:30px 0;
+}
+.article .abox__title{
+  display:flex;align-items:center;gap:10px;margin:0 0 12px;
+  font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.3;color:var(--ink);
+}
+.abox__ico{flex:none;color:var(--gold)}
+.article .abox p{margin-bottom:12px}
+.article .abox > :last-child{margin-bottom:0}
+.article .abox ul,.article .abox ol{margin-bottom:12px}
+
+/* Important points to remember (article ke beech, ::: points) */
+.abox--points{border-left-color:var(--gold);background:var(--cream)}
+
+/* Key terms */
+.abox--terms dl{margin:0}
+.abox--terms dl > div{
+  display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr);gap:4px 18px;
+  padding:9px 0;border-top:1px solid var(--border);
+}
+.abox--terms dl > div:first-child{border-top:0;padding-top:0}
+.abox--terms dt{font-family:var(--serif);font-weight:700;color:var(--ink)}
+.abox--terms dd{margin:0}
+@media (max-width:560px){.abox--terms dl > div{grid-template-columns:1fr}}
+
+/* Criticism & scholarship */
+.abox--criticism{border-left-color:var(--sage)}
+
+/* Quick revision */
+.abox--revision{background:var(--teal-soft);border-color:#C5DDD7}
+.abox--revision ul{list-style:none;margin:0;padding:0;max-width:none}
+.abox--revision li{position:relative;padding-left:26px;margin-bottom:8px}
+.abox--revision li:last-child{margin-bottom:0}
+.abox--revision li::before{content:"\2713";position:absolute;left:2px;top:0;font-weight:700;color:var(--teal)}
+
+/* Test Your Knowledge */
+.abox--quiz{background:var(--cream);border-left-color:var(--accent)}
+.article .abox--quiz a.btn{text-decoration:none;color:#fff;margin-top:2px}
+
+/* FAQ (details.faq styling site.css se aata hai) */
+.agefaq,.agesources{padding:0;margin-top:34px}
+.agefaq details.faq summary{font-size:1.02rem}
+.agefaq details.faq .body{font-size:.98rem;font-family:var(--serif)}
+
+/* Sources used */
+.agesources ul{font-family:var(--sans);font-size:.92rem;line-height:1.55;margin-bottom:0}
+
+.byline{
+  font-family:var(--sans);font-weight:600;color:var(--ink);
+  margin:36px 0 0;padding-top:16px;border-top:1px solid var(--border);
+}
+
+/* Print-only pieces: screen par chhupe rehte hain */
+.print-brand,.print-foot{display:none}
+
+/* ==========================================================
+   PRINT — site.css ka print block pehle se nav, rail, footer, crumb chhupata hai.
+   Yahan age page ki baatein: logo + naam upar, URL + date neeche,
+   TOC / buttons / quiz box band, aur boxes kaale-safed me padhne laayak.
+   ========================================================== */
+@page{margin:16mm 14mm 22mm}
+
+@media print{
+  .toc,.agetools,.abox--quiz,.agehero,.rail{display:none!important}
+
+  .print-brand{
+    display:flex;align-items:center;gap:10pt;margin:0 0 12pt;padding-bottom:7pt;
+    border-bottom:1.5pt solid #000;
+    font-family:var(--serif);font-size:17pt;font-weight:700;color:#000;
+  }
+  .print-brand img{width:34pt;height:34pt;border-radius:50%;border:0;box-shadow:none}
+
+  /* Fixed element har printed page par dobara aata hai (Chrome, Edge, Firefox) */
+  .print-foot{
+    display:block;position:fixed;left:0;right:0;bottom:0;margin:0;max-width:none;
+    padding-top:4pt;border-top:.75pt solid #000;
+    font-family:var(--sans);font-size:8.5pt;color:#000;
+  }
+
+  .agehead{padding:0 0 10pt}
+  .agehead .eyebrow,.agehead p.lede,.agehead .artmeta{color:#000}
+  .agehead .artmeta .xt{border:.75pt solid #000;color:#000;background:#fff}
+  .agelayout{display:block}
+
+  /* Boxes: safed zamin, kaali line, kaala text; ek box do pages me na toote */
+  .abox{
+    background:#fff!important;color:#000;border:1pt solid #000;border-left:4pt solid #000;
+    border-radius:0;margin:14pt 0;padding:9pt 12pt;font-size:10pt;
+    break-inside:avoid;page-break-inside:avoid;
+  }
+  .abox *,.article .abox__title,.abox__ico{color:#000!important}
+  .abox--revision li::before{color:#000}
+  .abox--terms dl > div{border-top-color:#000;break-inside:avoid;page-break-inside:avoid}
+
+  .agearticle th,.agearticle td{border-color:#000;background:#fff}
+  .agearticle table{display:table;overflow:visible;break-inside:avoid;page-break-inside:avoid}
+  .article tr{break-inside:avoid;page-break-inside:avoid}
+
+  /* FAQ: jawab bhi chhapein (age.js bhi print ke time details kholta hai) */
+  details.faq{border:.75pt solid #000;break-inside:avoid;page-break-inside:avoid}
+  details.faq summary::before{display:none}
+  .byline{color:#000;border-top-color:#000}
+}
+@media print{
+  details.faq::details-content{content-visibility:visible;display:block}
+}

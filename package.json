@@ -5,6 +5,8 @@
     "build": "eleventy"
   },
   "devDependencies": {
-    "@11ty/eleventy": "3.1.6"
+    "@11ty/eleventy": "3.1.6",
+    "markdown-it": "14.3.2",
+    "markdown-it-container": "4.0.0"
   }
 }

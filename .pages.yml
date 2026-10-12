@@ -19,10 +19,16 @@ content:
       fields: [title, eyebrow]
     fields:
       - name: layout
-        label: Layout
-        type: string
-        hidden: true
+        label: Page layout
+        description: "Choose 'Standard article' for normal notes. Choose 'Literary age page' for the long age articles. The fields marked 'Age page' below are used only by the age layout."
+        type: select
         default: base.njk
+        options:
+          values:
+            - value: base.njk
+              label: Standard article
+            - value: age.njk
+              label: Literary age page
       - name: title
         label: Title (page ka bada heading)
         type: string
@@ -70,8 +76,76 @@ content:
         label: Side ke study boxes dikhayein?
         type: boolean
         default: true
+
+      # ---- Literary age pages (layout: age.njk). Khaali chhodne par kuch nahi dikhta. ----
+      - name: hero_image
+        label: "Age page: Hero image (top picture)"
+        description: Leave empty to use the picture for the age named below.
+        type: image
+      - name: hero_alt
+        label: "Age page: Hero image description (alt text)"
+        description: One short sentence that describes the picture, for screen readers.
+        type: string
+      - name: age
+        label: "Age page: Age name (slug)"
+        description: "Lower case with hyphens. One of: old-english, middle-english, renaissance, jacobean, restoration, augustan, romantic, victorian, modern, contemporary."
+        type: string
+      - name: period
+        label: "Age page: Period (for example 450–1066)"
+        type: string
+      - name: published
+        label: "Age page: Published date"
+        type: date
+      - name: toc
+        label: "Age page: Show the 'On this page' contents list?"
+        type: boolean
+        default: true
+      - name: key_terms
+        label: "Age page: Key terms"
+        description: Each item has a term and its meaning. Shown in the 'Key terms' box.
+        type: object
+        list: true
+        fields:
+          - name: term
+            label: Term
+            type: string
+          - name: meaning
+            label: Meaning
+            type: text
+      - name: criticism
+        label: "Age page: Criticism & scholarship"
+        description: Shown in the 'Criticism & scholarship' box.
+        type: rich-text
+      - name: revision_points
+        label: "Age page: Quick revision points"
+        description: Short points, one per item. Aim for 25 to 40 (the form allows up to 40). Shown in the 'Quick revision' box.
+        type: string
+        list:
+          max: 40
+      - name: quiz_topic
+        label: "Age page: Quiz topic"
+        description: "Used in the Test Your Knowledge box, for example: Old English. The box reads: 'on Old English Literature.'"
+        type: string
+      - name: faqs
+        label: "Age page: Questions and answers (FAQ)"
+        type: object
+        list: true
+        fields:
+          - name: question
+            label: Question
+            type: string
+          - name: answer
+            label: Answer
+            type: text
+      - name: sources
+        label: "Age page: Sources used"
+        description: One source per item. Use *stars* around a title to make it italic.
+        type: string
+        list: true
+
       - name: body
         label: Article
+        description: "To add an 'Important points to remember' box: type  ::: points  on its own line. Then type the points (a bullet list works well). Then type  :::  on its own line to close it. Leave an empty line before and after each of these two lines."
         type: rich-text
 
   - name: pages
