@@ -111,10 +111,11 @@
 <article class="article">
 {{ content | safe }}
 
-{% if prev or next %}
+{# Pages CMS khaali prev/next ko {} ya "" ke roop me save kar sakta hai, isliye sirf href dekh kar button dikhao #}
+{% if prev.href or next.href %}
 <nav class="serialnav" aria-label="Series">
-  {% if prev %}<a class="sn prev" href="{{ prev.href }}"><span class="dir">&larr; Previous</span><span class="ttl">{{ prev.label }}</span></a>{% else %}<span></span>{% endif %}
-  {% if next %}<a class="sn next" href="{{ next.href }}"><span class="dir">Next &rarr;</span><span class="ttl">{{ next.label }}</span></a>{% endif %}
+  {% if prev.href %}<a class="sn prev" href="{{ prev.href }}"><span class="dir">&larr; Previous</span><span class="ttl">{{ prev.label or "Previous article" }}</span></a>{% else %}<span></span>{% endif %}
+  {% if next.href %}<a class="sn next" href="{{ next.href }}"><span class="dir">Next &rarr;</span><span class="ttl">{{ next.label or "Next article" }}</span></a>{% endif %}
 </nav>
 {% endif %}
 </article>
