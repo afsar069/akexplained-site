@@ -6,8 +6,6 @@
 /go/youtube    https://www.youtube.com/channel/UC3MKGiItBxSbP0r1VSTrpxA  302
 
 # Pages removed or renamed in the 2026 redesign — keep old links working
-/university/du/  /exams/ma-ba/   302
-/university/du   /exams/ma-ba/   302
 /exams/university/*  /exams/ma-ba/   301
 /exams/university    /exams/ma-ba/   301
 /exams/tgt/*         /exams/pgt/     301

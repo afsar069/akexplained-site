@@ -120,7 +120,7 @@
 .quizzone{position:relative;overflow:hidden;background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .quizgrid{display:grid;gap:15px;grid-template-columns:1fr}
 @media(min-width:560px){.quizgrid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:1000px){.quizgrid{grid-template-columns:repeat(2,minmax(0,380px))}}
+@media(min-width:1000px){.quizgrid{grid-template-columns:repeat(4,1fr)}}
 .quizcard{
   position:relative;display:flex;align-items:center;gap:14px;background:var(--paper);
   border:1px solid var(--card-line);border-radius:16px;padding:17px 42px 17px 18px;color:inherit;
