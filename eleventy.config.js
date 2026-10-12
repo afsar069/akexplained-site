@@ -26,6 +26,14 @@ module.exports = function (eleventyConfig) {
   // Review system login ke saath chalu hoga. Tab tak ye page build nahi hota —
   // file repo me padi hai, chalu karne ke liye bas ye line hata dein.
   eleventyConfig.ignores.add("write-a-review/**");
+  // Ye pages abhi khaali ya "coming soon" hain, isliye site par nahi dikhte. File repo me padi hai;
+  // jab content ready ho, bas us page ki ignore line hata dein (aur menu, footer, sitemap me link wapas jod dein).
+  eleventyConfig.ignores.add("login/**");
+  eleventyConfig.ignores.add("download/**");
+  eleventyConfig.ignores.add("research-support/**");
+  eleventyConfig.ignores.add("quizzes/daily/**");
+  eleventyConfig.ignores.add("quizzes/mock-tests/**");
+  eleventyConfig.ignores.add("university/du/**");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("_redirects");
