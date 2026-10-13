@@ -18,6 +18,9 @@ topics: [chaucer, canterbury-tales, gawain-poet, langland, piers-plowman, layamo
 prev:
   label: Old English
   href: /notes/old-english/
+next:
+  label: Renaissance
+  href: /notes/renaissance/
 ---
 
 In the autumn of 1066 a Norman duke won a battle on the Sussex coast, and the people who ruled England began to speak a different language. For the next three centuries the royal court used French, the Church and the schools used Latin, and English lived on as the speech of farmers, workers and townspeople. It had no official standing and no standard form. Each region wrote it as it sounded.
