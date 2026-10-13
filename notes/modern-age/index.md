@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: Modern Literature (1901-1945)
-description: A simple guide to Modern English literature (1901-1945): its world, poets, novelists, dramatists and critics, for BA, MA and UGC-NET students.
+description: "A simple guide to Modern English literature (1901-1945): its world, poets, novelists, dramatists and critics, for BA, MA and UGC-NET students."
 eyebrow: Notes · Literary Ages
 mark: M
 crumb_label: Modern
