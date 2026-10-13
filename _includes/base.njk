@@ -88,18 +88,40 @@
 
 <main id="main">
 
+{# Ye extras (On this page, Related articles, FAQ/Quick revision patti, Important points/Key terms box, Quiz box,
+   Share/Print) notes/ ke articles par apne aap lagte hain. Kisi aur page par chahiye to front matter me
+   article_extras: true, aur notes/ ke kisi page par na chahiye to article_extras: false #}
+{% if article_extras is defined %}{% set extras = article_extras %}{% else %}{% set extras = page.url.startsWith('/notes/') %}{% endif %}
+
 {% if pagehead != false %}
 <section class="pagehead">
   <img class="motif" src="/assets/reader-motif.webp" alt="" width="440" height="525" aria-hidden="true">
   <span class="mark" aria-hidden="true">{{ mark or title | first | upper }}</span>
   <div class="wrap">
+    {% if extras %}
+    {% set shareUrl = "https://akexplained.com" ~ page.url %}
+    <div class="pagetools">
+      <div class="sharewrap">
+        <button type="button" class="ptbtn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="shareMenu"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.3 10.8 7.4-4.3M8.3 13.2l7.4 4.3"/></svg><span>Share</span></button>
+        <div class="sharemenu" id="shareMenu" hidden>
+          <a href="https://api.whatsapp.com/send?text={{ (title ~ ' ' ~ shareUrl) | urlencode }}" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://t.me/share/url?url={{ shareUrl | urlencode }}&amp;text={{ title | urlencode }}" target="_blank" rel="noopener">Telegram</a>
+          <a href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | urlencode }}" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://twitter.com/intent/tweet?url={{ shareUrl | urlencode }}&amp;text={{ title | urlencode }}" target="_blank" rel="noopener">X (Twitter)</a>
+          <a href="mailto:?subject={{ title | urlencode }}&amp;body={{ shareUrl | urlencode }}">Email</a>
+          <button type="button" id="copyLink" data-url="{{ shareUrl }}">Copy link</button>
+        </div>
+      </div>
+      <button type="button" class="ptbtn" id="printBtn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg><span>Print</span></button>
+    </div>
+    {% endif %}
     <p class="eyebrow">{{ eyebrow or title }}</p>
     <h1>{{ title }}</h1>
     {% if description %}<p class="lede">{{ description }}</p>{% endif %}
     <p class="artmeta">
       <span class="rt">{{ content | readingTime }} min read</span>
       {% if updated %}<span class="up">Updated {{ updated | niceDate }}</span>{% endif %}
-      {% if exams %}{% for e in exams %}<span class="xt">{{ e }}</span>{% endfor %}{% endif %}
+      {% if exams %}{% for e in exams %}{% set eu = e | examUrl %}{% if eu %}<a class="xt" href="{{ eu }}">{{ e }}</a>{% else %}<span class="xt">{{ e }}</span>{% endif %}{% endfor %}{% endif %}
     </p>
   </div>
 </section>
@@ -108,9 +130,6 @@
 <div class="wrap">
 <div class="readlayout">
 
-{# Ye extras (On this page, Related articles, FAQ/Quick revision patti, Quiz box) notes/ ke articles par apne aap lagte hain.
-   Kisi aur page par chahiye to front matter me article_extras: true, aur notes/ ke kisi page par na chahiye to article_extras: false #}
-{% if article_extras is defined %}{% set extras = article_extras %}{% else %}{% set extras = page.url.startsWith('/notes/') %}{% endif %}
 {% if extras %}
 {% set body = content | articleHtml %}
 {% set toc = body | tocItems %}

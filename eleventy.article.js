@@ -114,11 +114,55 @@ function wrapTables(html) {
   return html.replace(/<table\b[\s\S]*?<\/table>/g, (t) => '<div class="tablewrap">' + t + "</div>");
 }
 
+// "Important points to remember" aur "Key terms": heading + uske neeche ka content
+// (agli barabar ya badi heading tak) ek halke rang ke box me band hota hai.
+const BOXES = [
+  { re: /^important points\b/i, cls: "abox--points" },
+  { re: /^key terms?\b/i, cls: "abox--terms" },
+];
+function wrapBoxes(html) {
+  const heads = [];
+  const re = /<h([1-6])(?:\s[^>]*)?>([\s\S]*?)<\/h\1>/g;
+  let m;
+  while ((m = re.exec(html))) heads.push({ start: m.index, level: +m[1], text: plain(m[2]) });
+  const spans = [];
+  heads.forEach((h, i) => {
+    const box = BOXES.find((b) => b.re.test(h.text));
+    if (!box) return;
+    let stop = html.length;
+    for (let j = i + 1; j < heads.length; j++) {
+      if (heads[j].level <= h.level) { stop = heads[j].start; break; }
+    }
+    if (!spans.length || h.start >= spans[spans.length - 1].stop) spans.push({ start: h.start, stop, cls: box.cls });
+  });
+  for (let k = spans.length - 1; k >= 0; k--) {
+    const s = spans[k];
+    html = html.slice(0, s.start) + '<section class="abox ' + s.cls + '">\n' +
+      html.slice(s.start, s.stop) + "</section>\n" + html.slice(s.stop);
+  }
+  return html;
+}
+
 function articleHtml(content) {
   let html = wrapTables(addHeadingIds(String(content)));
   html = mapSection(html, /^frequently asked questions\b|^faqs?\b/i, buildFaq);
   html = mapSection(html, /^quick revision\b/i, buildRevision);
+  html = wrapBoxes(html);
   return html;
+}
+
+// Heading ke neeche ke exam tags (UGC-NET, PGT ...) ko unke asli page se jodta hai.
+// Pehchaan na ho to "" — tab tag sirf label rehta hai, link nahi.
+const EXAM_PAGES = [
+  { re: /^(ugc)?net(jrf)?(set)?$/, url: "/exams/net/" },
+  { re: /^pgt/, url: "/exams/pgt/" },
+  { re: /^(maba|bama|ma|ba)(university)?$/, url: "/exams/ma-ba/" },
+  { re: /^(state)?psc/, url: "/exams/state-psc/" },
+];
+function examUrl(label) {
+  const key = String(label).toLowerCase().replace(/[^a-z0-9]/g, "");
+  const hit = EXAM_PAGES.find((e) => e.re.test(key));
+  return hit ? hit.url : "";
 }
 
 // "On this page" ki list: h2 hon to h2, warna h3.
@@ -162,6 +206,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("articleHtml", articleHtml);
   eleventyConfig.addFilter("tocItems", tocItems);
   eleventyConfig.addFilter("relatedArticles", relatedArticles);
+  eleventyConfig.addFilter("examUrl", examUrl);
   // notes/<folder>/index.md — CMS se bane naye articles bhi isme apne aap aa jaate hain.
   eleventyConfig.addCollection("notes", (api) => api.getFilteredByGlob("./notes/*/index.md"));
 };

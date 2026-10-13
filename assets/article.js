@@ -41,4 +41,47 @@
   window.addEventListener('beforeprint', function () {
     [].forEach.call(document.querySelectorAll('.article details'), function (d) { d.open = true; });
   });
+
+  // Print button
+  var printBtn = document.getElementById('printBtn');
+  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
+
+  // Share button: phone par phone ka apna share sheet; computer par chhota menu
+  // (WhatsApp, Telegram, Facebook, X, Email, Copy link). Links HTML me pehle se hain.
+  var shareBtn = document.getElementById('shareBtn');
+  var menu = document.getElementById('shareMenu');
+  var copyBtn = document.getElementById('copyLink');
+  if (shareBtn && menu) {
+    var url = copyBtn ? copyBtn.getAttribute('data-url') : location.href;
+    var setOpen = function (open) {
+      menu.hidden = !open;
+      shareBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    };
+    shareBtn.addEventListener('click', function (e) {
+      var touch = window.matchMedia && window.matchMedia('(pointer:coarse)').matches;
+      if (touch && navigator.share) {
+        navigator.share({ title: document.title, url: url }).catch(function () {});
+        return;
+      }
+      e.stopPropagation();
+      setOpen(menu.hidden);
+    });
+    document.addEventListener('click', function (e) {
+      if (!menu.hidden && !menu.contains(e.target)) setOpen(false);
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && !menu.hidden) { setOpen(false); shareBtn.focus(); }
+    });
+    if (copyBtn) copyBtn.addEventListener('click', function () {
+      var done = function () {
+        copyBtn.textContent = 'Link copied';
+        setTimeout(function () { copyBtn.textContent = 'Copy link'; setOpen(false); }, 1400);
+      };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this link', url); });
+      } else {
+        window.prompt('Copy this link', url);
+      }
+    });
+  }
 })();
