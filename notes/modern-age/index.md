@@ -18,6 +18,9 @@ topics: [modernism, stream-of-consciousness, imagism, georgian-poetry, war-poets
 prev:
   label: Victorian Age
   href: /notes/victorian-age/
+next:
+  label: Contemporary Age
+  href: /notes/contemporary-age/
 ---
 
 On 22 January 1901, Queen Victoria died at Osborne House on the Isle of Wight. She had ruled since 1837, so most people in Britain had never lived under another monarch. Her name had come to stand for a whole age of steady progress, strict manners and a vast empire. When the news spread, many felt that something larger than a reign had come to an end.
