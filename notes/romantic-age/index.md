@@ -15,6 +15,9 @@ age: romantic-age
 period: 1798-1837
 exam_fit: [net, pgt, psc]
 topics: [lyrical-ballads, wordsworth, coleridge, blake, byron, shelley, keats, scott, austen, mary-shelley, imagination, sublime, negative-capability]
+prev:
+  label: Augustan Age
+  href: /notes/augustan-age/
 next:
   label: Victorian Age
   href: /notes/victorian-age/

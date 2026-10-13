@@ -18,6 +18,9 @@ topics: [pope, swift, addison, steele, defoe, richardson, fielding, johnson, ste
 prev:
   label: Restoration
   href: /notes/restoration-age/
+next:
+  label: Romantic Age
+  href: /notes/romantic-age/
 ---
 
 Early in the eighteenth century, many English writers began to think of themselves as Romans. Rome had suffered long civil wars and then found peace under its first emperor, Augustus, who ruled from 27 BC to AD 14. In his reign the poets Virgil, Horace and Ovid wrote works that later ages treated as models of order, polish and good taste.

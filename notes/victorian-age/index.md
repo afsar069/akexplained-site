@@ -15,7 +15,7 @@ exams:
   - MA / BA
 prev:
   label: Romantic Age
-  href: /english-literature/#romantic
+  href: /notes/romantic-age/
 next:
   label: Modern Age
   href: /english-literature/#modern
