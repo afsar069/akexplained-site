@@ -201,6 +201,7 @@
     ['Note', '#4A5A6A', 'The Augustan Age \u2014 full notes', '/notes/augustan-age/'],
     ['Note', '#4A5A6A', 'The Romantic Age — full notes', '/notes/romantic-age/'],
     ['Note', '#4A5A6A', 'The Victorian Age \u2014 full notes', '/notes/victorian-age/'],
+    ['Note', '#4A5A6A', 'The Modern Age — full notes', '/notes/modern-age/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
@@ -231,7 +232,7 @@
     { slug:'augustan',       yr:'1700', name:'Augustan',           era:'1700 \u2013 1798',  who:'Pope \u00b7 Swift \u00b7 Johnson', article:'/notes/augustan-age/' },
     { slug:'romantic',       yr:'1798', name:'Romantic',           era:'1798 \u2013 1837',  who:'Wordsworth \u00b7 Coleridge \u00b7 Keats', article:'/notes/romantic-age/' },
     { slug:'victorian',      yr:'1837', name:'Victorian',          era:'1837 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy', article:'/notes/victorian-age/' },
-    { slug:'modern',         yr:'1901', name:'Modern',             era:'1901 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce' },
+    { slug:'modern',         yr:'1901', name:'Modern',             era:'1901 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce', article:'/notes/modern-age/' },
     { slug:'contemporary',   yr:'1945', name:'Contemporary',       era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie' },
   ];
 
