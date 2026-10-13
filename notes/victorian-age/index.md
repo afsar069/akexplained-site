@@ -20,7 +20,7 @@ prev:
   href: /notes/romantic-age/
 next:
   label: Modern Age
-  href: /english-literature/#modern
+  href: /notes/modern-age/
 ---
 
 Early on the morning of 20 June 1837, two men drove out to Kensington Palace to wake a girl of eighteen. The Archbishop of Canterbury and the Lord Chamberlain had come with news that her uncle, William IV, was dead and that she was now Queen. Her name was Victoria. Nobody in that room could have guessed that she would reign for more than sixty-three years, longer than any ruler Britain had known, or that a whole age would take her name.
