@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 title: The Victorian Age (1837-1901)
-description: A simple guide to the Victorian Age (1837-1901): its history, novels, poetry, drama and thinkers, for BA, MA and UGC-NET students.
+description: "A simple guide to the Victorian Age (1837-1901): its history, novels, poetry, drama and thinkers, for BA, MA and UGC-NET students."
 eyebrow: Notes · Literary Ages
 mark: V
 crumb_label: Victorian
@@ -15,6 +15,12 @@ age: victorian
 period: 1837-1901
 exam_fit: [net, pgt, psc]
 topics: [queen-victoria, chartism, great-exhibition, oxford-movement, darwin, serial-novel, dickens, george-eliot, hardy, tennyson, browning, arnold, pre-raphaelites, aestheticism, fin-de-siecle, dramatic-monologue]
+prev:
+  label: Romantic Age
+  href: /notes/romantic-age/
+next:
+  label: Modern Age
+  href: /english-literature/#modern
 ---
 
 Early on the morning of 20 June 1837, two men drove out to Kensington Palace to wake a girl of eighteen. The Archbishop of Canterbury and the Lord Chamberlain had come with news that her uncle, William IV, was dead and that she was now Queen. Her name was Victoria. Nobody in that room could have guessed that she would reign for more than sixty-three years, longer than any ruler Britain had known, or that a whole age would take her name.
