@@ -18,6 +18,9 @@ topics: [humanism, reformation, wyatt-surrey, sidney, spenser, marlowe, shakespe
 prev:
   label: Middle English
   href: /notes/middle-english/
+next:
+  label: Jacobean and Caroline
+  href: /notes/jacobean-and-caroline-age/
 ---
 
 In 1476 a merchant named William Caxton set up a printing press at Westminster. Until then a book was a rare and costly thing, copied slowly by hand, and only the rich or the learned could own one. The press changed this. Within a few decades ideas could travel across the country faster than any rider, and ordinary readers began to ask for books in their own language.
