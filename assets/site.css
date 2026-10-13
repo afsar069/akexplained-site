@@ -385,11 +385,111 @@ a.railbox:hover .go{color:var(--teal-dark)}
 }
 .railbox.soonbox p{margin-bottom:0}
 
+/* ---------- Article extras: contents, related, FAQ, quick revision, quiz box ---------- */
+.article{min-width:0;width:100%}
+.tablewrap{overflow-x:auto;margin:0 0 22px;-webkit-overflow-scrolling:touch}
+.tablewrap table{margin:0;min-width:520px}
+.article h2[id],.article h3[id]{scroll-margin-top:84px}
+
+/* Rail lamba hone par sticky rail viewport se bahar na jaaye — rail ke andar hi scroll hota hai */
+@media (min-width:1180px) and (min-height:720px){
+  .rail{max-height:calc(100vh - 44px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;
+    scrollbar-color:var(--scroll) transparent;padding-right:2px}
+}
+.railhead{
+  display:flex;align-items:center;gap:8px;font-family:var(--serif);font-weight:600;font-size:.98rem;
+  color:var(--ink);padding-bottom:10px;margin:0 0 10px!important;border-bottom:1px solid var(--card-line);
+}
+.railhead svg{color:var(--teal);flex:none}
+
+.toclist{list-style:none;margin:0;padding:0;max-height:min(46vh,360px);overflow-y:auto;scrollbar-width:thin;
+  scrollbar-color:var(--scroll) transparent}
+.toclist li{margin:0}
+.toclist a{
+  position:relative;display:block;padding:6px 6px 6px 26px;font-size:.88rem;line-height:1.4;color:var(--body);
+  text-decoration:none;border-radius:8px;transition:color .15s,background .15s;
+}
+.toclist a::before{
+  content:"";position:absolute;left:6px;top:50%;width:11px;height:11px;margin-top:-5.5px;border-radius:50%;
+  border:1.5px solid #B8C4C2;background:#fff;box-sizing:border-box;transition:border-color .15s,background .15s,box-shadow .15s;
+}
+.toclist a:hover{color:var(--teal);background:var(--tint)}
+.toclist a.is-active{color:var(--teal-dark);font-weight:600}
+.toclist a.is-active::before{border-color:var(--teal);background:var(--teal);box-shadow:inset 0 0 0 2px #fff}
+
+.rellist{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+.rellist a{
+  display:flex;align-items:center;gap:11px;padding:7px 6px;border-radius:10px;color:var(--ink);text-decoration:none;
+  transition:background .15s,color .15s;
+}
+.rellist a:hover{background:var(--tint);color:var(--teal-dark)}
+.rellist img,.rellist .relic{width:44px;height:44px;border-radius:9px;flex:none;object-fit:cover;border:1px solid var(--card-line)}
+.rellist .relic{display:flex;align-items:center;justify-content:center;background:var(--teal-soft);color:var(--teal)}
+.rellist .rtitle{font-size:.88rem;line-height:1.35;font-weight:500}
+
+/* Mobile aur tablet par rail article ke neeche jaata hai, isliye contents article ke upar bhi milta hai */
+.tocmobile{
+  margin:0 0 26px;background:var(--card-paper);border:1px solid var(--card-line);border-radius:12px;
+  font-family:var(--sans);font-size:.95rem;
+}
+.tocmobile summary{cursor:pointer;list-style:none;padding:12px 16px;font-weight:600;color:var(--ink);display:flex;justify-content:space-between}
+.tocmobile summary::-webkit-details-marker{display:none}
+.tocmobile summary::after{content:"+";color:var(--teal);font-weight:700}
+.tocmobile[open] summary::after{content:"\2212"}
+.tocmobile ol{margin:0;padding:0 16px 12px 36px}
+.tocmobile li{margin:0 0 6px}
+@media (min-width:1180px){.tocmobile{display:none}}
+@media (max-width:1179px){.tocbox{display:none}}
+
+/* FAQ aur Quick revision: patti par click karo, neeche khulta hai */
+.faq-item,.revbox{
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:12px;margin:0 0 10px;
+  transition:border-color .2s,box-shadow .25s;
+}
+.faq-item:hover,.revbox:hover{border-color:#CFC7AD}
+.faq-item[open],.revbox[open]{border-color:var(--teal);box-shadow:var(--glow)}
+.faq-item summary,.revbox summary{
+  cursor:pointer;list-style:none;position:relative;padding:14px 50px 14px 18px;
+  font-family:var(--serif);font-weight:600;font-size:1.02rem;line-height:1.4;color:var(--ink);
+}
+.faq-item summary::-webkit-details-marker,.revbox summary::-webkit-details-marker{display:none}
+.faq-item summary::after,.revbox summary::after{
+  content:"+";position:absolute;right:16px;top:50%;width:24px;height:24px;margin-top:-12px;border-radius:50%;
+  background:var(--teal-soft);color:var(--teal);font-family:var(--sans);font-weight:700;font-size:1.05rem;line-height:24px;text-align:center;
+}
+.faq-item[open] summary::after,.revbox[open] summary::after{content:"\2212";background:var(--teal);color:#fff}
+.faq-item summary:focus-visible,.revbox summary:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:12px}
+.faq-a{padding:0 18px 6px;font-size:.95rem;line-height:1.65}
+.faq-a p:last-child{margin-bottom:12px}
+.revbox{background:var(--teal-soft);border-color:#C9DDD8}
+.revbox summary{font-family:var(--sans);font-size:.95rem;color:var(--teal-dark)}
+.revbox .when-open,.revbox[open] .when-closed{display:none}
+.revbox[open] .when-open{display:inline}
+.revbox ol,.revbox ul{margin:0;padding:6px 22px 8px 42px;background:var(--card-paper);border-top:1px solid #C9DDD8;
+  border-radius:0 0 11px 11px;font-size:.95rem;line-height:1.6}
+.revbox ol{padding-top:14px}
+
+/* Article ke neeche: quiz box */
+.quizcta{
+  display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:40px 0 0;padding:20px 22px;
+  background:linear-gradient(135deg,var(--teal-soft),var(--cream));border:1px solid #C9DDD8;border-radius:14px;
+  font-family:var(--sans);
+}
+.quizcta .qic{width:48px;height:48px;border-radius:13px;background:#fff;color:var(--teal);display:flex;align-items:center;justify-content:center;flex:none;
+  box-shadow:0 4px 12px -4px rgba(22,48,74,.18)}
+.quizcta .qtx{flex:1 1 220px}
+.article .quizcta h2{margin:0 0 3px;font-size:1.15rem;line-height:1.3}
+.quizcta p{margin:0;font-size:.92rem;line-height:1.5;color:var(--body)}
+.article .quizcta .btn{text-decoration:none;color:#fff;flex:none}
+.article .quizcta .btn:hover{color:#fff}
+
 /* ==========================================================
    PRINT — students notes print karte hain. Sirf text chhape.
    ========================================================== */
 @media print{
-  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark{display:none!important}
+  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.tocmobile,.quizcta{display:none!important}
+  .faq-item,.revbox{border:none;box-shadow:none;background:none}
+  .faq-item summary::after,.revbox summary::after{display:none}
   body{padding-left:0!important;background:#fff;font-size:11pt}
   .readlayout{display:block;padding:0}
   .article{max-width:none;margin:0;font-size:11pt;line-height:1.5;color:#000}

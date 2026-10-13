@@ -108,8 +108,35 @@
 <div class="wrap">
 <div class="readlayout">
 
+{# Ye extras (On this page, Related articles, FAQ/Quick revision patti, Quiz box) notes/ ke articles par apne aap lagte hain.
+   Kisi aur page par chahiye to front matter me article_extras: true, aur notes/ ke kisi page par na chahiye to article_extras: false #}
+{% if article_extras is defined %}{% set extras = article_extras %}{% else %}{% set extras = page.url.startsWith('/notes/') %}{% endif %}
+{% if extras %}
+{% set body = content | articleHtml %}
+{% set toc = body | tocItems %}
+{% else %}
+{% set body = content %}
+{% set toc = [] %}
+{% endif %}
 <article class="article">
-{{ content | safe }}
+{% if toc.length > 1 %}
+<details class="tocmobile">
+  <summary>On this page</summary>
+  <ol>{% for t in toc %}<li><a href="#{{ t.id }}">{{ t.text }}</a></li>{% endfor %}</ol>
+</details>
+{% endif %}
+{{ body | safe }}
+
+{% if extras and quiz != false %}
+<section class="quizcta" aria-labelledby="quizcta-title">
+  <span class="qic" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="m8.5 11.5 2.2 2.2 4.8-4.8"/></svg></span>
+  <div class="qtx">
+    <h2 id="quizcta-title">Test your knowledge</h2>
+    <p>Check what you have learned with quizzes and MCQs.</p>
+  </div>
+  <a class="btn" href="/quizzes/mcq/">Start MCQ practice</a>
+</section>
+{% endif %}
 
 {# Pages CMS khaali prev/next ko {} ya "" ke roop me save kar sakta hai, isliye sirf href dekh kar button dikhao #}
 {% if prev.href or next.href %}
@@ -122,6 +149,29 @@
 
 {% if rail != false %}
 <aside class="rail" aria-label="Study resources">
+  {% if toc.length > 1 %}
+  <nav class="railbox tocbox" aria-label="On this page">
+    <p class="railhead"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/><path d="M9 13h7M9 17h7"/></svg>On this page</p>
+    <ol class="toclist">{% for t in toc %}<li><a href="#{{ t.id }}">{{ t.text }}</a></li>{% endfor %}</ol>
+  </nav>
+  {% endif %}
+
+  {# Related articles: notes/ ke dusre articles. 4 se kam hon to hub links judte hain. #}
+  {% if extras %}
+  {% set related = collections.notes | relatedArticles(page.url) %}
+  <nav class="railbox relbox" aria-label="Related articles">
+    <p class="railhead"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5S10 4.8 6.5 4.8 3 6 3 6v12s1-1.2 3.5-1.2S12 18.5 12 18.5Z"/><path d="M12 6.5s2-1.7 5.5-1.7S21 6 21 6v12s-1-1.2-3.5-1.2S12 18.5 12 18.5Z"/></svg>Related articles</p>
+    <ul class="rellist">
+      {% for r in related %}
+      <li><a href="{{ r.url }}">
+        {% if r.thumb %}<img src="{{ r.thumb }}" alt="" width="44" height="44" loading="lazy">{% else %}<span class="relic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5"/></svg></span>{% endif %}
+        <span class="rtitle">{{ r.title }}</span>
+      </a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
+
   <a class="railbox" href="/download/">
     <span class="ic" style="background:#E8F0FA;color:#2563EB"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M11 3h2v9.2l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4L11 12.2Z"/><path d="M4 18h16v2H4z"/></svg></span>
     <h3>Download important books for NET</h3>
@@ -212,5 +262,6 @@
 </footer>
 
 <script src="/assets/nav.js" defer></script>
+{% if extras %}<script src="/assets/article.js" defer></script>{% endif %}
 </body>
 </html>

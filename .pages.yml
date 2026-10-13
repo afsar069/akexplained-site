@@ -94,6 +94,7 @@ content:
       - package.json
       - package-lock.json
       - eleventy.config.js
+      - eleventy.article.js
 
   - name: reviews
     label: Student Reviews (approve karke publish)

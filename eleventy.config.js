@@ -33,6 +33,9 @@ module.exports = function (eleventyConfig) {
     return d.getUTCDate() + " " + MONTHS[d.getUTCMonth()] + " " + d.getUTCFullYear();
   });
 
+  // Article ke extra hisse: On this page, Related articles, FAQ aur Quick revision patti.
+  require("./eleventy.article.js")(eleventyConfig);
+
   eleventyConfig.ignores.add("404.html");
   // Internal file hai — isse koi public page nahi banna chahiye.
   eleventyConfig.ignores.add("CLAUDE.md");
