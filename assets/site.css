@@ -451,29 +451,29 @@ a.railbox:hover .go{color:var(--teal-dark)}
 @media (max-width:1179px){.tocbox{display:none}}
 
 /* FAQ aur Quick revision: patti par click karo, neeche khulta hai */
-.faq-item,.revbox{
+.faq-item,.revbox,.quizbox{
   background:var(--card-paper);border:1px solid var(--card-line);border-radius:12px;margin:0 0 10px;
   transition:border-color .2s,box-shadow .25s;
 }
-.faq-item:hover,.revbox:hover{border-color:#CFC7AD}
-.faq-item[open],.revbox[open]{border-color:var(--teal);box-shadow:var(--glow)}
-.faq-item summary,.revbox summary{
+.faq-item:hover,.revbox:hover,.quizbox:hover{border-color:#CFC7AD}
+.faq-item[open],.revbox[open],.quizbox[open]{border-color:var(--teal);box-shadow:var(--glow)}
+.faq-item summary,.revbox summary,.quizbox summary{
   cursor:pointer;list-style:none;position:relative;padding:14px 50px 14px 18px;
   font-family:var(--serif);font-weight:600;font-size:1.02rem;line-height:1.4;color:var(--ink);
 }
-.faq-item summary::-webkit-details-marker,.revbox summary::-webkit-details-marker{display:none}
-.faq-item summary::after,.revbox summary::after{
+.faq-item summary::-webkit-details-marker,.revbox summary::-webkit-details-marker,.quizbox summary::-webkit-details-marker{display:none}
+.faq-item summary::after,.revbox summary::after,.quizbox summary::after{
   content:"+";position:absolute;right:16px;top:50%;width:24px;height:24px;margin-top:-12px;border-radius:50%;
   background:var(--teal-soft);color:var(--teal);font-family:var(--sans);font-weight:700;font-size:1.05rem;line-height:24px;text-align:center;
 }
-.faq-item[open] summary::after,.revbox[open] summary::after{content:"\2212";background:var(--teal);color:#fff}
-.faq-item summary:focus-visible,.revbox summary:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:12px}
+.faq-item[open] summary::after,.revbox[open] summary::after,.quizbox[open] summary::after{content:"\2212";background:var(--teal);color:#fff}
+.faq-item summary:focus-visible,.revbox summary:focus-visible,.quizbox summary:focus-visible{outline:2px solid var(--teal);outline-offset:2px;border-radius:12px}
 .faq-a{padding:0 18px 6px;font-size:.95rem;line-height:1.65}
 .faq-a p:last-child{margin-bottom:12px}
-.revbox{background:var(--teal-soft);border-color:#C9DDD8}
-.revbox summary{font-family:var(--sans);font-size:.95rem;color:var(--teal-dark)}
-.revbox .when-open,.revbox[open] .when-closed{display:none}
-.revbox[open] .when-open{display:inline}
+.revbox,.quizbox{background:var(--teal-soft);border-color:#C9DDD8}
+.revbox summary,.quizbox summary{font-family:var(--sans);font-size:.95rem;color:var(--teal-dark)}
+.revbox .when-open,.quizbox .when-open,.revbox[open] .when-closed,.quizbox[open] .when-closed{display:none}
+.revbox[open] .when-open,.quizbox[open] .when-open{display:inline}
 .revbox ol,.revbox ul{margin:0;padding:6px 22px 8px 42px;background:var(--card-paper);border-top:1px solid #C9DDD8;
   border-radius:0 0 11px 11px;font-size:.95rem;line-height:1.6}
 .revbox ol{padding-top:14px}
@@ -535,6 +535,51 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .sharemenu{right:auto;left:0}
 }
 
+/* Print me hi dikhne wala branding (screen par chhupa) */
+.printbrand,.printfoot{display:none}
+
+/* Fun fact / Interesting story ka box */
+.article .abox--fun{background:#FFFBF0;border-color:#E6D08F;
+  --abox-ico:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1.9' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l1.8 4.7 4.7 1.8-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z'/%3E%3Cpath d='M19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8z'/%3E%3C/svg%3E")}
+.article .abox--fun h2::before,.article .abox--fun h3::before{background:#C58B12}
+.article .abox--fun li::marker{color:#C58B12}
+.article .abox p{font-size:.96rem;line-height:1.65;margin-bottom:12px}
+
+/* Quiz: bina login, click karte hi sahi/galat */
+.article .quiz{padding:6px 18px 4px;background:var(--card-paper);border-top:1px solid #C9DDD8;border-radius:0 0 11px 11px;font-family:var(--sans)}
+.article .qz{padding:16px 0 18px;border-bottom:1px dashed var(--card-line)}
+.article .qz-q{display:flex;gap:11px;align-items:flex-start;margin:0 0 11px;font-family:var(--serif);font-weight:600;font-size:1.02rem;line-height:1.45;color:var(--ink)}
+.article .qz-n{flex:none;min-width:28px;height:28px;border-radius:50%;background:var(--teal-soft);color:var(--teal-dark);
+  display:flex;align-items:center;justify-content:center;font:700 .78rem var(--sans)}
+.article .qz-opts{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.article .qz-opts li{margin:0}
+.qz-opt{
+  display:flex;gap:11px;align-items:flex-start;width:100%;text-align:left;padding:10px 14px;cursor:pointer;
+  border:1px solid var(--card-line);border-radius:10px;background:#fff;color:var(--ink);font:500 .95rem/1.45 var(--sans);
+  transition:border-color .15s,background .15s,color .15s;
+}
+.qz-opt:hover:not(:disabled){border-color:var(--teal);background:var(--teal-soft)}
+.qz-opt:focus-visible{outline:2px solid var(--teal);outline-offset:2px}
+.qz-l{flex:none;width:24px;height:24px;border-radius:50%;border:1.5px solid #B8C4C2;display:flex;align-items:center;justify-content:center;
+  font:700 .75rem var(--sans);color:var(--body)}
+.qz-opt:disabled{cursor:default}
+.qz-opt:disabled:not(.is-right):not(.is-wrong){color:var(--body);opacity:.7}
+.qz-opt.is-right{background:#E7F5EC;border-color:#2F9E5B;color:#14532D}
+.qz-opt.is-right .qz-l{background:#2F9E5B;border-color:#2F9E5B;color:#fff}
+.qz-opt.is-wrong{background:#FDECEA;border-color:#D4584D;color:#7F1D1D}
+.qz-opt.is-wrong .qz-l{background:#D4584D;border-color:#D4584D;color:#fff}
+.qz-opt.is-right .qz-t::after{content:" \2713";font-weight:700}
+.qz-opt.is-wrong .qz-t::after{content:" \2717";font-weight:700}
+.article .qz-fb{margin:11px 0 0;padding:10px 14px;border-radius:10px;font-size:.92rem;line-height:1.55}
+.article .qz-fb.ok{background:#E7F5EC;color:#14532D}
+.article .qz-fb.no{background:#FDECEA;color:#7F1D1D}
+.article .qz-key{margin:11px 0 0;font:.9rem/1.5 var(--sans);color:var(--body)}
+@media screen{.quiz.qz-live .qz-key{display:none}}
+.qz-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:14px 0 12px;font:600 .94rem var(--sans);color:var(--teal-dark)}
+.qz-reset{padding:8px 16px;border-radius:999px;border:1px solid var(--teal);background:#fff;color:var(--teal);font:600 .85rem var(--sans);cursor:pointer;transition:background .15s,color .15s}
+.qz-reset:hover{background:var(--teal);color:#fff}
+.qz-reset[hidden]{display:none}
+
 /* Article ke neeche: quiz box */
 .quizcta{
   display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin:40px 0 0;padding:20px 22px;
@@ -555,13 +600,31 @@ summary.ptbtn::-webkit-details-marker{display:none}
 @media print{
   .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.tocmobile,.quizcta,.pagetools{display:none!important}
   .article .abox{break-inside:avoid;background:#fff}
+  @page{size:A4;margin:14mm 14mm 18mm;
+    @bottom-center{content:"akexplained.com  \00B7  Page " counter(page) " of " counter(pages);font-family:'Source Sans 3',Arial,sans-serif;font-size:8pt;color:#666}}
+  .printbrand{display:flex!important;align-items:center;gap:10pt;margin:0 0 10pt;padding:0 0 8pt;border-bottom:2px solid #0F766E}
+  .printbrand img{width:34pt;height:34pt}
+  .printbrand .pb-name{display:flex;flex-direction:column;line-height:1.15}
+  .printbrand b{font-family:'Literata',Georgia,serif;font-size:15pt;color:#16304A}
+  .printbrand b i{font-style:normal;color:#0F766E}
+  .printbrand .pb-name span{font-size:7.5pt;letter-spacing:.12em;text-transform:uppercase;color:#B9892F}
+  .printbrand .pb-url{margin-left:auto;font-size:9.5pt;font-weight:600;color:#0F766E}
+  .printfoot{display:block!important;margin:22pt 0 0;padding-top:7pt;border-top:1px solid #ccc;text-align:center;font-size:8.5pt;line-height:1.5;color:#555}
+  .printfoot b{color:#16304A}
+  .quizbox{break-inside:auto}
+  .article .quiz{border-top:none;background:none;padding:4pt 0}
+  .qz{break-inside:avoid}
+  .qz-opt{border:none!important;background:none!important;padding:1pt 0!important;color:#000!important}
+  .qz-opt:disabled{opacity:1!important}
+  .qz-fb,.qz-foot{display:none!important}
+  .article .qz-key{display:block!important;color:#000}
   .tablewrap{overflow:visible}
   .tablewrap table{min-width:0}
-  .faq-item,.revbox{border:1px solid #bbb!important;box-shadow:none!important;background:none!important;break-inside:avoid}
-  .revbox{break-inside:auto}
-  .revbox summary{display:none}
+  .faq-item,.revbox,.quizbox{border:1px solid #bbb!important;box-shadow:none!important;background:none!important;break-inside:avoid}
+  .revbox,.quizbox{break-inside:auto}
+  .revbox summary,.quizbox summary{display:none}
   .revbox ol,.revbox ul{background:none;border-top:none;padding-top:8px}
-  .faq-item summary::after,.revbox summary::after{display:none}
+  .faq-item summary::after,.revbox summary::after,.quizbox summary::after{display:none}
   .article .abox h2::before,.article .abox h3::before{display:none}
   body{padding-left:0!important;background:#fff;font-size:11pt}
   .readlayout{display:block;padding:0}

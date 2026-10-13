@@ -37,6 +37,59 @@
     mark();
   }
 
+  // Quiz: login ki zarurat nahi. Option par click karte hi sahi / galat dikhta hai, aur sahi jawab bhi.
+  // Score sirf is page par dikhta hai, kahin save nahi hota. "Try again" se dobara shuru.
+  [].forEach.call(document.querySelectorAll('.quiz'), function (quiz) {
+    quiz.classList.add('qz-live'); // ab "Answer: ..." wali line chhup jati hai (JS na chale to wahi dikhti rahti hai)
+    var qs = [].slice.call(quiz.querySelectorAll('.qz'));
+    var scoreEl = quiz.querySelector('.qz-score');
+    var resetBtn = quiz.querySelector('.qz-reset');
+    var right = 0, done = 0;
+
+    var render = function () {
+      if (!done) scoreEl.textContent = qs.length + ' questions \u00b7 pick an answer to begin';
+      else if (done === qs.length) scoreEl.textContent = 'Finished! You scored ' + right + ' out of ' + qs.length + '.';
+      else scoreEl.textContent = 'Score: ' + right + ' / ' + done + ' answered \u00b7 ' + (qs.length - done) + ' left';
+      resetBtn.hidden = !done;
+    };
+
+    qs.forEach(function (q) {
+      var correct = +q.getAttribute('data-correct');
+      var opts = [].slice.call(q.querySelectorAll('.qz-opt'));
+      var fb = q.querySelector('.qz-fb');
+      opts.forEach(function (btn, i) {
+        btn.addEventListener('click', function () {
+          if (q.classList.contains('is-done')) return;
+          q.classList.add('is-done');
+          done++;
+          var ok = i === correct;
+          if (ok) right++; else btn.classList.add('is-wrong');
+          opts[correct].classList.add('is-right');
+          opts.forEach(function (o) { o.disabled = true; });
+          var exp = q.querySelector('.qz-exp');
+          fb.innerHTML = '<strong>' + (ok ? 'Correct!' : 'Not quite.') + '</strong> ' +
+            (ok ? '' : 'The right answer is ' + String.fromCharCode(65 + correct) + '. ') + (exp ? exp.innerHTML : '');
+          fb.className = 'qz-fb ' + (ok ? 'ok' : 'no');
+          fb.hidden = false;
+          render();
+        });
+      });
+    });
+
+    resetBtn.addEventListener('click', function () {
+      qs.forEach(function (q) {
+        q.classList.remove('is-done');
+        [].forEach.call(q.querySelectorAll('.qz-opt'), function (o) {
+          o.disabled = false; o.classList.remove('is-right', 'is-wrong');
+        });
+        var fb = q.querySelector('.qz-fb'); fb.hidden = true; fb.innerHTML = ''; fb.className = 'qz-fb';
+      });
+      right = 0; done = 0; render();
+      quiz.scrollIntoView({ block: 'start', behavior: 'smooth' });
+    });
+    render();
+  });
+
   // Print: band patti ka text bhi chhapna chahiye
   window.addEventListener('beforeprint', function () {
     [].forEach.call(document.querySelectorAll('.article details'), function (d) { d.open = true; });

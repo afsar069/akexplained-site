@@ -276,6 +276,235 @@ When English returned as a literary language in the thirteenth and fourteenth ce
 49. *Beowulf* was first printed in 1815 by Grímur Jónsson Thorkelin.
 50. The 1936 British Academy lecture "Beowulf: The Monsters and the Critics" argued that the monsters are central, not a distraction.
 
+## Quick quiz — 25 questions
+
+Tap an answer to see at once if it is right. You do not need to log in.
+
+**1. Which years roughly mark the Old English period?**
+
+- A) 100 to 500
+- B) 450 to 1066
+- C) 1066 to 1500
+- D) 800 to 1200
+
+Answer: B. It runs from the Germanic settlement of Britain in the fifth century to the Norman Conquest of 1066.
+
+**2. Which three peoples does Bede say settled Britain?**
+
+- A) Angles, Saxons and Jutes
+- B) Celts, Picts and Scots
+- C) Danes, Norse and Franks
+- D) Romans, Britons and Normans
+
+Answer: A. Bede names the Angles, the Saxons and the Jutes.
+
+**3. Which Mercian king built the long earthwork along the Welsh border?**
+
+- A) Alfred
+- B) Æthelstan
+- C) Offa
+- D) Cnut
+
+Answer: C. Offa ruled from 757 to 796, and the earthwork still carries his name.
+
+**4. In which year did Augustine's mission reach Kent?**
+
+- A) 410
+- B) 597
+- C) 664
+- D) 793
+
+Answer: B. In 597 Pope Gregory the Great sent Augustine to Kent.
+
+**5. What did the Synod of Whitby (664) settle?**
+
+- A) The method of calculating Easter
+- B) Who should rule Wessex
+- C) How Old English should be spelled
+- D) Where the Danelaw began
+
+Answer: A. The Northumbrian king chose Roman practice for the date of Easter.
+
+**6. In which language did Bede write his Ecclesiastical History of the English People?**
+
+- A) Old English
+- B) Old Norse
+- C) Latin
+- D) French
+
+Answer: C. Bede wrote in Latin. His book is the main source for the early period.
+
+**7. Which monastery did Norse raiders attack in 793?**
+
+- A) Canterbury
+- B) Exeter
+- C) Lindisfarne
+- D) Peterborough
+
+Answer: C. The raid on Lindisfarne in 793 began the Viking attacks that followed.
+
+**8. With whom did Alfred the Great make the treaty that led to the Danelaw?**
+
+- A) Cnut
+- B) Guthrum
+- C) Harold
+- D) William
+
+Answer: B. Alfred made a treaty with the Danish leader Guthrum and accepted a divided England.
+
+**9. Who became the first king to rule all of England in 927?**
+
+- A) Alfred
+- B) Offa
+- C) Æthelstan
+- D) Edward the Confessor
+
+Answer: C. Æthelstan, Alfred's grandson, became the first king of all England.
+
+**10. Which battle of 991 saw the English leader Byrhtnoth killed?**
+
+- A) Hastings
+- B) Brunanburh
+- C) Maldon
+- D) Whitby
+
+Answer: C. The Battle of Maldon is described in the poem of the same name.
+
+**11. Which dialect was used for nearly all the surviving manuscripts?**
+
+- A) Kentish
+- B) Northumbrian
+- C) Mercian
+- D) Late West Saxon
+
+Answer: D. Late West Saxon was the written standard of Wessex in the tenth and eleventh centuries.
+
+**12. What is the Anglo-Saxon runic alphabet called?**
+
+- A) Futhorc
+- B) Ogham
+- C) Wynn
+- D) Codex
+
+Answer: A. The futhorc is named after its first letters.
+
+**13. What is the main feature of the Old English verse line?**
+
+- A) A rhyme at the end of each line
+- B) A fixed number of syllables
+- C) Alliteration, four stresses and a pause in the middle
+- D) Ten syllables in an iambic rhythm
+
+Answer: C. The line does not rhyme and does not count syllables. It is built on alliteration and stress.
+
+**14. What is a kenning?**
+
+- A) A pause in the middle of a line
+- B) A compressed metaphorical compound, such as "whale-road" for the sea
+- C) A poet attached to a lord's hall
+- D) A payment made for a killing
+
+Answer: B. A kenning is used in place of a plain noun. Another example is "bone-house" for the body.
+
+**15. Who was the scop?**
+
+- A) A leader of a war-band
+- B) The court poet who recited verse to the harp
+- C) A monk who copied books
+- D) A collector of taxes
+
+Answer: B. The scop recited verse in the hall, praising the lord and telling old stories.
+
+**16. What was wergild?**
+
+- A) A tax raised to buy off Danish armies
+- B) The bond between a lord and his retainers
+- C) The fixed payment for a killing
+- D) A kind of riddle
+
+Answer: C. Wergild means "man-price". The amount was fixed by law according to the dead man's rank.
+
+**17. Which manuscript is also called the Nowell Codex?**
+
+- A) The Exeter Book
+- B) The Vercelli Book
+- C) The Junius Manuscript
+- D) The Beowulf Manuscript
+
+Answer: D. It holds Beowulf and is now bound in Cotton Vitellius A.xv in the British Library.
+
+**18. Where is the Vercelli Book kept?**
+
+- A) Exeter Cathedral
+- B) A cathedral library in northern Italy
+- C) The Bodleian Library, Oxford
+- D) Peterborough
+
+Answer: B. It was probably left in Vercelli by an English traveller on the pilgrim road to Rome.
+
+**19. How long is Beowulf, and where is the story set?**
+
+- A) 3,182 lines; in Scandinavia
+- B) 3,182 lines; in England
+- C) 1,000 lines; in Scandinavia
+- D) 5,000 lines; in Rome
+
+Answer: A. The hero Beowulf sails from the land of the Geats to Denmark.
+
+**20. Who is said to have been an unlettered herdsman at Whitby who was given the gift of song?**
+
+- A) Cynewulf
+- B) Cædmon
+- C) Aldhelm
+- D) Alcuin
+
+Answer: B. Bede tells the story, and Cædmon's Hymn has nine lines.
+
+**21. Which poet signed four poems by weaving the runic letters of his name into the closing lines?**
+
+- A) Cædmon
+- B) Bede
+- C) Cynewulf
+- D) Wulfstan
+
+Answer: C. The four poems are Juliana, Christ II, Elene and The Fates of the Apostles.
+
+**22. In which poem does the Cross itself speak?**
+
+- A) The Wanderer
+- B) The Dream of the Rood
+- C) The Seafarer
+- D) The Battle of Maldon
+
+Answer: B. It is in the Vercelli Book, and part of it is carved in runes on the Ruthwell Cross.
+
+**23. Which book holds the elegies and about ninety-five riddles?**
+
+- A) The Junius Manuscript
+- B) The Vercelli Book
+- C) The Exeter Book
+- D) The Anglo-Saxon Chronicle
+
+Answer: C. The Exeter Book was given to Exeter Cathedral by Bishop Leofric, who died in 1072.
+
+**24. Which king had Gregory the Great's Pastoral Care and Boethius's Consolation of Philosophy turned into English?**
+
+- A) Alfred
+- B) Æthelstan
+- C) Cnut
+- D) Offa
+
+Answer: A. Alfred's translation programme helped found English prose.
+
+**25. What did the 1936 lecture "Beowulf: The Monsters and the Critics" argue?**
+
+- A) That the monsters are the poem's subject, not a distraction
+- B) That Cædmon wrote Beowulf
+- C) That the poem is purely pagan
+- D) That Beowulf was translated from Latin
+
+Answer: A. After this lecture, Old English poetry was studied as literature.
+
 ## Frequently asked questions
 
 **Why is Old English so hard to read if it is English?**

@@ -114,11 +114,59 @@ function wrapTables(html) {
   return html.replace(/<table\b[\s\S]*?<\/table>/g, (t) => '<div class="tablewrap">' + t + "</div>");
 }
 
+// Quiz: har sawal **bold** line me, neeche A) B) C) D) options ki list, phir "Answer: B. jawab ki wajah".
+// Bina login ke click karte hi sahi/galat dikhta hai (assets/article.js). 25 sawal ek patti ke andar band rehte hain.
+// Format galat ho (option ya Answer na mile) to kuch nahi badalta — section seedha text dikhta hai.
+function buildQuiz(section) {
+  const blocks = section.match(BLOCK) || [];
+  if (section.replace(BLOCK, "").trim() !== "") return null;
+  const pre = [];
+  const qs = [];
+  let cur = null;
+  for (const b of blocks) {
+    const q = b.match(/^<p>\s*<strong>([\s\S]*?)<\/strong>\s*<\/p>$/);
+    if (q) {
+      if (cur) qs.push(cur);
+      cur = { q: q[1].replace(/^\s*\d+[.)]\s*/, "").trim(), opts: null, ans: null, exp: "" };
+    } else if (!cur) {
+      pre.push(b);
+    } else if (/^<(ul|ol)\b/.test(b) && !cur.opts) {
+      cur.opts = [...b.matchAll(/<li>([\s\S]*?)<\/li>/g)]
+        .map((m) => m[1].replace(/<\/?p>/g, "").replace(/^\s*[A-Za-z][.)]\s+/, "").trim());
+    } else {
+      const a = b.match(/^<p>\s*(?:<em>)?\s*Answer:\s*([A-Za-z])\b[.):]?\s*([\s\S]*?)\s*(?:<\/em>)?\s*<\/p>$/i);
+      if (a && cur.ans == null) { cur.ans = a[1].toUpperCase().charCodeAt(0) - 65; cur.exp = a[2].trim(); }
+    }
+  }
+  if (cur) qs.push(cur);
+  if (!qs.length) return null;
+  for (const q of qs) {
+    if (!q.opts || q.opts.length < 2 || q.ans == null || q.ans < 0 || q.ans >= q.opts.length) return null;
+  }
+  const n = qs.length;
+  const body = qs.map((q, i) =>
+    '<div class="qz" data-correct="' + q.ans + '">' +
+      '<p class="qz-q"><span class="qz-n">' + (i + 1) + "</span><span>" + q.q + "</span></p>" +
+      '<ul class="qz-opts">' + q.opts.map((o, k) =>
+        '<li><button type="button" class="qz-opt"><span class="qz-l">' + String.fromCharCode(65 + k) +
+        '</span><span class="qz-t">' + o + "</span></button></li>").join("") + "</ul>" +
+      '<p class="qz-key"><strong>Answer: ' + String.fromCharCode(65 + q.ans) + ".</strong> " +
+        (q.exp ? '<span class="qz-exp">' + q.exp + "</span>" : "") + "</p>" +
+      '<div class="qz-fb" hidden></div>' +
+    "</div>").join("\n");
+  return "\n" + pre.join("\n") + '\n<details class="quizbox"><summary><span class="when-closed">Open the ' + n +
+    ' questions</span><span class="when-open">Close the quiz</span></summary>' +
+    '<div class="quiz" data-total="' + n + '">\n' + body +
+    '\n<div class="qz-foot"><span class="qz-score" aria-live="polite"></span>' +
+    '<button type="button" class="qz-reset" hidden>Try again</button></div></div></details>\n';
+}
+
 // "Important points to remember" aur "Key terms": heading + uske neeche ka content
 // (agli barabar ya badi heading tak) ek halke rang ke box me band hota hai.
 const BOXES = [
   { re: /^important points\b/i, cls: "abox--points" },
   { re: /^key terms?\b/i, cls: "abox--terms" },
+  { re: /^(did you know|fun fact|an? interesting story|interesting story|strange but true)\b/i, cls: "abox--fun" },
 ];
 function wrapBoxes(html) {
   const heads = [];
@@ -147,6 +195,7 @@ function articleHtml(content) {
   let html = wrapTables(addHeadingIds(String(content)));
   html = mapSection(html, /^frequently asked questions\b|^faqs?\b/i, buildFaq);
   html = mapSection(html, /^quick revision\b/i, buildRevision);
+  html = mapSection(html, /^(quick |practice )?quiz\b|^mcq\b|^test yourself\b/i, buildQuiz);
   html = wrapBoxes(html);
   return html;
 }

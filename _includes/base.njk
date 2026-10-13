@@ -93,6 +93,15 @@
    article_extras: true, aur notes/ ke kisi page par na chahiye to article_extras: false #}
 {% if article_extras is defined %}{% set extras = article_extras %}{% else %}{% set extras = page.url.startsWith('/notes/') %}{% endif %}
 
+{% if extras %}
+{# Sirf print me dikhta hai: logo + naam upar, aur har page ke neeche website ka address. Screen par chhupa rehta hai. #}
+<div class="printbrand" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="44" height="44">
+  <div class="pb-name"><b>AK <i>Explained</i></b><span>The Student's Library</span></div>
+  <span class="pb-url">akexplained.com</span>
+</div>
+{% endif %}
+
 {% if pagehead != false %}
 <section class="pagehead">
   <img class="motif" src="/assets/reader-motif.webp" alt="" width="440" height="525" aria-hidden="true">
@@ -222,6 +231,14 @@
 
 </div>
 </div>
+
+{% if extras %}
+<div class="wrap"><div class="printfoot" aria-hidden="true">
+  <b>AK Explained</b> &middot; The Student's Library &middot; Prof. Afsar Khan<br>
+  English literature, arranged from Old English to the present &mdash; free for every student.<br>
+  &copy; 2026 AK Explained &middot; https://akexplained.com{{ page.url }}
+</div></div>
+{% endif %}
 
 </main>
 
