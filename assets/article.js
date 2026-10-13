@@ -42,40 +42,31 @@
     [].forEach.call(document.querySelectorAll('.article details'), function (d) { d.open = true; });
   });
 
-  // Print button
-  var printBtn = document.getElementById('printBtn');
-  if (printBtn) printBtn.addEventListener('click', function () { window.print(); });
-
-  // Share button: phone par phone ka apna share sheet; computer par chhota menu
-  // (WhatsApp, Telegram, Facebook, X, Email, Copy link). Links HTML me pehle se hain.
-  var shareBtn = document.getElementById('shareBtn');
-  var menu = document.getElementById('shareMenu');
+  // Share: menu <details> hai, isliye JS ke bina bhi khulta hai. JS sirf ye sudhar jodta hai:
+  // phone par phone ka apna share sheet, bahar click / Escape par band hona, aur "Copy link".
+  // (Print button seedha window.print() chalata hai, uske liye JS nahi chahiye.)
+  var wrap = document.querySelector('.sharewrap');
   var copyBtn = document.getElementById('copyLink');
-  if (shareBtn && menu) {
+  if (wrap) {
     var url = copyBtn ? copyBtn.getAttribute('data-url') : location.href;
-    var setOpen = function (open) {
-      menu.hidden = !open;
-      shareBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    };
-    shareBtn.addEventListener('click', function (e) {
+    var summary = wrap.querySelector('summary');
+    summary.addEventListener('click', function (e) {
       var touch = window.matchMedia && window.matchMedia('(pointer:coarse)').matches;
       if (touch && navigator.share) {
+        e.preventDefault();
         navigator.share({ title: document.title, url: url }).catch(function () {});
-        return;
       }
-      e.stopPropagation();
-      setOpen(menu.hidden);
     });
     document.addEventListener('click', function (e) {
-      if (!menu.hidden && !menu.contains(e.target)) setOpen(false);
+      if (wrap.open && !wrap.contains(e.target)) wrap.open = false;
     });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && !menu.hidden) { setOpen(false); shareBtn.focus(); }
+      if (e.key === 'Escape' && wrap.open) { wrap.open = false; summary.focus(); }
     });
     if (copyBtn) copyBtn.addEventListener('click', function () {
       var done = function () {
         copyBtn.textContent = 'Link copied';
-        setTimeout(function () { copyBtn.textContent = 'Copy link'; setOpen(false); }, 1400);
+        setTimeout(function () { copyBtn.textContent = 'Copy link'; wrap.open = false; }, 1400);
       };
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(url).then(done, function () { window.prompt('Copy this link', url); });

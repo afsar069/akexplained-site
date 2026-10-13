@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const crypto = require("crypto");
 
 // base.njk se asli (naya) header aur footer ek baar padh lo
 const base = fs.readFileSync(path.join(__dirname, "_includes", "base.njk"), "utf8");
@@ -82,6 +83,26 @@ module.exports = function (eleventyConfig) {
     }
 
     return out;
+  });
+
+  // Cache se purani file na dikhe: har CSS/JS link me file ka chhota "version" jod do
+  // (jaise /assets/site.css?v=1a2b3c4d). File badalte hi version badal jata hai,
+  // isliye browser nayi file mangta hai — hard refresh ki zarurat nahi padti.
+  const versions = new Map();
+  const versionOf = (rel) => {
+    if (!versions.has(rel)) {
+      try {
+        versions.set(rel, crypto.createHash("md5").update(fs.readFileSync(path.join(__dirname, rel))).digest("hex").slice(0, 8));
+      } catch (e) { versions.set(rel, null); }
+    }
+    return versions.get(rel);
+  };
+  eleventyConfig.addTransform("cacheBust", function (content) {
+    if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
+    return content.replace(/\b(href|src)="(\/assets\/[^"?#]+\.(?:css|js))"/g, (m, attr, url) => {
+      const v = versionOf(url.slice(1));
+      return v ? attr + '="' + url + "?v=" + v + '"' : m;
+    });
   });
 
   return {

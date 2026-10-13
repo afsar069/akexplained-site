@@ -98,12 +98,23 @@
   <img class="motif" src="/assets/reader-motif.webp" alt="" width="440" height="525" aria-hidden="true">
   <span class="mark" aria-hidden="true">{{ mark or title | first | upper }}</span>
   <div class="wrap">
+    <p class="eyebrow">{{ eyebrow or title }}</p>
+    <h1>{{ title }}</h1>
+    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
+    <div class="metarow">
+    <p class="artmeta">
+      <span class="rt">{{ content | readingTime }} min read</span>
+      {% if updated %}<span class="up">Updated {{ updated | niceDate }}</span>{% endif %}
+      {% if exams %}{% for e in exams %}{% set eu = e | examUrl %}{% if eu %}<a class="xt" href="{{ eu }}">{{ e }}</a>{% else %}<span class="xt">{{ e }}</span>{% endif %}{% endfor %}{% endif %}
+    </p>
     {% if extras %}
+    {# Share aur Print: tags wali line ke daayein taraf. Share <details> hai, isliye JS ke bina bhi khulta-band hota hai;
+       Print seedha window.print() chalata hai. #}
     {% set shareUrl = "https://akexplained.com" ~ page.url %}
     <div class="pagetools">
-      <div class="sharewrap">
-        <button type="button" class="ptbtn" id="shareBtn" aria-haspopup="true" aria-expanded="false" aria-controls="shareMenu"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.3 10.8 7.4-4.3M8.3 13.2l7.4 4.3"/></svg><span>Share</span></button>
-        <div class="sharemenu" id="shareMenu" hidden>
+      <details class="sharewrap">
+        <summary class="ptbtn" id="shareBtn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="2.6"/><circle cx="6" cy="12" r="2.6"/><circle cx="18" cy="19" r="2.6"/><path d="m8.3 10.8 7.4-4.3M8.3 13.2l7.4 4.3"/></svg><span>Share</span></summary>
+        <div class="sharemenu" id="shareMenu">
           <a href="https://api.whatsapp.com/send?text={{ (title ~ ' ' ~ shareUrl) | urlencode }}" target="_blank" rel="noopener">WhatsApp</a>
           <a href="https://t.me/share/url?url={{ shareUrl | urlencode }}&amp;text={{ title | urlencode }}" target="_blank" rel="noopener">Telegram</a>
           <a href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl | urlencode }}" target="_blank" rel="noopener">Facebook</a>
@@ -111,18 +122,11 @@
           <a href="mailto:?subject={{ title | urlencode }}&amp;body={{ shareUrl | urlencode }}">Email</a>
           <button type="button" id="copyLink" data-url="{{ shareUrl }}">Copy link</button>
         </div>
-      </div>
-      <button type="button" class="ptbtn" id="printBtn"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg><span>Print</span></button>
+      </details>
+      <button type="button" class="ptbtn" id="printBtn" onclick="window.print()"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 9V3h10v6"/><rect x="4" y="9" width="16" height="8" rx="2"/><path d="M7 14h10v7H7z"/></svg><span>Print</span></button>
     </div>
     {% endif %}
-    <p class="eyebrow">{{ eyebrow or title }}</p>
-    <h1>{{ title }}</h1>
-    {% if description %}<p class="lede">{{ description }}</p>{% endif %}
-    <p class="artmeta">
-      <span class="rt">{{ content | readingTime }} min read</span>
-      {% if updated %}<span class="up">Updated {{ updated | niceDate }}</span>{% endif %}
-      {% if exams %}{% for e in exams %}{% set eu = e | examUrl %}{% if eu %}<a class="xt" href="{{ eu }}">{{ e }}</a>{% else %}<span class="xt">{{ e }}</span>{% endif %}{% endfor %}{% endif %}
-    </p>
+    </div>
   </div>
 </section>
 {% endif %}
@@ -137,7 +141,7 @@
 {% set body = content %}
 {% set toc = [] %}
 {% endif %}
-<article class="article">
+<article class="article{% if extras %} article--notes{% endif %}">
 {% if toc.length > 1 %}
 <details class="tocmobile">
   <summary>On this page</summary>
