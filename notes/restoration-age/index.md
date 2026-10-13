@@ -15,6 +15,12 @@ age: restoration
 period: 1660-1700
 exam_fit: [net, pgt, psc]
 topics: [charles-ii, restoration-comedy, heroic-drama, dryden, milton, bunyan, pepys, behn, rochester, wycherley, congreve, royal-society, satire]
+prev:
+  label: Jacobean and Caroline
+  href: /notes/jacobean-and-caroline-age/
+next:
+  label: Augustan Age
+  href: /notes/augustan-age/
 ---
 
 On 29 May 1660, the day he turned thirty, Charles II rode into London as king. Bells rang, and crowds filled the streets to watch a king come home. Eleven years earlier, in January 1649, his father Charles I had been beheaded outside the Banqueting House in Whitehall.

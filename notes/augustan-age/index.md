@@ -15,6 +15,9 @@ age: augustan-age
 period: 1700-1798
 exam_fit: [net, pgt, psc]
 topics: [pope, swift, addison, steele, defoe, richardson, fielding, johnson, sterne, gray, goldsmith, sheridan, heroic-couplet, periodical-essay, rise-of-the-novel]
+prev:
+  label: Restoration
+  href: /notes/restoration-age/
 ---
 
 Early in the eighteenth century, many English writers began to think of themselves as Romans. Rome had suffered long civil wars and then found peace under its first emperor, Augustus, who ruled from 27 BC to AD 14. In his reign the poets Virgil, Horace and Ovid wrote works that later ages treated as models of order, polish and good taste.

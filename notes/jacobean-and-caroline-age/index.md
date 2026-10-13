@@ -18,6 +18,9 @@ topics: [shakespeare, jonson, webster, middleton, donne, herbert, marvell, milto
 prev:
   label: Renaissance
   href: /notes/renaissance/
+next:
+  label: Restoration
+  href: /notes/restoration-age/
 ---
 
 On 24 March 1603, Queen Elizabeth I died at Richmond Palace. She had ruled England for forty-four years. She had never married, and she left no child to take her crown. For years the English had asked each other a nervous question: who would rule after her? The answer came from the north. James VI of Scotland, a distant cousin through the Tudor family, travelled south and became James I of England.
