@@ -15,6 +15,9 @@ age: contemporary
 period: 1945-present
 exam_fit: [net, pgt, psc]
 topics: [angry-young-men, the-movement, theatre-of-the-absurd, postmodernism, postcolonial-writing, magic-realism, booker-prize, literary-theory]
+prev:
+  label: Modern Age
+  href: /notes/modern-age/
 ---
 
 On 8 May 1945, crowds filled the streets of London to celebrate the end of the war in Europe. Winston Churchill, who had led Britain through nearly six years of fighting, was cheered like a hero. Less than three months later, the voters removed him from office in the general election of July 1945. They did not stop admiring him. They simply wanted a different country from the one he stood for.
