@@ -26,7 +26,7 @@
      and is not clickable, so no one lands on an empty page.
      --------------------------------------------------------- */
   var LIVE_AGES = [
-    // 'old-english',
+    'old-english',
     // 'middle-english',
     // 'renaissance',
     // 'elizabethan',

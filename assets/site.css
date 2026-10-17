@@ -1398,3 +1398,284 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .agehead h1,.agehead-sub,.agehead .eyebrow{color:#000}
   .agehub-grid{display:block}
 }
+
+/* =========================================================
+   CBT TEST PAGE  —  /quizzes/mcq/<age>/set-<n>/
+   Asli exam software jaisa: ek waqt me ek sawal, upar ghadi,
+   neeche Previous / Review / Next, aur side me poori palette.
+
+   Rang site ke apne hain, par palette ka matlab wahi jo har
+   exam me hota hai — isliye student ko naya kuch seekhna nahi:
+     teal    = answer diya
+     orange  = dekha, chhod diya
+     gold    = review ke liye nishan lagaya
+     khali   = abhi khola hi nahi
+   ========================================================= */
+/* Dhyan: ".skip" site ka skip-link hai (sabse upar), isliye yahan har jagah
+   "is-skip" likha hai. Bare .skip lagate hi dabba screen se bahar chala jata hai. */
+.cbt{--pal-done:var(--teal);--pal-skip:var(--accent);--pal-mark:var(--gold)}
+.cbt-body{padding-top:22px;padding-bottom:70px}
+
+/* ---------- pehla parda: shuru karne se pehle ---------- */
+.cbt-start{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;padding:26px 28px;max-width:720px;margin:0 auto;
+}
+.cbt-start h1{
+  font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;
+  color:var(--ink);line-height:1.2;margin-bottom:6px;
+}
+.cbt-start .lede{font-size:.98rem;margin-bottom:20px}
+.cbt-facts{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-bottom:22px;
+}
+.cbt-fact{background:var(--tint);border:1px solid var(--border);border-radius:12px;padding:13px 16px}
+.cbt-fact b{display:block;font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--ink)}
+.cbt-fact span{
+  display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--mcq-ink-faint);
+}
+.cbt-rules{margin:0 0 22px 18px;font-size:.93rem}
+.cbt-rules li{margin-bottom:6px}
+.cbt-begin{
+  display:inline-block;font:inherit;font-size:1rem;font-weight:700;color:#fff;
+  background:var(--teal);border:0;border-radius:11px;padding:14px 34px;cursor:pointer;
+  transition:background .2s,transform .2s;
+}
+.cbt-begin:hover{background:var(--teal-dark);transform:translateY(-2px)}
+
+/* ---------- upar ki patti: naam, ghadi, ginti ---------- */
+.cbt-bar{
+  position:sticky;top:0;z-index:60;
+  display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;
+  background:var(--mcq-teal-deep);color:#fff;
+  border-radius:14px;padding:12px 18px;margin-bottom:18px;
+}
+.cbt-bar-name{font-family:var(--serif);font-size:1rem;font-weight:600;flex:1 1 220px;min-width:0}
+.cbt-bar-name span{display:block;font-family:var(--sans);font-size:.78rem;color:#9FBDB9;font-weight:400}
+.cbt-count{font-size:.88rem;color:#CFE0DE;white-space:nowrap}
+.cbt-clock{
+  display:flex;align-items:center;gap:8px;flex:none;
+  font-variant-numeric:tabular-nums;font-size:1.22rem;font-weight:700;
+  background:rgba(255,255,255,.1);border-radius:10px;padding:7px 15px;
+}
+.cbt-clock svg{flex:none}
+/* Aakhri paanch minute amber, aakhri ek minute laal — bina padhe dikh jaye. */
+.cbt-clock.is-low{background:rgba(185,137,47,.3)}
+.cbt-clock.is-out{background:rgba(220,70,70,.34)}
+@media (prefers-reduced-motion:no-preference){
+  .cbt-clock.is-out{animation:cbtPulse 1s ease-in-out infinite}
+}
+@keyframes cbtPulse{50%{background:rgba(220,70,70,.6)}}
+
+/* ---------- beech ka dhancha ---------- */
+.cbt-layout{display:grid;grid-template-columns:minmax(0,1fr) 286px;gap:20px;align-items:start}
+
+/* ---------- sawal ---------- */
+.cbt-qcard{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;padding:24px 26px;
+}
+.cbt-qnum{
+  font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--teal);margin-bottom:10px;
+}
+.cbt-q{
+  font-family:var(--serif);font-size:clamp(1.02rem,1.9vw,1.2rem);line-height:1.5;
+  color:var(--ink);margin-bottom:20px;max-width:62ch;
+}
+.cbt-opts{border:0;padding:0;margin:0}
+.cbt-opts legend{position:absolute;left:-9999px}
+.cbt-opt{
+  display:flex;align-items:flex-start;gap:13px;
+  border:1.5px solid var(--border);border-radius:12px;
+  padding:13px 16px;margin-bottom:10px;cursor:pointer;background:#fff;
+  transition:border-color .18s,background .18s;
+}
+.cbt-opt:last-child{margin-bottom:0}
+.cbt-opt:hover{border-color:var(--teal);background:var(--cream)}
+.cbt-opt input{position:absolute;opacity:0;width:0;height:0}
+.cbt-opt .key{
+  flex:none;width:27px;height:27px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.82rem;font-weight:700;color:var(--body);
+  background:var(--tint);border:1.5px solid var(--border);
+}
+.cbt-opt .txt{flex:1;min-width:0;font-size:.97rem;color:var(--ink);padding-top:2px}
+.cbt-opt.is-picked{border-color:var(--teal);background:var(--teal-soft)}
+.cbt-opt.is-picked .key{background:var(--teal);border-color:var(--teal);color:#fff}
+.cbt-opt:focus-within{outline:3px solid var(--teal);outline-offset:3px}
+
+/* ---------- neeche ke button ---------- */
+.cbt-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px;align-items:center}
+.cbt-btn{
+  font:inherit;font-size:.92rem;font-weight:600;border-radius:10px;padding:11px 20px;
+  background:#fff;color:var(--ink);border:1.5px solid var(--border);cursor:pointer;
+  transition:border-color .18s,background .18s,transform .18s;
+}
+.cbt-btn:hover:not(:disabled){border-color:var(--teal);color:var(--teal-dark);transform:translateY(-2px)}
+.cbt-btn:disabled{opacity:.45;cursor:not-allowed}
+.cbt-btn.is-mark{border-color:var(--gold);color:#7A5A16}
+.cbt-btn.is-mark:hover:not(:disabled){background:#FBF6E8;border-color:var(--gold);color:#7A5A16}
+.cbt-btn.is-mark[aria-pressed="true"]{background:var(--gold);border-color:var(--gold);color:#fff}
+.cbt-btn.is-next{background:var(--teal);border-color:var(--teal);color:#fff;margin-left:auto}
+.cbt-btn.is-next:hover:not(:disabled){background:var(--teal-dark);color:#fff}
+
+/* ---------- side ki palette ---------- */
+.cbt-side{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;padding:18px 20px;position:sticky;top:76px;
+}
+.cbt-side h2{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:12px}
+.cbt-legend{display:grid;gap:7px;margin-bottom:16px;font-size:.8rem;color:var(--body)}
+.cbt-legend div{display:flex;align-items:center;gap:9px}
+.cbt-dot{
+  flex:none;width:17px;height:17px;border-radius:6px;
+  border:1.5px solid var(--border);background:#fff;
+}
+.cbt-dot.done{background:var(--pal-done);border-color:var(--pal-done)}
+.cbt-dot.is-skip{background:var(--pal-skip);border-color:var(--pal-skip)}
+.cbt-dot.mark{background:var(--pal-mark);border-color:var(--pal-mark)}
+
+.cbt-pal{
+  display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;
+  max-height:320px;overflow-y:auto;padding-right:3px;
+}
+.cbt-cell{
+  position:relative;font:inherit;font-size:.82rem;font-weight:700;
+  aspect-ratio:1;display:flex;align-items:center;justify-content:center;
+  border:1.5px solid var(--border);border-radius:8px;background:#fff;color:var(--body);
+  cursor:pointer;transition:transform .15s;
+}
+.cbt-cell:hover{transform:scale(1.09)}
+.cbt-cell.s-skip{background:var(--pal-skip);border-color:var(--pal-skip);color:#fff}
+.cbt-cell.s-done{background:var(--pal-done);border-color:var(--pal-done);color:#fff}
+.cbt-cell.s-mark{background:var(--pal-mark);border-color:var(--pal-mark);color:#fff}
+/* Nishan bhi lagaya aur answer bhi diya — gold par teal bindi. */
+.cbt-cell.s-mark.has-ans::after{
+  content:"";position:absolute;right:3px;bottom:3px;width:7px;height:7px;
+  border-radius:50%;background:var(--pal-done);border:1.5px solid #fff;
+}
+.cbt-cell.is-here{box-shadow:0 0 0 3px rgba(15,118,110,.45);transform:scale(1.07)}
+
+.cbt-tally{
+  display:flex;flex-wrap:wrap;gap:4px 14px;font-size:.8rem;color:var(--body);
+  border-top:1px solid var(--card-line);margin-top:14px;padding-top:12px;
+}
+.cbt-tally b{color:var(--ink)}
+.cbt-submit{
+  display:block;width:100%;font:inherit;font-size:.95rem;font-weight:700;color:#fff;
+  background:var(--accent);border:0;border-radius:11px;padding:13px;margin-top:14px;
+  cursor:pointer;transition:background .2s,transform .2s;
+}
+.cbt-submit:hover{background:#9A330A;transform:translateY(-2px)}
+
+/* ---------- result ---------- */
+.cbt-score{
+  background:var(--mcq-teal-deep);color:#fff;border-radius:16px;
+  padding:26px 28px;margin-bottom:18px;
+  display:flex;flex-wrap:wrap;align-items:center;gap:24px;
+}
+.cbt-score-big{flex:none}
+.cbt-score-big b{
+  display:block;font-family:var(--serif);font-size:3rem;font-weight:600;line-height:1;
+}
+.cbt-score-big span{font-size:.82rem;color:#9FBDB9;letter-spacing:.07em;text-transform:uppercase;font-weight:700}
+.cbt-score-txt{flex:1 1 300px;min-width:0}
+.cbt-score-txt h1{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:#fff;margin-bottom:5px}
+.cbt-score-txt p{color:#C6DBD8;font-size:.95rem;margin:0;max-width:56ch}
+
+.cbt-nums{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px;
+}
+.cbt-num{background:var(--card-paper);border:1px solid var(--card-line);border-radius:13px;padding:15px 18px}
+.cbt-num b{display:block;font-family:var(--serif);font-size:1.55rem;font-weight:600;color:var(--ink)}
+.cbt-num span{
+  display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--mcq-ink-faint);
+}
+.cbt-num.ok b{color:var(--teal)}
+.cbt-num.no b{color:var(--mcq-red)}
+.cbt-num.is-skip b{color:var(--accent)}
+
+/* Kya karna chahiye — sirf us baat par jo aankdo se dikh rahi hai */
+.cbt-advice{
+  background:var(--cream);border:1px solid var(--border);border-left:4px solid var(--gold);
+  border-radius:13px;padding:18px 22px;margin-bottom:22px;
+}
+.cbt-advice h2{font-family:var(--serif);font-size:1.08rem;font-weight:700;color:var(--ink);margin-bottom:9px}
+.cbt-advice ul{margin:0 0 0 18px;font-size:.94rem}
+.cbt-advice li{margin-bottom:7px}
+.cbt-advice li:last-child{margin-bottom:0}
+
+.cbt-filters{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:16px}
+.cbt-filter{
+  font:inherit;font-size:.88rem;font-weight:500;padding:8px 17px;border-radius:999px;
+  border:1.5px solid var(--border);background:#fff;color:var(--ink);cursor:pointer;
+}
+.cbt-filter:hover{border-color:var(--teal)}
+.cbt-filter[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
+
+.cbt-review{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:14px;padding:18px 20px;margin-bottom:12px;
+}
+.cbt-review.is-hidden{display:none}
+.cbt-rtop{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:10px}
+.cbt-tag{
+  font-size:.7rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  border-radius:999px;padding:3px 11px;
+}
+.cbt-tag.ok{background:var(--teal-soft);color:var(--teal)}
+.cbt-tag.no{background:#FBEAEA;color:var(--mcq-red)}
+.cbt-tag.is-skip{background:#FBF0E4;color:#9A3412}
+.cbt-rq{font-family:var(--serif);font-size:1rem;color:var(--ink);line-height:1.5;margin-bottom:12px}
+.cbt-ropt{
+  display:flex;align-items:flex-start;gap:10px;font-size:.93rem;
+  border:1.5px solid var(--border);border-radius:10px;padding:9px 13px;margin-bottom:7px;
+}
+.cbt-ropt .key{
+  flex:none;width:24px;height:24px;border-radius:50%;font-size:.78rem;font-weight:700;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--tint);border:1.5px solid var(--border);color:var(--body);
+}
+.cbt-ropt.is-right{border-color:var(--teal);background:var(--teal-soft)}
+.cbt-ropt.is-right .key{background:var(--teal);border-color:var(--teal);color:#fff}
+.cbt-ropt.is-yours{border-color:var(--mcq-red);background:#FDF1F1}
+.cbt-ropt.is-yours .key{background:var(--mcq-red);border-color:var(--mcq-red);color:#fff}
+.cbt-ropt .note{margin-left:auto;font-size:.76rem;font-weight:700;color:var(--mcq-ink-faint);white-space:nowrap}
+.cbt-why{
+  font-size:.93rem;color:var(--body);background:var(--tint);
+  border-radius:10px;padding:11px 14px;margin-top:11px;
+}
+.cbt-why b{color:var(--ink)}
+.cbt-after{display:flex;flex-wrap:wrap;gap:11px;margin:22px 0 0}
+
+/* ---------- chhoti screen ---------- */
+@media (max-width:980px){
+  .cbt-layout{grid-template-columns:1fr}
+  /* Phone par sawal pehle, palette uske neeche — asli exam app jaisa.
+     Aage-peeche jane ka kaam neeche ke button karte hain; palette sirf
+     chhalaang lagane aur submit karne ke liye chahiye. */
+  .cbt-side{position:static}
+  .cbt-pal{grid-template-columns:repeat(10,minmax(0,1fr));max-height:none}
+  .cbt-legend{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:620px){
+  .cbt-facts,.cbt-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cbt-bar{position:static;gap:10px}
+  .cbt-pal{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .cbt-qcard{padding:18px 17px}
+  .cbt-nav .cbt-btn{flex:1 1 calc(50% - 5px)}
+  .cbt-btn.is-next{margin-left:0}
+  .cbt-begin{width:100%}
+  .cbt-score-big b{font-size:2.4rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .cbt-begin:hover,.cbt-btn:hover,.cbt-submit:hover,.cbt-cell:hover{transform:none}
+}
+@media print{
+  .cbt-bar,.cbt-side,.cbt-nav,.cbt-filters,.cbt-after,.cbt-submit{display:none !important}
+  .cbt-score{background:#fff;color:#000}
+  .cbt-score-txt h1,.cbt-score-big b{color:#000}
+}

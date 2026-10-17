@@ -31,7 +31,7 @@
      aur wo link nahi banta, taaki koi khali page par na pahunche.
      --------------------------------------------------------- */
   var LIVE_SETS = [
-    // 'old-english-set-1',
+    'old-english-set-1',
     // 'old-english-set-2',
     // 'old-english-set-3',
     // 'old-english-set-4',
@@ -218,12 +218,17 @@
         '</div>';
     }).join('');
 
-    /* Markup me is button par href nahi hai, aur mistakes ka page tabhi
-       banta hai jab koi set chalu ho — isliye link yahin jodte hain. */
-    var wrong = sets.reduce(function (n, s) { return n + s.wrong; }, 0);
-    if (redo && wrong > 0 && LIVE_SETS.length) {
-      redo.href = '/quizzes/mcq/' + AGE + '/mistakes/';
-      redo.textContent = 'Practise my ' + wrong + ' mistake' + (wrong === 1 ? '' : 's');
+    /* Markup me is button par href nahi hai — jis set me sabse zyada
+       galtiyan hain, usi ke test screen par ?only=wrong ke saath bhejte
+       hain. Us set ka chalu hona zaroori hai, warna link kahin nahi jata. */
+    var worst = tried.filter(function (s) { return s.wrong > 0 && s.live; })
+      .sort(function (a, b) { return b.wrong - a.wrong; })[0];
+
+    if (redo && worst) {
+      redo.href = '/quizzes/mcq/' + AGE + '/' +
+        worst.id.replace(AGE + '-', '') + '/?only=wrong';
+      redo.textContent = 'Go through my ' + worst.wrong + ' mistake' +
+        (worst.wrong === 1 ? '' : 's');
       redo.hidden = false;
     }
 
