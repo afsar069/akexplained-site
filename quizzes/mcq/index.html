@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Practice MCQs — English Literature | AK Explained</title>
-<meta name="description" content="Multiple-choice practice questions on English literature with instant answers and explanations, written for UGC-NET and postgraduate revision.">
+<title>MCQ Practice — English Literature Questions by Age and Topic | AK Explained</title>
+<meta name="description" content="Free English literature MCQ practice, age by age and topic by topic, for UGC NET, PGT, State PSC and university students. Every answer carries its reason.">
+<link rel="canonical" href="https://akexplained.com/quizzes/mcq/">
+<meta property="og:title" content="MCQ Practice — AK Explained">
+<meta property="og:description" content="Topic-wise English literature practice questions, age by age. Free, no sign-in needed.">
+<meta property="og:image" content="https://akexplained.com/assets/social-card.png">
+<meta property="og:url" content="https://akexplained.com/quizzes/mcq/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,249 +22,418 @@
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header">
-  <div class="bar">
+  <div class="topbar">
+    <button id="navToggle" class="burger" type="button" aria-expanded="false" aria-controls="sideNav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
     <a class="brand" href="/">
-      <img src="/assets/logo.png" alt="AK Explained logo" width="40" height="40">
-      <span>AK <i>Explained</i></span>
+      <img src="/assets/logo.png" alt="" width="40" height="40">
+      <span class="nm">AK <i>Explained</i><span class="tagline">The Student's Library</span></span>
     </a>
-    <nav class="primary-nav" aria-label="Primary">
-      <span class="navitem">
-        <a href="/exams/net/">UGC NET/JRF &#9662;</a>
-        <span class="dd">
-          <a href="/exams/net/">NET English Literature</a>
-        </span>
-      </span>
-      <span class="navitem">
-        <a href="/exams/ma-ba/">University Exams &#9662;</a>
-        <span class="dd">
-          <a href="/university/ccs-meerut/">CCS University Meerut</a>
-          <a href="/university/ignou/">IGNOU</a>
-          <a href="/university/du/">DU</a>
-        </span>
-      </span>
-      <span class="navitem">
-        <a href="/quizzes/">Quizzes &#9662;</a>
-        <span class="dd">
-          <a href="/quizzes/pyq/">PYQ</a>
-          <a href="/quizzes/mcq/">MCQ</a>
-        </span>
-      </span>
-      <span class="navitem">
-        <a href="/publish-with-us/">Your Creativity</a>
-      </span>
-      <span class="navitem">
-        <a href="/help/">Help &#9662;</a>
-        <span class="dd">
-          <a href="/contact/">Contact us</a>
-        </span>
-      </span>
-    </nav>
   </div>
+
+  <div id="navScrim"></div>
+
+  <nav id="sideNav" class="side-nav" aria-label="Primary">
+    <div class="navhead">
+      <a class="brand" href="/">
+        <img src="/assets/logo.png" alt="AK Explained logo" width="44" height="44">
+        <span class="nm">AK <i>Explained</i><span class="tagline">The Student's Library</span></span>
+      </a>
+    </div>
+
+    <ul>
+      <li><a href="/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/></svg>Home</a></li>
+
+      <li class="navgroup">
+        <button class="subtoggle" type="button" aria-expanded="false">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 4 9 4.5-9 4.5-9-4.5L12 4Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+          Exams<span class="caret">&#9662;</span>
+        </button>
+        <ul class="sub">
+          <li><a href="/exams/net/">UGC NET / JRF / SET</a></li>
+          <li><a href="/exams/pgt/">PGT English Literature</a></li>
+          <li><a href="/exams/state-psc/">State PSC</a></li>
+          <li><a href="/exams/ma-ba/">MA / BA &mdash; University</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/english-literature/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 6.5S10 4.8 6.5 4.8 3 6 3 6v12s1-1.2 3.5-1.2S12 18.5 12 18.5Z"/><path d="M12 6.5s2-1.7 5.5-1.7S21 6 21 6v12s-1-1.2-3.5-1.2S12 18.5 12 18.5Z"/></svg>English Literature</a></li>
+
+      <li class="navgroup">
+        <button class="subtoggle" type="button" aria-expanded="true">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="m8.5 11.5 2.2 2.2 4.8-4.8"/></svg>
+          Quizzes<span class="caret">&#9662;</span>
+        </button>
+        <ul class="sub">
+          <li><a href="/quizzes/mcq/" aria-current="page">MCQ Practice</a></li>
+          <li><a href="/quizzes/pyq/">Previous Year (PYQ)</a></li>
+        </ul>
+      </li>
+
+      <li><a href="/publish-with-us/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 4C10 5 5.5 10.5 4.5 19.5"/><path d="M20 4c0 8-4.5 11.5-10 11.5H6.5"/><path d="M4 20h3"/></svg>My Publisher</a></li>
+
+      <li><a href="/research-support/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.8-3.8"/></svg>Research Support</a></li>
+
+      <li><a href="/download/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v11"/><path d="m7.5 10 4.5 4.5L16.5 10"/><path d="M4 20h16"/></svg>Download</a></li>
+
+      <li><a href="/video-lessons/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg>Video Lessons</a></li>
+
+      <li><a href="/login/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.9-3.8 3.9-5.8 7.5-5.8s6.6 2 7.5 5.8"/></svg>Login</a></li>
+
+      <li><a href="/contact/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>Contact Us</a></li>
+
+      <li><a href="/about/"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5.5"/><path d="M12 7.8h.01"/></svg>About</a></li>
+    </ul>
+
+    <div class="navfoot">
+      <p style="margin:0">&copy; 2026 AK Explained<br>Prof. Afsar Khan</p>
+    </div>
+  </nav>
 </header>
 
-<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/quizzes/">Quizzes</a><span>/</span>MCQ</p></div>
 <main id="main">
 
-<section class="pagehead">
-  <span class="mark" aria-hidden="true">M</span>
+<!-- ====== PAGE HEAD ====== -->
+<section class="mcq-head">
   <div class="wrap">
-    <p class="eyebrow">Practice &middot; MCQ</p>
-    <h1>Practice MCQs</h1>
-    <p class="lede">Ten questions, instant answers, full reasoning. Nothing is recorded — this is a mirror, not a test.</p>
+    <nav class="mcq-crumb" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <a href="/quizzes/">Quizzes</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <span>MCQ Practice</span>
+    </nav>
+
+    <h1>MCQ Practice</h1>
+    <p class="mcq-lede">Topic-wise practice, age by age. Every answer carries its reason and a link back to the notes it came from. Nothing to install, no sign-in needed.</p>
+
+    <nav class="mcq-modes" aria-label="Practice sections">
+      <a href="/quizzes/daily/">Daily Quiz</a>
+      <span aria-current="page">MCQs</span>
+      <a href="/quizzes/pyq/">PYQs</a>
+      <a href="/quizzes/mock-tests/">Mock Tests</a>
+    </nav>
   </div>
 </section>
 
+<div class="wrap mcq-body">
 
-<style>
-.quiz{max-width:74ch}
-.q{background:#fff;border:1px solid var(--border);border-radius:12px;padding:16px 18px;margin-bottom:14px}
-.qn{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:6px}
-.qt{font-family:var(--serif);color:var(--ink);font-size:1.04rem;margin-bottom:12px}
-.opts{display:grid;gap:8px}
-.opt{
-  text-align:left;font:inherit;font-size:.95rem;color:var(--ink);background:var(--bg);
-  border:1.5px solid var(--border);border-radius:9px;padding:10px 14px;cursor:pointer;
-}
-.opt:hover{border-color:var(--teal)}
-.opt.right{background:#E7F5EF;border-color:#0F766E;font-weight:600}
-.opt.wrong{background:#FDEDE8;border-color:#C2410C}
-.opt[disabled]{cursor:default}
-.exp{display:none;margin-top:12px;padding:12px 14px;background:var(--tint);border-left:3px solid var(--teal);border-radius:0 8px 8px 0;font-size:.92rem}
-.q.done .exp{display:block}
-#score{
-  position:sticky;bottom:14px;background:var(--ink);color:#fff;border-radius:10px;
-  padding:11px 16px;font-weight:600;font-size:.95rem;text-align:center;margin-top:6px
-}
-</style>
-
-<section>
-  <div class="wrap">
-    <h2>Set 1 — Mixed revision, NET level</h2>
-    <p>Ten questions across criticism, medieval literature, the Romantics, modernism and postcolonial writing. Tap an option and the answer appears immediately, with the reasoning. Nothing is recorded and nothing is submitted anywhere — this is for you, not for a leaderboard.</p>
-    <p class="small muted">These are practice questions written for revision. They are not reproduced from any past examination paper; for those, see <a href="/quizzes/pyq/">Previous Year Questions</a>.</p>
-    <div class="quiz">
-    <div class="q" data-ans="1">
-      <p class="qn">Question 1</p>
-      <p class="qt">Who coined the critical term <em>objective correlative</em>?</p>
-      <div class="opts">
-        <button class="opt" data-i="0">I. A. Richards</button>
-        <button class="opt" data-i="1">T. S. Eliot</button>
-        <button class="opt" data-i="2">Matthew Arnold</button>
-        <button class="opt" data-i="3">F. R. Leavis</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> T. S. Eliot &mdash; Eliot introduced the phrase in his essay on <em>Hamlet</em>, arguing that emotion in art must be expressed through a set of objects or events that evoke it.</div>
-    </div>
-    <div class="q" data-ans="2">
-      <p class="qn">Question 2</p>
-      <p class="qt">In Aristotle's <em>Poetics</em>, the sudden reversal of a situation is called</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Anagnorisis</button>
-        <button class="opt" data-i="1">Hamartia</button>
-        <button class="opt" data-i="2">Peripeteia</button>
-        <button class="opt" data-i="3">Catharsis</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> Peripeteia &mdash; Peripeteia is the reversal of fortune; anagnorisis is the recognition or discovery that often accompanies it.</div>
-    </div>
-    <div class="q" data-ans="1">
-      <p class="qn">Question 3</p>
-      <p class="qt">The pilgrims in <em>The Canterbury Tales</em> set out from</p>
-      <div class="opts">
-        <button class="opt" data-i="0">The Mermaid Tavern</button>
-        <button class="opt" data-i="1">The Tabard Inn</button>
-        <button class="opt" data-i="2">The Globe</button>
-        <button class="opt" data-i="3">Southwark Cathedral</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> The Tabard Inn &mdash; Chaucer's General Prologue gathers the company at the Tabard Inn in Southwark before the journey to Canterbury.</div>
-    </div>
-    <div class="q" data-ans="1">
-      <p class="qn">Question 4</p>
-      <p class="qt">The phrase <em>willing suspension of disbelief</em> comes from</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Wordsworth's Preface to Lyrical Ballads</button>
-        <button class="opt" data-i="1">Coleridge's Biographia Literaria</button>
-        <button class="opt" data-i="2">Shelley's A Defence of Poetry</button>
-        <button class="opt" data-i="3">Keats's letters</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> Coleridge's Biographia Literaria &mdash; Coleridge used it in <em>Biographia Literaria</em> while describing the division of labour between himself and Wordsworth in <em>Lyrical Ballads</em>.</div>
-    </div>
-    <div class="q" data-ans="1">
-      <p class="qn">Question 5</p>
-      <p class="qt"><em>A Defence of Poetry</em>, written in 1821, is by</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Sir Philip Sidney</button>
-        <button class="opt" data-i="1">P. B. Shelley</button>
-        <button class="opt" data-i="2">William Wordsworth</button>
-        <button class="opt" data-i="3">Matthew Arnold</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> P. B. Shelley &mdash; Shelley wrote it in 1821; it was published posthumously in 1840. Sidney's earlier work is <em>An Apology for Poetry</em>, which is a different text.</div>
-    </div>
-    <div class="q" data-ans="2">
-      <p class="qn">Question 6</p>
-      <p class="qt">The essay <em>The Death of the Author</em> was written by</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Michel Foucault</button>
-        <button class="opt" data-i="1">Jacques Derrida</button>
-        <button class="opt" data-i="2">Roland Barthes</button>
-        <button class="opt" data-i="3">Jacques Lacan</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> Roland Barthes &mdash; Barthes argued that a text's meaning is produced in reading rather than fixed by the author's intention.</div>
-    </div>
-    <div class="q" data-ans="1">
-      <p class="qn">Question 7</p>
-      <p class="qt"><em>Things Fall Apart</em> takes its title from a poem by</p>
-      <div class="opts">
-        <button class="opt" data-i="0">T. S. Eliot</button>
-        <button class="opt" data-i="1">W. B. Yeats</button>
-        <button class="opt" data-i="2">W. H. Auden</button>
-        <button class="opt" data-i="3">Dylan Thomas</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> W. B. Yeats &mdash; The title comes from Yeats's <em>The Second Coming</em>, which Achebe also quotes as an epigraph.</div>
-    </div>
-    <div class="q" data-ans="2">
-      <p class="qn">Question 8</p>
-      <p class="qt">The rhyme scheme ababcdcdefefgg belongs to the</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Petrarchan sonnet</button>
-        <button class="opt" data-i="1">Spenserian sonnet</button>
-        <button class="opt" data-i="2">Shakespearean sonnet</button>
-        <button class="opt" data-i="3">Miltonic sonnet</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> Shakespearean sonnet &mdash; Three alternating quatrains closing in a couplet is the English or Shakespearean form. The Spenserian links its quatrains: ababbcbccdcdee.</div>
-    </div>
-    <div class="q" data-ans="1">
-      <p class="qn">Question 9</p>
-      <p class="qt">The narrator of the inner story in <em>Heart of Darkness</em> is</p>
-      <div class="opts">
-        <button class="opt" data-i="0">Kurtz</button>
-        <button class="opt" data-i="1">Marlow</button>
-        <button class="opt" data-i="2">The Accountant</button>
-        <button class="opt" data-i="3">The Director of Companies</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> Marlow &mdash; Marlow tells the Congo narrative aboard the Nellie to an unnamed listener, who frames the tale for the reader.</div>
-    </div>
-    <div class="q" data-ans="2">
-      <p class="qn">Question 10</p>
-      <p class="qt"><em>Beowulf</em> survives in a single manuscript known as</p>
-      <div class="opts">
-        <button class="opt" data-i="0">The Exeter Book</button>
-        <button class="opt" data-i="1">The Vercelli Book</button>
-        <button class="opt" data-i="2">The Nowell Codex</button>
-        <button class="opt" data-i="3">The Junius Manuscript</button>
-      </div>
-      <div class="exp"><strong>Answer:</strong> The Nowell Codex &mdash; The poem survives in the Nowell Codex, bound in the Cotton manuscript Vitellius A. xv, damaged by fire in 1731.</div>
-    </div>
-      <div id="score">Tap an option to begin</div>
-    </div>
+  <!-- ====== EXAM FILTER ====== -->
+  <div class="mcq-exams" role="group" aria-label="Arrange questions for an exam">
+    <span class="mcq-exams-label">Arrange for</span>
+    <button type="button" class="mcq-chip is-on" data-exam="all" aria-pressed="true">Every exam</button>
+    <button type="button" class="mcq-chip" data-exam="net" aria-pressed="false">UGC NET / JRF</button>
+    <button type="button" class="mcq-chip" data-exam="pgt" aria-pressed="false">PGT</button>
+    <button type="button" class="mcq-chip" data-exam="psc" aria-pressed="false">State PSC</button>
+    <button type="button" class="mcq-chip" data-exam="maba" aria-pressed="false">MA / BA</button>
   </div>
-</section>
 
-<section>
-  <div class="wrap">
-    <h2>What to do with a wrong answer</h2>
-    <p>Do not simply read the explanation and move on — that produces the comfortable feeling of learning without much of the substance. Close the page, and say the correct answer out loud along with one sentence of reasoning. If you cannot produce the sentence, you have recognised the answer rather than learned it.</p>
-    <p>Then write the question into your error notebook and return to it in three days. Questions you get wrong twice are the ones that will appear in the examination, because that is the sort of luck examinations run on.</p>
-    <div class="grid g3" style="margin-top:16px">
-      <a class="card" href="/notes/"><p class="meta">Repair</p><h3>Go back to notes</h3><p>Find the topic you missed and read it properly.</p></a>
-      <a class="card" href="/quizzes/pyq/"><p class="meta">Next</p><h3>Previous year questions</h3><p>Real papers, and how to use them as diagnosis.</p></a>
-      <a class="card" href="/contact/"><p class="meta">Request</p><h3>Ask for a set</h3><p>Want a set on one author or one unit? Say so.</p></a>
+  <!-- ====== CARRY ON (filled by mcq.js when there is history) ====== -->
+  <section id="carryOn" class="mcq-sec" hidden>
+    <div class="sechead">
+      <h2>Carry On Where You Left</h2>
     </div>
-  </div>
-</section>
+    <p class="seclede">Kept on this device only. Sign in later and it will follow you to your phone.</p>
+    <div class="mcq-resume" id="resumeGrid"></div>
+  </section>
 
-<script>
-document.querySelectorAll('.q').forEach(function(q){
-  q.querySelectorAll('.opt').forEach(function(b){
-    b.addEventListener('click', function(){
-      if (q.classList.contains('done')) return;
-      var ans = parseInt(q.dataset.ans, 10);
-      q.classList.add('done');
-      q.querySelectorAll('.opt').forEach(function(o){
-        o.disabled = true;
-        if (parseInt(o.dataset.i, 10) === ans) o.classList.add('right');
-      });
-      if (parseInt(b.dataset.i, 10) !== ans) b.classList.add('wrong');
-      else window.__ok = (window.__ok || 0) + 1;
-      window.__done = (window.__done || 0) + 1;
-      var s = document.getElementById('score');
-      s.textContent = 'Correct ' + (window.__ok || 0) + ' of ' + window.__done + ' attempted';
-    });
-  });
-});
-</script>
+  <!-- ====== JUST START ====== -->
+  <!-- PAUSED: /quizzes/mcq/mixed/ is not built yet. Put this block back when it is.
+<a class="mcq-start" href="/quizzes/mcq/mixed/">
+    <span class="mcq-start-ic" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="m12 2 2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5Z"/></svg>
+    </span>
+    <span class="mcq-start-txt">
+      <strong>Not Sure Where To Begin?</strong>
+      <span>Twenty-five mixed questions, drawn from across the ages. About fifteen minutes.</span>
+    </span>
+    <span class="mcq-start-go">Start Now</span>
+  </a>
+-->
+
+  <!-- ====== BY AGE ====== -->
+  <section class="mcq-sec">
+    <div class="sechead">
+      <h2>Practise By Age</h2>
+      <a class="more" href="/english-literature/">Read the notes instead &rarr;</a>
+    </div>
+    <p class="seclede">Sets of twenty-five in every age. One set is about a quarter of an hour.</p>
+
+    <div class="mcq-agegrid">
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="old-english" style="--mark:#3F5165">
+        <span class="mcq-mono" aria-hidden="true">O</span>
+        <span class="mcq-agename">
+          <strong>Old English</strong>
+          <span class="mcq-years">450&ndash;1066</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="middle-english" style="--mark:#4A6473">
+        <span class="mcq-mono" aria-hidden="true">M</span>
+        <span class="mcq-agename">
+          <strong>Middle English</strong>
+          <span class="mcq-years">1066&ndash;1500</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="renaissance" style="--mark:#4F6F68">
+        <span class="mcq-mono" aria-hidden="true">R</span>
+        <span class="mcq-agename">
+          <strong>Renaissance</strong>
+          <span class="mcq-years">1500&ndash;1603</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="jacobean" style="--mark:#566F5A">
+        <span class="mcq-mono" aria-hidden="true">J</span>
+        <span class="mcq-agename">
+          <strong>Jacobean</strong>
+          <span class="mcq-years">1603&ndash;1660</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="restoration" style="--mark:#6A7550">
+        <span class="mcq-mono" aria-hidden="true">R</span>
+        <span class="mcq-agename">
+          <strong>Restoration</strong>
+          <span class="mcq-years">1660&ndash;1700</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="augustan-age" style="--mark:#7D7548">
+        <span class="mcq-mono" aria-hidden="true">A</span>
+        <span class="mcq-agename">
+          <strong>Augustan</strong>
+          <span class="mcq-years">1700&ndash;1798</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="romantic-age" style="--mark:#8A6A44">
+        <span class="mcq-mono" aria-hidden="true">R</span>
+        <span class="mcq-agename">
+          <strong>Romantic</strong>
+          <span class="mcq-years">1798&ndash;1837</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="victorian-age" style="--mark:#8D5A45">
+        <span class="mcq-mono" aria-hidden="true">V</span>
+        <span class="mcq-agename">
+          <strong>Victorian</strong>
+          <span class="mcq-years">1837&ndash;1901</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="modern" style="--mark:#85484F">
+        <span class="mcq-mono" aria-hidden="true">M</span>
+        <span class="mcq-agename">
+          <strong>Modern</strong>
+          <span class="mcq-years">1901&ndash;1945</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="contemporary" style="--mark:#7A4258">
+        <span class="mcq-mono" aria-hidden="true">C</span>
+        <span class="mcq-agename">
+          <strong>Contemporary</strong>
+          <span class="mcq-years">1945 onwards</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ====== BY TOPIC ====== -->
+  <!-- PAUSED: /quizzes/mcq/topic/<topic>/ and /quizzes/mcq/build/ are not built yet. Put this block back when they are.
+<section class="mcq-sec">
+    <div class="sechead">
+      <h2>Practise By Topic</h2>
+      <a class="more" href="/quizzes/mcq/build/">Mix topics and ages &rarr;</a>
+    </div>
+    <p class="seclede">One topic, every period at once. Useful in the last fortnight before a paper.</p>
+
+    <div class="mcq-topicgrid">
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/poetry/">
+        <span class="ic" style="background:#F0ECFA;color:#6D28D9" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h14v17l-7-3.5-7 3.5Z"/></svg>
+        </span>
+        <span class="txt"><strong>Poetry</strong><span>Verse from every age</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/drama/">
+        <span class="ic" style="background:#FBF0E4;color:#C2410C" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5h16v11H4Z"/><path d="M9 20h6"/><path d="M12 15.5V20"/></svg>
+        </span>
+        <span class="txt"><strong>Drama</strong><span>Plays and the stage</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/prose/">
+        <span class="ic" style="background:#E7F2EA;color:#15803D" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h10l4 4v13H5Z"/><path d="M8 11h8"/><path d="M8 15h5"/></svg>
+        </span>
+        <span class="txt"><strong>Prose and the Novel</strong><span>Fiction and the essay</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/criticism/">
+        <span class="ic" style="background:#E8F0FA;color:#2563EB" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.4-4.4"/></svg>
+        </span>
+        <span class="txt"><strong>Criticism and Theory</strong><span>Critics and their arguments</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/literary-terms/">
+        <span class="ic" style="background:#F7F2E3;color:#B9892F" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M4 12h11"/><path d="M4 18h7"/></svg>
+        </span>
+        <span class="txt"><strong>Literary Terms</strong><span>Figures, forms and devices</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+      <a class="mcq-topic" href="/quizzes/mcq/topic/writers-and-works/">
+        <span class="ic" style="background:#E4F0ED;color:#0F766E" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.6"/><path d="M4.8 20c.9-3.6 3.7-5.5 7.2-5.5s6.3 1.9 7.2 5.5"/></svg>
+        </span>
+        <span class="txt"><strong>Writers and Works</strong><span>Who wrote what, and when</span></span>
+        <span class="arrow" aria-hidden="true">&rarr;</span>
+      </a>
+
+    </div>
+  </section>
+-->
+
+  <!-- ====== BUILD YOUR OWN ====== -->
+  <!-- PAUSED: /quizzes/mcq/build/ is not built yet. Put this block back when it is.
+<a class="mcq-build" href="/quizzes/mcq/build/">
+    <span class="ic" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/><circle cx="9" cy="7" r="2.3" fill="#fff"/><circle cx="15" cy="12" r="2.3" fill="#fff"/><circle cx="8" cy="17" r="2.3" fill="#fff"/></svg>
+    </span>
+    <span class="txt">
+      <strong>Build Your Own Set</strong>
+      <span>Choose the ages, the topics, how hard and how many. Up to a hundred questions at a time.</span>
+    </span>
+    <span class="go">Open the builder</span>
+  </a>
+-->
+
+  <!-- ====== ALSO IN THE PRACTICE ZONE ====== -->
+  <section class="mcq-sec mcq-sec-last">
+    <div class="sechead">
+      <h2>Also In The Practice Zone</h2>
+      <a class="more" href="/quizzes/">Go to practice section &rarr;</a>
+    </div>
+    <p class="seclede">Different habits for different weeks.</p>
+
+    <div class="mcq-othergrid">
+
+      <a class="mcq-other" href="/quizzes/daily/">
+        <span class="ic" style="background:#FDECEC;color:#DC2626" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4"/><path d="M16 3v4"/><path d="M3.5 10h17"/></svg>
+        </span>
+        <strong>Daily Quiz</strong>
+        <p>A fresh set of questions every day. Coming soon.</p>
+      </a>
+
+      <a class="mcq-other" href="/quizzes/pyq/">
+        <span class="ic" style="background:#E7F2EA;color:#15803D" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7v5.3l3.3 2"/></svg>
+        </span>
+        <strong>Previous Year Papers</strong>
+        <p>Questions from past exam papers, with the reasoning behind each answer.</p>
+      </a>
+
+      <a class="mcq-other" href="/quizzes/mock-tests/">
+        <span class="ic" style="background:#E4F0ED;color:#0F766E" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M3 20h18v2H3z"/><rect x="4" y="11" width="4" height="7" rx="1.2"/><rect x="10" y="6" width="4" height="12" rx="1.2"/><rect x="16" y="14" width="4" height="4" rx="1.2" opacity=".6"/></svg>
+        </span>
+        <strong>Mock Tests</strong>
+        <p>Full-length timed papers that follow the pattern of the real exam. Coming soon.</p>
+      </a>
+
+    </div>
+  </section>
+
+</div>
 
 </main>
 
 <footer class="site-footer">
   <div class="wrap">
-    <p class="id"><img src="/assets/logo.png" alt="" width="34" height="34"><span><b>AK Explained</b> — English Literature for Indian Exams &middot; BA to UGC-NET</span></p>
-    <nav aria-label="Footer">
-      <a href="/">Home</a>
-      <a href="/exams/">Exams</a>
-      <a href="/notes/">Notes</a>
-      <a href="/guides/">Guides</a>
-      <a href="/quizzes/">Quizzes</a>
-      <a href="/help/">Help</a>
-    </nav>
+    <div class="cols">
+      <div class="id">
+        <img src="/assets/logo.png" alt="" width="42" height="42">
+        <b>AK Explained</b>
+        <span class="tag">The Student's Library</span>
+        <p>English literature, arranged from Old English to the present &mdash; free for every student.</p>
+        <div class="social">
+          <a href="/go/youtube" aria-label="YouTube" rel="noopener"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M23 12s0-3.7-.5-5.4a2.8 2.8 0 0 0-2-2C18.8 4 12 4 12 4s-6.8 0-8.5.6a2.8 2.8 0 0 0-2 2C1 8.3 1 12 1 12s0 3.7.5 5.4c.3 1 1 1.7 2 2C5.2 20 12 20 12 20s6.8 0 8.5-.6c1-.3 1.7-1 2-2C23 15.7 23 12 23 12ZM9.8 15.3V8.7l5.7 3.3Z"/></svg></a>
+          <a href="/go/telegram" aria-label="Telegram" rel="noopener"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6 19 19.3c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.6L18.6 7c.4-.3-.1-.5-.6-.2L7.7 13.2l-4.4-1.4c-1-.3-1-1 .2-1.4l17.2-6.6c.8-.3 1.5.2 1.2 1.8Z"/></svg></a>
+          <a href="/go/whatsapp" aria-label="WhatsApp" rel="noopener"><svg viewBox="0 0 24 24" width="19" height="19" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.6-6.1c-.3-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.3-.7.8-.8 1-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.6-1.2.1-.2 0-.4 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.9.9-1.1 2.2-.2 3.7a11 11 0 0 0 4.4 4c.6.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0 0-.2-.1-.5-.2Z"/></svg></a>
+          <a href="/go/instagram" aria-label="Instagram" rel="noopener"><svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Study</h4>
+        <nav aria-label="Study links">
+          <a href="/">Home</a>
+          <a href="/exams/net/">UGC NET / JRF / SET</a>
+          <a href="/exams/pgt/">PGT English</a>
+          <a href="/exams/state-psc/">State PSC</a>
+          <a href="/exams/ma-ba/">MA / BA &mdash; University</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>Explore</h4>
+        <nav aria-label="Explore links">
+          <a href="/english-literature/">English Literature</a>
+          <a href="/quizzes/mcq/">MCQ Practice</a>
+          <a href="/quizzes/pyq/">Previous Year (PYQ)</a>
+          <a href="/video-lessons/">Video Lessons</a>
+          <a href="/notes/">Notes</a>
+        </nav>
+      </div>
+
+      <div>
+        <h4>More</h4>
+        <nav aria-label="More links">
+          <a href="/publish-with-us/">My Publisher</a>
+          <a href="/research-support/">Research Support</a>
+          <a href="/download/">Download</a>
+          <a href="/login/">Login</a>
+          <a href="/contact/">Contact Us</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </div>
+
     <p class="legal">
       <span>&copy; 2026 AK Explained &middot; Prof. Afsar Khan</span>
       <a href="/privacy/">Privacy Policy</a>
@@ -266,5 +442,7 @@ document.querySelectorAll('.q').forEach(function(q){
   </div>
 </footer>
 
+<script src="/assets/nav.js" defer></script>
+<script src="/assets/mcq.js" defer></script>
 </body>
 </html>

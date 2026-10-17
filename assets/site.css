@@ -745,3 +745,269 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .intro-band::before{height:170px;opacity:.28;
     -webkit-mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%);mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%)}
 }
+
+/* =========================================================
+   MCQ PRACTICE PAGE  —  /quizzes/mcq/
+   Append this whole block to the end of assets/site.css.
+   Do not create a separate stylesheet.
+
+   Everything here is prefixed .mcq- so it cannot clash with
+   existing rules. The only shared classes reused from site.css
+   are .wrap, .sechead, .seclede and .more.
+   ========================================================= */
+
+:root{
+  /* Each practice section owns a colour on the home page.
+     MCQ is the blue one, so the whole page is built on it.
+     If site.css already has these as variables, point these at them. */
+  --mcq-blue:#2563EB;
+  --mcq-blue-dark:#1D4ED8;
+  --mcq-blue-tint:#E8F0FA;
+  --mcq-blue-line:#D4E2F3;
+
+  --mcq-teal:#0F766E;
+  --mcq-teal-deep:#11312F;
+  --mcq-orange:#C2410C;
+  --mcq-orange-tint:#FBF0E4;
+  --mcq-orange-line:#F0D6B8;
+  --mcq-green:#15803D;
+  --mcq-red:#B91C1C;
+
+  --mcq-ink:#1B2430;
+  --mcq-ink-soft:#4A5765;
+  --mcq-ink-faint:#74808D;
+  --mcq-paper:#FFFFFF;
+  --mcq-page:#F7F8FA;
+  --mcq-line:#E3E7EC;
+  --mcq-line-soft:#EEF1F5;
+  --mcq-r:14px;
+}
+
+/* ---------- page head ---------- */
+.mcq-head{
+  background:var(--mcq-blue-tint);
+  border-bottom:1px solid var(--mcq-blue-line);
+  padding:18px 0 30px;
+}
+.mcq-crumb{font-size:14px;color:var(--mcq-ink-soft);margin-bottom:18px}
+.mcq-crumb a{color:var(--mcq-ink-soft);text-decoration:none}
+.mcq-crumb a:hover{text-decoration:underline}
+.mcq-crumb span[aria-hidden]{padding:0 7px;color:#90A0B2}
+.mcq-crumb > span:last-child{color:var(--mcq-ink);font-weight:600}
+
+.mcq-head h1{
+  font-family:Literata,Georgia,serif;
+  font-size:clamp(28px,5vw,40px);
+  font-weight:700;line-height:1.15;letter-spacing:-.015em;
+  margin:0 0 8px;color:var(--mcq-ink);
+}
+.mcq-lede{margin:0 0 22px;font-size:17px;color:#3F4D5C;max-width:62ch}
+
+.mcq-modes{display:flex;flex-wrap:wrap;gap:8px}
+.mcq-modes a,.mcq-modes span{
+  font-size:14.5px;font-weight:600;border-radius:999px;padding:9px 18px;
+  text-decoration:none;color:#3F4D5C;background:#fff;border:1px solid var(--mcq-blue-line);
+}
+.mcq-modes a:hover{border-color:var(--mcq-blue);color:var(--mcq-blue-dark)}
+.mcq-modes span[aria-current]{background:var(--mcq-blue);border-color:var(--mcq-blue);color:#fff}
+
+/* ---------- body ---------- */
+.mcq-body{padding-top:34px;padding-bottom:72px}
+.mcq-sec{margin-bottom:46px}
+.mcq-sec-last{margin-bottom:0}
+
+/* ---------- exam filter ---------- */
+.mcq-exams{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:34px}
+.mcq-exams-label{
+  font-size:12.5px;text-transform:uppercase;letter-spacing:.09em;
+  font-weight:700;color:var(--mcq-ink-faint);margin-right:5px;
+}
+.mcq-chip{
+  font:inherit;font-size:14px;padding:8px 16px;border-radius:999px;
+  border:1px solid var(--mcq-line);background:#fff;color:#3F4D5C;cursor:pointer;
+}
+.mcq-chip:hover{border-color:#B4C0CD}
+.mcq-chip.is-on{background:var(--mcq-teal);border-color:var(--mcq-teal);color:#fff;font-weight:600}
+.mcq-chip:focus-visible{outline:3px solid var(--mcq-blue);outline-offset:2px}
+
+/* ---------- carry on ---------- */
+.mcq-resume{display:flex;flex-wrap:wrap;gap:16px}
+.mcq-rcard{
+  flex:1 1 320px;display:flex;gap:16px;align-items:flex-start;
+  background:var(--mcq-paper);border:1px solid var(--mcq-line);
+  border-radius:16px;padding:20px 22px;text-decoration:none;color:inherit;
+}
+.mcq-rcard:hover{border-color:var(--mcq-blue)}
+.mcq-rcard .ic{
+  width:46px;height:46px;border-radius:12px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--mcq-blue-tint);color:var(--mcq-blue);
+}
+.mcq-rcard .body{flex:1;min-width:0}
+.mcq-rcard strong{
+  display:block;font-family:Literata,Georgia,serif;
+  font-size:19px;font-weight:600;margin-bottom:3px;
+}
+.mcq-rcard .sub{display:block;font-size:14.5px;color:var(--mcq-ink-soft);margin-bottom:12px}
+.mcq-rcard .go{
+  display:inline-block;font-size:14.5px;font-weight:600;color:#fff;
+  background:var(--mcq-blue);padding:10px 20px;border-radius:10px;
+}
+.mcq-rcard.is-redo .ic{background:var(--mcq-orange-tint);color:var(--mcq-orange)}
+.mcq-rcard.is-redo .go{background:var(--mcq-orange)}
+.mcq-rcard.is-redo:hover{border-color:var(--mcq-orange)}
+
+.mcq-bar{display:block;height:6px;border-radius:999px;background:var(--mcq-line-soft);overflow:hidden;margin-bottom:14px}
+.mcq-bar i{display:block;height:100%;width:0;background:var(--mcq-blue);border-radius:999px}
+.mcq-bar i.is-done{background:var(--mcq-green)}
+.mcq-bar i.is-weak{background:var(--mcq-orange)}
+
+/* ---------- just start ---------- */
+.mcq-start{
+  display:flex;flex-wrap:wrap;align-items:center;gap:20px;
+  background:var(--mcq-teal-deep);border-radius:16px;padding:24px 28px;
+  margin-bottom:46px;text-decoration:none;
+}
+.mcq-start:hover{background:#0C2523}
+.mcq-start-ic{
+  width:50px;height:50px;border-radius:13px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--mcq-teal);color:#fff;
+}
+.mcq-start-txt{flex:1 1 320px;min-width:0}
+.mcq-start-txt strong{
+  display:block;font-family:Literata,Georgia,serif;font-size:23px;
+  font-weight:600;color:#fff;margin-bottom:3px;
+}
+.mcq-start-txt span{display:block;font-size:15.5px;color:#B8CFCC}
+.mcq-start-go{
+  font-size:15.5px;font-weight:700;color:var(--mcq-teal-deep);
+  background:#fff;padding:14px 28px;border-radius:11px;white-space:nowrap;
+}
+
+/* ---------- age grid ---------- */
+.mcq-agegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.mcq-agecard{
+  background:var(--mcq-paper);border:1px solid var(--mcq-line);
+  border-radius:16px;padding:17px;text-decoration:none;color:inherit;display:block;
+}
+.mcq-agecard:hover{border-color:var(--mark,var(--mcq-blue))}
+.mcq-agecard.is-current{border:2px solid var(--mcq-blue);padding:16px}
+.mcq-mono{
+  width:48px;height:48px;border-radius:12px;flex:none;float:left;margin-right:13px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--mark,#4A5A6A);color:#fff;
+  font-family:Literata,Georgia,serif;font-size:23px;font-weight:700;
+}
+.mcq-agename{display:block;overflow:hidden;margin-bottom:15px;min-height:48px}
+.mcq-agename strong{display:block;font-weight:600;font-size:16px;line-height:1.25}
+.mcq-years{display:block;font-size:13px;color:var(--mcq-ink-faint)}
+.mcq-agecard .mcq-bar{height:5px;margin-bottom:9px;clear:both}
+.mcq-state{display:block;font-size:13px;color:var(--mcq-ink-faint)}
+.mcq-state.is-done{color:var(--mcq-green);font-weight:600}
+.mcq-state.is-going{color:var(--mcq-blue-dark);font-weight:600}
+.mcq-state.is-weak{color:#9A3412;font-weight:600}
+
+/* An age whose questions are not written yet: not a link, clearly marked. */
+.mcq-agecard[aria-disabled="true"]{
+  pointer-events:none;background:#FBFCFD;border-style:dashed;
+}
+.mcq-agecard[aria-disabled="true"] .mcq-mono{opacity:.45}
+.mcq-agecard[aria-disabled="true"] .mcq-bar{visibility:hidden}
+
+/* ---------- topic grid ---------- */
+.mcq-topicgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.mcq-topic{
+  display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;
+  background:var(--mcq-paper);border:1px solid var(--mcq-line);
+  border-radius:14px;padding:16px 18px;
+}
+.mcq-topic:hover{border-color:#B4C0CD}
+.mcq-topic .ic{
+  width:42px;height:42px;border-radius:11px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+}
+.mcq-topic .txt{flex:1;min-width:0}
+.mcq-topic .txt strong{display:block;font-weight:600;font-size:16px}
+.mcq-topic .txt span{display:block;font-size:13.5px;color:var(--mcq-ink-faint)}
+.mcq-topic .arrow{color:#90A0B2;font-size:17px;flex:none}
+
+/* ---------- build your own ---------- */
+.mcq-build{
+  display:flex;flex-wrap:wrap;align-items:center;gap:20px;
+  background:var(--mcq-paper);border:1px dashed #B4C0CD;border-radius:16px;
+  padding:24px 28px;margin-bottom:46px;text-decoration:none;color:inherit;
+}
+.mcq-build:hover{border-color:var(--mcq-blue);border-style:solid}
+.mcq-build .ic{
+  width:46px;height:46px;border-radius:12px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--mcq-blue-tint);color:var(--mcq-blue);
+}
+.mcq-build .txt{flex:1 1 320px;min-width:0}
+.mcq-build .txt strong{
+  display:block;font-family:Literata,Georgia,serif;font-size:21px;
+  font-weight:600;margin-bottom:3px;
+}
+.mcq-build .txt span{display:block;font-size:15.5px;color:var(--mcq-ink-soft)}
+.mcq-build .go{
+  font-size:15px;font-weight:600;color:var(--mcq-ink);
+  border:1px solid #B4C0CD;padding:13px 24px;border-radius:11px;white-space:nowrap;
+}
+
+/* ---------- also in the practice zone ---------- */
+.mcq-othergrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.mcq-other{
+  background:var(--mcq-paper);border:1px solid var(--mcq-line);
+  border-radius:16px;padding:20px;text-decoration:none;color:inherit;display:block;
+}
+.mcq-other:hover{border-color:#B4C0CD}
+.mcq-other .ic{
+  width:46px;height:46px;border-radius:12px;margin-bottom:14px;
+  display:flex;align-items:center;justify-content:center;
+}
+.mcq-other strong{
+  display:block;font-family:Literata,Georgia,serif;font-size:19px;
+  font-weight:600;margin-bottom:4px;
+}
+.mcq-other p{margin:0;font-size:14.5px;color:var(--mcq-ink-soft)}
+
+/* ---------- narrower screens ---------- */
+@media (max-width:1040px){
+  .mcq-agegrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .mcq-topicgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .mcq-othergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:760px){
+  .mcq-head{padding:14px 0 22px}
+  .mcq-lede{font-size:15.5px;margin-bottom:18px}
+  .mcq-modes{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
+  .mcq-modes a,.mcq-modes span{flex:none}
+  .mcq-exams{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
+  .mcq-exams .mcq-chip{flex:none}
+  .mcq-exams-label{display:none}
+  .mcq-body{padding-top:22px}
+  .mcq-sec{margin-bottom:34px}
+
+  /* ages become a list of rows, easier to thumb through */
+  .mcq-agegrid{grid-template-columns:1fr;gap:9px}
+  .mcq-agecard{
+    display:grid;grid-template-columns:42px 1fr;gap:1px 12px;
+    align-items:center;padding:13px 15px;border-radius:13px;
+  }
+  .mcq-agecard.is-current{padding:12px 14px}
+  .mcq-mono{float:none;margin:0;width:42px;height:42px;font-size:20px;grid-row:1/3;grid-column:1}
+  .mcq-agename{grid-column:2;margin:0;min-height:0}
+  .mcq-agecard .mcq-bar{display:none}
+  .mcq-state{grid-column:2}
+
+  .mcq-topicgrid,.mcq-othergrid{grid-template-columns:1fr}
+  .mcq-start,.mcq-build{padding:18px 18px;gap:14px}
+  .mcq-start-go,.mcq-build .go{width:100%;text-align:center}
+  .mcq-rcard .go{display:block;text-align:center}
+}
+
+/* ---------- print ---------- */
+@media print{
+  .mcq-modes,.mcq-exams,.mcq-start,.mcq-build,#carryOn{display:none !important}
+}
