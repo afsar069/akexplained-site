@@ -493,7 +493,7 @@
     var t = tally();
 
     root.innerHTML =
-      pageHead() + cheerRow(t) + history(t.right).chart +
+      pageHead() + cheerRow(t) + streakStrip() +
       topicRow(t) + analysisRow(t) + actionRow() + journeyRow(t) +
 
       '<div class="cbt-filters" role="group" aria-label="Which questions to show">' +
@@ -547,11 +547,19 @@
 
   /* ---------- 1. sabse upar, saada: teen pankti, koi tasveer nahi ---------- */
   function pageHead() {
+    /* Patti hai, par iske peeche koi tasveer nahi — abhi ke liye saada. */
     return '<header class="cbt-head">' +
-      '<h1>Your Final Score Board</h1>' +
-      '<h2>' + esc(paper.ageName || '') + ' — Practice Test ' +
-        esc(String(paper.setNumber || 1)) + '</h2>' +
-      '<h3>You have completed the test. Here is your detailed performance analysis.</h3>' +
+      '<span class="cbt-headmark" aria-hidden="true">' +
+        '<svg viewBox="0 0 24 24" width="25" height="25" fill="none" stroke="currentColor" ' +
+        'stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">' +
+        '<path d="M9 11.5l2.2 2.2L16 9"/><rect x="4" y="3.5" width="16" height="17" rx="2.5"/></svg>' +
+      '</span>' +
+      '<div class="cbt-headtxt">' +
+        '<h1>Your Final Score Board</h1>' +
+        '<h2>' + esc(paper.ageName || '') + ' — Practice Test ' +
+          esc(String(paper.setNumber || 1)) + '</h2>' +
+        '<h3>You have completed the test. Here is your detailed performance analysis.</h3>' +
+      '</div>' +
     '</header>';
   }
 
@@ -582,7 +590,9 @@
               '<circle class="track" cx="60" cy="60" r="52"></circle>' +
               '<circle class="fill" cx="60" cy="60" r="52"></circle>' +
             '</svg>' +
-            '<p class="cbt-ringtxt"><em>Your score</em><b>' + score + '</b><span>' + t.pc + '%</span></p>' +
+            '<p class="cbt-ringtxt"><em>Your score</em><b' +
+            (score.length > 6 ? ' class="is-long"' : '') + '>' + score +
+            '</b><span>' + t.pc + '%</span></p>' +
           '</div>' +
         '</div>' +
         '<p class="cbt-badge">' + g.name + '</p>' +
@@ -664,8 +674,15 @@
     var thin  = t.topics.filter(function (o) { return o.total < 3; });
 
     var li = function (o, tone) {
-      return '<li class="' + tone + '"><a href="' + esc(paper.notes || '/notes/') + '#' +
-        esc(o.read || '') + '">' + esc(o.name) + '</a> <span>' + o.right + ' of ' + o.total + '</span></li>';
+      return '<li class="' + tone + '">' +
+        '<span class="cbt-liTop">' +
+          '<a href="' + esc(paper.notes || '/notes/') + '#' + esc(o.read || '') + '">' +
+            esc(o.name) + '</a>' +
+          '<em>' + o.right + ' of ' + o.total + '</em>' +
+        '</span>' +
+        '<span class="cbt-tbar"><i class="' + (tone === 'ok' ? 'ok' : 'low') +
+          '" style="width:' + o.pc + '%"></i></span>' +
+      '</li>';
     };
 
     return '<div class="cbt-sw">' +
@@ -709,7 +726,7 @@
       '<section class="cbt-card">' +
         '<h2>Question analysis</h2>' +
         '<div class="cbt-anrow">' +
-          '<div class="cbt-donutwrap">' +
+          '<div class="cbt-donutwrap cbt-donutbig">' +
             '<svg class="cbt-donut" viewBox="0 0 120 120" aria-hidden="true">' +
               seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
               seg(t.skipped, t.right + t.wrong, 'd-skip') +
@@ -743,14 +760,16 @@
     '</div>';
   }
 
-  /* ---------- 6. is age me aage ka rasta, aur ek salah ---------- */
+  /* ---------- 6. aage ka rasta: ek patli patti, sifar se sau tak ---------- */
   function journeyRow(t) {
-    var steps = [
-      { pc: t.pc, here: true, label: 'You are here' },
+    var at = Math.max(0, Math.min(100, t.pc));
+    var marks = [
+      { pc: 30, label: 'Getting started' },
+      { pc: 50, label: 'Good effort' },
       { pc: 75, label: 'Strong ground' },
-      { pc: 90, label: 'Exam ready' },
-      { pc: 100, label: 'Master ' + (paper.ageName || 'this age') }
-    ].filter(function (s, i) { return i === 0 || s.pc > t.pc; });
+      { pc: 90, label: 'Exam ready' }
+    ];
+    var next = marks.filter(function (m) { return m.pc > at; })[0];
 
     var weak = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 60; });
     var tip = weak.length
@@ -760,25 +779,131 @@
       ? 'You know the material. The ' + t.skipped + ' you left blank are the cheapest marks on the paper — answer them next time, even on a half-guess.'
       : 'Nothing is badly weak. Come back in a week and see how much has stayed without a reread.';
 
-    return '<div class="cbt-two cbt-two-wide">' +
-      '<section class="cbt-card cbt-journey">' +
-        '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
-        '<p class="sub">Each step is a score on this set. Nothing here is guessed — it is where you stand today.</p>' +
-        '<ol class="cbt-steps" style="--at:' + Math.min(100, t.pc) + '%">' +
-          steps.map(function (sp) {
-            return '<li class="' + (sp.here ? 'is-here' : '') + '">' +
-              '<i>' + (sp.here ? '●' : sp.pc + '%') + '</i>' +
-              '<b>' + esc(sp.label) + '</b>' +
-              (sp.here ? '<span>' + sp.pc + '%</span>' : '') + '</li>';
+    return '<section class="cbt-card cbt-journey">' +
+why_head(t, at, next) +
+        '<div class="cbt-track">' +
+          '<span class="cbt-trackfill" style="width:' + at + '%"></span>' +
+          marks.map(function (m) {
+            return '<span class="cbt-tick' + (at >= m.pc ? ' is-past' : '') + '" style="left:' + m.pc + '%">' +
+              '<i></i><b>' + m.pc + '%</b><em>' + esc(m.label) + '</em></span>';
           }).join('') +
-        '</ol>' +
+          '<span class="cbt-you" style="left:' + at + '%"><i></i><b>You · ' + at + '%</b></span>' +
+        '</div>' +
+        '<p class="cbt-scale"><span>0%</span><span>100%</span></p>' +
       '</section>' +
-      '<section class="cbt-card cbt-tip">' +
-        '<h2>Tip for you</h2>' +
-        '<p>' + tip + '</p>' +
-        advice(t.right, t.wrong, t.skipped, t.acc) +
-      '</section>' +
-    '</div>';
+
+      '<div class="cbt-two">' + levelCard() +
+        '<section class="cbt-card cbt-tip">' +
+          '<h2>Tip for you</h2>' +
+          '<p>' + tip + '</p>' +
+          advice(t.right, t.wrong, t.skipped, t.acc) +
+        '</section>' +
+      '</div>';
+  }
+
+  function why_head(t, at, next) {
+    return '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
+      '<p class="sub">' +
+        (next
+          ? 'You are at ' + at + '% on this set. ' + (next.pc - at) +
+            ' points more and you reach ' + esc(next.label).toLowerCase() + '.'
+          : 'You are at ' + at + '% on this set — the top of the scale for this one.') +
+      '</p>';
+  }
+
+  /* ---------------------------------------------------------
+     10. Is device par English literature ka darja
+
+     Do cheezon par: kitne sawal kiye, aur unme se kitne sahi.
+     Sirf accuracy se darja dena galat hoga — das sawal 100% karke
+     koi "Master" nahi ban jata. Isliye dono shart poori honi chahiye.
+     Hadd badalni ho to bas LEVELS ki ye panktiyan badalni hain.
+     --------------------------------------------------------- */
+  var LEVELS = [
+    { name: 'Reader',  need: 0,   acc: 0  },
+    { name: 'Student', need: 50,  acc: 50 },
+    { name: 'Scholar', need: 150, acc: 65 },
+    { name: 'Critic',  need: 300, acc: 75 },
+    { name: 'Master',  need: 500, acc: 85 }
+  ];
+
+  /* Is browser me rakhe har set ka jod — sirf poore ho chuke attempt. */
+  function lifetime() {
+    var answered = 0, right = 0;
+    var store;
+    try { store = window.localStorage; } catch (e) { return { answered: 0, right: 0, acc: 0 }; }
+    if (!store) return { answered: 0, right: 0, acc: 0 };
+
+    for (var i = 0; i < store.length; i++) {
+      var k;
+      try { k = store.key(i); } catch (e) { continue; }
+      if (!k || k.indexOf('akq:') !== 0) continue;
+      var d;
+      try { d = JSON.parse(store.getItem(k)); } catch (e) { continue; }
+      if (!d || !d.pick) continue;
+      var a = Object.keys(d.pick).length;
+      var w = typeof d.wrongCount === 'number' ? d.wrongCount
+        : Array.isArray(d.wrongIds) ? d.wrongIds.length : 0;
+      answered += a;
+      right += Math.max(0, a - w);
+    }
+    return { answered: answered, right: right,
+             acc: answered ? Math.round(right / answered * 100) : 0 };
+  }
+
+  function levelCard() {
+    var L = lifetime();
+    var idx = 0;
+    LEVELS.forEach(function (lv, i) {
+      if (L.answered >= lv.need && L.acc >= lv.acc) idx = i;
+    });
+    var now = LEVELS[idx], next = LEVELS[idx + 1];
+
+    var bar = LEVELS.map(function (lv, i) {
+      return '<li class="' + (i < idx ? 'is-past' : i === idx ? 'is-now' : '') + '">' +
+        '<i></i><b>' + esc(lv.name) + '</b></li>';
+    }).join('');
+
+    var line = next
+      ? 'For ' + esc(next.name) + ' you need ' +
+        Math.max(0, next.need - L.answered) + ' more questions answered' +
+        (L.acc < next.acc ? ' and ' + next.acc + '% accuracy, from ' + L.acc + '% now' : '') + '.'
+      : 'The top of the ladder. Keep it there.';
+
+    return '<section class="cbt-card cbt-level">' +
+      '<h2>Your level in English literature</h2>' +
+      '<p class="sub">From every set you have taken in this browser — ' +
+        L.answered + ' question' + (L.answered === 1 ? '' : 's') + ' answered, ' +
+        L.acc + '% right.</p>' +
+      '<p class="cbt-levelnow">' + esc(now.name) + '</p>' +
+      '<ol class="cbt-ladder">' + bar + '</ol>' +
+      '<p class="cbt-levelnext">' + line + '</p>' +
+    '</section>';
+  }
+
+  /* ---------------------------------------------------------
+     11. Roz ki laga-taar — abhi band
+
+     Ye sach me kaam tabhi karega jab khaata hoga: ek hi browser ki
+     ginti phone aur laptop ke beech toot jati hai. Isliye yahan koi
+     ginti dikhane ke bajay saaf likha hai ke ye kiske saath aayega.
+     --------------------------------------------------------- */
+  function streakStrip() {
+    var days = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+    return '<section class="cbt-card cbt-streak" aria-label="Daily streak, locked">' +
+      '<div class="cbt-streakhead">' +
+        '<h2>' + lockIcon() + 'Your daily streak</h2>' +
+        '<a class="cbt-streaklink" href="/login/">Coming with student accounts</a>' +
+      '</div>' +
+      '<div class="cbt-streakrow">' +
+        '<div class="cbt-streaknum"><b>—</b><span>Days in a row</span></div>' +
+        '<div class="cbt-streaknum"><b>—</b><span>Days this week</span></div>' +
+        '<div class="cbt-streakweek" aria-hidden="true">' +
+          days.map(function (d) { return '<i>' + d + '</i>'; }).join('') +
+        '</div>' +
+        '<div class="cbt-streaknum"><b>—</b><span>Level across all ages</span></div>' +
+      '</div>' +
+    '</section>';
   }
 
   /* ---------------------------------------------------------

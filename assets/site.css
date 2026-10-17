@@ -1584,8 +1584,19 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-submit:hover{background:#9A330A;transform:translateY(-2px)}
 
 /* ---------- result ---------- */
-/* ---------- result: saada sheersh, koi tasveer nahi ---------- */
-.cbt-head{margin-bottom:18px}
+/* ---------- result: sheersh patti, par uske peeche koi tasveer nahi ---------- */
+.cbt-head{
+  display:flex;align-items:flex-start;gap:16px;
+  background:var(--cream);border:1px solid var(--border);
+  border-left:5px solid var(--teal);border-radius:16px;
+  padding:22px 26px;margin-bottom:16px;
+}
+.cbt-headmark{
+  flex:none;width:46px;height:46px;border-radius:13px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--teal-soft);color:var(--teal);
+}
+.cbt-headtxt{min-width:0}
 .cbt-head h1{
   font-family:var(--serif);font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:600;
   color:var(--ink);line-height:1.15;margin-bottom:6px;
@@ -1597,31 +1608,42 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-head h3{font-family:var(--sans);font-size:.95rem;font-weight:400;color:var(--body);margin:0}
 
 /* ---------- jashn ka card bagal me, pattiyan daayein ---------- */
-.cbt-top{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;margin-bottom:18px;align-items:start}
-.cbt-stats{display:grid;gap:14px}
-.cbt-cheer{
-  --band:#1C5048;position:relative;overflow:hidden;
-  background:var(--band);color:#fff;border-radius:16px;padding:22px 24px;text-align:center;
+/* Jashn ka card aur bagal ki dono pattiyan barabar lambi rehti hain —
+   stretch, taaki ek doosre se neeche na latke. */
+.cbt-top{
+  display:grid;grid-template-columns:minmax(0,370px) minmax(0,1fr);
+  gap:16px;margin-bottom:16px;align-items:stretch;
 }
-.cbt-cheer.b1{--band:#7A2E2E}
-.cbt-cheer.b2{--band:#8A4A18}
-.cbt-cheer.b3{--band:#6B5416}
-.cbt-cheer.b4{--band:#1C5048}
-.cbt-cheer.b5{--band:#11312F}
+.cbt-stats{display:grid;grid-template-rows:1fr 1fr;gap:14px}
+.cbt-stats .cbt-nums{margin:0}
+.cbt-stats .cbt-num{display:flex;flex-direction:column;justify-content:center}
+
+/* Card halka hai, gehra nahi. Rang darje ke hisaab se badalta hai, par
+   hamesha halka — taaki gold aur teal dono uspar saaf padhe jaayein. */
+.cbt-cheer{
+  --tone:var(--teal);--wash:var(--teal-soft);
+  position:relative;overflow:hidden;
+  background:var(--wash);border:1px solid var(--border);
+  border-radius:16px;padding:22px 24px;text-align:center;color:var(--ink);
+}
+.cbt-cheer.b1{--tone:#B91C1C;--wash:#FDF0F0}
+.cbt-cheer.b2{--tone:#C2410C;--wash:#FDF3EA}
+.cbt-cheer.b3{--tone:#9A7B1F;--wash:#FBF6E8}
+.cbt-cheer.b4{--tone:#0F766E;--wash:#E8F3F0}
+.cbt-cheer.b5{--tone:#B9892F;--wash:#FBF3E2}
+.cbt-cheer{border-color:color-mix(in srgb,var(--tone) 32%,var(--border))}
 .cbt-cheer.b5::before{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:radial-gradient(130% 95% at 50% 0%,rgba(185,137,47,.46),transparent 64%);
+  background:radial-gradient(120% 85% at 50% 0%,rgba(185,137,47,.22),transparent 62%);
 }
 .cbt-cheer > *{position:relative}
-.cbt-cheertop{display:flex;align-items:center;justify-content:center;gap:14px;margin-bottom:14px}
-.cbt-cup{flex:none;color:var(--gold);filter:drop-shadow(0 3px 7px rgba(0,0,0,.26))}
-.cbt-cheer.b1 .cbt-cup,.cbt-cheer.b2 .cbt-cup{color:rgba(255,255,255,.52)}
+.cbt-cheertop{display:flex;align-items:center;justify-content:center;gap:16px;margin-bottom:14px}
+.cbt-cup{flex:none;color:var(--tone);filter:drop-shadow(0 2px 5px rgba(22,48,74,.16))}
 .cbt-badge{
   display:inline-block;font-family:var(--serif);font-size:1.02rem;font-weight:700;
-  color:#3A2A08;background:var(--gold);border-radius:999px;padding:7px 20px;margin:0 0 11px;
+  color:#fff;background:var(--tone);border-radius:999px;padding:7px 20px;margin:0 0 11px;
 }
-.cbt-cheer.b1 .cbt-badge,.cbt-cheer.b2 .cbt-badge{background:#F3E7D2;color:#5A3310}
-.cbt-cheermsg{font-size:.93rem;color:rgba(255,255,255,.86);margin:0;max-width:40ch;margin-inline:auto}
+.cbt-cheermsg{font-size:.92rem;color:var(--body);margin:0;max-width:40ch;margin-inline:auto}
 
 /* ---------- result ka sabse upar wala card ----------
    Paanch darje, har ek ka apna rang. Rang hi pehla jawab hai —
@@ -1630,25 +1652,29 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-ringwrap{flex:none;position:relative;width:126px;height:126px}
 .cbt-ring{width:126px;height:126px;transform:rotate(-90deg)}
 .cbt-ring circle{fill:none;stroke-width:10;stroke-linecap:round}
-.cbt-ring .track{stroke:rgba(255,255,255,.16)}
+.cbt-ring .track{stroke:rgba(22,48,74,.12)}
 .cbt-ring .fill{
-  stroke:#fff;stroke-dasharray:327;stroke-dashoffset:327;
+  stroke:var(--tone);stroke-dasharray:327;stroke-dashoffset:327;
   transition:stroke-dashoffset 1.2s cubic-bezier(.25,.85,.3,1);
 }
-.cbt-cheer.b5 .cbt-ring .fill{stroke:var(--gold)}
 .cbt-ringtxt{
   position:absolute;inset:0;display:flex;flex-direction:column;
   align-items:center;justify-content:center;text-align:center;
 }
-.cbt-ringtxt em{font-style:normal;font-size:.63rem;letter-spacing:.1em;text-transform:uppercase;opacity:.68;font-weight:700}
-.cbt-ringtxt b{font-family:var(--serif);font-size:1.62rem;font-weight:600;line-height:1.1}
-.cbt-ringtxt span{font-size:.72rem;letter-spacing:.09em;opacity:.78;font-weight:700}
+.cbt-ringtxt em{font-style:normal;font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mcq-ink-faint);font-weight:700}
+.cbt-ringtxt b{
+  font-family:var(--serif);font-size:1.62rem;font-weight:600;line-height:1.1;color:var(--ink);
+  /* 33.75/50 jaisa lamba score chhote gol me na phoote */
+  max-width:94px;font-size:clamp(1.05rem,1.62rem,1.62rem);
+}
+.cbt-ringtxt b.is-long{font-size:1.18rem}
+.cbt-ringtxt span{font-size:.72rem;letter-spacing:.09em;color:var(--tone);font-weight:700}
 .cbt-best{
   display:flex;flex-wrap:wrap;justify-content:center;gap:5px 15px;margin:14px 0 0;
-  font-size:.83rem;color:rgba(255,255,255,.9);
-  background:rgba(255,255,255,.12);border-radius:10px;padding:8px 14px;
+  font-size:.82rem;color:var(--body);background:#fff;
+  border:1px solid var(--border);border-radius:10px;padding:8px 14px;
 }
-.cbt-best b{color:#fff}
+.cbt-best b{color:var(--ink)}
 
 /* ---------- raftaar ki patti ---------- */
 .cbt-pace{
@@ -1709,9 +1735,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
   color:rgba(255,255,255,.66);margin-bottom:7px;
 }
+/* Card ab halka hai, isliye ye line gehri honi chahiye — pehle ye
+   safed thi, jab card gehra tha, aur cream par gayab ho jati thi. */
 .cbt-negnote{
-  font-size:.85rem;color:rgba(255,255,255,.8);margin:10px 0 0;
-  border-left:2px solid rgba(255,255,255,.3);padding-left:11px;
+  font-size:.85rem;color:var(--body);margin:10px auto 0;max-width:36ch;
+  border-left:2px solid var(--tone);padding-left:11px;text-align:left;
 }
 
 /* ---------- result ke saare card ek jaise ---------- */
@@ -1731,10 +1759,18 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-advice li:last-child{margin-bottom:0}
 
 /* ---------- band topic card: asli aankde, par dhundhle ---------- */
-.cbt-two-wide{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr)}
+.cbt-two-wide{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);align-items:stretch}
+.cbt-two-wide > .cbt-card,.cbt-sw > .cbt-card{display:flex;flex-direction:column}
+.cbt-sw{grid-template-rows:auto 1fr}
+/* Har strength/area par wahi patli patti jo topic table me hai */
+.cbt-liTop{display:flex;align-items:baseline;gap:10px;width:100%}
+.cbt-liTop em{margin-left:auto;font-style:normal;font-size:.8rem;color:var(--mcq-ink-faint);white-space:nowrap}
+.cbt-list li{flex-direction:column;align-items:stretch;gap:7px}
+.cbt-list li::before{display:none}
+.cbt-list li .cbt-tbar{min-width:0}
 /* Donut wale card me kam cheezein hain — barabar lamba rakho, warna
    bagal wale ke bagal me aadha khali dikhta hai. */
-.cbt-two-an{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);align-items:stretch}
+.cbt-two-an{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}
 .cbt-two-an > .cbt-card{display:flex;flex-direction:column}
 .cbt-two-an .cbt-anrow{flex:1;align-content:center}
 .cbt-sw{display:grid;gap:14px;align-content:start}
@@ -1774,33 +1810,117 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-ic.low{background:#FBEAEA;color:var(--mcq-red)}
 
 /* ---------- gol hisaab aur chaabi, ek line me ---------- */
-.cbt-anrow{display:flex;flex-wrap:wrap;align-items:center;gap:20px}
-.cbt-anrow .cbt-donutwrap{margin:0}
-.cbt-anrow .cbt-key{flex:1;min-width:150px}
+/* Gol dabbe ke andar bhara hua dikhe — upar bada chakra, neeche chaabi. */
+.cbt-anrow{display:flex;flex-direction:column;align-items:center;gap:16px;padding:4px 0 2px}
+/* .cbt-donutwrap ka naap neeche dobara likha hai, isliye yahan do class
+   jod kar rakhte hain — warna wo baad wala rule ise daba deta hai. */
+.cbt-donutwrap.cbt-donutbig{width:210px;height:210px;max-width:100%;margin:0}
+.cbt-donutbig .cbt-donut{width:100%;height:100%}
+.cbt-donutbig .cbt-donut circle{stroke-width:17}
+.cbt-donutbig .cbt-donuttxt b{font-size:2.3rem}
+.cbt-donutbig .cbt-donuttxt span{font-size:.72rem}
+.cbt-anrow .cbt-key{width:100%;display:grid;gap:8px}
 
-/* ---------- is age me aage ka rasta ---------- */
-.cbt-journey .cbt-steps{
-  list-style:none;margin:6px 0 0;padding:0;
-  display:flex;align-items:flex-start;gap:0;position:relative;
+/* ---------- 9. aage ka rasta: ek patli patti, sifar se sau tak ---------- */
+.cbt-journey{margin-bottom:14px}
+.cbt-track{
+  position:relative;height:12px;border-radius:999px;
+  background:var(--tint);border:1px solid var(--border);
+  margin:46px 0 58px;
 }
-/* Qadmo ke beech ki lakeer — pehle qadam se aakhri tak */
-.cbt-journey .cbt-steps::before{
-  content:"";position:absolute;left:12%;right:12%;top:15px;height:3px;
+.cbt-trackfill{
+  display:block;height:100%;border-radius:999px;
+  background:linear-gradient(90deg,var(--sage),var(--teal));
+  transition:width 1.1s cubic-bezier(.25,.85,.3,1);
+}
+/* Raste ke padav. Jo paar ho gaya wo teal, jo baaki hai wo halka. */
+.cbt-tick{position:absolute;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:1}
+.cbt-tick i{
+  display:block;width:13px;height:13px;border-radius:50%;margin:0 auto;
+  background:#fff;border:2.5px solid var(--border);
+}
+.cbt-tick.is-past i{background:var(--teal);border-color:var(--teal)}
+.cbt-tick b{
+  position:absolute;top:19px;left:50%;transform:translateX(-50%);
+  font-size:.72rem;font-weight:700;color:var(--mcq-ink-faint);
+}
+.cbt-tick em{
+  position:absolute;top:33px;left:50%;transform:translateX(-50%);
+  font-style:normal;font-size:.71rem;color:var(--mcq-ink-faint);white-space:nowrap;
+}
+.cbt-tick.is-past b,.cbt-tick.is-past em{color:var(--teal)}
+/* Jahan reader abhi hai */
+.cbt-you{position:absolute;top:50%;transform:translate(-50%,-50%);z-index:3}
+.cbt-you i{
+  display:block;width:21px;height:21px;border-radius:50%;margin:0 auto;
+  background:var(--teal);border:3px solid #fff;
+  box-shadow:0 2px 8px rgba(15,118,110,.55);
+}
+.cbt-you b{
+  position:absolute;bottom:22px;left:50%;transform:translateX(-50%);
+  font-size:.74rem;font-weight:700;color:#fff;background:var(--teal);
+  border-radius:999px;padding:4px 11px;white-space:nowrap;
+}
+/* p{max-width:74ch} upar laga hai — isliye yahan hatana padta hai,
+   warna "100%" patti ke ant me nahi, beech me aa jata hai. */
+.cbt-scale{
+  display:flex;justify-content:space-between;margin:0;max-width:none;
+  font-size:.72rem;font-weight:700;color:var(--mcq-ink-faint);
+}
+
+/* ---------- 10. English literature me darja ---------- */
+.cbt-levelnow{
+  font-family:var(--serif);font-size:1.5rem;font-weight:600;
+  color:var(--teal);margin:2px 0 12px;
+}
+.cbt-ladder{
+  list-style:none;margin:0 0 12px;padding:0;
+  display:flex;align-items:flex-start;position:relative;
+}
+.cbt-ladder::before{
+  content:"";position:absolute;left:10%;right:10%;top:7px;height:3px;
   background:var(--border);border-radius:999px;
 }
-.cbt-steps li{
-  flex:1;display:flex;flex-direction:column;align-items:center;
-  text-align:center;position:relative;z-index:1;gap:5px;
+.cbt-ladder li{
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:7px;
+  position:relative;z-index:1;text-align:center;
 }
-.cbt-steps li i{
-  display:flex;align-items:center;justify-content:center;font-style:normal;
-  width:33px;height:33px;border-radius:50%;font-size:.72rem;font-weight:700;
-  background:#fff;border:2px solid var(--border);color:var(--mcq-ink-faint);
+.cbt-ladder li i{
+  width:17px;height:17px;border-radius:50%;
+  background:#fff;border:2.5px solid var(--border);
 }
-.cbt-steps li b{font-size:.82rem;font-weight:600;color:var(--ink);line-height:1.3}
-.cbt-steps li span{font-size:.74rem;color:var(--teal);font-weight:700}
-.cbt-steps li.is-here i{background:var(--teal);border-color:var(--teal);color:#fff;font-size:.85rem}
-.cbt-steps li.is-here b{color:var(--teal)}
+.cbt-ladder li b{font-size:.74rem;font-weight:600;color:var(--mcq-ink-faint)}
+.cbt-ladder li.is-past i{background:var(--teal-soft);border-color:var(--teal)}
+.cbt-ladder li.is-past b{color:var(--body)}
+.cbt-ladder li.is-now i{background:var(--teal);border-color:var(--teal);transform:scale(1.25)}
+.cbt-ladder li.is-now b{color:var(--teal);font-weight:700}
+.cbt-levelnext{font-size:.85rem;color:var(--mcq-ink-faint);margin:0}
+
+/* ---------- 11. roz ki laga-taar — abhi band ---------- */
+.cbt-streak{background:var(--tint);border-style:dashed;margin-bottom:16px}
+.cbt-streakhead{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:14px}
+.cbt-streakhead h2{margin:0}
+.cbt-streaklink{
+  margin-left:auto;font-size:.82rem;font-weight:700;color:#7A5A16;
+  background:var(--cream);border:1px solid var(--gold);border-radius:999px;padding:5px 14px;
+}
+.cbt-streaklink:hover{background:var(--gold);color:#2F2206}
+.cbt-streakrow{display:flex;flex-wrap:wrap;align-items:center;gap:16px 26px}
+.cbt-streaknum b{
+  display:block;font-family:var(--serif);font-size:1.5rem;font-weight:600;
+  color:var(--mcq-ink-faint);line-height:1.1;
+}
+.cbt-streaknum span{
+  display:block;font-size:.7rem;font-weight:700;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--mcq-ink-faint);
+}
+.cbt-streakweek{display:flex;gap:7px;margin-inline:auto}
+.cbt-streakweek i{
+  width:31px;height:31px;border-radius:50%;font-style:normal;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.74rem;font-weight:700;color:var(--mcq-ink-faint);
+  background:#fff;border:1.5px dashed var(--border);
+}
 
 /* ---------- topic ke hisaab se ---------- */
 /* Upar table{} par min-width:460px aur safed background laga hua hai —
@@ -1865,7 +1985,8 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-key .k-skip{background:#D9D4C4}
 
 /* ---------- sawal ki patti ---------- */
-.cbt-qgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
+.cbt-qgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:7px;align-content:center;flex:1}
+.cbt-qcell{font-size:.72rem}
 .cbt-qcell{
   font:inherit;font-size:.76rem;font-weight:700;aspect-ratio:1;
   display:flex;align-items:center;justify-content:center;
@@ -1998,9 +2119,15 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-two,.cbt-three,.cbt-two-wide,.cbt-two-an,.cbt-top{grid-template-columns:1fr}
   .cbt-lockbox{position:static;margin-top:-28px}
   .cbt-blur{filter:blur(4px)}
-  .cbt-steps{flex-wrap:wrap;gap:14px}
-  .cbt-steps li{flex:1 1 44%}
-  .cbt-journey .cbt-steps::before{display:none}
+  .cbt-track{margin:44px 0 54px}
+  .cbt-tick em{display:none}
+  .cbt-streakrow{gap:14px 18px}
+  .cbt-streakweek{margin-inline:0;order:3;flex:1 1 100%}
+  .cbt-streaklink{margin-left:0;flex:1 1 100%;text-align:center}
+  .cbt-ladder li b{font-size:.68rem}
+  .cbt-donutwrap.cbt-donutbig{width:168px;height:168px}
+  .cbt-donutbig .cbt-donuttxt b{font-size:1.9rem}
+  .cbt-head{padding:18px 18px;gap:12px}
   .cbt-after .cbt-btn{flex:1 1 100%}
   .cbt-qgrid{grid-template-columns:repeat(8,minmax(0,1fr))}
 
@@ -2037,7 +2164,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 @media (prefers-reduced-motion:reduce){
   .cbt-begin:hover,.cbt-btn:hover,.cbt-submit:hover,.cbt-cell:hover{transform:none}
   /* Gol bina bhare seedha poora dikh jata hai — ginti ka tamasha nahi. */
-  .cbt-ring .fill{transition:none}
+  .cbt-ring .fill,.cbt-trackfill{transition:none}
 }
 /* ---------- chhap kar rakhne layak ----------
    Sirf report card jata hai: score, ginti, topic ka hisaab, kya majboot
@@ -2049,6 +2176,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-card .sub{display:none}
   body{background:#fff}
   .cbt-body{padding:0}
+  .cbt-streak,.cbt-streaklink{display:none !important}
   .cbt-cheer{background:#fff;color:#000;border:2px solid #000;page-break-inside:avoid}
   .cbt-cheer.b5::before{display:none}
   .cbt-cup{color:#000;filter:none}
