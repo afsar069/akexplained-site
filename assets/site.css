@@ -1571,22 +1571,94 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-submit:hover{background:#9A330A;transform:translateY(-2px)}
 
 /* ---------- result ---------- */
+/* ---------- result ka sabse upar wala card ----------
+   Paanch darje, har ek ka apna rang. Rang hi pehla jawab hai —
+   padhne se pehle hi pata chal jata hai paper kaisa gaya. */
 .cbt-score{
-  background:var(--mcq-teal-deep);color:#fff;border-radius:16px;
+  --band:#1C5048;
+  position:relative;overflow:hidden;
+  background:var(--band);color:#fff;border-radius:16px;
   padding:26px 28px;margin-bottom:18px;
-  display:flex;flex-wrap:wrap;align-items:center;gap:24px;
+  display:flex;flex-wrap:wrap;align-items:center;gap:26px;
 }
-.cbt-score-big{flex:none}
-.cbt-score-big b{
-  display:block;font-family:var(--serif);font-size:3rem;font-weight:600;line-height:1;
+.cbt-score.b1{--band:#7A2E2E}
+.cbt-score.b2{--band:#8A4A18}
+.cbt-score.b3{--band:#6B5416}
+.cbt-score.b4{--band:#1C5048}
+.cbt-score.b5{--band:#11312F}
+/* Sabse upar wale darje par halki sunehri chamak — baaki par kuch nahi,
+   warna taareef ka koi matlab hi nahi rehta. */
+.cbt-score.b5::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(130% 90% at 88% 0%,rgba(185,137,47,.42),transparent 62%);
 }
-.cbt-score-big span{font-size:.82rem;color:#9FBDB9;letter-spacing:.07em;text-transform:uppercase;font-weight:700}
-.cbt-score-txt{flex:1 1 300px;min-width:0}
-.cbt-score-txt h1{font-family:var(--serif);font-size:1.5rem;font-weight:600;color:#fff;margin-bottom:5px}
-.cbt-score-txt p{color:#C6DBD8;font-size:.95rem;margin:0;max-width:56ch}
+.cbt-score > *{position:relative}
+
+/* Ghadi ki tarah bhara hua gol — ginti ke saath bharta hai */
+.cbt-ringwrap{flex:none;position:relative;width:134px;height:134px}
+.cbt-ring{width:134px;height:134px;transform:rotate(-90deg)}
+.cbt-ring circle{fill:none;stroke-width:10;stroke-linecap:round}
+.cbt-ring .track{stroke:rgba(255,255,255,.16)}
+.cbt-ring .fill{
+  stroke:#fff;stroke-dasharray:327;stroke-dashoffset:327;
+  transition:stroke-dashoffset 1.2s cubic-bezier(.25,.85,.3,1);
+}
+.cbt-score.b5 .cbt-ring .fill{stroke:var(--gold)}
+.cbt-ringtxt{
+  position:absolute;inset:0;display:flex;flex-direction:column;
+  align-items:center;justify-content:center;text-align:center;
+}
+.cbt-ringtxt b{font-family:var(--serif);font-size:1.9rem;font-weight:600;line-height:1}
+.cbt-ringtxt span{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;opacity:.72;font-weight:700;margin-top:3px}
+
+.cbt-score-txt{flex:1 1 280px;min-width:0}
+.cbt-score-txt h1{font-family:var(--serif);font-size:1.6rem;font-weight:600;color:#fff;margin-bottom:6px}
+.cbt-score-txt p{color:rgba(255,255,255,.84);font-size:.96rem;margin:0;max-width:54ch}
+.cbt-best{
+  display:inline-flex;flex-wrap:wrap;gap:6px 16px;margin-top:14px;
+  font-size:.85rem;color:rgba(255,255,255,.9);
+  background:rgba(255,255,255,.1);border-radius:10px;padding:8px 15px;
+}
+.cbt-best b{color:#fff}
+
+/* ---------- raftaar ki patti ---------- */
+.cbt-pace{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;
+  background:var(--card-line);border:1px solid var(--card-line);
+  border-radius:13px;overflow:hidden;margin-bottom:18px;padding:0;
+}
+.cbt-pace div{background:var(--card-paper);padding:14px 18px}
+.cbt-pace b{display:block;font-family:var(--serif);font-size:1.18rem;font-weight:600;color:var(--ink)}
+.cbt-pace span{
+  display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--mcq-ink-faint);margin-bottom:3px;
+}
+.cbt-pace em{display:block;font-style:normal;font-size:.8rem;color:var(--mcq-ink-faint);margin-top:2px}
+
+/* ---------- pichhli baar kaisa gaya ---------- */
+.cbt-hist{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:13px;padding:16px 20px;margin-bottom:18px;
+}
+.cbt-hist h2{font-family:var(--serif);font-size:1rem;font-weight:700;color:var(--ink);margin-bottom:3px}
+.cbt-hist .sub{font-size:.82rem;color:var(--mcq-ink-faint);margin-bottom:14px}
+.cbt-bars{display:flex;align-items:flex-end;gap:10px;height:76px}
+.cbt-bars div{
+  flex:1;max-width:46px;display:flex;flex-direction:column;
+  align-items:center;justify-content:flex-end;height:100%;
+}
+.cbt-bars i{
+  display:block;width:100%;min-height:3px;border-radius:5px 5px 0 0;
+  background:var(--teal-soft);border:1px solid var(--teal);border-bottom:0;
+}
+.cbt-bars .is-now i{background:var(--teal)}
+.cbt-bars .is-best i{background:var(--gold);border-color:var(--gold)}
+.cbt-bars small{font-size:.7rem;color:var(--mcq-ink-faint);margin-top:5px;white-space:nowrap}
+.cbt-bars .is-now small{color:var(--teal);font-weight:700}
 
 .cbt-nums{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-bottom:18px;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;
+  margin-bottom:18px;padding:0;
 }
 .cbt-num{background:var(--card-paper);border:1px solid var(--card-line);border-radius:13px;padding:15px 18px}
 .cbt-num b{display:block;font-family:var(--serif);font-size:1.55rem;font-weight:600;color:var(--ink)}
@@ -1663,6 +1735,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 @media (max-width:620px){
   .cbt-facts,.cbt-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cbt-pace{grid-template-columns:1fr}
+  .cbt-score{padding:20px 18px;gap:18px}
+  .cbt-ringwrap,.cbt-ring{width:112px;height:112px}
   .cbt-bar{position:static;gap:10px}
   .cbt-pal{grid-template-columns:repeat(6,minmax(0,1fr))}
   .cbt-qcard{padding:18px 17px}
@@ -1673,9 +1748,13 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 @media (prefers-reduced-motion:reduce){
   .cbt-begin:hover,.cbt-btn:hover,.cbt-submit:hover,.cbt-cell:hover{transform:none}
+  /* Gol bina bhare seedha poora dikh jata hai — ginti ka tamasha nahi. */
+  .cbt-ring .fill{transition:none}
 }
 @media print{
   .cbt-bar,.cbt-side,.cbt-nav,.cbt-filters,.cbt-after,.cbt-submit{display:none !important}
   .cbt-score{background:#fff;color:#000}
-  .cbt-score-txt h1,.cbt-score-big b{color:#000}
+  .cbt-score.b5::before{display:none}
+  .cbt-score-txt h1,.cbt-ringtxt b,.cbt-score-txt p,.cbt-best{color:#000}
+  .cbt-ring .fill{stroke:#000}
 }

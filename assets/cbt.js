@@ -40,6 +40,7 @@
   var root = $('[data-cbt]');
   if (!root) return;
 
+  var arrived = 0;             /* is sawal par kab pahunche */
   var paper = null;            /* file se aaya hua set */
   var Q = [];                  /* is attempt ke sawal */
   var key = '';
@@ -174,8 +175,8 @@
       '</div>';
 
     $('#cbtBegin').addEventListener('click', function () {
-      st = { pick: {}, marked: {}, seen: {}, at: 0, done: false,
-             count: Q.length, endsAt: Date.now() + minutes * 60000 };
+      st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
+             startedAt: Date.now(), endsAt: Date.now() + minutes * 60000 };
       save();
       runTest();
     });
@@ -208,8 +209,8 @@
       '</div>';
 
     $('#cbtBegin').addEventListener('click', function () {
-      st = { pick: {}, marked: {}, seen: {}, at: 0, done: false,
-             count: Q.length, endsAt: Date.now() + p.minutes * 60000 };
+      st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
+             startedAt: Date.now(), endsAt: Date.now() + p.minutes * 60000 };
       save();
       runTest();
     });
@@ -278,6 +279,7 @@
     document.addEventListener('keydown', keys);
 
     buildPal();
+    arrived = Date.now();
     go(st.at || 0);
     startClock();
   }
@@ -293,8 +295,21 @@
     });
   }
 
+  /* Jo sawal chhod rahe hain, uske khate me beeta hua waqt jod do.
+     Isi se baad me pata chalta hai kis sawal ne sabse zyada waqt liya. */
+  function bank() {
+    if (!arrived) return;
+    var sec = Math.round((Date.now() - arrived) / 1000);
+    if (sec > 0 && sec < 3600) {
+      st.spent = st.spent || {};
+      st.spent[st.at] = (st.spent[st.at] || 0) + sec;
+    }
+    arrived = Date.now();
+  }
+
   function go(i) {
     if (i < 0 || i >= Q.length) return;
+    bank();
     st.at = i;
     st.seen[i] = 1;
     save();
@@ -410,6 +425,8 @@
   }
 
   function finish(ranOut) {
+    bank();
+    arrived = 0;
     stopClock();
     document.removeEventListener('keydown', keys);
     st.done = true;
@@ -437,16 +454,20 @@
     var pc = Math.round(right / Q.length * 100);
     var acc = answered ? Math.round(right / answered * 100) : 0;
 
-    var band = pc >= 80 ? ['Very strong.', 'You have this age well in hand. Keep it warm with a quick run every week.']
-      : pc >= 60 ? ['A good paper.', 'The ground is solid. The gaps below are small and worth closing one at a time.']
-      : pc >= 40 ? ['Halfway there.', 'You know the shape of the age but not yet the detail. Read the notes again, then take this set once more.']
-      : ['Early days.', 'Go back to the notes first. This set will feel very different on a second reading.'];
+    var g = grade(pc);
+    var past = history(right);
 
     root.innerHTML =
-      '<div class="cbt-score">' +
-        '<div class="cbt-score-big"><b>' + right + '/' + Q.length + '</b><span>Your score</span></div>' +
+      '<div class="cbt-score ' + g.cls + '">' +
+        '<div class="cbt-ringwrap">' +
+          '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
+            '<circle class="track" cx="60" cy="60" r="52"></circle>' +
+            '<circle class="fill" cx="60" cy="60" r="52"></circle>' +
+          '</svg>' +
+          '<p class="cbt-ringtxt"><b>' + right + '/' + Q.length + '</b><span>' + pc + '%</span></p>' +
+        '</div>' +
         '<div class="cbt-score-txt">' +
-          '<h1>' + band[0] + '</h1><p>' + band[1] + '</p>' +
+          '<h1>' + g.name + '</h1><p>' + g.line + '</p>' + past.banner +
         '</div>' +
       '</div>' +
 
@@ -454,9 +475,11 @@
         '<div class="cbt-num ok"><b>' + right + '</b><span>Right</span></div>' +
         '<div class="cbt-num no"><b>' + wrong + '</b><span>Wrong</span></div>' +
         '<div class="cbt-num is-skip"><b>' + skipped + '</b><span>Not answered</span></div>' +
-        '<div class="cbt-num"><b>' + pc + '%</b><span>Score</span></div>' +
+        '<div class="cbt-num"><b>' + acc + '%</b><span>Of those answered</span></div>' +
       '</section>' +
 
+      pace() +
+      past.chart +
       advice(right, wrong, skipped, acc) +
 
       '<div class="cbt-filters" role="group" aria-label="Which questions to show">' +
@@ -491,10 +514,139 @@
       });
     });
 
+    /* Gol ko agle frame me bharte hain — turant set karne par
+       browser shuruati haalat dikhata hi nahi aur animation gayab ho jati hai. */
+    var ring = $('.cbt-ring .fill');
+    if (ring) {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ring.style.strokeDashoffset = (327 - 327 * pc / 100).toFixed(1);
+        });
+      });
+    }
+
     $('#cbtAgain').addEventListener('click', function () {
       try { localStorage.removeItem(key); } catch (e) {}
       location.href = location.pathname;
     });
+  }
+
+  /* ---------------------------------------------------------
+     Paanch darje
+     Naam aur lines sirf yahan hain — badalna ho to bas yahi
+     paanch panktiyan badalni hain, aur kahin kuch nahi.
+     Rang CSS me hain: .cbt-score.b1 se .b5 tak.
+     --------------------------------------------------------- */
+  function grade(pc) {
+    if (pc >= 85) return { cls: 'b5', name: 'Outstanding',
+      line: 'Almost nothing got past you. Keep it warm with a short run every week, and move on to the next age.' };
+    if (pc >= 70) return { cls: 'b4', name: 'Strong',
+      line: 'A strong paper. Close the few gaps below and this age is as good as finished.' };
+    if (pc >= 55) return { cls: 'b3', name: 'Good ground',
+      line: 'You know this age. What is left is the fine print \u2014 the dates, the manuscripts, who signed what.' };
+    if (pc >= 40) return { cls: 'b2', name: 'Finding your feet',
+      line: 'The shape of the age is there. The detail is what is missing, and detail is the easiest thing to fix.' };
+    return { cls: 'b1', name: 'Begin again',
+      line: 'This one got away. Read the notes through once, then come straight back \u2014 the second run is always different.' };
+  }
+
+  /* ---------------------------------------------------------
+     Raftaar
+     Asli exam me waqt hi haraata hai, isliye wo dikhana zaroori
+     hai. Sab kuch us attempt ke apne hisaab se nikla hai.
+     --------------------------------------------------------- */
+  function clock(sec) {
+    var m = Math.floor(sec / 60), r = sec % 60;
+    return m ? m + ' min ' + (r ? r + ' sec' : '') : sec + ' sec';
+  }
+
+  function pace() {
+    var used = (st.startedAt && st.endedAt)
+      ? Math.max(1, Math.round((st.endedAt - st.startedAt) / 1000)) : 0;
+    if (!used) return '';   /* purane attempt me ye hisaab nahi tha */
+
+    var allowed = st.endsAt && st.startedAt
+      ? Math.round((st.endsAt - st.startedAt) / 1000) : 0;
+    var each = Math.max(1, Math.round(used / Q.length));
+
+    /* Sabse lamba sawal — par tabhi dikhao jab wo sach me alag se bada ho */
+    var worst = -1, worstSec = 0;
+    Object.keys(st.spent || {}).forEach(function (i) {
+      if (st.spent[i] > worstSec) { worstSec = st.spent[i]; worst = +i; }
+    });
+    /* Teesra khana: koi ek sawal sach me bhaari pada ho to wo dikhao.
+       Warna ghadi par kitna bacha tha — wo khud ek kaam ki baat hai, aur
+       doosre khane ki nakal nahi hoti. */
+    var left = allowed ? Math.max(0, allowed - used) : 0;
+    var slow = (worst >= 0 && worstSec >= Math.max(20, each * 2))
+      ? '<div><span>Longest on one</span><b>' + clock(worstSec) +
+        '</b><em>Question ' + (worst + 1) + '</em></div>'
+      : '<div><span>Clock left</span><b>' + (left ? clock(left) : 'None') +
+        '</b><em>' + (left ? 'still to spare' : 'you used every minute') + '</em></div>';
+
+    return '<section class="cbt-pace" aria-label="How the time went">' +
+      '<div><span>Time used</span><b>' + clock(used) + '</b>' +
+        (allowed ? '<em>of ' + clock(allowed) + ' allowed</em>' : '') + '</div>' +
+      '<div><span>Per question</span><b>' + each + ' sec</b><em>on average</em></div>' +
+      slow +
+      '</section>';
+  }
+
+  /* ---------------------------------------------------------
+     Pichhle attempt
+     Alag chabhi me (akqh:, akq: nahi), taaki hub ki ginti par
+     koi asar na pade. Sirf is browser me, aakhri dus attempt.
+     --------------------------------------------------------- */
+  function history(right) {
+    /* Sirf-galat wali dobara-koshish set ki history me nahi jati: uska
+       total alag hota hai (4 me se 4), aur wo poore paper ke 38 me se 50
+       ke saath ek hi chart me rakhna galat tasveer deta hai. */
+    if (key.indexOf('akqx:') === 0) return { banner: '', chart: '' };
+
+    var hkey = 'akqh:' + paper.setId + ':v1';
+    var list = [];
+    try { list = JSON.parse(localStorage.getItem(hkey) || '[]'); } catch (e) {}
+    if (!Array.isArray(list)) list = [];
+
+    /* Ek hi attempt do baar darj na ho — result page dobara khul sakta hai. */
+    var stamp = st.endedAt || Date.now();
+    if (!list.some(function (a) { return a.at === stamp; })) {
+      list.push({ at: stamp, score: right, total: Q.length });
+      list = list.slice(-10);
+      try { localStorage.setItem(hkey, JSON.stringify(list)); } catch (e) {}
+    }
+
+    if (list.length < 2) return { banner: '', chart: '' };
+
+    var best = list.reduce(function (a, b) { return b.score > a.score ? b : a; });
+    var prev = list[list.length - 2];
+    var diff = right - prev.score;
+
+    var move = diff > 0 ? '<b>' + diff + ' better</b> than last time'
+      : diff < 0 ? '<b>' + (-diff) + ' fewer</b> than last time'
+      : 'the same as last time';
+
+    var banner = '<p class="cbt-best">' +
+      '<span>Attempt <b>' + list.length + '</b></span>' +
+      '<span>Your best: <b>' + best.score + '/' + best.total + '</b></span>' +
+      '<span>' + move + '</span>' +
+      '</p>';
+
+    var top = Math.max(1, best.score);
+    var chart = '<section class="cbt-hist" aria-label="Your past attempts at this set">' +
+      '<h2>Every time you have taken this set</h2>' +
+      '<p class="sub">Kept in this browser only. Oldest on the left.</p>' +
+      '<div class="cbt-bars">' +
+      list.map(function (a, i) {
+        var now = i === list.length - 1;
+        var isBest = !now && a.score === best.score;
+        return '<div class="' + (now ? 'is-now' : isBest ? 'is-best' : '') + '">' +
+          '<i style="height:' + Math.max(4, Math.round(a.score / top * 100)) + '%"></i>' +
+          '<small>' + a.score + '</small></div>';
+      }).join('') +
+      '</div></section>';
+
+    return { banner: banner, chart: chart };
   }
 
   /* Salah sirf usi par jo is paper me asal me hua. */
@@ -571,7 +723,7 @@
       var raw = localStorage.getItem(key);
       var d = raw ? JSON.parse(raw) : null;
       if (!d || typeof d !== 'object') return null;
-      d.pick = d.pick || {}; d.marked = d.marked || {}; d.seen = d.seen || {};
+      d.pick = d.pick || {}; d.marked = d.marked || {}; d.seen = d.seen || {}; d.spent = d.spent || {};
       return d;
     } catch (e) { return null; }
   }
