@@ -18,7 +18,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "The Vercelli Book holds Andreas, Elene and The Fates of the Apostles alongside The Dream of the Rood.",
-      "explanation_hi": "Vercelli Book me 'Dream of the Rood' ke saath-saath 'Andreas', 'Elene' aur 'The Fates of the Apostles' ye sabhi kavitayein shamil hain."
+      "explanation_hi": "Vercelli Book me 'Dream of the Rood' ke saath-saath 'Andreas', 'Elene' aur 'The Fates of the Apostles' ye sabhi kavitayein shamil hain.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "The manuscript 'Cotton Vitellius A.xv' is primarily famous for containing which epic?",
@@ -30,7 +32,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Cotton Vitellius A.xv is known above all for holding both Beowulf and Judith.",
-      "explanation_hi": "'Cotton Vitellius A.xv' manuscript mukhya roop se 'Beowulf' aur 'Judith' dono kavitayo ko sametne ke liye prasiddh hai."
+      "explanation_hi": "'Cotton Vitellius A.xv' manuscript mukhya roop se 'Beowulf' aur 'Judith' dono kavitayo ko sametne ke liye prasiddh hai.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "In Beowulf, what is the term used for the 'blood-price' or 'man-price' paid to a family for a killing?",
@@ -42,7 +46,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "The fixed payment made to a dead man's family to settle a killing is called wergild, the 'man-price'.",
-      "explanation_hi": "'Beowulf' me kisi hatya ke badle parivar ko chukaye jane wale 'blood-price' ya 'man-price' (muavze) ko 'Wergild' kaha jata hai."
+      "explanation_hi": "'Beowulf' me kisi hatya ke badle parivar ko chukaye jane wale 'blood-price' ya 'man-price' (muavze) ko 'Wergild' kaha jata hai.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Which Anglo-Saxon poem is considered the earliest autobiographical poem in English literature, featuring a wandering minstrel?",
@@ -54,7 +60,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Widsith is usually called the earliest autobiographical poem in English, spoken by a wandering minstrel.",
-      "explanation_hi": "'Widsith' ko English literature ki sabse purani autobiographical kavita mana jata hai, jisme ek ghumantu charan (wandering minstrel) ka varnan hai."
+      "explanation_hi": "'Widsith' ko English literature ki sabse purani autobiographical kavita mana jata hai, jisme ek ghumantu charan (wandering minstrel) ka varnan hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "King Alfred translated several Latin works into Old English. Which of these was NOT translated by him or under his direct supervision?",
@@ -66,7 +74,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "The Ormulum was not translated by Alfred or under his direction — it belongs to the Middle English period.",
-      "explanation_hi": "'The Ormulum' ka anuvad King Alfred ya unke nirdeshan me nahi hua tha (yeh Middle English kaal ki rachna hai)."
+      "explanation_hi": "'The Ormulum' ka anuvad King Alfred ya unke nirdeshan me nahi hua tha (yeh Middle English kaal ki rachna hai).",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "Cynewulf is known for signing his name in runic characters in his poems. In how many extant poems does his signature appear?",
@@ -78,7 +88,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "Cynewulf's runic signature appears in four surviving poems.",
-      "explanation_hi": "Kavi Cynewulf ke runic aksharo wale hastakshar (signature) kul 4 uplabdh (extant) kavitayo me milte hain."
+      "explanation_hi": "Kavi Cynewulf ke runic aksharo wale hastakshar (signature) kul 4 uplabdh (extant) kavitayo me milte hain.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The 'Ubi Sunt' motif, reflecting on the transience of life, is most prominently found in which poem?",
@@ -90,7 +102,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The 'ubi sunt' motif, on how everything earthly passes away, is strongest in The Wanderer.",
-      "explanation_hi": "Jeevan ki nashwarta (transience of life) ko darshane wala 'Ubi Sunt' motif sabse pramukh roop se 'The Wanderer' kavita me milta hai."
+      "explanation_hi": "Jeevan ki nashwarta (transience of life) ko darshane wala 'Ubi Sunt' motif sabse pramukh roop se 'The Wanderer' kavita me milta hai.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Which Old English poem is a fragment of a larger epic and deals with the legendary Gothic king Theodoric?",
@@ -102,7 +116,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Waldere is a fragment of a longer epic and touches on the legendary Gothic king Theodoric.",
-      "explanation_hi": "'Waldere' ek bade mahakavya ka ansh (fragment) hai jo pauranik Gothic raja Theodoric se sambandhit hai."
+      "explanation_hi": "'Waldere' ek bade mahakavya ka ansh (fragment) hai jo pauranik Gothic raja Theodoric se sambandhit hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The poem 'The Battle of Brunanburh' is found in which historical record?",
@@ -114,7 +130,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Battle of Brunanburh is preserved inside the Anglo-Saxon Chronicle.",
-      "explanation_hi": "'The Battle of Brunanburh' kavita 'The Anglo-Saxon Chronicle' namak aitihasik record me milti hai."
+      "explanation_hi": "'The Battle of Brunanburh' kavita 'The Anglo-Saxon Chronicle' namak aitihasik record me milti hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Who is the speaker in 'The Dream of the Rood'?",
@@ -126,7 +144,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Both the Cross (the Rood) and the Poet (the Dreamer) speak in the poem.",
-      "explanation_hi": "'The Dream of the Rood' kavita me The Cross (Rood) aur The Poet (Dreamer) dono hi vakta (speaker) ke roop me aate hain."
+      "explanation_hi": "'The Dream of the Rood' kavita me The Cross (Rood) aur The Poet (Dreamer) dono hi vakta (speaker) ke roop me aate hain.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Aelfric of Eynsham is primarily known for his:",
@@ -138,7 +158,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Ælfric of Eynsham is known above all for his Catholic Homilies.",
-      "explanation_hi": "Aelfric of Eynsham mukhya roop se apne 'Catholic Homilies' (dharmik updesho) ke liye jane jate hain."
+      "explanation_hi": "Aelfric of Eynsham mukhya roop se apne 'Catholic Homilies' (dharmik updesho) ke liye jane jate hain.",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "The 'Junius Manuscript' is also known by what other name?",
@@ -150,7 +172,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The Junius Manuscript is also called the Cædmon Manuscript.",
-      "explanation_hi": "'Junius Manuscript' ko 'The Caedmon Manuscript' ke naam se bhi jana jata hai."
+      "explanation_hi": "'Junius Manuscript' ko 'The Caedmon Manuscript' ke naam se bhi jana jata hai.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "Which kenning refers to the 'Sea' in Beowulf?",
@@ -162,7 +186,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Beowulf uses whale-road, swan-road and sail-road, all as kennings for the sea.",
-      "explanation_hi": "'Beowulf' me samudra (Sea) ke liye 'Whale-road', 'Swan-road' aur 'Sail-road' in sabhi kennings ka prayog hua hai."
+      "explanation_hi": "'Beowulf' me samudra (Sea) ke liye 'Whale-road', 'Swan-road' aur 'Sail-road' in sabhi kennings ka prayog hua hai.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "In 'The Battle of Maldon', who is the English leader who allows the Vikings to cross the causeway out of 'ofermōd' (pride)?",
@@ -174,7 +200,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Byrhtnoth, the English leader, lets the Vikings cross the causeway out of ofermōd — too much pride.",
-      "explanation_hi": "'The Battle of Maldon' me English neta Byrhtnoth apne 'ofermōd' (atyadhik abhiman/pride) ke karan Vikings ko rasta par karne ki anumati deta hai."
+      "explanation_hi": "'The Battle of Maldon' me English neta Byrhtnoth apne 'ofermōd' (atyadhik abhiman/pride) ke karan Vikings ko rasta par karne ki anumati deta hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Which of the following works is written in Latin but provides the primary history of the Anglo-Saxon period?",
@@ -186,7 +214,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Ecclesiastical History of the English People is written in Latin, yet it is the chief history of the Anglo-Saxon period.",
-      "explanation_hi": "'Ecclesiastical History of the English People' Latin bhasha me likhi gayi hai, lekin yeh Anglo-Saxon kaal ka pramukh itihas pradan karti hai."
+      "explanation_hi": "'Ecclesiastical History of the English People' Latin bhasha me likhi gayi hai, lekin yeh Anglo-Saxon kaal ka pramukh itihas pradan karti hai.",
+      "topic": "ground",
+      "read": "religion"
     },
     {
       "question": "The 'Exeter Book' contains a collection of short, metaphorical poems known as:",
@@ -198,7 +228,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Exeter Book holds a large collection of short metaphorical poems known as riddles.",
-      "explanation_hi": "'Exeter Book' me chhoti aur metaphorical kavitayo ka ek bada sangrah hai jinhe 'Riddles' (paheliya) kaha jata hai."
+      "explanation_hi": "'Exeter Book' me chhoti aur metaphorical kavitayo ka ek bada sangrah hai jinhe 'Riddles' (paheliya) kaha jata hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Which poem ends with the line 'That passed away, so may this'?",
@@ -210,7 +242,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "The refrain 'That passed away, so may this' comes in Deor.",
-      "explanation_hi": "'Deor' kavita me 'That passed away, so may this' pankti (refrain) aati hai."
+      "explanation_hi": "'Deor' kavita me 'That passed away, so may this' pankti (refrain) aati hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "What is the primary meter of Old English poetry?",
@@ -222,7 +256,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The main metre of Old English poetry is alliterative verse.",
-      "explanation_hi": "Old English poetry ka mukhya meter 'Alliterative Verse' hai."
+      "explanation_hi": "Old English poetry ka mukhya meter 'Alliterative Verse' hai.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Bede recorded the story of which poet who received the gift of song in a stable?",
@@ -234,7 +270,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "Bede records the story of Cædmon, who was given the gift of song in a dream while sleeping among the animals.",
-      "explanation_hi": "Bede ne kavi Caedmon ki kahani darj ki hai, jinhe ek astabal (stable) me sapne ke dauran geet gane ka vardan mila tha."
+      "explanation_hi": "Bede ne kavi Caedmon ki kahani darj ki hai, jinhe ek astabal (stable) me sapne ke dauran geet gane ka vardan mila tha.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "In Beowulf, who is Grendel a descendant of?",
@@ -246,7 +284,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "In Beowulf, Grendel is a descendant of the biblical Cain.",
-      "explanation_hi": "'Beowulf' ke anusar rakshas Grendel Biblical patra Cain ka vanshaj (descendant) hai."
+      "explanation_hi": "'Beowulf' ke anusar rakshas Grendel Biblical patra Cain ka vanshaj (descendant) hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The 'Sermo Lupi ad Anglos' (Sermon of the Wolf to the English) was written by:",
@@ -258,7 +298,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Sermo Lupi ad Anglos was written by Archbishop Wulfstan.",
-      "explanation_hi": "'Sermo Lupi ad Anglos' (Sermon of the Wolf to the English) ki rachna Archbishop Wulfstan ne ki thi."
+      "explanation_hi": "'Sermo Lupi ad Anglos' (Sermon of the Wolf to the English) ki rachna Archbishop Wulfstan ne ki thi.",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "Which poem describes the destruction of a Roman city, likely Bath?",
@@ -270,7 +312,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The Ruin describes the broken remains of an old Roman city, most likely Bath.",
-      "explanation_hi": "'The Ruin' kavita ek prachin Roman shahar (sambhavtah Bath) ke vinash aur khandaharo ka varnan karti hai."
+      "explanation_hi": "'The Ruin' kavita ek prachin Roman shahar (sambhavtah Bath) ke vinash aur khandaharo ka varnan karti hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The poem 'Christ and Satan' is found in which manuscript?",
@@ -282,7 +326,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Christ and Satan is found in the Junius Manuscript.",
-      "explanation_hi": "'Christ and Satan' kavita 'Junius' manuscript me payi jati hai."
+      "explanation_hi": "'Christ and Satan' kavita 'Junius' manuscript me payi jati hai.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "Who was the first Christian king of Kent, mentioned in Bede's history?",
@@ -294,7 +340,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Bede's history names Æthelberht as the first Christian king of Kent.",
-      "explanation_hi": "Bede ke itihas me varnit Kent ke pehle Christian raja Ethelbert the."
+      "explanation_hi": "Bede ke itihas me varnit Kent ke pehle Christian raja Ethelbert the.",
+      "topic": "ground",
+      "read": "religion"
     },
     {
       "question": "Which work was intended to be a 'mirror for magistrates', providing moral guidance to rulers?",
@@ -306,7 +354,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Cura Pastoralis (Pastoral Care) was meant to give moral guidance to rulers and churchmen.",
-      "explanation_hi": "'Cura Pastoralis' (Pastoral Care) ka uddeshya shasako aur dharmaguruo ko naitik margdarshan dena tha."
+      "explanation_hi": "'Cura Pastoralis' (Pastoral Care) ka uddeshya shasako aur dharmaguruo ko naitik margdarshan dena tha.",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "Which of these characters is the 'loyal thane' who helps Beowulf in his final battle against the dragon?",
@@ -318,7 +368,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "Wiglaf is the loyal thane who stands with Beowulf in his last fight against the dragon.",
-      "explanation_hi": "Dragon ke khilaf aakhiri ladai me Beowulf ki madad karne wala 'loyal thane' (wafadar yoddha) Wiglaf hai."
+      "explanation_hi": "Dragon ke khilaf aakhiri ladai me Beowulf ki madad karne wala 'loyal thane' (wafadar yoddha) Wiglaf hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The 'Nowell Codex' was severely damaged in a fire in 1731. Where was it kept?",
@@ -330,7 +382,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Nowell Codex was badly damaged by fire in 1731, when it was kept at Ashburnham House.",
-      "explanation_hi": "1731 me jab 'Nowell Codex' aag me buri tarah kshatigrast hua, tab wah Ashburnham House me rakha gaya tha."
+      "explanation_hi": "1731 me jab 'Nowell Codex' aag me buri tarah kshatigrast hua, tab wah Ashburnham House me rakha gaya tha.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "The 'Vercelli Book' was discovered in which country?",
@@ -342,7 +396,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Vercelli Book was found in Italy, in the town of Vercelli.",
-      "explanation_hi": "'Vercelli Book' ki khoj Italy (Vercelli shahar) me hui thi."
+      "explanation_hi": "'Vercelli Book' ki khoj Italy (Vercelli shahar) me hui thi.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "Which poem is an allegorical description of the Resurrection, using a mythical bird?",
@@ -354,7 +410,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The Phoenix tells of the Resurrection through the figure of a mythical bird.",
-      "explanation_hi": "'The Phoenix' kavita ek pauranik pakshi ke madhyam se Resurrection (punarjeevan) ka roopak (allegorical) varnan karti hai."
+      "explanation_hi": "'The Phoenix' kavita ek pauranik pakshi ke madhyam se Resurrection (punarjeevan) ka roopak (allegorical) varnan karti hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "In the poem 'The Seafarer', the speaker contrasts the hardships of the sea with:",
@@ -366,7 +424,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "In The Seafarer the speaker sets the hardship of the sea against the comforts of life in the town.",
-      "explanation_hi": "'The Seafarer' kavita me vakta samudra ki kathinaiyo ki tulna shahar ke aaramdayak jeevan (comforts of city life) se karta hai."
+      "explanation_hi": "'The Seafarer' kavita me vakta samudra ki kathinaiyo ki tulna shahar ke aaramdayak jeevan (comforts of city life) se karta hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Who was the last Anglo-Saxon king of England?",
@@ -378,7 +438,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Harold Godwinson was the last Anglo-Saxon king of England.",
-      "explanation_hi": "England ke aakhiri Anglo-Saxon raja Harold Godwinson the."
+      "explanation_hi": "England ke aakhiri Anglo-Saxon raja Harold Godwinson the.",
+      "topic": "ground",
+      "read": "political-life"
     },
     {
       "question": "The term 'Scop' refers to:",
@@ -390,7 +452,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "In the Anglo-Saxon period a scop was an oral poet who recited verse in the hall.",
-      "explanation_hi": "Anglo-Saxon kaal me 'Scop' shabd ka prayog ek 'oral poet' (maukhik kavi ya charan) ke liye kiya jata tha."
+      "explanation_hi": "Anglo-Saxon kaal me 'Scop' shabd ka prayog ek 'oral poet' (maukhik kavi ya charan) ke liye kiya jata tha.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Which manuscript contains the largest collection of Old English riddles?",
@@ -402,7 +466,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The largest collection of Old English riddles is in the Exeter Book.",
-      "explanation_hi": "Old English riddles (paheliyo) ka sabse bada sangrah 'Exeter Book' manuscript me milta hai."
+      "explanation_hi": "Old English riddles (paheliyo) ka sabse bada sangrah 'Exeter Book' manuscript me milta hai.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "Which dialect was the standard for most surviving Old English literature?",
@@ -414,7 +480,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "West Saxon is the dialect in which most surviving Old English literature was written down.",
-      "explanation_hi": "Adhikansh bache hue Old English sahitya ke liye 'West Saxon' dialect hi manak (standard) bhasha thi."
+      "explanation_hi": "Adhikansh bache hue Old English sahitya ke liye 'West Saxon' dialect hi manak (standard) bhasha thi.",
+      "topic": "terms",
+      "read": "the-language"
     },
     {
       "question": "The 'Anglo-Saxon Chronicle' was initiated during the reign of:",
@@ -426,7 +494,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Anglo-Saxon Chronicle was begun in the reign of Alfred the Great.",
-      "explanation_hi": "'Anglo-Saxon Chronicle' ki shuruat King Alfred the Great ke shasankaal me hui thi."
+      "explanation_hi": "'Anglo-Saxon Chronicle' ki shuruat King Alfred the Great ke shasankaal me hui thi.",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "Which poem features a woman exiled and living in a cave/earth-hall?",
@@ -438,7 +508,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The Wife's Lament speaks for an exiled woman made to live in a cave or earth-hall.",
-      "explanation_hi": "'The Wife's Lament' kavita me ek nirvasit (exiled) mahila ka varnan hai jo ek gufa ya 'earth-hall' me rehne ko majboor hai."
+      "explanation_hi": "'The Wife's Lament' kavita me ek nirvasit (exiled) mahila ka varnan hai jo ek gufa ya 'earth-hall' me rehne ko majboor hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "In 'The Fight at Finnsburg', the conflict is between which two groups?",
@@ -450,7 +522,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The fighting in The Fight at Finnsburg is between the Danes and the Frisians.",
-      "explanation_hi": "'The Fight at Finnsburg' me sangharsh Danes aur Frisians ke beech hota hai."
+      "explanation_hi": "'The Fight at Finnsburg' me sangharsh Danes aur Frisians ke beech hota hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Which work is a translation of a late antique Roman philosopher's dialogue with a lady?",
@@ -462,7 +536,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Boethius's Consolation of Philosophy is a dialogue between a late Roman philosopher and Lady Philosophy, turned into Old English.",
-      "explanation_hi": "'Boethius's Consolation of Philosophy' ek Roman darshanik aur Lady Philosophy ke beech ke samvad ka Old English anuvad hai."
+      "explanation_hi": "'Boethius's Consolation of Philosophy' ek Roman darshanik aur Lady Philosophy ke beech ke samvad ka Old English anuvad hai.",
+      "topic": "prose",
+      "read": "prose"
     },
     {
       "question": "The poem 'Judith' is based on a story from:",
@@ -474,7 +550,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "The poem Judith is based on a story from the Apocrypha of the Old Testament.",
-      "explanation_hi": "'Judith' kavita Old Testament ke 'The Apocrypha' ki ek kahani par aadharit hai."
+      "explanation_hi": "'Judith' kavita Old Testament ke 'The Apocrypha' ki ek kahani par aadharit hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "What is the function of the 'Caesura' in Old English verse?",
@@ -486,7 +564,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "In Old English verse the caesura is the pause in the middle of a line.",
-      "explanation_hi": "Old English verse me 'Caesura' ka kaam ek pankti ke beech me thehrav (pause in the middle of a line) dena hai."
+      "explanation_hi": "Old English verse me 'Caesura' ka kaam ek pankti ke beech me thehrav (pause in the middle of a line) dena hai.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "The poem 'The Fates of the Apostles' is signed by which poet?",
@@ -498,7 +578,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Fates of the Apostles carries Cynewulf's runic signature.",
-      "explanation_hi": "'The Fates of the Apostles' kavita me kavi Cynewulf ke runic hastakshar milte hain."
+      "explanation_hi": "'The Fates of the Apostles' kavita me kavi Cynewulf ke runic hastakshar milte hain.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "In Beowulf, who is the King of the Danes?",
@@ -510,7 +592,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Hrothgar is the king of the Danes in Beowulf.",
-      "explanation_hi": "'Beowulf' kavita me Hrothgar Danes ka raja (King of the Danes) hai."
+      "explanation_hi": "'Beowulf' kavita me Hrothgar Danes ka raja (King of the Danes) hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The 'Gnomes' found in Anglo-Saxon manuscripts are essentially:",
@@ -522,7 +606,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The 'gnomes' in Anglo-Saxon manuscripts are maxims or proverbs.",
-      "explanation_hi": "Anglo-Saxon manuscripts me milne wale 'Gnomes' mool roop se 'Maxims or proverbs' (kahawatein ya suktiya) hote hain."
+      "explanation_hi": "Anglo-Saxon manuscripts me milne wale 'Gnomes' mool roop se 'Maxims or proverbs' (kahawatein ya suktiya) hote hain.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Which poem is considered one of the earliest examples of a 'Revenge Tragedy' structure in embryonic form?",
@@ -534,7 +620,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Fight at Finnsburg is often read as an early, undeveloped form of the revenge-tragedy pattern.",
-      "explanation_hi": "'The Fight at Finnsburg' ko shuruati roop (embryonic form) me 'Revenge Tragedy' structure ke sabse purane udaharan me se ek mana jata hai."
+      "explanation_hi": "'The Fight at Finnsburg' ko shuruati roop (embryonic form) me 'Revenge Tragedy' structure ke sabse purane udaharan me se ek mana jata hai.",
+      "topic": "criticism",
+      "read": "criticism-and-scholarship"
     },
     {
       "question": "Athelstan's victory over the combined forces of the Scots, Irish, and Vikings is celebrated in:",
@@ -546,7 +634,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Æthelstan's victory over the combined Scots, Irish and Viking forces is celebrated in The Battle of Brunanburh.",
-      "explanation_hi": "Scots, Irish aur Vikings ki sanyukt sena par Raja Athelstan ki jeet ka jashn 'The Battle of Brunanburh' kavita me manaya gaya hai."
+      "explanation_hi": "Scots, Irish aur Vikings ki sanyukt sena par Raja Athelstan ki jeet ka jashn 'The Battle of Brunanburh' kavita me manaya gaya hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "Which poem tells the story of the fall of man but is thought to be a translation from an Old Saxon original?",
@@ -558,7 +648,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Genesis B tells the fall of man and is taken to be a translation from an Old Saxon original.",
-      "explanation_hi": "'Genesis B' manushya ke patan (fall of man) ki kahani batati hai aur ise mool Old Saxon kavita ka anuvad mana jata hai."
+      "explanation_hi": "'Genesis B' manushya ke patan (fall of man) ki kahani batati hai aur ise mool Old Saxon kavita ka anuvad mana jata hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "The 'Cotton Vitellius A.xv' was named after:",
@@ -570,7 +662,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Cotton Vitellius A.xv is named after the bust of the Roman emperor Vitellius that stood on the shelf in Sir Robert Cotton's library.",
-      "explanation_hi": "'Cotton Vitellius A.xv' ka naam Sir Robert Cotton ki library ke us book-shelf ke upar rakhi Roman samrat Vitellius ki moorti (bust) ke naam par pada tha."
+      "explanation_hi": "'Cotton Vitellius A.xv' ka naam Sir Robert Cotton ki library ke us book-shelf ke upar rakhi Roman samrat Vitellius ki moorti (bust) ke naam par pada tha.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "Which epic features the monster Grendel's mother as an antagonist?",
@@ -582,7 +676,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Grendel's mother appears as an antagonist in the epic Beowulf.",
-      "explanation_hi": "Grendel ki maa (Grendel's mother) mahakavya 'Beowulf' me ek antagonist (khalnayika) ke roop me aati hai."
+      "explanation_hi": "Grendel ki maa (Grendel's mother) mahakavya 'Beowulf' me ek antagonist (khalnayika) ke roop me aati hai.",
+      "topic": "poetry",
+      "read": "poetry"
     },
     {
       "question": "What literary device is used in the phrase 'He was not slow to act' in Old English poetry?",
@@ -594,7 +690,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Saying far less than is meant, as in 'He was not slow to act', is litotes.",
-      "explanation_hi": "'He was not slow to act' jaise nakaratmak shabdo se sakaratmak arth dene wale understatement ko 'Litotes' kehte hain."
+      "explanation_hi": "'He was not slow to act' jaise nakaratmak shabdo se sakaratmak arth dene wale understatement ko 'Litotes' kehte hain.",
+      "topic": "terms",
+      "read": "key-terms"
     },
     {
       "question": "Who was the 'Scholar-King' who promoted the use of English over Latin for education?",
@@ -606,7 +704,22 @@
       ],
       "correct_option_id": 1,
       "explanation": "Alfred is called the Scholar-King; he pushed for English rather than Latin in teaching.",
-      "explanation_hi": "King Alfred ko 'Scholar-King' kaha jata hai, jinhone shiksha ke liye Latin ki jagah English bhasha ke prayog ko badhava diya."
+      "explanation_hi": "King Alfred ko 'Scholar-King' kaha jata hai, jinhone shiksha ke liye Latin ki jagah English bhasha ke prayog ko badhava diya.",
+      "topic": "prose",
+      "read": "prose"
     }
-  ]
+  ],
+  "topics": {
+    "ground": "The world of the age",
+    "poetry": "Poetry",
+    "prose": "Prose",
+    "manuscripts": "Manuscripts and survival",
+    "terms": "Terms and devices",
+    "criticism": "Criticism and scholarship"
+  },
+  "quote": {
+    "text": "Where has the horse gone? Where the rider? Where the giver of treasure?",
+    "source": "The Wanderer, Exeter Book"
+  },
+  "notesTitle": "Old English — the full notes"
 }

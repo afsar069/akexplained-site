@@ -205,15 +205,61 @@
           '<li>Nothing is marked until you press <b>Submit</b>. When the clock runs out it submits itself.</li>' +
           '<li>Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.</li>' +
         '</ul>' +
+
+        /* Har exam negative marking nahi lagata, isliye ye chunav reader ka
+           hai aur default band hai. Jo laga, wo yaad rakha jata hai. */
+        '<div class="cbt-neg">' +
+          '<p class="lbl" id="cbtNegLbl">Negative marking</p>' +
+          '<div class="cbt-negrow" role="group" aria-labelledby="cbtNegLbl">' +
+            '<button type="button" class="cbt-negbtn" data-neg="0">None</button>' +
+            '<button type="button" class="cbt-negbtn" data-neg="0.25">\u2212 0.25</button>' +
+            '<button type="button" class="cbt-negbtn" data-neg="0.33">\u2212 0.33</button>' +
+          '</div>' +
+          '<p class="cbt-neghint" id="cbtNegHint"></p>' +
+        '</div>' +
+
         '<button type="button" class="cbt-begin" id="cbtBegin">Begin the test</button>' +
       '</div>';
 
+    wireNeg();
+
     $('#cbtBegin').addEventListener('click', function () {
       st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
-             startedAt: Date.now(), endsAt: Date.now() + p.minutes * 60000 };
+             neg: negRate, startedAt: Date.now(), endsAt: Date.now() + p.minutes * 60000 };
       save();
       runTest();
     });
+  }
+
+  /* Negative marking: 0 (band), 0.25 ya 0.33 har galat jawab par.
+     Chunav is browser me yaad rehta hai, taaki har baar na chunna pade. */
+  var negRate = 0;
+  var NEG_KEY = 'ak:neg';
+
+  function wireNeg() {
+    try { negRate = parseFloat(localStorage.getItem(NEG_KEY)) || 0; } catch (e) { negRate = 0; }
+
+    function paint() {
+      $$('.cbt-negbtn').forEach(function (b) {
+        b.setAttribute('aria-pressed',
+          parseFloat(b.getAttribute('data-neg')) === negRate ? 'true' : 'false');
+      });
+      var hint = $('#cbtNegHint');
+      if (hint) {
+        hint.textContent = negRate
+          ? 'Every wrong answer takes off ' + negRate + ' of a mark. Questions you leave blank cost nothing.'
+          : 'Nothing is taken off for a wrong answer. Turn this on to match an exam that does.';
+      }
+      try { localStorage.setItem(NEG_KEY, String(negRate)); } catch (e) {}
+    }
+
+    $$('.cbt-negbtn').forEach(function (b) {
+      b.addEventListener('click', function () {
+        negRate = parseFloat(b.getAttribute('data-neg')) || 0;
+        paint();
+      });
+    });
+    paint();
   }
 
   /* ---------------------------------------------------------
@@ -444,91 +490,260 @@
      Parda 3 — result
      --------------------------------------------------------- */
   function showResult() {
-    var right = 0, wrong = 0, skipped = 0;
-    Q.forEach(function (q, i) {
-      if (st.pick[i] === undefined) skipped++;
-      else if (st.pick[i] === q.correct_option_id) right++;
-      else wrong++;
-    });
-    var answered = right + wrong;
-    var pc = Math.round(right / Q.length * 100);
-    var acc = answered ? Math.round(right / answered * 100) : 0;
-
-    var g = grade(pc);
-    var past = history(right);
+    var t = tally();
 
     root.innerHTML =
-      '<div class="cbt-score ' + g.cls + '">' +
-        '<div class="cbt-ringwrap">' +
-          '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
-            '<circle class="track" cx="60" cy="60" r="52"></circle>' +
-            '<circle class="fill" cx="60" cy="60" r="52"></circle>' +
-          '</svg>' +
-          '<p class="cbt-ringtxt"><b>' + right + '/' + Q.length + '</b><span>' + pc + '%</span></p>' +
-        '</div>' +
-        '<div class="cbt-score-txt">' +
-          '<h1>' + g.name + '</h1><p>' + g.line + '</p>' + past.banner +
-        '</div>' +
-      '</div>' +
-
-      '<section class="cbt-nums" aria-label="How the paper went">' +
-        '<div class="cbt-num ok"><b>' + right + '</b><span>Right</span></div>' +
-        '<div class="cbt-num no"><b>' + wrong + '</b><span>Wrong</span></div>' +
-        '<div class="cbt-num is-skip"><b>' + skipped + '</b><span>Not answered</span></div>' +
-        '<div class="cbt-num"><b>' + acc + '%</b><span>Of those answered</span></div>' +
-      '</section>' +
-
-      pace() +
-      past.chart +
-      advice(right, wrong, skipped, acc) +
+      headCard(t) + statRows(t) + topicTable(t) + strongWeak(t) +
+      analysis(t) + actions() + nextSteps(t) +
 
       '<div class="cbt-filters" role="group" aria-label="Which questions to show">' +
         '<button type="button" class="cbt-filter" data-show="all" aria-pressed="true">' +
           'All ' + Q.length + '</button>' +
         '<button type="button" class="cbt-filter" data-show="wrong" aria-pressed="false">' +
-          'Wrong ' + wrong + '</button>' +
+          'Wrong ' + t.wrong + '</button>' +
         '<button type="button" class="cbt-filter" data-show="skip" aria-pressed="false">' +
-          'Not answered ' + skipped + '</button>' +
+          'Not answered ' + t.skipped + '</button>' +
         '<button type="button" class="cbt-filter" data-show="right" aria-pressed="false">' +
-          'Right ' + right + '</button>' +
+          'Right ' + t.right + '</button>' +
       '</div>' +
 
-      '<div id="cbtReview">' + Q.map(card).join('') + '</div>' +
+      '<div id="cbtReview">' + Q.map(card).join('') + '</div>';
 
-      '<div class="cbt-after">' +
-        '<button type="button" class="cbt-btn" id="cbtAgain">Take this set again</button>' +
-        '<a class="cbt-btn" href="' + esc(paper.notes || '/notes/') + '">Read the notes</a>' +
-        '<a class="cbt-btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
-          '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
-      '</div>';
+    wireResult(t);
+  }
 
-    $$('.cbt-filter').forEach(function (b) {
-      b.addEventListener('click', function () {
-        var show = b.getAttribute('data-show');
-        $$('.cbt-filter').forEach(function (o) {
-          o.setAttribute('aria-pressed', o === b ? 'true' : 'false');
-        });
-        $$('#cbtReview .cbt-review').forEach(function (c) {
-          c.classList.toggle('is-hidden', show !== 'all' && c.getAttribute('data-state') !== show);
-        });
-      });
+  /* ---------------------------------------------------------
+     Sab ginti ek jagah
+     Negative marking lagi ho to net score hi asli score hai.
+     --------------------------------------------------------- */
+  function tally() {
+    var right = 0, wrong = 0, skipped = 0, byTopic = {};
+
+    Q.forEach(function (q, i) {
+      var key = q.topic || 'other';
+      var o = byTopic[key] || (byTopic[key] = { key: key, right: 0, total: 0, read: q.read });
+      o.total++;
+
+      if (st.pick[i] === undefined) skipped++;
+      else if (st.pick[i] === q.correct_option_id) { right++; o.right++; }
+      else wrong++;
     });
 
-    /* Gol ko agle frame me bharte hain — turant set karne par
-       browser shuruati haalat dikhata hi nahi aur animation gayab ho jati hai. */
-    var ring = $('.cbt-ring .fill');
-    if (ring) {
-      requestAnimationFrame(function () {
-        requestAnimationFrame(function () {
-          ring.style.strokeDashoffset = (327 - 327 * pc / 100).toFixed(1);
-        });
-      });
-    }
+    var neg = st.neg || 0;
+    var net = Math.max(0, right - wrong * neg);
+    var pc = Math.round(net / Q.length * 100);
 
-    $('#cbtAgain').addEventListener('click', function () {
-      try { localStorage.removeItem(key); } catch (e) {}
-      location.href = location.pathname;
-    });
+    return {
+      right: right, wrong: wrong, skipped: skipped,
+      answered: right + wrong,
+      acc: (right + wrong) ? Math.round(right / (right + wrong) * 100) : 0,
+      neg: neg, lost: +(wrong * neg).toFixed(2), net: +net.toFixed(2), pc: pc,
+      topics: Object.keys(byTopic).map(function (k) {
+        var o = byTopic[k];
+        o.pc = Math.round(o.right / o.total * 100);
+        o.name = (paper.topics && paper.topics[k]) || k;
+        return o;
+      }).sort(function (a, b) { return a.pc - b.pc || b.total - a.total; })
+    };
+  }
+
+  /* ---------- sabse upar ka card ---------- */
+  function headCard(t) {
+    var g = grade(t.pc);
+    var past = history(t.right);
+    var score = t.neg
+      ? t.net + '/' + Q.length
+      : t.right + '/' + Q.length;
+
+    return '<div class="cbt-score ' + g.cls + '">' +
+      '<div class="cbt-ringwrap">' +
+        '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
+          '<circle class="track" cx="60" cy="60" r="52"></circle>' +
+          '<circle class="fill" cx="60" cy="60" r="52"></circle>' +
+        '</svg>' +
+        '<p class="cbt-ringtxt"><b>' + score + '</b><span>' + t.pc + '%</span></p>' +
+      '</div>' +
+      '<div class="cbt-score-txt">' +
+        '<p class="cbt-done">Test complete · ' + esc(paper.ageName || '') +
+          ' · Set ' + esc(String(paper.setNumber || 1)) + '</p>' +
+        '<h1>' + g.name + '</h1><p>' + g.line + '</p>' +
+        (t.neg ? '<p class="cbt-negnote">' + t.right + ' right, less ' + t.lost +
+          ' for ' + t.wrong + ' wrong at −' + t.neg + ' each.</p>' : '') +
+        past.banner +
+      '</div>' +
+    '</div>' + past.chart;
+  }
+
+  /* ---------- do patti: ginti aur haalat ---------- */
+  function statRows(t) {
+    var used = (st.startedAt && st.endedAt)
+      ? Math.max(1, Math.round((st.endedAt - st.startedAt) / 1000)) : 0;
+    var allowed = (st.endsAt && st.startedAt)
+      ? Math.round((st.endsAt - st.startedAt) / 1000) : 0;
+
+    return '<section class="cbt-nums" aria-label="How the paper went">' +
+        '<div class="cbt-num ok"><b>' + t.right + '</b><span>Correct</span></div>' +
+        '<div class="cbt-num no"><b>' + t.wrong + '</b><span>Incorrect</span></div>' +
+        '<div class="cbt-num is-skip"><b>' + t.skipped + '</b><span>Unanswered</span></div>' +
+        '<div class="cbt-num"><b>' + (used ? clock(used) : '—') + '</b><span>Time taken</span>' +
+          (allowed ? '<em>of ' + clock(allowed) + '</em>' : '') + '</div>' +
+      '</section>' +
+
+      '<section class="cbt-nums cbt-nums3" aria-label="Accuracy and level">' +
+        '<div class="cbt-num"><b>' + t.acc + '%</b><span>Your accuracy</span>' +
+          '<em>of the ' + t.answered + ' you answered</em></div>' +
+        '<div class="cbt-num is-soon"><b>Coming soon</b><span>Percentile</span>' +
+          '<em>Needs an account — we will not guess a number</em></div>' +
+        '<div class="cbt-num"><b>' + esc(paper.levelName || 'Mixed') + '</b><span>Difficulty</span>' +
+          '<em>' + Q.length + ' questions in this set</em></div>' +
+      '</section>';
+  }
+
+  /* ---------- topic ke hisaab se ---------- */
+  function topicTable(t) {
+    if (t.topics.length < 2) return '';
+    return '<section class="cbt-card cbt-topics" aria-label="How each topic went">' +
+      '<h2>Topic by topic</h2>' +
+      '<p class="sub">Weakest first. Every topic links to the part of the notes it came from.</p>' +
+      '<table class="cbt-ttable"><thead><tr>' +
+        '<th scope="col">Topic</th><th scope="col">Right</th>' +
+        '<th scope="col">How it went</th><th scope="col">Score</th>' +
+      '</tr></thead><tbody>' +
+      t.topics.map(function (o) {
+        var tone = o.pc >= 80 ? 'ok' : o.pc >= 55 ? 'mid' : 'low';
+        return '<tr>' +
+          '<td><a href="' + esc(paper.notes || '/notes/') + '#' + esc(o.read || '') + '">' +
+            esc(o.name) + '</a></td>' +
+          '<td class="num">' + o.right + ' / ' + o.total + '</td>' +
+          '<td><span class="cbt-tbar"><i class="' + tone + '" style="width:' + o.pc + '%"></i></span></td>' +
+          '<td class="num ' + tone + '">' + o.pc + '%</td>' +
+        '</tr>';
+      }).join('') +
+      '</tbody></table></section>';
+  }
+
+  /* ---------- kya majboot, kya kamzor ----------
+     Dono sirf is attempt se nikle hain. Teen se kam sawal wale topic par
+     koi faisla nahi sunaya jata — itne se pata hi nahi chalta. */
+  function strongWeak(t) {
+    var solid = t.topics.filter(function (o) { return o.total >= 3 && o.pc >= 75; });
+    var weak  = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 60; });
+    var thin  = t.topics.filter(function (o) { return o.total < 3; });
+    if (!solid.length && !weak.length) return '';
+
+    var li = function (o, tone) {
+      return '<li class="' + tone + '"><a href="' + esc(paper.notes || '/notes/') + '#' +
+        esc(o.read || '') + '">' + esc(o.name) + '</a> <span>' + o.right + ' of ' + o.total + '</span></li>';
+    };
+
+    return '<div class="cbt-two">' +
+      '<section class="cbt-card">' +
+        '<h2>What is solid</h2>' +
+        (solid.length
+          ? '<ul class="cbt-list">' + solid.map(function (o) { return li(o, 'ok'); }).join('') + '</ul>'
+          : '<p class="sub">Nothing reached three quarters this time. The list below is where to start.</p>') +
+      '</section>' +
+      '<section class="cbt-card">' +
+        '<h2>Where the work is</h2>' +
+        (weak.length
+          ? '<ul class="cbt-list">' + weak.map(function (o) { return li(o, 'low'); }).join('') + '</ul>'
+          : '<p class="sub">No topic fell below sixty per cent. Keep it that way.</p>') +
+        (thin.length ? '<p class="cbt-thin">' + thin.map(function (o) {
+            return esc(o.name) + ' (' + o.right + '/' + o.total + ')'; }).join(', ') +
+          ' had too few questions here to call either way.</p>' : '') +
+      '</section>' +
+    '</div>';
+  }
+
+  /* ---------- gol hisaab, sawal ki patti, aur ek pankti ---------- */
+  function analysis(t) {
+    var C = 2 * Math.PI * 42;
+    var seg = function (n, offsetFrom, cls) {
+      var len = n / Q.length * C;
+      return '<circle class="' + cls + '" cx="60" cy="60" r="42" ' +
+        'stroke-dasharray="' + len.toFixed(1) + ' ' + (C - len).toFixed(1) + '" ' +
+        'stroke-dashoffset="' + (-offsetFrom / Q.length * C).toFixed(1) + '"></circle>';
+    };
+
+    var grid = Q.map(function (q, i) {
+      var state = st.pick[i] === undefined ? 'skip'
+        : st.pick[i] === q.correct_option_id ? 'right' : 'wrong';
+      return '<button type="button" class="cbt-qcell q-' + state + '" data-go="' + i + '" ' +
+        'aria-label="Question ' + (i + 1) + ', ' + state + '">' + (i + 1) + '</button>';
+    }).join('');
+
+    return '<div class="cbt-three">' +
+      '<section class="cbt-card">' +
+        '<h2>At a glance</h2>' +
+        '<div class="cbt-donutwrap">' +
+          '<svg class="cbt-donut" viewBox="0 0 120 120" aria-hidden="true">' +
+            seg(t.right, 0, 'd-ok') +
+            seg(t.wrong, t.right, 'd-no') +
+            seg(t.skipped, t.right + t.wrong, 'd-skip') +
+          '</svg>' +
+          '<p class="cbt-donuttxt"><b>' + Q.length + '</b><span>Questions</span></p>' +
+        '</div>' +
+        '<ul class="cbt-key">' +
+          '<li><i class="k-ok"></i>' + t.right + ' correct</li>' +
+          '<li><i class="k-no"></i>' + t.wrong + ' incorrect</li>' +
+          '<li><i class="k-skip"></i>' + t.skipped + ' unanswered</li>' +
+        '</ul>' +
+      '</section>' +
+
+      '<section class="cbt-card">' +
+        '<h2>Question by question</h2>' +
+        '<p class="sub">Tap a number to read that one.</p>' +
+        '<div class="cbt-qgrid">' + grid + '</div>' +
+      '</section>' +
+
+      (paper.quote && paper.quote.text
+        ? '<section class="cbt-card cbt-quote">' +
+            '<blockquote>' + esc(paper.quote.text) + '</blockquote>' +
+            '<cite>' + esc(paper.quote.source || '') + '</cite>' +
+          '</section>'
+        : '') +
+    '</div>';
+  }
+
+  /* ---------- neeche ke button ---------- */
+  function actions() {
+    return '<div class="cbt-after">' +
+      '<button type="button" class="cbt-btn is-lead" id="cbtCards">Go through the wrong ones, one by one</button>' +
+      '<button type="button" class="cbt-btn" id="cbtPrint">Save my result</button>' +
+      '<button type="button" class="cbt-btn" id="cbtAgain">Take this set again</button>' +
+      '<a class="cbt-btn" href="' + esc(paper.notes || '/notes/') + '">Read the notes</a>' +
+      '<a class="cbt-btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
+        '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
+    '</div>';
+  }
+
+  /* ---------- aage kya ---------- */
+  function nextSteps(t) {
+    var weak = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 60; });
+    var tip = weak.length
+      ? 'Start with ' + weak.slice(0, 2).map(function (o) { return esc(o.name).toLowerCase(); }).join(' and ') +
+        '. Read that part of the notes, then take this set again and watch those numbers move.'
+      : t.skipped
+      ? 'You know the material. The ' + t.skipped + ' you left blank are the cheapest marks on the paper — answer them next time, even on a half-guess.'
+      : 'Nothing is badly weak. Come back in a week and see how much has stayed without a reread.';
+
+    return '<div class="cbt-two">' +
+      '<section class="cbt-card cbt-tip">' +
+        '<h2>What to do next</h2>' +
+        '<p>' + tip + '</p>' +
+        advice(t.right, t.wrong, t.skipped, t.acc) +
+      '</section>' +
+      '<section class="cbt-card cbt-soon">' +
+        '<h2>Coming with student accounts</h2>' +
+        '<ul class="cbt-list">' +
+          '<li class="soon">Your learning journey <span>a path across all twelve ages</span></li>' +
+          '<li class="soon">Come back on the right day <span>a nudge when a set is going cold</span></li>' +
+          '<li class="soon">Where you stand <span>your percentile against other students</span></li>' +
+          '<li class="soon">Your progress on every device <span>not just this browser</span></li>' +
+        '</ul>' +
+        '<p class="sub">None of these can be honest without an account, so none of them are guessed at here.</p>' +
+      '</section>' +
+    '</div>';
   }
 
   /* ---------------------------------------------------------
@@ -677,11 +892,132 @@
       out.push('Every question answered, and a clean paper. Come back to this set in a week ' +
         'and see how much has stayed.');
     }
-    out.push('Everything here comes from one page: <a href="' + esc(paper.notes || '/notes/') +
-      '">the ' + esc(paper.ageName || '') + ' notes</a>. When a set goes badly, that is the place to go.');
+    return '<ul class="cbt-advice"><li>' + out.join('</li><li>') + '</li></ul>';
+  }
 
-    return '<section class="cbt-advice"><h2>What to do next</h2><ul><li>' +
-      out.join('</li><li>') + '</li></ul></section>';
+  /* ---------------------------------------------------------
+     Result ke sab button
+     --------------------------------------------------------- */
+  function wireResult(t) {
+    /* Gol agle frame me bharta hai, warna browser shuruati haalat
+       dikhata hi nahi aur animation gayab ho jati hai. */
+    var ring = $('.cbt-ring .fill');
+    if (ring) {
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          ring.style.strokeDashoffset = (327 - 327 * t.pc / 100).toFixed(1);
+        });
+      });
+    }
+
+    $$('.cbt-filter').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var show = b.getAttribute('data-show');
+        $$('.cbt-filter').forEach(function (o) {
+          o.setAttribute('aria-pressed', o === b ? 'true' : 'false');
+        });
+        $$('#cbtReview .cbt-review').forEach(function (c) {
+          c.classList.toggle('is-hidden', show !== 'all' && c.getAttribute('data-state') !== show);
+        });
+      });
+    });
+
+    /* Ginti wali patti se seedha us sawal par */
+    var grid = $('.cbt-qgrid');
+    if (grid) {
+      grid.addEventListener('click', function (e) {
+        var cell = e.target.closest('[data-go]');
+        if (!cell) return;
+        var all = $('.cbt-filter[data-show="all"]');
+        if (all && all.getAttribute('aria-pressed') !== 'true') all.click();
+        var target = $$('#cbtReview .cbt-review')[+cell.getAttribute('data-go')];
+        if (!target) return;
+        target.scrollIntoView({ block: 'center',
+          behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
+        target.classList.add('is-lit');
+        setTimeout(function () { target.classList.remove('is-lit'); }, 1800);
+      });
+    }
+
+    var cards = $('#cbtCards');
+    if (cards) {
+      var wrongIdx = Q.map(function (q, i) { return i; }).filter(function (i) {
+        return st.pick[i] !== undefined && st.pick[i] !== Q[i].correct_option_id;
+      });
+      if (!wrongIdx.length) cards.hidden = true;
+      else cards.addEventListener('click', function () { flashcards(wrongIdx); });
+    }
+
+    var pr = $('#cbtPrint');
+    if (pr) pr.addEventListener('click', function () { window.print(); });
+
+    $('#cbtAgain').addEventListener('click', function () {
+      try { localStorage.removeItem(key); } catch (e) {}
+      location.href = location.pathname;
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Galat jawaabon ko ek-ek karke dekhna
+
+     Pehle sirf sawal dikhta hai, taaki dimag use dobara uthane ki
+     koshish kare. Khud khol kar hi jawab aata hai — padh lene se
+     yaad nahi hota, yaad karne ki koshish se hota hai.
+     --------------------------------------------------------- */
+  function flashcards(list) {
+    var back = root.innerHTML;    /* result waapas lane ke liye */
+    var at = 0, shown = false;
+
+    function draw() {
+      var i = list[at], q = Q[i];
+      root.innerHTML =
+        '<div class="cbt-fc">' +
+          '<div class="cbt-fctop">' +
+            '<p>Wrong answer <b>' + (at + 1) + '</b> of <b>' + list.length + '</b></p>' +
+            '<button type="button" class="cbt-btn" id="fcBack">Back to the result</button>' +
+          '</div>' +
+          '<div class="cbt-fccard">' +
+            '<p class="cbt-qnum">Question ' + (i + 1) +
+              (q.topic && paper.topics ? ' · ' + esc(paper.topics[q.topic] || '') : '') + '</p>' +
+            '<p class="cbt-fcq">' + esc(q.question) + '</p>' +
+            (shown
+              ? '<div class="cbt-fcans">' +
+                  '<p class="cbt-fcrow is-right"><span class="key">' +
+                    LETTERS[q.correct_option_id] + '</span>' +
+                    esc(q.options[q.correct_option_id]) +
+                    '<span class="note">The answer</span></p>' +
+                  (st.pick[i] !== undefined && st.pick[i] !== q.correct_option_id
+                    ? '<p class="cbt-fcrow is-yours"><span class="key">' + LETTERS[st.pick[i]] +
+                      '</span>' + esc(q.options[st.pick[i]]) + '<span class="note">You chose</span></p>'
+                    : '') +
+                  (q.explanation ? '<p class="cbt-why"><b>Why:</b> ' + esc(q.explanation) + '</p>' : '') +
+                  (q.read ? '<p class="cbt-read"><a href="' + esc(paper.notes || '/notes/') + '#' +
+                    esc(q.read) + '">Read this part of the notes →</a></p>' : '') +
+                '</div>'
+              : '<button type="button" class="cbt-begin" id="fcShow">Show the answer</button>') +
+          '</div>' +
+          '<div class="cbt-fcnav">' +
+            '<button type="button" class="cbt-btn" id="fcPrev"' + (at === 0 ? ' disabled' : '') + '>&larr; Previous</button>' +
+            '<span class="cbt-fcdots">' + list.map(function (_, k) {
+              return '<i class="' + (k === at ? 'is-here' : k < at ? 'is-done' : '') + '"></i>'; }).join('') + '</span>' +
+            '<button type="button" class="cbt-btn is-lead" id="fcNext">' +
+              (at === list.length - 1 ? 'Finish' : 'Next &rarr;') + '</button>' +
+          '</div>' +
+        '</div>';
+
+      var show = $('#fcShow');
+      if (show) show.addEventListener('click', function () { shown = true; draw(); });
+      $('#fcPrev').addEventListener('click', function () { if (at > 0) { at--; shown = false; draw(); } });
+      $('#fcNext').addEventListener('click', function () {
+        if (at < list.length - 1) { at++; shown = false; draw(); } else leave();
+      });
+      $('#fcBack').addEventListener('click', leave);
+      window.scrollTo(0, 0);
+    }
+
+    function leave() { root.innerHTML = back; wireResult(tally()); window.scrollTo(0, 0); }
+
+    draw();
   }
 
   function card(q, i) {
