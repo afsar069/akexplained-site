@@ -7,12 +7,13 @@
    saare link HTML me hi likhe hain. Ye script sirf wo hissa
    jodti hai jo is browser me rakhe hisaab par tika hai.
 
-   Paanch kaam:
+   Chhe kaam:
      1. Kaun se set chalu hain — LIVE_SETS se tay hota hai.
      2. Topic aur level se list chhanna (?topic= / ?level= se bhi).
      3. Upar ke chaar gine-gine dabbe bharna.
      4. "Kaisa chal raha hai" card banana, weakest set pehle.
-     5. Is device ka hisaab mitana.
+     5. "Build your own set" — kitne sawal, kitna waqt (?n= / ?t= se bhi).
+     6. Is device ka hisaab mitana.
 
    Quiz engine isi localStorage me likhta hai, aur yahi padha jata hai:
      key   akq:<setId>:v1
@@ -280,6 +281,12 @@
     var q = new URLSearchParams(location.search);
     state.topic === 'all' ? q.delete('topic') : q.set('topic', state.topic);
     state.levels.length === 2 ? q.delete('level') : q.set('level', state.levels.join(','));
+    /* Apna banaya hua set bhi link me jaye, taaki bheja ja sake.
+       Build card page par na ho to build.minutes abhi 0 hai — tab kuch nahi. */
+    if (build.minutes > 0) {
+      build.count === COUNT_DEFAULT ? q.delete('n') : q.set('n', build.count);
+      build.minutes === defaultMinutes(build.count) ? q.delete('t') : q.set('t', build.minutes);
+    }
     var qs = q.toString();
     try {
       history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
@@ -357,6 +364,149 @@
   }
 
   /* ---------------------------------------------------------
+     5. APNA SET BANAO — kitne sawal, kitna waqt
+
+     Sawal : 10 se 100, default 50.
+     Waqt  : har sawal ke liye 30 se 60 second, default 40.
+             Isi se poora waqt nikalta hai, aur 100 sawal x 60 second
+             theek 100 minute par ja kar rukte hain — yahi upar ki hadd hai.
+             50 sawal ka default isliye 33 minute banta hai.
+
+     Reader waqt badalta hai to hum second-per-sawal yaad rakh lete hain,
+     naki minute. Isliye baad me sawal ki ginti badle to uski chuni hui
+     raftaar bani rehti hai, aur waqt usi hisaab se apne aap badal jata hai.
+     --------------------------------------------------------- */
+  var COUNT_MIN = 10, COUNT_MAX = 100, COUNT_DEFAULT = 50;
+  var RATE_MIN = 30, RATE_MAX = 60, RATE_DEFAULT = 40;   /* second per sawal */
+  var MINUTES_CAP = 100;
+
+  var build = { count: COUNT_DEFAULT, rate: RATE_DEFAULT, minutes: 0 };
+
+  function clamp(n, lo, hi) { return n < lo ? lo : n > hi ? hi : n; }
+
+  function minMinutes(count) { return Math.ceil(count * RATE_MIN / 60); }
+  function maxMinutes(count) {
+    return Math.min(MINUTES_CAP, Math.max(minMinutes(count), Math.floor(count * RATE_MAX / 60)));
+  }
+  function defaultMinutes(count) {
+    return clamp(Math.round(count * RATE_DEFAULT / 60), minMinutes(count), maxMinutes(count));
+  }
+  /* Jo minute dikh rahe hain, unse asli raftaar — hint ke liye. */
+  function secondsEach(count, minutes) { return Math.round(minutes * 60 / count); }
+
+  function wireBuild() {
+    var card = $('.agehub-build', page);
+    if (!card) return;
+
+    var countBox = $('#buildCount'), countBar = $('#buildCountRange');
+    var timeBox = $('#buildTime'), timeBar = $('#buildTimeRange');
+    var rateHint = $('#buildRate'), sum = $('#buildSum');
+    var startBtn = $('#buildStart'), reset = $('#buildReset');
+    if (!countBox || !timeBox) return;
+
+    /* ---- yaad rakha hua, phir URL ka hukum ---- */
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem('ak:agebuild:' + AGE) || 'null'); } catch (e) {}
+    if (saved && typeof saved === 'object') {
+      if (saved.count) build.count = clamp(Math.round(saved.count), COUNT_MIN, COUNT_MAX);
+      if (saved.rate) build.rate = clamp(Math.round(saved.rate), RATE_MIN, RATE_MAX);
+    }
+    build.minutes = clamp(Math.round(build.count * build.rate / 60),
+      minMinutes(build.count), maxMinutes(build.count));
+
+    var q = new URLSearchParams(location.search);
+    var askedN = parseInt(q.get('n'), 10);
+    var askedT = parseInt(q.get('t'), 10);
+    if (askedN) setCount(askedN, true);
+    if (askedT) setMinutes(askedT, true);
+
+    function setCount(value, quiet) {
+      build.count = clamp(Math.round(value) || COUNT_DEFAULT, COUNT_MIN, COUNT_MAX);
+      /* Ginti badli — reader ki chuni hui raftaar wahi rakho, waqt naya. */
+      build.minutes = clamp(Math.round(build.count * build.rate / 60),
+        minMinutes(build.count), maxMinutes(build.count));
+      if (!quiet) render();
+    }
+
+    function setMinutes(value, quiet) {
+      build.minutes = clamp(Math.round(value) || defaultMinutes(build.count),
+        minMinutes(build.count), maxMinutes(build.count));
+      build.rate = clamp(secondsEach(build.count, build.minutes), RATE_MIN, RATE_MAX);
+      if (!quiet) render();
+    }
+
+    function render() {
+      var lo = minMinutes(build.count), hi = maxMinutes(build.count);
+      var each = secondsEach(build.count, build.minutes);
+
+      countBox.value = countBar.value = build.count;
+      timeBox.value = timeBar.value = build.minutes;
+      /* Waqt ki hadd sawal ki ginti par tiki hai, isliye har baar nayi. */
+      timeBox.min = timeBar.min = lo;
+      timeBox.max = timeBar.max = hi;
+
+      if (rateHint) {
+        rateHint.textContent = 'That is about ' + each + ' seconds a question. ' +
+          'You can go from ' + lo + ' to ' + hi + ' minutes.';
+      }
+      if (sum) {
+        sum.textContent = build.count + ' question' + (build.count === 1 ? '' : 's') +
+          ' \u00b7 ' + build.minutes + ' minute' + (build.minutes === 1 ? '' : 's') +
+          ' \u00b7 about ' + each + ' seconds each';
+      }
+      if (reset) {
+        reset.hidden = build.count === COUNT_DEFAULT &&
+          build.minutes === defaultMinutes(COUNT_DEFAULT);
+      }
+      if (startBtn && startBtn.tagName === 'A') {
+        startBtn.href = '/quizzes/mcq/' + AGE + '/custom/?n=' + build.count + '&t=' + build.minutes;
+      }
+
+      try {
+        localStorage.setItem('ak:agebuild:' + AGE,
+          JSON.stringify({ count: build.count, rate: build.rate }));
+      } catch (e) {}
+      stampUrl();
+    }
+
+    /* Likhte waqt beech ki adhoori ginti ("1" jo "15" banne wali hai) ko
+       pakad kar 10 mat bana do — wo chhed-chhad blur par hoti hai. */
+    function loose(box, bar, commit) {
+      box.addEventListener('input', function () {
+        var n = parseInt(box.value, 10);
+        if (!isNaN(n) && n >= +box.min && n <= +box.max) { commit(n); bar.value = n; }
+      });
+      box.addEventListener('change', function () { commit(parseInt(box.value, 10)); });
+      box.addEventListener('blur', function () { commit(parseInt(box.value, 10)); });
+      bar.addEventListener('input', function () { commit(parseInt(bar.value, 10)); });
+    }
+
+    loose(countBox, countBar, function (n) { setCount(n); });
+    loose(timeBox, timeBar, function (n) { setMinutes(n); });
+
+    if (reset) {
+      reset.addEventListener('click', function () {
+        build.rate = RATE_DEFAULT;
+        setCount(COUNT_DEFAULT);
+        countBox.focus();
+      });
+    }
+
+    /* Sawal taiyar hone se pehle Start kahin nahi le jata, isliye wo abhi
+       link hai hi nahi — markup me sirf ek halka label hai. */
+    if (startBtn && LIVE_SETS.length) {
+      var a = document.createElement('a');
+      a.className = 'agehub-start';
+      a.id = 'buildStart';
+      a.textContent = 'Start';
+      startBtn.parentNode.replaceChild(a, startBtn);
+      startBtn = a;
+    }
+
+    render();
+  }
+
+  /* ---------------------------------------------------------
      Is device ka hisaab mitana
      --------------------------------------------------------- */
   function wireWipe() {
@@ -388,6 +538,7 @@
     try { paintStats(); } catch (e) {}
     try { paintPerformance(); } catch (e) {}
     try { readState(); } catch (e) {}
+    try { wireBuild(); } catch (e) {}
     try { wireFilters(); apply(); } catch (e) {}
     try { wireWipe(); } catch (e) {}
   }

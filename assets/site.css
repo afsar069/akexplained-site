@@ -1228,6 +1228,66 @@ a.agehub-go.is-solid:hover{background:var(--teal-dark);color:#fff}
 }
 .agehub-empty p{margin:0 auto;max-width:42ch}
 
+/* ---------- apna set banao ----------
+   Do control: kitne sawal (10 se 100) aur kitna waqt. Har control me
+   ek number box aur ek slider, dono ek doosre ke saath chalte hain —
+   number box me seedha likh sakte hain, slider se jaldi badal sakte hain. */
+.agehub-build{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;padding:22px 24px;margin-bottom:14px;
+}
+.agehub-build h2{font-family:var(--serif);font-size:1.16rem;font-weight:700;color:var(--ink);margin-bottom:3px}
+.agehub-build .sub{font-size:.9rem;margin-bottom:20px;max-width:64ch}
+
+.agehub-buildgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 26px}
+.agehub-buildfield > label{
+  display:block;font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:8px;
+}
+.agehub-numrow{display:flex;align-items:center;gap:10px}
+.agehub-numrow input[type="number"]{
+  width:78px;flex:none;font:inherit;font-size:1.05rem;font-weight:700;color:var(--ink);
+  text-align:center;background:#fff;border:1.5px solid var(--border);border-radius:11px;padding:9px 6px;
+  transition:border-color .2s,box-shadow .25s;
+}
+.agehub-numrow input[type="number"]:hover{border-color:var(--teal)}
+.agehub-numrow input[type="number"]:focus-visible{border-color:var(--teal);box-shadow:var(--glow);outline:none}
+.agehub-unit{flex:none;font-size:.9rem;color:var(--body)}
+
+/* Slider. Number box hi asli control hai (keyboard aur screen reader uske
+   saath hain), slider usi ka doosra roop hai — isliye tabindex="-1". */
+.agehub-numrow input[type="range"]{
+  flex:1;min-width:0;appearance:none;-webkit-appearance:none;
+  height:5px;border-radius:999px;background:var(--border);cursor:pointer;
+}
+.agehub-numrow input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:20px;height:20px;border-radius:50%;
+  background:var(--teal);border:2px solid #fff;cursor:pointer;
+  box-shadow:0 1px 5px rgba(22,48,74,.34);
+}
+.agehub-numrow input[type="range"]::-moz-range-thumb{
+  width:18px;height:18px;border-radius:50%;background:var(--teal);
+  border:2px solid #fff;cursor:pointer;box-shadow:0 1px 5px rgba(22,48,74,.34);
+}
+
+.agehub-buildhint{font-size:.82rem;color:var(--mcq-ink-faint);margin:8px 0 0}
+.agehub-buildsum{
+  font-family:var(--serif);font-size:1rem;color:var(--ink);
+  background:var(--cream);border:1px solid var(--border);border-radius:11px;
+  padding:11px 16px;margin:18px 0 0;max-width:none;
+}
+.agehub-buildgo{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin-top:16px}
+.agehub-start{
+  font:inherit;font-size:.95rem;font-weight:600;border-radius:11px;padding:12px 24px;
+  color:var(--mcq-ink-faint);background:#FBFAF5;border:1.5px dashed var(--border);
+  cursor:not-allowed;
+}
+/* Sawal taiyar hote hi mcq-age.js ise asli link bana deta hai. */
+a.agehub-start{
+  color:#fff;background:var(--teal);border:1.5px solid var(--teal);border-style:solid;cursor:pointer;
+  transition:background .2s,transform .2s;
+}
+a.agehub-start:hover{background:var(--teal-dark);color:#fff;transform:translateY(-2px)}
+
 /* ---------- list ke neeche ke do bade button ---------- */
 .agehub-actions{display:flex;flex-wrap:wrap;gap:12px}
 .agehub-action{
@@ -1316,18 +1376,22 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .agehub-go,.agehub-soon{order:3;width:100%;text-align:center}
   .agehub-set .mcq-bar{max-width:none}
   .agehub-action{width:100%;text-align:center}
+  .agehub-buildgrid{grid-template-columns:1fr}
+  .agehub-start{width:100%;text-align:center}
+  .agehub-buildgo{gap:10px}
   .agehub-ready .go{width:100%;text-align:center}
 }
 
 /* Jo log animation band rakhte hain, unke liye kuch hilna-dulna nahi. */
 @media (prefers-reduced-motion:reduce){
   .agehead-btn:hover,a.agehub-go:hover,a.agehub-action:hover,
-  .agehub-read:hover,.agehub-redo:hover,.agehub-level:hover{transform:none}
+  .agehub-read:hover,.agehub-redo:hover,.agehub-level:hover,
+  a.agehub-start:hover{transform:none}
 }
 
 /* ---------- print ---------- */
 @media print{
-  .agehub-filters,.agehub-actions,.agehub-ready,
+  .agehub-filters,.agehub-actions,.agehub-ready,.agehub-build,
   .agehub-redo,.agehub-wipe,.agehub-clear{display:none !important}
   .agehead{background:#fff;color:#000}
   .agehead::before{display:none}
