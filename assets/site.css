@@ -783,33 +783,16 @@ summary.ptbtn::-webkit-details-marker{display:none}
   --mcq-r:14px;
 }
 
-/* ---------- page head ---------- */
-.mcq-head{
-  background:var(--mcq-blue-tint);
-  border-bottom:1px solid var(--mcq-blue-line);
-  padding:18px 0 30px;
-}
-.mcq-crumb{font-size:14px;color:var(--mcq-ink-soft);margin-bottom:18px}
-.mcq-crumb a{color:var(--mcq-ink-soft);text-decoration:none}
-.mcq-crumb a:hover{text-decoration:underline}
-.mcq-crumb span[aria-hidden]{padding:0 7px;color:#90A0B2}
-.mcq-crumb > span:last-child{color:var(--mcq-ink);font-weight:600}
-
-.mcq-head h1{
-  font-family:Literata,Georgia,serif;
-  font-size:clamp(28px,5vw,40px);
-  font-weight:700;line-height:1.15;letter-spacing:-.015em;
-  margin:0 0 8px;color:var(--mcq-ink);
-}
-.mcq-lede{margin:0 0 22px;font-size:17px;color:#3F4D5C;max-width:62ch}
-
-.mcq-modes{display:flex;flex-wrap:wrap;gap:8px}
+/* ---------- page head ----------
+   The head itself is the site's own .pagehead (same as PYQ, Quizzes and the
+   other hub pages). Only the row of section pills below is ours. */
+.mcq-modes{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .mcq-modes a,.mcq-modes span{
-  font-size:14.5px;font-weight:600;border-radius:999px;padding:9px 18px;
-  text-decoration:none;color:#3F4D5C;background:#fff;border:1px solid var(--mcq-blue-line);
+  font-size:14.5px;font-weight:600;border-radius:999px;padding:8px 18px;
+  text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--border);
 }
-.mcq-modes a:hover{border-color:var(--mcq-blue);color:var(--mcq-blue-dark)}
-.mcq-modes span[aria-current]{background:var(--mcq-blue);border-color:var(--mcq-blue);color:#fff}
+.mcq-modes a:hover{border-color:var(--teal);color:var(--teal-dark)}
+.mcq-modes span[aria-current]{background:var(--teal);border-color:var(--teal);color:#fff}
 
 /* ---------- body ---------- */
 .mcq-body{padding-top:34px;padding-bottom:72px}
@@ -888,22 +871,21 @@ summary.ptbtn::-webkit-details-marker{display:none}
 /* ---------- age grid ---------- */
 .mcq-agegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
 .mcq-agecard{
-  background:var(--mcq-paper);border:1px solid var(--mcq-line);
-  border-radius:16px;padding:17px;text-decoration:none;color:inherit;display:block;
+  display:block;overflow:hidden;background:var(--mcq-paper);
+  border:1px solid var(--mcq-line);border-radius:16px;
+  text-decoration:none;color:inherit;
 }
 .mcq-agecard:hover{border-color:var(--mark,var(--mcq-blue))}
-.mcq-agecard.is-current{border:2px solid var(--mcq-blue);padding:16px}
-.mcq-mono{
-  width:48px;height:48px;border-radius:12px;flex:none;float:left;margin-right:13px;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--mark,#4A5A6A);color:#fff;
-  font-family:Literata,Georgia,serif;font-size:23px;font-weight:700;
+.mcq-agecard.is-current{border-color:var(--mcq-blue);box-shadow:0 0 0 1px var(--mcq-blue)}
+.mcq-pic{
+  display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;
+  border-bottom:1px solid var(--mcq-line);
 }
-.mcq-agename{display:block;overflow:hidden;margin-bottom:15px;min-height:48px}
+.mcq-agename{display:block;padding:13px 16px 0;margin-bottom:11px}
 .mcq-agename strong{display:block;font-weight:600;font-size:16px;line-height:1.25}
 .mcq-years{display:block;font-size:13px;color:var(--mcq-ink-faint)}
-.mcq-agecard .mcq-bar{height:5px;margin-bottom:9px;clear:both}
-.mcq-state{display:block;font-size:13px;color:var(--mcq-ink-faint)}
+.mcq-agecard .mcq-bar{height:5px;margin:0 16px 9px}
+.mcq-state{display:block;padding:0 16px 15px;font-size:13px;color:var(--mcq-ink-faint)}
 .mcq-state.is-done{color:var(--mcq-green);font-weight:600}
 .mcq-state.is-going{color:var(--mcq-blue-dark);font-weight:600}
 .mcq-state.is-weak{color:#9A3412;font-weight:600}
@@ -912,7 +894,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-agecard[aria-disabled="true"]{
   pointer-events:none;background:#FBFCFD;border-style:dashed;
 }
-.mcq-agecard[aria-disabled="true"] .mcq-mono{opacity:.45}
+.mcq-agecard[aria-disabled="true"] .mcq-pic{filter:grayscale(.55);opacity:.6}
 .mcq-agecard[aria-disabled="true"] .mcq-bar{visibility:hidden}
 
 /* ---------- topic grid ---------- */
@@ -979,8 +961,6 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-othergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
-  .mcq-head{padding:14px 0 22px}
-  .mcq-lede{font-size:15.5px;margin-bottom:18px}
   .mcq-modes{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
   .mcq-modes a,.mcq-modes span{flex:none}
   .mcq-exams{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
@@ -989,17 +969,18 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-body{padding-top:22px}
   .mcq-sec{margin-bottom:34px}
 
-  /* ages become a list of rows, easier to thumb through */
+  /* ages become a list of rows, each with a small picture, easier to thumb through */
   .mcq-agegrid{grid-template-columns:1fr;gap:9px}
   .mcq-agecard{
-    display:grid;grid-template-columns:42px 1fr;gap:1px 12px;
-    align-items:center;padding:13px 15px;border-radius:13px;
+    display:grid;grid-template-columns:78px 1fr;align-items:center;border-radius:13px;
   }
-  .mcq-agecard.is-current{padding:12px 14px}
-  .mcq-mono{float:none;margin:0;width:42px;height:42px;font-size:20px;grid-row:1/3;grid-column:1}
-  .mcq-agename{grid-column:2;margin:0;min-height:0}
+  .mcq-pic{
+    grid-row:1/3;grid-column:1;width:78px;height:100%;min-height:68px;
+    aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--mcq-line);
+  }
+  .mcq-agename{grid-column:2;padding:10px 14px 0;margin:0}
   .mcq-agecard .mcq-bar{display:none}
-  .mcq-state{grid-column:2}
+  .mcq-state{grid-column:2;padding:0 14px 10px}
 
   .mcq-topicgrid,.mcq-othergrid{grid-template-columns:1fr}
   .mcq-start,.mcq-build{padding:18px 18px;gap:14px}

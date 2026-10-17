@@ -92,21 +92,16 @@
   </nav>
 </header>
 
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/quizzes/">Quizzes</a><span>/</span>MCQ Practice</p></div>
 <main id="main">
 
 <!-- ====== PAGE HEAD ====== -->
-<section class="mcq-head">
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">M</span>
   <div class="wrap">
-    <nav class="mcq-crumb" aria-label="Breadcrumb">
-      <a href="/">Home</a>
-      <span aria-hidden="true">&rsaquo;</span>
-      <a href="/quizzes/">Quizzes</a>
-      <span aria-hidden="true">&rsaquo;</span>
-      <span>MCQ Practice</span>
-    </nav>
-
+    <p class="eyebrow">Practice &middot; MCQ</p>
     <h1>MCQ Practice</h1>
-    <p class="mcq-lede">Topic-wise practice, age by age. Every answer carries its reason and a link back to the notes it came from. Nothing to install, no sign-in needed.</p>
+    <p class="lede">Topic-wise practice, age by age. Every answer carries its reason and a link back to the notes it came from. Nothing to install, no sign-in needed.</p>
 
     <nav class="mcq-modes" aria-label="Practice sections">
       <a href="/quizzes/daily/">Daily Quiz</a>
@@ -139,8 +134,7 @@
   </section>
 
   <!-- ====== JUST START ====== -->
-  <!-- PAUSED: /quizzes/mcq/mixed/ is not built yet. Put this block back when it is.
-<a class="mcq-start" href="/quizzes/mcq/mixed/">
+  <a class="mcq-start" href="/quizzes/mcq/mixed/">
     <span class="mcq-start-ic" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor"><path d="m12 2 2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5Z"/></svg>
     </span>
@@ -150,7 +144,6 @@
     </span>
     <span class="mcq-start-go">Start Now</span>
   </a>
--->
 
   <!-- ====== BY AGE ====== -->
   <section class="mcq-sec">
@@ -163,7 +156,7 @@
     <div class="mcq-agegrid">
 
       <a class="mcq-agecard" aria-disabled="true" data-age="old-english" style="--mark:#3F5165">
-        <span class="mcq-mono" aria-hidden="true">O</span>
+        <img class="mcq-pic" src="/assets/ages/old-english.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Old English</strong>
           <span class="mcq-years">450&ndash;1066</span>
@@ -173,7 +166,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="middle-english" style="--mark:#4A6473">
-        <span class="mcq-mono" aria-hidden="true">M</span>
+        <img class="mcq-pic" src="/assets/ages/middle-english.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Middle English</strong>
           <span class="mcq-years">1066&ndash;1500</span>
@@ -183,27 +176,47 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="renaissance" style="--mark:#4F6F68">
-        <span class="mcq-mono" aria-hidden="true">R</span>
+        <img class="mcq-pic" src="/assets/ages/renaissance.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Renaissance</strong>
-          <span class="mcq-years">1500&ndash;1603</span>
+          <span class="mcq-years">1500&ndash;1558</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="elizabethan" style="--mark:#53705F">
+        <img class="mcq-pic" src="/assets/ages/renaissance.webp" alt="" width="640" height="400" loading="lazy">
+        <span class="mcq-agename">
+          <strong>Elizabethan</strong>
+          <span class="mcq-years">1558&ndash;1603</span>
         </span>
         <span class="mcq-bar" aria-hidden="true"><i></i></span>
         <span class="mcq-state">Questions coming soon</span>
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="jacobean" style="--mark:#566F5A">
-        <span class="mcq-mono" aria-hidden="true">J</span>
+        <img class="mcq-pic" src="/assets/ages/jacobean.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Jacobean</strong>
-          <span class="mcq-years">1603&ndash;1660</span>
+          <span class="mcq-years">1603&ndash;1625</span>
+        </span>
+        <span class="mcq-bar" aria-hidden="true"><i></i></span>
+        <span class="mcq-state">Questions coming soon</span>
+      </a>
+
+      <a class="mcq-agecard" aria-disabled="true" data-age="caroline" style="--mark:#5F7254">
+        <img class="mcq-pic" src="/assets/ages/jacobean.webp" alt="" width="640" height="400" loading="lazy">
+        <span class="mcq-agename">
+          <strong>Caroline</strong>
+          <span class="mcq-years">1625&ndash;1649</span>
         </span>
         <span class="mcq-bar" aria-hidden="true"><i></i></span>
         <span class="mcq-state">Questions coming soon</span>
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="restoration" style="--mark:#6A7550">
-        <span class="mcq-mono" aria-hidden="true">R</span>
+        <img class="mcq-pic" src="/assets/ages/restoration.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Restoration</strong>
           <span class="mcq-years">1660&ndash;1700</span>
@@ -213,7 +226,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="augustan-age" style="--mark:#7D7548">
-        <span class="mcq-mono" aria-hidden="true">A</span>
+        <img class="mcq-pic" src="/assets/ages/augustan.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Augustan</strong>
           <span class="mcq-years">1700&ndash;1798</span>
@@ -223,7 +236,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="romantic-age" style="--mark:#8A6A44">
-        <span class="mcq-mono" aria-hidden="true">R</span>
+        <img class="mcq-pic" src="/assets/ages/romantic.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Romantic</strong>
           <span class="mcq-years">1798&ndash;1837</span>
@@ -233,7 +246,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="victorian-age" style="--mark:#8D5A45">
-        <span class="mcq-mono" aria-hidden="true">V</span>
+        <img class="mcq-pic" src="/assets/ages/victorian.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Victorian</strong>
           <span class="mcq-years">1837&ndash;1901</span>
@@ -243,7 +256,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="modern" style="--mark:#85484F">
-        <span class="mcq-mono" aria-hidden="true">M</span>
+        <img class="mcq-pic" src="/assets/ages/modern.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Modern</strong>
           <span class="mcq-years">1901&ndash;1945</span>
@@ -253,7 +266,7 @@
       </a>
 
       <a class="mcq-agecard" aria-disabled="true" data-age="contemporary" style="--mark:#7A4258">
-        <span class="mcq-mono" aria-hidden="true">C</span>
+        <img class="mcq-pic" src="/assets/ages/contemporary.webp" alt="" width="640" height="400" loading="lazy">
         <span class="mcq-agename">
           <strong>Contemporary</strong>
           <span class="mcq-years">1945 onwards</span>
@@ -266,13 +279,12 @@
   </section>
 
   <!-- ====== BY TOPIC ====== -->
-  <!-- PAUSED: /quizzes/mcq/topic/<topic>/ and /quizzes/mcq/build/ are not built yet. Put this block back when they are.
-<section class="mcq-sec">
+  <section class="mcq-sec">
     <div class="sechead">
       <h2>Practise By Topic</h2>
       <a class="more" href="/quizzes/mcq/build/">Mix topics and ages &rarr;</a>
     </div>
-    <p class="seclede">One topic, every period at once. Useful in the last fortnight before a paper.</p>
+    <p class="seclede">One topic, every period at once. Useful in the last two weeks before a paper.</p>
 
     <div class="mcq-topicgrid">
 
@@ -326,11 +338,9 @@
 
     </div>
   </section>
--->
 
   <!-- ====== BUILD YOUR OWN ====== -->
-  <!-- PAUSED: /quizzes/mcq/build/ is not built yet. Put this block back when it is.
-<a class="mcq-build" href="/quizzes/mcq/build/">
+  <a class="mcq-build" href="/quizzes/mcq/build/">
     <span class="ic" aria-hidden="true">
       <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/><circle cx="9" cy="7" r="2.3" fill="#fff"/><circle cx="15" cy="12" r="2.3" fill="#fff"/><circle cx="8" cy="17" r="2.3" fill="#fff"/></svg>
     </span>
@@ -340,7 +350,6 @@
     </span>
     <span class="go">Open the builder</span>
   </a>
--->
 
   <!-- ====== ALSO IN THE PRACTICE ZONE ====== -->
   <section class="mcq-sec mcq-sec-last">
