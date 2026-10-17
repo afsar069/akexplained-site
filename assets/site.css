@@ -992,3 +992,20 @@ summary.ptbtn::-webkit-details-marker{display:none}
 @media print{
   .mcq-modes,.mcq-exams,.mcq-start,.mcq-build,#carryOn{display:none !important}
 }
+
+/* ---------- practice pages: painted header ----------
+   Used by Quizzes, MCQ Practice, PYQ and Mock Tests. The picture sits at 80%
+   opacity and fades out at the bottom edge, into the page below. It replaces
+   the small motif, which the build only adds to a plain .pagehead. */
+.pagehead-practice::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:url("/assets/practice-head.webp") right center/cover no-repeat;
+  opacity:.8;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
+}
+.pagehead-practice{border-bottom-color:transparent}
+@media (max-width:760px){
+  /* on a narrow screen the text sits over the picture, so keep it light */
+  .pagehead-practice::before{opacity:.4;background-position:right bottom}
+}
