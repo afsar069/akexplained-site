@@ -166,8 +166,14 @@
     var fresh = $('#ageFresh');
     if (!strip) return;
 
+    /* "Still to see" sirf un sets ko ginta hai jo sach me khule hain.
+       Poore age ka plan 300 ka hai, par jo abhi likha nahi gaya use
+       "baaki bacha hua" batana jhooth hoga. */
     var answered = 0, wrong = 0, total = 0;
-    sets.forEach(function (s) { answered += s.answered; wrong += s.wrong; total += s.count; });
+    sets.forEach(function (s) {
+      answered += s.answered; wrong += s.wrong;
+      if (s.live) total += s.count;
+    });
 
     if (!answered) return; /* HTML me patti pehle se dikh rahi hai */
 
