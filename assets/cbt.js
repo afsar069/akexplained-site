@@ -579,7 +579,9 @@
           /* Yahan aapki tasveer aayegi. Tab tak jagah khali hai, par gol
              jitni oonchi — taaki tasveer lagte hi naap theek baithe.
              Image aane par bas is span ke andar <img> daal dein. */
-          '<span class="cbt-cup" aria-hidden="true"></span>' +
+          '<span class="cbt-cup" aria-hidden="true">' +
+            '<img src="/assets/trophy.webp" alt="" width="420" height="293">' +
+          '</span>' +
           '<div class="cbt-ringwrap">' +
             '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
               '<circle class="track" cx="60" cy="60" r="52"></circle>' +
@@ -602,21 +604,25 @@
 
       '<div class="cbt-stats">' +
         '<section class="cbt-nums" aria-label="How the paper went">' +
-          '<div class="cbt-num ok"><b>' + t.right + '</b><span>Correct</span></div>' +
-          '<div class="cbt-num no"><b>' + t.wrong + '</b><span>Incorrect</span></div>' +
-          '<div class="cbt-num is-skip"><b>' + t.skipped + '</b><span>Unanswered</span></div>' +
-          '<div class="cbt-num"><b>' + (used ? clock(used) : '—') + '</b><span>Time taken</span>' +
-            (allowed ? '<em>out of ' + clock(allowed) + '</em>' : '') + '</div>' +
+          numCell('ok', ic('<circle cx="12" cy="12" r="9"/><path d="m8.4 12.2 2.5 2.5 4.7-4.9"/>'),
+            t.right, 'Correct') +
+          numCell('no', ic('<circle cx="12" cy="12" r="9"/><path d="m9 9 6 6M15 9l-6 6"/>'),
+            t.wrong, 'Incorrect') +
+          numCell('is-skip', ic('<circle cx="12" cy="12" r="9"/><path d="M8.5 12h7"/>'),
+            t.skipped, 'Unanswered') +
+          numCell('is-time', ic('<circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.3 2"/>'),
+            (used ? clock(used) : '—'), 'Time taken',
+            allowed ? 'out of ' + clock(allowed) : '') +
         '</section>' +
         '<section class="cbt-nums cbt-nums3" aria-label="Accuracy, level and standing">' +
-          '<div class="cbt-num"><b>' + t.acc + '%</b><span>Your accuracy</span>' +
-            '<em>of the ' + t.answered + ' you answered</em>' +
-            '<span class="cbt-meter"><i style="width:' + t.acc + '%"></i></span></div>' +
-          '<div class="cbt-num"><b>' + esc(paper.levelName || 'Mixed') + '</b><span>Difficulty level</span>' +
-            '<em>' + Q.length + ' questions in this set</em></div>' +
-          '<div class="cbt-num is-locked"><b>' + lockIcon() + 'Locked</b>' +
-            '<span>Percentile · you vs others</span>' +
-            '<em><a href="/login/">Needs a student account</a></em></div>' +
+          numCell('is-acc', ic('<path d="M4 19V9M10 19V5M16 19v-6M3 20h18"/>'),
+            t.acc + '%', 'Your accuracy', 'of the ' + t.answered + ' you answered',
+            '<span class="cbt-meter"><i style="width:' + t.acc + '%"></i></span>') +
+          numCell('is-diff', ic('<path d="M5 20v-5M12 20V8M19 20v-9M3 20h18"/>'),
+            esc(paper.levelName || 'Mixed'), 'Difficulty level',
+            Q.length + ' questions in this set') +
+          numCell('is-locked', lockIcon(), 'Locked', 'Percentile · you vs others',
+            '<a href="/login/">Needs a student account</a>') +
         '</section>' +
       '</div>' +
     '</div>';
@@ -628,6 +634,23 @@
     var name = '';
     try { name = (window.AK && window.AK.user && window.AK.user.name) || ''; } catch (e) {}
     return name || 'Guest User';
+  }
+
+  /* Ginti wala ek dabba: bagal me nishaan, phir badi ginti aur uska naam. */
+  function numCell(cls, icon, big, label, note, extra) {
+    return '<div class="cbt-num ' + cls + '">' +
+      '<span class="cbt-numic" aria-hidden="true">' + icon + '</span>' +
+      '<span class="cbt-numtxt">' +
+        '<b>' + big + '</b><span>' + label + '</span>' +
+        (note ? '<em>' + note + '</em>' : '') +
+        (extra || '') +
+      '</span>' +
+    '</div>';
+  }
+
+  function ic(path) {
+    return '<svg viewBox="0 0 24 24" width="21" height="21" fill="none" stroke="currentColor" ' +
+      'stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">' + path + '</svg>';
   }
 
   function lockIcon() {
@@ -835,7 +858,19 @@
      koi aankda bhara nahi gaya — sirf khaane bane hain aur unke
      naam, taaki khaata chalu hote hi bhar jaayein.
      --------------------------------------------------------- */
-  var LEVELS = ['Reader', 'Student', 'Scholar', 'Critic', 'Master'];
+  /* Paanch darje, pehle se aakhri tak. Har agle darje par ek sitara
+     zyada — isliye Beginner ek, Master paanch. */
+  var LEVELS = ['Beginner', 'Reader', 'Scholar', 'Critic', 'Master'];
+
+  function stars(n) {
+    var out = '';
+    for (var i = 1; i <= 5; i++) {
+      out += '<svg class="' + (i <= n ? 'on' : '') + '" viewBox="0 0 24 24" width="13" height="13" ' +
+        'fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.6 ' +
+        '6.1 20.9l1.3-6.7L2.5 9.6l6.6-.8Z"/></svg>';
+    }
+    return '<span class="cbt-stars">' + out + '</span>';
+  }
 
   function levelCard() {
     var cells = [
@@ -860,7 +895,9 @@
         }).join('') +
       '</div>' +
       '<ol class="cbt-ladder">' +
-        LEVELS.map(function (n) { return '<li><i></i><b>' + n + '</b></li>'; }).join('') +
+        LEVELS.map(function (n, i) {
+          return '<li><i></i><b>' + n + '</b>' + stars(i + 1) + '</li>';
+        }).join('') +
       '</ol>' +
     '</section>';
   }

@@ -1619,14 +1619,15 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 .cbt-cheer > *{position:relative}
 .cbt-cheertop{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:10px}
-/* Tasveer ki jagah — gol jitni hi oonchi, taaki aapki image lagte hi
-   naap theek baithe. Abhi khali hai, bas halki si rooprekha. */
-.cbt-cup{
-  flex:none;width:126px;height:126px;border-radius:16px;
-  border:1.5px dashed color-mix(in srgb,var(--tone) 34%,var(--border));
-  background:rgba(255,255,255,.45);
+/* Trophy — gol jitni hi oonchi. Tasveer chaudi hai (confetti ke saath),
+   isliye jagah bhi thodi chaudi, aur contain se poori samati hai. */
+.cbt-cup{flex:none;width:150px;height:126px;display:block}
+.cbt-cup img{
+  width:100%;height:100%;object-fit:contain;
+  filter:drop-shadow(0 4px 10px rgba(22,48,74,.18));
 }
-.cbt-cup img{width:100%;height:100%;object-fit:contain;border-radius:14px}
+/* Neeche ke do darje par trophy itni chamakti nahi */
+.cbt-cheer.b1 .cbt-cup img,.cbt-cheer.b2 .cbt-cup img{filter:grayscale(.55) opacity(.75)}
 .cbt-who{
   font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:var(--mcq-ink-faint);margin:0 0 12px;
@@ -1707,16 +1708,36 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;
   margin-bottom:18px;padding:0;
 }
-.cbt-num{background:var(--card-paper);border:1px solid var(--card-line);border-radius:13px;padding:15px 18px}
-.cbt-num b{display:block;font-family:var(--serif);font-size:1.55rem;font-weight:600;color:var(--ink)}
-.cbt-num span{
-  display:block;font-size:.7rem;font-weight:700;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--mcq-ink-faint);
+.cbt-num{
+  display:flex;align-items:flex-start;gap:13px;
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:13px;padding:16px 18px;
+}
+/* Nishaan ka gol — rang dabbe ke kaam ke hisaab se */
+.cbt-numic{
+  flex:none;width:38px;height:38px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--tint);color:var(--mcq-ink-faint);
+}
+.cbt-numtxt{min-width:0;flex:1}
+.cbt-num b{
+  display:block;font-family:var(--serif);font-size:1.95rem;font-weight:600;
+  color:var(--ink);line-height:1.05;
+}
+.cbt-num > .cbt-numtxt > span{
+  display:block;font-size:.72rem;font-weight:700;letter-spacing:.07em;
+  text-transform:uppercase;color:var(--ink);margin-top:5px;
 }
 .cbt-num.ok b{color:var(--teal)}
+.cbt-num.ok .cbt-numic{background:var(--teal-soft);color:var(--teal)}
 .cbt-num.no b{color:var(--mcq-red)}
+.cbt-num.no .cbt-numic{background:#FBEAEA;color:var(--mcq-red)}
 .cbt-num.is-skip b{color:var(--accent)}
-.cbt-num em{display:block;font-style:normal;font-size:.76rem;color:var(--mcq-ink-faint);margin-top:4px}
+.cbt-num.is-skip .cbt-numic{background:#FBF0E4;color:var(--accent)}
+.cbt-num.is-time .cbt-numic,.cbt-num.is-acc .cbt-numic,
+.cbt-num.is-diff .cbt-numic{background:var(--teal-soft);color:var(--teal)}
+.cbt-num.is-time b,.cbt-num.is-diff b{font-size:1.6rem}
+.cbt-num em{display:block;font-style:normal;font-size:.78rem;color:var(--mcq-ink-faint);margin-top:4px}
 .cbt-nums3{grid-template-columns:repeat(3,minmax(0,1fr))}
 /* Jo login ke baad aayega — dikhta hai, par saaf likha hai ke abhi nahi. */
 .cbt-num.is-soon{background:var(--tint);border-style:dashed}
@@ -1786,12 +1807,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-lockbox .cbt-begin:hover{background:#A2761F;color:#2F2206}
 /* Percentile ka chhota khana */
 .cbt-num.is-locked{background:var(--tint);border-style:dashed}
-.cbt-num.is-locked b{
-  display:flex;align-items:center;gap:6px;font-family:var(--sans);
-  font-size:.95rem;color:var(--mcq-ink-faint);
-}
-.cbt-num.is-locked .cbt-lockico{color:var(--gold)}
-.cbt-num.is-locked em a{font-weight:600;color:var(--teal)}
+.cbt-num.is-locked b{font-family:var(--sans);font-size:1.05rem;color:var(--mcq-ink-faint)}
+.cbt-num.is-locked .cbt-numic{background:var(--cream);color:var(--gold);border:1px solid var(--gold)}
+.cbt-num.is-locked a{display:inline-block;margin-top:5px;font-size:.78rem;font-weight:600;color:var(--teal)}
 .cbt-meter{display:block;height:6px;border-radius:999px;background:var(--tint);overflow:hidden;margin-top:9px}
 .cbt-meter i{display:block;height:100%;border-radius:999px;background:var(--teal)}
 
@@ -1892,20 +1910,38 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   text-transform:uppercase;color:var(--ink);margin-top:6px;
 }
 .cbt-levelcell em{display:block;font-style:normal;font-size:.75rem;color:var(--mcq-ink-faint);margin-top:2px}
+/* Darje ki seedhi — card ke ek kinare se doosre kinare tak.
+   Pehle 10% dono taraf chhoot jata tha; ab lakeer pehle gole se
+   aakhri gole tak poori jati hai. */
 .cbt-ladder{
-  list-style:none;margin:0;padding:0;display:flex;align-items:flex-start;position:relative;
+  list-style:none;margin:0;display:flex;align-items:flex-start;
+  position:relative;background:#fff;border:1px solid var(--card-line);
+  border-radius:12px;padding:18px 10px 16px;
+  /* ul,ol par upar max-width:74ch laga hai — wo seedhi ko aadha kar deta
+     tha, isliye yahan hatana padta hai. */
+  max-width:none;
 }
 .cbt-ladder::before{
-  content:"";position:absolute;left:10%;right:10%;top:8px;height:3px;
+  content:"";position:absolute;left:10%;right:10%;top:29px;height:3px;
   background:var(--border);border-radius:999px;
 }
 .cbt-ladder li{
-  flex:1;display:flex;flex-direction:column;align-items:center;gap:8px;
+  flex:1;display:flex;flex-direction:column;align-items:center;gap:9px;
   position:relative;z-index:1;text-align:center;
 }
-/* Chhote gole par dashed border taare jaisa dikhta hai — solid rakho. */
-.cbt-ladder li i{width:19px;height:19px;border-radius:50%;background:#fff;border:2.5px solid var(--border)}
-.cbt-ladder li b{font-size:.8rem;font-weight:600;color:var(--mcq-ink-faint)}
+.cbt-ladder li i{
+  width:21px;height:21px;border-radius:50%;background:#fff;
+  border:2.5px solid var(--border);
+}
+.cbt-ladder li b{font-size:.84rem;font-weight:700;color:var(--mcq-ink-faint)}
+/* Jitna ooncha darja, utne zyada sitare */
+.cbt-stars{display:flex;gap:2px;margin-top:-3px}
+.cbt-stars svg{color:var(--border)}
+.cbt-stars svg.on{color:var(--gold)}
+/* Khaata chalu hote hi ye do class lagengi — ab se hi taiyar hain. */
+.cbt-ladder li.is-past i{background:var(--teal-soft);border-color:var(--teal)}
+.cbt-ladder li.is-now i{background:var(--teal);border-color:var(--teal);transform:scale(1.22)}
+.cbt-ladder li.is-now b{color:var(--teal)}
 
 /* ---------- 8. aage kya padhein — do chhote dabbe ---------- */
 .cbt-suggest .cbt-card{padding:16px 20px}
@@ -2161,7 +2197,13 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-streakrow{gap:14px 18px}
   .cbt-streakweek{margin-inline:0;order:3;flex:1 1 100%}
   .cbt-streaklink{margin-left:0;flex:1 1 100%;text-align:center}
-  .cbt-ladder li b{font-size:.68rem}
+  .cbt-ladder{flex-wrap:wrap;gap:16px 0;padding:14px 8px}
+  .cbt-ladder::before{display:none}
+  .cbt-ladder li{flex:1 1 33%}
+  .cbt-ladder li b{font-size:.74rem}
+  .cbt-numic{width:33px;height:33px}
+  .cbt-num b{font-size:1.6rem}
+  .cbt-num.is-time b,.cbt-num.is-diff b{font-size:1.25rem}
   .cbt-anside{flex-direction:column}
   .cbt-donutwrap.cbt-donutbig{width:176px;height:176px;max-width:100%}
   .cbt-donutbig .cbt-donuttxt b{font-size:1.9rem}
@@ -2172,7 +2214,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-jnow{text-align:left}
   .cbt-revacts{margin-left:0;flex:1 1 100%}
   .cbt-revacts .cbt-btn{flex:1}
-  .cbt-cup{width:96px;height:96px}
+  .cbt-cup{width:118px;height:96px}
   .cbt-ringwrap,.cbt-ring{width:112px;height:112px}
   .cbt-after .cbt-btn{flex:1 1 100%}
   .cbt-qgrid{grid-template-columns:repeat(8,minmax(0,1fr))}
