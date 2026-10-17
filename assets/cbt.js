@@ -63,6 +63,7 @@
         }
         paper = data;
         key = 'akq:' + (data.setId || 'set') + ':v1';
+        if (root.getAttribute('data-mode') === 'review') { showReview(); return; }
         begin();
       })
       .catch(function (e) { broke(e); });
@@ -492,24 +493,24 @@
   function showResult() {
     var t = tally();
 
+    /* Page ka apna header hi badal dete hain — do header nahi. */
+    setHead('Your Final Score Board',
+      (paper.ageName || '') + ' — Practice Test ' + (paper.setNumber || 1),
+      'You have completed the test. Here is your detailed performance analysis.');
+
     root.innerHTML =
-      pageHead() + cheerRow(t) + streakStrip() +
-      topicRow(t) + analysisRow(t) + actionRow() + journeyRow(t) +
-
-      '<div class="cbt-filters" role="group" aria-label="Which questions to show">' +
-        '<button type="button" class="cbt-filter" data-show="all" aria-pressed="true">' +
-          'All ' + Q.length + '</button>' +
-        '<button type="button" class="cbt-filter" data-show="wrong" aria-pressed="false">' +
-          'Incorrect ' + t.wrong + '</button>' +
-        '<button type="button" class="cbt-filter" data-show="skip" aria-pressed="false">' +
-          'Unanswered ' + t.skipped + '</button>' +
-        '<button type="button" class="cbt-filter" data-show="right" aria-pressed="false">' +
-          'Correct ' + t.right + '</button>' +
-      '</div>' +
-
-      '<div id="cbtReview">' + Q.map(card).join('') + '</div>';
+      cheerRow(t) + streakStrip() + topicRow(t) + analysisRow(t) +
+      actionRow() + journeyRow(t) + levelCard() + suggestRow(t);
 
     wireResult(t);
+  }
+
+  /* Pagehead ke teen text badal do (start, test aur result ke liye alag). */
+  function setHead(title, eyebrow, lede) {
+    var h = $('#cbtTitle'), e = $('#cbtEyebrow'), l = $('#cbtLede');
+    if (h) h.textContent = title;
+    if (e) e.textContent = eyebrow;
+    if (l) l.textContent = lede;
   }
 
   /* ---------------------------------------------------------
@@ -575,26 +576,21 @@
     return '<div class="cbt-top">' +
       '<section class="cbt-cheer ' + g.cls + '" aria-label="Your score">' +
         '<div class="cbt-cheertop">' +
-          '<span class="cbt-cup" aria-hidden="true">' +
-            '<svg viewBox="0 0 64 64" width="58" height="58">' +
-              '<path d="M18 8h28v14a14 14 0 0 1-28 0Z" fill="currentColor"/>' +
-              '<path d="M18 12h-6a8 8 0 0 0 8 10M46 12h6a8 8 0 0 1-8 10" fill="none" ' +
-                'stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>' +
-              '<path d="M28 36h8v8h-8z" fill="currentColor"/>' +
-              '<path d="M20 50h24l-2-6H22Z" fill="currentColor"/>' +
-              '<rect x="17" y="50" width="30" height="5" rx="2.4" fill="currentColor"/>' +
-            '</svg>' +
-          '</span>' +
+          /* Yahan aapki tasveer aayegi. Tab tak jagah khali hai, par gol
+             jitni oonchi — taaki tasveer lagte hi naap theek baithe.
+             Image aane par bas is span ke andar <img> daal dein. */
+          '<span class="cbt-cup" aria-hidden="true"></span>' +
           '<div class="cbt-ringwrap">' +
             '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
               '<circle class="track" cx="60" cy="60" r="52"></circle>' +
               '<circle class="fill" cx="60" cy="60" r="52"></circle>' +
             '</svg>' +
             '<p class="cbt-ringtxt"><em>Your score</em><b' +
-            (score.length > 6 ? ' class="is-long"' : '') + '>' + score +
-            '</b><span>' + t.pc + '%</span></p>' +
+              (score.length > 6 ? ' class="is-long"' : '') + '>' + score +
+              '</b><span>' + t.pc + '%</span></p>' +
           '</div>' +
         '</div>' +
+        '<p class="cbt-who">' + esc(whoAmI()) + '</p>' +
         '<p class="cbt-badge">' + g.name + '</p>' +
         '<p class="cbt-cheermsg">' + g.line + '</p>' +
         (t.neg ? '<p class="cbt-negnote">' + t.right + ' right, less ' + t.lost +
@@ -624,6 +620,14 @@
         '</section>' +
       '</div>' +
     '</div>';
+  }
+
+  /* Login abhi nahi hai. Jis din hoga, wo naam yahan rakhega; tab tak
+     har koi Guest User hai — koi naam gada nahi ja raha. */
+  function whoAmI() {
+    var name = '';
+    try { name = (window.AK && window.AK.user && window.AK.user.name) || ''; } catch (e) {}
+    return name || 'Guest User';
   }
 
   function lockIcon() {
@@ -667,11 +671,23 @@
     '</div>';
   }
 
-  /* Dono sirf is attempt se. Teen se kam sawal wale topic par koi faisla nahi. */
+  /* ---------------------------------------------------------
+     3. Kya dikhega "Your strengths" aur "Areas to improve" me
+
+     Niyam ek hi hai, aur har naapa hua topic kahin na kahin jata hai:
+       tin ya zyada sawal + 70% ya upar  -> strengths
+       tin ya zyada sawal + 70% se neeche -> areas
+       tin se kam sawal                   -> kisi me nahi, alag likha
+     Har pankti me teen cheezein: naam, ginti (7 of 8), aur wahi patli
+     patti jo topic table me hai. Isliye dono box kabhi khali nahi dikhte.
+     --------------------------------------------------------- */
   function strongWeak(t) {
-    var solid = t.topics.filter(function (o) { return o.total >= 3 && o.pc >= 75; });
-    var weak  = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 60; });
-    var thin  = t.topics.filter(function (o) { return o.total < 3; });
+    var measured = t.topics.filter(function (o) { return o.total >= 3; });
+    var thin     = t.topics.filter(function (o) { return o.total < 3; });
+    var solid = measured.filter(function (o) { return o.pc >= 70; })
+      .sort(function (a, b) { return b.pc - a.pc; });
+    var weak  = measured.filter(function (o) { return o.pc < 70; })
+      .sort(function (a, b) { return a.pc - b.pc; });
 
     var li = function (o, tone) {
       return '<li class="' + tone + '">' +
@@ -679,9 +695,9 @@
           '<a href="' + esc(paper.notes || '/notes/') + '#' + esc(o.read || '') + '">' +
             esc(o.name) + '</a>' +
           '<em>' + o.right + ' of ' + o.total + '</em>' +
+          '<b>' + o.pc + '%</b>' +
         '</span>' +
-        '<span class="cbt-tbar"><i class="' + (tone === 'ok' ? 'ok' : 'low') +
-          '" style="width:' + o.pc + '%"></i></span>' +
+        '<span class="cbt-tbar"><i class="' + tone + '" style="width:' + o.pc + '%"></i></span>' +
       '</li>';
     };
 
@@ -690,16 +706,15 @@
         '<h2><span class="cbt-ic ok" aria-hidden="true">✓</span>Your strengths</h2>' +
         (solid.length
           ? '<ul class="cbt-list">' + solid.map(function (o) { return li(o, 'ok'); }).join('') + '</ul>'
-          : '<p class="sub">Nothing reached three quarters this time. The list below is where to start.</p>') +
+          : '<p class="sub">No topic reached seventy per cent on this paper. Everything measured is in the box below.</p>') +
       '</section>' +
       '<section class="cbt-card">' +
         '<h2><span class="cbt-ic low" aria-hidden="true">!</span>Areas to improve</h2>' +
         (weak.length
           ? '<ul class="cbt-list">' + weak.map(function (o) { return li(o, 'low'); }).join('') + '</ul>'
-          : '<p class="sub">No topic fell below sixty per cent. Keep it that way.</p>') +
-        (thin.length ? '<p class="cbt-thin">' + thin.map(function (o) {
-            return esc(o.name) + ' (' + o.right + '/' + o.total + ')'; }).join(', ') +
-          ' had too few questions here to call either way.</p>' : '') +
+          : '<p class="sub">Every measured topic cleared seventy per cent. Keep it that way.</p>') +
+        (thin.length ? '<p class="cbt-thin">Too few questions to judge: ' + thin.map(function (o) {
+            return esc(o.name) + ' (' + o.right + '/' + o.total + ')'; }).join(', ') + '.</p>' : '') +
       '</section>' +
     '</div>';
   }
@@ -725,7 +740,7 @@
     return '<div class="cbt-two cbt-two-an">' +
       '<section class="cbt-card">' +
         '<h2>Question analysis</h2>' +
-        '<div class="cbt-anrow">' +
+        '<div class="cbt-anrow cbt-anside">' +
           '<div class="cbt-donutwrap cbt-donutbig">' +
             '<svg class="cbt-donut" viewBox="0 0 120 120" aria-hidden="true">' +
               seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
@@ -748,11 +763,14 @@
     '</div>';
   }
 
-  /* ---------- 5. paanch button ---------- */
+  /* ---------- 5. paanch button ----------
+     Review ab isi page par nahi khulta — uske liye apna page hai,
+     taaki score board yahin khatam ho jaye. */
   function actionRow() {
+    var rev = (location.pathname.replace(/\/+$/, '') + '/review/');
     return '<div class="cbt-after">' +
-      '<button type="button" class="cbt-btn is-lead" id="cbtAll">Review all questions</button>' +
-      '<button type="button" class="cbt-btn" id="cbtCards">Review incorrect only</button>' +
+      '<a class="cbt-btn is-lead" href="' + esc(rev) + '">Review all questions</a>' +
+      '<a class="cbt-btn" href="' + esc(rev) + '?only=wrong">Review incorrect only</a>' +
       '<button type="button" class="cbt-btn" id="cbtPrint">Download result (PDF)</button>' +
       '<button type="button" class="cbt-btn" id="cbtAgain">Take a new test</button>' +
       '<a class="cbt-btn is-gold" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
@@ -771,44 +789,26 @@
     ];
     var next = marks.filter(function (m) { return m.pc > at; })[0];
 
-    var weak = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 60; });
-    var tip = weak.length
-      ? 'Start with ' + weak.slice(0, 2).map(function (o) { return esc(o.name).toLowerCase(); }).join(' and ') +
-        '. Read that part of the notes, then take this set again and watch those numbers move.'
-      : t.skipped
-      ? 'You know the material. The ' + t.skipped + ' you left blank are the cheapest marks on the paper — answer them next time, even on a half-guess.'
-      : 'Nothing is badly weak. Come back in a week and see how much has stayed without a reread.';
-
     return '<section class="cbt-card cbt-journey">' +
-why_head(t, at, next) +
-        '<div class="cbt-track">' +
-          '<span class="cbt-trackfill" style="width:' + at + '%"></span>' +
-          marks.map(function (m) {
-            return '<span class="cbt-tick' + (at >= m.pc ? ' is-past' : '') + '" style="left:' + m.pc + '%">' +
-              '<i></i><b>' + m.pc + '%</b><em>' + esc(m.label) + '</em></span>';
-          }).join('') +
-          '<span class="cbt-you" style="left:' + at + '%"><i></i><b>You · ' + at + '%</b></span>' +
+      '<div class="cbt-jhead">' +
+        '<div>' +
+          '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
+          '<p class="sub">Where this paper puts you on the scale for this set.</p>' +
         '</div>' +
-        '<p class="cbt-scale"><span>0%</span><span>100%</span></p>' +
-      '</section>' +
-
-      '<div class="cbt-two">' + levelCard() +
-        '<section class="cbt-card cbt-tip">' +
-          '<h2>Tip for you</h2>' +
-          '<p>' + tip + '</p>' +
-          advice(t.right, t.wrong, t.skipped, t.acc) +
-        '</section>' +
-      '</div>';
-  }
-
-  function why_head(t, at, next) {
-    return '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
-      '<p class="sub">' +
-        (next
-          ? 'You are at ' + at + '% on this set. ' + (next.pc - at) +
-            ' points more and you reach ' + esc(next.label).toLowerCase() + '.'
-          : 'You are at ' + at + '% on this set — the top of the scale for this one.') +
-      '</p>';
+        '<p class="cbt-jnow"><b>' + at + '%</b>' +
+          '<span>' + (next ? (next.pc - at) + ' more to reach ' + esc(next.label).toLowerCase()
+                            : 'the top of the scale') + '</span></p>' +
+      '</div>' +
+      '<div class="cbt-track">' +
+        '<span class="cbt-trackfill" style="width:' + at + '%"></span>' +
+        marks.map(function (m) {
+          return '<span class="cbt-tick' + (at >= m.pc ? ' is-past' : '') + '" style="left:' + m.pc + '%">' +
+            '<i></i><b>' + m.pc + '%</b><em>' + esc(m.label) + '</em></span>';
+        }).join('') +
+        '<span class="cbt-you" style="left:' + at + '%"><i></i></span>' +
+      '</div>' +
+      '<p class="cbt-scale"><span>0%</span><span>100%</span></p>' +
+    '</section>';
   }
 
   /* ---------------------------------------------------------
@@ -827,58 +827,75 @@ why_head(t, at, next) +
     { name: 'Master',  need: 500, acc: 85 }
   ];
 
-  /* Is browser me rakhe har set ka jod — sirf poore ho chuke attempt. */
-  function lifetime() {
-    var answered = 0, right = 0;
-    var store;
-    try { store = window.localStorage; } catch (e) { return { answered: 0, right: 0, acc: 0 }; }
-    if (!store) return { answered: 0, right: 0, acc: 0 };
+  /* ---------------------------------------------------------
+     7. English literature me darja — poore page par, aur band
 
-    for (var i = 0; i < store.length; i++) {
-      var k;
-      try { k = store.key(i); } catch (e) { continue; }
-      if (!k || k.indexOf('akq:') !== 0) continue;
-      var d;
-      try { d = JSON.parse(store.getItem(k)); } catch (e) { continue; }
-      if (!d || !d.pick) continue;
-      var a = Object.keys(d.pick).length;
-      var w = typeof d.wrongCount === 'number' ? d.wrongCount
-        : Array.isArray(d.wrongIds) ? d.wrongIds.length : 0;
-      answered += a;
-      right += Math.max(0, a - w);
-    }
-    return { answered: answered, right: right,
-             acc: answered ? Math.round(right / answered * 100) : 0 };
-  }
+     Ye ginti sach me ek hi khaate ki ho sakti hai. Ek browser ka
+     hisaab phone aur laptop ke beech toot jata hai, isliye yahan
+     koi aankda bhara nahi gaya — sirf khaane bane hain aur unke
+     naam, taaki khaata chalu hote hi bhar jaayein.
+     --------------------------------------------------------- */
+  var LEVELS = ['Reader', 'Student', 'Scholar', 'Critic', 'Master'];
 
   function levelCard() {
-    var L = lifetime();
-    var idx = 0;
-    LEVELS.forEach(function (lv, i) {
-      if (L.answered >= lv.need && L.acc >= lv.acc) idx = i;
-    });
-    var now = LEVELS[idx], next = LEVELS[idx + 1];
+    var cells = [
+      ['Tests taken', 'across every age'],
+      ['Questions answered', 'all sets together'],
+      ['Answered wrongly', 'waiting to be fixed'],
+      ['Left unanswered', 'never attempted'],
+      ['Your level', 'in English literature']
+    ];
 
-    var bar = LEVELS.map(function (lv, i) {
-      return '<li class="' + (i < idx ? 'is-past' : i === idx ? 'is-now' : '') + '">' +
-        '<i></i><b>' + esc(lv.name) + '</b></li>';
-    }).join('');
-
-    var line = next
-      ? 'For ' + esc(next.name) + ' you need ' +
-        Math.max(0, next.need - L.answered) + ' more questions answered' +
-        (L.acc < next.acc ? ' and ' + next.acc + '% accuracy, from ' + L.acc + '% now' : '') + '.'
-      : 'The top of the ladder. Keep it there.';
-
-    return '<section class="cbt-card cbt-level">' +
-      '<h2>Your level in English literature</h2>' +
-      '<p class="sub">From every set you have taken in this browser — ' +
-        L.answered + ' question' + (L.answered === 1 ? '' : 's') + ' answered, ' +
-        L.acc + '% right.</p>' +
-      '<p class="cbt-levelnow">' + esc(now.name) + '</p>' +
-      '<ol class="cbt-ladder">' + bar + '</ol>' +
-      '<p class="cbt-levelnext">' + line + '</p>' +
+    return '<section class="cbt-card cbt-level is-locked" aria-label="Your level, locked">' +
+      '<div class="cbt-levelhead">' +
+        '<div>' +
+          '<h2>' + lockIcon() + 'Your level in English literature</h2>' +
+          '<p class="sub">Everything you have done, in one line — kept with your account, not with this browser.</p>' +
+        '</div>' +
+        '<a class="cbt-streaklink" href="/login/">Coming with student accounts</a>' +
+      '</div>' +
+      '<div class="cbt-levelrow">' +
+        cells.map(function (c) {
+          return '<div class="cbt-levelcell"><b>—</b><span>' + c[0] + '</span><em>' + c[1] + '</em></div>';
+        }).join('') +
+      '</div>' +
+      '<ol class="cbt-ladder">' +
+        LEVELS.map(function (n) { return '<li><i></i><b>' + n + '</b></li>'; }).join('') +
+      '</ol>' +
     '</section>';
+  }
+
+  /* ---------------------------------------------------------
+     8. Aage kya padhein, aage kya karein — ek patli patti, do dabbe
+     --------------------------------------------------------- */
+  function suggestRow(t) {
+    var weak = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 70; })
+      .sort(function (a, b) { return a.pc - b.pc; }).slice(0, 3);
+    var pick = weak.length ? weak : t.topics.slice(0, 3);
+
+    return '<div class="cbt-two cbt-suggest">' +
+      '<section class="cbt-card">' +
+        '<h2>Suggested reading</h2>' +
+        '<ul class="cbt-sug">' +
+          pick.map(function (o) {
+            return '<li><a href="' + esc(paper.notes || '/notes/') + '#' + esc(o.read || '') + '">' +
+              esc(o.name) + '</a><span>' + o.right + ' of ' + o.total + ' here</span></li>';
+          }).join('') +
+          '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +
+            'Quick revision — 50 points</a><span>the whole age on one screen</span></li>' +
+        '</ul>' +
+      '</section>' +
+      '<section class="cbt-card">' +
+        '<h2>Where to go next</h2>' +
+        '<ul class="cbt-sug">' +
+          '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
+            esc(paper.ageName || 'This age') + ' — the full notes</a><span>everything these questions came from</span></li>' +
+          '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
+            'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one</span></li>' +
+          '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
+        '</ul>' +
+      '</section>' +
+    '</div>';
   }
 
   /* ---------------------------------------------------------
@@ -1070,64 +1087,122 @@ why_head(t, at, next) +
       });
     }
 
-    $$('.cbt-filter').forEach(function (b) {
-      b.addEventListener('click', function () {
-        var show = b.getAttribute('data-show');
-        $$('.cbt-filter').forEach(function (o) {
-          o.setAttribute('aria-pressed', o === b ? 'true' : 'false');
-        });
-        $$('#cbtReview .cbt-review').forEach(function (c) {
-          c.classList.toggle('is-hidden', show !== 'all' && c.getAttribute('data-state') !== show);
-        });
-      });
-    });
-
-    /* Ginti wali patti se seedha us sawal par */
+    /* Ginti wali patti se seedha us sawal ke review par, agle page par. */
     var grid = $('.cbt-qgrid');
     if (grid) {
       grid.addEventListener('click', function (e) {
         var cell = e.target.closest('[data-go]');
         if (!cell) return;
-        var all = $('.cbt-filter[data-show="all"]');
-        if (all && all.getAttribute('aria-pressed') !== 'true') all.click();
-        var target = $$('#cbtReview .cbt-review')[+cell.getAttribute('data-go')];
-        if (!target) return;
-        target.scrollIntoView({ block: 'center',
-          behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
-        target.classList.add('is-lit');
-        setTimeout(function () { target.classList.remove('is-lit'); }, 1800);
+        location.href = location.pathname.replace(/\/+$/, '') + '/review/#q' +
+          (+cell.getAttribute('data-go') + 1);
       });
-    }
-
-    /* "Review all questions" — list par le jata hai, filter saaf karke */
-    var all = $('#cbtAll');
-    if (all) {
-      all.addEventListener('click', function () {
-        var f = $('.cbt-filter[data-show="all"]');
-        if (f && f.getAttribute('aria-pressed') !== 'true') f.click();
-        var list = $('#cbtReview');
-        if (list) list.scrollIntoView({ block: 'start',
-          behavior: matchMedia('(prefers-reduced-motion:reduce)').matches ? 'auto' : 'smooth' });
-      });
-    }
-
-    /* "Review incorrect only" — ek-ek karke, flashcard ki tarah */
-    var cards = $('#cbtCards');
-    if (cards) {
-      var wrongIdx = Q.map(function (q, i) { return i; }).filter(function (i) {
-        return st.pick[i] !== undefined && st.pick[i] !== Q[i].correct_option_id;
-      });
-      if (!wrongIdx.length) cards.disabled = true;
-      else cards.addEventListener('click', function () { flashcards(wrongIdx); });
     }
 
     var pr = $('#cbtPrint');
     if (pr) pr.addEventListener('click', function () { window.print(); });
 
-    $('#cbtAgain').addEventListener('click', function () {
-      try { localStorage.removeItem(key); } catch (e) {}
-      location.href = location.pathname;
+    var again = $('#cbtAgain');
+    if (again) {
+      again.addEventListener('click', function () {
+        try { localStorage.removeItem(key); } catch (e) {}
+        location.href = location.pathname;
+      });
+    }
+  }
+
+  /* ---------------------------------------------------------
+     Review ka apna page
+
+     Score board wahin khatam ho jata hai. Ye page wahi attempt
+     padhta hai jo browser me rakha hai, aur saare sawal dikhata hai.
+     ?only=wrong ke saath seedha galat waalo par khulta hai.
+     --------------------------------------------------------- */
+  function showReview() {
+    var done = read();
+    if (!done || !done.done || !done.pick) {
+      root.innerHTML =
+        '<div class="cbt-start">' +
+          '<h1>Nothing to review yet</h1>' +
+          '<p class="lede">This page shows the answers from your last run at this set, ' +
+            'and there is no finished run saved in this browser.</p>' +
+          '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
+            '">Take the set first</a></p>' +
+        '</div>';
+      return;
+    }
+
+    st = done;
+    Q = paper.questions.slice(0, st.count || paper.questions.length);
+
+    var right = 0, wrong = 0, skipped = 0;
+    Q.forEach(function (q, i) {
+      if (st.pick[i] === undefined) skipped++;
+      else if (st.pick[i] === q.correct_option_id) right++;
+      else wrong++;
     });
+
+    var want = new URLSearchParams(location.search).get('only') === 'wrong' ? 'wrong' : 'all';
+    setHead(want === 'wrong' ? 'The ones you got wrong' : 'Review your answers',
+      (paper.ageName || '') + ' — Practice Test ' + (paper.setNumber || 1),
+      want === 'wrong'
+        ? 'Only the questions that went the wrong way, with the reason behind each right answer.'
+        : 'Every question from this set, with your answer beside the right one.');
+
+    root.innerHTML =
+      '<div class="cbt-revtop">' +
+        '<p class="cbt-revscore"><b>' + right + '/' + Q.length + '</b>' +
+          '<span>' + right + ' right · ' + wrong + ' wrong · ' + skipped + ' unanswered</span></p>' +
+        '<div class="cbt-revacts">' +
+          (wrong ? '<button type="button" class="cbt-btn is-lead" id="cbtCards">Take them one at a time</button>' : '') +
+          '<a class="cbt-btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
+            '">Back to the score board</a>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="cbt-filters" role="group" aria-label="Which questions to show">' +
+        '<button type="button" class="cbt-filter" data-show="all" aria-pressed="' +
+          (want === 'all') + '">All ' + Q.length + '</button>' +
+        '<button type="button" class="cbt-filter" data-show="wrong" aria-pressed="' +
+          (want === 'wrong') + '">Incorrect ' + wrong + '</button>' +
+        '<button type="button" class="cbt-filter" data-show="skip" aria-pressed="false">' +
+          'Unanswered ' + skipped + '</button>' +
+        '<button type="button" class="cbt-filter" data-show="right" aria-pressed="false">' +
+          'Correct ' + right + '</button>' +
+      '</div>' +
+
+      '<div id="cbtReview">' + Q.map(card).join('') + '</div>';
+
+    function apply(show) {
+      $$('.cbt-filter').forEach(function (o) {
+        o.setAttribute('aria-pressed', o.getAttribute('data-show') === show ? 'true' : 'false');
+      });
+      $$('#cbtReview .cbt-review').forEach(function (c) {
+        c.classList.toggle('is-hidden', show !== 'all' && c.getAttribute('data-state') !== show);
+      });
+    }
+
+    $$('.cbt-filter').forEach(function (b) {
+      b.addEventListener('click', function () { apply(b.getAttribute('data-show')); });
+    });
+    apply(want);
+
+    var cards = $('#cbtCards');
+    if (cards) {
+      var wrongIdx = Q.map(function (q, i) { return i; }).filter(function (i) {
+        return st.pick[i] !== undefined && st.pick[i] !== Q[i].correct_option_id;
+      });
+      cards.addEventListener('click', function () { flashcards(wrongIdx); });
+    }
+
+    /* Score board ki ginti se seedha #q17 par aaye hain to wahin le jao. */
+    var m = /^#q(\d+)$/.exec(location.hash);
+    if (m) {
+      var el = $$('#cbtReview .cbt-review')[+m[1] - 1];
+      if (el) {
+        el.scrollIntoView({ block: 'center' });
+        el.classList.add('is-lit');
+      }
+    }
   }
 
   /* ---------------------------------------------------------
@@ -1188,7 +1263,14 @@ why_head(t, at, next) +
       window.scrollTo(0, 0);
     }
 
-    function leave() { root.innerHTML = back; wireResult(tally()); window.scrollTo(0, 0); }
+    function leave() {
+      root.innerHTML = back;
+      /* Score board par ring aur ginti dobara jodni padti hai; review
+         page par wo hai hi nahi, isliye wahan page naye sire se bana lo. */
+      if (root.getAttribute('data-mode') === 'review') showReview();
+      else wireResult(tally());
+      window.scrollTo(0, 0);
+    }
 
     draw();
   }
@@ -1214,10 +1296,14 @@ why_head(t, at, next) +
         '</div>';
     }).join('');
 
-    return '<article class="cbt-review" data-state="' + state + '">' +
-      '<div class="cbt-rtop"><span class="cbt-qnum">Question ' + (i + 1) + '</span>' + tag + '</div>' +
+    return '<article class="cbt-review" id="q' + (i + 1) + '" data-state="' + state + '">' +
+      '<div class="cbt-rtop"><span class="cbt-qnum">Question ' + (i + 1) + '</span>' + tag +
+        (q.topic && paper.topics ? '<span class="cbt-rtopic">' +
+          esc(paper.topics[q.topic] || '') + '</span>' : '') + '</div>' +
       '<p class="cbt-rq">' + esc(q.question) + '</p>' + opts +
-      (q.explanation ? '<p class="cbt-why"><b>Why:</b> ' + esc(q.explanation) + '</p>' : '') +
+      (q.explanation ? '<p class="cbt-why"><b>Why:</b> ' + esc(q.explanation) +
+        (q.read ? ' <a href="' + esc(paper.notes || '/notes/') + '#' + esc(q.read) +
+          '">Read this part \u2192</a>' : '') + '</p>' : '') +
       '</article>';
   }
 
