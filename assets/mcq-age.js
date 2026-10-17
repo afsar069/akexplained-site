@@ -1,0 +1,400 @@
+/* =========================================================
+   ONE AGE'S PRACTICE PAGE  —  /quizzes/mcq/<age>/
+   assets/mcq-age.js
+
+   Ye file har age ke page par chalti hai. Page iske bina bhi
+   poora padha ja sakta hai: saare set, saare label aur notes ke
+   saare link HTML me hi likhe hain. Ye script sirf wo hissa
+   jodti hai jo is browser me rakhe hisaab par tika hai.
+
+   Paanch kaam:
+     1. Kaun se set chalu hain — LIVE_SETS se tay hota hai.
+     2. Topic aur level se list chhanna (?topic= / ?level= se bhi).
+     3. Upar ke chaar gine-gine dabbe bharna.
+     4. "Kaisa chal raha hai" card banana, weakest set pehle.
+     5. Is device ka hisaab mitana.
+
+   Quiz engine isi localStorage me likhta hai, aur yahi padha jata hai:
+     key   akq:<setId>:v1
+     value { setId, count, pick:{}, done, wrongCount|wrongIds, endedAt }
+   right = answered - wrong. Naya engine inhi naamo se likhe.
+   ========================================================= */
+(function () {
+  'use strict';
+
+  /* ---------------------------------------------------------
+     1. KAUN SE SET CHALU HAIN
+     Jis din us set ke 25 sawal taiyar ho jaayein, uska id
+     yahan jod dein — bas. Row apne aap link ban jaati hai.
+     Jo yahan nahi hai, uspar "Coming soon" likha rehta hai
+     aur wo link nahi banta, taaki koi khali page par na pahunche.
+     --------------------------------------------------------- */
+  var LIVE_SETS = [
+    // 'old-english-set-1',
+    // 'old-english-set-2',
+    // 'old-english-set-3',
+    // 'old-english-set-4',
+    // 'old-english-set-5',
+    // 'old-english-set-6'
+  ];
+
+  var $ = function (sel, root) { return (root || document).querySelector(sel); };
+  var $$ = function (sel, root) {
+    return Array.prototype.slice.call((root || document).querySelectorAll(sel));
+  };
+
+  var page = $('[data-agehub]');
+  if (!page) return;
+
+  var AGE = page.getAttribute('data-age') || '';
+  var FILTER_KEY = 'ak:agehub:' + AGE;
+
+  /* Page par likhi har set row ek object ban jaati hai. */
+  var sets = $$('.agehub-set', page).map(function (row) {
+    return {
+      row: row,
+      id: row.getAttribute('data-set') || '',
+      topics: (row.getAttribute('data-topic') || '').split(/\s+/).filter(Boolean),
+      levels: (row.getAttribute('data-level') || '').split(/\s+/).filter(Boolean),
+      name: (($('.agehub-settitle', row) || {}).textContent || '').trim(),
+      count: parseInt(row.getAttribute('data-count'), 10) || 0,
+      live: false,
+      answered: 0,
+      wrong: 0,
+      done: false,
+      open: false
+    };
+  });
+  if (!sets.length) return;
+
+  /* ---------------------------------------------------------
+     Is device par rakha hisaab padhna
+     --------------------------------------------------------- */
+  function store() {
+    try { return window.localStorage || null; } catch (e) { return null; }
+  }
+
+  function readProgress() {
+    var s = store();
+    if (!s) return;
+
+    sets.forEach(function (set) {
+      if (!set.id) return;
+      var raw, data;
+      try { raw = s.getItem('akq:' + set.id + ':v1'); } catch (e) { return; }
+      if (!raw) return;
+      try { data = JSON.parse(raw); } catch (e) { return; }
+      if (!data || typeof data !== 'object') return;
+
+      set.answered = (data.pick && typeof data.pick === 'object')
+        ? Object.keys(data.pick).length : 0;
+      set.wrong = typeof data.wrongCount === 'number' ? data.wrongCount
+        : Array.isArray(data.wrongIds) ? data.wrongIds.length : 0;
+      if (typeof data.count === 'number' && data.count > 0) set.count = data.count;
+      set.done = data.done === true || (set.count > 0 && set.answered >= set.count);
+      set.open = !set.done && set.answered > 0;
+    });
+  }
+
+  /* ---------------------------------------------------------
+     2. KAUN SE SET CHALU HAIN — row ko link banana
+     Markup me href nahi hai, isliye script band ho to bhi
+     adhoora set link nahi banta.
+     --------------------------------------------------------- */
+  function openSets() {
+    sets.forEach(function (set) {
+      set.live = set.id && LIVE_SETS.indexOf(set.id) > -1;
+      if (!set.live) return;
+
+      var slot = $('.agehub-soon', set.row);
+      if (!slot) return;
+
+      var a = document.createElement('a');
+      a.className = 'agehub-go' + (set.open ? ' is-solid' : '');
+      a.href = '/quizzes/mcq/' + AGE + '/' + set.id.replace(AGE + '-', '') + '/';
+      a.textContent = set.done ? 'Do it again' : set.open ? 'Carry on' : 'Start';
+      slot.parentNode.replaceChild(a, slot);
+    });
+  }
+
+  /* Row par badge, haal aur patli progress patti. */
+  function paintSets() {
+    sets.forEach(function (set) {
+      var badge = $('.agehub-badge', set.row);
+      var meta = $('.agehub-setmeta', set.row);
+      var bar = $('.mcq-bar', set.row);
+      var fill = bar ? $('i', bar) : null;
+
+      set.row.classList.toggle('is-done', set.done);
+      set.row.classList.toggle('is-open', set.open);
+
+      if (set.done && badge) badge.textContent = '✓';
+
+      if (!set.answered) { if (bar) bar.hidden = true; return; }
+
+      if (bar && set.count) {
+        bar.hidden = false;
+        var pc = Math.min(100, Math.round(set.answered / set.count * 100));
+        if (fill) {
+          fill.style.width = pc + '%';
+          fill.className = set.done ? 'is-done' : '';
+        }
+      } else if (bar) {
+        bar.hidden = true;
+      }
+
+      if (!meta) return;
+      if (set.done) {
+        meta.className = 'agehub-setmeta is-done';
+        meta.textContent = 'Finished · ' + (set.answered - set.wrong) +
+          ' of ' + set.answered + ' right';
+      } else {
+        meta.className = 'agehub-setmeta is-open';
+        meta.textContent = set.answered + ' of ' + set.count + ' answered';
+      }
+    });
+  }
+
+  /* ---------------------------------------------------------
+     3. UPAR KE CHAAR DABBE
+     Kuch answer nahi kiya to chaar khali dabbe dikhane ka
+     koi matlab nahi — tab unki jagah ek chhoti patti rehti hai.
+     --------------------------------------------------------- */
+  function paintStats() {
+    var strip = $('#ageStats');
+    var fresh = $('#ageFresh');
+    if (!strip) return;
+
+    var answered = 0, wrong = 0, total = 0;
+    sets.forEach(function (s) { answered += s.answered; wrong += s.wrong; total += s.count; });
+
+    if (!answered) return; /* HTML me patti pehle se dikh rahi hai */
+
+    var right = answered - wrong;
+    var pc = Math.round(right / answered * 100);
+
+    set('#statAnswered', answered);
+    set('#statRight', pc + '%');
+    set('#statRedo', wrong);
+    set('#statLeft', Math.max(0, total - answered));
+
+    strip.hidden = false;
+    if (fresh) fresh.hidden = true;
+
+    function set(sel, value) {
+      var el = $(sel);
+      if (el) el.textContent = String(value);
+    }
+  }
+
+  /* ---------------------------------------------------------
+     4. "KAISA CHAL RAHA HAI" — kamzor set pehle
+     Topic ke hisaab se nahi, set ke hisaab se: set 6 kai topic
+     chhoota hai, to topic ka hisaab sach nahi hota.
+     --------------------------------------------------------- */
+  function paintPerformance() {
+    var card = $('#agePerf');
+    var list = $('#agePerfList');
+    var redo = $('#ageRedo');
+    if (!card || !list) return;
+
+    var tried = sets.filter(function (s) { return s.answered > 0; });
+    if (!tried.length) return;
+
+    tried.sort(function (a, b) {
+      return (a.answered - a.wrong) / a.answered - (b.answered - b.wrong) / b.answered;
+    });
+
+    list.innerHTML = tried.map(function (s) {
+      var right = s.answered - s.wrong;
+      var pc = Math.round(right / s.answered * 100);
+      var tone = pc >= 80 ? 'is-done' : pc >= 55 ? 'is-weak' : '';
+      var colour = pc >= 80 ? 'var(--teal)' : pc >= 55 ? 'var(--gold)' : 'var(--mcq-red)';
+      return '<div class="agehub-perf">' +
+        '<div class="agehub-perftop"><span>' + esc(shortName(s.name)) + '</span>' +
+        '<i style="color:' + colour + '">' + right + ' of ' + s.answered + '</i></div>' +
+        '<span class="mcq-bar"><i class="' + tone + '" style="width:' + pc + '%"></i></span>' +
+        '</div>';
+    }).join('');
+
+    /* Markup me is button par href nahi hai, aur mistakes ka page tabhi
+       banta hai jab koi set chalu ho — isliye link yahin jodte hain. */
+    var wrong = sets.reduce(function (n, s) { return n + s.wrong; }, 0);
+    if (redo && wrong > 0 && LIVE_SETS.length) {
+      redo.href = '/quizzes/mcq/' + AGE + '/mistakes/';
+      redo.textContent = 'Practise my ' + wrong + ' mistake' + (wrong === 1 ? '' : 's');
+      redo.hidden = false;
+    }
+
+    card.hidden = false;
+  }
+
+  /* "Set 2 · Poets and poems" se sirf "Poets and poems" rakho —
+     card patla hai, dono nahi samate. */
+  function shortName(name) {
+    var cut = name.split('·');
+    return (cut.length > 1 ? cut.slice(1).join('·') : name).trim() || name;
+  }
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  /* ---------------------------------------------------------
+     5. CHHANNA — topic aur level
+     Sirf do level hain, Medium aur Hard, aur dono alag-alag
+     on/off hote hain. Aakhri chalu level band nahi hota, warna
+     list khali ho jaati aur wajah dikhti nahi.
+     --------------------------------------------------------- */
+  var state = { topic: 'all', levels: ['medium', 'hard'] };
+
+  function readState() {
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(FILTER_KEY) || 'null'); } catch (e) {}
+    if (saved && typeof saved === 'object') {
+      if (typeof saved.topic === 'string') state.topic = saved.topic;
+      if (Array.isArray(saved.levels) && saved.levels.length) state.levels = saved.levels;
+    }
+
+    /* URL ka hukum chalega — bhej kar share kiya gaya link waisa hi khulna chahiye. */
+    var q = new URLSearchParams(location.search);
+    var t = q.get('topic');
+    var l = q.get('level');
+    if (t) state.topic = t;
+    if (l) {
+      var asked = l.split(',').map(function (x) { return x.trim().toLowerCase(); })
+        .filter(function (x) { return x === 'medium' || x === 'hard'; });
+      if (asked.length) state.levels = asked;
+    }
+  }
+
+  function saveState() {
+    try { localStorage.setItem(FILTER_KEY, JSON.stringify(state)); } catch (e) {}
+  }
+
+  /* Pata patti me filter dikhta rahe, taaki page share kiya ja sake. */
+  function stampUrl() {
+    if (!window.history || !history.replaceState) return;
+    var q = new URLSearchParams(location.search);
+    state.topic === 'all' ? q.delete('topic') : q.set('topic', state.topic);
+    state.levels.length === 2 ? q.delete('level') : q.set('level', state.levels.join(','));
+    var qs = q.toString();
+    try {
+      history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
+    } catch (e) {}
+  }
+
+  function apply() {
+    var topicSel = $('#ageTopic');
+    if (topicSel) topicSel.value = state.topic;
+
+    $$('.agehub-level', page).forEach(function (b) {
+      var on = state.levels.indexOf(b.getAttribute('data-level')) > -1;
+      b.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+
+    var shown = 0;
+    sets.forEach(function (set) {
+      var okTopic = state.topic === 'all' || set.topics.indexOf(state.topic) > -1;
+      var okLevel = set.levels.some(function (l) { return state.levels.indexOf(l) > -1; });
+      var on = okTopic && okLevel;
+      set.row.classList.toggle('is-hidden', !on);
+      if (on) shown++;
+    });
+
+    var empty = $('#ageEmpty');
+    if (empty) empty.hidden = shown > 0;
+
+    var count = $('#ageCount');
+    if (count) {
+      count.textContent = shown === sets.length
+        ? 'All ' + sets.length + ' sets'
+        : shown === 0 ? 'No set matches'
+        : shown + ' of ' + sets.length + ' sets';
+    }
+
+    var clear = $('#ageClear');
+    if (clear) clear.hidden = state.topic === 'all' && state.levels.length === 2;
+
+    saveState();
+    stampUrl();
+  }
+
+  function wireFilters() {
+    var topicSel = $('#ageTopic');
+    if (topicSel) {
+      topicSel.addEventListener('change', function () {
+        state.topic = topicSel.value;
+        apply();
+      });
+    }
+
+    $$('.agehub-level', page).forEach(function (b) {
+      b.addEventListener('click', function () {
+        var level = b.getAttribute('data-level');
+        var at = state.levels.indexOf(level);
+        if (at > -1) {
+          if (state.levels.length === 1) return; /* aakhri level band nahi hota */
+          state.levels.splice(at, 1);
+        } else {
+          state.levels.push(level);
+        }
+        apply();
+      });
+    });
+
+    var clear = $('#ageClear');
+    if (clear) {
+      clear.addEventListener('click', function () {
+        state.topic = 'all';
+        state.levels = ['medium', 'hard'];
+        apply();
+        if (topicSel) topicSel.focus();
+      });
+    }
+  }
+
+  /* ---------------------------------------------------------
+     Is device ka hisaab mitana
+     --------------------------------------------------------- */
+  function wireWipe() {
+    var btn = $('#ageWipe');
+    if (!btn) return;
+
+    var any = sets.some(function (s) { return s.answered > 0; });
+    if (!any) return;
+    btn.hidden = false;
+
+    btn.addEventListener('click', function () {
+      if (!window.confirm('Clear your ' + (page.getAttribute('data-agename') || 'practice') +
+        ' progress on this device? This cannot be undone.')) return;
+      var s = store();
+      if (s) {
+        sets.forEach(function (set) {
+          try { s.removeItem('akq:' + set.id + ':v1'); } catch (e) {}
+        });
+      }
+      location.reload();
+    });
+  }
+
+  /* --------------------------------------------------------- */
+  function start() {
+    try { readProgress(); } catch (e) {}
+    try { openSets(); } catch (e) {}
+    try { paintSets(); } catch (e) {}
+    try { paintStats(); } catch (e) {}
+    try { paintPerformance(); } catch (e) {}
+    try { readState(); } catch (e) {}
+    try { wireFilters(); apply(); } catch (e) {}
+    try { wireWipe(); } catch (e) {}
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', start);
+  } else {
+    start();
+  }
+})();

@@ -108,6 +108,10 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
   border-left:2px solid var(--border);border-radius:0 9px 9px 0;margin-left:16px;
 }
 .navgroup .sub a:hover{border-left-color:var(--teal);color:var(--teal-dark)}
+/* Submenu ka link jis par hum hain. Upar wala aria-current rule isi specificity
+   ka hai aur ye baad me aata hai, isliye wahan ka color:#fff dab jata tha —
+   teal patti par text aadha dikhta tha. Yahan dobara likhna padta hai. */
+.navgroup .sub a[aria-current="page"]{color:#fff;border-left-color:var(--teal)}
 
 .navfoot{margin-top:auto;padding:16px 18px 22px;border-top:1px solid var(--border);font-size:.76rem;color:var(--body)}
 
@@ -1008,4 +1012,325 @@ summary.ptbtn::-webkit-details-marker{display:none}
 @media (max-width:760px){
   /* on a narrow screen the text sits over the picture, so keep it light */
   .pagehead-practice::before{opacity:.4;background-position:right bottom}
+}
+
+/* =========================================================
+   ONE AGE'S PRACTICE PAGE  —  /quizzes/mcq/<age>/
+   Pehla page: /quizzes/mcq/old-english/
+
+   Sab kuch .agehub- se shuru hota hai, isliye upar ke kisi
+   rule se nahi takrata. Site se sirf .wrap, .crumb, .eyebrow,
+   .sechead, .seclede aur .more reuse hote hain.
+
+   Har age apna rang deta hai: section par style="--age:#3F5165".
+   Rang wahi hai jo MCQ hub ke age card par --mark me hai.
+   ========================================================= */
+
+/* hidden ka matlab hidden. Neeche kai jagah class par display set hai, aur
+   class browser ke apne [hidden] rule ko haraa deti hai — isliye ye line
+   zaroori hai, warna JS se chhupaya hissa phir bhi dikh jata hai. */
+.agehub-body [hidden]{display:none !important}
+
+/* ---------- age ka rangeen banner ---------- */
+.agehead{
+  --age:#3F5165;
+  position:relative;padding:30px 0 34px;overflow:hidden;
+  background:var(--age);color:#fff;
+}
+/* Age ki painting banner ke daayein kinare par, bahut halki.
+   Text ke neeche se fade ho jaati hai taaki padhne me dikkat na ho. */
+.agehead::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:var(--agepic) right center/cover no-repeat;opacity:.26;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 55%);
+  mask-image:linear-gradient(to right,transparent 0,#000 55%);
+}
+.agehead > .wrap{position:relative}
+.agehead .eyebrow{color:rgba(255,255,255,.82)}
+.agehead h1{
+  font-family:var(--serif);font-weight:600;color:#fff;
+  font-size:clamp(1.75rem,3.6vw,2.4rem);line-height:1.15;margin-bottom:8px;text-wrap:balance;
+}
+.agehead-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
+.agehead-sub{
+  font-family:var(--serif);font-size:clamp(.98rem,1.4vw,1.06rem);
+  color:rgba(255,255,255,.88);margin:0;max-width:52ch;
+}
+.agehead-btn{
+  flex:none;display:inline-flex;align-items:center;gap:7px;
+  font-size:.95rem;font-weight:600;color:#fff;
+  border:1.5px solid rgba(255,255,255,.42);background:rgba(255,255,255,.08);
+  padding:11px 20px;border-radius:11px;
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.agehead-btn:hover{
+  color:#fff;background:rgba(255,255,255,.17);
+  border-color:rgba(255,255,255,.7);transform:translateY(-2px);
+}
+
+/* ---------- page ka body ---------- */
+.agehub-body{padding-top:28px;padding-bottom:72px}
+
+/* ---------- jo aaj kaam karta hai: notes ka quiz ---------- */
+.agehub-ready{
+  display:flex;flex-wrap:wrap;align-items:center;gap:18px;
+  background:var(--mcq-teal-deep);border-radius:16px;padding:22px 26px;
+  margin-bottom:26px;text-decoration:none;
+}
+.agehub-ready:hover{background:#0C2523}
+.agehub-ready .ic{
+  width:48px;height:48px;border-radius:13px;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--mcq-teal);color:#fff;
+}
+.agehub-ready .txt{flex:1 1 300px;min-width:0}
+.agehub-ready strong{
+  display:block;font-family:var(--serif);font-size:1.22rem;
+  font-weight:600;color:#fff;margin-bottom:3px;
+}
+.agehub-ready span{display:block;font-size:.95rem;color:#B8CFCC}
+.agehub-ready .go{
+  flex:none;font-size:.95rem;font-weight:700;color:var(--mcq-teal-deep);
+  background:#fff;padding:13px 24px;border-radius:11px;white-space:nowrap;
+}
+
+/* ---------- upar ke chaar gine-gine dabbe ---------- */
+.agehub-stats{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:14px;margin-bottom:26px;padding:0;
+}
+.agehub-stat{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:14px;padding:16px 20px;
+}
+.agehub-stat b{
+  display:block;font-family:var(--serif);font-size:1.6rem;font-weight:600;
+  line-height:1.2;color:var(--ink);margin-bottom:2px;
+}
+.agehub-stat span{
+  display:block;font-size:.72rem;font-weight:700;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--mcq-ink-faint);
+}
+.agehub-stat.is-right b{color:var(--mcq-green)}
+.agehub-stat.is-redo b{color:#9A5B13}
+
+/* Kuch answer kiya hi nahi — tab yahi ek patti dikhti hai, chaar khali dabbe nahi. */
+.agehub-fresh{
+  background:var(--tint);border:1px solid var(--border);border-radius:14px;
+  padding:14px 20px;margin-bottom:26px;font-size:.92rem;
+}
+.agehub-fresh b{color:var(--ink)}
+
+/* ---------- do column ka dhancha ---------- */
+.agehub-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) 320px;
+  gap:24px;align-items:start;
+}
+
+/* ---------- chhanne ke control ---------- */
+.agehub-filters{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;
+  gap:16px 20px;align-items:end;margin-bottom:14px;
+}
+.agehub-field > label,.agehub-field > .lbl{
+  display:block;font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:7px;
+}
+.agehub-select{position:relative}
+.agehub-select select{
+  width:100%;appearance:none;-webkit-appearance:none;
+  background:#fff;border:1.5px solid var(--border);border-radius:999px;
+  padding:11px 44px 11px 18px;font:inherit;font-size:.97rem;font-weight:500;
+  color:var(--ink);cursor:pointer;
+  transition:border-color .2s,box-shadow .25s;
+}
+.agehub-select select:hover{border-color:var(--teal)}
+.agehub-select select:focus-visible{border-color:var(--teal);box-shadow:var(--glow);outline:none}
+.agehub-select svg{
+  position:absolute;right:17px;top:50%;transform:translateY(-50%);
+  pointer-events:none;color:var(--body);
+}
+
+/* Sirf do level hain — Medium aur Hard. Dono ek saath on ho sakte hain. */
+.agehub-levels{display:flex;gap:9px}
+.agehub-level{
+  font:inherit;font-size:.92rem;font-weight:500;padding:10px 20px;border-radius:999px;
+  border:1.5px solid var(--border);background:#fff;color:var(--ink);cursor:pointer;
+  transition:background .2s,color .2s,border-color .2s,transform .2s;
+}
+.agehub-level:hover{border-color:var(--teal);transform:translateY(-1px)}
+.agehub-level[aria-pressed="true"]{
+  background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600;
+}
+.agehub-level[aria-pressed="true"]:hover{background:var(--teal-dark)}
+
+.agehub-count{
+  display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;
+  font-size:.92rem;margin:0 0 14px;max-width:none;
+}
+.agehub-clear{
+  font:inherit;font-size:.86rem;font-weight:600;color:var(--teal);
+  background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;
+}
+.agehub-clear:hover{color:var(--teal-dark)}
+
+/* ---------- chhe set ki list ---------- */
+.agehub-sets{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;overflow:hidden;margin-bottom:18px;padding:0;
+}
+.agehub-set{
+  display:flex;align-items:center;gap:16px;
+  padding:17px 20px;border-bottom:1px solid var(--card-line);
+}
+.agehub-set:last-child{border-bottom:0}
+.agehub-set.is-hidden{display:none}
+.agehub-badge{
+  flex:none;width:34px;height:34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  font-size:.86rem;font-weight:700;background:var(--tint);color:var(--body);
+}
+.agehub-set.is-open .agehub-badge{background:var(--teal);color:#fff}
+.agehub-set.is-done .agehub-badge{background:var(--teal-soft);color:var(--teal)}
+.agehub-setbody{flex:1;min-width:0}
+.agehub-settitle{
+  display:block;font-weight:700;font-size:.99rem;color:var(--ink);margin-bottom:3px;
+}
+.agehub-setmeta{display:block;font-size:.86rem;color:var(--mcq-ink-faint)}
+.agehub-setmeta.is-done{color:var(--teal);font-weight:600}
+.agehub-setmeta.is-open{color:var(--mcq-blue-dark);font-weight:600}
+.agehub-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+.agehub-tag{
+  font-size:.72rem;font-weight:600;letter-spacing:.03em;
+  color:var(--body);background:var(--tint);border:1px solid var(--border);
+  border-radius:999px;padding:2px 9px;
+}
+.agehub-set .mcq-bar{max-width:230px;margin:8px 0 0}
+
+/* Set ka button. Sawal likhe jaane tak link nahi, sirf halka label. */
+.agehub-go{
+  flex:none;font-size:.86rem;font-weight:600;color:var(--ink);
+  background:#fff;border:1.5px solid var(--border);border-radius:10px;
+  padding:9px 18px;white-space:nowrap;
+  transition:border-color .2s,background .2s,transform .2s;
+}
+a.agehub-go:hover{border-color:var(--teal);color:var(--teal-dark);transform:translateY(-2px)}
+.agehub-go.is-solid{background:var(--teal);border-color:var(--teal);color:#fff}
+a.agehub-go.is-solid:hover{background:var(--teal-dark);color:#fff}
+.agehub-soon{
+  flex:none;font-size:.78rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--mcq-ink-faint);background:var(--tint);border:1px dashed var(--border);
+  border-radius:999px;padding:6px 14px;white-space:nowrap;
+}
+
+/* Filter se ek bhi set na bache, ya dono level band ho jaayein. */
+.agehub-empty{
+  padding:28px 22px;text-align:center;font-size:.95rem;color:var(--body);
+}
+.agehub-empty p{margin:0 auto;max-width:42ch}
+
+/* ---------- list ke neeche ke do bade button ---------- */
+.agehub-actions{display:flex;flex-wrap:wrap;gap:12px}
+.agehub-action{
+  font:inherit;font-size:.93rem;font-weight:600;color:var(--ink);
+  background:#fff;border:1.5px solid var(--border);border-radius:11px;padding:12px 20px;
+}
+.agehub-action.is-dashed{border-style:dashed}
+.agehub-action[aria-disabled="true"]{
+  color:var(--mcq-ink-faint);background:#FBFAF5;cursor:not-allowed;
+}
+a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
+
+/* ---------- daayein taraf ke card ---------- */
+.agehub-side{display:flex;flex-direction:column;gap:18px}
+.agehub-card{
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;padding:20px 22px;
+}
+.agehub-card h2{
+  font-family:var(--serif);font-size:1.12rem;font-weight:700;
+  color:var(--ink);margin-bottom:3px;
+}
+.agehub-card .sub{font-size:.86rem;color:var(--mcq-ink-faint);margin-bottom:16px}
+
+/* "Kaisa chal raha hai" — har topic ki ek patti */
+.agehub-perf{margin-bottom:14px}
+.agehub-perf:last-of-type{margin-bottom:0}
+.agehub-perftop{
+  display:flex;justify-content:space-between;gap:10px;
+  font-size:.86rem;font-weight:600;color:var(--ink);margin-bottom:6px;
+}
+.agehub-perftop i{font-style:normal}
+.agehub-perf .mcq-bar{margin:0}
+.agehub-redo{
+  display:block;width:100%;text-align:center;margin-top:18px;
+  font-size:.93rem;font-weight:600;color:#fff;background:var(--accent);
+  border:0;border-radius:11px;padding:12px 16px;
+  transition:background .2s,transform .2s;
+}
+.agehub-redo:hover{background:#9A330A;color:#fff;transform:translateY(-2px)}
+
+/* Padhne wale link — notes ke asli hisse */
+.agehub-read{
+  display:flex;align-items:center;gap:10px;
+  border:1px solid var(--card-line);border-radius:11px;
+  padding:11px 14px;margin-bottom:9px;
+  font-size:.93rem;font-weight:600;color:var(--ink);
+  transition:border-color .2s,background .2s,transform .2s;
+}
+.agehub-read:last-child{margin-bottom:0}
+.agehub-read:hover{border-color:var(--teal);background:var(--cream);color:var(--teal-dark);transform:translateY(-2px)}
+.agehub-read svg{flex:none;color:var(--teal)}
+.agehub-read em{display:block;font-style:normal;font-weight:400;font-size:.8rem;color:var(--mcq-ink-faint)}
+
+/* Device par rakha hisaab mitane wala button */
+.agehub-wipe{
+  font:inherit;font-size:.86rem;font-weight:600;color:var(--body);
+  background:none;border:0;padding:0;margin-top:14px;cursor:pointer;text-decoration:underline;
+}
+.agehub-wipe:hover{color:var(--accent)}
+
+/* Device ki yaad ke bare me chhoti saaf baat */
+.agehub-note{
+  font-size:.84rem;color:var(--mcq-ink-faint);
+  border-top:1px solid var(--card-line);margin-top:16px;padding-top:14px;
+}
+.agehub-note:first-child{border-top:0;margin-top:0;padding-top:0}
+
+/* ---------- chhoti screen ---------- */
+@media (max-width:1040px){
+  .agehub-grid{grid-template-columns:1fr}
+  .agehub-side{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:16px;align-items:start;
+  }
+}
+@media (max-width:760px){
+  .agehead{padding:22px 0 26px}
+  .agehead::before{opacity:.18}
+  .agehead-btn{width:100%;justify-content:center}
+  .agehub-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .agehub-filters{grid-template-columns:1fr;align-items:stretch}
+  .agehub-levels .agehub-level{flex:1}
+  .agehub-set{flex-wrap:wrap}
+  .agehub-setbody{flex:1 1 100%;order:2}
+  .agehub-go,.agehub-soon{order:3;width:100%;text-align:center}
+  .agehub-set .mcq-bar{max-width:none}
+  .agehub-action{width:100%;text-align:center}
+  .agehub-ready .go{width:100%;text-align:center}
+}
+
+/* Jo log animation band rakhte hain, unke liye kuch hilna-dulna nahi. */
+@media (prefers-reduced-motion:reduce){
+  .agehead-btn:hover,a.agehub-go:hover,a.agehub-action:hover,
+  .agehub-read:hover,.agehub-redo:hover,.agehub-level:hover{transform:none}
+}
+
+/* ---------- print ---------- */
+@media print{
+  .agehub-filters,.agehub-actions,.agehub-ready,
+  .agehub-redo,.agehub-wipe,.agehub-clear{display:none !important}
+  .agehead{background:#fff;color:#000}
+  .agehead::before{display:none}
+  .agehead h1,.agehead-sub,.agehead .eyebrow{color:#000}
+  .agehub-grid{display:block}
 }

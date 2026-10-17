@@ -45,15 +45,26 @@
       });
     });
 
-    /* Mark the page you are on. */
+    /* Mark the page you are on. Thik woh link na mile — jaise
+       /quizzes/mcq/old-english/ — to uske sabse nazdeeki parent ko
+       mark karo, taaki andar ke page par bhi menu me jagah dikhe. */
     const here = location.pathname.replace(/\/+$/, '/') || '/';
-    nav.querySelectorAll('ul a[href]').forEach(function (a) {
+    const links = Array.prototype.slice.call(nav.querySelectorAll('ul a[href]'));
+    let best = null;
+
+    links.forEach(function (a) {
       const href = a.getAttribute('href');
-      if (href === here) {
-        a.setAttribute('aria-current', 'page');
-        const group = a.closest('.navgroup');
-        if (group) { group.classList.add('open'); }
-      }
+      if (href === here) { best = a; return; }
+      if (best && best.getAttribute('href') === here) return;
+      /* Home ("/") sab ka parent hai, usse kabhi nahi chunte. */
+      if (href !== '/' && here.indexOf(href) === 0 &&
+          (!best || href.length > best.getAttribute('href').length)) best = a;
     });
+
+    if (best) {
+      best.setAttribute('aria-current', 'page');
+      const group = best.closest('.navgroup');
+      if (group) { group.classList.add('open'); }
+    }
   });
 })();
