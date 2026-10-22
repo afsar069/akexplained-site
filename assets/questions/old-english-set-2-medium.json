@@ -91,15 +91,15 @@
       "read": "key-terms"
     },
     {
-      "question": "How did the legendary Danish foundling king Scyld Scefing arrive in Denmark as a helpless infant?",
+      "question": "In his long speech to Beowulf after Grendel's mother is dead, which earlier Danish king does Hrothgar hold up as a warning?",
       "options": [
-        "Rescued secretly from an isolated dragon cave by traveling merchants",
-        "Cast adrift alone in a boat loaded with treasures and weapons",
-        "Carried safely ashore upon the broad back of a royal sea-whale",
-        "Guided majestically across the coastal ice by a flock of heavenly swans"
+        "Scyld Scefing",
+        "Healfdene",
+        "Heremod",
+        "Beow"
       ],
-      "correct_option_id": 1,
-      "explanation": "Scyld Scefing arrived miraculously as an infant in an open boat laden with weapons and royal goods.",
+      "correct_option_id": 2,
+      "explanation": "Hrothgar warns Beowulf against pride by pointing to Heremod, a Danish king who grew greedy and cruel, turned on his own men and was driven out.",
       "topic": "beowulf",
       "read": "poetry"
     },
@@ -401,7 +401,7 @@
       "topic": "religious"
     },
     {
-      "question": "Which 7th-century Anglo-Saxon scholar and Bishop of Sherborne composed 100 Latin riddles titled 'Enigmata'?",
+      "question": "Which Anglo-Saxon scholar, later Bishop of Sherborne, composed 100 Latin riddles titled 'Enigmata'?",
       "options": [
         "Alcuin of York",
         "Dunstan abbot",
@@ -478,7 +478,7 @@
       "read": "poetry"
     },
     {
-      "question": "What is the solution to Exeter Book Riddle 16, describing a steadfast iron object that wrestles with wind and water?",
+      "question": "What is the solution to Exeter Book Riddle 16, describing a steadfast object that wrestles with wind and water?",
       "options": [
         "A Ship's Rudder",
         "An Anchor",
@@ -486,7 +486,7 @@
         "A War-shield"
       ],
       "correct_option_id": 1,
-      "explanation": "Riddle 16 describes an anchor biting into the ocean bed with its iron flukes against fierce waves.",
+      "explanation": "Riddle 16 is spoken by an anchor, which holds fast while it struggles against wind and waves.",
       "topic": "riddles",
       "read": "poetry"
     },
@@ -568,15 +568,15 @@
       "read": "key-terms"
     },
     {
-      "question": "In 'Beowulf', who was the legendary Geatish king whom Beowulf avenged by fighting the Swedish king Ongentheow?",
+      "question": "In 'Beowulf', which Geatish king's death does Beowulf avenge by supporting Eadgils against the Swedish king Onela?",
       "options": [
         "King Hygelac the Geat",
         "King Hrethel of old",
         "King Heardred",
-        "King Haethcyn's brother"
+        "King Haethcyn"
       ],
       "correct_option_id": 2,
-      "explanation": "Beowulf supported Heardred, son of Hygelac, and later avenged his death in the Swedish wars.",
+      "explanation": "Heardred, son of Hygelac, was killed by Onela's Swedes; Beowulf, who then became king, later backed Eadgils against Onela.",
       "topic": "beowulf",
       "read": "poetry"
     },
@@ -646,15 +646,15 @@
       "read": "poetry"
     },
     {
-      "question": "In Cynewulf's poem 'Juliana', which demon is captured and interrogated by the holy virgin saint?",
+      "question": "In Cynewulf's 'Juliana', whom does the saint refuse to marry, leading to her martyrdom?",
       "options": [
-        "The primordial serpent of the paradise",
-        "Grendel the grim stalker of the fens",
-        "The venomous treasure-guarding dragon",
-        "Belial or the devil fiendish messenger"
+        "Holofernes",
+        "Eleusius",
+        "Constantine",
+        "Wiglaf"
       ],
-      "correct_option_id": 3,
-      "explanation": "Saint Juliana seizes a demon in prison and forces him to confess all his wicked temptations.",
+      "correct_option_id": 1,
+      "explanation": "Juliana refuses to marry the heathen Eleusius and is martyred for her faith.",
       "topic": "religious",
       "read": "poetry"
     },

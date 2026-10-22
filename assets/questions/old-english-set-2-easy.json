@@ -145,7 +145,7 @@
       "read": "key-terms"
     },
     {
-      "question": "What does the Old English kenning 'mere-hengest' or 'sea-steed' designate?",
+      "question": "What does the Old English kenning 'sund-hengest' or 'sea-horse' designate?",
       "options": [
         "A sailing ship",
         "A sea monster",
@@ -153,7 +153,7 @@
         "A war horse"
       ],
       "correct_option_id": 0,
-      "explanation": "Mere-hengest translates to sea-steed, a poetic kenning describing an ocean ship.",
+      "explanation": "Sund-hengest means 'sea-horse', a poetic kenning for a ship.",
       "topic": "verse",
       "read": "key-terms"
     },
@@ -228,10 +228,10 @@
         "Miming",
         "Hrunting",
         "Naegling",
-        "Hrunting hilt"
+        "Gram"
       ],
       "correct_option_id": 2,
-      "explanation": "Naegling was the gray-hilted heirloom sword that broke under Beowulf's immense strength during the dragon fight.",
+      "explanation": "Naegling, Beowulf's old grey sword, snapped in the fight with the dragon; the poem blames the strength of his own hand.",
       "topic": "beowulf",
       "read": "poetry"
     },
@@ -588,13 +588,13 @@
     {
       "question": "What common formulaic phrase in Old English often closes an Exeter Book riddle?",
       "options": [
-        "Saga hwæt ic hatte",
+        "Frige hwæt ic hatte",
         "Þæs ofereode",
         "Hwær cwom mearg",
         "Hige sceal þe heardra"
       ],
       "correct_option_id": 0,
-      "explanation": "Many Exeter Book riddles end with the challenge Saga hwæt ic hatte, meaning Say what I am called.",
+      "explanation": "Many Exeter Book riddles end by challenging the reader to say what the speaker is called, as in 'Frige hwæt ic hatte', 'Ask what I am called'.",
       "topic": "riddles",
       "read": "poetry"
     },
@@ -638,17 +638,17 @@
       "read": "poetry"
     },
     {
-      "question": "What is the solution to Exeter Book Riddle 7, describing a bird whose feathers rustle like music in flight?",
+      "question": "In which manuscript are the Old English elegies, such as 'The Wanderer' and 'The Seafarer', preserved?",
       "options": [
-        "An Eagle",
-        "A Swan",
-        "A Nightingale",
-        "A Raven"
+        "The Vercelli Book",
+        "The Junius Manuscript",
+        "The Exeter Book",
+        "The Nowell Codex"
       ],
-      "correct_option_id": 1,
-      "explanation": "Riddle 7 describes a swan whose white plumage whistles melodiously when it flies through the heavens.",
-      "topic": "riddles",
-      "read": "poetry"
+      "correct_option_id": 2,
+      "explanation": "The Exeter Book holds the elegies: The Wanderer, The Seafarer, The Ruin, The Wife's Lament, Deor and Wulf and Eadwacer.",
+      "topic": "elegies",
+      "read": "how-the-writing-survived"
     },
     {
       "question": "What is the solution to Exeter Book Riddle 60, which speaks of a shoreline plant turned into a writing instrument?",
