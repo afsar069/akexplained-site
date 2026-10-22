@@ -267,45 +267,15 @@
 
       </section>
 
-      <!-- ====== BUILD YOUR OWN =======================================
-           Dono control alag-alag hain: kitne sawal, aur kitna waqt.
-           Kuch na chhuein to pachaas sawal aur unchalis second ka hisaab
-           (40 sec a question) apne aap lag jata hai. mcq-age.js in dono
-           ko aapas me jod kar rakhta hai aur hadd ke andar rakhta hai. -->
-      <section class="agehub-build" aria-labelledby="buildTitle">
-        <h2 id="buildTitle">Build your own set</h2>
-        <p class="sub">Choose how many questions you want, and how long you want for them. Change nothing and you get fifty questions in thirty-three minutes.</p>
-
-        <div class="agehub-buildgrid">
-
-          <div class="agehub-buildfield">
-            <label for="buildCount">How many questions</label>
-            <div class="agehub-numrow">
-              <input type="number" id="buildCount" value="50" min="10" max="100" step="1" inputmode="numeric">
-              <input type="range" id="buildCountRange" value="50" min="10" max="100" step="1" aria-label="How many questions" tabindex="-1">
-            </div>
-            <p class="agehub-buildhint">Anything from 10 to 100.</p>
-          </div>
-
-          <div class="agehub-buildfield">
-            <label for="buildTime">How long</label>
-            <div class="agehub-numrow">
-              <input type="number" id="buildTime" value="33" min="25" max="50" step="1" inputmode="numeric">
-              <span class="agehub-unit">minutes</span>
-              <input type="range" id="buildTimeRange" value="33" min="25" max="50" step="1" aria-label="How long, in minutes" tabindex="-1">
-            </div>
-            <p class="agehub-buildhint" id="buildRate">That is about 40 seconds a question.</p>
-          </div>
-
-        </div>
-
-        <p class="agehub-buildhint agehub-buildpool" id="buildPool" hidden></p>
-
-        <p class="agehub-buildsum" id="buildSum" aria-live="polite">50 questions &middot; 33 minutes &middot; about 40 seconds each</p>
-
+      <!-- ====== BUILD YOUR OWN ======================================
+           Chunav alag page par hota hai (build/): kaun se sets, level,
+           kitne sawal, kitna waqt. Yahan sirf wahan jane ka rasta hai,
+           taaki ye page chhota rahe aur Start seedha kisi ek set par na jaye. -->
+      <section class="agehub-build agehub-buildlink" aria-labelledby="buildTitle">
+        <h2 id="buildTitle">Build your own test</h2>
+        <p class="sub">Pick the sets you want, one level, how many questions and how long. The questions are mixed from the sets you choose.</p>
         <div class="agehub-buildgo">
-          <span class="agehub-start" id="buildStart" aria-disabled="true">Start &middot; opens with the sets</span>
-          <button type="button" class="agehub-clear" id="buildReset" hidden>Back to fifty questions</button>
+          <a class="agehub-start" href="/quizzes/mcq/old-english/build/">Build a test &rarr;</a>
         </div>
       </section>
 
@@ -440,6 +410,7 @@
   </div>
 </footer>
 <script src="/assets/nav.js" defer></script>
+<script src="/assets/mcq-live.js" defer></script>
 <script src="/assets/mcq-age.js" defer></script>
 </body>
 </html>

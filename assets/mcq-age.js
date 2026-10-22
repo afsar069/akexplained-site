@@ -12,7 +12,7 @@
      2. Topic aur level se list chhanna (?topic= / ?level= se bhi).
      3. Upar ke chaar gine-gine dabbe bharna.
      4. "Kaisa chal raha hai" card banana, weakest set pehle.
-     5. "Build your own set" — kitne sawal, kitna waqt (?n= / ?t= se bhi).
+     5. "Build your own test" ab alag page par hai (build/, assets/mcq-build.js).
      6. Is device ka hisaab mitana.
 
    Quiz engine isi localStorage me likhta hai, aur yahi padha jata hai:
@@ -25,19 +25,12 @@
 
   /* ---------------------------------------------------------
      1. KAUN SE SET CHALU HAIN
-     Jis din us set ke 25 sawal taiyar ho jaayein, uska id
-     yahan jod dein — bas. Row apne aap link ban jaati hai.
-     Jo yahan nahi hai, uspar "Coming soon" likha rehta hai
+     Jo set chalu hain unki list assets/mcq-live.js me hai (build page
+     bhi wahin se padhta hai). Row apne aap link ban jaati hai.
+     Jo wahan nahi hai, uspar "Coming soon" likha rehta hai
      aur wo link nahi banta, taaki koi khali page par na pahunche.
      --------------------------------------------------------- */
-  var LIVE_SETS = [
-    'old-english-set-1',
-    'old-english-set-2',
-    // 'old-english-set-3',
-    // 'old-english-set-4',
-    // 'old-english-set-5',
-    // 'old-english-set-6'
-  ];
+  var LIVE_SETS = window.AK_LIVE_SETS || [];   /* list assets/mcq-live.js me hai */
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) {
@@ -283,7 +276,6 @@
      --------------------------------------------------------- */
   var LEVEL_CHOICES = ['all', 'easy', 'medium', 'hard'];
   var state = { topic: 'all', level: 'all' };
-  var renderBuild = null;     /* wireBuild() yahan apna render rakhta hai */
 
   function readState() {
     var saved = null;
@@ -315,12 +307,6 @@
     var q = new URLSearchParams(location.search);
     state.topic === 'all' ? q.delete('topic') : q.set('topic', state.topic);
     state.level === 'all' ? q.delete('level') : q.set('level', state.level);
-    /* Apna banaya hua set bhi link me jaye, taaki bheja ja sake.
-       Build card page par na ho to build.minutes abhi 0 hai — tab kuch nahi. */
-    if (build.minutes > 0) {
-      build.count === COUNT_DEFAULT ? q.delete('n') : q.set('n', build.count);
-      build.minutes === defaultMinutes(build.count) ? q.delete('t') : q.set('t', build.minutes);
-    }
     var qs = q.toString();
     try {
       history.replaceState(null, '', location.pathname + (qs ? '?' + qs : '') + location.hash);
@@ -359,11 +345,10 @@
     var clear = $('#ageClear');
     if (clear) clear.hidden = state.topic === 'all' && state.level === 'all';
 
-    /* Set ke links aur "Apna set banao" ka Start chune hue level ke saath. */
+    /* Set ke links chune hue level ke saath. */
     sets.forEach(function (set) {
       if (set.link) set.link.href = set.base + levelQuery(set, '?');
     });
-    if (renderBuild) renderBuild();
 
     saveState();
     stampUrl();
@@ -396,178 +381,12 @@
     }
   }
 
-  /* ---------------------------------------------------------
-     5. APNA SET BANAO — kitne sawal, kitna waqt
-
-     Sawal : 10 se 100, default 50.
-     Waqt  : har sawal ke liye 30 se 60 second, default 40.
-             Isi se poora waqt nikalta hai, aur 100 sawal x 60 second
-             theek 100 minute par ja kar rukte hain — yahi upar ki hadd hai.
-             50 sawal ka default isliye 33 minute banta hai.
-
-     Reader waqt badalta hai to hum second-per-sawal yaad rakh lete hain,
-     naki minute. Isliye baad me sawal ki ginti badle to uski chuni hui
-     raftaar bani rehti hai, aur waqt usi hisaab se apne aap badal jata hai.
-     --------------------------------------------------------- */
-  var COUNT_MIN = 10, COUNT_MAX = 100, COUNT_DEFAULT = 50;
-  var RATE_MIN = 30, RATE_MAX = 60, RATE_DEFAULT = 40;   /* second per sawal */
-  var MINUTES_CAP = 100;
-
-  var build = { count: COUNT_DEFAULT, rate: RATE_DEFAULT, minutes: 0 };
-
-  /* Link me jodne ke liye "?level=easy" (ya "&level=easy"); kuch nahi jodna ho to khali.
+  /* Link me jodne ke liye "?level=easy"; kuch nahi jodna ho to khali.
      Tab nahi jodte jab level chuna na ho, set me wo level na ho, ya is browser me
      us set ka attempt rakha ho (set.level tabhi bharta hai). */
   function levelQuery(set, glue) {
     if (state.level === 'all' || !set || set.level || set.levels.indexOf(state.level) < 0) return '';
     return glue + 'level=' + state.level;
-  }
-
-  function clamp(n, lo, hi) { return n < lo ? lo : n > hi ? hi : n; }
-
-  function minMinutes(count) { return Math.ceil(count * RATE_MIN / 60); }
-  function maxMinutes(count) {
-    return Math.min(MINUTES_CAP, Math.max(minMinutes(count), Math.floor(count * RATE_MAX / 60)));
-  }
-  function defaultMinutes(count) {
-    return clamp(Math.round(count * RATE_DEFAULT / 60), minMinutes(count), maxMinutes(count));
-  }
-  /* Jo minute dikh rahe hain, unse asli raftaar — hint ke liye. */
-  function secondsEach(count, minutes) { return Math.round(minutes * 60 / count); }
-
-  function wireBuild() {
-    var card = $('.agehub-build', page);
-    if (!card) return;
-
-    var countBox = $('#buildCount'), countBar = $('#buildCountRange');
-    var timeBox = $('#buildTime'), timeBar = $('#buildTimeRange');
-    var rateHint = $('#buildRate'), sum = $('#buildSum'), poolNote = $('#buildPool');
-    var startBtn = $('#buildStart'), reset = $('#buildReset');
-    if (!countBox || !timeBox) return;
-
-    /* ---- yaad rakha hua, phir URL ka hukum ---- */
-    var saved = null;
-    try { saved = JSON.parse(localStorage.getItem('ak:agebuild:' + AGE) || 'null'); } catch (e) {}
-    if (saved && typeof saved === 'object') {
-      if (saved.count) build.count = clamp(Math.round(saved.count), COUNT_MIN, COUNT_MAX);
-      if (saved.rate) build.rate = clamp(Math.round(saved.rate), RATE_MIN, RATE_MAX);
-    }
-    build.minutes = clamp(Math.round(build.count * build.rate / 60),
-      minMinutes(build.count), maxMinutes(build.count));
-
-    var q = new URLSearchParams(location.search);
-    var askedN = parseInt(q.get('n'), 10);
-    var askedT = parseInt(q.get('t'), 10);
-    if (askedN) setCount(askedN, true);
-    if (askedT) setMinutes(askedT, true);
-
-    function setCount(value, quiet) {
-      build.count = clamp(Math.round(value) || COUNT_DEFAULT, COUNT_MIN, COUNT_MAX);
-      /* Ginti badli — reader ki chuni hui raftaar wahi rakho, waqt naya. */
-      build.minutes = clamp(Math.round(build.count * build.rate / 60),
-        minMinutes(build.count), maxMinutes(build.count));
-      if (!quiet) render();
-    }
-
-    function setMinutes(value, quiet) {
-      build.minutes = clamp(Math.round(value) || defaultMinutes(build.count),
-        minMinutes(build.count), maxMinutes(build.count));
-      build.rate = clamp(secondsEach(build.count, build.minutes), RATE_MIN, RATE_MAX);
-      if (!quiet) render();
-    }
-
-    function render() {
-      var lo = minMinutes(build.count), hi = maxMinutes(build.count);
-      var each = secondsEach(build.count, build.minutes);
-
-      countBox.value = countBar.value = build.count;
-      timeBox.value = timeBar.value = build.minutes;
-      /* Waqt ki hadd sawal ki ginti par tiki hai, isliye har baar nayi. */
-      timeBox.min = timeBar.min = lo;
-      timeBox.max = timeBar.max = hi;
-
-      if (rateHint) {
-        rateHint.textContent = 'That is about ' + each + ' seconds a question. ' +
-          'You can go from ' + lo + ' to ' + hi + ' minutes.';
-      }
-      if (sum) {
-        sum.textContent = build.count + ' question' + (build.count === 1 ? '' : 's') +
-          ' \u00b7 ' + build.minutes + ' minute' + (build.minutes === 1 ? '' : 's') +
-          ' \u00b7 about ' + each + ' seconds each';
-      }
-      if (reset) {
-        reset.hidden = build.count === COUNT_DEFAULT &&
-          build.minutes === defaultMinutes(COUNT_DEFAULT);
-      }
-      /* Start usi set par jata hai jo khula hai. Pehle yahan /custom/ tha, jo
-         kabhi bana hi nahi — 404. Set me jitne sawal hain usse zyada maange
-         to utne hi milte hain, aur waqt bhi unhi ke hisaab se.
-         Har level ki file me size sawal hain, aur ek set ke dono level
-         milakar pool bante hain: 50 se upar ke sawal doosre level se aate hain. */
-      var live = sets.filter(function (x) { return x.live; })[0];
-      var pool = live ? live.size * Math.max(1, live.levels.length) : 0;
-      var eff = pool ? Math.min(build.count, pool) : build.count;
-      var effMin = clamp(Math.round(eff * build.rate / 60), minMinutes(eff), maxMinutes(eff));
-      if (startBtn && startBtn.tagName === 'A' && live) {
-        startBtn.href = '/quizzes/mcq/' + AGE + '/' + live.id.replace(AGE + '-', '') +
-          '/?n=' + eff + '&t=' + effMin + levelQuery(live, '&');
-      }
-      if (poolNote) {
-        var over = pool > 0 && build.count > pool;
-        var topUp = pool > 0 && !over && eff > live.size;
-        poolNote.hidden = !(over || topUp);
-        if (over) {
-          poolNote.textContent = 'Only ' + pool + ' questions are written so far, so Start will give ' +
-            'you ' + pool + ' of them, in ' + effMin + ' minutes.';
-        } else if (topUp) {
-          poolNote.textContent = 'One level holds ' + live.size + ' questions, so the last ' +
-            (eff - live.size) + ' come from the other level.';
-        }
-      }
-
-      try {
-        localStorage.setItem('ak:agebuild:' + AGE,
-          JSON.stringify({ count: build.count, rate: build.rate }));
-      } catch (e) {}
-      stampUrl();
-    }
-
-    /* Likhte waqt beech ki adhoori ginti ("1" jo "15" banne wali hai) ko
-       pakad kar 10 mat bana do — wo chhed-chhad blur par hoti hai. */
-    function loose(box, bar, commit) {
-      box.addEventListener('input', function () {
-        var n = parseInt(box.value, 10);
-        if (!isNaN(n) && n >= +box.min && n <= +box.max) { commit(n); bar.value = n; }
-      });
-      box.addEventListener('change', function () { commit(parseInt(box.value, 10)); });
-      box.addEventListener('blur', function () { commit(parseInt(box.value, 10)); });
-      bar.addEventListener('input', function () { commit(parseInt(bar.value, 10)); });
-    }
-
-    loose(countBox, countBar, function (n) { setCount(n); });
-    loose(timeBox, timeBar, function (n) { setMinutes(n); });
-
-    if (reset) {
-      reset.addEventListener('click', function () {
-        build.rate = RATE_DEFAULT;
-        setCount(COUNT_DEFAULT);
-        countBox.focus();
-      });
-    }
-
-    /* Sawal taiyar hone se pehle Start kahin nahi le jata, isliye wo abhi
-       link hai hi nahi — markup me sirf ek halka label hai. */
-    if (startBtn && LIVE_SETS.length) {
-      var a = document.createElement('a');
-      a.className = 'agehub-start';
-      a.id = 'buildStart';
-      a.textContent = 'Start';
-      startBtn.parentNode.replaceChild(a, startBtn);
-      startBtn = a;
-    }
-
-    renderBuild = render;
-    render();
   }
 
   /* ---------------------------------------------------------
@@ -602,7 +421,6 @@
     try { paintStats(); } catch (e) {}
     try { paintPerformance(); } catch (e) {}
     try { readState(); } catch (e) {}
-    try { wireBuild(); } catch (e) {}
     try { wireFilters(); apply(); } catch (e) {}
     try { wireWipe(); } catch (e) {}
   }

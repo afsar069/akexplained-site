@@ -1290,6 +1290,57 @@ a.agehub-start{
 }
 a.agehub-start:hover{background:var(--teal-dark);color:#fff;transform:translateY(-2px)}
 
+/* Chunav na hone par (koi set nahi, ya saanjha level nahi) Start dabne layak nahi dikhta */
+a.agehub-start.is-off,a.agehub-start.is-off:hover{
+  background:#FBFAF5;border:1.5px dashed var(--border);color:var(--mcq-ink-faint);
+  cursor:not-allowed;transform:none;
+}
+.agehub-buildlink .sub{margin-bottom:14px}
+
+/* ---------- build/ page: set chunna, level chunna ---------- */
+.mcqb .agehub-build h2{display:flex;align-items:center;gap:10px}
+.mcqb-step{
+  display:inline-flex;align-items:center;justify-content:center;flex:none;
+  width:26px;height:26px;border-radius:50%;background:var(--teal);color:#fff;
+  font-family:inherit;font-size:.82rem;font-weight:700;
+}
+.mcqb-sets{list-style:none;margin:0;padding:0;display:grid;gap:10px;max-width:none}
+.mcqb-set{
+  display:flex;align-items:center;gap:12px;background:#fff;
+  border:1.5px solid var(--border);border-radius:12px;padding:12px 16px;
+  transition:border-color .2s,background .2s;
+}
+.mcqb-set:hover{border-color:var(--teal)}
+.mcqb-set.is-on{border-color:var(--teal);background:#F2F8F6}
+.mcqb-set label{display:flex;align-items:flex-start;gap:12px;flex:1;min-width:0;margin:0;cursor:pointer}
+.mcqb-set input{width:20px;height:20px;margin:2px 0 0;flex:none;accent-color:var(--teal);cursor:pointer}
+.mcqb-text{display:flex;flex-direction:column;gap:2px;min-width:0}
+.mcqb-name{font-weight:600;color:var(--ink)}
+.mcqb-meta{font-size:.86rem;color:var(--mcq-ink-faint)}
+.mcqb-soon{
+  flex:none;font-size:.72rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--mcq-ink-faint);
+}
+.mcqb-set.is-off{background:#FBFAF5;border-style:dashed}
+.mcqb-set.is-off:hover{border-color:var(--border)}
+.mcqb-set.is-off label,.mcqb-set.is-off input{cursor:not-allowed}
+.mcqb-set.is-off .mcqb-name{color:var(--mcq-ink-faint)}
+.mcqb-levels .agehub-level:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.mcqb-resume{
+  background:#FBF4E0;border:1px solid #E8D9A8;border-radius:12px;
+  padding:12px 18px;margin-bottom:14px;
+}
+.mcqb-resume p{margin:0;max-width:none}
+.mcqb-resume .mcqb-links{display:flex;flex-wrap:wrap;gap:18px;margin-top:6px}
+.mcqb-links a{font-weight:600}
+
+/* Apna test: start screen par "kin sets se bana" */
+.cbt-madefrom{list-style:none;margin:2px 0 8px;padding:0;display:grid;gap:4px;max-width:none}
+.cbt-madefrom li{position:relative;padding-left:18px;font-weight:600;color:var(--ink)}
+.cbt-madefrom li::before{
+  content:"";position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--teal);
+}
+
 /* ---------- list ke neeche ke do bade button ---------- */
 .agehub-actions{display:flex;flex-wrap:wrap;gap:12px}
 .agehub-action{

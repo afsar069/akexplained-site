@@ -19,8 +19,17 @@
    purane attempt apne aap bekar ho jaate hain (purane jawab naye
    sawalo par galat chipak jaate, warna).
 
-   Hub se aaya hua ?n= aur ?t= yahan maana jata hai, isliye
-   "Build your own set" wala chunav seedha yahan chalta hai.
+   Hub se aaya hua ?n= aur ?t= yahan maana jata hai.
+
+   Apna test (data-custom): kai sets ke sawal ek hi test me. Page par
+     <div data-cbt data-custom data-age="old-english" data-levels="easy,medium"
+          data-src="/assets/questions/{set}-{level}.json"
+          data-back="/quizzes/mcq/old-english/"
+          data-new="/quizzes/mcq/old-english/build/">
+   Link: ?sets=a,b&lv=easy&more=medium&n=80&t=53 (build page banata hai).
+   Sawal Begin dabane par random chune jate hain aur unki list (ref) record
+   me rakhi jati hai, taaki review aur dobara khulna wahi sawal dikhaye.
+   Record: akq:<age>-custom:v1.
 
    Sab kuch is browser me rehta hai, kahin bheja nahi jata:
      key   akq:<setId>:v1
@@ -50,7 +59,11 @@
   if (!root) return;
 
   var arrived = 0;             /* is sawal par kab pahunche */
-  var paper = null;            /* file se aaya hua set */
+  var paper = null;            /* file se aaya hua set (custom me: milaya hua) */
+  var CUSTOM = root.hasAttribute('data-custom');
+  var AGE = root.getAttribute('data-age') || '';
+  var cfg = null;              /* custom: URL ya rakhe hue attempt se aaya mel */
+  var cpapers = {};            /* custom: 'set|level' -> file */
   var Q = [];                  /* is attempt ke sawal */
   var key = '';
   var st = { pick: {}, marked: {}, seen: {}, at: 0, endsAt: 0, done: false };
@@ -75,9 +88,8 @@
     return lv ? src.replace('{level}', lv) : src;
   }
 
-  function fetchPaper(lv) {
-    if (papers[lv]) return Promise.resolve(papers[lv]);
-    return fetch(srcFor(lv), { cache: 'no-cache' })
+  function getJson(url) {
+    return fetch(url, { cache: 'no-cache' })
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
@@ -86,9 +98,13 @@
         if (!data || !Array.isArray(data.questions) || !data.questions.length) {
           throw new Error('no questions in the file');
         }
-        papers[lv] = data;
         return data;
       });
+  }
+
+  function fetchPaper(lv) {
+    if (papers[lv]) return Promise.resolve(papers[lv]);
+    return getJson(srcFor(lv)).then(function (data) { papers[lv] = data; return data; });
   }
 
   /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to
@@ -122,8 +138,15 @@
   /* "Easy" ya, mila hua ho to, "Easy + Medium". */
   function levelLabel() {
     var name = paper.levelName || 'Mixed';
+    if (CUSTOM) return more && paper.moreName ? name + ' + ' + paper.moreName : name;
     return more && papers[more] ? name + ' + ' + (papers[more].levelName || more) : name;
   }
+
+  /* "Set 2" ya custom me "Your own test"; "this set" / "this test". */
+  function setTag() { return CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
+  function testName() { return CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
+  function thisSet() { return CUSTOM ? 'this test' : 'this set'; }
+  function retake() { return CUSTOM ? 'build another test from the same sets' : 'take this set again'; }
 
   /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
      uska (taaki adhoora test wahin se chale), phir ?level=, phir default. */
@@ -138,6 +161,7 @@
   }
 
   function load() {
+    if (CUSTOM) { loadCustom(); return; }
     if (SET_ID) key = 'akq:' + SET_ID + ':v1';
     level = chooseLevel();
     fetchPaper(level)
@@ -195,8 +219,9 @@
      --------------------------------------------------------- */
   function plan() {
     var all = paper.questions.length;
-    var other = otherLevel();
-    var pool = all + (other && papers[other] ? papers[other].questions.length : 0);
+    var other = CUSTOM ? (cfg.more || '') : otherLevel();
+    var pool = CUSTOM ? all + (other ? paper.extra.length : 0)
+                      : all + (other && papers[other] ? papers[other].questions.length : 0);
     var q = new URLSearchParams(location.search);
 
     var n = parseInt(q.get('n'), 10);
@@ -233,6 +258,194 @@
   }
 
   /* ---------------------------------------------------------
+     Apna test — kai sets ke sawal ek test me (data-custom)
+
+     Kaun se sets, kaun sa level, kitne sawal aur kitna waqt — ye sab
+     build page link me bhejta hai. Sawal Begin dabane par random chune
+     jate hain, aur unki list record me rakhi jati hai.
+     --------------------------------------------------------- */
+  function slug(t) { return String(t).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'other'; }
+
+  function shuffle(a) {
+    var r = a.slice();
+    for (var i = r.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1)), t = r[i]; r[i] = r[j]; r[j] = t;
+    }
+    return r;
+  }
+
+  function fetchSet(sid, lv) {
+    var k = sid + '|' + lv;
+    if (cpapers[k]) return Promise.resolve(cpapers[k]);
+    var url = (root.getAttribute('data-src') || '').replace('{set}', sid).replace('{level}', lv);
+    return getJson(url).then(function (d) { cpapers[k] = d; return d; });
+  }
+
+  /* Link se mel. Galat ya adhoori ho to null — tab rakha hua attempt dekha jata hai. */
+  function cfgFromUrl() {
+    var q = new URLSearchParams(location.search);
+    var raw = q.get('sets'), lv = q.get('lv');
+    if (!raw || LEVELS.indexOf(lv) < 0) return null;
+    var re = new RegExp('^' + AGE + '-set-[0-9]+$'), sets = [];
+    raw.split(',').forEach(function (s) {
+      s = s.trim();
+      if (re.test(s) && sets.indexOf(s) < 0 && sets.length < 12) sets.push(s);
+    });
+    if (!sets.length) return null;
+    var more = q.get('more');
+    if (LEVELS.indexOf(more) < 0 || more === lv) more = '';
+    return { sets: sets, level: lv, more: more,
+             sig: sets.join(',') + '|' + lv + '|' + more + '|' + (q.get('n') || '') + '|' + (q.get('t') || '') };
+  }
+
+  function loadCustom() {
+    key = 'akq:' + AGE + '-custom:v1';
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) {}
+    if (!saved || !saved.custom || !Array.isArray(saved.custom.sets)) saved = null;
+
+    var fromUrl = cfgFromUrl();
+    cfg = fromUrl || (saved && { sets: saved.custom.sets, level: saved.custom.level,
+                                 more: saved.custom.more || '', sig: saved.custom.sig });
+    if (!cfg || LEVELS.indexOf(cfg.level) < 0) { noCustom(); return; }
+
+    var jobs = [];
+    cfg.sets.forEach(function (sid) {
+      jobs.push(fetchSet(sid, cfg.level));
+      if (cfg.more) jobs.push(fetchSet(sid, cfg.more));
+    });
+    Promise.all(jobs).then(function () {
+      makeCustomPaper();
+      level = cfg.level;
+      if (root.getAttribute('data-mode') === 'review') { showReview(); return; }
+      beginCustom(fromUrl);
+    }).catch(function (e) { broke(e); });
+  }
+
+  /* Chune hue sets ki files ko ek "paper" me milao. Topic naam se milte hain
+     (do sets ka "Poetry" ek hi topic), taaki result me ek hi row bane. */
+  function makeCustomPaper() {
+    var topics = {}, topicRead = {}, pool = [], extra = [], revs = [], names = [], first = null;
+
+    function add(lv, into, plus) {
+      cfg.sets.forEach(function (sid) {
+        var p = cpapers[sid + '|' + lv];
+        if (!first) first = p;
+        if (!plus) names.push({ n: p.setNumber, name: p.setName });
+        revs.push(sid + (plus ? '+' : ':') + lv + ':' + p.rev);
+        p.questions.forEach(function (q, i) {
+          var label = (p.topics && p.topics[q.topic]) || q.topic || 'Other';
+          var tk = slug(label), c = {}, k;
+          topics[tk] = label;
+          if (!topicRead[tk] && p.topicRead && p.topicRead[q.topic]) topicRead[tk] = p.topicRead[q.topic];
+          for (k in q) c[k] = q[k];
+          c.topic = tk; c.ref = [sid, lv, i];
+          into.push(c);
+        });
+      });
+    }
+    add(cfg.level, pool, false);
+    if (cfg.more) add(cfg.more, extra, true);
+
+    var moreFile = cfg.more ? cpapers[cfg.sets[0] + '|' + cfg.more] : null;
+    paper = {
+      setId: AGE + '-custom', rev: revs.join('|'),
+      age: first.age, ageName: first.ageName, setNumber: 0, setName: 'Your own test',
+      notes: first.notes, notesTitle: first.notesTitle,
+      topics: topics, topicRead: topicRead,
+      level: cfg.level, levelName: first.levelName, levelNote: '',
+      moreName: moreFile ? (moreFile.levelName || cfg.more) : '',
+      questions: pool, extra: extra, sets: names
+    };
+  }
+
+  function pickCustom(n) {
+    var main = shuffle(paper.questions), out = main.slice(0, n);
+    if (n > main.length) out = out.concat(shuffle(paper.extra).slice(0, n - main.length));
+    return shuffle(out);
+  }
+
+  /* Rakhe hue attempt ke sawal, ref ki list se. Koi ref na mile to null. */
+  function questionsOfRecord(rec) {
+    var idx = {};
+    paper.questions.concat(paper.extra).forEach(function (q) { idx[q.ref.join('|')] = q; });
+    var refs = (rec.custom && rec.custom.refs) || [];
+    var out = refs.map(function (r) { return idx[r.join('|')]; }).filter(Boolean);
+    return out.length === refs.length ? out : [];
+  }
+
+  function beginCustom(fromUrl) {
+    if (!fromUrl && new URLSearchParams(location.search).get('only') === 'wrong') { beginWrongOnly(); return; }
+
+    var rec = read();                                   /* rev aur level mile to hi */
+    if (rec && fromUrl && (!rec.custom || rec.custom.sig !== fromUrl.sig)) rec = null;
+    if (rec && rec.custom) {
+      var qs = questionsOfRecord(rec);
+      if (qs.length && qs.length === rec.count) {
+        st = rec; Q = qs; more = rec.more || '';
+        if (st.done) { showResult(); return; }
+        if (st.endsAt > Date.now()) { runTest(); return; }
+        closeExpired();                                 /* waqt khatam, page band tha */
+        return;
+      }
+    }
+    if (!fromUrl) { noCustom(); return; }
+
+    var p = plan();
+    more = p.more;
+    Q = [];
+    showStart(p);
+  }
+
+  /* Page band tha aur waqt khatam ho gaya: jo jawab diye, wahi jama. */
+  function closeExpired() {
+    st.done = true; st.ranOut = true; st.endedAt = st.endsAt;
+    st.wrongCount = Q.reduce(function (n, q, i) {
+      return n + (st.pick[i] !== undefined && st.pick[i] !== q.correct_option_id ? 1 : 0);
+    }, 0);
+    save();
+    showResult();
+  }
+
+  function noCustom() {
+    root.innerHTML =
+      '<div class="cbt-start">' +
+        '<h1>No custom test here yet</h1>' +
+        '<p class="lede">Choose the sets, how many questions and how long on the build page, ' +
+          'and your test will open here.</p>' +
+        '<p><a class="btn" href="' + esc(root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/') +
+          '">Build a test</a></p>' +
+      '</div>';
+  }
+
+  /* Start screen: kin sets se bana, aur badalne ka rasta (wahi chunav bhar kar). */
+  function customBlock() {
+    var q = new URLSearchParams(location.search);
+    var again = (root.getAttribute('data-new') || '') +
+      (q.get('sets') ? '?' + q.toString() : '');
+    var other = null;
+    try { other = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) {}
+    var busy = other && other.custom && !other.done && other.endsAt > Date.now() &&
+               (!cfg || other.custom.sig !== cfg.sig);
+
+    return '<div class="cbt-neg cbt-lvl cbt-custom">' +
+      '<p class="lbl">Made from</p>' +
+      '<ul class="cbt-madefrom">' +
+        paper.sets.map(function (s) {
+          return '<li>Set ' + esc(String(s.n)) + ' &middot; ' + esc(s.name) + '</li>';
+        }).join('') +
+      '</ul>' +
+      '<p class="cbt-neghint">The questions are picked at random, so each test is different.' +
+      (more && paper.moreName
+        ? ' The ' + esc(paper.levelName || level) + ' questions in these sets come to ' + paper.questions.length +
+          ', so the other ' + (plan().n - paper.questions.length) + ' come from the ' + esc(paper.moreName) + ' level.'
+        : '') + '</p>' +
+      (busy ? '<p class="cbt-neghint cbt-lvlmix">You have another custom test in progress. Beginning this one replaces it.</p>' : '') +
+      (again ? '<p class="cbt-neghint"><a href="' + esc(again) + '">Change these choices</a></p>' : '') +
+    '</div>';
+  }
+
+  /* ---------------------------------------------------------
      Sirf galat waale — hub ke "Practise my mistakes" se
 
      Ye pichhle poore attempt me se wahi sawal uthata hai jo galat
@@ -242,13 +455,13 @@
      --------------------------------------------------------- */
   function beginWrongOnly() {
     var main = null;
-    try { main = JSON.parse(localStorage.getItem('akq:' + paper.setId + ':v1') || 'null'); } catch (e) {}
+    try { main = JSON.parse(localStorage.getItem(CUSTOM ? 'akq:' + AGE + '-custom:v1' : 'akq:' + paper.setId + ':v1') || 'null'); } catch (e) {}
     if (!validFor(main)) main = null;      /* purane sawalo ka record yahan kaam nahi aata */
 
     var wrong = [];
     more = (main && main.more) || '';
     if (main && main.done && main.pick) {
-      questionsFor(main.count || paper.questions.length, more).forEach(function (q, i) {
+      (CUSTOM ? questionsOfRecord(main) : questionsFor(main.count || paper.questions.length, more)).forEach(function (q, i) {
         var p = main.pick[i];
         if (p !== undefined && p !== q.correct_option_id) wrong.push(q);
       });
@@ -258,9 +471,10 @@
       root.innerHTML =
         '<div class="cbt-start">' +
           '<h1>Nothing to go back over</h1>' +
-          '<p class="lede">You have no wrong answers saved for this set on this device. ' +
-          'Take the set first, and anything you get wrong will be waiting here.</p>' +
-          '<p><a class="btn" href="' + esc(location.pathname) + '">Take the set</a></p>' +
+          '<p class="lede">You have no wrong answers saved for ' + thisSet() + ' on this device. ' +
+          (CUSTOM ? 'Build a test first' : 'Take the set first') + ', and anything you get wrong will be waiting here.</p>' +
+          '<p><a class="btn" href="' + esc(CUSTOM ? (root.getAttribute('data-new') || location.pathname) : location.pathname) +
+            '">' + (CUSTOM ? 'Build a test' : 'Take the set') + '</a></p>' +
         '</div>';
       return;
     }
@@ -274,11 +488,10 @@
 
     root.innerHTML =
       '<div class="cbt-start">' +
-        '<p class="eyebrow">' + esc(paper.ageName || '') + ' &middot; Set ' +
-          esc(String(paper.setNumber || 1)) + '</p>' +
+        '<p class="eyebrow">' + esc(paper.ageName || '') + ' &middot; ' + esc(setTag()) + '</p>' +
         '<h1>The ' + Q.length + ' you got wrong</h1>' +
         '<p class="lede">Only the questions you missed last time, in the same test screen. ' +
-          'Your score for the full set stays as it was.</p>' +
+          'Your score for the full ' + (CUSTOM ? 'test' : 'set') + ' stays as it was.</p>' +
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + Q.length + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + minutes + ' min</b><span>Time</span></div>' +
@@ -301,8 +514,7 @@
   function showStart(p) {
     root.innerHTML =
       '<div class="cbt-start">' +
-        '<p class="eyebrow">' + esc(paper.ageName || '') + ' &middot; Set ' +
-          esc(String(paper.setNumber || 1)) + '</p>' +
+        '<p class="eyebrow">' + esc(paper.ageName || '') + ' &middot; ' + esc(setTag()) + '</p>' +
         '<h1>' + esc(paper.setName || 'Practice set') + '</h1>' +
         '<p class="lede">Read each question, pick one answer, and move on. ' +
           'You can go back to any question until you press Submit.</p>' +
@@ -341,8 +553,13 @@
     });
 
     $('#cbtBegin').addEventListener('click', function () {
+      if (CUSTOM) Q = pickCustom(p.n);
       st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
              neg: negRate, startedAt: Date.now(), endsAt: Date.now() + p.minutes * 60000 };
+      if (CUSTOM) {
+        st.custom = { sig: cfg.sig, sets: cfg.sets, level: cfg.level, more: more,
+                      refs: Q.map(function (q) { return q.ref; }) };
+      }
       save();
       runTest();
     });
@@ -352,6 +569,7 @@
      Naam page ke data-levels se aate hain, samjhane wali line chune hue
      level ki file se (paper.levelNote). */
   function levelBlock() {
+    if (CUSTOM) return customBlock();
     if (LEVELS.length < 2) return '';
     return '<div class="cbt-neg cbt-lvl">' +
       '<p class="lbl" id="cbtLvlLbl">Level</p>' +
@@ -409,8 +627,8 @@
     root.innerHTML =
       '<div class="cbt-bar">' +
         '<div class="cbt-bar-name">' + esc(paper.setName || 'Practice set') +
-          '<span>' + esc(paper.ageName || '') + ' &middot; Set ' +
-          esc(String(paper.setNumber || 1)) + ' &middot; ' + esc(levelLabel()) + '</span>' +
+          '<span>' + esc(paper.ageName || '') + ' &middot; ' + esc(setTag()) +
+          ' &middot; ' + esc(levelLabel()) + '</span>' +
         '</div>' +
         '<p class="cbt-count" id="cbtCount"></p>' +
         '<div class="cbt-clock" id="cbtClock" role="timer" aria-label="Time left">' +
@@ -634,7 +852,7 @@
 
     /* Page ka apna header hi badal dete hain — do header nahi. */
     setHead('Your Final Score Board',
-      (paper.ageName || '') + ' — Practice Test ' + (paper.setNumber || 1),
+      (paper.ageName || '') + ' — ' + testName(),
       'You have completed the test. Here is your detailed performance analysis.');
 
     root.innerHTML =
@@ -697,8 +915,7 @@
       '</span>' +
       '<div class="cbt-headtxt">' +
         '<h1>Your Final Score Board</h1>' +
-        '<h2>' + esc(paper.ageName || '') + ' — Practice Test ' +
-          esc(String(paper.setNumber || 1)) + '</h2>' +
+        '<h2>' + esc(paper.ageName || '') + ' — ' + esc(testName()) + '</h2>' +
         '<h3>You have completed the test. Here is your detailed performance analysis.</h3>' +
       '</div>' +
     '</header>';
@@ -956,7 +1173,7 @@
       '<div class="cbt-jhead">' +
         '<div>' +
           '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
-          '<p class="sub">Where this paper puts you on the scale for this set.</p>' +
+          '<p class="sub">Where this paper puts you on the scale for ' + thisSet() + '.</p>' +
         '</div>' +
         '<p class="cbt-jnow"><b>' + at + '%</b>' +
           '<span>' + (next ? (next.pc - at) + ' more to reach ' + esc(next.label).toLowerCase()
@@ -1099,9 +1316,9 @@
     if (pc >= 50) return { cls: 'b3', name: "Good effort. You're getting there!",
       line: 'You know this age. What is left is the fine print — the dates, the manuscripts, who signed what.' };
     if (pc >= 30) return { cls: 'b2', name: 'Needs hard work!',
-      line: 'The shape of the age is there, but not the detail. Read the notes through once, then take this set again — detail is the easiest thing to fix.' };
+      line: 'The shape of the age is there, but not the detail. Read the notes through once, then ' + retake() + ' — detail is the easiest thing to fix.' };
     return { cls: 'b1', name: 'Very bad — but only for today.',
-      line: 'Almost everyone’s first run on a hard set looks like this. Do it in order: read the full notes, then the fifty quick-revision points, then take this set again. Nobody learns an age by taking tests on it; the tests only show what the reading left behind.' };
+      line: 'Almost everyone’s first run on a hard set looks like this. Do it in order: read the full notes, then the fifty quick-revision points, then ' + retake() + '. Nobody learns an age by taking tests on it; the tests only show what the reading left behind.' };
   }
 
   /* ---------------------------------------------------------
@@ -1155,7 +1372,7 @@
     /* Sirf-galat wali dobara-koshish set ki history me nahi jati: uska
        total alag hota hai (4 me se 4), aur wo poore paper ke 38 me se 50
        ke saath ek hi chart me rakhna galat tasveer deta hai. */
-    if (key.indexOf('akqx:') === 0) return { banner: '', chart: '' };
+    if (key.indexOf('akqx:') === 0 || CUSTOM) return { banner: '', chart: '' };
 
     /* Easy aur Medium ke score ek chart me milte to "pichhli baar se behtar"
        jhooth bolta. Har level ki apni list, aur rev badalne par nayi. */
@@ -1221,7 +1438,7 @@
         'Slowing down on the ones you are unsure of will lift that more than extra speed will.');
     }
     if (st.ranOut) {
-      out.push('The clock ran out before you finished. Try the same set again and watch where the ' +
+      out.push('The clock ran out before you finished. Try ' + (CUSTOM ? 'another test' : 'the same set again') + ' and watch where the ' +
         'time goes &mdash; most of it usually goes on two or three questions.');
     }
     var marked = Object.keys(st.marked).filter(function (i) { return st.pick[i] === undefined; }).length;
@@ -1230,7 +1447,7 @@
         ' never answered. Marking helps only if you leave time at the end to come back.');
     }
     if (!out.length) {
-      out.push('Every question answered, and a clean paper. Come back to this set in a week ' +
+      out.push('Every question answered, and a clean paper. Come back to ' + thisSet() + ' in a week ' +
         'and see how much has stayed.');
     }
     return '<ul class="cbt-advice"><li>' + out.join('</li><li>') + '</li></ul>';
@@ -1269,7 +1486,8 @@
     if (again) {
       again.addEventListener('click', function () {
         try { localStorage.removeItem(key); } catch (e) {}
-        location.href = location.pathname;
+        location.href = CUSTOM ? (root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/')
+                               : location.pathname;
       });
     }
   }
@@ -1287,17 +1505,18 @@
       root.innerHTML =
         '<div class="cbt-start">' +
           '<h1>Nothing to review yet</h1>' +
-          '<p class="lede">This page shows the answers from your last run at this set, ' +
+          '<p class="lede">This page shows the answers from your last ' + (CUSTOM ? 'custom test' : 'run at this set') + ', ' +
             'and there is no finished run saved in this browser.</p>' +
-          '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
-            '">Take the set first</a></p>' +
+          '<p><a class="btn" href="' + esc(CUSTOM ? (root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/')
+                                                 : (root.getAttribute('data-back') || '/quizzes/mcq/')) +
+            '">' + (CUSTOM ? 'Build a test' : 'Take the set first') + '</a></p>' +
         '</div>';
       return;
     }
 
     st = done;
     more = st.more || '';
-    Q = questionsFor(st.count || paper.questions.length, more);
+    Q = CUSTOM ? questionsOfRecord(st) : questionsFor(st.count || paper.questions.length, more);
 
     var right = 0, wrong = 0, skipped = 0;
     Q.forEach(function (q, i) {
@@ -1308,10 +1527,10 @@
 
     var want = new URLSearchParams(location.search).get('only') === 'wrong' ? 'wrong' : 'all';
     setHead(want === 'wrong' ? 'The ones you got wrong' : 'Review your answers',
-      (paper.ageName || '') + ' — Practice Test ' + (paper.setNumber || 1),
+      (paper.ageName || '') + ' — ' + testName(),
       want === 'wrong'
         ? 'Only the questions that went the wrong way, with the reason behind each right answer.'
-        : 'Every question from this set, with your answer beside the right one.');
+        : 'Every question from ' + thisSet() + ', with your answer beside the right one.');
 
     root.innerHTML =
       '<div class="cbt-revtop">' +
