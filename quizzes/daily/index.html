@@ -155,8 +155,10 @@
        To open a topic: make the card <a class="dq-card ..." href="..."> (no is-soon),
        and change the button to "Start Quiz &rarr;". Write a question count only once
        the questions exist.
-       A picture goes last inside the card:
+       A picture goes first inside the card, so the words and the button stay on top of it:
        <img class="dq-pic" src="/assets/topics/NAME.webp" alt="" width="" height="" loading="lazy">
+       The pictures are in /assets/topics/ and are plain pictures on white; the card
+       blends them into its own colour, so they can be used on other pages as they are.
        data-period feeds the period filter; theory and terms belong to no one period. -->
   <section class="mcq-sec mcq-sec-last" aria-labelledby="dqTitle">
     <div class="dq-head">
@@ -183,26 +185,31 @@
     <div class="dq-grid" id="dqGrid">
 
     <article class="dq-card t-rose is-soon" data-period="medieval">
+      <img class="dq-pic" src="/assets/topics/medieval.webp" alt="" width="131" height="141" loading="lazy">
       <h3 class="dq-title">Chaucer &amp; Medieval Period</h3>
       <span class="dq-go">Coming soon</span>
     </article>
 
     <article class="dq-card t-peach is-soon" data-period="renaissance">
+      <img class="dq-pic" src="/assets/topics/renaissance.webp" alt="" width="128" height="147" loading="lazy">
       <h3 class="dq-title">Renaissance Period</h3>
       <span class="dq-go">Coming soon</span>
     </article>
 
     <article class="dq-card t-sky is-soon" data-period="renaissance">
+      <img class="dq-pic" src="/assets/topics/elizabethan-drama.webp" alt="" width="129" height="138" loading="lazy">
       <h3 class="dq-title">Elizabethan Drama</h3>
       <span class="dq-go">Coming soon</span>
     </article>
 
     <article class="dq-card t-sage is-soon" data-period="renaissance">
+      <img class="dq-pic" src="/assets/topics/metaphysical-poetry.webp" alt="" width="129" height="142" loading="lazy">
       <h3 class="dq-title">Metaphysical Poetry</h3>
       <span class="dq-go">Coming soon</span>
     </article>
 
     <article class="dq-card t-lilac is-soon" data-period="restoration">
+      <img class="dq-pic" src="/assets/topics/restoration-18th-century.webp" alt="" width="122" height="136" loading="lazy">
       <h3 class="dq-title">Restoration and 18th Century</h3>
       <span class="dq-go">Coming soon</span>
     </article>
