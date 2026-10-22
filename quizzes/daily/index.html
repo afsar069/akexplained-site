@@ -152,10 +152,15 @@
   </div>
 
   <!-- ====== CHOOSE A TOPIC ======
-       The ages are in order of time, in the order of the British literature list.
-       Renaissance and Restoration and 18th Century are the wide periods; the cards after
-       them (Elizabethan to Commonwealth, Restoration Age to Age of Sensibility) are
-       the ages inside them. The last three are topics, not ages.
+       One card for each age of British literature, in order of time. Renaissance Period
+       and Neoclassical Period are the wide periods; the cards after each one (Early Tudor
+       to Commonwealth, Restoration Age to Age of Sensibility) are the ages inside it.
+       Anglo-Norman, Age of Chaucer and Fifteenth Century are the ages inside Middle English.
+       The last three cards are topics, not ages.
+       Dates come from the owner's list. The Middle English split (1066-1340, 1340-1400,
+       1400-1500) and Early Tudor (1500-1558) follow common course outlines; books differ
+       by a few years (some give 1350 for the Anglo-Norman / Chaucer line).
+       An age that has a second name shows it in italics under the years.
        To open a topic: make the card <a class="dq-card ..." href="..."> (no is-soon),
        and change the button to "Start Quiz &rarr;". Write a question count only once
        the questions exist.
@@ -173,7 +178,7 @@
       <div class="dq-filters" hidden>
         <select id="dqPeriod" class="dq-select" aria-label="Show topics from one period">
           <option value="all">All Periods</option>
-          <option value="old-english">Old English / Anglo-Saxon</option>
+          <option value="anglo-saxon">Anglo-Saxon</option>
           <option value="middle-english">Middle English</option>
           <option value="renaissance">The Renaissance</option>
           <option value="neoclassical">Neoclassical</option>
@@ -182,7 +187,7 @@
           <option value="edwardian">Edwardian</option>
           <option value="georgian">Georgian</option>
           <option value="modern">Modern</option>
-          <option value="postmodern">Postmodern / Contemporary</option>
+          <option value="postmodern">Postmodern</option>
         </select>
         <select id="dqSort" class="dq-select" aria-label="Sort the topics">
           <option value="time">Sort by: Time order</option>
@@ -195,11 +200,21 @@
 
     <div class="dq-grid" id="dqGrid">
 
-    <article class="dq-card t-sand is-soon" data-period="old-english">
+    <article class="dq-card t-sky is-soon" data-period="anglo-saxon">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
-        <h3 class="dq-title">Old English / Anglo-Saxon Period</h3>
+        <h3 class="dq-title">Anglo-Saxon Period</h3>
         <span class="dq-years">450–1066</span>
+        <span class="dq-years dq-alias">Old English</span>
+      </div>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-peach is-soon" data-period="middle-english">
+      <span class="dq-ph" aria-hidden="true"></span>
+      <div class="dq-text">
+        <h3 class="dq-title">Anglo-Norman Period</h3>
+        <span class="dq-years">1066–1340</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
@@ -207,8 +222,17 @@
     <article class="dq-card t-rose is-soon" data-period="middle-english">
       <img class="dq-pic" src="/assets/topics/medieval.webp" alt="" width="131" height="141" loading="lazy">
       <div class="dq-text">
-        <h3 class="dq-title">Chaucer &amp; Medieval Period</h3>
-        <span class="dq-years">1066–1500</span>
+        <h3 class="dq-title">Age of Chaucer</h3>
+        <span class="dq-years">1340–1400</span>
+      </div>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-sage is-soon" data-period="middle-english">
+      <span class="dq-ph" aria-hidden="true"></span>
+      <div class="dq-text">
+        <h3 class="dq-title">Fifteenth Century</h3>
+        <span class="dq-years">1400–1500</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
@@ -222,10 +246,19 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
+    <article class="dq-card t-lilac is-soon" data-period="renaissance">
+      <span class="dq-ph" aria-hidden="true"></span>
+      <div class="dq-text">
+        <h3 class="dq-title">Early Tudor Period</h3>
+        <span class="dq-years">1500–1558</span>
+      </div>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
     <article class="dq-card t-sky is-soon" data-period="renaissance">
       <img class="dq-pic" src="/assets/topics/elizabethan-drama.webp" alt="" width="129" height="138" loading="lazy">
       <div class="dq-text">
-        <h3 class="dq-title">Elizabethan Drama</h3>
+        <h3 class="dq-title">Elizabethan Age</h3>
         <span class="dq-years">1558–1603</span>
       </div>
       <span class="dq-go">Coming soon</span>
@@ -240,7 +273,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-sage is-soon" data-period="renaissance">
+    <article class="dq-card t-coral is-soon" data-period="renaissance">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
         <h3 class="dq-title">Caroline Age</h3>
@@ -249,25 +282,26 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-sky is-soon" data-period="renaissance">
+    <article class="dq-card t-iris is-soon" data-period="renaissance">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
-        <h3 class="dq-title">Commonwealth / Puritan Interregnum</h3>
+        <h3 class="dq-title">Commonwealth Period</h3>
         <span class="dq-years">1649–1660</span>
+        <span class="dq-years dq-alias">Puritan Interregnum</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-lilac is-soon" data-period="neoclassical">
+    <article class="dq-card t-sand is-soon" data-period="neoclassical">
       <img class="dq-pic" src="/assets/topics/restoration-18th-century.webp" alt="" width="122" height="136" loading="lazy">
       <div class="dq-text">
-        <h3 class="dq-title">Restoration and 18th Century</h3>
+        <h3 class="dq-title">Neoclassical Period</h3>
         <span class="dq-years">1660–1785</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-peach is-soon" data-period="neoclassical">
+    <article class="dq-card t-rose is-soon" data-period="neoclassical">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
         <h3 class="dq-title">Restoration Age</h3>
@@ -276,11 +310,12 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-rose is-soon" data-period="neoclassical">
+    <article class="dq-card t-sky is-soon" data-period="neoclassical">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
-        <h3 class="dq-title">Augustan Age / Age of Pope</h3>
+        <h3 class="dq-title">Augustan Age</h3>
         <span class="dq-years">1700–1745</span>
+        <span class="dq-years dq-alias">Age of Pope</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
@@ -288,8 +323,9 @@
     <article class="dq-card t-peach is-soon" data-period="neoclassical">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
-        <h3 class="dq-title">Age of Sensibility / Age of Johnson</h3>
+        <h3 class="dq-title">Age of Sensibility</h3>
         <span class="dq-years">1745–1785</span>
+        <span class="dq-years dq-alias">Age of Johnson</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
@@ -303,7 +339,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-sky is-soon" data-period="victorian">
+    <article class="dq-card t-iris is-soon" data-period="victorian">
       <img class="dq-pic" src="/assets/topics/victorian.webp" alt="" width="122" height="141" loading="lazy">
       <div class="dq-text">
         <h3 class="dq-title">Victorian Period</h3>
@@ -312,7 +348,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-rose is-soon" data-period="edwardian">
+    <article class="dq-card t-sand is-soon" data-period="edwardian">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
         <h3 class="dq-title">Edwardian Period</h3>
@@ -321,7 +357,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-lilac is-soon" data-period="georgian">
+    <article class="dq-card t-sage is-soon" data-period="georgian">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
         <h3 class="dq-title">Georgian Period</h3>
@@ -339,11 +375,12 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-iris is-soon" data-period="postmodern">
+    <article class="dq-card t-lilac is-soon" data-period="postmodern">
       <span class="dq-ph" aria-hidden="true"></span>
       <div class="dq-text">
-        <h3 class="dq-title">Postmodern / Contemporary Period</h3>
+        <h3 class="dq-title">Postmodern Period</h3>
         <span class="dq-years">1945–present</span>
+        <span class="dq-years dq-alias">Contemporary</span>
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
