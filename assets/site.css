@@ -2189,6 +2189,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 @media (max-width:620px){
   .cbt-facts,.cbt-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cbt-facts .cbt-fact:last-child:nth-child(odd){grid-column:1/-1}   /* akela aakhri tile poori chaudai le, taaki "Easy + Medium" ek line me aaye */
   .cbt-nums3{grid-template-columns:1fr}
   .cbt-pace{grid-template-columns:1fr}
   .cbt-two,.cbt-three,.cbt-two-wide,.cbt-two-an,.cbt-top{grid-template-columns:1fr}

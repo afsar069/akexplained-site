@@ -48,7 +48,7 @@
   if (!page) return;
 
   var AGE = page.getAttribute('data-age') || '';
-  var FILTER_KEY = 'ak:agehub:' + AGE;
+  var FILTER_KEY = 'ak:agehub:' + AGE + ':v2';   /* v2: Easy bhi filter me aaya, purana Medium+Hard wala chunav chhod do */
 
   /* Page par likhi har set row ek object ban jaati hai. */
   var sets = $$('.agehub-set', page).map(function (row) {
@@ -62,6 +62,7 @@
       size: parseInt(row.getAttribute('data-count'), 10) || 0,   /* count record se badal jata hai, size nahi */
       rev: parseInt(row.getAttribute('data-rev'), 10) || 0,
       level: '',
+      more: '',
       live: false,
       answered: 0,
       wrong: 0,
@@ -94,6 +95,7 @@
          purane sawalo ka hai — gina nahi jata. (Cbt engine bhi yahi karta hai.) */
       if (set.rev && data.rev !== set.rev) return;
       set.level = typeof data.level === 'string' ? data.level : '';
+      set.more = typeof data.more === 'string' ? data.more : '';   /* doosre level se bhare sawal */
 
       set.answered = (data.pick && typeof data.pick === 'object')
         ? Object.keys(data.pick).length : 0;
@@ -153,7 +155,8 @@
       }
 
       if (!meta) return;
-      var lv = set.level ? ' · ' + set.level.charAt(0).toUpperCase() + set.level.slice(1) : '';
+      var cap = function (w) { return w.charAt(0).toUpperCase() + w.slice(1); };
+      var lv = set.level ? ' · ' + cap(set.level) + (set.more ? ' + ' + cap(set.more) : '') : '';
       if (set.done) {
         meta.className = 'agehub-setmeta is-done';
         meta.textContent = 'Finished' + lv + ' · ' + (set.answered - set.wrong) +
@@ -265,11 +268,12 @@
 
   /* ---------------------------------------------------------
      5. CHHANNA — topic aur level
-     Sirf do level hain, Medium aur Hard, aur dono alag-alag
+     Teen level hain, Easy, Medium aur Hard, aur teeno alag-alag
      on/off hote hain. Aakhri chalu level band nahi hota, warna
      list khali ho jaati aur wajah dikhti nahi.
      --------------------------------------------------------- */
-  var state = { topic: 'all', levels: ['medium', 'hard'] };
+  var ALL_LEVELS = ['easy', 'medium', 'hard'];
+  var state = { topic: 'all', levels: ALL_LEVELS.slice() };
 
   function readState() {
     var saved = null;
@@ -286,7 +290,7 @@
     if (t) state.topic = t;
     if (l) {
       var asked = l.split(',').map(function (x) { return x.trim().toLowerCase(); })
-        .filter(function (x) { return x === 'medium' || x === 'hard'; });
+        .filter(function (x) { return ALL_LEVELS.indexOf(x) > -1; });
       if (asked.length) state.levels = asked;
     }
   }
@@ -300,7 +304,7 @@
     if (!window.history || !history.replaceState) return;
     var q = new URLSearchParams(location.search);
     state.topic === 'all' ? q.delete('topic') : q.set('topic', state.topic);
-    state.levels.length === 2 ? q.delete('level') : q.set('level', state.levels.join(','));
+    state.levels.length === ALL_LEVELS.length ? q.delete('level') : q.set('level', state.levels.join(','));
     /* Apna banaya hua set bhi link me jaye, taaki bheja ja sake.
        Build card page par na ho to build.minutes abhi 0 hai — tab kuch nahi. */
     if (build.minutes > 0) {
@@ -343,7 +347,7 @@
     }
 
     var clear = $('#ageClear');
-    if (clear) clear.hidden = state.topic === 'all' && state.levels.length === 2;
+    if (clear) clear.hidden = state.topic === 'all' && state.levels.length === ALL_LEVELS.length;
 
     saveState();
     stampUrl();
@@ -376,7 +380,7 @@
     if (clear) {
       clear.addEventListener('click', function () {
         state.topic = 'all';
-        state.levels = ['medium', 'hard'];
+        state.levels = ALL_LEVELS.slice();
         apply();
         if (topicSel) topicSel.focus();
       });
@@ -480,9 +484,11 @@
       }
       /* Start usi set par jata hai jo khula hai. Pehle yahan /custom/ tha, jo
          kabhi bana hi nahi — 404. Set me jitne sawal hain usse zyada maange
-         to utne hi milte hain, aur waqt bhi unhi ke hisaab se. */
+         to utne hi milte hain, aur waqt bhi unhi ke hisaab se.
+         Har level ki file me size sawal hain, aur ek set ke dono level
+         milakar pool bante hain: 50 se upar ke sawal doosre level se aate hain. */
       var live = sets.filter(function (x) { return x.live; })[0];
-      var pool = live ? live.size : 0;
+      var pool = live ? live.size * Math.max(1, live.levels.length) : 0;
       var eff = pool ? Math.min(build.count, pool) : build.count;
       var effMin = clamp(Math.round(eff * build.rate / 60), minMinutes(eff), maxMinutes(eff));
       if (startBtn && startBtn.tagName === 'A' && live) {
@@ -491,10 +497,14 @@
       }
       if (poolNote) {
         var over = pool > 0 && build.count > pool;
-        poolNote.hidden = !over;
+        var topUp = pool > 0 && !over && eff > live.size;
+        poolNote.hidden = !(over || topUp);
         if (over) {
           poolNote.textContent = 'Only ' + pool + ' questions are written so far, so Start will give ' +
             'you ' + pool + ' of them, in ' + effMin + ' minutes.';
+        } else if (topUp) {
+          poolNote.textContent = 'One level holds ' + live.size + ' questions, so the last ' +
+            (eff - live.size) + ' come from the other level.';
         }
       }
 

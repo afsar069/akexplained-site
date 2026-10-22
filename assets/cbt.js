@@ -68,6 +68,7 @@
   var DEFAULT_LEVEL = root.getAttribute('data-default-level') || LEVELS[0] || '';
   var papers = {};
   var level = '';
+  var more = '';      /* sawal is level se kam pade to jis doosre level se bhare gaye */
 
   function srcFor(lv) {
     var src = root.getAttribute('data-src') || '';
@@ -90,6 +91,40 @@
       });
   }
 
+  /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to
+     bache hue sawal wahin se aate hain. */
+  function otherLevel() {
+    for (var i = 0; i < LEVELS.length; i++) if (LEVELS[i] !== level) return LEVELS[i];
+    return '';
+  }
+
+  /* Doosre level ki file tab uthao jab zaroorat ho: ?n= is level se bada ho,
+     ya rakha hua attempt usse bana ho. Pehle wale me file na aaye to bas
+     itne hi sawal milte hain; doosre me attempt adhoora dikhta, isliye error. */
+  function wantMore() {
+    var other = otherLevel();
+    if (!other || papers[other]) return Promise.resolve();
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) {}
+    if (saved && saved.more === other) return fetchPaper(other);
+    var n = parseInt(new URLSearchParams(location.search).get('n'), 10);
+    if (n > paper.questions.length) return fetchPaper(other).catch(function () {});
+    return Promise.resolve();
+  }
+
+  /* Pehle n sawal: is level ke, phir (ho to) doosre level ke. */
+  function questionsFor(n, mix) {
+    var list = paper.questions;
+    if (mix && papers[mix]) list = list.concat(papers[mix].questions);
+    return list.slice(0, n);
+  }
+
+  /* "Easy" ya, mila hua ho to, "Easy + Medium". */
+  function levelLabel() {
+    var name = paper.levelName || 'Mixed';
+    return more && papers[more] ? name + ' + ' + (papers[more].levelName || more) : name;
+  }
+
   /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
      uska (taaki adhoora test wahin se chale), phir ?level=, phir default. */
   function chooseLevel() {
@@ -110,6 +145,9 @@
         paper = data;
         if (!paper.setId) paper.setId = SET_ID;
         if (!key) key = 'akq:' + (data.setId || 'set') + ':v1';
+        return wantMore();
+      })
+      .then(function () {
         if (root.getAttribute('data-mode') === 'review') { showReview(); return; }
         begin();
       })
@@ -122,6 +160,9 @@
     fetchPaper(next)
       .then(function (data) {
         paper = data; level = next;
+        return wantMore();
+      })
+      .then(function () {
         /* window.history likhna zaroori hai — is file me history() naam ka
            apna function hai jo seedhe likhne par isse dab jata. */
         try {
@@ -154,26 +195,30 @@
      --------------------------------------------------------- */
   function plan() {
     var all = paper.questions.length;
+    var other = otherLevel();
+    var pool = all + (other && papers[other] ? papers[other].questions.length : 0);
     var q = new URLSearchParams(location.search);
 
     var n = parseInt(q.get('n'), 10);
-    n = n ? clamp(n, 1, all) : all;
+    n = n ? clamp(n, 1, pool) : all;
 
     var lo = Math.ceil(n * SEC_MIN / 60);
     var hi = Math.min(MINUTES_CAP, Math.max(lo, Math.floor(n * SEC_MAX / 60)));
     var t = parseInt(q.get('t'), 10);
     t = t ? clamp(t, lo, hi) : clamp(Math.round(n * SEC_PER_Q / 60), lo, hi);
 
-    return { n: n, minutes: t };
+    return { n: n, minutes: t, more: n > all ? other : '' };
   }
 
   function begin() {
     if (new URLSearchParams(location.search).get('only') === 'wrong') { beginWrongOnly(); return; }
 
     var p = plan();
-    Q = paper.questions.slice(0, p.n);
+    more = p.more;
+    Q = questionsFor(p.n, more);
 
     var old = read();
+    if (old && (old.more || '') !== more) old = null;     /* alag mel ka attempt — ye wala nahi */
     if (old && !old.done && old.endsAt > Date.now() && old.count === Q.length) {
       st = old;
       runTest();              /* adhoora test chhoda tha — wahin se */
@@ -201,8 +246,9 @@
     if (!validFor(main)) main = null;      /* purane sawalo ka record yahan kaam nahi aata */
 
     var wrong = [];
+    more = (main && main.more) || '';
     if (main && main.done && main.pick) {
-      paper.questions.slice(0, main.count || paper.questions.length).forEach(function (q, i) {
+      questionsFor(main.count || paper.questions.length, more).forEach(function (q, i) {
         var p = main.pick[i];
         if (p !== undefined && p !== q.correct_option_id) wrong.push(q);
       });
@@ -220,7 +266,7 @@
     }
 
     Q = wrong;
-    key = 'akqx:' + paper.setId + ':' + (paper.level || 'all') + ':wrong:v1';
+    key = 'akqx:' + paper.setId + ':' + (paper.level || 'all') + (more ? '+' + more : '') + ':wrong:v1';
     var minutes = Math.max(1, Math.round(Q.length * SEC_PER_Q / 60));
 
     var old = read();
@@ -236,7 +282,7 @@
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + Q.length + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + minutes + ' min</b><span>Time</span></div>' +
-          '<div class="cbt-fact"><b>' + esc(paper.levelName || 'Mixed') + '</b><span>Level</span></div>' +
+          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>Level</span></div>' +
         '</div>' +
         '<button type="button" class="cbt-begin" id="cbtBegin">Begin</button>' +
       '</div>';
@@ -264,7 +310,7 @@
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + p.n + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + p.minutes + ' min</b><span>Time</span></div>' +
-          '<div class="cbt-fact"><b>' + esc(paper.levelName || 'Mixed') + '</b><span>Level</span></div>' +
+          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>Level</span></div>' +
         '</div>' +
         '<ul class="cbt-rules">' +
           '<li>One question on the screen at a time. The clock runs from the moment you begin.</li>' +
@@ -316,6 +362,12 @@
         }).join('') +
       '</div>' +
       (paper.levelNote ? '<p class="cbt-neghint">' + esc(paper.levelNote) + '</p>' : '') +
+      (more && papers[more]
+        ? '<p class="cbt-neghint cbt-lvlmix">One level holds ' + paper.questions.length + ' questions. ' +
+          'The first ' + paper.questions.length + ' here are ' + esc(paper.levelName || level) +
+          '; the other ' + (Q.length - paper.questions.length) + ' come from the ' +
+          esc(papers[more].levelName || more) + ' level.</p>'
+        : '') +
     '</div>';
   }
 
@@ -358,7 +410,7 @@
       '<div class="cbt-bar">' +
         '<div class="cbt-bar-name">' + esc(paper.setName || 'Practice set') +
           '<span>' + esc(paper.ageName || '') + ' &middot; Set ' +
-          esc(String(paper.setNumber || 1)) + ' &middot; ' + esc(paper.levelName || '') + '</span>' +
+          esc(String(paper.setNumber || 1)) + ' &middot; ' + esc(levelLabel()) + '</span>' +
         '</div>' +
         '<p class="cbt-count" id="cbtCount"></p>' +
         '<div class="cbt-clock" id="cbtClock" role="timer" aria-label="Time left">' +
@@ -707,8 +759,8 @@
             t.acc + '%', 'Your accuracy', 'of the ' + t.answered + ' you answered',
             '<span class="cbt-meter"><i style="width:' + t.acc + '%"></i></span>') +
           numCell('is-diff', ic('<path d="M5 20v-5M12 20V8M19 20v-9M3 20h18"/>'),
-            esc(paper.levelName || 'Mixed'), 'Difficulty level',
-            Q.length + ' questions in this set') +
+            esc(levelLabel()), 'Difficulty level',
+            Q.length + ' questions in this test') +
           numCell('is-locked', lockIcon(), 'Locked', 'Percentile · you vs others',
             '<a href="/login/">Needs a student account</a>') +
         '</section>' +
@@ -1107,7 +1159,7 @@
 
     /* Easy aur Medium ke score ek chart me milte to "pichhli baar se behtar"
        jhooth bolta. Har level ki apni list, aur rev badalne par nayi. */
-    var hkey = 'akqh:' + paper.setId + ':' + (paper.level || 'all') + ':r' + (paper.rev || 1);
+    var hkey = 'akqh:' + paper.setId + ':' + (paper.level || 'all') + (more ? '+' + more : '') + ':r' + (paper.rev || 1);
     var list = [];
     try { list = JSON.parse(localStorage.getItem(hkey) || '[]'); } catch (e) {}
     if (!Array.isArray(list)) list = [];
@@ -1244,7 +1296,8 @@
     }
 
     st = done;
-    Q = paper.questions.slice(0, st.count || paper.questions.length);
+    more = st.more || '';
+    Q = questionsFor(st.count || paper.questions.length, more);
 
     var right = 0, wrong = 0, skipped = 0;
     Q.forEach(function (q, i) {
@@ -1425,6 +1478,7 @@
     st.count = Q.length;
     st.level = paper.level;
     st.rev = paper.rev;
+    st.more = more;
     try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {}
   }
 
