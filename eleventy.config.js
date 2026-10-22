@@ -43,6 +43,8 @@ module.exports = function (eleventyConfig) {
   // Review system login ke saath chalu hoga. Tab tak ye page build nahi hota —
   // file repo me padi hai, chalu karne ke liye bas ye line hata dein.
   eleventyConfig.ignores.add("write-a-review/**");
+  // tools/ me skill aur checker hain (maintainers ke liye) — site ka hissa nahi.
+  eleventyConfig.ignores.add("tools/**");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("_redirects");
