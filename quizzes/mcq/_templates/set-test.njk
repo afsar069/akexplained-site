@@ -1,0 +1,62 @@
+---
+pagination:
+  data: mcqLiveSets
+  size: 1
+  alias: entry
+permalink: "/quizzes/mcq/{{ entry.age.slug }}/set-{{ entry.set.n }}/index.html"
+eleventyExcludeFromCollections: true
+---
+{% extends "mcq-page.njk" %}
+{% set age = entry.age %}{% set st = entry.set %}
+{% set pageTitle %}{{ age.name }} Practice &mdash; Set {{ st.n }}, {{ st.titleCase }} | AK Explained{% endset %}
+{% set pageDescription %}{{ st.countWords }} {{ age.name }} practice questions {% if st.focus %}on {{ st.focus }}, {% endif %}at {{ st.levelsText }} level, in a real test screen: one question at a time, a clock, a question grid and a full answer review when you submit.{% endset %}
+{% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/set-" + st.n + "/" %}
+{% set robots = "noindex,follow" %}
+{% set ogTitle %}{{ age.name }} Practice — Set {{ st.n }} | AK Explained{% endset %}
+{% set ogDescription %}{{ st.countWords }} questions at {{ st.levelsText }} level, one screen at a time, with a clock and a full review at the end.{% endset %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Quizzes',h:'/quizzes/'},{t:'MCQ Practice',h:'/quizzes/mcq/'},{t:age.name,h:'/quizzes/mcq/' + age.slug + '/'},{t:'Set ' + st.n}] %}
+{% set mainClass = "cbt" %}
+{% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
+{% block main %}
+
+<!-- Site ka wahi pagehead jo har page par hai. Result banne par cbt.js
+     iske teeno text badal deta hai — header ek hi rehta hai, do nahi. -->
+<section class="pagehead pagehead-practice">
+  <span class="mark" aria-hidden="true">{{ age.name | first }}</span>
+  <div class="wrap">
+    <p class="eyebrow" id="cbtEyebrow">Practice &middot; MCQ &middot; {{ age.name }}</p>
+    <h1 id="cbtTitle">Set {{ st.n }} &middot; {{ st.title }}</h1>
+    <p class="lede" id="cbtLede">{{ st.lede | safe }}</p>
+  </div>
+</section>
+
+<!-- Sirf chhapne par dikhta hai: PDF ke upar brand ki patti.
+     [data-cbt] ke BAHAR hai, kyunki engine us dabbe ka andar poora
+     badal deta hai aur andar rakhne par ye patti mit jati hai. -->
+<div class="cbt-printhead" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="34" height="34">
+  <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
+</div>
+
+<div class="wrap cbt-body"
+     data-cbt
+     data-set="{{ st.id }}"
+     data-levels="{{ st.levels | join(',') }}"
+     data-default-level="{{ st.defaultLevel }}"
+     data-src="/assets/questions/{{ st.id }}-{level}.json"
+     data-back="/quizzes/mcq/{{ age.slug }}/">
+
+  <!-- Engine (assets/cbt.js) is dabbe ko bharta hai. Script band ho ya
+       file na mile to neeche wali baat dikhti rehti hai — khali page nahi. -->
+  <noscript>
+    <div class="cbt-start">
+      <h1>This test needs JavaScript</h1>
+      <p class="lede">The test screen keeps the clock, the question grid and your answers, and all of that runs in your own browser. Turn JavaScript on for this site and reload the page.</p>
+      <p>You can still read the notes on this age:</p>
+      <p><a class="btn" href="{{ age.notes }}">{{ age.notesName }} &mdash; the full notes</a></p>
+    </div>
+  </noscript>
+
+</div>
+
+{% endblock %}

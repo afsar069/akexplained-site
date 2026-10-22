@@ -30,7 +30,6 @@
   var AGE = page.getAttribute('data-age') || '';
   var LEVELS = (page.getAttribute('data-levels') || 'easy,medium').split(',')
     .map(function (x) { return x.trim(); }).filter(Boolean);
-  var LIVE = window.AK_LIVE_SETS || [];
   var SAVE_KEY = 'ak:agebuild2:' + AGE;
   var CUSTOM_KEY = 'akq:' + AGE + '-custom:v1';
   var CUSTOM_URL = '/quizzes/mcq/' + AGE + '/custom/';
@@ -51,7 +50,7 @@
   function cap(w) { return w.charAt(0).toUpperCase() + w.slice(1); }
   function plural(n, one, many) { return n + ' ' + (n === 1 ? one : many); }
 
-  /* Page par likhi har set row ek object. Chalu wahi hai jo mcq-live.js me hai. */
+  /* Page par likhi har set row ek object. Chalu wahi hai jis par data-live hai. */
   var sets = $$('.mcqb-set', page).map(function (row) {
     var id = row.getAttribute('data-set') || '';
     return {
@@ -59,7 +58,7 @@
       num: (id.match(/(\d+)$/) || [])[1] || '',
       size: parseInt(row.getAttribute('data-count'), 10) || 0,    /* har level me itne sawal */
       levels: (row.getAttribute('data-level') || '').split(/\s+/).filter(Boolean),
-      live: LIVE.indexOf(id) > -1
+      live: row.hasAttribute('data-live')
     };
   });
   var live = sets.filter(function (s) { return s.live; });

@@ -1,0 +1,172 @@
+---
+pagination:
+  data: mcqAges
+  size: 1
+  alias: age
+permalink: "/quizzes/mcq/{{ age.slug }}/index.html"
+eleventyExcludeFromCollections: true
+---
+{% extends "mcq-page.njk" %}
+{% set pageTitle = age.hub.title %}
+{% set pageDescription = age.hub.description %}
+{% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/" %}
+{% if not age.hasLive %}{% set robots = "noindex,follow" %}{% endif %}
+{% set ogTitle = age.hub.ogTitle %}
+{% set ogDescription = age.hub.ogDescription %}
+{% set jsonld = true %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Quizzes',h:'/quizzes/'},{t:'MCQ Practice',h:'/quizzes/mcq/'},{t:age.name}] %}
+{% set scripts = ["/assets/nav.js", "/assets/mcq-age.js"] if age.hasPlan else ["/assets/nav.js"] %}
+{% block main %}
+
+<!-- ====== AGE BANNER ====== -->
+<section class="agehead" style="--age:{{ age.color }};--agepic:url('{{ age.image }}')">
+  <div class="wrap">
+    <p class="eyebrow">Practice &middot; MCQ &middot; By Age</p>
+    <div class="agehead-row">
+      <div>
+        <h1>{{ age.name }}</h1>
+        <p class="agehead-sub">{{ age.hub.heroSub | safe }}</p>
+      </div>
+      <a class="agehead-btn" href="{{ age.notes }}">Read the notes first &rarr;</a>
+    </div>
+  </div>
+</section>
+
+<div class="wrap agehub-body"{% if age.hasPlan %} data-agehub data-age="{{ age.slug }}" data-agename="{{ age.name }}"{% endif %}>
+
+  {% if age.quickQuiz %}
+  <!-- ====== WHAT YOU CAN DO TODAY ====== -->
+  <a class="agehub-ready" href="{{ age.notes }}#{{ age.quickQuiz.anchor }}">
+    <span class="ic" aria-hidden="true">
+      {{ mcqIcons.ready | safe }}
+    </span>
+    <span class="txt">
+      <strong>{{ age.quickQuiz.words }} questions are ready now</strong>
+      <span>They sit at the end of the {{ age.name }} notes. Tap an answer and it tells you at once whether it is right, and why.</span>
+    </span>
+    <span class="go">Open them</span>
+  </a>
+  {% endif %}
+
+  {% if age.hasPlan %}
+  <!-- ====== PROGRESS, WHEN THERE IS ANY ======
+       Pehli baar aane wale ko chaar khali dabbe nahi, ek saaf patti dikhti hai.
+       Jaise hi koi set answer hota hai, mcq-age.js patti hata kar dabbe khol deta hai. -->
+  <p class="agehub-fresh" id="ageFresh">
+    <b>Nothing answered yet.</b> Once you start a set, this strip keeps your count for this age &mdash; how many you answered, how many you got right, and what is left.
+  </p>
+
+  <section class="agehub-stats" id="ageStats" aria-label="Your count in this age" hidden>
+    <div class="agehub-stat"><b id="statAnswered">0</b><span>Answered</span></div>
+    <div class="agehub-stat is-right"><b id="statRight">&mdash;</b><span>Right</span></div>
+    <div class="agehub-stat is-redo"><b id="statRedo">0</b><span>To redo</span></div>
+    <div class="agehub-stat"><b id="statLeft">&mdash;</b><span>Still to see</span></div>
+  </section>
+
+  {% endif %}
+
+  <!-- ====== TWO COLUMNS ====== -->
+  <div class="agehub-grid">
+
+{% if age.hasPlan %}
+    <!-- ------ LEFT: FILTERS + THE SIX SETS ------ -->
+    <div>
+
+      <div class="agehub-filters">
+        <div class="agehub-field">
+          <label for="ageTopic">Choose a topic</label>
+          <div class="agehub-select">
+            <select id="ageTopic">
+              <option value="all">All topics</option>
+              {% for t in age.topics %}<option value="{{ t.value }}">{{ t.label }}</option>
+              {% endfor %}
+            </select>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+
+        <div class="agehub-field">
+          <span class="lbl" id="ageLevelLabel">Difficulty level</span>
+          <div class="agehub-levels" role="group" aria-labelledby="ageLevelLabel">
+            <button type="button" class="agehub-level" data-level="all" aria-pressed="true">All</button>
+            <button type="button" class="agehub-level" data-level="easy" aria-pressed="false">Easy</button>
+            <button type="button" class="agehub-level" data-level="medium" aria-pressed="false">Medium</button>
+            <button type="button" class="agehub-level" data-level="hard" aria-pressed="false">Hard</button>
+          </div>
+        </div>
+      </div>
+
+      <p class="agehub-count">
+        <span id="ageCount" aria-live="polite">All {{ age.sets.length }} sets</span>
+        <button type="button" class="agehub-clear" id="ageClear" hidden>Clear the filters</button>
+      </p>
+
+      <p class="seclede">
+        Fifty questions in each set, the easier ones first. Work through them in order, or jump about. The questions for this age are being written, so the sets open one by one.
+      </p>
+
+      <section class="agehub-sets" aria-label="The {{ age.setsWord }} question sets">
+
+        {% for st in age.sets %}
+        <!-- SET {{ st.n }} -->
+        <div class="agehub-set" data-set="{{ st.id }}"{% if st.rev %} data-rev="{{ st.rev }}"{% endif %} data-count="{{ st.count }}" data-topic="{{ st.topicAttr }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}>
+          <span class="agehub-badge" aria-hidden="true">{{ st.n }}</span>
+          <div class="agehub-setbody">
+            <span class="agehub-settitle">Set {{ st.n }} &middot; {{ st.title }}</span>
+            <span class="agehub-setmeta">{{ st.meta | safe }}</span>
+            <div class="agehub-tags">{% for t in st.tags %}<span class="agehub-tag">{{ t }}</span>{% endfor %}</div>
+            <span class="mcq-bar" hidden><i></i></span>
+          </div>
+          <span class="agehub-soon">Coming soon</span>
+        </div>
+        {% endfor %}
+
+        <!-- Filter se ek bhi set na bache to yahi dikhta hai -->
+        <div class="agehub-empty" id="ageEmpty" hidden>
+          <p>No set matches that choice. Try another topic, or turn the other level back on.</p>
+        </div>
+
+      </section>
+
+      {% if age.hasLive %}
+      <!-- ====== BUILD YOUR OWN ======================================
+           Chunav alag page par hota hai (build/): kaun se sets, level,
+           kitne sawal, kitna waqt. Yahan sirf wahan jane ka rasta hai,
+           taaki ye page chhota rahe aur Start seedha kisi ek set par na jaye. -->
+      <section class="agehub-build agehub-buildlink" aria-labelledby="buildTitle">
+        <h2 id="buildTitle">Build your own test</h2>
+        <p class="sub">Pick the sets you want, one level, how many questions and how long. The questions are mixed from the sets you choose.</p>
+        <div class="agehub-buildgo">
+          <a class="agehub-start" href="/quizzes/mcq/{{ age.slug }}/build/">Build a test &rarr;</a>
+        </div>
+      </section>
+      {% endif %}
+
+      <div class="agehub-actions">
+        <span class="agehub-action" aria-disabled="true">All {{ age.totalQuestions }} as one timed test &middot; coming soon</span>
+      </div>
+
+    </div>
+{% else %}
+    <!-- ------ LEFT: NOTICE ------ -->
+    <div>
+
+      <section class="agehub-build agehub-soonnote" aria-labelledby="soonTitle">
+        <h2 id="soonTitle">The questions are being written</h2>
+        <p class="sub">The practice sets for {{ age.name }} will open here, one at a time. Until then, the notes are the place to start.</p>
+        <div class="agehub-buildgo">
+          <a class="agehub-start" href="{{ age.notes }}">Read the {{ age.name }} notes &rarr;</a>
+        </div>
+      </section>
+
+    </div>
+{% endif %}
+
+{% include "mcq-aside.njk" %}
+
+
+  </div>
+
+</div>
+
+{% endblock %}

@@ -8,7 +8,7 @@
    jodti hai jo is browser me rakhe hisaab par tika hai.
 
    Chhe kaam:
-     1. Kaun se set chalu hain — LIVE_SETS se tay hota hai.
+     1. Kaun se set chalu hain — row par data-live se tay hota hai.
      2. Topic aur level se list chhanna (?topic= / ?level= se bhi).
      3. Upar ke chaar gine-gine dabbe bharna.
      4. "Kaisa chal raha hai" card banana, weakest set pehle.
@@ -25,12 +25,11 @@
 
   /* ---------------------------------------------------------
      1. KAUN SE SET CHALU HAIN
-     Jo set chalu hain unki list assets/mcq-live.js me hai (build page
-     bhi wahin se padhta hai). Row apne aap link ban jaati hai.
-     Jo wahan nahi hai, uspar "Coming soon" likha rehta hai
-     aur wo link nahi banta, taaki koi khali page par na pahunche.
+     Jo set chalu hain unki row par data-live hota hai (_data/mcqSpec.json me
+     "live": true se). Row apne aap link ban jaati hai. Jis par nahi hai,
+     uspar "Coming soon" likha rehta hai aur wo link nahi banta, taaki
+     koi khali page par na pahunche.
      --------------------------------------------------------- */
-  var LIVE_SETS = window.AK_LIVE_SETS || [];   /* list assets/mcq-live.js me hai */
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) {
@@ -109,7 +108,7 @@
      --------------------------------------------------------- */
   function openSets() {
     sets.forEach(function (set) {
-      set.live = set.id && LIVE_SETS.indexOf(set.id) > -1;
+      set.live = !!set.id && set.row.hasAttribute('data-live');
       if (!set.live) return;
 
       var slot = $('.agehub-soon', set.row);

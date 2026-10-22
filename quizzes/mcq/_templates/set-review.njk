@@ -1,0 +1,56 @@
+---
+pagination:
+  data: mcqLiveSets
+  size: 1
+  alias: entry
+permalink: "/quizzes/mcq/{{ entry.age.slug }}/set-{{ entry.set.n }}/review/index.html"
+eleventyExcludeFromCollections: true
+---
+{% extends "mcq-page.njk" %}
+{% set age = entry.age %}{% set st = entry.set %}
+{% set pageTitle %}{{ age.name }} Set {{ st.n }} &mdash; Review Your Answers | AK Explained{% endset %}
+{% set pageDescription %}Go back over every question in {{ age.name }} Set {{ st.n }} — your answer, the right one, and the reason behind it.{% endset %}
+{% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/set-" + st.n + "/review/" %}
+{% set robots = "noindex,follow" %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Quizzes',h:'/quizzes/'},{t:'MCQ Practice',h:'/quizzes/mcq/'},{t:age.name,h:'/quizzes/mcq/' + age.slug + '/'},{t:'Set ' + st.n,h:'/quizzes/mcq/' + age.slug + '/set-' + st.n + '/'},{t:'Review'}] %}
+{% set mainClass = "cbt" %}
+{% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
+{% block main %}
+
+<section class="pagehead pagehead-practice">
+  <span class="mark" aria-hidden="true">{{ age.name | first }}</span>
+  <div class="wrap">
+    <p class="eyebrow" id="cbtEyebrow">Practice &middot; MCQ &middot; {{ age.name }}</p>
+    <h1 id="cbtTitle">Review your answers</h1>
+    <p class="lede" id="cbtLede">Every question from Set {{ st.n }}, with your answer beside the right one and the reason underneath.</p>
+  </div>
+</section>
+
+<!-- Sirf chhapne par dikhta hai: PDF ke upar brand ki patti.
+     [data-cbt] ke BAHAR hai, kyunki engine us dabbe ka andar poora
+     badal deta hai aur andar rakhne par ye patti mit jati hai. -->
+<div class="cbt-printhead" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="34" height="34">
+  <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
+</div>
+
+<div class="wrap cbt-body"
+     data-cbt
+     data-mode="review"
+     data-set="{{ st.id }}"
+     data-levels="{{ st.levels | join(',') }}"
+     data-default-level="{{ st.defaultLevel }}"
+     data-src="/assets/questions/{{ st.id }}-{level}.json"
+     data-back="/quizzes/mcq/{{ age.slug }}/set-{{ st.n }}/">
+
+  <noscript>
+    <div class="cbt-start">
+      <h1>This page needs JavaScript</h1>
+      <p class="lede">Your answers are kept in your own browser, and this page reads them from there. Turn JavaScript on for this site and reload.</p>
+      <p><a class="btn" href="{{ age.notes }}">{{ age.notesName }} &mdash; the full notes</a></p>
+    </div>
+  </noscript>
+
+</div>
+
+{% endblock %}

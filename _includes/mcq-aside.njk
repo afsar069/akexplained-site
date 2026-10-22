@@ -1,0 +1,49 @@
+    <!-- ------ RIGHT: PROGRESS + READING ------ -->
+    <aside class="agehub-side">
+
+{% if age.hasPlan %}
+      <!-- Kuch answer hone ke baad hi dikhta hai -->
+      <div class="agehub-card" id="agePerf" hidden>
+        <h2>How you are doing</h2>
+        <p class="sub">Weakest set first.</p>
+        <div id="agePerfList"></div>
+        <a class="agehub-redo" id="ageRedo" hidden>Practise my mistakes</a>
+        <p class="agehub-note">
+          Kept in this browser only. Nothing is sent anywhere.
+          <button type="button" class="agehub-wipe" id="ageWipe" hidden>Clear my progress for this age</button>
+        </p>
+      </div>
+{% endif %}
+
+      <div class="agehub-card">
+        <h2>Read before you practise</h2>
+        <p class="sub">The notes are the place to start.{% if age.hasPlan %} Many questions go beyond them, so read the reason shown after each answer.{% endif %}</p>
+{% for r in age.read %}
+        <a class="agehub-read" href="{{ r.href }}">
+          {{ mcqIcons[r.icon] | safe }}
+          <span>{{ r.title | safe }}<em>{{ r.sub }}</em></span>
+        </a>
+{% endfor %}
+      </div>
+
+      <div class="agehub-card">
+        <h2>Other ages</h2>
+        <p class="sub">{{ age.posText }}</p>
+        <a class="agehub-read" href="/quizzes/mcq/">
+          {{ mcqIcons.allmcq | safe }}
+          <span>All MCQ practice<em>Every age and every topic in one place</em></span>
+        </a>
+{% if age.next %}
+        <a class="agehub-read" href="{{ age.next.href }}">
+          {{ mcqIcons.arrow | safe }}
+          <span>Next age &mdash; {{ age.next.name }}<em>{{ age.next.yearsText }}, where this one leaves off</em></span>
+        </a>
+{% elif age.prev %}
+        <a class="agehub-read" href="{{ age.prev.href }}">
+          {{ mcqIcons.arrow | safe }}
+          <span>Previous age &mdash; {{ age.prev.name }}<em>{{ age.prev.yearsText }}, the age before this one</em></span>
+        </a>
+{% endif %}
+      </div>
+
+    </aside>

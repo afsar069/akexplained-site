@@ -20,7 +20,7 @@ Is folder me teen cheezein hain:
 Teeno files aur likho: **"Old English Set 3 publish karo"**. Main:
 1. `validate_mcq.py` chalaunga (galti ho to wapas bhejunga),
 2. kuch sawal source se mila kar dekhunga,
-3. pages, hub ki row aur live list lagaunga, test karunga, aur branch par push karunga. `main` par tab hi jab aap kahoge.
+3. files `assets/questions/` me rakh kar `_data/mcqSpec.json` me set ko `live` karunga (pages, hub row, build aur custom test apne aap bante hain), test karunga, aur branch par push karunga. `main` par tab hi jab aap kahoge.
 
 ## Sources (kahan se facts aate hain)
 1. Hamara apna notes article (us age ka) — sabse pehle.

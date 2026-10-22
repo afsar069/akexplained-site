@@ -1,0 +1,106 @@
+---
+pagination:
+  data: mcqLiveAges
+  size: 1
+  alias: age
+permalink: "/quizzes/mcq/{{ age.slug }}/build/index.html"
+eleventyExcludeFromCollections: true
+---
+{% extends "mcq-page.njk" %}
+{% set pageTitle %}Build Your Own {{ age.name }} Test | AK Explained{% endset %}
+{% set pageDescription %}Choose the {{ age.name }} sets you want, one level, how many questions and how long, and get a test made from them.{% endset %}
+{% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/build/" %}
+{% set robots = "noindex,follow" %}
+{% set ogTitle %}Build Your Own {{ age.name }} Test | AK Explained{% endset %}
+{% set ogDescription %}Pick the sets, the level, the number of questions and the time. Your test is mixed from the sets you choose.{% endset %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Quizzes',h:'/quizzes/'},{t:'MCQ Practice',h:'/quizzes/mcq/'},{t:age.name,h:'/quizzes/mcq/' + age.slug + '/'},{t:'Build your own test'}] %}
+{% set scripts = ["/assets/nav.js", "/assets/mcq-build.js"] %}
+{% block main %}
+
+<section class="pagehead pagehead-practice">
+  <span class="mark" aria-hidden="true">{{ age.name | first }}</span>
+  <div class="wrap">
+    <p class="eyebrow">Practice &middot; MCQ &middot; {{ age.name }}</p>
+    <h1>Build your own test</h1>
+    <p class="lede">Choose the sets you want, one level, how many questions and how long. The questions are mixed from the sets you choose.</p>
+  </div>
+</section>
+
+<!-- Ye page test shuru nahi karta, sirf chunav karata hai. Start dabane par
+     /custom/ khulta hai aur wahi engine (cbt.js) test chalata hai.
+     Kaun se set chalu hain, ye data-live se aata hai (_data/mcqSpec.json me "live": true). -->
+<div class="wrap agehub-body mcqb" data-build data-age="{{ age.slug }}" data-agename="{{ age.name }}" data-levels="{{ age.levelAttr }}">
+
+  <div class="mcqb-resume" id="buildResume" hidden></div>
+
+  <noscript>
+    <p class="agehub-buildhint">This page needs JavaScript to build a test. You can still <a href="/quizzes/mcq/{{ age.slug }}/">open a set from the list</a>.</p>
+  </noscript>
+
+  <section class="agehub-build" aria-labelledby="bSetsTitle">
+    <h2 id="bSetsTitle"><span class="mcqb-step" aria-hidden="true">1</span>Which sets</h2>
+    <p class="sub">Tick every set you want questions from. A set that is not open yet cannot be ticked.</p>
+    <ul class="mcqb-sets" id="buildSets">
+{% for st in age.sets %}
+        <li class="mcqb-set" data-set="{{ st.id }}" data-count="{{ st.count }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}>
+          <label>
+            <input type="checkbox" disabled>
+            <span class="mcqb-text"><span class="mcqb-name">Set {{ st.n }} &middot; {{ st.title }}</span><span class="mcqb-meta">{{ st.meta | safe }}</span></span>
+          </label>
+          <span class="mcqb-soon">Coming soon</span>
+        </li>
+{% endfor %}
+    </ul>
+    <p class="agehub-buildhint" id="buildSetsHint" aria-live="polite"></p>
+  </section>
+
+  <section class="agehub-build" aria-labelledby="bLevelTitle">
+    <h2 id="bLevelTitle"><span class="mcqb-step" aria-hidden="true">2</span>Which level</h2>
+    <p class="sub">One level at a time, as in a real exam.</p>
+    <div class="agehub-levels mcqb-levels" role="group" aria-labelledby="bLevelTitle">
+      {% for l in age.levels %}<button type="button" class="agehub-level" data-level="{{ l }}" aria-pressed="{{ 'true' if loop.first else 'false' }}">{{ l | capitalize }}</button>
+      {% endfor %}    </div>
+    <p class="agehub-buildhint" id="buildLevelHint"></p>
+  </section>
+
+  <section class="agehub-build" aria-labelledby="buildTitle">
+    <h2 id="buildTitle"><span class="mcqb-step" aria-hidden="true">3</span>How many, and how long</h2>
+    <p class="sub">Change nothing and you get fifty questions in thirty-three minutes.</p>
+
+    <div class="agehub-buildgrid">
+
+      <div class="agehub-buildfield">
+        <label for="buildCount">How many questions</label>
+        <div class="agehub-numrow">
+          <input type="number" id="buildCount" value="50" min="10" max="100" step="1" inputmode="numeric">
+          <input type="range" id="buildCountRange" value="50" min="10" max="100" step="1" aria-label="How many questions" tabindex="-1">
+        </div>
+        <p class="agehub-buildhint">Anything from 10 to 100.</p>
+      </div>
+
+      <div class="agehub-buildfield">
+        <label for="buildTime">How long</label>
+        <div class="agehub-numrow">
+          <input type="number" id="buildTime" value="33" min="25" max="50" step="1" inputmode="numeric">
+          <span class="agehub-unit">minutes</span>
+          <input type="range" id="buildTimeRange" value="33" min="25" max="50" step="1" aria-label="How long, in minutes" tabindex="-1">
+        </div>
+        <p class="agehub-buildhint" id="buildRate">That is about 40 seconds a question.</p>
+      </div>
+
+    </div>
+
+    <p class="agehub-buildhint agehub-buildpool" id="buildPool" hidden></p>
+
+    <p class="agehub-buildsum" id="buildSum" aria-live="polite">50 questions &middot; 33 minutes &middot; about 40 seconds each</p>
+
+    <div class="agehub-buildgo">
+      <span class="agehub-start" id="buildStart" aria-disabled="true">Start</span>
+      <button type="button" class="agehub-clear" id="buildReset" hidden>Back to fifty questions</button>
+      <a class="agehub-clear" href="/quizzes/mcq/{{ age.slug }}/" style="margin-left:auto">&larr; Back to the sets</a>
+    </div>
+  </section>
+
+</div>
+
+{% endblock %}

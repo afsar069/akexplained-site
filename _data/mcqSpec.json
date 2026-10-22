@@ -1,0 +1,254 @@
+{
+  "_about": "MCQ registry. One entry per age. An age with no \"sets\" gets a \"questions coming soon\" hub. A set with \"live\": true needs assets/questions/<setId>-<level>.json for every level it lists; its rev is read from those files. See CLAUDE.md rule 7.",
+  "ages": [
+    {
+      "slug": "old-english",
+      "name": "Old English",
+      "years": "450–1066",
+      "article": "old-english",
+      "notesName": "Old English",
+      "color": "#3F5165",
+      "image": "old-english",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the age, its poems, manuscripts, prose and terms",
+          "topics": [
+            "ground",
+            "poetry",
+            "prose",
+            "manuscripts",
+            "terms",
+            "criticism"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50,
+          "live": true,
+          "titleCase": "Across the Whole Age",
+          "lede": "Fifty questions on the whole of Old English, at easy or medium level &mdash; the poems, the manuscripts, the prose, the terms and the people behind them."
+        },
+        {
+          "n": 2,
+          "title": "Poetry and the verse line",
+          "meta": "50 questions at each level &middot; <i>Beowulf</i>, the elegies, C&aelig;dmon, Cynewulf, the riddles",
+          "topics": [
+            "poetry"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50,
+          "live": true,
+          "titleCase": "Poetry and the Verse Line",
+          "focus": "poetry and the verse line",
+          "lede": "Fifty questions on Old English poetry, at easy or medium level &mdash; the verse line, <i>Beowulf</i>, the elegies, the religious poems and the riddles."
+        },
+        {
+          "n": 3,
+          "title": "Prose and its writers",
+          "meta": "50 questions &middot; Alfred, the <i>Anglo-Saxon Chronicle</i>, &AElig;lfric, Wulfstan, the law codes",
+          "topics": [
+            "prose"
+          ],
+          "levels": [
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Manuscripts and survival",
+          "meta": "50 questions &middot; the four codices, the Ruthwell Cross, Sutton Hoo, the 1731 fire",
+          "topics": [
+            "manuscripts"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Terms, dates and sources",
+          "meta": "50 questions &middot; kenning, caesura, comitatus, wergild, futhorc, Danelaw, Danegeld",
+          "topics": [
+            "terms"
+          ],
+          "levels": [
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 6,
+          "title": "Criticism and scholarship",
+          "meta": "50 questions &middot; Ker, Chambers, Klaeber, the 1936 lecture, Whitelock, Magoun, Heaney",
+          "topics": [
+            "criticism",
+            "poetry"
+          ],
+          "levels": [
+            "hard"
+          ],
+          "count": 50,
+          "extraTags": [
+            "UGC NET level"
+          ]
+        }
+      ],
+      "notesSub": "450 to 1066, from the settlement to Hastings",
+      "readSubs": {
+        "terms": "Kenning, caesura, comitatus, wergild and the rest"
+      },
+      "hub": {
+        "title": "Old English MCQ Practice (450&ndash;1066) &mdash; Six Sets by Topic | AK Explained",
+        "description": "Old English literature practice questions, arranged in six sets by topic — poetry, prose, manuscripts, terms and criticism — from easy to hard, with the notes beside them.",
+        "ogTitle": "Old English MCQ Practice — AK Explained",
+        "ogDescription": "Six sets of Old English questions by topic, from easy to hard. Every answer carries its reason and a link back to the notes.",
+        "heroSub": "450 to 1066 &middot; six sets of fifty questions, from easy to hard"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The ground to know"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and the verse line"
+        },
+        {
+          "value": "prose",
+          "label": "Prose and its writers"
+        },
+        {
+          "value": "manuscripts",
+          "label": "Manuscripts and survival"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        },
+        {
+          "value": "criticism",
+          "label": "Criticism and scholarship"
+        }
+      ]
+    },
+    {
+      "slug": "middle-english",
+      "name": "Middle English",
+      "years": "1066–1500",
+      "article": "middle-english",
+      "notesName": "Middle English",
+      "color": "#4A6473",
+      "image": "middle-english",
+      "sets": []
+    },
+    {
+      "slug": "renaissance",
+      "name": "Renaissance",
+      "years": "1500–1558",
+      "article": "renaissance",
+      "notesName": "Renaissance",
+      "color": "#4F6F68",
+      "image": "renaissance",
+      "sets": []
+    },
+    {
+      "slug": "elizabethan",
+      "name": "Elizabethan",
+      "years": "1558–1603",
+      "article": "renaissance",
+      "notesName": "Renaissance",
+      "color": "#53705F",
+      "image": "renaissance",
+      "sets": []
+    },
+    {
+      "slug": "jacobean",
+      "name": "Jacobean",
+      "years": "1603–1625",
+      "article": "jacobean-and-caroline-age",
+      "notesName": "Jacobean and Caroline",
+      "color": "#566F5A",
+      "image": "jacobean",
+      "sets": []
+    },
+    {
+      "slug": "caroline",
+      "name": "Caroline",
+      "years": "1625–1649",
+      "article": "jacobean-and-caroline-age",
+      "notesName": "Jacobean and Caroline",
+      "color": "#5F7254",
+      "image": "jacobean",
+      "sets": []
+    },
+    {
+      "slug": "restoration",
+      "name": "Restoration",
+      "years": "1660–1700",
+      "article": "restoration-age",
+      "notesName": "Restoration",
+      "color": "#6A7550",
+      "image": "restoration",
+      "sets": []
+    },
+    {
+      "slug": "augustan-age",
+      "name": "Augustan",
+      "years": "1700–1798",
+      "article": "augustan-age",
+      "notesName": "Augustan Age",
+      "color": "#7D7548",
+      "image": "augustan",
+      "sets": []
+    },
+    {
+      "slug": "romantic-age",
+      "name": "Romantic Age",
+      "years": "1798–1837",
+      "article": "romantic-age",
+      "notesName": "Romantic Age",
+      "color": "#8A6A44",
+      "image": "romantic",
+      "sets": []
+    },
+    {
+      "slug": "victorian-age",
+      "name": "Victorian Age",
+      "years": "1837–1901",
+      "article": "victorian-age",
+      "notesName": "Victorian Age",
+      "color": "#8D5A45",
+      "image": "victorian",
+      "sets": []
+    },
+    {
+      "slug": "modern",
+      "name": "Modern",
+      "years": "1901–1945",
+      "article": "modern-age",
+      "notesName": "Modern",
+      "color": "#85484F",
+      "image": "modern",
+      "sets": []
+    },
+    {
+      "slug": "contemporary",
+      "name": "Contemporary",
+      "years": "1945 onwards",
+      "article": "contemporary-age",
+      "notesName": "Contemporary",
+      "color": "#7A4258",
+      "image": "contemporary",
+      "sets": []
+    }
+  ]
+}
