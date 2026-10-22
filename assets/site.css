@@ -1102,7 +1102,8 @@ summary.ptbtn::-webkit-details-marker{display:none}
 }
 
 /* ---------- Choose a Topic ---------- */
-.dq-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:18px}
+.dq-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:8px}
+.dq-head + .seclede{max-width:none;margin:0 0 16px}
 .dq-head h2{
   display:flex;align-items:center;gap:12px;margin:0;
   font-size:clamp(1.4rem,2.5vw,1.75rem);line-height:1.2;
@@ -1152,7 +1153,16 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
   /* the pictures have a white ground; multiply lets the card's own colour show through it */
   mix-blend-mode:multiply;
 }
-.dq-card:has(.dq-pic) .dq-title{max-width:58%}
+.dq-card:has(.dq-pic,.dq-ph) .dq-text{max-width:58%}
+.dq-text{position:relative}
+.dq-years{display:block;margin-top:3px;font-size:13.5px;font-weight:500;line-height:1.3;color:var(--mcq-ink-soft)}
+
+/* A topic with no picture yet keeps the place for one: a faint dashed square. */
+.dq-ph{
+  position:absolute;right:10px;bottom:10px;width:clamp(56px,32%,84px);aspect-ratio:1;
+  border:1.5px dashed var(--c-ink);border-radius:12px;opacity:.3;pointer-events:none;
+  background:rgba(255,255,255,.4) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231B2430' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4.5' width='18' height='15' rx='2.5'/%3E%3Ccircle cx='9' cy='10' r='1.6'/%3E%3Cpath d='m4 17 5-4.5 3.5 3 3-2.5L21 16.5'/%3E%3C/svg%3E") center/36% no-repeat;
+}
 
 .dq-card.t-rose{--c-bg:#FBEAE7;--c-line:#F1D2CD;--c-btn:#F5CBC5;--c-ink:#8F2D26}
 .dq-card.t-peach{--c-bg:#FCEFDD;--c-line:#F3DDBD;--c-btn:#F7DDB5;--c-ink:#7F430A}
