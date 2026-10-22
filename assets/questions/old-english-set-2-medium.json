@@ -1,0 +1,675 @@
+{
+  "setId": "old-english-set-2",
+  "rev": 1,
+  "age": "old-english",
+  "ageName": "Old English",
+  "setNumber": 2,
+  "setName": "Poetry and the verse line",
+  "notes": "/notes/old-english/",
+  "notesTitle": "Old English — the full notes",
+  "topics": {
+    "verse": "Verse and craft",
+    "beowulf": "Beowulf",
+    "elegies": "The elegies",
+    "religious": "Religious poetry",
+    "riddles": "The riddles"
+  },
+  "topicRead": {
+    "verse": "poetry",
+    "beowulf": "poetry",
+    "elegies": "poetry",
+    "religious": "poetry",
+    "riddles": "poetry"
+  },
+  "quote": {
+    "text": "That passed away; so may this.",
+    "source": "Deor, Exeter Book (the refrain)"
+  },
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Finer detail: the metre, episodes and sources, and the riddle solutions.",
+  "questions": [
+    {
+      "question": "In Eduard Sievers' classification of Old English meter, what specific rhythmic movement defines Type A?",
+      "options": [
+        "A clashing rhythm consisting of two adjacent strongly stressed syllables",
+        "A falling rhythm of stressed syllables followed by unstressed syllables",
+        "A rising rhythm of unstressed syllables followed immediately by stressed syllables",
+        "A clashing-rising pattern ending abruptly in an unaccented half-foot"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sievers Type A is the commonest falling trochaic rhythm consisting of lifted then lowered syllables.",
+      "topic": "verse"
+    },
+    {
+      "question": "In Sievers' metrical analysis of Old English verse, which type represents a rising iambic movement?",
+      "options": [
+        "Type D",
+        "Type A",
+        "Type C",
+        "Type B"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sievers Type B represents a rising iambic pattern where unstressed dips precede stressed lifts.",
+      "topic": "verse"
+    },
+    {
+      "question": "Which conventional Old English poetic theme describes the wolf, raven, and eagle waiting to devour the slain?",
+      "options": [
+        "The Hero on the Beach theme",
+        "The Ubi sunt lamentation",
+        "The Comitatus oath ceremony",
+        "The Beasts of Battle motif"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Beasts of Battle is an oral-formulaic motif where scavenger birds and beasts herald slaughter.",
+      "topic": "verse"
+    },
+    {
+      "question": "In Old English heroic poetry, what conventional motif depicts an armed warrior standing near water before embarking?",
+      "options": [
+        "The Beasts of Battle slaughter motif",
+        "The traditional Hall-cleansing sequence",
+        "The Funeral Pyre mourning dirge",
+        "The Hero on the Beach theme"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Oral-formulaic theory identifies the Hero on the Beach as a recurrent scene preceding momentous journeys.",
+      "topic": "verse"
+    },
+    {
+      "question": "What does the Old English figurative compound 'heofon-candel' or 'sky-candle' signify in poetic verse?",
+      "options": [
+        "The sun shining in the heavens",
+        "A burning funeral pyre",
+        "The moon during a total eclipse",
+        "A blazing monastery torch"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Heofon-candel is a poetic kenning metaphorically depicting the radiant sun in the sky.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "How did the legendary Danish foundling king Scyld Scefing arrive in Denmark as a helpless infant?",
+      "options": [
+        "Rescued secretly from an isolated dragon cave by traveling merchants",
+        "Cast adrift alone in a boat loaded with treasures and weapons",
+        "Carried safely ashore upon the broad back of a royal sea-whale",
+        "Guided majestically across the coastal ice by a flock of heavenly swans"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Scyld Scefing arrived miraculously as an infant in an open boat laden with weapons and royal goods.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Beowulf', what dark deed does Beowulf accuse Unferth of having committed among his own clan?",
+      "options": [
+        "Fleeing coward-like from Grendel's attack",
+        "Poisoning the mead supply of Queen Wealhtheow",
+        "Murdering his own brothers in cold blood",
+        "Stealing a golden cup from the royal treasury"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beowulf exposes Unferth as a fratricide who will suffer damnation for killing his brothers.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What unexpected failure occurs when Beowulf strikes Grendel's mother with the borrowed sword Hrunting?",
+      "options": [
+        "The charmed weapon transforms into a flock of black night ravens",
+        "The blade fails to bite or penetrate her monstrous hide",
+        "The golden ancestral hilt shatters instantly in Beowulf's grasp",
+        "The entire iron blade dissolves into poisonous venomous liquid"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The celebrated ancient blade Hrunting is rendered useless against the skin of Grendel's mother.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What happened to the blade of the giant sword after Beowulf used it to decapitate Grendel's corpse in the mere?",
+      "options": [
+        "It snapped violently into three jagged pieces under Beowulf's weight",
+        "It melted away like winter ice due to Grendel's hot blood",
+        "It was swept away by subterranean currents into the ocean depths",
+        "It turned into solid gold and was carried triumphantly back"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The ancient giant blade melted down to its hilt like icicles under the burning, poisonous blood.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Beowulf', which sorrowful figure is commemorated in the scop's lay of the Finnsburh tragedy?",
+      "options": [
+        "Queen Hildeburh, who lost both brother and son in the feud",
+        "Queen Wealhtheow, who fled in sorrow from Heorot during the night",
+        "Queen Modthryth, who executed innocent travelers in her fortress",
+        "Queen Hygd, who offered the Geatish royal throne away to Unferth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The lay mourns Hildeburh, a Danish princess torn between her Danish kin and her Frisian husband Finn.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "How did the Geatish warriors dispose of the dead treasure-dragon following Beowulf's mortal victory?",
+      "options": [
+        "They cremated its remains solemnly upon Beowulf's royal funeral pyre",
+        "They presented its intact golden scales as tribute to the Danish court",
+        "They buried its gigantic skeleton deep beneath the foundations of Heorot",
+        "They shoved its massive corpse over the high sea-cliff into the waves"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Geats rolled the dead dragon off the cliff edge, letting the ocean waters swallow the carcass.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What grim prophecy is voiced by the Geatish mourning woman during the funeral ceremony for Beowulf?",
+      "options": [
+        "The unending peaceful and prosperous reign of Wiglaf over all Scandinavia",
+        "The violent destruction of the Geatish people and invasion by hostile enemies",
+        "The sudden terrifying resurrection of Grendel and his monstrous ancestral kin",
+        "The eternal freezing of all northern ocean waterways into solid impenetrable ice"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A Geatish woman sings a dirge expressing dread of invasion, terror, slaughter, and enslavement.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Wanderer', what psychological transition takes place between the early and concluding sections of the poem?",
+      "options": [
+        "From personal elegiac despair over earthly loss to Christian consolation in God",
+        "From secular romantic lyricism to a polemical attack on ecclesiastical church synods",
+        "From joyful military triumph on the battlefield to sudden naval shipwreck on shoals",
+        "From hatred of pagan Viking invaders to peaceful monastic devotion at Canterbury"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem shifts from worldly lament for vanished glory to the eternal stability of the heavenly Father.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Seafarer', what sharp contrast is drawn between the lonely mariner and the prosperous city-dweller?",
+      "options": [
+        "The city-dweller endures harsh poverty while the mariner amasses fabulous gold rings",
+        "The city-dweller builds sea-vessels while the mariner resides in grand stone palaces",
+        "The city-dweller fights on the battlefield while the mariner retreats into solitude",
+        "The city-dweller feasts with wine while the mariner endures icy frost and stormy seas"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poet contrasts comfortable urban life with the bitter frozen hardships of the sea-voyager.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In the consolatory elegy 'Deor', what was the duration of Theodoric's rule over the fortress of the Mauringas?",
+      "options": [
+        "Fifty harsh winters",
+        "Twelve cold winters",
+        "Seven long winters",
+        "Thirty winters"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Deor recalls that Theodoric held the Mauring stronghold for thirty winters, and that too passed.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "What specific physical dwelling does the exiled speaker occupy in 'The Wife's Lament'?",
+      "options": [
+        "A wooden boat stranded amidst the coastal fens of Northumbria",
+        "A deserted stone fortress overlooking the Roman city of Bath",
+        "An earthen cave under an old oak tree in an overgrown forest",
+        "A cold stone cell beneath the foundations of Whitby Abbey"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The exiled wife is commanded to reside in an eordscrafu, an earth-dwelling beneath an oak tree.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Wulf and Eadwacer', what distinct landscapes separate the sorrowful speaker from her lover Wulf?",
+      "options": [
+        "A deep river valley strictly patrolled by royal Anglo-Saxon border guards",
+        "Two lofty mountain crags shrouded in perpetual winter ice and snowdrifts",
+        "Two separate islands surrounded by treacherous water and marsh fens",
+        "Two neighboring banquet mead-halls fortified against rival clan assaults"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The poem opens by contrasting the separate islands upon which the speaker and Wulf dwell.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Husband's Message', which poem immediately precedes it in the Exeter Book manuscript folios?",
+      "options": [
+        "Exeter Riddle 60, describing a reed cut at the water edge",
+        "Deor, recounting the legendary sufferings of Wayland the Smith",
+        "The Ruin, meditating upon the crumbling Roman bath foundations",
+        "The Wanderer, lamenting the fallen mead-hall companions in exile"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Riddle 60, describing a reed-pen, directly precedes The Husband's Message in the Exeter Book.",
+      "topic": "elegies"
+    },
+    {
+      "question": "What architectural detail in 'The Ruin' illustrates the past luxury of the Roman city before its fall?",
+      "options": [
+        "A majestic Christian cathedral adorned with stained glass and stone towers",
+        "A monastic scriptorium preserving ancient illustrated biblical manuscripts",
+        "A royal fleet of Scandinavian dragon-ships moored in deep tidal harbors",
+        "Many mead-halls filled with human joy and gleaming gold-adorned warriors"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poet imagines the ruined stone halls once filled with warriors enjoying wine and wealth.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In Bede's account of Caedmon's Hymn, what primary theme was Caedmon commanded to sing about by the divine visitor?",
+      "options": [
+        "The creation of the cosmos and the beginning of created things",
+        "The solemn passion and harrowing crucifixion of Christ upon the Cross",
+        "The heroic military victories of the early Northumbrian dynastic rulers",
+        "The allegorical flight of the winter sparrow through King Edwin's hall"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The angelic voice bade Caedmon sing frumsceaft, meaning the first creation of the universe.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In the Old English 'Genesis B', what reason does Satan offer for refusing obedience to God?",
+      "options": [
+        "He complains that God failed to grant him sovereignty over an earthly realm",
+        "He vehemently objects to the divine creation of Adam and Eve in paradise",
+        "He conspires to form an alliance with ancestral Germanic pagan deities",
+        "He believes his own power and brilliance make him an equal lord with God"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Satan boasts of his great strength and refuses to kneel as a submissive vassal to God.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "Which Old Saxon original poem was translated and inserted into the Old English 'Genesis' as 'Genesis B'?",
+      "options": [
+        "The continental High German Hildebrandslied heroic lay",
+        "The ninth-century Old High German Muspilli poem",
+        "The continental Old Saxon Genesis poem",
+        "The ancient Old Saxon Heliand alliterative gospel"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Genesis B was shown by scholars to be a direct translation of a 9th-century Old Saxon poem on the Fall.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In the Junius poem 'Exodus', what natural miracle is described with vivid Old English heroic battle imagery?",
+      "options": [
+        "The descent of miraculous manna from heaven to sustain the Hebrews",
+        "The parting of the Red Sea and destruction of the Egyptian host",
+        "The arduous forty-year pilgrimage of the Israelites through deserts",
+        "The majestic creation of the cosmic heavenly spheres out of chaos"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Exodus poet casts the Israelites and Egyptians as rival armies at the dividing of the Red Sea.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In Cynewulf's 'Elene', who is the reluctant Jewish scholar tortured in a dry well until he uncovers the Cross?",
+      "options": [
+        "Judas Cyriacus",
+        "Nicodemus",
+        "Gamaliel",
+        "Joseph of Arimathea"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Saint Helena imprisons Judas in a dry pit until he reveals where the True Cross lies buried.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "On which homily by Pope Gregory the Great is Cynewulf's poem 'Christ II' or 'The Ascension' based?",
+      "options": [
+        "Pope Gregory's extensive theological commentary Moralia in Job",
+        "Pope Gregory's Homily on the Ascension in his Gospel collection",
+        "Pope Gregory's celebrated Dialogues on the lives of Italian saints",
+        "Pope Gregory's famous treatise Cura Pastoralis on pastoral duties"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Christ II adapts Pope Gregory the Great's Ascension Day sermon from his Gospel homilies.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Dream of the Rood', how does the Cross explain its own reluctance to bow or break during the Crucifixion?",
+      "options": [
+        "It lacked the physical resilience required to endure the Roman nails",
+        "It trembled before the terrifying demonic legions around Calvary hill",
+        "It dared not bend or break against the explicit command of the Lord",
+        "It was immobilized by an unexpected supernatural winter frost and ice"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Rood acts as a loyal retainer that would not bow without its Lord's permission.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "What 8th-century Scottish monument features runic inscriptions matching passages of 'The Dream of the Rood'?",
+      "options": [
+        "The Ruthwell Cross in Dumfriesshire",
+        "The carved Franks Casket whale-bone chest",
+        "The illuminated Lindisfarne Gospels cover",
+        "The celebrated Bewcastle Cross in Cumbria"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Verses closely matching The Dream of the Rood are carved in runic script on the Ruthwell Cross.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In the Old English poem 'Andreas', which city of anthropophagi or cannibals does Saint Andrew enter?",
+      "options": [
+        "Mermedonia",
+        "Babylonian empire",
+        "Jerusalem city",
+        "Nineveh province"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Andreas sails to the perilous city of Mermedonia where the citizens feast on captured foreigners.",
+      "topic": "religious",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "Which late Roman author's work 'De Ave Phoenice' is allegorized in the Old English poem 'The Phoenix'?",
+      "options": [
+        "Ausonius poet",
+        "Claudianus",
+        "Lactantius",
+        "Prudentius"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Phoenix adapts the Latin poem attributed to Lactantius, viewing the bird as a figure for Christ.",
+      "topic": "religious"
+    },
+    {
+      "question": "Which 7th-century Anglo-Saxon scholar and Bishop of Sherborne composed 100 Latin riddles titled 'Enigmata'?",
+      "options": [
+        "Alcuin of York",
+        "Dunstan abbot",
+        "Aldhelm",
+        "Bede of Jarrow"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Aldhelm of Malmesbury wrote 100 Latin Enigmata in hexameters, inspiring Old English riddlers.",
+      "topic": "riddles",
+      "read": "writers-and-works"
+    },
+    {
+      "question": "Which late antique Latin poet wrote 100 three-line riddles that served as a primary model for medieval riddle collections?",
+      "options": [
+        "Marcus Valerius Martialis",
+        "Decimus Junius Juvenalis",
+        "Symphosius",
+        "Anicius Manlius Boethius"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Aenigmata of Symphosius established the standard classical format for Latin and vernacular riddles.",
+      "topic": "riddles"
+    },
+    {
+      "question": "In Exeter Book Riddle 47, what ironic observation is made about the creature that devours words?",
+      "options": [
+        "It swallows noble sayings but gains no knowledge or wisdom from eating them",
+        "It transforms parchment ink into deadly venom that slays monastic scribes",
+        "It miraculously changes into a gleaming white swan after digesting pages",
+        "It scorches sacred vellum folios using fiery breath stolen from dragons"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poet finds it ironic that the bookworm eats the words of great men without becoming any wiser.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "In Exeter Book Riddle 26, how does the speaker describe its transformation from animal skin to holy scripture?",
+      "options": [
+        "It is soaked in water, scraped of hair, sliced with a knife, and adorned with gold",
+        "It is carved from the solid trunk of an ancient oak tree in an overgrown forest",
+        "It is forged in a blacksmith's fiery furnace using refined molten bronze and iron",
+        "It is woven meticulously from the softest sheep wool by noble women in a hall"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Riddle 26 vividly depicts parchment making: skinning, scraping, writing in ink, and gold binding.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the widely accepted solution to Exeter Book Riddle 25, a suggestive riddle about a household item handled by women?",
+      "options": [
+        "An Onion",
+        "A Candle",
+        "A Key",
+        "A Butter-churn"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Riddle 25 uses double entendre describing an onion that stands upright in bed and makes the lady weep.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 27, describing an intoxicating beverage that overpowers strong warriors?",
+      "options": [
+        "Cider",
+        "Mead",
+        "Ale",
+        "Wine"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Riddle 27 portrays mead knocking proud warriors to the earth and depriving them of strength and speech.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 16, describing a steadfast iron object that wrestles with wind and water?",
+      "options": [
+        "A Ship's Rudder",
+        "An Anchor",
+        "A Fishing Hook",
+        "A War-shield"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Riddle 16 describes an anchor biting into the ocean bed with its iron flukes against fierce waves.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 14, describing an animal horn transformed into a drinking vessel or battle-trumpet?",
+      "options": [
+        "A Shield",
+        "A Spear",
+        "A Bow",
+        "A Horn"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Riddle 14 traces the journey of a bull's horn from a living beast into a sounding trumpet or mead-cup.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 35, which closely translates Aldhelm's Latin riddle on the coat of mail?",
+      "options": [
+        "A fine woven woolen travelling cloak",
+        "A heavy war-shield of linden wood",
+        "A Coat of Mail or Byrnie",
+        "An iron boar-crested combat helmet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Riddle 35 describes the mail-shirt or byrnie, woven without wool or threads from links of iron wire.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What prominent thematic quality distinguishes the Exeter Book riddles from classical Latin enigmata?",
+      "options": [
+        "An exclusive preoccupation with abstract theological doctrines and Latin pedagogy",
+        "A complete repudiation of prosopopoeia in favor of literal encyclopedic definitions",
+        "A rigid and unyielding adherence to quantitative classical dactylic hexameters",
+        "A celebration of material culture, animal life, and earthy humor in vernacular verse"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Old English riddles ground the genre in native Anglo-Saxon domestic life, tools, animals, and humor.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "In Old English alliterative verse, what is the role of the 'lift' and the 'drop' in metrical analysis?",
+      "options": [
+        "A lift denotes an alliterating consonant and a drop represents an elided vowel",
+        "A lift represents a stressed syllable and a drop represents an unstressed syllable",
+        "A lift marks the structural caesura and a drop indicates ornamental end-rhyme",
+        "A lift constitutes an elaborate kenning and a drop signifies an ironic litotes"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Germanic metrics, lifted syllables bear primary stress while dropped syllables form the unstressed dips.",
+      "topic": "verse",
+      "read": "poetry"
+    },
+    {
+      "question": "In Sievers Type C metrical patterns, what distinctive stress sequence occurs within the half-line?",
+      "options": [
+        "Two unstressed syllables followed directly by two lightly accented metrical feet",
+        "A clashing stress where an unaccented syllable precedes two consecutive stressed lifts",
+        "A rapid sequence of four consecutive unaccented syllables across the half-line",
+        "A falling trochaic cadence concluding neatly with an unaccented terminal vowel"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sievers Type C features clashing stress in the middle of the half-line, typically scanned as x / / x.",
+      "topic": "verse"
+    },
+    {
+      "question": "What function did the 'medial caesura' perform during the oral recitation of Old English poetry?",
+      "options": [
+        "It signaled precisely where the assembled mead-hall audience was expected to cheer",
+        "It marked the structural transition between the Latin source and native vernacular",
+        "It provided a rhythmic breath-pause and metrical boundary between the two hemistichs",
+        "It instructed the performing scop to silence the vibrating harp strings completely"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The caesura was a natural structural pause in delivery separating the a-verse from the b-verse.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "In 'Beowulf', who was the legendary Geatish king whom Beowulf avenged by fighting the Swedish king Ongentheow?",
+      "options": [
+        "King Hygelac the Geat",
+        "King Hrethel of old",
+        "King Heardred",
+        "King Haethcyn's brother"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beowulf supported Heardred, son of Hygelac, and later avenged his death in the Swedish wars.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the source of the golden torc or necklace given to Beowulf by Wealhtheow and later worn by Hygelac?",
+      "options": [
+        "The legendary Brosing necklace or necklace of the Brisings",
+        "A gift forged by the smith Wayland for King Scyld Scefing",
+        "A treasure found within the submerged lair of Grendel's mother",
+        "An heirloom brought across the sea from the court of Offa"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The magnificent neck-ring given to Beowulf is compared by the scop to the famous Brosinga mene.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Wanderer', what term describes the loyal lord whose death leaves the wanderer bereft of joy?",
+      "options": [
+        "Scrift or monastic spiritual confessor",
+        "Eardstapa or solitary earth-treader",
+        "Gold-wine or friendly ring-giver",
+        "Gleeman or itinerant court minstrel"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The wanderer mourns his gold-wine, his beloved lord who once embraced him in the mead-hall.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Deor', what specific hardship did the mythological hero Hermanaric or Ermanaric inflict upon his subjects?",
+      "options": [
+        "Exorbitant tribute demands on grain and mead during devastating winter famines",
+        "The wholesale demolition of Christian religious sanctuaries throughout Europe",
+        "The ruthless expulsion of all traditional bards and harpers into solitary exile",
+        "A cruel wolfish disposition and tyranny that made many wish his kingdom destroyed"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Deor describes Ermanaric's wolfish mind and tyrannical reign over the people of the Goths.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Seafarer', what heavenly destination is designated as the true eternal 'patria' or homeland of the soul?",
+      "options": [
+        "The ancestral halls of Wessex under King Alfred the Great",
+        "The heavenly home with God above the transient earth",
+        "The great monastic library and scriptorium of Wearmouth-Jarrow",
+        "The royal banqueting mead-hall of Heorot in ancient Denmark"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem concludes that man should think upon his heavenly home and strive to reach that eternal joy.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Dream of the Rood', how does the speaking Cross characterize the nails driven into its wood?",
+      "options": [
+        "Gifts from the apostles symbolizing eternal fidelity",
+        "Malicious open wounds of hatred driven by the executioners",
+        "Runes carved by Roman emperors to mark imperial jurisdiction",
+        "Golden rivets forged by the smith Wayland to beautify the tree"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Rood laments that the scars of malicious nails remain plainly visible on its tortured wood.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In Cynewulf's poem 'Juliana', which demon is captured and interrogated by the holy virgin saint?",
+      "options": [
+        "The primordial serpent of the paradise",
+        "Grendel the grim stalker of the fens",
+        "The venomous treasure-guarding dragon",
+        "Belial or the devil fiendish messenger"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Saint Juliana seizes a demon in prison and forces him to confess all his wicked temptations.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the unique literary significance of the Exeter Book riddles within early medieval European vernacular literature?",
+      "options": [
+        "They are the largest surviving vernacular riddle collection from the early Middle Ages",
+        "They contain the earliest documented instances of rhyming accentual iambic pentameter",
+        "They represent the only early medieval literary corpus translated directly from Greek",
+        "They were the earliest vernacular literary texts printed by William Caxton in London"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Exeter Book holds the preeminent and most extensive collection of vernacular riddles in early medieval Europe.",
+      "topic": "riddles",
+      "read": "poetry"
+    }
+  ]
+}

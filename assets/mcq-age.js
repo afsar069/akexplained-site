@@ -32,7 +32,7 @@
      --------------------------------------------------------- */
   var LIVE_SETS = [
     'old-english-set-1',
-    // 'old-english-set-2',
+    'old-english-set-2',
     // 'old-english-set-3',
     // 'old-english-set-4',
     // 'old-english-set-5',

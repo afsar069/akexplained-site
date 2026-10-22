@@ -1,0 +1,680 @@
+{
+  "setId": "old-english-set-2",
+  "rev": 1,
+  "age": "old-english",
+  "ageName": "Old English",
+  "setNumber": 2,
+  "setName": "Poetry and the verse line",
+  "notes": "/notes/old-english/",
+  "notesTitle": "Old English — the full notes",
+  "topics": {
+    "verse": "Verse and craft",
+    "beowulf": "Beowulf",
+    "elegies": "The elegies",
+    "religious": "Religious poetry",
+    "riddles": "The riddles"
+  },
+  "topicRead": {
+    "verse": "poetry",
+    "beowulf": "poetry",
+    "elegies": "poetry",
+    "religious": "poetry",
+    "riddles": "poetry"
+  },
+  "quote": {
+    "text": "That passed away; so may this.",
+    "source": "Deor, Exeter Book (the refrain)"
+  },
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "The main facts: the verse line, Beowulf, the elegies, the religious poems and the riddles.",
+  "questions": [
+    {
+      "question": "What is the structural term for the first half-line in an Old English alliterative poetic verse?",
+      "options": [
+        "The medial caesura",
+        "The a-verse or on-verse",
+        "The b-verse or off-verse",
+        "The head-stave syllable"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Each poetic line is divided into two half-lines, with the first called the a-verse or on-verse.",
+      "topic": "verse",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the structural term for the second half-line in an Old English alliterative poetic line?",
+      "options": [
+        "The alliterative lift",
+        "The a-verse or on-verse",
+        "The medial caesura",
+        "The b-verse or off-verse"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The second half-line of an Old English alliterative line is designated the b-verse or off-verse.",
+      "topic": "verse",
+      "read": "poetry"
+    },
+    {
+      "question": "How many strongly stressed syllables or lifts appear in each half-line of Old English verse?",
+      "options": [
+        "Four stressed syllables",
+        "Three stressed syllables",
+        "One stressed syllable",
+        "Two stressed syllables"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Each hemistich or half-line contains exactly two strongly stressed syllables, making four per full line.",
+      "topic": "verse",
+      "read": "poetry"
+    },
+    {
+      "question": "In Eduard Sievers' metrical classification of Old English verse, how many primary rhythmic types are identified?",
+      "options": [
+        "Three metrical types",
+        "Seven metrical types",
+        "Ten metrical types",
+        "Five metrical types"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Eduard Sievers classified Old English half-lines into five metrical types designated A through E.",
+      "topic": "verse"
+    },
+    {
+      "question": "What is the Old English term for the professional oral poet who performed songs in the mead-hall?",
+      "options": [
+        "Scop",
+        "Gleeman",
+        "Thane",
+        "Eorl"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The scop was the court poet and singer of heroic tales in Anglo-Saxon England.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "What traditional musical instrument did the Anglo-Saxon scop use to accompany poetic recitation?",
+      "options": [
+        "The bronze trumpet",
+        "The harp or lyre",
+        "The wooden flute",
+        "The leather drum"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The scop recited poems accompanied by the harp or lyre, referred to as the mirth-wood or gomen-wudu.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "What conventional interjection opens the epic poem 'Beowulf' to command the listeners' attention?",
+      "options": [
+        "Eala!",
+        "Frumsceaft!",
+        "Hwæt!",
+        "Wyrd!"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beowulf opens with the famous archaic attention-calling exclamation Hwæt, meaning Listen or Lo.",
+      "topic": "verse"
+    },
+    {
+      "question": "What does the Old English kenning 'word-hord' or 'word-hoard' signify?",
+      "options": [
+        "A runic inscription on a monument",
+        "A person's store of words or vocabulary",
+        "A royal treasure chest of rings",
+        "A library of sacred scriptures"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Unlocking the word-hord means speaking forth from one's poetic vocabulary and eloquence.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "What does the Old English kenning 'gold-wine' or 'gold-friend' refer to?",
+      "options": [
+        "A royal mead-hall steward",
+        "A generous king or lord",
+        "A skillful metal smith",
+        "A wealthy traveling merchant"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A gold-wine is a generous lord who rewards loyal thanes with gold rings and gifts.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "What does the Old English kenning 'mere-hengest' or 'sea-steed' designate?",
+      "options": [
+        "A sailing ship",
+        "A sea monster",
+        "A tidal wave",
+        "A war horse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mere-hengest translates to sea-steed, a poetic kenning describing an ocean ship.",
+      "topic": "verse",
+      "read": "key-terms"
+    },
+    {
+      "question": "Which king of the Geats was Beowulf's royal uncle and beloved lord in his youth?",
+      "options": [
+        "King Hrothgar",
+        "King Heardred",
+        "King Hrethel",
+        "King Hygelac"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Beowulf was the loyal nephew and chief warrior of King Hygelac of the Geats.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was King Hrothgar's queen who graciously carried the ceremonial mead-cup to warriors in Heorot?",
+      "options": [
+        "Queen Modthryth",
+        "Queen Wealhtheow",
+        "Queen Hildeburh",
+        "Queen Hygd"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Queen Wealhtheow served the ceremonial mead-cup and fostered peaceful diplomacy among the Danish retainers.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Which envious Danish courtier challenged and questioned Beowulf's prowess upon his arrival in Heorot?",
+      "options": [
+        "Unferth",
+        "Hrethric",
+        "Aeschere",
+        "Wulfgar"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Unferth, envious of Beowulf's fame, challenged him about his swimming contest with Breca.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was Beowulf's childhood companion during their famous seven-day ocean swimming match?",
+      "options": [
+        "Unferth",
+        "Wiglaf",
+        "Ecgtheow",
+        "Breca"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Beowulf engaged in an ocean swimming contest across the stormy sea with his companion Breca.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What was the name of the ancient sword lent to Beowulf by Unferth for the battle against Grendel's mother?",
+      "options": [
+        "Dainsleif",
+        "Naegling",
+        "Gram",
+        "Hrunting"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Unferth lent Beowulf the hilted ancient heirloom sword named Hrunting, which failed against Grendel's mother.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What was the name of Beowulf's ancient sword that snapped during his final fight with the dragon?",
+      "options": [
+        "Miming",
+        "Hrunting",
+        "Naegling",
+        "Hrunting hilt"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Naegling was the gray-hilted heirloom sword that broke under Beowulf's immense strength during the dragon fight.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "What body part of Grendel did Beowulf display as a victory trophy in Heorot after their first fight?",
+      "options": [
+        "His iron-pointed spear",
+        "His severed head",
+        "His arm, claw, and shoulder",
+        "His dragon-hide belt"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beowulf tore off Grendel's entire arm and shoulder, which was hung high beneath Heorot's roof.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "To which Scandinavian tribe did Beowulf belong?",
+      "options": [
+        "The Geats",
+        "The Franks",
+        "The Frisians",
+        "The Danes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Beowulf was a hero and later king of the Geats, hailing from southern Sweden.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "To which royal tribe did King Hrothgar belong in 'Beowulf'?",
+      "options": [
+        "The Geats",
+        "The Heathobards",
+        "The Swedes",
+        "The Scyldings or Danes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hrothgar ruled the Scyldings, the legendary royal dynasty of Denmark.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was the mythical founding king of the Danish dynasty praised in the opening lines of 'Beowulf'?",
+      "options": [
+        "Scyld Scefing",
+        "Hrethel",
+        "Healfdene",
+        "Ongentheow"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Beowulf begins with the glory of Scyld Scefing, the foundling ancestor of the Danish royal house.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was Beowulf's father, whose feud with the Wylfings was settled years earlier by Hrothgar?",
+      "options": [
+        "Hygelac",
+        "Weohstan",
+        "Ongentheow",
+        "Ecgtheow"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ecgtheow was Beowulf's father, for whom Hrothgar had paid a wergild to settle a deadly feud.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "How long did Beowulf rule over the Geats before the treasure-dragon began devastating his kingdom?",
+      "options": [
+        "Thirty years",
+        "Twenty winters",
+        "Fifty years",
+        "Twelve years"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beowulf ruled his homeland wisely and peacefully as king of the Geats for fifty years.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was the father of Wiglaf, the lone warrior who stood by Beowulf against the dragon?",
+      "options": [
+        "Ongentheow",
+        "Weohstan",
+        "Hrethel",
+        "Ecgtheow"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wiglaf was the son of Weohstan and the last remaining kinsman of the Waegmunding clan.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "Where did the Geats place Beowulf's burial mound after his cremation on the funeral pyre?",
+      "options": [
+        "On a sea-promontory known as Whale's Ness",
+        "Inside the ruined hall of Heorot",
+        "On the boundary plain of Maldon",
+        "Within an underwater cavern in the mere"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Beowulf's barrow was constructed high on the headland of Whale's Ness to guide ocean seafarers.",
+      "topic": "beowulf",
+      "read": "poetry"
+    },
+    {
+      "question": "In the elegy 'The Wanderer', what causes the solitary exile to awaken from dreams of his dead lord?",
+      "options": [
+        "The sound of church bells ringing in a cathedral",
+        "Cold ocean waves, falling frost, and snow mingled with hail",
+        "The fierce arrival of Viking raiding dragon-ships",
+        "The joyful trumpet blasts of returning warriors"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The dreamer awakens to the harsh reality of dark ocean waves, frost, and snow mingled with hail.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Seafarer', what sea creature or bird cries replace the cheerful laughter of hall-companions?",
+      "options": [
+        "The song of the meadow lark and nightingale",
+        "The barking of hunting dogs in the forest",
+        "The cry of the gannet, curlew, and mew",
+        "The roar of the ravening dragon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The seafarer takes the songs of seabirds like the gannet and curlew for human cheer and laughter.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In the elegy 'Deor', which mythical blacksmith's captivity and sorrow are recounted first?",
+      "options": [
+        "Wayland the Smith",
+        "Hermanaric the Chieftain",
+        "Ermanaric the King",
+        "Theodoric the Goth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Deor begins his list of consoled sufferings with the cruel torment of the legendary smith Wayland.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In the poem 'Deor', what is the name of the king of the Goths who ruled Mauringa for thirty winters?",
+      "options": [
+        "Theodoric",
+        "Offa",
+        "Finn",
+        "Attila"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Deor notes that Theodoric held the stronghold of the Mauringas for thirty winters, and that passed over.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was the female victim whose violation by Wayland is recalled in the stanzas of 'Deor'?",
+      "options": [
+        "Freawaru",
+        "Wealhtheow",
+        "Beadohild",
+        "Hildeburh"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Deor recalls Beadohild's grief when she found herself pregnant following Wayland's vengeance.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Wife's Lament', who plotted separation and sorrow between the married speaker and her husband?",
+      "options": [
+        "A rival court poet singing falsehoods",
+        "The local Christian monastic authorities",
+        "Her husband's hostile kinsmen",
+        "A foreign invading army of Vikings"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The husband's kinsmen secretly plotted to keep the lovers far apart in lonely misery.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Wulf and Eadwacer', where does the female speaker state her beloved Wulf is confined?",
+      "options": [
+        "Inside a fortified Roman fortress",
+        "Aboard a captured Danish raiding boat",
+        "On a separate island surrounded by fens",
+        "Within an underground burial cavern"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The speaker laments that Wulf is on one island while she remains on another across the fen.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Husband's Message', what object delivers the message of fidelity to the noble lady?",
+      "options": [
+        "A carved wooden runic stave",
+        "A messenger falcon with a golden ring",
+        "A returning war-shield with crest",
+        "A tapestry woven with golden thread"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A speaking piece of wood or runic staff addresses the lady, bidding her join her husband.",
+      "topic": "elegies"
+    },
+    {
+      "question": "What notable thermal feature of the ruined city described in 'The Ruin' points to its Roman bath origins?",
+      "options": [
+        "Hot springs surging into wide stone pools",
+        "A river frozen solid throughout the winter",
+        "A waterfall pouring through a broken aqueduct",
+        "A subterranean spring guarded by dragons"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poet describes hot streams flowing into wide stone baths, identifying the site as Roman Bath.",
+      "topic": "elegies",
+      "read": "poetry"
+    },
+    {
+      "question": "Who was the royal abbess of Whitby Abbey who welcomed Caedmon and encouraged his poetic vocation?",
+      "options": [
+        "St. Hilda",
+        "St. Juliana",
+        "Queen Bertha",
+        "Queen Wealhtheow"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Abbess Hilda of Whitby recognized Caedmon's divine gift and received him into the monastic order.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In Bede's account of Caedmon, where had Caedmon taken refuge after leaving the banquet in shame?",
+      "options": [
+        "A fishing boat on the shore",
+        "The cattle stable",
+        "The monastery orchard",
+        "The monastic chapel"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Unable to sing when the harp was passed around, Caedmon retreated to the cattle shed where he slept.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In which manuscript are the scriptural poems 'Genesis', 'Exodus', and 'Daniel' preserved?",
+      "options": [
+        "The Exeter Book",
+        "The Junius Manuscript",
+        "The Vercelli Book",
+        "The Nowell Codex"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Bodleian MS Junius 11 contains the Old English scriptural paraphrases Genesis, Exodus, and Daniel.",
+      "topic": "religious",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "In the Old English poetic paraphrase 'Exodus', how is the biblical leader Moses depicted?",
+      "options": [
+        "As an elderly scribe copying Latin manuscripts",
+        "As a sorrowful exile weeping by the seaside",
+        "As a humble, silent wandering hermit",
+        "As a mighty heroic warlord and noble chieftain"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Old English scriptural verse reimagined Moses in terms of a noble Germanic prince and battlefield commander.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In the Junius poem 'Christ and Satan', where is Satan imprisoned following his rebellion?",
+      "options": [
+        "Inside a dragon barrow in Geatland",
+        "On an isolated island in the North Sea",
+        "In the fiery torments of Hell",
+        "Underneath an ancient Roman bathhouse"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Christ and Satan dramatizes the agony of Satan and fallen angels doomed in the fiery pits of hell.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In Cynewulf's poem 'Elene', which relic of Christian history does Saint Helena travel to find?",
+      "options": [
+        "The Holy Grail",
+        "The Ark of the Covenant",
+        "The Spear of Longinus",
+        "The True Cross"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Elene narrates the historic voyage of Constantine's mother, Saint Helena, to uncover the True Cross.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In Cynewulf's poem 'The Fates of the Apostles', what subject matter is poetically cataloged?",
+      "options": [
+        "The biblical plagues inflicted upon Egypt",
+        "The preaching missions and deaths of the twelve disciples",
+        "The journeys of Anglo-Saxon pilgrims to Rome",
+        "The miraculous cures performed at Whitby"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Fates of the Apostles recounts the evangelical travels and martyrdoms of Christ's twelve apostles.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "How many runic letters comprise Cynewulf's poetic signature woven into his signed works?",
+      "options": [
+        "Four runic letters",
+        "Eight runic letters",
+        "Six runic letters",
+        "Twelve runic letters"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cynewulf wove the eight runic characters C-Y-N-E-W-U-L-F into the closing lines of four poems.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Dream of the Rood', how is the Cross adorned when first seen by the sleeping visionary?",
+      "options": [
+        "Carved with ancient pagan war-runes",
+        "Stripped bare of bark and rotting away",
+        "Covered with gold and brilliant jewels",
+        "Wrapped in dark monastic mourning cloth"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The dreamer initially beholds the Rood as a glorious, jewel-decked beacon bathed in radiant light.",
+      "topic": "religious",
+      "read": "poetry"
+    },
+    {
+      "question": "In which manuscript are nearly one hundred Old English verse riddles uniquely preserved?",
+      "options": [
+        "The Nowell Codex",
+        "The Junius Manuscript",
+        "The Exeter Book",
+        "The Vercelli Book"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Exeter Book is the sole surviving repository of Old English vernacular verse riddles.",
+      "topic": "riddles",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "What common formulaic phrase in Old English often closes an Exeter Book riddle?",
+      "options": [
+        "Saga hwæt ic hatte",
+        "Þæs ofereode",
+        "Hwær cwom mearg",
+        "Hige sceal þe heardra"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Many Exeter Book riddles end with the challenge Saga hwæt ic hatte, meaning Say what I am called.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What poetic figure of speech dominates the Exeter Book riddles where objects speak as 'I'?",
+      "options": [
+        "Alliterative caesura",
+        "Litotes or understatement",
+        "Prosopopoeia or personification",
+        "Kenning compound"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The riddles personify inanimate creatures and tools using the speaking voice, known as prosopopoeia.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the accepted solution to Exeter Book Riddle 47, about an insect that consumes parchment texts?",
+      "options": [
+        "The Shield",
+        "The Swan",
+        "The Reed-pen",
+        "The Bookworm or Book-moth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Riddle 47 describes a moth or worm that devours human words and parchment without gaining wisdom.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the widely accepted solution to Exeter Book Riddle 5, describing a warrior's scarred companion in combat?",
+      "options": [
+        "A Bow",
+        "A Shield",
+        "A Helmet",
+        "A Sword"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Riddle 5 is spoken by a battle-shield that endures edges of iron blades and receives wounds without healing.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 7, describing a bird whose feathers rustle like music in flight?",
+      "options": [
+        "An Eagle",
+        "A Swan",
+        "A Nightingale",
+        "A Raven"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Riddle 7 describes a swan whose white plumage whistles melodiously when it flies through the heavens.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the solution to Exeter Book Riddle 60, which speaks of a shoreline plant turned into a writing instrument?",
+      "options": [
+        "A Hunting Bow",
+        "A Wooden Rune-stave",
+        "A Ship's Mast",
+        "A Reed-pen"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Riddle 60 describes a reed cut from the water's edge that silently conveys words between distant lovers.",
+      "topic": "riddles",
+      "read": "poetry"
+    },
+    {
+      "question": "Do the scribes of the Exeter Book provide written titles or solutions to the riddles in the manuscript?",
+      "options": [
+        "No, the manuscript gives no titles or solutions",
+        "No, but solutions are hidden in Latin glosses in the margins",
+        "Yes, solutions are written in red ink above each riddle",
+        "Yes, a solution index is provided at the very end"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Exeter Book scribes recorded the riddles continuously in verse without providing titles or solutions.",
+      "topic": "riddles",
+      "read": "poetry"
+    }
+  ]
+}
