@@ -1,0 +1,683 @@
+{
+  "setId": "old-english-set-1",
+  "rev": 2,
+  "age": "old-english",
+  "ageName": "Old English",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/old-english/",
+  "notesTitle": "Old English — the full notes",
+  "topics": {
+    "ground": "The world of the age",
+    "poetry": "Poetry",
+    "prose": "Prose",
+    "manuscripts": "Manuscripts and survival",
+    "terms": "Terms and devices",
+    "criticism": "Criticism and scholarship"
+  },
+  "topicRead": {
+    "ground": "political-life",
+    "poetry": "poetry",
+    "prose": "prose",
+    "manuscripts": "how-the-writing-survived",
+    "terms": "key-terms",
+    "criticism": "criticism-and-scholarship"
+  },
+  "quote": {
+    "text": "Where has the horse gone? Where the rider? Where the giver of treasure?",
+    "source": "The Wanderer, Exeter Book"
+  },
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Finer detail: episodes, sources, manuscripts and the rules of the verse.",
+  "questions": [
+    {
+      "question": "Which Scandinavian navigators provided King Alfred with direct travel accounts inserted into his translation of Orosius?",
+      "options": [
+        "Olaf and Constantine",
+        "Ohthere and Wulfstan",
+        "Hengist and Horsa",
+        "Dunstan and Aethelwold"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Alfred added geographical accounts of northern voyages narrated by the voyagers Ohthere and Wulfstan.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "For how many winters had Grendel terrorized Hrothgar's mead-hall Heorot before Beowulf arrived to fight him?",
+      "options": [
+        "Thirty-two winters",
+        "Fourteen winters",
+        "Twenty-five winters",
+        "Twelve winters"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Beowulf poet states that Hrothgar endured Grendel's nightly depredations for twelve winters.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "With what weapon does Beowulf ultimately kill Grendel's mother inside her sub-aquatic cave lair?",
+      "options": [
+        "A charmed golden spear from Heorot hall",
+        "The ancient ancestral blade named Hrunting",
+        "A tempered iron battleaxe forged by dwarfs",
+        "An ancient giant sword found in the cave"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Beowulf discovers an ancient giant sword hanging in the cave and uses it to slay Grendel's mother.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What specific theft awakens and enrages the sleeping treasure-dragon in the second half of 'Beowulf'?",
+      "options": [
+        "The sudden plunder of an ancient iron war-shield",
+        "The secret theft of a royal jewel-encrusted crown",
+        "The violent robbery of sacred ancestral battle-gear",
+        "The theft of a golden cup from the hoard"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An outcast thief takes a golden cup from the dragon's barrow, provoking its fiery retribution.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "According to the Christian narrator of 'Beowulf', from which biblical figure is the monster Grendel descended?",
+      "options": [
+        "Cain",
+        "Ishmael",
+        "Ham",
+        "Nimrod"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The text identifies Grendel and kindred monsters as cursed descendants of the biblical fratricide Cain.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Along which river causeway did Earl Byrhtnoth confront the Viking raiders in the Battle of Maldon in 991 AD?",
+      "options": [
+        "River Thames basin",
+        "River Blackwater",
+        "River Humber estuary",
+        "River Severn valley"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The battle took place across a tidal causeway spanning the River Blackwater in Essex.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'The Battle of Maldon', which cowardly warrior flees on Byrhtnoth's horse, causing panic among the English troops?",
+      "options": [
+        "Heorrenda",
+        "Eadwacer",
+        "Godric",
+        "Wiglaf"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Godric leaps onto Byrhtnoth's own horse and flees, deceiving many into believing their lord has fled.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which three confederate leaders were defeated by King Athelstan and Edmund at the Battle of Brunanburh in 937 AD?",
+      "options": [
+        "Finn the Frisian king, Hnaef, and Prince Guthhere",
+        "Olaf Guthfrithson, Constantine II, and Owain",
+        "Olaf Tryggvason, Sweyn Forkbeard, and King Cnut",
+        "Hengist the warlord, Horsa, and King Vortigern"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Athelstan defeated Olaf Guthfrithson of Dublin, Constantine II of Scots, and Owain of Strathclyde.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which Latin treatise served as the direct source for the Old English allegorical poem 'The Phoenix'?",
+      "options": [
+        "Boethius's Consolation of Philosophy",
+        "Lactantius's De Ave Phoenice",
+        "Bede's Historia Ecclesiastica",
+        "Gregory's Cura Pastoralis"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Phoenix in the Exeter Book adapts Lactantius's Latin poem De Ave Phoenice as a Christian allegory.",
+      "topic": "poetry"
+    },
+    {
+      "question": "What is the central narrative focus of Saint Helena in Cynewulf's longest signed poem 'Elene'?",
+      "options": [
+        "Her pilgrimage to Jerusalem to find the True Cross",
+        "Her conversion of Northumbrian ruler King Edwin",
+        "Her public trial and martyrdom under pagan Roman law",
+        "Her heroic defense of Canterbury from Viking fleets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Elene narrates Saint Helena's journey to Jerusalem and her miraculous discovery of the True Cross.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What divine command did the celestial visitor give to Caedmon when he took refuge in the Whitby stables?",
+      "options": [
+        "Hwær cwom mearg",
+        "Thæs ofereode, thisses swa mæg",
+        "Hige sceal the heardra",
+        "Caedmon, sing me frumsceaft"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The visitor commanded Caedmon, sing me frumsceaft, bidding him sing of the creation of the world.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which section of Genesis in the Junius Manuscript is an Old Saxon translation detailing Lucifer's revolt and fall?",
+      "options": [
+        "Book of Exodus",
+        "Genesis B",
+        "Book of Daniel",
+        "Genesis A"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Genesis B is an interpolated translation from Old Saxon that vividly depicts Lucifer's ambition and fall.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Where does the banished female speaker find shelter in the Old English elegy 'The Wife's Lament'?",
+      "options": [
+        "In an earth-cave under an oak tree",
+        "Within a decaying Roman stone bathhouse",
+        "Inside a deserted banquet mead-hall",
+        "On a desolate wind-swept ocean cliff"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In The Wife's Lament, the speaker lives isolated in an earth-cave or eordscrafu beneath an oak tree.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which five runic characters are carved onto the wooden staff in the elegy 'The Husband's Message'?",
+      "options": [
+        "C, Y, N, E, W, and U",
+        "A, B, C, D, E, and F",
+        "F, U, TH, O, R, and C",
+        "S, R, EA, W, and M"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The carved wooden staff carries the secret runic sequence S, R, EA, W, and M to verify the husband's vow.",
+      "topic": "poetry"
+    },
+    {
+      "question": "In the poem 'Deor', who is the skilled rival scop that displaces Deor from his courtly patronage?",
+      "options": [
+        "Hnaef the Dane",
+        "The scop Widsith",
+        "Wiglaf the loyal",
+        "Heorrenda"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Deor laments that his lord granted his court lands and position to Heorrenda, a rival bard.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which mythological Germanic smith's captive torment is cited as the opening consolatory example in 'Deor'?",
+      "options": [
+        "Ermanaric the Hun",
+        "Theodoric the Goth",
+        "Wayland the Smith",
+        "Walter of Aquitaine"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Deor begins his catalog of historical sorrows by recalling the cruel captivity of Wayland the Smith.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which two signed poetic works by Cynewulf are preserved within the Vercelli Book?",
+      "options": [
+        "The Wanderer and The Seafarer lyric",
+        "Juliana and Christ II The Ascension",
+        "Elene and The Fates of the Apostles",
+        "Andreas and The Phoenix holy allegory"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Vercelli Book contains Cynewulf's runic signatures in Elene and The Fates of the Apostles.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "In 'The Dream of the Rood', how is Christ dynamically depicted as he approaches the Cross?",
+      "options": [
+        "As a brave young warrior eager to climb the gallows",
+        "As an unarmed helpless captive submitting to tormentors",
+        "As an enthroned celestial monarch proclaiming judgments",
+        "As a humble weeping penitent mourning human frailty"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem fuses heroic comitatus imagery with theology, showing Christ as a heroic warrior mounting the Cross.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What historical conflict of tribal loyalties is depicted in both 'The Fight at Finnsburh' and Beowulf's scop song?",
+      "options": [
+        "The war between Geats and Swedes",
+        "The alliance between Scots and Norsemen",
+        "The struggle between Angles and Saxons",
+        "The feud between Danes and Frisians"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Both texts dramatize the tragic night attack and blood-feud between Danish guests and Frisian hosts.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "Which King of Kent was converted by St. Augustine in 597 AD after marrying the Christian Frankish princess Bertha?",
+      "options": [
+        "King Aethelberht",
+        "King Oswiu of Bernicia",
+        "King Edwin of Deira",
+        "King Offa of Mercia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "King Aethelberht of Kent received St. Augustine in 597 AD and converted to Christianity.",
+      "topic": "ground",
+      "read": "religion"
+    },
+    {
+      "question": "Which three church leaders directed the tenth-century Benedictine Revival in Anglo-Saxon England?",
+      "options": [
+        "St. Augustine, St. Aidan, and St. Cuthbert",
+        "King Alfred, Asser, and Bede",
+        "Franciscus Junius, Robert Cotton, and George Hickes",
+        "St. Dunstan, St. Aethelwold, and St. Oswald"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Benedictine monastic reform was led by Dunstan, Aethelwold of Winchester, and Oswald of Worcester.",
+      "topic": "ground",
+      "read": "religion"
+    },
+    {
+      "question": "In 'Sermo Lupi ad Anglos' from 1014 AD, how does Archbishop Wulfstan interpret the catastrophic Danish invasions?",
+      "options": [
+        "As a minor regional dispute over annual tribute payments",
+        "As a righteous holy crusade led by foreign Christian monarchs",
+        "As divine retribution for the moral decay of the English",
+        "As an unexpected natural disaster caused by violent storms"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wulfstan preaches that the devastating Danish raids represent God's wrath upon a sinful English nation.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "Which pairs of rhyming and alliterating words exemplify Archbishop Wulfstan's dramatic rhetorical prose style?",
+      "options": [
+        "Wulf and Eadwacer dramatic figures",
+        "Scamu ond scand, neode ond nyde",
+        "Hengist and Horsa heroic twin bards",
+        "Ban-hus and hwael-rad compounds"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wulfstan's passionate sermons feature rhythmic, alliterating word-pairs like scamu ond scand.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "What pedagogical format did Abbot Aelfric employ in 'The Colloquy' to teach young monastic students Latin?",
+      "options": [
+        "A dialogue between a master and various working tradesmen",
+        "An extended epic poem recounting ancient West Saxon lineage",
+        "A philosophical verse disputation on divine providence and fate",
+        "A collection of devotional liturgical Latin chants and hymns"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Aelfric's Colloquy is a bilingual classroom dialogue between a teacher and pupils playing tradesmen.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "What is the collective title of the two sets of forty vernacular sermons composed by Abbot Aelfric of Eynsham?",
+      "options": [
+        "The Vercelli Homilies",
+        "The Catholic Homilies",
+        "The Winchester Sermons",
+        "The Blickling Homilies"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Abbot Aelfric composed The Catholic Homilies in two series of forty sermons each.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "What stylistic innovation characterizes the mature vernacular prose of Abbot Aelfric of Eynsham?",
+      "options": [
+        "Unrhymed syllabic hendecasyllabics with pauses",
+        "Rhymed eight-syllable couplets with fixed accents",
+        "Alliterative rhythmic prose with balanced clauses",
+        "Unpunctuated Latinate stream-of-consciousness syntax"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Aelfric developed an alliterative prose style that borrowed rhythmic cadence from poetic alliteration.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "Which disastrous fire in 1731 damaged the edges of the Nowell Codex containing the unique text of 'Beowulf'?",
+      "options": [
+        "The Ashburnham House fire",
+        "The Exeter Cathedral fire",
+        "The Cotton Library explosion",
+        "The Great Fire of London"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Cotton collection suffered severe damage during the Ashburnham House fire of 1731.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "Alongside Beowulf and Judith, which saint's hagiography is preserved in the Nowell Codex?",
+      "options": [
+        "Life of Saint Christopher",
+        "Life of Saint Guthlac hermit",
+        "Life of Saint Juliana martyr",
+        "Life of Saint Cuthbert prior"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Nowell Codex contains the Passion or Life of Saint Christopher alongside Beowulf and Judith.",
+      "topic": "manuscripts",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "In the preface to which translation did King Alfred lament the severe decline of Latin scholarship in England?",
+      "options": [
+        "Ecclesiastical History by Bede",
+        "Soliloquies by Saint Augustine",
+        "Pastoral Care by Pope Gregory I",
+        "Consolation of Philosophy by Boethius"
+      ],
+      "correct_option_id": 2,
+      "explanation": "King Alfred's famous educational preface appears in his translation of Gregory's Pastoral Care.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "Which version of the Anglo-Saxon Chronicle maintained historical annals up to the year 1154 AD?",
+      "options": [
+        "The Abingdon Abbey Chronicle",
+        "The Worcester Court Chronicle",
+        "The Peterborough Chronicle",
+        "The Winchester Old Chronicle"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Peterborough Chronicle continued recording English history until 1154 AD.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "In Old English alliterative prosody, which stressed syllable in the line almost never participates in alliteration?",
+      "options": [
+        "The primary initial head-stave",
+        "The first stressed verse syllable",
+        "The fourth stressed syllable",
+        "The medial caesura pause marker"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The fourth stressed syllable, which is the second stress in the off-verse, almost never alliterates.",
+      "topic": "terms",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the strict phonological rule governing vowel alliteration in Old English alliterative meter?",
+      "options": [
+        "Any vowel alliterates with any other vowel",
+        "Vowels only alliterate with identical vowels",
+        "Short vowels never alliterate with long vowels",
+        "Front vowels only alliterate with back vowels"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Anglo-Saxon poetic rules, all vowels alliterate with any other vowel across the caesura.",
+      "topic": "terms",
+      "read": "poetry"
+    },
+    {
+      "question": "Which specific consonant clusters alliterate exclusively with themselves in Old English verse?",
+      "options": [
+        "sc, sp, and st",
+        "bl, cl, and gl",
+        "br, cr, and tr",
+        "th, hw, and wr"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Consonant clusters like sc, sp, and st do not alliterate with single s but only with themselves.",
+      "topic": "terms",
+      "read": "poetry"
+    },
+    {
+      "question": "Which structural poetic device involves repeating a single entity through varied parallel noun phrases?",
+      "options": [
+        "Variation",
+        "Runic acrostic cipher",
+        "Litotes understatement",
+        "Medial caesura pause"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Variation is the structural repetition of a single concept through parallel epithets.",
+      "topic": "terms",
+      "read": "poetry"
+    },
+    {
+      "question": "Which of the following is one of the four varied epithets applied to God in 'Caedmon's Hymn'?",
+      "options": [
+        "Beado-leoma describing a battle sword",
+        "Wuldorfæder or Glory-father",
+        "Ban-hus signifying the mortal body",
+        "Hwael-rad denoting the ocean path"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Caedmon consecutively invokes God using epithets including Wuldorfæder, meaning Glory-father.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "In 'Widsith', which Gothic king is cataloged among the ancient continental rulers visited by the scop?",
+      "options": [
+        "Hrothgar of Denmark",
+        "Ermanaric",
+        "Vortigern of Britain",
+        "Theodoric the Great"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The traveling scop in Widsith mentions visiting the court of Ermanaric the Goth.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "In the manuscript fragments of 'Waldere', which Burgundian king is Walter preparing to combat?",
+      "options": [
+        "Hnaef of the Danish host",
+        "Attila ruler of the Huns",
+        "Finn of Frisian halls",
+        "Guthhere or Gunther"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The heroic speeches in Waldere encourage him as he prepares for combat against Guthhere.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "How is the poetic structure of 'The Seafarer' fundamentally divided between its two halves?",
+      "options": [
+        "A sorrowful lament for a lost husband contrasted with an exultant tribal return",
+        "A royal feast in a mead-hall contrasted with a catastrophic winter shipwreck",
+        "Harsh physical seafaring contrasted with a spiritual Christian pilgrimage",
+        "An account of brutal Viking invasions contrasted with peaceful monastic labor"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The first section describes winter seafaring hardships, while the second becomes a homily on the soul's journey.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What is the relationship between the speaker and Eadwacer in the dramatic monologue 'Wulf and Eadwacer'?",
+      "options": [
+        "Eadwacer is her loyal, devoted childhood protector",
+        "Eadwacer is her treacherous, estranged biological father",
+        "Eadwacer is her brave, celebrated tribal chieftain",
+        "Eadwacer is her oppressive or unloved husband"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Wulf and Eadwacer, the speaker is separated from her lover Wulf and bound to her unloved husband Eadwacer.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What decayed architectural features are highlighted by the observer in the elegy 'The Ruin'?",
+      "options": [
+        "A sunken Viking dragon-ship stranded upon a muddy gravel shoal",
+        "Shattered stone walls, broken roof arches, and collapsed baths",
+        "A burned wooden mead-hall with blackened timber framing posts",
+        "A destroyed monastic scriptorium strewn with charred vellum folios"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Ruin meditates on crumbling Roman stone masonry, shattered tiles, and collapsed bath complexes.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "In the Old English epic poem 'Andreas', which apostle does Saint Andrew rescue from the cannibalistic Mermedonians?",
+      "options": [
+        "Saint Peter Apostle",
+        "Saint Matthew",
+        "Saint Thomas Apostle",
+        "Saint John Evangelist"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Andreas narrates Saint Andrew's miraculous mission to rescue Saint Matthew from the Mermedonians.",
+      "topic": "poetry",
+      "read": "how-the-writing-survived"
+    },
+    {
+      "question": "Which of Cynewulf's signed poems dramatizes the martyrdom of a virgin saint resisting pagan marriage and demonic torture?",
+      "options": [
+        "Elene",
+        "The Fates of the Apostles",
+        "Juliana",
+        "Christ II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Juliana recounts the heroic suffering and martyrdom of Saint Juliana as she resists pagan advances.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "In Bede's 'Historia Ecclesiastica', which Northumbrian king is advised about Christian conversion through the Parable of the Sparrow?",
+      "options": [
+        "King Oswald",
+        "King Oswiu",
+        "King Edwin",
+        "King Athelstan"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A royal counsellor addresses King Edwin of Northumbria, comparing human life to a sparrow flying through a banquet hall.",
+      "topic": "ground",
+      "read": "religion"
+    },
+    {
+      "question": "At which Northumbrian twin monastery did the Venerable Bede spend his scholarly life producing the 'Historia Ecclesiastica'?",
+      "options": [
+        "Wearmouth-Jarrow",
+        "Lindisfarne Holy Island",
+        "Whitby Abbey monastery",
+        "Canterbury Cathedral See"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bede lived and studied in the Northumbrian twin monastery of Wearmouth-Jarrow.",
+      "topic": "ground",
+      "read": "religion"
+    },
+    {
+      "question": "Which biblical narratives are poetically paraphrased in the Old English poem 'Daniel' in the Junius Manuscript?",
+      "options": [
+        "The creation of the heavenly realm and the fall of Lucifer",
+        "The miraculous crossing of the Red Sea and Egyptian plagues",
+        "The Babylonian captivity, fiery furnace, and Belshazzar banquet",
+        "The epic sea voyage of Noah ark across the catastrophic deluge"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Daniel paraphrases the Old Testament book, detailing the furnace ordeal and Belshazzar's feast.",
+      "topic": "poetry",
+      "read": "poetry"
+    },
+    {
+      "question": "What Old English poetic term denotes the bitter path of exile trodden by solitary wanderers in elegiac verse?",
+      "options": [
+        "Meotod",
+        "Ofermod",
+        "Frumsceaft",
+        "Wræclast"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wræclast refers to the track or path of exile endured by solitary speakers in Old English elegies.",
+      "topic": "terms",
+      "read": "key-terms"
+    },
+    {
+      "question": "Which two legal codes were drafted by Archbishop Wulfstan during the late Anglo-Saxon period?",
+      "options": [
+        "Royal legal statutes for King Alfred the Great and King Ine",
+        "Legal codes for King Aethelred the Unready and King Cnut",
+        "Ecclesiastical law codes for King Athelstan and King Edgar",
+        "Official diplomatic charters for King Offa and King Egbert"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Archbishop Wulfstan served as chief legal draftsman for both King Aethelred and King Cnut.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "In King Alfred's translation of Boethius's 'Consolation of Philosophy', what concept replaces abstract Neoplatonic philosophy?",
+      "options": [
+        "Celtic ascetic monastic rules and hermitic rites",
+        "Explicit Christian theology and divine providence",
+        "Roman imperial legal doctrine and civil statutes",
+        "Pagan Germanic heroic mythology and tribal code"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Alfred adapted Boethius's philosophical dialogue into Christian theological terms regarding providence and wyrd.",
+      "topic": "prose",
+      "read": "prose"
+    },
+    {
+      "question": "What was the original dialect of the earliest Northumbrian recording of 'Caedmon's Hymn' before being copied into West Saxon?",
+      "options": [
+        "West Saxon standard",
+        "Mercian dialect",
+        "Kentish regional",
+        "Northumbrian"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Caedmon composed his hymn in his native Northumbrian dialect, though most surviving copies are West Saxon.",
+      "topic": "terms",
+      "read": "the-language"
+    },
+    {
+      "question": "Which Renaissance antiquarian published the first printed edition of the scriptural poems in Bodleian MS Junius 11 in 1655?",
+      "options": [
+        "Franciscus Junius",
+        "Bishop Leofric of Exeter",
+        "Sir Robert Cotton knight",
+        "George Hickes linguist"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The scholar Franciscus Junius acquired and published the manuscript in Amsterdam in 1655.",
+      "topic": "criticism",
+      "read": "how-the-writing-survived"
+    }
+  ]
+}

@@ -1270,6 +1270,8 @@ a.agehub-go.is-solid:hover{background:var(--teal-dark);color:#fff}
 }
 
 .agehub-buildhint{font-size:.82rem;color:var(--mcq-ink-faint);margin:8px 0 0}
+/* Jab maange gaye sawal likhe hue sawalo se zyada hon */
+.agehub-buildpool{color:#7A5A16;font-weight:600;margin:14px 0 0;max-width:none}
 .agehub-buildsum{
   font-family:var(--serif);font-size:1rem;color:var(--ink);
   background:var(--cream);border:1px solid var(--border);border-radius:11px;
@@ -1441,13 +1443,13 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-neg{margin-bottom:22px}
 .cbt-neg .lbl{font-size:.92rem;font-weight:600;color:var(--ink);margin-bottom:8px}
 .cbt-negrow{display:flex;flex-wrap:wrap;gap:9px}
-.cbt-negbtn{
+.cbt-negbtn,.cbt-lvlbtn{
   font:inherit;font-size:.92rem;font-weight:500;padding:9px 20px;border-radius:999px;
   border:1.5px solid var(--border);background:#fff;color:var(--ink);cursor:pointer;
   transition:background .2s,color .2s,border-color .2s;
 }
-.cbt-negbtn:hover{border-color:var(--teal)}
-.cbt-negbtn[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
+.cbt-negbtn:hover,.cbt-lvlbtn:hover{border-color:var(--teal)}
+.cbt-negbtn[aria-pressed="true"],.cbt-lvlbtn[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
 .cbt-neghint{font-size:.84rem;color:var(--mcq-ink-faint);margin:9px 0 0;max-width:62ch}
 
 .cbt-begin{
@@ -2235,7 +2237,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-ttable td:nth-child(4){grid-column:3}
   .cbt-ttable td:nth-child(3){grid-column:1/-1;margin-top:5px}
   .cbt-tbar{min-width:0}
-  .cbt-negbtn{flex:1}
+  .cbt-negbtn,.cbt-lvlbtn{flex:1}
   .cbt-fccard{padding:20px 18px}
   .cbt-fcnav .cbt-btn{flex:1}
   .cbt-fcdots{order:3;flex:1 1 100%}

@@ -59,6 +59,9 @@
       levels: (row.getAttribute('data-level') || '').split(/\s+/).filter(Boolean),
       name: (($('.agehub-settitle', row) || {}).textContent || '').trim(),
       count: parseInt(row.getAttribute('data-count'), 10) || 0,
+      size: parseInt(row.getAttribute('data-count'), 10) || 0,   /* count record se badal jata hai, size nahi */
+      rev: parseInt(row.getAttribute('data-rev'), 10) || 0,
+      level: '',
       live: false,
       answered: 0,
       wrong: 0,
@@ -86,6 +89,11 @@
       if (!raw) return;
       try { data = JSON.parse(raw); } catch (e) { return; }
       if (!data || typeof data !== 'object') return;
+
+      /* Row par data-rev likha ho aur attempt ka rev na mile, to ye attempt
+         purane sawalo ka hai — gina nahi jata. (Cbt engine bhi yahi karta hai.) */
+      if (set.rev && data.rev !== set.rev) return;
+      set.level = typeof data.level === 'string' ? data.level : '';
 
       set.answered = (data.pick && typeof data.pick === 'object')
         ? Object.keys(data.pick).length : 0;
@@ -145,13 +153,14 @@
       }
 
       if (!meta) return;
+      var lv = set.level ? ' · ' + set.level.charAt(0).toUpperCase() + set.level.slice(1) : '';
       if (set.done) {
         meta.className = 'agehub-setmeta is-done';
-        meta.textContent = 'Finished · ' + (set.answered - set.wrong) +
+        meta.textContent = 'Finished' + lv + ' · ' + (set.answered - set.wrong) +
           ' of ' + set.answered + ' right';
       } else {
         meta.className = 'agehub-setmeta is-open';
-        meta.textContent = set.answered + ' of ' + set.count + ' answered';
+        meta.textContent = set.answered + ' of ' + set.count + ' answered' + lv;
       }
     });
   }
@@ -411,7 +420,7 @@
 
     var countBox = $('#buildCount'), countBar = $('#buildCountRange');
     var timeBox = $('#buildTime'), timeBar = $('#buildTimeRange');
-    var rateHint = $('#buildRate'), sum = $('#buildSum');
+    var rateHint = $('#buildRate'), sum = $('#buildSum'), poolNote = $('#buildPool');
     var startBtn = $('#buildStart'), reset = $('#buildReset');
     if (!countBox || !timeBox) return;
 
@@ -469,8 +478,24 @@
         reset.hidden = build.count === COUNT_DEFAULT &&
           build.minutes === defaultMinutes(COUNT_DEFAULT);
       }
-      if (startBtn && startBtn.tagName === 'A') {
-        startBtn.href = '/quizzes/mcq/' + AGE + '/custom/?n=' + build.count + '&t=' + build.minutes;
+      /* Start usi set par jata hai jo khula hai. Pehle yahan /custom/ tha, jo
+         kabhi bana hi nahi — 404. Set me jitne sawal hain usse zyada maange
+         to utne hi milte hain, aur waqt bhi unhi ke hisaab se. */
+      var live = sets.filter(function (x) { return x.live; })[0];
+      var pool = live ? live.size : 0;
+      var eff = pool ? Math.min(build.count, pool) : build.count;
+      var effMin = clamp(Math.round(eff * build.rate / 60), minMinutes(eff), maxMinutes(eff));
+      if (startBtn && startBtn.tagName === 'A' && live) {
+        startBtn.href = '/quizzes/mcq/' + AGE + '/' + live.id.replace(AGE + '-', '') +
+          '/?n=' + eff + '&t=' + effMin;
+      }
+      if (poolNote) {
+        var over = pool > 0 && build.count > pool;
+        poolNote.hidden = !over;
+        if (over) {
+          poolNote.textContent = 'Only ' + pool + ' questions are written so far, so Start will give ' +
+            'you ' + pool + ' of them, in ' + effMin + ' minutes.';
+        }
       }
 
       try {

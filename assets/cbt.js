@@ -7,16 +7,25 @@
    dabane par hi result banta hai — pehle nahi.
 
    Page khud batata hai use kya chalana hai:
-     <div data-cbt data-src="/assets/questions/<file>.json"
-          data-back="/quizzes/mcq/old-english/">
+     <div data-cbt data-back="/quizzes/mcq/old-english/"
+          data-set="old-english-set-1"
+          data-levels="easy,medium"           (na likho to ek hi file)
+          data-default-level="easy"
+          data-src="/assets/questions/old-english-set-1-{level}.json">
+
+   Ek set ke kai level ho sakte hain. Reader start screen par chunta
+   hai; jo attempt browser me rakha hai uska level wahi rehta hai.
+   Question file me "rev" hota hai: sawal badalne par rev badhao aur
+   purane attempt apne aap bekar ho jaate hain (purane jawab naye
+   sawalo par galat chipak jaate, warna).
 
    Hub se aaya hua ?n= aur ?t= yahan maana jata hai, isliye
    "Build your own set" wala chunav seedha yahan chalta hai.
 
    Sab kuch is browser me rehta hai, kahin bheja nahi jata:
      key   akq:<setId>:v1
-     value { setId, count, pick:{}, done, wrongCount, endedAt,
-             marked:[], seen:[], at, endsAt }
+     value { setId, level, rev, count, pick:{}, done, wrongCount,
+             endedAt, marked:[], seen:[], at, endsAt }
    Pehle paanch field wahi hain jo hub (mcq-age.js) padhta hai.
    ========================================================= */
 (function () {
@@ -49,10 +58,25 @@
 
   /* ---------------------------------------------------------
      File uthao
+
+     Level na likha ho to purani tarah ek hi file (data-src seedha).
+     Ek baar uthayi file dobara nahi uthti — level badalne par bhi nahi.
      --------------------------------------------------------- */
-  function load() {
-    var src = root.getAttribute('data-src');
-    fetch(src, { cache: 'no-cache' })
+  var SET_ID = root.getAttribute('data-set') || '';
+  var LEVELS = (root.getAttribute('data-levels') || '').split(',')
+    .map(function (x) { return x.trim(); }).filter(Boolean);
+  var DEFAULT_LEVEL = root.getAttribute('data-default-level') || LEVELS[0] || '';
+  var papers = {};
+  var level = '';
+
+  function srcFor(lv) {
+    var src = root.getAttribute('data-src') || '';
+    return lv ? src.replace('{level}', lv) : src;
+  }
+
+  function fetchPaper(lv) {
+    if (papers[lv]) return Promise.resolve(papers[lv]);
+    return fetch(srcFor(lv), { cache: 'no-cache' })
       .then(function (r) {
         if (!r.ok) throw new Error('HTTP ' + r.status);
         return r.json();
@@ -61,9 +85,50 @@
         if (!data || !Array.isArray(data.questions) || !data.questions.length) {
           throw new Error('no questions in the file');
         }
+        papers[lv] = data;
+        return data;
+      });
+  }
+
+  /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
+     uska (taaki adhoora test wahin se chale), phir ?level=, phir default. */
+  function chooseLevel() {
+    if (!LEVELS.length) return '';
+    var saved = null;
+    try { saved = JSON.parse(localStorage.getItem(key) || 'null'); } catch (e) {}
+    if (saved && LEVELS.indexOf(saved.level) > -1) return saved.level;
+    var asked = new URLSearchParams(location.search).get('level');
+    if (asked && LEVELS.indexOf(asked) > -1) return asked;
+    return DEFAULT_LEVEL;
+  }
+
+  function load() {
+    if (SET_ID) key = 'akq:' + SET_ID + ':v1';
+    level = chooseLevel();
+    fetchPaper(level)
+      .then(function (data) {
         paper = data;
-        key = 'akq:' + (data.setId || 'set') + ':v1';
+        if (!paper.setId) paper.setId = SET_ID;
+        if (!key) key = 'akq:' + (data.setId || 'set') + ':v1';
         if (root.getAttribute('data-mode') === 'review') { showReview(); return; }
+        begin();
+      })
+      .catch(function (e) { broke(e); });
+  }
+
+  /* Start screen par level badalna */
+  function switchLevel(next) {
+    if (next === level || LEVELS.indexOf(next) < 0) return;
+    fetchPaper(next)
+      .then(function (data) {
+        paper = data; level = next;
+        /* window.history likhna zaroori hai — is file me history() naam ka
+           apna function hai jo seedhe likhne par isse dab jata. */
+        try {
+          var q = new URLSearchParams(location.search);
+          q.set('level', next);
+          window.history.replaceState(null, '', location.pathname + '?' + q.toString() + location.hash);
+        } catch (e) {}
         begin();
       })
       .catch(function (e) { broke(e); });
@@ -133,6 +198,7 @@
   function beginWrongOnly() {
     var main = null;
     try { main = JSON.parse(localStorage.getItem('akq:' + paper.setId + ':v1') || 'null'); } catch (e) {}
+    if (!validFor(main)) main = null;      /* purane sawalo ka record yahan kaam nahi aata */
 
     var wrong = [];
     if (main && main.done && main.pick) {
@@ -154,7 +220,7 @@
     }
 
     Q = wrong;
-    key = 'akqx:' + paper.setId + ':wrong:v1';
+    key = 'akqx:' + paper.setId + ':' + (paper.level || 'all') + ':wrong:v1';
     var minutes = Math.max(1, Math.round(Q.length * SEC_PER_Q / 60));
 
     var old = read();
@@ -194,6 +260,7 @@
         '<h1>' + esc(paper.setName || 'Practice set') + '</h1>' +
         '<p class="lede">Read each question, pick one answer, and move on. ' +
           'You can go back to any question until you press Submit.</p>' +
+        levelBlock() +
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + p.n + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + p.minutes + ' min</b><span>Time</span></div>' +
@@ -223,6 +290,9 @@
       '</div>';
 
     wireNeg();
+    $$('.cbt-lvlbtn').forEach(function (b) {
+      b.addEventListener('click', function () { switchLevel(b.getAttribute('data-level')); });
+    });
 
     $('#cbtBegin').addEventListener('click', function () {
       st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
@@ -230,6 +300,23 @@
       save();
       runTest();
     });
+  }
+
+  /* Level ka chunav: sirf tab dikhta hai jab ek se zyada level likhe hon.
+     Naam page ke data-levels se aate hain, samjhane wali line chune hue
+     level ki file se (paper.levelNote). */
+  function levelBlock() {
+    if (LEVELS.length < 2) return '';
+    return '<div class="cbt-neg cbt-lvl">' +
+      '<p class="lbl" id="cbtLvlLbl">Level</p>' +
+      '<div class="cbt-negrow" role="group" aria-labelledby="cbtLvlLbl">' +
+        LEVELS.map(function (lv) {
+          return '<button type="button" class="cbt-lvlbtn" data-level="' + esc(lv) + '" aria-pressed="' +
+            (lv === level) + '">' + esc(lv.charAt(0).toUpperCase() + lv.slice(1)) + '</button>';
+        }).join('') +
+      '</div>' +
+      (paper.levelNote ? '<p class="cbt-neghint">' + esc(paper.levelNote) + '</p>' : '') +
+    '</div>';
   }
 
   /* Negative marking: 0 (band), 0.25 ya 0.33 har galat jawab par.
@@ -521,7 +608,8 @@
 
     Q.forEach(function (q, i) {
       var k = q.topic || 'other';
-      var o = byTopic[k] || (byTopic[k] = { key: k, right: 0, total: 0, read: q.read });
+      var o = byTopic[k] || (byTopic[k] = { key: k, right: 0, total: 0,
+        read: (paper.topicRead && paper.topicRead[k]) || q.read });
       o.total++;
       if (st.pick[i] === undefined) skipped++;
       else if (st.pick[i] === q.correct_option_id) { right++; o.right++; }
@@ -835,22 +923,6 @@
   }
 
   /* ---------------------------------------------------------
-     10. Is device par English literature ka darja
-
-     Do cheezon par: kitne sawal kiye, aur unme se kitne sahi.
-     Sirf accuracy se darja dena galat hoga — das sawal 100% karke
-     koi "Master" nahi ban jata. Isliye dono shart poori honi chahiye.
-     Hadd badalni ho to bas LEVELS ki ye panktiyan badalni hain.
-     --------------------------------------------------------- */
-  var LEVELS = [
-    { name: 'Reader',  need: 0,   acc: 0  },
-    { name: 'Student', need: 50,  acc: 50 },
-    { name: 'Scholar', need: 150, acc: 65 },
-    { name: 'Critic',  need: 300, acc: 75 },
-    { name: 'Master',  need: 500, acc: 85 }
-  ];
-
-  /* ---------------------------------------------------------
      7. English literature me darja — poore page par, aur band
 
      Ye ginti sach me ek hi khaate ki ho sakti hai. Ek browser ka
@@ -860,7 +932,8 @@
      --------------------------------------------------------- */
   /* Paanch darje, pehle se aakhri tak. Har agle darje par ek sitara
      zyada — isliye Beginner ek, Master paanch. */
-  var LEVELS = ['Beginner', 'Reader', 'Scholar', 'Critic', 'Master'];
+  /* Naam LADDER hai, LEVELS nahi: LEVELS ab page ke Easy/Medium hain. */
+  var LADDER = ['Beginner', 'Reader', 'Scholar', 'Critic', 'Master'];
 
   function stars(n) {
     var out = '';
@@ -895,7 +968,7 @@
         }).join('') +
       '</div>' +
       '<ol class="cbt-ladder">' +
-        LEVELS.map(function (n, i) {
+        LADDER.map(function (n, i) {
           return '<li><i></i><b>' + n + '</b>' + stars(i + 1) + '</li>';
         }).join('') +
       '</ol>' +
@@ -926,7 +999,7 @@
         '<h2>Where to go next</h2>' +
         '<ul class="cbt-sug">' +
           '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
-            esc(paper.ageName || 'This age') + ' — the full notes</a><span>everything these questions came from</span></li>' +
+            esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>' +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
             'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
@@ -1032,7 +1105,9 @@
        ke saath ek hi chart me rakhna galat tasveer deta hai. */
     if (key.indexOf('akqx:') === 0) return { banner: '', chart: '' };
 
-    var hkey = 'akqh:' + paper.setId + ':v1';
+    /* Easy aur Medium ke score ek chart me milte to "pichhli baar se behtar"
+       jhooth bolta. Har level ki apni list, aur rev badalne par nayi. */
+    var hkey = 'akqh:' + paper.setId + ':' + (paper.level || 'all') + ':r' + (paper.rev || 1);
     var list = [];
     try { list = JSON.parse(localStorage.getItem(hkey) || '[]'); } catch (e) {}
     if (!Array.isArray(list)) list = [];
@@ -1348,13 +1423,25 @@
   function save() {
     st.setId = paper.setId;
     st.count = Q.length;
+    st.level = paper.level;
+    st.rev = paper.rev;
     try { localStorage.setItem(key, JSON.stringify(st)); } catch (e) {}
   }
+
+  /* Ye attempt isi file ka hai? Level aur rev dono milne chahiye. Purane
+     attempt (jab sawal kuch aur the) me ye nahi hote, isliye wo bekar. */
+  function validFor(d) {
+    if (!d || typeof d !== 'object') return false;
+    if (paper && paper.rev != null && d.rev !== paper.rev) return false;
+    if (paper && paper.level && d.level !== paper.level) return false;
+    return true;
+  }
+
   function read() {
     try {
       var raw = localStorage.getItem(key);
       var d = raw ? JSON.parse(raw) : null;
-      if (!d || typeof d !== 'object') return null;
+      if (!validFor(d)) return null;
       d.pick = d.pick || {}; d.marked = d.marked || {}; d.seen = d.seen || {}; d.spent = d.spent || {};
       return d;
     } catch (e) { return null; }
