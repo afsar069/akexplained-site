@@ -900,6 +900,8 @@ summary.ptbtn::-webkit-details-marker{display:none}
 }
 .mcq-agecard[aria-disabled="true"] .mcq-pic{filter:grayscale(.55);opacity:.6}
 .mcq-agecard[aria-disabled="true"] .mcq-bar{visibility:hidden}
+/* Hub khula hai par sawal abhi nahi: progress patti ka koi matlab nahi */
+.mcq-agecard.is-soon .mcq-bar{visibility:hidden}
 
 /* ---------- topic grid ---------- */
 .mcq-topicgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}

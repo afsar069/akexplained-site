@@ -21,23 +21,32 @@
 
   /* ---------------------------------------------------------
      1. WHICH AGES ARE READY
-     Add a slug here the day that age's questions go live.
-     Everything not listed shows as "Questions coming soon"
-     and is not clickable, so no one lands on an empty page.
+     LIVE_AGES: ages with questions. The card links to the hub and
+     shows progress. Add a slug here the day its first set goes live
+     (and take it out of SOON_HUBS).
+
+     SOON_HUBS: ages whose hub page is open (notes and a "questions
+     are being written" note) but with no questions yet. The card
+     links to the hub and keeps saying "Questions coming soon".
+
+     An age in neither list is not clickable.
      --------------------------------------------------------- */
   var LIVE_AGES = [
-    'old-english',
-    // 'middle-english',
-    // 'renaissance',
-    // 'elizabethan',
-    // 'jacobean',
-    // 'caroline',
-    // 'restoration',
-    // 'augustan-age',
-    // 'romantic-age',
-    // 'victorian-age',
-    // 'modern',
-    // 'contemporary'
+    'old-english'
+  ];
+
+  var SOON_HUBS = [
+    'middle-english',
+    'renaissance',
+    'elizabethan',
+    'jacobean',
+    'caroline',
+    'restoration',
+    'augustan-age',
+    'romantic-age',
+    'victorian-age',
+    'modern',
+    'contemporary'
   ];
 
   /* How many questions each age holds, once it is live.
@@ -141,13 +150,20 @@
       var state = $('.mcq-state', card);
       var fill = $('.mcq-bar i', card);
       var live = LIVE_AGES.indexOf(slug) > -1;
+      var soon = SOON_HUBS.indexOf(slug) > -1;
 
       /* The markup carries no href, so an age with no page yet is
-         never a link, even with this script blocked. A live age gets
-         its link here. */
-      if (!live) {
+         never a link, even with this script blocked. A live age, or one
+         with an open hub, gets its link here. */
+      if (!live && !soon) {
         card.setAttribute('aria-disabled', 'true');
         card.removeAttribute('href');
+        return;
+      }
+      if (soon) {                      /* hub only: the card text stays "Questions coming soon" */
+        card.setAttribute('href', '/quizzes/mcq/' + slug + '/');
+        card.removeAttribute('aria-disabled');
+        card.classList.add('is-soon');
         return;
       }
       card.setAttribute('href', '/quizzes/mcq/' + slug + '/');

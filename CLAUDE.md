@@ -55,7 +55,8 @@ To publish a set:
    To open a set, set `"live": true` and give it `lede`, `titleCase` (and `focus` if it has one).
    `rev` is read from the files. The hub row, build page, custom test and the set and review pages
    are then generated; the build stops with a message if a live set's file is missing.
-5. First live set of an age: add the age slug to `LIVE_AGES` in `assets/mcq.js` so its card on
-   `/quizzes/mcq/` links to the hub.
+5. `assets/mcq.js`: every age card on `/quizzes/mcq/` links to its hub. `SOON_HUBS` = hub open, no
+   questions yet (card keeps saying "Questions coming soon"). When an age's first set goes live, move
+   its slug to `LIVE_AGES` (card shows progress).
 6. `npx eleventy`, link check, browser test, push the branch. `main` only when asked (rule 5).
 `tools/` is ignored by the build and is not published.
