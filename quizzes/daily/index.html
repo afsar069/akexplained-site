@@ -3,8 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daily Quiz | AK Explained</title>
-<meta name="description" content="A new English literature quiz every day — coming soon from AK Explained.">
+<title>Daily MCQ | AK Explained</title>
+<meta name="description" content="A fresh set of English Literature questions every day, so revision becomes a habit rather than a panic. Coming soon from AK Explained.">
+<link rel="canonical" href="https://akexplained.com/quizzes/daily/">
+<meta property="og:title" content="Daily MCQ — AK Explained">
+<meta property="og:description" content="A fresh set of English Literature questions every day. Free, no sign-in needed.">
+<meta property="og:image" content="https://akexplained.com/assets/social-card.png">
+<meta property="og:url" content="https://akexplained.com/quizzes/daily/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -88,25 +95,148 @@
 
 <main id="main">
 
-<section class="pagehead">
-  <span class="mark" aria-hidden="true">D</span>
+<!-- ====== PAGE HEAD ======
+     Same painted head as the other practice pages. When the picture made for
+     this page is ready, put it in /assets/ and set it on this section:
+     style="--head-pic:url('/assets/daily-head.webp')" -->
+<section class="pagehead pagehead-practice pagehead-daily">
   <div class="wrap">
-    <p class="eyebrow">Practice &middot; Daily</p>
-    <h1>Daily Quiz</h1>
-    <p class="lede">A fresh set of questions every day, so revision becomes a habit rather than a panic.</p>
+    <p class="eyebrow">Practice &bull; Improve &bull; Excel</p>
+    <h1>Daily <em>MCQ</em></h1>
+    <p class="lede">A fresh set of English Literature questions every day, so revision becomes a habit rather than a panic.</p>
+
+    <nav class="mcq-modes" aria-label="Practice sections">
+      <span aria-current="page">Daily Quiz</span>
+      <a href="/quizzes/mcq/">MCQs</a>
+      <a href="/quizzes/pyq/">PYQs</a>
+      <a href="/quizzes/mock-tests/">Mock Tests</a>
+    </nav>
   </div>
 </section>
 
-<section>
-  <div class="wrap">
-    <div class="soon">
-      <img src="/assets/books-stack.webp" alt="" width="150" height="118" loading="lazy">
-      <span class="badge">Coming soon</span>
-      <p>A new question set each day, drawn from the ages, texts and critical terms that examiners return to. It is being built now.</p>
-      <a class="btn" href="/go/whatsapp" rel="noopener">Pooch lijiye &mdash; WhatsApp</a>
-    </div>
+<div class="wrap mcq-body">
+
+  <!-- ====== EXAM FILTER ====== -->
+  <div class="mcq-exams" role="group" aria-label="Arrange questions for an exam">
+    <span class="mcq-exams-label">Arrange for</span>
+    <button type="button" class="mcq-chip is-on" data-exam="all" aria-pressed="true">Every exam</button>
+    <button type="button" class="mcq-chip" data-exam="net" aria-pressed="false">UGC NET / JRF</button>
+    <button type="button" class="mcq-chip" data-exam="pgt" aria-pressed="false">PGT</button>
+    <button type="button" class="mcq-chip" data-exam="psc" aria-pressed="false">State PSC</button>
+    <button type="button" class="mcq-chip" data-exam="maba" aria-pressed="false">MA / BA</button>
   </div>
-</section>
+
+  <!-- ====== TOP ROW: carry on (only with history) + just start ====== -->
+  <div class="mcq-top">
+
+    <!-- filled by mcq.js when this browser has history -->
+    <section id="carryOn" class="mcq-carry" aria-labelledby="carryTitle" hidden>
+      <div class="mcq-carry-head">
+        <h2 id="carryTitle">Carry On Where You Left</h2>
+        <p>Kept on this device only. Sign in later and it will follow you to your phone.</p>
+      </div>
+      <div class="mcq-carry-rows" id="resumeGrid"></div>
+    </section>
+
+    <!-- No daily set exists yet, so this strip is not a link. When there is one,
+         make it <a class="mcq-start" href="..."> and put "Start Now" back on the button. -->
+    <div class="mcq-start" aria-disabled="true">
+      <span class="mcq-start-ic" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="m12 2 2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5Z"/></svg>
+      </span>
+      <span class="mcq-start-txt">
+        <strong>Not Sure Where To Begin?</strong>
+        <span>Twenty-five mixed questions, drawn from across the ages. About fifteen minutes.</span>
+      </span>
+      <span class="mcq-start-go">Coming soon</span>
+    </div>
+
+  </div>
+
+  <!-- ====== CHOOSE A TOPIC ======
+       To open a topic: make the card <a class="dq-card ..." href="..."> (no is-soon),
+       and change the button to "Start Quiz &rarr;". Write a question count only once
+       the questions exist.
+       A picture goes last inside the card:
+       <img class="dq-pic" src="/assets/topics/NAME.webp" alt="" width="" height="" loading="lazy">
+       data-period feeds the period filter; theory and terms belong to no one period. -->
+  <section class="mcq-sec mcq-sec-last" aria-labelledby="dqTitle">
+    <div class="dq-head">
+      <h2 id="dqTitle"><img src="/assets/books-stack.webp" alt="" width="42" height="33">Choose a Topic</h2>
+
+      <!-- shown by daily.js; the page reads fine without them -->
+      <div class="dq-filters" hidden>
+        <select id="dqPeriod" class="dq-select" aria-label="Show topics from one period">
+          <option value="all">All Periods</option>
+          <option value="medieval">Medieval</option>
+          <option value="renaissance">Renaissance</option>
+          <option value="restoration">Restoration and 18th Century</option>
+          <option value="romantic">Romantic</option>
+          <option value="victorian">Victorian</option>
+          <option value="modern">Modern</option>
+        </select>
+        <select id="dqSort" class="dq-select" aria-label="Sort the topics">
+          <option value="time">Sort by: Time order</option>
+          <option value="az">Sort by: A to Z</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="dq-grid" id="dqGrid">
+
+    <article class="dq-card t-rose is-soon" data-period="medieval">
+      <h3 class="dq-title">Chaucer &amp; Medieval Period</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-peach is-soon" data-period="renaissance">
+      <h3 class="dq-title">Renaissance Period</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-sky is-soon" data-period="renaissance">
+      <h3 class="dq-title">Elizabethan Drama</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-sage is-soon" data-period="renaissance">
+      <h3 class="dq-title">Metaphysical Poetry</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-lilac is-soon" data-period="restoration">
+      <h3 class="dq-title">Restoration and 18th Century</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-leaf is-soon" data-period="romantic">
+      <h3 class="dq-title">Romantic Period</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-iris is-soon" data-period="victorian">
+      <h3 class="dq-title">Victorian Period</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-coral is-soon" data-period="modern">
+      <h3 class="dq-title">Modern Period</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-mint is-soon" data-period="">
+      <h3 class="dq-title">Literary Theory</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+
+    <article class="dq-card t-sand is-soon" data-period="">
+      <h3 class="dq-title">Grammar &amp; Literary Terms</h3>
+      <span class="dq-go">Coming soon</span>
+    </article>
+    </div>
+  </section>
+
+</div>
 
 </main>
 
@@ -170,5 +300,7 @@
 </footer>
 
 <script src="/assets/nav.js" defer></script>
+<script src="/assets/mcq.js" defer></script>
+<script src="/assets/daily.js" defer></script>
 </body>
 </html>

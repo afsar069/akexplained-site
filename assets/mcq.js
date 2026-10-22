@@ -2,6 +2,10 @@
    MCQ PRACTICE PAGE  —  /quizzes/mcq/
    assets/mcq.js
 
+   The Daily MCQ page (/quizzes/daily/) loads this too, for the
+   "Carry On Where You Left" strip and the exam chips. It has no
+   age cards, so the age jobs below simply find nothing to do.
+
    The page works perfectly well with this file missing or
    blocked: every link is already in the HTML. This script only
    adds the parts that depend on what the reader has done
@@ -10,7 +14,7 @@
    Three jobs:
      1. Grey out the ages whose questions are not written yet.
      2. Fill each age card's progress bar from past attempts.
-     3. Build the "Carry On Where You Left" row.
+     3. Build the "Carry On Where You Left" strip.
 
    It reads the same localStorage the quiz engine writes:
      key   akq:<setId>:v1
@@ -203,6 +207,7 @@
 
   /* ---------------------------------------------------------
      3. CARRY ON
+     One row per thing to pick up again, inside the brown strip.
      --------------------------------------------------------- */
   function paintResume(attempts) {
     var sec = $('#carryOn');
@@ -217,46 +222,48 @@
     /* everything answered wrongly, across every age */
     var wrong = attempts.reduce(function (n, a) { return n + a.wrong; }, 0);
 
-    var cards = [];
+    var rows = [];
 
     if (open) {
       var name = AGE_NAMES[open.age] || 'Practice set';
       var pc = Math.round(open.answered / open.total * 100);
-      cards.push(
-        '<a class="mcq-rcard" href="/quizzes/mcq/' + esc(open.age || '') + '/">' +
-          '<span class="ic" aria-hidden="true">' +
-            '<svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">' +
+      /* a set that belongs to no age has no age page to go back to */
+      var href = open.age ? '/quizzes/mcq/' + esc(open.age) + '/' : '/quizzes/mcq/';
+      rows.push(
+        '<a class="mcq-carry-row" href="' + href + '">' +
+          '<span class="mcq-start-ic" aria-hidden="true">' +
+            '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">' +
             '<path d="M8 5.1v13.8L19 12 8 5.1Z"/></svg>' +
           '</span>' +
-          '<span class="body">' +
+          '<span class="mcq-start-txt">' +
             '<strong>' + esc(name) + '</strong>' +
-            '<span class="sub">' + open.answered + ' of ' + open.total + ' answered</span>' +
-            '<span class="mcq-bar"><i style="width:' + pc + '%"></i></span>' +
-            '<span class="go">Continue</span>' +
+            '<span>' + open.answered + ' of ' + open.total + ' answered</span>' +
+            '<span class="mcq-carry-bar" aria-hidden="true"><i style="width:' + pc + '%"></i></span>' +
           '</span>' +
+          '<span class="mcq-start-go">Continue</span>' +
         '</a>'
       );
     }
 
     if (wrong > 0) {
-      cards.push(
-        '<a class="mcq-rcard is-redo" href="/quizzes/mcq/build/?only=wrong">' +
-          '<span class="ic" aria-hidden="true">' +
-            '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" ' +
+      rows.push(
+        '<a class="mcq-carry-row" href="/quizzes/mcq/build/?only=wrong">' +
+          '<span class="mcq-start-ic" aria-hidden="true">' +
+            '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" ' +
             'stroke-width="2" stroke-linecap="round"><path d="M20 11.5A8 8 0 1 1 17.7 6"/>' +
             '<path d="M20 4v4.5h-4.5"/></svg>' +
           '</span>' +
-          '<span class="body">' +
+          '<span class="mcq-start-txt">' +
             '<strong>' + wrong + ' You Got Wrong</strong>' +
-            '<span class="sub">Worth another look before they settle in wrongly.</span>' +
-            '<span class="go">Practise these</span>' +
+            '<span>Worth another look before they settle in wrongly.</span>' +
           '</span>' +
+          '<span class="mcq-start-go">Practise these</span>' +
         '</a>'
       );
     }
 
-    if (!cards.length) return;
-    grid.innerHTML = cards.join('');
+    if (!rows.length) return;
+    grid.innerHTML = rows.join('');
     sec.hidden = false;
   }
 

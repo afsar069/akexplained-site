@@ -799,12 +799,14 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-modes span[aria-current]{background:var(--teal);border-color:var(--teal);color:#fff}
 
 /* ---------- body ---------- */
-.mcq-body{padding-top:34px;padding-bottom:72px}
-.mcq-sec{margin-bottom:46px}
+.mcq-body{padding-top:24px;padding-bottom:64px}
+/* The site gives every <section> 40px above and below. Here the margin alone
+   sets the gap, so the sections sit evenly close instead of far apart. */
+.mcq-sec{padding:0;margin-bottom:34px}
 .mcq-sec-last{margin-bottom:0}
 
 /* ---------- exam filter ---------- */
-.mcq-exams{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:34px}
+.mcq-exams{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-bottom:22px}
 .mcq-exams-label{
   font-size:12.5px;text-transform:uppercase;letter-spacing:.09em;
   font-weight:700;color:var(--mcq-ink-faint);margin-right:5px;
@@ -817,60 +819,76 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-chip.is-on{background:var(--mcq-teal);border-color:var(--mcq-teal);color:#fff;font-weight:600}
 .mcq-chip:focus-visible{outline:3px solid var(--mcq-blue);outline-offset:2px}
 
-/* ---------- carry on ---------- */
-.mcq-resume{display:flex;flex-wrap:wrap;gap:16px}
-.mcq-rcard{
-  flex:1 1 320px;display:flex;gap:16px;align-items:flex-start;
-  background:var(--mcq-paper);border:1px solid var(--mcq-line);
-  border-radius:16px;padding:20px 22px;text-decoration:none;color:inherit;
-}
-.mcq-rcard:hover{border-color:var(--mcq-blue)}
-.mcq-rcard .ic{
-  width:46px;height:46px;border-radius:12px;flex:none;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--mcq-blue-tint);color:var(--mcq-blue);
-}
-.mcq-rcard .body{flex:1;min-width:0}
-.mcq-rcard strong{
-  display:block;font-family:Literata,Georgia,serif;
-  font-size:19px;font-weight:600;margin-bottom:3px;
-}
-.mcq-rcard .sub{display:block;font-size:14.5px;color:var(--mcq-ink-soft);margin-bottom:12px}
-.mcq-rcard .go{
-  display:inline-block;font-size:14.5px;font-weight:600;color:#fff;
-  background:var(--mcq-blue);padding:10px 20px;border-radius:10px;
-}
-.mcq-rcard.is-redo .ic{background:var(--mcq-orange-tint);color:var(--mcq-orange)}
-.mcq-rcard.is-redo .go{background:var(--mcq-orange)}
-.mcq-rcard.is-redo:hover{border-color:var(--mcq-orange)}
-
+/* ---------- progress bar (age cards) ---------- */
 .mcq-bar{display:block;height:6px;border-radius:999px;background:var(--mcq-line-soft);overflow:hidden;margin-bottom:14px}
 .mcq-bar i{display:block;height:100%;width:0;background:var(--mcq-blue);border-radius:999px}
 .mcq-bar i.is-done{background:var(--mcq-green)}
 .mcq-bar i.is-weak{background:var(--mcq-orange)}
 
-/* ---------- just start ---------- */
-.mcq-start{
-  display:flex;flex-wrap:wrap;align-items:center;gap:20px;
-  background:var(--mcq-teal-deep);border-radius:16px;padding:24px 28px;
-  margin-bottom:46px;text-decoration:none;
+/* ---------- top row: carry on + just start ----------
+   Two strips of one family. "Not Sure Where To Begin?" is teal; "Carry On
+   Where You Left" is the same strip in a second colour. Carry On shows only
+   when this browser has history. Until then the start strip alone fills the
+   row; with both, they sit side by side (stacked on a narrow screen). */
+.mcq-body [hidden]{display:none !important}
+.mcq-top{
+  display:grid;gap:16px;align-items:stretch;margin-bottom:30px;
+  grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));
 }
-.mcq-start:hover{background:#0C2523}
+.mcq-start,.mcq-carry{
+  --s-bg:var(--mcq-teal-deep);--s-hover:#0C2523;--s-ic:var(--mcq-teal);
+  --s-sub:#B8CFCC;--s-go:var(--mcq-teal-deep);
+  background:var(--s-bg);border-radius:16px;color:#fff;text-decoration:none;
+}
+.mcq-start{display:flex;align-items:center;gap:16px;padding:18px 22px}
+.mcq-start:hover{background:var(--s-hover)}
 .mcq-start-ic{
-  width:50px;height:50px;border-radius:13px;flex:none;
+  width:46px;height:46px;border-radius:12px;flex:none;
   display:flex;align-items:center;justify-content:center;
-  background:var(--mcq-teal);color:#fff;
+  background:var(--s-ic);color:#fff;
 }
-.mcq-start-txt{flex:1 1 320px;min-width:0}
+.mcq-start-txt{flex:1 1 0;min-width:0}
 .mcq-start-txt strong{
-  display:block;font-family:Literata,Georgia,serif;font-size:23px;
-  font-weight:600;color:#fff;margin-bottom:3px;
+  display:block;font-family:Literata,Georgia,serif;font-size:19px;line-height:1.25;
+  font-weight:600;color:#fff;margin-bottom:2px;
 }
-.mcq-start-txt span{display:block;font-size:15.5px;color:#B8CFCC}
+.mcq-start-txt span{display:block;font-size:14.5px;line-height:1.4;color:var(--s-sub)}
 .mcq-start-go{
-  font-size:15.5px;font-weight:700;color:var(--mcq-teal-deep);
-  background:#fff;padding:14px 28px;border-radius:11px;white-space:nowrap;
+  flex:none;font-size:14.5px;font-weight:700;color:var(--s-go);
+  background:#fff;padding:11px 22px;border-radius:10px;white-space:nowrap;
 }
+/* No target yet: still the same strip, but not a link. */
+.mcq-start[aria-disabled="true"]{cursor:default}
+.mcq-start[aria-disabled="true"]:hover{background:var(--s-bg)}
+.mcq-start[aria-disabled="true"] .mcq-start-go{
+  background:rgba(255,255,255,.14);color:#fff;font-weight:600;
+}
+
+/* Carry On: the same strip in a warm brown, with one row per thing to resume */
+.mcq-carry{
+  --s-bg:#4B2A12;--s-hover:#3B210E;--s-ic:#C2410C;--s-sub:#E6CDB4;--s-go:#4B2A12;
+  padding:15px 20px 8px;
+}
+.mcq-carry-head h2{
+  font-family:Literata,Georgia,serif;font-size:17px;line-height:1.25;
+  font-weight:600;color:#fff;margin:0 0 1px;
+}
+.mcq-carry-head p{margin:0;font-size:12.5px;line-height:1.4;color:var(--s-sub);opacity:.9}
+.mcq-carry-rows{margin-top:10px}
+.mcq-carry-row{
+  display:flex;align-items:center;gap:14px;padding:10px 0;
+  border-top:1px solid rgba(255,255,255,.14);color:#fff;text-decoration:none;
+}
+.mcq-carry-row .mcq-start-ic{width:40px;height:40px;border-radius:11px}
+.mcq-carry-row .mcq-start-txt strong{font-size:16.5px}
+.mcq-carry-row .mcq-start-txt span{font-size:13.5px}
+.mcq-carry-row .mcq-start-go{padding:9px 18px;font-size:14px}
+.mcq-carry-row:hover .mcq-start-go{background:#FBEFE3}
+.mcq-carry-bar{
+  display:block;height:4px;margin-top:7px;border-radius:999px;overflow:hidden;
+  background:rgba(255,255,255,.18);
+}
+.mcq-carry-bar i{display:block;height:100%;background:#F4B27A;border-radius:999px}
 
 /* ---------- age grid ---------- */
 .mcq-agegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
@@ -972,8 +990,9 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-exams{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
   .mcq-exams .mcq-chip{flex:none}
   .mcq-exams-label{display:none}
-  .mcq-body{padding-top:22px}
-  .mcq-sec{margin-bottom:34px}
+  .mcq-body{padding-top:18px}
+  .mcq-sec{margin-bottom:28px}
+  .mcq-top{margin-bottom:24px}
 
   /* ages become a list of rows, each with a small picture, easier to thumb through */
   .mcq-agegrid{grid-template-columns:1fr;gap:9px}
@@ -989,14 +1008,19 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-state{grid-column:2;padding:0 14px 10px}
 
   .mcq-topicgrid,.mcq-othergrid{grid-template-columns:1fr}
-  .mcq-start,.mcq-build{padding:18px 18px;gap:14px}
-  .mcq-start-go,.mcq-build .go{width:100%;text-align:center}
-  .mcq-rcard .go{display:block;text-align:center}
+  .mcq-start,.mcq-build{padding:16px 18px;gap:14px}
+  .mcq-build .go{width:100%;text-align:center}
+}
+/* On a phone the button drops under the words and spans the strip */
+@media (max-width:560px){
+  .mcq-start,.mcq-carry-row{flex-wrap:wrap}
+  .mcq-start-go{width:100%;text-align:center}
+  .mcq-carry{padding:14px 16px 6px}
 }
 
 /* ---------- print ---------- */
 @media print{
-  .mcq-modes,.mcq-exams,.mcq-start,.mcq-build,#carryOn{display:none !important}
+  .mcq-modes,.mcq-exams,.mcq-top,.mcq-build{display:none !important}
 }
 
 /* ---------- practice pages: painted header ----------
@@ -1005,7 +1029,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
    the small motif, which the build only adds to a plain .pagehead. */
 .pagehead-practice::before{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:url("/assets/practice-head.webp") right center/cover no-repeat;
+  background:var(--head-pic,url("/assets/practice-head.webp")) right center/cover no-repeat;
   opacity:.8;
   -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
   mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
@@ -1015,6 +1039,103 @@ summary.ptbtn::-webkit-details-marker{display:none}
   /* on a narrow screen the text sits over the picture, so keep it light */
   .pagehead-practice::before{opacity:.4;background-position:right bottom}
 }
+
+/* =========================================================
+   DAILY MCQ PAGE  —  /quizzes/daily/
+   assets/daily.js adds the period filter and the sort.
+
+   Head, pills, exam chips and the two strips are the MCQ page's own
+   (.pagehead-practice, .mcq-modes, .mcq-exams, .mcq-top). Only what is
+   new here starts with .dq-.
+
+   Header picture: set --head-pic on .pagehead-daily (see below) when the
+   painted header for this page is ready. Until then it uses the same
+   painting as the other practice pages.
+   ========================================================= */
+
+/* ---------- head: bigger two-tone title, as in the design ---------- */
+.pagehead-daily .eyebrow{color:var(--body);letter-spacing:.24em}
+.pagehead-daily h1{
+  font-size:clamp(2.5rem,6.2vw,4.3rem);line-height:1.04;font-weight:700;
+  margin-bottom:12px;
+}
+.pagehead-daily h1 em{font-style:normal;color:#A9741F}
+.pagehead-daily p.lede{
+  font-size:clamp(1.02rem,1.7vw,1.25rem);line-height:1.38;max-width:27em;
+}
+
+/* ---------- Choose a Topic ---------- */
+.dq-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:18px}
+.dq-head h2{
+  display:flex;align-items:center;gap:12px;margin:0;
+  font-size:clamp(1.4rem,2.5vw,1.75rem);line-height:1.2;
+}
+.dq-head h2 img{width:42px;height:auto;flex:none}
+.dq-filters{margin-left:auto;display:flex;flex-wrap:wrap;gap:10px}
+.dq-select{
+  appearance:none;-webkit-appearance:none;font:inherit;font-size:14.5px;font-weight:600;
+  color:var(--mcq-ink);min-height:44px;padding:10px 40px 10px 16px;cursor:pointer;
+  background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8' fill='none' stroke='%231B2430' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m1.5 1.5 4.5 4.5 4.5-4.5'/%3E%3C/svg%3E") no-repeat right 15px center/12px;
+  border:1px solid var(--mcq-line);border-radius:12px;
+}
+.dq-select:hover{border-color:#B4C0CD}
+.dq-select:focus-visible{outline:3px solid var(--mcq-blue);outline-offset:2px}
+
+.dq-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.dq-grid [hidden]{display:none !important}
+
+/* Each topic card has its own soft colour. The picture, when there is one,
+   stands at the bottom right and the words keep to the left of it. */
+.dq-card{
+  --c-bg:#FBEAE7;--c-line:#F1D2CD;--c-btn:#F5CBC5;--c-ink:#8F2D26;
+  position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:16px;
+  min-height:150px;padding:18px 16px 16px 18px;overflow:hidden;
+  background:var(--c-bg);border:1px solid var(--c-line);border-radius:14px;
+  color:var(--mcq-ink);text-decoration:none;
+  box-shadow:0 1px 2px rgba(22,48,74,.05);
+  transition:transform .2s,box-shadow .2s;
+}
+a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.10)}
+.dq-title{
+  position:relative;display:block;margin:0;font-family:var(--serif);font-weight:700;
+  font-size:1.05rem;line-height:1.24;color:var(--mcq-ink);
+}
+.dq-go{
+  position:relative;align-self:flex-start;display:inline-block;
+  font-size:13.5px;font-weight:700;line-height:1;color:var(--c-ink);
+  background:var(--c-btn);border-radius:9px;padding:9px 15px;
+}
+/* The topic is not live yet: same card, quieter button, and not a link. */
+.dq-card.is-soon .dq-go{
+  background:rgba(255,255,255,.62);box-shadow:inset 0 0 0 1px var(--c-line);font-weight:600;
+}
+.dq-pic{
+  position:absolute;right:0;bottom:0;height:94%;width:auto;max-width:50%;
+  object-fit:contain;object-position:right bottom;pointer-events:none;
+}
+.dq-card:has(.dq-pic) .dq-title{max-width:58%}
+
+.dq-card.t-rose{--c-bg:#FBEAE7;--c-line:#F1D2CD;--c-btn:#F5CBC5;--c-ink:#8F2D26}
+.dq-card.t-peach{--c-bg:#FCEFDD;--c-line:#F3DDBD;--c-btn:#F7DDB5;--c-ink:#7F430A}
+.dq-card.t-sky{--c-bg:#E6EFFA;--c-line:#CFE0F2;--c-btn:#C7DBF4;--c-ink:#1D4E8F}
+.dq-card.t-sage{--c-bg:#EDF0E3;--c-line:#D9DFC8;--c-btn:#D5E2C4;--c-ink:#3C5A24}
+.dq-card.t-lilac{--c-bg:#EEEAF8;--c-line:#DCD5EF;--c-btn:#DAD2F4;--c-ink:#54389A}
+.dq-card.t-leaf{--c-bg:#EBF2E1;--c-line:#D5E3C3;--c-btn:#CFE5B8;--c-ink:#31592A}
+.dq-card.t-iris{--c-bg:#ECEAFB;--c-line:#D9D6F2;--c-btn:#D6D3F7;--c-ink:#4338A8}
+.dq-card.t-coral{--c-bg:#FBE5E0;--c-line:#F2CFC7;--c-btn:#F7C9BF;--c-ink:#9B2F20}
+.dq-card.t-mint{--c-bg:#E3F4F0;--c-line:#C8E6E0;--c-btn:#BFE5DC;--c-ink:#0F5E55}
+.dq-card.t-sand{--c-bg:#FBF1DF;--c-line:#F0E0BD;--c-btn:#F6E0B0;--c-ink:#80520A}
+
+@media (max-width:1100px){
+  .dq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .dq-filters{margin-left:0;width:100%}
+  .dq-select{flex:1 1 150px}
+  .dq-grid{grid-template-columns:1fr;gap:10px}
+  .dq-card{min-height:112px;gap:12px;padding:15px 14px 14px 16px}
+}
+@media print{.dq-filters{display:none !important}}
 
 /* =========================================================
    ONE AGE'S PRACTICE PAGE  —  /quizzes/mcq/<age>/
