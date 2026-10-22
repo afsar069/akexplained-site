@@ -1,0 +1,679 @@
+{
+  "setId": "old-english-set-3",
+  "rev": 1,
+  "age": "old-english",
+  "ageName": "Old English",
+  "setNumber": 3,
+  "setName": "Prose and its writers",
+  "notes": "/notes/old-english/",
+  "notesTitle": "Old English — the full notes",
+  "topics": {
+    "alfred": "King Alfred & translations",
+    "chronicle": "The Anglo-Saxon Chronicle",
+    "aelfric": "Ælfric of Eynsham",
+    "wulfstan": "Wulfstan & homilies",
+    "laws": "Law codes & legal prose"
+  },
+  "topicRead": {
+    "alfred": "prose",
+    "chronicle": "prose",
+    "aelfric": "prose",
+    "wulfstan": "prose",
+    "laws": "prose"
+  },
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "The main facts: Alfred's educational revival and translations, the Anglo-Saxon Chronicle, Ælfric's homilies and colloquy, Wulfstan's sermons, and early English law codes.",
+  "questions": [
+    {
+      "question": "Which King of the West Saxons initiated a major educational revival and directed the translation of key Latin works into Old English in the late 9th century?",
+      "options": [
+        "Æthelwulf",
+        "Edgar the Peaceful",
+        "Alfred the Great",
+        "Æthelstan"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Alfred the Great sought to restore learning and literacy in England by translating key Latin texts into Old English and promoting vernacular education.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What pastoral handbook by Pope Gregory the Great did Alfred translate into Old English to provide guidance for bishops and priests?",
+      "options": [
+        "Ecclesiastical History",
+        "City of God",
+        "Rule of Saint Benedict",
+        "Pastoral Care"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Alfred translated Gregory the Great's Liber Regulae Pastoralis (Pastoral Care) to serve as an indispensable guide for English pastors and clergy.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+    },
+    {
+      "question": "In his famous Prose Preface to the Pastoral Care, what intellectual decline did King Alfred lament had occurred across England?",
+      "options": [
+        "The loss of runic stone inscriptions",
+        "The decline of Latin literacy among the clergy",
+        "The decline of vernacular poetic recitations",
+        "The lack of trained manuscript illuminators"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the Preface, Alfred lamented that learning had decayed so much in England that very few clergy south of the Humber could read or understand Latin.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+    },
+    {
+      "question": "Which 6th-century Roman philosopher's 'Consolation of Philosophy' was adapted into Old English during Alfred's educational campaign?",
+      "options": [
+        "Seneca the Younger",
+        "Marcus Tullius Cicero",
+        "Boethius",
+        "Cassiodorus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Boethius's Consolation of Philosophy was translated and adapted into Old English during Alfred's reign to provide moral and philosophical instruction.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+    },
+    {
+      "question": "Which Welsh scholar and bishop of Sherborne wrote the contemporary Latin biography 'Life of King Alfred' in 893?",
+      "options": [
+        "Nennius",
+        "Asser",
+        "Gildas",
+        "Dunstan"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Bishop Asser of Saint David's entered Alfred's court around 885 and wrote the Vita Ælfredi (Life of King Alfred) in 893.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "Which late Roman Christian author's universal history, 'Seven Books of History Against the Pagans', was translated into Old English under Alfred?",
+      "options": [
+        "Paulus Orosius",
+        "Publius Cornelius Tacitus",
+        "Titus Livius",
+        "Suetonius"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Orosius's 5th-century historical work was translated into Old English to provide an overview of world history for Anglo-Saxon readers.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What 9th-century enamel and gold artifact, inscribed with the Old English words 'AELFRED MEC HEHT GEWYRCAN', is closely linked to King Alfred?",
+      "options": [
+        "The Sutton Hoo shoulder-clasp",
+        "The Ruthwell Cross",
+        "The Franks Casket",
+        "The Alfred Jewel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Alfred Jewel bears the inscription meaning 'Alfred ordered me made' and was likely the handle of an æstel (pointer) presented with his books.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What title did Alfred the Great adopt in 886 after recovering London and establishing overlordship of all English not under Danish rule?",
+      "options": [
+        "King of the Anglo-Saxons",
+        "Emperor of Britain",
+        "Bretwalda of Wessex",
+        "King of Mercia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 886, following his reoccupation and fortification of London, Alfred changed his official style to Rex Angulsaxonum ('King of the Anglo-Saxons').",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "According to Asser's biography, what prize did Alfred win from his mother Osburh by memorising it before his older brothers?",
+      "options": [
+        "A Latin Psalter",
+        "A book of English poetry",
+        "A ceremonial gilded horn",
+        "An iron court dagger"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Asser records that Alfred's mother offered a decorated book of English poetry to whichever son could learn it first, and Alfred won the prize.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "How did King Alfred describe his translation method in his famous prefaces to Latin works?",
+      "options": [
+        "Without adding any explanatory glosses",
+        "Strictly line by line in rhymed verse",
+        "In literal unadapted Latin syntax",
+        "Word by word and sense by sense"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Alfred explained that he translated 'hwilum word be worde, hwilum andgit of andgiete' ('sometimes word by word, sometimes sense by sense').",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+    },
+    {
+      "question": "Which theological and philosophical work by Saint Augustine of Hippo was adapted into Old English during Alfred's reign?",
+      "options": [
+        "Confessions",
+        "City of God",
+        "Soliloquies",
+        "On the Trinity"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Augustine's Soliloquies was adapted into Old English prose as the Blostman ('Blooms') during the Alfredian cultural revival.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "At what royal estate in Berkshire was King Alfred the Great born around 849?",
+      "options": [
+        "Wantage",
+        "Winchester",
+        "Wilton",
+        "Wareham"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asser's biography explicitly records that Alfred was born at the royal estate of Wantage in Berkshire.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "Under whose initiative in late 9th-century Wessex was the compilation of the Anglo-Saxon Chronicle first undertaken?",
+      "options": [
+        "Offa of Mercia",
+        "Athelstan",
+        "Edward the Confessor",
+        "Alfred the Great"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The compilation of the original version of the Anglo-Saxon Chronicle began in Wessex during the reign of King Alfred the Great around the early 890s.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "In what vernacular language was the Anglo-Saxon Chronicle originally written and maintained?",
+      "options": [
+        "Latin",
+        "Old English",
+        "Anglo-Norman French",
+        "Old Norse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Unlike most continental annals of the early Middle Ages which were in Latin, the Anglo-Saxon Chronicle was uniquely written in the vernacular Old English.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "With what historical event does the opening annal of the Anglo-Saxon Chronicle begin?",
+      "options": [
+        "Julius Caesar's invasion of Britain in 60 BC",
+        "The landing of Hengest and Horsa in 449 AD",
+        "The arrival of Augustine in Kent in 597 AD",
+        "The Nativity of Christ in 1 AD"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The introductory annals of the Anglo-Saxon Chronicle begin at 60 BC with Julius Caesar's campaigns in Britain.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which surviving manuscript of the Anglo-Saxon Chronicle, designated MS A, is the oldest and is kept at Corpus Christi College, Cambridge?",
+      "options": [
+        "The Laud Chronicle",
+        "The Worcester Chronicle",
+        "The Parker Chronicle",
+        "The Cottonian Fragment"
+      ],
+      "correct_option_id": 2,
+      "explanation": "MS A (Corpus Christi College Cambridge MS 173), known as the Parker Chronicle, is the earliest surviving manuscript of the Chronicle.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which manuscript of the Chronicle, designated MS E and preserved in the Bodleian Library, continued recording annals until 1154?",
+      "options": [
+        "The Winchester Chronicle",
+        "The Abingdon Chronicle",
+        "The Peterborough Chronicle",
+        "The Domitian Bilingual"
+      ],
+      "correct_option_id": 2,
+      "explanation": "MS E, the Peterborough Chronicle (or Laud Chronicle), was maintained by monks at Peterborough Abbey until 1154.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
+    },
+    {
+      "question": "What structural format do the entries in the Anglo-Saxon Chronicle follow?",
+      "options": [
+        "Verse stanzas organized by liturgical feasts",
+        "Hagiographical dialogues between saints",
+        "Rhymed genealogical couplets",
+        "Year-by-year chronological annals"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Chronicle organizes historical records into chronological annals arranged year by year.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What heroic Old English alliterative poem commemorating a 937 West Saxon victory was inserted into the Anglo-Saxon Chronicle under that year?",
+      "options": [
+        "The Battle of Brunanburh",
+        "The Battle of Maldon",
+        "The Fight at Finnsburh",
+        "The Wanderer"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Battle of Brunanburh is an Old English poem entered into the Chronicle under the year 937 celebrating King Æthelstan's victory over a coalition of Scots and Vikings.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which 16th-century Archbishop of Canterbury collected and preserved the oldest manuscript (MS A) of the Anglo-Saxon Chronicle?",
+      "options": [
+        "William Laud",
+        "Matthew Parker",
+        "Thomas Cranmer",
+        "Dunstan"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Matthew Parker, Archbishop of Canterbury from 1559 to 1575, acquired the manuscript now named the Parker Chronicle and bequeathed it to Corpus Christi College.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "How many primary medieval manuscript copies of the Anglo-Saxon Chronicle survive in whole or in part today?",
+      "options": [
+        "Four",
+        "Twelve",
+        "Nine",
+        "Two"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Nine manuscripts of the Anglo-Saxon Chronicle survive, traditionally designated by modern scholars with the sigla A through I.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What significant linguistic transition is famously documented in the 12th-century Final Continuation of the Peterborough Chronicle?",
+      "options": [
+        "The shift from Old English to early Middle English",
+        "The introduction of Norman French as the sole written tongue",
+        "The replacement of Latin script with runic characters",
+        "The emergence of late West Saxon standard prose"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Peterborough Chronicle's final entries from 1132 to 1154 demonstrate the transition of English from late Old English into early Middle English.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
+    },
+    {
+      "question": "At which Oxfordshire monastery did Ælfric serve as its first abbot from 1005 until his death?",
+      "options": [
+        "Glastonbury Abbey",
+        "Abingdon Abbey",
+        "Ramsey Abbey",
+        "Eynsham Abbey"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1005, Ælfric moved to Eynsham Abbey in Oxfordshire to become its first abbot, which is why he is known as Ælfric of Eynsham.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Under which leader of the 10th-century English Benedictine Reform was Ælfric educated at the Old Minster in Winchester?",
+      "options": [
+        "Saint Æthelwold",
+        "Saint Dunstan",
+        "Saint Oswald",
+        "Archbishop Oda"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ælfric was educated at Winchester under Saint Æthelwold, Bishop of Winchester, one of the primary leaders of the Benedictine Reform.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What is the title of Ælfric's two-series collection of Old English sermons based on patristic sources, dedicated to Archbishop Sigeric?",
+      "options": [
+        "Blickling Homilies",
+        "Vercelli Homilies",
+        "Sermo Lupi ad Anglos",
+        "Catholic Homilies"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ælfric composed two series of Sermones Catholici (Catholic Homilies) in the early 990s, dedicated to Sigeric, Archbishop of Canterbury.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What pedagogical Latin conversation dialogue did Ælfric write to help young monastic students learn to speak Latin?",
+      "options": [
+        "Examen",
+        "Colloquy",
+        "Pastoralis",
+        "Hexameron"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ælfric's Colloquy was designed as an imaginative classroom conversation between teacher and working pupils to practice spoken Latin.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Why is Ælfric often given the epithet 'the Grammarian' (Grammaticus)?",
+      "options": [
+        "He composed the first dictionary of Old English poetic kennings",
+        "He invented a new alphabet for writing West Saxon",
+        "He produced the first vernacular Latin grammar in medieval Europe",
+        "He prohibited all Latin syntax in church sermons"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Around 995, Ælfric adapted Latin grammars into Old English, creating the first vernacular grammar of Latin in Western Europe.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What third major collection of Old English homilies did Ælfric produce around 996–997 to celebrate martyrs and confessors?",
+      "options": [
+        "Catholic Homilies",
+        "Lives of Saints",
+        "Vercelli Book",
+        "Exeter Book"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ælfric wrote the Lives of Saints around 996–997 as a third series of sermons focusing on the feasts of individual saints and martyrs.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which noble patron of learning and ealdorman of the Western Shires was Ælfric's lifelong supporter and encouraged his writings?",
+      "options": [
+        "Æthelweard",
+        "Byrhtnoth",
+        "Leofric",
+        "Godwine"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ealdorman Æthelweard and his son Æthelmær were Ælfric's chief lay patrons, encouraging him to translate biblical books and write homilies.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "At which Dorset abbey did Ælfric reside as a teacher and monk from 987 before his move to Eynsham?",
+      "options": [
+        "Malmesbury Abbey",
+        "Cerne Abbey",
+        "Crowland Abbey",
+        "Glastonbury Abbey"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 987, Ælfric was sent from Winchester to the newly founded Cerne Abbey in Dorset to teach the Benedictine monks there.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which portion of the Old Testament did Ælfric translate or paraphrase into Old English at the request of his patron?",
+      "options": [
+        "The Book of Psalms",
+        "The Book of Job and Proverbs",
+        "The Hexateuch (Genesis through Joshua and Judges)",
+        "The Major Prophets (Isaiah and Jeremiah)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ælfric translated significant portions of Genesis and other early biblical books, contributing to the Old English Hexateuch.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "During which historical period did Ælfric live and compose his prolific body of Old English prose?",
+      "options": [
+        "The late 10th and early 11th century",
+        "The early 8th century",
+        "The mid-9th century",
+        "The late 12th century"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ælfric flourished c. 955 to c. 1010, the peak period of the Benedictine monastic revival in late Anglo-Saxon England.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which high ecclesiastical see did Wulfstan hold from 1002 until his death in 1023?",
+      "options": [
+        "Archbishop of Canterbury",
+        "Archbishop of York",
+        "Bishop of Winchester",
+        "Bishop of Durham"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wulfstan was consecrated Bishop of London in 996 and was elevated to Archbishop of York in 1002, holding the post until his death in 1023.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What is the title of Wulfstan's famous Old English sermon delivered in 1014 during the second wave of Scandinavian invasions?",
+      "options": [
+        "Catholic Homilies",
+        "De Temporibus Anni",
+        "Sermo Lupi ad Anglos",
+        "Institutes of Polity"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Sermo Lupi ad Anglos ('The Sermon of the Wolf to the English') was written by Wulfstan in 1014 as a fiery call to national repentance.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos"
+    },
+    {
+      "question": "What Latin pseudonym meaning 'the wolf' did Wulfstan use to sign several of his letters and homilies?",
+      "options": [
+        "Lupus",
+        "Leo",
+        "Ursus",
+        "Canis"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wulfstan styled himself 'Lupus' (the Latin translation of the first element in his Old English name, wulf) in his episcopal letters and sermons.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "For which two English monarchs did Archbishop Wulfstan act as principal legal draftsman and legislative adviser?",
+      "options": [
+        "Alfred the Great and Edward the Elder",
+        "Edgar the Peaceful and Edward the Martyr",
+        "Æthelred the Unready and Cnut the Great",
+        "Harold Godwinson and William the Conqueror"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wulfstan drafted the royal legal codes promulgated by King Æthelred between 1008 and 1016 and subsequent law codes for King Cnut.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What comprehensive work of political theory did Wulfstan write c. 1008 outlining the spiritual and secular duties of each rank in Christian society?",
+      "options": [
+        "Canons of Edgar",
+        "Institutes of Polity",
+        "Textus Roffensis",
+        "Domboc"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Institutes of Polity is Wulfstan's major treatise detailing the moral and social responsibilities of every class from the king down to commoners.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "In the Sermo Lupi ad Anglos, how did Wulfstan interpret the Viking depredations devastating England?",
+      "options": [
+        "As an inevitable secular military campaign devoid of spiritual meaning",
+        "As a temporary political feud between Scandinavian and Saxon jarls",
+        "As proof that pagan deities held true supernatural authority",
+        "As divine punishment for the sins and moral corruption of the English people"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wulfstan preached that the Danish raids were God's scourge sent to punish the English for their treachery, injustice, and neglect of religious duties.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos"
+    },
+    {
+      "question": "At which monastery was Archbishop Wulfstan buried after dying at York on 28 May 1023?",
+      "options": [
+        "Ely Cathedral",
+        "Canterbury Cathedral",
+        "Winchester Cathedral",
+        "Worcester Cathedral"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Following his death at York in 1023, Wulfstan's body was taken for burial to the monastery at Ely in accordance with his personal wishes.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What eschatological topic dominated Wulfstan's earliest block of homilies composed while he was Bishop of London (c. 996–1002)?",
+      "options": [
+        "The historical life of the Desert Fathers",
+        "The coming of the Antichrist and the Last Days",
+        "The rebuilding of Solomon's Temple",
+        "The detailed refutation of Arianism"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wulfstan's earliest sermons focused heavily on the imminent arrival of the Antichrist and the tribulations expected before Judgment Day.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "Which King of Kent issued the earliest surviving written Germanic law code and the earliest known document written in the English language?",
+      "options": [
+        "Ine of Wessex",
+        "Offa of Mercia",
+        "Edwin of Northumbria",
+        "Æthelberht of Kent"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Law of Æthelberht (c. 600) was issued in Kent and represents the earliest surviving legal code in any Germanic language.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Law_of_%C3%86thelberht"
+    },
+    {
+      "question": "What was 'wergild' in Anglo-Saxon legal tradition?",
+      "options": [
+        "The monetary value placed on a person's life paid to their kin if they were killed",
+        "A tax collected to finance coastal defense against Norse invaders",
+        "A seasonal rent paid in grain to the parish church",
+        "A military fine assessed for refusing fyrd service"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wergild ('man-price') was the legally established monetary compensation that a killer or their family had to pay to the victim's kin to prevent a blood feud.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "What title is traditionally given to King Alfred the Great's comprehensive law code enacted around 893?",
+      "options": [
+        "The Domesday Book",
+        "The Textus Roffensis",
+        "The Leges Henrici Primi",
+        "The Domboc (Doom Book)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Alfred's law code is known as the Domboc ('Book of Judgements' or Doom Book), which synthesized biblical laws with previous English codes.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "In Anglo-Saxon legal trials, what was 'compurgation'?",
+      "options": [
+        "Trial by physical combat between the claimant and defendant",
+        "A judicial verdict delivered exclusively by the shire sheriff",
+        "Wager of law, where a defendant cleared himself by swearing an oath supported by oath-helpers",
+        "A public auction of confiscated property to satisfy debt"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Compurgation was a standard procedure where a defendant produced a required number of oath-helpers to testify to the credibility of their oath of innocence.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "Which 12th-century manuscript compiled at Rochester Cathedral preserves the unique surviving copy of King Æthelberht's 7th-century law code?",
+      "options": [
+        "Cotton Vitellius A.xv",
+        "MS Bodley 180",
+        "The Exeter Book",
+        "Textus Roffensis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Textus Roffensis (the 'Rochester Book') is the only surviving manuscript containing the Law of Æthelberht and other early Kentish codes.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Textus_Roffensis"
+    },
+    {
+      "question": "In Anglo-Saxon criminal justice, what was the 'ordeal' (ordal)?",
+      "options": [
+        "A competitive tournament between champions to establish innocence",
+        "A secret judicial inquest conducted by crown prosecutors",
+        "An ecclesiastical appeal to divine judgment through physical tests like hot iron or water",
+        "A public debate held before the assembled witan"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Trial by ordeal was an appeal to God to reveal innocence or guilt through physical tests supervised by clergy, such as carrying a heated iron.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "Under Anglo-Saxon law, what term denoted monetary compensation paid directly to a victim or their kin for personal injury or loss?",
+      "options": [
+        "Bot",
+        "Wite",
+        "Wergild",
+        "Gavelkind"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bot was the legal compensation paid to an injured party or victim to repair the damage done and prevent violent retaliation.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "Under Anglo-Saxon law, what term denoted the judicial fine paid to the king or lord for breach of the public peace?",
+      "options": [
+        "Bot",
+        "Wite",
+        "Wergild",
+        "Fierdwite"
+      ],
+      "correct_option_id": 1,
+      "explanation": "While bot was paid to the injured party, a wite was a punitive fine paid to the king or presiding lord for violating public peace.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "What Anglo-Saxon legal concept denoted the special protection or peace surrounding an individual, their household, or the king's person?",
+      "options": [
+        "Fyrd",
+        "Hidage",
+        "Mund",
+        "Soke"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Mund (protection or peace) was a foundational legal concept; breach of an individual's mund required payment of compensation (mundbyrd).",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "Which 7th-century King of Wessex issued an important law code that Alfred the Great later incorporated into his Domboc?",
+      "options": [
+        "Cerdic of Wessex",
+        "Cynewulf of Wessex",
+        "Egbert of Wessex",
+        "Ine of Wessex"
+      ],
+      "correct_option_id": 3,
+      "explanation": "King Ine of Wessex issued an extensive law code c. 694, which survives because King Alfred appended it to his own late 9th-century law code.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    }
+  ]
+}

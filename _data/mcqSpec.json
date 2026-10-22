@@ -51,14 +51,19 @@
         {
           "n": 3,
           "title": "Prose and its writers",
-          "meta": "50 questions &middot; Alfred, the <i>Anglo-Saxon Chronicle</i>, &AElig;lfric, Wulfstan, the law codes",
+          "meta": "50 questions at each level &middot; Alfred, the <i>Anglo-Saxon Chronicle</i>, &AElig;lfric, Wulfstan, the law codes",
           "topics": [
             "prose"
           ],
           "levels": [
+            "easy",
             "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "titleCase": "Prose and Its Writers",
+          "focus": "prose and its writers",
+          "lede": "Fifty questions on Old English prose, at easy or medium level &mdash; Alfred and his translations, the <i>Anglo-Saxon Chronicle</i>, &AElig;lfric, Wulfstan and the law codes."
         },
         {
           "n": 4,

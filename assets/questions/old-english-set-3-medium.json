@@ -1,0 +1,679 @@
+{
+  "setId": "old-english-set-3",
+  "rev": 1,
+  "age": "old-english",
+  "ageName": "Old English",
+  "setNumber": 3,
+  "setName": "Prose and its writers",
+  "notes": "/notes/old-english/",
+  "notesTitle": "Old English — the full notes",
+  "topics": {
+    "alfred": "King Alfred & translations",
+    "chronicle": "The Anglo-Saxon Chronicle",
+    "aelfric": "Ælfric of Eynsham",
+    "wulfstan": "Wulfstan & homilies",
+    "laws": "Law codes & legal prose"
+  },
+  "topicRead": {
+    "alfred": "prose",
+    "chronicle": "prose",
+    "aelfric": "prose",
+    "wulfstan": "prose",
+    "laws": "prose"
+  },
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Finer detail: translation methods, manuscript recensions, stylistic features, biblical prefaces, theological arguments, and specific statutory provisions.",
+  "questions": [
+    {
+      "question": "Which Mercian scholar was summoned to Alfred's court and made Bishop of Worcester, translating Gregory's 'Dialogues' into Old English at Alfred's request?",
+      "options": [
+        "Wærferth",
+        "Wulfstan",
+        "Byrhtferth",
+        "Oda of Canterbury"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bishop Wærferth of Worcester was a prominent Mercian scholar recruited by Alfred who translated Gregory the Great's Dialogues into Old English.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What valuable pointer or bookmark, valued at 50 mancuses of gold, did Alfred send along with each copy of his Old English translation of the Pastoral Care?",
+      "options": [
+        "A reliquary box",
+        "A silver stylus",
+        "A pectoral cross",
+        "An æstel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In his Preface to the Pastoral Care, Alfred stated that he sent an æstel worth 50 mancuses with each copy of the book to every episcopal see.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+    },
+    {
+      "question": "Which manuscript in the Bodleian Library is the contemporary presentation copy of Alfred's Pastoral Care sent directly to Bishop Wærferth of Worcester?",
+      "options": [
+        "Cotton Tiberius A.vi",
+        "MS Junius 11",
+        "MS Hatton 20",
+        "MS Bodley 343"
+      ],
+      "correct_option_id": 2,
+      "explanation": "MS Hatton 20 is the extant copy of Alfred's translation of Pastoral Care specifically inscribed for and dispatched to Bishop Wærferth at Worcester.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+    },
+    {
+      "question": "What two famous northern voyagers' eyewitness geographical accounts were uniquely inserted into the Old English translation of Orosius's History?",
+      "options": [
+        "Hengest and Horsa",
+        "Cynewulf and Cyneheard",
+        "Scyld and Hrothgar",
+        "Ohthere and Wulfstan"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Old English Orosius contains unique intercalated accounts of voyages to the White Sea by Ohthere of Hålogaland and to the Baltic Sea by Wulfstan.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What verse adaptation of the poetic metres of Boethius's Consolation was created in Old English based on the prose translation?",
+      "options": [
+        "The Paris Psalter",
+        "The Old English Rune Poem",
+        "The Metres of Boethius",
+        "The Phoenix"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Metres of Boethius is an Old English poetic adaptation of the metrical sections of Boethius's Consolation, surviving in Cotton MS Otho A.vi.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+    },
+    {
+      "question": "In the Old English translation of Boethius's Consolation, how is the classical allegorical figure of Lady Philosophy personified and addressed?",
+      "options": [
+        "Anima and Ratio",
+        "Wisdom and Mind (Mod)",
+        "Lady Nature and Grace",
+        "Hæle and Dryhten"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Old English Boethius transforms the dialogue between Boethius and Lady Philosophy into a dialogue between Mod ('Mind') and Wisdom or Seo Halige Wisdom.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+    },
+    {
+      "question": "Which Frankish scholar from the abbey of Saint-Bertin was invited to Wessex by King Alfred to help lead his educational reforms?",
+      "options": [
+        "Grimbald of Saint-Bertin",
+        "John Scotus Eriugena",
+        "Alcuin of York",
+        "Hrabanus Maurus"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Grimbald was a learned monk of Saint-Bertin in Flanders who accepted Alfred's invitation to England and assisted with his translation program.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What Continental Saxon scholar did King Alfred appoint as abbot of his newly founded monastery at Athelney?",
+      "options": [
+        "John the Old Saxon",
+        "Felix of Crowland",
+        "Abbo of Fleury",
+        "Lantfred of Winchester"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John the Old Saxon was a continental scholar invited to Alfred's court whom the king appointed as abbot of the new monastery at Athelney.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "From which fortified marshland base in Somerset did King Alfred wage guerrilla warfare in early 878 after being driven out of Chippenham?",
+      "options": [
+        "Wareham",
+        "Reading",
+        "Exeter",
+        "Athelney"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Following Guthrum's surprise attack on Chippenham at Christmas 878, Alfred took refuge in the Somerset marshes at Athelney, where he established a fort.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "At which decisive battle in May 878 did Alfred defeat Guthrum's Viking army, paving the way for the conversion of the Danish king?",
+      "options": [
+        "Battle of Ashdown",
+        "Battle of Ellendun",
+        "Battle of Edington",
+        "Battle of Merton"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Alfred's victory at the Battle of Edington in Wiltshire in 878 led to the surrender and baptism of Guthrum and the cessation of Danish conquests in Wessex.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "Which dialect of Old English served as the primary administrative and literary language of the Alfredian court and translations?",
+      "options": [
+        "Early West Saxon",
+        "Northumbrian",
+        "Kentish",
+        "Mercian"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The texts translated and issued during Alfred's reign were written in Early West Saxon, laying the foundation for standard Old English prose.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Old_English"
+    },
+    {
+      "question": "Which major prose translation once attributed to King Alfred is now considered by modern scholars to be an independent Mercian translation?",
+      "options": [
+        "Gregory's Pastoral Care",
+        "Boethius's Consolation of Philosophy",
+        "Augustine's Soliloquies",
+        "Bede's Ecclesiastical History of the English People"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Linguistic analysis has demonstrated that the Old English translation of Bede's Ecclesiastical History is in a Mercian dialect and was not translated by Alfred.",
+      "topic": "alfred",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What is the modern scholarly term for the initial core compilation of the Anglo-Saxon Chronicle created in Wessex c. 890–893?",
+      "options": [
+        "The Common Stock",
+        "The West Saxon Regnal List",
+        "The Royal Frankish Annals",
+        "The Liber Vitae"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Scholars refer to the lost archetype and shared early material circulated during Alfred's reign as the Common Stock of the Chronicle.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which famous annal in the Anglo-Saxon Chronicle, dated 755, breaks the normal annalistic format to provide an extended, dramatic narrative of dynastic feuding?",
+      "options": [
+        "The landing of Hengest and Horsa",
+        "The martyrdom of King Edmund",
+        "The story of Cynewulf and Cyneheard",
+        "The baptism of King Guthrum"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The 755 annal detailing the death of King Cynewulf of Wessex at the hands of the ætheling Cyneheard is a vivid, epic narrative embedded in the Chronicle.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which manuscript recension of the Chronicle (British Library Cotton Domitian A.viii, MS F) presents each annal in both Old English and Latin?",
+      "options": [
+        "The Worcester Chronicle",
+        "The Canterbury Bilingual Epitome",
+        "The Abingdon Chronicle I",
+        "The Peterborough Chronicle"
+      ],
+      "correct_option_id": 1,
+      "explanation": "MS F, compiled at Christ Church, Canterbury around 1100, is known as the Bilingual Canterbury Epitome because it translates each annal into Latin.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What discrete historical text covering the years 902–924 was inserted into the Abingdon Chronicle (MS C) to record the military exploits of Æthelflæd, Lady of the Mercians?",
+      "options": [
+        "The Northumbrian Priors",
+        "The Annals of St Neots",
+        "The Winchester Roll",
+        "The Mercian Register"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Mercian Register is an independent set of annals recording Mercian perspectives and Æthelflæd's victories that was incorporated into MS B and MS C.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What catastrophic event in 1731 severely burned several Cottonian manuscripts of the Anglo-Saxon Chronicle and almost completely destroyed MS G?",
+      "options": [
+        "The Great Fire of London",
+        "The Ashburnham House fire",
+        "The Dissolution of the Monasteries",
+        "The Viking sack of Peterborough Abbey"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1731, a disastrous fire broke out at Ashburnham House in Westminster, burning many irreplaceable Cottonian manuscripts including MS G of the Chronicle.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which late 10th-century Anglo-Saxon ealdorman translated the Anglo-Saxon Chronicle into elaborate Latin prose for his continental cousin Matilda?",
+      "options": [
+        "Byrhtnoth",
+        "Wulfstan of York",
+        "Ælfric of Eynsham",
+        "Æthelweard"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ealdorman Æthelweard wrote the Chronicon Æthelweardi, a Latin translation of a lost version of the Anglo-Saxon Chronicle, in the late 10th century.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which northern recension of the Chronicle (Cotton Tiberius B.iv, MS D) contains extensive records on Scottish and northern English affairs?",
+      "options": [
+        "The Parker Chronicle",
+        "The Worcester Chronicle",
+        "The Abingdon Chronicle I",
+        "The Laud Chronicle"
+      ],
+      "correct_option_id": 1,
+      "explanation": "MS D, often called the Worcester Chronicle, incorporates Northumbrian and Scottish annals and was associated with the dual bishopric of York and Worcester.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What clerical error occurred in the archetype of the Common Stock that caused a two-year chronological dislocation for the annals between 756 and 845?",
+      "options": [
+        "The compiler shifted from the Christian Era to imperial Roman dates",
+        "King Alfred intentionally suppressed two years of Mercian dominance",
+        "Two blank years were skipped by an early scribe during transcription",
+        "A scribe confused the Julian calendar with the Gregorian reform"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A copyist's error in the ancestral archetype missed two years, causing all dates in the Common Stock between 756 and 845 to be dated two years too early.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "What Old English poem is preserved in the Anglo-Saxon Chronicle under the annal for 973 celebrating the formal coronation of King Edgar at Bath?",
+      "options": [
+        "The Coronation of Edgar",
+        "The Death of Edward",
+        "The Battle of Maldon",
+        "The Capture of the Five Boroughs"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Coronation of Edgar is a panegyric poem entered in the Chronicle under 973 recording Edgar's imperial consecration at Bath.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+    },
+    {
+      "question": "Which 17th-century Archbishop of Canterbury acquired MS E of the Chronicle (Bodleian Library Laud Misc. 636) and donated it to Oxford University?",
+      "options": [
+        "Matthew Parker",
+        "William Sancroft",
+        "William Laud",
+        "Gilbert Sheldon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "MS E is also called the Laud Chronicle because it was once owned by Archbishop William Laud, who presented it to the Bodleian Library in 1639.",
+      "topic": "chronicle",
+      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
+    },
+    {
+      "question": "What distinctive literary style did Ælfric develop in his Lives of Saints and later homilies, featuring rhythmic clauses and sound-matching?",
+      "options": [
+        "Alliterative prose",
+        "Accentual-syllabic rhymed couplets",
+        "Unrhymed dactylic hexameter",
+        "Iambic heptameter prose"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ælfric developed a sophisticated alliterative prose style in which rhythmic clauses were tied together by alliteration, bridging prose and traditional verse.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which older anonymous collection of Old English sermons did Ælfric seek to supplant because he considered its theology superstitious and apocryphal?",
+      "options": [
+        "The Vercelli Homilies",
+        "The Blickling Homilies",
+        "The Lambeth Homilies",
+        "The Peterborough Homilies"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Scholars note that Ælfric intended his Catholic Homilies to provide orthodox patristic doctrine in place of older vernacular homilies like the Blickling collection.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which late antique Roman grammarians provided the primary Latin models for Ælfric's Old English 'Grammar' and 'Glossary'?",
+      "options": [
+        "Quintilian and Cicero",
+        "Aristotle and Porphyry",
+        "Priscian and Donatus",
+        "Isidore of Seville and Bede"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ælfric compiled his Grammar based on Priscian's Institutiones grammaticae and Donatus's Ars minor to instruct Anglo-Saxon youths in Latin fundamentals.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "In Ælfric's Colloquy, which working man defends his profession as the most essential to society because without him, nobody has bread?",
+      "options": [
+        "The Plowman",
+        "The Hunter",
+        "The Fisherman",
+        "The Baker"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the Colloquy, the baker asserts his necessity by pointing out that without his craft, people cannot live on raw grain alone and have no bread.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "In Ælfric's Colloquy, which laborer opens the conversation by describing his grueling toil plowing a full acre or more in the winter cold?",
+      "options": [
+        "The Shepherd",
+        "The Plowman",
+        "The Shoemaker",
+        "The Fowler"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Colloquy begins with the plowman, who vividly recounts rising at dawn in bitter frost to yoke his oxen and plow a full field.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What pastoral letter did Ælfric compose around 998 for Bishop Wulfsige of Sherborne to regulate clerical life and duties in that diocese?",
+      "options": [
+        "The Pastoral Care of Gregory",
+        "The Canons of Ælfric",
+        "The Institutes of Polity",
+        "The Laws of Cnut"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ælfric wrote his pastoral letter or Canons for Bishop Wulfsige of Sherborne to enforce monastic reform and standards of celibacy among diocesan clergy.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What pastoral concern did Ælfric express in his Preface to Genesis addressed to his patron Ealdorman Æthelweard?",
+      "options": [
+        "That vernacular scripture would cause lay rebellion against the English monarchy",
+        "That translating Hebrew names would summon ancient demonic spirits",
+        "That Latin grammar was inherently incompatible with Old English speech",
+        "That uneducated readers might mistakenly think ancient patriarchal customs like polygamy are permitted for Christians"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ælfric warned in his Preface to Genesis that simple people might misunderstand Old Testament practices, such as patriarchs taking multiple wives, and believe them acceptable today.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which student and follower of Ælfric expanded his Colloquy with additional Latin vocabulary and classroom dialogues?",
+      "options": [
+        "Ælfric Bata",
+        "Byrhtferth of Ramsey",
+        "Wulfstan of Winchester",
+        "Lantfred of Fleury"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ælfric Bata, a pupil of Ælfric of Eynsham, later revised and expanded his master's Colloquy for schoolroom use in the 11th century.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "What scientific work on the calendar, astronomy, and computation did Ælfric translate and adapt into Old English from Bede?",
+      "options": [
+        "De Rerum Natura",
+        "De Temporibus Anni",
+        "Computus Saxonicus",
+        "Hexameron"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ælfric wrote De Temporibus Anni ('On the Seasons of the Year'), an Old English treatise on astronomy, the solar cycle, and the calendar based on Bede.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "To which Archbishop of Canterbury did Ælfric dedicate both series of his Catholic Homilies in the early 990s?",
+      "options": [
+        "Sigeric",
+        "Dunstan",
+        "Ælfheah",
+        "Oda"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ælfric formally dedicated the First and Second Series of his Catholic Homilies to Archbishop Sigeric of Canterbury, asking him to review and correct them.",
+      "topic": "aelfric",
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+    },
+    {
+      "question": "Which southern bishopric did Wulfstan hold simultaneously in plurality with the archdiocese of York between 1002 and 1016?",
+      "options": [
+        "Diocese of London",
+        "Diocese of Worcester",
+        "Diocese of Rochester",
+        "Diocese of Sherborne"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wulfstan held the bishopric of Worcester alongside the archbishopric of York from 1002 until 1016, following a tradition of holding both northern and southern sees.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What is the defining stylistic characteristic of Wulfstan's rhythmic Old English prose sermons?",
+      "options": [
+        "Strings of syntactically independent two-stress phrases bound by alliteration and parallelism",
+        "Unstressed quantitative dactylic feet modeled directly on classical Latin verse",
+        "Fourteen-line sonnet-like prose divisions ending in rhymed couplets",
+        "Extensive scholastic citations of Aristotle with unglossed Greek loanwords"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wulfstan's prose is characterized by rapid, highly rhythmic two-stress phrases reinforced by alliteration, rhyme, and repetitive intensifiers.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What emergency national penitential ordinance did Wulfstan draft for King Æthelred in 1009 during the devastating raids of Thorkell the Tall?",
+      "options": [
+        "An immediate treaty ceding the Danelaw to Danish rule without tribute",
+        "A royal proclamation abolishing all Anglo-Saxon church tithes",
+        "An edict requiring three days of national fasting on bread and water and daily attendance at Mass",
+        "An order executing all Danish hostages held across the shires"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 1009, Wulfstan drafted Æthelred's national penitential decree commanding all people to fast for three days, walk barefoot to church, and pray for divine aid.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "In his 'Institutes of Polity', into what three functional orders or estates does Wulfstan describe the Christian commonwealth as being organized?",
+      "options": [
+        "The crown, the parliament, and the common guilds",
+        "Those who pray, those who fight, and those who work (oratores, bellatores, laboratores)",
+        "Bishops, abbots, and diocesan parish priests",
+        "Kings, aldermen, and foreign merchants"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wulfstan describes the three pillars supporting the throne as oratores (bedemen), bellatores (werymen), and laboratores (weorcmen).",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What extensive canon law collection compiled by Wulfstan was formerly known to scholars as the 'Excerptiones pseudo-Ecgberhti'?",
+      "options": [
+        "The Parker Canonical Register",
+        "The Textus Roffensis",
+        "Wulfstan's Canon Law Collection (Collectio canonum Wigorniensis)",
+        "The Quadripartitus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wulfstan assembled a major legal commonplace book of Carolingian and insular conciliar canons, now edited as Wulfstan's Canon Law Collection.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What Old Norse loanword for 'law' entered Old English through Anglo-Danish contact and was frequently employed in Wulfstan's writings?",
+      "options": [
+        "Bot",
+        "Wite",
+        "Mund",
+        "Lagu"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Old Norse word 'laga' replaced earlier Old English terms like 'æw' and became the standard word 'lagu' (modern English 'law') in Wulfstan's texts.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What handbook of pastoral and clerical regulation did Wulfstan compile c. 1005–1008 setting standards for parish clergy?",
+      "options": [
+        "The Regula Pastoralis",
+        "The Benedictine Rule",
+        "The Canons of Edgar",
+        "The Canons of Theodore"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Canons of Edgar is an Old English legal and pastoral tract written by Wulfstan instructing parish priests in the duties and discipline of their office.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/List_of_works_by_Wulfstan_of_York"
+    },
+    {
+      "question": "At which royal council held in 1008 did Wulfstan draft and promulgate an extensive law code uniting ecclesiastical and national reform for King Æthelred?",
+      "options": [
+        "The Synod of Whitby",
+        "The Council of Hatfield",
+        "The Council of Clofesho",
+        "The Council of Enham (V and VI Æthelred)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "At the Council of Enham on Pentecost 1008, Wulfstan drew up the comprehensive legal codes known as V and VI Æthelred for the defense and moral renewal of the realm.",
+      "topic": "wulfstan",
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+    },
+    {
+      "question": "What extensive biblical text did King Alfred place as a theological prologue before his Domboc, presenting English royal law as part of salvation history?",
+      "options": [
+        "The Ten Commandments and Mosaic Law from the Book of Exodus",
+        "The Sermon on the Mount from the Gospel of Matthew",
+        "The Book of Revelation's vision of the New Jerusalem",
+        "The Wisdom Literature of King Solomon"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Alfred prefaced his Domboc with a translation of the Decalogue and chapters from Exodus to show that English law stood in unbroken continuity with divine law.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "In the Law of Æthelberht of Kent, which institution was assigned the highest compensation multiplier (twelve-fold) for stolen property?",
+      "options": [
+        "The King and royal halls",
+        "The Eorl and nobility",
+        "The Archbishop alone",
+        "The Church (God and Church property)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The very first clause of Æthelberht's code specifies that property stolen from God and the Church must be compensated twelve-fold, exceeding the nine-fold fine for the king.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Law_of_%C3%86thelberht"
+    },
+    {
+      "question": "In Anglo-Saxon social and legal hierarchy, what was the standard wergild of a free peasant or commoner (ceorl) in West Saxon law?",
+      "options": [
+        "1200 shillings",
+        "200 shillings",
+        "600 shillings",
+        "50 shillings"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In West Saxon law, a ceorl was classified as a twyhynde man, meaning his wergild was assessed at 200 shillings.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "In Anglo-Saxon social and legal hierarchy, what was the standard wergild of a noble or landed thegn in West Saxon law?",
+      "options": [
+        "200 shillings",
+        "600 shillings",
+        "1200 shillings",
+        "2400 shillings"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A thegn was classified as a twelfhynde man, meaning his wergild was assessed at 1200 shillings, six times that of a common freeman.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "What formal peace treaty established the historical boundary between Anglo-Saxon territory and the Danelaw along the River Thames, River Lea, and Watling Street?",
+      "options": [
+        "The Treaty of Wedmore",
+        "The Treaty of Alfred and Guthrum",
+        "The Peace of Edington",
+        "The Wantage Code"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Treaty of Alfred and Guthrum (c. 886) formally defined the geographical frontier dividing Alfred's kingdom from the Scandinavian-ruled Danelaw.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+    },
+    {
+      "question": "What was 'bookland' (bocland) in Anglo-Saxon property law?",
+      "options": [
+        "Land held strictly according to unwritten local peasant custom and folk-right",
+        "Land temporarily leased for a fixed term in exchange for a cash loan",
+        "Common grazing territory owned collectively by all members of a hundred",
+        "Land granted by written royal charter with perpetual tenure and exemption from customary secular dues"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Bookland was land held by a royal charter (boc) that conferred inheritable ownership and exemption from most royal obligations except the three common burdens.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "What was the 'friborh' (frankpledge) system in late Anglo-Saxon community law enforcement?",
+      "options": [
+        "A sworn order of knights patrolling royal highways under crown commission",
+        "An association of ten to twelve free men in a tithing pledged to mutual responsibility for reporting crimes and producing suspects",
+        "A monthly court held exclusively for foreign merchants operating in boroughs",
+        "A municipal council of ealdormen supervising ecclesiastical property"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Under friborh, all free men were organized into tithings of 10 or 12 members who were mutually responsible for ensuring each other's lawful appearance in court.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "Which late 10th-century law code of King Æthelred, issued at Wantage for the Danelaw, describes a committee of twelve leading thegns presenting accusations?",
+      "options": [
+        "The Code of Woodstock",
+        "The Enham Assembly Code",
+        "The Wantage Code (III Æthelred)",
+        "The Edict of London"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Wantage Code (c. 997) specifies that the twelve leading thegns in each wapentake shall swear an oath on relics not to falsely accuse anyone, an early forerunner of the grand jury.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "What legal privilege granted by royal charter gave an Anglo-Saxon lord the right of summary trial and execution over a thief caught red-handed on his estate?",
+      "options": [
+        "Infangentheof",
+        "Sake and soke",
+        "Toll and team",
+        "Hamsocn"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Infangentheof was the franchisal right of a lord to execute summary justice and hang thieves apprehended with stolen goods within his own jurisdiction.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    },
+    {
+      "question": "In Anglo-Saxon criminal law, what serious crime involved assaulting someone within their own house, violating the domestic peace of their dwelling?",
+      "options": [
+        "Forsteal",
+        "Mundbryce",
+        "Fyrdwite",
+        "Hamsocn"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hamsocn (or house-breaking assault) was a grave crime reserved to royal or high franchisal jurisdiction because it breached the sacred peace of a person's home.",
+      "topic": "laws",
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+    }
+  ]
+}
