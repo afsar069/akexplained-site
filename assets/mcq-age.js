@@ -63,6 +63,8 @@
       rev: parseInt(row.getAttribute('data-rev'), 10) || 0,
       level: '',
       more: '',
+      base: '',
+      link: null,
       live: false,
       answered: 0,
       wrong: 0,
@@ -122,7 +124,9 @@
 
       var a = document.createElement('a');
       a.className = 'agehub-go' + (set.open ? ' is-solid' : '');
-      a.href = '/quizzes/mcq/' + AGE + '/' + set.id.replace(AGE + '-', '') + '/';
+      set.base = '/quizzes/mcq/' + AGE + '/' + set.id.replace(AGE + '-', '') + '/';
+      set.link = a;
+      a.href = set.base;
       a.textContent = set.done ? 'Do it again' : set.open ? 'Carry on' : 'Start';
       slot.parentNode.replaceChild(a, slot);
     });
@@ -268,19 +272,25 @@
 
   /* ---------------------------------------------------------
      5. CHHANNA — topic aur level
-     Teen level hain, Easy, Medium aur Hard, aur teeno alag-alag
-     on/off hote hain. Aakhri chalu level band nahi hota, warna
-     list khali ho jaati aur wajah dikhti nahi.
+     Level ka chunav ek hi hota hai: All, Easy, Medium ya Hard.
+     Test bhi ek waqt me ek hi level ka hota hai, isliye teeno ek saath
+     "on" dikhna bhramit karta tha. All matlab koi chhanna nahi.
+
+     Level chuna ho to set ka link ?level= ke saath jata hai, taaki set
+     usi level par khule. Par jis set ka attempt is browser me rakha hai
+     uska link seedha rehta hai — wo apne rakhe level par hi khulta hai,
+     warna naya level chunne par purana result dab jata.
      --------------------------------------------------------- */
-  var ALL_LEVELS = ['easy', 'medium', 'hard'];
-  var state = { topic: 'all', levels: ALL_LEVELS.slice() };
+  var LEVEL_CHOICES = ['all', 'easy', 'medium', 'hard'];
+  var state = { topic: 'all', level: 'all' };
+  var renderBuild = null;     /* wireBuild() yahan apna render rakhta hai */
 
   function readState() {
     var saved = null;
     try { saved = JSON.parse(localStorage.getItem(FILTER_KEY) || 'null'); } catch (e) {}
     if (saved && typeof saved === 'object') {
       if (typeof saved.topic === 'string') state.topic = saved.topic;
-      if (Array.isArray(saved.levels) && saved.levels.length) state.levels = saved.levels;
+      if (LEVEL_CHOICES.indexOf(saved.level) > -1) state.level = saved.level;
     }
 
     /* URL ka hukum chalega — bhej kar share kiya gaya link waisa hi khulna chahiye. */
@@ -289,9 +299,9 @@
     var l = q.get('level');
     if (t) state.topic = t;
     if (l) {
-      var asked = l.split(',').map(function (x) { return x.trim().toLowerCase(); })
-        .filter(function (x) { return ALL_LEVELS.indexOf(x) > -1; });
-      if (asked.length) state.levels = asked;
+      /* Purane link me ?level=easy,medium bhi ho sakta hai — wo ek nahi, to All. */
+      l = l.trim().toLowerCase();
+      state.level = LEVEL_CHOICES.indexOf(l) > -1 ? l : 'all';
     }
   }
 
@@ -304,7 +314,7 @@
     if (!window.history || !history.replaceState) return;
     var q = new URLSearchParams(location.search);
     state.topic === 'all' ? q.delete('topic') : q.set('topic', state.topic);
-    state.levels.length === ALL_LEVELS.length ? q.delete('level') : q.set('level', state.levels.join(','));
+    state.level === 'all' ? q.delete('level') : q.set('level', state.level);
     /* Apna banaya hua set bhi link me jaye, taaki bheja ja sake.
        Build card page par na ho to build.minutes abhi 0 hai — tab kuch nahi. */
     if (build.minutes > 0) {
@@ -322,14 +332,14 @@
     if (topicSel) topicSel.value = state.topic;
 
     $$('.agehub-level', page).forEach(function (b) {
-      var on = state.levels.indexOf(b.getAttribute('data-level')) > -1;
+      var on = b.getAttribute('data-level') === state.level;
       b.setAttribute('aria-pressed', on ? 'true' : 'false');
     });
 
     var shown = 0;
     sets.forEach(function (set) {
       var okTopic = state.topic === 'all' || set.topics.indexOf(state.topic) > -1;
-      var okLevel = set.levels.some(function (l) { return state.levels.indexOf(l) > -1; });
+      var okLevel = state.level === 'all' || set.levels.indexOf(state.level) > -1;
       var on = okTopic && okLevel;
       set.row.classList.toggle('is-hidden', !on);
       if (on) shown++;
@@ -347,7 +357,13 @@
     }
 
     var clear = $('#ageClear');
-    if (clear) clear.hidden = state.topic === 'all' && state.levels.length === ALL_LEVELS.length;
+    if (clear) clear.hidden = state.topic === 'all' && state.level === 'all';
+
+    /* Set ke links aur "Apna set banao" ka Start chune hue level ke saath. */
+    sets.forEach(function (set) {
+      if (set.link) set.link.href = set.base + levelQuery(set, '?');
+    });
+    if (renderBuild) renderBuild();
 
     saveState();
     stampUrl();
@@ -364,14 +380,7 @@
 
     $$('.agehub-level', page).forEach(function (b) {
       b.addEventListener('click', function () {
-        var level = b.getAttribute('data-level');
-        var at = state.levels.indexOf(level);
-        if (at > -1) {
-          if (state.levels.length === 1) return; /* aakhri level band nahi hota */
-          state.levels.splice(at, 1);
-        } else {
-          state.levels.push(level);
-        }
+        state.level = b.getAttribute('data-level');
         apply();
       });
     });
@@ -380,7 +389,7 @@
     if (clear) {
       clear.addEventListener('click', function () {
         state.topic = 'all';
-        state.levels = ALL_LEVELS.slice();
+        state.level = 'all';
         apply();
         if (topicSel) topicSel.focus();
       });
@@ -405,6 +414,14 @@
   var MINUTES_CAP = 100;
 
   var build = { count: COUNT_DEFAULT, rate: RATE_DEFAULT, minutes: 0 };
+
+  /* Link me jodne ke liye "?level=easy" (ya "&level=easy"); kuch nahi jodna ho to khali.
+     Tab nahi jodte jab level chuna na ho, set me wo level na ho, ya is browser me
+     us set ka attempt rakha ho (set.level tabhi bharta hai). */
+  function levelQuery(set, glue) {
+    if (state.level === 'all' || !set || set.level || set.levels.indexOf(state.level) < 0) return '';
+    return glue + 'level=' + state.level;
+  }
 
   function clamp(n, lo, hi) { return n < lo ? lo : n > hi ? hi : n; }
 
@@ -493,7 +510,7 @@
       var effMin = clamp(Math.round(eff * build.rate / 60), minMinutes(eff), maxMinutes(eff));
       if (startBtn && startBtn.tagName === 'A' && live) {
         startBtn.href = '/quizzes/mcq/' + AGE + '/' + live.id.replace(AGE + '-', '') +
-          '/?n=' + eff + '&t=' + effMin;
+          '/?n=' + eff + '&t=' + effMin + levelQuery(live, '&');
       }
       if (poolNote) {
         var over = pool > 0 && build.count > pool;
@@ -549,6 +566,7 @@
       startBtn = a;
     }
 
+    renderBuild = render;
     render();
   }
 
