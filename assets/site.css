@@ -825,32 +825,30 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-bar i.is-done{background:var(--mcq-green)}
 .mcq-bar i.is-weak{background:var(--mcq-orange)}
 
-/* ---------- top row: carry on + just start ----------
-   Two strips of one family. "Not Sure Where To Begin?" is teal; "Carry On
-   Where You Left" is the same strip in a second colour. Carry On shows only
-   when this browser has history. Until then the start strip alone fills the
-   row; with both, they sit side by side (stacked on a narrow screen). */
+/* ---------- top: carry on + just start ----------
+   Two strips of one family, one above the other and close together, on a
+   phone and on a computer alike. "Not Sure Where To Begin?" is teal. "Carry On
+   Where You Left" is the same strip in the golden yellow of the logo, kept
+   thinner. It shows only when this browser has history; until then the start
+   strip stands alone. */
 .mcq-body [hidden]{display:none !important}
-.mcq-top{
-  display:grid;gap:16px;align-items:stretch;margin-bottom:30px;
-  grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));
-}
+.mcq-top{display:grid;gap:10px;margin-bottom:26px}
 .mcq-start,.mcq-carry{
-  --s-bg:var(--mcq-teal-deep);--s-hover:#0C2523;--s-ic:var(--mcq-teal);
-  --s-sub:#B8CFCC;--s-go:var(--mcq-teal-deep);
-  background:var(--s-bg);border-radius:16px;color:#fff;text-decoration:none;
+  --s-bg:var(--mcq-teal-deep);--s-hover:#0C2523;--s-ic:var(--mcq-teal);--s-icfg:#fff;
+  --s-fg:#fff;--s-sub:#B8CFCC;--s-go:var(--mcq-teal-deep);
+  background:var(--s-bg);border-radius:16px;color:var(--s-fg);text-decoration:none;
 }
 .mcq-start{display:flex;align-items:center;gap:16px;padding:18px 22px}
 .mcq-start:hover{background:var(--s-hover)}
 .mcq-start-ic{
   width:46px;height:46px;border-radius:12px;flex:none;
   display:flex;align-items:center;justify-content:center;
-  background:var(--s-ic);color:#fff;
+  background:var(--s-ic);color:var(--s-icfg);
 }
 .mcq-start-txt{flex:1 1 0;min-width:0}
 .mcq-start-txt strong{
   display:block;font-family:Literata,Georgia,serif;font-size:19px;line-height:1.25;
-  font-weight:600;color:#fff;margin-bottom:2px;
+  font-weight:600;color:var(--s-fg);margin-bottom:2px;
 }
 .mcq-start-txt span{display:block;font-size:14.5px;line-height:1.4;color:var(--s-sub)}
 .mcq-start-go{
@@ -864,31 +862,39 @@ summary.ptbtn::-webkit-details-marker{display:none}
   background:rgba(255,255,255,.14);color:#fff;font-weight:600;
 }
 
-/* Carry On: the same strip in a warm brown, with one row per thing to resume */
+/* Carry On: logo yellow, dark words. A heading line, then one thin row for each
+   thing to pick up again (side by side when the strip is wide). */
 .mcq-carry{
-  --s-bg:#4B2A12;--s-hover:#3B210E;--s-ic:#C2410C;--s-sub:#E6CDB4;--s-go:#4B2A12;
-  padding:15px 20px 8px;
+  --s-bg:#FFC641;--s-fg:#16304A;--s-sub:#5A4208;
+  --s-ic:var(--mcq-teal-deep);--s-icfg:#FFC641;
+  padding:10px 18px 2px;
 }
+.mcq-carry-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 14px}
 .mcq-carry-head h2{
-  font-family:Literata,Georgia,serif;font-size:17px;line-height:1.25;
-  font-weight:600;color:#fff;margin:0 0 1px;
+  font-family:Literata,Georgia,serif;font-size:16px;line-height:1.3;
+  font-weight:600;color:var(--s-fg);margin:0;
 }
-.mcq-carry-head p{margin:0;font-size:12.5px;line-height:1.4;color:var(--s-sub);opacity:.9}
-.mcq-carry-rows{margin-top:10px}
+.mcq-carry-head p{margin:0;max-width:none;font-size:12.5px;line-height:1.4;color:var(--s-sub)}
+.mcq-carry-rows{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));
+  gap:0 24px;margin-top:6px;
+}
 .mcq-carry-row{
-  display:flex;align-items:center;gap:14px;padding:10px 0;
-  border-top:1px solid rgba(255,255,255,.14);color:#fff;text-decoration:none;
+  display:flex;align-items:center;gap:12px;padding:8px 0;
+  border-top:1px solid rgba(22,48,74,.18);color:var(--s-fg);text-decoration:none;
 }
-.mcq-carry-row .mcq-start-ic{width:40px;height:40px;border-radius:11px}
-.mcq-carry-row .mcq-start-txt strong{font-size:16.5px}
-.mcq-carry-row .mcq-start-txt span{font-size:13.5px}
-.mcq-carry-row .mcq-start-go{padding:9px 18px;font-size:14px}
-.mcq-carry-row:hover .mcq-start-go{background:#FBEFE3}
+.mcq-carry-row .mcq-start-ic{width:34px;height:34px;border-radius:10px}
+.mcq-carry-row .mcq-start-txt strong{font-size:15.5px;margin-bottom:0}
+.mcq-carry-row .mcq-start-txt span{font-size:13px}
+.mcq-carry-row .mcq-start-go{
+  background:var(--mcq-teal-deep);color:#fff;padding:8px 16px;font-size:13.5px;
+}
+.mcq-carry-row:hover .mcq-start-go{background:#0C2523}
 .mcq-carry-bar{
-  display:block;height:4px;margin-top:7px;border-radius:999px;overflow:hidden;
-  background:rgba(255,255,255,.18);
+  display:block;height:4px;margin-top:5px;border-radius:999px;overflow:hidden;
+  background:rgba(22,48,74,.18);
 }
-.mcq-carry-bar i{display:block;height:100%;background:#F4B27A;border-radius:999px}
+.mcq-carry-bar i{display:block;height:100%;background:var(--mcq-teal-deep);border-radius:999px}
 
 /* ---------- age grid ---------- */
 .mcq-agegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
@@ -1011,11 +1017,13 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-start,.mcq-build{padding:16px 18px;gap:14px}
   .mcq-build .go{width:100%;text-align:center}
 }
-/* On a phone the button drops under the words and spans the strip */
+/* On a phone the start button drops under the words and spans the strip.
+   The Carry On rows stay thin: a small button beside the words. */
 @media (max-width:560px){
-  .mcq-start,.mcq-carry-row{flex-wrap:wrap}
+  .mcq-start{flex-wrap:wrap}
   .mcq-start-go{width:100%;text-align:center}
-  .mcq-carry{padding:14px 16px 6px}
+  .mcq-carry{padding:10px 14px 2px}
+  .mcq-carry-row .mcq-start-go{width:auto;padding:8px 13px;font-size:13px}
 }
 
 /* ---------- print ---------- */
