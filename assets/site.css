@@ -1056,12 +1056,41 @@ summary.ptbtn::-webkit-details-marker{display:none}
    (.pagehead-practice, .mcq-modes, .mcq-exams, .mcq-top). Only what is
    new here starts with .dq-.
 
-   Header picture: set --head-pic on .pagehead-daily (see below) when the
-   painted header for this page is ready. Until then it uses the same
-   painting as the other practice pages.
+   Header picture: /assets/daily-head.webp, set below with --head-pic (the
+   other practice pages keep the painting from .pagehead-practice).
    ========================================================= */
 
-/* ---------- head: bigger two-tone title, as in the design ---------- */
+/* ---------- head: the painted picture, then the two-tone title ----------
+   The picture is wide and its left side is plain paper for the words, so it fits
+   a head about 1260px wide or more (a screen from 1536px up, with the menu open
+   beside it). On a narrower head the words would run into the quote, so the
+   quote is faded out and the girl and her books stay on the right. Under about
+   930px (a small laptop or a tablet) the picture is kept lighter, and on a phone
+   it sits faintly behind the text. */
+.pagehead-daily{--head-pic:url("/assets/daily-head.webp")}
+.pagehead-daily::before{
+  opacity:1;background-size:auto 100%;background-position:right bottom;
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 30%);
+  mask-image:linear-gradient(to right,transparent 0,#000 30%);
+}
+@media (max-width:1535px){
+  .pagehead-daily::before{
+    -webkit-mask-image:linear-gradient(to right,transparent calc(100% - 560px),#000 calc(100% - 430px));
+    mask-image:linear-gradient(to right,transparent calc(100% - 560px),#000 calc(100% - 430px));
+  }
+}
+@media (max-width:1199px){
+  .pagehead-daily::before{
+    opacity:.6;
+    -webkit-mask-image:linear-gradient(to right,transparent 0,transparent 22%,#000 66%);
+    mask-image:linear-gradient(to right,transparent 0,transparent 22%,#000 66%);
+  }
+}
+@media (max-width:760px){
+  .pagehead-daily::before{
+    opacity:.32;-webkit-mask-image:none;mask-image:none;
+  }
+}
 .pagehead-daily .eyebrow{color:var(--body);letter-spacing:.24em}
 .pagehead-daily h1{
   font-size:clamp(2.5rem,6.2vw,4.3rem);line-height:1.04;font-weight:700;
