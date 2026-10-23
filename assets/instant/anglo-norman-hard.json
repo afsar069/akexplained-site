@@ -6,7 +6,7 @@
  "questions": [
   {
    "id": "an-h-01",
-   "question": "Who was the Anglo-Norman noblewoman who commissioned Geoffrei Gaimar around 1136 to compose 'L Estoire des Engleis'?",
+   "question": "Who was the Anglo-Norman noblewoman who commissioned Geoffrei Gaimar around 1136 to compose 'L'Estoire des Engleis'?",
    "options": [
     "Constance FitzGilbert",
     "Empress Matilda",
@@ -74,7 +74,7 @@
     "De Anima"
    ],
    "correct_option_id": 3,
-   "explanation": "Sawles Warde is an Early Middle English homiletic adaptation of parts of Hugh of Saint Victor s treatise De Anima."
+   "explanation": "Sawles Warde is an Early Middle English homiletic adaptation of parts of Hugh of Saint Victor's treatise De Anima."
   },
   {
    "id": "an-h-07",
@@ -98,7 +98,7 @@
     "Folly"
    ],
    "correct_option_id": 2,
-   "explanation": "In Sawles Warde, Will personifies the appetites and passions that constantly threaten to overpower Wit s rational governance."
+   "explanation": "In Sawles Warde, Will personifies the appetites and passions that constantly threaten to overpower Wit's rational governance."
   },
   {
    "id": "an-h-09",
@@ -214,7 +214,7 @@
    "options": [
     "A Shepherd fighting a wolf",
     "A King wooing an imprisoned lady",
-    "A Knight storming a dragon s cave",
+    "A Knight storming a dragon's cave",
     "A Merchant seeking a pearl"
    ],
    "correct_option_id": 1,
@@ -242,7 +242,7 @@
     "Robert Mannyng of Brunne"
    ],
    "correct_option_id": 3,
-   "explanation": "Robert Mannyng completed his English Chronicle of England in 1338, adapting Langtoft s Anglo-Norman chronicle for the second part."
+   "explanation": "Robert Mannyng completed his English Chronicle of England in 1338, adapting Langtoft's Anglo-Norman chronicle for the second part."
   },
   {
    "id": "an-h-21",
@@ -302,7 +302,7 @@
     "Aeneas"
    ],
    "correct_option_id": 1,
-   "explanation": "Geoffrey traced Britain s founding to Brutus, great-grandson of Aeneas, who purged the island of giants and founded Troia Nova."
+   "explanation": "Geoffrey traced Britain's founding to Brutus, great-grandson of Aeneas, who purged the island of giants and founded Troia Nova."
   },
   {
    "id": "an-h-26",
@@ -314,7 +314,7 @@
     "Camlann"
    ],
    "correct_option_id": 3,
-   "explanation": "The Battle of Camlann, placed around 537 or 542 in legend, marks Arthur s final clash where Mordred is killed and Arthur is wounded."
+   "explanation": "The Battle of Camlann, placed around 537 or 542 in legend, marks Arthur's final clash where Mordred is killed and Arthur is wounded."
   },
   {
    "id": "an-h-27",
@@ -386,7 +386,7 @@
     "A golden ring"
    ],
    "correct_option_id": 1,
-   "explanation": "After the lady s jealous husband wrings the nightingale s neck, the knight has the bird embalmed in a golden vessel."
+   "explanation": "After the lady's jealous husband wrings the nightingale's neck, the knight has the bird embalmed in a golden vessel."
   },
   {
    "id": "an-h-33",
@@ -398,7 +398,7 @@
     "Eliduc"
    ],
    "correct_option_id": 3,
-   "explanation": "In Eliduc, Guildeluec graciously accepts holy vows upon realizing her husband s deep love for the foreign princess Guilliadun."
+   "explanation": "In Eliduc, Guildeluec graciously accepts holy vows upon realizing her husband's deep love for the foreign princess Guilliadun."
   },
   {
    "id": "an-h-34",
@@ -419,10 +419,10 @@
     "De Amore",
     "Visio Pauli",
     "La Seinte Resureccion",
-    "L Espurgatoire Seint Patriz"
+    "L'Espurgatoire Seint Patriz"
    ],
    "correct_option_id": 3,
-   "explanation": "Marie adapted the Latin vision of Saint Patrick s Purgatory into Anglo-Norman verse, describing knight Owein s spiritual trials."
+   "explanation": "Marie adapted the Latin vision of Saint Patrick's Purgatory into Anglo-Norman verse, describing knight Owein's spiritual trials."
   },
   {
    "id": "an-h-36",
@@ -434,7 +434,7 @@
     "Boeve de Haumtoun"
    ],
    "correct_option_id": 1,
-   "explanation": "Fouke le Fitz Waryn combines historical chronicle and romance, detailing Fulk III FitzWarin s guerilla rebellion against King John."
+   "explanation": "Fouke le Fitz Waryn combines historical chronicle and romance, detailing Fulk III FitzWarin's guerilla rebellion against King John."
   },
   {
    "id": "an-h-37",
@@ -470,7 +470,7 @@
     "West Midland"
    ],
    "correct_option_id": 0,
-   "explanation": "Dan Michel s 1340 autograph manuscript provides an invaluable, localized phonetic record of the fourteenth-century Kentish dialect."
+   "explanation": "Dan Michel's 1340 autograph manuscript provides an invaluable, localized phonetic record of the fourteenth-century Kentish dialect."
   },
   {
    "id": "an-h-40",
@@ -490,7 +490,7 @@
    "options": [
     "Somme des Vices",
     "Roman de Rou",
-    "L Estoire des Engleis",
+    "L'Estoire des Engleis",
     "Manuel des Pechiez"
    ],
    "correct_option_id": 3,
@@ -536,13 +536,13 @@
    "id": "an-h-45",
    "question": "In 'Havelok the Dane', what miraculous bodily phenomenon reveals Havelok's royal Danish parentage while he sleeps?",
    "options": [
-    "A golden cross on his shoulder",
+    "A deep scar across his forehead",
     "A brilliant flame shining from his mouth",
     "A sweet fragrance from his hands",
     "A glowing halo above his head"
    ],
    "correct_option_id": 1,
-   "explanation": "A bright light streaming from Havelok s mouth and a royal birthmark on his shoulder prove his legitimate royal lineage."
+   "explanation": "A bright light streaming from Havelok's mouth and a royal birthmark on his shoulder prove his legitimate royal lineage."
   },
   {
    "id": "an-h-46",
@@ -573,8 +573,8 @@
    "question": "What is the title of the fragmentary 12th-century Anglo-Norman drama that dramatizes Christ's burial and the harrowing of hell?",
    "options": [
     "La Seinte Resureccion",
-    "Courtois d Arras",
-    "Le Mystere d Adam",
+    "Courtois d'Arras",
+    "Le Mystere d'Adam",
     "Jeu de Saint Nicolas"
    ],
    "correct_option_id": 0,
@@ -582,7 +582,7 @@
   },
   {
    "id": "an-h-49",
-   "question": "In 'Le Mystere d Adam', while the spoken dialogue of the actors is in Anglo-Norman French, in what language are the rubrics written?",
+   "question": "In 'Le Mystere d'Adam', while the spoken dialogue of the actors is in Anglo-Norman French, in what language are the rubrics written?",
    "options": [
     "Hebrew",
     "Middle English",
@@ -590,7 +590,7 @@
     "Old French"
    ],
    "correct_option_id": 2,
-   "explanation": "The extensive stage directions and choral responsories in Le Mystere d Adam are written in liturgical church Latin."
+   "explanation": "The extensive stage directions and choral responsories in Le Mystere d'Adam are written in liturgical church Latin."
   },
   {
    "id": "an-h-50",
@@ -602,7 +602,7 @@
     "Walter Map"
    ],
    "correct_option_id": 0,
-   "explanation": "Thomas Chestre composed Sir Launfal, adapting Marie de France s lai into a popular 12-line tail-rhyme English romance."
+   "explanation": "Thomas Chestre composed Sir Launfal, adapting Marie de France's lai into a popular 12-line tail-rhyme English romance."
   }
  ]
 }

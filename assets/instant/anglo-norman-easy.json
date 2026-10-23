@@ -20,13 +20,13 @@
    "id": "an-e-02",
    "question": "What is the title of the earliest surviving rhymed chronicle in French verse, composed around 1136 by Geoffrei Gaimar?",
    "options": [
-    "Le Mystere d Adam",
-    "L Estoire des Engleis",
+    "Le Mystere d'Adam",
+    "L'Estoire des Engleis",
     "Roman de Brut",
     "Roman de Rou"
    ],
    "correct_option_id": 1,
-   "explanation": "Geoffrei Gaimar composed L Estoire des Engleis in Anglo-Norman rhymed couplets, tracing English history from Anglo-Saxon kings."
+   "explanation": "Geoffrei Gaimar composed L'Estoire des Engleis in Anglo-Norman rhymed couplets, tracing English history from Anglo-Saxon kings."
   },
   {
    "id": "an-e-03",
@@ -106,7 +106,7 @@
    "options": [
     "The Owl and the Nightingale",
     "The Parliament of Fowls",
-    "The Debate of the Carpenter s Tools",
+    "The Debate of the Carpenter's Tools",
     "Wynnere and Wastoure"
    ],
    "correct_option_id": 0,
@@ -126,7 +126,7 @@
   },
   {
    "id": "an-e-11",
-   "question": "Which Norman king commissioned the comprehensive land survey known as the Domesday Book in 1086?",
+   "question": "Which Norman king ordered the comprehensive land survey recorded in the Domesday Book of 1086?",
    "options": [
     "Stephen",
     "Henry I",
@@ -141,12 +141,12 @@
    "question": "Which 12th-century Anglo-Norman work is regarded as the earliest surviving semi-liturgical vernacular play in drama history?",
    "options": [
     "The Castle of Perseverance",
-    "Le Mystere d Adam",
+    "Le Mystere d'Adam",
     "Everyman",
     "Mankind"
    ],
    "correct_option_id": 1,
-   "explanation": "Le Mystere d Adam, composed around 1140 to 1170, dramatises Adam and Eve, Cain and Abel, and prophets outside church doors."
+   "explanation": "Le Mystere d'Adam, composed around 1140 to 1170, dramatises Adam and Eve, Cain and Abel, and prophets outside church doors."
   },
   {
    "id": "an-e-13",
@@ -230,7 +230,7 @@
     "Bisclavret"
    ],
    "correct_option_id": 2,
-   "explanation": "Lanval is rewarded with endless wealth by a fairy maiden on condition of secrecy, later being rescued by her from Arthur s court."
+   "explanation": "Lanval is rewarded with endless wealth by a fairy maiden on condition of secrecy, later being rescued by her from Arthur's court."
   },
   {
    "id": "an-e-20",
@@ -434,7 +434,7 @@
     "Excalibur"
    ],
    "correct_option_id": 3,
-   "explanation": "Excalibur is King Arthur s mythical sword, returned to the Lady of the Lake by Sir Bedevere after Arthur is mortally wounded."
+   "explanation": "Excalibur is King Arthur's mythical sword, returned to the Lady of the Lake by Sir Bedevere after Arthur is mortally wounded."
   },
   {
    "id": "an-e-37",
@@ -470,7 +470,7 @@
     "Elaine"
    ],
    "correct_option_id": 2,
-   "explanation": "Queen Guinevere is Arthur s wife, whose love for Lancelot becomes a tragic catalyst for the fracturing of the fellowship."
+   "explanation": "Queen Guinevere is Arthur's wife, whose love for Lancelot becomes a tragic catalyst for the fracturing of the fellowship."
   },
   {
    "id": "an-e-40",
@@ -514,8 +514,8 @@
    "options": [
     "The Dancers of Colbek",
     "The Tale of Melibee",
-    "The Miller s Dance",
-    "The Friar s Curse"
+    "The Miller's Dance",
+    "The Friar's Curse"
    ],
    "correct_option_id": 0,
    "explanation": "The Dancers of Colbek were cursed by a priest for singing and caroling in a churchyard on Christmas Eve, dancing non-stop for a year."
