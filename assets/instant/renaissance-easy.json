@@ -1,0 +1,608 @@
+{
+ "bankId": "renaissance",
+ "period": "Renaissance Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rn-e-01",
+   "question": "Which monumental 16th-century allegorical epic poem by Edmund Spenser celebrates Queen Elizabeth I as the Faerie Queene, Gloriana?",
+   "options": [
+    "Poly-Olbion",
+    "The Shepheardes Calender",
+    "The Countess of Pembroke's Arcadia",
+    "The Faerie Queene"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edmund Spenser composed The Faerie Queene to fashion a noble gentleman and celebrate Queen Elizabeth I."
+  },
+  {
+   "id": "rn-e-02",
+   "question": "Who authored the foundational Elizabethan critical treatise 'An Apology for Poetry' (also known as 'The Defence of Poesy')?",
+   "options": [
+    "George Puttenham",
+    "Ben Jonson",
+    "Sir Philip Sidney",
+    "Edmund Spenser"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Philip Sidney wrote An Apology for Poetry around 1580 to defend imaginative poetry against puritan attacks."
+  },
+  {
+   "id": "rn-e-03",
+   "question": "Which University Wit established blank verse as the dominant majestic meter of English tragedy with 'Tamburlaine the Great'?",
+   "options": [
+    "Christopher Marlowe",
+    "Robert Greene",
+    "John Lyly",
+    "Thomas Kyd"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marlowe's mighty line transformed unrhymed iambic pentameter into the standard language of Elizabethan drama."
+  },
+  {
+   "id": "rn-e-04",
+   "question": "What collective title is given to the educated late 16th-century dramatists from Oxford and Cambridge who preceded Shakespeare?",
+   "options": [
+    "The Lake Poets",
+    "The Courtly Makers",
+    "The Sons of Ben",
+    "The University Wits"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The University Wits included Marlowe, Lyly, Greene, Peele, Lodge, Nashe, and Kyd, shaping Elizabethan theater."
+  },
+  {
+   "id": "rn-e-05",
+   "question": "Which playwright pioneered the immensely popular Elizabethan revenge tragedy genre with his sensational work 'The Spanish Tragedy'?",
+   "options": [
+    "Thomas Middleton",
+    "John Webster",
+    "Thomas Kyd",
+    "Christopher Marlowe"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Kyd established the revenge tragedy conventions of murder, ghosts, feigned madness, and play-within-a-play."
+  },
+  {
+   "id": "rn-e-06",
+   "question": "Which University Wit authored the popular prose romance 'Euphues: The Anatomy of Wit' (1578), spawning an elaborate courtly style?",
+   "options": [
+    "Thomas Lodge",
+    "George Peele",
+    "Robert Greene",
+    "John Lyly"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Lyly popularized Euphuism, marked by balanced antitheses, alliteration, and rhetorical similes."
+  },
+  {
+   "id": "rn-e-07",
+   "question": "Who wrote the tragic Renaissance drama 'Doctor Faustus', depicting a German scholar who barters his soul to Lucifer for 24 years of power?",
+   "options": [
+    "Thomas Kyd",
+    "Ben Jonson",
+    "Christopher Marlowe",
+    "William Shakespeare"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Christopher Marlowe composed Doctor Faustus around 1588 to 1592, exploring the limits of human ambition and knowledge."
+  },
+  {
+   "id": "rn-e-08",
+   "question": "How many sonnets are included in William Shakespeare's definitive sonnet collection published by Thomas Thorpe in 1609?",
+   "options": [
+    "120 sonnets",
+    "164 sonnets",
+    "154 sonnets",
+    "100 sonnets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thorpe's 1609 quarto contains 154 sonnets by Shakespeare, followed by the longer poem A Lover's Complaint."
+  },
+  {
+   "id": "rn-e-09",
+   "question": "Which London acting troupe, originally called the Lord Chamberlain's Men, received royal patronage under King James I in 1603?",
+   "options": [
+    "The Queen's Men",
+    "The King's Men",
+    "The Admiral's Men",
+    "The Children of the Chapel"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Upon James I's accession, Shakespeare's acting company was awarded royal patronage as The King's Men."
+  },
+  {
+   "id": "rn-e-10",
+   "question": "What was the name of the famous open-air circular playhouse erected in 1599 by Shakespeare's company on Bankside in Southwark?",
+   "options": [
+    "The Globe Theatre",
+    "The Rose Theatre",
+    "The Curtain Theatre",
+    "The Swan Theatre"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Globe was built in 1599 using timber from The Theatre, serving as the chief venue for Shakespeare's masterpieces."
+  },
+  {
+   "id": "rn-e-11",
+   "question": "Which Jacobean dramatist authored the macabre, poetic Italianate tragedies 'The White Devil' and 'The Duchess of Malfi'?",
+   "options": [
+    "Cyril Tourneur",
+    "Thomas Middleton",
+    "John Webster",
+    "John Ford"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Webster achieved renown for his dark masterpieces probing corruption, court intrigue, and human dignity."
+  },
+  {
+   "id": "rn-e-12",
+   "question": "Which playwright established the English 'Comedy of Humours' with his pathbreaking 1598 play 'Every Man in His Humour'?",
+   "options": [
+    "Thomas Dekker",
+    "John Marston",
+    "Ben Jonson",
+    "William Shakespeare"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Ben Jonson based his comedy on the medical theory of four bodily humours governing human temperament."
+  },
+  {
+   "id": "rn-e-13",
+   "question": "Which monumental English vernacular translation of the Bible was commissioned by the crown in 1604 and published in 1611?",
+   "options": [
+    "The King James Bible",
+    "The Bishop's Bible",
+    "The Great Bible",
+    "The Geneva Bible"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The King James Bible, or Authorized Version of 1611, profoundly enriched English literary prose and idiom."
+  },
+  {
+   "id": "rn-e-14",
+   "question": "Who is celebrated as the 'Father of the English Essay' for publishing three expanding editions of pithy, worldly 'Essays' between 1597 and 1625?",
+   "options": [
+    "Michel de Montaigne",
+    "Robert Burton",
+    "Thomas Browne",
+    "Francis Bacon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Francis Bacon adapted Montaigne's essay form into terse, aphoristic English meditations on civil life."
+  },
+  {
+   "id": "rn-e-15",
+   "question": "Which brilliant poet-divine was the undisputed leader of the Metaphysical School of Poetry, celebrated for 'Songs and Sonnets'?",
+   "options": [
+    "John Donne",
+    "George Herbert",
+    "Henry Vaughan",
+    "Andrew Marvell"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Donne revitalized English verse through passionate intellect, colloquial diction, and complex conceits."
+  },
+  {
+   "id": "rn-e-16",
+   "question": "Which 18th-century critic first applied the term 'Metaphysical Poets' as a collective designation in his 'Life of Cowley'?",
+   "options": [
+    "Matthew Arnold",
+    "Alexander Pope",
+    "John Dryden",
+    "Samuel Johnson"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dr. Samuel Johnson coined the critical term in Lives of the Most Eminent English Poets in 1779."
+  },
+  {
+   "id": "rn-e-17",
+   "question": "What is the defining poetic device of Metaphysical poetry, described by Dr. Johnson as heterogeneous ideas yoked by violence together?",
+   "options": [
+    "Petrarchan Conceit",
+    "Metaphysical Conceit",
+    "Homeric Epithet",
+    "Epic Simile"
+   ],
+   "correct_option_id": 1,
+   "explanation": "A metaphysical conceit is an elaborate, ingenious metaphor establishing unexpected parallels between disparate realms."
+  },
+  {
+   "id": "rn-e-18",
+   "question": "Which Welsh-born Anglican clergyman authored the sacred metaphysical collection 'The Temple: Sacred Poems and Private Ejaculations' (1633)?",
+   "options": [
+    "Henry Vaughan",
+    "Richard Crashaw",
+    "George Herbert",
+    "Thomas Traherne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "George Herbert's The Temple contains intensely spiritual, beautifully structured devotional lyrics."
+  },
+  {
+   "id": "rn-e-19",
+   "question": "What term is applied to the 17th-century courtier lyricists, loyal to King Charles I, who wrote polished verse on love, loyalty, and carpe diem?",
+   "options": [
+    "Roundhead Poets",
+    "Cavalier Poets",
+    "Metaphysical Poets",
+    "Spenserian Poets"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Cavalier poets like Herrick, Lovelace, Suckling, and Carew wrote elegant, carpe diem court poetry."
+  },
+  {
+   "id": "rn-e-20",
+   "question": "Which Cavalier poet composed the celebrated carpe diem lyric 'To the Virgins, to Make Much of Time', beginning 'Gather ye rosebuds while ye may'?",
+   "options": [
+    "Robert Herrick",
+    "Sir John Suckling",
+    "Richard Lovelace",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Herrick's famous lyric urges youth to seize love and pleasure while youthful beauty endures."
+  },
+  {
+   "id": "rn-e-21",
+   "question": "Which 1644 prose treatise by John Milton stands as a landmark philosophical defense of freedom of speech and the press?",
+   "options": [
+    "The Tenure of Kings and Magistrates",
+    "Areopagitica",
+    "The Ready and Easy Way",
+    "Tractate of Education"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Areopagitica argues against the Licensing Order of 1643, defending unlicensed printing and free inquiry."
+  },
+  {
+   "id": "rn-e-22",
+   "question": "What is the title of John Milton's supreme 1667 epic in unrhymed blank verse that aims to justify the ways of God to men?",
+   "options": [
+    "Samson Agonistes",
+    "The Faerie Queene",
+    "Paradise Regained",
+    "Paradise Lost"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Paradise Lost narrates the rebellion of Satan, the war in Heaven, and the Fall of Adam and Eve."
+  },
+  {
+   "id": "rn-e-23",
+   "question": "In which year did the Puritan-led English Parliament pass an ordinance ordering the complete closure of all public London theaters?",
+   "options": [
+    "1660",
+    "1642",
+    "1649",
+    "1638"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Parliament closed the public theaters in September 1642 due to Puritan religious hostility and civil war."
+  },
+  {
+   "id": "rn-e-24",
+   "question": "Which English king was tried for treason and publicly beheaded outside Whitehall Banqueting House in January 1649?",
+   "options": [
+    "James I",
+    "Charles II",
+    "Henry VIII",
+    "Charles I"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The trial and execution of King Charles I in 1649 inaugurated the revolutionary English Republic."
+  },
+  {
+   "id": "rn-e-25",
+   "question": "Who served as Lord Protector of the Commonwealth of England, Scotland, and Ireland from 1653 until his death in 1658?",
+   "options": [
+    "Oliver Cromwell",
+    "Richard Cromwell",
+    "John Milton",
+    "Thomas Fairfax"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Oliver Cromwell commanded the parliamentary New Model Army and governed Britain as Lord Protector."
+  },
+  {
+   "id": "rn-e-26",
+   "question": "Which historic year marked the Restoration of King Charles II to the English throne, concluding the Renaissance literary period?",
+   "options": [
+    "1660",
+    "1700",
+    "1649",
+    "1688"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Restoration of 1660 reopened theaters and established the Neoclassical or Restoration literary era."
+  },
+  {
+   "id": "rn-e-27",
+   "question": "Which 1579 pastoral work by Edmund Spenser, divided into twelve eclogues named for the months of the year, announced the new poetic renaissance?",
+   "options": [
+    "Prothalamion",
+    "The Shepheardes Calender",
+    "Epithalamion",
+    "Amoretti"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Shepheardes Calender was published under the pseudonym Immerito and dedicated to Sir Philip Sidney."
+  },
+  {
+   "id": "rn-e-28",
+   "question": "What is the title of Edmund Spenser's 89-sonnet sequence celebrating his courtship of his second wife, Elizabeth Boyle?",
+   "options": [
+    "Diana",
+    "Amoretti",
+    "Astrophel and Stella",
+    "Delia"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Amoretti, meaning little love poems, records Spenser's joyful love, culminating in his Epithalamion."
+  },
+  {
+   "id": "rn-e-29",
+   "question": "Which work by Sir Philip Sidney, composed around 1582, stands as the first sustained Elizabethan sonnet sequence in English?",
+   "options": [
+    "Astrophel and Stella",
+    "Amoretti",
+    "Caelica",
+    "Idea"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Astrophel and Stella charts Astrophel's star-lover passion for Stella, modeled on Lady Penelope Devereux."
+  },
+  {
+   "id": "rn-e-30",
+   "question": "Which University Wit attacked William Shakespeare as an upstart Crow beautified with our feathers in his 1592 pamphlet 'Groats-worth of Wit'?",
+   "options": [
+    "Thomas Nashe",
+    "John Lyly",
+    "Robert Greene",
+    "George Peele"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Greene's dying tract contains the earliest documented contemporary allusion to Shakespeare as a London playwright."
+  },
+  {
+   "id": "rn-e-31",
+   "question": "Which massive history book, published in 1577 and expanded in 1587, served as Shakespeare's chief source for his English history plays and 'Macbeth'?",
+   "options": [
+    "John Foxe's Acts and Monuments",
+    "Edward Hall's Chronicle",
+    "Raphael Holinshed's Chronicles",
+    "William Camden's Britannia"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Holinshed's Chronicles of England, Scotland, and Ireland supplied plots and historical data for Shakespeare."
+  },
+  {
+   "id": "rn-e-32",
+   "question": "Which celebrated narrative poem by William Shakespeare, published in 1593 and dedicated to the Earl of Southampton, retells an Ovidian erotic myth?",
+   "options": [
+    "Venus and Adonis",
+    "The Rape of Lucrece",
+    "A Lover's Complaint",
+    "The Phoenix and the Turtle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Venus and Adonis was Shakespeare's first printed literary publication, winning immense popular acclaim."
+  },
+  {
+   "id": "rn-e-33",
+   "question": "Which satirical beast comedy by Ben Jonson features the cunning Venetian grandee Volpone and his scheming parasite Mosca?",
+   "options": [
+    "Epicoene",
+    "The Alchemist",
+    "Bartholomew Fair",
+    "Volpone, or The Fox"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Volpone feigns mortal illness to dupe greedy legacy hunters Voltore, Corbaccio, and Corvino."
+  },
+  {
+   "id": "rn-e-34",
+   "question": "Which acclaimed Jacobean comedy by Ben Jonson satirizes con artists Subtle and Face running a fraudulent laboratory during a London plague outbreak?",
+   "options": [
+    "The Staple of News",
+    "The Alchemist",
+    "Every Man Out of His Humour",
+    "The Devil is an Ass"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Alchemist ruthlessly mocks greed and gullibility through mock-scientific alchemy."
+  },
+  {
+   "id": "rn-e-35",
+   "question": "Which intense Jacobean psychological tragedy by Thomas Middleton and William Rowley centers on Beatrice-Joanna and the deformed servant De Flores?",
+   "options": [
+    "A Fair Quarrel",
+    "Women Beware Women",
+    "The Witch",
+    "The Changeling"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Changeling dramatises Beatrice-Joanna hiring De Flores to murder her suitor, becoming bound to her accomplice."
+  },
+  {
+   "id": "rn-e-36",
+   "question": "In John Webster's 'The Duchess of Malfi', which cynical spy and malcontent is employed by the Duke and Cardinal to murder the virtuous Duchess?",
+   "options": [
+    "Delio",
+    "Daniel de Bosola",
+    "Antonio Bologna",
+    "Castruchio"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bosola serves as spy and executioner, eventually seeking remorseful vengeance against his corrupt masters."
+  },
+  {
+   "id": "rn-e-37",
+   "question": "Which famous metaphysical poem by Andrew Marvell urges his beloved to seize passion before the grave, opening 'Had we but world enough, and time'?",
+   "options": [
+    "To His Coy Mistress",
+    "The Garden",
+    "Bermudas",
+    "The Definition of Love"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marvell's masterpiece uses vivid metaphysical imagery to urge immediate consumption of love against flying Time."
+  },
+  {
+   "id": "rn-e-38",
+   "question": "Which Royalist Cavalier lyric by Richard Lovelace contains the immortal lines 'Stone walls do not a prison make, / Nor iron bars a cage'?",
+   "options": [
+    "The Scrutiny",
+    "The Grasshopper",
+    "To Althea, from Prison",
+    "To Lucasta, Going to the Wars"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lovelace wrote this celebrated lyric while detained in the Gatehouse Prison at Westminster in 1642."
+  },
+  {
+   "id": "rn-e-39",
+   "question": "Which witty Cavalier poet and courtier is credited with inventing the card game Cribbage and wrote the song 'Why so pale and wan, fond lover?'",
+   "options": [
+    "Richard Lovelace",
+    "Sir John Suckling",
+    "Thomas Carew",
+    "Robert Herrick"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir John Suckling was a wealthy courtier, playwright of Aglaura, and inventor of the card game Cribbage."
+  },
+  {
+   "id": "rn-e-40",
+   "question": "Which seminal political treatise published in 1651 by Thomas Hobbes argued that life in the state of nature is solitary, poor, nasty, brutish, and short?",
+   "options": [
+    "The Elements of Law",
+    "Behemoth",
+    "De Cive",
+    "Leviathan"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hobbes's Leviathan advocates a social contract surrendering rights to an absolute sovereign to prevent anarchy."
+  },
+  {
+   "id": "rn-e-41",
+   "question": "Which remarkable spiritual autobiography and confession of faith was composed in 1635 by the physician Sir Thomas Browne?",
+   "options": [
+    "The Garden of Cyrus",
+    "Religio Medici",
+    "Hydriotaphia",
+    "Christian Morals"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Religio Medici explores the religious beliefs and tolerant scientific curiosity of a practicing doctor."
+  },
+  {
+   "id": "rn-e-42",
+   "question": "What is the title of John Milton's 1637 pastoral elegy commemorating the tragic drowning of his Cambridge friend Edward King in the Irish Sea?",
+   "options": [
+    "Lycidas",
+    "Il Penseroso",
+    "L'Allegro",
+    "Comus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton's Lycidas mourns his fellow poet while delivering a fierce indictment of the corrupt English clergy."
+  },
+  {
+   "id": "rn-e-43",
+   "question": "Which 1634 courtly dramatic masque was composed by John Milton and staged at Ludlow Castle to celebrate the Earl of Bridgewater?",
+   "options": [
+    "Comus (A Maske Presented at Ludlow Castle)",
+    "The Masque of Queens",
+    "Arcades",
+    "The Vision of the Twelve Goddesses"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton's masque depicts the Lady using temperance and virtue to withstand the sensual sorceries of Comus."
+  },
+  {
+   "id": "rn-e-44",
+   "question": "Which Elizabethan courtier, poet, and explorer wrote 'The Discovery of Guiana' and composed the epic 'History of the World' while in the Tower?",
+   "options": [
+    "Sir Humphrey Gilbert",
+    "Sir Francis Drake",
+    "Sir Philip Sidney",
+    "Sir Walter Raleigh"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Walter Raleigh was a versatile courtier and adventurer, imprisoned by James I and beheaded in 1618."
+  },
+  {
+   "id": "rn-e-45",
+   "question": "Which Elizabethan theologian authored the monumental treatise 'Of the Lawes of Ecclesiasticall Politie' defending the Anglican Church?",
+   "options": [
+    "John Foxe",
+    "William Perkins",
+    "John Jewel",
+    "Richard Hooker"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Richard Hooker provided the theological and philosophical defense of the Anglican Via Media against Puritanism."
+  },
+  {
+   "id": "rn-e-46",
+   "question": "Who compiled the monumental Elizabethan travel compendium 'The Principal Navigations, Voiages, Traffiques and Discoueries of the English Nation' (1589)?",
+   "options": [
+    "Richard Hakluyt",
+    "William Camden",
+    "Thomas North",
+    "Samuel Purchas"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Richard Hakluyt's accounts of global sea voyages promoted English exploration, trade, and colonisation."
+  },
+  {
+   "id": "rn-e-47",
+   "question": "Which 1553 work by schoolmaster Nicholas Udall is universally recognized as the earliest surviving regular comedy written in the English language?",
+   "options": [
+    "Gammer Gurton's Needle",
+    "Fulgens and Lucres",
+    "Ralph Roister Doister",
+    "The Four PP"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Nicholas Udall adapted Plautus's Braggart Soldier to create the first five-act English comedy."
+  },
+  {
+   "id": "rn-e-48",
+   "question": "Which 1561 academic drama by Thomas Norton and Thomas Sackville is celebrated as the earliest regular tragedy in blank verse in English?",
+   "options": [
+    "The Misfortunes of Arthur",
+    "Gorboduc (Ferrex and Porrex)",
+    "The Spanish Tragedy",
+    "Tamburlaine the Great"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Gorboduc adapted Senecan tragedy and unrhymed blank verse to warn against political disunity."
+  },
+  {
+   "id": "rn-e-49",
+   "question": "What broad philosophical cultural movement, rooted in the recovery of Greek and Roman classical learning, sparked the Renaissance in Europe?",
+   "options": [
+    "Scholasticism",
+    "Nominalism",
+    "Humanism",
+    "Empiricism"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Renaissance Humanism celebrated human dignity, secular learning, classical rhetoric, and scientific enquiry."
+  },
+  {
+   "id": "rn-e-50",
+   "question": "The catastrophic defeat of which naval invasion fleet in July 1588 unified England and sparked a surge of patriotic Elizabethan literature?",
+   "options": [
+    "The Dutch Armada",
+    "The Spanish Armada",
+    "The Ottoman Fleet",
+    "The French Fleet"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The defeat of King Philip II's Armada secured Protestant England and fueled patriotic confidence."
+  }
+ ]
+}

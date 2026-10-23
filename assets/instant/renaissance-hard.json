@@ -1,0 +1,608 @@
+{
+ "bankId": "renaissance",
+ "period": "Renaissance Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rn-h-01",
+   "question": "What is the exact metrical and rhyme scheme of the nine-line 'Spenserian Stanza' devised by Edmund Spenser for 'The Faerie Queene'?",
+   "options": [
+    "aabbccddee ending with an unrhymed blank line",
+    "abbaabbacde ending with a septenary line",
+    "ababbcbcc ending with a twelve-syllable alexandrine",
+    "ababababcc ending with a decasyllabic couplet"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Spenser added an iambic hexameter alexandrine to eight iambic pentameter lines rhyming ababbcbcc."
+  },
+  {
+   "id": "rn-h-02",
+   "question": "Sir Philip Sidney's 'An Apology for Poetry' was composed in direct philosophical rebuttal to which anti-theatrical Puritan pamphlet of 1579?",
+   "options": [
+    "William Prynne's 'Histriomastix'",
+    "Stephen Gosson's 'The School of Abuse'",
+    "Roger Ascham's 'The Scholemaster'",
+    "John Rainolds's 'Th' Overthrow of Stage-Playes'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Stephen Gosson dedicated The School of Abuse to Sidney without permission, attacking poetry as a school of vice."
+  },
+  {
+   "id": "rn-h-03",
+   "question": "In the prologue to Christopher Marlowe's 'The Jew of Malta', which historical political philosopher speaks the opening lines?",
+   "options": [
+    "Petrarch",
+    "Machevill (Niccolo Machiavelli)",
+    "Jean Bodin",
+    "Erasmus"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Machevill introduces the play, declaring I count religion but a childish toy and justifying ruthless ambition."
+  },
+  {
+   "id": "rn-h-04",
+   "question": "In which exact year and London suburb was Christopher Marlowe fatally stabbed in a room in Eleanor Bull's house by Ingram Frizer?",
+   "options": [
+    "1593 at Deptford",
+    "1603 at Westminster",
+    "1599 at Shoreditch",
+    "1592 at Southwark"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Christopher Marlowe died on May 30, 1593 at Deptford, killed following a dispute over the reckoning."
+  },
+  {
+   "id": "rn-h-05",
+   "question": "Thomas Kyd's 'The Spanish Tragedy' famously opens with a chorus consisting of which two allegorical otherworldly figures?",
+   "options": [
+    "Time and Destiny",
+    "The Ghost of Hamlet's Father and Justice",
+    "The Ghost of Don Andrea and Revenge",
+    "Death and Good Deeds"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Ghost of Don Andrea and personified Revenge sit on stage as an unearthly chorus overseeing the slaughter."
+  },
+  {
+   "id": "rn-h-06",
+   "question": "What is the technical rhetorical term for the balanced antitheses, alliteration, and mythical zoology popularized in John Lyly's prose?",
+   "options": [
+    "Marinism",
+    "Euphuism",
+    "Aureate Diction",
+    "Gongorism"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Euphuism was the fashionable high prose style derived from Lyly's Euphues, featuring elaborate parallelism."
+  },
+  {
+   "id": "rn-h-07",
+   "question": "Which University Wit wrote the delightful romantic comedy 'Friar Bacon and Friar Bungay' alongside the pastoral romance 'Pandosto'?",
+   "options": [
+    "Robert Greene",
+    "George Peele",
+    "Thomas Nashe",
+    "Thomas Lodge"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Greene wrote Friar Bacon and Friar Bungay, and his romance Pandosto supplied the plot for Shakespeare's Winter's Tale."
+  },
+  {
+   "id": "rn-h-08",
+   "question": "Which picaresque novel published in 1594 by Thomas Nashe is celebrated as the earliest historical and picaresque fiction in English?",
+   "options": [
+    "The Unfortunate Traveller, or The Life of Jack Wilton",
+    "The Anatomy of Absurdity",
+    "Rosalynde",
+    "Pierce Penniless"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Nashe's Jack Wilton travels across Renaissance Europe, witnessing wars, Erasmus, and brutal Italian vendettas."
+  },
+  {
+   "id": "rn-h-09",
+   "question": "Which 1575 work by George Gascoigne represents the first known treatise on English poetic technique and prosody ever printed?",
+   "options": [
+    "A Defence of Ryme",
+    "A Discourse of English Poetrie",
+    "Certayne Notes of Instruction concerning the making of verse",
+    "The Arte of English Poesie"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Gascoigne's Certayne Notes provided the earliest practical rules on English accentual meter and word choice."
+  },
+  {
+   "id": "rn-h-10",
+   "question": "Which Elizabethan critic authored 'A Discourse of English Poetrie' in 1586, urging English poets to abandon rhyme for classical quantitative meters?",
+   "options": [
+    "Gabriel Harvey",
+    "William Webbe",
+    "George Puttenham",
+    "Roger Ascham"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Webbe praised Spenser while arguing that English poetry should conform to classical Greek and Latin feet."
+  },
+  {
+   "id": "rn-h-11",
+   "question": "Which 1603 critical treatise did Samuel Daniel compose to defend the natural dignity and musicality of English rhyme against Thomas Campion?",
+   "options": [
+    "An Apology for Poetry",
+    "Musophilus",
+    "The Steel Glas",
+    "A Defence of Ryme"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Samuel Daniel responded to Campion's Observations, arguing that rhyme is natural and suited to modern vernaculars."
+  },
+  {
+   "id": "rn-h-12",
+   "question": "Who were the two fellow King's Men actors who collected and edited thirty-six of Shakespeare's plays for the First Folio of 1623?",
+   "options": [
+    "Thomas Dekker and John Marston",
+    "John Heminges and Henry Condell",
+    "Edward Alleyn and Philip Henslowe",
+    "Richard Burbage and William Kempe"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Heminges and Condell assembled Shakespeare's plays out of love to keep the memory of so worthy a friend alive."
+  },
+  {
+   "id": "rn-h-13",
+   "question": "Which massive topographical poem in 30,000 alexandrine lines by Michael Drayton provides an exhaustive county-by-county survey of Britain?",
+   "options": [
+    "Nymphidia",
+    "The Barons' Wars",
+    "Poly-Olbion",
+    "Idea, The Shepherd's Garland"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Michael Drayton's Poly-Olbion, published in two parts in 1612 and 1622, is an encyclopedic poetic geography of Britain."
+  },
+  {
+   "id": "rn-h-14",
+   "question": "What is the title of John Donne's dramatic final sermon preached before King Charles I at Whitehall in February 1631, shortly before his death?",
+   "options": [
+    "Biathanatos",
+    "Death's Duel",
+    "Devotions upon Emergent Occasions",
+    "Pseudo-Martyr"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Donne preached Death's Duel while mortally ill, delivered with such solemnity it was deemed his own funeral sermon."
+  },
+  {
+   "id": "rn-h-15",
+   "question": "Which emblematic pattern poem by George Herbert was printed vertically in 'The Temple' so that the line lengths visually shape two angelic wings?",
+   "options": [
+    "Aaron",
+    "The Altar",
+    "The Collar",
+    "Easter Wings"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Easter Wings is a visual pattern poem where the expanding and contracting line lengths mirror angelic wings."
+  },
+  {
+   "id": "rn-h-16",
+   "question": "Which 17th-century devotional metaphysical poet adopted the epithet 'The Silurist' on the title page of his collection 'Silex Scintillans'?",
+   "options": [
+    "Thomas Traherne",
+    "Richard Crashaw",
+    "Henry Vaughan",
+    "Abraham Cowley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Henry Vaughan called himself the Silurist after the Silures, an ancient British tribe of his native South Wales."
+  },
+  {
+   "id": "rn-h-17",
+   "question": "Which metaphysical poet convert to Roman Catholicism authored 'Steps to the Temple' and celebrated Saint Teresa in 'The Flaming Heart'?",
+   "options": [
+    "Robert Southwell",
+    "John Donne",
+    "Richard Crashaw",
+    "George Herbert"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Richard Crashaw's ecstatic baroque verse blends Counter-Reformation mysticism with intense sensory imagery."
+  },
+  {
+   "id": "rn-h-18",
+   "question": "Which 17th-century metaphysical writer's prose masterpiece 'Centuries of Meditations' remained lost in manuscript until discovered in 1896?",
+   "options": [
+    "Sir Thomas Browne",
+    "Thomas Traherne",
+    "John Donne",
+    "Henry Vaughan"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Thomas Traherne's luminous theological meditations were identified by Bertram Dobell and published in 1908."
+  },
+  {
+   "id": "rn-h-19",
+   "question": "What title did Robert Herrick give to his immense 1648 royalist collection containing over 1,400 secular and pastoral poems?",
+   "options": [
+    "Noble Numbers",
+    "Steps to the Temple",
+    "Hesperides",
+    "Castara"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hesperides, published with his religious Noble Numbers, evokes the golden mythical garden of western poetry."
+  },
+  {
+   "id": "rn-h-20",
+   "question": "Which Cavalier poet authored the penetrating 1640 verse elegy praising John Donne for purging English poetry of worn pedantry?",
+   "options": [
+    "Robert Herrick",
+    "Richard Lovelace",
+    "Sir John Suckling",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Thomas Carew's Elegy on Donne famously praises him for opening a fresh, intellectual mine in English poetry."
+  },
+  {
+   "id": "rn-h-21",
+   "question": "Which 1599 citizen comedy by Thomas Dekker celebrates the rise of the eccentric shoemaker Simon Eyre to Lord Mayor of London?",
+   "options": [
+    "The Shoemaker's Holiday",
+    "The Honest Whore",
+    "Old Fortunatus",
+    "The Roaring Girl"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dekker's vibrant comedy dramatises the crafts and apprentices of London with warmth, humor, and civic pride."
+  },
+  {
+   "id": "rn-h-22",
+   "question": "Which prominent dramatist collaborated with William Shakespeare on late romances including 'The Two Noble Kinsmen' and 'Henry VIII'?",
+   "options": [
+    "John Fletcher",
+    "Francis Beaumont",
+    "Thomas Middleton",
+    "Philip Massinger"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Fletcher succeeded Shakespeare as house playwright for the King's Men, co-authoring several late plays."
+  },
+  {
+   "id": "rn-h-23",
+   "question": "Francis Beaumont and John Fletcher achieved legendary theatrical acclaim by pioneering which mixed dramatic genre for courtly audiences?",
+   "options": [
+    "Revenge Tragedy",
+    "Comedy of Humours",
+    "Domestic Tragedy",
+    "Tragicomedy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Beaumont and Fletcher perfected tragicomedy in plays like Philaster, bringing characters near death before a happy resolution."
+  },
+  {
+   "id": "rn-h-24",
+   "question": "In Thomas Middleton's dark Jacobean drama 'The Revenger's Tragedy', what macabre prop does Vindice use to poison the lustful Duke?",
+   "options": [
+    "A poisoned golden chalice at a wedding banquet",
+    "A poisoned portrait kissed by the sovereign",
+    "An infected letter laced with lethal venom",
+    "The poisoned skull of his murdered mistress Gloriana"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Vindice dresses the skull of his dead betrothed in robes and poisons her lips to execute vengeance on the Duke."
+  },
+  {
+   "id": "rn-h-25",
+   "question": "Which shocking Caroline tragedy of 1633 by John Ford examines the doomed, defiant incestuous passion between Giovanni and his sister Annabella?",
+   "options": [
+    "Love's Sacrifice",
+    "'Tis Pity She's a Whore",
+    "Perkin Warbeck",
+    "The Broken Heart"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Ford's masterpiece probes psychological obsession, passion, and moral collapse in Renaissance Parma."
+  },
+  {
+   "id": "rn-h-26",
+   "question": "Which Jacobean playwright created the grasping, extortionate villain Sir Giles Overreach in the satirical comedy 'A New Way to Pay Old Debts'?",
+   "options": [
+    "John Marston",
+    "Philip Massinger",
+    "Thomas Heywood",
+    "Thomas Dekker"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Philip Massinger's Sir Giles Overreach became one of the most famous, enduring comic stage villains of the period."
+  },
+  {
+   "id": "rn-h-27",
+   "question": "Which scandalous 1605 stage comedy written jointly by Jonson, Chapman, and Marston led to the authors' imprisonment for anti-Scottish satire?",
+   "options": [
+    "Eastward Ho",
+    "The Isle of Gulls",
+    "Westward Ho",
+    "Northward Ho"
+   ],
+   "correct_option_id": 0,
+   "explanation": "King James I was offended by comic gibes about Scottish knights in Eastward Ho, causing the dramatists' arrest."
+  },
+  {
+   "id": "rn-h-28",
+   "question": "Which landmark court masque of 1605 inaugurated the brilliant theatrical collaboration between Ben Jonson and architect Inigo Jones?",
+   "options": [
+    "The Masque of Blackness",
+    "The Masque of Queens",
+    "Pleasure Reconciled to Virtue",
+    "Oberon, the Faery Prince"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Commissioned by Queen Anne of Denmark, The Masque of Blackness introduced perspective stagecraft to court."
+  },
+  {
+   "id": "rn-h-29",
+   "question": "In 'Novum Organum' (1620), Francis Bacon classified the false notions hindering human understanding into four categories called:",
+   "options": [
+    "Shadows of the Past, Present, Reason, and Sense",
+    "Idols of the Tribe, Cave, Market, and Theatre",
+    "Errors of Scholasticism, Logic, Rhetoric, and Faith",
+    "Fantasies of the Body, Mind, Church, and State"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bacon's doctrine of the Idols exposed deep-seated psychological, linguistic, and philosophical biases."
+  },
+  {
+   "id": "rn-h-30",
+   "question": "What is the name of the state-sponsored utopian research institute dedicated to natural science in Francis Bacon's 'New Atlantis' (1627)?",
+   "options": [
+    "The Academy of Lagado",
+    "The Temple of Minerva",
+    "Salomon's House (The College of the Six Days' Works)",
+    "The Royal Society of Bensalem"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Salomon's House was Bacon's vision of an organized research college, which inspired the founding of the Royal Society."
+  },
+  {
+   "id": "rn-h-31",
+   "question": "Which 1658 philosophical prose work by Sir Thomas Browne meditates on human vanity and immortality following the discovery of Roman cinerary urns?",
+   "options": [
+    "Christian Morals",
+    "The Garden of Cyrus",
+    "A Letter to a Friend",
+    "Hydriotaphia, Urn Burial"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Browne's Hydriotaphia reflects on mortality, sepulchral rites, and eternity in rich, Latinate prose."
+  },
+  {
+   "id": "rn-h-32",
+   "question": "Which extensive 1646 scientific and antiquarian treatise by Sir Thomas Browne seeks to refute popular errors, myths, and superstitions?",
+   "options": [
+    "Religio Medici",
+    "Hydriotaphia",
+    "Pseudodoxia Epidemica (Vulgar Errors)",
+    "The Garden of Cyrus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pseudodoxia Epidemica investigated and exploded widespread folklore, superstitions, and natural myths."
+  },
+  {
+   "id": "rn-h-33",
+   "question": "Which satirical mock-heroic epic poem in octosyllabic couplets was composed by Samuel Butler to pillory puritan hypocrisy during the Civil War?",
+   "options": [
+    "Hudibras",
+    "The Dunciad",
+    "Mac Flecknoe",
+    "Absalom and Achitophel"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Samuel Butler's Hudibras satirises a pedantic Presbyterian knight errant modeled on Don Quixote."
+  },
+  {
+   "id": "rn-h-34",
+   "question": "Which 1650 political poem by Andrew Marvell adopts a stoic, balanced stance toward the execution of Charles I and the rise of Oliver Cromwell?",
+   "options": [
+    "An Horatian Ode upon Cromwell's Return from Ireland",
+    "Upon Appleton House",
+    "The Garden",
+    "The First Anniversary of the Government"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marvell's Horatian Ode famously praises Charles I's royal dignity on the scaffold alongside Cromwell's energy."
+  },
+  {
+   "id": "rn-h-35",
+   "question": "What is the title of John Milton's 1671 closet drama based on the Greek tragedies of Sophocles and Euripides, depicting the captive Danite hero?",
+   "options": [
+    "Lycidas",
+    "Samson Agonistes",
+    "Paradise Regained",
+    "Comus"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Samson Agonistes stages blind Samson's patient endurance and catastrophic revenge on the Philistines at Gaza."
+  },
+  {
+   "id": "rn-h-36",
+   "question": "Which brief four-book epic poem was published alongside 'Samson Agonistes' by John Milton in 1671, centering on the Temptation in the Wilderness?",
+   "options": [
+    "De Doctrina Christiana",
+    "Paradise Regained",
+    "Paradise Lost",
+    "The Reason of Church Government"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Paradise Regained dramatises Christ overcoming Satan's triple temptations in the wilderness through perfect obedience."
+  },
+  {
+   "id": "rn-h-37",
+   "question": "In March 1649, John Milton was appointed to which official governmental post under the Commonwealth Council of State?",
+   "options": [
+    "Keeper of the State Paper Office",
+    "Poet Laureate of England",
+    "Lord Chancellor of the Commonwealth",
+    "Secretary for Foreign Tongues (Latin Secretary)"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Milton drafted diplomatic correspondence and official Latin state defenses of the English Commonwealth."
+  },
+  {
+   "id": "rn-h-38",
+   "question": "Whose 1603 English translation of Michel de Montaigne's 'Essays' provided Shakespeare with the source for Gonzalo's utopian speech in 'The Tempest'?",
+   "options": [
+    "Philemon Holland",
+    "George Chapman",
+    "John Florio",
+    "Sir Thomas North"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Florio's celebrated translation of Montaigne's Des Cannibales supplied Gonzalo's commonwealth speech in Act II."
+  },
+  {
+   "id": "rn-h-39",
+   "question": "Which Elizabethan poet and dramatist produced the landmark translation of Homer's 'Iliad' and 'Odyssey' celebrated centuries later by John Keats?",
+   "options": [
+    "Thomas Heywood",
+    "Samuel Daniel",
+    "Christopher Marlowe",
+    "George Chapman"
+   ],
+   "correct_option_id": 3,
+   "explanation": "George Chapman translated Homer into vigorous English verse, celebrated in Keats's famous sonnet."
+  },
+  {
+   "id": "rn-h-40",
+   "question": "Whose 1579 English translation of Plutarch's 'Lives of the Noble Grecians and Romans' served as Shakespeare's chief source for his Roman tragedies?",
+   "options": [
+    "William Adlington",
+    "Arthur Golding",
+    "Sir Thomas North",
+    "Philemon Holland"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas North translated Plutarch from Jacques Amyot's French version, supplying plots for Julius Caesar and Antony and Cleopatra."
+  },
+  {
+   "id": "rn-h-41",
+   "question": "What is the popular title of John Foxe's massive 1563 Protestant martyrology, originally titled 'Acts and Monuments'?",
+   "options": [
+    "Foxe's Book of Martyrs",
+    "The Mirror for Magistrates",
+    "The English Chronicle",
+    "The Golden Legend"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Foxe's Book of Martyrs graphically recorded the trials of Protestant martyrs under Queen Mary I."
+  },
+  {
+   "id": "rn-h-42",
+   "question": "Which influential 1559 verse anthology edited by William Baldwin featured the ghosts of fallen English statesmen recounting their downfalls?",
+   "options": [
+    "A Gorgeous Gallery of Inventions",
+    "The Paradise of Dainty Devices",
+    "A Mirror for Magistrates",
+    "Tottel's Miscellany"
+   ],
+   "correct_option_id": 2,
+   "explanation": "A Mirror for Magistrates linked medieval tragedy with Renaissance history, deeply influencing Elizabethan historical drama."
+  },
+  {
+   "id": "rn-h-43",
+   "question": "In William Shakespeare's 1609 sonnet sequence, sonnets 1 to 126 are predominantly addressed to which aristocratic figure?",
+   "options": [
+    "Mr. W. H.",
+    "The Dark Lady",
+    "The Rival Poet",
+    "The Fair Youth"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sonnets 1 to 126 explore themes of time, beauty, procreation, and friendship addressed to a noble young patron."
+  },
+  {
+   "id": "rn-h-44",
+   "question": "What conventional title is given to the sensuous, dark-complexioned woman addressed in Shakespeare's sonnets 127 through 152?",
+   "options": [
+    "Stella",
+    "Diana",
+    "Delia",
+    "The Dark Lady"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Dark Lady sonnets explore complex, turbulent sexual passion, inconstancy, and psychological torment."
+  },
+  {
+   "id": "rn-h-45",
+   "question": "In Shakespeare's sonnets 78 through 86, the speaker expresses professional anxiety regarding which mysterious poetic figure?",
+   "options": [
+    "The Rival Poet",
+    "The Fair Youth",
+    "The Courtier Maker",
+    "The Dark Lady"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Rival Poet sonnets express anxiety over another poet, commonly identified as George Chapman or Christopher Marlowe."
+  },
+  {
+   "id": "rn-h-46",
+   "question": "Which elite boys' theatrical company performed indoors at the Blackfriars Theatre, provoking Hamlet's remarks about the eyrie of children?",
+   "options": [
+    "The Lord Chamberlain's Men",
+    "The Children of the Chapel",
+    "The King's Men",
+    "The Admiral's Men"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Children of the Chapel were celebrated boy choristers whose popularity rivaled adult professional actors around 1600."
+  },
+  {
+   "id": "rn-h-47",
+   "question": "What is the full title of Sir Philip Sidney's elaborate prose pastoral romance composed for his sister, published in 1590?",
+   "options": [
+    "Rosalynde",
+    "The Shepheardes Calender",
+    "Euphues and his England",
+    "The Countess of Pembroke's Arcadia"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sidney wrote Arcadia for his sister Mary Herbert, Countess of Pembroke, blending pastoral romance with statecraft."
+  },
+  {
+   "id": "rn-h-48",
+   "question": "Mary Sidney, Countess of Pembroke, was one of the foremost literary patronesses of the Renaissance and completed which translation with her brother?",
+   "options": [
+    "The Sidneian Psalms",
+    "The King James Bible",
+    "The Book of Common Prayer",
+    "The Geneva Psalter"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mary Sidney completed metrical verse translations of the Psalms begun by Philip Sidney, using 128 different stanza forms."
+  },
+  {
+   "id": "rn-h-49",
+   "question": "Which Royalist statesman and advisor to Charles I composed the monumental firsthand historical work 'The History of the Rebellion'?",
+   "options": [
+    "Sir Thomas Browne",
+    "John Evelyn",
+    "Thomas Hobbes",
+    "Edward Hyde, Earl of Clarendon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lord Clarendon's History of the Rebellion provides an indispensable, psychologically acute history of the English Civil War."
+  },
+  {
+   "id": "rn-h-50",
+   "question": "Which historic 1643 military and religious treaty united the English parliamentary forces with the Scottish Covenanters during the Civil War?",
+   "options": [
+    "The Solemn League and Covenant",
+    "The Treaty of Dover",
+    "The Petition of Right",
+    "The Pacification of Berwick"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Solemn League and Covenant secured Scottish military intervention in exchange for reforming the Church along Presbyterian lines."
+  }
+ ]
+}
