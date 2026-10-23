@@ -1162,6 +1162,12 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
   /* the pictures have a white ground; multiply lets the card's own colour show through it */
   mix-blend-mode:multiply;
 }
+/* A painted scene that has its own background: shown as a small framed square, not blended. */
+.dq-pic.is-tile{
+  right:10px;bottom:10px;height:auto;width:clamp(70px,33%,112px);max-width:none;aspect-ratio:1;
+  object-fit:cover;border-radius:12px;mix-blend-mode:normal;
+  border:2px solid rgba(255,255,255,.92);box-shadow:0 2px 8px rgba(22,48,74,.22);
+}
 .dq-card:has(.dq-pic,.dq-ph) .dq-text{max-width:58%}
 .dq-text{position:relative}
 .dq-years{display:block;margin-top:3px;font-size:13.5px;font-weight:500;line-height:1.3;color:var(--mcq-ink-soft)}
