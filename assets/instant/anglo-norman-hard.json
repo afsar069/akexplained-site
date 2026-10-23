@@ -1,0 +1,608 @@
+{
+ "bankId": "anglo-norman",
+ "period": "Anglo-Norman Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "an-h-01",
+   "question": "Who was the Anglo-Norman noblewoman who commissioned Geoffrei Gaimar around 1136 to compose 'L Estoire des Engleis'?",
+   "options": [
+    "Constance FitzGilbert",
+    "Empress Matilda",
+    "Adeliza of Louvain",
+    "Eleanor of Aquitaine"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Constance FitzGilbert of Lincolnshire commissioned Gaimar to translate historical sources into Anglo-Norman French verse."
+  },
+  {
+   "id": "an-h-02",
+   "question": "To which English queen consort and patron of troubadour culture was Wace's 1155 verse romance 'Roman de Brut' dedicated?",
+   "options": [
+    "Isabella of Angouleme",
+    "Eleanor of Aquitaine",
+    "Adeliza of Louvain",
+    "Matilda of Flanders"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wace presented his French octosyllabic verse adaptation of Geoffrey of Monmouth to Queen Eleanor of Aquitaine around 1155."
+  },
+  {
+   "id": "an-h-03",
+   "question": "In which Worcestershire parish did the poet-priest Layamon live and serve while composing his Middle English alliterative 'Brut'?",
+   "options": [
+    "Areley Kings",
+    "Malvern",
+    "Worcester",
+    "Evesham"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In the prologue of his Brut, Layamon identifies himself as a priest residing at Ernley, now known as Areley Kings on the Severn."
+  },
+  {
+   "id": "an-h-04",
+   "question": "What specific metrical form was adopted by Anglo-Norman poets such as Wace and Marie de France for their verse narratives?",
+   "options": [
+    "Alliterative long lines",
+    "Tail-rhyme stanzas",
+    "Octosyllabic rhyming couplets",
+    "Iambic pentameter"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Anglo-Norman romances, lais, and chronicles predominantly utilized rhymed octosyllabic couplets derived from continental French verse."
+  },
+  {
+   "id": "an-h-05",
+   "question": "What technical linguistic label is given by scholars to the Early Middle English dialect found in 'Ancrene Wisse' and MS Bodley 34?",
+   "options": [
+    "AB language",
+    "Northern Chancery",
+    "Winchester standard",
+    "Kentish standard"
+   ],
+   "correct_option_id": 0,
+   "explanation": "J.R.R. Tolkien identified the remarkably consistent West Midland literary dialect shared by Ancrene Wisse and the Katherine Group as AB language."
+  },
+  {
+   "id": "an-h-06",
+   "question": "Which 12th-century Latin theological treatise by Hugh of Saint Victor serves as the source for the Middle English allegory 'Sawles Warde'?",
+   "options": [
+    "Sententiae",
+    "De Consolatione Philosophiae",
+    "Cur Deus Homo",
+    "De Anima"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sawles Warde is an Early Middle English homiletic adaptation of parts of Hugh of Saint Victor s treatise De Anima."
+  },
+  {
+   "id": "an-h-07",
+   "question": "In the allegorical text 'Sawles Warde', which personified faculty represents the master of the house of the human body?",
+   "options": [
+    "Wit",
+    "Conscience",
+    "Reason",
+    "Will"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wit represents the rational master of the household, who must maintain discipline over his unruly wife Will and bodily senses."
+  },
+  {
+   "id": "an-h-08",
+   "question": "In the allegorical structure of 'Sawles Warde', which figure is cast as Wit's headstrong and disorderly wife?",
+   "options": [
+    "Sloth",
+    "Pride",
+    "Will",
+    "Folly"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Sawles Warde, Will personifies the appetites and passions that constantly threaten to overpower Wit s rational governance."
+  },
+  {
+   "id": "an-h-09",
+   "question": "Which prose treatise in the Katherine Group vigorously argues that virginity is far superior to the domestic burdens of marriage?",
+   "options": [
+    "Seinte Margarete",
+    "Hali Meidhad",
+    "Seinte Juliene",
+    "Sawles Warde"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hali Meidhad, or Holy Maidenhood, is an early 13th-century prose tract warning women against marriage and childbirth trials."
+  },
+  {
+   "id": "an-h-10",
+   "question": "Which famous Oxford manuscript preserves the five early 13th-century devotional texts known collectively as the Katherine Group?",
+   "options": [
+    "MS Bodley 34",
+    "MS Junius 11",
+    "Harley MS 2253",
+    "Cotton Nero A. x"
+   ],
+   "correct_option_id": 0,
+   "explanation": "MS Bodley 34 in the Bodleian Library is the primary manuscript preserving the Katherine Group virgin martyr legends and tracts."
+  },
+  {
+   "id": "an-h-11",
+   "question": "To which specific historical arbitrator do the disputing birds in 'The Owl and the Nightingale' agree to submit their debate?",
+   "options": [
+    "Hugh of Saint Victor",
+    "Master Nicholas of Guildford",
+    "Walter Map",
+    "Robert Grosseteste"
+   ],
+   "correct_option_id": 1,
+   "explanation": "At the close of The Owl and the Nightingale, the birds travel to Dorset to seek the verdict of Master Nicholas of Guildford."
+  },
+  {
+   "id": "an-h-12",
+   "question": "In which Dorset settlement is Master Nicholas of Guildford said to dwell in 'The Owl and the Nightingale'?",
+   "options": [
+    "Portisham",
+    "Sherborne",
+    "Dorchester",
+    "Shaftesbury"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The poem praises Master Nicholas and specifies that he lives in the rural village of Portisham in Dorset."
+  },
+  {
+   "id": "an-h-13",
+   "question": "Which Oxford manuscript contains the oldest and finest surviving Anglo-Norman text of the epic 'The Song of Roland'?",
+   "options": [
+    "Caligula A.ix",
+    "Cotton Nero A. x",
+    "Otho C.xiii",
+    "Digby 23"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bodleian Library MS Digby 23, copied in an Anglo-Norman hand in England around 1125 to 1150, preserves the primary text of Roland."
+  },
+  {
+   "id": "an-h-14",
+   "question": "In which dialect and insular script was the celebrated Oxford Digby 23 manuscript of 'The Song of Roland' penned?",
+   "options": [
+    "Old Occitan",
+    "Anglo-Norman",
+    "Francien",
+    "Picard"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Oxford Roland is written in the Anglo-Norman dialect of French, demonstrating the insular preservation of French epics."
+  },
+  {
+   "id": "an-h-15",
+   "question": "Which 12th-century writer composed the earliest known surviving Anglo-Norman poem, a scientific calendar treatise titled 'Comput'?",
+   "options": [
+    "Wace",
+    "Benoit de Sainte-Maure",
+    "Geoffrei Gaimar",
+    "Philippe de Thaon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Philippe de Thaon composed his Comput around 1119, followed by his Bestiaire dedicated to Queen Adeliza of Louvain."
+  },
+  {
+   "id": "an-h-16",
+   "question": "Which queen consort of King Henry I served as the royal literary patron for Philippe de Thaon's Anglo-Norman 'Bestiaire'?",
+   "options": [
+    "Matilda of Scotland",
+    "Adeliza of Louvain",
+    "Constance FitzGilbert",
+    "Eleanor of Aquitaine"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Philippe de Thaon explicitly dedicated his verse Bestiaire around 1121 to Queen Adeliza, second wife of Henry I."
+  },
+  {
+   "id": "an-h-17",
+   "question": "Into how many distinct thematic books or parts is the prose devotional guide 'Ancrene Wisse' divided?",
+   "options": [
+    "Ten",
+    "Seven",
+    "Five",
+    "Eight"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ancrene Wisse is structured into eight books, with Books 1 and 8 forming the Outer Rule and Books 2 to 7 the Inner Rule."
+  },
+  {
+   "id": "an-h-18",
+   "question": "In Book Seven of 'Ancrene Wisse', what prominent allegorical parable illustrates Christ's redemption of the human soul?",
+   "options": [
+    "A Shepherd fighting a wolf",
+    "A King wooing an imprisoned lady",
+    "A Knight storming a dragon s cave",
+    "A Merchant seeking a pearl"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Christ is allegorized as a noble King who woos an ungrateful lady besieged in an earthen castle, dying to save her."
+  },
+  {
+   "id": "an-h-19",
+   "question": "Which Anglo-Norman poet wrote a vivid, eyewitness verse chronicle in rhyming alexandrines on the Scottish war of 1173 to 1174?",
+   "options": [
+    "Wace",
+    "Jordan Fantosme",
+    "Pierre de Langtoft",
+    "Geoffrei Gaimar"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Jordan Fantosme, a cleric of Winchester, composed a firsthand chronicle of the northern campaign against King William the Lion."
+  },
+  {
+   "id": "an-h-20",
+   "question": "Which northern English chronicler translated Pierre de Langtoft's Anglo-Norman verse chronicle into Middle English couplets in 1338?",
+   "options": [
+    "William of Wadington",
+    "Dan Michel",
+    "John of Trevisa",
+    "Robert Mannyng of Brunne"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Mannyng completed his English Chronicle of England in 1338, adapting Langtoft s Anglo-Norman chronicle for the second part."
+  },
+  {
+   "id": "an-h-21",
+   "question": "Which 12th-century Anglo-Welsh cleric and archdeacon of Brecon authored 'Topographia Hibernica' and 'Itinerarium Kambriae'?",
+   "options": [
+    "Walter Map",
+    "William of Malmesbury",
+    "Geoffrey of Monmouth",
+    "Giraldus Cambrensis"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Giraldus Cambrensis, or Gerald of Wales, wrote ethnographic and topographical accounts of Ireland and Wales in elegant Latin."
+  },
+  {
+   "id": "an-h-22",
+   "question": "Which 12th-century English historian popularized the famous anecdote of King Canute rebuking the incoming ocean tide?",
+   "options": [
+    "Orderic Vitalis",
+    "William of Malmesbury",
+    "Henry of Huntingdon",
+    "Bede"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Henry of Huntingdon recorded the didactic story of King Canute demonstrating the limits of royal power in his Historia Anglorum."
+  },
+  {
+   "id": "an-h-23",
+   "question": "In 'Historia Anglorum', Henry of Huntingdon structures British history around five invasions: Romans, Saxons, Danes, Normans, and which fifth group?",
+   "options": [
+    "Scots and Picts",
+    "Franks and Angles",
+    "Celts and Gauls",
+    "Vikings and Jutes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Henry of Huntingdon listed the five scourges of Britain as the Romans, the Scots and Picts, the English, the Danes, and the Normans."
+  },
+  {
+   "id": "an-h-24",
+   "question": "To which powerful royal figure, the Earl of Gloucester and illegitimate son of Henry I, did Geoffrey of Monmouth dedicate his history?",
+   "options": [
+    "Stephen of Blois",
+    "William Rufus",
+    "Robert of Gloucester",
+    "Henry of Blois"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Geoffrey of Monmouth dedicated his Historia Regum Britanniae to Robert, Earl of Gloucester, a pre-eminent Anglo-Norman magnate."
+  },
+  {
+   "id": "an-h-25",
+   "question": "According to Geoffrey of Monmouth's legendary history, which exiled Trojan hero conquered Britain and founded New Troy?",
+   "options": [
+    "Turnus",
+    "Brutus of Troy",
+    "Ascanius",
+    "Aeneas"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Geoffrey traced Britain s founding to Brutus, great-grandson of Aeneas, who purged the island of giants and founded Troia Nova."
+  },
+  {
+   "id": "an-h-26",
+   "question": "What is the name of the fateful battlefield where King Arthur and Mordred slay each other, as recorded by Geoffrey of Monmouth?",
+   "options": [
+    "Avalon",
+    "Badon Hill",
+    "Mount Snowdon",
+    "Camlann"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Battle of Camlann, placed around 537 or 542 in legend, marks Arthur s final clash where Mordred is killed and Arthur is wounded."
+  },
+  {
+   "id": "an-h-27",
+   "question": "The Anglo-Norman verse romance of 'Tristran' composed around 1170 by Thomas of Britain represents which literary aesthetic?",
+   "options": [
+    "The satirical version",
+    "The courtly version",
+    "The theological version",
+    "The common version"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Thomas of Britain wrote the refined, courtly psychological version of Tristan, emphasizing emotional introspection and chivalric decorum."
+  },
+  {
+   "id": "an-h-28",
+   "question": "Which Middle High German poet composed his celebrated Arthurian romance 'Tristan und Isold' by adapting Thomas of Britain's Anglo-Norman poem?",
+   "options": [
+    "Hartmann von Aue",
+    "Gottfried von Strassburg",
+    "Walther von der Vogelweide",
+    "Wolfram von Eschenbach"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Gottfried von Strassburg explicitly named Thomas of Britain as his master source for his classic German verse Tristan."
+  },
+  {
+   "id": "an-h-29",
+   "question": "In Marie de France's lai 'Guigemar', which creature inflicts a wound on the hero and foretells his suffering for love?",
+   "options": [
+    "A talking boar",
+    "A fierce dragon",
+    "A golden eagle",
+    "A white hind with horns"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Guigemar wounds an enchanted white doe, whose rebounded arrow wounds his thigh while the beast curses him to suffer for love."
+  },
+  {
+   "id": "an-h-30",
+   "question": "In Marie de France's lai 'Les Deus Amanz', what arduous physical challenge must the young lover perform to win his lady's hand?",
+   "options": [
+    "Swim across an icy river",
+    "Defeat three champions in tournament",
+    "Carry her up a high mountain without resting",
+    "Slain a mountain giant"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The youth carries his beloved up a steep Norman mountain, refusing to drink a strengthening potion until his heart bursts at the summit."
+  },
+  {
+   "id": "an-h-31",
+   "question": "Which lai by Marie de France tells of a fairy lover who visits an imprisoned lady by flying through her window in the shape of a hawk?",
+   "options": [
+    "Lanval",
+    "Guigemar",
+    "Yonec",
+    "Laustic"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Muldumarec transforms into a hawk to visit the locked-away lady, fathering the hero Yonec who later avenges his parents."
+  },
+  {
+   "id": "an-h-32",
+   "question": "In Marie de France's lai 'Laustic', what object is kept in a jewel-encrusted casket by the knight to remember his thwarted love?",
+   "options": [
+    "A bloodstained glove",
+    "A dead nightingale",
+    "A lock of hair",
+    "A golden ring"
+   ],
+   "correct_option_id": 1,
+   "explanation": "After the lady s jealous husband wrings the nightingale s neck, the knight has the bird embalmed in a golden vessel."
+  },
+  {
+   "id": "an-h-33",
+   "question": "Which lai by Marie de France portrays a noble knight whose self-sacrificing first wife, Guildeluec, enters a convent to allow his remarriage?",
+   "options": [
+    "Milun",
+    "Fresne",
+    "Chaitivel",
+    "Eliduc"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Eliduc, Guildeluec graciously accepts holy vows upon realizing her husband s deep love for the foreign princess Guilliadun."
+  },
+  {
+   "id": "an-h-34",
+   "question": "What is the title of Marie de France's collection of 102 fables translated into Anglo-Norman verse from an English source?",
+   "options": [
+    "Physiologus",
+    "Fabliaux",
+    "Ysopet",
+    "Bestiaire"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Marie de France compiled Ysopet, or Little Aesop, claiming in her epilogue to translate an English book compiled by King Alfred."
+  },
+  {
+   "id": "an-h-35",
+   "question": "Which narrative poem by Marie de France describes the descent of an Irish knight, Owein, into an entrance of purgatory?",
+   "options": [
+    "De Amore",
+    "Visio Pauli",
+    "La Seinte Resureccion",
+    "L Espurgatoire Seint Patriz"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Marie adapted the Latin vision of Saint Patrick s Purgatory into Anglo-Norman verse, describing knight Owein s spiritual trials."
+  },
+  {
+   "id": "an-h-36",
+   "question": "Which Anglo-Norman outlaw romance depicts the historical Marcher baron who rebelled against King John in Shropshire and the Welsh border?",
+   "options": [
+    "Gui de Warewic",
+    "Fouke le Fitz Waryn",
+    "Roman de Waldef",
+    "Boeve de Haumtoun"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Fouke le Fitz Waryn combines historical chronicle and romance, detailing Fulk III FitzWarin s guerilla rebellion against King John."
+  },
+  {
+   "id": "an-h-37",
+   "question": "Which landmark 1258 state document, reforming baronial government under Henry III, was the first royal proclamation issued in English since 1066?",
+   "options": [
+    "Statute of Marlborough",
+    "Magna Carta",
+    "Provisions of Oxford",
+    "Assize of Clarendon"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Provisions of Oxford in 1258 were circulated in Latin, French, and English, marking the re-emergence of written English for state use."
+  },
+  {
+   "id": "an-h-38",
+   "question": "Which English monarch was forced by Simon de Montfort and the barons to accept the Provisions of Oxford in 1258?",
+   "options": [
+    "Henry II",
+    "Edward I",
+    "King John",
+    "Henry III"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Henry III conceded governmental authority to a baronial council of fifteen under the revolutionary Provisions of Oxford in 1258."
+  },
+  {
+   "id": "an-h-39",
+   "question": "The moral treatise 'Ayenbite of Inwit' is celebrated by historical linguists as the quintessential specimen of which Middle English dialect?",
+   "options": [
+    "Kentish",
+    "Northern",
+    "East Midland",
+    "West Midland"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dan Michel s 1340 autograph manuscript provides an invaluable, localized phonetic record of the fourteenth-century Kentish dialect."
+  },
+  {
+   "id": "an-h-40",
+   "question": "Which French Dominican friar authored 'La Somme des Vices et des Vertus', the primary source translated into 'Ayenbite of Inwit'?",
+   "options": [
+    "Friar Laurent",
+    "Hugh of Saint Victor",
+    "Walter Map",
+    "William of Wadington"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Friar Laurent of Orleans composed Somme le Roi in 1279 for King Philip III of France, which Dan Michel translated into English."
+  },
+  {
+   "id": "an-h-41",
+   "question": "What is the title of William of Wadington's 13th-century Anglo-Norman work that Robert Mannyng translated into 'Handlyng Synne'?",
+   "options": [
+    "Somme des Vices",
+    "Roman de Rou",
+    "L Estoire des Engleis",
+    "Manuel des Pechiez"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Mannyng translated the Anglo-Norman Manuel des Pechiez, expanding its didactic stories into vigorous English verse."
+  },
+  {
+   "id": "an-h-42",
+   "question": "Which poem, composed around 1170 in septenary couplets, represents the earliest surviving Middle English rhymed poem?",
+   "options": [
+    "Ormulum",
+    "Cursor Mundi",
+    "Poema Morale",
+    "The Owl and the Nightingale"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Poema Morale, or the Moral Ode, consists of around 400 lines of rhyming fourteeners advising listeners to repent and avoid damnation."
+  },
+  {
+   "id": "an-h-43",
+   "question": "What is the strict metrical pattern devised by Orm for his 'Ormulum', consisting of unrhymed fifteen-syllable verses?",
+   "options": [
+    "Iambic septenarius",
+    "Anapestic tetrameter",
+    "Alliterative four-beat line",
+    "Dactylic hexameter"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Ormulum uses unrhymed iambic septenaries of fifteen syllables with an unvarying midline caesura after the eighth syllable."
+  },
+  {
+   "id": "an-h-44",
+   "question": "To which fellow Augustinian canon and brother in the flesh did Orm dedicate his monumental verse work 'The Ormulum'?",
+   "options": [
+    "Nicholas",
+    "William",
+    "Walter",
+    "Hugh"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In the dedication of the Ormulum, Orm addresses his brother Walter as his brother in the flesh and brother in Christ."
+  },
+  {
+   "id": "an-h-45",
+   "question": "In 'Havelok the Dane', what miraculous bodily phenomenon reveals Havelok's royal Danish parentage while he sleeps?",
+   "options": [
+    "A golden cross on his shoulder",
+    "A brilliant flame shining from his mouth",
+    "A sweet fragrance from his hands",
+    "A glowing halo above his head"
+   ],
+   "correct_option_id": 1,
+   "explanation": "A bright light streaming from Havelok s mouth and a royal birthmark on his shoulder prove his legitimate royal lineage."
+  },
+  {
+   "id": "an-h-46",
+   "question": "What is the name of the disinherited English princess whom Havelok the Dane marries and restores to the throne of England?",
+   "options": [
+    "Goldborough",
+    "Rymenhild",
+    "Felice",
+    "Heurodis"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Princess Goldborough, daughter of King Athelwold, is imprisoned by the treacherous Godrich until Havelok rescues and marries her."
+  },
+  {
+   "id": "an-h-47",
+   "question": "At which English Benedictine abbey was the famous Harley MS 978 containing the musical rota 'Sumer is icumen in' written and preserved?",
+   "options": [
+    "St Albans Abbey",
+    "Glastonbury Abbey",
+    "Reading Abbey",
+    "Bury St Edmunds Abbey"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The rota Sumer is icumen in was recorded around 1250 in the scriptorium of Reading Abbey in Berkshire."
+  },
+  {
+   "id": "an-h-48",
+   "question": "What is the title of the fragmentary 12th-century Anglo-Norman drama that dramatizes Christ's burial and the harrowing of hell?",
+   "options": [
+    "La Seinte Resureccion",
+    "Courtois d Arras",
+    "Le Mystere d Adam",
+    "Jeu de Saint Nicolas"
+   ],
+   "correct_option_id": 0,
+   "explanation": "La Seinte Resureccion, surviving in fragments in Paris and London manuscripts, is a pioneer vernacular passion and Easter play."
+  },
+  {
+   "id": "an-h-49",
+   "question": "In 'Le Mystere d Adam', while the spoken dialogue of the actors is in Anglo-Norman French, in what language are the rubrics written?",
+   "options": [
+    "Hebrew",
+    "Middle English",
+    "Latin",
+    "Old French"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The extensive stage directions and choral responsories in Le Mystere d Adam are written in liturgical church Latin."
+  },
+  {
+   "id": "an-h-50",
+   "question": "Which late 14th-century English poet authored 'Sir Launfal', an expanded Middle English tail-rhyme adaptation of Marie de France's 'Lanval'?",
+   "options": [
+    "Thomas Chestre",
+    "Dan Michel",
+    "Robert Mannyng",
+    "Walter Map"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thomas Chestre composed Sir Launfal, adapting Marie de France s lai into a popular 12-line tail-rhyme English romance."
+  }
+ ]
+}

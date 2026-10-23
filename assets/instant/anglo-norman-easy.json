@@ -1,0 +1,608 @@
+{
+ "bankId": "anglo-norman",
+ "period": "Anglo-Norman Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "an-e-01",
+   "question": "Which language became the primary language of the royal court and aristocracy in England following the Norman Conquest of 1066?",
+   "options": [
+    "Classical Latin",
+    "Middle High German",
+    "Old Norse",
+    "Anglo-Norman French"
+   ],
+   "correct_option_id": 3,
+   "explanation": "After the 1066 Conquest Anglo-Norman French was the spoken tongue of the English monarchy, baronial court, and aristocracy."
+  },
+  {
+   "id": "an-e-02",
+   "question": "What is the title of the earliest surviving rhymed chronicle in French verse, composed around 1136 by Geoffrei Gaimar?",
+   "options": [
+    "Le Mystere d Adam",
+    "L Estoire des Engleis",
+    "Roman de Brut",
+    "Roman de Rou"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Geoffrei Gaimar composed L Estoire des Engleis in Anglo-Norman rhymed couplets, tracing English history from Anglo-Saxon kings."
+  },
+  {
+   "id": "an-e-03",
+   "question": "Which Anglo-Norman poet introduced the legend of the Round Table to Arthurian romance in his work 'Roman de Brut'?",
+   "options": [
+    "Layamon",
+    "Wace",
+    "Geoffrei Gaimar",
+    "Benoit de Sainte-Maure"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wace introduced La Table Ronde in his 1155 Roman de Brut, symbolising chivalric equality among King Arthur's knights."
+  },
+  {
+   "id": "an-e-04",
+   "question": "Who authored the Early Middle English poem 'Brut' of over 16,000 alliterative lines, translating and expanding Wace's chronicle?",
+   "options": [
+    "Dan Michel",
+    "Orm",
+    "Robert Mannyng",
+    "Layamon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Layamon, a priest of Areley Kings in Worcestershire, composed the first English-language Arthurian chronicle around 1200."
+  },
+  {
+   "id": "an-e-05",
+   "question": "Who authored the influential 12th-century Latin chronicle 'Historia Regum Britanniae' that established Arthurian legend in Europe?",
+   "options": [
+    "Geoffrey of Monmouth",
+    "Bede",
+    "William of Malmesbury",
+    "Henry of Huntingdon"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Geoffrey of Monmouth composed Historia Regum Britanniae around 1136 to 1138, popularising King Arthur and Merlin."
+  },
+  {
+   "id": "an-e-06",
+   "question": "Which work is widely recognized as the earliest surviving verse romance written in the English vernacular?",
+   "options": [
+    "Guy of Warwick",
+    "King Horn",
+    "Sir Orfeo",
+    "Havelok the Dane"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Horn, composed around 1225 in rhyming couplets, is considered the earliest extant Middle English chivalric romance."
+  },
+  {
+   "id": "an-e-07",
+   "question": "Who is considered the first known female poet in Anglo-Norman and French literature, famous for her collection of courtly lais?",
+   "options": [
+    "Marie de France",
+    "Margery Kempe",
+    "Julian of Norwich",
+    "Eleanor of Aquitaine"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marie de France wrote twelve celebrated Breton lais in Anglo-Norman verse at the royal court of England during the late 12th century."
+  },
+  {
+   "id": "an-e-08",
+   "question": "Which early 13th-century Middle English prose manual was written as a guide for three noble sisters living as anchoresses?",
+   "options": [
+    "Handlyng Synne",
+    "Ayenbite of Inwit",
+    "Cursor Mundi",
+    "Ancrene Wisse"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ancrene Wisse, also known as Ancrene Riwle, provided monastic and domestic rules for female recluses in the West Midlands."
+  },
+  {
+   "id": "an-e-09",
+   "question": "Which Early Middle English debate poem features two birds arguing over religious gravity versus secular courtly love?",
+   "options": [
+    "The Owl and the Nightingale",
+    "The Parliament of Fowls",
+    "The Debate of the Carpenter s Tools",
+    "Wynnere and Wastoure"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Owl and the Nightingale, composed around 1200 in octosyllabic couplets, depicts a lively poetic dispute over human happiness."
+  },
+  {
+   "id": "an-e-10",
+   "question": "What is the title of the earliest surviving secular lyric in English accompanied by musical notation, opening with 'Sumer is icumen in'?",
+   "options": [
+    "The Pearl",
+    "The Cuckoo Song",
+    "Alysoun",
+    "Lenten is come with love to toune"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sumer is icumen in, known as The Cuckoo Song, is a 13th-century round preserved with musical notes in Harley MS 978."
+  },
+  {
+   "id": "an-e-11",
+   "question": "Which Norman king commissioned the comprehensive land survey known as the Domesday Book in 1086?",
+   "options": [
+    "Stephen",
+    "Henry I",
+    "William Rufus",
+    "William the Conqueror"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William the Conqueror ordered the Domesday survey in 1085 to assess English wealth and landholdings across his new feudal kingdom."
+  },
+  {
+   "id": "an-e-12",
+   "question": "Which 12th-century Anglo-Norman work is regarded as the earliest surviving semi-liturgical vernacular play in drama history?",
+   "options": [
+    "The Castle of Perseverance",
+    "Le Mystere d Adam",
+    "Everyman",
+    "Mankind"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Le Mystere d Adam, composed around 1140 to 1170, dramatises Adam and Eve, Cain and Abel, and prophets outside church doors."
+  },
+  {
+   "id": "an-e-13",
+   "question": "Which medieval French poet divided chivalric romances into the three categories of Britain, France, and Rome?",
+   "options": [
+    "Wace",
+    "Guillaume de Lorris",
+    "Jean Bodel",
+    "Chretien de Troyes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jean Bodel famously categorised medieval romances into the Matter of Britain, Matter of France, and Matter of Rome."
+  },
+  {
+   "id": "an-e-14",
+   "question": "Romances concerning King Arthur and the Knights of the Round Table belong to which traditional medieval literary grouping?",
+   "options": [
+    "Matter of Rome",
+    "Matter of Britain",
+    "Matter of France",
+    "Matter of England"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Matter of Britain encompasses all medieval legends and chivalric romances centered on King Arthur and his knights."
+  },
+  {
+   "id": "an-e-15",
+   "question": "Romances centered on Emperor Charlemagne and his twelve noble paladins are classified under which literary Matter?",
+   "options": [
+    "Matter of France",
+    "Matter of Rome",
+    "Matter of England",
+    "Matter of Britain"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Matter of France comprises the chansons de geste celebrating the military deeds of Charlemagne, Roland, and Oliver."
+  },
+  {
+   "id": "an-e-16",
+   "question": "Romances recounting the legendary exploits of Alexander the Great and the Trojan War are classified under which grouping?",
+   "options": [
+    "Matter of Britain",
+    "Matter of Rome",
+    "Matter of France",
+    "Matter of England"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Matter of Rome comprises medieval tales drawn from classical antiquity, notably Troy, Thebes, Aeneas, and Alexander."
+  },
+  {
+   "id": "an-e-17",
+   "question": "Which Middle English author composed a vast homiletic poem of gospel paraphrases using a strict personal phonetic spelling?",
+   "options": [
+    "Robert Mannyng",
+    "Orm",
+    "Layamon",
+    "Dan Michel"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Orm wrote the Ormulum around 1180, doubling consonants after short vowels to guide correct English vernacular pronunciation."
+  },
+  {
+   "id": "an-e-18",
+   "question": "In Marie de France's lais, which poem tells the story of a baron who is betrayed by his wife and trapped in the form of a werewolf?",
+   "options": [
+    "Yonec",
+    "Chevrefoil",
+    "Bisclavret",
+    "Lanval"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Bisclavret, a noble werewolf is betrayed by his unfaithful wife who steals his clothes, until the king discovers his gentle nature."
+  },
+  {
+   "id": "an-e-19",
+   "question": "Which lai by Marie de France recounts the story of an impoverished Arthurian knight beloved by a wealthy, otherworldly fairy mistress?",
+   "options": [
+    "Laustic",
+    "Eliduc",
+    "Lanval",
+    "Bisclavret"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lanval is rewarded with endless wealth by a fairy maiden on condition of secrecy, later being rescued by her from Arthur s court."
+  },
+  {
+   "id": "an-e-20",
+   "question": "In Marie de France's lai 'Chevrefoil', which plant's intertwining with hazel serves as a central symbol for Tristan and Yseult's love?",
+   "options": [
+    "Honeysuckle",
+    "Wild Rose",
+    "Ivy",
+    "Mistletoe"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Chevrefoil means honeysuckle, symbolizing how Tristan and Yseult cannot live without each other, just like honeysuckle on hazel."
+  },
+  {
+   "id": "an-e-21",
+   "question": "Which Middle English romance tells the tale of an exiled Danish prince who is saved and raised by a poor English fisherman?",
+   "options": [
+    "Bevis of Hampton",
+    "King Horn",
+    "Guy of Warwick",
+    "Havelok the Dane"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Havelok the Dane recounts the restoration of prince Havelok and princess Goldborough after Havelok is fostered by the fisherman Grim."
+  },
+  {
+   "id": "an-e-22",
+   "question": "What is the name of the pious fisherman who rescues prince Havelok and founds a famous coastal town named after him?",
+   "options": [
+    "Godrich",
+    "Ubbe",
+    "Godard",
+    "Grim"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The fisherman Grim flees Denmark with young Havelok to England, founding the Lincolnshire port town of Grimsby."
+  },
+  {
+   "id": "an-e-23",
+   "question": "Which legendary hero of medieval romance slays the Dun Cow and a fierce dragon before renouncing worldly fame to become a hermit?",
+   "options": [
+    "Guy of Warwick",
+    "King Horn",
+    "Havelok",
+    "Bevis of Hampton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Guy of Warwick performs knightly feats across Christendom to win lady Felice, then spends his later years in religious penance."
+  },
+  {
+   "id": "an-e-24",
+   "question": "Which popular romance hero is sold into slavery by his wicked mother and later wields the famous sword named Morglay?",
+   "options": [
+    "Guy of Warwick",
+    "King Horn",
+    "Bevis of Hampton",
+    "Sir Orfeo"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Bevis of Hampton is an exiled English hero who overcomes Saracen captors, riding the noble steed Arundel and wielding Morglay."
+  },
+  {
+   "id": "an-e-25",
+   "question": "Which Middle English Breton lay transforms the classical Greek myth of Orpheus and Eurydice into a medieval fairy romance?",
+   "options": [
+    "Lay le Freine",
+    "Sir Degare",
+    "Sir Launfal",
+    "Sir Orfeo"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Orfeo depicts King Orfeo using his magical harp to win back his abducted queen Dame Heurodis from the King of the Fairies."
+  },
+  {
+   "id": "an-e-26",
+   "question": "In the romance 'Sir Orfeo', what is the name of Orfeo's beloved queen who is abducted by the King of the Fairies?",
+   "options": [
+    "Princess Rymenhild",
+    "Dame Tryamour",
+    "Dame Heurodis",
+    "Goldborough"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Dame Heurodis is seized while resting under an ympe-tree in her orchard, and is subsequently rescued by her devoted husband."
+  },
+  {
+   "id": "an-e-27",
+   "question": "Which Anglo-Saxon king was defeated and killed on Senlac Hill near Hastings during the Norman invasion of 1066?",
+   "options": [
+    "Edmund Ironside",
+    "Harold Godwinson",
+    "Harold Harefoot",
+    "Edward the Confessor"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Harold Godwinson was the last crowned Anglo-Saxon monarch, slain at the Battle of Hastings on 14 October 1066."
+  },
+  {
+   "id": "an-e-28",
+   "question": "Which historic battle fought in October 1066 resulted in Duke William of Normandy gaining the crown of England?",
+   "options": [
+    "Battle of Brunanburh",
+    "Battle of Stamford Bridge",
+    "Battle of Hastings",
+    "Battle of Maldon"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Battle of Hastings established Norman rule over England, bringing fundamental feudal and cultural transformations."
+  },
+  {
+   "id": "an-e-29",
+   "question": "Following the Conquest of 1066, medieval England was trilingual. Beside English and Anglo-Norman French, which language was used for church and scholarship?",
+   "options": [
+    "Gaelic",
+    "Welsh",
+    "Old Norse",
+    "Latin"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Latin remained the universal language of the Church, liturgy, theology, legal records, and academic historiography."
+  },
+  {
+   "id": "an-e-30",
+   "question": "What hierarchical social system, characterized by land tenure in exchange for military service and fealty, was imposed by the Normans?",
+   "options": [
+    "Tribal chieftaincy",
+    "Feudalism",
+    "Merchant guildocracy",
+    "Monastic socialism"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William I instituted continental feudalism, distributing Saxon estates to Norman barons as crown tenants-in-chief."
+  },
+  {
+   "id": "an-e-31",
+   "question": "What title was given by the conquered English to William I's comprehensive 1086 tax and landholding survey because its judgment was final?",
+   "options": [
+    "Anglo-Saxon Chronicle",
+    "Book of Fees",
+    "Great Charter",
+    "Domesday Book"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The survey was called the Domesday Book by the English because its binding verdicts were likened to the Day of Judgment."
+  },
+  {
+   "id": "an-e-32",
+   "question": "Which regional dialect of Middle English emerged as the basis of the standard literary language due to London commerce and government?",
+   "options": [
+    "East Midland",
+    "Northern",
+    "West Midland",
+    "Southern"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The East Midland dialect of London and Chancery became the prestige literary dialect, later popularized by Chaucer and Caxton."
+  },
+  {
+   "id": "an-e-33",
+   "question": "What major linguistic change distinguished Middle English grammar from the complex case endings of Old English?",
+   "options": [
+    "Adoption of Celtic syntax",
+    "Addition of more noun cases",
+    "Loss of grammatical inflections",
+    "Elimination of prepositions"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Middle English transitioned from a synthetic to an analytic language through the leveling and loss of terminal inflections."
+  },
+  {
+   "id": "an-e-34",
+   "question": "In medieval English vocabulary, what term describes pairs of words like native 'swine' and Norman French 'pork' for animal and meat?",
+   "options": [
+    "Doublets",
+    "Kennings",
+    "Alliterations",
+    "Caesuras"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Linguistic doublets arose when native Germanic words for live animals were paired with French terms for prepared food."
+  },
+  {
+   "id": "an-e-35",
+   "question": "Who is the legendary High King of Britain around whom the medieval courtly romances of the Round Table are centered?",
+   "options": [
+    "King Arthur",
+    "King Mark",
+    "King Horn",
+    "King Alfred"
+   ],
+   "correct_option_id": 0,
+   "explanation": "King Arthur is the legendary monarch whose chivalric court and fellowship form the core of medieval British romance."
+  },
+  {
+   "id": "an-e-36",
+   "question": "What is the name of King Arthur's sovereign sword, given to him by the Lady of the Lake and returned to the water at his passing?",
+   "options": [
+    "Naegling",
+    "Hrunting",
+    "Morglay",
+    "Excalibur"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Excalibur is King Arthur s mythical sword, returned to the Lady of the Lake by Sir Bedevere after Arthur is mortally wounded."
+  },
+  {
+   "id": "an-e-37",
+   "question": "Which legendary wizard and prophet was first fully integrated into Arthurian narrative by Geoffrey of Monmouth?",
+   "options": [
+    "Genius",
+    "Morgause",
+    "Taliesin",
+    "Merlin"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Geoffrey of Monmouth popularized the enigmatic prophet-magician Merlin in his Prophetiae Merlini and British history."
+  },
+  {
+   "id": "an-e-38",
+   "question": "What is the name of the mystical, otherworldly island where King Arthur is borne to be healed of his grievous wounds after Camlann?",
+   "options": [
+    "Avalon",
+    "Camelot",
+    "Tintagel",
+    "Heorot"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Avalon is the legendary Celtic island of apples and enchantments where Arthur is taken aboard a barge after his final battle."
+  },
+  {
+   "id": "an-e-39",
+   "question": "Who is King Arthur's royal consort, whose courtly romance with Sir Lancelot contributes to the dissolution of the Round Table?",
+   "options": [
+    "Morgan le Fay",
+    "Iseult",
+    "Guinevere",
+    "Elaine"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Queen Guinevere is Arthur s wife, whose love for Lancelot becomes a tragic catalyst for the fracturing of the fellowship."
+  },
+  {
+   "id": "an-e-40",
+   "question": "Who is King Arthur's treacherous nephew or son who usurps the British throne, triggering the final battle at Camlann?",
+   "options": [
+    "Mordred",
+    "Kay",
+    "Gawain",
+    "Agravain"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mordred seizes the throne and attempts to take Queen Guinevere while Arthur is abroad, leading to mutual slaughter at Camlann."
+  },
+  {
+   "id": "an-e-41",
+   "question": "Which Middle English moral prose work, meaning 'Remorse of Conscience', was completed in 1340 in the Kentish dialect by Dan Michel?",
+   "options": [
+    "Handlyng Synne",
+    "Ancrene Wisse",
+    "Ayenbite of Inwit",
+    "Ormulum"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Ayenbite of Inwit was translated from French by Dan Michel of Northgate at Canterbury, providing a benchmark for Kentish prose."
+  },
+  {
+   "id": "an-e-42",
+   "question": "Which Middle English devotional poem by Robert Mannyng of Brunne illustrates sins and sacraments using entertaining moral stories?",
+   "options": [
+    "Cursor Mundi",
+    "Piers Plowman",
+    "Handlyng Synne",
+    "Poema Morale"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Mannyng composed Handlyng Synne in 1303 as a vernacular handbook of popular exempla to teach the laity moral living."
+  },
+  {
+   "id": "an-e-43",
+   "question": "In Robert Mannyng's 'Handlyng Synne', which famous exemplum warns against sacrilege by depicting youths condemned to dance for an entire year?",
+   "options": [
+    "The Dancers of Colbek",
+    "The Tale of Melibee",
+    "The Miller s Dance",
+    "The Friar s Curse"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Dancers of Colbek were cursed by a priest for singing and caroling in a churchyard on Christmas Eve, dancing non-stop for a year."
+  },
+  {
+   "id": "an-e-44",
+   "question": "Which encyclopedic Northern Middle English poem of around 24,000 lines recounts the universal history of mankind in Seven Ages?",
+   "options": [
+    "Piers Plowman",
+    "The Brut",
+    "Ormulum",
+    "Cursor Mundi"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Cursor Mundi, meaning Runner of the World, covers biblical and human history from Creation to the Day of Judgment."
+  },
+  {
+   "id": "an-e-45",
+   "question": "In the debate poem 'The Owl and the Nightingale', which bird advocates for courtly song, youth, and the pleasures of spring?",
+   "options": [
+    "The Hawk",
+    "The Cuckoo",
+    "The Nightingale",
+    "The Owl"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Nightingale defends secular lyrics, romance, and the joyful beauty of springtime against the grim complaints of the Owl."
+  },
+  {
+   "id": "an-e-46",
+   "question": "In 'The Owl and the Nightingale', which bird embodies ascetic gloom, traditional wisdom, and the necessity of repentance?",
+   "options": [
+    "The Eagle",
+    "The Owl",
+    "The Nightingale",
+    "The Raven"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Owl argues that life should be dedicated to sober reflection, mourning sin, and preparing human souls for the afterlife."
+  },
+  {
+   "id": "an-e-47",
+   "question": "Which popular Middle English romance tells of two faithful companions whose sworn friendship withstands leprosy and mortal trials?",
+   "options": [
+    "Athelston",
+    "Floris and Blancheflour",
+    "Amis and Amiloun",
+    "Sir Degare"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Amis and Amiloun portrays the ultimate trial of fraternal love and sworn brotherhood through divine testing and miraculous healing."
+  },
+  {
+   "id": "an-e-48",
+   "question": "Which courtly romance narrates the steadfast love and adventurous reunion of a noble Saracen prince and a Christian maiden?",
+   "options": [
+    "Floris and Blancheflour",
+    "King Horn",
+    "Bevis of Hampton",
+    "Guy of Warwick"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Floris and Blancheflour tells how the young prince Floris travels to Babylon to rescue his beloved Christian companion Blancheflour."
+  },
+  {
+   "id": "an-e-49",
+   "question": "Which 12th-century monastic historian wrote 'Gesta Regum Anglorum', earning praise as the most acute English historian since Bede?",
+   "options": [
+    "Orderic Vitalis",
+    "William of Malmesbury",
+    "Geoffrey of Monmouth",
+    "Henry of Huntingdon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William of Malmesbury composed Gesta Regum Anglorum around 1125, offering a critical, literate account of the English monarchy."
+  },
+  {
+   "id": "an-e-50",
+   "question": "What 1362 parliamentary law mandated that oral proceedings in English law courts be conducted in the English language rather than French?",
+   "options": [
+    "Provisions of Oxford",
+    "Statute of Pleading",
+    "Statute of Winchester",
+    "Assize of Clarendon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Statute of Pleading enacted in 1362 declared that French was too little known among the people and established English in court."
+  }
+ ]
+}

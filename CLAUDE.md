@@ -22,7 +22,7 @@ breaking it breaks a promise already made.
   (see rule 7). Change the template or the registry, never a generated page.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
-  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). First: `anglo-saxon/`.
+  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, page-head motif and `nav.js` into every built page
 
@@ -78,8 +78,9 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
 - Question file `assets/instant/<period>-<level>.json`:
   `{bankId, period, level, rev, questions:[{id, question, options, correct_option_id, explanation}]}`.
   The question text is the owner's and stays exactly as supplied; only `id` and `rev` are added.
-  Ids never change or get renumbered (`as-e-01`, `as-h-01`): readers' records and the future dashboard
-  hang on them. If a question's meaning changes, raise `rev`.
+  Ids never change or get renumbered: readers' records and the future dashboard hang on them. Prefix per
+  period, then `e` or `h`, then the number: `as-e-01` Anglo-Saxon, `an-h-01` Anglo-Norman (Literature bank
+  of a period: `asl-`, `anl-`). If a question's meaning changes, raise `rev`.
 - The engine shuffles options, except an option that points at the others ("All of the above",
   "Both A and B"). Order of questions: never seen, then missed, then right.
 - Progress stays in this browser only (`akd:<bank>:v1`, per question id) so it can move to an account later.
@@ -97,8 +98,12 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
    If the files are the same questions, even with the options in another order, STOP. Add nothing, tell
    the owner what matched, and ask for the right files. (This happened once: a "Literature" upload was
    the Age questions again, with the options shuffled.)
-3. Genuinely new questions for another period: copy the Anglo-Saxon hub page, add the pair of files,
-   open the card on the Daily page, add the page to `sitemap.xml`.
+3. Genuinely new questions for another period: copy the Anglo-Saxon hub page and change only the period's
+   words (title, meta, banner line and colour from `_data/mcqSpec.json`, notes link, the two level lines,
+   the "It covers" line from the real questions, `data-bank`, `data-src`), add the pair of files, open the
+   card on the Daily page ("Start Quiz →"), add the page to `sitemap.xml`. Anglo-Norman was done this way.
+   Keep the supplied text as it is. If words look damaged (for example a lost apostrophe, "Wit s"),
+   list them for the owner, and fix only if they say so.
 4. `npx eleventy`, link check, browser test (default start, 10 to 50 limits, instant answer, no scroll
    on answer, resume), push the branch. `main` only when asked (rule 5).
 
