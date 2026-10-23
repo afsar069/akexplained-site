@@ -1,0 +1,608 @@
+{
+ "bankId": "elizabethan",
+ "period": "Elizabethan Age",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "el-e-01",
+   "question": "Which English monarch reigned during the golden age of English literature spanning from 1558 to 1603?",
+   "options": [
+    "King Henry VIII",
+    "King James I",
+    "Queen Mary I",
+    "Queen Elizabeth I"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Queen Elizabeth I, daughter of Henry VIII and Anne Boleyn, ruled England from 1558 until her death in 1603."
+  },
+  {
+   "id": "el-e-02",
+   "question": "Which monumental allegorical epic poem was composed by Edmund Spenser to celebrate Queen Elizabeth I as Gloriana?",
+   "options": [
+    "The Faerie Queene",
+    "The Countess of Pembroke's Arcadia",
+    "Poly-Olbion",
+    "The Shepheardes Calender"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Edmund Spenser designed The Faerie Queene as a twelve-book chivalric epic allegorising moral virtues."
+  },
+  {
+   "id": "el-e-03",
+   "question": "Who authored the foundational Elizabethan sonnet sequence 'Astrophel and Stella', composed around 1582?",
+   "options": [
+    "Sir Philip Sidney",
+    "Sir Walter Raleigh",
+    "Samuel Daniel",
+    "Edmund Spenser"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Philip Sidney initiated the Elizabethan sonnet craze with his sequence Astrophel and Stella."
+  },
+  {
+   "id": "el-e-04",
+   "question": "Which brilliant University Wit composed the landmark blank verse tragedies 'Doctor Faustus' and 'The Jew of Malta'?",
+   "options": [
+    "Thomas Kyd",
+    "Christopher Marlowe",
+    "George Peele",
+    "John Lyly"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Christopher Marlowe revolutionized English drama with his powerful blank verse and overreaching protagonists."
+  },
+  {
+   "id": "el-e-05",
+   "question": "Who wrote 'The Spanish Tragedy', the pioneering Elizabethan revenge tragedy that established the genre in England?",
+   "options": [
+    "Christopher Marlowe",
+    "John Webster",
+    "Thomas Kyd",
+    "Thomas Middleton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Kyd introduced the Senecan revenge formula of ghosts, madness, and stage bloodshed in the late 1580s."
+  },
+  {
+   "id": "el-e-06",
+   "question": "Which University Wit authored the fashionable courtly prose romance 'Euphues: The Anatomy of Wit' in 1578?",
+   "options": [
+    "Thomas Nashe",
+    "Robert Greene",
+    "John Lyly",
+    "Thomas Lodge"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Lyly created the ornate, antithetical prose style known as Euphuism, celebrated in Elizabethan court circles."
+  },
+  {
+   "id": "el-e-07",
+   "question": "Which University Wit wrote the romantic comedy 'Friar Bacon and Friar Bungay' and the prose romance 'Pandosto'?",
+   "options": [
+    "Robert Greene",
+    "George Peele",
+    "Thomas Lodge",
+    "John Lyly"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Greene was a versatile dramatist and pamphleteer whose romance Pandosto inspired Shakespeare's Winter's Tale."
+  },
+  {
+   "id": "el-e-08",
+   "question": "What was the name of William Shakespeare's primary acting company, formed in 1594 under royal household patronage?",
+   "options": [
+    "The Lord Chamberlain's Men",
+    "The Admiral's Men",
+    "The Earl of Leicester's Men",
+    "The Queen's Men"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Formed in 1594 under Lord Hunsdon, the Lord Chamberlain's Men was the premier company of Shakespeare and Richard Burbage."
+  },
+  {
+   "id": "el-e-09",
+   "question": "Which famous circular open-air playhouse on London's Bankside opened in 1599 as the home of Shakespeare's acting troupe?",
+   "options": [
+    "The Curtain Theatre",
+    "The Swan Theatre",
+    "The Globe Theatre",
+    "The Rose Theatre"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Globe was built by the Chamberlain's Men in 1599 using timber salvaged from The Theatre in Shoreditch."
+  },
+  {
+   "id": "el-e-10",
+   "question": "In which Shakespearean comedy does the Venetian Jewish moneylender Shylock demand a pound of flesh as bond forfeit?",
+   "options": [
+    "Measure for Measure",
+    "The Comedy of Errors",
+    "The Two Gentlemen of Verona",
+    "The Merchant of Venice"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Shylock demands a pound of flesh from the merchant Antonio in court before Portia's clever legal intervention."
+  },
+  {
+   "id": "el-e-11",
+   "question": "In Shakespeare's pastoral comedy 'As You Like It', which heroine flees to the Forest of Arden disguised as Ganymede?",
+   "options": [
+    "Viola",
+    "Celia",
+    "Portia",
+    "Rosalind"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Rosalind disguises herself as the youth Ganymede, tutoring Orlando in the art of love in Arden."
+  },
+  {
+   "id": "el-e-12",
+   "question": "Which melancholy Danish prince is tasked by his father's ghost with avenging his murder by King Claudius in Shakespeare's tragedy?",
+   "options": [
+    "Prince Edgar",
+    "Prince Hamlet",
+    "Prince Malcolm",
+    "Prince Hal"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Prince Hamlet struggles with philosophical doubt, moral corruption, and revenge in Elsinore Castle."
+  },
+  {
+   "id": "el-e-13",
+   "question": "Which 16th-century chronicle history served as William Shakespeare's chief narrative source for his English history plays?",
+   "options": [
+    "William Camden's 'Britannia'",
+    "Raphael Holinshed's 'Chronicles'",
+    "Edward Hall's 'Chronicle'",
+    "John Foxe's 'Acts and Monuments'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Holinshed's Chronicles of England, Scotland, and Ireland provided historical plots for Shakespeare's histories and Macbeth."
+  },
+  {
+   "id": "el-e-14",
+   "question": "Whose 1579 English translation of Plutarch's 'Lives' was used by Shakespeare as the principal source for his Roman tragedies?",
+   "options": [
+    "John Florio",
+    "George Chapman",
+    "Philemon Holland",
+    "Sir Thomas North"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Thomas North's vivid prose translation of Plutarch supplied the dramatic plots and language for Julius Caesar."
+  },
+  {
+   "id": "el-e-15",
+   "question": "Which 1579 pastoral work by Edmund Spenser consists of twelve monthly eclogues lamenting Colin Clout's unrequited love?",
+   "options": [
+    "Epithalamion",
+    "The Shepheardes Calender",
+    "Amoretti",
+    "Prothalamion"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Shepheardes Calender announced Spenser's poetic arrival, using varied meters and archaic English diction."
+  },
+  {
+   "id": "el-e-16",
+   "question": "What is the title of Edmund Spenser's 89-sonnet sequence chronicling his courtship of his second wife, Elizabeth Boyle?",
+   "options": [
+    "Delia",
+    "Idea",
+    "Astrophel and Stella",
+    "Amoretti"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Spenser published Amoretti in 1595, celebrating joyful, reciprocal courtly love culminating in marriage."
+  },
+  {
+   "id": "el-e-17",
+   "question": "Which landmark critical treatise by Sir Philip Sidney was composed to defend imaginative poetry against puritan moralist attacks?",
+   "options": [
+    "A Defence of Ryme",
+    "An Apology for Poetry",
+    "A Discourse of English Poetrie",
+    "The Arte of English Poesie"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sidney's treatise defended poetry as an art that teaches and delights, creating a golden world superior to nature."
+  },
+  {
+   "id": "el-e-18",
+   "question": "Which early tragedy by Christopher Marlowe features the Scythian shepherd-conqueror who drives captive kings before his chariot?",
+   "options": [
+    "Tamburlaine the Great",
+    "The Massacre at Paris",
+    "Edward II",
+    "The Jew of Malta"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Tamburlaine was Marlowe's explosive stage triumph, celebrating boundless martial ambition in magnificent blank verse."
+  },
+  {
+   "id": "el-e-19",
+   "question": "Which historical tragedy by Christopher Marlowe depicts the tragic deposition and murder of a king due to his passion for Piers Gaveston?",
+   "options": [
+    "The Jew of Malta",
+    "Tamburlaine the Great",
+    "Edward II",
+    "Richard II"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Marlowe's Edward II is a pioneering English history play examining personal passion versus royal duty."
+  },
+  {
+   "id": "el-e-20",
+   "question": "Which famous Elizabethan pastoral lyric by Christopher Marlowe begins with the invitation 'Come live with me and be my love'?",
+   "options": [
+    "The Passionate Shepherd to His Love",
+    "The Nymph's Reply to the Shepherd",
+    "Hero and Leander",
+    "The Lie"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marlowe's idyllic pastoral lyric promises shepherd delights, embroidered gowns, and coral clasps."
+  },
+  {
+   "id": "el-e-21",
+   "question": "Which courtier and explorer wrote the satirical rebuttal 'The Nymph's Reply to the Shepherd', arguing that youth and flowers fade?",
+   "options": [
+    "Fulke Greville",
+    "Sir Walter Raleigh",
+    "Edmund Spenser",
+    "Sir Philip Sidney"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Raleigh replied realistically to Marlowe, noting that time drives flocks from field and joy has a date."
+  },
+  {
+   "id": "el-e-22",
+   "question": "In Book I of Edmund Spenser's 'The Faerie Queene', which knight bears the blood-red cross on his shield, representing Holiness?",
+   "options": [
+    "Sir Guyon",
+    "Sir Calidore",
+    "The Redcrosse Knight",
+    "Sir Artegall"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Redcrosse Knight journeys to slay the dragon threatening Una's parents, allegorising the Christian soul and Saint George."
+  },
+  {
+   "id": "el-e-23",
+   "question": "In Book I of 'The Faerie Queene', what is the name of the pure maiden who represents the True Church and Divine Truth?",
+   "options": [
+    "Duessa",
+    "Gloriana",
+    "Britomart",
+    "Una"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Una leads a white lamb and rides a snow-white ass, personifying singular, indivisible truth and true religion."
+  },
+  {
+   "id": "el-e-24",
+   "question": "Which virtuous knight represents the moral virtue of Temperance in Book II of Edmund Spenser's 'The Faerie Queene'?",
+   "options": [
+    "Sir Guyon",
+    "The Redcrosse Knight",
+    "Prince Arthur",
+    "Sir Artegall"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Guyon, guided by the Palmer, resists sensual temptations and destroys the corrupt Bower of Bliss."
+  },
+  {
+   "id": "el-e-25",
+   "question": "Which female warrior knight represents the virtue of Chastity in Book III of Edmund Spenser's 'The Faerie Queene'?",
+   "options": [
+    "Radigund",
+    "Belphoebe",
+    "Una",
+    "Britomart"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Britomart wields an enchanted spear to defend chastity, loving Artegall whom she beheld in a magic mirror."
+  },
+  {
+   "id": "el-e-26",
+   "question": "Which 1596 nuptial poem by Edmund Spenser celebrates the double wedding of the Earl of Worcester's daughters with the refrain 'Sweet Thames'?",
+   "options": [
+    "Daphnaida",
+    "Amoretti",
+    "Epithalamion",
+    "Prothalamion"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Prothalamion features two lovely swans floating down the River Thames to London, coined from Greek meaning pre-wedding song."
+  },
+  {
+   "id": "el-e-27",
+   "question": "What is the title of Edmund Spenser's joyful 1595 wedding hymn celebrating his own marriage to Elizabeth Boyle in Ireland?",
+   "options": [
+    "Epithalamion",
+    "Colin Clout",
+    "Fowre Hymnes",
+    "Prothalamion"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Epithalamion consists of 24 complex stanzas matching the hours of Midsummer Day, celebrating his wedding."
+  },
+  {
+   "id": "el-e-28",
+   "question": "Which epyllion or erotic narrative poem by William Shakespeare, published in 1593, retells an Ovidian myth of unrequited divine love?",
+   "options": [
+    "The Rape of Lucrece",
+    "A Lover's Complaint",
+    "Venus and Adonis",
+    "The Phoenix and the Turtle"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Dedicated to the Earl of Southampton, Venus and Adonis was Shakespeare's first printed literary publication."
+  },
+  {
+   "id": "el-e-29",
+   "question": "Which 1594 narrative poem by Shakespeare in rhyme royal recounts the tragic assault on a Roman matron by Prince Tarquin?",
+   "options": [
+    "Venus and Adonis",
+    "The Passionate Pilgrim",
+    "The Rape of Lucrece",
+    "Titus Andronicus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Rape of Lucrece dramatises Tarquin's crime, Lucrece's suicide for honor, and the founding of the Roman Republic."
+  },
+  {
+   "id": "el-e-30",
+   "question": "How many total sonnets are contained in William Shakespeare's definitive sonnet collection published in 1609 by Thomas Thorpe?",
+   "options": [
+    "160 sonnets",
+    "126 sonnets",
+    "100 sonnets",
+    "154 sonnets"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Shakespeare's 1609 quarto preserves 154 sonnets, divided between the Fair Youth sequence and the Dark Lady sequence."
+  },
+  {
+   "id": "el-e-31",
+   "question": "Which 1594 picaresque narrative by Thomas Nashe follows the European wanderings, battles, and intrigues of the page Jack Wilton?",
+   "options": [
+    "Pierce Penniless",
+    "The Terrors of the Night",
+    "The Unfortunate Traveller",
+    "Lenten Stuff"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Unfortunate Traveller is an early English picaresque masterpiece chronicling Jack Wilton's adventures in Renaissance Europe."
+  },
+  {
+   "id": "el-e-32",
+   "question": "What was the name of the first permanent commercial public amphitheater built in London, erected in Shoreditch in 1576?",
+   "options": [
+    "The Rose",
+    "The Theatre",
+    "The Globe",
+    "The Curtain"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Built by James Burbage, The Theatre established the prototype for the circular open-air Elizabethan public playhouse."
+  },
+  {
+   "id": "el-e-33",
+   "question": "Who was the actor and carpenter who built 'The Theatre' in 1576 and fathered the great tragic actor Richard Burbage?",
+   "options": [
+    "William Kempe",
+    "James Burbage",
+    "Edward Alleyn",
+    "Philip Henslowe"
+   ],
+   "correct_option_id": 1,
+   "explanation": "James Burbage secured land in Shoreditch to build The Theatre, initiating commercial English playhouse history."
+  },
+  {
+   "id": "el-e-34",
+   "question": "The defeat of which foreign invasion armada in July 1588 sparked an immense surge of English national pride and literature?",
+   "options": [
+    "The French Fleet",
+    "The Dutch Fleet",
+    "The Spanish Armada",
+    "The Portuguese Armada"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The destruction of King Philip II's Armada secured England's Protestant independence and fueled patriotic Elizabethan literature."
+  },
+  {
+   "id": "el-e-35",
+   "question": "Which 1561 academic drama by Norton and Sackville is celebrated as the earliest regular tragedy in blank verse in English?",
+   "options": [
+    "The Spanish Tragedy",
+    "Ralph Roister Doister",
+    "Gammer Gurton's Needle",
+    "Gorboduc"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Gorboduc, performed at the Inner Temple in 1561, was the first English play composed in unrhymed blank verse."
+  },
+  {
+   "id": "el-e-36",
+   "question": "Which 1553 school drama by Nicholas Udall is recognized by literary historians as the first regular English comedy?",
+   "options": [
+    "The Four PP",
+    "Gammer Gurton's Needle",
+    "Ralph Roister Doister",
+    "Everyman"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Nicholas Udall adapted classical Roman comedy to produce the earliest five-act English vernacular comedy."
+  },
+  {
+   "id": "el-e-37",
+   "question": "Which royal crown official held legal authority to inspect, censor, and license all theatrical plays in Elizabethan England?",
+   "options": [
+    "The Archbishop of Canterbury",
+    "The Master of the Revels",
+    "The Lord Chief Justice",
+    "The Lord Mayor of London"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Master of the Revels, notably Edmund Tilney from 1579, reviewed and licensed all scripts for public performance."
+  },
+  {
+   "id": "el-e-38",
+   "question": "Which celebrated Elizabethan tragic actor was the star of the Lord Admiral's Men and created Marlowe's Tamburlaine and Faustus?",
+   "options": [
+    "Richard Burbage",
+    "William Kempe",
+    "Robert Armin",
+    "Edward Alleyn"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edward Alleyn's powerful declamatory voice made him the foremost actor of Marlowe's titanic blank verse heroes."
+  },
+  {
+   "id": "el-e-39",
+   "question": "Who was the famous clown and comic dancer of the Lord Chamberlain's Men who danced the Morris from London to Norwich in 1600?",
+   "options": [
+    "Will Kempe",
+    "Robert Armin",
+    "John Singer",
+    "Richard Tarlton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Will Kempe was renowned for his rustic comedic roles and published his famous dance journey in Kemps Nine Daies Wonder."
+  },
+  {
+   "id": "el-e-40",
+   "question": "Which London theatrical entrepreneur kept an invaluable business diary recording box-office receipts, plays, and costumes from 1592 to 1603?",
+   "options": [
+    "James Burbage",
+    "Francis Langley",
+    "Philip Henslowe",
+    "Richard Burbage"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Philip Henslowe's Diary preserves the essential financial and production records of the Lord Admiral's Men at the Rose."
+  },
+  {
+   "id": "el-e-41",
+   "question": "Which Bankside playhouse was erected in 1587 by Philip Henslowe, serving as the first public amphitheater on the south bank of the Thames?",
+   "options": [
+    "The Rose",
+    "The Hope",
+    "The Swan",
+    "The Globe"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Rose playhouse was built by Henslowe in 1587 in Southwark, hosting Marlowe's and early Shakespeare's plays."
+  },
+  {
+   "id": "el-e-42",
+   "question": "Which Elizabethan sonnet sequence, published in 1592 and dedicated to the Countess of Pembroke, was written by Samuel Daniel?",
+   "options": [
+    "Idea",
+    "Delia",
+    "Caelica",
+    "Diana"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Samuel Daniel's Delia was praised for its lyrical grace, smooth English rhythm, and reflective melancholy."
+  },
+  {
+   "id": "el-e-43",
+   "question": "Which Warwickshire poet composed the sonnet sequence 'Idea', containing the famous sonnet 'Since there's no help, come let us kiss and part'?",
+   "options": [
+    "Samuel Daniel",
+    "Thomas Watson",
+    "Michael Drayton",
+    "Fulke Greville"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Michael Drayton published several editions of Idea, achieving lasting fame for his dramatic parting sonnet."
+  },
+  {
+   "id": "el-e-44",
+   "question": "Which towering Elizabethan philosopher and statesman published the first compact edition of ten 'Essays' in 1597?",
+   "options": [
+    "Francis Bacon",
+    "Sir Thomas Browne",
+    "Richard Hooker",
+    "Sir Walter Raleigh"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Francis Bacon introduced the English essay in 1597, writing pithy aphoristic meditations on truth, death, and ambition."
+  },
+  {
+   "id": "el-e-45",
+   "question": "Which Elizabethan theologian authored 'Of the Lawes of Ecclesiasticall Politie' (1593) to justify the Anglican Church against Puritanism?",
+   "options": [
+    "Richard Hooker",
+    "William Perkins",
+    "John Jewel",
+    "John Foxe"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Richard Hooker provided the supreme philosophical and theological defense of the Elizabethan Anglican Settlement."
+  },
+  {
+   "id": "el-e-46",
+   "question": "Which Elizabethan geographer compiled the celebrated maritime history 'The Principal Navigations of the English Nation' in 1589?",
+   "options": [
+    "Samuel Purchas",
+    "Richard Hakluyt",
+    "Thomas North",
+    "William Camden"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Richard Hakluyt's accounts of English oceanic voyages celebrated maritime heroism and promoted overseas trade."
+  },
+  {
+   "id": "el-e-47",
+   "question": "What is the popular title of John Foxe's 1563 Latin and English martyrology recounting Protestant burnings under Queen Mary I?",
+   "options": [
+    "The Golden Legend",
+    "The English Chronicle",
+    "The Mirror for Magistrates",
+    "Foxe's Book of Martyrs"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Originally titled Acts and Monuments, Foxe's Book of Martyrs shaped Protestant English national identity for generations."
+  },
+  {
+   "id": "el-e-48",
+   "question": "In Christopher Marlowe's 'Doctor Faustus', what is the name of the fallen demon servant who attends Faustus for twenty-four years?",
+   "options": [
+    "Lucifer",
+    "Mephistopheles",
+    "Belial",
+    "Beelzebub"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mephistopheles appears at Faustus's summons, explaining that hell is not a place but a state of eternal separation from God."
+  },
+  {
+   "id": "el-e-49",
+   "question": "In Shakespeare's historical tragedy 'Richard III', which desperate line is cried aloud by the King as he is unhorsed at Bosworth Field?",
+   "options": [
+    "A horse! a horse! my kingdom for a horse!",
+    "Cry God for Harry, England, and Saint George!",
+    "Uneasy lies the head that wears a crown",
+    "Now is the winter of our discontent"
+   ],
+   "correct_option_id": 0,
+   "explanation": "King Richard III desperately cries for a horse on Bosworth Field before being slain by the future Henry VII."
+  },
+  {
+   "id": "el-e-50",
+   "question": "In which year did Queen Elizabeth I die at Richmond Palace, ending the Tudor dynasty and the Elizabethan literary period?",
+   "options": [
+    "1616",
+    "1603",
+    "1600",
+    "1588"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Queen Elizabeth I died on 24 March 1603, succeeded peacefully by King James VI of Scotland as James I of England."
+  }
+ ]
+}

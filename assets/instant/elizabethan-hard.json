@@ -1,0 +1,608 @@
+{
+ "bankId": "elizabethan",
+ "period": "Elizabethan Age",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "el-h-01",
+   "question": "In Book II of Spenser's 'The Faerie Queene', what is the name of the Circe-like enchantress who presides over the corrupt Bower of Bliss?",
+   "options": [
+    "Duessa",
+    "Lucifera",
+    "Acrasia",
+    "Malecasta"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Guyon binds the sensual sorceress Acrasia and destroys her Bower of Bliss to champion Temperance."
+  },
+  {
+   "id": "el-h-02",
+   "question": "In Book I of 'The Faerie Queene', which deceptive sorceress disguises herself as the fair maiden Fidessa to mislead the Redcrosse Knight?",
+   "options": [
+    "Acrasia",
+    "Duessa",
+    "Ate",
+    "Munera"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Duessa personifies falsehood, deceit, and papal corruption, temporarily leading the Redcrosse Knight astray."
+  },
+  {
+   "id": "el-h-03",
+   "question": "Which patron knight represents the moral virtue of Justice in Book V of Edmund Spenser's 'The Faerie Queene'?",
+   "options": [
+    "Sir Calidore",
+    "Sir Triamond",
+    "Sir Artegall",
+    "Sir Guyon"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Artegall administers stern justice, accompanied by the invincible iron executioner Talus."
+  },
+  {
+   "id": "el-h-04",
+   "question": "In Book V of 'The Faerie Queene', what is the name of the swift, unyielding iron groom who wields an iron flail to execute severe justice?",
+   "options": [
+    "Malengin",
+    "Talus",
+    "Trompart",
+    "Braggadochio"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Talus, gifted to Artegall by Astraea, represents unswerving, mechanical executive law and physical force."
+  },
+  {
+   "id": "el-h-05",
+   "question": "Which 1595 pastoral elegy was composed by Edmund Spenser to lament the tragic battlefield death of his friend Sir Philip Sidney?",
+   "options": [
+    "Astrophel",
+    "The Tears of the Muses",
+    "Daphnaida",
+    "The Ruines of Time"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Spenser dedicated his pastoral elegy Astrophel to Sidney's memory, comparing his death in battle to Adonis."
+  },
+  {
+   "id": "el-h-06",
+   "question": "In 'The Shepheardes Calender' (1579), which pastoral persona does Edmund Spenser adopt to depict himself as an unhappy shepherd-poet?",
+   "options": [
+    "Colin Clout",
+    "Cuddie",
+    "Hobbinol",
+    "Thenot"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Spenser adopted Colin Clout from John Skelton, using the persona to voice his poetic ambitions and romantic grief."
+  },
+  {
+   "id": "el-h-07",
+   "question": "Who provided the pseudonymous introductory epistle, arguments, and explanatory marginal glosses for Spenser's 'The Shepheardes Calender'?",
+   "options": [
+    "Fulke Greville",
+    "E. K. (widely identified as Edward Kirke)",
+    "Gabriel Harvey",
+    "Sir Philip Sidney"
+   ],
+   "correct_option_id": 1,
+   "explanation": "E. K., Spenser's Cambridge friend Edward Kirke, supplied academic glosses praising Spenser as the new poet."
+  },
+  {
+   "id": "el-h-08",
+   "question": "To which courtier and fellow Irish colonial planter did Spenser address the famous 1589 explanatory letter expounding 'The Faerie Queene'?",
+   "options": [
+    "Lord Grey of Wilton",
+    "Sir Walter Raleigh",
+    "Sir Philip Sidney",
+    "The Earl of Leicester"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Spenser's Letter to Raleigh expounds his intention to fashion a gentleman in virtuous and gentle discipline."
+  },
+  {
+   "id": "el-h-09",
+   "question": "How many sonnets and interspersed songs comprise Sir Philip Sidney's complete sequence 'Astrophel and Stella'?",
+   "options": [
+    "89 sonnets and 4 songs",
+    "154 sonnets and 1 song",
+    "100 sonnets and 10 songs",
+    "108 sonnets and 11 songs"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Astrophel and Stella consists of precisely 108 Petrarchan sonnets interspersed with 11 narrative lyric songs."
+  },
+  {
+   "id": "el-h-10",
+   "question": "Which historical noblewoman, married against her will to Lord Rich, was the poetic inspiration for Stella in Sidney's sequence?",
+   "options": [
+    "Frances Walsingham",
+    "Lady Mary Sidney",
+    "Elizabeth Vernon",
+    "Lady Penelope Devereux"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Penelope Devereux, daughter of the Earl of Essex, inspired Stella, playing on her married name in sonnet 37."
+  },
+  {
+   "id": "el-h-11",
+   "question": "In 'An Apology for Poetry', Sidney famously defines poetry as an art of imitation, a speaking picture, with the end to:",
+   "options": [
+    "Teach and delight",
+    "Promote church liturgical reform",
+    "Instruct in classical Latin grammar",
+    "Praise monarchs and state ministers"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sidney adapts Horace's docere et delectare, asserting that poetry's true aim is to teach virtue through delight."
+  },
+  {
+   "id": "el-h-12",
+   "question": "In 'An Apology for Poetry', which class of poets does Sidney declare supreme because they range freely in the zodiac of their own wit?",
+   "options": [
+    "Right poets who create an unborrowed, golden world",
+    "Historical poets who record actual military events",
+    "Philosophical poets who expound natural sciences",
+    "Religious poets who imitate God's scriptures"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sidney exalts right poets because Nature's world is brazen, whereas the poet alone delivers a golden world."
+  },
+  {
+   "id": "el-h-13",
+   "question": "Which puritan writer provoked Sidney's 'Apology' by dedicating his anti-theatrical tract 'The School of Abuse' to Sidney in 1579?",
+   "options": [
+    "John Rainolds",
+    "Philip Stubbes",
+    "Stephen Gosson",
+    "William Prynne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Stephen Gosson's tract attacked poetry and theater as schools of vice, prompting Sidney's formal philosophical rebuttal."
+  },
+  {
+   "id": "el-h-14",
+   "question": "Which 1586 critical tract by William Webbe advocated that English poets should discard rhyme in favor of classical quantitative meters?",
+   "options": [
+    "A Discourse of English Poetrie",
+    "The Arte of English Poesie",
+    "A Defence of Ryme",
+    "Certayne Notes of Instruction"
+   ],
+   "correct_option_id": 0,
+   "explanation": "William Webbe praised Spenser while urging English writers to adopt classical Greek and Latin quantitative hexameters."
+  },
+  {
+   "id": "el-h-15",
+   "question": "Which comprehensive 1589 critical manual, attributed to George Puttenham, surveyed English poetics and categorized courtier poets?",
+   "options": [
+    "The Arte of English Poesie",
+    "A Discourse of English Poetrie",
+    "Certayne Notes of Instruction",
+    "The Steel Glas"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Puttenham's three-part treatise examined poetic forms, proportion, and rhetorical ornament for courtly makers."
+  },
+  {
+   "id": "el-h-16",
+   "question": "Which 1603 treatise did Samuel Daniel write to defend the musicality and historical dignity of English rhyme against Thomas Campion?",
+   "options": [
+    "An Apology for Poetry",
+    "The Civile Wars",
+    "A Defence of Ryme",
+    "Musophilus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Samuel Daniel argued that rhyme is natural to vernacular languages and defended the cultural genius of the Middle Ages."
+  },
+  {
+   "id": "el-h-17",
+   "question": "What is the title of Thomas Campion's 1602 critical treatise that attacked English rhyming as vulgar, childish, and unclassical?",
+   "options": [
+    "A Discourse of English Poetrie",
+    "A Defence of Ryme",
+    "Observations in the Art of English Poesie",
+    "The Arte of English Poesie"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Campion argued for unrhymed quantitative lyric meters, calling rhyme a crude, barbarous gothic custom."
+  },
+  {
+   "id": "el-h-18",
+   "question": "In Thomas Kyd's 'The Spanish Tragedy', what is the name of the grief-stricken Knight Marshal of Spain whose son Horatio is murdered?",
+   "options": [
+    "Lorenzo",
+    "Don Andrea",
+    "Balthazar",
+    "Hieronimo"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hieronimo discovers his murdered son Horatio hanged in an arbor and plots an elaborate, bloody theatrical revenge."
+  },
+  {
+   "id": "el-h-19",
+   "question": "What is the title of the multilingual tragedy staged by Hieronimo as a lethal play-within-a-play to slaughter his enemies?",
+   "options": [
+    "The Spanish Tragedy",
+    "The Misfortunes of Arthur",
+    "Tancred and Gismund",
+    "Soliman and Perseda"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hieronimo has the royal conspirators act parts in Soliman and Perseda, using real weapons to execute his revenge."
+  },
+  {
+   "id": "el-h-20",
+   "question": "In Christopher Marlowe's 'The Jew of Malta', what is the name of Barabas's virtuous daughter who converts to Christianity?",
+   "options": [
+    "Abigail",
+    "Katherine",
+    "Bellamira",
+    "Zenocrate"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Abigail enters a nunnery after discovering her father orchestrated the deaths of her suitors, whereupon Barabas poisons her."
+  },
+  {
+   "id": "el-h-21",
+   "question": "What is the name of the Turkish slave whom Barabas buys at the market to act as his ruthless accomplice in 'The Jew of Malta'?",
+   "options": [
+    "Calymath",
+    "Mathias",
+    "Ithamore",
+    "Del Bosco"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Barabas adopts Ithamore as his partner in crime, declaring they are united by a mutual hatred of Christians."
+  },
+  {
+   "id": "el-h-22",
+   "question": "In Marlowe's tragedy 'Edward II', who is the King's Gascon-born royal favorite whose recall provokes open civil war among the English barons?",
+   "options": [
+    "Spencer Junior",
+    "Baldock",
+    "Mortimer Senior",
+    "Piers Gaveston"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edward II's obsessive devotion to Gaveston alienated the English nobility, leading to Gaveston's execution and royal deposition."
+  },
+  {
+   "id": "el-h-23",
+   "question": "Which ambitious English baron becomes Queen Isabella's paramour and orchestrates the brutal deposition and murder of King Edward II?",
+   "options": [
+    "Roger Mortimer (Mortimer Junior)",
+    "The Earl of Warwick",
+    "The Earl of Kent",
+    "The Earl of Lancaster"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mortimer Junior rules England alongside Queen Isabella until young Edward III executes him on the gallows at Tyburn."
+  },
+  {
+   "id": "el-h-24",
+   "question": "Which London playhouse, opened in 1587 on Bankside by Philip Henslowe, was the original stage for Marlowe's greatest theatrical triumphs?",
+   "options": [
+    "The Swan Theatre",
+    "The Globe Theatre",
+    "The Curtain Theatre",
+    "The Rose Theatre"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Rose was the home playhouse of the Lord Admiral's Men and the venue where Edward Alleyn starred in Marlowe's plays."
+  },
+  {
+   "id": "el-h-25",
+   "question": "Which 1584 mythological court comedy by George Peele dramatizes the Judgment of Paris, awarding the golden apple to Queen Elizabeth?",
+   "options": [
+    "The Old Wives' Tale",
+    "The Battle of Alcazar",
+    "David and Bethsabe",
+    "The Arraignment of Paris"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Peele's pastoral play flatters Queen Elizabeth, having Diana deliver the golden ball directly into the Queen's royal hands."
+  },
+  {
+   "id": "el-h-26",
+   "question": "Which fantastical 1595 stage comedy by George Peele features the storyteller Madge and parodies romantic folklore, sorcery, and chivalry?",
+   "options": [
+    "The Shoemaker's Holiday",
+    "The Old Wives' Tale",
+    "The Arraignment of Paris",
+    "Friar Bacon and Friar Bungay"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Peele's play frames folk adventures around a cottage fireside tale told by an old countrywoman named Madge."
+  },
+  {
+   "id": "el-h-27",
+   "question": "Which 1590 pastoral romance by Thomas Lodge provided William Shakespeare with the direct narrative plot for 'As You Like It'?",
+   "options": [
+    "Rosalynde: Euphues Golden Legacie",
+    "The Unfortunate Traveller",
+    "Pandosto",
+    "Menaphon"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shakespeare closely followed Lodge's Rosalynde, adapting its characters, Forest of Arden setting, and gender disguises."
+  },
+  {
+   "id": "el-h-28",
+   "question": "Which 1588 prose romance by Robert Greene provided the foundational plot and characters for Shakespeare's 'The Winter's Tale'?",
+   "options": [
+    "Pandosto: The Triumph of Time",
+    "Menaphon",
+    "Mamillia",
+    "A Groats-worth of Wit"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shakespeare adapted Greene's Pandosto, altering character names and providing a joyful resurrection for Hermione."
+  },
+  {
+   "id": "el-h-29",
+   "question": "In Robert Greene's comedy 'Friar Bacon and Friar Bungay', what magical brass artifact speaks three brief phrases before shattering?",
+   "options": [
+    "The Golden Chalice",
+    "The Brazen Head",
+    "The Iron Flail",
+    "The Magic Mirror"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bacon's servant Miles falls asleep as the Brazen Head speaks Time is, Time was, and Time is past, then explodes."
+  },
+  {
+   "id": "el-h-30",
+   "question": "In Thomas Nashe's 'The Unfortunate Traveller' (1594), which historical English courtier poet does Jack Wilton accompany across Europe?",
+   "options": [
+    "Henry Howard, Earl of Surrey",
+    "Sir Philip Sidney",
+    "Sir Thomas Wyatt",
+    "Sir Walter Raleigh"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Jack Wilton travels with Surrey across Europe, witnessing tournaments where Surrey defends fair Geraldine's beauty."
+  },
+  {
+   "id": "el-h-31",
+   "question": "Which 1592 satirical pamphlet by Thomas Nashe portrays a destitute scholar sending a formal petition to Lucifer complaining of greed?",
+   "options": [
+    "Christs Teares over Jerusalem",
+    "Pierce Penniless His Supplication to the Devil",
+    "Lenten Stuff",
+    "The Anatomy of Absurdity"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nashe's brilliant prose satire lashes the Seven Deadly Sins and social avarice of late Elizabethan London."
+  },
+  {
+   "id": "el-h-32",
+   "question": "What was the name of the fierce 1588–1589 tract war in which a pseudonymous puritan satirist violently mocked the Anglican bishops?",
+   "options": [
+    "The Vestments Controversy",
+    "The Martin Marprelate Controversy",
+    "The Isle of Dogs Scandal",
+    "The War of the Theatres"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Under the pseudonym Martin Marprelate, puritan printers attacked Anglican bishops with hilarious, colloquial satire."
+  },
+  {
+   "id": "el-h-33",
+   "question": "Which two University Wits were officially hired by Anglican church authorities to compose mocking satirical counter-pamphlets against Martin?",
+   "options": [
+    "Thomas Kyd and Christopher Marlowe",
+    "Robert Greene and George Peele",
+    "John Lyly and Thomas Nashe",
+    "Thomas Lodge and Thomas Dekker"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lyly and Nashe adopted Martin's scurrilous, popular style to ridicule the puritan pamphleteers."
+  },
+  {
+   "id": "el-h-34",
+   "question": "What 1599 ecclesiastical censorship order issued by Archbishop Whitgift and Bishop Bancroft banned and burned formal verse satires in London?",
+   "options": [
+    "The Act of Uniformity",
+    "The Bishops' Ban of 1599",
+    "The Licensing Order of 1599",
+    "The Injunctions of 1599"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Bishops' Ban prohibited verse satire and epigrams, ordering works by Marston, Hall, and Davies burned in Stationers' Hall."
+  },
+  {
+   "id": "el-h-35",
+   "question": "What Latin critical term designates the satirical theatrical feud between Ben Jonson and rival playwrights Marston and Dekker around 1600?",
+   "options": [
+    "Poetomachia (The War of the Theatres)",
+    "Psychomachia",
+    "Batrachomyomachia",
+    "Querelle des Femmes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Poetomachia was a rivalry where Jonson satirised Marston and Dekker in Cynthia's Revels and Poetaster."
+  },
+  {
+   "id": "el-h-36",
+   "question": "In Ben Jonson's satirical drama 'Poetaster' (1601), which character representing John Marston is administered a purge to vomit hard words?",
+   "options": [
+    "Horace",
+    "Tucca",
+    "Crispinus",
+    "Demetrius"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Horace, representing Jonson, gives Crispinus a purge to vomit up bombastic Latinate neologisms onto the stage."
+  },
+  {
+   "id": "el-h-37",
+   "question": "Which 1599 citizen comedy by Thomas Dekker celebrates London guild life and the rise of eccentric shoemaker Simon Eyre to Lord Mayor?",
+   "options": [
+    "Old Fortunatus",
+    "The Shoemaker's Holiday",
+    "The Honest Whore",
+    "Patient Grissel"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Shoemaker's Holiday depicts the craftsmen of London with infectious festive energy, romance, and civic pride."
+  },
+  {
+   "id": "el-h-38",
+   "question": "Which elite royal theatrical company was founded in 1583 under the direction of Sir Francis Walsingham, featuring Richard Tarlton?",
+   "options": [
+    "The Lord Chamberlain's Men",
+    "Queen Elizabeth's Men (The Queen's Men)",
+    "The Earl of Leicester's Men",
+    "The Lord Admiral's Men"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Queen's Men united twelve top actors from noble companies into a nationwide royal theatrical monopoly."
+  },
+  {
+   "id": "el-h-39",
+   "question": "Who was the legendary comedic clown of the Queen's Men, famed for his extemporal rhyming and stage jigs, who died in 1588?",
+   "options": [
+    "John Singer",
+    "Robert Armin",
+    "Richard Tarlton",
+    "Will Kempe"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Richard Tarlton was the most famous comic performer of the Elizabethan era, acclaimed for witty extemporal verse."
+  },
+  {
+   "id": "el-h-40",
+   "question": "What was the name of the indoor private theater created in 1596 by James Burbage within the monastic precinct of Blackfriars?",
+   "options": [
+    "The Salisbury Court Theatre",
+    "The Cockpit Theatre",
+    "The Second Blackfriars Theatre",
+    "The First Blackfriars Theatre"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Burbage purchased the Blackfriars hall in 1596, though local residents prevented adult companies playing there until 1608."
+  },
+  {
+   "id": "el-h-41",
+   "question": "Which supreme tragic actor of the Lord Chamberlain's Men created the original stage roles of Richard III, Hamlet, Othello, and King Lear?",
+   "options": [
+    "Richard Burbage",
+    "Edward Alleyn",
+    "Henry Condell",
+    "William Kempe"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Richard Burbage was the premier tragic star of Shakespeare's troupe, creating the greatest roles in Western drama."
+  },
+  {
+   "id": "el-h-42",
+   "question": "In Shakespeare's 'Love's Labour's Lost', which fantastical Spanish knight serves as a satirical caricature of Euphuistic courtly language?",
+   "options": [
+    "Nathaniel",
+    "Holofernes",
+    "Costard",
+    "Don Adriano de Armado"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Don Adriano de Armado is a refined traveler of Spain whose speeches parody the florid, antithetical Euphuistic style."
+  },
+  {
+   "id": "el-h-43",
+   "question": "In 'A Midsummer Night's Dream', what is the trade of the amateur actor Nick Bottom who is magically given the head of an ass by Puck?",
+   "options": [
+    "A Bellows-mender",
+    "A Weaver",
+    "A Carpenter",
+    "A Joiner"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nick Bottom the weaver is rehearsing Pyramus and Thisbe when Puck transforms his head into that of a donkey."
+  },
+  {
+   "id": "el-h-44",
+   "question": "In 'The Merchant of Venice', which casket does the wise suitor Bassanio select to win the portrait and hand of the heiress Portia?",
+   "options": [
+    "The Bronze Casket",
+    "The Gold Casket",
+    "The Silver Casket",
+    "The Lead Casket"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bassanio rejects gold and silver, choosing the humble lead casket warning that who chooses it must hazard all he hath."
+  },
+  {
+   "id": "el-h-45",
+   "question": "In Shakespeare's 'Henry IV, Part 1', at which Eastcheap tavern do Prince Hal, Sir John Falstaff, and their companions feast and jest?",
+   "options": [
+    "The Tabard Inn",
+    "The Boar's Head Tavern",
+    "The Mermaid Tavern",
+    "The Mitre Tavern"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Boar's Head Tavern in Eastcheap is the tavern home of Falstaff, Mistress Quickly, and Prince Hal's tavern world."
+  },
+  {
+   "id": "el-h-46",
+   "question": "Which French princess does King Henry V court in charming broken French and English in Act V of Shakespeare's 'Henry V'?",
+   "options": [
+    "Princess Margaret of Anjou",
+    "Queen Isabella of France",
+    "Princess Joan of France",
+    "Princess Katherine of Valois"
+   ],
+   "correct_option_id": 3,
+   "explanation": "King Henry V wooes Princess Katherine in a famous bilingual scene, uniting the crowns of England and France."
+  },
+  {
+   "id": "el-h-47",
+   "question": "What is the name of the cynical, melancholy lord in 'As You Like It' who delivers the famous monologue 'All the world's a stage'?",
+   "options": [
+    "Oliver",
+    "Silvius",
+    "Jaques",
+    "Touchstone"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lord Jaques delivers the celebrated Seven Ages of Man speech in Act II, Scene 7 of As You Like It."
+  },
+  {
+   "id": "el-h-48",
+   "question": "In 'Twelfth Night', what ridiculous garment cross-gartered does the steward Malvolio wear to Countess Olivia after reading a forged letter?",
+   "options": [
+    "A fur-lined cloak",
+    "A scarlet doublet",
+    "Yellow stockings",
+    "Green velvet breeches"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Maria's forged letter tricks the puritanical Malvolio into appearing before Olivia smiling and cross-gartered in yellow stockings."
+  },
+  {
+   "id": "el-h-49",
+   "question": "Which monumental Latin chorography by William Camden (1586) offered the first comprehensive topographical and antiquarian survey of Britain?",
+   "options": [
+    "Survey of London",
+    "Poly-Olbion",
+    "The Itinerary",
+    "Britannia"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Camden's Britannia was the first county-by-county archaeological and antiquarian history of Great Britain."
+  },
+  {
+   "id": "el-h-50",
+   "question": "What is the title of King James VI of Scotland's 1597 philosophical dialogue on witchcraft and demonology that directly influenced 'Macbeth'?",
+   "options": [
+    "Triplici Nodo",
+    "The True Law of Free Monarchies",
+    "Basilikon Doron",
+    "Daemonologie"
+   ],
+   "correct_option_id": 3,
+   "explanation": "King James VI published Daemonologie in 1597 to refute skeptics and expound the theological reality of black sorcery."
+  }
+ ]
+}
