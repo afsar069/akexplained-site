@@ -1600,7 +1600,7 @@
     var back = root.innerHTML;    /* result waapas lane ke liye */
     var at = 0, shown = false;
 
-    function draw() {
+    function draw(stay) {
       var i = list[at], q = Q[i];
       root.innerHTML =
         '<div class="cbt-fc">' +
@@ -1638,13 +1638,14 @@
         '</div>';
 
       var show = $('#fcShow');
-      if (show) show.addEventListener('click', function () { shown = true; draw(); });
+      if (show) show.addEventListener('click', function () { shown = true; draw(true); });
       $('#fcPrev').addEventListener('click', function () { if (at > 0) { at--; shown = false; draw(); } });
       $('#fcNext').addEventListener('click', function () {
         if (at < list.length - 1) { at++; shown = false; draw(); } else leave();
       });
       $('#fcBack').addEventListener('click', leave);
-      window.scrollTo(0, 0);
+      /* Showing the answer keeps the page where it is; a new card starts at the top. */
+      if (!stay) window.scrollTo(0, 0);
     }
 
     function leave() {

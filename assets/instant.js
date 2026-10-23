@@ -107,7 +107,13 @@
   }
   function show(which) {
     ['setup', 'play', 'result'].forEach(function (k) { el[k].hidden = (k !== which); });
-    window.scrollTo(0, Math.max(0, root.getBoundingClientRect().top + window.pageYOffset - 90));
+    bringIntoView(root);
+  }
+  /* Scroll only if the top of this box is above the screen (so it cannot be seen).
+     If it is already in view, leave the page alone. */
+  function bringIntoView(node) {
+    var top = node.getBoundingClientRect().top;
+    if (top < 70) window.scrollTo(0, Math.max(0, top + window.pageYOffset - 90));
   }
   function currentLevel() {
     var r = root.querySelector('input[name="iqLevel"]:checked');
@@ -290,7 +296,7 @@
     el.fb.hidden = true;
     el.next.hidden = true;
     if (answered) markAnswer(item, run.picks[item.id], false);
-    else el.q.focus({ preventScroll: true });
+    else { el.q.focus({ preventScroll: true }); bringIntoView(el.meta); }
   }
 
   function markAnswer(item, pick, fresh) {
@@ -319,9 +325,9 @@
     el.next.textContent = run.i < run.n - 1 ? 'Next question →' : 'See your result →';
     el.score.textContent = 'Right so far: ' + rightSoFar();
     el.bar.style.width = Math.round((run.i + 1) / run.n * 100) + '%';
-    if (fresh) {
-      el.next.focus();
-    }
+    /* Focus goes to Next (so Enter works) but the page stays where it is.
+       The reader scrolls down for the reason if they want it. */
+    if (fresh) el.next.focus({ preventScroll: true });
   }
 
   el.opts.addEventListener('click', function (e) {
