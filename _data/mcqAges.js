@@ -132,7 +132,8 @@ module.exports = function () {
 
     return Object.assign({}, a, {
       pos, posText, notes, notesName: a.notesName, yearsText: yearsText(a.years),
-      image: "/assets/ages/" + a.image + ".webp",
+      // image bare slug ho to /assets/ages/<slug>.webp; poora path ("/assets/topics/..") ho to waisa hi
+      image: a.image.charAt(0) === "/" ? a.image : "/assets/ages/" + a.image + ".webp",
       sets, liveSets, levels, levelAttr: levels.join(","), hasPlan: sets.length > 0, hasLive: liveSets.length > 0,
       setsWord: words(sets.length), totalQuestions: sets.reduce((n, s) => n + s.count, 0),
       quickQuiz, read, hub, topics: a.topics || [],

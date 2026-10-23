@@ -40,17 +40,25 @@
   ];
 
   var SOON_HUBS = [
-    'middle-english',
+    'anglo-norman',
+    'age-of-chaucer',
+    'fifteenth-century',
     'renaissance',
+    'early-tudor',
     'elizabethan',
     'jacobean',
     'caroline',
+    'commonwealth',
+    'neoclassical',
     'restoration',
     'augustan-age',
+    'age-of-sensibility',
     'romantic-age',
     'victorian-age',
+    'edwardian',
+    'georgian',
     'modern',
-    'contemporary'
+    'postmodern'
   ];
 
   /* How many questions each age holds, once it is live.
