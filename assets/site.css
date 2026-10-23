@@ -1061,37 +1061,36 @@ summary.ptbtn::-webkit-details-marker{display:none}
    ========================================================= */
 
 /* ---------- head: the painted picture, then the two-tone title ----------
-   The picture (3 wide to 1 high) fills the head and the head takes its shape,
-   so the quote, the girl and the books stay where they were painted. The picture
-   ends in a soft cream curve, which fades into the page below. */
+   The picture (3 wide to 1 high) is as wide as the page's own content (1180px at
+   most) and sits in the middle of the head; it never goes beyond that. Its sides
+   fade into the paper, so on a wide screen the whole picture is visible. The
+   head is as tall as the picture, so the quote, the girl and the books stay
+   where they were painted. The picture ends in a soft cream curve that fades
+   into the page below. */
 .pagehead-daily{
   --head-pic:url("/assets/daily-head.webp");
-  min-height:clamp(300px,33.33vw,440px);          /* the head is as wide as the screen */
+  --head-w:min(100vw,var(--maxw));
+  min-height:max(300px,calc(var(--head-w) / 3));
 }
-@media (min-width:1024px){                        /* ... less the menu beside it */
-  .pagehead-daily{min-height:clamp(300px,calc((100vw - 272px) / 3),440px)}
+@media (min-width:1024px){                        /* the menu stands beside the page */
+  .pagehead-daily{--head-w:min(calc(100vw - var(--navw)),var(--maxw))}
 }
 .pagehead-daily::before{
+  inset:0 0 0 0;margin:0 auto;width:var(--head-w);
   opacity:1;background-size:cover;background-position:center bottom;
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
-  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
-}
-/* On a narrower head the words start further left, over the painted books and the
-   castle, so those are softened to keep the words easy to read. */
-@media (max-width:1699px){
-  .pagehead-daily::before{
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,rgba(0,0,0,.3) 0,rgba(0,0,0,.3) 4%,#000 42%);
-    -webkit-mask-composite:source-in;
-    mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,rgba(0,0,0,.3) 0,rgba(0,0,0,.3) 4%,#000 42%);
-    mask-composite:intersect;
-  }
+  /* sides: fade in at the left (a little of the painted books and castle stays behind
+     the words, softened so they read well) and out at the right */
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 6%,rgba(0,0,0,.3) 9%,#000 42%,#000 92%,transparent 100%);
+  -webkit-mask-composite:source-in;
+  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 6%,rgba(0,0,0,.3) 9%,#000 42%,#000 92%,transparent 100%);
+  mask-composite:intersect;
 }
 /* Under about 1000px of head the words would run into the quote, so the quote
    fades out and the girl and her books stay on the right. */
 @media (max-width:1271px){
   .pagehead-daily::before{
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%);
-    mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 92%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 92%,transparent 100%);
   }
 }
 @media (max-width:760px){
