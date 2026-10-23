@@ -1,0 +1,608 @@
+{
+ "bankId": "caroline",
+ "period": "Caroline Age",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "cr-e-01",
+   "question": "Which English monarch reigned during the Caroline Age spanning from 1625 to 1649?",
+   "options": [
+    "King Henry VIII",
+    "King James I",
+    "King Charles I",
+    "King Charles II"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Caroline era takes its name from Carolus, the Latin name of King Charles I, who reigned from 1625 to 1649."
+  },
+  {
+   "id": "cr-e-02",
+   "question": "In which year was King Charles I executed outside the Banqueting House at Whitehall, ending the Caroline era?",
+   "options": [
+    "1625",
+    "1660",
+    "1642",
+    "1649"
+   ],
+   "correct_option_id": 3,
+   "explanation": "King Charles I was tried by a High Court of Justice and beheaded on 30 January 1649, inaugurating the Commonwealth."
+  },
+  {
+   "id": "cr-e-03",
+   "question": "What group of 17th-century courtier lyricists, loyal to King Charles I, wrote polished verse on love, loyalty, and carpe diem?",
+   "options": [
+    "The University Wits",
+    "The Spenserians",
+    "The Cavalier Poets",
+    "The Metaphysical Poets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Cavalier poets, including Herrick, Carew, Suckling, and Lovelace, were associated with King Charles I's court."
+  },
+  {
+   "id": "cr-e-04",
+   "question": "Which Cavalier poet composed the famous carpe diem lyric 'To the Virgins, to Make Much of Time' ('Gather ye rosebuds')?",
+   "options": [
+    "Thomas Carew",
+    "Robert Herrick",
+    "Richard Lovelace",
+    "Sir John Suckling"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Robert Herrick published this iconic lyric in his 1648 collection Hesperides, urging youth to seize passing time."
+  },
+  {
+   "id": "cr-e-05",
+   "question": "What is the title of Robert Herrick's massive 1648 secular poetic collection containing over 1,400 pastoral and love lyrics?",
+   "options": [
+    "Hesperides",
+    "Noble Numbers",
+    "Castara",
+    "The Temple"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Hesperides, named after the mythical golden garden of the west, gathers Herrick's secular, rural, and anacreontic verse."
+  },
+  {
+   "id": "cr-e-06",
+   "question": "Which Cavalier poet wrote the celebrated prison lyric 'To Althea, from Prison', containing 'Stone walls do not a prison make'?",
+   "options": [
+    "Thomas Carew",
+    "Robert Herrick",
+    "Sir John Suckling",
+    "Richard Lovelace"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Richard Lovelace composed this noble royalist lyric in 1642 while imprisoned in the Gatehouse Prison at Westminster."
+  },
+  {
+   "id": "cr-e-07",
+   "question": "Which Cavalier poet wrote the lines 'I could not love thee, Dear, so much, / Loved I not Honour more' in 'To Lucasta, Going to the Wars'?",
+   "options": [
+    "Richard Lovelace",
+    "George Herbert",
+    "Sir John Suckling",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Richard Lovelace's poem balances romantic devotion with supreme aristocratic honor on the eve of battlefield departure."
+  },
+  {
+   "id": "cr-e-08",
+   "question": "Which witty Cavalier poet and gambler is credited with inventing the card game Cribbage and writing 'Why so pale and wan, fond lover?'",
+   "options": [
+    "Sir John Suckling",
+    "Richard Lovelace",
+    "Robert Herrick",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir John Suckling was a flamboyant courtier who invented Cribbage and included this famous song in his play Aglaura."
+  },
+  {
+   "id": "cr-e-09",
+   "question": "Which Cavalier poet served as cup-bearer to Charles I and wrote the penetrating 1640 elegy praising John Donne's original wit?",
+   "options": [
+    "Robert Herrick",
+    "Richard Lovelace",
+    "Sir John Suckling",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Thomas Carew praised John Donne as the monarch of wit who opened a fresh, intellectually demanding mine in English poetry."
+  },
+  {
+   "id": "cr-e-10",
+   "question": "What collective title, honoring Ben Jonson's classical influence, was adopted by Cavalier lyricists like Herrick and Carew?",
+   "options": [
+    "The University Wits",
+    "The Sons of Ben (Tribe of Ben)",
+    "The Courtly Makers",
+    "The Lake Poets"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Sons of Ben gathered at London taverns like the Mermaid and Devil to celebrate Jonson's classical lyric craft."
+  },
+  {
+   "id": "cr-e-11",
+   "question": "Which Anglican priest and devotional poet authored the sacred collection 'The Temple: Sacred Poems and Private Ejaculations' (1633)?",
+   "options": [
+    "George Herbert",
+    "John Donne",
+    "Richard Crashaw",
+    "Henry Vaughan"
+   ],
+   "correct_option_id": 0,
+   "explanation": "George Herbert served as rector of Bemerton near Salisbury, bequeathing The Temple on his deathbed to Nicholas Ferrar."
+  },
+  {
+   "id": "cr-e-12",
+   "question": "Which emblematic pattern poem by George Herbert in 'The Temple' is visually shaped on the printed page like angelic wings?",
+   "options": [
+    "The Altar",
+    "The Pulley",
+    "The Collar",
+    "Easter Wings"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Easter Wings is a hieroglyphic pattern poem where expanding and contracting lines mirror the flight of angelic wings."
+  },
+  {
+   "id": "cr-e-13",
+   "question": "In which famous metaphysical poem by George Herbert does God withhold the gift of Rest so that weariness may lead man to God?",
+   "options": [
+    "The Pearl",
+    "The Collar",
+    "Love (III)",
+    "The Pulley"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In The Pulley, God pours out blessings like strength, beauty, and wisdom, but leaves man weary so he seeks God's rest."
+  },
+  {
+   "id": "cr-e-14",
+   "question": "In which dramatic devotional poem by George Herbert does the rebellious speaker cry 'No more; I will abroad' before hearing a voice say 'Child'?",
+   "options": [
+    "The Collar",
+    "The Pulley",
+    "Affliction",
+    "The Pearl"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In The Collar, the speaker's raging defiance against religious constraint dissolves when God gently calls Child, and he replies My Lord."
+  },
+  {
+   "id": "cr-e-15",
+   "question": "Which Catholic convert and metaphysical poet authored 'Steps to the Temple' (1646) and celebrated Saint Teresa in 'The Flaming Heart'?",
+   "options": [
+    "Henry Vaughan",
+    "George Herbert",
+    "Richard Crashaw",
+    "Thomas Traherne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Richard Crashaw's ecstatic baroque verse blends Counter-Reformation sensory mysticism with passionate spiritual love."
+  },
+  {
+   "id": "cr-e-16",
+   "question": "Which Welsh physician and metaphysical poet called himself 'The Silurist' and authored the devotional collection 'Silex Scintillans' (1650)?",
+   "options": [
+    "Thomas Traherne",
+    "Henry Vaughan",
+    "George Herbert",
+    "Richard Crashaw"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Henry Vaughan adopted The Silurist from the ancient British tribe of South Wales, deeply influenced by George Herbert's poetry."
+  },
+  {
+   "id": "cr-e-17",
+   "question": "In which mystical poem does Henry Vaughan open with the cosmic vision 'I saw Eternity the other night, / Like a great ring of pure and endless light'?",
+   "options": [
+    "The World",
+    "Peace",
+    "They Are All Gone into the World of Light",
+    "The Retreat"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Henry Vaughan's The World contrasts the eternal ring of divine light with the dark, grasping foolishness of worldly mortals."
+  },
+  {
+   "id": "cr-e-18",
+   "question": "Which Caroline tragedy by John Ford dramatizes the doomed, defiant incestuous love of the siblings Giovanni and Annabella?",
+   "options": [
+    "The Broken Heart",
+    "'Tis Pity She's a Whore",
+    "Perkin Warbeck",
+    "The Lover's Melancholy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Ford's 1633 tragedy explores passionate moral defiance and tragic violence in Renaissance Parma."
+  },
+  {
+   "id": "cr-e-19",
+   "question": "Which Caroline tragedy by John Ford is set in ancient Sparta and depicts Princess Calantha dancing stoically as she receives news of multiple deaths?",
+   "options": [
+    "The Broken Heart",
+    "Love's Sacrifice",
+    "'Tis Pity She's a Whore",
+    "The Queen"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In The Broken Heart, Calantha continues dancing through reports of family slaughter until her heart breaks silently at the coronation."
+  },
+  {
+   "id": "cr-e-20",
+   "question": "Which prolific Caroline playwright wrote 'The Roman Actor' and created the grasping usurer Sir Giles Overreach in 'A New Way to Pay Old Debts'?",
+   "options": [
+    "John Ford",
+    "Philip Massinger",
+    "James Shirley",
+    "Richard Brome"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Philip Massinger succeeded Fletcher as the chief dramatist for the King's Men, writing acute social and political drama."
+  },
+  {
+   "id": "cr-e-21",
+   "question": "Who is traditionally recognized as the last major professional dramatist of the Caroline era, author of 'The Traitor' and 'The Cardinal'?",
+   "options": [
+    "Richard Brome",
+    "Thomas Killigrew",
+    "James Shirley",
+    "William Davenant"
+   ],
+   "correct_option_id": 2,
+   "explanation": "James Shirley was the most accomplished London playwright of the 1630s prior to the parliamentary closure of theaters in 1642."
+  },
+  {
+   "id": "cr-e-22",
+   "question": "Which disciple and former servant of Ben Jonson wrote popular Caroline comedies including 'The Northern Lass' and 'The Antipodes'?",
+   "options": [
+    "Philip Massinger",
+    "Thomas Dekker",
+    "James Shirley",
+    "Richard Brome"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Richard Brome carried forward Jonson's legacy of satirical comedy of humours, focusing on London citizen and theatrical life."
+  },
+  {
+   "id": "cr-e-23",
+   "question": "In which exact year did the Long Parliament issue the historic ordinance ordering the complete closure of all public London theaters?",
+   "options": [
+    "1642",
+    "1638",
+    "1660",
+    "1649"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In September 1642 Parliament ordered public playhouses closed, citing civil war miseries and Puritan moral objections."
+  },
+  {
+   "id": "cr-e-24",
+   "question": "What major conflict between Royalist Cavaliers and Parliamentary Roundheads broke out in England in 1642, halting public theater?",
+   "options": [
+    "The Thirty Years' War",
+    "The English Civil War",
+    "The Wars of the Roses",
+    "The Hundred Years' War"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The English Civil War pitted Charles I's Royalists against Parliament, transforming English society and literature."
+  },
+  {
+   "id": "cr-e-25",
+   "question": "Which 1644 prose tract by John Milton stands as a foundational monument for the freedom of the press and against state censorship?",
+   "options": [
+    "Tractate of Education",
+    "The Doctrine and Discipline of Divorce",
+    "The Tenure of Kings and Magistrates",
+    "Areopagitica"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Milton addressed Areopagitica to Parliament to protest the Licensing Order of 1643, asserting that truth needs no licensing."
+  },
+  {
+   "id": "cr-e-26",
+   "question": "What is the famous Latin title of the 1644 educational treatise John Milton addressed to the reformer Samuel Hartlib?",
+   "options": [
+    "Tractate of Education",
+    "Areopagitica",
+    "De Doctrina Christiana",
+    "Defensio Secunda"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton's Tractate outlined a comprehensive humanist curriculum to fit a man to perform all offices of peace and war."
+  },
+  {
+   "id": "cr-e-27",
+   "question": "Which pair of companion poems composed by John Milton during his Horton period contrast the cheerful man with the contemplative man?",
+   "options": [
+    "Arcades and Epitaphium Damonis",
+    "Lycidas and Comus",
+    "L'Allegro and Il Penseroso",
+    "Paradise Lost and Paradise Regained"
+   ],
+   "correct_option_id": 2,
+   "explanation": "L'Allegro celebrates daytime mirth and rustic joy, while Il Penseroso praises nocturnal contemplation and intellectual study."
+  },
+  {
+   "id": "cr-e-28",
+   "question": "What is the title of John Milton's 1634 dramatic court masque presented at Ludlow Castle in Shropshire to celebrate the Earl of Bridgewater?",
+   "options": [
+    "Arcades",
+    "Comus (A Maske Presented at Ludlow Castle)",
+    "The Triumph of Peace",
+    "The Masque of Queens"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Comus depicts a virtuous Lady lost in a dark wood, resisting the sensual enchantments of Circe's sorcerer son Comus."
+  },
+  {
+   "id": "cr-e-29",
+   "question": "Which 1637 pastoral elegy by John Milton mourns the drowning of his Cambridge college friend Edward King in the Irish Sea?",
+   "options": [
+    "Epitaphium Damonis",
+    "Ad Patrem",
+    "Lycidas",
+    "Astrophel"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Published in the memorial volume Justa Edouardo King, Lycidas uses pastoral conventions to mourn untimely death and corrupt clergy."
+  },
+  {
+   "id": "cr-e-30",
+   "question": "Which Norwich physician and polymath published his spiritual confession 'Religio Medici' in an authorized edition in 1643?",
+   "options": [
+    "Izaak Walton",
+    "Thomas Hobbes",
+    "Sir Thomas Browne",
+    "Robert Burton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas Browne's Religio Medici examines his Christian faith, charity, and scientific curiosity in magnificent baroque prose."
+  },
+  {
+   "id": "cr-e-31",
+   "question": "Which encyclopedic 1646 scientific and antiquarian work by Sir Thomas Browne investigated and refuted popular folklore and vulgar errors?",
+   "options": [
+    "Pseudodoxia Epidemica",
+    "Hydriotaphia",
+    "The Garden of Cyrus",
+    "Religio Medici"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Pseudodoxia Epidemica, or Vulgar Errors, systematically examined widespread superstitions across history and natural science."
+  },
+  {
+   "id": "cr-e-32",
+   "question": "Who authored the political treatise 'The Elements of Law' (1640) and fled to Paris on the eve of the Civil War to develop his philosophy?",
+   "options": [
+    "Thomas Hobbes",
+    "Sir Thomas Browne",
+    "John Milton",
+    "Edward Hyde"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thomas Hobbes developed his materialist political philosophy in exile during the 1640s, culminating in Leviathan."
+  },
+  {
+   "id": "cr-e-33",
+   "question": "Which French Catholic princess married King Charles I in 1625, fostering a court culture devoted to French romance and Neoplatonism?",
+   "options": [
+    "Catherine of Braganza",
+    "Henrietta Maria",
+    "Anne of Denmark",
+    "Mary of Modena"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Queen Henrietta Maria promoted French courtly ideals, acting in private court masques and patronizing the arts."
+  },
+  {
+   "id": "cr-e-34",
+   "question": "Which Archbishop of Canterbury under Charles I imposed strict high-church ritualism and uniformity, causing deep Puritan resentment?",
+   "options": [
+    "George Abbot",
+    "Thomas Cranmer",
+    "John Whitgift",
+    "William Laud"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Archbishop William Laud's enforcement of church hierarchy and altar rails polarized religious tensions leading to the Civil War."
+  },
+  {
+   "id": "cr-e-35",
+   "question": "Which puritan lawyer had his ears cropped in the pillory in 1634 for attacking theater and court actresses in his massive work 'Histriomastix'?",
+   "options": [
+    "John Lilburne",
+    "William Prynne",
+    "John Bastwick",
+    "Henry Burton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Prynne's Histriomastix: The Player's Scourge was viewed by the crown as a direct libel on Queen Henrietta Maria."
+  },
+  {
+   "id": "cr-e-36",
+   "question": "What 1628 constitutional document, forced upon Charles I by Parliament, asserted fundamental English liberties against taxation without consent?",
+   "options": [
+    "The Bill of Rights",
+    "The Magna Carta",
+    "The Petition of Right",
+    "The Instrument of Government"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Drafted by Sir Edward Coke, the Petition of Right prohibited non-parliamentary taxation, arbitrary imprisonment, and forced billeting."
+  },
+  {
+   "id": "cr-e-37",
+   "question": "What historical term is applied to the eleven-year period from 1629 to 1640 during which Charles I governed England without calling Parliament?",
+   "options": [
+    "The Protectorate",
+    "The Personal Rule (Eleven Years' Tyranny)",
+    "The Regency",
+    "The Commonwealth"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Charles I ruled without parliament, relying on prerogative revenue measures like Ship Money until the Scottish rebellion."
+  },
+  {
+   "id": "cr-e-38",
+   "question": "Which 1649 Royalist spiritual autobiography, meaning 'The Royal Image', purported to contain the pious meditations of King Charles I before his death?",
+   "options": [
+    "Basilikon Doron",
+    "The King's Book",
+    "Eikonoklastes",
+    "Eikon Basilike"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eikon Basilike, likely compiled by John Gauden, presented Charles I as a Christian martyr, becoming an instant international bestseller."
+  },
+  {
+   "id": "cr-e-39",
+   "question": "Which prose tract was commissioned by Parliament in 1649 from John Milton to smash the royalist martyr myth of 'Eikon Basilike'?",
+   "options": [
+    "Eikonoklastes",
+    "Defensio Pro Populo Anglicano",
+    "The Tenure of Kings and Magistrates",
+    "Areopagitica"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Eikonoklastes, meaning Image-Breaker, systematically mocked the pious posturing of Charles I in Eikon Basilike."
+  },
+  {
+   "id": "cr-e-40",
+   "question": "Which 1641 pastoral comedy by Richard Brome, depicting romantic aristocrats joining a vagrant troop, was the last major play acted before the theater ban?",
+   "options": [
+    "A Jovial Crew, or The Merry Beggars",
+    "The Sparagus Garden",
+    "The Antipodes",
+    "The Weeding of Covent Garden"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A Jovial Crew offered a poignant final glimpse of merry England on the very eve of the Civil War theater closures."
+  },
+  {
+   "id": "cr-e-41",
+   "question": "Which theatrical entrepreneur and playwright was appointed unofficial poet laureate in 1638 and staged the final Caroline court masque 'Salmacida Spolia'?",
+   "options": [
+    "John Suckling",
+    "Sir William Davenant",
+    "James Shirley",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Davenant succeeded Ben Jonson as court poet, later pioneering English opera during the Commonwealth."
+  },
+  {
+   "id": "cr-e-42",
+   "question": "Which lavish 1634 court masque, costing the four Inns of Court over twenty thousand pounds, was written by James Shirley with Inigo Jones?",
+   "options": [
+    "Coelum Britannicum",
+    "The Temple of Love",
+    "Salmacida Spolia",
+    "The Triumph of Peace"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Inns of Court presented The Triumph of Peace before Charles I and Henrietta Maria to demonstrate their royal loyalty."
+  },
+  {
+   "id": "cr-e-43",
+   "question": "In George Herbert's poem 'Love (III)', how does Divine Love gently reassure the hesitating, sinful guest who feels unworthy to sit and eat?",
+   "options": [
+    "Love banishes him into the outer darkness until purified",
+    "Love takes the guest by the hand and bids him sit and taste my meat",
+    "Love shows him the wounds of crucifixion on a marble altar",
+    "Love commands him to perform seven years of pilgrimage penance"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Love III, Christ gently overcomes the soul's unworthiness, bidding the narrator: You must sit down, and taste my meat."
+  },
+  {
+   "id": "cr-e-44",
+   "question": "Which Welsh Anglican community founded by Nicholas Ferrar in Huntingdonshire was deeply admired by George Herbert and King Charles I?",
+   "options": [
+    "Brecon",
+    "Bemerton",
+    "Little Gidding",
+    "Evesham"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Little Gidding was a devout religious household famous for its continuous prayer, bookbinding, and friendship with Herbert."
+  },
+  {
+   "id": "cr-e-45",
+   "question": "Which famous lyric by James Shirley, from his 1653 dramatic masque 'The Contention of Ajax and Ulysses', opens 'The glories of our blood and state'?",
+   "options": [
+    "Song: To Celia",
+    "To Daffodils",
+    "The Retreat",
+    "Dirge: Death the Leveller"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Shirley's solemn dirge proclaims that Sceptre and Crown must tumble down, / And in the dust be equal made."
+  },
+  {
+   "id": "cr-e-46",
+   "question": "In Robert Herrick's famous lyric 'Corinna's Going a-Maying', what springtime holiday festival is celebrated with pagan vitality?",
+   "options": [
+    "Midsummer Eve",
+    "Twelfth Night",
+    "May Day",
+    "Candlemas"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Herrick urges Corinna to arise and gather fresh May dew, celebrating the joyful, ephemeral spring ritual."
+  },
+  {
+   "id": "cr-e-47",
+   "question": "Which Royalist commander and poet composed the dramatic ballad 'A Sessions of the Poets' (1637), depicting Apollo holding court over rival authors?",
+   "options": [
+    "Robert Herrick",
+    "Richard Lovelace",
+    "Sir John Suckling",
+    "Thomas Carew"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Suckling's witty satirical poem depicts Apollo awarding the laurel wreath to an alderman with money over vain poets."
+  },
+  {
+   "id": "cr-e-48",
+   "question": "Which 1649 political tract did John Milton publish immediately following the execution of Charles I to justify the deposition of a tyrant?",
+   "options": [
+    "Areopagitica",
+    "The Tenure of Kings and Magistrates",
+    "Of Reformation",
+    "The Ready and Easy Way"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Milton argued that political power resides fundamentally in the people, who may lawfully depose and execute a tyrant."
+  },
+  {
+   "id": "cr-e-49",
+   "question": "Which early pastoral poem by Henry Vaughan in 'Silex Scintillans' anticipates William Wordsworth's 'Immortality Ode' in its longing for childhood innocence?",
+   "options": [
+    "Cock-crowing",
+    "The World",
+    "Peace",
+    "The Retreat"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In The Retreat, Vaughan yearns for his early days before his soul forgot its divine home: Happy those early days! when I / Shin'd in my Angel-infancy."
+  },
+  {
+   "id": "cr-e-50",
+   "question": "The Caroline literary period officially concludes in January 1649 with which momentous event in British constitutional history?",
+   "options": [
+    "The flight of King James II to France",
+    "The burning of the Globe Theatre by Puritans",
+    "The trial and public beheading of King Charles I",
+    "The coronation of Oliver Cromwell as King"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The execution of Charles I outside Whitehall Banqueting House on January 30, 1649, concluded the Caroline monarchy."
+  }
+ ]
+}
