@@ -162,7 +162,7 @@
       "article": "middle-english",
       "notesName": "Middle English",
       "color": "#4A6473",
-      "image": "/assets/topics/medieval.webp",
+      "image": "middle-english",
       "sets": []
     },
     {
@@ -182,7 +182,7 @@
       "article": "renaissance",
       "notesName": "Renaissance",
       "color": "#4F6F68",
-      "image": "/assets/topics/renaissance.webp",
+      "image": "renaissance",
       "sets": []
     },
     {
@@ -202,7 +202,7 @@
       "article": "renaissance",
       "notesName": "Renaissance",
       "color": "#53705F",
-      "image": "/assets/topics/elizabethan-drama.webp",
+      "image": "renaissance",
       "sets": []
     },
     {
@@ -242,7 +242,7 @@
       "article": "restoration-age",
       "notesName": "Restoration",
       "color": "#697451",
-      "image": "/assets/topics/restoration-18th-century.webp",
+      "image": "restoration",
       "sets": []
     },
     {
@@ -282,7 +282,7 @@
       "article": "romantic-age",
       "notesName": "Romantic Age",
       "color": "#8A6A44",
-      "image": "/assets/topics/romantic.webp",
+      "image": "romantic",
       "sets": []
     },
     {
@@ -292,7 +292,7 @@
       "article": "victorian-age",
       "notesName": "Victorian Age",
       "color": "#8D5A45",
-      "image": "/assets/topics/victorian.webp",
+      "image": "victorian",
       "sets": []
     },
     {
@@ -322,7 +322,7 @@
       "article": "modern-age",
       "notesName": "Modern",
       "color": "#85484F",
-      "image": "/assets/topics/modern.webp",
+      "image": "modern",
       "sets": []
     },
     {

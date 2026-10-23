@@ -1,0 +1,556 @@
+{
+ "bankId": "age-of-chaucer",
+ "period": "Age of Chaucer",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "ac-e-01",
+   "question": "Which century is primarily associated with the Age of Chaucer?",
+   "options": [
+    "12th Century",
+    "13th Century",
+    "14th Century",
+    "15th Century"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-02",
+   "question": "In which year was Geoffrey Chaucer approximately born?",
+   "options": [
+    "1300",
+    "1340",
+    "1380",
+    "1400"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-03",
+   "question": "Which major plague struck England in 1348, killing a large portion of the population?",
+   "options": [
+    "The Great Plague",
+    "The Black Death",
+    "The Spanish Flu",
+    "Cholera"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-04",
+   "question": "Who was the king of England when Chaucer was born?",
+   "options": [
+    "Richard II",
+    "Henry IV",
+    "Edward III",
+    "John"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-05",
+   "question": "The 'Peasants' Revolt' of 1381 is also known as:",
+   "options": [
+    "The Barons' War",
+    "Wat Tyler's Rebellion",
+    "The War of the Roses",
+    "The Lollard Revolt"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-06",
+   "question": "Which long-running conflict between England and France took place during Chaucer's life?",
+   "options": [
+    "The Crusades",
+    "The Hundred Years' War",
+    "The Seven Years' War",
+    "The Napoleonic Wars"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-07",
+   "question": "Who was the religious reformer associated with the Lollard movement during this age?",
+   "options": [
+    "Martin Luther",
+    "John Wycliffe",
+    "Thomas Becket",
+    "Erasmus"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-08",
+   "question": "Chaucer is often called the 'Father of ______ Literature'.",
+   "options": [
+    "French",
+    "Latin",
+    "English",
+    "Italian"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-09",
+   "question": "What was the official language of the English court for much of the 14th century before the rise of English?",
+   "options": [
+    "Latin",
+    "Anglo-Norman French",
+    "German",
+    "Spanish"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-10",
+   "question": "Which king did Chaucer serve as a page and later as a diplomat?",
+   "options": [
+    "Edward III",
+    "Henry V",
+    "Richard I",
+    "William I"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-e-11",
+   "question": "In 1362, English was officially allowed to be used in:",
+   "options": [
+    "Churches",
+    "Parliament and Law Courts",
+    "Markets",
+    "Private letters only"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-12",
+   "question": "What is the name of the shrine the pilgrims are visiting in 'The Canterbury Tales'?",
+   "options": [
+    "St. Peter",
+    "St. Thomas Becket",
+    "St. George",
+    "St. Paul"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-13",
+   "question": "Which of these was NOT a social 'estate' in the medieval period?",
+   "options": [
+    "The Nobility",
+    "The Clergy",
+    "The Peasantry",
+    "The Scientists"
+   ],
+   "correct_option_id": 3
+  },
+  {
+   "id": "ac-e-14",
+   "question": "John Wycliffe is famous for translating which book into English?",
+   "options": [
+    "The Canterbury Tales",
+    "The Bible",
+    "The Magna Carta",
+    "The Domesday Book"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-15",
+   "question": "Which king was deposed in 1399, near the end of Chaucer's life?",
+   "options": [
+    "Edward III",
+    "Richard II",
+    "Henry IV",
+    "Edward I"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-16",
+   "question": "Chaucer’s career included working in which of these government roles?",
+   "options": [
+    "Controller of Customs",
+    "Archbishop",
+    "King",
+    "General"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-e-17",
+   "question": "The Black Death led to a shortage of labor, which ultimately increased the power of:",
+   "options": [
+    "The King",
+    "The Church",
+    "The Peasants and Laborers",
+    "The French"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-18",
+   "question": "What is the name of the inn where the pilgrims meet in 'The Canterbury Tales'?",
+   "options": [
+    "The Lion Inn",
+    "The Tabard Inn",
+    "The Green Dragon",
+    "The King's Arms"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-19",
+   "question": "During the Age of Chaucer, the 'Great Schism' occurred within which institution?",
+   "options": [
+    "The English Parliament",
+    "The Catholic Church",
+    "The Royal Family",
+    "The University of Oxford"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-20",
+   "question": "Which city was the center of political and social life in 14th-century England?",
+   "options": [
+    "York",
+    "London",
+    "Canterbury",
+    "Oxford"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-21",
+   "question": "What was the main cause of the Peasants' Revolt in 1381?",
+   "options": [
+    "A shortage of food",
+    "Introduction of a Poll Tax",
+    "Religious differences",
+    "Invasion by France"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-22",
+   "question": "Which literary work is considered Chaucer's 'magnum opus'?",
+   "options": [
+    "The Book of the Duchess",
+    "Troilus and Criseyde",
+    "The Canterbury Tales",
+    "The House of Fame"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-23",
+   "question": "Which language was the language of learning and the Church during Chaucer's time?",
+   "options": [
+    "English",
+    "French",
+    "Latin",
+    "Greek"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-24",
+   "question": "Chaucer was buried in which famous location?",
+   "options": [
+    "Canterbury Cathedral",
+    "Westminster Abbey (Poets' Corner)",
+    "St. Paul's Cathedral",
+    "Tower of London"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-25",
+   "question": "How many times did the Black Death return to England during the 14th century?",
+   "options": [
+    "Only once",
+    "Multiple times",
+    "It never left",
+    "Twice only"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-26",
+   "question": "Who was the leader of the Peasants' Revolt who was killed during a meeting with the king?",
+   "options": [
+    "John Ball",
+    "Wat Tyler",
+    "Jack Cade",
+    "Robin Hood"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-27",
+   "question": "The 'Three Estates' model divided society into those who work, those who fight, and those who:",
+   "options": [
+    "Rule",
+    "Pray",
+    "Trade",
+    "Write"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-28",
+   "question": "Which of these was a major export of 14th-century England?",
+   "options": [
+    "Silk",
+    "Wool",
+    "Spices",
+    "Tea"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-29",
+   "question": "Which king succeeded Richard II after deposing him?",
+   "options": [
+    "Henry IV",
+    "Edward IV",
+    "Henry VIII",
+    "Charles I"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-e-30",
+   "question": "The use of English in literature became more popular because of the decline of which country's influence?",
+   "options": [
+    "Spain",
+    "France",
+    "Italy",
+    "Germany"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-31",
+   "question": "In what month do the pilgrims begin their journey in 'The Canterbury Tales'?",
+   "options": [
+    "January",
+    "April",
+    "August",
+    "December"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-32",
+   "question": "Which famous contemporary of Chaucer wrote 'Piers Plowman'?",
+   "options": [
+    "John Gower",
+    "William Langland",
+    "John Wycliffe",
+    "Thomas Malory"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-33",
+   "question": "Chaucer was captured by the French during which war?",
+   "options": [
+    "Crusades",
+    "Hundred Years' War",
+    "Wars of the Roses",
+    "Norman Conquest"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-34",
+   "question": "Who paid the ransom to release Chaucer from French captivity?",
+   "options": [
+    "His father",
+    "King Edward III",
+    "The City of London",
+    "John of Gaunt"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-35",
+   "question": "Which powerful noble was Chaucer's lifelong patron?",
+   "options": [
+    "The Duke of York",
+    "John of Gaunt",
+    "The Earl of Warwick",
+    "Thomas Cromwell"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-36",
+   "question": "What happened to the population of England during the Black Death?",
+   "options": [
+    "It doubled",
+    "It stayed the same",
+    "It decreased by about one-third to one-half",
+    "It vanished"
+   ],
+   "correct_option_id": 2
+  },
+  {
+   "id": "ac-e-37",
+   "question": "The term 'Middle English' describes the English language used during which period?",
+   "options": [
+    "450-1066",
+    "1100-1500",
+    "1500-1700",
+    "1800-Present"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-38",
+   "question": "The Lollards were followers of whose teachings?",
+   "options": [
+    "Chaucer",
+    "John Wycliffe",
+    "The Pope",
+    "The King"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-39",
+   "question": "Which of these literary periods is named after a specific writer?",
+   "options": [
+    "The Anglo-Saxon Age",
+    "The Age of Chaucer",
+    "The Restoration",
+    "The Victorian Age"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-40",
+   "question": "How many pilgrims (including Chaucer) are mentioned as going to Canterbury?",
+   "options": [
+    "12",
+    "29",
+    "50",
+    "100"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-41",
+   "question": "The 'Merchant Class' began to rise in importance during this century because of:",
+   "options": [
+    "Trade and commerce",
+    "The Black Death",
+    "Loss of land",
+    "War with France"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-e-42",
+   "question": "What was the name of the tax that triggered the 1381 revolt?",
+   "options": [
+    "Income Tax",
+    "Poll Tax",
+    "Window Tax",
+    "Sugar Tax"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-43",
+   "question": "True or False: Chaucer finished writing all intended stories for 'The Canterbury Tales'.",
+   "options": [
+    "True",
+    "False"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-44",
+   "question": "Which historical event led to the 'Avignon Papacy' where the Pope lived in France?",
+   "options": [
+    "The Crusades",
+    "The Great Schism",
+    "The Norman Conquest",
+    "The Black Death"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-45",
+   "question": "Which language influenced the vocabulary of 'Middle English' most heavily after 1066?",
+   "options": [
+    "German",
+    "French",
+    "Danish",
+    "Italian"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-46",
+   "question": "Chaucer was a contemporary of which Italian poet?",
+   "options": [
+    "Dante",
+    "Petrarch",
+    "Boccaccio",
+    "All of the above"
+   ],
+   "correct_option_id": 3
+  },
+  {
+   "id": "ac-e-47",
+   "question": "The 14th century is often viewed as a transition from the Middle Ages to the:",
+   "options": [
+    "Dark Ages",
+    "Renaissance",
+    "Industrial Revolution",
+    "Enlightenment"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-48",
+   "question": "What was the primary role of the 'Church' in 14th-century social life?",
+   "options": [
+    "It had no power",
+    "It was the central authority for moral and spiritual life",
+    "It was purely a political party",
+    "It only existed in France"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-49",
+   "question": "Who was the 14-year-old king who met the rebels during the Peasants' Revolt?",
+   "options": [
+    "Edward III",
+    "Richard II",
+    "Henry IV",
+    "Henry V"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-e-50",
+   "question": "In which year did Geoffrey Chaucer die?",
+   "options": [
+    "1350",
+    "1400",
+    "1450",
+    "1500"
+   ],
+   "correct_option_id": 1
+  }
+ ]
+}

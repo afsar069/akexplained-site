@@ -1,0 +1,558 @@
+{
+ "bankId": "age-of-chaucer",
+ "period": "Age of Chaucer",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "ac-h-01",
+   "question": "Which specific constitutional precedent was established by the 'Good Parliament' of 1376?",
+   "options": [
+    "The first formal use of impeachment against royal ministers",
+    "The mandatory use of English in all parliamentary records",
+    "The abolition of the feudal system of land tenure",
+    "The declaration of the King's supremacy over the Pope"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-02",
+   "question": "The 1349 'Ordinance of Labourers' was a direct precursor to the 1351 Statute. What was its primary economic objective?",
+   "options": [
+    "To grant freedom to all remaining serfs",
+    "To fix wages at pre-plague levels and mandate work for the able-bodied",
+    "To introduce a national wealth tax to fund the war in France",
+    "To encourage the migration of laborers to the northern counties"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-03",
+   "question": "In the context of the Hundred Years' War, the Treaty of Brétigny (1360) is significant for which reason?",
+   "options": [
+    "It marked the total surrender of the French crown to Edward III",
+    "It established a temporary peace where Edward III renounced his claim to the French throne in exchange for sovereign lands",
+    "It was the first treaty written entirely in Middle English",
+    "It led to the immediate execution of John II of France"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-04",
+   "question": "Who was the 'First Speaker' of the House of Commons, emerging during the political crises of the 1370s?",
+   "options": [
+    "Sir Peter de la Mare",
+    "John of Gaunt",
+    "William Courtenay",
+    "Thomas of Woodstock"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-05",
+   "question": "The 'Lords Appellant' were a group of nobles who sought to restrain the power of which monarch in 1387-88?",
+   "options": [
+    "Edward III",
+    "Richard II",
+    "Henry IV",
+    "Edward II"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-06",
+   "question": "John Wycliffe's theological work 'De Civili Dominio' argued for which radical concept that threatened the Church's temporal power?",
+   "options": [
+    "That the King should be the head of the Church",
+    "That the state has the right to divest a corrupt Church of its property",
+    "That the Latin Vulgate is the only valid scriptural source",
+    "That the Pope is the only legitimate authority in civil law"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-07",
+   "question": "The 1381 Peasants' Revolt was ideologically fueled by the preaching of John Ball. Which of the following best represents his famous radical egalitarian couplet?",
+   "options": [
+    "When Adam delved and Eve span, Who was then the gentleman?",
+    "The King is rich, the poor are thin, Let the revolution now begin.",
+    "God made the earth for one and all, To rise together or together fall.",
+    "Gold is heavy, bread is light, We shall claim our natural right."
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-08",
+   "question": "The 'Merciless Parliament' of 1388 resulted in the execution or exile of several of Richard II's favorites. Which of these individuals was a primary target?",
+   "options": [
+    "Robert de Vere",
+    "Michael de la Pole",
+    "Simon Burley",
+    "All of the above"
+   ],
+   "correct_option_id": 3
+  },
+  {
+   "id": "ac-h-09",
+   "question": "What was the specific theological point of contention in Wycliffe's 'De Eucharistia' that eventually led to his condemnation as a heretic?",
+   "options": [
+    "His rejection of the doctrine of Transubstantiation",
+    "His belief in the baptism of infants",
+    "His support for the Avignon Papacy",
+    "His denial of the existence of Purgatory"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-10",
+   "question": "Which 1351 legal statute clearly defined the crime of High Treason for the first time in English history?",
+   "options": [
+    "The Statute of Treasons",
+    "The Statute of Praemunire",
+    "The Statute of Provisors",
+    "The Ordinance of Justice"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-11",
+   "question": "The 'Great Schism' of 1378 saw the election of two rival Popes. In which two cities were they based?",
+   "options": [
+    "Rome and London",
+    "Rome and Avignon",
+    "Paris and Avignon",
+    "Rome and Florence"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-12",
+   "question": "Which military engagement in 1356 saw the capture of the French King John II by Edward, the Black Prince?",
+   "options": [
+    "Battle of Crécy",
+    "Battle of Poitiers",
+    "Battle of Sluys",
+    "Battle of Agincourt"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-13",
+   "question": "The Statute of Praemunire (1353) was designed to prohibit which practice?",
+   "options": [
+    "Appealing English legal cases to the Papal court in Rome or Avignon",
+    "The hoarding of grain by wealthy merchants",
+    "The translation of the Bible into English",
+    "The marriage of clergy members"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-14",
+   "question": "What was the primary motive behind the 1380 Poll Tax, which served as the 'spark' for the 1381 uprising?",
+   "options": [
+    "To pay for the king's coronation",
+    "To fund the increasingly expensive and unsuccessful war in France",
+    "To build a new palace for John of Gaunt",
+    "To provide relief for plague victims"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-15",
+   "question": "Who was the Archbishop of Canterbury murdered by the rebels during the 1381 Peasants' Revolt?",
+   "options": [
+    "Simon Sudbury",
+    "William Courtenay",
+    "Thomas Arundel",
+    "Robert Kilwardby"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-16",
+   "question": "The 'Twelve Conclusions of the Lollards' (1395) was a provocative document nailed to the doors of which building?",
+   "options": [
+    "Westminster Hall",
+    "Canterbury Cathedral",
+    "The Tower of London",
+    "The Savoy Palace"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-17",
+   "question": "What is the historical significance of the 'Wonderful Parliament' of 1386?",
+   "options": [
+    "It passed the first law against heresy",
+    "It established a commission of reform to oversee Richard II's household",
+    "It declared English as the only language of government",
+    "It authorized the invasion of Scotland"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-18",
+   "question": "John of Gaunt's residency, which was systematically destroyed by Londoners in 1381 due to his unpopularity, was named:",
+   "options": [
+    "Lambeth Palace",
+    "The Savoy Palace",
+    "Winchester House",
+    "The Palace of Westminster"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-19",
+   "question": "The 'Epiphany Rising' of 1400 was a failed conspiracy to accomplish what?",
+   "options": [
+    "Murder Henry IV and restore Richard II",
+    "Establish a Lollard state",
+    "Negotiate a peace treaty with France",
+    "Crown John of Gaunt as King"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-20",
+   "question": "In 1397, Richard II arrested three of his former opponents, including the Earl of Arundel. This period is known to historians as:",
+   "options": [
+    "The Tyranny of Richard II",
+    "The Great Reconciliation",
+    "The Lancastrian Revolution",
+    "The Merciless Year"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-21",
+   "question": "Which legal principle, meaning 'the king is under no man but under God and the law,' was frequently debated during Richard II's reign?",
+   "options": [
+    "Lex Facit Regem",
+    "Rex est Lex",
+    "Magna Carta Libertatum",
+    "De Legibus et Consuetudinibus Angliae"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-22",
+   "question": "Who was the French chronicler whose work 'Chroniques' provides the most detailed contemporary account of the Hundred Years' War and Chaucer's age?",
+   "options": [
+    "Jean Froissart",
+    "Philippe de Commines",
+    "Joinville",
+    "Gregory of Tours"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-23",
+   "question": "The Statute of Provisors (1351) was an attempt by the English Parliament to curtail what?",
+   "options": [
+    "The Pope's right to appoint foreigners to English church benefices",
+    "The King's right to seize peasant property",
+    "The power of the guilds in London",
+    "The translation of legal texts into English"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-24",
+   "question": "Which specific plague outbreak is historically referred to as 'pestis secunda'?",
+   "options": [
+    "The initial Black Death (1348)",
+    "The second major outbreak of 1361-62",
+    "The 1369 resurgence",
+    "The 1375 localized plague"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-25",
+   "question": "In 1399, Henry Bolingbroke landed at Ravenspur claiming he had returned only to:",
+   "options": [
+    "Claim his rightful inheritance as the Duke of Lancaster",
+    "Depose Richard II immediately",
+    "Abolish the Poll Tax",
+    "Lead a crusade to the Holy Land"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-26",
+   "question": "What was the 'Curia Regis' primarily responsible for during the 14th century?",
+   "options": [
+    "Advising the King and managing central administration",
+    "Managing the personal finances of the Queen",
+    "Overseeing the education of the clergy",
+    "Directing the defense of the Welsh borders"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-27",
+   "question": "The battle of Neville's Cross (1346) was a significant victory for the English against which adversary?",
+   "options": [
+    "The French",
+    "The Scots",
+    "The Spanish",
+    "The Welsh"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-28",
+   "question": "Which member of the Royal family was a staunch protector of John Wycliffe during his early trials?",
+   "options": [
+    "Edward, the Black Prince",
+    "John of Gaunt",
+    "Richard II",
+    "Henry Bolingbroke"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-29",
+   "question": "The 'Lollard Knights' were a group of influential courtiers associated with Richard II who were suspected of:",
+   "options": [
+    "Wycliffite sympathies and heresy",
+    "Supporting the French King",
+    "Embezzling royal funds",
+    "Conspiring to murder the Archbishop"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-30",
+   "question": "What is the name of the treaty that formally ended the first phase of the Hundred Years' War in 1360?",
+   "options": [
+    "Treaty of Troyes",
+    "Treaty of Brétigny (or Calais)",
+    "Treaty of Paris",
+    "Treaty of Ghent"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-31",
+   "question": "Richard II's belief in the 'Divine Right of Kings' is most visibly represented in which famous medieval artwork?",
+   "options": [
+    "The Wilton Diptych",
+    "The Bayeux Tapestry",
+    "The Luttrell Psalter",
+    "The Ellesmere Manuscript"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-32",
+   "question": "Which administrative body saw its power significantly expand in the 14th century as it became the primary repository for the government's financial records?",
+   "options": [
+    "The Exchequer",
+    "The Chancery",
+    "The Star Chamber",
+    "The Privy Council"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-33",
+   "question": "The social unrest following the plague led to the 'Sumptuary Laws' of 1363. What did these laws regulate?",
+   "options": [
+    "The price of bread and ale",
+    "The type of clothing and food appropriate for different social classes",
+    "The number of hours a laborer could work",
+    "The amount of tithe paid to the church"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-34",
+   "question": "Who was the 'Fair Maid of Kent' and the mother of Richard II?",
+   "options": [
+    "Philippa of Hainault",
+    "Joan of Kent",
+    "Isabella of France",
+    "Anne of Bohemia"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-35",
+   "question": "Which 14th-century crisis led to the 'Malthusian deadlock' being broken through massive depopulation?",
+   "options": [
+    "The Great Famine (1315-1317)",
+    "The Black Death (1348-1350)",
+    "The Hundred Years' War",
+    "The Peasants' Revolt"
+   ],
+   "correct_option_id": 1
+  },
+  {
+   "id": "ac-h-36",
+   "question": "Which important commercial body, based in London and Calais, held the monopoly on the export of English wool?",
+   "options": [
+    "The Merchants of the Staple",
+    "The Merchant Adventurers",
+    "The Hanseatic League",
+    "The East India Company"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-37",
+   "question": "At the meeting at Smithfield in 1381, who was the Mayor of London who struck the fatal blow against Wat Tyler?",
+   "options": [
+    "William Walworth",
+    "Richard Whittington",
+    "Thomas Philpot",
+    "Nicholas Brembre"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-38",
+   "question": "The 'Lollard' movement was primarily suppressed through which draconian law passed shortly after Chaucer's death in 1401?",
+   "options": [
+    "De Heretico Comburendo (On the Burning of Heretics)",
+    "The Act of Supremacy",
+    "The Statute of Winchester",
+    "The Clarendon Code"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-39",
+   "question": "Which powerful duchy in France was the primary territorial point of contention between Edward III and Philip VI?",
+   "options": [
+    "Aquitaine (Gascony)",
+    "Brittany",
+    "Normandy",
+    "Burgundy"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-40",
+   "question": "The 'Burghers of Calais' story, immortalized by Rodin, took place after which event in 1347?",
+   "options": [
+    "The successful English siege of the city",
+    "The French recapture of the port",
+    "A peaceful trade agreement",
+    "The outbreak of the plague in the city"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-41",
+   "question": "What was the 'Black Prince's' real name?",
+   "options": [
+    "Edward of Woodstock",
+    "Richard of York",
+    "Henry of Bolingbroke",
+    "John of Gaunt"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-42",
+   "question": "The 'Order of the Garter' was founded by Edward III around 1348 to promote which ideals?",
+   "options": [
+    "Chivalry and military prowess",
+    "Religious asceticism",
+    "Merchant trade dominance",
+    "The supremacy of the Pope"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-43",
+   "question": "Which document, presented to Richard II in 1399, listed 33 counts of grievances justifying his deposition?",
+   "options": [
+    "The Record and Process of the Deposition",
+    "The Magna Carta",
+    "The 12 Conclusions",
+    "The Petition of Right"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-44",
+   "question": "In the tripartite division of the 14th-century church, the 'Regular Clergy' were those who:",
+   "options": [
+    "Lived under a monastic rule (monks/friars)",
+    "Served in local parishes as priests",
+    "Were appointed directly by the King",
+    "Only focused on translating the Bible"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-45",
+   "question": "What is the specific historical name for the period in which the Papacy was located in Avignon (1309–1376)?",
+   "options": [
+    "The Babylonian Captivity of the Church",
+    "The Great Schism",
+    "The Holy Reformation",
+    "The Era of Three Popes"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-46",
+   "question": "Which royal council served as the highest court of appeal and administrative body under the King?",
+   "options": [
+    "The Privy Council",
+    "The Common Council",
+    "The Guildhall",
+    "The Witan"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-47",
+   "question": "Who was the 'King's Mother' that reportedly influenced Richard II to treat the rebels with leniency initially in 1381?",
+   "options": [
+    "Joan of Kent",
+    "Isabella of France",
+    "Philippa of Hainault",
+    "Katherine Swynford"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-48",
+   "question": "The 'Great Famine' of 1315-1317 is often cited by historians as a precursor that made the population more vulnerable to:",
+   "options": [
+    "The Black Death",
+    "The French invasion",
+    "Political corruption",
+    "The Lollard movement"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-49",
+   "question": "Which major English port was a primary 'Staple' port for the wool trade during the late 14th century?",
+   "options": [
+    "Calais",
+    "Liverpool",
+    "Bristol",
+    "Plymouth"
+   ],
+   "correct_option_id": 0
+  },
+  {
+   "id": "ac-h-50",
+   "question": "Geoffrey Chaucer's own career in the custom house at Aldgate coincided with which major uprising?",
+   "options": [
+    "The Peasants' Revolt of 1381",
+    "The deposition of Richard II",
+    "The Battle of Poitiers",
+    "The Oldcastle Revolt"
+   ],
+   "correct_option_id": 0
+  }
+ ]
+}

@@ -22,7 +22,7 @@ breaking it breaks a promise already made.
   (see rule 7). Change the template or the registry, never a generated page.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
-  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`.
+  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, page-head motif and `nav.js` into every built page
 
@@ -76,13 +76,16 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
   right or wrong and the reason at once. The result lists the questions missed.
   Page `/quizzes/daily/<period>/`; the period's card on `/quizzes/daily/` links to it ("Start Quiz →").
 - Question file `assets/instant/<period>-<level>.json`:
-  `{bankId, period, level, rev, questions:[{id, question, options, correct_option_id, explanation}]}`.
+  `{bankId, period, level, rev, questions:[{id, question, options, correct_option_id, explanation?}]}`.
+  `explanation` is optional (the Age of Chaucer files have none): without it the reader sees right or
+  wrong and the right answer, and no reason. Never write a reason for the owner. On such a page the text
+  must not say "with the reason" (meta, About list). If reasons arrive later, add them and raise `rev`.
   The question text is the owner's and stays exactly as supplied; only `id` and `rev` are added.
   Ids never change or get renumbered: readers' records and the future dashboard hang on them. Prefix per
-  period, then `e` or `h`, then the number: `as-e-01` Anglo-Saxon, `an-h-01` Anglo-Norman (Literature bank
-  of a period: `asl-`, `anl-`). If a question's meaning changes, raise `rev`.
+  period, then `e` or `h`, then the number: `as-e-01` Anglo-Saxon, `an-h-01` Anglo-Norman, `ac-e-01` Age of Chaucer (Literature bank
+  of a period: `asl-`, `anl-`, `acl-`). If a question's meaning changes, raise `rev`.
 - The engine shuffles options, except an option that points at the others ("All of the above",
-  "Both A and B"). Order of questions: never seen, then missed, then right.
+  "Both A and B") and True / False (2 options, kept in that order). Order of questions: never seen, then missed, then right.
 - Progress stays in this browser only (`akd:<bank>:v1`, per question id) so it can move to an account later.
 - **Answering must never scroll the page** (focus is set with `preventScroll`). The owner asked for
   this. Keep it in every new quiz screen. A screen change may scroll only if its top is out of view.
@@ -92,8 +95,8 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
 
 **When the owner sends question files for it**
 1. The owner marks them verified: do not re-check the facts. If something stood out while reading,
-   say so once and leave it as it is. Do run the structure check (counts, 4 options,
-   `correct_option_id` in range, no duplicate questions).
+   say so once and leave it as it is. Do run the structure check (counts, 4 options, or 2 for a
+   True / False question, `correct_option_id` in range, no duplicate questions).
 2. **Duplicate check against every live file of the same period** (compare the question text).
    If the files are the same questions, even with the options in another order, STOP. Add nothing, tell
    the owner what matched, and ask for the right files. (This happened once: a "Literature" upload was

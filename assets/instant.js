@@ -14,7 +14,9 @@
 
    Question file:
      { bankId, period, level, rev, questions:[
-         { id, question, options:[..], correct_option_id, explanation } ] }
+         { id, question, options:[..], correct_option_id, explanation? } ] }
+   "explanation" is optional: without it the reader sees right or wrong and the
+   right answer, and no reason.
    Change a question's meaning -> raise "rev". Old records for that level
    are then dropped, so they never stick to a different question.
 
@@ -23,7 +25,7 @@
    Which questions: ones never seen first, then ones missed last time,
    then ones answered right. Inside each group the order is random.
    Options are shuffled too, except where an option points at the others
-   ("All of the above", "Both A and B") - those keep their order.
+   ("All of the above", "Both A and B") and True / False - those keep their order.
 
    Everything stays in this browser:
      akd:<bank>:v1      { v, rev:{level:n}, seen:{id:{r,w,l,t}}, runs:[{t,level,n,right}] }
@@ -212,6 +214,8 @@
 
   /* ---------- choosing the questions ---------- */
   function keepsOrder(q) {
+    /* True / False (or Yes / No) always reads in that order. */
+    if (q.options.length === 2 && q.options.every(function (o) { return /^(true|false|yes|no)$/i.test(String(o).trim()); })) return true;
     return q.options.some(function (o) {
       var s = String(o);
       return POINTS_AT_OTHERS_1.test(s) || POINTS_AT_OTHERS_2.test(s);
@@ -320,7 +324,9 @@
       el.right.hidden = false;
       el.right.textContent = 'The right answer is ' + LETTERS[correctK] + ': ' + q.options[q.correct_option_id] + '.';
     }
-    el.why.textContent = q.explanation;
+    /* A question may come without a reason (some banks have none yet): then show no reason at all. */
+    el.why.textContent = q.explanation || '';
+    el.why.hidden = !q.explanation;
     el.next.hidden = false;
     el.next.textContent = run.i < run.n - 1 ? 'Next question →' : 'See your result →';
     el.score.textContent = 'Right so far: ' + rightSoFar();
@@ -404,8 +410,11 @@
         you.textContent = 'Your answer: ' + q.options[it.perm[run.picks[it.id]]];
         var ans = document.createElement('p'); ans.className = 'iq-miss-a';
         ans.textContent = 'Right answer: ' + q.options[q.correct_option_id];
-        var why = document.createElement('p'); why.className = 'iq-miss-why'; why.textContent = q.explanation;
-        box.appendChild(t); box.appendChild(you); box.appendChild(ans); box.appendChild(why);
+        box.appendChild(t); box.appendChild(you); box.appendChild(ans);
+        if (q.explanation) {
+          var why = document.createElement('p'); why.className = 'iq-miss-why'; why.textContent = q.explanation;
+          box.appendChild(why);
+        }
         el.rMissed.appendChild(box);
       });
     } else {
