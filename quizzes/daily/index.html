@@ -170,11 +170,12 @@
        on a phone it is a row, with the picture at the right.
        The pictures are in /assets/topics/. Portraits on a white ground blend into the panel
        (the plain .dq-pic); a painted scene with its own background fills the panel
-       (class "dq-pic is-tile"). Ten cards use tiles: Anglo-Saxon, Anglo-Norman, Fifteenth Century,
-       Early Tudor, Jacobean, Commonwealth, Caroline, Restoration Age, Augustan Age and Age of
-       Sensibility. They are 480 by 384 (5 to 4, the shape of the panel) crops of the supplied
-       scenes, with the Latin caption on the Norman one and the date and rose on the Tudor one
-       painted out, and the generator's mark and the signature cropped off.
+       (class "dq-pic is-tile"). Thirteen cards use tiles: every age from Anglo-Saxon to Postmodern
+       except Age of Chaucer, Renaissance, Elizabethan, Neoclassical, Romantic, Victorian and Modern,
+       which keep their portraits. A tile is a 480 by 384 (5 to 4, the shape of the panel) crop of a
+       supplied scene. Each crop keeps the whole head with room above it (check this for a new
+       one), has the Latin caption on the Norman scene and the date and rose on the Tudor scene
+       painted out, and has the generator's mark and the signature cropped or painted out.
        Small pictures (the portraits are only about 130px) look soft in the big panel;
        a picture of 500px or more across looks sharp.
 -->
@@ -390,7 +391,7 @@
 
     <article class="dq-card t-sand is-soon" data-period="edwardian">
       <div class="dq-art">
-        <span class="dq-ph" aria-hidden="true"></span>
+        <img class="dq-pic is-tile" src="/assets/topics/edwardian.webp" alt="" width="480" height="384" loading="lazy">
       </div>
       <div class="dq-text">
         <h3 class="dq-title">Edwardian Period</h3>
@@ -401,7 +402,7 @@
 
     <article class="dq-card t-sage is-soon" data-period="georgian">
       <div class="dq-art">
-        <span class="dq-ph" aria-hidden="true"></span>
+        <img class="dq-pic is-tile" src="/assets/topics/georgian.webp" alt="" width="480" height="384" loading="lazy">
       </div>
       <div class="dq-text">
         <h3 class="dq-title">Georgian Period</h3>
@@ -423,7 +424,7 @@
 
     <article class="dq-card t-lilac is-soon" data-period="postmodern">
       <div class="dq-art">
-        <span class="dq-ph" aria-hidden="true"></span>
+        <img class="dq-pic is-tile" src="/assets/topics/postmodern.webp" alt="" width="480" height="384" loading="lazy">
       </div>
       <div class="dq-text">
         <h3 class="dq-title">Postmodern Period</h3>
