@@ -1,0 +1,608 @@
+{
+ "bankId": "fifteenth-century",
+ "period": "Fifteenth Century",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "fc-h-01",
+   "question": "John Lydgate's 'The Fall of Princes' is an adaptation of Boccaccio's Latin work. Through which French translator did Lydgate source this text?",
+   "options": [
+    "Christine de Pizan",
+    "Eustache Deschamps",
+    "Jean de Meun",
+    "Laurent de Premierfait"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lydgate translated his Fall of Princes from Laurent de Premierfait's French version of Boccaccio's De Casibus Virorum Illustrium."
+  },
+  {
+   "id": "fc-h-02",
+   "question": "Which 15th-century Privy Seal clerk composed 'La Male Regle', a remarkably candid autobiographical poem on his tavern-haunting youth?",
+   "options": [
+    "John Skelton",
+    "John Lydgate",
+    "Thomas Hoccleve",
+    "Stephen Hawes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In La Male Regle, Thomas Hoccleve candidly laments his wasteful spending, gluttony, and late nights in London taverns."
+  },
+  {
+   "id": "fc-h-03",
+   "question": "In Stephen Hawes's allegorical romance 'The Pastime of Pleasure', what is the name of the aspiring knightly protagonist?",
+   "options": [
+    "Graunde Amoure",
+    "Everyman",
+    "Will",
+    "Redcrosse Knight"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Graunde Amoure is the protagonist who undergoes rigorous intellectual education in the Tower of Doctrine to win La Bell Pucell."
+  },
+  {
+   "id": "fc-h-04",
+   "question": "Alexander Barclay's satirical poem 'The Ship of Fools' (1509) represents an expanded English translation of a work by which German humanist?",
+   "options": [
+    "Hans Sachs",
+    "Ulrich von Hutten",
+    "Sebastian Brant",
+    "Desiderius Erasmus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Barclay translated and adapted Sebastian Brant's celebrated verse satire Das Narrenschiff into English rhyme royal."
+  },
+  {
+   "id": "fc-h-05",
+   "question": "Which 15th-century pseudo-Chaucerian allegorical poem features a debate between the followers of the ephemeral flower and the enduring leaf?",
+   "options": [
+    "The Cuckoo and the Nightingale",
+    "The Flower and the Leaf",
+    "The Assembly of Ladies",
+    "The Court of Love"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Flower and the Leaf is a 15th-century poem where the Leaf represents steadfast virtue and the Flower represents transient pleasure."
+  },
+  {
+   "id": "fc-h-06",
+   "question": "In Robert Henryson's 'The Testament of Cresseid', what specific physical affliction is inflicted upon Cresseid by the planet-gods for her blasphemy?",
+   "options": [
+    "Leprosy",
+    "Deafness",
+    "Total blindness",
+    "Silent madness"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Cresseid is struck down with leprosy by Saturn and Cynthia after she curses Venus and Cupid for her abandonment."
+  },
+  {
+   "id": "fc-h-07",
+   "question": "What is the haunting Latin refrain recurring throughout William Dunbar's funeral elegy 'Lament for the Makaris'?",
+   "options": [
+    "Ubi sunt qui ante nos fuerunt",
+    "Memento mori",
+    "Vanitas vanitatum",
+    "Timor mortis conturbat me"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Latin liturgical response Timor mortis conturbat me, meaning The fear of death troubles me, closes each four-line stanza."
+  },
+  {
+   "id": "fc-h-08",
+   "question": "Which major allegorical dream-vision by Gavin Douglas describes a courtly poet led by a nymph to the palace of honor and the court of Venus?",
+   "options": [
+    "The Thrissil and the Rois",
+    "The Palice of Honour",
+    "The Golden Targe",
+    "King Hart"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Palice of Honour, composed around 1501 by Gavin Douglas, is an elaborate dream-vision recounting a poet's journey to true glory."
+  },
+  {
+   "id": "fc-h-09",
+   "question": "How many Aesopian animal fables are included in Robert Henryson's Middle Scots collection 'The Morall Fabillis of Esope'?",
+   "options": [
+    "Twelve",
+    "Twenty-four",
+    "Seven",
+    "Thirteen"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Henryson's collection contains precisely thirteen fables in rime royal, each concluding with an instructive moralitas."
+  },
+  {
+   "id": "fc-h-10",
+   "question": "Which English noblewoman, whom King James I loved while imprisoned at Windsor Castle, inspired his poem 'The Kingis Quair'?",
+   "options": [
+    "Lady Joan Beaufort",
+    "Catherine of Valois",
+    "Margaret Tudor",
+    "Eleanor of Aquitaine"
+   ],
+   "correct_option_id": 0,
+   "explanation": "James I fell in love with Lady Joan Beaufort, daughter of the Earl of Somerset, marrying her upon his release in 1424."
+  },
+  {
+   "id": "fc-h-11",
+   "question": "Which Scottish makar is especially renowned for the elaborate, high-flown, and ornate 'aureate' style displayed in 'The Golden Targe'?",
+   "options": [
+    "David Lindsay",
+    "Gavin Douglas",
+    "Robert Henryson",
+    "William Dunbar"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dunbar's The Golden Targe is the supreme Scottish example of aureate diction, employing Latinate vocabulary and glowing imagery."
+  },
+  {
+   "id": "fc-h-12",
+   "question": "Gavin Douglas's translation of the 'Aeneid' is famous for its original verse Prologues, which contain the earliest realistic descriptions of:",
+   "options": [
+    "Scottish natural landscapes, winter weather, and seasons",
+    "Detailed naval architecture used in North Sea trade",
+    "Satirical accounts of Edinburgh law courts and guilds",
+    "The royal genealogies of the Scottish Stewart monarchs"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Douglas's Prologue to Book VII famously provides the earliest vivid, realistic descriptions of Scottish winter in literature."
+  },
+  {
+   "id": "fc-h-13",
+   "question": "When William Caxton edited and printed Malory's 'Le Morte d'Arthur' in 1485, what major editorial reorganization did he impose on the text?",
+   "options": [
+    "He divided Malory's continuous manuscript into twenty-one books and 507 chapters",
+    "He inserted the original character of Sir Galahad into the Grail quest",
+    "He removed all chivalric battles and turned the text into Latin verse",
+    "He translated the entire work from French into English prose himself"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caxton divided Malory's eight romances into twenty-one numbered books with chapter headings for ease of reading."
+  },
+  {
+   "id": "fc-h-14",
+   "question": "The 1934 discovery of the Winchester Manuscript by W. F. Oakeshott revealed that Malory had conceived his Arthurian cycle as:",
+   "options": [
+    "A single uninterrupted drama designed for court staging",
+    "A Latin theological guide written for Knights Hospitaller",
+    "A sequence of eight distinct, self-contained romance tales",
+    "A unified allegorical epic supporting the Lancastrian faction"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Winchester Manuscript shows Malory conceived his work as eight separate tales rather than Caxton's 21-book structure."
+  },
+  {
+   "id": "fc-h-15",
+   "question": "Sir Thomas Malory's 'Tale of the Noble King Arthur that was Emperor Himself' is heavily based on which English alliterative work?",
+   "options": [
+    "The Stanzaic Morte Arthur",
+    "The Alliterative Morte Arthure",
+    "Sir Gawain and the Green Knight",
+    "Piers Plowman"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Malory adapted the 14th-century northern Alliterative Morte Arthure for his account of Arthur's victorious Roman campaign."
+  },
+  {
+   "id": "fc-h-16",
+   "question": "In Malory's Arthurian cycle, who is the biological father of Sir Galahad, conceived upon Dame Elaine through magical deception?",
+   "options": [
+    "Sir Lancelot",
+    "Sir Gawain",
+    "Sir Bors",
+    "King Arthur"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Through enchantment, Dame Elaine of Corbenic tricks Sir Lancelot into believing she is Queen Guinevere, conceiving Galahad."
+  },
+  {
+   "id": "fc-h-17",
+   "question": "The historic 'Paston Letters', recording domestic, legal, and political life in the 15th century, originated from which English county?",
+   "options": [
+    "Yorkshire",
+    "Norfolk",
+    "Cornwall",
+    "Kent"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Paston family were prominent landholding gentry based in Norfolk, with estates at Paston, Gresham, and Caister."
+  },
+  {
+   "id": "fc-h-18",
+   "question": "Modern scholarship suggests that the pseudonym 'Sir John Mandeville' in 'The Travels' may conceal which Liège physician?",
+   "options": [
+    "Jean Froissart",
+    "Jean de Bourgogne",
+    "Laurent de Premierfait",
+    "Philippe de Commines"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Scholars widely identify the mysterious traveler Sir John Mandeville with the Liège medical writer Jean de Bourgogne."
+  },
+  {
+   "id": "fc-h-19",
+   "question": "The anonymous dramatist known as the 'Wakefield Master' is celebrated for composing the most inventive plays in which manuscript cycle?",
+   "options": [
+    "The Towneley Cycle",
+    "The York Cycle",
+    "The Chester Cycle",
+    "The N-Town Cycle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Towneley manuscript, also known as the Wakefield Cycle, contains the distinctive nine-line stanzas of the Wakefield Master."
+  },
+  {
+   "id": "fc-h-20",
+   "question": "In the Wakefield Master's 'Second Shepherds' Play', Mak and his wife Gill hide a stolen sheep in a cradle, parodying which event?",
+   "options": [
+    "The Annunciation to the Virgin",
+    "The Resurrection of Lazarus",
+    "The Nativity and adoration of Christ",
+    "The Last Supper with the Apostles"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The fraudulent swaddling of a stolen horned sheep in a cradle burlesques the true Lamb of God born in a manger in Bethlehem."
+  },
+  {
+   "id": "fc-h-21",
+   "question": "Which of the following morality plays is NOT included in the famous 15th-century collection known as the Macro Manuscript?",
+   "options": [
+    "Mankind",
+    "The Castle of Perseverance",
+    "Everyman",
+    "Wisdom"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Macro Manuscript preserves The Castle of Perseverance, Wisdom, and Mankind, whereas Everyman survives in early printed editions."
+  },
+  {
+   "id": "fc-h-22",
+   "question": "The morality play 'The Castle of Perseverance' is uniquely famous for containing an original manuscript illustration depicting a:",
+   "options": [
+    "Crucifixion pageant on a public cathedral square",
+    "Circular staging diagram surrounded by a protective water ditch",
+    "Royal court banquet hall with elevated balcony",
+    "Three-tiered pageant wagon with trapdoors"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The manuscript includes a circular diagram of the performance arena, showing scaffold positions and a castle in the center."
+  },
+  {
+   "id": "fc-h-23",
+   "question": "In the morality play 'Mankind', which comical demon character specializes in collecting skipped syllables and words from rushed prayers?",
+   "options": [
+    "New-Guise",
+    "Nought",
+    "Nowadays",
+    "Titivillus"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Titivillus was a medieval folk demon believed to collect unchanted syllables and dropped words from careless clerical prayers."
+  },
+  {
+   "id": "fc-h-24",
+   "question": "The York Mystery Cycle was traditionally performed on movable pageant wagons on which major Catholic feast day in late spring?",
+   "options": [
+    "Epiphany",
+    "Corpus Christi",
+    "Candlemas",
+    "Michaelmas"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The feast of Corpus Christi, celebrated on the Thursday after Trinity Sunday, was the premier occasion for civic mystery staging."
+  },
+  {
+   "id": "fc-h-25",
+   "question": "Which late 15th-century play by Henry Medwall is celebrated as the earliest surviving fully secular interlude in English drama?",
+   "options": [
+    "Wit and Science",
+    "The Play of the Weather",
+    "The Four PP",
+    "Fulgens and Lucres"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Composed around 1497 by Henry Medwall, Fulgens and Lucres is regarded as the first purely secular English dramatic interlude."
+  },
+  {
+   "id": "fc-h-26",
+   "question": "What 15th-century Dutch morality play is widely recognized as the direct source or close continental counterpart of 'Everyman'?",
+   "options": [
+    "Lanseloet van Denemerken",
+    "Mariken van Nieumeghen",
+    "Elckerlijc",
+    "Esmoreit"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Everyman is a close translation of the Flemish/Dutch play Elckerlijc, attributed to Peter van Diest and printed in 1495."
+  },
+  {
+   "id": "fc-h-27",
+   "question": "In which continental city did William Caxton learn the art of printing and produce the first book printed in English around 1473?",
+   "options": [
+    "Bruges",
+    "Cologne",
+    "Paris",
+    "Antwerp"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caxton set up his first printing press in Bruges in Flanders under the patronage of Margaret, Duchess of Burgundy."
+  },
+  {
+   "id": "fc-h-28",
+   "question": "Which work, translated from French by Earl Rivers, was the first dated book printed on English soil by Caxton in 1477?",
+   "options": [
+    "Dictes or Sayengis of the Philosophres",
+    "Le Morte d'Arthur",
+    "The Canterbury Tales",
+    "The Golden Legend"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dictes or Sayengis of the Philosophres, printed at Westminster in November 1477, is the first dated book printed in England."
+  },
+  {
+   "id": "fc-h-29",
+   "question": "In bibliography, what specific historical term refers to books printed using movable metal type prior to the year 1501?",
+   "options": [
+    "Broadsides",
+    "Incunabula",
+    "Folios",
+    "Palimpsests"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Incunabula, meaning from the cradle, designates all western books printed between the 1450s and December 31, 1500."
+  },
+  {
+   "id": "fc-h-30",
+   "question": "In addition to his landmark career as a printer and publisher, William Caxton was exceptionally productive as a:",
+   "options": [
+    "Translator of French, Latin, and Dutch texts",
+    "Monastic scribe copying theological codices",
+    "Dramatist composing mystery cycles",
+    "Naval commander during the Hundred Years' War"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caxton translated over twenty substantial works into English prose, creating a large portion of the texts he published."
+  },
+  {
+   "id": "fc-h-31",
+   "question": "In his famous preface to 'Le Morte d'Arthur', what historical question does William Caxton explicitly address?",
+   "options": [
+    "Whether King Arthur was an authentic historical king or an invented legend",
+    "Whether classical Latin should replace the English vernacular",
+    "Whether movable type would destroy the monastic scribal profession",
+    "Whether English prose was superior to French chivalric verse"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caxton discusses evidence for Arthur's historical existence, citing his tomb at Glastonbury, relics, and continental fame."
+  },
+  {
+   "id": "fc-h-32",
+   "question": "John Skelton's mock-elegy 'Phyllyp Sparowe' is an English re-imagining of a famous bird elegy by which classical Latin lyric poet?",
+   "options": [
+    "Virgil",
+    "Catullus",
+    "Horace",
+    "Ovid"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Skelton adapts Catullus's famous third carmen mourning Lesbia's pet sparrow in his delightful mock-elegy for Jane Scrope's bird."
+  },
+  {
+   "id": "fc-h-33",
+   "question": "Which decisive 1485 battle ended the Wars of the Roses, resulting in the death of Richard III and the accession of Henry VII?",
+   "options": [
+    "Battle of Tewkesbury",
+    "Battle of Bosworth Field",
+    "Battle of Agincourt",
+    "Battle of Towton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Henry Tudor defeated Richard III at Bosworth Field on August 22, 1485, establishing the Tudor dynasty."
+  },
+  {
+   "id": "fc-h-34",
+   "question": "Which idiosyncratic meter consists of short lines of two or three stresses with identical rhymes repeated in cascading sequences?",
+   "options": [
+    "Poulter's measure",
+    "Ottava rima",
+    "Skeltonic verse",
+    "Alexandrine couplets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Skeltonics, devised by John Skelton, consist of short accentual rhymed lines with breathless, tumbling rhythm."
+  },
+  {
+   "id": "fc-h-35",
+   "question": "The famous 15th-century dialogue ballad 'The Nut-Brown Maid' is structured as a debate to defend women against accusations of:",
+   "options": [
+    "Greed and pride in dress",
+    "Cowardice in times of conflict",
+    "Lack of religious piety",
+    "Inconstancy and infidelity in love"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Nut-Brown Maid vindicates feminine fidelity, depicting a maiden who remains loyal to her outlaw lover despite severe tests."
+  },
+  {
+   "id": "fc-h-36",
+   "question": "Which pious devotional translation was commissioned and published through the royal patron Margaret Beaufort, mother of Henry VII?",
+   "options": [
+    "Troy Book",
+    "The Ship of Fools",
+    "The Mirror of Gold for the Sinful Soul",
+    "The Kingis Quair"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lady Margaret Beaufort, Countess of Richmond, commissioned Caxton and Wynkyn de Worde to print devotional works like Speculum Aureum."
+  },
+  {
+   "id": "fc-h-37",
+   "question": "John Lydgate's allegorical dream-poem 'The Temple of Glas' was directly modeled after which dream-vision by Geoffrey Chaucer?",
+   "options": [
+    "The Parliament of Fowls",
+    "The Book of the Duchess",
+    "The Legend of Good Women",
+    "The House of Fame"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lydgate modeled his crystal temple of Venus in The Temple of Glas on Chaucer's glass temple in The House of Fame."
+  },
+  {
+   "id": "fc-h-38",
+   "question": "In 15th-century English musical and poetic culture, what was the primary formal structure of a traditional 'carol'?",
+   "options": [
+    "A Latin theological debate between two clerics",
+    "A continuous unrhymed alliterative narrative poem",
+    "A burden or refrain followed by uniform stanzas, originally sung during a round dance",
+    "A seven-line royal stanza without a chorus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Originally a ring-dance song, the English carol developed a fixed form with an opening burden and alternating stanzas."
+  },
+  {
+   "id": "fc-h-39",
+   "question": "Thomas Hoccleve composed his 'Regiment of Princes' as an educational 'mirror for princes' dedicated to which royal patron?",
+   "options": [
+    "Richard II",
+    "Henry, Prince of Wales (later Henry V)",
+    "Edward IV",
+    "Henry VI"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hoccleve addressed his de regimine principum treatise in 1411 to young Prince Hal, offering moral and political counsel."
+  },
+  {
+   "id": "fc-h-40",
+   "question": "Which satirical and macabre poem by William Dunbar depicts Mahoun (the Devil) hosting an unholy carnival of the capital sins in Hell?",
+   "options": [
+    "The Flyting of Dunbar and Kennedie",
+    "The Thistle and the Rose",
+    "The Golden Targe",
+    "The Dance of the Seven Deadly Sins"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In The Dance of the Seven Deadly Sins, Dunbar vividly depicts personified sins dancing before Satan on Fastern's Eve."
+  },
+  {
+   "id": "fc-h-41",
+   "question": "The Chester Mystery Cycle of plays is distinguished from the York and Wakefield cycles by which characteristic tone?",
+   "options": [
+    "A far more bawdy and aggressive comedic tone",
+    "A more solemn, didactic, and doctrinally conservative presentation",
+    "An anti-papal and early Protestant ideological bias",
+    "An unrhymed alliterative verse structure"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Chester Cycle maintains a reverent, expository, and didactic character, with less secular comedy than the Wakefield plays."
+  },
+  {
+   "id": "fc-h-42",
+   "question": "Which visionary 15th-century mystic authored what is celebrated as the earliest surviving autobiography in the English language?",
+   "options": [
+    "Dame Alice Kyteler",
+    "Dame Eleanor Cobham",
+    "Margery Kempe",
+    "Julian of Norwich"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Book of Margery Kempe, dictated around 1436 by the Norfolk pilgrim and visionary, is considered the first English autobiography."
+  },
+  {
+   "id": "fc-h-43",
+   "question": "Stephen Hawes's allegorical work 'The Example of Virtue' belongs to which major 15th-century didactic literary genre?",
+   "options": [
+    "Secular fabliau depicting marital infidelity",
+    "Arthurian verse chronicle of British kings",
+    "Moral allegory depicting the soul's pilgrimage to virtue",
+    "Anti-clerical interlude for secular banquets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hawes's The Example of Virtue is an allegorical dream-vision depicting Youth overcoming vices under the guidance of Discretion."
+  },
+  {
+   "id": "fc-h-44",
+   "question": "What is the primary argument of the 1436 political poem 'The Libelle of Englyshe Polycye' regarding national defense?",
+   "options": [
+    "England must maintain naval mastery and control of the narrow seas for commerce and security",
+    "The royal army should replace bows with early firearms",
+    "The English crown should dissolve all continental merchant guilds",
+    "England should immediately surrender all territorial claims in France"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Libelle urged keeping the English Channel secure, famously stating Keep then the sea about in special."
+  },
+  {
+   "id": "fc-h-45",
+   "question": "Which English Chaucerian poet was the first to coin and apply the word 'aureate' to describe elevated poetic diction?",
+   "options": [
+    "Thomas Hoccleve",
+    "Stephen Hawes",
+    "John Skelton",
+    "John Lydgate"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Lydgate was the first to use the term aureate in English to praise the golden, refined eloquence of poetic language."
+  },
+  {
+   "id": "fc-h-46",
+   "question": "The late 15th-century drama 'The Croxton Play of the Sacrament' is unique in English dramatic history because it dramatizes:",
+   "options": [
+    "A classical debate between Aristotle and Plato",
+    "The dramatic martyrdom of Saint Thomas Becket in Canterbury",
+    "A miracle story confirming transubstantiation after the desecration of the Eucharistic Host",
+    "The legendary exploits of Robin Hood and Little John"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In the Croxton Play, five Jewish merchants torture the consecrated Host, which bleeds and performs miraculous conversions."
+  },
+  {
+   "id": "fc-h-47",
+   "question": "In the title of John Skelton's satirical poem 'The Bowge of Courte', what does the Anglo-Norman word 'Bowge' signify?",
+   "options": [
+    "A specialized tournament armor worn by heralds",
+    "Free court rations, food, and lodging provided by the royal household",
+    "A legal indictment issued by the Star Chamber",
+    "A ceremonial dance performed at Twelfth Night"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bouche of court referred to the royal privilege of receiving free food, drink, and board at the monarch's expense."
+  },
+  {
+   "id": "fc-h-48",
+   "question": "Which early printed collection of ballads, consisting of 456 stanzas in eight fyttes, is the most extensive text of early Robin Hood lore?",
+   "options": [
+    "A Gest of Robyn Hode",
+    "Robin Hood and the Monk",
+    "Robin Hood's Death",
+    "Robin Hood and Guy of Gisborne"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A Gest of Robyn Hode represents the foundational early epic compilation of the legendary outlaw hero's adventures."
+  },
+  {
+   "id": "fc-h-49",
+   "question": "Which Scottish makar, famous for translating Virgil's 'Aeneid', served as provost of St Giles and Bishop of Dunkeld?",
+   "options": [
+    "William Dunbar",
+    "Robert Henryson",
+    "Blind Harry",
+    "Gavin Douglas"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Gavin Douglas was a prominent Scottish churchman and humanist scholar who held the bishopric of Dunkeld."
+  },
+  {
+   "id": "fc-h-50",
+   "question": "Why is the 15th century designated as the pivotal 'Age of Transition' in British literary and cultural history?",
+   "options": [
+    "It represents the end of the English monarchy and the start of a republic",
+    "It represents the complete abandonment of Christianity for classic paganism",
+    "It marks the disappearance of all regional spoken English dialects",
+    "It marks the shift from medieval manuscript culture to modern print culture"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The 15th century bridged medieval scribal culture and the modern era of mass print, literacy, and Renaissance humanism."
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+{
+ "bankId": "fifteenth-century",
+ "period": "Fifteenth Century",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "fc-e-01",
+   "question": "Who is traditionally celebrated as the 'Father of English Printing' for introducing the printing press to England?",
+   "options": [
+    "Johannes Gutenberg",
+    "Wynkyn de Worde",
+    "John Lydgate",
+    "William Caxton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Caxton introduced movable type printing to England in 1476, setting up his press at Westminster."
+  },
+  {
+   "id": "fc-e-02",
+   "question": "In which year did William Caxton establish England's first printing press at Westminster?",
+   "options": [
+    "1485",
+    "1450",
+    "1400",
+    "1476"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Caxton set up his historic press within the precincts of Westminster Abbey in late 1476."
+  },
+  {
+   "id": "fc-e-03",
+   "question": "Which drama is widely considered the most famous and representative 15th-century English morality play?",
+   "options": [
+    "Wisdom",
+    "Everyman",
+    "The Castle of Perseverance",
+    "Mankind"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Everyman is the best known late 15th-century morality play, dramatising the universal summons of humanity to death."
+  },
+  {
+   "id": "fc-e-04",
+   "question": "Who is the author of the monumental 15th-century English prose romance 'Le Morte d'Arthur'?",
+   "options": [
+    "John Gower",
+    "Sir Thomas Malory",
+    "William Langland",
+    "Geoffrey Chaucer"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir Thomas Malory compiled and translated Arthurian legends into Le Morte d'Arthur while imprisoned."
+  },
+  {
+   "id": "fc-e-05",
+   "question": "The 15th-century poets known as the 'Scottish Chaucerians' were heavily inspired by the works of which English author?",
+   "options": [
+    "Dante Alighieri",
+    "William Shakespeare",
+    "John Milton",
+    "Geoffrey Chaucer"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Scottish poets like Henryson, Dunbar, and Douglas adopted Chaucer's metres, forms, and courtly allegory."
+  },
+  {
+   "id": "fc-e-06",
+   "question": "Which Scottish king composed the courtly allegorical dream-vision poem 'The Kingis Quair' (The King's Book)?",
+   "options": [
+    "James I",
+    "Robert the Bruce",
+    "James IV",
+    "David II"
+   ],
+   "correct_option_id": 0,
+   "explanation": "King James I of Scotland wrote The Kingis Quair around 1424 during his long captivity in England."
+  },
+  {
+   "id": "fc-e-07",
+   "question": "Medieval mystery plays performed by craft guilds were primarily based on narratives from which source?",
+   "options": [
+    "Roman Chronicles",
+    "The Bible",
+    "Ancient Greek Myths",
+    "Fairy Legends"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mystery plays dramatised biblical history from the Creation and Fall to the Passion and Last Judgment."
+  },
+  {
+   "id": "fc-e-08",
+   "question": "Which prolific English Chaucerian monk of Bury St Edmunds wrote 'The Fall of Princes' and 'Troy Book'?",
+   "options": [
+    "Thomas Hoccleve",
+    "John Lydgate",
+    "Stephen Hawes",
+    "John Skelton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Lydgate was the most celebrated English poet of the early 15th century, composing over 140,000 lines of verse."
+  },
+  {
+   "id": "fc-e-09",
+   "question": "What is the central dramatic theme of a typical medieval morality play?",
+   "options": [
+    "Satirical attacks on political ministers and Parliament",
+    "The historical life and miracles of a Christian saint",
+    "The conflict between personified Vices and Virtues over a human soul",
+    "Chivalric jousts and adventures of Arthurian knights"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Morality plays used allegorical figures to stage the moral struggle between salvation and damnation."
+  },
+  {
+   "id": "fc-e-10",
+   "question": "Which Scottish makar wrote 'The Testament of Cresseid' as a tragic continuation of Chaucer's 'Troilus and Criseyde'?",
+   "options": [
+    "James I",
+    "Gavin Douglas",
+    "William Dunbar",
+    "Robert Henryson"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Henryson composed The Testament of Cresseid, depicting Cresseid's abandonment by Diomede and her leprosy."
+  },
+  {
+   "id": "fc-e-11",
+   "question": "The 15th century in English literature serves as a crucial cultural bridge between the Middle Ages and which movement?",
+   "options": [
+    "The Renaissance",
+    "Neoclassicism",
+    "Romanticism",
+    "The Enlightenment"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The 15th century transitioned late medieval feudal culture into early modern Tudor humanism and the Renaissance."
+  },
+  {
+   "id": "fc-e-12",
+   "question": "Which early Tudor poet laureate is famous for his energetic, short, and breathless rhyming verses called Skeltonics?",
+   "options": [
+    "Thomas Hoccleve",
+    "John Lydgate",
+    "Alexander Barclay",
+    "John Skelton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Skelton served as royal tutor to Prince Henry, crafting sharp satirical verse in rapid, jagged rhyming lines."
+  },
+  {
+   "id": "fc-e-13",
+   "question": "Medieval miracle plays, as distinct from biblical mystery plays, focused primarily on what subject matter?",
+   "options": [
+    "Stories of the Old Testament patriarchs",
+    "Romantic outlaws of Sherwood Forest",
+    "Classical legends of Trojan heroes",
+    "The lives, martyrdoms, and miracles of Christian saints"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Miracle plays specifically dramatised the interventions, suffering, and miracles of holy saints."
+  },
+  {
+   "id": "fc-e-14",
+   "question": "Which allegorical poem by William Dunbar celebrates the royal marriage of King James IV of Scotland to Margaret Tudor in 1503?",
+   "options": [
+    "The Dance of the Seven Deadly Sins",
+    "Lament for the Makaris",
+    "The Thistle and the Rose",
+    "The Golden Targe"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Thistle and the Rose used heraldic symbols to celebrate the union of Scotland's thistle with England's rose."
+  },
+  {
+   "id": "fc-e-15",
+   "question": "Which 15th-century English poet worked as a clerk in the Office of the Privy Seal and wrote 'The Regiment of Princes'?",
+   "options": [
+    "John Lydgate",
+    "William Caxton",
+    "Thomas Hoccleve",
+    "Stephen Hawes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Hoccleve served for over thirty years in the Privy Seal office, addressing his Regiment of Princes to Prince Hal."
+  },
+  {
+   "id": "fc-e-16",
+   "question": "In the morality play 'Everyman', which companion is the sole figure willing to descend into the grave with the protagonist?",
+   "options": [
+    "Fellowship",
+    "Good Deeds",
+    "Goods",
+    "Kindred"
+   ],
+   "correct_option_id": 1,
+   "explanation": "While worldly friends, kin, and wealth abandon Everyman, his Good Deeds alone accompany him before God's judgment seat."
+  },
+  {
+   "id": "fc-e-17",
+   "question": "Which Scottish royal capital city served as the primary literary and courtly center for the Scottish Chaucerians?",
+   "options": [
+    "Edinburgh",
+    "Glasgow",
+    "St Andrews",
+    "Aberdeen"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Edinburgh and the royal court of the Stewart monarchs formed the heart of Scottish makar literary culture."
+  },
+  {
+   "id": "fc-e-18",
+   "question": "What is the name of the celebrated cycle of mystery plays performed annually on Corpus Christi in the city of York?",
+   "options": [
+    "The N-Town Cycle",
+    "The York Cycle",
+    "The Towneley Cycle",
+    "The Chester Cycle"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The York Mystery Cycle consists of 48 surviving pageants staged across stations in the city of York."
+  },
+  {
+   "id": "fc-e-19",
+   "question": "Which title belongs to the very first book ever printed in the English language, translated and published abroad by William Caxton?",
+   "options": [
+    "The Canterbury Tales",
+    "The Golden Legend",
+    "The Recuyell of the Historyes of Troye",
+    "Dictes or Sayengis of the Philosophres"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Caxton printed his translation of The Recuyell of the Historyes of Troye at Bruges around 1473 to 1474."
+  },
+  {
+   "id": "fc-e-20",
+   "question": "In 15th-century Scotland, what distinctive title, meaning 'poets' or 'creators', was applied to courtly and vernacular poets?",
+   "options": [
+    "Scops",
+    "Gleaners",
+    "Troubadours",
+    "Makars"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Scots word Makar, cognate with maker, was used to honor skilled poets who crafted vernacular literature."
+  },
+  {
+   "id": "fc-e-21",
+   "question": "Which monumental Scots translation by Gavin Douglas represents the first complete translation of Virgil's 'Aeneid' in any Germanic tongue?",
+   "options": [
+    "King Hart",
+    "The Palice of Honour",
+    "Eneados",
+    "The Golden Targe"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Gavin Douglas completed his Scots verse translation Eneados in 1513, preceding English translations by decades."
+  },
+  {
+   "id": "fc-e-22",
+   "question": "In Sir Thomas Malory's 'Le Morte d'Arthur', who is the legendary sovereign who establishes the fellowship of the Round Table?",
+   "options": [
+    "King Pellam",
+    "King Mark",
+    "King Arthur",
+    "King Alfred"
+   ],
+   "correct_option_id": 2,
+   "explanation": "King Arthur is the legendary monarch whose rise, reign, and tragic downfall form the narrative core of Malory's prose epic."
+  },
+  {
+   "id": "fc-e-23",
+   "question": "Medieval mystery plays were financed, organized, and staged by which prominent town trade associations?",
+   "options": [
+    "Monastic Chapters",
+    "Craft Guilds",
+    "Military Orders",
+    "University Colleges"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Civic craft and merchant guilds each took responsibility for producing and funding specific biblical pageant wagons."
+  },
+  {
+   "id": "fc-e-24",
+   "question": "The 'Paston Letters' are an invaluable 15th-century historical and linguistic archive. What kind of documents are they?",
+   "options": [
+    "Royal decrees signed by Lancastrian and Yorkist kings",
+    "Religious treatises composed by Lollard preachers",
+    "Family and business correspondence of a Norfolk gentry family",
+    "Chivalric ballads written for tournament heralds"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Paston Letters comprise over 1,000 personal letters illustrating private life, law, and politics in 15th-century Norfolk."
+  },
+  {
+   "id": "fc-e-25",
+   "question": "Which satirical poem by John Skelton portrays courtly intrigue and corrupt flatterers aboard a metaphorical ship bound for court?",
+   "options": [
+    "Phyllyp Sparowe",
+    "The Bowge of Courte",
+    "Collyn Clout",
+    "Speak, Parrot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In The Bowge of Courte, Skelton satirises royal court life through allegorical figures like Favell, Suspect, and Disdain."
+  },
+  {
+   "id": "fc-e-26",
+   "question": "What mobile vehicle served as the movable stage for medieval mystery cycles touring through town streets?",
+   "options": [
+    "Stage Coach",
+    "Mystery Chariot",
+    "Thespian Cart",
+    "Pageant Wagon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pageant wagons were two-tiered rolling carts on wheels, with a dressing room below and an acting stage on top."
+  },
+  {
+   "id": "fc-e-27",
+   "question": "In Sir Thomas Malory's 'Le Morte d'Arthur', who acts as the mystical adviser and prophet guiding the young King Arthur?",
+   "options": [
+    "Merlin",
+    "Gandalf",
+    "Tiresias",
+    "Archimago"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Merlin orchestrates Arthur's conception and accession to the throne, serving as his indispensable royal counselor."
+  },
+  {
+   "id": "fc-e-28",
+   "question": "Which Scottish makar adapted Aesop's tales into Middle Scots in his 'Moral Fables', including 'The Taill of the Uponlandis Mous'?",
+   "options": [
+    "Gavin Douglas",
+    "William Dunbar",
+    "Robert Henryson",
+    "James I"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Henryson composed thirteen Aesopian fables in rime royal, offering moral and social commentary on Scottish life."
+  },
+  {
+   "id": "fc-e-29",
+   "question": "The middle of the 15th century, specifically the year 1453, marked the conclusion of which prolonged Anglo-French conflict?",
+   "options": [
+    "The War of the Spanish Succession",
+    "The Hundred Years' War",
+    "The Norman Conquest",
+    "The War of the Roses"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Hundred Years' War between the kingdoms of England and France ended in 1453 with the Battle of Castillon."
+  },
+  {
+   "id": "fc-e-30",
+   "question": "Which early printed collection of ballads represents the earliest extensive narrative cycle celebrating Robin Hood?",
+   "options": [
+    "The Tale of Gamelyn",
+    "A Gest of Robyn Hode",
+    "Piers Plowman",
+    "The Canterbury Tales"
+   ],
+   "correct_option_id": 1,
+   "explanation": "A Gest of Robyn Hode, printed in the late 15th or early 16th century, links multiple tales of the legendary outlaw hero."
+  },
+  {
+   "id": "fc-e-31",
+   "question": "Which 15th-century English poet composed 'The Pastime of Pleasure', an allegorical romance on the education of Graunde Amoure?",
+   "options": [
+    "Thomas Hoccleve",
+    "John Lydgate",
+    "Stephen Hawes",
+    "John Skelton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Stephen Hawes, a groom of the chamber to Henry VII, wrote The Pastime of Pleasure in rime royal stanzas."
+  },
+  {
+   "id": "fc-e-32",
+   "question": "What was the name of the dissident religious movement inspired by John Wyclif that advocated vernacular scripture in the 15th century?",
+   "options": [
+    "Lollardy",
+    "Anabaptism",
+    "Calvinism",
+    "Puritanism"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lollardy was a pre-Reformation religious reform movement that promoted reading the Bible in English and opposed clerical wealth."
+  },
+  {
+   "id": "fc-e-33",
+   "question": "The brilliant anonymous playwright known as the 'Wakefield Master' is celebrated for his contributions to which town's mystery plays?",
+   "options": [
+    "Coventry",
+    "York",
+    "Wakefield",
+    "Chester"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Wakefield Master contributed five highly distinctive, satirical, and rhythmic plays to the Towneley or Wakefield Cycle."
+  },
+  {
+   "id": "fc-e-34",
+   "question": "Sir Thomas Malory completed his writing of 'Le Morte d'Arthur' while detained in which type of institution?",
+   "options": [
+    "An academic university",
+    "A prison",
+    "A royal palace",
+    "A monastery"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In his explicit colophon, Malory refers to himself as a knight-prisoner, having composed the epic while in Newgate Prison."
+  },
+  {
+   "id": "fc-e-35",
+   "question": "Which stylistic quality is the defining hallmark of John Skelton's signature 'Skeltonic' verse form?",
+   "options": [
+    "Short, lively, rhyming lines of two or three stresses",
+    "Unrhymed alliterative long lines of Old English meter",
+    "Solemn Latin elegiac couplets",
+    "Strict fourteen-line iambic pentameter sonnets"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Skeltonics are rapid, irregular, short rhymed lines with breathless, cascading repetitions."
+  },
+  {
+   "id": "fc-e-36",
+   "question": "The popular 15th-century artistic and literary motif known as the 'Danse Macabre' (Dance of Death) expressed which concept?",
+   "options": [
+    "A joyful seasonal celebration of spring agriculture",
+    "The universal equality of all mortals before death, regardless of social rank",
+    "The victorious triumphs of English kings in continental crusades",
+    "A royal court ritual marking a prince's wedding"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Danse Macabre depicted personified Death leading pope, emperor, king, and laborer alike into the grave."
+  },
+  {
+   "id": "fc-e-37",
+   "question": "Which poem by Robert Henryson adapts the classical myth of the musician who descends into the underworld to reclaim his wife?",
+   "options": [
+    "Orpheus and Eurydice",
+    "Robene and Makyne",
+    "The Testament of Cresseid",
+    "The Morall Fabillis"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Henryson's Orpheus and Eurydice retells the classical myth with an elaborate Christian moralitas on passion and intellect."
+  },
+  {
+   "id": "fc-e-38",
+   "question": "Who served as William Caxton's chief assistant and succeeded him as England's leading printer upon Caxton's death in 1491?",
+   "options": [
+    "Wynkyn de Worde",
+    "Thomas Malory",
+    "Johannes Gutenberg",
+    "Richard Pynson"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wynkyn de Worde took over Caxton's press at Westminster, later relocating the printing business to Fleet Street in London."
+  },
+  {
+   "id": "fc-e-39",
+   "question": "Which series of dynastic civil wars fought between the Houses of Lancaster and York dominated English politics between 1455 and 1487?",
+   "options": [
+    "The Barons' War",
+    "The Peasants' Revolt",
+    "The English Civil War",
+    "The Wars of the Roses"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Wars of the Roses pitted the red rose of Lancaster against the white rose of York until Henry VII unified the realm."
+  },
+  {
+   "id": "fc-e-40",
+   "question": "In the morality play 'Everyman', which ominous messenger is dispatched by God to summon Everyman to his final reckoning?",
+   "options": [
+    "Good Deeds",
+    "Knowledge",
+    "The Devil",
+    "Death"
+   ],
+   "correct_option_id": 3,
+   "explanation": "God sends his dread messenger Death to command Everyman to embark on his sudden, unavoidable pilgrimage of account."
+  },
+  {
+   "id": "fc-e-41",
+   "question": "What is the specific seven-line rhyming scheme of 'Rime Royal', the poetic stanza popularized by Chaucer and adopted by James I?",
+   "options": [
+    "abcabcd",
+    "aabbccd",
+    "ababbcc",
+    "ababccb"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Rime royal consists of seven iambic pentameter lines rhyming ababbcc, named after its use in James I's The Kingis Quair."
+  },
+  {
+   "id": "fc-e-42",
+   "question": "Which Scottish makar composed the somber poem 'Lament for the Makaris', mourning the mortality of poets with a Latin refrain?",
+   "options": [
+    "William Dunbar",
+    "Blind Harry",
+    "Gavin Douglas",
+    "Robert Henryson"
+   ],
+   "correct_option_id": 0,
+   "explanation": "William Dunbar wrote Lament for the Makaris on a sickbed, listing deceased fellow poets with the refrain Timor mortis."
+  },
+  {
+   "id": "fc-e-43",
+   "question": "In Arthurian legend and Malory's romances, which peerless knight of pure lineage achieves the quest of the Holy Grail?",
+   "options": [
+    "Sir Galahad",
+    "Sir Gawain",
+    "Sir Kay",
+    "Sir Lancelot"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Galahad, the sinless son of Sir Lancelot, is alone granted the supreme spiritual revelation of the Holy Grail."
+  },
+  {
+   "id": "fc-e-44",
+   "question": "Which satirical poem by John Skelton uses an exotic, multilingual parrot in a golden cage to mock Cardinal Wolsey and court politics?",
+   "options": [
+    "The Bowge of Courte",
+    "Phyllyp Sparowe",
+    "Collyn Clout",
+    "Speak, Parrot"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Speak, Parrot, the talking bird acts as an outspoken satirist uttering veiled prophecies against Cardinal Wolsey."
+  },
+  {
+   "id": "fc-e-45",
+   "question": "Which celebrated comic masterpiece from the Wakefield mystery cycle features the rascally trickster Mak concealing a stolen sheep in a cradle?",
+   "options": [
+    "The Creation of the World",
+    "The Deluge",
+    "The Crucifixion",
+    "The Second Shepherds' Play"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Second Shepherds' Play parodies the Nativity by having Mak and his wife disguise a stolen sheep as their newborn babe."
+  },
+  {
+   "id": "fc-e-46",
+   "question": "Beyond increasing the volume of books, what was the most profound linguistic impact of William Caxton's London printing press?",
+   "options": [
+    "It helped standardize English spelling, grammar, and literary vocabulary",
+    "It completely eliminated regional spoken dialects in England",
+    "It caused English to be abandoned in favour of Norman French",
+    "It revived unrhymed Anglo-Saxon alliterative verse nationwide"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caxton's adoption of the East Midland London dialect for print helped stabilize spelling and grammar across Britain."
+  },
+  {
+   "id": "fc-e-47",
+   "question": "Which allegorical love vision poem was composed by John Lydgate, drawing inspiration from Chaucer's courtly dream-visions?",
+   "options": [
+    "The Temple of Glas",
+    "The Pastime of Pleasure",
+    "The Fall of Princes",
+    "Troy Book"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Temple of Glas is an allegorical courtly dream-vision by John Lydgate, set within a crystal sanctuary of Venus."
+  },
+  {
+   "id": "fc-e-48",
+   "question": "In which language was John Gower's major moral treatise 'Mirour de l'Omme' (Speculum Meditantis) composed?",
+   "options": [
+    "Middle High German",
+    "Middle English",
+    "Anglo-Norman French",
+    "Classical Latin"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Gower composed his Mirour de l'Omme in Anglo-Norman French, alongside his Latin Vox Clamantis and English Confessio Amantis."
+  },
+  {
+   "id": "fc-e-49",
+   "question": "What is the primary narrative focus of Sir Thomas Malory's 15th-century prose masterpiece 'Le Morte d'Arthur'?",
+   "options": [
+    "The heroic history, chivalric deeds, and tragic fall of King Arthur and the Round Table",
+    "The military expeditions of the Roman emperor Julius Caesar in Britain",
+    "A theological history of early Christian martyrs in Anglo-Saxon England",
+    "The personal memoirs and theological sermons of Geoffrey Chaucer"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Malory's Le Morte d'Arthur weaves together the complete legend of King Arthur, his knights, the Grail, and Camelot."
+  },
+  {
+   "id": "fc-e-50",
+   "question": "Which landmark date, marking the Battle of Bosworth Field and the rise of the Tudor dynasty, traditionally concludes the 15th-century period?",
+   "options": [
+    "1400",
+    "1485",
+    "1476",
+    "1500"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 1485 Henry Tudor defeated Richard III at Bosworth Field, ending the Plantagenet era and inaugurating Tudor England."
+  }
+ ]
+}
