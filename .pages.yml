@@ -24,50 +24,50 @@ content:
         hidden: true
         default: base.njk
       - name: title
-        label: Title (page ka bada heading)
+        label: Title (the main heading of the page)
         type: string
         required: true
       - name: description
-        label: Short description (heading ke neeche + Google par dikhega)
+        label: Short description (shown under the heading and on Google)
         type: text
       - name: eyebrow
-        label: Chhota label (heading ke upar) — jaise "Notes · Literary Ages"
+        label: 'Small label above the heading, for example "Notes · Literary Ages"'
         type: string
       - name: mark
-        label: Decorative letter — jaise "N"
+        label: 'Decorative letter, for example "N"'
         type: string
       - name: crumb_label
-        label: Breadcrumb text (chhota naam)
+        label: Breadcrumb text (a short name)
         type: string
       - name: updated
-        label: Last updated (heading ke neeche dikhega)
+        label: Last updated (shown under the heading)
         type: date
       - name: exams
-        label: Kaun se exams me aata hai (tags)
+        label: Exams this is useful for (tags)
         type: string
         list: true
       - name: prev
-        label: Pichhla article (series me)
+        label: Previous article (in the series)
         type: object
         fields:
           - name: label
-            label: Dikhne wala naam
+            label: Name to show
             type: string
           - name: href
-            label: Link (jaise /notes/romantic/)
+            label: Link (for example /notes/romantic/)
             type: string
       - name: next
-        label: Agla article (series me)
+        label: Next article (in the series)
         type: object
         fields:
           - name: label
-            label: Dikhne wala naam
+            label: Name to show
             type: string
           - name: href
-            label: Link (jaise /notes/modern/)
+            label: Link (for example /notes/modern/)
             type: string
       - name: rail
-        label: Side ke study boxes dikhayein?
+        label: Show the study boxes at the side?
         type: boolean
         default: true
       - name: body
@@ -97,7 +97,7 @@ content:
       - eleventy.article.js
 
   - name: reviews
-    label: Student Reviews (approve karke publish)
+    label: Student Reviews (publish after approval)
     type: file
     path: assets/reviews.json
     format: json
@@ -108,21 +108,21 @@ content:
         list: true
         fields:
           - name: name
-            label: Student ka naam
+            label: Student's name
             type: string
             required: true
           - name: role
-            label: Kaun hai (jaise "NET Aspirant")
+            label: 'Who they are, for example "NET Aspirant"'
             type: string
           - name: heading
-            label: Heading (review ki ek line)
+            label: Heading (one line from the review)
             type: string
           - name: stars
-            label: Stars (1 se 5)
+            label: Stars (1 to 5)
             type: number
             default: 5
           - name: photo
-            label: Photo (khaali chhodein to default avatar lagega)
+            label: Photo (leave empty to use the default avatar)
             type: image
           - name: text
             label: Review

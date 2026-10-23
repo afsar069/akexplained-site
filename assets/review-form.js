@@ -75,7 +75,7 @@
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: 'Naya review — AK Explained',
+          subject: 'New review — AK Explained',
           from_name: 'AK Explained website',
           name: v.name, role: v.role, heading: v.heading,
           stars: v.stars + '/5', email: v.email, review: v.review,
