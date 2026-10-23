@@ -156,7 +156,8 @@
        and Neoclassical Period are the wide periods; the cards after each one (Early Tudor
        to Commonwealth, Restoration Age to Age of Sensibility) are the ages inside it.
        Anglo-Norman, Age of Chaucer and Fifteenth Century are the ages inside Middle English.
-       The last three cards are topics, not ages.
+       Metaphysical Poetry, Literary Theory and Grammar & Literary Terms are not ages; they have
+       their own section below, "Topics Across the Ages".
        Dates come from the owner's list. The Middle English split (1066-1340, 1340-1400,
        1400-1500) and Early Tudor (1500-1558) follow common course outlines; books differ
        by a few years (some give 1350 for the Anglo-Norman / Chaucer line).
@@ -179,7 +180,7 @@
        Small pictures (the portraits are only about 130px) look soft in the big panel;
        a picture of 500px or more across looks sharp.
 -->
-  <section class="mcq-sec mcq-sec-last" aria-labelledby="dqTitle">
+  <section class="mcq-sec" aria-labelledby="dqTitle">
     <div class="dq-head">
       <h2 id="dqTitle"><img src="/assets/books-stack.webp" alt="" width="42" height="33">Choose a Topic for British Literature</h2>
 
@@ -205,7 +206,7 @@
       </div>
     </div>
 
-    <p class="seclede">The ages of British literature in order of time, then a few topics that run across them.</p>
+    <p class="seclede">The ages of British literature, in order of time.</p>
 
     <div class="dq-grid" id="dqGrid">
 
@@ -433,8 +434,22 @@
       </div>
       <span class="dq-go">Coming soon</span>
     </article>
+    </div>
+  </section>
 
-    <article class="dq-card t-sage is-soon" data-period="renaissance">
+  <!-- ====== TOPICS ACROSS THE AGES ======
+       Subjects that are not an age: a school of poetry, theory, grammar. They have no dates, so
+       the period filter and the sort above do not touch them (assets/daily.js works on #dqGrid only).
+       Cards here are built the same way as the age cards. -->
+  <section class="mcq-sec mcq-sec-last" aria-labelledby="dqTopicsTitle">
+    <div class="dq-head">
+      <h2 id="dqTopicsTitle">Topics Across the Ages</h2>
+    </div>
+    <p class="seclede">Subjects that belong to no single age.</p>
+
+    <div class="dq-grid" id="dqTopics">
+
+    <article class="dq-card t-sage is-soon">
       <div class="dq-art">
         <img class="dq-pic" src="/assets/topics/metaphysical-poetry.webp" alt="" width="129" height="142" loading="lazy">
       </div>
@@ -444,7 +459,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-mint is-soon" data-period="">
+    <article class="dq-card t-mint is-soon">
       <div class="dq-art">
         <img class="dq-pic" src="/assets/topics/literary-theory.webp" alt="" width="131" height="142" loading="lazy">
       </div>
@@ -454,7 +469,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-sand is-soon" data-period="">
+    <article class="dq-card t-sand is-soon">
       <div class="dq-art">
         <img class="dq-pic" src="/assets/topics/grammar-and-literary-terms.webp" alt="" width="129" height="143" loading="lazy">
       </div>
