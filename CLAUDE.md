@@ -107,6 +107,10 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
    card on the Daily page ("Start Quiz →"), add the page to `sitemap.xml`. Anglo-Norman was done this way.
    Keep the supplied text as it is. If words look damaged (for example a lost apostrophe, "Wit s"),
    list them for the owner, and fix only if they say so.
+   When the owner then says to fix or check a flagged question: verify it with a reliable source (web
+   search; say which, and say what could not be opened), change as little as possible, keep the id, and
+   keep the right option unless the fact itself was wrong. Do not add questions or reasons of your own.
+   Two questions that repeat each other are left as they are: replacing one needs a new question from the owner.
 4. `npx eleventy`, link check, browser test (default start, 10 to 50 limits, instant answer, no scroll
    on answer, resume), push the branch. `main` only when asked (rule 5).
 

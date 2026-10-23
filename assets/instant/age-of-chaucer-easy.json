@@ -435,7 +435,7 @@
   },
   {
    "id": "ac-e-40",
-   "question": "How many pilgrims (including Chaucer) are mentioned as going to Canterbury?",
+   "question": "How many pilgrims, not counting Chaucer himself, does the General Prologue say had gathered at the Tabard Inn?",
    "options": [
     "12",
     "29",
@@ -477,7 +477,7 @@
   },
   {
    "id": "ac-e-44",
-   "question": "Which historical event led to the 'Avignon Papacy' where the Pope lived in France?",
+   "question": "Which split in the Church followed the 'Avignon Papacy', when the Pope lived in France?",
    "options": [
     "The Crusades",
     "The Great Schism",
@@ -499,14 +499,14 @@
   },
   {
    "id": "ac-e-46",
-   "question": "Chaucer was a contemporary of which Italian poet?",
+   "question": "Chaucer was a contemporary of which two Italian poets?",
    "options": [
-    "Dante",
-    "Petrarch",
-    "Boccaccio",
-    "All of the above"
+    "Dante and Petrarch",
+    "Petrarch and Boccaccio",
+    "Dante and Boccaccio",
+    "Dante and Virgil"
    ],
-   "correct_option_id": 3
+   "correct_option_id": 1
   },
   {
    "id": "ac-e-47",
