@@ -1,0 +1,608 @@
+{
+ "bankId": "early-tudor",
+ "period": "Early Tudor Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "et-h-01",
+   "question": "Sir Thomas Wyatt's sonnet 'Whoso List to Hunt' is an adaptive translation of which specific Petrarchan sonnet?",
+   "options": [
+    "Rime 134 ('Pace non trovo')",
+    "Rime 140 ('Amor, che nel penser')",
+    "Rime 3 ('Era il giorno')",
+    "Rime 190 ('Una candida cerva')"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt adapted Petrarch's Rime 190, transforming the mystical white doe into an elusive royal mistress."
+  },
+  {
+   "id": "et-h-02",
+   "question": "In which 1518 Latin epistle did Sir Thomas More vigorously defend Greek studies against reactionary scholastic 'Trojans'?",
+   "options": [
+    "De Tristitia Christi",
+    "Letter to the University of Oxford",
+    "The Supplication of Souls",
+    "Responsio ad Lutherum"
+   ],
+   "correct_option_id": 1,
+   "explanation": "More urged the Oxford faculty to embrace Greek humanist learning and reject anti-Greek hostility."
+  },
+  {
+   "id": "et-h-03",
+   "question": "Henry Howard, Earl of Surrey, employed blank verse for the first time in English to translate which books of Virgil's 'Aeneid'?",
+   "options": [
+    "Books Two and Four",
+    "Books Four and Six",
+    "Books Two and Twelve",
+    "Books One and Two"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Surrey translated Book Two on the sack of Troy and Book Four on the tragedy of Queen Dido."
+  },
+  {
+   "id": "et-h-04",
+   "question": "What is the characteristic rhyme scheme of the sestet in Sir Thomas Wyatt's standard Petrarchan sonnet adaptations?",
+   "options": [
+    "cd cd cd",
+    "cde cde",
+    "cdd cee",
+    "ef ef gg"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wyatt typically closed his octave with a sestet rhyming cddcee, creating a final rhyming couplet."
+  },
+  {
+   "id": "et-h-05",
+   "question": "Sir Thomas More composed his influential historical work 'The History of King Richard III' simultaneously in which two languages?",
+   "options": [
+    "Latin and English",
+    "Latin and Greek",
+    "English and French",
+    "English and Spanish"
+   ],
+   "correct_option_id": 0,
+   "explanation": "More wrote separate but parallel Latin and English drafts of Richard III between 1513 and 1518."
+  },
+  {
+   "id": "et-h-06",
+   "question": "What was the formal title given by printer Richard Tottel to the landmark 1557 collection popularly known as Tottel's Miscellany?",
+   "options": [
+    "The Court of Venus",
+    "Songes and Sonettes",
+    "A Gorgeous Gallery of Inventions",
+    "The Phoenix Nest"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Richard Tottel registered and published the groundbreaking collection under the title Songes and Sonettes."
+  },
+  {
+   "id": "et-h-07",
+   "question": "In More's 'Utopia', what is the official title of the elected chief magistrate of the island, derived from Greek for 'people-less'?",
+   "options": [
+    "Syphogrant",
+    "Hythloday",
+    "Ademus",
+    "Tranibor"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The prince of Utopia is called Ademus, from Greek a-demos meaning without people."
+  },
+  {
+   "id": "et-h-08",
+   "question": "Which classical verse form in interlocking tercets did Sir Thomas Wyatt introduce to English for his satires like 'Mine Own John Poins'?",
+   "options": [
+    "Hexameter",
+    "Sestina",
+    "Terza Rima",
+    "Ottava Rima"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wyatt introduced Dante's terza rima into English verse for his three epistolary verse satires."
+  },
+  {
+   "id": "et-h-09",
+   "question": "The term 'Poulter's Measure', designating alternating lines of twelve and fourteen syllables, was coined by Gascoigne to describe whose meter?",
+   "options": [
+    "The Earl of Surrey",
+    "Sir Thomas Wyatt",
+    "Nicholas Grimald",
+    "John Skelton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "George Gascoigne coined the name from poulterers giving twelve eggs for one dozen and fourteen for another."
+  },
+  {
+   "id": "et-h-10",
+   "question": "According to the fictional narrative of 'Utopia', Raphael Hythloday traveled abroad on the expeditions of which historical explorer?",
+   "options": [
+    "Vasco da Gama",
+    "Amerigo Vespucci",
+    "Ferdinand Magellan",
+    "Christopher Columbus"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hythloday is described as a companion of Amerigo Vespucci on the latter's voyages to the New World."
+  },
+  {
+   "id": "et-h-11",
+   "question": "In which complex seven-line stanza form did Sir Thomas Wyatt compose his bitter courtly lyric 'They Flee from Me'?",
+   "options": [
+    "Terza Rima",
+    "Rhyme Royal",
+    "Spenserian Stanza",
+    "Ottava Rima"
+   ],
+   "correct_option_id": 1,
+   "explanation": "They Flee from Me is written in three stanzas of Chaucerian rhyme royal rhyming ababbcc."
+  },
+  {
+   "id": "et-h-12",
+   "question": "Henry Howard's celebrated sonnet 'Description and Praise of Geraldine' was addressed to which historical young noblewoman?",
+   "options": [
+    "Lady Elizabeth FitzGerald",
+    "Lady Jane Grey",
+    "Anne Stanhope",
+    "Margaret Roper"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Surrey idealized young Elizabeth FitzGerald, daughter of the 9th Earl of Kildare, as fair Geraldine."
+  },
+  {
+   "id": "et-h-13",
+   "question": "Sir Thomas More's satirical dialogue style and pervasive irony in 'Utopia' were deeply shaped by his translations of which Greek writer?",
+   "options": [
+    "Aristophanes",
+    "Lucian of Samosata",
+    "Plato",
+    "Plutarch"
+   ],
+   "correct_option_id": 1,
+   "explanation": "More and Erasmus translated Lucian's satirical dialogues into Latin, mastering his playful irony."
+  },
+  {
+   "id": "et-h-14",
+   "question": "Where does the volta or thematic turn typically occur in Sir Thomas Wyatt's structural adaptation of the sonnet?",
+   "options": [
+    "Only in the final second line of the closing rhyming couplet",
+    "At the transition between the octave and the sestet at line nine",
+    "At the conclusion of the very first quatrain at line five",
+    "In the exact middle of the seventh line of the poem"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Following the Italian pattern, Wyatt placed his volta at line 9 to pivot into the sestet's resolution."
+  },
+  {
+   "id": "et-h-15",
+   "question": "Which specific heraldic action provoked King Henry VIII's suspicion and led directly to Surrey's trial for high treason in 1547?",
+   "options": [
+    "Adopting the red dragon crest of Cadwaladr on his standard",
+    "Displaying the golden fleur-de-lis of France without crown approval",
+    "Placing an imperial crown over his personal initials in a portrait",
+    "Quartering the royal arms of King Edward the Confessor on his family shield"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Surrey claimed a dynastic right to bear the royal arms of the Confessor, which Henry VIII viewed as a bid for the throne."
+  },
+  {
+   "id": "et-h-16",
+   "question": "In 'Utopia', what utilitarian domestic purpose is assigned to gold and silver to instill contempt for luxury goods?",
+   "options": [
+    "Manufacturing chamber pots and heavy bonds for slaves",
+    "Constructing religious shrines and cathedral altars",
+    "Fashioning lightweight shields for common soldiers",
+    "Decorating public festival carts for holiday pageants"
+   ],
+   "correct_option_id": 0,
+   "explanation": "More ironically debases gold by using it for the vilest chamber pots and chains for enslaved persons."
+  },
+  {
+   "id": "et-h-17",
+   "question": "Wyatt's 'The Long Love That in My Thought Doth Harbor' is a direct translation of which celebrated Petrarchan sonnet?",
+   "options": [
+    "Rime 140 ('Amor, che nel penser mio vive et regna')",
+    "Rime 134 ('Pace non trovo')",
+    "Rime 190 ('Una candida cerva')",
+    "Rime 310 ('Zefiro torna')"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Both Wyatt and Surrey translated Petrarch's Rime 140, comparing Love to a warrior lodging in the heart."
+  },
+  {
+   "id": "et-h-18",
+   "question": "Who published the very first English vernacular translation of Sir Thomas More's 'Utopia' in 1551?",
+   "options": [
+    "Gilbert Burnet",
+    "William Roper",
+    "Thomas Elyot",
+    "Ralph Robinson"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ralph Robinson published the first English translation of Utopia in 1551 during the reign of Edward VI."
+  },
+  {
+   "id": "et-h-19",
+   "question": "What is the precise prosodic definition of blank verse as pioneered by Henry Howard, Earl of Surrey?",
+   "options": [
+    "Rhymed fourteeners in alternating iambic septenaries",
+    "Rhymed lines of twelve syllables in falling trochaic meter",
+    "Unrhymed lines of ten syllables in rising iambic pentameter",
+    "Unrhymed lines of eight syllables in accentual-alliterative verse"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Surrey's blank verse consists of unrhymed ten-syllable lines following an iambic stress pattern."
+  },
+  {
+   "id": "et-h-20",
+   "question": "Who was the devoted son-in-law of Sir Thomas More who authored the earliest intimate biography, 'The Life of Sir Thomas More'?",
+   "options": [
+    "John Rastell",
+    "Reginald Pole",
+    "Thomas Stapleton",
+    "William Roper"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Roper, husband of Margaret More, wrote the classic eyewitness biography of his father-in-law."
+  },
+  {
+   "id": "et-h-21",
+   "question": "In 'Whoso List to Hunt', what is the deeper courtly meaning of the collar inscription warning that the deer is 'Caesar's'?",
+   "options": [
+    "The hunter has been banished from the royal forest estates",
+    "The deer is diseased and dangerous to all hunters",
+    "The woman is the exclusive possession of King Henry VIII",
+    "The huntress belongs to a cloistered Catholic convent"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Caesar represents King Henry VIII, signaling that Anne Boleyn is strictly reserved for the monarch."
+  },
+  {
+   "id": "et-h-22",
+   "question": "Which rhetorical device of contradictory juxtaposition, seen in 'I find no peace, and all my war is done', is central to Wyatt's style?",
+   "options": [
+    "Chiasmus and Zeugma",
+    "Hyperbole and Litotes",
+    "Oxymoron and Paradox",
+    "Synecdoche and Metonymy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wyatt adapts Petrarchan antitheses through paradoxical pairs like burning with ice and freezing with fire."
+  },
+  {
+   "id": "et-h-23",
+   "question": "In which continental city was the first Latin edition of Sir Thomas More's 'Utopia' printed in December 1516?",
+   "options": [
+    "Basle",
+    "Louvain",
+    "Paris",
+    "Antwerp"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Utopia was first printed at Louvain in the Low Countries by Dirk Martens under Erasmus's supervision."
+  },
+  {
+   "id": "et-h-24",
+   "question": "In which poignant Windsor Castle poem does Surrey mourn his youth and his deceased companion Henry FitzRoy, Duke of Richmond?",
+   "options": [
+    "The Soote Season",
+    "Prisoned in Windsor, he recounteth his pleasure there passed",
+    "Wyatt Resteth Here",
+    "London, Hast Thou Accused Me?"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Imprisoned at Windsor in 1537, Surrey nostalgically recalls his noble youth with Henry VIII's bastard son."
+  },
+  {
+   "id": "et-h-25",
+   "question": "Sir Thomas More's early translation of 'The Life of John Picus' showcased his profound admiration for which Italian philosopher?",
+   "options": [
+    "Pietro Bembo",
+    "Marsilio Ficino",
+    "Pico della Mirandola",
+    "Niccolo Machiavelli"
+   ],
+   "correct_option_id": 2,
+   "explanation": "More translated the biography of Giovanni Pico della Mirandola, drawn to his saintly humanist devotion."
+  },
+  {
+   "id": "et-h-26",
+   "question": "Which Tudor humanist and royal diplomat authored 'The Boke Named the Gouernour' in 1531, dedicated to King Henry VIII?",
+   "options": [
+    "Thomas Wilson",
+    "John Cheke",
+    "Sir Thomas Elyot",
+    "Roger Ascham"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas Elyot published The Boke Named the Gouernour in 1531 as the first English educational manual."
+  },
+  {
+   "id": "et-h-27",
+   "question": "Under what circumstance do the Utopians permit and encourage the controversial practice of voluntary euthanasia?",
+   "options": [
+    "When an enemy soldier surrenders on the battlefield",
+    "When an incurable, excruciating disease makes life an unbearable torment",
+    "As a mandatory judicial sentence for thievery",
+    "Whenever a citizen reaches the age of seventy years"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Utopian priests counsel euthanasia only when painful, terminal sickness renders life a hopeless burden."
+  },
+  {
+   "id": "et-h-28",
+   "question": "Which Latin-titled poem by Sir Thomas Wyatt was inspired by viewing the Tower executions of Anne Boleyn's alleged lovers in 1536?",
+   "options": [
+    "Lux, My Fair Falcon",
+    "V. Innocentia (Circa Regna Tonat)",
+    "Blame Not My Lute",
+    "Stand Who So List"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wyatt meditates on the perils of high political power, using Seneca's phrase Circa regna tonat, thunder roars round thrones."
+  },
+  {
+   "id": "et-h-29",
+   "question": "In Early Tudor literary history, the term 'courtly maker' specifically designates poets who:",
+   "options": [
+    "Served as ecclesiastical judges in the Court of Arches",
+    "Composed vernacular morality interludes for public city streets",
+    "Operated commercial print shops in London under royal patent",
+    "Were aristocratic courtiers and diplomats who circulated manuscript verse in elite circles"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Courtly makers were high-born royal attendants who wrote sophisticated lyric verse for courtly readership."
+  },
+  {
+   "id": "et-h-30",
+   "question": "To which Antwerp city magistrate and close humanist friend did Sir Thomas More address the prefatory letter of 'Utopia' in 1516?",
+   "options": [
+    "Dirk Martens",
+    "Johannes Froben",
+    "Peter Giles",
+    "Jerome Busleyden"
+   ],
+   "correct_option_id": 2,
+   "explanation": "More addresses his opening epistolary preface to Peter Giles, Pieter Gillis, blending fact with political fiction."
+  },
+  {
+   "id": "et-h-31",
+   "question": "In his celebrated sonnet 'The Soote Season', which native English fauna does Surrey introduce to replace Petrarch's classical animals?",
+   "options": [
+    "The hunting hound chasing mountain wolves",
+    "The lion stalking through the Mediterranean vineyard",
+    "The hart suspending his old head and the buck in the green valley",
+    "The nightingale singing under laurel groves"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Surrey anglicizes Petrarch's Zefiro torna, depicting the shedding of antlers and English woodland animals."
+  },
+  {
+   "id": "et-h-32",
+   "question": "Which 1529 polemical dialogue did Sir Thomas More compose in English to refute William Tyndale's Protestant teachings?",
+   "options": [
+    "A Dialogue Concerning Heresies",
+    "A Dialogue of Comfort Against Tribulation",
+    "The Confutation of Tyndale's Answer",
+    "The Debellation of Salem and Bizance"
+   ],
+   "correct_option_id": 0,
+   "explanation": "More's 1529 Dialogue defended veneration of images, pilgrimages, and Catholic doctrine against Tyndale."
+  },
+  {
+   "id": "et-h-33",
+   "question": "The publication of Richard Tottel's 'Songes and Sonettes' in 1557 occurred during the reign of which Catholic monarch?",
+   "options": [
+    "King Edward VI",
+    "Queen Elizabeth I",
+    "King Henry VIII",
+    "Queen Mary I"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Tottel's Miscellany was printed in June 1557 during the reign of Queen Mary I and Philip of Spain."
+  },
+  {
+   "id": "et-h-34",
+   "question": "Sir Thomas Wyatt's verse satire 'Mine Own John Poins' is modeled directly upon the tenth satire of which Italian poet?",
+   "options": [
+    "Pietro Aretino",
+    "Niccolo Machiavelli",
+    "Ludovico Ariosto",
+    "Luigi Alamanni"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt adapted Luigi Alamanni's satire to explain his withdrawal from corrupt courtly deceit to Kent."
+  },
+  {
+   "id": "et-h-35",
+   "question": "In the commonwealth of Utopia, how many hours of physical labor each day are required of all able citizens?",
+   "options": [
+    "Six hours",
+    "Ten hours",
+    "Eight hours",
+    "Four hours"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Because all citizens including women work and luxury is eliminated, a six-hour workday suffices for all needs."
+  },
+  {
+   "id": "et-h-36",
+   "question": "What collective title was given to the humanist circle of scholars at the turn of the century including More, Colet, and Linacre?",
+   "options": [
+    "The Norwich Circle",
+    "The Cambridge Apostles",
+    "The London Humanists",
+    "The Oxford Reformers"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Historian Frederic Seebohm famously coined the term The Oxford Reformers for Colet, Erasmus, and More."
+  },
+  {
+   "id": "et-h-37",
+   "question": "Which noble elegy did Henry Howard, Earl of Surrey, compose in tribute upon the death of his poetic mentor Sir Thomas Wyatt in 1542?",
+   "options": [
+    "Each Beast Can Choose His Mate",
+    "O Happy Dames",
+    "Wyatt Resteth Here",
+    "The Sun Hath Twice Wrought"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Surrey celebrated Wyatt's virtue, wisdom, and poetic reforms in his noble elegy Wyatt Resteth Here."
+  },
+  {
+   "id": "et-h-38",
+   "question": "In the dramatic dialogue of 'Utopia', what Latinized persona represents Sir Thomas More's own skeptical diplomatic voice?",
+   "options": [
+    "Busleyden",
+    "Hythloday",
+    "Morus",
+    "Ademus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "More enters the dialogue as Morus, arguing with Hythloday for pragmatic compromise in state counsel."
+  },
+  {
+   "id": "et-h-39",
+   "question": "In Wyatt's lyric 'Divers Doth Use', how does the speaker propose to respond when his lady proves inconstant?",
+   "options": [
+    "To accept the change calmly and alter his own affection accordingly",
+    "To challenge his lady's new lover to a duel",
+    "To retire into a hermitage in total despair",
+    "To vow revenge upon his rivals at court"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wyatt rejects self-destructive mourning, resolving to use his own liberty since she has changed her mind."
+  },
+  {
+   "id": "et-h-40",
+   "question": "In 'Utopia', how do the Utopians demonstrate their commitment to civic religious tolerance?",
+   "options": [
+    "They mandate strict uniform Roman Catholic liturgy throughout all cities",
+    "They completely ban all public worship and forbid private prayer",
+    "They require all citizens to worship the reigning prince as a living god",
+    "They permit varied faiths in one supreme deity Mithra, forbidding aggressive proselytism"
+   ],
+   "correct_option_id": 3,
+   "explanation": "King Utopus instituted freedom of belief in a supreme God, penalizing only violent and contentious speech."
+  },
+  {
+   "id": "et-h-41",
+   "question": "In what specific metrical form did Surrey cast his translation of Virgil's 'Aeneid', creating an English equivalent to dactylic hexameter?",
+   "options": [
+    "Alliterative Accentual Long Lines",
+    "Unrhymed Iambic Pentameter",
+    "Rhymed Heroic Couplets",
+    "Fourteen-line Sonnet Stanzas"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Surrey invented English blank verse to capture the stately dignity of Virgil's unrhymed Latin hexameters."
+  },
+  {
+   "id": "et-h-42",
+   "question": "In the opening of 'Utopia' Book One, in which Flemish trading city does More meet Peter Giles and Raphael Hythloday?",
+   "options": [
+    "Antwerp",
+    "Ghent",
+    "Bruges",
+    "Brussels"
+   ],
+   "correct_option_id": 0,
+   "explanation": "While on a royal diplomatic mission to Flanders, More resides in Antwerp where Peter Giles introduces Hythloday."
+  },
+  {
+   "id": "et-h-43",
+   "question": "Which critical epithet is often applied to Sir Thomas Wyatt because his poems explore interior psychology and conflicted consciousness?",
+   "options": [
+    "The Father of English Prose",
+    "The Morning Star of the Reformation",
+    "The English Petrarch",
+    "The First of the Moderns"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Critics like Hallett Smith describe Wyatt as the first of the moderns for his gritty, realistic self-scrutiny."
+  },
+  {
+   "id": "et-h-44",
+   "question": "Sir Thomas Wyatt's metrical paraphrases of the Seven Penitential Psalms were inspired by the Italian prose work of which satirist?",
+   "options": [
+    "Baldassare Castiglione",
+    "Luigi Alamanni",
+    "Niccolo Machiavelli",
+    "Pietro Aretino"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt drew upon Pietro Aretino's I Sette Salmi de la Penitentia di David for his prologue frames and theology."
+  },
+  {
+   "id": "et-h-45",
+   "question": "In More's 'Utopia', the geographical outline of the crescent-shaped island surrounds a sheltered body of water likened to:",
+   "options": [
+    "A vast quiet lake or harbor sheltered from the sea",
+    "A straight canal dividing northern and southern provinces",
+    "A roaring whirlpool that destroys foreign ships",
+    "A boiling volcanic crater filled with minerals"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The crescent curves around a tranquil inner haven, functioning like a huge lake protected from ocean winds."
+  },
+  {
+   "id": "et-h-46",
+   "question": "Under which Latin pseudonym did Sir Thomas More publish his 1523 treatise 'Responsio ad Lutherum' defending King Henry VIII?",
+   "options": [
+    "Peter Giles",
+    "Raphael Hythloday",
+    "Thomas Lovell",
+    "Guilielmus Rossus"
+   ],
+   "correct_option_id": 3,
+   "explanation": "More used the pseudonym Guilielmus Rossus, William Ross, to publish his aggressive defense against Martin Luther."
+  },
+  {
+   "id": "et-h-47",
+   "question": "The Earl of Surrey's poetic subject 'Geraldine' belonged to the prominent FitzGerald dynasty who held which earldom in Ireland?",
+   "options": [
+    "The Earls of Ormond",
+    "The Earls of Kildare",
+    "The Earls of Tyrone",
+    "The Earls of Desmond"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Lady Elizabeth FitzGerald was the daughter of Gerald FitzGerald, 9th Earl of Kildare, the premier lord of Ireland."
+  },
+  {
+   "id": "et-h-48",
+   "question": "Which prominent early Tudor dramatist was related to Sir Thomas More as his nephew-in-law through marriage to Joan Rastell?",
+   "options": [
+    "John Heywood",
+    "Nicholas Udall",
+    "Henry Medwall",
+    "John Skelton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Heywood, writer of The Play of the Wether and The Four PP, married More's niece Joan Rastell."
+  },
+  {
+   "id": "et-h-49",
+   "question": "Which of Sir Thomas Wyatt's poems employs the extended metaphor of a cherished hunting falcon returning to her lure?",
+   "options": [
+    "Lux, My Fair Falcon",
+    "They Flee from Me",
+    "My Pen, Take Pain",
+    "Blame Not My Lute"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Lux, My Fair Falcon, Wyatt uses falconry imagery to explore loyalty, courtly betrayal, and loss."
+  },
+  {
+   "id": "et-h-50",
+   "question": "In which year was Sir Thomas More formally canonized as a saint and martyr of the Roman Catholic Church by Pope Pius XI?",
+   "options": [
+    "1588",
+    "1935",
+    "1600",
+    "1886"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Pope Pius XI canonized Thomas More and John Fisher on May 19, 1935, four centuries after their martyrdom."
+  }
+ ]
+}

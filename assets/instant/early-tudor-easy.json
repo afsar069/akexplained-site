@@ -1,0 +1,608 @@
+{
+ "bankId": "early-tudor",
+ "period": "Early Tudor Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "et-e-01",
+   "question": "Who is the author of the famous 1516 Latin work 'Utopia' describing an ideal island commonwealth?",
+   "options": [
+    "Sir Thomas More",
+    "Henry Howard",
+    "Sir Thomas Wyatt",
+    "William Shakespeare"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Thomas More published Utopia in 1516, coining the term and describing an ideal communal society."
+  },
+  {
+   "id": "et-e-02",
+   "question": "Which Tudor poet and diplomat is credited with introducing the Italian sonnet form into English literature?",
+   "options": [
+    "John Donne",
+    "Sir Thomas Wyatt",
+    "Geoffrey Chaucer",
+    "John Milton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir Thomas Wyatt translated Petrarchan sonnets into English during the reign of King Henry VIII."
+  },
+  {
+   "id": "et-e-03",
+   "question": "Henry Howard, Earl of Surrey, is famous for introducing which foundational poetic meter to English literature?",
+   "options": [
+    "Blank Verse",
+    "Ballad Meter",
+    "Rhyme Royal",
+    "Free Verse"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Surrey introduced blank verse, unrhymed iambic pentameter, in his translation of Virgil's Aeneid."
+  },
+  {
+   "id": "et-e-04",
+   "question": "What is the literal meaning of the Greek-derived word 'Utopia' coined by Sir Thomas More?",
+   "options": [
+    "No Place",
+    "Sacred City",
+    "Golden Land",
+    "Beautiful Place"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Utopia is formed from Greek ou meaning not and topos meaning place, signifying No-place."
+  },
+  {
+   "id": "et-e-05",
+   "question": "Sir Thomas Wyatt's English sonnets were largely translations and adaptations of which 14th-century Italian poet?",
+   "options": [
+    "Dante",
+    "Boccaccio",
+    "Ariosto",
+    "Petrarch"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt drew heavily on Francesco Petrarch's Il Canzoniere for theme, structure, and courtly conceits."
+  },
+  {
+   "id": "et-e-06",
+   "question": "Which English monarch did Sir Thomas More serve as Lord Chancellor before being executed for treason in 1535?",
+   "options": [
+    "Edward VI",
+    "Richard III",
+    "Henry VIII",
+    "Henry VII"
+   ],
+   "correct_option_id": 2,
+   "explanation": "More served Henry VIII as Lord Chancellor but refused to endorse the King's break from Rome."
+  },
+  {
+   "id": "et-e-07",
+   "question": "The English sonnet form consisting of three quatrains and a rhyming couplet was pioneered by which poet?",
+   "options": [
+    "Edmund Spenser",
+    "Henry Howard, Earl of Surrey",
+    "Sir Thomas Wyatt",
+    "Sir Philip Sidney"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Surrey developed the abab cdcd efef gg structure that William Shakespeare later made immortal."
+  },
+  {
+   "id": "et-e-08",
+   "question": "How many poetic lines does a standard traditional sonnet consist of?",
+   "options": [
+    "10 lines",
+    "12 lines",
+    "14 lines",
+    "16 lines"
+   ],
+   "correct_option_id": 2,
+   "explanation": "A sonnet is fundamentally a fourteen-line lyric poem written in iambic pentameter."
+  },
+  {
+   "id": "et-e-09",
+   "question": "Sir Thomas Wyatt was reputed to have been passionately in love with which future queen consort of Henry VIII?",
+   "options": [
+    "Catherine of Aragon",
+    "Anne Boleyn",
+    "Jane Seymour",
+    "Catherine Howard"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wyatt was courtly companion to Anne Boleyn before her marriage to Henry VIII, reflected in his poetry."
+  },
+  {
+   "id": "et-e-10",
+   "question": "The Earl of Surrey used blank verse for the first time in English in his translation of which classical epic?",
+   "options": [
+    "The Iliad",
+    "The Aeneid",
+    "The Metamorphoses",
+    "The Odyssey"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Surrey translated Books Two and Four of Virgil's Aeneid into unrhymed ten-syllable iambic verse."
+  },
+  {
+   "id": "et-e-11",
+   "question": "What is the primary subject matter of Sir Thomas More's celebrated treatise 'Utopia'?",
+   "options": [
+    "A collection of devotional Latin prayers",
+    "A military chronicle of the Hundred Years War",
+    "A practical hunting guide for English nobles",
+    "A philosophical description of an ideal society on an island"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Utopia presents an imaginative socio-political system based on reason, shared goods, and communal life."
+  },
+  {
+   "id": "et-e-12",
+   "question": "In a traditional Petrarchan sonnet, what term designates the opening eight-line stanza unit?",
+   "options": [
+    "Quatrain",
+    "Couplet",
+    "Sestet",
+    "Octave"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Italian Petrarchan sonnet opens with an octave rhyming abbaabba that introduces the emotional problem."
+  },
+  {
+   "id": "et-e-13",
+   "question": "In a traditional Petrarchan sonnet, what term designates the concluding six-line stanza unit?",
+   "options": [
+    "Tercet",
+    "Sestet",
+    "Octave",
+    "Refrain"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The sestet consists of the final six lines of a Petrarchan sonnet, resolving the theme of the octave."
+  },
+  {
+   "id": "et-e-14",
+   "question": "Sir Thomas More was an eminent northern European leader of which intellectual Renaissance movement?",
+   "options": [
+    "Christian Humanism",
+    "Scholasticism",
+    "Deism",
+    "Romanticism"
+   ],
+   "correct_option_id": 0,
+   "explanation": "More was a pre-eminent Christian humanist who championed classical learning and moral church reform."
+  },
+  {
+   "id": "et-e-15",
+   "question": "Wyatt's celebrated hunting sonnet 'Whoso List to Hunt' is widely read as a veiled allegory for courting whom?",
+   "options": [
+    "Anne Boleyn",
+    "Jane Seymour",
+    "Mary Tudor",
+    "Catherine of Aragon"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The elusive hind bearing Caesar's royal collar is traditionally identified with Anne Boleyn."
+  },
+  {
+   "id": "et-e-16",
+   "question": "The poems of Sir Thomas Wyatt and the Earl of Surrey first reached print in which landmark 1557 anthology?",
+   "options": [
+    "A Gorgeous Gallery of Inventions",
+    "Tottel's Miscellany",
+    "The Phoenix Nest",
+    "The Paradise of Dainty Devices"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Richard Tottel published Songes and Sonettes, commonly called Tottel's Miscellany, in June 1557."
+  },
+  {
+   "id": "et-e-17",
+   "question": "What is a major formal distinction between the sonnets composed by Wyatt and those by Surrey?",
+   "options": [
+    "Wyatt wrote in Latin while Surrey wrote solely in vernacular Scots",
+    "Wyatt favored the Italian octave-sestet while Surrey devised the three quatrains and couplet",
+    "Wyatt wrote strictly in unrhymed meter while Surrey used rhymed stanzas",
+    "Wyatt composed twelve-line lyrics while Surrey used fourteen lines"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wyatt stayed closer to the Italian octave and sestet, whereas Surrey established the English pattern."
+  },
+  {
+   "id": "et-e-18",
+   "question": "What tragic fate was shared by both Sir Thomas More in 1535 and the Earl of Surrey in 1547?",
+   "options": [
+    "They were assassinated by rebellious peasants",
+    "They were exiled permanently to continental Europe",
+    "They were executed for treason by King Henry VIII",
+    "They died of illness in foreign diplomatic service"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Both More and Surrey fell victim to royal charges of treason and were beheaded on Tower Hill."
+  },
+  {
+   "id": "et-e-19",
+   "question": "In More's 'Utopia', which precious metal is deliberately demeaned by being used for slave chains and chamber pots?",
+   "options": [
+    "Gold",
+    "Bronze",
+    "Lead",
+    "Iron"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Utopians use gold and silver for bonds, chamber pots, and criminal markers to prevent greed for wealth."
+  },
+  {
+   "id": "et-e-20",
+   "question": "The Early Tudor literary age traditionally concludes in 1558 with the accession of which monarch?",
+   "options": [
+    "James I",
+    "Edward VI",
+    "Mary I",
+    "Elizabeth I"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The accession of Queen Elizabeth I in November 1558 inaugurated the high Elizabethan golden age."
+  },
+  {
+   "id": "et-e-21",
+   "question": "Which Early Tudor poet composed the introspective lyric 'They Flee from Me That Sometime Did Me Seek'?",
+   "options": [
+    "Henry Howard",
+    "Sir Thomas Wyatt",
+    "Thomas More",
+    "John Skelton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "They Flee from Me is Wyatt's famous rime royal lyric lamenting the inconstancy of courtly lovers."
+  },
+  {
+   "id": "et-e-22",
+   "question": "In an English Shakespearean sonnet, what rhyme scheme defines the concluding two-line unit?",
+   "options": [
+    "ee",
+    "aa",
+    "gg",
+    "cd"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The final couplet in the scheme abab cdcd efef gg rhymes together as a distinct concluding pair."
+  },
+  {
+   "id": "et-e-23",
+   "question": "Sir Thomas Wyatt was twice imprisoned in the Tower of London, notably in 1536 due to his connection with whom?",
+   "options": [
+    "Thomas More",
+    "Cardinal Wolsey",
+    "The Bishop of Rome",
+    "Anne Boleyn"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt was detained in May 1536 during the downfall and arrest of Queen Anne Boleyn and her associates."
+  },
+  {
+   "id": "et-e-24",
+   "question": "Who was Thomas More's close Dutch humanist associate who authored 'The Praise of Folly'?",
+   "options": [
+    "Desiderius Erasmus",
+    "John Calvin",
+    "Martin Luther",
+    "Johannes Reuchlin"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Erasmus dedicated The Praise of Folly, or Moriae Encomium, as a playful pun to his friend Thomas More."
+  },
+  {
+   "id": "et-e-25",
+   "question": "What is the name of the fictional sun-bronzed mariner who recounts the institutions of Utopia in More's book?",
+   "options": [
+    "Peter Giles",
+    "John Mandeville",
+    "Raphael Hythloday",
+    "Marco Polo"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Raphael Hythloday, whose surname means distributor of nonsense, narrates the customs of Utopia."
+  },
+  {
+   "id": "et-e-26",
+   "question": "In which European country did the poetic form of the sonnet originate during the 13th century?",
+   "options": [
+    "Italy",
+    "England",
+    "France",
+    "Spain"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The sonnet was invented in 13th-century Sicily by Giacomo da Lentini and perfected in Tuscany by Petrarch."
+  },
+  {
+   "id": "et-e-27",
+   "question": "Which of the following was NOT a characteristic of Renaissance Humanism in the Early Tudor period?",
+   "options": [
+    "Recovery and study of classical Greek and Latin texts",
+    "Emphasis on educational reform and civic virtue",
+    "Belief in human dignity and intellectual potential",
+    "Rejection of all Christian religious faith and scripture"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Tudor humanists like More, Colet, and Erasmus sought to enrich Christian faith, not to abandon it."
+  },
+  {
+   "id": "et-e-28",
+   "question": "Henry Howard was styled Earl of Surrey as the heir of which pre-eminent English noble dynasty?",
+   "options": [
+    "The Duke of Somerset",
+    "The Duke of Suffolk",
+    "The Duke of Buckingham",
+    "The Duke of Norfolk"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Henry Howard was the eldest son of Thomas Howard, 3rd Duke of Norfolk, head of the Howard family."
+  },
+  {
+   "id": "et-e-29",
+   "question": "Which metrical foot, consisting of an unstressed syllable followed by a stressed syllable, dominates English sonnets?",
+   "options": [
+    "Iamb",
+    "Anapest",
+    "Dactyl",
+    "Trochee"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The iamb is the standard rising foot of English accentual-syllabic poetry and traditional sonnets."
+  },
+  {
+   "id": "et-e-30",
+   "question": "Unlike the Italian Petrarchan sonnet, Wyatt's sonnets characteristically conclude with what structural feature?",
+   "options": [
+    "A Latin proverb",
+    "An unrhymed blank line",
+    "A recurring refrain",
+    "A rhyming couplet"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wyatt introduced the closing rhyming couplet, ending his poems with an epigrammatic punch."
+  },
+  {
+   "id": "et-e-31",
+   "question": "According to Raphael Hythloday in 'Utopia', what is the Utopians' prevailing attitude toward warfare?",
+   "options": [
+    "They celebrate military aggression as the highest civic virtue",
+    "They maintain no weapons and refuse to fight under any circumstances",
+    "They hire mercenaries solely to plunder neighboring cities for gold",
+    "They despise war as beastly but wage it for defense or to liberate oppressed allies"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Utopians view war as loathsome and glory gained by arms as inglorious, fighting only when necessary."
+  },
+  {
+   "id": "et-e-32",
+   "question": "Sir Thomas More was condemned to death for refusing to swear to which parliamentary act of Henry VIII?",
+   "options": [
+    "Act of Settlement",
+    "Act of Supremacy",
+    "Act of Uniformity",
+    "Statute of Praemunire"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The 1534 Act of Supremacy declared Henry VIII the supreme head of the Church of England on earth."
+  },
+  {
+   "id": "et-e-33",
+   "question": "What technical term describes the dramatic shift in thought or emotional tone occurring between octave and sestet?",
+   "options": [
+    "Volta",
+    "Caesura",
+    "Hemistich",
+    "Enjambment"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The volta, Italian for turn, marks the psychological or logical transition in a sonnet."
+  },
+  {
+   "id": "et-e-34",
+   "question": "Which specific rhyme scheme was established by Henry Howard, Earl of Surrey, for the English sonnet?",
+   "options": [
+    "abab abab abab cc",
+    "abab cdcd efef gg",
+    "abba abba cde cde",
+    "abba abba cdd cee"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Surrey invented the scheme of three alternate-rhyming quatrains and a final couplet."
+  },
+  {
+   "id": "et-e-35",
+   "question": "In Renaissance literary studies, what does the term 'courtier poet' denote?",
+   "options": [
+    "A legal prosecutor writing verse arguments for trials",
+    "A cloistered monk composing illuminated choir books",
+    "An aristocratic writer who served at royal court and circulated verse in manuscript",
+    "A professional poet hired to write theatrical plays for town halls"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Courtier poets like Wyatt and Surrey were diplomats and courtiers writing lyrics for private circulation."
+  },
+  {
+   "id": "et-e-36",
+   "question": "Technically, Surrey's blank verse in his Virgil translation consists of lines that are:",
+   "options": [
+    "Unrhymed with ten syllables in iambic meter",
+    "Rhymed in heroic couplets with twelve syllables",
+    "Rhymed with eight syllables in trochaic meter",
+    "Unrhymed with fourteen syllables in septenary meter"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Surrey established blank verse as unrhymed decasyllabic lines with rising iambic stress."
+  },
+  {
+   "id": "et-e-37",
+   "question": "What is a 'Petrarchan conceit' as frequently adapted in Sir Thomas Wyatt's lyric poetry?",
+   "options": [
+    "An elaborate, paradoxical comparison describing the lover's suffering",
+    "A satirical mockery of court politics and royal ministers",
+    "A short riddle composed in dialect for comic interludes",
+    "A legal debate concerning land tenure and inheritance"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A Petrarchan conceit is an ingenious hyperbolic metaphor comparing love to war, storms, or burning ice."
+  },
+  {
+   "id": "et-e-38",
+   "question": "In which language did Sir Thomas More compose his original text of 'Utopia' in 1516?",
+   "options": [
+    "French",
+    "English",
+    "Latin",
+    "Greek"
+   ],
+   "correct_option_id": 2,
+   "explanation": "More wrote Utopia in scholarly Renaissance Latin for an international humanist readership."
+  },
+  {
+   "id": "et-e-39",
+   "question": "Sir Thomas More's domestic academy in Chelsea was famous across Europe for championing the education of whom?",
+   "options": [
+    "Foreign royal ambassadors",
+    "His daughters and female kin",
+    "Clerical monks exclusively",
+    "Tudor naval commanders"
+   ],
+   "correct_option_id": 1,
+   "explanation": "More provided his daughters, especially Margaret Roper, with thorough education in Latin, Greek, and logic."
+  },
+  {
+   "id": "et-e-40",
+   "question": "Through his mother Lady Elizabeth Stafford, the Earl of Surrey was cousin to which English monarch?",
+   "options": [
+    "James I",
+    "Edward IV",
+    "Henry VII",
+    "Henry VIII"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Surrey was related to Henry VIII and was first cousin to queens Anne Boleyn and Catherine Howard."
+  },
+  {
+   "id": "et-e-41",
+   "question": "In Wyatt's poem 'Whoso List to Hunt', what does the Latin inscription 'Noli me tangere' on the collar mean?",
+   "options": [
+    "Follow me closely",
+    "Touch me not",
+    "Remember my name",
+    "Set me free"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Noli me tangere is Latin for Touch me not, quoting Christ's words to Mary Magdalene in the Vulgate."
+  },
+  {
+   "id": "et-e-42",
+   "question": "Which English author is recognized as the first poet to translate Italian Petrarchan sonnets into English verse?",
+   "options": [
+    "William Shakespeare",
+    "Henry Howard",
+    "Sir Thomas Wyatt",
+    "Edmund Spenser"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas Wyatt was the earliest English poet to translate and adapt Petrarch's Rime sparse."
+  },
+  {
+   "id": "et-e-43",
+   "question": "In poetry, what is the definition of a 'quatrain'?",
+   "options": [
+    "A stanza or unit of four poetic lines",
+    "A six-line concluding stanza",
+    "A pair of rhymed poetic lines",
+    "An eight-line opening stanza"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A quatrain is a stanza or structural section composed of four metrical lines."
+  },
+  {
+   "id": "et-e-44",
+   "question": "Sir Thomas More chose martyrdom because his conscience remained loyal to which authority?",
+   "options": [
+    "The English Parliament and the House of Commons",
+    "The Holy Roman Emperor Charles V",
+    "The King of France and the Sorbonne University",
+    "The Catholic Church and the universal authority of the Pope"
+   ],
+   "correct_option_id": 3,
+   "explanation": "More refused to place parliamentary secular authority above the unity of universal Catholic Christendom."
+  },
+  {
+   "id": "et-e-45",
+   "question": "Which 16th-century critic in 'The Arte of English Poesie' praised Wyatt and Surrey as the first 'courtly makers' of English poetry?",
+   "options": [
+    "Roger Ascham",
+    "Stephen Gosson",
+    "George Puttenham",
+    "Philip Sidney"
+   ],
+   "correct_option_id": 2,
+   "explanation": "George Puttenham called Wyatt and Surrey courtly makers who reformed and polished English meter."
+  },
+  {
+   "id": "et-e-46",
+   "question": "The aristocratic title 'Earl of Surrey' was held by which major Tudor Renaissance poet?",
+   "options": [
+    "Thomas Wyatt",
+    "Henry Howard",
+    "Thomas More",
+    "John Skelton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Henry Howard bore the courtesy title Earl of Surrey from 1524 until his execution in 1547."
+  },
+  {
+   "id": "et-e-47",
+   "question": "Which figure is universally acknowledged as the leading English exemplar of Northern Christian Humanism?",
+   "options": [
+    "Christopher Marlowe",
+    "John Donne",
+    "Sir Thomas More",
+    "Ben Jonson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas More represents the pinnacle of English Christian humanism alongside Erasmus and Colet."
+  },
+  {
+   "id": "et-e-48",
+   "question": "In poetic scansion, how is an 'iambic' foot structured?",
+   "options": [
+    "A stressed syllable followed by an unstressed syllable",
+    "Two successive heavily stressed syllables",
+    "Two unstressed syllables followed by a stressed syllable",
+    "A short unstressed syllable followed by a long stressed syllable"
+   ],
+   "correct_option_id": 3,
+   "explanation": "An iamb is a two-syllable foot with an unaccented syllable followed by an accented syllable."
+  },
+  {
+   "id": "et-e-49",
+   "question": "What was the historical significance of Richard Tottel's publication of 'Songes and Sonettes' in 1557?",
+   "options": [
+    "It introduced movable print technology into London for the first time",
+    "It marked the complete replacement of English verse by Latin literature",
+    "It brought aristocratic courtly poetry into the public print realm for educated readers",
+    "It abolished all rhyme from English poetry in favor of prose"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Tottel made courtier manuscript verse accessible to the general English reading public."
+  },
+  {
+   "id": "et-e-50",
+   "question": "In which year was Sir Thomas More beheaded on Tower Hill for refusing the royal supremacy?",
+   "options": [
+    "1509",
+    "1547",
+    "1535",
+    "1558"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Thomas More was tried in Westminster Hall and executed on Tower Hill on July 6, 1535."
+  }
+ ]
+}
