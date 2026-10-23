@@ -1,0 +1,608 @@
+{
+ "bankId": "commonwealth",
+ "period": "Commonwealth Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "cw-e-01",
+   "question": "In which year was King Charles I executed outside the Banqueting House at Whitehall, inaugurating the Commonwealth Period?",
+   "options": [
+    "1653",
+    "1649",
+    "1642",
+    "1660"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Charles I was beheaded on 30 January 1649 leading to the establishment of the Commonwealth."
+  },
+  {
+   "id": "cw-e-02",
+   "question": "What official constitutional title was given to the English republic established by Parliament in May 1649?",
+   "options": [
+    "The Dominion of Britain",
+    "The Protectorate of Great Britain",
+    "The United Kingdom",
+    "The Commonwealth of England"
+   ],
+   "correct_option_id": 3,
+   "explanation": "An Act declaring England to be a Commonwealth was passed by the Rump Parliament on 19 May 1649."
+  },
+  {
+   "id": "cw-e-03",
+   "question": "In December 1653, what supreme political office was assumed by Oliver Cromwell under the Instrument of Government?",
+   "options": [
+    "Lord High Admiral",
+    "King of England",
+    "First Consul",
+    "Lord Protector"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Under the Instrument of Government in 1653 Cromwell became Lord Protector of the Commonwealth."
+  },
+  {
+   "id": "cw-e-04",
+   "question": "Which monarch was restored to the English throne in May 1660, officially terminating the Puritan Interregnum?",
+   "options": [
+    "King Charles I",
+    "King James II",
+    "King William III",
+    "King Charles II"
+   ],
+   "correct_option_id": 3,
+   "explanation": "King Charles II returned from exile in May 1660 following the Declaration of Breda."
+  },
+  {
+   "id": "cw-e-05",
+   "question": "In which year did the Long Parliament issue the initial ordinance commanding the total closure and suppression of public stage plays?",
+   "options": [
+    "1642",
+    "1653",
+    "1649",
+    "1660"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The ordinance of 2 September 1642 closed all public theatres on moral and religious grounds."
+  },
+  {
+   "id": "cw-e-06",
+   "question": "During the Puritan suppression of public theatres, what short comic scenes or farcical interludes were acted surreptitiously at taverns and fairs?",
+   "options": [
+    "Interludes",
+    "Drolls",
+    "Masques",
+    "Moralities"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Drolls were brief dramatic excerpts and farces staged secretly during the theatre ban."
+  },
+  {
+   "id": "cw-e-07",
+   "question": "Which 1656 theatrical entertainment staged by Sir William Davenant at Rutland House is widely regarded as the first English opera?",
+   "options": [
+    "The Cruelty of the Spaniards in Peru",
+    "The Spanish Friar",
+    "The Siege of Rhodes",
+    "The Indian Queen"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Davenant staged The Siege of Rhodes in September 1656 using recitative music to evade stage bans."
+  },
+  {
+   "id": "cw-e-08",
+   "question": "Which singer and actress is celebrated as the first woman to perform on the English public stage, singing the role of Ianthe in 1656?",
+   "options": [
+    "Aphra Behn",
+    "Mrs. Edward Coleman",
+    "Nell Gwyn",
+    "Mary Saunderson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mrs. Coleman sang the role of Ianthe in Davenant production of The Siege of Rhodes in 1656."
+  },
+  {
+   "id": "cw-e-09",
+   "question": "In March 1649, which prestigious diplomatic post was John Milton appointed to by the Commonwealth Council of State?",
+   "options": [
+    "Master of the Revels",
+    "Latin Secretary",
+    "Lord Chancellor",
+    "Poet Laureate"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Milton was appointed Secretary for Foreign Tongues or Latin Secretary to conduct state correspondence."
+  },
+  {
+   "id": "cw-e-10",
+   "question": "Which political treatise did John Milton publish in February 1649 to defend the trial and execution of King Charles I?",
+   "options": [
+    "The Tenure of Kings and Magistrates",
+    "Areopagitica",
+    "The Reason of Church-Government",
+    "Of Education"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton published The Tenure of Kings and Magistrates shortly after the regicide to justify the trial."
+  },
+  {
+   "id": "cw-e-11",
+   "question": "Which polemical tract did John Milton publish in October 1649 to demolish the royalist cult surrounding 'Eikon Basilike'?",
+   "options": [
+    "Defensio Secunda",
+    "Tetrachordon",
+    "Colasterion",
+    "Eikonoklastes"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eikonoklastes meaning the Image-Breaker was commissioned by Parliament to counter Eikon Basilike."
+  },
+  {
+   "id": "cw-e-12",
+   "question": "What was the title of the popular 1649 royalist book, subtitled 'The Pourtraicture of His Sacred Majestie in His Solitudes and Sufferings'?",
+   "options": [
+    "Defensio Regia",
+    "Eikon Basilike",
+    "Regii Sanguinis Clamor",
+    "Basilikon Doron"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eikon Basilike appeared immediately after Charles I death and presented him as a Christian martyr."
+  },
+  {
+   "id": "cw-e-13",
+   "question": "In which year did John Milton become completely blind, relying thereafter on amanuenses and assistants for his official duties?",
+   "options": [
+    "1652",
+    "1667",
+    "1649",
+    "1658"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton lost his remaining eyesight totally by early 1652 at the age of forty-three."
+  },
+  {
+   "id": "cw-e-14",
+   "question": "Which sonnet by John Milton addresses the Lord Protector with the famous declaration 'Peace hath her victories / No less renowned than war'?",
+   "options": [
+    "On His Blindness",
+    "On the Late Massacre in Piedmont",
+    "To Cyriack Skinner",
+    "To the Lord General Cromwell"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Milton composed Sonnet 16 To the Lord General Cromwell in May 1652 urging freedom of conscience."
+  },
+  {
+   "id": "cw-e-15",
+   "question": "John Milton composed the sonnet 'On the Late Massacre in Piedmont' in 1655 to protest the slaughter of which Protestant community?",
+   "options": [
+    "The Lollards",
+    "The Huguenots",
+    "The Anabaptists",
+    "The Waldensians"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sonnet 18 protests the slaughter of the Waldensians or Vaudois in the Alpine valleys of Piedmont."
+  },
+  {
+   "id": "cw-e-16",
+   "question": "Which personified virtue provides the consoling conclusion 'They also serve who only stand and wait' in Milton's sonnet on his blindness?",
+   "options": [
+    "Hope",
+    "Faith",
+    "Patience",
+    "Mercy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Sonnet 19 Patience replies to prevent the speaker murmur about his lost sight."
+  },
+  {
+   "id": "cw-e-17",
+   "question": "Published in early 1660 on the verge of the Restoration, which tract represents John Milton's final appeal against monarchy?",
+   "options": [
+    "Of Reformation",
+    "The Doctrine and Discipline of Divorce",
+    "The Ready and Easy Way to Establish a Free Commonwealth",
+    "Animadversions"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Milton issued this urgent republican pamphlet in February 1660 opposing the return of Charles II."
+  },
+  {
+   "id": "cw-e-18",
+   "question": "Which lyric did Andrew Marvell compose in 1650 to reflect upon Oliver Cromwell's triumphant military return from Ireland?",
+   "options": [
+    "An Horatian Ode upon Cromwell's Return from Ireland",
+    "The Garden",
+    "A Poem upon the Death of His Late Highness",
+    "The First Anniversary"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marvell composed An Horatian Ode in the summer of 1650 after Cromwell Irish expedition."
+  },
+  {
+   "id": "cw-e-19",
+   "question": "Which major country house poem did Andrew Marvell write while living in Yorkshire as tutor to Mary Fairfax between 1650 and 1652?",
+   "options": [
+    "To Penshurst",
+    "The Description of Cookham",
+    "Cooper's Hill",
+    "Upon Appleton House"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Upon Appleton House celebrates Lord General Thomas Fairfax estate and gardens in Yorkshire."
+  },
+  {
+   "id": "cw-e-20",
+   "question": "In which famous pastoral lyric does Andrew Marvell describe the mind 'Annihilating all that's made / To a green thought in a green shade'?",
+   "options": [
+    "The Garden",
+    "The Definition of Love",
+    "Bermudas",
+    "The Coronet"
+   ],
+   "correct_option_id": 0,
+   "explanation": "These celebrated lines appear in stanza six of Marvell poem The Garden written around 1651."
+  },
+  {
+   "id": "cw-e-21",
+   "question": "In 1657, Andrew Marvell was appointed to which official Commonwealth office, serving as colleague and assistant to John Milton?",
+   "options": [
+    "Clerk of the Parliament",
+    "Censor of the Press",
+    "Keeper of the State Papers",
+    "Assistant Latin Secretary"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Marvell joined the Latin Secretariat in September 1657 to assist the sightless Milton."
+  },
+  {
+   "id": "cw-e-22",
+   "question": "For which English borough was Andrew Marvell elected to Parliament in 1659, serving as its Member until his death in 1678?",
+   "options": [
+    "Oxford",
+    "Westminster",
+    "Kingston upon Hull",
+    "Cambridge"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Marvell was elected MP for Hull in Richard Cromwell Third Protectorate Parliament in 1659."
+  },
+  {
+   "id": "cw-e-23",
+   "question": "Which monumental 1651 philosophical treatise by Thomas Hobbes examines the nature, form, and power of a commonwealth?",
+   "options": [
+    "Behemoth",
+    "Leviathan",
+    "The Elements of Law",
+    "De Cive"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hobbes published Leviathan in London in 1651 advocating sovereign power to avert chaos."
+  },
+  {
+   "id": "cw-e-24",
+   "question": "In 'Leviathan', Thomas Hobbes famously describes the state of nature as a condition where human life is 'solitary, poor, nasty, brutish, and':",
+   "options": [
+    "short",
+    "weak",
+    "vile",
+    "blind"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In chapter 13 of Leviathan Hobbes gives this classic description of life without government."
+  },
+  {
+   "id": "cw-e-25",
+   "question": "The famous 1651 engraved title page of Thomas Hobbes's 'Leviathan' depicts a gigantic sovereign figure grasping which two emblems?",
+   "options": [
+    "A book and an anchor",
+    "A sword and a crosier",
+    "A crown and a shield",
+    "A sceptre and an orb"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The sword symbolizes temporal civil authority and the crosier symbolizes spiritual ecclesiastical power."
+  },
+  {
+   "id": "cw-e-26",
+   "question": "Into how many primary parts or books is Thomas Hobbes's 1651 political work 'Leviathan' divided?",
+   "options": [
+    "Two parts",
+    "Three parts",
+    "Four parts",
+    "Six parts"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Leviathan contains four parts titled Of Man, Of Commonwealth, Of a Christian Commonwealth, and Of Darkness."
+  },
+  {
+   "id": "cw-e-27",
+   "question": "Which classic pastoral work on fishing and the contemplative life was published by Izaak Walton in London in 1653?",
+   "options": [
+    "The Compleat Angler",
+    "The Country Gentleman",
+    "Sylva",
+    "The English Improver"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Izaak Walton published The Compleat Angler or the Contemplative Man Recreation in 1653."
+  },
+  {
+   "id": "cw-e-28",
+   "question": "What is the name of the master angler and narrator who instructs his companions in Izaak Walton's 'The Compleat Angler'?",
+   "options": [
+    "Piscator",
+    "Venator",
+    "Coridon",
+    "Auceps"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Piscator represents the fisherman who guides Venator the hunter and Auceps the falconer."
+  },
+  {
+   "id": "cw-e-29",
+   "question": "Izaak Walton is renowned for authoring seventeenth-century short biographies of which distinguished literary and church figures?",
+   "options": [
+    "Robert Herrick and Richard Lovelace",
+    "Thomas Hobbes and Francis Bacon",
+    "John Donne and Sir Henry Wotton",
+    "John Milton and Andrew Marvell"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Walton published the Life of Donne in 1640 and the Life of Sir Henry Wotton in 1651."
+  },
+  {
+   "id": "cw-e-30",
+   "question": "Which 1658 prose discourse by Sir Thomas Browne takes ancient sepulchral vessels discovered in Norfolk as the occasion for a meditation on death?",
+   "options": [
+    "Pseudodoxia Epidemica",
+    "A Letter to a Friend",
+    "Hydriotaphia, Urne-Buriall",
+    "Religio Medici"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hydriotaphia was published in 1658 following the discovery of burial urns at Walsingham."
+  },
+  {
+   "id": "cw-e-31",
+   "question": "Which mystical botanical essay was published as the companion treatise to 'Hydriotaphia' by Sir Thomas Browne in 1658?",
+   "options": [
+    "The City of the Sun",
+    "The New Atlantis",
+    "The Garden of Cyrus",
+    "The Anatomy of Melancholy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Garden of Cyrus was published alongside Hydriotaphia in the same volume in 1658."
+  },
+  {
+   "id": "cw-e-32",
+   "question": "Sir Thomas Browne's 'The Garden of Cyrus' is celebrated for its intricate philosophical exploration of which geometrical pattern?",
+   "options": [
+    "The quincunx",
+    "The golden ratio",
+    "The Fibonacci spiral",
+    "The equilateral triangle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Browne traces the quincunx five-point plantation arrangement through nature art and heaven."
+  },
+  {
+   "id": "cw-e-33",
+   "question": "Which two famous companion devotional guides were authored by the Anglican divine Jeremy Taylor during the Commonwealth in 1650 and 1651?",
+   "options": [
+    "Holy Living and Holy Dying",
+    "The Temple and The Synagogue",
+    "Grace Abounding and The Holy War",
+    "The Saint's Rest and A Call to the Unconverted"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Taylor published Holy Living in 1650 and Holy Dying in 1651 providing rules for Christian practice."
+  },
+  {
+   "id": "cw-e-34",
+   "question": "Which famous critical epithet did Samuel Taylor Coleridge bestow upon Jeremy Taylor in admiration of his lush prose eloquence?",
+   "options": [
+    "The Shakespeare of Divines",
+    "The Father of English Prose",
+    "The English Cicero",
+    "The Christian Plato"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Coleridge praised Jeremy Taylor poetic imagery and dramatic range as the Shakespeare of Divines."
+  },
+  {
+   "id": "cw-e-35",
+   "question": "Which Welsh poet published the two-part sacred Metaphysical verse collection 'Silex Scintillans' in 1650 and 1655?",
+   "options": [
+    "Thomas Traherne",
+    "Henry Vaughan",
+    "Richard Crashaw",
+    "George Herbert"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Henry Vaughan published Silex Scintillans Part I in 1650 and enlarged it with Part II in 1655."
+  },
+  {
+   "id": "cw-e-36",
+   "question": "By what regional moniker, derived from an ancient Celtic tribe of south Wales, is the poet Henry Vaughan commonly known?",
+   "options": [
+    "The Cantabrigian",
+    "The Silurist",
+    "The Castalian",
+    "The Vates"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Vaughan styled himself the Silurist after the Silures an ancient British tribe of south Wales."
+  },
+  {
+   "id": "cw-e-37",
+   "question": "Which mystical poem by Henry Vaughan opens with the memorable vision 'I saw Eternity the other night / Like a great ring of pure and endless light'?",
+   "options": [
+    "Peace",
+    "They are all gone into the world of light!",
+    "The Retreat",
+    "The World"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The World opens with this celebrated celestial image contrasting eternity with earthly folly."
+  },
+  {
+   "id": "cw-e-38",
+   "question": "In the 1655 preface to 'Silex Scintillans', which deceased devotional poet does Henry Vaughan revere as his primary spiritual mentor?",
+   "options": [
+    "Richard Crashaw",
+    "John Donne",
+    "George Herbert",
+    "Edmund Spenser"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Vaughan acknowledged that the blessed Mr George Herbert converted his heart to holy poetry."
+  },
+  {
+   "id": "cw-e-39",
+   "question": "Which Cavalier poet published the lyric collection 'Lucasta' in 1649 while suffering imprisonment for his Royalist allegiance?",
+   "options": [
+    "Sir John Suckling",
+    "Robert Herrick",
+    "Thomas Carew",
+    "Richard Lovelace"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Richard Lovelace published Lucasta in 1649 containing his celebrated lyrics of honour and love."
+  },
+  {
+   "id": "cw-e-40",
+   "question": "The famous lyric lines 'Stone walls do not a prison make, / Nor iron bars a cage' appear in which poem by Richard Lovelace?",
+   "options": [
+    "The Grasshopper",
+    "To Althea, from Prison",
+    "To Lucasta, Going to the Wars",
+    "To Amarantha"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Lovelace wrote To Althea, from Prison in the Gatehouse prison in Westminster in 1642."
+  },
+  {
+   "id": "cw-e-41",
+   "question": "Which Royalist poet published a landmark collection of 'Poems' in 1656 featuring 'Davideis' and English Pindaric odes?",
+   "options": [
+    "Sir William Davenant",
+    "Abraham Cowley",
+    "Edmund Waller",
+    "John Cleveland"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Cowley 1656 volume contained Miscellanies, The Mistress, Pindarique Odes, and Davideis."
+  },
+  {
+   "id": "cw-e-42",
+   "question": "What is the title of Abraham Cowley's unfinished sacred epic poem in four books centered on the life of King David?",
+   "options": [
+    "Gondibert",
+    "Paradise Lost",
+    "Davideis",
+    "The Civil Wars"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Davideis was Cowley four-book epic in heroic couplets illustrating the youth of King David."
+  },
+  {
+   "id": "cw-e-43",
+   "question": "Which unfinished heroic poem in four-line stanzas was published by Sir William Davenant in 1651 alongside a preface addressed to Thomas Hobbes?",
+   "options": [
+    "Cooper's Hill",
+    "The Purple Island",
+    "Gondibert",
+    "Poly-Olbion"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Davenant published Gondibert An Heroick Poem in 1651 using decasyllabic quatrains."
+  },
+  {
+   "id": "cw-e-44",
+   "question": "Which poet published 'A Panegyric to My Lord Protector' in 1655, offering eloquent praise for Oliver Cromwell's governance?",
+   "options": [
+    "Edmund Waller",
+    "Andrew Marvell",
+    "John Dryden",
+    "Samuel Butler"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Edmund Waller composed the panegyric in 1655 praising Cromwell maritime power and internal order."
+  },
+  {
+   "id": "cw-e-45",
+   "question": "Which seventeenth-century Welsh poet was celebrated under the poetic name 'The Matchless Orinda' for her verses on female friendship?",
+   "options": [
+    "Margaret Cavendish",
+    "Aphra Behn",
+    "Katherine Philips",
+    "Anne Bradstreet"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Katherine Philips established the Society of Friendship in Wales and wrote under the name Orinda."
+  },
+  {
+   "id": "cw-e-46",
+   "question": "Which Duchess of Newcastle published 'Poems and Fancies' in 1653, expressing natural philosophy and atomic theories in verse?",
+   "options": [
+    "Lucy Hutchinson",
+    "Dorothy Osborne",
+    "Lady Mary Wroth",
+    "Margaret Cavendish"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Margaret Cavendish published Poems and Fancies in 1653 exploring atomism through imaginative poetry."
+  },
+  {
+   "id": "cw-e-47",
+   "question": "Which classic 1656 utopian romance by James Harrington envisions a commonwealth stabilized by an agrarian law and rotation of office?",
+   "options": [
+    "Utopia",
+    "The Commonwealth of Oceana",
+    "New Atlantis",
+    "The Law of Freedom"
+   ],
+   "correct_option_id": 1,
+   "explanation": "James Harrington dedicated The Commonwealth of Oceana to Oliver Cromwell proposing republican governance."
+  },
+  {
+   "id": "cw-e-48",
+   "question": "Which radical agrarian community was established by Gerrard Winstanley in 1649 to cultivate common land at St George's Hill in Surrey?",
+   "options": [
+    "The Muggletonians",
+    "The Diggers",
+    "The Fifth Monarchists",
+    "The Levellers"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Diggers or True Levellers started communal farming on waste lands at St George Hill in 1649."
+  },
+  {
+   "id": "cw-e-49",
+   "question": "Before writing his famous post-Restoration spiritual allegories, how did John Bunyan spend his active public years in the 1650s?",
+   "options": [
+    "Royalist courtier in Paris",
+    "Latin Secretary to Parliament",
+    "Theatrical actor in London",
+    "Preacher and religious pamphleteer"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bunyan joined the Bedford Baptist congregation and began preaching and publishing tracts in the 1650s."
+  },
+  {
+   "id": "cw-e-50",
+   "question": "Which official Commonwealth newsbook, launched in 1650 and edited by Marchamont Nedham, served as the primary voice of the government?",
+   "options": [
+    "Mercurius Politicus",
+    "Mercurius Aulicus",
+    "The London Gazette",
+    "Mercurius Britannicus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mercurius Politicus was published from 1650 to 1660 defending the Commonwealth and Protectorate."
+  }
+ ]
+}

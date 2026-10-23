@@ -1,0 +1,608 @@
+{
+ "bankId": "commonwealth",
+ "period": "Commonwealth Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "cw-h-01",
+   "question": "In 1651, John Milton published 'Defensio pro Populo Anglicano' as a direct Latin rebuttal to which defense of Charles I by Claudius Salmasius?",
+   "options": [
+    "Mare Clausum",
+    "Defensio Regia pro Carolo I",
+    "Regii Sanguinis Clamor",
+    "De Re Publica Anglorum"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Claudius Salmasius wrote Defensio Regia pro Carolo I in 1649 to which Milton replied in 1651."
+  },
+  {
+   "id": "cw-h-02",
+   "question": "In 'Defensio Secunda' (1654), Milton fiercely attacked Alexander More, though the anonymous Royalist tract 'Regii Sanguinis Clamor' was actually authored by:",
+   "options": [
+    "Brian Duppa",
+    "Claudius Salmasius",
+    "John Gauden",
+    "Peter du Moulin the Younger"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Peter du Moulin the Younger wrote Regii Sanguinis Clamor though Alexander More oversaw its printing."
+  },
+  {
+   "id": "cw-h-03",
+   "question": "The title page of Milton's 1649 tract 'The Tenure of Kings and Magistrates' explicitly declares that it is lawful to depose and put to death:",
+   "options": [
+    "An absolute monarch",
+    "A Catholic sovereign",
+    "An unordained magistrate",
+    "A tyrant or wicked king"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The subtitle states that it is lawful for any who have the power to call to account a tyrant or wicked king."
+  },
+  {
+   "id": "cw-h-04",
+   "question": "In 'Eikonoklastes', what specific charge did John Milton level against King Charles I regarding a prayer included in 'Eikon Basilike'?",
+   "options": [
+    "It was copied verbatim from Thomas More's 'Utopia'",
+    "It was translated directly from Machiavelli's 'Discourses'",
+    "It was stolen from a Catholic liturgy of the Virgin Mary",
+    "It was plagiarized from Pamela in Philip Sidney's 'Arcadia'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Milton exposed that the king prayer was adapted from the pagan heroine Pamela in Sidney Arcadia."
+  },
+  {
+   "id": "cw-h-05",
+   "question": "Milton's Sonnet 16, composed in May 1652 to address Oliver Cromwell, opens with which exact apostrophe?",
+   "options": [
+    "Cromwell, our chief of men",
+    "Avenge, O Lord, thy slaughtered saints",
+    "Fairfax, whose name in arms through Europe rings",
+    "Vane, young in years, but in sage counsel old"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sonnet 16 opens with the line Cromwell, our chief of men, who through a cloud / Not of war only."
+  },
+  {
+   "id": "cw-h-06",
+   "question": "To which prominent Commonwealth statesman did John Milton address the 1652 sonnet praising him as 'young in years, but in sage counsel old'?",
+   "options": [
+    "Bulstrode Whitelocke",
+    "Sir Henry Vane the Younger",
+    "John Bradshaw",
+    "Arthur Haselrig"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Milton addressed Sonnet 17 to Sir Henry Vane the Younger praising his statesmanship and wisdom."
+  },
+  {
+   "id": "cw-h-07",
+   "question": "In his poignant 1658 sonnet 'Methought I saw my late espoused saint', which mythical figure does Milton cite who was rescued from the grave?",
+   "options": [
+    "Proserpina",
+    "Persephone",
+    "Alcestis",
+    "Eurydice"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Milton compares his deceased wife Katherine Woodcock to Alcestis brought back from death by Hercules."
+  },
+  {
+   "id": "cw-h-08",
+   "question": "In February 1653, to which President of the Council of State did John Milton dispatch a letter warmly recommending Andrew Marvell?",
+   "options": [
+    "George Monck",
+    "John Bradshaw",
+    "Oliver Cromwell",
+    "Thomas Fairfax"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Milton wrote to Lord President John Bradshaw commending Marvell knowledge of Latin and French."
+  },
+  {
+   "id": "cw-h-09",
+   "question": "What is the exact metrical and stanzaic form of Andrew Marvell's 'An Horatian Ode upon Cromwell's Return from Ireland'?",
+   "options": [
+    "Heroic couplets in decasyllabic rhyming pairs",
+    "Four-line stanzas of two iambic tetrameter and two iambic trimeter lines",
+    "Rhyme royal stanzas rhyming ababbcc",
+    "Spenserian nine-line stanzas in iambic pentameter"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Marvell Horatian Ode uses an aabb stanza consisting of two four-foot lines and two three-foot lines."
+  },
+  {
+   "id": "cw-h-10",
+   "question": "In 'An Horatian Ode', how does Andrew Marvell famously characterize King Charles I on the Whitehall scaffold?",
+   "options": [
+    "As a royal actor upon a tragic scaffold",
+    "As a crowned martyr upon a sacrificial altar",
+    "As an unyielding tyrant defying public law",
+    "As an exiled monarch seeking foreign aid"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marvell dignified portrayal states That thence the royal actor borne / The tragic scaffold might adorn."
+  },
+  {
+   "id": "cw-h-11",
+   "question": "At Nun Appleton House between 1650 and 1652, whom was Andrew Marvell employed to tutor in languages and geography?",
+   "options": [
+    "William Dutton",
+    "Anne Owen",
+    "Katherine Woodcock",
+    "Mary Fairfax"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Marvell tutored twelve-year-old Mary Fairfax the only daughter of retired General Thomas Fairfax."
+  },
+  {
+   "id": "cw-h-12",
+   "question": "Which commemorative poem did Andrew Marvell publish anonymously in 1655 to praise the first full year of Cromwell's Protectorate?",
+   "options": [
+    "Upon the Hill and Grove at Bill-borow",
+    "The First Anniversary of the Government Under His Highness the Lord Protector",
+    "The Character of Holland",
+    "A Poem upon the Death of His Late Highness"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Marvell published The First Anniversary in 1655 celebrating Cromwell rule and national recovery."
+  },
+  {
+   "id": "cw-h-13",
+   "question": "To which Royalist friend and brother of the deceased poet Sidney Godolphin did Thomas Hobbes dedicate 'Leviathan' in 1651?",
+   "options": [
+    "Francis Godolphin",
+    "Henry Bennet",
+    "Sir Charles Cavendish",
+    "William Cavendish"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Hobbes dedicated Leviathan to Francis Godolphin of Godolphin in honor of his brother Sidney."
+  },
+  {
+   "id": "cw-h-14",
+   "question": "In Part 2 of 'Leviathan', what collective metaphor does Thomas Hobbes apply to the artificial person of the sovereign state?",
+   "options": [
+    "The divine viceroy of heaven",
+    "The absolute shepherd of the faithful",
+    "The grand magistrate of natural law",
+    "That mortal god under the immortal God"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hobbes terms the Commonwealth that great Leviathan or that mortal god to which we owe peace."
+  },
+  {
+   "id": "cw-h-15",
+   "question": "What is the specific title of the fourth and final part of Thomas Hobbes's 'Leviathan', which attacks church abuses and scholasticism?",
+   "options": [
+    "Of the Liberty of Subjects",
+    "Of a Christian Commonwealth",
+    "Of the Dominion Paternal and Despotical",
+    "Of the Kingdom of Darkness"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Part 4 of Leviathan is entitled Of the Kingdom of Darkness criticizing religious superstitions."
+  },
+  {
+   "id": "cw-h-16",
+   "question": "Which French artist and printmaker designed the famous 1651 engraved title page for Thomas Hobbes's 'Leviathan'?",
+   "options": [
+    "William Faithorne",
+    "Wenceslaus Hollar",
+    "Abraham Bosse",
+    "Robert Vaughan"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The iconic title page depicting the crowned figure composed of citizens was engraved by Abraham Bosse."
+  },
+  {
+   "id": "cw-h-17",
+   "question": "To which English political leader was James Harrington's 1656 republican masterpiece 'The Commonwealth of Oceana' dedicated?",
+   "options": [
+    "King Charles II",
+    "Richard Cromwell",
+    "Oliver Cromwell",
+    "General George Monck"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Harrington dedicated Oceana to His Highness the Lord Protector of the Commonwealth of England."
+  },
+  {
+   "id": "cw-h-18",
+   "question": "In the allegorical framework of 'The Commonwealth of Oceana', under which persona is Oliver Cromwell represented as model lawgiver?",
+   "options": [
+    "Olphaus Megaletor",
+    "Morpheus",
+    "Philautus",
+    "Panurgus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Harrington models the heroic founder and Lord Archon Olphaus Megaletor directly upon Oliver Cromwell."
+  },
+  {
+   "id": "cw-h-19",
+   "question": "In 1659, at which London venue did James Harrington and his circle meet nightly to debate political rotation and the secret ballot?",
+   "options": [
+    "Will's Coffee House in Bow Street",
+    "The Devil Tavern at Temple Bar",
+    "The Mermaid Tavern in Bread Street",
+    "Miles's Coffee House in New Palace Yard"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Harrington founded the Rota Club in 1659 meeting at Miles Coffee House at the sign of the Turk Head."
+  },
+  {
+   "id": "cw-h-20",
+   "question": "Which London bookseller, operating from St Dunstan's Churchyard in Fleet Street, published the first edition of 'The Compleat Angler' in 1653?",
+   "options": [
+    "Richard Marriot",
+    "Andrew Crooke",
+    "Humphrey Moseley",
+    "Thomas Roycroft"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Richard Marriot in St Dunstan Churchyard Fleet Street published Walton The Compleat Angler in 1653."
+  },
+  {
+   "id": "cw-h-21",
+   "question": "In Chapter 4 of 'The Compleat Angler', a milkmaid and her mother sing paired pastoral lyrics composed by which two Elizabethan poets?",
+   "options": [
+    "Edmund Spenser and Sir Philip Sidney",
+    "Thomas Campion and Ben Jonson",
+    "Michael Drayton and Samuel Daniel",
+    "Christopher Marlowe and Sir Walter Ralegh"
+   ],
+   "correct_option_id": 3,
+   "explanation": "They sing Marlowe The Passionate Shepherd to His Love and Ralegh reply The Nymph Reply to the Shepherd."
+  },
+  {
+   "id": "cw-h-22",
+   "question": "In the expanded 1676 edition of 'The Compleat Angler', which younger poet and friend of Walton authored Part II on fly-fishing?",
+   "options": [
+    "George Herbert",
+    "Robert Sanderson",
+    "Charles Cotton",
+    "Sir Henry Wotton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Charles Cotton wrote Part II Being Instructions how to angle for a Trout or Grayling in a clear Stream."
+  },
+  {
+   "id": "cw-h-23",
+   "question": "To which Norfolk gentleman and friend did Sir Thomas Browne address the epistle dedicatory of 'Hydriotaphia, Urne-Buriall' in 1658?",
+   "options": [
+    "Arthur Dee",
+    "Thomas Le Gros",
+    "Sir Hamon L'Estrange",
+    "Nicholas Bacon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Browne dedicated Hydriotaphia to his worthy and honored friend Thomas Le Gros of Crostwick."
+  },
+  {
+   "id": "cw-h-24",
+   "question": "The unearthing of roughly forty ancient funeral urns in which Norfolk field directly prompted Sir Thomas Browne's 'Hydriotaphia'?",
+   "options": [
+    "Old Walsingham",
+    "Brampton",
+    "Great Yarmouth",
+    "Norwich"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Browne records that about forty or fifty urns were found in a field at Old Walsingham in Norfolk."
+  },
+  {
+   "id": "cw-h-25",
+   "question": "In the concluding chapter of 'Hydriotaphia', Sir Thomas Browne delivers which memorable aphorism concerning human mortality?",
+   "options": [
+    "Oblivion is an impossible haven for mortal fame",
+    "Man is a noble animal, splendid in ashes, and pompous in the grave",
+    "All things began in order and shall end in darkness",
+    "Nature is the art of God"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Browne writes this famous observation in chapter 5 reflecting on monument vanity."
+  },
+  {
+   "id": "cw-h-26",
+   "question": "To which Norfolk worthy did Sir Thomas Browne dedicate his botanical and mystical treatise 'The Garden of Cyrus' in 1658?",
+   "options": [
+    "Thomas Le Gros",
+    "Sir Thomas Cave",
+    "Nicholas Bacon",
+    "Edward Browne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Browne dedicated The Garden of Cyrus to Nicholas Bacon of Gillingham."
+  },
+  {
+   "id": "cw-h-27",
+   "question": "Under the patronage of the Earl of Carbery, at which Carmarthenshire estate did Jeremy Taylor reside while writing 'Holy Living'?",
+   "options": [
+    "Golden Grove",
+    "Wilton House",
+    "Penshurst Place",
+    "Nun Appleton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Jeremy Taylor was protected during the Interregnum at Golden Grove seat of the Earl of Carbery."
+  },
+  {
+   "id": "cw-h-28",
+   "question": "Which landmark theological treatise advocating liberty of conscience had Jeremy Taylor published in 1647 prior to 'Holy Living'?",
+   "options": [
+    "The Liberty of Prophesying",
+    "Ductor Dubitantium",
+    "Unum Necessarium",
+    "The Golden Grove"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Taylor published The Liberty of Prophesying in 1647 defending freedom of religious conscience."
+  },
+  {
+   "id": "cw-h-29",
+   "question": "Rather than standard dramatic acts, into what five structural units did Sir William Davenant divide 'The Siege of Rhodes' in 1656?",
+   "options": [
+    "Tableaux",
+    "Intermedii",
+    "Entries",
+    "Cantos"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Davenant styled the five sections of The Siege of Rhodes as Entries borrowing a masque convention."
+  },
+  {
+   "id": "cw-h-30",
+   "question": "Which English architect and disciple of Inigo Jones designed the innovative perspective stage sets for 'The Siege of Rhodes'?",
+   "options": [
+    "Robert Hooke",
+    "Nicholas Stone",
+    "John Webb",
+    "Sir Christopher Wren"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Webb designed the changeable painted wings and shutters for the stage at Rutland House in 1656."
+  },
+  {
+   "id": "cw-h-31",
+   "question": "What historical military event provides the dramatic milieu for Davenant's 1656 production of 'The Siege of Rhodes'?",
+   "options": [
+    "The 1453 siege of Constantinople by Mehmed II",
+    "The 1571 battle of Lepanto by Selim II",
+    "The 1522 siege of Rhodes by Solyman the Magnificent",
+    "The 1683 siege of Vienna by Kara Mustafa"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The opera depicts the heroic defense of Rhodes by the Knights Hospitaller against Sultan Solyman."
+  },
+  {
+   "id": "cw-h-32",
+   "question": "Where was Sir William Davenant imprisoned under sentence of death by Parliament when he drafted the third book of 'Gondibert'?",
+   "options": [
+    "The Tower of London",
+    "Newgate Prison",
+    "The Fleet Prison",
+    "Gatehouse Prison"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Davenant was captured at sea and confined in the Tower of London in 1650 where he finished Book 3."
+  },
+  {
+   "id": "cw-h-33",
+   "question": "What striking emblem adorns the engraved title page of Henry Vaughan's 1650 collection 'Silex Scintillans'?",
+   "options": [
+    "A flint heart struck by divine lightning and weeping tears",
+    "A pelican feeding its young with blood",
+    "A flaming heart ascending towards an altar",
+    "A caged bird looking out at an olive branch"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Latin title Silex Scintillans means the flashing flint and depicts a stony heart struck by God."
+  },
+  {
+   "id": "cw-h-34",
+   "question": "Which poem in 'Silex Scintillans', opening 'Happy those early days! when I / Shined in my angel-infancy', influenced Wordsworth's Ode?",
+   "options": [
+    "The Retreat",
+    "Corinna's Going A-Maying",
+    "The World",
+    "Quickness"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Retreat reflects upon childhood innocence and directly inspired Wordsworth Immortality Ode."
+  },
+  {
+   "id": "cw-h-35",
+   "question": "Which Latin-titled poetic collection by Henry Vaughan, celebrating his native River Usk, was published in 1651 without his supervision?",
+   "options": [
+    "Thalia Rediviva",
+    "Olor Iscanus",
+    "Poems with the Tenth Satire",
+    "Silex Scintillans"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Olor Iscanus meaning The Swan of Usk was published in London in 1651 by Vaughan friend Thomas Powell."
+  },
+  {
+   "id": "cw-h-36",
+   "question": "In the authorial preface to his 1656 'Poems', what dramatic resolution did Abraham Cowley announce regarding his public life?",
+   "options": [
+    "That he had converted to the Presbyterian covenant",
+    "That he had abandoned public strife to seek quiet retirement",
+    "That he intended to write the definitive history of the regicide",
+    "That he would wage relentless poetic war against Cromwell"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Cowley declared his desire to retire peacefully and bury all past civil hostilities."
+  },
+  {
+   "id": "cw-h-37",
+   "question": "What defining formal structure characterized the irregular odes pioneered by Abraham Cowley in his 1656 collection?",
+   "options": [
+    "Rigid heroic couplets with identical caesura placement",
+    "Quantitative dactylic hexameters following Latin rules",
+    "Strict triadic structure of strophe, antistrophe, and epode",
+    "Unfixed line lengths and irregular stanzaic rhyme patterns"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Cowley Pindarique Odes discarded classical triads in favor of flexible meters and rhyme schemes."
+  },
+  {
+   "id": "cw-h-38",
+   "question": "When King Charles II noted in 1660 that Waller's Restoration poem was inferior to his ode on Cromwell, how did Edmund Waller reply?",
+   "options": [
+    "The muse of sorrow sings louder than the muse of joy",
+    "A subject's verses must yield to a sovereign's majesty",
+    "Poets, Sir, succeed better in fiction than in truth",
+    "Kings command kingdoms, but imagination commands poets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Waller witty reply to Charles II has become one of the most famous rejoinders in literary history."
+  },
+  {
+   "id": "cw-h-39",
+   "question": "In the 1655 authorized text of 'Cooper's Hill', which celebrated apostrophe to the River Thames was added by Sir John Denham?",
+   "options": [
+    "Roll on, thou deep and dark blue Ocean, roll",
+    "Sweet Thames, run softly, till I end my song",
+    "Thy forest, Windsor! and thy green retreats",
+    "O could I flow like thee, and make thy stream / My great exemplar, as it is my theme"
+   ],
+   "correct_option_id": 3,
+   "explanation": "These four lines added to Cooper Hill in 1655 set a standard for neoclassical balanced verse."
+  },
+  {
+   "id": "cw-h-40",
+   "question": "Within Katherine Philips's Society of Friendship in Wales, what pastoral pseudonym was assigned to her closest friend Anne Owen?",
+   "options": [
+    "Celimena",
+    "Lucasia",
+    "Rosania",
+    "Pastora"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Katherine Philips addressed numerous poems of passionate friendship to Lucasia Mrs Anne Owen."
+  },
+  {
+   "id": "cw-h-41",
+   "question": "Despite Katherine Philips's ardent royalism, what prominent public role was held by her husband James Philips during the Commonwealth?",
+   "options": [
+    "A Cavalier general in the Royalist army",
+    "A Parliamentarian commissioner and Member of Parliament",
+    "An Anglican bishop ejected from his diocese",
+    "Latin Secretary succeeding John Milton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "James Philips was an active Parliamentarian and High Court commissioner in Wales."
+  },
+  {
+   "id": "cw-h-42",
+   "question": "Which natural philosophy treatise did Margaret Cavendish publish in 1655 to challenge both Cartesian dualism and Hobbesian materialism?",
+   "options": [
+    "The Blazing World",
+    "The Description of a New World",
+    "Philosophical and Physical Opinions",
+    "Grounds of Natural Philosophy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Margaret Cavendish published Philosophical and Physical Opinions in 1655 detailing her vitalist theory."
+  },
+  {
+   "id": "cw-h-43",
+   "question": "To which supreme ruler did Gerrard Winstanley dedicate his 1652 utopian agrarian treatise 'The Law of Freedom in a Platform'?",
+   "options": [
+    "John Lilburne",
+    "King Charles II",
+    "Oliver Cromwell",
+    "General Thomas Fairfax"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Winstanley addressed The Law of Freedom directly to His Excellency Oliver Cromwell urging agrarian reform."
+  },
+  {
+   "id": "cw-h-44",
+   "question": "In the 1649 manifesto 'The True Levellers Standard Advanced', Gerrard Winstanley proclaimed that the earth was originally made to be:",
+   "options": [
+    "A common treasury for all mankind",
+    "A feudal estate for noble landlords",
+    "A private inheritance for righteous saints",
+    "An untamed wilderness awaiting industry"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Winstanley declared that the earth was made a common treasury for all humans without landlords."
+  },
+  {
+   "id": "cw-h-45",
+   "question": "In October 1649, which outspoken Leveller leader was tried for high treason at the Guildhall in London and triumphantly acquitted?",
+   "options": [
+    "William Walwyn",
+    "Richard Overton",
+    "John Lilburne",
+    "Gerrard Winstanley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Lilburne known as Freeborn John conducted his own defense and won a total acquittal."
+  },
+  {
+   "id": "cw-h-46",
+   "question": "Which radical Ranter preacher authored the sensational 1649 pamphlet 'A Fiery Flying Roll', which Parliament ordered to be burned?",
+   "options": [
+    "Lodowicke Muggleton",
+    "George Fox",
+    "James Nayler",
+    "Abiezer Coppe"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Abiezer Coppe published A Fiery Flying Roll in 1649 warning the rich of divine apocalyptic wrath."
+  },
+  {
+   "id": "cw-h-47",
+   "question": "Which massive ecclesiastical work in eleven books did the church historian Thomas Fuller publish in London in 1655?",
+   "options": [
+    "The Worthies of England",
+    "The Church-History of Britain",
+    "The Holy State and the Profane State",
+    "Pisgah-Sight of Palestine"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Fuller published The Church-History of Britain from the birth of Jesus Christ until the year 1648 in 1655."
+  },
+  {
+   "id": "cw-h-48",
+   "question": "What was the title of the famous collection of Commonwealth drolls and farcical stage sketches published by Francis Kirkman in 1672?",
+   "options": [
+    "A Short View of the Immorality of the Stage",
+    "The Wits, or Sport upon Sport",
+    "The Stage-Player's Complaint",
+    "The Actor's Remonstrance"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Francis Kirkman published The Wits or Sport upon Sport in 1672 collecting drolls staged during the ban."
+  },
+  {
+   "id": "cw-h-49",
+   "question": "Which of the following statements regarding the Commonwealth Period (1649–1660) is NOT correct?",
+   "options": [
+    "Sir William Davenant staged 'The Siege of Rhodes' in 1656",
+    "John Milton served as Latin Secretary to the Council of State",
+    "Thomas Hobbes published 'Leviathan' in London in 1651",
+    "Public theatres operated freely throughout London with state subsidies"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Public theatres were strictly closed by parliamentary order during the entire Commonwealth era."
+  },
+  {
+   "id": "cw-h-50",
+   "question": "Which of the following literary milestones regarding the Interregnum is NOT correct?",
+   "options": [
+    "John Milton completed and published the twelve-book 'Paradise Lost' in 1652",
+    "Izaak Walton issued the first edition of 'The Compleat Angler' in 1653",
+    "Andrew Marvell wrote 'Upon Appleton House' while tutoring Mary Fairfax",
+    "Sir Thomas Browne published 'Hydriotaphia' and 'The Garden of Cyrus' in 1658"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton did not publish Paradise Lost in 1652; it appeared in ten books in 1667 and twelve books in 1674."
+  }
+ ]
+}
