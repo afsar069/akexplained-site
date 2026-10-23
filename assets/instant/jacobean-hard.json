@@ -1,0 +1,608 @@
+{
+ "bankId": "jacobean",
+ "period": "Jacobean Age",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "jb-h-01",
+   "question": "Which two fellow King's Men actors and sharers dedicated Shakespeare's 1623 First Folio to the Earls of Pembroke and Montgomery?",
+   "options": [
+    "Thomas Dekker and John Marston",
+    "Edward Alleyn and Philip Henslowe",
+    "Richard Burbage and William Kempe",
+    "John Heminges and Henry Condell"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Heminges and Condell gathered Shakespeare's prompt-books and manuscripts to publish the First Folio in 1623."
+  },
+  {
+   "id": "jb-h-02",
+   "question": "How many plays in Shakespeare's 1623 First Folio had never previously appeared in print in any quarto edition?",
+   "options": [
+    "Eighteen plays",
+    "Twenty-four plays",
+    "Sixteen plays",
+    "Twelve plays"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Eighteen plays including Macbeth, The Tempest, Julius Caesar, and Twelfth Night were preserved exclusively in the First Folio."
+  },
+  {
+   "id": "jb-h-03",
+   "question": "In 'The King James Bible' (1611), how many scholarly translators were appointed by the crown, organized into six separate translation companies?",
+   "options": [
+    "47 translators",
+    "70 translators",
+    "54 translators",
+    "36 translators"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Though roughly 54 were initially nominated, 47 active scholars worked in six committees across Westminster, Oxford, and Cambridge."
+  },
+  {
+   "id": "jb-h-04",
+   "question": "Which famous verse eulogy by Ben Jonson prefacing the 1623 First Folio contains the line 'He was not of an age, but for all time!'?",
+   "options": [
+    "On My First Son",
+    "To Penshurst",
+    "To the Memory of My Beloved the Author, Mr. William Shakespeare",
+    "An Ode to Himself"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jonson's generous commemorative poem hailed Shakespeare as the Sweet Swan of Avon, triumphing over Greek and Roman rivals."
+  },
+  {
+   "id": "jb-h-05",
+   "question": "In Francis Bacon's 'Novum Organum' (1620), which class of Idols arises from the illusions and ambiguities of human language and social discourse?",
+   "options": [
+    "Idols of the Tribe (Idola Tribus)",
+    "Idols of the Theatre (Idola Theatri)",
+    "Idols of the Cave (Idola Specus)",
+    "Idols of the Market-place (Idola Fori)"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Idola Fori arise from words that obstruct understanding, described by Bacon as the most troublesome of all intellectual errors."
+  },
+  {
+   "id": "jb-h-06",
+   "question": "In Francis Bacon's 'Novum Organum', which class of Idols stems from human nature itself and the inherent limitations of our sensory organs?",
+   "options": [
+    "Idols of the Market-place (Idola Fori)",
+    "Idols of the Theatre (Idola Theatri)",
+    "Idols of the Cave (Idola Specus)",
+    "Idols of the Tribe (Idola Tribus)"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Idola Tribus are errors rooted in human nature, distorting reality like an uneven mirror reflecting rays."
+  },
+  {
+   "id": "jb-h-07",
+   "question": "What is the name of the utopian Pacific island commonwealth described in Francis Bacon's posthumous 1627 philosophical fable?",
+   "options": [
+    "Bensalem",
+    "Utopia",
+    "New Atlantis",
+    "Oceana"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In New Atlantis, European travelers stumble upon Bensalem, a Christian island governed by scientific wisdom."
+  },
+  {
+   "id": "jb-h-08",
+   "question": "What is the title of John Donne's 1610 prose treatise arguing that English Roman Catholics could lawfully swear the Oath of Allegiance?",
+   "options": [
+    "Ignatius His Conclave",
+    "Biathanatos",
+    "Essays in Divinity",
+    "Pseudo-Martyr"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pseudo-Martyr pleased King James I by asserting that Catholics who died for refusing the civil oath were not true martyrs."
+  },
+  {
+   "id": "jb-h-09",
+   "question": "Which 1611 satirical prose work by John Donne stages a debate in Hell where Ignatius of Loyola contends with Copernicus, Paracelsus, and Machiavelli?",
+   "options": [
+    "Biathanatos",
+    "Ignatius His Conclave",
+    "The Courtier's Library",
+    "Pseudo-Martyr"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Ignatius His Conclave, Donne bitterly mocks Jesuit ambition, showing Lucifer terrified of Ignatius usurping his throne."
+  },
+  {
+   "id": "jb-h-10",
+   "question": "Which 1611 philosophical poem by John Donne laments the death of young Elizabeth Drury and contains the famous line 'New Philosophy calls all in doubt'?",
+   "options": [
+    "La Corona",
+    "A Funerall Elegie",
+    "An Anatomy of the World: The First Anniversary",
+    "The Second Anniversary"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The First Anniversary laments the decay of the universe, mourning the collapse of the Ptolemaic order before Copernican science."
+  },
+  {
+   "id": "jb-h-11",
+   "question": "In John Donne's 'A Valediction: Forbidding Mourning', what mathematical instrument provides the central metaphysical conceit for the lovers' souls?",
+   "options": [
+    "An astrological astrolabe",
+    "A sundial's iron gnomon",
+    "A navigator's telescope",
+    "A pair of stiff twin compasses"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Donne compares the lovers' souls to a compass, where the fixed foot leans and hearkens after the moving foot's circle."
+  },
+  {
+   "id": "jb-h-12",
+   "question": "In John Donne's 'The Flea', what three lives are wittily joined inside the insect's body before the mistress kills it?",
+   "options": [
+    "The speaker's life, the lady's life, and the flea's own life",
+    "The priest, the bishop, and the Pope",
+    "The lover, the husband, and the priest",
+    "The father, the mother, and the unborn child"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Donne argues that since their blood is mingled within the flea, they are more than married, making guilt or shame absurd."
+  },
+  {
+   "id": "jb-h-13",
+   "question": "Which early 17th-century poet and diplomat authored the famous definition: 'An ambassador is an honest man sent to lie abroad for the good of his country'?",
+   "options": [
+    "Sir Henry Wotton",
+    "Lord Herbert of Cherbury",
+    "Fulke Greville",
+    "Sir Thomas Overbury"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Henry Wotton penned the punning maxim in Augsburg in 1604, temporarily displeasing King James I."
+  },
+  {
+   "id": "jb-h-14",
+   "question": "Which elder brother of George Herbert published 'De Veritate' in 1624, earning recognition as the 'Father of English Deism'?",
+   "options": [
+    "William Herbert",
+    "Edward Herbert, Lord Herbert of Cherbury",
+    "Henry Herbert",
+    "Thomas Herbert"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Lord Herbert of Cherbury's De Veritate posited universal religious truths founded upon natural reason rather than revelation."
+  },
+  {
+   "id": "jb-h-15",
+   "question": "Which Jacobean court scandal of 1613–1616 involved the slow poisoning in the Tower of an author who opposed the Earl of Somerset's marriage?",
+   "options": [
+    "The Essex Revolt",
+    "The Murder of Sir Thomas Overbury",
+    "The Gunpowder Plot",
+    "The Main Plot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir Thomas Overbury was poisoned with sulfuric acid in the Tower for opposing Robert Carr's union with Frances Howard."
+  },
+  {
+   "id": "jb-h-16",
+   "question": "Which 1614 collection, expanded after the author's murder, popularized the 'Theophrastan character' sketch of English social types?",
+   "options": [
+    "Nicholas Breton's 'Fantasticks'",
+    "John Earle's 'Microcosmography'",
+    "Sir Thomas Overbury's 'Characters'",
+    "Joseph Hall's 'Characters of Virtues'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Overbury's Characters presented witty, satirical portraits of social types like the fair milkmaid and pedantic scholar."
+  },
+  {
+   "id": "jb-h-17",
+   "question": "Which 1605 court masque by Ben Jonson and Inigo Jones provoked court controversy by having Queen Anne and her ladies appear in blackface?",
+   "options": [
+    "The Masque of Beauty",
+    "The Masque of Blackness",
+    "The Masque of Queens",
+    "The Gypsies Metamorphosed"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Queen Anne commissioned Jonson to present African nymphs desiring transformation by the sun of Britannia."
+  },
+  {
+   "id": "jb-h-18",
+   "question": "Which structural theatrical innovation was invented by Ben Jonson for his 1609 court entertainment 'The Masque of Queens'?",
+   "options": [
+    "The Orchestra pit beneath the stage",
+    "The Epilogue spoken by a boy actor",
+    "The Antimasque (a chaotic, grotesque spectacle preceding the main harmonious masque)",
+    "The Play-within-a-play in blank verse"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jonson introduced the antimasque of ugly witches to contrast with the noble queens, establishing aesthetic duality."
+  },
+  {
+   "id": "jb-h-19",
+   "question": "Which 1605 stage comedy written by Chapman, Jonson, and Marston included anti-Scottish satire that caused Jonson's temporary imprisonment?",
+   "options": [
+    "Northward Ho",
+    "Eastward Ho",
+    "The Isle of Gulls",
+    "Westward Ho"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eastward Ho satirised King James I's newly created Scottish knights and colonial promotion in Virginia."
+  },
+  {
+   "id": "jb-h-20",
+   "question": "Which Scottish poet hosted Ben Jonson in 1618–1619, recording Jonson's candid, biting literary judgments in his private journals?",
+   "options": [
+    "William Drummond of Hawthornden",
+    "William Dunbar",
+    "David Lindsay",
+    "Robert Henryson"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Drummond's Conversations preserves Jonson's frank opinions, including his verdict that Donne deserved hanging for not keeping accent."
+  },
+  {
+   "id": "jb-h-21",
+   "question": "In Ben Jonson's 'The Alchemist', which lecherous and greedy knight dreams of bathing in milk and dining on barbel's roes and pheasants' tongues?",
+   "options": [
+    "Pertinax Surly",
+    "Kastril",
+    "Dapper",
+    "Sir Epicure Mammon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Epicure Mammon delivers magnificent, sensual speeches imagining the boundless luxury the Philosopher's Stone will bring."
+  },
+  {
+   "id": "jb-h-22",
+   "question": "In 'The Alchemist', what is the name of the puritan pastor from Amsterdam who seeks the Philosopher's Stone to fund his sect?",
+   "options": [
+    "Ananias",
+    "Tribulation Wholesome",
+    "Zeal-of-the-Land Busy",
+    "Dame Purecraft"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Tribulation Wholesome, an elder of Amsterdam, rationalises cheating and coining money for the good of the brethren."
+  },
+  {
+   "id": "jb-h-23",
+   "question": "Which Roman tragedy by Ben Jonson, staged by the King's Men in 1603, was censured before the Privy Council for suspected treasonable allusions?",
+   "options": [
+    "The Case is Altered",
+    "The Poetaster",
+    "Catiline His Conspiracy",
+    "Sejanus His Fall"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sejanus dramatised corrupt tyrannical favorites in Imperial Rome, causing Jonson to be summoned before the Council."
+  },
+  {
+   "id": "jb-h-24",
+   "question": "In John Webster's 'The White Devil' (1612), who is the defiant Italian noblewoman tried before Cardinal Monticelso in the trial scene?",
+   "options": [
+    "Zanche",
+    "Isabella",
+    "Cornelia",
+    "Vittoria Corombona"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Vittoria defends herself brilliantly in the arraignment scene, claiming her accusers' charity is like the moon, full of spots."
+  },
+  {
+   "id": "jb-h-25",
+   "question": "In 'The White Devil', which unprincipled brother of Vittoria serves as Brachiano's pander and dies mocking his murderers?",
+   "options": [
+    "Camillo",
+    "Marcello",
+    "Flamineo",
+    "Lodovico"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Flamineo is Webster's cynical malcontent tool-villain who murders his brother Marcello and dies unrepentant."
+  },
+  {
+   "id": "jb-h-26",
+   "question": "In Webster's 'The Duchess of Malfi', what is the name of the faithful household steward whom the Duchess secretly marries?",
+   "options": [
+    "Antonio Bologna",
+    "Delio",
+    "Castruchio",
+    "Malateste"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Antonio Bologna is the honest steward whose secret marriage to the Duchess produces three children before their doom."
+  },
+  {
+   "id": "jb-h-27",
+   "question": "In 'The Duchess of Malfi', what gruesome psychological torment is presented to the Duchess by Duke Ferdinand in the dark?",
+   "options": [
+    "A poisoned mirror reflecting her skull",
+    "A cage of poisonous scorpions and severed tongues",
+    "A procession of lepers demanding her royal gown",
+    "A dead man's severed hand wearing a wedding ring and wax figures of her slain family"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ferdinand gives her a dead hand to kiss and displays artificial wax figures of Antonio and her children dead."
+  },
+  {
+   "id": "jb-h-28",
+   "question": "What famous defiant line is spoken by the Duchess of Malfi immediately prior to her execution by Bosola's stranglers?",
+   "options": [
+    "Cover her face; mine eyes dazzle; she died young",
+    "We are merely the stars' tennis-balls",
+    "I am Duchess of Malfi still",
+    "My soul, like to a ship in a black storm"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Duchess confronts death with magnificent stoic dignity, uttering her immortal declaration of identity."
+  },
+  {
+   "id": "jb-h-29",
+   "question": "In Thomas Middleton's 'Women Beware Women' (c. 1621), which aristocratic pastime is used as an allegory to mask the Duke's seduction of Bianca?",
+   "options": [
+    "A masked hunting excursion in the forest",
+    "A fencing match with poisoned foils",
+    "A game of bowls on the royal lawns",
+    "A game of chess played between Livia and Leantio's mother"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Livia distracts the mother in a game of chess where moves on the board allegorise the Duke seducing Bianca upstairs."
+  },
+  {
+   "id": "jb-h-30",
+   "question": "In Middleton and Rowley's 'The Changeling', what physical deformity makes Beatrice-Joanna loathe De Flores before her crime binds them?",
+   "options": [
+    "A severe hunchback and withered arm",
+    "A wooden leg and glass eye",
+    "A cleft palate and hairless skull",
+    "His dog-bitten, scarred, and pimpled face"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Beatrice-Joanna repeatedly recoils from De Flores's facial blemishes, calling him a poison to her sight."
+  },
+  {
+   "id": "jb-h-31",
+   "question": "Which Jacobean tragicomedy by Beaumont and Fletcher centers on the page Bellario, who is revealed to be Euphrasia in disguise?",
+   "options": [
+    "A King and No King",
+    "Philaster, or Love Lies a-Bleeding",
+    "The Scornful Lady",
+    "The Maid's Tragedy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Philaster, Bellario serves the prince out of unexpressed love, revealing her female identity to resolve jealousy."
+  },
+  {
+   "id": "jb-h-32",
+   "question": "In Beaumont and Fletcher's 'The Maid's Tragedy' (c. 1610), which bride reveals on her wedding night that she is the King's mistress?",
+   "options": [
+    "Calyanthra",
+    "Aspatia",
+    "Evadne",
+    "Dula"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Evadne refuses to consummate her marriage with Amintor, revealing her secret arrangement with the King."
+  },
+  {
+   "id": "jb-h-33",
+   "question": "Which Jacobean playwright composed the tragic masterpiece 'The Broken Heart' (1633), set in classical Laconia/Sparta?",
+   "options": [
+    "Philip Massinger",
+    "Richard Brome",
+    "John Ford",
+    "James Shirley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Ford's The Broken Heart dramatises the stoic suffering and grief of Penthea and Calantha in Sparta."
+  },
+  {
+   "id": "jb-h-34",
+   "question": "In Cyril Tourneur's 'The Atheist's Tragedy' (1611), how is the villainous atheist D'Amville killed at the execution scaffold?",
+   "options": [
+    "He is pushed off the battlements by Charlemont",
+    "He accidentally strikes out his own brains with the executioner's axe",
+    "He is struck by a bolt of divine lightning",
+    "He drinks a poisoned flask of holy water"
+   ],
+   "correct_option_id": 1,
+   "explanation": "D'Amville raises the axe to execute Charlemont but stumbles and shatters his own skull, proving God's justice."
+  },
+  {
+   "id": "jb-h-35",
+   "question": "Which 1612 treatise by Thomas Heywood defended the dignity, moral utility, and classical pedigree of the theatrical profession?",
+   "options": [
+    "An Apology for Actors",
+    "Short View of the Immorality of the Stage",
+    "The School of Abuse",
+    "A Defence of Rhyme"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Heywood argued that drama educates the illiterate in history and inspires citizens to civic virtue."
+  },
+  {
+   "id": "jb-h-36",
+   "question": "Which Shakespearean play was being performed on June 29, 1613, when theatrical cannons ignited the thatched roof and burned the Globe to the ground?",
+   "options": [
+    "Cymbeline",
+    "Coriolanus",
+    "Henry VIII (All is True)",
+    "The Tempest"
+   ],
+   "correct_option_id": 2,
+   "explanation": "During Cardinal Wolsey's masque scene in Henry VIII, stage cannon wadding set the thatch alight, destroying the Globe."
+  },
+  {
+   "id": "jb-h-37",
+   "question": "In Shakespeare's 'Measure for Measure' (1604), which puritanical deputy ruler enforces the death penalty for fornication in Vienna?",
+   "options": [
+    "Claudio",
+    "Escalus",
+    "Angelo",
+    "Lucio"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Angelo condemns Claudio to death for impregnating Juliet, then attempts to extort Isabella's virginity for his pardon."
+  },
+  {
+   "id": "jb-h-38",
+   "question": "In 'Measure for Measure', what theatrical bed-trick is engineered by Duke Vincentio to save Isabella from Angelo's lust?",
+   "options": [
+    "Substituting Mariana of the Moated Grange in the dark bedchamber",
+    "Disguising Juliet as a Novice nun",
+    "Poisoning Angelo's nightcup of spiced wine",
+    "Replacing Isabella with Mistress Overdone"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mariana, Angelo's jilted betrothed, takes Isabella's place in the dark garden house to consummate their marriage contract."
+  },
+  {
+   "id": "jb-h-39",
+   "question": "Which Shakespearean Roman tragedy centers on the patrician Caius Martius, who joins with the Volscian Aufidius against his ungrateful city?",
+   "options": [
+    "Antony and Cleopatra",
+    "Coriolanus",
+    "Titus Andronicus",
+    "Julius Caesar"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Coriolanus despises the Roman plebeians, waging war against Rome until swayed by his formidable mother Volumnia."
+  },
+  {
+   "id": "jb-h-40",
+   "question": "In 'Coriolanus', who is the towering Roman matriarch whose eloquent pleading dissuades Coriolanus from burning Rome to ashes?",
+   "options": [
+    "Volumnia",
+    "Virgilia",
+    "Octavia",
+    "Valeria"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Volumnia kneels before her son, declaring he must tread upon his mother's womb to assault Rome."
+  },
+  {
+   "id": "jb-h-41",
+   "question": "Which Shakespearean romance, omitted from the 1623 First Folio, was included in the Third Folio of 1664 based on a 1609 quarto?",
+   "options": [
+    "The Two Noble Kinsmen",
+    "Sir Thomas More",
+    "Pericles, Prince of Tyre",
+    "Cymbeline"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pericles, largely co-authored with George Wilkins, was excluded from the First Folio but added to the 1664 Third Folio."
+  },
+  {
+   "id": "jb-h-42",
+   "question": "In Shakespeare's 'Cymbeline', which villainous Italian trickster hides in a chest to inspect the mole under Imogen's breast?",
+   "options": [
+    "Belarius",
+    "Iachimo",
+    "Posthumus",
+    "Cloten"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Iachimo emerges from a trunk in Imogen's chamber to note intimate bodily details to falsely claim her infidelity."
+  },
+  {
+   "id": "jb-h-43",
+   "question": "In 'The Winter's Tale', what famously bizarre stage direction occurs in Act III when Antigonus abandons the baby Perdita on the coast of Bohemia?",
+   "options": [
+    "Exit, pursued by a bear",
+    "He falls into a pit of vipers",
+    "Enter the ghost of Hermione",
+    "Thunder and lightning; the ship sinks"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Exit, pursued by a bear is Shakespeare's most famous and unexpected stage direction, bridging tragedy and romance."
+  },
+  {
+   "id": "jb-h-44",
+   "question": "What is the name of the roguish singing peddler, ballad-monger, and pickpocket who roams the sheep-shearing feast in 'The Winter's Tale'?",
+   "options": [
+    "Stephano",
+    "Autolycus",
+    "Feste",
+    "Touchstone"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Autolycus describes himself as a snapper-up of unconsidered trifles, selling songs and picking rural pockets."
+  },
+  {
+   "id": "jb-h-45",
+   "question": "To which two aristocratic brothers, described as the Incomparable Pair of Brethren, did Heminges and Condell dedicate the First Folio?",
+   "options": [
+    "Thomas Howard and Henry Howard",
+    "William Herbert (Earl of Pembroke) and Philip Herbert (Earl of Montgomery)",
+    "Henry Wriothesley and Thomas Wriothesley",
+    "Robert Devereux and Walter Devereux"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The First Folio was dedicated to the Pembroke brothers for their long patronage and affection for Shakespeare."
+  },
+  {
+   "id": "jb-h-46",
+   "question": "Which engraved portrait of William Shakespeare, praised by Ben Jonson, was included on the title page of the 1623 First Folio?",
+   "options": [
+    "The Chandos Portrait",
+    "The Hilliard Miniature",
+    "The Droeshout Portrait (engraved by Martin Droeshout)",
+    "The Cobbe Portrait"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Martin Droeshout's copperplate engraving is one of only two authentic contemporary likenesses of Shakespeare."
+  },
+  {
+   "id": "jb-h-47",
+   "question": "In George Chapman's 'The Conspiracy and Tragedy of Charles, Duke of Byron' (1608), what historic foreign court serves as the setting?",
+   "options": [
+    "The royal French court of King Henry IV",
+    "The Imperial court of Holy Roman Emperor Rudolf II",
+    "The papal court of Pope Clement VIII in Rome",
+    "The ducal palace of Florence under the Medici"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Chapman dramatised contemporary French politics, provoking diplomatic protests from the French ambassador."
+  },
+  {
+   "id": "jb-h-48",
+   "question": "Which 1618 poem by Ben Jonson, titled 'An Execration upon Vulcan', commemorates the catastrophic loss of his personal library by:",
+   "options": [
+    "A devastating fire that destroyed his books and unfinished manuscripts",
+    "Confiscation by puritan authorities in London",
+    "Theft by rival theater playwrights in Shoreditch",
+    "Shipwreck in the Irish Channel during a voyage to Scotland"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Jonson curses the Roman god of fire Vulcan for burning his translation of Horace and historical research."
+  },
+  {
+   "id": "jb-h-49",
+   "question": "Which Jacobean poet composed the Latin epigram collection 'Epigrammata' (1606–1612), achieving fame as the 'British Martial' across Europe?",
+   "options": [
+    "Richard Crashaw",
+    "Thomas Campion",
+    "George Herbert",
+    "John Owen"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Owen's sharp Latin epigrams were admired across continental Europe and translated into multiple vernaculars."
+  },
+  {
+   "id": "jb-h-50",
+   "question": "What is the name of the ancient British king whose reign forms the backdrop for Shakespeare's romance 'Cymbeline'?",
+   "options": [
+    "Cassivellaunus",
+    "Cymbeline (Cunobeline)",
+    "Vortigern",
+    "Caratacus"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Cymbeline was an actual historic British Celtic chieftain who ruled Britain during the reign of Augustus Caesar."
+  }
+ ]
+}

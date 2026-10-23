@@ -1,0 +1,608 @@
+{
+ "bankId": "jacobean",
+ "period": "Jacobean Age",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "jb-e-01",
+   "question": "Which monarch succeeded Queen Elizabeth I in 1603, inaugurating the Jacobean era of English literature?",
+   "options": [
+    "King Charles II",
+    "King Henry VII",
+    "King James I",
+    "King Charles I"
+   ],
+   "correct_option_id": 2,
+   "explanation": "King James VI of Scotland ascended the English throne as James I in March 1603, ruling until 1625."
+  },
+  {
+   "id": "jb-e-02",
+   "question": "Which historic translation of the Christian scriptures was commissioned by King James I and published in 1611?",
+   "options": [
+    "The Geneva Bible",
+    "The Authorized King James Bible",
+    "The Bishop's Bible",
+    "The Great Bible"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Completed in 1611 by 47 translators, the Authorized Version shaped English vernacular prose and style."
+  },
+  {
+   "id": "jb-e-03",
+   "question": "What royal title was granted to Shakespeare's acting company, formerly the Lord Chamberlain's Men, in May 1603?",
+   "options": [
+    "The Queen's Men",
+    "The Prince's Players",
+    "The King's Men",
+    "The Admiral's Men"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Upon his accession in 1603, King James I took Shakespeare's company under direct royal patronage."
+  },
+  {
+   "id": "jb-e-04",
+   "question": "Which dark Jacobean tragedy by William Shakespeare depicts an ambitious Scottish general urged by witches to murder King Duncan?",
+   "options": [
+    "Hamlet",
+    "Macbeth",
+    "Othello",
+    "King Lear"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Composed around 1606, Macbeth flatters King James I through the prophetic lineage of Banquo."
+  },
+  {
+   "id": "jb-e-05",
+   "question": "In Shakespeare's tragedy 'Othello' (1604), which villainous ensign deceives the Moor into believing Desdemona is unfaithful?",
+   "options": [
+    "Iago",
+    "Brabantio",
+    "Roderigo",
+    "Cassio"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Iago manipulates Othello's jealousy using Desdemona's lost strawberry-spotted handkerchief."
+  },
+  {
+   "id": "jb-e-06",
+   "question": "Which aged British monarch foolishly divides his kingdom among his three daughters based on their flattery in Shakespeare's 1605 tragedy?",
+   "options": [
+    "King John",
+    "Cymbeline",
+    "King Lear",
+    "Pericles"
+   ],
+   "correct_option_id": 2,
+   "explanation": "King Lear disinherits honest Cordelia and divides Britain between deceitful Goneril and Regan."
+  },
+  {
+   "id": "jb-e-07",
+   "question": "In Shakespeare's late romance 'The Tempest' (1611), who is the exiled Duke of Milan who practices magic on an enchanted island?",
+   "options": [
+    "Prospero",
+    "Alonso",
+    "Gonzalo",
+    "Ferdinand"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Prospero conjures the tempest to bring his usurping brother to his island, aided by the spirit Ariel."
+  },
+  {
+   "id": "jb-e-08",
+   "question": "What is the name of the deformed, native islander enslaved by Prospero in Shakespeare's 'The Tempest'?",
+   "options": [
+    "Trinculo",
+    "Caliban",
+    "Ariel",
+    "Stephano"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Caliban, son of the witch Sycorax, represents native earth and resistance against Prospero's rule."
+  },
+  {
+   "id": "jb-e-09",
+   "question": "Which Shakespearean late romance features King Leontes's irrational jealousy and Queen Hermione miraculously turning from statue to life?",
+   "options": [
+    "The Tempest",
+    "Pericles",
+    "Cymbeline",
+    "The Winter's Tale"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Winter's Tale concludes with the famous living statue scene where Hermione is restored to Leontes."
+  },
+  {
+   "id": "jb-e-10",
+   "question": "Which collection published in 1623 by John Heminges and Henry Condell preserved thirty-six of Shakespeare's plays in folio format?",
+   "options": [
+    "Tottel's Miscellany",
+    "The Gutenberg Bible",
+    "The First Folio",
+    "The Second Folio"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The First Folio of 1623 preserved eighteen previously unpublished plays, including Macbeth and The Tempest."
+  },
+  {
+   "id": "jb-e-11",
+   "question": "Which playwright authored the satirical beast comedy 'Volpone, or The Fox' and the city comedy 'The Alchemist'?",
+   "options": [
+    "Ben Jonson",
+    "Thomas Middleton",
+    "Thomas Dekker",
+    "John Webster"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ben Jonson was the leading Jacobean master of satirical city comedy, the comedy of humours, and court masques."
+  },
+  {
+   "id": "jb-e-12",
+   "question": "In Ben Jonson's 'Volpone' (1606), what is the animal identity of Mosca, Volpone's clever and fawning parasite?",
+   "options": [
+    "The Crow",
+    "The Vulture",
+    "The Raven",
+    "The Fly"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Mosca, Italian for fly, acts as the parasitic assistant helping the fox Volpone dupe greedy suitors."
+  },
+  {
+   "id": "jb-e-13",
+   "question": "In Ben Jonson's 'The Alchemist' (1610), what is the fraudulent scheme operated by the con artists Subtle, Face, and Dol Common?",
+   "options": [
+    "Promising to produce the Philosopher's Stone that turns base metal into gold",
+    "Promising secret passage to Virginia on merchant vessels",
+    "Selling forged royal pardons from the Vatican in Rome",
+    "Faking miraculous healings of blindness at London churches"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Subtle and Face dupe greedy London citizens by pretending to master the esoteric art of alchemy."
+  },
+  {
+   "id": "jb-e-14",
+   "question": "Which Jacobean dramatist authored the macabre revenge masterpieces 'The White Devil' and 'The Duchess of Malfi'?",
+   "options": [
+    "John Webster",
+    "Philip Massinger",
+    "Thomas Kyd",
+    "John Ford"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Webster was renowned for his dark, poetic tragedies exploring Italianate court corruption and violence."
+  },
+  {
+   "id": "jb-e-15",
+   "question": "In John Webster's 'The Duchess of Malfi', which noblewoman is cruelly persecuted and murdered by her brothers for secretly marrying her steward?",
+   "options": [
+    "Vittoria Corombona",
+    "The Duchess of Malfi",
+    "Bianca",
+    "Beatrice-Joanna"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Duchess defies her brothers Ferdinand and the Cardinal by marrying Antonio, facing torment with tragic dignity."
+  },
+  {
+   "id": "jb-e-16",
+   "question": "In 'The Duchess of Malfi', what psychological madness afflicts Duke Ferdinand after he views his sister's strangled corpse?",
+   "options": [
+    "Lycanthropy (believing himself a wolf)",
+    "Mute paralysis",
+    "Religious catatonia",
+    "Total amnesia and blindness"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ferdinand suffers from lycanthropy, digging up graves in churchyards and howling like a wolf in his madness."
+  },
+  {
+   "id": "jb-e-17",
+   "question": "Which Jacobean dramatist wrote the city comedy 'A Chaste Maid in Cheapside' and the revenge play 'Women Beware Women'?",
+   "options": [
+    "Thomas Heywood",
+    "John Marston",
+    "Thomas Middleton",
+    "Thomas Dekker"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Middleton was an exceptionally versatile Jacobean playwright of biting satire and psychological tragedy."
+  },
+  {
+   "id": "jb-e-18",
+   "question": "Which psychological tragedy by Thomas Middleton and William Rowley centers on Beatrice-Joanna hiring the ugly servant De Flores to commit murder?",
+   "options": [
+    "The Broken Heart",
+    "The Changeling",
+    "The Revenger's Tragedy",
+    "The White Devil"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In The Changeling, Beatrice-Joanna finds herself sexually trapped by De Flores after he murders Alonzo for her."
+  },
+  {
+   "id": "jb-e-19",
+   "question": "Which famous Jacobean theatrical partnership became celebrated for perfecting the popular genre of tragicomedy?",
+   "options": [
+    "Thomas Kyd and Christopher Marlowe",
+    "John Webster and Thomas Dekker",
+    "Francis Beaumont and John Fletcher",
+    "Ben Jonson and George Chapman"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Beaumont and Fletcher collaborated on courtly tragicomedies like Philaster and The Maid's Tragedy."
+  },
+  {
+   "id": "jb-e-20",
+   "question": "Which 1607 satirical play by Francis Beaumont burlesques knight-errantry and citizen tastes through Rafe, a grocer's apprentice?",
+   "options": [
+    "The Shoemaker's Holiday",
+    "Bartholomew Fair",
+    "The Knight of the Burning Pestle",
+    "Every Man in His Humour"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Knight of the Burning Pestle parodies chivalric romances as a grocer and his wife interrupt a stage performance."
+  },
+  {
+   "id": "jb-e-21",
+   "question": "Who served as Dean of St Paul's Cathedral and became the foremost Jacobean preacher and metaphysical poet?",
+   "options": [
+    "Robert Herrick",
+    "John Donne",
+    "Richard Crashaw",
+    "George Herbert"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Ordained in 1615 at the urging of James I, John Donne delivered electrifying sermons as Dean of St Paul's."
+  },
+  {
+   "id": "jb-e-22",
+   "question": "In which celebrated 1624 prose devotion did John Donne pen the famous line 'No man is an island, entire of itself'?",
+   "options": [
+    "Ignatius His Conclave",
+    "Biathanatos",
+    "Pseudo-Martyr",
+    "Devotions upon Emergent Occasions"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Written during a near-fatal illness, Donne's Devotions reflects on human interdependence and the funeral toll."
+  },
+  {
+   "id": "jb-e-23",
+   "question": "Which prominent Jacobean philosopher and statesman championed the inductive scientific method in his 1620 work 'Novum Organum'?",
+   "options": [
+    "Francis Bacon",
+    "Robert Burton",
+    "Sir Thomas Browne",
+    "Thomas Hobbes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Francis Bacon challenged scholastic deduction, arguing for observation and experimentation in the sciences."
+  },
+  {
+   "id": "jb-e-24",
+   "question": "Which massive 1621 medical, philosophical, and psychological treatise was published by Robert Burton under the pseudonym Democritus Junior?",
+   "options": [
+    "Leviathan",
+    "Religio Medici",
+    "Pseudodoxia Epidemica",
+    "The Anatomy of Melancholy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Burton's Anatomy of Melancholy explores the causes, symptoms, and cures of melancholy in immense learning."
+  },
+  {
+   "id": "jb-e-25",
+   "question": "Which Catholic conspiracy to blow up King James I and the English Parliament was discovered on November 5, 1605?",
+   "options": [
+    "The Main Plot",
+    "The Gunpowder Plot",
+    "The Rye House Plot",
+    "The Babington Plot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Guy Fawkes was arrested guarding gunpowder barrels beneath Parliament, inspiring references in Macbeth."
+  },
+  {
+   "id": "jb-e-26",
+   "question": "Which royal treatise on divine right and kingship was composed by King James I in 1598 for his eldest son, Prince Henry?",
+   "options": [
+    "Basilikon Doron",
+    "The True Law of Free Monarchies",
+    "A Counterblaste to Tobacco",
+    "Daemonologie"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Basilikon Doron, meaning Royal Gift, served as a moral and political handbook on monarchical rule."
+  },
+  {
+   "id": "jb-e-27",
+   "question": "Which 1604 polemical pamphlet by King James I vigorously denounced smoking as a custom loathsome to the eye and hateful to the nose?",
+   "options": [
+    "Daemonologie",
+    "The True Law of Free Monarchies",
+    "Basilikon Doron",
+    "A Counterblaste to Tobacco"
+   ],
+   "correct_option_id": 3,
+   "explanation": "James I published A Counterblaste to Tobacco anonymously, attacking the popular introduction of smoking."
+  },
+  {
+   "id": "jb-e-28",
+   "question": "Which Italian translation of 1603 by John Florio introduced an influential continental essayist to Shakespeare and Jacobean readers?",
+   "options": [
+    "The Essays of Michael Lord of Montaigne",
+    "The Courtier of Castiglione",
+    "The Prince of Machiavelli",
+    "The Decameron of Boccaccio"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Florio's vibrant translation of Montaigne popularized the essay form and influenced The Tempest."
+  },
+  {
+   "id": "jb-e-29",
+   "question": "Which poet and dramatist completed Christopher Marlowe's unfinished poem 'Hero and Leander' and published his complete translation of Homer in 1616?",
+   "options": [
+    "Michael Drayton",
+    "Thomas Dekker",
+    "George Chapman",
+    "Ben Jonson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "George Chapman translated Homer's Iliad and Odyssey into vigorous English verse, admired across centuries."
+  },
+  {
+   "id": "jb-e-30",
+   "question": "Which Jacobean dramatist authored the domestic tragedy 'A Woman Killed with Kindness' (1603) and claimed to have had a hand in over 220 plays?",
+   "options": [
+    "John Marston",
+    "Thomas Dekker",
+    "Philip Massinger",
+    "Thomas Heywood"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Thomas Heywood depicted everyday English domestic life, avoiding melodrama in A Woman Killed with Kindness."
+  },
+  {
+   "id": "jb-e-31",
+   "question": "In Thomas Heywood's 'A Woman Killed with Kindness', what unusual punishment does Master John Frankford inflict upon his adulterous wife Anne?",
+   "options": [
+    "He sentences her to hard labor in a London workhouse",
+    "He has her publicly executed for high treason",
+    "He challenges her lover Wendoll to a duel to the death",
+    "He banishes her to a comfortable country manor, forbidding her ever to see him or her children again"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Frankford chooses Christian mercy over revenge, though Anne's remorse and starvation cause her death."
+  },
+  {
+   "id": "jb-e-32",
+   "question": "Which English courtier, poet, and explorer was imprisoned in the Tower by James I and beheaded in 1618 following a failed expedition to Guiana?",
+   "options": [
+    "The Earl of Essex",
+    "Sir Walter Raleigh",
+    "Sir Philip Sidney",
+    "Sir Francis Drake"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Raleigh composed his monumental History of the World in the Tower before being executed in Old Palace Yard."
+  },
+  {
+   "id": "jb-e-33",
+   "question": "Which 1611 volume of original devotional poetry by Aemilia Lanyer was the first published collection in English authored by a woman?",
+   "options": [
+    "The Temple",
+    "Salve Deus Rex Judaeorum",
+    "Hesperides",
+    "The Countess of Pembroke's Arcadia"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Aemilia Lanyer's 1611 volume defended biblical women and contained The Description of Cooke-ham."
+  },
+  {
+   "id": "jb-e-34",
+   "question": "What is the title of the poem in Aemilia Lanyer's 1611 collection recognized as the first published 'country house poem' in English?",
+   "options": [
+    "The Description of Cooke-ham",
+    "Cooper's Hill",
+    "To Penshurst",
+    "Upon Appleton House"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lanyer's poem on the estate of the Countess of Cumberland preceded Ben Jonson's To Penshurst in print."
+  },
+  {
+   "id": "jb-e-35",
+   "question": "Which famous 1616 country house poem by Ben Jonson celebrates the estate, hospitality, and unforced harmony of the Sidney family estate?",
+   "options": [
+    "To Sir Robert Wroth",
+    "Inviting a Friend to Supper",
+    "The Description of Cooke-ham",
+    "To Penshurst"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ben Jonson's To Penshurst praises the ancient seat of the Sidneys in Kent as a model of ideal rural stewardship."
+  },
+  {
+   "id": "jb-e-36",
+   "question": "Which theatrical venue was purchased in 1608 by the King's Men to serve as their profitable winter indoor playhouse?",
+   "options": [
+    "The Blackfriars Theatre",
+    "The Cockpit Theatre",
+    "The Salisbury Court Theatre",
+    "The Red Bull Theatre"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The indoor Blackfriars used artificial lighting, charged higher prices, and hosted Shakespeare's late romances."
+  },
+  {
+   "id": "jb-e-37",
+   "question": "Which Jacobean comedy by Ben Jonson depicts the noise-hating gentleman Morose who marries a silent woman who turns out to be a boy?",
+   "options": [
+    "The Alchemist",
+    "Bartholomew Fair",
+    "Epicoene, or The Silent Woman",
+    "Volpone"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Morose seeks silence but finds his bride loud and quarrelsome, until she is unmasked as Dauphine's confederate boy."
+  },
+  {
+   "id": "jb-e-38",
+   "question": "Which sprawling 1614 panoramic city comedy by Ben Jonson depicts a kaleidoscope of rogues, pickpockets, and puritans at a London fair?",
+   "options": [
+    "Eastward Ho",
+    "The Shoemaker's Holiday",
+    "Bartholomew Fair",
+    "The Alchemist"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Bartholomew Fair satirises puritan hypocrisy in Zeal-of-the-Land Busy and foolish legal vanity in Justice Overdo."
+  },
+  {
+   "id": "jb-e-39",
+   "question": "In Shakespeare's 'King Lear', who is the legitimate son of the Earl of Gloucester who disguises himself as the mad beggar Poor Tom?",
+   "options": [
+    "Albany",
+    "Cornwall",
+    "Edmund",
+    "Edgar"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Fleeing his bastard brother Edmund's plot, Edgar poses as Poor Tom on the stormy heath to guide his blinded father."
+  },
+  {
+   "id": "jb-e-40",
+   "question": "In 'King Lear', which cruel punishment is inflicted upon the elderly Earl of Gloucester by Cornwall for aiding King Lear?",
+   "options": [
+    "His eyes are gouged out",
+    "He is poisoned with wine",
+    "He is beheaded on a scaffold",
+    "He is thrown into the sea"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Cornwall plucks out Gloucester's eyes at Gloucester Castle in one of the most brutal scenes in English tragedy."
+  },
+  {
+   "id": "jb-e-41",
+   "question": "In Shakespeare's 'Macbeth', which Scottish nobleman slays Macbeth in battle after revealing he was of his mother's womb untimely ripp'd?",
+   "options": [
+    "Malcolm",
+    "Macduff",
+    "Ross",
+    "Banquo"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Macduff fulfills the witches' riddle because he was delivered by Caesarean section, ending Macbeth's bloody reign."
+  },
+  {
+   "id": "jb-e-42",
+   "question": "Which Shakespearean Roman tragedy portrays the doomed, passionate alliance between a Roman triumvir and the Queen of Egypt?",
+   "options": [
+    "Titus Andronicus",
+    "Coriolanus",
+    "Antony and Cleopatra",
+    "Julius Caesar"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Antony and Cleopatra dramatises the global clash between Rome's austere duty and Alexandria's sensual splendor."
+  },
+  {
+   "id": "jb-e-43",
+   "question": "In 'Antony and Cleopatra', which loyal Roman follower describes Cleopatra's royal barge burnished like gold upon the river of Cydnus?",
+   "options": [
+    "Agrippa",
+    "Octavius Caesar",
+    "Lepidus",
+    "Enobarbus"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Enobarbus delivers the famous description: The barge she sat in, like a burnish'd throne, / Burn'd on the water."
+  },
+  {
+   "id": "jb-e-44",
+   "question": "Which Jacobean revenge tragedy, long attributed to Cyril Tourneur but now widely assigned to Thomas Middleton, features Vindice?",
+   "options": [
+    "The White Devil",
+    "The Atheist's Tragedy",
+    "The Revenger's Tragedy",
+    "The Malcontent"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Revenger's Tragedy features Vindice carrying the poisoned skull of his murdered mistress to execute vengeance."
+  },
+  {
+   "id": "jb-e-45",
+   "question": "What is the name of the malcontent duke in John Marston's 1604 play who disguises himself as Malevole to expose court vice?",
+   "options": [
+    "Antonio's Revenge",
+    "The Malcontent",
+    "The Dutch Courtesan",
+    "Sophonisba"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Marston's The Malcontent uses the disguised ruler trope, where Duke Altofronto poses as the bitter cynic Malevole."
+  },
+  {
+   "id": "jb-e-46",
+   "question": "Which 1624 political satire by Thomas Middleton, performed by the King's Men, provoked a diplomatic crisis with the Spanish ambassador?",
+   "options": [
+    "The Changeling",
+    "Women Beware Women",
+    "A Chaste Maid in Cheapside",
+    "A Game at Chess"
+   ],
+   "correct_option_id": 3,
+   "explanation": "A Game at Chess dramatised Anglo-Spanish relations as a chess match, running nine consecutive days to packed houses."
+  },
+  {
+   "id": "jb-e-47",
+   "question": "Which English architect collaborated with Ben Jonson to introduce Italianate perspective scenery and movable stage machines to royal court masques?",
+   "options": [
+    "Inigo Jones",
+    "John Vanbrugh",
+    "Nicholas Hawksmoor",
+    "Christopher Wren"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Inigo Jones designed breathtaking proscenium arches, turning machines, and costumes for James I's court masques."
+  },
+  {
+   "id": "jb-e-48",
+   "question": "Which groundbreaking 1616 publication established the precedent that contemporary English vernacular plays could be considered serious literature?",
+   "options": [
+    "The First Folio of Shakespeare",
+    "Tottel's Miscellany",
+    "The King James Bible",
+    "The Workes of Benjamin Jonson"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ben Jonson boldly published his plays and poems in a grand folio volume entitled The Workes in 1616."
+  },
+  {
+   "id": "jb-e-49",
+   "question": "In John Donne's holy sonnet 'Death, be not proud', what is the final triumphant paradox delivered to personified Death?",
+   "options": [
+    "Death sleeps forever in peace",
+    "Death, thou shalt die",
+    "Death is the king of men",
+    "Death conquers all with time"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Donne declares that after one short sleep past, we wake eternally and Death shall be no more: Death, thou shalt die."
+  },
+  {
+   "id": "jb-e-50",
+   "question": "In which year did King James I pass away, bringing the Jacobean era to a close as his son Charles I ascended the throne?",
+   "options": [
+    "1642",
+    "1625",
+    "1616",
+    "1603"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King James I died on 27 March 1625, concluding the Jacobean period and beginning the Caroline era."
+  }
+ ]
+}
