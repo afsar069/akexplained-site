@@ -1056,46 +1056,48 @@ summary.ptbtn::-webkit-details-marker{display:none}
    (.pagehead-practice, .mcq-modes, .mcq-exams, .mcq-top). Only what is
    new here starts with .dq-.
 
-   Header picture: /assets/daily-head.webp, set below with --head-pic (the
+   Header picture: /assets/daily-header.webp, set below with --head-pic (the
    other practice pages keep the painting from .pagehead-practice).
    ========================================================= */
 
 /* ---------- head: the painted picture, then the two-tone title ----------
-   The picture (3 wide to 1 high) is as wide as the page's own content (1180px at
-   most) and sits in the middle of the head; it never goes beyond that. Its sides
-   fade into the paper, so on a wide screen the whole picture is visible. The
-   head is as tall as the picture, so the quote, the girl and the books stay
-   where they were painted. The picture ends in a soft cream curve that fades
-   into the page below. */
+   The picture (3 wide to 1 high) is exactly as wide as the page's content: its left
+   and right edges line up with the two strips below it (the .wrap, 1180px at most,
+   less its 22px each side). It sits in the middle of the head and never goes beyond
+   that. Its sides fade a little into the paper. The head is as tall as the picture,
+   so the quote, the girl and the books stay where they were painted. The picture
+   ends in a soft cream curve that fades into the page below.
+   (The file names carry no version in the CSS, so a new picture gets a new name;
+   browsers keep an old picture under the old name.) */
 .pagehead-daily{
-  --head-pic:url("/assets/daily-head.webp");
-  --head-w:min(100vw,var(--maxw));
+  --head-pic:url("/assets/daily-header.webp");
+  --head-w:calc(min(100vw,var(--maxw)) - 44px);
   min-height:max(300px,calc(var(--head-w) / 3));
 }
 @media (min-width:1024px){                        /* the menu stands beside the page */
-  .pagehead-daily{--head-w:min(calc(100vw - var(--navw)),var(--maxw))}
+  .pagehead-daily{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
 }
 .pagehead-daily::before{
-  inset:0 0 0 0;margin:0 auto;width:var(--head-w);
+  inset:0;margin:0 auto;width:min(calc(100% - 44px),calc(var(--maxw) - 44px));
   opacity:1;background-size:cover;background-position:center bottom;
-  /* sides: fade in at the left (a little of the painted books and castle stays behind
-     the words, softened so they read well) and out at the right */
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 6%,rgba(0,0,0,.3) 9%,#000 42%,#000 92%,transparent 100%);
+  /* sides: a short fade in at the left (a little of the painted books and castle stays
+     behind the words, softened so they read well) and out at the right */
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 4%,rgba(0,0,0,.3) 8%,#000 42%,#000 95%,transparent 100%);
   -webkit-mask-composite:source-in;
-  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 6%,rgba(0,0,0,.3) 9%,#000 42%,#000 92%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,rgba(0,0,0,.3) 4%,rgba(0,0,0,.3) 8%,#000 42%,#000 95%,transparent 100%);
   mask-composite:intersect;
 }
 /* Under about 1000px of head the words would run into the quote, so the quote
    fades out and the girl and her books stay on the right. */
 @media (max-width:1271px){
   .pagehead-daily::before{
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 92%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 92%,transparent 100%);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
   }
 }
 @media (max-width:760px){
   /* on a phone the picture is smaller and sits faintly behind the words */
-  .pagehead-daily{--head-pic:url("/assets/daily-head-sm.webp");min-height:0}
+  .pagehead-daily{--head-pic:url("/assets/daily-header-sm.webp");min-height:0}
   .pagehead-daily::before{opacity:.32;background-size:auto 130%;background-position:right bottom;-webkit-mask-image:none;mask-image:none}
 }
 .pagehead-daily .eyebrow{color:var(--body);letter-spacing:.24em}
