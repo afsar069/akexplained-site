@@ -1,0 +1,608 @@
+{
+ "bankId": "anglo-saxon",
+ "period": "Anglo-Saxon Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "as-e-01",
+   "question": "Who is the main hero of the epic poem 'Beowulf'?",
+   "options": [
+    "Beowulf",
+    "Hrothgar",
+    "Wiglaf",
+    "Grendel"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Beowulf is the titular protagonist of the epic, a Geatish warrior renowned for his superhuman strength and valor."
+  },
+  {
+   "id": "as-e-02",
+   "question": "In what language was 'Beowulf' originally written?",
+   "options": [
+    "Middle English",
+    "Old English",
+    "Latin",
+    "French"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Beowulf was composed in Old English (Anglo-Saxon), the earliest recorded stage of the English language spoken from the mid-5th to late 11th century."
+  },
+  {
+   "id": "as-e-03",
+   "question": "What is the name of the first monster Beowulf fights?",
+   "options": [
+    "The Dragon",
+    "Grendel",
+    "The Hydra",
+    "Medusa"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Grendel is the first demonic monster Beowulf faces, a descendant of Cain who terrorizes King Hrothgar's hall Heorot."
+  },
+  {
+   "id": "as-e-04",
+   "question": "Which king of the Danes does Beowulf help in the poem?",
+   "options": [
+    "Alfred",
+    "Hygelac",
+    "Hrothgar",
+    "Arthur"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hrothgar is the elderly king of the Danes whose kingdom and people are rescued from Grendel's attacks by Beowulf."
+  },
+  {
+   "id": "as-e-05",
+   "question": "What is the name of the great mead-hall built by Hrothgar?",
+   "options": [
+    "Camelot",
+    "Heorot",
+    "Avalon",
+    "Valhalla"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Heorot is King Hrothgar's grand mead-hall, serving as the cultural and political center of Danish warrior society in the poem."
+  },
+  {
+   "id": "as-e-06",
+   "question": "How does Beowulf defeat Grendel in their first encounter?",
+   "options": [
+    "With a magic sword",
+    "By tearing off his arm with bare hands",
+    "With a bow and arrow",
+    "By poisoning him"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Because weapons could not pierce Grendel's enchanted skin, Beowulf wrestled him barehanded and ripped off his arm and shoulder, dealing a mortal blow."
+  },
+  {
+   "id": "as-e-07",
+   "question": "What kind of creature is Beowulf's final enemy at the end of the poem?",
+   "options": [
+    "A Giant",
+    "A Sea Monster",
+    "A Dragon",
+    "A Wolf"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In the poem's final section, an aged King Beowulf fights a venomous, treasure-hoarding dragon that attacks Geatland."
+  },
+  {
+   "id": "as-e-08",
+   "question": "Which Anglo-Saxon king is famously known as 'the Great'?",
+   "options": [
+    "Edward",
+    "Alfred",
+    "Harold",
+    "Henry"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Alfred of Wessex (reigned 871–899) is the only English monarch called 'the Great', known for resisting Viking invasions and championing English learning and law."
+  },
+  {
+   "id": "as-e-09",
+   "question": "What was a 'scop' in Anglo-Saxon society?",
+   "options": [
+    "A warrior",
+    "A cook",
+    "A poet or singer",
+    "A king"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Anglo-Saxon culture, a scop was an oral poet and bard who sang heroic tales, genealogies, and historical legends in the royal court and mead-hall."
+  },
+  {
+   "id": "as-e-10",
+   "question": "Who is the author of the 'Ecclesiastical History of the English People'?",
+   "options": [
+    "King Alfred",
+    "The Venerable Bede",
+    "Caedmon",
+    "Cynewulf"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Venerable Bede, a Benedictine monk and scholar, completed the landmark historical work 'Ecclesiastical History of the English People' in 731 AD."
+  },
+  {
+   "id": "as-e-11",
+   "question": "What literary device repeats the same starting sound in words (e.g., 'Big Blue Bear')?",
+   "options": [
+    "Rhyme",
+    "Metaphor",
+    "Alliteration",
+    "Simile"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Alliteration is the repetition of initial consonant sounds across stressed syllables, serving as the foundational metric device of Old English verse."
+  },
+  {
+   "id": "as-e-12",
+   "question": "What is a 'kenning' in Old English poetry?",
+   "options": [
+    "A type of sword",
+    "A short poem",
+    "A metaphorical compound word like 'whale-road'",
+    "A musical instrument"
+   ],
+   "correct_option_id": 2,
+   "explanation": "A kenning is a metaphorical compound word or phrase used in Old English poetry to describe an object indirectly (e.g., 'whale-road' for the sea)."
+  },
+  {
+   "id": "as-e-13",
+   "question": "Who is considered the first known English poet?",
+   "options": [
+    "Shakespeare",
+    "Chaucer",
+    "Caedmon",
+    "Milton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Caedmon is the earliest documented English poet; according to Bede, he was an uneducated cowherd who received the divine gift of song to compose 'Caedmon's Hymn'."
+  },
+  {
+   "id": "as-e-14",
+   "question": "The Anglo-Saxon word 'Wyrd' refers to:",
+   "options": [
+    "Wealth",
+    "War",
+    "Fate",
+    "Wisdom"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Germanic Anglo-Saxon culture, 'Wyrd' represents fate or personal destiny, reflecting the stoic belief that human life is guided by predetermined outcomes."
+  },
+  {
+   "id": "as-e-15",
+   "question": "In the poem, Beowulf comes from the land of the:",
+   "options": [
+    "Danes",
+    "Geats",
+    "Saxons",
+    "Normans"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Beowulf belongs to the Geats, a North Germanic tribe dwelling in southern Scandinavia (modern-day Sweden)."
+  },
+  {
+   "id": "as-e-16",
+   "question": "What is the name of the sword given to Beowulf by Unferth?",
+   "options": [
+    "Excalibur",
+    "Hrunting",
+    "Naegling",
+    "Durendal"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hrunting is an ancient ancestral sword lent to Beowulf by the Danish courtier Unferth prior to Beowulf's underwater battle with Grendel's mother."
+  },
+  {
+   "id": "as-e-17",
+   "question": "Which group of people invaded Britain in 1066 and ended Anglo-Saxon rule?",
+   "options": [
+    "The Romans",
+    "The Vikings",
+    "The Normans",
+    "The Celts"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Norman Conquest of England in 1066, led by William the Conqueror, ended Anglo-Saxon rule and initiated the transition to the Middle English period."
+  },
+  {
+   "id": "as-e-18",
+   "question": "The Anglo-Saxon period is often associated with which historical age?",
+   "options": [
+    "The Renaissance",
+    "The Dark Ages",
+    "The Victorian Era",
+    "The Modern Age"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Anglo-Saxon period (c. 450–1066) is historically situated in the Early Middle Ages, traditionally and popularly termed the Dark Ages."
+  },
+  {
+   "id": "as-e-19",
+   "question": "Which poem describes the lonely feelings of a man traveling alone at sea?",
+   "options": [
+    "The Seafarer",
+    "The Wanderer",
+    "Beowulf",
+    "Judith"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'The Seafarer' is an Old English elegy from the Exeter Book capturing the bitter isolation, cold, and spiritual contemplation of a solitary voyager on the ocean."
+  },
+  {
+   "id": "as-e-20",
+   "question": "Which elegy depicts a speaker lamenting the loss of his lord and companions?",
+   "options": [
+    "The Ruin",
+    "The Wanderer",
+    "The Husband's Message",
+    "The Battle of Maldon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'The Wanderer' is an Exeter Book elegy depicting an exiled warrior who laments the death of his lord and comrades while meditating on the transient nature of worldly life."
+  },
+  {
+   "id": "as-e-21",
+   "question": "Where did the Anglo-Saxon tribes originally come from?",
+   "options": [
+    "Italy",
+    "Northern Europe (Germany/Denmark)",
+    "Spain",
+    "Greece"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Anglo-Saxon tribes (Angles, Saxons, and Jutes) originally migrated to Britain from northern Germany, Jutland (Denmark), and the Frisian coastline."
+  },
+  {
+   "id": "as-e-22",
+   "question": "Which book is a famous record of English history started during King Alfred's reign?",
+   "options": [
+    "The Domesday Book",
+    "The Anglo-Saxon Chronicle",
+    "The Canterbury Tales",
+    "The Bible"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Anglo-Saxon Chronicle is an invaluable historical record of English events initiated around 890 AD under the direction of King Alfred the Great."
+  },
+  {
+   "id": "as-e-23",
+   "question": "What is a 'caesura' in the context of Old English verse?",
+   "options": [
+    "A type of rhyme",
+    "A pause in the middle of a line",
+    "A long stanza",
+    "A concluding sentence"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Old English alliterative verse, a caesura is a distinct rhythmic pause that splits each poetic line into two half-lines (hemistichs)."
+  },
+  {
+   "id": "as-e-24",
+   "question": "How many main battles does Beowulf fight in the epic poem?",
+   "options": [
+    "1",
+    "2",
+    "3",
+    "5"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The epic poem Beowulf centers around three main battles: against Grendel, against Grendel's mother, and against the dragon."
+  },
+  {
+   "id": "as-e-25",
+   "question": "Who was the only loyal follower to stay and help Beowulf fight the dragon?",
+   "options": [
+    "Unferth",
+    "Hrothgar",
+    "Wiglaf",
+    "Ecgtheow"
+   ],
+   "correct_option_id": 2,
+   "explanation": "When all of Beowulf's other warriors flee in fear during the dragon fight, Wiglaf remains steadfastly at his king's side in accordance with the heroic warrior code."
+  },
+  {
+   "id": "as-e-26",
+   "question": "What is a primary theme of the epic Beowulf?",
+   "options": [
+    "Romantic love",
+    "Heroic code and loyalty",
+    "Scientific discovery",
+    "Comedy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Beowulf strongly reflects the Germanic heroic code, emphasizing mutual loyalty between lord and warrior, courage in battle, honor, and generosity."
+  },
+  {
+   "id": "as-e-27",
+   "question": "What was the most common drink served in an Anglo-Saxon mead-hall?",
+   "options": [
+    "Wine",
+    "Mead (honey-based drink)",
+    "Water",
+    "Tea"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mead, an alcoholic drink made from fermented honey and water, was the primary ceremonial and social drink served in Anglo-Saxon communal halls."
+  },
+  {
+   "id": "as-e-28",
+   "question": "Which poem is based on a dream about the cross of Christ's crucifixion?",
+   "options": [
+    "The Dream of the Rood",
+    "Genesis",
+    "Exodus",
+    "Christ"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'The Dream of the Rood', preserved in the Vercelli Book, is an Old English religious dream vision in which the Holy Cross itself recounts Christ's crucifixion."
+  },
+  {
+   "id": "as-e-29",
+   "question": "In Beowulf, why does Grendel attack the mead-hall Heorot?",
+   "options": [
+    "He wants gold",
+    "He is jealous of the music and joy in the hall",
+    "He wants to be king",
+    "He was lost"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Grendel, an alienated descendant of Cain banished from human joy, is tormented and angered by the sound of music, singing, and harps celebrating God's creation in Heorot."
+  },
+  {
+   "id": "as-e-30",
+   "question": "Which famous battle in 1066 marked the end of the Anglo-Saxon era?",
+   "options": [
+    "Battle of Waterloo",
+    "Battle of Hastings",
+    "Battle of Agincourt",
+    "Battle of Maldon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Battle of Hastings on October 14, 1066, where William the Conqueror defeated the last Anglo-Saxon king, Harold Godwinson, marked the conclusion of Anglo-Saxon rule."
+  },
+  {
+   "id": "as-e-31",
+   "question": "'Whale-road' is a famous kenning for what?",
+   "options": [
+    "A ship",
+    "The sea",
+    "A whale",
+    "A path"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Whale-road' (hronrāde) is one of the most famous Old English kennings, poetically designating the ocean or sea."
+  },
+  {
+   "id": "as-e-32",
+   "question": "Most Anglo-Saxon literature was preserved and written down by:",
+   "options": [
+    "Printers",
+    "Monks in monasteries",
+    "Soldiers",
+    "Merchants"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Most surviving Anglo-Saxon literature was transcribed and preserved by Christian monks working in monastic scriptoria following England's conversion to Christianity."
+  },
+  {
+   "id": "as-e-33",
+   "question": "What kind of being is Grendel's Mother?",
+   "options": [
+    "A queen",
+    "A monstrous sea-hag",
+    "A dragon",
+    "A goddess"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Grendel's mother is portrayed as a monstrous, predatory sea-hag or water-demon who dwells in a dark underwater cave beneath a haunted mere."
+  },
+  {
+   "id": "as-e-34",
+   "question": "What is the fate of Beowulf at the end of the poem?",
+   "options": [
+    "He lives happily",
+    "He becomes a god",
+    "He dies from a wound after killing the dragon",
+    "He disappears"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Beowulf dies at the climax of the poem after being fatally bitten and poisoned in the neck by the dragon, though he and Wiglaf succeed in slaying the beast."
+  },
+  {
+   "id": "as-e-35",
+   "question": "Which of these is one of the four major manuscripts of Old English poetry?",
+   "options": [
+    "The Exeter Book",
+    "The First Folio",
+    "The Gutenberg Bible",
+    "The Lyrical Ballads"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Exeter Book is one of the four surviving major manuscripts containing Old English poetry, alongside the Nowell Codex, Vercelli Book, and Junius Manuscript."
+  },
+  {
+   "id": "as-e-36",
+   "question": "What does the 'Comitatus' relationship represent?",
+   "options": [
+    "Marriage",
+    "Loyalty between a lord and his warriors",
+    "Trade agreement",
+    "Family inheritance"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Comitatus was the foundational Germanic code of allegiance binding a lord to protect and reward his warriors, who in turn pledged unfailing military loyalty."
+  },
+  {
+   "id": "as-e-37",
+   "question": "Which poem describes the ruins of a great city built by the Romans?",
+   "options": [
+    "The Ruin",
+    "The Wife's Lament",
+    "Deor",
+    "Waldere"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'The Ruin' is an Old English elegiac poem from the Exeter Book that reflects on the crumbling stone walls and bathhouses of a fallen Roman settlement (likely Bath)."
+  },
+  {
+   "id": "as-e-38",
+   "question": "Who was the king of the Geats whom Beowulf served as a young man?",
+   "options": [
+    "Hrothgar",
+    "Hygelac",
+    "Ecgtheow",
+    "Healfdene"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hygelac is the historical king of the Geats, Beowulf's beloved maternal uncle and sovereign lord throughout Beowulf's youthful adventures."
+  },
+  {
+   "id": "as-e-39",
+   "question": "In Beowulf, what trophy does the hero take after the first fight?",
+   "options": [
+    "Grendel's arm",
+    "A golden ring",
+    "A magic sword",
+    "A shield"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Following his barehanded struggle with Grendel in Heorot, Beowulf mounts Grendel's torn-off arm, claw, and shoulder high under the hall's roof as a victory trophy."
+  },
+  {
+   "id": "as-e-40",
+   "question": "Which character initially insults Beowulf but later lends him a sword?",
+   "options": [
+    "Hrothgar",
+    "Unferth",
+    "Wiglaf",
+    "Breca"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Unferth, King Hrothgar's spokesman, initially taunts Beowulf about his swimming match with Breca, but later acknowledges Beowulf's bravery by offering him his sword Hrunting."
+  },
+  {
+   "id": "as-e-41",
+   "question": "What was the name of Beowulf's father?",
+   "options": [
+    "Ecgtheow",
+    "Hrothgar",
+    "Hygelac",
+    "Wiglaf"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ecgtheow was Beowulf's father, a renowned warrior of the Waegmunding clan whose feud with the Wylfings was peacefully resolved by King Hrothgar years before."
+  },
+  {
+   "id": "as-e-42",
+   "question": "Anglo-Saxon poetry is primarily known for being written in:",
+   "options": [
+    "Iambic pentameter",
+    "Free verse",
+    "Alliterative verse",
+    "Haiku"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Old English poetry is characterized by accentual alliterative verse, in which lines are structured around alliterating stressed beats rather than end-rhyme."
+  },
+  {
+   "id": "as-e-43",
+   "question": "What is the subject of 'The Battle of Maldon'?",
+   "options": [
+    "A royal wedding",
+    "A grand feast",
+    "A heroic defeat against Vikings",
+    "A saint's life"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'The Battle of Maldon' is an Old English heroic poem commemorating the 991 AD battle where Byrhtnoth and his Anglo-Saxon warriors bravely fell fighting invading Vikings."
+  },
+  {
+   "id": "as-e-44",
+   "question": "The name 'Beowulf' is often interpreted as a kenning for which animal?",
+   "options": [
+    "A Lion",
+    "A Bear",
+    "An Eagle",
+    "A Wolf"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Linguistically, 'Beowulf' is widely translated as 'bee-wolf' (an animal that attacks bees for their honey), which is an Old English kenning for a bear."
+  },
+  {
+   "id": "as-e-45",
+   "question": "For how many years does Beowulf rule his own people as king?",
+   "options": [
+    "10 years",
+    "20 years",
+    "50 years",
+    "100 years"
+   ],
+   "correct_option_id": 2,
+   "explanation": "After returning to Geatland and succeeding to the throne, Beowulf reigns wisely and protectively over the Geatish people for fifty peaceful years."
+  },
+  {
+   "id": "as-e-46",
+   "question": "'Ring-giver' is a common kenning used to describe a:",
+   "options": [
+    "Goldsmith",
+    "King or Lord",
+    "Warrior",
+    "Priest"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Ring-giver' (bēaggifa) is an Old English kenning for a king or chieftain, highlighting his duty to generously distribute golden arm-rings and treasure to loyal warriors."
+  },
+  {
+   "id": "as-e-47",
+   "question": "Which religion significantly influenced Anglo-Saxon literature?",
+   "options": [
+    "Islam",
+    "Christianity",
+    "Hinduism",
+    "Buddhism"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Christianity profoundly shaped Anglo-Saxon literature, blending biblical morality and Latin monastic literacy with traditional Germanic heroic folklore."
+  },
+  {
+   "id": "as-e-48",
+   "question": "Old English is considered to be part of which language family?",
+   "options": [
+    "Romance",
+    "Germanic",
+    "Slavic",
+    "Celtic"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Old English is a West Germanic language brought to Britain by Germanic settlers in the 5th century, belonging directly to the Germanic language branch."
+  },
+  {
+   "id": "as-e-49",
+   "question": "Which poem features the recurring line, 'That passed over, this may too'?",
+   "options": [
+    "The Wanderer",
+    "The Seafarer",
+    "Deor",
+    "The Ruin"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The elegiac poem 'Deor' features the recurring comforting refrain 'Þæs ofereode, þisses swa mæg' ('That passed away, so may this'), recited by a sorrowful displaced bard."
+  },
+  {
+   "id": "as-e-50",
+   "question": "Who was the leader of the Norman Conquest in 1066?",
+   "options": [
+    "Julius Caesar",
+    "William the Conqueror",
+    "Napoleon",
+    "King Alfred"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William the Conqueror (Duke of Normandy) commanded the 1066 Norman invasion of England, winning the Battle of Hastings and becoming the King of England."
+  }
+ ]
+}
