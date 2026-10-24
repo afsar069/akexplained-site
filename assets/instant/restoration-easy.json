@@ -1,0 +1,608 @@
+{
+ "bankId": "restoration",
+ "period": "Restoration Age",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rs-e-01",
+   "question": "In 1660, the Restoration of the English monarchy occurred with the return and accession of which Stuart king?",
+   "options": [
+    "King Charles I of England",
+    "King Charles II",
+    "King James I of England",
+    "King William III of Orange"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Charles II returned from European exile in 1660 to restore the Stuart monarchy after the Puritan Commonwealth."
+  },
+  {
+   "id": "rs-e-02",
+   "question": "English public theatres reopened in 1660 after having remained officially closed since 1642 by order of the:",
+   "options": [
+    "Royal Society of London",
+    "Royalist Cavalier Court",
+    "Anglican Convocation",
+    "Puritan Parliament"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Puritan Parliament closed London public theatres in 1642, and they reopened upon Charles II's return in 1660."
+  },
+  {
+   "id": "rs-e-03",
+   "question": "King Charles II spent most of his exile in which country, bringing its neoclassical literary tastes back to England in 1660?",
+   "options": [
+    "Spain",
+    "Italy",
+    "Germany",
+    "France"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Charles II spent years of exile in France and brought French court fashions and neoclassical dramatic models to England."
+  },
+  {
+   "id": "rs-e-04",
+   "question": "Which 1662 statute re-established the Church of England and required clergymen to accept the 'Book of Common Prayer'?",
+   "options": [
+    "The Licensing Act of the Press",
+    "The Bill of Rights Statute",
+    "The Petition of Right Statute",
+    "The Act of Uniformity"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Act of Uniformity in 1662 mandated strict adherence to the Anglican Book of Common Prayer."
+  },
+  {
+   "id": "rs-e-05",
+   "question": "Which 1673 parliamentary statute excluded Nonconformists and Roman Catholics from holding public or civil offices in England?",
+   "options": [
+    "The Test Act",
+    "The Conventicle Act",
+    "The Triennial Act",
+    "The Toleration Act"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Test Act of 1673 barred Protestant Nonconformists and Roman Catholics from holding public office."
+  },
+  {
+   "id": "rs-e-06",
+   "question": "Upon the death of King Charles II in 1685, who succeeded him as monarch of England, Scotland, and Ireland?",
+   "options": [
+    "King William III",
+    "King James II",
+    "Duke of Monmouth",
+    "King George I"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Charles II died in 1685 and was succeeded by his Roman Catholic brother, who reigned as King James II until 1688."
+  },
+  {
+   "id": "rs-e-07",
+   "question": "By what historical name is the bloodless 1688 revolution that deposed King James II commonly known?",
+   "options": [
+    "The Monmouth Rebellion",
+    "The Jacobite Insurrection",
+    "The Glorious Revolution",
+    "The Puritan Commonwealth"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Glorious Revolution of 1688 peacefully removed the Catholic King James II from the English throne."
+  },
+  {
+   "id": "rs-e-08",
+   "question": "Following the Glorious Revolution, which joint Protestant monarchs ascended the English throne in 1689?",
+   "options": [
+    "Queen Anne and Prince George",
+    "William III and Mary II",
+    "Charles II and Catherine",
+    "James II and Mary of Modena"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 1689 the throne was jointly offered to James II's Protestant daughter Mary II and her husband William III of Orange."
+  },
+  {
+   "id": "rs-e-09",
+   "question": "Which major scientific institution was founded in London in 1660 and granted its royal charter by Charles II in 1662?",
+   "options": [
+    "The Kit-Cat Society",
+    "The Royal Society",
+    "The Royal Academy",
+    "The Scriblerus Club"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Royal Society of London was founded in 1660 and received its royal charter in 1662, promoting empirical science."
+  },
+  {
+   "id": "rs-e-10",
+   "question": "Which scientist published the landmark chemical treatise 'The Sceptical Chymist' in 1661?",
+   "options": [
+    "Robert Boyle",
+    "Robert Hooke",
+    "Edmond Halley",
+    "Isaac Newton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Boyle published his foundational scientific work 'The Sceptical Chymist' in 1661 during the early Restoration."
+  },
+  {
+   "id": "rs-e-11",
+   "question": "Who published the monumental scientific treatise 'Philosophiae Naturalis Principia Mathematica' in 1687?",
+   "options": [
+    "Dr. Robert Boyle",
+    "Joseph Glanvill",
+    "Dr. Robert Hooke",
+    "Sir Isaac Newton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Isaac Newton published 'Philosophiae Naturalis Principia Mathematica' in 1687, a milestone of Restoration science."
+  },
+  {
+   "id": "rs-e-12",
+   "question": "Which major Restoration writer was famously honoured by Dr. Samuel Johnson as 'the father of English criticism'?",
+   "options": [
+    "William Congreve",
+    "John Dryden",
+    "Jeremy Collier",
+    "Thomas Rymer"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Dr. Samuel Johnson named John Dryden the father of English criticism for his pioneering critical essays and prefaces."
+  },
+  {
+   "id": "rs-e-13",
+   "question": "In which year did John Dryden publish his major critical dialogue 'Of Dramatic Poesie, an Essay'?",
+   "options": [
+    "1668",
+    "1693",
+    "1660",
+    "1678"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Dryden published 'Of Dramatic Poesie, an Essay' in 1668, the same year he became Poet Laureate."
+  },
+  {
+   "id": "rs-e-14",
+   "question": "In John Dryden's 'Of Dramatic Poesie' (1668), which of the four speakers represents Dryden's own critical viewpoint?",
+   "options": [
+    "Crites",
+    "Eugenius",
+    "Lisideius",
+    "Neander"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Neander serves as John Dryden's persona in 'Of Dramatic Poesie', defending English drama and Shakespeare's genius."
+  },
+  {
+   "id": "rs-e-15",
+   "question": "Who authored the 1698 polemic 'A Short View of the Immorality and Profaneness of the English Stage'?",
+   "options": [
+    "Thomas Sprat",
+    "Thomas Rymer",
+    "Samuel Butler",
+    "Jeremy Collier"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Clergyman Jeremy Collier published his fierce moral attack against Restoration comedy in 1698."
+  },
+  {
+   "id": "rs-e-16",
+   "question": "In 1660, King Charles II granted exclusive royal theatrical patents to which two theatre managers?",
+   "options": [
+    "William Wycherley and George Etherege",
+    "John Dryden and George Villiers",
+    "Thomas Killigrew and Sir William Davenant",
+    "William Congreve and John Vanbrugh"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Charles II granted royal patents to Thomas Killigrew for the King's Company and Sir William Davenant for the Duke's Company."
+  },
+  {
+   "id": "rs-e-17",
+   "question": "What major theatrical change took place on the English public stage when theatres reopened in 1660?",
+   "options": [
+    "Outdoor amphitheatres replaced all indoor covered London playhouses",
+    "Plays were performed exclusively in unrhymed classical Latin verse",
+    "Professional actresses performed female roles for the first time",
+    "Biblical mystery cycles became the mandatory royal stage repertoire"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Restoration theatres introduced professional women actresses such as Nell Gwyn to play female parts instead of boy actors."
+  },
+  {
+   "id": "rs-e-18",
+   "question": "Which Restoration playwright coined the term 'heroic drama' for serious plays written in rhymed heroic couplets?",
+   "options": [
+    "John Dryden",
+    "Colley Cibber",
+    "Nathaniel Lee",
+    "Thomas Otway"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Dryden coined the term heroic drama in the preface to 'The Conquest of Granada' for rhymed plays of love and honour."
+  },
+  {
+   "id": "rs-e-19",
+   "question": "John Dryden's two-part play 'The Conquest of Granada' (1670–1671) is the chief exemplar of which dramatic genre?",
+   "options": [
+    "The Comedy of Manners",
+    "The Ballad Opera",
+    "The Sentimental Comedy",
+    "The Heroic Play"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's two-part 'The Conquest of Granada' is the definitive Restoration heroic play written in rhymed couplets."
+  },
+  {
+   "id": "rs-e-20",
+   "question": "Which 1671 satirical burlesque by George Villiers, 2nd Duke of Buckingham, ridiculed Restoration heroic drama?",
+   "options": [
+    "'The Rehearsal'",
+    "'The Double Dealer'",
+    "'The Plain Dealer'",
+    "'The Old Bachelor'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Buckingham's 1671 burlesque 'The Rehearsal' parodied the bombast of heroic drama and mocked John Dryden."
+  },
+  {
+   "id": "rs-e-21",
+   "question": "John Dryden's blank-verse tragedy 'All for Love' (1677) is a neoclassical adaptation of which Shakespearean tragedy?",
+   "options": [
+    "'Romeo and Juliet'",
+    "'Julius Caesar'",
+    "'Coriolanus'",
+    "'Antony and Cleopatra'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's 'All for Love' retells Shakespeare's 'Antony and Cleopatra' in blank verse while observing the classical unities."
+  },
+  {
+   "id": "rs-e-22",
+   "question": "Which Restoration dramatist mastered pathetic blank-verse tragedy in 'The Orphan' (1680) and 'Venice Preserved' (1682)?",
+   "options": [
+    "Samuel Butler",
+    "Colley Cibber",
+    "Thomas Otway",
+    "Sir George Etherege"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Otway was the foremost master of pathetic tragedy with 'The Orphan' in 1680 and 'Venice Preserved' in 1682."
+  },
+  {
+   "id": "rs-e-23",
+   "question": "Which Restoration tragic playwright authored the blank-verse tragedy 'Lucius Junius Brutus' in 1680?",
+   "options": [
+    "John Vanbrugh",
+    "Nathaniel Lee",
+    "Roger Boyle",
+    "Thomas Rymer"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nathaniel Lee wrote the blank-verse Roman tragedy 'Lucius Junius Brutus' in 1680."
+  },
+  {
+   "id": "rs-e-24",
+   "question": "Which comic genre dominated the Restoration stage by satirizing aristocratic London intrigues, marriage contracts, and wit?",
+   "options": [
+    "Comedy of Manners",
+    "Domestic Tragedy",
+    "Pastoral Tragicomedy",
+    "Miracle Interlude"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Comedy of Manners was the supreme comic form of the Restoration, portraying fashionable London society with sharp wit."
+  },
+  {
+   "id": "rs-e-25",
+   "question": "Which dramatist pioneered the Restoration comedy of manners with 'The Comical Revenge' (1664) and 'She Would If She Could' (1668)?",
+   "options": [
+    "William Congreve",
+    "Sir George Etherege",
+    "George Farquhar",
+    "William Wycherley"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir George Etherege established the early Restoration comedy of manners with his plays of 1664, 1668, and 1676."
+  },
+  {
+   "id": "rs-e-26",
+   "question": "In which 1676 comedy by Sir George Etherege does the vain, French-imitating fop Sir Fopling Flutter appear?",
+   "options": [
+    "'The Country Wife'",
+    "'The Way of the World'",
+    "'The Man of Mode'",
+    "'The Provoked Wife'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Etherege's 'The Man of Mode, or Sir Fopling Flutter' introduced the quintessential Restoration fop in 1676."
+  },
+  {
+   "id": "rs-e-27",
+   "question": "Which Restoration dramatist wrote the cynical social satires 'The Country Wife' (1675) and 'The Plain Dealer' (1676)?",
+   "options": [
+    "William Wycherley",
+    "Thomas Shadwell",
+    "William Congreve",
+    "Sir George Etherege"
+   ],
+   "correct_option_id": 0,
+   "explanation": "William Wycherley authored the biting Restoration comedies 'The Country Wife' in 1675 and 'The Plain Dealer' in 1676."
+  },
+  {
+   "id": "rs-e-28",
+   "question": "Who authored the 1700 comic masterpiece 'The Way of the World', widely regarded as the pinnacle of the Comedy of Manners?",
+   "options": [
+    "William Congreve",
+    "William Wycherley",
+    "Colley Cibber",
+    "Sir John Vanbrugh"
+   ],
+   "correct_option_id": 0,
+   "explanation": "William Congreve wrote 'The Way of the World' in 1700, representing the culmination of Restoration comedy of manners."
+  },
+  {
+   "id": "rs-e-29",
+   "question": "Who are the central witty lovers in William Congreve's comedy 'The Way of the World' (1700)?",
+   "options": [
+    "Willmore and Angellica",
+    "Horner and Margery",
+    "Mirabell and Millamant",
+    "Dorimant and Harriet"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Mirabell and Millamant are the central pair of lovers in William Congreve's 'The Way of the World'."
+  },
+  {
+   "id": "rs-e-30",
+   "question": "Which late-Restoration dramatist and architect wrote the comedies 'The Relapse' (1696) and 'The Provoked Wife' (1697)?",
+   "options": [
+    "Thomas Otway",
+    "Nathaniel Lee",
+    "Sir John Vanbrugh",
+    "George Farquhar"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir John Vanbrugh authored the popular late-Restoration comedies 'The Relapse' in 1696 and 'The Provoked Wife' in 1697."
+  },
+  {
+   "id": "rs-e-31",
+   "question": "Which Restoration author (1640–1689) is celebrated as the first British woman to earn an independent living as a professional writer?",
+   "options": [
+    "Nell Gwyn",
+    "Anne Bracegirdle",
+    "Aphra Behn",
+    "Margaret Cavendish"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Aphra Behn was England's first professional female author, writing at least 19 stage plays as well as prose fiction."
+  },
+  {
+   "id": "rs-e-32",
+   "question": "Which two-part comedy (1677, 1681) by Aphra Behn depicts the adventures of the banished Cavalier Willmore at Carnival in Naples?",
+   "options": [
+    "'The Rover'",
+    "'The Relapse'",
+    "'The Orphan'",
+    "'The Rehearsal'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Aphra Behn's 'The Rover, or The Banish'd Cavaliers' follows the rakish Cavalier Willmore in Naples."
+  },
+  {
+   "id": "rs-e-33",
+   "question": "Aphra Behn's tragic prose novella 'Oroonoko, or The Royal Slave' (1688) depicts an enslaved African prince in which colony?",
+   "options": [
+    "Surinam",
+    "Virginia",
+    "Jamaica",
+    "Barbados"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Behn's 'Oroonoko' narrates the betrayal, enslavement, and execution of an African prince in the colony of Surinam."
+  },
+  {
+   "id": "rs-e-34",
+   "question": "Which 1696 play by Colley Cibber pioneered tearful 'sentimental comedy' near the close of the Restoration period?",
+   "options": [
+    "'Love's Last Shift'",
+    "'All for Love'",
+    "'Love for Love'",
+    "'Love in a Wood'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Colley Cibber's 1696 comedy 'Love's Last Shift', in which an errant rake repents in tears, initiated sentimental comedy."
+  },
+  {
+   "id": "rs-e-35",
+   "question": "Who was appointed England's first official Poet Laureate in 1668 and dominated the era known as the 'Age of Dryden'?",
+   "options": [
+    "Andrew Marvell",
+    "John Dryden",
+    "John Milton",
+    "Samuel Butler"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Dryden became the first official Poet Laureate in 1668 and Historiographer Royal in 1670."
+  },
+  {
+   "id": "rs-e-36",
+   "question": "Which 1660 royalist panegyric poem by John Dryden celebrated the restoration and return of King Charles II?",
+   "options": [
+    "'Religio Laici'",
+    "'Astraea Redux'",
+    "'Absalom and Achitophel'",
+    "'Mac Flecknoe'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Dryden welcomed King Charles II's return to the throne in 1660 with the panegyric poem 'Astraea Redux'."
+  },
+  {
+   "id": "rs-e-37",
+   "question": "John Dryden's heroic-couplet satire 'Absalom and Achitophel' (1681) allegorizes which major Restoration political crisis?",
+   "options": [
+    "The Second Anglo-Dutch War",
+    "The Dissolution of Monasteries",
+    "The Great Fire of London",
+    "The Exclusion Crisis"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden wrote 'Absalom and Achitophel' in 1681 to address the Exclusion Crisis over the royal succession."
+  },
+  {
+   "id": "rs-e-38",
+   "question": "In the Old Testament allegory of John Dryden's 'Absalom and Achitophel' (1681), whom does King David represent?",
+   "options": [
+    "Oliver Cromwell",
+    "King James II",
+    "King Charles II",
+    "Earl of Shaftesbury"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Dryden's biblical allegory from 2 Samuel, King David represents the reigning monarch King Charles II."
+  },
+  {
+   "id": "rs-e-39",
+   "question": "Against which rival Whig dramatist and poet did John Dryden direct his mock-heroic verse satire 'Mac Flecknoe' (1682)?",
+   "options": [
+    "Samuel Butler",
+    "Thomas Otway",
+    "George Villiers",
+    "Thomas Shadwell"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's mock-heroic poem 'Mac Flecknoe' pillories Thomas Shadwell as the heir to the realm of Nonsense."
+  },
+  {
+   "id": "rs-e-40",
+   "question": "Which 1682 poem by John Dryden translates as 'A Layman's Faith' and offers a rationalist defense of the Church of England?",
+   "options": [
+    "'The Hind and the Panther'",
+    "'Religio Laici'",
+    "'Astraea Redux'",
+    "'Fables Ancient and Modern'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Dryden's 'Religio Laici' of 1682 defends the Anglican middle way against Deism, Catholicism, and Dissent."
+  },
+  {
+   "id": "rs-e-41",
+   "question": "In John Dryden's beast fable 'The Hind and the Panther' (1687), which church is symbolized by the 'milk-white Hind'?",
+   "options": [
+    "The Church of England",
+    "The Roman Catholic Church",
+    "The Society of Quakers",
+    "The Presbyterian Kirk"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Written after Dryden's 1685 conversion, 'The Hind and the Panther' portrays the Catholic Church as a pure milk-white Hind."
+  },
+  {
+   "id": "rs-e-42",
+   "question": "Who authored the three-part mock-romance 'Hudibras' (1663–1678), satirizing Puritan hypocrisy in eight-syllable couplets?",
+   "options": [
+    "Earl of Rochester",
+    "Charles Sackville",
+    "Samuel Butler",
+    "Sir Charles Sedley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Samuel Butler wrote 'Hudibras' in bouncy iambic tetrameter couplets, originating the term Hudibrastic verse."
+  },
+  {
+   "id": "rs-e-43",
+   "question": "John Wilmot, 2nd Earl of Rochester (1647–1680), was the most prominent poet of which aristocratic Restoration circle?",
+   "options": [
+    "The Graveyard Poets",
+    "The University Wits",
+    "The Court Wits",
+    "The Sons of Ben"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Rochester, along with Charles Sackville and Sir Charles Sedley, belonged to Charles II's circle of Court Wits."
+  },
+  {
+   "id": "rs-e-44",
+   "question": "In which year of the Restoration period was John Milton's epic poem 'Paradise Lost' first published in a 10-book edition?",
+   "options": [
+    "1667",
+    "1671",
+    "1660",
+    "1681"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Although Milton served the Puritan Commonwealth, 'Paradise Lost' was first published in 10 books in 1667."
+  },
+  {
+   "id": "rs-e-45",
+   "question": "Which two major works did John Milton publish together in a single volume in 1671?",
+   "options": [
+    "'Comus' and 'Lycidas'",
+    "'Paradise Lost' and 'Areopagitica'",
+    "'Paradise Regained' and 'Samson Agonistes'",
+    "'L'Allegro' and 'Il Penseroso'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 1671, John Milton published his brief epic 'Paradise Regained' and closet tragedy 'Samson Agonistes' in one volume."
+  },
+  {
+   "id": "rs-e-46",
+   "question": "In which prison was Nonconformist preacher John Bunyan incarcerated for twelve years when he began 'The Pilgrim's Progress'?",
+   "options": [
+    "The Tower of London",
+    "Newgate Prison",
+    "Marshalsea Prison",
+    "Bedford County Jail"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Bunyan was imprisoned in Bedford jail for preaching without an Anglican licence and wrote his key works there."
+  },
+  {
+   "id": "rs-e-47",
+   "question": "What is the title of John Bunyan's 1666 spiritual autobiography recounting his inner religious struggle and conversion?",
+   "options": [
+    "'The Life and Death of Mr Badman'",
+    "'Grace Abounding to the Chief of Sinners'",
+    "'The Holy War'",
+    "'The Character of a Trimmer'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bunyan published his spiritual autobiography 'Grace Abounding to the Chief of Sinners' in 1666."
+  },
+  {
+   "id": "rs-e-48",
+   "question": "Which Restoration diarist recorded vivid first-hand eyewitness accounts of the Great Plague (1665) and Great Fire of London (1666)?",
+   "options": [
+    "Thomas Rymer",
+    "Samuel Pepys",
+    "John Locke",
+    "John Bunyan"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Samuel Pepys kept a secret diary from 1660 to 1669 documenting the Plague of 1665 and Great Fire of 1666."
+  },
+  {
+   "id": "rs-e-49",
+   "question": "Who authored the royalist historical prose chronicle 'The History of the Rebellion and Civil Wars in England'?",
+   "options": [
+    "George Villiers, Duke of Buckingham",
+    "George Savile, Marquess of Halifax",
+    "Anthony Ashley Cooper, Shaftesbury",
+    "Edward Hyde, 1st Earl of Clarendon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edward Hyde, 1st Earl of Clarendon, completed his authoritative royalist 'History of the Rebellion' during his exile."
+  },
+  {
+   "id": "rs-e-50",
+   "question": "In 'An Essay Concerning Human Understanding' (1690), which Latin phrase does John Locke use for the mind as a 'blank slate'?",
+   "options": [
+    "'Tabula rasa'",
+    "'Astraea redux'",
+    "'Annus mirabilis'",
+    "'Religio laici'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Locke rejected innate ideas and argued that the human mind begins as a tabula rasa, or blank slate, in 1690."
+  }
+ ]
+}

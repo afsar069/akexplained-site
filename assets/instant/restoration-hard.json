@@ -1,0 +1,608 @@
+{
+ "bankId": "restoration",
+ "period": "Restoration Age",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rs-h-01",
+   "question": "Some literary historians end the Restoration poetic period in 1666, commemorated by Dryden's 1667 poem titled:",
+   "options": [
+    "'Britannia Rediviva'",
+    "'Annus Mirabilis'",
+    "'Threnodia Augustalis'",
+    "'Heroique Stanzas'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Dryden's 'Annus Mirabilis', meaning Year of Wonders, celebrates 1666 naval victories over the Dutch and London's survival of the Great Fire."
+  },
+  {
+   "id": "rs-h-02",
+   "question": "The Popish Plot of 1678, a fabricated conspiracy alleging a Catholic plan to assassinate Charles II, was concocted by:",
+   "options": [
+    "Richard Flecknoe",
+    "Slingsby Bethel",
+    "Algernon Sidney",
+    "Titus Oates"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Titus Oates fabricated the Popish Plot in 1678, sparking anti-Catholic panic and the Exclusion Crisis."
+  },
+  {
+   "id": "rs-h-03",
+   "question": "During the Exclusion Crisis (1679–1681), the Whig party led by the 1st Earl of Shaftesbury sought to bar whom from the succession?",
+   "options": [
+    "James Scott, Duke of Monmouth",
+    "Prince William of Orange",
+    "George Savile, Lord Halifax",
+    "James, Duke of York"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Shaftesbury and the Whigs tried to exclude Charles II's Roman Catholic brother James, Duke of York, from the throne."
+  },
+  {
+   "id": "rs-h-04",
+   "question": "In 'History of the Royal Society of London' (1667), Thomas Sprat praised the Society for championing which prose ideal?",
+   "options": [
+    "'Here is God's plenty in vernacular speech'",
+    "'An ornate, Ciceronian cadence of Periods'",
+    "'A metaphysical wit yoking heterogeneous ideas'",
+    "'A close, naked, natural way of speaking'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Thomas Sprat's 1667 'History of the Royal Society' advocated a close, naked, natural way of speaking suited to science."
+  },
+  {
+   "id": "rs-h-05",
+   "question": "Alongside Thomas Sprat, which Restoration writer championed the Royal Society's plain scientific prose style in the 1660s?",
+   "options": [
+    "Joseph Glanvill",
+    "Jeremy Collier",
+    "Thomas Rymer",
+    "William Congreve"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Joseph Glanvill joined Thomas Sprat in supporting the Royal Society's call for plain, clear prose over ornate rhetoric."
+  },
+  {
+   "id": "rs-h-06",
+   "question": "Which 1665 treatise by Robert Hooke presented microscopic observations of cork and coined the biological word 'cell'?",
+   "options": [
+    "'Principia Mathematica'",
+    "'Micrographia'",
+    "'The Sceptical Chymist'",
+    "'Sylva, or Forest-Trees'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Robert Hooke published 'Micrographia' under the Royal Society in 1665, describing microscopic structures including cork cells."
+  },
+  {
+   "id": "rs-h-07",
+   "question": "The critical conversation in Dryden's 'Of Dramatic Poesie, an Essay' (1668) is set on a Thames barge during which event?",
+   "options": [
+    "The May 1660 royal coronation procession of King Charles II",
+    "The November 1688 landing of Protestant William of Orange",
+    "The June 1665 naval battle of the Second Anglo-Dutch War",
+    "The September 1666 outbreak of the Great Fire of London"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Dryden sets 'Of Dramatic Poesie' on a barge on the Thames while the English and Dutch fleets battle in June 1665."
+  },
+  {
+   "id": "rs-h-08",
+   "question": "In Dryden's 'Of Dramatic Poesie' (1668), which two speakers defend Ancient classical drama and French Neoclassical drama respectively?",
+   "options": [
+    "Neander and Eugenius",
+    "Crites and Lisideius",
+    "Eugenius and Neander",
+    "Lisideius and Crites"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Of Dramatic Poesie', Crites champions the Greek and Roman Ancients, whereas Lisideius defends French Neoclassical drama."
+  },
+  {
+   "id": "rs-h-09",
+   "question": "In John Dryden's 'Of Dramatic Poesie' (1668), which speaker argues that modern dramatists surpass the ancient Greeks and Romans?",
+   "options": [
+    "Lisideius",
+    "Eugenius",
+    "Neander",
+    "Crites"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eugenius argues on behalf of the Moderns over the Ancients in Dryden's 1668 critical dialogue."
+  },
+  {
+   "id": "rs-h-10",
+   "question": "In 'Of Dramatic Poesie' (1668), which play does Neander examine in the first extended formal analysis of an English drama?",
+   "options": [
+    "Ben Jonson's 'Epicoene, or The Silent Woman'",
+    "William Shakespeare's 'Antony and Cleopatra'",
+    "Beaumont and Fletcher's 'The Maid's Tragedy'",
+    "William Shakespeare's 'The Tragedy of Othello'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Britannica notes that Dryden's analysis of Jonson's 'Epicoene' in 'Of Dramatic Poesie' is the first extended critique of an English play."
+  },
+  {
+   "id": "rs-h-11",
+   "question": "Which 1693 critical essay by John Dryden compares the Roman satirists Horace, Persius, and Juvenal?",
+   "options": [
+    "'Preface to Fables Ancient and Modern'",
+    "'Defence of An Essay of Dramatic Poesy'",
+    "'The Tragedies of the Last Age Considered'",
+    "'A Discourse Concerning the Origin and Progress of Satire'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden published 'A Discourse Concerning the Origin and Progress of Satire' in 1693 prefacing his Juvenal and Persius translations."
+  },
+  {
+   "id": "rs-h-12",
+   "question": "In his Preface to 'Fables Ancient and Modern' (1700), John Dryden praised Geoffrey Chaucer's rich variety of characters with the words:",
+   "options": [
+    "'Never deviates into sense'",
+    "'Here is God's plenty'",
+    "'A close, naked, natural way'",
+    "'The father of English poetry'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In the 1700 Preface to 'Fables Ancient and Modern', Dryden famously wrote of Chaucer's pilgrims: Here is God's plenty."
+  },
+  {
+   "id": "rs-h-13",
+   "question": "Which strict Neoclassical critic coined the critical term 'poetic justice' in 'The Tragedies of the Last Age Considered' (1678)?",
+   "options": [
+    "Thomas Rymer",
+    "Charles Gildon",
+    "Jeremy Collier",
+    "John Dennis"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thomas Rymer coined the term poetic justice in 1678 to demand that drama reward virtue and punish vice."
+  },
+  {
+   "id": "rs-h-14",
+   "question": "In 'A Short View of Tragedy' (1693), Thomas Rymer attacked which Shakespearean play as 'a bloody farce without salt or savour'?",
+   "options": [
+    "'Hamlet'",
+    "'King Lear'",
+    "'Macbeth'",
+    "'Othello'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 'A Short View of Tragedy' in 1693, Thomas Rymer notoriously condemned Shakespeare's 'Othello' for lacking classical decorum."
+  },
+  {
+   "id": "rs-h-15",
+   "question": "Which two London playhouses were opened in 1663 and 1671 respectively by the King's Company and the Duke's Company?",
+   "options": [
+    "Covent Garden and the Haymarket",
+    "Blackfriars and the Globe Theatre",
+    "The Swan and the Rose Playhouse",
+    "Drury Lane and Dorset Garden"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Killigrew's King's Company opened Drury Lane in 1663, while Davenant's Duke's Company opened Dorset Garden in 1671."
+  },
+  {
+   "id": "rs-h-16",
+   "question": "Which pair of early Restoration plays helped establish the rhymed heroic drama in the 1660s before 'The Conquest of Granada'?",
+   "options": [
+    "Etherege's 'The Comical Revenge' (1664) and Wycherley's 'The Country Wife' (1675)",
+    "Otway's 'The Orphan' (1680) and Nathaniel Lee's 'Lucius Junius Brutus' (1680)",
+    "Dryden's 'The Indian Emperour' (1665) and Roger Boyle's 'The Black Prince' (1667)",
+    "Cibber's 'Love's Last Shift' (1696) and John Vanbrugh's 'The Provoked Wife' (1697)"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Dryden's 'The Indian Emperour' in 1665 and Roger Boyle's 'The Black Prince' in 1667 were key early Restoration heroic plays."
+  },
+  {
+   "id": "rs-h-17",
+   "question": "Who is the superhuman warrior hero of John Dryden's two-part heroic play 'The Conquest of Granada' (1670–1671)?",
+   "options": [
+    "Mellefont",
+    "Ventidius",
+    "Almanzor",
+    "Jaffier"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Almanzor is the invincible hero torn between love and honour in Dryden's 'The Conquest of Granada'."
+  },
+  {
+   "id": "rs-h-18",
+   "question": "Under which character name was John Dryden lampooned in the Duke of Buckingham's burlesque 'The Rehearsal' (1671)?",
+   "options": [
+    "Mr. Bayes",
+    "Sir Hudibras",
+    "Mr. Maskwell",
+    "Sir Fopling"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Buckingham's 'The Rehearsal' mocked Poet Laureate John Dryden under the character of the vain playwright Bayes."
+  },
+  {
+   "id": "rs-h-19",
+   "question": "What is the subtitle of John Dryden's blank-verse tragedy 'All for Love' (1677), and who serves as Antony's loyal Roman general?",
+   "options": [
+    "'The Banish'd Cavaliers'; Willmore",
+    "'Virtue in Danger'; Worthy",
+    "'A Plot Discovered'; Pierre",
+    "'The World Well Lost'; Ventidius"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's 'All for Love; or, The World Well Lost' observes the classical unities in Alexandria and features the general Ventidius."
+  },
+  {
+   "id": "rs-h-20",
+   "question": "In Thomas Otway's tragedy 'Venice Preserved' (1682), which three characters form the central tragic triangle of loyalty and love?",
+   "options": [
+    "Jaffier, his friend Pierre, and Senator Priuli's daughter Belvidera",
+    "Dorimant, his discarded mistress Mrs. Loveit, and Harriet Woodvill",
+    "Mirabell, the villain Fainall, and Lady Wishfort's niece Millamant",
+    "Oroonoko, his abducted bride Imoinda, and Deputy Governor Byam"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Otway's 'Venice Preserved', Jaffier is torn between his fellow conspirator Pierre and his devoted wife Belvidera."
+  },
+  {
+   "id": "rs-h-21",
+   "question": "Restoration Comedy of Manners grew out of Ben Jonson's 'comedy of humours' and is often contrasted with post-1696 drama as:",
+   "options": [
+    "'Domestic bourgeois tragedy'",
+    "'Heroic rhymed tragicomedy'",
+    "'Pastoral court masque'",
+    "'Anti-sentimental comedy'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Literary historians term Restoration Comedy of Manners anti-sentimental comedy in contrast to tearful sentimental comedy after 1696."
+  },
+  {
+   "id": "rs-h-22",
+   "question": "In Sir George Etherege's 'The Man of Mode' (1676), which witty heiress matches wits with the cynical aristocratic rake Dorimant?",
+   "options": [
+    "Angellica Bianca",
+    "Lady Wishfort",
+    "Harriet Woodvill",
+    "Margery Pinchwife"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 'The Man of Mode', the polished rake Dorimant discards Mrs. Loveit and is outwitted by the heiress Harriet Woodvill."
+  },
+  {
+   "id": "rs-h-23",
+   "question": "Which two early comedies did William Wycherley write in 1671 and 1672 before 'The Country Wife' and 'The Plain Dealer'?",
+   "options": [
+    "'The Recruiting Officer' and 'The Beaux' Stratagem'",
+    "'Love in a Wood' and 'The Gentleman Dancing-Master'",
+    "'The Old Bachelor' and 'The Way of the World'",
+    "'The Comical Revenge' and 'She Would If She Could'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wycherley wrote 'Love in a Wood' in 1671 and 'The Gentleman Dancing-Master' in 1672 prior to his two later masterpieces."
+  },
+  {
+   "id": "rs-h-24",
+   "question": "In William Wycherley's 'The Country Wife' (1675), which notorious episode uses porcelain as a double entendre as Horner deceives Pinchwife?",
+   "options": [
+    "The China Scene",
+    "The Proviso Scene",
+    "The Barge Scene",
+    "The Screen Scene"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wycherley's 'The Country Wife' is famous for Horner's false eunuch ruse, Margery Pinchwife, and the bawdy China Scene."
+  },
+  {
+   "id": "rs-h-25",
+   "question": "William Wycherley's bitter comedy 'The Plain Dealer' (1676), featuring the misanthropic Captain Manly, is adapted from which French play?",
+   "options": [
+    "Racine's 'Phèdre'",
+    "Molière's 'Le Misanthrope'",
+    "Molière's 'Tartuffe'",
+    "Corneille's 'Le Cid'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wycherley modeled Captain Manly in 'The Plain Dealer' of 1676 on Alceste in Molière's comedy 'Le Misanthrope'."
+  },
+  {
+   "id": "rs-h-26",
+   "question": "What is the exact chronological order of the four Restoration comedies written by William Congreve between 1693 and 1700?",
+   "options": [
+    "'Love for Love', 'The Old Bachelor', 'The Double Dealer', 'The Way of the World'",
+    "'The Double Dealer', 'The Old Bachelor', 'The Way of the World', 'Love for Love'",
+    "'The Old Bachelor', 'The Double Dealer', 'Love for Love', 'The Way of the World'",
+    "'The Old Bachelor', 'Love for Love', 'The Double Dealer', 'The Way of the World'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Congreve produced 'The Old Bachelor' in 1693, 'The Double Dealer' in 1694, 'Love for Love' in 1695, and 'The Way of the World' in 1700."
+  },
+  {
+   "id": "rs-h-27",
+   "question": "In William Congreve's 'The Double Dealer' (1694), who is the treacherous villain plotting against the hero Mellefont?",
+   "options": [
+    "Maskwell",
+    "Dorimant",
+    "Pinchwife",
+    "Fainall"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Maskwell is the Machiavellian double-dealer who schemes against Mellefont in Congreve's 1694 comedy."
+  },
+  {
+   "id": "rs-h-28",
+   "question": "In Congreve's 'The Way of the World' (1700), Mirabell and Millamant negotiate marriage conditions in the 'Proviso Scene' while seeking whose consent?",
+   "options": [
+    "Millamant's aunt, Lady Wishfort",
+    "Mirabell's servant, Waitwell",
+    "Lady Wishfort's maid, Foible",
+    "Fainall's mistress, Mrs. Marwood"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Act IV's Proviso Scene, Mirabell and Millamant agree on marriage terms while working to win Lady Wishfort's consent for the dowry."
+  },
+  {
+   "id": "rs-h-29",
+   "question": "Sir John Vanbrugh wrote 'The Relapse, or Virtue in Danger' (1696), featuring Lord Foppington, as a cynical sequel to which play?",
+   "options": [
+    "William Wycherley's 'The Country Wife'",
+    "George Etherege's 'The Man of Mode'",
+    "Colley Cibber's 'Love's Last Shift'",
+    "William Congreve's 'Love for Love'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Vanbrugh's 1696 comedy 'The Relapse' is a direct sequel mocking the sudden moral reform in Cibber's 'Love's Last Shift'."
+  },
+  {
+   "id": "rs-h-30",
+   "question": "In 'A Room of One's Own', who wrote that 'All women together ought to let flowers fall upon the grave of Aphra Behn'?",
+   "options": [
+    "Mary Wollstonecraft",
+    "Jane Austen",
+    "Virginia Woolf",
+    "George Eliot"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Virginia Woolf praised Aphra Behn in 'A Room of One's Own' for earning women the right to speak their minds."
+  },
+  {
+   "id": "rs-h-31",
+   "question": "Before suffering debtors' prison and turning to commercial playwriting, Aphra Behn served Charles II as a political spy in:",
+   "options": [
+    "Paris during the War of the Spanish Succession",
+    "Madrid during the Puritan Commonwealth",
+    "Antwerp during the Second Anglo-Dutch War",
+    "Venice during the Exclusion Crisis"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Behn served as a royalist intelligence agent in Antwerp during the Second Anglo-Dutch War before becoming a professional writer."
+  },
+  {
+   "id": "rs-h-32",
+   "question": "In Aphra Behn's 'The Rover' (1677), while Hellena pursues Willmore in Carnival disguise, which courtesan falls in love with him?",
+   "options": [
+    "Angellica Bianca",
+    "Mrs. Marwood",
+    "Mrs. Loveit",
+    "Belvidera"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Behn's 'The Rover', the famous Italian courtesan Angellica Bianca falls passionately in love with the Cavalier Willmore."
+  },
+  {
+   "id": "rs-h-33",
+   "question": "In Aphra Behn's 'Oroonoko' (1688), who is Oroonoko's beloved wife, and what Roman name is given to Oroonoko in Surinam?",
+   "options": [
+    "Imoinda; Caesar",
+    "Belvidera; Scipio",
+    "Hellena; Pompey",
+    "Millamant; Cato"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Behn's 1688 novella, the enslaved Coramantien prince Oroonoko is renamed Caesar in Surinam and reunited with Imoinda."
+  },
+  {
+   "id": "rs-h-34",
+   "question": "Why did John Dryden lose his offices of Poet Laureate and Historiographer Royal to Thomas Shadwell in 1688?",
+   "options": [
+    "Converted to Catholicism in 1685, he refused the oath to William III and Mary II",
+    "He defended the Puritan regicides after Parliament allowed the Licensing Act to end",
+    "He backed the Duke of Monmouth's armed Protestant rebellion against King James II",
+    "He joined clergyman Jeremy Collier in attacking the immorality of the London stage"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dryden converted to Roman Catholicism in 1685 and refused to swear allegiance to William and Mary after the 1688 Glorious Revolution."
+  },
+  {
+   "id": "rs-h-35",
+   "question": "After losing the laureateship in 1688, John Dryden supported himself through major verse translations, including which 1697 and 1700 works?",
+   "options": [
+    "'The Pharsalia of Lucan' (1697) and 'The Thebaid of Statius' (1700)",
+    "'The Works of Virgil' (1697) and 'Fables Ancient and Modern' (1700)",
+    "'Ovid's Metamorphoses' (1697) and 'Lucretius De Rerum Natura' (1700)",
+    "'The Iliad of Homer' (1697) and 'The Odyssey of Homer' (1700)"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In his final years Dryden published his translation of Virgil in 1697 and 'Fables Ancient and Modern' in 1700."
+  },
+  {
+   "id": "rs-h-36",
+   "question": "In Dryden's 'Absalom and Achitophel' (1681), whom do the biblical characters Absalom and Achitophel respectively represent?",
+   "options": [
+    "James, Duke of York, and Edward Hyde, 1st Earl of Clarendon and Lord Chancellor",
+    "James Scott, Duke of Monmouth, and Anthony Ashley Cooper, 1st Earl of Shaftesbury",
+    "Thomas Shadwell, Whig Poet Laureate, and Titus Oates, Popish Plot conspirator",
+    "George Villiers, 2nd Duke of Buckingham, and Slingsby Bethel, Whig Sheriff of London"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Absalom represents Charles II's illegitimate son the Duke of Monmouth, while Achitophel represents Whig leader Lord Shaftesbury."
+  },
+  {
+   "id": "rs-h-37",
+   "question": "In Dryden's 'Absalom and Achitophel' (1681), which nobleman is satirized as the fickle courtier Zimri?",
+   "options": [
+    "George Savile, 1st Marquess of Halifax",
+    "Anthony Ashley Cooper, Earl of Shaftesbury",
+    "John Wilmot, 2nd Earl of Rochester",
+    "George Villiers, 2nd Duke of Buckingham"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's portrait of Zimri as chemist, fiddler, statesman, and buffoon satirizes George Villiers, 2nd Duke of Buckingham."
+  },
+  {
+   "id": "rs-h-38",
+   "question": "In Dryden's 'Absalom and Achitophel' (1681), which two figures are allegorized under the biblical names Shimei and Corah?",
+   "options": [
+    "Royalist monarch King Charles II and his brother James, Duke of York",
+    "Whig Poet Laureate Thomas Shadwell and playwright Elkanah Settle",
+    "Whig Sheriff Slingsby Bethel and Popish Plot fabricator Titus Oates",
+    "Roman general Ventidius and Venetian revolutionary conspirator Pierre"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 'Absalom and Achitophel', Shimei represents the Whig Sheriff Slingsby Bethel and Corah represents Titus Oates."
+  },
+  {
+   "id": "rs-h-39",
+   "question": "What is the subtitle of Dryden's 'Mac Flecknoe' (1682), in which Richard Flecknoe declares that 'Shadwell never deviates into sense'?",
+   "options": [
+    "'A Discourse Concerning the Progress of Dullness'",
+    "'A Lampoon upon the Whiggish Playwright of London'",
+    "'A Mock-Heroic Satire on the Kingdom of Nonsense'",
+    "'A Satire upon the True-Blue Protestant Poet, T.S.'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden's 'Mac Flecknoe' is subtitled 'A Satire upon the True-Blue Protestant Poet, T.S.', mocking Thomas Shadwell."
+  },
+  {
+   "id": "rs-h-40",
+   "question": "In John Dryden's beast fable 'The Hind and the Panther' (1687), which religious groups do the 'spotted Panther' and the 'Wolf' represent?",
+   "options": [
+    "The Anabaptist Sect and the Rationalist Freethinkers",
+    "The Church of England and the Presbyterian Dissenters",
+    "The Roman Catholic Church and the Society of Friends",
+    "The French Huguenots and the Scottish Covenanters"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'The Hind and the Panther', the spotted Panther is the Anglican Church and the predatory Wolf represents the Presbyterians."
+  },
+  {
+   "id": "rs-h-41",
+   "question": "In Samuel Butler's three-part satire 'Hudibras' (1663, 1664, 1678), what are the religious allegiances of Sir Hudibras and his squire Ralpho?",
+   "options": [
+    "Sir Hudibras is a Roman Catholic knight and Ralpho is an Anglican clergyman",
+    "Sir Hudibras is a Presbyterian justice and Ralpho is an Independent clerk",
+    "Sir Hudibras is a Deist philosopher and Ralpho is a Latitudinarian bishop",
+    "Sir Hudibras is a Quaker preacher and Ralpho is a Royalist cavalier squire"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Butler's 'Hudibras' mocks Puritanism through the hypocritical Presbyterian knight Sir Hudibras and his Independent clerk Ralpho."
+  },
+  {
+   "id": "rs-h-42",
+   "question": "Which 1679 poem by John Wilmot, Earl of Rochester, draws on Hobbes and Montaigne to argue that beasts are wiser than rational humanity?",
+   "options": [
+    "'The Hind and the Panther'",
+    "'Religio Laici'",
+    "'A Satyr against Reason and Mankind'",
+    "'Hudibras'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Rochester's 'A Satyr against Reason and Mankind' of 1679 attacks human intellectual pride and prefers natural animal instinct."
+  },
+  {
+   "id": "rs-h-43",
+   "question": "In John Milton's 'Samson Agonistes' (1671), which three visitors successively confront the blind captive Samson at Gaza?",
+   "options": [
+    "The archangel Raphael, the archangel Michael, and the fallen angel Belial",
+    "His companion Faithful, his fellow pilgrim Hopeful, and Giant Despair",
+    "His father Manoa, his wife Dalila, and the Philistine giant Harapha of Gath",
+    "King David of Israel, the treacherous counsellor Achitophel, and Zimri"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Milton's 1671 tragedy 'Samson Agonistes', Samson is visited in Gaza by Manoa, Dalila, and the Philistine giant Harapha."
+  },
+  {
+   "id": "rs-h-44",
+   "question": "How did John Milton alter the structure of 'Paradise Lost' for its definitive second edition published in 1674, the year of his death?",
+   "options": [
+    "He reorganized the original 10 books into 12 books",
+    "He replaced unrhymed blank verse with heroic couplets",
+    "He expanded the original 6 books into 10 books",
+    "He appended 'Samson Agonistes' as the thirteenth book"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Milton revised 'Paradise Lost' from its 1667 ten-book structure into twelve books for the 1674 second edition."
+  },
+  {
+   "id": "rs-h-45",
+   "question": "In John Bunyan's 'The Pilgrim's Progress', Part I (1678) and Part II (1684), which companion of Christian is martyred at Vanity Fair?",
+   "options": [
+    "Evangelist",
+    "Hopeful",
+    "Faithful",
+    "Greatheart"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Part I of 'The Pilgrim's Progress', Christian's companion Faithful is tried and martyred at Vanity Fair before Hopeful joins him."
+  },
+  {
+   "id": "rs-h-46",
+   "question": "Which two religious prose works did John Bunyan publish in 1680 and 1682, depicting a dialogue on sin and the siege of Mansoul?",
+   "options": [
+    "'Grace Abounding' and 'The Character of a Trimmer'",
+    "'An Essay of Dramatic Poesie' and 'The Hind and the Panther'",
+    "'History of the Royal Society' and 'The Sceptical Chymist'",
+    "'The Life and Death of Mr Badman' and 'The Holy War'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bunyan published the moral dialogue 'The Life and Death of Mr Badman' in 1680 and the allegory 'The Holy War' on Mansoul in 1682."
+  },
+  {
+   "id": "rs-h-47",
+   "question": "How does Samuel Pepys's diary (1660–1669, published 1825) differ from John Evelyn's diary (1640–1706, published 1818)?",
+   "options": [
+    "Pepys wrote in classical Latin over sixty years; Evelyn recorded only the 1666 Fire in cipher",
+    "Pepys wrote one decade in Shelton's shorthand cipher; Evelyn wrote openly for six decades",
+    "Pepys published his diary in 1670 for the Royal Society; Evelyn's diary burned in 1666",
+    "Pepys focused solely on country horticulture; Evelyn wrote a bawdy court diary in verse"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Pepys kept his 1660 to 1669 diary in Thomas Shelton's shorthand cipher, while Evelyn wrote openly from 1640 to 1706."
+  },
+  {
+   "id": "rs-h-48",
+   "question": "Which 1688 political essay by George Savile, 1st Marquess of Halifax, defended political moderation between extreme factions?",
+   "options": [
+    "'A Short View of Tragedy'",
+    "'The Character of a Trimmer'",
+    "'The History of the Rebellion'",
+    "'Two Treatises of Government'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "George Savile, 1st Marquess of Halifax, championed political moderation in his 1688 essay 'The Character of a Trimmer'."
+  },
+  {
+   "id": "rs-h-49",
+   "question": "In 'Two Treatises of Government' (1690), John Locke refuted patriarchal absolutism and argued that legitimate government rests on:",
+   "options": [
+    "The supreme ecclesiastical jurisdiction of the Roman Catholic Church over civil parliament",
+    "The divine hereditary right of absolute monarchs descended directly from patriarchal Adam",
+    "An absolute sovereign leviathan exercising unlimited authority over both church and state",
+    "The consent of the governed to protect natural rights to life, liberty, and property"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Locke's 1690 'Two Treatises of Government' formulated social contract theory, grounding rule in consent and natural rights."
+  },
+  {
+   "id": "rs-h-50",
+   "question": "Which of the following statements regarding English print culture and drama in the 1690s is NOT correct?",
+   "options": [
+    "Parliament made the Licensing Act permanent in 1695, tightening pre-publication press censorship",
+    "Jeremy Collier's 1698 tract attacked Wycherley, Congreve, and Vanbrugh for stage immorality",
+    "Parliament let the Licensing Act lapse in 1695, ending censorship and spurring new periodicals",
+    "Colley Cibber's 1696 play 'Love's Last Shift' helped initiate moralistic sentimental comedy"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 1695 Parliament allowed the Licensing Act to lapse, ending pre-publication censorship and sparking the rise of periodicals."
+  }
+ ]
+}
