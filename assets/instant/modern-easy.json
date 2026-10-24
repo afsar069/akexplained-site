@@ -1,0 +1,608 @@
+{
+ "bankId": "modern",
+ "period": "Modern Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "md-e-01",
+   "question": "The Modern Period (1914–1945) in English literary history is bracketed by the outbreak of World War I in 1914 and the end of:",
+   "options": [
+    "The Crimean War in Eastern Europe",
+    "The Second World War in 1945",
+    "The Boer War in South Africa",
+    "The Cold War in Berlin"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Modern Period spans from the start of the First World War in 1914 to the conclusion of the Second World War in 1945."
+  },
+  {
+   "id": "md-e-02",
+   "question": "Which year is celebrated as the 'annus mirabilis' of High Modernism for the publication of both 'Ulysses' and 'The Waste Land'?",
+   "options": [
+    "1939",
+    "1914",
+    "1930",
+    "1922"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 1922 James Joyce published 'Ulysses' in Paris and T. S. Eliot published 'The Waste Land', making 1922 the pinnacle of High Modernism."
+  },
+  {
+   "id": "md-e-03",
+   "question": "Which modernist narrative technique, used by James Joyce and Virginia Woolf, records the continuous flow of a character's inner thoughts?",
+   "options": [
+    "Explained supernatural",
+    "Heroic couplet",
+    "Comedy of humours",
+    "Stream of consciousness"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Stream of consciousness renders the Associative, uninterrupted flow of perceptions and memories inside a character's mind."
+  },
+  {
+   "id": "md-e-04",
+   "question": "Which First World War poet wrote 'Dulce et Decorum Est', 'Anthem for Doomed Youth', and 'Strange Meeting' before dying in action in 1918?",
+   "options": [
+    "Rupert Brooke",
+    "Julian Grenfell",
+    "Charles Sorley",
+    "Wilfred Owen"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wilfred Owen wrote the most celebrated anti-war trench poems of World War I and was killed on 4 November 1918, one week before the Armistice."
+  },
+  {
+   "id": "md-e-05",
+   "question": "Which World War I officer and poet mentored Wilfred Owen at Craiglockhart Hospital and wrote 'Counter-Attack' (1918)?",
+   "options": [
+    "Siegfried Sassoon",
+    "Ivor Gurney",
+    "Edward Thomas",
+    "John McCrae"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Siegfried Sassoon encouraged Wilfred Owen at Craiglockhart War Hospital in 1917 and published Owen's 'Poems' in 1920."
+  },
+  {
+   "id": "md-e-06",
+   "question": "Which British soldier-poet and painter wrote 'Break of Day in the Trenches' and 'Dead Man's Dump' before being killed in April 1918?",
+   "options": [
+    "Laurence Binyon",
+    "Isaac Rosenberg",
+    "Edmund Blunden",
+    "Alan Seeger"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Britannica highlights Isaac Rosenberg as one of the most original World War I poets; he was killed in action in April 1918."
+  },
+  {
+   "id": "md-e-07",
+   "question": "Which poet and novelist published the disillusioned World War I autobiography 'Good-Bye to All That' in 1929?",
+   "options": [
+    "Ford Madox Ford",
+    "Cecil Day-Lewis",
+    "Robert Graves",
+    "Richard Aldington"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Graves published his candid war memoir 'Good-Bye to All That' in 1929 and later wrote the Roman novels 'I, Claudius' and 'Claudius the God'."
+  },
+  {
+   "id": "md-e-08",
+   "question": "Which poet and dramatist became the first Irish writer to be awarded the Nobel Prize in Literature in 1923?",
+   "options": [
+    "George Moore",
+    "William Butler Yeats",
+    "James Joyce",
+    "Sean O'Casey"
+   ],
+   "correct_option_id": 1,
+   "explanation": "W. B. Yeats received the Nobel Prize in Literature in 1923 for his inspired poetry giving expression to the spirit of a whole nation."
+  },
+  {
+   "id": "md-e-09",
+   "question": "In W. B. Yeats's poem 'Easter, 1916', commemorating the Irish rebellion against British rule, what famous refrain is repeated?",
+   "options": [
+    "'That is no country for old men'",
+    "'A terrible beauty is born'",
+    "'Romantic Ireland's dead and gone'",
+    "'Things fall apart; the centre cannot hold'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Yeats's 'Easter, 1916', collected in 'Michael Robartes and the Dancer' in 1921, repeats the refrain A terrible beauty is born."
+  },
+  {
+   "id": "md-e-10",
+   "question": "Which apocalyptic poem by W. B. Yeats (written 1919) contains the famous line 'Things fall apart; the centre cannot hold'?",
+   "options": [
+    "'The Second Coming'",
+    "'The Wild Swans at Coole'",
+    "'Lapis Lazuli'",
+    "'Among School Children'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Yeats's 'The Second Coming' uses the image of a widening gyre and a rough beast slouching towards Bethlehem."
+  },
+  {
+   "id": "md-e-11",
+   "question": "Which 1928 poetry collection by W. B. Yeats—named after his Norman castle in Galway—opens with 'Sailing to Byzantium'?",
+   "options": [
+    "'The Winding Stair'",
+    "'Crossways'",
+    "'The Rose'",
+    "'The Tower'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Yeats's 1928 volume 'The Tower' is one of his supreme modernist collections, opening with 'Sailing to Byzantium'."
+  },
+  {
+   "id": "md-e-12",
+   "question": "Which 1915 poem by T. S. Eliot begins 'Let us go then, you and I, / When the evening is spread out against the sky'?",
+   "options": [
+    "'Preludes'",
+    "'The Love Song of J. Alfred Prufrock'",
+    "'Gerontion'",
+    "'Portrait of a Lady'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eliot published 'The Love Song of J. Alfred Prufrock' in 'Poetry' magazine in 1915 and in 'Prufrock and Other Observations' in 1917."
+  },
+  {
+   "id": "md-e-13",
+   "question": "Which landmark 1922 modernist poem by T. S. Eliot opens with the line 'April is the cruellest month'?",
+   "options": [
+    "'The Waste Land'",
+    "'Marina'",
+    "'The Hollow Men'",
+    "'Ash-Wednesday'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "T. S. Eliot's five-part poem 'The Waste Land' of 1922 opens Section I, 'The Burial of the Dead', with April is the cruellest month."
+  },
+  {
+   "id": "md-e-14",
+   "question": "To which fellow poet—calling him 'il miglior fabbro' ('the better craftsman')—did T. S. Eliot dedicate 'The Waste Land' (1922)?",
+   "options": [
+    "W. B. Yeats",
+    "W. H. Auden",
+    "Wyndham Lewis",
+    "Ezra Pound"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ezra Pound heavily edited the manuscript of 'The Waste Land', and Eliot dedicated the poem to him using Dante's phrase for Arnaut Daniel."
+  },
+  {
+   "id": "md-e-15",
+   "question": "Which 1935 verse drama by T. S. Eliot portrays the 1170 assassination of Archbishop Thomas Becket at Canterbury?",
+   "options": [
+    "'Sweeney Agonistes'",
+    "'The Family Reunion'",
+    "'The Rock'",
+    "'Murder in the Cathedral'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eliot wrote 'Murder in the Cathedral' in 1935 for the Canterbury Festival, dramatizing Becket's martyrdom."
+  },
+  {
+   "id": "md-e-16",
+   "question": "What is the title of T. S. Eliot's meditative sequence (published together in 1943) comprising 'Burnt Norton', 'East Coker', 'The Dry Salvages', and 'Little Gidding'?",
+   "options": [
+    "'Poems 1909–1925'",
+    "'Ariel Poems'",
+    "'Four Quartets'",
+    "'Choruses from The Rock'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Eliot composed 'Four Quartets' between 1935 and 1942 and published the complete four-poem volume in 1943."
+  },
+  {
+   "id": "md-e-17",
+   "question": "Which 1920 critical volume by T. S. Eliot contains his famous essay 'Tradition and the Individual Talent'?",
+   "options": [
+    "'After Strange Gods'",
+    "'For Lancelot Andrewes'",
+    "'The Sacred Wood'",
+    "'The Use of Poetry and the Use of Criticism'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Eliot's first book of literary criticism, 'The Sacred Wood: Essays on Poetry and Criticism', appeared in 1920."
+  },
+  {
+   "id": "md-e-18",
+   "question": "In James Joyce's 1916 bildungsroman 'A Portrait of the Artist as a Young Man', who is the autobiographical protagonist?",
+   "options": [
+    "Stephen Dedalus",
+    "Buck Mulligan",
+    "Gabriel Conroy",
+    "Leopold Bloom"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Stephen Dedalus, named after Saint Stephen and the mythical artificer Daedalus, is the hero of 'A Portrait of the Artist as a Young Man'."
+  },
+  {
+   "id": "md-e-19",
+   "question": "James Joyce's modernist novel 'Ulysses' (1922) takes place in Dublin over the course of which single day, celebrated as 'Bloomsday'?",
+   "options": [
+    "24 April 1916",
+    "2 February 1922",
+    "11 November 1918",
+    "16 June 1904"
+   ],
+   "correct_option_id": 3,
+   "explanation": "All eighteen episodes of Joyce's 'Ulysses' unfold on a single day, 16 June 1904, the date of Joyce's first outing with Nora Barnacle."
+  },
+  {
+   "id": "md-e-20",
+   "question": "Which experimental 1939 novel was James Joyce's final work, written over seventeen years in a polyglot dream-language of puns?",
+   "options": [
+    "'Finnegans Wake'",
+    "'Pomes Penyeach'",
+    "'Stephen Hero'",
+    "'Exiles'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Serialized in fragments as 'Work in Progress', Joyce's 'Finnegans Wake' was published in May 1939."
+  },
+  {
+   "id": "md-e-21",
+   "question": "Which publishing house was founded by Leonard and Virginia Woolf in 1917 and published T. S. Eliot's 'The Waste Land' in book form in Britain?",
+   "options": [
+    "The Egoist Press",
+    "Shakespeare and Company",
+    "Faber and Gwyer",
+    "The Hogarth Press"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Leonard and Virginia Woolf established the Hogarth Press in 1917 at Hogarth House, Richmond."
+  },
+  {
+   "id": "md-e-22",
+   "question": "Which 1925 novel by Virginia Woolf follows a London society hostess preparing for a party on a single June day alongside war veteran Septimus Warren Smith?",
+   "options": [
+    "'Night and Day'",
+    "'The Years'",
+    "'Mrs. Dalloway'",
+    "'The Voyage Out'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Woolf's 1925 novel 'Mrs. Dalloway' interweaves Clarissa Dalloway's party preparations with the shell-shocked Septimus Warren Smith."
+  },
+  {
+   "id": "md-e-23",
+   "question": "Which 1927 novel by Virginia Woolf portrays Mr. and Mrs. Ramsay and the painter Lily Briscoe at their summer home in the Hebrides?",
+   "options": [
+    "'Between the Acts'",
+    "'To the Lighthouse'",
+    "'The Waves'",
+    "'Jacob's Room'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Woolf's 1927 elegiac novel 'To the Lighthouse' is structured in three parts: 'The Window', 'Time Passes', and 'The Lighthouse'."
+  },
+  {
+   "id": "md-e-24",
+   "question": "Which 1928 novel by Virginia Woolf—dedicated to Vita Sackville-West—follows an Elizabethan poet who lives for three centuries and becomes a woman?",
+   "options": [
+    "'Orlando: A Biography'",
+    "'Flush: A Biography'",
+    "'The Common Reader'",
+    "'Roger Fry: A Biography'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Woolf published 'Orlando: A Biography' in 1928 as a playful fantasy of literary history and gender identity inspired by Vita Sackville-West."
+  },
+  {
+   "id": "md-e-25",
+   "question": "In which 1929 feminist treatise did Virginia Woolf declare that 'a woman must have money and a room of her own if she is to write fiction'?",
+   "options": [
+    "'Professions for Women'",
+    "'A Room of One's Own'",
+    "'Modern Fiction'",
+    "'Three Guineas'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Based on lectures at Newnham and Girton Colleges, Cambridge, Woolf's 'A Room of One's Own' appeared in 1929."
+  },
+  {
+   "id": "md-e-26",
+   "question": "Which two connected novels by D. H. Lawrence (1915 and 1920) follow the Brangwen family and the sisters Ursula and Gudrun Brangwen?",
+   "options": [
+    "'The White Peacock' and 'The Trespasser'",
+    "'The Lost Girl' and 'Aaron's Rod'",
+    "'The Rainbow' and 'Women in Love'",
+    "'Kangaroo' and 'The Plumed Serpent'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lawrence traced the generational history of the Brangwens in 'The Rainbow' in 1915 and its sequel 'Women in Love' in 1920."
+  },
+  {
+   "id": "md-e-27",
+   "question": "Which 1928 novel by D. H. Lawrence, privately printed in Florence and long banned in Britain, depicts Constance Chatterley and the gamekeeper Mellors?",
+   "options": [
+    "'Lady Chatterley's Lover'",
+    "'The Man Who Died'",
+    "'St. Mawr'",
+    "'The Virgin and the Gipsy'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lawrence's final novel, 'Lady Chatterley's Lover', was printed in Florence in 1928 and remained banned in Britain until the 1960 trial."
+  },
+  {
+   "id": "md-e-28",
+   "question": "Which 1915 modernist novel by Ford Madox Ford opens 'This is the saddest story I have ever heard' and uses the unreliable narrator John Dowell?",
+   "options": [
+    "'The Good Soldier'",
+    "'The Fifth Queen'",
+    "'Last Post'",
+    "'No More Parades'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ford Madox Ford's 'The Good Soldier: A Tale of Passion' of 1915 is a classic of modernist unreliable narration."
+  },
+  {
+   "id": "md-e-29",
+   "question": "What is the title of Ford Madox Ford's four-novel sequence (1924–1928) about Christopher Tietjens and the First World War?",
+   "options": [
+    "'Pilgrimage'",
+    "'A Scots Quhair'",
+    "'Parade's End'",
+    "'The Forsyte Saga'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Ford's 'Parade's End' tetralogy comprises 'Some Do Not...', 'No More Parades', 'A Man Could Stand Up—', and 'Last Post'."
+  },
+  {
+   "id": "md-e-30",
+   "question": "Which 1924 novel by E. M. Forster examines racial tension and colonial rule in British India through Dr. Aziz, Cyril Fielding, and Adela Quested?",
+   "options": [
+    "'A Room with a View'",
+    "'Where Angels Fear to Tread'",
+    "'A Passage to India'",
+    "'Howards End'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Forster's 'A Passage to India' of 1924 centres on Adela Quested's accusation against Dr. Aziz after visiting the Marabar Caves."
+  },
+  {
+   "id": "md-e-31",
+   "question": "In which 1927 work of literary criticism did E. M. Forster introduce the distinction between 'flat' and 'round' characters?",
+   "options": [
+    "'Abinger Harvest'",
+    "'Two Cheers for Democracy'",
+    "'Aspects of the Novel'",
+    "'The Craft of Fiction'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Forster delivered the Clark Lectures at Trinity College, Cambridge, and published them in 1927 as 'Aspects of the Novel'."
+  },
+  {
+   "id": "md-e-32",
+   "question": "Which New Zealand-born modernist writer gained acclaim for short-story collections such as 'Bliss' (1920) and 'The Garden Party' (1922)?",
+   "options": [
+    "Katherine Mansfield",
+    "Jean Rhys",
+    "Elizabeth Bowen",
+    "Rebecca West"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Katherine Mansfield revolutionized the English modernist short story with Chekhovian subtlety in 'Bliss' and 'The Garden Party'."
+  },
+  {
+   "id": "md-e-33",
+   "question": "Which British writer began her thirteen-volume stream-of-consciousness novel sequence 'Pilgrimage' with 'Pointed Roofs' in 1915?",
+   "options": [
+    "Dorothy Richardson",
+    "May Sinclair",
+    "Virginia Woolf",
+    "Ivy Compton-Burnett"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dorothy Richardson published 'Pointed Roofs' in 1915 as the first volume of 'Pilgrimage', following Miriam Henderson's consciousness."
+  },
+  {
+   "id": "md-e-34",
+   "question": "Which 1932 dystopian novel by Aldous Huxley depicts a futuristic World State where citizens are conditioned in hatcheries and pacified with 'soma'?",
+   "options": [
+    "'Brave New World'",
+    "'Point Counter Point'",
+    "'Crome Yellow'",
+    "'Antic Hay'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Aldous Huxley published 'Brave New World' in 1932, portraying a technocratic dystopia dated in the year of Our Ford 632."
+  },
+  {
+   "id": "md-e-35",
+   "question": "From which play by William Shakespeare—spoken by Miranda—did Aldous Huxley borrow the title 'Brave New World' (1932)?",
+   "options": [
+    "'King Lear'",
+    "'The Tempest'",
+    "'Hamlet'",
+    "'Macbeth'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Act V of Shakespeare's 'The Tempest', Miranda exclaims O brave new world, That has such people in't!"
+  },
+  {
+   "id": "md-e-36",
+   "question": "Which four left-wing poets of the 1930s were collectively dubbed 'MacSpaunday' by satirist Roy Campbell?",
+   "options": [
+    "Wilfred Owen, Siegfried Sassoon, Robert Graves, and Edmund Blunden",
+    "Louis MacNeice, Stephen Spender, W. H. Auden, and Cecil Day-Lewis",
+    "Dylan Thomas, Philip Larkin, Ted Hughes, and Seamus Heaney",
+    "Hugh MacDiarmid, Ezra Pound, T. S. Eliot, and William Butler Yeats"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Roy Campbell coined the composite name MacSpaunday in 'Talking Bronco' for MacNeice, Spender, Auden, and Day-Lewis."
+  },
+  {
+   "id": "md-e-37",
+   "question": "Which leading poet of the 1930s generation wrote 'Spain' (1937), 'In Memory of W. B. Yeats' (1939), and 'September 1, 1939'?",
+   "options": [
+    "Louis MacNeice",
+    "Christopher Isherwood",
+    "Stephen Spender",
+    "W. H. Auden"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wystan Hugh Auden was the central figure of the 1930s poets, authoring 'Spain', 'In Memory of W. B. Yeats', and 'September 1, 1939'."
+  },
+  {
+   "id": "md-e-38",
+   "question": "Under which pen name did Eric Arthur Blair (1903–1950) publish 'The Road to Wigan Pier' (1937), 'Homage to Catalonia' (1938), and 'Animal Farm' (1945)?",
+   "options": [
+    "Henry Green",
+    "Lewis Grassic Gibbon",
+    "George Orwell",
+    "Hugh MacDiarmid"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Eric Arthur Blair adopted the pen name George Orwell with the publication of 'Down and Out in Paris and London' in 1933."
+  },
+  {
+   "id": "md-e-39",
+   "question": "Which satirical beast fable by George Orwell, published in August 1945, allegorizes the Russian Revolution and Stalinism through the pigs Napoleon and Snowball?",
+   "options": [
+    "'Burmese Days'",
+    "'Keep the Aspidistra Flying'",
+    "'Coming Up for Air'",
+    "'Animal Farm'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Orwell's 'Animal Farm: A Fairy Story' was published on 17 August 1945, satirizing Soviet totalitarianism."
+  },
+  {
+   "id": "md-e-40",
+   "question": "George Orwell's 1938 personal account 'Homage to Catalonia' records his experience fighting in a militia during which 1936–1939 conflict?",
+   "options": [
+    "The Russian Civil War",
+    "The Spanish Civil War",
+    "The Irish Civil War",
+    "The First World War"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Orwell fought with the POUM militia in the Spanish Civil War and was wounded in the throat by a sniper, as told in 'Homage to Catalonia'."
+  },
+  {
+   "id": "md-e-41",
+   "question": "Which satirical novelist wrote 'Decline and Fall' (1928), 'A Handful of Dust' (1934), and 'Brideshead Revisited' (1945)?",
+   "options": [
+    "Anthony Powell",
+    "Evelyn Waugh",
+    "C. P. Snow",
+    "Graham Greene"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Evelyn Waugh satirized the Bright Young Things of the 1920s and published 'Brideshead Revisited' in 1945."
+  },
+  {
+   "id": "md-e-42",
+   "question": "Which Catholic novelist authored the thriller-morality novels 'Brighton Rock' (1938) and 'The Power and the Glory' (1940)?",
+   "options": [
+    "Evelyn Waugh",
+    "Somerset Maugham",
+    "Graham Greene",
+    "J. B. Priestley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Graham Greene merged thriller plots with Catholic moral ambiguity in 'Brighton Rock' in 1938 and 'The Power and the Glory' in 1940."
+  },
+  {
+   "id": "md-e-43",
+   "question": "Who authored the 1939 Berlin stories volume 'Goodbye to Berlin', featuring the cabaret character Sally Bowles as Nazism rises in Germany?",
+   "options": [
+    "Stephen Spender",
+    "Edward Upward",
+    "Christopher Isherwood",
+    "Rex Warner"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Christopher Isherwood published 'Mr Norris Changes Trains' in 1935 and 'Goodbye to Berlin' in 1939, declaring I am a camera."
+  },
+  {
+   "id": "md-e-44",
+   "question": "Which Irish playwright wrote the 'Dublin Trilogy'—'The Shadow of a Gunman' (1923), 'Juno and the Paycock' (1924), and 'The Plough and the Stars' (1926)?",
+   "options": [
+    "Sean O'Casey",
+    "Lady Gregory",
+    "J. M. Synge",
+    "Denis Johnston"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sean O'Casey portrayed working-class Dubliners during the Irish revolutionary period in his three Abbey Theatre masterpieces of 1923–1926."
+  },
+  {
+   "id": "md-e-45",
+   "question": "Which English dramatist achieved interwar West End acclaim with witty comedies such as 'Hay Fever' (1925), 'Private Lives' (1930), and 'Blithe Spirit' (1941)?",
+   "options": [
+    "J. B. Priestley",
+    "Terence Rattigan",
+    "Noël Coward",
+    "R. C. Sherriff"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Noël Coward broke through with 'The Vortex' in 1924 and became the master of interwar sophisticated comedy."
+  },
+  {
+   "id": "md-e-46",
+   "question": "Which 1923 history play about the Maid of Orleans helped earn George Bernard Shaw the 1925 Nobel Prize in Literature?",
+   "options": [
+    "'Back to Methuselah'",
+    "'The Apple Cart'",
+    "'Too True to Be Good'",
+    "'Saint Joan'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Shaw's 'Saint Joan', premiered in 1923 and published in 1924 after Joan of Arc's 1920 canonization, is widely regarded as his greatest tragedy."
+  },
+  {
+   "id": "md-e-47",
+   "question": "Which Cambridge theorist laid the foundations of New Criticism and 'close reading' in 'Principles of Literary Criticism' (1924) and 'Practical Criticism' (1929)?",
+   "options": [
+    "A. C. Bradley",
+    "I. A. Richards",
+    "G. Wilson Knight",
+    "C. S. Lewis"
+   ],
+   "correct_option_id": 1,
+   "explanation": "I. A. Richards pioneered close reading by having Cambridge students analyze unsigned poems in 'Practical Criticism' in 1929."
+  },
+  {
+   "id": "md-e-48",
+   "question": "Which student of I. A. Richards published the influential 1930 critical study 'Seven Types of Ambiguity'?",
+   "options": [
+    "Q. D. Leavis",
+    "William Empson",
+    "L. C. Knights",
+    "Cleanth Brooks"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Empson wrote 'Seven Types of Ambiguity' in 1930 at age 24, demonstrating the multiple meanings generated by poetic language."
+  },
+  {
+   "id": "md-e-49",
+   "question": "Which influential Cambridge critic co-founded and edited the quarterly review 'Scrutiny' from 1932 to 1953?",
+   "options": [
+    "Herbert Read",
+    "Cyril Connolly",
+    "John Middleton Murry",
+    "F. R. Leavis"
+   ],
+   "correct_option_id": 3,
+   "explanation": "F. R. Leavis edited 'Scrutiny' from 1932 to 1953 and published 'New Bearings in English Poetry' in 1932."
+  },
+  {
+   "id": "md-e-50",
+   "question": "Which Welsh poet rose to fame with '18 Poems' (1934) and the autobiographical stories 'Portrait of the Artist as a Young Dog' (1940)?",
+   "options": [
+    "Dylan Thomas",
+    "Vernon Watkins",
+    "Wilfred Owen",
+    "Alun Lewis"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dylan Thomas brought neo-romantic lyrical intensity back to British poetry in the 1930s and 1940s."
+  }
+ ]
+}

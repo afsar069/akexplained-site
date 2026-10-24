@@ -1,0 +1,608 @@
+{
+ "bankId": "modern",
+ "period": "Modern Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "md-h-01",
+   "question": "Who coined the psychological phrase 'stream of consciousness' in 1890, and which novelist first applied it to literature in a 1918 review of Dorothy Richardson?",
+   "options": [
+    "Henri Bergson coined it in philosophy; T. S. Eliot first applied it to Conrad's 'Heart of Darkness'",
+    "William James coined it in psychology; May Sinclair first applied it to Richardson's 'Pilgrimage'",
+    "Sigmund Freud coined it in psychoanalysis; Virginia Woolf first applied it to Joyce's 'Ulysses'",
+    "Carl Jung coined it in mythology; E. M. Forster first applied it to Lawrence's 'The Rainbow'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William James coined stream of consciousness in 'The Principles of Psychology' in 1890, and May Sinclair applied it to Dorothy Richardson in 'The Egoist' in 1918."
+  },
+  {
+   "id": "md-h-02",
+   "question": "In the draft Preface to his posthumously published 'Poems' (1920), how did Wilfred Owen famously define his subject?",
+   "options": [
+    "'I have a rendezvous with Death at some disputed barricade.'",
+    "'Poetry is the spontaneous overflow of powerful trench feelings.'",
+    "'There is some corner of a foreign field that is for ever England.'",
+    "'My subject is War, and the pity of War. The Poetry is in the pity.'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In his 1918 draft Preface, Wilfred Owen wrote: Above all I am not concerned with Poetry. My subject is War, and the pity of War. The Poetry is in the pity."
+  },
+  {
+   "id": "md-h-03",
+   "question": "In July 1917, after issuing his public protest 'Finished with the War: A Soldier's Declaration', where was Siegfried Sassoon sent through Robert Graves's intervention?",
+   "options": [
+    "The Tower of London to face a general court-martial and execution for high treason",
+    "Garsington Manor in Oxfordshire to serve as private secretary to Lady Ottoline Morrell",
+    "Neutral Switzerland to recover alongside James Joyce and the Dadaist poets in Zurich",
+    "Craiglockhart War Hospital near Edinburgh, where he was treated by Dr. W. H. R. Rivers"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Graves testified that Sassoon had shell shock, sending him to Craiglockhart War Hospital under psychiatrist W. H. R. Rivers, where Sassoon met Wilfred Owen."
+  },
+  {
+   "id": "md-h-04",
+   "question": "In Wilfred Owen's 'Strange Meeting' (1918, famous for its pararhyme), whom does the speaker encounter in the subterranean tunnel of Hell?",
+   "options": [
+    "His mentor Siegfried Sassoon reciting Latin verses from Horace on the Western Front",
+    "The ghost of Rupert Brooke mourning his burial on the Greek island of Skyros",
+    "A blind French peasant woman searching the Somme battlefield for her six drowned sons",
+    "The German soldier he killed the day before, who says 'I am the enemy you killed, my friend'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Owen's 'Strange Meeting' uses half-rhyme or pararhyme to dramatize reconciliation with the dead German soldier in Hell."
+  },
+  {
+   "id": "md-h-05",
+   "question": "Which two First World War writers authored the 1928 prose memoir 'Undertones of War' and the 1937 modernist epic poem 'In Parenthesis'?",
+   "options": [
+    "Edmund Blunden and David Jones",
+    "Charles Sorley and Julian Grenfell",
+    "Ivor Gurney and Edward Thomas",
+    "Richard Aldington and Frederic Manning"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Edmund Blunden published 'Undertones of War' in 1928, and Welsh poet-engraver David Jones published 'In Parenthesis' in 1937."
+  },
+  {
+   "id": "md-h-06",
+   "question": "In W. B. Yeats's esoteric system set out in 'A Vision' (1925, inspired by Georgie Hyde-Lees's automatic writing), what symbol represents 2,000-year historical cycles?",
+   "options": [
+    "Seven ascending stairs inside the Castle of Ballylee",
+    "Two interpenetrating conical spirals called 'gyres'",
+    "Four concentric alchemical circles called 'mandalas'",
+    "Eighteen phases of the golden bird of Byzantium"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Yeats's 'A Vision' uses two intersecting cones or gyres, along with the 28 phases of the moon, to map historical and psychological cycles."
+  },
+  {
+   "id": "md-h-07",
+   "question": "In W. B. Yeats's 'Easter, 1916', whom does Yeats call 'A drunken, vainglorious lout' who nevertheless is numbered in the song after his execution?",
+   "options": [
+    "Countess Constance Markievicz of Lissadell in Sligo",
+    "James Connolly, leader of the Irish Citizen Army",
+    "Major John MacBride, estranged husband of Maud Gonne",
+    "Patrick Pearse, headmaster of St. Enda's bilingual school"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Despite his personal bitterness toward Maud Gonne's estranged husband Major John MacBride, Yeats honours his transformation in 'Easter, 1916'."
+  },
+  {
+   "id": "md-h-08",
+   "question": "In W. B. Yeats's 'Sailing to Byzantium' (1928), into what artificial, immortal form does the speaker wish to be gathered 'once out of nature'?",
+   "options": [
+    "A bronze statue of Cuchulain standing inside the Dublin General Post Office",
+    "A golden bird hammered by Grecian goldsmiths to sing to lords and ladies of Byzantium",
+    "A white swan floating among the fifty-nine autumn swans at Lady Gregory's Coole Park",
+    "A carved lapis lazuli mountain where two Chinamen climb toward a halfway house"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In stanza IV of 'Sailing to Byzantium', the speaker chooses the form of a hammered golden mechanical bird singing of what is past, or passing, or to come."
+  },
+  {
+   "id": "md-h-09",
+   "question": "In which 1919 essay (collected in 'The Sacred Wood', 1920) did T. S. Eliot coin the critical term 'objective correlative' while calling 'Hamlet' an artistic failure?",
+   "options": [
+    "'The Metaphysical Poets'",
+    "'Hamlet and His Problems'",
+    "'The Function of Criticism'",
+    "'Tradition and the Individual Talent'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eliot popularized the term objective correlative in his 1919 essay 'Hamlet and His Problems', arguing that Hamlet's emotion exceeds the external facts."
+  },
+  {
+   "id": "md-h-10",
+   "question": "In his 1921 essay 'The Metaphysical Poets', what phrase did T. S. Eliot coin for the 17th-century split between thought and feeling after Donne?",
+   "options": [
+    "'Dissociation of sensibility'",
+    "'Willing suspension of disbelief'",
+    "'Heresy of paraphrase'",
+    "'Negative capability'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Reviewing Grierson's anthology in 1921, Eliot argued that the Metaphysical poets possessed a unified sensibility before a dissociation of sensibility set in."
+  },
+  {
+   "id": "md-h-11",
+   "question": "In 'Tradition and the Individual Talent' (1919), how did T. S. Eliot formulate his 'impersonal theory of poetry' against Romanticism?",
+   "options": [
+    "'Poetry is the spontaneous overflow of powerful feelings recollected in tranquility'",
+    "'A poem should not mean but be, remaining motionless as a globed fruit or medallion'",
+    "'The poet is a nightingale who sits in darkness and sings to cheer its own solitude'",
+    "'Poetry is not a turning loose of emotion, but an escape from emotion and personality'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eliot compared the poet's mind to a shred of platinum catalyst and defined poetry as an escape from emotion and personality."
+  },
+  {
+   "id": "md-h-12",
+   "question": "What is the exact sequence of the five titled sections of T. S. Eliot's 'The Waste Land' (1922)?",
+   "options": [
+    "Burial of the Dead, A Game of Chess, Death by Water, The Fire Sermon, What the Thunder Said",
+    "Burial of the Dead, A Game of Chess, The Fire Sermon, Death by Water, What the Thunder Said",
+    "A Game of Chess, Burial of the Dead, Death by Water, The Fire Sermon, What the Thunder Said",
+    "Burial of the Dead, The Fire Sermon, A Game of Chess, Death by Water, What the Thunder Said"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The five parts of 'The Waste Land' are 'The Burial of the Dead', 'A Game of Chess', 'The Fire Sermon', 'Death by Water', and 'What the Thunder Said'."
+  },
+  {
+   "id": "md-h-13",
+   "question": "In T. S. Eliot's Notes to 'The Waste Land' (1922), which mythological figure in 'The Fire Sermon' is identified as 'the most important personage in the poem, uniting all the rest'?",
+   "options": [
+    "Tiresias, the blind Theban prophet 'throbbing between two lives'",
+    "Mr. Eugenides, the unshaven Smyrna merchant carrying currants in his pocket",
+    "Phlebas the Phoenician, who forgets the cry of gulls in 'Death by Water'",
+    "Madame Sosostris, the famous clairvoyante with her wicked pack of cards"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Note 218 to 'The Waste Land', Eliot writes that what Tiresias sees, in fact, is the substance of the poem."
+  },
+  {
+   "id": "md-h-14",
+   "question": "In his opening Note to 'The Waste Land' (1922), which two anthropological and Grail studies did T. S. Eliot credit for the poem's plan and symbolism?",
+   "options": [
+    "Robert Graves's 'The White Goddess' and Joseph Campbell's 'The Hero with a Thousand Faces'",
+    "Sigmund Freud's 'Totem and Taboo' and Carl Jung's 'Psychology of the Unconscious'",
+    "Oswald Spengler's 'The Decline of the West' and Jane Harrison's 'Themis'",
+    "Jessie L. Weston's 'From Ritual to Romance' and Sir James Frazer's 'The Golden Bough'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eliot explicitly credited Jessie L. Weston's 'From Ritual to Romance' of 1920 on the Grail legend and Frazer's 'The Golden Bough', especially 'Adonis, Attis, Osiris'."
+  },
+  {
+   "id": "md-h-15",
+   "question": "Which two poems by T. S. Eliot (1925 and 1930) respectively end 'Not with a bang but a whimper' and reflect his 1927 conversion to Anglo-Catholicism?",
+   "options": [
+    "'Sweeney Among the Nightingales' and 'Marina'",
+    "'Gerontion' and 'Journey of the Magi'",
+    "'Whispers of Immortality' and 'A Song for Simeon'",
+    "'The Hollow Men' and 'Ash-Wednesday'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'The Hollow Men' of 1925 carries the epigraph Mistah Kurtz—he dead, while 'Ash-Wednesday' of 1930 was Eliot's first long poem after joining the Anglican Church."
+  },
+  {
+   "id": "md-h-16",
+   "question": "In T. S. Eliot's 'Murder in the Cathedral' (1935), why is the Fourth Tempter the most dangerous to Archbishop Thomas Becket, prompting 'To do the right deed for the wrong reason'?",
+   "options": [
+    "He urges Becket to resume the office of Lord Chancellor and wield temporal power for the poor",
+    "He offers Becket a luxurious return to youthful pleasure and courtly favour under King Henry II",
+    "He tempts Becket with his own secret desire for the spiritual pride and glory of martyrdom",
+    "He promises Becket a military alliance with the English barons to overthrow the Norman monarchy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Fourth Tempter echoes Becket's own thoughts, tempting him to seek martyrdom for eternal glory rather than surrendering his will to God."
+  },
+  {
+   "id": "md-h-17",
+   "question": "Near the close of James Joyce's 'A Portrait of the Artist as a Young Man' (1916), what three weapons does Stephen Dedalus vow to use for his artistic defense?",
+   "options": [
+    "'Beauty, wholeness, and radiance'",
+    "'Pity, terror, and epiphany'",
+    "'Silence, exile, and cunning'",
+    "'Faith, fatherland, and church'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Refusing to serve church or state, Stephen Dedalus tells Cranly he will use only silence, exile, and cunning, and goes to forge the uncreated conscience of his race."
+  },
+  {
+   "id": "md-h-18",
+   "question": "In James Joyce's 'Ulysses' (published in Paris by Sylvia Beach in 1922), which three characters correspond to Odysseus, Penelope, and Telemachus?",
+   "options": [
+    "Leopold Bloom, Molly Bloom, and Stephen Dedalus",
+    "Gabriel Conroy, Gretta Conroy, and Michael Furey",
+    "Blazes Boylan, Martha Clifford, and Garrett Deasy",
+    "Buck Mulligan, Gerty MacDowell, and Simon Dedalus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Joyce's Homeric parallel, advertising canvasser Leopold Bloom is Odysseus, his wife Molly is Penelope, and young Stephen Dedalus is Telemachus."
+  },
+  {
+   "id": "md-h-19",
+   "question": "How do the opening ('Telemachus') and closing ('Penelope') episodes of James Joyce's eighteen-episode novel 'Ulysses' (1922) begin and end?",
+   "options": [
+    "Opens 'riverrun, past Eve and Adam's' and ends with 'a way a lone a last a loved a long the'",
+    "Opens 'Mrs. Dalloway said she would buy the flowers herself' and ends 'For there she was'",
+    "Opens 'Once upon a time and a very good time' and ends 'Welcome, O life! I go to encounter'",
+    "Opens 'Stately, plump Buck Mulligan' and ends with Molly's 'yes I said yes I will Yes'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Episode 1, Telemachus, opens with Buck Mulligan at Sandycove tower, and Episode 18, Penelope, closes with Molly Bloom affirming Yes."
+  },
+  {
+   "id": "md-h-20",
+   "question": "In James Joyce's circular dream-novel 'Finnegans Wake' (1939), which two archetypal figures are represented by the recurring initials 'HCE' and 'ALP'?",
+   "options": [
+    "Humphrey Chimpden Earwicker and his wife Anna Livia Plurabelle",
+    "Hugh Cuchulain Emerald and his queen Augusta Lady Parnell",
+    "Henry Charles Esmonde and his daughter Arabella Livia Pendennis",
+    "Harold Christopher Evelyn and his sister Alice Lavinia Ponderevo"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'Finnegans Wake', HCE is the Chapelizod tavern-keeper Humphrey Chimpden Earwicker, Here Comes Everybody, and ALP is Anna Livia Plurabelle."
+  },
+  {
+   "id": "md-h-21",
+   "question": "In Virginia Woolf's 'Mrs. Dalloway' (1925), how are the parallel lives of Clarissa Dalloway and the shell-shocked veteran Septimus Warren Smith brought together at the climax?",
+   "options": [
+    "Clarissa sees Septimus leap from his Bloomsbury window while buying flowers on Bond Street",
+    "Septimus turns out to be the illegitimate son of Clarissa's former suitor Peter Walsh",
+    "Clarissa visits Septimus and his Italian wife Lucrezia at Craiglockhart after her party",
+    "Psychiatrist Sir William Bradshaw mentions Septimus's suicide at Clarissa's evening party"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Although Clarissa and Septimus never meet, Sir William and Lady Bradshaw bring news of his suicide to Clarissa's party, prompting her moment of insight."
+  },
+  {
+   "id": "md-h-22",
+   "question": "In Virginia Woolf's 'To the Lighthouse' (1927), what occurs in the brief middle section 'Time Passes', and how does the novel conclude in 'The Lighthouse'?",
+   "options": [
+    "Lily Briscoe destroys her canvas in despair when Charles Tansley proves women cannot paint",
+    "James Ramsay refuses to sail to the lighthouse and burns the summer house on the Isle of Skye",
+    "Mrs. Ramsay dies in brackets; Lily Briscoe finishes her canvas with 'I have had my vision'",
+    "Mr. Ramsay drowns sailing to the lighthouse; Mrs. Ramsay marries botanist William Bankes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Part II, Time Passes, Mrs. Ramsay's death is reported in brackets; in Part III, as Mr. Ramsay reaches the lighthouse, Lily completes her painting."
+  },
+  {
+   "id": "md-h-23",
+   "question": "Which experimental 1931 novel by Virginia Woolf consists of soliloquies by six friends—Bernard, Susan, Rhoda, Neville, Jinny, and Louis—mourning Percival?",
+   "options": [
+    "'Night and Day'",
+    "'The Waves'",
+    "'Between the Acts'",
+    "'Jacob's Room'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Woolf's 1931 novel 'The Waves' intersperses poetic interludes of a coastal day from dawn to night with the interwoven monologues of six characters."
+  },
+  {
+   "id": "md-h-24",
+   "question": "In which 1938 feminist-pacifist polemic did Virginia Woolf link patriarchal institutions with fascism and propose an 'Outsiders' Society'?",
+   "options": [
+    "'Three Guineas'",
+    "'A Room of One's Own'",
+    "'Mr. Bennett and Mrs. Brown'",
+    "'The Death of the Moth'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'Three Guineas' of 1938, Woolf answers three requests for donations by analyzing war, male pageantry, women's education, and fascism."
+  },
+  {
+   "id": "md-h-25",
+   "question": "Why was D. H. Lawrence's 1915 novel 'The Rainbow' suppressed under the Obscene Publications Act, and who are the two central male characters in its 1920 sequel 'Women in Love'?",
+   "options": [
+    "Banned for plagiarizing James Joyce's prose; 'Women in Love' stars Oliver Mellors and Clifford",
+    "Banned for sexual frankness and anti-war tone; 'Women in Love' stars Rupert Birkin and Gerald Crich",
+    "Banned for promoting Soviet communism; 'Women in Love' stars Richard Somers and Jack Callcott",
+    "Banned for libeling the British royal family; 'Women in Love' stars Paul Morel and William Morel"
+   ],
+   "correct_option_id": 1,
+   "explanation": "After 'The Rainbow' was seized in 1915, Lawrence explored the relationships of Ursula and Gudrun Brangwen with Rupert Birkin and Gerald Crich in 'Women in Love'."
+  },
+  {
+   "id": "md-h-26",
+   "question": "What are the three structural parts of E. M. Forster's 'A Passage to India' (1924), and what sound echoes inside the Marabar Caves?",
+   "options": [
+    "'Sawston', 'Cambridge', and 'Wiltshire'; the chime of King's College Chapel",
+    "'Florence', 'Surrey', and 'Venice'; the music of Beethoven's Fifth Symphony",
+    "'Mosque', 'Caves', and 'Temple'; the hollow echo 'boum' or 'ou-boum'",
+    "'Alexandria', 'Bombay', and 'Simla'; the roar of the Indian monsoon"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Forster's 'A Passage to India' is divided into 'Mosque', 'Caves', and 'Temple', with the Marabar Caves reducing every sound to a meaningless boum."
+  },
+  {
+   "id": "md-h-27",
+   "question": "How does E. M. Forster's 'A Passage to India' (1924) end when Cyril Fielding asks Dr. Aziz why they cannot be friends now?",
+   "options": [
+    "Their horses swerve apart, and the earth, rocks, and sky reply 'No, not yet... No, not there'",
+    "Mrs. Moore recovers from her illness and establishes an Anglo-Indian school in Chandrapore",
+    "Adela Quested returns to India to marry Dr. Aziz during the Hindu festival of Krishna at Mau",
+    "Dr. Aziz embraces Fielding and returns to work under Major Callendar at Chandrapore hospital"
+   ],
+   "correct_option_id": 0,
+   "explanation": "At the close of 'A Passage to India', Aziz declares they can only be friends once the British leave India, and the landscape answers No, not yet... No, not there."
+  },
+  {
+   "id": "md-h-28",
+   "question": "In Ford Madox Ford's 'The Good Soldier' (1915), who are the two couples whose polite facade at the spa town of Bad Nauheim conceals years of betrayal and suicide?",
+   "options": [
+    "Narrator John Dowell and his wife Florence, and Captain Edward Ashburnham and his wife Leonora",
+    "Statistician Christopher Tietjens and his wife Sylvia, and Valentine Wannop and General Campion",
+    "Novelist Philip Quarles and his wife Elinor, and the vitalist painter Mark Rampion and Mary Rampion",
+    "English squire Tony Last and his wife Brenda, and the social climber John Beaver and Mrs. Rattery"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Ford's 'The Good Soldier', John Dowell slowly reveals the affair between his wife Florence and Captain Edward Ashburnham and Edward's passion for Nancy Rufford."
+  },
+  {
+   "id": "md-h-29",
+   "question": "In Katherine Mansfield's 1922 short story 'The Garden Party', which young protagonist experiences an epiphany of life and death upon seeing the body of a dead neighbour?",
+   "options": [
+    "Miss Brill",
+    "Kezia Burnell",
+    "Laura Sheridan",
+    "Bertha Young"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Mansfield's 'The Garden Party', young Laura Sheridan wants to stop her family's party after a poor carter, Mr. Scott, is killed, and later visits his cottage."
+  },
+  {
+   "id": "md-h-30",
+   "question": "Which three 1920s satirical 'novels of ideas' did Aldous Huxley publish in 1921, 1923, and 1928 before writing 'Brave New World'?",
+   "options": [
+    "'Decline and Fall', 'Vile Bodies', and 'Black Mischief'",
+    "'The Doors of Perception', 'Heaven and Hell', and 'Island'",
+    "'Crome Yellow', 'Antic Hay', and 'Point Counter Point'",
+    "'Eyeless in Gaza', 'After Many a Summer', and 'Time Must Have a Stop'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Britannica notes that Huxley established the cynical postwar novel of ideas with 'Crome Yellow' in 1921, 'Antic Hay' in 1923, and 'Point Counter Point' in 1928."
+  },
+  {
+   "id": "md-h-31",
+   "question": "In Aldous Huxley's 'Brave New World' (1932), which Resident World Controller for Western Europe debates 'John the Savage' over Shakespeare, freedom, and happiness?",
+   "options": [
+    "Bernard Marx",
+    "Helmholtz Watson",
+    "Mustapha Mond",
+    "Henry Foster"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Mustapha Mond, one of ten World Controllers, explains to John the Savage and Bernard Marx that the World State sacrificed high art and freedom for stability and happiness."
+  },
+  {
+   "id": "md-h-32",
+   "question": "Which 1936 novel by Aldous Huxley—taking its title from Milton's 'Samson Agonistes'—uses non-chronological diary chapters to trace Anthony Beavis's turn to pacifism?",
+   "options": [
+    "'Eyeless in Gaza'",
+    "'Those Barren Leaves'",
+    "'Ape and Essence'",
+    "'The Devils of Loudun'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Huxley's 1936 novel 'Eyeless in Gaza' shuffles time periods from 1902 to 1934 to chart intellectual Anthony Beavis's conversion to mystical pacifism."
+  },
+  {
+   "id": "md-h-33",
+   "question": "In W. H. Auden's 1939 elegy 'In Memory of W. B. Yeats', which famous statement occurs in Section II regarding the social power of poetry?",
+   "options": [
+    "'For poetry makes nothing happen: it survives / In the valley of its making'",
+    "'Poets are the unacknowledged legislators of the world'",
+    "'We must love one another or die'",
+    "'The Poetry is in the pity'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Section II of 'In Memory of W. B. Yeats', Auden writes that Ireland hurt Yeats into poetry, yet poetry makes nothing happen: it is a way of happening, a mouth."
+  },
+  {
+   "id": "md-h-34",
+   "question": "With which close friend did W. H. Auden co-author the 1930s verse dramas 'The Dog Beneath the Skin' (1935), 'The Ascent of F6' (1936), and 'On the Frontier' (1938)?",
+   "options": [
+    "Christopher Isherwood",
+    "Benjamin Britten",
+    "Stephen Spender",
+    "Louis MacNeice"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Auden and Christopher Isherwood collaborated on three plays for the Group Theatre in the 1930s and the travel book 'Journey to a War' in 1939."
+  },
+  {
+   "id": "md-h-35",
+   "question": "In George Orwell's 'Animal Farm' (1945), which devoted cart-horse adopts the mottoes 'I will work harder' and 'Napoleon is always right' before being sold to the knacker?",
+   "options": [
+    "Moses",
+    "Boxer",
+    "Clover",
+    "Benjamin"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The loyal cart-horse Boxer represents the exploited working class and is betrayed by Napoleon to the horse-slaughterer when his strength fails."
+  },
+  {
+   "id": "md-h-36",
+   "question": "Which two landmark essays by George Orwell (1936 and 1940) respectively recount his experience as a colonial police officer in Burma and evaluate Henry Miller and Charles Dickens?",
+   "options": [
+    "'Politics and the English Language' and 'Why I Write'",
+    "'Shooting an Elephant' and 'Inside the Whale'",
+    "'The Lion and the Unicorn' and 'Such, Such Were the Joys'",
+    "'A Hanging' and 'Notes on Nationalism'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Orwell published his anti-imperialist essay 'Shooting an Elephant' in 'New Writing' in 1936 and his critical collection 'Inside the Whale and Other Essays' in 1940."
+  },
+  {
+   "id": "md-h-37",
+   "question": "In Evelyn Waugh's 1934 novel 'A Handful of Dust' (titled from 'The Waste Land'), what grotesque fate traps Tony Last at the end of the novel?",
+   "options": [
+    "He is killed in a senseless military training accident during the opening months of World War II",
+    "He becomes a Catholic monk at Brideshead Abbey after Lord Marchmain makes the sign of the cross",
+    "He is imprisoned for life in a British penal colony after his wife Brenda frames him for murder",
+    "He is held captive in the Brazilian jungle, forced to read Dickens aloud endlessly to Mr. Todd"
+   ],
+   "correct_option_id": 3,
+   "explanation": "While English society believes Tony Last died exploring Brazil, he is trapped forever in the jungle reading Dickens novels aloud to Mr. Todd."
+  },
+  {
+   "id": "md-h-38",
+   "question": "In Evelyn Waugh's 'Brideshead Revisited' (1945), who is the narrator who falls under the spell of the aristocratic Catholic Flyte family (Sebastian and Julia Flyte)?",
+   "options": [
+    "William Boot",
+    "Paul Pennyfeather",
+    "Charles Ryder",
+    "Guy Crouchback"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Subtitled 'The Sacred and Profane Memories of Captain Charles Ryder', Waugh's 1945 novel traces Ryder's bond with Sebastian and Julia Flyte."
+  },
+  {
+   "id": "md-h-39",
+   "question": "In Graham Greene's 'The Power and the Glory' (1940), set during anti-Catholic persecution in 1930s Mexico, who are the two nameless antagonists?",
+   "options": [
+    "The teenaged razor-gang leader Pinkie Brown and the Brighton waitress Rose",
+    "The colonial police commissioner Scobie and the young widow Helen Rolt",
+    "The American humanitarian Alden Pyle and the cynical British journalist Fowler",
+    "The fugitive 'whisky priest' and the idealistic socialist Police Lieutenant"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Greene's 1940 masterpiece pits the sinful yet heroic whisky priest against an incorruptible atheist Lieutenant in Tabasco, Mexico."
+  },
+  {
+   "id": "md-h-40",
+   "question": "In Sean O'Casey's 'Juno and the Paycock' (1924), who are the strutting, work-shy husband and his parasitic companion who lament that the world is 'in a terrible state o' chassis'?",
+   "options": [
+    "Jack Clitheroe and Fluther Good",
+    "'Captain' Jack Boyle and 'Joxer' Daly",
+    "Donal Davoren and Seumas Shields",
+    "Christy Mahon and Old Mahon"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In O'Casey's 1924 tragicomedy, while Juno Boyle holds her family together amidst Irish Civil War tragedy, Captain Boyle struts with Joxer Daly."
+  },
+  {
+   "id": "md-h-41",
+   "question": "Why did Dublin audiences riot at the Abbey Theatre in February 1926 during Sean O'Casey's play 'The Plough and the Stars', prompting W. B. Yeats to rebuke them from the stage?",
+   "options": [
+    "Because it portrayed a peasant youth in Mayo boasting of murdering his own father with a spade",
+    "Because it brought nationalist flags into a pub with a prostitute and critiqued the 1916 Rising",
+    "Because it praised Oliver Cromwell's conquest of Ireland and mocked Charles Stewart Parnell",
+    "Because it depicted Countess Cathleen selling her own soul to demons to buy food for peasants"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nationalists rioted over Act II of 'The Plough and the Stars' featuring Rosie Redmond; Yeats declared: You have disgraced yourselves again."
+  },
+  {
+   "id": "md-h-42",
+   "question": "In George Bernard Shaw's 'Heartbreak House: A Fantasia in the Russian Manner on English Themes' (published 1919), whose ship-shaped Sussex house symbolizes prewar Europe?",
+   "options": [
+    "King Magnus",
+    "Andrew Undershaft",
+    "Captain Shotover",
+    "General Burgoyne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Modeled on Chekhov's plays, Shaw's 'Heartbreak House' uses 88-year-old Captain Shotover's ship-house as an allegory of cultured Europe drifting toward catastrophe."
+  },
+  {
+   "id": "md-h-43",
+   "question": "In 'Science and Poetry' (1926), what term did Cambridge critic I. A. Richards coin for poetic statements that organize emotional attitudes rather than assert empirical facts?",
+   "options": [
+    "'Objective correlatives'",
+    "'Sprung rhythms'",
+    "'Pseudo-statements'",
+    "'Archetypal myths'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "I. A. Richards distinguished scientific referential language from emotive poetic language, calling poetic claims pseudo-statements."
+  },
+  {
+   "id": "md-h-44",
+   "question": "Which 1936 work of literary criticism by F. R. Leavis reassessed the English poetic tradition from Donne and Pope to Hopkins and Eliot, while demoting Milton and Shelley?",
+   "options": [
+    "'Revaluation: Tradition and Development in English Poetry'",
+    "'Fiction and the Reading Public'",
+    "'The Great Tradition: George Eliot, Henry James, Joseph Conrad'",
+    "'Seven Types of Ambiguity'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "F. R. Leavis published 'Revaluation' in 1936 on the poetic canon, whereas his पत्नी Q. D. Leavis wrote 'Fiction and the Reading Public' in 1932."
+  },
+  {
+   "id": "md-h-45",
+   "question": "Which 1928 novel by Radclyffe Hall—featuring the invert protagonist Stephen Gordon—was banned for obscenity in Britain despite defense preparation by Virginia Woolf and E. M. Forster?",
+   "options": [
+    "'Novel on Yellow Paper'",
+    "'Voyage in the Dark'",
+    "'The Well of Loneliness'",
+    "'Lolly Willowes'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "F. R. Leavis published 'Revaluation' in 1936 on the poetic canon, whereas his wife Q. D. Leavis wrote 'Fiction and the Reading Public' in 1932."
+  },
+  {
+   "id": "md-h-46",
+   "question": "Which two landmark works spearheaded the interwar 'Scottish Literary Renaissance': Hugh MacDiarmid's 1926 vernacular poem and Lewis Grassic Gibbon's 1932–1934 trilogy?",
+   "options": [
+    "'Tam o' Shanter' and 'The Heart of Midlothian'",
+    "'The City of Dreadful Night' and 'The House with the Green Shutters'",
+    "'Requiem for a Scotsman' and 'The Prime of Miss Jean Brodie'",
+    "'A Drunk Man Looks at the Thistle' and 'A Scots Quhair' (beginning with 'Sunset Song')"
+   ],
+   "correct_option_id": 3,
+   "explanation": "MacDiarmid's 'A Drunk Man Looks at the Thistle' in 1926 and Gibbon's 'A Scots Quhair' trilogy in 1932–1934 led the 20th-century Scottish Renaissance."
+  },
+  {
+   "id": "md-h-47",
+   "question": "Which 1928 play by R. C. Sherriff—set in a British officers' dugout in March 1918 and featuring Captain Stanhope, Osborne, and Raleigh—became the greatest interwar West End stage drama of WWI?",
+   "options": [
+    "'Tam o' Shanter' and 'The Heart of Midlothian' by Sir Walter Scott",
+    "'A Drunk Man Looks at the Thistle' and 'A Scots Quhair' opening with 'Sunset Song'",
+    "'The City of Dreadful Night' and 'The House with the Green Shutters'",
+    "'Requiem for a Scotsman' and 'The Prime of Miss Jean Brodie'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "R. C. Sherriff's trench drama 'Journey's End', first directed by James Whale in December 1928 with Laurence Olivier as Stanhope, was a worldwide triumph."
+  },
+  {
+   "id": "md-h-48",
+   "question": "Which Anglo-Irish novelist depicted the decline of the Protestant 'Big House' during the Irish War of Independence in 'The Last September' (1929) and wrote 'The Death of the Heart' (1938)?",
+   "options": [
+    "Molly Keane",
+    "Elizabeth Bowen",
+    "Iris Murdoch",
+    "Maria Edgeworth"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Elizabeth Bowen portrayed the Anglo-Irish Big House in 'The Last September' in 1929 and London wartime life in 'The Demon Lover' in 1945."
+  },
+  {
+   "id": "md-h-49",
+   "question": "Which of the following fixed-fact statements regarding the Modern Period (1914–1945) is NOT correct?",
+   "options": [
+    "John Galsworthy received the Nobel Prize in Literature in 1932, the year before his death",
+    "W. B. Yeats became the first Irish writer to receive the Nobel Prize in Literature in 1923",
+    "George Bernard Shaw received the Nobel Prize in Literature in 1925 after the success of 'Saint Joan'",
+    "T. S. Eliot won the Nobel Prize in Literature in 1922 immediately upon publishing 'The Waste Land'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "T. S. Eliot was awarded the Nobel Prize in Literature in 1948, whereas Yeats won in 1923, Shaw in 1925, and Galsworthy in 1932."
+  },
+  {
+   "id": "md-h-50",
+   "question": "Which 1934 dystopian and satirical novel by Jean Rhys—followed by 'Good Morning, Midnight' in 1939—portrays the Caribbean-born chorus girl Anna Morgan adrift in prewar London?",
+   "options": [
+    "'Voyage in the Dark'",
+    "'Love on the Dole'",
+    "'Wide Sargasso Sea'",
+    "'Cold Comfort Farm'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dominica-born modernist Jean Rhys published 'Quartet' in 1928, 'After Leaving Mr. Mackenzie' in 1931, 'Voyage in the Dark' in 1934, and 'Good Morning, Midnight' in 1939."
+  }
+ ]
+}
