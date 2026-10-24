@@ -1,0 +1,608 @@
+{
+ "bankId": "romantic",
+ "period": "Romantic Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rm-h-01",
+   "question": "Which six-line Scots stanza form (rhyming 'aaabab') did Robert Burns popularize in 'To a Mouse' (1785) and 'To a Louse' (1786)?",
+   "options": [
+    "The Italian ottava rima stanza",
+    "The Standard Habbie stanza",
+    "The Spenserian nine-line stanza",
+    "The Chaucerian rime royal stanza"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Burns mastered the six-line Standard Habbie stanza, rhyming aaabab with four tetrameter lines and two short dimeter lines."
+  },
+  {
+   "id": "rm-h-02",
+   "question": "In Robert Burns's 'Tam o' Shanter' (1791), where does Tam see witches dancing, and which witch pulls off his mare Meg's tail?",
+   "options": [
+    "Grasmere Parish Chapel; Old Martha Ray",
+    "Stoke Poges Churchyard; Madge Wildfire",
+    "Melrose Abbey Ruins; Gypsy Meg Merrilies",
+    "Alloway Kirk; Nannie in her 'cutty sark'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Burns's 1791 mock-heroic narrative, Tam watches witches dance in Alloway Kirk and flees Nannie across the Brig o' Doon."
+  },
+  {
+   "id": "rm-h-03",
+   "question": "Which 1785 dramatic monologue by Robert Burns satirizes Calvinist hypocrisy and predestination through Elder William Fisher?",
+   "options": [
+    "'The Cotter's Saturday Night'",
+    "'Address to the Deil'",
+    "'The Jolly Beggars'",
+    "'Holy Willie's Prayer'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Burns's 1785 monologue 'Holy Willie's Prayer' exposes the self-righteous hypocrisy of Calvinist church elder William Fisher."
+  },
+  {
+   "id": "rm-h-04",
+   "question": "Which ornate 1780s–1790s poetic school led by Robert Merry and Hannah Cowley was demolished by William Gifford's 'The Baviad' (1791)?",
+   "options": [
+    "The Spasmodic School",
+    "The Cockney School",
+    "The Satanic School",
+    "The Della Cruscan School"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Della Cruscans began with 'The Florence Miscellany' in 1785 and were crushed by William Gifford's 'The Baviad' and 'The Maeviad'."
+  },
+  {
+   "id": "rm-h-05",
+   "question": "In William Blake's 'The Marriage of Heaven and Hell' (1790–1793), which section states 'The road of excess leads to the palace of wisdom'?",
+   "options": [
+    "The Proverbs of Hell",
+    "A Memorable Fancy",
+    "Auguries of Innocence",
+    "The Song of Liberty"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Blake's 'The Marriage of Heaven and Hell' asserts 'Without Contraries is no progression' and includes the Proverbs of Hell."
+  },
+  {
+   "id": "rm-h-06",
+   "question": "In William Blake's prophetic mythology ('The Book of Urizen', 1794), which figures personify oppressive Reason, Imagination, and Revolution?",
+   "options": [
+    "Bromion, Oothoon, and Theotormon",
+    "Urizen, Los, and Orc",
+    "Albion, Luvah, and Tharmas",
+    "Rintrah, Palamabron, and Satan"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Blake's private mythology, Urizen represents dogmatic reason, Los represents creative imagination, and Orc embodies revolution."
+  },
+  {
+   "id": "rm-h-07",
+   "question": "In the Preface to which prophetic work (1804–1810) did William Blake include the famous hymn mentioning 'these dark Satanic Mills'?",
+   "options": [
+    "'The Four Zoas'",
+    "'The French Revolution'",
+    "'Milton: A Poem in Two Books'",
+    "'America a Prophecy'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Blake's famous lyric 'And did those feet in ancient time', naming dark Satanic Mills, prefaces 'Milton: A Poem in Two Books'."
+  },
+  {
+   "id": "rm-h-08",
+   "question": "Whose November 1789 sermon 'A Discourse on the Love of Our Country' directly provoked Edmund Burke's 'Reflections on the Revolution in France'?",
+   "options": [
+    "Rev. John Thelwall",
+    "Dr. Richard Price",
+    "Dr. Joseph Priestley",
+    "John Horne Tooke"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Dissenting minister Dr. Richard Price delivered 'A Discourse on the Love of Our Country' in November 1789, triggering Burke's 1790 reply."
+  },
+  {
+   "id": "rm-h-09",
+   "question": "In 'Reflections on the Revolution in France' (1790), Edmund Burke lamented the fall of Marie Antoinette and warned against:",
+   "options": [
+    "The enclosure of common village pastures by wealthy factory landlords",
+    "The passing of the age of chivalry and rule by 'a swinish multitude'",
+    "The arbitrary suspension of Habeas Corpus by Prime Minister Mr. Pitt",
+    "The tyranny of hereditary monarchs governing beyond the silent grave"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Burke mourned that the age of chivalry was gone and warned that learning would be trampled down by a swinish multitude."
+  },
+  {
+   "id": "rm-h-10",
+   "question": "In Part I of 'Rights of Man' (1791), how did Thomas Paine famously criticize Edmund Burke's theatrical sympathy for French royalty?",
+   "options": [
+    "'He pities the plumage, but forgets the dying bird'",
+    "'Man is born free, and everywhere he is in chains'",
+    "'Inclosure came and trampled on labour's rights'",
+    "'Marriage is the worst of all legal monopolies'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Paine wrote 'He pities the plumage, but forgets the dying bird' to expose Burke's indifference to the suffering French people."
+  },
+  {
+   "id": "rm-h-11",
+   "question": "Before publishing 'A Vindication of the Rights of Woman' (1792), which work did Mary Wollstonecraft publish in November 1790 to answer Burke?",
+   "options": [
+    "'Thoughts on the Education of Daughters'",
+    "'Letters Written in Sweden, Norway, and Denmark'",
+    "'Maria: or, The Wrongs of Woman'",
+    "'A Vindication of the Rights of Men'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wollstonecraft published 'A Vindication of the Rights of Men' in November 1790 as the first major rebuttal to Burke's 'Reflections'."
+  },
+  {
+   "id": "rm-h-12",
+   "question": "In 'A Vindication of the Rights of Woman' (1792, dedicated to Talleyrand), Mary Wollstonecraft attacked Book V of Rousseau's 'Emile' for:",
+   "options": [
+    "Banning the study of botany, music, and domestic needlework in country schools",
+    "Educating the female character Sophie solely to be passive and pleasing to men",
+    "Rejecting companionate marriage in favour of monastic celibacy for young women",
+    "Advocating state-funded co-education for boys and girls in the French Republic"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wollstonecraft critiqued Rousseau's 'Emile' and conduct writers Fordyce and Gregory for denying women rational education."
+  },
+  {
+   "id": "rm-h-13",
+   "question": "In 'Political Justice' (1793), William Godwin's utilitarian 'Fire of Cambrai' dilemma argues that from a burning palace one must save:",
+   "options": [
+    "Archbishop Fénelon rather than his chambermaid, even if the maid were one's mother",
+    "The royal library manuscripts rather than any living inhabitant inside the palace",
+    "One's own mother or sister first, because domestic affection outranks public utility",
+    "King Louis XVI rather than a peasant, to preserve the organic contract of the state"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Godwin argued that impartial universal benevolence requires saving Fénelon, author of 'Telemachus', over a chambermaid."
+  },
+  {
+   "id": "rm-h-14",
+   "question": "In William Godwin's 1794 novel 'Things as They Are; or, The Adventures of Caleb Williams', which aristocratic master persecutes Caleb?",
+   "options": [
+    "Signor Montoni of Udolpho",
+    "Lord Manfred of Otranto",
+    "General Tilney of Northanger",
+    "Squire Ferdinando Falkland"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Godwin's 1794 novel, Squire Falkland uses the legal system to persecute his secretary Caleb Williams after Caleb discovers his secret murder."
+  },
+  {
+   "id": "rm-h-15",
+   "question": "Which three reformist leaders of the London Corresponding Society were acquitted in Prime Minister Pitt's 1794 Treason Trials?",
+   "options": [
+    "Leigh Hunt, his brother John Hunt, and William Hazlitt",
+    "Henry Orator Hunt, William Cobbett, and Richard Carlile",
+    "Robert Merry, William Gifford, and John Wilson Croker",
+    "Thomas Hardy, John Horne Tooke, and John Thelwall"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Defended by Thomas Erskine in 1794, Hardy, Tooke, and Thelwall were acquitted by London juries before Pitt passed the 1795 Gagging Acts."
+  },
+  {
+   "id": "rm-h-16",
+   "question": "Which 1786 Oriental Gothic novel by William Beckford, subtitled 'An Arabian Tale', depicts a Caliph's descent into the Hall of Eblis?",
+   "options": [
+    "'The Italian'",
+    "'The Monk'",
+    "'Vathek'",
+    "'Thalaba'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "William Beckford's 1786 Oriental Gothic tale 'Vathek' portrays a Faustian quest ending in eternal torment in the Hall of Eblis."
+  },
+  {
+   "id": "rm-h-17",
+   "question": "Ann Radcliffe used the 'explained supernatural' in 'The Mysteries of Udolpho' (1794) and 'The Italian' (1797), which feature which villains?",
+   "options": [
+    "John Melmoth and Count Cenci",
+    "Abbot Ambrosio and Lord Ruthven",
+    "Signor Montoni and Father Schedoni",
+    "Squire Falkland and Barnabas Tyrrel"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Radcliffe's 'The Mysteries of Udolpho' features Emily St. Aubert and Montoni, while 'The Italian' features the sinister monk Schedoni."
+  },
+  {
+   "id": "rm-h-18",
+   "question": "How did Matthew Gregory Lewis's 'The Monk' (1796), featuring the corrupt Capuchin abbot Ambrosio, depart from Ann Radcliffe's Gothic mode?",
+   "options": [
+    "It rejected the explained supernatural for visceral horror and literal demons",
+    "It was composed entirely in Spenserian stanzas as an allegorical court romance",
+    "It explained all ghostly phenomena as harmless optical illusions of moonlight",
+    "It replaced medieval European castles with realistic English country-house life"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Unlike Radcliffe's sublime Terror and explained supernatural, Monk Lewis used graphic Horror and a literal demonic pact in 'The Monk'."
+  },
+  {
+   "id": "rm-h-19",
+   "question": "In Book XI of 'The Prelude', how did William Wordsworth recall his youthful enthusiasm for the early French Revolution of 1789–1792?",
+   "options": [
+    "'The Sensual and the Dark rebel in vain, / Slaves by their own compulsion!'",
+    "'Whither is fled the visionary gleam? / Where is it now, the glory and the dream?'",
+    "'O Lady! we receive but what we give, / And in our life alone does Nature live'",
+    "'Bliss was it in that dawn to be alive, / But to be young was very heaven!'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wordsworth's 'The Prelude' famously captures early revolutionary rapture with Bliss was it in that dawn to be alive."
+  },
+  {
+   "id": "rm-h-20",
+   "question": "In which 1798 poem, first printed in 'The Morning Post' as 'The Recantation', did Coleridge renounce France after its invasion of Switzerland?",
+   "options": [
+    "'France: An Ode'",
+    "'Fire, Famine, and Slaughter'",
+    "'Fears in Solitude'",
+    "'Destruction of the Bastile'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Coleridge published 'France: An Ode' in 1798 to recant his support for the French Republic after it invaded Switzerland."
+  },
+  {
+   "id": "rm-h-21",
+   "question": "In Wordsworth's pastoral poem 'Michael' (1800), what remains unfinished at Green-head Ghyll after Michael's son Luke goes to the city?",
+   "options": [
+    "The abbey belfry",
+    "The village schoolhouse",
+    "The stone bridge",
+    "The stone sheepfold"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Wordsworth's 1800 pastoral 'Michael', the ruined shepherd's stone sheepfold at Green-head Ghyll remains forever unfinished."
+  },
+  {
+   "id": "rm-h-22",
+   "question": "When Wordsworth published 'The Excursion' in 1814, he announced it as the middle part of which vast, unfinished philosophical poem?",
+   "options": [
+    "'The Waggoner'",
+    "'The White Doe'",
+    "'The Recluse'",
+    "'The Ruined Cottage'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wordsworth planned 'The Recluse' as a three-part philosophical poem on Man, Nature, and Society, completing only 'The Prelude' and 'The Excursion'."
+  },
+  {
+   "id": "rm-h-23",
+   "question": "In 'Biographia Literaria' (1817), how does Samuel Taylor Coleridge distinguish 'Imagination' from 'Fancy' and critique Wordsworth's Preface?",
+   "options": [
+    "He agrees completely with Wordsworth that there is no difference between prose and verse diction",
+    "Imagination is a unifying creative power while Fancy combines fixities; rustic speech is flawed",
+    "Imagination belongs solely to natural scientists while Fancy belongs to rustic ballad singers",
+    "Fancy is the highest divine faculty of a poet while Primary Imagination is mechanical memory"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Coleridge divides Imagination into primary and secondary, contrasts it with mechanical Fancy, and critiques Wordsworth's theory of rustic diction."
+  },
+  {
+   "id": "rm-h-24",
+   "question": "Which 1802 ode by Samuel Taylor Coleridge—originally drafted as a verse letter to Sara Hutchinson—mourns his fading 'shaping spirit of Imagination'?",
+   "options": [
+    "'Dejection: An Ode'",
+    "'Ode to the Departing Year'",
+    "'Reflections on Having Left a Place of Retirement'",
+    "'Hymn before Sun-rise'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Coleridge's 'Dejection: An Ode' of 1802 laments the loss of his joy and his shaping spirit of Imagination."
+  },
+  {
+   "id": "rm-h-25",
+   "question": "Which editor of 'The Edinburgh Review' popularized the 'Lake School' label and began his 1814 review of 'The Excursion' with 'This will never do'?",
+   "options": [
+    "John Wilson Croker",
+    "Francis Jeffrey",
+    "William Gifford",
+    "John Gibson Lockhart"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Whig editor Francis Jeffrey attacked the Lake School in 'The Edinburgh Review' and opened his 1814 review of 'The Excursion' with This will never do."
+  },
+  {
+   "id": "rm-h-26",
+   "question": "Who wrote under the pseudonym 'Z' in 'Blackwood's Edinburgh Magazine' (1817–1818) to attack Leigh Hunt, Keats, and Hazlitt as the 'Cockney School'?",
+   "options": [
+    "Rev. Sydney Smith",
+    "Lord Henry Brougham",
+    "John Gibson Lockhart",
+    "Walter Savage Landor"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Gibson Lockhart used the signature Z in 'Blackwood's Magazine' in October 1817 to launch the Cockney School attacks."
+  },
+  {
+   "id": "rm-h-27",
+   "question": "In 'Cockney School of Poetry No. 4' (August 1818), how did Lockhart ('Z') mock John Keats's medical training after reviewing 'Endymion'?",
+   "options": [
+    "'Back to the shop Mr John, back to plasters, pills, and ointment boxes'",
+    "'Here lies a young London apothecary whose rhymes were writ in water'",
+    "'This will never do for the educated critical gentlemen of Edinburgh'",
+    "'A fiery particle very nearly snuffed out by a single quarterly article'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lockhart sneered at Keats's apothecary apprenticeship by telling him to go back to the shop, plasters, pills, and ointment boxes."
+  },
+  {
+   "id": "rm-h-28",
+   "question": "In the Preface to which 1821 poem did Poet Laureate Robert Southey denounce Lord Byron and P. B. Shelley as the 'Satanic School'?",
+   "options": [
+    "'A Vision of Judgement'",
+    "'Thalaba the Destroyer'",
+    "'Roderick, the Last of the Goths'",
+    "'The Curse of Kehama'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In the March 1821 Preface to his hexameter poem 'A Vision of Judgement' on George III, Southey coined the term Satanic School."
+  },
+  {
+   "id": "rm-h-29",
+   "question": "Where did Lord Byron publish his 1822 ottava rima parody 'The Vision of Judgment', in which Saint Peter knocks Southey into a lake?",
+   "options": [
+    "In 'The Edinburgh Review', edited by Whig critic Francis Jeffrey and Sydney Smith",
+    "In 'The Quarterly Review', published in London by Byron's publisher John Murray",
+    "In the first issue of 'The Liberal', founded in Italy by Byron, Shelley, and Hunt",
+    "In 'Blackwood's Edinburgh Magazine', edited by William Blackwood and John Wilson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "After John Murray feared prosecution, Byron published 'The Vision of Judgment' in October 1822 in the first issue of 'The Liberal'."
+  },
+  {
+   "id": "rm-h-30",
+   "question": "On 27 February 1812, Lord Byron delivered his maiden speech in the House of Lords to oppose the Frame Breaking Bill targeting:",
+   "options": [
+    "The Captain Swing farmworkers",
+    "The London Corresponding Society",
+    "The Luddite textile artisans",
+    "The Peterloo reform demonstrators"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron defended the desperate Luddite weavers against the 1812 Frame Breaking Act and wrote 'An Ode to the Framers of the Frame Bill'."
+  },
+  {
+   "id": "rm-h-31",
+   "question": "Which 1817–1818 Venetian poem by Lord Byron marked his first use of the comic Italian 'ottava rima' stanza later perfected in 'Don Juan'?",
+   "options": [
+    "'Parisina'",
+    "'The Bride of Abydos'",
+    "'Beppo'",
+    "'The Siege of Corinth'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron's witty Venetian tale 'Beppo' introduced the ottava rima stanza that became the vehicle for 'Don Juan'."
+  },
+  {
+   "id": "rm-h-32",
+   "question": "Which two philosophical dramatic poems by Lord Byron (1817 and 1821) portray an Alpine nobleman in the Alps and the first biblical murderer?",
+   "options": [
+    "'Manfred' and 'Cain'",
+    "'Marino Faliero' and 'Sardanapalus'",
+    "'Werner' and 'The Two Foscari'",
+    "'Heaven and Earth' and 'The Deformed Transformed'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Byron explored gloomy metaphysical rebellion in his dramatic poems 'Manfred' in 1817 and 'Cain: A Mystery' in 1821."
+  },
+  {
+   "id": "rm-h-33",
+   "question": "In Shelley's 'The Masque of Anarchy' (written 1819 after Peterloo), which cabinet minister wears the mask of Murder before the call 'Ye are many—they are few'?",
+   "options": [
+    "Foreign Secretary Lord Castlereagh",
+    "Lord High Chancellor Lord Eldon",
+    "Home Department Secretary Sidmouth",
+    "Whig Prime Minister Charles Earl Grey"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'The Masque of Anarchy', Shelley portrays Castlereagh as Murder, Eldon as Fraud, and Sidmouth as Hypocrisy."
+  },
+  {
+   "id": "rm-h-34",
+   "question": "Which 1819 political sonnet by P. B. Shelley begins 'An old, mad, blind, despised, and dying King' and denounces 'liberticide' at Peterloo?",
+   "options": [
+    "'England in 1819'",
+    "'To Wordsworth'",
+    "'Song to the Men of England'",
+    "'Feelings of a Republican on the Fall of Bonaparte'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shelley's sonnet 'England in 1819' attacks King George III, the Prince Regent, the Six Acts crisis, and the Peterloo Massacre."
+  },
+  {
+   "id": "rm-h-35",
+   "question": "In 'Don Juan' (Canto XI), how did Lord Byron ironize the popular myth promoted in Shelley's 'Adonais' that hostile reviews killed John Keats?",
+   "options": [
+    "That Keats drank 'a beaker full of the warm South and faded quietly into the forest dim'",
+    "That Keats's mind, 'that very fiery particle', let itself be 'snuff'd out by an article'",
+    "That Keats was 'a pale knight-at-arms loitering alone beside the withered autumn sedge'",
+    "That Keats was 'a starved London apothecary sent back to his plasters and ointment boxes'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Byron quipped in 'Don Juan' that it was strange the mind, that very fiery particle, should let itself be snuffed out by an article."
+  },
+  {
+   "id": "rm-h-36",
+   "question": "In John Keats's 'The Eve of St. Agnes' (1819, written in Spenserian stanzas), who are the two young lovers who elope into the storm?",
+   "options": [
+    "Lycius and the Lamia",
+    "Porphyro and Madeline",
+    "Endymion and Cynthia",
+    "Lorenzo and Isabella"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Keats's 'The Eve of St. Agnes', Porphyro enters Madeline's chamber with old Angela's help and elopes with her into the storm."
+  },
+  {
+   "id": "rm-h-37",
+   "question": "Which 1819 ballad by John Keats portrays a 'knight-at-arms, / Alone and palely loitering' after being enthralled by 'a faery's child'?",
+   "options": [
+    "'Ode to Psyche'",
+    "'The Fall of Hyperion'",
+    "'Ode on Melancholy'",
+    "'La Belle Dame sans Merci'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Keats's 1819 ballad 'La Belle Dame sans Merci' depicts a pale knight abandoned on a cold hill's side where no birds sing."
+  },
+  {
+   "id": "rm-h-38",
+   "question": "Which of John Keats's 1819 odes concludes with the lines \"'Beauty is truth, truth beauty,'—that is all / Ye know on earth, and all ye need to know\"?",
+   "options": [
+    "'Ode on Indolence'",
+    "'Ode to a Nightingale'",
+    "'Ode on a Grecian Urn'",
+    "'Hymn to Apollo'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Keats's 'Ode on a Grecian Urn' of 1819 ends with the urn's famous message equating Beauty and Truth."
+  },
+  {
+   "id": "rm-h-39",
+   "question": "In Jane Austen's 'Northanger Abbey' (1817), which heroine's overactive imagination is fuelled by reading Ann Radcliffe's 'The Mysteries of Udolpho'?",
+   "options": [
+    "Fanny Price",
+    "Anne Elliot",
+    "Marianne Dashwood",
+    "Catherine Morland"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 'Northanger Abbey', Catherine Morland reads 'The Mysteries of Udolpho' and imagines gothic crimes at General Tilney's abbey."
+  },
+  {
+   "id": "rm-h-40",
+   "question": "Jane Austen's 'Sense and Sensibility' (1811), contrasting the sisters Elinor and Marianne Dashwood, was first drafted in the 1790s under what title?",
+   "options": [
+    "'The Watsons'",
+    "'Elinor and Marianne'",
+    "'First Impressions'",
+    "'Catharine, or the Bower'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Austen originally drafted 'Sense and Sensibility' in the 1790s under the title 'Elinor and Marianne'."
+  },
+  {
+   "id": "rm-h-41",
+   "question": "In which 1818 Waverley novel by Sir Walter Scott does the humble Scottish heroine Jeanie Deans walk to London to save her sister Effie?",
+   "options": [
+    "'The Bride of Lammermoor'",
+    "'The Heart of Midlothian'",
+    "'The Lady of the Lake'",
+    "'The Lay of the Last Minstrel'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Scott's 1818 novel 'The Heart of Midlothian' opens with the Edinburgh Porteous Riots and follows Jeanie Deans's journey to London."
+  },
+  {
+   "id": "rm-h-42",
+   "question": "Along with Mary Shelley's 'Frankenstein' (1818), which 1819 prose tale by Dr. John Polidori grew out of the 1816 Villa Diodati ghost-story contest?",
+   "options": [
+    "'Melmoth the Wanderer'",
+    "'Nightmare Abbey'",
+    "'The Vampyre'",
+    "'The Private Memoirs and Confessions of a Justified Sinner'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron's physician John Polidori wrote 'The Vampyre' in 1819, introducing the aristocratic vampire Lord Ruthven, after the 1816 Villa Diodati summer."
+  },
+  {
+   "id": "rm-h-43",
+   "question": "In Mary Shelley's 'Frankenstein; or, The Modern Prometheus' (1818), which Arctic explorer narrates the outer epistolary frame to his sister?",
+   "options": [
+    "Young Henry Clerval",
+    "Alphonse Frankenstein",
+    "Captain Robert Walton",
+    "Exiled Felix De Lacey"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Arctic sea captain Robert Walton rescues Victor Frankenstein on the ice and frames the novel in letters to his sister Margaret Saville."
+  },
+  {
+   "id": "rm-h-44",
+   "question": "Which 1820 Gothic novel by Charles Robert Maturin uses nested frame tales to trace an ancestor who bargains his soul for 150 extra years of life?",
+   "options": [
+    "'Melmoth the Wanderer'",
+    "'The Mysteries of Udolpho'",
+    "'The Castle of Otranto'",
+    "'Headlong Hall'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Charles Robert Maturin's 'Melmoth the Wanderer' of 1820 employs a Chinese-box frame structure to recount a Faustian curse."
+  },
+  {
+   "id": "rm-h-45",
+   "question": "Which 1818 satirical novel by Thomas Love Peacock parodies Shelley as Scythrop Glowry, Byron as Mr. Cypress, and Coleridge as Mr. Flosky?",
+   "options": [
+    "'Headlong Hall'",
+    "'Crotchet Castle'",
+    "'Nightmare Abbey'",
+    "'Maid Marian'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas Love Peacock's 1818 conversation novel 'Nightmare Abbey' satirizes Romantic melancholy through Scythrop, Cypress, and Flosky."
+  },
+  {
+   "id": "rm-h-46",
+   "question": "Which essay in Charles Lamb's 'Essays of Elia' (1823) ends with the revelation that his listeners, Alice and John, are merely 'nothing, less than nothing, and dreams'?",
+   "options": [
+    "'A Dissertation upon Roast Pig'",
+    "'The South-Sea House'",
+    "'Old China'",
+    "'Dream Children: A Reverie'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lamb's 'Dream Children: A Reverie' poignantly imagines the children he might have had with Alice W—n before waking alone."
+  },
+  {
+   "id": "rm-h-47",
+   "question": "In which 1825 collection of contemporary portraits did William Hazlitt call Coleridge 'the most impressive talker of his age'?",
+   "options": [
+    "'Characters of Shakespear's Plays'",
+    "'The Spirit of the Age'",
+    "'The Round Table'",
+    "'Lectures on the English Poets'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Hazlitt's 'The Spirit of the Age' of 1825 profiles leading Romantic writers including Coleridge, Wordsworth, Byron, and Scott."
+  },
+  {
+   "id": "rm-h-48",
+   "question": "Which two famous critical and ironic essays were written by Thomas De Quincey in 1823 and 1827 respectively?",
+   "options": [
+    "'A Defence of Poetry' and 'The Necessity of Atheism'",
+    "'On the Knocking at the Gate in Macbeth' and 'On Murder Considered as One of the Fine Arts'",
+    "'My First Acquaintance with Poets' and 'On Going a Journey'",
+    "'Dream Children: A Reverie' and 'A Dissertation upon Roast Pig'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "De Quincey wrote 'On the Knocking at the Gate in Macbeth' in 1823 and 'On Murder Considered as One of the Fine Arts' in 1827."
+  },
+  {
+   "id": "rm-h-49",
+   "question": "Which 'Peasant Poet' of Helpston ('The Shepherd's Calendar', 1827) mourned Parliamentary Enclosures with 'Inclosure came and trampled on the grave / Of labour's rights'?",
+   "options": [
+    "Ebenezer Elliott",
+    "Robert Bloomfield",
+    "George Crabbe",
+    "John Clare"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Clare, the Northamptonshire Peasant Poet, chronicled the destruction of rural common lands by Enclosure Acts."
+  },
+  {
+   "id": "rm-h-50",
+   "question": "Which of the following statements regarding the periodicals and political landmarks of the Romantic Period (1785–1832) is NOT correct?",
+   "options": [
+    "The First Reform Act of 1832 granted immediate universal suffrage to all adult men and women",
+    "'The Examiner' (founded 1808) was a radical liberal paper edited by Leigh Hunt and John Hunt",
+    "'The Edinburgh Review' (founded 1802) was a Whig quarterly edited for years by Francis Jeffrey",
+    "'The Quarterly Review' (founded 1809) was established by Tories including Scott and John Murray"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The First Reform Act of 1832 abolished rotten boroughs and widened the franchise, but still restricted voting to a minority of men."
+  }
+ ]
+}

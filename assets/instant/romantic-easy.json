@@ -1,0 +1,608 @@
+{
+ "bankId": "romantic",
+ "period": "Romantic Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "rm-e-01",
+   "question": "Which 1798 joint volume by William Wordsworth and Samuel Taylor Coleridge is treated as the opening manifesto of English Romanticism?",
+   "options": [
+    "'Hours of Idleness'",
+    "'Lyrical Ballads'",
+    "'Songs of Innocence'",
+    "'Poems by Two Brothers'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Wordsworth and Coleridge co-published 'Lyrical Ballads' anonymously in 1798, launching the English Romantic movement."
+  },
+  {
+   "id": "rm-e-02",
+   "question": "The conventional closing year of the Romantic Period in 1832 is marked by the death of Sir Walter Scott and the passage of:",
+   "options": [
+    "The Corn Laws Repeal",
+    "The Act of Uniformity",
+    "The Statute of Anne",
+    "The First Reform Act"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The year 1832 marks the end of the Romantic era with Sir Walter Scott's death and the First Reform Act under Earl Grey."
+  },
+  {
+   "id": "rm-e-03",
+   "question": "Which 1785 blank-verse poem by William Cowper contains the famous line 'God made the country, and man made the town'?",
+   "options": [
+    "'The Grave'",
+    "'The Seasons'",
+    "'The Excursion'",
+    "'The Task'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Cowper published 'The Task' in 1785, contrasting rural virtue with urban corruption."
+  },
+  {
+   "id": "rm-e-04",
+   "question": "Which Scottish poet, known as 'The Ploughman Poet', published 'Poems, Chiefly in the Scottish Dialect' at Kilmarnock in 1786?",
+   "options": [
+    "Walter Scott",
+    "James Hogg",
+    "Thomas Campbell",
+    "Robert Burns"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Burns published his landmark Kilmarnock Edition, 'Poems, Chiefly in the Scottish Dialect', in 1786."
+  },
+  {
+   "id": "rm-e-05",
+   "question": "In which 1785 Scots lyric did Robert Burns write 'The best-laid schemes o' mice an' men / Gang aft agley'?",
+   "options": [
+    "'To a Mouse'",
+    "'Tam o' Shanter'",
+    "'To a Louse'",
+    "'Auld Lang Syne'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Burns composed 'To a Mouse' in 1785 after turning up a mouse's nest with his plough."
+  },
+  {
+   "id": "rm-e-06",
+   "question": "Which Romantic poet and engraver invented 'Illuminated Printing' to etch text and illustrations together on copper plates?",
+   "options": [
+    "John Clare",
+    "William Blake",
+    "Robert Southey",
+    "Leigh Hunt"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Blake invented Illuminated Printing, hand-etching and hand-colouring his poems and visionary designs on copper plates."
+  },
+  {
+   "id": "rm-e-07",
+   "question": "William Blake published 'Songs of Innocence' in 1789 and combined it in 1794 with which companion collection?",
+   "options": [
+    "'Poetical Sketches'",
+    "'Visions of Albion'",
+    "'Songs of Experience'",
+    "'The Book of Urizen'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Blake published 'Songs of Innocence' in 1789 and added 'Songs of Experience' in 1794 to show the two contrary states of the soul."
+  },
+  {
+   "id": "rm-e-08",
+   "question": "In William Blake's 'Songs of Innocence and of Experience', which pair of companion poems contrasts gentle and terrifying creation?",
+   "options": [
+    "'The Clod' and 'The Pebble'",
+    "'The Lamb' and 'The Tyger'",
+    "'Night' and 'The Sick Rose'",
+    "'London' and 'Jerusalem'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Blake paired 'The Lamb' from Innocence with 'The Tyger' from Experience as contrary visions of creation."
+  },
+  {
+   "id": "rm-e-09",
+   "question": "In which 1794 poem from 'Songs of Experience' does William Blake condemn 'charter'd' streets and 'mind-forg'd manacles'?",
+   "options": [
+    "'Infant Sorrow'",
+    "'London'",
+    "'The Little Boy Lost'",
+    "'A Poison Tree'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Blake's 'London' in 'Songs of Experience' protests urban misery, institutional oppression, and mind-forged manacles."
+  },
+  {
+   "id": "rm-e-10",
+   "question": "The French Revolution began in July 1789 with the storming of which medieval fortress-prison in Paris?",
+   "options": [
+    "The Bastille",
+    "The Tuileries",
+    "The Pantheon",
+    "The Conciergerie"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Parisian citizens stormed the Bastille on 14 July 1789, an event initially celebrated by British Romantic writers."
+  },
+  {
+   "id": "rm-e-11",
+   "question": "Who authored 'Reflections on the Revolution in France' (1790), launching the conservative attack on the French Revolution?",
+   "options": [
+    "Thomas Paine",
+    "Richard Price",
+    "William Godwin",
+    "Edmund Burke"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edmund Burke published 'Reflections on the Revolution in France' in November 1790, defending inherited tradition and monarchy."
+  },
+  {
+   "id": "rm-e-12",
+   "question": "Which radical writer defended the French Revolution against Edmund Burke in 'Rights of Man' (1791–1792)?",
+   "options": [
+    "Francis Jeffrey",
+    "Thomas Paine",
+    "Walter Scott",
+    "William Cobbett"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Thomas Paine answered Burke's 'Reflections' with Part I and Part II of 'Rights of Man' in 1791 and 1792."
+  },
+  {
+   "id": "rm-e-13",
+   "question": "Who wrote the foundational feminist treatise 'A Vindication of the Rights of Woman' in 1792?",
+   "options": [
+    "Mary Wollstonecraft",
+    "Ann Radcliffe",
+    "Dorothy Wordsworth",
+    "Hannah More"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mary Wollstonecraft published 'A Vindication of the Rights of Woman' in 1792, arguing for women's rational education."
+  },
+  {
+   "id": "rm-e-14",
+   "question": "Which philosopher published 'An Enquiry Concerning Political Justice' in 1793, advocating philosophical anarchism?",
+   "options": [
+    "Jeremy Bentham",
+    "Thomas Malthus",
+    "David Ricardo",
+    "William Godwin"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Godwin published 'An Enquiry Concerning Political Justice' in 1793, influencing Wordsworth, Coleridge, and Shelley."
+  },
+  {
+   "id": "rm-e-15",
+   "question": "What name did Samuel Taylor Coleridge and Robert Southey give to the egalitarian community they planned in the 1790s?",
+   "options": [
+    "New Harmony",
+    "Utopianism",
+    "Brook Farm",
+    "Pantisocracy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In the 1790s Coleridge and Southey planned Pantisocracy, an equal communal society to be established in America."
+  },
+  {
+   "id": "rm-e-16",
+   "question": "In the 1800 Preface to 'Lyrical Ballads', how did William Wordsworth famously define all good poetry?",
+   "options": [
+    "'A speaking picture with the end to teach and delight'",
+    "'The best words in the best philosophical order'",
+    "'The spontaneous overflow of powerful feelings'",
+    "'An imitation of nature in rhymed heroic couplets'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wordsworth's 1800 Preface defines poetry as the spontaneous overflow of powerful feelings from emotion recollected in tranquility."
+  },
+  {
+   "id": "rm-e-17",
+   "question": "In the Preface to 'Lyrical Ballads', William Wordsworth rejected artificial poetic diction and defined the poet as:",
+   "options": [
+    "'A prophet of classicism'",
+    "'An unacknowledged legislator'",
+    "'A man speaking to men'",
+    "'A chameleon without identity'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wordsworth described the poet in his Preface as a man speaking to men in a selection of language really used by men."
+  },
+  {
+   "id": "rm-e-18",
+   "question": "Which reflective blank-verse poem by William Wordsworth concluded the first edition of 'Lyrical Ballads' in 1798?",
+   "options": [
+    "'Lines Composed a Few Miles above Tintern Abbey'",
+    "'The Solitary Reaper'",
+    "'Resolution and Independence'",
+    "'Ode: Intimations of Immortality'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wordsworth's meditative poem 'Lines Composed a Few Miles above Tintern Abbey' closed the 1798 edition of 'Lyrical Ballads'."
+  },
+  {
+   "id": "rm-e-19",
+   "question": "Which blank-verse autobiographical epic by William Wordsworth was completed in 1805 but published posthumously in 1850?",
+   "options": [
+    "'The Excursion'",
+    "'Peter Bell'",
+    "'The Borderers'",
+    "'The Prelude'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wordsworth's autobiographical poem 'The Prelude' was published after his death in 1850 by his widow Mary."
+  },
+  {
+   "id": "rm-e-20",
+   "question": "William Wordsworth's 'Ode: Intimations of Immortality' (1802–1804) mourns the fading of the visionary splendour of:",
+   "options": [
+    "Childhood",
+    "Antiquity",
+    "Chivalry",
+    "Monarchy"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Wordsworth's Immortality Ode laments the passing of childhood's celestial light while finding philosophical consolation in nature."
+  },
+  {
+   "id": "rm-e-21",
+   "question": "Which sonnet by William Wordsworth begins 'The world is too much with us; late and soon, / Getting and spending, we lay waste our powers'?",
+   "options": [
+    "'Composed upon Westminster Bridge'",
+    "'London, 1802'",
+    "'Scorn not the Sonnet'",
+    "'The World Is Too Much with Us'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wordsworth's sonnet 'The World Is Too Much with Us' criticizes commercial materialism for alienating humanity from nature."
+  },
+  {
+   "id": "rm-e-22",
+   "question": "By what collective name were William Wordsworth, Samuel Taylor Coleridge, and Robert Southey known due to their residence in northwest England?",
+   "options": [
+    "The Satanic Poets",
+    "The Graveyard Poets",
+    "The Lake Poets",
+    "The Cockney Poets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wordsworth, Coleridge, and Southey lived in the Lake District and were grouped together as the Lake Poets."
+  },
+  {
+   "id": "rm-e-23",
+   "question": "In Samuel Taylor Coleridge's 'The Rime of the Ancient Mariner' (1798), what bird does the Mariner shoot, bringing a curse upon his ship?",
+   "options": [
+    "A Raven",
+    "An Albatross",
+    "A Skylark",
+    "A Nightingale"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Ancient Mariner shoots an auspicious albatross, giving English the idiom an albatross around one's neck."
+  },
+  {
+   "id": "rm-e-24",
+   "question": "Which visionary fragment by Samuel Taylor Coleridge (published 1816) was reportedly interrupted by 'a person on business from Porlock'?",
+   "options": [
+    "'Kubla Khan'",
+    "'Christabel'",
+    "'Dejection: An Ode'",
+    "'Frost at Midnight'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Coleridge stated that 'Kubla Khan', composed in an opium dream around 1797, was interrupted by a visitor from Porlock."
+  },
+  {
+   "id": "rm-e-25",
+   "question": "Which unfinished medieval supernatural poem by Samuel Taylor Coleridge was published alongside 'Kubla Khan' in 1816?",
+   "options": [
+    "'Zapolya'",
+    "'Christabel'",
+    "'The Aeolian Harp'",
+    "'Remorse'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Coleridge's unfinished gothic ballad 'Christabel' was published in his 1816 volume with 'Kubla Khan'."
+  },
+  {
+   "id": "rm-e-26",
+   "question": "In which 1817 critical work did Samuel Taylor Coleridge distinguish 'Fancy' from 'Imagination' and coin 'willing suspension of disbelief'?",
+   "options": [
+    "'Aids to Reflection'",
+    "'Table Talk'",
+    "'Biographia Literaria'",
+    "'The Friend'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Coleridge published 'Biographia Literaria' in 1817, introducing willing suspension of disbelief and his theory of Imagination."
+  },
+  {
+   "id": "rm-e-27",
+   "question": "Coleridge's 'This Lime-Tree Bower My Prison' and 'Frost at Midnight' are prominent examples of which poetic group?",
+   "options": [
+    "Conversation poems",
+    "Border ballads",
+    "Mock-heroic epics",
+    "Pindaric odes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Coleridge's quiet, meditative blank-verse poems addressed to friends or family are called his conversation poems."
+  },
+  {
+   "id": "rm-e-28",
+   "question": "With which 1809 verse satire did Lord Byron retaliate against the harsh review of his first volume, 'Hours of Idleness' (1807)?",
+   "options": [
+    "'English Bards and Scotch Reviewers'",
+    "'The Curse of Minerva'",
+    "'Hints from Horace'",
+    "'The Age of Bronze'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lord Byron published 'English Bards and Scotch Reviewers' in 1809 to counter Edinburgh critics of 'Hours of Idleness'."
+  },
+  {
+   "id": "rm-e-29",
+   "question": "Which long narrative poem (1812–1818) made Lord Byron famous overnight and established the archetype of the 'Byronic hero'?",
+   "options": [
+    "'Mazeppa'",
+    "'The Giaour'",
+    "'Childe Harold's Pilgrimage'",
+    "'The Prisoner of Chillon'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron's 'Childe Harold's Pilgrimage' made him famous in 1812 and defined the brooding, alienated Byronic hero."
+  },
+  {
+   "id": "rm-e-30",
+   "question": "What is the title of Lord Byron's unfinished satirical epic in ottava rima (1819–1824), regarded as his comic masterpiece?",
+   "options": [
+    "'Lara'",
+    "'The Corsair'",
+    "'Don Juan'",
+    "'Manfred'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron's 'Don Juan', composed in ottava rima between 1819 and 1824, is his greatest satirical epic."
+  },
+  {
+   "id": "rm-e-31",
+   "question": "Lord Byron died of fever at Missolonghi on 19 April 1824 while actively supporting the War of Independence in:",
+   "options": [
+    "Italy",
+    "Spain",
+    "Greece",
+    "Poland"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Byron sailed to Greece in 1823 to aid the Greek War of Independence against Ottoman rule and died at Missolonghi in 1824."
+  },
+  {
+   "id": "rm-e-32",
+   "question": "Why was Percy Bysshe Shelley expelled from Oxford University in 1811 along with his friend Thomas Jefferson Hogg?",
+   "options": [
+    "For co-authoring the pamphlet 'The Necessity of Atheism'",
+    "For organizing the Luddite machine-breaking uprising",
+    "For publishing a seditious libel against the Prince Regent",
+    "For fighting a pistol duel against an Edinburgh reviewer"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shelley was expelled from University College, Oxford, in 1811 for refusing to disavow 'The Necessity of Atheism'."
+  },
+  {
+   "id": "rm-e-33",
+   "question": "Which 1818 sonnet by Percy Bysshe Shelley describes a ruined desert monument bearing the words 'Look on my Works, ye Mighty, and despair!'?",
+   "options": [
+    "'Ozymandias'",
+    "'To a Skylark'",
+    "'The Cloud'",
+    "'Mont Blanc'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shelley's 1818 sonnet 'Ozymandias' uses a shattered statue in the desert to expose the transience of tyrannical power."
+  },
+  {
+   "id": "rm-e-34",
+   "question": "Which 1819 ode by Percy Bysshe Shelley concludes with the famous line 'If Winter comes, can Spring be far behind?'?",
+   "options": [
+    "'Ode to the West Wind'",
+    "'To Night'",
+    "'Hymn to Intellectual Beauty'",
+    "'Ode to Liberty'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shelley's 'Ode to the West Wind' of 1819 invokes the autumn wind as both destroyer and preserver, ending with the prophecy of Spring."
+  },
+  {
+   "id": "rm-e-35",
+   "question": "Who authored the four-act lyrical drama 'Prometheus Unbound' (1820) and the five-act verse tragedy 'The Cenci' (1819)?",
+   "options": [
+    "Walter Savage Landor",
+    "Percy Bysshe Shelley",
+    "Samuel Taylor Coleridge",
+    "George Gordon, Lord Byron"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Percy Bysshe Shelley wrote the tragedy 'The Cenci' in 1819 and the mythological lyrical drama 'Prometheus Unbound' in 1820."
+  },
+  {
+   "id": "rm-e-36",
+   "question": "What is the title of Percy Bysshe Shelley's 1821 pastoral elegy written to mourn the death of John Keats?",
+   "options": [
+    "'Epipsychidion'",
+    "'Adonais'",
+    "'Hellas'",
+    "'Alastor'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Shelley composed 'Adonais' in 1821 as a pastoral elegy mourning John Keats's death in Rome."
+  },
+  {
+   "id": "rm-e-37",
+   "question": "Which August 1819 massacre of peaceful parliamentary reform protesters at St. Peter's Field, Manchester, inspired Shelley's 'The Masque of Anarchy'?",
+   "options": [
+    "The Gordon Riots",
+    "The Captain Swing Uprising",
+    "The Cato Street Conspiracy",
+    "The Peterloo Massacre"
+   ],
+   "correct_option_id": 3,
+   "explanation": "On 16 August 1819 cavalry charged peaceful protesters at St. Peter's Field in the Peterloo Massacre, prompting Shelley's poem."
+  },
+  {
+   "id": "rm-e-38",
+   "question": "Which 1818 four-book poetic romance by John Keats opens with the famous line 'A thing of beauty is a joy for ever'?",
+   "options": [
+    "'Lamia'",
+    "'Hyperion'",
+    "'Endymion'",
+    "'Isabella'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Keats's 1818 poem 'Endymion: A Poetic Romance' begins with the celebrated declaration that a thing of beauty is a joy for ever."
+  },
+  {
+   "id": "rm-e-39",
+   "question": "Which year is celebrated as John Keats's 'Great Year', when he wrote 'To Autumn', 'Ode on a Grecian Urn', and 'Ode to a Nightingale'?",
+   "options": [
+    "1815",
+    "1817",
+    "1821",
+    "1819"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In a few months of 1819, his Great Year, Keats composed his major odes, 'The Eve of St. Agnes', and 'Hyperion'."
+  },
+  {
+   "id": "rm-e-40",
+   "question": "Which critical phrase did John Keats coin in an 1817 letter for the capacity to remain in 'uncertainties, Mysteries, doubts'?",
+   "options": [
+    "'Primary imagination'",
+    "'Negative capability'",
+    "'Egotistical sublime'",
+    "'Poetic justice'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Keats coined negative capability in a December 1817 letter to his brothers, praising Shakespeare for possessing this quality."
+  },
+  {
+   "id": "rm-e-41",
+   "question": "John Keats died of tuberculosis in Rome in February 1821 at age 25 and asked that his tombstone bear which epitaph?",
+   "options": [
+    "'Nothing of him that doth fade, but doth suffer a sea-change'",
+    "'Here lies one whose name was writ in water'",
+    "'A poet of beauty resting in eternal sleep'",
+    "'Awake, forever awake, beneath the Roman sky'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Keats died in Rome on 23 February 1821 and chose the epitaph Here lies one whose name was writ in water."
+  },
+  {
+   "id": "rm-e-42",
+   "question": "Jane Austen's novel 'Pride and Prejudice' (1813), portraying Elizabeth Bennet and Mr. Darcy, was originally drafted under what title?",
+   "options": [
+    "'Elinor and Marianne'",
+    "'Susan'",
+    "'First Impressions'",
+    "'Lady Susan'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jane Austen drafted 'Pride and Prejudice' in the late 1790s under the working title 'First Impressions'."
+  },
+  {
+   "id": "rm-e-43",
+   "question": "Which 1815 novel by Jane Austen centres on the well-meaning but misguided matchmaking schemes of its wealthy heroine?",
+   "options": [
+    "'Mansfield Park'",
+    "'Persuasion'",
+    "'Emma'",
+    "'Sense and Sensibility'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jane Austen's 1815 novel 'Emma' follows the comic matchmaking blunders of its heroine, Emma Woodhouse."
+  },
+  {
+   "id": "rm-e-44",
+   "question": "Which two novels by Jane Austen were published posthumously together in 1817, the year of her death?",
+   "options": [
+    "'Persuasion' and 'Northanger Abbey'",
+    "'Pride and Prejudice' and 'Mansfield Park'",
+    "'Sense and Sensibility' and 'Emma'",
+    "'Sanditon' and 'The Watsons'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Persuasion' and 'Northanger Abbey' were issued together posthumously at the end of 1817."
+  },
+  {
+   "id": "rm-e-45",
+   "question": "Which 1814 novel by Sir Walter Scott, set during the 1745 Jacobite Rising, is regarded as the first true historical novel?",
+   "options": [
+    "'Kenilworth'",
+    "'Rob Roy'",
+    "'Waverley'",
+    "'Quentin Durward'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sir Walter Scott published 'Waverley' anonymously in 1814, pioneering the modern historical novel."
+  },
+  {
+   "id": "rm-e-46",
+   "question": "Which popular 1819 historical novel by Sir Walter Scott shifted his subject from Scottish history to 12th-century medieval England?",
+   "options": [
+    "'Old Mortality'",
+    "'Guy Mannering'",
+    "'The Antiquary'",
+    "'Ivanhoe'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Scott's 'Ivanhoe' of 1819 is set in 12th-century England during the reign of Richard the Lionheart."
+  },
+  {
+   "id": "rm-e-47",
+   "question": "Who authored the 1818 Gothic-scientific novel 'Frankenstein; or, The Modern Prometheus', conceived at Villa Diodati in 1816?",
+   "options": [
+    "Ann Radcliffe",
+    "Mary Shelley",
+    "Jane Austen",
+    "Maria Edgeworth"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mary Shelley, daughter of William Godwin and Mary Wollstonecraft, published 'Frankenstein' anonymously in 1818."
+  },
+  {
+   "id": "rm-e-48",
+   "question": "Under which pen name did Charles Lamb contribute his personal essays to 'The London Magazine' between 1820 and 1825?",
+   "options": [
+    "Isaac Bickerstaff",
+    "Elia",
+    "Christopher North",
+    "Boz"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Charles Lamb used the pseudonym Elia, borrowed from an Italian clerk at the South Sea House, for his 'Essays of Elia'."
+  },
+  {
+   "id": "rm-e-49",
+   "question": "Who wrote the autobiographical work 'Confessions of an English Opium-Eater', serialized in 'The London Magazine' in 1821?",
+   "options": [
+    "Leigh Hunt",
+    "Charles Lamb",
+    "William Hazlitt",
+    "Thomas De Quincey"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Thomas De Quincey published 'Confessions of an English Opium-Eater' in 1821, pioneering modern addiction literature."
+  },
+  {
+   "id": "rm-e-50",
+   "question": "Which Romantic critic and essayist, friend of Lamb and Hunt, wrote sharp political and literary essays such as 'Table-Talk'?",
+   "options": [
+    "William Hazlitt",
+    "William Gifford",
+    "Thomas Rymer",
+    "Francis Jeffrey"
+   ],
+   "correct_option_id": 0,
+   "explanation": "William Hazlitt was a leading Romantic essayist and critic closely connected to Lamb, Hunt, and Coleridge."
+  }
+ ]
+}
