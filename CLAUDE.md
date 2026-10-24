@@ -32,8 +32,8 @@ must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html`
 The timeline page `english-literature/index.html` shows the same 20 ages (one small tile each, 6 to a line on a wide screen, same names, years, writers, pictures and notes link as `ages` in `assets/home.js`), so it must stay in step too.
 Names, years and pictures come from the Daily page. Invent none of them.
 
-The menu lives in two places and must stay in step: `_includes/base.njk` and the
-sidebar markup copied into `index.html`.
+The menu lives in three places and must stay in step: `_includes/base.njk` and the
+sidebar markup copied into `index.html` and `404.html` (every other page gets it from base.njk at build).
 
 ## 4. Before pushing
 `npx eleventy` must build clean, and no internal link may 404.
