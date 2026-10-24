@@ -29,6 +29,7 @@ breaking it breaks a promise already made.
 The list of literary periods (20, from Old English to Postmodern) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
 `assets/mcq.js`), the cards in `quizzes/daily/index.html` (and its period filter, one option per age), and `ages` in `assets/home.js`.
+The timeline page `english-literature/index.html` shows the same 20 ages (one row each, same names, years, writers, pictures and notes link as `ages` in `assets/home.js`), so it must stay in step too.
 Names, years and pictures come from the Daily page. Invent none of them.
 
 The menu lives in two places and must stay in step: `_includes/base.njk` and the
