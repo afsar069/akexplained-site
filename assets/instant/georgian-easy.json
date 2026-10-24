@@ -1,0 +1,608 @@
+{
+ "bankId": "georgian",
+ "period": "Georgian Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "gr-e-01",
+   "question": "The Georgian Period (1910–1936) spans the reign of King George V, who ascended the British throne in May 1910 upon the death of which monarch?",
+   "options": [
+    "King Edward VIII",
+    "King Edward VII",
+    "Queen Victoria",
+    "King George VI"
+   ],
+   "correct_option_id": 1,
+   "explanation": "King Edward VII died on 6 May 1910 and was succeeded by his son King George V who reigned until January 1936."
+  },
+  {
+   "id": "gr-e-02",
+   "question": "Which two landmark royal events occurred in Britain during the year 1936, marking the close of the Georgian Period?",
+   "options": [
+    "The Silver Jubilee of Edward VII and the outbreak of World War II",
+    "The death of Queen Victoria and the coronation of Edward VII",
+    "The marriage of George V and the signing of the Anglo-Irish Treaty",
+    "The death of King George V and the abdication of King Edward VIII"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 1936 the Year of Three Kings George V died in January and Edward VIII abdicated in December to marry Wallis Simpson."
+  },
+  {
+   "id": "gr-e-03",
+   "question": "How many volumes of the anthology series 'Georgian Poetry' were published between 1912 and 1922 under the editorship of Edward Marsh?",
+   "options": [
+    "Three volumes",
+    "Seven volumes",
+    "Ten volumes",
+    "Five volumes"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Edward Marsh edited five volumes of Georgian Poetry published in 1912 1915 1917 1919 and 1922."
+  },
+  {
+   "id": "gr-e-04",
+   "question": "Which famous London bookshop, opened by Harold Monro in Devonshire Street in 1913, published all five volumes of 'Georgian Poetry'?",
+   "options": [
+    "Shakespeare and Company",
+    "The Bodley Head",
+    "Hatchards Bookshop",
+    "The Poetry Bookshop"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Harold Monro founded the Poetry Bookshop in Bloomsbury as a meeting place and publishing house for Georgian and modern poets."
+  },
+  {
+   "id": "gr-e-05",
+   "question": "Which nostalgic 1912 poem by Rupert Brooke, written at a Berlin café, concludes 'Stands the Church clock at ten to three? / And is there honey still for tea?'",
+   "options": [
+    "The Old Vicarage, Grantchester",
+    "Dining-Room Tea",
+    "The Great Lover",
+    "Tiare Tahiti"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Written in May 1912 at the Café des Westens in Berlin The Old Vicarage Grantchester became a classic of Georgian pastoral nostalgia."
+  },
+  {
+   "id": "gr-e-06",
+   "question": "On which Greek island in the Aegean Sea was Rupert Brooke buried in April 1915 after dying of sepsis en route to the Gallipoli campaign?",
+   "options": [
+    "Ithaca",
+    "Skyros",
+    "Lesbos",
+    "Corfu"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sub-Lieutenant Rupert Brooke died on a French hospital ship on 23 April 1915 and was buried in an olive grove on Skyros."
+  },
+  {
+   "id": "gr-e-07",
+   "question": "Which Welsh Georgian poet and former tramp wrote the famous couplet 'What is this life if, full of care, / We have no time to stand and stare' in his 1911 poem 'Leisure'?",
+   "options": [
+    "Lascelles Abercrombie",
+    "Ralph Hodgson",
+    "W. H. Davies",
+    "Wilfrid Wilson Gibson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "William Henry Davies published his famous lyric Leisure in his 1911 collection Songs of Joy and Others."
+  },
+  {
+   "id": "gr-e-08",
+   "question": "Which classic 1908 prose memoir by W. H. Davies, prefaced by George Bernard Shaw, recounts his life as a transient hobo in America and Britain?",
+   "options": [
+    "Down and Out in Paris and London",
+    "The Autobiography of a Super-Tramp",
+    "Cider with Rosie",
+    "Goodbye to All That"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Shaw provided the title and preface for W H Davies 1908 book The Autobiography of a Super-Tramp."
+  },
+  {
+   "id": "gr-e-09",
+   "question": "Which Georgian poet, famous for 'Salt-Water Ballads' and 'Reynard the Fox', was appointed Poet Laureate in 1930 upon the death of Robert Bridges?",
+   "options": [
+    "John Drinkwater",
+    "John Masefield",
+    "Laurence Binyon",
+    "Walter de la Mare"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Masefield succeeded Robert Bridges as Poet Laureate in May 1930 and held the office until his death in 1967."
+  },
+  {
+   "id": "gr-e-10",
+   "question": "Which celebrated maritime lyric by John Masefield opens with the line 'I must go down to the seas again, to the lonely sea and the sky'?",
+   "options": [
+    "Sea-Fever",
+    "The Dauber",
+    "A Wanderer's Song",
+    "Cargoes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "First published in Salt-Water Ballads in 1902 Sea-Fever remained one of the most popular lyrics throughout the Georgian era."
+  },
+  {
+   "id": "gr-e-11",
+   "question": "Which three-stanza poem by John Masefield contrasts an ancient 'Quinquireme of Nineveh' and a Spanish galleon with a 'Dirty British coaster with a salt-caked smoke stack'?",
+   "options": [
+    "Trade Winds",
+    "The West Wind",
+    "Ships",
+    "Cargoes"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Masefield three-stanza unrhymed lyric Cargoes contrasts romantic ancient and Renaissance shipping with modern industrial trade."
+  },
+  {
+   "id": "gr-e-12",
+   "question": "Which 1913 collection of rhymes and lyrics by Walter de la Mare, containing poems such as 'Silver' and 'Someone', established his fame in imaginative verse?",
+   "options": [
+    "The Fleeting",
+    "Peacock Pie",
+    "The Veil",
+    "Motley and Other Poems"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Walter de la Mare published Peacock Pie A Book of Rhymes in 1913 blending childhood wonder with eerie twilight atmosphere."
+  },
+  {
+   "id": "gr-e-13",
+   "question": "In which Gloucestershire village did Lascelles Abercrombie, Wilfrid Gibson, John Drinkwater, Rupert Brooke, Edward Thomas, and Robert Frost form a famous pre-war poetic circle?",
+   "options": [
+    "Dymock",
+    "Grasmere",
+    "Grantchester",
+    "Haworth"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Known as the Dymock Poets the group gathered around the village of Dymock in Gloucestershire between 1911 and 1914."
+  },
+  {
+   "id": "gr-e-14",
+   "question": "Which American poet lived in Gloucestershire in 1914 and encouraged the literary critic Edward Thomas to begin writing poetry?",
+   "options": [
+    "Carl Sandburg",
+    "Wallace Stevens",
+    "Vachel Lindsay",
+    "Robert Frost"
+   ],
+   "correct_option_id": 3,
+   "explanation": "During their daily country walks in 1914 Robert Frost urged Edward Thomas to turn the prose of In Pursuit of Spring into verse."
+  },
+  {
+   "id": "gr-e-15",
+   "question": "Which Georgian poet and diplomat authored 'The Golden Journey to Samarkand' (1913) and the posthumously staged Oriental verse drama 'Hassan' (1922)?",
+   "options": [
+    "Sturge Moore",
+    "Gordon Bottomley",
+    "Harold Monro",
+    "James Elroy Flecker"
+   ],
+   "correct_option_id": 3,
+   "explanation": "James Elroy Flecker died of tuberculosis in Switzerland in 1915 and his lush play Hassan triumphed in London in 1923 with music by Delius."
+  },
+  {
+   "id": "gr-e-16",
+   "question": "Which Georgian poet won the Polignac Prize in 1914 for his visionary poems 'The Bull' and 'The Song of Honour'?",
+   "options": [
+    "John Freeman",
+    "Edward Shanks",
+    "Ralph Hodgson",
+    "W. J. Turner"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Ralph Hodgson printed his poems in penny chapbooks with Lovat Fraser at the Sign of the Flying Fame and collected them in Poems 1917."
+  },
+  {
+   "id": "gr-e-17",
+   "question": "Which 1918 historical chronicle play by the Georgian poet John Drinkwater brought international acclaim to the Birmingham Repertory Theatre?",
+   "options": [
+    "Mary Stuart",
+    "Oliver Cromwell",
+    "Abraham Lincoln",
+    "Robert E. Lee"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Drinkwater play Abraham Lincoln premiered at the Birmingham Repertory Theatre in October 1918 and ran for a year at the Lyric Theatre Hammersmith."
+  },
+  {
+   "id": "gr-e-18",
+   "question": "With what bitter anti-war question does Wilfred Owen's 1917 sonnet 'Anthem for Doomed Youth' begin?",
+   "options": [
+    "What passing-bells for these who die as cattle?",
+    "Red lips are not so red / As the stained stones kissed by the English dead",
+    "Move him into the sun— / Gently its touch awoke him once",
+    "Does it matter?—losing your legs?"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Drafted at Craiglockhart in September 1917 with revisions suggested by Siegfried Sassoon Anthem for Doomed Youth opens with this famous line."
+  },
+  {
+   "id": "gr-e-19",
+   "question": "In Wilfred Owen's visionary poem 'Strange Meeting' (1918), where do the British narrator and the dead enemy soldier ('I am the enemy you killed, my friend') meet?",
+   "options": [
+    "In a ruined French cathedral in Picardy",
+    "Aboard a hospital ship crossing the English Channel",
+    "Inside a flooded medical tent at Ypres",
+    "Down a profound dull tunnel in Hell"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The speaker imagines escaping out of battle down some profound dull tunnel where he realizes that he is in Hell."
+  },
+  {
+   "id": "gr-e-20",
+   "question": "On 4 November 1918, exactly one week before the Armistice, while leading his men across which French canal was Wilfred Owen killed in action?",
+   "options": [
+    "The Sambre–Oise Canal",
+    "The Canal du Nord",
+    "The Saint-Quentin Canal",
+    "The Ypres–Comines Canal"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Second Lieutenant Wilfred Owen of the Manchester Regiment was shot and killed at Ors while crossing the Sambre-Oise Canal on 4 November 1918."
+  },
+  {
+   "id": "gr-e-21",
+   "question": "Which 1918 collection of searing trench poems by Siegfried Sassoon includes 'The General', 'Base Details', and 'Suicide in the Trenches'?",
+   "options": [
+    "The Old Huntsman",
+    "Satirical Poems",
+    "The Heart's Journey",
+    "Counter-Attack and Other Poems"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published in July 1918 Counter-Attack and Other Poems established Sassoon harsh satirical realism against the Home Front and military high command."
+  },
+  {
+   "id": "gr-e-22",
+   "question": "Which working-class painter-poet, killed on the Western Front in April 1918, composed 'Break of Day in the Trenches', featuring a 'queer sardonic rat' and a poppy?",
+   "options": [
+    "Julian Grenfell",
+    "Charles Sorley",
+    "Isaac Rosenberg",
+    "Ivor Gurney"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Born to Jewish immigrant parents and raised in London East End Isaac Rosenberg wrote Break of Day in the Trenches in June 1916."
+  },
+  {
+   "id": "gr-e-23",
+   "question": "Which Georgian pastoral poet survived Passchendaele and the Somme to publish the classic 1928 prose memoir 'Undertones of War'?",
+   "options": [
+    "Frederic Manning",
+    "Edmund Blunden",
+    "Robert Nichols",
+    "Francis Ledwidge"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Edmund Blunden published Undertones of War in 1928 concluding with a supplement of his war verses."
+  },
+  {
+   "id": "gr-e-24",
+   "question": "Which deeply moving 1933 autobiography by Vera Brittain chronicles her wartime service as a VAD nurse and the loss of her fiancé Roland Leighton and her brother?",
+   "options": [
+    "Testament of Youth",
+    "Testament of Friendship",
+    "Not So Quiet...",
+    "Honourable Estate"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Vera Brittain published Testament of Youth in 1933 speaking for an entire generation of women bereaved by the First World War."
+  },
+  {
+   "id": "gr-e-25",
+   "question": "Who is the possessive solicitor and art collector—dubbed the 'man of property'—at the center of John Galsworthy's 'The Forsyte Saga' (collected 1922)?",
+   "options": [
+    "Philip Bosinney",
+    "Soames Forsyte",
+    "Michael Mont",
+    "Old Jolyon Forsyte"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Soames Forsyte possessive obsession with his first wife Irene drives the central conflict of The Forsyte Saga and its sequel A Modern Comedy."
+  },
+  {
+   "id": "gr-e-26",
+   "question": "In which year was the English novelist and dramatist John Galsworthy awarded the Nobel Prize in Literature?",
+   "options": [
+    "1923",
+    "1925",
+    "1932",
+    "1936"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Galsworthy was awarded the Nobel Prize in Literature in November 1932 just two months before his death in January 1933."
+  },
+  {
+   "id": "gr-e-27",
+   "question": "By what collective regional name are the Staffordshire pottery towns known in Arnold Bennett's realist novels such as 'Clayhanger' (1910)?",
+   "options": [
+    "The Five Towns",
+    "The Wessex Boroughs",
+    "The Barsetshire Parishes",
+    "The Black Country"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Arnold Bennett renamed the six Staffordshire Potteries towns as the Five Towns Turnhill Bursley Hanbridge Knype and Longshaw."
+  },
+  {
+   "id": "gr-e-28",
+   "question": "Which 1910 comic realist novel by H. G. Wells follows a dyspeptic bicycle-shop owner who escapes his miserable marriage to find peace at the Potwell Inn?",
+   "options": [
+    "The History of Mr Polly",
+    "Kipps",
+    "Ann Veronica",
+    "Love and Mr Lewisham"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Published in April 1910 The History of Mr Polly portrays Alfred Polly burning down his shop in Fishbourne and defeating Uncle Jim at the Potwell Inn."
+  },
+  {
+   "id": "gr-e-29",
+   "question": "Which unassuming, umbrella-carrying Roman Catholic priest-detective did G. K. Chesterton introduce in his 1911 collection 'The Innocence of Father Brown'?",
+   "options": [
+    "Flambeau",
+    "Gabriel Syme",
+    "Father Brown",
+    "Valentin"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Modeled on Father John O Connor of Bradford Father Brown solves crimes through intuitive moral and psychological insight."
+  },
+  {
+   "id": "gr-e-30",
+   "question": "Which 1915 semi-autobiographical novel by W. Somerset Maugham traces the club-footed orphan Philip Carey through medical school and his obsessive love for Mildred?",
+   "options": [
+    "The Razor's Edge",
+    "Liza of Lambeth",
+    "Of Human Bondage",
+    "Cakes and Ale"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Taking its title from Part IV of Spinoza Ethics Maugham 1915 masterpiece Of Human Bondage chronicles Philip Carey search for meaning."
+  },
+  {
+   "id": "gr-e-31",
+   "question": "Which 1919 novel by W. Somerset Maugham, inspired by the life of Paul Gauguin, depicts the London stockbroker Charles Strickland abandoning his family to paint in Tahiti?",
+   "options": [
+    "The Painted Veil",
+    "The Narrow Corner",
+    "The Moon and Sixpence",
+    "Ashenden"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Maugham published The Moon and Sixpence in 1919 contrasting bourgeois convention the sixpence with artistic obsession the moon."
+  },
+  {
+   "id": "gr-e-32",
+   "question": "Under the pen name 'Saki', which satirist—killed in action at Beaumont-Hamel in 1916—authored macabre stories such as 'The Open Window' and 'Sredni Vashtar'?",
+   "options": [
+    "Hector Hugh Munro",
+    "Arthur Machen",
+    "Algernon Blackwood",
+    "Lord Dunsany"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Born in Burma Hector Hugh Munro took the pen name Saki from the cup-bearer in the Rubáiyát of Omar Khayyám."
+  },
+  {
+   "id": "gr-e-33",
+   "question": "Which supremely resourceful gentleman's personal gentleman did P. G. Wodehouse introduce in 1915 to rescue Bertie Wooster from constant predicaments?",
+   "options": [
+    "Jeeves",
+    "Psmith",
+    "Beach the Butler",
+    "Galahad Threepwood"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Reginald Jeeves made his first appearance in the 1915 short story Extricating Young Gussie and took full charge of Bertie Wooster in 1916."
+  },
+  {
+   "id": "gr-e-34",
+   "question": "In which 1920 debut detective novel did Agatha Christie first introduce her retired Belgian police officer Hercule Poirot?",
+   "options": [
+    "The Mysterious Affair at Styles",
+    "The Murder on the Links",
+    "The Murder of Roger Ackroyd",
+    "Murder on the Orient Express"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Written while Christie worked in a wartime hospital dispensary The Mysterious Affair at Styles was published in 1920 introducing Poirot and Hastings."
+  },
+  {
+   "id": "gr-e-35",
+   "question": "Which aristocratic amateur detective did Dorothy L. Sayers introduce in her 1923 novel 'Whose Body?' and later pair with the mystery writer Harriet Vane?",
+   "options": [
+    "Philip Trent",
+    "Lord Peter Wimsey",
+    "Roderick Alleyn",
+    "Albert Campion"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Lord Peter Death Bredon Wimsey assisted by his valet Bunter starred in eleven novels by Dorothy L Sayers between 1923 and 1937."
+  },
+  {
+   "id": "gr-e-36",
+   "question": "With what famous sentence does the unreliable American narrator John Dowell begin Ford Madox Ford's 1915 novel 'The Good Soldier'?",
+   "options": [
+    "The past is a foreign country",
+    "This is the saddest story I have ever heard",
+    "There was no possibility of taking a walk that day",
+    "Happy families are all alike"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Dowell opens The Good Soldier with This is the saddest story I have ever heard before recounting the infidelity of his wife Florence and Captain Edward Ashburnham."
+  },
+  {
+   "id": "gr-e-37",
+   "question": "Who is the traditionalist Yorkshire gentleman and government statistician at the center of Ford Madox Ford's four-novel World War I sequence 'Parade's End' (1924–1928)?",
+   "options": [
+    "George Winterbourne",
+    "Guy Crouchback",
+    "Edward Ashburnham",
+    "Christopher Tietjens"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Christopher Tietjens of Groby endures the betrayal of his unfaithful wife Sylvia and the horrors of the Western Front before finding love with Valentine Wannop."
+  },
+  {
+   "id": "gr-e-38",
+   "question": "In D. H. Lawrence's 'Women in Love' (1920), which two emancipated sisters enter contrasting relationships with the school inspector Rupert Birkin and the mine owner Gerald Crich?",
+   "options": [
+    "Constance and Sophia Baines",
+    "Margaret and Helen Schlegel",
+    "Ursula and Gudrun Brangwen",
+    "Miriam Leivers and Clara Dawes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Continuing the family saga of The Rainbow 1915 Women in Love pairs the teacher Ursula Brangwen with Birkin and the sculptor Gudrun with Gerald Crich."
+  },
+  {
+   "id": "gr-e-39",
+   "question": "Which controversial 1928 novel by D. H. Lawrence, privately printed in Florence, depicts the affair between an aristocratic wife and her husband's gamekeeper, Oliver Mellors?",
+   "options": [
+    "The Plumed Serpent",
+    "Aaron's Rod",
+    "Kangaroo",
+    "Lady Chatterley's Lover"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Printed in Florence by Pino Orioli in 1928 Lady Chatterley Lover remained banned in unexpurgated form in Britain until the Penguin trial of 1960."
+  },
+  {
+   "id": "gr-e-40",
+   "question": "On which island in the Scottish Hebrides is the Ramsay family's summer home set in Virginia Woolf's 1927 novel 'To the Lighthouse'?",
+   "options": [
+    "The Isle of Arran",
+    "The Isle of Skye",
+    "The Isle of Mull",
+    "The Isle of Iona"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Although inspired by Talland House at St Ives in Cornwall Woolf set the Ramsay holiday home on the Isle of Skye in the Hebrides."
+  },
+  {
+   "id": "gr-e-41",
+   "question": "Which unmarried artist finishes her painting on the lawn at the very end of Virginia Woolf's 'To the Lighthouse' (1927), thinking 'I have had my vision'?",
+   "options": [
+    "Minta Doyle",
+    "Lily Briscoe",
+    "Mrs. McNab",
+    "Prue Ramsay"
+   ],
+   "correct_option_id": 1,
+   "explanation": "As Mr Ramsay James and Cam finally land at the lighthouse Lily Briscoe draws a single line down the center of her canvas completing her painting."
+  },
+  {
+   "id": "gr-e-42",
+   "question": "In E. M. Forster's 'A Passage to India' (1924), which young Indian Muslim physician in Chandrapore is put on trial after Adela Quested accuses him of assault in the Marabar Caves?",
+   "options": [
+    "Hamidullah",
+    "Mahmoud Ali",
+    "Dr. Aziz",
+    "Nawab Bahadur"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Dr Aziz befriends Mrs Moore and Cyril Fielding before Adela Quested hallucinated accusation in the Marabar Caves shatters Anglo-Indian relations."
+  },
+  {
+   "id": "gr-e-43",
+   "question": "Which 1928 comic first novel by Evelyn Waugh follows the innocent theology student Paul Pennyfeather after he is unjustly expelled from Scone College, Oxford?",
+   "options": [
+    "Vile Bodies",
+    "A Handful of Dust",
+    "Decline and Fall",
+    "Black Mischief"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Subtitled An Illustrated Novelette Waugh 1928 debut Decline and Fall sends Paul Pennyfeather to Dr Fagan Welsh school Llanabba Castle."
+  },
+  {
+   "id": "gr-e-44",
+   "question": "Which popular 1929 picaresque novel by J. B. Priestley brings together the Yorkshire joiner Jess Oakroyd, Inigo Jollifant, and Miss Elizabeth Trant to form a concert troupe?",
+   "options": [
+    "The Good Companions",
+    "Bright Day",
+    "Angel Pavement",
+    "Festival at Farbridge"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Priestley 1929 bestseller The Good Companions won the James Tait Black Memorial Prize and celebrated resilient provincial characters."
+  },
+  {
+   "id": "gr-e-45",
+   "question": "Which 1934 historical novel by Robert Graves is written as the secret autobiography of a stuttering, limping Roman emperor who survives the intrigues of Livia and Caligula?",
+   "options": [
+    "King Jesus",
+    "Count Belisarius",
+    "I, Claudius",
+    "Sergeant Lamb of the Ninth"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Drawing on Tacitus Suetonius and Cassius Dio Robert Graves published I Claudius and its sequel Claudius the God in 1934."
+  },
+  {
+   "id": "gr-e-46",
+   "question": "In the subtitle of his 1919 play 'Heartbreak House', depicting cultured Europe drifting toward World War I in Captain Shotover's house, Bernard Shaw called it 'A Fantasia in the ______ Manner':",
+   "options": [
+    "Norwegian",
+    "French",
+    "Classical Greek",
+    "Russian"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Inspired by the plays of Anton Chekhov Shaw subtitled Heartbreak House A Fantasia in the Russian Manner on English Themes."
+  },
+  {
+   "id": "gr-e-47",
+   "question": "Which 1923 chronicle play by George Bernard Shaw dramatizes the rise, heresy trial at Rouen, and 1920 canonization of the Maid of Orléans?",
+   "options": [
+    "Back to Methuselah",
+    "Saint Joan",
+    "The Apple Cart",
+    "Androcles and the Lion"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Written shortly after Joan of Arc 1920 canonization Shaw Saint Joan premiered in December 1923 and led directly to his 1925 Nobel Prize."
+  },
+  {
+   "id": "gr-e-48",
+   "question": "Which 1935 debut novel by Mulk Raj Anand, published in London with a preface by E. M. Forster, chronicles a single day in the life of the young sweeper Bakha?",
+   "options": [
+    "The Village",
+    "Untouchable",
+    "Two Leaves and a Bud",
+    "Coolie"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Rejected by nineteen publishers before Wishart Books issued it in 1935 with E M Forster preface Untouchable launched Mulk Raj Anand career."
+  },
+  {
+   "id": "gr-e-49",
+   "question": "Which 1935 debut novel by R. K. Narayan, championed by Graham Greene, introduced the fictional South Indian town of Malgudi?",
+   "options": [
+    "The Dark Room",
+    "The Bachelor of Arts",
+    "The English Teacher",
+    "Swami and Friends"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Graham Greene recommended Narayan manuscript to Hamish Hamilton who published Swami and Friends in October 1935."
+  },
+  {
+   "id": "gr-e-50",
+   "question": "Which two iconic figures of the British Empire and its literature died within two days of each other in January 1936?",
+   "options": [
+    "Rudyard Kipling and King George V",
+    "W. B. Yeats and King George VI",
+    "Thomas Hardy and King Edward VII",
+    "John Galsworthy and Queen Victoria"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Rudyard Kipling died on 18 January 1936 and his close friend King George V died two days later on 20 January 1936."
+  }
+ ]
+}

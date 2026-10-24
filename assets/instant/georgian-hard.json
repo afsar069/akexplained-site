@@ -1,0 +1,608 @@
+{
+ "bankId": "georgian",
+ "period": "Georgian Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "gr-h-01",
+   "question": "At whose London flat in September 1912 did Rupert Brooke, Wilfrid Gibson, John Drinkwater, and Harold Monro finalize the plan for the first 'Georgian Poetry' anthology?",
+   "options": [
+    "Ezra Pound's flat at Church Walk, Kensington",
+    "Edward Marsh's chambers at Raymond Buildings, Gray's Inn",
+    "Robert Bridges's residence at Boars Hill, Oxford",
+    "Lady Ottoline Morrell's salon at Bedford Square"
+   ],
+   "correct_option_id": 1,
+   "explanation": "On 19 September 1912 Brooke and Marsh met with Gibson Drinkwater Monro and Arundel del Re at Marsh Gray Inn chambers to launch Georgian Poetry."
+  },
+  {
+   "id": "gr-h-02",
+   "question": "Which two poets were invited by Edward Marsh to appear in 'Georgian Poetry 1911–1912', but declined because one felt he belonged to an older era and the other refused his chosen poems?",
+   "options": [
+    "Robert Frost and T. S. Eliot",
+    "Thomas Hardy and W. B. Yeats",
+    "Rudyard Kipling and Ford Madox Ford",
+    "A. E. Housman and Ezra Pound"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Housman modestly insisted he was not of the new generation while Ezra Pound declined when Marsh asked for two early poems instead of Ripostes."
+  },
+  {
+   "id": "gr-h-03",
+   "question": "In the fourth (1919) and fifth (1922) volumes of 'Georgian Poetry', which two female poets were included by Edward Marsh for the very first time in the series?",
+   "options": [
+    "Edith Sitwell and Charlotte Mew",
+    "Alice Meynell and Rose Macaulay",
+    "Sylvia Townsend Warner and Ruth Pitter",
+    "Fredegond Shove and Vita Sackville-West"
+   ],
+   "correct_option_id": 3,
+   "explanation": "After three all-male volumes Marsh included four poems by Fredegond Shove in 1918-1919 and seven poems by Vita Sackville-West in 1920-1922."
+  },
+  {
+   "id": "gr-h-04",
+   "question": "Although later associated with high modernism, which early passionate lyric by D. H. Lawrence was included by Edward Marsh in the inaugural 'Georgian Poetry 1911–1912'?",
+   "options": [
+    "Snake",
+    "Bavarian Gentians",
+    "Piano",
+    "Snap-Dragon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Marsh included Lawrence Snap-Dragon in Georgian Poetry 1911-1912 alongside Service of All the Dead and Seven Seals in Later volumes."
+  },
+  {
+   "id": "gr-h-05",
+   "question": "Which brief twenty-two-line speech from Isaac Rosenberg's verse play 'Moses' was the only piece by Rosenberg ever printed by Edward Marsh in 'Georgian Poetry 1916–1917'?",
+   "options": [
+    "Ah, Koelue!",
+    "Louse Hunting",
+    "Dead Man's Dump",
+    "Returning, We Hear the Larks"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Marsh printed only the short speech of the Young Hebrew beginning Ah Koelue from Rosenberg self-published 1916 play Moses."
+  },
+  {
+   "id": "gr-h-06",
+   "question": "What was the title of the four-issue quarterly periodical published in 1914 from Lascelles Abercrombie's cottage in Dymock, which first printed Rupert Brooke's '1914' war sonnets?",
+   "options": [
+    "The Blue Review",
+    "New Numbers",
+    "Rhythm",
+    "Poetry and Drama"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Abercrombie Gibson Drinkwater and Brooke published four issues of New Numbers from Ryton Dymock in 1914 printing The Soldier in its final issue."
+  },
+  {
+   "id": "gr-h-07",
+   "question": "On what exact pre-war date in June 1914 did Edward Thomas's train make an unscheduled stop at Adlestrop station while he was traveling from London to visit Robert Frost?",
+   "options": [
+    "28 June 1914",
+    "1 July 1914",
+    "24 June 1914",
+    "4 August 1914"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Thomas recorded the stop at Adlestrop in his notebook on 24 June 1914 while traveling from Paddington to Ledbury and wrote the poem in January 1915."
+  },
+  {
+   "id": "gr-h-08",
+   "question": "Which famous poem by Robert Frost, collected in 'Mountain Interval' (1916), was originally written as a gentle teasing response to Edward Thomas's indecisiveness on their Dymock walks?",
+   "options": [
+    "Birches",
+    "The Road Not Taken",
+    "Mending Wall",
+    "Stopping by Woods on a Snowy Evening"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Frost sent a draft of The Road Not Taken to Edward Thomas in 1915 mocking Thomas habit of regretting whichever forest path they had not chosen."
+  },
+  {
+   "id": "gr-h-09",
+   "question": "How many annual 'cycles' of the modernist anthology 'Wheels' were edited by Edith Sitwell between 1916 and 1921 as an avant-garde rebellion against 'Georgian Poetry'?",
+   "options": [
+    "Eight cycles",
+    "Six cycles",
+    "Ten cycles",
+    "Three cycles"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Edith Sitwell and her brothers Osbert and Sacheverell published six cycles of Wheels between December 1916 and 1921."
+  },
+  {
+   "id": "gr-h-10",
+   "question": "Prior to Siegfried Sassoon's 1920 edition of Wilfred Owen's 'Poems', who dedicated the 1919 fourth cycle of 'Wheels' to Owen's memory and first printed seven of his war poems in book form?",
+   "options": [
+    "Edith Sitwell",
+    "Harold Monro",
+    "Lady Ottoline Morrell",
+    "Robert Ross"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Edith Sitwell and Osbert Sitwell dedicated Wheels 1919 Fourth Cycle to Wilfred Owen and printed Strange Meeting Disabled and five other poems."
+  },
+  {
+   "id": "gr-h-11",
+   "question": "Which conservative literary monthly, founded and edited by Sir John Collings Squire from November 1919 to 1934, became the organ of the neo-Georgian coterie dubbed the 'Squirearchy'?",
+   "options": [
+    "The Adelphi",
+    "The Calendar of Modern Letters",
+    "Life and Letters",
+    "The London Mercury"
+   ],
+   "correct_option_id": 3,
+   "explanation": "J C Squire launched The London Mercury in November 1919 championing traditional Georgian verse against Eliot Pound and the Sitwells."
+  },
+  {
+   "id": "gr-h-12",
+   "question": "In his March 1918 review of 'Georgian Poetry 1916–1917' in 'The Egoist' ('Verse Pleasant and Unpleasant'), what chief defect did T. S. Eliot diagnose in the Georgian poets?",
+   "options": [
+    "Their radical Marxist propaganda in rural ballads",
+    "Their insular provincialism and reliance on trivial 'pleasantness'",
+    "Their pedantic obsession with classical Greek and Latin epigraphs",
+    "Their excessive imitation of French Symbolist free verse"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eliot criticized the Georgians for caressing everything they touched into a complacent provincial pleasantness of rainbows cuckoos and daffodils."
+  },
+  {
+   "id": "gr-h-13",
+   "question": "In his December 1919 essay in 'The Athenaeum' reviewing 'Georgian Poetry 1918–1919', how did John Middleton Murry characterize the later Georgian school?",
+   "options": [
+    "As corporate 'weekend' pastoralism and 'false simplicity'",
+    "As a decadent offshoot of the 1890s Rhymers' Club",
+    "As a bold return to Metaphysical wit and paradox",
+    "As an austere revival of Anglo-Saxon alliterative meter"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Murry condemned the right wing of the Georgian coalition for false simplicity and a complacent cult of nature without tragic conviction."
+  },
+  {
+   "id": "gr-h-14",
+   "question": "Which 1931 satirical poem in heroic couplets by the South African poet Roy Campbell fiercely lampooned the London neo-Georgian literary establishment and Bloomsbury?",
+   "options": [
+    "The Flaming Terrapin",
+    "Flowering Rifle",
+    "Adamastor",
+    "The Georgiad"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Modeled on Pope Dunciad Roy Campbell The Georgiad 1931 mocked J C Squire Vita Sackville-West and the Georgian pastoralists."
+  },
+  {
+   "id": "gr-h-15",
+   "question": "Which gritty 1911 narrative poem in octosyllabic couplets by John Masefield—published in 'The English Review'—depicts the drunken poacher Saul Kane's spiritual conversion?",
+   "options": [
+    "Dauber",
+    "The Widow in the Bye Street",
+    "The Daffodil Fields",
+    "The Everlasting Mercy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Printed by Austin Harrison in The English Review in October 1911 The Everlasting Mercy electrified readers with its raw colloquial realism."
+  },
+  {
+   "id": "gr-h-16",
+   "question": "Which 1921 novel by Walter de la Mare—winner of the James Tait Black Memorial Prize—portrays the inner life of a cultured Victorian woman Miss M., who stands barely three feet tall?",
+   "options": [
+    "Henry Brocken",
+    "The Return",
+    "Memoirs of a Midget",
+    "The Three Mulla-Mulgars"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Walter de la Mare published Memoirs of a Midget in 1921 exploring beauty alienation and scale through the diminutive heroine Miss M."
+  },
+  {
+   "id": "gr-h-17",
+   "question": "Which prominent playwright and critic received a self-published copy of 'The Soul's Destroyer' mailed from a London doss-house by W. H. Davies in 1905 and helped launch his career?",
+   "options": [
+    "Harley Granville-Barker",
+    "John Galsworthy",
+    "George Bernard Shaw",
+    "J. M. Barrie"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Impressed by the fresh talent in The Soul Destroyer Shaw sent Davies money recommended him to critics and later wrote the preface to Super-Tramp."
+  },
+  {
+   "id": "gr-h-18",
+   "question": "Under what title was Siegfried Sassoon's July 1917 statement against the continuation of World War I read in the House of Commons and printed in 'The Times'?",
+   "options": [
+    "Finished with the War: A Soldier's Declaration",
+    "No More Parades: A Officer's Manifesto",
+    "A Protest from the Western Front",
+    "An Open Letter to the War Office"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Drafted with help from Bertrand Russell and Middleton Murry Sassoon declaration was read in Parliament by Hastings Lees-Smith on 30 July 1917."
+  },
+  {
+   "id": "gr-h-19",
+   "question": "Which pioneering neurologist, anthropologist, and army psychiatrist treated Siegfried Sassoon at Craiglockhart War Hospital in 1917?",
+   "options": [
+    "Dr. Ernest Jones",
+    "Dr. Havelock Ellis",
+    "Dr. Lewis Yealland",
+    "Dr. W. H. R. Rivers"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Captain W H R Rivers treated Sassoon with humane talking therapy at Craiglockhart and became a father figure to him until Rivers death in 1922."
+  },
+  {
+   "id": "gr-h-20",
+   "question": "What was the title of the Craiglockhart War Hospital fortnightly magazine edited by Wilfred Owen in 1917, in which Owen published his first war poems?",
+   "options": [
+    "The Hydra",
+    "The Outpost",
+    "The Wipers Times",
+    "The Craiglockhart Gazette"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Named after the many-headed monster because patients lived in the former Hydropathic establishment The Hydra was edited by Owen in 1917."
+  },
+  {
+   "id": "gr-h-21",
+   "question": "Before crossing out her name on the manuscript, to which popular patriotic writer of recruitment verses ('Who's for the Game?') did Wilfred Owen ironically dedicate drafts of 'Dulce et Decorum Est'?",
+   "options": [
+    "Cicely Fox Smith",
+    "May Wedderburn Cannan",
+    "Rose Macaulay",
+    "Jessie Pope"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Owen initially dedicated Dulce et Decorum Est To Jessie Pope etc and To a certain Poetess before removing the name to universalize the address My friend."
+  },
+  {
+   "id": "gr-h-22",
+   "question": "Which twenty-year-old Scottish poet, killed by a sniper at the Battle of Loos in October 1915, wrote the stark sonnet beginning 'When you see millions of the mouthless dead'?",
+   "options": [
+    "Leslie Coulson",
+    "W. N. Hodgson",
+    "Charles Hamilton Sorley",
+    "Ewart Alan Mackintosh"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Found in his kitbag after his death at Loos and published in Marlborough and Other Poems 1916 Sorley sonnet rejected sentimental consolation."
+  },
+  {
+   "id": "gr-h-23",
+   "question": "Which aristocratic cavalry officer wrote the ecstatic 1915 combat lyric 'Into Battle' ('The naked earth is warm with spring'), printed in 'The Times' on the day his death was announced?",
+   "options": [
+    "Robert Vernède",
+    "Julian Grenfell",
+    "Edward Wyndham Tennant",
+    "Raymond Asquith"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Captain Julian Grenfell of the Royal Dragoons wrote Into Battle in April 1915 and died of a shell splinter to the head at Boulogne in May 1915."
+  },
+  {
+   "id": "gr-h-24",
+   "question": "Which Gloucestershire poet and composer, gassed at Passchendaele in 1917, published the wartime verse collections 'Severn and Somme' (1917) and 'War's Embers' (1919)?",
+   "options": [
+    "Ivor Gurney",
+    "George Butterworth",
+    "Herbert Read",
+    "F. W. Harvey"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ivor Gurney set Housman and Edward Thomas to music and wrote poignant poems of Gloucestershire and the trenches before his 1922 asylum confinement."
+  },
+  {
+   "id": "gr-h-25",
+   "question": "Which of the following gives the exact chronological sequence of the four novels that constitute Ford Madox Ford's tetralogy 'Parade's End' (1924–1928)?",
+   "options": [
+    "The Good Soldier, Some Do Not..., No More Parades, and The Last Post",
+    "Some Do Not..., No More Parades, A Man Could Stand Up—, and The Last Post",
+    "A Man Could Stand Up—, Some Do Not..., No More Parades, and Armistice Day",
+    "No More Parades, Some Do Not..., The Last Post, and A Man Could Stand Up—"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Ford published Some Do Not in 1924 No More Parades in 1925 A Man Could Stand Up in 1926 and The Last Post in 1928."
+  },
+  {
+   "id": "gr-h-26",
+   "question": "What original title had Ford Madox Ford chosen for 'The Good Soldier' before publisher John Lane objected in 1915 that a gloomy title would hurt wartime sales?",
+   "options": [
+    "The Heart of another",
+    "The Ashburnham Tragedy",
+    "The Saddest Story",
+    "Four Square People"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Opening extracts appeared in Wyndham Lewis Blast in 1914 under the title The Saddest Story before Ford sarcastically suggested The Good Soldier."
+  },
+  {
+   "id": "gr-h-27",
+   "question": "In E. M. Forster's 'Howards End' (1910), which three families represent cultured Anglo-German liberal idealism, pragmatic imperial capitalism, and struggling lower-middle-class clerkdom?",
+   "options": [
+    "The Schlegels, the Wilcoxes, and the Basts",
+    "The Pembrokes, the Ansells, and the Wonhams",
+    "The Herritons, the Abbotts, and the Carellas",
+    "The Honeychurches, the Emersons, and the Vyses"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Margaret and Helen Schlegel embody culture Henry Wilcox and his children embody business power and Leonard and Jacky Bast embody poor clerkdom."
+  },
+  {
+   "id": "gr-h-28",
+   "question": "Which novel did E. M. Forster write in 1913–1914 after visiting Edward Carpenter, insisting that it end happily in the 'greenwood' and remain unpublished until after his death?",
+   "options": [
+    "Maurice",
+    "The Longest Journey",
+    "Where Angels Fear to Tread",
+    "Arctic Summer"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dedicated To a Happier Year Forster novel Maurice unites Maurice Hall and the gamekeeper Alec Scudder and was published posthumously in 1971."
+  },
+  {
+   "id": "gr-h-29",
+   "question": "What are the exact titles of the three structural divisions of E. M. Forster's 1924 novel 'A Passage to India'?",
+   "options": [
+    "Part I: Islam, Part II: Nothingness, and Part III: Hinduism",
+    "Part I: Winter, Part II: Monochrome, and Part III: Monsoon",
+    "Part I: Mosque, Part II: Caves, and Part III: Temple",
+    "Part I: Chandrapore, Part II: Marabar, and Part III: Mau"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Forster divided A Passage to India into Mosque Caves and Temple aligning with the cool weather the hot weather and the rains."
+  },
+  {
+   "id": "gr-h-30",
+   "question": "Which eccentric, mystical Hindu professor of Chandrapore College sings a song to Krishna at Fielding's tea party and presides over the festival in Part III of 'A Passage to India'?",
+   "options": [
+    "Amritrao",
+    "Panna Lal",
+    "Professor Narayan Godbole",
+    "Rao Bahadur"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Professor Narayan Godbole Deccani Brahman embodies Hindu pantheistic inclusiveness during the birth ceremony of Lord Krishna at Mau."
+  },
+  {
+   "id": "gr-h-31",
+   "question": "Across which three generations of the Brangwen family in the Erewash Valley does D. H. Lawrence's 'The Rainbow' (1915) unfold?",
+   "options": [
+    "Alfred and Gertrude; Paul and Miriam; and William Morel",
+    "Thomas and Crich; Gerald and Gudrun; and Rupert Birkin",
+    "Tom and Lydia Lensky; Will and Anna; and Ursula Brangwen",
+    "Aaron Sisson; Lilly; and Kate Leslie"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Rainbow traces farmer Tom Brangwen marriage to the Polish widow Lydia Lensky their stepdaughter Anna marriage to Will and Ursula quest for freedom."
+  },
+  {
+   "id": "gr-h-32",
+   "question": "At the climax of D. H. Lawrence's 'Women in Love' (1920), how does the industrialist mine-owner Gerald Crich meet his death in the Tyrolean Alps?",
+   "options": [
+    "He wanders alone up into the snowbound mountains and freezes to death near a half-buried crucifix",
+    "He is killed in a duel with the German sculptor Loerke",
+    "He leaps from a mountain cable-car after Gudrun rejects him",
+    "He drowns beneath the ice of a frozen Alpine lake"
+   ],
+   "correct_option_id": 0,
+   "explanation": "After nearly strangling Gudrun and striking Loerke Gerald Crich skis upward into an icy cul-de-sac in the Alps and freezes to death."
+  },
+  {
+   "id": "gr-h-33",
+   "question": "What are the exact titles of the three parts of Virginia Woolf's 1927 novel 'To the Lighthouse'?",
+   "options": [
+    "Part I: The Window, Part II: Time Passes, and Part III: The Lighthouse",
+    "Part I: The Island, Part II: The Great War, and Part III: The Voyage",
+    "Part I: Evening, Part II: Night, and Part III: Morning",
+    "Part I: Mrs. Ramsay, Part II: Darkness, and Part III: Lily's Canvas"
+   ],
+   "correct_option_id": 0,
+   "explanation": "To the Lighthouse is structured in an H-shape with two single days The Window and The Lighthouse bridged by the ten-year corridor Time Passes."
+  },
+  {
+   "id": "gr-h-34",
+   "question": "Who are the six characters whose interwoven soliloquies trace their lives around the silent, absent hero Percival in Virginia Woolf's 'The Waves' (1931)?",
+   "options": [
+    "Bernard, Susan, Rhoda, Neville, Jinny, and Louis",
+    "Eleanor, Delia, Morris, Martin, Rose, and Peggy",
+    "Clarissa, Peter, Sally, Richard, Septimus, and Lucrezia",
+    "Jacob, Bonamy, Clara, Florinda, Fanny, and Sandra"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Three men Bernard Neville and Louis and three women Susan Jinny and Rhoda speak in dramatic soliloquies framed by nine italicized coastal interludes."
+  },
+  {
+   "id": "gr-h-35",
+   "question": "In the Gilbert and Linati schemas for James Joyce's 'Ulysses' (1922), what are the Homeric titles of Episode 1 (at the Martello Tower) and Episode 18 (Molly Bloom's monologue)?",
+   "options": [
+    "Hades and Eumaeus",
+    "Telemachus and Penelope",
+    "Proteus and Calypso",
+    "Nestor and Ithaca"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Ulysses opens at 8 a.m. with Episode 1 Telemachus featuring Stephen Dedalus and Buck Mulligan and ends with Episode 18 Penelope spoken by Molly Bloom."
+  },
+  {
+   "id": "gr-h-36",
+   "question": "Which longest, hallucination-filled fifteenth episode of James Joyce's 'Ulysses' is formatted entirely as a surreal stage play set in Dublin's 'Nighttown' brothel district?",
+   "options": [
+    "Cyclops",
+    "Circe",
+    "Sirens",
+    "Oxen of the Sun"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Episode 15 Circe takes place at midnight in Bella Cohen brothel in Nighttown where Leopold Bloom and Stephen Dedalus confront their deepest unconscious guilt."
+  },
+  {
+   "id": "gr-h-37",
+   "question": "From which first-century Latin work by Petronius did T. S. Eliot take the Greek-and-Latin epigraph to 'The Waste Land' (1922), in which the Cumaean Sibyl says 'I want to die'?",
+   "options": [
+    "The Metamorphoses",
+    "The Pharsalia",
+    "The Golden Ass",
+    "The Satyricon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "After Pound dissuaded Eliot from using an epigraph from Conrad Heart of Darkness Eliot chose Trimalchio speech on the Sibyl from Petronius Satyricon."
+  },
+  {
+   "id": "gr-h-38",
+   "question": "In Part III ('The Fire Sermon') of 'The Waste Land', which blind mythological figure—called in Eliot's notes 'the most important personage in the poem'—witnesses the typist's seduction?",
+   "options": [
+    "The Fisher King",
+    "Phlebas the Phoenician",
+    "Tiresias",
+    "Stetson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Eliot note to line 218 states that what Tiresias sees in fact is the substance of the poem uniting both sexes in his blind foresuffering consciousness."
+  },
+  {
+   "id": "gr-h-39",
+   "question": "In Part II of T. S. Eliot's 1935 verse drama 'Murder in the Cathedral', how do the Four Knights startle the audience immediately after slaying Archbishop Thomas Becket?",
+   "options": [
+    "They chant the Latin Penitential Psalms together with the Women of Canterbury",
+    "They remove their helmets to reveal that they are identical to the Four Tempters in masks",
+    "They perform a silent medieval dumb-show depicting the coronation of Henry II",
+    "They step forward and address the audience in modern political prose to justify the murder"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Breaking the twelfth-century verse frame Reginald Fitz Urse and the knights deliver slick modern platform speeches asking the audience to excuse their rational act."
+  },
+  {
+   "id": "gr-h-40",
+   "question": "Which 1916 one-act play by W. B. Yeats—first performed in Lady Cunard's London drawing room with masks by Edmund Dulac—inaugurated Yeats's adaptation of Japanese Noh drama?",
+   "options": [
+    "The Only Jealousy of Emer",
+    "At the Hawk's Well",
+    "On Baile's Strand",
+    "Calvary"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Prompted by Ezra Pound work on Ernest Fenollosa Noh manuscripts Yeats staged At the Hawk Well in April 1916 with Michio Ito dancing the Guardian of the Well."
+  },
+  {
+   "id": "gr-h-41",
+   "question": "Why did nationalist demonstrators riot at Dublin's Abbey Theatre during the fourth performance of Sean O'Casey's 'The Plough and the Stars' in February 1926?",
+   "options": [
+    "Because the play portrayed Michael Collins signing the partition treaty in London",
+    "Because Act II brought the Irish flags into a public house alongside the prostitute Rosie Redmond",
+    "Because Yeats invited the British Viceroy to sit in the front row on opening night",
+    "Because the play mocked Catholic priests refusing absolution to Easter Rising rebels"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Protesters led by Hannah Sheehy-Skeffington stormed the Abbey stage over the pub scene in Act II prompting Yeats famous rebuke You have disgraced yourselves again."
+  },
+  {
+   "id": "gr-h-42",
+   "question": "In R. C. Sherriff's 1928 war drama 'Journey's End', set in a dugout before St. Quentin in March 1918, who is the whiskey-dependent company commander idolized by young Jimmy Raleigh?",
+   "options": [
+    "Lieutenant Osborne",
+    "Second Lieutenant Hibbert",
+    "Captain Dennis Stanhope",
+    "Private Mason"
+   ],
+   "correct_option_id": 2,
+   "explanation": "First played by a young Laurence Olivier in December 1928 Captain Dennis Stanhope masks his three years of trench nerve strain with whiskey."
+  },
+  {
+   "id": "gr-h-43",
+   "question": "Which four nineteenth-century figures are the biographical subjects of Lytton Strachey's landmark 1918 iconoclastic study 'Eminent Victorians'?",
+   "options": [
+    "Queen Victoria, Prince Albert, Lord Melbourne, and Benjamin Disraeli",
+    "William Gladstone, Lord Palmerston, Cardinal Newman, and Charles Darwin",
+    "Cardinal Manning, Florence Nightingale, Dr. Thomas Arnold, and General Gordon",
+    "Thomas Carlyle, John Ruskin, Matthew Arnold, and Lord Macaulay"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Strachey dissected Victorian religion humanitarianism education and imperialism through Manning Nightingale Arnold of Rugby and General Gordon."
+  },
+  {
+   "id": "gr-h-44",
+   "question": "In what futuristic calendar year—measured from the production of Henry Ford's Model T—does Aldous Huxley's 'Brave New World' (1932) open, and who is the World Controller for Western Europe?",
+   "options": [
+    "A.F. 632, under Resident World Controller Mustapha Mond",
+    "A.F. 500, under World Controller Helmholtz Watson",
+    "A.F. 1984, under World Controller Bernard Marx",
+    "A.F. 1000, under Director Thomas Tomakin"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Set in this year of stability A.F. 632 After Ford Brave New World features Mustapha Mond one of the ten World Controllers."
+  },
+  {
+   "id": "gr-h-45",
+   "question": "Which character in Aldous Huxley's 'Brave New World' (1932)—raised on the New Mexico Reservation reading Shakespeare—quotes Miranda's words from 'The Tempest' before hanging himself?",
+   "options": [
+    "Helmholtz Watson",
+    "Bernard Marx",
+    "John the Savage",
+    "Lenina Crowne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Born naturally to Linda on the Malpais Reservation John the Savage initially greets the World State with O brave new world before retreating to a Surrey lighthouse."
+  },
+  {
+   "id": "gr-h-46",
+   "question": "Who is the lonely timber merchant with a dark birthmark on his cheek who champions Dr. Veraswami before shooting himself in George Orwell's 1934 debut novel 'Burmese Days'?",
+   "options": [
+    "Ellis",
+    "Verrall",
+    "Mr. Macgregor",
+    "John Flory"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Drawing on his five years in the Indian Imperial Police in Burma Orwell portrayed John Flory disgraced at church by his Burmese mistress Ma Hla May."
+  },
+  {
+   "id": "gr-h-47",
+   "question": "Which aspiring poet in George Orwell's 1936 novel 'Keep the Aspidistra Flying' wages a one-man war on the 'money-god' before returning to an advertising firm when Rosemary becomes pregnant?",
+   "options": [
+    "George Bowling",
+    "Gordon Comstock",
+    "Philip Ravelston",
+    "Dorothy Hare"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Gordon Comstock quits the New Albion publicity firm to work in a cheap bookshop and write his poem London Pleasures before buying an aspidistra for his flat."
+  },
+  {
+   "id": "gr-h-48",
+   "question": "Which 1935 satirical play co-authored by W. H. Auden and Christopher Isherwood follows Alan Norman across Europe searching for Sir Francis Crewe, who has accompanied him disguised as a dog?",
+   "options": [
+    "Paid on Both Sides",
+    "The Dog Beneath the Skin",
+    "On the Frontier",
+    "The Ascent of F6"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Produced by Rupert Doone Group Theatre in January 1936 The Dog Beneath the Skin or Where is Francis satirized fascism and British village complacency."
+  },
+  {
+   "id": "gr-h-49",
+   "question": "Which of the following statements concerning the Georgian Period (1910–1936) is NOT correct?",
+   "options": [
+    "John Galsworthy received the Nobel Prize in Literature in 1932",
+    "Edward Marsh edited five volumes of 'Georgian Poetry' between 1912 and 1922",
+    "John Masefield was appointed Poet Laureate in 1930 following the death of Robert Bridges",
+    "D. H. Lawrence was awarded the Nobel Prize in Literature in 1928 for 'Lady Chatterley's Lover'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "D H Lawrence never received the Nobel Prize and Lady Chatterley Lover was privately printed in Florence in 1928 and banned in Britain."
+  },
+  {
+   "id": "gr-h-50",
+   "question": "Which of the following character-and-work pairings from the Georgian Period (1910–1936) is NOT correctly matched?",
+   "options": [
+    "Christopher Tietjens — John Galsworthy's 'The Forsyte Saga'",
+    "Paul Pennyfeather — Evelyn Waugh's 'Decline and Fall'",
+    "Philip Carey — W. Somerset Maugham's 'Of Human Bondage'",
+    "Lily Briscoe — Virginia Woolf's 'To the Lighthouse'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Christopher Tietjens is the central hero of Ford Madox Ford tetralogy Parade End whereas Soames Forsyte is the central character of The Forsyte Saga."
+  }
+ ]
+}

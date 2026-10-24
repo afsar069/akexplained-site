@@ -22,7 +22,7 @@ breaking it breaks a promise already made.
   (see rule 7). Change the template or the registry, never a generated page.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
-  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`.
+  Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, page-head motif and `nav.js` into every built page
 
@@ -82,8 +82,8 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
   must not say "with the reason" (meta, About list). If reasons arrive later, add them and raise `rev`.
   The question text is the owner's and stays exactly as supplied; only `id` and `rev` are added.
   Ids never change or get renumbered: readers' records and the future dashboard hang on them. Prefix per
-  period, then `e` or `h`, then the number: `as-e-01` Anglo-Saxon, `an-h-01` Anglo-Norman, `ac-e-01` Age of Chaucer, `fc-e-01` Fifteenth Century, `rn-e-01` Renaissance Period, `et-e-01` Early Tudor Period, `el-e-01` Elizabethan Age, `jb-e-01` Jacobean Age, `cr-e-01` Caroline Age, `cw-e-01` Commonwealth Period, `nc-e-01` Neoclassical Period, `rs-e-01` Restoration Age, `au-e-01` Augustan Age, `sn-e-01` Age of Sensibility (not `as-`, that is Anglo-Saxon), `rm-e-01` Romantic Period, `vc-e-01` Victorian Period, `ed-e-01` Edwardian Period (Literature bank
-  of a period: `asl-`, `anl-`, `acl-`, `fcl-`, `rnl-`, `etl-`, `ell-`, `jbl-`, `crl-`, `cwl-`, `ncl-`, `rsl-`, `aul-`, `snl-`, `rml-`, `vcl-`, `edl-`). If a question's meaning changes, raise `rev`.
+  period, then `e` or `h`, then the number: `as-e-01` Anglo-Saxon, `an-h-01` Anglo-Norman, `ac-e-01` Age of Chaucer, `fc-e-01` Fifteenth Century, `rn-e-01` Renaissance Period, `et-e-01` Early Tudor Period, `el-e-01` Elizabethan Age, `jb-e-01` Jacobean Age, `cr-e-01` Caroline Age, `cw-e-01` Commonwealth Period, `nc-e-01` Neoclassical Period, `rs-e-01` Restoration Age, `au-e-01` Augustan Age, `sn-e-01` Age of Sensibility (not `as-`, that is Anglo-Saxon), `rm-e-01` Romantic Period, `vc-e-01` Victorian Period, `ed-e-01` Edwardian Period, `gr-e-01` Georgian Period (Literature bank
+  of a period: `asl-`, `anl-`, `acl-`, `fcl-`, `rnl-`, `etl-`, `ell-`, `jbl-`, `crl-`, `cwl-`, `ncl-`, `rsl-`, `aul-`, `snl-`, `rml-`, `vcl-`, `edl-`, `grl-`). If a question's meaning changes, raise `rev`.
 - The engine shuffles options, except an option that points at the others ("All of the above",
   "Both A and B") and True / False (2 options, kept in that order). Order of questions: never seen, then missed, then right.
 - Progress stays in this browser only (`akd:<bank>:v1`, per question id) so it can move to an account later.
