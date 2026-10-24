@@ -1,0 +1,608 @@
+{
+ "bankId": "augustan",
+ "period": "Augustan Age",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "au-e-01",
+   "question": "From which Roman emperor's reign, celebrated as the golden era of Virgil, Horace, and Ovid, did English writers of 1700–1745 derive the title 'Augustan Age'?",
+   "options": [
+    "Emperor Constantine",
+    "Emperor Augustus",
+    "Emperor Marcus Aurelius",
+    "Emperor Justinian"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Eighteenth-century writers compared their era of classical refinement to the Rome of Emperor Augustus."
+  },
+  {
+   "id": "au-e-02",
+   "question": "The boundaries of the Augustan Age (1700–1745) are traditionally marked by the death of John Dryden in 1700 and the deaths of which two major writers in 1744 and 1745?",
+   "options": [
+    "Samuel Richardson and Henry Fielding",
+    "Daniel Defoe and Richard Steele",
+    "Joseph Addison and John Gay",
+    "Alexander Pope and Jonathan Swift"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope died in May 1744 and Swift died in October 1745 closing the Augustan phase of Neoclassicism."
+  },
+  {
+   "id": "au-e-03",
+   "question": "Which publication, launched in London in March 1702 near Fleet Bridge, was the very first regular daily newspaper in England?",
+   "options": [
+    "The London Gazette",
+    "The Public Advertiser",
+    "The Morning Chronicle",
+    "The Daily Courant"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Daily Courant was first published on 11 March 1702 by Edward Mallet and soon managed by Samuel Buckley."
+  },
+  {
+   "id": "au-e-04",
+   "question": "Under which monarch was the Act of Union passed in 1707, formally uniting the kingdoms of England and Scotland into Great Britain?",
+   "options": [
+    "King William III",
+    "King George I",
+    "King George II",
+    "Queen Anne"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Acts of Union took effect on 1 May 1707 during the reign of Queen Anne who ruled from 1702 to 1714."
+  },
+  {
+   "id": "au-e-05",
+   "question": "What landmark literary and legal principle was established for the first time by the Statute of Anne passed by Parliament in 1710?",
+   "options": [
+    "Statutory copyright vested in authors",
+    "Royal pensions for all university poets",
+    "Mandatory pre-publication censorship by bishops",
+    "Free postal delivery for literary journals"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Statute of Anne 1710 granted authors legal copyright for fourteen years renewable for another fourteen."
+  },
+  {
+   "id": "au-e-06",
+   "question": "During which span of years did Alexander Pope, the central poetic figure of the Augustan Age, live?",
+   "options": [
+    "1672–1719",
+    "1688–1744",
+    "1667–1745",
+    "1709–1784"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Alexander Pope was born in London in May 1688 and died at Twickenham in May 1744."
+  },
+  {
+   "id": "au-e-07",
+   "question": "Which four-part seasonal work, printed in Jacob Tonson's 'Poetical Miscellanies' in 1709, was Alexander Pope's first published poetry?",
+   "options": [
+    "Imitations of Horace",
+    "Messiah",
+    "Pastorals",
+    "Moral Essays"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pope made his poetic debut in May 1709 with four Pastorals dedicated to the four seasons."
+  },
+  {
+   "id": "au-e-08",
+   "question": "Which 1713 topographical poem by Alexander Pope celebrates both the rural landscape of the Thames valley and the Tory Peace of Utrecht?",
+   "options": [
+    "The Seasons",
+    "Windsor-Forest",
+    "Cooper's Hill",
+    "Grongar Hill"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Pope published Windsor-Forest in March 1713 combining landscape description with praise for the Treaty of Utrecht."
+  },
+  {
+   "id": "au-e-09",
+   "question": "How many cantos comprised the original 1712 version of Alexander Pope's 'The Rape of the Lock' before he expanded it to five cantos in 1714?",
+   "options": [
+    "Three cantos",
+    "Two cantos",
+    "Four cantos",
+    "One canto"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The first version of The Rape of the Lock appeared in Lintot Miscellany in 1712 in two cantos of 334 lines."
+  },
+  {
+   "id": "au-e-10",
+   "question": "What is the name of the chief guardian sylph who warns Belinda of impending disaster in Alexander Pope's 'The Rape of the Lock'?",
+   "options": [
+    "Ariel",
+    "Umbriel",
+    "Crispissa",
+    "Zephyretta"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Ariel visits Belinda in a morning dream in Canto I and leads the airy cohort of fifty sylphs."
+  },
+  {
+   "id": "au-e-11",
+   "question": "Which fashionable three-handed card game does Belinda play against the Baron at Hampton Court in Canto III of 'The Rape of the Lock'?",
+   "options": [
+    "Whist",
+    "Hazard",
+    "Piquet",
+    "Ombre"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope describes Belinda game of Ombre at Hampton Court as an epic battlefield of kings queens and knaves."
+  },
+  {
+   "id": "au-e-12",
+   "question": "Which 1717 Ovidian heroic epistle by Alexander Pope portrays a medieval nun torn between her religious vows and her passion for her former teacher?",
+   "options": [
+    "Epistle to Miss Blount",
+    "Eloisa to Abelard",
+    "Sappho to Phaon",
+    "Elegy to the Memory of an Unfortunate Lady"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Published in Pope 1717 Works Eloisa to Abelard dramatizes the tragic passion of Heloise in her convent cell."
+  },
+  {
+   "id": "au-e-13",
+   "question": "Which two classical Greek epics did Alexander Pope translate into heroic couplets between 1715 and 1726, earning a handsome fortune?",
+   "options": [
+    "Homer's 'Iliad' and 'Odyssey'",
+    "Aeschylus's 'Oresteia' and Sophocles's 'Oedipus'",
+    "Hesiod's 'Theogony' and 'Works and Days'",
+    "Apollonius's 'Argonautica' and Pindar's 'Odes'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Pope translated Homer Iliad from 1715 to 1720 and the Odyssey with Elijah Fenton and William Broome from 1725 to 1726."
+  },
+  {
+   "id": "au-e-14",
+   "question": "What famous subterranean ornamental feature, decorated with shells, mirrors, and crystals, did Alexander Pope build beneath his villa at Twickenham?",
+   "options": [
+    "A Roman amphitheatre",
+    "A Gothic tower",
+    "A Chinese pagoda",
+    "A grotto"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope constructed his famous Twickenham grotto as an underground passage connecting his riverside lawn to his back garden."
+  },
+  {
+   "id": "au-e-15",
+   "question": "In which philosophical poem by Alexander Pope does the celebrated maxim 'Know then thyself, presume not God to scan; / The proper study of Mankind is Man' appear?",
+   "options": [
+    "The Dunciad",
+    "An Essay on Criticism",
+    "Epistle to Dr. Arbuthnot",
+    "An Essay on Man"
+   ],
+   "correct_option_id": 3,
+   "explanation": "These lines open Epistle II of Pope An Essay on Man published in 1733."
+  },
+  {
+   "id": "au-e-16",
+   "question": "Of which historic cathedral in Dublin was Jonathan Swift installed as Dean in 1713, serving there until his death in 1745?",
+   "options": [
+    "St. Mary's Cathedral",
+    "Christ Church Cathedral",
+    "St. Patrick's Cathedral",
+    "St. Fin Barre's Cathedral"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Queen Anne ministry appointed Swift Dean of St Patrick Cathedral Dublin in April 1713."
+  },
+  {
+   "id": "au-e-17",
+   "question": "To whom were Jonathan Swift's intimate daily letters written in London between 1710 and 1713, later published as 'Journal to Stella', primarily addressed?",
+   "options": [
+    "Lady Mary Wortley Montagu",
+    "Esther Vanhomrigh",
+    "Esther Johnson",
+    "Anne Finch"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Swift wrote the Journal to Stella to Esther Johnson and her companion Rebecca Dingley in Dublin."
+  },
+  {
+   "id": "au-e-18",
+   "question": "In Part I of Jonathan Swift's 'Gulliver's Travels', what is the name of the empire inhabited by diminutive people barely six inches tall?",
+   "options": [
+    "Lilliput",
+    "Luggnagg",
+    "Laputa",
+    "Brobdingnag"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shipwrecked in his first voyage Gulliver wakes up bound by threads on the shore of Lilliput."
+  },
+  {
+   "id": "au-e-19",
+   "question": "In Part II of 'Gulliver's Travels', what is the name of the land inhabited by towering giants some sixty feet in height?",
+   "options": [
+    "Balnibarbi",
+    "Blefuscu",
+    "Glubbdubdrib",
+    "Brobdingnag"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In his second voyage Gulliver is left behind in Brobdingnag where a farmer girl named Glumdalclitch cares for him."
+  },
+  {
+   "id": "au-e-20",
+   "question": "Which neighboring island empire wages a bitter war against Lilliput over whether boiled eggs should be broken at the big end or the little end?",
+   "options": [
+    "Blefuscu",
+    "Lindalino",
+    "Laputa",
+    "Maldonada"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Blefuscu represents Catholic France while the Big-Endians and Little-Endians satirize religious schisms."
+  },
+  {
+   "id": "au-e-21",
+   "question": "In Part IV of 'Gulliver's Travels', what name is given to the filthy, avaricious, and degenerate creatures who possess human form?",
+   "options": [
+    "The Struldbruggs",
+    "The Houyhnhnms",
+    "The Tramecksan",
+    "The Yahoos"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Yahoos are savage human-like brutes in Houyhnhnmland who embody human vice and unreason."
+  },
+  {
+   "id": "au-e-22",
+   "question": "Which pioneering thrice-weekly periodical did Daniel Defoe write almost single-handedly from 1704 to 1713 while supporting Robert Harley?",
+   "options": [
+    "The Spectator",
+    "The Examiner",
+    "The Review",
+    "The Tatler"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Defoe launched A Review of the Affairs of France in February 1704 and continued it until June 1713."
+  },
+  {
+   "id": "au-e-23",
+   "question": "For which 1702 ironic pamphlet impersonating a High-Church Tory extremist was Daniel Defoe fined, imprisoned, and stood in the pillory?",
+   "options": [
+    "Reasons Against the Succession of the House of Hanover",
+    "The Shortest-Way with the Dissenters",
+    "Hymn to the Pillory",
+    "The True-Born Englishman"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Defoe anonymous 1702 hoax proposed hanging Dissenting preachers angering both Tories and Dissenters."
+  },
+  {
+   "id": "au-e-24",
+   "question": "Which 1722 work by Daniel Defoe presents a vivid, documentary-style narrative of the 1665 outbreak of bubonic plague in London?",
+   "options": [
+    "A Journal of the Plague Year",
+    "Memoirs of a Cavalier",
+    "The Storm",
+    "Due Preparations for the Plague"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Published in March 1722 A Journal of the Plague Year reconstructs the terror and statistics of London in 1665."
+  },
+  {
+   "id": "au-e-25",
+   "question": "Which 1724 novel, Daniel Defoe's last major work of fiction, is subtitled 'The Fortunate Mistress' and follows a wealthy courtesan?",
+   "options": [
+    "Captain Singleton",
+    "Roxana",
+    "Colonel Jack",
+    "Moll Flanders"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Roxana or The Fortunate Mistress was published in 1724 depicting a high-society courtesan haunted by guilt."
+  },
+  {
+   "id": "au-e-26",
+   "question": "Which three-volume travel and economic work did Daniel Defoe publish between 1724 and 1726 describing the commerce and towns of Britain?",
+   "options": [
+    "The Complete English Tradesman",
+    "An Essay Upon Projects",
+    "A Tour Thro' the Whole Island of Great Britain",
+    "A Plan of the English Commerce"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Defoe Tour provides a comprehensive account of early eighteenth-century British industry roads and towns."
+  },
+  {
+   "id": "au-e-27",
+   "question": "Which 1705 poem did Joseph Addison write at the request of Whig ministers to celebrate the Duke of Marlborough's victory at Blenheim?",
+   "options": [
+    "The Campaign",
+    "Rosamond",
+    "A Letter from Italy",
+    "Blenheim"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Addison The Campaign compared Marlborough to an angel riding a whirlwind and earned him a government post."
+  },
+  {
+   "id": "au-e-28",
+   "question": "Which 1713 neoclassical blank-verse tragedy by Joseph Addison dramatizes the final stand of a stoic Roman republican against Julius Caesar?",
+   "options": [
+    "Cato",
+    "Irene",
+    "Tamerlane",
+    "Phèdre"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Addison Cato was staged at Drury Lane in April 1713 and applauded by both Whigs and Tories as a hymn to liberty."
+  },
+  {
+   "id": "au-e-29",
+   "question": "On which three days of the week was Richard Steele's periodical 'The Tatler' published between 1709 and 1711?",
+   "options": [
+    "Monday, Thursday, and Saturday",
+    "Wednesday, Friday, and Sunday",
+    "Tuesday, Thursday, and Saturday",
+    "Monday, Wednesday, and Friday"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Steele issued The Tatler on Tuesday Thursday and Saturday to match the days the post left London for the country."
+  },
+  {
+   "id": "au-e-30",
+   "question": "Which devotional manual did Richard Steele publish in 1701 while serving as an ensign in the Coldstream Guards?",
+   "options": [
+    "The Funeral",
+    "The Tender Husband",
+    "The Christian Hero",
+    "The Lying Lover"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Steele wrote The Christian Hero in 1701 arguing that true heroism requires Christian morality rather than Pagan stoicism."
+  },
+  {
+   "id": "au-e-31",
+   "question": "Which 1722 comedy by Richard Steele, featuring the virtuous Young Bevil and the orphan Indiana, is considered the masterpiece of early sentimental comedy?",
+   "options": [
+    "The Careless Husband",
+    "The Constant Couple",
+    "The Conscious Lovers",
+    "The Provoked Husband"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Adapted from Terence Andria Steele The Conscious Lovers sought to provoke tears of moral sympathy rather than coarse laughter."
+  },
+  {
+   "id": "au-e-32",
+   "question": "Which 1706 comedy by George Farquhar, set in the market town of Shrewsbury, portrays Captain Plume and Sergeant Kite enlisting soldiers?",
+   "options": [
+    "The Recruiting Officer",
+    "Love and a Bottle",
+    "The Twin-Rivals",
+    "The Inconstant"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Farquhar drew on his own military recruitment duty in Shropshire to write The Recruiting Officer in 1706."
+  },
+  {
+   "id": "au-e-33",
+   "question": "Who are the two impoverished young gentlemen who pose as master and servant while fortune-hunting in Lichfield in Farquhar's 'The Beaux' Stratagem' (1707)?",
+   "options": [
+    "Aimwell and Archer",
+    "Mirabell and Fainall",
+    "Dorimant and Medley",
+    "Valentine and Scandal"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thomas Aimwell and Francis Archer take turns acting as master and footman in Farquhar final masterpiece."
+  },
+  {
+   "id": "au-e-34",
+   "question": "Which kindly country gentlewoman in George Farquhar's 'The Beaux' Stratagem' gave her name to the English expression for a charitable patroness?",
+   "options": [
+    "Lady Bountiful",
+    "Lady Davers",
+    "Lady Wishfort",
+    "Lady Booby"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lady Bountiful cures her rural neighbors with herbal remedies and spends half her income on charity."
+  },
+  {
+   "id": "au-e-35",
+   "question": "Which dramatist and Poet Laureate published the first modern edited six-volume edition of William Shakespeare's plays in 1709?",
+   "options": [
+    "William Warburton",
+    "Nicholas Rowe",
+    "Thomas Hanmer",
+    "Lewis Theobald"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nicholas Rowe 1709 edition added dramatis personae lists act-scene divisions stage directions and the first formal biography."
+  },
+  {
+   "id": "au-e-36",
+   "question": "What dramatic subgenre, focusing on the pathetic sufferings of a distressed or penitent woman, did Nicholas Rowe popularize in the early 1700s?",
+   "options": [
+    "Ballad opera",
+    "She-tragedy",
+    "City comedy",
+    "Heroic drama"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Rowe coined the term she-tragedy in 1714 for plays like The Fair Penitent and The Tragedy of Jane Shore."
+  },
+  {
+   "id": "au-e-37",
+   "question": "Which unrepentant seducer in Nicholas Rowe's 1703 tragedy 'The Fair Penitent' gave his name to the standard English word for a heartless rake?",
+   "options": [
+    "Horatio",
+    "Sciolto",
+    "Altamont",
+    "Lothario"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The gay gallant Lothario who seduces Calista in Rowe The Fair Penitent became synonymous with a male seducer."
+  },
+  {
+   "id": "au-e-38",
+   "question": "Which 1716 mock-georgic poem in three books by John Gay offers witty advice on navigating the mud, pickpockets, and traffic of London?",
+   "options": [
+    "Rural Sports",
+    "The Fan",
+    "Trivia: or, The Art of Walking the Streets of London",
+    "Wine"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Gay Trivia takes its title from the Roman goddess of crossroads and vividly depicts Augustan street life."
+  },
+  {
+   "id": "au-e-39",
+   "question": "What was the title of John Gay's 1729 sequel to 'The Beggar's Opera', set in the West Indies, which was banned from performance by the Lord Chamberlain?",
+   "options": [
+    "Achilles",
+    "The Distress'd Wife",
+    "Acis and Galatea",
+    "Polly"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Walpole government suppressed the stage production of Polly in 1729 though Gay earned a fortune selling it by subscription."
+  },
+  {
+   "id": "au-e-40",
+   "question": "Which 1731 prose domestic tragedy by George Lillo portrays the apprentice George Barnwell being lured into theft and murder by Sarah Millwood?",
+   "options": [
+    "The Gamester",
+    "The London Merchant",
+    "Fatal Curiosity",
+    "Arden of Feversham"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The London Merchant or the History of George Barnwell broke neoclassical convention by making a middle-class apprentice a tragic hero."
+  },
+  {
+   "id": "au-e-41",
+   "question": "Which Prime Minister pushed the Theatrical Licensing Act through Parliament in June 1737 to silence the stage satires of Henry Fielding?",
+   "options": [
+    "Robert Harley",
+    "Sir Robert Walpole",
+    "William Pitt",
+    "Henry Pelham"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Provoked by Fielding Pasquin and The Historical Register for the Year 1736 Walpole instituted strict stage censorship."
+  },
+  {
+   "id": "au-e-42",
+   "question": "How did the passage of the Theatrical Licensing Act of 1737 directly transform the literary career of Henry Fielding?",
+   "options": [
+    "He emigrated permanently to Dublin to manage the Smock Alley Theatre",
+    "He accepted a government sinecure as Poet Laureate under George II",
+    "It ended his career as a playwright and turned him toward the law and novel-writing",
+    "He abandoned secular writing to take holy orders in the Anglican Church"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Shut out of the theatre at the Little Theatre in the Haymarket Fielding entered the Middle Temple and soon began writing fiction."
+  },
+  {
+   "id": "au-e-43",
+   "question": "Which 1743 satirical biography by Henry Fielding equates the notorious London gang leader and thief-taker with Prime Minister Robert Walpole?",
+   "options": [
+    "A Journey from This World to the Next",
+    "The Covent-Garden Journal",
+    "The Life of Mr. Jonathan Wild the Great",
+    "The Jacobite's Journal"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Published in Volume III of Fielding Miscellanies in 1743 Jonathan Wild ironically praises ruthless villainy as Greatness."
+  },
+  {
+   "id": "au-e-44",
+   "question": "In Samuel Richardson's 1740 novel 'Pamela', who is the wealthy squire who attempts to seduce his deceased mother's virtuous maidservant before marrying her?",
+   "options": [
+    "Mr. B.",
+    "Lord Davers",
+    "Robert Lovelace",
+    "Parson Williams"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mr B of Bedfordshire and Lincolnshire is reformed by Pamela steadfast virtue and marries her in the second half of the novel."
+  },
+  {
+   "id": "au-e-45",
+   "question": "Which actor-manager and Poet Laureate published the lively theatrical memoir 'An Apology for the Life of Mr. Colley Cibber, Comedian' in 1740?",
+   "options": [
+    "Robert Wilks",
+    "Barton Booth",
+    "Colley Cibber",
+    "Thomas Betterton"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Colley Cibber published his candid Apology in 1740 providing an invaluable history of the London stage since 1690."
+  },
+  {
+   "id": "au-e-46",
+   "question": "Which Augustan female poet published 'Miscellany Poems' in 1713 containing the sensitive nature lyric 'A Nocturnal Reverie'?",
+   "options": [
+    "Elizabeth Rowe",
+    "Mary Barber",
+    "Laetitia Pilkington",
+    "Anne Finch, Countess of Winchilsea"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Anne Finch Countess of Winchilsea was praised by William Wordsworth in 1815 for the fresh natural images of A Nocturnal Reverie."
+  },
+  {
+   "id": "au-e-47",
+   "question": "Which Augustan aristocrat and poet wrote a celebrated collection of letters describing Ottoman society during her husband's embassy to Constantinople (1716–1718)?",
+   "options": [
+    "Sarah Churchill, Duchess of Marlborough",
+    "Lady Mary Wortley Montagu",
+    "Henrietta Howard, Countess of Suffolk",
+    "Mary Delany"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Lady Mary Wortley Montagu recorded her travels in the Turkish Embassy Letters and introduced smallpox variolation to England."
+  },
+  {
+   "id": "au-e-48",
+   "question": "Which Irish bishop and philosopher published 'A Treatise Concerning the Principles of Human Knowledge' in 1710, advancing the idealist thesis that to be is to be perceived?",
+   "options": [
+    "Samuel Clarke",
+    "George Berkeley",
+    "John Toland",
+    "Francis Hutcheson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "George Berkeley Bishop of Cloyne formulated subjective idealism or immaterialism summed up as esse is percipi."
+  },
+  {
+   "id": "au-e-49",
+   "question": "Which Scottish Enlightenment philosopher published his foundational empiricist work 'A Treatise of Human Nature' in three books in 1739–1740?",
+   "options": [
+    "Dugald Stewart",
+    "Adam Ferguson",
+    "Thomas Reid",
+    "David Hume"
+   ],
+   "correct_option_id": 3,
+   "explanation": "David Hume published Books I and II of A Treatise of Human Nature anonymously in 1739 and Book III on morals in 1740."
+  },
+  {
+   "id": "au-e-50",
+   "question": "Which Nonconformist minister published 'Hymns and Spiritual Songs' (1707) and 'The Psalms of David Imitated' (1719), earning the title 'Father of English Hymnody'?",
+   "options": [
+    "Isaac Watts",
+    "Charles Wesley",
+    "Philip Doddridge",
+    "Matthew Henry"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Isaac Watts composed classic hymns including Our God Our Help in Ages Past and When I Survey the Wondrous Cross."
+  }
+ ]
+}

@@ -1,0 +1,608 @@
+{
+ "bankId": "augustan",
+ "period": "Augustan Age",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "au-h-01",
+   "question": "Whose 1690 'Essay upon the Ancient and Modern Learning'—which praised the spurious Epistles of Phalaris—prompted Jonathan Swift to write 'The Battle of the Books'?",
+   "options": [
+    "William Wotton",
+    "Sir William Temple",
+    "Richard Bentley",
+    "Charles Boyle"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Swift served as secretary at Moor Park to Sir William Temple and wrote The Battle of the Books to defend him against Bentley and Wotton."
+  },
+  {
+   "id": "au-h-02",
+   "question": "In Jonathan Swift's 'A Tale of a Tub' (1704), what is the persona of the narrator who authors the chaotic prefaces and digressions?",
+   "options": [
+    "M. B. a prosperous linen draper of St. Francis Street in Dublin",
+    "Captain Lemuel Gulliver of Redriff in Nottinghamshire",
+    "Isaac Bickerstaff the famous astrologer of London",
+    "A modern Grub Street hack of the Republic of Letters"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Swift parodies modern pedantry and self-importance by speaking through an impoverished half-mad Grub Street hack."
+  },
+  {
+   "id": "au-h-03",
+   "question": "What is the subject of the famous Section IX digression in Jonathan Swift's 'A Tale of a Tub', which attributes conquests and philosophies to vapours rising to the brain?",
+   "options": [
+    "The ancient art of alchemy",
+    "The invention of the printing press",
+    "The decline of classical Greek",
+    "Madness in a Commonwealth"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Section IX is titled A Digression concerning the Original the Use and Improvement of Madness in a Commonwealth."
+  },
+  {
+   "id": "au-h-04",
+   "question": "In his 1711 ironic pamphlet 'An Argument Against Abolishing Christianity', what distinction does Swift's speaker draw to reassure readers he seeks no moral reform?",
+   "options": [
+    "High Church orthodoxy versus Low Church dissent",
+    "Natural Deism versus Revealed Theology",
+    "Papal Infallibility versus Royal Supremacy",
+    "Nominal Christianity versus Real Christianity"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The speaker argues solely for preserving Nominal Christianity admitting that restoring Real Christianity would ruin trade and politics."
+  },
+  {
+   "id": "au-h-05",
+   "question": "In Jonathan Swift's autobiographical poem 'Cadenus and Vanessa' (written 1713, published 1726), the name 'Cadenus' is a Latin anagram of which word?",
+   "options": [
+    "Decanus",
+    "Catullus",
+    "Candidus",
+    "Cassianus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Cadenus is an exact anagram of Decanus the Latin word for Dean referring to Swift office as Dean of St Patrick."
+  },
+  {
+   "id": "au-h-06",
+   "question": "Who was the real-life young woman whom Jonathan Swift met in London in 1707 and addressed as 'Vanessa' in 'Cadenus and Vanessa'?",
+   "options": [
+    "Rebecca Dingley",
+    "Esther Vanhomrigh",
+    "Esther Johnson",
+    "Martha Blount"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Swift coined the name Vanessa from Van for Esther Vanhomrigh surname and Essa as a pet form of Esther."
+  },
+  {
+   "id": "au-h-07",
+   "question": "Jonathan Swift's 'Verses on the Death of Dr. Swift' (written 1731) opens with a reflection on a cynical maxim by which French moralist?",
+   "options": [
+    "Montaigne",
+    "Blaise Pascal",
+    "La Rochefoucauld",
+    "La Bruyère"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Swift cites La Rochefoucauld maxim that in the adversity of our best friends we always find something that does not displease us."
+  },
+  {
+   "id": "au-h-08",
+   "question": "In Part III, Chapter 5 of 'Gulliver's Travels', what is the very first scientific project Gulliver observes at the Grand Academy of Lagado?",
+   "options": [
+    "Building grand houses from the roof downward to the foundation",
+    "Extracting sunbeams out of cucumbers to warm raw summers",
+    "Softening marble slabs into comfortable pillows and pincushions",
+    "Plowing the ground with hogs by burying acorns six inches deep"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The first projector has spent eight years trying to extract sunbeams from cucumbers and seal them in hermetically closed vials."
+  },
+  {
+   "id": "au-h-09",
+   "question": "In Part IV of 'Gulliver's Travels', which generous and humane Portuguese sea captain rescues Gulliver and returns him to Lisbon?",
+   "options": [
+    "Captain Abraham Pannell",
+    "Don Pedro de Mendez",
+    "Captain Thomas Pocock",
+    "Captain William Pritchard"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Don Pedro de Mendez treats the misanthropic Gulliver with patience and charity contrasting with Gulliver disgust for all humanity."
+  },
+  {
+   "id": "au-h-10",
+   "question": "In Part III of 'An Essay on Criticism' (1711), which short-tempered contemporary critic did Alexander Pope mock under the name 'Appius'?",
+   "options": [
+    "John Dennis",
+    "Lewis Theobald",
+    "Charles Gildon",
+    "Edmund Curll"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Pope mocked John Dennis tragedy Appius and Virginia in lines describing Appius reddening at each word."
+  },
+  {
+   "id": "au-h-11",
+   "question": "In Canto IV of 'The Rape of the Lock', which dusky, melancholy gnome descends to the 'Cave of Spleen' to fetch a bag of sighs and a vial of tears?",
+   "options": [
+    "Ariel",
+    "Brillante",
+    "Zephyretta",
+    "Umbriel"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Umbriel a dusky melancholy sprite flies down to the central earth to obtain sorrows and grief from the Queen of Spleen."
+  },
+  {
+   "id": "au-h-12",
+   "question": "In Canto II of 'The Rape of the Lock', which sylph is specifically assigned by Ariel to guard Belinda's favorite curl, while Zephyretta guards her fan?",
+   "options": [
+    "Thalestris",
+    "Crispissa",
+    "Brillante",
+    "Momentilla"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Ariel assigns Brillante to the drops Momentilla to the watch and Crispissa to Belinda favorite lock."
+  },
+  {
+   "id": "au-h-13",
+   "question": "In 'The Rape of the Lock', which fierce amazonian friend of Belinda fans her anger over the lost curl and orders Sir Plume to demand its return?",
+   "options": [
+    "Thalestris",
+    "Umbriel",
+    "Clarissa",
+    "Betty"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Named after the mythical Queen of the Amazons Thalestris urges war over reputation and commands her beau Sir Plume to intervene."
+  },
+  {
+   "id": "au-h-14",
+   "question": "In his 'Epistle to Burlington' (Moral Essays IV, 1731), through what fictional country seat does Alexander Pope satirize grandiose, tasteless architecture?",
+   "options": [
+    "Sir Balaam's Abbey",
+    "Cotta's Hall",
+    "Cliveden House",
+    "Timon's Villa"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope describes a day spent at Timon Villa where brobdignagian scale and symmetry ignore nature and comfort."
+  },
+  {
+   "id": "au-h-15",
+   "question": "To which lifelong friend did Alexander Pope address his 1735 'Epistle to a Lady: Of the Characters of Women' (Moral Essays II)?",
+   "options": [
+    "Arabella Fermor",
+    "Lady Mary Wortley Montagu",
+    "Anne Finch",
+    "Martha Blount"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope addressed the epistle to his close friend Martha Blount praising her serene temper at the poem conclusion."
+  },
+  {
+   "id": "au-h-16",
+   "question": "In his 'Epistle to Cobham' (Moral Essays I, 1734), what psychological concept does Alexander Pope advance as the master clue to human character?",
+   "options": [
+    "The Moral Sense",
+    "The Association of Ideas",
+    "The Ruling Passion",
+    "The Tabula Rasa"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pope argues that searching a person Ruling Passion resolves all apparent contradictions in human behavior."
+  },
+  {
+   "id": "au-h-17",
+   "question": "By what ironic Roman imperial name did Alexander Pope address King George II in his 1737 'First Epistle of the Second Book of Horace, Imitated'?",
+   "options": [
+    "Tiberius",
+    "Maecenas",
+    "Augustus",
+    "Trajan"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pope ironically addressed the unliterary King George II whose middle name was Augustus by praising virtues the king lacked."
+  },
+  {
+   "id": "au-h-18",
+   "question": "In which consecutive run of eleven issues of 'The Spectator' in June and July 1712 did Joseph Addison publish his essays on the 'Pleasures of the Imagination'?",
+   "options": [
+    "Numbers 411 to 421",
+    "Numbers 267 to 277",
+    "Numbers 58 to 68",
+    "Numbers 1 to 11"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Addison published his eleven foundational aesthetic essays on the Great the Uncommon and the Beautiful in Spectator 411 to 421."
+  },
+  {
+   "id": "au-h-19",
+   "question": "How did Joseph Addison publish his famous eighteen critical papers examining John Milton's 'Paradise Lost' in 'The Spectator' in 1712?",
+   "options": [
+    "They appeared every Monday for eighteen consecutive weeks",
+    "They alternated daily with Steele's papers on Sir Roger de Coverley",
+    "They were issued as a single special volume at Christmas 1711",
+    "They appeared every Saturday from January to May 1712"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Addison eighteen papers on Paradise Lost ran in consecutive Saturday issues beginning with No 267 on 5 January 1712."
+  },
+  {
+   "id": "au-h-20",
+   "question": "In 'The Spectator' Nos. 58–62, Joseph Addison distinguishes between 'True Wit' (resemblance of ideas), 'False Wit' (resemblance of words), and what third category?",
+   "options": [
+    "Mixed Wit",
+    "Heroic Wit",
+    "Grave Wit",
+    "Burlesque Wit"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Addison defines Mixed Wit in No 62 as a composition of pun and true wit partly residing in words and partly in ideas."
+  },
+  {
+   "id": "au-h-21",
+   "question": "Which fiscal measure enacted by Parliament in August 1712 imposed a tax of a halfpenny per half-sheet on periodicals, hastening the end of the original 'Spectator'?",
+   "options": [
+    "The Licensing Act of 1712",
+    "The Schism Act of 1714",
+    "The Septennial Act of 1716",
+    "The Stamp Act of 1712"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Stamp Act of 1712 doubled the price of The Spectator from one penny to twopence and drove many small papers out of business."
+  },
+  {
+   "id": "au-h-22",
+   "question": "Why did Daniel Defoe compose his bestselling 1701 verse satire 'The True-Born Englishman'?",
+   "options": [
+    "To protest the massive immigration of French Huguenot weavers into London",
+    "To oppose the proposed parliamentary and commercial union with Scotland",
+    "To defend the Dutch-born King William III against xenophobic attacks",
+    "To celebrate the purely English lineage and Protestant faith of Princess Anne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Replying to John Tutchin The Foreigners Defoe showed that the English were a mongrel race descended from Romans Saxons Danes and Normans."
+  },
+  {
+   "id": "au-h-23",
+   "question": "Which 1706 pamphlet by Daniel Defoe reports a vivid ghost sighting in Canterbury, famously boosting sales of Charles Drelincourt's book on death?",
+   "options": [
+    "An Essay on the History and Reality of Apparitions",
+    "A True Relation of the Apparition of One Mrs. Veal",
+    "A System of Magick",
+    "The Political History of the Devil"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Defoe realistic report of Mrs Veal appearing to Mrs Bargrave the day after her death exemplifies his circumstantial realism."
+  },
+  {
+   "id": "au-h-24",
+   "question": "With what initials does Daniel Defoe sign the narrative of the Whitechapel saddler at the conclusion of 'A Journal of the Plague Year' (1722)?",
+   "options": [
+    "H. F.",
+    "D. D.",
+    "M. F.",
+    "R. C."
+   ],
+   "correct_option_id": 0,
+   "explanation": "The narrative is signed H.F. generally identified with Defoe uncle Henry Foe a London saddler who lived through 1665."
+  },
+  {
+   "id": "au-h-25",
+   "question": "In Daniel Defoe's 'Roxana' (1724), what is the name of the fiercely devoted maidservant who is strongly implied to have murdered Roxana's daughter Susan?",
+   "options": [
+    "Betty",
+    "Amy",
+    "Mrs. Jewkes",
+    "Pamela"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Roxana maid Amy acts as her moral double and vanishes after promising to silence Susan who threatens to expose Roxana past."
+  },
+  {
+   "id": "au-h-26",
+   "question": "Whose rustic pastorals, printed in Tonson's 1709 'Miscellanies', did Alexander Pope ironically praise in 'The Guardian' No. 40 to expose their absurdity?",
+   "options": [
+    "Thomas Tickell",
+    "Aaron Hill",
+    "Ambrose Philips",
+    "Leonard Welsted"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Pope anonymously wrote Guardian No 40 pretending to prefer Ambrose Philips clumsy rustic lines over his own smooth Pastorals."
+  },
+  {
+   "id": "au-h-27",
+   "question": "Which 1714 six-part pastoral burlesque did John Gay write at Pope's suggestion, featuring coarse country lovers named Lobbin Clout and Blouzelinda?",
+   "options": [
+    "The Shepherd's Week",
+    "Fables",
+    "The What D'Ye Call It",
+    "Rural Sports"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Gay The Shepherd Week in Six Pastorals parodied Ambrose Philips rustic style while offering vivid pictures of rural folklore."
+  },
+  {
+   "id": "au-h-28",
+   "question": "Which 1717 theatrical farce featuring the pedantic antiquarian Dr. Fossile was jointly written by John Gay, Alexander Pope, and John Arbuthnot?",
+   "options": [
+    "Three Hours after Marriage",
+    "The What D'Ye Call It",
+    "The Rehearsal",
+    "Acis and Galatea"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Three Hours after Marriage mocked Dr John Woodward as Fossile and included a famous scene with suitors disguised as a mummy and crocodile."
+  },
+  {
+   "id": "au-h-29",
+   "question": "Which three-canto Hudibrastic poem (1718) by Matthew Prior playfully debates the seat of the human soul between the brain and the extremities?",
+   "options": [
+    "Paulo Purganti",
+    "Henry and Emma",
+    "Alma: or, The Progress of the Mind",
+    "Solomon on the Vanity of the World"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Alma Prior reconciles Aristotle and Descartes by arguing that the soul enters at the toes in youth and rises to the head in old age."
+  },
+  {
+   "id": "au-h-30",
+   "question": "Which Horatian wish-poem published in 1700 by the clergyman John Pomfret was judged by Samuel Johnson to be perhaps the most frequently read poem in English?",
+   "options": [
+    "Grongar Hill",
+    "The Chace",
+    "The Choice",
+    "The Splendid Shilling"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Pomfret The Choice published in 1700 celebrated a moderate rural life of books modest wealth and quiet friendship."
+  },
+  {
+   "id": "au-h-31",
+   "question": "Which 1701 burlesque poem by John Philips initiated the eighteenth-century vogue for Miltonic blank-verse parodies by depicting a penniless debtor in a garret?",
+   "options": [
+    "Cyder",
+    "Blenheim",
+    "The Splendid Shilling",
+    "The Dispensary"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Philips The Splendid Shilling applied grand Miltonic diction and syntax to an impoverished student hiding from a bailiff."
+  },
+  {
+   "id": "au-h-32",
+   "question": "Which mock-heroic poem (1699, revised 1706) by the physician Sir Samuel Garth satirized a quarrel between the College of Physicians and the apothecaries?",
+   "options": [
+    "The Dispensary",
+    "The Art of Preserving Health",
+    "The Spleen",
+    "Creation"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Garth The Dispensary modeled on Boileau Le Lutrin was an important link between Dryden Mac Flecknoe and Pope The Rape of the Lock."
+  },
+  {
+   "id": "au-h-33",
+   "question": "Which 1726 topographical poem in octosyllabic couplets by the Welsh painter-poet John Dyer celebrates the ruined castle and valley of the River Towy?",
+   "options": [
+    "Grongar Hill",
+    "The Fleece",
+    "The Ruins of Rome",
+    "Edge-Hill"
+   ],
+   "correct_option_id": 0,
+   "explanation": "John Dyer published Grongar Hill in 1726 blending picturesque landscape observation with moral meditation."
+  },
+  {
+   "id": "au-h-34",
+   "question": "Which 1743 blank-verse poem of nearly 800 lines by the Scottish minister Robert Blair significantly advanced the popularity of the Graveyard School?",
+   "options": [
+    "The Grave",
+    "The Pleasures of Melancholy",
+    "Night-Thoughts",
+    "A Night-Piece on Death"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Robert Blair published The Grave in 1743 using Elizabethan dramatic blank verse to meditate on charnel houses and tombs."
+  },
+  {
+   "id": "au-h-35",
+   "question": "Which member of the Scriblerus Club and Irish archdeacon authored 'A Night-Piece on Death' (published posthumously by Pope in 1721), an early Graveyard landmark?",
+   "options": [
+    "William Broome",
+    "Thomas Parnell",
+    "Thomas Tickell",
+    "Matthew Prior"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Thomas Parnell died in 1718 and Pope edited his Poems on Several Occasions in 1721 containing A Night-Piece on Death and The Hermit."
+  },
+  {
+   "id": "au-h-36",
+   "question": "Which 1725 Scots pastoral comedy in five acts by Allan Ramsay helped inaugurate the eighteenth-century vernacular Scottish literary revival?",
+   "options": [
+    "The Ever Green",
+    "The Gentle Shepherd",
+    "The Vision",
+    "The Tea-Table Miscellany"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Allan Ramsay The Gentle Shepherd set in the Pentland Hills near Edinburgh became a beloved classic of Scots pastoral drama."
+  },
+  {
+   "id": "au-h-37",
+   "question": "Which Whig philosopher published 'Characteristics of Men, Manners, Opinions, Times' in 1711, championing an innate 'moral sense' and natural benevolence?",
+   "options": [
+    "Bernard Mandeville author of The Grumbling Hive",
+    "Bishop Joseph Butler author of the Analogy of Religion",
+    "Francis Hutcheson of the University of Glasgow",
+    "Anthony Ashley Cooper, 3rd Earl of Shaftesbury"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The 3rd Earl of Shaftesbury published Characteristics in 1711 inspiring the cult of sensibility and deistic optimism."
+  },
+  {
+   "id": "au-h-38",
+   "question": "In Bishop George Berkeley's 1713 'Three Dialogues', which two philosophical speakers debate material substance, with the second defending immaterialism?",
+   "options": [
+    "Cleanthes and Philo",
+    "Alciphron and Euphranor",
+    "Hylas and Philonous",
+    "Philatheus and Timotheus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hylas whose name comes from the Greek for matter defends materialism while Philonous meaning lover of mind voices Berkeley views."
+  },
+  {
+   "id": "au-h-39",
+   "question": "Which 1728 treatise by the Nonjuring divine William Law profoundly influenced both the evangelical revival of the Wesleys and the young Samuel Johnson?",
+   "options": [
+    "A Practical Treatise upon Christian Perfection",
+    "The Case of Reason",
+    "The Spirit of Prayer",
+    "A Serious Call to a Devout and Holy Life"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Law A Serious Call to a Devout and Holy Life 1728 used sharp character portraits like Miranda and Flavia to urge total devotion."
+  },
+  {
+   "id": "au-h-40",
+   "question": "Which influential Tory and Country-party weekly journal was launched in December 1726 by Nicholas Amhurst, Bolingbroke, and Pulteney to oppose Robert Walpole?",
+   "options": [
+    "The Free-Holder",
+    "The Craftsman",
+    "The Examiner",
+    "The Champion"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Edited under the persona Caleb D'Anvers of Gray Inn The Craftsman was the foremost political opposition journal against Walpole."
+  },
+  {
+   "id": "au-h-41",
+   "question": "Which weekly Tory periodical did Jonathan Swift write from November 1710 to June 1711 to defend Robert Harley's ministry and attack the Duke of Marlborough?",
+   "options": [
+    "The Whig-Examiner",
+    "The Examiner",
+    "The Guardian",
+    "The Englishman"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Swift wrote thirty-three issues of The Examiner campaigning for peace with France and discrediting the Whig war party."
+  },
+  {
+   "id": "au-h-42",
+   "question": "Which prolific Augustan female dramatist authored 'A Bold Stroke for a Wife' (1718), in which Colonel Fainwell must outwit four eccentric guardians?",
+   "options": [
+    "Mary Pix",
+    "Catharine Trotter",
+    "Susanna Centlivre",
+    "Eliza Haywood"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Susanna Centlivre wrote nineteen plays including The Busie Body 1709 The Wonder 1714 and A Bold Stroke for a Wife 1718."
+  },
+  {
+   "id": "au-h-43",
+   "question": "In Susanna Centlivre's 'A Bold Stroke for a Wife' (1718), what is the religious denomination of the Pennsylvania merchant Simon Pure, whom Colonel Fainwell impersonates?",
+   "options": [
+    "An Anabaptist",
+    "A Fifth Monarchist",
+    "A Quaker",
+    "A French Huguenot"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Colonel Fainwell disguises himself as the Pennsylvania Quaker preacher Simon Pure giving rise to the phrase the real Simon Pure."
+  },
+  {
+   "id": "au-h-44",
+   "question": "In Henry Fielding's burlesque 'The Tragedy of Tragedies; or, The Life and Death of Tom Thumb the Great' (1731), what fate befalls the miniature hero at the end?",
+   "options": [
+    "He is swallowed whole in the street by a red cow",
+    "He is carried off above the clouds by a giant eagle",
+    "He drowns tragically inside a silver bowl of hot punch",
+    "He is crushed beneath the weight of Queen Dollallolla fan"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Before a general slaughter wipes out the entire royal court Noodle announces that Tom Thumb has been swallowed by a red cow."
+  },
+  {
+   "id": "au-h-45",
+   "question": "In Samuel Richardson's 'Pamela' (1740), what is the name of the coarse, cruel housekeeper at Mr. B.'s Lincolnshire estate who holds Pamela captive?",
+   "options": [
+    "Lady Davers",
+    "Mrs. Jervis",
+    "Mrs. Jewkes",
+    "Sally Godfrey"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Unlike the kindly Bedfordshire housekeeper Mrs Jervis the Lincolnshire housekeeper Mrs Jewkes serves as Pamela jailer."
+  },
+  {
+   "id": "au-h-46",
+   "question": "In Henry Fielding's 'Joseph Andrews' (1742), what precious possession does the absent-minded Parson Abraham Adams travel toward London to sell, having left it at home?",
+   "options": [
+    "A rare annotated Greek manuscript of the plays of Aeschylus",
+    "A complete Latin critical commentary on Homer Iliad",
+    "A lengthy theological treatise against the vanity of riches",
+    "Nine volumes of his own handwritten sermons"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Parson Adams sets out to sell nine volumes of sermons to a London bookseller but Mrs Adams forgot to pack them in his saddlebags."
+  },
+  {
+   "id": "au-h-47",
+   "question": "Whose turbulent life in Grub Street—marked by a homicide trial and his claim to be the cast-off son of Lady Macclesfield—did Samuel Johnson recount in a 1744 biography?",
+   "options": [
+    "Stephen Duck",
+    "Richard Savage",
+    "Samuel Boyse",
+    "Elkanah Settle"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Johnson published An Account of the Life of Mr Richard Savage in February 1744 a milestone in sympathetic literary biography."
+  },
+  {
+   "id": "au-h-48",
+   "question": "Which 1744 three-book blank-verse philosophical poem by the physician Mark Akenside versified Joseph Addison's aesthetic theories of the sublime, wonderful, and fair?",
+   "options": [
+    "The Enthusiast",
+    "The Pleasures of Imagination",
+    "The Castle of Indolence",
+    "The Art of Preserving Health"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Mark Akenside published The Pleasures of Imagination in 1744 blending Addisonian aesthetics with Shaftesburian philosophy."
+  },
+  {
+   "id": "au-h-49",
+   "question": "Which of the following statements regarding the Augustan Age (1700–1745) is NOT correct?",
+   "options": [
+    "The Theatrical Licensing Act of 1737 placed London stage plays under the Lord Chamberlain",
+    "The Statute of Anne in 1710 enacted the first statutory copyright law in Great Britain",
+    "Jonathan Swift served as Dean of St. Patrick Cathedral in Dublin from 1713 to 1745",
+    "Alexander Pope served two terms as Poet Laureate under George I and George II"
+   ],
+   "correct_option_id": 3,
+   "explanation": "As a Roman Catholic Alexander Pope was barred from holding any public office including the Poet Laureateship."
+  },
+  {
+   "id": "au-h-50",
+   "question": "Which of the following character-and-work pairings from the Augustan Age (1700–1745) is NOT correctly matched?",
+   "options": [
+    "George Barnwell — Richard Steele's 'The Conscious Lovers'",
+    "Lemuel Gulliver — Jonathan Swift's 'Travels into Several Remote Nations of the World'",
+    "Belinda — Alexander Pope's 'The Rape of the Lock'",
+    "Parson Abraham Adams — Henry Fielding's 'Joseph Andrews'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "George Barnwell is the tragic apprentice in George Lillo 1731 play The London Merchant whereas Young Bevil is the hero of The Conscious Lovers."
+  }
+ ]
+}
