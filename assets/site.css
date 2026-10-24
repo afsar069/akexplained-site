@@ -1120,6 +1120,47 @@ summary.ptbtn::-webkit-details-marker{display:none}
   font-size:clamp(1.02rem,1.7vw,1.25rem);line-height:1.38;max-width:27em;
 }
 
+/* ---------- English Literature page header ----------
+   Daily MCQ jaisa hi: 3 : 1 ki chaudi tasveer (2000 x 668; phone ke liye 1000 x 334), head ki unchai
+   chaudai ka teesra hissa. Tasveer ka background safed hai, isliye multiply se wo cream kagaz me ghul jaata hai.
+   Daily wali side-fade yahan nahi, kyunki tasveer ka bayan hissa khaali hai aur daayen hisse me hi sab kuch hai.
+   (File ka naam badle to CSS me naya naam do; browser purani file naam se yaad rakhta hai.) */
+.pagehead-lit{
+  --head-pic:url("/assets/literature-header.webp");
+  --head-w:calc(min(100vw,var(--maxw)) - 44px);
+  min-height:max(300px,calc(var(--head-w) / 3));
+}
+@media (min-width:1024px){
+  .pagehead-lit{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
+}
+.pagehead-lit::before{
+  inset:0;margin:0 auto;width:min(calc(100% - 44px),calc(var(--maxw) - 44px));
+  opacity:1;background-size:cover;background-position:right bottom;   /* bahut patle head me khaali bayen hisse se kate, daayen chehre nahi */
+  mix-blend-mode:multiply;
+  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
+  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
+}
+@media (max-width:760px){
+  .pagehead-lit{--head-pic:url("/assets/literature-header-sm.webp");min-height:0}
+  .pagehead-lit::before{opacity:.3;background-size:auto 130%;background-position:right bottom}
+}
+.pagehead-lit .eyebrow{color:var(--body);letter-spacing:.24em}
+.pagehead-lit h1{
+  font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.06;font-weight:700;
+  margin-bottom:12px;
+}
+.pagehead-lit h1 em{font-style:normal;color:#A9741F}
+.pagehead-lit p.lede{
+  font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.4;max-width:30em;
+}
+/* Badi screen par tasveer daayen 55% me hai, isliye likhai bayen 44% me rakhi hai aur
+   size head ki chaudai (--head-w) se chalta hai, taaki kisi width par tasveer par na chadhe. */
+@media (min-width:761px){
+  .pagehead-lit .eyebrow,.pagehead-lit h1,.pagehead-lit p.lede{max-width:calc(var(--head-w) * .44)}
+  .pagehead-lit h1{font-size:max(1.9rem,calc(var(--head-w) * .056))}
+  .pagehead-lit p.lede{font-size:max(.92rem,min(1.15rem,calc(var(--head-w) * .0165)))}
+}
+
 /* ---------- Choose a Topic ---------- */
 .dq-head{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-bottom:8px}
 .dq-head + .seclede{max-width:none;margin:0 0 16px}
