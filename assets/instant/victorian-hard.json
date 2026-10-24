@@ -1,0 +1,608 @@
+{
+ "bankId": "victorian",
+ "period": "Victorian Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "vc-h-01",
+   "question": "In Thomas Carlyle's 'Sartor Resartus' (1833–1834), what is the name of the German Professor of 'Things-in-General' who progresses from the 'Everlasting No' to the 'Everlasting Yea'?",
+   "options": [
+    "Herr Hofrath Heuschrecke",
+    "Diogenes Teufelsdröckh",
+    "Gottfried Sauerteig",
+    "Dryasdust"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Professor Diogenes Teufelsdröckh of Weissnichtwo authors the treatise on Clothes and undergoes spiritual rebirth on the Rue Saint-Thomas de l'Enfer."
+  },
+  {
+   "id": "vc-h-02",
+   "question": "In which London periodical was Thomas Carlyle's 'Sartor Resartus' first serialized between November 1833 and August 1834?",
+   "options": [
+    "The Westminster Review",
+    "The Edinburgh Review",
+    "Blackwood's Magazine",
+    "Fraser's Magazine"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sartor Resartus was serialized in Fraser Magazine in 1833-1834 before Ralph Waldo Emerson arranged its first book edition in Boston in 1836."
+  },
+  {
+   "id": "vc-h-03",
+   "question": "In Book II of 'Past and Present' (1843), whose twelfth-century Latin chronicle did Thomas Carlyle use to recount the heroic rule of Abbot Samson?",
+   "options": [
+    "William of Malmesbury",
+    "Matthew Paris",
+    "Orderic Vitalis",
+    "Jocelin of Brakelond"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published by the Camden Society in 1840 the Chronicle of Jocelin of Brakelond inspired Carlyle portrait of twelfth-century Abbot Samson."
+  },
+  {
+   "id": "vc-h-04",
+   "question": "What central argument in John Henry Newman's 'Tract 90' (1841) outraged Protestant authorities and brought 'Tracts for the Times' to an end?",
+   "options": [
+    "That the King of England had no legal authority to collect ecclesiastical tithes",
+    "That the Book of Common Prayer should be replaced by the Latin Vulgate",
+    "That Anglican bishops must renounce their seats in the House of Lords",
+    "That the Thirty-Nine Articles were compatible with Roman Catholic doctrine"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Newman argued in Tract 90 that the Thirty-Nine Articles condemned only popular Papal abuses rather than official Council of Trent decrees."
+  },
+  {
+   "id": "vc-h-05",
+   "question": "Which Anglican novelist and Christian Socialist provoked John Henry Newman into writing 'Apologia Pro Vita Sua' (1864) by questioning his devotion to truth?",
+   "options": [
+    "Charles Kingsley",
+    "Thomas Hughes",
+    "Frederick Denison Maurice",
+    "John Malcolm Ludlow"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In the January 1864 issue of Macmillan Magazine Charles Kingsley casually charged that Newman and the Roman clergy did not value truth for its own sake."
+  },
+  {
+   "id": "vc-h-06",
+   "question": "Which monthly magazine, edited at the time by William Makepeace Thackeray, halted the serialization of John Ruskin's 'Unto This Last' in 1860 after reader protests?",
+   "options": [
+    "Once a Week",
+    "The Cornhill Magazine",
+    "Macmillan's Magazine",
+    "Temple Bar"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Publisher George Smith and editor Thackeray stopped Ruskin socialist essays in The Cornhill Magazine after four installments between August and November 1860."
+  },
+  {
+   "id": "vc-h-07",
+   "question": "Which painting by James Abbott McNeill Whistler did John Ruskin attack in 'Fors Clavigera' (1877) as 'flinging a pot of paint in the public's face', sparking a famous libel suit?",
+   "options": [
+    "Symphony in White, No. 1: The White Girl",
+    "Harmony in Blue and Gold: The Peacock Room",
+    "Nocturne in Black and Gold: The Falling Rocket",
+    "Arrangement in Grey and Black"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Exhibited at the Grosvenor Gallery in 1877 Whistler Nocturne in Black and Gold led to the 1878 trial where Whistler won a single farthing in damages."
+  },
+  {
+   "id": "vc-h-08",
+   "question": "To which fellow Cambridge Apostle did Alfred Tennyson dedicate 'The Palace of Art' (1832), warning him that a purely aesthetic life divorced from love cannot stand?",
+   "options": [
+    "fast-friend Monckton Milnes",
+    "Richard Chenevix Trench",
+    "James Spedding",
+    "John Mitchell Kemble"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Trench had remarked to Tennyson at Trinity College Cambridge that they could not live in art alone prompting the introductory poem to The Palace of Art."
+  },
+  {
+   "id": "vc-h-09",
+   "question": "Whose joyful October 1842 marriage at Boxley does Alfred Tennyson celebrate in the Epilogue ('O true and tried, so well and long') to 'In Memoriam A.H.H.' (1850)?",
+   "options": [
+    "His sister Emily Tennyson and Captain Richard Jesse",
+    "His sister Cecilia Tennyson and his friend Edmund Lushington",
+    "His own 1850 marriage to Emily Sellwood at Shiplake",
+    "His brother Charles Tennyson and Louisa Sellwood"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Epilogue celebrates the wedding of Cecilia Tennyson and Glasgow Greek professor Edmund Lushington anticipating the birth of a higher human race."
+  },
+  {
+   "id": "vc-h-10",
+   "question": "What is the subtitle of Alfred Tennyson's 1847 blank-verse narrative poem 'The Princess', in which Princess Ida founds an academy solely for women?",
+   "options": [
+    "A Medley",
+    "A Monodrama",
+    "A Domestic Romance",
+    "An English Idyll"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Tennyson subtitled The Princess A Medley and added the famous intercalary lyrics such as Tears Idle Tears in the third edition of 1850."
+  },
+  {
+   "id": "vc-h-11",
+   "question": "In Robert Browning's 1855 dramatic monologue 'Fra Lippo Lippi', which powerful Florentine ruler protects the Carmelite painter when he is caught out at night?",
+   "options": [
+    "Piero Soderini",
+    "Guidobaldo da Montefeltro",
+    "Girolamo Savonarola",
+    "Cosimo de' Medici"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lippi tells the captain of the watch that he lodges in the palace of Cosimo of the Medici who commissioned his painting."
+  },
+  {
+   "id": "vc-h-12",
+   "question": "From which character's mad song in Act III, Scene 4 of Shakespeare's 'King Lear' did Robert Browning take the title of 'Childe Roland to the Dark Tower Came' (1855)?",
+   "options": [
+    "Edmund the bastard son",
+    "Edgar disguised as Poor Tom",
+    "The Earl of Kent in the stocks",
+    "King Lear's Fool"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In King Lear Edgar disguised as Poor Tom chants Child Rowland to the dark tower came His word was still Fie foh and fum."
+  },
+  {
+   "id": "vc-h-13",
+   "question": "In Robert Browning's 'The Ring and the Book' (1868–1869), who is the seventeen-year-old Roman child-wife fatally stabbed by her husband Count Guido Franceschini?",
+   "options": [
+    "Pompilia Comparini",
+    "Balaustion",
+    "Lucrezia del Sarto",
+    "Phene"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dying over four days from twenty-two dagger wounds Pompilia delivers her luminous deathbed monologue in Book VII of The Ring and the Book."
+  },
+  {
+   "id": "vc-h-14",
+   "question": "In 'The Ring and the Book', which young canon of Arezzo helps the pregnant Pompilia flee from Count Guido's palace toward Rome?",
+   "options": [
+    "Pope Innocent XII",
+    "Dominus Hyacinthus de Archangelis",
+    "Juris Doctor Johannes-Baptista Bottinius",
+    "Giuseppe Caponsacchi"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Canon Giuseppe Caponsacchi delivers the passionate monologue of Book VI defending his chivalric rescue of Pompilia."
+  },
+  {
+   "id": "vc-h-15",
+   "question": "In Elizabeth Barrett Browning's verse novel 'Aurora Leigh' (1856), who is the Christian-socialist cousin whose condescending proposal Aurora rejects before uniting with him at the end?",
+   "options": [
+    "Vincent Carrington",
+    "Lord Howe",
+    "Sir Blaise Delorme",
+    "Romney Leigh"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Romney Leigh turns Leigh Hall into a Fourierist phalanstery is blinded when the hall burns down and finally weds Aurora as an equal partner."
+  },
+  {
+   "id": "vc-h-16",
+   "question": "Under what pseudonym did Robert Buchanan initially publish his October 1871 article 'The Fleshly School of Poetry: Mr. D. G. Rossetti' in 'The Contemporary Review'?",
+   "options": [
+    "T. Percy Jones",
+    "Christopher North",
+    "Thomas Maitland",
+    "Bon Gaultier"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Buchanan signed his Contemporary Review attack with the pseudonym Thomas Maitland before expanding it into a signed pamphlet in 1872."
+  },
+  {
+   "id": "vc-h-17",
+   "question": "Under what title did Dante Gabriel Rossetti publish his December 1871 defense in 'The Athenaeum' replying to Robert Buchanan's attack?",
+   "options": [
+    "Notes on Poems and Reviews",
+    "The Morality of Art",
+    "The Stealthy School of Criticism",
+    "Hand and Soul"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Rossetti published The Stealthy School of Criticism in The Athenaeum on 16 December 1871 condemning Buchanan pseudonymous attack."
+  },
+  {
+   "id": "vc-h-18",
+   "question": "From whose coffin at Highgate Cemetery was the manuscript notebook of Dante Gabriel Rossetti's 'Poems' (1870) exhumed in October 1869?",
+   "options": [
+    "Elizabeth Siddal",
+    "Maria Francesca Rossetti",
+    "Fanny Cornforth",
+    "Jane Morris"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Stricken with remorse after Elizabeth Siddal laudanum overdose in 1862 Rossetti buried his poems in her hair and had Charles Augustus Howell exhume them in 1869."
+  },
+  {
+   "id": "vc-h-19",
+   "question": "What name did Gerard Manley Hopkins give to his prosodic meter that scans verse by stressed syllables with variable numbers of unstressed syllables?",
+   "options": [
+    "Counterpoint rhythm",
+    "Accentual-syllabic meter",
+    "Quantitative hexameter",
+    "Sprung rhythm"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hopkins developed sprung rhythm in The Wreck of the Deutschland 1875-1876 allowing one stress to be followed by zero to three slack syllables."
+  },
+  {
+   "id": "vc-h-20",
+   "question": "To whom did Gerard Manley Hopkins add the explicit dedication beneath the title of his 1877 sonnet 'The Windhover'?",
+   "options": [
+    "To Christ our Lord",
+    "To John Henry Cardinal Newman",
+    "To St. Ignatius of Loyola",
+    "To Robert Bridges"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Written at St Beuno in May 1877 Hopkins called The Windhover the best thing he ever wrote and added the dedication To Christ our Lord in 1884."
+  },
+  {
+   "id": "vc-h-21",
+   "question": "How many narrative tales—two for each month of the year, alternating between Classical and Medieval sources—comprise William Morris's 'The Earthly Paradise' (1868–1870)?",
+   "options": [
+    "Twelve tales",
+    "Thirty-six tales",
+    "Fifty tales",
+    "Twenty-four tales"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Framed by Norse wanderers meeting Greek descendants on a western island Morris The Earthly Paradise tells twenty-four tales across the twelve months."
+  },
+  {
+   "id": "vc-h-22",
+   "question": "In Algernon Charles Swinburne's 'Poems and Ballads' (1866), which poem spoken by a fourth-century Roman pagan contains the line 'Thou hast conquered, O pale Galilean'?",
+   "options": [
+    "The Garden of Proserpine",
+    "Dolores",
+    "Hymn to Proserpine",
+    "Laus Veneris"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Subtitled After the Proclamation in Rome of the Christian Faith Hymn to Proserpine quotes the dying words attributed to Emperor Julian the Apostate."
+  },
+  {
+   "id": "vc-h-23",
+   "question": "Which Scottish professor coined the term 'Spasmodic School' and parodied Philip James Bailey, Sydney Dobell, and Alexander Smith in his 1854 hoax 'Firmilian'?",
+   "options": [
+    "George Saintsbury",
+    "William Edmonstoune Aytoun",
+    "John Gibson Lockhart",
+    "John Wilson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Writing as T Percy Jones in Blackwood Magazine in May 1854 William Edmonstoune Aytoun demolished the Spasmodic vogue with Firmilian."
+  },
+  {
+   "id": "vc-h-24",
+   "question": "How does Charles Dickens uniquely structure the narrative voice across the sixty-seven chapters of 'Bleak House' (1852–1853)?",
+   "options": [
+    "Between a third-person present-tense narrator and Esther first-person past narrative",
+    "Through four conflicting courtroom depositions presented directly to the Lord Chancellor",
+    "By assigning each of the nineteen monthly numbers to a different Chancery law clerk",
+    "Through weekly confidential letters exchanged between Mr. Jarndyce and Inspector Bucket"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thirty-four chapters are told by an impersonal present-tense narrator and thirty-three chapters are narrated in the past tense by Esther Summerson."
+  },
+  {
+   "id": "vc-h-25",
+   "question": "Which illiterate rag-and-bottle shop dealer—nicknamed the 'Lord Chancellor' in Dickens's 'Bleak House'—dies by spontaneous combustion while hiding a valid Jarndyce will?",
+   "options": [
+    "Mr. Tulkinghorn",
+    "Krook",
+    "William Guppy",
+    "Grandfather Smallweed"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Chapter 32 Krook perishes by spontaneous combustion leaving behind a greasy soot and the hidden later will of Jarndyce."
+  },
+  {
+   "id": "vc-h-26",
+   "question": "In Charles Dickens's 'Little Dorrit' (1855–1857), what is the name of the obstructive government department run by the Barnacle family whose motto is 'How not to do it'?",
+   "options": [
+    "The Board of Somnolence",
+    "The Court of Red Tape",
+    "The Circumlocution Office",
+    "The Ministry of Fog"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Introduced in Book I Chapter 10 the Circumlocution Office satirizes British governmental incompetence exposed during the Crimean War."
+  },
+  {
+   "id": "vc-h-27",
+   "question": "In Charles Dickens's final completed novel 'Our Mutual Friend' (1864–1865), who is the wealthy heir who assumes the alias John Rokesmith after being reported drowned in the Thames?",
+   "options": [
+    "John Harmon",
+    "Mortimer Lightwood",
+    "Bradley Headstone",
+    "Eugene Wrayburn"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Returning from the Cape to claim his father dust-heap fortune on condition he marry Bella Wilfer John Harmon poses as the secretary John Rokesmith."
+  },
+  {
+   "id": "vc-h-28",
+   "question": "At the end of Chapter 32 of Thackeray's 'Vanity Fair' (1847–1848), during which historic 1815 battle is Amelia Sedley's husband Captain George Osborne killed?",
+   "options": [
+    "The Battle of Waterloo",
+    "The Battle of Quatre Bras",
+    "The Battle of Salamanca",
+    "The Battle of Talavera"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In one of the most famous single sentences in English fiction Thackeray reveals that George Osborne is lying dead at Waterloo with a bullet through his heart."
+  },
+  {
+   "id": "vc-h-29",
+   "question": "Who is the reserved English Protestant narrator of Charlotte Brontë's 1853 novel 'Villette', who teaches at Madame Beck's pensionnat and loves Professor Paul Emanuel?",
+   "options": [
+    "Ginevra Fanshawe",
+    "Caroline Helstone",
+    "Lucy Snowe",
+    "Frances Henri"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Drawing on Charlotte Brontë own experiences at the Pensionnat Heger in Brussels Lucy Snowe narrates Villette 1853."
+  },
+  {
+   "id": "vc-h-30",
+   "question": "In Emily Brontë's 'Wuthering Heights' (1847), what date is carved above the farmhouse door beside 'Hareton Earnshaw', and what year opens Mr. Lockwood's diary?",
+   "options": [
+    "1588 above the door and 1798 in Lockwood's diary",
+    "1649 above the door and 1815 in Lockwood's diary",
+    "1500 above the door and 1801 in Lockwood's diary",
+    "1600 above the door and 1847 in Lockwood's diary"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wuthering Heights opens with the exact date 1801 and in Chapter 1 Lockwood pauses to admire the date 1500 and name Hareton Earnshaw over the front door."
+  },
+  {
+   "id": "vc-h-31",
+   "question": "What was the title of Mary Ann Evans's witty October 1856 essay in 'The Westminster Review' that mocked the 'mind-and-millinery', 'oracular', and 'white neck-cloth' species of popular fiction?",
+   "options": [
+    "The Natural History of German Life",
+    "Evangelical Teaching: Dr. Cumming",
+    "Silly Novels by Lady Novelists",
+    "Worldliness and Other-Worldliness"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Published just before she began Scenes of Clerical Life Silly Novels by Lady Novelists defined George Eliot commitment to psychological realism."
+  },
+  {
+   "id": "vc-h-32",
+   "question": "In George Eliot's 'Middlemarch' (1871–1872), what is the title of the futile comparative treatise on world religion upon which Reverend Edward Casaubon wastes his life?",
+   "options": [
+    "The Key to All Mythologies",
+    "The Origin of All Tongues",
+    "A Harmony of the Ancient Fathers",
+    "The Primitive Tissue of Mankind"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Unaware of modern German scholarship Casaubon compiles endless notebooks for his unfinishable Key to All Mythologies."
+  },
+  {
+   "id": "vc-h-33",
+   "question": "Who is the ambitious young reformist physician in 'Middlemarch' who seeks to discover the 'primitive tissue' of human anatomy before being ruined by debt and marriage to Rosamond Vincy?",
+   "options": [
+    "Tertius Lydgate",
+    "Fred Vincy",
+    "Will Ladislaw",
+    "Caleb Garth"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dr Tertius Lydgate comes to Middlemarch with high scientific ideals but is compromised by his alliance with the banker Bulstrode and his materialistic wife Rosamond."
+  },
+  {
+   "id": "vc-h-34",
+   "question": "Which 1876 novel—George Eliot's final novel—contrasts the destructive marriage of Gwendolen Harleth to Henleigh Grandcourt with the title hero's Zionist mission?",
+   "options": [
+    "Daniel Deronda",
+    "Impressions of Theophrastus Such",
+    "Felix Holt, the Radical",
+    "Romola"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Daniel Deronda 1876 Deronda rescues Mirah Lapidoth meets the visionary Mordecai and departs for the East to help establish a Jewish national homeland."
+  },
+  {
+   "id": "vc-h-35",
+   "question": "Who is the rose-cultivating Scotland Yard detective summoned to investigate the theft of the yellow Indian diamond in Wilkie Collins's 'The Moonstone' (1868)?",
+   "options": [
+    "Gabriel Betteredge",
+    "Sergeant Cuff",
+    "Ezra Jennings",
+    "Inspector Bucket"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Modeled on real Scotland Yard Inspector Jonathan Whicher of the Road Hill House case Sergeant Cuff deduced that the smear on the painted door came from Rachel nightgown."
+  },
+  {
+   "id": "vc-h-36",
+   "question": "In Wilkie Collins's 'The Moonstone' (1868), who is proved by Ezra Jennings's medical reenactment to have taken the diamond while sleepwalking under the influence of laudanum?",
+   "options": [
+    "Mr. Candy",
+    "Franklin Blake",
+    "Rosanna Spearman",
+    "Godfrey Ablewhite"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Unknowingly dosed with laudanum by Dr Candy Franklin Blake took the diamond in his sleep to protect it and handed it to Godfrey Ablewhite."
+  },
+  {
+   "id": "vc-h-37",
+   "question": "In Mary Elizabeth Braddon's sensation novel 'Lady Audley's Secret' (1862), what was the true first-married name of the bigamist 'Lucy Graham' before she married Sir Michael Audley?",
+   "options": [
+    "Aurora Floyd",
+    "Magdalen Vanstone",
+    "Isabel Vane",
+    "Helen Talboys"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Born Helen Maldon she married dragoon officer George Talboys faked her death in the newspaper became the governess Lucy Graham and pushed George down a well."
+  },
+  {
+   "id": "vc-h-38",
+   "question": "Which vast, dark tract of Wessex heathland dominates the entire opening chapter ('A Face on which Time Makes but Little Impression') of Thomas Hardy's 'The Return of the Native' (1878)?",
+   "options": [
+    "Cranborne Chase",
+    "Blackmoor Vale",
+    "Egdon Heath",
+    "Flintcomb-Ash"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Egdon Heath serves as a brooding tragic protagonist in The Return of the Native mirroring the fates of Eustacia Vye and Clym Yeobright."
+  },
+  {
+   "id": "vc-h-39",
+   "question": "By what grim nickname is Jude Fawley's morbid young son known in Thomas Hardy's 'Jude the Obscure' (1895), who hangs his half-siblings and himself leaving the note 'Done because we are too menny'?",
+   "options": [
+    "Little Jude",
+    "Sorrow",
+    "Johnny Nunsuch",
+    "Little Father Time"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sent from Australia by Arabella Donn the boy called Little Father Time kills Sue two children and himself in their Christminster lodging."
+  },
+  {
+   "id": "vc-h-40",
+   "question": "In George Gissing's 'New Grub Street' (1891), which conscientious, uncompromising novelist is destroyed by poverty and overwork, in contrast to the opportunistic journalist Jasper Milvain?",
+   "options": [
+    "Harold Biffen",
+    "Edwin Reardon",
+    "Alfred Yule",
+    "Whelpdale"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Unable to churn out commercial three-decker potboilers Edwin Reardon loses his wife Amy and dies in poverty after Jasper Milvain marries her."
+  },
+  {
+   "id": "vc-h-41",
+   "question": "The 'yellow-backed French novel' lent by Lord Henry Wotton that poisons Dorian Gray's mind is widely identified with which 1884 decadent novel by Joris-Karl Huysmans?",
+   "options": [
+    "Mademoiselle de Maupin",
+    "À rebours ('Against Nature')",
+    "Les Fleurs du mal",
+    "Madame Bovary"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Under cross-examination at his 1895 trial Oscar Wilde confirmed that the poisonous book in Chapter 10 of Dorian Gray was Huysmans 1884 novel À rebours."
+  },
+  {
+   "id": "vc-h-42",
+   "question": "In Act I of Oscar Wilde's 'The Importance of Being Earnest' (1895), in the cloak-room of which London railway station—specifically on 'the Brighton line'—was the infant Jack Worthing found in a handbag?",
+   "options": [
+    "Paddington Station",
+    "Charing Cross Station",
+    "Victoria Station",
+    "Waterloo Station"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jack tells the horrified Lady Bracknell that Mr Thomas Cardew found him in a large black leather handbag in the cloak-room at Victoria Station The Brighton line."
+  },
+  {
+   "id": "vc-h-43",
+   "question": "In 'The Importance of Being Earnest', what is the name of Cecily Cardew's governess who twenty-eight years earlier absent-mindedly placed her three-volume novel in a perambulator and the baby in a handbag?",
+   "options": [
+    "Miss Fairfax",
+    "Lady Harbury",
+    "Miss Prism",
+    "Duchess of Berwick"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Laetitia Prism identifies the handbag with a stain from the exploding temperance beverage revealing that Jack is truly Algernon elder brother Ernest."
+  },
+  {
+   "id": "vc-h-44",
+   "question": "Which 1885 philosophical novel by Walter Pater, set in second-century Rome under Marcus Aurelius, traces a young Roman's spiritual journey from Epicureanism toward early Christianity?",
+   "options": [
+    "Marius the Epicurean",
+    "Gaston de Latour",
+    "Imaginary Portraits",
+    "Plato and Platonism"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Pater wrote Marius the Epicurean His Sensations and Ideas in 1885 to clarify the ethical meaning of the Conclusion to The Renaissance."
+  },
+  {
+   "id": "vc-h-45",
+   "question": "Which seminal 1884 critical essay did Henry James publish in 'Longman's Magazine' in reply to Walter Besant, defining the novel as 'a personal, a direct impression of life'?",
+   "options": [
+    "Criticism",
+    "The Future of the Novel",
+    "The Art of Fiction",
+    "The Lesson of Balzac"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Published in September 1884 Henry James The Art of Fiction rejected didactic rules and prompted Robert Louis Stevenson reply A Humble Remonstrance."
+  },
+  {
+   "id": "vc-h-46",
+   "question": "In which 1877 critical lecture and essay did George Meredith argue that true Comedy requires social equality between men and women and awakens 'thoughtful laughter'?",
+   "options": [
+    "A Defence of Humor",
+    "An Essay on Laughter",
+    "The Philosophy of the Comic",
+    "On the Idea of Comedy and of the Uses of the Comic Spirit"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Delivered at the London Institution in February 1877 Meredith An Essay on Comedy celebrated Molière Congreve and the silvery laughter of the Comic Spirit."
+  },
+  {
+   "id": "vc-h-47",
+   "question": "Which 1899 critical book by Arthur Symons, dedicated to W. B. Yeats, introduced French Symbolist poets such as Mallarmé, Verlaine, and Rimbaud to English readers?",
+   "options": [
+    "Studies in Two Literatures",
+    "The Symbolist Movement in Literature",
+    "Affirmations",
+    "Intentions"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Arthur Symons 1899 study The Symbolist Movement in Literature profoundly shaped W B Yeats T S Eliot and Ezra Pound."
+  },
+  {
+   "id": "vc-h-48",
+   "question": "At which historic Fleet Street tavern in London did W. B. Yeats, Ernest Dowson, and Lionel Johnson regularly gather after founding the Rhymers' Club in 1890?",
+   "options": [
+    "The Café Royal",
+    "Ye Olde Cheshire Cheese",
+    "The Cock Tavern",
+    "The Mitre Tavern"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Founded in 1890 by Yeats and Ernest Rhys the Rhymers Club met upstairs at Ye Olde Cheshire Cheese in Fleet Street and published two anthologies in 1892 and 1894."
+  },
+  {
+   "id": "vc-h-49",
+   "question": "Which of the following statements concerning Victorian literature (1832–1901) is NOT correct?",
+   "options": [
+    "Charles Dickens left 'The Mystery of Edwin Drood' unfinished at his death in 1870",
+    "The Pre-Raphaelite Brotherhood was founded in London in 1848",
+    "Charles Darwin published 'On the Origin of Species' in November 1859",
+    "Gerard Manley Hopkins served as Poet Laureate immediately after Tennyson's death in 1892"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Hopkins died in June 1889 with his major poems unpublished; Alfred Austin was appointed Poet Laureate in 1896 after Tennyson death."
+  },
+  {
+   "id": "vc-h-50",
+   "question": "Which of the following character-and-work pairings from the Victorian Period (1832–1901) is NOT correctly matched?",
+   "options": [
+    "Michael Henchard — Anthony Trollope's 'Barchester Towers'",
+    "Bathsheba Everdene — Thomas Hardy's 'Far from the Madding Crowd'",
+    "Becky Sharp — William Makepeace Thackeray's 'Vanity Fair'",
+    "Dorothea Brooke — George Eliot's 'Middlemarch'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Michael Henchard is the tragic protagonist of Thomas Hardy 1886 novel The Mayor of Casterbridge whereas Obadiah Slope and Mrs Proudie appear in Barchester Towers."
+  }
+ ]
+}

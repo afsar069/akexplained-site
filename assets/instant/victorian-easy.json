@@ -1,0 +1,608 @@
+{
+ "bankId": "victorian",
+ "period": "Victorian Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "vc-e-01",
+   "question": "Which revolutionary scientific work did Charles Darwin publish on 24 November 1859, introducing the theory of evolution by natural selection?",
+   "options": [
+    "Vestiges of the Natural History of Creation",
+    "On the Origin of Species",
+    "Principles of Geology",
+    "Evidence as to Man's Place in Nature"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Darwin published On the Origin of Species by Means of Natural Selection in November 1859 selling out all 1250 copies on the first day."
+  },
+  {
+   "id": "vc-e-02",
+   "question": "What was the popular name of the giant cast-iron and plate-glass building designed by Joseph Paxton in Hyde Park for the Great Exhibition of 1851?",
+   "options": [
+    "The Millennium Dome",
+    "The Royal Albert Hall",
+    "The White City",
+    "The Crystal Palace"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Punch magazine christened Joseph Paxton prefabricated glass and iron exhibition hall the Crystal Palace."
+  },
+  {
+   "id": "vc-e-03",
+   "question": "In which year was the Pre-Raphaelite Brotherhood founded in London by Dante Gabriel Rossetti, William Holman Hunt, and John Everett Millais?",
+   "options": [
+    "1837",
+    "1862",
+    "1873",
+    "1848"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Seven young artists and writers formed the Pre-Raphaelite Brotherhood at Millais parents house in Gower Street in September 1848."
+  },
+  {
+   "id": "vc-e-04",
+   "question": "In Alfred Tennyson's Arthurian ballad 'The Lady of Shalott', the sight of which knight riding toward Camelot causes the Lady to look directly out her window?",
+   "options": [
+    "Sir Galahad",
+    "Sir Gawain",
+    "Sir Bedivere",
+    "Sir Lancelot"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Seeing bold Sir Lancelot flash into her crystal mirror the Lady leaves her web looks down to Camelot and brings the curse upon herself."
+  },
+  {
+   "id": "vc-e-05",
+   "question": "Which 1832 poem by Alfred Tennyson depicts Ulysses's mariners landing on an island where eating an enchanted plant makes them crave only rest?",
+   "options": [
+    "The Lotos-Eaters",
+    "Oenone",
+    "The Kraken",
+    "Tithonus"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Inspired by Book IX of Homer Odyssey Tennyson The Lotos-Eaters contrasts heroic toil with languorous escapism."
+  },
+  {
+   "id": "vc-e-06",
+   "question": "Which 1855 experimental work did Alfred Tennyson subtitle 'A Monodrama', narrating a morbid speaker's love, fatal duel, madness, and departure for the Crimea?",
+   "options": [
+    "Locksley Hall",
+    "Maud",
+    "Enoch Arden",
+    "TheTwo Voices"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Tennyson published Maud A Monodrama in 1855 and considered it his own favorite poem to read aloud."
+  },
+  {
+   "id": "vc-e-07",
+   "question": "Which short 1889 lyric did Alfred Tennyson request be placed at the very end of all editions of his poetry as his farewell meditation on death?",
+   "options": [
+    "Tears, Idle Tears",
+    "Mariana",
+    "Crossing the Bar",
+    "Break, Break, Break"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Composed while crossing the Solent to the Isle of Wight in October 1889 Crossing the Bar closes every collected edition of Tennyson."
+  },
+  {
+   "id": "vc-e-08",
+   "question": "Which Italian Renaissance nobleman is the cold, possessive speaker of Robert Browning's 1842 dramatic monologue 'My Last Duchess'?",
+   "options": [
+    "Ludovico Sforza, Duke of Milan",
+    "Alfonso II d'Este, Duke of Ferrara",
+    "Cesare Borgia",
+    "Lorenzo de' Medici"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Subtitled Ferrara the poem is spoken by Alfonso II fifth Duke of Ferrara regarding his first wife Lucrezia de Medici."
+  },
+  {
+   "id": "vc-e-09",
+   "question": "Along which German river is the town of Hamelin situated in Robert Browning's famous 1842 narrative poem 'The Pied Piper of Hamelin'?",
+   "options": [
+    "The River Elbe",
+    "The River Weser",
+    "The River Danube",
+    "The River Rhine"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Written for Willie Macready the poem notes that the deep and wide River Weser washes the southern wall of Hamelin town."
+  },
+  {
+   "id": "vc-e-10",
+   "question": "What subtitle is given to Robert Browning's 1855 dramatic monologue 'Andrea del Sarto', in which the painter reflects that 'a man's reach should exceed his grasp'?",
+   "options": [
+    "Called 'The Faultless Painter'",
+    "The Divine Master",
+    "Master of Light and Shade",
+    "The Florentine realist"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Published in Men and Women 1855 Andrea del Sarto Called The Faultless Painter portrays an artist of technical perfection who lacks spiritual fire."
+  },
+  {
+   "id": "vc-e-11",
+   "question": "With which immortal question does Sonnet 43—the most famous lyric in Elizabeth Barrett Browning's 'Sonnets from the Portuguese' (1850)—begin?",
+   "options": [
+    "Shall I compare thee to a summer's day?",
+    "When our two souls stand up erect and strong",
+    "If thou must love me, let it be for nought",
+    "How do I love thee? Let me count the ways"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sonnet 43 is the penultimate sonnet in Elizabeth Barrett Browning forty-four-sonnet sequence to Robert Browning."
+  },
+  {
+   "id": "vc-e-12",
+   "question": "From which seventeenth-century book by Joseph Glanvill did Matthew Arnold draw the legend of the impoverished Oxford student in 'The Scholar-Gipsy' (1853)?",
+   "options": [
+    "Sadducismus Triumphatus",
+    "The Vanity of Dogmatizing",
+    "Religio Medici",
+    "The Anatomy of Melancholy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Arnold took the story of the Oxford scholar who joined the gypsies to learn their mental arts from Joseph Glanvill 1661 treatise The Vanity of Dogmatizing."
+  },
+  {
+   "id": "vc-e-13",
+   "question": "Which 1853 blank-verse epic episode by Matthew Arnold, drawn from the Persian 'Shahnameh', recounts a tragic duel in which a father unknowingly slays his son?",
+   "options": [
+    "Sohrab and Rustum",
+    "Tristram and Iseult",
+    "Balder Dead",
+    "Empedocles on Etna"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Arnold published Sohrab and Rustum An Episode in his 1853 Poems illustrating his preface call for grand objective action."
+  },
+  {
+   "id": "vc-e-14",
+   "question": "In Dante Gabriel Rossetti's Pre-Raphaelite poem 'The Blessed Damozel' (1850), what symbolic numbers of lilies and stars adorn the maiden in heaven?",
+   "options": [
+    "One lily in her hand and twelve stars in her hair",
+    "Five lilies in her hand and five stars in her hair",
+    "Seven lilies in her hand and three stars in her hair",
+    "Three lilies in her hand and seven stars in her hair"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Stanza 1 states She had three lilies in her hand And the stars in her hair were seven."
+  },
+  {
+   "id": "vc-e-15",
+   "question": "Which 1865 lyrical drama in classical Greek form earned Algernon Charles Swinburne immediate acclaim for its sweeping choral meters?",
+   "options": [
+    "Chastelard",
+    "Erechtheus",
+    "Songs before Sunrise",
+    "Atalanta in Calydon"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Swinburne published Atalanta in Calydon in 1865 featuring the famous chorus Before the beginning of years."
+  },
+  {
+   "id": "vc-e-16",
+   "question": "Under what famous single-word pen name did the young Charles Dickens publish 'Sketches' (1836) and 'The Pickwick Papers'?",
+   "options": [
+    "Phiz",
+    "Elia",
+    "Boz",
+    "Pendennis"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Derived from a family nickname for his younger brother Augustus Moses Dickens used the pseudonym Boz for his early journalism and fiction."
+  },
+  {
+   "id": "vc-e-17",
+   "question": "Which 1837–1839 novel by Charles Dickens fiercely satirized the cruel parish workhouse system created by the New Poor Law of 1834?",
+   "options": [
+    "The Old Curiosity Shop",
+    "Nicholas Nickleby",
+    "Oliver Twist",
+    "Barnaby Rudge"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Serialized in Bentley Miscellany Oliver Twist or The Parish Boy Progress exposed the starvation and cruelty of the 1834 Poor Law workhouses."
+  },
+  {
+   "id": "vc-e-18",
+   "question": "Who is the deceased business partner whose ghost, bound in heavy chains of cash-boxes and ledgers, visits Ebenezer Scrooge first in 'A Christmas Carol' (1843)?",
+   "options": [
+    "Jacob Marley",
+    "Wilkins Micawber",
+    "Mr. Fezziwig",
+    "Bob Cratchit"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Dead for seven years Jacob Marley visits Scrooge on Christmas Eve to warn him of the three Spirits."
+  },
+  {
+   "id": "vc-e-19",
+   "question": "Which 1849–1850 semi-autobiographical novel did Charles Dickens affectionately call his 'favourite child' in his 1867 preface?",
+   "options": [
+    "Martin Chuzzlewit",
+    "Our Mutual Friend",
+    "Dombey and Son",
+    "David Copperfield"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Drawing on his own childhood toil at Warren Blacking Factory and his courtship of Maria Beadnell Dickens called David Copperfield his favourite child."
+  },
+  {
+   "id": "vc-e-20",
+   "question": "Which two European capitals are the 'two cities' of Charles Dickens's 1859 historical novel set before and during the French Revolution?",
+   "options": [
+    "London and Paris",
+    "Paris and Vienna",
+    "London and Rome",
+    "London and Brussels"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A Tale of Two Cities alternates between peaceful London and revolutionary Paris during the Reign of Terror."
+  },
+  {
+   "id": "vc-e-21",
+   "question": "Which dissolute English barrister goes willingly to the guillotine in place of Charles Darnay at the climax of 'A Tale of Two Cities' (1859)?",
+   "options": [
+    "Jarvis Lorry",
+    "Mr. Stryver",
+    "Jerry Cruncher",
+    "Sydney Carton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Out of love for Lucie Manette Sydney Carton drugs Darnay in prison and dies at the guillotine speaking his famous prophetic words."
+  },
+  {
+   "id": "vc-e-22",
+   "question": "Which murder-mystery novel was left only half-finished by Charles Dickens when he died suddenly at Gad's Hill Place in June 1870?",
+   "options": [
+    "Master Humphrey's Clock",
+    "No Thoroughfare",
+    "The Mystery of Edwin Drood",
+    "Our Mutual Friend"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Only six of the planned twelve monthly parts of The Mystery of Edwin Drood were written leaving the fate of Edwin Drood unsolved."
+  },
+  {
+   "id": "vc-e-23",
+   "question": "Who is the scheming, ruthlessly ambitious green-eyed governess who serves as the central protagonist of Thackeray's 'Vanity Fair' (1847–1848)?",
+   "options": [
+    "Blanche Amory",
+    "Becky Sharp",
+    "Beatrix Esmond",
+    "Amelia Sedley"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Rebecca Sharp the daughter of an impoverished artist and a French opera girl climbs Victorian society by her wits."
+  },
+  {
+   "id": "vc-e-24",
+   "question": "In Charlotte Brontë's 'Jane Eyre' (1847), what is the name of Mr. Edward Rochester's brooding manor house where Jane serves as governess?",
+   "options": [
+    "Thornfield Hall",
+    "Gateshead Hall",
+    "Moor House",
+    "Ferndean Manor"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Jane Eyre leaves Lowood School to teach Adèle Varens at Thornfield Hall where Bertha Mason is confined on the third floor."
+  },
+  {
+   "id": "vc-e-25",
+   "question": "Which 1849 social novel by Charlotte Brontë is set in Yorkshire during the Luddite textile machinery disturbances of 1811–1812?",
+   "options": [
+    "Villette",
+    "Shirley",
+    "Agnes Grey",
+    "The Professor"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Published in October 1849 Shirley depicts the mill-owner Robert Moore confronting Luddite frame-breakers during the Napoleonic Wars."
+  },
+  {
+   "id": "vc-e-26",
+   "question": "Which 1848 debut novel by Elizabeth Gaskell, subtitled 'A Tale of Manchester Life', portrays the working-class desperation of a Chartist weaver?",
+   "options": [
+    "Cranford",
+    "Wives and Daughters",
+    "Mary Barton",
+    "Sylvia's Lovers"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Gaskell published Mary Barton anonymously in October 1848 arousing deep sympathy for the industrial workers of Manchester."
+  },
+  {
+   "id": "vc-e-27",
+   "question": "Which landmark 1857 biography did Elizabeth Gaskell write at the request of Patrick Brontë to honor and defend her deceased friend?",
+   "options": [
+    "The Life of Charlotte Brontë",
+    "Lives of the Queens of England",
+    "Memorials of Haworth Parsonage",
+    "The Life of Emily Brontë"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Gaskell 1857 The Life of Charlotte Brontë is one of the greatest English biographies establishing the tragic legend of Haworth."
+  },
+  {
+   "id": "vc-e-28",
+   "question": "Which 1863 moral fairy tale by Charles Kingsley follows a young chimney sweep named Tom who is transformed into an aquatic creature?",
+   "options": [
+    "The Water-Babies",
+    "Alton Locke",
+    "Hereward the Wake",
+    "Westward Ho!"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Subtitled A Fairy Tale for a Land-Baby Kingsley 1863 book combined satire on child labor with Christian evolutionary parables."
+  },
+  {
+   "id": "vc-e-29",
+   "question": "What is the name of the fictional English county that forms the setting for Anthony Trollope's six-novel clerical series (1855–1867)?",
+   "options": [
+    "Carlingford",
+    "Wessex",
+    "Barsetshire",
+    "Loamshire"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Beginning with The Warden 1855 and Barchester Towers 1857 Trollope Chronicles of Barsetshire are set in the cathedral county of Barsetshire."
+  },
+  {
+   "id": "vc-e-30",
+   "question": "In George Eliot's 'Silas Marner' (1861), what golden-haired toddler wanders into the weaver's cottage and replaces his stolen hoard of gold?",
+   "options": [
+    "Romola",
+    "Mirah Lapidoth",
+    "Eppie",
+    "Hetty Sorrel"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Named Hephzibah or Eppie after Silas mother and sister the unacknowledged child of Godfrey Cass redeems Silas Marner from isolation."
+  },
+  {
+   "id": "vc-e-31",
+   "question": "Who is the idealistic young heroine of George Eliot's 'Middlemarch' (1871–1872) who makes the tragic mistake of marrying the elderly scholar Edward Casaubon?",
+   "options": [
+    "Rosamond Vincy",
+    "Mary Garth",
+    "Dorothea Brooke",
+    "Dinah Morris"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Compared in the Prelude to a modern Saint Teresa Dorothea Brooke weds the arid pedant Casaubon before later marrying Will Ladislaw."
+  },
+  {
+   "id": "vc-e-32",
+   "question": "Who is the narcissistic, self-centered baronet from whom Clara Middleton struggles to break her engagement in George Meredith's 1879 novel 'The Egoist'?",
+   "options": [
+    "Sir Willoughby Patterne",
+    "Richard Feverel",
+    "Vernon Whitford",
+    "Crossjay Patterne"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Willoughby Patterne of Patterne Hall embodies comic male egoism and is ultimately forced to marry the weary Laetitia Dale."
+  },
+  {
+   "id": "vc-e-33",
+   "question": "What was the real name of the Oxford mathematics lecturer who published 'Alice's Adventures in Wonderland' (1865) under the pseudonym Lewis Carroll?",
+   "options": [
+    "Charles Lutwidge Dodgson",
+    "Edward Lear",
+    "Kenneth Grahame",
+    "George MacDonald"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Charles Lutwidge Dodgson of Christ Church Oxford created the pseudonym Lewis Carroll by Latinizing and anglicizing his first two names."
+  },
+  {
+   "id": "vc-e-34",
+   "question": "Which 1869 historical romance by R. D. Blackmore narrates farmer John Ridd's love for a noblewoman raised by seventeenth-century Exmoor outlaws?",
+   "options": [
+    "Lorna Doone",
+    "King Solomon's Mines",
+    "Kidnapped",
+    "Micah Clarke"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Subtitled A Romance of Exmoor Blackmore 1869 novel Lorna Doone became one of the most beloved regional romances of the Victorian era."
+  },
+  {
+   "id": "vc-e-35",
+   "question": "What ancient Anglo-Saxon kingdom's name did Thomas Hardy revive for the semi-fictional southwest England setting of his major novels?",
+   "options": [
+    "East Anglia",
+    "Wessex",
+    "Northumbria",
+    "Mercia"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Hardy first introduced the geographical name Wessex in Chapter 50 of Far from the Madding Crowd in 1874 centered on his native Dorset."
+  },
+  {
+   "id": "vc-e-36",
+   "question": "Who is the independent female farm-owner in Thomas Hardy's 'Far from the Madding Crowd' (1874) courted by Gabriel Oak, Boldwood, and Sergeant Troy?",
+   "options": [
+    "Grace Melbury",
+    "Bathsheba Everdene",
+    "Sue Bridehead",
+    "Eustacia Vye"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Inheriting her uncle Weatherbury farm Bathsheba Everdene weds the reckless Sergeant Troy before finally marrying the faithful shepherd Gabriel Oak."
+  },
+  {
+   "id": "vc-e-37",
+   "question": "Which impulsive hay-trusser sells his wife Susan and baby daughter for five guineas at a country fair in the opening chapter of Hardy's 'The Mayor of Casterbridge' (1886)?",
+   "options": [
+    "Giles Winterborne",
+    "Alec d'Urberville",
+    "Donald Farfrae",
+    "Michael Henchard"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Intoxicated on rum-laced furmity at Weydon-Priors fair Michael Henchard auctions off his wife and child before swearing a twenty-one-year oath of abstinence."
+  },
+  {
+   "id": "vc-e-38",
+   "question": "In Robert Louis Stevenson's 'Strange Case of Dr Jekyll and Mr Hyde' (1886), who is the sober London lawyer through whose eyes most of the mystery is investigated?",
+   "options": [
+    "Richard Enfield",
+    "Dr. Hastie Lanyon",
+    "Gabriel John Utterson",
+    "Sir Danvers Carew"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Mr Gabriel John Utterson is Dr Jekyll lawyer and loyal friend who preserves and reads Lanyon and Jekyll final confessions."
+  },
+  {
+   "id": "vc-e-39",
+   "question": "In which 1887 novel, printed in 'Beeton's Christmas Annual', did Sir Arthur Conan Doyle first introduce Sherlock Holmes and Dr. John Watson?",
+   "options": [
+    "The Sign of the Four",
+    "The Hound of the Baskervilles",
+    "The Valley of Fear",
+    "A Study in Scarlet"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Doyle introduced Holmes and Watson sharing rooms at 221B Baker Street in A Study in Scarlet published in November 1887."
+  },
+  {
+   "id": "vc-e-40",
+   "question": "Which 1901 picaresque novel by Rudyard Kipling follows the orphaned Irish boy Kimball O'Hara accompanying an aged Tibetan lama across British India?",
+   "options": [
+    "The Light That Failed",
+    "Kim",
+    "Captains Courageous",
+    "Stalky & Co."
+   ],
+   "correct_option_id": 1,
+   "explanation": "Published in October 1901 Kim portrays Kimball O Hara torn between the British secret service Great Game and the lama spiritual quest."
+  },
+  {
+   "id": "vc-e-41",
+   "question": "What is the name of the human child raised by the wolf pack in the Indian jungle in Rudyard Kipling's 'The Jungle Book' (1894)?",
+   "options": [
+    "Rikki-Tikki-Tavi",
+    "Mowgli",
+    "Kotick",
+    "Toomai"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Rescued from the tiger Shere Khan by Father Wolf and Mother Wolf Mowgli is taught the Law of the Jungle by Baloo and Bagheera."
+  },
+  {
+   "id": "vc-e-42",
+   "question": "Which 1898 scientific romance by H. G. Wells depicts the invasion of Victorian England by Martians who are ultimately destroyed by earthly bacteria?",
+   "options": [
+    "The Island of Doctor Moreau",
+    "The Invisible Man",
+    "The War of the Worlds",
+    "The First Men in the Moon"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wells 1898 novel The War of the Worlds lands Martian cylinders on Horsell Common in Surrey to critique British imperial complacency."
+  },
+  {
+   "id": "vc-e-43",
+   "question": "Which 1894 anti-romantic comedy by George Bernard Shaw features the pragmatic 'chocolate-cream soldier' Captain Bluntschli and takes its title from Virgil's 'Aeneid'?",
+   "options": [
+    "Candida",
+    "The Devil's Disciple",
+    "Arms and the Man",
+    "You Never Can Tell"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Included in Plays Pleasant 1898 Arms and the Man debunks military and romantic idealism through the Swiss mercenary Bluntschli."
+  },
+  {
+   "id": "vc-e-44",
+   "question": "In Oscar Wilde's novel 'The Picture of Dorian Gray' (1890/1891), what is the name of the moralistic painter who creates the fatal portrait of Dorian?",
+   "options": [
+    "Basil Hallward",
+    "Alan Campbell",
+    "Lord Henry Wotton",
+    "James Vane"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Basil Hallward paints the masterpiece of Dorian Gray and is later murdered by Dorian when he sees the corrupted canvas in the schoolroom."
+  },
+  {
+   "id": "vc-e-45",
+   "question": "Which poignant 1898 poem did Oscar Wilde write after his release from prison, commemorating the execution of Royal Horse Guards trooper Charles Thomas Wooldridge?",
+   "options": [
+    "Ravenna",
+    "The Sphinx",
+    "The Ballad of Reading Gaol",
+    "De Profundis"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Published initially under Wilde prison cell number C.3.3. The Ballad of Reading Gaol contains the refrain Yet each man kills the thing he loves."
+  },
+  {
+   "id": "vc-e-46",
+   "question": "Which 1893 religious ode by the Catholic poet Francis Thompson portrays God's grace as an unwearying celestial pursuer following the fleeing soul?",
+   "options": [
+    "The Darkling Thrush",
+    "The Kingdom of God",
+    "Lepanto",
+    "The Hound of Heaven"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Opening I fled Him down the nights and down the days Francis Thompson The Hound of Heaven was published in his 1893 Poems."
+  },
+  {
+   "id": "vc-e-47",
+   "question": "Which stoic 1875 lyric by William Ernest Henley, written while recovering from leg amputation surgery, concludes 'I am the master of my fate, / I am the captain of my soul'?",
+   "options": [
+    "Pro Rege Nostro",
+    "Invictus",
+    "London Voluntaries",
+    "Vitae Lampada"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Written in the Edinburgh Royal Infirmary under Joseph Lister care Henley poem was published in his 1888 Book of Verses and later titled Invictus."
+  },
+  {
+   "id": "vc-e-48",
+   "question": "Which 1889 comic masterpiece by Jerome K. Jerome narrates a boating holiday up the Thames taken by J., Harris, George, and the dog Montmorency?",
+   "options": [
+    "Three Men on the Bummel",
+    "Three Men in a Boat",
+    "Idle Thoughts of an Idle Fellow",
+    "The Diary of a Nobody"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Subtitled To Say Nothing of the Dog Jerome K Jerome 1889 book intended as a serious Thames guide became an enduring classic of Victorian humor."
+  },
+  {
+   "id": "vc-e-49",
+   "question": "Which illustrated quarterly periodical, published in London from 1894 to 1897 with Aubrey Beardsley as its first art editor, epitomized the decadent 'Nineties'?",
+   "options": [
+    "Household Words",
+    "The Strand Magazine",
+    "The Cornhill Magazine",
+    "The Yellow Book"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published by Elkin Mathews and John Lane from April 1894 The Yellow Book became the symbol of British fin-de-siècle aestheticism."
+  },
+  {
+   "id": "vc-e-50",
+   "question": "In which year did Queen Victoria die at Osborne House on the Isle of Wight after a reign of nearly sixty-four years, closing the Victorian Period?",
+   "options": [
+    "1901",
+    "1910",
+    "1897",
+    "1900"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Queen Victoria died on 22 January 1901 and was succeeded by her eldest son King Edward VII."
+  }
+ ]
+}
