@@ -163,6 +163,10 @@
        Age of Chaucer (1340-1400). Fifteenth Century (1400-1500) and Early Tudor (1500-1558)
        follow common course outlines.
        An age that has a second name shows it in italics under the years.
+       The period filter above the cards lists all 20 ages (same names as the cards). Each card's
+       data-period holds its own slug; the ages inside Renaissance and Neoclassical also carry that
+       wide period's slug, so choosing the wide period shows it with its ages. A new age: add an
+       <option> here too.
        To open a topic: make the card <a class="dq-card ..." href="..."> (no is-soon),
        and change the button to "Start Quiz &rarr;". Write a question count only once
        the questions exist.
@@ -189,16 +193,26 @@
       <div class="dq-filters" hidden>
         <select id="dqPeriod" class="dq-select" aria-label="Show topics from one period">
           <option value="all">All Periods</option>
-          <option value="anglo-saxon">Anglo-Saxon</option>
-          <option value="middle-english">Middle English</option>
-          <option value="renaissance">The Renaissance</option>
-          <option value="neoclassical">Neoclassical</option>
-          <option value="romantic">Romantic</option>
-          <option value="victorian">Victorian</option>
-          <option value="edwardian">Edwardian</option>
-          <option value="georgian">Georgian</option>
-          <option value="modern">Modern</option>
-          <option value="postmodern">Postmodern</option>
+          <option value="anglo-saxon">Anglo-Saxon Period</option>
+          <option value="anglo-norman">Anglo-Norman Period</option>
+          <option value="age-of-chaucer">Age of Chaucer</option>
+          <option value="fifteenth-century">Fifteenth Century</option>
+          <option value="renaissance">Renaissance Period</option>
+          <option value="early-tudor">Early Tudor Period</option>
+          <option value="elizabethan">Elizabethan Age</option>
+          <option value="jacobean">Jacobean Age</option>
+          <option value="caroline">Caroline Age</option>
+          <option value="commonwealth">Commonwealth Period</option>
+          <option value="neoclassical">Neoclassical Period</option>
+          <option value="restoration">Restoration Age</option>
+          <option value="augustan">Augustan Age</option>
+          <option value="age-of-sensibility">Age of Sensibility</option>
+          <option value="romantic">Romantic Period</option>
+          <option value="victorian">Victorian Period</option>
+          <option value="edwardian">Edwardian Period</option>
+          <option value="georgian">Georgian Period</option>
+          <option value="modern">Modern Period</option>
+          <option value="postmodern">Postmodern Period</option>
         </select>
         <select id="dqSort" class="dq-select" aria-label="Sort the topics">
           <option value="time">Sort by: Time order</option>
@@ -225,7 +239,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/anglo-norman/ -->
-    <a class="dq-card t-peach" data-period="middle-english" href="/quizzes/daily/anglo-norman/">
+    <a class="dq-card t-peach" data-period="anglo-norman" href="/quizzes/daily/anglo-norman/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/anglo-norman.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -237,7 +251,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard), no reasons yet. Page: /quizzes/daily/age-of-chaucer/ -->
-    <a class="dq-card t-rose" data-period="middle-english" href="/quizzes/daily/age-of-chaucer/">
+    <a class="dq-card t-rose" data-period="age-of-chaucer" href="/quizzes/daily/age-of-chaucer/">
       <div class="dq-art">
         <img class="dq-pic" src="/assets/topics/medieval.webp" alt="" width="131" height="141" loading="lazy">
       </div>
@@ -249,7 +263,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/fifteenth-century/ -->
-    <a class="dq-card t-sage" data-period="middle-english" href="/quizzes/daily/fifteenth-century/">
+    <a class="dq-card t-sage" data-period="fifteenth-century" href="/quizzes/daily/fifteenth-century/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/fifteenth-century.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -273,7 +287,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/early-tudor/ -->
-    <a class="dq-card t-lilac" data-period="renaissance" href="/quizzes/daily/early-tudor/">
+    <a class="dq-card t-lilac" data-period="early-tudor renaissance" href="/quizzes/daily/early-tudor/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/early-tudor.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -285,7 +299,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/elizabethan/ -->
-    <a class="dq-card t-sky" data-period="renaissance" href="/quizzes/daily/elizabethan/">
+    <a class="dq-card t-sky" data-period="elizabethan renaissance" href="/quizzes/daily/elizabethan/">
       <div class="dq-art">
         <img class="dq-pic" src="/assets/topics/elizabethan-drama.webp" alt="" width="129" height="138" loading="lazy">
       </div>
@@ -297,7 +311,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/jacobean/ -->
-    <a class="dq-card t-mint" data-period="renaissance" href="/quizzes/daily/jacobean/">
+    <a class="dq-card t-mint" data-period="jacobean renaissance" href="/quizzes/daily/jacobean/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/jacobean.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -309,7 +323,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/caroline/ -->
-    <a class="dq-card t-coral" data-period="renaissance" href="/quizzes/daily/caroline/">
+    <a class="dq-card t-coral" data-period="caroline renaissance" href="/quizzes/daily/caroline/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/caroline.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -321,7 +335,7 @@
     </a>
 
     <!-- OPEN: 100 questions (50 easy, 50 hard). Page: /quizzes/daily/commonwealth/ -->
-    <a class="dq-card t-iris" data-period="renaissance" href="/quizzes/daily/commonwealth/">
+    <a class="dq-card t-iris" data-period="commonwealth renaissance" href="/quizzes/daily/commonwealth/">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/commonwealth.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -344,7 +358,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-rose is-soon" data-period="neoclassical">
+    <article class="dq-card t-rose is-soon" data-period="restoration neoclassical">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/restoration-age.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -355,7 +369,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-sky is-soon" data-period="neoclassical">
+    <article class="dq-card t-sky is-soon" data-period="augustan neoclassical">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/augustan-age.webp" alt="" width="480" height="384" loading="lazy">
       </div>
@@ -367,7 +381,7 @@
       <span class="dq-go">Coming soon</span>
     </article>
 
-    <article class="dq-card t-peach is-soon" data-period="neoclassical">
+    <article class="dq-card t-peach is-soon" data-period="age-of-sensibility neoclassical">
       <div class="dq-art">
         <img class="dq-pic is-tile" src="/assets/topics/age-of-sensibility.webp" alt="" width="480" height="384" loading="lazy">
       </div>
