@@ -1,0 +1,608 @@
+{
+ "bankId": "postmodern",
+ "period": "Postmodern Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "pm-h-01",
+   "question": "Which literary editor of 'The Spectator' anonymously published the 1 October 1954 leader article 'In the Movement', giving the 1950s poetic group its name?",
+   "options": [
+    "G. S. Fraser",
+    "J. D. Scott",
+    "Anthony Hartley",
+    "John Lehmann"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Spectator literary editor J D Scott wrote the unsigned October 1954 article In the Movement declaring that a tough-minded anti-romantic generation had arrived."
+  },
+  {
+   "id": "pm-h-02",
+   "question": "Which poet was the sole female contributor included among the nine poets in Robert Conquest's landmark 1956 Movement anthology 'New Lines'?",
+   "options": [
+    "Sylvia Plath",
+    "Stevie Smith",
+    "Patricia Beer",
+    "Elizabeth Jennings"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Elizabeth Jennings was the only woman among the nine poets in New Lines 1956 alongside Larkin Amis Wain Davie Enright Holloway Gunn and Conquest."
+  },
+  {
+   "id": "pm-h-03",
+   "question": "Which 1957 anthology, edited by Dannie Abse and Howard Sergeant to oppose the dry academic restraint of 'New Lines', championed Dionysian emotional energy?",
+   "options": [
+    "The White Horseman",
+    "Children of Albion",
+    "Celtic Dawn",
+    "Mavericks"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Abse and Sergeant edited Mavericks in 1957 featuring David Wright Jon Silkin and J C Hall as a neo-romantic counter-manifesto to The Movement."
+  },
+  {
+   "id": "pm-h-04",
+   "question": "Which London poetry workshop—founded by Philip Hobsbaum in 1952 and hosted later by Edward Lucie-Smith—nurtured poets such as Peter Porter and George MacBeth?",
+   "options": [
+    "The Review Circle",
+    "The British Poetry Revival",
+    "The Cairo Poets",
+    "The Group"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Meeting every Friday evening to subject cyclostyled poems to rigorous oral critique The Group published A Group Anthology in 1963."
+  },
+  {
+   "id": "pm-h-05",
+   "question": "Which three pop-influenced performance poets from Liverpool were featured in the bestselling 1967 Penguin Modern Poets 10 volume 'The Mersey Sound'?",
+   "options": [
+    "Adrian Henri, Roger McGough, and Brian Patten",
+    "Christopher Logue, Michael Horovitz, and Pete Brown",
+    "Tony Harrison, Douglas Dunn, and Sean O'Brien",
+    "Linton Kwesi Johnson, Benjamin Zephaniah, and John Agard"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Published in 1967 Penguin Modern Poets 10 The Mersey Sound brought together the Liverpool Poets Adrian Henri Roger McGough and Brian Patten."
+  },
+  {
+   "id": "pm-h-06",
+   "question": "Under what female pseudonym did the young Philip Larkin write two boarding-school novellas ('Trouble at Willow Gables' and 'Michaelmas Term at St Brides') in 1943?",
+   "options": [
+    "Sarah Burton",
+    "Brunette Coleman",
+    "Victoria Lucas",
+    "Barbara Pym"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 1943 Larkin invented the persona of the spinster writer Brunette Coleman authoring two girls school stories a pseudo-autobiography and French symbolist poems."
+  },
+  {
+   "id": "pm-h-07",
+   "question": "From which Shakespearean play and scene does Philip Larkin's 1955 poetry collection 'The Less Deceived' take its title?",
+   "options": [
+    "Measure for Measure, Act IV, Scene 1",
+    "Othello, Act III, Scene 3",
+    "Hamlet, Act III, Scene 1",
+    "Twelfth Night, Act II, Scene 4"
+   ],
+   "correct_option_id": 2,
+   "explanation": "When Hamlet tells Ophelia I loved you not she replies I was the more deceived prompting Larkin title The Less Deceived."
+  },
+  {
+   "id": "pm-h-08",
+   "question": "From which fourteenth-century Middle English alliterative romance did Ted Hughes take both the title and the epigraph of his 1967 collection 'Wodwo'?",
+   "options": [
+    "The Alliterative Morte Arthure",
+    "Sir Gawain and the Green Knight",
+    "Piers Plowman",
+    "Sir Orfeo"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Fitt II of Sir Gawain and the Green Knight Gawain battles wodwos or wild forest men that dwelt in the cliffs."
+  },
+  {
+   "id": "pm-h-09",
+   "question": "Which 1971 sequence of thirty prose-hymns by Geoffrey Hill superimposes the eighth-century Anglo-Saxon king of Mercia onto the poet's Worcestershire childhood?",
+   "options": [
+    "Tenebrae",
+    "Mercian Hymns",
+    "The Triumph of Love",
+    "For the Unfallen"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Geoffrey Hill Mercian Hymns 1971 blends King Offa eighth-century earthworks and coinage with memories of mid-twentieth-century Bromsgrove nail-making."
+  },
+  {
+   "id": "pm-h-10",
+   "question": "Which 1985 poem in abab quatrains by Tony Harrison—written during the Miners' Strike after skinheads spray-painted his parents' gravestone in Leeds—caused a major uproar on Channel 4?",
+   "options": [
+    "V.",
+    "The School of Eloquence",
+    "Continuous",
+    "A Cold Coming"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Modeled on Gray Elegy Tony Harrison poem V explores class division versus and victory after finding UNITED sprayed on the family grave at Beeston Hill."
+  },
+  {
+   "id": "pm-h-11",
+   "question": "In Seamus Heaney's bog poem 'The Tollund Man' (1972), to which Danish city does the speaker vow he will travel ('Some day I will go to ______ / To see his peat-brown head')?",
+   "options": [
+    "Copenhagen",
+    "Elsinore",
+    "Odense",
+    "Aarhus"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Confusing Silkeborg Museum with nearby Aarhus Museum Heaney opened The Tollund Man with Some day I will go to Aarhus To see his peat-brown head."
+  },
+  {
+   "id": "pm-h-12",
+   "question": "What is the title of the eight-sonnet sequence in 'The Haw Lantern' (1987) that Seamus Heaney composed in memory of his mother, Margaret Kathleen Heaney?",
+   "options": [
+    "Station Island",
+    "Clearances",
+    "Squarings",
+    "Glanmore Sonnets"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Prefaced by a poem on a chestnut tree Clearances contains the famous Sonnet 3 When all the others were away at Mass I was all hers as we peeled potatoes."
+  },
+  {
+   "id": "pm-h-13",
+   "question": "In Derek Walcott's 1990 Caribbean epic 'Omeros', written in loose three-line stanzas, which two St. Lucian fishermen compete for the housemaid Helen?",
+   "options": [
+    "Achille and Hector",
+    "Shabine and Seven Seas",
+    "Philoctete and Plunkett",
+    "Makak and Moustique"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Omeros the St Lucian canoe-fisherman Achille and the passenger-van driver Hector vie for the proud pregnant housemaid Helen."
+  },
+  {
+   "id": "pm-h-14",
+   "question": "Which three novels, originally written by Samuel Beckett in French between 1947 and 1950 before he translated them into English, form his postwar 'Trilogy'?",
+   "options": [
+    "Murphy, Watt, and Mercier and Camier",
+    "More Pricks Than Kicks, Murphy, and How It Is",
+    "Company, Ill Seen Ill Said, and Worstward Ho",
+    "Molloy, Malone Dies, and The Unnamable"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published in French in 1951-1953 and collected in English in 1959 Molloy Malone Dies and The Unnamable progressively strip away plot body and ego."
+  },
+  {
+   "id": "pm-h-15",
+   "question": "In Act I of Samuel Beckett's 'Waiting for Godot', what physical action prompts the mute servant Lucky to launch into his torrential, unpunctuated philosophical speech?",
+   "options": [
+    "Handing him a raw turnip and a half-gnawed chicken bone",
+    "Untying the heavy rope from around his bleeding neck",
+    "Striking his boots three times with Pozzo's whip",
+    "Placing Lucky's bowler hat upon his head and commanding him to 'Think!'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pozzo explains that Lucky cannot think without his hat; when Vladimir places the bowler hat on Lucky head he erupts into his speech on a personal God with a white beard."
+  },
+  {
+   "id": "pm-h-16",
+   "question": "In Samuel Beckett's 1958 one-man play 'Krapp's Last Tape', how old is the solitary protagonist Krapp as he listens on his birthday to a spool recorded by his thirty-nine-year-old self?",
+   "options": [
+    "Seventy-nine years old",
+    "Fifty-nine years old",
+    "Sixty-nine years old",
+    "Eighty-nine years old"
+   ],
+   "correct_option_id": 2,
+   "explanation": "On his sixty-ninth birthday Krapp listens to Box Three Spool Five recorded at age thirty-nine which itself mocks a tape made at age twenty-seven."
+  },
+  {
+   "id": "pm-h-17",
+   "question": "In Samuel Beckett's 1961 two-act play 'Happy Days', what is the physical predicament of the cheerful protagonist Winnie across Acts I and II?",
+   "options": [
+    "She is strapped to a mechanical rocking chair that rocks faster whenever a bell rings",
+    "She is sealed inside a large grey funerary urn alongside her husband's mistress",
+    "She is buried up to her waist in a scorching mound in Act I, and up to her neck in Act II",
+    "She is suspended in a wire cage five feet above a flooded stage"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Awakened by a piercing bell Winnie rummages in her black bag while buried to the waist in Act I and can move only her eyes and lips when buried to the neck in Act II."
+  },
+  {
+   "id": "pm-h-18",
+   "question": "From the subtitle of which 1957 play by David Campton did theatre critic Irving Wardle borrow the phrase 'Comedy of Menace' to describe Harold Pinter's early drama?",
+   "options": [
+    "The Lunatic View",
+    "One Way Pendulum",
+    "The Hole",
+    "A Resounding Tinkle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Irving Wardle borrowed the phrase from David Campton 1957 play The Lunatic View A Comedy of Menace for his September 1958 Encore review of Pinter."
+  },
+  {
+   "id": "pm-h-19",
+   "question": "In Harold Pinter's 1965 play 'The Homecoming', who is the philosophy professor who brings his wife Ruth to his father Max's North London house, only to return to America without her?",
+   "options": [
+    "Aston",
+    "Jerry",
+    "Lenny",
+    "Teddy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Doctor of Philosophy Teddy passively watches as his wife Ruth agrees to stay behind in North London as housekeeper and Madonna-whore to Max Lenny and Joey."
+  },
+  {
+   "id": "pm-h-20",
+   "question": "At which fictional Derbyshire country estate is Tom Stoppard's 1993 play 'Arcadia' set, alternating scenes between 1809–1812 and the present day?",
+   "options": [
+    "Sidley Park",
+    "Bootle Manor",
+    "Mulberry Park",
+    "Croom House"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Set in a single garden room at Sidley Park in Derbyshire Arcadia juxtaposes Thomasina Coverly and Septimus Hodge in 1809 with Hannah Jarvis and Bernard Nightingale."
+  },
+  {
+   "id": "pm-h-21",
+   "question": "How much historical time elapses between Act I (set in Victorian colonial Africa) and Act II (set in a London park in 1979) of Caryl Churchill's 'Cloud Nine', although the characters age only twenty-five years?",
+   "options": [
+    "Fifty years",
+    "Seventy-five years",
+    "One hundred and fifty years",
+    "One hundred years"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Between Act I and Act II a century of historical time passes from Victorian Africa to 1979 London while Betty Edward and Victoria age only twenty-five years."
+  },
+  {
+   "id": "pm-h-22",
+   "question": "In what kind of rural Irish school in the fictional Donegal parish of Baile Beag in August 1833 is Brian Friel's 'Translations' (1980) set?",
+   "options": [
+    "A Christian Brothers seminary",
+    "A workhouse industrial school",
+    "A hedge-school",
+    "A Protestant charter boarding school"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Master Hugh O Donnell teaches Latin Greek and Irish in a barn hedge-school at Baile Beag as British Royal Engineers arrive to map and rename the countryside."
+  },
+  {
+   "id": "pm-h-23",
+   "question": "At which London theatre venue did twenty-three-year-old Sarah Kane's controversial debut play 'Blasted' premiere in January 1995?",
+   "options": [
+    "The Tricycle Theatre",
+    "The Royal Court Theatre Upstairs",
+    "The Almeida Theatre",
+    "The Bush Theatre"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Staged before sixty-five seats at the Royal Court Theatre Upstairs in January 1995 Sarah Kane Blasted ignited the biggest critical storm since Bond Saved."
+  },
+  {
+   "id": "pm-h-24",
+   "question": "What is the subject of the hilariously pedantic academic article that probationary history lecturer Jim Dixon struggles to publish in Kingsley Amis's 'Lucky Jim' (1954)?",
+   "options": [
+    "The economic influence of developments in shipbuilding techniques, 1450 to 1485",
+    "The agrarian enclosure of seventeenth-century Leicestershire",
+    "The wool-trade tariffs of the Hanseatic League under Henry VII",
+    "The liturgical reforms of Archbishop Laud in provincial cathedrals"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Jim Dixon opens his article The Economic Influence of the Developments in Shipbuilding Techniques 1450 to 1485 with the phrase In considering this strangely neglected topic."
+  },
+  {
+   "id": "pm-h-25",
+   "question": "Whose sudden appearance on the beach at the very end of William Golding's 'Lord of the Flies' (1954) halts Jack's hunters as they pursue Ralph through the burning island?",
+   "options": [
+    "A party of Polynesian pearl fishermen",
+    "A British naval officer from a passing cruiser",
+    "A missionary priest in a motor launch",
+    "A downed Royal Air Force fighter pilot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Attracted by the smoke of Jack fire a naval officer in white drill uniform and gold-buttoned cap steps ashore asking the savages if they are having a war."
+  },
+  {
+   "id": "pm-h-26",
+   "question": "In Doris Lessing's 'The Golden Notebook' (1962), into which four colored notebooks does the writer Anna Wulf divide her experience before uniting them in the fifth golden notebook?",
+   "options": [
+    "White, Green, Purple, and Silver",
+    "Brown, Crimson, Amber, and Grey",
+    "Black, Red, Yellow, and Blue",
+    "Scarlet, Violet, Ochre, and Indigo"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Anna Wulf keeps a Black notebook on her African novel a Red notebook on communism a Yellow notebook for her fictional alter ego Ella and a Blue diary."
+  },
+  {
+   "id": "pm-h-27",
+   "question": "In Chapter 61 of John Fowles's 'The French Lieutenant's Woman' (1969), outside whose real historical house at 16 Cheyne Walk in Chelsea does the intrusive author turn back his watch to switch endings?",
+   "options": [
+    "Dante Gabriel Rossetti",
+    "George Eliot",
+    "Algernon Charles Swinburne",
+    "Thomas Carlyle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sarah Woodruff has found shelter as assistant and model in the bohemian Chelsea household of Dante Gabriel Rossetti at 16 Tudor House Cheyne Walk."
+  },
+  {
+   "id": "pm-h-28",
+   "question": "Who is the egotistical retired theatre director who retreats to a remote coastal house called Sharrow Point and kidnaps his childhood sweetheart Hartley in Iris Murdoch's 'The Sea, The Sea' (1978)?",
+   "options": [
+    "Charles Arrowby",
+    "Bradley Pearson",
+    "Jake Donaghue",
+    "Hilary Burde"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Playwright and Prospero-like director Charles Arrowby retires to write his memoirs by the sea only to unleash destructive romantic obsession."
+  },
+  {
+   "id": "pm-h-29",
+   "question": "To which devoted pickle-factory worker—who serves as his skeptical, interrupting listener at the Braganza Pickles factory—does Saleem Sinai read aloud the thirty chapters of 'Midnight's Children' (1981)?",
+   "options": [
+    "Mary Pereira",
+    "Parvati-the-witch",
+    "Padma Mangroli",
+    "Amina Sinai"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Named after the dung-lotus goddess Padma Mangroli stirs vats of chutney by day and listens impatiently to Saleem narrative by night."
+  },
+  {
+   "id": "pm-h-30",
+   "question": "Who is the violent military rival with crushingly powerful knees with whom Saleem Sinai was secretly swapped at birth by the nurse Mary Pereira at midnight on 15 August 1947?",
+   "options": [
+    "Tai the boatman",
+    "Nadir Khan",
+    "Shiva",
+    "Picture Singh"
+   ],
+   "correct_option_id": 2,
+   "explanation": "To please her radical lover Joseph D Costa nurse Mary Pereira switches the rich baby of Ahmed and Amina Sinai with the poor baby of Wee Willie Winkie and Vanita."
+  },
+  {
+   "id": "pm-h-31",
+   "question": "Who is the fifty-two-year-old history teacher who abandons the French Revolution syllabus to tell his pupil Price the dark family history of the Cricks in the East Anglian Fens in Graham Swift's 'Waterland' (1983)?",
+   "options": [
+    "Jack Dodds",
+    "Stephen Beech",
+    "Tom Crick",
+    "Bill Unwin"
+   ],
+   "correct_option_id": 2,
+   "explanation": "After his wife Mary kidnaps a baby from a supermarket history teacher Tom Crick weaves together eel-trapping silt-reclamation and family tragedy in the Fens."
+  },
+  {
+   "id": "pm-h-32",
+   "question": "Who is the gluttonous, self-destructive thirty-five-year-old commercial director who shuttles between New York and London in Martin Amis's 1984 novel 'Money: A Suicide Note'?",
+   "options": [
+    "John Self",
+    "Keith Talent",
+    "Richard Tull",
+    "Charles Highway"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Addicted to fast food pornography alcohol and slot machines John Self is conned in an elaborate transatlantic film financing fraud by Fielding Goodney."
+  },
+  {
+   "id": "pm-h-33",
+   "question": "What is the subject of the unnumbered half-chapter titled 'Parenthesis' in Julian Barnes's 'A History of the World in 10½ Chapters' (1989)?",
+   "options": [
+    "A philosophical meditation on human love as the only counter-weight to history",
+    "A satirical taxonomy of woodworm species aboard Noah's Ark",
+    "A transcript of the medieval ecclesiastical trial of timber beetles",
+    "An astronaut's diary of discovering the remains of the Ark on Mount Ararat"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Speaking in his own voice in the unnumbered half-chapter Parenthesis Barnes argues that love is our only fragile defense against the history of the world."
+  },
+  {
+   "id": "pm-h-34",
+   "question": "In Chapter 5 of Julian Barnes's 'A History of the World in 10½ Chapters' (1989), which famous 1819 French Romantic painting by Théodore Géricault is analyzed to show how catastrophe becomes art?",
+   "options": [
+    "The Raft of the Medusa",
+    "The Death of Sardanapalus",
+    "Liberty Leading the People",
+    "The Massacre at Chios"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Chapter 5 Shipwreck first recounts the 1816 wreck of the French frigate Medusa and then examines how Géricault sanitized starvation and cannibalism into art."
+  },
+  {
+   "id": "pm-h-35",
+   "question": "How are the eight chapters of Jeanette Winterson's 1985 semi-autobiographical debut novel 'Oranges Are Not the Only Fruit' titled and structured?",
+   "options": [
+    "After eight Arthurian knights of the Round Table",
+    "After the first eight books of the Old Testament, from Genesis to Ruth",
+    "After the eight deadly sins of early Christian desert monasticism",
+    "After the eight canonical hours of the medieval monastic liturgy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Winterson titles the eight chapters Genesis Exodus Leviticus Numbers Deuteronomy Joshua Judges and Ruth interweaving fairy tales with Jeanette evangelical upbringing."
+  },
+  {
+   "id": "pm-h-36",
+   "question": "In Kazuo Ishiguro's 'The Remains of the Day' (1989), what is the name of the grand Oxfordshire country house where the butler Stevens served the Nazi-appeasing Lord Darlington?",
+   "options": [
+    "Brideshead Castle",
+    "Darlington Hall",
+    "Patterne Hall",
+    "Howards End"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In July 1956 Stevens borrows his new American employer Mr Farraday Ford motorcar to drive from Darlington Hall to the West Country to meet Miss Kenton."
+  },
+  {
+   "id": "pm-h-37",
+   "question": "In the final 'London, 1999' postscript of Ian McEwan's 'Atonement' (2001), what devastating metafictional truth does the elderly novelist Briony Tallis reveal about Cecilia and Robbie Turner?",
+   "options": [
+    "That the entire accusation of 1935 was a fictional plot invented for her first play",
+    "That Robbie survived the war to become a celebrated neurologist at St. Thomas's Hospital",
+    "That Cecilia married Paul Marshall after Robbie defected to the Soviet Union",
+    "That they were never reunited: Robbie died at Dunkirk and Cecilia died in the Blitz in 1940"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Suffering from vascular dementia Briony admits that Robbie died of septicaemia at Bray-Dunes on 1 June 1940 and Cecilia died in the Balham Tube bombing in September 1940."
+  },
+  {
+   "id": "pm-h-38",
+   "question": "Which 1995 novel—the concluding volume of Pat Barker's World War I trilogy centering on Billy Prior and Dr. W. H. R. Rivers—won the Booker Prize?",
+   "options": [
+    "The Eye in the Door",
+    "Regeneration",
+    "The Ghost Road",
+    "Another World"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Following Regeneration 1991 and The Eye in the Door 1993 Pat Barker won the 1995 Booker Prize for The Ghost Road in which Billy Prior dies with Wilfred Owen at the Sambre-Oise Canal."
+  },
+  {
+   "id": "pm-h-39",
+   "question": "Which three novels by Chinua Achebe trace the history of colonial Nigeria from the pre-colonial Igbo village of Umuofia through the 1920s and 1950s as 'The African Trilogy'?",
+   "options": [
+    "Things Fall Apart, A Man of the People, and Anthills of the Savannah",
+    "Arrow of God, Girls at War, and There Was a Country",
+    "Things Fall Apart, The Concubine, and The Famished Road",
+    "Things Fall Apart, No Longer at Ease, and Arrow of God"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Things Fall Apart 1958 portrays Okonkwo No Longer at Ease 1960 portrays his grandson Obi Okonkwo in 1950s Lagos and Arrow of God 1964 portrays the chief priest Ezeulu."
+  },
+  {
+   "id": "pm-h-40",
+   "question": "In Jean Rhys's 1966 postcolonial prequel to 'Jane Eyre', 'Wide Sargasso Sea', what is the true childhood name of the white Creole heiress from Jamaica before her husband renames her 'Bertha'?",
+   "options": [
+    "Annette Mason",
+    "Antoinette Cosway",
+    "Christophine Dubois",
+    "Amélie"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Raised at Coulibri Estate in post-emancipation Jamaica Antoinette Cosway is stripped of her dowry sanity and name by her English husband."
+  },
+  {
+   "id": "pm-h-41",
+   "question": "In J. M. Coetzee's 1986 metafictional reworking of 'Robinson Crusoe', 'Foe', why is the African servant Friday completely unable to tell Susan Barton or Daniel Foe his own story?",
+   "options": [
+    "He has taken a lifelong monastic vow of silence after the shipwreck",
+    "His tongue has been cut out",
+    "He speaks only an extinct dialect of the interior Andes",
+    "He was born deaf and mute on the coast of Brazil"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Cruso tells Susan Barton that slavers cut out Friday tongue leaving Friday silenced at the mute center of the colonial archive."
+  },
+  {
+   "id": "pm-h-42",
+   "question": "Who is the fifty-two-year-old Cape Town professor of Romantic poetry who loses his university post over an affair with a student and retreats to his daughter Lucy's farm in J. M. Coetzee's 'Disgrace' (1999)?",
+   "options": [
+    "Michael K",
+    "Petrus",
+    "David Lurie",
+    "Bev Shaw"
+   ],
+   "correct_option_id": 2,
+   "explanation": "While writing an opera on Lord Byron and Teresa Guiccioli David Lurie refuses to make a contrite public confession and witnesses a brutal attack on Lucy farm in the Eastern Cape."
+  },
+  {
+   "id": "pm-h-43",
+   "question": "Who is the entrepreneurial chauffeur from the 'Darkness' of Laxmangarh village who murders his employer Mr. Ashok and writes seven nocturnal letters to Premier Wen Jiabao in Aravind Adiga's 'The White Tiger' (2008)?",
+   "options": [
+    "Kishan Halwai",
+    "Ram Persad",
+    "Balram Halwai",
+    "Vijay"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Nicknamed the White Tiger by a school inspector Balram Halwai kills his master Ashok with a Johnny Walker bottle steals 700000 rupees and starts a taxi company in Bangalore."
+  },
+  {
+   "id": "pm-h-44",
+   "question": "Which 2019 dystopian sequel to her 1985 novel 'The Handmaid's Tale'—narrated partly by Aunt Lydia—won Margaret Atwood her second Booker Prize?",
+   "options": [
+    "The Testaments",
+    "The Year of the Flood",
+    "Oryx and Crake",
+    "The Heart Goes Last"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Set fifteen years after The Handmaid Tale Margaret Atwood The Testaments jointly won the 2019 Booker Prize alongside Bernardine Evaristo Girl Woman Other."
+  },
+  {
+   "id": "pm-h-45",
+   "question": "In which year was the Nagasaki-born British novelist Kazuo Ishiguro awarded the Nobel Prize in Literature?",
+   "options": [
+    "2013",
+    "2005",
+    "2017",
+    "2021"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Kazuo Ishiguro received the 2017 Nobel Prize in Literature for novels of great emotional force such as The Remains of the Day and Never Let Me Go."
+  },
+  {
+   "id": "pm-h-46",
+   "question": "Which Zanzibar-born British novelist—author of 'Paradise' (1994), 'By the Sea' (2001), and 'Afterlives' (2020)—was awarded the 2021 Nobel Prize in Literature?",
+   "options": [
+    "Ben Okri",
+    "Nuruddin Farah",
+    "Caryl Phillips",
+    "Abdulrazak Gurnah"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Emeritus Professor at the University of Kent Abdulrazak Gurnah won the 2021 Nobel Prize for his compassionate exploration of colonialism and the refugee experience."
+  },
+  {
+   "id": "pm-h-47",
+   "question": "Which 1990 comic coming-of-age novel by Hanif Kureishi opens with the famous line 'My name is Karim Amir, and I am an Englishman born and bred, almost'?",
+   "options": [
+    "The Black Album",
+    "The Buddha of Suburbia",
+    "Intimacy",
+    "My Beautiful Laundrette"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Winner of the Whitbread First Novel Award in 1990 The Buddha of Suburbia follows the mixed-race teenager Karim Amir from Bromley to 1970s London theatre."
+  },
+  {
+   "id": "pm-h-48",
+   "question": "Which 2003 debut novel by Monica Ali chronicles the life of Nazneen, a young Bangladeshi woman who enters an arranged marriage with Chanu Ahmed in Tower Hamlets, East London?",
+   "options": [
+    "Love Marriage",
+    "Brick Lane",
+    "Alentejo Blue",
+    "In the Kitchen"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Shortlisted for the 2003 Booker Prize Monica Ali Brick Lane traces Nazneen quiet emancipation in the Bangladeshi community of East London."
+  },
+  {
+   "id": "pm-h-49",
+   "question": "Which of the following statements concerning British literature from 1945 to the present is NOT correct?",
+   "options": [
+    "Salman Rushdie's 'Midnight's Children' won the Booker Prize in 1981",
+    "Samuel Beckett was awarded the Nobel Prize in Literature in 1969",
+    "The Theatres Act of 1968 abolished stage censorship by the Lord Chamberlain",
+    "William Golding won the inaugural Booker Prize in 1969 for his 1954 novel 'Lord of the Flies'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Booker Prize was not established until 1969 when P H Newby won; William Golding won the Booker Prize in 1980 for his sea novel Rites of Passage."
+  },
+  {
+   "id": "pm-h-50",
+   "question": "Which of the following character-and-work pairings from the Postmodern and Contemporary Period (1945–present) is NOT correctly matched?",
+   "options": [
+    "Saleem Sinai — Vikram Seth's 'A Suitable Boy'",
+    "Briony Tallis — Ian McEwan's 'Atonement'",
+    "Jimmy Porter — John Osborne's 'Look Back in Anger'",
+    "Charles Smithson — John Fowles's 'The French Lieutenant's Woman'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Saleem Sinai is the protagonist of Salman Rushdie 1981 novel Midnight Children whereas Lata Mehra is the central heroine of Vikram Seth A Suitable Boy."
+  }
+ ]
+}
