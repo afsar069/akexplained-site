@@ -1,0 +1,608 @@
+{
+ "bankId": "edwardian",
+ "period": "Edwardian Period",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "ed-h-01",
+   "question": "In her critical essay 'Mr. Bennett and Mrs. Brown' (1924), what label did Virginia Woolf apply to H. G. Wells, Arnold Bennett, and John Galsworthy?",
+   "options": [
+    "'Vorticists'",
+    "'Materialists'",
+    "'Impressionists'",
+    "'Aesthetes'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Virginia Woolf called the Edwardian trio of Wells, Bennett, and Galsworthy materialists for focusing on external social detail over inner consciousness."
+  },
+  {
+   "id": "ed-h-02",
+   "question": "Who co-managed the landmark 1904–1907 repertory seasons at London's Royal Court Theatre that established George Bernard Shaw's stage fame?",
+   "options": [
+    "W. B. Yeats and Lady Augusta Gregory",
+    "Henry Irving and Ellen Terry",
+    "Herbert Beerbohm Tree and George Alexander",
+    "Harley Granville-Barker and J. E. Vedrenne"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The 1904 to 1907 Vedrenne-Barker seasons at the Royal Court Theatre staged 988 performances, including 701 of plays by Bernard Shaw."
+  },
+  {
+   "id": "ed-h-03",
+   "question": "Which two Edwardian problem plays by Harley Granville-Barker (1905 and 1907) exposed a solicitor's financial fraud and a political abortion scandal banned by the censor?",
+   "options": [
+    "'The Silver Box' and 'Strife'",
+    "'Quality Street' and 'The Admirable Crichton'",
+    "'Riders to the Sea' and 'The Well of the Saints'",
+    "'The Voysey Inheritance' and 'Waste'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Granville-Barker dissected bourgeois ethics in 'The Voysey Inheritance' in 1905 and 'Waste' in 1907, which was refused a public licence by the Lord Chamberlain."
+  },
+  {
+   "id": "ed-h-04",
+   "question": "In George Bernard Shaw's 'Man and Superman' (1903), who is the radical hero pursued by Ann Whitefield and credited with 'The Revolutionist's Handbook'?",
+   "options": [
+    "Henry Higgins",
+    "Adolphus Cusins",
+    "Colenso Ridgeon",
+    "Jack Tanner"
+   ],
+   "correct_option_id": 3,
+   "explanation": "John Tanner, author of 'The Revolutionist's Handbook', becomes Don Juan in Act III and yields to Ann Whitefield's Life Force."
+  },
+  {
+   "id": "ed-h-05",
+   "question": "In George Bernard Shaw's 'Major Barbara' (1905), who is Barbara's millionaire munitions-maker father, who preaches that poverty is the worst of all crimes?",
+   "options": [
+    "Andrew Undershaft",
+    "Thomas Broadbent",
+    "Alfred Doolittle",
+    "Roebuck Ramsden"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Millionaire armourer Andrew Undershaft converts both his Salvation Army daughter Barbara and Greek professor Adolphus Cusins."
+  },
+  {
+   "id": "ed-h-06",
+   "question": "Which 1904 comedy did George Bernard Shaw write at W. B. Yeats's request, contrasting the Englishman Tom Broadbent with the Irishman Larry Doyle?",
+   "options": [
+    "'Misalliance'",
+    "'John Bull's Other Island'",
+    "'Fanny's First Play'",
+    "'Getting Married'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Shaw's 1904 play 'John Bull's Other Island', featuring Broadbent, Doyle, and Father Keegan, was a major hit at the Royal Court Theatre."
+  },
+  {
+   "id": "ed-h-07",
+   "question": "In George Bernard Shaw's 'The Doctor's Dilemma' (1906), between which two patients must Sir Colenso Ridgeon choose to allocate his scarce tuberculosis cure?",
+   "options": [
+    "The dustman Alfred Doolittle and the retired colonial officer Colonel Pickering",
+    "The Irish civil engineer Larry Doyle and the defrocked mystic priest Father Keegan",
+    "The unscrupulous genius painter Louis Dubedat and the poor clinic doctor Blenkinsop",
+    "The munitions magnate Andrew Undershaft and the Greek professor Adolphus Cusins"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Shaw's 1906 medical satire, Dr. Ridgeon loves Jennifer Dubedat and chooses to save poor Dr. Blenkinsop over her dishonest artist husband Louis."
+  },
+  {
+   "id": "ed-h-08",
+   "question": "Which 1912 play by George Bernard Shaw uses the ancient fable of a Christian tailor and a grateful lion in the Roman arena to examine religious faith?",
+   "options": [
+    "'The Devil's Disciple'",
+    "'Androcles and the Lion'",
+    "'The Showing-Up of Blanco Posnet'",
+    "'Caesar and Cleopatra'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Shaw's 1912 play 'Androcles and the Lion' explores early Christian martyrdom and was published with a lengthy theological preface."
+  },
+  {
+   "id": "ed-h-09",
+   "question": "In John Galsworthy's 'The Man of Property' (1906), which idealistic architect designs Soames Forsyte's house at Robin Hill and becomes the lover of Soames's wife Irene?",
+   "options": [
+    "David Roberts",
+    "Philip Bosinney",
+    "Charles Gould",
+    "William Falder"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Architect Philip Bosinney, nicknamed the Buccaneer, designs Robin Hill for Soames Forsyte and falls in love with Irene before dying in the London fog."
+  },
+  {
+   "id": "ed-h-10",
+   "question": "Which two Edwardian plays by John Galsworthy (1906 and 1909) respectively expose class bias in the law courts over a stolen cigarette case and a bitter factory strike?",
+   "options": [
+    "'The Silver Box' and 'Strife'",
+    "'The Eldest Son' and 'The Mob'",
+    "'Joy' and 'The Little Dream'",
+    "'The Pigeon' and 'The Fugitive'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Galsworthy debuted with 'The Silver Box' in 1906 on unequal justice and staged 'Strife' in 1909 on capital-labour conflict."
+  },
+  {
+   "id": "ed-h-11",
+   "question": "In Arnold Bennett's 'Five Towns' novels, which five real Staffordshire Potteries towns are represented as Turnhill, Bursley, Hanbridge, Knype, and Longshaw?",
+   "options": [
+    "Sheffield, Leeds, Bradford, Halifax, and Wakefield",
+    "Derby, Nottingham, Leicester, Coventry, and Rugby",
+    "Preston, Bolton, Oldham, Rochdale, and Wigan",
+    "Tunstall, Burslem, Hanley, Stoke, and Longton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bennett's Five Towns correspond to Tunstall, Burslem, Hanley, Stoke, and Longton in Staffordshire, omitting Fenton."
+  },
+  {
+   "id": "ed-h-12",
+   "question": "In Arnold Bennett's 'The Old Wives' Tale' (1908), while Constance Baines stays in Bursley and marries Samuel Povey, what happens to her sister Sophia?",
+   "options": [
+    "She marries the wealthy solicitor Soames Forsyte and moves to a country estate at Robin Hill",
+    "She elopes with the commercial traveller Gerald Scales and survives the 1870–1871 Siege of Paris",
+    "She joins Emmeline Pankhurst's militant Suffragettes in London and is imprisoned in Holloway",
+    "She emigrates to Costaguana in South America to manage a British silver-mining concession"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sophia Baines elopes with Gerald Scales to Paris, is abandoned, and runs a respectable pension through the Siege of Paris and the Commune."
+  },
+  {
+   "id": "ed-h-13",
+   "question": "In H. G. Wells's 'Tono-Bungay' (1909), what radioactive substance does the narrator George Ponderevo steal from West Africa in a failed bid to save his uncle's empire?",
+   "options": [
+    "'Quap'",
+    "'Manna'",
+    "'Cavorite'",
+    "'Soma'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "George Ponderevo leads a doomed expedition to Mordet Island to steal radioactive quap before designing the naval destroyer X2."
+  },
+  {
+   "id": "ed-h-14",
+   "question": "In which 1911 political novel did H. G. Wells recount his quarrel with the Fabian Society and parody Sidney and Beatrice Webb as Oscar and Altiora Bailey?",
+   "options": [
+    "'In the Days of the Comet'",
+    "'The War in the Air'",
+    "'The World Set Free'",
+    "'The New Machiavelli'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wells's 1911 novel 'The New Machiavelli' satirizes the Fabian Society leaders Sidney and Beatrice Webb as the Baileys."
+  },
+  {
+   "id": "ed-h-15",
+   "question": "Which 1905 speculative work by H. G. Wells envisions a progressive world state administered by an ascetic, voluntary intellectual elite called the 'Samurai'?",
+   "options": [
+    "'Mankind in the Making'",
+    "'Anticipations'",
+    "'New Worlds for Old'",
+    "'A Modern Utopia'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Following 'Anticipations' in 1901 and 'Mankind in the Making' in 1903, Wells published 'A Modern Utopia' in 1905 featuring the Order of the Samurai."
+  },
+  {
+   "id": "ed-h-16",
+   "question": "In Joseph Conrad's 'Nostromo' (1904), who is the idealistic English owner of the San Tomé silver mine whose obsession with 'material interests' corrupts Sulaco?",
+   "options": [
+    "Axel Heyst",
+    "Adolf Verloc",
+    "Charles Gould",
+    "Peter Ivanovitch"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Charles Gould, known as the King of Sulaco, places his faith in the San Tomé silver mine, leading to Nostromo's moral corruption."
+  },
+  {
+   "id": "ed-h-17",
+   "question": "In Joseph Conrad's 'The Secret Agent' (1907), who actually carries and stumbles with the bomb in Greenwich Park, resulting in his own accidental death?",
+   "options": [
+    "The Professor, the nihilistic bomb-maker who wears explosives on his coat",
+    "Comrade Ossipon, the revolutionary pamphleteer who betrays Winnie",
+    "Stevie, the mentally disabled brother of Adolf Verloc's wife Winnie",
+    "Chief Inspector Heat, the London detective investigating foreign anarchists"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Agent provocateur Adolf Verloc uses his wife Winnie's innocent brother Stevie to carry the Greenwich bomb; when Stevie dies, Winnie kills Verloc."
+  },
+  {
+   "id": "ed-h-18",
+   "question": "Which 1911 political novel by Joseph Conrad follows the St. Petersburg student Razumov after he betrays the revolutionary assassin Victor Haldin?",
+   "options": [
+    "'Under Western Eyes'",
+    "'An Outcast of the Islands'",
+    "'The Mirror of the Sea'",
+    "'A Personal Record'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Conrad's 1911 novel 'Under Western Eyes', narrated by an elderly English teacher of languages in Geneva, examines Russian autocracy and guilt."
+  },
+  {
+   "id": "ed-h-19",
+   "question": "In E. M. Forster's 'Howards End' (1910), which three families represent liberal intellectual culture, imperial business pragmatism, and struggling clerkdom?",
+   "options": [
+    "The Honeychurches, the Emersons, and the Vyses",
+    "The Ponderevos, the Baineses, and the Forsytes",
+    "The Herritons, the Carellas, and the Abbotts",
+    "The Schlegels, the Wilcoxes, and the Basts"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Forster's 'Howards End' intertwines the cultured Schlegel sisters, the commercial Wilcoxes, and the impoverished clerk Leonard Bast."
+  },
+  {
+   "id": "ed-h-20",
+   "question": "Which 1907 novel by E. M. Forster—his personal favourite among his works—follows the lame Cambridge writer Rickie Elliot, Agnes Pembroke, and Stephen Wonham?",
+   "options": [
+    "'The Longest Journey'",
+    "'The Celestial Omnibus'",
+    "'Where Angels Fear to Tread'",
+    "'Arctic Summer'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'The Longest Journey' of 1907, Forster contrasts narrow Sawston conformity with imaginative truth and connection to the Wiltshire earth."
+  },
+  {
+   "id": "ed-h-21",
+   "question": "Which novel by E. M. Forster—written in 1913–1914 with a happy ending for its homosexual protagonist and Alec Scudder—was published posthumously in 1971?",
+   "options": [
+    "'Billy Budd'",
+    "'The Life to Come'",
+    "'Abinger Harvest'",
+    "'Maurice'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Forster wrote 'Maurice' in 1913–1914 after visiting Edward Carpenter, dedicating it 'To a Happier Year' for posthumous publication."
+  },
+  {
+   "id": "ed-h-22",
+   "question": "In Henry James's 'The Ambassadors' (1903), which middle-aged Massachusetts editor is sent to Paris by Mrs. Newsome to bring home her son Chad?",
+   "options": [
+    "Prince Amerigo",
+    "Adam Verver",
+    "Lambert Strether",
+    "Merton Densher"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In James's 'The Ambassadors', Lambert Strether travels from Woollett, Massachusetts, to Paris and urges Little Bilham to 'Live all you can'."
+  },
+  {
+   "id": "ed-h-23",
+   "question": "Which influential magazine was founded in December 1908 by Ford Madox Ford to publish a rejected Thomas Hardy poem and launched D. H. Lawrence and Wyndham Lewis?",
+   "options": [
+    "'The Criterion'",
+    "'The English Review'",
+    "'The Savoy'",
+    "'The Yellow Book'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Ford Madox Ford founded 'The English Review' in December 1908, opening with Hardy's 'A Sunday Morning Tragedy' and serializing Wells's 'Tono-Bungay'."
+  },
+  {
+   "id": "ed-h-24",
+   "question": "In Rudyard Kipling's 'Puck of Pook's Hill' (1906) and 'Rewards and Fairies' (1910), which two children summon Puck in a Sussex meadow on Midsummer Eve?",
+   "options": [
+    "Dan and Una",
+    "Wendy and Michael",
+    "Cyril and Anthea",
+    "Mowgli and Kim"
+   ],
+   "correct_option_id": 0,
+   "explanation": "By performing scenes from 'A Midsummer Night's Dream' three times on Midsummer Eve, Dan and Una summon Puck of Pook's Hill."
+  },
+  {
+   "id": "ed-h-25",
+   "question": "In G. K. Chesterton's 'The Man Who Was Thursday' (1908) and his 'Father Brown' tales (1911), who are the gigantic anarchist president and the reformed French thief?",
+   "options": [
+    "Friday; Inspector Bucket",
+    "Sunday; Hercule Flambeau",
+    "Saturday; Professor Moriarty",
+    "Monday; Aristide Valentin"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sunday is the enigmatic leader of the Central Anarchist Council in 'The Man Who Was Thursday', and Flambeau is Father Brown's reformed nemesis."
+  },
+  {
+   "id": "ed-h-26",
+   "question": "Which two companion books of cultural criticism and Christian apologetics did G. K. Chesterton publish in 1905 and 1908 respectively?",
+   "options": [
+    "'The Defendant' and 'The Napoleon of Notting Hill'",
+    "'The Flying Inn' and 'The Everlasting Man'",
+    "'Heretics' and 'Orthodoxy'",
+    "'Tremendous Trifles' and 'What's Wrong with the World'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Chesterton critiqued Shaw, Wells, and Kipling in 'Heretics' in 1905 and answered their challenge to state his own creed in 'Orthodoxy' in 1908."
+  },
+  {
+   "id": "ed-h-27",
+   "question": "What composite nickname did George Bernard Shaw coin in 1908 for G. K. Chesterton and Hilaire Belloc, who jointly championed 'Distributism'?",
+   "options": [
+    "'The Chesterbelloc'",
+    "'The Fleet Street Friars'",
+    "'The Edwardian Twins'",
+    "'The Bloomsberries'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Bernard Shaw coined the portmanteau name the Chesterbelloc to describe the four-legged polemical alliance of Chesterton and Hilaire Belloc."
+  },
+  {
+   "id": "ed-h-28",
+   "question": "In which 1902 adult novel by J. M. Barrie did the character of Peter Pan first appear in print, two years before the 1904 stage play?",
+   "options": [
+    "'The Little White Bird'",
+    "'Sentimental Tommy'",
+    "'A Window in Thrums'",
+    "'The Little Minister'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Peter Pan debuted in chapters of Barrie's 1902 novel 'The Little White Bird', later republished in 1906 as 'Peter Pan in Kensington Gardens'."
+  },
+  {
+   "id": "ed-h-29",
+   "question": "In J. M. Barrie's 1908 comedy 'What Every Woman Knows', which canny Scottish wife secretly writes the speeches that make her husband John Shand a political success?",
+   "options": [
+    "Wendy Darling",
+    "Lady Mary Lasenby",
+    "Maggie Wylie",
+    "Phoebe Throssel"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Barrie's 1908 play 'What Every Woman Knows', Maggie Wylie quietly supplies the wit and ideas behind her husband John Shand's rise."
+  },
+  {
+   "id": "ed-h-30",
+   "question": "In J. M. Synge's one-act tragedy 'Riders to the Sea' (1904), what is the name of the old Aran Islands mother who loses her last surviving son, Bartley, to the sea?",
+   "options": [
+    "Nora Burke",
+    "Deirdre",
+    "Maurya",
+    "Pegeen Mike"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 'Riders to the Sea', Maurya has already lost her husband and five sons to the sea before her last son, Bartley, is carried in drowned."
+  },
+  {
+   "id": "ed-h-31",
+   "question": "Who is the boasting protagonist of J. M. Synge's 'The Playboy of the Western World' (1907), whose premiere sparked nationalist riots at the Abbey Theatre?",
+   "options": [
+    "Shawn Keogh",
+    "Martin Doul",
+    "Christy Mahon",
+    "Dan Burke"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Christy Mahon wins Pegeen Mike's admiration in Mayo by claiming he killed his father Old Mahon with a loy, sparking the 1907 Abbey Theatre riots."
+  },
+  {
+   "id": "ed-h-32",
+   "question": "Which two Edwardian poetry collections by W. B. Yeats (1910 and 1914) marked his shift toward a harder modern idiom and included 'September 1913'?",
+   "options": [
+    "'The Green Helmet and Other Poems' and 'Responsibilities'",
+    "'The Wanderings of Oisin' and 'The Wind Among the Reeds'",
+    "'The Wild Swans at Coole' and 'Michael Robartes and the Dancer'",
+    "'The Tower' and 'The Winding Stair and Other Poems'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Britannica notes that Yeats's 'The Green Helmet' in 1910 and 'Responsibilities' in 1914 adopted a more concrete, colloquial poetic style."
+  },
+  {
+   "id": "ed-h-33",
+   "question": "In Thomas Hardy's Napoleonic verse drama 'The Dynasts' (1904–1908), what name is given to the blind, unconscious cosmic force driving human fate?",
+   "options": [
+    "The Immanent Will",
+    "The Creative Life Force",
+    "The Spirit of Irony",
+    "The Lord of the Years"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'The Dynasts', human history is controlled by the blind Immanent Will, watched from the Overworld by the Spirit of the Pities and Spirit of the Years."
+  },
+  {
+   "id": "ed-h-34",
+   "question": "In which 1914 collection did Thomas Hardy publish 'Poems of 1912–13', his celebrated sequence of elegies for his first wife Emma Lavinia Gifford?",
+   "options": [
+    "'Satires of Circumstance, Lyrics and Reveries'",
+    "'Moments of Vision and Miscellaneous Verses'",
+    "'Poems of the Past and the Present'",
+    "'Time's Laughingstocks and Other Verses'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "After Emma Gifford died in November 1912, Hardy wrote 'Poems of 1912–13' and published them in 'Satires of Circumstance' in 1914."
+  },
+  {
+   "id": "ed-h-35",
+   "question": "Which two famous poems of 1911 and 1912 were written by John Masefield (about the poacher Saul Kane's conversion) and Walter de la Mare ('Is there anybody there?')?",
+   "options": [
+    "'Sea-Fever' and 'Silver'",
+    "'The Everlasting Mercy' and 'The Listeners'",
+    "'Reynard the Fox' and 'Peacock Pie'",
+    "'Cargoes' and 'The Song of the Mad Prince'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Masefield's 'The Everlasting Mercy' in 1911 shocked readers with its vernacular realism, while de la Mare's 'The Listeners' in 1912 epitomized Georgian mystery."
+  },
+  {
+   "id": "ed-h-36",
+   "question": "Which two poems by Rupert Brooke (1912 and 1914) ask 'And is there honey still for tea?' and declare 'some corner of a foreign field / That is for ever England'?",
+   "options": [
+    "'Peace' and 'Safety'",
+    "'The Old Vicarage, Grantchester' and 'The Soldier'",
+    "'Dining-Room Tea' and 'Heaven'",
+    "'The Great Lover' and 'The Dead'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Rupert Brooke wrote 'The Old Vicarage, Grantchester' in Café des Westens in Berlin in 1912 and his war sonnet 'The Soldier' in late 1914."
+  },
+  {
+   "id": "ed-h-37",
+   "question": "What was the title of the pioneering 1914 anthology edited by Ezra Pound that included poems by H.D., Richard Aldington, F. S. Flint, Amy Lowell, and James Joyce?",
+   "options": [
+    "'Catholic Anthology'",
+    "'Ripostes'",
+    "'Some Imagist Poets'",
+    "'Des Imagistes: An Anthology'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ezra Pound edited the first Imagist anthology, 'Des Imagistes', published in 1914 in 'The Glebe' and by Harold Monro's Poetry Bookshop."
+  },
+  {
+   "id": "ed-h-38",
+   "question": "Which avant-garde magazine was launched in June 1914 by Wyndham Lewis and Ezra Pound as the manifesto of 'Vorticism'?",
+   "options": [
+    "'The Egoist'",
+    "'Rhythm'",
+    "'BLAST'",
+    "'The New Age'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Edited by Wyndham Lewis, the bright-pink journal 'BLAST: Review of the Great English Vortex' appeared in June 1914."
+  },
+  {
+   "id": "ed-h-39",
+   "question": "Which November 1910 London art exhibition organized by Roger Fry inspired Virginia Woolf's remark 'On or about December 1910 human character changed'?",
+   "options": [
+    "'The First International Surrealist Exhibition' at Burlington",
+    "'The Vorticist Exhibition' at the Doré Galleries",
+    "'The Pre-Raphaelite Retrospective' at the Tate Gallery",
+    "'Manet and the Post-Impressionists' at the Grafton Galleries"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Roger Fry's November 1910 exhibition 'Manet and the Post-Impressionists' at the Grafton Galleries introduced Cézanne, Van Gogh, and Matisse to London."
+  },
+  {
+   "id": "ed-h-40",
+   "question": "Which 1903 philosophical treatise by Cambridge philosopher G. E. Moore served as the foundational ethical manifesto of the Bloomsbury Group?",
+   "options": [
+    "'The Problems of Philosophy'",
+    "'Principia Ethica'",
+    "'Principia Mathematica'",
+    "'Tractatus Logico-Philosophicus'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "G. E. Moore's 'Principia Ethica' of 1903 celebrated personal friendship and aesthetic appreciation as the highest intrinsic goods."
+  },
+  {
+   "id": "ed-h-41",
+   "question": "In D. H. Lawrence's 'Sons and Lovers' (1913), which two characters represent the conflict between spiritual-intellectual love and sensual passion for Paul Morel?",
+   "options": [
+    "Ursula Brangwen and Gudrun Brangwen",
+    "Miriam Leivers and Clara Dawes",
+    "Constance Baines and Sophia Baines",
+    "Letchie Cyril and Helena Verden"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Sons and Lovers', Paul Morel is torn between his possessive mother Gertrude, the spiritual Miriam Leivers, and the married suffragette Clara Dawes."
+  },
+  {
+   "id": "ed-h-42",
+   "question": "In the concluding story 'The Dead' in James Joyce's 'Dubliners' (1914), who is the protagonist whose wife Gretta weeps for her dead young suitor Michael Furey?",
+   "options": [
+    "Stephen Dedalus",
+    "Leopold Bloom",
+    "Gabriel Conroy",
+    "Little Chandler"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Joyce's 'The Dead', Gabriel Conroy experiences a humbling epiphany in a Dublin hotel room as snow falls across Ireland."
+  },
+  {
+   "id": "ed-h-43",
+   "question": "In 'Shakespearean Tragedy' (1904), how did A. C. Bradley summarize the relationship between a tragic hero's inner nature and the catastrophic action?",
+   "options": [
+    "That plot alone matters in tragedy and character is merely decorative",
+    "That tragic heroes are passive victims of blind economic determinism",
+    "That action issues from character, so that 'character is destiny'",
+    "That Shakespearean tragedy strictly obeys Rymer's rule of poetic justice"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Bradley argued in 'Shakespearean Tragedy' that the catastrophe follows from the deeds of men and that character is destiny."
+  },
+  {
+   "id": "ed-h-44",
+   "question": "Which two landmark Edwardian genre works of 1904 and 1903 were written by Cambridge antiquarian M. R. James and espionage pioneer Erskine Childers?",
+   "options": [
+    "'Ghost Stories of an Antiquary' and 'The Riddle of the Sands'",
+    "'The Hill of Dreams' and 'Greenmantle'",
+    "'The House on the Borderland' and 'The Thirty-Nine Steps'",
+    "'The Empty House' and 'The Secret Sharer'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "M. R. James published 'Ghost Stories of an Antiquary' in 1904, and Erskine Childers published his German-invasion spy novel 'The Riddle of the Sands' in 1903."
+  },
+  {
+   "id": "ed-h-45",
+   "question": "Which monocled Old Etonian socialist dandy did P. G. Wodehouse introduce in 'Mike' (1909) and 'Psmith in the City' (1910), before creating Jeeves and Wooster?",
+   "options": [
+    "Clovis Sangrail",
+    "Reginald Jeeves",
+    "Ronald Eustace Psmith",
+    "Clarence Lord Emsworth"
+   ],
+   "correct_option_id": 2,
+   "explanation": "P. G. Wodehouse created the resourceful dandy Psmith in 'Mike' in 1909 and 'Psmith in the City' in 1910 during the Edwardian period."
+  },
+  {
+   "id": "ed-h-46",
+   "question": "Which classic working-class socialist novel by Robert Tressell (Robert Noonan), depicting house painters in 'Mugsborough', was published posthumously in April 1914?",
+   "options": [
+    "'A Man from the North'",
+    "'The Nether World'",
+    "'New Grub Street'",
+    "'The Ragged Trousered Philanthropists'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Tressell's 'The Ragged Trousered Philanthropists', featuring the socialist painter Frank Owen, appeared in April 1914."
+  },
+  {
+   "id": "ed-h-47",
+   "question": "Which newspaper magnate revolutionized Edwardian mass journalism via the 'Daily Mail', launched the 'Daily Mirror' in 1903, and bought 'The Times' in 1908?",
+   "options": [
+    "Max Aitken, Lord Beaverbrook",
+    "Alfred Harmsworth, Lord Northcliffe",
+    "C. P. Scott of the Manchester Guardian",
+    "A. R. Orage of The New Age"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Alfred Harmsworth, 1st Viscount Northcliffe, transformed the modern British press through the 'Daily Mail', 'Daily Mirror', and 'The Times'."
+  },
+  {
+   "id": "ed-h-48",
+   "question": "Which 1911 constitutional statute—passed after the House of Lords rejected David Lloyd George's 1909 'People's Budget'—removed the Lords' absolute veto?",
+   "options": [
+    "The National Insurance Act 1911",
+    "The Parliament Act 1911",
+    "The Education Act 1902",
+    "The Representation of the People Act 1918"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Parliament Act 1911 curtailed the power of the hereditary House of Lords, replacing its absolute veto with a two-year suspensory veto."
+  },
+  {
+   "id": "ed-h-49",
+   "question": "Why did George Bernard Shaw, John Galsworthy, J. M. Barrie, and Harley Granville-Barker testify before a Joint Select Committee of Parliament in 1909?",
+   "options": [
+    "To campaign against the founding of the Abbey Theatre by Yeats in Dublin",
+    "To demand the immediate closure of all London music halls and cinema houses",
+    "To oppose the awarding of the 1907 Nobel Prize in Literature to Rudyard Kipling",
+    "To protest pre-performance stage censorship by the Lord Chamberlain's Examiner of Plays"
+   ],
+   "correct_option_id": 3,
+   "explanation": "After the Examiner of Plays banned works such as Shaw's 'Blanco Posnet' and Barker's 'Waste', leading playwrights testified against stage censorship in 1909."
+  },
+  {
+   "id": "ed-h-50",
+   "question": "Which of the following statements regarding the literary and cultural history of the Edwardian Period (1901–1914) is NOT correct?",
+   "options": [
+    "Parliament abolished the Lord Chamberlain's stage censorship completely in 1909",
+    "Sir Edward Marsh published the first volume of the 'Georgian Poetry' series in 1912",
+    "Rudyard Kipling became the first English-language Nobel Literature laureate in 1907",
+    "Dublin's Abbey Theatre opened in December 1904 under W. B. Yeats and Lady Gregory"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Despite the 1909 committee protests by Shaw, Barker, and Galsworthy, the Lord Chamberlain's stage censorship remained in force until 1968."
+  }
+ ]
+}

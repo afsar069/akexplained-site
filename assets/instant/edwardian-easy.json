@@ -1,0 +1,608 @@
+{
+ "bankId": "edwardian",
+ "period": "Edwardian Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "ed-e-01",
+   "question": "The Edwardian Period began in January 1901 following the death of Queen Victoria and the accession of:",
+   "options": [
+    "King Edward VIII",
+    "King Edward VII",
+    "King Edward VI",
+    "King George V"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Queen Victoria died in January 1901 and was succeeded by her eldest son, King Edward VII, who reigned until May 1910."
+  },
+  {
+   "id": "ed-e-02",
+   "question": "Although King Edward VII died in 1910, the Edwardian literary period is conventionally extended until the outbreak of:",
+   "options": [
+    "The General Strike in May 1926",
+    "The Second Boer War in October 1899",
+    "The Irish Civil War in June 1922",
+    "The First World War in August 1914"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Literary historians conventionally extend the Edwardian era from 1901 to the outbreak of World War I in August 1914."
+  },
+  {
+   "id": "ed-e-03",
+   "question": "Which trio of prominent novelists epitomized Edwardian social realism and the critique of English class and material life?",
+   "options": [
+    "Charles Dickens, William Thackeray, and Anthony Trollope",
+    "Aldous Huxley, Evelyn Waugh, and Graham Greene",
+    "Kingsley Amis, John Wain, and Alan Sillitoe",
+    "H. G. Wells, Arnold Bennett, and John Galsworthy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wells, Bennett, and Galsworthy were the three leading Edwardian realist novelists examining English social institutions."
+  },
+  {
+   "id": "ed-e-04",
+   "question": "Which Irish-born dramatist and Fabian Socialist turned the Edwardian stage into an arena for debating social and moral issues?",
+   "options": [
+    "Oscar Wilde",
+    "Arthur Wing Pinero",
+    "Noel Coward",
+    "George Bernard Shaw"
+   ],
+   "correct_option_id": 3,
+   "explanation": "George Bernard Shaw dominated the Edwardian theatre with witty plays of ideas inspired by Henrik Ibsen and Fabian socialism."
+  },
+  {
+   "id": "ed-e-05",
+   "question": "Which 1903 four-act philosophical comedy by George Bernard Shaw includes the famous third-act dream sequence 'Don Juan in Hell'?",
+   "options": [
+    "'Man and Superman'",
+    "'Candida'",
+    "'Arms and the Man'",
+    "'Mrs. Warren's Profession'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Shaw published 'Man and Superman' in 1903, dramatizing his philosophy of the creative Life Force and Don Juan in Hell."
+  },
+  {
+   "id": "ed-e-06",
+   "question": "In George Bernard Shaw's play 'Major Barbara' (1905), the idealistic heroine Barbara Undershaft serves as an officer in:",
+   "options": [
+    "The British Red Cross",
+    "The Salvation Army",
+    "The Fabian Society",
+    "The Women's Franchise League"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Shaw's 1905 comedy 'Major Barbara', Barbara is a major in the Salvation Army whose father manufactures munitions."
+  },
+  {
+   "id": "ed-e-07",
+   "question": "In George Bernard Shaw's comedy 'Pygmalion' (1912–1914), who is the Cockney flower girl trained in phonetics by Henry Higgins?",
+   "options": [
+    "Ann Whitefield",
+    "Jennifer Dubedat",
+    "Eliza Doolittle",
+    "Barbara Undershaft"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Shaw's 'Pygmalion', phonetics professor Henry Higgins bets he can pass off Cockney flower girl Eliza Doolittle as a duchess."
+  },
+  {
+   "id": "ed-e-08",
+   "question": "Which Edwardian novelist and dramatist began his famous 'Forsyte Saga' family chronicle with 'The Man of Property' in 1906?",
+   "options": [
+    "E. M. Forster",
+    "John Galsworthy",
+    "Arnold Bennett",
+    "H. G. Wells"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Galsworthy published 'The Man of Property' in 1906 as the opening novel of 'The Forsyte Saga'."
+  },
+  {
+   "id": "ed-e-09",
+   "question": "In John Galsworthy's 'The Man of Property' (1906), which possessive solicitor is the central 'man of property' of the Forsyte clan?",
+   "options": [
+    "Edwin Clayhanger",
+    "Soames Forsyte",
+    "Henry Wilcox",
+    "Jolyon Forsyte"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Soames Forsyte embodies upper-middle-class possessiveness, treating both art and his wife Irene as personal property."
+  },
+  {
+   "id": "ed-e-10",
+   "question": "Which 1910 naturalistic tragedy by John Galsworthy exposed the cruelty of solitary confinement and prompted British prison reform?",
+   "options": [
+    "'Justice'",
+    "'Loyalties'",
+    "'Escape'",
+    "'The Skin Game'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Galsworthy's 1910 play 'Justice' depicted the destruction of clerk William Falder in prison, moving Winston Churchill to reform solitary confinement."
+  },
+  {
+   "id": "ed-e-11",
+   "question": "Which Edwardian novelist set his major realist fiction, including 'Anna of the Five Towns' (1902), in the Staffordshire Potteries?",
+   "options": [
+    "John Galsworthy",
+    "Rudyard Kipling",
+    "Joseph Conrad",
+    "Arnold Bennett"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Arnold Bennett, born in Hanley, Staffordshire, set his major realist novels in the industrial Potteries district known as the Five Towns."
+  },
+  {
+   "id": "ed-e-12",
+   "question": "Which 1908 masterpiece by Arnold Bennett chronicles the contrasting lives of two sisters, Constance and Sophia Baines?",
+   "options": [
+    "'Buried Alive'",
+    "'The Old Wives' Tale'",
+    "'The Grand Babylon Hotel'",
+    "'Riceyman Steps'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Bennett's 1908 novel 'The Old Wives' Tale' traces sisters Constance and Sophia Baines from youth in Bursley to old age."
+  },
+  {
+   "id": "ed-e-13",
+   "question": "Which 1910 novel by Arnold Bennett opened his acclaimed trilogy set in the Five Towns about a printer's son and Hilda Lessways?",
+   "options": [
+    "'Clayhanger'",
+    "'Howards End'",
+    "'Kipps'",
+    "'Nostromo'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Bennett published 'Clayhanger' in 1910, followed by 'Hilda Lessways' in 1911 and 'These Twain' in 1916."
+  },
+  {
+   "id": "ed-e-14",
+   "question": "Which 1909 novel by H. G. Wells satirizes Edwardian commercialism through the rise and fall of a fraudulent patent medicine?",
+   "options": [
+    "'The Time Machine'",
+    "'The War of the Worlds'",
+    "'The Invisible Man'",
+    "'Tono-Bungay'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wells's 1909 realist novel 'Tono-Bungay' critiques unregulated capitalism through Uncle Edward Ponderevo's quack tonic empire."
+  },
+  {
+   "id": "ed-e-15",
+   "question": "Which two Edwardian comic novels by H. G. Wells (1905 and 1910) sympathetically portray frustrated lower-middle-class shopmen?",
+   "options": [
+    "'The Island of Doctor Moreau' and 'The Sea Lady'",
+    "'The First Men in the Moon' and 'The Sleeper Awakes'",
+    "'Boon' and 'Mr. Britling Sees It Through'",
+    "'Kipps' and 'The History of Mr. Polly'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Wells drew on his own early drapery apprenticeship for his comic social novels 'Kipps' in 1905 and 'The History of Mr. Polly' in 1910."
+  },
+  {
+   "id": "ed-e-16",
+   "question": "Which 1909 feminist novel by H. G. Wells depicts a rebellious young woman who leaves her suburban father's home to study biology?",
+   "options": [
+    "'Marriage'",
+    "'The Wife of Sir Isaac Harman'",
+    "'Ann Veronica'",
+    "'Love and Mr. Lewisham'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Wells's 1909 novel 'Ann Veronica' caused a sensation for portraying an independent New Woman and suffragette."
+  },
+  {
+   "id": "ed-e-17",
+   "question": "Which Polish-born merchant mariner (born Józef Teodor Konrad Korzeniowski) became a preeminent Edwardian and early Modernist novelist?",
+   "options": [
+    "Henry James",
+    "Ford Madox Ford",
+    "Joseph Conrad",
+    "Hilaire Belloc"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Joseph Conrad, born in Polish Ukraine, learned English as his third language and wrote masterpieces of early 20th-century fiction."
+  },
+  {
+   "id": "ed-e-18",
+   "question": "In Joseph Conrad's novella 'Heart of Darkness' (published in book form in 1902), what are the famous final words of Mr. Kurtz?",
+   "options": [
+    "'The horror! The horror!'",
+    "'Exterminate all the imperialists!'",
+    "'Mistah Kurtz—he lives forever!'",
+    "'Only connect the prose and the passion!'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Conrad's 'Heart of Darkness', narrated by Marlow along the Congo River, the dying ivory agent Kurtz cries The horror! The horror!"
+  },
+  {
+   "id": "ed-e-19",
+   "question": "Which 1904 political novel by Joseph Conrad is set in the fictional South American republic of Costaguana and centres on a silver mine?",
+   "options": [
+    "'Lord Jim'",
+    "'Victory'",
+    "'Almayer's Folly'",
+    "'Nostromo'"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Conrad's 1904 novel 'Nostromo: A Tale of the Seaboard' examines imperialism and corruption around the San Tomé silver mine."
+  },
+  {
+   "id": "ed-e-20",
+   "question": "Which 1907 novel by Joseph Conrad deals with anarchists, double agents, and an attempted bombing of the Greenwich Observatory?",
+   "options": [
+    "'The Secret Agent'",
+    "'The Shadow-Line'",
+    "'Typhoon'",
+    "'The Nigger of the Narcissus'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Conrad's 1907 ironic masterpiece 'The Secret Agent' is set in London's underworld of espionage and political extremism."
+  },
+  {
+   "id": "ed-e-21",
+   "question": "Which Edwardian novelist critiqued English middle-class emotional repression in 'Where Angels Fear to Tread' (1905) and 'A Room with a View' (1908)?",
+   "options": [
+    "D. H. Lawrence",
+    "G. K. Chesterton",
+    "Saki",
+    "E. M. Forster"
+   ],
+   "correct_option_id": 3,
+   "explanation": "E. M. Forster contrasted restrictive English suburban norms with Italian spontaneity in his 1905 and 1908 novels."
+  },
+  {
+   "id": "ed-e-22",
+   "question": "Which 1910 novel by E. M. Forster examines class and culture in Edwardian England under the famous epigraph 'Only connect...'?",
+   "options": [
+    "'The Longest Journey'",
+    "'Maurice'",
+    "'Howards End'",
+    "'A Passage to India'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Forster's 1910 masterpiece 'Howards End' carries the epigraph Only connect, exploring the Schlegel, Wilcox, and Bast families."
+  },
+  {
+   "id": "ed-e-23",
+   "question": "In E. M. Forster's 'A Room with a View' (1908), which young heroine rejects the pretentious Cecil Vyse to marry George Emerson?",
+   "options": [
+    "Lilia Herriton",
+    "Lucy Honeychurch",
+    "Adela Quested",
+    "Margaret Schlegel"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Forster's 'A Room with a View', Lucy Honeychurch awakens to passion in Florence and marries George Emerson."
+  },
+  {
+   "id": "ed-e-24",
+   "question": "Which author became the first English-language writer to receive the Nobel Prize in Literature in 1907?",
+   "options": [
+    "Rudyard Kipling",
+    "Thomas Hardy",
+    "John Galsworthy",
+    "W. B. Yeats"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Rudyard Kipling was awarded the Nobel Prize in Literature in 1907, becoming the first British recipient of the honour."
+  },
+  {
+   "id": "ed-e-25",
+   "question": "Which 1901 picaresque novel by Rudyard Kipling follows the orphaned Irish boy Kimball O'Hara and a Tibetan Lama across India?",
+   "options": [
+    "'Stalky & Co.'",
+    "'Kim'",
+    "'The Light That Failed'",
+    "'Captains Courageous'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Kipling published 'Kim' in 1901, depicting Kim's spiritual bond with the Teshoo Lama and espionage in the Great Game."
+  },
+  {
+   "id": "ed-e-26",
+   "question": "Which 1902 children's book by Rudyard Kipling tells playful origin stories such as 'How the Camel Got His Hump'?",
+   "options": [
+    "'The Jungle Book'",
+    "'Plain Tales from the Hills'",
+    "'Just So Stories'",
+    "'Barrack-Room Ballads'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Kipling published 'Just So Stories for Little Children' in 1902, illustrated by himself."
+  },
+  {
+   "id": "ed-e-27",
+   "question": "Which famous poem by Rudyard Kipling, published in 'Rewards and Fairies' (1910), outlines stoic virtues and ends 'you'll be a Man, my son!'?",
+   "options": [
+    "'If—'",
+    "'Mandalay'",
+    "'Gunga Din'",
+    "'Recessional'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Kipling's poem 'If—', inspired by Leander Starr Jameson, appeared in 'Rewards and Fairies' in 1910."
+  },
+  {
+   "id": "ed-e-28",
+   "question": "Which Edwardian writer created the intuitive Roman Catholic priest-detective Father Brown in 'The Innocence of Father Brown' (1911)?",
+   "options": [
+    "G. K. Chesterton",
+    "Arthur Conan Doyle",
+    "M. R. James",
+    "Erskine Childers"
+   ],
+   "correct_option_id": 0,
+   "explanation": "G. K. Chesterton introduced his priest-sleuth Father Brown in 'The Innocence of Father Brown' in 1911, followed by 'The Wisdom of Father Brown' in 1914."
+  },
+  {
+   "id": "ed-e-29",
+   "question": "Who authored the 1908 metaphysical thriller 'The Man Who Was Thursday: A Nightmare', featuring the poet Gabriel Syme?",
+   "options": [
+    "P. G. Wodehouse",
+    "Ford Madox Ford",
+    "G. K. Chesterton",
+    "Hilaire Belloc"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Chesterton published 'The Man Who Was Thursday: A Nightmare' in 1908, allegorizing philosophical anarchy and cosmic order."
+  },
+  {
+   "id": "ed-e-30",
+   "question": "Which Scottish dramatist wrote 'Peter Pan; or, The Boy Who Wouldn't Grow Up', first performed in London in December 1904?",
+   "options": [
+    "John Millington Synge",
+    "A. A. Milne",
+    "J. M. Barrie",
+    "Kenneth Grahame"
+   ],
+   "correct_option_id": 2,
+   "explanation": "J. M. Barrie's play 'Peter Pan', inspired by the Llewellyn Davies boys, premiered in London on 27 December 1904."
+  },
+  {
+   "id": "ed-e-31",
+   "question": "In J. M. Barrie's 'Peter Pan' (1904), what is the name of the fantastical island home of Peter Pan, the Lost Boys, and Captain Hook?",
+   "options": [
+    "Treasure Island",
+    "Utopia",
+    "Neverland",
+    "Laputa"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Barrie's 'Peter Pan', Wendy, John, and Michael Darling fly with Peter Pan and Tinker Bell to Neverland."
+  },
+  {
+   "id": "ed-e-32",
+   "question": "Which 1902 comic play by J. M. Barrie satirizes the British class system when a butler becomes leader of his shipwrecked employers?",
+   "options": [
+    "'The Admirable Crichton'",
+    "'Quality Street'",
+    "'The Twelve-Pound Look'",
+    "'Dear Brutus'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Barrie's 1902 comedy 'The Admirable Crichton', Lord Loam's butler Crichton becomes the natural ruler on a desert island."
+  },
+  {
+   "id": "ed-e-33",
+   "question": "Which 1908 children's classic by Kenneth Grahame chronicles the riverbank adventures of Mole, Water Rat, Badger, and Mr. Toad?",
+   "options": [
+    "'The Wind in the Willows'",
+    "'The Golden Age'",
+    "'Dream Days'",
+    "'The Tale of Squirrel Nutkin'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Kenneth Grahame published 'The Wind in the Willows' in 1908 upon retiring from the Bank of England."
+  },
+  {
+   "id": "ed-e-34",
+   "question": "Who wrote and illustrated the classic children's picture book 'The Tale of Peter Rabbit', commercially published by Frederick Warne in 1902?",
+   "options": [
+    "Beatrix Potter",
+    "Eleanor Farjeon",
+    "Edith Nesbit",
+    "Frances Hodgson Burnett"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Beatrix Potter published 'The Tale of Peter Rabbit' in 1902, launching her celebrated series of children's tales."
+  },
+  {
+   "id": "ed-e-35",
+   "question": "Which Edwardian author of children's literature wrote 'Five Children and It' (1902) and 'The Railway Children' (1906)?",
+   "options": [
+    "Richmal Crompton",
+    "E. Nesbit",
+    "Kenneth Grahame",
+    "Beatrix Potter"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Edith Nesbit, a co-founder of the Fabian Society, wrote the Edwardian children's classics 'Five Children and It' and 'The Railway Children'."
+  },
+  {
+   "id": "ed-e-36",
+   "question": "Which 1902 detective novel by Sir Arthur Conan Doyle features Sherlock Holmes investigating a diabolical family curse on Dartmoor?",
+   "options": [
+    "'The Sign of the Four'",
+    "'The Hound of the Baskervilles'",
+    "'The Lost World'",
+    "'A Study in Scarlet'"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Conan Doyle serialized and published 'The Hound of the Baskervilles' in 1901–1902, reviving Sherlock Holmes before 'The Return of Sherlock Holmes' in 1905."
+  },
+  {
+   "id": "ed-e-37",
+   "question": "Which national theatre was opened in Dublin in December 1904 by W. B. Yeats and Lady Gregory as the home of the Irish Literary Revival?",
+   "options": [
+    "The Gaiety Theatre",
+    "The Savoy Theatre",
+    "The Royal Court Theatre",
+    "The Abbey Theatre"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Founded by W. B. Yeats and Lady Gregory with Annie Horniman's backing, Dublin's Abbey Theatre opened on 27 December 1904."
+  },
+  {
+   "id": "ed-e-38",
+   "question": "Which Irish dramatist wrote the one-act Aran Islands tragedy 'Riders to the Sea' (1904) and 'The Playboy of the Western World' (1907)?",
+   "options": [
+    "Lennox Robinson",
+    "Sean O'Casey",
+    "John Millington Synge",
+    "Padraic Colum"
+   ],
+   "correct_option_id": 2,
+   "explanation": "J. M. Synge served as co-director of the Abbey Theatre and wrote 'Riders to the Sea' and 'The Playboy of the Western World'."
+  },
+  {
+   "id": "ed-e-39",
+   "question": "Which author published the monumental three-part Napoleonic epic verse drama 'The Dynasts' between 1904 and 1908?",
+   "options": [
+    "Robert Bridges",
+    "Alfred Austin",
+    "A. E. Housman",
+    "Thomas Hardy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Having abandoned novel-writing after 'Jude the Obscure', Thomas Hardy published his epic drama 'The Dynasts' in 1904, 1906, and 1908."
+  },
+  {
+   "id": "ed-e-40",
+   "question": "Which scholar published the influential 1904 critical volume 'Shakespearean Tragedy', analyzing 'Hamlet', 'Othello', 'King Lear', and 'Macbeth'?",
+   "options": [
+    "I. A. Richards",
+    "A. C. Bradley",
+    "F. R. Leavis",
+    "William Empson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "A. C. Bradley's 'Shakespearean Tragedy' of 1904 is the most famous work of Edwardian Shakespeare criticism."
+  },
+  {
+   "id": "ed-e-41",
+   "question": "Which poet published his debut collection 'Salt-Water Ballads' in 1902, including the famous poem 'Sea-Fever'?",
+   "options": [
+    "Rupert Brooke",
+    "John Masefield",
+    "Edward Thomas",
+    "Walter de la Mare"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Masefield drew on his merchant-marine youth for 'Salt-Water Ballads' in 1902 and later became Poet Laureate in 1930."
+  },
+  {
+   "id": "ed-e-42",
+   "question": "What title was given to the popular series of poetry anthologies edited by Sir Edward Marsh beginning in 1912?",
+   "options": [
+    "'Des Imagistes'",
+    "'Wheels'",
+    "'Georgian Poetry'",
+    "'Wessex Poems'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Edward Marsh and Rupert Brooke launched 'Georgian Poetry' in 1912 to mark the new reign of King George V."
+  },
+  {
+   "id": "ed-e-43",
+   "question": "Which Anglo-American poetic movement, launched around 1912 by Ezra Pound, H.D., and Richard Aldington, championed clear, hard visual images?",
+   "options": [
+    "Surrealism",
+    "Dadaism",
+    "Imagism",
+    "Symbolism"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Imagism rejected Victorian sentimentality in favour of free-verse cadence, economy of language, and concrete imagery."
+  },
+  {
+   "id": "ed-e-44",
+   "question": "Which semi-autobiographical 1913 novel by D. H. Lawrence portrays Paul Morel and his working-class coal-mining family in Nottinghamshire?",
+   "options": [
+    "'Sons and Lovers'",
+    "'The Plumed Serpent'",
+    "'Kangaroo'",
+    "'Aaron's Rod'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "D. H. Lawrence published his breakthrough autobiographical novel 'Sons and Lovers' in 1913."
+  },
+  {
+   "id": "ed-e-45",
+   "question": "Which landmark collection of fifteen short stories by James Joyce, depicting the 'paralysis' of Irish urban life, was published in June 1914?",
+   "options": [
+    "'Exiles'",
+    "'Chamber Music'",
+    "'Dubliners'",
+    "'Finnegans Wake'"
+   ],
+   "correct_option_id": 2,
+   "explanation": "James Joyce published 'Dubliners' in June 1914, culminating in the novella-length story 'The Dead'."
+  },
+  {
+   "id": "ed-e-46",
+   "question": "Which American-born expatriate novelist published 'The Wings of the Dove' (1902), 'The Ambassadors' (1903), and 'The Golden Bowl' (1904)?",
+   "options": [
+    "Stephen Crane",
+    "Edith Wharton",
+    "Jack London",
+    "Henry James"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Henry James lived in England and crowned his career with his three great late novels between 1902 and 1904."
+  },
+  {
+   "id": "ed-e-47",
+   "question": "Under which pen name did Hector Hugh Munro (1870–1916) write his satirical Edwardian short-story collections 'Reginald' (1904) and 'Beasts and Super-Beasts' (1914)?",
+   "options": [
+    "Elia",
+    "Saki",
+    "Orwell",
+    "Q"
+   ],
+   "correct_option_id": 1,
+   "explanation": "H. H. Munro used the pen name Saki, borrowed from the cupbearer in the 'Rubaiyat of Omar Khayyam', for his witty Edwardian tales."
+  },
+  {
+   "id": "ed-e-48",
+   "question": "Which circle of writers, critics, and artists—including Virginia Stephen (Woolf), Lytton Strachey, and E. M. Forster—formed in London around 1905?",
+   "options": [
+    "The Auden Generation",
+    "The Bloomsbury Group",
+    "The Inklings",
+    "The Rhymers' Club"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Bloomsbury Group met in the Bloomsbury district of London from about 1905, championing aesthetic freedom and modernism."
+  },
+  {
+   "id": "ed-e-49",
+   "question": "Which militant women's suffrage organization was founded in 1903 by Emmeline Pankhurst under the motto 'Deeds, not words'?",
+   "options": [
+    "The Independent Labour Party",
+    "The Fabian Socialist Society",
+    "The Primrose Conservative League",
+    "The Women's Social and Political Union"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Emmeline Pankhurst founded the WSPU in 1903, leading the militant Edwardian Suffragette campaign for women's voting rights."
+  },
+  {
+   "id": "ed-e-50",
+   "question": "Which April 1912 maritime disaster inspired Thomas Hardy's famous philosophical poem 'The Convergence of the Twain'?",
+   "options": [
+    "The sinking of the RMS Titanic",
+    "The mutiny on the HMS Bounty",
+    "The torpedoing of the RMS Lusitania",
+    "The wreck of the Deutschland"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Hardy wrote 'The Convergence of the Twain: Lines on the Loss of the Titanic' after the liner sank on 15 April 1912."
+  }
+ ]
+}
