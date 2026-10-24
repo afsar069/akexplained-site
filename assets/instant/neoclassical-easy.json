@@ -1,0 +1,608 @@
+{
+ "bankId": "neoclassical",
+ "period": "Neoclassical Period",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "nc-e-01",
+   "question": "Into which three chronological sub-periods is the Neoclassical Period (1660–1785) traditionally divided?",
+   "options": [
+    "The Puritan Interregnum, the Age of Reason, and the Victorian Era",
+    "The Restoration Age, the Augustan Age, and the Age of Sensibility",
+    "The Elizabethan, Jacobean, and Caroline Ages",
+    "The Early Tudor, the Commonwealth, and the Pre-Raphaelite Ages"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Neoclassical era spans the Restoration 1660-1700, Augustan Age 1700-1745, and Age of Sensibility 1745-1785."
+  },
+  {
+   "id": "nc-e-02",
+   "question": "Which historical event of May 1660 marks the formal opening of the Neoclassical Period in English literature?",
+   "options": [
+    "The union of the English and Scottish parliaments",
+    "The signing of the Treaty of Utrecht",
+    "The passage of the Bill of Rights by Parliament",
+    "The Restoration of King Charles II to the English throne"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The return of Charles II from continental exile in May 1660 inaugurated the Restoration and Neoclassical era."
+  },
+  {
+   "id": "nc-e-03",
+   "question": "Which two theatrical patent companies were chartered by King Charles II in 1660 upon the reopening of the London playhouses?",
+   "options": [
+    "The Lord Chamberlain's Men and the Admiral's Men",
+    "The Queen's Men and the Prince's Troupe",
+    "The Globe Players and the Blackfriars Company",
+    "The King's Company and the Duke's Company"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Charles II granted royal monopolies to Thomas Killigrew King Company and William Davenant Duke Company."
+  },
+  {
+   "id": "nc-e-04",
+   "question": "Which scientific institution, chartered by King Charles II in 1662, promoted plain, clear, and unadorned English prose?",
+   "options": [
+    "The Royal Academy of Arts",
+    "The Society of Antiquaries",
+    "The British Association for Science",
+    "The Royal Society of London"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Royal Society advocated a close naked natural way of speaking rejecting ornate rhetoric."
+  },
+  {
+   "id": "nc-e-05",
+   "question": "Which Restoration naval administrator kept a famous secret shorthand diary from 1660 to 1669, recording the Great Plague and Great Fire?",
+   "options": [
+    "Samuel Pepys",
+    "Gilbert Burnet",
+    "John Evelyn",
+    "Anthony Wood"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Samuel Pepys kept his celebrated diary from 1660 to 1669 offering vivid eyewitness accounts of London life."
+  },
+  {
+   "id": "nc-e-06",
+   "question": "In which year was the first edition of John Milton's blank-verse epic poem 'Paradise Lost' published in ten books?",
+   "options": [
+    "1671",
+    "1667",
+    "1660",
+    "1674"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Paradise Lost was first published in ten books in 1667 and later redivided into twelve books in 1674."
+  },
+  {
+   "id": "nc-e-07",
+   "question": "Which 1678 Christian allegory by John Bunyan narrates the spiritual journey of Christian from the City of Destruction to the Celestial City?",
+   "options": [
+    "The Life and Death of Mr. Badman",
+    "The Holy War",
+    "The Pilgrim's Progress",
+    "Grace Abounding to the Chief of Sinners"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Bunyan published Part I of The Pilgrim Progress in 1678 while Part II concerning Christiana appeared in 1684."
+  },
+  {
+   "id": "nc-e-08",
+   "question": "Which mock-heroic poem in octosyllabic couplets was published by Samuel Butler beginning in 1663 to ridicule Puritan fanaticism?",
+   "options": [
+    "The Splendid Shilling",
+    "Hudibras",
+    "Mac Flecknoe",
+    "The Dispensary"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Samuel Butler published Hudibras in three parts in 1663, 1664, and 1678 mocking Presbyterian knights."
+  },
+  {
+   "id": "nc-e-09",
+   "question": "Who was appointed the very first official Poet Laureate of England by royal letters patent in 1668?",
+   "options": [
+    "Nahum Tate",
+    "John Dryden",
+    "Nicholas Rowe",
+    "Thomas Shadwell"
+   ],
+   "correct_option_id": 1,
+   "explanation": "John Dryden received the formal title of Poet Laureate in 1668 and Historiographer Royal in 1670."
+  },
+  {
+   "id": "nc-e-10",
+   "question": "Which 1681 biblical allegory in heroic couplets did John Dryden write during the Exclusion Crisis to satirize the Earl of Shaftesbury?",
+   "options": [
+    "Absalom and Achitophel",
+    "The Medal",
+    "Annus Mirabilis",
+    "Religio Laici"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Absalom and Achitophel uses King David rebellion story to allegorize King Charles II and Monmouth."
+  },
+  {
+   "id": "nc-e-11",
+   "question": "Which Whig dramatist is crowned the successor to the realm of Nonsense in John Dryden's mock-heroic satire 'Mac Flecknoe' (1682)?",
+   "options": [
+    "Elkanah Settle",
+    "Thomas Otway",
+    "Colley Cibber",
+    "Thomas Shadwell"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dryden lampoons his rival Thomas Shadwell as the dull heir to the Irish poetaster Richard Flecknoe."
+  },
+  {
+   "id": "nc-e-12",
+   "question": "John Dryden's 1677 blank-verse tragedy 'All for Love; or, The World Well Lost' is a neoclassical adaptation of which Shakespearean play?",
+   "options": [
+    "Troilus and Cressida",
+    "Antony and Cleopatra",
+    "Coriolanus",
+    "Julius Caesar"
+   ],
+   "correct_option_id": 1,
+   "explanation": "All for Love adapts Antony and Cleopatra to observe the neoclassical unities of time place and action."
+  },
+  {
+   "id": "nc-e-13",
+   "question": "Which 1668 critical treatise by John Dryden takes the form of a conversation on a barge among four speakers debating dramatic art?",
+   "options": [
+    "An Essay of Dramatick Poesie",
+    "A Discourse Concerning Satire",
+    "Preface to the Fables",
+    "Of Heroique Plays"
+   ],
+   "correct_option_id": 0,
+   "explanation": "An Essay of Dramatick Poesie stages a critical debate on the Thames during the 1665 naval battle with the Dutch."
+  },
+  {
+   "id": "nc-e-14",
+   "question": "Which pioneering female professional writer authored the 1688 prose work 'Oroonoko: or, the Royal Slave'?",
+   "options": [
+    "Delarivier Manley",
+    "Eliza Haywood",
+    "Susanna Centlivre",
+    "Aphra Behn"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Aphra Behn published Oroonoko in 1688 recounting the tragic fate of an enslaved African prince in Surinam."
+  },
+  {
+   "id": "nc-e-15",
+   "question": "Who authored the sharp Restoration comedy of manners 'The Country Wife' (1675), featuring the notorious rake Harry Horner?",
+   "options": [
+    "Sir John Vanbrugh",
+    "Sir George Etherege",
+    "George Farquhar",
+    "William Wycherley"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Wycherley wrote The Country Wife in 1675 satirizing London hypocrisy jealousy and marriage."
+  },
+  {
+   "id": "nc-e-16",
+   "question": "Which 1700 comedy of manners by William Congreve features the celebrated Proviso Scene between the witty lovers Mirabell and Millamant?",
+   "options": [
+    "Love for Love",
+    "The Old Bachelor",
+    "The Way of the World",
+    "The Double-Dealer"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Act IV of Congreve The Way of the World Mirabell and Millamant negotiate their marriage conditions."
+  },
+  {
+   "id": "nc-e-17",
+   "question": "Which 1698 polemical pamphlet by the clergyman Jeremy Collier fiercely attacked the profaneness and immorality of the Restoration stage?",
+   "options": [
+    "Histriomastix",
+    "The School of Abuse",
+    "A Short View of the Immorality and Profaneness of the English Stage",
+    "The Stage Condemned"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Jeremy Collier 1698 treatise targeted Congreve Vanbrugh and Dryden accelerating a shift toward moral drama."
+  },
+  {
+   "id": "nc-e-18",
+   "question": "Which landmark philosophical work published by John Locke in December 1689 described the human mind at birth as a blank slate?",
+   "options": [
+    "An Essay Concerning Human Understanding",
+    "Some Thoughts Concerning Education",
+    "A Letter Concerning Toleration",
+    "Two Treatises of Government"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Locke argued against innate ideas in An Essay Concerning Human Understanding founding British empiricism."
+  },
+  {
+   "id": "nc-e-19",
+   "question": "Which two writers collaborated on the influential early eighteenth-century periodicals 'The Tatler' (1709) and 'The Spectator' (1711)?",
+   "options": [
+    "Jonathan Swift and Alexander Pope",
+    "Daniel Defoe and John Arbuthnot",
+    "Samuel Johnson and James Boswell",
+    "Richard Steele and Joseph Addison"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Steele started The Tatler in 1709 and teamed with Addison to launch the daily paper The Spectator in 1711."
+  },
+  {
+   "id": "nc-e-20",
+   "question": "What is the name of the amiable Tory country squire from Worcestershire who serves as a central figure in 'The Spectator' Club?",
+   "options": [
+    "Sir Roger de Coverley",
+    "Squire Western",
+    "Sir Epicure Mammon",
+    "Sir Charles Grandison"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sir Roger de Coverley was introduced by Steele and developed by Addison as an affectionate portrait of a squire."
+  },
+  {
+   "id": "nc-e-21",
+   "question": "In which 1711 didactic poem by Alexander Pope do the famous lines 'To err is human; to forgive, divine' and 'A little learning is a dangerous thing' appear?",
+   "options": [
+    "An Essay on Man",
+    "Moral Essays",
+    "Windsor-Forest",
+    "An Essay on Criticism"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Pope published An Essay on Criticism in 1711 summarizing neoclassical critical rules in heroic couplets."
+  },
+  {
+   "id": "nc-e-22",
+   "question": "Who is the fashionable heroine whose lock of hair is severed by the Baron in Alexander Pope's mock-epic 'The Rape of the Lock'?",
+   "options": [
+    "Clarissa",
+    "Caelia",
+    "Belinda",
+    "Thalestris"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Belinda modeled on Arabella Fermor has her curl cut off at Hampton Court by the Baron Lord Petre."
+  },
+  {
+   "id": "nc-e-23",
+   "question": "Which satirical mock-epic by Alexander Pope celebrates the empire of the goddess Dulness and her chosen King of Dunces?",
+   "options": [
+    "Imitations of Horace",
+    "The Dunciad",
+    "The Rape of the Lock",
+    "The Epistle to Dr. Arbuthnot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Pope published The Dunciad in three books in 1728 and expanded it to four books in 1743."
+  },
+  {
+   "id": "nc-e-24",
+   "question": "Which poetic meter, consisting of rhyming pairs of iambic pentameter lines, served as the signature verse form of Dryden and Pope?",
+   "options": [
+    "The heroic couplet",
+    "Blank verse",
+    "Pindaric free verse",
+    "The Spenserian stanza"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The closed heroic couplet of rhymed decasyllabic lines was the dominant poetic medium of Neoclassicism."
+  },
+  {
+   "id": "nc-e-25",
+   "question": "Published in 1726, what is the full original title of Jonathan Swift's four-part satirical masterpiece 'Gulliver's Travels'?",
+   "options": [
+    "A True and Faithful Account of Four Voyages to Unknown Lands",
+    "Travels into Several Remote Nations of the World",
+    "Memoirs of the Extraordinary Travels of Captain Gulliver",
+    "The Life and Strange Surprizing Adventures of Lemuel Gulliver"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Swift published the book anonymously in 1726 as Travels into Several Remote Nations of the World."
+  },
+  {
+   "id": "nc-e-26",
+   "question": "In Part IV of 'Gulliver's Travels', what name is given to the race of rational horses who govern the repulsive human-like Yahoos?",
+   "options": [
+    "The Brobdingnagians",
+    "The Lilliputians",
+    "The Houyhnhnms",
+    "The Laputans"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In his fourth voyage Gulliver visits the land of the Houyhnhnms horses endowed with pure reason."
+  },
+  {
+   "id": "nc-e-27",
+   "question": "In his 1729 pamphlet 'A Modest Proposal', what shocking ironic remedy does Jonathan Swift propose to alleviate Irish poverty?",
+   "options": [
+    "Selling poor Irish infants as food for wealthy landlords",
+    "Melting down church bells to mint copper coins",
+    "Conscripting the entire peasantry into the British Navy",
+    "Exporting all Irish woolens duty-free to France"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Swift bitterly satirizes English economic exploitation by proposing that one-year-old children be sold as meat."
+  },
+  {
+   "id": "nc-e-28",
+   "question": "Which 1704 prose satire by Jonathan Swift uses the tale of three brothers—Peter, Martin, and Jack—to allegorize divisions in Christianity?",
+   "options": [
+    "A Tale of a Tub",
+    "The Conduct of the Allies",
+    "An Argument Against Abolishing Christianity",
+    "The Battle of the Books"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In A Tale of a Tub Peter stands for Catholicism Martin for Anglicanism and Jack for Calvinist Dissent."
+  },
+  {
+   "id": "nc-e-29",
+   "question": "Which 1728 ballad opera by John Gay satirized Prime Minister Robert Walpole through the characters of Macheath and Peachum?",
+   "options": [
+    "The Tragedy of Tragedies",
+    "The London Merchant",
+    "The Beggar's Opera",
+    "The Conscious Lovers"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Gay The Beggar Opera was produced by John Rich in 1728 blending Newgate low-life with political satire."
+  },
+  {
+   "id": "nc-e-30",
+   "question": "In which year did Daniel Defoe publish his realistic narrative 'The Life and Strange Surprizing Adventures of Robinson Crusoe'?",
+   "options": [
+    "1726",
+    "1740",
+    "1719",
+    "1704"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Defoe published Robinson Crusoe in April 1719 launching the rise of realistic English prose fiction."
+  },
+  {
+   "id": "nc-e-31",
+   "question": "What name does Robinson Crusoe give to the native companion he rescues from cannibals on his uninhabited island?",
+   "options": [
+    "Xury",
+    "Atkins",
+    "Friday",
+    "Pedro"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Crusoe names his devoted companion Friday to commemorate the day of the week on which he saved his life."
+  },
+  {
+   "id": "nc-e-32",
+   "question": "Which 1722 novel by Daniel Defoe presents the first-person picaresque confessions of a woman born in Newgate Prison?",
+   "options": [
+    "Moll Flanders",
+    "Roxana",
+    "Colonel Jack",
+    "Captain Singleton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The Fortunes and Misfortunes of the Famous Moll Flanders appeared in 1722 detailing her life of crime and repentance."
+  },
+  {
+   "id": "nc-e-33",
+   "question": "Published in November 1740, which bestselling epistolary novel by Samuel Richardson bears the subtitle 'Virtue Rewarded'?",
+   "options": [
+    "Pamela",
+    "Clarissa",
+    "Sir Charles Grandison",
+    "Amelia"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Pamela or Virtue Rewarded tells in letters how the servant girl Pamela Andrews resists and reforms Mr B."
+  },
+  {
+   "id": "nc-e-34",
+   "question": "Which tragic epistolary novel (1747–1748) by Samuel Richardson depicts a virtuous young woman persecuted by the rake Robert Lovelace?",
+   "options": [
+    "Clarissa",
+    "Pamela in Her Exalted Condition",
+    "Pamela",
+    "Evelina"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Clarissa or the History of a Young Lady is Richardson tragic masterpiece concerning Clarissa Harlowe."
+  },
+  {
+   "id": "nc-e-35",
+   "question": "Which 1741 burlesque novella did Henry Fielding publish to mock the calculating morality of Samuel Richardson's 'Pamela'?",
+   "options": [
+    "Amelia",
+    "Shamela",
+    "Tom Thumb",
+    "Jonathan Wild"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Fielding published An Apology for the Life of Mrs Shamela Andrews in April 1741 exposing Pamela as a schemer."
+  },
+  {
+   "id": "nc-e-36",
+   "question": "In the preface to which 1742 novel featuring Parson Abraham Adams does Henry Fielding define his work as a 'comic epic-poem in prose'?",
+   "options": [
+    "Jonathan Wild",
+    "Joseph Andrews",
+    "A Journey from This World to the Next",
+    "Tom Jones"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Fielding wrote Joseph Andrews in imitation of the manner of Cervantes and defined the comic novel in its preface."
+  },
+  {
+   "id": "nc-e-37",
+   "question": "Who is the benevolent country magistrate who raises the foundling hero in Henry Fielding's 1749 novel 'Tom Jones'?",
+   "options": [
+    "Mr. Thwackum",
+    "Mr. Square",
+    "Squire Western",
+    "Squire Allworthy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Squire Allworthy discovers the infant Tom Jones in his bed and raises him alongside his nephew Blifil."
+  },
+  {
+   "id": "nc-e-38",
+   "question": "Which Scottish author wrote the vigorous picaresque novels 'The Adventures of Roderick Random' (1748) and 'The Expedition of Humphry Clinker' (1771)?",
+   "options": [
+    "Oliver Goldsmith",
+    "Henry Mackenzie",
+    "Tobias Smollett",
+    "Laurence Sterne"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Tobias Smollett drew on his service as a naval surgeon for Roderick Random and wrote the epistolary Humphry Clinker."
+  },
+  {
+   "id": "nc-e-39",
+   "question": "Which eccentric, digressive novel published in nine volumes between 1759 and 1767 was authored by the clergyman Laurence Sterne?",
+   "options": [
+    "A Sentimental Journey",
+    "The Man of Feeling",
+    "The Castle of Otranto",
+    "Tristram Shandy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Life and Opinions of Tristram Shandy Gentleman subverts linear narrative with typography and digressions."
+  },
+  {
+   "id": "nc-e-40",
+   "question": "In which year did Dr. Samuel Johnson publish his landmark two-volume 'A Dictionary of the English Language'?",
+   "options": [
+    "1759",
+    "1755",
+    "1747",
+    "1765"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Johnson Dictionary was published on 15 April 1755 containing 42773 entries and over 114000 literary quotations."
+  },
+  {
+   "id": "nc-e-41",
+   "question": "Which 1759 philosophical tale did Samuel Johnson compose in the evenings of a single week to defray his mother's funeral costs?",
+   "options": [
+    "Irene",
+    "Rasselas",
+    "The Vision of Theodore",
+    "London"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The History of Rasselas Prince of Abissinia was published in April 1759 examining the search for happiness."
+  },
+  {
+   "id": "nc-e-42",
+   "question": "Which critical work (1779–1781) by Samuel Johnson popularized the critical term 'metaphysical poets' in its essay on Abraham Cowley?",
+   "options": [
+    "Preface to Shakespeare",
+    "The Rambler",
+    "Lives of the Most Eminent English Poets",
+    "A Journey to the Western Islands of Scotland"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Johnson Lives of the Poets comprises fifty-two biographical and critical prefaces including the Life of Cowley."
+  },
+  {
+   "id": "nc-e-43",
+   "question": "Which Scottish lawyer and diarist befriended Samuel Johnson in 1763 and authored the famous 'Life of Samuel Johnson'?",
+   "options": [
+    "David Hume",
+    "Adam Smith",
+    "James Boswell",
+    "Oliver Goldsmith"
+   ],
+   "correct_option_id": 2,
+   "explanation": "James Boswell met Johnson in Thomas Davies bookshop in 1763 and published his great biography in 1791."
+  },
+  {
+   "id": "nc-e-44",
+   "question": "Which 1751 poem by Thomas Gray opens with the famous twilight line 'The Curfew tolls the knell of parting day'?",
+   "options": [
+    "Elegy Written in a Country Churchyard",
+    "The Bard",
+    "Ode on a Distant Prospect of Eton College",
+    "The Progress of Poesy"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Gray completed the Elegy in 1750 and published it in 1751 honoring the humble villagers buried in the churchyard."
+  },
+  {
+   "id": "nc-e-45",
+   "question": "Which mid-eighteenth-century poetic grouping, including Edward Young, Robert Blair, and Thomas Gray, meditated on tombs and mortality?",
+   "options": [
+    "The Cockney School",
+    "The Della Cruscans",
+    "The Graveyard School",
+    "The Spasmodic Poets"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Graveyard Poets wrote meditative verse on death and gloom anticipating Gothic literature and Romanticism."
+  },
+  {
+   "id": "nc-e-46",
+   "question": "Who is the resilient and charitable clergyman narrator of Oliver Goldsmith's 1766 domestic novel 'The Vicar of Wakefield'?",
+   "options": [
+    "Parson Adams",
+    "Mr. Yorick",
+    "Reverend Dr. Syntax",
+    "Dr. Charles Primrose"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Dr Charles Primrose endures financial ruin prison and family misfortune with steadfast faith in The Vicar of Wakefield."
+  },
+  {
+   "id": "nc-e-47",
+   "question": "What is the name of the depopulated rural hamlet mourned in Oliver Goldsmith's 1770 poem 'The Deserted Village'?",
+   "options": [
+    "Selborne",
+    "Auburn",
+    "Olney",
+    "Aldeburgh"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The poem opens Sweet Auburn loveliest village of the plain lamenting rural depopulation caused by enclosure."
+  },
+  {
+   "id": "nc-e-48",
+   "question": "What is the subtitle of Oliver Goldsmith's 1773 laughing comedy 'She Stoops to Conquer'?",
+   "options": [
+    "A Comedy of Manners",
+    "The Mistakes of a Night",
+    "The Country Heiress",
+    "The Humours of an Age"
+   ],
+   "correct_option_id": 1,
+   "explanation": "She Stoops to Conquer or The Mistakes of a Night turns on Marlow mistaking Hardcastle mansion for an inn."
+  },
+  {
+   "id": "nc-e-49",
+   "question": "Which character in Richard Brinsley Sheridan's 1775 comedy 'The Rivals' is immortalized for her comical blunders in vocabulary?",
+   "options": [
+    "Mrs. Candour",
+    "Lady Sneerwell",
+    "Lady Teazle",
+    "Mrs. Malaprop"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Mrs Malaprop Aunt to Lydia Languish gave the English language the word malapropism for verbal confusion."
+  },
+  {
+   "id": "nc-e-50",
+   "question": "Published in December 1764, which work by Horace Walpole is celebrated as the very first Gothic novel in English?",
+   "options": [
+    "The Castle of Otranto",
+    "The Mysteries of Udolpho",
+    "Vathek",
+    "The Old English Baron"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Horace Walpole published The Castle of Otranto in 1764 adding the subtitle A Gothic Story in the second edition."
+  }
+ ]
+}
