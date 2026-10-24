@@ -1,0 +1,608 @@
+{
+ "bankId": "age-of-sensibility",
+ "period": "Age of Sensibility",
+ "level": "easy",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "sn-e-01",
+   "question": "In which Staffordshire cathedral city was Dr. Samuel Johnson born in September 1709?",
+   "options": [
+    "Worcester",
+    "Lichfield",
+    "Coventry",
+    "Shrewsbury"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Samuel Johnson was born on 18 September 1709 in Lichfield Staffordshire where his father Michael was a bookseller."
+  },
+  {
+   "id": "sn-e-02",
+   "question": "What is the title of Samuel Johnson's only drama, a blank-verse neoclassical tragedy staged by David Garrick at Drury Lane in 1749?",
+   "options": [
+    "Elfrida",
+    "Cato",
+    "Douglas",
+    "Irene"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Johnson brought the manuscript of his tragedy Irene to London in 1737 and Garrick produced it in February 1749."
+  },
+  {
+   "id": "sn-e-03",
+   "question": "Which 1749 philosophical poem in heroic couplets was the very first publication to bear Samuel Johnson's own name on its title page?",
+   "options": [
+    "London",
+    "The Traveller",
+    "The Grave",
+    "The Vanity of Human Wishes"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published in January 1749 The Vanity of Human Wishes was the first work to which Johnson attached his name."
+  },
+  {
+   "id": "sn-e-04",
+   "question": "Which lighter weekly periodical essay series did Samuel Johnson contribute to 'The Universal Chronicle' between April 1758 and April 1760?",
+   "options": [
+    "The Tatler",
+    "The Citizen of the World",
+    "The Lounger",
+    "The Idler"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Johnson wrote 91 of the 103 weekly issues of The Idler between 1758 and 1760 adopting a lighter conversational persona."
+  },
+  {
+   "id": "sn-e-05",
+   "question": "In Samuel Johnson's 'The History of Rasselas, Prince of Abissinia' (1759), from what secluded paradise does the prince escape to survey the world?",
+   "options": [
+    "The Happy Valley",
+    "The Bower of Bliss",
+    "The Island of Pines",
+    "The Castle of Indolence"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Rasselas grows restless amidst the effortless pleasures of the Happy Valley in Abyssinia and tunnels out with Imlac."
+  },
+  {
+   "id": "sn-e-06",
+   "question": "In which year did Samuel Johnson finally publish his landmark eight-volume edition of 'The Plays of William Shakespeare'?",
+   "options": [
+    "1755",
+    "1765",
+    "1745",
+    "1779"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nine years after issuing his 1756 Proposals Johnson published his eight-volume edition of Shakespeare in October 1765."
+  },
+  {
+   "id": "sn-e-07",
+   "question": "In his 'Preface to Shakespeare' (1765), while preserving the Unity of Action, which two neoclassical unities did Samuel Johnson famously reject?",
+   "options": [
+    "The Unities of Meter and Diction",
+    "The Unities of Tragedy and Comedy",
+    "The Unities of Time and Place",
+    "The Unities of Character and Sentiment"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Johnson argued that spectators always know the stage is only a stage invalidating strict rules of time and place."
+  },
+  {
+   "id": "sn-e-08",
+   "question": "With which celebrated portrait painter and first President of the Royal Academy did Samuel Johnson co-found 'The Club' in London in 1764?",
+   "options": [
+    "George Romney",
+    "Sir Joshua Reynolds",
+    "William Hogarth",
+    "Thomas Gainsborough"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Reynolds proposed The Club in February 1764 to give Johnson an arena for his conversation at the Turk Head Tavern."
+  },
+  {
+   "id": "sn-e-09",
+   "question": "Which 1775 travel book did Samuel Johnson publish recounting his autumn 1773 tour through the Scottish Highlands and islands with James Boswell?",
+   "options": [
+    "The Journal of a Voyage to Lisbon",
+    "A Journey to the Western Islands of Scotland",
+    "Travels through France and Italy",
+    "A Tour Thro' the Whole Island of Great Britain"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Johnson published A Journey to the Western Islands of Scotland in January 1775 reflecting on Highland culture and clan life."
+  },
+  {
+   "id": "sn-e-10",
+   "question": "Which 1764 philosophical poem in heroic couplets, subtitled 'A Prospect of Society', was the first work to bear Oliver Goldsmith's name?",
+   "options": [
+    "The Traveller",
+    "The Hermit",
+    "The Haunch of Venison",
+    "Retaliation"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Published in December 1764 The Traveller surveyed European nations from the Alps and established Goldsmith poetic fame."
+  },
+  {
+   "id": "sn-e-11",
+   "question": "Which five-act comedy featuring the overly generous Mr. Honeywood and the gloomy alarmist Croaker was Oliver Goldsmith's first staged play in 1768?",
+   "options": [
+    "The West Indian",
+    "The Jealous Wife",
+    "The Clandestine Marriage",
+    "The Good-Natur'd Man"
+   ],
+   "correct_option_id": 3,
+   "explanation": "George Colman produced Goldsmith first comedy The Good-Natur'd Man at Covent Garden in January 1768."
+  },
+  {
+   "id": "sn-e-12",
+   "question": "In Oliver Goldsmith's 1773 comedy 'She Stoops to Conquer', which country squire's daughter poses as a barmaid to win the bashful Young Marlow?",
+   "options": [
+    "Maria",
+    "Kate Hardcastle",
+    "Lydia Languish",
+    "Constance Neville"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Learning that Marlow is tongue-tied before ladies of quality but bold with barmaids Kate Hardcastle stoops to conquer him."
+  },
+  {
+   "id": "sn-e-13",
+   "question": "Which prank-loving stepson of Mr. Hardcastle in 'She Stoops to Conquer' tricks Marlow and Hastings into mistaking Hardcastle's manor for an inn?",
+   "options": [
+    "Tony Lumpkin",
+    "Sir Benjamin Backbite",
+    "Bob Acres",
+    "Diggory"
+   ],
+   "correct_option_id": 0,
+   "explanation": "At the Three Pigeons alehouse Tony Lumpkin directs the London travellers to his stepfather house as the Buck Head Inn."
+  },
+  {
+   "id": "sn-e-14",
+   "question": "In which 1773 essay published in 'The Westminster Magazine' did Oliver Goldsmith champion 'laughing comedy' over tearful 'sentimental comedy'?",
+   "options": [
+    "An Inquiry into the Present State of Polite Learning",
+    "Preface to the Beauties of English Poesy",
+    "The Life of Richard Nash",
+    "An Essay on the Theatre; or, A Comparison between Laughing and Sentimental Comedy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published just before She Stoops to Conquer in 1773 this essay attacked weeping comedies as a mulish bastard genre."
+  },
+  {
+   "id": "sn-e-15",
+   "question": "Which 1777 comedy of manners by Richard Brinsley Sheridan contrasts the hypocritical, sententious Joseph Surface with his extravagant brother Charles?",
+   "options": [
+    "The Duenna",
+    "The Rivals",
+    "A Trip to Scarborough",
+    "The School for Scandal"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Staged at Drury Lane in May 1777 The School for Scandal exposes malicious gossip and the false morality of Joseph Surface."
+  },
+  {
+   "id": "sn-e-16",
+   "question": "In Sheridan's 'The School for Scandal', which young country-bred wife is discovered hiding behind a screen in Joseph Surface's library?",
+   "options": [
+    "Mrs. Candour",
+    "Lady Sneerwell",
+    "Lady Teazle",
+    "Julia Melville"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In the famous Screen Scene of Act IV Scene 3 Charles Surface knocks down the screen revealing Lady Teazle to Sir Peter."
+  },
+  {
+   "id": "sn-e-17",
+   "question": "Which 1779 satirical afterpiece by Richard Brinsley Sheridan, subtitled 'A Tragedy Rehearsed', features the theatrical promoter Mr. Puff?",
+   "options": [
+    "Pizarro",
+    "St. Patrick's Day",
+    "The Critic",
+    "The Camp"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Critic or A Tragedy Rehearsed premiered in October 1779 updating the burlesque rehearsal format of Buckingham and Fielding."
+  },
+  {
+   "id": "sn-e-18",
+   "question": "In Sheridan's 'The Rivals' (1775), under what penniless army ensign's name does Captain Jack Absolute court the romance-loving Lydia Languish at Bath?",
+   "options": [
+    "Ensign Beverley",
+    "Colonel Fainwell",
+    "Captain Plume",
+    "Ensign Northerton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Because Lydia Languish wants to elope and lose her fortune for love Jack Absolute disguises himself as poor Ensign Beverley."
+  },
+  {
+   "id": "sn-e-19",
+   "question": "Which seven-volume epistolary novel did Samuel Richardson publish in 1753–1754 to portray a model Christian gentleman of spotless honour?",
+   "options": [
+    "Ferdinand Count Fathom",
+    "Memoirs of Miss Sidney Bidulph",
+    "The Adventures of Sir Launcelot Greaves",
+    "The History of Sir Charles Grandison"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Urged by female friends to create a good man to contrast with Robert Lovelace Richardson published Sir Charles Grandison in 1753-1754."
+  },
+  {
+   "id": "sn-e-20",
+   "question": "Who is the spirited and virtuous daughter of Squire Western whom the hero loves throughout Henry Fielding's 1749 novel 'Tom Jones'?",
+   "options": [
+    "Sophia Western",
+    "Harriet Fitzpatrick",
+    "Fanny Goodwill",
+    "Lady Bellaston"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Modeled on Fielding beloved first wife Charlotte Cradock Sophia Western flees home rather than marry the hypocritical Blifil."
+  },
+  {
+   "id": "sn-e-21",
+   "question": "Which 1751 domestic novel—Henry Fielding's final completed novel—portrays the patient, devoted wife of the improvident Captain William Booth?",
+   "options": [
+    "Clarissa",
+    "Evelina",
+    "Cecilia",
+    "Amelia"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Published in December 1751 Amelia focuses on married life social injustice and the reform of Captain Booth through Amelia fidelity."
+  },
+  {
+   "id": "sn-e-22",
+   "question": "Which poignant autobiographical work, published posthumously in 1755, records Henry Fielding's final sea journey to Portugal before his death?",
+   "options": [
+    "A Tour to the Hebrides",
+    "Travels into Several Remote Nations",
+    "The Journal of a Voyage to Lisbon",
+    "Letters from Portugal"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Fielding sailed for Lisbon in June 1754 died there in October 1754 and his Journal appeared posthumously in February 1755."
+  },
+  {
+   "id": "sn-e-23",
+   "question": "Which 1751 picaresque novel by Tobias Smollett features the memorable retired naval eccentric Commodore Hawser Trunnion?",
+   "options": [
+    "Sir Launcelot Greaves",
+    "The Adventures of Peregrine Pickle",
+    "Ferdinand Count Fathom",
+    "Roderick Random"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Smollett published Peregrine Pickle in 1751 depicting the hero upbringing near Commodore Trunnion fortified garrison house."
+  },
+  {
+   "id": "sn-e-24",
+   "question": "In what narrative form is Tobias Smollett's 1771 comic novel 'The Expedition of Humphry Clinker' told as Matthew Bramble's party tours Britain?",
+   "options": [
+    "A series of letters written by six different family members and servants",
+    "An omniscient third-person mock-epic narrative",
+    "A set of dramatic dialogues recorded by a country parson",
+    "A continuous first-person prison confession by Humphry Clinker"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Humphry Clinker is an epistolary novel without replies presenting the same events through six contrasting epistolary voices."
+  },
+  {
+   "id": "sn-e-25",
+   "question": "Which 1768 work by Laurence Sterne, narrated by Parson Yorick, popularized the genre of the sentimental travel narrative shortly before Sterne's death?",
+   "options": [
+    "The Man of the World",
+    "A Sentimental Journey Through France and Italy",
+    "The Koran",
+    "Letters from Eliza"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Published in February 1768 just weeks before Sterne died A Sentimental Journey tracks Yorick emotional encounters in France."
+  },
+  {
+   "id": "sn-e-26",
+   "question": "Which 1771 novel by the Scottish writer Henry Mackenzie portrays the sensitive hero Harley, who sheds tears of sympathy over every human woe?",
+   "options": [
+    "The Fool of Quality",
+    "Julia de Roubigné",
+    "The Man of Feeling",
+    "A Simple Story"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Henry Mackenzie published The Man of Feeling anonymously in 1771 creating the supreme archetype of the sentimental hero in Harley."
+  },
+  {
+   "id": "sn-e-27",
+   "question": "Which 1752 satirical novel by Charlotte Lennox portrays the young heiress Arabella mistaking contemporary Georgian society for French heroic romances?",
+   "options": [
+    "The Female Quixote",
+    "The Life of Harriot Stuart",
+    "The Spiritual Quixote",
+    "The History of Henrietta"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In The Female Quixote or The Adventures of Arabella 1752 Arabella is cured of her romance delusions by a learned clergyman."
+  },
+  {
+   "id": "sn-e-28",
+   "question": "Which 1749 work by Sarah Fielding, set at Mrs. Teachum's boarding school for nine girls, is regarded as the first full-length novel written for children?",
+   "options": [
+    "The Governess; or, The Little Female Academy",
+    "The Adventures of David Simple",
+    "The History of Sandford and Merton",
+    "The History of Little Goody Two-Shoes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Sarah Fielding sister of Henry Fielding published The Governess in 1749 inaugurating the English school story for children."
+  },
+  {
+   "id": "sn-e-29",
+   "question": "In Horace Walpole's 1764 Gothic novel 'The Castle of Otranto', who is the tyrannical usurping prince whose son Conrad is crushed by a giant helmet?",
+   "options": [
+    "Schedoni",
+    "Ambrosio",
+    "Manfred",
+    "Montoni"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Prince Manfred of Otranto attempts to divorce his wife Hippolita and marry Conrad betrothed Isabella after Conrad death."
+  },
+  {
+   "id": "sn-e-30",
+   "question": "Which Gothic novel by Clara Reeve, first published in 1777 as 'The Champion of Virtue', sought to blend Walpole's Gothic romance with probable realism?",
+   "options": [
+    "A Sicilian Romance",
+    "The Castles of Athlin and Dunbayne",
+    "The Old English Baron",
+    "The Recess"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Clara Reeve retitled her novel The Old English Baron in 1778 calling it the literary offspring of The Castle of Otranto."
+  },
+  {
+   "id": "sn-e-31",
+   "question": "Which decadent Oriental Gothic novel about the ninth Abbasid Caliph who builds a tower to reach heaven was written in French in 1782 by William Beckford?",
+   "options": [
+    "Almoran and Hamet",
+    "The History of Nourjahad",
+    "Vathek",
+    "Solyman and Almena"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Beckford wrote Vathek in French in 1782 and Samuel Henley published an unauthorized English translation in 1786."
+  },
+  {
+   "id": "sn-e-32",
+   "question": "What is the exact stanza form used throughout Thomas Gray's 1751 masterpiece 'Elegy Written in a Country Churchyard'?",
+   "options": [
+    "Heroic quatrains of iambic pentameter rhyming abab",
+    "Closed heroic couplets in iambic pentameter",
+    "Spenserian nine-line stanzas ending with an alexandrine",
+    "Octosyllabic couplets in iambic tetrameter"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Gray composed all thirty-two stanzas of the Elegy in four-line iambic pentameter quatrains rhyming abab known as the elegiac stanza."
+  },
+  {
+   "id": "sn-e-33",
+   "question": "Which witty mock-elegy did Thomas Gray compose in 1747 after Horace Walpole's pet cat Selima drowned in a Chinese porcelain tub?",
+   "options": [
+    "Ode on the Death of a Favourite Cat, Drowned in a Tub of Gold Fishes",
+    "Hymn to Adversity",
+    "A Long Story",
+    "Ode on the Spring"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Printed in Dodsley Collection in 1748 the poem ends with the famous moral Nor all that glisters gold."
+  },
+  {
+   "id": "sn-e-34",
+   "question": "How did Thomas Gray respond in December 1757 when he was offered the post of Poet Laureate following the death of Colley Cibber?",
+   "options": [
+    "He declined the appointment, which was then conferred upon William Whitehead",
+    "He resigned his Cambridge fellowship to serve at the court of George II",
+    "He accepted the post and held it until his death at Cambridge in 1771",
+    "He accepted the salary on condition that he write only Latin odes"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Gray scorned the degraded office of Poet Laureate and refused it though he later accepted the Regius Professorship of Modern History in 1768."
+  },
+  {
+   "id": "sn-e-35",
+   "question": "Which short twelve-line patriotic lyric by William Collins opens with the famous lines 'How sleep the brave, who sink to rest, / By all their country's wishes blest!'?",
+   "options": [
+    "The Passions: An Ode for Music",
+    "Ode Written in the Beginning of the Year 1746",
+    "Ode to Pity",
+    "Ode to Fear"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Written during the Jacobite uprising of 1745-1746 Collins twelve-line ode honors soldiers fallen in battle for their country."
+  },
+  {
+   "id": "sn-e-36",
+   "question": "Which ecstatic eighty-six-stanza religious poem in six-line tail-rhyme stanzas did Christopher Smart publish in 1763 celebrating the biblical psalmist?",
+   "options": [
+    "Hymn to the Supreme Being",
+    "A Song to David",
+    "The Hop-Garden",
+    "On the Eternity of the Supreme Being"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Published in April 1763 shortly after Smart release from Mr Potter madhouse A Song to David culminates in a glorious catalog of adoration."
+  },
+  {
+   "id": "sn-e-37",
+   "question": "With which evangelical curate and former slave-ship captain did William Cowper collaborate to compose the famous 'Olney Hymns' published in 1779?",
+   "options": [
+    "Augustus Toplady",
+    "Rowland Hill",
+    "George Whitefield",
+    "John Newton"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Cowper contributed sixty-seven hymns and John Newton wrote the remainder including Amazing Grace for the 1779 Olney Hymns."
+  },
+  {
+   "id": "sn-e-38",
+   "question": "Which wildly popular 1782 comic ballad by William Cowper narrates the runaway horseback ride of a London linen-draper to Edmonton and Ware?",
+   "options": [
+    "Yardley Oak",
+    "The Castaway",
+    "The Diverting History of John Gilpin",
+    "On the Receipt of My Mother's Picture"
+   ],
+   "correct_option_id": 2,
+   "explanation": "First printed anonymously in The Public Advertiser in November 1782 John Gilpin became a sensation across Britain."
+  },
+  {
+   "id": "sn-e-39",
+   "question": "Which six-book meditative blank-verse poem did William Cowper publish in 1785, opening with a mock-Miltonic history of furniture titled 'The Sofa'?",
+   "options": [
+    "Table Talk",
+    "Tirocinium",
+    "Expostulation",
+    "The Task"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Cowper published The Task in six books in July 1785 bridging eighteenth-century didactic verse and Wordsworthian conversational blank verse."
+  },
+  {
+   "id": "sn-e-40",
+   "question": "Which 1783 poem in heroic couplets by George Crabbe rejected the idyllic nostalgia of Goldsmith's 'Auburn' to portray the grim reality of rural poverty?",
+   "options": [
+    "The Newspaper",
+    "The Village",
+    "The Library",
+    "The Parish Register"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Set on the bleak Suffolk coast near Aldeburgh Crabbe The Village 1783 declared that he would paint the cot As Truth will paint it and as Bards will not."
+  },
+  {
+   "id": "sn-e-41",
+   "question": "Whose monumental six-volume 'The History of the Decline and Fall of the Roman Empire' began publication in London in February 1776?",
+   "options": [
+    "William Robertson",
+    "Edward Gibbon",
+    "Lord Bolingbroke",
+    "Catharine Macaulay"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Edward Gibbon published Volume I in 1776 Volumes II and III in 1781 and the final three volumes in 1788."
+  },
+  {
+   "id": "sn-e-42",
+   "question": "Published in March 1776, which foundational five-book treatise of classical economics was authored by the Scottish philosopher Adam Smith?",
+   "options": [
+    "An Essay on the History of Civil Society",
+    "Political Discourses",
+    "An Inquiry into the Nature and Causes of the Wealth of Nations",
+    "An Inquiry into the Principles of Political Oeconomy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Adam Smith published The Wealth of Nations on 9 March 1776 analyzing the division of labour free markets and the invisible hand."
+  },
+  {
+   "id": "sn-e-43",
+   "question": "Before writing 'The Wealth of Nations', which 1759 philosophical work did Adam Smith publish grounding morality in human sympathy and the 'impartial spectator'?",
+   "options": [
+    "Essays on Philosophical Subjects",
+    "An Inquiry into Moral Virtue",
+    "The Theory of Moral Sentiments",
+    "A System of Moral Philosophy"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Based on his Glasgow lectures Smith 1759 The Theory of Moral Sentiments provided the philosophical foundation for the culture of sensibility."
+  },
+  {
+   "id": "sn-e-44",
+   "question": "Which Anglo-Irish statesman delivered the celebrated parliamentary speeches 'On American Taxation' (1774) and 'On Conciliation with the Colonies' (1775)?",
+   "options": [
+    "Edmund Burke",
+    "Lord North",
+    "Charles James Fox",
+    "Richard Brinsley Sheridan"
+   ],
+   "correct_option_id": 0,
+   "explanation": "As MP for Bristol Edmund Burke argued in March 1775 that a great empire and little minds go ill together urging conciliation with America."
+  },
+  {
+   "id": "sn-e-45",
+   "question": "Which wealthy literary hostess and critic, styled the 'Queen of the Blues', led the intellectual salon known as the Blue Stockings Society from the 1750s?",
+   "options": [
+    "Elizabeth Carter",
+    "Hester Thrale Piozzi",
+    "Elizabeth Montagu",
+    "Hannah More"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Elizabeth Montagu hosted the Blue Stockings Society bringing together learned women and men for literary conversation instead of card-playing."
+  },
+  {
+   "id": "sn-e-46",
+   "question": "Which legendary eighteenth-century actor-manager and former Lichfield pupil of Samuel Johnson revolutionized English acting at Drury Lane Theatre (1747–1776)?",
+   "options": [
+    "James Quin",
+    "Spranger Barry",
+    "John Philip Kemble",
+    "David Garrick"
+   ],
+   "correct_option_id": 3,
+   "explanation": "David Garrick walked to London with Samuel Johnson in 1737 triumphed as Richard III in 1741 and managed Drury Lane for twenty-nine years."
+  },
+  {
+   "id": "sn-e-47",
+   "question": "Which 1761 satirical poem by Charles Churchill evaluated contemporary London stage actors and won overnight fame for its author?",
+   "options": [
+    "The Ghost",
+    "The Rosciad",
+    "The Prophecy of Famine",
+    "The Candidate"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Named after the Roman actor Roscius Churchill 1761 satire The Rosciad mocked nearly every London player while awarding the chair to Garrick."
+  },
+  {
+   "id": "sn-e-48",
+   "question": "Which Scottish philosopher and poet published 'The Minstrel; or, The Progress of Genius' (1771–1774) in Spenserian stanzas about the young shepherd Edwin?",
+   "options": [
+    "WilliamFalconer",
+    "James Beattie",
+    "John Home",
+    "Robert Fergusson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "James Beattie published Book I of The Minstrel in 1771 and Book II in 1774 anticipating Wordsworth Prelude in tracing a poet growth in nature."
+  },
+  {
+   "id": "sn-e-49",
+   "question": "Which mid-century poet and creator of the Leasowes landscape garden authored the affectionate Spenserian burlesque 'The School-Mistress'?",
+   "options": [
+    "William Somervile",
+    "Mark Akenside",
+    "Richard Jago",
+    "William Shenstone"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Shenstone published versions of The School-Mistress in 1737 1742 and 1748 portraying a village dame school in Spenserian stanzas."
+  },
+  {
+   "id": "sn-e-50",
+   "question": "Which twentieth-century Canadian literary critic popularized the term 'Age of Sensibility' in his seminal 1956 essay 'Towards Defining an Age of Sensibility'?",
+   "options": [
+    "Northrop Frye",
+    "M. H. Abrams",
+    "Marshall McLuhan",
+    "Cleanth Brooks"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Northrop Frye published Towards Defining an Age of Sensibility in ELH in June 1956 establishing the period distinct literary identity."
+  }
+ ]
+}

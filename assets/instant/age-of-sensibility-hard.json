@@ -1,0 +1,608 @@
+{
+ "bankId": "age-of-sensibility",
+ "period": "Age of Sensibility",
+ "level": "hard",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "sn-h-01",
+   "question": "In his 1956 essay 'Towards Defining an Age of Sensibility', how does Northrop Frye contrast the literature of 1745–1785 with the earlier Augustan view of literature as a finished 'product'?",
+   "options": [
+    "As literature driven by urban coffee-house wit and closed couplets",
+    "As literature focused on creative 'process' and oracular utterance",
+    "As literature governed by strict Aristotelian syllogism and decorum",
+    "As literature modeled exclusively on French classical tragedy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Frye argues that whereas Aristotelian and Augustan literature treats the poem as a finished product Sensibility treats poetry as an ongoing psychological process."
+  },
+  {
+   "id": "sn-h-02",
+   "question": "In 'The Vanity of Human Wishes' (1749), which word did Samuel Johnson famously substitute for 'Garret' in 1755 when listing the ills of the scholar's life ('Toil, Envy, Want, the ______, and the Jail')?",
+   "options": [
+    "Debtor",
+    "Critic",
+    "Bailiff",
+    "Patron"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Following Lord Chesterfield neglect of his Dictionary Johnson changed Garret to Patron in Dodsley 1755 Collection."
+  },
+  {
+   "id": "sn-h-03",
+   "question": "In 'The Vanity of Human Wishes', which warrior-monarch does Samuel Johnson use as his chief modern example of the futility of military ambition ('To point a Moral, or adorn a Tale')?",
+   "options": [
+    "Gustavus Adolphus of Sweden",
+    "Peter the Great of Russia",
+    "Frederick the Great of Prussia",
+    "Charles XII of Sweden"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Matching Juvenal portrait of Hannibal Johnson depicts the meteoric rise defeat at Poltava and obscure death of Charles XII of Sweden."
+  },
+  {
+   "id": "sn-h-04",
+   "question": "In his 1755 'A Dictionary of the English Language', how did Samuel Johnson famously and self-deprecatingly define the word 'Lexicographer'?",
+   "options": [
+    "A guardian of the purest wells of English undefiled",
+    "A pedant who numbers the syllables of dead men",
+    "An architect of words who labours without a patron",
+    "A writer of dictionaries; a harmless drudge"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Johnson defined Lexicographer as a writer of dictionaries a harmless drudge that busies himself in tracing the original and detailing the signification of words."
+  },
+  {
+   "id": "sn-h-05",
+   "question": "Which comically superficial critic in Samuel Johnson's 'The Idler' (Nos. 60 and 61) has mastered all the mechanical cant of criticism without genuine thought?",
+   "options": [
+    "Dick Minim",
+    "Mr. Sober",
+    "Jack Whirler",
+    "Ned Drugget"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Apprenticed to a brewer before inheriting a fortune Dick Minim sets up as a coffee-house oracle repeating critical clichés."
+  },
+  {
+   "id": "sn-h-06",
+   "question": "In Chapters 40–44 of Samuel Johnson's 'Rasselas' (1759), what tragic delusion afflicts the learned Cairo astronomer whom Imlac and Rasselas visit?",
+   "options": [
+    "He believes that the spirits of the Pharaohs speak to him from the pyramids",
+    "He believes that he personally regulates the weather and seasons of the earth",
+    "He believes that he has discovered the elixir of immortal life in the Nile",
+    "He believes that his telescope can read the secret thoughts of distant kings"
+   ],
+   "correct_option_id": 1,
+   "explanation": "After forty years of solitary study the astronomer imagines he possesses the regulation of the weather and distribution of the seasons."
+  },
+  {
+   "id": "sn-h-07",
+   "question": "In which 1775 political pamphlet defending British authority over the American colonies did Samuel Johnson ask, 'How is it that we hear the loudest yelps for liberty among the drivers of negroes?'",
+   "options": [
+    "Thoughts on the Late Transactions respecting Falkland's Islands",
+    "The Patriot",
+    "Taxation No Tyranny",
+    "The False Alarm"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Johnson published Taxation No Tyranny in March 1775 as an answer to the Resolutions and Address of the American Congress."
+  },
+  {
+   "id": "sn-h-08",
+   "question": "In his 'Life of Gray' (1781), after harshly criticizing Gray's Pindaric odes, how did Samuel Johnson warmly praise 'Elegy Written in a Country Churchyard'?",
+   "options": [
+    "That it restored the metaphysical conceit to modern poetry",
+    "That it abounds with images which find a mirror in every mind",
+    "That it surpasses Milton's Lycidas in classical pastoral mythology",
+    "That it perfected the strict Pindaric triad in English verse"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Johnson rejoiced to concur with the common reader declaring that the Elegy abounds with images which find a mirror in every mind and with sentiments to which every bosom returns an echo."
+  },
+  {
+   "id": "sn-h-09",
+   "question": "In Oliver Goldsmith's unfinished 1774 poem 'Retaliation', which member of The Club is portrayed as one who, 'born for the universe, narrow'd his mind, / And to party gave up what was meant for mankind'?",
+   "options": [
+    "Sir Joshua Reynolds",
+    "Edmund Burke",
+    "Richard Cumberland",
+    "David Garrick"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In his mock-epitaph on Edmund Burke Goldsmith affectionately lamented that Burke vast genius was consumed by partisan Whig politics."
+  },
+  {
+   "id": "sn-h-10",
+   "question": "In Oliver Goldsmith's 'The Vicar of Wakefield' (1766), what turns out to be the true aristocratic identity of the seemingly poor 'Mr. Burchell', who rescues Sophia Primrose?",
+   "options": [
+    "Sir William Thornhill",
+    "Squire Ned Thornhill",
+    "Lord Marmaduke",
+    "Mr. Ephraim Jenkinson"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Mr Burchell reveals himself in prison as the philanthropic baronet Sir William Thornhill uncle to the villainous Squire Ned Thornhill."
+  },
+  {
+   "id": "sn-h-11",
+   "question": "In 'The Vicar of Wakefield', who is the learned confidence trickster who cheats Moses Primrose into trading a horse for a gross of green spectacles and later aids the Vicar in jail?",
+   "options": [
+    "Solomon Flamborough",
+    "Timothy Baxter",
+    "Farmer Williams",
+    "Ephraim Jenkinson"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Ephraim Jenkinson dupes both Moses and Dr Primrose with his talk of Sanconiathon Manetho and Berosus before reforming in prison and exposing Squire Thornhill."
+  },
+  {
+   "id": "sn-h-12",
+   "question": "To which fellow member of The Club did Oliver Goldsmith dedicate his 1770 poem 'The Deserted Village'?",
+   "options": [
+    "Topham Beauclerk",
+    "Sir Joshua Reynolds",
+    "Edmund Burke",
+    "Samuel Johnson"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Goldsmith dedicated The Deserted Village in May 1770 to Sir Joshua Reynolds who reciprocated by dedicating an engraving of Resignation to Goldsmith."
+  },
+  {
+   "id": "sn-h-13",
+   "question": "To whom did Oliver Goldsmith dedicate his 1773 comedy 'She Stoops to Conquer', praising him for standing by the play when critics predicted its failure?",
+   "options": [
+    "Samuel Johnson",
+    "Horace Walpole",
+    "David Garrick",
+    "George Colman the Elder"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Goldsmith dedicated She Stoops to Conquer to Dr Samuel Johnson who had pressured Colman to stage the play and led the applause on opening night."
+  },
+  {
+   "id": "sn-h-14",
+   "question": "In Sheridan's 'The School for Scandal' (1777), under what two assumed personas does the rich nabob Sir Oliver Surface test his nephews Charles and Joseph?",
+   "options": [
+    "Mr. Snake and Sir Benjamin Backbite",
+    "Mr. Moses and Mr. Trip",
+    "Mr. Careless and Rowley",
+    "Mr. Premium and Mr. Stanley"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Sir Oliver visits the prodigal Charles as the moneylender Mr Premium and visits the hypocritical Joseph as the needy kinsman Mr Stanley."
+  },
+  {
+   "id": "sn-h-15",
+   "question": "In Act IV, Scene 1 of 'The School for Scandal', why does Charles Surface refuse to sell the portrait of his uncle Sir Oliver even when offered eight hundred pounds?",
+   "options": [
+    "Because Maria begged him to keep the portrait as a pledge of love",
+    "Because the frame conceals a secret codicil to his father's will",
+    "Because the canvas was painted by his friend Sir Joshua Reynolds",
+    "Out of genuine affection and gratitude toward his generous benefactor"
+   ],
+   "correct_option_id": 3,
+   "explanation": "After auctioning off his other ancestors with help from Careless Charles refuses to part with the ill-looking little fellow Sir Oliver winning his uncle heart."
+  },
+  {
+   "id": "sn-h-16",
+   "question": "In Act I of Sheridan's 'The Critic' (1779), the thin-skinned, envious dramatist 'Sir Fretful Plagiary' is a direct caricature of which contemporary sentimental playwright?",
+   "options": [
+    "Arthur Murphy",
+    "Hugh Kelly",
+    "Richard Cumberland",
+    "George Colman"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Sheridan modeled Sir Fretful Plagiary on Richard Cumberland author of The West Indian and The Battle of Hastings."
+  },
+  {
+   "id": "sn-h-17",
+   "question": "What is the title of the absurd historical tragedy rehearsed on stage by Mr. Puff in Acts II and III of Sheridan's 'The Critic' (1779)?",
+   "options": [
+    "The Fall of Calais",
+    "The Siege of Tilbury",
+    "The Spanish Armada",
+    "The Invincible Fleet"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Mr Puff tragedy The Spanish Armada is set at Tilbury Fort and features the love-struck Tilburina and Lord Burleigh silent head-shake."
+  },
+  {
+   "id": "sn-h-18",
+   "question": "In Sheridan's 'The Rivals' (1775), which bellicose Irish baronet challenges 'Ensign Beverley' to a duel after Lucy tricks him into believing Lydia Languish is his correspondent 'Delia'?",
+   "options": [
+    "Sir Lucius O'Trigger",
+    "Fag",
+    "Mr. Faulkland",
+    "Bob Acres"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The maid Lucy carries letters from Mrs Malaprop signed Delia to Sir Lucius O'Trigger who assumes they come from the niece Lydia."
+  },
+  {
+   "id": "sn-h-19",
+   "question": "In Henry Fielding's 'Tom Jones' (1749), which two tutors at Squire Allworthy's household represent harsh Calvinist dogma and hollow deistic philosophy?",
+   "options": [
+    "Parson Supple and Lawyer Dowling",
+    "Mr. Nightingale and Mr. Fitzpatrick",
+    "Partridge and Black George",
+    "Mr. Thwackum and Mr. Square"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Reverend Roger Thwackum preaches punitive divine grace while the philosopher Thomas Square invokes the unalterable rule of right and eternal fitness of things."
+  },
+  {
+   "id": "sn-h-20",
+   "question": "In 'Tom Jones', what is the name of the Latin-quoting village schoolmaster and barber—falsely accused of fathering Tom—who accompanies him on the road to London?",
+   "options": [
+    "Benjamin Partridge",
+    "Jack Nightingale",
+    "Black George Seagrim",
+    "Doctor Blifil"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Encountered by Tom as the barber Little Benjamin on the road Benjamin Partridge becomes Tom faithful comic squire."
+  },
+  {
+   "id": "sn-h-21",
+   "question": "At the conclusion of Henry Fielding's 'Tom Jones', who is revealed to be the biological mother of the foundling hero Tom?",
+   "options": [
+    "Jenny Jones",
+    "Molly Seagrim",
+    "Sophia Western",
+    "Bridget Allworthy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Mrs Waters formerly Jenny Jones reveals that Tom is the legitimate nephew of Squire Allworthy born to his sister Bridget Allworthy and young Summer."
+  },
+  {
+   "id": "sn-h-22",
+   "question": "In Samuel Richardson's 'Sir Charles Grandison' (1753–1754), which noble Italian lady suffers a nervous breakdown torn between her Catholic faith and her love for the Protestant hero?",
+   "options": [
+    "Emily Jervois",
+    "Charlotte Grandison",
+    "Clementina della Porretta",
+    "Lady Olivia"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lady Clementina della Porretta of Bologna cannot reconcile her Roman Catholic conscience with marrying the Protestant Grandison leaving him free to wed Harriet Byron."
+  },
+  {
+   "id": "sn-h-23",
+   "question": "In Book I, Chapter 12 of Laurence Sterne's 'Tristram Shandy', two entirely black pages are printed immediately following the death and Shakespearean epitaph of which character?",
+   "options": [
+    "Lieutenant Le Fever",
+    "Parson Yorick",
+    "Bobby Shandy",
+    "Captain Toby Shandy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "After Eugenius pronounces the words Alas poor Yorick over his grave Sterne inserts two solid black mourning pages."
+  },
+  {
+   "id": "sn-h-24",
+   "question": "In 'Tristram Shandy', which clumsy, irritable Catholic man-midwife crushes the infant Tristram's nose with his forceps during delivery?",
+   "options": [
+    "Dr. Slop",
+    "Dr. Kunastrokius",
+    "Phutatorius",
+    "Didius"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Caricatured from the real York physician Dr John Burton Dr Slop flattens Tristram nose as flat as a pancake with his forceps."
+  },
+  {
+   "id": "sn-h-25",
+   "question": "In Laurence Sterne's 'A Sentimental Journey' (1768), what plaintive English phrase spoken by a caged starling in Paris causes Yorick to burst into tears over human captivity?",
+   "options": [
+    "Give me liberty or death",
+    "I can't get out — I can't get out",
+    "Alas, poor Yorick",
+    "Pity the poor prisoner"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Taught by an English groom the caged starling repeats I can't get out prompting Yorick famous vision of a solitary prisoner in the Bastille."
+  },
+  {
+   "id": "sn-h-26",
+   "question": "In Tobias Smollett's 'The Expedition of Humphry Clinker' (1771), whose splenetic yet deeply charitable letters anchor the novel, contrasted with the malapropisms of Winifred Jenkins?",
+   "options": [
+    "Jery Melford",
+    "Obadiah Lismahago",
+    "Matthew Bramble",
+    "Squire Baynard"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The gouty Welsh squire Matthew Bramble writes twenty-seven of the novel eighty-two letters to his physician Dr Lewis."
+  },
+  {
+   "id": "sn-h-27",
+   "question": "Near the conclusion of Smollett's 'The Expedition of Humphry Clinker', what surprising family relationship is discovered regarding the ragged ostler Humphry Clinker?",
+   "options": [
+    "He is the natural son of Matthew Bramble from his youth as Matthew Lloyd",
+    "He is the younger brother of George Wilson the strolling stage actor",
+    "He is the disguised rightful heir to Squire Dennison Yorkshire estate",
+    "He is the long-lost nephew and heir of Lieutenant Obadiah Lismahago"
+   ],
+   "correct_option_id": 0,
+   "explanation": "When Matthew Bramble is rescued from drowning tokens in a small box prove that Humphry Clinker is his own illegitimate son."
+  },
+  {
+   "id": "sn-h-28",
+   "question": "How does the framing introduction of Henry Mackenzie's 'The Man of Feeling' (1771) explain why the story of Harley begins abruptly at Chapter XI with many chapters missing?",
+   "options": [
+    "A country curate had torn out pages to use as wadding for his hunting gun",
+    "A sudden fire in Harley London garret destroyed the opening ten chapters of his diary",
+    "A careless stagecoach postilion dropped the leather portfolio into the River Tweed",
+    "Harley elderly aunt burned the early pages to conceal a painful family scandal"
+   ],
+   "correct_option_id": 0,
+   "explanation": "While hunting with a fat curate the narrator discovers that the curate bundle of gun-wadding is the fragmented manuscript of Harley life."
+  },
+  {
+   "id": "sn-h-29",
+   "question": "When Horace Walpole published the first edition of 'The Castle of Otranto' anonymously on Christmas Eve 1764, how did the title page claim the text had originated?",
+   "options": [
+    "Dictated by an aged Calabrian monk to an English traveler visiting Naples",
+    "Transcribed from a twelfth-century Latin chronicle housed in Strawberry Hill Abbey",
+    "Translated by William Marshal from a 1529 Italian text by Onuphrio Muralto",
+    "Discovered inside an ancient oak chest at St. Mary Redcliffe Church by Thomas Rowley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Only in the second edition of April 1765 did Walpole drop the William Marshal / Onuphrio Muralto mask and add the subtitle A Gothic Story."
+  },
+  {
+   "id": "sn-h-30",
+   "question": "In Horace Walpole's 'The Castle of Otranto', who is the noble young peasant marked with the figure of a bloody arrow who is revealed to be the rightful Prince of Otranto?",
+   "options": [
+    "Frederic",
+    "Jerome",
+    "Theodore",
+    "Conrad"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Theodore turns out to be the son of Friar Jerome Count of Falconara and the grandson of Alfonso the Good."
+  },
+  {
+   "id": "sn-h-31",
+   "question": "In the first volume of his 'Essay on the Writings and Genius of Pope' (1756), dedicated to Edward Young, what bold reassessment did Joseph Warton make of Alexander Pope?",
+   "options": [
+    "That Pope heroic couplets were metrically inferior to the verse of Colley Cibber",
+    "That Pope had plagiarized the entire plan of The Dunciad from Jonathan Swift",
+    "That Pope excelled in moral wit, not the highest pathetic and sublime poetry",
+    "That Pope translation of Homer was more sublime than Milton Paradise Lost"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Warton ranked Spenser Shakespeare and Milton in the first class of creative sublime poets while placing Pope at the head of the second class of moral and ethical poets."
+  },
+  {
+   "id": "sn-h-32",
+   "question": "Which Oxford Professor of Poetry (and younger brother of Joseph Warton) authored 'Observations on the Faerie Queene of Spenser' (1754) and the three-volume 'History of English Poetry' (1774–1781)?",
+   "options": [
+    "Thomas Warton",
+    "Richard Hurd",
+    "Thomas Tyrwhitt",
+    "Robert Lowth"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Thomas Warton championed medieval chivalry and Spenserian romance and served as Poet Laureate from 1785 until his death in 1790."
+  },
+  {
+   "id": "sn-h-33",
+   "question": "In his landmark 1762 critical work 'Letters on Chivalry and Romance', what central aesthetic argument did Bishop Richard Hurd advance in defense of Spenser and Tasso?",
+   "options": [
+    "That Gothic poetry must be judged by its own Gothic rules, not classical unities",
+    "That medieval Gothic romances should be suppressed as relics of feudal superstition",
+    "That Edmund Spenser should have composed The Faerie Queene in closed heroic couplets",
+    "That European chivalric romance was imported directly from classical Athenian tragedy"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Hurd argued in Letters VIII-X that the Faerie Queene has a Gothic unity of design and that the world of fine fabling is superior to cold neoclassical probability."
+  },
+  {
+   "id": "sn-h-34",
+   "question": "Which Oxford Professor of Poetry published 'De Sacra Poesi Hebraeorum' in 1753, identifying semantic 'parallelism' as the key principle of biblical verse?",
+   "options": [
+    "Robert Lowth",
+    "Lord Kames",
+    "Hugh Blair",
+    "George Campbell"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Bishop Robert Lowth 1753 Latin lectures on Hebrew sacred poetry defined synonymous antithetic and synthetic parallelism inspiring Smart Macpherson and Blake."
+  },
+  {
+   "id": "sn-h-35",
+   "question": "In Thomas Gray's Pindaric ode 'The Bard' (1757), against which invading English king does the last surviving Welsh bard hurl a prophetic curse before leaping into the River Conway?",
+   "options": [
+    "King Henry IV",
+    "King Edward I",
+    "King Edward III",
+    "King Henry II"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Opening Ruin seize thee ruthless King Gray ode depicts a Welsh bard confronting Edward I in Snowdonia and prophesying the doom of the Plantagenets and rise of the Welsh Tudors."
+  },
+  {
+   "id": "sn-h-36",
+   "question": "With what three-stanza section does Thomas Gray conclude 'Elegy Written in a Country Churchyard', presenting the inscription on the solitary young poet's gravestone?",
+   "options": [
+    "The Dirge",
+    "The Epitaph",
+    "The Envoi",
+    "The Invocation"
+   ],
+   "correct_option_id": 1,
+   "explanation": "After a hoary-headed swain describes the dead poet three final stanzas headed The Epitaph begin Here rests his head upon the lap of Earth."
+  },
+  {
+   "id": "sn-h-37",
+   "question": "In Fragment B of Christopher Smart's 'Jubilate Agno' (composed 1759–1763), what is the name of the poet's cat, celebrated in the famous passage beginning 'For I will consider my Cat ______'?",
+   "options": [
+    "Hodge",
+    "Pangur",
+    "Selima",
+    "Jeoffry"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Smart praises his asylum companion Cat Jeoffry as a servant of the Living God who worships in his way by wreathing his body seven times round."
+  },
+  {
+   "id": "sn-h-38",
+   "question": "Which vivacious friend of William Cowper playfully challenged him in 1783 to write a blank-verse poem on 'the Sofa', directly prompting 'The Task' (1785)?",
+   "options": [
+    "Lady Hesketh",
+    "Mary Unwin",
+    "Lady Austen",
+    "Hannah More"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Ann Lady Austen both told Cowper the story of John Gilpin and assigned him the Sofa as a subject for blank verse."
+  },
+  {
+   "id": "sn-h-39",
+   "question": "Which famous aphorism contrasting rural nature with urban artifice appears in Book I ('The Sofa') of William Cowper's 'The Task' (1785)?",
+   "options": [
+    "Where ignorance is bliss, 'tis folly to be wise",
+    "The proper study of Mankind is Man",
+    "Sweet Auburn! loveliest village of the plain",
+    "God made the country, and man made the town"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Line 749 of Book I of Cowper The Task reads God made the country and man made the town."
+  },
+  {
+   "id": "sn-h-40",
+   "question": "What is the title of William Cowper's famous hymn in 'Olney Hymns' (1779) that begins 'God moves in a mysterious way / His wonders to perform'?",
+   "options": [
+    "Praise for the Fountain Opened",
+    "Light Shining out of Darkness",
+    "Walking with God",
+    "Jehovah-Jireh"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Composed in 1773 just before his severe mental breakdown Light Shining out of Darkness is hymn 35 of Book III of the Olney Hymns."
+  },
+  {
+   "id": "sn-h-41",
+   "question": "Before George Crabbe published his anti-pastoral poem 'The Village' in May 1783, which eminent literary authority read the manuscript and personally revised lines 15–20 of Book I?",
+   "options": [
+    "Edmund Burke",
+    "Samuel Johnson",
+    "Horace Walpole",
+    "Sir Joshua Reynolds"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Submitted through Sir Joshua Reynolds Crabbe poem was praised by Samuel Johnson as original vigorous and elegant and Johnson rewrote lines 15-20 on Virgil."
+  },
+  {
+   "id": "sn-h-42",
+   "question": "Which two concluding chapters of Volume I (1776) of Edward Gibbon's 'The History of the Decline and Fall of the Roman Empire' provoked fierce controversy for their ironic treatment of early Christianity?",
+   "options": [
+    "Chapters 1 and 2",
+    "Chapters 9 and 10",
+    "Chapters 15 and 16",
+    "Chapters 22 and 23"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Chapter 15 examined five secondary causes of the growth of the Christian Church and Chapter 16 downplayed the scale of Roman persecutions."
+  },
+  {
+   "id": "sn-h-43",
+   "question": "Under what Latinate pseudonym were the sixty-nine scathing political letters published in Woodfall's 'Public Advertiser' between 1769 and 1772, attacking the ministry of the Duke of Grafton and George III?",
+   "options": [
+    "Cato",
+    "Publicola",
+    "Junius",
+    "Brutus"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The Letters of Junius frequently attributed to Sir Philip Francis are a masterpiece of eighteenth-century political invective."
+  },
+  {
+   "id": "sn-h-44",
+   "question": "Against which French Enlightenment writer's harsh attacks on Shakespeare's 'barbarism' did Elizabeth Montagu publish her 'An Essay on the Writings and Genius of Shakespear' in 1769?",
+   "options": [
+    "Voltaire",
+    "Denis Diderot",
+    "Jean-Jacques Rousseau",
+    "Montesquieu"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Elizabeth Montagu defended Shakespeare dramatic genius supernatural beings and historical plays against the neoclassical strictures of Voltaire."
+  },
+  {
+   "id": "sn-h-45",
+   "question": "In Frances Burney's epistolary novel 'Evelina' (1778), who is the retired country clergyman at Berry Hill who raised Evelina Anville and serves as her chief correspondent?",
+   "options": [
+    "Sir Clement Willoughby",
+    "Lord Orville",
+    "Reverend Arthur Villars",
+    "Captain Mirvan"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Reverend Arthur Villars is Evelina guardian who educated her mother and guides Evelina through her entrance into London and Bristol society."
+  },
+  {
+   "id": "sn-h-46",
+   "question": "Which 1766 five-act comedy of manners, featuring the aging aristocratic roué Lord Ogleby, was co-authored by George Colman the Elder and David Garrick?",
+   "options": [
+    "The Jealous Wife",
+    "The West Indian",
+    "The Way to Keep Him",
+    "The Clandestine Marriage"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Inspired by Plate I of William Hogarth Marriage A-la-Mode Colman and Garrick The Clandestine Marriage premiered at Drury Lane in February 1766."
+  },
+  {
+   "id": "sn-h-47",
+   "question": "Which tearful 1768 sentimental comedy by Hugh Kelly triumphed at Drury Lane in the very same week that Oliver Goldsmith's 'The Good-Natur'd Man' struggled at Covent Garden?",
+   "options": [
+    "A Word to the Wise",
+    "False Delicacy",
+    "The School for Wives",
+    "The Fashionable Lover"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Backed by David Garrick at Drury Lane in January 1768 Hugh Kelly False Delicacy epitomized the genteel sentimental comedy that Goldsmith opposed."
+  },
+  {
+   "id": "sn-h-48",
+   "question": "In Charles Macklin's biting satirical comedy 'The Man of the World', which obsequious, bowing Scottish politician embodies ruthless sycophancy ('booing, and booing')?",
+   "options": [
+    "Lord Lumbercourt",
+    "Sir Pertinax Macsycophant",
+    "Colin Macleod",
+    "Sir Archy MacSarcasm"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Originally staged in Dublin in 1764 as The True-Born Scotchman and licensed in London in 1781 as The Man of the World Macklin play stars Sir Pertinax Macsycophant."
+  },
+  {
+   "id": "sn-h-49",
+   "question": "Which of the following statements concerning the Age of Sensibility (1745–1785) is NOT correct?",
+   "options": [
+    "Oliver Goldsmith attacked weeping sentimental comedy in his 1773 'An Essay on the Theatre'",
+    "Thomas Gray declined the office of Poet Laureate when it was offered to him in 1757",
+    "Edward Gibbon published the first volume of 'The Decline and Fall of the Roman Empire' in 1776",
+    "Samuel Johnson praised James Macpherson's 'Ossian' poems as authentic ancient epics"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Samuel Johnson denounced Macpherson Ossian poems as modern forgeries declaring in 1775 that he would not be deterred from detecting a cheat by the menaces of a ruffian."
+  },
+  {
+   "id": "sn-h-50",
+   "question": "Which of the following character-and-work pairings from the Age of Sensibility (1745–1785) is NOT correctly matched?",
+   "options": [
+    "Harley — Tobias Smollett's 'The Adventures of Peregrine Pickle'",
+    "Arabella — Charlotte Lennox's 'The Female Quixote'",
+    "Kate Hardcastle — Oliver Goldsmith's 'She Stoops to Conquer'",
+    "Lady Teazle — Richard Brinsley Sheridan's 'The School for Scandal'"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Harley is the sensitive hero of Henry Mackenzie 1771 novel The Man of Feeling rather than Smollett Peregrine Pickle."
+  }
+ ]
+}
