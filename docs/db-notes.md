@@ -22,13 +22,17 @@ does not belong in Supabase's built-in `auth.users` table.
 | --------------- | ------- |
 | `id`            | The user's ID. It is the same value as the user's ID in `auth.users`. If the user is deleted, this row is deleted too. |
 | `display_name`  | The name shown on screen. Starts empty until the user sets one. |
-| `primary_track` | The study track the user is preparing for. One of `ugc-net`, `up-pgt`, `state-psc`, or `literature-journey`. It is empty until the user picks one. No other value is allowed. |
+| `avatar_id`     | Which avatar the user picked. Empty until they choose one. |
 | `created_at`    | When the row was created. |
 
 **A profile is made for you automatically.** A trigger runs whenever a new user
 is added to `auth.users` and inserts a matching `profiles` row (with `id` set
 and the rest left at their defaults). The app never has to create this row
-itself. `display_name` and `primary_track` are filled in later, by the user.
+itself. `display_name` and `avatar_id` are filled in later, by the user.
+
+> **Note:** an earlier migration gave `profiles` a `primary_track` column. The
+> second migration (below) drops it — which exam a user is preparing for now
+> lives in the `user_exams` table, where a user can pick several exams.
 
 ### 2. `attempts`
 
@@ -63,7 +67,54 @@ and when they last opened it.
 The primary key is the pair `(user_id, article_slug)`, so each user has at most
 one row per article.
 
+## Second migration — exams, topics, and user selections
+
+File: `supabase/migrations/20261025120000_exams_topics_and_profile_update.sql`.
+
+The idea: a question is tagged with a **subject topic** (like `beowulf` or
+`kenning`), never with an exam. Exams are mapped to topics separately, so adding
+a new exam later means inserting a few rows, not re-tagging questions. It also
+changes `profiles` (drops `primary_track`, adds `avatar_id` — see the note under
+`profiles` above).
+
+There are two kinds of table here.
+
+### Reference data (everyone can read, nobody writes from the client)
+
+- **`exams`** — the exams and tracks shown in the picker. `id` is a slug
+  (`ugc-net`, `cuet-pg`, …), `name` is the display name, `status` is `active` or
+  `coming_soon`, and `sort_order` sets the order. Seeded with eight rows
+  (`ugc-net` and the non-exam `literature-journey` are `active`; the rest are
+  `coming_soon`).
+- **`topics`** — subject topics used to tag questions. `id` is a slug, `name` is
+  the display name, `age_slug` links it to an age article (nullable),
+  `sort_order` sets the order. Starts empty; the topic list is supplied later.
+- **`exam_topics`** — which topics belong to which exam, grouped into units
+  (`unit_label` like `Unit 3`, plus `unit_order`). Keyed by `(exam_id, topic_id)`.
+
+These three have RLS on with a single read-only policy: **anyone** (signed in or
+not) may `SELECT`; no client role is granted insert, update, or delete. They are
+edited only from the Supabase dashboard or a trusted server.
+
+### Per-user data (own rows only)
+
+- **`user_exams`** — the exams a user picked (a user may pick several). Keyed by
+  `(user_id, exam_id)`. `is_primary` marks their main exam; a partial unique
+  index allows **at most one** `is_primary = true` row per user. `selected_at`
+  records when they added it.
+- **`notify_requests`** — a record that a user clicked "notify me" on a
+  coming-soon exam. Keyed by `(user_id, exam_id)`, with `requested_at`.
+
+These follow the same rule as `attempts`: a signed-in user can `SELECT`,
+`INSERT`, and `UPDATE` only their own rows (`user_id = auth.uid()`), and `anon`
+gets nothing. The one difference: **`user_exams` also allows `DELETE`** of your
+own rows (a user may remove an exam). `notify_requests` has no delete.
+
 ## Who can see and change what
+
+*(This section and the test checklist below cover the first migration's three
+tables — `profiles`, `attempts`, `reading_progress`. The second migration's
+tables follow the patterns described just above.)*
 
 ### Grants (what the Data API exposes)
 
