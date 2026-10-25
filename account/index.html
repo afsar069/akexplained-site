@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Account | AK Explained</title>
+<meta name="description" content="Your AK Explained account: your name, the exams you picked, and log out.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span>My Account</p></div>
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Your account</p>
+    <h1>My Account</h1>
+    <p class="lede">Your name, the paths you picked, and log out.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+
+  <div id="acctNotice" class="authnotice" role="status" hidden></div>
+
+  <div id="acctBody" hidden>
+    <section class="acctcard">
+      <h2>Your name</h2>
+      <form id="nameForm" class="nameform" novalidate>
+        <div class="formerror" role="alert" hidden></div>
+        <label class="field">
+          <span>Display name</span>
+          <input id="nameInput" name="name" type="text" autocomplete="name" required>
+        </label>
+        <button class="btn alt" type="submit">Save name</button>
+        <span id="nameSaved" class="savedmsg" hidden>Saved ✓</span>
+      </form>
+    </section>
+
+    <section class="acctcard">
+      <div class="acctcard-head">
+        <h2>Your paths</h2>
+        <a class="chip" href="/login/?path=1">Change paths</a>
+      </div>
+      <ul id="examList" class="examlist"><li class="small">Loading…</li></ul>
+    </section>
+
+    <section class="acctcard">
+      <button class="btn" id="logoutBtn" type="button">Log out</button>
+    </section>
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/account.js" defer></script>
+</body>
+</html>

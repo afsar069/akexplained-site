@@ -86,6 +86,16 @@ module.exports = function (eleventyConfig) {
       out = out.replace("</body>", '<script src="/assets/nav.js" defer></script>\n</body>');
     }
 
+    // Supabase auth glue on every page: header Login/name control + session.
+    // Loads the vendored library, the (public) config, then our auth.js — in
+    // that order. Never gates content; if unconfigured the header reads "Login".
+    if (!out.includes("/assets/auth.js") && out.includes("</body>")) {
+      out = out.replace("</body>",
+        '<script src="/assets/supabase-2.118.0.js" defer></script>\n' +
+        '<script src="/assets/supabase-config.js" defer></script>\n' +
+        '<script src="/assets/auth.js" defer></script>\n</body>');
+    }
+
     return out;
   });
 
