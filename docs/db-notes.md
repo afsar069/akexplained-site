@@ -83,9 +83,15 @@ There are two kinds of table here.
 
 - **`exams`** — the exams and tracks shown in the picker. `id` is a slug
   (`ugc-net`, `cuet-pg`, …), `name` is the display name, `status` is `active` or
-  `coming_soon`, and `sort_order` sets the order. Seeded with eight rows
-  (`ugc-net` and the non-exam `literature-journey` are `active`; the rest are
-  `coming_soon`).
+  `coming_soon`, and `sort_order` sets the order. A later migration adds three
+  more columns: `kind` (`exam`, `degree`, or `journey` — the family the signup
+  screen groups by), `institution` (university name for a degree, null
+  otherwise), and `level` (`ba` or `ma` for a degree, null otherwise). BA and MA
+  are always separate rows with separate syllabi. Seeded with the seven
+  competitive exams (`kind = exam`), the `literature-journey` track
+  (`kind = journey`), and eight university degree tracks (`kind = degree`:
+  CCSU, Delhi University, AMU, and IGNOU, each as a BA and an MA). `ugc-net` and
+  `literature-journey` are `active`; everything else starts `coming_soon`.
 - **`topics`** — subject topics used to tag questions. `id` is a slug, `name` is
   the display name, `age_slug` links it to an age article (nullable),
   `sort_order` sets the order. Starts empty; the topic list is supplied later.
