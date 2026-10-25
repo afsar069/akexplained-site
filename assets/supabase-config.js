@@ -13,6 +13,6 @@
    features stay switched off and the site works as before.
    ========================================================== */
 window.AK_SUPABASE = {
-  url: "__SUPABASE_URL__",                      // e.g. https://xxxxxxxx.supabase.co
-  publishableKey: "__SUPABASE_PUBLISHABLE_KEY__" // starts with sb_publishable_
+  url: "https://almlqoxcyzwieuwrgwry.supabase.co",
+  publishableKey: "sb_publishable_vhrrU4e5xcuoXNgoFMDCrA_mvihtktd"
 };
