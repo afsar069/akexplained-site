@@ -37,7 +37,7 @@
   <!-- Signup / login, side by side -->
   <div class="authsplit" id="authSplit">
     <div class="authforms">
-      <form id="signupForm" class="authcard" novalidate>
+      <form id="signupForm" class="authcard" novalidate hidden>
         <h2>Create your free account</h2>
         <div class="formerror" role="alert" hidden></div>
         <label class="field">
@@ -57,7 +57,7 @@
         <p class="authswap">Already have an account? <a href="#" data-view="login">Log in</a></p>
       </form>
 
-      <form id="loginForm" class="authcard" novalidate hidden>
+      <form id="loginForm" class="authcard" novalidate>
         <h2>Welcome back</h2>
         <div class="formerror" role="alert" hidden></div>
         <label class="field">
@@ -68,7 +68,9 @@
           <span>Password</span>
           <input name="password" type="password" autocomplete="current-password" required>
         </label>
-        <button class="btn" type="submit">Log in</button>
+        <button class="btn" type="submit">Sign in</button>
+        <p class="authswap"><a href="#" id="forgotLink">Forgot password?</a></p>
+        <p class="forgotnote small" id="forgotNote" hidden>Password reset by email is not available yet. Please <a href="/contact/">contact us</a> and we will help you back into your account.</p>
         <p class="authswap">New here? <a href="#" data-view="signup">Create an account</a></p>
       </form>
     </div>

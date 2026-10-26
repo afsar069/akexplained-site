@@ -1,6 +1,7 @@
 /* ==========================================================
    AK Explained — login / signup / choose-your-path
    Runs only on /login/. Uses the shared client from auth.js.
+   Login is the default view; signup is one click away.
    ========================================================== */
 (function () {
   'use strict';
@@ -10,10 +11,6 @@
   function friendly(err) {
     var m = (err && err.message ? err.message : String(err || 'Something went wrong')).trim();
     var low = m.toLowerCase();
-    if (low.indexOf('already registered') > -1 || low.indexOf('already exists') > -1 ||
-        low.indexOf('already been registered') > -1) {
-      return 'This email is already registered. Try logging in instead.';
-    }
     if (low.indexOf('invalid login') > -1 || low.indexOf('invalid credentials') > -1) {
       return 'Wrong email or password. Please try again.';
     }
@@ -23,19 +20,22 @@
     if (low.indexOf('email') > -1 && low.indexOf('valid') > -1) {
       return 'Please enter a valid email address.';
     }
+    if (low.indexOf('email not confirmed') > -1) {
+      return 'Please confirm your email first, then log in.';
+    }
     return m;
   }
 
-  function showError(box, msg) {
-    if (!box) return;
-    box.textContent = msg;
-    box.hidden = false;
+  function isAlreadyRegistered(err) {
+    var low = (err && err.message ? err.message : '').toLowerCase();
+    return low.indexOf('already registered') > -1 ||
+           low.indexOf('already exists') > -1 ||
+           low.indexOf('already been registered') > -1 ||
+           low.indexOf('user already') > -1;
   }
-  function clearError(box) {
-    if (!box) return;
-    box.textContent = '';
-    box.hidden = true;
-  }
+
+  function showError(box, msg) { if (box) { box.textContent = msg; box.hidden = false; } }
+  function clearError(box) { if (box) { box.textContent = ''; box.hidden = true; } }
 
   function waitForAuth(cb) {
     var tries = 0;
@@ -53,21 +53,33 @@
     var pathScreen = document.getElementById('pathScreen');
     var notice     = document.getElementById('authNotice');
 
-    // Toggle between signup and login views.
+    // Switch between login and signup. prefillEmail (optional) is dropped into
+    // whichever form we switch to.
+    function switchTo(view, prefillEmail) {
+      signupForm.hidden = (view !== 'signup');
+      loginForm.hidden  = (view !== 'login');
+      clearError(signupForm.querySelector('.formerror'));
+      clearError(loginForm.querySelector('.formerror'));
+      var target = (view === 'signup') ? signupForm : loginForm;
+      if (prefillEmail && target.email) target.email.value = prefillEmail;
+      // Put the cursor where the user will type next.
+      var focusEl = (view === 'login' && prefillEmail) ? target.password : target.email;
+      if (focusEl && focusEl.focus) { try { focusEl.focus({ preventScroll: true }); } catch (e) { focusEl.focus(); } }
+    }
+
     document.querySelectorAll('[data-view]').forEach(function (a) {
-      a.addEventListener('click', function (e) {
-        e.preventDefault();
-        var view = a.getAttribute('data-view');
-        signupForm.hidden = (view !== 'signup');
-        loginForm.hidden  = (view !== 'login');
-        clearError(signupForm.querySelector('.formerror'));
-        clearError(loginForm.querySelector('.formerror'));
-      });
+      a.addEventListener('click', function (e) { e.preventDefault(); switchTo(a.getAttribute('data-view')); });
     });
+
+    // Forgot password: no SMTP yet, so be honest instead of failing silently.
+    var forgotLink = document.getElementById('forgotLink');
+    var forgotNote = document.getElementById('forgotNote');
+    if (forgotLink && forgotNote) {
+      forgotLink.addEventListener('click', function (e) { e.preventDefault(); forgotNote.hidden = false; });
+    }
 
     waitForAuth(function (auth) {
       if (!auth || !auth.configured) {
-        // Keys not added yet — be honest, do not show a dead form.
         split.hidden = true;
         if (pathScreen) pathScreen.hidden = true;
         notice.hidden = false;
@@ -81,25 +93,13 @@
       var client = auth.client;
       var forcePath = /[?&]path=1\b/.test(location.search);
 
-      // Has this user already chosen a path?
-      function hasSelection() {
-        return client.from('user_exams').select('exam_id', { count: 'exact', head: true })
-          .then(function (res) { return (res.count || 0) > 0; })
-          .catch(function () { return false; });
-      }
-
-      // Decide what to show for a logged-in user landing here.
-      function routeLoggedIn(session) {
-        if (forcePath) { openPath(session); return; }
-        hasSelection().then(function (has) {
-          if (has) { location.replace('/account/'); }
-          else { openPath(session); }
-        });
-      }
-
-      // If already logged in, skip the forms.
+      // Already logged in? Leave /login/ for /account/ — unless ?path=1 asked
+      // explicitly to change the chosen path.
       auth.session().then(function (session) {
-        if (session && session.user) routeLoggedIn(session);
+        if (session && session.user) {
+          if (forcePath) openPath(session);
+          else location.replace('/account/');
+        }
       });
 
       // ---- signup ----
@@ -123,27 +123,41 @@
           options: { data: { display_name: name } }
         }).then(function (res) {
           submit.disabled = false; submit.textContent = 'Create account';
-          if (res.error) { showError(box, friendly(res.error)); return; }
-
+          if (res.error) {
+            if (isAlreadyRegistered(res.error)) { showRegisteredError(box, email); return; }
+            showError(box, friendly(res.error));
+            return;
+          }
           if (res.data.session && res.data.user) {
-            // Confirmation is off: we are logged in. Save the name, choose path.
+            // Confirmation is off: logged in now. Save the name, choose path.
             saveName(client, res.data.user.id, name).then(function () {
               auth.cacheName(name);
               if (auth.refreshHeader) auth.refreshHeader(res.data.session);
               openPath(res.data.session);
             });
           } else {
-            // Confirmation is on: no session yet.
+            // Fallback only if email confirmation is ever turned back on.
             split.querySelector('.authforms').hidden = true;
             document.querySelector('.authbenefits').hidden = true;
             notice.hidden = false;
-            notice.textContent = 'Account created. Please check your email to confirm it, then come back and log in to choose your path.';
+            notice.textContent = 'Account created. Please check your email to confirm it, then come back and log in.';
           }
         }).catch(function (err) {
           submit.disabled = false; submit.textContent = 'Create account';
           showError(box, friendly(err));
         });
       });
+
+      // Build the "already registered" message with a link into the login form.
+      function showRegisteredError(box, email) {
+        box.textContent = 'This email is already registered. ';
+        var a = document.createElement('a');
+        a.href = '#';
+        a.textContent = 'Log in instead';
+        a.addEventListener('click', function (e) { e.preventDefault(); switchTo('login', email); });
+        box.appendChild(a);
+        box.hidden = false;
+      }
 
       // ---- login ----
       loginForm.addEventListener('submit', function (e) {
@@ -155,15 +169,16 @@
         if (!email || !password) { showError(box, 'Please enter your email and password.'); return; }
 
         var submit = loginForm.querySelector('button[type=submit]');
-        submit.disabled = true; submit.textContent = 'Logging in…';
+        submit.disabled = true; submit.textContent = 'Signing in…';
 
         client.auth.signInWithPassword({ email: email, password: password }).then(function (res) {
-          submit.disabled = false; submit.textContent = 'Log in';
+          submit.disabled = false; submit.textContent = 'Sign in';
           if (res.error) { showError(box, friendly(res.error)); return; }
           if (auth.refreshHeader) auth.refreshHeader(res.data.session);
-          routeLoggedIn(res.data.session);
+          // Returning user → their account. (Path was chosen at signup.)
+          location.replace('/account/');
         }).catch(function (err) {
-          submit.disabled = false; submit.textContent = 'Log in';
+          submit.disabled = false; submit.textContent = 'Sign in';
           showError(box, friendly(err));
         });
       });
@@ -206,11 +221,9 @@
       var journeys = rows.filter(function (r) { return r.kind === 'journey'; });
 
       var html = '';
-      html += groupHtml('Competitive exams', exams.map(optHtml).join(''));
+      if (exams.length) html += groupHtml('Competitive exams', exams.map(optHtml).join(''));
 
-      // Degrees grouped by university.
-      var byInst = {};
-      var instOrder = [];
+      var byInst = {}, instOrder = [];
       degrees.forEach(function (r) {
         var key = r.institution || r.name;
         if (!byInst[key]) { byInst[key] = []; instOrder.push(key); }
@@ -226,12 +239,8 @@
       if (journeys.length) html += groupHtml('Literature journey', journeys.map(optHtml).join(''));
 
       wrap.innerHTML = html;
-      wrap.querySelectorAll('input[type=checkbox]').forEach(function (cb) {
-        cb.addEventListener('change', onToggle);
-      });
-      wrap.querySelectorAll('.notifybtn').forEach(function (b) {
-        b.addEventListener('click', onNotify);
-      });
+      wrap.querySelectorAll('input[type=checkbox]').forEach(function (cb) { cb.addEventListener('change', onToggle); });
+      wrap.querySelectorAll('.notifybtn').forEach(function (b) { b.addEventListener('click', onNotify); });
     }
 
     function groupHtml(title, inner) {
@@ -241,7 +250,6 @@
     function optHtml(r) {
       var active = r.status === 'active';
       var label = r.name;
-      // For a degree row, show the level clearly.
       if (r.kind === 'degree' && r.level) {
         label = (r.level === 'ba' ? 'BA English' : r.level === 'ma' ? 'MA English' : r.level);
       }
@@ -270,9 +278,7 @@
       wrap.querySelectorAll('.pathopt').forEach(function (opt) {
         var tag = opt.querySelector('.primtag');
         if (!tag) return;
-        var id = opt.getAttribute('data-id');
-        var isPrimary = selection.length && selection[0] === id;
-        tag.hidden = !isPrimary;
+        tag.hidden = !(selection.length && selection[0] === opt.getAttribute('data-id'));
       });
     }
 
@@ -289,7 +295,6 @@
       }).catch(function () { btn.disabled = false; btn.textContent = 'Try again'; });
     }
 
-    // Save / skip.
     document.getElementById('pathSave').addEventListener('click', function () {
       clearError(box);
       if (!selection.length) { showError(box, 'Pick at least one path, or press Skip for now.'); return; }
@@ -303,7 +308,6 @@
       var btnSave = document.getElementById('pathSave');
       var btnSkip = document.getElementById('pathSkip');
       btnSave.disabled = true; btnSkip.disabled = true;
-      // Replace any existing choice so there is never more than one primary.
       client.from('user_exams').delete().eq('user_id', session.user.id).then(function () {
         var rows = ids.map(function (id) {
           return { user_id: session.user.id, exam_id: id, is_primary: id === primaryId };
