@@ -1,0 +1,569 @@
+id,name,parent_id,kind,sort_order
+british-literature,British Literature,,area,100
+old-english,Old English Period (450-1066),british-literature,period,110
+bede,Bede,old-english,writer,111
+ecclesiastical-history,Ecclesiastical History of the English People,bede,work,112
+caedmon,Caedmon,old-english,writer,113
+caedmons-hymn,Caedmon's Hymn,caedmon,work,114
+cynewulf,Cynewulf,old-english,writer,115
+beowulf,Beowulf,old-english,work,116
+the-dream-of-the-rood,The Dream of the Rood,old-english,work,117
+the-wanderer,The Wanderer,old-english,work,118
+the-seafarer,The Seafarer,old-english,work,119
+deor,Deor,old-english,work,120
+widsith,Widsith,old-english,work,121
+the-battle-of-maldon,The Battle of Maldon,old-english,work,122
+the-battle-of-brunanburh,The Battle of Brunanburh,old-english,work,123
+judith-oe,Judith,old-english,work,124
+old-english-elegies,Old English Elegies,old-english,concept,125
+old-english-riddles,Old English Riddles,old-english,concept,126
+exeter-book,The Exeter Book,old-english,concept,127
+vercelli-book,The Vercelli Book,old-english,concept,128
+junius-manuscript,The Junius Manuscript,old-english,concept,129
+nowell-codex,The Nowell Codex,old-english,concept,130
+anglo-saxon-chronicle,The Anglo-Saxon Chronicle,old-english,work,131
+king-alfred,King Alfred,old-english,writer,132
+aelfric,Aelfric,old-english,writer,133
+wulfstan,Wulfstan,old-english,writer,134
+middle-english,Middle English Period (1066-1500),british-literature,period,200
+geoffrey-chaucer,Geoffrey Chaucer,middle-english,writer,201
+the-canterbury-tales,The Canterbury Tales,geoffrey-chaucer,work,202
+troilus-and-criseyde,Troilus and Criseyde,geoffrey-chaucer,work,203
+the-book-of-the-duchess,The Book of the Duchess,geoffrey-chaucer,work,204
+the-parliament-of-fowls,The Parliament of Fowls,geoffrey-chaucer,work,205
+the-house-of-fame,The House of Fame,geoffrey-chaucer,work,206
+william-langland,William Langland,middle-english,writer,207
+piers-plowman,Piers Plowman,william-langland,work,208
+the-gawain-poet,The Gawain Poet,middle-english,writer,209
+sir-gawain-and-the-green-knight,Sir Gawain and the Green Knight,the-gawain-poet,work,210
+pearl,Pearl,the-gawain-poet,work,211
+john-gower,John Gower,middle-english,writer,212
+confessio-amantis,Confessio Amantis,john-gower,work,213
+thomas-malory,Sir Thomas Malory,middle-english,writer,214
+le-morte-darthur,Le Morte d'Arthur,thomas-malory,work,215
+julian-of-norwich,Julian of Norwich,middle-english,writer,216
+margery-kempe,Margery Kempe,middle-english,writer,217
+john-wycliffe,John Wycliffe,middle-english,writer,218
+william-caxton,William Caxton,middle-english,writer,219
+layamon,Layamon,middle-english,writer,220
+layamons-brut,Layamon's Brut,layamon,work,221
+the-owl-and-the-nightingale,The Owl and the Nightingale,middle-english,work,222
+everyman,Everyman,middle-english,work,223
+mystery-plays,Mystery Plays,middle-english,concept,224
+miracle-plays,Miracle Plays,middle-english,concept,225
+morality-plays,Morality Plays,middle-english,concept,226
+medieval-romance,Medieval Romance,middle-english,concept,227
+popular-ballads,Popular Ballads,middle-english,concept,228
+middle-english-lyrics,Middle English Lyrics,middle-english,concept,229
+scottish-chaucerians,The Scottish Chaucerians,middle-english,concept,230
+renaissance,The Renaissance (1500-1603),british-literature,period,300
+english-renaissance-humanism,English Renaissance Humanism,renaissance,concept,301
+thomas-more,Sir Thomas More,renaissance,writer,302
+utopia,Utopia,thomas-more,work,303
+thomas-wyatt,Sir Thomas Wyatt,renaissance,writer,304
+henry-howard-surrey,Henry Howard Earl of Surrey,renaissance,writer,305
+tottels-miscellany,Tottel's Miscellany,renaissance,work,306
+elizabethan-sonnet-sequence,The Elizabethan Sonnet Sequence,renaissance,concept,307
+edmund-spenser,Edmund Spenser,renaissance,writer,308
+the-faerie-queene,The Faerie Queene,edmund-spenser,work,309
+the-shepheardes-calender,The Shepheardes Calender,edmund-spenser,work,310
+amoretti,Amoretti,edmund-spenser,work,311
+epithalamion,Epithalamion,edmund-spenser,work,312
+philip-sidney,Sir Philip Sidney,renaissance,writer,313
+astrophil-and-stella,Astrophil and Stella,philip-sidney,work,314
+an-apology-for-poetry,An Apology for Poetry,philip-sidney,work,315
+arcadia,Arcadia,philip-sidney,work,316
+walter-raleigh,Sir Walter Raleigh,renaissance,writer,317
+university-wits,The University Wits,renaissance,concept,318
+john-lyly,John Lyly,renaissance,writer,319
+euphuism,Euphuism,john-lyly,concept,320
+robert-greene,Robert Greene,renaissance,writer,321
+thomas-nashe,Thomas Nashe,renaissance,writer,322
+the-unfortunate-traveller,The Unfortunate Traveller,thomas-nashe,work,323
+thomas-kyd,Thomas Kyd,renaissance,writer,324
+the-spanish-tragedy,The Spanish Tragedy,thomas-kyd,work,325
+christopher-marlowe,Christopher Marlowe,renaissance,writer,326
+doctor-faustus,Doctor Faustus,christopher-marlowe,work,327
+tamburlaine,Tamburlaine the Great,christopher-marlowe,work,328
+the-jew-of-malta,The Jew of Malta,christopher-marlowe,work,329
+edward-ii,Edward II,christopher-marlowe,work,330
+hero-and-leander,Hero and Leander,christopher-marlowe,work,331
+william-shakespeare,William Shakespeare,renaissance,writer,332
+shakespearean-tragedy,Shakespearean Tragedy,william-shakespeare,concept,333
+shakespearean-comedy,Shakespearean Comedy,william-shakespeare,concept,334
+shakespearean-history-plays,Shakespearean History Plays,william-shakespeare,concept,335
+shakespeares-problem-plays,Shakespeare's Problem Plays,william-shakespeare,concept,336
+shakespeares-romances,Shakespeare's Last Romances,william-shakespeare,concept,337
+shakespeares-sonnets,Shakespeare's Sonnets,william-shakespeare,work,338
+hamlet,Hamlet,shakespearean-tragedy,work,339
+macbeth,Macbeth,shakespearean-tragedy,work,340
+king-lear,King Lear,shakespearean-tragedy,work,341
+othello,Othello,shakespearean-tragedy,work,342
+julius-caesar,Julius Caesar,shakespearean-tragedy,work,343
+antony-and-cleopatra,Antony and Cleopatra,shakespearean-tragedy,work,344
+romeo-and-juliet,Romeo and Juliet,shakespearean-tragedy,work,345
+coriolanus,Coriolanus,shakespearean-tragedy,work,346
+a-midsummer-nights-dream,A Midsummer Night's Dream,shakespearean-comedy,work,347
+twelfth-night,Twelfth Night,shakespearean-comedy,work,348
+as-you-like-it,As You Like It,shakespearean-comedy,work,349
+much-ado-about-nothing,Much Ado About Nothing,shakespearean-comedy,work,350
+the-merchant-of-venice,The Merchant of Venice,shakespearean-comedy,work,351
+the-comedy-of-errors,The Comedy of Errors,shakespearean-comedy,work,352
+the-taming-of-the-shrew,The Taming of the Shrew,shakespearean-comedy,work,353
+richard-ii,Richard II,shakespearean-history-plays,work,354
+richard-iii,Richard III,shakespearean-history-plays,work,355
+henry-iv,Henry IV,shakespearean-history-plays,work,356
+henry-v,Henry V,shakespearean-history-plays,work,357
+measure-for-measure,Measure for Measure,shakespeares-problem-plays,work,358
+the-tempest,The Tempest,shakespeares-romances,work,359
+the-winters-tale,The Winter's Tale,shakespeares-romances,work,360
+cymbeline,Cymbeline,shakespeares-romances,work,361
+elizabethan-drama,Elizabethan Drama,renaissance,concept,362
+jacobean,Jacobean and Caroline Period (1603-1660),british-literature,period,400
+ben-jonson,Ben Jonson,jacobean,writer,401
+volpone,Volpone,ben-jonson,work,402
+the-alchemist,The Alchemist,ben-jonson,work,403
+every-man-in-his-humour,Every Man in His Humour,ben-jonson,work,404
+bartholomew-fair,Bartholomew Fair,ben-jonson,work,405
+comedy-of-humours,Comedy of Humours,ben-jonson,concept,406
+the-court-masque,The Court Masque,jacobean,concept,407
+john-webster,John Webster,jacobean,writer,408
+the-duchess-of-malfi,The Duchess of Malfi,john-webster,work,409
+the-white-devil,The White Devil,john-webster,work,410
+thomas-middleton,Thomas Middleton,jacobean,writer,411
+the-changeling,The Changeling,thomas-middleton,work,412
+women-beware-women,Women Beware Women,thomas-middleton,work,413
+john-ford,John Ford,jacobean,writer,414
+tis-pity-shes-a-whore,'Tis Pity She's a Whore,john-ford,work,415
+beaumont-and-fletcher,Beaumont and Fletcher,jacobean,writer,416
+the-revengers-tragedy,The Revenger's Tragedy,jacobean,work,417
+revenge-tragedy,Revenge Tragedy,jacobean,concept,418
+city-comedy,City Comedy,jacobean,concept,419
+jacobean-drama,Jacobean Drama,jacobean,concept,420
+john-donne,John Donne,jacobean,writer,421
+the-canonization,The Canonization,john-donne,work,422
+a-valediction-forbidding-mourning,A Valediction Forbidding Mourning,john-donne,work,423
+the-sun-rising,The Sun Rising,john-donne,work,424
+holy-sonnets,Holy Sonnets,john-donne,work,425
+metaphysical-poetry,Metaphysical Poetry,jacobean,concept,426
+metaphysical-conceit,The Metaphysical Conceit,metaphysical-poetry,concept,427
+george-herbert,George Herbert,jacobean,writer,428
+the-temple,The Temple,george-herbert,work,429
+henry-vaughan,Henry Vaughan,jacobean,writer,430
+richard-crashaw,Richard Crashaw,jacobean,writer,431
+andrew-marvell,Andrew Marvell,jacobean,writer,432
+to-his-coy-mistress,To His Coy Mistress,andrew-marvell,work,433
+abraham-cowley,Abraham Cowley,jacobean,writer,434
+cavalier-poets,The Cavalier Poets,jacobean,concept,435
+robert-herrick,Robert Herrick,cavalier-poets,writer,436
+richard-lovelace,Richard Lovelace,cavalier-poets,writer,437
+john-suckling,Sir John Suckling,cavalier-poets,writer,438
+thomas-carew,Thomas Carew,cavalier-poets,writer,439
+john-milton,John Milton,jacobean,writer,440
+paradise-lost,Paradise Lost,john-milton,work,441
+paradise-regained,Paradise Regained,john-milton,work,442
+samson-agonistes,Samson Agonistes,john-milton,work,443
+lycidas,Lycidas,john-milton,work,444
+areopagitica,Areopagitica,john-milton,work,445
+lallegro-and-il-penseroso,L'Allegro and Il Penseroso,john-milton,work,446
+francis-bacon,Francis Bacon,jacobean,writer,447
+bacons-essays,Bacon's Essays,francis-bacon,work,448
+the-advancement-of-learning,The Advancement of Learning,francis-bacon,work,449
+novum-organum,Novum Organum,francis-bacon,work,450
+robert-burton,Robert Burton,jacobean,writer,451
+the-anatomy-of-melancholy,The Anatomy of Melancholy,robert-burton,work,452
+thomas-browne,Sir Thomas Browne,jacobean,writer,453
+religio-medici,Religio Medici,thomas-browne,work,454
+izaak-walton,Izaak Walton,jacobean,writer,455
+king-james-bible,The King James Bible,jacobean,work,456
+restoration,The Restoration Period (1660-1700),british-literature,period,500
+john-dryden,John Dryden,restoration,writer,501
+absalom-and-achitophel,Absalom and Achitophel,john-dryden,work,502
+mac-flecknoe,Mac Flecknoe,john-dryden,work,503
+an-essay-of-dramatic-poesy,An Essay of Dramatic Poesy,john-dryden,work,504
+all-for-love,All for Love,john-dryden,work,505
+the-hind-and-the-panther,The Hind and the Panther,john-dryden,work,506
+restoration-comedy,Restoration Comedy,restoration,concept,507
+comedy-of-manners,Comedy of Manners,restoration-comedy,concept,508
+william-congreve,William Congreve,restoration,writer,509
+the-way-of-the-world,The Way of the World,william-congreve,work,510
+love-for-love,Love for Love,william-congreve,work,511
+william-wycherley,William Wycherley,restoration,writer,512
+the-country-wife,The Country Wife,william-wycherley,work,513
+george-etherege,Sir George Etherege,restoration,writer,514
+the-man-of-mode,The Man of Mode,george-etherege,work,515
+aphra-behn,Aphra Behn,restoration,writer,516
+oroonoko,Oroonoko,aphra-behn,work,517
+the-rover,The Rover,aphra-behn,work,518
+heroic-tragedy,Heroic Tragedy,restoration,concept,519
+thomas-otway,Thomas Otway,restoration,writer,520
+venice-preserved,Venice Preserved,thomas-otway,work,521
+earl-of-rochester,John Wilmot Earl of Rochester,restoration,writer,522
+jeremy-collier,Jeremy Collier,restoration,writer,523
+john-bunyan,John Bunyan,restoration,writer,524
+the-pilgrims-progress,The Pilgrim's Progress,john-bunyan,work,525
+samuel-pepys,Samuel Pepys,restoration,writer,526
+pepys-diary,The Diary of Samuel Pepys,samuel-pepys,work,527
+thomas-hobbes,Thomas Hobbes,restoration,writer,528
+leviathan,Leviathan,thomas-hobbes,work,529
+john-locke,John Locke,restoration,writer,530
+restoration-prose-style,Restoration Prose Style,restoration,concept,531
+augustan-age,The Augustan Age (1700-1798),british-literature,period,600
+neoclassicism,Neoclassicism,augustan-age,concept,601
+augustan-satire,Augustan Satire,augustan-age,concept,602
+alexander-pope,Alexander Pope,augustan-age,writer,603
+the-rape-of-the-lock,The Rape of the Lock,alexander-pope,work,604
+an-essay-on-criticism,An Essay on Criticism,alexander-pope,work,605
+an-essay-on-man,An Essay on Man,alexander-pope,work,606
+the-dunciad,The Dunciad,alexander-pope,work,607
+epistle-to-dr-arbuthnot,Epistle to Dr Arbuthnot,alexander-pope,work,608
+jonathan-swift,Jonathan Swift,augustan-age,writer,609
+gullivers-travels,Gulliver's Travels,jonathan-swift,work,610
+a-modest-proposal,A Modest Proposal,jonathan-swift,work,611
+a-tale-of-a-tub,A Tale of a Tub,jonathan-swift,work,612
+the-battle-of-the-books,The Battle of the Books,jonathan-swift,work,613
+joseph-addison,Joseph Addison,augustan-age,writer,614
+richard-steele,Sir Richard Steele,augustan-age,writer,615
+the-spectator,The Spectator,joseph-addison,work,616
+the-tatler,The Tatler,richard-steele,work,617
+the-periodical-essay,The Periodical Essay,augustan-age,concept,618
+the-rise-of-the-novel,The Rise of the Novel,augustan-age,concept,619
+daniel-defoe,Daniel Defoe,augustan-age,writer,620
+robinson-crusoe,Robinson Crusoe,daniel-defoe,work,621
+moll-flanders,Moll Flanders,daniel-defoe,work,622
+a-journal-of-the-plague-year,A Journal of the Plague Year,daniel-defoe,work,623
+samuel-richardson,Samuel Richardson,augustan-age,writer,624
+pamela,Pamela,samuel-richardson,work,625
+clarissa,Clarissa,samuel-richardson,work,626
+the-epistolary-novel,The Epistolary Novel,augustan-age,concept,627
+henry-fielding,Henry Fielding,augustan-age,writer,628
+tom-jones,Tom Jones,henry-fielding,work,629
+joseph-andrews,Joseph Andrews,henry-fielding,work,630
+shamela,Shamela,henry-fielding,work,631
+laurence-sterne,Laurence Sterne,augustan-age,writer,632
+tristram-shandy,Tristram Shandy,laurence-sterne,work,633
+a-sentimental-journey,A Sentimental Journey,laurence-sterne,work,634
+tobias-smollett,Tobias Smollett,augustan-age,writer,635
+humphry-clinker,Humphry Clinker,tobias-smollett,work,636
+fanny-burney,Fanny Burney,augustan-age,writer,637
+evelina,Evelina,fanny-burney,work,638
+samuel-johnson,Samuel Johnson,augustan-age,writer,639
+johnsons-dictionary,A Dictionary of the English Language,samuel-johnson,work,640
+lives-of-the-poets,Lives of the Poets,samuel-johnson,work,641
+rasselas,Rasselas,samuel-johnson,work,642
+preface-to-shakespeare,Preface to Shakespeare,samuel-johnson,work,643
+james-boswell,James Boswell,augustan-age,writer,644
+the-life-of-samuel-johnson,The Life of Samuel Johnson,james-boswell,work,645
+oliver-goldsmith,Oliver Goldsmith,augustan-age,writer,646
+the-vicar-of-wakefield,The Vicar of Wakefield,oliver-goldsmith,work,647
+she-stoops-to-conquer,She Stoops to Conquer,oliver-goldsmith,work,648
+the-deserted-village,The Deserted Village,oliver-goldsmith,work,649
+richard-brinsley-sheridan,Richard Brinsley Sheridan,augustan-age,writer,650
+the-rivals,The Rivals,richard-brinsley-sheridan,work,651
+the-school-for-scandal,The School for Scandal,richard-brinsley-sheridan,work,652
+sentimental-comedy,Sentimental Comedy,augustan-age,concept,653
+the-graveyard-poets,The Graveyard Poets,augustan-age,concept,654
+thomas-gray,Thomas Gray,the-graveyard-poets,writer,655
+elegy-written-in-a-country-churchyard,Elegy Written in a Country Churchyard,thomas-gray,work,656
+william-collins,William Collins,the-graveyard-poets,writer,657
+edward-young,Edward Young,the-graveyard-poets,writer,658
+robert-burns,Robert Burns,augustan-age,writer,659
+william-cowper,William Cowper,augustan-age,writer,660
+george-crabbe,George Crabbe,augustan-age,writer,661
+thomas-chatterton,Thomas Chatterton,augustan-age,writer,662
+james-macpherson,James Macpherson,augustan-age,writer,663
+the-gothic-novel,The Gothic Novel,augustan-age,concept,664
+horace-walpole,Horace Walpole,the-gothic-novel,writer,665
+the-castle-of-otranto,The Castle of Otranto,horace-walpole,work,666
+ann-radcliffe,Ann Radcliffe,the-gothic-novel,writer,667
+the-mysteries-of-udolpho,The Mysteries of Udolpho,ann-radcliffe,work,668
+matthew-lewis,Matthew Lewis,the-gothic-novel,writer,669
+the-monk,The Monk,matthew-lewis,work,670
+edmund-burke,Edmund Burke,augustan-age,writer,671
+mary-wollstonecraft,Mary Wollstonecraft,augustan-age,writer,672
+a-vindication-of-the-rights-of-woman,A Vindication of the Rights of Woman,mary-wollstonecraft,work,673
+romantic-age,The Romantic Age (1798-1837),british-literature,period,700
+romanticism,Romanticism,romantic-age,concept,701
+the-romantic-imagination,The Romantic Imagination,romantic-age,concept,702
+the-lake-poets,The Lake Poets,romantic-age,concept,703
+william-blake,William Blake,romantic-age,writer,704
+songs-of-innocence-and-of-experience,Songs of Innocence and of Experience,william-blake,work,705
+the-marriage-of-heaven-and-hell,The Marriage of Heaven and Hell,william-blake,work,706
+the-tyger,The Tyger,william-blake,work,707
+william-wordsworth,William Wordsworth,romantic-age,writer,708
+lyrical-ballads,Lyrical Ballads,william-wordsworth,work,709
+preface-to-lyrical-ballads,Preface to Lyrical Ballads,william-wordsworth,work,710
+tintern-abbey,Tintern Abbey,william-wordsworth,work,711
+the-prelude,The Prelude,william-wordsworth,work,712
+immortality-ode,Ode: Intimations of Immortality,william-wordsworth,work,713
+the-solitary-reaper,The Solitary Reaper,william-wordsworth,work,714
+samuel-taylor-coleridge,Samuel Taylor Coleridge,romantic-age,writer,715
+the-rime-of-the-ancient-mariner,The Rime of the Ancient Mariner,samuel-taylor-coleridge,work,716
+kubla-khan,Kubla Khan,samuel-taylor-coleridge,work,717
+christabel,Christabel,samuel-taylor-coleridge,work,718
+biographia-literaria,Biographia Literaria,samuel-taylor-coleridge,work,719
+dejection-an-ode,Dejection: An Ode,samuel-taylor-coleridge,work,720
+willing-suspension-of-disbelief,Willing Suspension of Disbelief,samuel-taylor-coleridge,concept,721
+lord-byron,Lord Byron,romantic-age,writer,722
+don-juan,Don Juan,lord-byron,work,723
+childe-harolds-pilgrimage,Childe Harold's Pilgrimage,lord-byron,work,724
+the-byronic-hero,The Byronic Hero,lord-byron,concept,725
+percy-bysshe-shelley,Percy Bysshe Shelley,romantic-age,writer,726
+ode-to-the-west-wind,Ode to the West Wind,percy-bysshe-shelley,work,727
+prometheus-unbound,Prometheus Unbound,percy-bysshe-shelley,work,728
+adonais,Adonais,percy-bysshe-shelley,work,729
+a-defence-of-poetry,A Defence of Poetry,percy-bysshe-shelley,work,730
+ozymandias,Ozymandias,percy-bysshe-shelley,work,731
+john-keats,John Keats,romantic-age,writer,732
+ode-to-a-nightingale,Ode to a Nightingale,john-keats,work,733
+ode-on-a-grecian-urn,Ode on a Grecian Urn,john-keats,work,734
+to-autumn,To Autumn,john-keats,work,735
+the-eve-of-st-agnes,The Eve of St Agnes,john-keats,work,736
+hyperion,Hyperion,john-keats,work,737
+keats-letters,The Letters of John Keats,john-keats,work,738
+negative-capability,Negative Capability,john-keats,concept,739
+charles-lamb,Charles Lamb,romantic-age,writer,740
+essays-of-elia,Essays of Elia,charles-lamb,work,741
+william-hazlitt,William Hazlitt,romantic-age,writer,742
+thomas-de-quincey,Thomas De Quincey,romantic-age,writer,743
+confessions-of-an-english-opium-eater,Confessions of an English Opium Eater,thomas-de-quincey,work,744
+leigh-hunt,Leigh Hunt,romantic-age,writer,745
+jane-austen,Jane Austen,romantic-age,writer,746
+pride-and-prejudice,Pride and Prejudice,jane-austen,work,747
+emma,Emma,jane-austen,work,748
+sense-and-sensibility,Sense and Sensibility,jane-austen,work,749
+mansfield-park,Mansfield Park,jane-austen,work,750
+persuasion,Persuasion,jane-austen,work,751
+northanger-abbey,Northanger Abbey,jane-austen,work,752
+walter-scott,Sir Walter Scott,romantic-age,writer,753
+waverley,Waverley,walter-scott,work,754
+ivanhoe,Ivanhoe,walter-scott,work,755
+the-historical-novel,The Historical Novel,romantic-age,concept,756
+mary-shelley,Mary Shelley,romantic-age,writer,757
+frankenstein,Frankenstein,mary-shelley,work,758
+maria-edgeworth,Maria Edgeworth,romantic-age,writer,759
+victorian-age,The Victorian Age (1837-1901),british-literature,period,800
+victorian-doubt,Victorian Doubt and Faith,victorian-age,concept,801
+the-victorian-novel,The Victorian Novel,victorian-age,concept,802
+condition-of-england-novel,The Condition of England Novel,victorian-age,concept,803
+alfred-tennyson,Alfred Lord Tennyson,victorian-age,writer,804
+in-memoriam,In Memoriam A.H.H.,alfred-tennyson,work,805
+ulysses-tennyson,Ulysses,alfred-tennyson,work,806
+the-lady-of-shalott,The Lady of Shalott,alfred-tennyson,work,807
+idylls-of-the-king,Idylls of the King,alfred-tennyson,work,808
+the-lotos-eaters,The Lotos-Eaters,alfred-tennyson,work,809
+robert-browning,Robert Browning,victorian-age,writer,810
+my-last-duchess,My Last Duchess,robert-browning,work,811
+the-ring-and-the-book,The Ring and the Book,robert-browning,work,812
+fra-lippo-lippi,Fra Lippo Lippi,robert-browning,work,813
+andrea-del-sarto,Andrea del Sarto,robert-browning,work,814
+the-dramatic-monologue,The Dramatic Monologue,victorian-age,concept,815
+elizabeth-barrett-browning,Elizabeth Barrett Browning,victorian-age,writer,816
+sonnets-from-the-portuguese,Sonnets from the Portuguese,elizabeth-barrett-browning,work,817
+aurora-leigh,Aurora Leigh,elizabeth-barrett-browning,work,818
+matthew-arnold,Matthew Arnold,victorian-age,writer,819
+dover-beach,Dover Beach,matthew-arnold,work,820
+the-scholar-gipsy,The Scholar-Gipsy,matthew-arnold,work,821
+culture-and-anarchy,Culture and Anarchy,matthew-arnold,work,822
+the-study-of-poetry,The Study of Poetry,matthew-arnold,work,823
+the-touchstone-method,The Touchstone Method,matthew-arnold,concept,824
+gerard-manley-hopkins,Gerard Manley Hopkins,victorian-age,writer,825
+the-windhover,The Windhover,gerard-manley-hopkins,work,826
+sprung-rhythm,Sprung Rhythm,gerard-manley-hopkins,concept,827
+inscape-and-instress,Inscape and Instress,gerard-manley-hopkins,concept,828
+pre-raphaelite-brotherhood,The Pre-Raphaelite Brotherhood,victorian-age,concept,829
+dante-gabriel-rossetti,Dante Gabriel Rossetti,pre-raphaelite-brotherhood,writer,830
+christina-rossetti,Christina Rossetti,pre-raphaelite-brotherhood,writer,831
+goblin-market,Goblin Market,christina-rossetti,work,832
+william-morris,William Morris,pre-raphaelite-brotherhood,writer,833
+algernon-swinburne,Algernon Charles Swinburne,victorian-age,writer,834
+edward-fitzgerald,Edward FitzGerald,victorian-age,writer,835
+charles-dickens,Charles Dickens,victorian-age,writer,836
+great-expectations,Great Expectations,charles-dickens,work,837
+hard-times,Hard Times,charles-dickens,work,838
+bleak-house,Bleak House,charles-dickens,work,839
+oliver-twist,Oliver Twist,charles-dickens,work,840
+david-copperfield,David Copperfield,charles-dickens,work,841
+a-tale-of-two-cities,A Tale of Two Cities,charles-dickens,work,842
+the-pickwick-papers,The Pickwick Papers,charles-dickens,work,843
+william-thackeray,William Makepeace Thackeray,victorian-age,writer,844
+vanity-fair,Vanity Fair,william-thackeray,work,845
+charlotte-bronte,Charlotte Bronte,victorian-age,writer,846
+jane-eyre,Jane Eyre,charlotte-bronte,work,847
+villette,Villette,charlotte-bronte,work,848
+emily-bronte,Emily Bronte,victorian-age,writer,849
+wuthering-heights,Wuthering Heights,emily-bronte,work,850
+anne-bronte,Anne Bronte,victorian-age,writer,851
+george-eliot,George Eliot,victorian-age,writer,852
+middlemarch,Middlemarch,george-eliot,work,853
+the-mill-on-the-floss,The Mill on the Floss,george-eliot,work,854
+silas-marner,Silas Marner,george-eliot,work,855
+adam-bede,Adam Bede,george-eliot,work,856
+thomas-hardy,Thomas Hardy,victorian-age,writer,857
+tess-of-the-durbervilles,Tess of the d'Urbervilles,thomas-hardy,work,858
+jude-the-obscure,Jude the Obscure,thomas-hardy,work,859
+the-mayor-of-casterbridge,The Mayor of Casterbridge,thomas-hardy,work,860
+far-from-the-madding-crowd,Far from the Madding Crowd,thomas-hardy,work,861
+the-return-of-the-native,The Return of the Native,thomas-hardy,work,862
+wessex,Hardy's Wessex,thomas-hardy,concept,863
+anthony-trollope,Anthony Trollope,victorian-age,writer,864
+elizabeth-gaskell,Elizabeth Gaskell,victorian-age,writer,865
+north-and-south,North and South,elizabeth-gaskell,work,866
+mary-barton,Mary Barton,elizabeth-gaskell,work,867
+wilkie-collins,Wilkie Collins,victorian-age,writer,868
+the-moonstone,The Moonstone,wilkie-collins,work,869
+the-sensation-novel,The Sensation Novel,victorian-age,concept,870
+george-meredith,George Meredith,victorian-age,writer,871
+samuel-butler,Samuel Butler,victorian-age,writer,872
+robert-louis-stevenson,Robert Louis Stevenson,victorian-age,writer,873
+lewis-carroll,Lewis Carroll,victorian-age,writer,874
+oscar-wilde,Oscar Wilde,victorian-age,writer,875
+the-importance-of-being-earnest,The Importance of Being Earnest,oscar-wilde,work,876
+the-picture-of-dorian-gray,The Picture of Dorian Gray,oscar-wilde,work,877
+aestheticism,Aestheticism,victorian-age,concept,878
+decadence,The Decadent Movement,victorian-age,concept,879
+walter-pater,Walter Pater,victorian-age,writer,880
+thomas-carlyle,Thomas Carlyle,victorian-age,writer,881
+sartor-resartus,Sartor Resartus,thomas-carlyle,work,882
+on-heroes-and-hero-worship,On Heroes and Hero-Worship,thomas-carlyle,work,883
+john-ruskin,John Ruskin,victorian-age,writer,884
+john-stuart-mill,John Stuart Mill,victorian-age,writer,885
+john-henry-newman,John Henry Newman,victorian-age,writer,886
+modern,The Modern Period (1901-1945),british-literature,period,900
+modernism,Modernism,modern,concept,901
+stream-of-consciousness,Stream of Consciousness,modern,concept,902
+the-irish-literary-revival,The Irish Literary Revival,modern,concept,903
+the-abbey-theatre,The Abbey Theatre,the-irish-literary-revival,concept,904
+the-bloomsbury-group,The Bloomsbury Group,modern,concept,905
+wb-yeats,W. B. Yeats,modern,writer,906
+the-second-coming,The Second Coming,wb-yeats,work,907
+sailing-to-byzantium,Sailing to Byzantium,wb-yeats,work,908
+easter-1916,Easter 1916,wb-yeats,work,909
+a-vision,A Vision,wb-yeats,work,910
+ts-eliot,T. S. Eliot,modern,writer,911
+the-waste-land,The Waste Land,ts-eliot,work,912
+the-love-song-of-j-alfred-prufrock,The Love Song of J. Alfred Prufrock,ts-eliot,work,913
+tradition-and-the-individual-talent,Tradition and the Individual Talent,ts-eliot,work,914
+four-quartets,Four Quartets,ts-eliot,work,915
+murder-in-the-cathedral,Murder in the Cathedral,ts-eliot,work,916
+objective-correlative,The Objective Correlative,ts-eliot,concept,917
+dissociation-of-sensibility,Dissociation of Sensibility,ts-eliot,concept,918
+ezra-pound,Ezra Pound,modern,writer,919
+imagism,Imagism,ezra-pound,concept,920
+the-cantos,The Cantos,ezra-pound,work,921
+wh-auden,W. H. Auden,modern,writer,922
+stephen-spender,Stephen Spender,modern,writer,923
+louis-macneice,Louis MacNeice,modern,writer,924
+cecil-day-lewis,Cecil Day-Lewis,modern,writer,925
+the-thirties-poets,The Thirties Poets,modern,concept,926
+dylan-thomas,Dylan Thomas,modern,writer,927
+the-war-poets,The War Poets,modern,concept,928
+wilfred-owen,Wilfred Owen,the-war-poets,writer,929
+siegfried-sassoon,Siegfried Sassoon,the-war-poets,writer,930
+rupert-brooke,Rupert Brooke,the-war-poets,writer,931
+isaac-rosenberg,Isaac Rosenberg,the-war-poets,writer,932
+georgian-poetry,Georgian Poetry,modern,concept,933
+james-joyce,James Joyce,modern,writer,934
+ulysses-joyce,Ulysses,james-joyce,work,935
+a-portrait-of-the-artist-as-a-young-man,A Portrait of the Artist as a Young Man,james-joyce,work,936
+dubliners,Dubliners,james-joyce,work,937
+finnegans-wake,Finnegans Wake,james-joyce,work,938
+epiphany,Epiphany,james-joyce,concept,939
+virginia-woolf,Virginia Woolf,modern,writer,940
+mrs-dalloway,Mrs Dalloway,virginia-woolf,work,941
+to-the-lighthouse,To the Lighthouse,virginia-woolf,work,942
+a-room-of-ones-own,A Room of One's Own,virginia-woolf,work,943
+orlando,Orlando,virginia-woolf,work,944
+the-waves,The Waves,virginia-woolf,work,945
+modern-fiction-essay,Modern Fiction,virginia-woolf,work,946
+dh-lawrence,D. H. Lawrence,modern,writer,947
+sons-and-lovers,Sons and Lovers,dh-lawrence,work,948
+women-in-love,Women in Love,dh-lawrence,work,949
+the-rainbow,The Rainbow,dh-lawrence,work,950
+lady-chatterleys-lover,Lady Chatterley's Lover,dh-lawrence,work,951
+em-forster,E. M. Forster,modern,writer,952
+a-passage-to-india,A Passage to India,em-forster,work,953
+howards-end,Howards End,em-forster,work,954
+aspects-of-the-novel,Aspects of the Novel,em-forster,work,955
+joseph-conrad,Joseph Conrad,modern,writer,956
+heart-of-darkness,Heart of Darkness,joseph-conrad,work,957
+lord-jim,Lord Jim,joseph-conrad,work,958
+nostromo,Nostromo,joseph-conrad,work,959
+katherine-mansfield,Katherine Mansfield,modern,writer,960
+aldous-huxley,Aldous Huxley,modern,writer,961
+brave-new-world,Brave New World,aldous-huxley,work,962
+george-orwell,George Orwell,modern,writer,963
+nineteen-eighty-four,Nineteen Eighty-Four,george-orwell,work,964
+animal-farm,Animal Farm,george-orwell,work,965
+politics-and-the-english-language,Politics and the English Language,george-orwell,work,966
+graham-greene,Graham Greene,modern,writer,967
+evelyn-waugh,Evelyn Waugh,modern,writer,968
+somerset-maugham,W. Somerset Maugham,modern,writer,969
+ford-madox-ford,Ford Madox Ford,modern,writer,970
+bernard-shaw,George Bernard Shaw,modern,writer,971
+pygmalion,Pygmalion,bernard-shaw,work,972
+saint-joan,Saint Joan,bernard-shaw,work,973
+man-and-superman,Man and Superman,bernard-shaw,work,974
+arms-and-the-man,Arms and the Man,bernard-shaw,work,975
+jm-synge,J. M. Synge,modern,writer,976
+the-playboy-of-the-western-world,The Playboy of the Western World,jm-synge,work,977
+sean-ocasey,Sean O'Casey,modern,writer,978
+juno-and-the-paycock,Juno and the Paycock,sean-ocasey,work,979
+lady-gregory,Lady Gregory,modern,writer,980
+contemporary,The Contemporary Period (1945-),british-literature,period,1000
+the-movement,The Movement,contemporary,concept,1001
+philip-larkin,Philip Larkin,the-movement,writer,1002
+church-going,Church Going,philip-larkin,work,1003
+the-whitsun-weddings,The Whitsun Weddings,philip-larkin,work,1004
+ted-hughes,Ted Hughes,contemporary,writer,1005
+hawk-roosting,Hawk Roosting,ted-hughes,work,1006
+crow,Crow,ted-hughes,work,1007
+seamus-heaney,Seamus Heaney,contemporary,writer,1008
+digging,Digging,seamus-heaney,work,1009
+north-heaney,North,seamus-heaney,work,1010
+thom-gunn,Thom Gunn,contemporary,writer,1011
+geoffrey-hill,Geoffrey Hill,contemporary,writer,1012
+tony-harrison,Tony Harrison,contemporary,writer,1013
+carol-ann-duffy,Carol Ann Duffy,contemporary,writer,1014
+simon-armitage,Simon Armitage,contemporary,writer,1015
+theatre-of-the-absurd,Theatre of the Absurd,contemporary,concept,1016
+samuel-beckett,Samuel Beckett,theatre-of-the-absurd,writer,1017
+waiting-for-godot,Waiting for Godot,samuel-beckett,work,1018
+endgame,Endgame,samuel-beckett,work,1019
+krapps-last-tape,Krapp's Last Tape,samuel-beckett,work,1020
+harold-pinter,Harold Pinter,contemporary,writer,1021
+the-birthday-party,The Birthday Party,harold-pinter,work,1022
+the-caretaker,The Caretaker,harold-pinter,work,1023
+comedy-of-menace,Comedy of Menace,harold-pinter,concept,1024
+the-angry-young-men,The Angry Young Men,contemporary,concept,1025
+john-osborne,John Osborne,the-angry-young-men,writer,1026
+look-back-in-anger,Look Back in Anger,john-osborne,work,1027
+kitchen-sink-drama,Kitchen Sink Drama,contemporary,concept,1028
+arnold-wesker,Arnold Wesker,contemporary,writer,1029
+john-arden,John Arden,contemporary,writer,1030
+tom-stoppard,Tom Stoppard,contemporary,writer,1031
+rosencrantz-and-guildenstern-are-dead,Rosencrantz and Guildenstern Are Dead,tom-stoppard,work,1032
+caryl-churchill,Caryl Churchill,contemporary,writer,1033
+top-girls,Top Girls,caryl-churchill,work,1034
+william-golding,William Golding,contemporary,writer,1035
+lord-of-the-flies,Lord of the Flies,william-golding,work,1036
+iris-murdoch,Iris Murdoch,contemporary,writer,1037
+doris-lessing,Doris Lessing,contemporary,writer,1038
+the-golden-notebook,The Golden Notebook,doris-lessing,work,1039
+muriel-spark,Muriel Spark,contemporary,writer,1040
+anthony-burgess,Anthony Burgess,contemporary,writer,1041
+a-clockwork-orange,A Clockwork Orange,anthony-burgess,work,1042
+john-fowles,John Fowles,contemporary,writer,1043
+the-french-lieutenants-woman,The French Lieutenant's Woman,john-fowles,work,1044
+angela-carter,Angela Carter,contemporary,writer,1045
+the-bloody-chamber,The Bloody Chamber,angela-carter,work,1046
+jeanette-winterson,Jeanette Winterson,contemporary,writer,1047
+martin-amis,Martin Amis,contemporary,writer,1048
+ian-mcewan,Ian McEwan,contemporary,writer,1049
+julian-barnes,Julian Barnes,contemporary,writer,1050
+kazuo-ishiguro,Kazuo Ishiguro,contemporary,writer,1051
+the-remains-of-the-day,The Remains of the Day,kazuo-ishiguro,work,1052
+zadie-smith,Zadie Smith,contemporary,writer,1053
+white-teeth,White Teeth,zadie-smith,work,1054
+hilary-mantel,Hilary Mantel,contemporary,writer,1055
+wolf-hall,Wolf Hall,hilary-mantel,work,1056
