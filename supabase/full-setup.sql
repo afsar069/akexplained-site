@@ -6,6 +6,7 @@
 --   1. 20261024120000_create_user_accounts.sql
 --   2. 20261025120000_exams_topics_and_profile_update.sql
 --   3. 20261025130000_exams_add_kind_and_degrees.sql
+--   4. 20261027120000_topics_tree.sql
 --
 -- It is IDEMPOTENT: safe to run on a fresh database OR on one where some of
 -- the migrations were already applied. It will not error with "already exists".
@@ -159,15 +160,31 @@ alter table public.exams add  constraint exams_level_check check (level in ('ba'
 -- =====================================================================
 -- topics  (reference data; filled in later)
 -- =====================================================================
+-- A self-referencing tree: area > period > movement / writer > work, etc.
 create table if not exists public.topics (
   id         text primary key,
   name       text not null,
-  age_slug   text,
+  parent_id  text references public.topics (id),  -- null for a top-level area
+  kind       text,                                -- made NOT NULL below
   sort_order int
 );
 
+-- If the table pre-existed from migration 2 (flat, with age_slug):
+alter table public.topics drop column if exists age_slug;
+alter table public.topics add  column if not exists parent_id text references public.topics (id);
+alter table public.topics add  column if not exists kind text;
+alter table public.topics alter column kind set not null;
+alter table public.topics drop constraint if exists topics_kind_check;
+alter table public.topics add  constraint topics_kind_check
+  check (kind in ('area', 'period', 'movement', 'writer', 'work', 'concept'));
+create index if not exists topics_parent_id_idx on public.topics (parent_id);
+
 comment on table public.topics is
-  'Subject topics used to tag questions. Reference data, read-only from clients.';
+  'Subject topics used to tag questions, as a tree. Reference data, read-only from clients.';
+comment on column public.topics.parent_id is
+  'Parent topic; null for a top-level area. Self-referencing tree.';
+comment on column public.topics.kind is
+  'Node kind: area, period, movement, writer, work, or concept.';
 
 -- =====================================================================
 -- exam_topics  (which topics belong to which exam, grouped into units)

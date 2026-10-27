@@ -92,9 +92,15 @@ There are two kinds of table here.
   (`kind = journey`), and eight university degree tracks (`kind = degree`:
   CCSU, Delhi University, AMU, and IGNOU, each as a BA and an MA). `ugc-net` and
   `literature-journey` are `active`; everything else starts `coming_soon`.
-- **`topics`** — subject topics used to tag questions. `id` is a slug, `name` is
-  the display name, `age_slug` links it to an age article (nullable),
-  `sort_order` sets the order. Starts empty; the topic list is supplied later.
+- **`topics`** — subject topics used to tag questions, arranged as a **tree**
+  (area > period > movement / writer > work). `id` is a slug, `name` is the
+  display name, `parent_id` points at the parent topic (empty for a top-level
+  area), `kind` says what the node is (`area`, `period`, `movement`, `writer`,
+  `work`, or `concept`), and `sort_order` sets the order among siblings.
+  Mastery is worked out at a parent level by rolling up its children, so the
+  depth of the tree matters. Starts empty; the topic list is supplied later.
+  (A later migration, `20261027120000_topics_tree.sql`, replaced the earlier
+  flat `age_slug` column with `parent_id` and `kind`.)
 - **`exam_topics`** — which topics belong to which exam, grouped into units
   (`unit_label` like `Unit 3`, plus `unit_order`). Keyed by `(exam_id, topic_id)`.
 
