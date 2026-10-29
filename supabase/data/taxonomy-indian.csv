@@ -1,0 +1,119 @@
+id,name,parent_id,kind,sort_order
+indian-writing-in-english,Indian Writing in English,,area,4001
+iwe-beginnings,The Beginnings (1800-1920),indian-writing-in-english,period,4002
+raja-rammohan-roy,Raja Rammohan Roy,iwe-beginnings,writer,4003
+henry-derozio,Henry Louis Vivian Derozio,iwe-beginnings,writer,4004
+michael-madhusudan-dutt,Michael Madhusudan Dutt,iwe-beginnings,writer,4005
+toru-dutt,Toru Dutt,iwe-beginnings,writer,4006
+our-casuarina-tree,Our Casuarina Tree,toru-dutt,work,4007
+romesh-chunder-dutt,Romesh Chunder Dutt,iwe-beginnings,writer,4008
+behramji-malabari,Behramji Malabari,iwe-beginnings,writer,4009
+manmohan-ghose,Manmohan Ghose,iwe-beginnings,writer,4010
+iwe-poetry,Indian English Poetry,indian-writing-in-english,period,4011
+sri-aurobindo,Sri Aurobindo,iwe-poetry,writer,4012
+savitri,Savitri,sri-aurobindo,work,4013
+rabindranath-tagore,Rabindranath Tagore,iwe-poetry,writer,4014
+gitanjali,Gitanjali,rabindranath-tagore,work,4015
+the-home-and-the-world,The Home and the World,rabindranath-tagore,work,4016
+sarojini-naidu,Sarojini Naidu,iwe-poetry,writer,4017
+the-golden-threshold,The Golden Threshold,sarojini-naidu,work,4018
+the-bangle-sellers,The Bangle Sellers,sarojini-naidu,work,4019
+nissim-ezekiel,Nissim Ezekiel,iwe-poetry,writer,4020
+night-of-the-scorpion,Night of the Scorpion,nissim-ezekiel,work,4021
+the-patriot,The Patriot,nissim-ezekiel,work,4022
+a-k-ramanujan,A. K. Ramanujan,iwe-poetry,writer,4023
+a-river,A River,a-k-ramanujan,work,4024
+kamala-das,Kamala Das,iwe-poetry,writer,4025
+an-introduction,An Introduction,kamala-das,work,4026
+summer-in-calcutta,Summer in Calcutta,kamala-das,work,4027
+jayanta-mahapatra,Jayanta Mahapatra,iwe-poetry,writer,4028
+hunger-mahapatra,Hunger,jayanta-mahapatra,work,4029
+a-k-mehrotra,Arvind Krishna Mehrotra,iwe-poetry,writer,4030
+keki-daruwalla,Keki N. Daruwalla,iwe-poetry,writer,4031
+r-parthasarathy,R. Parthasarathy,iwe-poetry,writer,4032
+dom-moraes,Dom Moraes,iwe-poetry,writer,4033
+gieve-patel,Gieve Patel,iwe-poetry,writer,4034
+dilip-chitre,Dilip Chitre,iwe-poetry,writer,4035
+eunice-de-souza,Eunice de Souza,iwe-poetry,writer,4036
+vikram-seth,Vikram Seth,iwe-poetry,writer,4037
+the-golden-gate,The Golden Gate,vikram-seth,work,4038
+a-suitable-boy,A Suitable Boy,vikram-seth,work,4039
+iwe-fiction,Indian English Fiction,indian-writing-in-english,period,4040
+mulk-raj-anand,Mulk Raj Anand,iwe-fiction,writer,4041
+untouchable,Untouchable,mulk-raj-anand,work,4042
+coolie,Coolie,mulk-raj-anand,work,4043
+r-k-narayan,R. K. Narayan,iwe-fiction,writer,4044
+swami-and-friends,Swami and Friends,r-k-narayan,work,4045
+the-guide,The Guide,r-k-narayan,work,4046
+malgudi-days,Malgudi Days,r-k-narayan,work,4047
+the-english-teacher,The English Teacher,r-k-narayan,work,4048
+raja-rao,Raja Rao,iwe-fiction,writer,4049
+kanthapura,Kanthapura,raja-rao,work,4050
+the-serpent-and-the-rope,The Serpent and the Rope,raja-rao,work,4051
+g-v-desani,G. V. Desani,iwe-fiction,writer,4052
+all-about-h-hatterr,All About H. Hatterr,g-v-desani,work,4053
+khushwant-singh,Khushwant Singh,iwe-fiction,writer,4054
+train-to-pakistan,Train to Pakistan,khushwant-singh,work,4055
+kamala-markandaya,Kamala Markandaya,iwe-fiction,writer,4056
+nectar-in-a-sieve,Nectar in a Sieve,kamala-markandaya,work,4057
+nayantara-sahgal,Nayantara Sahgal,iwe-fiction,writer,4058
+anita-desai,Anita Desai,iwe-fiction,writer,4059
+clear-light-of-day,Clear Light of Day,anita-desai,work,4060
+in-custody,In Custody,anita-desai,work,4061
+cry-the-peacock,"Cry, the Peacock",anita-desai,work,4062
+salman-rushdie,Salman Rushdie,iwe-fiction,writer,4063
+midnights-children,Midnight's Children,salman-rushdie,work,4064
+the-satanic-verses,The Satanic Verses,salman-rushdie,work,4065
+shame,Shame,salman-rushdie,work,4066
+amitav-ghosh,Amitav Ghosh,iwe-fiction,writer,4067
+the-shadow-lines,The Shadow Lines,amitav-ghosh,work,4068
+the-circle-of-reason,The Circle of Reason,amitav-ghosh,work,4069
+the-hungry-tide,The Hungry Tide,amitav-ghosh,work,4070
+vikram-chandra,Vikram Chandra,iwe-fiction,writer,4071
+upamanyu-chatterjee,Upamanyu Chatterjee,iwe-fiction,writer,4072
+english-august,"English, August",upamanyu-chatterjee,work,4073
+shashi-tharoor,Shashi Tharoor,iwe-fiction,writer,4074
+the-great-indian-novel,The Great Indian Novel,shashi-tharoor,work,4075
+rohinton-mistry,Rohinton Mistry,iwe-fiction,writer,4076
+a-fine-balance,A Fine Balance,rohinton-mistry,work,4077
+such-a-long-journey,Such a Long Journey,rohinton-mistry,work,4078
+arundhati-roy,Arundhati Roy,iwe-fiction,writer,4079
+the-god-of-small-things,The God of Small Things,arundhati-roy,work,4080
+kiran-desai,Kiran Desai,iwe-fiction,writer,4081
+the-inheritance-of-loss,The Inheritance of Loss,kiran-desai,work,4082
+jhumpa-lahiri,Jhumpa Lahiri,iwe-fiction,writer,4083
+the-namesake,The Namesake,jhumpa-lahiri,work,4084
+interpreter-of-maladies,Interpreter of Maladies,jhumpa-lahiri,work,4085
+aravind-adiga,Aravind Adiga,iwe-fiction,writer,4086
+the-white-tiger,The White Tiger,aravind-adiga,work,4087
+chetan-bhagat,Chetan Bhagat,iwe-fiction,writer,4088
+bharati-mukherjee,Bharati Mukherjee,iwe-fiction,writer,4089
+jasmine,Jasmine,bharati-mukherjee,work,4090
+manju-kapur,Manju Kapur,iwe-fiction,writer,4091
+difficult-daughters,Difficult Daughters,manju-kapur,work,4092
+shashi-deshpande,Shashi Deshpande,iwe-fiction,writer,4093
+that-long-silence,That Long Silence,shashi-deshpande,work,4094
+iwe-drama,Indian English Drama,indian-writing-in-english,period,4095
+girish-karnad,Girish Karnad,iwe-drama,writer,4096
+tughlaq,Tughlaq,girish-karnad,work,4097
+hayavadana,Hayavadana,girish-karnad,work,4098
+nagamandala,Nagamandala,girish-karnad,work,4099
+vijay-tendulkar,Vijay Tendulkar,iwe-drama,writer,4100
+silence-the-court-is-in-session,Silence! The Court Is in Session,vijay-tendulkar,work,4101
+ghashiram-kotwal,Ghashiram Kotwal,vijay-tendulkar,work,4102
+mahesh-dattani,Mahesh Dattani,iwe-drama,writer,4103
+final-solutions,Final Solutions,mahesh-dattani,work,4104
+tara,Tara,mahesh-dattani,work,4105
+badal-sircar,Badal Sircar,iwe-drama,writer,4106
+evam-indrajit,Evam Indrajit,badal-sircar,work,4107
+asif-currimbhoy,Asif Currimbhoy,iwe-drama,writer,4108
+iwe-prose,Indian English Prose and Non-fiction,indian-writing-in-english,period,4109
+mahatma-gandhi,Mahatma Gandhi,iwe-prose,writer,4110
+the-story-of-my-experiments-with-truth,The Story of My Experiments with Truth,mahatma-gandhi,work,4111
+jawaharlal-nehru,Jawaharlal Nehru,iwe-prose,writer,4112
+the-discovery-of-india,The Discovery of India,jawaharlal-nehru,work,4113
+an-autobiography-nehru,An Autobiography,jawaharlal-nehru,work,4114
+b-r-ambedkar,B. R. Ambedkar,iwe-prose,writer,4115
+annihilation-of-caste,Annihilation of Caste,b-r-ambedkar,work,4116
+nirad-c-chaudhuri,Nirad C. Chaudhuri,iwe-prose,writer,4117
+the-autobiography-of-an-unknown-indian,The Autobiography of an Unknown Indian,nirad-c-chaudhuri,work,4118
