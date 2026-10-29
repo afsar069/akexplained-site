@@ -44,13 +44,14 @@ One row for every question a user answers, across every quiz surface.
 | `user_id`     | Who answered. Points at `auth.users`. If the user is deleted, their attempts are deleted too. |
 | `question_id` | Which question was answered (a text id). |
 | `topic_id`    | Which topic the question belongs to. Empty for now, because questions are not tagged with a topic yet. |
+| `period_id`   | Which literary period the question was tagged with when it was answered (for example `elizabethan`). Empty for now, and for any question that is not tagged. It is kept on the attempt, so re-tagging a question later does not change old answers. |
 | `is_correct`  | `true` if the answer was right, `false` if it was wrong. |
 | `source`      | Where the question was answered. One of `daily`, `cbt`, `pyq`, `mock`, or `diagnostic`. No other value is allowed. |
 | `answered_at` | When the question was answered. |
 
-Two indexes make the common lookups fast: all of a user's attempts for one topic
-(`user_id, topic_id`), and all of a user's attempts in time order
-(`user_id, answered_at`).
+Three indexes make the common lookups fast: all of a user's attempts for one topic
+(`user_id, topic_id`), all of a user's attempts for one period (`user_id, period_id`),
+and all of a user's attempts in time order (`user_id, answered_at`).
 
 ### 3. `reading_progress`
 

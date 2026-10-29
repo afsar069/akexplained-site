@@ -184,15 +184,19 @@ works stay under their age, not under the sub-period.
 - New question files carry `topicId` = one id from the master reference. The quiz engines
   (`assets/instant.js` Daily, `assets/cbt.js` MCQ/CBT) call `assets/track.js`, which writes
   one `attempts` row per answered question **only for a logged-in user**, fire-and-forget,
-  with `question_id = q.id`, `topic_id = q.topicId || null`, `source` `'daily'`/`'cbt'`.
+  with `question_id = q.id`, `topic_id = q.topicId || null`, `period_id = q.periodId`
+  (a `kind = period` node; sent only when the question has one), `source` `'daily'`/`'cbt'`.
   It never blocks the quiz; guests keep playing with `localStorage` only (which stays).
+  `attempts.period_id` keeps the period an attempt was answered under, so re-tagging a
+  question later does not change old attempts (migration `20261029180000_attempts_add_period_id.sql`).
 - **Build gate:** `npx eleventy` runs `tools/check-topics.js` and fails the build if any
   question's `topicId` is not in the master reference, or if two questions share an `id`.
   Keep ids unique and topicIds real, or the build (and publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
-- `attempts.topic_id` is still `null` everywhere until questions are tagged with `topicId`
-  (backfill pending) and the MCQ generator is aligned to emit `id` + `topicId`.
+- `attempts.topic_id` and `attempts.period_id` are still `null` everywhere until questions are
+  tagged with `topicId` and `periodId` (backfill pending) and the MCQ generator is aligned to
+  emit `id` + `topicId` + `periodId`.
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
 - Password reset needs an SMTP provider in Supabase first (none yet); the "Forgot
   password?" link currently shows a contact-us note instead of a reset email.

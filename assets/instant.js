@@ -354,7 +354,7 @@
     // question_id = q.id (stable, never index-based). Guests: localStorage only.
     try {
       if (window.akTrack) window.akTrack.record({
-        questionId: q.id, topicId: q.topicId || null, isCorrect: ok, source: 'daily'
+        questionId: q.id, topicId: q.topicId || null, periodId: q.periodId || null, isCorrect: ok, source: 'daily'
       });
     } catch (e) { /* never break the quiz */ }
   });

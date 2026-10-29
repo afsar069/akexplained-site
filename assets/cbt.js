@@ -851,6 +851,7 @@
           rows.push({
             questionId: q.id,
             topicId: q.topicId || null,
+            periodId: q.periodId || null,
             isCorrect: st.pick[i] === q.correct_option_id,
             source: 'cbt'
           });

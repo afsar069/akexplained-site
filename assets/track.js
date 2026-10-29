@@ -9,12 +9,16 @@
    localStorage (the engines handle that, not this file).
 
    Engines call:
-     window.akTrack.record({ questionId, topicId, isCorrect, source })
+     window.akTrack.record({ questionId, topicId, periodId, isCorrect, source })
      window.akTrack.recordMany([ {…}, {…} ])
 
    question_id must be a STABLE id carried by the question
    (never an array index). A row with no questionId is skipped.
    topicId is written as-is, or null when absent.
+   periodId (a `period` node, e.g. 'elizabethan') is written to
+   period_id only when the question has one. An untagged question
+   sends no period_id at all, so the insert still works on a
+   database that does not have the column yet.
    source is 'daily' (Daily quiz) or 'cbt' (MCQ/CBT tests).
    ========================================================== */
 (function () {
@@ -44,13 +48,15 @@
         if (!s || !s.user) return;                    // logged out: write nothing
         var uid = s.user.id;
         var rows = clean.map(function (it) {
-          return {
+          var row = {
             user_id: uid,
             question_id: String(it.questionId),
             topic_id: (it.topicId != null && it.topicId !== '') ? String(it.topicId) : null,
             is_correct: !!it.isCorrect,
             source: it.source
           };
+          if (it.periodId != null && it.periodId !== '') row.period_id = String(it.periodId);
+          return row;
         });
         // Fire-and-forget: do not await, swallow any error.
         c.from('attempts').insert(rows).then(function () {}, function () {});

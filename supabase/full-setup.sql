@@ -49,8 +49,14 @@ create table if not exists public.attempts (
   answered_at timestamptz not null default now()
 );
 
+-- period_id: the period node the question was tagged with (see migration
+-- 20261029180000_attempts_add_period_id.sql). Added with `if not exists` so this
+-- also works on a project where attempts already exists.
+alter table public.attempts add column if not exists period_id text;
+
 create index if not exists attempts_user_topic_idx    on public.attempts (user_id, topic_id);
 create index if not exists attempts_user_answered_idx on public.attempts (user_id, answered_at);
+create index if not exists attempts_user_period_idx   on public.attempts (user_id, period_id);
 
 comment on table public.attempts is
   'One row per question a user answered, across all quiz surfaces.';
