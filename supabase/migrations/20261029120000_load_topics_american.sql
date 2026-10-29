@@ -1,18 +1,18 @@
 -- Migration: load the American Literature topic tree.
 --
 -- Source: supabase/data/taxonomy-american.csv (180 rows), supplied by the
--- owner and committed next to this file. Nothing here is invented or
--- corrected: id, name, parent_id, kind and sort_order are copied as given.
+-- owner and committed next to this file. Values are copied from that file.
 --
 -- Runs AFTER 20261027120000_topics_tree.sql. Separate top-level area: no id
 -- clashes with the British or Criticism rows, and no parent points outside
 -- this file.
 --
--- Shape note (reported to the owner, left as supplied): 6 writers sit under a
--- movement rather than under a period -- jack-kerouac and allen-ginsberg under
--- the-beat-generation; robert-lowell, sylvia-plath, anne-sexton and
--- john-berryman under confessional-poetry. The other 68 writers sit directly
--- under a period, as in the British file.
+-- Shape: matches the British convention -- every one of the 74 writers sits
+-- directly under a period, and movements are siblings of the writers. (Six
+-- writers that first arrived under a movement -- kerouac and ginsberg under
+-- the-beat-generation; lowell, plath, sexton and berryman under
+-- confessional-poetry -- were moved up to american-contemporary at the owner's
+-- request; the two movement rows stay as siblings.)
 --
 -- Rows are listed parents-first, exactly in the file's order.
 -- Idempotent: `on conflict (id) do nothing`.
@@ -161,17 +161,17 @@ insert into public.topics (id, name, parent_id, kind, sort_order) values
   ('go-tell-it-on-the-mountain', 'Go Tell It on the Mountain', 'james-baldwin', 'work', 3132),
   ('vladimir-nabokov', 'Vladimir Nabokov', 'american-contemporary', 'writer', 3133),
   ('lolita', 'Lolita', 'vladimir-nabokov', 'work', 3134),
-  ('jack-kerouac', 'Jack Kerouac', 'the-beat-generation', 'writer', 3135),
+  ('jack-kerouac', 'Jack Kerouac', 'american-contemporary', 'writer', 3135),
   ('on-the-road', 'On the Road', 'jack-kerouac', 'work', 3136),
-  ('allen-ginsberg', 'Allen Ginsberg', 'the-beat-generation', 'writer', 3137),
+  ('allen-ginsberg', 'Allen Ginsberg', 'american-contemporary', 'writer', 3137),
   ('howl', 'Howl', 'allen-ginsberg', 'work', 3138),
-  ('robert-lowell', 'Robert Lowell', 'confessional-poetry', 'writer', 3139),
-  ('sylvia-plath', 'Sylvia Plath', 'confessional-poetry', 'writer', 3140),
+  ('robert-lowell', 'Robert Lowell', 'american-contemporary', 'writer', 3139),
+  ('sylvia-plath', 'Sylvia Plath', 'american-contemporary', 'writer', 3140),
   ('ariel', 'Ariel', 'sylvia-plath', 'work', 3141),
   ('the-bell-jar', 'The Bell Jar', 'sylvia-plath', 'work', 3142),
-  ('anne-sexton', 'Anne Sexton', 'confessional-poetry', 'writer', 3143),
+  ('anne-sexton', 'Anne Sexton', 'american-contemporary', 'writer', 3143),
   ('elizabeth-bishop', 'Elizabeth Bishop', 'american-contemporary', 'writer', 3144),
-  ('john-berryman', 'John Berryman', 'confessional-poetry', 'writer', 3145),
+  ('john-berryman', 'John Berryman', 'american-contemporary', 'writer', 3145),
   ('flannery-oconnor', 'Flannery O''Connor', 'american-contemporary', 'writer', 3146),
   ('a-good-man-is-hard-to-find', 'A Good Man Is Hard to Find', 'flannery-oconnor', 'work', 3147),
   ('arthur-miller', 'Arthur Miller', 'american-contemporary', 'writer', 3148),
