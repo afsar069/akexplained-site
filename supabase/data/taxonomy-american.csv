@@ -1,0 +1,181 @@
+id,name,parent_id,kind,sort_order
+american-literature,American Literature,,area,3001
+american-colonial,Colonial and Early National Period (1600-1830),american-literature,period,3002
+anne-bradstreet,Anne Bradstreet,american-colonial,writer,3003
+the-tenth-muse,The Tenth Muse,anne-bradstreet,work,3004
+edward-taylor,Edward Taylor,american-colonial,writer,3005
+jonathan-edwards,Jonathan Edwards,american-colonial,writer,3006
+sinners-in-the-hands-of-an-angry-god,Sinners in the Hands of an Angry God,jonathan-edwards,work,3007
+cotton-mather,Cotton Mather,american-colonial,writer,3008
+benjamin-franklin,Benjamin Franklin,american-colonial,writer,3009
+franklin-autobiography,The Autobiography of Benjamin Franklin,benjamin-franklin,work,3010
+philip-freneau,Philip Freneau,american-colonial,writer,3011
+phillis-wheatley,Phillis Wheatley,american-colonial,writer,3012
+thomas-paine,Thomas Paine,american-colonial,writer,3013
+common-sense,Common Sense,thomas-paine,work,3014
+washington-irving,Washington Irving,american-colonial,writer,3015
+rip-van-winkle,Rip Van Winkle,washington-irving,work,3016
+the-legend-of-sleepy-hollow,The Legend of Sleepy Hollow,washington-irving,work,3017
+james-fenimore-cooper,James Fenimore Cooper,american-colonial,writer,3018
+the-last-of-the-mohicans,The Last of the Mohicans,james-fenimore-cooper,work,3019
+american-renaissance,The American Renaissance (1830-1865),american-literature,period,3020
+transcendentalism,Transcendentalism,american-renaissance,movement,3021
+ralph-waldo-emerson,Ralph Waldo Emerson,american-renaissance,writer,3022
+self-reliance,Self-Reliance,ralph-waldo-emerson,work,3023
+nature-emerson,Nature,ralph-waldo-emerson,work,3024
+the-american-scholar,The American Scholar,ralph-waldo-emerson,work,3025
+henry-david-thoreau,Henry David Thoreau,american-renaissance,writer,3026
+walden,Walden,henry-david-thoreau,work,3027
+civil-disobedience,Civil Disobedience,henry-david-thoreau,work,3028
+margaret-fuller,Margaret Fuller,american-renaissance,writer,3029
+nathaniel-hawthorne,Nathaniel Hawthorne,american-renaissance,writer,3030
+the-scarlet-letter,The Scarlet Letter,nathaniel-hawthorne,work,3031
+the-house-of-the-seven-gables,The House of the Seven Gables,nathaniel-hawthorne,work,3032
+young-goodman-brown,Young Goodman Brown,nathaniel-hawthorne,work,3033
+herman-melville,Herman Melville,american-renaissance,writer,3034
+moby-dick,Moby-Dick,herman-melville,work,3035
+bartleby-the-scrivener,"Bartleby, the Scrivener",herman-melville,work,3036
+billy-budd,Billy Budd,herman-melville,work,3037
+edgar-allan-poe,Edgar Allan Poe,american-renaissance,writer,3038
+the-raven,The Raven,edgar-allan-poe,work,3039
+the-fall-of-the-house-of-usher,The Fall of the House of Usher,edgar-allan-poe,work,3040
+the-philosophy-of-composition,The Philosophy of Composition,edgar-allan-poe,work,3041
+the-tell-tale-heart,The Tell-Tale Heart,edgar-allan-poe,work,3042
+walt-whitman,Walt Whitman,american-renaissance,writer,3043
+leaves-of-grass,Leaves of Grass,walt-whitman,work,3044
+song-of-myself,Song of Myself,walt-whitman,work,3045
+o-captain-my-captain,O Captain! My Captain!,walt-whitman,work,3046
+emily-dickinson,Emily Dickinson,american-renaissance,writer,3047
+because-i-could-not-stop-for-death,Because I could not stop for Death,emily-dickinson,work,3048
+harriet-beecher-stowe,Harriet Beecher Stowe,american-renaissance,writer,3049
+uncle-toms-cabin,Uncle Tom's Cabin,harriet-beecher-stowe,work,3050
+frederick-douglass,Frederick Douglass,american-renaissance,writer,3051
+narrative-of-frederick-douglass,Narrative of the Life of Frederick Douglass,frederick-douglass,work,3052
+american-realism,Realism and Naturalism (1865-1914),american-literature,period,3053
+realism,Realism,american-realism,movement,3054
+naturalism,Naturalism,american-realism,movement,3055
+mark-twain,Mark Twain,american-realism,writer,3056
+the-adventures-of-huckleberry-finn,The Adventures of Huckleberry Finn,mark-twain,work,3057
+the-adventures-of-tom-sawyer,The Adventures of Tom Sawyer,mark-twain,work,3058
+henry-james,Henry James,american-realism,writer,3059
+the-portrait-of-a-lady,The Portrait of a Lady,henry-james,work,3060
+the-turn-of-the-screw,The Turn of the Screw,henry-james,work,3061
+the-ambassadors,The Ambassadors,henry-james,work,3062
+daisy-miller,Daisy Miller,henry-james,work,3063
+william-dean-howells,William Dean Howells,american-realism,writer,3064
+stephen-crane,Stephen Crane,american-realism,writer,3065
+the-red-badge-of-courage,The Red Badge of Courage,stephen-crane,work,3066
+theodore-dreiser,Theodore Dreiser,american-realism,writer,3067
+sister-carrie,Sister Carrie,theodore-dreiser,work,3068
+an-american-tragedy,An American Tragedy,theodore-dreiser,work,3069
+frank-norris,Frank Norris,american-realism,writer,3070
+jack-london,Jack London,american-realism,writer,3071
+the-call-of-the-wild,The Call of the Wild,jack-london,work,3072
+kate-chopin,Kate Chopin,american-realism,writer,3073
+the-awakening,The Awakening,kate-chopin,work,3074
+edith-wharton,Edith Wharton,american-realism,writer,3075
+the-age-of-innocence,The Age of Innocence,edith-wharton,work,3076
+ethan-frome,Ethan Frome,edith-wharton,work,3077
+booker-t-washington,Booker T. Washington,american-realism,writer,3078
+up-from-slavery,Up from Slavery,booker-t-washington,work,3079
+w-e-b-du-bois,W. E. B. Du Bois,american-realism,writer,3080
+the-souls-of-black-folk,The Souls of Black Folk,w-e-b-du-bois,work,3081
+american-modernism,The Modern Period (1914-1945),american-literature,period,3082
+the-lost-generation,The Lost Generation,american-modernism,movement,3083
+the-harlem-renaissance,The Harlem Renaissance,american-modernism,movement,3084
+imagism-american,American Imagism,american-modernism,movement,3085
+f-scott-fitzgerald,F. Scott Fitzgerald,american-modernism,writer,3086
+the-great-gatsby,The Great Gatsby,f-scott-fitzgerald,work,3087
+tender-is-the-night,Tender Is the Night,f-scott-fitzgerald,work,3088
+ernest-hemingway,Ernest Hemingway,american-modernism,writer,3089
+the-old-man-and-the-sea,The Old Man and the Sea,ernest-hemingway,work,3090
+a-farewell-to-arms,A Farewell to Arms,ernest-hemingway,work,3091
+the-sun-also-rises,The Sun Also Rises,ernest-hemingway,work,3092
+for-whom-the-bell-tolls,For Whom the Bell Tolls,ernest-hemingway,work,3093
+william-faulkner,William Faulkner,american-modernism,writer,3094
+the-sound-and-the-fury,The Sound and the Fury,william-faulkner,work,3095
+as-i-lay-dying,As I Lay Dying,william-faulkner,work,3096
+light-in-august,Light in August,william-faulkner,work,3097
+john-steinbeck,John Steinbeck,american-modernism,writer,3098
+the-grapes-of-wrath,The Grapes of Wrath,john-steinbeck,work,3099
+of-mice-and-men,Of Mice and Men,john-steinbeck,work,3100
+robert-frost,Robert Frost,american-modernism,writer,3101
+the-road-not-taken,The Road Not Taken,robert-frost,work,3102
+stopping-by-woods-on-a-snowy-evening,Stopping by Woods on a Snowy Evening,robert-frost,work,3103
+mending-wall,Mending Wall,robert-frost,work,3104
+wallace-stevens,Wallace Stevens,american-modernism,writer,3105
+the-emperor-of-ice-cream,The Emperor of Ice-Cream,wallace-stevens,work,3106
+william-carlos-williams,William Carlos Williams,american-modernism,writer,3107
+the-red-wheelbarrow,The Red Wheelbarrow,william-carlos-williams,work,3108
+e-e-cummings,E. E. Cummings,american-modernism,writer,3109
+marianne-moore,Marianne Moore,american-modernism,writer,3110
+hart-crane,Hart Crane,american-modernism,writer,3111
+eugene-oneill,Eugene O'Neill,american-modernism,writer,3112
+long-days-journey-into-night,Long Day's Journey into Night,eugene-oneill,work,3113
+the-emperor-jones,The Emperor Jones,eugene-oneill,work,3114
+langston-hughes,Langston Hughes,american-modernism,writer,3115
+the-negro-speaks-of-rivers,The Negro Speaks of Rivers,langston-hughes,work,3116
+harlem-dream-deferred,Harlem (A Dream Deferred),langston-hughes,work,3117
+zora-neale-hurston,Zora Neale Hurston,american-modernism,writer,3118
+their-eyes-were-watching-god,Their Eyes Were Watching God,zora-neale-hurston,work,3119
+claude-mckay,Claude McKay,american-modernism,writer,3120
+countee-cullen,Countee Cullen,american-modernism,writer,3121
+american-contemporary,Postwar and Contemporary (1945-),american-literature,period,3122
+the-beat-generation,The Beat Generation,american-contemporary,movement,3123
+confessional-poetry,Confessional Poetry,american-contemporary,movement,3124
+saul-bellow,Saul Bellow,american-contemporary,writer,3125
+herzog,Herzog,saul-bellow,work,3126
+j-d-salinger,J. D. Salinger,american-contemporary,writer,3127
+the-catcher-in-the-rye,The Catcher in the Rye,j-d-salinger,work,3128
+ralph-ellison,Ralph Ellison,american-contemporary,writer,3129
+invisible-man,Invisible Man,ralph-ellison,work,3130
+james-baldwin,James Baldwin,american-contemporary,writer,3131
+go-tell-it-on-the-mountain,Go Tell It on the Mountain,james-baldwin,work,3132
+vladimir-nabokov,Vladimir Nabokov,american-contemporary,writer,3133
+lolita,Lolita,vladimir-nabokov,work,3134
+jack-kerouac,Jack Kerouac,the-beat-generation,writer,3135
+on-the-road,On the Road,jack-kerouac,work,3136
+allen-ginsberg,Allen Ginsberg,the-beat-generation,writer,3137
+howl,Howl,allen-ginsberg,work,3138
+robert-lowell,Robert Lowell,confessional-poetry,writer,3139
+sylvia-plath,Sylvia Plath,confessional-poetry,writer,3140
+ariel,Ariel,sylvia-plath,work,3141
+the-bell-jar,The Bell Jar,sylvia-plath,work,3142
+anne-sexton,Anne Sexton,confessional-poetry,writer,3143
+elizabeth-bishop,Elizabeth Bishop,american-contemporary,writer,3144
+john-berryman,John Berryman,confessional-poetry,writer,3145
+flannery-oconnor,Flannery O'Connor,american-contemporary,writer,3146
+a-good-man-is-hard-to-find,A Good Man Is Hard to Find,flannery-oconnor,work,3147
+arthur-miller,Arthur Miller,american-contemporary,writer,3148
+death-of-a-salesman,Death of a Salesman,arthur-miller,work,3149
+the-crucible,The Crucible,arthur-miller,work,3150
+tennessee-williams,Tennessee Williams,american-contemporary,writer,3151
+a-streetcar-named-desire,A Streetcar Named Desire,tennessee-williams,work,3152
+the-glass-menagerie,The Glass Menagerie,tennessee-williams,work,3153
+edward-albee,Edward Albee,american-contemporary,writer,3154
+whos-afraid-of-virginia-woolf,Who's Afraid of Virginia Woolf?,edward-albee,work,3155
+toni-morrison,Toni Morrison,american-contemporary,writer,3156
+beloved,Beloved,toni-morrison,work,3157
+the-bluest-eye,The Bluest Eye,toni-morrison,work,3158
+sula,Sula,toni-morrison,work,3159
+john-updike,John Updike,american-contemporary,writer,3161
+rabbit-run,"Rabbit, Run",john-updike,work,3162
+philip-roth,Philip Roth,american-contemporary,writer,3163
+portnoys-complaint,Portnoy's Complaint,philip-roth,work,3164
+thomas-pynchon,Thomas Pynchon,american-contemporary,writer,3165
+gravitys-rainbow,Gravity's Rainbow,thomas-pynchon,work,3166
+kurt-vonnegut,Kurt Vonnegut,american-contemporary,writer,3167
+slaughterhouse-five,Slaughterhouse-Five,kurt-vonnegut,work,3168
+don-delillo,Don DeLillo,american-contemporary,writer,3169
+white-noise,White Noise,don-delillo,work,3170
+alice-walker,Alice Walker,american-contemporary,writer,3171
+the-color-purple,The Color Purple,alice-walker,work,3172
+maya-angelou,Maya Angelou,american-contemporary,writer,3173
+i-know-why-the-caged-bird-sings,I Know Why the Caged Bird Sings,maya-angelou,work,3174
+adrienne-rich,Adrienne Rich,american-contemporary,writer,3175
+john-ashbery,John Ashbery,american-contemporary,writer,3176
+cormac-mccarthy,Cormac McCarthy,american-contemporary,writer,3177
+blood-meridian,Blood Meridian,cormac-mccarthy,work,3178
+the-road,The Road,cormac-mccarthy,work,3179
+august-wilson,August Wilson,american-contemporary,writer,3180
+fences,Fences,august-wilson,work,3181
