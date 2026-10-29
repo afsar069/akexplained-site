@@ -32,6 +32,7 @@
   "levelNote": "The main facts, names and dates of the age.",
   "questions": [
     {
+      "id": "old-english-set-1-e-01",
       "question": "Which three Germanic tribes migrated to Britain around 449 AD as recorded by Bede?",
       "options": [
         "Picts, Scots, and Britons",
@@ -45,6 +46,7 @@
       "read": "political-life"
     },
     {
+      "id": "old-english-set-1-e-02",
       "question": "Who were the legendary twin brothers who led the Germanic migration to Britain around 449 AD?",
       "options": [
         "Ohthere and Wulfstan",
@@ -58,6 +60,7 @@
       "read": "political-life"
     },
     {
+      "id": "old-english-set-1-e-03",
       "question": "Which British warlord invited Hengist and Horsa to defend against Pictish incursions?",
       "options": [
         "Athelstan",
@@ -71,6 +74,7 @@
       "read": "political-life"
     },
     {
+      "id": "old-english-set-1-e-04",
       "question": "In which year did St. Augustine arrive in Kent on the Roman Mission sent by Pope Gregory I?",
       "options": [
         "449 AD",
@@ -84,6 +88,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-05",
       "question": "Where did St. Augustine establish the first archbishopric see in England in 597 AD?",
       "options": [
         "Canterbury",
@@ -97,6 +102,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-06",
       "question": "Who founded the Celtic monastic settlement at Iona in 563 AD?",
       "options": [
         "St. Cuthbert",
@@ -110,6 +116,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-07",
       "question": "Which Celtic monk established the monastery of Lindisfarne in Northumbria in 635 AD?",
       "options": [
         "St. Aethelwold",
@@ -123,6 +130,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-08",
       "question": "Which ecclesiastical synod in 664 AD aligned the English Church with Roman usages?",
       "options": [
         "Council of London",
@@ -136,6 +144,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-09",
       "question": "Which Northumbrian king convened the Synod of Whitby in 664 AD?",
       "options": [
         "King Offa",
@@ -149,6 +158,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-e-10",
       "question": "In which year did the historic Viking raid on the monastery of Lindisfarne take place?",
       "options": [
         "793 AD",
@@ -162,6 +172,7 @@
       "read": "political-life"
     },
     {
+      "id": "old-english-set-1-e-11",
       "question": "During which historical years did King Alfred the Great reign over Wessex?",
       "options": [
         "731 to 750 AD",
@@ -175,6 +186,7 @@
       "read": "political-life"
     },
     {
+      "id": "old-english-set-1-e-12",
       "question": "In which year did the Battle of Maldon take place?",
       "options": [
         "793 AD",
@@ -188,6 +200,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-13",
       "question": "Which decisive event in 1066 ended the Anglo-Saxon political era?",
       "options": [
         "The Norman Conquest",
@@ -201,6 +214,7 @@
       "read": "how-the-age-ends"
     },
     {
+      "id": "old-english-set-1-e-14",
       "question": "How many distinct regional dialects of Old English developed across Anglo-Saxon Britain?",
       "options": [
         "Two dialects",
@@ -214,6 +228,7 @@
       "read": "the-language"
     },
     {
+      "id": "old-english-set-1-e-15",
       "question": "Which Old English dialect became the standardized literary language known as Schriftsprache?",
       "options": [
         "Mercian",
@@ -227,6 +242,7 @@
       "read": "the-language"
     },
     {
+      "id": "old-english-set-1-e-16",
       "question": "What is the structural term for the pause dividing an Old English alliterative line into two half-lines?",
       "options": [
         "Litotes",
@@ -240,6 +256,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-17",
       "question": "How many strongly stressed syllables are present in a full Old English alliterative line?",
       "options": [
         "Six stressed syllables",
@@ -253,6 +270,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-18",
       "question": "What is the first stressed syllable of the b-verse called in Old English alliterative verse?",
       "options": [
         "Head-stave",
@@ -266,6 +284,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-19",
       "question": "Who categorized Old English half-lines into five metrical types labeled A through E?",
       "options": [
         "Albert Lord",
@@ -279,6 +298,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-20",
       "question": "What is the figurative Old English compound noun 'hwoel-rad' or 'whale-road' an example of?",
       "options": [
         "A kenning",
@@ -292,6 +312,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-21",
       "question": "What does the Old English kenning 'ban-hus' or 'bone-house' signify?",
       "options": [
         "The sea",
@@ -305,6 +326,7 @@
       "read": "the-language"
     },
     {
+      "id": "old-english-set-1-e-22",
       "question": "What does the Old English kenning 'gomen-wudu' or 'mirth-wood' mean?",
       "options": [
         "A ship",
@@ -318,6 +340,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-23",
       "question": "What does the Old English kenning 'beado-leoma' or 'battle-light' refer to?",
       "options": [
         "A helmet",
@@ -331,6 +354,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-24",
       "question": "Which rhetorical device describes grim, ironic understatement in Old English poetry?",
       "options": [
         "Litotes",
@@ -344,6 +368,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-25",
       "question": "Which scholars formulated the oral-formulaic theory applied to Old English poetry by Francis P. Magoun?",
       "options": [
         "Franciscus Junius and Robert Cotton",
@@ -357,6 +382,7 @@
       "read": "criticism-and-scholarship"
     },
     {
+      "id": "old-english-set-1-e-26",
       "question": "Which manuscript holds the unique surviving text of the epic poem 'Beowulf'?",
       "options": [
         "The Exeter Book",
@@ -370,6 +396,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-27",
       "question": "What is the modern library shelfmark of the Nowell Codex in the British Library?",
       "options": [
         "Cotton Vitellius A. xv",
@@ -383,6 +410,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-28",
       "question": "Which cathedral library houses the tenth-century Exeter Book of Old English poetry?",
       "options": [
         "Exeter Cathedral Library",
@@ -396,6 +424,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-29",
       "question": "Which eleventh-century bishop donated the Exeter Book to Exeter Cathedral around 1072?",
       "options": [
         "Archbishop Dunstan",
@@ -409,6 +438,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-30",
       "question": "In which country is the tenth-century Vercelli Book preserved today?",
       "options": [
         "Ireland",
@@ -422,6 +452,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-31",
       "question": "Which of the four major Old English poetic manuscripts features visual line illustrations?",
       "options": [
         "The Nowell Codex",
@@ -435,6 +466,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-e-32",
       "question": "What is the total line count of the Old English epic 'Beowulf'?",
       "options": [
         "3,182 lines",
@@ -448,6 +480,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-33",
       "question": "What is the name of King Hrothgar's grand mead-hall cleansed by Beowulf?",
       "options": [
         "Heorot",
@@ -461,6 +494,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-34",
       "question": "Which monstrous creature terrorizes Heorot at the opening of 'Beowulf'?",
       "options": [
         "Grendel",
@@ -474,6 +508,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-35",
       "question": "Who is the only loyal retainer who stays to help Beowulf fight the dragon?",
       "options": [
         "Hnaef",
@@ -487,6 +522,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-36",
       "question": "What Old English term designates the inexorable force of fate governing mortal life?",
       "options": [
         "Comitatus",
@@ -499,6 +535,7 @@
       "topic": "terms"
     },
     {
+      "id": "old-english-set-1-e-37",
       "question": "Which heroic concept describes the reciprocal bond of absolute loyalty between a lord and his retainers?",
       "options": [
         "Wræclast",
@@ -512,6 +549,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-38",
       "question": "Who was the English commander killed at the Battle of Maldon in 991 AD?",
       "options": [
         "Prince Edmund",
@@ -525,6 +563,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-39",
       "question": "Which Old English term in 'The Battle of Maldon' describes Byrhtnoth's tragic over-confidence or excessive pride?",
       "options": [
         "Wyrd",
@@ -538,6 +577,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-40",
       "question": "Which English king won the historic Battle of Brunanburh in 937 AD alongside his brother Edmund?",
       "options": [
         "King Edwin",
@@ -551,6 +591,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-41",
       "question": "In which historical chronicle is the poem 'The Battle of Brunanburh' preserved under the year 937 AD?",
       "options": [
         "Bede's Historia Ecclesiastica",
@@ -564,6 +605,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-42",
       "question": "Which Old English poem presents a catalog of heroic tribes and rulers through the persona of a wandering scop?",
       "options": [
         "Waldere",
@@ -577,6 +619,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-43",
       "question": "What is the persona of the speaker in the Old English elegy 'The Wanderer'?",
       "options": [
         "A victorious king",
@@ -590,6 +633,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-44",
       "question": "Which famous Latin rhetorical motif asking 'Where are they now?' features prominently in 'The Wanderer'?",
       "options": [
         "Ubi sunt",
@@ -603,6 +647,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-e-45",
       "question": "What is the recurring Old English refrain in the elegy 'Deor'?",
       "options": [
         "Hige sceal the heardra",
@@ -616,6 +661,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-46",
       "question": "Which ancient Roman city ruins in Britain are generally identified as the subject of 'The Ruin'?",
       "options": [
         "Londinium or London",
@@ -629,6 +675,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-47",
       "question": "Who was the illiterate herdsman at Whitby Abbey who miraculously received the gift of poetic song?",
       "options": [
         "Cynewulf",
@@ -642,6 +689,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-48",
       "question": "How many lines comprise 'Caedmon's Hymn', the oldest surviving text of Old English poetry?",
       "options": [
         "Ninety lines",
@@ -655,6 +703,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-49",
       "question": "How did the poet Cynewulf sign his name in the epilogues of his four signed poems?",
       "options": [
         "By naming his birthplace",
@@ -668,6 +717,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-e-50",
       "question": "Lines from which Old English religious dream vision are carved in runes on the eighth-century Ruthwell Cross?",
       "options": [
         "The Dream of the Rood",

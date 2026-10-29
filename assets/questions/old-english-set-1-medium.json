@@ -32,6 +32,7 @@
   "levelNote": "Finer detail: episodes, sources, manuscripts and the rules of the verse.",
   "questions": [
     {
+      "id": "old-english-set-1-m-01",
       "question": "Which Scandinavian navigators provided King Alfred with direct travel accounts inserted into his translation of Orosius?",
       "options": [
         "Olaf and Constantine",
@@ -45,6 +46,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-02",
       "question": "For how many winters had Grendel terrorized Hrothgar's mead-hall Heorot before Beowulf arrived to fight him?",
       "options": [
         "Thirty-two winters",
@@ -58,6 +60,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-03",
       "question": "With what weapon does Beowulf ultimately kill Grendel's mother inside her sub-aquatic cave lair?",
       "options": [
         "A charmed golden spear from Heorot hall",
@@ -71,6 +74,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-04",
       "question": "What specific theft awakens and enrages the sleeping treasure-dragon in the second half of 'Beowulf'?",
       "options": [
         "The sudden plunder of an ancient iron war-shield",
@@ -84,6 +88,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-05",
       "question": "According to the Christian narrator of 'Beowulf', from which biblical figure is the monster Grendel descended?",
       "options": [
         "Cain",
@@ -97,6 +102,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-06",
       "question": "Along which river causeway did Earl Byrhtnoth confront the Viking raiders in the Battle of Maldon in 991 AD?",
       "options": [
         "River Thames basin",
@@ -110,6 +116,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-07",
       "question": "In 'The Battle of Maldon', which cowardly warrior flees on Byrhtnoth's horse, causing panic among the English troops?",
       "options": [
         "Heorrenda",
@@ -123,6 +130,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-08",
       "question": "Which three confederate leaders were defeated by King Athelstan and Edmund at the Battle of Brunanburh in 937 AD?",
       "options": [
         "Finn the Frisian king, Hnaef, and Prince Guthhere",
@@ -136,6 +144,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-09",
       "question": "Which Latin treatise served as the direct source for the Old English allegorical poem 'The Phoenix'?",
       "options": [
         "Boethius's Consolation of Philosophy",
@@ -148,6 +157,7 @@
       "topic": "poetry"
     },
     {
+      "id": "old-english-set-1-m-10",
       "question": "What is the central narrative focus of Saint Helena in Cynewulf's longest signed poem 'Elene'?",
       "options": [
         "Her pilgrimage to Jerusalem to find the True Cross",
@@ -161,6 +171,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-11",
       "question": "What divine command did the celestial visitor give to Caedmon when he took refuge in the Whitby stables?",
       "options": [
         "Hwær cwom mearg",
@@ -174,6 +185,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-12",
       "question": "Which section of Genesis in the Junius Manuscript is an Old Saxon translation detailing Lucifer's revolt and fall?",
       "options": [
         "Book of Exodus",
@@ -187,6 +199,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-13",
       "question": "Where does the banished female speaker find shelter in the Old English elegy 'The Wife's Lament'?",
       "options": [
         "In an earth-cave under an oak tree",
@@ -200,6 +213,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-14",
       "question": "Which five runic characters are carved onto the wooden staff in the elegy 'The Husband's Message'?",
       "options": [
         "C, Y, N, E, W, and U",
@@ -212,6 +226,7 @@
       "topic": "poetry"
     },
     {
+      "id": "old-english-set-1-m-15",
       "question": "In the poem 'Deor', who is the skilled rival scop that displaces Deor from his courtly patronage?",
       "options": [
         "Hnaef the Dane",
@@ -225,6 +240,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-16",
       "question": "Which mythological Germanic smith's captive torment is cited as the opening consolatory example in 'Deor'?",
       "options": [
         "Ermanaric the Hun",
@@ -238,6 +254,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-17",
       "question": "Which two signed poetic works by Cynewulf are preserved within the Vercelli Book?",
       "options": [
         "The Wanderer and The Seafarer lyric",
@@ -251,6 +268,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-m-18",
       "question": "In 'The Dream of the Rood', how is Christ dynamically depicted as he approaches the Cross?",
       "options": [
         "As a brave young warrior eager to climb the gallows",
@@ -264,6 +282,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-19",
       "question": "What historical conflict of tribal loyalties is depicted in both 'The Fight at Finnsburh' and Beowulf's scop song?",
       "options": [
         "The war between Geats and Swedes",
@@ -277,6 +296,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-20",
       "question": "Which King of Kent was converted by St. Augustine in 597 AD after marrying the Christian Frankish princess Bertha?",
       "options": [
         "King Aethelberht",
@@ -290,6 +310,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-m-21",
       "question": "Which three church leaders directed the tenth-century Benedictine Revival in Anglo-Saxon England?",
       "options": [
         "St. Augustine, St. Aidan, and St. Cuthbert",
@@ -303,6 +324,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-m-22",
       "question": "In 'Sermo Lupi ad Anglos' from 1014 AD, how does Archbishop Wulfstan interpret the catastrophic Danish invasions?",
       "options": [
         "As a minor regional dispute over annual tribute payments",
@@ -316,6 +338,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-23",
       "question": "Which pairs of rhyming and alliterating words exemplify Archbishop Wulfstan's dramatic rhetorical prose style?",
       "options": [
         "Wulf and Eadwacer dramatic figures",
@@ -329,6 +352,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-24",
       "question": "What pedagogical format did Abbot Aelfric employ in 'The Colloquy' to teach young monastic students Latin?",
       "options": [
         "A dialogue between a master and various working tradesmen",
@@ -342,6 +366,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-25",
       "question": "What is the collective title of the two sets of forty vernacular sermons composed by Abbot Aelfric of Eynsham?",
       "options": [
         "The Vercelli Homilies",
@@ -355,6 +380,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-26",
       "question": "What stylistic innovation characterizes the mature vernacular prose of Abbot Aelfric of Eynsham?",
       "options": [
         "Unrhymed syllabic hendecasyllabics with pauses",
@@ -368,6 +394,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-27",
       "question": "Which disastrous fire in 1731 damaged the edges of the Nowell Codex containing the unique text of 'Beowulf'?",
       "options": [
         "The Ashburnham House fire",
@@ -381,6 +408,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-m-28",
       "question": "Alongside Beowulf and Judith, which saint's hagiography is preserved in the Nowell Codex?",
       "options": [
         "Life of Saint Christopher",
@@ -394,6 +422,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-m-29",
       "question": "In the preface to which translation did King Alfred lament the severe decline of Latin scholarship in England?",
       "options": [
         "Ecclesiastical History by Bede",
@@ -407,6 +436,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-30",
       "question": "Which version of the Anglo-Saxon Chronicle maintained historical annals up to the year 1154 AD?",
       "options": [
         "The Abingdon Abbey Chronicle",
@@ -420,6 +450,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-31",
       "question": "In Old English alliterative prosody, which stressed syllable in the line almost never participates in alliteration?",
       "options": [
         "The primary initial head-stave",
@@ -433,6 +464,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-32",
       "question": "What is the strict phonological rule governing vowel alliteration in Old English alliterative meter?",
       "options": [
         "Any vowel alliterates with any other vowel",
@@ -446,6 +478,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-33",
       "question": "Which specific consonant clusters alliterate exclusively with themselves in Old English verse?",
       "options": [
         "sc, sp, and st",
@@ -459,6 +492,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-34",
       "question": "Which structural poetic device involves repeating a single entity through varied parallel noun phrases?",
       "options": [
         "Variation",
@@ -472,6 +506,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-35",
       "question": "Which of the following is one of the four varied epithets applied to God in 'Caedmon's Hymn'?",
       "options": [
         "Beado-leoma describing a battle sword",
@@ -485,6 +520,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-36",
       "question": "In 'Widsith', which Gothic king is cataloged among the ancient continental rulers visited by the scop?",
       "options": [
         "Hrothgar of Denmark",
@@ -498,6 +534,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-37",
       "question": "In the manuscript fragments of 'Waldere', which Burgundian king is Walter preparing to combat?",
       "options": [
         "Hnaef of the Danish host",
@@ -511,6 +548,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-38",
       "question": "How is the poetic structure of 'The Seafarer' fundamentally divided between its two halves?",
       "options": [
         "A sorrowful lament for a lost husband contrasted with an exultant tribal return",
@@ -524,6 +562,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-39",
       "question": "What is the relationship between the speaker and Eadwacer in the dramatic monologue 'Wulf and Eadwacer'?",
       "options": [
         "Eadwacer is her loyal, devoted childhood protector",
@@ -537,6 +576,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-40",
       "question": "What decayed architectural features are highlighted by the observer in the elegy 'The Ruin'?",
       "options": [
         "A sunken Viking dragon-ship stranded upon a muddy gravel shoal",
@@ -550,6 +590,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-41",
       "question": "In the Old English epic poem 'Andreas', which apostle does Saint Andrew rescue from the cannibalistic Mermedonians?",
       "options": [
         "Saint Peter Apostle",
@@ -563,6 +604,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-1-m-42",
       "question": "Which of Cynewulf's signed poems dramatizes the martyrdom of a virgin saint resisting pagan marriage and demonic torture?",
       "options": [
         "Elene",
@@ -576,6 +618,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-43",
       "question": "In Bede's 'Historia Ecclesiastica', which Northumbrian king is advised about Christian conversion through the Parable of the Sparrow?",
       "options": [
         "King Oswald",
@@ -589,6 +632,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-m-44",
       "question": "At which Northumbrian twin monastery did the Venerable Bede spend his scholarly life producing the 'Historia Ecclesiastica'?",
       "options": [
         "Wearmouth-Jarrow",
@@ -602,6 +646,7 @@
       "read": "religion"
     },
     {
+      "id": "old-english-set-1-m-45",
       "question": "Which biblical narratives are poetically paraphrased in the Old English poem 'Daniel' in the Junius Manuscript?",
       "options": [
         "The creation of the heavenly realm and the fall of Lucifer",
@@ -615,6 +660,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-1-m-46",
       "question": "What Old English poetic term denotes the bitter path of exile trodden by solitary wanderers in elegiac verse?",
       "options": [
         "Meotod",
@@ -628,6 +674,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-1-m-47",
       "question": "Which two legal codes were drafted by Archbishop Wulfstan during the late Anglo-Saxon period?",
       "options": [
         "Royal legal statutes for King Alfred the Great and King Ine",
@@ -641,6 +688,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-48",
       "question": "In King Alfred's translation of Boethius's 'Consolation of Philosophy', what concept replaces abstract Neoplatonic philosophy?",
       "options": [
         "Celtic ascetic monastic rules and hermitic rites",
@@ -654,6 +702,7 @@
       "read": "prose"
     },
     {
+      "id": "old-english-set-1-m-49",
       "question": "What was the original dialect of the earliest Northumbrian recording of 'Caedmon's Hymn' before being copied into West Saxon?",
       "options": [
         "West Saxon standard",
@@ -667,6 +716,7 @@
       "read": "the-language"
     },
     {
+      "id": "old-english-set-1-m-50",
       "question": "Which Renaissance antiquarian published the first printed edition of the scriptural poems in Bodleian MS Junius 11 in 1655?",
       "options": [
         "Franciscus Junius",

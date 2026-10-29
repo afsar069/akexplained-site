@@ -26,6 +26,7 @@
   "levelNote": "Finer detail: translation methods, manuscript recensions, stylistic features, biblical prefaces, theological arguments, and specific statutory provisions.",
   "questions": [
     {
+      "id": "old-english-set-3-m-01",
       "question": "Which Mercian scholar was summoned to Alfred's court and made Bishop of Worcester, translating Gregory's 'Dialogues' into Old English at Alfred's request?",
       "options": [
         "Wærferth",
@@ -39,6 +40,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-02",
       "question": "What valuable pointer or bookmark, valued at 50 mancuses of gold, did Alfred send along with each copy of his Old English translation of the Pastoral Care?",
       "options": [
         "A reliquary box",
@@ -52,6 +54,7 @@
       "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
     },
     {
+      "id": "old-english-set-3-m-03",
       "question": "Which manuscript in the Bodleian Library is the contemporary presentation copy of Alfred's Pastoral Care sent directly to Bishop Wærferth of Worcester?",
       "options": [
         "Cotton Tiberius A.vi",
@@ -65,6 +68,7 @@
       "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
     },
     {
+      "id": "old-english-set-3-m-04",
       "question": "What two famous northern voyagers' eyewitness geographical accounts were uniquely inserted into the Old English translation of Orosius's History?",
       "options": [
         "Hengest and Horsa",
@@ -78,6 +82,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-05",
       "question": "What verse adaptation of the poetic metres of Boethius's Consolation was created in Old English based on the prose translation?",
       "options": [
         "The Paris Psalter",
@@ -91,6 +96,7 @@
       "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
     },
     {
+      "id": "old-english-set-3-m-06",
       "question": "In the Old English translation of Boethius's Consolation, how is the classical allegorical figure of Lady Philosophy personified and addressed?",
       "options": [
         "Anima and Ratio",
@@ -104,6 +110,7 @@
       "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
     },
     {
+      "id": "old-english-set-3-m-07",
       "question": "Which Frankish scholar from the abbey of Saint-Bertin was invited to Wessex by King Alfred to help lead his educational reforms?",
       "options": [
         "Grimbald of Saint-Bertin",
@@ -117,6 +124,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-08",
       "question": "What Continental Saxon scholar did King Alfred appoint as abbot of his newly founded monastery at Athelney?",
       "options": [
         "John the Old Saxon",
@@ -130,6 +138,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-09",
       "question": "From which fortified marshland base in Somerset did King Alfred wage guerrilla warfare in early 878 after being driven out of Chippenham?",
       "options": [
         "Wareham",
@@ -143,6 +152,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-10",
       "question": "At which decisive battle in May 878 did Alfred defeat Guthrum's Viking army, paving the way for the conversion of the Danish king?",
       "options": [
         "Battle of Ashdown",
@@ -156,6 +166,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-11",
       "question": "Which dialect of Old English served as the primary administrative and literary language of the Alfredian court and translations?",
       "options": [
         "Early West Saxon",
@@ -169,6 +180,7 @@
       "src": "https://en.wikipedia.org/wiki/Old_English"
     },
     {
+      "id": "old-english-set-3-m-12",
       "question": "Which major prose translation once attributed to King Alfred is now considered by modern scholars to be an independent Mercian translation?",
       "options": [
         "Gregory's Pastoral Care",
@@ -182,6 +194,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-13",
       "question": "What is the modern scholarly term for the initial core compilation of the Anglo-Saxon Chronicle created in Wessex c. 890–893?",
       "options": [
         "The Common Stock",
@@ -195,6 +208,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-14",
       "question": "Which famous annal in the Anglo-Saxon Chronicle, dated 755, breaks the normal annalistic format to provide an extended, dramatic narrative of dynastic feuding?",
       "options": [
         "The landing of Hengest and Horsa",
@@ -208,6 +222,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-15",
       "question": "Which manuscript recension of the Chronicle (British Library Cotton Domitian A.viii, MS F) presents each annal in both Old English and Latin?",
       "options": [
         "The Worcester Chronicle",
@@ -221,6 +236,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-16",
       "question": "What discrete historical text covering the years 902–924 was inserted into the Abingdon Chronicle (MS C) to record the military exploits of Æthelflæd, Lady of the Mercians?",
       "options": [
         "The Northumbrian Priors",
@@ -234,6 +250,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-17",
       "question": "What catastrophic event in 1731 severely burned several Cottonian manuscripts of the Anglo-Saxon Chronicle and almost completely destroyed MS G?",
       "options": [
         "The Great Fire of London",
@@ -247,6 +264,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-18",
       "question": "Which late 10th-century Anglo-Saxon ealdorman translated the Anglo-Saxon Chronicle into elaborate Latin prose for his continental cousin Matilda?",
       "options": [
         "Byrhtnoth",
@@ -260,6 +278,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-19",
       "question": "Which northern recension of the Chronicle (Cotton Tiberius B.iv, MS D) contains extensive records on Scottish and northern English affairs?",
       "options": [
         "The Parker Chronicle",
@@ -273,6 +292,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-20",
       "question": "What clerical error occurred in the archetype of the Common Stock that caused a two-year chronological dislocation for the annals between 756 and 845?",
       "options": [
         "The compiler shifted from the Christian Era to imperial Roman dates",
@@ -286,6 +306,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-21",
       "question": "What Old English poem is preserved in the Anglo-Saxon Chronicle under the annal for 973 celebrating the formal coronation of King Edgar at Bath?",
       "options": [
         "The Coronation of Edgar",
@@ -299,6 +320,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-22",
       "question": "Which 17th-century Archbishop of Canterbury acquired MS E of the Chronicle (Bodleian Library Laud Misc. 636) and donated it to Oxford University?",
       "options": [
         "Matthew Parker",
@@ -312,6 +334,7 @@
       "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
     },
     {
+      "id": "old-english-set-3-m-23",
       "question": "What distinctive literary style did Ælfric develop in his Lives of Saints and later homilies, featuring rhythmic clauses and sound-matching?",
       "options": [
         "Alliterative prose",
@@ -325,6 +348,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-24",
       "question": "Which older anonymous collection of Old English sermons did Ælfric seek to supplant because he considered its theology superstitious and apocryphal?",
       "options": [
         "The Vercelli Homilies",
@@ -338,6 +362,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-25",
       "question": "Which late antique Roman grammarians provided the primary Latin models for Ælfric's Old English 'Grammar' and 'Glossary'?",
       "options": [
         "Quintilian and Cicero",
@@ -351,6 +376,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-26",
       "question": "In Ælfric's Colloquy, which working man defends his profession as the most essential to society because without him, nobody has bread?",
       "options": [
         "The Plowman",
@@ -364,6 +390,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-27",
       "question": "In Ælfric's Colloquy, which laborer opens the conversation by describing his grueling toil plowing a full acre or more in the winter cold?",
       "options": [
         "The Shepherd",
@@ -377,6 +404,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-28",
       "question": "What pastoral letter did Ælfric compose around 998 for Bishop Wulfsige of Sherborne to regulate clerical life and duties in that diocese?",
       "options": [
         "The Pastoral Care of Gregory",
@@ -390,6 +418,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-29",
       "question": "What pastoral concern did Ælfric express in his Preface to Genesis addressed to his patron Ealdorman Æthelweard?",
       "options": [
         "That vernacular scripture would cause lay rebellion against the English monarchy",
@@ -403,6 +432,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-30",
       "question": "Which student and follower of Ælfric expanded his Colloquy with additional Latin vocabulary and classroom dialogues?",
       "options": [
         "Ælfric Bata",
@@ -416,6 +446,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-31",
       "question": "What scientific work on the calendar, astronomy, and computation did Ælfric translate and adapt into Old English from Bede?",
       "options": [
         "De Rerum Natura",
@@ -429,6 +460,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-32",
       "question": "To which Archbishop of Canterbury did Ælfric dedicate both series of his Catholic Homilies in the early 990s?",
       "options": [
         "Sigeric",
@@ -442,6 +474,7 @@
       "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
     },
     {
+      "id": "old-english-set-3-m-33",
       "question": "Which southern bishopric did Wulfstan hold simultaneously in plurality with the archdiocese of York between 1002 and 1016?",
       "options": [
         "Diocese of London",
@@ -455,6 +488,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-34",
       "question": "What is the defining stylistic characteristic of Wulfstan's rhythmic Old English prose sermons?",
       "options": [
         "Strings of syntactically independent two-stress phrases bound by alliteration and parallelism",
@@ -468,6 +502,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-35",
       "question": "What emergency national penitential ordinance did Wulfstan draft for King Æthelred in 1009 during the devastating raids of Thorkell the Tall?",
       "options": [
         "An immediate treaty ceding the Danelaw to Danish rule without tribute",
@@ -481,6 +516,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-36",
       "question": "In his 'Institutes of Polity', into what three functional orders or estates does Wulfstan describe the Christian commonwealth as being organized?",
       "options": [
         "The crown, the parliament, and the common guilds",
@@ -494,6 +530,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-37",
       "question": "What extensive canon law collection compiled by Wulfstan was formerly known to scholars as the 'Excerptiones pseudo-Ecgberhti'?",
       "options": [
         "The Parker Canonical Register",
@@ -507,6 +544,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-38",
       "question": "What Old Norse loanword for 'law' entered Old English through Anglo-Danish contact and was frequently employed in Wulfstan's writings?",
       "options": [
         "Bot",
@@ -520,6 +558,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-39",
       "question": "What handbook of pastoral and clerical regulation did Wulfstan compile c. 1005–1008 setting standards for parish clergy?",
       "options": [
         "The Regula Pastoralis",
@@ -533,6 +572,7 @@
       "src": "https://en.wikipedia.org/wiki/List_of_works_by_Wulfstan_of_York"
     },
     {
+      "id": "old-english-set-3-m-40",
       "question": "At which royal council held in 1008 did Wulfstan draft and promulgate an extensive law code uniting ecclesiastical and national reform for King Æthelred?",
       "options": [
         "The Synod of Whitby",
@@ -546,6 +586,7 @@
       "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
     },
     {
+      "id": "old-english-set-3-m-41",
       "question": "What extensive biblical text did King Alfred place as a theological prologue before his Domboc, presenting English royal law as part of salvation history?",
       "options": [
         "The Ten Commandments and Mosaic Law from the Book of Exodus",
@@ -559,6 +600,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-42",
       "question": "In the Law of Æthelberht of Kent, which institution was assigned the highest compensation multiplier (twelve-fold) for stolen property?",
       "options": [
         "The King and royal halls",
@@ -572,6 +614,7 @@
       "src": "https://en.wikipedia.org/wiki/Law_of_%C3%86thelberht"
     },
     {
+      "id": "old-english-set-3-m-43",
       "question": "In Anglo-Saxon social and legal hierarchy, what was the standard wergild of a free peasant or commoner (ceorl) in West Saxon law?",
       "options": [
         "1200 shillings",
@@ -585,6 +628,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-44",
       "question": "In Anglo-Saxon social and legal hierarchy, what was the standard wergild of a noble or landed thegn in West Saxon law?",
       "options": [
         "200 shillings",
@@ -598,6 +642,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-45",
       "question": "What formal peace treaty established the historical boundary between Anglo-Saxon territory and the Danelaw along the River Thames, River Lea, and Watling Street?",
       "options": [
         "The Treaty of Wedmore",
@@ -611,6 +656,7 @@
       "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
     },
     {
+      "id": "old-english-set-3-m-46",
       "question": "What was 'bookland' (bocland) in Anglo-Saxon property law?",
       "options": [
         "Land held strictly according to unwritten local peasant custom and folk-right",
@@ -624,6 +670,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-47",
       "question": "What was the 'friborh' (frankpledge) system in late Anglo-Saxon community law enforcement?",
       "options": [
         "A sworn order of knights patrolling royal highways under crown commission",
@@ -637,6 +684,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-48",
       "question": "Which late 10th-century law code of King Æthelred, issued at Wantage for the Danelaw, describes a committee of twelve leading thegns presenting accusations?",
       "options": [
         "The Code of Woodstock",
@@ -650,6 +698,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-49",
       "question": "What legal privilege granted by royal charter gave an Anglo-Saxon lord the right of summary trial and execution over a thief caught red-handed on his estate?",
       "options": [
         "Infangentheof",
@@ -663,6 +712,7 @@
       "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
     },
     {
+      "id": "old-english-set-3-m-50",
       "question": "In Anglo-Saxon criminal law, what serious crime involved assaulting someone within their own house, violating the domestic peace of their dwelling?",
       "options": [
         "Forsteal",

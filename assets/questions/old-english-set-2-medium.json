@@ -30,6 +30,7 @@
   "levelNote": "Finer detail: the metre, episodes and sources, and the riddle solutions.",
   "questions": [
     {
+      "id": "old-english-set-2-m-01",
       "question": "In Eduard Sievers' classification of Old English meter, what specific rhythmic movement defines Type A?",
       "options": [
         "A clashing rhythm consisting of two adjacent strongly stressed syllables",
@@ -42,6 +43,7 @@
       "topic": "verse"
     },
     {
+      "id": "old-english-set-2-m-02",
       "question": "In Sievers' metrical analysis of Old English verse, which type represents a rising iambic movement?",
       "options": [
         "Type D",
@@ -54,6 +56,7 @@
       "topic": "verse"
     },
     {
+      "id": "old-english-set-2-m-03",
       "question": "Which conventional Old English poetic theme describes the wolf, raven, and eagle waiting to devour the slain?",
       "options": [
         "The Hero on the Beach theme",
@@ -66,6 +69,7 @@
       "topic": "verse"
     },
     {
+      "id": "old-english-set-2-m-04",
       "question": "In Old English heroic poetry, what conventional motif depicts an armed warrior standing near water before embarking?",
       "options": [
         "The Beasts of Battle slaughter motif",
@@ -78,6 +82,7 @@
       "topic": "verse"
     },
     {
+      "id": "old-english-set-2-m-05",
       "question": "What does the Old English figurative compound 'heofon-candel' or 'sky-candle' signify in poetic verse?",
       "options": [
         "The sun shining in the heavens",
@@ -91,6 +96,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-2-m-06",
       "question": "In his long speech to Beowulf after Grendel's mother is dead, which earlier Danish king does Hrothgar hold up as a warning?",
       "options": [
         "Scyld Scefing",
@@ -104,6 +110,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-07",
       "question": "In 'Beowulf', what dark deed does Beowulf accuse Unferth of having committed among his own clan?",
       "options": [
         "Fleeing coward-like from Grendel's attack",
@@ -117,6 +124,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-08",
       "question": "What unexpected failure occurs when Beowulf strikes Grendel's mother with the borrowed sword Hrunting?",
       "options": [
         "The charmed weapon transforms into a flock of black night ravens",
@@ -130,6 +138,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-09",
       "question": "What happened to the blade of the giant sword after Beowulf used it to decapitate Grendel's corpse in the mere?",
       "options": [
         "It snapped violently into three jagged pieces under Beowulf's weight",
@@ -143,6 +152,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-10",
       "question": "In 'Beowulf', which sorrowful figure is commemorated in the scop's lay of the Finnsburh tragedy?",
       "options": [
         "Queen Hildeburh, who lost both brother and son in the feud",
@@ -156,6 +166,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-11",
       "question": "How did the Geatish warriors dispose of the dead treasure-dragon following Beowulf's mortal victory?",
       "options": [
         "They cremated its remains solemnly upon Beowulf's royal funeral pyre",
@@ -169,6 +180,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-12",
       "question": "What grim prophecy is voiced by the Geatish mourning woman during the funeral ceremony for Beowulf?",
       "options": [
         "The unending peaceful and prosperous reign of Wiglaf over all Scandinavia",
@@ -182,6 +194,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-13",
       "question": "In 'The Wanderer', what psychological transition takes place between the early and concluding sections of the poem?",
       "options": [
         "From personal elegiac despair over earthly loss to Christian consolation in God",
@@ -195,6 +208,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-14",
       "question": "In 'The Seafarer', what sharp contrast is drawn between the lonely mariner and the prosperous city-dweller?",
       "options": [
         "The city-dweller endures harsh poverty while the mariner amasses fabulous gold rings",
@@ -208,6 +222,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-15",
       "question": "In the consolatory elegy 'Deor', what was the duration of Theodoric's rule over the fortress of the Mauringas?",
       "options": [
         "Fifty harsh winters",
@@ -221,6 +236,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-16",
       "question": "What specific physical dwelling does the exiled speaker occupy in 'The Wife's Lament'?",
       "options": [
         "A wooden boat stranded amidst the coastal fens of Northumbria",
@@ -234,6 +250,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-17",
       "question": "In 'Wulf and Eadwacer', what distinct landscapes separate the sorrowful speaker from her lover Wulf?",
       "options": [
         "A deep river valley strictly patrolled by royal Anglo-Saxon border guards",
@@ -247,6 +264,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-18",
       "question": "In 'The Husband's Message', which poem immediately precedes it in the Exeter Book manuscript folios?",
       "options": [
         "Exeter Riddle 60, describing a reed cut at the water edge",
@@ -259,6 +277,7 @@
       "topic": "elegies"
     },
     {
+      "id": "old-english-set-2-m-19",
       "question": "What architectural detail in 'The Ruin' illustrates the past luxury of the Roman city before its fall?",
       "options": [
         "A majestic Christian cathedral adorned with stained glass and stone towers",
@@ -272,6 +291,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-20",
       "question": "In Bede's account of Caedmon's Hymn, what primary theme was Caedmon commanded to sing about by the divine visitor?",
       "options": [
         "The creation of the cosmos and the beginning of created things",
@@ -285,6 +305,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-21",
       "question": "In the Old English 'Genesis B', what reason does Satan offer for refusing obedience to God?",
       "options": [
         "He complains that God failed to grant him sovereignty over an earthly realm",
@@ -298,6 +319,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-22",
       "question": "Which Old Saxon original poem was translated and inserted into the Old English 'Genesis' as 'Genesis B'?",
       "options": [
         "The continental High German Hildebrandslied heroic lay",
@@ -311,6 +333,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-23",
       "question": "In the Junius poem 'Exodus', what natural miracle is described with vivid Old English heroic battle imagery?",
       "options": [
         "The descent of miraculous manna from heaven to sustain the Hebrews",
@@ -324,6 +347,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-24",
       "question": "In Cynewulf's 'Elene', who is the reluctant Jewish scholar tortured in a dry well until he uncovers the Cross?",
       "options": [
         "Judas Cyriacus",
@@ -337,6 +361,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-25",
       "question": "On which homily by Pope Gregory the Great is Cynewulf's poem 'Christ II' or 'The Ascension' based?",
       "options": [
         "Pope Gregory's extensive theological commentary Moralia in Job",
@@ -350,6 +375,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-26",
       "question": "In 'The Dream of the Rood', how does the Cross explain its own reluctance to bow or break during the Crucifixion?",
       "options": [
         "It lacked the physical resilience required to endure the Roman nails",
@@ -363,6 +389,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-27",
       "question": "What 8th-century Scottish monument features runic inscriptions matching passages of 'The Dream of the Rood'?",
       "options": [
         "The Ruthwell Cross in Dumfriesshire",
@@ -376,6 +403,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-28",
       "question": "In the Old English poem 'Andreas', which city of anthropophagi or cannibals does Saint Andrew enter?",
       "options": [
         "Mermedonia",
@@ -389,6 +417,7 @@
       "read": "how-the-writing-survived"
     },
     {
+      "id": "old-english-set-2-m-29",
       "question": "Which late Roman author's work 'De Ave Phoenice' is allegorized in the Old English poem 'The Phoenix'?",
       "options": [
         "Ausonius poet",
@@ -401,6 +430,7 @@
       "topic": "religious"
     },
     {
+      "id": "old-english-set-2-m-30",
       "question": "Which Anglo-Saxon scholar, later Bishop of Sherborne, composed 100 Latin riddles titled 'Enigmata'?",
       "options": [
         "Alcuin of York",
@@ -414,6 +444,7 @@
       "read": "writers-and-works"
     },
     {
+      "id": "old-english-set-2-m-31",
       "question": "Which late antique Latin poet wrote 100 three-line riddles that served as a primary model for medieval riddle collections?",
       "options": [
         "Marcus Valerius Martialis",
@@ -426,6 +457,7 @@
       "topic": "riddles"
     },
     {
+      "id": "old-english-set-2-m-32",
       "question": "In Exeter Book Riddle 47, what ironic observation is made about the creature that devours words?",
       "options": [
         "It swallows noble sayings but gains no knowledge or wisdom from eating them",
@@ -439,6 +471,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-33",
       "question": "In Exeter Book Riddle 26, how does the speaker describe its transformation from animal skin to holy scripture?",
       "options": [
         "It is soaked in water, scraped of hair, sliced with a knife, and adorned with gold",
@@ -452,6 +485,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-34",
       "question": "What is the widely accepted solution to Exeter Book Riddle 25, a suggestive riddle about a household item handled by women?",
       "options": [
         "An Onion",
@@ -465,6 +499,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-35",
       "question": "What is the solution to Exeter Book Riddle 27, describing an intoxicating beverage that overpowers strong warriors?",
       "options": [
         "Cider",
@@ -478,6 +513,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-36",
       "question": "What is the solution to Exeter Book Riddle 16, describing a steadfast object that wrestles with wind and water?",
       "options": [
         "A Ship's Rudder",
@@ -491,6 +527,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-37",
       "question": "What is the solution to Exeter Book Riddle 14, describing an animal horn transformed into a drinking vessel or battle-trumpet?",
       "options": [
         "A Shield",
@@ -504,6 +541,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-38",
       "question": "What is the solution to Exeter Book Riddle 35, which closely translates Aldhelm's Latin riddle on the coat of mail?",
       "options": [
         "A fine woven woolen travelling cloak",
@@ -517,6 +555,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-39",
       "question": "What prominent thematic quality distinguishes the Exeter Book riddles from classical Latin enigmata?",
       "options": [
         "An exclusive preoccupation with abstract theological doctrines and Latin pedagogy",
@@ -530,6 +569,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-40",
       "question": "In Old English alliterative verse, what is the role of the 'lift' and the 'drop' in metrical analysis?",
       "options": [
         "A lift denotes an alliterating consonant and a drop represents an elided vowel",
@@ -543,6 +583,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-41",
       "question": "In Sievers Type C metrical patterns, what distinctive stress sequence occurs within the half-line?",
       "options": [
         "Two unstressed syllables followed directly by two lightly accented metrical feet",
@@ -555,6 +596,7 @@
       "topic": "verse"
     },
     {
+      "id": "old-english-set-2-m-42",
       "question": "What function did the 'medial caesura' perform during the oral recitation of Old English poetry?",
       "options": [
         "It signaled precisely where the assembled mead-hall audience was expected to cheer",
@@ -568,6 +610,7 @@
       "read": "key-terms"
     },
     {
+      "id": "old-english-set-2-m-43",
       "question": "In 'Beowulf', which Geatish king's death does Beowulf avenge by supporting Eadgils against the Swedish king Onela?",
       "options": [
         "King Hygelac the Geat",
@@ -581,6 +624,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-44",
       "question": "What is the source of the golden torc or necklace given to Beowulf by Wealhtheow and later worn by Hygelac?",
       "options": [
         "The legendary Brosing necklace or necklace of the Brisings",
@@ -594,6 +638,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-45",
       "question": "In 'The Wanderer', what term describes the loyal lord whose death leaves the wanderer bereft of joy?",
       "options": [
         "Scrift or monastic spiritual confessor",
@@ -607,6 +652,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-46",
       "question": "In 'Deor', what specific hardship did the mythological hero Hermanaric or Ermanaric inflict upon his subjects?",
       "options": [
         "Exorbitant tribute demands on grain and mead during devastating winter famines",
@@ -620,6 +666,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-47",
       "question": "In 'The Seafarer', what heavenly destination is designated as the true eternal 'patria' or homeland of the soul?",
       "options": [
         "The ancestral halls of Wessex under King Alfred the Great",
@@ -633,6 +680,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-48",
       "question": "In 'The Dream of the Rood', how does the speaking Cross characterize the nails driven into its wood?",
       "options": [
         "Gifts from the apostles symbolizing eternal fidelity",
@@ -646,6 +694,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-49",
       "question": "In Cynewulf's 'Juliana', whom does the saint refuse to marry, leading to her martyrdom?",
       "options": [
         "Holofernes",
@@ -659,6 +708,7 @@
       "read": "poetry"
     },
     {
+      "id": "old-english-set-2-m-50",
       "question": "What is the unique literary significance of the Exeter Book riddles within early medieval European vernacular literature?",
       "options": [
         "They are the largest surviving vernacular riddle collection from the early Middle Ages",
