@@ -25,6 +25,7 @@ anglo-saxon-chronicle,The Anglo-Saxon Chronicle,old-english,work,131
 king-alfred,King Alfred,old-english,writer,132
 aelfric,Aelfric,old-english,writer,133
 wulfstan,Wulfstan,old-english,writer,134
+anglo-saxon,Anglo-Saxon Period (450-1066),old-english,period,135
 middle-english,Middle English Period (1066-1500),british-literature,period,200
 geoffrey-chaucer,Geoffrey Chaucer,middle-english,writer,201
 the-canterbury-tales,The Canterbury Tales,geoffrey-chaucer,work,202
@@ -56,6 +57,9 @@ medieval-romance,Medieval Romance,middle-english,concept,227
 popular-ballads,Popular Ballads,middle-english,concept,228
 middle-english-lyrics,Middle English Lyrics,middle-english,concept,229
 scottish-chaucerians,The Scottish Chaucerians,middle-english,movement,230
+anglo-norman,Anglo-Norman Period (1066-1340),middle-english,period,231
+age-of-chaucer,Age of Chaucer (1340-1400),middle-english,period,232
+fifteenth-century,Fifteenth Century (1400-1500),middle-english,period,233
 renaissance,The Renaissance (1500-1603),british-literature,period,300
 english-renaissance-humanism,English Renaissance Humanism,renaissance,concept,301
 thomas-more,Sir Thomas More,renaissance,writer,302
@@ -119,6 +123,8 @@ the-tempest,The Tempest,shakespeares-romances,work,359
 the-winters-tale,The Winter's Tale,shakespeares-romances,work,360
 cymbeline,Cymbeline,shakespeares-romances,work,361
 elizabethan-drama,Elizabethan Drama,renaissance,concept,362
+early-tudor,Early Tudor Period (1500-1558),renaissance,period,363
+elizabethan,Elizabethan Age (1558-1603),renaissance,period,364
 jacobean,Jacobean and Caroline Period (1603-1660),british-literature,period,400
 ben-jonson,Ben Jonson,jacobean,writer,401
 volpone,Volpone,ben-jonson,work,402
@@ -176,6 +182,9 @@ thomas-browne,Sir Thomas Browne,jacobean,writer,453
 religio-medici,Religio Medici,thomas-browne,work,454
 izaak-walton,Izaak Walton,jacobean,writer,455
 king-james-bible,The King James Bible,jacobean,work,456
+jacobean-era,Jacobean Age (1603-1625),jacobean,period,457
+caroline,Caroline Age (1625-1649),jacobean,period,458
+commonwealth,Commonwealth Period (1649-1660),jacobean,period,459
 restoration,The Restoration Period (1660-1700),british-literature,period,500
 john-dryden,John Dryden,restoration,writer,501
 absalom-and-achitophel,Absalom and Achitophel,john-dryden,work,502
@@ -208,6 +217,7 @@ thomas-hobbes,Thomas Hobbes,restoration,writer,528
 leviathan,Leviathan,thomas-hobbes,work,529
 john-locke,John Locke,restoration,writer,530
 restoration-prose-style,Restoration Prose Style,restoration,concept,531
+restoration-era,Restoration Age (1660-1700),restoration,period,532
 augustan-age,The Augustan Age (1700-1798),british-literature,period,600
 neoclassicism,Neoclassicism,augustan-age,movement,601
 augustan-satire,Augustan Satire,augustan-age,concept,602
@@ -282,6 +292,8 @@ the-monk,The Monk,matthew-lewis,work,670
 edmund-burke,Edmund Burke,augustan-age,writer,671
 mary-wollstonecraft,Mary Wollstonecraft,augustan-age,writer,672
 a-vindication-of-the-rights-of-woman,A Vindication of the Rights of Woman,mary-wollstonecraft,work,673
+augustan,Augustan Age (1700-1745),augustan-age,period,674
+age-of-sensibility,Age of Sensibility (1745-1785),augustan-age,period,675
 romantic-age,The Romantic Age (1798-1837),british-literature,period,700
 romanticism,Romanticism,romantic-age,movement,701
 the-romantic-imagination,The Romantic Imagination,romantic-age,concept,702
@@ -342,6 +354,7 @@ the-historical-novel,The Historical Novel,romantic-age,concept,756
 mary-shelley,Mary Shelley,romantic-age,writer,757
 frankenstein,Frankenstein,mary-shelley,work,758
 maria-edgeworth,Maria Edgeworth,romantic-age,writer,759
+romantic,Romantic Period (1785-1832),romantic-age,period,760
 victorian-age,The Victorian Age (1837-1901),british-literature,period,800
 victorian-doubt,Victorian Doubt and Faith,victorian-age,concept,801
 the-victorian-novel,The Victorian Novel,victorian-age,concept,802
@@ -429,6 +442,7 @@ on-heroes-and-hero-worship,On Heroes and Hero-Worship,thomas-carlyle,work,883
 john-ruskin,John Ruskin,victorian-age,writer,884
 john-stuart-mill,John Stuart Mill,victorian-age,writer,885
 john-henry-newman,John Henry Newman,victorian-age,writer,886
+victorian,Victorian Period (1832-1901),victorian-age,period,887
 modern,The Modern Period (1901-1945),british-literature,period,900
 modernism,Modernism,modern,movement,901
 stream-of-consciousness,Stream of Consciousness,modern,concept,902
@@ -510,6 +524,9 @@ the-playboy-of-the-western-world,The Playboy of the Western World,jm-synge,work,
 sean-ocasey,Sean O'Casey,modern,writer,978
 juno-and-the-paycock,Juno and the Paycock,sean-ocasey,work,979
 lady-gregory,Lady Gregory,modern,writer,980
+edwardian,Edwardian Period (1901-1914),modern,period,981
+georgian,Georgian Period (1910-1936),modern,period,982
+modern-era,Modern Period (1914-1945),modern,period,983
 contemporary,The Contemporary Period (1945-),british-literature,period,1000
 the-movement,The Movement,contemporary,movement,1001
 philip-larkin,Philip Larkin,contemporary,writer,1002
@@ -567,3 +584,4 @@ zadie-smith,Zadie Smith,contemporary,writer,1053
 white-teeth,White Teeth,zadie-smith,work,1054
 hilary-mantel,Hilary Mantel,contemporary,writer,1055
 wolf-hall,Wolf Hall,hilary-mantel,work,1056
+postmodern,Postmodern Period (1945-),contemporary,period,1057

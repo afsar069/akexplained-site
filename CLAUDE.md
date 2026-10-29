@@ -163,13 +163,18 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1458 rows across 8 areas
+(`area | period | movement | writer | work | concept`). 1476 rows across 8 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
 Language/ELT, Research Methodology). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
 of truth for valid topic ids.** Convention: a writer sits directly under its period;
 named schools are `movement` siblings (grouping lives in `exam_topics`, not the tree);
 concept-only areas go area > group > term. Invent no topics — the owner supplies them.
+The 10 British ages (`old-english` … `contemporary`) are parents of 18 child `period` nodes, one
+per site period (Daily page names and years). Ids are the site slug, except `jacobean-era`,
+`restoration-era` and `modern-era` (the plain slug is already an age node). The Renaissance
+(1500–1660) and Neoclassical (1660–1785) banks have no node: each spans two ages. Writers and
+works stay under their age, not under the sub-period.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.

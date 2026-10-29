@@ -99,6 +99,9 @@ There are two kinds of table here.
   `work`, or `concept`), and `sort_order` sets the order among siblings.
   Mastery is worked out at a parent level by rolling up its children, so the
   depth of the tree matters. Starts empty; the topic list is supplied later.
+  Each British age (for example Old English) also has child period nodes for the
+  site's own literary periods (for example Anglo-Saxon), added by
+  `20261029170000_add_british_sub_periods.sql`.
   (A later migration, `20261027120000_topics_tree.sql`, replaced the earlier
   flat `age_slug` column with `parent_id` and `kind`.)
 - **`exam_topics`** — which topics belong to which exam, grouped into units
