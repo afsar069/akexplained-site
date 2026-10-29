@@ -1,0 +1,102 @@
+id,name,parent_id,kind,sort_order
+english-language-and-elt,"English Language, Linguistics and ELT",,area,7001
+linguistics,Linguistics,english-language-and-elt,concept,7002
+phonetics,Phonetics,linguistics,concept,7003
+phonology,Phonology,linguistics,concept,7004
+morphology-linguistics,Morphology,linguistics,concept,7005
+syntax,Syntax,linguistics,concept,7006
+semantics,Semantics,linguistics,concept,7007
+pragmatics,Pragmatics,linguistics,concept,7008
+sociolinguistics,Sociolinguistics,linguistics,concept,7009
+psycholinguistics,Psycholinguistics,linguistics,concept,7010
+historical-linguistics,Historical Linguistics,linguistics,concept,7011
+applied-linguistics,Applied Linguistics,linguistics,concept,7012
+discourse-analysis,Discourse Analysis,linguistics,concept,7013
+stylistics,Stylistics,linguistics,concept,7014
+phonetics-terms,Phonetics and Phonology Terms,english-language-and-elt,concept,7015
+phoneme,Phoneme,phonetics-terms,concept,7016
+allophone,Allophone,phonetics-terms,concept,7017
+morpheme,Morpheme,phonetics-terms,concept,7018
+ipa,International Phonetic Alphabet (IPA),phonetics-terms,concept,7019
+vowel,Vowel,phonetics-terms,concept,7020
+consonant,Consonant,phonetics-terms,concept,7021
+diphthong,Diphthong,phonetics-terms,concept,7022
+received-pronunciation,Received Pronunciation (RP),phonetics-terms,concept,7023
+word-stress,Word Stress,phonetics-terms,concept,7024
+intonation,Intonation,phonetics-terms,concept,7025
+syllable,Syllable,phonetics-terms,concept,7026
+minimal-pair,Minimal Pair,phonetics-terms,concept,7027
+assimilation,Assimilation,phonetics-terms,concept,7028
+elision,Elision,phonetics-terms,concept,7029
+place-of-articulation,Place of Articulation,phonetics-terms,concept,7030
+manner-of-articulation,Manner of Articulation,phonetics-terms,concept,7031
+grammar-and-syntax,Grammar and Syntax,english-language-and-elt,concept,7032
+noam-chomsky,Noam Chomsky,grammar-and-syntax,concept,7033
+transformational-grammar,Transformational Generative Grammar,grammar-and-syntax,concept,7034
+universal-grammar,Universal Grammar,grammar-and-syntax,concept,7035
+deep-and-surface-structure,Deep and Surface Structure,grammar-and-syntax,concept,7036
+m-a-k-halliday,M. A. K. Halliday,grammar-and-syntax,concept,7037
+systemic-functional-grammar,Systemic Functional Grammar,grammar-and-syntax,concept,7038
+traditional-grammar,Traditional Grammar,grammar-and-syntax,concept,7039
+structural-grammar,Structural Grammar,grammar-and-syntax,concept,7040
+ferdinand-saussure-linguistics,Saussure and Structural Linguistics,grammar-and-syntax,concept,7041
+english-language-history,History and Varieties of English,english-language-and-elt,concept,7042
+history-of-english-language,History of the English Language,english-language-history,concept,7043
+old-english-language,Old English (language),english-language-history,concept,7044
+middle-english-language,Middle English (language),english-language-history,concept,7045
+great-vowel-shift,The Great Vowel Shift,english-language-history,concept,7046
+standardisation-of-english,Standardisation of English,english-language-history,concept,7047
+world-englishes,World Englishes,english-language-history,concept,7048
+indian-english,Indian English,english-language-history,concept,7049
+pidgin-and-creole,Pidgin and Creole,english-language-history,concept,7050
+dialect,Dialect,english-language-history,concept,7051
+register,Register,english-language-history,concept,7052
+lingua-franca,Lingua Franca,english-language-history,concept,7053
+elt,English Language Teaching (ELT),english-language-and-elt,concept,7054
+grammar-translation-method,Grammar-Translation Method,elt,concept,7055
+direct-method,Direct Method,elt,concept,7056
+audio-lingual-method,Audio-Lingual Method,elt,concept,7057
+communicative-language-teaching,Communicative Language Teaching (CLT),elt,concept,7058
+task-based-language-teaching,Task-Based Language Teaching,elt,concept,7059
+the-silent-way,The Silent Way,elt,concept,7060
+suggestopedia,Suggestopedia,elt,concept,7061
+total-physical-response,Total Physical Response,elt,concept,7062
+second-language-acquisition,Second Language Acquisition (SLA),elt,concept,7063
+english-for-specific-purposes,English for Specific Purposes (ESP),elt,concept,7064
+lsrw-skills,LSRW Skills,elt,concept,7065
+bblooms-taxonomy,Bloom's Taxonomy,elt,concept,7066
+krashen-input-hypothesis,Krashen's Input Hypothesis,elt,concept,7067
+language-testing,Language Testing and Evaluation,elt,concept,7068
+research-methodology,Research Methods and Materials,,area,7069
+research-basics,Research Basics,research-methodology,concept,7070
+what-is-research,Nature and Purpose of Research,research-basics,concept,7071
+hypothesis,Hypothesis,research-basics,concept,7072
+research-question,Research Question,research-basics,concept,7073
+thesis-statement,Thesis Statement,research-basics,concept,7074
+qualitative-research,Qualitative Research,research-basics,concept,7075
+quantitative-research,Quantitative Research,research-basics,concept,7076
+primary-sources,Primary Sources,research-basics,concept,7077
+secondary-sources,Secondary Sources,research-basics,concept,7078
+literature-review,Literature Review,research-basics,concept,7079
+research-proposal,Research Proposal,research-basics,concept,7080
+interdisciplinary-research,Interdisciplinary Research,research-basics,concept,7081
+documentation-and-style,Documentation and Style,research-methodology,concept,7082
+mla-style,MLA Style,documentation-and-style,concept,7083
+apa-style,APA Style,documentation-and-style,concept,7084
+chicago-style,Chicago Style,documentation-and-style,concept,7085
+in-text-citation,In-text Citation,documentation-and-style,concept,7086
+works-cited,Works Cited,documentation-and-style,concept,7087
+bibliography,Bibliography,documentation-and-style,concept,7088
+annotated-bibliography,Annotated Bibliography,documentation-and-style,concept,7089
+footnotes-and-endnotes,Footnotes and Endnotes,documentation-and-style,concept,7090
+plagiarism,Plagiarism,documentation-and-style,concept,7091
+paraphrasing-and-quoting,Paraphrasing and Quoting,documentation-and-style,concept,7092
+abstract,Abstract,documentation-and-style,concept,7093
+editing-and-textual,Editing and Textual Scholarship,research-methodology,concept,7094
+textual-criticism,Textual Criticism,editing-and-textual,concept,7095
+editing,Scholarly Editing,editing-and-textual,concept,7096
+manuscript,Manuscript,editing-and-textual,concept,7097
+variorum-edition,Variorum Edition,editing-and-textual,concept,7098
+quarto-and-folio,Quarto and Folio,editing-and-textual,concept,7099
+copy-text,Copy-text,editing-and-textual,concept,7100
+digital-humanities,Digital Humanities,editing-and-textual,concept,7101
