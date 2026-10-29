@@ -129,3 +129,67 @@ on *literature* is still to come. When the real files arrive (after the duplicat
   meta description. Write one line under each button from the real questions.
 - Look for near-duplicates between the two banks (the Beowulf questions overlap) and show them to the
   owner before building.
+
+## 9. Working with the owner, and applying database changes
+The owner (Prof. Afsar Khan) is **not a programmer**. When something has to be done
+by hand, give **click-by-click steps, one at a time**: which link to open, copy,
+paste where, which button to press, and what a success message looks like. Then wait
+for the result before the next step. Do not assume shell, git, or dashboard fluency.
+
+**This session cannot reach Supabase.** The cloud container's network proxy blocks the
+Supabase host, so Claude can neither apply nor test a migration against the database
+from here. So: **Claude writes the SQL; the owner runs it** in Supabase → SQL Editor
+(New query → paste → Run → expect "Success. No rows returned."). For a long file, point
+the owner to the migration file's GitHub **raw** link and the copy button rather than
+pasting hundreds of lines into chat. To confirm row counts, give a `select count(*)`
+— the dashboard table view only shows 100 rows at a time, so hand-counting misleads.
+
+## 10. Accounts and the database (Supabase)
+User accounts are **live**. Backend is a Supabase project; the browser talks to it with
+the **publishable** key, which is public by design and lives in `assets/supabase-config.js`
+(shipped to the browser; RLS protects the data). **Never put the secret key in the repo,
+and never ask the owner for it.**
+- Auth glue `assets/auth.js` (header Login/name, session) loads on every page via the
+  chrome transform; `/login/` and `/account/` are the auth pages; `assets/login.js`,
+  `assets/account.js`. supabase-js is vendored at `assets/supabase-2.118.0.js` (no CDN).
+- Schema: `profiles`, `attempts`, `reading_progress`, `exams`, `topics`, `exam_topics`,
+  `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
+  reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
+- Migrations live in `supabase/migrations/` (ordered, run once by the owner). Each is one
+  transaction; data loads use `on conflict (id) do nothing`; topic rows are inserted
+  parents-first. `supabase/full-setup.sql` is a consolidated, idempotent one-shot.
+  `docs/db-notes.md` explains every table in plain English. **Never gate existing content
+  behind login** — articles, the Daily quiz and the MCQs stay open to everyone.
+
+## 11. Topic taxonomy
+`topics` is a self-referencing tree with `parent_id` and `kind`
+(`area | period | movement | writer | work | concept`). 1458 rows across 8 areas
+(British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
+Language/ELT, Research Methodology). The per-area CSVs the rows were built from are in
+`supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
+of truth for valid topic ids.** Convention: a writer sits directly under its period;
+named schools are `movement` siblings (grouping lives in `exam_topics`, not the tree);
+concept-only areas go area > group > term. Invent no topics — the owner supplies them.
+
+## 12. Question ids, tagging, and attempt tracking
+- Every question carries a **stable, frozen `id`** — never derived from array position.
+  Daily: `<period><e|h>-NN` (e.g. `as-e-01`). MCQ: `<setId>-<e|m>-NN` (e.g.
+  `old-english-set-1-e-01`). Ids are never renumbered or reused: if a question is removed,
+  retire its number; a new question takes the next free one. Readers' records hang on these.
+- New question files carry `topicId` = one id from the master reference. The quiz engines
+  (`assets/instant.js` Daily, `assets/cbt.js` MCQ/CBT) call `assets/track.js`, which writes
+  one `attempts` row per answered question **only for a logged-in user**, fire-and-forget,
+  with `question_id = q.id`, `topic_id = q.topicId || null`, `source` `'daily'`/`'cbt'`.
+  It never blocks the quiz; guests keep playing with `localStorage` only (which stays).
+- **Build gate:** `npx eleventy` runs `tools/check-topics.js` and fails the build if any
+  question's `topicId` is not in the master reference, or if two questions share an `id`.
+  Keep ids unique and topicIds real, or the build (and publish) stops. (Extends rule 4.)
+
+## 13. Not built yet (ask before assuming these exist)
+- `attempts.topic_id` is still `null` everywhere until questions are tagged with `topicId`
+  (backfill pending) and the MCQ generator is aligned to emit `id` + `topicId`.
+- Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
+- Password reset needs an SMTP provider in Supabase first (none yet); the "Forgot
+  password?" link currently shows a contact-us note instead of a reset email.
+- Pre-existing MCQ hub links `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404 — unrelated
+  to accounts, to be fixed separately.
