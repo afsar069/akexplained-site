@@ -1,0 +1,1459 @@
+id,name,kind,parent_id,area
+british-literature,British Literature,area,,British Literature
+old-english,Old English Period (450-1066),period,british-literature,British Literature
+bede,Bede,writer,old-english,British Literature
+ecclesiastical-history,Ecclesiastical History of the English People,work,bede,British Literature
+caedmon,Caedmon,writer,old-english,British Literature
+caedmons-hymn,Caedmon's Hymn,work,caedmon,British Literature
+cynewulf,Cynewulf,writer,old-english,British Literature
+beowulf,Beowulf,work,old-english,British Literature
+the-dream-of-the-rood,The Dream of the Rood,work,old-english,British Literature
+the-wanderer,The Wanderer,work,old-english,British Literature
+the-seafarer,The Seafarer,work,old-english,British Literature
+deor,Deor,work,old-english,British Literature
+widsith,Widsith,work,old-english,British Literature
+the-battle-of-maldon,The Battle of Maldon,work,old-english,British Literature
+the-battle-of-brunanburh,The Battle of Brunanburh,work,old-english,British Literature
+judith-oe,Judith,work,old-english,British Literature
+old-english-elegies,Old English Elegies,concept,old-english,British Literature
+old-english-riddles,Old English Riddles,concept,old-english,British Literature
+exeter-book,The Exeter Book,concept,old-english,British Literature
+vercelli-book,The Vercelli Book,concept,old-english,British Literature
+junius-manuscript,The Junius Manuscript,concept,old-english,British Literature
+nowell-codex,The Nowell Codex,concept,old-english,British Literature
+anglo-saxon-chronicle,The Anglo-Saxon Chronicle,work,old-english,British Literature
+king-alfred,King Alfred,writer,old-english,British Literature
+aelfric,Aelfric,writer,old-english,British Literature
+wulfstan,Wulfstan,writer,old-english,British Literature
+middle-english,Middle English Period (1066-1500),period,british-literature,British Literature
+geoffrey-chaucer,Geoffrey Chaucer,writer,middle-english,British Literature
+the-canterbury-tales,The Canterbury Tales,work,geoffrey-chaucer,British Literature
+troilus-and-criseyde,Troilus and Criseyde,work,geoffrey-chaucer,British Literature
+the-book-of-the-duchess,The Book of the Duchess,work,geoffrey-chaucer,British Literature
+the-parliament-of-fowls,The Parliament of Fowls,work,geoffrey-chaucer,British Literature
+the-house-of-fame,The House of Fame,work,geoffrey-chaucer,British Literature
+william-langland,William Langland,writer,middle-english,British Literature
+piers-plowman,Piers Plowman,work,william-langland,British Literature
+the-gawain-poet,The Gawain Poet,writer,middle-english,British Literature
+sir-gawain-and-the-green-knight,Sir Gawain and the Green Knight,work,the-gawain-poet,British Literature
+pearl,Pearl,work,the-gawain-poet,British Literature
+john-gower,John Gower,writer,middle-english,British Literature
+confessio-amantis,Confessio Amantis,work,john-gower,British Literature
+thomas-malory,Sir Thomas Malory,writer,middle-english,British Literature
+le-morte-darthur,Le Morte d'Arthur,work,thomas-malory,British Literature
+julian-of-norwich,Julian of Norwich,writer,middle-english,British Literature
+margery-kempe,Margery Kempe,writer,middle-english,British Literature
+john-wycliffe,John Wycliffe,writer,middle-english,British Literature
+william-caxton,William Caxton,writer,middle-english,British Literature
+layamon,Layamon,writer,middle-english,British Literature
+layamons-brut,Layamon's Brut,work,layamon,British Literature
+the-owl-and-the-nightingale,The Owl and the Nightingale,work,middle-english,British Literature
+everyman,Everyman,work,middle-english,British Literature
+mystery-plays,Mystery Plays,concept,middle-english,British Literature
+miracle-plays,Miracle Plays,concept,middle-english,British Literature
+morality-plays,Morality Plays,concept,middle-english,British Literature
+medieval-romance,Medieval Romance,concept,middle-english,British Literature
+popular-ballads,Popular Ballads,concept,middle-english,British Literature
+middle-english-lyrics,Middle English Lyrics,concept,middle-english,British Literature
+scottish-chaucerians,The Scottish Chaucerians,concept,middle-english,British Literature
+renaissance,The Renaissance (1500-1603),period,british-literature,British Literature
+english-renaissance-humanism,English Renaissance Humanism,concept,renaissance,British Literature
+thomas-more,Sir Thomas More,writer,renaissance,British Literature
+utopia,Utopia,work,thomas-more,British Literature
+thomas-wyatt,Sir Thomas Wyatt,writer,renaissance,British Literature
+henry-howard-surrey,Henry Howard Earl of Surrey,writer,renaissance,British Literature
+tottels-miscellany,Tottel's Miscellany,work,renaissance,British Literature
+elizabethan-sonnet-sequence,The Elizabethan Sonnet Sequence,concept,renaissance,British Literature
+edmund-spenser,Edmund Spenser,writer,renaissance,British Literature
+the-faerie-queene,The Faerie Queene,work,edmund-spenser,British Literature
+the-shepheardes-calender,The Shepheardes Calender,work,edmund-spenser,British Literature
+amoretti,Amoretti,work,edmund-spenser,British Literature
+epithalamion,Epithalamion,work,edmund-spenser,British Literature
+philip-sidney,Sir Philip Sidney,writer,renaissance,British Literature
+astrophil-and-stella,Astrophil and Stella,work,philip-sidney,British Literature
+an-apology-for-poetry,An Apology for Poetry,work,philip-sidney,British Literature
+arcadia,Arcadia,work,philip-sidney,British Literature
+walter-raleigh,Sir Walter Raleigh,writer,renaissance,British Literature
+university-wits,The University Wits,concept,renaissance,British Literature
+john-lyly,John Lyly,writer,renaissance,British Literature
+euphuism,Euphuism,concept,john-lyly,British Literature
+robert-greene,Robert Greene,writer,renaissance,British Literature
+thomas-nashe,Thomas Nashe,writer,renaissance,British Literature
+the-unfortunate-traveller,The Unfortunate Traveller,work,thomas-nashe,British Literature
+thomas-kyd,Thomas Kyd,writer,renaissance,British Literature
+the-spanish-tragedy,The Spanish Tragedy,work,thomas-kyd,British Literature
+christopher-marlowe,Christopher Marlowe,writer,renaissance,British Literature
+doctor-faustus,Doctor Faustus,work,christopher-marlowe,British Literature
+tamburlaine,Tamburlaine the Great,work,christopher-marlowe,British Literature
+the-jew-of-malta,The Jew of Malta,work,christopher-marlowe,British Literature
+edward-ii,Edward II,work,christopher-marlowe,British Literature
+hero-and-leander,Hero and Leander,work,christopher-marlowe,British Literature
+william-shakespeare,William Shakespeare,writer,renaissance,British Literature
+shakespearean-tragedy,Shakespearean Tragedy,concept,william-shakespeare,British Literature
+shakespearean-comedy,Shakespearean Comedy,concept,william-shakespeare,British Literature
+shakespearean-history-plays,Shakespearean History Plays,concept,william-shakespeare,British Literature
+shakespeares-problem-plays,Shakespeare's Problem Plays,concept,william-shakespeare,British Literature
+shakespeares-romances,Shakespeare's Last Romances,concept,william-shakespeare,British Literature
+shakespeares-sonnets,Shakespeare's Sonnets,work,william-shakespeare,British Literature
+hamlet,Hamlet,work,shakespearean-tragedy,British Literature
+macbeth,Macbeth,work,shakespearean-tragedy,British Literature
+king-lear,King Lear,work,shakespearean-tragedy,British Literature
+othello,Othello,work,shakespearean-tragedy,British Literature
+julius-caesar,Julius Caesar,work,shakespearean-tragedy,British Literature
+antony-and-cleopatra,Antony and Cleopatra,work,shakespearean-tragedy,British Literature
+romeo-and-juliet,Romeo and Juliet,work,shakespearean-tragedy,British Literature
+coriolanus,Coriolanus,work,shakespearean-tragedy,British Literature
+a-midsummer-nights-dream,A Midsummer Night's Dream,work,shakespearean-comedy,British Literature
+twelfth-night,Twelfth Night,work,shakespearean-comedy,British Literature
+as-you-like-it,As You Like It,work,shakespearean-comedy,British Literature
+much-ado-about-nothing,Much Ado About Nothing,work,shakespearean-comedy,British Literature
+the-merchant-of-venice,The Merchant of Venice,work,shakespearean-comedy,British Literature
+the-comedy-of-errors,The Comedy of Errors,work,shakespearean-comedy,British Literature
+the-taming-of-the-shrew,The Taming of the Shrew,work,shakespearean-comedy,British Literature
+richard-ii,Richard II,work,shakespearean-history-plays,British Literature
+richard-iii,Richard III,work,shakespearean-history-plays,British Literature
+henry-iv,Henry IV,work,shakespearean-history-plays,British Literature
+henry-v,Henry V,work,shakespearean-history-plays,British Literature
+measure-for-measure,Measure for Measure,work,shakespeares-problem-plays,British Literature
+the-tempest,The Tempest,work,shakespeares-romances,British Literature
+the-winters-tale,The Winter's Tale,work,shakespeares-romances,British Literature
+cymbeline,Cymbeline,work,shakespeares-romances,British Literature
+elizabethan-drama,Elizabethan Drama,concept,renaissance,British Literature
+jacobean,Jacobean and Caroline Period (1603-1660),period,british-literature,British Literature
+ben-jonson,Ben Jonson,writer,jacobean,British Literature
+volpone,Volpone,work,ben-jonson,British Literature
+the-alchemist,The Alchemist,work,ben-jonson,British Literature
+every-man-in-his-humour,Every Man in His Humour,work,ben-jonson,British Literature
+bartholomew-fair,Bartholomew Fair,work,ben-jonson,British Literature
+comedy-of-humours,Comedy of Humours,concept,ben-jonson,British Literature
+the-court-masque,The Court Masque,concept,jacobean,British Literature
+john-webster,John Webster,writer,jacobean,British Literature
+the-duchess-of-malfi,The Duchess of Malfi,work,john-webster,British Literature
+the-white-devil,The White Devil,work,john-webster,British Literature
+thomas-middleton,Thomas Middleton,writer,jacobean,British Literature
+the-changeling,The Changeling,work,thomas-middleton,British Literature
+women-beware-women,Women Beware Women,work,thomas-middleton,British Literature
+john-ford,John Ford,writer,jacobean,British Literature
+tis-pity-shes-a-whore,'Tis Pity She's a Whore,work,john-ford,British Literature
+beaumont-and-fletcher,Beaumont and Fletcher,writer,jacobean,British Literature
+the-revengers-tragedy,The Revenger's Tragedy,work,jacobean,British Literature
+revenge-tragedy,Revenge Tragedy,concept,jacobean,British Literature
+city-comedy,City Comedy,concept,jacobean,British Literature
+jacobean-drama,Jacobean Drama,concept,jacobean,British Literature
+john-donne,John Donne,writer,jacobean,British Literature
+the-canonization,The Canonization,work,john-donne,British Literature
+a-valediction-forbidding-mourning,A Valediction Forbidding Mourning,work,john-donne,British Literature
+the-sun-rising,The Sun Rising,work,john-donne,British Literature
+holy-sonnets,Holy Sonnets,work,john-donne,British Literature
+metaphysical-poetry,Metaphysical Poetry,concept,jacobean,British Literature
+metaphysical-conceit,The Metaphysical Conceit,concept,metaphysical-poetry,British Literature
+george-herbert,George Herbert,writer,jacobean,British Literature
+the-temple,The Temple,work,george-herbert,British Literature
+henry-vaughan,Henry Vaughan,writer,jacobean,British Literature
+richard-crashaw,Richard Crashaw,writer,jacobean,British Literature
+andrew-marvell,Andrew Marvell,writer,jacobean,British Literature
+to-his-coy-mistress,To His Coy Mistress,work,andrew-marvell,British Literature
+abraham-cowley,Abraham Cowley,writer,jacobean,British Literature
+cavalier-poets,The Cavalier Poets,concept,jacobean,British Literature
+robert-herrick,Robert Herrick,writer,cavalier-poets,British Literature
+richard-lovelace,Richard Lovelace,writer,cavalier-poets,British Literature
+john-suckling,Sir John Suckling,writer,cavalier-poets,British Literature
+thomas-carew,Thomas Carew,writer,cavalier-poets,British Literature
+john-milton,John Milton,writer,jacobean,British Literature
+paradise-lost,Paradise Lost,work,john-milton,British Literature
+paradise-regained,Paradise Regained,work,john-milton,British Literature
+samson-agonistes,Samson Agonistes,work,john-milton,British Literature
+lycidas,Lycidas,work,john-milton,British Literature
+areopagitica,Areopagitica,work,john-milton,British Literature
+lallegro-and-il-penseroso,L'Allegro and Il Penseroso,work,john-milton,British Literature
+francis-bacon,Francis Bacon,writer,jacobean,British Literature
+bacons-essays,Bacon's Essays,work,francis-bacon,British Literature
+the-advancement-of-learning,The Advancement of Learning,work,francis-bacon,British Literature
+novum-organum,Novum Organum,work,francis-bacon,British Literature
+robert-burton,Robert Burton,writer,jacobean,British Literature
+the-anatomy-of-melancholy,The Anatomy of Melancholy,work,robert-burton,British Literature
+thomas-browne,Sir Thomas Browne,writer,jacobean,British Literature
+religio-medici,Religio Medici,work,thomas-browne,British Literature
+izaak-walton,Izaak Walton,writer,jacobean,British Literature
+king-james-bible,The King James Bible,work,jacobean,British Literature
+restoration,The Restoration Period (1660-1700),period,british-literature,British Literature
+john-dryden,John Dryden,writer,restoration,British Literature
+absalom-and-achitophel,Absalom and Achitophel,work,john-dryden,British Literature
+mac-flecknoe,Mac Flecknoe,work,john-dryden,British Literature
+an-essay-of-dramatic-poesy,An Essay of Dramatic Poesy,work,john-dryden,British Literature
+all-for-love,All for Love,work,john-dryden,British Literature
+the-hind-and-the-panther,The Hind and the Panther,work,john-dryden,British Literature
+restoration-comedy,Restoration Comedy,concept,restoration,British Literature
+comedy-of-manners,Comedy of Manners,concept,restoration-comedy,British Literature
+william-congreve,William Congreve,writer,restoration,British Literature
+the-way-of-the-world,The Way of the World,work,william-congreve,British Literature
+love-for-love,Love for Love,work,william-congreve,British Literature
+william-wycherley,William Wycherley,writer,restoration,British Literature
+the-country-wife,The Country Wife,work,william-wycherley,British Literature
+george-etherege,Sir George Etherege,writer,restoration,British Literature
+the-man-of-mode,The Man of Mode,work,george-etherege,British Literature
+aphra-behn,Aphra Behn,writer,restoration,British Literature
+oroonoko,Oroonoko,work,aphra-behn,British Literature
+the-rover,The Rover,work,aphra-behn,British Literature
+heroic-tragedy,Heroic Tragedy,concept,restoration,British Literature
+thomas-otway,Thomas Otway,writer,restoration,British Literature
+venice-preserved,Venice Preserved,work,thomas-otway,British Literature
+earl-of-rochester,John Wilmot Earl of Rochester,writer,restoration,British Literature
+jeremy-collier,Jeremy Collier,writer,restoration,British Literature
+john-bunyan,John Bunyan,writer,restoration,British Literature
+the-pilgrims-progress,The Pilgrim's Progress,work,john-bunyan,British Literature
+samuel-pepys,Samuel Pepys,writer,restoration,British Literature
+pepys-diary,The Diary of Samuel Pepys,work,samuel-pepys,British Literature
+thomas-hobbes,Thomas Hobbes,writer,restoration,British Literature
+leviathan,Leviathan,work,thomas-hobbes,British Literature
+john-locke,John Locke,writer,restoration,British Literature
+restoration-prose-style,Restoration Prose Style,concept,restoration,British Literature
+augustan-age,The Augustan Age (1700-1798),period,british-literature,British Literature
+neoclassicism,Neoclassicism,concept,augustan-age,British Literature
+augustan-satire,Augustan Satire,concept,augustan-age,British Literature
+alexander-pope,Alexander Pope,writer,augustan-age,British Literature
+the-rape-of-the-lock,The Rape of the Lock,work,alexander-pope,British Literature
+an-essay-on-criticism,An Essay on Criticism,work,alexander-pope,British Literature
+an-essay-on-man,An Essay on Man,work,alexander-pope,British Literature
+the-dunciad,The Dunciad,work,alexander-pope,British Literature
+epistle-to-dr-arbuthnot,Epistle to Dr Arbuthnot,work,alexander-pope,British Literature
+jonathan-swift,Jonathan Swift,writer,augustan-age,British Literature
+gullivers-travels,Gulliver's Travels,work,jonathan-swift,British Literature
+a-modest-proposal,A Modest Proposal,work,jonathan-swift,British Literature
+a-tale-of-a-tub,A Tale of a Tub,work,jonathan-swift,British Literature
+the-battle-of-the-books,The Battle of the Books,work,jonathan-swift,British Literature
+joseph-addison,Joseph Addison,writer,augustan-age,British Literature
+richard-steele,Sir Richard Steele,writer,augustan-age,British Literature
+the-spectator,The Spectator,work,joseph-addison,British Literature
+the-tatler,The Tatler,work,richard-steele,British Literature
+the-periodical-essay,The Periodical Essay,concept,augustan-age,British Literature
+the-rise-of-the-novel,The Rise of the Novel,concept,augustan-age,British Literature
+daniel-defoe,Daniel Defoe,writer,augustan-age,British Literature
+robinson-crusoe,Robinson Crusoe,work,daniel-defoe,British Literature
+moll-flanders,Moll Flanders,work,daniel-defoe,British Literature
+a-journal-of-the-plague-year,A Journal of the Plague Year,work,daniel-defoe,British Literature
+samuel-richardson,Samuel Richardson,writer,augustan-age,British Literature
+pamela,Pamela,work,samuel-richardson,British Literature
+clarissa,Clarissa,work,samuel-richardson,British Literature
+the-epistolary-novel,The Epistolary Novel,concept,augustan-age,British Literature
+henry-fielding,Henry Fielding,writer,augustan-age,British Literature
+tom-jones,Tom Jones,work,henry-fielding,British Literature
+joseph-andrews,Joseph Andrews,work,henry-fielding,British Literature
+shamela,Shamela,work,henry-fielding,British Literature
+laurence-sterne,Laurence Sterne,writer,augustan-age,British Literature
+tristram-shandy,Tristram Shandy,work,laurence-sterne,British Literature
+a-sentimental-journey,A Sentimental Journey,work,laurence-sterne,British Literature
+tobias-smollett,Tobias Smollett,writer,augustan-age,British Literature
+humphry-clinker,Humphry Clinker,work,tobias-smollett,British Literature
+fanny-burney,Fanny Burney,writer,augustan-age,British Literature
+evelina,Evelina,work,fanny-burney,British Literature
+samuel-johnson,Samuel Johnson,writer,augustan-age,British Literature
+johnsons-dictionary,A Dictionary of the English Language,work,samuel-johnson,British Literature
+lives-of-the-poets,Lives of the Poets,work,samuel-johnson,British Literature
+rasselas,Rasselas,work,samuel-johnson,British Literature
+preface-to-shakespeare,Preface to Shakespeare,work,samuel-johnson,British Literature
+james-boswell,James Boswell,writer,augustan-age,British Literature
+the-life-of-samuel-johnson,The Life of Samuel Johnson,work,james-boswell,British Literature
+oliver-goldsmith,Oliver Goldsmith,writer,augustan-age,British Literature
+the-vicar-of-wakefield,The Vicar of Wakefield,work,oliver-goldsmith,British Literature
+she-stoops-to-conquer,She Stoops to Conquer,work,oliver-goldsmith,British Literature
+the-deserted-village,The Deserted Village,work,oliver-goldsmith,British Literature
+richard-brinsley-sheridan,Richard Brinsley Sheridan,writer,augustan-age,British Literature
+the-rivals,The Rivals,work,richard-brinsley-sheridan,British Literature
+the-school-for-scandal,The School for Scandal,work,richard-brinsley-sheridan,British Literature
+sentimental-comedy,Sentimental Comedy,concept,augustan-age,British Literature
+the-graveyard-poets,The Graveyard Poets,concept,augustan-age,British Literature
+thomas-gray,Thomas Gray,writer,the-graveyard-poets,British Literature
+elegy-written-in-a-country-churchyard,Elegy Written in a Country Churchyard,work,thomas-gray,British Literature
+william-collins,William Collins,writer,the-graveyard-poets,British Literature
+edward-young,Edward Young,writer,the-graveyard-poets,British Literature
+robert-burns,Robert Burns,writer,augustan-age,British Literature
+william-cowper,William Cowper,writer,augustan-age,British Literature
+george-crabbe,George Crabbe,writer,augustan-age,British Literature
+thomas-chatterton,Thomas Chatterton,writer,augustan-age,British Literature
+james-macpherson,James Macpherson,writer,augustan-age,British Literature
+the-gothic-novel,The Gothic Novel,concept,augustan-age,British Literature
+horace-walpole,Horace Walpole,writer,the-gothic-novel,British Literature
+the-castle-of-otranto,The Castle of Otranto,work,horace-walpole,British Literature
+ann-radcliffe,Ann Radcliffe,writer,the-gothic-novel,British Literature
+the-mysteries-of-udolpho,The Mysteries of Udolpho,work,ann-radcliffe,British Literature
+matthew-lewis,Matthew Lewis,writer,the-gothic-novel,British Literature
+the-monk,The Monk,work,matthew-lewis,British Literature
+edmund-burke,Edmund Burke,writer,augustan-age,British Literature
+mary-wollstonecraft,Mary Wollstonecraft,writer,augustan-age,British Literature
+a-vindication-of-the-rights-of-woman,A Vindication of the Rights of Woman,work,mary-wollstonecraft,British Literature
+romantic-age,The Romantic Age (1798-1837),period,british-literature,British Literature
+romanticism,Romanticism,concept,romantic-age,British Literature
+the-romantic-imagination,The Romantic Imagination,concept,romantic-age,British Literature
+the-lake-poets,The Lake Poets,concept,romantic-age,British Literature
+william-blake,William Blake,writer,romantic-age,British Literature
+songs-of-innocence-and-of-experience,Songs of Innocence and of Experience,work,william-blake,British Literature
+the-marriage-of-heaven-and-hell,The Marriage of Heaven and Hell,work,william-blake,British Literature
+the-tyger,The Tyger,work,william-blake,British Literature
+william-wordsworth,William Wordsworth,writer,romantic-age,British Literature
+lyrical-ballads,Lyrical Ballads,work,william-wordsworth,British Literature
+preface-to-lyrical-ballads,Preface to Lyrical Ballads,work,william-wordsworth,British Literature
+tintern-abbey,Tintern Abbey,work,william-wordsworth,British Literature
+the-prelude,The Prelude,work,william-wordsworth,British Literature
+immortality-ode,Ode: Intimations of Immortality,work,william-wordsworth,British Literature
+the-solitary-reaper,The Solitary Reaper,work,william-wordsworth,British Literature
+samuel-taylor-coleridge,Samuel Taylor Coleridge,writer,romantic-age,British Literature
+the-rime-of-the-ancient-mariner,The Rime of the Ancient Mariner,work,samuel-taylor-coleridge,British Literature
+kubla-khan,Kubla Khan,work,samuel-taylor-coleridge,British Literature
+christabel,Christabel,work,samuel-taylor-coleridge,British Literature
+biographia-literaria,Biographia Literaria,work,samuel-taylor-coleridge,British Literature
+dejection-an-ode,Dejection: An Ode,work,samuel-taylor-coleridge,British Literature
+willing-suspension-of-disbelief,Willing Suspension of Disbelief,concept,samuel-taylor-coleridge,British Literature
+lord-byron,Lord Byron,writer,romantic-age,British Literature
+don-juan,Don Juan,work,lord-byron,British Literature
+childe-harolds-pilgrimage,Childe Harold's Pilgrimage,work,lord-byron,British Literature
+the-byronic-hero,The Byronic Hero,concept,lord-byron,British Literature
+percy-bysshe-shelley,Percy Bysshe Shelley,writer,romantic-age,British Literature
+ode-to-the-west-wind,Ode to the West Wind,work,percy-bysshe-shelley,British Literature
+prometheus-unbound,Prometheus Unbound,work,percy-bysshe-shelley,British Literature
+adonais,Adonais,work,percy-bysshe-shelley,British Literature
+a-defence-of-poetry,A Defence of Poetry,work,percy-bysshe-shelley,British Literature
+ozymandias,Ozymandias,work,percy-bysshe-shelley,British Literature
+john-keats,John Keats,writer,romantic-age,British Literature
+ode-to-a-nightingale,Ode to a Nightingale,work,john-keats,British Literature
+ode-on-a-grecian-urn,Ode on a Grecian Urn,work,john-keats,British Literature
+to-autumn,To Autumn,work,john-keats,British Literature
+the-eve-of-st-agnes,The Eve of St Agnes,work,john-keats,British Literature
+hyperion,Hyperion,work,john-keats,British Literature
+keats-letters,The Letters of John Keats,work,john-keats,British Literature
+negative-capability,Negative Capability,concept,john-keats,British Literature
+charles-lamb,Charles Lamb,writer,romantic-age,British Literature
+essays-of-elia,Essays of Elia,work,charles-lamb,British Literature
+william-hazlitt,William Hazlitt,writer,romantic-age,British Literature
+thomas-de-quincey,Thomas De Quincey,writer,romantic-age,British Literature
+confessions-of-an-english-opium-eater,Confessions of an English Opium Eater,work,thomas-de-quincey,British Literature
+leigh-hunt,Leigh Hunt,writer,romantic-age,British Literature
+jane-austen,Jane Austen,writer,romantic-age,British Literature
+pride-and-prejudice,Pride and Prejudice,work,jane-austen,British Literature
+emma,Emma,work,jane-austen,British Literature
+sense-and-sensibility,Sense and Sensibility,work,jane-austen,British Literature
+mansfield-park,Mansfield Park,work,jane-austen,British Literature
+persuasion,Persuasion,work,jane-austen,British Literature
+northanger-abbey,Northanger Abbey,work,jane-austen,British Literature
+walter-scott,Sir Walter Scott,writer,romantic-age,British Literature
+waverley,Waverley,work,walter-scott,British Literature
+ivanhoe,Ivanhoe,work,walter-scott,British Literature
+the-historical-novel,The Historical Novel,concept,romantic-age,British Literature
+mary-shelley,Mary Shelley,writer,romantic-age,British Literature
+frankenstein,Frankenstein,work,mary-shelley,British Literature
+maria-edgeworth,Maria Edgeworth,writer,romantic-age,British Literature
+victorian-age,The Victorian Age (1837-1901),period,british-literature,British Literature
+victorian-doubt,Victorian Doubt and Faith,concept,victorian-age,British Literature
+the-victorian-novel,The Victorian Novel,concept,victorian-age,British Literature
+condition-of-england-novel,The Condition of England Novel,concept,victorian-age,British Literature
+alfred-tennyson,Alfred Lord Tennyson,writer,victorian-age,British Literature
+in-memoriam,In Memoriam A.H.H.,work,alfred-tennyson,British Literature
+ulysses-tennyson,Ulysses,work,alfred-tennyson,British Literature
+the-lady-of-shalott,The Lady of Shalott,work,alfred-tennyson,British Literature
+idylls-of-the-king,Idylls of the King,work,alfred-tennyson,British Literature
+the-lotos-eaters,The Lotos-Eaters,work,alfred-tennyson,British Literature
+robert-browning,Robert Browning,writer,victorian-age,British Literature
+my-last-duchess,My Last Duchess,work,robert-browning,British Literature
+the-ring-and-the-book,The Ring and the Book,work,robert-browning,British Literature
+fra-lippo-lippi,Fra Lippo Lippi,work,robert-browning,British Literature
+andrea-del-sarto,Andrea del Sarto,work,robert-browning,British Literature
+the-dramatic-monologue,The Dramatic Monologue,concept,victorian-age,British Literature
+elizabeth-barrett-browning,Elizabeth Barrett Browning,writer,victorian-age,British Literature
+sonnets-from-the-portuguese,Sonnets from the Portuguese,work,elizabeth-barrett-browning,British Literature
+aurora-leigh,Aurora Leigh,work,elizabeth-barrett-browning,British Literature
+matthew-arnold,Matthew Arnold,writer,victorian-age,British Literature
+dover-beach,Dover Beach,work,matthew-arnold,British Literature
+the-scholar-gipsy,The Scholar-Gipsy,work,matthew-arnold,British Literature
+culture-and-anarchy,Culture and Anarchy,work,matthew-arnold,British Literature
+the-study-of-poetry,The Study of Poetry,work,matthew-arnold,British Literature
+the-touchstone-method,The Touchstone Method,concept,matthew-arnold,British Literature
+gerard-manley-hopkins,Gerard Manley Hopkins,writer,victorian-age,British Literature
+the-windhover,The Windhover,work,gerard-manley-hopkins,British Literature
+sprung-rhythm,Sprung Rhythm,concept,gerard-manley-hopkins,British Literature
+inscape-and-instress,Inscape and Instress,concept,gerard-manley-hopkins,British Literature
+pre-raphaelite-brotherhood,The Pre-Raphaelite Brotherhood,concept,victorian-age,British Literature
+dante-gabriel-rossetti,Dante Gabriel Rossetti,writer,pre-raphaelite-brotherhood,British Literature
+christina-rossetti,Christina Rossetti,writer,pre-raphaelite-brotherhood,British Literature
+goblin-market,Goblin Market,work,christina-rossetti,British Literature
+william-morris,William Morris,writer,pre-raphaelite-brotherhood,British Literature
+algernon-swinburne,Algernon Charles Swinburne,writer,victorian-age,British Literature
+edward-fitzgerald,Edward FitzGerald,writer,victorian-age,British Literature
+charles-dickens,Charles Dickens,writer,victorian-age,British Literature
+great-expectations,Great Expectations,work,charles-dickens,British Literature
+hard-times,Hard Times,work,charles-dickens,British Literature
+bleak-house,Bleak House,work,charles-dickens,British Literature
+oliver-twist,Oliver Twist,work,charles-dickens,British Literature
+david-copperfield,David Copperfield,work,charles-dickens,British Literature
+a-tale-of-two-cities,A Tale of Two Cities,work,charles-dickens,British Literature
+the-pickwick-papers,The Pickwick Papers,work,charles-dickens,British Literature
+william-thackeray,William Makepeace Thackeray,writer,victorian-age,British Literature
+vanity-fair,Vanity Fair,work,william-thackeray,British Literature
+charlotte-bronte,Charlotte Bronte,writer,victorian-age,British Literature
+jane-eyre,Jane Eyre,work,charlotte-bronte,British Literature
+villette,Villette,work,charlotte-bronte,British Literature
+emily-bronte,Emily Bronte,writer,victorian-age,British Literature
+wuthering-heights,Wuthering Heights,work,emily-bronte,British Literature
+anne-bronte,Anne Bronte,writer,victorian-age,British Literature
+george-eliot,George Eliot,writer,victorian-age,British Literature
+middlemarch,Middlemarch,work,george-eliot,British Literature
+the-mill-on-the-floss,The Mill on the Floss,work,george-eliot,British Literature
+silas-marner,Silas Marner,work,george-eliot,British Literature
+adam-bede,Adam Bede,work,george-eliot,British Literature
+thomas-hardy,Thomas Hardy,writer,victorian-age,British Literature
+tess-of-the-durbervilles,Tess of the d'Urbervilles,work,thomas-hardy,British Literature
+jude-the-obscure,Jude the Obscure,work,thomas-hardy,British Literature
+the-mayor-of-casterbridge,The Mayor of Casterbridge,work,thomas-hardy,British Literature
+far-from-the-madding-crowd,Far from the Madding Crowd,work,thomas-hardy,British Literature
+the-return-of-the-native,The Return of the Native,work,thomas-hardy,British Literature
+wessex,Hardy's Wessex,concept,thomas-hardy,British Literature
+anthony-trollope,Anthony Trollope,writer,victorian-age,British Literature
+elizabeth-gaskell,Elizabeth Gaskell,writer,victorian-age,British Literature
+north-and-south,North and South,work,elizabeth-gaskell,British Literature
+mary-barton,Mary Barton,work,elizabeth-gaskell,British Literature
+wilkie-collins,Wilkie Collins,writer,victorian-age,British Literature
+the-moonstone,The Moonstone,work,wilkie-collins,British Literature
+the-sensation-novel,The Sensation Novel,concept,victorian-age,British Literature
+george-meredith,George Meredith,writer,victorian-age,British Literature
+samuel-butler,Samuel Butler,writer,victorian-age,British Literature
+robert-louis-stevenson,Robert Louis Stevenson,writer,victorian-age,British Literature
+lewis-carroll,Lewis Carroll,writer,victorian-age,British Literature
+oscar-wilde,Oscar Wilde,writer,victorian-age,British Literature
+the-importance-of-being-earnest,The Importance of Being Earnest,work,oscar-wilde,British Literature
+the-picture-of-dorian-gray,The Picture of Dorian Gray,work,oscar-wilde,British Literature
+aestheticism,Aestheticism,concept,victorian-age,British Literature
+decadence,The Decadent Movement,concept,victorian-age,British Literature
+walter-pater,Walter Pater,writer,victorian-age,British Literature
+thomas-carlyle,Thomas Carlyle,writer,victorian-age,British Literature
+sartor-resartus,Sartor Resartus,work,thomas-carlyle,British Literature
+on-heroes-and-hero-worship,On Heroes and Hero-Worship,work,thomas-carlyle,British Literature
+john-ruskin,John Ruskin,writer,victorian-age,British Literature
+john-stuart-mill,John Stuart Mill,writer,victorian-age,British Literature
+john-henry-newman,John Henry Newman,writer,victorian-age,British Literature
+modern,The Modern Period (1901-1945),period,british-literature,British Literature
+modernism,Modernism,concept,modern,British Literature
+stream-of-consciousness,Stream of Consciousness,concept,modern,British Literature
+the-irish-literary-revival,The Irish Literary Revival,concept,modern,British Literature
+the-abbey-theatre,The Abbey Theatre,concept,the-irish-literary-revival,British Literature
+the-bloomsbury-group,The Bloomsbury Group,concept,modern,British Literature
+wb-yeats,W. B. Yeats,writer,modern,British Literature
+the-second-coming,The Second Coming,work,wb-yeats,British Literature
+sailing-to-byzantium,Sailing to Byzantium,work,wb-yeats,British Literature
+easter-1916,Easter 1916,work,wb-yeats,British Literature
+a-vision,A Vision,work,wb-yeats,British Literature
+ts-eliot,T. S. Eliot,writer,modern,British Literature
+the-waste-land,The Waste Land,work,ts-eliot,British Literature
+the-love-song-of-j-alfred-prufrock,The Love Song of J. Alfred Prufrock,work,ts-eliot,British Literature
+tradition-and-the-individual-talent,Tradition and the Individual Talent,work,ts-eliot,British Literature
+four-quartets,Four Quartets,work,ts-eliot,British Literature
+murder-in-the-cathedral,Murder in the Cathedral,work,ts-eliot,British Literature
+objective-correlative,The Objective Correlative,concept,ts-eliot,British Literature
+dissociation-of-sensibility,Dissociation of Sensibility,concept,ts-eliot,British Literature
+ezra-pound,Ezra Pound,writer,modern,British Literature
+imagism,Imagism,concept,ezra-pound,British Literature
+the-cantos,The Cantos,work,ezra-pound,British Literature
+wh-auden,W. H. Auden,writer,modern,British Literature
+stephen-spender,Stephen Spender,writer,modern,British Literature
+louis-macneice,Louis MacNeice,writer,modern,British Literature
+cecil-day-lewis,Cecil Day-Lewis,writer,modern,British Literature
+the-thirties-poets,The Thirties Poets,concept,modern,British Literature
+dylan-thomas,Dylan Thomas,writer,modern,British Literature
+the-war-poets,The War Poets,concept,modern,British Literature
+wilfred-owen,Wilfred Owen,writer,the-war-poets,British Literature
+siegfried-sassoon,Siegfried Sassoon,writer,the-war-poets,British Literature
+rupert-brooke,Rupert Brooke,writer,the-war-poets,British Literature
+isaac-rosenberg,Isaac Rosenberg,writer,the-war-poets,British Literature
+georgian-poetry,Georgian Poetry,concept,modern,British Literature
+james-joyce,James Joyce,writer,modern,British Literature
+ulysses-joyce,Ulysses,work,james-joyce,British Literature
+a-portrait-of-the-artist-as-a-young-man,A Portrait of the Artist as a Young Man,work,james-joyce,British Literature
+dubliners,Dubliners,work,james-joyce,British Literature
+finnegans-wake,Finnegans Wake,work,james-joyce,British Literature
+epiphany,Epiphany,concept,james-joyce,British Literature
+virginia-woolf,Virginia Woolf,writer,modern,British Literature
+mrs-dalloway,Mrs Dalloway,work,virginia-woolf,British Literature
+to-the-lighthouse,To the Lighthouse,work,virginia-woolf,British Literature
+a-room-of-ones-own,A Room of One's Own,work,virginia-woolf,British Literature
+orlando,Orlando,work,virginia-woolf,British Literature
+the-waves,The Waves,work,virginia-woolf,British Literature
+modern-fiction-essay,Modern Fiction,work,virginia-woolf,British Literature
+dh-lawrence,D. H. Lawrence,writer,modern,British Literature
+sons-and-lovers,Sons and Lovers,work,dh-lawrence,British Literature
+women-in-love,Women in Love,work,dh-lawrence,British Literature
+the-rainbow,The Rainbow,work,dh-lawrence,British Literature
+lady-chatterleys-lover,Lady Chatterley's Lover,work,dh-lawrence,British Literature
+em-forster,E. M. Forster,writer,modern,British Literature
+a-passage-to-india,A Passage to India,work,em-forster,British Literature
+howards-end,Howards End,work,em-forster,British Literature
+aspects-of-the-novel,Aspects of the Novel,work,em-forster,British Literature
+joseph-conrad,Joseph Conrad,writer,modern,British Literature
+heart-of-darkness,Heart of Darkness,work,joseph-conrad,British Literature
+lord-jim,Lord Jim,work,joseph-conrad,British Literature
+nostromo,Nostromo,work,joseph-conrad,British Literature
+katherine-mansfield,Katherine Mansfield,writer,modern,British Literature
+aldous-huxley,Aldous Huxley,writer,modern,British Literature
+brave-new-world,Brave New World,work,aldous-huxley,British Literature
+george-orwell,George Orwell,writer,modern,British Literature
+nineteen-eighty-four,Nineteen Eighty-Four,work,george-orwell,British Literature
+animal-farm,Animal Farm,work,george-orwell,British Literature
+politics-and-the-english-language,Politics and the English Language,work,george-orwell,British Literature
+graham-greene,Graham Greene,writer,modern,British Literature
+evelyn-waugh,Evelyn Waugh,writer,modern,British Literature
+somerset-maugham,W. Somerset Maugham,writer,modern,British Literature
+ford-madox-ford,Ford Madox Ford,writer,modern,British Literature
+bernard-shaw,George Bernard Shaw,writer,modern,British Literature
+pygmalion,Pygmalion,work,bernard-shaw,British Literature
+saint-joan,Saint Joan,work,bernard-shaw,British Literature
+man-and-superman,Man and Superman,work,bernard-shaw,British Literature
+arms-and-the-man,Arms and the Man,work,bernard-shaw,British Literature
+jm-synge,J. M. Synge,writer,modern,British Literature
+the-playboy-of-the-western-world,The Playboy of the Western World,work,jm-synge,British Literature
+sean-ocasey,Sean O'Casey,writer,modern,British Literature
+juno-and-the-paycock,Juno and the Paycock,work,sean-ocasey,British Literature
+lady-gregory,Lady Gregory,writer,modern,British Literature
+contemporary,The Contemporary Period (1945-),period,british-literature,British Literature
+the-movement,The Movement,concept,contemporary,British Literature
+philip-larkin,Philip Larkin,writer,the-movement,British Literature
+church-going,Church Going,work,philip-larkin,British Literature
+the-whitsun-weddings,The Whitsun Weddings,work,philip-larkin,British Literature
+ted-hughes,Ted Hughes,writer,contemporary,British Literature
+hawk-roosting,Hawk Roosting,work,ted-hughes,British Literature
+crow,Crow,work,ted-hughes,British Literature
+seamus-heaney,Seamus Heaney,writer,contemporary,British Literature
+digging,Digging,work,seamus-heaney,British Literature
+north-heaney,North,work,seamus-heaney,British Literature
+thom-gunn,Thom Gunn,writer,contemporary,British Literature
+geoffrey-hill,Geoffrey Hill,writer,contemporary,British Literature
+tony-harrison,Tony Harrison,writer,contemporary,British Literature
+carol-ann-duffy,Carol Ann Duffy,writer,contemporary,British Literature
+simon-armitage,Simon Armitage,writer,contemporary,British Literature
+theatre-of-the-absurd,Theatre of the Absurd,concept,contemporary,British Literature
+samuel-beckett,Samuel Beckett,writer,theatre-of-the-absurd,British Literature
+waiting-for-godot,Waiting for Godot,work,samuel-beckett,British Literature
+endgame,Endgame,work,samuel-beckett,British Literature
+krapps-last-tape,Krapp's Last Tape,work,samuel-beckett,British Literature
+harold-pinter,Harold Pinter,writer,contemporary,British Literature
+the-birthday-party,The Birthday Party,work,harold-pinter,British Literature
+the-caretaker,The Caretaker,work,harold-pinter,British Literature
+comedy-of-menace,Comedy of Menace,concept,harold-pinter,British Literature
+the-angry-young-men,The Angry Young Men,concept,contemporary,British Literature
+john-osborne,John Osborne,writer,the-angry-young-men,British Literature
+look-back-in-anger,Look Back in Anger,work,john-osborne,British Literature
+kitchen-sink-drama,Kitchen Sink Drama,concept,contemporary,British Literature
+arnold-wesker,Arnold Wesker,writer,contemporary,British Literature
+john-arden,John Arden,writer,contemporary,British Literature
+tom-stoppard,Tom Stoppard,writer,contemporary,British Literature
+rosencrantz-and-guildenstern-are-dead,Rosencrantz and Guildenstern Are Dead,work,tom-stoppard,British Literature
+caryl-churchill,Caryl Churchill,writer,contemporary,British Literature
+top-girls,Top Girls,work,caryl-churchill,British Literature
+william-golding,William Golding,writer,contemporary,British Literature
+lord-of-the-flies,Lord of the Flies,work,william-golding,British Literature
+iris-murdoch,Iris Murdoch,writer,contemporary,British Literature
+doris-lessing,Doris Lessing,writer,contemporary,British Literature
+the-golden-notebook,The Golden Notebook,work,doris-lessing,British Literature
+muriel-spark,Muriel Spark,writer,contemporary,British Literature
+anthony-burgess,Anthony Burgess,writer,contemporary,British Literature
+a-clockwork-orange,A Clockwork Orange,work,anthony-burgess,British Literature
+john-fowles,John Fowles,writer,contemporary,British Literature
+the-french-lieutenants-woman,The French Lieutenant's Woman,work,john-fowles,British Literature
+angela-carter,Angela Carter,writer,contemporary,British Literature
+the-bloody-chamber,The Bloody Chamber,work,angela-carter,British Literature
+jeanette-winterson,Jeanette Winterson,writer,contemporary,British Literature
+martin-amis,Martin Amis,writer,contemporary,British Literature
+ian-mcewan,Ian McEwan,writer,contemporary,British Literature
+julian-barnes,Julian Barnes,writer,contemporary,British Literature
+kazuo-ishiguro,Kazuo Ishiguro,writer,contemporary,British Literature
+the-remains-of-the-day,The Remains of the Day,work,kazuo-ishiguro,British Literature
+zadie-smith,Zadie Smith,writer,contemporary,British Literature
+white-teeth,White Teeth,work,zadie-smith,British Literature
+hilary-mantel,Hilary Mantel,writer,contemporary,British Literature
+wolf-hall,Wolf Hall,work,hilary-mantel,British Literature
+literary-criticism-and-theory,Literary Criticism and Theory,area,,Literary Criticism and Theory
+classical-criticism,Classical Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+plato,Plato,writer,classical-criticism,Literary Criticism and Theory
+platos-republic,The Republic (on poetry),work,plato,Literary Criticism and Theory
+ion,Ion,work,plato,Literary Criticism and Theory
+aristotle,Aristotle,writer,classical-criticism,Literary Criticism and Theory
+aristotle-poetics,Poetics,work,aristotle,Literary Criticism and Theory
+mimesis,Mimesis,concept,aristotle,Literary Criticism and Theory
+catharsis,Catharsis,concept,aristotle,Literary Criticism and Theory
+hamartia,Hamartia,concept,aristotle,Literary Criticism and Theory
+peripeteia,Peripeteia,concept,aristotle,Literary Criticism and Theory
+anagnorisis,Anagnorisis,concept,aristotle,Literary Criticism and Theory
+the-three-unities,The Three Unities,concept,aristotle,Literary Criticism and Theory
+hubris,Hubris,concept,aristotle,Literary Criticism and Theory
+horace,Horace,writer,classical-criticism,Literary Criticism and Theory
+ars-poetica,Ars Poetica,work,horace,Literary Criticism and Theory
+dulce-et-utile,Dulce et Utile,concept,horace,Literary Criticism and Theory
+decorum,Decorum,concept,horace,Literary Criticism and Theory
+longinus,Longinus,writer,classical-criticism,Literary Criticism and Theory
+on-the-sublime,On the Sublime,work,longinus,Literary Criticism and Theory
+the-sublime,The Sublime,concept,longinus,Literary Criticism and Theory
+indian-poetics,Indian Poetics (Sanskrit Aesthetics),movement,literary-criticism-and-theory,Literary Criticism and Theory
+bharata-muni,Bharata Muni,writer,indian-poetics,Literary Criticism and Theory
+natyashastra,Natyashastra,work,bharata-muni,Literary Criticism and Theory
+rasa,Rasa,concept,bharata-muni,Literary Criticism and Theory
+the-nine-rasas,The Nine Rasas (Navarasa),concept,bharata-muni,Literary Criticism and Theory
+bhava,Bhava,concept,bharata-muni,Literary Criticism and Theory
+bhamaha,Bhamaha,writer,indian-poetics,Literary Criticism and Theory
+dandin,Dandin,writer,indian-poetics,Literary Criticism and Theory
+kavyadarsha,Kavyadarsha,work,dandin,Literary Criticism and Theory
+vamana,Vamana,writer,indian-poetics,Literary Criticism and Theory
+riti,Riti,concept,vamana,Literary Criticism and Theory
+anandavardhana,Anandavardhana,writer,indian-poetics,Literary Criticism and Theory
+dhvanyaloka,Dhvanyaloka,work,anandavardhana,Literary Criticism and Theory
+dhvani,Dhvani,concept,anandavardhana,Literary Criticism and Theory
+abhinavagupta,Abhinavagupta,writer,indian-poetics,Literary Criticism and Theory
+rasa-dhvani,Rasa-Dhvani,concept,abhinavagupta,Literary Criticism and Theory
+shanta-rasa,Shanta Rasa,concept,abhinavagupta,Literary Criticism and Theory
+kuntaka,Kuntaka,writer,indian-poetics,Literary Criticism and Theory
+vakrokti,Vakrokti,concept,kuntaka,Literary Criticism and Theory
+kshemendra,Kshemendra,writer,indian-poetics,Literary Criticism and Theory
+aucitya,Aucitya (Propriety),concept,kshemendra,Literary Criticism and Theory
+mammata,Mammata,writer,indian-poetics,Literary Criticism and Theory
+kavyaprakasha,Kavyaprakasha,work,mammata,Literary Criticism and Theory
+vishwanatha,Vishwanatha Kaviraja,writer,indian-poetics,Literary Criticism and Theory
+sahityadarpana,Sahityadarpana,work,vishwanatha,Literary Criticism and Theory
+bhartrhari,Bhartrhari,writer,indian-poetics,Literary Criticism and Theory
+sphota,Sphota,concept,bhartrhari,Literary Criticism and Theory
+alankara,Alankara (Figuration),concept,indian-poetics,Literary Criticism and Theory
+neoclassical-criticism,Neoclassical Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+boileau,Nicolas Boileau,writer,neoclassical-criticism,Literary Criticism and Theory
+lart-poetique,L'Art Poetique,work,boileau,Literary Criticism and Theory
+russian-formalism,Russian Formalism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+victor-shklovsky,Victor Shklovsky,writer,russian-formalism,Literary Criticism and Theory
+art-as-technique,Art as Technique,work,victor-shklovsky,Literary Criticism and Theory
+defamiliarization,Defamiliarization (Ostranenie),concept,victor-shklovsky,Literary Criticism and Theory
+roman-jakobson,Roman Jakobson,writer,russian-formalism,Literary Criticism and Theory
+the-poetic-function,The Poetic Function of Language,concept,roman-jakobson,Literary Criticism and Theory
+vladimir-propp,Vladimir Propp,writer,russian-formalism,Literary Criticism and Theory
+morphology-of-the-folktale,Morphology of the Folktale,work,vladimir-propp,Literary Criticism and Theory
+boris-eichenbaum,Boris Eichenbaum,writer,russian-formalism,Literary Criticism and Theory
+fabula-and-syuzhet,Fabula and Syuzhet,concept,russian-formalism,Literary Criticism and Theory
+literariness,Literariness,concept,russian-formalism,Literary Criticism and Theory
+new-criticism,New Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+i-a-richards,I. A. Richards,writer,new-criticism,Literary Criticism and Theory
+practical-criticism,Practical Criticism,work,i-a-richards,Literary Criticism and Theory
+principles-of-literary-criticism,Principles of Literary Criticism,work,i-a-richards,Literary Criticism and Theory
+william-empson,William Empson,writer,new-criticism,Literary Criticism and Theory
+seven-types-of-ambiguity,Seven Types of Ambiguity,work,william-empson,Literary Criticism and Theory
+john-crowe-ransom,John Crowe Ransom,writer,new-criticism,Literary Criticism and Theory
+cleanth-brooks,Cleanth Brooks,writer,new-criticism,Literary Criticism and Theory
+the-well-wrought-urn,The Well Wrought Urn,work,cleanth-brooks,Literary Criticism and Theory
+heresy-of-paraphrase,The Heresy of Paraphrase,concept,cleanth-brooks,Literary Criticism and Theory
+wimsatt-and-beardsley,Wimsatt and Beardsley,writer,new-criticism,Literary Criticism and Theory
+intentional-fallacy,The Intentional Fallacy,concept,wimsatt-and-beardsley,Literary Criticism and Theory
+affective-fallacy,The Affective Fallacy,concept,wimsatt-and-beardsley,Literary Criticism and Theory
+close-reading,Close Reading,concept,new-criticism,Literary Criticism and Theory
+archetypal-criticism,Archetypal and Myth Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+northrop-frye,Northrop Frye,writer,archetypal-criticism,Literary Criticism and Theory
+anatomy-of-criticism,Anatomy of Criticism,work,northrop-frye,Literary Criticism and Theory
+maud-bodkin,Maud Bodkin,writer,archetypal-criticism,Literary Criticism and Theory
+joseph-campbell,Joseph Campbell,writer,archetypal-criticism,Literary Criticism and Theory
+the-monomyth,The Monomyth (Hero's Journey),concept,joseph-campbell,Literary Criticism and Theory
+archetype,Archetype,concept,archetypal-criticism,Literary Criticism and Theory
+structuralism,Structuralism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+ferdinand-de-saussure,Ferdinand de Saussure,writer,structuralism,Literary Criticism and Theory
+course-in-general-linguistics,Course in General Linguistics,work,ferdinand-de-saussure,Literary Criticism and Theory
+sign-signifier-signified,"Sign, Signifier and Signified",concept,ferdinand-de-saussure,Literary Criticism and Theory
+langue-and-parole,Langue and Parole,concept,ferdinand-de-saussure,Literary Criticism and Theory
+synchrony-and-diachrony,Synchrony and Diachrony,concept,ferdinand-de-saussure,Literary Criticism and Theory
+claude-levi-strauss,Claude Levi-Strauss,writer,structuralism,Literary Criticism and Theory
+mytheme,Mytheme,concept,claude-levi-strauss,Literary Criticism and Theory
+roland-barthes,Roland Barthes,writer,structuralism,Literary Criticism and Theory
+mythologies,Mythologies,work,roland-barthes,Literary Criticism and Theory
+the-death-of-the-author,The Death of the Author,work,roland-barthes,Literary Criticism and Theory
+s-z,S/Z,work,roland-barthes,Literary Criticism and Theory
+gerard-genette,Gerard Genette,writer,structuralism,Literary Criticism and Theory
+narratology,Narratology,concept,gerard-genette,Literary Criticism and Theory
+a-j-greimas,A. J. Greimas,writer,structuralism,Literary Criticism and Theory
+the-actantial-model,The Actantial Model,concept,a-j-greimas,Literary Criticism and Theory
+tzvetan-todorov,Tzvetan Todorov,writer,structuralism,Literary Criticism and Theory
+binary-opposition,Binary Opposition,concept,structuralism,Literary Criticism and Theory
+post-structuralism,Post-structuralism and Deconstruction,movement,literary-criticism-and-theory,Literary Criticism and Theory
+jacques-derrida,Jacques Derrida,writer,post-structuralism,Literary Criticism and Theory
+of-grammatology,Of Grammatology,work,jacques-derrida,Literary Criticism and Theory
+structure-sign-and-play,"Structure, Sign and Play",work,jacques-derrida,Literary Criticism and Theory
+deconstruction,Deconstruction,concept,jacques-derrida,Literary Criticism and Theory
+differance,Differance,concept,jacques-derrida,Literary Criticism and Theory
+logocentrism,Logocentrism,concept,jacques-derrida,Literary Criticism and Theory
+trace,Trace,concept,jacques-derrida,Literary Criticism and Theory
+aporia,Aporia,concept,jacques-derrida,Literary Criticism and Theory
+paul-de-man,Paul de Man,writer,post-structuralism,Literary Criticism and Theory
+j-hillis-miller,J. Hillis Miller,writer,post-structuralism,Literary Criticism and Theory
+psychoanalytic-criticism,Psychoanalytic Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+sigmund-freud,Sigmund Freud,writer,psychoanalytic-criticism,Literary Criticism and Theory
+the-unconscious,The Unconscious,concept,sigmund-freud,Literary Criticism and Theory
+the-oedipus-complex,The Oedipus Complex,concept,sigmund-freud,Literary Criticism and Theory
+id-ego-superego,"Id, Ego and Superego",concept,sigmund-freud,Literary Criticism and Theory
+the-uncanny,The Uncanny,work,sigmund-freud,Literary Criticism and Theory
+carl-jung,Carl Jung,writer,psychoanalytic-criticism,Literary Criticism and Theory
+the-collective-unconscious,The Collective Unconscious,concept,carl-jung,Literary Criticism and Theory
+jacques-lacan,Jacques Lacan,writer,psychoanalytic-criticism,Literary Criticism and Theory
+the-mirror-stage,The Mirror Stage,concept,jacques-lacan,Literary Criticism and Theory
+imaginary-symbolic-real,"The Imaginary, Symbolic and Real",concept,jacques-lacan,Literary Criticism and Theory
+harold-bloom,Harold Bloom,writer,psychoanalytic-criticism,Literary Criticism and Theory
+the-anxiety-of-influence,The Anxiety of Influence,work,harold-bloom,Literary Criticism and Theory
+marxist-criticism,Marxist Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+karl-marx,Karl Marx,writer,marxist-criticism,Literary Criticism and Theory
+base-and-superstructure,Base and Superstructure,concept,karl-marx,Literary Criticism and Theory
+georg-lukacs,Georg Lukacs,writer,marxist-criticism,Literary Criticism and Theory
+antonio-gramsci,Antonio Gramsci,writer,marxist-criticism,Literary Criticism and Theory
+hegemony,Hegemony,concept,antonio-gramsci,Literary Criticism and Theory
+louis-althusser,Louis Althusser,writer,marxist-criticism,Literary Criticism and Theory
+ideology-and-interpellation,Ideology and Interpellation,concept,louis-althusser,Literary Criticism and Theory
+walter-benjamin,Walter Benjamin,writer,marxist-criticism,Literary Criticism and Theory
+the-work-of-art-mechanical-reproduction,The Work of Art in the Age of Mechanical Reproduction,work,walter-benjamin,Literary Criticism and Theory
+aura,Aura,concept,walter-benjamin,Literary Criticism and Theory
+raymond-williams,Raymond Williams,writer,marxist-criticism,Literary Criticism and Theory
+structures-of-feeling,Structures of Feeling,concept,raymond-williams,Literary Criticism and Theory
+cultural-materialism,Cultural Materialism,concept,raymond-williams,Literary Criticism and Theory
+terry-eagleton,Terry Eagleton,writer,marxist-criticism,Literary Criticism and Theory
+fredric-jameson,Fredric Jameson,writer,marxist-criticism,Literary Criticism and Theory
+the-political-unconscious,The Political Unconscious,work,fredric-jameson,Literary Criticism and Theory
+feminist-criticism,Feminist Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+simone-de-beauvoir,Simone de Beauvoir,writer,feminist-criticism,Literary Criticism and Theory
+the-second-sex,The Second Sex,work,simone-de-beauvoir,Literary Criticism and Theory
+elaine-showalter,Elaine Showalter,writer,feminist-criticism,Literary Criticism and Theory
+gynocriticism,Gynocriticism,concept,elaine-showalter,Literary Criticism and Theory
+a-literature-of-their-own,A Literature of Their Own,work,elaine-showalter,Literary Criticism and Theory
+gilbert-and-gubar,Gilbert and Gubar,writer,feminist-criticism,Literary Criticism and Theory
+the-madwoman-in-the-attic,The Madwoman in the Attic,work,gilbert-and-gubar,Literary Criticism and Theory
+kate-millett,Kate Millett,writer,feminist-criticism,Literary Criticism and Theory
+sexual-politics,Sexual Politics,work,kate-millett,Literary Criticism and Theory
+helene-cixous,Helene Cixous,writer,feminist-criticism,Literary Criticism and Theory
+ecriture-feminine,Ecriture Feminine,concept,helene-cixous,Literary Criticism and Theory
+luce-irigaray,Luce Irigaray,writer,feminist-criticism,Literary Criticism and Theory
+julia-kristeva,Julia Kristeva,writer,feminist-criticism,Literary Criticism and Theory
+intertextuality,Intertextuality,concept,julia-kristeva,Literary Criticism and Theory
+the-semiotic-and-symbolic,The Semiotic and the Symbolic,concept,julia-kristeva,Literary Criticism and Theory
+gender-and-queer-theory,Gender and Queer Theory,movement,literary-criticism-and-theory,Literary Criticism and Theory
+judith-butler,Judith Butler,writer,gender-and-queer-theory,Literary Criticism and Theory
+gender-trouble,Gender Trouble,work,judith-butler,Literary Criticism and Theory
+gender-performativity,Gender Performativity,concept,judith-butler,Literary Criticism and Theory
+eve-kosofsky-sedgwick,Eve Kosofsky Sedgwick,writer,gender-and-queer-theory,Literary Criticism and Theory
+heteronormativity,Heteronormativity,concept,gender-and-queer-theory,Literary Criticism and Theory
+reader-response-criticism,Reader-Response Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+wolfgang-iser,Wolfgang Iser,writer,reader-response-criticism,Literary Criticism and Theory
+the-implied-reader,The Implied Reader,concept,wolfgang-iser,Literary Criticism and Theory
+hans-robert-jauss,Hans Robert Jauss,writer,reader-response-criticism,Literary Criticism and Theory
+horizon-of-expectations,Horizon of Expectations,concept,hans-robert-jauss,Literary Criticism and Theory
+stanley-fish,Stanley Fish,writer,reader-response-criticism,Literary Criticism and Theory
+interpretive-communities,Interpretive Communities,concept,stanley-fish,Literary Criticism and Theory
+new-historicism,New Historicism and Cultural Studies,movement,literary-criticism-and-theory,Literary Criticism and Theory
+stephen-greenblatt,Stephen Greenblatt,writer,new-historicism,Literary Criticism and Theory
+self-fashioning,Self-Fashioning,concept,stephen-greenblatt,Literary Criticism and Theory
+michel-foucault,Michel Foucault,writer,new-historicism,Literary Criticism and Theory
+discourse,Discourse,concept,michel-foucault,Literary Criticism and Theory
+power-knowledge,Power/Knowledge,concept,michel-foucault,Literary Criticism and Theory
+episteme,Episteme,concept,michel-foucault,Literary Criticism and Theory
+stuart-hall,Stuart Hall,writer,new-historicism,Literary Criticism and Theory
+encoding-and-decoding,Encoding and Decoding,concept,stuart-hall,Literary Criticism and Theory
+postcolonial-criticism,Postcolonial Criticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+edward-said,Edward Said,writer,postcolonial-criticism,Literary Criticism and Theory
+orientalism,Orientalism,work,edward-said,Literary Criticism and Theory
+the-other,The Other,concept,postcolonial-criticism,Literary Criticism and Theory
+gayatri-spivak,Gayatri Chakravorty Spivak,writer,postcolonial-criticism,Literary Criticism and Theory
+can-the-subaltern-speak,Can the Subaltern Speak?,work,gayatri-spivak,Literary Criticism and Theory
+the-subaltern,The Subaltern,concept,gayatri-spivak,Literary Criticism and Theory
+homi-bhabha,Homi K. Bhabha,writer,postcolonial-criticism,Literary Criticism and Theory
+the-location-of-culture,The Location of Culture,work,homi-bhabha,Literary Criticism and Theory
+hybridity,Hybridity,concept,homi-bhabha,Literary Criticism and Theory
+mimicry-and-ambivalence,Mimicry and Ambivalence,concept,homi-bhabha,Literary Criticism and Theory
+frantz-fanon,Frantz Fanon,writer,postcolonial-criticism,Literary Criticism and Theory
+the-wretched-of-the-earth,The Wretched of the Earth,work,frantz-fanon,Literary Criticism and Theory
+black-skin-white-masks,"Black Skin, White Masks",work,frantz-fanon,Literary Criticism and Theory
+postmodernism-theory,Postmodernist Theory,movement,literary-criticism-and-theory,Literary Criticism and Theory
+jean-francois-lyotard,Jean-Francois Lyotard,writer,postmodernism-theory,Literary Criticism and Theory
+the-postmodern-condition,The Postmodern Condition,work,jean-francois-lyotard,Literary Criticism and Theory
+metanarrative,The Metanarrative,concept,jean-francois-lyotard,Literary Criticism and Theory
+jean-baudrillard,Jean Baudrillard,writer,postmodernism-theory,Literary Criticism and Theory
+simulacra-and-simulation,Simulacra and Simulation,work,jean-baudrillard,Literary Criticism and Theory
+hyperreality,Hyperreality,concept,jean-baudrillard,Literary Criticism and Theory
+linda-hutcheon,Linda Hutcheon,writer,postmodernism-theory,Literary Criticism and Theory
+historiographic-metafiction,Historiographic Metafiction,concept,linda-hutcheon,Literary Criticism and Theory
+ecocriticism,Ecocriticism,movement,literary-criticism-and-theory,Literary Criticism and Theory
+cheryll-glotfelty,Cheryll Glotfelty,writer,ecocriticism,Literary Criticism and Theory
+lawrence-buell,Lawrence Buell,writer,ecocriticism,Literary Criticism and Theory
+american-literature,American Literature,area,,American Literature
+american-colonial,Colonial and Early National Period (1600-1830),period,american-literature,American Literature
+anne-bradstreet,Anne Bradstreet,writer,american-colonial,American Literature
+the-tenth-muse,The Tenth Muse,work,anne-bradstreet,American Literature
+edward-taylor,Edward Taylor,writer,american-colonial,American Literature
+jonathan-edwards,Jonathan Edwards,writer,american-colonial,American Literature
+sinners-in-the-hands-of-an-angry-god,Sinners in the Hands of an Angry God,work,jonathan-edwards,American Literature
+cotton-mather,Cotton Mather,writer,american-colonial,American Literature
+benjamin-franklin,Benjamin Franklin,writer,american-colonial,American Literature
+franklin-autobiography,The Autobiography of Benjamin Franklin,work,benjamin-franklin,American Literature
+philip-freneau,Philip Freneau,writer,american-colonial,American Literature
+phillis-wheatley,Phillis Wheatley,writer,american-colonial,American Literature
+thomas-paine,Thomas Paine,writer,american-colonial,American Literature
+common-sense,Common Sense,work,thomas-paine,American Literature
+washington-irving,Washington Irving,writer,american-colonial,American Literature
+rip-van-winkle,Rip Van Winkle,work,washington-irving,American Literature
+the-legend-of-sleepy-hollow,The Legend of Sleepy Hollow,work,washington-irving,American Literature
+james-fenimore-cooper,James Fenimore Cooper,writer,american-colonial,American Literature
+the-last-of-the-mohicans,The Last of the Mohicans,work,james-fenimore-cooper,American Literature
+american-renaissance,The American Renaissance (1830-1865),period,american-literature,American Literature
+transcendentalism,Transcendentalism,movement,american-renaissance,American Literature
+ralph-waldo-emerson,Ralph Waldo Emerson,writer,american-renaissance,American Literature
+self-reliance,Self-Reliance,work,ralph-waldo-emerson,American Literature
+nature-emerson,Nature,work,ralph-waldo-emerson,American Literature
+the-american-scholar,The American Scholar,work,ralph-waldo-emerson,American Literature
+henry-david-thoreau,Henry David Thoreau,writer,american-renaissance,American Literature
+walden,Walden,work,henry-david-thoreau,American Literature
+civil-disobedience,Civil Disobedience,work,henry-david-thoreau,American Literature
+margaret-fuller,Margaret Fuller,writer,american-renaissance,American Literature
+nathaniel-hawthorne,Nathaniel Hawthorne,writer,american-renaissance,American Literature
+the-scarlet-letter,The Scarlet Letter,work,nathaniel-hawthorne,American Literature
+the-house-of-the-seven-gables,The House of the Seven Gables,work,nathaniel-hawthorne,American Literature
+young-goodman-brown,Young Goodman Brown,work,nathaniel-hawthorne,American Literature
+herman-melville,Herman Melville,writer,american-renaissance,American Literature
+moby-dick,Moby-Dick,work,herman-melville,American Literature
+bartleby-the-scrivener,"Bartleby, the Scrivener",work,herman-melville,American Literature
+billy-budd,Billy Budd,work,herman-melville,American Literature
+edgar-allan-poe,Edgar Allan Poe,writer,american-renaissance,American Literature
+the-raven,The Raven,work,edgar-allan-poe,American Literature
+the-fall-of-the-house-of-usher,The Fall of the House of Usher,work,edgar-allan-poe,American Literature
+the-philosophy-of-composition,The Philosophy of Composition,work,edgar-allan-poe,American Literature
+the-tell-tale-heart,The Tell-Tale Heart,work,edgar-allan-poe,American Literature
+walt-whitman,Walt Whitman,writer,american-renaissance,American Literature
+leaves-of-grass,Leaves of Grass,work,walt-whitman,American Literature
+song-of-myself,Song of Myself,work,walt-whitman,American Literature
+o-captain-my-captain,O Captain! My Captain!,work,walt-whitman,American Literature
+emily-dickinson,Emily Dickinson,writer,american-renaissance,American Literature
+because-i-could-not-stop-for-death,Because I could not stop for Death,work,emily-dickinson,American Literature
+harriet-beecher-stowe,Harriet Beecher Stowe,writer,american-renaissance,American Literature
+uncle-toms-cabin,Uncle Tom's Cabin,work,harriet-beecher-stowe,American Literature
+frederick-douglass,Frederick Douglass,writer,american-renaissance,American Literature
+narrative-of-frederick-douglass,Narrative of the Life of Frederick Douglass,work,frederick-douglass,American Literature
+american-realism,Realism and Naturalism (1865-1914),period,american-literature,American Literature
+realism,Realism,movement,american-realism,American Literature
+naturalism,Naturalism,movement,american-realism,American Literature
+mark-twain,Mark Twain,writer,american-realism,American Literature
+the-adventures-of-huckleberry-finn,The Adventures of Huckleberry Finn,work,mark-twain,American Literature
+the-adventures-of-tom-sawyer,The Adventures of Tom Sawyer,work,mark-twain,American Literature
+henry-james,Henry James,writer,american-realism,American Literature
+the-portrait-of-a-lady,The Portrait of a Lady,work,henry-james,American Literature
+the-turn-of-the-screw,The Turn of the Screw,work,henry-james,American Literature
+the-ambassadors,The Ambassadors,work,henry-james,American Literature
+daisy-miller,Daisy Miller,work,henry-james,American Literature
+william-dean-howells,William Dean Howells,writer,american-realism,American Literature
+stephen-crane,Stephen Crane,writer,american-realism,American Literature
+the-red-badge-of-courage,The Red Badge of Courage,work,stephen-crane,American Literature
+theodore-dreiser,Theodore Dreiser,writer,american-realism,American Literature
+sister-carrie,Sister Carrie,work,theodore-dreiser,American Literature
+an-american-tragedy,An American Tragedy,work,theodore-dreiser,American Literature
+frank-norris,Frank Norris,writer,american-realism,American Literature
+jack-london,Jack London,writer,american-realism,American Literature
+the-call-of-the-wild,The Call of the Wild,work,jack-london,American Literature
+kate-chopin,Kate Chopin,writer,american-realism,American Literature
+the-awakening,The Awakening,work,kate-chopin,American Literature
+edith-wharton,Edith Wharton,writer,american-realism,American Literature
+the-age-of-innocence,The Age of Innocence,work,edith-wharton,American Literature
+ethan-frome,Ethan Frome,work,edith-wharton,American Literature
+booker-t-washington,Booker T. Washington,writer,american-realism,American Literature
+up-from-slavery,Up from Slavery,work,booker-t-washington,American Literature
+w-e-b-du-bois,W. E. B. Du Bois,writer,american-realism,American Literature
+the-souls-of-black-folk,The Souls of Black Folk,work,w-e-b-du-bois,American Literature
+american-modernism,The Modern Period (1914-1945),period,american-literature,American Literature
+the-lost-generation,The Lost Generation,movement,american-modernism,American Literature
+the-harlem-renaissance,The Harlem Renaissance,movement,american-modernism,American Literature
+imagism-american,American Imagism,movement,american-modernism,American Literature
+f-scott-fitzgerald,F. Scott Fitzgerald,writer,american-modernism,American Literature
+the-great-gatsby,The Great Gatsby,work,f-scott-fitzgerald,American Literature
+tender-is-the-night,Tender Is the Night,work,f-scott-fitzgerald,American Literature
+ernest-hemingway,Ernest Hemingway,writer,american-modernism,American Literature
+the-old-man-and-the-sea,The Old Man and the Sea,work,ernest-hemingway,American Literature
+a-farewell-to-arms,A Farewell to Arms,work,ernest-hemingway,American Literature
+the-sun-also-rises,The Sun Also Rises,work,ernest-hemingway,American Literature
+for-whom-the-bell-tolls,For Whom the Bell Tolls,work,ernest-hemingway,American Literature
+william-faulkner,William Faulkner,writer,american-modernism,American Literature
+the-sound-and-the-fury,The Sound and the Fury,work,william-faulkner,American Literature
+as-i-lay-dying,As I Lay Dying,work,william-faulkner,American Literature
+light-in-august,Light in August,work,william-faulkner,American Literature
+john-steinbeck,John Steinbeck,writer,american-modernism,American Literature
+the-grapes-of-wrath,The Grapes of Wrath,work,john-steinbeck,American Literature
+of-mice-and-men,Of Mice and Men,work,john-steinbeck,American Literature
+robert-frost,Robert Frost,writer,american-modernism,American Literature
+the-road-not-taken,The Road Not Taken,work,robert-frost,American Literature
+stopping-by-woods-on-a-snowy-evening,Stopping by Woods on a Snowy Evening,work,robert-frost,American Literature
+mending-wall,Mending Wall,work,robert-frost,American Literature
+wallace-stevens,Wallace Stevens,writer,american-modernism,American Literature
+the-emperor-of-ice-cream,The Emperor of Ice-Cream,work,wallace-stevens,American Literature
+william-carlos-williams,William Carlos Williams,writer,american-modernism,American Literature
+the-red-wheelbarrow,The Red Wheelbarrow,work,william-carlos-williams,American Literature
+e-e-cummings,E. E. Cummings,writer,american-modernism,American Literature
+marianne-moore,Marianne Moore,writer,american-modernism,American Literature
+hart-crane,Hart Crane,writer,american-modernism,American Literature
+eugene-oneill,Eugene O'Neill,writer,american-modernism,American Literature
+long-days-journey-into-night,Long Day's Journey into Night,work,eugene-oneill,American Literature
+the-emperor-jones,The Emperor Jones,work,eugene-oneill,American Literature
+langston-hughes,Langston Hughes,writer,american-modernism,American Literature
+the-negro-speaks-of-rivers,The Negro Speaks of Rivers,work,langston-hughes,American Literature
+harlem-dream-deferred,Harlem (A Dream Deferred),work,langston-hughes,American Literature
+zora-neale-hurston,Zora Neale Hurston,writer,american-modernism,American Literature
+their-eyes-were-watching-god,Their Eyes Were Watching God,work,zora-neale-hurston,American Literature
+claude-mckay,Claude McKay,writer,american-modernism,American Literature
+countee-cullen,Countee Cullen,writer,american-modernism,American Literature
+american-contemporary,Postwar and Contemporary (1945-),period,american-literature,American Literature
+the-beat-generation,The Beat Generation,movement,american-contemporary,American Literature
+confessional-poetry,Confessional Poetry,movement,american-contemporary,American Literature
+saul-bellow,Saul Bellow,writer,american-contemporary,American Literature
+herzog,Herzog,work,saul-bellow,American Literature
+j-d-salinger,J. D. Salinger,writer,american-contemporary,American Literature
+the-catcher-in-the-rye,The Catcher in the Rye,work,j-d-salinger,American Literature
+ralph-ellison,Ralph Ellison,writer,american-contemporary,American Literature
+invisible-man,Invisible Man,work,ralph-ellison,American Literature
+james-baldwin,James Baldwin,writer,american-contemporary,American Literature
+go-tell-it-on-the-mountain,Go Tell It on the Mountain,work,james-baldwin,American Literature
+vladimir-nabokov,Vladimir Nabokov,writer,american-contemporary,American Literature
+lolita,Lolita,work,vladimir-nabokov,American Literature
+jack-kerouac,Jack Kerouac,writer,the-beat-generation,American Literature
+on-the-road,On the Road,work,jack-kerouac,American Literature
+allen-ginsberg,Allen Ginsberg,writer,the-beat-generation,American Literature
+howl,Howl,work,allen-ginsberg,American Literature
+robert-lowell,Robert Lowell,writer,confessional-poetry,American Literature
+sylvia-plath,Sylvia Plath,writer,confessional-poetry,American Literature
+ariel,Ariel,work,sylvia-plath,American Literature
+the-bell-jar,The Bell Jar,work,sylvia-plath,American Literature
+anne-sexton,Anne Sexton,writer,confessional-poetry,American Literature
+elizabeth-bishop,Elizabeth Bishop,writer,american-contemporary,American Literature
+john-berryman,John Berryman,writer,confessional-poetry,American Literature
+flannery-oconnor,Flannery O'Connor,writer,american-contemporary,American Literature
+a-good-man-is-hard-to-find,A Good Man Is Hard to Find,work,flannery-oconnor,American Literature
+arthur-miller,Arthur Miller,writer,american-contemporary,American Literature
+death-of-a-salesman,Death of a Salesman,work,arthur-miller,American Literature
+the-crucible,The Crucible,work,arthur-miller,American Literature
+tennessee-williams,Tennessee Williams,writer,american-contemporary,American Literature
+a-streetcar-named-desire,A Streetcar Named Desire,work,tennessee-williams,American Literature
+the-glass-menagerie,The Glass Menagerie,work,tennessee-williams,American Literature
+edward-albee,Edward Albee,writer,american-contemporary,American Literature
+whos-afraid-of-virginia-woolf,Who's Afraid of Virginia Woolf?,work,edward-albee,American Literature
+toni-morrison,Toni Morrison,writer,american-contemporary,American Literature
+beloved,Beloved,work,toni-morrison,American Literature
+the-bluest-eye,The Bluest Eye,work,toni-morrison,American Literature
+sula,Sula,work,toni-morrison,American Literature
+john-updike,John Updike,writer,american-contemporary,American Literature
+rabbit-run,"Rabbit, Run",work,john-updike,American Literature
+philip-roth,Philip Roth,writer,american-contemporary,American Literature
+portnoys-complaint,Portnoy's Complaint,work,philip-roth,American Literature
+thomas-pynchon,Thomas Pynchon,writer,american-contemporary,American Literature
+gravitys-rainbow,Gravity's Rainbow,work,thomas-pynchon,American Literature
+kurt-vonnegut,Kurt Vonnegut,writer,american-contemporary,American Literature
+slaughterhouse-five,Slaughterhouse-Five,work,kurt-vonnegut,American Literature
+don-delillo,Don DeLillo,writer,american-contemporary,American Literature
+white-noise,White Noise,work,don-delillo,American Literature
+alice-walker,Alice Walker,writer,american-contemporary,American Literature
+the-color-purple,The Color Purple,work,alice-walker,American Literature
+maya-angelou,Maya Angelou,writer,american-contemporary,American Literature
+i-know-why-the-caged-bird-sings,I Know Why the Caged Bird Sings,work,maya-angelou,American Literature
+adrienne-rich,Adrienne Rich,writer,american-contemporary,American Literature
+john-ashbery,John Ashbery,writer,american-contemporary,American Literature
+cormac-mccarthy,Cormac McCarthy,writer,american-contemporary,American Literature
+blood-meridian,Blood Meridian,work,cormac-mccarthy,American Literature
+the-road,The Road,work,cormac-mccarthy,American Literature
+august-wilson,August Wilson,writer,american-contemporary,American Literature
+fences,Fences,work,august-wilson,American Literature
+indian-writing-in-english,Indian Writing in English,area,,Indian Writing in English
+iwe-beginnings,The Beginnings (1800-1920),period,indian-writing-in-english,Indian Writing in English
+raja-rammohan-roy,Raja Rammohan Roy,writer,iwe-beginnings,Indian Writing in English
+henry-derozio,Henry Louis Vivian Derozio,writer,iwe-beginnings,Indian Writing in English
+michael-madhusudan-dutt,Michael Madhusudan Dutt,writer,iwe-beginnings,Indian Writing in English
+toru-dutt,Toru Dutt,writer,iwe-beginnings,Indian Writing in English
+our-casuarina-tree,Our Casuarina Tree,work,toru-dutt,Indian Writing in English
+romesh-chunder-dutt,Romesh Chunder Dutt,writer,iwe-beginnings,Indian Writing in English
+behramji-malabari,Behramji Malabari,writer,iwe-beginnings,Indian Writing in English
+manmohan-ghose,Manmohan Ghose,writer,iwe-beginnings,Indian Writing in English
+iwe-poetry,Indian English Poetry,period,indian-writing-in-english,Indian Writing in English
+sri-aurobindo,Sri Aurobindo,writer,iwe-poetry,Indian Writing in English
+savitri,Savitri,work,sri-aurobindo,Indian Writing in English
+rabindranath-tagore,Rabindranath Tagore,writer,iwe-poetry,Indian Writing in English
+gitanjali,Gitanjali,work,rabindranath-tagore,Indian Writing in English
+the-home-and-the-world,The Home and the World,work,rabindranath-tagore,Indian Writing in English
+sarojini-naidu,Sarojini Naidu,writer,iwe-poetry,Indian Writing in English
+the-golden-threshold,The Golden Threshold,work,sarojini-naidu,Indian Writing in English
+the-bangle-sellers,The Bangle Sellers,work,sarojini-naidu,Indian Writing in English
+nissim-ezekiel,Nissim Ezekiel,writer,iwe-poetry,Indian Writing in English
+night-of-the-scorpion,Night of the Scorpion,work,nissim-ezekiel,Indian Writing in English
+the-patriot,The Patriot,work,nissim-ezekiel,Indian Writing in English
+a-k-ramanujan,A. K. Ramanujan,writer,iwe-poetry,Indian Writing in English
+a-river,A River,work,a-k-ramanujan,Indian Writing in English
+kamala-das,Kamala Das,writer,iwe-poetry,Indian Writing in English
+an-introduction,An Introduction,work,kamala-das,Indian Writing in English
+summer-in-calcutta,Summer in Calcutta,work,kamala-das,Indian Writing in English
+jayanta-mahapatra,Jayanta Mahapatra,writer,iwe-poetry,Indian Writing in English
+hunger-mahapatra,Hunger,work,jayanta-mahapatra,Indian Writing in English
+a-k-mehrotra,Arvind Krishna Mehrotra,writer,iwe-poetry,Indian Writing in English
+keki-daruwalla,Keki N. Daruwalla,writer,iwe-poetry,Indian Writing in English
+r-parthasarathy,R. Parthasarathy,writer,iwe-poetry,Indian Writing in English
+dom-moraes,Dom Moraes,writer,iwe-poetry,Indian Writing in English
+gieve-patel,Gieve Patel,writer,iwe-poetry,Indian Writing in English
+dilip-chitre,Dilip Chitre,writer,iwe-poetry,Indian Writing in English
+eunice-de-souza,Eunice de Souza,writer,iwe-poetry,Indian Writing in English
+vikram-seth,Vikram Seth,writer,iwe-poetry,Indian Writing in English
+the-golden-gate,The Golden Gate,work,vikram-seth,Indian Writing in English
+a-suitable-boy,A Suitable Boy,work,vikram-seth,Indian Writing in English
+iwe-fiction,Indian English Fiction,period,indian-writing-in-english,Indian Writing in English
+mulk-raj-anand,Mulk Raj Anand,writer,iwe-fiction,Indian Writing in English
+untouchable,Untouchable,work,mulk-raj-anand,Indian Writing in English
+coolie,Coolie,work,mulk-raj-anand,Indian Writing in English
+r-k-narayan,R. K. Narayan,writer,iwe-fiction,Indian Writing in English
+swami-and-friends,Swami and Friends,work,r-k-narayan,Indian Writing in English
+the-guide,The Guide,work,r-k-narayan,Indian Writing in English
+malgudi-days,Malgudi Days,work,r-k-narayan,Indian Writing in English
+the-english-teacher,The English Teacher,work,r-k-narayan,Indian Writing in English
+raja-rao,Raja Rao,writer,iwe-fiction,Indian Writing in English
+kanthapura,Kanthapura,work,raja-rao,Indian Writing in English
+the-serpent-and-the-rope,The Serpent and the Rope,work,raja-rao,Indian Writing in English
+g-v-desani,G. V. Desani,writer,iwe-fiction,Indian Writing in English
+all-about-h-hatterr,All About H. Hatterr,work,g-v-desani,Indian Writing in English
+khushwant-singh,Khushwant Singh,writer,iwe-fiction,Indian Writing in English
+train-to-pakistan,Train to Pakistan,work,khushwant-singh,Indian Writing in English
+kamala-markandaya,Kamala Markandaya,writer,iwe-fiction,Indian Writing in English
+nectar-in-a-sieve,Nectar in a Sieve,work,kamala-markandaya,Indian Writing in English
+nayantara-sahgal,Nayantara Sahgal,writer,iwe-fiction,Indian Writing in English
+anita-desai,Anita Desai,writer,iwe-fiction,Indian Writing in English
+clear-light-of-day,Clear Light of Day,work,anita-desai,Indian Writing in English
+in-custody,In Custody,work,anita-desai,Indian Writing in English
+cry-the-peacock,"Cry, the Peacock",work,anita-desai,Indian Writing in English
+salman-rushdie,Salman Rushdie,writer,iwe-fiction,Indian Writing in English
+midnights-children,Midnight's Children,work,salman-rushdie,Indian Writing in English
+the-satanic-verses,The Satanic Verses,work,salman-rushdie,Indian Writing in English
+shame,Shame,work,salman-rushdie,Indian Writing in English
+amitav-ghosh,Amitav Ghosh,writer,iwe-fiction,Indian Writing in English
+the-shadow-lines,The Shadow Lines,work,amitav-ghosh,Indian Writing in English
+the-circle-of-reason,The Circle of Reason,work,amitav-ghosh,Indian Writing in English
+the-hungry-tide,The Hungry Tide,work,amitav-ghosh,Indian Writing in English
+vikram-chandra,Vikram Chandra,writer,iwe-fiction,Indian Writing in English
+upamanyu-chatterjee,Upamanyu Chatterjee,writer,iwe-fiction,Indian Writing in English
+english-august,"English, August",work,upamanyu-chatterjee,Indian Writing in English
+shashi-tharoor,Shashi Tharoor,writer,iwe-fiction,Indian Writing in English
+the-great-indian-novel,The Great Indian Novel,work,shashi-tharoor,Indian Writing in English
+rohinton-mistry,Rohinton Mistry,writer,iwe-fiction,Indian Writing in English
+a-fine-balance,A Fine Balance,work,rohinton-mistry,Indian Writing in English
+such-a-long-journey,Such a Long Journey,work,rohinton-mistry,Indian Writing in English
+arundhati-roy,Arundhati Roy,writer,iwe-fiction,Indian Writing in English
+the-god-of-small-things,The God of Small Things,work,arundhati-roy,Indian Writing in English
+kiran-desai,Kiran Desai,writer,iwe-fiction,Indian Writing in English
+the-inheritance-of-loss,The Inheritance of Loss,work,kiran-desai,Indian Writing in English
+jhumpa-lahiri,Jhumpa Lahiri,writer,iwe-fiction,Indian Writing in English
+the-namesake,The Namesake,work,jhumpa-lahiri,Indian Writing in English
+interpreter-of-maladies,Interpreter of Maladies,work,jhumpa-lahiri,Indian Writing in English
+aravind-adiga,Aravind Adiga,writer,iwe-fiction,Indian Writing in English
+the-white-tiger,The White Tiger,work,aravind-adiga,Indian Writing in English
+chetan-bhagat,Chetan Bhagat,writer,iwe-fiction,Indian Writing in English
+bharati-mukherjee,Bharati Mukherjee,writer,iwe-fiction,Indian Writing in English
+jasmine,Jasmine,work,bharati-mukherjee,Indian Writing in English
+manju-kapur,Manju Kapur,writer,iwe-fiction,Indian Writing in English
+difficult-daughters,Difficult Daughters,work,manju-kapur,Indian Writing in English
+shashi-deshpande,Shashi Deshpande,writer,iwe-fiction,Indian Writing in English
+that-long-silence,That Long Silence,work,shashi-deshpande,Indian Writing in English
+iwe-drama,Indian English Drama,period,indian-writing-in-english,Indian Writing in English
+girish-karnad,Girish Karnad,writer,iwe-drama,Indian Writing in English
+tughlaq,Tughlaq,work,girish-karnad,Indian Writing in English
+hayavadana,Hayavadana,work,girish-karnad,Indian Writing in English
+nagamandala,Nagamandala,work,girish-karnad,Indian Writing in English
+vijay-tendulkar,Vijay Tendulkar,writer,iwe-drama,Indian Writing in English
+silence-the-court-is-in-session,Silence! The Court Is in Session,work,vijay-tendulkar,Indian Writing in English
+ghashiram-kotwal,Ghashiram Kotwal,work,vijay-tendulkar,Indian Writing in English
+mahesh-dattani,Mahesh Dattani,writer,iwe-drama,Indian Writing in English
+final-solutions,Final Solutions,work,mahesh-dattani,Indian Writing in English
+tara,Tara,work,mahesh-dattani,Indian Writing in English
+badal-sircar,Badal Sircar,writer,iwe-drama,Indian Writing in English
+evam-indrajit,Evam Indrajit,work,badal-sircar,Indian Writing in English
+asif-currimbhoy,Asif Currimbhoy,writer,iwe-drama,Indian Writing in English
+iwe-prose,Indian English Prose and Non-fiction,period,indian-writing-in-english,Indian Writing in English
+mahatma-gandhi,Mahatma Gandhi,writer,iwe-prose,Indian Writing in English
+the-story-of-my-experiments-with-truth,The Story of My Experiments with Truth,work,mahatma-gandhi,Indian Writing in English
+jawaharlal-nehru,Jawaharlal Nehru,writer,iwe-prose,Indian Writing in English
+the-discovery-of-india,The Discovery of India,work,jawaharlal-nehru,Indian Writing in English
+an-autobiography-nehru,An Autobiography,work,jawaharlal-nehru,Indian Writing in English
+b-r-ambedkar,B. R. Ambedkar,writer,iwe-prose,Indian Writing in English
+annihilation-of-caste,Annihilation of Caste,work,b-r-ambedkar,Indian Writing in English
+nirad-c-chaudhuri,Nirad C. Chaudhuri,writer,iwe-prose,Indian Writing in English
+the-autobiography-of-an-unknown-indian,The Autobiography of an Unknown Indian,work,nirad-c-chaudhuri,Indian Writing in English
+new-literatures-in-english,New Literatures in English (Postcolonial),area,,New Literatures in English (Postcolonial)
+african-literature,African Literature,period,new-literatures-in-english,New Literatures in English (Postcolonial)
+chinua-achebe,Chinua Achebe,writer,african-literature,New Literatures in English (Postcolonial)
+things-fall-apart,Things Fall Apart,work,chinua-achebe,New Literatures in English (Postcolonial)
+no-longer-at-ease,No Longer at Ease,work,chinua-achebe,New Literatures in English (Postcolonial)
+arrow-of-god,Arrow of God,work,chinua-achebe,New Literatures in English (Postcolonial)
+wole-soyinka,Wole Soyinka,writer,african-literature,New Literatures in English (Postcolonial)
+death-and-the-kings-horseman,Death and the King's Horseman,work,wole-soyinka,New Literatures in English (Postcolonial)
+a-dance-of-the-forests,A Dance of the Forests,work,wole-soyinka,New Literatures in English (Postcolonial)
+the-lion-and-the-jewel,The Lion and the Jewel,work,wole-soyinka,New Literatures in English (Postcolonial)
+ngugi-wa-thiongo,Ngugi wa Thiong'o,writer,african-literature,New Literatures in English (Postcolonial)
+weep-not-child,"Weep Not, Child",work,ngugi-wa-thiongo,New Literatures in English (Postcolonial)
+a-grain-of-wheat,A Grain of Wheat,work,ngugi-wa-thiongo,New Literatures in English (Postcolonial)
+petals-of-blood,Petals of Blood,work,ngugi-wa-thiongo,New Literatures in English (Postcolonial)
+decolonising-the-mind,Decolonising the Mind,work,ngugi-wa-thiongo,New Literatures in English (Postcolonial)
+nadine-gordimer,Nadine Gordimer,writer,african-literature,New Literatures in English (Postcolonial)
+julys-people,July's People,work,nadine-gordimer,New Literatures in English (Postcolonial)
+j-m-coetzee,J. M. Coetzee,writer,african-literature,New Literatures in English (Postcolonial)
+disgrace,Disgrace,work,j-m-coetzee,New Literatures in English (Postcolonial)
+waiting-for-the-barbarians,Waiting for the Barbarians,work,j-m-coetzee,New Literatures in English (Postcolonial)
+foe,Foe,work,j-m-coetzee,New Literatures in English (Postcolonial)
+ben-okri,Ben Okri,writer,african-literature,New Literatures in English (Postcolonial)
+the-famished-road,The Famished Road,work,ben-okri,New Literatures in English (Postcolonial)
+buchi-emecheta,Buchi Emecheta,writer,african-literature,New Literatures in English (Postcolonial)
+the-joys-of-motherhood,The Joys of Motherhood,work,buchi-emecheta,New Literatures in English (Postcolonial)
+chimamanda-ngozi-adichie,Chimamanda Ngozi Adichie,writer,african-literature,New Literatures in English (Postcolonial)
+half-of-a-yellow-sun,Half of a Yellow Sun,work,chimamanda-ngozi-adichie,New Literatures in English (Postcolonial)
+purple-hibiscus,Purple Hibiscus,work,chimamanda-ngozi-adichie,New Literatures in English (Postcolonial)
+tsitsi-dangarembga,Tsitsi Dangarembga,writer,african-literature,New Literatures in English (Postcolonial)
+nervous-conditions,Nervous Conditions,work,tsitsi-dangarembga,New Literatures in English (Postcolonial)
+athol-fugard,Athol Fugard,writer,african-literature,New Literatures in English (Postcolonial)
+sizwe-banzi-is-dead,Sizwe Banzi Is Dead,work,athol-fugard,New Literatures in English (Postcolonial)
+bessie-head,Bessie Head,writer,african-literature,New Literatures in English (Postcolonial)
+leopold-senghor,Leopold Sedar Senghor,writer,african-literature,New Literatures in English (Postcolonial)
+negritude,Negritude,movement,african-literature,New Literatures in English (Postcolonial)
+caribbean-literature,Caribbean Literature,period,new-literatures-in-english,New Literatures in English (Postcolonial)
+derek-walcott,Derek Walcott,writer,caribbean-literature,New Literatures in English (Postcolonial)
+omeros,Omeros,work,derek-walcott,New Literatures in English (Postcolonial)
+a-far-cry-from-africa,A Far Cry from Africa,work,derek-walcott,New Literatures in English (Postcolonial)
+v-s-naipaul,V. S. Naipaul,writer,caribbean-literature,New Literatures in English (Postcolonial)
+a-house-for-mr-biswas,A House for Mr Biswas,work,v-s-naipaul,New Literatures in English (Postcolonial)
+a-bend-in-the-river,A Bend in the River,work,v-s-naipaul,New Literatures in English (Postcolonial)
+george-lamming,George Lamming,writer,caribbean-literature,New Literatures in English (Postcolonial)
+in-the-castle-of-my-skin,In the Castle of My Skin,work,george-lamming,New Literatures in English (Postcolonial)
+jean-rhys,Jean Rhys,writer,caribbean-literature,New Literatures in English (Postcolonial)
+wide-sargasso-sea,Wide Sargasso Sea,work,jean-rhys,New Literatures in English (Postcolonial)
+kamau-brathwaite,Kamau Brathwaite,writer,caribbean-literature,New Literatures in English (Postcolonial)
+jamaica-kincaid,Jamaica Kincaid,writer,caribbean-literature,New Literatures in English (Postcolonial)
+caryl-phillips,Caryl Phillips,writer,caribbean-literature,New Literatures in English (Postcolonial)
+earl-lovelace,Earl Lovelace,writer,caribbean-literature,New Literatures in English (Postcolonial)
+canadian-literature,Canadian Literature,period,new-literatures-in-english,New Literatures in English (Postcolonial)
+margaret-atwood,Margaret Atwood,writer,canadian-literature,New Literatures in English (Postcolonial)
+the-handmaids-tale,The Handmaid's Tale,work,margaret-atwood,New Literatures in English (Postcolonial)
+surfacing,Surfacing,work,margaret-atwood,New Literatures in English (Postcolonial)
+the-blind-assassin,The Blind Assassin,work,margaret-atwood,New Literatures in English (Postcolonial)
+margaret-laurence,Margaret Laurence,writer,canadian-literature,New Literatures in English (Postcolonial)
+the-stone-angel,The Stone Angel,work,margaret-laurence,New Literatures in English (Postcolonial)
+alice-munro,Alice Munro,writer,canadian-literature,New Literatures in English (Postcolonial)
+dance-of-the-happy-shades,Dance of the Happy Shades,work,alice-munro,New Literatures in English (Postcolonial)
+michael-ondaatje,Michael Ondaatje,writer,canadian-literature,New Literatures in English (Postcolonial)
+the-english-patient,The English Patient,work,michael-ondaatje,New Literatures in English (Postcolonial)
+robertson-davies,Robertson Davies,writer,canadian-literature,New Literatures in English (Postcolonial)
+mordecai-richler,Mordecai Richler,writer,canadian-literature,New Literatures in English (Postcolonial)
+carol-shields,Carol Shields,writer,canadian-literature,New Literatures in English (Postcolonial)
+australian-literature,Australian Literature,period,new-literatures-in-english,New Literatures in English (Postcolonial)
+patrick-white,Patrick White,writer,australian-literature,New Literatures in English (Postcolonial)
+voss,Voss,work,patrick-white,New Literatures in English (Postcolonial)
+the-tree-of-man,The Tree of Man,work,patrick-white,New Literatures in English (Postcolonial)
+a-d-hope,A. D. Hope,writer,australian-literature,New Literatures in English (Postcolonial)
+judith-wright,Judith Wright,writer,australian-literature,New Literatures in English (Postcolonial)
+les-murray,Les Murray,writer,australian-literature,New Literatures in English (Postcolonial)
+david-malouf,David Malouf,writer,australian-literature,New Literatures in English (Postcolonial)
+peter-carey,Peter Carey,writer,australian-literature,New Literatures in English (Postcolonial)
+oscar-and-lucinda,Oscar and Lucinda,work,peter-carey,New Literatures in English (Postcolonial)
+thomas-keneally,Thomas Keneally,writer,australian-literature,New Literatures in English (Postcolonial)
+schindlers-ark,Schindler's Ark,work,thomas-keneally,New Literatures in English (Postcolonial)
+henry-lawson,Henry Lawson,writer,australian-literature,New Literatures in English (Postcolonial)
+literary-terms-and-devices,Literary Terms and Devices,area,,Literary Terms and Devices
+figures-of-speech,Figures of Speech,concept,literary-terms-and-devices,Literary Terms and Devices
+simile,Simile,concept,figures-of-speech,Literary Terms and Devices
+metaphor,Metaphor,concept,figures-of-speech,Literary Terms and Devices
+extended-metaphor,Extended Metaphor,concept,figures-of-speech,Literary Terms and Devices
+personification,Personification,concept,figures-of-speech,Literary Terms and Devices
+metonymy,Metonymy,concept,figures-of-speech,Literary Terms and Devices
+synecdoche,Synecdoche,concept,figures-of-speech,Literary Terms and Devices
+apostrophe-device,Apostrophe,concept,figures-of-speech,Literary Terms and Devices
+hyperbole,Hyperbole,concept,figures-of-speech,Literary Terms and Devices
+litotes,Litotes,concept,figures-of-speech,Literary Terms and Devices
+oxymoron,Oxymoron,concept,figures-of-speech,Literary Terms and Devices
+paradox,Paradox,concept,figures-of-speech,Literary Terms and Devices
+pun,Pun,concept,figures-of-speech,Literary Terms and Devices
+antithesis,Antithesis,concept,figures-of-speech,Literary Terms and Devices
+euphemism-device,Euphemism,concept,figures-of-speech,Literary Terms and Devices
+conceit,Conceit,concept,figures-of-speech,Literary Terms and Devices
+symbol,Symbol,concept,figures-of-speech,Literary Terms and Devices
+allegory,Allegory,concept,figures-of-speech,Literary Terms and Devices
+allusion,Allusion,concept,figures-of-speech,Literary Terms and Devices
+ambiguity,Ambiguity,concept,figures-of-speech,Literary Terms and Devices
+synaesthesia,Synaesthesia,concept,figures-of-speech,Literary Terms and Devices
+transferred-epithet,Transferred Epithet,concept,figures-of-speech,Literary Terms and Devices
+pathetic-fallacy,Pathetic Fallacy,concept,figures-of-speech,Literary Terms and Devices
+metaphor-vehicle-tenor,Vehicle and Tenor,concept,figures-of-speech,Literary Terms and Devices
+zeugma,Zeugma,concept,figures-of-speech,Literary Terms and Devices
+hyperbaton,Hyperbaton,concept,figures-of-speech,Literary Terms and Devices
+periphrasis,Periphrasis,concept,figures-of-speech,Literary Terms and Devices
+meiosis,Meiosis,concept,figures-of-speech,Literary Terms and Devices
+irony,Irony,concept,figures-of-speech,Literary Terms and Devices
+verbal-irony,Verbal Irony,concept,figures-of-speech,Literary Terms and Devices
+situational-irony,Situational Irony,concept,figures-of-speech,Literary Terms and Devices
+dramatic-irony,Dramatic Irony,concept,figures-of-speech,Literary Terms and Devices
+sarcasm,Sarcasm,concept,figures-of-speech,Literary Terms and Devices
+innuendo,Innuendo,concept,figures-of-speech,Literary Terms and Devices
+sound-devices,Sound Devices,concept,literary-terms-and-devices,Literary Terms and Devices
+alliteration,Alliteration,concept,sound-devices,Literary Terms and Devices
+assonance,Assonance,concept,sound-devices,Literary Terms and Devices
+consonance,Consonance,concept,sound-devices,Literary Terms and Devices
+onomatopoeia,Onomatopoeia,concept,sound-devices,Literary Terms and Devices
+cacophony,Cacophony,concept,sound-devices,Literary Terms and Devices
+euphony,Euphony,concept,sound-devices,Literary Terms and Devices
+sibilance,Sibilance,concept,sound-devices,Literary Terms and Devices
+anaphora,Anaphora,concept,sound-devices,Literary Terms and Devices
+epistrophe,Epistrophe,concept,sound-devices,Literary Terms and Devices
+chiasmus,Chiasmus,concept,sound-devices,Literary Terms and Devices
+refrain,Refrain,concept,sound-devices,Literary Terms and Devices
+prosody-and-metre,Prosody and Metre,concept,literary-terms-and-devices,Literary Terms and Devices
+metre,Metre,concept,prosody-and-metre,Literary Terms and Devices
+foot,Foot,concept,prosody-and-metre,Literary Terms and Devices
+scansion,Scansion,concept,prosody-and-metre,Literary Terms and Devices
+iamb,Iamb,concept,prosody-and-metre,Literary Terms and Devices
+trochee,Trochee,concept,prosody-and-metre,Literary Terms and Devices
+spondee,Spondee,concept,prosody-and-metre,Literary Terms and Devices
+dactyl,Dactyl,concept,prosody-and-metre,Literary Terms and Devices
+anapest,Anapest,concept,prosody-and-metre,Literary Terms and Devices
+pyrrhic,Pyrrhic,concept,prosody-and-metre,Literary Terms and Devices
+iambic-pentameter,Iambic Pentameter,concept,prosody-and-metre,Literary Terms and Devices
+blank-verse,Blank Verse,concept,prosody-and-metre,Literary Terms and Devices
+free-verse,Free Verse,concept,prosody-and-metre,Literary Terms and Devices
+caesura,Caesura,concept,prosody-and-metre,Literary Terms and Devices
+enjambment,Enjambment,concept,prosody-and-metre,Literary Terms and Devices
+end-stopped-line,End-stopped Line,concept,prosody-and-metre,Literary Terms and Devices
+rhyme,Rhyme,concept,prosody-and-metre,Literary Terms and Devices
+rhyme-scheme,Rhyme Scheme,concept,prosody-and-metre,Literary Terms and Devices
+internal-rhyme,Internal Rhyme,concept,prosody-and-metre,Literary Terms and Devices
+half-rhyme,Half Rhyme (Slant Rhyme),concept,prosody-and-metre,Literary Terms and Devices
+eye-rhyme,Eye Rhyme,concept,prosody-and-metre,Literary Terms and Devices
+feminine-rhyme,Feminine Rhyme,concept,prosody-and-metre,Literary Terms and Devices
+masculine-rhyme,Masculine Rhyme,concept,prosody-and-metre,Literary Terms and Devices
+heroic-couplet,Heroic Couplet,concept,prosody-and-metre,Literary Terms and Devices
+alexandrine,Alexandrine,concept,prosody-and-metre,Literary Terms and Devices
+tetrameter,Tetrameter,concept,prosody-and-metre,Literary Terms and Devices
+hexameter,Hexameter,concept,prosody-and-metre,Literary Terms and Devices
+stanza,Stanza,concept,prosody-and-metre,Literary Terms and Devices
+quatrain,Quatrain,concept,prosody-and-metre,Literary Terms and Devices
+tercet,Tercet,concept,prosody-and-metre,Literary Terms and Devices
+couplet,Couplet,concept,prosody-and-metre,Literary Terms and Devices
+ottava-rima,Ottava Rima,concept,prosody-and-metre,Literary Terms and Devices
+terza-rima,Terza Rima,concept,prosody-and-metre,Literary Terms and Devices
+rhyme-royal,Rhyme Royal,concept,prosody-and-metre,Literary Terms and Devices
+spenserian-stanza,Spenserian Stanza,concept,prosody-and-metre,Literary Terms and Devices
+poetic-forms,Poetic Forms,concept,literary-terms-and-devices,Literary Terms and Devices
+sonnet,Sonnet,concept,poetic-forms,Literary Terms and Devices
+petrarchan-sonnet,Petrarchan Sonnet,concept,poetic-forms,Literary Terms and Devices
+shakespearean-sonnet,Shakespearean Sonnet,concept,poetic-forms,Literary Terms and Devices
+spenserian-sonnet,Spenserian Sonnet,concept,poetic-forms,Literary Terms and Devices
+ode,Ode,concept,poetic-forms,Literary Terms and Devices
+elegy,Elegy,concept,poetic-forms,Literary Terms and Devices
+ballad,Ballad,concept,poetic-forms,Literary Terms and Devices
+lyric,Lyric,concept,poetic-forms,Literary Terms and Devices
+epic,Epic,concept,poetic-forms,Literary Terms and Devices
+mock-epic,Mock-epic,concept,poetic-forms,Literary Terms and Devices
+pastoral,Pastoral,concept,poetic-forms,Literary Terms and Devices
+villanelle,Villanelle,concept,poetic-forms,Literary Terms and Devices
+sestina,Sestina,concept,poetic-forms,Literary Terms and Devices
+haiku,Haiku,concept,poetic-forms,Literary Terms and Devices
+limerick,Limerick,concept,poetic-forms,Literary Terms and Devices
+epigram,Epigram,concept,poetic-forms,Literary Terms and Devices
+ghazal,Ghazal,concept,poetic-forms,Literary Terms and Devices
+idyll,Idyll,concept,poetic-forms,Literary Terms and Devices
+eclogue,Eclogue,concept,poetic-forms,Literary Terms and Devices
+dirge,Dirge,concept,poetic-forms,Literary Terms and Devices
+aubade,Aubade,concept,poetic-forms,Literary Terms and Devices
+acrostic,Acrostic,concept,poetic-forms,Literary Terms and Devices
+concrete-poetry,Concrete Poetry,concept,poetic-forms,Literary Terms and Devices
+dramatic-monologue-form,Dramatic Monologue (form),concept,poetic-forms,Literary Terms and Devices
+blazon,Blazon,concept,poetic-forms,Literary Terms and Devices
+genres-and-modes,Genres and Modes,concept,literary-terms-and-devices,Literary Terms and Devices
+tragedy,Tragedy,concept,genres-and-modes,Literary Terms and Devices
+comedy,Comedy,concept,genres-and-modes,Literary Terms and Devices
+tragicomedy,Tragicomedy,concept,genres-and-modes,Literary Terms and Devices
+farce,Farce,concept,genres-and-modes,Literary Terms and Devices
+satire,Satire,concept,genres-and-modes,Literary Terms and Devices
+romance-genre,Romance,concept,genres-and-modes,Literary Terms and Devices
+novel,Novel,concept,genres-and-modes,Literary Terms and Devices
+novella,Novella,concept,genres-and-modes,Literary Terms and Devices
+short-story,Short Story,concept,genres-and-modes,Literary Terms and Devices
+bildungsroman,Bildungsroman,concept,genres-and-modes,Literary Terms and Devices
+kunstlerroman,Kunstlerroman,concept,genres-and-modes,Literary Terms and Devices
+picaresque,Picaresque Novel,concept,genres-and-modes,Literary Terms and Devices
+gothic-fiction,Gothic Fiction,concept,genres-and-modes,Literary Terms and Devices
+fable,Fable,concept,genres-and-modes,Literary Terms and Devices
+parable,Parable,concept,genres-and-modes,Literary Terms and Devices
+myth,Myth,concept,genres-and-modes,Literary Terms and Devices
+legend,Legend,concept,genres-and-modes,Literary Terms and Devices
+utopian-literature,Utopian Literature,concept,genres-and-modes,Literary Terms and Devices
+dystopian-literature,Dystopian Literature,concept,genres-and-modes,Literary Terms and Devices
+melodrama,Melodrama,concept,genres-and-modes,Literary Terms and Devices
+autobiography,Autobiography,concept,genres-and-modes,Literary Terms and Devices
+biography,Biography,concept,genres-and-modes,Literary Terms and Devices
+memoir,Memoir,concept,genres-and-modes,Literary Terms and Devices
+essay-genre,Essay,concept,genres-and-modes,Literary Terms and Devices
+travelogue,Travelogue,concept,genres-and-modes,Literary Terms and Devices
+detective-fiction,Detective Fiction,concept,genres-and-modes,Literary Terms and Devices
+science-fiction,Science Fiction,concept,genres-and-modes,Literary Terms and Devices
+magic-realism,Magic Realism,concept,genres-and-modes,Literary Terms and Devices
+metafiction,Metafiction,concept,genres-and-modes,Literary Terms and Devices
+absurd-drama,Absurdist Drama,concept,genres-and-modes,Literary Terms and Devices
+comedy-of-humours-genre,Comedy of Humours,concept,genres-and-modes,Literary Terms and Devices
+drama-terms,Dramatic Terms,concept,literary-terms-and-devices,Literary Terms and Devices
+soliloquy,Soliloquy,concept,drama-terms,Literary Terms and Devices
+aside,Aside,concept,drama-terms,Literary Terms and Devices
+chorus,Chorus,concept,drama-terms,Literary Terms and Devices
+deus-ex-machina,Deus ex Machina,concept,drama-terms,Literary Terms and Devices
+protagonist,Protagonist,concept,drama-terms,Literary Terms and Devices
+antagonist,Antagonist,concept,drama-terms,Literary Terms and Devices
+tragic-hero,Tragic Hero,concept,drama-terms,Literary Terms and Devices
+foil,Foil,concept,drama-terms,Literary Terms and Devices
+comic-relief,Comic Relief,concept,drama-terms,Literary Terms and Devices
+denouement,Denouement,concept,drama-terms,Literary Terms and Devices
+catastrophe,Catastrophe,concept,drama-terms,Literary Terms and Devices
+exposition,Exposition,concept,drama-terms,Literary Terms and Devices
+climax,Climax,concept,drama-terms,Literary Terms and Devices
+poetic-justice,Poetic Justice,concept,drama-terms,Literary Terms and Devices
+alienation-effect,Alienation Effect (Verfremdungseffekt),concept,drama-terms,Literary Terms and Devices
+well-made-play,Well-made Play,concept,drama-terms,Literary Terms and Devices
+tragic-flaw,Tragic Flaw,concept,drama-terms,Literary Terms and Devices
+anagnorisis-term,Recognition Scene,concept,drama-terms,Literary Terms and Devices
+prologue,Prologue,concept,drama-terms,Literary Terms and Devices
+epilogue,Epilogue,concept,drama-terms,Literary Terms and Devices
+three-act-structure,Three-act Structure,concept,drama-terms,Literary Terms and Devices
+fourth-wall,The Fourth Wall,concept,drama-terms,Literary Terms and Devices
+narrative-terms,Narrative and Fiction Terms,concept,literary-terms-and-devices,Literary Terms and Devices
+plot,Plot,concept,narrative-terms,Literary Terms and Devices
+subplot,Subplot,concept,narrative-terms,Literary Terms and Devices
+character,Character,concept,narrative-terms,Literary Terms and Devices
+flat-and-round-characters,Flat and Round Characters,concept,narrative-terms,Literary Terms and Devices
+point-of-view,Point of View,concept,narrative-terms,Literary Terms and Devices
+first-person-narration,First-person Narration,concept,narrative-terms,Literary Terms and Devices
+third-person-narration,Third-person Narration,concept,narrative-terms,Literary Terms and Devices
+omniscient-narrator,Omniscient Narrator,concept,narrative-terms,Literary Terms and Devices
+unreliable-narrator,Unreliable Narrator,concept,narrative-terms,Literary Terms and Devices
+free-indirect-discourse,Free Indirect Discourse,concept,narrative-terms,Literary Terms and Devices
+interior-monologue,Interior Monologue,concept,narrative-terms,Literary Terms and Devices
+flashback,Flashback,concept,narrative-terms,Literary Terms and Devices
+foreshadowing,Foreshadowing,concept,narrative-terms,Literary Terms and Devices
+in-medias-res,In Medias Res,concept,narrative-terms,Literary Terms and Devices
+frame-narrative,Frame Narrative,concept,narrative-terms,Literary Terms and Devices
+motif,Motif,concept,narrative-terms,Literary Terms and Devices
+theme,Theme,concept,narrative-terms,Literary Terms and Devices
+setting,Setting,concept,narrative-terms,Literary Terms and Devices
+leitmotif,Leitmotif,concept,narrative-terms,Literary Terms and Devices
+verisimilitude,Verisimilitude,concept,narrative-terms,Literary Terms and Devices
+narrative-voice,Narrative Voice,concept,narrative-terms,Literary Terms and Devices
+closure,Closure,concept,narrative-terms,Literary Terms and Devices
+rhetoric-and-criticism-terms,Rhetoric and General Terms,concept,literary-terms-and-devices,Literary Terms and Devices
+rhetoric,Rhetoric,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+ethos-pathos-logos,"Ethos, Pathos and Logos",concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+bathos,Bathos,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+burlesque,Burlesque,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+parody,Parody,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+pastiche,Pastiche,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+invective,Invective,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+lampoon,Lampoon,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+wit,Wit,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+decorum-term,Decorum,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+sublime-term,The Sublime,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+the-grotesque,The Grotesque,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+the-picturesque,The Picturesque,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+sentimentalism,Sentimentalism,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+didacticism,Didacticism,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+canon,The Literary Canon,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+genre,Genre,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+trope,Trope,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+motif-vs-theme,Archetype (literary),concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+intertext,Palimpsest,concept,rhetoric-and-criticism-terms,Literary Terms and Devices
+english-language-and-elt,"English Language, Linguistics and ELT",area,,"English Language, Linguistics and ELT"
+linguistics,Linguistics,concept,english-language-and-elt,"English Language, Linguistics and ELT"
+phonetics,Phonetics,concept,linguistics,"English Language, Linguistics and ELT"
+phonology,Phonology,concept,linguistics,"English Language, Linguistics and ELT"
+morphology-linguistics,Morphology,concept,linguistics,"English Language, Linguistics and ELT"
+syntax,Syntax,concept,linguistics,"English Language, Linguistics and ELT"
+semantics,Semantics,concept,linguistics,"English Language, Linguistics and ELT"
+pragmatics,Pragmatics,concept,linguistics,"English Language, Linguistics and ELT"
+sociolinguistics,Sociolinguistics,concept,linguistics,"English Language, Linguistics and ELT"
+psycholinguistics,Psycholinguistics,concept,linguistics,"English Language, Linguistics and ELT"
+historical-linguistics,Historical Linguistics,concept,linguistics,"English Language, Linguistics and ELT"
+applied-linguistics,Applied Linguistics,concept,linguistics,"English Language, Linguistics and ELT"
+discourse-analysis,Discourse Analysis,concept,linguistics,"English Language, Linguistics and ELT"
+stylistics,Stylistics,concept,linguistics,"English Language, Linguistics and ELT"
+phonetics-terms,Phonetics and Phonology Terms,concept,english-language-and-elt,"English Language, Linguistics and ELT"
+phoneme,Phoneme,concept,phonetics-terms,"English Language, Linguistics and ELT"
+allophone,Allophone,concept,phonetics-terms,"English Language, Linguistics and ELT"
+morpheme,Morpheme,concept,phonetics-terms,"English Language, Linguistics and ELT"
+ipa,International Phonetic Alphabet (IPA),concept,phonetics-terms,"English Language, Linguistics and ELT"
+vowel,Vowel,concept,phonetics-terms,"English Language, Linguistics and ELT"
+consonant,Consonant,concept,phonetics-terms,"English Language, Linguistics and ELT"
+diphthong,Diphthong,concept,phonetics-terms,"English Language, Linguistics and ELT"
+received-pronunciation,Received Pronunciation (RP),concept,phonetics-terms,"English Language, Linguistics and ELT"
+word-stress,Word Stress,concept,phonetics-terms,"English Language, Linguistics and ELT"
+intonation,Intonation,concept,phonetics-terms,"English Language, Linguistics and ELT"
+syllable,Syllable,concept,phonetics-terms,"English Language, Linguistics and ELT"
+minimal-pair,Minimal Pair,concept,phonetics-terms,"English Language, Linguistics and ELT"
+assimilation,Assimilation,concept,phonetics-terms,"English Language, Linguistics and ELT"
+elision,Elision,concept,phonetics-terms,"English Language, Linguistics and ELT"
+place-of-articulation,Place of Articulation,concept,phonetics-terms,"English Language, Linguistics and ELT"
+manner-of-articulation,Manner of Articulation,concept,phonetics-terms,"English Language, Linguistics and ELT"
+grammar-and-syntax,Grammar and Syntax,concept,english-language-and-elt,"English Language, Linguistics and ELT"
+noam-chomsky,Noam Chomsky,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+transformational-grammar,Transformational Generative Grammar,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+universal-grammar,Universal Grammar,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+deep-and-surface-structure,Deep and Surface Structure,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+m-a-k-halliday,M. A. K. Halliday,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+systemic-functional-grammar,Systemic Functional Grammar,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+traditional-grammar,Traditional Grammar,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+structural-grammar,Structural Grammar,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+ferdinand-saussure-linguistics,Saussure and Structural Linguistics,concept,grammar-and-syntax,"English Language, Linguistics and ELT"
+english-language-history,History and Varieties of English,concept,english-language-and-elt,"English Language, Linguistics and ELT"
+history-of-english-language,History of the English Language,concept,english-language-history,"English Language, Linguistics and ELT"
+old-english-language,Old English (language),concept,english-language-history,"English Language, Linguistics and ELT"
+middle-english-language,Middle English (language),concept,english-language-history,"English Language, Linguistics and ELT"
+great-vowel-shift,The Great Vowel Shift,concept,english-language-history,"English Language, Linguistics and ELT"
+standardisation-of-english,Standardisation of English,concept,english-language-history,"English Language, Linguistics and ELT"
+world-englishes,World Englishes,concept,english-language-history,"English Language, Linguistics and ELT"
+indian-english,Indian English,concept,english-language-history,"English Language, Linguistics and ELT"
+pidgin-and-creole,Pidgin and Creole,concept,english-language-history,"English Language, Linguistics and ELT"
+dialect,Dialect,concept,english-language-history,"English Language, Linguistics and ELT"
+register,Register,concept,english-language-history,"English Language, Linguistics and ELT"
+lingua-franca,Lingua Franca,concept,english-language-history,"English Language, Linguistics and ELT"
+elt,English Language Teaching (ELT),concept,english-language-and-elt,"English Language, Linguistics and ELT"
+grammar-translation-method,Grammar-Translation Method,concept,elt,"English Language, Linguistics and ELT"
+direct-method,Direct Method,concept,elt,"English Language, Linguistics and ELT"
+audio-lingual-method,Audio-Lingual Method,concept,elt,"English Language, Linguistics and ELT"
+communicative-language-teaching,Communicative Language Teaching (CLT),concept,elt,"English Language, Linguistics and ELT"
+task-based-language-teaching,Task-Based Language Teaching,concept,elt,"English Language, Linguistics and ELT"
+the-silent-way,The Silent Way,concept,elt,"English Language, Linguistics and ELT"
+suggestopedia,Suggestopedia,concept,elt,"English Language, Linguistics and ELT"
+total-physical-response,Total Physical Response,concept,elt,"English Language, Linguistics and ELT"
+second-language-acquisition,Second Language Acquisition (SLA),concept,elt,"English Language, Linguistics and ELT"
+english-for-specific-purposes,English for Specific Purposes (ESP),concept,elt,"English Language, Linguistics and ELT"
+lsrw-skills,LSRW Skills,concept,elt,"English Language, Linguistics and ELT"
+bblooms-taxonomy,Bloom's Taxonomy,concept,elt,"English Language, Linguistics and ELT"
+krashen-input-hypothesis,Krashen's Input Hypothesis,concept,elt,"English Language, Linguistics and ELT"
+language-testing,Language Testing and Evaluation,concept,elt,"English Language, Linguistics and ELT"
+research-methodology,Research Methods and Materials,area,,Research Methods and Materials
+research-basics,Research Basics,concept,research-methodology,Research Methods and Materials
+what-is-research,Nature and Purpose of Research,concept,research-basics,Research Methods and Materials
+hypothesis,Hypothesis,concept,research-basics,Research Methods and Materials
+research-question,Research Question,concept,research-basics,Research Methods and Materials
+thesis-statement,Thesis Statement,concept,research-basics,Research Methods and Materials
+qualitative-research,Qualitative Research,concept,research-basics,Research Methods and Materials
+quantitative-research,Quantitative Research,concept,research-basics,Research Methods and Materials
+primary-sources,Primary Sources,concept,research-basics,Research Methods and Materials
+secondary-sources,Secondary Sources,concept,research-basics,Research Methods and Materials
+literature-review,Literature Review,concept,research-basics,Research Methods and Materials
+research-proposal,Research Proposal,concept,research-basics,Research Methods and Materials
+interdisciplinary-research,Interdisciplinary Research,concept,research-basics,Research Methods and Materials
+documentation-and-style,Documentation and Style,concept,research-methodology,Research Methods and Materials
+mla-style,MLA Style,concept,documentation-and-style,Research Methods and Materials
+apa-style,APA Style,concept,documentation-and-style,Research Methods and Materials
+chicago-style,Chicago Style,concept,documentation-and-style,Research Methods and Materials
+in-text-citation,In-text Citation,concept,documentation-and-style,Research Methods and Materials
+works-cited,Works Cited,concept,documentation-and-style,Research Methods and Materials
+bibliography,Bibliography,concept,documentation-and-style,Research Methods and Materials
+annotated-bibliography,Annotated Bibliography,concept,documentation-and-style,Research Methods and Materials
+footnotes-and-endnotes,Footnotes and Endnotes,concept,documentation-and-style,Research Methods and Materials
+plagiarism,Plagiarism,concept,documentation-and-style,Research Methods and Materials
+paraphrasing-and-quoting,Paraphrasing and Quoting,concept,documentation-and-style,Research Methods and Materials
+abstract,Abstract,concept,documentation-and-style,Research Methods and Materials
+editing-and-textual,Editing and Textual Scholarship,concept,research-methodology,Research Methods and Materials
+textual-criticism,Textual Criticism,concept,editing-and-textual,Research Methods and Materials
+editing,Scholarly Editing,concept,editing-and-textual,Research Methods and Materials
+manuscript,Manuscript,concept,editing-and-textual,Research Methods and Materials
+variorum-edition,Variorum Edition,concept,editing-and-textual,Research Methods and Materials
+quarto-and-folio,Quarto and Folio,concept,editing-and-textual,Research Methods and Materials
+copy-text,Copy-text,concept,editing-and-textual,Research Methods and Materials
+digital-humanities,Digital Humanities,concept,editing-and-textual,Research Methods and Materials

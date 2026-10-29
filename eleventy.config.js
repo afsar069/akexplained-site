@@ -13,7 +13,16 @@ const NEW_FOOTER = base.slice(
   base.indexOf("</footer>") + "</footer>".length
 );
 
+const checkTopics = require("./tools/check-topics.js");
+
 module.exports = function (eleventyConfig) {
+  // Publish-time safety: every question's topicId must exist in the master
+  // taxonomy, and no two questions may share an id. Throwing fails the build.
+  eleventyConfig.on("eleventy.before", function () {
+    const r = checkTopics(__dirname);
+    console.log("[check-topics] " + r.files + " question files checked against " + r.validTopics + " valid topic ids — OK");
+  });
+
   // Article ke upar "X min read" dikhane ke liye. 200 words/minute
   // aam padhne ki raftaar hai.
   eleventyConfig.addFilter("readingTime", function (content) {
@@ -93,7 +102,8 @@ module.exports = function (eleventyConfig) {
       out = out.replace("</body>",
         '<script src="/assets/supabase-2.118.0.js" defer></script>\n' +
         '<script src="/assets/supabase-config.js" defer></script>\n' +
-        '<script src="/assets/auth.js" defer></script>\n</body>');
+        '<script src="/assets/auth.js" defer></script>\n' +
+        '<script src="/assets/track.js" defer></script>\n</body>');
     }
 
     return out;

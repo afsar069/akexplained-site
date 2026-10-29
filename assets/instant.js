@@ -350,6 +350,13 @@
     write(KEY, stats);
     write(RUN, run);
     markAnswer(item, k, true);
+    // Logged-in users: record this answer in the DB (fire-and-forget).
+    // question_id = q.id (stable, never index-based). Guests: localStorage only.
+    try {
+      if (window.akTrack) window.akTrack.record({
+        questionId: q.id, topicId: q.topicId || null, isCorrect: ok, source: 'daily'
+      });
+    } catch (e) { /* never break the quiz */ }
   });
 
   el.next.addEventListener('click', function () {

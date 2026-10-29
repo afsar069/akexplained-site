@@ -840,6 +840,24 @@
       return n + (st.pick[i] !== undefined && st.pick[i] !== q.correct_option_id ? 1 : 0);
     }, 0);
     save();
+    // Logged-in users: record one attempt per answered question (fire-and-forget).
+    // question_id = q.id (stable, assigned per question; never the array index).
+    try {
+      if (window.akTrack) {
+        var rows = [];
+        Q.forEach(function (q, i) {
+          if (st.pick[i] === undefined) return;        // unanswered: skip
+          if (!q || !q.id) return;                     // need a stable id
+          rows.push({
+            questionId: q.id,
+            topicId: q.topicId || null,
+            isCorrect: st.pick[i] === q.correct_option_id,
+            source: 'cbt'
+          });
+        });
+        window.akTrack.recordMany(rows);
+      }
+    } catch (e) { /* never break the quiz */ }
     showResult();
     window.scrollTo(0, 0);
   }
