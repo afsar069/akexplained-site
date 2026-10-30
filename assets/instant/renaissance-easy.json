@@ -14,7 +14,9 @@
     "The Faerie Queene"
    ],
    "correct_option_id": 3,
-   "explanation": "Edmund Spenser composed The Faerie Queene to fashion a noble gentleman and celebrate Queen Elizabeth I."
+   "explanation": "Edmund Spenser composed The Faerie Queene to fashion a noble gentleman and celebrate Queen Elizabeth I.",
+   "topicId": "the-faerie-queene",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-02",
@@ -26,7 +28,9 @@
     "Edmund Spenser"
    ],
    "correct_option_id": 2,
-   "explanation": "Sir Philip Sidney wrote An Apology for Poetry around 1580 to defend imaginative poetry against puritan attacks."
+   "explanation": "Sir Philip Sidney wrote An Apology for Poetry around 1580 to defend imaginative poetry against puritan attacks.",
+   "topicId": "an-apology-for-poetry",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-03",
@@ -38,7 +42,9 @@
     "Thomas Kyd"
    ],
    "correct_option_id": 0,
-   "explanation": "Marlowe's mighty line transformed unrhymed iambic pentameter into the standard language of Elizabethan drama."
+   "explanation": "Marlowe's mighty line transformed unrhymed iambic pentameter into the standard language of Elizabethan drama.",
+   "topicId": "tamburlaine",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-04",
@@ -50,7 +56,9 @@
     "The University Wits"
    ],
    "correct_option_id": 3,
-   "explanation": "The University Wits included Marlowe, Lyly, Greene, Peele, Lodge, Nashe, and Kyd, shaping Elizabethan theater."
+   "explanation": "The University Wits included Marlowe, Lyly, Greene, Peele, Lodge, Nashe, and Kyd, shaping Elizabethan theater.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-05",
@@ -62,7 +70,9 @@
     "Christopher Marlowe"
    ],
    "correct_option_id": 2,
-   "explanation": "Thomas Kyd established the revenge tragedy conventions of murder, ghosts, feigned madness, and play-within-a-play."
+   "explanation": "Thomas Kyd established the revenge tragedy conventions of murder, ghosts, feigned madness, and play-within-a-play.",
+   "topicId": "the-spanish-tragedy",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-06",
@@ -74,7 +84,9 @@
     "John Lyly"
    ],
    "correct_option_id": 3,
-   "explanation": "John Lyly popularized Euphuism, marked by balanced antitheses, alliteration, and rhetorical similes."
+   "explanation": "John Lyly popularized Euphuism, marked by balanced antitheses, alliteration, and rhetorical similes.",
+   "topicId": "john-lyly",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-07",
@@ -86,7 +98,9 @@
     "William Shakespeare"
    ],
    "correct_option_id": 2,
-   "explanation": "Christopher Marlowe composed Doctor Faustus around 1588 to 1592, exploring the limits of human ambition and knowledge."
+   "explanation": "Christopher Marlowe composed Doctor Faustus around 1588 to 1592, exploring the limits of human ambition and knowledge.",
+   "topicId": "doctor-faustus",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-08",
@@ -98,7 +112,9 @@
     "100 sonnets"
    ],
    "correct_option_id": 2,
-   "explanation": "Thorpe's 1609 quarto contains 154 sonnets by Shakespeare, followed by the longer poem A Lover's Complaint."
+   "explanation": "Thorpe's 1609 quarto contains 154 sonnets by Shakespeare, followed by the longer poem A Lover's Complaint.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-09",
@@ -110,7 +126,9 @@
     "The Children of the Chapel"
    ],
    "correct_option_id": 1,
-   "explanation": "Upon James I's accession, Shakespeare's acting company was awarded royal patronage as The King's Men."
+   "explanation": "Upon James I's accession, Shakespeare's acting company was awarded royal patronage as The King's Men.",
+   "topicId": "jacobean-era",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-10",
@@ -122,7 +140,9 @@
     "The Swan Theatre"
    ],
    "correct_option_id": 0,
-   "explanation": "The Globe was built in 1599 using timber from The Theatre, serving as the chief venue for Shakespeare's masterpieces."
+   "explanation": "The Globe was built in 1599 using timber from The Theatre, serving as the chief venue for Shakespeare's masterpieces.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-11",
@@ -134,7 +154,9 @@
     "John Ford"
    ],
    "correct_option_id": 2,
-   "explanation": "John Webster achieved renown for his dark masterpieces probing corruption, court intrigue, and human dignity."
+   "explanation": "John Webster achieved renown for his dark masterpieces probing corruption, court intrigue, and human dignity.",
+   "topicId": "john-webster",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-12",
@@ -146,7 +168,9 @@
     "William Shakespeare"
    ],
    "correct_option_id": 2,
-   "explanation": "Ben Jonson based his comedy on the medical theory of four bodily humours governing human temperament."
+   "explanation": "Ben Jonson based his comedy on the medical theory of four bodily humours governing human temperament.",
+   "topicId": "every-man-in-his-humour",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-13",
@@ -158,7 +182,9 @@
     "The Geneva Bible"
    ],
    "correct_option_id": 0,
-   "explanation": "The King James Bible, or Authorized Version of 1611, profoundly enriched English literary prose and idiom."
+   "explanation": "The King James Bible, or Authorized Version of 1611, profoundly enriched English literary prose and idiom.",
+   "topicId": "king-james-bible",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-14",
@@ -170,7 +196,9 @@
     "Francis Bacon"
    ],
    "correct_option_id": 3,
-   "explanation": "Francis Bacon adapted Montaigne's essay form into terse, aphoristic English meditations on civil life."
+   "explanation": "Francis Bacon adapted Montaigne's essay form into terse, aphoristic English meditations on civil life.",
+   "topicId": "francis-bacon",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-15",
@@ -182,7 +210,9 @@
     "Andrew Marvell"
    ],
    "correct_option_id": 0,
-   "explanation": "John Donne revitalized English verse through passionate intellect, colloquial diction, and complex conceits."
+   "explanation": "John Donne revitalized English verse through passionate intellect, colloquial diction, and complex conceits.",
+   "topicId": "john-donne",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-16",
@@ -194,7 +224,9 @@
     "Samuel Johnson"
    ],
    "correct_option_id": 3,
-   "explanation": "Dr. Samuel Johnson coined the critical term in Lives of the Most Eminent English Poets in 1779."
+   "explanation": "Dr. Samuel Johnson coined the critical term in Lives of the Most Eminent English Poets in 1779.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "rn-e-17",
@@ -206,7 +238,9 @@
     "Epic Simile"
    ],
    "correct_option_id": 1,
-   "explanation": "A metaphysical conceit is an elaborate, ingenious metaphor establishing unexpected parallels between disparate realms."
+   "explanation": "A metaphysical conceit is an elaborate, ingenious metaphor establishing unexpected parallels between disparate realms.",
+   "topicId": "metaphysical-conceit",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-18",
@@ -218,7 +252,9 @@
     "Thomas Traherne"
    ],
    "correct_option_id": 2,
-   "explanation": "George Herbert's The Temple contains intensely spiritual, beautifully structured devotional lyrics."
+   "explanation": "George Herbert's The Temple contains intensely spiritual, beautifully structured devotional lyrics.",
+   "topicId": "the-temple",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-19",
@@ -230,7 +266,9 @@
     "Spenserian Poets"
    ],
    "correct_option_id": 1,
-   "explanation": "Cavalier poets like Herrick, Lovelace, Suckling, and Carew wrote elegant, carpe diem court poetry."
+   "explanation": "Cavalier poets like Herrick, Lovelace, Suckling, and Carew wrote elegant, carpe diem court poetry.",
+   "topicId": "cavalier-poets",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-20",
@@ -242,7 +280,9 @@
     "Thomas Carew"
    ],
    "correct_option_id": 0,
-   "explanation": "Robert Herrick's famous lyric urges youth to seize love and pleasure while youthful beauty endures."
+   "explanation": "Robert Herrick's famous lyric urges youth to seize love and pleasure while youthful beauty endures.",
+   "topicId": "robert-herrick",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-21",
@@ -254,7 +294,9 @@
     "Tractate of Education"
    ],
    "correct_option_id": 1,
-   "explanation": "Areopagitica argues against the Licensing Order of 1643, defending unlicensed printing and free inquiry."
+   "explanation": "Areopagitica argues against the Licensing Order of 1643, defending unlicensed printing and free inquiry.",
+   "topicId": "areopagitica",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-22",
@@ -266,7 +308,9 @@
     "Paradise Lost"
    ],
    "correct_option_id": 3,
-   "explanation": "Paradise Lost narrates the rebellion of Satan, the war in Heaven, and the Fall of Adam and Eve."
+   "explanation": "Paradise Lost narrates the rebellion of Satan, the war in Heaven, and the Fall of Adam and Eve.",
+   "topicId": "paradise-lost",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-e-23",
@@ -278,7 +322,9 @@
     "1638"
    ],
    "correct_option_id": 1,
-   "explanation": "Parliament closed the public theaters in September 1642 due to Puritan religious hostility and civil war."
+   "explanation": "Parliament closed the public theaters in September 1642 due to Puritan religious hostility and civil war.",
+   "topicId": "caroline",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-24",
@@ -290,7 +336,9 @@
     "Charles I"
    ],
    "correct_option_id": 3,
-   "explanation": "The trial and execution of King Charles I in 1649 inaugurated the revolutionary English Republic."
+   "explanation": "The trial and execution of King Charles I in 1649 inaugurated the revolutionary English Republic.",
+   "topicId": "caroline",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-25",
@@ -302,7 +350,9 @@
     "Thomas Fairfax"
    ],
    "correct_option_id": 0,
-   "explanation": "Oliver Cromwell commanded the parliamentary New Model Army and governed Britain as Lord Protector."
+   "explanation": "Oliver Cromwell commanded the parliamentary New Model Army and governed Britain as Lord Protector.",
+   "topicId": "commonwealth",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-e-26",
@@ -314,7 +364,9 @@
     "1688"
    ],
    "correct_option_id": 0,
-   "explanation": "The Restoration of 1660 reopened theaters and established the Neoclassical or Restoration literary era."
+   "explanation": "The Restoration of 1660 reopened theaters and established the Neoclassical or Restoration literary era.",
+   "topicId": "commonwealth",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-e-27",
@@ -326,7 +378,9 @@
     "Amoretti"
    ],
    "correct_option_id": 1,
-   "explanation": "The Shepheardes Calender was published under the pseudonym Immerito and dedicated to Sir Philip Sidney."
+   "explanation": "The Shepheardes Calender was published under the pseudonym Immerito and dedicated to Sir Philip Sidney.",
+   "topicId": "the-shepheardes-calender",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-28",
@@ -338,7 +392,9 @@
     "Delia"
    ],
    "correct_option_id": 1,
-   "explanation": "Amoretti, meaning little love poems, records Spenser's joyful love, culminating in his Epithalamion."
+   "explanation": "Amoretti, meaning little love poems, records Spenser's joyful love, culminating in his Epithalamion.",
+   "topicId": "amoretti",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-29",
@@ -350,7 +406,9 @@
     "Idea"
    ],
    "correct_option_id": 0,
-   "explanation": "Astrophel and Stella charts Astrophel's star-lover passion for Stella, modeled on Lady Penelope Devereux."
+   "explanation": "Astrophel and Stella charts Astrophel's star-lover passion for Stella, modeled on Lady Penelope Devereux.",
+   "topicId": "philip-sidney",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-30",
@@ -362,7 +420,9 @@
     "George Peele"
    ],
    "correct_option_id": 2,
-   "explanation": "Robert Greene's dying tract contains the earliest documented contemporary allusion to Shakespeare as a London playwright."
+   "explanation": "Robert Greene's dying tract contains the earliest documented contemporary allusion to Shakespeare as a London playwright.",
+   "topicId": "robert-greene",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-31",
@@ -374,7 +434,9 @@
     "William Camden's Britannia"
    ],
    "correct_option_id": 2,
-   "explanation": "Holinshed's Chronicles of England, Scotland, and Ireland supplied plots and historical data for Shakespeare."
+   "explanation": "Holinshed's Chronicles of England, Scotland, and Ireland supplied plots and historical data for Shakespeare.",
+   "topicId": "macbeth",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-32",
@@ -386,7 +448,9 @@
     "The Phoenix and the Turtle"
    ],
    "correct_option_id": 0,
-   "explanation": "Venus and Adonis was Shakespeare's first printed literary publication, winning immense popular acclaim."
+   "explanation": "Venus and Adonis was Shakespeare's first printed literary publication, winning immense popular acclaim.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-33",
@@ -398,7 +462,9 @@
     "Volpone, or The Fox"
    ],
    "correct_option_id": 3,
-   "explanation": "Volpone feigns mortal illness to dupe greedy legacy hunters Voltore, Corbaccio, and Corvino."
+   "explanation": "Volpone feigns mortal illness to dupe greedy legacy hunters Voltore, Corbaccio, and Corvino.",
+   "topicId": "volpone",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-34",
@@ -410,7 +476,9 @@
     "The Devil is an Ass"
    ],
    "correct_option_id": 1,
-   "explanation": "The Alchemist ruthlessly mocks greed and gullibility through mock-scientific alchemy."
+   "explanation": "The Alchemist ruthlessly mocks greed and gullibility through mock-scientific alchemy.",
+   "topicId": "the-alchemist",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-35",
@@ -422,7 +490,9 @@
     "The Changeling"
    ],
    "correct_option_id": 3,
-   "explanation": "The Changeling dramatises Beatrice-Joanna hiring De Flores to murder her suitor, becoming bound to her accomplice."
+   "explanation": "The Changeling dramatises Beatrice-Joanna hiring De Flores to murder her suitor, becoming bound to her accomplice.",
+   "topicId": "the-changeling",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-36",
@@ -434,7 +504,9 @@
     "Castruchio"
    ],
    "correct_option_id": 1,
-   "explanation": "Bosola serves as spy and executioner, eventually seeking remorseful vengeance against his corrupt masters."
+   "explanation": "Bosola serves as spy and executioner, eventually seeking remorseful vengeance against his corrupt masters.",
+   "topicId": "the-duchess-of-malfi",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-e-37",
@@ -446,7 +518,9 @@
     "The Definition of Love"
    ],
    "correct_option_id": 0,
-   "explanation": "Marvell's masterpiece uses vivid metaphysical imagery to urge immediate consumption of love against flying Time."
+   "explanation": "Marvell's masterpiece uses vivid metaphysical imagery to urge immediate consumption of love against flying Time.",
+   "topicId": "to-his-coy-mistress",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-e-38",
@@ -458,7 +532,9 @@
     "To Lucasta, Going to the Wars"
    ],
    "correct_option_id": 2,
-   "explanation": "Lovelace wrote this celebrated lyric while detained in the Gatehouse Prison at Westminster in 1642."
+   "explanation": "Lovelace wrote this celebrated lyric while detained in the Gatehouse Prison at Westminster in 1642.",
+   "topicId": "richard-lovelace",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-39",
@@ -470,7 +546,9 @@
     "Robert Herrick"
    ],
    "correct_option_id": 1,
-   "explanation": "Sir John Suckling was a wealthy courtier, playwright of Aglaura, and inventor of the card game Cribbage."
+   "explanation": "Sir John Suckling was a wealthy courtier, playwright of Aglaura, and inventor of the card game Cribbage.",
+   "topicId": "john-suckling",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-40",
@@ -482,7 +560,9 @@
     "Leviathan"
    ],
    "correct_option_id": 3,
-   "explanation": "Hobbes's Leviathan advocates a social contract surrendering rights to an absolute sovereign to prevent anarchy."
+   "explanation": "Hobbes's Leviathan advocates a social contract surrendering rights to an absolute sovereign to prevent anarchy.",
+   "topicId": "leviathan",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-e-41",
@@ -494,7 +574,9 @@
     "Christian Morals"
    ],
    "correct_option_id": 1,
-   "explanation": "Religio Medici explores the religious beliefs and tolerant scientific curiosity of a practicing doctor."
+   "explanation": "Religio Medici explores the religious beliefs and tolerant scientific curiosity of a practicing doctor.",
+   "topicId": "religio-medici",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-42",
@@ -506,7 +588,9 @@
     "Comus"
    ],
    "correct_option_id": 0,
-   "explanation": "Milton's Lycidas mourns his fellow poet while delivering a fierce indictment of the corrupt English clergy."
+   "explanation": "Milton's Lycidas mourns his fellow poet while delivering a fierce indictment of the corrupt English clergy.",
+   "topicId": "lycidas",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-43",
@@ -518,7 +602,9 @@
     "The Vision of the Twelve Goddesses"
    ],
    "correct_option_id": 0,
-   "explanation": "Milton's masque depicts the Lady using temperance and virtue to withstand the sensual sorceries of Comus."
+   "explanation": "Milton's masque depicts the Lady using temperance and virtue to withstand the sensual sorceries of Comus.",
+   "topicId": "john-milton",
+   "periodId": "caroline"
   },
   {
    "id": "rn-e-44",
@@ -530,7 +616,9 @@
     "Sir Walter Raleigh"
    ],
    "correct_option_id": 3,
-   "explanation": "Sir Walter Raleigh was a versatile courtier and adventurer, imprisoned by James I and beheaded in 1618."
+   "explanation": "Sir Walter Raleigh was a versatile courtier and adventurer, imprisoned by James I and beheaded in 1618.",
+   "topicId": "walter-raleigh",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-45",
@@ -542,7 +630,9 @@
     "Richard Hooker"
    ],
    "correct_option_id": 3,
-   "explanation": "Richard Hooker provided the theological and philosophical defense of the Anglican Via Media against Puritanism."
+   "explanation": "Richard Hooker provided the theological and philosophical defense of the Anglican Via Media against Puritanism.",
+   "topicId": "richard-hooker",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-46",
@@ -554,7 +644,9 @@
     "Samuel Purchas"
    ],
    "correct_option_id": 0,
-   "explanation": "Richard Hakluyt's accounts of global sea voyages promoted English exploration, trade, and colonisation."
+   "explanation": "Richard Hakluyt's accounts of global sea voyages promoted English exploration, trade, and colonisation.",
+   "topicId": "richard-hakluyt",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-47",
@@ -566,7 +658,9 @@
     "The Four PP"
    ],
    "correct_option_id": 2,
-   "explanation": "Nicholas Udall adapted Plautus's Braggart Soldier to create the first five-act English comedy."
+   "explanation": "Nicholas Udall adapted Plautus's Braggart Soldier to create the first five-act English comedy.",
+   "topicId": "nicholas-udall",
+   "periodId": "early-tudor"
   },
   {
    "id": "rn-e-48",
@@ -578,7 +672,9 @@
     "Tamburlaine the Great"
    ],
    "correct_option_id": 1,
-   "explanation": "Gorboduc adapted Senecan tragedy and unrhymed blank verse to warn against political disunity."
+   "explanation": "Gorboduc adapted Senecan tragedy and unrhymed blank verse to warn against political disunity.",
+   "topicId": "blank-verse",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-e-49",
@@ -590,7 +686,9 @@
     "Empiricism"
    ],
    "correct_option_id": 2,
-   "explanation": "Renaissance Humanism celebrated human dignity, secular learning, classical rhetoric, and scientific enquiry."
+   "explanation": "Renaissance Humanism celebrated human dignity, secular learning, classical rhetoric, and scientific enquiry.",
+   "topicId": "early-tudor",
+   "periodId": "early-tudor"
   },
   {
    "id": "rn-e-50",
@@ -602,7 +700,9 @@
     "The French Fleet"
    ],
    "correct_option_id": 1,
-   "explanation": "The defeat of King Philip II's Armada secured Protestant England and fueled patriotic confidence."
+   "explanation": "The defeat of King Philip II's Armada secured Protestant England and fueled patriotic confidence.",
+   "topicId": "elizabethan",
+   "periodId": "elizabethan"
   }
  ]
 }

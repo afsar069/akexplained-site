@@ -62,11 +62,19 @@ def is_descendant(node, ancestor):
     return ancestor in tx.chain(node) and node != ancestor
 
 
+DECISIONS_PATH = f'{HERE}/reports/overlap-period-decisions.json'
+decisions = {r['id']: r['periodId'] for r in json.load(open(DECISIONS_PATH, encoding='utf-8'))}
+
+
+def is_overlap_bank(d):
+    return all(q['id'] in decisions for q in d['questions'])
+
+
 rows = []          # audit rows for the summary
 if MODE == 'daily':
     for path in sorted(glob.glob(f'{ROOT}/assets/instant/*.json')):
         d = json.load(open(path, encoding='utf-8'))
-        if not all('periodId' in q for q in d['questions']):
+        if is_overlap_bank(d) or not all('periodId' in q for q in d['questions']):
             continue                                   # an overlap bank: handled by `overlap`
         qs = []
         for q in d['questions']:
@@ -76,11 +84,10 @@ if MODE == 'daily':
         d['questions'] = qs
         dump(path, d, 1)
 elif MODE == 'overlap':
-    decisions = {r['id']: r['periodId'] for r in json.load(open(f'{HERE}/reports/overlap-period-decisions.json', encoding='utf-8'))}
     seen = 0
     for path in sorted(glob.glob(f'{ROOT}/assets/instant/*.json')):
         d = json.load(open(path, encoding='utf-8'))
-        if any('periodId' in q for q in d['questions']):
+        if not is_overlap_bank(d):
             continue
         qs = []
         for q in d['questions']:

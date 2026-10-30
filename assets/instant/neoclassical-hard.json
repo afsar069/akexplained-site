@@ -14,7 +14,9 @@
     "Lisideius"
    ],
    "correct_option_id": 1,
-   "explanation": "Neander meaning the new man voices Dryden own views praising Shakespeare comprehensive soul and English tragi-comedy."
+   "explanation": "Neander meaning the new man voices Dryden own views praising Shakespeare comprehensive soul and English tragi-comedy.",
+   "topicId": "john-dryden",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-02",
@@ -26,7 +28,9 @@
     "Sir Robert Howard"
    ],
    "correct_option_id": 3,
-   "explanation": "Crites represents Sir Robert Howard Eugenius is Lord Buckhurst and Lisideius is Sir Charles Sedley."
+   "explanation": "Crites represents Sir Robert Howard Eugenius is Lord Buckhurst and Lisideius is Sir Charles Sedley.",
+   "topicId": "john-dryden",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-03",
@@ -38,7 +42,9 @@
     "The Gondibert or heroic stanza"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden adopted the four-line iambic pentameter stanza rhyming abab made famous in Davenant Gondibert."
+   "explanation": "Dryden adopted the four-line iambic pentameter stanza rhyming abab made famous in Davenant Gondibert.",
+   "topicId": "john-dryden",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-04",
@@ -50,7 +56,9 @@
     "George Villiers, 2nd Duke of Buckingham"
    ],
    "correct_option_id": 3,
-   "explanation": "Zimri represents George Villiers 2nd Duke of Buckingham who had mocked Dryden in the 1671 play The Rehearsal."
+   "explanation": "Zimri represents George Villiers 2nd Duke of Buckingham who had mocked Dryden in the 1671 play The Rehearsal.",
+   "topicId": "george-villiers",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-05",
@@ -62,7 +70,9 @@
     "Elkanah Settle"
    ],
    "correct_option_id": 0,
-   "explanation": "Corah represents Titus Oates the chief fabricator and perjured witness of the anti-Catholic Popish Plot."
+   "explanation": "Corah represents Titus Oates the chief fabricator and perjured witness of the anti-Catholic Popish Plot.",
+   "topicId": "absalom-and-achitophel",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-06",
@@ -74,7 +84,9 @@
     "An Epistle to the Whigs on Poetic Succession"
    ],
    "correct_option_id": 1,
-   "explanation": "The 1682 quarto title page reads Mac Flecknoe or a Satyr upon the True-Blew-Protestant Poet T.S."
+   "explanation": "The 1682 quarto title page reads Mac Flecknoe or a Satyr upon the True-Blew-Protestant Poet T.S.",
+   "topicId": "mac-flecknoe",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-07",
@@ -86,7 +98,9 @@
     "Religio Laici"
    ],
    "correct_option_id": 2,
-   "explanation": "In The Hind and the Panther the milk-white Hind represents the Roman Catholic Church and the spotted Panther the Anglican Church."
+   "explanation": "In The Hind and the Panther the milk-white Hind represents the Roman Catholic Church and the spotted Panther the Anglican Church.",
+   "topicId": "the-hind-and-the-panther",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-08",
@@ -98,7 +112,9 @@
     "Sir Charles Sedley"
    ],
    "correct_option_id": 1,
-   "explanation": "Rochester A Satyr against Reason and Mankind attacks human pride and rationalism preferring animal instinct."
+   "explanation": "Rochester A Satyr against Reason and Mankind attacks human pride and rationalism preferring animal instinct.",
+   "topicId": "earl-of-rochester",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-09",
@@ -110,7 +126,9 @@
     "The Comical Revenge"
    ],
    "correct_option_id": 1,
-   "explanation": "Etherege The Man of Mode centers on the ruthless wit Dorimant and the absurd dandy Sir Fopling Flutter."
+   "explanation": "Etherege The Man of Mode centers on the ruthless wit Dorimant and the absurd dandy Sir Fopling Flutter.",
+   "topicId": "the-man-of-mode",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-10",
@@ -122,7 +140,9 @@
     "The Lucky Chance"
    ],
    "correct_option_id": 0,
-   "explanation": "Behn most successful play The Rover follows Hellena and the banished English cavalier Willmore."
+   "explanation": "Behn most successful play The Rover follows Hellena and the banished English cavalier Willmore.",
+   "topicId": "the-rover",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-11",
@@ -134,7 +154,9 @@
     "William Byam"
    ],
    "correct_option_id": 3,
-   "explanation": "Historical deputy governor William Byam betrays his promise of amnesty and presides over Oroonoko execution."
+   "explanation": "Historical deputy governor William Byam betrays his promise of amnesty and presides over Oroonoko execution.",
+   "topicId": "oroonoko",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-12",
@@ -146,7 +168,9 @@
     "A royal pardon signed by King William III"
    ],
    "correct_option_id": 1,
-   "explanation": "Mirabell reveals a pre-nuptial deed conveying Arabella Fainall whole estate to him as trustee."
+   "explanation": "Mirabell reveals a pre-nuptial deed conveying Arabella Fainall whole estate to him as trustee.",
+   "topicId": "the-way-of-the-world",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-13",
@@ -158,7 +182,9 @@
     "Marmaduke Myrtle"
    ],
    "correct_option_id": 0,
-   "explanation": "Steele adopted Swift popular pseudonym Isaac Bickerstaff Esq Astrologer for The Tatler in April 1709."
+   "explanation": "Steele adopted Swift popular pseudonym Isaac Bickerstaff Esq Astrologer for The Tatler in April 1709.",
+   "topicId": "the-tatler",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-14",
@@ -170,7 +196,9 @@
     "Sir Andrew Freeport"
    ],
    "correct_option_id": 3,
-   "explanation": "Sir Andrew Freeport is a wealthy London merchant who voices Whig commercial optimism opposite Sir Roger Tory views."
+   "explanation": "Sir Andrew Freeport is a wealthy London merchant who voices Whig commercial optimism opposite Sir Roger Tory views.",
+   "topicId": "the-spectator",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-15",
@@ -182,7 +210,9 @@
     "The Scriblerus Club"
    ],
    "correct_option_id": 3,
-   "explanation": "The Scriblerus Club met in Arbuthnot rooms at St James Palace to mock pedantry through Martinus Scriblerus."
+   "explanation": "The Scriblerus Club met in Arbuthnot rooms at St James Palace to mock pedantry through Martinus Scriblerus.",
+   "topicId": "john-arbuthnot",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-16",
@@ -194,7 +224,9 @@
     "Bernard Mandeville"
    ],
    "correct_option_id": 2,
-   "explanation": "Dr John Arbuthnot popularized the honest clothier John Bull in The History of John Bull in 1712."
+   "explanation": "Dr John Arbuthnot popularized the honest clothier John Bull in The History of John Bull in 1712.",
+   "topicId": "john-arbuthnot",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-17",
@@ -206,7 +238,9 @@
     "The Theory of Moral Sentiments"
    ],
    "correct_option_id": 2,
-   "explanation": "Mandeville The Fable of the Bees or Private Vices Publick Benefits argued that self-interest drives economic prosperity."
+   "explanation": "Mandeville The Fable of the Bees or Private Vices Publick Benefits argued that self-interest drives economic prosperity.",
+   "topicId": "augustan",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-18",
@@ -218,7 +252,9 @@
     "The Blount and Caryll families"
    ],
    "correct_option_id": 0,
-   "explanation": "Robert Petre 7th Baron Petre had cut a lock of hair from Arabella Fermor causing a rift between the families."
+   "explanation": "Robert Petre 7th Baron Petre had cut a lock of hair from Arabella Fermor causing a rift between the families.",
+   "topicId": "the-rape-of-the-lock",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-19",
@@ -230,7 +266,9 @@
     "Le Comte de Gabalis"
    ],
    "correct_option_id": 3,
-   "explanation": "In the 1714 five-canto expansion Pope drew his elemental spirits from Villars 1670 work Le Comte de Gabalis."
+   "explanation": "In the 1714 five-canto expansion Pope drew his elemental spirits from Villars 1670 work Le Comte de Gabalis.",
+   "topicId": "augustan",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-20",
@@ -242,7 +280,9 @@
     "1728"
    ],
    "correct_option_id": 0,
-   "explanation": "Pope added Clarissa speech modeled on Sarpedon speech in Homer Iliad to his collected Works of 1717."
+   "explanation": "Pope added Clarissa speech modeled on Sarpedon speech in Homer Iliad to his collected Works of 1717.",
+   "topicId": "clarissa",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-21",
@@ -254,7 +294,9 @@
     "Colley Cibber"
    ],
    "correct_option_id": 3,
-   "explanation": "In the 1743 four-book Dunciad Pope installed Poet Laureate Colley Cibber as the new King of Dunces."
+   "explanation": "In the 1743 four-book Dunciad Pope installed Poet Laureate Colley Cibber as the new King of Dunces.",
+   "topicId": "the-dunciad",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-22",
@@ -266,7 +308,9 @@
     "Sporus"
    ],
    "correct_option_id": 2,
-   "explanation": "Pope portrays Addison as Atticus who would damn with faint praise and sit attentive to his own applause."
+   "explanation": "Pope portrays Addison as Atticus who would damn with faint praise and sit attentive to his own applause.",
+   "topicId": "epistle-to-dr-arbuthnot",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-23",
@@ -278,7 +322,9 @@
     "Thomas Wharton"
    ],
    "correct_option_id": 1,
-   "explanation": "Sporus is a biting attack on John Lord Hervey confidant of Queen Caroline and ally of Lady Mary Wortley Montagu."
+   "explanation": "Sporus is a biting attack on John Lord Hervey confidant of Queen Caroline and ally of Lady Mary Wortley Montagu.",
+   "topicId": "epistle-to-dr-arbuthnot",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-24",
@@ -290,7 +336,9 @@
     "William Pulteney, Earl of Bath"
    ],
    "correct_option_id": 0,
-   "explanation": "Pope opens An Essay on Man addressing his friend and mentor Awake my St John leave all meaner things."
+   "explanation": "Pope opens An Essay on Man addressing his friend and mentor Awake my St John leave all meaner things.",
+   "topicId": "an-essay-on-man",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-25",
@@ -302,7 +350,9 @@
     "The Ant and the Grasshopper"
    ],
    "correct_option_id": 1,
-   "explanation": "The Bee gathering nectar from nature represents the Ancients producing sweetness and light while the Spider spins cobwebs from itself."
+   "explanation": "The Bee gathering nectar from nature represents the Ancients producing sweetness and light while the Spider spins cobwebs from itself.",
+   "topicId": "the-battle-of-the-books",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-26",
@@ -314,7 +364,9 @@
     "Archbishop William King"
    ],
    "correct_option_id": 2,
-   "explanation": "Swift pamphlets as M.B. Drapier forced the British government to withdraw William Wood patent for Wood halfpence."
+   "explanation": "Swift pamphlets as M.B. Drapier forced the British government to withdraw William Wood patent for Wood halfpence.",
+   "topicId": "jonathan-swift",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-27",
@@ -326,7 +378,9 @@
     "Blefuscu"
    ],
    "correct_option_id": 0,
-   "explanation": "Laputa is the flying island controlled by a giant lodestone whose speculative rulers require flappers to pay attention."
+   "explanation": "Laputa is the flying island controlled by a giant lodestone whose speculative rulers require flappers to pay attention.",
+   "topicId": "gullivers-travels",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-28",
@@ -338,7 +392,9 @@
     "The Flappers"
    ],
    "correct_option_id": 0,
-   "explanation": "The Struldbruggs are born with a spot on their foreheads signifying eternal life without eternal youth."
+   "explanation": "The Struldbruggs are born with a spot on their foreheads signifying eternal life without eternal youth.",
+   "topicId": "jonathan-swift",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-29",
@@ -350,7 +406,9 @@
     "John Dyer"
    ],
    "correct_option_id": 2,
-   "explanation": "James Thomson published Winter in 1726 and completed The Seasons in 1730 reviving blank-verse landscape poetry."
+   "explanation": "James Thomson published Winter in 1726 and completed The Seasons in 1730 reviving blank-verse landscape poetry.",
+   "topicId": "blank-verse",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-30",
@@ -362,7 +420,9 @@
     "The Grave"
    ],
    "correct_option_id": 2,
-   "explanation": "Edward Young The Complaint or Night-Thoughts on Life Death and Immortality was a central text of the Graveyard school."
+   "explanation": "Edward Young The Complaint or Night-Thoughts on Life Death and Immortality was a central text of the Graveyard school.",
+   "topicId": "edward-young",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-31",
@@ -374,7 +434,9 @@
     "Roger Solmes"
    ],
    "correct_option_id": 2,
-   "explanation": "John Belford is Lovelace libertine friend and confidant who becomes Clarissa protector and executor."
+   "explanation": "John Belford is Lovelace libertine friend and confidant who becomes Clarissa protector and executor.",
+   "topicId": "clarissa",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-32",
@@ -386,7 +448,9 @@
     "Henry Pitman"
    ],
    "correct_option_id": 0,
-   "explanation": "Alexander Selkirk survived alone for four years and four months on an island in the Juan Fernandez archipelago until 1709."
+   "explanation": "Alexander Selkirk survived alone for four years and four months on an island in the Juan Fernandez archipelago until 1709.",
+   "topicId": "robinson-crusoe",
+   "periodId": "augustan"
   },
   {
    "id": "nc-h-33",
@@ -398,7 +462,9 @@
     "Twenty-four books"
    ],
    "correct_option_id": 0,
-   "explanation": "Tom Jones is divided into eighteen books evenly split into six in the country six on the road and six in London."
+   "explanation": "Tom Jones is divided into eighteen books evenly split into six in the country six on the road and six in London.",
+   "topicId": "tom-jones",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-34",
@@ -410,7 +476,9 @@
     "Inventing a philosophical clock to regulate domestic gestation"
    ],
    "correct_option_id": 0,
-   "explanation": "Assisted by Corporal Trim Uncle Toby reenacts the siege of Namur and continental campaigns on his bowling green."
+   "explanation": "Assisted by Corporal Trim Uncle Toby reenacts the siege of Namur and continental campaigns on his bowling green.",
+   "topicId": "tristram-shandy",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-35",
@@ -422,7 +490,9 @@
     "The Idler"
    ],
    "correct_option_id": 1,
-   "explanation": "Johnson wrote 204 of the 208 issues of The Rambler between 1750 and 1752 establishing his moral prose style."
+   "explanation": "Johnson wrote 204 of the 208 issues of The Rambler between 1750 and 1752 establishing his moral prose style.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-36",
@@ -434,7 +504,9 @@
     "Lord Bolingbroke"
    ],
    "correct_option_id": 1,
-   "explanation": "Johnson rebuked Philip Dormer Stanhope 4th Earl of Chesterfield in February 1755 for neglecting his Dictionary until its completion."
+   "explanation": "Johnson rebuked Philip Dormer Stanhope 4th Earl of Chesterfield in February 1755 for neglecting his Dictionary until its completion.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-37",
@@ -446,7 +518,9 @@
     "Juvenal"
    ],
    "correct_option_id": 3,
-   "explanation": "London imitates Juvenal Third Satire and The Vanity of Human Wishes imitates Juvenal Tenth Satire."
+   "explanation": "London imitates Juvenal Third Satire and The Vanity of Human Wishes imitates Juvenal Tenth Satire.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-38",
@@ -458,7 +532,9 @@
     "Demetrius"
    ],
    "correct_option_id": 2,
-   "explanation": "Imlac delivers the famous Chapter 10 discourse on poetry declaring that the poet does not number the streaks of the tulip."
+   "explanation": "Imlac delivers the famous Chapter 10 discourse on poetry declaring that the poet does not number the streaks of the tulip.",
+   "topicId": "rasselas",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-39",
@@ -470,7 +546,9 @@
     "Lycidas"
    ],
    "correct_option_id": 3,
-   "explanation": "Johnson attacked the pastoral conventions of Lycidas as easy vulgar and therefore disgusting."
+   "explanation": "Johnson attacked the pastoral conventions of Lycidas as easy vulgar and therefore disgusting.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-40",
@@ -482,7 +560,9 @@
     "Ode on the Death of a Favourite Cat and Elegy"
    ],
    "correct_option_id": 1,
-   "explanation": "Walpole inaugurated his private printing press at Strawberry Hill in August 1757 with Gray Odes."
+   "explanation": "Walpole inaugurated his private printing press at Strawberry Hill in August 1757 with Gray Odes.",
+   "topicId": "thomas-gray",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-41",
@@ -494,7 +574,9 @@
     "Thomas Warton"
    ],
    "correct_option_id": 1,
-   "explanation": "William Collins published his Odes in December 1746 dated 1747 featuring Ode to Evening and Ode on the Poetical Character."
+   "explanation": "William Collins published his Odes in December 1746 dated 1747 featuring Ode to Evening and Ode on the Poetical Character.",
+   "topicId": "william-collins",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-42",
@@ -506,7 +588,9 @@
     "The Hilliad"
    ],
    "correct_option_id": 2,
-   "explanation": "Jubilate Agno or Rejoice in the Lamb includes the famous passage celebrating Smart cat Jeoffry."
+   "explanation": "Jubilate Agno or Rejoice in the Lamb includes the famous passage celebrating Smart cat Jeoffry.",
+   "topicId": "christopher-smart",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-43",
@@ -518,7 +602,9 @@
     "Hugh Blair"
    ],
    "correct_option_id": 2,
-   "explanation": "James Macpherson published Fragments of Ancient Poetry in 1760 and Fingal in 1761 claiming Ossian authorship."
+   "explanation": "James Macpherson published Fragments of Ancient Poetry in 1760 and Fingal in 1761 claiming Ossian authorship.",
+   "topicId": "james-macpherson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-44",
@@ -530,7 +616,9 @@
     "Pieces of Ancient Popular Poetry"
    ],
    "correct_option_id": 0,
-   "explanation": "Percy Reliques of Ancient English Poetry published in 1765 deeply influenced the later Romantic ballad revival."
+   "explanation": "Percy Reliques of Ancient English Poetry published in 1765 deeply influenced the later Romantic ballad revival.",
+   "topicId": "age-of-sensibility",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-45",
@@ -542,7 +630,9 @@
     "Sir Thomas Malory"
    ],
    "correct_option_id": 2,
-   "explanation": "Chatterton attributed his antique poems to Thomas Rowley an imaginary fifteenth-century priest of Bristol."
+   "explanation": "Chatterton attributed his antique poems to Thomas Rowley an imaginary fifteenth-century priest of Bristol.",
+   "topicId": "thomas-chatterton",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-46",
@@ -554,7 +644,9 @@
     "The Citizen of the World"
    ],
    "correct_option_id": 3,
-   "explanation": "Goldsmith Chinese Letters first appeared in The Public Ledger and were collected in 1762 as The Citizen of the World."
+   "explanation": "Goldsmith Chinese Letters first appeared in The Public Ledger and were collected in 1762 as The Citizen of the World.",
+   "topicId": "oliver-goldsmith",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-47",
@@ -566,7 +658,9 @@
     "The Wanderer"
    ],
    "correct_option_id": 1,
-   "explanation": "Fanny Burney published Evelina anonymously in 1778 pioneering the comedy of manners novel later perfected by Jane Austen."
+   "explanation": "Fanny Burney published Evelina anonymously in 1778 pioneering the comedy of manners novel later perfected by Jane Austen.",
+   "topicId": "evelina",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-48",
@@ -578,7 +672,9 @@
     "A Vindication of Natural Society"
    ],
    "correct_option_id": 1,
-   "explanation": "Burke 1757 treatise grounded the sublime in awe terror and obscurity shaping Gothic and Romantic aesthetics."
+   "explanation": "Burke 1757 treatise grounded the sublime in awe terror and obscurity shaping Gothic and Romantic aesthetics.",
+   "topicId": "edmund-burke",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-h-49",
@@ -590,7 +686,9 @@
     "Women were barred by royal decree from acting on the London stage after 1660"
    ],
    "correct_option_id": 3,
-   "explanation": "King Charles II royal warrant of 1662 explicitly required female roles to be played by women actresses."
+   "explanation": "King Charles II royal warrant of 1662 explicitly required female roles to be played by women actresses.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-h-50",
@@ -602,7 +700,9 @@
     "Oliver Goldsmith — 'The Vicar of Wakefield'"
    ],
    "correct_option_id": 0,
-   "explanation": "The Expedition of Humphry Clinker was written by Tobias Smollett in 1771 whereas Sterne wrote Tristram Shandy."
+   "explanation": "The Expedition of Humphry Clinker was written by Tobias Smollett in 1771 whereas Sterne wrote Tristram Shandy.",
+   "topicId": "age-of-sensibility",
+   "periodId": "age-of-sensibility"
   }
  ]
 }

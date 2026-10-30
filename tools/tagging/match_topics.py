@@ -45,6 +45,7 @@ TITLE_WORDS = {'sir', 'dr', 'doctor', 'lord', 'lady', 'mr', 'mrs', 'miss', 'ms',
 ANCHOR_BEFORE = re.compile(r"(?:(?:brother|sister|son|daughter|wife|husband|widow|nephew|niece|cousin|father|mother|heir)s? of|(?:silenc\w+|suppress\w*|censor\w*|curb\w*|persecut\w*|prosecut\w*)\s+(?:the\s+)?(?:[\w-]+\s+){0,3}of)\s+(?:the\s+)?(?:(?:late|deceased|great|famous|fellow|young|elder|younger)\s+)?(?:(?:poet|dramatist|playwright|novelist|writer|critic|author|diarist|painter|actor)\s+)?(?:(?:Sir|Dr|Lord|Lady)\.?\s+)?$", re.I)
 COMPARE_BEFORE = re.compile(r"(?:since|like|unlike|than|following|inspired by|influenced by|modell?ed (?:on|after)|compared (?:with|to)|contemporar(?:y|ies) of|rival of|successor to|predecessor of|inspiration from|drawing (?:on|from)|derived from|based on|borrowed from|adapted from)\s+(?:the\s+)?(?:(?:Sir|Dr|Lord|Lady)\.?\s+)?$", re.I)
 YEAR = re.compile(r'\b(1[0-9]{3}|20[0-2][0-9])\b')
+FAR_YEARS = 100  # with no year in the text, a neighbouring-age node more than this many years from the question's period is refused (two Samuel Butlers)
 YEAR_TOL = 40   # a neighbouring-age node is used only if every year in the question is within this many years of that age
 REGNAL = re.compile(r'^(?:King )?(?:Richard|Henry|Edward|John)(?: [IVX]+)?(?:,? Part \d)?$')   # play titles that are also a monarch's name
 WORK_NOUN = re.compile(r"^\s*(?:[\w-]+\s+){0,3}?(?:poem|poetry|play|tragedy|comedy|masque|novel|epic|romance|satire|elegy|ode|sonnets?|treatise|essay|essays|drama|collection|anthology|translation|biography|diary|sermon|pamphlet|tale|lyric|ballad|verse|work|book|story|stories|trilogy|sequence)\b", re.I)
@@ -542,7 +543,9 @@ class Matcher:
                 if not (strong or title or maker):
                     continue
                 lo, hi = self.tx.age_range(self.tx.age_of(c['id']))
-                if any(y < lo - YEAR_TOL or y > hi + YEAR_TOL for y in years):
+                plo, phi = self.tx.age_range(period_id) if re.search(r'\(\d{3,4}-', self.tx.by[period_id]['name']) else self.tx.age_range(age)
+                far_away = (not years) and max(0, plo - hi, lo - phi) > FAR_YEARS     # no dates in the text: a whole century away is another person
+                if far_away or any(y < lo - YEAR_TOL or y > hi + YEAR_TOL for y in years):
                     rejected.append(c['id'])
                 else:
                     cross.append(c)
@@ -614,7 +617,7 @@ class Matcher:
                             'crossed_age': prefix.startswith('neighbouring'), 'crossed_area': prefix.startswith('other area'),
                             'trace': tr, 'where': best['where'], 'bare': best.get('bare', False), 'alias': best.get('alias')}
         if rejected:
-            log.append('not used: ' + ', '.join(rejected) + ' (another age; the dates in the question do not fit it)')
+            log.append('not used: ' + ', '.join(rejected) + ' (another age; its dates do not fit the question)')
         log.append(f"period: {period_id} ✓ (ladder exhausted)")
         return {'topicId': period_id, 'matched': False, 'rung': 'period', 'crossed_age': False, 'crossed_area': False,
                 'trace': ' → '.join(log) + suffix, 'where': [], 'bare': False}

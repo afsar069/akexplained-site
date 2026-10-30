@@ -14,7 +14,9 @@
     "The Early Tudor, the Commonwealth, and the Pre-Raphaelite Ages"
    ],
    "correct_option_id": 1,
-   "explanation": "The Neoclassical era spans the Restoration 1660-1700, Augustan Age 1700-1745, and Age of Sensibility 1745-1785."
+   "explanation": "The Neoclassical era spans the Restoration 1660-1700, Augustan Age 1700-1745, and Age of Sensibility 1745-1785.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-02",
@@ -26,7 +28,9 @@
     "The Restoration of King Charles II to the English throne"
    ],
    "correct_option_id": 3,
-   "explanation": "The return of Charles II from continental exile in May 1660 inaugurated the Restoration and Neoclassical era."
+   "explanation": "The return of Charles II from continental exile in May 1660 inaugurated the Restoration and Neoclassical era.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-03",
@@ -38,7 +42,9 @@
     "The King's Company and the Duke's Company"
    ],
    "correct_option_id": 3,
-   "explanation": "Charles II granted royal monopolies to Thomas Killigrew King Company and William Davenant Duke Company."
+   "explanation": "Charles II granted royal monopolies to Thomas Killigrew King Company and William Davenant Duke Company.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-04",
@@ -50,7 +56,9 @@
     "The Royal Society of London"
    ],
    "correct_option_id": 3,
-   "explanation": "The Royal Society advocated a close naked natural way of speaking rejecting ornate rhetoric."
+   "explanation": "The Royal Society advocated a close naked natural way of speaking rejecting ornate rhetoric.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-05",
@@ -62,7 +70,9 @@
     "Anthony Wood"
    ],
    "correct_option_id": 0,
-   "explanation": "Samuel Pepys kept his celebrated diary from 1660 to 1669 offering vivid eyewitness accounts of London life."
+   "explanation": "Samuel Pepys kept his celebrated diary from 1660 to 1669 offering vivid eyewitness accounts of London life.",
+   "topicId": "samuel-pepys",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-06",
@@ -74,7 +84,9 @@
     "1674"
    ],
    "correct_option_id": 1,
-   "explanation": "Paradise Lost was first published in ten books in 1667 and later redivided into twelve books in 1674."
+   "explanation": "Paradise Lost was first published in ten books in 1667 and later redivided into twelve books in 1674.",
+   "topicId": "paradise-lost",
+   "periodId": "commonwealth"
   },
   {
    "id": "nc-e-07",
@@ -86,7 +98,9 @@
     "Grace Abounding to the Chief of Sinners"
    ],
    "correct_option_id": 2,
-   "explanation": "Bunyan published Part I of The Pilgrim Progress in 1678 while Part II concerning Christiana appeared in 1684."
+   "explanation": "Bunyan published Part I of The Pilgrim Progress in 1678 while Part II concerning Christiana appeared in 1684.",
+   "topicId": "the-pilgrims-progress",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-08",
@@ -98,7 +112,9 @@
     "The Dispensary"
    ],
    "correct_option_id": 1,
-   "explanation": "Samuel Butler published Hudibras in three parts in 1663, 1664, and 1678 mocking Presbyterian knights."
+   "explanation": "Samuel Butler published Hudibras in three parts in 1663, 1664, and 1678 mocking Presbyterian knights.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-09",
@@ -110,7 +126,9 @@
     "Thomas Shadwell"
    ],
    "correct_option_id": 1,
-   "explanation": "John Dryden received the formal title of Poet Laureate in 1668 and Historiographer Royal in 1670."
+   "explanation": "John Dryden received the formal title of Poet Laureate in 1668 and Historiographer Royal in 1670.",
+   "topicId": "john-dryden",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-10",
@@ -122,7 +140,9 @@
     "Religio Laici"
    ],
    "correct_option_id": 0,
-   "explanation": "Absalom and Achitophel uses King David rebellion story to allegorize King Charles II and Monmouth."
+   "explanation": "Absalom and Achitophel uses King David rebellion story to allegorize King Charles II and Monmouth.",
+   "topicId": "absalom-and-achitophel",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-11",
@@ -134,7 +154,9 @@
     "Thomas Shadwell"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden lampoons his rival Thomas Shadwell as the dull heir to the Irish poetaster Richard Flecknoe."
+   "explanation": "Dryden lampoons his rival Thomas Shadwell as the dull heir to the Irish poetaster Richard Flecknoe.",
+   "topicId": "mac-flecknoe",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-12",
@@ -146,7 +168,9 @@
     "Julius Caesar"
    ],
    "correct_option_id": 1,
-   "explanation": "All for Love adapts Antony and Cleopatra to observe the neoclassical unities of time place and action."
+   "explanation": "All for Love adapts Antony and Cleopatra to observe the neoclassical unities of time place and action.",
+   "topicId": "all-for-love",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-13",
@@ -158,7 +182,9 @@
     "Of Heroique Plays"
    ],
    "correct_option_id": 0,
-   "explanation": "An Essay of Dramatick Poesie stages a critical debate on the Thames during the 1665 naval battle with the Dutch."
+   "explanation": "An Essay of Dramatick Poesie stages a critical debate on the Thames during the 1665 naval battle with the Dutch.",
+   "topicId": "john-dryden",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-14",
@@ -170,7 +196,9 @@
     "Aphra Behn"
    ],
    "correct_option_id": 3,
-   "explanation": "Aphra Behn published Oroonoko in 1688 recounting the tragic fate of an enslaved African prince in Surinam."
+   "explanation": "Aphra Behn published Oroonoko in 1688 recounting the tragic fate of an enslaved African prince in Surinam.",
+   "topicId": "oroonoko",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-15",
@@ -182,7 +210,9 @@
     "William Wycherley"
    ],
    "correct_option_id": 3,
-   "explanation": "William Wycherley wrote The Country Wife in 1675 satirizing London hypocrisy jealousy and marriage."
+   "explanation": "William Wycherley wrote The Country Wife in 1675 satirizing London hypocrisy jealousy and marriage.",
+   "topicId": "the-country-wife",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-16",
@@ -194,7 +224,9 @@
     "The Double-Dealer"
    ],
    "correct_option_id": 2,
-   "explanation": "In Act IV of Congreve The Way of the World Mirabell and Millamant negotiate their marriage conditions."
+   "explanation": "In Act IV of Congreve The Way of the World Mirabell and Millamant negotiate their marriage conditions.",
+   "topicId": "the-way-of-the-world",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-17",
@@ -206,7 +238,9 @@
     "The Stage Condemned"
    ],
    "correct_option_id": 2,
-   "explanation": "Jeremy Collier 1698 treatise targeted Congreve Vanbrugh and Dryden accelerating a shift toward moral drama."
+   "explanation": "Jeremy Collier 1698 treatise targeted Congreve Vanbrugh and Dryden accelerating a shift toward moral drama.",
+   "topicId": "jeremy-collier",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-18",
@@ -218,7 +252,9 @@
     "Two Treatises of Government"
    ],
    "correct_option_id": 0,
-   "explanation": "Locke argued against innate ideas in An Essay Concerning Human Understanding founding British empiricism."
+   "explanation": "Locke argued against innate ideas in An Essay Concerning Human Understanding founding British empiricism.",
+   "topicId": "john-locke",
+   "periodId": "restoration-era"
   },
   {
    "id": "nc-e-19",
@@ -230,7 +266,9 @@
     "Richard Steele and Joseph Addison"
    ],
    "correct_option_id": 3,
-   "explanation": "Steele started The Tatler in 1709 and teamed with Addison to launch the daily paper The Spectator in 1711."
+   "explanation": "Steele started The Tatler in 1709 and teamed with Addison to launch the daily paper The Spectator in 1711.",
+   "topicId": "the-tatler",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-20",
@@ -242,7 +280,9 @@
     "Sir Charles Grandison"
    ],
    "correct_option_id": 0,
-   "explanation": "Sir Roger de Coverley was introduced by Steele and developed by Addison as an affectionate portrait of a squire."
+   "explanation": "Sir Roger de Coverley was introduced by Steele and developed by Addison as an affectionate portrait of a squire.",
+   "topicId": "the-spectator",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-21",
@@ -254,7 +294,9 @@
     "An Essay on Criticism"
    ],
    "correct_option_id": 3,
-   "explanation": "Pope published An Essay on Criticism in 1711 summarizing neoclassical critical rules in heroic couplets."
+   "explanation": "Pope published An Essay on Criticism in 1711 summarizing neoclassical critical rules in heroic couplets.",
+   "topicId": "an-essay-on-criticism",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-22",
@@ -266,7 +308,9 @@
     "Thalestris"
    ],
    "correct_option_id": 2,
-   "explanation": "Belinda modeled on Arabella Fermor has her curl cut off at Hampton Court by the Baron Lord Petre."
+   "explanation": "Belinda modeled on Arabella Fermor has her curl cut off at Hampton Court by the Baron Lord Petre.",
+   "topicId": "the-rape-of-the-lock",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-23",
@@ -278,7 +322,9 @@
     "The Epistle to Dr. Arbuthnot"
    ],
    "correct_option_id": 1,
-   "explanation": "Pope published The Dunciad in three books in 1728 and expanded it to four books in 1743."
+   "explanation": "Pope published The Dunciad in three books in 1728 and expanded it to four books in 1743.",
+   "topicId": "the-dunciad",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-24",
@@ -290,7 +336,9 @@
     "The Spenserian stanza"
    ],
    "correct_option_id": 0,
-   "explanation": "The closed heroic couplet of rhymed decasyllabic lines was the dominant poetic medium of Neoclassicism."
+   "explanation": "The closed heroic couplet of rhymed decasyllabic lines was the dominant poetic medium of Neoclassicism.",
+   "topicId": "heroic-couplet",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-25",
@@ -302,7 +350,9 @@
     "The Life and Strange Surprizing Adventures of Lemuel Gulliver"
    ],
    "correct_option_id": 1,
-   "explanation": "Swift published the book anonymously in 1726 as Travels into Several Remote Nations of the World."
+   "explanation": "Swift published the book anonymously in 1726 as Travels into Several Remote Nations of the World.",
+   "topicId": "gullivers-travels",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-26",
@@ -314,7 +364,9 @@
     "The Laputans"
    ],
    "correct_option_id": 2,
-   "explanation": "In his fourth voyage Gulliver visits the land of the Houyhnhnms horses endowed with pure reason."
+   "explanation": "In his fourth voyage Gulliver visits the land of the Houyhnhnms horses endowed with pure reason.",
+   "topicId": "gullivers-travels",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-27",
@@ -326,7 +378,9 @@
     "Exporting all Irish woolens duty-free to France"
    ],
    "correct_option_id": 0,
-   "explanation": "Swift bitterly satirizes English economic exploitation by proposing that one-year-old children be sold as meat."
+   "explanation": "Swift bitterly satirizes English economic exploitation by proposing that one-year-old children be sold as meat.",
+   "topicId": "a-modest-proposal",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-28",
@@ -338,7 +392,9 @@
     "The Battle of the Books"
    ],
    "correct_option_id": 0,
-   "explanation": "In A Tale of a Tub Peter stands for Catholicism Martin for Anglicanism and Jack for Calvinist Dissent."
+   "explanation": "In A Tale of a Tub Peter stands for Catholicism Martin for Anglicanism and Jack for Calvinist Dissent.",
+   "topicId": "a-tale-of-a-tub",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-29",
@@ -350,7 +406,9 @@
     "The Conscious Lovers"
    ],
    "correct_option_id": 2,
-   "explanation": "John Gay The Beggar Opera was produced by John Rich in 1728 blending Newgate low-life with political satire."
+   "explanation": "John Gay The Beggar Opera was produced by John Rich in 1728 blending Newgate low-life with political satire.",
+   "topicId": "john-gay",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-30",
@@ -362,7 +420,9 @@
     "1704"
    ],
    "correct_option_id": 2,
-   "explanation": "Defoe published Robinson Crusoe in April 1719 launching the rise of realistic English prose fiction."
+   "explanation": "Defoe published Robinson Crusoe in April 1719 launching the rise of realistic English prose fiction.",
+   "topicId": "robinson-crusoe",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-31",
@@ -374,7 +434,9 @@
     "Pedro"
    ],
    "correct_option_id": 2,
-   "explanation": "Crusoe names his devoted companion Friday to commemorate the day of the week on which he saved his life."
+   "explanation": "Crusoe names his devoted companion Friday to commemorate the day of the week on which he saved his life.",
+   "topicId": "robinson-crusoe",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-32",
@@ -386,7 +448,9 @@
     "Captain Singleton"
    ],
    "correct_option_id": 0,
-   "explanation": "The Fortunes and Misfortunes of the Famous Moll Flanders appeared in 1722 detailing her life of crime and repentance."
+   "explanation": "The Fortunes and Misfortunes of the Famous Moll Flanders appeared in 1722 detailing her life of crime and repentance.",
+   "topicId": "moll-flanders",
+   "periodId": "augustan"
   },
   {
    "id": "nc-e-33",
@@ -398,7 +462,9 @@
     "Amelia"
    ],
    "correct_option_id": 0,
-   "explanation": "Pamela or Virtue Rewarded tells in letters how the servant girl Pamela Andrews resists and reforms Mr B."
+   "explanation": "Pamela or Virtue Rewarded tells in letters how the servant girl Pamela Andrews resists and reforms Mr B.",
+   "topicId": "pamela",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-34",
@@ -410,7 +476,9 @@
     "Evelina"
    ],
    "correct_option_id": 0,
-   "explanation": "Clarissa or the History of a Young Lady is Richardson tragic masterpiece concerning Clarissa Harlowe."
+   "explanation": "Clarissa or the History of a Young Lady is Richardson tragic masterpiece concerning Clarissa Harlowe.",
+   "topicId": "clarissa",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-35",
@@ -422,7 +490,9 @@
     "Jonathan Wild"
    ],
    "correct_option_id": 1,
-   "explanation": "Fielding published An Apology for the Life of Mrs Shamela Andrews in April 1741 exposing Pamela as a schemer."
+   "explanation": "Fielding published An Apology for the Life of Mrs Shamela Andrews in April 1741 exposing Pamela as a schemer.",
+   "topicId": "shamela",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-36",
@@ -434,7 +504,9 @@
     "Tom Jones"
    ],
    "correct_option_id": 1,
-   "explanation": "Fielding wrote Joseph Andrews in imitation of the manner of Cervantes and defined the comic novel in its preface."
+   "explanation": "Fielding wrote Joseph Andrews in imitation of the manner of Cervantes and defined the comic novel in its preface.",
+   "topicId": "joseph-andrews",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-37",
@@ -446,7 +518,9 @@
     "Squire Allworthy"
    ],
    "correct_option_id": 3,
-   "explanation": "Squire Allworthy discovers the infant Tom Jones in his bed and raises him alongside his nephew Blifil."
+   "explanation": "Squire Allworthy discovers the infant Tom Jones in his bed and raises him alongside his nephew Blifil.",
+   "topicId": "tom-jones",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-38",
@@ -458,7 +532,9 @@
     "Laurence Sterne"
    ],
    "correct_option_id": 2,
-   "explanation": "Tobias Smollett drew on his service as a naval surgeon for Roderick Random and wrote the epistolary Humphry Clinker."
+   "explanation": "Tobias Smollett drew on his service as a naval surgeon for Roderick Random and wrote the epistolary Humphry Clinker.",
+   "topicId": "tobias-smollett",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-39",
@@ -470,7 +546,9 @@
     "Tristram Shandy"
    ],
    "correct_option_id": 3,
-   "explanation": "The Life and Opinions of Tristram Shandy Gentleman subverts linear narrative with typography and digressions."
+   "explanation": "The Life and Opinions of Tristram Shandy Gentleman subverts linear narrative with typography and digressions.",
+   "topicId": "tristram-shandy",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-40",
@@ -482,7 +560,9 @@
     "1765"
    ],
    "correct_option_id": 1,
-   "explanation": "Johnson Dictionary was published on 15 April 1755 containing 42773 entries and over 114000 literary quotations."
+   "explanation": "Johnson Dictionary was published on 15 April 1755 containing 42773 entries and over 114000 literary quotations.",
+   "topicId": "johnsons-dictionary",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-41",
@@ -494,7 +574,9 @@
     "London"
    ],
    "correct_option_id": 1,
-   "explanation": "The History of Rasselas Prince of Abissinia was published in April 1759 examining the search for happiness."
+   "explanation": "The History of Rasselas Prince of Abissinia was published in April 1759 examining the search for happiness.",
+   "topicId": "rasselas",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-42",
@@ -506,7 +588,9 @@
     "A Journey to the Western Islands of Scotland"
    ],
    "correct_option_id": 2,
-   "explanation": "Johnson Lives of the Poets comprises fifty-two biographical and critical prefaces including the Life of Cowley."
+   "explanation": "Johnson Lives of the Poets comprises fifty-two biographical and critical prefaces including the Life of Cowley.",
+   "topicId": "samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-43",
@@ -518,7 +602,9 @@
     "Oliver Goldsmith"
    ],
    "correct_option_id": 2,
-   "explanation": "James Boswell met Johnson in Thomas Davies bookshop in 1763 and published his great biography in 1791."
+   "explanation": "James Boswell met Johnson in Thomas Davies bookshop in 1763 and published his great biography in 1791.",
+   "topicId": "the-life-of-samuel-johnson",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-44",
@@ -530,7 +616,9 @@
     "The Progress of Poesy"
    ],
    "correct_option_id": 0,
-   "explanation": "Gray completed the Elegy in 1750 and published it in 1751 honoring the humble villagers buried in the churchyard."
+   "explanation": "Gray completed the Elegy in 1750 and published it in 1751 honoring the humble villagers buried in the churchyard.",
+   "topicId": "elegy-written-in-a-country-churchyard",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-45",
@@ -542,7 +630,9 @@
     "The Spasmodic Poets"
    ],
    "correct_option_id": 2,
-   "explanation": "The Graveyard Poets wrote meditative verse on death and gloom anticipating Gothic literature and Romanticism."
+   "explanation": "The Graveyard Poets wrote meditative verse on death and gloom anticipating Gothic literature and Romanticism.",
+   "topicId": "the-graveyard-poets",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-46",
@@ -554,7 +644,9 @@
     "Dr. Charles Primrose"
    ],
    "correct_option_id": 3,
-   "explanation": "Dr Charles Primrose endures financial ruin prison and family misfortune with steadfast faith in The Vicar of Wakefield."
+   "explanation": "Dr Charles Primrose endures financial ruin prison and family misfortune with steadfast faith in The Vicar of Wakefield.",
+   "topicId": "the-vicar-of-wakefield",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-47",
@@ -566,7 +658,9 @@
     "Aldeburgh"
    ],
    "correct_option_id": 1,
-   "explanation": "The poem opens Sweet Auburn loveliest village of the plain lamenting rural depopulation caused by enclosure."
+   "explanation": "The poem opens Sweet Auburn loveliest village of the plain lamenting rural depopulation caused by enclosure.",
+   "topicId": "the-deserted-village",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-48",
@@ -578,7 +672,9 @@
     "The Humours of an Age"
    ],
    "correct_option_id": 1,
-   "explanation": "She Stoops to Conquer or The Mistakes of a Night turns on Marlow mistaking Hardcastle mansion for an inn."
+   "explanation": "She Stoops to Conquer or The Mistakes of a Night turns on Marlow mistaking Hardcastle mansion for an inn.",
+   "topicId": "she-stoops-to-conquer",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-49",
@@ -590,7 +686,9 @@
     "Mrs. Malaprop"
    ],
    "correct_option_id": 3,
-   "explanation": "Mrs Malaprop Aunt to Lydia Languish gave the English language the word malapropism for verbal confusion."
+   "explanation": "Mrs Malaprop Aunt to Lydia Languish gave the English language the word malapropism for verbal confusion.",
+   "topicId": "the-rivals",
+   "periodId": "age-of-sensibility"
   },
   {
    "id": "nc-e-50",
@@ -602,7 +700,9 @@
     "The Old English Baron"
    ],
    "correct_option_id": 0,
-   "explanation": "Horace Walpole published The Castle of Otranto in 1764 adding the subtitle A Gothic Story in the second edition."
+   "explanation": "Horace Walpole published The Castle of Otranto in 1764 adding the subtitle A Gothic Story in the second edition.",
+   "topicId": "the-castle-of-otranto",
+   "periodId": "age-of-sensibility"
   }
  ]
 }

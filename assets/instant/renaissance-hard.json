@@ -14,7 +14,9 @@
     "ababababcc ending with a decasyllabic couplet"
    ],
    "correct_option_id": 2,
-   "explanation": "Spenser added an iambic hexameter alexandrine to eight iambic pentameter lines rhyming ababbcbcc."
+   "explanation": "Spenser added an iambic hexameter alexandrine to eight iambic pentameter lines rhyming ababbcbcc.",
+   "topicId": "the-faerie-queene",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-02",
@@ -26,7 +28,9 @@
     "John Rainolds's 'Th' Overthrow of Stage-Playes'"
    ],
    "correct_option_id": 1,
-   "explanation": "Stephen Gosson dedicated The School of Abuse to Sidney without permission, attacking poetry as a school of vice."
+   "explanation": "Stephen Gosson dedicated The School of Abuse to Sidney without permission, attacking poetry as a school of vice.",
+   "topicId": "an-apology-for-poetry",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-03",
@@ -38,7 +42,9 @@
     "Erasmus"
    ],
    "correct_option_id": 1,
-   "explanation": "Machevill introduces the play, declaring I count religion but a childish toy and justifying ruthless ambition."
+   "explanation": "Machevill introduces the play, declaring I count religion but a childish toy and justifying ruthless ambition.",
+   "topicId": "the-jew-of-malta",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-04",
@@ -50,7 +56,9 @@
     "1592 at Southwark"
    ],
    "correct_option_id": 0,
-   "explanation": "Christopher Marlowe died on May 30, 1593 at Deptford, killed following a dispute over the reckoning."
+   "explanation": "Christopher Marlowe died on May 30, 1593 at Deptford, killed following a dispute over the reckoning.",
+   "topicId": "christopher-marlowe",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-05",
@@ -62,7 +70,9 @@
     "Death and Good Deeds"
    ],
    "correct_option_id": 2,
-   "explanation": "The Ghost of Don Andrea and personified Revenge sit on stage as an unearthly chorus overseeing the slaughter."
+   "explanation": "The Ghost of Don Andrea and personified Revenge sit on stage as an unearthly chorus overseeing the slaughter.",
+   "topicId": "the-spanish-tragedy",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-06",
@@ -74,7 +84,9 @@
     "Gongorism"
    ],
    "correct_option_id": 1,
-   "explanation": "Euphuism was the fashionable high prose style derived from Lyly's Euphues, featuring elaborate parallelism."
+   "explanation": "Euphuism was the fashionable high prose style derived from Lyly's Euphues, featuring elaborate parallelism.",
+   "topicId": "john-lyly",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-07",
@@ -86,7 +98,9 @@
     "Thomas Lodge"
    ],
    "correct_option_id": 0,
-   "explanation": "Robert Greene wrote Friar Bacon and Friar Bungay, and his romance Pandosto supplied the plot for Shakespeare's Winter's Tale."
+   "explanation": "Robert Greene wrote Friar Bacon and Friar Bungay, and his romance Pandosto supplied the plot for Shakespeare's Winter's Tale.",
+   "topicId": "robert-greene",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-08",
@@ -98,7 +112,9 @@
     "Pierce Penniless"
    ],
    "correct_option_id": 0,
-   "explanation": "Nashe's Jack Wilton travels across Renaissance Europe, witnessing wars, Erasmus, and brutal Italian vendettas."
+   "explanation": "Nashe's Jack Wilton travels across Renaissance Europe, witnessing wars, Erasmus, and brutal Italian vendettas.",
+   "topicId": "the-unfortunate-traveller",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-09",
@@ -110,7 +126,9 @@
     "The Arte of English Poesie"
    ],
    "correct_option_id": 2,
-   "explanation": "Gascoigne's Certayne Notes provided the earliest practical rules on English accentual meter and word choice."
+   "explanation": "Gascoigne's Certayne Notes provided the earliest practical rules on English accentual meter and word choice.",
+   "topicId": "george-gascoigne",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-10",
@@ -122,7 +140,9 @@
     "Roger Ascham"
    ],
    "correct_option_id": 1,
-   "explanation": "William Webbe praised Spenser while arguing that English poetry should conform to classical Greek and Latin feet."
+   "explanation": "William Webbe praised Spenser while arguing that English poetry should conform to classical Greek and Latin feet.",
+   "topicId": "william-webbe",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-11",
@@ -134,7 +154,9 @@
     "A Defence of Ryme"
    ],
    "correct_option_id": 3,
-   "explanation": "Samuel Daniel responded to Campion's Observations, arguing that rhyme is natural and suited to modern vernaculars."
+   "explanation": "Samuel Daniel responded to Campion's Observations, arguing that rhyme is natural and suited to modern vernaculars.",
+   "topicId": "samuel-daniel",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-12",
@@ -146,7 +168,9 @@
     "Richard Burbage and William Kempe"
    ],
    "correct_option_id": 1,
-   "explanation": "Heminges and Condell assembled Shakespeare's plays out of love to keep the memory of so worthy a friend alive."
+   "explanation": "Heminges and Condell assembled Shakespeare's plays out of love to keep the memory of so worthy a friend alive.",
+   "topicId": "jacobean-era",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-13",
@@ -158,7 +182,9 @@
     "Idea, The Shepherd's Garland"
    ],
    "correct_option_id": 2,
-   "explanation": "Michael Drayton's Poly-Olbion, published in two parts in 1612 and 1622, is an encyclopedic poetic geography of Britain."
+   "explanation": "Michael Drayton's Poly-Olbion, published in two parts in 1612 and 1622, is an encyclopedic poetic geography of Britain.",
+   "topicId": "michael-drayton",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-14",
@@ -170,7 +196,9 @@
     "Pseudo-Martyr"
    ],
    "correct_option_id": 1,
-   "explanation": "Donne preached Death's Duel while mortally ill, delivered with such solemnity it was deemed his own funeral sermon."
+   "explanation": "Donne preached Death's Duel while mortally ill, delivered with such solemnity it was deemed his own funeral sermon.",
+   "topicId": "john-donne",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-15",
@@ -182,7 +210,9 @@
     "Easter Wings"
    ],
    "correct_option_id": 3,
-   "explanation": "Easter Wings is a visual pattern poem where the expanding and contracting line lengths mirror angelic wings."
+   "explanation": "Easter Wings is a visual pattern poem where the expanding and contracting line lengths mirror angelic wings.",
+   "topicId": "the-temple",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-16",
@@ -194,7 +224,9 @@
     "Abraham Cowley"
    ],
    "correct_option_id": 2,
-   "explanation": "Henry Vaughan called himself the Silurist after the Silures, an ancient British tribe of his native South Wales."
+   "explanation": "Henry Vaughan called himself the Silurist after the Silures, an ancient British tribe of his native South Wales.",
+   "topicId": "henry-vaughan",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-17",
@@ -206,7 +238,9 @@
     "George Herbert"
    ],
    "correct_option_id": 2,
-   "explanation": "Richard Crashaw's ecstatic baroque verse blends Counter-Reformation mysticism with intense sensory imagery."
+   "explanation": "Richard Crashaw's ecstatic baroque verse blends Counter-Reformation mysticism with intense sensory imagery.",
+   "topicId": "richard-crashaw",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-18",
@@ -218,7 +252,9 @@
     "Henry Vaughan"
    ],
    "correct_option_id": 1,
-   "explanation": "Thomas Traherne's luminous theological meditations were identified by Bertram Dobell and published in 1908."
+   "explanation": "Thomas Traherne's luminous theological meditations were identified by Bertram Dobell and published in 1908.",
+   "topicId": "commonwealth",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-19",
@@ -230,7 +266,9 @@
     "Castara"
    ],
    "correct_option_id": 2,
-   "explanation": "Hesperides, published with his religious Noble Numbers, evokes the golden mythical garden of western poetry."
+   "explanation": "Hesperides, published with his religious Noble Numbers, evokes the golden mythical garden of western poetry.",
+   "topicId": "robert-herrick",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-20",
@@ -242,7 +280,9 @@
     "Thomas Carew"
    ],
    "correct_option_id": 3,
-   "explanation": "Thomas Carew's Elegy on Donne famously praises him for opening a fresh, intellectual mine in English poetry."
+   "explanation": "Thomas Carew's Elegy on Donne famously praises him for opening a fresh, intellectual mine in English poetry.",
+   "topicId": "thomas-carew",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-21",
@@ -254,7 +294,9 @@
     "The Roaring Girl"
    ],
    "correct_option_id": 0,
-   "explanation": "Dekker's vibrant comedy dramatises the crafts and apprentices of London with warmth, humor, and civic pride."
+   "explanation": "Dekker's vibrant comedy dramatises the crafts and apprentices of London with warmth, humor, and civic pride.",
+   "topicId": "thomas-dekker",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-22",
@@ -266,7 +308,9 @@
     "Philip Massinger"
    ],
    "correct_option_id": 0,
-   "explanation": "John Fletcher succeeded Shakespeare as house playwright for the King's Men, co-authoring several late plays."
+   "explanation": "John Fletcher succeeded Shakespeare as house playwright for the King's Men, co-authoring several late plays.",
+   "topicId": "beaumont-and-fletcher",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-23",
@@ -278,7 +322,9 @@
     "Tragicomedy"
    ],
    "correct_option_id": 3,
-   "explanation": "Beaumont and Fletcher perfected tragicomedy in plays like Philaster, bringing characters near death before a happy resolution."
+   "explanation": "Beaumont and Fletcher perfected tragicomedy in plays like Philaster, bringing characters near death before a happy resolution.",
+   "topicId": "beaumont-and-fletcher",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-24",
@@ -290,7 +336,9 @@
     "The poisoned skull of his murdered mistress Gloriana"
    ],
    "correct_option_id": 3,
-   "explanation": "Vindice dresses the skull of his dead betrothed in robes and poisons her lips to execute vengeance on the Duke."
+   "explanation": "Vindice dresses the skull of his dead betrothed in robes and poisons her lips to execute vengeance on the Duke.",
+   "topicId": "the-revengers-tragedy",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-25",
@@ -302,7 +350,9 @@
     "The Broken Heart"
    ],
    "correct_option_id": 1,
-   "explanation": "John Ford's masterpiece probes psychological obsession, passion, and moral collapse in Renaissance Parma."
+   "explanation": "John Ford's masterpiece probes psychological obsession, passion, and moral collapse in Renaissance Parma.",
+   "topicId": "tis-pity-shes-a-whore",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-26",
@@ -314,7 +364,9 @@
     "Thomas Dekker"
    ],
    "correct_option_id": 1,
-   "explanation": "Philip Massinger's Sir Giles Overreach became one of the most famous, enduring comic stage villains of the period."
+   "explanation": "Philip Massinger's Sir Giles Overreach became one of the most famous, enduring comic stage villains of the period.",
+   "topicId": "philip-massinger",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-27",
@@ -326,7 +378,9 @@
     "Northward Ho"
    ],
    "correct_option_id": 0,
-   "explanation": "King James I was offended by comic gibes about Scottish knights in Eastward Ho, causing the dramatists' arrest."
+   "explanation": "King James I was offended by comic gibes about Scottish knights in Eastward Ho, causing the dramatists' arrest.",
+   "topicId": "jacobean-era",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-28",
@@ -338,7 +392,9 @@
     "Oberon, the Faery Prince"
    ],
    "correct_option_id": 0,
-   "explanation": "Commissioned by Queen Anne of Denmark, The Masque of Blackness introduced perspective stagecraft to court."
+   "explanation": "Commissioned by Queen Anne of Denmark, The Masque of Blackness introduced perspective stagecraft to court.",
+   "topicId": "ben-jonson",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-29",
@@ -350,7 +406,9 @@
     "Fantasies of the Body, Mind, Church, and State"
    ],
    "correct_option_id": 1,
-   "explanation": "Bacon's doctrine of the Idols exposed deep-seated psychological, linguistic, and philosophical biases."
+   "explanation": "Bacon's doctrine of the Idols exposed deep-seated psychological, linguistic, and philosophical biases.",
+   "topicId": "novum-organum",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-30",
@@ -362,7 +420,9 @@
     "The Royal Society of Bensalem"
    ],
    "correct_option_id": 2,
-   "explanation": "Salomon's House was Bacon's vision of an organized research college, which inspired the founding of the Royal Society."
+   "explanation": "Salomon's House was Bacon's vision of an organized research college, which inspired the founding of the Royal Society.",
+   "topicId": "francis-bacon",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-31",
@@ -374,7 +434,9 @@
     "Hydriotaphia, Urn Burial"
    ],
    "correct_option_id": 3,
-   "explanation": "Browne's Hydriotaphia reflects on mortality, sepulchral rites, and eternity in rich, Latinate prose."
+   "explanation": "Browne's Hydriotaphia reflects on mortality, sepulchral rites, and eternity in rich, Latinate prose.",
+   "topicId": "thomas-browne",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-32",
@@ -386,7 +448,9 @@
     "The Garden of Cyrus"
    ],
    "correct_option_id": 2,
-   "explanation": "Pseudodoxia Epidemica investigated and exploded widespread folklore, superstitions, and natural myths."
+   "explanation": "Pseudodoxia Epidemica investigated and exploded widespread folklore, superstitions, and natural myths.",
+   "topicId": "thomas-browne",
+   "periodId": "caroline"
   },
   {
    "id": "rn-h-33",
@@ -398,7 +462,9 @@
     "Absalom and Achitophel"
    ],
    "correct_option_id": 0,
-   "explanation": "Samuel Butler's Hudibras satirises a pedantic Presbyterian knight errant modeled on Don Quixote."
+   "explanation": "Samuel Butler's Hudibras satirises a pedantic Presbyterian knight errant modeled on Don Quixote.",
+   "topicId": "restoration-era",
+   "periodId": "restoration-era"
   },
   {
    "id": "rn-h-34",
@@ -410,7 +476,9 @@
     "The First Anniversary of the Government"
    ],
    "correct_option_id": 0,
-   "explanation": "Marvell's Horatian Ode famously praises Charles I's royal dignity on the scaffold alongside Cromwell's energy."
+   "explanation": "Marvell's Horatian Ode famously praises Charles I's royal dignity on the scaffold alongside Cromwell's energy.",
+   "topicId": "andrew-marvell",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-35",
@@ -422,7 +490,9 @@
     "Comus"
    ],
    "correct_option_id": 1,
-   "explanation": "Samson Agonistes stages blind Samson's patient endurance and catastrophic revenge on the Philistines at Gaza."
+   "explanation": "Samson Agonistes stages blind Samson's patient endurance and catastrophic revenge on the Philistines at Gaza.",
+   "topicId": "samson-agonistes",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-36",
@@ -434,7 +504,9 @@
     "The Reason of Church Government"
    ],
    "correct_option_id": 1,
-   "explanation": "Paradise Regained dramatises Christ overcoming Satan's triple temptations in the wilderness through perfect obedience."
+   "explanation": "Paradise Regained dramatises Christ overcoming Satan's triple temptations in the wilderness through perfect obedience.",
+   "topicId": "paradise-regained",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-37",
@@ -446,7 +518,9 @@
     "Secretary for Foreign Tongues (Latin Secretary)"
    ],
    "correct_option_id": 3,
-   "explanation": "Milton drafted diplomatic correspondence and official Latin state defenses of the English Commonwealth."
+   "explanation": "Milton drafted diplomatic correspondence and official Latin state defenses of the English Commonwealth.",
+   "topicId": "john-milton",
+   "periodId": "commonwealth"
   },
   {
    "id": "rn-h-38",
@@ -458,7 +532,9 @@
     "Sir Thomas North"
    ],
    "correct_option_id": 2,
-   "explanation": "John Florio's celebrated translation of Montaigne's Des Cannibales supplied Gonzalo's commonwealth speech in Act II."
+   "explanation": "John Florio's celebrated translation of Montaigne's Des Cannibales supplied Gonzalo's commonwealth speech in Act II.",
+   "topicId": "john-florio",
+   "periodId": "jacobean-era"
   },
   {
    "id": "rn-h-39",
@@ -470,7 +546,9 @@
     "George Chapman"
    ],
    "correct_option_id": 3,
-   "explanation": "George Chapman translated Homer into vigorous English verse, celebrated in Keats's famous sonnet."
+   "explanation": "George Chapman translated Homer into vigorous English verse, celebrated in Keats's famous sonnet.",
+   "topicId": "george-chapman",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-40",
@@ -482,7 +560,9 @@
     "Philemon Holland"
    ],
    "correct_option_id": 2,
-   "explanation": "Sir Thomas North translated Plutarch from Jacques Amyot's French version, supplying plots for Julius Caesar and Antony and Cleopatra."
+   "explanation": "Sir Thomas North translated Plutarch from Jacques Amyot's French version, supplying plots for Julius Caesar and Antony and Cleopatra.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-41",
@@ -494,7 +574,9 @@
     "The Golden Legend"
    ],
    "correct_option_id": 0,
-   "explanation": "Foxe's Book of Martyrs graphically recorded the trials of Protestant martyrs under Queen Mary I."
+   "explanation": "Foxe's Book of Martyrs graphically recorded the trials of Protestant martyrs under Queen Mary I.",
+   "topicId": "john-foxe",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-42",
@@ -506,7 +588,9 @@
     "Tottel's Miscellany"
    ],
    "correct_option_id": 2,
-   "explanation": "A Mirror for Magistrates linked medieval tragedy with Renaissance history, deeply influencing Elizabethan historical drama."
+   "explanation": "A Mirror for Magistrates linked medieval tragedy with Renaissance history, deeply influencing Elizabethan historical drama.",
+   "topicId": "early-tudor",
+   "periodId": "early-tudor"
   },
   {
    "id": "rn-h-43",
@@ -518,7 +602,9 @@
     "The Fair Youth"
    ],
    "correct_option_id": 3,
-   "explanation": "Sonnets 1 to 126 explore themes of time, beauty, procreation, and friendship addressed to a noble young patron."
+   "explanation": "Sonnets 1 to 126 explore themes of time, beauty, procreation, and friendship addressed to a noble young patron.",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-44",
@@ -530,7 +616,9 @@
     "The Dark Lady"
    ],
    "correct_option_id": 3,
-   "explanation": "The Dark Lady sonnets explore complex, turbulent sexual passion, inconstancy, and psychological torment."
+   "explanation": "The Dark Lady sonnets explore complex, turbulent sexual passion, inconstancy, and psychological torment.",
+   "topicId": "shakespeares-sonnets",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-45",
@@ -542,7 +630,9 @@
     "The Dark Lady"
    ],
    "correct_option_id": 0,
-   "explanation": "The Rival Poet sonnets express anxiety over another poet, commonly identified as George Chapman or Christopher Marlowe."
+   "explanation": "The Rival Poet sonnets express anxiety over another poet, commonly identified as George Chapman or Christopher Marlowe.",
+   "topicId": "shakespeares-sonnets",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-46",
@@ -554,7 +644,9 @@
     "The Admiral's Men"
    ],
    "correct_option_id": 1,
-   "explanation": "The Children of the Chapel were celebrated boy choristers whose popularity rivaled adult professional actors around 1600."
+   "explanation": "The Children of the Chapel were celebrated boy choristers whose popularity rivaled adult professional actors around 1600.",
+   "topicId": "hamlet",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-47",
@@ -566,7 +658,9 @@
     "The Countess of Pembroke's Arcadia"
    ],
    "correct_option_id": 3,
-   "explanation": "Sidney wrote Arcadia for his sister Mary Herbert, Countess of Pembroke, blending pastoral romance with statecraft."
+   "explanation": "Sidney wrote Arcadia for his sister Mary Herbert, Countess of Pembroke, blending pastoral romance with statecraft.",
+   "topicId": "arcadia",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-48",
@@ -578,7 +672,9 @@
     "The Geneva Psalter"
    ],
    "correct_option_id": 0,
-   "explanation": "Mary Sidney completed metrical verse translations of the Psalms begun by Philip Sidney, using over 120 different stanza forms."
+   "explanation": "Mary Sidney completed metrical verse translations of the Psalms begun by Philip Sidney, using over 120 different stanza forms.",
+   "topicId": "philip-sidney",
+   "periodId": "elizabethan"
   },
   {
    "id": "rn-h-49",
@@ -590,7 +686,9 @@
     "Edward Hyde, Earl of Clarendon"
    ],
    "correct_option_id": 3,
-   "explanation": "Lord Clarendon's History of the Rebellion provides an indispensable, psychologically acute history of the English Civil War."
+   "explanation": "Lord Clarendon's History of the Rebellion provides an indispensable, psychologically acute history of the English Civil War.",
+   "topicId": "edward-hyde",
+   "periodId": "restoration-era"
   },
   {
    "id": "rn-h-50",
@@ -602,7 +700,9 @@
     "The Pacification of Berwick"
    ],
    "correct_option_id": 0,
-   "explanation": "The Solemn League and Covenant secured Scottish military intervention in exchange for reforming the Church along Presbyterian lines."
+   "explanation": "The Solemn League and Covenant secured Scottish military intervention in exchange for reforming the Church along Presbyterian lines.",
+   "topicId": "caroline",
+   "periodId": "caroline"
   }
  ]
 }
