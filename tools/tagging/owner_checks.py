@@ -11,7 +11,7 @@ byid = {}
 for f in glob.glob(os.path.join(match_topics.ROOT, 'assets', 'instant', '*.json')):
     for q in json.load(open(f, encoding='utf-8'))['questions']: byid[q['id']] = q
 # (id, what the owner said is right)
-CHECK = [('el-h-05','edmund-spenser'),('cw-h-22','izaak-walton'),('ac-e-13','age-of-chaucer'),('vc-h-10','alfred-tennyson'),
+CHECK = [('el-h-05','edmund-spenser'),('cw-h-22','charles-cotton'),('ac-e-13','age-of-chaucer'),('vc-h-10','alfred-tennyson'),
          ('cr-h-31','john-milton'),('fc-e-33','mystery-plays'),
          ('as-e-49','deor'),('as-h-48','beowulf'),('el-h-22','edward-ii'),('rm-e-41','john-keats'),('cr-e-08','john-suckling'),
          ('jb-h-25','the-white-devil'),('vc-e-23','vanity-fair'),('au-e-21','gullivers-travels'),('gr-e-03','georgian-poetry'),
