@@ -41,7 +41,9 @@
       "correct_option_id": 1,
       "explanation": "Each poetic line is divided into two half-lines, with the first called the a-verse or on-verse.",
       "topic": "verse",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-02",
@@ -55,7 +57,9 @@
       "correct_option_id": 3,
       "explanation": "The second half-line of an Old English alliterative line is designated the b-verse or off-verse.",
       "topic": "verse",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-03",
@@ -69,7 +73,9 @@
       "correct_option_id": 3,
       "explanation": "Each hemistich or half-line contains exactly two strongly stressed syllables, making four per full line.",
       "topic": "verse",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-04",
@@ -82,7 +88,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Eduard Sievers classified Old English half-lines into five metrical types designated A through E.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-05",
@@ -96,7 +104,9 @@
       "correct_option_id": 0,
       "explanation": "The scop was the court poet and singer of heroic tales in Anglo-Saxon England.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-06",
@@ -110,7 +120,9 @@
       "correct_option_id": 1,
       "explanation": "The scop recited poems accompanied by the harp or lyre, referred to as the mirth-wood or gomen-wudu.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-07",
@@ -123,7 +135,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "Beowulf opens with the famous archaic attention-calling exclamation Hwæt, meaning Listen or Lo.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-08",
@@ -137,7 +151,9 @@
       "correct_option_id": 1,
       "explanation": "Unlocking the word-hord means speaking forth from one's poetic vocabulary and eloquence.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-09",
@@ -151,7 +167,9 @@
       "correct_option_id": 1,
       "explanation": "A gold-wine is a generous lord who rewards loyal thanes with gold rings and gifts.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-10",
@@ -165,7 +183,9 @@
       "correct_option_id": 0,
       "explanation": "Sund-hengest means 'sea-horse', a poetic kenning for a ship.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-11",
@@ -179,7 +199,9 @@
       "correct_option_id": 3,
       "explanation": "Beowulf was the loyal nephew and chief warrior of King Hygelac of the Geats.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-12",
@@ -193,7 +215,9 @@
       "correct_option_id": 1,
       "explanation": "Queen Wealhtheow served the ceremonial mead-cup and fostered peaceful diplomacy among the Danish retainers.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-13",
@@ -207,7 +231,9 @@
       "correct_option_id": 0,
       "explanation": "Unferth, envious of Beowulf's fame, challenged him about his swimming contest with Breca.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-14",
@@ -221,7 +247,9 @@
       "correct_option_id": 3,
       "explanation": "Beowulf engaged in an ocean swimming contest across the stormy sea with his companion Breca.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-15",
@@ -235,7 +263,9 @@
       "correct_option_id": 3,
       "explanation": "Unferth lent Beowulf the hilted ancient heirloom sword named Hrunting, which failed against Grendel's mother.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-16",
@@ -249,7 +279,9 @@
       "correct_option_id": 2,
       "explanation": "Naegling, Beowulf's old grey sword, snapped in the fight with the dragon; the poem blames the strength of his own hand.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-17",
@@ -263,7 +295,9 @@
       "correct_option_id": 2,
       "explanation": "Beowulf tore off Grendel's entire arm and shoulder, which was hung high beneath Heorot's roof.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-18",
@@ -277,7 +311,9 @@
       "correct_option_id": 0,
       "explanation": "Beowulf was a hero and later king of the Geats, hailing from southern Sweden.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-19",
@@ -291,7 +327,9 @@
       "correct_option_id": 3,
       "explanation": "Hrothgar ruled the Scyldings, the legendary royal dynasty of Denmark.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-20",
@@ -305,7 +343,9 @@
       "correct_option_id": 0,
       "explanation": "Beowulf begins with the glory of Scyld Scefing, the foundling ancestor of the Danish royal house.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-21",
@@ -319,7 +359,9 @@
       "correct_option_id": 3,
       "explanation": "Ecgtheow was Beowulf's father, for whom Hrothgar had paid a wergild to settle a deadly feud.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-22",
@@ -333,7 +375,9 @@
       "correct_option_id": 2,
       "explanation": "Beowulf ruled his homeland wisely and peacefully as king of the Geats for fifty years.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-23",
@@ -347,7 +391,9 @@
       "correct_option_id": 1,
       "explanation": "Wiglaf was the son of Weohstan and the last remaining kinsman of the Waegmunding clan.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-24",
@@ -361,7 +407,9 @@
       "correct_option_id": 0,
       "explanation": "Beowulf's barrow was constructed high on the headland of Whale's Ness to guide ocean seafarers.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-25",
@@ -375,7 +423,9 @@
       "correct_option_id": 1,
       "explanation": "The dreamer awakens to the harsh reality of dark ocean waves, frost, and snow mingled with hail.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-26",
@@ -389,7 +439,9 @@
       "correct_option_id": 2,
       "explanation": "The seafarer takes the songs of seabirds like the gannet and curlew for human cheer and laughter.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-seafarer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-27",
@@ -403,7 +455,9 @@
       "correct_option_id": 0,
       "explanation": "Deor begins his list of consoled sufferings with the cruel torment of the legendary smith Wayland.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-28",
@@ -417,7 +471,9 @@
       "correct_option_id": 0,
       "explanation": "Deor notes that Theodoric held the stronghold of the Mauringas for thirty winters, and that passed over.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-29",
@@ -431,7 +487,9 @@
       "correct_option_id": 2,
       "explanation": "Deor recalls Beadohild's grief when she found herself pregnant following Wayland's vengeance.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-30",
@@ -445,7 +503,9 @@
       "correct_option_id": 2,
       "explanation": "The husband's kinsmen secretly plotted to keep the lovers far apart in lonely misery.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-31",
@@ -459,7 +519,9 @@
       "correct_option_id": 2,
       "explanation": "The speaker laments that Wulf is on one island while she remains on another across the fen.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-32",
@@ -472,7 +534,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "A speaking piece of wood or runic staff addresses the lady, bidding her join her husband.",
-      "topic": "elegies"
+      "topic": "elegies",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-33",
@@ -486,7 +550,9 @@
       "correct_option_id": 0,
       "explanation": "The poet describes hot streams flowing into wide stone baths, identifying the site as Roman Bath.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-34",
@@ -500,7 +566,9 @@
       "correct_option_id": 0,
       "explanation": "Abbess Hilda of Whitby recognized Caedmon's divine gift and received him into the monastic order.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-35",
@@ -514,7 +582,9 @@
       "correct_option_id": 1,
       "explanation": "Unable to sing when the harp was passed around, Caedmon retreated to the cattle shed where he slept.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-36",
@@ -528,7 +598,9 @@
       "correct_option_id": 1,
       "explanation": "Bodleian MS Junius 11 contains the Old English scriptural paraphrases Genesis, Exodus, and Daniel.",
       "topic": "religious",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "junius-manuscript",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-37",
@@ -542,7 +614,9 @@
       "correct_option_id": 3,
       "explanation": "Old English scriptural verse reimagined Moses in terms of a noble Germanic prince and battlefield commander.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-38",
@@ -556,7 +630,9 @@
       "correct_option_id": 2,
       "explanation": "Christ and Satan dramatizes the agony of Satan and fallen angels doomed in the fiery pits of hell.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-39",
@@ -570,7 +646,9 @@
       "correct_option_id": 3,
       "explanation": "Elene narrates the historic voyage of Constantine's mother, Saint Helena, to uncover the True Cross.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-40",
@@ -584,7 +662,9 @@
       "correct_option_id": 1,
       "explanation": "The Fates of the Apostles recounts the evangelical travels and martyrdoms of Christ's twelve apostles.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-41",
@@ -598,7 +678,9 @@
       "correct_option_id": 1,
       "explanation": "Cynewulf wove the eight runic characters C-Y-N-E-W-U-L-F into the closing lines of four poems.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-42",
@@ -612,7 +694,9 @@
       "correct_option_id": 2,
       "explanation": "The dreamer initially beholds the Rood as a glorious, jewel-decked beacon bathed in radiant light.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-43",
@@ -626,7 +710,9 @@
       "correct_option_id": 2,
       "explanation": "The Exeter Book is the sole surviving repository of Old English vernacular verse riddles.",
       "topic": "riddles",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "exeter-book",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-44",
@@ -640,7 +726,9 @@
       "correct_option_id": 0,
       "explanation": "Many Exeter Book riddles end by challenging the reader to say what the speaker is called, as in 'Frige hwæt ic hatte', 'Ask what I am called'.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-45",
@@ -654,7 +742,9 @@
       "correct_option_id": 2,
       "explanation": "The riddles personify inanimate creatures and tools using the speaking voice, known as prosopopoeia.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-46",
@@ -668,7 +758,9 @@
       "correct_option_id": 3,
       "explanation": "Riddle 47 describes a moth or worm that devours human words and parchment without gaining wisdom.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-47",
@@ -682,7 +774,9 @@
       "correct_option_id": 1,
       "explanation": "Riddle 5 is spoken by a battle-shield that endures edges of iron blades and receives wounds without healing.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-48",
@@ -696,7 +790,9 @@
       "correct_option_id": 2,
       "explanation": "The Exeter Book holds the elegies: The Wanderer, The Seafarer, The Ruin, The Wife's Lament, Deor and Wulf and Eadwacer.",
       "topic": "elegies",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-49",
@@ -710,7 +806,9 @@
       "correct_option_id": 3,
       "explanation": "Riddle 60 describes a reed cut from the water's edge that silently conveys words between distant lovers.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-e-50",
@@ -724,7 +822,9 @@
       "correct_option_id": 0,
       "explanation": "The Exeter Book scribes recorded the riddles continuously in verse without providing titles or solutions.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     }
   ]
 }

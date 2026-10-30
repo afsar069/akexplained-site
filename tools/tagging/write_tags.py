@@ -110,7 +110,9 @@ elif MODE == 'mcq':
             key_node = MCQ_KEYS.get(q.get('topic'))
             if key_node:
                 assert key_node in tx.by, key_node
-                if r['matched'] and is_descendant(r['topicId'], key_node):
+                # the key is coarse. A node UNDER the key, a titled work the question names, or a node that IS the answer is more
+                # specific, so it wins; a writer or a container (the Exeter Book around a riddle) does not beat the key.
+                if r['matched'] and (is_descendant(r['topicId'], key_node) or r['rung'] == 'work' or 'answer' in r['where']):
                     t, rung = r['topicId'], 'ladder (more specific than the key)'
                 else:
                     t, rung = key_node, 'set key'

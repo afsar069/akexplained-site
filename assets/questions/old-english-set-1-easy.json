@@ -43,7 +43,9 @@
       "correct_option_id": 1,
       "explanation": "Bede records that three main Germanic tribes migrated around 449 AD: Angles, Saxons, and Jutes.",
       "topic": "ground",
-      "read": "political-life"
+      "read": "political-life",
+      "topicId": "bede",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-02",
@@ -57,7 +59,9 @@
       "correct_option_id": 3,
       "explanation": "Hengist and Horsa were the legendary twin brothers invited by Vortigern around 449 AD.",
       "topic": "ground",
-      "read": "political-life"
+      "read": "political-life",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-03",
@@ -71,7 +75,9 @@
       "correct_option_id": 3,
       "explanation": "The British warlord Vortigern invited Hengist and Horsa before they turned against him.",
       "topic": "ground",
-      "read": "political-life"
+      "read": "political-life",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-04",
@@ -85,7 +91,9 @@
       "correct_option_id": 3,
       "explanation": "Pope Gregory I dispatched St. Augustine to Kent in 597 AD to establish the see at Canterbury.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-05",
@@ -99,7 +107,9 @@
       "correct_option_id": 0,
       "explanation": "St. Augustine established the see at Canterbury after arriving at the court of King Aethelberht.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-06",
@@ -113,7 +123,9 @@
       "correct_option_id": 1,
       "explanation": "Irish monasticism expanded from Iona, which was founded by St. Columba in 563 AD.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-07",
@@ -127,7 +139,9 @@
       "correct_option_id": 2,
       "explanation": "St. Aidan established the monastery of Lindisfarne in 635 AD under Northumbrian King Oswald.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-08",
@@ -141,7 +155,9 @@
       "correct_option_id": 1,
       "explanation": "The Synod of Whitby in 664 AD resolved liturgical friction and adopted Roman usages.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-09",
@@ -155,7 +171,9 @@
       "correct_option_id": 1,
       "explanation": "The Synod of Whitby was convened in 664 AD by King Oswiu of Northumbria.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-10",
@@ -169,7 +187,9 @@
       "correct_option_id": 0,
       "explanation": "The Viking raid on Lindisfarne in 793 AD marked the beginning of Scandinavian incursions.",
       "topic": "ground",
-      "read": "political-life"
+      "read": "political-life",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-11",
@@ -183,7 +203,9 @@
       "correct_option_id": 3,
       "explanation": "King Alfred the Great reigned over Wessex from 871 to 899 AD.",
       "topic": "ground",
-      "read": "political-life"
+      "read": "political-life",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-12",
@@ -197,7 +219,9 @@
       "correct_option_id": 1,
       "explanation": "The Battle of Maldon took place in 991 AD when English forces met Viking raiders.",
       "topic": "ground",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-maldon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-13",
@@ -211,7 +235,9 @@
       "correct_option_id": 0,
       "explanation": "The Norman Conquest under William I in 1066 marked the end of the Anglo-Saxon era.",
       "topic": "ground",
-      "read": "how-the-age-ends"
+      "read": "how-the-age-ends",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-14",
@@ -225,7 +251,9 @@
       "correct_option_id": 3,
       "explanation": "Old English developed across four distinct regional dialects: Northumbrian, Mercian, Kentish, and West Saxon.",
       "topic": "terms",
-      "read": "the-language"
+      "read": "the-language",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-15",
@@ -239,7 +267,9 @@
       "correct_option_id": 3,
       "explanation": "Late West Saxon became the standardized literary language of Anglo-Saxon scribes.",
       "topic": "terms",
-      "read": "the-language"
+      "read": "the-language",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-16",
@@ -253,7 +283,9 @@
       "correct_option_id": 2,
       "explanation": "A medial caesura is the distinct structural pause separating the two hemistichs.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-17",
@@ -267,7 +299,9 @@
       "correct_option_id": 2,
       "explanation": "Every full line contains four strongly stressed syllables, two in each half-line.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-18",
@@ -281,7 +315,9 @@
       "correct_option_id": 0,
       "explanation": "The first stressed syllable of the b-verse is the head-stave, which must alliterate with the a-verse.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-19",
@@ -295,7 +331,9 @@
       "correct_option_id": 3,
       "explanation": "Eduard Sievers categorized Old English half-lines into five metrical patterns, Types A through E.",
       "topic": "criticism",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-20",
@@ -309,7 +347,9 @@
       "correct_option_id": 0,
       "explanation": "A kenning is a specialized metaphorical compound noun describing an object or concept.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-21",
@@ -323,7 +363,9 @@
       "correct_option_id": 3,
       "explanation": "Ban-hus translates to bone-house, which is the kenning for the human body.",
       "topic": "terms",
-      "read": "the-language"
+      "read": "the-language",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-22",
@@ -337,7 +379,9 @@
       "correct_option_id": 2,
       "explanation": "Gomen-wudu translates to mirth-wood, a kenning for the harp.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-23",
@@ -351,7 +395,9 @@
       "correct_option_id": 1,
       "explanation": "Beado-leoma translates to battle-light, a kenning for a sword.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-24",
@@ -365,7 +411,9 @@
       "correct_option_id": 0,
       "explanation": "Litotes is a form of ironic understatement used for grim or heroic effect.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "litotes",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-25",
@@ -379,7 +427,9 @@
       "correct_option_id": 1,
       "explanation": "Oral-formulaic theory was formulated by Milman Parry and Albert Lord.",
       "topic": "criticism",
-      "read": "criticism-and-scholarship"
+      "read": "criticism-and-scholarship",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-26",
@@ -393,7 +443,9 @@
       "correct_option_id": 2,
       "explanation": "The Nowell Codex, Cotton Vitellius A. xv, preserves the sole surviving copy of Beowulf.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-27",
@@ -407,7 +459,9 @@
       "correct_option_id": 0,
       "explanation": "The Nowell Codex is cataloged as Cotton Vitellius A. xv in the British Library.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "nowell-codex",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-28",
@@ -421,7 +475,9 @@
       "correct_option_id": 0,
       "explanation": "The Exeter Book has been preserved in Exeter Cathedral Library since Bishop Leofric donated it.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "exeter-book",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-29",
@@ -435,7 +491,9 @@
       "correct_option_id": 2,
       "explanation": "Bishop Leofric donated the codex around 1072, describing it as a large English book in verse.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "exeter-book",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-30",
@@ -449,7 +507,9 @@
       "correct_option_id": 2,
       "explanation": "The Vercelli Book is preserved in the cathedral library of Vercelli in northern Italy.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "vercelli-book",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-31",
@@ -463,7 +523,9 @@
       "correct_option_id": 2,
       "explanation": "The Junius Manuscript is unique among the four for featuring visual line illustrations.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "junius-manuscript",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-32",
@@ -477,7 +539,9 @@
       "correct_option_id": 0,
       "explanation": "Beowulf is an epic poem of exactly 3,182 lines preserved in the Nowell Codex.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-33",
@@ -491,7 +555,9 @@
       "correct_option_id": 0,
       "explanation": "King Hrothgar's royal mead-hall in Denmark is named Heorot.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-34",
@@ -505,7 +571,9 @@
       "correct_option_id": 0,
       "explanation": "Grendel terrorizes Heorot for twelve winters before Beowulf defeats him.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-35",
@@ -519,7 +587,9 @@
       "correct_option_id": 1,
       "explanation": "Wiglaf alone among Beowulf's retainers remains loyal and aids him against the dragon.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-36",
@@ -532,7 +602,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Wyrd is the Old English term for fate, the force governing human destiny.",
-      "topic": "terms"
+      "topic": "terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-37",
@@ -546,7 +618,9 @@
       "correct_option_id": 3,
       "explanation": "The comitatus code defines the mutual loyalty and ring-giving bond between lord and retainers.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-38",
@@ -560,7 +634,9 @@
       "correct_option_id": 2,
       "explanation": "Earl Byrhtnoth led the Anglo-Saxon defenders and fell in combat at Maldon.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-maldon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-39",
@@ -574,7 +650,9 @@
       "correct_option_id": 3,
       "explanation": "Byrhtnoth yielded ground across the causeway because of ofermod, over-confidence or pride.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-maldon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-40",
@@ -588,7 +666,9 @@
       "correct_option_id": 1,
       "explanation": "King Athelstan of Wessex and his brother Edmund defeated the northern alliance at Brunanburh.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-brunanburh",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-41",
@@ -602,7 +682,9 @@
       "correct_option_id": 1,
       "explanation": "The Battle of Brunanburh is preserved as the annal entry for 937 AD in the Anglo-Saxon Chronicle.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-42",
@@ -616,7 +698,9 @@
       "correct_option_id": 2,
       "explanation": "Widsith, meaning Far-Traveler, catalogs the ancient Germanic rulers, heroes, and tribes.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "widsith",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-43",
@@ -630,7 +714,9 @@
       "correct_option_id": 2,
       "explanation": "The Wanderer is spoken by an isolated exile described as an earth-treader, an eardstapa.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-44",
@@ -644,7 +730,9 @@
       "correct_option_id": 0,
       "explanation": "The Wanderer includes a famous passage of the Ubi sunt motif beginning Hwær cwom mearg.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-45",
@@ -658,7 +746,9 @@
       "correct_option_id": 2,
       "explanation": "Deor repeats the strophic refrain Thæs ofereode, thisses swa mæg, meaning That passed over, so may this.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-46",
@@ -672,7 +762,9 @@
       "correct_option_id": 3,
       "explanation": "Scholars generally identify the decayed stone baths and walls in The Ruin as Aquae Sulis, modern Bath.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-47",
@@ -686,7 +778,9 @@
       "correct_option_id": 1,
       "explanation": "Caedmon was the cowherd at Whitby Abbey who received the divine gift of song as recorded by Bede.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-48",
@@ -700,7 +794,9 @@
       "correct_option_id": 1,
       "explanation": "Caedmon's Hymn is a nine-line devotional lyric praising God as the Creator of the cosmos.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmons-hymn",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-49",
@@ -714,7 +810,9 @@
       "correct_option_id": 3,
       "explanation": "Cynewulf wove his name in runic characters C-Y-N-E-W-U-L-F into the epilogues of his works.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-e-50",
@@ -728,7 +826,9 @@
       "correct_option_id": 0,
       "explanation": "Passages from The Dream of the Rood are inscribed in runic letters on the Ruthwell Cross in Scotland.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     }
   ]
 }

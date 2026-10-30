@@ -40,7 +40,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Sievers Type A is the commonest falling trochaic rhythm consisting of lifted then lowered syllables.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-02",
@@ -53,7 +55,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Sievers Type B represents a rising iambic pattern where unstressed dips precede stressed lifts.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-03",
@@ -66,7 +70,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "The Beasts of Battle is an oral-formulaic motif where scavenger birds and beasts herald slaughter.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-04",
@@ -79,7 +85,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "Oral-formulaic theory identifies the Hero on the Beach as a recurrent scene preceding momentous journeys.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-05",
@@ -93,7 +101,9 @@
       "correct_option_id": 0,
       "explanation": "Heofon-candel is a poetic kenning metaphorically depicting the radiant sun in the sky.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-06",
@@ -107,7 +117,9 @@
       "correct_option_id": 2,
       "explanation": "Hrothgar warns Beowulf against pride by pointing to Heremod, a Danish king who grew greedy and cruel, turned on his own men and was driven out.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-07",
@@ -121,7 +133,9 @@
       "correct_option_id": 2,
       "explanation": "Beowulf exposes Unferth as a fratricide who will suffer damnation for killing his brothers.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-08",
@@ -135,7 +149,9 @@
       "correct_option_id": 1,
       "explanation": "The celebrated ancient blade Hrunting is rendered useless against the skin of Grendel's mother.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-09",
@@ -149,7 +165,9 @@
       "correct_option_id": 1,
       "explanation": "The ancient giant blade melted down to its hilt like icicles under the burning, poisonous blood.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-10",
@@ -163,7 +181,9 @@
       "correct_option_id": 0,
       "explanation": "The lay mourns Hildeburh, a Danish princess torn between her Danish kin and her Frisian husband Finn.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-11",
@@ -177,7 +197,9 @@
       "correct_option_id": 3,
       "explanation": "The Geats rolled the dead dragon off the cliff edge, letting the ocean waters swallow the carcass.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-12",
@@ -191,7 +213,9 @@
       "correct_option_id": 1,
       "explanation": "A Geatish woman sings a dirge expressing dread of invasion, terror, slaughter, and enslavement.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-13",
@@ -205,7 +229,9 @@
       "correct_option_id": 0,
       "explanation": "The poem shifts from worldly lament for vanished glory to the eternal stability of the heavenly Father.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-14",
@@ -219,7 +245,9 @@
       "correct_option_id": 3,
       "explanation": "The poet contrasts comfortable urban life with the bitter frozen hardships of the sea-voyager.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-seafarer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-15",
@@ -233,7 +261,9 @@
       "correct_option_id": 3,
       "explanation": "Deor recalls that Theodoric held the Mauring stronghold for thirty winters, and that too passed.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-16",
@@ -247,7 +277,9 @@
       "correct_option_id": 2,
       "explanation": "The exiled wife is commanded to reside in an eordscrafu, an earth-dwelling beneath an oak tree.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-17",
@@ -261,7 +293,9 @@
       "correct_option_id": 2,
       "explanation": "The poem opens by contrasting the separate islands upon which the speaker and Wulf dwell.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-18",
@@ -274,7 +308,9 @@
       ],
       "correct_option_id": 0,
       "explanation": "Riddle 60, describing a reed-pen, directly precedes The Husband's Message in the Exeter Book.",
-      "topic": "elegies"
+      "topic": "elegies",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-19",
@@ -288,7 +324,9 @@
       "correct_option_id": 3,
       "explanation": "The poet imagines the ruined stone halls once filled with warriors enjoying wine and wealth.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-elegies",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-20",
@@ -302,7 +340,9 @@
       "correct_option_id": 0,
       "explanation": "The angelic voice bade Caedmon sing frumsceaft, meaning the first creation of the universe.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmons-hymn",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-21",
@@ -316,7 +356,9 @@
       "correct_option_id": 3,
       "explanation": "Satan boasts of his great strength and refuses to kneel as a submissive vassal to God.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-22",
@@ -330,7 +372,9 @@
       "correct_option_id": 2,
       "explanation": "Genesis B was shown by scholars to be a direct translation of a 9th-century Old Saxon poem on the Fall.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-23",
@@ -344,7 +388,9 @@
       "correct_option_id": 1,
       "explanation": "The Exodus poet casts the Israelites and Egyptians as rival armies at the dividing of the Red Sea.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-24",
@@ -358,7 +404,9 @@
       "correct_option_id": 0,
       "explanation": "Saint Helena imprisons Judas in a dry pit until he reveals where the True Cross lies buried.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-25",
@@ -372,7 +420,9 @@
       "correct_option_id": 1,
       "explanation": "Christ II adapts Pope Gregory the Great's Ascension Day sermon from his Gospel homilies.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-26",
@@ -386,7 +436,9 @@
       "correct_option_id": 2,
       "explanation": "The Rood acts as a loyal retainer that would not bow without its Lord's permission.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-27",
@@ -400,7 +452,9 @@
       "correct_option_id": 0,
       "explanation": "Verses closely matching The Dream of the Rood are carved in runic script on the Ruthwell Cross.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-28",
@@ -414,7 +468,9 @@
       "correct_option_id": 0,
       "explanation": "Andreas sails to the perilous city of Mermedonia where the citizens feast on captured foreigners.",
       "topic": "religious",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-29",
@@ -427,7 +483,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "The Phoenix adapts the Latin poem attributed to Lactantius, viewing the bird as a figure for Christ.",
-      "topic": "religious"
+      "topic": "religious",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-30",
@@ -441,7 +499,9 @@
       "correct_option_id": 2,
       "explanation": "Aldhelm of Malmesbury wrote 100 Latin Enigmata in hexameters, inspiring Old English riddlers.",
       "topic": "riddles",
-      "read": "writers-and-works"
+      "read": "writers-and-works",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-31",
@@ -454,7 +514,9 @@
       ],
       "correct_option_id": 2,
       "explanation": "The Aenigmata of Symphosius established the standard classical format for Latin and vernacular riddles.",
-      "topic": "riddles"
+      "topic": "riddles",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-32",
@@ -468,7 +530,9 @@
       "correct_option_id": 0,
       "explanation": "The poet finds it ironic that the bookworm eats the words of great men without becoming any wiser.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-33",
@@ -482,7 +546,9 @@
       "correct_option_id": 0,
       "explanation": "Riddle 26 vividly depicts parchment making: skinning, scraping, writing in ink, and gold binding.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-34",
@@ -496,7 +562,9 @@
       "correct_option_id": 0,
       "explanation": "Riddle 25 uses double entendre describing an onion that stands upright in bed and makes the lady weep.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-35",
@@ -510,7 +578,9 @@
       "correct_option_id": 1,
       "explanation": "Riddle 27 portrays mead knocking proud warriors to the earth and depriving them of strength and speech.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-36",
@@ -524,7 +594,9 @@
       "correct_option_id": 1,
       "explanation": "Riddle 16 is spoken by an anchor, which holds fast while it struggles against wind and waves.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-37",
@@ -538,7 +610,9 @@
       "correct_option_id": 3,
       "explanation": "Riddle 14 traces the journey of a bull's horn from a living beast into a sounding trumpet or mead-cup.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-38",
@@ -552,7 +626,9 @@
       "correct_option_id": 2,
       "explanation": "Riddle 35 describes the mail-shirt or byrnie, woven without wool or threads from links of iron wire.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-39",
@@ -566,7 +642,9 @@
       "correct_option_id": 3,
       "explanation": "The Old English riddles ground the genre in native Anglo-Saxon domestic life, tools, animals, and humor.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-40",
@@ -580,7 +658,9 @@
       "correct_option_id": 1,
       "explanation": "In Germanic metrics, lifted syllables bear primary stress while dropped syllables form the unstressed dips.",
       "topic": "verse",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-41",
@@ -593,7 +673,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "Sievers Type C features clashing stress in the middle of the half-line, typically scanned as x / / x.",
-      "topic": "verse"
+      "topic": "verse",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-42",
@@ -607,7 +689,9 @@
       "correct_option_id": 2,
       "explanation": "The caesura was a natural structural pause in delivery separating the a-verse from the b-verse.",
       "topic": "verse",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-43",
@@ -621,7 +705,9 @@
       "correct_option_id": 2,
       "explanation": "Heardred, son of Hygelac, was killed by Onela's Swedes; Beowulf, who then became king, later backed Eadgils against Onela.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-44",
@@ -635,7 +721,9 @@
       "correct_option_id": 0,
       "explanation": "The magnificent neck-ring given to Beowulf is compared by the scop to the famous Brosinga mene.",
       "topic": "beowulf",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-45",
@@ -649,7 +737,9 @@
       "correct_option_id": 2,
       "explanation": "The wanderer mourns his gold-wine, his beloved lord who once embraced him in the mead-hall.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-wanderer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-46",
@@ -663,7 +753,9 @@
       "correct_option_id": 3,
       "explanation": "Deor describes Ermanaric's wolfish mind and tyrannical reign over the people of the Goths.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-47",
@@ -677,7 +769,9 @@
       "correct_option_id": 1,
       "explanation": "The poem concludes that man should think upon his heavenly home and strive to reach that eternal joy.",
       "topic": "elegies",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-seafarer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-48",
@@ -691,7 +785,9 @@
       "correct_option_id": 1,
       "explanation": "The Rood laments that the scars of malicious nails remain plainly visible on its tortured wood.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-49",
@@ -705,7 +801,9 @@
       "correct_option_id": 1,
       "explanation": "Juliana refuses to marry the heathen Eleusius and is martyred for her faith.",
       "topic": "religious",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-2-m-50",
@@ -719,7 +817,9 @@
       "correct_option_id": 0,
       "explanation": "The Exeter Book holds the preeminent and most extensive collection of vernacular riddles in early medieval Europe.",
       "topic": "riddles",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english-riddles",
+      "periodId": "anglo-saxon"
     }
   ]
 }

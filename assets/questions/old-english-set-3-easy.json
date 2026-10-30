@@ -37,7 +37,9 @@
       "correct_option_id": 2,
       "explanation": "Alfred the Great sought to restore learning and literacy in England by translating key Latin texts into Old English and promoting vernacular education.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-02",
@@ -51,7 +53,9 @@
       "correct_option_id": 3,
       "explanation": "Alfred translated Gregory the Great's Liber Regulae Pastoralis (Pastoral Care) to serve as an indispensable guide for English pastors and clergy.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-03",
@@ -65,7 +69,9 @@
       "correct_option_id": 1,
       "explanation": "In the Preface, Alfred lamented that learning had decayed so much in England that very few clergy south of the Humber could read or understand Latin.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Pastoral_Care"
+      "src": "https://en.wikipedia.org/wiki/Pastoral_Care",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-04",
@@ -79,7 +85,9 @@
       "correct_option_id": 2,
       "explanation": "Boethius's Consolation of Philosophy was translated and adapted into Old English during Alfred's reign to provide moral and philosophical instruction.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-05",
@@ -93,7 +101,9 @@
       "correct_option_id": 1,
       "explanation": "Bishop Asser of Saint David's entered Alfred's court around 885 and wrote the Vita Ælfredi (Life of King Alfred) in 893.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-06",
@@ -107,7 +117,9 @@
       "correct_option_id": 0,
       "explanation": "Orosius's 5th-century historical work was translated into Old English to provide an overview of world history for Anglo-Saxon readers.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-07",
@@ -121,7 +133,9 @@
       "correct_option_id": 3,
       "explanation": "The Alfred Jewel bears the inscription meaning 'Alfred ordered me made' and was likely the handle of an æstel (pointer) presented with his books.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-08",
@@ -135,7 +149,9 @@
       "correct_option_id": 0,
       "explanation": "In 886, following his reoccupation and fortification of London, Alfred changed his official style to Rex Angulsaxonum ('King of the Anglo-Saxons').",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-09",
@@ -149,7 +165,9 @@
       "correct_option_id": 1,
       "explanation": "Asser records that Alfred's mother offered a decorated book of English poetry to whichever son could learn it first, and Alfred won the prize.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-10",
@@ -163,7 +181,9 @@
       "correct_option_id": 3,
       "explanation": "Alfred explained that he translated 'hwilum word be worde, hwilum andgit of andgiete' ('sometimes word by word, sometimes sense by sense').",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius"
+      "src": "https://en.wikipedia.org/wiki/Old_English_Boethius",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-11",
@@ -177,7 +197,9 @@
       "correct_option_id": 2,
       "explanation": "Augustine's Soliloquies was adapted into Old English prose as the Blostman ('Blooms') during the Alfredian cultural revival.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-12",
@@ -191,7 +213,9 @@
       "correct_option_id": 0,
       "explanation": "Asser's biography explicitly records that Alfred was born at the royal estate of Wantage in Berkshire.",
       "topic": "alfred",
-      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great"
+      "src": "https://en.wikipedia.org/wiki/Alfred_the_Great",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-13",
@@ -205,7 +229,9 @@
       "correct_option_id": 3,
       "explanation": "The compilation of the original version of the Anglo-Saxon Chronicle began in Wessex during the reign of King Alfred the Great around the early 890s.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-14",
@@ -219,7 +245,9 @@
       "correct_option_id": 1,
       "explanation": "Unlike most continental annals of the early Middle Ages which were in Latin, the Anglo-Saxon Chronicle was uniquely written in the vernacular Old English.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-15",
@@ -233,7 +261,9 @@
       "correct_option_id": 0,
       "explanation": "The introductory annals of the Anglo-Saxon Chronicle begin at 60 BC with Julius Caesar's campaigns in Britain.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-16",
@@ -247,7 +277,9 @@
       "correct_option_id": 2,
       "explanation": "MS A (Corpus Christi College Cambridge MS 173), known as the Parker Chronicle, is the earliest surviving manuscript of the Chronicle.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-17",
@@ -261,7 +293,9 @@
       "correct_option_id": 2,
       "explanation": "MS E, the Peterborough Chronicle (or Laud Chronicle), was maintained by monks at Peterborough Abbey until 1154.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-18",
@@ -275,7 +309,9 @@
       "correct_option_id": 3,
       "explanation": "The Chronicle organizes historical records into chronological annals arranged year by year.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-19",
@@ -289,7 +325,9 @@
       "correct_option_id": 0,
       "explanation": "The Battle of Brunanburh is an Old English poem entered into the Chronicle under the year 937 celebrating King Æthelstan's victory over a coalition of Scots and Vikings.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "the-battle-of-brunanburh",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-20",
@@ -303,7 +341,9 @@
       "correct_option_id": 1,
       "explanation": "Matthew Parker, Archbishop of Canterbury from 1559 to 1575, acquired the manuscript now named the Parker Chronicle and bequeathed it to Corpus Christi College.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-21",
@@ -317,7 +357,9 @@
       "correct_option_id": 2,
       "explanation": "Nine manuscripts of the Anglo-Saxon Chronicle survive, traditionally designated by modern scholars with the sigla A through I.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-22",
@@ -331,7 +373,9 @@
       "correct_option_id": 0,
       "explanation": "The Peterborough Chronicle's final entries from 1132 to 1154 demonstrate the transition of English from late Old English into early Middle English.",
       "topic": "chronicle",
-      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle"
+      "src": "https://en.wikipedia.org/wiki/Peterborough_Chronicle",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-23",
@@ -345,7 +389,9 @@
       "correct_option_id": 3,
       "explanation": "In 1005, Ælfric moved to Eynsham Abbey in Oxfordshire to become its first abbot, which is why he is known as Ælfric of Eynsham.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-24",
@@ -359,7 +405,9 @@
       "correct_option_id": 0,
       "explanation": "Ælfric was educated at Winchester under Saint Æthelwold, Bishop of Winchester, one of the primary leaders of the Benedictine Reform.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-25",
@@ -373,7 +421,9 @@
       "correct_option_id": 3,
       "explanation": "Ælfric composed two series of Sermones Catholici (Catholic Homilies) in the early 990s, dedicated to Sigeric, Archbishop of Canterbury.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-26",
@@ -387,7 +437,9 @@
       "correct_option_id": 1,
       "explanation": "Ælfric's Colloquy was designed as an imaginative classroom conversation between teacher and working pupils to practice spoken Latin.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-27",
@@ -401,7 +453,9 @@
       "correct_option_id": 2,
       "explanation": "Around 995, Ælfric adapted Latin grammars into Old English, creating the first vernacular grammar of Latin in Western Europe.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-28",
@@ -415,7 +469,9 @@
       "correct_option_id": 1,
       "explanation": "Ælfric wrote the Lives of Saints around 996–997 as a third series of sermons focusing on the feasts of individual saints and martyrs.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-29",
@@ -429,7 +485,9 @@
       "correct_option_id": 0,
       "explanation": "Ealdorman Æthelweard and his son Æthelmær were Ælfric's chief lay patrons, encouraging him to translate biblical books and write homilies.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-30",
@@ -443,7 +501,9 @@
       "correct_option_id": 1,
       "explanation": "In 987, Ælfric was sent from Winchester to the newly founded Cerne Abbey in Dorset to teach the Benedictine monks there.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-31",
@@ -457,7 +517,9 @@
       "correct_option_id": 2,
       "explanation": "Ælfric translated significant portions of Genesis and other early biblical books, contributing to the Old English Hexateuch.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-32",
@@ -471,7 +533,9 @@
       "correct_option_id": 0,
       "explanation": "Ælfric flourished c. 955 to c. 1010, the peak period of the Benedictine monastic revival in late Anglo-Saxon England.",
       "topic": "aelfric",
-      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham"
+      "src": "https://en.wikipedia.org/wiki/%C3%86lfric_of_Eynsham",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-33",
@@ -485,7 +549,9 @@
       "correct_option_id": 1,
       "explanation": "Wulfstan was consecrated Bishop of London in 996 and was elevated to Archbishop of York in 1002, holding the post until his death in 1023.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-34",
@@ -499,7 +565,9 @@
       "correct_option_id": 2,
       "explanation": "The Sermo Lupi ad Anglos ('The Sermon of the Wolf to the English') was written by Wulfstan in 1014 as a fiery call to national repentance.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos"
+      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-35",
@@ -513,7 +581,9 @@
       "correct_option_id": 0,
       "explanation": "Wulfstan styled himself 'Lupus' (the Latin translation of the first element in his Old English name, wulf) in his episcopal letters and sermons.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-36",
@@ -527,7 +597,9 @@
       "correct_option_id": 2,
       "explanation": "Wulfstan drafted the royal legal codes promulgated by King Æthelred between 1008 and 1016 and subsequent law codes for King Cnut.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-37",
@@ -541,7 +613,9 @@
       "correct_option_id": 1,
       "explanation": "The Institutes of Polity is Wulfstan's major treatise detailing the moral and social responsibilities of every class from the king down to commoners.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-38",
@@ -555,7 +629,9 @@
       "correct_option_id": 3,
       "explanation": "Wulfstan preached that the Danish raids were God's scourge sent to punish the English for their treachery, injustice, and neglect of religious duties.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos"
+      "src": "https://en.wikipedia.org/wiki/Sermo_Lupi_ad_Anglos",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-39",
@@ -569,7 +645,9 @@
       "correct_option_id": 0,
       "explanation": "Following his death at York in 1023, Wulfstan's body was taken for burial to the monastery at Ely in accordance with his personal wishes.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-40",
@@ -583,7 +661,9 @@
       "correct_option_id": 1,
       "explanation": "Wulfstan's earliest sermons focused heavily on the imminent arrival of the Antichrist and the tribulations expected before Judgment Day.",
       "topic": "wulfstan",
-      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)"
+      "src": "https://en.wikipedia.org/wiki/Wulfstan_(died_1023)",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-41",
@@ -597,7 +677,9 @@
       "correct_option_id": 3,
       "explanation": "The Law of Æthelberht (c. 600) was issued in Kent and represents the earliest surviving legal code in any Germanic language.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Law_of_%C3%86thelberht"
+      "src": "https://en.wikipedia.org/wiki/Law_of_%C3%86thelberht",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-42",
@@ -611,7 +693,9 @@
       "correct_option_id": 0,
       "explanation": "Wergild ('man-price') was the legally established monetary compensation that a killer or their family had to pay to the victim's kin to prevent a blood feud.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-43",
@@ -625,7 +709,9 @@
       "correct_option_id": 3,
       "explanation": "Alfred's law code is known as the Domboc ('Book of Judgements' or Doom Book), which synthesized biblical laws with previous English codes.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-44",
@@ -639,7 +725,9 @@
       "correct_option_id": 2,
       "explanation": "Compurgation was a standard procedure where a defendant produced a required number of oath-helpers to testify to the credibility of their oath of innocence.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-45",
@@ -653,7 +741,9 @@
       "correct_option_id": 3,
       "explanation": "The Textus Roffensis (the 'Rochester Book') is the only surviving manuscript containing the Law of Æthelberht and other early Kentish codes.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Textus_Roffensis"
+      "src": "https://en.wikipedia.org/wiki/Textus_Roffensis",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-46",
@@ -667,7 +757,9 @@
       "correct_option_id": 2,
       "explanation": "Trial by ordeal was an appeal to God to reveal innocence or guilt through physical tests supervised by clergy, such as carrying a heated iron.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-47",
@@ -681,7 +773,9 @@
       "correct_option_id": 0,
       "explanation": "Bot was the legal compensation paid to an injured party or victim to repair the damage done and prevent violent retaliation.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-48",
@@ -695,7 +789,9 @@
       "correct_option_id": 1,
       "explanation": "While bot was paid to the injured party, a wite was a punitive fine paid to the king or presiding lord for violating public peace.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-49",
@@ -709,7 +805,9 @@
       "correct_option_id": 2,
       "explanation": "Mund (protection or peace) was a foundational legal concept; breach of an individual's mund required payment of compensation (mundbyrd).",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-3-e-50",
@@ -723,7 +821,9 @@
       "correct_option_id": 3,
       "explanation": "King Ine of Wessex issued an extensive law code c. 694, which survives because King Alfred appended it to his own late 9th-century law code.",
       "topic": "laws",
-      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law"
+      "src": "https://en.wikipedia.org/wiki/Anglo-Saxon_law",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     }
   ]
 }

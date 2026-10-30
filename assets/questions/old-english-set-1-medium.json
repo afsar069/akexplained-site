@@ -43,7 +43,9 @@
       "correct_option_id": 1,
       "explanation": "Alfred added geographical accounts of northern voyages narrated by the voyagers Ohthere and Wulfstan.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-02",
@@ -57,7 +59,9 @@
       "correct_option_id": 3,
       "explanation": "The Beowulf poet states that Hrothgar endured Grendel's nightly depredations for twelve winters.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-03",
@@ -71,7 +75,9 @@
       "correct_option_id": 3,
       "explanation": "Beowulf discovers an ancient giant sword hanging in the cave and uses it to slay Grendel's mother.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-04",
@@ -85,7 +91,9 @@
       "correct_option_id": 3,
       "explanation": "An outcast thief takes a golden cup from the dragon's barrow, provoking its fiery retribution.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-05",
@@ -99,7 +107,9 @@
       "correct_option_id": 0,
       "explanation": "The text identifies Grendel and kindred monsters as cursed descendants of the biblical fratricide Cain.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-06",
@@ -113,7 +123,9 @@
       "correct_option_id": 1,
       "explanation": "The battle took place across a tidal causeway spanning the River Blackwater in Essex.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-maldon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-07",
@@ -127,7 +139,9 @@
       "correct_option_id": 2,
       "explanation": "Godric leaps onto Byrhtnoth's own horse and flees, deceiving many into believing their lord has fled.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-maldon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-08",
@@ -141,7 +155,9 @@
       "correct_option_id": 1,
       "explanation": "Athelstan defeated Olaf Guthfrithson of Dublin, Constantine II of Scots, and Owain of Strathclyde.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-battle-of-brunanburh",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-09",
@@ -154,7 +170,9 @@
       ],
       "correct_option_id": 1,
       "explanation": "The Phoenix in the Exeter Book adapts Lactantius's Latin poem De Ave Phoenice as a Christian allegory.",
-      "topic": "poetry"
+      "topic": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-10",
@@ -168,7 +186,9 @@
       "correct_option_id": 0,
       "explanation": "Elene narrates Saint Helena's journey to Jerusalem and her miraculous discovery of the True Cross.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-11",
@@ -182,7 +202,9 @@
       "correct_option_id": 3,
       "explanation": "The visitor commanded Caedmon, sing me frumsceaft, bidding him sing of the creation of the world.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmon",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-12",
@@ -196,7 +218,9 @@
       "correct_option_id": 1,
       "explanation": "Genesis B is an interpolated translation from Old Saxon that vividly depicts Lucifer's ambition and fall.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "junius-manuscript",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-13",
@@ -210,7 +234,9 @@
       "correct_option_id": 0,
       "explanation": "In The Wife's Lament, the speaker lives isolated in an earth-cave or eordscrafu beneath an oak tree.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-14",
@@ -223,7 +249,9 @@
       ],
       "correct_option_id": 3,
       "explanation": "The carved wooden staff carries the secret runic sequence S, R, EA, W, and M to verify the husband's vow.",
-      "topic": "poetry"
+      "topic": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-15",
@@ -237,7 +265,9 @@
       "correct_option_id": 3,
       "explanation": "Deor laments that his lord granted his court lands and position to Heorrenda, a rival bard.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-16",
@@ -251,7 +281,9 @@
       "correct_option_id": 2,
       "explanation": "Deor begins his catalog of historical sorrows by recalling the cruel captivity of Wayland the Smith.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "deor",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-17",
@@ -265,7 +297,9 @@
       "correct_option_id": 2,
       "explanation": "The Vercelli Book contains Cynewulf's runic signatures in Elene and The Fates of the Apostles.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-18",
@@ -279,7 +313,9 @@
       "correct_option_id": 0,
       "explanation": "The poem fuses heroic comitatus imagery with theology, showing Christ as a heroic warrior mounting the Cross.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-dream-of-the-rood",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-19",
@@ -293,7 +329,9 @@
       "correct_option_id": 3,
       "explanation": "Both texts dramatize the tragic night attack and blood-feud between Danish guests and Frisian hosts.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-20",
@@ -307,7 +345,9 @@
       "correct_option_id": 0,
       "explanation": "King Aethelberht of Kent received St. Augustine in 597 AD and converted to Christianity.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-21",
@@ -321,7 +361,9 @@
       "correct_option_id": 3,
       "explanation": "The Benedictine monastic reform was led by Dunstan, Aethelwold of Winchester, and Oswald of Worcester.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-22",
@@ -335,7 +377,9 @@
       "correct_option_id": 2,
       "explanation": "Wulfstan preaches that the devastating Danish raids represent God's wrath upon a sinful English nation.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-23",
@@ -349,7 +393,9 @@
       "correct_option_id": 1,
       "explanation": "Wulfstan's passionate sermons feature rhythmic, alliterating word-pairs like scamu ond scand.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-24",
@@ -363,7 +409,9 @@
       "correct_option_id": 0,
       "explanation": "Aelfric's Colloquy is a bilingual classroom dialogue between a teacher and pupils playing tradesmen.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-25",
@@ -377,7 +425,9 @@
       "correct_option_id": 1,
       "explanation": "Abbot Aelfric composed The Catholic Homilies in two series of forty sermons each.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-26",
@@ -391,7 +441,9 @@
       "correct_option_id": 2,
       "explanation": "Aelfric developed an alliterative prose style that borrowed rhythmic cadence from poetic alliteration.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "aelfric",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-27",
@@ -405,7 +457,9 @@
       "correct_option_id": 0,
       "explanation": "The Cotton collection suffered severe damage during the Ashburnham House fire of 1731.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "beowulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-28",
@@ -419,7 +473,9 @@
       "correct_option_id": 0,
       "explanation": "The Nowell Codex contains the Passion or Life of Saint Christopher alongside Beowulf and Judith.",
       "topic": "manuscripts",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "nowell-codex",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-29",
@@ -433,7 +489,9 @@
       "correct_option_id": 2,
       "explanation": "King Alfred's famous educational preface appears in his translation of Gregory's Pastoral Care.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-30",
@@ -447,7 +505,9 @@
       "correct_option_id": 2,
       "explanation": "The Peterborough Chronicle continued recording English history until 1154 AD.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-31",
@@ -461,7 +521,9 @@
       "correct_option_id": 2,
       "explanation": "The fourth stressed syllable, which is the second stress in the off-verse, almost never alliterates.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-32",
@@ -475,7 +537,9 @@
       "correct_option_id": 0,
       "explanation": "In Anglo-Saxon poetic rules, all vowels alliterate with any other vowel across the caesura.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-33",
@@ -489,7 +553,9 @@
       "correct_option_id": 0,
       "explanation": "Consonant clusters like sc, sp, and st do not alliterate with single s but only with themselves.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-34",
@@ -503,7 +569,9 @@
       "correct_option_id": 0,
       "explanation": "Variation is the structural repetition of a single concept through parallel epithets.",
       "topic": "terms",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-35",
@@ -517,7 +585,9 @@
       "correct_option_id": 1,
       "explanation": "Caedmon consecutively invokes God using epithets including Wuldorfæder, meaning Glory-father.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "caedmons-hymn",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-36",
@@ -531,7 +601,9 @@
       "correct_option_id": 1,
       "explanation": "The traveling scop in Widsith mentions visiting the court of Ermanaric the Goth.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "widsith",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-37",
@@ -545,7 +617,9 @@
       "correct_option_id": 3,
       "explanation": "The heroic speeches in Waldere encourage him as he prepares for combat against Guthhere.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-38",
@@ -559,7 +633,9 @@
       "correct_option_id": 2,
       "explanation": "The first section describes winter seafaring hardships, while the second becomes a homily on the soul's journey.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "the-seafarer",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-39",
@@ -573,7 +649,9 @@
       "correct_option_id": 3,
       "explanation": "In Wulf and Eadwacer, the speaker is separated from her lover Wulf and bound to her unloved husband Eadwacer.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-40",
@@ -587,7 +665,9 @@
       "correct_option_id": 1,
       "explanation": "The Ruin meditates on crumbling Roman stone masonry, shattered tiles, and collapsed bath complexes.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-41",
@@ -601,7 +681,9 @@
       "correct_option_id": 1,
       "explanation": "Andreas narrates Saint Andrew's miraculous mission to rescue Saint Matthew from the Mermedonians.",
       "topic": "poetry",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-42",
@@ -615,7 +697,9 @@
       "correct_option_id": 2,
       "explanation": "Juliana recounts the heroic suffering and martyrdom of Saint Juliana as she resists pagan advances.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "cynewulf",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-43",
@@ -629,7 +713,9 @@
       "correct_option_id": 2,
       "explanation": "A royal counsellor addresses King Edwin of Northumbria, comparing human life to a sparrow flying through a banquet hall.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "bede",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-44",
@@ -643,7 +729,9 @@
       "correct_option_id": 0,
       "explanation": "Bede lived and studied in the Northumbrian twin monastery of Wearmouth-Jarrow.",
       "topic": "ground",
-      "read": "religion"
+      "read": "religion",
+      "topicId": "bede",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-45",
@@ -657,7 +745,9 @@
       "correct_option_id": 2,
       "explanation": "Daniel paraphrases the Old Testament book, detailing the furnace ordeal and Belshazzar's feast.",
       "topic": "poetry",
-      "read": "poetry"
+      "read": "poetry",
+      "topicId": "junius-manuscript",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-46",
@@ -671,7 +761,9 @@
       "correct_option_id": 3,
       "explanation": "Wræclast refers to the track or path of exile endured by solitary speakers in Old English elegies.",
       "topic": "terms",
-      "read": "key-terms"
+      "read": "key-terms",
+      "topicId": "old-english",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-47",
@@ -685,7 +777,9 @@
       "correct_option_id": 1,
       "explanation": "Archbishop Wulfstan served as chief legal draftsman for both King Aethelred and King Cnut.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "wulfstan",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-48",
@@ -699,7 +793,9 @@
       "correct_option_id": 1,
       "explanation": "Alfred adapted Boethius's philosophical dialogue into Christian theological terms regarding providence and wyrd.",
       "topic": "prose",
-      "read": "prose"
+      "read": "prose",
+      "topicId": "king-alfred",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-49",
@@ -713,7 +809,9 @@
       "correct_option_id": 3,
       "explanation": "Caedmon composed his hymn in his native Northumbrian dialect, though most surviving copies are West Saxon.",
       "topic": "terms",
-      "read": "the-language"
+      "read": "the-language",
+      "topicId": "caedmons-hymn",
+      "periodId": "anglo-saxon"
     },
     {
       "id": "old-english-set-1-m-50",
@@ -727,7 +825,9 @@
       "correct_option_id": 0,
       "explanation": "The scholar Franciscus Junius acquired and published the manuscript in Amsterdam in 1655.",
       "topic": "criticism",
-      "read": "how-the-writing-survived"
+      "read": "how-the-writing-survived",
+      "topicId": "junius-manuscript",
+      "periodId": "anglo-saxon"
     }
   ]
 }
