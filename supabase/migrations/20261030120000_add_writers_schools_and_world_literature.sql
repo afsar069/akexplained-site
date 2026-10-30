@@ -1,0 +1,282 @@
+-- Migration: add 222 writers, 3 school nodes and the World Literature area.
+--
+-- Why: the questions already on the site name many writers (and three literary
+-- schools) that have no node in the topic tree. Without a node, a question can
+-- only be tagged to its period. With one, it is tagged to the writer, and the
+-- mastery meter can say more than "Edwardian period".
+--
+-- Source: supabase/data/taxonomy-master-reference.csv (the 226 new rows) and the
+-- per-area CSVs next to it. Every name is one the owner approved. Nothing here
+-- is invented: each person is named in an existing question.
+--
+-- What is added (226 rows):
+--   British Literature ........... 210  (207 writers + 3 schools: Spasmodic School,
+--                                       Satanic School, Blue Stockings), each under its age node
+--   Literary Criticism and Theory .  3  (A. C. Bradley, F. R. Leavis, Q. D. Leavis),
+--                                       directly under the area, no school invented
+--   American Literature ..........  2  (Amy Lowell, Henry Miller), under american-modernism
+--   English Language and ELT .....  1  (Robert Lowth), directly under the area
+--   World Literature (new area) .. 10  (the area + 9 non-English writers)
+--   Total: 226 new rows. Before: 1476. After: 1702.
+--
+-- Placement follows the existing convention: a writer sits directly under its
+-- age (not under the sub-period), and a school is a sibling of the writers.
+-- The three schools are kind = 'concept', as the owner asked.
+--
+-- sort_order: only orders siblings. New British rows start at 1100 (the old
+-- blocks have no free numbers), then 2208, 3182, 7102, 8001. None is used twice.
+--
+-- Runs AFTER 20261029170000_add_british_sub_periods.sql. Every parent below
+-- already exists, except world-literature, which is inserted first.
+--
+-- Idempotent: `on conflict (id) do nothing`. A second run inserts nothing.
+-- Wrapped in a transaction: all 226 rows land, or none do.
+
+begin;
+
+insert into public.topics (id, name, parent_id, kind, sort_order) values
+  -- World Literature (new area)
+  ('world-literature', 'World Literature', null, 'area', 8001),
+  ('anton-chekhov', 'Anton Chekhov', 'world-literature', 'writer', 8002),
+  ('desiderius-erasmus', 'Desiderius Erasmus', 'world-literature', 'writer', 8003),
+  ('francesco-petrarch', 'Francesco Petrarch', 'world-literature', 'writer', 8004),
+  ('giovanni-pico-della-mirandola', 'Giovanni Pico della Mirandola', 'world-literature', 'writer', 8005),
+  ('henrik-ibsen', 'Henrik Ibsen', 'world-literature', 'writer', 8006),
+  ('hugh-of-saint-victor', 'Hugh of Saint Victor', 'world-literature', 'writer', 8007),
+  ('jean-bodel', 'Jean Bodel', 'world-literature', 'writer', 8008),
+  ('jean-froissart', 'Jean Froissart', 'world-literature', 'writer', 8009),
+  ('moliere', 'Molière', 'world-literature', 'writer', 8010),
+  -- Literary Criticism and Theory: critics, directly under the area
+  ('a-c-bradley', 'A. C. Bradley', 'literary-criticism-and-theory', 'writer', 2208),
+  ('f-r-leavis', 'F. R. Leavis', 'literary-criticism-and-theory', 'writer', 2209),
+  ('q-d-leavis', 'Q. D. Leavis', 'literary-criticism-and-theory', 'writer', 2210),
+  -- American Literature: under American Modernism (1914-1945)
+  ('amy-lowell', 'Amy Lowell', 'american-modernism', 'writer', 3182),
+  ('henry-miller', 'Henry Miller', 'american-modernism', 'writer', 3183),
+  -- English Language, Linguistics and ELT: directly under the area
+  ('robert-lowth', 'Robert Lowth', 'english-language-and-elt', 'writer', 7102),
+  -- British Literature, under middle-english
+  ('alexander-barclay', 'Alexander Barclay', 'middle-english', 'writer', 1100),
+  ('dan-michel', 'Dan Michel', 'middle-english', 'writer', 1101),
+  ('gavin-douglas', 'Gavin Douglas', 'middle-english', 'writer', 1102),
+  ('geoffrei-gaimar', 'Geoffrei Gaimar', 'middle-english', 'writer', 1103),
+  ('geoffrey-of-monmouth', 'Geoffrey of Monmouth', 'middle-english', 'writer', 1104),
+  ('henry-medwall', 'Henry Medwall', 'middle-english', 'writer', 1105),
+  ('henry-of-huntingdon', 'Henry of Huntingdon', 'middle-english', 'writer', 1106),
+  ('john-lydgate', 'John Lydgate', 'middle-english', 'writer', 1107),
+  ('john-mandeville', 'John Mandeville', 'middle-english', 'writer', 1108),
+  ('orm', 'Orm', 'middle-english', 'writer', 1109),
+  ('philippe-de-thaon', 'Philippe de Thaon', 'middle-english', 'writer', 1110),
+  ('robert-henryson', 'Robert Henryson', 'middle-english', 'writer', 1111),
+  ('robert-mannyng', 'Robert Mannyng', 'middle-english', 'writer', 1112),
+  ('robert-of-gloucester', 'Robert of Gloucester', 'middle-english', 'writer', 1113),
+  ('stephen-hawes', 'Stephen Hawes', 'middle-english', 'writer', 1114),
+  ('thomas-chestre', 'Thomas Chestre', 'middle-english', 'writer', 1115),
+  ('thomas-hoccleve', 'Thomas Hoccleve', 'middle-english', 'writer', 1116),
+  ('william-dunbar', 'William Dunbar', 'middle-english', 'writer', 1117),
+  ('william-of-malmesbury', 'William of Malmesbury', 'middle-english', 'writer', 1118),
+  -- British Literature, under renaissance
+  ('e-k', 'E. K.', 'renaissance', 'writer', 1119),
+  ('george-gascoigne', 'George Gascoigne', 'renaissance', 'writer', 1120),
+  ('george-peele', 'George Peele', 'renaissance', 'writer', 1121),
+  ('george-puttenham', 'George Puttenham', 'renaissance', 'writer', 1122),
+  ('john-foxe', 'John Foxe', 'renaissance', 'writer', 1123),
+  ('john-heywood', 'John Heywood', 'renaissance', 'writer', 1124),
+  ('john-skelton', 'John Skelton', 'renaissance', 'writer', 1125),
+  ('michael-drayton', 'Michael Drayton', 'renaissance', 'writer', 1126),
+  ('nicholas-udall', 'Nicholas Udall', 'renaissance', 'writer', 1127),
+  ('richard-hakluyt', 'Richard Hakluyt', 'renaissance', 'writer', 1128),
+  ('richard-hooker', 'Richard Hooker', 'renaissance', 'writer', 1129),
+  ('samuel-daniel', 'Samuel Daniel', 'renaissance', 'writer', 1130),
+  ('stephen-gosson', 'Stephen Gosson', 'renaissance', 'writer', 1131),
+  ('thomas-campion', 'Thomas Campion', 'renaissance', 'writer', 1132),
+  ('thomas-dekker', 'Thomas Dekker', 'renaissance', 'writer', 1133),
+  ('thomas-elyot', 'Thomas Elyot', 'renaissance', 'writer', 1134),
+  ('thomas-lodge', 'Thomas Lodge', 'renaissance', 'writer', 1135),
+  ('william-camden', 'William Camden', 'renaissance', 'writer', 1136),
+  ('william-webbe', 'William Webbe', 'renaissance', 'writer', 1137),
+  -- British Literature, under jacobean
+  ('aemilia-lanyer', 'Aemilia Lanyer', 'jacobean', 'writer', 1138),
+  ('charles-cotton', 'Charles Cotton', 'jacobean', 'writer', 1139),
+  ('edmund-waller', 'Edmund Waller', 'jacobean', 'writer', 1140),
+  ('edward-herbert', 'Edward Herbert', 'jacobean', 'writer', 1141),
+  ('george-chapman', 'George Chapman', 'jacobean', 'writer', 1142),
+  ('henry-wotton', 'Henry Wotton', 'jacobean', 'writer', 1143),
+  ('james-harrington', 'James Harrington', 'jacobean', 'writer', 1144),
+  ('james-shirley', 'James Shirley', 'jacobean', 'writer', 1145),
+  ('john-denham', 'John Denham', 'jacobean', 'writer', 1146),
+  ('john-florio', 'John Florio', 'jacobean', 'writer', 1147),
+  ('john-marston', 'John Marston', 'jacobean', 'writer', 1148),
+  ('john-selden', 'John Selden', 'jacobean', 'writer', 1149),
+  ('katherine-philips', 'Katherine Philips', 'jacobean', 'writer', 1150),
+  ('margaret-cavendish', 'Margaret Cavendish', 'jacobean', 'writer', 1151),
+  ('philip-massinger', 'Philip Massinger', 'jacobean', 'writer', 1152),
+  ('richard-brome', 'Richard Brome', 'jacobean', 'writer', 1153),
+  ('sidney-godolphin', 'Sidney Godolphin', 'jacobean', 'writer', 1154),
+  ('thomas-fuller', 'Thomas Fuller', 'jacobean', 'writer', 1155),
+  ('thomas-heywood', 'Thomas Heywood', 'jacobean', 'writer', 1156),
+  ('thomas-overbury', 'Thomas Overbury', 'jacobean', 'writer', 1157),
+  ('william-davenant', 'William Davenant', 'jacobean', 'writer', 1158),
+  ('william-prynne', 'William Prynne', 'jacobean', 'writer', 1159),
+  ('william-rowley', 'William Rowley', 'jacobean', 'writer', 1160),
+  -- British Literature, under restoration
+  ('charles-sackville', 'Charles Sackville', 'restoration', 'writer', 1161),
+  ('charles-sedley', 'Charles Sedley', 'restoration', 'writer', 1162),
+  ('edward-hyde', 'Edward Hyde', 'restoration', 'writer', 1163),
+  ('george-villiers', 'George Villiers', 'restoration', 'writer', 1164),
+  ('john-evelyn', 'John Evelyn', 'restoration', 'writer', 1165),
+  ('john-pomfret', 'John Pomfret', 'restoration', 'writer', 1166),
+  ('john-vanbrugh', 'John Vanbrugh', 'restoration', 'writer', 1167),
+  ('joseph-glanvill', 'Joseph Glanvill', 'restoration', 'writer', 1168),
+  ('nathaniel-lee', 'Nathaniel Lee', 'restoration', 'writer', 1169),
+  ('richard-flecknoe', 'Richard Flecknoe', 'restoration', 'writer', 1170),
+  ('thomas-killigrew', 'Thomas Killigrew', 'restoration', 'writer', 1171),
+  ('thomas-rymer', 'Thomas Rymer', 'restoration', 'writer', 1172),
+  ('thomas-shadwell', 'Thomas Shadwell', 'restoration', 'writer', 1173),
+  ('william-temple', 'William Temple', 'restoration', 'writer', 1174),
+  -- British Literature, under augustan-age
+  ('blue-stockings', 'Blue Stockings', 'augustan-age', 'concept', 1175),
+  ('anne-finch', 'Anne Finch', 'augustan-age', 'writer', 1176),
+  ('charlotte-lennox', 'Charlotte Lennox', 'augustan-age', 'writer', 1177),
+  ('christopher-smart', 'Christopher Smart', 'augustan-age', 'writer', 1178),
+  ('clara-reeve', 'Clara Reeve', 'augustan-age', 'writer', 1179),
+  ('colley-cibber', 'Colley Cibber', 'augustan-age', 'writer', 1180),
+  ('david-garrick', 'David Garrick', 'augustan-age', 'writer', 1181),
+  ('david-hume', 'David Hume', 'augustan-age', 'writer', 1182),
+  ('edward-gibbon', 'Edward Gibbon', 'augustan-age', 'writer', 1183),
+  ('elizabeth-montagu', 'Elizabeth Montagu', 'augustan-age', 'writer', 1184),
+  ('george-berkeley', 'George Berkeley', 'augustan-age', 'writer', 1185),
+  ('george-colman', 'George Colman', 'augustan-age', 'writer', 1186),
+  ('george-lillo', 'George Lillo', 'augustan-age', 'writer', 1187),
+  ('hannah-cowley', 'Hannah Cowley', 'augustan-age', 'writer', 1188),
+  ('henry-mackenzie', 'Henry Mackenzie', 'augustan-age', 'writer', 1189),
+  ('hugh-kelly', 'Hugh Kelly', 'augustan-age', 'writer', 1190),
+  ('isaac-watts', 'Isaac Watts', 'augustan-age', 'writer', 1191),
+  ('james-beattie', 'James Beattie', 'augustan-age', 'writer', 1192),
+  ('john-arbuthnot', 'John Arbuthnot', 'augustan-age', 'writer', 1193),
+  ('john-dennis', 'John Dennis', 'augustan-age', 'writer', 1194),
+  ('john-dyer', 'John Dyer', 'augustan-age', 'writer', 1195),
+  ('john-gay', 'John Gay', 'augustan-age', 'writer', 1196),
+  ('john-newton', 'John Newton', 'augustan-age', 'writer', 1197),
+  ('joseph-warton', 'Joseph Warton', 'augustan-age', 'writer', 1198),
+  ('mark-akenside', 'Mark Akenside', 'augustan-age', 'writer', 1199),
+  ('mary-wortley-montagu', 'Mary Wortley Montagu', 'augustan-age', 'writer', 1200),
+  ('matthew-prior', 'Matthew Prior', 'augustan-age', 'writer', 1201),
+  ('nicholas-rowe', 'Nicholas Rowe', 'augustan-age', 'writer', 1202),
+  ('richard-cumberland', 'Richard Cumberland', 'augustan-age', 'writer', 1203),
+  ('richard-savage', 'Richard Savage', 'augustan-age', 'writer', 1204),
+  ('robert-blair', 'Robert Blair', 'augustan-age', 'writer', 1205),
+  ('samuel-garth', 'Samuel Garth', 'augustan-age', 'writer', 1206),
+  ('sarah-fielding', 'Sarah Fielding', 'augustan-age', 'writer', 1207),
+  ('susanna-centlivre', 'Susanna Centlivre', 'augustan-age', 'writer', 1208),
+  ('thomas-parnell', 'Thomas Parnell', 'augustan-age', 'writer', 1209),
+  ('thomas-warton', 'Thomas Warton', 'augustan-age', 'writer', 1210),
+  ('william-law', 'William Law', 'augustan-age', 'writer', 1211),
+  ('william-shenstone', 'William Shenstone', 'augustan-age', 'writer', 1212),
+  ('william-whitehead', 'William Whitehead', 'augustan-age', 'writer', 1213),
+  -- British Literature, under romantic-age
+  ('satanic-school', 'Satanic School', 'romantic-age', 'concept', 1214),
+  ('charles-robert-maturin', 'Charles Robert Maturin', 'romantic-age', 'writer', 1215),
+  ('francis-jeffrey', 'Francis Jeffrey', 'romantic-age', 'writer', 1216),
+  ('john-clare', 'John Clare', 'romantic-age', 'writer', 1217),
+  ('john-polidori', 'John Polidori', 'romantic-age', 'writer', 1218),
+  ('robert-southey', 'Robert Southey', 'romantic-age', 'writer', 1219),
+  ('thomas-love-peacock', 'Thomas Love Peacock', 'romantic-age', 'writer', 1220),
+  ('william-beckford', 'William Beckford', 'romantic-age', 'writer', 1221),
+  ('william-godwin', 'William Godwin', 'romantic-age', 'writer', 1222),
+  -- British Literature, under victorian-age
+  ('spasmodic-school', 'Spasmodic School', 'victorian-age', 'concept', 1223),
+  ('alfred-austin', 'Alfred Austin', 'victorian-age', 'writer', 1224),
+  ('arthur-symons', 'Arthur Symons', 'victorian-age', 'writer', 1225),
+  ('charles-kingsley', 'Charles Kingsley', 'victorian-age', 'writer', 1226),
+  ('ernest-dowson', 'Ernest Dowson', 'victorian-age', 'writer', 1227),
+  ('francis-thompson', 'Francis Thompson', 'victorian-age', 'writer', 1228),
+  ('george-gissing', 'George Gissing', 'victorian-age', 'writer', 1229),
+  ('lionel-johnson', 'Lionel Johnson', 'victorian-age', 'writer', 1230),
+  ('mary-elizabeth-braddon', 'Mary Elizabeth Braddon', 'victorian-age', 'writer', 1231),
+  ('philip-james-bailey', 'Philip James Bailey', 'victorian-age', 'writer', 1232),
+  ('rd-blackmore', 'R. D. Blackmore', 'victorian-age', 'writer', 1233),
+  ('robert-buchanan', 'Robert Buchanan', 'victorian-age', 'writer', 1234),
+  ('walter-besant', 'Walter Besant', 'victorian-age', 'writer', 1235),
+  ('william-edmonstoune-aytoun', 'William Edmonstoune Aytoun', 'victorian-age', 'writer', 1236),
+  ('william-ernest-henley', 'William Ernest Henley', 'victorian-age', 'writer', 1237),
+  -- British Literature, under modern
+  ('ae-housman', 'A. E. Housman', 'modern', 'writer', 1238),
+  ('anthony-powell', 'Anthony Powell', 'modern', 'writer', 1239),
+  ('beatrix-potter', 'Beatrix Potter', 'modern', 'writer', 1240),
+  ('charles-hamilton-sorley', 'Charles Hamilton Sorley', 'modern', 'writer', 1241),
+  ('christopher-isherwood', 'Christopher Isherwood', 'modern', 'writer', 1242),
+  ('david-jones', 'David Jones', 'modern', 'writer', 1243),
+  ('dorothy-l-sayers', 'Dorothy L. Sayers', 'modern', 'writer', 1244),
+  ('dorothy-richardson', 'Dorothy Richardson', 'modern', 'writer', 1245),
+  ('edith-nesbit', 'Edith Nesbit', 'modern', 'writer', 1246),
+  ('edith-sitwell', 'Edith Sitwell', 'modern', 'writer', 1247),
+  ('edmund-blunden', 'Edmund Blunden', 'modern', 'writer', 1248),
+  ('edward-carpenter', 'Edward Carpenter', 'modern', 'writer', 1249),
+  ('edward-marsh', 'Edward Marsh', 'modern', 'writer', 1250),
+  ('edward-thomas', 'Edward Thomas', 'modern', 'writer', 1251),
+  ('elizabeth-bowen', 'Elizabeth Bowen', 'modern', 'writer', 1252),
+  ('erskine-childers', 'Erskine Childers', 'modern', 'writer', 1253),
+  ('fs-flint', 'F. S. Flint', 'modern', 'writer', 1254),
+  ('gk-chesterton', 'G. K. Chesterton', 'modern', 'writer', 1255),
+  ('hg-wells', 'H. G. Wells', 'modern', 'writer', 1256),
+  ('hh-munro', 'H. H. Munro', 'modern', 'writer', 1257),
+  ('harold-monro', 'Harold Monro', 'modern', 'writer', 1258),
+  ('hilaire-belloc', 'Hilaire Belloc', 'modern', 'writer', 1259),
+  ('hugh-macdiarmid', 'Hugh MacDiarmid', 'modern', 'writer', 1260),
+  ('jb-priestley', 'J. B. Priestley', 'modern', 'writer', 1261),
+  ('jm-barrie', 'J. M. Barrie', 'modern', 'writer', 1262),
+  ('james-elroy-flecker', 'James Elroy Flecker', 'modern', 'writer', 1263),
+  ('john-collings-squire', 'John Collings Squire', 'modern', 'writer', 1264),
+  ('john-drinkwater', 'John Drinkwater', 'modern', 'writer', 1265),
+  ('john-galsworthy', 'John Galsworthy', 'modern', 'writer', 1266),
+  ('john-masefield', 'John Masefield', 'modern', 'writer', 1267),
+  ('john-middleton-murry', 'John Middleton Murry', 'modern', 'writer', 1268),
+  ('julian-grenfell', 'Julian Grenfell', 'modern', 'writer', 1269),
+  ('kenneth-grahame', 'Kenneth Grahame', 'modern', 'writer', 1270),
+  ('lewis-grassic-gibbon', 'Lewis Grassic Gibbon', 'modern', 'writer', 1271),
+  ('lytton-strachey', 'Lytton Strachey', 'modern', 'writer', 1272),
+  ('mr-james', 'M. R. James', 'modern', 'writer', 1273),
+  ('osbert-sitwell', 'Osbert Sitwell', 'modern', 'writer', 1274),
+  ('pg-wodehouse', 'P. G. Wodehouse', 'modern', 'writer', 1275),
+  ('rc-sherriff', 'R. C. Sherriff', 'modern', 'writer', 1276),
+  ('ralph-hodgson', 'Ralph Hodgson', 'modern', 'writer', 1277),
+  ('richard-aldington', 'Richard Aldington', 'modern', 'writer', 1278),
+  ('robert-bridges', 'Robert Bridges', 'modern', 'writer', 1279),
+  ('robert-graves', 'Robert Graves', 'modern', 'writer', 1280),
+  ('robert-tressell', 'Robert Tressell', 'modern', 'writer', 1281),
+  ('roy-campbell', 'Roy Campbell', 'modern', 'writer', 1282),
+  ('rudyard-kipling', 'Rudyard Kipling', 'modern', 'writer', 1283),
+  ('terence-rattigan', 'Terence Rattigan', 'modern', 'writer', 1284),
+  ('vera-brittain', 'Vera Brittain', 'modern', 'writer', 1285),
+  ('vita-sackville-west', 'Vita Sackville-West', 'modern', 'writer', 1286),
+  ('wh-davies', 'W. H. Davies', 'modern', 'writer', 1287),
+  ('walter-de-la-mare', 'Walter de la Mare', 'modern', 'writer', 1288),
+  ('wyndham-lewis', 'Wyndham Lewis', 'modern', 'writer', 1289),
+  -- British Literature, under contemporary
+  ('as-byatt', 'A. S. Byatt', 'contemporary', 'writer', 1290),
+  ('brian-friel', 'Brian Friel', 'contemporary', 'writer', 1291),
+  ('brian-patten', 'Brian Patten', 'contemporary', 'writer', 1292),
+  ('cp-snow', 'C. P. Snow', 'contemporary', 'writer', 1293),
+  ('cs-lewis', 'C. S. Lewis', 'contemporary', 'writer', 1294),
+  ('christopher-fry', 'Christopher Fry', 'contemporary', 'writer', 1295),
+  ('david-campton', 'David Campton', 'contemporary', 'writer', 1296),
+  ('elizabeth-jennings', 'Elizabeth Jennings', 'contemporary', 'writer', 1297),
+  ('george-macbeth', 'George MacBeth', 'contemporary', 'writer', 1298),
+  ('graham-swift', 'Graham Swift', 'contemporary', 'writer', 1299),
+  ('jrr-tolkien', 'J. R. R. Tolkien', 'contemporary', 'writer', 1300),
+  ('john-betjeman', 'John Betjeman', 'contemporary', 'writer', 1301),
+  ('john-braine', 'John Braine', 'contemporary', 'writer', 1302),
+  ('kingsley-amis', 'Kingsley Amis', 'contemporary', 'writer', 1303),
+  ('ph-newby', 'P. H. Newby', 'contemporary', 'writer', 1304),
+  ('peter-porter', 'Peter Porter', 'contemporary', 'writer', 1305),
+  ('peter-shaffer', 'Peter Shaffer', 'contemporary', 'writer', 1306),
+  ('robert-bolt', 'Robert Bolt', 'contemporary', 'writer', 1307),
+  ('roger-mcgough', 'Roger McGough', 'contemporary', 'writer', 1308),
+  ('sarah-kane', 'Sarah Kane', 'contemporary', 'writer', 1309)
+on conflict (id) do nothing;
+
+commit;
+
+-- Check (run after): this should return 1702.
+--   select count(*) from public.topics;

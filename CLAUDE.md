@@ -163,9 +163,9 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1476 rows across 8 areas
+(`area | period | movement | writer | work | concept`). 1702 rows across 9 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
-Language/ELT, Research Methodology). The per-area CSVs the rows were built from are in
+Language/ELT, Research Methodology, World Literature). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
 of truth for valid topic ids.** Convention: a writer sits directly under its period;
 named schools are `movement` siblings (grouping lives in `exam_topics`, not the tree);
@@ -175,6 +175,15 @@ per site period (Daily page names and years). Ids are the site slug, except `jac
 `restoration-era` and `modern-era` (the plain slug is already an age node). The Renaissance
 (1500–1660) and Neoclassical (1660–1785) banks have no node: each spans two ages. Writers and
 works stay under their age, not under the sub-period.
+Writers named in the questions but missing from the tree were added in
+`20261030120000_add_writers_schools_and_world_literature.sql` (222 writers and 3 `concept` school nodes
+— Spasmodic School, Satanic School, Blue Stockings — each name approved by the owner). Non-English
+writers sit in the area `world-literature`. The critics A. C. Bradley and the two Leavises sit directly
+under the Criticism area and Robert Lowth directly under Language/ELT; no school was invented for them
+(re-parent later with one UPDATE if a real one is added). Ids of people with initials: joined initials +
+hyphen in the British area (`ts-eliot`), hyphenated in the other areas (`i-a-richards`).
+`supabase/data/taxonomy-aliases.csv` (`node_id,alias,note`) holds other names for existing nodes, for
+the tag matcher.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.
@@ -199,7 +208,7 @@ works stay under their age, not under the sub-period.
   date, because the tag drives a mastery meter that must agree with the student's books;
   (3) composition date only decides where convention is silent. Settled: Milton, Traherne
   (taught with Vaughan) -> `commonwealth`; Swift, Defoe -> `augustan`; Clarendon -> `restoration-era`;
-  Richardson, Fielding, Smollett, Sterne and the Graveyard poets -> `age-of-sensibility`.
+  Richardson, Fielding, Smollett, Sterne and the Graveyard poets -> `age-of-sensibility`; Donne -> `jacobean-era`.
   The old MCQ set-local `topic` / `topicRead` / `read` keys stay: they drive the UI.
 - **Build gate:** `npx eleventy` runs `tools/check-topics.js` and fails the build if any
   question's `topicId` is not in the master reference, if its `periodId` is not a `kind = period`

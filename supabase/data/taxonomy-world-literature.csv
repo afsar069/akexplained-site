@@ -1,0 +1,11 @@
+id,name,parent_id,kind,sort_order
+world-literature,World Literature,,area,8001
+anton-chekhov,Anton Chekhov,world-literature,writer,8002
+desiderius-erasmus,Desiderius Erasmus,world-literature,writer,8003
+francesco-petrarch,Francesco Petrarch,world-literature,writer,8004
+giovanni-pico-della-mirandola,Giovanni Pico della Mirandola,world-literature,writer,8005
+henrik-ibsen,Henrik Ibsen,world-literature,writer,8006
+hugh-of-saint-victor,Hugh of Saint Victor,world-literature,writer,8007
+jean-bodel,Jean Bodel,world-literature,writer,8008
+jean-froissart,Jean Froissart,world-literature,writer,8009
+moliere,Molière,world-literature,writer,8010

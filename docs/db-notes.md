@@ -103,6 +103,13 @@ There are two kinds of table here.
   Each British age (for example Old English) also has child period nodes for the
   site's own literary periods (for example Anglo-Saxon), added by
   `20261029170000_add_british_sub_periods.sql`.
+  Writers named in the questions but missing from the tree (222 of them), three
+  literary schools (Spasmodic School, Satanic School, Blue Stockings) and a new
+  top-level area, World Literature, for non-English writers were added by
+  `20261030120000_add_writers_schools_and_world_literature.sql`. After it the
+  table holds 1702 rows. Other names for existing topics (for example "Saki" for
+  H. H. Munro) are kept in `supabase/data/taxonomy-aliases.csv`; they are not in
+  the database.
   (A later migration, `20261027120000_topics_tree.sql`, replaced the earlier
   flat `age_slug` column with `parent_id` and `kind`.)
 - **`exam_topics`** — which topics belong to which exam, grouped into units
