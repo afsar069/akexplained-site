@@ -107,7 +107,8 @@ There are two kinds of table here.
   literary schools (Spasmodic School, Satanic School, Blue Stockings) and a new
   top-level area, World Literature, for non-English writers were added by
   `20261030120000_add_writers_schools_and_world_literature.sql`. After it the
-  table holds 1702 rows. Other names for existing topics (for example "Saki" for
+  table holds 1702 rows. A later batch of 9 missing nodes (for example Vorticism and
+  Gorboduc), `20261031120000_add_vorticism_gorboduc_and_other_missing_nodes.sql`, makes it 1711. Other names for existing topics (for example "Saki" for
   H. H. Munro) are kept in `supabase/data/taxonomy-aliases.csv`; they are not in
   the database.
   (A later migration, `20261027120000_topics_tree.sql`, replaced the earlier

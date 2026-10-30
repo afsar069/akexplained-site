@@ -110,6 +110,8 @@ class Taxonomy:
 def aliases_for(node, surnames_in_age):
     """[(alias_normalised, alias_original, needs_capital)]"""
     name, kind = node['name'], node['kind']
+    if kind == 'writer':
+        name = re.sub(r'\s*\([^)]*\)', '', name).strip()
     out = []
     if kind == 'writer':
         toks = [t for t in re.split(r'\s+', name) if t]
@@ -208,6 +210,22 @@ class Matcher:
     def __init__(self):
         self.tx = Taxonomy()
         self.alias_map = load_aliases()
+        # SAME-NAME RULE (owner). When two people in the master share a surname, neither may be matched on the bare surname;
+        # when they share a whole name, neither may be matched on it. A disambiguator (given name, initial, title, work or date)
+        # must appear in the question; if none does, the match is refused and the ladder climbs.
+        self.sharers_surname, self.sharers_name, self.works_of = {}, {}, {}
+        for r in self.tx.by.values():
+            if r['kind'] == 'writer':
+                nm = re.sub(r'\s*\([^)]*\)', '', r['name']).strip()
+                toks = [t for t in nm.split() if norm(t) not in HONORIFICS]
+                if toks:
+                    self.sharers_name.setdefault(norm(' '.join(toks)), set()).add(r['id'])
+                    self.sharers_surname.setdefault(norm(toks[-1]), set()).add(r['id'])
+            elif r['kind'] == 'work' and r['parent_id'] in self.tx.by and self.tx.by[r['parent_id']]['kind'] == 'writer':
+                for v in {r['name'], re.sub(r'^(The|A|An)\s+', '', r['name'])}:
+                    n = norm(v)
+                    if len(n.split()) >= 2 or len(n) >= 7:
+                        self.works_of.setdefault(r['parent_id'], []).append(n)
         brit = [r for r in self.tx.by.values()
                 if r['area'] == 'British Literature' and r['kind'] in ('writer', 'work', 'concept', 'movement')]
         by_age = {}
@@ -268,6 +286,28 @@ class Matcher:
             if r['area'] != 'British Literature':
                 self.all_alias.add(norm(r['name']))
                 self.all_alias.add(norm(re.sub(r'^(The|A|An)\s+', '', r['name'])))
+
+    def _years_range(self, i):
+        n = self.tx.age_of(i)
+        if n:
+            return self.tx.age_range(n)
+        par = self.tx.by[i]['parent_id']
+        return self.tx.age_range(par) if par and re.search(r'\(\d{3,4}-', self.tx.by[par]['name']) else (0, 2030)
+
+    def disambiguated(self, nid, an, stem, ans):
+        """Does the question itself tell the sharers apart? A work of THIS writer is named, or a year fits his age and no other sharer's."""
+        text = stem + ' ' + ans
+        t = ' ' + norm(text) + ' '
+        if any((' ' + w + ' ') in t for w in self.works_of.get(nid, ())):
+            return True
+        years = [int(y) for y in YEAR.findall(text)]
+        if not years:
+            return False
+        sharers = self.sharers_name.get(an) if len(self.sharers_name.get(an, ())) >= 2 else self.sharers_surname.get(an, set())
+        lo, hi = self._years_range(nid)
+        mine = any(lo <= y <= hi for y in years)
+        others = any(l <= y <= h for i in sharers if i != nid for (l, h) in [self._years_range(i)] for y in years)
+        return mine and not others
 
     def other_given_name(self, alias_orig, nid, text):
         """True if EVERY occurrence of this bare surname follows someone else's given name ("Francis Godolphin" is not
@@ -339,6 +379,9 @@ class Matcher:
             where, via, bare, creator, subject, compare, quoted, span, anchor = set(), None, False, False, False, False, False, None, False
             for an, ao, nc in als:
                 s, a, e = (self.hit(an, ao, nc, stem), self.hit(an, ao, nc, ans), self.hit(an, ao, nc, expl))
+                if kind == 'writer' and (len(self.sharers_name.get(an, ())) >= 2 or (nc and len(an.split()) == 1 and len(self.sharers_surname.get(an, ())) >= 2)):
+                    if not self.disambiguated(nid, an, stem, ans):
+                        s = a = e = False
                 if nc and kind == 'writer' and len(an.split()) == 1:
                     s, a, e = (s and not self.inside_longer(an, nid, stem) and not self.other_given_name(ao, nid, stem),
                                a and not self.inside_longer(an, nid, ans) and not self.other_given_name(ao, nid, ans),

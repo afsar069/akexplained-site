@@ -1,4 +1,5 @@
 question_id,topicId,surname_used,named_in,periodId,rung,question
+rn-h-22,beaumont-and-fletcher,Fletcher,answer+explanation,jacobean-era,writer,Which prominent dramatist collaborated with William Shakespeare on late romances including 'The Two Noble Kinsmen' and 'Henry VIII'?
 gr-e-46,bernard-shaw,Shaw,stem,georgian,writer,"In the subtitle of his 1919 play 'Heartbreak House', depicting cultured Europe drifting toward World War I in Captain Shotover's house, Bernard Shaw called it 'A Fantasia in the ______ Manner':"
 el-e-38,christopher-marlowe,Marlowe,explanation+stem,elizabethan,writer,Which celebrated Elizabethan tragic actor was the star of the Lord Admiral's Men and created Marlowe's Tamburlaine and Faustus?
 el-h-24,christopher-marlowe,Marlowe,explanation+stem,elizabethan,writer,"Which London playhouse, opened in 1587 on Bankside by Philip Henslowe, was the original stage for Marlowe's greatest theatrical triumphs?"
@@ -32,8 +33,9 @@ et-h-24,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In which
 et-h-31,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In his celebrated sonnet 'The Soote Season', which native English fauna does Surrey introduce to replace Petrarch's classical animals?"
 et-h-41,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In what specific metrical form did Surrey cast his translation of Virgil's 'Aeneid', creating an English equivalent to dactylic hexameter?"
 et-h-47,henry-howard-surrey,Surrey,stem,early-tudor,writer,The Earl of Surrey's poetic subject 'Geraldine' belonged to the prominent FitzGerald dynasty who held which earldom in Ireland?
-gr-e-32,hh-munro,Munro,answer+explanation+stem,georgian,writer,"Under the pen name 'Saki', which satirist—killed in action at Beaumont-Hamel in 1916—authored macabre stories such as 'The Open Window' and 'Sredni Vashtar'?"
+gr-e-32,hh-munro,Saki,answer+explanation+stem,georgian,writer,"Under the pen name 'Saki', which satirist—killed in action at Beaumont-Hamel in 1916—authored macabre stories such as 'The Open Window' and 'Sredni Vashtar'?"
 cr-h-45,john-donne,Donne,answer+explanation+stem,caroline,writer,"Which 1640 biography by Izaak Walton, prefaced to Donne's 'LXXX Sermons', founded the tradition of English literary biography?"
+nc-h-02,john-dryden,Dryden,stem,restoration-era,writer,"In 'An Essay of Dramatick Poesie', the speaker Crites, who argues for the Ancients and attacks rhymed plays, represents Dryden's brother-in-law:"
 rs-h-01,john-dryden,Dryden,explanation+stem,restoration-era,writer,"Some literary historians end the Restoration poetic period in 1666, commemorated by Dryden's 1667 poem titled:"
 rs-h-07,john-dryden,Dryden,explanation+stem,restoration-era,writer,"The critical conversation in Dryden's 'Of Dramatic Poesie, an Essay' (1668) is set on a Thames barge during which event?"
 rs-h-08,john-dryden,Dryden,stem,restoration-era,writer,"In Dryden's 'Of Dramatic Poesie' (1668), which two speakers defend Ancient classical drama and French Neoclassical drama respectively?"
@@ -66,5 +68,8 @@ el-e-14,william-shakespeare,Shakespeare,stem,elizabethan,writer,Whose 1579 Engli
 el-e-29,william-shakespeare,Shakespeare,stem,elizabethan,writer,Which 1594 narrative poem by Shakespeare in rhyme royal recounts the tragic assault on a Roman matron by Prince Tarquin?
 el-h-42,william-shakespeare,Shakespeare,stem,elizabethan,writer,"In Shakespeare's 'Love's Labour's Lost', which fantastical Spanish knight serves as a satirical caricature of Euphuistic courtly language?"
 el-h-45,william-shakespeare,Shakespeare,stem,elizabethan,writer,"In Shakespeare's 'Henry IV, Part 1', at which Eastcheap tavern do Prince Hal, Sir John Falstaff, and their companions feast and jest?"
+rn-e-04,william-shakespeare,Shakespeare,stem,elizabethan,writer,What collective title is given to the educated late 16th-century dramatists from Oxford and Cambridge who preceded Shakespeare?
+rn-e-10,william-shakespeare,Shakespeare,explanation+stem,elizabethan,writer,What was the name of the famous open-air circular playhouse erected in 1599 by Shakespeare's company on Bankside in Southwark?
+rn-h-40,william-shakespeare,Shakespeare,stem,elizabethan,writer,Whose 1579 English translation of Plutarch's 'Lives of the Noble Grecians and Romans' served as Shakespeare's chief source for his Roman tragedies?
 rm-h-21,william-wordsworth,Wordsworth,explanation+stem,romantic,writer,"In Wordsworth's pastoral poem 'Michael' (1800), what remains unfinished at Green-head Ghyll after Michael's son Luke goes to the city?"
 rm-h-22,william-wordsworth,Wordsworth,explanation+stem,romantic,writer,"When Wordsworth published 'The Excursion' in 1814, he announced it as the middle part of which vast, unfinished philosophical poem?"

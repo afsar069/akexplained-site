@@ -163,7 +163,7 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1702 rows across 9 areas
+(`area | period | movement | writer | work | concept`). 1711 rows across 9 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
 Language/ELT, Research Methodology, World Literature). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
@@ -183,7 +183,11 @@ under the Criticism area and Robert Lowth directly under Language/ELT; no school
 (re-parent later with one UPDATE if a real one is added). Ids of people with initials: joined initials +
 hyphen in the British area (`ts-eliot`), hyphenated in the other areas (`i-a-richards`).
 `supabase/data/taxonomy-aliases.csv` (`node_id,alias,note`) holds other names for existing nodes, for
-the tag matcher.
+the tag matcher. A second batch of 9 nodes (vorticism, war-of-the-theatres, gorboduc, thomas-norton,
+thomas-sackville, three-estates, samuel-butler-hudibras, ohthere-and-wulfstan, theatrical-licensing-act-1737)
+came in `20261031120000_add_vorticism_gorboduc_and_other_missing_nodes.sql`. Two writers named Samuel
+Butler: `samuel-butler` is the Victorian one and is not to be touched; the author of Hudibras is
+`samuel-butler-hudibras`.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.
@@ -216,6 +220,12 @@ the tag matcher.
   (taught with Vaughan) -> `commonwealth`; Swift, Defoe -> `augustan`; Clarendon -> `restoration-era`;
   Richardson, Fielding, Smollett, Sterne and the Graveyard poets -> `age-of-sensibility`; Donne -> `jacobean-era`.
   The old MCQ set-local `topic` / `topicRead` / `read` keys stay: they drive the UI.
+- **Same-name rule (owner's).** When two people in the master share a surname, neither may be matched
+  on the bare surname. A disambiguator — a given name, an initial, a title, a work or a date — must
+  appear in the question. If none does, the match is refused and the ladder climbs. (In
+  `tools/tagging/match_topics.py`: a given name or initial turns it into a full-name match; a work of
+  that writer, or a year that fits only that writer's age, counts as the disambiguator; a title alone
+  is not checked yet. Two people with the same full name are handled the same way.)
 - **Build gate:** `npx eleventy` runs `tools/check-topics.js` and fails the build if any
   question's `topicId` is not in the master reference, if its `periodId` is not a `kind = period`
   node, or if two questions share an `id`. Keep ids unique and tags real, or the build (and

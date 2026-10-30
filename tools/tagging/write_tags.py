@@ -24,10 +24,7 @@ DRY = '--dry' in sys.argv
 MODE = next((a for a in sys.argv[1:] if not a.startswith('--')), '')
 
 # question id -> (tag, reason). The owner's rulings; the matcher alone would say something else.
-OVERRIDES = {
-    'el-e-35': ('elizabethan', 'Asks which play. There is no node for Gorboduc, Thomas Norton or Thomas Sackville, and blank verse is only '
-                'a descriptor in the stem, so a student who misses it would lose mastery on blank verse unfairly.'),
-}
+OVERRIDES = {}      # none now. el-e-35 (Gorboduc) was one until the gorboduc node existed.
 
 # MCQ: a set-local key that matches a master node by name -> that node (owner's table). Other keys are tagged per question.
 MCQ_KEYS = {'beowulf': 'beowulf', 'elegies': 'old-english-elegies', 'riddles': 'old-english-riddles', 'alfred': 'king-alfred',
