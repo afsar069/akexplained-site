@@ -206,7 +206,13 @@ the tag matcher.
   a period, tag to that period, so the explanation the student reads and the mastery meter never
   disagree; (2) the conventional textbook placement of a writer or work beats its composition
   date, because the tag drives a mastery meter that must agree with the student's books;
-  (3) composition date only decides where convention is silent. Settled: Milton, Traherne
+  (3) composition date only decides where convention is silent; (4) the period is the last rung,
+  not an escape hatch: a doubtful tag first climbs the ladder again (work, writer, movement/concept,
+  then the neighbouring age and other areas) and only a true tie between named people, or a
+  question about something with no node, stays on the period. When the right answer is a node, the
+  answer is the subject and a person named only as the setting, a relative or the target is not.
+  The proposing tool is `tools/tagging/` (dry run); its surname-only tags are listed in
+  `tools/tagging/reports/surname-only-tags.csv`. Settled: Milton, Traherne
   (taught with Vaughan) -> `commonwealth`; Swift, Defoe -> `augustan`; Clarendon -> `restoration-era`;
   Richardson, Fielding, Smollett, Sterne and the Graveyard poets -> `age-of-sensibility`; Donne -> `jacobean-era`.
   The old MCQ set-local `topic` / `topicRead` / `read` keys stay: they drive the UI.

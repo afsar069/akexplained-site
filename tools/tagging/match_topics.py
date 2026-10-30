@@ -41,6 +41,8 @@ NOT_MAKER_BY = re.compile(r"(?:staged|performed|produced|directed|managed|acted|
 NICK_BEFORE = re.compile(r"(?:name|names|nickname|called|dubbed|known as|termed|labell?ed)\s+(?:the\s+)?$", re.I)
 TITLE_WORDS = {'sir', 'dr', 'doctor', 'lord', 'lady', 'mr', 'mrs', 'miss', 'ms', 'saint', 'st', 'king', 'queen', 'earl', 'duke', 'bishop',
                'dean', 'poet', 'laureate', 'playwright', 'dramatist', 'novelist', 'critic', 'essayist', 'author', 'satirist', 'diarist', 'divine', 'professor', 'captain', 'general', 'reverend', 'father', 'the', 'a', 'an', 'and', 'of', 'by', 'for', 'in', 'to'}
+# "brother of the deceased poet X", "to silence the satires of X": X only describes the person asked for, he is not the subject
+ANCHOR_BEFORE = re.compile(r"(?:(?:brother|sister|son|daughter|wife|husband|widow|nephew|niece|cousin|father|mother|heir)s? of|(?:silenc\w+|suppress\w*|censor\w*|curb\w*|persecut\w*|prosecut\w*)\s+(?:the\s+)?(?:[\w-]+\s+){0,3}of)\s+(?:the\s+)?(?:(?:late|deceased|great|famous|fellow|young|elder|younger)\s+)?(?:(?:poet|dramatist|playwright|novelist|writer|critic|author|diarist|painter|actor)\s+)?(?:(?:Sir|Dr|Lord|Lady)\.?\s+)?$", re.I)
 COMPARE_BEFORE = re.compile(r"(?:since|like|unlike|than|following|inspired by|influenced by|modell?ed (?:on|after)|compared (?:with|to)|contemporar(?:y|ies) of|rival of|successor to|predecessor of|inspiration from|drawing (?:on|from)|derived from|based on|borrowed from|adapted from)\s+(?:the\s+)?(?:(?:Sir|Dr|Lord|Lady)\.?\s+)?$", re.I)
 YEAR = re.compile(r'\b(1[0-9]{3}|20[0-2][0-9])\b')
 YEAR_TOL = 40   # a neighbouring-age node is used only if every year in the question is within this many years of that age
@@ -285,7 +287,8 @@ class Matcher:
             if not w:
                 return False
             word, head = w.group(1), pre[:w.start()].rstrip()
-            sentence_start = (not head) or head[-1] in '.?!:"\''
+            # in a short text (an answer such as "Francis Godolphin") the first word IS the given name, not a sentence start
+            sentence_start = ((not head) or head[-1] in '.?!:"\'') and len(plain.split()) > 4
             wn = norm(word)
             if word[0].isupper() and not sentence_start and wn not in TITLE_WORDS and wn not in GENERIC and wn[:1] not in initials:
                 continue
@@ -332,7 +335,7 @@ class Matcher:
         qset = {norm(x) for x in quotes} | {norm(re.sub(r'^(The|A|An)\s+', '', x)) for x in quotes}
         out = []
         for nid, kind, als in nodes:
-            where, via, bare, creator, subject, compare, quoted, span = set(), None, False, False, False, False, False, None
+            where, via, bare, creator, subject, compare, quoted, span, anchor = set(), None, False, False, False, False, False, None, False
             for an, ao, nc in als:
                 s, a, e = (self.hit(an, ao, nc, stem), self.hit(an, ao, nc, ans), self.hit(an, ao, nc, expl))
                 if nc and kind == 'writer' and len(an.split()) == 1:
@@ -368,6 +371,8 @@ class Matcher:
                             creator = True
                         if SUBJECT_BEFORE.search(before):
                             subject = True
+                        if ANCHOR_BEFORE.search(before):
+                            anchor = True
                         if COMPARE_BEFORE.search(before):
                             compare = True
             if kind == 'work' and REGNAL.match(self.tx.by[nid]['name']) and not quoted:
@@ -375,7 +380,7 @@ class Matcher:
             if where & {'stem', 'answer'}:
                 where.discard('answer-subject')
                 out.append({'id': nid, 'kind': kind, 'where': sorted(where), 'alias': via, 'bare': bare,
-                            'creator': creator, 'subject': subject, 'compare': compare, 'quoted': quoted, 'span': span})
+                            'creator': creator, 'subject': subject, 'compare': compare, 'quoted': quoted, 'span': span, 'anchor': anchor})
         return out
 
     def seen_titles(self, stem, ans):
@@ -396,6 +401,27 @@ class Matcher:
         return quoted, answer
 
     # ---------- the ladder ----------
+    GAP_STOP = {'of', 'by', 'in', 'for', 'to', 'from', 'at', 'on', 'as', 'than', 'that', 'which', 'who', 'whom', 'whose', 'was', 'were', 'is', 'are',
+                'had', 'has', 'did', 'does', 'his', 'her', 'their', 'its', 'after', 'before', 'when', 'while', 'because', 'about', 'against', 'into'}
+
+    def _gap_joined(self, a, b, wide=False):
+        """True if only a 'and' / 'or' / list comma (or, when wide, a few filler words such as 'and rival playwrights') sit between two names"""
+        stem_t = ' ' + norm(self._stem) + ' '
+        first, second = sorted([a, b], key=lambda c: c['span'][0])
+        if second['span'][0] < first['span'][1]:
+            return False
+        toks = stem_t[first['span'][1]:second['span'][0]].split()
+        if not wide:
+            return not toks or toks in (['and'], ['or'], ['vs'], ['versus'])
+        return len(toks) <= 6 and not any(t in self.GAP_STOP or t.endswith('ed') for t in toks)
+
+    def _joined(self, cs):
+        """names side by side in the stem ('A and B', 'A, B, C'): true co-subjects"""
+        if len(cs) < 2 or not all(c.get('span') for c in cs):
+            return False
+        first = sorted(cs, key=lambda c: c['span'][0])
+        return self._gap_joined(first[0], first[1])
+
     def pick(self, cs):
         """-> (chosen candidate | None, why, tied candidates)"""
         if len(cs) == 1:
@@ -417,6 +443,8 @@ class Matcher:
         if cr:
             cs = cr
         ex = [c for c in cs if 'explanation' in c['where']]
+        if self._joined(cs) and all('answer' not in c['where'] for c in cs):
+            ex = []             # "A and B": the explanation naming one of them does not make it the subject
         if len(ex) == 1:
             return ex[0], 'only this one is named in the explanation', cs
         if ex:
@@ -441,12 +469,20 @@ class Matcher:
         """-> (candidate or None, log text)"""
         # a concept/movement whose exact name is quoted as a title ranks with works, unless a WRITER is the answer
         writer_is_answer = any(c['kind'] == 'writer' and 'answer' in c['where'] for c in pool_all)
+        pool_all = [c for c in pool_all if c['id'] not in getattr(self, '_tie_block', ())]
         pool = [c for c in pool_all if c['kind'] in kinds or (label == 'work' and c['kind'] in ('concept', 'movement') and c['quoted'] and not writer_is_answer)]
         if not pool:
             return None, f"{prefix}{label}: none"
         # a bare surname named once is only used if nothing else casts doubt on it
         usable, doubts = [], []
+        stem_named = any('stem' in c['where'] for c in pool)
         for c in pool:
+            if c.get('anchor') and 'answer' not in c['where'] and not c['creator']:
+                doubts.append(f"'{c['alias']}' only describes the person asked for (a relative, or the target of an action)")
+                continue
+            if getattr(self, '_ans_sentence', False) and stem_named and set(c['where']) == {'answer'}:
+                doubts.append(f"'{c['alias']}' only inside a sentence-long answer")
+                continue
             if c['compare'] and len(c['where']) < 2:
                 doubts.append(f"'{c['alias']}' only as a comparison")
                 continue
@@ -461,6 +497,13 @@ class Matcher:
         if not usable:
             return None, f"{prefix}{label}: none ({'; '.join(doubts)} - not used)"
         best, why, tied = self.pick(usable)
+        if best and label == 'writer' and not prefix and 'answer' not in best['where'] and not best['creator'] and best.get('span'):
+            near = [c for c in getattr(self, '_co_named', []) if c['id'] != best['id'] and c.get('span') and self._gap_joined(best, c, wide=True)
+                    and not self.inside_quotes(c['alias'], stem)]
+            if near:
+                ids = [best['id']] + [c['id'] for c in near]
+                self._tie_block = set(ids)          # a name that took part in the tie is not "rescued" afterwards
+                return None, f"{prefix}{label}: co-subjects ({', '.join(ids)}; one is of a neighbouring age); no single one, and no group node holds them"
         if best:
             return best, f"{prefix}{label}: {best['id']} ✓ ({why}; named in {' + '.join(best['where'])})"
         # true co-subjects: the group that holds them all, if it is a node
@@ -476,6 +519,11 @@ class Matcher:
         age = self.tx.parent(period_id)
         stem, ans = q['question'], q['options'][q['correct_option_id']]
         self._stem = stem
+        self._tie_block = set()
+        _w = ans.split()
+        _quoted_whole = bool(re.fullmatch(r"\s*['\"‘“].+['\"’”]\s*", ans))
+        _small = {'of', 'the', 'and', 'a', 'an', 'in', 'to', 'de', 'on', 'for', 'or'}
+        self._ans_sentence = len(_w) > 6 and not _quoted_whole and sum(1 for w in _w if w[:1].islower() and w.lower() not in _small) >= 3
         expl = q.get('explanation', '') or ''
         meta = bool(META_CAPS.search(stem) or META_WORDS.search(stem))
         if meta:
@@ -519,6 +567,11 @@ class Matcher:
                 fullname = c['kind'] == 'writer' and not any(x['kind'] == 'writer' for x in inage)
                 if strong or title or maker or fullname:
                     xarea.append(c)
+        self._co_named = []
+        if cross_age:
+            other_all = [n for a, ns in self.pool.items() if a != age for n in ns]
+            self._co_named = [c for c in self.collect(other_all, stem, ans, expl)
+                              if c['kind'] == 'writer' and not c['bare'] and 'stem' in c['where'] and not c['subject'] and not c['compare'] and not c['anchor']]
         quoted_nn, ans_nn = self.seen_titles(stem, ans)
         suffix = f" [the answer, '{ans_nn}', is not a node]" if ans_nn else ''
         log = []
@@ -536,7 +589,7 @@ class Matcher:
             log.append(f"{'other area: ' if range_x else ''}writer: {range_w[0]['id']} ✓ (the question lists {listed} works and asks for the writer: it is about the writer's range)")
             area = self.tx.by[range_w[0]['id']]['area']
             return {'topicId': range_w[0]['id'], 'matched': True, 'rung': 'writer', 'crossed_age': False, 'crossed_area': range_x,
-                    'trace': ' → '.join(log) + (f" [area: {area}]" if range_x else '') + suffix, 'where': range_w[0]['where'], 'bare': range_w[0]['bare']}
+                    'trace': ' → '.join(log) + (f" [area: {area}]" if range_x else '') + suffix, 'where': range_w[0]['where'], 'bare': range_w[0]['bare'], 'alias': range_w[0]['alias']}
         phases = [('', inage, [('work', {'work'}), ('writer', {'writer'}), ('concept', {'concept', 'movement'})])]   # a quoted concept title also ranks as a work (rung())
         if cross:
             phases.append(('neighbouring age: ', cross, [('work', {'work'}), ('writer', {'writer'})]))
@@ -553,7 +606,7 @@ class Matcher:
                     tr = ' → '.join(log) + (f" [area: {area}]" if prefix.startswith('other area') else '') + suffix
                     return {'topicId': best['id'], 'matched': True, 'rung': label,
                             'crossed_age': prefix.startswith('neighbouring'), 'crossed_area': prefix.startswith('other area'),
-                            'trace': tr, 'where': best['where'], 'bare': best.get('bare', False)}
+                            'trace': tr, 'where': best['where'], 'bare': best.get('bare', False), 'alias': best.get('alias')}
         if rejected:
             log.append('not used: ' + ', '.join(rejected) + ' (another age; the dates in the question do not fit it)')
         log.append(f"period: {period_id} ✓ (ladder exhausted)")

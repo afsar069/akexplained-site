@@ -1,0 +1,70 @@
+question_id,topicId,surname_used,named_in,periodId,rung,question
+gr-e-46,bernard-shaw,Shaw,stem,georgian,writer,"In the subtitle of his 1919 play 'Heartbreak House', depicting cultured Europe drifting toward World War I in Captain Shotover's house, Bernard Shaw called it 'A Fantasia in the ______ Manner':"
+el-e-38,christopher-marlowe,Marlowe,explanation+stem,elizabethan,writer,Which celebrated Elizabethan tragic actor was the star of the Lord Admiral's Men and created Marlowe's Tamburlaine and Faustus?
+el-h-24,christopher-marlowe,Marlowe,explanation+stem,elizabethan,writer,"Which London playhouse, opened in 1587 on Bankside by Philip Henslowe, was the original stage for Marlowe's greatest theatrical triumphs?"
+rs-e-43,earl-of-rochester,Rochester,explanation+stem,restoration-era,writer,"John Wilmot, 2nd Earl of Rochester (1647–1680), was the most prominent poet of which aristocratic Restoration circle?"
+ac-e-01,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Which century is primarily associated with the Age of Chaucer?
+ac-e-04,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Who was the king of England when Chaucer was born?
+ac-e-06,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Which long-running conflict between England and France took place during Chaucer's life?
+ac-e-08,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Chaucer is often called the 'Father of ______ Literature'.
+ac-e-10,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Which king did Chaucer serve as a page and later as a diplomat?
+ac-e-15,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,"Which king was deposed in 1399, near the end of Chaucer's life?"
+ac-e-16,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Chaucer’s career included working in which of these government roles?
+ac-e-19,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,"During the Age of Chaucer, the 'Great Schism' occurred within which institution?"
+ac-e-23,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Which language was the language of learning and the Church during Chaucer's time?
+ac-e-24,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Chaucer was buried in which famous location?
+ac-e-33,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Chaucer was captured by the French during which war?
+ac-e-34,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Who paid the ransom to release Chaucer from French captivity?
+ac-e-35,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Which powerful noble was Chaucer's lifelong patron?
+ac-e-39,geoffrey-chaucer,Chaucer,answer,age-of-chaucer,writer,Which of these literary periods is named after a specific writer?
+ac-e-40,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,"How many pilgrims, not counting Chaucer himself, does the General Prologue say had gathered at the Tabard Inn?"
+ac-e-46,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Chaucer was a contemporary of which two Italian poets?
+ac-h-22,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,Who was the French chronicler whose work 'Chroniques' provides the most detailed contemporary account of the Hundred Years' War and Chaucer's age?
+ac-h-38,geoffrey-chaucer,Chaucer,stem,age-of-chaucer,writer,The 'Lollard' movement was primarily suppressed through which draconian law passed shortly after Chaucer's death in 1400?
+fc-e-41,geoffrey-chaucer,Chaucer,stem,fifteenth-century,writer,"What is the specific seven-line rhyming scheme of 'Rime Royal', the poetic stanza popularized by Chaucer and adopted by James I?"
+et-e-10,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,The Earl of Surrey used blank verse for the first time in English in his translation of which classical epic?
+et-e-28,henry-howard-surrey,Surrey,stem,early-tudor,writer,Henry Howard was styled Earl of Surrey as the heir of which pre-eminent English noble dynasty?
+et-e-36,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"Technically, Surrey's blank verse in his Virgil translation consists of lines that are:"
+et-e-40,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,The Earl of Surrey was first cousin to two of the wives of which English monarch?
+et-e-46,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,The aristocratic title 'Earl of Surrey' was held by which major Tudor Renaissance poet?
+et-h-15,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,Which specific heraldic action provoked King Henry VIII's suspicion and led directly to Surrey's trial for high treason in 1547?
+et-h-24,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In which poignant Windsor Castle poem does Surrey mourn his youth and his deceased companion Henry FitzRoy, Duke of Richmond?"
+et-h-31,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In his celebrated sonnet 'The Soote Season', which native English fauna does Surrey introduce to replace Petrarch's classical animals?"
+et-h-41,henry-howard-surrey,Surrey,explanation+stem,early-tudor,writer,"In what specific metrical form did Surrey cast his translation of Virgil's 'Aeneid', creating an English equivalent to dactylic hexameter?"
+et-h-47,henry-howard-surrey,Surrey,stem,early-tudor,writer,The Earl of Surrey's poetic subject 'Geraldine' belonged to the prominent FitzGerald dynasty who held which earldom in Ireland?
+gr-e-32,hh-munro,Munro,answer+explanation+stem,georgian,writer,"Under the pen name 'Saki', which satirist—killed in action at Beaumont-Hamel in 1916—authored macabre stories such as 'The Open Window' and 'Sredni Vashtar'?"
+cr-h-45,john-donne,Donne,answer+explanation+stem,caroline,writer,"Which 1640 biography by Izaak Walton, prefaced to Donne's 'LXXX Sermons', founded the tradition of English literary biography?"
+rs-h-01,john-dryden,Dryden,explanation+stem,restoration-era,writer,"Some literary historians end the Restoration poetic period in 1666, commemorated by Dryden's 1667 poem titled:"
+rs-h-07,john-dryden,Dryden,explanation+stem,restoration-era,writer,"The critical conversation in Dryden's 'Of Dramatic Poesie, an Essay' (1668) is set on a Thames barge during which event?"
+rs-h-08,john-dryden,Dryden,stem,restoration-era,writer,"In Dryden's 'Of Dramatic Poesie' (1668), which two speakers defend Ancient classical drama and French Neoclassical drama respectively?"
+rs-h-16,john-dryden,Dryden,answer+explanation,restoration-era,writer,Which pair of early Restoration plays helped establish the rhymed heroic drama in the 1660s before 'The Conquest of Granada'?
+cr-h-32,john-milton,Milton,stem,caroline,writer,"In Milton's 'Comus', which river nymph is invoked by the Attendant Spirit to free the Lady from her enchanted marble chair?"
+cw-e-16,john-milton,Milton,stem,commonwealth,writer,Which personified virtue provides the consoling conclusion 'They also serve who only stand and wait' in Milton's sonnet on his blindness?
+cw-h-02,john-milton,Milton,stem,commonwealth,writer,"In 'Defensio Secunda' (1654), Milton fiercely attacked Alexander More, though the anonymous Royalist tract 'Regii Sanguinis Clamor' was actually authored by:"
+cw-h-03,john-milton,Milton,stem,commonwealth,writer,The title page of Milton's 1649 tract 'The Tenure of Kings and Magistrates' explicitly declares that it is lawful to depose and put to death:
+cw-h-05,john-milton,Milton,stem,commonwealth,writer,"Milton's Sonnet 16, composed in May 1652 to address Oliver Cromwell, opens with which exact apostrophe?"
+cw-h-07,john-milton,Milton,explanation+stem,commonwealth,writer,"In his poignant 1658 sonnet 'Methought I saw my late espoused saint', which mythical figure does Milton cite who was rescued from the grave?"
+ac-h-09,john-wycliffe,Wycliffe,stem,age-of-chaucer,writer,What was the specific theological point of contention in Wycliffe's 'De Eucharistia' that eventually led to his condemnation as a heretic?
+el-h-10,philip-sidney,Sidney,stem,elizabethan,writer,"Which historical noblewoman, married against her will to Lord Rich, was the poetic inspiration for Stella in Sidney's sequence?"
+sn-h-17,richard-brinsley-sheridan,Sheridan,stem,age-of-sensibility,writer,What is the title of the absurd historical tragedy rehearsed on stage by Mr. Puff in Acts II and III of Sheridan's 'The Critic' (1779)?
+rm-e-27,samuel-taylor-coleridge,Coleridge,explanation+stem,romantic,writer,Coleridge's 'This Lime-Tree Bower My Prison' and 'Frost at Midnight' are prominent examples of which poetic group?
+rm-h-20,samuel-taylor-coleridge,Coleridge,explanation+stem,romantic,writer,"In which 1798 poem, first printed in 'The Morning Post' as 'The Recantation', did Coleridge renounce France after its invasion of Switzerland?"
+fc-e-43,thomas-malory,Malory,stem,fifteenth-century,writer,"In Arthurian legend and Malory's romances, which peerless knight of pure lineage achieves the quest of the Holy Grail?"
+fc-h-14,thomas-malory,Malory,explanation+stem,fifteenth-century,writer,The 1934 discovery of the Winchester Manuscript by W. F. Oakeshott revealed that Malory had conceived his Arthurian cycle as:
+fc-h-16,thomas-malory,Malory,stem,fifteenth-century,writer,"In Malory's Arthurian cycle, who is the biological father of Sir Galahad, conceived upon Dame Elaine through magical deception?"
+et-h-36,thomas-more,More,explanation+stem,early-tudor,writer,"What collective title was given to the humanist circle of scholars at the turn of the century including More, Colet, and Linacre?"
+et-e-15,thomas-wyatt,Wyatt,stem,early-tudor,writer,Wyatt's celebrated hunting sonnet 'Whoso List to Hunt' is widely read as a veiled allegory for courting whom?
+et-e-30,thomas-wyatt,Wyatt,explanation+stem,early-tudor,writer,"Unlike the Italian Petrarchan sonnet, Wyatt's sonnets characteristically conclude with what structural feature?"
+et-e-41,thomas-wyatt,Wyatt,stem,early-tudor,writer,"In Wyatt's poem 'Whoso List to Hunt', what does the Latin inscription 'Noli me tangere' on the collar mean?"
+et-h-17,thomas-wyatt,Wyatt,explanation+stem,early-tudor,writer,Wyatt's 'The Long Love That in My Thought Doth Harbor' is a direct translation of which celebrated Petrarchan sonnet?
+et-h-22,thomas-wyatt,Wyatt,explanation+stem,early-tudor,writer,"Which rhetorical device of contradictory juxtaposition, seen in 'I find no peace, and all my war is done', is central to Wyatt's style?"
+et-h-39,thomas-wyatt,Wyatt,explanation+stem,early-tudor,writer,"In Wyatt's lyric 'Divers Doth Use', how does the speaker propose to respond when his lady proves inconstant?"
+fc-h-28,william-caxton,Caxton,stem,fifteenth-century,writer,"Which work, translated from French by Earl Rivers, was the first dated book printed on English soil by Caxton in 1477?"
+cw-h-31,william-davenant,Davenant,stem,commonwealth,writer,What historical military event provides the dramatic milieu for Davenant's 1656 production of 'The Siege of Rhodes'?
+el-e-09,william-shakespeare,Shakespeare,stem,elizabethan,writer,Which famous circular open-air playhouse on London's Bankside opened in 1599 as the home of Shakespeare's acting troupe?
+el-e-14,william-shakespeare,Shakespeare,stem,elizabethan,writer,Whose 1579 English translation of Plutarch's 'Lives' was used by Shakespeare as the principal source for his Roman tragedies?
+el-e-29,william-shakespeare,Shakespeare,stem,elizabethan,writer,Which 1594 narrative poem by Shakespeare in rhyme royal recounts the tragic assault on a Roman matron by Prince Tarquin?
+el-h-42,william-shakespeare,Shakespeare,stem,elizabethan,writer,"In Shakespeare's 'Love's Labour's Lost', which fantastical Spanish knight serves as a satirical caricature of Euphuistic courtly language?"
+el-h-45,william-shakespeare,Shakespeare,stem,elizabethan,writer,"In Shakespeare's 'Henry IV, Part 1', at which Eastcheap tavern do Prince Hal, Sir John Falstaff, and their companions feast and jest?"
+rm-h-21,william-wordsworth,Wordsworth,explanation+stem,romantic,writer,"In Wordsworth's pastoral poem 'Michael' (1800), what remains unfinished at Green-head Ghyll after Michael's son Luke goes to the city?"
+rm-h-22,william-wordsworth,Wordsworth,explanation+stem,romantic,writer,"When Wordsworth published 'The Excursion' in 1814, he announced it as the middle part of which vast, unfinished philosophical poem?"
