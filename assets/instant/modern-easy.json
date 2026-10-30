@@ -14,7 +14,8 @@
     "The Cold War in Berlin"
    ],
    "correct_option_id": 1,
-   "explanation": "The Modern Period spans from the start of the First World War in 1914 to the conclusion of the Second World War in 1945."
+   "explanation": "The Modern Period spans from the start of the First World War in 1914 to the conclusion of the Second World War in 1945.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-02",
@@ -26,7 +27,8 @@
     "1922"
    ],
    "correct_option_id": 3,
-   "explanation": "In 1922 James Joyce published 'Ulysses' in Paris and T. S. Eliot published 'The Waste Land', making 1922 the pinnacle of High Modernism."
+   "explanation": "In 1922 James Joyce published 'Ulysses' in Paris and T. S. Eliot published 'The Waste Land', making 1922 the pinnacle of High Modernism.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-03",
@@ -38,7 +40,8 @@
     "Stream of consciousness"
    ],
    "correct_option_id": 3,
-   "explanation": "Stream of consciousness renders the Associative, uninterrupted flow of perceptions and memories inside a character's mind."
+   "explanation": "Stream of consciousness renders the Associative, uninterrupted flow of perceptions and memories inside a character's mind.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-04",
@@ -50,7 +53,8 @@
     "Wilfred Owen"
    ],
    "correct_option_id": 3,
-   "explanation": "Wilfred Owen wrote the most celebrated anti-war trench poems of World War I and was killed on 4 November 1918, one week before the Armistice."
+   "explanation": "Wilfred Owen wrote the most celebrated anti-war trench poems of World War I and was killed on 4 November 1918, one week before the Armistice.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-05",
@@ -62,7 +66,8 @@
     "John McCrae"
    ],
    "correct_option_id": 0,
-   "explanation": "Siegfried Sassoon encouraged Wilfred Owen at Craiglockhart War Hospital in 1917 and published Owen's 'Poems' in 1920."
+   "explanation": "Siegfried Sassoon encouraged Wilfred Owen at Craiglockhart War Hospital in 1917 and published Owen's 'Poems' in 1920.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-06",
@@ -74,7 +79,8 @@
     "Alan Seeger"
    ],
    "correct_option_id": 1,
-   "explanation": "Britannica highlights Isaac Rosenberg as one of the most original World War I poets; he was killed in action in April 1918."
+   "explanation": "Britannica highlights Isaac Rosenberg as one of the most original World War I poets; he was killed in action in April 1918.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-07",
@@ -86,7 +92,8 @@
     "Richard Aldington"
    ],
    "correct_option_id": 2,
-   "explanation": "Robert Graves published his candid war memoir 'Good-Bye to All That' in 1929 and later wrote the Roman novels 'I, Claudius' and 'Claudius the God'."
+   "explanation": "Robert Graves published his candid war memoir 'Good-Bye to All That' in 1929 and later wrote the Roman novels 'I, Claudius' and 'Claudius the God'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-08",
@@ -98,7 +105,8 @@
     "Sean O'Casey"
    ],
    "correct_option_id": 1,
-   "explanation": "W. B. Yeats received the Nobel Prize in Literature in 1923 for his inspired poetry giving expression to the spirit of a whole nation."
+   "explanation": "W. B. Yeats received the Nobel Prize in Literature in 1923 for his inspired poetry giving expression to the spirit of a whole nation.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-09",
@@ -110,7 +118,8 @@
     "'Things fall apart; the centre cannot hold'"
    ],
    "correct_option_id": 1,
-   "explanation": "Yeats's 'Easter, 1916', collected in 'Michael Robartes and the Dancer' in 1921, repeats the refrain A terrible beauty is born."
+   "explanation": "Yeats's 'Easter, 1916', collected in 'Michael Robartes and the Dancer' in 1921, repeats the refrain A terrible beauty is born.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-10",
@@ -122,7 +131,8 @@
     "'Among School Children'"
    ],
    "correct_option_id": 0,
-   "explanation": "Yeats's 'The Second Coming' uses the image of a widening gyre and a rough beast slouching towards Bethlehem."
+   "explanation": "Yeats's 'The Second Coming' uses the image of a widening gyre and a rough beast slouching towards Bethlehem.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-11",
@@ -134,7 +144,8 @@
     "'The Tower'"
    ],
    "correct_option_id": 3,
-   "explanation": "Yeats's 1928 volume 'The Tower' is one of his supreme modernist collections, opening with 'Sailing to Byzantium'."
+   "explanation": "Yeats's 1928 volume 'The Tower' is one of his supreme modernist collections, opening with 'Sailing to Byzantium'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-12",
@@ -146,7 +157,8 @@
     "'Portrait of a Lady'"
    ],
    "correct_option_id": 1,
-   "explanation": "Eliot published 'The Love Song of J. Alfred Prufrock' in 'Poetry' magazine in 1915 and in 'Prufrock and Other Observations' in 1917."
+   "explanation": "Eliot published 'The Love Song of J. Alfred Prufrock' in 'Poetry' magazine in 1915 and in 'Prufrock and Other Observations' in 1917.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-13",
@@ -158,7 +170,8 @@
     "'Ash-Wednesday'"
    ],
    "correct_option_id": 0,
-   "explanation": "T. S. Eliot's five-part poem 'The Waste Land' of 1922 opens Section I, 'The Burial of the Dead', with April is the cruellest month."
+   "explanation": "T. S. Eliot's five-part poem 'The Waste Land' of 1922 opens Section I, 'The Burial of the Dead', with April is the cruellest month.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-14",
@@ -170,7 +183,8 @@
     "Ezra Pound"
    ],
    "correct_option_id": 3,
-   "explanation": "Ezra Pound heavily edited the manuscript of 'The Waste Land', and Eliot dedicated the poem to him using Dante's phrase for Arnaut Daniel."
+   "explanation": "Ezra Pound heavily edited the manuscript of 'The Waste Land', and Eliot dedicated the poem to him using Dante's phrase for Arnaut Daniel.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-15",
@@ -182,7 +196,8 @@
     "'Murder in the Cathedral'"
    ],
    "correct_option_id": 3,
-   "explanation": "Eliot wrote 'Murder in the Cathedral' in 1935 for the Canterbury Festival, dramatizing Becket's martyrdom."
+   "explanation": "Eliot wrote 'Murder in the Cathedral' in 1935 for the Canterbury Festival, dramatizing Becket's martyrdom.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-16",
@@ -194,7 +209,8 @@
     "'Choruses from The Rock'"
    ],
    "correct_option_id": 2,
-   "explanation": "Eliot composed 'Four Quartets' between 1935 and 1942 and published the complete four-poem volume in 1943."
+   "explanation": "Eliot composed 'Four Quartets' between 1935 and 1942 and published the complete four-poem volume in 1943.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-17",
@@ -206,7 +222,8 @@
     "'The Use of Poetry and the Use of Criticism'"
    ],
    "correct_option_id": 2,
-   "explanation": "Eliot's first book of literary criticism, 'The Sacred Wood: Essays on Poetry and Criticism', appeared in 1920."
+   "explanation": "Eliot's first book of literary criticism, 'The Sacred Wood: Essays on Poetry and Criticism', appeared in 1920.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-18",
@@ -218,7 +235,8 @@
     "Leopold Bloom"
    ],
    "correct_option_id": 0,
-   "explanation": "Stephen Dedalus, named after Saint Stephen and the mythical artificer Daedalus, is the hero of 'A Portrait of the Artist as a Young Man'."
+   "explanation": "Stephen Dedalus, named after Saint Stephen and the mythical artificer Daedalus, is the hero of 'A Portrait of the Artist as a Young Man'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-19",
@@ -230,7 +248,8 @@
     "16 June 1904"
    ],
    "correct_option_id": 3,
-   "explanation": "All eighteen episodes of Joyce's 'Ulysses' unfold on a single day, 16 June 1904, the date of Joyce's first outing with Nora Barnacle."
+   "explanation": "All eighteen episodes of Joyce's 'Ulysses' unfold on a single day, 16 June 1904, the date of Joyce's first outing with Nora Barnacle.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-20",
@@ -242,7 +261,8 @@
     "'Exiles'"
    ],
    "correct_option_id": 0,
-   "explanation": "Serialized in fragments as 'Work in Progress', Joyce's 'Finnegans Wake' was published in May 1939."
+   "explanation": "Serialized in fragments as 'Work in Progress', Joyce's 'Finnegans Wake' was published in May 1939.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-21",
@@ -254,7 +274,8 @@
     "The Hogarth Press"
    ],
    "correct_option_id": 3,
-   "explanation": "Leonard and Virginia Woolf established the Hogarth Press in 1917 at Hogarth House, Richmond."
+   "explanation": "Leonard and Virginia Woolf established the Hogarth Press in 1917 at Hogarth House, Richmond.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-22",
@@ -266,7 +287,8 @@
     "'The Voyage Out'"
    ],
    "correct_option_id": 2,
-   "explanation": "Woolf's 1925 novel 'Mrs. Dalloway' interweaves Clarissa Dalloway's party preparations with the shell-shocked Septimus Warren Smith."
+   "explanation": "Woolf's 1925 novel 'Mrs. Dalloway' interweaves Clarissa Dalloway's party preparations with the shell-shocked Septimus Warren Smith.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-23",
@@ -278,7 +300,8 @@
     "'Jacob's Room'"
    ],
    "correct_option_id": 1,
-   "explanation": "Woolf's 1927 elegiac novel 'To the Lighthouse' is structured in three parts: 'The Window', 'Time Passes', and 'The Lighthouse'."
+   "explanation": "Woolf's 1927 elegiac novel 'To the Lighthouse' is structured in three parts: 'The Window', 'Time Passes', and 'The Lighthouse'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-24",
@@ -290,7 +313,8 @@
     "'Roger Fry: A Biography'"
    ],
    "correct_option_id": 0,
-   "explanation": "Woolf published 'Orlando: A Biography' in 1928 as a playful fantasy of literary history and gender identity inspired by Vita Sackville-West."
+   "explanation": "Woolf published 'Orlando: A Biography' in 1928 as a playful fantasy of literary history and gender identity inspired by Vita Sackville-West.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-25",
@@ -302,7 +326,8 @@
     "'Three Guineas'"
    ],
    "correct_option_id": 1,
-   "explanation": "Based on lectures at Newnham and Girton Colleges, Cambridge, Woolf's 'A Room of One's Own' appeared in 1929."
+   "explanation": "Based on lectures at Newnham and Girton Colleges, Cambridge, Woolf's 'A Room of One's Own' appeared in 1929.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-26",
@@ -314,7 +339,8 @@
     "'Kangaroo' and 'The Plumed Serpent'"
    ],
    "correct_option_id": 2,
-   "explanation": "Lawrence traced the generational history of the Brangwens in 'The Rainbow' in 1915 and its sequel 'Women in Love' in 1920."
+   "explanation": "Lawrence traced the generational history of the Brangwens in 'The Rainbow' in 1915 and its sequel 'Women in Love' in 1920.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-27",
@@ -326,7 +352,8 @@
     "'The Virgin and the Gipsy'"
    ],
    "correct_option_id": 0,
-   "explanation": "Lawrence's final novel, 'Lady Chatterley's Lover', was printed in Florence in 1928 and remained banned in Britain until the 1960 trial."
+   "explanation": "Lawrence's final novel, 'Lady Chatterley's Lover', was printed in Florence in 1928 and remained banned in Britain until the 1960 trial.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-28",
@@ -338,7 +365,8 @@
     "'No More Parades'"
    ],
    "correct_option_id": 0,
-   "explanation": "Ford Madox Ford's 'The Good Soldier: A Tale of Passion' of 1915 is a classic of modernist unreliable narration."
+   "explanation": "Ford Madox Ford's 'The Good Soldier: A Tale of Passion' of 1915 is a classic of modernist unreliable narration.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-29",
@@ -350,7 +378,8 @@
     "'The Forsyte Saga'"
    ],
    "correct_option_id": 2,
-   "explanation": "Ford's 'Parade's End' tetralogy comprises 'Some Do Not...', 'No More Parades', 'A Man Could Stand Up—', and 'Last Post'."
+   "explanation": "Ford's 'Parade's End' tetralogy comprises 'Some Do Not...', 'No More Parades', 'A Man Could Stand Up—', and 'Last Post'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-30",
@@ -362,7 +391,8 @@
     "'Howards End'"
    ],
    "correct_option_id": 2,
-   "explanation": "Forster's 'A Passage to India' of 1924 centres on Adela Quested's accusation against Dr. Aziz after visiting the Marabar Caves."
+   "explanation": "Forster's 'A Passage to India' of 1924 centres on Adela Quested's accusation against Dr. Aziz after visiting the Marabar Caves.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-31",
@@ -374,7 +404,8 @@
     "'The Craft of Fiction'"
    ],
    "correct_option_id": 2,
-   "explanation": "Forster delivered the Clark Lectures at Trinity College, Cambridge, and published them in 1927 as 'Aspects of the Novel'."
+   "explanation": "Forster delivered the Clark Lectures at Trinity College, Cambridge, and published them in 1927 as 'Aspects of the Novel'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-32",
@@ -386,7 +417,8 @@
     "Rebecca West"
    ],
    "correct_option_id": 0,
-   "explanation": "Katherine Mansfield revolutionized the English modernist short story with Chekhovian subtlety in 'Bliss' and 'The Garden Party'."
+   "explanation": "Katherine Mansfield revolutionized the English modernist short story with Chekhovian subtlety in 'Bliss' and 'The Garden Party'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-33",
@@ -398,7 +430,8 @@
     "Ivy Compton-Burnett"
    ],
    "correct_option_id": 0,
-   "explanation": "Dorothy Richardson published 'Pointed Roofs' in 1915 as the first volume of 'Pilgrimage', following Miriam Henderson's consciousness."
+   "explanation": "Dorothy Richardson published 'Pointed Roofs' in 1915 as the first volume of 'Pilgrimage', following Miriam Henderson's consciousness.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-34",
@@ -410,7 +443,8 @@
     "'Antic Hay'"
    ],
    "correct_option_id": 0,
-   "explanation": "Aldous Huxley published 'Brave New World' in 1932, portraying a technocratic dystopia dated in the year of Our Ford 632."
+   "explanation": "Aldous Huxley published 'Brave New World' in 1932, portraying a technocratic dystopia dated in the year of Our Ford 632.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-35",
@@ -422,7 +456,8 @@
     "'Macbeth'"
    ],
    "correct_option_id": 1,
-   "explanation": "In Act V of Shakespeare's 'The Tempest', Miranda exclaims O brave new world, That has such people in't!"
+   "explanation": "In Act V of Shakespeare's 'The Tempest', Miranda exclaims O brave new world, That has such people in't!",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-36",
@@ -434,7 +469,8 @@
     "Hugh MacDiarmid, Ezra Pound, T. S. Eliot, and William Butler Yeats"
    ],
    "correct_option_id": 1,
-   "explanation": "Roy Campbell coined the composite name MacSpaunday in 'Talking Bronco' for MacNeice, Spender, Auden, and Day-Lewis."
+   "explanation": "Roy Campbell coined the composite name MacSpaunday in 'Talking Bronco' for MacNeice, Spender, Auden, and Day-Lewis.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-37",
@@ -446,7 +482,8 @@
     "W. H. Auden"
    ],
    "correct_option_id": 3,
-   "explanation": "Wystan Hugh Auden was the central figure of the 1930s poets, authoring 'Spain', 'In Memory of W. B. Yeats', and 'September 1, 1939'."
+   "explanation": "Wystan Hugh Auden was the central figure of the 1930s poets, authoring 'Spain', 'In Memory of W. B. Yeats', and 'September 1, 1939'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-38",
@@ -458,7 +495,8 @@
     "Hugh MacDiarmid"
    ],
    "correct_option_id": 2,
-   "explanation": "Eric Arthur Blair adopted the pen name George Orwell with the publication of 'Down and Out in Paris and London' in 1933."
+   "explanation": "Eric Arthur Blair adopted the pen name George Orwell with the publication of 'Down and Out in Paris and London' in 1933.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-39",
@@ -470,7 +508,8 @@
     "'Animal Farm'"
    ],
    "correct_option_id": 3,
-   "explanation": "Orwell's 'Animal Farm: A Fairy Story' was published on 17 August 1945, satirizing Soviet totalitarianism."
+   "explanation": "Orwell's 'Animal Farm: A Fairy Story' was published on 17 August 1945, satirizing Soviet totalitarianism.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-40",
@@ -482,7 +521,8 @@
     "The First World War"
    ],
    "correct_option_id": 1,
-   "explanation": "Orwell fought with the POUM militia in the Spanish Civil War and was wounded in the throat by a sniper, as told in 'Homage to Catalonia'."
+   "explanation": "Orwell fought with the POUM militia in the Spanish Civil War and was wounded in the throat by a sniper, as told in 'Homage to Catalonia'.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-41",
@@ -494,7 +534,8 @@
     "Graham Greene"
    ],
    "correct_option_id": 1,
-   "explanation": "Evelyn Waugh satirized the Bright Young Things of the 1920s and published 'Brideshead Revisited' in 1945."
+   "explanation": "Evelyn Waugh satirized the Bright Young Things of the 1920s and published 'Brideshead Revisited' in 1945.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-42",
@@ -506,7 +547,8 @@
     "J. B. Priestley"
    ],
    "correct_option_id": 2,
-   "explanation": "Graham Greene merged thriller plots with Catholic moral ambiguity in 'Brighton Rock' in 1938 and 'The Power and the Glory' in 1940."
+   "explanation": "Graham Greene merged thriller plots with Catholic moral ambiguity in 'Brighton Rock' in 1938 and 'The Power and the Glory' in 1940.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-43",
@@ -518,7 +560,8 @@
     "Rex Warner"
    ],
    "correct_option_id": 2,
-   "explanation": "Christopher Isherwood published 'Mr Norris Changes Trains' in 1935 and 'Goodbye to Berlin' in 1939, declaring I am a camera."
+   "explanation": "Christopher Isherwood published 'Mr Norris Changes Trains' in 1935 and 'Goodbye to Berlin' in 1939, declaring I am a camera.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-44",
@@ -530,7 +573,8 @@
     "Denis Johnston"
    ],
    "correct_option_id": 0,
-   "explanation": "Sean O'Casey portrayed working-class Dubliners during the Irish revolutionary period in his three Abbey Theatre masterpieces of 1923–1926."
+   "explanation": "Sean O'Casey portrayed working-class Dubliners during the Irish revolutionary period in his three Abbey Theatre masterpieces of 1923–1926.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-45",
@@ -542,7 +586,8 @@
     "R. C. Sherriff"
    ],
    "correct_option_id": 2,
-   "explanation": "Noël Coward broke through with 'The Vortex' in 1924 and became the master of interwar sophisticated comedy."
+   "explanation": "Noël Coward broke through with 'The Vortex' in 1924 and became the master of interwar sophisticated comedy.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-46",
@@ -554,7 +599,8 @@
     "'Saint Joan'"
    ],
    "correct_option_id": 3,
-   "explanation": "Shaw's 'Saint Joan', premiered in 1923 and published in 1924 after Joan of Arc's 1920 canonization, is widely regarded as his greatest tragedy."
+   "explanation": "Shaw's 'Saint Joan', premiered in 1923 and published in 1924 after Joan of Arc's 1920 canonization, is widely regarded as his greatest tragedy.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-47",
@@ -566,7 +612,8 @@
     "C. S. Lewis"
    ],
    "correct_option_id": 1,
-   "explanation": "I. A. Richards pioneered close reading by having Cambridge students analyze unsigned poems in 'Practical Criticism' in 1929."
+   "explanation": "I. A. Richards pioneered close reading by having Cambridge students analyze unsigned poems in 'Practical Criticism' in 1929.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-48",
@@ -578,7 +625,8 @@
     "Cleanth Brooks"
    ],
    "correct_option_id": 1,
-   "explanation": "William Empson wrote 'Seven Types of Ambiguity' in 1930 at age 24, demonstrating the multiple meanings generated by poetic language."
+   "explanation": "William Empson wrote 'Seven Types of Ambiguity' in 1930 at age 24, demonstrating the multiple meanings generated by poetic language.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-49",
@@ -590,7 +638,8 @@
     "F. R. Leavis"
    ],
    "correct_option_id": 3,
-   "explanation": "F. R. Leavis edited 'Scrutiny' from 1932 to 1953 and published 'New Bearings in English Poetry' in 1932."
+   "explanation": "F. R. Leavis edited 'Scrutiny' from 1932 to 1953 and published 'New Bearings in English Poetry' in 1932.",
+   "periodId": "modern-era"
   },
   {
    "id": "md-e-50",
@@ -602,7 +651,8 @@
     "Alun Lewis"
    ],
    "correct_option_id": 0,
-   "explanation": "Dylan Thomas brought neo-romantic lyrical intensity back to British poetry in the 1930s and 1940s."
+   "explanation": "Dylan Thomas brought neo-romantic lyrical intensity back to British poetry in the 1930s and 1940s.",
+   "periodId": "modern-era"
   }
  ]
 }

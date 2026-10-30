@@ -14,7 +14,8 @@
     "Anglo-Norman French"
    ],
    "correct_option_id": 3,
-   "explanation": "After the 1066 Conquest Anglo-Norman French was the spoken tongue of the English monarchy, baronial court, and aristocracy."
+   "explanation": "After the 1066 Conquest Anglo-Norman French was the spoken tongue of the English monarchy, baronial court, and aristocracy.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-02",
@@ -26,7 +27,8 @@
     "Roman de Rou"
    ],
    "correct_option_id": 1,
-   "explanation": "Geoffrei Gaimar composed L'Estoire des Engleis in Anglo-Norman rhymed couplets, tracing English history from Anglo-Saxon kings."
+   "explanation": "Geoffrei Gaimar composed L'Estoire des Engleis in Anglo-Norman rhymed couplets, tracing English history from Anglo-Saxon kings.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-03",
@@ -38,7 +40,8 @@
     "Benoit de Sainte-Maure"
    ],
    "correct_option_id": 1,
-   "explanation": "Wace introduced La Table Ronde in his 1155 Roman de Brut, symbolising chivalric equality among King Arthur's knights."
+   "explanation": "Wace introduced La Table Ronde in his 1155 Roman de Brut, symbolising chivalric equality among King Arthur's knights.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-04",
@@ -50,7 +53,8 @@
     "Layamon"
    ],
    "correct_option_id": 3,
-   "explanation": "Layamon, a priest of Areley Kings in Worcestershire, composed the first English-language Arthurian chronicle around 1200."
+   "explanation": "Layamon, a priest of Areley Kings in Worcestershire, composed the first English-language Arthurian chronicle around 1200.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-05",
@@ -62,7 +66,8 @@
     "Henry of Huntingdon"
    ],
    "correct_option_id": 0,
-   "explanation": "Geoffrey of Monmouth composed Historia Regum Britanniae around 1136 to 1138, popularising King Arthur and Merlin."
+   "explanation": "Geoffrey of Monmouth composed Historia Regum Britanniae around 1136 to 1138, popularising King Arthur and Merlin.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-06",
@@ -74,7 +79,8 @@
     "Havelok the Dane"
    ],
    "correct_option_id": 1,
-   "explanation": "King Horn, composed around 1225 in rhyming couplets, is considered the earliest extant Middle English chivalric romance."
+   "explanation": "King Horn, composed around 1225 in rhyming couplets, is considered the earliest extant Middle English chivalric romance.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-07",
@@ -86,7 +92,8 @@
     "Eleanor of Aquitaine"
    ],
    "correct_option_id": 0,
-   "explanation": "Marie de France wrote twelve celebrated Breton lais in Anglo-Norman verse at the royal court of England during the late 12th century."
+   "explanation": "Marie de France wrote twelve celebrated Breton lais in Anglo-Norman verse at the royal court of England during the late 12th century.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-08",
@@ -98,7 +105,8 @@
     "Ancrene Wisse"
    ],
    "correct_option_id": 3,
-   "explanation": "Ancrene Wisse, also known as Ancrene Riwle, provided monastic and domestic rules for female recluses in the West Midlands."
+   "explanation": "Ancrene Wisse, also known as Ancrene Riwle, provided monastic and domestic rules for female recluses in the West Midlands.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-09",
@@ -110,7 +118,8 @@
     "Wynnere and Wastoure"
    ],
    "correct_option_id": 0,
-   "explanation": "The Owl and the Nightingale, composed around 1200 in octosyllabic couplets, depicts a lively poetic dispute over human happiness."
+   "explanation": "The Owl and the Nightingale, composed around 1200 in octosyllabic couplets, depicts a lively poetic dispute over human happiness.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-10",
@@ -122,7 +131,8 @@
     "Lenten is come with love to toune"
    ],
    "correct_option_id": 1,
-   "explanation": "Sumer is icumen in, known as The Cuckoo Song, is a 13th-century round preserved with musical notes in Harley MS 978."
+   "explanation": "Sumer is icumen in, known as The Cuckoo Song, is a 13th-century round preserved with musical notes in Harley MS 978.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-11",
@@ -134,7 +144,8 @@
     "William the Conqueror"
    ],
    "correct_option_id": 3,
-   "explanation": "William the Conqueror ordered the Domesday survey in 1085 to assess English wealth and landholdings across his new feudal kingdom."
+   "explanation": "William the Conqueror ordered the Domesday survey in 1085 to assess English wealth and landholdings across his new feudal kingdom.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-12",
@@ -146,7 +157,8 @@
     "Mankind"
    ],
    "correct_option_id": 1,
-   "explanation": "Le Mystere d'Adam, composed around 1140 to 1170, dramatises Adam and Eve, Cain and Abel, and prophets outside church doors."
+   "explanation": "Le Mystere d'Adam, composed around 1140 to 1170, dramatises Adam and Eve, Cain and Abel, and prophets outside church doors.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-13",
@@ -158,7 +170,8 @@
     "Chretien de Troyes"
    ],
    "correct_option_id": 2,
-   "explanation": "Jean Bodel famously categorised medieval romances into the Matter of Britain, Matter of France, and Matter of Rome."
+   "explanation": "Jean Bodel famously categorised medieval romances into the Matter of Britain, Matter of France, and Matter of Rome.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-14",
@@ -170,7 +183,8 @@
     "Matter of England"
    ],
    "correct_option_id": 1,
-   "explanation": "The Matter of Britain encompasses all medieval legends and chivalric romances centered on King Arthur and his knights."
+   "explanation": "The Matter of Britain encompasses all medieval legends and chivalric romances centered on King Arthur and his knights.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-15",
@@ -182,7 +196,8 @@
     "Matter of Britain"
    ],
    "correct_option_id": 0,
-   "explanation": "The Matter of France comprises the chansons de geste celebrating the military deeds of Charlemagne, Roland, and Oliver."
+   "explanation": "The Matter of France comprises the chansons de geste celebrating the military deeds of Charlemagne, Roland, and Oliver.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-16",
@@ -194,7 +209,8 @@
     "Matter of England"
    ],
    "correct_option_id": 1,
-   "explanation": "The Matter of Rome comprises medieval tales drawn from classical antiquity, notably Troy, Thebes, Aeneas, and Alexander."
+   "explanation": "The Matter of Rome comprises medieval tales drawn from classical antiquity, notably Troy, Thebes, Aeneas, and Alexander.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-17",
@@ -206,7 +222,8 @@
     "Dan Michel"
    ],
    "correct_option_id": 1,
-   "explanation": "Orm wrote the Ormulum around 1180, doubling consonants after short vowels to guide correct English vernacular pronunciation."
+   "explanation": "Orm wrote the Ormulum around 1180, doubling consonants after short vowels to guide correct English vernacular pronunciation.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-18",
@@ -218,7 +235,8 @@
     "Lanval"
    ],
    "correct_option_id": 2,
-   "explanation": "In Bisclavret, a noble werewolf is betrayed by his unfaithful wife who steals his clothes, until the king discovers his gentle nature."
+   "explanation": "In Bisclavret, a noble werewolf is betrayed by his unfaithful wife who steals his clothes, until the king discovers his gentle nature.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-19",
@@ -230,7 +248,8 @@
     "Bisclavret"
    ],
    "correct_option_id": 2,
-   "explanation": "Lanval is rewarded with endless wealth by a fairy maiden on condition of secrecy, later being rescued by her from Arthur's court."
+   "explanation": "Lanval is rewarded with endless wealth by a fairy maiden on condition of secrecy, later being rescued by her from Arthur's court.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-20",
@@ -242,7 +261,8 @@
     "Mistletoe"
    ],
    "correct_option_id": 0,
-   "explanation": "Chevrefoil means honeysuckle, symbolizing how Tristan and Yseult cannot live without each other, just like honeysuckle on hazel."
+   "explanation": "Chevrefoil means honeysuckle, symbolizing how Tristan and Yseult cannot live without each other, just like honeysuckle on hazel.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-21",
@@ -254,7 +274,8 @@
     "Havelok the Dane"
    ],
    "correct_option_id": 3,
-   "explanation": "Havelok the Dane recounts the restoration of prince Havelok and princess Goldborough after Havelok is fostered by the fisherman Grim."
+   "explanation": "Havelok the Dane recounts the restoration of prince Havelok and princess Goldborough after Havelok is fostered by the fisherman Grim.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-22",
@@ -266,7 +287,8 @@
     "Grim"
    ],
    "correct_option_id": 3,
-   "explanation": "The fisherman Grim flees Denmark with young Havelok to England, founding the Lincolnshire port town of Grimsby."
+   "explanation": "The fisherman Grim flees Denmark with young Havelok to England, founding the Lincolnshire port town of Grimsby.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-23",
@@ -278,7 +300,8 @@
     "Bevis of Hampton"
    ],
    "correct_option_id": 0,
-   "explanation": "Guy of Warwick performs knightly feats across Christendom to win lady Felice, then spends his later years in religious penance."
+   "explanation": "Guy of Warwick performs knightly feats across Christendom to win lady Felice, then spends his later years in religious penance.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-24",
@@ -290,7 +313,8 @@
     "Sir Orfeo"
    ],
    "correct_option_id": 2,
-   "explanation": "Bevis of Hampton is an exiled English hero who overcomes Saracen captors, riding the noble steed Arundel and wielding Morglay."
+   "explanation": "Bevis of Hampton is an exiled English hero who overcomes Saracen captors, riding the noble steed Arundel and wielding Morglay.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-25",
@@ -302,7 +326,8 @@
     "Sir Orfeo"
    ],
    "correct_option_id": 3,
-   "explanation": "Sir Orfeo depicts King Orfeo using his magical harp to win back his abducted queen Dame Heurodis from the King of the Fairies."
+   "explanation": "Sir Orfeo depicts King Orfeo using his magical harp to win back his abducted queen Dame Heurodis from the King of the Fairies.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-26",
@@ -314,7 +339,8 @@
     "Goldborough"
    ],
    "correct_option_id": 2,
-   "explanation": "Dame Heurodis is seized while resting under an ympe-tree in her orchard, and is subsequently rescued by her devoted husband."
+   "explanation": "Dame Heurodis is seized while resting under an ympe-tree in her orchard, and is subsequently rescued by her devoted husband.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-27",
@@ -326,7 +352,8 @@
     "Edward the Confessor"
    ],
    "correct_option_id": 1,
-   "explanation": "King Harold Godwinson was the last crowned Anglo-Saxon monarch, slain at the Battle of Hastings on 14 October 1066."
+   "explanation": "King Harold Godwinson was the last crowned Anglo-Saxon monarch, slain at the Battle of Hastings on 14 October 1066.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-28",
@@ -338,7 +365,8 @@
     "Battle of Maldon"
    ],
    "correct_option_id": 2,
-   "explanation": "The Battle of Hastings established Norman rule over England, bringing fundamental feudal and cultural transformations."
+   "explanation": "The Battle of Hastings established Norman rule over England, bringing fundamental feudal and cultural transformations.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-29",
@@ -350,7 +378,8 @@
     "Latin"
    ],
    "correct_option_id": 3,
-   "explanation": "Latin remained the universal language of the Church, liturgy, theology, legal records, and academic historiography."
+   "explanation": "Latin remained the universal language of the Church, liturgy, theology, legal records, and academic historiography.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-30",
@@ -362,7 +391,8 @@
     "Monastic socialism"
    ],
    "correct_option_id": 1,
-   "explanation": "William I instituted continental feudalism, distributing Saxon estates to Norman barons as crown tenants-in-chief."
+   "explanation": "William I instituted continental feudalism, distributing Saxon estates to Norman barons as crown tenants-in-chief.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-31",
@@ -374,7 +404,8 @@
     "Domesday Book"
    ],
    "correct_option_id": 3,
-   "explanation": "The survey was called the Domesday Book by the English because its binding verdicts were likened to the Day of Judgment."
+   "explanation": "The survey was called the Domesday Book by the English because its binding verdicts were likened to the Day of Judgment.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-32",
@@ -386,7 +417,8 @@
     "Southern"
    ],
    "correct_option_id": 0,
-   "explanation": "The East Midland dialect of London and Chancery became the prestige literary dialect, later popularized by Chaucer and Caxton."
+   "explanation": "The East Midland dialect of London and Chancery became the prestige literary dialect, later popularized by Chaucer and Caxton.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-33",
@@ -398,7 +430,8 @@
     "Elimination of prepositions"
    ],
    "correct_option_id": 2,
-   "explanation": "Middle English transitioned from a synthetic to an analytic language through the leveling and loss of terminal inflections."
+   "explanation": "Middle English transitioned from a synthetic to an analytic language through the leveling and loss of terminal inflections.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-34",
@@ -410,7 +443,8 @@
     "Caesuras"
    ],
    "correct_option_id": 0,
-   "explanation": "Linguistic doublets arose when native Germanic words for live animals were paired with French terms for prepared food."
+   "explanation": "Linguistic doublets arose when native Germanic words for live animals were paired with French terms for prepared food.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-35",
@@ -422,7 +456,8 @@
     "King Alfred"
    ],
    "correct_option_id": 0,
-   "explanation": "King Arthur is the legendary monarch whose chivalric court and fellowship form the core of medieval British romance."
+   "explanation": "King Arthur is the legendary monarch whose chivalric court and fellowship form the core of medieval British romance.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-36",
@@ -434,7 +469,8 @@
     "Excalibur"
    ],
    "correct_option_id": 3,
-   "explanation": "Excalibur is King Arthur's mythical sword, returned to the Lady of the Lake by Sir Bedevere after Arthur is mortally wounded."
+   "explanation": "Excalibur is King Arthur's mythical sword, returned to the Lady of the Lake by Sir Bedevere after Arthur is mortally wounded.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-37",
@@ -446,7 +482,8 @@
     "Merlin"
    ],
    "correct_option_id": 3,
-   "explanation": "Geoffrey of Monmouth popularized the enigmatic prophet-magician Merlin in his Prophetiae Merlini and British history."
+   "explanation": "Geoffrey of Monmouth popularized the enigmatic prophet-magician Merlin in his Prophetiae Merlini and British history.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-38",
@@ -458,7 +495,8 @@
     "Heorot"
    ],
    "correct_option_id": 0,
-   "explanation": "Avalon is the legendary Celtic island of apples and enchantments where Arthur is taken aboard a barge after his final battle."
+   "explanation": "Avalon is the legendary Celtic island of apples and enchantments where Arthur is taken aboard a barge after his final battle.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-39",
@@ -470,7 +508,8 @@
     "Elaine"
    ],
    "correct_option_id": 2,
-   "explanation": "Queen Guinevere is Arthur's wife, whose love for Lancelot becomes a tragic catalyst for the fracturing of the fellowship."
+   "explanation": "Queen Guinevere is Arthur's wife, whose love for Lancelot becomes a tragic catalyst for the fracturing of the fellowship.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-40",
@@ -482,7 +521,8 @@
     "Agravain"
    ],
    "correct_option_id": 0,
-   "explanation": "Mordred seizes the throne and attempts to take Queen Guinevere while Arthur is abroad, leading to mutual slaughter at Camlann."
+   "explanation": "Mordred seizes the throne and attempts to take Queen Guinevere while Arthur is abroad, leading to mutual slaughter at Camlann.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-41",
@@ -494,7 +534,8 @@
     "Ormulum"
    ],
    "correct_option_id": 2,
-   "explanation": "Ayenbite of Inwit was translated from French by Dan Michel of Northgate at Canterbury, providing a benchmark for Kentish prose."
+   "explanation": "Ayenbite of Inwit was translated from French by Dan Michel of Northgate at Canterbury, providing a benchmark for Kentish prose.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-42",
@@ -506,7 +547,8 @@
     "Poema Morale"
    ],
    "correct_option_id": 2,
-   "explanation": "Robert Mannyng composed Handlyng Synne in 1303 as a vernacular handbook of popular exempla to teach the laity moral living."
+   "explanation": "Robert Mannyng composed Handlyng Synne in 1303 as a vernacular handbook of popular exempla to teach the laity moral living.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-43",
@@ -518,7 +560,8 @@
     "The Friar's Curse"
    ],
    "correct_option_id": 0,
-   "explanation": "The Dancers of Colbek were cursed by a priest for singing and caroling in a churchyard on Christmas Eve, dancing non-stop for a year."
+   "explanation": "The Dancers of Colbek were cursed by a priest for singing and caroling in a churchyard on Christmas Eve, dancing non-stop for a year.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-44",
@@ -530,7 +573,8 @@
     "Cursor Mundi"
    ],
    "correct_option_id": 3,
-   "explanation": "Cursor Mundi, meaning Runner of the World, covers biblical and human history from Creation to the Day of Judgment."
+   "explanation": "Cursor Mundi, meaning Runner of the World, covers biblical and human history from Creation to the Day of Judgment.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-45",
@@ -542,7 +586,8 @@
     "The Owl"
    ],
    "correct_option_id": 2,
-   "explanation": "The Nightingale defends secular lyrics, romance, and the joyful beauty of springtime against the grim complaints of the Owl."
+   "explanation": "The Nightingale defends secular lyrics, romance, and the joyful beauty of springtime against the grim complaints of the Owl.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-46",
@@ -554,7 +599,8 @@
     "The Raven"
    ],
    "correct_option_id": 1,
-   "explanation": "The Owl argues that life should be dedicated to sober reflection, mourning sin, and preparing human souls for the afterlife."
+   "explanation": "The Owl argues that life should be dedicated to sober reflection, mourning sin, and preparing human souls for the afterlife.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-47",
@@ -566,7 +612,8 @@
     "Sir Degare"
    ],
    "correct_option_id": 2,
-   "explanation": "Amis and Amiloun portrays the ultimate trial of fraternal love and sworn brotherhood through divine testing and miraculous healing."
+   "explanation": "Amis and Amiloun portrays the ultimate trial of fraternal love and sworn brotherhood through divine testing and miraculous healing.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-48",
@@ -578,7 +625,8 @@
     "Guy of Warwick"
    ],
    "correct_option_id": 0,
-   "explanation": "Floris and Blancheflour tells how the young prince Floris travels to Babylon to rescue his beloved Christian companion Blancheflour."
+   "explanation": "Floris and Blancheflour tells how the young prince Floris travels to Babylon to rescue his beloved Christian companion Blancheflour.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-49",
@@ -590,7 +638,8 @@
     "Henry of Huntingdon"
    ],
    "correct_option_id": 1,
-   "explanation": "William of Malmesbury composed Gesta Regum Anglorum around 1125, offering a critical, literate account of the English monarchy."
+   "explanation": "William of Malmesbury composed Gesta Regum Anglorum around 1125, offering a critical, literate account of the English monarchy.",
+   "periodId": "anglo-norman"
   },
   {
    "id": "an-e-50",
@@ -602,7 +651,8 @@
     "Assize of Clarendon"
    ],
    "correct_option_id": 1,
-   "explanation": "The Statute of Pleading enacted in 1362 declared that French was too little known among the people and established English in court."
+   "explanation": "The Statute of Pleading enacted in 1362 declared that French was too little known among the people and established English in court.",
+   "periodId": "anglo-norman"
   }
  ]
 }

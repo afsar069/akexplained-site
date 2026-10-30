@@ -14,7 +14,8 @@
     "1660"
    ],
    "correct_option_id": 1,
-   "explanation": "King Charles I was beheaded on 30 January 1649 leading to the establishment of the Commonwealth."
+   "explanation": "King Charles I was beheaded on 30 January 1649 leading to the establishment of the Commonwealth.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-02",
@@ -26,7 +27,8 @@
     "The Commonwealth of England"
    ],
    "correct_option_id": 3,
-   "explanation": "An Act declaring England to be a Commonwealth was passed by the Rump Parliament on 19 May 1649."
+   "explanation": "An Act declaring England to be a Commonwealth was passed by the Rump Parliament on 19 May 1649.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-03",
@@ -38,7 +40,8 @@
     "Lord Protector"
    ],
    "correct_option_id": 3,
-   "explanation": "Under the Instrument of Government in 1653 Cromwell became Lord Protector of the Commonwealth."
+   "explanation": "Under the Instrument of Government in 1653 Cromwell became Lord Protector of the Commonwealth.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-04",
@@ -50,7 +53,8 @@
     "King Charles II"
    ],
    "correct_option_id": 3,
-   "explanation": "King Charles II returned from exile in May 1660 following the Declaration of Breda."
+   "explanation": "King Charles II returned from exile in May 1660 following the Declaration of Breda.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-05",
@@ -62,7 +66,8 @@
     "1660"
    ],
    "correct_option_id": 0,
-   "explanation": "The ordinance of 2 September 1642 closed all public theatres on moral and religious grounds."
+   "explanation": "The ordinance of 2 September 1642 closed all public theatres on moral and religious grounds.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-06",
@@ -74,7 +79,8 @@
     "Moralities"
    ],
    "correct_option_id": 1,
-   "explanation": "Drolls were brief dramatic excerpts and farces staged secretly during the theatre ban."
+   "explanation": "Drolls were brief dramatic excerpts and farces staged secretly during the theatre ban.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-07",
@@ -86,7 +92,8 @@
     "The Indian Queen"
    ],
    "correct_option_id": 2,
-   "explanation": "Davenant staged The Siege of Rhodes in September 1656 using recitative music to evade stage bans."
+   "explanation": "Davenant staged The Siege of Rhodes in September 1656 using recitative music to evade stage bans.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-08",
@@ -98,7 +105,8 @@
     "Mary Saunderson"
    ],
    "correct_option_id": 1,
-   "explanation": "Mrs. Coleman sang the role of Ianthe in Davenant production of The Siege of Rhodes in 1656."
+   "explanation": "Mrs. Coleman sang the role of Ianthe in Davenant production of The Siege of Rhodes in 1656.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-09",
@@ -110,7 +118,8 @@
     "Poet Laureate"
    ],
    "correct_option_id": 1,
-   "explanation": "Milton was appointed Secretary for Foreign Tongues or Latin Secretary to conduct state correspondence."
+   "explanation": "Milton was appointed Secretary for Foreign Tongues or Latin Secretary to conduct state correspondence.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-10",
@@ -122,7 +131,8 @@
     "Of Education"
    ],
    "correct_option_id": 0,
-   "explanation": "Milton published The Tenure of Kings and Magistrates shortly after the regicide to justify the trial."
+   "explanation": "Milton published The Tenure of Kings and Magistrates shortly after the regicide to justify the trial.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-11",
@@ -134,7 +144,8 @@
     "Eikonoklastes"
    ],
    "correct_option_id": 3,
-   "explanation": "Eikonoklastes meaning the Image-Breaker was commissioned by Parliament to counter Eikon Basilike."
+   "explanation": "Eikonoklastes meaning the Image-Breaker was commissioned by Parliament to counter Eikon Basilike.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-12",
@@ -146,7 +157,8 @@
     "Basilikon Doron"
    ],
    "correct_option_id": 1,
-   "explanation": "Eikon Basilike appeared immediately after Charles I death and presented him as a Christian martyr."
+   "explanation": "Eikon Basilike appeared immediately after Charles I death and presented him as a Christian martyr.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-13",
@@ -158,7 +170,8 @@
     "1658"
    ],
    "correct_option_id": 0,
-   "explanation": "Milton lost his remaining eyesight totally by early 1652 at the age of forty-three."
+   "explanation": "Milton lost his remaining eyesight totally by early 1652 at the age of forty-three.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-14",
@@ -170,7 +183,8 @@
     "To the Lord General Cromwell"
    ],
    "correct_option_id": 3,
-   "explanation": "Milton composed Sonnet 16 To the Lord General Cromwell in May 1652 urging freedom of conscience."
+   "explanation": "Milton composed Sonnet 16 To the Lord General Cromwell in May 1652 urging freedom of conscience.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-15",
@@ -182,7 +196,8 @@
     "The Waldensians"
    ],
    "correct_option_id": 3,
-   "explanation": "Sonnet 18 protests the slaughter of the Waldensians or Vaudois in the Alpine valleys of Piedmont."
+   "explanation": "Sonnet 18 protests the slaughter of the Waldensians or Vaudois in the Alpine valleys of Piedmont.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-16",
@@ -194,7 +209,8 @@
     "Mercy"
    ],
    "correct_option_id": 2,
-   "explanation": "In Sonnet 19 Patience replies to prevent the speaker murmur about his lost sight."
+   "explanation": "In Sonnet 19 Patience replies to prevent the speaker murmur about his lost sight.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-17",
@@ -206,7 +222,8 @@
     "Animadversions"
    ],
    "correct_option_id": 2,
-   "explanation": "Milton issued this urgent republican pamphlet in February 1660 opposing the return of Charles II."
+   "explanation": "Milton issued this urgent republican pamphlet in February 1660 opposing the return of Charles II.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-18",
@@ -218,7 +235,8 @@
     "The First Anniversary"
    ],
    "correct_option_id": 0,
-   "explanation": "Marvell composed An Horatian Ode in the summer of 1650 after Cromwell Irish expedition."
+   "explanation": "Marvell composed An Horatian Ode in the summer of 1650 after Cromwell Irish expedition.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-19",
@@ -230,7 +248,8 @@
     "Upon Appleton House"
    ],
    "correct_option_id": 3,
-   "explanation": "Upon Appleton House celebrates Lord General Thomas Fairfax estate and gardens in Yorkshire."
+   "explanation": "Upon Appleton House celebrates Lord General Thomas Fairfax estate and gardens in Yorkshire.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-20",
@@ -242,7 +261,8 @@
     "The Coronet"
    ],
    "correct_option_id": 0,
-   "explanation": "These celebrated lines appear in stanza six of Marvell poem The Garden written around 1651."
+   "explanation": "These celebrated lines appear in stanza six of Marvell poem The Garden written around 1651.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-21",
@@ -254,7 +274,8 @@
     "Assistant Latin Secretary"
    ],
    "correct_option_id": 3,
-   "explanation": "Marvell joined the Latin Secretariat in September 1657 to assist the sightless Milton."
+   "explanation": "Marvell joined the Latin Secretariat in September 1657 to assist the sightless Milton.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-22",
@@ -266,7 +287,8 @@
     "Cambridge"
    ],
    "correct_option_id": 2,
-   "explanation": "Marvell was elected MP for Hull in Richard Cromwell Third Protectorate Parliament in 1659."
+   "explanation": "Marvell was elected MP for Hull in Richard Cromwell Third Protectorate Parliament in 1659.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-23",
@@ -278,7 +300,8 @@
     "De Cive"
    ],
    "correct_option_id": 1,
-   "explanation": "Hobbes published Leviathan in London in 1651 advocating sovereign power to avert chaos."
+   "explanation": "Hobbes published Leviathan in London in 1651 advocating sovereign power to avert chaos.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-24",
@@ -290,7 +313,8 @@
     "blind"
    ],
    "correct_option_id": 0,
-   "explanation": "In chapter 13 of Leviathan Hobbes gives this classic description of life without government."
+   "explanation": "In chapter 13 of Leviathan Hobbes gives this classic description of life without government.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-25",
@@ -302,7 +326,8 @@
     "A sceptre and an orb"
    ],
    "correct_option_id": 1,
-   "explanation": "The sword symbolizes temporal civil authority and the crosier symbolizes spiritual ecclesiastical power."
+   "explanation": "The sword symbolizes temporal civil authority and the crosier symbolizes spiritual ecclesiastical power.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-26",
@@ -314,7 +339,8 @@
     "Six parts"
    ],
    "correct_option_id": 2,
-   "explanation": "Leviathan contains four parts titled Of Man, Of Commonwealth, Of a Christian Commonwealth, and Of Darkness."
+   "explanation": "Leviathan contains four parts titled Of Man, Of Commonwealth, Of a Christian Commonwealth, and Of Darkness.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-27",
@@ -326,7 +352,8 @@
     "The English Improver"
    ],
    "correct_option_id": 0,
-   "explanation": "Izaak Walton published The Compleat Angler or the Contemplative Man Recreation in 1653."
+   "explanation": "Izaak Walton published The Compleat Angler or the Contemplative Man Recreation in 1653.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-28",
@@ -338,7 +365,8 @@
     "Auceps"
    ],
    "correct_option_id": 0,
-   "explanation": "Piscator represents the fisherman who guides Venator the hunter and Auceps the falconer."
+   "explanation": "Piscator represents the fisherman who guides Venator the hunter and Auceps the falconer.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-29",
@@ -350,7 +378,8 @@
     "John Milton and Andrew Marvell"
    ],
    "correct_option_id": 2,
-   "explanation": "Walton published the Life of Donne in 1640 and the Life of Sir Henry Wotton in 1651."
+   "explanation": "Walton published the Life of Donne in 1640 and the Life of Sir Henry Wotton in 1651.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-30",
@@ -362,7 +391,8 @@
     "Religio Medici"
    ],
    "correct_option_id": 2,
-   "explanation": "Hydriotaphia was published in 1658 following the discovery of burial urns at Walsingham."
+   "explanation": "Hydriotaphia was published in 1658 following the discovery of burial urns at Walsingham.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-31",
@@ -374,7 +404,8 @@
     "The Anatomy of Melancholy"
    ],
    "correct_option_id": 2,
-   "explanation": "The Garden of Cyrus was published alongside Hydriotaphia in the same volume in 1658."
+   "explanation": "The Garden of Cyrus was published alongside Hydriotaphia in the same volume in 1658.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-32",
@@ -386,7 +417,8 @@
     "The equilateral triangle"
    ],
    "correct_option_id": 0,
-   "explanation": "Browne traces the quincunx five-point plantation arrangement through nature art and heaven."
+   "explanation": "Browne traces the quincunx five-point plantation arrangement through nature art and heaven.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-33",
@@ -398,7 +430,8 @@
     "The Saint's Rest and A Call to the Unconverted"
    ],
    "correct_option_id": 0,
-   "explanation": "Taylor published Holy Living in 1650 and Holy Dying in 1651 providing rules for Christian practice."
+   "explanation": "Taylor published Holy Living in 1650 and Holy Dying in 1651 providing rules for Christian practice.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-34",
@@ -410,7 +443,8 @@
     "The Christian Plato"
    ],
    "correct_option_id": 0,
-   "explanation": "Jeremy Taylor is often called the Shakespeare of Divines because of his poetic style."
+   "explanation": "Jeremy Taylor is often called the Shakespeare of Divines because of his poetic style.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-35",
@@ -422,7 +456,8 @@
     "George Herbert"
    ],
    "correct_option_id": 1,
-   "explanation": "Henry Vaughan published Silex Scintillans Part I in 1650 and enlarged it with Part II in 1655."
+   "explanation": "Henry Vaughan published Silex Scintillans Part I in 1650 and enlarged it with Part II in 1655.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-36",
@@ -434,7 +469,8 @@
     "The Vates"
    ],
    "correct_option_id": 1,
-   "explanation": "Vaughan styled himself the Silurist after the Silures an ancient British tribe of south Wales."
+   "explanation": "Vaughan styled himself the Silurist after the Silures an ancient British tribe of south Wales.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-37",
@@ -446,7 +482,8 @@
     "The World"
    ],
    "correct_option_id": 3,
-   "explanation": "The World opens with this celebrated celestial image contrasting eternity with earthly folly."
+   "explanation": "The World opens with this celebrated celestial image contrasting eternity with earthly folly.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-38",
@@ -458,7 +495,8 @@
     "Edmund Spenser"
    ],
    "correct_option_id": 2,
-   "explanation": "Vaughan acknowledged that the blessed Mr George Herbert converted his heart to holy poetry."
+   "explanation": "Vaughan acknowledged that the blessed Mr George Herbert converted his heart to holy poetry.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-39",
@@ -470,7 +508,8 @@
     "Richard Lovelace"
    ],
    "correct_option_id": 3,
-   "explanation": "Richard Lovelace published Lucasta in 1649 containing his celebrated lyrics of honour and love."
+   "explanation": "Richard Lovelace published Lucasta in 1649 containing his celebrated lyrics of honour and love.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-40",
@@ -482,7 +521,8 @@
     "To Amarantha"
    ],
    "correct_option_id": 1,
-   "explanation": "Lovelace wrote To Althea, from Prison in the Gatehouse prison in Westminster in 1642."
+   "explanation": "Lovelace wrote To Althea, from Prison in the Gatehouse prison in Westminster in 1642.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-41",
@@ -494,7 +534,8 @@
     "John Cleveland"
    ],
    "correct_option_id": 1,
-   "explanation": "Cowley 1656 volume contained Miscellanies, The Mistress, Pindarique Odes, and Davideis."
+   "explanation": "Cowley 1656 volume contained Miscellanies, The Mistress, Pindarique Odes, and Davideis.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-42",
@@ -506,7 +547,8 @@
     "The Civil Wars"
    ],
    "correct_option_id": 2,
-   "explanation": "Davideis was Cowley four-book epic in heroic couplets illustrating the youth of King David."
+   "explanation": "Davideis was Cowley four-book epic in heroic couplets illustrating the youth of King David.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-43",
@@ -518,7 +560,8 @@
     "Poly-Olbion"
    ],
    "correct_option_id": 2,
-   "explanation": "Davenant published Gondibert An Heroick Poem in 1651 using decasyllabic quatrains."
+   "explanation": "Davenant published Gondibert An Heroick Poem in 1651 using decasyllabic quatrains.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-44",
@@ -530,7 +573,8 @@
     "Samuel Butler"
    ],
    "correct_option_id": 0,
-   "explanation": "Edmund Waller composed the panegyric in 1655 praising Cromwell maritime power and internal order."
+   "explanation": "Edmund Waller composed the panegyric in 1655 praising Cromwell maritime power and internal order.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-45",
@@ -542,7 +586,8 @@
     "Anne Bradstreet"
    ],
    "correct_option_id": 2,
-   "explanation": "Katherine Philips established the Society of Friendship in Wales and wrote under the name Orinda."
+   "explanation": "Katherine Philips established the Society of Friendship in Wales and wrote under the name Orinda.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-46",
@@ -554,7 +599,8 @@
     "Margaret Cavendish"
    ],
    "correct_option_id": 3,
-   "explanation": "Margaret Cavendish published Poems and Fancies in 1653 exploring atomism through imaginative poetry."
+   "explanation": "Margaret Cavendish published Poems and Fancies in 1653 exploring atomism through imaginative poetry.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-47",
@@ -566,7 +612,8 @@
     "The Law of Freedom"
    ],
    "correct_option_id": 1,
-   "explanation": "James Harrington dedicated The Commonwealth of Oceana to Oliver Cromwell proposing republican governance."
+   "explanation": "James Harrington dedicated The Commonwealth of Oceana to Oliver Cromwell proposing republican governance.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-48",
@@ -578,7 +625,8 @@
     "The Levellers"
    ],
    "correct_option_id": 1,
-   "explanation": "The Diggers or True Levellers started communal farming on waste lands at St George Hill in 1649."
+   "explanation": "The Diggers or True Levellers started communal farming on waste lands at St George Hill in 1649.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-49",
@@ -590,7 +638,8 @@
     "Preacher and religious pamphleteer"
    ],
    "correct_option_id": 3,
-   "explanation": "Bunyan joined the Bedford Baptist congregation and began preaching and publishing tracts in the 1650s."
+   "explanation": "Bunyan joined the Bedford Baptist congregation and began preaching and publishing tracts in the 1650s.",
+   "periodId": "commonwealth"
   },
   {
    "id": "cw-e-50",
@@ -602,7 +651,8 @@
     "Mercurius Britannicus"
    ],
    "correct_option_id": 0,
-   "explanation": "Mercurius Politicus was published from 1650 to 1660 defending the Commonwealth and Protectorate."
+   "explanation": "Mercurius Politicus was published from 1650 to 1660 defending the Commonwealth and Protectorate.",
+   "periodId": "commonwealth"
   }
  ]
 }

@@ -14,7 +14,8 @@
     "King William III of Orange"
    ],
    "correct_option_id": 1,
-   "explanation": "King Charles II returned from European exile in 1660 to restore the Stuart monarchy after the Puritan Commonwealth."
+   "explanation": "King Charles II returned from European exile in 1660 to restore the Stuart monarchy after the Puritan Commonwealth.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-02",
@@ -26,7 +27,8 @@
     "Puritan Parliament"
    ],
    "correct_option_id": 3,
-   "explanation": "The Puritan Parliament closed London public theatres in 1642, and they reopened upon Charles II's return in 1660."
+   "explanation": "The Puritan Parliament closed London public theatres in 1642, and they reopened upon Charles II's return in 1660.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-03",
@@ -38,7 +40,8 @@
     "France"
    ],
    "correct_option_id": 3,
-   "explanation": "Charles II spent years of exile in France and brought French court fashions and neoclassical dramatic models to England."
+   "explanation": "Charles II spent years of exile in France and brought French court fashions and neoclassical dramatic models to England.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-04",
@@ -50,7 +53,8 @@
     "The Act of Uniformity"
    ],
    "correct_option_id": 3,
-   "explanation": "The Act of Uniformity in 1662 mandated strict adherence to the Anglican Book of Common Prayer."
+   "explanation": "The Act of Uniformity in 1662 mandated strict adherence to the Anglican Book of Common Prayer.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-05",
@@ -62,7 +66,8 @@
     "The Toleration Act"
    ],
    "correct_option_id": 0,
-   "explanation": "The Test Act of 1673 barred Protestant Nonconformists and Roman Catholics from holding public office."
+   "explanation": "The Test Act of 1673 barred Protestant Nonconformists and Roman Catholics from holding public office.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-06",
@@ -74,7 +79,8 @@
     "King George I"
    ],
    "correct_option_id": 1,
-   "explanation": "Charles II died in 1685 and was succeeded by his Roman Catholic brother, who reigned as King James II until 1688."
+   "explanation": "Charles II died in 1685 and was succeeded by his Roman Catholic brother, who reigned as King James II until 1688.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-07",
@@ -86,7 +92,8 @@
     "The Puritan Commonwealth"
    ],
    "correct_option_id": 2,
-   "explanation": "The Glorious Revolution of 1688 peacefully removed the Catholic King James II from the English throne."
+   "explanation": "The Glorious Revolution of 1688 peacefully removed the Catholic King James II from the English throne.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-08",
@@ -98,7 +105,8 @@
     "James II and Mary of Modena"
    ],
    "correct_option_id": 1,
-   "explanation": "In 1689 the throne was jointly offered to James II's Protestant daughter Mary II and her husband William III of Orange."
+   "explanation": "In 1689 the throne was jointly offered to James II's Protestant daughter Mary II and her husband William III of Orange.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-09",
@@ -110,7 +118,8 @@
     "The Scriblerus Club"
    ],
    "correct_option_id": 1,
-   "explanation": "The Royal Society of London was founded in 1660 and received its royal charter in 1662, promoting empirical science."
+   "explanation": "The Royal Society of London was founded in 1660 and received its royal charter in 1662, promoting empirical science.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-10",
@@ -122,7 +131,8 @@
     "Isaac Newton"
    ],
    "correct_option_id": 0,
-   "explanation": "Robert Boyle published his foundational scientific work 'The Sceptical Chymist' in 1661 during the early Restoration."
+   "explanation": "Robert Boyle published his foundational scientific work 'The Sceptical Chymist' in 1661 during the early Restoration.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-11",
@@ -134,7 +144,8 @@
     "Sir Isaac Newton"
    ],
    "correct_option_id": 3,
-   "explanation": "Sir Isaac Newton published 'Philosophiae Naturalis Principia Mathematica' in 1687, a milestone of Restoration science."
+   "explanation": "Sir Isaac Newton published 'Philosophiae Naturalis Principia Mathematica' in 1687, a milestone of Restoration science.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-12",
@@ -146,7 +157,8 @@
     "Thomas Rymer"
    ],
    "correct_option_id": 1,
-   "explanation": "Dr. Samuel Johnson named John Dryden the father of English criticism for his pioneering critical essays and prefaces."
+   "explanation": "Dr. Samuel Johnson named John Dryden the father of English criticism for his pioneering critical essays and prefaces.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-13",
@@ -158,7 +170,8 @@
     "1678"
    ],
    "correct_option_id": 0,
-   "explanation": "John Dryden published 'Of Dramatic Poesie, an Essay' in 1668, the same year he became Poet Laureate."
+   "explanation": "John Dryden published 'Of Dramatic Poesie, an Essay' in 1668, the same year he became Poet Laureate.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-14",
@@ -170,7 +183,8 @@
     "Neander"
    ],
    "correct_option_id": 3,
-   "explanation": "Neander serves as John Dryden's persona in 'Of Dramatic Poesie', defending English drama and Shakespeare's genius."
+   "explanation": "Neander serves as John Dryden's persona in 'Of Dramatic Poesie', defending English drama and Shakespeare's genius.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-15",
@@ -182,7 +196,8 @@
     "Jeremy Collier"
    ],
    "correct_option_id": 3,
-   "explanation": "Clergyman Jeremy Collier published his fierce moral attack against Restoration comedy in 1698."
+   "explanation": "Clergyman Jeremy Collier published his fierce moral attack against Restoration comedy in 1698.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-16",
@@ -194,7 +209,8 @@
     "William Congreve and John Vanbrugh"
    ],
    "correct_option_id": 2,
-   "explanation": "Charles II granted royal patents to Thomas Killigrew for the King's Company and Sir William Davenant for the Duke's Company."
+   "explanation": "Charles II granted royal patents to Thomas Killigrew for the King's Company and Sir William Davenant for the Duke's Company.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-17",
@@ -206,7 +222,8 @@
     "Biblical mystery cycles became the mandatory royal stage repertoire"
    ],
    "correct_option_id": 2,
-   "explanation": "Restoration theatres introduced professional women actresses such as Nell Gwyn to play female parts instead of boy actors."
+   "explanation": "Restoration theatres introduced professional women actresses such as Nell Gwyn to play female parts instead of boy actors.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-18",
@@ -218,7 +235,8 @@
     "Thomas Otway"
    ],
    "correct_option_id": 0,
-   "explanation": "John Dryden coined the term heroic drama in the preface to 'The Conquest of Granada' for rhymed plays of love and honour."
+   "explanation": "John Dryden coined the term heroic drama in the preface to 'The Conquest of Granada' for rhymed plays of love and honour.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-19",
@@ -230,7 +248,8 @@
     "The Heroic Play"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden's two-part 'The Conquest of Granada' is the definitive Restoration heroic play written in rhymed couplets."
+   "explanation": "Dryden's two-part 'The Conquest of Granada' is the definitive Restoration heroic play written in rhymed couplets.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-20",
@@ -242,7 +261,8 @@
     "'The Old Bachelor'"
    ],
    "correct_option_id": 0,
-   "explanation": "Buckingham's 1671 burlesque 'The Rehearsal' parodied the bombast of heroic drama and mocked John Dryden."
+   "explanation": "Buckingham's 1671 burlesque 'The Rehearsal' parodied the bombast of heroic drama and mocked John Dryden.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-21",
@@ -254,7 +274,8 @@
     "'Antony and Cleopatra'"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden's 'All for Love' retells Shakespeare's 'Antony and Cleopatra' in blank verse while observing the classical unities."
+   "explanation": "Dryden's 'All for Love' retells Shakespeare's 'Antony and Cleopatra' in blank verse while observing the classical unities.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-22",
@@ -266,7 +287,8 @@
     "Sir George Etherege"
    ],
    "correct_option_id": 2,
-   "explanation": "Thomas Otway was the foremost master of pathetic tragedy with 'The Orphan' in 1680 and 'Venice Preserved' in 1682."
+   "explanation": "Thomas Otway was the foremost master of pathetic tragedy with 'The Orphan' in 1680 and 'Venice Preserved' in 1682.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-23",
@@ -278,7 +300,8 @@
     "Thomas Rymer"
    ],
    "correct_option_id": 1,
-   "explanation": "Nathaniel Lee wrote the blank-verse Roman tragedy 'Lucius Junius Brutus' in 1680."
+   "explanation": "Nathaniel Lee wrote the blank-verse Roman tragedy 'Lucius Junius Brutus' in 1680.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-24",
@@ -290,7 +313,8 @@
     "Miracle Interlude"
    ],
    "correct_option_id": 0,
-   "explanation": "The Comedy of Manners was the supreme comic form of the Restoration, portraying fashionable London society with sharp wit."
+   "explanation": "The Comedy of Manners was the supreme comic form of the Restoration, portraying fashionable London society with sharp wit.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-25",
@@ -302,7 +326,8 @@
     "William Wycherley"
    ],
    "correct_option_id": 1,
-   "explanation": "Sir George Etherege established the early Restoration comedy of manners with his plays of 1664, 1668, and 1676."
+   "explanation": "Sir George Etherege established the early Restoration comedy of manners with his plays of 1664, 1668, and 1676.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-26",
@@ -314,7 +339,8 @@
     "'The Provoked Wife'"
    ],
    "correct_option_id": 2,
-   "explanation": "Etherege's 'The Man of Mode, or Sir Fopling Flutter' introduced the quintessential Restoration fop in 1676."
+   "explanation": "Etherege's 'The Man of Mode, or Sir Fopling Flutter' introduced the quintessential Restoration fop in 1676.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-27",
@@ -326,7 +352,8 @@
     "Sir George Etherege"
    ],
    "correct_option_id": 0,
-   "explanation": "William Wycherley authored the biting Restoration comedies 'The Country Wife' in 1675 and 'The Plain Dealer' in 1676."
+   "explanation": "William Wycherley authored the biting Restoration comedies 'The Country Wife' in 1675 and 'The Plain Dealer' in 1676.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-28",
@@ -338,7 +365,8 @@
     "Sir John Vanbrugh"
    ],
    "correct_option_id": 0,
-   "explanation": "William Congreve wrote 'The Way of the World' in 1700, representing the culmination of Restoration comedy of manners."
+   "explanation": "William Congreve wrote 'The Way of the World' in 1700, representing the culmination of Restoration comedy of manners.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-29",
@@ -350,7 +378,8 @@
     "Dorimant and Harriet"
    ],
    "correct_option_id": 2,
-   "explanation": "Mirabell and Millamant are the central pair of lovers in William Congreve's 'The Way of the World'."
+   "explanation": "Mirabell and Millamant are the central pair of lovers in William Congreve's 'The Way of the World'.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-30",
@@ -362,7 +391,8 @@
     "George Farquhar"
    ],
    "correct_option_id": 2,
-   "explanation": "Sir John Vanbrugh authored the popular late-Restoration comedies 'The Relapse' in 1696 and 'The Provoked Wife' in 1697."
+   "explanation": "Sir John Vanbrugh authored the popular late-Restoration comedies 'The Relapse' in 1696 and 'The Provoked Wife' in 1697.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-31",
@@ -374,7 +404,8 @@
     "Margaret Cavendish"
    ],
    "correct_option_id": 2,
-   "explanation": "Aphra Behn was England's first professional female author, writing at least 19 stage plays as well as prose fiction."
+   "explanation": "Aphra Behn was England's first professional female author, writing at least 19 stage plays as well as prose fiction.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-32",
@@ -386,7 +417,8 @@
     "'The Rehearsal'"
    ],
    "correct_option_id": 0,
-   "explanation": "Aphra Behn's 'The Rover, or The Banish'd Cavaliers' follows the rakish Cavalier Willmore in Naples."
+   "explanation": "Aphra Behn's 'The Rover, or The Banish'd Cavaliers' follows the rakish Cavalier Willmore in Naples.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-33",
@@ -398,7 +430,8 @@
     "Barbados"
    ],
    "correct_option_id": 0,
-   "explanation": "Behn's 'Oroonoko' narrates the betrayal, enslavement, and execution of an African prince in the colony of Surinam."
+   "explanation": "Behn's 'Oroonoko' narrates the betrayal, enslavement, and execution of an African prince in the colony of Surinam.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-34",
@@ -410,7 +443,8 @@
     "'Love in a Wood'"
    ],
    "correct_option_id": 0,
-   "explanation": "Colley Cibber's 1696 comedy 'Love's Last Shift', in which an errant rake repents in tears, initiated sentimental comedy."
+   "explanation": "Colley Cibber's 1696 comedy 'Love's Last Shift', in which an errant rake repents in tears, initiated sentimental comedy.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-35",
@@ -422,7 +456,8 @@
     "Samuel Butler"
    ],
    "correct_option_id": 1,
-   "explanation": "John Dryden became the first official Poet Laureate in 1668 and Historiographer Royal in 1670."
+   "explanation": "John Dryden became the first official Poet Laureate in 1668 and Historiographer Royal in 1670.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-36",
@@ -434,7 +469,8 @@
     "'Mac Flecknoe'"
    ],
    "correct_option_id": 1,
-   "explanation": "Dryden welcomed King Charles II's return to the throne in 1660 with the panegyric poem 'Astraea Redux'."
+   "explanation": "Dryden welcomed King Charles II's return to the throne in 1660 with the panegyric poem 'Astraea Redux'.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-37",
@@ -446,7 +482,8 @@
     "The Exclusion Crisis"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden wrote 'Absalom and Achitophel' in 1681 to address the Exclusion Crisis over the royal succession."
+   "explanation": "Dryden wrote 'Absalom and Achitophel' in 1681 to address the Exclusion Crisis over the royal succession.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-38",
@@ -458,7 +495,8 @@
     "Earl of Shaftesbury"
    ],
    "correct_option_id": 2,
-   "explanation": "In Dryden's biblical allegory from 2 Samuel, King David represents the reigning monarch King Charles II."
+   "explanation": "In Dryden's biblical allegory from 2 Samuel, King David represents the reigning monarch King Charles II.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-39",
@@ -470,7 +508,8 @@
     "Thomas Shadwell"
    ],
    "correct_option_id": 3,
-   "explanation": "Dryden's mock-heroic poem 'Mac Flecknoe' pillories Thomas Shadwell as the heir to the realm of Nonsense."
+   "explanation": "Dryden's mock-heroic poem 'Mac Flecknoe' pillories Thomas Shadwell as the heir to the realm of Nonsense.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-40",
@@ -482,7 +521,8 @@
     "'Fables Ancient and Modern'"
    ],
    "correct_option_id": 1,
-   "explanation": "Dryden's 'Religio Laici' of 1682 defends the Anglican middle way against Deism, Catholicism, and Dissent."
+   "explanation": "Dryden's 'Religio Laici' of 1682 defends the Anglican middle way against Deism, Catholicism, and Dissent.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-41",
@@ -494,7 +534,8 @@
     "The Presbyterian Kirk"
    ],
    "correct_option_id": 1,
-   "explanation": "Written after Dryden's 1685 conversion, 'The Hind and the Panther' portrays the Catholic Church as a pure milk-white Hind."
+   "explanation": "Written after Dryden's 1685 conversion, 'The Hind and the Panther' portrays the Catholic Church as a pure milk-white Hind.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-42",
@@ -506,7 +547,8 @@
     "Sir Charles Sedley"
    ],
    "correct_option_id": 2,
-   "explanation": "Samuel Butler wrote 'Hudibras' in bouncy iambic tetrameter couplets, originating the term Hudibrastic verse."
+   "explanation": "Samuel Butler wrote 'Hudibras' in bouncy iambic tetrameter couplets, originating the term Hudibrastic verse.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-43",
@@ -518,7 +560,8 @@
     "The Sons of Ben"
    ],
    "correct_option_id": 2,
-   "explanation": "Rochester, along with Charles Sackville and Sir Charles Sedley, belonged to Charles II's circle of Court Wits."
+   "explanation": "Rochester, along with Charles Sackville and Sir Charles Sedley, belonged to Charles II's circle of Court Wits.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-44",
@@ -530,7 +573,8 @@
     "1681"
    ],
    "correct_option_id": 0,
-   "explanation": "Although Milton served the Puritan Commonwealth, 'Paradise Lost' was first published in 10 books in 1667."
+   "explanation": "Although Milton served the Puritan Commonwealth, 'Paradise Lost' was first published in 10 books in 1667.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-45",
@@ -542,7 +586,8 @@
     "'L'Allegro' and 'Il Penseroso'"
    ],
    "correct_option_id": 2,
-   "explanation": "In 1671, John Milton published his brief epic 'Paradise Regained' and closet tragedy 'Samson Agonistes' in one volume."
+   "explanation": "In 1671, John Milton published his brief epic 'Paradise Regained' and closet tragedy 'Samson Agonistes' in one volume.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-46",
@@ -554,7 +599,8 @@
     "Bedford County Jail"
    ],
    "correct_option_id": 3,
-   "explanation": "John Bunyan was imprisoned in Bedford jail for preaching without an Anglican licence and wrote his key works there."
+   "explanation": "John Bunyan was imprisoned in Bedford jail for preaching without an Anglican licence and wrote his key works there.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-47",
@@ -566,7 +612,8 @@
     "'The Character of a Trimmer'"
    ],
    "correct_option_id": 1,
-   "explanation": "Bunyan published his spiritual autobiography 'Grace Abounding to the Chief of Sinners' in 1666."
+   "explanation": "Bunyan published his spiritual autobiography 'Grace Abounding to the Chief of Sinners' in 1666.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-48",
@@ -578,7 +625,8 @@
     "John Bunyan"
    ],
    "correct_option_id": 1,
-   "explanation": "Samuel Pepys kept a secret diary from 1660 to 1669 documenting the Plague of 1665 and Great Fire of 1666."
+   "explanation": "Samuel Pepys kept a secret diary from 1660 to 1669 documenting the Plague of 1665 and Great Fire of 1666.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-49",
@@ -590,7 +638,8 @@
     "Edward Hyde, 1st Earl of Clarendon"
    ],
    "correct_option_id": 3,
-   "explanation": "Edward Hyde, 1st Earl of Clarendon, completed his authoritative royalist 'History of the Rebellion' during his exile."
+   "explanation": "Edward Hyde, 1st Earl of Clarendon, completed his authoritative royalist 'History of the Rebellion' during his exile.",
+   "periodId": "restoration-era"
   },
   {
    "id": "rs-e-50",
@@ -602,7 +651,8 @@
     "'Religio laici'"
    ],
    "correct_option_id": 0,
-   "explanation": "John Locke rejected innate ideas and argued that the human mind begins as a tabula rasa, or blank slate, in 1690."
+   "explanation": "John Locke rejected innate ideas and argued that the human mind begins as a tabula rasa, or blank slate, in 1690.",
+   "periodId": "restoration-era"
   }
  ]
 }
