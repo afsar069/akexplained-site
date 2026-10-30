@@ -222,9 +222,12 @@ the tag matcher.
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
-- `attempts.topic_id` and `attempts.period_id` are still `null` everywhere until questions are
-  tagged with `topicId` and `periodId` (backfill pending) and the MCQ generator is aligned to
-  emit `id` + `topicId` + `periodId`.
+- `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
+  live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
+  (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
+  Still to do: align the MCQ generator (`tools/mcq-skill`) to emit `id` + `topicId` + `periodId`, so
+  new sets arrive tagged. Nodes still missing from the master are collected in
+  `tools/tagging/reports/node-gaps.md` (next migration batch; the owner decides).
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
 - Password reset needs an SMTP provider in Supabase first (none yet); the "Forgot
   password?" link currently shows a contact-us note instead of a reset email.
