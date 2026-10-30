@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Vercelli Book (Codex Vercellensis) contains six major poetic texts: Andreas, The Fates of the Apostles, Address of the Soul to the Body, Falsehood of Men, The Dream of the Rood, and Elene, alongside 23 prose homilies.",
+   "topicId": "the-dream-of-the-rood",
    "periodId": "anglo-saxon"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Cotton Vitellius A.xv (specifically the second part, known as the Nowell Codex) contains both the epic Beowulf and the biblical narrative poem Judith, in addition to prose texts like The Wonders of the East and The Letter of Alexander to Aristotle.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In Germanic and Anglo-Saxon legal tradition, wergild ('man-price') was a legally binding financial compensation paid by a slayer or their kin to the family of a deceased person to forestall a retaliatory blood-feud.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Widsith ('far traveler') is widely regarded as the earliest autobiographical/catalogue poem in English, consisting of the personal recollections and travels of a wandering scop who visits legendary Germanic courts.",
+   "topicId": "widsith",
    "periodId": "anglo-saxon"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Ormulum is an early Middle English metrical work of biblical homilies composed in the late 12th century by an Augustinian canon named Orm, centuries after King Alfred's 9th-century educational revival.",
+   "topicId": "king-alfred",
    "periodId": "anglo-saxon"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Cynewulf wove runic acrostics spelling his name into four surviving Old English poems: Elene and The Fates of the Apostles (in the Vercelli Book), and Christ II (The Ascension) and Juliana (in the Exeter Book).",
+   "topicId": "cynewulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Wanderer features the classical 'ubi sunt' ('where are they?') motif in lines 92–93 ('Hwær cwom mearg? Hwær cwom mago? Hwær cwom maþþumgyfa?'), lamenting the vanished horse, youth, and generous ring-giver.",
+   "topicId": "the-wanderer",
    "periodId": "anglo-saxon"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Waldere consists of two brief surviving leaves (63 lines total) from a lost heroic epic about Walter of Aquitaine, referencing legendary Gothic figures and arms associated with Theodoric and Wayland the Smith.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Battle of Brunanburh is an Old English panegyric battle poem recorded in the Anglo-Saxon Chronicle under the annal for 937 AD, celebrating King Athelstan's decisive victory over allied Norse, Scots, and Strathclyde Britons.",
+   "topicId": "anglo-saxon-chronicle",
    "periodId": "anglo-saxon"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Dream of the Rood employs a dual-narrator structure: it opens and closes with the human Dreamer/poet, while the central narrative is spoken directly by the personified True Cross (the Rood) through prosopopoeia.",
+   "topicId": "the-dream-of-the-rood",
    "periodId": "anglo-saxon"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Aelfric of Eynsham was the foremost prose stylist of late Anglo-Saxon England, celebrated for his Catholic Homilies (Sermones Catholici) and Lives of the Saints, composed in polished, alliterative Old English prose.",
+   "topicId": "aelfric",
    "periodId": "anglo-saxon"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Junius Manuscript (Bodleian Library MS Junius 11) is traditionally called the Caedmon Manuscript because its biblical verse paraphrases (Genesis, Exodus, Daniel, Christ and Satan) were originally attributed to Caedmon.",
+   "topicId": "caedmon",
    "periodId": "anglo-saxon"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Beowulf poet uses several vivid kennings for the sea, including 'whale-road' (hronrāde, line 10), 'swan-road' (swanrāde, line 200), and 'sail-road' (seglrāde, line 1429).",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Ealdorman Byrhtnoth of Essex is famously criticized in the poem for his tragic 'ofermōd' (over-confidence or heroic pride), having yielded ground on the tidal causeway over the River Blackwater to let the Viking raiders cross and battle.",
+   "topicId": "the-battle-of-maldon",
    "periodId": "anglo-saxon"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Completed in 731 AD by the Northumbrian monk Bede, the Ecclesiastical History of the English People (Historia ecclesiastica gentis Anglorum) was written in Latin and remains the foundational primary historical source for early English history.",
+   "topicId": "ecclesiastical-history",
    "periodId": "anglo-saxon"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Exeter Book preserves nearly 100 Old English riddles (enigmata), which use rich metaphorical wordplay, double entendres, and personification to challenge and entertain listeners.",
+   "topicId": "exeter-book",
    "periodId": "anglo-saxon"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The elegiac poem Deor closes each of its mythological and historical stanzas, as well as its final line, with the famous stoic refrain 'Þæs ofereode, þisses swa mæg' ('That passed away, so may this').",
+   "topicId": "deor",
    "periodId": "anglo-saxon"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Old English poetry is characterized by accentual alliterative verse, in which lines are split into two half-lines by a medial caesura and bound together by alliterating stressed syllables rather than end-rhyme.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In Book IV of his Ecclesiastical History, Bede recounts how Caedmon, an illiterate cowherd at Whitby Abbey, received a miraculous divine gift in a dream while sleeping in a cattle byre, prompting him to compose Caedmon's Hymn.",
+   "topicId": "caedmon",
    "periodId": "anglo-saxon"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Beowulf poet identifies Grendel and his monstrous kin as cursed outcasts descended from the biblical figure Cain, who was banished by God after slaying his brother Abel (lines 106–114).",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Archbishop Wulfstan of York (who used the Latin pseudonym 'Lupus', meaning wolf) wrote the fiery homily Sermo Lupi ad Anglos in 1014, castigating the English for moral decay and attributing brutal Danish raids to divine retribution.",
+   "topicId": "wulfstan",
    "periodId": "anglo-saxon"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Ruin, an elegy found in the Exeter Book, portrays the decayed stonework, fallen towers, and shattered bathhouses of an ancient Roman settlement commonly identified as Aquae Sulis (Bath).",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Christ and Satan occupies the final section of Bodleian Library MS Junius 11 (the Junius or Caedmon Manuscript), following the biblical verse narratives Genesis, Exodus, and Daniel.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "King Æthelberht of Kent (reigned c. 589–616) welcomed the Gregorian mission led by Saint Augustine in 597 AD, becoming the first Anglo-Saxon monarch to convert to Christianity.",
+   "topicId": "bede",
    "periodId": "anglo-saxon"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Pope Gregory the Great's Regula Pastoralis (Cura Pastoralis / Pastoral Care), translated into Old English under King Alfred, served as an essential pastoral guide instructing bishops and Christian leaders on spiritual and ethical governance.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Wiglaf, son of Weohstan, is the sole retainer who honors the comitatus obligation by refusing to flee when the dragon attacks, helping the mortally wounded Beowulf slay the beast.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Nowell Codex (containing Beowulf) suffered scorching and brittle margins during the catastrophic Cotton Library fire of October 23, 1731, at Ashburnham House in Westminster.",
+   "topicId": "nowell-codex",
    "periodId": "anglo-saxon"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Vercelli Book was rediscovered in 1822 by the German jurist and legal historian Friedrich Blume in the cathedral library of Vercelli in the Piedmont region of northern Italy.",
+   "topicId": "vercelli-book",
    "periodId": "anglo-saxon"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Phoenix, preserved in the Exeter Book, adapts Lactantius's Latin poem De Ave Phoenice into an Old English Christian allegory symbolizing paradise, bodily resurrection, and Christ.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The speaker in The Seafarer contrasts his bitter trials amid icy waves with the sheltered, luxurious life of proud city-dwellers on land who indulge in wine and good fortune.",
+   "topicId": "the-seafarer",
    "periodId": "anglo-saxon"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Harold Godwinson (King Harold II) was the last crowned Anglo-Saxon monarch of England, ruling until his death on the battlefield at the Battle of Hastings on October 14, 1066.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In Anglo-Saxon society, a scop was an oral court poet and entertainer who composed and recited heroic songs to the accompaniment of a harp, commemorating deeds and ancestral lineages.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Exeter Book (Codex Exoniensis) contains almost all surviving Old English riddles, numbering nearly 100 poetic puzzles that reflect both natural phenomena and domestic Anglo-Saxon material culture.",
+   "topicId": "exeter-book",
    "periodId": "anglo-saxon"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Late West Saxon, developed in the monastic scriptoria of Winchester during the Benedictine Reform, became the de facto standardized literary dialect for scribes copying Old English texts.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The compilation of the Anglo-Saxon Chronicle began around 890 AD during the reign of King Alfred the Great as part of his sweeping initiative to record English history and foster vernacular learning.",
+   "topicId": "anglo-saxon-chronicle",
    "periodId": "anglo-saxon"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Wife's Lament is an elegiac monologue in the Exeter Book spoken by an estranged woman who laments her cruel confinement in an underground earthen cave beneath an oak tree.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Fight at Finnsburg (along with the Finnsburg Episode in Beowulf) details a tragic five-day hall defense and blood-feud between the visiting Danes (under Hnaef) and their Frisian hosts (under King Finn).",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Boethius's De Consolatione Philosophiae (The Consolation of Philosophy), translated into Old English under King Alfred, features the imprisoned philosopher conversing with Lady Philosophy on fate, virtue, and providence.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The heroic Old English poem Judith adapts the narrative of the Jewish heroine Judith slaying Holofernes from the Book of Judith, which is part of the biblical Apocrypha / Deuterocanonical scriptures.",
+   "topicId": "judith-oe",
    "periodId": "anglo-saxon"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In alliterative verse, a caesura is a natural pause or rhythmic break in the middle of each poetic line, separating the first half-line (on-verse) from the second half-line (off-verse).",
+   "topicId": "caesura",
    "periodId": "anglo-saxon"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Fates of the Apostles, preserved in the Vercelli Book, concludes with a runic passage weaving Cynewulf's name into the verse text.",
+   "topicId": "cynewulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "King Hrothgar, son of Healfdene, rules the Danes and builds the glorious mead-hall Heorot, which Beowulf travels to Denmark to liberate from Grendel's nightly depredations.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Gnomic verses (such as Maxims I and Maxims II) are concise collections of traditional aphorisms, sententious proverbs, and moral maxims capturing common-sense observations about nature and society.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Fight at Finnsburg (together with the Beowulf Finnsburg Episode) encapsulates the essential dynamics of an early revenge tragedy, tracing oath-breaking, hall slaughter, and inevitable bloody retribution.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Battle of Brunanburh, entered into the Anglo-Saxon Chronicle for the year 937, triumphantly commemorates King Athelstan and his brother Edmund crushing an invading northern coalition.",
+   "topicId": "the-battle-of-brunanburh",
    "periodId": "anglo-saxon"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Genesis B (an interpolated section within Genesis in MS Junius 11) was recognized by Eduard Sievers and confirmed by 9th-century Vatican fragments to be an Old English adaptation of a Continental Old Saxon poem.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Manuscripts in Sir Robert Cotton's famous library were classified according to the bust of a Roman emperor (or historical figure) resting on top of each bookcase; Vitellius A.xv was on the top shelf (A) under Emperor Vitellius.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In the epic Beowulf, Grendel's mother seeks vengeance for her son's death by attacking Heorot, leading Beowulf into her subterranean fen-pool for their fierce underwater duel.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Litotes is a form of ironic understatement frequently employed in Germanic poetry, where an affirmative statement is emphatically expressed by negating its opposite (e.g., 'not slow to act' meaning exceedingly swift).",
+   "topicId": "litotes",
    "periodId": "anglo-saxon"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "King Alfred the Great of Wessex earned the reputation of 'Scholar-King' by establishing educational reforms and translating foundational Latin texts into the vernacular so common people and clergy could read them.",
+   "topicId": "king-alfred",
    "periodId": "anglo-saxon"
   }
  ]

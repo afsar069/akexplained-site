@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Caroline era takes its name from Carolus, the Latin name of King Charles I, who reigned from 1625 to 1649.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "King Charles I was tried by a High Court of Justice and beheaded on 30 January 1649, inaugurating the Commonwealth.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Cavalier poets, including Herrick, Carew, Suckling, and Lovelace, were associated with King Charles I's court.",
+   "topicId": "cavalier-poets",
    "periodId": "caroline"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Robert Herrick published this iconic lyric in his 1648 collection Hesperides, urging youth to seize passing time.",
+   "topicId": "robert-herrick",
    "periodId": "caroline"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Hesperides, named after the mythical golden garden of the west, gathers Herrick's secular, rural, and anacreontic verse.",
+   "topicId": "robert-herrick",
    "periodId": "caroline"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Richard Lovelace composed this noble royalist lyric in 1642 while imprisoned in the Gatehouse Prison at Westminster.",
+   "topicId": "richard-lovelace",
    "periodId": "caroline"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Richard Lovelace's poem balances romantic devotion with supreme aristocratic honor on the eve of battlefield departure.",
+   "topicId": "richard-lovelace",
    "periodId": "caroline"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Sir John Suckling was a flamboyant courtier who invented Cribbage and included this famous song in his play Aglaura.",
+   "topicId": "john-suckling",
    "periodId": "caroline"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Thomas Carew praised John Donne as the monarch of wit who opened a fresh, intellectually demanding mine in English poetry.",
+   "topicId": "thomas-carew",
    "periodId": "caroline"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Sons of Ben gathered at London taverns like the Mermaid and Devil to celebrate Jonson's classical lyric craft.",
+   "topicId": "ben-jonson",
    "periodId": "caroline"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "George Herbert served as rector of Bemerton near Salisbury, bequeathing The Temple on his deathbed to Nicholas Ferrar.",
+   "topicId": "the-temple",
    "periodId": "caroline"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Easter Wings is a hieroglyphic pattern poem where expanding and contracting lines mirror the flight of angelic wings.",
+   "topicId": "the-temple",
    "periodId": "caroline"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In The Pulley, God pours out blessings like strength, beauty, and wisdom, but leaves man weary so he seeks God's rest.",
+   "topicId": "george-herbert",
    "periodId": "caroline"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In The Collar, the speaker's raging defiance against religious constraint dissolves when God gently calls Child, and he replies My Lord.",
+   "topicId": "george-herbert",
    "periodId": "caroline"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Richard Crashaw's ecstatic baroque verse blends Counter-Reformation sensory mysticism with passionate spiritual love.",
+   "topicId": "richard-crashaw",
    "periodId": "caroline"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Henry Vaughan adopted The Silurist from the ancient British tribe of South Wales, deeply influenced by George Herbert's poetry.",
+   "topicId": "henry-vaughan",
    "periodId": "caroline"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Henry Vaughan's The World contrasts the eternal ring of divine light with the dark, grasping foolishness of worldly mortals.",
+   "topicId": "henry-vaughan",
    "periodId": "caroline"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "John Ford's 1633 tragedy explores passionate moral defiance and tragic violence in Renaissance Parma.",
+   "topicId": "tis-pity-shes-a-whore",
    "periodId": "caroline"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In The Broken Heart, Calantha continues dancing through reports of family slaughter until her heart breaks silently at the coronation.",
+   "topicId": "john-ford",
    "periodId": "caroline"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Philip Massinger succeeded Fletcher as the chief dramatist for the King's Men, writing acute social and political drama.",
+   "topicId": "philip-massinger",
    "periodId": "caroline"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "James Shirley was the most accomplished London playwright of the 1630s prior to the parliamentary closure of theaters in 1642.",
+   "topicId": "james-shirley",
    "periodId": "caroline"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Richard Brome carried forward Jonson's legacy of satirical comedy of humours, focusing on London citizen and theatrical life.",
+   "topicId": "richard-brome",
    "periodId": "caroline"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In September 1642 Parliament ordered public playhouses closed, citing civil war miseries and Puritan moral objections.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The English Civil War pitted Charles I's Royalists against Parliament, transforming English society and literature.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Milton addressed Areopagitica to Parliament to protest the Licensing Order of 1643, asserting that truth needs no licensing.",
+   "topicId": "areopagitica",
    "periodId": "caroline"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Milton's Tractate outlined a comprehensive humanist curriculum to fit a man to perform all offices of peace and war.",
+   "topicId": "john-milton",
    "periodId": "caroline"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "L'Allegro celebrates daytime mirth and rustic joy, while Il Penseroso praises nocturnal contemplation and intellectual study.",
+   "topicId": "lallegro-and-il-penseroso",
    "periodId": "caroline"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Comus depicts a virtuous Lady lost in a dark wood, resisting the sensual enchantments of Circe's sorcerer son Comus.",
+   "topicId": "john-milton",
    "periodId": "caroline"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Published in the memorial volume Justa Edouardo King, Lycidas uses pastoral conventions to mourn untimely death and corrupt clergy.",
+   "topicId": "lycidas",
    "periodId": "caroline"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Sir Thomas Browne's Religio Medici examines his Christian faith, charity, and scientific curiosity in magnificent baroque prose.",
+   "topicId": "religio-medici",
    "periodId": "caroline"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Pseudodoxia Epidemica, or Vulgar Errors, systematically examined widespread superstitions across history and natural science.",
+   "topicId": "thomas-browne",
    "periodId": "caroline"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Thomas Hobbes developed his materialist political philosophy in exile during the 1640s, culminating in Leviathan.",
+   "topicId": "thomas-hobbes",
    "periodId": "caroline"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Queen Henrietta Maria promoted French courtly ideals, acting in private court masques and patronizing the arts.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Archbishop William Laud's enforcement of church hierarchy and altar rails polarized religious tensions leading to the Civil War.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "William Prynne's Histriomastix: The Player's Scourge was viewed by the crown as a direct libel on Queen Henrietta Maria.",
+   "topicId": "william-prynne",
    "periodId": "caroline"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Drafted by Sir Edward Coke, the Petition of Right prohibited non-parliamentary taxation, arbitrary imprisonment, and forced billeting.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Charles I ruled without parliament, relying on prerogative revenue measures like Ship Money until the Scottish rebellion.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Eikon Basilike, likely compiled by John Gauden, presented Charles I as a Christian martyr, becoming an instant international bestseller.",
+   "topicId": "caroline",
    "periodId": "caroline"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Eikonoklastes, meaning Image-Breaker, systematically mocked the pious posturing of Charles I in Eikon Basilike.",
+   "topicId": "john-milton",
    "periodId": "caroline"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "A Jovial Crew offered a poignant final glimpse of merry England on the very eve of the Civil War theater closures.",
+   "topicId": "richard-brome",
    "periodId": "caroline"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "William Davenant succeeded Ben Jonson as court poet, later pioneering English opera during the Commonwealth.",
+   "topicId": "william-davenant",
    "periodId": "caroline"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Inns of Court presented The Triumph of Peace before Charles I and Henrietta Maria to demonstrate their royal loyalty.",
+   "topicId": "james-shirley",
    "periodId": "caroline"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In Love III, Christ gently overcomes the soul's unworthiness, bidding the narrator: You must sit down, and taste my meat.",
+   "topicId": "george-herbert",
    "periodId": "caroline"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Little Gidding was a devout religious household famous for its continuous prayer, bookbinding, and friendship with Herbert.",
+   "topicId": "george-herbert",
    "periodId": "caroline"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Shirley's solemn dirge proclaims that Sceptre and Crown must tumble down, / And in the dust be equal made.",
+   "topicId": "james-shirley",
    "periodId": "caroline"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Herrick urges Corinna to arise and gather fresh May dew, celebrating the joyful, ephemeral spring ritual.",
+   "topicId": "robert-herrick",
    "periodId": "caroline"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Suckling's witty satirical poem depicts Apollo awarding the laurel wreath to an alderman with money over vain poets.",
+   "topicId": "john-suckling",
    "periodId": "caroline"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Milton argued that political power resides fundamentally in the people, who may lawfully depose and execute a tyrant.",
+   "topicId": "john-milton",
    "periodId": "caroline"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In The Retreat, Vaughan yearns for his early days before his soul forgot its divine home: Happy those early days! when I / Shin'd in my Angel-infancy.",
+   "topicId": "henry-vaughan",
    "periodId": "caroline"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The execution of Charles I outside Whitehall Banqueting House on January 30, 1649, concluded the Caroline monarchy.",
+   "topicId": "caroline",
    "periodId": "caroline"
   }
  ]

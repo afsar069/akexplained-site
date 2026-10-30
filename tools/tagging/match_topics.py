@@ -586,6 +586,12 @@ class Matcher:
             range_x = bool(range_w)
         any_work_ans = any(c['kind'] == 'work' and 'answer' in c['where'] for c in inage + xarea)
         if not meta and listed >= 2 and len(range_w) == 1 and not any_work_ans:
+            # the work rung is always reported, even when the writer's-range rule answers first
+            named_works = [c['id'] for c in inage + xarea if c['kind'] == 'work' and 'stem' in c['where']]
+            if named_works:
+                log.append(f"work: {', '.join(named_works)} named, but the question lists {listed} works and asks for the writer")
+            else:
+                log.append('work: none (no work node is named' + (("; quoted in the question, not a node: " + ', '.join(f"'{x}'" for x in quoted_nn[:3])) if quoted_nn else '') + ')')
             log.append(f"{'other area: ' if range_x else ''}writer: {range_w[0]['id']} ✓ (the question lists {listed} works and asks for the writer: it is about the writer's range)")
             area = self.tx.by[range_w[0]['id']]['area']
             return {'topicId': range_w[0]['id'], 'matched': True, 'rung': 'writer', 'crossed_age': False, 'crossed_area': range_x,

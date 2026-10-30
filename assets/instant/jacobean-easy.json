@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "King James VI of Scotland ascended the English throne as James I in March 1603, ruling until 1625.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Completed in 1611 by 47 translators, the Authorized Version shaped English vernacular prose and style.",
+   "topicId": "king-james-bible",
    "periodId": "jacobean-era"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Upon his accession in 1603, King James I took Shakespeare's company under direct royal patronage.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Composed around 1606, Macbeth flatters King James I through the prophetic lineage of Banquo.",
+   "topicId": "macbeth",
    "periodId": "jacobean-era"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Iago manipulates Othello's jealousy using Desdemona's lost strawberry-spotted handkerchief.",
+   "topicId": "othello",
    "periodId": "jacobean-era"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "King Lear disinherits honest Cordelia and divides Britain between deceitful Goneril and Regan.",
+   "topicId": "king-lear",
    "periodId": "jacobean-era"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Prospero conjures the tempest to bring his usurping brother to his island, aided by the spirit Ariel.",
+   "topicId": "the-tempest",
    "periodId": "jacobean-era"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Caliban, son of the witch Sycorax, represents native earth and resistance against Prospero's rule.",
+   "topicId": "the-tempest",
    "periodId": "jacobean-era"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Winter's Tale concludes with the famous living statue scene where Hermione is restored to Leontes.",
+   "topicId": "the-winters-tale",
    "periodId": "jacobean-era"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The First Folio of 1623 preserved eighteen previously unpublished plays, including Macbeth and The Tempest.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Ben Jonson was the leading Jacobean master of satirical city comedy, the comedy of humours, and court masques.",
+   "topicId": "ben-jonson",
    "periodId": "jacobean-era"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Mosca, Italian for fly, acts as the parasitic assistant helping the fox Volpone dupe greedy suitors.",
+   "topicId": "volpone",
    "periodId": "jacobean-era"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Subtle and Face dupe greedy London citizens by pretending to master the esoteric art of alchemy.",
+   "topicId": "the-alchemist",
    "periodId": "jacobean-era"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "John Webster was renowned for his dark, poetic tragedies exploring Italianate court corruption and violence.",
+   "topicId": "john-webster",
    "periodId": "jacobean-era"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Duchess defies her brothers Ferdinand and the Cardinal by marrying Antonio, facing torment with tragic dignity.",
+   "topicId": "the-duchess-of-malfi",
    "periodId": "jacobean-era"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Ferdinand suffers from lycanthropy, digging up graves in churchyards and howling like a wolf in his madness.",
+   "topicId": "the-duchess-of-malfi",
    "periodId": "jacobean-era"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Thomas Middleton was an exceptionally versatile Jacobean playwright of biting satire and psychological tragedy.",
+   "topicId": "thomas-middleton",
    "periodId": "jacobean-era"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In The Changeling, Beatrice-Joanna finds herself sexually trapped by De Flores after he murders Alonzo for her.",
+   "topicId": "the-changeling",
    "periodId": "jacobean-era"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Beaumont and Fletcher collaborated on courtly tragicomedies like Philaster and The Maid's Tragedy.",
+   "topicId": "beaumont-and-fletcher",
    "periodId": "jacobean-era"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Knight of the Burning Pestle parodies chivalric romances as a grocer and his wife interrupt a stage performance.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Ordained in 1615 at the urging of James I, John Donne delivered electrifying sermons as Dean of St Paul's.",
+   "topicId": "john-donne",
    "periodId": "jacobean-era"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Written during a near-fatal illness, Donne's Devotions reflects on human interdependence and the funeral toll.",
+   "topicId": "john-donne",
    "periodId": "jacobean-era"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Francis Bacon challenged scholastic deduction, arguing for observation and experimentation in the sciences.",
+   "topicId": "novum-organum",
    "periodId": "jacobean-era"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Robert Burton's Anatomy of Melancholy explores the causes, symptoms, and cures of melancholy in immense learning.",
+   "topicId": "the-anatomy-of-melancholy",
    "periodId": "jacobean-era"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Guy Fawkes was arrested guarding gunpowder barrels beneath Parliament, inspiring references in Macbeth.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Basilikon Doron, meaning Royal Gift, served as a moral and political handbook on monarchical rule.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "James I published A Counterblaste to Tobacco anonymously, attacking the popular introduction of smoking.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "John Florio's vibrant translation of Montaigne popularized the essay form and influenced The Tempest.",
+   "topicId": "john-florio",
    "periodId": "jacobean-era"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "George Chapman translated Homer's Iliad and Odyssey into vigorous English verse, admired across centuries.",
+   "topicId": "george-chapman",
    "periodId": "jacobean-era"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Thomas Heywood depicted everyday English domestic life, avoiding melodrama in A Woman Killed with Kindness.",
+   "topicId": "thomas-heywood",
    "periodId": "jacobean-era"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Frankford chooses Christian mercy over revenge, though Anne's remorse and starvation cause her death.",
+   "topicId": "thomas-heywood",
    "periodId": "jacobean-era"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Raleigh composed his monumental History of the World in the Tower before being executed in Old Palace Yard.",
+   "topicId": "walter-raleigh",
    "periodId": "jacobean-era"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Aemilia Lanyer's 1611 volume defended biblical women and contained The Description of Cooke-ham.",
+   "topicId": "aemilia-lanyer",
    "periodId": "jacobean-era"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Lanyer's poem on the estate of the Countess of Cumberland preceded Ben Jonson's To Penshurst in print.",
+   "topicId": "aemilia-lanyer",
    "periodId": "jacobean-era"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Ben Jonson's To Penshurst praises the ancient seat of the Sidneys in Kent as a model of ideal rural stewardship.",
+   "topicId": "ben-jonson",
    "periodId": "jacobean-era"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The indoor Blackfriars used artificial lighting, charged higher prices, and hosted Shakespeare's late romances.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Morose seeks silence but finds his bride loud and quarrelsome, until she is unmasked as Dauphine's confederate boy.",
+   "topicId": "ben-jonson",
    "periodId": "jacobean-era"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Bartholomew Fair satirises puritan hypocrisy in Zeal-of-the-Land Busy and foolish legal vanity in Justice Overdo.",
+   "topicId": "bartholomew-fair",
    "periodId": "jacobean-era"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Fleeing his bastard brother Edmund's plot, Edgar poses as Poor Tom on the stormy heath to guide his blinded father.",
+   "topicId": "king-lear",
    "periodId": "jacobean-era"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Cornwall plucks out Gloucester's eyes at Gloucester Castle in one of the most brutal scenes in English tragedy.",
+   "topicId": "king-lear",
    "periodId": "jacobean-era"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Macduff fulfills the witches' riddle because he was delivered by Caesarean section, ending Macbeth's bloody reign.",
+   "topicId": "macbeth",
    "periodId": "jacobean-era"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Antony and Cleopatra dramatises the global clash between Rome's austere duty and Alexandria's sensual splendor.",
+   "topicId": "antony-and-cleopatra",
    "periodId": "jacobean-era"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Enobarbus delivers the famous description: The barge she sat in, like a burnish'd throne, / Burn'd on the water.",
+   "topicId": "antony-and-cleopatra",
    "periodId": "jacobean-era"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Revenger's Tragedy features Vindice carrying the poisoned skull of his murdered mistress to execute vengeance.",
+   "topicId": "the-revengers-tragedy",
    "periodId": "jacobean-era"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Marston's The Malcontent uses the disguised ruler trope, where Duke Altofronto poses as the bitter cynic Malevole.",
+   "topicId": "john-marston",
    "periodId": "jacobean-era"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "A Game at Chess dramatised Anglo-Spanish relations as a chess match, running nine consecutive days to packed houses.",
+   "topicId": "thomas-middleton",
    "periodId": "jacobean-era"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Inigo Jones designed breathtaking proscenium arches, turning machines, and costumes for James I's court masques.",
+   "topicId": "ben-jonson",
    "periodId": "jacobean-era"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Ben Jonson boldly published his plays and poems in a grand folio volume entitled The Workes in 1616.",
+   "topicId": "ben-jonson",
    "periodId": "jacobean-era"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Donne declares that after one short sleep past, we wake eternally and Death shall be no more: Death, thou shalt die.",
+   "topicId": "john-donne",
    "periodId": "jacobean-era"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "King James I died on 27 March 1625, concluding the Jacobean period and beginning the Caroline era.",
+   "topicId": "jacobean-era",
    "periodId": "jacobean-era"
   }
  ]

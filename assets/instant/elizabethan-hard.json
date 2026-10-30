@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Sir Guyon binds the sensual sorceress Acrasia and destroys her Bower of Bliss to champion Temperance.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Duessa personifies falsehood, deceit, and papal corruption, temporarily leading the Redcrosse Knight astray.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Sir Artegall administers stern justice, accompanied by the invincible iron executioner Talus.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Talus, gifted to Artegall by Astraea, represents unswerving, mechanical executive law and physical force.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Spenser dedicated his pastoral elegy Astrophel to Sidney's memory, comparing his death in battle to Adonis.",
+   "topicId": "edmund-spenser",
    "periodId": "elizabethan"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Spenser adopted Colin Clout from John Skelton, using the persona to voice his poetic ambitions and romantic grief.",
+   "topicId": "the-shepheardes-calender",
    "periodId": "elizabethan"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "E. K., Spenser's Cambridge friend Edward Kirke, supplied academic glosses praising Spenser as the new poet.",
+   "topicId": "the-shepheardes-calender",
    "periodId": "elizabethan"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Spenser's Letter to Raleigh expounds his intention to fashion a gentleman in virtuous and gentle discipline.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Astrophel and Stella consists of precisely 108 Petrarchan sonnets interspersed with 11 narrative lyric songs.",
+   "topicId": "philip-sidney",
    "periodId": "elizabethan"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Penelope Devereux, daughter of the Earl of Essex, inspired Stella, playing on her married name in sonnet 37.",
+   "topicId": "philip-sidney",
    "periodId": "elizabethan"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Sidney adapts Horace's docere et delectare, asserting that poetry's true aim is to teach virtue through delight.",
+   "topicId": "an-apology-for-poetry",
    "periodId": "elizabethan"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Sidney exalts right poets because Nature's world is brazen, whereas the poet alone delivers a golden world.",
+   "topicId": "an-apology-for-poetry",
    "periodId": "elizabethan"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Stephen Gosson's tract attacked poetry and theater as schools of vice, prompting Sidney's formal philosophical rebuttal.",
+   "topicId": "stephen-gosson",
    "periodId": "elizabethan"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "William Webbe praised Spenser while urging English writers to adopt classical Greek and Latin quantitative hexameters.",
+   "topicId": "william-webbe",
    "periodId": "elizabethan"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Puttenham's three-part treatise examined poetic forms, proportion, and rhetorical ornament for courtly makers.",
+   "topicId": "george-puttenham",
    "periodId": "elizabethan"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Samuel Daniel argued that rhyme is natural to vernacular languages and defended the cultural genius of the Middle Ages.",
+   "topicId": "samuel-daniel",
    "periodId": "elizabethan"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Campion argued for unrhymed quantitative lyric meters, calling rhyme a crude, barbarous gothic custom.",
+   "topicId": "thomas-campion",
    "periodId": "elizabethan"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Hieronimo discovers his murdered son Horatio hanged in an arbor and plots an elaborate, bloody theatrical revenge.",
+   "topicId": "the-spanish-tragedy",
    "periodId": "elizabethan"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Hieronimo has the royal conspirators act parts in Soliman and Perseda, using real weapons to execute his revenge.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Abigail enters a nunnery after discovering her father orchestrated the deaths of her suitors, whereupon Barabas poisons her.",
+   "topicId": "the-jew-of-malta",
    "periodId": "elizabethan"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Barabas adopts Ithamore as his partner in crime, declaring they are united by a mutual hatred of Christians.",
+   "topicId": "the-jew-of-malta",
    "periodId": "elizabethan"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Edward II's obsessive devotion to Gaveston alienated the English nobility, leading to Gaveston's execution and royal deposition.",
+   "topicId": "edward-ii",
    "periodId": "elizabethan"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Mortimer Junior rules England alongside Queen Isabella until young Edward III executes him on the gallows at Tyburn.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Rose was the home playhouse of the Lord Admiral's Men and the venue where Edward Alleyn starred in Marlowe's plays.",
+   "topicId": "christopher-marlowe",
    "periodId": "elizabethan"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Peele's pastoral play flatters Queen Elizabeth, having Diana deliver the golden ball directly into the Queen's royal hands.",
+   "topicId": "george-peele",
    "periodId": "elizabethan"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Peele's play frames folk adventures around a cottage fireside tale told by an old countrywoman named Madge.",
+   "topicId": "george-peele",
    "periodId": "elizabethan"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shakespeare closely followed Lodge's Rosalynde, adapting its characters, Forest of Arden setting, and gender disguises.",
+   "topicId": "as-you-like-it",
    "periodId": "elizabethan"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shakespeare adapted Greene's Pandosto, altering character names and providing a joyful resurrection for Hermione.",
+   "topicId": "the-winters-tale",
    "periodId": "elizabethan"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Bacon's servant Miles falls asleep as the Brazen Head speaks Time is, Time was, and Time is past, then explodes.",
+   "topicId": "robert-greene",
    "periodId": "elizabethan"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Jack Wilton travels with Surrey across Europe, witnessing tournaments where Surrey defends fair Geraldine's beauty.",
+   "topicId": "the-unfortunate-traveller",
    "periodId": "elizabethan"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Nashe's brilliant prose satire lashes the Seven Deadly Sins and social avarice of late Elizabethan London.",
+   "topicId": "thomas-nashe",
    "periodId": "elizabethan"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Under the pseudonym Martin Marprelate, puritan printers attacked Anglican bishops with hilarious, colloquial satire.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Lyly and Nashe adopted Martin's scurrilous, popular style to ridicule the puritan pamphleteers.",
+   "topicId": "university-wits",
    "periodId": "elizabethan"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Bishops' Ban prohibited verse satire and epigrams, ordering works by Marston, Hall, and Davies burned in Stationers' Hall.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Poetomachia was a rivalry where Jonson satirised Marston and Dekker in Cynthia's Revels and Poetaster.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Horace, representing Jonson, gives Crispinus a purge to vomit up bombastic Latinate neologisms onto the stage.",
+   "topicId": "ben-jonson",
    "periodId": "elizabethan"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Shoemaker's Holiday depicts the craftsmen of London with infectious festive energy, romance, and civic pride.",
+   "topicId": "thomas-dekker",
    "periodId": "elizabethan"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Queen's Men united twelve top actors from noble companies into a nationwide royal theatrical monopoly.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Richard Tarlton was the most famous comic performer of the Elizabethan era, acclaimed for witty extemporal verse.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Burbage purchased the Blackfriars hall in 1596, though local residents prevented adult companies playing there until 1608.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Richard Burbage was the premier tragic star of Shakespeare's troupe, creating the greatest roles in Western drama.",
+   "topicId": "shakespearean-tragedy",
    "periodId": "elizabethan"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Don Adriano de Armado is a refined traveler of Spain whose speeches parody the florid, antithetical Euphuistic style.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Nick Bottom the weaver is rehearsing Pyramus and Thisbe when Puck transforms his head into that of a donkey.",
+   "topicId": "a-midsummer-nights-dream",
    "periodId": "elizabethan"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Bassanio rejects gold and silver, choosing the humble lead casket warning that who chooses it must hazard all he hath.",
+   "topicId": "the-merchant-of-venice",
    "periodId": "elizabethan"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Boar's Head Tavern in Eastcheap is the tavern home of Falstaff, Mistress Quickly, and Prince Hal's tavern world.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "King Henry V wooes Princess Katherine in a famous bilingual scene, uniting the crowns of England and France.",
+   "topicId": "henry-v",
    "periodId": "elizabethan"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Lord Jaques delivers the celebrated Seven Ages of Man speech in Act II, Scene 7 of As You Like It.",
+   "topicId": "as-you-like-it",
    "periodId": "elizabethan"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Maria's forged letter tricks the puritanical Malvolio into appearing before Olivia smiling and cross-gartered in yellow stockings.",
+   "topicId": "twelfth-night",
    "periodId": "elizabethan"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "William Camden's Britannia was the first county-by-county archaeological and antiquarian history of Great Britain.",
+   "topicId": "william-camden",
    "periodId": "elizabethan"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "King James VI published Daemonologie in 1597 to refute skeptics and expound the theological reality of black sorcery.",
+   "topicId": "macbeth",
    "periodId": "elizabethan"
   }
  ]

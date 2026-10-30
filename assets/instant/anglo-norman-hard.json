@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Constance FitzGilbert of Lincolnshire commissioned Gaimar to translate historical sources into Anglo-Norman French verse.",
+   "topicId": "geoffrei-gaimar",
    "periodId": "anglo-norman"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Wace presented his French octosyllabic verse adaptation of Geoffrey of Monmouth to Queen Eleanor of Aquitaine around 1155.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In the prologue of his Brut, Layamon identifies himself as a priest residing at Ernley, now known as Areley Kings on the Severn.",
+   "topicId": "layamon",
    "periodId": "anglo-norman"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Anglo-Norman romances, lais, and chronicles predominantly utilized rhymed octosyllabic couplets derived from continental French verse.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "J.R.R. Tolkien identified the remarkably consistent West Midland literary dialect shared by Ancrene Wisse and the Katherine Group as AB language.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Sawles Warde is an Early Middle English homiletic adaptation of parts of Hugh of Saint Victor's treatise De Anima.",
+   "topicId": "hugh-of-saint-victor",
    "periodId": "anglo-norman"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Wit represents the rational master of the household, who must maintain discipline over his unruly wife Will and bodily senses.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In Sawles Warde, Will personifies the appetites and passions that constantly threaten to overpower Wit's rational governance.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Hali Meidhad, or Holy Maidenhood, is an early 13th-century prose tract warning women against marriage and childbirth trials.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "MS Bodley 34 in the Bodleian Library is the primary manuscript preserving the Katherine Group virgin martyr legends and tracts.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "At the close of The Owl and the Nightingale, the birds travel to Dorset to seek the verdict of Master Nicholas of Guildford.",
+   "topicId": "the-owl-and-the-nightingale",
    "periodId": "anglo-norman"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The poem praises Master Nicholas and specifies that he lives in the rural village of Portisham in Dorset.",
+   "topicId": "the-owl-and-the-nightingale",
    "periodId": "anglo-norman"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Bodleian Library MS Digby 23, copied in an Anglo-Norman hand in England around 1125 to 1150, preserves the primary text of Roland.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Oxford Roland is written in the Anglo-Norman dialect of French, demonstrating the insular preservation of French epics.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Philippe de Thaon composed his Comput around 1119, followed by his Bestiaire dedicated to Queen Adeliza of Louvain.",
+   "topicId": "philippe-de-thaon",
    "periodId": "anglo-norman"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Philippe de Thaon explicitly dedicated his verse Bestiaire around 1121 to Queen Adeliza, second wife of Henry I.",
+   "topicId": "philippe-de-thaon",
    "periodId": "anglo-norman"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Ancrene Wisse is structured into eight books, with Books 1 and 8 forming the Outer Rule and Books 2 to 7 the Inner Rule.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Christ is allegorized as a noble King who woos an ungrateful lady besieged in an earthen castle, dying to save her.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Jordan Fantosme, a cleric of Winchester, composed a firsthand chronicle of the northern campaign against King William the Lion.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Robert Mannyng completed his English Chronicle of England in 1338, adapting Langtoft's Anglo-Norman chronicle for the second part.",
+   "topicId": "robert-mannyng",
    "periodId": "anglo-norman"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Giraldus Cambrensis, or Gerald of Wales, wrote ethnographic and topographical accounts of Ireland and Wales in elegant Latin.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Henry of Huntingdon recorded the didactic story of King Canute demonstrating the limits of royal power in his Historia Anglorum.",
+   "topicId": "henry-of-huntingdon",
    "periodId": "anglo-norman"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Henry of Huntingdon listed the five scourges of Britain as the Romans, the Scots and Picts, the English, the Danes, and the Normans.",
+   "topicId": "henry-of-huntingdon",
    "periodId": "anglo-norman"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Geoffrey of Monmouth dedicated his Historia Regum Britanniae to Robert, Earl of Gloucester, a pre-eminent Anglo-Norman magnate.",
+   "topicId": "robert-of-gloucester",
    "periodId": "anglo-norman"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Geoffrey traced Britain's founding to Brutus, great-grandson of Aeneas, who purged the island of giants and founded Troia Nova.",
+   "topicId": "geoffrey-of-monmouth",
    "periodId": "anglo-norman"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Battle of Camlann, placed around 537 or 542 in legend, marks Arthur's final clash where Mordred is killed and Arthur is wounded.",
+   "topicId": "geoffrey-of-monmouth",
    "periodId": "anglo-norman"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Thomas of Britain wrote the refined, courtly psychological version of Tristan, emphasizing emotional introspection and chivalric decorum.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Gottfried von Strassburg explicitly named Thomas of Britain as his master source for his classic German verse Tristan.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Guigemar wounds an enchanted white doe, whose rebounded arrow wounds his thigh while the beast curses him to suffer for love.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The youth carries his beloved up a steep Norman mountain, refusing to drink a strengthening potion until his heart bursts at the summit.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Muldumarec transforms into a hawk to visit the locked-away lady, fathering the hero Yonec who later avenges his parents.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "After the lady's jealous husband wrings the nightingale's neck, the knight has the bird embalmed in a golden vessel.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In Eliduc, Guildeluec graciously accepts holy vows upon realizing her husband's deep love for the foreign princess Guilliadun.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Marie de France compiled Ysopet, or Little Aesop, claiming in her epilogue to translate an English book compiled by King Alfred.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Marie adapted the Latin vision of Saint Patrick's Purgatory into Anglo-Norman verse, describing knight Owein's spiritual trials.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Fouke le Fitz Waryn combines historical chronicle and romance, detailing Fulk III FitzWarin's guerilla rebellion against King John.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Provisions of Oxford in 1258 were circulated in Latin, French, and English, marking the re-emergence of written English for state use.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Henry III conceded governmental authority to a baronial council of fifteen under the revolutionary Provisions of Oxford in 1258.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Dan Michel's 1340 autograph manuscript provides an invaluable, localized phonetic record of the fourteenth-century Kentish dialect.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Friar Laurent of Orleans composed Somme le Roi in 1279 for King Philip III of France, which Dan Michel translated into English.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Mannyng translated the Anglo-Norman Manuel des Pechiez, expanding its didactic stories into vigorous English verse.",
+   "topicId": "robert-mannyng",
    "periodId": "anglo-norman"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Poema Morale, or the Moral Ode, consists of around 400 lines of rhyming fourteeners advising listeners to repent and avoid damnation.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Ormulum uses unrhymed iambic septenaries of fifteen syllables with an unvarying midline caesura after the eighth syllable.",
+   "topicId": "orm",
    "periodId": "anglo-norman"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In the dedication of the Ormulum, Orm addresses his brother Walter as his brother in the flesh and brother in Christ.",
+   "topicId": "orm",
    "periodId": "anglo-norman"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "A bright light streaming from Havelok's mouth and a royal birthmark on his shoulder prove his legitimate royal lineage.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Princess Goldborough, daughter of King Athelwold, is imprisoned by the treacherous Godrich until Havelok rescues and marries her.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The rota Sumer is icumen in was recorded around 1250 in the scriptorium of Reading Abbey in Berkshire.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "La Seinte Resureccion, surviving in fragments in Paris and London manuscripts, is a pioneer vernacular passion and Easter play.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The extensive stage directions and choral responsories in Le Mystere d'Adam are written in liturgical church Latin.",
+   "topicId": "anglo-norman",
    "periodId": "anglo-norman"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Thomas Chestre composed Sir Launfal, adapting Marie de France's lai into a popular 12-line tail-rhyme English romance.",
+   "topicId": "thomas-chestre",
    "periodId": "anglo-norman"
   }
  ]

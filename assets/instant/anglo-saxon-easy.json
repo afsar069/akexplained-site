@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Beowulf is the titular protagonist of the epic, a Geatish warrior renowned for his superhuman strength and valor.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Beowulf was composed in Old English (Anglo-Saxon), the earliest recorded stage of the English language spoken from the mid-5th to late 11th century.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Grendel is the first demonic monster Beowulf faces, a descendant of Cain who terrorizes King Hrothgar's hall Heorot.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Hrothgar is the elderly king of the Danes whose kingdom and people are rescued from Grendel's attacks by Beowulf.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Heorot is King Hrothgar's grand mead-hall, serving as the cultural and political center of Danish warrior society in the poem.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Because weapons could not pierce Grendel's enchanted skin, Beowulf wrestled him barehanded and ripped off his arm and shoulder, dealing a mortal blow.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In the poem's final section, an aged King Beowulf fights a venomous, treasure-hoarding dragon that attacks Geatland.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "King Alfred of Wessex (reigned 871–899) is the only English monarch called 'the Great', known for resisting Viking invasions and championing English learning and law.",
+   "topicId": "king-alfred",
    "periodId": "anglo-saxon"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In Anglo-Saxon culture, a scop was an oral poet and bard who sang heroic tales, genealogies, and historical legends in the royal court and mead-hall.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Venerable Bede, a Benedictine monk and scholar, completed the landmark historical work 'Ecclesiastical History of the English People' in 731 AD.",
+   "topicId": "ecclesiastical-history",
    "periodId": "anglo-saxon"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Alliteration is the repetition of initial consonant sounds across stressed syllables, serving as the foundational metric device of Old English verse.",
+   "topicId": "alliteration",
    "periodId": "anglo-saxon"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "A kenning is a metaphorical compound word or phrase used in Old English poetry to describe an object indirectly (e.g., 'whale-road' for the sea).",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Caedmon is the earliest documented English poet; according to Bede, he was an uneducated cowherd who received the divine gift of song to compose 'Caedmon's Hymn'.",
+   "topicId": "caedmon",
    "periodId": "anglo-saxon"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "In Germanic Anglo-Saxon culture, 'Wyrd' represents fate or personal destiny, reflecting the stoic belief that human life is guided by predetermined outcomes.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Beowulf belongs to the Geats, a North Germanic tribe dwelling in southern Scandinavia (modern-day Sweden).",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Hrunting is an ancient ancestral sword lent to Beowulf by the Danish courtier Unferth prior to Beowulf's underwater battle with Grendel's mother.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Norman Conquest of England in 1066, led by William the Conqueror, ended Anglo-Saxon rule and initiated the transition to the Middle English period.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Anglo-Saxon period (c. 450–1066) is historically situated in the Early Middle Ages, traditionally and popularly termed the Dark Ages.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "'The Seafarer' is an Old English elegy from the Exeter Book capturing the bitter isolation, cold, and spiritual contemplation of a solitary voyager on the ocean.",
+   "topicId": "the-seafarer",
    "periodId": "anglo-saxon"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "'The Wanderer' is an Exeter Book elegy depicting an exiled warrior who laments the death of his lord and comrades while meditating on the transient nature of worldly life.",
+   "topicId": "the-wanderer",
    "periodId": "anglo-saxon"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Anglo-Saxon tribes (Angles, Saxons, and Jutes) originally migrated to Britain from northern Germany, Jutland (Denmark), and the Frisian coastline.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Anglo-Saxon Chronicle is an invaluable historical record of English events initiated around 890 AD under the direction of King Alfred the Great.",
+   "topicId": "anglo-saxon-chronicle",
    "periodId": "anglo-saxon"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In Old English alliterative verse, a caesura is a distinct rhythmic pause that splits each poetic line into two half-lines (hemistichs).",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The epic poem Beowulf centers around three main battles: against Grendel, against Grendel's mother, and against the dragon.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "When all of Beowulf's other warriors flee in fear during the dragon fight, Wiglaf remains steadfastly at his king's side in accordance with the heroic warrior code.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Beowulf strongly reflects the Germanic heroic code, emphasizing mutual loyalty between lord and warrior, courage in battle, honor, and generosity.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Mead, an alcoholic drink made from fermented honey and water, was the primary ceremonial and social drink served in Anglo-Saxon communal halls.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "'The Dream of the Rood', preserved in the Vercelli Book, is an Old English religious dream vision in which the Holy Cross itself recounts Christ's crucifixion.",
+   "topicId": "the-dream-of-the-rood",
    "periodId": "anglo-saxon"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Grendel, an alienated descendant of Cain banished from human joy, is tormented and angered by the sound of music, singing, and harps celebrating God's creation in Heorot.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Battle of Hastings on October 14, 1066, where William the Conqueror defeated the last Anglo-Saxon king, Harold Godwinson, marked the conclusion of Anglo-Saxon rule.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "'Whale-road' (hronrāde) is one of the most famous Old English kennings, poetically designating the ocean or sea.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Most surviving Anglo-Saxon literature was transcribed and preserved by Christian monks working in monastic scriptoria following England's conversion to Christianity.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Grendel's mother is portrayed as a monstrous, predatory sea-hag or water-demon who dwells in a dark underwater cave beneath a haunted mere.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Beowulf dies at the climax of the poem after being fatally bitten and poisoned in the neck by the dragon, though he and Wiglaf succeed in slaying the beast.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Exeter Book is one of the four surviving major manuscripts containing Old English poetry, alongside the Nowell Codex, Vercelli Book, and Junius Manuscript.",
+   "topicId": "exeter-book",
    "periodId": "anglo-saxon"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Comitatus was the foundational Germanic code of allegiance binding a lord to protect and reward his warriors, who in turn pledged unfailing military loyalty.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "'The Ruin' is an Old English elegiac poem from the Exeter Book that reflects on the crumbling stone walls and bathhouses of a fallen Roman settlement (likely Bath).",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Hygelac is the historical king of the Geats, Beowulf's beloved maternal uncle and sovereign lord throughout Beowulf's youthful adventures.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Following his barehanded struggle with Grendel in Heorot, Beowulf mounts Grendel's torn-off arm, claw, and shoulder high under the hall's roof as a victory trophy.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Unferth, King Hrothgar's spokesman, initially taunts Beowulf about his swimming match with Breca, but later acknowledges Beowulf's bravery by offering him his sword Hrunting.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Ecgtheow was Beowulf's father, a renowned warrior of the Waegmunding clan whose feud with the Wylfings was peacefully resolved by King Hrothgar years before.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Old English poetry is characterized by accentual alliterative verse, in which lines are structured around alliterating stressed beats rather than end-rhyme.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "'The Battle of Maldon' is an Old English heroic poem commemorating the 991 AD battle where Byrhtnoth and his Anglo-Saxon warriors bravely fell fighting invading Vikings.",
+   "topicId": "the-battle-of-maldon",
    "periodId": "anglo-saxon"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Linguistically, 'Beowulf' is widely translated as 'bee-wolf' (an animal that attacks bees for their honey), which is an Old English kenning for a bear.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "After returning to Geatland and succeeding to the throne, Beowulf reigns wisely and protectively over the Geatish people for fifty peaceful years.",
+   "topicId": "beowulf",
    "periodId": "anglo-saxon"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "'Ring-giver' (bēaggifa) is an Old English kenning for a king or chieftain, highlighting his duty to generously distribute golden arm-rings and treasure to loyal warriors.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Christianity profoundly shaped Anglo-Saxon literature, blending biblical morality and Latin monastic literacy with traditional Germanic heroic folklore.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Old English is a West Germanic language brought to Britain by Germanic settlers in the 5th century, belonging directly to the Germanic language branch.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The elegiac poem 'Deor' features the recurring comforting refrain 'Þæs ofereode, þisses swa mæg' ('That passed away, so may this'), recited by a sorrowful displaced bard.",
+   "topicId": "deor",
    "periodId": "anglo-saxon"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "William the Conqueror (Duke of Normandy) commanded the 1066 Norman invasion of England, winning the Battle of Hastings and becoming the King of England.",
+   "topicId": "anglo-saxon",
    "periodId": "anglo-saxon"
   }
  ]

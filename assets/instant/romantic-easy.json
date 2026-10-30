@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Wordsworth and Coleridge co-published 'Lyrical Ballads' anonymously in 1798, launching the English Romantic movement.",
+   "topicId": "lyrical-ballads",
    "periodId": "romantic"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The year 1832 marks the end of the Romantic era with Sir Walter Scott's death and the First Reform Act under Earl Grey.",
+   "topicId": "walter-scott",
    "periodId": "romantic"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "William Cowper published 'The Task' in 1785, contrasting rural virtue with urban corruption.",
+   "topicId": "william-cowper",
    "periodId": "romantic"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Robert Burns published his landmark Kilmarnock Edition, 'Poems, Chiefly in the Scottish Dialect', in 1786.",
+   "topicId": "robert-burns",
    "periodId": "romantic"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Robert Burns composed 'To a Mouse' in 1785 after turning up a mouse's nest with his plough.",
+   "topicId": "robert-burns",
    "periodId": "romantic"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "William Blake invented Illuminated Printing, hand-etching and hand-colouring his poems and visionary designs on copper plates.",
+   "topicId": "william-blake",
    "periodId": "romantic"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Blake published 'Songs of Innocence' in 1789 and added 'Songs of Experience' in 1794 to show the two contrary states of the soul.",
+   "topicId": "william-blake",
    "periodId": "romantic"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Blake paired 'The Lamb' from Innocence with 'The Tyger' from Experience as contrary visions of creation.",
+   "topicId": "the-tyger",
    "periodId": "romantic"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Blake's 'London' in 'Songs of Experience' protests urban misery, institutional oppression, and mind-forged manacles.",
+   "topicId": "william-blake",
    "periodId": "romantic"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Parisian citizens stormed the Bastille on 14 July 1789, an event initially celebrated by British Romantic writers.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Edmund Burke published 'Reflections on the Revolution in France' in November 1790, defending inherited tradition and monarchy.",
+   "topicId": "edmund-burke",
    "periodId": "romantic"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Thomas Paine answered Burke's 'Reflections' with Part I and Part II of 'Rights of Man' in 1791 and 1792.",
+   "topicId": "thomas-paine",
    "periodId": "romantic"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Mary Wollstonecraft published 'A Vindication of the Rights of Woman' in 1792, arguing for women's rational education.",
+   "topicId": "a-vindication-of-the-rights-of-woman",
    "periodId": "romantic"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "William Godwin published 'An Enquiry Concerning Political Justice' in 1793, influencing Wordsworth, Coleridge, and Shelley.",
+   "topicId": "william-godwin",
    "periodId": "romantic"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In the 1790s Coleridge and Southey planned Pantisocracy, an equal communal society to be established in America.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Wordsworth's 1800 Preface defines poetry as the spontaneous overflow of powerful feelings from emotion recollected in tranquility.",
+   "topicId": "preface-to-lyrical-ballads",
    "periodId": "romantic"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Wordsworth described the poet in his Preface as a man speaking to men in a selection of language really used by men.",
+   "topicId": "preface-to-lyrical-ballads",
    "periodId": "romantic"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Wordsworth's meditative poem 'Lines Composed a Few Miles above Tintern Abbey' closed the 1798 edition of 'Lyrical Ballads'.",
+   "topicId": "tintern-abbey",
    "periodId": "romantic"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Wordsworth's autobiographical poem 'The Prelude' was published after his death in 1850 by his widow Mary.",
+   "topicId": "the-prelude",
    "periodId": "romantic"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Wordsworth's Immortality Ode laments the passing of childhood's celestial light while finding philosophical consolation in nature.",
+   "topicId": "immortality-ode",
    "periodId": "romantic"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Wordsworth's sonnet 'The World Is Too Much with Us' criticizes commercial materialism for alienating humanity from nature.",
+   "topicId": "william-wordsworth",
    "periodId": "romantic"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Wordsworth, Coleridge, and Southey lived in the Lake District and were grouped together as the Lake Poets.",
+   "topicId": "the-lake-poets",
    "periodId": "romantic"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Ancient Mariner shoots an auspicious albatross, giving English the idiom an albatross around one's neck.",
+   "topicId": "the-rime-of-the-ancient-mariner",
    "periodId": "romantic"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Coleridge stated that 'Kubla Khan', composed in an opium dream around 1797, was interrupted by a visitor from Porlock.",
+   "topicId": "kubla-khan",
    "periodId": "romantic"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Coleridge's unfinished gothic ballad 'Christabel' was published in his 1816 volume with 'Kubla Khan'.",
+   "topicId": "christabel",
    "periodId": "romantic"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Coleridge published 'Biographia Literaria' in 1817, introducing willing suspension of disbelief and his theory of Imagination.",
+   "topicId": "biographia-literaria",
    "periodId": "romantic"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Coleridge's quiet, meditative blank-verse poems addressed to friends or family are called his conversation poems.",
+   "topicId": "samuel-taylor-coleridge",
    "periodId": "romantic"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Lord Byron published 'English Bards and Scotch Reviewers' in 1809 to counter Edinburgh critics of 'Hours of Idleness'.",
+   "topicId": "lord-byron",
    "periodId": "romantic"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron's 'Childe Harold's Pilgrimage' made him famous in 1812 and defined the brooding, alienated Byronic hero.",
+   "topicId": "childe-harolds-pilgrimage",
    "periodId": "romantic"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron's 'Don Juan', composed in ottava rima between 1819 and 1824, is his greatest satirical epic.",
+   "topicId": "don-juan",
    "periodId": "romantic"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron sailed to Greece in 1823 to aid the Greek War of Independence against Ottoman rule and died at Missolonghi in 1824.",
+   "topicId": "lord-byron",
    "periodId": "romantic"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shelley was expelled from University College, Oxford, in 1811 for refusing to disavow 'The Necessity of Atheism'.",
+   "topicId": "percy-bysshe-shelley",
    "periodId": "romantic"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shelley's 1818 sonnet 'Ozymandias' uses a shattered statue in the desert to expose the transience of tyrannical power.",
+   "topicId": "ozymandias",
    "periodId": "romantic"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shelley's 'Ode to the West Wind' of 1819 invokes the autumn wind as both destroyer and preserver, ending with the prophecy of Spring.",
+   "topicId": "ode-to-the-west-wind",
    "periodId": "romantic"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Percy Bysshe Shelley wrote the tragedy 'The Cenci' in 1819 and the mythological lyrical drama 'Prometheus Unbound' in 1820.",
+   "topicId": "percy-bysshe-shelley",
    "periodId": "romantic"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Shelley composed 'Adonais' in 1821 as a pastoral elegy mourning John Keats's death in Rome.",
+   "topicId": "adonais",
    "periodId": "romantic"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "On 16 August 1819 cavalry charged peaceful protesters at St. Peter's Field in the Peterloo Massacre, prompting Shelley's poem.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Keats's 1818 poem 'Endymion: A Poetic Romance' begins with the celebrated declaration that a thing of beauty is a joy for ever.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In a few months of 1819, his Great Year, Keats composed his major odes, 'The Eve of St. Agnes', and 'Hyperion'.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Keats coined negative capability in a December 1817 letter to his brothers, praising Shakespeare for possessing this quality.",
+   "topicId": "negative-capability",
    "periodId": "romantic"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Keats died in Rome on 23 February 1821 and chose the epitaph Here lies one whose name was writ in water.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Jane Austen drafted 'Pride and Prejudice' in the late 1790s under the working title 'First Impressions'.",
+   "topicId": "pride-and-prejudice",
    "periodId": "romantic"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Jane Austen's 1815 novel 'Emma' follows the comic matchmaking blunders of its heroine, Emma Woodhouse.",
+   "topicId": "emma",
    "periodId": "romantic"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "'Persuasion' and 'Northanger Abbey' were issued together posthumously at the end of 1817.",
+   "topicId": "jane-austen",
    "periodId": "romantic"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Sir Walter Scott published 'Waverley' anonymously in 1814, pioneering the modern historical novel.",
+   "topicId": "waverley",
    "periodId": "romantic"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Scott's 'Ivanhoe' of 1819 is set in 12th-century England during the reign of Richard the Lionheart.",
+   "topicId": "ivanhoe",
    "periodId": "romantic"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Mary Shelley, daughter of William Godwin and Mary Wollstonecraft, published 'Frankenstein' anonymously in 1818.",
+   "topicId": "frankenstein",
    "periodId": "romantic"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Charles Lamb used the pseudonym Elia, borrowed from an Italian clerk at the South Sea House, for his 'Essays of Elia'.",
+   "topicId": "charles-lamb",
    "periodId": "romantic"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Thomas De Quincey published 'Confessions of an English Opium-Eater' in 1821, pioneering modern addiction literature.",
+   "topicId": "thomas-de-quincey",
    "periodId": "romantic"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "William Hazlitt was a leading Romantic essayist and critic closely connected to Lamb, Hunt, and Coleridge.",
+   "topicId": "william-hazlitt",
    "periodId": "romantic"
   }
  ]

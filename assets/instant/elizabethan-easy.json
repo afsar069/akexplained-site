@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Queen Elizabeth I, daughter of Henry VIII and Anne Boleyn, ruled England from 1558 until her death in 1603.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Edmund Spenser designed The Faerie Queene as a twelve-book chivalric epic allegorising moral virtues.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Sir Philip Sidney initiated the Elizabethan sonnet craze with his sequence Astrophel and Stella.",
+   "topicId": "philip-sidney",
    "periodId": "elizabethan"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Christopher Marlowe revolutionized English drama with his powerful blank verse and overreaching protagonists.",
+   "topicId": "christopher-marlowe",
    "periodId": "elizabethan"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Thomas Kyd introduced the Senecan revenge formula of ghosts, madness, and stage bloodshed in the late 1580s.",
+   "topicId": "the-spanish-tragedy",
    "periodId": "elizabethan"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "John Lyly created the ornate, antithetical prose style known as Euphuism, celebrated in Elizabethan court circles.",
+   "topicId": "john-lyly",
    "periodId": "elizabethan"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Robert Greene was a versatile dramatist and pamphleteer whose romance Pandosto inspired Shakespeare's Winter's Tale.",
+   "topicId": "robert-greene",
    "periodId": "elizabethan"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Formed in 1594 under Lord Hunsdon, the Lord Chamberlain's Men was the premier company of Shakespeare and Richard Burbage.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Globe was built by the Chamberlain's Men in 1599 using timber salvaged from The Theatre in Shoreditch.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Shylock demands a pound of flesh from the merchant Antonio in court before Portia's clever legal intervention.",
+   "topicId": "the-merchant-of-venice",
    "periodId": "elizabethan"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Rosalind disguises herself as the youth Ganymede, tutoring Orlando in the art of love in Arden.",
+   "topicId": "as-you-like-it",
    "periodId": "elizabethan"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Prince Hamlet struggles with philosophical doubt, moral corruption, and revenge in Elsinore Castle.",
+   "topicId": "hamlet",
    "periodId": "elizabethan"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Holinshed's Chronicles of England, Scotland, and Ireland provided historical plots for Shakespeare's histories and Macbeth.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Sir Thomas North's vivid prose translation of Plutarch supplied the dramatic plots and language for Julius Caesar.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Shepheardes Calender announced Spenser's poetic arrival, using varied meters and archaic English diction.",
+   "topicId": "the-shepheardes-calender",
    "periodId": "elizabethan"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Spenser published Amoretti in 1595, celebrating joyful, reciprocal courtly love culminating in marriage.",
+   "topicId": "amoretti",
    "periodId": "elizabethan"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Sidney's treatise defended poetry as an art that teaches and delights, creating a golden world superior to nature.",
+   "topicId": "an-apology-for-poetry",
    "periodId": "elizabethan"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Tamburlaine was Marlowe's explosive stage triumph, celebrating boundless martial ambition in magnificent blank verse.",
+   "topicId": "tamburlaine",
    "periodId": "elizabethan"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Marlowe's Edward II is a pioneering English history play examining personal passion versus royal duty.",
+   "topicId": "christopher-marlowe",
    "periodId": "elizabethan"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Marlowe's idyllic pastoral lyric promises shepherd delights, embroidered gowns, and coral clasps.",
+   "topicId": "christopher-marlowe",
    "periodId": "elizabethan"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Raleigh replied realistically to Marlowe, noting that time drives flocks from field and joy has a date.",
+   "topicId": "walter-raleigh",
    "periodId": "elizabethan"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Redcrosse Knight journeys to slay the dragon threatening Una's parents, allegorising the Christian soul and Saint George.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Una leads a white lamb and rides a snow-white ass, personifying singular, indivisible truth and true religion.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Sir Guyon, guided by the Palmer, resists sensual temptations and destroys the corrupt Bower of Bliss.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Britomart wields an enchanted spear to defend chastity, loving Artegall whom she beheld in a magic mirror.",
+   "topicId": "the-faerie-queene",
    "periodId": "elizabethan"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Prothalamion features two lovely swans floating down the River Thames to London, coined from Greek meaning pre-wedding song.",
+   "topicId": "edmund-spenser",
    "periodId": "elizabethan"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Epithalamion consists of 24 complex stanzas matching the hours of Midsummer Day, celebrating his wedding.",
+   "topicId": "epithalamion",
    "periodId": "elizabethan"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Dedicated to the Earl of Southampton, Venus and Adonis was Shakespeare's first printed literary publication.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Rape of Lucrece dramatises Tarquin's crime, Lucrece's suicide for honor, and the founding of the Roman Republic.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Shakespeare's 1609 quarto preserves 154 sonnets, divided between the Fair Youth sequence and the Dark Lady sequence.",
+   "topicId": "william-shakespeare",
    "periodId": "elizabethan"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The Unfortunate Traveller is an early English picaresque masterpiece chronicling Jack Wilton's adventures in Renaissance Europe.",
+   "topicId": "the-unfortunate-traveller",
    "periodId": "elizabethan"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Built by James Burbage, The Theatre established the prototype for the circular open-air Elizabethan public playhouse.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "James Burbage secured land in Shoreditch to build The Theatre, initiating commercial English playhouse history.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "The destruction of King Philip II's Armada secured England's Protestant independence and fueled patriotic Elizabethan literature.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Gorboduc, performed at the Inner Temple in 1561, was the first English play composed in unrhymed blank verse.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Nicholas Udall adapted classical Roman comedy to produce the earliest five-act English vernacular comedy.",
+   "topicId": "nicholas-udall",
    "periodId": "elizabethan"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "The Master of the Revels, notably Edmund Tilney from 1579, reviewed and licensed all scripts for public performance.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Edward Alleyn's powerful declamatory voice made him the foremost actor of Marlowe's titanic blank verse heroes.",
+   "topicId": "christopher-marlowe",
    "periodId": "elizabethan"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Will Kempe was renowned for his rustic comedic roles and published his famous dance journey in Kemps Nine Daies Wonder.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Philip Henslowe's Diary preserves the essential financial and production records of the Lord Admiral's Men at the Rose.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The Rose playhouse was built by Henslowe in 1587 in Southwark, hosting Marlowe's and early Shakespeare's plays.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Samuel Daniel's Delia was praised for its lyrical grace, smooth English rhythm, and reflective melancholy.",
+   "topicId": "samuel-daniel",
    "periodId": "elizabethan"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Michael Drayton published several editions of Idea, achieving lasting fame for his dramatic parting sonnet.",
+   "topicId": "michael-drayton",
    "periodId": "elizabethan"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Francis Bacon introduced the English essay in 1597, writing pithy aphoristic meditations on truth, death, and ambition.",
+   "topicId": "francis-bacon",
    "periodId": "elizabethan"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Richard Hooker provided the supreme philosophical and theological defense of the Elizabethan Anglican Settlement.",
+   "topicId": "richard-hooker",
    "periodId": "elizabethan"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Richard Hakluyt's accounts of English oceanic voyages celebrated maritime heroism and promoted overseas trade.",
+   "topicId": "richard-hakluyt",
    "periodId": "elizabethan"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Originally titled Acts and Monuments, Foxe's Book of Martyrs shaped Protestant English national identity for generations.",
+   "topicId": "john-foxe",
    "periodId": "elizabethan"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Mephistopheles appears at Faustus's summons, explaining that hell is not a place but a state of eternal separation from God.",
+   "topicId": "doctor-faustus",
    "periodId": "elizabethan"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "King Richard III desperately cries for a horse on Bosworth Field before being slain by the future Henry VII.",
+   "topicId": "richard-iii",
    "periodId": "elizabethan"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Queen Elizabeth I died on 24 March 1603, succeeded peacefully by King James VI of Scotland as James I of England.",
+   "topicId": "elizabethan",
    "periodId": "elizabethan"
   }
  ]

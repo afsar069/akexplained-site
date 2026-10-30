@@ -15,6 +15,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Burns mastered the six-line Standard Habbie stanza, rhyming aaabab with four tetrameter lines and two short dimeter lines.",
+   "topicId": "robert-burns",
    "periodId": "romantic"
   },
   {
@@ -28,6 +29,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In Burns's 1791 mock-heroic narrative, Tam watches witches dance in Alloway Kirk and flees Nannie across the Brig o' Doon.",
+   "topicId": "robert-burns",
    "periodId": "romantic"
   },
   {
@@ -41,6 +43,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Burns's 1785 monologue 'Holy Willie's Prayer' exposes the self-righteous hypocrisy of Calvinist church elder William Fisher.",
+   "topicId": "robert-burns",
    "periodId": "romantic"
   },
   {
@@ -54,6 +57,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "The Della Cruscans began with 'The Florence Miscellany' in 1785 and were crushed by William Gifford's 'The Baviad' and 'The Maeviad'.",
+   "topicId": "hannah-cowley",
    "periodId": "romantic"
   },
   {
@@ -67,6 +71,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Blake's 'The Marriage of Heaven and Hell' asserts 'Without Contraries is no progression' and includes the Proverbs of Hell.",
+   "topicId": "the-marriage-of-heaven-and-hell",
    "periodId": "romantic"
   },
   {
@@ -80,6 +85,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In Blake's private mythology, Urizen represents dogmatic reason, Los represents creative imagination, and Orc embodies revolution.",
+   "topicId": "william-blake",
    "periodId": "romantic"
   },
   {
@@ -93,6 +99,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Blake's famous lyric 'And did those feet in ancient time', naming dark Satanic Mills, prefaces 'Milton: A Poem in Two Books'.",
+   "topicId": "william-blake",
    "periodId": "romantic"
   },
   {
@@ -106,6 +113,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Dissenting minister Dr. Richard Price delivered 'A Discourse on the Love of Our Country' in November 1789, triggering Burke's 1790 reply.",
+   "topicId": "edmund-burke",
    "periodId": "romantic"
   },
   {
@@ -119,6 +127,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Burke mourned that the age of chivalry was gone and warned that learning would be trampled down by a swinish multitude.",
+   "topicId": "edmund-burke",
    "periodId": "romantic"
   },
   {
@@ -132,6 +141,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Paine wrote 'He pities the plumage, but forgets the dying bird' to expose Burke's indifference to the suffering French people.",
+   "topicId": "thomas-paine",
    "periodId": "romantic"
   },
   {
@@ -145,6 +155,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Wollstonecraft published 'A Vindication of the Rights of Men' in November 1790 as the first major rebuttal to Burke's 'Reflections'.",
+   "topicId": "a-vindication-of-the-rights-of-woman",
    "periodId": "romantic"
   },
   {
@@ -158,6 +169,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Wollstonecraft critiqued Rousseau's 'Emile' and conduct writers Fordyce and Gregory for denying women rational education.",
+   "topicId": "a-vindication-of-the-rights-of-woman",
    "periodId": "romantic"
   },
   {
@@ -171,6 +183,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Godwin argued that impartial universal benevolence requires saving Fénelon, author of 'Telemachus', over a chambermaid.",
+   "topicId": "william-godwin",
    "periodId": "romantic"
   },
   {
@@ -184,6 +197,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In Godwin's 1794 novel, Squire Falkland uses the legal system to persecute his secretary Caleb Williams after Caleb discovers his secret murder.",
+   "topicId": "william-godwin",
    "periodId": "romantic"
   },
   {
@@ -197,6 +211,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Defended by Thomas Erskine in 1794, Hardy, Tooke, and Thelwall were acquitted by London juries before Pitt passed the 1795 Gagging Acts.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -210,6 +225,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "William Beckford's 1786 Oriental Gothic tale 'Vathek' portrays a Faustian quest ending in eternal torment in the Hall of Eblis.",
+   "topicId": "william-beckford",
    "periodId": "romantic"
   },
   {
@@ -223,6 +239,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Radcliffe's 'The Mysteries of Udolpho' features Emily St. Aubert and Montoni, while 'The Italian' features the sinister monk Schedoni.",
+   "topicId": "the-mysteries-of-udolpho",
    "periodId": "romantic"
   },
   {
@@ -236,6 +253,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Unlike Radcliffe's sublime Terror and explained supernatural, Monk Lewis used graphic Horror and a literal demonic pact in 'The Monk'.",
+   "topicId": "the-monk",
    "periodId": "romantic"
   },
   {
@@ -249,6 +267,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Wordsworth's 'The Prelude' famously captures early revolutionary rapture with Bliss was it in that dawn to be alive.",
+   "topicId": "the-prelude",
    "periodId": "romantic"
   },
   {
@@ -262,6 +281,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Coleridge published 'France: An Ode' in 1798 to recant his support for the French Republic after it invaded Switzerland.",
+   "topicId": "samuel-taylor-coleridge",
    "periodId": "romantic"
   },
   {
@@ -275,6 +295,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In Wordsworth's 1800 pastoral 'Michael', the ruined shepherd's stone sheepfold at Green-head Ghyll remains forever unfinished.",
+   "topicId": "william-wordsworth",
    "periodId": "romantic"
   },
   {
@@ -288,6 +309,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Wordsworth planned 'The Recluse' as a three-part philosophical poem on Man, Nature, and Society, completing only 'The Prelude' and 'The Excursion'.",
+   "topicId": "william-wordsworth",
    "periodId": "romantic"
   },
   {
@@ -301,6 +323,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Coleridge divides Imagination into primary and secondary, contrasts it with mechanical Fancy, and critiques Wordsworth's theory of rustic diction.",
+   "topicId": "biographia-literaria",
    "periodId": "romantic"
   },
   {
@@ -314,6 +337,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Coleridge's 'Dejection: An Ode' of 1802 laments the loss of his joy and his shaping spirit of Imagination.",
+   "topicId": "dejection-an-ode",
    "periodId": "romantic"
   },
   {
@@ -327,6 +351,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Whig editor Francis Jeffrey attacked the Lake School in 'The Edinburgh Review' and opened his 1814 review of 'The Excursion' with This will never do.",
+   "topicId": "francis-jeffrey",
    "periodId": "romantic"
   },
   {
@@ -340,6 +365,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "John Gibson Lockhart used the signature Z in 'Blackwood's Magazine' in October 1817 to launch the Cockney School attacks.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -353,6 +379,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Lockhart sneered at Keats's apothecary apprenticeship by telling him to go back to the shop, plasters, pills, and ointment boxes.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -366,6 +393,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In the March 1821 Preface to his hexameter poem 'A Vision of Judgement' on George III, Southey coined the term Satanic School.",
+   "topicId": "satanic-school",
    "periodId": "romantic"
   },
   {
@@ -379,6 +407,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "After John Murray feared prosecution, Byron published 'The Vision of Judgment' in October 1822 in the first issue of 'The Liberal'.",
+   "topicId": "lord-byron",
    "periodId": "romantic"
   },
   {
@@ -392,6 +421,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron defended the desperate Luddite weavers against the 1812 Frame Breaking Act and wrote 'An Ode to the Framers of the Frame Bill'.",
+   "topicId": "lord-byron",
    "periodId": "romantic"
   },
   {
@@ -405,6 +435,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron's witty Venetian tale 'Beppo' introduced the ottava rima stanza that became the vehicle for 'Don Juan'.",
+   "topicId": "don-juan",
    "periodId": "romantic"
   },
   {
@@ -418,6 +449,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Byron explored gloomy metaphysical rebellion in his dramatic poems 'Manfred' in 1817 and 'Cain: A Mystery' in 1821.",
+   "topicId": "lord-byron",
    "periodId": "romantic"
   },
   {
@@ -431,6 +463,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "In 'The Masque of Anarchy', Shelley portrays Castlereagh as Murder, Eldon as Fraud, and Sidmouth as Hypocrisy.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -444,6 +477,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Shelley's sonnet 'England in 1819' attacks King George III, the Prince Regent, the Six Acts crisis, and the Peterloo Massacre.",
+   "topicId": "romantic",
    "periodId": "romantic"
   },
   {
@@ -457,6 +491,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Byron quipped in 'Don Juan' that it was strange the mind, that very fiery particle, should let itself be snuffed out by an article.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -470,6 +505,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "In Keats's 'The Eve of St. Agnes', Porphyro enters Madeline's chamber with old Angela's help and elopes with her into the storm.",
+   "topicId": "the-eve-of-st-agnes",
    "periodId": "romantic"
   },
   {
@@ -483,6 +519,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Keats's 1819 ballad 'La Belle Dame sans Merci' depicts a pale knight abandoned on a cold hill's side where no birds sing.",
+   "topicId": "john-keats",
    "periodId": "romantic"
   },
   {
@@ -496,6 +533,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Keats's 'Ode on a Grecian Urn' of 1819 ends with the urn's famous message equating Beauty and Truth.",
+   "topicId": "ode-on-a-grecian-urn",
    "periodId": "romantic"
   },
   {
@@ -509,6 +547,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "In 'Northanger Abbey', Catherine Morland reads 'The Mysteries of Udolpho' and imagines gothic crimes at General Tilney's abbey.",
+   "topicId": "northanger-abbey",
    "periodId": "romantic"
   },
   {
@@ -522,6 +561,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Austen originally drafted 'Sense and Sensibility' in the 1790s under the title 'Elinor and Marianne'.",
+   "topicId": "sense-and-sensibility",
    "periodId": "romantic"
   },
   {
@@ -535,6 +575,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "Scott's 1818 novel 'The Heart of Midlothian' opens with the Edinburgh Porteous Riots and follows Jeanie Deans's journey to London.",
+   "topicId": "waverley",
    "periodId": "romantic"
   },
   {
@@ -548,6 +589,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Byron's physician John Polidori wrote 'The Vampyre' in 1819, introducing the aristocratic vampire Lord Ruthven, after the 1816 Villa Diodati summer.",
+   "topicId": "frankenstein",
    "periodId": "romantic"
   },
   {
@@ -561,6 +603,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Arctic sea captain Robert Walton rescues Victor Frankenstein on the ice and frames the novel in letters to his sister Margaret Saville.",
+   "topicId": "frankenstein",
    "periodId": "romantic"
   },
   {
@@ -574,6 +617,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "Charles Robert Maturin's 'Melmoth the Wanderer' of 1820 employs a Chinese-box frame structure to recount a Faustian curse.",
+   "topicId": "charles-robert-maturin",
    "periodId": "romantic"
   },
   {
@@ -587,6 +631,7 @@
    ],
    "correct_option_id": 2,
    "explanation": "Thomas Love Peacock's 1818 conversation novel 'Nightmare Abbey' satirizes Romantic melancholy through Scythrop, Cypress, and Flosky.",
+   "topicId": "thomas-love-peacock",
    "periodId": "romantic"
   },
   {
@@ -600,6 +645,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "Lamb's 'Dream Children: A Reverie' poignantly imagines the children he might have had with Alice W—n before waking alone.",
+   "topicId": "essays-of-elia",
    "periodId": "romantic"
   },
   {
@@ -613,6 +659,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "William Hazlitt's 'The Spirit of the Age' of 1825 profiles leading Romantic writers including Coleridge, Wordsworth, Byron, and Scott.",
+   "topicId": "william-hazlitt",
    "periodId": "romantic"
   },
   {
@@ -626,6 +673,7 @@
    ],
    "correct_option_id": 1,
    "explanation": "De Quincey wrote 'On the Knocking at the Gate in Macbeth' in 1823 and 'On Murder Considered as One of the Fine Arts' in 1827.",
+   "topicId": "thomas-de-quincey",
    "periodId": "romantic"
   },
   {
@@ -639,6 +687,7 @@
    ],
    "correct_option_id": 3,
    "explanation": "John Clare, the Northamptonshire Peasant Poet, chronicled the destruction of rural common lands by Enclosure Acts.",
+   "topicId": "john-clare",
    "periodId": "romantic"
   },
   {
@@ -652,6 +701,7 @@
    ],
    "correct_option_id": 0,
    "explanation": "The First Reform Act of 1832 abolished rotten boroughs and widened the franchise, but still restricted voting to a minority of men.",
+   "topicId": "romantic",
    "periodId": "romantic"
   }
  ]
