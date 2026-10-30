@@ -189,9 +189,22 @@ works stay under their age, not under the sub-period.
   It never blocks the quiz; guests keep playing with `localStorage` only (which stays).
   `attempts.period_id` keeps the period an attempt was answered under, so re-tagging a
   question later does not change old attempts (migration `20261029180000_attempts_add_period_id.sql`).
+- **Tagging rules (owner's).** Every question gets a `periodId` (one of the 18 child `period`
+  nodes) and a `topicId` (the most specific master node the question clearly targets: writer,
+  work or concept; if none fits, the period node itself). A single-age Daily bank takes its
+  period straight from the bank (rule 11), no per-question judgement. Where a question has to be
+  placed (the Renaissance and Neoclassical banks, MCQ sets): (1) if the question's own text names
+  a period, tag to that period, so the explanation the student reads and the mastery meter never
+  disagree; (2) the conventional textbook placement of a writer or work beats its composition
+  date, because the tag drives a mastery meter that must agree with the student's books;
+  (3) composition date only decides where convention is silent. Settled: Milton, Traherne
+  (taught with Vaughan) -> `commonwealth`; Swift, Defoe -> `augustan`; Clarendon -> `restoration-era`;
+  Richardson, Fielding, Smollett, Sterne and the Graveyard poets -> `age-of-sensibility`.
+  The old MCQ set-local `topic` / `topicRead` / `read` keys stay: they drive the UI.
 - **Build gate:** `npx eleventy` runs `tools/check-topics.js` and fails the build if any
-  question's `topicId` is not in the master reference, or if two questions share an `id`.
-  Keep ids unique and topicIds real, or the build (and publish) stops. (Extends rule 4.)
+  question's `topicId` is not in the master reference, if its `periodId` is not a `kind = period`
+  node, or if two questions share an `id`. Keep ids unique and tags real, or the build (and
+  publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
 - `attempts.topic_id` and `attempts.period_id` are still `null` everywhere until questions are
