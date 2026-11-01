@@ -165,6 +165,15 @@ and never ask the owner for it.**
   someone else's address with a password and later share the account when that person uses Google.
   Turn "Confirm email" ON once SMTP works. A Google email that differs from the account's email makes a
   second account (manual linking is a separate, off-by-default beta).
+- **One domain.** The site lives on `https://akexplained.com`. www is a different origin to the browser (separate
+  login, separate saved progress, and Supabase only lets Google return to the bare domain), so `auth.js` sends
+  anyone on `www.akexplained.com` to the same page on the bare domain. The proper fix is a Cloudflare redirect
+  rule (the site is on Cloudflare Pages, whose `_redirects` cannot match a domain; the owner sets the rule in the
+  Cloudflare dashboard).
+- **Keep `/privacy/` and `/terms/` true.** They state what is collected: with an account, name, email, a
+  hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
+  in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
+  new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
 - Schema: `profiles`, `attempts`, `reading_progress`, `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
   reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.

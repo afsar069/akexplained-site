@@ -13,6 +13,15 @@
 (function () {
   'use strict';
 
+  // www.akexplained.com and akexplained.com are two different sites to a browser: the login and the
+  // saved quiz progress do not carry over, and Google sign-in is only allowed to return to the bare
+  // domain. So anyone who lands on www is sent to the same page on the bare domain. (The proper fix is a
+  // 301 redirect rule at Cloudflare; this is the safety net that works whatever the host does.)
+  if (location.hostname === 'www.akexplained.com') {
+    location.replace('https://akexplained.com' + location.pathname + location.search + location.hash);
+    return;
+  }
+
   var cfg = window.AK_SUPABASE || {};
   var configured =
     cfg.url &&
