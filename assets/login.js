@@ -12,7 +12,7 @@
     var m = (err && err.message ? err.message : String(err || 'Something went wrong')).trim();
     var low = m.toLowerCase();
     if (low.indexOf('invalid login') > -1 || low.indexOf('invalid credentials') > -1) {
-      return 'Wrong email or password. Please try again.';
+      return 'Wrong email or password. Please try again. If you made your account with Google, use the Continue with Google button.';
     }
     if (low.indexOf('password') > -1 && (low.indexOf('6') > -1 || low.indexOf('short') > -1 || low.indexOf('weak') > -1 || low.indexOf('least') > -1)) {
       return 'That password is too weak. Use at least 6 characters.';
@@ -93,14 +93,103 @@
       var client = auth.client;
       var forcePath = /[?&]path=1\b/.test(location.search);
 
+      // Did we just come back from Google? (set just before we leave for Google)
+      var fromGoogle = false;
+      try { fromGoogle = sessionStorage.getItem('ak:oauth') === 'google'; } catch (e) { /* private mode */ }
+      showReturnError();
+
       // Already logged in? Leave /login/ for /account/ — unless ?path=1 asked
-      // explicitly to change the chosen path.
+      // explicitly to change the chosen path, or this is a first Google sign-in.
       auth.session().then(function (session) {
         if (session && session.user) {
           if (forcePath) openPath(session);
+          else if (fromGoogle) finishGoogle(session);
           else location.replace('/account/');
+        } else if (fromGoogle) {
+          try { sessionStorage.removeItem('ak:oauth'); } catch (e) { /* ignore */ }
         }
       });
+
+      // ---- Continue with Google ----
+      // The button stays hidden until Google is switched on in Supabase. The public
+      // settings endpoint says which sign-in providers are on, so nothing breaks
+      // if the owner has not finished the setup yet.
+      var cfg = window.AK_SUPABASE || {};
+      var googleBlocks = document.querySelectorAll('[data-google]');
+      fetch(cfg.url + '/auth/v1/settings', { headers: { apikey: cfg.publishableKey } })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .then(function (st) {
+          if (st && st.external && st.external.google === true) {
+            googleBlocks.forEach(function (b) { b.hidden = false; });
+          }
+        })
+        .catch(function () { /* no Google button; email login still works */ });
+
+      document.querySelectorAll('[data-google-btn]').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          var form = btn.closest('form');
+          var box = form ? form.querySelector('.formerror') : null;
+          clearError(box);
+          btn.disabled = true;
+          function failed() {
+            btn.disabled = false;
+            showError(box, 'Could not start Google sign-in. Please try again, or use your email.');
+          }
+          try { sessionStorage.setItem('ak:oauth', 'google'); } catch (e) { /* private mode */ }
+          client.auth.signInWithOAuth({
+            provider: 'google',
+            options: {
+              redirectTo: location.origin + '/login/',
+              queryParams: { prompt: 'select_account' } // let people on a shared computer pick the right Google account
+            }
+          }).then(function (res) {
+            if (res && res.error) failed();
+            // On success the browser is already on its way to Google.
+          }).catch(failed);
+        });
+      });
+
+      // Back from Google with a logged-in session. A new person gets the same
+      // "Choose your path" screen as a new email signup, and their Google name is
+      // saved to their profile. Someone who already has a path goes to /account/.
+      function finishGoogle(session) {
+        try { sessionStorage.removeItem('ak:oauth'); } catch (e) { /* ignore */ }
+        var u = session.user;
+        var md = u.user_metadata || {};
+        var gname = md.full_name || md.name || '';
+        Promise.all([
+          client.from('profiles').select('display_name').eq('id', u.id).maybeSingle(),
+          client.from('user_exams').select('exam_id').eq('user_id', u.id).limit(1)
+        ]).then(function (r) {
+          var profile = r[0].data;
+          var exams = r[1];
+          var needName = gname && !(profile && profile.display_name);
+          var saved = needName ? saveName(client, u.id, gname).then(function () {
+            auth.cacheName(gname);
+            if (auth.refreshHeader) auth.refreshHeader(session);
+          }) : Promise.resolve();
+          return saved.then(function () {
+            if (!exams.error && (!exams.data || exams.data.length === 0)) openPath(session);
+            else location.replace('/account/');
+          });
+        }).catch(function () { location.replace('/account/'); });
+      }
+
+      // Google (or Supabase) can send the person back with an error in the address.
+      function showReturnError() {
+        var raw = (location.hash || '').replace(/^#/, '') + '&' + (location.search || '').replace(/^\?/, '');
+        var params = {};
+        raw.split('&').forEach(function (kv) {
+          var i = kv.indexOf('=');
+          if (i > 0) { try { params[decodeURIComponent(kv.slice(0, i))] = decodeURIComponent(kv.slice(i + 1).replace(/\+/g, ' ')); } catch (e) { /* skip */ } }
+        });
+        if (!params.error && !params.error_description) return;
+        var box = loginForm.querySelector('.formerror');
+        showError(box, 'Google sign-in did not finish. Please try again, or use your email.' +
+          (params.error_description ? ' (' + params.error_description + ')' : ''));
+        try { sessionStorage.removeItem('ak:oauth'); } catch (e) { /* ignore */ }
+        try { history.replaceState(null, '', location.pathname); } catch (e) { /* ignore */ }
+      }
 
       // ---- signup ----
       signupForm.addEventListener('submit', function (e) {
@@ -150,7 +239,7 @@
 
       // Build the "already registered" message with a link into the login form.
       function showRegisteredError(box, email) {
-        box.textContent = 'This email is already registered. ';
+        box.textContent = 'This email is already registered. If you used Google before, use the Continue with Google button. ';
         var a = document.createElement('a');
         a.href = '#';
         a.textContent = 'Log in instead';

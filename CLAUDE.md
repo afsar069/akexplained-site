@@ -152,6 +152,19 @@ and never ask the owner for it.**
 - Auth glue `assets/auth.js` (header Login/name, session) loads on every page via the
   chrome transform; `/login/` and `/account/` are the auth pages; `assets/login.js`,
   `assets/account.js`. supabase-js is vendored at `assets/supabase-2.118.0.js` (no CDN).
+- **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
+  Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
+  setup is finished. It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL
+  must be in Supabase → URL Configuration → Redirect URLs) and an account chooser. On the way back a
+  first-time person gets the same "Choose your path" screen as a new email signup and their Google name
+  is saved to `profiles`; someone who already has a path goes to `/account/`.
+  **Identity linking** (Supabase auth server, `DetermineAccountLinking`): an OAuth sign-in whose provider
+  email is verified is linked automatically to the one existing user with that email, so the same person
+  keeps one `user_id` and their `attempts` stay together. There is no switch to turn this off. Caveat:
+  while "Confirm email" is OFF, every email signup counts as confirmed, so anyone could pre-register
+  someone else's address with a password and later share the account when that person uses Google.
+  Turn "Confirm email" ON once SMTP works. A Google email that differs from the account's email makes a
+  second account (manual linking is a separate, off-by-default beta).
 - Schema: `profiles`, `attempts`, `reading_progress`, `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
   reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.

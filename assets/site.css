@@ -2823,6 +2823,21 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 
 .authcard .btn{width:100%;justify-content:center;margin-top:4px}
 .authswap{margin:14px 0 0;font-size:.9rem;color:var(--body)}
+/* Continue with Google. Hidden until Google sign-in is switched on in Supabase (login.js checks). */
+.googleblock{margin:0 0 4px}
+.googleblock[hidden]{display:none}
+.googlebtn{
+  display:flex;align-items:center;justify-content:center;gap:10px;width:100%;
+  padding:11px 16px;border-radius:11px;background:#fff;color:#1f1f1f;border:1.5px solid #747775;
+  font-family:var(--sans);font-weight:600;font-size:.95rem;cursor:pointer;
+  transition:background .2s,box-shadow .2s,border-color .2s;
+}
+.googlebtn:hover{background:#f6f8fc;box-shadow:0 1px 3px rgba(60,64,67,.3)}
+.googlebtn:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.googlebtn:disabled{opacity:.6;cursor:default;box-shadow:none}
+.googlelogo{flex:none;display:block}
+.orline{display:flex;align-items:center;gap:10px;margin:14px 0 6px;font-size:.85rem;color:var(--body)}
+.orline::before,.orline::after{content:"";flex:1;height:1px;background:var(--card-line)}
 
 .formerror{
   background:#FCECEC;border:1px solid #E7B4B4;border-left:4px solid var(--accent);
