@@ -154,7 +154,7 @@ and never ask the owner for it.**
   `assets/account.js`. supabase-js is vendored at `assets/supabase-2.118.0.js` (no CDN).
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
-  setup is finished. It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL
+  setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL
   must be in Supabase → URL Configuration → Redirect URLs) and an account chooser. On the way back a
   first-time person gets the same "Choose your path" screen as a new email signup and their Google name
   is saved to `profiles`; someone who already has a path goes to `/account/`.

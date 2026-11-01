@@ -116,10 +116,13 @@
       // if the owner has not finished the setup yet.
       var cfg = window.AK_SUPABASE || {};
       var googleBlocks = document.querySelectorAll('[data-google]');
+      // Test aid: /login/?google=1 shows the button even if the check below fails.
+      var forceGoogle = /[?&]google=1\b/.test(location.search);
+      if (forceGoogle) googleBlocks.forEach(function (b) { b.hidden = false; });
       fetch(cfg.url + '/auth/v1/settings', { headers: { apikey: cfg.publishableKey } })
         .then(function (r) { return r.ok ? r.json() : null; })
         .then(function (st) {
-          if (st && st.external && st.external.google === true) {
+          if ((st && st.external && st.external.google === true) || forceGoogle) {
             googleBlocks.forEach(function (b) { b.hidden = false; });
           }
         })
