@@ -25,7 +25,36 @@ _Last updated: 2026-11-03._
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
 ## Waiting on a feature branch
-- Nothing. (`claude/zen-hamilton-41vw9q` carried only the privacy change and is merged to `main`.)
+- **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see
+  it first). Read-only; no migration, no new table or column. Files: `dashboard/index.html`,
+  `assets/dashboard.js`, a "Dashboard" block at the end of the account section of `assets/site.css`, a
+  logged-in-only "My Dashboard" menu item (`data-auth-only`, in `_includes/base.njk`, `index.html`, `404.html`,
+  shown by `auth.js`), and a "Your progress" card on `/account/`. Shows, from the user's own `attempts` only:
+  totals (labelled "Questions answered (including repeats)": every answer counts, a repeat counts again),
+  answers today (visitor's calendar day) and in the last 7 days (rolling), by period and by topic (names
+  from `topics`, never raw ids), and the paths picked (`user_exams`). Logged out: a "Sign in to see your
+  progress" panel (login has no "return to" setting, so it lands on `/account/`). New user: an empty state
+  with links into the quizzes. Sections are entries in a list in `dashboard.js` (`addSection({ id, order,
+  title, needs, render })`), so a new section is an addition, not a rewrite.
+  **Deliberately NOT shown** (the computation does not exist; `exam_topics` has 0 rows): mastery or level
+  ladders, decay, a suggested next step, knowledge or exam-readiness meters, exam-wise progress. Do not
+  approximate them.
+  Tested in a browser with Supabase mocked (44 checks: totals, today / 7-day counts, names, empty, logged
+  out, errors, paging with 2,350 rows and with a 500-row server cap, the 10,000-row safety cap, mobile
+  width). Not yet seen against the live database from the browser; the owner reviews it before any merge.
+
+## Known v1 limitation: the dashboard loads every attempt row into the browser
+`/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
+period_id, topic_id`; newest first, 1,000 per request, at most 10,000 rows) and works out totals and
+breakdowns in the browser. That is fine at today's volume (100 rows, 1 user) but **will not scale**: a regular
+student will have thousands of rows and pull all of them on every visit, on mobile. The owner accepted this
+for v1 so as to avoid a schema change. **The fix, when the mastery computation (backlog item E) is built:**
+a grouped database view or RPC (`security invoker`, so RLS still limits it to the caller's own rows) that
+returns the totals, the today / 7-day counts and one row per period and topic with count and correct, so the
+browser receives a few dozen rows and not thousands. Until then, past the 10,000-row cap the page says so
+("These figures use your latest 10,000 answers"). When that view is added: write the migration, the owner runs
+it (rule 9), run the security advisors (rule 14), then replace `loadAttempts`/`computeStats` in
+`assets/dashboard.js`; the sections themselves need no change.
 
 ## Owner to do in the dashboards (not code)
 1. ~~Leaked-password protection~~ — **skipped on purpose** (owner, 2026-11-03: it needs the Supabase Pro plan
@@ -48,7 +77,8 @@ _Last updated: 2026-11-03._
 
 ## Backlog (labels the owner uses)
 - **C** — migrate a guest's `localStorage` attempts into the DB on login.
-- **I** — dashboard v1 (show a user their attempts).
+- **I** — dashboard v1 (show a user their attempts). **Built on the feature branch, awaiting the owner's
+  review**; the server-side grouping that replaces its load-everything query is in "Known v1 limitation" above.
 - **E** — mastery meter (roll attempts up the topic tree).
 - **J** — fix the pre-existing `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404s.
 - **D** — NET taxonomy mapping (owner supplies the data).

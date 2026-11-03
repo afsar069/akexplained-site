@@ -152,6 +152,11 @@ and never ask the owner for it.**
 - Auth glue `assets/auth.js` (header Login/name, session) loads on every page via the
   chrome transform; `/login/` and `/account/` are the auth pages; `assets/login.js`,
   `assets/account.js`. supabase-js is vendored at `assets/supabase-2.118.0.js` (no CDN).
+  `/dashboard/` (`assets/dashboard.js`) is the read-only progress page: `/account/` stays the profile page and
+  nothing profile-like moves there. It shows only what `attempts` supports (totals, recent activity, by period
+  and topic, the paths picked). **Never add mastery, levels, decay, a "next step" or readiness meters until the
+  computation exists** (owner's rule). New sections are added with `addSection()` in that file. Counts say
+  "including repeats" (a repeat answer counts again). Known limit and its fix: `docs/accounts-status.md`.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
   setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL

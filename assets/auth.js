@@ -76,6 +76,9 @@
         a.setAttribute('data-state', 'out');
       }
     }
+    // Menu items only for logged-in people (for example "My Dashboard"): shown or hidden with the login state.
+    var only = document.querySelectorAll('[data-auth-only]');
+    for (var j = 0; j < only.length; j++) only[j].hidden = !loggedIn;
   }
 
   // Paint from the cache first (no flicker), then correct from the network.
