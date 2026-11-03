@@ -35,9 +35,11 @@ itself. `display_name` and `avatar_id` are filled in later, by the user.
 > that turns RLS on for any new `public` table) are `SECURITY DEFINER`. Postgres
 > grants `EXECUTE` to everyone by default, which let `anon`/`authenticated` reach
 > them at `/rest/v1/rpc/…`; `20261103120000_revoke_execute_on_trigger_functions.sql`
-> revokes that. The triggers still fire. **Note:** `rls_auto_enable()` lives only
-> in the database — no migration in this repo defines it. If it should be
-> reproducible from the repo, capture it in a migration.
+> revokes that. The triggers still fire. `rls_auto_enable()` and its event trigger
+> `ensure_rls` (which auto-enables RLS on every new `public` table) were captured
+> from the live database into `20261103130000_capture_rls_auto_enable.sql`, so a
+> rebuild from the repo keeps the safety net; that file only records what is already
+> live, so it need not be run against the existing project.
 
 > **Note:** an earlier migration gave `profiles` a `primary_track` column. The
 > second migration (below) drops it — which exam a user is preparing for now
