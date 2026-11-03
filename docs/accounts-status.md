@@ -17,28 +17,22 @@ _Last updated: 2026-11-03._
 - **Google sign-in is live** — enabled in Supabase (OAuth client + consent screen in production). The
   button shows on `/login/` on its own.
 - **Privacy/Terms are accurate** (accounts, Google, Supabase, Cloudflare; deletion on request).
-  On the branch `claude/zen-hamilton-41vw9q` (not yet on `main`): `/privacy/` now also names **Resend** as the
-  email provider for the sign-up confirmation and password-reset emails ("Five outside services"; "no
-  newsletter" line untouched; "Last updated" 3 November 2026). Reaches the live site when merged to `main`.
+  `/privacy/` also names **Resend** as the email provider for the sign-up confirmation and password-reset
+  emails ("Five outside services"; "no newsletter" line untouched; "Last updated" 3 November 2026).
+- **Account emails are live** (owner, 2026-11-03): custom SMTP via **Resend** is on, **Confirm email is ON**,
+  and the owner tested the full reset flow end to end (reset mail arrives, a new password can be set).
+  The reset / confirm code (`60cac7e`, `assets/login.js`, `auth.js`) is on `main`.
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
-## On the feature branch `claude/clever-cori-3v06lr`, NOT yet on `main`
-- **`60cac7e` — password reset + email-confirmation flow** (`assets/login.js`, `auth.js`, `login/index.html`,
-  `assets/site.css`). Gated: the reset form stays hidden until Confirm email is ON (SMTP live), so it is
-  safe to merge any time. **Must be on `main` for password reset to work** once SMTP is on.
-- Everything earlier on this branch is already merged to `main` (branch is 1 commit ahead).
+## Waiting on a feature branch
+- Nothing. (`claude/zen-hamilton-41vw9q` carried only the privacy change and is merged to `main`.)
 
 ## Owner to do in the dashboards (not code)
 1. **Enable leaked-password protection** — Supabase → Auth → Password security. (Only remaining security WARN.)
-2. **SMTP + Confirm email**, in this order (see `CLAUDE.md` rule 13 and the chat for click-by-click):
-   configure custom SMTP with a chosen provider and `noreply@akexplained.com` → send a test via
-   `/login/?reset=1` → **merge `60cac7e`** → turn **Confirm email ON** → (optional) raise the 30/hour
-   rate limit. Do NOT turn Confirm email on before SMTP works, or real users cannot confirm/reset.
+2. ~~SMTP + Confirm email~~ — done. Still optional: raise the 30/hour email rate limit if sign-ups need it.
 3. **Cloudflare www→apex 301** redirect rule (the JS net covers it meanwhile).
 
 ## Decisions owed by the owner
-- ~~SMTP provider~~ — decided: **Resend** (owner, 2026-11-03: Resend SMTP is live and Confirm email is ON).
-  Still to confirm: that `60cac7e` (password-reset flow) is on `main`, since reset needs it.
 - **Node-gaps batch 3** — the 21 quoted titles that recur in ≥2 questions, listed in
   `tools/tagging/reports/node-gaps.md`, awaiting a one-pass approval. The ~122 one-off quoted titles are
   deferred to a later "titles pass".
