@@ -17,6 +17,9 @@ _Last updated: 2026-11-03._
 - **Google sign-in is live** — enabled in Supabase (OAuth client + consent screen in production). The
   button shows on `/login/` on its own.
 - **Privacy/Terms are accurate** (accounts, Google, Supabase, Cloudflare; deletion on request).
+  On the branch `claude/zen-hamilton-41vw9q` (not yet on `main`): `/privacy/` now also names **Resend** as the
+  email provider for the sign-up confirmation and password-reset emails ("Five outside services"; "no
+  newsletter" line untouched; "Last updated" 3 November 2026). Reaches the live site when merged to `main`.
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
 ## On the feature branch `claude/clever-cori-3v06lr`, NOT yet on `main`
@@ -34,8 +37,8 @@ _Last updated: 2026-11-03._
 3. **Cloudflare www→apex 301** redirect rule (the JS net covers it meanwhile).
 
 ## Decisions owed by the owner
-- **SMTP provider** (Resend / Brevo / AWS SES / Postmark / SendGrid / ZeptoMail). Pricing pages are
-  blocked from the session; allow the hosts in Network access for exact free-tier numbers, or pick one.
+- ~~SMTP provider~~ — decided: **Resend** (owner, 2026-11-03: Resend SMTP is live and Confirm email is ON).
+  Still to confirm: that `60cac7e` (password-reset flow) is on `main`, since reset needs it.
 - **Node-gaps batch 3** — the 21 quoted titles that recur in ≥2 questions, listed in
   `tools/tagging/reports/node-gaps.md`, awaiting a one-pass approval. The ~122 one-off quoted titles are
   deferred to a later "titles pass".
