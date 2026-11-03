@@ -30,6 +30,15 @@ is added to `auth.users` and inserts a matching `profiles` row (with `id` set
 and the rest left at their defaults). The app never has to create this row
 itself. `display_name` and `avatar_id` are filled in later, by the user.
 
+> **Trigger functions are not callable from the API.** `handle_new_user()` (the
+> trigger above) and `rls_auto_enable()` (an event trigger in the live database
+> that turns RLS on for any new `public` table) are `SECURITY DEFINER`. Postgres
+> grants `EXECUTE` to everyone by default, which let `anon`/`authenticated` reach
+> them at `/rest/v1/rpc/…`; `20261103120000_revoke_execute_on_trigger_functions.sql`
+> revokes that. The triggers still fire. **Note:** `rls_auto_enable()` lives only
+> in the database — no migration in this repo defines it. If it should be
+> reproducible from the repo, capture it in a migration.
+
 > **Note:** an earlier migration gave `profiles` a `primary_track` column. The
 > second migration (below) drops it — which exam a user is preparing for now
 > lives in the `user_exams` table, where a user can pick several exams.

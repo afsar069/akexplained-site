@@ -97,6 +97,11 @@ create trigger on_auth_user_created
   after insert on auth.users
   for each row execute function public.handle_new_user();
 
+-- handle_new_user is a trigger function, so no API role should be able to call it over REST
+-- (/rest/v1/rpc/handle_new_user). EXECUTE is granted to PUBLIC by default; take it away. The trigger
+-- still fires regardless, and the function stays SECURITY DEFINER. (Supabase advisors 0028/0029.)
+revoke execute on function public.handle_new_user() from public, anon, authenticated;
+
 -- =====================================================================
 -- exams  (reference data: exams, degree tracks, the journey track)
 -- =====================================================================
