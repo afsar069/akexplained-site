@@ -241,6 +241,53 @@ strong{color:var(--ink)}
   .hero-old-english h1{max-width:none}
 }
 
+/* ---------- Article hero artwork (Middle English page) ----------
+   Same pattern as the Old English head: the age painting sits behind
+   the page head on a wide screen with a cream scrim on the left so the
+   heading reads on plain paper, and becomes a band above the heading on
+   a phone. This painting already has blank parchment down its left side,
+   so the fade can start a little further out. Only pages that set
+   hero_image + hero_class in their front matter get this. */
+.pagehead.hero-middle-english{
+  min-height:clamp(320px,32vw,430px);
+  padding:44px 0 40px;
+}
+.hero-middle-english .pagehead-art{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;object-fit:cover;object-position:88% 48%;
+  pointer-events:none;user-select:none;
+  /* Halka fade: painting ka baaya kinara cream pagehead me ghol deta hai. */
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 26%);
+  mask-image:linear-gradient(to right,transparent 0,#000 26%);
+}
+.hero-middle-english::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(250,245,233,.97) 0%,rgba(250,245,233,.93) 36%,
+    rgba(250,245,233,.55) 52%,rgba(250,245,233,0) 68%);
+}
+.hero-middle-english > .wrap{position:relative;z-index:1}
+.hero-middle-english .motif{display:none}
+.hero-middle-english h1{max-width:520px}
+.hero-middle-english p.lede{max-width:56ch}
+@media (max-width:760px){
+  .pagehead.hero-middle-english{display:block;min-height:0;padding:0}
+  .hero-middle-english .pagehead-art{
+    position:relative;inset:auto;
+    width:100%;height:clamp(170px,46vw,230px);
+    object-position:84% 42%;
+    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+  }
+  .hero-middle-english::after{
+    bottom:auto;height:clamp(170px,46vw,230px);
+    background:linear-gradient(180deg,
+      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
+  }
+  .hero-middle-english > .wrap{padding:18px 22px 28px}
+  .hero-middle-english h1{max-width:none}
+}
+
 .crumb{font-size:.82rem;color:var(--body);padding:12px 0 0}
 .crumb a{color:var(--teal)}
 .crumb span{opacity:.6;padding:0 6px}
@@ -647,7 +694,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
    PRINT — students notes print karte hain. Sirf text chhape.
    ========================================================== */
 @media print{
-  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.pagehead-art,.hero-old-english::after,.tocmobile,.quizcta,.pagetools{display:none!important}
+  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.pagehead-art,.hero-old-english::after,.hero-middle-english::after,.tocmobile,.quizcta,.pagetools{display:none!important}
   .article .abox{break-inside:avoid;background:#fff}
   @page{size:A4;margin:14mm 14mm 18mm;
     @bottom-center{content:"akexplained.com  \00B7  Page " counter(page) " of " counter(pages);font-family:'Source Sans 3',Arial,sans-serif;font-size:8pt;color:#666}}
