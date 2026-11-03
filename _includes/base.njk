@@ -106,7 +106,8 @@
 {% endif %}
 
 {% if pagehead != false %}
-<section class="pagehead">
+<section class="pagehead{% if hero_class %} {{ hero_class }}{% endif %}">
+  {% if hero_image %}<img class="pagehead-art" src="{{ hero_image }}" alt="" width="2086" height="754" fetchpriority="high" decoding="async" aria-hidden="true">{% endif %}
   <img class="motif" src="/assets/reader-motif.webp" alt="" width="440" height="525" aria-hidden="true">
   <span class="mark" aria-hidden="true">{{ mark or title | first | upper }}</span>
   <div class="wrap">
