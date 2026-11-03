@@ -169,7 +169,8 @@ and never ask the owner for it.**
   login, separate saved progress, and Supabase only lets Google return to the bare domain), so `auth.js` sends
   anyone on `www.akexplained.com` to the same page on the bare domain. The proper fix is a Cloudflare redirect
   rule (the site is on Cloudflare Pages, whose `_redirects` cannot match a domain; the owner sets the rule in the
-  Cloudflare dashboard).
+  Cloudflare dashboard). **That rule is live since 2026-11-03** (a 301 from `https://www.*` to `https://${1}`);
+  the `auth.js` net stays as a backup. Details in `docs/accounts-status.md`.
 - **Keep `/privacy/` and `/terms/` true.** They state what is collected: with an account, name, email, a
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a

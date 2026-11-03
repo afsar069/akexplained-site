@@ -31,13 +31,15 @@ _Last updated: 2026-11-03._
 1. ~~Leaked-password protection~~ — **skipped on purpose** (owner, 2026-11-03: it needs the Supabase Pro plan
    and this is a small site). The Supabase advisor WARN for it stays; do not raise it again unless the plan changes.
 2. ~~SMTP + Confirm email~~ — done. The 30/hour email rate limit **stays** (owner, 2026-11-03: plenty for now).
-3. **Cloudflare www→apex 301** redirect rule — not urgent (the JS net in `auth.js` covers it meanwhile). Owner
-   sets it in the Cloudflare dashboard; this session cannot (no Cloudflare tool edits redirect rules, and the
-   sandbox cannot reach akexplained.com). Plan, from Cloudflare's own docs: (a) the `www` DNS record must exist
-   and be **Proxied** (orange cloud), or the rule never fires; (b) Rules → Overview → Templates → "Redirect
-   from WWW to Root", or by hand: Wildcard pattern `https://www.akexplained.com/*` → `https://akexplained.com/${1}`,
-   status 301, Preserve query string ON; (c) test `www` with a path and a `?query`, and check login still works.
-   Once the rule is live, the `auth.js` net can stay as a backup.
+3. ~~Cloudflare www→apex 301~~ — **done** (owner, 2026-11-03). Rule "Redirect from WWW to root [Template]"
+   (Cloudflare Rules → Redirect Rules → Single Redirects, enabled, 1 of 10 used): Wildcard pattern
+   `https://www.*` → `https://${1}`, status 301, Preserve query string left OFF (the `*` already carries
+   `?query`). DNS: `www` is a CNAME to `akexplained.pages.dev`, Proxied. On deploy Cloudflare warned "This
+   rule may not apply to your traffic"; the owner chose "Ignore and deploy rule anyway" (the `www` record was
+   already proxied; a second record would have clashed). **Tested** in the browser Network panel with a private
+   window: `https://www.akexplained.com/about/?x=1` gave a real `301` first, then `200` on the bare domain, and
+   `?x=1` survived. The `auth.js` JS net stays as a backup. This session cannot edit Cloudflare rules (no tool
+   does) and cannot reach akexplained.com, so any later change to the rule is the owner's, in the dashboard.
 
 ## Decisions owed by the owner
 - **Node-gaps batch 3** — the 21 quoted titles that recur in ≥2 questions, listed in
