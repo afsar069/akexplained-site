@@ -28,9 +28,16 @@ _Last updated: 2026-11-03._
 - Nothing. (`claude/zen-hamilton-41vw9q` carried only the privacy change and is merged to `main`.)
 
 ## Owner to do in the dashboards (not code)
-1. **Enable leaked-password protection** — Supabase → Auth → Password security. (Only remaining security WARN.)
-2. ~~SMTP + Confirm email~~ — done. Still optional: raise the 30/hour email rate limit if sign-ups need it.
-3. **Cloudflare www→apex 301** redirect rule (the JS net covers it meanwhile).
+1. ~~Leaked-password protection~~ — **skipped on purpose** (owner, 2026-11-03: it needs the Supabase Pro plan
+   and this is a small site). The Supabase advisor WARN for it stays; do not raise it again unless the plan changes.
+2. ~~SMTP + Confirm email~~ — done. The 30/hour email rate limit **stays** (owner, 2026-11-03: plenty for now).
+3. **Cloudflare www→apex 301** redirect rule — not urgent (the JS net in `auth.js` covers it meanwhile). Owner
+   sets it in the Cloudflare dashboard; this session cannot (no Cloudflare tool edits redirect rules, and the
+   sandbox cannot reach akexplained.com). Plan, from Cloudflare's own docs: (a) the `www` DNS record must exist
+   and be **Proxied** (orange cloud), or the rule never fires; (b) Rules → Overview → Templates → "Redirect
+   from WWW to Root", or by hand: Wildcard pattern `https://www.akexplained.com/*` → `https://akexplained.com/${1}`,
+   status 301, Preserve query string ON; (c) test `www` with a path and a `?query`, and check login still works.
+   Once the rule is live, the `auth.js` net can stay as a backup.
 
 ## Decisions owed by the owner
 - **Node-gaps batch 3** — the 21 quoted titles that recur in ≥2 questions, listed in
