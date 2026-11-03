@@ -966,6 +966,14 @@ summary.ptbtn::-webkit-details-marker{display:none}
   border:1px solid #B4C0CD;padding:13px 24px;border-radius:11px;white-space:nowrap;
 }
 
+/* Topic pages aur cross-age builder abhi bane nahi hain (CLAUDE.md rule 13).
+   Cards wahin rehte hain, par link nahi — isliye koi 404 nahi. */
+.mcq-topic.is-soon:hover{border-color:var(--mcq-line)}
+.mcq-build.is-soon:hover{border-color:#B4C0CD;border-style:dashed}
+.mcq-topic .soon-tag{font-size:11.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#8A97A6;white-space:nowrap}
+.mcq-build .go.soon-tag{color:#8A97A6;border-style:dashed;font-size:13px}
+.sechead .more.more-soon{color:#8A97A6;font-size:.78rem}
+
 /* ---------- also in the practice zone ---------- */
 .mcq-othergrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .mcq-other{
@@ -990,6 +998,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-othergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
+  .sechead .more.more-soon{display:none}
   .mcq-modes{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
   .mcq-modes a,.mcq-modes span{flex:none}
   .mcq-exams{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
