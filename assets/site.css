@@ -2823,6 +2823,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 
 .authcard .btn{width:100%;justify-content:center;margin-top:4px}
 .authswap{margin:14px 0 0;font-size:.9rem;color:var(--body)}
+.resetblock{margin:10px 0 0}
+.resetblock .field{margin-top:8px}
+.resetblock .btn{width:100%;justify-content:center;margin-top:4px}
 /* Continue with Google. Hidden until Google sign-in is switched on in Supabase (login.js checks). */
 .googleblock{margin:0 0 4px}
 .googleblock[hidden]{display:none}

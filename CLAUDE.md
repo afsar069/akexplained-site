@@ -261,7 +261,12 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   new sets arrive tagged. Nodes still missing from the master are collected in
   `tools/tagging/reports/node-gaps.md` (next migration batch; the owner decides).
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
-- Password reset needs an SMTP provider in Supabase first (none yet); the "Forgot
-  password?" link currently shows a contact-us note instead of a reset email.
+- Password reset and email-confirmation landings are built in `assets/login.js` (implicit flow:
+  `auth.js` latches the `PASSWORD_RECOVERY` event and reads the link `type` from the URL). "Forgot
+  password?" shows the real reset form only once Confirm email is ON in Supabase
+  (`/auth/v1/settings` → `mailer_autoconfirm = false`, i.e. custom SMTP is live) or with `?reset=1`;
+  until then it shows the contact-us note. **Turn Confirm email ON only after custom SMTP works**, or
+  real users cannot confirm or reset. The reset redirect lands on `/login/` (must be in Supabase →
+  URL Configuration → Redirect URLs; `https://akexplained.com/**` already covers it).
 - Pre-existing MCQ hub links `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404 — unrelated
   to accounts, to be fixed separately.

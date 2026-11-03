@@ -71,13 +71,6 @@
       a.addEventListener('click', function (e) { e.preventDefault(); switchTo(a.getAttribute('data-view')); });
     });
 
-    // Forgot password: no SMTP yet, so be honest instead of failing silently.
-    var forgotLink = document.getElementById('forgotLink');
-    var forgotNote = document.getElementById('forgotNote');
-    if (forgotLink && forgotNote) {
-      forgotLink.addEventListener('click', function (e) { e.preventDefault(); forgotNote.hidden = false; });
-    }
-
     waitForAuth(function (auth) {
       if (!auth || !auth.configured) {
         split.hidden = true;
@@ -92,18 +85,28 @@
     function wire(auth) {
       var client = auth.client;
       var forcePath = /[?&]path=1\b/.test(location.search);
+      var forceReset = /[?&]reset=1\b/.test(location.search);   // test aid, like ?google=1
+      var resetReady = forceReset;                               // the settings fetch may turn this on
 
       // Did we just come back from Google? (set just before we leave for Google)
       var fromGoogle = false;
       try { fromGoogle = sessionStorage.getItem('ak:oauth') === 'google'; } catch (e) { /* private mode */ }
       showReturnError();
 
-      // Already logged in? Leave /login/ for /account/ — unless ?path=1 asked
-      // explicitly to change the chosen path, or this is a first Google sign-in.
+      // Landing from an email link? 'recovery' = password reset, 'signup' = email confirmation.
+      var isRecovery = auth.urlType === 'recovery';
+      var isConfirm  = auth.urlType === 'signup';
+      if (isRecovery) openNewPassword();               // show the form at once; the session arrives via the hash
+      auth.onRecovery(function () { openNewPassword(); });  // backup, in case the event fires after we subscribe
+
+      // Already logged in? Leave /login/ for /account/ — unless ?path=1 asked explicitly to change the
+      // chosen path, a first Google sign-in, a brand-new email confirmation, or a password reset.
       auth.session().then(function (session) {
+        if (isRecovery) return;                        // never bounce a reset link away to /account/
         if (session && session.user) {
           if (forcePath) openPath(session);
           else if (fromGoogle) finishGoogle(session);
+          else if (isConfirm) finishConfirm(session);
           else location.replace('/account/');
         } else if (fromGoogle) {
           try { sessionStorage.removeItem('ak:oauth'); } catch (e) { /* ignore */ }
@@ -125,6 +128,9 @@
           if ((st && st.external && st.external.google === true) || forceGoogle) {
             googleBlocks.forEach(function (b) { b.hidden = false; });
           }
+          // Confirm-email ON (mailer_autoconfirm === false) means custom SMTP is live, so the reset
+          // email will actually be delivered. Only then does "Forgot password?" offer the real form.
+          if (st && st.mailer_autoconfirm === false) resetReady = true;
         })
         .catch(function () { /* no Google button; email login still works */ });
 
@@ -194,6 +200,86 @@
         try { history.replaceState(null, '', location.pathname); } catch (e) { /* ignore */ }
       }
 
+      // ---- forgot password: request a reset email ----
+      // "Forgot password?" shows the real form once email is live (resetReady); until then it shows the
+      // honest contact note. The success message is the same whether or not the email exists.
+      var forgotLink = document.getElementById('forgotLink');
+      var forgotNote = document.getElementById('forgotNote');
+      var resetBlock = document.getElementById('resetBlock');
+      if (forgotLink) forgotLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (resetReady && resetBlock) {
+          resetBlock.hidden = false;
+          var re = document.getElementById('resetEmail');
+          if (re) { re.value = (loginForm.email.value || '').trim(); try { re.focus({ preventScroll: true }); } catch (x) { re.focus(); } }
+        } else if (forgotNote) {
+          forgotNote.hidden = false;
+        }
+      });
+      var resetSend = document.getElementById('resetSend');
+      if (resetSend) resetSend.addEventListener('click', function () {
+        var done = document.getElementById('resetDone');
+        var field = document.getElementById('resetEmail');
+        var email = (field.value || '').trim();
+        if (!email) { try { field.focus({ preventScroll: true }); } catch (x) { field.focus(); } return; }
+        resetSend.disabled = true; resetSend.textContent = 'Sending…';
+        function neutral() { if (done) done.hidden = false; field.disabled = true; resetSend.hidden = true; }
+        client.auth.resetPasswordForEmail(email, { redirectTo: location.origin + '/login/' })
+          .then(neutral, neutral);   // stay neutral either way: never reveal whether an account exists
+      });
+
+      // ---- set a new password (arrived from a reset email) ----
+      var newPassShown = false;
+      function openNewPassword() {
+        if (newPassShown) return; newPassShown = true;
+        split.hidden = true;
+        if (pathScreen) pathScreen.hidden = true;
+        notice.hidden = true;
+        var screen = document.getElementById('newPassScreen');
+        if (screen) screen.hidden = false;
+        var inp = document.querySelector('#newPassForm input[name=password]');
+        if (inp) { try { inp.focus({ preventScroll: true }); } catch (x) { inp.focus(); } }
+      }
+      var npForm = document.getElementById('newPassForm');
+      if (npForm) npForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var box = npForm.querySelector('.formerror'); clearError(box);
+        var pw = npForm.password.value;
+        if (pw.length < 6) { showError(box, 'That password is too weak. Use at least 6 characters.'); return; }
+        var submit = npForm.querySelector('button[type=submit]');
+        submit.disabled = true; submit.textContent = 'Saving…';
+        client.auth.updateUser({ password: pw }).then(function (res) {
+          submit.disabled = false; submit.textContent = 'Set new password';
+          if (res.error) { showError(box, friendly(res.error)); return; }
+          if (auth.refreshHeader) auth.session().then(function (s) { auth.refreshHeader(s); });
+          location.replace('/account/');
+        }).catch(function (err) {
+          submit.disabled = false; submit.textContent = 'Set new password';
+          showError(box, friendly(err));
+        });
+      });
+
+      // A brand-new user who just confirmed their email: save the name they gave at signup (it is in
+      // user_metadata, because there was no session to save it at signup time) and show the path chooser.
+      function finishConfirm(session) {
+        var u = session.user, md = u.user_metadata || {};
+        var nm = md.display_name || md.name || '';
+        Promise.all([
+          client.from('profiles').select('display_name').eq('id', u.id).maybeSingle(),
+          client.from('user_exams').select('exam_id').eq('user_id', u.id).limit(1)
+        ]).then(function (r) {
+          var profile = r[0].data, exams = r[1];
+          var needName = nm && !(profile && profile.display_name);
+          var saved = needName ? saveName(client, u.id, nm).then(function () {
+            auth.cacheName(nm); if (auth.refreshHeader) auth.refreshHeader(session);
+          }) : Promise.resolve();
+          return saved.then(function () {
+            if (!exams.error && (!exams.data || exams.data.length === 0)) openPath(session);
+            else location.replace('/account/');
+          });
+        }).catch(function () { location.replace('/account/'); });
+      }
+
       // ---- signup ----
       signupForm.addEventListener('submit', function (e) {
         e.preventDefault();
@@ -232,7 +318,7 @@
             split.querySelector('.authforms').hidden = true;
             document.querySelector('.authbenefits').hidden = true;
             notice.hidden = false;
-            notice.textContent = 'Account created. Please check your email to confirm it, then come back and log in.';
+            notice.textContent = 'Account created. Open the confirmation link we just emailed you — it brings you back here and signs you in.';
           }
         }).catch(function (err) {
           submit.disabled = false; submit.textContent = 'Create account';

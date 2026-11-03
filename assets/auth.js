@@ -29,6 +29,16 @@
     cfg.url.indexOf('__') !== 0 &&
     cfg.publishableKey.indexOf('__') !== 0;
 
+  // A password-reset or email-confirm link lands back on the site with its tokens in the URL
+  // (implicit flow). Read the link TYPE synchronously now, before supabase-js consumes and clears
+  // the hash, so /login/ knows to show the "set a new password" screen instead of bouncing away.
+  var urlType = '';
+  try {
+    var _frag = (location.hash || '').replace(/^#/, '') + '&' + (location.search || '').replace(/^\?/, '');
+    var _m = /(?:^|&)type=([a-z_]+)/.exec(_frag);
+    urlType = _m ? _m[1] : '';
+  } catch (e) { /* ignore */ }
+
   // Remember the last known name so the header shows it instantly on the next
   // page, before the network answers. Per-browser convenience only.
   function cacheName(name) {
@@ -107,11 +117,21 @@
     }
   }
 
+  // supabase-js fires PASSWORD_RECOVERY once it has processed a reset link. Latch it so /login/ can
+  // react whether it subscribes before or after the event fires.
+  var recoveryFired = false, recoverySession = null, recoveryCbs = [];
+  function onRecovery(cb) {
+    if (recoveryFired) { try { cb(recoverySession); } catch (e) { /* ignore */ } }
+    else recoveryCbs.push(cb);
+  }
+
   // Expose a tiny API for the login/account pages.
   window.akAuth = {
     ready: true,
     configured: true,
     client: client,
+    urlType: urlType,
+    onRecovery: onRecovery,
     nameFrom: nameFrom,
     cacheName: cacheName,
     refreshHeader: refresh,
@@ -119,5 +139,12 @@
   };
 
   client.auth.getSession().then(function (r) { refresh(r.data.session); });
-  client.auth.onAuthStateChange(function (_event, session) { refresh(session); });
+  client.auth.onAuthStateChange(function (event, session) {
+    if (event === 'PASSWORD_RECOVERY') {
+      recoveryFired = true; recoverySession = session;
+      var cbs = recoveryCbs; recoveryCbs = [];
+      cbs.forEach(function (cb) { try { cb(session); } catch (e) { /* ignore */ } });
+    }
+    refresh(session);
+  });
 })();

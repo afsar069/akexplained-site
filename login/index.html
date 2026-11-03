@@ -85,6 +85,14 @@
         <button class="btn" type="submit">Sign in</button>
         <p class="authswap"><a href="#" id="forgotLink">Forgot password?</a></p>
         <p class="forgotnote small" id="forgotNote" hidden>Password reset by email is not available yet. Please <a href="/contact/">contact us</a> and we will help you back into your account.</p>
+        <div class="resetblock" id="resetBlock" hidden>
+          <label class="field">
+            <span>Your account email</span>
+            <input id="resetEmail" type="email" autocomplete="email">
+          </label>
+          <button class="btn alt" type="button" id="resetSend">Send a reset link</button>
+          <p class="forgotnote small" id="resetDone" hidden>If that email has an account, a reset link is on its way. Open it on this device to set a new password.</p>
+        </div>
         <p class="authswap">New here? <a href="#" data-view="signup">Create an account</a></p>
       </form>
     </div>
@@ -100,6 +108,21 @@
       <p class="small">Nothing on the site is locked. An account just remembers your work.</p>
     </aside>
   </div>
+
+  <!-- Set a new password, shown when arriving from a reset email -->
+  <section class="pathscreen" id="newPassScreen" hidden aria-label="Set a new password">
+    <h2>Set a new password</h2>
+    <p>Choose a new password for your account. You will be signed in straight away.</p>
+    <form id="newPassForm" class="authcard" novalidate>
+      <div class="formerror" role="alert" hidden></div>
+      <label class="field">
+        <span>New password</span>
+        <input name="password" type="password" autocomplete="new-password" required minlength="6">
+        <small class="hint">At least 6 characters.</small>
+      </label>
+      <button class="btn" type="submit">Set new password</button>
+    </form>
+  </section>
 
   <!-- One-time "choose your path" screen, shown after signup -->
   <section class="pathscreen" id="pathScreen" hidden aria-label="Choose your path">
