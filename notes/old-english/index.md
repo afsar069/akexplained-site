@@ -5,6 +5,8 @@ description: A simple guide to Old English literature — its poetry, prose, man
 eyebrow: Notes · Literary Ages
 mark: O
 crumb_label: Old English
+hero_image: /assets/ages/old-english-hero.webp
+hero_class: hero-old-english
 updated: 2026-10-12
 exams:
   - UGC-NET

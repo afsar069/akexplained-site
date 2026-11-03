@@ -5,6 +5,8 @@ description: A simple guide to Middle English literature, from the Norman Conque
 eyebrow: Notes · Literary Ages
 mark: M
 crumb_label: Middle English
+hero_image: /assets/ages/middle-english-hero.webp
+hero_class: hero-middle-english
 updated: 2026-10-13
 exams:
   - UGC-NET

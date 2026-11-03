@@ -196,6 +196,98 @@ strong{color:var(--ink)}
 .pagehead h1{font-family:var(--serif);color:var(--ink);font-weight:600;line-height:1.2;font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:10px;text-wrap:balance}
 .pagehead p.lede{font-family:var(--serif);font-size:clamp(.98rem,1.4vw,1.06rem);color:#3D4B59;max-width:62ch}
 
+/* ---------- Article hero artwork (Old English page) ----------
+   The age painting sits behind the page head on a wide screen, with a
+   cream scrim on the left so the heading reads on plain paper. On a
+   phone the same picture becomes a band above the heading. Only pages
+   that set hero_image + hero_class in their front matter get this. */
+.pagehead.hero-old-english{
+  min-height:clamp(320px,32vw,430px);
+  padding:44px 0 40px;
+}
+.hero-old-english .pagehead-art{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;object-fit:cover;object-position:78% 46%;
+  pointer-events:none;user-select:none;
+  /* Halka fade: painting ka baaya kinara cream pagehead me ghol deta hai. */
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 30%);
+  mask-image:linear-gradient(to right,transparent 0,#000 30%);
+}
+.hero-old-english::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(250,245,233,.98) 0%,rgba(250,245,233,.94) 34%,
+    rgba(250,245,233,.58) 50%,rgba(250,245,233,0) 66%);
+}
+.hero-old-english > .wrap{position:relative;z-index:1}
+.hero-old-english .motif{display:none}
+.hero-old-english h1{max-width:520px}
+.hero-old-english p.lede{max-width:56ch}
+@media (max-width:760px){
+  .pagehead.hero-old-english{display:block;min-height:0;padding:0}
+  .hero-old-english .pagehead-art{
+    position:relative;inset:auto;
+    width:100%;height:clamp(170px,46vw,230px);
+    object-position:100% 40%;
+    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+  }
+  .hero-old-english::after{
+    bottom:auto;height:clamp(170px,46vw,230px);
+    background:linear-gradient(180deg,
+      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
+  }
+  .hero-old-english > .wrap{padding:18px 22px 28px}
+  .hero-old-english h1{max-width:none}
+}
+
+/* ---------- Article hero artwork (Middle English page) ----------
+   Same pattern as the Old English head: the age painting sits behind
+   the page head on a wide screen with a cream scrim on the left so the
+   heading reads on plain paper, and becomes a band above the heading on
+   a phone. This painting already has blank parchment down its left side,
+   so the fade can start a little further out. Only pages that set
+   hero_image + hero_class in their front matter get this. */
+.pagehead.hero-middle-english{
+  min-height:clamp(320px,32vw,430px);
+  padding:44px 0 40px;
+}
+.hero-middle-english .pagehead-art{
+  position:absolute;inset:0;z-index:0;
+  width:100%;height:100%;object-fit:cover;object-position:88% 48%;
+  pointer-events:none;user-select:none;
+  /* Halka fade: painting ka baaya kinara cream pagehead me ghol deta hai. */
+  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 26%);
+  mask-image:linear-gradient(to right,transparent 0,#000 26%);
+}
+.hero-middle-english::after{
+  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(250,245,233,.97) 0%,rgba(250,245,233,.93) 36%,
+    rgba(250,245,233,.55) 52%,rgba(250,245,233,0) 68%);
+}
+.hero-middle-english > .wrap{position:relative;z-index:1}
+.hero-middle-english .motif{display:none}
+.hero-middle-english h1{max-width:520px}
+.hero-middle-english p.lede{max-width:56ch}
+@media (max-width:760px){
+  .pagehead.hero-middle-english{display:block;min-height:0;padding:0}
+  .hero-middle-english .pagehead-art{
+    position:relative;inset:auto;
+    width:100%;height:clamp(170px,46vw,230px);
+    object-position:84% 42%;
+    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
+  }
+  .hero-middle-english::after{
+    bottom:auto;height:clamp(170px,46vw,230px);
+    background:linear-gradient(180deg,
+      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
+  }
+  .hero-middle-english > .wrap{padding:18px 22px 28px}
+  .hero-middle-english h1{max-width:none}
+}
+
 .crumb{font-size:.82rem;color:var(--body);padding:12px 0 0}
 .crumb a{color:var(--teal)}
 .crumb span{opacity:.6;padding:0 6px}
@@ -602,7 +694,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
    PRINT — students notes print karte hain. Sirf text chhape.
    ========================================================== */
 @media print{
-  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.tocmobile,.quizcta,.pagetools{display:none!important}
+  .site-header,.rail,.serialnav,.site-footer,.crumb,.skip,.pagehead .motif,.pagehead .mark,.pagehead-art,.hero-old-english::after,.hero-middle-english::after,.tocmobile,.quizcta,.pagetools{display:none!important}
   .article .abox{break-inside:avoid;background:#fff}
   @page{size:A4;margin:14mm 14mm 18mm;
     @bottom-center{content:"akexplained.com  \00B7  Page " counter(page) " of " counter(pages);font-family:'Source Sans 3',Arial,sans-serif;font-size:8pt;color:#666}}
@@ -966,6 +1058,14 @@ summary.ptbtn::-webkit-details-marker{display:none}
   border:1px solid #B4C0CD;padding:13px 24px;border-radius:11px;white-space:nowrap;
 }
 
+/* Topic pages aur cross-age builder abhi bane nahi hain (CLAUDE.md rule 13).
+   Cards wahin rehte hain, par link nahi — isliye koi 404 nahi. */
+.mcq-topic.is-soon:hover{border-color:var(--mcq-line)}
+.mcq-build.is-soon:hover{border-color:#B4C0CD;border-style:dashed}
+.mcq-topic .soon-tag{font-size:11.5px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:#8A97A6;white-space:nowrap}
+.mcq-build .go.soon-tag{color:#8A97A6;border-style:dashed;font-size:13px}
+.sechead .more.more-soon{color:#8A97A6;font-size:.78rem}
+
 /* ---------- also in the practice zone ---------- */
 .mcq-othergrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
 .mcq-other{
@@ -990,6 +1090,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-othergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:760px){
+  .sechead .more.more-soon{display:none}
   .mcq-modes{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
   .mcq-modes a,.mcq-modes span{flex:none}
   .mcq-exams{overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:2px}
