@@ -270,3 +270,32 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   URL Configuration → Redirect URLs; `https://akexplained.com/**` already covers it).
 - Pre-existing MCQ hub links `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404 — unrelated
   to accounts, to be fixed separately.
+
+## 14. Working on the backend from a cloud session (tools, testing, hygiene)
+- **Reading the live database.** A Supabase connector may be attached to the session; when it is, you
+  can read the live project directly (project ref `almlqoxcyzwieuwrgwry`) — inspect schema, rows,
+  policies, grants, and run the advisors. Use it read-only to check your work. **The owner still runs
+  every migration** (rule 9): write the SQL, hand it over, do not apply DDL yourself even when a tool
+  could. The browser talks to Supabase with the publishable key only.
+- **Security hygiene.** After any schema change, run the Supabase **security advisors** and keep them
+  empty. A `SECURITY DEFINER` function in `public` (a trigger function especially) must have `EXECUTE`
+  revoked from `public, anon, authenticated`, or advisors 0028/0029 fire — it is still callable at
+  `/rest/v1/rpc/<name>` otherwise (see `20261103120000_…`). The event trigger `ensure_rls`
+  (`rls_auto_enable()`, `20261103130000_…`) turns RLS on for every new `public` table as a safety net;
+  never rely on it alone — always add explicit own-rows policies with the table.
+- **Test before you push** (extends rule 4). Migrations: run them on a throwaway local Postgres
+  (`/usr/lib/postgresql/16/bin` → `initdb`/`pg_ctl`), after first running the earlier topic/account
+  migrations, and check row counts, idempotency (run twice), and no orphans. Auth and other JS flows:
+  browser-test with the pre-installed Playwright (`require('playwright')`, `chromium.launch()`, no
+  options) against `_site` served locally, with Supabase routes mocked. Test switches already in the
+  code: `/login/?google=1` (show the Google button), `/login/?reset=1` (show the reset form).
+- **Facts, prices and limits.** Never invent a figure (a free-tier limit, a price, a quota). Verify it
+  on the provider's **own** page — aggregator/comparison sites are unreliable (owner's rule). If a host
+  is blocked (the network policy blocks some: Supabase over plain `WebFetch`, provider pricing pages),
+  either ask the owner to add it under the environment's Network access, or ask the owner for the fact.
+- **The owner cannot open your container.** Never point them at a `/tmp/...` (scratchpad) path — those
+  are inside the session and vanish when it is reclaimed. Paste the content into chat, or give a repo
+  path / GitHub link they can open themselves.
+- **Where things stand** at the end of a work block is kept in `docs/accounts-status.md` (a dated
+  snapshot of what is live, what is on the branch unmerged, and what is pending). Update it when the
+  state changes so the next session starts without re-reading the whole history.
