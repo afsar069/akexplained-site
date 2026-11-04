@@ -79,6 +79,9 @@
     // Menu items only for logged-in people (for example "My Dashboard"): shown or hidden with the login state.
     var only = document.querySelectorAll('[data-auth-only]');
     for (var j = 0; j < only.length; j++) only[j].hidden = !loggedIn;
+    // Aur iska ulta: sirf guest ke liye (jaise "Create a free account" wala dabba).
+    var guest = document.querySelectorAll('[data-guest-only]');
+    for (var k = 0; k < guest.length; k++) guest[k].hidden = loggedIn;
   }
 
   // Paint from the cache first (no flicker), then correct from the network.

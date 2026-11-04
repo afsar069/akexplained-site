@@ -224,14 +224,21 @@
     <span class="go">Message &rarr;</span>
   </a>
 
-  <!-- Teesra box: abhi placeholder. Login/dashboard aane par ise
-       "Enrol Now" bana dena hai. Bas href aur text badalna hoga. -->
-  <div class="railbox soonbox">
+  <!-- Teesra box: khaate zinda hain, isliye do roop. Guest ko signup,
+       logged-in ko dashboard. auth.js data-guest-only / data-auth-only
+       dono ko login ki haalat ke hisaab se khol-band karta hai. -->
+  <a class="railbox" href="/login/" data-guest-only>
     <span class="ic" style="background:#F7F2E3;color:#B9892F"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2 3 6.5v2L12 13l9-4.5v-2Z"/><path d="M6 11v4c0 1.9 2.7 3.4 6 3.4s6-1.5 6-3.4v-4l-6 3Z" opacity=".55"/></svg></span>
-    <span class="badge">Coming soon</span>
-    <h3>Enrol now</h3>
-    <p>Save your progress, track quiz scores and pick up where you left off.</p>
-  </div>
+    <h3>Create a free account</h3>
+    <p>Save your progress, track your quiz scores and pick up where you left off.</p>
+    <span class="go">Sign up &rarr;</span>
+  </a>
+  <a class="railbox" href="/dashboard/" data-auth-only hidden>
+    <span class="ic" style="background:#F7F2E3;color:#B9892F"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M12 2 3 6.5v2L12 13l9-4.5v-2Z"/><path d="M6 11v4c0 1.9 2.7 3.4 6 3.4s6-1.5 6-3.4v-4l-6 3Z" opacity=".55"/></svg></span>
+    <h3>Your progress</h3>
+    <p>See every quiz answer you have given, by period and by topic.</p>
+    <span class="go">Open your dashboard &rarr;</span>
+  </a>
 </aside>
 {% endif %}
 

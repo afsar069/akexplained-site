@@ -879,6 +879,7 @@
       actionRow() + journeyRow(t) + levelCard() + suggestRow(t);
 
     wireResult(t);
+    paintAuthBits(root);
   }
 
   /* Pagehead ke teen text badal do (start, test aur result ke liye alag). */
@@ -1004,12 +1005,53 @@
     '</div>';
   }
 
-  /* Login abhi nahi hai. Jis din hoga, wo naam yahan rakhega; tab tak
-     har koi Guest User hai — koi naam gada nahi ja raha. */
+  /* ------------------------------------------------------------
+     Login ab zinda hai. Score board synchronously banta hai, isliye
+     pehle wahi naam lagta hai jo header ne localStorage me rakha tha
+     ('ak:name', auth.js ka cacheName) — isse koi flicker nahi hota.
+     Uske baad paintAuthBits() asli session se naam aur dono taraf ke
+     dabbe theek kar deta hai.
+     ------------------------------------------------------------ */
+  function cachedName() {
+    try { return localStorage.getItem('ak:name') || ''; } catch (e) { return ''; }
+  }
+
   function whoAmI() {
-    var name = '';
-    try { name = (window.AK && window.AK.user && window.AK.user.name) || ''; } catch (e) {}
-    return name || 'Guest User';
+    return cachedName() || 'Guest User';
+  }
+
+  /* Jo cheezein login par nirbhar hain wo HTML me dono roop me bani
+     hoti hain: data-auth-in (sirf logged-in) aur data-auth-out (sirf
+     guest). Yahan asli session dekh kar sahi wala khola jata hai.
+     auth.js ka paintHeader score board se pehle chal chuka hota hai,
+     isliye ye kaam yahin dobara karna padta hai. */
+  function showAuthBits(scope, loggedIn) {
+    var inBits = scope.querySelectorAll('[data-auth-in]');
+    var outBits = scope.querySelectorAll('[data-auth-out]');
+    var i;
+    for (i = 0; i < inBits.length; i++) inBits[i].hidden = !loggedIn;
+    for (i = 0; i < outBits.length; i++) outBits[i].hidden = loggedIn;
+  }
+
+  function paintAuthBits(scope) {
+    if (!scope) return;
+    showAuthBits(scope, !!cachedName());          // pehla anumaan
+    var auth = window.akAuth;
+    if (!auth || !auth.configured) { showAuthBits(scope, false); return; }
+    auth.session().then(function (session) {
+      var user = session && session.user;
+      showAuthBits(scope, !!user);
+      if (!user) return;
+      var name = auth.nameFrom(user, '');
+      var who = scope.querySelector('.cbt-who');
+      if (who) who.textContent = name;
+      // Profile ka naam network se aata hai; aate hi badal dein.
+      auth.client.from('profiles').select('display_name').eq('id', user.id).maybeSingle()
+        .then(function (res) {
+          var better = auth.nameFrom(user, (res.data && res.data.display_name) || '');
+          if (who && better) who.textContent = better;
+        }, function () { /* naam na mila to pehla hi rahega */ });
+    }, function () { /* session na mila to guest hi maan lein */ });
   }
 
   /* Ginti wala ek dabba: bagal me nishaan, phir badi ginti aur uska naam. */
@@ -1048,22 +1090,22 @@
         '<td class="num ' + tone + '">' + o.pc + '%</td></tr>';
     }).join('');
 
-    /* Table asli aankdo ki hai, par dhundhli. Screen reader ise nahi padhta —
-       uske liye niche wala saaf sandesh hi kaafi hai. */
+    /* Ye table iss paper ka apna hisaab hai — apna result dekhne ke liye
+       khaata kyon chahiye. Isliye khula hai. Neeche wala dabba sirf aage
+       ka rasta batata hai: dashboard har test ka jod dikhata hai. */
     return '<div class="cbt-two cbt-two-wide">' +
-      '<section class="cbt-card cbt-topics is-locked" aria-label="Topic by topic, locked">' +
-        '<h2>' + lockIcon() + 'Topic-wise performance</h2>' +
-        '<p class="sub">Every question is tagged by topic. The full breakdown opens with a student account.</p>' +
-        '<div class="cbt-blur" aria-hidden="true">' +
-          '<table class="cbt-ttable"><thead><tr>' +
-            '<th scope="col">Topic</th><th scope="col">Correct / Total</th>' +
-            '<th scope="col">How it went</th><th scope="col">Accuracy</th>' +
-          '</tr></thead><tbody>' + rows + '</tbody></table>' +
-        '</div>' +
+      '<section class="cbt-card cbt-topics" aria-label="Topic by topic">' +
+        '<h2>Topic-wise performance</h2>' +
+        '<p class="sub">Every question is tagged by topic. This is how each one went on this paper.</p>' +
+        '<table class="cbt-ttable"><thead><tr>' +
+          '<th scope="col">Topic</th><th scope="col">Correct / Total</th>' +
+          '<th scope="col">How it went</th><th scope="col">Accuracy</th>' +
+        '</tr></thead><tbody>' + rows + '</tbody></table>' +
         '<div class="cbt-lockbox">' +
           '<p><b>' + t.topics.length + ' topics measured on this paper.</b> ' +
-            'See exactly where every mark went, and how each topic moves across every test you take.</p>' +
-          '<a class="cbt-begin" href="/login/">Student accounts — coming soon</a>' +
+            'Your dashboard adds up every test you take, so you can see how each topic moves over time.</p>' +
+          '<a class="cbt-begin" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
+          '<a class="cbt-begin" href="/login/" data-auth-out>Create a free account to keep this</a>' +
         '</div>' +
       '</section>' +
       strongWeak(t) +
@@ -1172,6 +1214,7 @@
       '<a class="cbt-btn" href="' + esc(rev) + '?only=wrong">Review incorrect only</a>' +
       '<button type="button" class="cbt-btn" id="cbtPrint">Download result (PDF)</button>' +
       '<button type="button" class="cbt-btn" id="cbtAgain">Take a new test</button>' +
+      '<a class="cbt-btn" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
       '<a class="cbt-btn is-gold" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
         '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
     '</div>';
@@ -1248,7 +1291,8 @@
           '<h2>' + lockIcon() + 'Your level in English literature</h2>' +
           '<p class="sub">Everything you have done, in one line — kept with your account, not with this browser.</p>' +
         '</div>' +
-        '<a class="cbt-streaklink" href="/login/">Coming with student accounts</a>' +
+        '<a class="cbt-streaklink" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
+        '<a class="cbt-streaklink" href="/login/" data-auth-out>Create a free account</a>' +
       '</div>' +
       '<div class="cbt-levelrow">' +
         cells.map(function (c) {
@@ -1308,7 +1352,8 @@
     return '<section class="cbt-card cbt-streak" aria-label="Daily streak, locked">' +
       '<div class="cbt-streakhead">' +
         '<h2>' + lockIcon() + 'Your daily streak</h2>' +
-        '<a class="cbt-streaklink" href="/login/">Coming with student accounts</a>' +
+        '<a class="cbt-streaklink" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
+        '<a class="cbt-streaklink" href="/login/" data-auth-out>Create a free account</a>' +
       '</div>' +
       '<div class="cbt-streakrow">' +
         '<div class="cbt-streaknum"><b>—</b><span>Days in a row</span></div>' +

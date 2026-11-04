@@ -2216,13 +2216,20 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-two-an .cbt-anrow{flex:1;align-content:center}
 .cbt-sw{display:grid;gap:14px;align-content:start}
 .cbt-card h2 .cbt-lockico{vertical-align:-2px;margin-right:7px;color:var(--gold)}
+/* Jaise .mcq-body aur .iq-body me: class ka apna display rule browser ke
+   [hidden] ko haraa deta hai (.cbt-begin inline-block hai, .cbt-btn bhi).
+   Score board ke data-auth-in / data-auth-out isi line par tike hain. */
+.cbt [hidden]{display:none !important}
 .cbt-topics{position:relative}
 .cbt-blur{
   filter:blur(5px);opacity:.5;pointer-events:none;user-select:none;
   margin-top:4px;
 }
+/* Pehle ye dhundhli table ke UPAR tairta tha (position:absolute). Table ab
+   khuli hai, isliye ye apni line me, table ke neeche aata hai — warna ye
+   table ki aakhri pankti ko dhak leta. */
 .cbt-lockbox{
-  position:absolute;left:18px;right:18px;bottom:18px;
+  margin-top:16px;
   background:var(--cream);border:1.5px solid var(--gold);border-radius:13px;
   padding:16px 18px;text-align:center;
 }
@@ -2616,8 +2623,6 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-nums3{grid-template-columns:1fr}
   .cbt-pace{grid-template-columns:1fr}
   .cbt-two,.cbt-three,.cbt-two-wide,.cbt-two-an,.cbt-top{grid-template-columns:1fr}
-  .cbt-lockbox{position:static;margin-top:-28px}
-  .cbt-blur{filter:blur(4px)}
   .cbt-track{margin:44px 0 54px}
   .cbt-tick em{display:none}
   .cbt-streakrow{gap:14px 18px}
@@ -3030,6 +3035,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 
 /* Dashboard (v1). Builds on .acctcard, .examlist, .btn and .chip above. */
 .side-nav li[data-auth-only][hidden]{display:none}   /* "My Dashboard" menu item: logged-in people only */
+/* .railbox display:block hai, isliye [hidden] ko saaf jitana padta hai.
+   Article page ke rail par: guest ko signup wala dabba, logged-in ko dashboard wala. */
+.railbox[hidden]{display:none !important}
 .dashloading{margin:8px 0 24px;color:var(--body)}
 .dashstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:14px;margin-top:14px}
 .dashstat{background:var(--tint);border:1px solid var(--border);border-radius:14px;padding:16px 18px}
