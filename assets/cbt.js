@@ -1384,11 +1384,13 @@
   }
 
   function levelCard() {
+    /* "Left unanswered" hata diya (malik, 2026-11-04): chhoda hua sawal DB me
+       koi row nahi likhta, isliye wo ginti kabhi ho hi nahi sakti. Bache
+       chaar khane wahi hain jo abhi ya aage ke kaam se bhare ja sakte hain. */
     var cells = [
       ['Tests taken', 'across every age'],
       ['Questions answered', 'all sets together'],
       ['Answered wrongly', 'waiting to be fixed'],
-      ['Left unanswered', 'never attempted'],
       ['Your level', 'in English literature']
     ];
 

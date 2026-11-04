@@ -2365,7 +2365,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-levelhead .sub{margin:0;max-width:62ch}
 .cbt-levelhead .cbt-streaklink{margin-left:auto}
 .cbt-levelrow{
-  display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;
   background:var(--card-line);border:1px solid var(--card-line);
   border-radius:12px;overflow:hidden;margin-bottom:18px;
 }
