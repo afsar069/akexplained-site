@@ -128,12 +128,19 @@
       });
   }
 
+  // The person's display name (own profile row only, by RLS). '' if none.
+  function loadProfileName(client, uid) {
+    return client.from('profiles').select('display_name').eq('id', uid).maybeSingle()
+      .then(function (res) { return (res.data && res.data.display_name) || ''; })
+      .catch(function () { return ''; });
+  }
+
   // Everything below is worked out from the one set of rows, so all the
   // numbers on the page always agree with each other.
   function computeStats(rows, now) {
     var startToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();   // visitor's calendar day
     var weekAgo = now.getTime() - 7 * DAY;                                                    // rolling 7 days
-    var s = { total: rows.length, correct: 0, today: 0, week: 0, periods: {}, topics: {} };
+    var s = { total: rows.length, correct: 0, today: 0, todayCorrect: 0, week: 0, periods: {}, topics: {} };
     function bump(map, key, ok) {
       var m = map[key] || (map[key] = { n: 0, ok: 0 });
       m.n++; if (ok) m.ok++;
@@ -143,7 +150,7 @@
       if (ok) s.correct++;
       // trim microseconds so every browser parses the timestamp
       var t = Date.parse(String(r.answered_at).replace(/(\.\d{3})\d+/, '$1'));
-      if (t >= startToday) s.today++;
+      if (t >= startToday) { s.today++; if (ok) s.todayCorrect++; }
       if (t >= weekAgo) s.week++;
       bump(s.periods, r.period_id || '', ok);
       bump(s.topics, r.topic_id || '', ok);
@@ -161,6 +168,30 @@
       '<div class="dashlbl">' + esc(label) + '</div>' +
       (sub ? '<div class="dashsub">' + esc(sub) + '</div>' : '') + '</div>';
   }
+
+  // One line-art icon for a KPI card.
+  function icon(path) {
+    return '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" ' +
+      'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' + path + '</svg>';
+  }
+
+  // A big KPI card: a tinted icon, the number, its label and a small note.
+  function kpi(tone, ic, value, label, sub) {
+    return '<div class="dashkpi ' + tone + '">' +
+      '<span class="dashkpi-ic">' + ic + '</span>' +
+      '<span class="dashkpi-body">' +
+        '<b class="dashkpi-num">' + value + '</b>' +
+        '<span class="dashkpi-lbl">' + esc(label) + '</span>' +
+        (sub ? '<em class="dashkpi-sub">' + esc(sub) + '</em>' : '') +
+      '</span>' +
+    '</div>';
+  }
+
+  var IC_LIST = '<path d="M4 6h16M4 12h16M4 18h10"/>';
+  var IC_CHECK = '<circle cx="12" cy="12" r="9"/><path d="m8.4 12.2 2.4 2.4 4.8-5.2"/>';
+  var IC_TARGET = '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.4"/>';
+  var IC_CAL = '<rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16"/>';
+  var IC_CALOK = IC_CAL + '<path d="m9.2 15 1.7 1.7 3.9-3.9"/>';
 
   // One row: name, count and accuracy, and a thin bar for the accuracy.
   function groupRow(name, kind, g, extraClass, hidden) {
@@ -190,35 +221,36 @@
 
   var NAMES_FAILED = '<p class="small">We could not load the period and topic names. Please refresh the page to try again.</p>';
 
-  // 1. Totals
+  // 1. Totals — three headline figures.
   addSection({
-    id: 'totals', order: 10, title: 'Your answers', needs: 'attempts',
+    id: 'totals', order: 10, title: 'Your overall progress', needs: 'attempts',
     render: function (ctx) {
       var s = ctx.stats;
-      return '<div class="dashstats">' +
-        stat(fmt(s.total), 'Questions answered (including repeats)', 'A question you answer twice counts twice.') +
-        stat(fmt(s.correct), 'Correct answers', 'Out of ' + answers(s.total)) +
-        stat(pct(s.correct, s.total) + '%', 'Accuracy', 'Correct answers out of all answers') +
+      return '<div class="dashkpis">' +
+        kpi('is-ink', icon(IC_LIST), fmt(s.total), 'Questions attempted', 'Including repeats') +
+        kpi('is-ok', icon(IC_CHECK), fmt(s.correct), 'Correct answers', 'Out of ' + answers(s.total)) +
+        kpi('is-gold', icon(IC_TARGET), pct(s.correct, s.total) + '%', 'Accuracy', 'Correct out of all answers') +
         '</div>' +
         (ctx.truncated ? '<p class="small dashnote">These figures use your latest ' + fmt(MAX_ROWS) + ' answers.</p>' : '');
     }
   });
 
-  // 2. Recent activity
+  // 2. Today's activity — what has been done since midnight (visitor's day).
   addSection({
-    id: 'recent', order: 20, title: 'Recent activity', needs: 'attempts',
+    id: 'today', order: 20, title: "Today's activity", needs: 'attempts',
     render: function (ctx) {
       var s = ctx.stats;
-      return '<div class="dashstats">' +
-        stat(fmt(s.today), 'Answers today', 'Since midnight, your time') +
-        stat(fmt(s.week), 'Answers in the last 7 days', 'The past 7 days, including today') +
+      return '<div class="dashkpis dashkpis-2">' +
+        kpi('is-ink', icon(IC_CAL), fmt(s.today), 'Questions attempted today', 'Since midnight, your time') +
+        kpi('is-ok', icon(IC_CALOK), fmt(s.todayCorrect), 'Correct answers today',
+          s.today ? 'Out of ' + answers(s.today) + ' today' : 'No answers yet today') +
         '</div>';
     }
   });
 
   // 3. By period
   addSection({
-    id: 'periods', order: 30, title: 'By period', needs: 'attempts',
+    id: 'periods', order: 30, title: 'Your progress by period', needs: 'attempts',
     render: function (ctx) {
       if (ctx.namesError) return NAMES_FAILED;
       var rows = sortedGroups(ctx.stats.periods, function (k) { return periodName(ctx, k); });
@@ -231,7 +263,7 @@
   // 4. By topic. Skipped when it would only repeat the periods above
   // (every answer tagged to a period itself and nothing more specific).
   addSection({
-    id: 'topics', order: 40, title: 'By topic', needs: 'attempts',
+    id: 'topics', order: 40, title: 'Your progress by topics', needs: 'attempts',
     render: function (ctx) {
       if (ctx.namesError) return NAMES_FAILED;
       var rows = sortedGroups(ctx.stats.topics, function (k) { return topicName(ctx, k); });
@@ -282,8 +314,25 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
+  // A friendly greeting with the person's name, above the cards.
+  function welcomeHero(ctx) {
+    var name = ctx.name || 'there';
+    var fresh = !ctx.attemptsError && !ctx.rows.length;
+    var greet = (fresh ? 'Welcome, ' : 'Welcome back, ') + name;
+    var line = fresh
+      ? 'This is your dashboard. Take a quiz while you are logged in and your progress will start to show here.'
+      : 'Here is how your learning is going, from the quizzes you have taken while logged in.';
+    var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
+    return '<section class="dashhero">' +
+      '<h2 class="dashhero-title">' + esc(greet) + '</h2>' +
+      '<p class="dashhero-line">' + esc(line) + '</p>' +
+      (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
+    '</section>';
+  }
+
   function renderAll(ctx) {
-    var html = ctx.attemptsError ? ERROR_CARD : (ctx.rows.length ? '' : EMPTY_CARD);
+    var html = welcomeHero(ctx) +
+      (ctx.attemptsError ? ERROR_CARD : (ctx.rows.length ? '' : EMPTY_CARD));
     var hasAttempts = !ctx.attemptsError && ctx.rows.length > 0;
     sections.slice().sort(function (a, b) { return a.order - b.order; }).forEach(function (def) {
       if (def.needs === 'attempts' && !hasAttempts) return;
@@ -296,12 +345,17 @@
     return html;
   }
 
-  function start(client, uid, root) {
+  function start(client, uid, root, user, auth) {
     root.innerHTML = '<p class="dashloading">Loading your progress…</p>';
     var ctx = {
       now: new Date(), rows: [], truncated: false, stats: null,
-      names: {}, namesError: false, exams: [], attemptsError: false
+      names: {}, namesError: false, exams: [], attemptsError: false,
+      name: (auth && user && auth.nameFrom(user, '')) || ''   // quick name; refined by the profile below
     };
+
+    var pName = loadProfileName(client, uid).then(function (pn) {
+      if (pn && auth && user) ctx.name = auth.nameFrom(user, pn);
+    }, function () { /* keep the quick name */ });
 
     var pAttempts = loadAttempts(client, uid).then(function (r) {
       ctx.rows = r.rows; ctx.truncated = r.truncated;
@@ -319,7 +373,7 @@
       function () { ctx.exams = []; }
     );
 
-    Promise.all([pAttempts, pExams]).then(function () { root.innerHTML = renderAll(ctx); });
+    Promise.all([pAttempts, pExams, pName]).then(function () { root.innerHTML = renderAll(ctx); });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -349,7 +403,7 @@
       auth.session().then(function (session) {
         if (!session || !session.user) { signin.hidden = false; return; }
         body.hidden = false;
-        start(auth.client, session.user.id, root);
+        start(auth.client, session.user.id, root, session.user, auth);
       }, function () {
         notice.hidden = false;
         notice.textContent = 'We could not check your login. Please refresh the page to try again.';

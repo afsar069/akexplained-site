@@ -44,6 +44,20 @@ _Last updated: 2026-11-04._
   out, errors, paging with 2,350 rows and with a 500-row server cap, the 10,000-row safety cap, mobile
   width). Not yet seen against the live database from the browser; the owner reviews it before any merge.
 
+- **Dashboard v2 pass** — on `claude/compassionate-franklin-ypvye1`, **NOT yet on `main`** (owner's call).
+  A professional redesign of `/dashboard/` to the owner's shorter spec, still read-only and attempts-only:
+  a **welcome hero with the person's name** ("Welcome back, <name>", first-timer gets "Welcome, <name>",
+  plus their main path), then **KPI cards** (icons): *Your overall progress* = Questions attempted / Correct
+  answers / Accuracy; *Today's activity* = Questions attempted today / Correct answers today (the rolling
+  7-day figure is still computed but no longer shown); *Your progress by period*; *Your progress by topics*;
+  *Your paths* (kept — it confirms the journey just chosen; flagged to the owner in case they want it gone).
+  New: `s.todayCorrect` in `computeStats`, `loadProfileName`, `welcomeHero`, `kpi`/`icon` helpers in
+  `assets/dashboard.js`; `.dashhero` + `.dashkpi*` styles in `site.css`. The **still-forbidden** set is
+  unchanged (mastery / levels / rank / streak / strengths / areas / readiness — the computation does not exist).
+  Also in this branch: **after choosing a journey, `/login/` now sends the person to `/dashboard/`** (was
+  `/account/`); and the guest score board carries one login CTA (earlier in this branch). Browser-tested with
+  Supabase mocked (hero, the five KPI figures, section order, paths, logged-in session).
+
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
 period_id, topic_id`; newest first, 1,000 per request, at most 10,000 rows) and works out totals and
