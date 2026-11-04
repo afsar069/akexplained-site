@@ -2164,6 +2164,32 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-num.is-time b,.cbt-num.is-diff b{font-size:1.6rem}
 .cbt-num em{display:block;font-style:normal;font-size:.78rem;color:var(--mcq-ink-faint);margin-top:4px}
 .cbt-nums3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cbt-nums2{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* ---------- Login/dashboard ki patti (score board) ----------
+   Score board par sirf yahi login ki baat karta hai: ek gold patti jo
+   aankh kheenchti hai. Guest wala link login par, logged-in wala dashboard par;
+   paintAuthBits sahi wala kholta hai. */
+.cbt-cta{margin:0 0 18px}
+.cbt-ctalink{
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:16px 22px;border-radius:14px;text-decoration:none;color:var(--ink);
+  background:var(--cream);border:1px solid color-mix(in srgb,var(--gold) 45%,var(--border));
+  transition:transform .12s ease,box-shadow .12s ease;
+}
+.cbt-ctalink:hover{transform:translateY(-1px);box-shadow:0 7px 18px rgba(22,48,74,.12)}
+.cbt-ctatxt{min-width:0}
+.cbt-ctatxt b{display:block;font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.3}
+.cbt-ctatxt em{display:block;font-style:normal;font-size:.9rem;color:var(--mcq-ink-faint);margin-top:4px}
+.cbt-ctago{
+  flex:none;font-family:var(--sans);font-weight:700;font-size:.95rem;white-space:nowrap;
+  padding:11px 20px;border-radius:999px;background:var(--gold);color:#2F2206;
+}
+.cbt-ctalink:hover .cbt-ctago{background:#A2761F}
+@media (max-width:560px){
+  .cbt-ctalink{flex-direction:column;align-items:flex-start;gap:13px}
+  .cbt-ctago{align-self:stretch;text-align:center}
+}
+
 /* Jo login ke baad aayega — dikhta hai, par saaf likha hai ke abhi nahi. */
 .cbt-num.is-soon{background:var(--tint);border-style:dashed}
 .cbt-num.is-soon b{font-size:1rem;color:var(--mcq-ink-faint);font-family:var(--sans);font-weight:700}
@@ -2729,7 +2755,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
    kya kamzor. Sawal aur unke jawab nahi — wo chhapne ke liye nahi hain. */
 @media print{
   .cbt-bar,.cbt-side,.cbt-nav,.cbt-submit,
-  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,
+  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,.cbt-cta,
   .site-header,.site-footer,.crumb,.skip{display:none !important}
   .cbt-card .sub{display:none}
   body{background:#fff}
