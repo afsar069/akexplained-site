@@ -77,7 +77,7 @@
     var rows = [], total = null, minId = null;
     function next() {
       var q = client.from('attempts')
-        .select('id, is_correct, answered_at, period_id, topic_id', total === null ? { count: 'exact' } : {})
+        .select('id, is_correct, answered_at, period_id, topic_id, question_id', total === null ? { count: 'exact' } : {})
         .eq('user_id', uid)
         .order('id', { ascending: false })
         .limit(PAGE);
@@ -128,6 +128,16 @@
       });
   }
 
+  // The ranking: top students and where the caller stands. One RPC (public.leaderboard,
+  // SECURITY DEFINER — the only cross-student read there is). null if it is not available
+  // (migration not run, or the call failed), and then the rank/top-student cards stay hidden.
+  function loadBoard(client) {
+    return client.rpc('leaderboard').then(function (res) {
+      if (res && !res.error && res.data) return res.data;
+      return null;
+    }, function () { return null; });
+  }
+
   // The person's display name (own profile row only, by RLS). '' if none.
   function loadProfileName(client, uid) {
     return client.from('profiles').select('display_name').eq('id', uid).maybeSingle()
@@ -140,7 +150,9 @@
   function computeStats(rows, now) {
     var startToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();   // visitor's calendar day
     var weekAgo = now.getTime() - 7 * DAY;                                                    // rolling 7 days
-    var s = { total: rows.length, correct: 0, today: 0, todayCorrect: 0, week: 0, periods: {}, topics: {} };
+    var s = { total: rows.length, correct: 0, today: 0, todayCorrect: 0, week: 0,
+      periods: {}, topics: {}, days: {}, unique: 0 };
+    var qseen = {};
     function bump(map, key, ok) {
       var m = map[key] || (map[key] = { n: 0, ok: 0 });
       m.n++; if (ok) m.ok++;
@@ -152,10 +164,38 @@
       var t = Date.parse(String(r.answered_at).replace(/(\.\d{3})\d+/, '$1'));
       if (t >= startToday) { s.today++; if (ok) s.todayCorrect++; }
       if (t >= weekAgo) s.week++;
+      if (!isNaN(t)) { var d = new Date(t); s.days[dayKey(d)] = true; }   // active-day set (visitor's local day)
+      if (r.question_id && !qseen[r.question_id]) { qseen[r.question_id] = 1; s.unique++; }
       bump(s.periods, r.period_id || '', ok);
       bump(s.topics, r.topic_id || '', ok);
     }
     return s;
+  }
+
+  // One key per calendar day, in the visitor's own time zone.
+  function dayKey(d) { return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
+
+  // The daily streak worked out from the active-day set.
+  //  run      = days in a row ending today (or, if nothing today, ending yesterday)
+  //  weekDone = how many days this week (Mon–Sun) had at least one answer
+  //  week     = seven flags, Monday first: { active, future }
+  function computeStreak(days, now) {
+    var today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    var probe = new Date(today);
+    if (!days[dayKey(probe)]) probe.setDate(probe.getDate() - 1);   // today still open: count the run up to yesterday
+    var run = 0;
+    while (days[dayKey(probe)]) { run++; probe.setDate(probe.getDate() - 1); }
+
+    var mondayOffset = (today.getDay() + 6) % 7;                    // 0 = Mon … 6 = Sun
+    var weekStart = new Date(today); weekStart.setDate(today.getDate() - mondayOffset);
+    var week = [], weekDone = 0;
+    for (var i = 0; i < 7; i++) {
+      var dd = new Date(weekStart); dd.setDate(weekStart.getDate() + i);
+      var active = !!days[dayKey(dd)];
+      if (active) weekDone++;
+      week.push({ active: active, future: dd > today });
+    }
+    return { run: run, weekDone: weekDone, week: week };
   }
 
   /* ---------- sections ---------- */
@@ -192,6 +232,14 @@
   var IC_TARGET = '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.4"/>';
   var IC_CAL = '<rect x="4" y="5" width="16" height="16" rx="2.5"/><path d="M8 3v4M16 3v4M4 10h16"/>';
   var IC_CALOK = IC_CAL + '<path d="m9.2 15 1.7 1.7 3.9-3.9"/>';
+  var IC_TROPHY = '<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>';
+  var IC_FLAME = '<path d="M12 3c1 3-1.5 4.5-1.5 7A3.5 3.5 0 0 0 14 13c0-1 .6-1.8.6-1.8.8 1 1.4 2.3 1.4 3.8a4 4 0 1 1-8 0c0-3.2 3-4.5 4-12Z"/>';
+
+  function ordinal(n) {
+    var tens = n % 100;
+    if (tens >= 11 && tens <= 13) return n + 'th';
+    return n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th');
+  }
 
   // One row: name, count and accuracy, and a thin bar for the accuracy.
   function groupRow(name, kind, g, extraClass, hidden) {
@@ -235,7 +283,107 @@
     }
   });
 
-  // 2. Today's activity — what has been done since midnight (visitor's day).
+  /* ---------------------------------------------------------
+     Your level in English literature.
+
+     THE LADDER AND ITS THRESHOLDS ARE THE OWNER'S TO SET (CLAUDE.md rule 8/10).
+     The numbers below are a PROPOSAL, waiting for the owner's confirmation.
+     Change only this one table to change how the level moves up — nothing else.
+     Basis: "different questions answered" (each question counted once) AND the
+     overall accuracy. Reading is not used because reading_progress is still empty.
+     --------------------------------------------------------- */
+  var LADDER = [
+    { name: 'Beginner', minQ: 0,   minAcc: 0  },
+    { name: 'Reader',   minQ: 50,  minAcc: 50 },
+    { name: 'Scholar',  minQ: 150, minAcc: 60 },
+    { name: 'Critic',   minQ: 400, minAcc: 70 },
+    { name: 'Master',   minQ: 800, minAcc: 80 }
+  ];
+
+  // The highest rung whose two gates (enough different questions AND enough
+  // accuracy) are both cleared. Index 0 (Beginner) is always cleared.
+  function levelIndex(uniqueQ, acc) {
+    var at = 0;
+    for (var i = 1; i < LADDER.length; i++) {
+      if (uniqueQ >= LADDER[i].minQ && acc >= LADDER[i].minAcc) at = i; else break;
+    }
+    return at;
+  }
+
+  function stars(n) {
+    var out = '';
+    for (var i = 1; i <= 5; i++) {
+      out += '<svg class="dashstar' + (i <= n ? ' on' : '') + '" viewBox="0 0 24 24" width="13" height="13" ' +
+        'fill="currentColor" aria-hidden="true"><path d="m12 2.6 2.9 6.2 6.6.8-4.9 4.6 1.3 6.7L12 17.6 ' +
+        '6.1 20.9l1.3-6.7L2.5 9.6l6.6-.8Z"/></svg>';
+    }
+    return '<span class="dashstars">' + out + '</span>';
+  }
+
+  // 2. Your level in English literature — the headline status, from the ladder above.
+  addSection({
+    id: 'level', order: 15, title: 'Your level in English literature', needs: 'attempts',
+    render: function (ctx) {
+      var s = ctx.stats;
+      var acc = pct(s.correct, s.total);
+      var at = levelIndex(s.unique, acc);
+      var cur = LADDER[at], next = LADDER[at + 1];
+      var need = '';
+      if (next) {
+        var needQ = Math.max(0, next.minQ - s.unique);
+        var needAcc = Math.max(0, next.minAcc - acc);
+        if (needQ && needAcc) need = needQ + ' more questions and ' + needAcc + '% more accuracy to reach ' + next.name;
+        else if (needQ) need = needQ + ' more different questions to reach ' + next.name;
+        else if (needAcc) need = needAcc + '% more accuracy to reach ' + next.name;
+        else need = 'Ready to move up to ' + next.name;
+      } else {
+        need = 'You are at the top of the ladder.';
+      }
+      return '<div class="dashlevel">' +
+        '<div class="dashlevel-now">' +
+          '<span class="dashlevel-badge">' + stars(at + 1) + '<b>' + esc(cur.name) + '</b></span>' +
+          '<span class="dashlevel-next">' + esc(need) + '</span>' +
+        '</div>' +
+        '<div class="dashkpis dashkpis-2">' +
+          kpi('is-ink', icon(IC_LIST), fmt(s.unique), 'Different questions answered', 'Each question counted once') +
+          kpi('is-gold', icon(IC_TARGET), acc + '%', 'Accuracy', 'Across all your answers') +
+        '</div>' +
+        '<ol class="dashladder">' +
+          LADDER.map(function (L, i) {
+            return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '">' +
+              '<i></i><b>' + esc(L.name) + '</b>' + stars(i + 1) + '</li>';
+          }).join('') +
+        '</ol>' +
+      '</div>';
+    }
+  });
+
+  // 3. Your rank — where the caller stands on the all-ages ranking (leaderboard RPC).
+  addSection({
+    id: 'rank', order: 18, title: 'Your rank', needs: 'attempts',
+    render: function (ctx) {
+      var b = ctx.board;
+      if (!b || !b.you) return '';            // RPC not available: hide quietly
+      var you = b.you, min = b.min_questions || 100;
+      if (you.eligible && you.rank) {
+        return '<div class="dashkpis dashkpis-2">' +
+          kpi('is-gold', icon(IC_TROPHY), ordinal(you.rank), 'Your rank',
+            'of ' + fmt(b.total_ranked || you.rank) + ' ranked students') +
+          kpi('is-ok', icon(IC_TARGET), (you.accuracy != null ? you.accuracy + '%' : '—'), 'Your ranked accuracy',
+            'Each question counted once') +
+          '</div>';
+      }
+      var needed = you.needed || Math.max(0, min - (you.questions || 0));
+      return '<div class="dashkpis dashkpis-2">' +
+        kpi('is-ink', icon(IC_TROPHY), fmt(needed), 'More questions to get a rank',
+          'Answer ' + fmt(min) + ' different questions to join the ranking') +
+        kpi('is-ok', icon(IC_LIST), fmt(you.questions || 0), 'Different questions ranked so far',
+          'Each question counted once') +
+        '</div>';
+    }
+  });
+
+  // 4. Today's activity — what has been done since midnight (visitor's day).
   addSection({
     id: 'today', order: 20, title: "Today's activity", needs: 'attempts',
     render: function (ctx) {
@@ -248,7 +396,28 @@
     }
   });
 
-  // 3. By period
+  // 5. Your daily streak — days in a row and this week, from the active-day set.
+  addSection({
+    id: 'streak', order: 25, title: 'Your daily streak', needs: 'attempts',
+    render: function (ctx) {
+      var k = computeStreak(ctx.stats.days, ctx.now);
+      var names = ['M', 'T', 'W', 'T', 'F', 'S', 'S'];
+      var grid = '<div class="dashweek" aria-hidden="true">' +
+        k.week.map(function (d, i) {
+          var cls = d.active ? 'is-on' : d.future ? 'is-future' : '';
+          return '<span class="' + cls + '">' + names[i] + '</span>';
+        }).join('') + '</div>';
+      return '<div class="dashstreak">' +
+        '<div class="dashkpis dashkpis-2">' +
+          kpi('is-gold', icon(IC_FLAME), fmt(k.run) + (k.run === 1 ? ' day' : ' days'), 'In a row',
+            k.run ? 'Keep it going today' : 'Answer one question to start a streak') +
+          kpi('is-ink', icon(IC_CAL), fmt(k.weekDone) + ' / 7', 'Days this week', 'Monday to Sunday') +
+        '</div>' + grid +
+      '</div>';
+    }
+  });
+
+  // 6. By period
   addSection({
     id: 'periods', order: 30, title: 'Your progress by period', needs: 'attempts',
     render: function (ctx) {
@@ -284,9 +453,74 @@
     }
   });
 
-  // 5. Paths picked (read-only here; they are changed on My Account)
+  // Topics measured enough to judge (at least 3 answers), split by accuracy.
+  function measuredTopics(ctx) {
+    var rows = sortedGroups(ctx.stats.topics, function (k) { return topicName(ctx, k); });
+    var measured = rows.filter(function (r) { return r.g.n >= 3; });
+    return {
+      strong: measured.filter(function (r) { return pct(r.g.ok, r.g.n) >= 70; })
+        .sort(function (a, b) { return pct(b.g.ok, b.g.n) - pct(a.g.ok, a.g.n); }),
+      weak: measured.filter(function (r) { return pct(r.g.ok, r.g.n) < 70; })
+        .sort(function (a, b) { return pct(a.g.ok, a.g.n) - pct(b.g.ok, b.g.n); })
+    };
+  }
+  function topicRowOf(ctx, r) {
+    var t = ctx.names[r.key];
+    return groupRow(r.name, t ? (KIND_LABEL[t.kind] || '') : '', r.g);
+  }
+
+  // 9. Your strengths — topics you answer well (3+ answers, 70%+).
   addSection({
-    id: 'paths', order: 50, title: 'Your paths', needs: '',
+    id: 'strengths', order: 45, title: 'Your strengths', needs: 'attempts',
+    render: function (ctx) {
+      if (ctx.namesError) return '';
+      var m = measuredTopics(ctx);
+      if (!m.strong.length) {
+        return '<p class="small">No topic has reached 70% yet, over at least three answers. Keep going — they will show here.</p>';
+      }
+      return '<ul class="dashlist">' + m.strong.slice(0, 6).map(function (r) { return topicRowOf(ctx, r); }).join('') + '</ul>';
+    }
+  });
+
+  // 10. Areas to improve — topics that need work (3+ answers, under 70%).
+  addSection({
+    id: 'areas', order: 46, title: 'Areas to improve', needs: 'attempts',
+    render: function (ctx) {
+      if (ctx.namesError) return '';
+      var m = measuredTopics(ctx);
+      if (!m.weak.length) {
+        return '<p class="small">Every topic with at least three answers is above 70%. Keep it that way.</p>';
+      }
+      return '<ul class="dashlist">' + m.weak.slice(0, 6).map(function (r) { return topicRowOf(ctx, r); }).join('') + '</ul>';
+    }
+  });
+
+  // 11. Top students — the all-ages ranking (leaderboard RPC). Names and
+  // accuracy only; the function is the privacy wall (see its migration).
+  addSection({
+    id: 'board', order: 100, title: 'Top students', needs: 'attempts',
+    render: function (ctx) {
+      var b = ctx.board;
+      if (!b) return '';                                  // RPC not available: hide quietly
+      var board = b.board || [];
+      if (!board.length) {
+        return '<p class="small">No student has reached the ranking yet. Answer ' +
+          fmt(b.min_questions || 100) + ' different questions to be the first on the board.</p>';
+      }
+      return '<ol class="dashboardlb">' + board.map(function (s) {
+        return '<li class="dashlb' + (s.is_you ? ' is-you' : '') + '">' +
+          '<b>' + esc(ordinal(s.rank)) + '</b>' +
+          '<span class="dashlb-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
+          '<em>' + esc(String(s.accuracy)) + '% correct</em></li>';
+      }).join('') + '</ol>' +
+        '<p class="small dashnote">Ranked by accuracy, each question counted once. You join after ' +
+        fmt(b.min_questions || 100) + ' different questions.</p>';
+    }
+  });
+
+  // 12. Paths picked (read-only here; they are changed on My Account)
+  addSection({
+    id: 'paths', order: 110, title: 'Your paths', needs: '',
     render: function (ctx) {
       if (!ctx.exams.length) return '';
       return '<ul class="examlist">' + ctx.exams.map(function (e) {
@@ -350,12 +584,15 @@
     var ctx = {
       now: new Date(), rows: [], truncated: false, stats: null,
       names: {}, namesError: false, exams: [], attemptsError: false,
-      name: (auth && user && auth.nameFrom(user, '')) || ''   // quick name; refined by the profile below
+      name: (auth && user && auth.nameFrom(user, '')) || '',  // quick name; refined by the profile below
+      board: null
     };
 
     var pName = loadProfileName(client, uid).then(function (pn) {
       if (pn && auth && user) ctx.name = auth.nameFrom(user, pn);
     }, function () { /* keep the quick name */ });
+
+    var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
 
     var pAttempts = loadAttempts(client, uid).then(function (r) {
       ctx.rows = r.rows; ctx.truncated = r.truncated;
@@ -373,7 +610,7 @@
       function () { ctx.exams = []; }
     );
 
-    Promise.all([pAttempts, pExams, pName]).then(function () { root.innerHTML = renderAll(ctx); });
+    Promise.all([pAttempts, pExams, pName, pBoard]).then(function () { root.innerHTML = renderAll(ctx); });
   }
 
   document.addEventListener('DOMContentLoaded', function () {

@@ -44,19 +44,31 @@ _Last updated: 2026-11-04._
   out, errors, paging with 2,350 rows and with a 500-row server cap, the 10,000-row safety cap, mobile
   width). Not yet seen against the live database from the browser; the owner reviews it before any merge.
 
-- **Dashboard v2 pass** — on `claude/compassionate-franklin-ypvye1`, **NOT yet on `main`** (owner's call).
-  A professional redesign of `/dashboard/` to the owner's shorter spec, still read-only and attempts-only:
-  a **welcome hero with the person's name** ("Welcome back, <name>", first-timer gets "Welcome, <name>",
-  plus their main path), then **KPI cards** (icons): *Your overall progress* = Questions attempted / Correct
-  answers / Accuracy; *Today's activity* = Questions attempted today / Correct answers today (the rolling
-  7-day figure is still computed but no longer shown); *Your progress by period*; *Your progress by topics*;
-  *Your paths* (kept — it confirms the journey just chosen; flagged to the owner in case they want it gone).
-  New: `s.todayCorrect` in `computeStats`, `loadProfileName`, `welcomeHero`, `kpi`/`icon` helpers in
-  `assets/dashboard.js`; `.dashhero` + `.dashkpi*` styles in `site.css`. The **still-forbidden** set is
-  unchanged (mastery / levels / rank / streak / strengths / areas / readiness — the computation does not exist).
-  Also in this branch: **after choosing a journey, `/login/` now sends the person to `/dashboard/`** (was
-  `/account/`); and the guest score board carries one login CTA (earlier in this branch). Browser-tested with
-  Supabase mocked (hero, the five KPI figures, section order, paths, logged-in session).
+- **Dashboard v2 (full) pass** — on `claude/compassionate-franklin-ypvye1`, **NOT yet on `main`** (owner's call).
+  The owner (2026-11-04) asked for the full set of features *with working computations* on `/dashboard/`, and
+  to change rule 8/10 so levels/rank/streak/strengths/areas are allowed now. Built, still read-only:
+  - **Welcome hero** with the person's name ("Welcome back, <name>"; first-timer "Welcome, <name>"; main path).
+  - **Your overall progress** (KPIs): Questions attempted / Correct answers / Accuracy.
+  - **Your level in English literature**: five-rung ladder (Beginner→Master). Basis = *different questions
+    answered* (each question once, from `question_id`, now added to the attempts select) **and** overall
+    accuracy. **Thresholds are a PROPOSAL awaiting the owner's numbers** (the `LADDER` table in `dashboard.js`:
+    Reader 50/50%, Scholar 150/60%, Critic 400/70%, Master 800/80%). Reading is NOT used (reading_progress = 0 rows).
+  - **Your rank** + **Top students**: from `public.leaderboard()` RPC — **confirmed live** (function exists;
+    130 attempt rows, 2 users; nobody ranked yet as the floor is 100 different questions). Cards hide if the RPC
+    is ever unavailable.
+  - **Today's activity**: attempted / correct today. **Your daily streak**: days in a row + days this week +
+    a Mon–Sun grid, all from the active-day set (visitor's local day). **By period**, **By topics**,
+    **Your strengths** (topics 3+ answers, ≥70%), **Areas to improve** (3+ answers, <70%), **Your paths**.
+  - New in `dashboard.js`: `question_id` in the select; `s.unique`/`s.days` + `computeStreak` + `dayKey` in
+    `computeStats`; `loadBoard`, `loadProfileName`, `welcomeHero`, `kpi`/`icon`/`ordinal`/`stars`/`LADDER`/
+    `levelIndex`/`measuredTopics` helpers. New styles in `site.css`: `.dashhero`, `.dashkpi*`, `.dashlevel*`,
+    `.dashladder`, `.dashstreak`/`.dashweek`, `.dashboardlb`/`.dashlb`.
+  - **Still NOT shown**: decay, a suggested next step, knowledge/exam-readiness meters, exam-wise progress.
+  - Also this branch: **after choosing a journey, `/login/` sends the person to `/dashboard/`** (was `/account/`);
+    the guest score board carries one login CTA; the Download-PDF button is back on the score board.
+  - Browser-tested against `_site` with Supabase mocked (hero, all KPIs, the 11 sections in order, level ladder,
+    rank, streak + week grid, strengths/areas split, top-students list, paths).
+  **PENDING the owner**: confirm (or replace) the five level thresholds before this goes live.
 
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
