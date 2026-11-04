@@ -138,6 +138,17 @@
     }, function () { return null; });
   }
 
+  // The British-literature syllabus (per-age question counts + id prefixes),
+  // generated at build time. null if it cannot be fetched — then the level
+  // card shows a "could not load" line instead of a wrong number.
+  function loadSyllabus() {
+    try {
+      return fetch('/assets/syllabus-british.json', { cache: 'no-cache' })
+        .then(function (r) { return r.ok ? r.json() : null; })
+        .catch(function () { return null; });
+    } catch (e) { return Promise.resolve(null); }
+  }
+
   // The person's display name (own profile row only, by RLS). '' if none.
   function loadProfileName(client, uid) {
     return client.from('profiles').select('display_name').eq('id', uid).maybeSingle()
@@ -284,30 +295,63 @@
   });
 
   /* ---------------------------------------------------------
-     Your level in English literature.
+     Your level in English literature  (owner's model, 2026-11-04)
 
-     THE LADDER AND ITS THRESHOLDS ARE THE OWNER'S TO SET (CLAUDE.md rule 8/10).
-     The numbers below are a PROPOSAL, waiting for the owner's confirmation.
-     Change only this one table to change how the level moves up — nothing else.
-     Basis: "different questions answered" (each question counted once) AND the
-     overall accuracy. Reading is not used because reading_progress is still empty.
+     British literature = the 20 Daily ages, each worth an equal 5% (20 x 5 = 100%).
+     An age is CLEARED when the learner has covered at least `coverGate` of its
+     questions AND answered at least `accGate` of those right (each question once,
+     by its latest answer — repeat-proof, same rule as the leaderboard). Five
+     stages, Beginner -> Master, one per 20% band (4 cleared ages each).
+
+     The per-age denominators (how many questions, and the id prefix that marks
+     an age) come from assets/syllabus-british.json, generated at build time from
+     the Daily files (tools/build-syllabus.js). Reading is not used (no data yet).
+     Only British literature is measured for now; the other journeys are empty
+     until their syllabus and questions exist.
      --------------------------------------------------------- */
-  var LADDER = [
-    { name: 'Beginner', minQ: 0,   minAcc: 0  },
-    { name: 'Reader',   minQ: 50,  minAcc: 50 },
-    { name: 'Scholar',  minQ: 150, minAcc: 60 },
-    { name: 'Critic',   minQ: 400, minAcc: 70 },
-    { name: 'Master',   minQ: 800, minAcc: 80 }
-  ];
-
-  // The highest rung whose two gates (enough different questions AND enough
-  // accuracy) are both cleared. Index 0 (Beginner) is always cleared.
-  function levelIndex(uniqueQ, acc) {
-    var at = 0;
-    for (var i = 1; i < LADDER.length; i++) {
-      if (uniqueQ >= LADDER[i].minQ && acc >= LADDER[i].minAcc) at = i; else break;
+  // Work out, per age, what the learner has covered and how much is right.
+  // rows are newest-first, so the FIRST time a question id is seen is its latest
+  // answer. Only ids whose prefix belongs to a Daily age are counted (MCQ ids,
+  // with their longer prefixes, fall through and are ignored).
+  function computeBritish(rows, syl) {
+    if (!syl || !syl.ages) return null;
+    var byPrefix = {}, ages = syl.ages.map(function (a) {
+      var o = { slug: a.slug, name: a.name, total: a.total, answered: 0, correct: 0 };
+      byPrefix[a.prefix] = o;
+      return o;
+    });
+    var seen = {};
+    for (var i = 0; i < rows.length; i++) {
+      var qid = rows[i].question_id;
+      if (!qid || seen[qid]) continue;
+      var m = /^([a-z]+)-/.exec(String(qid));
+      if (!m) continue;
+      var age = byPrefix[m[1]];
+      if (!age) continue;                 // not a British Daily question (e.g. an MCQ)
+      seen[qid] = 1;
+      age.answered++;
+      if (rows[i].is_correct === true) age.correct++;
     }
-    return at;
+    var cover = syl.coverGate || 0.6, accG = syl.accGate || 0.6, clearedN = 0;
+    ages.forEach(function (a) {
+      a.coverage = a.total ? a.answered / a.total : 0;
+      a.acc = a.answered ? a.correct / a.answered : 0;
+      a.cleared = a.coverage >= cover && a.acc >= accG;
+      if (a.cleared) clearedN++;
+      // What is still needed to clear this age.
+      if (a.cleared) a.hint = '';
+      else if (a.coverage < cover) a.hint = 'Answer ' + Math.max(1, Math.ceil(cover * a.total) - a.answered) + ' more';
+      else a.hint = Math.max(1, Math.ceil(accG * a.answered) - a.correct) + ' more right to clear';
+    });
+    var unit = 100 / ages.length;                       // 5% per age
+    var pctClear = Math.round(clearedN * unit);
+    var perBand = ages.length / syl.ladder.length;      // 20 ages / 5 stages = 4 ages per stage
+    var levelIdx = Math.min(syl.ladder.length - 1, Math.floor(clearedN / perBand));
+    return {
+      ages: ages, cleared: clearedN, total: ages.length, pct: pctClear,
+      levelIdx: levelIdx, levelName: syl.ladder[levelIdx], ladder: syl.ladder,
+      perBand: perBand, coverGate: cover, accGate: accG
+    };
   }
 
   function stars(n) {
@@ -320,40 +364,61 @@
     return '<span class="dashstars">' + out + '</span>';
   }
 
-  // 2. Your level in English literature — the headline status, from the ladder above.
+  // 2. Your level in English literature — British literature, the 20 ages.
   addSection({
     id: 'level', order: 15, title: 'Your level in English literature', needs: 'attempts',
     render: function (ctx) {
-      var s = ctx.stats;
-      var acc = pct(s.correct, s.total);
-      var at = levelIndex(s.unique, acc);
-      var cur = LADDER[at], next = LADDER[at + 1];
-      var need = '';
-      if (next) {
-        var needQ = Math.max(0, next.minQ - s.unique);
-        var needAcc = Math.max(0, next.minAcc - acc);
-        if (needQ && needAcc) need = needQ + ' more questions and ' + needAcc + '% more accuracy to reach ' + next.name;
-        else if (needQ) need = needQ + ' more different questions to reach ' + next.name;
-        else if (needAcc) need = needAcc + '% more accuracy to reach ' + next.name;
-        else need = 'Ready to move up to ' + next.name;
-      } else {
-        need = 'You are at the top of the ladder.';
+      var B = ctx.british;
+      if (!B) {
+        return '<p class="small">We could not load the syllabus for your level. Please refresh the page to try again.</p>';
       }
+      var at = B.levelIdx, next = B.ladder[at + 1];
+      var toNext = (at + 1) * B.perBand;                 // ages cleared needed for the next stage
+      var need = next
+        ? 'Clear ' + (toNext - B.cleared) + ' more age' + ((toNext - B.cleared) === 1 ? '' : 's') + ' to reach ' + next
+        : 'You have mastered every age.';
+
+      // Overall bar with the four stage boundaries at 20/40/60/80.
+      var marks = [20, 40, 60, 80].map(function (m) {
+        return '<span class="dashbarmark" style="left:' + m + '%"></span>';
+      }).join('');
+
+      // One tile per age: cleared (reward tick) or its progress to the gate.
+      var tiles = B.ages.map(function (a) {
+        var accPc = Math.round(a.acc * 100);
+        var state = a.cleared ? 'is-cleared' : a.answered ? 'is-doing' : '';
+        var right = a.cleared
+          ? '<span class="dashage-done">✓ Cleared</span>'
+          : '<span class="dashage-hint">' + esc(a.hint) + '</span>';
+        return '<li class="dashage ' + state + '">' +
+          '<div class="dashage-top"><b>' + esc(a.name) + '</b>' + right + '</div>' +
+          '<div class="dashage-meta">' + a.answered + ' / ' + a.total + ' answered' +
+            (a.answered ? ' &middot; ' + accPc + '% correct' : '') + '</div>' +
+          '<div class="dashbar" aria-hidden="true"><span class="' + (a.acc >= B.accGate ? 'ok' : '') +
+            '" style="width:' + accPc + '%"></span><i class="dashbar-gate" style="left:' +
+            Math.round(B.accGate * 100) + '%"></i></div>' +
+        '</li>';
+      }).join('');
+
       return '<div class="dashlevel">' +
         '<div class="dashlevel-now">' +
-          '<span class="dashlevel-badge">' + stars(at + 1) + '<b>' + esc(cur.name) + '</b></span>' +
+          '<span class="dashlevel-badge">' + stars(at + 1) + '<b>' + esc(B.levelName) + '</b></span>' +
           '<span class="dashlevel-next">' + esc(need) + '</span>' +
         '</div>' +
         '<div class="dashkpis dashkpis-2">' +
-          kpi('is-ink', icon(IC_LIST), fmt(s.unique), 'Different questions answered', 'Each question counted once') +
-          kpi('is-gold', icon(IC_TARGET), acc + '%', 'Accuracy', 'Across all your answers') +
+          kpi('is-gold', icon(IC_TARGET), B.pct + '%', 'British literature covered', B.cleared + ' of ' + B.total + ' ages cleared') +
+          kpi('is-ink', icon(IC_LIST), B.cleared + ' / ' + B.total, 'Ages cleared', 'Each age is 60% answered at 60% correct') +
         '</div>' +
+        '<div class="dashbigbar" aria-hidden="true"><span style="width:' + B.pct + '%"></span>' + marks + '</div>' +
         '<ol class="dashladder">' +
-          LADDER.map(function (L, i) {
+          B.ladder.map(function (L, i) {
             return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '">' +
-              '<i></i><b>' + esc(L.name) + '</b>' + stars(i + 1) + '</li>';
+              '<i></i><b>' + esc(L) + '</b>' + stars(i + 1) + '</li>';
           }).join('') +
         '</ol>' +
+        '<details class="dashages"><summary>Your ' + B.total + ' ages, one by one</summary>' +
+          '<ol class="dashagelist">' + tiles + '</ol>' +
+        '</details>' +
       '</div>';
     }
   });
@@ -585,7 +650,7 @@
       now: new Date(), rows: [], truncated: false, stats: null,
       names: {}, namesError: false, exams: [], attemptsError: false,
       name: (auth && user && auth.nameFrom(user, '')) || '',  // quick name; refined by the profile below
-      board: null
+      board: null, syllabus: null, british: null
     };
 
     var pName = loadProfileName(client, uid).then(function (pn) {
@@ -593,6 +658,7 @@
     }, function () { /* keep the quick name */ });
 
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
+    var pSyl = loadSyllabus().then(function (s) { ctx.syllabus = s; }, function () { ctx.syllabus = null; });
 
     var pAttempts = loadAttempts(client, uid).then(function (r) {
       ctx.rows = r.rows; ctx.truncated = r.truncated;
@@ -610,7 +676,10 @@
       function () { ctx.exams = []; }
     );
 
-    Promise.all([pAttempts, pExams, pName, pBoard]).then(function () { root.innerHTML = renderAll(ctx); });
+    Promise.all([pAttempts, pExams, pName, pBoard, pSyl]).then(function () {
+      try { ctx.british = computeBritish(ctx.rows, ctx.syllabus); } catch (e) { ctx.british = null; }
+      root.innerHTML = renderAll(ctx);
+    });
   }
 
   document.addEventListener('DOMContentLoaded', function () {

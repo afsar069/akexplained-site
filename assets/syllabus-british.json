@@ -1,0 +1,135 @@
+{
+  "journey": "british",
+  "name": "British Literature",
+  "coverGate": 0.6,
+  "accGate": 0.6,
+  "ladder": [
+    "Beginner",
+    "Reader",
+    "Scholar",
+    "Critic",
+    "Master"
+  ],
+  "ages": [
+    {
+      "slug": "anglo-saxon",
+      "name": "Anglo-Saxon Period",
+      "prefix": "as",
+      "total": 100
+    },
+    {
+      "slug": "anglo-norman",
+      "name": "Anglo-Norman Period",
+      "prefix": "an",
+      "total": 100
+    },
+    {
+      "slug": "age-of-chaucer",
+      "name": "Age of Chaucer",
+      "prefix": "ac",
+      "total": 100
+    },
+    {
+      "slug": "fifteenth-century",
+      "name": "Fifteenth Century",
+      "prefix": "fc",
+      "total": 100
+    },
+    {
+      "slug": "renaissance",
+      "name": "Renaissance Period",
+      "prefix": "rn",
+      "total": 100
+    },
+    {
+      "slug": "early-tudor",
+      "name": "Early Tudor Period",
+      "prefix": "et",
+      "total": 100
+    },
+    {
+      "slug": "elizabethan",
+      "name": "Elizabethan Age",
+      "prefix": "el",
+      "total": 100
+    },
+    {
+      "slug": "jacobean",
+      "name": "Jacobean Age",
+      "prefix": "jb",
+      "total": 100
+    },
+    {
+      "slug": "caroline",
+      "name": "Caroline Age",
+      "prefix": "cr",
+      "total": 100
+    },
+    {
+      "slug": "commonwealth",
+      "name": "Commonwealth Period",
+      "prefix": "cw",
+      "total": 100
+    },
+    {
+      "slug": "neoclassical",
+      "name": "Neoclassical Period",
+      "prefix": "nc",
+      "total": 100
+    },
+    {
+      "slug": "restoration",
+      "name": "Restoration Age",
+      "prefix": "rs",
+      "total": 100
+    },
+    {
+      "slug": "augustan",
+      "name": "Augustan Age",
+      "prefix": "au",
+      "total": 100
+    },
+    {
+      "slug": "age-of-sensibility",
+      "name": "Age of Sensibility",
+      "prefix": "sn",
+      "total": 100
+    },
+    {
+      "slug": "romantic",
+      "name": "Romantic Period",
+      "prefix": "rm",
+      "total": 100
+    },
+    {
+      "slug": "victorian",
+      "name": "Victorian Period",
+      "prefix": "vc",
+      "total": 100
+    },
+    {
+      "slug": "edwardian",
+      "name": "Edwardian Period",
+      "prefix": "ed",
+      "total": 100
+    },
+    {
+      "slug": "georgian",
+      "name": "Georgian Period",
+      "prefix": "gr",
+      "total": 100
+    },
+    {
+      "slug": "modern",
+      "name": "Modern Period",
+      "prefix": "md",
+      "total": 100
+    },
+    {
+      "slug": "postmodern",
+      "name": "Postmodern Period",
+      "prefix": "pm",
+      "total": 100
+    }
+  ]
+}

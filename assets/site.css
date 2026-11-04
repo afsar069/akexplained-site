@@ -3191,6 +3191,26 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashladder li.is-now b{color:var(--ink)}
 @media (max-width:560px){.dashladder{grid-template-columns:repeat(2,1fr)}}
 
+/* Overall British-literature bar with the four stage boundaries. */
+.dashbigbar{position:relative;height:12px;border-radius:999px;background:var(--border);overflow:hidden;margin:16px 0 2px}
+.dashbigbar > span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--gold))}
+.dashbarmark{position:absolute;top:0;bottom:0;width:2px;background:var(--card-paper);opacity:.85}
+
+/* The 20 ages, one by one (collapsed by default). */
+.dashages{margin-top:16px}
+.dashages > summary{cursor:pointer;font-weight:600;color:var(--teal-dark);padding:4px 0}
+.dashagelist{list-style:none;margin:10px 0 0;padding:0;max-width:none;display:grid;gap:10px}
+.dashage{border:1px solid var(--card-line);border-radius:12px;padding:12px 14px;background:var(--card-paper)}
+.dashage.is-cleared{border-color:color-mix(in srgb,var(--teal) 40%,var(--border));background:var(--teal-soft)}
+.dashage-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
+.dashage-top b{font-weight:600;color:var(--ink)}
+.dashage-done{font-size:.82rem;font-weight:700;color:var(--teal-dark)}
+.dashage-hint{font-size:.82rem;color:var(--mcq-ink-faint)}
+.dashage-meta{font-size:.82rem;color:var(--mcq-ink-faint);margin:3px 0 8px}
+.dashage .dashbar{position:relative;height:7px}
+.dashbar-gate{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--gold);border-radius:2px}
+@media (min-width:620px){.dashagelist{grid-template-columns:1fr 1fr}}
+
 /* Streak — the week row under the two stats. */
 .dashweek{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
 .dashweek span{
