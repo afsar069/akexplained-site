@@ -92,16 +92,18 @@ The owner's rules (2026-11-04), encoded in the SQL:
 
 `SECURITY DEFINER` (RLS is own-rows-only, a board must look across students), so the function itself is
 the privacy boundary: about another student it returns **only the display name they chose and their
-place in the order** (1st, 2nd, 3rd…). The owner refined this twice on 2026-11-04: first "name + score,
-nothing more, like a Telegram group leaderboard", then "no score either, just the ranking". So the board
-entries carry `rank`, `name`, `is_you` and nothing else. The score (accuracy) and the question count
-still **decide** the order server-side but are never sent for another student; the caller's own numbers
-stay in the `you` object. Top ten only. EXECUTE revoked from `public`/`anon`, granted to `authenticated`.
+accuracy** (owner's words, 2026-11-04: "name + score, nothing more, like a Telegram group leaderboard"),
+top ten only. The question count was dropped from the board entries so it is not even in the network
+response for someone else; the caller's own count stays in the `you` object. EXECUTE revoked from
+`public`/`anon`, granted to `authenticated`.
 
-**Owner applied 2026-11-04** (verified live after the first version: one student qualifies — 100 answers,
-58%; `anon` cannot execute, `authenticated` can). The function was then tightened twice (drop question
-count, then drop accuracy). The migration is `create or replace`, so the owner re-runs the same file to
-pick up each change — **the last re-run, after dropping accuracy, is pending** at the time of writing.
+**Applied and settled 2026-11-04.** The owner ran the first version, then the question-count tightening
+(both confirmed; `create or replace`, so re-running the same file picked it up). A third version that also
+dropped the accuracy was written and committed, but the owner decided against it and it was reverted — the
+owner's final choice is **rank + chosen name + overall accuracy %**, which is what the live function
+already returns and what the UI shows. No further re-run is needed; the migration file in the repo matches
+the live function (board = rank, name, accuracy, is_you). Verified live 2026-11-04: board keys are exactly
+those four; one student qualifies (100 answers, 58%); `anon` cannot execute, `authenticated` can.
 
 **Security advisor — one expected WARN that will not clear, by design.** After applying, advisor 0029
 (`authenticated_security_definer_function_executable`) flags `public.leaderboard()`: a signed-in user

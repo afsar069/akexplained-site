@@ -1129,15 +1129,14 @@
 
     // Patti tabhi dikhao jab usme koi ho
     if (!card || !row || !board.length) return;
-    // Sirf jagah aur naam — koi score nahi (malik ka niyam). Rank bada,
-    // naam uske neeche.
     row.innerHTML = board.map(function (s) {
       return '<li class="cbt-lb' + (s.is_you ? ' is-you' : '') + '">' +
         '<b>' + esc(ordinal(s.rank)) + '</b>' +
         '<span class="cbt-lbname">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
+        '<em>' + esc(String(s.accuracy)) + '%</em>' +
       '</li>';
     }).join('');
-    sub.textContent = 'Places go by accuracy, so more accurate answers climb higher. ' +
+    sub.textContent = 'Ranked by accuracy. Each question counts once, by your latest answer. ' +
       'You join the list after answering ' + min + ' different questions.';
     if (!you.eligible && you.needed) {
       note.textContent = 'Answer ' + you.needed + ' more question' + (you.needed === 1 ? '' : 's') +
