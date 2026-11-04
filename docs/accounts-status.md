@@ -91,11 +91,30 @@ The owner's rules (2026-11-04), encoded in the SQL:
   answer raises the score. Only the `latest` CTE changes if the owner wants another rule.
 
 `SECURITY DEFINER` (RLS is own-rows-only, a board must look across students), so the function itself is
-the privacy boundary: at most a display name, a question count and an accuracy, top ten only. EXECUTE
-revoked from `public`/`anon`, granted to `authenticated`. **Run the security advisors after applying it.**
+the privacy boundary: about another student it returns **only the display name they chose and their
+accuracy** (owner's words, 2026-11-04: "name + score, nothing more, like a Telegram group leaderboard"),
+top ten only. The question count was dropped from the board entries so it is not even in the network
+response for someone else; the caller's own count stays in the `you` object. EXECUTE revoked from
+`public`/`anon`, granted to `authenticated`.
+
+**Owner applied the first version 2026-11-04** (verified live: one student qualifies — 100 answers, 58%;
+`anon` cannot execute, `authenticated` can). Then the question-count tightening above was made. Because
+the migration is `create or replace`, the owner re-runs the same file to pick it up — **pending that
+re-run** at the time of writing.
+
+**Security advisor — one expected WARN that will not clear, by design.** After applying, advisor 0029
+(`authenticated_security_definer_function_executable`) flags `public.leaderboard()`: a signed-in user
+can call a `SECURITY DEFINER` function. This is **intentional and cannot be removed without deleting the
+feature** — the whole point is that signed-in students call it, and it cannot be `SECURITY INVOKER`
+because RLS would then limit it to the caller's own rows and no board could be built. The function is
+written as the privacy boundary (tightly fixed return shape, nothing leaks beyond name + accuracy of the
+top ten), so leaving it callable is safe. Treat this WARN like the leaked-password one: **known, accepted,
+do not raise it again.** (The other WARN, leaked-password protection, is the pre-existing one the owner
+skipped on 2026-11-03.)
 
 `/privacy/` changed in the same commit (rule 10): a new section says reaching the top ten makes the name
-on the account and the accuracy visible to other logged-in students, nothing else is, and how to stay off.
+on the account and the accuracy visible to other logged-in students, nothing else is (not the question
+count, not which questions, not email, not timing), and how to stay off.
 
 ### Still open on the Score Board
 - The **level card** keeps five empty cells. Two of them can never be filled — **"Tests taken"** and

@@ -77,11 +77,14 @@ as $$
     'total_ranked',  (select count(*) from ranked),
     -- The top ten only. A student outside them is never named to anyone.
     'board', coalesce((
+      -- Owner's rule (2026-11-04): about another student, show ONLY the name
+      -- they chose and their score. The question count is deliberately NOT
+      -- here, so it is not even in the network response for someone else.
+      -- (The caller's own question count stays, in the "you" object below.)
       select jsonb_agg(
                jsonb_build_object(
                  'rank',      r.pos,
                  'name',      coalesce(nullif(btrim(pr.display_name), ''), 'Student'),
-                 'questions', r.questions,
                  'accuracy',  r.accuracy,
                  'is_you',    r.user_id = auth.uid()
                )
