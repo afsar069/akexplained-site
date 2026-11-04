@@ -1348,6 +1348,7 @@
     return '<div class="cbt-after">' +
       '<a class="cbt-btn is-lead" href="' + esc(rev) + '">Review all questions</a>' +
       '<a class="cbt-btn" href="' + esc(rev) + '?only=wrong">Review incorrect only</a>' +
+      '<button type="button" class="cbt-btn" id="cbtPrint">Download result (PDF)</button>' +
       '<button type="button" class="cbt-btn" id="cbtAgain">Take a new test</button>' +
       '<a class="cbt-btn is-gold" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
         '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
@@ -1678,6 +1679,9 @@
           (+cell.getAttribute('data-go') + 1);
       });
     }
+
+    var pr = $('#cbtPrint');
+    if (pr) pr.addEventListener('click', function () { window.print(); });
 
     var again = $('#cbtAgain');
     if (again) {

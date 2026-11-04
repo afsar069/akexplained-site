@@ -2755,7 +2755,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
    kya kamzor. Sawal aur unke jawab nahi — wo chhapne ke liye nahi hain. */
 @media print{
   .cbt-bar,.cbt-side,.cbt-nav,.cbt-submit,
-  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,
+  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,.cbt-cta,
   .site-header,.site-footer,.crumb,.skip{display:none !important}
   .cbt-card .sub{display:none}
   body{background:#fff}
