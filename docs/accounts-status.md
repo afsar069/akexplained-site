@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-03._
+_Last updated: 2026-11-04._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -18,7 +18,8 @@ _Last updated: 2026-11-03._
   button shows on `/login/` on its own.
 - **Privacy/Terms are accurate** (accounts, Google, Supabase, Cloudflare; deletion on request).
   `/privacy/` also names **Resend** as the email provider for the sign-up confirmation and password-reset
-  emails ("Five outside services"; "no newsletter" line untouched; "Last updated" 3 November 2026).
+  emails ("Five outside services"; "no newsletter" line untouched). **"Last updated" is now 4 November 2026**
+  on the branch, for the leaderboard section.
 - **Account emails are live** (owner, 2026-11-03): custom SMTP via **Resend** is on, **Confirm email is ON**,
   and the owner tested the full reset flow end to end (reset mail arrives, a new password can be set).
   The reset / confirm code (`60cac7e`, `assets/login.js`, `auth.js`) is on `main`.
@@ -56,35 +57,53 @@ browser receives a few dozen rows and not thousands. Until then, past the 10,000
 it (rule 9), run the security advisors (rule 14), then replace `loadAttempts`/`computeStats` in
 `assets/dashboard.js`; the sections themselves need no change.
 
-## Open: the MCQ "Your Final Score Board" still talks as if accounts do not exist (found 2026-11-04)
-The Score Board is the result screen at the end of an MCQ test (`assets/cbt.js`, `showResult()`). It answers
-"how did I do on THIS test" (one test in memory, plus the last 10 attempts of a set kept in this browser
-only), so it is **not** a dashboard and cannot simply become one. Checked in a browser as a mock logged-in
-student: the test answers DO reach `attempts` (rows with `topic_id`, `period_id`, `source = cbt`), so the
-dashboard counts MCQs. But the screen is now wrong for a logged-in student:
-- The name shows **"Guest User"**: `whoAmI()` (about line 1009) reads `window.AK.user.name`, and nothing in the
-  site ever sets `window.AK`. It should use `window.akAuth` (`nameFrom`, the session).
-- False wording now that accounts are live: "Needs a student account" (percentile card, ~1001), "...opens with
-  a student account" and the button "Student accounts — coming soon" (topic card, ~1056 and ~1066),
-  "Coming with student accounts" (streak card ~1311 and level card ~1251).
-- No link from the Score Board to `/dashboard/`. The "Enrol now / Coming soon" box on article pages
-  (`_includes/base.njk`, `railbox soonbox`) also still says "Coming soon".
-- The "journey" bar (30 / 50 / 75 / 90 %, up to "Exam ready"), the grade names and the "Beginner … Master"
-  ladder are per-paper wording that already exists. They are NOT to be copied into the dashboard (no invented
-  thresholds, no readiness meters until the computation exists).
-What the Score Board's locked cards need, and whether the data can honestly give it:
-- Topic-wise performance: the dashboard already shows it (database topic names, all tests together).
-- Daily streak (days in a row, days this week): can be worked out from `answered_at`, no threshold needed.
-- Level ladder, "Exam ready" journey, suggested next step: wait for the mastery computation (item E).
-- Percentile vs others: needs data across users (RLS is own-rows-only, and `/privacy/` says nothing is shared);
-  not for now.
-- "Tests taken" and "Left unanswered": NOT in the database. `track.js` writes only answered questions and there
-  is no test id.
-**Waiting on the owner's choice** (asked 2026-11-04): (1) publish the dashboard as it is; (2) a small Score
-Board fix: real name for logged-in students, honest wording (guests: "Create a free account" to `/login/`;
-logged-in: no "needs an account" wording), and an "Open your dashboard" link; (3) a streak section on the
-dashboard. Optional: show the dashboard numbers with the Score Board's ring and cards so the two look alike.
-Do not start any of these until the owner picks.
+## Score Board honesty pass + leaderboard (done 2026-11-04, on the branch, NOT on `main`)
+The MCQ result screen (`assets/cbt.js`, `showResult()`) was written before accounts existed and still
+talked as if they were coming. Fixed in two commits on `claude/zen-hamilton-41vw9q`:
+
+- **Real name.** `whoAmI()` read `window.AK.user.name`, which nothing on the site ever sets, so every
+  logged-in student was shown as "Guest User". It now reads the cached header name (`ak:name`) and
+  `paintAuthBits()` corrects it from the session and the `profiles` row.
+- **Two-sided markup.** Anything that depends on login is written twice, `data-auth-in` and
+  `data-auth-out`, and opened by the login state. `auth.js` gained `data-guest-only` (the opposite of
+  the existing `data-auth-only`). The stale "Enrol now / Coming soon" rail box in `_includes/base.njk`
+  is now two real boxes: sign up, or open your dashboard.
+- **Topic-wise table unlocked.** It holds this paper's own numbers; no account was ever needed. Its
+  box now points at the dashboard. `.cbt-lockbox` had to leave `position:absolute` or it would have
+  covered the last rows.
+- **`[hidden]` must be spelled out** where a class sets its own `display` (the pattern already used by
+  `.mcq-body` and `.iq-body`). Added for `.cbt` and `.railbox`, or the hidden half of every pair stayed
+  on screen. This bit once; check it whenever a new `data-auth-*` pair is added.
+
+### The leaderboard — SQL IS WAITING FOR THE OWNER TO RUN
+`supabase/migrations/20261104120000_add_leaderboard_function.sql` creates `public.leaderboard()`.
+**Not applied.** Until the owner runs it the card and the rank cell simply stay hidden (tested), so the
+branch is safe to publish either way.
+
+The owner's rules (2026-11-04), encoded in the SQL:
+- A student joins the ranking after **100 different questions**. (Without a floor, two correct answers
+  would be 100% and top the board.)
+- Ranking is **by accuracy**. **Names are shown** — the owner chose this over an anonymous board.
+- **No minimum number of students.** It runs from the first eligible student and reorders as people
+  pass each other. Today exactly one student qualifies (100 answers, 58%); the second has 10.
+- One decision Claude took and flagged: **accuracy counts each question once, by its latest answer**,
+  not every attempt, or one easy question answered 500 times is 100%. It also means fixing a wrong
+  answer raises the score. Only the `latest` CTE changes if the owner wants another rule.
+
+`SECURITY DEFINER` (RLS is own-rows-only, a board must look across students), so the function itself is
+the privacy boundary: at most a display name, a question count and an accuracy, top ten only. EXECUTE
+revoked from `public`/`anon`, granted to `authenticated`. **Run the security advisors after applying it.**
+
+`/privacy/` changed in the same commit (rule 10): a new section says reaching the top ten makes the name
+on the account and the accuracy visible to other logged-in students, nothing else is, and how to stay off.
+
+### Still open on the Score Board
+- The **level card** keeps five empty cells. Two of them can never be filled — **"Tests taken"** and
+  **"Left unanswered"** are not in the database (`track.js` writes one row per *answered* question and no
+  test id). "Your level" waits on the owner's cut-offs. Decide whether the card is rebuilt from the three
+  honest numbers or dropped.
+- The **streak card** is still empty, but days in a row / days this week *are* computable from
+  `answered_at`. That is the next cheap win (release 2 of the plan).
 
 ## Owner to do in the dashboards (not code)
 1. ~~Leaked-password protection~~ — **skipped on purpose** (owner, 2026-11-03: it needs the Supabase Pro plan
@@ -109,6 +128,8 @@ Do not start any of these until the owner picks.
 - **C** — migrate a guest's `localStorage` attempts into the DB on login.
 - **I** — dashboard v1 (show a user their attempts). **Built on the feature branch, awaiting the owner's
   review**; the server-side grouping that replaces its load-everything query is in "Known v1 limitation" above.
+- **L** — leaderboard. Code is on the branch; **the SQL is waiting for the owner to run** (see above).
+- **M** — streak section on the dashboard (days in a row / days this week from `answered_at`). Agreed, not built.
 - **E** — mastery meter (roll attempts up the topic tree).
 - **J** — fix the pre-existing `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404s.
 - **D** — NET taxonomy mapping (owner supplies the data).
