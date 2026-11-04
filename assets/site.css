@@ -2237,6 +2237,43 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-lockbox b{color:var(--ink)}
 .cbt-lockbox .cbt-begin{font-size:.9rem;padding:10px 22px;background:var(--gold);color:#2F2206}
 .cbt-lockbox .cbt-begin:hover{background:#A2761F;color:#2F2206}
+/* ---------- Top students ki patti ---------- */
+/* Das naam ek line me. Chhoti screen par apne aap lapet jate hain. */
+.cbt-boardhead{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:2px}
+.cbt-boardhead h2{margin:0}
+.cbt-board .sub{margin:0 0 14px}
+/* Malik ne kaha tha: das students EK line me. Isliye wide screen par pakke
+   das khane, aur naam do line me lapet sakta hai (kaat kar "Ayesha K…"
+   karne se behtar hai). Chhoti screen par apne aap kam khane ho jate hain. */
+.cbt-lbrow{
+  /* max-width:none — warna line 142 ka global ul,ol{max-width:74ch} patti ko
+     607px par rok deta hai aur das naam bina wajah bhinch jate hain. */
+  list-style:none;margin:0;padding:0;max-width:none;
+  display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;
+}
+.cbt-lb{
+  display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;
+  background:var(--tint);border:1px solid var(--card-line);border-radius:12px;padding:10px 5px;
+  min-width:0;
+}
+.cbt-lb::before{display:none}
+.cbt-lb b{font-family:var(--sans);font-size:.74rem;font-weight:700;color:var(--mcq-ink-faint)}
+.cbt-lbname{
+  font-size:.76rem;font-weight:600;color:var(--ink);line-height:1.25;
+  /* break-word, anywhere nahi: anywhere grid ke min-content naap ko bhi
+     ghata deta hai, jisse "Student" bhi beech se tooT jata tha. */
+  max-width:100%;overflow-wrap:break-word;
+}
+.cbt-lb em{font-style:normal;font-size:.95rem;font-weight:700;color:var(--teal)}
+/* Apni jagah saaf dikhe. */
+.cbt-lb.is-you{background:var(--cream);border-color:var(--gold);border-width:1.5px}
+.cbt-lb.is-you b,.cbt-lb.is-you .cbt-lbname{color:#7A5A16}
+.cbt-lb.is-you em{color:#7A5A16}
+.cbt-boardnote{margin:13px 0 0;font-size:.86rem;color:var(--body)}
+
+/* Apni rank ka chhota khana (upar ki patti me) */
+.cbt-num.is-rank .cbt-numic{background:var(--cream);color:var(--gold);border:1px solid var(--gold)}
+
 /* Percentile ka chhota khana */
 .cbt-num.is-locked{background:var(--tint);border-style:dashed}
 .cbt-num.is-locked b{font-family:var(--sans);font-size:1.05rem;color:var(--mcq-ink-faint)}
@@ -2604,6 +2641,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 
 /* ---------- chhoti screen ---------- */
 @media (max-width:980px){
+  .cbt-lbrow{grid-template-columns:repeat(5,minmax(0,1fr))}   /* tablet: paanch-paanch, do line */
   .cbt-three{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cbt-top,.cbt-two-wide,.cbt-two-an{grid-template-columns:1fr}
   .cbt-cheer{text-align:left}
@@ -2621,6 +2659,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-facts,.cbt-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cbt-facts .cbt-fact:last-child:nth-child(odd){grid-column:1/-1}   /* akela aakhri tile poori chaudai le, taaki "Easy + Medium" ek line me aaye */
   .cbt-nums3{grid-template-columns:1fr}
+  .cbt-lbrow{grid-template-columns:repeat(2,minmax(0,1fr))}   /* phone: do-do karke */
   .cbt-pace{grid-template-columns:1fr}
   .cbt-two,.cbt-three,.cbt-two-wide,.cbt-two-an,.cbt-top{grid-template-columns:1fr}
   .cbt-track{margin:44px 0 54px}
@@ -2703,7 +2742,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-printhead img{width:34px;height:34px}
   .cbt-printhead span{font-size:11pt;line-height:1.35}
   .cbt-printhead b{font-size:13pt}
-  .cbt-streak,.cbt-streaklink,.cbt-level,.cbt-suggest,.cbt-cup{display:none !important}
+  .cbt-streak,.cbt-streaklink,.cbt-level,.cbt-suggest,.cbt-cup,.cbt-board{display:none !important}
   .cbt-cheer{background:#fff;color:#000;border:2px solid #000;page-break-inside:avoid}
   .cbt-cheer.b5::before{display:none}
   .cbt-cup{color:#000;filter:none}

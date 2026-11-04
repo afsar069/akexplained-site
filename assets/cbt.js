@@ -875,11 +875,12 @@
       'You have completed the test. Here is your detailed performance analysis.');
 
     root.innerHTML =
-      cheerRow(t) + streakStrip() + topicRow(t) + analysisRow(t) +
+      cheerRow(t) + streakStrip() + boardCard() + topicRow(t) + analysisRow(t) +
       actionRow() + journeyRow(t) + levelCard() + suggestRow(t);
 
     wireResult(t);
     paintAuthBits(root);
+    loadBoard(root);
   }
 
   /* Pagehead ke teen text badal do (start, test aur result ke liye alag). */
@@ -998,8 +999,7 @@
           numCell('is-diff', ic('<path d="M5 20v-5M12 20V8M19 20v-9M3 20h18"/>'),
             esc(levelLabel()), 'Difficulty level',
             Q.length + ' questions in this test') +
-          numCell('is-locked', lockIcon(), 'Locked', 'Percentile · you vs others',
-            '<a href="/login/">Needs a student account</a>') +
+          rankCell() +
         '</section>' +
       '</div>' +
     '</div>';
@@ -1052,6 +1052,113 @@
           if (who && better) who.textContent = better;
         }, function () { /* naam na mila to pehla hi rahega */ });
     }, function () { /* session na mila to guest hi maan lein */ });
+  }
+
+  /* ============================================================
+     Leaderboard — "Top students"
+
+     Aankde public.leaderboard() se aate hain (ek hi RPC call, migration
+     20261104120000). Wo function hi privacy ki deewar hai: sirf upar ke
+     das students ka naam, ginti aur accuracy lautata hai — na koi id,
+     na email, na kisi ek aadmi ke baare me poochhne ka raasta.
+
+     Malik ke niyam: rank accuracy se; 100 alag-alag sawal ke baad hi
+     rank milti hai; naam dikhte hain; students ki koi kam se kam ginti
+     nahi — pehle hi din se chalta hai aur apne aap badalta rehta hai.
+
+     Agar SQL abhi nahi chali (ya call nakaam rahi) to dono cheezein
+     chup-chaap chhupi rehti hain — score board baaki poora chalta hai.
+     ============================================================ */
+
+  function ordinal(n) {
+    var tens = n % 100;
+    if (tens >= 11 && tens <= 13) return n + 'th';
+    return n + ({ 1: 'st', 2: 'nd', 3: 'rd' }[n % 10] || 'th');
+  }
+
+  /* Upar ki patti ka teesra khana. Shuru me khali, RPC aate hi bhar jata hai. */
+  function rankCell() {
+    return '<div class="cbt-num is-rank" id="cbtRankCell" hidden>' +
+      '<span class="cbt-numic" aria-hidden="true">' +
+        ic('<path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0Z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/>') +
+      '</span>' +
+      '<span class="cbt-numtxt">' +
+        '<b data-rank-big>—</b><span>Your rank</span>' +
+        '<em data-rank-note></em>' +
+      '</span>' +
+    '</div>';
+  }
+
+  /* Das students ki ek patti. Shuru me band. */
+  function boardCard() {
+    return '<section class="cbt-card cbt-board" id="cbtBoard" hidden aria-label="Top students">' +
+      '<div class="cbt-boardhead">' +
+        '<h2>Top students</h2>' +
+        '<a class="cbt-streaklink" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
+      '</div>' +
+      '<p class="sub" id="cbtBoardSub"></p>' +
+      '<ol class="cbt-lbrow" id="cbtBoardRow"></ol>' +
+      '<p class="cbt-boardnote" id="cbtBoardNote" hidden></p>' +
+    '</section>';
+  }
+
+  function paintBoard(scope, data) {
+    var board = (data && data.board) || [];
+    var you = (data && data.you) || {};
+    var min = (data && data.min_questions) || 0;
+    var card = scope.querySelector('#cbtBoard');
+    var row = scope.querySelector('#cbtBoardRow');
+    var sub = scope.querySelector('#cbtBoardSub');
+    var note = scope.querySelector('#cbtBoardNote');
+    var cell = scope.querySelector('#cbtRankCell');
+
+    // Upar ka chhota khana
+    if (cell) {
+      var big = cell.querySelector('[data-rank-big]');
+      var small = cell.querySelector('[data-rank-note]');
+      if (you.eligible && you.rank) {
+        big.textContent = ordinal(you.rank);
+        small.textContent = 'of ' + (data.total_ranked || you.rank) + ' ranked students';
+        cell.hidden = false;
+      } else if (you.needed) {
+        big.textContent = you.needed;
+        small.textContent = 'more questions to get a rank';
+        cell.hidden = false;
+      }
+    }
+
+    // Patti tabhi dikhao jab usme koi ho
+    if (!card || !row || !board.length) return;
+    row.innerHTML = board.map(function (s) {
+      return '<li class="cbt-lb' + (s.is_you ? ' is-you' : '') + '">' +
+        '<b>' + esc(ordinal(s.rank)) + '</b>' +
+        '<span class="cbt-lbname">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
+        '<em>' + esc(String(s.accuracy)) + '%</em>' +
+      '</li>';
+    }).join('');
+    sub.textContent = 'Ranked by accuracy. Each question counts once, by your latest answer. ' +
+      'You join the list after answering ' + min + ' different questions.';
+    if (!you.eligible && you.needed) {
+      note.textContent = 'Answer ' + you.needed + ' more question' + (you.needed === 1 ? '' : 's') +
+        ' to take your place on this list.';
+      note.hidden = false;
+    } else if (you.eligible && you.rank > board.length) {
+      note.textContent = 'You are ' + ordinal(you.rank) + ' of ' + data.total_ranked + ' ranked students.';
+      note.hidden = false;
+    }
+    card.hidden = false;
+  }
+
+  function loadBoard(scope) {
+    var auth = window.akAuth;
+    if (!auth || !auth.configured || !scope) return;
+    auth.session().then(function (session) {
+      if (!session || !session.user) return;      // guest: patti hai hi nahi
+      return auth.client.rpc('leaderboard').then(function (res) {
+        // SQL abhi nahi chali, ya call nakaam: kuch mat dikhao, kuch mat kaho.
+        if (res && !res.error && res.data) paintBoard(scope, res.data);
+      });
+    }).then(null, function () { /* chup-chaap */ });
   }
 
   /* Ginti wala ek dabba: bagal me nishaan, phir badi ginti aur uska naam. */
