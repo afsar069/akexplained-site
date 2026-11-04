@@ -874,13 +874,43 @@
       (paper.ageName || '') + ' — ' + testName(),
       'You have completed the test. Here is your detailed performance analysis.');
 
+    /* Malik (2026-11-04): score board saaf kar diya. Guest ko sirf iss paper
+       ka apna hisaab dikhta hai, aur ek patti jo login ki taraf le jati hai.
+       Jo cheezein hata di gayi — rank, daily streak, top students, topic-wise
+       performance, strengths, areas to improve, level, download PDF — wo ab
+       dashboard ka kaam hain. Unke function (streakStrip, boardCard, topicRow,
+       strongWeak, levelCard, rankCell, loadBoard/paintBoard) neeche bane rehte
+       hain: wahi se dashboard par le jaaye jaayenge, isliye mitaye nahi. */
     root.innerHTML =
-      cheerRow(t) + streakStrip() + boardCard() + topicRow(t) + analysisRow(t) +
-      actionRow() + journeyRow(t) + levelCard() + suggestRow(t);
+      cheerRow(t) + ctaRow() + analysisRow(t) +
+      actionRow() + journeyRow(t) + suggestRow(t);
 
     wireResult(t);
     paintAuthBits(root);
-    loadBoard(root);
+  }
+
+  /* ---------- Login/dashboard ki ek patli patti ----------
+     Ye hi ek cheez score board par login ki baat karti hai. Guest ko login
+     par le jati hai (login -> course chuno -> dashboard). Jo pehle se logged-in
+     hai use seedha dashboard ka rasta. paintAuthBits dono me se sahi wala
+     kholta hai. */
+  function ctaRow() {
+    return '<section class="cbt-cta" aria-label="Keep your progress">' +
+      '<a class="cbt-ctalink" href="/login/" data-auth-out>' +
+        '<span class="cbt-ctatxt">' +
+          '<b>Log in to record your progress and learn chronologically</b>' +
+          '<em>Save every test, choose your course, and move age by age.</em>' +
+        '</span>' +
+        '<span class="cbt-ctago">Log in →</span>' +
+      '</a>' +
+      '<a class="cbt-ctalink" href="/dashboard/" data-auth-in hidden>' +
+        '<span class="cbt-ctatxt">' +
+          '<b>See all your progress on your dashboard</b>' +
+          '<em>Every test you take, by age and topic, kept with your account.</em>' +
+        '</span>' +
+        '<span class="cbt-ctago">Open dashboard →</span>' +
+      '</a>' +
+    '</section>';
   }
 
   /* Pagehead ke teen text badal do (start, test aur result ke liye alag). */
@@ -992,14 +1022,13 @@
             (used ? clock(used) : '—'), 'Time taken',
             allowed ? 'out of ' + clock(allowed) : '') +
         '</section>' +
-        '<section class="cbt-nums cbt-nums3" aria-label="Accuracy, level and standing">' +
+        '<section class="cbt-nums cbt-nums2" aria-label="Accuracy and level">' +
           numCell('is-acc', ic('<path d="M4 19V9M10 19V5M16 19v-6M3 20h18"/>'),
             t.acc + '%', 'Your accuracy', 'of the ' + t.answered + ' you answered',
             '<span class="cbt-meter"><i style="width:' + t.acc + '%"></i></span>') +
           numCell('is-diff', ic('<path d="M5 20v-5M12 20V8M19 20v-9M3 20h18"/>'),
             esc(levelLabel()), 'Difficulty level',
             Q.length + ' questions in this test') +
-          rankCell() +
         '</section>' +
       '</div>' +
     '</div>';
@@ -1017,7 +1046,7 @@
   }
 
   function whoAmI() {
-    return cachedName() || 'Guest User';
+    return cachedName() || 'Literary Learner';
   }
 
   /* Jo cheezein login par nirbhar hain wo HTML me dono roop me bani
@@ -1319,9 +1348,7 @@
     return '<div class="cbt-after">' +
       '<a class="cbt-btn is-lead" href="' + esc(rev) + '">Review all questions</a>' +
       '<a class="cbt-btn" href="' + esc(rev) + '?only=wrong">Review incorrect only</a>' +
-      '<button type="button" class="cbt-btn" id="cbtPrint">Download result (PDF)</button>' +
       '<button type="button" class="cbt-btn" id="cbtAgain">Take a new test</button>' +
-      '<a class="cbt-btn" href="/dashboard/" data-auth-in hidden>Open your dashboard</a>' +
       '<a class="cbt-btn is-gold" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
         '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
     '</div>';
@@ -1651,9 +1678,6 @@
           (+cell.getAttribute('data-go') + 1);
       });
     }
-
-    var pr = $('#cbtPrint');
-    if (pr) pr.addEventListener('click', function () { window.print(); });
 
     var again = $('#cbtAgain');
     if (again) {
