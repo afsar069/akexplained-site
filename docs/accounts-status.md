@@ -56,6 +56,36 @@ browser receives a few dozen rows and not thousands. Until then, past the 10,000
 it (rule 9), run the security advisors (rule 14), then replace `loadAttempts`/`computeStats` in
 `assets/dashboard.js`; the sections themselves need no change.
 
+## Open: the MCQ "Your Final Score Board" still talks as if accounts do not exist (found 2026-11-04)
+The Score Board is the result screen at the end of an MCQ test (`assets/cbt.js`, `showResult()`). It answers
+"how did I do on THIS test" (one test in memory, plus the last 10 attempts of a set kept in this browser
+only), so it is **not** a dashboard and cannot simply become one. Checked in a browser as a mock logged-in
+student: the test answers DO reach `attempts` (rows with `topic_id`, `period_id`, `source = cbt`), so the
+dashboard counts MCQs. But the screen is now wrong for a logged-in student:
+- The name shows **"Guest User"**: `whoAmI()` (about line 1009) reads `window.AK.user.name`, and nothing in the
+  site ever sets `window.AK`. It should use `window.akAuth` (`nameFrom`, the session).
+- False wording now that accounts are live: "Needs a student account" (percentile card, ~1001), "...opens with
+  a student account" and the button "Student accounts — coming soon" (topic card, ~1056 and ~1066),
+  "Coming with student accounts" (streak card ~1311 and level card ~1251).
+- No link from the Score Board to `/dashboard/`. The "Enrol now / Coming soon" box on article pages
+  (`_includes/base.njk`, `railbox soonbox`) also still says "Coming soon".
+- The "journey" bar (30 / 50 / 75 / 90 %, up to "Exam ready"), the grade names and the "Beginner … Master"
+  ladder are per-paper wording that already exists. They are NOT to be copied into the dashboard (no invented
+  thresholds, no readiness meters until the computation exists).
+What the Score Board's locked cards need, and whether the data can honestly give it:
+- Topic-wise performance: the dashboard already shows it (database topic names, all tests together).
+- Daily streak (days in a row, days this week): can be worked out from `answered_at`, no threshold needed.
+- Level ladder, "Exam ready" journey, suggested next step: wait for the mastery computation (item E).
+- Percentile vs others: needs data across users (RLS is own-rows-only, and `/privacy/` says nothing is shared);
+  not for now.
+- "Tests taken" and "Left unanswered": NOT in the database. `track.js` writes only answered questions and there
+  is no test id.
+**Waiting on the owner's choice** (asked 2026-11-04): (1) publish the dashboard as it is; (2) a small Score
+Board fix: real name for logged-in students, honest wording (guests: "Create a free account" to `/login/`;
+logged-in: no "needs an account" wording), and an "Open your dashboard" link; (3) a streak section on the
+dashboard. Optional: show the dashboard numbers with the Score Board's ring and cards so the two look alike.
+Do not start any of these until the owner picks.
+
 ## Owner to do in the dashboards (not code)
 1. ~~Leaked-password protection~~ — **skipped on purpose** (owner, 2026-11-03: it needs the Supabase Pro plan
    and this is a small site). The Supabase advisor WARN for it stays; do not raise it again unless the plan changes.
