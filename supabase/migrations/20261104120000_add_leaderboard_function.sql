@@ -77,16 +77,17 @@ as $$
     'total_ranked',  (select count(*) from ranked),
     -- The top ten only. A student outside them is never named to anyone.
     'board', coalesce((
-      -- Owner's rule (2026-11-04): about another student, show ONLY the name
-      -- they chose and their score. The question count is deliberately NOT
-      -- here, so it is not even in the network response for someone else.
-      -- (The caller's own question count stays, in the "you" object below.)
+      -- Owner's rule (2026-11-04, refined): about another student, show ONLY
+      -- the name they chose and their POSITION (1st, 2nd, 3rd) -- not the
+      -- score, not the question count. Neither is even in the network response
+      -- for someone else. The score still DECIDES the order (per_user / ranked
+      -- above), it is simply never sent. The caller's own numbers stay, in the
+      -- "you" object below.
       select jsonb_agg(
                jsonb_build_object(
-                 'rank',      r.pos,
-                 'name',      coalesce(nullif(btrim(pr.display_name), ''), 'Student'),
-                 'accuracy',  r.accuracy,
-                 'is_you',    r.user_id = auth.uid()
+                 'rank',   r.pos,
+                 'name',   coalesce(nullif(btrim(pr.display_name), ''), 'Student'),
+                 'is_you', r.user_id = auth.uid()
                )
                order by r.pos
              )
