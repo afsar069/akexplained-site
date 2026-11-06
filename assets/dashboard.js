@@ -161,7 +161,9 @@
   function computeStats(rows, now) {
     var startToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();   // visitor's calendar day
     var weekAgo = now.getTime() - 7 * DAY;                                                    // rolling 7 days
-    var s = { total: rows.length, correct: 0, today: 0, todayCorrect: 0, week: 0,
+    var twoWeeksAgo = now.getTime() - 14 * DAY;                                               // the 7 days before that
+    var s = { total: rows.length, correct: 0, today: 0, todayCorrect: 0,
+      week: 0, weekCorrect: 0, prevWeek: 0, prevWeekCorrect: 0,
       periods: {}, topics: {}, days: {}, unique: 0 };
     var qseen = {};
     function bump(map, key, ok) {
@@ -174,7 +176,8 @@
       // trim microseconds so every browser parses the timestamp
       var t = Date.parse(String(r.answered_at).replace(/(\.\d{3})\d+/, '$1'));
       if (t >= startToday) { s.today++; if (ok) s.todayCorrect++; }
-      if (t >= weekAgo) s.week++;
+      if (t >= weekAgo) { s.week++; if (ok) s.weekCorrect++; }
+      else if (t >= twoWeeksAgo) { s.prevWeek++; if (ok) s.prevWeekCorrect++; }
       if (!isNaN(t)) { var d = new Date(t); s.days[dayKey(d)] = true; }   // active-day set (visitor's local day)
       if (r.question_id && !qseen[r.question_id]) { qseen[r.question_id] = 1; s.unique++; }
       bump(s.periods, r.period_id || '', ok);
@@ -280,16 +283,75 @@
 
   var NAMES_FAILED = '<p class="small">We could not load the period and topic names. Please refresh the page to try again.</p>';
 
-  // 1. Totals — three headline figures.
+  /* ---------------------------------------------------------
+     1. The six tiles at the top — the whole dashboard in one row.
+
+     Only what `attempts` (and the syllabus and the paths) can really
+     show. Study time is NOT recorded anywhere, so that tile says so
+     instead of carrying a made-up number, and "Quizzes taken" is not
+     here at all: the table holds one row per ANSWER, not per test, so
+     the honest figure is questions answered. Both come back as real
+     tiles the day the tracking lands (docs/dashboard-redesign-plan.md).
+     --------------------------------------------------------- */
+
+  var IC_BOOKS = '<path d="M4 5.5A1.5 1.5 0 0 1 5.5 4H10v16H5.5A1.5 1.5 0 0 1 4 18.5Z"/>' +
+    '<path d="M14 4h4.5A1.5 1.5 0 0 1 20 5.5v13a1.5 1.5 0 0 1-1.5 1.5H14Z"/><path d="M10 4h4v16h-4Z"/>';
+  var IC_CLOCK = '<circle cx="12" cy="12" r="9"/><path d="M12 7.5V12l3 1.8"/>';
+  var IC_CHART = '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>';
+
+  // One tile. `value` is already-escaped HTML; everything else is plain text.
+  function tile(tone, ic, value, label, sub, extra) {
+    return '<div class="dashkpitile t-' + tone + '">' +
+      '<span class="ic">' + ic + '</span>' +
+      '<b class="num">' + value + '</b>' +
+      '<span class="lbl">' + esc(label) + '</span>' +
+      (sub ? '<span class="sub">' + esc(sub) + '</span>' : '') +
+      (extra || '') +
+    '</div>';
+  }
+
+  // "+8%" / "-3%" against the seven days before. Shown only when both
+  // weeks hold enough answers for the comparison to mean anything.
+  var TREND_FLOOR = 10;
+  function trendChip(s) {
+    if (s.week < TREND_FLOOR || s.prevWeek < TREND_FLOOR) return '';
+    var d = pct(s.weekCorrect, s.week) - pct(s.prevWeekCorrect, s.prevWeek);
+    if (!d) return '';
+    var up = d > 0;
+    return '<span class="dashtrend ' + (up ? 'up' : 'down') + '" title="This week against last week">' +
+      (up ? '&#9650; +' : '&#9660; ') + d + '%</span>';
+  }
+
   addSection({
-    id: 'totals', order: 10, title: 'Your overall progress', needs: 'attempts',
+    id: 'kpis', order: 5, title: 'At a glance', needs: 'attempts', bare: true,
     render: function (ctx) {
-      var s = ctx.stats;
-      return '<div class="dashkpis">' +
-        kpi('is-ink', icon(IC_LIST), fmt(s.total), 'Questions attempted', 'Including repeats') +
-        kpi('is-ok', icon(IC_CHECK), fmt(s.correct), 'Correct answers', 'Out of ' + answers(s.total)) +
-        kpi('is-gold', icon(IC_TARGET), pct(s.correct, s.total) + '%', 'Accuracy', 'Correct out of all answers') +
-        '</div>' +
+      var s = ctx.stats, B = ctx.british;
+      var k = computeStreak(s.days, ctx.now);
+      var exams = ctx.exams || [];
+      var primary = exams.filter(function (e) { return e.primary; })[0];
+
+      var paths = tile('teal', icon(IC_BOOKS), fmt(exams.length),
+        exams.length === 1 ? 'Path you follow' : 'Paths you follow',
+        primary ? 'Main: ' + primary.name : (exams.length ? 'No main path picked' : 'Pick one on your account page'));
+
+      var asked = tile('ink', icon(IC_LIST), fmt(s.total), 'Questions answered', 'Including repeats');
+
+      var score = tile('gold', icon(IC_TARGET), pct(s.correct, s.total) + '%' + trendChip(s),
+        'Average score', fmt(s.correct) + ' of ' + fmt(s.total) + ' correct');
+
+      var time = tile('soon', icon(IC_CLOCK), 'Coming soon', 'Study time',
+        'We do not record time yet');
+
+      var streak = tile('accent', icon(IC_FLAME), fmt(k.run) + (k.run === 1 ? ' day' : ' days'),
+        'Day streak', k.run ? 'Days in a row' : 'Answer one question to start');
+
+      var progress = B
+        ? tile('sage', icon(IC_CHART), B.pct + '%', 'Overall progress',
+            B.cleared + ' of ' + B.total + ' ages cleared',
+            '<span class="dashbar dashkpibar" aria-hidden="true"><span style="width:' + B.pct + '%"></span></span>')
+        : tile('sage', icon(IC_CHART), '&mdash;', 'Overall progress', 'We could not load the syllabus');
+
+      return '<div class="dashkpirow">' + paths + asked + score + time + streak + progress + '</div>' +
         (ctx.truncated ? '<p class="small dashnote">These figures use your latest ' + fmt(MAX_ROWS) + ' answers.</p>' : '');
     }
   });
@@ -405,8 +467,9 @@
           '<span class="dashlevel-badge">' + stars(at + 1) + '<b>' + esc(B.levelName) + '</b></span>' +
           '<span class="dashlevel-next">' + esc(need) + '</span>' +
         '</div>' +
-        '<div class="dashkpis dashkpis-2">' +
-          kpi('is-gold', icon(IC_TARGET), B.pct + '%', 'British literature covered', B.cleared + ' of ' + B.total + ' ages cleared') +
+        // The percentage itself is already in the row of tiles at the top of
+        // the page, so only the count that explains it is repeated here.
+        '<div class="dashkpis dashkpis-1">' +
           kpi('is-ink', icon(IC_LIST), B.cleared + ' / ' + B.total, 'Ages cleared', 'Each age is 60% answered at 60% correct') +
         '</div>' +
         '<div class="dashbigbar" aria-hidden="true"><span style="width:' + B.pct + '%"></span>' + marks + '</div>' +
@@ -472,11 +535,13 @@
           var cls = d.active ? 'is-on' : d.future ? 'is-future' : '';
           return '<span class="' + cls + '">' + names[i] + '</span>';
         }).join('') + '</div>';
+      // The run of days is already in the row of tiles at the top, so this
+      // card keeps the part the tile cannot show: the week itself.
       return '<div class="dashstreak">' +
         '<div class="dashkpis dashkpis-2">' +
-          kpi('is-gold', icon(IC_FLAME), fmt(k.run) + (k.run === 1 ? ' day' : ' days'), 'In a row',
-            k.run ? 'Keep it going today' : 'Answer one question to start a streak') +
           kpi('is-ink', icon(IC_CAL), fmt(k.weekDone) + ' / 7', 'Days this week', 'Monday to Sunday') +
+          kpi('is-gold', icon(IC_CALOK), fmt(Object.keys(ctx.stats.days).length), 'Days you have studied',
+            'Since you joined') +
         '</div>' + grid +
       '</div>';
     }
@@ -659,8 +724,10 @@
       var body = '';
       try { body = def.render(ctx) || ''; } catch (e) { body = ''; }    // one broken section never breaks the page
       if (!body) return;
-      html += '<section class="acctcard dashcard" data-section="' + esc(def.id) + '">' +
-        '<div class="acctcard-head"><h2>' + esc(def.title) + '</h2></div>' + body + '</section>';
+      html += def.bare
+        ? '<div class="dashbare" data-section="' + esc(def.id) + '">' + body + '</div>'
+        : '<section class="acctcard dashcard" data-section="' + esc(def.id) + '">' +
+          '<div class="acctcard-head"><h2>' + esc(def.title) + '</h2></div>' + body + '</section>';
     });
     return html;
   }

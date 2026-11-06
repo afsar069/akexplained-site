@@ -66,6 +66,22 @@ Visual design: ~100% achievable (it fits the site's style). Truthful-data versio
 rest needs new tracking (time, tasks, reading, video) or new features (flashcards, quote bank, …), and a
 few tiles must **not** be faked.
 
+## Built so far (branch `claude/compassionate-tesla-z0tvag`, 2026-11-06)
+1. **Page head.** The owner's banner is the head. Two files: `assets/dash-banner.webp`
+   (2000x357, computer) and `assets/dash-banner-sm.webp` (1200x500, phone), served by
+   `<picture>` at 601px. The greeting (name in the accent colour, line in teal, the four
+   steps, the main path) sits **inside** the banner on the blank paper — on the wide one
+   above a 860px container, on the phone one always. Below that it drops under the picture.
+   Sizes are in `cqw`/`vw` with a `max()` floor, so words and painting keep their places.
+2. **The six tiles** (`kpis` section, order 5, `bare: true` — no card around them):
+   Paths you follow (`user_exams`), Questions answered (`attempts`), Average score with a
+   **week-against-week trend chip** (shown only when both weeks hold >= 10 answers),
+   **Study time = "Coming soon"** (nothing records time), Day streak, Overall progress
+   (British 20 ages) with a thin bar. "Quizzes taken" is deliberately **not** there: the
+   table holds one row per answer, not per test.
+   The old `totals` card is gone (it is now the row), and the duplicate figures were taken
+   out of the level and streak cards.
+
 ## Open decisions for next session (owner to steer)
 1. Build the achievable mockup-style layout now (real tiles filled, the rest "Coming soon")?
 2. Start the **tracking** that unlocks tiles — priority order? (suggest: study-time → quizzes-taken →

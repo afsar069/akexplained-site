@@ -3253,10 +3253,77 @@ picture{display:block}
   .dashhead-path{font-size:clamp(8px,2.45vw,11.5px);margin-top:5px;line-height:1.3}
 }
 
+/* ==========================================================
+   KPI TILES — sabse upar ek hi line me chhe dabbe.
+   Bade screen par chhe, tablet par teen, phone par do.
+   "Study time" wala dabba halka (t-soon) hai: us number ka
+   koi record nahi hai, isliye wo "Coming soon" kehta hai.
+   ========================================================== */
+.dashbare{margin:0 0 18px}
+/* Chaudai ke hisaab se: 6 ek line me, phir 3, phir 2. Beech ki haddein
+   menu (272px) ko gin kar rakhi hain, isliye 1024-1271 par bhi 3 hi. */
+.dashkpirow{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:0}
+@media (min-width:1024px) and (max-width:1271px){
+  .dashkpirow{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:1000px){
+  .dashkpirow{grid-template-columns:repeat(3,1fr)}
+}
+.dashkpitile{
+  display:flex;flex-direction:column;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
+  padding:14px 15px 15px;
+  box-shadow:0 8px 20px -18px rgba(22,48,74,.6);
+}
+.dashkpitile .ic{
+  width:32px;height:32px;border-radius:10px;flex:none;
+  display:flex;align-items:center;justify-content:center;margin-bottom:10px;
+}
+.dashkpitile .ic svg{width:19px;height:19px}
+.dashkpitile .num{
+  font-family:var(--serif);font-weight:700;font-size:1.5rem;line-height:1.12;color:var(--ink);
+  display:flex;align-items:center;flex-wrap:wrap;gap:5px;
+}
+.dashkpitile .lbl{margin-top:4px;font-weight:600;font-size:.85rem;line-height:1.3;color:var(--ink)}
+.dashkpitile .sub{margin-top:3px;font-size:.75rem;line-height:1.35;color:var(--mcq-ink-faint)}
+.dashkpibar{height:5px;margin-top:10px}
+
+/* har dabbe ka apna rang, sirf icon par */
+.dashkpitile.t-teal   .ic{background:var(--teal-soft);color:var(--teal-dark)}
+.dashkpitile.t-ink    .ic{background:color-mix(in srgb,var(--ink) 10%,#fff);color:var(--ink)}
+.dashkpitile.t-gold   .ic{background:color-mix(in srgb,var(--gold) 16%,#fff);color:var(--gold)}
+.dashkpitile.t-accent .ic{background:color-mix(in srgb,var(--accent) 12%,#fff);color:var(--accent)}
+.dashkpitile.t-sage   .ic{background:color-mix(in srgb,var(--sage) 16%,#fff);color:var(--sage)}
+
+/* abhi nahi gina ja raha — halka, taaki ginti wale dabbon se alag dikhe */
+.dashkpitile.t-soon{background:var(--tint);border-style:dashed}
+.dashkpitile.t-soon .ic{background:#fff;color:var(--mcq-ink-faint)}
+.dashkpitile.t-soon .num{
+  font-family:var(--sans);font-weight:700;font-size:1rem;color:var(--mcq-ink-faint);
+  padding:2px 0 4px;
+}
+
+/* pichhle hafte se kitna upar/neeche */
+.dashtrend{
+  font-family:var(--sans);font-size:.72rem;font-weight:700;letter-spacing:.01em;
+  border-radius:999px;padding:2px 8px;white-space:nowrap;
+}
+.dashtrend.up{background:var(--teal-soft);color:var(--teal-dark)}
+.dashtrend.down{background:color-mix(in srgb,var(--accent) 12%,#fff);color:var(--accent)}
+
+@media (max-width:560px){
+  .dashkpirow{grid-template-columns:repeat(2,1fr);gap:10px}
+  .dashkpitile{padding:12px 13px 13px}
+  .dashkpitile .num{font-size:1.3rem}
+  .dashkpitile .ic{width:28px;height:28px;margin-bottom:8px}
+}
+
 /* Dashboard v2 — KPI cards (professional pass). */
 
 .dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}
 .dashkpis-2{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+/* akela dabba poori chaudai me khinchta tha; ab apni naap me rehta hai */
+.dashkpis-1{grid-template-columns:minmax(220px,370px)}
 .dashkpi{
   display:flex;align-items:flex-start;gap:14px;
   background:var(--card-paper);border:1px solid var(--card-line);
