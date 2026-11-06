@@ -135,9 +135,14 @@ _Last updated: 2026-11-04._
         It is stretched to the panel, so keep the art at the two ends and the middle clear, and leave
         the gold frame **out** of it: the frame is a 1px CSS border, so it stays hairline at any size.
     The quote and the frame live inside the pictures, so the page never repeats them.
-    **Under 720px the panel picture is dropped** (it would be squashed and the leaves would sit under
-    the words): plain cream paper, a fainter hairline edge, smaller type and tighter padding, so the
-    whole header is about 244px tall on a 390px phone.
+    The **panel keeps its picture at every width** (the owner asked for it, 2026-11-06); on a phone the
+    type steps down and the padding tightens instead, so the whole header is about 230px tall on a
+    390px screen and the panel itself 131px. The art does stretch a little on a narrow screen — a
+    phone-shaped panel picture would be the fix if the owner wants one.
+    The **name is set in EB Garamond italic 600** — Garamond is the old-style face English literature
+    has been printed in for centuries, which is why it was chosen over Literata here (the owner asked
+    for something that represents English literature). Changing it means two places: the
+    `.dashhero-name` rule and `dashboard/index.html`'s font link.
     Watch out: the site's `p{max-width:74ch}` pushed every centred line off-centre inside the panel,
     so `.dashhero-box p` clears it. Any new line added there needs the same.
   - **The dashboard's own top bar** (`.dashtop`, static markup in `dashboard/index.html`): "My Dashboard"

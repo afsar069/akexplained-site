@@ -3192,7 +3192,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
    yahan koi border ya rang nahi: tasveer badlo, bas. Panel banner se andar
    rehta hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche. */
 .dashhero-box{
-  margin:16px 18px 18px;padding:24px 36px 26px;text-align:center;
+  margin:14px 16px 16px;padding:13px 36px 15px;text-align:center;
   background:url("/assets/dash-box.webp") center/100% 100% no-repeat;
   border:1px solid color-mix(in srgb,var(--gold) 42%,transparent);border-radius:14px;
 }
@@ -3204,34 +3204,34 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashhero-hi{
   display:block;font-weight:700;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--ink);
 }
+/* Naam "EB Garamond" me hai — Garamond wahi purana angrezi kitabon wala
+   akshar hai, isliye English literature ka ehsaas deta hai. Badalna ho to
+   yahan aur dashboard/index.html ke font link me, dono jagah. */
 .dashhero-name{
-  display:block;font-weight:700;font-style:italic;color:var(--accent);
-  line-height:1.04;margin-top:2px;letter-spacing:.005em;
-  font-size:clamp(2.1rem,7.6vw,4.8rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
+  display:block;font-family:"EB Garamond",var(--serif);font-weight:600;font-style:italic;
+  color:var(--accent);line-height:1;margin-top:0;letter-spacing:.005em;
+  font-size:clamp(2.2rem,8vw,5rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
 }
 .dashhero-title i{font-style:normal;margin-left:.3em}
 .dashhero-name i{font-size:.6em;vertical-align:.1em}
 .dashhero-line{
-  margin:4px auto 0;font-family:var(--serif);font-weight:700;color:var(--teal-dark);
-  font-size:clamp(1rem,1.9vw,1.35rem);max-width:46ch;
+  margin:2px auto 0;font-family:var(--serif);font-weight:700;color:var(--teal-dark);
+  font-size:clamp(1rem,1.9vw,1.3rem);max-width:46ch;
 }
-.dashhero-path{margin:10px 0 0;font-size:clamp(.88rem,1.3vw,1rem);color:var(--body)}
+.dashhero-path{margin:6px 0 0;font-size:clamp(.86rem,1.3vw,.98rem);color:var(--body)}
 .dashhero-path b{color:var(--ink)}
-/* Phone par panel lamba aur patla ho jata hai: tasveer kheench kar bigad
-   jaati hai aur bel-boote text ke neeche aa jate hain. Isliye chhoti screen
-   par tasveer hat jaati hai, text chhota ho jata hai aur panel patla rehta
-   hai; kinara baal jitna halka. */
+/* Phone par tasveer wahi rehti hai (maalik ne kaha), bas text chhota aur
+   panel jitna patla ho sake utna — isse tasveer bhi kam khinchti hai. */
 @media (max-width:720px){
   .dashhero-box{
-    margin:10px 10px 10px;padding:13px 12px 14px;
-    background:var(--cream);
-    border-color:color-mix(in srgb,var(--gold) 26%,transparent);
+    margin:10px 10px 10px;padding:9px 12px 11px;
+    border-color:color-mix(in srgb,var(--gold) 30%,transparent);
   }
-  .dashhero-box .eyebrow{font-size:.66rem;letter-spacing:.14em;margin-bottom:2px}
-  .dashhero-hi{font-size:.95rem}
-  .dashhero-name{font-size:1.65rem;margin-top:0}
-  .dashhero-line{font-size:.9rem;margin-top:2px}
-  .dashhero-path{font-size:.8rem;margin-top:6px}
+  .dashhero-box .eyebrow{font-size:.64rem;letter-spacing:.13em;margin-bottom:1px}
+  .dashhero-hi{font-size:.9rem}
+  .dashhero-name{font-size:1.7rem}
+  .dashhero-line{font-size:.86rem;margin-top:1px}
+  .dashhero-path{font-size:.78rem;margin-top:4px}
 }
 
 .dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}
