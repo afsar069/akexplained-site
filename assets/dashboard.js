@@ -832,19 +832,36 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
-  // A friendly greeting with the person's name, above the cards.
+  /* The header: the banner painting with the owner's own quote, then the
+     greeting, the four steps of the journey, and the main path. The quote
+     and the artwork live inside /assets/dash-banner.webp, so nothing here
+     needs changing when the picture is replaced. */
+  var HERO_STEPS = ['Study', 'Practice', 'Revise', 'Improve'];
+  var HERO_ALT = 'Professor AK beside a university building, with his words: ' +
+    '“Literature is not just to read, but to think, question and connect with life.”';
+
   function welcomeHero(ctx) {
     var name = ctx.name || 'there';
     var fresh = !ctx.attemptsError && !ctx.rows.length;
-    var greet = (fresh ? 'Welcome, ' : 'Welcome back, ') + name;
     var line = fresh
-      ? 'This is your dashboard. Take a quiz while you are logged in and your progress will start to show here.'
-      : 'Here is how your learning is going, from the quizzes you have taken while logged in.';
+      ? 'Start your English literature journey.'
+      : 'Continue your English literature journey.';
     var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
     return '<section class="dashhero">' +
-      '<h2 class="dashhero-title">' + esc(greet) + '</h2>' +
-      '<p class="dashhero-line">' + esc(line) + '</p>' +
-      (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
+      '<div class="dashhero-banner">' +
+        '<img src="/assets/dash-banner.webp" alt="' + esc(HERO_ALT) + '" width="1460" height="324">' +
+      '</div>' +
+      '<div class="dashhero-body">' +
+        '<p class="eyebrow">Your progress</p>' +
+        '<h2 class="dashhero-title">' + (fresh ? 'Welcome,' : 'Welcome back,') +
+          '<span class="dashhero-name">' + esc(name) +
+          '<span class="dashhero-wave" aria-hidden="true">👋</span></span></h2>' +
+        '<p class="dashhero-line">' + esc(line) + '</p>' +
+        '<p class="dashhero-steps">' + HERO_STEPS.map(function (s) {
+          return '<span>' + esc(s) + '</span>';
+        }).join('') + '</p>' +
+        (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
+      '</div>' +
     '</section>';
   }
 
