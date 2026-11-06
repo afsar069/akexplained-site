@@ -157,6 +157,24 @@ and never ask the owner for it.**
   and topic, the paths picked). **Never add mastery, levels, decay, a "next step" or readiness meters until the
   computation exists** (owner's rule). New sections are added with `addSection()` in that file. Counts say
   "including repeats" (a repeat answer counts again). Known limit and its fix: `docs/accounts-status.md`.
+  The row order is the owner's (2026-11-06; the list is at the top of `dashboard.js` and in
+  `docs/accounts-status.md`) — do not re-order it unasked. A card with `col:'half'` shares its line with the
+  next `col:'half'` card. Rows 6 and 7 show **five rows each**; the "+" in the corner opens the full list at
+  `/dashboard/ages/` or `/dashboard/topics/`, which are the same script with `data-view` on `#dashSections`.
+  Tile artwork goes through `art()` / `KPI_ART` — put a PNG in `/assets/dash/`, name it there, change nothing
+  else. "Quizzes taken" stays "Questions answered" until a real completion count exists.
+  `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
+  `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
+  under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
+  add one for looks. The header is two pictures and nothing else to edit: `assets/dash-banner.webp`
+  (the wide painting, 2268x494, shown at 1134x247) and `assets/dash-box.webp` (the panel the centred
+  greeting sits on, 1988x422, stretched — art at the two ends, middle clear, **no frame in the picture**:
+  the gold frame is a 1px CSS border; the picture stays at every width, the type just steps down on a
+  phone). The name is **Playfair Display italic 700** (the owner's pick, 2026-11-06) — changing it
+  means the `.dashhero-name` rule and that page's font link, both. The dashboard is **live on
+  akexplained.com since 2026-11-06**. The quote and the frame are inside the pictures, so the page
+  never repeats them, and `dashboard/index.html` loads Literata `1,700` for the italic name — keep it.
+  `.dashbar` is the thin progress bar, not the top bar — do not confuse the two.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
   setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL

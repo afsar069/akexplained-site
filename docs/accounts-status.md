@@ -25,6 +25,15 @@ _Last updated: 2026-11-04._
   The reset / confirm code (`60cac7e`, `assets/login.js`, `auth.js`) is on `main`.
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
+## Live since 2026-11-06: the dashboard (v3 layout)
+The whole dashboard was merged to `main` at the owner's word on 2026-11-06, so everything described
+in the three "Dashboard" blocks below is **now on akexplained.com**, not waiting on a branch:
+`/dashboard/`, `/dashboard/ages/`, `/dashboard/topics/`, the top bar, the designed header and the
+two header pictures. The name is set in **Playfair Display italic 700** (the owner's pick from five
+faces shown on 2026-11-06); changing it means the `.dashhero-name` rule and `dashboard/index.html`'s
+font link, both. Still open: the bell has nothing behind it, "Quizzes taken" is still
+"Questions answered", and the other eight journeys have no syllabus.
+
 ## Waiting on a feature branch
 - **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see
   it first). Read-only; no migration, no new table or column. Files: `dashboard/index.html`,
@@ -85,6 +94,75 @@ _Last updated: 2026-11-04._
   the other 8 journeys' syllabus + the NET grand-total; no-demotion high-water mark; align the MCQ generator.
   **Next up — a richer dashboard redesign** (owner shared a mockup): the plan, with what is real now vs what
   needs new tracking/features, is in **`docs/dashboard-redesign-plan.md`**.
+
+- **Dashboard v3 layout** — on `claude/practical-heisenberg-6vt2n9`, **NOT on `main`**. The owner gave the
+  row order (2026-11-06) and it is now built in `assets/dashboard.js` + the "Dashboard v2 layout" block at the
+  end of `assets/site.css`. Same data, same read-only rule — only the arrangement and three new pieces:
+  1 welcome header · 2 **six tiles in one line** (enrolled courses, questions answered, correct answers,
+  average score, day streak, overall progress) · 3 Your rank | Today's activity · 4 daily streak (two tiles
+  + the week line) · 5 Your level in English literature (the five stages) · 6 progress by British age |
+  progress by topic · 7 strengths | areas to improve · 8 Top students | Your paths · 9 **Your performance** |
+  **Your next goal**, side by side, last.
+  - **Five rows per card** on rows 6 and 7 (owner's rule). The age card puts the age being worked on now
+    first (the age of the newest answer), then the ages that are furthest along.
+  - A **"+" button** in the corner of the age, topic, strengths and areas cards opens the full list:
+    **`/dashboard/ages/`** (all 20 ages + answers by period) and **`/dashboard/topics/`** (every topic +
+    strengths and areas in full). Both are `noindex`, both reuse `assets/dashboard.js` — the page's
+    `#dashSections` carries `data-view="ages"` / `"topics"`, so there is one loader, not three.
+  - **Week line colours**: green = answered, **red = missed**, plain with a border = still to come
+    (today keeps a gold border until it is answered).
+  - **Your performance** is a real weekly chart: 8 Monday-to-Sunday buckets from `attempts`, plotting
+    correct-out-of-answered for each week that has answers (hidden until two weeks have data). Nothing is
+    smoothed or guessed. The "Average score" tile shows the week-on-week change only when both weeks have
+    at least 5 answers.
+  - **Your next goal** = the next age in the site's own order that is not cleared, with what is still needed
+    and a link to that Daily quiz.
+  - **Pictures**: every tile asks `art(key, svg)` for its artwork and gets a line drawing today. When the
+    owner's PNGs are ready, drop them in `/assets/dash/` and name them in `KPI_ART` at the top of
+    `dashboard.js` — no other change. Suggested size about 96x96, see-through background.
+  - **"Quizzes taken" is still not a real number** (plan bucket 2): we count answers, not finished tests,
+    so that tile says "Questions answered". It needs a completion row before it can say anything else.
+  - Browser-tested against `_site` with Supabase mocked (the six tiles, the five paired rows, the "+" links,
+    the missed-day red, the chart, the two full-list pages, mobile width 390px). `npx @11ty/eleventy` builds
+    clean; no new internal link 404s.
+  - **Top students** takes a line of its own, the five students side by side right across the card
+    (`.dashlbrow` / `.dashlbcard`, first place gold, "You" teal, two columns under 720px).
+    **Your paths** is the last line of the page, one thin strip (`.dashstrip`).
+  - **The header** (owner's design, 2026-11-06) — it had never been in this repo, so the dashboard was
+    showing the older plain welcome box. Now: the banner painting `assets/dash-banner.webp` (Prof. AK, the
+    university building and his own words, cut from the picture the owner sent), then "Your progress",
+    "Welcome back," with the name large in `--accent` and a wave, "Continue your English literature
+    journey." and the main path, all **centred on a painted panel** of their own
+    (`assets/dash-box.webp`: cream paper, a gold frame, books at the left and leaves at the right).
+    The **Study · Practice · Revise · Improve** line was dropped at the owner's word (2026-11-06).
+    The name is set in **italic Literata 700**, which is why `dashboard/index.html` asks Google Fonts
+    for `1,700` as well — do not drop it from that page's font link.
+    A first-time reader gets "Welcome," and "Start your English literature journey.".
+    **To replace either picture**: one file, same name, same shape, nothing else to change.
+      - `assets/dash-banner.webp` — the wide painting, **2268 x 494 px** (shown at 1134 x 247).
+      - `assets/dash-box.webp` — the panel behind the greeting, **1988 x 422 px** (about 4.7 : 1).
+        It is stretched to the panel, so keep the art at the two ends and the middle clear, and leave
+        the gold frame **out** of it: the frame is a 1px CSS border, so it stays hairline at any size.
+    The quote and the frame live inside the pictures, so the page never repeats them.
+    The **panel keeps its picture at every width** (the owner asked for it, 2026-11-06); on a phone the
+    type steps down and the padding tightens instead, so the whole header is about 230px tall on a
+    390px screen and the panel itself 131px. The art does stretch a little on a narrow screen — a
+    phone-shaped panel picture would be the fix if the owner wants one.
+    The **name is set in EB Garamond italic 600** — Garamond is the old-style face English literature
+    has been printed in for centuries, which is why it was chosen over Literata here (the owner asked
+    for something that represents English literature). Changing it means two places: the
+    `.dashhero-name` rule and `dashboard/index.html`'s font link.
+    Watch out: the site's `p{max-width:74ch}` pushed every centred line off-centre inside the panel,
+    so `.dashhero-box p` clears it. Any new line added there needs the same.
+  - **The dashboard's own top bar** (`.dashtop`, static markup in `dashboard/index.html`): "My Dashboard"
+    (the page's `h1`) in the middle, a **bell** and the **profile button** on the right. The old `.pagehead`
+    (the "Your progress / My Dashboard" strip with the reading-woman painting) and the breadcrumb were
+    removed from this page so the header sits at the very top, as the owner drew it. The bar shows
+    "Log in / Guest" until `dashboard.js` fills `#dashUser` with the real name (initial, name, "Student",
+    link to `/account/`).
+    **The bell is `disabled` and carries no dot or count** — nothing is behind it yet. To switch it on:
+    drop `disabled`, change its two labels, add the handler, and only then show a count, from real rows.
+    Careful: `.dashbar` was already taken (the thin progress bar), which is why the top bar is `.dashtop`.
 
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,

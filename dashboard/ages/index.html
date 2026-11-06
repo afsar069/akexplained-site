@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Progress by Age | AK Explained</title>
+<meta name="description" content="Your progress in each of the 20 ages of British literature, from the quiz answers you have given while logged in.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/dashboard/">My Dashboard</a><span>/</span>By Age</p></div>
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Your progress</p>
+    <h1>My Progress by Age</h1>
+    <p class="lede">All 20 ages of British literature, one by one, from the answers you have given while logged in.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+
+  <!-- Shown when accounts are off or something fails before the page can start. -->
+  <div id="dashNotice" class="authnotice" role="status" hidden></div>
+
+  <!-- Shown to visitors who are not logged in (instead of a silent redirect). -->
+  <section id="dashSignin" class="acctcard dashempty" hidden>
+    <h2>Sign in to see your progress</h2>
+    <p>This page shows the quiz answers you give while you are logged in. You never need an account to read the notes or take a quiz.</p>
+    <div class="dashactions">
+      <a class="btn" href="/login/">Log in</a>
+    </div>
+  </section>
+
+  <!-- Logged in: assets/dashboard.js fills this (data-view picks the list). -->
+  <div id="dashBody" hidden>
+    <div id="dashSections" data-view="ages" aria-live="polite"></div>
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/dashboard.js" defer></script>
+</body>
+</html>
