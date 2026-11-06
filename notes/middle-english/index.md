@@ -7,6 +7,11 @@ mark: M
 crumb_label: Middle English
 hero_image: /assets/ages/middle-english-hero.webp
 hero_class: hero-middle-english
+hero_variants:
+  - age: age-of-chaucer
+    image: /assets/ages/age-of-chaucer-hero.webp
+  - age: fifteenth-century
+    image: /assets/ages/fifteenth-century-hero.webp
 updated: 2026-10-13
 exams:
   - UGC-NET

@@ -144,6 +144,21 @@
     </div>
   </div>
 </section>
+{% if hero_variants %}
+<template id="age-hero-variants">
+  {% for variant in hero_variants %}<span data-age="{{ variant.age }}" data-image="{{ variant.image }}"></span>{% endfor %}
+</template>
+<script>
+  (() => {
+    const age = new URLSearchParams(window.location.search).get('age');
+    if (!age) return;
+    const variants = document.getElementById('age-hero-variants').content.querySelectorAll('span');
+    const variant = Array.from(variants).find(item => item.dataset.age === age);
+    const artwork = document.querySelector('.pagehead-art');
+    if (variant && artwork) artwork.src = variant.dataset.image;
+  })();
+</script>
+{% endif %}
 {% endif %}
 
 <div class="wrap">

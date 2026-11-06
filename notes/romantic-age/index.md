@@ -5,6 +5,8 @@ description: A simple guide to the Romantic Age in English literature, its poets
 eyebrow: Notes · Literary Ages
 mark: R
 crumb_label: Romantic Age
+hero_image: /assets/ages/romantic-hero.webp
+hero_class: hero-age
 updated: 2026-10-13
 exams:
   - UGC-NET
