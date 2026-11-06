@@ -613,25 +613,44 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
-  // A friendly greeting with the person's name, above the cards.
-  function welcomeHero(ctx) {
-    var name = ctx.name || 'there';
+  // The page head greets the person by name. The head itself is written in
+  // dashboard/index.html (art + the quote); here we only put the name, the
+  // line under it and the main path in. Simple English, nothing invented.
+  function fillHead(ctx) {
+    var h1 = document.getElementById('dashGreet');
+    var line = document.getElementById('dashGreetLine');
+    var path = document.getElementById('dashHeadPath');
+    var name = ctx.name || '';
     var fresh = !ctx.attemptsError && !ctx.rows.length;
-    var greet = (fresh ? 'Welcome, ' : 'Welcome back, ') + name;
-    var line = fresh
-      ? 'This is your dashboard. Take a quiz while you are logged in and your progress will start to show here.'
-      : 'Here is how your learning is going, from the quizzes you have taken while logged in.';
-    var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
-    return '<section class="dashhero">' +
-      '<h2 class="dashhero-title">' + esc(greet) + '</h2>' +
-      '<p class="dashhero-line">' + esc(line) + '</p>' +
-      (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
-    '</section>';
+
+    if (h1) {
+      h1.textContent = name ? ((fresh ? 'Welcome, ' : 'Welcome back, ') + name) : 'My Dashboard';
+      if (name) {
+        var wave = document.createElement('span');
+        wave.className = 'wave';
+        wave.setAttribute('aria-hidden', 'true');
+        wave.textContent = ' \uD83D\uDC4B';
+        h1.appendChild(wave);
+      }
+    }
+    if (line) {
+      line.textContent = fresh
+        ? 'Take a quiz while you are logged in and your progress will start to show here.'
+        : 'Continue your English literature journey.';
+    }
+    if (path) {
+      var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
+      if (primary) {
+        path.innerHTML = 'Your main path: <b>' + esc(primary.name) + '</b>';
+        path.hidden = false;
+      } else {
+        path.hidden = true;
+      }
+    }
   }
 
   function renderAll(ctx) {
-    var html = welcomeHero(ctx) +
-      (ctx.attemptsError ? ERROR_CARD : (ctx.rows.length ? '' : EMPTY_CARD));
+    var html = (ctx.attemptsError ? ERROR_CARD : (ctx.rows.length ? '' : EMPTY_CARD));
     var hasAttempts = !ctx.attemptsError && ctx.rows.length > 0;
     sections.slice().sort(function (a, b) { return a.order - b.order; }).forEach(function (def) {
       if (def.needs === 'attempts' && !hasAttempts) return;
@@ -678,6 +697,7 @@
 
     Promise.all([pAttempts, pExams, pName, pBoard, pSyl]).then(function () {
       try { ctx.british = computeBritish(ctx.rows, ctx.syllabus); } catch (e) { ctx.british = null; }
+      try { fillHead(ctx); } catch (e) { /* the head keeps its plain heading */ }
       root.innerHTML = renderAll(ctx);
     });
   }
