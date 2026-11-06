@@ -83,6 +83,8 @@ _Last updated: 2026-11-04._
     rank, streak + week grid, strengths/areas split, top-students list, paths).
   **PENDING the owner**: review the British-literature level live, then say when to merge to `main`. Later:
   the other 8 journeys' syllabus + the NET grand-total; no-demotion high-water mark; align the MCQ generator.
+  **Next up — a richer dashboard redesign** (owner shared a mockup): the plan, with what is real now vs what
+  needs new tracking/features, is in **`docs/dashboard-redesign-plan.md`**.
 
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
