@@ -11,25 +11,30 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/login-page.css">
 </head>
-<body>
+<body class="login-page">
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="site-header"></header>
+<header class="login-header">
+  <a class="login-brand" href="/" aria-label="AK Explained home">
+    <img src="/assets/logo.png" alt="" width="44" height="44">
+    <span><strong>AK <em>Explained</em></strong><small>The Student's Library</small></span>
+  </a>
+  <nav aria-label="Login page links">
+    <a href="/english-literature/">Explore literature</a>
+    <a href="/contact/">Need help?</a>
+  </nav>
+</header>
 
-<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span>Login</p></div>
-<main id="main">
+<main id="main" class="login-main">
+<div class="login-layout">
+  <div class="login-left">
+    <p class="login-eyebrow">Your free study account</p>
+    <h1>Welcome back</h1>
+    <p class="login-subtitle">Pick up where your learning left off.</p>
 
-<section class="pagehead">
-  <span class="mark" aria-hidden="true">L</span>
-  <div class="wrap">
-    <p class="eyebrow">Free account</p>
-    <h1>Login</h1>
-    <p class="lede">Make a free account to save your progress. Articles, the daily quiz and the MCQs stay open for everyone — an account only adds to them.</p>
-  </div>
-</section>
-
-<div class="wrap authwrap">
+    <div class="authwrap">
 
   <!-- Shown only if accounts are not switched on yet -->
   <div id="authNotice" class="authnotice" role="status" hidden></div>
@@ -97,16 +102,6 @@
       </form>
     </div>
 
-    <aside class="authbenefits">
-      <h2>What a free account gives you</h2>
-      <ul class="bulletcheck">
-        <li>Track your progress</li>
-        <li>See where you stand</li>
-        <li>Pick your exam path</li>
-        <li>Earn points</li>
-      </ul>
-      <p class="small">Nothing on the site is locked. An account just remembers your work.</p>
-    </aside>
   </div>
 
   <!-- Set a new password, shown when arriving from a reset email -->
@@ -137,11 +132,49 @@
   </section>
 
 </div>
+    <p class="login-free-note">Articles and quizzes stay free for everyone.</p>
+  </div>
 
+  <aside class="login-showcase" aria-label="A preview of your study account">
+    <div class="login-art">
+      <img src="/assets/login-study.webp" alt="An illustrated literary study with books and a laptop" width="1536" height="1024" fetchpriority="high">
+      <div class="login-dashboard" aria-label="Example dashboard preview">
+        <p class="preview-label">Your study space <span>Example</span></p>
+        <p class="preview-path">UGC NET English</p>
+        <div class="preview-progress"><span>Literary Ages</span><strong>7 of 20</strong></div>
+        <progress value="7" max="20" aria-label="Example literary ages progress"></progress>
+        <div class="preview-stats"><span><strong>6 days</strong> study streak</span><span><strong>88%</strong> Victorian Literature</span></div>
+      </div>
+    </div>
+    <div class="login-benefits">
+      <p class="login-eyebrow">More than a login</p>
+      <h2>Your learning, all in one place.</h2>
+      <ul>
+        <li>Save your progress</li>
+        <li>See strengths and areas to improve</li>
+        <li>Follow your exam path</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<section class="login-writers" aria-labelledby="writers-heading">
+  <div class="login-writers-copy">
+    <p class="login-eyebrow">A world of literature</p>
+    <h2 id="writers-heading">Explore writers from across the world</h2>
+    <p>Discover voices from Britain, India, Africa, America and beyond.</p>
+  </div>
+  <div class="login-writers-scroll"><img src="/assets/writers-gallery.webp" alt="Watercolor portrait gallery representing English-language writers from around the world" width="2201" height="714" loading="lazy"></div>
+  <p class="writers-scroll-hint">Swipe to explore more portraits</p>
+</section>
 </main>
 
-<footer class="site-footer"></footer>
+<footer class="login-footer"><span>© 2026 AK Explained</span><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a><a href="/">Back to site</a></footer>
 
+<script src="/assets/supabase-2.118.0.js" defer></script>
+<script src="/assets/supabase-config.js" defer></script>
+<script src="/assets/auth.js" defer></script>
+<script src="/assets/track.js" defer></script>
 <script src="/assets/login.js" defer></script>
 </body>
 </html>

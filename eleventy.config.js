@@ -59,6 +59,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.ignores.add("tools/**");
   // docs/ me maintainers ke liye notes hain (DB notes, plans) — koi public page nahi banna chahiye.
   eleventyConfig.ignores.add("docs/**");
+  eleventyConfig.ignores.add("design-qa.md");
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("_redirects");
