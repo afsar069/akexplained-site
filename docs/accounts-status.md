@@ -123,11 +123,19 @@ _Last updated: 2026-11-04._
     showing the older plain welcome box. Now: the banner painting `assets/dash-banner.webp` (Prof. AK, the
     university building and his own words, cut from the picture the owner sent), then "Your progress",
     "Welcome back," with the name large in `--accent` and a wave, "Continue your English literature
-    journey.", the four steps **Study · Practice · Revise · Improve** with gold dots, and the main path.
+    journey." and the main path, all **centred on a painted panel** of their own
+    (`assets/dash-box.webp`: cream paper, a gold frame, books at the left and leaves at the right).
+    The **Study · Practice · Revise · Improve** line was dropped at the owner's word (2026-11-06).
+    The name is set in **italic Literata 700**, which is why `dashboard/index.html` asks Google Fonts
+    for `1,700` as well — do not drop it from that page's font link.
     A first-time reader gets "Welcome," and "Start your English literature journey.".
-    **To replace the picture**: one file, same name, same shape — **2268 x 494 px** (it is shown at
-    1134 x 247, so 2x keeps it sharp), WEBP under about 300 KB. Nothing else changes; the quote lives
-    inside the picture, so the page never repeats it.
+    **To replace either picture**: one file, same name, same shape, nothing else to change.
+      - `assets/dash-banner.webp` — the wide painting, **2268 x 494 px** (shown at 1134 x 247).
+      - `assets/dash-box.webp` — the panel behind the greeting, **2000 x 443 px** (about 4.5 : 1).
+        It is stretched to the panel, so keep the art at the two ends and the middle clear.
+    The quote and the frame live inside the pictures, so the page never repeats them.
+    **Under 720px the panel picture is dropped** (it would be squashed and the leaves would sit under
+    the words): the same cream paper and gold edge are drawn in CSS instead.
   - **The dashboard's own top bar** (`.dashtop`, static markup in `dashboard/index.html`): "My Dashboard"
     (the page's `h1`) in the middle, a **bell** and the **profile button** on the right. The old `.pagehead`
     (the "Your progress / My Dashboard" strip with the reading-woman painting) and the breadcrumb were

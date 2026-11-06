@@ -3187,45 +3187,42 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 .dashhero-banner{display:block;line-height:0;background:var(--cream)}
 .dashhero-banner img{display:block;width:100%;height:auto}
-/* Saara text ek hi box me — bikhra hua na lage. Box banner se andar rehta
-   hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche chhota. */
+/* Saara text ek hi panel par, beech me — bikhra hua na lage. Panel ki
+   painting (sunehri kinara aur bel-boote) assets/dash-box.webp me hai, isliye
+   yahan koi border ya rang nahi: tasveer badlo, bas. Panel banner se andar
+   rehta hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche. */
 .dashhero-box{
-  margin:16px 18px 18px;padding:20px 24px 22px;
-  background:var(--tint);border:1px solid var(--border);border-radius:14px;
+  margin:16px 18px 18px;padding:26px 36px 28px;text-align:center;
+  background:url("/assets/dash-box.webp") center/100% 100% no-repeat;
+  border-radius:16px;
 }
-.dashhero-box .eyebrow{margin-bottom:6px}
+.dashhero-box .eyebrow{margin-bottom:4px}
 .dashhero-title{margin:0;font-family:var(--serif);line-height:1.1;color:var(--ink)}
 .dashhero-hi{
-  display:block;font-weight:600;font-size:clamp(1rem,1.9vw,1.25rem);color:var(--ink);
+  display:block;font-weight:700;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--ink);
 }
 .dashhero-name{
-  display:block;font-weight:700;color:var(--accent);line-height:1.04;margin-top:4px;
+  display:block;font-weight:700;font-style:italic;color:var(--accent);
+  line-height:1.04;margin-top:2px;letter-spacing:.005em;
   font-size:clamp(2.1rem,7.6vw,4.8rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
 }
 .dashhero-title i{font-style:normal;margin-left:.3em}
-.dashhero-name i{font-size:.62em;vertical-align:.12em}
+.dashhero-name i{font-size:.6em;vertical-align:.1em}
 .dashhero-line{
-  margin:12px 0 0;font-family:var(--serif);font-weight:600;color:var(--teal-dark);
-  font-size:clamp(.95rem,1.5vw,1.1rem);max-width:60ch;
+  margin:4px auto 0;font-family:var(--serif);font-weight:700;color:var(--teal-dark);
+  font-size:clamp(1rem,1.9vw,1.35rem);max-width:46ch;
 }
-.dashhero-steps{
-  display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;margin:16px 0 0;padding:0;
-}
-.dashhero-steps span{
-  font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);
-}
-.dashhero-steps span + span::before{
-  content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
-  background:var(--gold);margin:0 14px;vertical-align:2px;
-}
-.dashhero-path{margin:14px 0 0;font-size:.84rem;color:var(--body)}
+.dashhero-path{margin:10px 0 0;font-size:clamp(.88rem,1.3vw,1rem);color:var(--body)}
 .dashhero-path b{color:var(--ink)}
-@media (max-width:560px){
-  .dashhero-box{margin:12px 12px 14px;padding:16px 16px 18px}
-  /* Chhoti screen par line toot-ti hai, to bindu hata kar sirf gap — warna
-     doosri line ek bindu se shuru dikhti hai. */
-  .dashhero-steps{gap:7px 18px}
-  .dashhero-steps span + span::before{display:none}
+/* Phone par panel lamba aur patla ho jata hai: tasveer kheench kar bigad
+   jaati hai aur bel-boote text ke neeche aa jate hain. Isliye chhoti screen
+   par tasveer hata kar wahi kagaz aur sunehra kinara CSS se banate hain. */
+@media (max-width:720px){
+  .dashhero-box{
+    margin:12px 10px 12px;padding:18px 14px 20px;
+    background:var(--cream);
+    border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);
+  }
 }
 
 .dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}

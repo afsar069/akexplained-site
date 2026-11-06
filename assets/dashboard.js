@@ -832,11 +832,11 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
-  /* The header: the banner painting with the owner's own quote, then the
-     greeting, the four steps of the journey, and the main path. The quote
-     and the artwork live inside /assets/dash-banner.webp, so nothing here
-     needs changing when the picture is replaced. */
-  var HERO_STEPS = ['Study', 'Practice', 'Revise', 'Improve'];
+  /* The header: the banner painting with the owner's own quote, then a
+     centred greeting on its own painted panel. Both pictures carry their own
+     artwork and wording, so nothing here changes when one is replaced:
+       /assets/dash-banner.webp   the wide painting at the top
+       /assets/dash-box.webp      the panel the greeting sits on (CSS) */
   var HERO_ALT = 'Professor AK beside a university building, with his words: ' +
     '“Literature is not just to read, but to think, question and connect with life.”';
 
@@ -859,9 +859,6 @@
           '<span class="dashhero-name">' + esc(name) + '<i aria-hidden="true">😊</i></span>' +
         '</h2>' +
         '<p class="dashhero-line">' + esc(line) + '</p>' +
-        '<p class="dashhero-steps">' + HERO_STEPS.map(function (s) {
-          return '<span>' + esc(s) + '</span>';
-        }).join('') + '</p>' +
         (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
       '</div>' +
     '</section>';
