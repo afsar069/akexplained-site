@@ -60,9 +60,9 @@
       loginForm.hidden  = (view !== 'login');
       var introTitle = document.querySelector('.login-left h1');
       var introSubtitle = document.querySelector('.login-subtitle');
-      if (introTitle) introTitle.textContent = view === 'signup' ? 'Start your learning journey' : 'Welcome back';
+      if (introTitle) introTitle.textContent = view === 'signup' ? 'Create your account' : 'Welcome back';
       if (introSubtitle) introSubtitle.textContent = view === 'signup'
-        ? 'Create a free account to keep your study progress together.'
+        ? 'Save your study progress with a free account.'
         : 'Pick up where your learning left off.';
       clearError(signupForm.querySelector('.formerror'));
       clearError(loginForm.querySelector('.formerror'));
@@ -322,7 +322,6 @@
           } else {
             // Fallback only if email confirmation is ever turned back on.
             split.querySelector('.authforms').hidden = true;
-            document.querySelector('.authbenefits').hidden = true;
             notice.hidden = false;
             notice.textContent = 'Account created. Open the confirmation link we just emailed you — it brings you back here and signs you in.';
           }

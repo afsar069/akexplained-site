@@ -27,7 +27,9 @@ _Last updated: 2026-11-06._
 - **Login page redesign** (2026-11-06): `/login/` has a focused auth header, a desktop study preview,
   and a desktop gallery of writers from around the world. At widths of 900 px and below, the page
   shows a simple form layout without the two content images. The existing signup, sign-in, reset,
-  and Google sign-in flows remain connected.
+  and Google sign-in flows remain connected. The site's shared side menu stays available on the login
+  page (fixed on desktop, hamburger drawer on mobile); the dashboard art is painted into the laptop
+  screen rather than placed over it as a separate HTML layer.
 
 ## Live since 2026-11-06: the dashboard (v3 layout)
 The whole dashboard was merged to `main` at the owner's word on 2026-11-06, so everything described
