@@ -3192,10 +3192,13 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
    yahan koi border ya rang nahi: tasveer badlo, bas. Panel banner se andar
    rehta hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche. */
 .dashhero-box{
-  margin:16px 18px 18px;padding:26px 36px 28px;text-align:center;
+  margin:16px 18px 18px;padding:24px 36px 26px;text-align:center;
   background:url("/assets/dash-box.webp") center/100% 100% no-repeat;
-  border-radius:16px;
+  border:1px solid color-mix(in srgb,var(--gold) 42%,transparent);border-radius:14px;
 }
+/* Site ka p{max-width:74ch} har line ko sakra kar deta tha, isliye beech me
+   nahi aati thi. Panel ke andar har line poori chaudai leti hai. */
+.dashhero-box p{max-width:none;margin-left:auto;margin-right:auto}
 .dashhero-box .eyebrow{margin-bottom:4px}
 .dashhero-title{margin:0;font-family:var(--serif);line-height:1.1;color:var(--ink)}
 .dashhero-hi{
@@ -3216,13 +3219,19 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashhero-path b{color:var(--ink)}
 /* Phone par panel lamba aur patla ho jata hai: tasveer kheench kar bigad
    jaati hai aur bel-boote text ke neeche aa jate hain. Isliye chhoti screen
-   par tasveer hata kar wahi kagaz aur sunehra kinara CSS se banate hain. */
+   par tasveer hat jaati hai, text chhota ho jata hai aur panel patla rehta
+   hai; kinara baal jitna halka. */
 @media (max-width:720px){
   .dashhero-box{
-    margin:12px 10px 12px;padding:18px 14px 20px;
+    margin:10px 10px 10px;padding:13px 12px 14px;
     background:var(--cream);
-    border:1px solid color-mix(in srgb,var(--gold) 45%,transparent);
+    border-color:color-mix(in srgb,var(--gold) 26%,transparent);
   }
+  .dashhero-box .eyebrow{font-size:.66rem;letter-spacing:.14em;margin-bottom:2px}
+  .dashhero-hi{font-size:.95rem}
+  .dashhero-name{font-size:1.65rem;margin-top:0}
+  .dashhero-line{font-size:.9rem;margin-top:2px}
+  .dashhero-path{font-size:.8rem;margin-top:6px}
 }
 
 .dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}

@@ -131,11 +131,15 @@ _Last updated: 2026-11-04._
     A first-time reader gets "Welcome," and "Start your English literature journey.".
     **To replace either picture**: one file, same name, same shape, nothing else to change.
       - `assets/dash-banner.webp` — the wide painting, **2268 x 494 px** (shown at 1134 x 247).
-      - `assets/dash-box.webp` — the panel behind the greeting, **2000 x 443 px** (about 4.5 : 1).
-        It is stretched to the panel, so keep the art at the two ends and the middle clear.
+      - `assets/dash-box.webp` — the panel behind the greeting, **1988 x 422 px** (about 4.7 : 1).
+        It is stretched to the panel, so keep the art at the two ends and the middle clear, and leave
+        the gold frame **out** of it: the frame is a 1px CSS border, so it stays hairline at any size.
     The quote and the frame live inside the pictures, so the page never repeats them.
     **Under 720px the panel picture is dropped** (it would be squashed and the leaves would sit under
-    the words): the same cream paper and gold edge are drawn in CSS instead.
+    the words): plain cream paper, a fainter hairline edge, smaller type and tighter padding, so the
+    whole header is about 244px tall on a 390px phone.
+    Watch out: the site's `p{max-width:74ch}` pushed every centred line off-centre inside the panel,
+    so `.dashhero-box p` clears it. Any new line added there needs the same.
   - **The dashboard's own top bar** (`.dashtop`, static markup in `dashboard/index.html`): "My Dashboard"
     (the page's `h1`) in the middle, a **bell** and the **profile button** on the right. The old `.pagehead`
     (the "Your progress / My Dashboard" strip with the reading-woman painting) and the breadcrumb were

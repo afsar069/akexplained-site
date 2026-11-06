@@ -168,8 +168,8 @@ and never ask the owner for it.**
   under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
   add one for looks. The header is two pictures and nothing else to edit: `assets/dash-banner.webp`
   (the wide painting, 2268x494, shown at 1134x247) and `assets/dash-box.webp` (the panel the centred
-  greeting sits on, 2000x443, stretched — art at the two ends, middle clear; dropped under 720px, where
-  CSS draws the same paper and gold edge). The quote and the frame are inside the pictures, so the page
+  greeting sits on, 1988x422, stretched — art at the two ends, middle clear, **no frame in the picture**:
+  the gold frame is a 1px CSS border; dropped under 720px, where the panel is plain cream and slimmer). The quote and the frame are inside the pictures, so the page
   never repeats them, and `dashboard/index.html` loads Literata `1,700` for the italic name — keep it.
   `.dashbar` is the thin progress bar, not the top bar — do not confuse the two.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
