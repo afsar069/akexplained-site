@@ -9,7 +9,7 @@
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Literata:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body>
@@ -17,19 +17,39 @@
 
 <header class="site-header"></header>
 
-<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span>My Dashboard</p></div>
 <main id="main">
 
-<section class="pagehead">
-  <span class="mark" aria-hidden="true">D</span>
-  <div class="wrap">
-    <p class="eyebrow">Your progress</p>
-    <h1>My Dashboard</h1>
-    <p class="lede">The quiz answers you have given while logged in, by period and topic.</p>
-  </div>
-</section>
-
 <div class="wrap authwrap">
+
+  <!-- The dashboard's own top bar: the page name in the middle, the bell and
+       the profile button on the right. assets/dashboard.js puts the person's
+       name in #dashUser once it knows who is logged in. -->
+  <div class="dashtop">
+    <span class="dashtop-side" aria-hidden="true"></span>
+    <h1 class="dashtop-title">My Dashboard</h1>
+    <div class="dashtop-tools">
+      <!-- The bell is built but not wired to anything yet, so it is disabled.
+           To switch it on later: drop `disabled`, change the two labels, and
+           add the click handler. Never show a dot or a count until there is a
+           real notification behind it. -->
+      <button class="dashtop-bell" type="button" disabled
+              title="Notifications — not working yet"
+              aria-label="Notifications — not working yet">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+             stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10.5 20a2 2 0 0 0 3 0"/>
+        </svg>
+      </button>
+      <a class="dashtop-user" id="dashUser" href="/login/">
+        <span class="dashtop-ava" aria-hidden="true">?</span>
+        <span class="dashtop-who"><b>Log in</b><i>Guest</i></span>
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m9 5 7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
 
   <!-- Shown when accounts are off or something fails before the page can start. -->
   <div id="dashNotice" class="authnotice" role="status" hidden></div>

@@ -3169,18 +3169,110 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 
 /* Dashboard v2 — welcome hero + KPI cards (professional pass).
    Naam ke saath ek greeting upar, phir bade ginti waale dabbe icon ke saath. */
+/* ---------- The dashboard's own top bar ----------
+   Page ka naam beech me, daayin taraf ghanti aur profile ka button.
+   Ghanti abhi kisi cheez se judi nahi hai, isliye disabled hai. */
+.dashtop{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;
+  padding:10px 16px;margin:0 0 18px;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
+  box-shadow:0 10px 30px -24px rgba(22,48,74,.5);
+}
+.dashtop-title{
+  grid-column:2;margin:0;text-align:center;white-space:nowrap;
+  font-family:var(--serif);font-weight:700;color:var(--ink);
+  font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.2;
+}
+.dashtop-tools{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px}
+.dashtop-bell{
+  flex:none;display:inline-flex;align-items:center;justify-content:center;
+  width:40px;height:40px;border-radius:11px;cursor:pointer;
+  background:var(--tint);border:1px solid var(--border);color:var(--teal-dark);
+  transition:background .2s,border-color .2s,color .2s;
+}
+.dashtop-bell:hover:not(:disabled){background:var(--teal);border-color:var(--teal);color:#fff}
+.dashtop-bell:disabled{cursor:not-allowed;opacity:.55}
+.dashtop-user{
+  display:inline-flex;align-items:center;gap:10px;min-width:0;
+  padding:5px 12px 5px 6px;border-radius:999px;
+  border:1px solid var(--border);background:var(--tint);color:var(--ink);
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.dashtop-user:hover{background:#fff;border-color:var(--teal);transform:translateY(-1px);color:var(--ink)}
+.dashtop-ava{
+  flex:none;width:34px;height:34px;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--teal);color:#fff;font-weight:700;font-size:1rem;line-height:1;
+}
+.dashtop-who{display:flex;flex-direction:column;min-width:0;line-height:1.2}
+.dashtop-who b{font-weight:600;font-size:.92rem;color:var(--ink);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dashtop-who i{font-style:normal;font-size:.76rem;color:var(--mcq-ink-faint)}
+.dashtop-user svg{flex:none;color:var(--teal)}
+@media (max-width:720px){
+  .dashtop{grid-template-columns:1fr auto;padding:9px 12px}
+  .dashtop-side{display:none}
+  .dashtop-title{grid-column:1;text-align:left}
+  .dashtop-tools{grid-column:2;gap:8px}
+  .dashtop-who{display:none}
+  .dashtop-user{padding:4px;gap:0}
+  .dashtop-user svg{display:none}
+}
+
+/* The dashboard header: the banner painting (with Prof. AK's own quote
+   baked into it) and, under it, the greeting, the four steps and the path. */
 .dashhero{
-  background:linear-gradient(135deg,var(--teal-soft),var(--cream));
-  border:1px solid color-mix(in srgb,var(--teal) 22%,var(--border));
-  border-radius:16px;padding:24px 26px;margin:0 0 18px;
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:18px;padding:0;margin:0 0 20px;overflow:hidden;
+  box-shadow:0 10px 30px -22px rgba(22,48,74,.5);
 }
-.dashhero-title{
-  font-family:var(--serif);font-weight:700;line-height:1.15;color:var(--ink);
-  font-size:clamp(1.5rem,3.2vw,2rem);margin:0;
+.dashhero-banner{display:block;line-height:0;background:var(--cream)}
+.dashhero-banner img{display:block;width:100%;height:auto}
+/* Saara text ek hi panel par, beech me — bikhra hua na lage. Panel ki
+   painting (sunehri kinara aur bel-boote) assets/dash-box.webp me hai, isliye
+   yahan koi border ya rang nahi: tasveer badlo, bas. Panel banner se andar
+   rehta hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche. */
+.dashhero-box{
+  margin:14px 16px 16px;padding:13px 36px 15px;text-align:center;
+  background:url("/assets/dash-box.webp") center/100% 100% no-repeat;
+  border:1px solid color-mix(in srgb,var(--gold) 42%,transparent);border-radius:14px;
 }
-.dashhero-line{margin:8px 0 0;color:var(--body);max-width:60ch}
-.dashhero-path{margin:12px 0 0;font-size:.92rem;color:var(--teal-dark)}
+/* Site ka p{max-width:74ch} har line ko sakra kar deta tha, isliye beech me
+   nahi aati thi. Panel ke andar har line poori chaudai leti hai. */
+.dashhero-box p{max-width:none;margin-left:auto;margin-right:auto}
+.dashhero-box .eyebrow{margin-bottom:4px}
+.dashhero-title{margin:0;font-family:var(--serif);line-height:1.1;color:var(--ink)}
+.dashhero-hi{
+  display:block;font-weight:700;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--ink);
+}
+/* Naam "Playfair Display" me hai — maalik ki pasand (2026-11-06), angrezi
+   kitabon wala purana-sa dikhne wala akshar. Badalna ho to yahan aur
+   dashboard/index.html ke font link me, dono jagah. */
+.dashhero-name{
+  display:block;font-family:"Playfair Display",var(--serif);font-weight:700;font-style:italic;
+  color:var(--accent);line-height:1;margin-top:0;letter-spacing:.005em;
+  font-size:clamp(2.2rem,8vw,5rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
+}
+.dashhero-title i{font-style:normal;margin-left:.3em}
+.dashhero-name i{font-size:.6em;vertical-align:.1em}
+.dashhero-line{
+  margin:2px auto 0;font-family:var(--serif);font-weight:700;color:var(--teal-dark);
+  font-size:clamp(1rem,1.9vw,1.3rem);max-width:46ch;
+}
+.dashhero-path{margin:6px 0 0;font-size:clamp(.86rem,1.3vw,.98rem);color:var(--body)}
 .dashhero-path b{color:var(--ink)}
+/* Phone par tasveer wahi rehti hai (maalik ne kaha), bas text chhota aur
+   panel jitna patla ho sake utna — isse tasveer bhi kam khinchti hai. */
+@media (max-width:720px){
+  .dashhero-box{
+    margin:10px 10px 10px;padding:9px 12px 11px;
+    border-color:color-mix(in srgb,var(--gold) 30%,transparent);
+  }
+  .dashhero-box .eyebrow{font-size:.64rem;letter-spacing:.13em;margin-bottom:1px}
+  .dashhero-hi{font-size:.9rem}
+  .dashhero-name{font-size:1.7rem}
+  .dashhero-line{font-size:.86rem;margin-top:1px}
+  .dashhero-path{font-size:.78rem;margin-top:4px}
+}
 
 .dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}
 .dashkpis-2{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
@@ -3202,7 +3294,6 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashkpi-lbl{margin-top:5px;font-weight:600;font-size:.95rem;line-height:1.3;color:var(--ink)}
 .dashkpi-sub{margin-top:3px;font-style:normal;font-size:.82rem;color:var(--mcq-ink-faint)}
 @media (max-width:560px){
-  .dashhero{padding:20px}
   .dashkpi-num{font-size:1.6rem}
 }
 
@@ -3270,3 +3361,122 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashlb em{font-style:normal;font-size:.9rem;color:var(--mcq-ink-faint);white-space:nowrap}
 .dashlb.is-you{background:var(--teal-soft);border-radius:10px;padding-left:12px;padding-right:12px;border-bottom-color:transparent}
 .dashlb.is-you .dashlb-name{color:var(--teal-dark)}
+
+/* ---------- Dashboard v2 layout (owner's rows, 2026-11-06) ----------
+   Row 2 = chhe tile ek line me; Row 3/6/7/8/9 = do card ek line me (.dashpair).
+   Tile ki tasveer (PNG) .dashkpi-ic ke andar aati hai — SVG ki jagah. */
+
+/* Screen-reader-only text (week grid ke din ka matlab). */
+.sr-only{
+  position:absolute;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;
+}
+
+/* Row 2: six tiles in one line. */
+.dashkpis-6{grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-bottom:20px}
+.dashkpis-6 .dashkpi{padding:14px;gap:10px;flex-direction:column;align-items:flex-start}
+.dashkpis-6 .dashkpi-num{font-size:1.5rem}
+.dashkpis-6 .dashkpi-lbl{font-size:.88rem}
+.dashkpis-6 .dashkpi-sub{font-size:.76rem}
+@media (max-width:1080px){.dashkpis-6{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:620px){
+  .dashkpis-6{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dashkpis-6 .dashkpi-num{font-size:1.3rem}
+}
+
+/* Two cards in one line; each keeps its own two tiles side by side. */
+.dashpair{display:grid;grid-template-columns:1fr;gap:0}
+.dashpair > .acctcard{margin-bottom:20px}
+@media (min-width:920px){
+  .dashpair{grid-template-columns:1fr 1fr;gap:20px;align-items:stretch;margin-bottom:20px}
+  .dashpair > .acctcard{margin-bottom:0;display:flex;flex-direction:column}
+  .dashpair > .acctcard > .dashlist,
+  .dashpair > .acctcard > .dashboardlb{flex:1 0 auto}
+  .dashpair .dashkpis-2{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dashpair .dashkpi{padding:14px}
+  .dashpair .dashkpi-num{font-size:1.5rem}
+}
+
+/* A PNG in place of the line drawing. */
+.dashkpi-ic img{display:block;width:36px;height:36px;object-fit:contain}
+
+/* The "+" button in a card corner: opens the full page. */
+.dashplus{
+  flex:none;display:inline-flex;align-items:center;justify-content:center;
+  width:30px;height:30px;border:1.5px solid var(--border);border-radius:9px;
+  background:var(--tint);color:var(--teal-dark);font-weight:700;font-size:1.1rem;line-height:1;
+  transition:background .2s,border-color .2s,color .2s,transform .2s;
+}
+.dashplus:hover{background:var(--teal);border-color:var(--teal);color:#fff;transform:translateY(-2px)}
+
+/* Age rows on the summary card: the bar shows how much is answered. */
+.dashrow-age .dashbar{position:relative}
+.dashrow-age .dashbar span.ok{background:var(--teal-dark)}
+.dashkind.is-now{color:#fff;background:var(--gold)}
+.dashkind.is-ok{color:#fff;background:var(--teal)}
+
+/* The week line: green = answered, red = missed, plain = still to come. */
+.dashweek span{display:flex;align-items:center;justify-content:center}
+.dashweek span.is-missed{background:var(--accent);border-color:var(--accent);color:#fff}
+.dashweek span.is-today{border-color:var(--gold);border-width:2px;color:var(--ink)}
+
+/* The weekly score chart. */
+.dashchart{margin:4px 0 0}
+.dashchart svg{display:block;width:100%;height:auto;overflow:visible}
+.dashgrid{stroke:var(--border);stroke-width:1}
+.dashline{fill:none;stroke:var(--teal);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.dashdot{fill:#fff;stroke:var(--teal);stroke-width:2.5}
+.dashaxis{font-family:var(--sans,inherit);font-size:10px;fill:var(--mcq-ink-faint)}
+
+/* The next-goal card. */
+.dashgoal-head{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.dashgoal-head .dashkpi-ic{background:var(--cream);color:var(--gold)}
+.dashgoal-name{display:block;font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--ink)}
+.dashgoal-sub{display:block;font-size:.82rem;color:var(--mcq-ink-faint);margin-top:2px}
+.dashbar-lg{height:10px;position:relative}
+.dashgoal-line{margin:10px 0 0;font-size:.9rem;color:var(--ink)}
+.dashgoal .dashactions{margin-top:14px}
+
+/* Top students: one line, right across the card from start to end. */
+.dashlbrow{
+  list-style:none;margin:4px 0 0;padding:0;max-width:none;
+  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:12px;
+}
+.dashlbcard{
+  display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;
+  padding:14px 10px;border:1px solid var(--card-line);border-radius:14px;background:var(--tint);
+}
+.dashlbcard-rank{
+  font-family:var(--serif);font-weight:700;font-size:1.3rem;line-height:1;color:var(--teal-dark);
+}
+.dashlbcard-name{font-weight:600;font-size:.95rem;color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.dashlbcard-acc{font-style:normal;font-size:.82rem;color:var(--mcq-ink-faint)}
+.dashlbcard.is-first{background:var(--cream);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
+.dashlbcard.is-first .dashlbcard-rank{color:var(--gold)}
+.dashlbcard.is-you{background:var(--teal-soft);border-color:var(--teal)}
+.dashlbcard.is-you .dashlbcard-name{color:var(--teal-dark)}
+@media (max-width:720px){
+  .dashlbrow{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Your paths: one thin strip, the last line of the page. */
+.dashstrip{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;
+  padding:11px 18px;margin:0 0 20px;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:999px;
+}
+.dashstrip-lbl{
+  font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);
+}
+.dashstrip-items{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;flex:1;min-width:0}
+.dashstrip-path{font-weight:600;font-size:.92rem;color:var(--ink);display:inline-flex;align-items:center;gap:7px}
+.dashstrip-path i{
+  font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:#fff;background:var(--teal);border-radius:999px;padding:2px 8px;
+}
+.dashstrip-link{font-size:.86rem;font-weight:600;white-space:nowrap}
+@media (max-width:560px){.dashstrip{border-radius:16px}}
+
+.dashback{margin:4px 0 24px;font-weight:600}
+.dashage.is-now{border-color:var(--gold);box-shadow:0 2px 10px rgba(185,137,47,.14)}
+.dashage-foot{margin-top:9px;font-size:.84rem}
