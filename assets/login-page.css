@@ -59,17 +59,13 @@
 .login-writers-copy>p:last-child{font-size:1rem;color:#4a5a6a}
 .login-writers-scroll{max-width:1320px;margin:13px auto 0;overflow-x:auto}
 .login-writers-scroll img{display:block;width:100%;height:auto;margin:auto}
-.writers-scroll-hint{display:none}
 .login-footer{display:flex;justify-content:center;gap:24px;align-items:center;flex-wrap:wrap;padding:22px 28px;border-top:1px solid #e6dfcb;color:#6b7378;font-size:.82rem}
 .login-footer a{color:#0b5750}
 @media(max-width:900px){
-  .login-layout{grid-template-columns:1fr;gap:36px;max-width:690px;padding:38px 24px 50px}
+  .login-layout{display:block;max-width:690px;padding:38px 24px 50px}
   .login-left{padding-top:0}
   .login-subtitle{margin-bottom:30px}
-  .login-art{max-width:690px;margin:auto}
-  .login-dashboard{padding:clamp(7px,2vw,15px)}
-  .login-benefits{margin-top:8px;padding:0}
-  .login-benefits h2{max-width:none}
+  .login-showcase,.login-writers{display:none}
 }
 @media(max-width:600px){
   .login-header{min-height:70px;padding:10px 20px}
@@ -78,18 +74,8 @@
   .login-header nav{gap:12px}
   .login-header nav a:first-child{display:none}
   .login-header nav a{font-size:.8rem}
-  .login-layout{padding:38px 22px 43px;gap:35px}
+  .login-layout{padding:38px 22px 43px}
   .login-left h1{font-size:clamp(2.6rem,11vw,3.6rem)}
   .login-subtitle{font-size:1.1rem}
-  .login-dashboard{padding:6px}
-  .preview-path{margin-top:5%!important}
-  .preview-progress{margin-top:4%}
-  .preview-stats{margin-top:4%}
-  .login-benefits h2{font-size:1.9rem}
-  .login-writers{padding:39px 0 20px}
-  .login-writers-copy{padding:0 22px}
-  .login-writers-scroll{margin-top:18px}
-  .login-writers-scroll img{width:850px;max-width:none}
-  .writers-scroll-hint{display:block;margin:10px 0 0;color:#5c6970;font-size:.8rem}
 }
 @media print{.login-art,.login-writers-scroll{display:none}}
