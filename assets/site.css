@@ -3187,34 +3187,41 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 .dashhero-banner{display:block;line-height:0;background:var(--cream)}
 .dashhero-banner img{display:block;width:100%;height:auto}
-.dashhero-body{padding:22px 26px 24px}
-.dashhero-body .eyebrow{margin-bottom:8px}
-.dashhero-title{
-  font-family:var(--serif);font-weight:700;line-height:1.12;color:var(--ink);
-  font-size:clamp(1.35rem,2.6vw,1.75rem);margin:0;
+/* Saara text ek hi box me — bikhra hua na lage. Box banner se andar rehta
+   hai, kabhi usse chauda nahi. Naam sabse bada, baaki uske neeche chhota. */
+.dashhero-box{
+  margin:16px 18px 18px;padding:20px 24px 22px;
+  background:var(--tint);border:1px solid var(--border);border-radius:14px;
+}
+.dashhero-box .eyebrow{margin-bottom:6px}
+.dashhero-title{margin:0;font-family:var(--serif);line-height:1.1;color:var(--ink)}
+.dashhero-hi{
+  display:block;font-weight:600;font-size:clamp(1rem,1.9vw,1.25rem);color:var(--ink);
 }
 .dashhero-name{
-  display:block;color:var(--accent);font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.08;margin-top:2px;
+  display:block;font-weight:700;color:var(--accent);line-height:1.04;margin-top:4px;
+  font-size:clamp(2.1rem,7.6vw,4.8rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
 }
-.dashhero-wave{margin-left:.35em;font-size:.82em}
+.dashhero-title i{font-style:normal;margin-left:.3em}
+.dashhero-name i{font-size:.62em;vertical-align:.12em}
 .dashhero-line{
   margin:12px 0 0;font-family:var(--serif);font-weight:600;color:var(--teal-dark);
-  font-size:clamp(1rem,1.7vw,1.2rem);max-width:60ch;
+  font-size:clamp(.95rem,1.5vw,1.1rem);max-width:60ch;
 }
 .dashhero-steps{
   display:flex;flex-wrap:wrap;align-items:center;gap:6px 0;margin:16px 0 0;padding:0;
 }
 .dashhero-steps span{
-  font-size:.82rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);
+  font-size:.76rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-dark);
 }
 .dashhero-steps span + span::before{
   content:"";display:inline-block;width:6px;height:6px;border-radius:50%;
   background:var(--gold);margin:0 14px;vertical-align:2px;
 }
-.dashhero-path{margin:16px 0 0;font-size:.92rem;color:var(--body)}
+.dashhero-path{margin:14px 0 0;font-size:.84rem;color:var(--body)}
 .dashhero-path b{color:var(--ink)}
 @media (max-width:560px){
-  .dashhero-body{padding:18px 18px 20px}
+  .dashhero-box{margin:12px 12px 14px;padding:16px 16px 18px}
   /* Chhoti screen par line toot-ti hai, to bindu hata kar sirf gap — warna
      doosri line ek bindu se shuru dikhti hai. */
   .dashhero-steps{gap:7px 18px}

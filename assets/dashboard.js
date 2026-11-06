@@ -851,11 +851,13 @@
       '<div class="dashhero-banner">' +
         '<img src="/assets/dash-banner.webp" alt="' + esc(HERO_ALT) + '" width="1460" height="324">' +
       '</div>' +
-      '<div class="dashhero-body">' +
+      '<div class="dashhero-box">' +
         '<p class="eyebrow">Your progress</p>' +
-        '<h2 class="dashhero-title">' + (fresh ? 'Welcome,' : 'Welcome back,') +
-          '<span class="dashhero-name">' + esc(name) +
-          '<span class="dashhero-wave" aria-hidden="true">👋</span></span></h2>' +
+        '<h2 class="dashhero-title">' +
+          '<span class="dashhero-hi">' + (fresh ? 'Welcome,' : 'Welcome back,') +
+            '<i aria-hidden="true">🙏</i></span>' +
+          '<span class="dashhero-name">' + esc(name) + '<i aria-hidden="true">😊</i></span>' +
+        '</h2>' +
         '<p class="dashhero-line">' + esc(line) + '</p>' +
         '<p class="dashhero-steps">' + HERO_STEPS.map(function (s) {
           return '<span>' + esc(s) + '</span>';
