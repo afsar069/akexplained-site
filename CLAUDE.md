@@ -170,8 +170,9 @@ and never ask the owner for it.**
   (the wide painting, 2268x494, shown at 1134x247) and `assets/dash-box.webp` (the panel the centred
   greeting sits on, 1988x422, stretched — art at the two ends, middle clear, **no frame in the picture**:
   the gold frame is a 1px CSS border; the picture stays at every width, the type just steps down on a
-  phone). The name is **EB Garamond italic 600** (old-style, the owner's "represents English
-  literature") — changing it means the `.dashhero-name` rule and that page's font link, both. The quote and the frame are inside the pictures, so the page
+  phone). The name is **Playfair Display italic 700** (the owner's pick, 2026-11-06) — changing it
+  means the `.dashhero-name` rule and that page's font link, both. The dashboard is **live on
+  akexplained.com since 2026-11-06**. The quote and the frame are inside the pictures, so the page
   never repeats them, and `dashboard/index.html` loads Literata `1,700` for the italic name — keep it.
   `.dashbar` is the thin progress bar, not the top bar — do not confuse the two.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports

@@ -25,6 +25,15 @@ _Last updated: 2026-11-04._
   The reset / confirm code (`60cac7e`, `assets/login.js`, `auth.js`) is on `main`.
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
+## Live since 2026-11-06: the dashboard (v3 layout)
+The whole dashboard was merged to `main` at the owner's word on 2026-11-06, so everything described
+in the three "Dashboard" blocks below is **now on akexplained.com**, not waiting on a branch:
+`/dashboard/`, `/dashboard/ages/`, `/dashboard/topics/`, the top bar, the designed header and the
+two header pictures. The name is set in **Playfair Display italic 700** (the owner's pick from five
+faces shown on 2026-11-06); changing it means the `.dashhero-name` rule and `dashboard/index.html`'s
+font link, both. Still open: the bell has nothing behind it, "Quizzes taken" is still
+"Questions answered", and the other eight journeys have no syllabus.
+
 ## Waiting on a feature branch
 - **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see
   it first). Read-only; no migration, no new table or column. Files: `dashboard/index.html`,
