@@ -116,6 +116,27 @@ _Last updated: 2026-11-04._
   - Browser-tested against `_site` with Supabase mocked (the six tiles, the five paired rows, the "+" links,
     the missed-day red, the chart, the two full-list pages, mobile width 390px). `npx @11ty/eleventy` builds
     clean; no new internal link 404s.
+  - **Top students** takes a line of its own, the five students side by side right across the card
+    (`.dashlbrow` / `.dashlbcard`, first place gold, "You" teal, two columns under 720px).
+    **Your paths** is the last line of the page, one thin strip (`.dashstrip`).
+  - **The header** (owner's design, 2026-11-06) — it had never been in this repo, so the dashboard was
+    showing the older plain welcome box. Now: the banner painting `assets/dash-banner.webp` (Prof. AK, the
+    university building and his own words, cut from the picture the owner sent), then "Your progress",
+    "Welcome back," with the name large in `--accent` and a wave, "Continue your English literature
+    journey.", the four steps **Study · Practice · Revise · Improve** with gold dots, and the main path.
+    A first-time reader gets "Welcome," and "Start your English literature journey.".
+    **To replace the picture**: one file, same name, same shape — **2268 x 494 px** (it is shown at
+    1134 x 247, so 2x keeps it sharp), WEBP under about 300 KB. Nothing else changes; the quote lives
+    inside the picture, so the page never repeats it.
+  - **The dashboard's own top bar** (`.dashtop`, static markup in `dashboard/index.html`): "My Dashboard"
+    (the page's `h1`) in the middle, a **bell** and the **profile button** on the right. The old `.pagehead`
+    (the "Your progress / My Dashboard" strip with the reading-woman painting) and the breadcrumb were
+    removed from this page so the header sits at the very top, as the owner drew it. The bar shows
+    "Log in / Guest" until `dashboard.js` fills `#dashUser` with the real name (initial, name, "Student",
+    link to `/account/`).
+    **The bell is `disabled` and carries no dot or count** — nothing is behind it yet. To switch it on:
+    drop `disabled`, change its two labels, add the handler, and only then show a count, from real rows.
+    Careful: `.dashbar` was already taken (the thin progress bar), which is why the top bar is `.dashtop`.
 
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,

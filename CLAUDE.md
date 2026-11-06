@@ -163,6 +163,12 @@ and never ask the owner for it.**
   `/dashboard/ages/` or `/dashboard/topics/`, which are the same script with `data-view` on `#dashSections`.
   Tile artwork goes through `art()` / `KPI_ART` — put a PNG in `/assets/dash/`, name it there, change nothing
   else. "Quizzes taken" stays "Questions answered" until a real completion count exists.
+  `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
+  `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
+  under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
+  add one for looks. The header banner is the single file `assets/dash-banner.webp` (2268x494, shown at
+  1134x247); the quote and the artwork are inside it, so the page never repeats them. `.dashbar` is the thin
+  progress bar, not the top bar — do not confuse the two.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
   setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL

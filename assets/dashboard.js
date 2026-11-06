@@ -990,6 +990,21 @@
     return renderMain(ctx);
   }
 
+  // The profile button in the top bar. Until the name is known it keeps the
+  // "Log in" wording the page ships with, so nothing is ever guessed.
+  function fillUserButton(name) {
+    var el = document.getElementById('dashUser');
+    if (!el || !name) return;
+    var first = String(name).trim().charAt(0).toUpperCase() || '?';
+    el.setAttribute('href', '/account/');
+    el.innerHTML = '<span class="dashtop-ava" aria-hidden="true">' + esc(first) + '</span>' +
+      '<span class="dashtop-who"><b>' + esc(name) + '</b><i>Student</i></span>' +
+      '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" ' +
+      'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+      '<path d="m9 5 7 7-7 7"/></svg>';
+    el.setAttribute('aria-label', 'My Account — ' + name);
+  }
+
   function start(client, uid, root, user, auth) {
     var view = root.getAttribute('data-view') || 'main';
     root.innerHTML = '<p class="dashloading">Loading your progress…</p>';
@@ -1000,8 +1015,9 @@
       board: null, syllabus: null, british: null, currentAge: ''
     };
 
+    fillUserButton(ctx.name);                               // the quick name, right away
     var pName = loadProfileName(client, uid).then(function (pn) {
-      if (pn && auth && user) ctx.name = auth.nameFrom(user, pn);
+      if (pn && auth && user) { ctx.name = auth.nameFrom(user, pn); fillUserButton(ctx.name); }
     }, function () { /* keep the quick name */ });
 
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
