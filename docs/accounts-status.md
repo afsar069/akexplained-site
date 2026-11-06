@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-04._
+_Last updated: 2026-11-06._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -24,6 +24,10 @@ _Last updated: 2026-11-04._
   and the owner tested the full reset flow end to end (reset mail arrives, a new password can be set).
   The reset / confirm code (`60cac7e`, `assets/login.js`, `auth.js`) is on `main`.
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
+- **Login page redesign** (2026-11-06): `/login/` has a focused auth header, a desktop study preview,
+  and a desktop gallery of writers from around the world. At widths of 900 px and below, the page
+  shows a simple form layout without the two content images. The existing signup, sign-in, reset,
+  and Google sign-in flows remain connected.
 
 ## Live since 2026-11-06: the dashboard (v3 layout)
 The whole dashboard was merged to `main` at the owner's word on 2026-11-06, so everything described
