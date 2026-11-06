@@ -64,6 +64,14 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   more questions, then earlier start. Cards show rank, name, points and accuracy; `/privacy/` says points and accuracy
   together hint at how many questions a student has answered. If the function ever lacks `score`, the dashboard falls back to the
   accuracy wording.
+- **Top students names (found 2026-11-06):** all three live accounts have an EMPTY `profiles.display_name`; their names
+  live on the account (`auth.users.raw_user_meta_data`: Google `name`, email sign-up `display_name`), so the board showed
+  "Student" for everyone. **SQL: `supabase/migrations/20261106140000_leaderboard_show_account_names.sql`** makes the board use
+  profile name, else the account name, else "Student" (never an email). Status: written and tested on a scratch Postgres;
+  **the owner must run it** (see the next note for whether it has been). Students with zero answers are not on the board
+  (no points); showing them at 0 points is an open choice for the owner.
+- First real `quiz_runs` row seen live on 2026-11-06 (MCQ, old-english-set-2, easy, 50 questions, 21 answered, 6 right): the
+  write path works end to end.
 - `/privacy/` and `/terms/` now say quiz completions are kept and the list is on the dashboard (Last updated 6 Nov 2026).
 - Tested: 123 dashboard checks and 26 quiz-engine checks in a browser with Supabase mocked; both migrations on a scratch
   Postgres 16 (run twice, RLS own-rows, anon denied, constraints, cascade, ten-student ranking). Security advisors must be
