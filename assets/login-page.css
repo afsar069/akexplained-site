@@ -31,13 +31,7 @@
 .login-page .authnotice{margin:0 0 24px}
 .login-page .pathscreen{margin:0;padding:0}
 .login-showcase{min-width:0}
-.login-art{position:relative;width:100%;overflow:hidden}
-.login-art>img{width:100%;height:auto;display:block}
-.login-benefits{padding:0 3% 0 2%;margin-top:12px;position:relative}
-.login-benefits h2{font:600 clamp(1.7rem,2.8vw,2.55rem)/1.15 var(--serif);letter-spacing:-.02em;color:#16304a;margin:0 0 14px;max-width:15ch}
-.login-benefits ul{padding:0 0 0 22px;margin:0;display:grid;gap:8px}
-.login-benefits li{padding-left:4px;margin:0;font-size:1.02rem;color:#263f51}
-.login-benefits li::marker{color:#0f766e}
+.login-study-space{display:block;width:100%;height:auto}
 .login-writers{padding:34px 28px 24px;border-top:1px solid #e6dfcb;background:#fffdf7;text-align:center}
 .login-writers-copy{max-width:760px;margin:auto}
 .login-writers h2{font:600 clamp(1.75rem,3vw,2.7rem)/1.2 var(--serif);color:#16304a;margin:0 0 8px}
@@ -50,7 +44,6 @@
 @media(max-width:1199px) and (min-width:901px){
   .login-header-inner{max-width:760px}
   .login-layout{grid-template-columns:1fr;max-width:760px}
-  .login-benefits h2{max-width:none}
 }
 @media(max-width:1023px){
   .login-header{display:none}
@@ -68,4 +61,4 @@
   .login-footer{display:grid;grid-template-columns:repeat(3,auto);justify-content:center;gap:8px 20px;text-align:center;padding:16px 20px}
   .login-footer span{grid-column:1/-1}
 }
-@media print{.login-art,.login-writers-scroll{display:none}}
+@media print{.login-showcase,.login-writers-scroll{display:none}}

@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-06._
+_Last updated: 2026-11-07._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -28,8 +28,8 @@ _Last updated: 2026-11-06._
   and a desktop gallery of writers from around the world. At widths of 900 px and below, the page
   shows a simple form layout without the two content images. The existing signup, sign-in, reset,
   and Google sign-in flows remain connected. The site's shared side menu stays available on the login
-  page (fixed on desktop, hamburger drawer on mobile); the dashboard art is painted into the laptop
-  screen rather than placed over it as a separate HTML layer.
+  page (fixed on desktop, hamburger drawer on mobile). On 2026-11-07 the desktop study preview was
+  replaced with the owner's English Literature Study Space picture, whose benefits text is part of the image.
 
 ## Live since 2026-11-06: the dashboard (v3 layout)
 The whole dashboard was merged to `main` at the owner's word on 2026-11-06, so everything described
