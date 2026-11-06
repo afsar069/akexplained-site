@@ -3204,11 +3204,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashhero-hi{
   display:block;font-weight:700;font-size:clamp(1.05rem,2vw,1.4rem);color:var(--ink);
 }
-/* Naam "EB Garamond" me hai — Garamond wahi purana angrezi kitabon wala
-   akshar hai, isliye English literature ka ehsaas deta hai. Badalna ho to
-   yahan aur dashboard/index.html ke font link me, dono jagah. */
+/* Naam "Playfair Display" me hai — maalik ki pasand (2026-11-06), angrezi
+   kitabon wala purana-sa dikhne wala akshar. Badalna ho to yahan aur
+   dashboard/index.html ke font link me, dono jagah. */
 .dashhero-name{
-  display:block;font-family:"EB Garamond",var(--serif);font-weight:600;font-style:italic;
+  display:block;font-family:"Playfair Display",var(--serif);font-weight:700;font-style:italic;
   color:var(--accent);line-height:1;margin-top:0;letter-spacing:.005em;
   font-size:clamp(2.2rem,8vw,5rem);overflow-wrap:anywhere;   /* lamba naam toote, bahar na nikle */
 }
