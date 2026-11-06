@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
     const r = checkTopics(__dirname);
     console.log("[check-topics] " + r.files + " question files checked against " + r.validTopics + " valid topic ids — OK");
     const s = buildSyllabus(__dirname);
-    console.log("[syllabus] British literature: " + s.ages + " ages, " + s.questions + " Daily questions — assets/syllabus-british.json");
+    console.log("[syllabus] British literature: " + s.ages + " ages, " + s.questions + " Daily + " + s.mcq + " MCQ questions (" + (s.mcqAges.join(", ") || "no live MCQ set") + ") — assets/syllabus-british.json");
   });
 
   // Article ke upar "X min read" dikhane ke liye. 200 words/minute

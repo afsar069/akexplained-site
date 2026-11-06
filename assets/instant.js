@@ -387,6 +387,15 @@
     var right = answered.length - missed.length;
     var pct = Math.round(right / answered.length * 100);
 
+    /* A finished quiz (also one stopped early) is counted once, for logged-in readers only.
+       It never blocks the result: the write is fire-and-forget (see track.js). */
+    try {
+      if (window.akTrack && window.akTrack.recordRun) window.akTrack.recordRun({
+        source: 'daily', bankId: BANK, level: run.level,
+        totalQuestions: run.items.length, answered: answered.length, correct: right
+      });
+    } catch (e) { /* never break the quiz */ }
+
     stats.runs.push({ t: Date.now(), level: run.level, n: answered.length, right: right });
     if (stats.runs.length > 100) stats.runs = stats.runs.slice(-100);
     write(KEY, stats);

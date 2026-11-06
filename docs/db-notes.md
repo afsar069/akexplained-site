@@ -64,6 +64,27 @@ Three indexes make the common lookups fast: all of a user's attempts for one top
 (`user_id, topic_id`), all of a user's attempts for one period (`user_id, period_id`),
 and all of a user's attempts in time order (`user_id, answered_at`).
 
+### `quiz_runs` (added 2026-11-06)
+
+One row each time a logged-in student **finishes a quiz** (a Daily quiz or an MCQ test). `attempts` has one
+row per question, so it cannot say how many quizzes were taken; this table can. It feeds the dashboard tile
+"Quizzes taken". It is **not retroactive**: quizzes finished before the table existed have no row.
+
+| Column            | Meaning |
+| ----------------- | ------- |
+| `id`              | A unique number for the row, assigned by the database. |
+| `user_id`         | Who finished the quiz. If the user is deleted, their rows are deleted too. |
+| `source`          | `daily` (the Daily quiz) or `cbt` (the MCQ tests). |
+| `bank_id`         | Which quiz: the Daily period (for example `anglo-saxon`) or the MCQ set (for example `old-english-set-1`, or `<age>-custom` for a student's own mix). |
+| `level`           | `easy`, `medium` or `hard`; empty when a test mixes levels. |
+| `total_questions` | How many questions the quiz had. |
+| `answered`        | How many of them were answered (at least 1; a quiz with no answer leaves no row). |
+| `correct`         | How many of those were right. |
+| `completed_at`    | When it finished. |
+
+`total_questions - answered` is how many were left unanswered. Rules: a student can read and add only their own
+rows; nobody can change or delete a row from the browser; logged-out visitors get nothing.
+
 ### 3. `reading_progress`
 
 One row per user per article. It records whether a user has finished an article

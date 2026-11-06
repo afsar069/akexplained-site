@@ -8,11 +8,20 @@
    question files, so we read them at build time and write one small JSON the
    browser can fetch: assets/syllabus-british.json.
 
-   THE MODEL (owner's, 2026-11-04)
-   British literature = the 20 Daily ages, each worth an equal 5% (20 x 5 = 100%).
+   THE MODEL (owner's, 2026-11-04; MCQs added 2026-11-06)
+   British literature = the 20 ages, each worth an equal 5% (20 x 5 = 100%).
    An age is "cleared" when the learner has COVERED at least `coverGate` of its
    questions AND answered at least `accGate` of those correctly (latest answer).
    Five stages, Beginner -> Master, one per 20% band (4 ages each).
+
+   WHAT "ITS QUESTIONS" MEANS (owner, 2026-11-06: MCQ answers must count too)
+   An age's pool = its Daily questions + the questions of its LIVE MCQ sets.
+   So a Daily answer and an MCQ answer in the same age count the same way,
+   for coverage and for accuracy. A set that is not live is not in the pool.
+   The MCQ registry (_data/mcqSpec.json) lists the same 20 ages in the same
+   order as ORDER below (CLAUDE.md, section 3), so the two lists are matched by
+   position; the MCQ age slug can differ from the Daily slug (old-english is
+   served by the anglo-saxon Daily bank, augustan-age by augustan, and so on).
 
    Renaissance and Neoclassical span two ages in the taxonomy, so their questions
    are tagged to other period nodes — the id PREFIX (rn-, nc-) is the only clean
@@ -34,9 +43,42 @@ const ORDER = [
   'georgian', 'modern', 'postmodern'
 ];
 
+// The live MCQ questions of each age, from the registry and the question files.
+// Returns [{ slug, total }] in registry order (one per age; total 0 = no live set yet).
+function mcqPools(root) {
+  const spec = JSON.parse(fs.readFileSync(path.join(root, '_data', 'mcqSpec.json'), 'utf8'));
+  const qdir = path.join(root, 'assets', 'questions');
+  return (spec.ages || []).map(function (age) {
+    let total = 0;
+    const ids = {};
+    (age.sets || []).forEach(function (set) {
+      if (!set.live) return;                                    // only live sets count
+      const setId = age.slug + '-set-' + set.n;
+      (set.levels || []).forEach(function (lvl) {
+        const f = path.join(qdir, setId + '-' + lvl + '.json');
+        if (!fs.existsSync(f)) throw new Error('[syllabus] live MCQ set file missing: ' + path.relative(root, f));
+        const d = JSON.parse(fs.readFileSync(f, 'utf8'));
+        (d.questions || []).forEach(function (q) {
+          const ok = new RegExp('^' + age.slug.replace(/[-]/g, '\\-') + '-set-' + set.n + '-[em]-\\d+$').test(String(q.id || ''));
+          if (!ok) throw new Error('[syllabus] MCQ id "' + q.id + '" does not look like ' + setId + '-<e|m>-NN');
+          if (ids[q.id]) throw new Error('[syllabus] MCQ id used twice: ' + q.id);
+          ids[q.id] = 1;
+          total++;
+        });
+      });
+    });
+    return { slug: age.slug, total: total };
+  });
+}
+
 module.exports = function buildSyllabus(root) {
   const dir = path.join(root, 'assets', 'instant');
-  const ages = ORDER.map(function (slug) {
+  const mcq = mcqPools(root);
+  if (mcq.length !== ORDER.length) {
+    throw new Error('[syllabus] the MCQ registry has ' + mcq.length + ' ages but the Daily list has ' + ORDER.length +
+      ' — the two lists must stay in step (CLAUDE.md, section 3)');
+  }
+  const ages = ORDER.map(function (slug, idx) {
     const prefixes = {};
     let total = 0, name = slug;
     ['easy', 'hard'].forEach(function (lvl) {
@@ -55,7 +97,12 @@ module.exports = function buildSyllabus(root) {
     if (pref.length !== 1) {
       throw new Error('[syllabus] age "' + slug + '" must share one id prefix, found: ' + JSON.stringify(pref));
     }
-    return { slug: slug, name: name, prefix: pref[0], total: total };
+    // total = the whole pool the dashboard measures (Daily + live MCQ).
+    return {
+      slug: slug, name: name, prefix: pref[0],
+      dailyTotal: total, mcqSlug: mcq[idx].slug, mcqTotal: mcq[idx].total,
+      total: total + mcq[idx].total
+    };
   });
 
   // Prefixes must be unique across ages, or an attempt could count twice.
@@ -74,5 +121,10 @@ module.exports = function buildSyllabus(root) {
     ages: ages
   };
   fs.writeFileSync(path.join(root, 'assets', 'syllabus-british.json'), JSON.stringify(out, null, 2) + '\n');
-  return { ages: ages.length, questions: ages.reduce(function (n, a) { return n + a.total; }, 0) };
+  return {
+    ages: ages.length,
+    questions: ages.reduce(function (n, a) { return n + a.dailyTotal; }, 0),
+    mcq: ages.reduce(function (n, a) { return n + a.mcqTotal; }, 0),
+    mcqAges: ages.filter(function (a) { return a.mcqTotal > 0; }).map(function (a) { return a.slug + '<-' + a.mcqSlug + ' (' + a.mcqTotal + ')'; })
+  };
 };

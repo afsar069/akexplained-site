@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-06._
+_Last updated: 2026-11-06 (dashboard fixes on the branch; login page redesign is live)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -35,8 +35,32 @@ in the three "Dashboard" blocks below is **now on akexplained.com**, not waiting
 `/dashboard/`, `/dashboard/ages/`, `/dashboard/topics/`, the top bar, the designed header and the
 two header pictures. The name is set in **Playfair Display italic 700** (the owner's pick from five
 faces shown on 2026-11-06); changing it means the `.dashhero-name` rule and `dashboard/index.html`'s
-font link, both. Still open: the bell has nothing behind it, "Quizzes taken" is still
-"Questions answered", and the other eight journeys have no syllabus.
+font link, both. Still open: the bell has nothing behind it, "Quizzes taken" waits for the
+`quiz_runs` SQL (next block), and the other eight journeys have no syllabus.
+
+## Dashboard fixes, 2026-11-06 (on `claude/happy-thompson-65j2tb`, NOT on `main`; two SQL files WAIT FOR THE OWNER)
+Done at the owner's word after a full check of the live dashboard (see the list the owner got in chat):
+- **MCQs count in the level and the ages.** An age's pool = Daily questions + live MCQ questions
+  (`tools/build-syllabus.js`; MCQ ages are matched to Daily ages by position). Today only Old English has live sets,
+  so **Anglo-Saxon is now 400 questions** (100 Daily + 300 MCQ) and needs 240 answered to clear; every other age is
+  still 100. It grows by itself when a set goes live. `/dashboard/ages/` shows "Daily quiz x of 100 · MCQ y of 300".
+  The Literature banks (`asl-` …) are not in any pool yet; add them to `build-syllabus.js` when they go live.
+- **Strengths / Areas to improve**: specific topics only (no whole periods, no "not sorted"), 3+ answers; areas show
+  "N more right answers would bring this to 70%" (plain arithmetic on the person's own counts).
+- **"Your paths" strip** stacks on a phone (the badge no longer squeezes or touches the link).
+- **Quizzes taken is real**: `quiz_runs` (one row per finished quiz). **SQL: `supabase/migrations/20261106120000_add_quiz_runs.sql`
+  — the owner must run it.** Until then the tile keeps saying "Questions answered" and the engines' inserts fail silently.
+- **Top students shows everyone ranked, up to ten, best accuracy first.** **SQL:
+  `supabase/migrations/20261106130000_leaderboard_rank_everyone.sql` — the owner must run it.** It drops the floor from 100
+  different questions to 1 (the owner's request). Until it runs the live function still needs 100, so only one of the two
+  students appears. A student with a single right answer reaches 100% and sits first; raise `min_questions` in that SQL if
+  that ever feels wrong.
+- `/privacy/` and `/terms/` now say quiz completions are kept and the list is on the dashboard (Last updated 6 Nov 2026).
+- Tested: 123 dashboard checks and 26 quiz-engine checks in a browser with Supabase mocked; both migrations on a scratch
+  Postgres 16 (run twice, RLS own-rows, anon denied, constraints, cascade, ten-student ranking). Security advisors must be
+  re-run after the owner applies the SQL (the `leaderboard` WARN is still the accepted one; `quiz_runs` must add none).
+- **Left for later (owner's word, 2026-11-06):** the bell (with the owner's own dashboard), the other journeys (only British
+  for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch
 - **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see

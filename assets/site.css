@@ -3437,10 +3437,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashgoal-line{margin:10px 0 0;font-size:.9rem;color:var(--ink)}
 .dashgoal .dashactions{margin-top:14px}
 
-/* Top students: one line, right across the card from start to end. */
+/* Top students: up to ten cards, five to a line. The page sets --lb-cols to the
+   number of cards when there are fewer than five, so they still stretch across. */
 .dashlbrow{
   list-style:none;margin:4px 0 0;padding:0;max-width:none;
-  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:12px;
+  display:grid;grid-template-columns:repeat(var(--lb-cols,5),minmax(0,1fr));gap:12px;
 }
 .dashlbcard{
   display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;
@@ -3456,7 +3457,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashlbcard.is-you{background:var(--teal-soft);border-color:var(--teal)}
 .dashlbcard.is-you .dashlbcard-name{color:var(--teal-dark)}
 @media (max-width:720px){
-  .dashlbrow{grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .dashlbrow{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 
 /* Your paths: one thin strip, the last line of the page. */
@@ -3469,14 +3470,26 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);
 }
 .dashstrip-items{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;flex:1;min-width:0}
-.dashstrip-path{font-weight:600;font-size:.92rem;color:var(--ink);display:inline-flex;align-items:center;gap:7px}
+.dashstrip-path{font-weight:600;font-size:.92rem;color:var(--ink);display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 7px}
 .dashstrip-path i{
   font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:#fff;background:var(--teal);border-radius:999px;padding:2px 8px;
+  white-space:nowrap;flex:none;      /* the badge never squeezes into two lines */
 }
 .dashstrip-link{font-size:.86rem;font-weight:600;white-space:nowrap}
-@media (max-width:560px){.dashstrip{border-radius:16px}}
+/* On a phone the strip stacks: the label, then each path on its own line, then the link.
+   (Side by side, the "Main path" badge was squeezed and touched the link.) */
+@media (max-width:560px){
+  .dashstrip{border-radius:16px;flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}
+  .dashstrip-items{flex:none;width:100%;flex-direction:column;align-items:flex-start;gap:8px}
+  .dashstrip-link{align-self:flex-start}
+}
 
 .dashback{margin:4px 0 24px;font-weight:600}
+
+/* Areas to improve: how many more right answers lift a topic to 70%. */
+.dashrow-hint{margin:6px 0 0;font-size:.82rem;color:var(--mcq-ink-faint)}
+/* /dashboard/ages/: Daily quiz and MCQ counts under an age that has MCQs. */
+.dashage-split{margin:2px 0 6px;font-size:.82rem;color:var(--mcq-ink-faint)}
 .dashage.is-now{border-color:var(--gold);box-shadow:0 2px 10px rgba(185,137,47,.14)}
 .dashage-foot{margin-top:9px;font-size:.84rem}

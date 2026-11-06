@@ -1,15 +1,15 @@
 /* ==========================================================
-   AK Explained — dashboard (v2 layout, 2026-11-06)
+   AK Explained — dashboard (v2 layout, 2026-11-06; MCQs, quiz count and top ten added 2026-11-06)
    Runs on /dashboard/, /dashboard/ages/ and /dashboard/topics/.
    Needs a logged-in user.
    ----------------------------------------------------------
-   READ-ONLY. It shows only what public.attempts can honestly
-   support today: totals, a rank, today, the streak, the level
-   model, progress by age and by topic, strengths and weak spots,
-   the weekly accuracy trend and the next age to clear. It does
-   NOT show study time, a count of finished quizzes, mastery
-   decay or exam-readiness meters: that tracking does not exist
-   yet. Do not approximate any of it here (CLAUDE.md rule 2).
+   READ-ONLY. It shows only what public.attempts (and public.quiz_runs,
+   the count of finished quizzes) can honestly support today: totals, a
+   rank, today, the streak, the level model, progress by age and by
+   topic, strengths and weak spots, the weekly accuracy trend and the
+   next age to clear. It does NOT show study time, mastery decay or
+   exam-readiness meters: that tracking does not exist yet. Do not
+   approximate any of it here (CLAUDE.md rule 2).
 
    THE LAYOUT (owner's, 2026-11-06)
      1  Welcome header
@@ -58,6 +58,9 @@
   var MAX_ROWS = 10000;            // safety cap for v1 (see the limit above)
   var TOP_TOPICS = 8;              // topic rows shown before "Show all" (detail page)
   var CARD_ROWS = 5;               // rows in a summary card on the main page (owner's rule)
+  var BOARD_ROWS = 10;             // students on the Top students card (owner's rule, 2026-11-06)
+  var NEED_ANSWERS = 3;            // a topic needs this many answers before it is judged
+  var STRONG_AT = 70;              // % correct: at or above is a strength, below needs work
   var TREND_WEEKS = 8;             // weeks on the performance chart
   var DAY = 24 * 60 * 60 * 1000;
 
@@ -162,6 +165,15 @@
     }, function () { return null; });
   }
 
+  // How many quizzes the person has finished (public.quiz_runs, own rows by RLS).
+  // null when the table is not there yet or the call fails: the first tile then keeps
+  // saying "Questions answered", which is always true.
+  function loadRuns(client, uid) {
+    return client.from('quiz_runs').select('id', { count: 'exact', head: true }).eq('user_id', uid)
+      .then(function (res) { return (!res.error && typeof res.count === 'number') ? res.count : null; },
+            function () { return null; });
+  }
+
   // The British-literature syllabus (per-age question counts + id prefixes),
   // generated at build time. null if it cannot be fetched — then the level
   // card shows a "could not load" line instead of a wrong number.
@@ -245,44 +257,59 @@
   /* ---------------------------------------------------------
      Your level in English literature  (owner's model, 2026-11-04)
 
-     British literature = the 20 Daily ages, each worth an equal 5% (20 x 5 = 100%).
+     British literature = the 20 ages, each worth an equal 5% (20 x 5 = 100%).
      An age is CLEARED when the learner has covered at least `coverGate` of its
      questions AND answered at least `accGate` of those right (each question once,
      by its latest answer — repeat-proof, same rule as the leaderboard). Five
      stages, Beginner -> Master, one per 20% band (4 cleared ages each).
 
-     The per-age denominators (how many questions, and the id prefix that marks
-     an age) come from assets/syllabus-british.json, generated at build time from
-     the Daily files (tools/build-syllabus.js). Reading is not used (no data yet).
+     "Its questions" = the age's Daily questions + the questions of its live MCQ
+     sets (owner, 2026-11-06: MCQ answers count too). The pool sizes and the id
+     rules come from assets/syllabus-british.json, generated at build time
+     (tools/build-syllabus.js). Reading is not used (no data yet).
      Only British literature is measured for now; the other journeys are empty
      until their syllabus and questions exist.
      --------------------------------------------------------- */
+
+  // Which age does a question id belong to? Daily ids look like "as-e-01" (prefix
+  // per age); MCQ ids look like "old-english-set-1-e-01" (the MCQ age slug first).
+  // Anything else (for example the Literature banks, "asl-e-01") belongs to no
+  // age yet and is not counted here.
+  function ageOfQuestion(qid, B) {
+    var m = /^([a-z]+)-[eh]-\d+$/.exec(String(qid || ''));
+    if (m) return { age: B.byDaily[m[1]] || null, mcq: false };
+    m = /^(.+)-set-\d+-[em]-\d+$/.exec(String(qid || ''));
+    if (m) return { age: B.byMcq[m[1]] || null, mcq: true };
+    return { age: null, mcq: false };
+  }
+
   // Work out, per age, what the learner has covered and how much is right.
-  // rows are newest-first, so the FIRST time a question id is seen is its latest
-  // answer. Only ids whose prefix belongs to a Daily age are counted (MCQ ids,
-  // with their longer prefixes, fall through and are ignored).
+  // rows are newest-first, so the FIRST time a question id is seen is its latest answer.
   function computeBritish(rows, syl) {
     if (!syl || !syl.ages) return null;
-    var byPrefix = {}, ages = syl.ages.map(function (a) {
-      var o = { slug: a.slug, name: a.name, prefix: a.prefix, total: a.total, answered: 0, correct: 0 };
-      byPrefix[a.prefix] = o;
+    var byDaily = {}, byMcq = {}, ages = syl.ages.map(function (a) {
+      var o = { slug: a.slug, name: a.name, prefix: a.prefix, total: a.total,
+        dailyTotal: a.dailyTotal != null ? a.dailyTotal : a.total, mcqTotal: a.mcqTotal || 0,
+        answered: 0, correct: 0, dAnswered: 0, mAnswered: 0 };
+      byDaily[a.prefix] = o;
+      if (a.mcqSlug) byMcq[a.mcqSlug] = o;
       return o;
     });
+    var B0 = { byDaily: byDaily, byMcq: byMcq };
     var seen = {};
     for (var i = 0; i < rows.length; i++) {
       var qid = rows[i].question_id;
       if (!qid || seen[qid]) continue;
-      var m = /^([a-z]+)-/.exec(String(qid));
-      if (!m) continue;
-      var age = byPrefix[m[1]];
-      if (!age) continue;                 // not a British Daily question (e.g. an MCQ)
+      var hit = ageOfQuestion(qid, B0);
+      if (!hit.age) continue;             // not a question of any British age
       seen[qid] = 1;
-      age.answered++;
-      if (rows[i].is_correct === true) age.correct++;
+      hit.age.answered++;
+      if (hit.mcq) hit.age.mAnswered++; else hit.age.dAnswered++;
+      if (rows[i].is_correct === true) hit.age.correct++;
     }
     var cover = syl.coverGate || 0.6, accG = syl.accGate || 0.6, clearedN = 0;
     ages.forEach(function (a) {
-      a.coverage = a.total ? a.answered / a.total : 0;
+      a.coverage = a.total ? Math.min(1, a.answered / a.total) : 0;
       a.acc = a.answered ? a.correct / a.answered : 0;
       a.cleared = a.coverage >= cover && a.acc >= accG;
       if (a.cleared) clearedN++;
@@ -298,19 +325,17 @@
     return {
       ages: ages, cleared: clearedN, total: ages.length, pct: pctClear,
       levelIdx: levelIdx, levelName: syl.ladder[levelIdx], ladder: syl.ladder,
-      perBand: perBand, coverGate: cover, accGate: accG
+      perBand: perBand, coverGate: cover, accGate: accG, byDaily: byDaily, byMcq: byMcq
     };
   }
 
   // The age the learner is working on now: the one their newest answer
-  // belongs to. '' when no answer belongs to a British Daily age.
+  // (Daily or MCQ) belongs to. '' when no answer belongs to a British age.
   function currentAge(rows, B) {
     if (!B) return '';
-    var byPrefix = {};
-    B.ages.forEach(function (a) { byPrefix[a.prefix] = a.slug; });
     for (var i = 0; i < rows.length; i++) {               // rows are newest first
-      var m = /^([a-z]+)-/.exec(String(rows[i].question_id || ''));
-      if (m && byPrefix[m[1]]) return byPrefix[m[1]];
+      var hit = ageOfQuestion(rows[i].question_id, B);
+      if (hit.age) return hit.age.slug;
     }
     return '';
   }
@@ -396,13 +421,14 @@
   }
 
   // One row: name, count and accuracy, and a thin bar for the accuracy.
-  function groupRow(name, kind, g, extraClass, hidden) {
+  function groupRow(name, kind, g, extraClass, hidden, hint) {
     var p = pct(g.ok, g.n);
     return '<li class="dashrow' + (extraClass ? ' ' + extraClass : '') + '"' + (hidden ? ' hidden' : '') + '>' +
       '<div class="dashrow-top"><span class="dashname">' + esc(name) +
       (kind ? '<span class="dashkind">' + esc(kind) + '</span>' : '') + '</span>' +
       '<span class="dashmeta">' + answers(g.n) + ' &middot; ' + p + '% correct</span></div>' +
-      '<div class="dashbar" aria-hidden="true"><span style="width:' + p + '%"></span></div></li>';
+      '<div class="dashbar" aria-hidden="true"><span style="width:' + p + '%"></span></div>' +
+      (hint ? '<p class="dashrow-hint">' + esc(hint) + '</p>' : '') + '</li>';
   }
 
   // Groups sorted by number of answers (most first), then by name.
@@ -462,30 +488,51 @@
     return (head ? [head].concat(rest) : rest).slice(0, CARD_ROWS);
   }
 
-  // Topics measured enough to judge (at least 3 answers), split by accuracy.
-  function measuredTopics(ctx) {
-    var rows = sortedGroups(ctx.stats.topics, function (k) { return topicName(ctx, k); });
-    var measured = rows.filter(function (r) { return r.g.n >= 3; });
-    return {
-      strong: measured.filter(function (r) { return pct(r.g.ok, r.g.n) >= 70; })
-        .sort(function (a, b) { return pct(b.g.ok, b.g.n) - pct(a.g.ok, a.g.n); }),
-      weak: measured.filter(function (r) { return pct(r.g.ok, r.g.n) < 70; })
-        .sort(function (a, b) { return pct(a.g.ok, a.g.n) - pct(b.g.ok, b.g.n); })
-    };
-  }
-  function topicRowOf(ctx, r) {
-    var t = ctx.names[r.key];
-    return groupRow(r.name, t ? (KIND_LABEL[t.kind] || '') : '', r.g);
-  }
-
-  // Topic rows worth showing on the main page: the most specific tags only,
-  // so the card does not just repeat the ages beside it.
+  // Topic rows worth showing on the main page: the most specific tags only
+  // (writer, work, movement, concept), never a whole period and never the
+  // "not sorted" group, so these cards do not just repeat the ages beside them.
   function specificTopics(ctx) {
     var rows = sortedGroups(ctx.stats.topics, function (k) { return topicName(ctx, k); });
     return rows.filter(function (r) {
       return r.key && ctx.names[r.key] && ctx.names[r.key].kind !== 'period';
     });
   }
+
+  // Specific topics measured enough to judge (at least NEED_ANSWERS answers),
+  // split by accuracy. Strongest first; weakest first, and on a tie the one with
+  // more answers (more evidence) first.
+  function measuredTopics(ctx) {
+    var measured = specificTopics(ctx).filter(function (r) { return r.g.n >= NEED_ANSWERS; });
+    return {
+      measured: measured.length,
+      strong: measured.filter(function (r) { return pct(r.g.ok, r.g.n) >= STRONG_AT; })
+        .sort(function (a, b) { return (pct(b.g.ok, b.g.n) - pct(a.g.ok, a.g.n)) || (b.g.n - a.g.n); }),
+      weak: measured.filter(function (r) { return pct(r.g.ok, r.g.n) < STRONG_AT; })
+        .sort(function (a, b) { return (pct(a.g.ok, a.g.n) - pct(b.g.ok, b.g.n)) || (b.g.n - a.g.n); })
+    };
+  }
+
+  // How many more right answers would lift a weak topic to 70%: the smallest k with
+  // (ok + k) / (n + k) >= 0.70, worked out in whole numbers. Plain arithmetic on the
+  // person's own counts, nothing guessed.
+  function rightToReach(g) {
+    return Math.max(1, Math.ceil((7 * g.n - 10 * g.ok) / 3));
+  }
+
+  function topicRowOf(ctx, r, withHint) {
+    var t = ctx.names[r.key];
+    var hint = '';
+    if (withHint) {
+      var k = rightToReach(r.g);
+      hint = k + ' more right ' + (k === 1 ? 'answer' : 'answers') + ' would bring this to ' + STRONG_AT + '%.';
+    }
+    return groupRow(r.name, t ? (KIND_LABEL[t.kind] || '') : '', r.g, '', false, hint);
+  }
+
+  var TOPIC_RULE = 'Only topics with at least ' + NEED_ANSWERS + ' answers are judged. ' +
+    'A whole period is not listed here; see the ages for that.';
+  var NOT_MEASURED_YET = '<p class="small">A topic is judged once you have given at least ' + NEED_ANSWERS +
+    ' answers in it. Keep taking quizzes and your topics will show here.</p>';
 
   /* ---------- the sections, in the owner's order ---------- */
 
@@ -507,10 +554,18 @@
       }
       var k = computeStreak(s.days, ctx.now);
 
+      // "Quizzes taken" is a real count of finished quizzes (public.quiz_runs). Until the
+      // first finished quiz is on record (or if the count cannot be read) the tile keeps
+      // saying "Questions answered", which is always true.
+      var quizTile = (typeof ctx.runs === 'number' && ctx.runs > 0)
+        ? kpi('is-ink', art('questions', icon(IC_LIST)), fmt(ctx.runs), 'Quizzes taken',
+            fmt(s.total) + (s.total === 1 ? ' question answered' : ' questions answered'))
+        : kpi('is-ink', art('questions', icon(IC_LIST)), fmt(s.total), 'Questions answered', 'Including repeats');
+
       return '<div class="dashkpis dashkpis-6">' +
         kpi('is-ink', art('courses', icon(IC_BOOKS)), fmt((ctx.exams || []).length), 'Enrolled courses',
           main ? 'Main: ' + main.name : 'Pick a path on My Account') +
-        kpi('is-ink', art('questions', icon(IC_LIST)), fmt(s.total), 'Questions answered', 'Including repeats') +
+        quizTile +
         kpi('is-ok', art('correct', icon(IC_CHECK)), fmt(s.correct), 'Correct answers', 'Out of ' + answers(s.total)) +
         kpi('is-gold', art('average', icon(IC_TARGET)), acc + '%', 'Average score', accSub) +
         kpi('is-gold', art('streak', icon(IC_FLAME)), fmt(k.run), 'Day streak',
@@ -528,7 +583,7 @@
     render: function (ctx) {
       var b = ctx.board;
       if (!b || !b.you) return '';            // RPC not available: hide quietly
-      var you = b.you, min = b.min_questions || 100;
+      var you = b.you, min = (b.min_questions != null ? b.min_questions : 1);
       if (you.eligible && you.rank) {
         return '<div class="dashkpis dashkpis-2">' +
           kpi('is-gold', art('rank', icon(IC_TROPHY)), ordinal(you.rank), 'Your rank',
@@ -539,8 +594,10 @@
       }
       var needed = you.needed || Math.max(0, min - (you.questions || 0));
       return '<div class="dashkpis dashkpis-2">' +
-        kpi('is-ink', art('rank', icon(IC_TROPHY)), fmt(needed), 'More questions to get a rank',
-          'Answer ' + fmt(min) + ' different questions to join the ranking') +
+        kpi('is-ink', art('rank', icon(IC_TROPHY)), fmt(needed),
+          needed === 1 ? 'More question to get a rank' : 'More questions to get a rank',
+          min <= 1 ? 'Answer one question to join the ranking'
+            : 'Answer ' + fmt(min) + ' different questions to join the ranking') +
         kpi('is-ok', art('rankacc', icon(IC_LIST)), fmt(you.questions || 0), 'Different questions so far',
           'Each question counted once') +
         '</div>';
@@ -617,6 +674,8 @@
             'Each age is 60% answered at 60% correct') +
         '</div>' +
         '<div class="dashbigbar" aria-hidden="true"><span style="width:' + B.pct + '%"></span>' + marks + '</div>' +
+        '<p class="small dashnote">Daily quiz answers and MCQ answers both count. ' +
+          'Each question is counted once, by your latest answer.</p>' +
         '<ol class="dashladder">' +
           B.ladder.map(function (L, i) {
             return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '">' +
@@ -661,35 +720,40 @@
     }
   });
 
-  // Row 7, left — topics you answer well (3+ answers, 70%+).
+  // Row 7, left — topics you answer well (3+ answers, 70%+). Specific topics only.
   addSection({
     id: 'strengths', order: 60, title: 'Your strengths', needs: 'attempts', col: 'half',
     more: { href: '/dashboard/topics/', label: 'See all your topics' },
     render: function (ctx) {
       if (ctx.namesError) return '';
       var m = measuredTopics(ctx);
+      if (!m.measured) return NOT_MEASURED_YET;
       if (!m.strong.length) {
-        return '<p class="small">No topic has reached 70% yet, over at least three answers. Keep going — they will show here.</p>';
+        return '<p class="small">No topic has reached ' + STRONG_AT + '% yet. Keep going — they will show here.</p>';
       }
       return '<ul class="dashlist">' + m.strong.slice(0, CARD_ROWS).map(function (r) {
-        return topicRowOf(ctx, r);
-      }).join('') + '</ul>';
+        return topicRowOf(ctx, r, false);
+      }).join('') + '</ul>' +
+        '<p class="small dashnote">' + esc(TOPIC_RULE) + '</p>';
     }
   });
 
-  // Row 7, right — topics that need work (3+ answers, under 70%).
+  // Row 7, right — topics that need work (3+ answers, under 70%), the weakest first,
+  // each with how many more right answers would lift it to 70%.
   addSection({
     id: 'areas', order: 61, title: 'Areas to improve', needs: 'attempts', col: 'half',
     more: { href: '/dashboard/topics/', label: 'See all your topics' },
     render: function (ctx) {
       if (ctx.namesError) return '';
       var m = measuredTopics(ctx);
+      if (!m.measured) return NOT_MEASURED_YET;
       if (!m.weak.length) {
-        return '<p class="small">Every topic with at least three answers is above 70%. Keep it that way.</p>';
+        return '<p class="small">Every topic you have been judged on is at ' + STRONG_AT + '% or more. Keep it that way.</p>';
       }
       return '<ul class="dashlist">' + m.weak.slice(0, CARD_ROWS).map(function (r) {
-        return topicRowOf(ctx, r);
-      }).join('') + '</ul>';
+        return topicRowOf(ctx, r, true);
+      }).join('') + '</ul>' +
+        '<p class="small dashnote">' + esc(TOPIC_RULE) + '</p>';
     }
   });
 
@@ -702,18 +766,27 @@
       var b = ctx.board;
       if (!b) return '';                                  // RPC not available: hide quietly
       var board = b.board || [];
+      var min = (b.min_questions != null ? b.min_questions : 1);
       if (!board.length) {
-        return '<p class="small">No student has reached the ranking yet. Answer ' +
-          fmt(b.min_questions || 100) + ' different questions to be the first on the board.</p>';
+        return '<p class="small">No student is ranked yet. ' +
+          (min <= 1 ? 'Answer a question to be the first on the board.'
+            : 'Answer ' + fmt(min) + ' different questions to be the first on the board.') + '</p>';
       }
-      return '<ol class="dashlbrow">' + board.slice(0, CARD_ROWS).map(function (s) {
+      var shown = board.slice(0, BOARD_ROWS);
+      var you = b.you || {};
+      var outside = you.eligible && you.rank && you.rank > shown.length
+        ? '<p class="small dashnote">You are ' + esc(ordinal(you.rank)) + ' of ' + fmt(b.total_ranked || you.rank) +
+          ' ranked students.</p>' : '';
+      // Up to ten cards, five to a line (fewer cards stretch across the line).
+      return '<ol class="dashlbrow" style="--lb-cols:' + Math.min(5, shown.length) + '">' + shown.map(function (s) {
         return '<li class="dashlbcard' + (s.is_you ? ' is-you' : '') + (s.rank === 1 ? ' is-first' : '') + '">' +
           '<b class="dashlbcard-rank">' + esc(ordinal(s.rank)) + '</b>' +
           '<span class="dashlbcard-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
           '<em class="dashlbcard-acc">' + esc(String(s.accuracy)) + '% correct</em></li>';
-      }).join('') + '</ol>' +
-        '<p class="small dashnote">Ranked by accuracy, each question counted once. You join after ' +
-        fmt(b.min_questions || 100) + ' different questions.</p>';
+      }).join('') + '</ol>' + outside +
+        '<p class="small dashnote">Ranked by accuracy, each question counted once. ' +
+        (min <= 1 ? 'Everyone who has answered a question is ranked.'
+          : 'You join after ' + fmt(min) + ' different questions.') + '</p>';
     }
   });
 
@@ -925,6 +998,9 @@
           '<div class="dashage-top"><b>' + esc(a.name) + '</b>' + right + '</div>' +
           '<div class="dashage-meta">' + a.answered + ' / ' + a.total + ' answered (' + cov + '%)' +
             (a.answered ? ' &middot; ' + accPc + '% correct' : '') + '</div>' +
+          (a.mcqTotal
+            ? '<div class="dashage-split">Daily quiz ' + a.dAnswered + ' of ' + a.dailyTotal +
+              ' &middot; MCQ ' + a.mAnswered + ' of ' + a.mcqTotal + '</div>' : '') +
           '<div class="dashbar" aria-hidden="true"><span class="' + (a.acc >= B.accGate ? 'ok' : '') +
             '" style="width:' + accPc + '%"></span><i class="dashbar-gate" style="left:' +
             Math.round(B.accGate * 100) + '%"></i></div>' +
@@ -933,6 +1009,7 @@
       }).join('');
       out += card({ id: 'agesall', title: 'Your 20 British ages' },
         '<p class="small">An age is cleared when you have answered 60% of its questions and got 60% of those right. ' +
+        'Its questions are the Daily quiz questions and the MCQs of that age. ' +
         'The bar shows how well you have answered; the gold line is the 60% mark.</p>' +
         '<ol class="dashagelist">' + tiles + '</ol>');
     }
@@ -966,15 +1043,18 @@
             rows.length + ' topics</button>' : ''));
     }
     var m = measuredTopics(ctx);
+    var rule = '<p class="small dashnote">' + esc(TOPIC_RULE) + '</p>';
     out += '<div class="dashpair">' +
       card({ id: 'strengthsall', title: 'Your strengths' },
-        m.strong.length
-          ? '<ul class="dashlist">' + m.strong.map(function (r) { return topicRowOf(ctx, r); }).join('') + '</ul>'
-          : '<p class="small">No topic has reached 70% yet, over at least three answers.</p>') +
+        !m.measured ? NOT_MEASURED_YET
+          : m.strong.length
+            ? '<ul class="dashlist">' + m.strong.map(function (r) { return topicRowOf(ctx, r, false); }).join('') + '</ul>' + rule
+            : '<p class="small">No topic has reached ' + STRONG_AT + '% yet.</p>') +
       card({ id: 'areasall', title: 'Areas to improve' },
-        m.weak.length
-          ? '<ul class="dashlist">' + m.weak.map(function (r) { return topicRowOf(ctx, r); }).join('') + '</ul>'
-          : '<p class="small">Every topic with at least three answers is above 70%.</p>') +
+        !m.measured ? NOT_MEASURED_YET
+          : m.weak.length
+            ? '<ul class="dashlist">' + m.weak.map(function (r) { return topicRowOf(ctx, r, true); }).join('') + '</ul>' + rule
+            : '<p class="small">Every topic you have been judged on is at ' + STRONG_AT + '% or more.</p>') +
       '</div>';
     return out + backLink();
   }
@@ -1011,7 +1091,7 @@
       now: new Date(), rows: [], truncated: false, stats: null,
       names: {}, namesError: false, exams: [], attemptsError: false,
       name: (auth && user && auth.nameFrom(user, '')) || '',  // quick name; refined by the profile below
-      board: null, syllabus: null, british: null, currentAge: ''
+      board: null, syllabus: null, british: null, currentAge: '', runs: null
     };
 
     fillUserButton(ctx.name);                               // the quick name, right away
@@ -1021,6 +1101,7 @@
 
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
     var pSyl = loadSyllabus().then(function (s) { ctx.syllabus = s; }, function () { ctx.syllabus = null; });
+    var pRuns = loadRuns(client, uid).then(function (n) { ctx.runs = n; }, function () { ctx.runs = null; });
 
     var pAttempts = loadAttempts(client, uid).then(function (r) {
       ctx.rows = r.rows; ctx.truncated = r.truncated;
@@ -1038,7 +1119,7 @@
       function () { ctx.exams = []; }
     );
 
-    Promise.all([pAttempts, pExams, pName, pBoard, pSyl]).then(function () {
+    Promise.all([pAttempts, pExams, pName, pBoard, pSyl, pRuns]).then(function () {
       try { ctx.british = computeBritish(ctx.rows, ctx.syllabus); } catch (e) { ctx.british = null; }
       try { ctx.currentAge = currentAge(ctx.rows, ctx.british); } catch (e) { ctx.currentAge = ''; }
       root.innerHTML = renderAll(ctx, view);

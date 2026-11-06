@@ -859,6 +859,21 @@
         window.akTrack.recordMany(rows);
       }
     } catch (e) { /* never break the quiz */ }
+    // Ek poora hua test = ek gini (dashboard ka "Quizzes taken"). Jawab diya hi na ho to kuch nahi likhta.
+    try {
+      if (window.akTrack && window.akTrack.recordRun) {
+        var nAns = 0, nRight = 0;
+        Q.forEach(function (q, i) {
+          if (st.pick[i] === undefined) return;
+          nAns++;
+          if (st.pick[i] === q.correct_option_id) nRight++;
+        });
+        window.akTrack.recordRun({
+          source: 'cbt', bankId: paper.setId || (CUSTOM ? AGE + '-custom' : ''), level: paper.level || null,
+          totalQuestions: Q.length, answered: nAns, correct: nRight
+        });
+      }
+    } catch (e) { /* never break the quiz */ }
     showResult();
     window.scrollTo(0, 0);
   }

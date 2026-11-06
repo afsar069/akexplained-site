@@ -162,7 +162,15 @@ and never ask the owner for it.**
   next `col:'half'` card. Rows 6 and 7 show **five rows each**; the "+" in the corner opens the full list at
   `/dashboard/ages/` or `/dashboard/topics/`, which are the same script with `data-view` on `#dashSections`.
   Tile artwork goes through `art()` / `KPI_ART` — put a PNG in `/assets/dash/`, name it there, change nothing
-  else. "Quizzes taken" stays "Questions answered" until a real completion count exists.
+  else. **"Quizzes taken"** is a real count: one `quiz_runs` row per finished quiz (`track.js` `recordRun`, called
+  from `instant.js` and `cbt.js`). The tile says "Quizzes taken" once at least one row exists and keeps saying
+  "Questions answered" before that (or if the table is missing). It is not retroactive.
+  **The level counts MCQs too** (owner, 2026-11-06): an age's pool = its Daily questions + the questions of its
+  live MCQ sets (`tools/build-syllabus.js` matches the 20 MCQ ages to the 20 Daily ages by position). Daily and
+  MCQ answers count the same, each question once by its latest answer, 60% answered at 60% right. A set that is
+  not live is not in the pool. Strengths and Areas to improve judge **specific topics only** (never a whole
+  period, never "not sorted"), at least 3 answers each. **Top students** shows up to 10, best accuracy first;
+  the floor in `public.leaderboard()` is 1 answered question (owner, 2026-11-06), one number in the SQL.
   `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
   `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
   under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
@@ -198,7 +206,7 @@ and never ask the owner for it.**
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
   new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
-- Schema: `profiles`, `attempts`, `reading_progress`, `exams`, `topics`, `exam_topics`,
+- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
   reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
 - Migrations live in `supabase/migrations/` (ordered, run once by the owner). Each is one
