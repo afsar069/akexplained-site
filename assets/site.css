@@ -3451,6 +3451,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-family:var(--serif);font-weight:700;font-size:1.3rem;line-height:1;color:var(--teal-dark);
 }
 .dashlbcard-name{font-weight:600;font-size:.95rem;color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.dashlbcard-pts{font-weight:700;font-size:.9rem;color:var(--teal-dark)}
 .dashlbcard-acc{font-style:normal;font-size:.82rem;color:var(--mcq-ink-faint)}
 .dashlbcard.is-first{background:var(--cream);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
 .dashlbcard.is-first .dashlbcard-rank{color:var(--gold)}

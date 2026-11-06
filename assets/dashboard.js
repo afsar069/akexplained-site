@@ -588,8 +588,12 @@
         return '<div class="dashkpis dashkpis-2">' +
           kpi('is-gold', art('rank', icon(IC_TROPHY)), ordinal(you.rank), 'Your rank',
             'of ' + fmt(b.total_ranked || you.rank) + ' ranked students') +
-          kpi('is-ok', art('rankacc', icon(IC_TARGET)), (you.accuracy != null ? you.accuracy + '%' : '—'),
-            'Your rank accuracy', 'Each question counted once') +
+          (you.score != null
+            ? kpi('is-ok', art('rankacc', icon(IC_TARGET)), fmt(you.score), 'Your points',
+                (you.accuracy != null ? you.accuracy + '% correct, ' : '') + 'each question once')
+            // The database function has not been updated yet (no points sent): keep the accuracy tile.
+            : kpi('is-ok', art('rankacc', icon(IC_TARGET)), (you.accuracy != null ? you.accuracy + '%' : '—'),
+                'Your rank accuracy', 'Each question counted once')) +
           '</div>';
       }
       var needed = you.needed || Math.max(0, min - (you.questions || 0));
@@ -758,7 +762,7 @@
   });
 
   // Row 8 — the all-ages ranking, one line right across the page (owner's
-  // layout). Names and accuracy only; the function is the privacy wall
+  // layout). Rank, name, points and accuracy only; the function is the privacy wall
   // (see its migration).
   addSection({
     id: 'board', order: 70, title: 'Top students', needs: 'attempts',
@@ -773,6 +777,7 @@
             : 'Answer ' + fmt(min) + ' different questions to be the first on the board.') + '</p>';
       }
       var shown = board.slice(0, BOARD_ROWS);
+      var byPoints = shown.every(function (s) { return s.score != null; });   // false while the old database function is live
       var you = b.you || {};
       var outside = you.eligible && you.rank && you.rank > shown.length
         ? '<p class="small dashnote">You are ' + esc(ordinal(you.rank)) + ' of ' + fmt(b.total_ranked || you.rank) +
@@ -782,9 +787,13 @@
         return '<li class="dashlbcard' + (s.is_you ? ' is-you' : '') + (s.rank === 1 ? ' is-first' : '') + '">' +
           '<b class="dashlbcard-rank">' + esc(ordinal(s.rank)) + '</b>' +
           '<span class="dashlbcard-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
+          (s.score != null ? '<span class="dashlbcard-pts">' + esc(fmt(s.score)) + (s.score === 1 ? ' point' : ' points') + '</span>' : '') +
           '<em class="dashlbcard-acc">' + esc(String(s.accuracy)) + '% correct</em></li>';
       }).join('') + '</ol>' + outside +
-        '<p class="small dashnote">Ranked by accuracy, each question counted once. ' +
+        '<p class="small dashnote">' + (byPoints
+          ? 'Ranked by points: the questions you got right, multiplied by your accuracy. ' +
+            'So more questions and better accuracy both lift you. Each question is counted once, by your latest answer. '
+          : 'Ranked by accuracy, each question counted once. ') +
         (min <= 1 ? 'Everyone who has answered a question is ranked.'
           : 'You join after ' + fmt(min) + ' different questions.') + '</p>';
     }

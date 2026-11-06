@@ -169,8 +169,10 @@ and never ask the owner for it.**
   live MCQ sets (`tools/build-syllabus.js` matches the 20 MCQ ages to the 20 Daily ages by position). Daily and
   MCQ answers count the same, each question once by its latest answer, 60% answered at 60% right. A set that is
   not live is not in the pool. Strengths and Areas to improve judge **specific topics only** (never a whole
-  period, never "not sorted"), at least 3 answers each. **Top students** shows up to 10, best accuracy first;
-  the floor in `public.leaderboard()` is 1 answered question (owner, 2026-11-06), one number in the SQL.
+  period, never "not sorted"), at least 3 answers each. **Top students** shows up to 10, ranked by **points =
+  right answers x accuracy** (each question once, latest answer; owner, 2026-11-06: rank must depend on both how
+  many questions and how accurate, never one lucky answer on top). The board shows rank, name, points and accuracy;
+  the floor in `public.leaderboard()` is 1 answered question. Both are one place in the SQL (`min_questions`, `score`).
   `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
   `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
   under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
