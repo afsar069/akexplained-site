@@ -3222,28 +3222,35 @@ picture{display:block}
 }
 
 /* ---------- phone (601px se chhoti screen) ----------
-   Phone wali banner ke baayein aadha kaagaz khaali hai, isliye greeting
-   (eyebrow + naam) wahin upar baith jaati hai; baaki teen pankti picture
-   ke neeche card me rehti hain. Greet box ki unchai image jitni hi hai:
-   chaudai 52%, aur anupaat 52 ÷ (100 ÷ 2.4) = 1.248. */
+   Owner ne phone wali banner me baayein aadha kaagaz khaali rakha hai,
+   taaki POORA welcome message usi ke andar aa jaaye. Isliye yahan card
+   nahi banta: banner kinare se kinare tak lagti hai aur saara text usi
+   khaali kaagaz par baithta hai — banner ke bahar kuch nahi.
+   Box ki unchai image jitni hi: chaudai 55%, anupaat 55 ÷ (100 ÷ 2.4) = 1.32.
+   Naap vw me hai, isliye har phone par painting ke saath mel khaata hai.
+   "Your progress" wali chhoti pankti yahan hat jaati hai — jagah owner ke
+   apne chaar hisson ke liye chahiye. */
 @media (max-width:600px){
-  .dashgreet{
-    position:absolute;left:0;top:0;z-index:1;
-    width:52%;aspect-ratio:1.248/1;
-    display:flex;flex-direction:column;justify-content:center;
-    padding:0 10px 0 16px;
-  }
-  .dashgreet .eyebrow{font-size:clamp(8px,2.3vw,10px);margin-bottom:4px}
-  .dashgreet .dashhi{font-size:clamp(11px,3.1vw,14px)}
-  .dashgreet .dashname{font-size:clamp(16px,5vw,22px)}
-  .dashgreet h1{font-size:clamp(15px,4.4vw,20px)}   /* login se pehle: "My Dashboard" */
-  .dashwelcome{padding:13px 16px 15px}
-}
+  .pagehead.dashhead{padding:0 0 16px}
+  .dashbanner-wrap{margin:0;background:none;border:0;border-radius:0;box-shadow:none}
+  .dashbanner{border-bottom:0}
 
-@media (max-width:640px){
-  .pagehead.dashhead{padding:14px 0 18px}
-  .dashbanner-wrap{margin:0 14px}
-  .dashwelcome{padding:12px 15px 14px}
+  .dashwelcome{
+    position:absolute;left:0;top:0;z-index:1;
+    width:55%;aspect-ratio:1.32/1;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 1.5% 0 5%;
+  }
+  .dashwelcome .eyebrow{display:none}
+  .dashgreet{display:contents}
+
+  .dashhi{font-size:clamp(10px,3.1vw,15px)}
+  .dashname{font-size:clamp(15px,4.9vw,25px);line-height:1.08}
+  .dashline{font-size:clamp(9px,2.75vw,13.5px);margin-top:4px;line-height:1.35}
+  .dashsteps{font-size:clamp(7.5px,2.3vw,11px);gap:2px 6px;margin-top:6px;letter-spacing:.04em}
+  .dashsteps li{gap:6px}
+  .dashsteps li + li::before{width:3px;height:3px}
+  .dashhead-path{font-size:clamp(8px,2.45vw,11.5px);margin-top:5px;line-height:1.3}
 }
 
 /* Dashboard v2 — KPI cards (professional pass). */
