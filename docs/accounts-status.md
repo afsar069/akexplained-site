@@ -44,6 +44,48 @@ _Last updated: 2026-11-04._
   out, errors, paging with 2,350 rows and with a 500-row server cap, the 10,000-row safety cap, mobile
   width). Not yet seen against the live database from the browser; the owner reviews it before any merge.
 
+- **Dashboard v2 (full) pass** — on `claude/compassionate-franklin-ypvye1`, **NOT yet on `main`** (owner's call).
+  The owner (2026-11-04) asked for the full set of features *with working computations* on `/dashboard/`, and
+  to change rule 8/10 so levels/rank/streak/strengths/areas are allowed now. Built, still read-only:
+  - **Welcome hero** with the person's name ("Welcome back, <name>"; first-timer "Welcome, <name>"; main path).
+  - **Your overall progress** (KPIs): Questions attempted / Correct answers / Accuracy.
+  - **Your level in English literature** (owner's model, 2026-11-04, confirmed): **British literature = the
+    20 Daily ages, each an equal 5%** (20×5 = 100%). An age is **cleared** when the learner has covered ≥60%
+    of its questions **and** answered ≥60% of those right (each question once, by latest answer). Five stages
+    (Beginner→Master), one per 20% band = 4 cleared ages each. Per-age denominators + the id prefix come from
+    **`assets/syllabus-british.json`, generated at build** (`tools/build-syllabus.js`, called from
+    `eleventy.config.js`; fails the build if an age's ids don't share one prefix). Grouped by **question_id
+    prefix** (`as-`,`rn-`,`nc-`…), NOT period_id — Renaissance/Neoclassical tag to sub-age nodes, so only the
+    prefix is a clean per-age key (each age = 100 Daily questions today). Card shows the ladder, an overall
+    bar with the 4 stage marks, and an expandable per-age list (coverage + accuracy + a 60% gate marker, ✓ on
+    clear). Reading is NOT used (reading_progress = 0 rows). **Only British literature is measured**; the other
+    8 journeys (American, Indian, Linguistics, Theory, Criticism, Culture, World) + the NET grand-total are
+    empty until their syllabus + content exist — shown later as "coming soon".
+    **No-demotion caveat:** the level is live-computed, so if Daily questions are ever ADDED to an age its
+    denominator rises and a cleared age could un-clear (level could dip). Adding questions is rare and
+    owner-controlled; true no-demotion needs a stored high-water mark (a small `profiles`/new-table column) —
+    a follow-up when it matters.
+  - **Your rank** + **Top students**: from `public.leaderboard()` RPC — **confirmed live** (function exists;
+    130 attempt rows, 2 users; nobody ranked yet as the floor is 100 different questions). Cards hide if the RPC
+    is ever unavailable.
+  - **Today's activity**: attempted / correct today. **Your daily streak**: days in a row + days this week +
+    a Mon–Sun grid, all from the active-day set (visitor's local day). **By period**, **By topics**,
+    **Your strengths** (topics 3+ answers, ≥70%), **Areas to improve** (3+ answers, <70%), **Your paths**.
+  - New in `dashboard.js`: `question_id` in the select; `s.unique`/`s.days` + `computeStreak` + `dayKey` in
+    `computeStats`; `loadBoard`, `loadProfileName`, `welcomeHero`, `kpi`/`icon`/`ordinal`/`stars`/`LADDER`/
+    `levelIndex`/`measuredTopics` helpers. New styles in `site.css`: `.dashhero`, `.dashkpi*`, `.dashlevel*`,
+    `.dashladder`, `.dashstreak`/`.dashweek`, `.dashboardlb`/`.dashlb`.
+  - **Still NOT shown**: decay, a suggested next step, knowledge/exam-readiness meters, exam-wise progress.
+  - Also this branch: **after choosing a journey, `/login/` sends the person to `/dashboard/`** (was `/account/`);
+    the guest score board carries one login CTA; the Download-PDF button is back on the score board.
+  - Browser-tested against `_site` with Supabase mocked (hero, all KPIs, the 11 sections in order, the British
+    level — ladder, overall bar, per-age tiles with an age cleared at 60/60 and the right "answer N more" hint —
+    rank, streak + week grid, strengths/areas split, top-students list, paths).
+  **PENDING the owner**: review the British-literature level live, then say when to merge to `main`. Later:
+  the other 8 journeys' syllabus + the NET grand-total; no-demotion high-water mark; align the MCQ generator.
+  **Next up — a richer dashboard redesign** (owner shared a mockup): the plan, with what is real now vs what
+  needs new tracking/features, is in **`docs/dashboard-redesign-plan.md`**.
+
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
 period_id, topic_id`; newest first, 1,000 per request, at most 10,000 rows) and works out totals and

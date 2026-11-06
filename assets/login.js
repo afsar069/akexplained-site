@@ -497,7 +497,8 @@
           showError(box, res.error.message || 'Could not save. Please try again.');
           return;
         }
-        location.replace('/account/');
+        // Journey chosen: take the person straight to their dashboard.
+        location.replace('/dashboard/');
       }).catch(function (err) {
         btnSave.disabled = false; btnSkip.disabled = false;
         showError(box, (err && err.message) || 'Could not save. Please try again.');

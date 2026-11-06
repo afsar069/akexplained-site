@@ -3126,3 +3126,107 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashmore{margin-top:12px;cursor:pointer;font-family:inherit}
 .dashempty p{margin:10px 0 0}
 .dashactions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+
+/* Dashboard v2 — welcome hero + KPI cards (professional pass).
+   Naam ke saath ek greeting upar, phir bade ginti waale dabbe icon ke saath. */
+.dashhero{
+  background:linear-gradient(135deg,var(--teal-soft),var(--cream));
+  border:1px solid color-mix(in srgb,var(--teal) 22%,var(--border));
+  border-radius:16px;padding:24px 26px;margin:0 0 18px;
+}
+.dashhero-title{
+  font-family:var(--serif);font-weight:700;line-height:1.15;color:var(--ink);
+  font-size:clamp(1.5rem,3.2vw,2rem);margin:0;
+}
+.dashhero-line{margin:8px 0 0;color:var(--body);max-width:60ch}
+.dashhero-path{margin:12px 0 0;font-size:.92rem;color:var(--teal-dark)}
+.dashhero-path b{color:var(--ink)}
+
+.dashkpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}
+.dashkpis-2{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.dashkpi{
+  display:flex;align-items:flex-start;gap:14px;
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:14px;padding:18px 20px;
+}
+.dashkpi-ic{
+  flex:none;width:44px;height:44px;border-radius:12px;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--tint);color:var(--mcq-ink-faint);
+}
+.dashkpi.is-ink .dashkpi-ic{background:var(--teal-soft);color:var(--teal-dark)}
+.dashkpi.is-ok .dashkpi-ic{background:var(--teal-soft);color:var(--teal)}
+.dashkpi.is-gold .dashkpi-ic{background:var(--cream);color:var(--gold);border:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
+.dashkpi-body{min-width:0;display:flex;flex-direction:column}
+.dashkpi-num{font-family:var(--serif);font-weight:700;font-size:1.9rem;line-height:1.05;color:var(--ink)}
+.dashkpi-lbl{margin-top:5px;font-weight:600;font-size:.95rem;line-height:1.3;color:var(--ink)}
+.dashkpi-sub{margin-top:3px;font-style:normal;font-size:.82rem;color:var(--mcq-ink-faint)}
+@media (max-width:560px){
+  .dashhero{padding:20px}
+  .dashkpi-num{font-size:1.6rem}
+}
+
+/* Level card — badge, two stats, and the five-rung ladder. */
+.dashlevel-now{display:flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin:4px 0 14px}
+.dashlevel-badge{
+  display:inline-flex;align-items:center;gap:9px;
+  background:var(--cream);border:1px solid color-mix(in srgb,var(--gold) 40%,var(--border));
+  border-radius:999px;padding:7px 16px;
+}
+.dashlevel-badge b{font-family:var(--serif);font-size:1.15rem;font-weight:700;color:var(--ink)}
+.dashlevel-next{font-size:.9rem;color:var(--mcq-ink-faint)}
+.dashstars{display:inline-flex;gap:2px;color:var(--border)}
+.dashstar.on{color:var(--gold)}
+.dashladder{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:16px 0 0;padding:0;max-width:none}
+.dashladder li{
+  text-align:center;border:1px solid var(--card-line);border-radius:12px;
+  padding:12px 8px;background:var(--card-paper);position:relative;
+}
+.dashladder li i{display:block;width:10px;height:10px;border-radius:50%;background:var(--border);margin:0 auto 7px}
+.dashladder li b{display:block;font-size:.9rem;font-weight:600;color:var(--mcq-ink-faint);margin-bottom:6px}
+.dashladder li.is-done i{background:var(--teal)}
+.dashladder li.is-done b{color:var(--ink)}
+.dashladder li.is-now{border-color:var(--gold);background:var(--cream);box-shadow:0 2px 10px rgba(185,137,47,.14)}
+.dashladder li.is-now i{background:var(--gold)}
+.dashladder li.is-now b{color:var(--ink)}
+@media (max-width:560px){.dashladder{grid-template-columns:repeat(2,1fr)}}
+
+/* Overall British-literature bar with the four stage boundaries. */
+.dashbigbar{position:relative;height:12px;border-radius:999px;background:var(--border);overflow:hidden;margin:16px 0 2px}
+.dashbigbar > span{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--teal),var(--gold))}
+.dashbarmark{position:absolute;top:0;bottom:0;width:2px;background:var(--card-paper);opacity:.85}
+
+/* The 20 ages, one by one (collapsed by default). */
+.dashages{margin-top:16px}
+.dashages > summary{cursor:pointer;font-weight:600;color:var(--teal-dark);padding:4px 0}
+.dashagelist{list-style:none;margin:10px 0 0;padding:0;max-width:none;display:grid;gap:10px}
+.dashage{border:1px solid var(--card-line);border-radius:12px;padding:12px 14px;background:var(--card-paper)}
+.dashage.is-cleared{border-color:color-mix(in srgb,var(--teal) 40%,var(--border));background:var(--teal-soft)}
+.dashage-top{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 12px}
+.dashage-top b{font-weight:600;color:var(--ink)}
+.dashage-done{font-size:.82rem;font-weight:700;color:var(--teal-dark)}
+.dashage-hint{font-size:.82rem;color:var(--mcq-ink-faint)}
+.dashage-meta{font-size:.82rem;color:var(--mcq-ink-faint);margin:3px 0 8px}
+.dashage .dashbar{position:relative;height:7px}
+.dashbar-gate{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--gold);border-radius:2px}
+@media (min-width:620px){.dashagelist{grid-template-columns:1fr 1fr}}
+
+/* Streak — the week row under the two stats. */
+.dashweek{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.dashweek span{
+  flex:1;min-width:34px;text-align:center;font-weight:700;font-size:.85rem;
+  padding:9px 0;border-radius:10px;background:var(--tint);color:var(--mcq-ink-faint);
+  border:1px solid var(--border);
+}
+.dashweek span.is-on{background:var(--teal);color:#fff;border-color:var(--teal)}
+.dashweek span.is-future{opacity:.5}
+
+/* Top students list. */
+.dashboardlb{list-style:none;margin:4px 0 0;padding:0;max-width:none}
+.dashlb{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--border)}
+.dashlb:last-child{border-bottom:none}
+.dashlb b{flex:none;width:42px;font-family:var(--serif);font-weight:700;color:var(--ink)}
+.dashlb-name{flex:1;font-weight:600;color:var(--ink)}
+.dashlb em{font-style:normal;font-size:.9rem;color:var(--mcq-ink-faint);white-space:nowrap}
+.dashlb.is-you{background:var(--teal-soft);border-radius:10px;padding-left:12px;padding-right:12px;border-bottom-color:transparent}
+.dashlb.is-you .dashlb-name{color:var(--teal-dark)}

@@ -14,6 +14,7 @@ const NEW_FOOTER = base.slice(
 );
 
 const checkTopics = require("./tools/check-topics.js");
+const buildSyllabus = require("./tools/build-syllabus.js");
 
 module.exports = function (eleventyConfig) {
   // Publish-time safety: every question's topicId must exist in the master
@@ -21,6 +22,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.on("eleventy.before", function () {
     const r = checkTopics(__dirname);
     console.log("[check-topics] " + r.files + " question files checked against " + r.validTopics + " valid topic ids — OK");
+    const s = buildSyllabus(__dirname);
+    console.log("[syllabus] British literature: " + s.ages + " ages, " + s.questions + " Daily questions — assets/syllabus-british.json");
   });
 
   // Article ke upar "X min read" dikhane ke liye. 200 words/minute
