@@ -693,10 +693,11 @@
     }
   });
 
-  // Row 8, left — the all-ages ranking. Names and accuracy only; the
-  // function is the privacy wall (see its migration).
+  // Row 8 — the all-ages ranking, one line right across the page (owner's
+  // layout). Names and accuracy only; the function is the privacy wall
+  // (see its migration).
   addSection({
-    id: 'board', order: 70, title: 'Top students', needs: 'attempts', col: 'half',
+    id: 'board', order: 70, title: 'Top students', needs: 'attempts',
     render: function (ctx) {
       var b = ctx.board;
       if (!b) return '';                                  // RPC not available: hide quietly
@@ -705,27 +706,14 @@
         return '<p class="small">No student has reached the ranking yet. Answer ' +
           fmt(b.min_questions || 100) + ' different questions to be the first on the board.</p>';
       }
-      return '<ol class="dashboardlb">' + board.slice(0, CARD_ROWS).map(function (s) {
-        return '<li class="dashlb' + (s.is_you ? ' is-you' : '') + '">' +
-          '<b>' + esc(ordinal(s.rank)) + '</b>' +
-          '<span class="dashlb-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
-          '<em>' + esc(String(s.accuracy)) + '% correct</em></li>';
+      return '<ol class="dashlbrow">' + board.slice(0, CARD_ROWS).map(function (s) {
+        return '<li class="dashlbcard' + (s.is_you ? ' is-you' : '') + (s.rank === 1 ? ' is-first' : '') + '">' +
+          '<b class="dashlbcard-rank">' + esc(ordinal(s.rank)) + '</b>' +
+          '<span class="dashlbcard-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
+          '<em class="dashlbcard-acc">' + esc(String(s.accuracy)) + '% correct</em></li>';
       }).join('') + '</ol>' +
         '<p class="small dashnote">Ranked by accuracy, each question counted once. You join after ' +
         fmt(b.min_questions || 100) + ' different questions.</p>';
-    }
-  });
-
-  // Row 8, right — paths picked (read-only here; they are changed on My Account)
-  addSection({
-    id: 'paths', order: 71, title: 'Your paths', needs: '', col: 'half',
-    render: function (ctx) {
-      if (!ctx.exams.length) return '';
-      return '<ul class="examlist">' + ctx.exams.map(function (e) {
-        return '<li class="examitem"><span class="examname">' + esc(e.name) + '</span>' +
-          (e.primary ? '<span class="primtag">Main path</span>' : '') + '</li>';
-      }).join('') + '</ul>' +
-        '<p class="small dashnote"><a href="/account/">Change your paths on My Account</a></p>';
     }
   });
 
@@ -806,6 +794,23 @@
         '<div class="dashactions">' +
           '<a class="btn" href="/quizzes/daily/' + esc(next.slug) + '/">Start the ' + esc(next.name) + ' quiz</a>' +
         '</div>' +
+      '</div>';
+    }
+  });
+
+  // The last line of the page — the paths picked, as one thin strip
+  // (read-only here; they are changed on My Account).
+  addSection({
+    id: 'paths', order: 120, title: '', needs: '', bare: true,
+    render: function (ctx) {
+      if (!ctx.exams.length) return '';
+      return '<div class="dashstrip">' +
+        '<span class="dashstrip-lbl">Your paths</span>' +
+        '<span class="dashstrip-items">' + ctx.exams.map(function (e) {
+          return '<span class="dashstrip-path">' + esc(e.name) +
+            (e.primary ? '<i>Main path</i>' : '') + '</span>';
+        }).join('') + '</span>' +
+        '<a class="dashstrip-link" href="/account/">Change on My Account</a>' +
       '</div>';
     }
   });
