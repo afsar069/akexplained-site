@@ -40,7 +40,7 @@ faces shown on 2026-11-06); changing it means the `.dashhero-name` rule and `das
 font link, both. Still open: the bell has nothing behind it, "Quizzes taken" waits for the
 `quiz_runs` SQL (next block), and the other eight journeys have no syllabus.
 
-## Dashboard fixes, 2026-11-06 — LIVE on `main` (merged at the owner's word). Leaderboard SQL RUN; the quiz_runs SQL still WAITS FOR THE OWNER
+## Dashboard fixes, 2026-11-06 — LIVE on `main` (merged at the owner's word). BOTH SQL files RUN by the owner (leaderboard and quiz_runs)
 Done at the owner's word after a full check of the live dashboard (see the list the owner got in chat):
 - **MCQs count in the level and the ages.** An age's pool = Daily questions + live MCQ questions
   (`tools/build-syllabus.js`; MCQ ages are matched to Daily ages by position). Today only Old English has live sets,
@@ -51,9 +51,10 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   "N more right answers would bring this to 70%" (plain arithmetic on the person's own counts).
 - **"Your paths" strip** stacks on a phone (the badge no longer squeezes or touches the link).
 - **Quizzes taken is real**: `quiz_runs` (one row per finished quiz). **SQL: `supabase/migrations/20261106120000_add_quiz_runs.sql`
-  — NOT RUN YET (the table does not exist in the live project as of this note).** Until the owner runs it the tile keeps saying
-  "Questions answered" and the engines' inserts fail silently, which is the designed safe state. After it runs: re-run the
-  security advisors; `quiz_runs` must add none.
+  — RUN by the owner on 2026-11-06 and checked live (read-only): table exists, RLS on, own-rows select + insert policies only,
+  anon has no access, signed-in users cannot update or delete, the four checks and the cascade foreign key are in place, 0 rows
+  at the time. Security advisors show only the two accepted WARNs (quiz_runs adds none).** The tile says "Quizzes taken" once
+  the first finished quiz is on record; before that it says "Questions answered". Not retroactive.
 - **Top students shows everyone ranked, up to ten, by POINTS.** **SQL:
   `supabase/migrations/20261106130000_leaderboard_rank_everyone.sql` — RUN by the owner on 2026-11-06 and checked live
   (read-only): the function carries `score`, floor 1, anon cannot execute, advisors show only the two accepted WARNs; the two
