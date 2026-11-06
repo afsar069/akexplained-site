@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-04._
+_Last updated: 2026-11-06._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -26,6 +26,15 @@ _Last updated: 2026-11-04._
 - **www safety net** in `auth.js` sends `www.` visitors to the bare domain.
 
 ## Waiting on a feature branch
+- **Dashboard v2 head + tile row** — on `claude/compassionate-tesla-z0tvag`, **NOT on `main`**.
+  The owner's banner is the page head (two pictures, `<picture>` at 600px), the greeting sits on
+  the banner, and six tiles follow it. No migration, no new table or column — it reads what is
+  already there. Files: `dashboard/index.html`, `assets/dashboard.js`, `assets/site.css`,
+  `assets/dash-banner.webp`, `assets/dash-banner-sm.webp`, plus `tools/dashboard-preview/`.
+  Full handoff: `docs/dashboard-redesign-plan.md`. Pending from the owner: a taller phone banner
+  (1200x630) if the last two lines should be bigger on a small phone; and which section comes next
+  (the 20-age journey strip, or the weekly performance chart — both have real data).
+
 - **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see
   it first). Read-only; no migration, no new table or column. Files: `dashboard/index.html`,
   `assets/dashboard.js`, a "Dashboard" block at the end of the account section of `assets/site.css`, a

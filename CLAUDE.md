@@ -157,6 +157,22 @@ and never ask the owner for it.**
   and topic, the paths picked). **Never add mastery, levels, decay, a "next step" or readiness meters until the
   computation exists** (owner's rule). New sections are added with `addSection()` in that file. Counts say
   "including repeats" (a repeat answer counts again). Known limit and its fix: `docs/accounts-status.md`.
+- **The dashboard head and the tile row** (on the feature branch, 2026-11-06). The head is the
+  owner's own banner: `assets/dash-banner.webp` (2000x357, wide) and `assets/dash-banner-sm.webp`
+  (1200x500, phone), chosen by `<picture>` at 600px, never shown wider than 1400px. The greeting
+  (name, line, four steps, main path) is **one block that moves**: it sits on the banner's blank
+  paper when there is room and drops below the picture when there is not, decided by a **container
+  query on the banner's own width** (860px) — never the window, because the 272px menu makes the
+  window width lie. Sizes are in `cqw`/`vw` with a `max()` floor. Six tiles follow
+  (`kpis` section, `bare: true`). **Both pictures are the owner's; never crop one except of its
+  blank paper, and never put the greeting text inside a picture** — it is live text, the name changes.
+  **A tile whose figure is not really recorded says "Coming soon"** (Study time) or is left out
+  ("Quizzes taken": `attempts` holds one row per answer, not per test). The full handoff, with the
+  breakpoints and the reasons, is `docs/dashboard-redesign-plan.md`.
+- **Seeing the dashboard logged in.** This session cannot reach Supabase, so `/dashboard/` only shows
+  the signed-out card. `tools/dashboard-preview/` runs the real page against a stand-in session and
+  made-up rows. **Every number it prints is invented** — look at the design, never quote a figure
+  from it (rule 2).
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
   setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL
