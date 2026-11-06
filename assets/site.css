@@ -3156,13 +3156,15 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   border-radius:16px;overflow:hidden;
   box-shadow:0 10px 26px -18px rgba(22,48,74,.55);
 }
-/* Card mode (chhoti screen): banner ka sirf KHALI baaya kaagaz kata hai
-   (0 se ~25%), taaki painting aur pankti thodi badi dikhein. Art ya quote
-   ka koi hissa nahi jaata. Badi screen par poori image lagti hai. */
-.dashbanner{
-  width:100%;height:auto;display:block;border-bottom:1px solid var(--card-line);
-  aspect-ratio:4.2/1;object-fit:cover;object-position:100% center;
+.dashbanner{width:100%;height:auto;display:block;border-bottom:1px solid var(--card-line)}
+/* Phone par apni (1200x500) banner lagti hai, isliye wo poori dikhti hai.
+   761px se upar chaudi (2000x357) banner aati hai; card mode me uska sirf
+   KHALI baaya kaagaz kata hai, taaki painting aur pankti badi dikhein.
+   Art ya quote ka koi hissa nahi jaata. (@container 860px par poori.) */
+@media (min-width:601px){
+  .dashbanner{aspect-ratio:4.2/1;object-fit:cover;object-position:100% center}
 }
+picture{display:block}
 
 /* ---------- greeting block (chhoti screen: banner ke neeche) ---------- */
 .dashwelcome{padding:15px 17px 17px}
@@ -3219,10 +3221,29 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .dashhead-path{font-size:max(.82cqw,10px);margin-top:.6cqw}
 }
 
+/* ---------- phone (601px se chhoti screen) ----------
+   Phone wali banner ke baayein aadha kaagaz khaali hai, isliye greeting
+   (eyebrow + naam) wahin upar baith jaati hai; baaki teen pankti picture
+   ke neeche card me rehti hain. Greet box ki unchai image jitni hi hai:
+   chaudai 52%, aur anupaat 52 ÷ (100 ÷ 2.4) = 1.248. */
+@media (max-width:600px){
+  .dashgreet{
+    position:absolute;left:0;top:0;z-index:1;
+    width:52%;aspect-ratio:1.248/1;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 10px 0 16px;
+  }
+  .dashgreet .eyebrow{font-size:clamp(8px,2.3vw,10px);margin-bottom:4px}
+  .dashgreet .dashhi{font-size:clamp(11px,3.1vw,14px)}
+  .dashgreet .dashname{font-size:clamp(16px,5vw,22px)}
+  .dashgreet h1{font-size:clamp(15px,4.4vw,20px)}   /* login se pehle: "My Dashboard" */
+  .dashwelcome{padding:13px 16px 15px}
+}
+
 @media (max-width:640px){
   .pagehead.dashhead{padding:14px 0 18px}
   .dashbanner-wrap{margin:0 14px}
-  .dashwelcome{padding:14px 15px 16px}
+  .dashwelcome{padding:12px 15px 14px}
 }
 
 /* Dashboard v2 — KPI cards (professional pass). */
