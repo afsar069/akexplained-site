@@ -39,8 +39,9 @@ Login → after choosing a journey, lands on `/dashboard/`.
 ### 2. Buildable, but needs NEW tracking first (data fills from then on, not retroactive)
 - **Study Time (e.g. 12h 30m)** — NOT tracked. The quiz engines (`instant.js`, `cbt.js`) would need to
   record time into the DB (new column/table). Only truthful from the day it ships.
-- **Quizzes Taken (e.g. 42)** — we track per-question `attempts`, not "tests". Need a completion count
-  (a `quiz_completed`/session row, or a defensible proxy). Honest substitute today: "Questions answered".
+- **Quizzes Taken (e.g. 42)** — **built 2026-11-06** as `public.quiz_runs` (one row per finished quiz; see
+  `supabase/migrations/20261106120000_add_quiz_runs.sql`). The tile counts real rows and says "Questions
+  answered" until the first row exists. Not retroactive.
 - **Today's Plan** (tasks + checkboxes + Add Task) — a new **planner system** (a `tasks` table + UI).
 - **Recent Activity** entries "Studied notes" / "Watched lecture" — need reading tracking
   (`reading_progress` table exists but is **empty**) and video-watch tracking (none).

@@ -15,120 +15,180 @@
       "slug": "anglo-saxon",
       "name": "Anglo-Saxon Period",
       "prefix": "as",
-      "total": 100
+      "dailyTotal": 100,
+      "mcqSlug": "old-english",
+      "mcqTotal": 300,
+      "total": 400
     },
     {
       "slug": "anglo-norman",
       "name": "Anglo-Norman Period",
       "prefix": "an",
+      "dailyTotal": 100,
+      "mcqSlug": "anglo-norman",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "age-of-chaucer",
       "name": "Age of Chaucer",
       "prefix": "ac",
+      "dailyTotal": 100,
+      "mcqSlug": "age-of-chaucer",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "fifteenth-century",
       "name": "Fifteenth Century",
       "prefix": "fc",
+      "dailyTotal": 100,
+      "mcqSlug": "fifteenth-century",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "renaissance",
       "name": "Renaissance Period",
       "prefix": "rn",
+      "dailyTotal": 100,
+      "mcqSlug": "renaissance",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "early-tudor",
       "name": "Early Tudor Period",
       "prefix": "et",
+      "dailyTotal": 100,
+      "mcqSlug": "early-tudor",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "elizabethan",
       "name": "Elizabethan Age",
       "prefix": "el",
+      "dailyTotal": 100,
+      "mcqSlug": "elizabethan",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "jacobean",
       "name": "Jacobean Age",
       "prefix": "jb",
+      "dailyTotal": 100,
+      "mcqSlug": "jacobean",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "caroline",
       "name": "Caroline Age",
       "prefix": "cr",
+      "dailyTotal": 100,
+      "mcqSlug": "caroline",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "commonwealth",
       "name": "Commonwealth Period",
       "prefix": "cw",
+      "dailyTotal": 100,
+      "mcqSlug": "commonwealth",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "neoclassical",
       "name": "Neoclassical Period",
       "prefix": "nc",
+      "dailyTotal": 100,
+      "mcqSlug": "neoclassical",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "restoration",
       "name": "Restoration Age",
       "prefix": "rs",
+      "dailyTotal": 100,
+      "mcqSlug": "restoration",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "augustan",
       "name": "Augustan Age",
       "prefix": "au",
+      "dailyTotal": 100,
+      "mcqSlug": "augustan-age",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "age-of-sensibility",
       "name": "Age of Sensibility",
       "prefix": "sn",
+      "dailyTotal": 100,
+      "mcqSlug": "age-of-sensibility",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "romantic",
       "name": "Romantic Period",
       "prefix": "rm",
+      "dailyTotal": 100,
+      "mcqSlug": "romantic-age",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "victorian",
       "name": "Victorian Period",
       "prefix": "vc",
+      "dailyTotal": 100,
+      "mcqSlug": "victorian-age",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "edwardian",
       "name": "Edwardian Period",
       "prefix": "ed",
+      "dailyTotal": 100,
+      "mcqSlug": "edwardian",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "georgian",
       "name": "Georgian Period",
       "prefix": "gr",
+      "dailyTotal": 100,
+      "mcqSlug": "georgian",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "modern",
       "name": "Modern Period",
       "prefix": "md",
+      "dailyTotal": 100,
+      "mcqSlug": "modern",
+      "mcqTotal": 0,
       "total": 100
     },
     {
       "slug": "postmodern",
       "name": "Postmodern Period",
       "prefix": "pm",
+      "dailyTotal": 100,
+      "mcqSlug": "postmodern",
+      "mcqTotal": 0,
       "total": 100
     }
   ]

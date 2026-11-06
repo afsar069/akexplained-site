@@ -11,6 +11,10 @@
    Engines call:
      window.akTrack.record({ questionId, topicId, periodId, isCorrect, source })
      window.akTrack.recordMany([ {…}, {…} ])
+     window.akTrack.recordRun({ source, bankId, level, totalQuestions, answered, correct })
+       -> one row in `quiz_runs` when a quiz is FINISHED (the dashboard's "Quizzes taken").
+          Same rules: logged-in only, fire-and-forget, never blocks the quiz. If the table
+          is not there yet the insert simply fails and nothing happens.
 
    question_id must be a STABLE id carried by the question
    (never an array index). A row with no questionId is skipped.
@@ -66,5 +70,29 @@
 
   function record(it) { recordMany([it]); }
 
-  window.akTrack = { record: record, recordMany: recordMany };
+  // One finished quiz. Needs at least one answer and a bank id; anything else is skipped.
+  function recordRun(it) {
+    try {
+      var c = client();
+      if (!c || !it || !it.bankId) return;
+      var total = it.totalQuestions | 0, answered = it.answered | 0, correct = it.correct | 0;
+      if (answered < 1 || total < answered || correct < 0 || correct > answered) return;
+      if (it.source !== 'daily' && it.source !== 'cbt') return;
+      c.auth.getSession().then(function (r) {
+        var s = r && r.data && r.data.session;
+        if (!s || !s.user) return;                    // logged out: write nothing
+        c.from('quiz_runs').insert({
+          user_id: s.user.id,
+          source: it.source,
+          bank_id: String(it.bankId),
+          level: it.level ? String(it.level) : null,
+          total_questions: total,
+          answered: answered,
+          correct: correct
+        }).then(function () {}, function () {});
+      }, function () { /* ignore */ });
+    } catch (e) { /* never throw into the quiz */ }
+  }
+
+  window.akTrack = { record: record, recordMany: recordMany, recordRun: recordRun };
 })();

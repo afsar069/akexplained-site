@@ -62,6 +62,26 @@ comment on table public.attempts is
   'One row per question a user answered, across all quiz surfaces.';
 
 -- =====================================================================
+-- quiz_runs  (one row per quiz a student finished; migration 20261106120000)
+-- =====================================================================
+create table if not exists public.quiz_runs (
+  id              bigint generated always as identity primary key,
+  user_id         uuid not null references auth.users (id) on delete cascade,
+  source          text not null check (source in ('daily', 'cbt')),
+  bank_id         text not null,
+  level           text,
+  total_questions integer not null check (total_questions >= 1),
+  answered        integer not null check (answered >= 1 and answered <= total_questions),
+  correct         integer not null check (correct >= 0 and correct <= answered),
+  completed_at    timestamptz not null default now()
+);
+
+create index if not exists quiz_runs_user_completed_idx on public.quiz_runs (user_id, completed_at desc);
+
+comment on table public.quiz_runs is
+  'One row per quiz a logged-in student finished (Daily quiz or MCQ test). Counts quizzes; the answers themselves are in attempts.';
+
+-- =====================================================================
 -- reading_progress
 -- =====================================================================
 create table if not exists public.reading_progress (
@@ -295,6 +315,7 @@ comment on table public.notify_requests is
 -- Per-user tables: authenticated only. user_exams also gets DELETE. anon none.
 grant select, insert, update         on public.profiles         to authenticated;
 grant select, insert, update         on public.attempts         to authenticated;
+grant select, insert                 on public.quiz_runs        to authenticated;
 grant select, insert, update         on public.reading_progress to authenticated;
 grant select, insert, update, delete on public.user_exams       to authenticated;
 grant select, insert, update         on public.notify_requests  to authenticated;
@@ -309,6 +330,7 @@ grant select on public.exam_topics to anon, authenticated;
 -- =====================================================================
 alter table public.profiles         enable row level security;
 alter table public.attempts         enable row level security;
+alter table public.quiz_runs        enable row level security;
 alter table public.reading_progress enable row level security;
 alter table public.exams            enable row level security;
 alter table public.topics           enable row level security;
@@ -339,6 +361,14 @@ create policy "attempts_insert_own" on public.attempts
 drop policy if exists "attempts_update_own" on public.attempts;
 create policy "attempts_update_own" on public.attempts
   for update to authenticated using ( (select auth.uid()) = user_id ) with check ( (select auth.uid()) = user_id );
+
+-- ---- quiz_runs (own rows = user_id; read and add only, never changed) ----
+drop policy if exists "quiz_runs_select_own" on public.quiz_runs;
+create policy "quiz_runs_select_own" on public.quiz_runs
+  for select to authenticated using ( (select auth.uid()) = user_id );
+drop policy if exists "quiz_runs_insert_own" on public.quiz_runs;
+create policy "quiz_runs_insert_own" on public.quiz_runs
+  for insert to authenticated with check ( (select auth.uid()) = user_id );
 
 -- ---- reading_progress (own rows = user_id) ----
 drop policy if exists "reading_progress_select_own" on public.reading_progress;
