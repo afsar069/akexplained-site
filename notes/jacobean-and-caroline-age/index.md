@@ -5,6 +5,13 @@ description: A simple guide to Jacobean and Caroline literature, its drama, poet
 eyebrow: Notes · Literary Ages
 mark: J
 crumb_label: Jacobean and Caroline
+hero_image: /assets/ages/jacobean-hero.webp
+hero_class: hero-age
+hero_variants:
+  - age: caroline
+    image: /assets/ages/caroline-hero.webp
+  - age: commonwealth
+    image: /assets/ages/commonwealth-hero.webp
 updated: 2026-10-13
 exams:
   - UGC-NET

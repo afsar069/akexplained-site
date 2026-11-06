@@ -5,6 +5,11 @@ description: A simple guide to Restoration literature, its theatre, poetry and p
 eyebrow: Notes · Literary Ages
 mark: R
 crumb_label: Restoration
+hero_image: /assets/ages/restoration-hero.webp
+hero_class: hero-age
+hero_variants:
+  - age: neoclassical
+    image: /assets/ages/neoclassical-hero.webp
 updated: 2026-10-13
 exams:
   - UGC-NET
