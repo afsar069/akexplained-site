@@ -624,13 +624,15 @@
     var fresh = !ctx.attemptsError && !ctx.rows.length;
 
     if (h1) {
-      h1.textContent = name ? ((fresh ? 'Welcome, ' : 'Welcome back, ') + name) : 'My Dashboard';
       if (name) {
-        var wave = document.createElement('span');
-        wave.className = 'wave';
-        wave.setAttribute('aria-hidden', 'true');
-        wave.textContent = ' \uD83D\uDC4B';
-        h1.appendChild(wave);
+        // "Welcome back," ek rang me, naam doosre rang me aur bada.
+        h1.innerHTML =
+          '<span class="dashhi">' + (fresh ? 'Welcome,' : 'Welcome back,') + '</span>' +
+          '<span class="dashname">' + esc(name) +
+            '<span class="wave" aria-hidden="true"> \uD83D\uDC4B</span>' +
+          '</span>';
+      } else {
+        h1.textContent = 'My Dashboard';
       }
     }
     if (line) {

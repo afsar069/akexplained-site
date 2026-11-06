@@ -3128,11 +3128,13 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashactions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
 
 /* ==========================================================
-   DASHBOARD HEAD — owner ka poora banner, ek hi tukde me, upar;
-   neeche greeting (naam JS se), ek pankti, char kadam aur main path.
+   DASHBOARD HEAD — owner ka poora banner, ek hi tukde me.
+   Chhoti screen par greeting banner ke NEECHE aati hai; badi screen par
+   wahi block banner ke ANDAR baayein khali kaagaz par chala jaata hai
+   (@container se, yaani banner ki apni chaudai dekh kar — viewport se
+   nahi). Naam, pankti aur kadam alag-alag rangon me hain.
    Banner me hi professor, university aur Professor AK ki pankti hai,
-   isliye wahi baat niche dobara nahi likhi. Alt text me poori pankti
-   rakhi hai, taaki screen reader use bhi sunaaye.
+   isliye wahi baat niche dobara nahi likhi; alt text me poori pankti hai.
    ========================================================== */
 .pagehead.dashhead{
   display:block;min-height:0;padding:0 0 24px;
@@ -3141,29 +3143,65 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 /* Banner 1400px se chaura nahi hota: usse aage image khinch kar dhundhli
    ho jaati hai. Bade screen par dono taraf cream rehta hai, jo banner ke
    apne cream kaagaz se mil jaata hai. */
-.dashbanner{width:100%;max-width:1400px;height:auto;display:block;margin:0 auto}
+.dashbanner-wrap{
+  position:relative;max-width:1400px;margin:0 auto;
+  container-type:inline-size;container-name:dashbanner;
+}
+.dashbanner{width:100%;height:auto;display:block}
 
-.dashhead-text{padding-top:20px}
-.dashhead .eyebrow{margin-bottom:8px}
-.dashhead h1{font-size:clamp(1.45rem,2.8vw,2.05rem);margin-bottom:8px}
-.dashhead h1 .wave{font-style:normal}
-.dashhead p.lede{max-width:60ch;margin:0}
+/* ---------- greeting block (chhoti screen: banner ke neeche) ---------- */
+.dashwelcome{padding:18px 22px 0}
+.dashwelcome .eyebrow{margin-bottom:7px}
+.dashwelcome h1{font-family:var(--serif);line-height:1.14;margin:0}
+.dashhi{display:block;font-weight:600;font-size:clamp(.95rem,2.4vw,1.1rem);color:var(--ink)}
+.dashname{display:block;font-weight:700;font-size:clamp(1.45rem,5.6vw,2rem);color:var(--accent)}
+.dashname .wave{font-style:normal}
+.dashline{
+  margin:7px 0 0;max-width:46ch;
+  font-size:clamp(.88rem,2.2vw,.98rem);font-weight:600;color:var(--teal);
+}
 
 /* Study • Practice • Revise • Improve */
 .dashsteps{
   list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px 11px;
-  margin:13px 0 0;padding:0;max-width:none;
+  margin:12px 0 0;padding:0;max-width:none;
   font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);
 }
 .dashsteps li{display:flex;align-items:center;gap:11px}
 .dashsteps li + li::before{content:"";flex:none;width:4px;height:4px;border-radius:50%;background:var(--gold)}
-.dashhead-path{margin:12px 0 0;font-size:.9rem;color:var(--body)}
+.dashhead-path{margin:10px 0 0;font-size:.9rem;color:var(--body)}
 .dashhead-path b{color:var(--ink)}
 .dashhead-path[hidden]{display:none}
 
+/* ---------- badi screen: wahi block banner ke andar ----------
+   Naap banner ki chaudai ke hisaab se (cqw), taaki text aur painting
+   hamesha ek hi anupaat me rahein. Banner me baayen ~27% kaagaz khali
+   hai; text wahin baithta hai. */
+@container dashbanner (min-width:860px){
+  .dashwelcome{
+    position:absolute;left:0;top:0;bottom:0;width:31cqw;
+    display:flex;flex-direction:column;justify-content:center;
+    padding:0 1.6cqw 0 3.2cqw;
+    background:linear-gradient(90deg,rgba(255,247,244,.93) 58%,rgba(255,247,244,0));
+  }
+  /* max(...) ek farsh hai: naap banner ke saath ghatta hai, par itna
+     chhota kabhi nahi hota ki padha na jaaye. */
+  /* login se pehle h1 me sirf "My Dashboard" hota hai (koi span nahi),
+     isliye uska apna naap bhi yahin bandha hai. */
+  .dashwelcome h1{font-size:max(1.9cqw,19px)}
+  .dashwelcome .eyebrow{font-size:max(.76cqw,9px);letter-spacing:.17em;margin-bottom:.4cqw}
+  .dashhi{font-size:max(1.3cqw,13px)}
+  .dashname{font-size:max(2.25cqw,21px)}
+  .dashline{font-size:max(1.08cqw,12px);margin-top:.45cqw;max-width:none}
+  .dashsteps{font-size:max(.78cqw,9.5px);gap:.35cqw .8cqw;margin-top:.8cqw}
+  .dashsteps li{gap:.8cqw}
+  .dashsteps li + li::before{width:max(.3cqw,3px);height:max(.3cqw,3px)}
+  .dashhead-path{font-size:max(.82cqw,10px);margin-top:.6cqw}
+}
+
 @media (max-width:640px){
   .pagehead.dashhead{padding:0 0 20px}
-  .dashhead-text{padding-top:16px}
+  .dashwelcome{padding-top:15px}
 }
 
 /* Dashboard v2 — KPI cards (professional pass). */
