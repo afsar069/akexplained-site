@@ -788,13 +788,14 @@
           '<b class="dashlbcard-rank">' + esc(ordinal(s.rank)) + '</b>' +
           '<span class="dashlbcard-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
           (s.score != null ? '<span class="dashlbcard-pts">' + esc(fmt(s.score)) + (s.score === 1 ? ' point' : ' points') + '</span>' : '') +
-          '<em class="dashlbcard-acc">' + esc(String(s.accuracy)) + '% correct</em></li>';
+          '<em class="dashlbcard-acc">' + (s.accuracy == null ? 'No answers yet' : esc(String(s.accuracy)) + '% correct') + '</em></li>';
       }).join('') + '</ol>' + outside +
         '<p class="small dashnote">' + (byPoints
           ? 'Ranked by points: the questions you got right, multiplied by your accuracy. ' +
             'So more questions and better accuracy both lift you. Each question is counted once, by your latest answer. '
           : 'Ranked by accuracy, each question counted once. ') +
-        (min <= 1 ? 'Everyone who has answered a question is ranked.'
+        (min <= 0 ? 'Everyone who has logged in is ranked. A student with no answers yet has 0 points and drops off once ten students are above them.'
+          : min === 1 ? 'Everyone who has answered a question is ranked.'
           : 'You join after ' + fmt(min) + ' different questions.') + '</p>';
     }
   });

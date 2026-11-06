@@ -70,7 +70,14 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   profile name, else the account name, else "Student" (never an email). Status: RUN by the owner on 2026-11-06 and checked live
   (read-only): the board now reads "Mehak Nisar" 34 points (58%) and "Afsar khan" 3 points (25%), no email text in the
   answer, keys unchanged, anon cannot execute, advisors show only the two accepted WARNs. Students with zero answers are not on the board
-  (no points); showing them at 0 points is an open choice for the owner.
+  (no points); the owner then chose to show them at 0 points (next note).
+- **Top students includes everyone who has logged in (owner, 2026-11-06): "only the top is shown, so a 0-point student shows
+  until ten are above them".** **SQL: `supabase/migrations/20261106150000_leaderboard_include_everyone_logged_in.sql` — the owner
+  must run it, AFTER the dashboard code below is live on `main`** (the code shows "No answers yet" for a student with no accuracy;
+  the code already on `main` would print "null% correct"). "Logged in" = `auth.users.last_sign_in_at` is set and not deleted. The
+  live account "Afsar Test 2" has never signed in (email never confirmed), so it will not appear until it signs in once. Tested on a
+  scratch Postgres (answered, all-wrong and no-answer students, never-signed-in and deleted accounts absent, zero-point students fall
+  off the top ten, exactly ten rows, anon denied, run twice).
 - First real `quiz_runs` row seen live on 2026-11-06 (MCQ, old-english-set-2, easy, 50 questions, 21 answered, 6 right): the
   write path works end to end.
 - `/privacy/` and `/terms/` now say quiz completions are kept and the list is on the dashboard (Last updated 6 Nov 2026).

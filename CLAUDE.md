@@ -172,7 +172,10 @@ and never ask the owner for it.**
   period, never "not sorted"), at least 3 answers each. **Top students** shows up to 10, ranked by **points =
   right answers x accuracy** (each question once, latest answer; owner, 2026-11-06: rank must depend on both how
   many questions and how accurate, never one lucky answer on top). The board shows rank, name, points and accuracy;
-  the floor in `public.leaderboard()` is 1 answered question. Both are one place in the SQL (`min_questions`, `score`).
+  every student who has **logged in** (`auth.users.last_sign_in_at` set; an unconfirmed sign-up is not listed, so a stranger cannot put a name
+  on the board) is ranked, a student with no answers has 0 points and "No answers yet" and falls off once ten are above them
+  (`min_questions` is 0; set it to 1 for "only after the first answer"). The name is the profile name, else the account name, else
+  "Student", never an email. Both are one place in the SQL (`min_questions`, `score`).
   `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
   `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
   under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
