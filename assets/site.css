@@ -3138,7 +3138,10 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   display:block;min-height:0;padding:0 0 24px;
   background:linear-gradient(180deg,var(--cream),#FFFDF7);
 }
-.dashbanner{width:100%;height:auto;display:block}
+/* Banner 1400px se chaura nahi hota: usse aage image khinch kar dhundhli
+   ho jaati hai. Bade screen par dono taraf cream rehta hai, jo banner ke
+   apne cream kaagaz se mil jaata hai. */
+.dashbanner{width:100%;max-width:1400px;height:auto;display:block;margin:0 auto}
 
 .dashhead-text{padding-top:20px}
 .dashhead .eyebrow{margin-bottom:8px}
