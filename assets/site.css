@@ -3128,24 +3128,23 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashactions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
 
 /* ==========================================================
-   DASHBOARD HEAD (hero) — owner ke banner par bana.
-   Teen khaane: baayen greeting, beech me painting, dayein ek pankti.
-   Painting assets/dash-hero.webp hai (banner ka beech ka hissa kaata hua);
-   pankti asli text hai, image me nahi, taaki phone par bhi padhi jaaye.
-   Naam JS (assets/dashboard.js) bharta hai; login se pehle saada sheersh.
+   DASHBOARD HEAD — owner ka poora banner, ek hi tukde me, upar;
+   neeche greeting (naam JS se), ek pankti, char kadam aur main path.
+   Banner me hi professor, university aur Professor AK ki pankti hai,
+   isliye wahi baat niche dobara nahi likhi. Alt text me poori pankti
+   rakhi hai, taaki screen reader use bhi sunaaye.
    ========================================================== */
 .pagehead.dashhead{
-  min-height:0;padding:26px 0 24px;
-  background:linear-gradient(135deg,var(--cream) 0%,#FFFDF7 54%,var(--teal-soft) 100%);
+  display:block;min-height:0;padding:0 0 24px;
+  background:linear-gradient(180deg,var(--cream),#FFFDF7);
 }
-.dashhead-in{
-  display:grid;align-items:center;gap:18px 26px;
-  grid-template-columns:minmax(230px,1.08fr) minmax(190px,1fr) minmax(220px,.92fr);
-}
+.dashbanner{width:100%;height:auto;display:block}
+
+.dashhead-text{padding-top:20px}
 .dashhead .eyebrow{margin-bottom:8px}
 .dashhead h1{font-size:clamp(1.45rem,2.8vw,2.05rem);margin-bottom:8px}
 .dashhead h1 .wave{font-style:normal}
-.dashhead p.lede{max-width:36ch;margin:0}
+.dashhead p.lede{max-width:60ch;margin:0}
 
 /* Study • Practice • Revise • Improve */
 .dashsteps{
@@ -3159,44 +3158,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashhead-path b{color:var(--ink)}
 .dashhead-path[hidden]{display:none}
 
-.dashhead-art{
-  width:100%;height:clamp(112px,13vw,152px);object-fit:cover;object-position:7% 56%;
-  border-radius:14px;border:1px solid var(--card-line);
-  box-shadow:0 8px 20px -12px rgba(22,48,74,.45);
-}
-
-.dashquote{
-  position:relative;background:var(--card-paper);border:1px solid var(--card-line);
-  border-radius:14px;padding:15px 18px 14px 38px;
-  box-shadow:0 8px 20px -14px rgba(22,48,74,.45);
-}
-.dashquote::before{
-  content:"\201C";position:absolute;left:13px;top:4px;
-  font-family:var(--serif);font-weight:700;font-size:2.4rem;line-height:1;
-  color:var(--gold);opacity:.5;pointer-events:none;
-}
-.dashquote blockquote{
-  font-family:var(--serif);font-style:italic;font-size:.95rem;line-height:1.5;
-  color:var(--ink);margin:0;
-}
-.dashquote blockquote::before{content:"\201C"}
-.dashquote blockquote::after{content:"\201D"}
-.dashquote cite{
-  display:block;margin-top:9px;text-align:right;font-style:normal;
-  font-family:var(--serif);font-weight:700;font-size:.88rem;color:var(--teal-dark);
-}
-
-/* Tablet: greeting poori chaudai, niche painting aur pankti saath-saath. */
-@media (max-width:1020px){
-  .dashhead-in{grid-template-columns:1fr 1fr}
-  .dashhead-text{grid-column:1 / -1}
-  .dashhead p.lede{max-width:60ch}
-}
-/* Phone: ek ke niche ek. */
 @media (max-width:640px){
-  .pagehead.dashhead{padding:22px 0 20px}
-  .dashhead-in{grid-template-columns:1fr;gap:16px}
-  .dashhead-art{height:clamp(104px,34vw,150px)}
+  .pagehead.dashhead{padding:0 0 20px}
+  .dashhead-text{padding-top:16px}
 }
 
 /* Dashboard v2 — KPI cards (professional pass). */
