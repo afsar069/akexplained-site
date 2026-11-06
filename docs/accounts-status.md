@@ -86,6 +86,37 @@ _Last updated: 2026-11-04._
   **Next up — a richer dashboard redesign** (owner shared a mockup): the plan, with what is real now vs what
   needs new tracking/features, is in **`docs/dashboard-redesign-plan.md`**.
 
+- **Dashboard v3 layout** — on `claude/practical-heisenberg-6vt2n9`, **NOT on `main`**. The owner gave the
+  row order (2026-11-06) and it is now built in `assets/dashboard.js` + the "Dashboard v2 layout" block at the
+  end of `assets/site.css`. Same data, same read-only rule — only the arrangement and three new pieces:
+  1 welcome header · 2 **six tiles in one line** (enrolled courses, questions answered, correct answers,
+  average score, day streak, overall progress) · 3 Your rank | Today's activity · 4 daily streak (two tiles
+  + the week line) · 5 Your level in English literature (the five stages) · 6 progress by British age |
+  progress by topic · 7 strengths | areas to improve · 8 Top students | Your paths · 9 **Your performance** |
+  **Your next goal**, side by side, last.
+  - **Five rows per card** on rows 6 and 7 (owner's rule). The age card puts the age being worked on now
+    first (the age of the newest answer), then the ages that are furthest along.
+  - A **"+" button** in the corner of the age, topic, strengths and areas cards opens the full list:
+    **`/dashboard/ages/`** (all 20 ages + answers by period) and **`/dashboard/topics/`** (every topic +
+    strengths and areas in full). Both are `noindex`, both reuse `assets/dashboard.js` — the page's
+    `#dashSections` carries `data-view="ages"` / `"topics"`, so there is one loader, not three.
+  - **Week line colours**: green = answered, **red = missed**, plain with a border = still to come
+    (today keeps a gold border until it is answered).
+  - **Your performance** is a real weekly chart: 8 Monday-to-Sunday buckets from `attempts`, plotting
+    correct-out-of-answered for each week that has answers (hidden until two weeks have data). Nothing is
+    smoothed or guessed. The "Average score" tile shows the week-on-week change only when both weeks have
+    at least 5 answers.
+  - **Your next goal** = the next age in the site's own order that is not cleared, with what is still needed
+    and a link to that Daily quiz.
+  - **Pictures**: every tile asks `art(key, svg)` for its artwork and gets a line drawing today. When the
+    owner's PNGs are ready, drop them in `/assets/dash/` and name them in `KPI_ART` at the top of
+    `dashboard.js` — no other change. Suggested size about 96x96, see-through background.
+  - **"Quizzes taken" is still not a real number** (plan bucket 2): we count answers, not finished tests,
+    so that tile says "Questions answered". It needs a completion row before it can say anything else.
+  - Browser-tested against `_site` with Supabase mocked (the six tiles, the five paired rows, the "+" links,
+    the missed-day red, the chart, the two full-list pages, mobile width 390px). `npx @11ty/eleventy` builds
+    clean; no new internal link 404s.
+
 ## Known v1 limitation: the dashboard loads every attempt row into the browser
 `/dashboard/` fetches all of the user's `attempts` rows (4 small columns: `id, is_correct, answered_at,
 period_id, topic_id`; newest first, 1,000 per request, at most 10,000 rows) and works out totals and

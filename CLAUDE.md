@@ -157,6 +157,12 @@ and never ask the owner for it.**
   and topic, the paths picked). **Never add mastery, levels, decay, a "next step" or readiness meters until the
   computation exists** (owner's rule). New sections are added with `addSection()` in that file. Counts say
   "including repeats" (a repeat answer counts again). Known limit and its fix: `docs/accounts-status.md`.
+  The row order is the owner's (2026-11-06; the list is at the top of `dashboard.js` and in
+  `docs/accounts-status.md`) — do not re-order it unasked. A card with `col:'half'` shares its line with the
+  next `col:'half'` card. Rows 6 and 7 show **five rows each**; the "+" in the corner opens the full list at
+  `/dashboard/ages/` or `/dashboard/topics/`, which are the same script with `data-view` on `#dashSections`.
+  Tile artwork goes through `art()` / `KPI_ART` — put a PNG in `/assets/dash/`, name it there, change nothing
+  else. "Quizzes taken" stays "Questions answered" until a real completion count exists.
 - **Continue with Google** (on `/login/`, both forms): the button stays hidden until Supabase reports
   Google as enabled (`GET /auth/v1/settings` → `external.google`), so it can ship before the dashboard
   setup is finished (test aid: `/login/?google=1` shows it anyway, to tell "Google is not set up" from "the check failed"). It sends the person to Google with `redirectTo = <origin>/login/` (that exact URL
