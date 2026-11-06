@@ -3143,33 +3143,48 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 /* Banner 1400px se chaura nahi hota: usse aage image khinch kar dhundhli
    ho jaati hai. Bade screen par dono taraf cream rehta hai, jo banner ke
    apne cream kaagaz se mil jaata hai. */
-.dashbanner-wrap{
-  position:relative;max-width:1400px;margin:0 auto;
+.dashbanner-outer{
+  max-width:1400px;margin:0 auto;
   container-type:inline-size;container-name:dashbanner;
 }
-.dashbanner{width:100%;height:auto;display:block}
+/* Chhoti screen par banner aur greeting ek hi card ke do hisse hain,
+   warna patli patti aur neeche ka text bikhre hue lagte hain. Badi
+   screen par ye card khul jaata hai (neeche @container me). */
+.dashbanner-wrap{
+  position:relative;margin:0 16px;
+  background:var(--card-paper);border:1px solid var(--card-line);
+  border-radius:16px;overflow:hidden;
+  box-shadow:0 10px 26px -18px rgba(22,48,74,.55);
+}
+/* Card mode (chhoti screen): banner ka sirf KHALI baaya kaagaz kata hai
+   (0 se ~25%), taaki painting aur pankti thodi badi dikhein. Art ya quote
+   ka koi hissa nahi jaata. Badi screen par poori image lagti hai. */
+.dashbanner{
+  width:100%;height:auto;display:block;border-bottom:1px solid var(--card-line);
+  aspect-ratio:4.2/1;object-fit:cover;object-position:100% center;
+}
 
 /* ---------- greeting block (chhoti screen: banner ke neeche) ---------- */
-.dashwelcome{padding:18px 22px 0}
-.dashwelcome .eyebrow{margin-bottom:7px}
+.dashwelcome{padding:15px 17px 17px}
+.dashwelcome .eyebrow{font-size:.71rem;margin-bottom:6px}
 .dashwelcome h1{font-family:var(--serif);line-height:1.14;margin:0}
-.dashhi{display:block;font-weight:600;font-size:clamp(.95rem,2.4vw,1.1rem);color:var(--ink)}
-.dashname{display:block;font-weight:700;font-size:clamp(1.45rem,5.6vw,2rem);color:var(--accent)}
+.dashhi{display:block;font-weight:600;font-size:clamp(.92rem,2.4vw,1.1rem);color:var(--ink)}
+.dashname{display:block;font-weight:700;font-size:clamp(1.35rem,5.2vw,2rem);line-height:1.1;color:var(--accent)}
 .dashname .wave{font-style:normal}
 .dashline{
-  margin:7px 0 0;max-width:46ch;
-  font-size:clamp(.88rem,2.2vw,.98rem);font-weight:600;color:var(--teal);
+  margin:6px 0 0;max-width:46ch;
+  font-size:clamp(.86rem,2.2vw,.98rem);font-weight:600;color:var(--teal);
 }
 
 /* Study • Practice • Revise • Improve */
 .dashsteps{
-  list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:6px 11px;
-  margin:12px 0 0;padding:0;max-width:none;
-  font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);
+  list-style:none;display:flex;flex-wrap:wrap;align-items:center;gap:5px 10px;
+  margin:11px 0 0;padding:0;max-width:none;
+  font-size:.75rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--teal-dark);
 }
 .dashsteps li{display:flex;align-items:center;gap:11px}
 .dashsteps li + li::before{content:"";flex:none;width:4px;height:4px;border-radius:50%;background:var(--gold)}
-.dashhead-path{margin:10px 0 0;font-size:.9rem;color:var(--body)}
+.dashhead-path{margin:9px 0 0;font-size:.85rem;color:var(--body)}
 .dashhead-path b{color:var(--ink)}
 .dashhead-path[hidden]{display:none}
 
@@ -3178,6 +3193,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
    hamesha ek hi anupaat me rahein. Banner me baayen ~27% kaagaz khali
    hai; text wahin baithta hai. */
 @container dashbanner (min-width:860px){
+  /* card ka roop hat jaata hai: banner seedha kaagaz par */
+  .dashbanner-wrap{
+    margin:0;background:none;border:0;border-radius:0;overflow:visible;box-shadow:none;
+  }
+  .dashbanner{border-bottom:0;aspect-ratio:auto;object-fit:fill}
   .dashwelcome{
     position:absolute;left:0;top:0;bottom:0;width:31cqw;
     display:flex;flex-direction:column;justify-content:center;
@@ -3200,8 +3220,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 
 @media (max-width:640px){
-  .pagehead.dashhead{padding:0 0 20px}
-  .dashwelcome{padding-top:15px}
+  .pagehead.dashhead{padding:14px 0 18px}
+  .dashbanner-wrap{margin:0 14px}
+  .dashwelcome{padding:14px 15px 16px}
 }
 
 /* Dashboard v2 — KPI cards (professional pass). */
