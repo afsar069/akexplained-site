@@ -40,7 +40,7 @@ faces shown on 2026-11-06); changing it means the `.dashhero-name` rule and `das
 font link, both. Still open: the bell has nothing behind it, "Quizzes taken" waits for the
 `quiz_runs` SQL (next block), and the other eight journeys have no syllabus.
 
-## Dashboard fixes, 2026-11-06 (on `claude/happy-thompson-65j2tb`, NOT on `main`; two SQL files WAIT FOR THE OWNER)
+## Dashboard fixes, 2026-11-06 — LIVE on `main` (merged at the owner's word). Leaderboard SQL RUN; the quiz_runs SQL still WAITS FOR THE OWNER
 Done at the owner's word after a full check of the live dashboard (see the list the owner got in chat):
 - **MCQs count in the level and the ages.** An age's pool = Daily questions + live MCQ questions
   (`tools/build-syllabus.js`; MCQ ages are matched to Daily ages by position). Today only Old English has live sets,
@@ -51,15 +51,18 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   "N more right answers would bring this to 70%" (plain arithmetic on the person's own counts).
 - **"Your paths" strip** stacks on a phone (the badge no longer squeezes or touches the link).
 - **Quizzes taken is real**: `quiz_runs` (one row per finished quiz). **SQL: `supabase/migrations/20261106120000_add_quiz_runs.sql`
-  — the owner must run it.** Until then the tile keeps saying "Questions answered" and the engines' inserts fail silently.
+  — NOT RUN YET (the table does not exist in the live project as of this note).** Until the owner runs it the tile keeps saying
+  "Questions answered" and the engines' inserts fail silently, which is the designed safe state. After it runs: re-run the
+  security advisors; `quiz_runs` must add none.
 - **Top students shows everyone ranked, up to ten, by POINTS.** **SQL:
-  `supabase/migrations/20261106130000_leaderboard_rank_everyone.sql` — the owner must run it (not run yet as of the last
-  note).** The floor drops from 100 different questions to 1, and the rank is no longer by accuracy alone: **points =
+  `supabase/migrations/20261106130000_leaderboard_rank_everyone.sql` — RUN by the owner on 2026-11-06 and checked live
+  (read-only): the function carries `score`, floor 1, anon cannot execute, advisors show only the two accepted WARNs; the two
+  live students read 34 points (58%) and 2 points (23%).** The floor drops from 100 different questions to 1, and the rank is no longer by accuracy alone: **points =
   right answers x accuracy** (= right x right / answered, each question once by its latest answer), so more questions AND
   better accuracy both lift a student and a lucky 1-of-1 is worth 1 point (owner's rule, 2026-11-06). Ties: accuracy, then
   more questions, then earlier start. Cards show rank, name, points and accuracy; `/privacy/` says points and accuracy
-  together hint at how many questions a student has answered. Until the SQL runs the live function still ranks by accuracy
-  with a floor of 100 and sends no `score` (the cards then show accuracy only).
+  together hint at how many questions a student has answered. If the function ever lacks `score`, the dashboard falls back to the
+  accuracy wording.
 - `/privacy/` and `/terms/` now say quiz completions are kept and the list is on the dashboard (Last updated 6 Nov 2026).
 - Tested: 123 dashboard checks and 26 quiz-engine checks in a browser with Supabase mocked; both migrations on a scratch
   Postgres 16 (run twice, RLS own-rows, anon denied, constraints, cascade, ten-student ranking). Security advisors must be
