@@ -410,13 +410,16 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
 - The dashboard pool counts a login set as `count x levels` from the registry (`tools/build-syllabus.js`).
 - Engine: `assets/cbt.js` reads a login set with `data-gated` on the page (`gatedPaper()`); it must wait for
   `window.akAuth`, because `cbt.js` runs before `auth.js`.
-- **The lock on the hub** (owner, 2026-11-07): the hub row of a login set shows a padlock before its title, a link
-  to `/login/?next=<that set's page>`, so a student sees from outside that a login is needed, and one tap takes
-  a guest straight to the login page. It is `data-guest-only`, so `auth.js` hides it for a logged-in student.
-  There is no text tag ("Login needed" was removed on the owner's word). Start still opens the set page, which
-  shows "Log in to take this test" to a guest (its button links to `/login/?next=<page and query>`, `cbt.js` `needLogin()`). The "Build your own test" page still says "Needs a free login"
-  on the row (the owner has not asked to remove it). Template `quizzes/mcq/_templates/age-hub.njk`, CSS
-  `.agehub-lock` in `assets/site.css`.
+- **The lock on the hub** (owner, 2026-11-07, said twice: "jahan par Start, wahan par lock; kone me nahi"): on the
+  hub row of a login set, a guest sees a padlock BUTTON in the place of the Start button (same slot, same height; template
+  `quizzes/mcq/_templates/age-hub.njk`, `.agehub-go-lock` in `assets/site.css`). It links to `/login/?next=<that set's
+  page>`. A logged-in student sees Start instead. The lock is `data-guest-only` and Start (made by `assets/mcq-age.js`) is
+  `data-auth-only`, so `auth.js` swaps them by login state; `mcq-age.js` runs before `auth.js` and sets Start's first
+  state from the lock. There is no text tag ("Login needed" was removed on the owner's word) and no lock in the title.
+  The set page itself still shows "Log in to take this test" to a guest (its button links to
+  `/login/?next=<page and query>`, `cbt.js` `needLogin()`). The "Build your own test" page still says "Needs a free
+  login" on the row (the owner has not asked to remove it). `/login/?next=…` shows one line (`#nextNote`): "Log in, or
+  create a free account, to open this page. Then you will come straight back to it."
 - **Login and come back** (owner: "login karke seedha wahin jahan se chhoda hai"): `?next=<same-site path>` on
   `/login/` is kept in `localStorage` (`ak:next`, with a time) so it survives Google and an email link opened
   in a new tab, for **one hour**. **Every** way out of the login page calls `goAfterLogin()` in `assets/login.js`:
@@ -425,7 +428,8 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   `/dashboard/`). A visit to `/login/` without `?next=` drops an old one, except on the way back from Google or an
   email link. Only a path on this site is accepted (not `https://…`, `//…`, `/\…`, `javascript:`).
   The email-confirm redirect URL itself is untouched (Supabase's allowed-URL list). Change an exit only through
-  `goAfterLogin()`.
+  `goAfterLogin()`. **A new student** (owner: "naya hai to pehle profile bnae, phir usi page par") signs up (or uses Google),
+  then sees "Choose your path" (the profile step), then Save or Skip returns them to the page they came from.
 - **Hub words when the owner gives none:** use only the file's own `setName`, topic names, count and levels,
   say so, never invent (Old English Set 4 was done like this and the owner kept it). Two sets on the same
   topic get the file's own different names.

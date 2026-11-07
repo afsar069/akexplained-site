@@ -121,6 +121,15 @@
       a.href = set.base;
       a.textContent = set.done ? 'Do it again' : set.open ? 'Carry on' : 'Start';
       slot.parentNode.replaceChild(a, slot);
+
+      /* Login wale set: guest ko Start ki jagah lock dikhta hai (template me), logged-in ko Start.
+         auth.js [data-guest-only] / [data-auth-only] ko login ki haalat se dikhata-chhupata hai. Start abhi bana hai,
+         isliye uski haalat lock se mila lo (lock dikh raha ho = guest = Start chhupa). */
+      var lock = $('.agehub-go-lock', set.row);
+      if (lock) {
+        a.setAttribute('data-auth-only', '');
+        a.hidden = !lock.hidden;
+      }
     });
   }
 

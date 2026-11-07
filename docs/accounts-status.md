@@ -90,6 +90,15 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch (the login-layer block below is already merged; kept here for its details)
+- **Lock moved into the Start slot (follow-up, 2026-11-07, branch `claude/youthful-brown-vwwtyp`; NOT on `main` yet).** The owner saw the
+  padlock before the title (merged in pull request 3) and said again: the lock must be where the Start button is, not in a
+  corner. Now: a guest sees a padlock button in the Start slot of a login set (same position and height; checked in a browser,
+  right edges equal and heights 43 px = 43 px), a logged-in student sees Start. The title padlock is gone. `/login/?next=…` shows
+  one line saying they will come straight back. Returning student: back to the set page. **New student: signs up (or Google),
+  sees "Choose your path" (the profile step), then Save or Skip returns to the set page** (this already worked since pull request 3;
+  now covered by a test of the email sign-up that the page to come back to is remembered, and of the email link in a new tab).
+  Tested on a scratch copy with the real Set 4 files, Supabase mocked: 25 of 25 new checks plus the earlier 21 of 21. Files:
+  `age-hub.njk`, `site.css`, `mcq-age.js`, `login/index.html`, `login-page.css`, `login.js`.
 - **Lock on login sets, and "login and come back" through every exit** (2026-11-07, branch `claude/youthful-brown-vwwtyp`; NOT on `main` yet).
   Owner's asks: (1) a login set should look locked from outside, a tap on the lock takes a guest straight to the login page;
   (2) after logging in the student lands exactly where they left ("login karke seedha wahin"); (3) write the rule changes down
