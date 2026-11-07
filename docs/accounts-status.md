@@ -6,6 +6,12 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-07 (login layer and Set 4 live on main; lock on login sets and login-and-come-back on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
+## NET exam banner — ready on a feature branch (2026-11-07)
+
+- Branch: `feat/net-header-banner`, based on `main` at `0c05ace`; not published yet.
+- `/exams/net/` replaces its plain hero with the owner's supplied illustrated NET banner. Three WebP sizes (768, 1168, and 1915 px wide) keep the whole image visible at its natural ratio. At a 1440 px viewport, the banner image is 1168 × 501 px; the old hero was 1168 × 290 px. The mobile layout also shows the original HTML heading and description below the image for readability. Other exam headers and the NET page content are unchanged.
+- Build and local browser checks passed at 320–2560 px, including mobile menu, 26 internal links/redirects, print, and no console errors. `design-qa.md` records the visual check and is excluded from public output. Live-site access remains blocked from the cloud session; publishing requires the owner's instruction under rule 5.
+
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
   Tracking is verified working end to end (logged-in answers land in `public.attempts`, fully tagged).
