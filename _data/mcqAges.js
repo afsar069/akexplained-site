@@ -93,7 +93,8 @@ module.exports = function () {
       // access: "login" = sawal table me, sirf logged-in student padhe. "paid" abhi bana nahi, isliye build rokta hai.
       if (s.access && s.access !== "login") throw new Error("mcqSpec: " + id + ' has access "' + s.access + '"; only "login" is built (paid is not built yet)');
       if (s.access && !s.live) throw new Error("mcqSpec: " + id + ' has "access" but is not live');
-      const tags = s.levels.map(cap).concat(s.access === "login" ? ["Login needed"] : [], s.extraTags || []);
+      // Login wale set par hub me "Login needed" ka tag nahi lagta (owner, 2026-11-07): login tab maanga jata hai jab student Start dabata hai.
+      const tags = s.levels.map(cap).concat(s.extraTags || []);
       return Object.assign({}, s, {
         id, live: !!s.live, tags, rev: s.live ? fileRev(id, s.levels, s) : undefined,
         topicAttr: s.topics.join(" "), levelAttr: s.levels.join(" "),

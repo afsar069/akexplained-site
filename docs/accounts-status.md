@@ -89,8 +89,8 @@ Done at the owner's word after a full check of the live dashboard (see the list 
 - **Left for later (owner's word, 2026-11-06):** the bell (with the owner's own dashboard), the other journeys (only British
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
-## Waiting on a feature branch
-- **Login layer for MCQ sets** (2026-11-07, branch `claude/youthful-brown-vwwtyp`; NOT on `main` yet). Owner's decisions (rule 15):
+## Waiting on a feature branch (the login-layer block below is already merged; kept here for its details)
+- **Login layer for MCQ sets** (2026-11-07; MERGED to `main` at the owner's word the same day, pull request 1, merge commit `191c802`, so it publishes to akexplained.com once Cloudflare has built it; the session cannot reach akexplained.com, so the live page was not checked by Claude). Owner's decisions (rule 15):
   free sets stay open (the 300 Old English MCQs and any set the owner calls free); a set the owner calls "login" is kept in the
   database, readable only by logged-in students; paid comes later (the owner picks which sets, and a promo code can give the
   paid pass for free); big PDFs will go to R2 (nothing built). **Claude now runs the SQL itself** (rules 9 and 14 changed).
@@ -99,13 +99,13 @@ Done at the owner's word after a full check of the live dashboard (see the list 
     only `authenticated: SELECT` granted. Security advisors: no new finding (still only `leaderboard` and leaked-password
     protection, both older). Tested first on a scratch Postgres 16: run twice, anon denied, logged-in reads only `login` rows,
     `paid` rows invisible, no write from a client, wrong-shape body refused.
-  - **Code (branch only):** `assets/cbt.js` (reads a login set from the table; guests see "Log in to take this test"),
+  - **Code (now on `main`):** `assets/cbt.js` (reads a login set from the table; guests see "Log in to take this test"),
     `assets/login.js` (`?next=` returns a returning person to the page; same-site paths only), `_data/mcqAges.js` (`access`,
-    `rev`, "Login needed" tag, build stops on `"paid"`), the five MCQ templates (`data-gated`), `tools/build-syllabus.js`
+    `rev`, build stops on `"paid"`), the five MCQ templates (`data-gated`), `tools/build-syllabus.js`
     (a login set counts `count x levels`), `tools/mcq-skill/make_gated_sql.py` (checks the files, writes the load SQL).
   - **Text:** About, Privacy (Last updated 7 Nov 2026) and Terms (Accounts) now say "some MCQ sets ask you to log in first".
-    They are only true once a login set exists; do not merge the branch before the first login set is ready, or merge both
-    together. `/terms/` and `/contact/` still say "no paid tier", which stays true until paid is built.
+    They went live in the same merge as Set 4, so they are true. `/terms/` and `/contact/` still say "no paid tier",
+    which stays true until paid is built.
   - **Tested** (scratch site with a fake login set, Supabase mocked, never published): guest sees the login screen, no
     question request and no question text; logged-in student gets the test; a missing row gives the "did not load" screen;
     free sets and custom tests of free sets are unchanged; custom test with a login set; `?next=` return and the refusal
@@ -127,8 +127,10 @@ Done at the owner's word after a full check of the live dashboard (see the list 
     the owner); the loader's own checks passed. Open for the owner: Set 3 and Set 4 both cover prose and its writers.
     Browser-tested against the real files (Supabase mocked) 21 of 21.
   - **Not done / next (after Set 4):** the paid layer (entitlements, promo codes, gateway) is not built; the owner will
-    choose which sets become paid. Point 7 of the owner's message of 2026-11-07 was empty. The branch has NOT been merged:
-    About, Privacy and Terms say "some MCQ sets ask you to log in first", which is only true once Set 4 is live.
+    choose which sets become paid. Point 7 of the owner's message of 2026-11-07 was empty. The branch was merged on
+    2026-11-07 (Set 4 and the About / Privacy / Terms text went live together). Still to check by the owner on the live
+    site: the hub row of Set 4 has no "Login needed" tag (removed at the owner's word on 2026-11-07; login is asked only after Start); Set 4 shows "Log in to take this test" when logged out and the test
+    when logged in; `/privacy/` says "Last updated: 7 November 2026".
 - **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day; the owner sent a
   screenshot of `/login/?path=1`). Causes found: `login-page.css` had `.pathscreen{padding:0}` while the card border stayed, so text
   touched the border; the big heading above still said "Welcome back"; `site.css` `section{padding:40px 0}` added 40px above and below
