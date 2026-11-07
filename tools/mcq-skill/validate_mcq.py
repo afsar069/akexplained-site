@@ -6,6 +6,13 @@ Checks one or more question files (easy / medium of the same set) against the
 format the site loads, and lints them for the mistakes that cost the most time
 to fix later. Python 3 only, no packages.
 
+It understands both the plain sets (set 1-3 style) and the "complex" generator
+sets (Old English set 5 style): a top-level "passages" list with questions that
+point at it by "passageId", line breaks inside a question (List I / List II,
+A. B. C. D.), and the extra fields id / topicId / periodId / qtype. None of those
+are errors. The tags are not matched against the master list here (make_gated_sql.py
+does that for a login set, and the build gate does it for a free set).
+
   python3 validate_mcq.py easy.json medium.json
   python3 validate_mcq.py easy.json medium.json --notes article.md
   python3 validate_mcq.py easy.json medium.json --notes article.md --others set1-easy.json set1-medium.json
@@ -37,7 +44,9 @@ SET_KEYS = ['setId', 'rev', 'age', 'ageName', 'setNumber', 'setName', 'notes', '
 SAME_IN_PAIR = ['setId', 'rev', 'age', 'ageName', 'setNumber', 'setName', 'notes', 'notesTitle',
                 'topics', 'topicRead', 'quote']
 Q_CORE = ['question', 'options', 'correct_option_id', 'explanation', 'topic']
-Q_ALLOWED = Q_CORE + ['src', 'read']
+Q_ALLOWED = Q_CORE + ['src', 'read', 'id', 'topicId', 'periodId', 'qtype', 'passageId']
+QTYPES = {'passage', 'direct', 'combination', 'match', 'chrono'}
+PASSAGE_KEYS = {'id', 'title', 'attribution', 'text', 'src'}
 LEGACY = False        # --legacy: older files without "src"
 # words that appear in many stems and options without being a clue
 GENERIC = {'manuscript', 'manuscripts', 'poem', 'poems', 'poetry', 'riddle', 'riddles', 'english',
@@ -96,7 +105,7 @@ def check_set(path, d, anchors, count):
     w = path
     for k in SET_KEYS:
         if k not in d: err(w, 'missing "%s"' % k)
-    extra = [k for k in d if k not in SET_KEYS + ['quote']]
+    extra = [k for k in d if k not in SET_KEYS + ['quote', 'passages']]
     if extra: err(w, 'unknown top-level field(s): %s' % ', '.join(extra))
     if any(k not in d for k in SET_KEYS): return False
 
@@ -123,8 +132,11 @@ def check_set(path, d, anchors, count):
     if not 3 <= len(t) <= 8: warn(w, 'a set usually has 4 to 6 topics; this one has %d' % len(t))
     tr = d['topicRead']
     if not isinstance(tr, dict): err(w, '"topicRead" must be an object of topic key: anchor'); return False
-    for k in t:
-        if k not in tr: err(w, 'topicRead has no anchor for topic "%s"' % k)
+    # topicRead links are optional helpers. A complex set leaves it {} on purpose (no error).
+    # A set that uses them should cover every topic, so nudge only when it uses them at all.
+    if tr:
+        for k in t:
+            if k not in tr: warn(w, 'topic "%s" has no "read" link in topicRead' % k)
     for k, v in tr.items():
         if k not in t: err(w, 'topicRead names "%s" which is not in topics' % k)
         if not isinstance(v, str) or not re.match(r'^[a-z0-9-]+$', v): err(w, 'topicRead "%s": "%s" is not a valid anchor' % (k, v))
@@ -135,6 +147,27 @@ def check_set(path, d, anchors, count):
         if not (isinstance(q, dict) and set(q) == {'text', 'source'} and all(isinstance(x, str) and x.strip() for x in q.values())):
             err(w, '"quote" must be {"text": "...", "source": "..."} or left out')
 
+    # "passages": optional. Questions point at one by "passageId" (checked per question).
+    if 'passages' in d:
+        ps = d['passages']
+        if not isinstance(ps, list) or not ps:
+            err(w, '"passages" must be a non-empty list when present')
+        else:
+            seen = set()
+            for i, p in enumerate(ps, 1):
+                pw = '%s passage %d' % (w, i)
+                if not isinstance(p, dict): err(pw, 'must be an object'); continue
+                pid = p.get('id')
+                if not isinstance(pid, str) or not re.match(r'^[a-z0-9-]+$', pid or ''):
+                    err(pw, 'needs an "id" like "p1"')
+                elif pid in seen: err(pw, 'id "%s" is used twice' % pid)
+                else: seen.add(pid)
+                for key in ('title', 'text'):
+                    if not isinstance(p.get(key), str) or not p.get(key, '').strip():
+                        err(pw, 'needs a non-empty "%s"' % key)
+                bad = [k for k in p if k not in PASSAGE_KEYS]
+                if bad: err(pw, 'unknown field(s): %s' % ', '.join(bad))
+
     qs = d['questions']
     if not isinstance(qs, list): err(w, '"questions" must be a list'); return False
     if len(qs) != count: err(w, 'has %d questions, expected %d' % (len(qs), count))
@@ -142,6 +175,8 @@ def check_set(path, d, anchors, count):
 
 def check_questions(path, d, anchors):
     qs, topics = d['questions'], d['topics']
+    pass_ids = {p['id'] for p in d.get('passages', []) if isinstance(p, dict) and isinstance(p.get('id'), str)}
+    ids_seen = {}
     pos, own, per_topic, longest, stats = [], 0, Counter(), 0, Counter()
     for i, q in enumerate(qs, 1):
         w = '%s Q%d' % (path, i)
@@ -151,6 +186,17 @@ def check_questions(path, d, anchors):
         extra = [k for k in q if k not in Q_ALLOWED]
         if extra: err(w, 'unknown field(s): %s' % ', '.join(extra))
         if any(k not in q for k in Q_CORE): continue
+
+        # optional complex-format fields
+        if 'id' in q:
+            qid = q['id']
+            if not isinstance(qid, str) or not qid.strip(): err(w, '"id" must be a non-empty string')
+            elif qid in ids_seen: err(w, 'id "%s" is also used by %s' % (qid, ids_seen[qid]))
+            else: ids_seen[qid] = w
+        if 'qtype' in q and q['qtype'] not in QTYPES:
+            warn(w, 'qtype "%s" is unusual (known: %s)' % (q['qtype'], ', '.join(sorted(QTYPES))))
+        if 'passageId' in q and q['passageId'] not in pass_ids:
+            err(w, 'passageId "%s" has no matching passage in "passages"' % q['passageId'])
 
         stem, opts, ans = q['question'], q['options'], q['correct_option_id']
         if not isinstance(stem, str) or not stem.strip(): err(w, 'question text is empty'); continue
@@ -164,7 +210,10 @@ def check_questions(path, d, anchors):
         per_topic[q['topic']] += 1; pos.append(ans)
 
         for label, txt in [('question', stem), ('explanation', q['explanation'])] + [('option %d' % j, o) for j, o in enumerate(opts)]:
-            if txt != txt.strip() or '  ' in txt or '\n' in txt: err(w, '%s has stray spaces or a line break' % label)
+            # the question may hold line breaks (List I / List II, A. B. C. D.); options and the explanation may not
+            allow_nl = (label == 'question')
+            if txt != txt.strip() or '  ' in txt or '\r' in txt or ('\n' in txt and not allow_nl):
+                err(w, '%s has stray spaces or a line break' % label)
             if re.search(r'\*\*|`|^#|</?[a-z]+>', txt): err(w, '%s contains markdown or HTML' % label)
             if re.search(r'[ऀ-ॿ]', txt): err(w, '%s contains Hindi script; site text must be simple English' % label)
             if re.search(r'\bTODO\b|\bXXX\b|\?\?', txt): err(w, '%s has a placeholder' % label)

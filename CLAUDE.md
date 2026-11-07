@@ -369,6 +369,7 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   state changes so the next session starts without re-reading the whole history.
 
 ## 15. Access layers: free, login, paid (owner, 2026-11-07)
+**Short runbook for publishing a set (free or login), for any AI with the connector: `tools/mcq-skill/PUBLISH.md`.**
 Three layers for MCQ sets. **The owner decides the layer of every set when the files are handed over**
 ("login me lagao" = login; otherwise free). **If the owner did not say, ask before touching the repo. Never assume.**
 - **free**: a public file in `assets/questions/` (and the Daily files). The 300 Old English MCQs and every set

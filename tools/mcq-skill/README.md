@@ -27,6 +27,12 @@ Teeno files aur likho: **"Old English Set 3 publish karo"**. Main:
 2. Wikipedia, 3. Encyclopaedia Britannica, 4. British Library (bl.uk), 5. Project Gutenberg (sirf asli text check karne ke liye).
 Inke alawa kuch nahi. Badalna ho to `SKILL.md` ke section 3 aur `validate_mcq.py` ke upar `ALLOWED_DOMAINS` me badlo.
 
+## Kisi AI ko set publish karna ho (chhota runbook)
+`PUBLISH.md` — ek page ka saaf checklist: owner file deta hai, AI (jiske paas Supabase connector hai) use
+seedha free ya login layer me laga deta hai. Naya format (passages, List I/List II wali lines) engine pehle
+se samajhta hai, isliye har set par engine ka kaam nahi padta. Owner "verified" keh de to facts dobara check
+nahi hote — yahi sabse bada kharcha bachata hai.
+
 ## Login wale set (database me jata hai, repo me nahi)
 Repo public hai, isliye login wale set ki files kabhi repo me nahi jaati. Unke liye teen cheezein hain:
 
