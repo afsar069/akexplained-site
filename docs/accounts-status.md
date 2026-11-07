@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed on the branch)._
+_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -90,7 +90,7 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch
-- **MCQ page top strips fixed** (2026-11-07, branch `claude/fervent-wozniak-pz99op`, NOT on `main`). Owner's two asks on `/quizzes/mcq/`:
+- **MCQ page top strips fixed** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day). Owner's two asks on `/quizzes/mcq/`:
   1. **"Carry On Where You Left"** led nowhere: "Continue" opened the age hub and "N You Got Wrong" opened
      `/quizzes/mcq/build/?only=wrong`, which 404s. Now (`assets/mcq.js`, no HTML change): Continue opens the
      running test itself (`/quizzes/mcq/<age>/set-<n>/?n=<count>`; the engine resumes only when `?n=` equals the saved
@@ -104,8 +104,10 @@ Done at the owner's word after a full check of the live dashboard (see the list 
      Logged out: the login page. Logged in: straight to "Choose your path" (same link as "Change paths" on
      `/account/`). Strip text and button ("Choose Your Path") rewritten to match. Not browser-tested while logged
      in (Supabase is not reachable from the session); that screen is the existing `?path=1` behaviour.
-  Open question for the owner: the strip's line "Sign in later and it will follow you to your phone" promises
-  something that is not built yet (guest answers are not moved to the account, rule 13). Left as it was.
+  The Carry On strip's second line "Sign in later and it will follow you to your phone" promised something that is
+  not built (guest answers are not moved to the account, rule 13; this strip reads only this browser). Owner said
+  "write what is true" (2026-11-07): the line is now just "Kept on this device only." Bring the promise back only
+  when the strip really reads from the account.
 - **Dashboard v1 at `/dashboard/`** — on `claude/zen-hamilton-41vw9q`, **NOT on `main`** (the owner wants to see
   it first). Read-only; no migration, no new table or column. Files: `dashboard/index.html`,
   `assets/dashboard.js`, a "Dashboard" block at the end of the account section of `assets/site.css`, a
