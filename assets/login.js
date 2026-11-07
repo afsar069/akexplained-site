@@ -138,7 +138,11 @@
       // except on the way back from Google or from an email link, where it must stay.
       var emailLanding = auth.urlType === 'signup' || auth.urlType === 'recovery';
       var askedNext = cleanNext(new URLSearchParams(location.search).get('next'));
-      if (askedNext) rememberNext(askedNext);
+      if (askedNext) {
+        rememberNext(askedNext);
+        var nextNote = document.getElementById('nextNote');
+        if (nextNote) nextNote.hidden = false;
+      }
       else if (!fromGoogle && !emailLanding) forgetNext();
       showReturnError();
 
