@@ -4,7 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (The owner explicitly approved merging PR #13 and publishing the PGT exam hub, including the phone hero refinement. Existing Anglo-Norman MCQ planning and Old English Set 6 work remain unchanged.)_
+_Last updated: 2026-11-07 (Shared-footer correction for the released PGT hub and UP PGT guide. PR #13 was merged and its production Cloudflare deployment succeeded. Existing Anglo-Norman MCQ planning and Old English Set 6 work remain unchanged.)_
+
+## PGT shared-footer correction (2026-11-07)
+
+- After the approved PGT release, the owner pointed out that the default footer must accompany every page. The custom PGT footer was an implementation mistake, not a new site-wide footer choice.
+- `_includes/pgt-layout.njk` now uses the shared `site-footer` marker; the existing `syncChrome` transform inserts the complete default footer from `_includes/base.njk` on both `/exams/pgt/` and `/exams/pgt/up-pgt/`. Removed the unused custom footer styles. Recorded the every-page footer rule in `CLAUDE.md`.
+- This is a correction to the owner's immediately preceding instruction to merge and publish the PGT page. The rest of the page design stays as approved.
+- Build passed. Both routes at 390px and 1440px contain exactly the shared footer, all 24 footer links, visible Privacy/Terms and no overflow or console errors. Desktop pixels above the footer match the approved capture exactly. Evidence: `docs/pgt-footer/`.
 
 ## PGT exam hub — production release approved, PR #13 (2026-11-07)
 

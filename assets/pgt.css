@@ -39,8 +39,6 @@
 .pgt-card-state{font-size:.92rem;line-height:1.4;margin:0}
 .pgt-card-status{font-size:.92rem;line-height:1.4;font-weight:600;color:#8C5B14;margin:4px 0 0}
 .pgt-central-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
-.pgt-footer{display:flex;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:18px;border-top:1px solid #DCC298;font-size:.76rem}
-.pgt-footer p{margin:0}
 
 /* The UP guide retains the existing English study material at the site scale. */
 .pgt-detail{padding-bottom:48px}
@@ -89,11 +87,10 @@
   .pgt-hub{padding-top:24px;padding-bottom:36px}
   .pgt-featured{margin-bottom:32px}
   .pgt-exam-section + .pgt-exam-section{margin-top:32px}
-  .pgt-footer{flex-wrap:wrap}
 }
 @media (prefers-reduced-motion:reduce){.pgt-featured,.pgt-featured-go img{transition:none}}
 @media print{
-  .pgt-hero-art,.pgt-breadcrumb,.pgt-footer,.pgt-back{display:none}
+  .pgt-hero-art,.pgt-breadcrumb,.pgt-back{display:none}
   .pgt-hero-inner{min-height:0}
   .pgt-hero-copy{width:100%;padding:12px 0}
   .pgt-featured{background:#fff;color:var(--ink);border:1px solid var(--border)}

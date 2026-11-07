@@ -8,6 +8,7 @@ The owner selected `reference.png` on 2026-11-07, approved the desktop and phone
 - `/exams/pgt/up-pgt/`: English reading, literature and preparation guidance from the former PGT article, clearly distinguished from an official UP-specific syllabus. The owner supplied UPESSC and the exam labels. No eligibility figures, paper weights, dates or marks were invented.
 - State labels/grouping, including HTET PGT and the combined OAVS/SSB Odisha card, follow the owner's list. Verify exam-specific rules when opening future destinations.
 - Only UP PGT is interactive; Coming soon cards have no fake link or empty child page.
+- Both pages use the full default site footer through the existing build synchronization. The initial mock's compact footer has been replaced following the owner's correction that the default footer belongs on every page. Footer evidence: `docs/pgt-footer/`.
 - Templates: `exams/pgt/index.njk`, `exams/pgt/up-pgt/index.njk`, `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`.
 - Data/style: `_data/pgtExams.json`, `assets/pgt.css`. Fonts reuse `assets/fonts/net/` and its OFL licenses.
 

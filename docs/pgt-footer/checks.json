@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "route": "/exams/pgt/",
+      "width": 390,
+      "footerMatchesShared": true,
+      "links": 24,
+      "overflow": false
+    },
+    {
+      "route": "/exams/pgt/",
+      "width": 1440,
+      "footerMatchesShared": true,
+      "links": 24,
+      "overflow": false
+    },
+    {
+      "route": "/exams/pgt/up-pgt/",
+      "width": 390,
+      "footerMatchesShared": true,
+      "links": 24,
+      "overflow": false
+    },
+    {
+      "route": "/exams/pgt/up-pgt/",
+      "width": 1440,
+      "footerMatchesShared": true,
+      "links": 24,
+      "overflow": false
+    }
+  ],
+  "errors": [],
+  "desktopAboveFooterUnchanged": true
+}
