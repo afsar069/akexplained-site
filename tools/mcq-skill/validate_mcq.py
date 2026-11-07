@@ -32,7 +32,7 @@ from collections import Counter
 ALLOWED_DOMAINS = ['akexplained.com', 'wikipedia.org', 'britannica.com', 'bl.uk', 'gutenberg.org']
 OWN_DOMAIN = 'akexplained.com'
 
-AGES = ['old-english', 'middle-english', 'renaissance', 'elizabethan', 'jacobean', 'caroline',
+AGES = ['old-english', 'anglo-norman', 'middle-english', 'renaissance', 'elizabethan', 'jacobean', 'caroline',
         'restoration', 'augustan-age', 'romantic-age', 'victorian-age', 'modern', 'contemporary']
 LEVELS = ['easy', 'medium', 'hard']
 SKIP_ANCHORS = {'quick-quiz-25-questions', 'frequently-asked-questions', 'sources',
