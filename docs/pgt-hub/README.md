@@ -1,6 +1,6 @@
 # PGT exam hub
 
-The owner selected `reference.png` on 2026-11-07 and asked to build it. Implementation is on `feat/pgt-exam-hub`, pending a separate instruction to publish.
+The owner selected `reference.png` on 2026-11-07, approved the desktop and phone refinement, and explicitly authorized merging PR #13 to publish this implementation through Cloudflare Pages.
 
 ## Scope and files
 

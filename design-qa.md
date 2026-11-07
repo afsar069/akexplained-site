@@ -58,4 +58,4 @@ final result: passed
 - [x] Existing study information on the new UP route.
 - [x] Layout fixes recaptured and compared together with the source.
 - [x] Build, navigation, mobile, keyboard and local links checked.
-- [ ] Publish only after the owner's explicit live instruction (`CLAUDE.md`, rule 5).
+- [x] Owner explicitly authorized merging PR #13 and publishing, on 2026-11-07 (`CLAUDE.md`, rule 5).
