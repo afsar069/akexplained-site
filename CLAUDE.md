@@ -372,12 +372,16 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   1. `validate_mcq.py` on them (rule 7 steps 1 and 2), as for any set.
   2. `_data/mcqSpec.json`: the set gets `"access": "login"`, `"rev": <n>` (the registry carries rev, because there
      is no file to read it from), `count`, `levels`, `titleCase`, `lede` (the owner supplies the words), `"live": true`.
-  3. `python3 tools/mcq-skill/make_gated_sql.py --access login <files> --out <scratchpad>/load.sql`. It checks the
-     files against the registry, the master topics and the public files, and writes the SQL; it never touches the
-     database. Tags (`topicId`, `periodId`) must be there: run the tagging tool first (rule 12), because the build
-     gate cannot see these files.
-  4. Run that SQL through the connector (rule 9). Read back: one row per level, `jsonb_array_length(body -> 'questions')`
-     equals `count`, `rev` equals the registry's. `git status` must show no question file and no load SQL.
+  3. `python3 tools/mcq-skill/make_gated_sql.py --access login <files> --out <scratchpad>/load.sql --chunk 25`. It checks
+     the files against the registry, the master topics and the public files, and writes the SQL (with `--chunk` in
+     parts `load.01.sql` ...); it never touches the database. It also prints an expected fingerprint (one md5 per
+     level) and writes `load.check.sql`. Tags (`topicId`, `periodId`) must be there: run the tagging tool first
+     (rule 12), because the build gate cannot see these files.
+  4. Run the parts through the connector IN ORDER (rule 9). Read back with `load.check.sql`: one row per level, the
+     count equals `count`, `rev` equals the registry's, and **the md5 equals the one the tool printed** (it covers every
+     id, question, option, answer, reason and tag, so one changed letter shows). `git status` must show no question
+     file and no load SQL. If the owner's files carry another set number than the slot they name, rename only `setId`,
+     `setNumber` and the ids in the scratchpad copy (check that nothing else changed) and say so.
   5. `npx eleventy`, link check, browser test: a guest sees "Log in to take this test" and no question text; a
      logged-in student gets the test. Push the branch; `main` only when asked (rule 5).
   6. Tell the owner to keep their own copy of the files: the table is the live copy, but the scratchpad vanishes.
