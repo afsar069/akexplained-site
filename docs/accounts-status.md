@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live)._
+_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned on the branch)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -90,6 +90,17 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch
+- **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`, NOT on `main`; the owner sent a
+  screenshot of `/login/?path=1`). Causes found: `login-page.css` had `.pathscreen{padding:0}` while the card border stayed, so text
+  touched the border; the big heading above still said "Welcome back"; `site.css` `section{padding:40px 0}` added 40px above and below
+  every path group; "Coming soon" rows were taller and louder than the rows you can pick; and the Literature Journey sat at the very
+  bottom under fourteen rows. Now (`login/index.html`, `assets/login-page.css`, `assets/login.js`; CSS is all under `.login-page`):
+  heading says "Choose your path" (`openPath` sets it and adds `is-path`); no outer card; pickable rows first in each group, then
+  one small "Coming soon" label with quiet rows (the per-row tag stays for screen readers); a group with something pickable comes before
+  a group where everything is "Coming soon" (rule is in `render()`, follows the `exams` table, nothing typed per row); picked rows are
+  highlighted (`is-on`); Save / Skip stay at the bottom of the screen while the list scrolls. Behaviour is unchanged (same save, same
+  Notify, same redirect to `/dashboard/`). Tested in a browser with a mocked session and exams list (the real database is not reachable
+  from the session): selection, Main tag, Save payload, Notify, empty Save, logged-out visit. Not seen against the live `exams` table.
 - **MCQ page top strips fixed** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day). Owner's two asks on `/quizzes/mcq/`:
   1. **"Carry On Where You Left"** led nowhere: "Continue" opened the age hub and "N You Got Wrong" opened
      `/quizzes/mcq/build/?only=wrong`, which 404s. Now (`assets/mcq.js`, no HTML change): Continue opens the

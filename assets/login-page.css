@@ -29,7 +29,54 @@
 .login-page .orline{margin:0 0 12px}
 .login-page .login-free-note{margin:18px 0 0;color:#5c6970;font:italic .95rem/1.5 var(--serif)}
 .login-page .authnotice{margin:0 0 24px}
-.login-page .pathscreen{margin:0;padding:0}
+/* ---- Choose your path (after sign-up, or /login/?path=1) ----
+   Open layout like the forms next to it: no outer card. The big heading above already says
+   "Choose your path", so the screen's own h2 stays for screen readers only. */
+.login-page .pathscreen{background:none;border:0;border-radius:0;box-shadow:none;margin:0;padding:0}
+.login-page #pathScreen>h2{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.login-page .pathscreen>p{margin:0 0 24px;font-size:.98rem;line-height:1.6;color:#4a5a6a}
+.login-left.is-path h1{font-size:clamp(2.3rem,4.2vw,3.4rem)}
+.login-left.is-path .login-subtitle{margin-bottom:14px}
+
+.login-page .pathgroups{gap:30px}
+.login-page .pathgroup{padding:0}   /* site.css gives every <section> 40px top and bottom; that opened big gaps */
+.login-page .pathgroup h3{display:flex;align-items:center;gap:14px;margin:0 0 12px;font-size:.74rem;letter-spacing:.16em;color:#0f766e}
+.login-page .pathgroup h3::after{content:"";flex:1;height:1px;background:#e6dfcb}
+
+/* A row you can pick */
+.login-page .pathopt{display:flex;align-items:center;gap:14px;min-height:58px;margin:0 0 10px;padding:12px 16px;
+  background:#fff;border:1.5px solid #d9d2bd;border-radius:12px;
+  transition:border-color .15s,background .15s,box-shadow .15s}
+.login-page .pathopt:hover{border-color:#0f766e}
+.login-page .pathopt input{width:20px;height:20px;margin:0;flex:none}
+.login-page .pathopt .optname{flex:1 1 auto;min-width:0;font-size:1.02rem;font-weight:650;color:#16304a}
+.login-page .pathopt .primtag{flex:none;margin-left:auto}
+.login-page .pathopt.is-on{border-color:#0f766e;background:#eef7f5;box-shadow:0 0 0 3px rgba(15,118,110,.13)}
+.login-page .pathopt:focus-within{outline:3px solid #0f766e;outline-offset:2px}
+
+/* "Coming soon": small, quiet, under one label. The per-row tag stays for screen readers. */
+.login-page .pathsoon{margin:16px 0 0}
+.login-page .pathsoon-label{margin:0 0 8px;font-size:.74rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#a07a2c}
+.login-page .pathopt.is-soon{min-height:0;margin:0 0 7px;padding:9px 12px 9px 16px;background:#f8f4e8;border:1px solid #e6dfcb;cursor:default}
+.login-page .pathopt.is-soon:hover{border-color:#e6dfcb}
+.login-page .pathopt.is-soon .optname{font-size:.95rem;font-weight:600;color:#4a5a6a}
+.login-page .pathopt.is-soon .soontag{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.login-page .notifybtn{flex:none;width:auto;margin-left:auto;padding:6px 13px;font-size:.8rem;line-height:1.2;white-space:nowrap;
+  color:#0b5750;background:#fff;border:1px solid #cfc9bc;border-radius:999px}
+.login-page .notifybtn:hover:not(:disabled){border-color:#0f766e;box-shadow:none}
+.login-page .notifybtn:disabled{color:#0b5750;background:#e8f3f1;border-color:#cfe4df}
+
+/* Save / Skip stay in reach while the list scrolls */
+.login-page .pathactions{position:sticky;bottom:0;z-index:5;display:flex;flex-wrap:nowrap;align-items:center;gap:12px;margin:14px 0 0;padding:16px 0 12px;
+  background:linear-gradient(to top,#fdfbf5 78%,rgba(253,251,245,0))}
+.login-page .pathactions .btn{min-height:52px;margin:0;padding-left:20px;padding-right:20px;font-size:1.02rem;border-radius:10px;white-space:nowrap}
+.login-page #pathSave{flex:1 1 0}
+.login-page #pathSkip{flex:0 0 auto}
+@media(max-width:420px){
+  .login-page .pathopt{padding:11px 13px}
+  .login-page .pathopt.is-soon{padding:8px 10px 8px 13px}
+  .login-page .notifybtn{padding:6px 10px;font-size:.78rem}
+}
 .login-showcase{min-width:0}
 .login-study-space{display:block;width:100%;height:auto}
 .login-writers{border-top:1px solid #e6dfcb;background:#fffdf7}

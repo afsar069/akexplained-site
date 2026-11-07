@@ -371,6 +371,13 @@
         split.hidden = true;
         notice.hidden = true;
         pathScreen.hidden = false;
+        // The big heading above must say what is on screen (it used to say "Welcome back").
+        var left = document.querySelector('.login-left');
+        var introTitle = document.querySelector('.login-left h1');
+        var introSubtitle = document.querySelector('.login-subtitle');
+        if (left) left.classList.add('is-path');
+        if (introTitle) introTitle.textContent = 'Choose your path';
+        if (introSubtitle) introSubtitle.textContent = 'Pick what you are preparing for.';
         buildPath(client, session);
       }
     }
@@ -398,30 +405,54 @@
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
     }); }
 
+    function isActive(r) { return r.status === 'active'; }
+
+    // Inside a group: what you can pick today first, then the "Coming soon" ones, kept small and
+    // under their own label. Nothing here is typed by hand per row: it all follows the exams table.
+    function listHtml(rows) {
+      var on = rows.filter(isActive), soon = rows.filter(function (r) { return !isActive(r); });
+      return on.map(optHtml).join('') + soonHtml(soon.map(optHtml).join(''), soon.length);
+    }
+
+    function soonHtml(inner, count) {
+      return count ? '<div class="pathsoon"><p class="pathsoon-label">Coming soon</p>' + inner + '</div>' : '';
+    }
+
+    // Degrees are grouped by university; each university lists its BA and MA.
+    function instHtml(rows) {
+      var byInst = {}, order = [];
+      rows.forEach(function (r) {
+        var key = r.institution || r.name;
+        if (!byInst[key]) { byInst[key] = []; order.push(key); }
+        byInst[key].push(r);
+      });
+      return order.map(function (inst) {
+        return '<div class="pathinst"><h4>' + esc(inst) + '</h4>' + byInst[inst].map(optHtml).join('') + '</div>';
+      }).join('');
+    }
+
+    function degreeHtml(rows) {
+      var on = rows.filter(isActive), soon = rows.filter(function (r) { return !isActive(r); });
+      return instHtml(on) + soonHtml(instHtml(soon), soon.length);
+    }
+
     function render(rows) {
       var exams = rows.filter(function (r) { return r.kind === 'exam'; });
       var degrees = rows.filter(function (r) { return r.kind === 'degree'; });
       var journeys = rows.filter(function (r) { return r.kind === 'journey'; });
 
-      var html = '';
-      if (exams.length) html += groupHtml('Competitive exams', exams.map(optHtml).join(''));
+      var groups = [];
+      if (exams.length) groups.push({ title: 'Competitive exams', rows: exams, html: listHtml(exams) });
+      if (degrees.length) groups.push({ title: 'University degree', rows: degrees, html: degreeHtml(degrees) });
+      if (journeys.length) groups.push({ title: 'Literature journey', rows: journeys, html: listHtml(journeys) });
 
-      var byInst = {}, instOrder = [];
-      degrees.forEach(function (r) {
-        var key = r.institution || r.name;
-        if (!byInst[key]) { byInst[key] = []; instOrder.push(key); }
-        byInst[key].push(r);
-      });
-      var degHtml = '';
-      instOrder.forEach(function (inst) {
-        degHtml += '<div class="pathinst"><h4>' + esc(inst) + '</h4>' +
-                   byInst[inst].map(optHtml).join('') + '</div>';
-      });
-      if (degrees.length) html += groupHtml('University degree', degHtml);
+      // A group with something you can pick today comes before one where everything is "Coming soon"
+      // (otherwise the Literature journey sat at the very bottom, below fourteen rows you cannot pick).
+      // The order inside each class stays as the table gives it.
+      var ready = groups.filter(function (g) { return g.rows.some(isActive); });
+      var later = groups.filter(function (g) { return !g.rows.some(isActive); });
 
-      if (journeys.length) html += groupHtml('Literature journey', journeys.map(optHtml).join(''));
-
-      wrap.innerHTML = html;
+      wrap.innerHTML = ready.concat(later).map(function (g) { return groupHtml(g.title, g.html); }).join('');
       wrap.querySelectorAll('input[type=checkbox]').forEach(function (cb) { cb.addEventListener('change', onToggle); });
       wrap.querySelectorAll('.notifybtn').forEach(function (b) { b.addEventListener('click', onNotify); });
     }
@@ -454,6 +485,8 @@
       var id = e.target.value;
       if (e.target.checked) { if (selection.indexOf(id) < 0) selection.push(id); }
       else { var i = selection.indexOf(id); if (i > -1) selection.splice(i, 1); }
+      var row = e.target.closest('.pathopt');
+      if (row) row.classList.toggle('is-on', e.target.checked);   // picked rows stand out
       paintPrimary();
     }
 
