@@ -21,6 +21,7 @@ breaking it breaks a promise already made.
 - `index.html` — landing page (plain HTML + `assets/home.css` + `assets/home.js`)
 - `_includes/base.njk` — layout for markdown article pages (Pages CMS publishes these)
 - Other `*/index.html` — hub and utility pages, standalone HTML
+- `exams/net/` — preparation hub and related pages use Nunjucks (`index.njk`, `about/`, `syllabus/`, and `coming-soon.njk`), with `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, and `_data/netResources.json`. The two information pages are available; the other NET hub resources are coming soon. Do not create `exams/net/index.html` alongside its template.
 - `quizzes/mcq/<age>/…` (hub, `build/`, `custom/`, `set-<n>/`) is **generated**, not hand-written:
   templates in `quizzes/mcq/_templates/` and `_includes/mcq-page.njk`, data in `_data/mcqSpec.json`
   (see rule 7). Change the template or the registry, never a generated page.

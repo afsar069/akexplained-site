@@ -6,6 +6,15 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-07 (Old English Set 5 loaded as a login set and on the branch, not on main; login layer and Set 4 live on main; lock on login sets and login-and-come-back on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
+## NET preparation hub — publication approved (2026-11-07)
+
+- Release: PR #9 (`feat/net-preparation-hub`). The owner selected the visual in `docs/net-hub/reference.png` and asked for a faithful build on `/exams/net/`, with About UGC-NET and View NET Syllabus available and all other NET hub resources coming soon. The owner explicitly approved publication with “live kar do” on 2026-11-07. Cloudflare Pages automatically builds and deploys `main` after the merge.
+- Hub: four resource links, separate Paper 2 and Paper 1 practice sections, a mock-test band, and a full-width, text-only examination overview. The existing supplied banner and shared navigation/footer remain. Icons are licensed Feather plus Tabler's target-arrow; Literata and Source Sans 3 are self-hosted under `assets/fonts/net/` with OFL licenses.
+- Available pages: `/exams/net/about/` and `/exams/net/syllabus/`. The latter has ten expandable English units, a Paper 1 outline, and jump links. Exam facts were checked against the official NTA December 2026 bulletin; syllabus unit summaries reuse the previous NET page, with the official UGC syllabus index linked as the source. The signed syllabus PDF links could not be fetched by the research tool; Paper 1 headings were cross-checked with Payyanur College's published UGC syllabus.
+- Eight resource-specific coming-soon pages are generated from `_data/netResources.json` through `exams/net/coming-soon.njk`; they are `noindex,follow` and omitted from the sitemap. The existing global quiz pages are unchanged. Do not mark any NET hub resource available until its content exists.
+- Implementation: `exams/net/index.njk`, `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, `_data/netResources.json`, `_data/netComingSoon.js`. Do not recreate `exams/net/index.html`: it would collide with the template's output.
+- Verification: build passed; all ten action-to-page-to-hub journeys passed; 36 local links resolved; widths 320–2560 px had no overflow; menu, keyboard unit expansion, paper jump links, print, fonts and images passed with no browser errors. Final screenshots and comparison are in `docs/net-hub/`; `design-qa.md` records the visual QA.
+
 ## Old English Set 5 — login set, medium only (2026-11-07, branch `claude/confident-sagan-52en96`; NOT on `main` yet)
 
 - **What.** `old-english-set-5`: 50 questions, one level (medium), `access = login`, rev 1. The owner said "login ke andar", so

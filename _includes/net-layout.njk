@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} | AK Explained</title>
+<meta name="description" content="{{ description }}">
+{% if coming_soon %}<meta name="robots" content="noindex,follow">{% endif %}
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/net.css">
+</head>
+<body class="net-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"></header>
+<div class="wrap net-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if net_hub %}UGC-NET{% else %}<a href="/exams/net/">UGC-NET</a><span>/</span>{{ crumb_label or title }}{% endif %}</p></div>
+<main id="main"{% if not net_hub %} class="net-detail"{% endif %}>
+{% if not net_hub %}
+  <header class="net-detail-head">
+    <a class="net-back" href="/exams/net/"><img src="/assets/icons/feather/arrow-left.svg" alt="" width="18" height="18">Back to NET preparation</a>
+    <p class="eyebrow">{{ eyebrow or 'UGC-NET / JRF · English Literature' }}</p>
+    <h1>{{ title }}</h1>
+    <p class="net-detail-lede">{{ description }}</p>
+  </header>
+{% endif %}
+{{ content | safe }}
+</main>
+<footer class="site-footer"></footer>
+</body>
+</html>

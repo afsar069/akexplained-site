@@ -1,0 +1,10 @@
+{% macro action(item, extraClass = "") %}
+<a class="net-action {{ extraClass }}" href="/exams/net/{{ item.slug }}/">
+  <span class="net-action-icon"><img src="/assets/icons/feather/{{ item.icon }}.svg" alt="" width="44" height="44"></span>
+  <span class="net-action-copy">
+    <span class="net-action-title">{{ item.title }}</span>
+    {% if item.available %}<span class="net-action-description">{{ item.description }}</span>{% else %}<span class="net-action-description net-status">Coming soon</span>{% endif %}
+  </span>
+  <img class="net-action-arrow" src="/assets/icons/feather/{% if item.slug == 'books' or item.slug == 'syllabus-download' %}download{% else %}arrow-right{% endif %}.svg" alt="" width="24" height="24">
+</a>
+{% endmacro %}
