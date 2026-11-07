@@ -1,0 +1,41 @@
+---
+layout: pgt-layout.njk
+title: PGT English Literature
+description: Choose your PGT exam and find your preparation resources in one place.
+pgt_hub: true
+---
+<section class="pgt-hero" aria-labelledby="pgt-heading">
+  <picture class="pgt-hero-art" aria-hidden="true">
+    <source type="image/webp" srcset="/assets/exams/pgt-hero-1200.webp 1200w, /assets/exams/pgt-hero-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
+    <img src="/assets/exams/pgt-hero-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="wrap pgt-hero-inner">
+    <div class="pgt-hero-copy">
+      <p class="eyebrow">Teaching Exams · Senior Secondary</p>
+      <h1 id="pgt-heading">PGT English Literature</h1>
+      <p class="pgt-hero-description">{{ description }}</p>
+    </div>
+  </div>
+</section>
+
+<div class="wrap pgt-hub">
+  <a class="pgt-featured" href="/exams/pgt/up-pgt/">
+    <span class="pgt-featured-icon" aria-hidden="true"><img src="/assets/icons/tabler/building-bank.svg" alt="" width="58" height="58"></span>
+    <span class="pgt-featured-copy"><span class="pgt-featured-title">UP PGT</span><span class="pgt-featured-state">Uttar Pradesh · UPESSC</span></span>
+    <span class="pgt-featured-go">Open UP PGT<img src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26"></span>
+  </a>
+
+  <section class="pgt-exam-section" aria-labelledby="pgt-state-heading">
+    <h2 id="pgt-state-heading">State-Level PGT Exams</h2>
+    <ul class="pgt-exam-grid">
+      {% for exam in pgtExams.state %}{% include "pgt-exam-card.njk" %}{% endfor %}
+    </ul>
+  </section>
+
+  <section class="pgt-exam-section" aria-labelledby="pgt-central-heading">
+    <h2 id="pgt-central-heading">Central PGT Exams</h2>
+    <ul class="pgt-exam-grid pgt-central-grid">
+      {% for exam in pgtExams.central %}{% include "pgt-exam-card.njk" %}{% endfor %}
+    </ul>
+  </section>
+</div>

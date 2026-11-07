@@ -1,0 +1,19 @@
+{
+  "state": [
+    { "name": "BPSC TRE", "state": "Bihar", "icon": "tabler/school" },
+    { "name": "DSSSB PGT", "state": "Delhi", "icon": "feather/book-open" },
+    { "name": "RPSC School Lecturer", "qualifier": "(Grade 1)", "state": "Rajasthan", "icon": "feather/layers" },
+    { "name": "HTET PGT", "state": "Haryana", "icon": "tabler/school" },
+    { "name": "MP High School Teacher Selection Test", "state": "Madhya Pradesh", "icon": "feather/book-open" },
+    { "name": "JSSC PGT", "state": "Jharkhand", "icon": "feather/layers" },
+    { "name": "CG Vyapam Lecturer Exam", "state": "Chhattisgarh", "icon": "tabler/school" },
+    { "name": "UKPSC Lecturer Exam", "state": "Uttarakhand", "icon": "feather/book-open" },
+    { "name": "HPPSC School Lecturer Exam", "state": "Himachal Pradesh", "icon": "feather/layers" },
+    { "name": "OAVS & SSB Odisha PGT", "state": "Odisha", "icon": "tabler/school" }
+  ],
+  "central": [
+    { "name": "KVS PGT", "icon": "tabler/school" },
+    { "name": "NVS PGT", "icon": "feather/book-open" },
+    { "name": "EMRS PGT", "icon": "feather/layers" }
+  ]
+}

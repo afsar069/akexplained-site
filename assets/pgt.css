@@ -1,0 +1,102 @@
+/* Reuse the site's self-hosted, OFL-licensed Literata and Source Sans 3 fonts. */
+@font-face{font-family:"PGT Literata";font-style:normal;font-weight:200 900;font-display:swap;src:url("/assets/fonts/net/literata-latin-normal.woff2") format("woff2")}
+@font-face{font-family:"PGT Source Sans 3";font-style:normal;font-weight:200 900;font-display:swap;src:url("/assets/fonts/net/source-sans-3-latin-normal.woff2") format("woff2")}
+.pgt-page{--serif:"PGT Literata",Georgia,serif;--sans:"PGT Source Sans 3",Arial,sans-serif}
+.pgt-breadcrumb .crumb{padding:12px 0 16px;margin:0}
+
+/* Live HTML text over a separate illustration keeps the header readable. */
+.pgt-hero{position:relative;isolation:isolate;padding:0;background:var(--cream);border-bottom:1px solid #CEB47D}
+.pgt-hero-art{position:absolute;inset:0;z-index:-1;pointer-events:none}
+.pgt-hero-art img{width:100%;height:100%;object-fit:cover;object-position:right center}
+.pgt-hero-inner{min-height:clamp(300px,29vw,420px);display:flex;align-items:center}
+.pgt-hero-copy{width:60%;padding:36px 0}
+.pgt-hero .eyebrow{letter-spacing:.1em;margin:0 0 14px}
+.pgt-hero h1,.pgt-detail h1{font-family:var(--serif);font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.2;font-weight:600;letter-spacing:normal;color:var(--ink);margin:0 0 16px}
+.pgt-hero-description{max-width:47ch;font-size:1.06rem;line-height:1.65;color:var(--ink);margin:0}
+.pgt-hub{padding-top:30px;padding-bottom:54px;container-type:inline-size}
+.pgt-featured{display:flex;align-items:center;gap:26px;width:100%;padding:24px 30px;min-height:122px;margin:0 0 40px;background:var(--teal);color:#fff;border-bottom:5px solid #DDAA38;border-radius:10px;text-decoration:none;transition:background-color .18s}
+.pgt-featured:hover{background:var(--teal-dark);color:#fff}
+.pgt-featured:focus-visible{outline:3px solid var(--teal-dark);outline-offset:5px}
+.pgt-featured-icon{flex:none;padding-right:26px;border-right:2px solid #DDAA38}
+.pgt-featured-icon img{filter:brightness(0) invert(1);opacity:.9}
+.pgt-featured-copy{display:flex;flex-direction:column;flex:1;min-width:0}
+.pgt-featured-title{font-family:var(--serif);font-weight:600;font-size:2rem;line-height:1.25}
+.pgt-featured-state{font-size:1.06rem;margin-top:3px;line-height:1.4}
+.pgt-featured-go{display:flex;align-items:center;gap:14px;font-weight:600;font-size:1.06rem;line-height:1.4}
+.pgt-featured-go img{filter:brightness(0) invert(1);transition:transform .18s}
+.pgt-featured:hover .pgt-featured-go img{transform:translateX(3px)}
+.pgt-exam-section{padding:0}
+.pgt-exam-section + .pgt-exam-section{margin-top:40px}
+.pgt-exam-section h2{margin:0 0 22px;font-size:clamp(1.3rem,2.5vw,1.72rem);line-height:1.3}
+.pgt-exam-section h2::after{content:"";display:block;width:90px;height:2px;background:var(--gold);margin-top:14px}
+.pgt-exam-grid{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:none;margin:0;padding:0}
+.pgt-exam-card{display:flex;align-items:center;gap:20px;min-width:0;min-height:114px;margin:0;padding:18px 22px;border:1px solid #DCC298;border-radius:8px;background:var(--paper)}
+.pgt-card-icon{flex:0 0 58px;display:flex;align-items:center;align-self:stretch;border-right:1px solid #DCC298}
+.pgt-card-icon img{width:34px;height:34px}
+.pgt-card-copy{min-width:0}
+.pgt-card-copy h3{max-width:32ch;font-size:1.06rem;line-height:1.35;font-weight:600;letter-spacing:normal;overflow-wrap:break-word;margin:0 0 3px}
+.pgt-exam-qualifier{white-space:nowrap}
+.pgt-card-state{font-size:.92rem;line-height:1.4;margin:0}
+.pgt-card-status{font-size:.92rem;line-height:1.4;font-weight:600;color:#8C5B14;margin:4px 0 0}
+.pgt-central-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.pgt-footer{display:flex;justify-content:space-between;gap:12px;padding-top:16px;padding-bottom:18px;border-top:1px solid #DCC298;font-size:.76rem}
+.pgt-footer p{margin:0}
+
+/* The UP guide retains the existing English study material at the site scale. */
+.pgt-detail{padding-bottom:48px}
+.pgt-detail-head{padding:24px 0 30px;border-bottom:1px solid var(--border)}
+.pgt-back{display:inline-flex;align-items:center;gap:9px;min-height:44px;margin-bottom:24px;font-weight:600}
+.pgt-detail-head > p:last-child{max-width:72ch;margin:0}
+.pgt-reading{padding:30px 0}
+.pgt-reading + .pgt-reading{border-top:1px solid var(--border)}
+.pgt-reading p,.pgt-reading ul,.pgt-reading ol{max-width:78ch}
+.pgt-reading h3{margin-top:24px}
+.pgt-reading a{text-decoration:underline;text-underline-offset:3px}
+.pgt-reading .tablewrap{overflow:auto;margin:20px 0}
+.pgt-reading table{width:100%;min-width:480px;border-collapse:collapse;font-size:.96rem}
+.pgt-reading th,.pgt-reading td{text-align:left;vertical-align:top;border:1px solid var(--border);padding:12px 16px}
+.pgt-reading th{background:var(--teal-soft);color:var(--ink)}
+.pgt-reading ul,.pgt-reading ol{padding-left:24px}
+
+@container (max-width:760px){
+  .pgt-central-grid{grid-template-columns:1fr}
+  .pgt-exam-card{padding:18px;gap:16px}
+  .pgt-card-icon{flex-basis:48px}
+  .pgt-featured{padding:22px;gap:20px}
+  .pgt-featured-icon{padding-right:20px}
+}
+@container (max-width:560px){
+  .pgt-exam-grid{grid-template-columns:1fr;gap:12px}
+  .pgt-featured{flex-wrap:wrap;gap:16px;min-height:0}
+  .pgt-featured-icon{padding-right:16px}
+  .pgt-featured-icon img{width:42px;height:42px}
+  .pgt-featured-title{font-size:1.6rem}
+  .pgt-featured-state{font-size:.98rem}
+  .pgt-featured-go{flex-basis:100%;justify-content:space-between;padding-top:14px;border-top:1px solid #6BA79E;font-size:.98rem}
+  .pgt-exam-card{min-height:104px}
+}
+@media (min-width:761px) and (max-width:1200px){
+  .pgt-hero-copy{width:50%}
+  .pgt-hero-description{max-width:32ch}
+}
+@media (max-width:760px){
+  /* Keep the phone heading on the illustration's blank left side too. */
+  .pgt-hero-inner{min-height:0;aspect-ratio:2.8 / 1;display:flex;align-items:center;padding:0 14px}
+  .pgt-hero-copy{width:55%;padding:12px 0}
+  .pgt-hero .eyebrow{font-size:clamp(6.5px,1.75vw,11px);line-height:1.3;letter-spacing:.07em;margin-bottom:clamp(4px,.8vw,8px)}
+  .pgt-hero h1{font-size:clamp(13px,3.9vw,26px);line-height:1.25;margin-bottom:clamp(5px,1.2vw,10px)}
+  .pgt-hero-description{font-size:clamp(9px,2.55vw,17px);line-height:1.5;max-width:32ch}
+  .pgt-hub{padding-top:24px;padding-bottom:36px}
+  .pgt-featured{margin-bottom:32px}
+  .pgt-exam-section + .pgt-exam-section{margin-top:32px}
+  .pgt-footer{flex-wrap:wrap}
+}
+@media (prefers-reduced-motion:reduce){.pgt-featured,.pgt-featured-go img{transition:none}}
+@media print{
+  .pgt-hero-art,.pgt-breadcrumb,.pgt-footer,.pgt-back{display:none}
+  .pgt-hero-inner{min-height:0}
+  .pgt-hero-copy{width:100%;padding:12px 0}
+  .pgt-featured{background:#fff;color:var(--ink);border:1px solid var(--border)}
+  .pgt-featured-icon img,.pgt-featured-go img{filter:none}
+  .pgt-exam-card{break-inside:avoid}
+}
