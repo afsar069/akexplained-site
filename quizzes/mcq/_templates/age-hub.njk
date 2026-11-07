@@ -112,12 +112,13 @@ eleventyExcludeFromCollections: true
         <div class="agehub-set" data-set="{{ st.id }}"{% if st.rev %} data-rev="{{ st.rev }}"{% endif %} data-count="{{ st.count }}" data-topic="{{ st.topicAttr }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}>
           <span class="agehub-badge" aria-hidden="true">{{ st.n }}</span>
           <div class="agehub-setbody">
-            <span class="agehub-settitle">{% if st.access == 'login' %}<a class="agehub-lock" data-guest-only href="/login/?next={{ ('/quizzes/mcq/' + age.slug + '/set-' + st.n + '/') | urlencode }}" aria-label="This set needs a login. Log in to open it." title="This set needs a login. Log in to open it."><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>{% endif %}Set {{ st.n }} &middot; {{ st.title }}</span>
+            <span class="agehub-settitle">Set {{ st.n }} &middot; {{ st.title }}</span>
             <span class="agehub-setmeta">{{ st.meta | safe }}</span>
             <div class="agehub-tags">{% for t in st.tags %}<span class="agehub-tag">{{ t }}</span>{% endfor %}</div>
             <span class="mcq-bar" hidden><i></i></span>
           </div>
           <span class="agehub-soon">Coming soon</span>
+          {% if st.access == 'login' %}<a class="agehub-go agehub-go-lock" data-guest-only href="/login/?next={{ ('/quizzes/mcq/' + age.slug + '/set-' + st.n + '/') | urlencode }}" aria-label="This set needs a login. Log in to open it." title="This set needs a login. Log in to open it."><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>{% endif %}
         </div>
         {% endfor %}
 

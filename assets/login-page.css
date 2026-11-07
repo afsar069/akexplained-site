@@ -105,3 +105,6 @@
   .login-footer span{grid-column:1/-1}
 }
 @media print{.login-showcase,.login-writers{display:none}}
+/* One line shown when a lock or a login-only page sent the student here (?next=). */
+.login-page .login-nextnote{margin:10px 0 0;font-size:.95rem;font-weight:600;color:var(--teal-dark)}
+.login-page .login-nextnote[hidden]{display:none}
