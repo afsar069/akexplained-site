@@ -1,0 +1,182 @@
+[
+  {
+    "width": 320,
+    "hero": {
+      "x": 0,
+      "y": 204,
+      "width": 320,
+      "height": 115,
+      "bottom": 319
+    },
+    "course": {
+      "x": 22,
+      "y": 343,
+      "width": 276,
+      "height": 273,
+      "bottom": 616
+    },
+    "grid": {
+      "x": 22,
+      "y": 634,
+      "width": 276,
+      "height": 636,
+      "bottom": 1270
+    },
+    "cards": 5,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "hero": {
+      "x": 0,
+      "y": 180,
+      "width": 390,
+      "height": 140,
+      "bottom": 320
+    },
+    "course": {
+      "x": 22,
+      "y": 344,
+      "width": 346,
+      "height": 215,
+      "bottom": 559
+    },
+    "grid": {
+      "x": 22,
+      "y": 577,
+      "width": 346,
+      "height": 545,
+      "bottom": 1122
+    },
+    "cards": 5,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "route": "/exams/pgt/up-pgt/complete-course/",
+    "noindex": "noindex,follow",
+    "coming": true,
+    "footer": 1
+  },
+  {
+    "route": "/exams/pgt/up-pgt/syllabus-download/",
+    "noindex": "noindex,follow",
+    "coming": true,
+    "footer": 1
+  },
+  {
+    "route": "/exams/pgt/up-pgt/mcqs/",
+    "noindex": "noindex,follow",
+    "coming": true,
+    "footer": 1
+  },
+  {
+    "route": "/exams/pgt/up-pgt/mock-tests/",
+    "noindex": "noindex,follow",
+    "coming": true,
+    "footer": 1
+  },
+  {
+    "route": "/exams/pgt/up-pgt/pyqs/",
+    "noindex": "noindex,follow",
+    "coming": true,
+    "footer": 1
+  },
+  {
+    "guideRoute": "/exams/pgt/up-pgt/study-guide/",
+    "guideSections": 4,
+    "footer": 1
+  },
+  {
+    "width": 768,
+    "hero": {
+      "x": 0,
+      "y": 180,
+      "width": 768,
+      "height": 231,
+      "bottom": 411
+    },
+    "course": {
+      "x": 22,
+      "y": 441,
+      "width": 724,
+      "height": 125,
+      "bottom": 566
+    },
+    "grid": {
+      "x": 22,
+      "y": 584,
+      "width": 724,
+      "height": 308,
+      "bottom": 892
+    },
+    "cards": 5,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "hero": {
+      "x": 272,
+      "y": 114,
+      "width": 752,
+      "height": 231,
+      "bottom": 345
+    },
+    "course": {
+      "x": 294,
+      "y": 375,
+      "width": 708,
+      "height": 125,
+      "bottom": 500
+    },
+    "grid": {
+      "x": 294,
+      "y": 518,
+      "width": 708,
+      "height": 330,
+      "bottom": 848
+    },
+    "cards": 5,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "hero": {
+      "x": 272,
+      "y": 114,
+      "width": 1168,
+      "height": 301,
+      "bottom": 415
+    },
+    "course": {
+      "x": 294,
+      "y": 445,
+      "width": 1124,
+      "height": 125,
+      "bottom": 570
+    },
+    "grid": {
+      "x": 294,
+      "y": 588,
+      "width": 1124,
+      "height": 251,
+      "bottom": 839
+    },
+    "cards": 5,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  }
+]

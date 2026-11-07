@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (The owner approved publication of the UP PGT detail header. Anglo-Norman Set 2 remains live behind login; Set 1 remains free and live.)_
+_Last updated: 2026-11-07 (The UP PGT resource cards are prepared for review. The detail header and Anglo-Norman Set 2 remain live.)_
+
+## UP PGT resource cards — awaiting publication (2026-11-07)
+
+- The owner selected an image proposal for five UP PGT resources: Complete course in 60 days, Download Syllabus, MCQs, Mock Tests and PYQs. `/exams/pgt/up-pgt/` now uses that composition: one featured course card and a two-column resource grid, with the existing faded header and shared footer. On phones the four resources stack in one column.
+- No course, official syllabus file or question banks were supplied for these resources. Each card opens a clearly marked Coming soon route that is excluded from search indexing. The existing English study guidance moved intact to `/exams/pgt/up-pgt/study-guide/` and stays linked from the card page and placeholder pages. The study guide remains explicitly general, not an official UP PGT syllabus.
+- The feature branch is `feat/up-pgt-resource-cards` and is not merged into `main`. Screenshots, responsive measurements and design comparison are in `docs/up-pgt-cards/`.
 
 ## UP PGT detail header — publication approved (2026-11-07)
 

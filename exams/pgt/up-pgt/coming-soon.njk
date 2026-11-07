@@ -1,0 +1,23 @@
+---
+layout: pgt-layout.njk
+pagination:
+  data: pgtResources
+  size: 1
+  alias: resource
+permalink: "/exams/pgt/up-pgt/{{ resource.slug }}/index.html"
+eleventyComputed:
+  title: "{{ resource.title }} — UP PGT English"
+  description: "{{ resource.title }} for UP PGT English is coming soon."
+  crumb_label: "{{ resource.title }}"
+coming_soon: true
+---
+<section class="pgt-resource-coming" aria-labelledby="pgt-coming-title">
+  <img src="/assets/icons/tabler/{{ resource.icon }}.svg" alt="" width="56" height="56">
+  <p class="eyebrow">Coming soon</p>
+  <h2 id="pgt-coming-title">{{ resource.title }}</h2>
+  <p>This resource is being prepared.</p>
+  <div class="pgt-resource-coming-links">
+    <a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide</a>
+    <a href="/exams/pgt/up-pgt/">Back to UP PGT resources</a>
+  </div>
+</section>
