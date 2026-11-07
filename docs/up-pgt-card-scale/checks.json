@@ -1,0 +1,282 @@
+[
+  {
+    "width": 320,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "13px",
+        "x": 14,
+        "width": 161,
+        "height": 16
+      },
+      ".pgt-course-copy strong": {
+        "font": "25.6px",
+        "x": 42,
+        "width": 236,
+        "height": 64
+      },
+      ".pgt-course-copy span": {
+        "font": "15.68px",
+        "x": 42,
+        "width": 236,
+        "height": 45
+      },
+      ".pgt-resource-copy strong": {
+        "font": "16.96px",
+        "x": 105,
+        "width": 132,
+        "height": 46
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "14.72px",
+        "x": 105,
+        "width": 132,
+        "height": 41
+      },
+      ".pgt-resource-status": {
+        "font": "14.72px",
+        "x": 105,
+        "width": 132,
+        "height": 21
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "x": 41,
+        "width": 34,
+        "height": 34
+      },
+      ".pgt-resource-card": {
+        "font": "16.5px",
+        "x": 22,
+        "width": 276,
+        "height": 152
+      }
+    },
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "15.21px",
+        "x": 14,
+        "width": 199,
+        "height": 19
+      },
+      ".pgt-course-copy strong": {
+        "font": "25.6px",
+        "x": 118,
+        "width": 230,
+        "height": 64
+      },
+      ".pgt-course-copy span": {
+        "font": "15.68px",
+        "x": 118,
+        "width": 230,
+        "height": 45
+      },
+      ".pgt-resource-copy strong": {
+        "font": "16.96px",
+        "x": 105,
+        "width": 202,
+        "height": 23
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "14.72px",
+        "x": 105,
+        "width": 202,
+        "height": 41
+      },
+      ".pgt-resource-status": {
+        "font": "14.72px",
+        "x": 105,
+        "width": 202,
+        "height": 21
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "x": 41,
+        "width": 34,
+        "height": 34
+      },
+      ".pgt-resource-card": {
+        "font": "16.5px",
+        "x": 22,
+        "width": 346,
+        "height": 129
+      }
+    },
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "26.112px",
+        "x": 22,
+        "width": 362,
+        "height": 31
+      },
+      ".pgt-course-copy strong": {
+        "font": "32px",
+        "x": 164,
+        "width": 360,
+        "height": 80
+      },
+      ".pgt-course-copy span": {
+        "font": "16.96px",
+        "x": 164,
+        "width": 360,
+        "height": 25
+      },
+      ".pgt-resource-copy strong": {
+        "font": "16.96px",
+        "x": 123,
+        "width": 184,
+        "height": 23
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "14.72px",
+        "x": 123,
+        "width": 184,
+        "height": 41
+      },
+      ".pgt-resource-status": {
+        "font": "14.72px",
+        "x": 123,
+        "width": 184,
+        "height": 21
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "x": 45,
+        "width": 34,
+        "height": 34
+      },
+      ".pgt-resource-card": {
+        "font": "16.5px",
+        "x": 22,
+        "width": 354,
+        "height": 129
+      }
+    },
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "34.816px",
+        "x": 294,
+        "width": 354,
+        "height": 42
+      },
+      ".pgt-course-copy strong": {
+        "font": "32px",
+        "x": 436,
+        "width": 344,
+        "height": 80
+      },
+      ".pgt-course-copy span": {
+        "font": "16.96px",
+        "x": 436,
+        "width": 344,
+        "height": 25
+      },
+      ".pgt-resource-copy strong": {
+        "font": "16.96px",
+        "x": 395,
+        "width": 176,
+        "height": 23
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "14.72px",
+        "x": 395,
+        "width": 176,
+        "height": 41
+      },
+      ".pgt-resource-status": {
+        "font": "14.72px",
+        "x": 395,
+        "width": 176,
+        "height": 21
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "x": 317,
+        "width": 34,
+        "height": 34
+      },
+      ".pgt-resource-card": {
+        "font": "16.5px",
+        "x": 294,
+        "width": 346,
+        "height": 129
+      }
+    },
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "36.8px",
+        "x": 294,
+        "width": 674,
+        "height": 44
+      },
+      ".pgt-course-copy strong": {
+        "font": "32px",
+        "x": 436,
+        "width": 760,
+        "height": 40
+      },
+      ".pgt-course-copy span": {
+        "font": "16.96px",
+        "x": 436,
+        "width": 760,
+        "height": 25
+      },
+      ".pgt-resource-copy strong": {
+        "font": "16.96px",
+        "x": 395,
+        "width": 384,
+        "height": 23
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "14.72px",
+        "x": 395,
+        "width": 384,
+        "height": 21
+      },
+      ".pgt-resource-status": {
+        "font": "14.72px",
+        "x": 395,
+        "width": 384,
+        "height": 21
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "x": 317,
+        "width": 34,
+        "height": 34
+      },
+      ".pgt-resource-card": {
+        "font": "16.5px",
+        "x": 294,
+        "width": 554,
+        "height": 114
+      }
+    },
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  }
+]
