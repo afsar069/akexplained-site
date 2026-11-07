@@ -4,12 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (UP PGT card text and spacing were matched to the PGT and NET hubs on a review branch. The resource cards and detail header remain live.)_
+_Last updated: 2026-11-07 (The owner approved publication of the UP PGT card scale correction. The resource cards and detail header remain live.)_
 
-## UP PGT card scale — awaiting publication (2026-11-07)
+## UP PGT card scale — publication approved (2026-11-07)
 
 - The owner asked whether the new UP PGT page matches other pages and requested a fix if it does not. Current-run browser measurements found that the hero heading and 22px content insets already match, while the four resource titles (24.8px desktop, 20px phone), helper text and icons were larger than the PGT/NET card scale.
-- Branch `feat/up-pgt-card-scale` sets resource titles to 16.96px, helper/status text to 14.72px and icons to 34px; it also aligns card padding, gap, border and featured phone title with the PGT hub. Visual captures and measured before/after values are in `docs/up-pgt-card-scale/`. No publication instruction has been given for this correction.
+- The owner explicitly said “live kr do” for PR #23 (`feat/up-pgt-card-scale`). Merging it into `main` triggers Cloudflare Pages publication. The correction sets resource titles to 16.96px, helper/status text to 14.72px and icons to 34px; it also aligns card padding, gap, border and featured phone title with the PGT hub. Visual captures and measured before/after values are in `docs/up-pgt-card-scale/`.
 
 ## UP PGT resource cards — publication approved (2026-11-07)
 
