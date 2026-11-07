@@ -198,6 +198,6 @@ At a 1920 px viewport, the content container is 1180 px wide and starts at x=506
 
 ## Follow-up polish and limitations
 
-None required. This follow-up is on its feature branch and has not been published; production browsing remains constrained by the environment network policy.
+None required. The owner approved publishing PR #10 on 7 November 2026. Production browsing remains constrained by the environment network policy; deployment can be checked through the Cloudflare check on the merge commit.
 
 final result: passed

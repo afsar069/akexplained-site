@@ -6,9 +6,9 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-07 (Old English Set 5 loaded as a login set and on the branch, not on main; login layer and Set 4 live on main; lock on login sets and login-and-come-back on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
-## NET compact layout — ready on a feature branch (2026-11-07)
+## NET compact layout — publication approved (2026-11-07)
 
-- Branch: `feat/net-compact-layout`; not published yet. The owner asked for a thinner hero matching the newly attached wide crop and for NET text, buttons and side margins to match the other site pages.
+- Release: PR #10 (`feat/net-compact-layout`). The owner asked for a thinner hero matching the newly attached wide crop and for NET text, buttons and side margins to match the other site pages, then explicitly approved publication with “live kar do” on 2026-11-07. Cloudflare Pages automatically builds and deploys `main` after the merge.
 - The existing banner is displayed in a 14:5 frame with `object-fit: cover` and a 33% vertical focal position. At a 1440 px viewport it is approximately 1168 × 417 px, down from 1168 × 501 px. The original image files are unchanged; title, subtitle, statistics and lower text stay visible.
 - `assets/net.css` now follows the shared typography and `.wrap` width: 22 px side padding, 1180 px maximum container, 36.8 px introductory heading, 27.52 px desktop section headings, 16.96 px action titles, 14.72 px helper text and 15.2 px mock-test button text. Paper/resource gaps, row padding, icon sizes and button corners are reduced to the site's normal scale. The related NET pages use the same container and heading scale.
 - Verified against Quizzes at 1440 and 1920 px: computed heading/action/helper sizes and content edges match exactly. Viewports 320–2560 px, related pages, crop aspect ratio, image loading and mobile menu pass without overflow or browser errors. Evidence: `docs/net-compact/`; latest report: `design-qa.md`.
