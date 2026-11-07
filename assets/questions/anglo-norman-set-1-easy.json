@@ -1,0 +1,884 @@
+{
+  "setId": "anglo-norman-set-1",
+  "rev": 1,
+  "age": "anglo-norman",
+  "ageName": "Anglo-Norman Period",
+  "setNumber": 1,
+  "setName": "Across the whole age: the Conquest, the three languages, the chroniclers, the poems, the prose and the first plays",
+  "notes": "/notes/middle-english/",
+  "notesTitle": "Middle English — the full notes",
+  "topics": {
+    "conquest": "The Conquest",
+    "languages": "The three languages",
+    "chroniclers": "The chroniclers",
+    "poems": "The poems",
+    "prose": "The prose",
+    "plays": "The first plays"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Core historical landmarks, trilingual vocabulary, major chroniclers, foundational poems, devotional prose, and the earliest liturgical and vernacular plays of the Anglo-Norman age (1066–1340).",
+  "passages": [
+    {
+      "id": "p1",
+      "title": "From the Preface to the Ormulum",
+      "attribution": "Orm, Ormulum, Preface, lines 1–2, in Bodleian Library MS Junius 1",
+      "text": "Þiss boc iss nemmnedd Orrmulum\nforrþi þatt Orrm itt wrohhte.",
+      "src": "https://en.wikipedia.org/wiki/Ormulum"
+    }
+  ],
+  "questions": [
+    {
+      "id": "anglo-norman-set-1-e-01",
+      "question": "On what exact date was the Battle of Hastings fought between Duke William of Normandy and King Harold II?",
+      "options": [
+        "14 October 1066",
+        "25 September 1066",
+        "28 September 1066",
+        "25 December 1066"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Battle of Hastings was fought on Saturday, 14 October 1066, following the Battle of Stamford Bridge on 25 September 1066 and William's landing at Pevensey on 28 September 1066, before his coronation on 25 December 1066.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Battle_of_Hastings"
+    },
+    {
+      "id": "anglo-norman-set-1-e-02",
+      "question": "Which last crowned Anglo-Saxon king of England was defeated and killed by Duke William's forces at the Battle of Hastings?",
+      "options": [
+        "Edward the Confessor",
+        "Harold Godwinson",
+        "Harald Hardrada",
+        "Edgar the Ætheling"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Harold Godwinson (King Harold II), Earl of Wessex, succeeded Edward the Confessor in January 1066 and was slain at the Battle of Hastings on 14 October 1066.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/middle-english/"
+    },
+    {
+      "id": "anglo-norman-set-1-e-03",
+      "question": "Which bishop and maternal half-brother of William the Conqueror is widely credited by modern scholars with commissioning the Bayeux Tapestry in the 1070s?",
+      "options": [
+        "Archbishop Lanfranc of Bec",
+        "Archbishop Stigand of Canterbury",
+        "Bishop Odo of Bayeux",
+        "Bishop Wulfstan of Worcester"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Bishop Odo of Bayeux, Earl of Kent and uterine half-brother of William the Conqueror, commissioned the nearly 70-metre embroidered Bayeux Tapestry, which was worked by Anglo-Saxon needleworkers in Canterbury.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Bayeux-Tapestry"
+    },
+    {
+      "id": "anglo-norman-set-1-e-04",
+      "question": "Which great survey of landholding and wealth across England was commissioned by William the Conqueror at Gloucester at Christmas 1085 and completed in 1086?",
+      "options": [
+        "The Winchester Roll",
+        "The Pipe Roll of Henry I",
+        "The Anglo-Saxon Chronicle",
+        "The Domesday Book"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Commissioned by William the Conqueror at Christmas 1085 and completed in 1086, the Domesday Book recorded the ownership, area, and value of lands and livestock across England.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Domesday Book'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-05",
+      "question": "Which English monarch was compelled by rebel barons to affix his seal to Magna Carta at Runnymede on 15 June 1215?",
+      "options": [
+        "King Henry II",
+        "King John",
+        "King Richard I",
+        "King Henry III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "King John (r. 1199–1216) met the rebel barons at Runnymede beside the River Thames and sealed Magna Carta on 15 June 1215.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Magna-Carta"
+    },
+    {
+      "id": "anglo-norman-set-1-e-06",
+      "question": "Under the Anglo-Norman feudal system introduced after 1066, what title was given to the great barons, bishops, and abbots who held their fiefs directly from the Crown?",
+      "options": [
+        "Tenants-in-chief",
+        "Mesne vassals",
+        "Copyhold villeins",
+        "Manorial reeves"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Under Anglo-Norman feudalism, the King held allodial title to all land and granted estates directly in capite to fewer than 180 tenants-in-chief in exchange for homage and military knight-service.",
+      "topic": "conquest",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Feudalism_in_England"
+    },
+    {
+      "id": "anglo-norman-set-1-e-07",
+      "question": "Which language became the vernacular of the royal court, the feudal nobility, and the law courts in England immediately after the Norman Conquest?",
+      "options": [
+        "West Saxon English",
+        "Ecclesiastical Latin",
+        "Old Norse",
+        "Anglo-Norman French"
+      ],
+      "correct_option_id": 3,
+      "explanation": "After 1066, Anglo-Norman French (the insular dialect of Old Norman) served as the prestige vernacular of the royal court, nobility, parliament, and law courts.",
+      "topic": "languages",
+      "topicId": "middle-english-language",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/middle-english/"
+    },
+    {
+      "id": "anglo-norman-set-1-e-08",
+      "question": "During the Anglo-Norman period, which language served primarily as the written language of the Roman Catholic Church, monastic scholarship, and official state charters?",
+      "options": [
+        "Anglo-Norman French",
+        "East Midland English",
+        "Medieval Latin",
+        "Continental Picard"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In trilingual post-Conquest England, Medieval Latin remained the international language of the Church, theology, monastic chronicles, and formal royal records such as Domesday Book and Magna Carta.",
+      "topic": "languages",
+      "topicId": "middle-english-language",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/middle-english/"
+    },
+    {
+      "id": "anglo-norman-set-1-e-09",
+      "question": "In Chapter 1 of Sir Walter Scott's novel Ivanhoe (1819), which character points out that live farm animals keep Saxon names like ox, calf, sheep, and swine while cooked meats take French names like beef, veal, mutton, and pork?",
+      "options": [
+        "Wamba the jester",
+        "Cedric the Saxon",
+        "Friar Tuck of Copmanhurst",
+        "Wilfred of Ivanhoe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Chapter 1 of Scott's Ivanhoe, Wamba the jester explains to Gurth the swineherd that living animals keep their Anglo-Saxon names while tended by serfs, whereas their cooked flesh takes Norman-French names at the lord's table.",
+      "topic": "languages",
+      "topicId": "middle-english-language",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Ivanhoe"
+    },
+    {
+      "id": "anglo-norman-set-1-e-10",
+      "question": "How many principal regional dialects of Middle English do historical linguists and standard literary histories recognize across England?",
+      "options": [
+        "Three principal dialects",
+        "Five principal dialects",
+        "Four principal dialects",
+        "Seven principal dialects"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Middle English is divided into five principal dialects: Northern, East Midland, West Midland, South Western (Southern), and South Eastern (Kentish).",
+      "topic": "languages",
+      "topicId": "dialect",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/middle-english/"
+    },
+    {
+      "id": "anglo-norman-set-1-e-11",
+      "question": "Which regional dialect of Middle English, spoken across Lincolnshire, East Anglia, and London, eventually became the direct ancestor of Modern Standard English?",
+      "options": [
+        "The West Midland dialect",
+        "The South Western dialect",
+        "The Kentish dialect",
+        "The East Midland dialect"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Because it included London and the university towns of Oxford and Cambridge, the East Midland dialect formed the basis of the London literary language and Chancery Standard, becoming the ancestor of Modern Standard English.",
+      "topic": "languages",
+      "topicId": "dialect",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/middle-english/"
+    },
+    {
+      "id": "anglo-norman-set-1-e-12",
+      "question": "Which trilingual royal document issued in October 1258 to confirm the Provisions of Oxford was the first official government document issued in English since the Norman Conquest?",
+      "options": [
+        "The Statute of Westminster",
+        "The Assize of Clarendon",
+        "The Proclamation of Henry III",
+        "The Charter of Liberties"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Issued in October 1258 in Latin, Anglo-Norman French, and Middle English to confirm the baronial Provisions of Oxford, the Proclamation of Henry III was the first post-Conquest royal proclamation in English.",
+      "topic": "languages",
+      "topicId": "history-of-english-language",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Provisions_of_Oxford"
+    },
+    {
+      "id": "anglo-norman-set-1-e-13",
+      "question": "Which monk-librarian of Wiltshire wrote the Latin histories Gesta Regum Anglorum (1125) and Historia Novella, becoming the greatest English historian after Bede?",
+      "options": [
+        "Henry of Huntingdon",
+        "William of Malmesbury",
+        "Geoffrey of Monmouth",
+        "Roger of Wendover"
+      ],
+      "correct_option_id": 1,
+      "explanation": "William of Malmesbury (c. 1095–1143), librarian of Malmesbury Abbey, wrote the Gesta Regum Anglorum, Gesta Pontificum Anglorum, and Historia Novella.",
+      "topic": "chroniclers",
+      "topicId": "william-of-malmesbury",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'William of Malmesbury'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-14",
+      "question": "Which twelfth-century secular cleric and Archdeacon compiled the Latin Historia Anglorum at the request of Bishop Alexander of Lincoln?",
+      "options": [
+        "Henry of Huntingdon",
+        "William of Newburgh",
+        "Orderic Vitalis",
+        "John of Salisbury"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Henry of Huntingdon (c. 1088–c. 1157), Archdeacon of Huntingdon, compiled the Historia Anglorum for Bishop Alexander of Lincoln, extending down to 1154.",
+      "topic": "chroniclers",
+      "topicId": "henry-of-huntingdon",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Henry of Huntingdon'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-15",
+      "question": "Which chronicler completed the Latin Historia Regum Britanniae around 1136, establishing the legendary sweep of British kings from Brutus of Troy to King Arthur and Cadwallader?",
+      "options": [
+        "William of Malmesbury",
+        "Gerald of Wales",
+        "Geoffrey of Monmouth",
+        "Matthew Paris"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Geoffrey of Monmouth completed his twelve-book Latin chronicle Historia Regum Britanniae around 1136–1138, popularizing the legends of Brutus, King Leir, Merlin, and King Arthur.",
+      "topic": "chroniclers",
+      "topicId": "geoffrey-of-monmouth",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Geoffrey of Monmouth'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-16",
+      "question": "Born near Shrewsbury to a French father and an English mother, which monk of Saint-Évroult in Normandy wrote the thirteen-book Latin Historia Ecclesiastica?",
+      "options": [
+        "Roger of Hoveden",
+        "Florence of Worcester",
+        "Eadmer of Canterbury",
+        "Orderic Vitalis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Orderic Vitalis (1075–c. 1142), who proudly called himself Angligena ('English-born'), wrote his thirteen-book Latin Historia Ecclesiastica at the Abbey of Saint-Évroult in Normandy.",
+      "topic": "chroniclers",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Ordericus Vitalis'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-17",
+      "question": "Which Cambro-Norman churchman, also known as Giraldus Cambrensis, wrote the Latin topographical and historical treatises Itinerarium Cambriae and Topographia Hibernica?",
+      "options": [
+        "Gerald of Wales",
+        "Walter Map",
+        "Geoffrey of Monmouth",
+        "John of Salisbury"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gerald of Wales (Giraldus Cambrensis, c. 1146–c. 1223), Archdeacon of Brecon, wrote Topographia Hibernica and Expugnatio Hibernica on Ireland and Itinerarium Cambriae and Descriptio Cambriae on Wales.",
+      "topic": "chroniclers",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Giraldus Cambrensis'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-18",
+      "question": "Which Benedictine monk and illuminator of St Albans Abbey succeeded Roger of Wendover in 1236 and compiled the Latin Chronica Majora covering events up to 1259?",
+      "options": [
+        "William of Newburgh",
+        "Ranulf Higden",
+        "Matthew Paris",
+        "Thomas Walsingham"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Matthew Paris (d. 1259), monk of St Albans Abbey, succeeded Roger of Wendover as chronicler and compiled and illustrated the Chronica Majora from 1235 to 1259.",
+      "topic": "chroniclers",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Paris, Matthew'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-19",
+      "question": "Which secular clerk composed L'Estoire des Engleis (c. 1136–1140) in octosyllabic rhyming couplets for Lady Constance FitzGilbert, producing the oldest surviving historical chronicle in French?",
+      "options": [
+        "Philippe de Thaon",
+        "Geoffrei Gaimar",
+        "Benoît de Sainte-Maure",
+        "Peter Langtoft"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Geoffrei Gaimar wrote L'Estoire des Engleis in Anglo-Norman octosyllabic couplets around 1136–1140 for Constance FitzGilbert; it is the earliest surviving French verse chronicle.",
+      "topic": "chroniclers",
+      "topicId": "geoffrei-gaimar",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Gaimar, Geoffrei'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-20",
+      "question": "Which Jersey-born Anglo-Norman poet completed the Roman de Brut in 1155, presenting it to Queen Eleanor of Aquitaine and introducing the first literary mention of King Arthur's Round Table?",
+      "options": [
+        "Chrétien de Troyes",
+        "Thomas of Britain",
+        "Marie de France",
+        "Wace"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wace (c. 1100–after 1171) adapted Geoffrey of Monmouth's Historia into the Anglo-Norman verse Roman de Brut (1155), dedicating it to Eleanor of Aquitaine and introducing the Round Table.",
+      "topic": "chroniclers",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Wace'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-21",
+      "question": "Which parish priest of Areley Kings in Worcestershire composed the Brut around 1200, producing the first work in the English language to tell the story of King Arthur?",
+      "options": [
+        "Layamon",
+        "Robert of Gloucester",
+        "Robert Mannyng",
+        "Orm"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Layamon (Laȝamon), a priest of Ernley (Areley Kings) on the Severn in Worcestershire, adapted Wace's Roman de Brut into Early Middle English alliterative verse around 1200.",
+      "topic": "chroniclers",
+      "topicId": "layamon",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Laȝamon'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-22",
+      "question": "Which Gilbertine canon of Lincolnshire began the confessional poem Handlyng Synne in 1303 and completed his verse Story of England (Chronicle) in May 1338?",
+      "options": [
+        "Robert of Gloucester",
+        "Dan Michel of Northgate",
+        "Robert Mannyng of Brunne",
+        "Richard Rolle of Hampole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Robert Mannyng of Brunne (Bourne, Lincolnshire), a canon of the Gilbertine Priory of Sempringham, began Handlyng Synne in 1303 and finished his English verse Chronicle in 1338.",
+      "topic": "chroniclers",
+      "topicId": "robert-mannyng",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Mannyng, Robert'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-23",
+      "question": "Which early twelfth-century writer is the earliest known Anglo-Norman vernacular poet, remembered for his calendar treatise Comput (1113) and his Bestiaire dedicated to Queen Adeliza of Louvain?",
+      "options": [
+        "Geoffrei Gaimar",
+        "Thomas of Britain",
+        "Béroul",
+        "Philippe de Thaon"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Philippe de Thaon (Philip de Thaun) is the earliest known Anglo-Norman poet; he composed his hexasyllabic Comput in 1113 and dedicated his Bestiaire (1121–1139) to Henry I's queen, Adeliza of Louvain.",
+      "topic": "poems",
+      "topicId": "philippe-de-thaon",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Philip_de_Thaun"
+    },
+    {
+      "id": "anglo-norman-set-1-e-24",
+      "question": "Which twelfth-century Anglo-Norman poet composed twelve narrative Breton Lais in octosyllabic couplets—including Lanval, Bisclavret, Yonec, and Chevrefoil—as well as the fable collection Ysopet?",
+      "options": [
+        "Eleanor of Aquitaine",
+        "Marie de France",
+        "Clemence of Barking",
+        "Christine de Pizan"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Marie de France (fl. 1160–1190) wrote twelve narrative Breton Lais, the fable collection Ysopet (Fables), and L'Espurgatoire Seint Patriz in Anglo-Norman verse.",
+      "topic": "poems",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Marie de France'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-25",
+      "question": "Around 1200, the French poet Jean Bodel classified medieval romance into which 'Three Matters' in his chanson de geste La Chanson des Saisnes?",
+      "options": [
+        "The Matters of France, Britain, and Rome",
+        "The Matters of England, Scotland, and Ireland",
+        "The Matters of Troy, Thebes, and Athens",
+        "The Matters of Arthur, Charlemagne, and Robin Hood"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In La Chanson des Saisnes, Jean Bodel divided romance subjects into the Matter of France (Charlemagne), the Matter of Britain (King Arthur), and the Matter of Rome (classical antiquity).",
+      "topic": "poems",
+      "topicId": "jean-bodel",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'matter of Britain, the'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-26",
+      "question": "In The Owl and the Nightingale (c. 1200), which wise cleric living at Portesham in Dorset do the two birds agree to appoint as judge of their debate?",
+      "options": [
+        "Master Walter Map of Oxford",
+        "Master Robert Grosseteste of Lincoln",
+        "Master John of Salisbury",
+        "Master Nicholas of Guildford"
+      ],
+      "correct_option_id": 3,
+      "explanation": "At the end of the 1,794-line Middle English debate poem The Owl and the Nightingale, the Wren recommends that the birds submit their dispute to Master Nicholas of Guildford at Portesham in Dorset.",
+      "topic": "poems",
+      "topicId": "the-owl-and-the-nightingale",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/The-Owl-and-the-Nightingale"
+    },
+    {
+      "id": "anglo-norman-set-1-e-27",
+      "question": "Which mid-thirteenth-century poem of about 1,500 lines—narrating the exile of the prince of Suddene and his love for Princess Rymenhild of Westernesse—is the earliest surviving verse romance in Middle English?",
+      "options": [
+        "Havelok the Dane",
+        "King Horn",
+        "Guy of Warwick",
+        "Bevis of Hampton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Dating from about 1225, King Horn (~1,500 lines) is the earliest extant Middle English verse romance, recounting Horn's exile by Saracen invaders and his love for Rymenhild.",
+      "topic": "poems",
+      "topicId": "medieval-romance",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'King Horn'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-28",
+      "question": "In the late thirteenth-century Matter of England romance Havelok the Dane, which humble fisherman rescues the infant Danish prince and gives his name to the Lincolnshire town of Grimsby?",
+      "options": [
+        "Godrich",
+        "Godard",
+        "Grim",
+        "Athelwold"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Havelok the Dane, the fisherman Grim saves the young prince Havelok from the usurper Godard, flees to Lincolnshire where he founds Grimsby, and raises Havelok before the prince marries Goldborough.",
+      "topic": "poems",
+      "topicId": "medieval-romance",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Havelok the Dane, The Lay of'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-29",
+      "question": "Which early fourteenth-century Middle English Breton lay recasts the classical myth of Orpheus and Eurydice into a Celtic fairy-abduction romance in which Queen Heurodis is rescued alive with a happy ending?",
+      "options": [
+        "Sir Launfal",
+        "Sir Degaré",
+        "Lai le Freine",
+        "Sir Orfeo"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Preserved in the Auchinleck Manuscript, Sir Orfeo (~600 lines) transforms the tragedy of Orpheus and Eurydice into a Breton lay in which King Orfeo wins back Queen Heurodis from the Fairy King with his harp.",
+      "topic": "poems",
+      "topicId": "medieval-romance",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Orfeo, Sir'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-30",
+      "question": "Which famous thirteenth-century Middle English lyric celebrating the arrival of spring and the call of the cuckoo is preserved with musical notation as a six-part round (rota) in British Library MS Harley 978?",
+      "options": [
+        "Sumer is icumen in",
+        "Lenten ys come with love to toune",
+        "Wynter wakeneth al my care",
+        "Blow, Northerne Wynd"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Copied in British Library MS Harley 978 at Reading Abbey in the mid-thirteenth century, 'Sumer is icumen in' (the Cuckoo Song or Reading Rota) is the earliest known English six-part polyphonic round.",
+      "topic": "poems",
+      "topicId": "middle-english-lyrics",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Sumer is icumen in'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-31",
+      "question": "Which anonymous Northern Middle English poem of nearly 30,000 lines, composed around 1300, narrates the spiritual history of mankind from Creation to Doomsday across the 'Seven Ages of the World'?",
+      "options": [
+        "Poema Morale",
+        "Cursor Mundi",
+        "Pricke of Conscience",
+        "Handlyng Synne"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cursor Mundi ('Over-runner of the World', c. 1300) is an encyclopaedic Northern Middle English poem of nearly 30,000 lines tracing salvation history from Creation to the Last Judgment across Seven Ages.",
+      "topic": "poems",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Cursor Mundi'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-32",
+      "question": "Which late twelfth-century Early Middle English sermon-poem of about 400 septenary lines opens with an aging speaker lamenting his wasted youth ('Ich am nu elder þan ich was a wintre ⁊ a lore') before meditating on Doomsday?",
+      "options": [
+        "The Proverbs of Alfred",
+        "The Fox and the Wolf",
+        "Poema Morale",
+        "The Land of Cokaygne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Poema Morale ('Moral Ode', c. 1170–1200) is a 400-line homiletic poem in rhymed septenary couplets in which an older speaker reflects on his past life and warns readers of the Last Judgment.",
+      "topic": "poems",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Poema_Morale"
+    },
+    {
+      "id": "anglo-norman-set-1-e-33",
+      "question": "Which early thirteenth-century West Midland prose manual of devotional guidance—also known as Ancrene Riwle—was originally written in eight parts for three noble sisters who had become anchoresses?",
+      "options": [
+        "Ancrene Wisse",
+        "Sawles Warde",
+        "Ayenbite of Inwyt",
+        "The Form of Living"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ancrene Wisse (also called Ancrene Riwle, 'Guide for Anchoresses', c. 1200–1230) is an eight-part devotional prose treatise originally written for three sisters living as anchoresses near Herefordshire.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Ancrene Wisse'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-34",
+      "question": "In Ancrene Wisse, which parts make up the 'Outer Rule' governing the anchoresses' external routines and domestic conduct, as opposed to the 'Inner Rule' of the heart?",
+      "options": [
+        "Parts 1 and 2",
+        "Parts 4 and 5",
+        "Parts 7 and 8",
+        "Parts 1 and 8"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the eight-part structure of Ancrene Wisse, Parts 1 (Devotions) and 8 (Domestic Matters) frame the treatise as the 'Outer Rule', while Parts 2 to 7 form the 'Inner Rule' governing the interior spiritual life.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Ancrene_Wisse"
+    },
+    {
+      "id": "anglo-norman-set-1-e-35",
+      "question": "In Part 8 of Ancrene Wisse, what is the only domestic animal that an anchoress is permitted to keep without special permission from her spiritual director?",
+      "options": [
+        "A watchdog",
+        "A milch cow",
+        "A cat",
+        "A caged songbird"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Part 8 of Ancrene Wisse instructs the sisters that, unless driven by necessity, they shall keep no beast except a cat alone ('ne schulen habbe na beast bute cat ane'), since keeping a cow turns an anchoress into a worried housewife like Martha.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://www.gutenberg.org/files/26413/26413-h/26413-h.htm"
+    },
+    {
+      "id": "anglo-norman-set-1-e-36",
+      "question": "Which collective name is given to the five West Midland devotional prose texts in Bodleian Library MS Bodley 34—Seinte Katerine, Seinte Margarete, Seinte Juliene, Hali Meiðhad, and Sawles Warde?",
+      "options": [
+        "The Wooing Group",
+        "The Katherine Group",
+        "The Vernon Group",
+        "The Thornton Group"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Katherine Group comprises five early thirteenth-century Herefordshire prose works in the AB language preserved together in MS Bodley 34: three virgin-martyr lives, Hali Meiðhad, and Sawles Warde.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Katherine Group, the'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-37",
+      "question": "Which treatise in the Katherine Group is an epistolary homily praising lifelong virginity as the Bride of Christ while vividly depicting the domestic and physical hardships of earthly marriage?",
+      "options": [
+        "Hali Meiðhad",
+        "Sawles Warde",
+        "Þe Wohunge of Ure Lauerd",
+        "Vices and Virtues"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hali Meiðhad ('Holy Maidenhood', c. 1190–1225) is an alliterative prose treatise in the Katherine Group that exalts virginity over the tribulations of marriage and childbearing.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Hali Meidhad'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-38",
+      "question": "Which Benedictine monk of St Augustine's Abbey, Canterbury, completed the Kentish prose translation Ayenbite of Inwyt ('Remorse of Conscience') on 27 October 1340?",
+      "options": [
+        "William of Shoreham",
+        "Friar Lorens of Orléans",
+        "John of Trevisa",
+        "Dan Michel of Northgate"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Dan Michel of Northgate completed Ayenbite of Inwyt in the Kentish dialect in 1340 as a literal translation of Friar Lorens of Orléans's French treatise Somme le Roi (1279).",
+      "topic": "prose",
+      "topicId": "dan-michel",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Ayenbite of Inwit'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-39",
+      "question": "Which Yorkshire hermit and mystic (c. 1300–1349) wrote the Latin Incendium Amoris and the English epistles The Form of Living and Ego Dormio for the anchoress Margaret Kirkby?",
+      "options": [
+        "Walter Hilton of Thurgarton",
+        "Nicholas Love of Mount Grace",
+        "Richard Rolle of Hampole",
+        "Thomas Bradwardine"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richard Rolle of Hampole (c. 1300–1349) wrote the Latin Incendium Amoris (The Fire of Love) and the Yorkshire Middle English treatises The Form of Living, Ego Dormio, and The Commandment.",
+      "topic": "prose",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Rolle, Richard, of Hampole'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-40",
+      "question": "Which tenth-century four-line Latin Easter chant dialogue asking 'Whom do ye seek in the sepulchre, O followers of Christ?' marks the liturgical rebirth of medieval European drama?",
+      "options": [
+        "The Ordo Prophetarum chant",
+        "The Quem Quaeritis trope",
+        "The Planctus Mariae sequence",
+        "The Dies Irae hymn"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Quem Quaeritis trope—an antiphonal Easter dialogue between the Angel and the Three Marys at Christ's empty tomb, with stage directions recorded in St Æthelwold's Regularis Concordia (c. 973)—is the foundation of medieval liturgical drama.",
+      "topic": "plays",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Quem_quaeritis%3F"
+    },
+    {
+      "id": "anglo-norman-set-1-e-41",
+      "question": "Which mid-twelfth-century play of 942 lines with detailed Latin stage directions—dramatizing the Fall of Adam and Eve, Cain and Abel, and the Procession of the Prophets—is the oldest surviving drama in Anglo-Norman French?",
+      "options": [
+        "La Seinte Resureccion",
+        "Le Jeu de Saint Nicolas",
+        "Le Jeu d'Adam",
+        "Le Miracle de Théophile"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Le Jeu d'Adam (Ordo representacionis Adae, c. 1140–1150), preserved in Tours MS 927, is an Anglo-Norman play in three parts with Latin stage directions for staging outside the church doors.",
+      "topic": "plays",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Adam'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-42",
+      "question": "Which Norman scholar staged a miracle play of St Catherine (ludus de Sancta Katerina) at Dunstable around 1110—the earliest play recorded by name in England—before becoming Abbot of St Albans?",
+      "options": [
+        "Geoffrey of Gorham",
+        "Hilarius the Englishman",
+        "Matthew Paris",
+        "Thomas of Eccleston"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Around 1110, Geoffrey of Gorham (Geoffrey of Dunstable) staged a miracle play of St Catherine at Dunstable using choir copes borrowed from St Albans Abbey; when a fire burned the copes, he became a monk and later Abbot of St Albans (1119–1146).",
+      "topic": "plays",
+      "topicId": "miracle-plays",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Geoffrey_de_Gorham"
+    },
+    {
+      "id": "anglo-norman-set-1-e-43",
+      "question": "Dating from about 1300 and preserved on a parchment roll (BL Add. MS 23986), which 84-line comic dialogue about a student wooing Malkyn with the help of Mome Elwis is the oldest surviving secular play in English?",
+      "options": [
+        "The Harrowing of Hell",
+        "Interludium de Clerico et Puella",
+        "The Pride of Life",
+        "The Play of the Sacrament"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Interludium de Clerico et Puella ('The Interlude of the Student and the Girl', c. 1300) is an 84-line comic secular interlude in rhyming couplets adapting the plot of the fabliau Dame Sirith.",
+      "topic": "plays",
+      "topicId": "anglo-norman",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Interlude_of_the_Student_and_the_Girl"
+    },
+    {
+      "id": "anglo-norman-set-1-e-44",
+      "question": "In medieval English drama, which genre specifically dramatized the entire scriptural history of salvation from the Creation and Fall of Lucifer to the Last Judgment, performed outdoors by town craft guilds on pageant wagons?",
+      "options": [
+        "Morality plays",
+        "Tudor interludes",
+        "Court masques",
+        "Mystery plays"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mystery plays (or Corpus Christi cycles) took their name from the craft guilds (mestier / ministerium) that performed biblical salvation history from Creation to Doomsday in cities such as York, Chester, Wakefield, and N-Town.",
+      "topic": "plays",
+      "topicId": "mystery-plays",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'mystery plays'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-45",
+      "question": "Which summer church festival—instituted by Pope Urban IV in the bull Transiturus (1264) and confirmed at the Council of Vienne in 1311—became the principal annual occasion for staging the English civic Mystery Cycles?",
+      "options": [
+        "The Feast of Corpus Christi",
+        "The Feast of the Epiphany",
+        "The Feast of Michaelmas",
+        "The Feast of Candlemas"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Instituted by Pope Urban IV in 1264 and confirmed by Pope Clement V at the Council of Vienne in 1311 (promulgated 1317), the Feast of Corpus Christi (the Thursday after Trinity Sunday) became the great summer festival for guild Mystery Plays.",
+      "topic": "plays",
+      "topicId": "mystery-plays",
+      "periodId": "anglo-norman",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Feast-of-Corpus-Christi"
+    },
+    {
+      "id": "anglo-norman-set-1-e-46",
+      "question": "Read the two-line extract from the Preface to the Ormulum above. Why does the author systematically double the consonants in words such as 'Þiss', 'iss', 'nemmnedd', 'forrþi', 'þatt', and 'Orrm'?",
+      "options": [
+        "To mark strong alliterative lifts in imitation of classical Old English epic metre",
+        "To indicate to priests reading aloud that the preceding vowel is phonetically short",
+        "To distinguish borrowed Anglo-Norman loanwords from native Anglo-Saxon roots",
+        "To signal where the monastery choir should pause for a musical caesura in chanting"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the autograph manuscript of the Ormulum (Bodleian MS Junius 1), the Augustinian canon Orm devised a strict phonetic spelling system in which a consonant is doubled whenever it follows a short vowel in a closed syllable, helping preachers pronounce English accurately.",
+      "topic": "poems",
+      "topicId": "orm",
+      "periodId": "anglo-norman",
+      "qtype": "passage",
+      "passageId": "p1",
+      "src": "https://en.wikipedia.org/wiki/Ormulum"
+    },
+    {
+      "id": "anglo-norman-set-1-e-47",
+      "question": "Consider the following statements regarding the Statute of Pleading enacted under King Edward III:\nA. It was enacted by the Parliament of England in the year 1362.\nB. It ordered that oral pleas in the royal law courts should be pleaded and debated in the English tongue rather than Law French.\nC. It directed that official court records should continue to be entered and enrolled in Latin.\nD. It abolished the use of Latin inside the universities of Oxford and Cambridge.\nWhich of the statements given above are correct?",
+      "options": [
+        "A, B, and D only",
+        "A, C, and D only",
+        "A, B, and C only",
+        "B, C, and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Enacted under Edward III in 1362 (36 Edw. 3 Stat. 1. c. 15), the Statute of Pleading mandated that court pleas be conducted orally in English because Law French was unknown to common litigants, while official court records continued to be enrolled in Latin (A, B, and C are true; D is false).",
+      "topic": "languages",
+      "topicId": "history-of-english-language",
+      "periodId": "anglo-norman",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Pleading_in_English_Act_1362"
+    },
+    {
+      "id": "anglo-norman-set-1-e-48",
+      "question": "Consider the following statements regarding The Peterborough Chronicle:\nA. It is preserved in Bodleian Library MS Laud Misc. 636, known as the Laud or E manuscript of the Anglo-Saxon Chronicle.\nB. It is the only surviving version of the Anglo-Saxon Chronicle that continues its historical entries down to the year 1154.\nC. Its Second Continuation includes the famous eyewitness account of the nineteen winters of anarchy under King Stephen, when people said openly that 'Christ and his saints slept'.\nD. It was composed in Anglo-Norman octosyllabic rhyming couplets by a monk of Canterbury.\nWhich of the statements given above are correct?",
+      "options": [
+        "A, B, and D only",
+        "A, C, and D only",
+        "B, C, and D only",
+        "A, B, and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Peterborough Chronicle (Bodleian MS Laud Misc. 636) is the only branch of the Anglo-Saxon Chronicle extending to 1154; written in transitional East Midland prose (not Anglo-Norman verse), its 1137 annal vividly describes the Anarchy under King Stephen (A, B, and C are true; D is false).",
+      "topic": "chroniclers",
+      "topicId": "anglo-saxon-chronicle",
+      "periodId": "anglo-norman",
+      "qtype": "combination",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entry 'Peterborough Chronicle, The'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-49",
+      "question": "Consider the following four landmark works of the Arthurian 'Brut' tradition:\nA. Wace's Anglo-Norman Roman de Brut\nB. Geoffrey of Monmouth's Latin Historia Regum Britanniae\nC. Robert Mannyng of Brunne's Middle English Story of England (Chronicle)\nD. Layamon's Early Middle English Brut\nWhich of the following options gives their correct chronological order of composition from earliest to latest?",
+      "options": [
+        "A, B, D, C",
+        "B, A, D, C",
+        "B, D, A, C",
+        "A, D, B, C"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Geoffrey of Monmouth completed his Latin Historia Regum Britanniae around 1136–1138 (B); Wace completed his Anglo-Norman Roman de Brut in 1155 (A); Layamon composed his Early Middle English Brut around 1200 (D); and Robert Mannyng completed his Chronicle in 1338 (C).",
+      "topic": "chroniclers",
+      "topicId": "geoffrey-of-monmouth",
+      "periodId": "anglo-norman",
+      "qtype": "chrono",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entries 'Geoffrey of Monmouth', 'Wace', 'Laȝamon', and 'Mannyng, Robert'"
+    },
+    {
+      "id": "anglo-norman-set-1-e-50",
+      "question": "Match each medieval dramatic genre or early play in List I with its defining subject matter in List II:\nList I:\nA. Mystery Plays\nB. Miracle Plays\nC. Morality Plays\nD. The Harrowing of Hell\n\nList II:\nI. Allegorical struggle of personified Virtues and Vices for the soul of Mankind\nII. Non-scriptural lives, martyrdoms, and posthumous wonders of Christian saints\nIII. Scriptural salvation history from the Creation to the Last Judgment\nIV. Christ's descent into Hell (from the Gospel of Nicodemus) to free Adam and the patriarchs\nWhich of the following options represents the correct matching?",
+      "options": [
+        "A-II, B-III, C-I, D-IV",
+        "A-III, B-I, C-II, D-IV",
+        "A-III, B-II, C-I, D-IV",
+        "A-IV, B-II, C-I, D-III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Mystery plays dramatize biblical history from Creation to Doomsday (A-III); Miracle plays enact the lives and miracles of saints such as St Nicholas and the Virgin Mary (B-II); Morality plays allegorize the battle of Virtues and Vices for the human soul (C-I); and The Harrowing of Hell (~250 lines, c. 1250) dramatizes Christ's descent into Hell from the apocryphal Gospel of Nicodemus (D-IV).",
+      "topic": "plays",
+      "topicId": "morality-plays",
+      "periodId": "anglo-norman",
+      "qtype": "match",
+      "src": "user-supplied: Drabble, The Oxford Companion to English Literature, 6th ed., entries 'mystery plays', 'morality plays', and 'Harrowing of Hell'"
+    }
+  ]
+}

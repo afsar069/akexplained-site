@@ -36,11 +36,11 @@
      An age in neither list is not clickable.
      --------------------------------------------------------- */
   var LIVE_AGES = [
-    'old-english'
+    'old-english',
+    'anglo-norman'
   ];
 
   var SOON_HUBS = [
-    'anglo-norman',
     'age-of-chaucer',
     'fifteenth-century',
     'renaissance',
