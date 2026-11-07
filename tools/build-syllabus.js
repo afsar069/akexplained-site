@@ -54,6 +54,10 @@ function mcqPools(root) {
     (age.sets || []).forEach(function (set) {
       if (!set.live) return;                                    // only live sets count
       const setId = age.slug + '-set-' + set.n;
+      if (set.access) {                                         // login set: no file in the repo; count from the registry
+        total += (set.count | 0) * (set.levels || []).length;   // (the load tool checks each level has exactly `count` questions)
+        return;
+      }
       (set.levels || []).forEach(function (lvl) {
         const f = path.join(qdir, setId + '-' + lvl + '.json');
         if (!fs.existsSync(f)) throw new Error('[syllabus] live MCQ set file missing: ' + path.relative(root, f));

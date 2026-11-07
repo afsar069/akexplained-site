@@ -21,6 +21,13 @@
 
    Hub se aaya hua ?n= aur ?t= yahan maana jata hai.
 
+   Login wala set (data-gated): jis set ke sawal public file me nahi, Supabase ki
+   table mcq_papers me hain, uski id page par data-gated="<id>,<id>" me aati hai
+   (apna test me us age ke saare login sets). Aise set ki file yahan seedhe nahi
+   uthti: logged-in student ke naam se table se padhi jati hai, aur database
+   (RLS) tay karta hai ki kaun padh sakta hai. Login na ho to sawal ki jagah
+   "Log in to take this test" wala screen dikhta hai (broke() me).
+
    Apna test (data-custom): kai sets ke sawal ek hi test me. Page par
      <div data-cbt data-custom data-age="old-english" data-levels="easy,medium"
           data-src="/assets/questions/{set}-{level}.json"
@@ -102,9 +109,56 @@
       });
   }
 
+  /* Login wale sets: kaun se, page batata hai (public jaankari hai, sawal nahi). */
+  var GATED = (root.getAttribute('data-gated') || '').split(',')
+    .map(function (x) { return x.trim(); }).filter(Boolean);
+  function isGated(sid) { return GATED.indexOf(sid) > -1; }
+
+  /* Login nahi hai to ye error: broke() ise pehchan kar login screen dikhata hai. */
+  function needLoginError() {
+    var e = new Error('login needed');
+    e.needsLogin = true;
+    return e;
+  }
+
+  /* Login wale set ki ek level-file: table mcq_papers se, logged-in student ke naam se.
+     Login na ho ya Supabase na chale to needLoginError; row na mile to saaf sandesh. */
+  /* cbt.js login wali scripts (auth.js) se PEHLE chalti hai, isliye window.akAuth abhi bana nahi hota.
+     Thodi der (~3 second tak) uska intezaar; na bane to guest maan lo. */
+  function whenAuth() {
+    return new Promise(function (resolve) {
+      var tries = 0;
+      (function check() {
+        if (window.akAuth) return resolve(window.akAuth);
+        if (tries++ > 100) return resolve(null);
+        setTimeout(check, 30);
+      })();
+    });
+  }
+
+  function gatedPaper(sid, lv) {
+    var a = null;
+    return whenAuth().then(function (auth) {
+      a = auth;
+      if (!a || !a.configured || !a.client) throw needLoginError();
+      return a.session();
+    }).then(function (s) {
+      if (!s || !s.user) throw needLoginError();
+      return a.client.from('mcq_papers').select('body').eq('set_id', sid).eq('level', lv).maybeSingle();
+    }).then(function (res) {
+      if (res.error) throw new Error(res.error.message || 'could not read the questions');
+      var data = res.data && res.data.body;
+      if (!data || !Array.isArray(data.questions) || !data.questions.length) {
+        throw new Error('This set is not open to you yet.');
+      }
+      return data;
+    });
+  }
+
   function fetchPaper(lv) {
     if (papers[lv]) return Promise.resolve(papers[lv]);
-    return getJson(srcFor(lv)).then(function (data) { papers[lv] = data; return data; });
+    var job = isGated(SET_ID) ? gatedPaper(SET_ID, lv) : getJson(srcFor(lv));
+    return job.then(function (data) { papers[lv] = data; return data; });
   }
 
   /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to
@@ -201,6 +255,7 @@
 
   /* File na mile to khali page nahi — saaf baat aur wapas jane ka rasta. */
   function broke(e) {
+    if (e && e.needsLogin) { needLogin(); return; }
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>The questions did not load</h1>' +
@@ -209,6 +264,20 @@
         '<p class="small muted">' + esc(e && e.message ? e.message : 'unknown') + '</p>' +
         '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
         '">Back to the age</a></p>' +
+      '</div>';
+  }
+
+  /* Login wale set par guest: sawal ki jagah login ka rasta. Login ke baad
+     ?next= se isi test par wapas aate hain (login.js wapas bhejta hai). */
+  function needLogin() {
+    var back = location.pathname + location.search;
+    root.innerHTML =
+      '<div class="cbt-start">' +
+        '<h1>Log in to take this test</h1>' +
+        '<p class="lede">This set is for students with a free account. ' +
+        'Log in, or create an account, to open it.</p>' +
+        '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
+        '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to the age</a></p>' +
       '</div>';
   }
 
@@ -278,7 +347,8 @@
     var k = sid + '|' + lv;
     if (cpapers[k]) return Promise.resolve(cpapers[k]);
     var url = (root.getAttribute('data-src') || '').replace('{set}', sid).replace('{level}', lv);
-    return getJson(url).then(function (d) { cpapers[k] = d; return d; });
+    var job = isGated(sid) ? gatedPaper(sid, lv) : getJson(url);
+    return job.then(function (d) { cpapers[k] = d; return d; });
   }
 
   /* Link se mel. Galat ya adhoori ho to null — tab rakha hua attempt dekha jata hai. */

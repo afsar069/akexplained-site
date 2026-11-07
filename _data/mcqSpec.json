@@ -1,5 +1,5 @@
 {
-  "_about": "MCQ registry. One entry per age. An age with no \"sets\" gets a \"questions coming soon\" hub. A set with \"live\": true needs assets/questions/<setId>-<level>.json for every level it lists; its rev is read from those files. See CLAUDE.md rule 7.",
+  "_about": "MCQ registry. One entry per age. An age with no \"sets\" gets a \"questions coming soon\" hub. A set with \"live\": true needs assets/questions/<setId>-<level>.json for every level it lists; its rev is read from those files. See CLAUDE.md rule 7. A set with \"access\": \"login\" is not a file: its questions live in the Supabase table mcq_papers, so it needs \"rev\" here (a whole number) and no file in assets/questions/. See CLAUDE.md rule 15.",
   "ages": [
     {
       "slug": "old-english",

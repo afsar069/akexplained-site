@@ -52,11 +52,14 @@ so do that only when asked.
 Question files are made with `tools/mcq-skill/SKILL.md` (by Claude Work or another AI) and
 arrive in the final format: `<age>-set-<n>-easy.json`, `-medium.json` and a `-report.md`.
 Every question carries `src` (the page that proves it); the site does not show it yet.
-To publish a set:
+**First: is the set free or login?** The owner says so when the files arrive ("login me lagao"). If the
+owner did not say, **ask before writing anything into the repo**: the repo is public, so a file committed
+here is public for good. Free: the steps below. Login: rule 15 (the files never enter the repo).
+To publish a (free) set:
 1. `python3 tools/mcq-skill/validate_mcq.py <easy> <medium> --notes notes/<article>/index.md --others <other sets' files of the age>` — no errors.
 2. Spot-check about ten questions against their `src`, and every one a warning or the report flags.
    Fix or replace a wrong one; never keep a guess.
-3. Files go to `assets/questions/`.
+3. Files go to `assets/questions/` (free sets only; a login set never goes there, rule 15).
 4. `_data/mcqSpec.json` is the registry. An age with no `sets` gets a "questions coming soon" hub
    (noindex, not linked from `/quizzes/mcq/`). To plan an age, add its `sets` (number, title, one-line
    meta, topics, levels) and the hub `topics` list; the owner supplies these, never invent them.
@@ -136,13 +139,18 @@ by hand, give **click-by-click steps, one at a time**: which link to open, copy,
 paste where, which button to press, and what a success message looks like. Then wait
 for the result before the next step. Do not assume shell, git, or dashboard fluency.
 
-**This session cannot reach Supabase.** The cloud container's network proxy blocks the
-Supabase host, so Claude can neither apply nor test a migration against the database
-from here. So: **Claude writes the SQL; the owner runs it** in Supabase → SQL Editor
-(New query → paste → Run → expect "Success. No rows returned."). For a long file, point
-the owner to the migration file's GitHub **raw** link and the copy button rather than
-pasting hundreds of lines into chat. To confirm row counts, give a `select count(*)`
-— the dashboard table view only shows 100 rows at a time, so hand-counting misleads.
+**Claude runs the SQL itself** (owner's decision, 2026-11-07; before that the owner ran every migration).
+The Supabase connector reaches the live project (ref `almlqoxcyzwieuwrgwry`). Claude tests the SQL first
+on a scratch local Postgres (rule 14), applies it through the connector (`apply_migration` for structure,
+`execute_sql` for data), reads the result back (row counts, policies, grants), runs the security advisors,
+and tells the owner in plain words what ran and what was checked. The same SQL goes into
+`supabase/migrations/` in the same commit (never the question data of a login set: rule 15). The owner is not
+asked to open the SQL Editor. Anything destructive (drop, delete, truncate, a change that removes data)
+still needs the owner's word first. If the connector is not attached or fails, fall back to the old way:
+Claude writes the SQL and gives click-by-click steps (SQL Editor → New query → paste → Run → expect
+"Success. No rows returned."), pointing to the file's GitHub **raw** link and the copy button rather than
+pasting hundreds of lines into chat. To confirm row counts use `select count(*)` — the dashboard table
+view only shows 100 rows at a time, so hand-counting misleads.
 
 ## 10. Accounts and the database (Supabase)
 User accounts are **live**. Backend is a Supabase project; the browser talks to it with
@@ -211,14 +219,15 @@ and never ask the owner for it.**
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
   new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
-- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `exams`, `topics`, `exam_topics`,
+- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15), `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
   reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
 - Migrations live in `supabase/migrations/` (ordered, run once by the owner). Each is one
   transaction; data loads use `on conflict (id) do nothing`; topic rows are inserted
   parents-first. `supabase/full-setup.sql` is a consolidated, idempotent one-shot.
-  `docs/db-notes.md` explains every table in plain English. **Never gate existing content
-  behind login** — articles, the Daily quiz and the MCQs stay open to everyone.
+  `docs/db-notes.md` explains every table in plain English. **Never gate content that is already free**
+  — articles, the Daily quiz and the free MCQ sets (all 300 Old English questions so far) stay open to everyone.
+  New MCQ sets may be login sets, only when the owner says so (rule 15).
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
@@ -291,6 +300,8 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
+- **The paid layer** (rule 15): no entitlements, no promo codes, no payment gateway. A set can be free or
+  login today. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
   (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
@@ -309,11 +320,11 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   to accounts, to be fixed separately.
 
 ## 14. Working on the backend from a cloud session (tools, testing, hygiene)
-- **Reading the live database.** A Supabase connector may be attached to the session; when it is, you
-  can read the live project directly (project ref `almlqoxcyzwieuwrgwry`) — inspect schema, rows,
-  policies, grants, and run the advisors. Use it read-only to check your work. **The owner still runs
-  every migration** (rule 9): write the SQL, hand it over, do not apply DDL yourself even when a tool
-  could. The browser talks to Supabase with the publishable key only.
+- **The live database.** A Supabase connector is attached to the session (project ref
+  `almlqoxcyzwieuwrgwry`). You may read it (schema, rows, policies, grants, advisors) **and, since
+  2026-11-07, run SQL on it yourself** (migrations and data loads), as rule 9 says: test on a scratch
+  Postgres first, apply, read back, run the advisors. Anything destructive needs the owner's word first.
+  The browser talks to Supabase with the publishable key only; the secret key never goes in the repo.
 - **Security hygiene.** After any schema change, run the Supabase **security advisors** and keep them
   empty. A `SECURITY DEFINER` function in `public` (a trigger function especially) must have `EXECUTE`
   revoked from `public, anon, authenticated`, or advisors 0028/0029 fire — it is still callable at
@@ -322,7 +333,7 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   never rely on it alone — always add explicit own-rows policies with the table.
 - **Test before you push** (extends rule 4). Migrations: run them on a throwaway local Postgres
   (`/usr/lib/postgresql/16/bin` → `initdb`/`pg_ctl`), after first running the earlier topic/account
-  migrations, and check row counts, idempotency (run twice), and no orphans. Auth and other JS flows:
+  migrations, and check row counts, idempotency (run twice), and no orphans. (`initdb` must run as the `postgres` OS user in a folder that user can read, e.g. under `/var/tmp`, not the scratchpad; delete it afterwards.) Auth and other JS flows:
   browser-test with the pre-installed Playwright (`require('playwright')`, `chromium.launch()`, no
   options) against `_site` served locally, with Supabase routes mocked. Test switches already in the
   code: `/login/?google=1` (show the Google button), `/login/?reset=1` (show the reset form).
@@ -336,3 +347,47 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
 - **Where things stand** at the end of a work block is kept in `docs/accounts-status.md` (a dated
   snapshot of what is live, what is on the branch unmerged, and what is pending). Update it when the
   state changes so the next session starts without re-reading the whole history.
+
+## 15. Access layers: free, login, paid (owner, 2026-11-07)
+Three layers for MCQ sets. **The owner decides the layer of every set when the files are handed over**
+("login me lagao" = login; otherwise free). **If the owner did not say, ask before touching the repo. Never assume.**
+- **free**: a public file in `assets/questions/` (and the Daily files). The 300 Old English MCQs and every set
+  the owner calls free stay here, open to everyone. **A set that went live as a file is public for good** (the
+  repo is public and git keeps history), so the layer is decided BEFORE the first commit.
+- **login**: the questions are rows in `public.mcq_papers` (`access = 'login'`, one row per level, `body` = the
+  whole question file). RLS lets any logged-in student read them; logged-out visitors get nothing. **No file
+  of a login set, and no SQL that contains its questions, is ever committed.** The set's page, title and lede
+  are public; only the questions are not. A logged-in student can still copy what they see; the wall stops
+  the public, not copying.
+- **paid**: NOT BUILT. `access = 'paid'` is allowed in the table but no policy reads it (invisible to everyone,
+  it fails closed), and `_data/mcqAges.js` stops the build if a set says `"access": "paid"`. The owner's plan:
+  every gated set starts as login; later the owner picks which become paid; a **promo code** gives a student
+  the paid pass for free ("paid but free by promo code"). To build it: an entitlements table (who has a pass,
+  from payment or promo, until when; only the server writes it, never the browser), a promo-codes table, a
+  server-side redeem function, one more RLS policy, then allow `"paid"` in the registry. Payment gateway: not
+  chosen; never invent a fee or a limit (rule 14). The "no paid tier" lines in `/terms/` and `/contact/`, and
+  the About line, change in the same commit that makes paid real. Moving a set login → paid later is one
+  UPDATE of `access` plus the registry label. Paid → free is never done silently: it publishes the questions.
+- **Publishing a login set** (instead of rule 7 steps 3 to 6). The question files stay in the session's scratchpad.
+  1. `validate_mcq.py` on them (rule 7 steps 1 and 2), as for any set.
+  2. `_data/mcqSpec.json`: the set gets `"access": "login"`, `"rev": <n>` (the registry carries rev, because there
+     is no file to read it from), `count`, `levels`, `titleCase`, `lede` (the owner supplies the words), `"live": true`.
+  3. `python3 tools/mcq-skill/make_gated_sql.py --access login <files> --out <scratchpad>/load.sql`. It checks the
+     files against the registry, the master topics and the public files, and writes the SQL; it never touches the
+     database. Tags (`topicId`, `periodId`) must be there: run the tagging tool first (rule 12), because the build
+     gate cannot see these files.
+  4. Run that SQL through the connector (rule 9). Read back: one row per level, `jsonb_array_length(body -> 'questions')`
+     equals `count`, `rev` equals the registry's. `git status` must show no question file and no load SQL.
+  5. `npx eleventy`, link check, browser test: a guest sees "Log in to take this test" and no question text; a
+     logged-in student gets the test. Push the branch; `main` only when asked (rule 5).
+  6. Tell the owner to keep their own copy of the files: the table is the live copy, but the scratchpad vanishes.
+  Changing a live login set: run the tool again with the corrected file and a raised `rev` (it upserts).
+- **What the build cannot check** for a login set: that its rows exist in the table (the build cannot reach
+  Supabase), that its tags are real, that its ids are unique. The tool checks the last two before loading and the
+  SQL refuses an id another set already holds; step 4's read-back covers the first.
+- The dashboard pool counts a login set as `count x levels` from the registry (`tools/build-syllabus.js`).
+- Engine: `assets/cbt.js` reads a login set with `data-gated` on the page (`gatedPaper()`); it must wait for
+  `window.akAuth`, because `cbt.js` runs before `auth.js`.
+- **Login and come back**: a login set shows "Log in to take this test" with a link to `/login/?next=<path>`.
+  `login.js` sends a returning person (password sign-in, Google, already logged in) back there. A brand-new
+  person still goes through "Choose your path" to the dashboard. Only a path on this site is accepted as `next`.

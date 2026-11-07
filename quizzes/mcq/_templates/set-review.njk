@@ -40,7 +40,8 @@ eleventyExcludeFromCollections: true
      data-set="{{ st.id }}"
      data-levels="{{ st.levels | join(',') }}"
      data-default-level="{{ st.defaultLevel }}"
-     data-src="/assets/questions/{{ st.id }}-{level}.json"
+{% if st.access %}     data-gated="{{ st.id }}"
+{% endif %}     data-src="/assets/questions/{{ st.id }}-{level}.json"
      data-back="/quizzes/mcq/{{ age.slug }}/set-{{ st.n }}/">
 
   <noscript>
