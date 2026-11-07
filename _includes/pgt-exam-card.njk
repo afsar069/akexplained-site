@@ -1,0 +1,8 @@
+<li class="pgt-exam-card">
+  <span class="pgt-card-icon" aria-hidden="true"><img src="/assets/icons/{{ exam.icon }}.svg" alt="" width="34" height="34"></span>
+  <div class="pgt-card-copy">
+    <h3>{{ exam.name }}{% if exam.qualifier %} <span class="pgt-exam-qualifier">{{ exam.qualifier }}</span>{% endif %}</h3>
+    {% if exam.state %}<p class="pgt-card-state">{{ exam.state }}</p>{% endif %}
+    <p class="pgt-card-status">Coming soon</p>
+  </div>
+</li>

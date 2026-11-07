@@ -1,0 +1,82 @@
+{
+  "results": [
+    {
+      "viewport": 320,
+      "width": 320,
+      "minCardWidth": 276,
+      "cardOverflow": false,
+      "heroFont": "27.2px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 325.828125,
+      "gridWidth": 276
+    },
+    {
+      "viewport": 390,
+      "width": 390,
+      "minCardWidth": 346,
+      "cardOverflow": false,
+      "heroFont": "27.2px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 318.1875,
+      "gridWidth": 346
+    },
+    {
+      "viewport": 768,
+      "width": 768,
+      "minCardWidth": 354,
+      "cardOverflow": false,
+      "heroFont": "26.112px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 301,
+      "gridWidth": 724
+    },
+    {
+      "viewport": 1024,
+      "width": 1024,
+      "minCardWidth": 346,
+      "cardOverflow": false,
+      "heroFont": "34.816px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 301,
+      "gridWidth": 708
+    },
+    {
+      "viewport": 1440,
+      "width": 1440,
+      "minCardWidth": 364,
+      "cardOverflow": false,
+      "heroFont": "36.8px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 418.59375,
+      "gridWidth": 1124
+    },
+    {
+      "viewport": 1920,
+      "width": 1920,
+      "minCardWidth": 368,
+      "cardOverflow": false,
+      "heroFont": "36.8px",
+      "titleFont": "16.96px",
+      "localFonts": true,
+      "images": [],
+      "heroHeight": 421,
+      "gridWidth": 1136
+    }
+  ],
+  "checked": 62,
+  "errors": [],
+  "broken": [],
+  "primaryFlow": "keyboard opens UP PGT; back link returns to hub; mobile menu opens and Escape closes",
+  "comingSoon": "all 13 cards are non-interactive and visibly labelled",
+  "passed": true
+}

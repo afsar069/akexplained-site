@@ -4,7 +4,15 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (Anglo-Norman MCQ plan of three sets added on the feature branch, not live and not on main. Before that: Old English Set 6 loaded as a login set, medium and hard; the owner approved merging PR #11 and publishing it. Sets 4 and 5, the login layer, lock buttons and login return flow are already on main.)_
+_Last updated: 2026-11-07 (PGT exam hub built on `feat/pgt-exam-hub`, awaiting a separate live instruction. Existing Anglo-Norman MCQ planning and Old English Set 6 work remain unchanged.)_
+
+## PGT exam hub — built, not yet published (2026-11-07)
+
+- The owner approved the revised visual in `docs/pgt-hub/reference.png` and asked to build it. `/exams/pgt/` has the illustrated header, one active full-width UP PGT button, ten other state cards and three central cards. All thirteen other destinations say Coming soon and are non-interactive; no extra study/practice sections on the hub.
+- UP PGT opens `/exams/pgt/up-pgt/`, retaining the previous general English study guidance without claiming it is an official UP-specific syllabus. All seven literature areas and the preparation method remain. Outdated UPSESSB and cross-board weighting assertions are not repeated as UP facts; UPESSC comes from the owner's list.
+- Uses `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`, `_data/pgtExams.json`, `assets/pgt.css`, optimized generated artwork and licensed icons. Existing global navigation, NET pages, quizzes and backend are unchanged.
+- Build and browser checks passed at 320, 390, 768, 1024, 1440 and 1920px: keyboard UP navigation, back navigation, mobile menu, local fonts/images, zero overflow, zero console errors and 62 resolved local references. Visual evidence: `docs/pgt-hub/`; latest `design-qa.md` result: passed.
+- Publish only on the owner's explicit live instruction, following `CLAUDE.md` rule 5.
 
 ## Anglo-Norman MCQ plan — three sets, none live yet (2026-11-07)
 
