@@ -145,6 +145,6 @@ final result: passed
 
 - P3: a generated mock does not establish an exact font file or pixel-perfect paper texture. The implementation uses the site's real Literata family and clean ivory surfaces while preserving the design's hierarchy and proportions.
 - The shared footer remains the site's existing footer, outside the selected hub visual. Full-page screenshots show the fixed sidebar only within the captured viewport; this is browser screenshot behavior, not a missing sidebar during scrolling.
-- Live production verification is blocked by the environment network policy. This feature branch has not been published.
+- Live production verification is blocked by the environment network policy. The owner approved publication of PR #9 on 7 November 2026; the visual QA above covers its tested implementation.
 
 final result: passed
