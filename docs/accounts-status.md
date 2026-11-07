@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned on the branch)._
+_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -90,7 +90,7 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch
-- **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`, NOT on `main`; the owner sent a
+- **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day; the owner sent a
   screenshot of `/login/?path=1`). Causes found: `login-page.css` had `.pathscreen{padding:0}` while the card border stayed, so text
   touched the border; the big heading above still said "Welcome back"; `site.css` `section{padding:40px 0}` added 40px above and below
   every path group; "Coming soon" rows were taller and louder than the rows you can pick; and the Literature Journey sat at the very
