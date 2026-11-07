@@ -101,7 +101,7 @@ Done at the owner's word after a full check of the live dashboard (see the list 
     `paid` rows invisible, no write from a client, wrong-shape body refused.
   - **Code (now on `main`):** `assets/cbt.js` (reads a login set from the table; guests see "Log in to take this test"),
     `assets/login.js` (`?next=` returns a returning person to the page; same-site paths only), `_data/mcqAges.js` (`access`,
-    `rev`, "Login needed" tag, build stops on `"paid"`), the five MCQ templates (`data-gated`), `tools/build-syllabus.js`
+    `rev`, build stops on `"paid"`), the five MCQ templates (`data-gated`), `tools/build-syllabus.js`
     (a login set counts `count x levels`), `tools/mcq-skill/make_gated_sql.py` (checks the files, writes the load SQL).
   - **Text:** About, Privacy (Last updated 7 Nov 2026) and Terms (Accounts) now say "some MCQ sets ask you to log in first".
     They went live in the same merge as Set 4, so they are true. `/terms/` and `/contact/` still say "no paid tier",
@@ -129,7 +129,7 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   - **Not done / next (after Set 4):** the paid layer (entitlements, promo codes, gateway) is not built; the owner will
     choose which sets become paid. Point 7 of the owner's message of 2026-11-07 was empty. The branch was merged on
     2026-11-07 (Set 4 and the About / Privacy / Terms text went live together). Still to check by the owner on the live
-    site: the hub shows Set 4 with "Login needed"; Set 4 shows "Log in to take this test" when logged out and the test
+    site: the hub row of Set 4 has no "Login needed" tag (removed at the owner's word on 2026-11-07; login is asked only after Start); Set 4 shows "Log in to take this test" when logged out and the test
     when logged in; `/privacy/` says "Last updated: 7 November 2026".
 - **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day; the owner sent a
   screenshot of `/login/?path=1`). Causes found: `login-page.css` had `.pathscreen{padding:0}` while the card border stayed, so text
