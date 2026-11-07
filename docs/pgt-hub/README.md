@@ -22,3 +22,7 @@ The owner selected `reference.png` on 2026-11-07 and asked to build it. Implemen
 Primary artifacts: `reference.png`, `desktop.png`, `mobile.png`, `tablet.png`, `up-pgt.png`, `up-pgt-mobile.png`. Combined comparisons: `comparison.png`, `controls-comparison.png`. Initial captures document the width/spacing fixes. Current root `design-qa.md` contains the complete findings/history.
 
 `checks.json` records six screen widths, font/image/overflow checks, keyboard/menu flow, console results and 62 resolved local references. `npm run build` passed. Chromium/Playwright ran against `_site` served on port 4173 with Supabase configuration mocked. These captures do not claim the changes are live.
+
+## Approved phone refinement
+
+The owner approved desktop unchanged and requested text over the left side of the phone hero image, accepting smaller type. Only max-width 760px hero CSS changed. `mobile-hero-comparison.png` shows the old stacked layout beside the overlay at 390px; `mobile-top.png` shows the page context. `mobile-hero-checks.json` verifies containment at six widths and confirms a fresh desktop screenshot is pixel-identical to the approved pre-edit capture.

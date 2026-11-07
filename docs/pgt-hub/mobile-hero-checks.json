@@ -1,0 +1,77 @@
+{
+  "results": [
+    {
+      "width": 320,
+      "heroHeight": 115.28125,
+      "artHeight": 114.28125,
+      "copyLeft": 14,
+      "copyRight": 174.59375,
+      "copyTop": 14.796875,
+      "copyBottom": 99.484375,
+      "artWidth": 320,
+      "titleSize": "13px",
+      "overflow": false
+    },
+    {
+      "width": 360,
+      "heroHeight": 129.5625,
+      "artHeight": 128.5625,
+      "copyLeft": 14,
+      "copyRight": 196.59375,
+      "copyTop": 21,
+      "copyBottom": 107.546875,
+      "artWidth": 360,
+      "titleSize": "14.04px",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "heroHeight": 140.28125,
+      "artHeight": 139.28125,
+      "copyLeft": 14,
+      "copyRight": 213.09375,
+      "copyTop": 24.296875,
+      "copyBottom": 114.984375,
+      "artWidth": 390,
+      "titleSize": "15.21px",
+      "overflow": false
+    },
+    {
+      "width": 430,
+      "heroHeight": 154.5625,
+      "artHeight": 153.5625,
+      "copyLeft": 14,
+      "copyRight": 235.09375,
+      "copyTop": 28.375,
+      "copyBottom": 125.171875,
+      "artWidth": 430,
+      "titleSize": "16.77px",
+      "overflow": false
+    },
+    {
+      "width": 600,
+      "heroHeight": 215.28125,
+      "artHeight": 214.28125,
+      "copyLeft": 14,
+      "copyRight": 328.59375,
+      "copyTop": 44.765625,
+      "copyBottom": 169.515625,
+      "artWidth": 600,
+      "titleSize": "23.4px",
+      "overflow": false
+    },
+    {
+      "width": 760,
+      "heroHeight": 272.421875,
+      "artHeight": 271.421875,
+      "copyLeft": 14,
+      "copyRight": 416.59375,
+      "copyTop": 67.21875,
+      "copyBottom": 204.203125,
+      "artWidth": 760,
+      "titleSize": "26px",
+      "overflow": false
+    }
+  ],
+  "desktopPixelsUnchanged": true
+}

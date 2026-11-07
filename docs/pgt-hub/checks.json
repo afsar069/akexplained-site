@@ -5,11 +5,11 @@
       "width": 320,
       "minCardWidth": 276,
       "cardOverflow": false,
-      "heroFont": "27.2px",
+      "heroFont": "13px",
       "titleFont": "16.96px",
       "localFonts": true,
       "images": [],
-      "heroHeight": 325.828125,
+      "heroHeight": 115.28125,
       "gridWidth": 276
     },
     {
@@ -17,11 +17,11 @@
       "width": 390,
       "minCardWidth": 346,
       "cardOverflow": false,
-      "heroFont": "27.2px",
+      "heroFont": "15.21px",
       "titleFont": "16.96px",
       "localFonts": true,
       "images": [],
-      "heroHeight": 318.1875,
+      "heroHeight": 140.28125,
       "gridWidth": 346
     },
     {

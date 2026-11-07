@@ -43,6 +43,15 @@ final result: passed
 - P3: regenerated illustration and institutional library icon are not identical source pixels. Typography/sidebar dimensions intentionally follow the existing site. No mobile mock was supplied; the responsive arrangement was designed and browser-checked.
 - Live-domain capture is unavailable under this environment's network policy. These are local browser captures, not a claim of production publication. No backend/account behavior changed.
 
+## Phone hero revision — 2026-11-07
+
+- The owner approved desktop without changes and requested smaller phone text over the left side of the illustration, replacing the earlier stacked mobile adaptation.
+- Changed only hero rules within max-width 760px. The illustration stays behind live HTML text, at a 2.8:1 proportion, with a 55%-wide left text column.
+- Compared `docs/pgt-hub/mobile-hero-comparison.png`: before left and revised right at the same 390px width, opened together. Final detail: `mobile-hero.png`; page context: `mobile-top.png` and refreshed `mobile.png`.
+- At 320, 360, 390, 430, 600 and 760px, the text stays within the illustration and left of 60% of its width, with no horizontal overflow. At 390px the hero is 140.28px high and the heading is 15.21px. Small hero typography is the owner's explicit preference; other controls retain their sizes.
+- A fresh 1440px desktop screenshot is identical in decoded pixels to the approved pre-edit capture. The original six-width navigation/link/font/image checks and Eleventy build passed again. Results: `checks.json` and `mobile-hero-checks.json`.
+- No actionable P0/P1/P2 findings remain. final result: passed.
+
 ## Implementation checklist
 
 - [x] Approved hero, active UP button and all 13 Coming soon cards.

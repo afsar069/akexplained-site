@@ -13,6 +13,7 @@ _Last updated: 2026-11-07 (PGT exam hub built on `feat/pgt-exam-hub`, awaiting a
 - Uses `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`, `_data/pgtExams.json`, `assets/pgt.css`, optimized generated artwork and licensed icons. Existing global navigation, NET pages, quizzes and backend are unchanged.
 - Build and browser checks passed at 320, 390, 768, 1024, 1440 and 1920px: keyboard UP navigation, back navigation, mobile menu, local fonts/images, zero overflow, zero console errors and 62 resolved local references. Visual evidence: `docs/pgt-hub/`; latest `design-qa.md` result: passed.
 - Publish only on the owner's explicit live instruction, following `CLAUDE.md` rule 5.
+- Phone refinement: the owner approved desktop unchanged and asked for smaller hero text over the left side of the image on phones. Updated only the max-width 760px hero rules. Checked 320–760px text containment and confirmed the 1440px desktop screenshot is pixel-identical to the approved capture. Evidence: `docs/pgt-hub/mobile-top.png`, `mobile-hero-comparison.png`, `mobile-hero-checks.json`. Still pending publication in PR #13.
 
 ## Anglo-Norman MCQ plan — three sets, none live yet (2026-11-07)
 
