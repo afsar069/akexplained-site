@@ -94,3 +94,57 @@ First visual comparison passed. No P0/P1/P2 visual fixes were necessary. Browser
 None required for the requested scope. Live deployment has not been verified from this environment.
 
 final result: passed
+
+---
+
+# NET preparation hub — 7 November 2026
+
+## Source and implementation evidence
+
+- Selected visual truth: `docs/net-hub/reference.png` (959 × 1639 px), generated from and selected in this chat. Original: `/workspace/generated_images/exec-a3803080-cdc2-48b4-be4c-dad9a4cdb15c.png`.
+- Desktop implementation: `docs/net-hub/desktop.png` (1440 × 2799 px full-page capture; 1440 × 1000 CSS viewport, device scale factor 1).
+- Mobile implementation: `docs/net-hub/mobile.png` (390 × 3769 px full-page capture; 390 × 1000 CSS viewport, device scale factor 1).
+- Full-view combined comparison: `docs/net-hub/comparison.png` (1620 × 1728 px). Source main content is on the left, implementation on the right.
+- Normalization: the source main-content region (x=200, width=759 px) and implementation main-content region (x=272, width=1168 CSS px) were both resized to 800 px wide, preserving their own aspect ratios. Shared navigation/sidebar differences caused by source image scaling are excluded from this comparison. The actual sidebar stays at its existing 272 CSS px width.
+- Focused combined comparison: `docs/net-hub/resources-comparison.png` (1104 × 628 px), source above and implemented resource links below. This shows all resource labels, icon treatment, dividers and status copy at a readable scale.
+- Related-page captures: `/workspace/net-hub-review/about-final.png`, `/workspace/net-hub-review/syllabus-final.png`, `/workspace/net-hub-review/books-final.png`; mobile examples also captured in that folder.
+- State: logged-out user, default top-of-page view, menu closed. Actual Chromium-rendered Eleventy build, external services mocked; local licensed fonts fully loaded.
+
+## Required fidelity surfaces
+
+- **Typography:** self-hosted Literata normal/italic and Source Sans 3 follow the selected editorial serif/sans system. Heading hierarchy, italic introduction, paper labels, action titles and helper text match the visual roles. Resource titles fit on one line at the 1440 px target after the correction below; mobile wrapping is intentional and unclipped.
+- **Spacing/layout:** the existing full banner leads into the large introduction, four resource rows in two columns, two paper groups, a teal mock-test band and full-width text overview. The source's grouping, generous gaps, small radii, icon/text separators and fine gold rules are retained. Below 720 px of content width the resources and paper groups stack. Mobile retains readable HTML text under the banner, as established before this redesign.
+- **Colors/tokens:** warm ivory/cream, navy headings, teal actions, pale sage paper headers and muted gold rules/status text use existing site tokens. Flat CSS surfaces replace the concept image's incidental painted shading; no additional decorative illustration was introduced under the banner.
+- **Image/icon fidelity:** the actual supplied banner and portrait logo are reused, uncropped and unstretched. Standard icons come from licensed Feather SVGs; the Mock Tests target-arrow comes from Tabler. Only stroke color/weight and the lightning fill were styled to match. No handcrafted SVG or CSS illustration substitutes for artwork. The icon sets and fonts carry their original licenses.
+- **Copy/content:** all ten requested functions appear in the correct groups. The user's subsequent availability instruction intentionally replaces eight helper labels and the mock-test CTA with “Coming soon”. About and Syllabus have real pages; each other action opens its own honest coming-soon page. Shared quiz pages are not changed or gated. The full-width introduction has no painting. The fuller exam information and English unit guide now live on the related pages.
+
+## Comparison history and corrections
+
+1. First combined review: `/workspace/net-hub-review/comparison-first.png`. **[P2]** “Download Complete Syllabus” wrapped at the desktop target while the selected design kept it on one line. Result at this stage: blocked. Fix: scoped resource-title scale reduced to a maximum of 26 px, preserving the two-column layout and helper line. The mock-test icon was also refined to a library target-arrow and the lightning fill matched to the reference.
+2. Post-fix Chromium captures were produced and reviewed in the final combined full-view and focused comparisons listed above. The download label now fits, the icon matches the intended motif, no labels clip, and all required status changes are visible. No actionable P0/P1/P2 difference remains.
+
+## Functional verification
+
+- Eleventy build passes, including its existing topic/syllabus checks.
+- Hub browser checks at 320, 390, 768, 1024, 1440, 1920 and 2560 px: no horizontal overflow; all images and local fonts load; one semantic H1 per page.
+- All ten hub actions were clicked through to their destination and back: two available information pages and eight resource-specific coming-soon pages.
+- Related pages checked at 320, 390 and 768 px. Both Paper 2 and Paper 1 contain ten syllabus units/headings. Native details expand/collapse with Enter; the Paper 1 jump link works.
+- Mobile menu opens and closes with Escape. About navigation works by keyboard. Print hides the raster hero and retains the HTML heading.
+- All 36 local link paths resolve to built files or configured redirects. No local HTTP error, console error or uncaught page error was observed.
+- Only the two information pages enter the sitemap; all eight coming-soon pages have `noindex,follow`.
+- `docs/` and this report remain excluded from the public build. The unrelated quiz engine, question files and access rules are untouched.
+
+## Implementation checklist
+
+- [x] Selected design implemented as responsive, semantic HTML/CSS.
+- [x] Supplied artwork, matching licensed icons and local fonts installed.
+- [x] About, Syllabus and all coming-soon destinations implemented.
+- [x] Desktop/mobile visual comparison and primary journeys passed.
+
+## Follow-up polish and limitations
+
+- P3: a generated mock does not establish an exact font file or pixel-perfect paper texture. The implementation uses the site's real Literata family and clean ivory surfaces while preserving the design's hierarchy and proportions.
+- The shared footer remains the site's existing footer, outside the selected hub visual. Full-page screenshots show the fixed sidebar only within the captured viewport; this is browser screenshot behavior, not a missing sidebar during scrolling.
+- Live production verification is blocked by the environment network policy. This feature branch has not been published.
+
+final result: passed

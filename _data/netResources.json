@@ -1,0 +1,12 @@
+[
+  {"slug":"about","title":"About UGC-NET","group":"resources","icon":"info","description":"Exam pattern, eligibility and key details","available":true},
+  {"slug":"syllabus","title":"View NET Syllabus","group":"resources","icon":"book-open","description":"Explore the syllabus before you begin","available":true},
+  {"slug":"books","title":"Download Important Books","group":"resources","icon":"layers","description":"Important books for NET preparation will be added here.","available":false},
+  {"slug":"syllabus-download","title":"Download Complete Syllabus","group":"resources","icon":"file-text","description":"The complete syllabus download will be added here.","available":false},
+  {"slug":"english-mcqs","title":"English Literature MCQs","group":"paper2","icon":"layers","description":"English Literature multiple-choice practice will be added here.","available":false},
+  {"slug":"english-pyqs","title":"English Literature PYQs","group":"paper2","icon":"book-open","description":"English Literature previous-year questions will be added here.","available":false},
+  {"slug":"british-ages-quick-mcqs","title":"British Ages Quick MCQs","group":"paper2","icon":"zap","description":"Quick MCQ practice across British literary ages will be added here.","available":false},
+  {"slug":"paper-1-mcqs","title":"Paper 1 MCQs","group":"paper1","icon":"check-square","description":"Paper 1 multiple-choice practice will be added here.","available":false},
+  {"slug":"paper-1-pyqs","title":"Paper 1 PYQs","group":"paper1","icon":"file-text","description":"Paper 1 previous-year questions will be added here.","available":false},
+  {"slug":"mock-tests","title":"Mock Tests","group":"mock","icon":"target","description":"NET mock tests will be added here.","available":false}
+]

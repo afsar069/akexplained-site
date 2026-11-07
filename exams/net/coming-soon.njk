@@ -1,0 +1,22 @@
+---
+layout: net-layout.njk
+pagination:
+  data: netComingSoon
+  size: 1
+  alias: resource
+permalink: "/exams/net/{{ resource.slug }}/index.html"
+eleventyComputed:
+  title: "{{ resource.title }}"
+  description: "{{ resource.description }}"
+coming_soon: true
+---
+<section class="net-coming-soon" aria-labelledby="net-coming-title">
+  <img src="/assets/icons/feather/{{ resource.icon }}.svg" alt="" width="64" height="64">
+  <p class="net-coming-label"><img src="/assets/icons/feather/clock.svg" alt="" width="18" height="18">Coming soon</p>
+  <h2 id="net-coming-title">This resource is being prepared.</h2>
+  <p>For now, explore the exam information and syllabus to plan your preparation.</p>
+  <div class="net-detail-links">
+    <a href="/exams/net/about/">About UGC-NET<img src="/assets/icons/feather/arrow-right.svg" alt="" width="20" height="20"></a>
+    <a href="/exams/net/syllabus/">View NET Syllabus<img src="/assets/icons/feather/arrow-right.svg" alt="" width="20" height="20"></a>
+  </div>
+</section>

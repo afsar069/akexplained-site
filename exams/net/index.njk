@@ -1,0 +1,62 @@
+---
+layout: net-layout.njk
+title: UGC-NET English Literature — Preparation Hub
+description: Find UGC-NET English exam information, the syllabus, downloads, Paper 1 and Paper 2 practice, and mock tests in one place.
+net_hub: true
+---
+{% from "net-action.njk" import action %}
+<section class="pagehead pagehead-net" aria-labelledby="net-title">
+  <img class="net-banner" src="/assets/exams/net-banner-1168.webp"
+    srcset="/assets/exams/net-banner-768.webp 768w, /assets/exams/net-banner-1168.webp 1168w, /assets/exams/net-banner-1915.webp 1915w"
+    sizes="(min-width: 2187px) 1915px, (min-width: 1024px) calc(100vw - 272px), 100vw"
+    width="1915" height="821" alt="" fetchpriority="high" decoding="async">
+  <div class="wrap net-heading">
+    <p class="eyebrow">UGC-NET / JRF · Subject code 30</p>
+    <h1 id="net-title">UGC-NET / JRF English Literature</h1>
+    <p class="lede">Your exam information, syllabus and practice resources, in one place.</p>
+  </div>
+</section>
+
+<div class="net-hub">
+  <header class="net-hub-intro">
+    <h2>Choose your next step.</h2>
+    <p>Find your resources. Practise by paper. Prepare with a plan.</p>
+  </header>
+
+  <section class="net-hub-section" aria-labelledby="net-resources-title">
+    <h2 id="net-resources-title" class="net-section-title">Know the exam &amp; get your resources</h2>
+    <div class="net-resource-grid">
+      {% for item in netResources %}{% if item.group == 'resources' %}{{ action(item) }}{% endif %}{% endfor %}
+    </div>
+  </section>
+
+  <section class="net-hub-section net-practice" aria-labelledby="net-practice-title">
+    <h2 id="net-practice-title" class="net-section-title">Practise for your paper</h2>
+    <div class="net-paper-grid">
+      <section class="net-paper" aria-labelledby="net-paper-2-title">
+        <header class="net-paper-head"><p>Paper 2</p><h3 id="net-paper-2-title">English Literature</h3></header>
+        <div class="net-paper-actions">
+          {% for item in netResources %}{% if item.group == 'paper2' %}{{ action(item, 'net-action-primary' if item.slug == 'english-mcqs' else '') }}{% endif %}{% endfor %}
+        </div>
+      </section>
+      <section class="net-paper" aria-labelledby="net-paper-1-title">
+        <header class="net-paper-head"><p>Paper 1</p><h3 id="net-paper-1-title">General Paper</h3></header>
+        <div class="net-paper-actions">
+          {% for item in netResources %}{% if item.group == 'paper1' %}{{ action(item) }}{% endif %}{% endfor %}
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section class="net-mock" aria-labelledby="net-mock-title">
+    <img class="net-mock-icon" src="/assets/icons/tabler/target-arrow.svg" alt="" width="64" height="64">
+    <div class="net-mock-copy"><h2 id="net-mock-title">Mock Tests</h2><p>Put your preparation into practice.</p></div>
+    <a href="/exams/net/mock-tests/" class="net-mock-link" aria-label="Mock Tests — Coming soon">Coming soon<img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24"></a>
+  </section>
+
+  <section class="net-overview" aria-labelledby="net-overview-title">
+    <h2 id="net-overview-title">What the examination is</h2>
+    <p>The UGC National Eligibility Test is conducted by the National Testing Agency to determine eligibility for Assistant Professor and for the Junior Research Fellowship. English is subject code 30. The test is held in Computer-Based Test mode, and both papers are taken in a single uninterrupted sitting.</p>
+    <p>NET results are also used for Ph.D. admission. Your qualification category and eligibility depend on the current NTA rules. <a href="/exams/net/about/">Read about the exam</a> before you apply.</p>
+  </section>
+</div>
