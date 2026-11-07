@@ -2,6 +2,12 @@
 
 final result: passed
 
+## UP PGT resource cards — 2026-11-07
+
+- Selected visual source: `docs/up-pgt-cards/reference.png`; implementation capture: `docs/up-pgt-cards/1440.png`; side-by-side evidence: `docs/up-pgt-cards/comparison.png`. The source image is a visual proposal rather than a pixel-spec screenshot, so the approved existing faded hero and shared site chrome are authoritative.
+- The final desktop view has the full-width teal course card above four cream cards in a two-column grid, matching the proposed hierarchy, palette and icon placement. The first comparison exposed navy course-title text and black resource icons; both were corrected and recaptured. The final image retains small Coming soon labels so unfinished resources are described truthfully, plus a link to the preserved study guide.
+- Browser captures at 390px and 1440px show the final responsive layout and shared footer. No actionable P0/P1/P2 visual differences remain; final result: passed.
+
 ## UP PGT detail header — 2026-11-07
 
 - Reference: the PGT hub's existing illustration and live text overlay. The detail page uses that same art with a 58% image opacity and a shorter desktop hero so the breadcrumb and back link clearly mark it as a subpage. The four study sections and shared footer remain below.

@@ -1,0 +1,7 @@
+[
+  {"slug":"complete-course","title":"Complete course in 60 days","description":"A focused plan for your English preparation.","icon":"calendar-check"},
+  {"slug":"syllabus-download","title":"Download Syllabus","description":"See the topics you need to prepare.","icon":"file-download"},
+  {"slug":"mcqs","title":"MCQs","description":"Practise your English knowledge.","icon":"list-check"},
+  {"slug":"mock-tests","title":"Mock Tests","description":"Test your preparation.","icon":"stopwatch"},
+  {"slug":"pyqs","title":"PYQs","description":"Revise with previous years' questions.","icon":"files"}
+]

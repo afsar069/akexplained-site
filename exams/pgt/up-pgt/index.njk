@@ -3,62 +3,25 @@ layout: pgt-layout.njk
 title: UP PGT English
 description: English Literature study guidance for UP PGT preparation.
 crumb_label: UP PGT
+pgt_resources: true
 ---
-<section class="pgt-reading" aria-labelledby="up-pgt-about">
-  <h2 id="up-pgt-about">About UP PGT English</h2>
-  <p><strong>UP PGT</strong> is the Uttar Pradesh Post Graduate Teacher recruitment conducted by the Uttar Pradesh Education Service Selection Commission (<strong>UPESSC</strong>).</p>
-  <p>PGT stands for <strong>Post Graduate Teacher</strong>. A PGT teaches English at the senior secondary level — Classes XI and XII.</p>
-  <p>Use this general English study guide to plan your reading and revision. It is not an official UP PGT syllabus. Check the current UPESSC notification for the required qualifications, eligibility conditions, exam pattern, marking and prescribed texts.</p>
-</section>
-
-<section class="pgt-reading" aria-labelledby="up-pgt-study">
-  <h2 id="up-pgt-study">English study areas</h2>
-  <p>Match these broad English study areas to the official syllabus for the recruitment you are taking.</p>
-  <div class="tablewrap"><table>
-    <thead><tr><th scope="col">Study area</th><th scope="col">What to revise</th></tr></thead>
-    <tbody>
-      <tr><th scope="row">Reading Comprehension</th><td>Unseen prose, poetry and factual passages. Inference, tone, vocabulary and summarising.</td></tr>
-      <tr><th scope="row">Writing Skills</th><td>Letters, notices, reports, articles, speeches and debates.</td></tr>
-      <tr><th scope="row">Applied Grammar</th><td>Tenses, voice, narration, transformation, prepositions, agreement, punctuation, idioms and phrases.</td></tr>
-      <tr><th scope="row">Literature</th><td>Literary ages, writers, works, forms, devices, criticism and movements.</td></tr>
-      <tr><th scope="row">Other sections</th><td>Revise reasoning, general awareness, computer literacy or pedagogy only where the official syllabus includes them.</td></tr>
-    </tbody>
-  </table></div>
-</section>
-
-<section class="pgt-reading" aria-labelledby="up-pgt-literature">
-  <h2 id="up-pgt-literature">Literature preparation</h2>
-  <p>Use the prescribed syllabus to decide which of these reading areas belong in your UP PGT preparation.</p>
-
-  <h3>1. History of English literature</h3>
-  <p>The full sweep from Old English to the present — Old English, the Age of Chaucer, the Renaissance, the Metaphysicals, the Neoclassical Age, the Romantic Movement, the Victorian Age, Modernism and Postmodernism. Revise period boundaries, defining texts and which writer belongs where.</p>
-
-  <h3>2. Major British writers</h3>
-  <p>Shakespeare's major tragedies, comedies and sonnets. Beyond him: Chaucer, Marlowe, Donne, Milton, Dryden, Pope, Swift, Johnson, Wordsworth, Coleridge, Byron, Shelley, Keats, Lamb, Austen, Dickens, the Brontës, Hardy, Tennyson, Browning, Arnold, Wilde, Shaw, Yeats, Eliot, Woolf, Joyce, Auden, Golding and Orwell.</p>
-
-  <h3>3. American literature</h3>
-  <p>Poe, Whitman, Dickinson, Frost, Hemingway, Faulkner, Fitzgerald, Steinbeck, O'Neill, Arthur Miller, Tennessee Williams and Toni Morrison.</p>
-
-  <h3>4. Indian writing in English</h3>
-  <p>Tagore, Sri Aurobindo, Sarojini Naidu, Nissim Ezekiel, Kamala Das, A. K. Ramanujan, R. K. Narayan, Mulk Raj Anand, Raja Rao, Anita Desai, Salman Rushdie and Arundhati Roy.</p>
-
-  <h3>5. World and postcolonial literature</h3>
-  <p>Writers from Africa, the Caribbean, Australia, South Asia and Latin America — Chinua Achebe, Wole Soyinka, Derek Walcott, V. S. Naipaul, Pablo Neruda and Gabriel García Márquez.</p>
-
-  <h3>6. Literary forms, devices and terms</h3>
-  <p>Poetry, prose, drama and fiction as forms; figures of speech; metre and prosody; the sonnet, ode, elegy, ballad, epic, lyric and dramatic monologue; tragedy, comedy and the terms that describe them.</p>
-
-  <h3>7. Criticism and movements</h3>
-  <p>Classicism, Romanticism, Realism, Naturalism, Aestheticism, Modernism, Postmodernism, Feminism, Marxism, Structuralism, Post-structuralism and Postcolonialism — with the critics attached to each.</p>
-</section>
-
-<section class="pgt-reading" aria-labelledby="up-pgt-method">
-  <h2 id="up-pgt-method">A working method</h2>
-  <ol>
-    <li><strong>Build the timeline before the texts.</strong> Place writers, works and movements in their literary ages before revising individual details.</li>
-    <li><strong>Read the prescribed texts.</strong> Use the current official syllabus to choose your reading. Revisit the school texts where they are prescribed, then study them at the depth the exam requires.</li>
-    <li><strong>Work through previous years' papers early.</strong> Use past questions to find gaps in your preparation and guide your revision.</li>
-  </ol>
-  <p>Always use the official notification and syllabus for your recruitment. Marks, duration, negative marking and prescribed texts must be checked there.</p>
-  <p><a href="/exams/pgt/">Return to the PGT exam hub</a></p>
+<section class="pgt-resource-hub" aria-label="UP PGT preparation resources">
+  <a class="pgt-course-card" href="/exams/pgt/up-pgt/complete-course/" aria-label="Complete course in 60 days — coming soon">
+    <span class="pgt-course-icon" aria-hidden="true"><img src="/assets/icons/tabler/calendar-check.svg" alt="" width="64" height="64"></span>
+    <span class="pgt-course-copy">
+      <strong>Complete course in 60 days</strong>
+      <span>A focused plan for your English preparation.</span>
+    </span>
+    <span class="pgt-course-action">Coming soon<img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24"></span>
+  </a>
+  <div class="pgt-resource-grid">
+    {% for resource in pgtResources %}{% if resource.slug != 'complete-course' %}
+    <a class="pgt-resource-card" href="/exams/pgt/up-pgt/{{ resource.slug }}/" aria-label="{{ resource.title }} — coming soon">
+      <span class="pgt-resource-icon" aria-hidden="true"><img src="/assets/icons/tabler/{{ resource.icon }}.svg" alt="" width="52" height="52"></span>
+      <span class="pgt-resource-copy"><strong>{{ resource.title }}</strong><span>{{ resource.description }}</span><span class="pgt-resource-status">Coming soon</span></span>
+      <img class="pgt-resource-arrow" src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26">
+    </a>
+    {% endif %}{% endfor %}
+  </div>
+  <p class="pgt-guide-link"><a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide<img src="/assets/icons/feather/arrow-right.svg" alt="" width="18" height="18"></a></p>
 </section>
