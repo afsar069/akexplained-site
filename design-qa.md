@@ -2,6 +2,11 @@
 
 final result: passed
 
+## UP PGT type and spacing correction — 2026-11-07
+
+- Captured the published UP PGT page and the PGT and NET hubs in the current browser run at 390px and 1440px. The hero heading and shared content insets already agreed. The four resource titles, helpers and icons were too large compared with both hubs; see `docs/up-pgt-card-scale/before-metrics.json` and `comparison.md`.
+- Aligned resource typography, icon width, card dimensions and featured phone title with the PGT hub. Rebuilt and recaptured at 320, 390, 768, 1024 and 1440px. Opened `docs/up-pgt-card-scale/side-by-side.png` to compare the final desktop page against the current PGT hub at the same viewport. `checks.json`, `up-390.png` and `up-1440.png` show the final result, with no overflow or browser errors. final result: passed.
+
 ## UP PGT resource cards — 2026-11-07
 
 - Selected visual source: `docs/up-pgt-cards/reference.png`; implementation capture: `docs/up-pgt-cards/1440.png`; side-by-side evidence: `docs/up-pgt-cards/comparison.png`. The source image is a visual proposal rather than a pixel-spec screenshot, so the approved existing faded hero and shared site chrome are authoritative.

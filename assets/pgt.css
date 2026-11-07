@@ -16,25 +16,25 @@
 .pgt-hero-detail .pgt-hero-art img{opacity:.58}
 .pgt-hero-detail .pgt-hero-inner{min-height:clamp(230px,21vw,300px)}
 .pgt-resource-hub{padding:30px 0 24px}
-.pgt-course-card{display:flex;align-items:center;gap:32px;min-height:125px;padding:18px 30px;margin-bottom:18px;border-bottom:6px solid #DDAA38;border-radius:9px;background:var(--teal);color:#fff;text-decoration:none}
+.pgt-course-card{display:flex;align-items:center;gap:26px;min-height:122px;padding:24px 30px;margin-bottom:18px;border-bottom:5px solid #DDAA38;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none}
 .pgt-course-card:hover{background:var(--teal-dark);color:#fff}
 .pgt-course-card:focus-visible,.pgt-resource-card:focus-visible{outline:3px solid var(--teal-dark);outline-offset:4px}
-.pgt-course-icon{display:flex;align-items:center;flex:none;padding-right:30px;border-right:1px solid #A3D2C9}
-.pgt-course-icon img{filter:brightness(0) invert(1)}
+.pgt-course-icon{display:flex;align-items:center;flex:none;padding-right:26px;border-right:2px solid #DDAA38}
+.pgt-course-icon img{width:58px;height:58px;filter:brightness(0) invert(1)}
 .pgt-course-copy{display:flex;flex-direction:column;gap:4px;min-width:0;flex:1}
-.pgt-course-copy strong{font-family:var(--serif);font-size:clamp(1.4rem,2.3vw,2rem);font-weight:600;line-height:1.25;color:#fff}
+.pgt-course-copy strong{font-family:var(--serif);font-size:2rem;font-weight:600;line-height:1.25;color:#fff}
 .pgt-course-copy span{font-size:1.06rem;line-height:1.45}
 .pgt-course-action{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:8px 18px;border-radius:8px;background:var(--cream);color:var(--teal-dark);font-weight:700;white-space:nowrap}
-.pgt-resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.pgt-resource-card{display:flex;align-items:center;gap:24px;min-width:0;min-height:112px;padding:16px 26px;border:1px solid #C99748;border-radius:9px;background:var(--paper);color:var(--ink);text-decoration:none}
+.pgt-resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.pgt-resource-card{display:flex;align-items:center;gap:20px;min-width:0;min-height:114px;padding:18px 22px;border:1px solid #DCC298;border-radius:8px;background:var(--paper);color:var(--ink);text-decoration:none}
 .pgt-resource-card:hover{border-color:var(--teal);background:var(--teal-soft);color:var(--ink)}
-.pgt-resource-icon{display:flex;align-items:center;justify-content:flex-start;flex:0 0 86px;min-height:60px;border-right:1px solid #92BDB4}
-.pgt-resource-icon img{width:52px;height:52px}
+.pgt-resource-icon{display:flex;align-items:center;justify-content:flex-start;flex:0 0 58px;min-height:60px;border-right:1px solid #DCC298}
+.pgt-resource-icon img{width:34px;height:34px}
 .pgt-resource-icon img{filter:invert(32%) sepia(46%) saturate(936%) hue-rotate(133deg) brightness(83%)}
 .pgt-resource-copy{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
-.pgt-resource-copy strong{font-family:var(--serif);font-size:clamp(1.25rem,1.9vw,1.55rem);font-weight:600;line-height:1.25}
-.pgt-resource-copy > span:not(.pgt-resource-status){font-size:.98rem;line-height:1.4}
-.pgt-resource-status{font-size:.9rem;font-weight:600;color:#8C5B14}
+.pgt-resource-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.35}
+.pgt-resource-copy > span:not(.pgt-resource-status){font-size:.92rem;line-height:1.4}
+.pgt-resource-status{font-size:.92rem;line-height:1.4;font-weight:600;color:#8C5B14}
 .pgt-resource-arrow{flex:none}
 .pgt-guide-link{margin:20px 0 0;text-align:right}
 .pgt-guide-link a{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-underline-offset:3px}
@@ -122,11 +122,12 @@
   .pgt-course-icon{padding-right:16px}
   .pgt-course-icon img{width:44px;height:44px}
   .pgt-course-copy{flex:1 1 170px}
+  .pgt-course-copy strong{font-size:1.6rem}
+  .pgt-course-copy span{font-size:.98rem}
   .pgt-course-action{flex-basis:100%;justify-content:space-between}
   .pgt-resource-grid{grid-template-columns:1fr;gap:12px}
-  .pgt-resource-card{min-height:110px;gap:16px;padding:16px}
-  .pgt-resource-icon{flex-basis:64px}
-  .pgt-resource-icon img{width:40px;height:40px}
+  .pgt-resource-card{min-height:104px;gap:16px;padding:18px}
+  .pgt-resource-icon{flex-basis:48px}
   .pgt-guide-link{text-align:left}
   .pgt-hub{padding-top:24px;padding-bottom:36px}
   .pgt-featured{margin-bottom:32px}

@@ -1,0 +1,290 @@
+[
+  {
+    "name": "up",
+    "width": 390,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "15.21px",
+        "lineHeight": "19.0125px",
+        "width": 199,
+        "x": 14,
+        "height": 19
+      },
+      ".pgt-course-copy strong": {
+        "font": "22.4px",
+        "lineHeight": "28px",
+        "width": 231,
+        "x": 117,
+        "height": 56
+      },
+      ".pgt-course-copy span": {
+        "font": "16.96px",
+        "lineHeight": "24.592px",
+        "width": 231,
+        "x": 117,
+        "height": 49
+      },
+      ".pgt-resource-copy strong": {
+        "font": "20px",
+        "lineHeight": "25px",
+        "width": 190,
+        "x": 119,
+        "height": 25
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "15.68px",
+        "lineHeight": "21.952px",
+        "width": 190,
+        "x": 119,
+        "height": 44
+      },
+      ".pgt-resource-status": {
+        "font": "14.4px",
+        "lineHeight": "23.76px",
+        "width": 190,
+        "x": 119,
+        "height": 24
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 40,
+        "x": 39,
+        "height": 40
+      }
+    }
+  },
+  {
+    "name": "pgt",
+    "width": 390,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "15.21px",
+        "lineHeight": "19.0125px",
+        "width": 199,
+        "x": 14,
+        "height": 19
+      },
+      ".pgt-featured-title": {
+        "font": "25.6px",
+        "lineHeight": "32px",
+        "width": 226,
+        "x": 120,
+        "height": 32
+      },
+      ".pgt-featured-state": {
+        "font": "15.68px",
+        "lineHeight": "21.952px",
+        "width": 226,
+        "x": 120,
+        "height": 22
+      },
+      ".pgt-card-copy h3": {
+        "font": "16.96px",
+        "lineHeight": "22.896px",
+        "width": 84,
+        "x": 105,
+        "height": 23
+      },
+      ".pgt-card-state": {
+        "font": "14.72px",
+        "lineHeight": "20.608px",
+        "width": 84,
+        "x": 105,
+        "height": 21
+      },
+      ".pgt-card-status": {
+        "font": "14.72px",
+        "lineHeight": "20.608px",
+        "width": 84,
+        "x": 105,
+        "height": 21
+      },
+      ".pgt-card-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 34,
+        "x": 41,
+        "height": 34
+      }
+    }
+  },
+  {
+    "name": "net",
+    "width": 390,
+    "metrics": {
+      ".net-hero h1": {
+        "font": "15.21px",
+        "lineHeight": "19.0125px",
+        "width": 199,
+        "x": 14,
+        "height": 38
+      },
+      ".net-action-title": {
+        "font": "16.96px",
+        "lineHeight": "23.744px",
+        "width": 254,
+        "x": 80,
+        "height": 24
+      },
+      ".net-action-description": {
+        "font": "14.72px",
+        "lineHeight": "22.08px",
+        "width": 254,
+        "x": 80,
+        "height": 22
+      },
+      ".net-action-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 28,
+        "x": 22,
+        "height": 28
+      }
+    }
+  },
+  {
+    "name": "up",
+    "width": 1440,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "36.8px",
+        "lineHeight": "44.16px",
+        "width": 674,
+        "x": 294,
+        "height": 44
+      },
+      ".pgt-course-copy strong": {
+        "font": "32px",
+        "lineHeight": "40px",
+        "width": 739,
+        "x": 451,
+        "height": 40
+      },
+      ".pgt-course-copy span": {
+        "font": "16.96px",
+        "lineHeight": "24.592px",
+        "width": 739,
+        "x": 451,
+        "height": 25
+      },
+      ".pgt-resource-copy strong": {
+        "font": "24.8px",
+        "lineHeight": "31px",
+        "width": 339,
+        "x": 431,
+        "height": 31
+      },
+      ".pgt-resource-copy > span:not(.pgt-resource-status)": {
+        "font": "15.68px",
+        "lineHeight": "21.952px",
+        "width": 339,
+        "x": 431,
+        "height": 22
+      },
+      ".pgt-resource-status": {
+        "font": "14.4px",
+        "lineHeight": "23.76px",
+        "width": 339,
+        "x": 431,
+        "height": 24
+      },
+      ".pgt-resource-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 52,
+        "x": 321,
+        "height": 52
+      }
+    }
+  },
+  {
+    "name": "pgt",
+    "width": 1440,
+    "metrics": {
+      ".pgt-hero h1": {
+        "font": "36.8px",
+        "lineHeight": "44.16px",
+        "width": 674,
+        "x": 294,
+        "height": 44
+      },
+      ".pgt-featured-title": {
+        "font": "32px",
+        "lineHeight": "40px",
+        "width": 790,
+        "x": 436,
+        "height": 40
+      },
+      ".pgt-featured-state": {
+        "font": "16.96px",
+        "lineHeight": "23.744px",
+        "width": 790,
+        "x": 436,
+        "height": 24
+      },
+      ".pgt-card-copy h3": {
+        "font": "16.96px",
+        "lineHeight": "22.896px",
+        "width": 84,
+        "x": 395,
+        "height": 23
+      },
+      ".pgt-card-state": {
+        "font": "14.72px",
+        "lineHeight": "20.608px",
+        "width": 84,
+        "x": 395,
+        "height": 21
+      },
+      ".pgt-card-status": {
+        "font": "14.72px",
+        "lineHeight": "20.608px",
+        "width": 84,
+        "x": 395,
+        "height": 21
+      },
+      ".pgt-card-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 34,
+        "x": 317,
+        "height": 34
+      }
+    }
+  },
+  {
+    "name": "net",
+    "width": 1440,
+    "metrics": {
+      ".net-hero h1": {
+        "font": "36.8px",
+        "lineHeight": "44.16px",
+        "width": 674,
+        "x": 294,
+        "height": 88
+      },
+      ".net-action-title": {
+        "font": "16.96px",
+        "lineHeight": "23.744px",
+        "width": 462,
+        "x": 352,
+        "height": 24
+      },
+      ".net-action-description": {
+        "font": "14.72px",
+        "lineHeight": "22.08px",
+        "width": 462,
+        "x": 352,
+        "height": 22
+      },
+      ".net-action-icon img": {
+        "font": "16.5px",
+        "lineHeight": "27.225px",
+        "width": 28,
+        "x": 294,
+        "height": 28
+      }
+    }
+  }
+]
