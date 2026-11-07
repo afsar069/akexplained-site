@@ -12,6 +12,12 @@
   margin:0 auto;
 }
 
+/* Keep the examination introduction text-only below the supplied banner. */
+.pagehead-net + .intro-band::before{
+  content:none;
+  background:none;
+}
+
 /* Keep the real heading available to assistive technology and search engines. */
 .pagehead-net > .net-heading{
   position:absolute;
@@ -26,6 +32,9 @@
 
 /* The image's embedded text is small on phones; provide readable HTML below it. */
 @media (max-width:760px){
+  .pagehead-net + .intro-band{
+    padding-bottom:34px;
+  }
   .pagehead-net > .net-heading{
     position:relative;
     width:auto;
