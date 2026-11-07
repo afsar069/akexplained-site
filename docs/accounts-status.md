@@ -4,7 +4,16 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (Old English Set 6 loaded as a login set, medium and hard; the owner approved merging PR #11 and publishing it. Sets 4 and 5, the login layer, lock buttons and login return flow are already on main.)_
+_Last updated: 2026-11-07 (Anglo-Norman MCQ plan of three sets added on the feature branch, not live and not on main. Before that: Old English Set 6 loaded as a login set, medium and hard; the owner approved merging PR #11 and publishing it. Sets 4 and 5, the login layer, lock buttons and login return flow are already on main.)_
+
+## Anglo-Norman MCQ plan — three sets, none live yet (2026-11-07)
+
+- The owner asked for a plan like the Old English one, "Set 1, Set 2, Set 3", with the age prepared from the UGC NET point of view, and left the topics to Claude. The plan is in `_data/mcqSpec.json` (`anglo-norman`: three sets and five hub topics). No set has `live`, no access layer is set (free or login is decided when the files arrive, rule 15), and the hub stays `noindex`. It shows three "Coming soon" rows and the topic and level filters work.
+- Set 1 "Across the whole age" (easy, medium): the Conquest, the three languages, the chroniclers, the poems, the prose, the first plays. Set 2 "Poetry and romance" (medium, hard). Set 3 "Chronicles, religious writing and early drama" (medium, hard). 50 questions per level, so 300 questions in all if every level is filled.
+- Where the words come from: the scope line the owner approved for the Daily Anglo-Norman page ("It covers the Norman Conquest and its languages, Wace, Layamon, Marie de France, the Arthurian chronicles, the early romances and the religious prose") and the works named in the 100 Daily questions, plus the Middle English notes. Only works those sources already name are in the meta lines.
+- The NET side is **not** checked against the official syllabus text: `ugcnetonline.in` and the NTA site do not resolve from a cloud session. The unit mapping uses only the unit titles already on `/exams/net/syllabus/` (Unit I Drama, Unit II Poetry, Unit V Language). Check it against the official syllabus before calling a set "NET level" (Old English Set 6 carries the extra tag "UGC NET level"; add it only when the files match that pattern).
+- Left out on purpose: a criticism and scholarship set (the notes say almost nothing on criticism for this age; Old English had one as Set 6). Miracle and morality plays belong to the Fifteenth Century, so "early drama" here means only the Anglo-Norman play *Le Mystère d'Adam*. The Statute of Pleading (1362) and the Black Death (1348) fall in the Age of Chaucer.
+- The hub line "All 150 as one timed test · coming soon" adds the per-level count of each set (3 × 50), as for every age; it is not the number of questions if two levels are filled. Not changed.
 
 ## Old English Set 6 — login set, medium and hard (2026-11-07)
 
