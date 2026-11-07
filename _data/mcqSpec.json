@@ -171,7 +171,76 @@
       "notesName": "Middle English",
       "color": "#45596C",
       "image": "/assets/topics/anglo-norman.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the Conquest, the three languages, the chroniclers, the poems, the prose and the first plays",
+          "topics": [
+            "ground",
+            "poetry",
+            "chronicles",
+            "religious",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Poetry and romance",
+          "meta": "50 questions at each level &middot; Layamon, Orm, <i>The Owl and the Nightingale</i>, Marie de France, <i>King Horn</i>, <i>Havelok</i>, <i>Sir Orfeo</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Chronicles, religious writing and early drama",
+          "meta": "50 questions at each level &middot; Geoffrey of Monmouth, Wace, <i>Ancrene Wisse</i>, Mannyng, <i>Cursor Mundi</i>, <i>Le Myst&egrave;re d'Adam</i>",
+          "topics": [
+            "chronicles",
+            "religious",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its languages"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and romance"
+        },
+        {
+          "value": "chronicles",
+          "label": "Chronicles and the Arthurian story"
+        },
+        {
+          "value": "religious",
+          "label": "Religious writing and early drama"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "age-of-chaucer",
