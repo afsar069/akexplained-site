@@ -1968,6 +1968,19 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-family:var(--serif);font-size:clamp(1.02rem,1.9vw,1.2rem);line-height:1.5;
   color:var(--ink);margin-bottom:20px;max-width:62ch;
 }
+/* A new line in a question stays a new line (List I / List II, and A. B. C. D.). Questions without one look the same. */
+.cbt-q,.cbt-fcq,.cbt-rq{white-space:pre-line}
+/* The passage a question points to ("Read Passage p1 above"). */
+.cbt-passage{
+  background:var(--cream);border:1px solid var(--card-line);border-left:3px solid var(--teal);
+  border-radius:10px;padding:14px 16px;margin:0 0 16px;max-width:62ch;
+}
+.cbt-passage-k{
+  font-size:.72rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--teal);margin:0 0 8px;
+}
+.cbt-passage-t{font-family:var(--serif);font-size:1rem;line-height:1.55;color:var(--ink);margin:0}
+.cbt-passage-a{font-size:.82rem;color:var(--mcq-ink-faint);margin:8px 0 0}
 .cbt-opts{border:0;padding:0;margin:0}
 .cbt-opts legend{position:absolute;left:-9999px}
 .cbt-opt{

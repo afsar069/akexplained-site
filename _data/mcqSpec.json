@@ -93,7 +93,13 @@
           "levels": [
             "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "access": "login",
+          "rev": 1,
+          "titleCase": "Terms, Dates and Sources",
+          "focus": "terms, dates and sources",
+          "lede": "Fifty questions on kenning, caesura, comitatus, wergild, futhorc, the Danelaw and Danegeld, at medium level."
         },
         {
           "n": 6,
