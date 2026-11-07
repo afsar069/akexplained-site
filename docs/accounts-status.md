@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (Shared-footer correction for the released PGT hub and UP PGT guide. PR #13 was merged and its production Cloudflare deployment succeeded. Existing Anglo-Norman MCQ planning and Old English Set 6 work remain unchanged.)_
+_Last updated: 2026-11-07 (NET header updated on a feature branch for review; the released PGT hub and shared-footer correction remain live. Existing Anglo-Norman MCQ planning and Old English Set 6 work remain unchanged.)_
+
+## NET header matched to PGT — awaiting publication (2026-11-07)
+
+- The owner asked for the PGT hub's illustrated header on `/exams/net/`. The NET hub now reuses the exact PGT hero image and its desktop/phone proportions, with NET-specific, selectable HTML text on the illustration's left side. The older text-baked NET banner is no longer displayed. The NET cards, related pages and shared default footer are unchanged.
+- Feature branch: `feat/net-pgt-hero`. This NET change has not been merged into `main`; publication awaits the owner's instruction under `CLAUDE.md` rule 5.
+- Eleventy build and 7,114 internal href/src/srcset references pass; the four `/go/` links resolve through Cloudflare redirects. Browser checks at 320, 390, 768, 1024 and 1440px found a loaded image, contained text, no horizontal overflow or console errors, and the default footer. About and syllabus navigation works. Screenshots and measurements: `docs/net-pgt-hero/`.
 
 ## PGT shared-footer correction (2026-11-07)
 

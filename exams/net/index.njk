@@ -5,15 +5,17 @@ description: Find UGC-NET English exam information, the syllabus, downloads, Pap
 net_hub: true
 ---
 {% from "net-action.njk" import action %}
-<section class="pagehead pagehead-net" aria-labelledby="net-title">
-  <img class="net-banner" src="/assets/exams/net-banner-1168.webp"
-    srcset="/assets/exams/net-banner-768.webp 768w, /assets/exams/net-banner-1168.webp 1168w, /assets/exams/net-banner-1915.webp 1915w"
-    sizes="(min-width: 2187px) 1915px, (min-width: 1024px) calc(100vw - 272px), 100vw"
-    width="1915" height="821" alt="" fetchpriority="high" decoding="async">
-  <div class="wrap net-heading">
-    <p class="eyebrow">UGC-NET / JRF · Subject code 30</p>
-    <h1 id="net-title">UGC-NET / JRF English Literature</h1>
-    <p class="lede">Your exam information, syllabus and practice resources, in one place.</p>
+<section class="net-hero" aria-labelledby="net-title">
+  <picture class="net-hero-art" aria-hidden="true">
+    <source type="image/webp" srcset="/assets/exams/pgt-hero-1200.webp 1200w, /assets/exams/pgt-hero-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
+    <img src="/assets/exams/pgt-hero-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+  </picture>
+  <div class="wrap net-hero-inner">
+    <div class="net-hero-copy">
+      <p class="eyebrow">UGC-NET / JRF · Subject code 30</p>
+      <h1 id="net-title"><span>UGC-NET / JRF</span><span>English Literature</span></h1>
+      <p class="net-hero-description">Your exam information, syllabus and practice resources, in one place.</p>
+    </div>
   </div>
 </section>
 
