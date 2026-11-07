@@ -136,17 +136,19 @@
       <div class="mcq-carry-rows" id="resumeGrid"></div>
     </section>
 
-    <!-- Goes to the Daily Quiz page, where all 20 ages are open. (It used to point at
-         /quizzes/mcq/mixed/, a page that does not exist.) -->
-    <a class="mcq-start" href="/quizzes/daily/">
+    <!-- Owner's call (2026-11-07): this goes to the login page, and the person picks their path there.
+         /login/?path=1 is the same link the Account page uses for "Change paths": a person who is not
+         signed in sees the login page; a person who is signed in goes straight to "Choose your path".
+         (It used to go to /quizzes/daily/.) -->
+    <a class="mcq-start" href="/login/?path=1">
       <span class="mcq-start-ic" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="m12 2 2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.3 6.2 19.8l1.6-6.6L2.6 8.8l6.8-.5Z"/></svg>
       </span>
       <span class="mcq-start-txt">
         <strong>Not Sure Where To Begin?</strong>
-        <span>Pick any age and start a quick quiz. Easy or Hard, 10 to 50 questions, with the answer shown as you go.</span>
+        <span>Sign in or make a free account, then choose your path. You can change it later.</span>
       </span>
-      <span class="mcq-start-go">Start Now</span>
+      <span class="mcq-start-go">Choose Your Path</span>
     </a>
 
   </div>

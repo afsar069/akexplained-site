@@ -17,8 +17,8 @@
      3. Build the "Carry On Where You Left" strip.
 
    It reads the same localStorage the quiz engine writes:
-     key   akq:<setId>:v1
-     value { setId, count, pick:{}, done, ... }
+     key   akq:<setId>:v1     (<setId> = <age>-set-<n> or <age>-custom)
+     value { setId, count, pick:{}, done, startedAt, endsAt, wrongCount, ... }
    ========================================================= */
 (function () {
   'use strict';
@@ -68,26 +68,17 @@
     // 'romantic-age': 150
   };
 
-  /* Readable names for the resume card. */
-  var AGE_NAMES = {
-    'old-english': 'Old English',
-    'middle-english': 'Middle English',
-    'renaissance': 'Renaissance',
-    'elizabethan': 'Elizabethan',
-    'jacobean': 'Jacobean',
-    'caroline': 'Caroline',
-    'restoration': 'Restoration',
-    'augustan-age': 'Augustan',
-    'romantic-age': 'Romantic Age',
-    'victorian-age': 'Victorian Age',
-    'modern': 'Modern',
-    'contemporary': 'Contemporary'
-  };
-
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) {
     return Array.prototype.slice.call((root || document).querySelectorAll(sel));
   };
+
+  /* An age's readable name comes from its card on this page, so there is no
+     second list of names to keep in step. No card = not an age we know. */
+  function ageName(slug) {
+    var el = $('.mcq-agecard[data-age="' + slug + '"] .mcq-agename strong');
+    return el ? el.textContent.trim() : '';
+  }
 
   /* ---------------------------------------------------------
      Reading past attempts
@@ -107,32 +98,41 @@
       try { raw = store.getItem(key); data = JSON.parse(raw); } catch (e) { continue; }
       if (!data || typeof data !== 'object') continue;
 
-      var setId = typeof data.setId === 'string' ? data.setId : key.slice(4).replace(/:v\d+$/, '');
+      /* The key is built by the quiz engine from the page it runs on, so the key
+         (not the saved setId) tells us which page the attempt belongs to. */
+      var setId = key.slice(4).replace(/:v\d+$/, '');
+      var where = pageOf(setId);
       var picks = (data.pick && typeof data.pick === 'object') ? Object.keys(data.pick).length : 0;
 
       out.push({
         key: key,
         setId: setId,
-        age: ageOf(setId),
+        age: where ? where.age : '',
+        part: where ? where.part : '',
         answered: picks,
         total: typeof data.count === 'number' ? data.count : 0,
         done: data.done === true,
         wrong: countWrong(data),
-        at: typeof data.endedAt === 'number' ? data.endedAt : 0
+        at: typeof data.endedAt === 'number' ? data.endedAt : 0,
+        started: typeof data.startedAt === 'number' ? data.startedAt : 0,
+        endsAt: typeof data.endsAt === 'number' ? data.endsAt : 0
       });
     }
     return out;
   }
 
-  /* A set id always begins with its age slug, so the longest
-     matching slug wins: 'romantic-age-set-2' -> 'romantic-age'. */
-  function ageOf(setId) {
-    var best = '';
-    for (var slug in AGE_NAMES) {
-      if (!Object.prototype.hasOwnProperty.call(AGE_NAMES, slug)) continue;
-      if (setId.indexOf(slug) === 0 && slug.length > best.length) best = slug;
-    }
-    return best;
+  /* 'old-english-set-2'   -> { age: 'old-english', part: 'set-2' }   (page /quizzes/mcq/old-english/set-2/)
+     'old-english-custom'  -> { age: 'old-english', part: 'custom' }  (page /quizzes/mcq/old-english/custom/)
+     Read from the shape of the id, so a new age needs no change here. */
+  function pageOf(setId) {
+    var m = /^([a-z0-9-]+)-(set-\d+|custom)$/.exec(setId);
+    return m ? { age: m[1], part: m[2] } : null;
+  }
+
+  /* "Old English, Set 2" or "Old English, your own test". */
+  function whereText(a) {
+    var tail = a.part === 'custom' ? 'your own test' : 'Set ' + a.part.replace('set-', '');
+    return ageName(a.age) + ', ' + tail;
   }
 
   /* The engine keeps the answer key out of saved state, so a
@@ -216,35 +216,52 @@
   /* ---------------------------------------------------------
      3. CARRY ON
      One row per thing to pick up again, inside the brown strip.
+     Each row opens the exact page where the quiz engine will pick the
+     saved attempt up (it reads the same key), never a list page:
+       Continue        -> /quizzes/mcq/<age>/<set-n>/?n=<count>   resumes the running test
+       N You Got Wrong -> /quizzes/mcq/<age>/<set-n>/?only=wrong  that set's missed questions
+     A row is shown only when its page can really do that, so no row is a
+     dead end: an attempt whose clock has run out cannot be resumed (the
+     engine shows a fresh start screen), and only a finished attempt holds
+     a list of wrong answers.
      --------------------------------------------------------- */
   function paintResume(attempts) {
     var sec = $('#carryOn');
     var grid = $('#resumeGrid');
     if (!sec || !grid) return;
 
-    /* the most recent unfinished attempt */
-    var open = attempts.filter(function (a) {
-      return !a.done && a.answered > 0 && a.total > 0 && a.answered < a.total;
-    }).sort(function (a, b) { return b.at - a.at; })[0];
+    var now = Date.now();
 
-    /* everything answered wrongly, across every age */
-    var wrong = attempts.reduce(function (n, a) { return n + a.wrong; }, 0);
+    /* the most recently started test that can still be resumed */
+    var open = attempts.filter(function (a) {
+      return a.part && ageName(a.age) &&
+        !a.done && a.answered > 0 && a.total > 0 && a.answered < a.total && a.endsAt > now;
+    }).sort(function (a, b) { return (b.started || b.endsAt) - (a.started || a.endsAt); })[0];
+
+    /* the finished test with the most wrong answers (one test, because the
+       review opens one test at a time) */
+    var worst = attempts.filter(function (a) {
+      return a.part && ageName(a.age) && a.done && a.wrong > 0;
+    }).sort(function (a, b) { return b.wrong - a.wrong; })[0];
 
     var rows = [];
 
     if (open) {
-      var name = AGE_NAMES[open.age] || 'Practice set';
       var pc = Math.round(open.answered / open.total * 100);
-      /* a set that belongs to no age has no age page to go back to */
-      var href = open.age ? '/quizzes/mcq/' + esc(open.age) + '/' : '/quizzes/mcq/';
+      /* The engine resumes a set only when the number of questions asked for in the
+         address (?n=) equals the number saved with the attempt, so send that number
+         along. (For a full set it is the same as no ?n= at all. A custom test keeps
+         its own list of questions and needs nothing.) */
+      var goOn = '/quizzes/mcq/' + esc(open.age) + '/' + esc(open.part) + '/' +
+        (open.part === 'custom' ? '' : '?n=' + open.total);
       rows.push(
-        '<a class="mcq-carry-row" href="' + href + '">' +
+        '<a class="mcq-carry-row" href="' + goOn + '">' +
           '<span class="mcq-start-ic" aria-hidden="true">' +
             '<svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">' +
             '<path d="M8 5.1v13.8L19 12 8 5.1Z"/></svg>' +
           '</span>' +
           '<span class="mcq-start-txt">' +
-            '<strong>' + esc(name) + '</strong>' +
+            '<strong>' + esc(whereText(open)) + '</strong>' +
             '<span>' + open.answered + ' of ' + open.total + ' answered</span>' +
             '<span class="mcq-carry-bar" aria-hidden="true"><i style="width:' + pc + '%"></i></span>' +
           '</span>' +
@@ -253,17 +270,17 @@
       );
     }
 
-    if (wrong > 0) {
+    if (worst) {
       rows.push(
-        '<a class="mcq-carry-row" href="/quizzes/mcq/build/?only=wrong">' +
+        '<a class="mcq-carry-row" href="/quizzes/mcq/' + esc(worst.age) + '/' + esc(worst.part) + '/?only=wrong">' +
           '<span class="mcq-start-ic" aria-hidden="true">' +
             '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" ' +
             'stroke-width="2" stroke-linecap="round"><path d="M20 11.5A8 8 0 1 1 17.7 6"/>' +
             '<path d="M20 4v4.5h-4.5"/></svg>' +
           '</span>' +
           '<span class="mcq-start-txt">' +
-            '<strong>' + wrong + ' You Got Wrong</strong>' +
-            '<span>Worth another look before they settle in wrongly.</span>' +
+            '<strong>' + worst.wrong + ' You Got Wrong</strong>' +
+            '<span>From ' + esc(whereText(worst)) + '. Go over them again.</span>' +
           '</span>' +
           '<span class="mcq-start-go">Practise these</span>' +
         '</a>'
