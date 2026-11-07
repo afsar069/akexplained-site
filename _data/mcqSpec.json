@@ -104,15 +104,22 @@
         {
           "n": 6,
           "title": "Criticism and scholarship",
-          "meta": "50 questions &middot; Ker, Chambers, Klaeber, the 1936 lecture, Whitelock, Magoun, Heaney",
+          "meta": "50 questions at each level &middot; Ker, Chambers, Klaeber, the 1936 lecture, Whitelock, Magoun, Heaney",
           "topics": [
             "criticism",
             "poetry"
           ],
           "levels": [
+            "medium",
             "hard"
           ],
           "count": 50,
+          "live": true,
+          "access": "login",
+          "rev": 1,
+          "titleCase": "Criticism and Scholarship",
+          "focus": "criticism and scholarship",
+          "lede": "Fifty questions at each level on Ker, Chambers, Klaeber, Tolkien's 1936 lecture, Whitelock, Magoun and Heaney, at medium or hard level.",
           "extraTags": [
             "UGC NET level"
           ]
