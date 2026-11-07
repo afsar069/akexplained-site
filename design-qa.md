@@ -148,3 +148,56 @@ final result: passed
 - Live production verification is blocked by the environment network policy. The owner approved publication of PR #9 on 7 November 2026; the visual QA above covers its tested implementation.
 
 final result: passed
+
+---
+
+# NET compact layout and cropped hero — 7 November 2026
+
+## Scope and visual targets
+
+This follow-up supersedes the initial hub mock's oversized text and spacing. The owner supplied a new wide hero crop (approximately 2.8:1) and explicitly requested consistency with the other site pages. Resource grouping, destinations and availability remain as before.
+
+- Crop truth: the owner's latest image attachment, inspected in this chat, and the existing source `assets/exams/net-banner-1915.webp` (1915 × 821 px). The requested crop is implemented as a responsive 14:5 display frame, without editing or stretching the image file.
+- Site-scale truth: shared rules in `assets/site.css`, checked against rendered Quizzes, English Literature and PGT pages. Quizzes is the primary comparator for standard section headings and card titles.
+- Before/after combined evidence: `docs/net-compact/before-after.png` (same 1440 px viewport, source before on the left and revised page on the right; both scaled uniformly to 650 px wide for comparison).
+- Desktop implementation: `docs/net-compact/desktop.png` (1440 × 2032 px full-page capture, 1440 × 1000 CSS viewport, device scale factor 1).
+- Mobile implementation: `docs/net-compact/mobile.png` (390 px CSS viewport, device scale factor 1, full-page capture).
+- Focused hero evidence: `docs/net-compact/hero.png` (1168 px wide, approximately 417 px high). The full title, subtitle, four statistic badges and lower label line remain visible; upper foliage and lower desk artwork are intentionally trimmed to follow the owner's crop.
+- Site reference capture: `/workspace/net-compact-review/quizzes-reference.png`; measured before/after values are recorded in `/workspace/net-compact-review/baseline.json` and `/workspace/net-compact-review/after-metrics.json`.
+
+## Measured findings and fixes
+
+| Surface at 1440 px | Before | Revised | Shared-site comparator |
+| --- | --- | --- | --- |
+| Intro heading | 68.448 px | 36.8 px | 36.8 px page heading |
+| Section headings | 45.264 px | 27.52 px | 27.52 px H2 |
+| Resource/action labels | 26 / 28 px | 16.96 px | 16.96 px card H3 |
+| Helper text | 20 px | 14.72 px | 14.72 px card paragraph |
+| Side padding | 32 px | 22 px | 22 px `.wrap` |
+| Maximum content width | None | 1180 px | 1180 px `.wrap` |
+| Hero height at 1168 px wide | 501 px | 417.14 px | Owner's approximately 2.8:1 crop |
+
+At a 1920 px viewport, the content container is 1180 px wide and starts at x=506; its text starts at x=528, exactly matching Quizzes. At 1440 px both pages' text starts at x=294. This fixes the unusually wide content area on large screens as well as the extra inner side padding on normal desktop screens.
+
+## Fidelity and interaction review
+
+- **Typography:** shared title/H2/H3/helper sizes and 600-weight headings replace the large custom scale. The real Literata and Source Sans 3 families remain. Body text is 16.5 px. Related NET pages follow the shared heading scale too.
+- **Layout/spacing:** 16 px grid gaps, standard card-like padding and corners, smaller icons and 84–88 px action rows restore the site's normal density. The mock button uses the shared 15.2 px size, 12 × 22 px padding and 11 px corners. Touch targets remain at least 44 px tall.
+- **Colors:** existing navy, teal, cream, sage and gold are retained. Focus and hover affordances remain.
+- **Imagery:** the narrower display frame uses `object-fit: cover`, with a vertical focal position selected to preserve all image lettering. Crop ratio is checked at every viewport. No raster regeneration or distortion was introduced.
+- **Copy/content:** all existing hub text, ten resource destinations, two available pages and eight coming-soon states remain. The examination overview remains text-only and fills the shared content area.
+
+## Verification and comparison history
+
+- Initial measurement established the size and margin drift shown in the table. The requested crop and compact theme adjustments were applied, then the revised desktop, mobile, wide-screen and focused hero captures were inspected.
+- Final combined before/after comparison shows the thinner hero and consistent hierarchy; no P0/P1/P2 issue remains in the requested scope.
+- Eleventy build passes. Chromium checks pass at widths 320, 390, 600, 768, 1024, 1440, 1920 and 2560 px: no overflow, missing images, or browser errors; expected 14:5 crop and 22 px side padding at every size.
+- Computed font sizes, container width and left content edges match Quizzes exactly at both 1440 and 1920 px. Reference Google font requests are fulfilled with the same local font files in the test so the comparison does not depend on CDN access.
+- About, Syllabus and example coming-soon pages were checked at 320, 390, 1440 and 1920 px. Mobile menu opens and closes with Escape.
+- No destinations or availability values were changed. The shared stylesheet and other site pages are untouched.
+
+## Follow-up polish and limitations
+
+None required. The owner approved publishing PR #10 on 7 November 2026. Production browsing remains constrained by the environment network policy; deployment can be checked through the Cloudflare check on the merge commit.
+
+final result: passed
