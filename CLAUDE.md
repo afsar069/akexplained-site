@@ -320,7 +320,8 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
   (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
   Still to do: align the MCQ generator (`tools/mcq-skill`) to emit `id` + `topicId` + `periodId`, so
-  new sets arrive tagged. Nodes still missing from the master are collected in
+  new sets arrive tagged. (`validate_mcq.py` also still reports "unknown field(s)" for `id`, `topicId`, `periodId`, `qtype`,
+  `passageId` and `passages`, as Old English Set 5 arrived in that format; for a login set `make_gated_sql.py` is the real gate.) Nodes still missing from the master are collected in
   `tools/tagging/reports/node-gaps.md` (next migration batch; the owner decides).
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
 - Password reset and email-confirmation landings are built in `assets/login.js` (implicit flow:
@@ -410,6 +411,14 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
 - The dashboard pool counts a login set as `count x levels` from the registry (`tools/build-syllabus.js`).
 - Engine: `assets/cbt.js` reads a login set with `data-gated` on the page (`gatedPaper()`); it must wait for
   `window.akAuth`, because `cbt.js` runs before `auth.js`.
+- **Passages and line breaks** (Set 5, 2026-11-07). The "complex" generator's files may carry a top-level `passages`
+  list (`id`, `title`, `attribution`, `text`, `src`), `passageId` on the questions that point at one ("Read Passage p1 above"),
+  `qtype`, and `\n` inside a question ("List I / List II", "A. B. C. D."). The engine handles all of it: `withPassages()` in `cbt.js`
+  attaches the passage to its questions when a paper loads (so a custom test keeps it), `passageHtml()` draws the card above the
+  question on the test screen, the review page and the wrong-answer cards, and `white-space: pre-line` (`.cbt-q`, `.cbt-fcq`, `.cbt-rq`)
+  keeps the line breaks. The passage `text` is shown exactly as supplied and `src` is not shown. A file with no `passages` behaves as
+  before. Empty `topicRead` is fine (no per-topic notes links for that set). Keep this working when `cbt.js` is touched: a passage
+  question without its passage is unanswerable.
 - **The lock on the hub** (owner, 2026-11-07, said twice: "jahan par Start, wahan par lock; kone me nahi"): on the
   hub row of a login set, a guest sees a padlock BUTTON in the place of the Start button (same slot, same height; template
   `quizzes/mcq/_templates/age-hub.njk`, `.agehub-go-lock` in `assets/site.css`). It links to `/login/?next=<that set's

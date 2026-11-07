@@ -62,6 +62,29 @@
   }
   function clamp(n, lo, hi) { return n < lo ? lo : n > hi ? hi : n; }
 
+  /* Passage: kuch sawal ("Read Passage p1 above") ek chhote text par tike hote hain. File me "passages"
+     ki list hoti hai (id, title, attribution, text) aur sawal par "passageId". Yahan har sawal par uska
+     passage chipka dete hain (q.passage), taaki wo custom test (kai sets ka mel) me bhi sath chale.
+     Jis file me passages nahi, wahan kuch nahi badalta. */
+  function withPassages(d) {
+    if (d && Array.isArray(d.passages) && Array.isArray(d.questions)) {
+      var by = {};
+      d.passages.forEach(function (p) { if (p && p.id) by[p.id] = p; });
+      d.questions.forEach(function (q) { if (q && q.passageId && by[q.passageId]) q.passage = by[q.passageId]; });
+    }
+    return d;
+  }
+  /* Passage ka dabba (sawal ke upar). Passage na ho to khali string. */
+  function passageHtml(q) {
+    var p = q && q.passage;
+    if (!p || !p.text) return '';
+    return '<div class="cbt-passage" role="group" aria-label="Passage">' +
+      '<p class="cbt-passage-k">Passage' + (p.id ? ' ' + esc(p.id) : '') + (p.title ? ' &middot; ' + esc(p.title) : '') + '</p>' +
+      '<p class="cbt-passage-t">' + esc(p.text) + '</p>' +
+      (p.attribution ? '<p class="cbt-passage-a">' + esc(p.attribution) + '</p>' : '') +
+      '</div>';
+  }
+
   var root = $('[data-cbt]');
   if (!root) return;
 
@@ -105,7 +128,7 @@
         if (!data || !Array.isArray(data.questions) || !data.questions.length) {
           throw new Error('no questions in the file');
         }
-        return data;
+        return withPassages(data);
       });
   }
 
@@ -151,7 +174,7 @@
       if (!data || !Array.isArray(data.questions) || !data.questions.length) {
         throw new Error('This set is not open to you yet.');
       }
-      return data;
+      return withPassages(data);
     });
   }
 
@@ -713,6 +736,7 @@
         '<div>' +
           '<div class="cbt-qcard">' +
             '<p class="cbt-qnum" id="cbtQNum"></p>' +
+            '<div id="cbtPassage"></div>' +
             '<p class="cbt-q" id="cbtQ"></p>' +
             '<fieldset class="cbt-opts" id="cbtOpts">' +
               '<legend>Choose one answer</legend>' +
@@ -795,6 +819,7 @@
     var i = st.at, q = Q[i];
     $('#cbtQNum').textContent = 'Question ' + (i + 1) + ' of ' + Q.length;
     $('#cbtCount').textContent = 'Question ' + (i + 1) + ' of ' + Q.length;
+    $('#cbtPassage').innerHTML = passageHtml(q);
     $('#cbtQ').textContent = q.question;
 
     var box = $('#cbtOpts');
@@ -1897,6 +1922,7 @@
           '<div class="cbt-fccard">' +
             '<p class="cbt-qnum">Question ' + (i + 1) +
               (q.topic && paper.topics ? ' · ' + esc(paper.topics[q.topic] || '') : '') + '</p>' +
+            passageHtml(q) +
             '<p class="cbt-fcq">' + esc(q.question) + '</p>' +
             (shown
               ? '<div class="cbt-fcans">' +
@@ -1971,6 +1997,7 @@
       '<div class="cbt-rtop"><span class="cbt-qnum">Question ' + (i + 1) + '</span>' + tag +
         (q.topic && paper.topics ? '<span class="cbt-rtopic">' +
           esc(paper.topics[q.topic] || '') + '</span>' : '') + '</div>' +
+      passageHtml(q) +
       '<p class="cbt-rq">' + esc(q.question) + '</p>' + opts +
       (q.explanation ? '<p class="cbt-why"><b>Why:</b> ' + esc(q.explanation) +
         (q.read ? ' <a href="' + esc(paper.notes || '/notes/') + '#' + esc(q.read) +
