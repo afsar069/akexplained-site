@@ -1610,6 +1610,15 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
 .agehub-setmeta.is-done{color:var(--teal);font-weight:600}
 .agehub-setmeta.is-open{color:var(--mcq-blue-dark);font-weight:600}
 .agehub-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:7px}
+/* Padlock before the title of a login set (owner, 2026-11-07). Link to /login/?next=<this set>. Shown to guests only:
+   auth.js hides [data-guest-only] for a logged-in student (and .agehub-body [hidden] wins over display below). */
+.agehub-lock{
+  display:inline-flex;align-items:center;justify-content:center;vertical-align:middle;
+  width:26px;height:26px;margin:-4px 6px -4px -4px;border-radius:7px;
+  color:var(--teal);text-decoration:none;
+}
+.agehub-lock:hover,.agehub-lock:focus-visible{background:var(--teal-soft)}
+@media (max-width:640px){.agehub-lock{width:32px;height:32px}}
 .agehub-tag{
   font-size:.72rem;font-weight:600;letter-spacing:.03em;
   color:var(--body);background:var(--tint);border:1px solid var(--border);

@@ -26,3 +26,15 @@ Teeno files aur likho: **"Old English Set 3 publish karo"**. Main:
 1. Hamara apna notes article (us age ka) — sabse pehle.
 2. Wikipedia, 3. Encyclopaedia Britannica, 4. British Library (bl.uk), 5. Project Gutenberg (sirf asli text check karne ke liye).
 Inke alawa kuch nahi. Badalna ho to `SKILL.md` ke section 3 aur `validate_mcq.py` ke upar `ALLOWED_DOMAINS` me badlo.
+
+## Login wale set (database me jata hai, repo me nahi)
+Repo public hai, isliye login wale set ki files kabhi repo me nahi jaati. Unke liye teen cheezein hain:
+
+- `make_gated_sql.py` — files ko registry, topic list aur public files se milakar check karta hai, phir Supabase
+  ke liye SQL banata hai (`--chunk 25` se chhote hisson me). Ye database ko chhuta nahi.
+- `load.check.sql` aur "fingerprint" — load ke baad database se wahi md5 aana chahiye jo tool ne chhapa tha,
+  tabhi pakka hota hai ki ek bhi akshar nahi badla.
+- Poori vidhi: `CLAUDE.md` rule 15. Chhota roop: `AGENTS.md`.
+
+Command ka namuna (files kisi bhi folder me rakh sakte hain, repo ke andar nahi):
+`python3 tools/mcq-skill/make_gated_sql.py --access login easy.json medium.json --out load.sql --chunk 25`
