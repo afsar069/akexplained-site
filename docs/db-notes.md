@@ -85,6 +85,25 @@ row per question, so it cannot say how many quizzes were taken; this table can. 
 `total_questions - answered` is how many were left unanswered. Rules: a student can read and add only their own
 rows; nobody can change or delete a row from the browser; logged-out visitors get nothing.
 
+### `mcq_papers` (added 2026-11-07)
+
+The MCQ sets that are **not public files**. A free set is a plain file on the site, and anyone who knows its
+address can read it. A **login** set (and later a **paid** set) is kept here instead, and the database decides who may
+read it. One row is one level of one set (for example `old-english-set-4` / `medium`).
+
+| Column       | Meaning |
+| ------------ | ------- |
+| `set_id`     | The set, for example `old-english-set-4`. |
+| `level`      | `easy`, `medium` or `hard`. |
+| `access`     | `login` (any logged-in student can read it) or `paid` (not built yet, so nobody can read it). |
+| `rev`        | The question file's `rev`. Raised when a question's meaning changes. |
+| `body`       | The whole question file as JSON, exactly what the test page reads. It must name the same set, level and rev as the row. |
+| `updated_at` | When the row was last loaded. |
+
+Rules: a logged-in student can **read** `login` rows and nothing else; logged-out visitors get nothing; nobody can add,
+change or delete a row from the browser (rows are loaded with SQL by the site's maintainer, never by a student's browser).
+The table has no link to `auth.users`, so deleting an account never touches it. Free sets are not in this table.
+
 ### 3. `reading_progress`
 
 One row per user per article. It records whether a user has finished an article

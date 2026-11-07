@@ -1,5 +1,5 @@
 {
-  "_about": "MCQ registry. One entry per age. An age with no \"sets\" gets a \"questions coming soon\" hub. A set with \"live\": true needs assets/questions/<setId>-<level>.json for every level it lists; its rev is read from those files. See CLAUDE.md rule 7.",
+  "_about": "MCQ registry. One entry per age. An age with no \"sets\" gets a \"questions coming soon\" hub. A set with \"live\": true needs assets/questions/<setId>-<level>.json for every level it lists; its rev is read from those files. See CLAUDE.md rule 7. A set with \"access\": \"login\" is not a file: its questions live in the Supabase table mcq_papers, so it needs \"rev\" here (a whole number) and no file in assets/questions/. See CLAUDE.md rule 15.",
   "ages": [
     {
       "slug": "old-english",
@@ -67,16 +67,21 @@
         },
         {
           "n": 4,
-          "title": "Manuscripts and survival",
-          "meta": "50 questions &middot; the four codices, the Ruthwell Cross, Sutton Hoo, the 1731 fire",
+          "title": "Prose and its writers: Alfred, the Chronicle, Ælfric, Wulfstan, the law codes",
+          "meta": "50 questions at each level",
           "topics": [
-            "manuscripts"
+            "prose"
           ],
           "levels": [
-            "medium",
-            "hard"
+            "easy",
+            "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "access": "login",
+          "rev": 1,
+          "titleCase": "Prose and Its Writers: Alfred, the Chronicle, Ælfric, Wulfstan, the Law Codes",
+          "lede": "Fifty questions on King Alfred, the <i>Anglo-Saxon Chronicle</i>, &AElig;lfric, Wulfstan and the law codes, at easy or medium level."
         },
         {
           "n": 5,

@@ -416,3 +416,34 @@ create policy "notify_requests_insert_own" on public.notify_requests
 drop policy if exists "notify_requests_update_own" on public.notify_requests;
 create policy "notify_requests_update_own" on public.notify_requests
   for update to authenticated using ( (select auth.uid()) = user_id ) with check ( (select auth.uid()) = user_id );
+
+-- =====================================================================
+-- mcq_papers  (MCQ sets that are NOT public files: login now, paid later; migration 20261107120000)
+-- One row = one level of one set; body is the whole question file. Read-only from clients.
+-- 'paid' rows stay unreadable until a paid policy exists (fails closed).
+-- =====================================================================
+create table if not exists public.mcq_papers (
+  set_id     text        not null,
+  level      text        not null check (level in ('easy', 'medium', 'hard')),
+  access     text        not null check (access in ('login', 'paid')),
+  rev        integer     not null check (rev >= 1),
+  body       jsonb       not null,
+  updated_at timestamptz not null default now(),
+  primary key (set_id, level),
+  constraint mcq_papers_body_shape check (
+    jsonb_typeof(body) = 'object'
+    and jsonb_typeof(body -> 'questions') = 'array'
+    and jsonb_array_length(body -> 'questions') >= 1
+    and body ->> 'setId' = set_id
+    and body ->> 'level' = level
+    and body ->> 'rev' = rev::text
+  )
+);
+comment on table public.mcq_papers is
+  'MCQ question sets that are not public files (access = login | paid). One row per set and level; body is the whole question file. Read-only from clients; paid rows stay unreadable until a paid policy exists.';
+alter table public.mcq_papers enable row level security;
+revoke all on public.mcq_papers from public, anon, authenticated;
+grant select on public.mcq_papers to authenticated;
+drop policy if exists "mcq_papers_login_read" on public.mcq_papers;
+create policy "mcq_papers_login_read" on public.mcq_papers
+  for select to authenticated using ( access = 'login' );

@@ -60,7 +60,13 @@ function headings(article) {
 
 // Live set ki files se rev padho (spec me alag se likhna nahi padta, isliye mel khane ka darr nahi).
 // File na ho, ya levels ki rev alag ho, to build yahin rok deta hai — adhoora set live nahi hota.
-function fileRev(setId, levels) {
+function fileRev(setId, levels, s) {
+  // Login wala set: uski file public repo me nahi rakhte (repo public hai), sawal Supabase ki table
+  // mcq_papers me hain. Isliye rev yahan registry se aata hai; load karte waqt tool dono ko milata hai.
+  if (s && s.access) {
+    if (!Number.isInteger(s.rev) || s.rev < 1) throw new Error("mcqSpec: " + setId + ' has "access" but no "rev" (a whole number, 1 or more)');
+    return s.rev;
+  }
   const revs = levels.map((l) => {
     const f = path.join(__dirname, "..", "assets", "questions", setId + "-" + l + ".json");
     if (!fs.existsSync(f)) throw new Error("mcqSpec: " + setId + " is live but assets/questions/" + setId + "-" + l + ".json is missing");
@@ -84,9 +90,12 @@ module.exports = function () {
     const notes = "/notes/" + a.article + "/";
     const sets = (a.sets || []).map((s) => {
       const id = a.slug + "-set-" + s.n;
-      const tags = s.levels.map(cap).concat(s.extraTags || []);
+      // access: "login" = sawal table me, sirf logged-in student padhe. "paid" abhi bana nahi, isliye build rokta hai.
+      if (s.access && s.access !== "login") throw new Error("mcqSpec: " + id + ' has access "' + s.access + '"; only "login" is built (paid is not built yet)');
+      if (s.access && !s.live) throw new Error("mcqSpec: " + id + ' has "access" but is not live');
+      const tags = s.levels.map(cap).concat(s.access === "login" ? ["Login needed"] : [], s.extraTags || []);
       return Object.assign({}, s, {
-        id, live: !!s.live, tags, rev: s.live ? fileRev(id, s.levels) : undefined,
+        id, live: !!s.live, tags, rev: s.live ? fileRev(id, s.levels, s) : undefined,
         topicAttr: s.topics.join(" "), levelAttr: s.levels.join(" "),
         countWords: cap(words(s.count)), levelsText: levelsText(s.levels),
         defaultLevel: s.levels[0],
@@ -95,6 +104,7 @@ module.exports = function () {
     });
     const liveSets = sets.filter((s) => s.live);
     const levels = ["easy", "medium", "hard"].filter((l) => liveSets.some((s) => s.levels.includes(l)));
+    const gatedIds = sets.filter((s) => s.live && s.access).map((s) => s.id).join(",");
 
     const qq = hs.find((h) => /^quick quiz/i.test(h.text));
     const qn = qq && (qq.text.match(/(\d+)\s+questions/i) || [])[1];
@@ -134,7 +144,7 @@ module.exports = function () {
       pos, posText, notes, notesName: a.notesName, yearsText: yearsText(a.years),
       // image bare slug ho to /assets/ages/<slug>.webp; poora path ("/assets/topics/..") ho to waisa hi
       image: a.image.charAt(0) === "/" ? a.image : "/assets/ages/" + a.image + ".webp",
-      sets, liveSets, levels, levelAttr: levels.join(","), hasPlan: sets.length > 0, hasLive: liveSets.length > 0,
+      sets, liveSets, gatedIds, levels, levelAttr: levels.join(","), hasPlan: sets.length > 0, hasLive: liveSets.length > 0,
       setsWord: words(sets.length), totalQuestions: sets.reduce((n, s) => n + s.count, 0),
       quickQuiz, read, hub, topics: a.topics || [],
     });

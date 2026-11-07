@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
+_Last updated: 2026-11-07 (login-set layer built, SQL live, code on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -90,6 +90,45 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch
+- **Login layer for MCQ sets** (2026-11-07, branch `claude/youthful-brown-vwwtyp`; NOT on `main` yet). Owner's decisions (rule 15):
+  free sets stay open (the 300 Old English MCQs and any set the owner calls free); a set the owner calls "login" is kept in the
+  database, readable only by logged-in students; paid comes later (the owner picks which sets, and a promo code can give the
+  paid pass for free); big PDFs will go to R2 (nothing built). **Claude now runs the SQL itself** (rules 9 and 14 changed).
+  - **Database (LIVE, applied with the connector on 2026-11-07):** `supabase/migrations/20261107120000_add_mcq_papers.sql`.
+    Read back live: table `mcq_papers` exists with 0 rows, RLS on, one policy (`mcq_papers_login_read`, SELECT, authenticated),
+    only `authenticated: SELECT` granted. Security advisors: no new finding (still only `leaderboard` and leaked-password
+    protection, both older). Tested first on a scratch Postgres 16: run twice, anon denied, logged-in reads only `login` rows,
+    `paid` rows invisible, no write from a client, wrong-shape body refused.
+  - **Code (branch only):** `assets/cbt.js` (reads a login set from the table; guests see "Log in to take this test"),
+    `assets/login.js` (`?next=` returns a returning person to the page; same-site paths only), `_data/mcqAges.js` (`access`,
+    `rev`, "Login needed" tag, build stops on `"paid"`), the five MCQ templates (`data-gated`), `tools/build-syllabus.js`
+    (a login set counts `count x levels`), `tools/mcq-skill/make_gated_sql.py` (checks the files, writes the load SQL).
+  - **Text:** About, Privacy (Last updated 7 Nov 2026) and Terms (Accounts) now say "some MCQ sets ask you to log in first".
+    They are only true once a login set exists; do not merge the branch before the first login set is ready, or merge both
+    together. `/terms/` and `/contact/` still say "no paid tier", which stays true until paid is built.
+  - **Tested** (scratch site with a fake login set, Supabase mocked, never published): guest sees the login screen, no
+    question request and no question text; logged-in student gets the test; a missing row gives the "did not load" screen;
+    free sets and custom tests of free sets are unchanged; custom test with a login set; `?next=` return and the refusal
+    of `https://`, `//`, `/\` and `javascript:` targets; hub and build pages have no JS error. One real bug was found by this
+    test and fixed: `cbt.js` runs before `auth.js`, so it now waits for `window.akAuth`.
+  - **FIRST LOGIN SET LOADED (2026-11-07): Old English Set 4, easy + medium, 50 + 50 questions, access `login`, rev 1.**
+    The owner sent files named `old-english-set-3-*`, which clashed with live free Set 3 (same `setId`, same 100 ids; the
+    question text was different, a second bank on the same topics). At the owner's word ("this is set 4; the questions are
+    verified, overlaps are fine") only `setId`, `setNumber` and the ids were renamed to `old-english-set-4` / `-e-NN` / `-m-NN`
+    in a scratchpad copy (checked: nothing else changed). Loaded with `make_gated_sql.py --chunk 25` (4 parts) through the
+    connector and read back: easy md5 `d42b150e3b43125c68e285840d6644ce`, medium md5 `4443e3e167bdedd7dc441c1f99923f66`, both
+    equal to what the tool computed from the files; 100 distinct ids; policy and grants unchanged; advisors unchanged. The
+    question files and load SQL are NOT in the repo. The registry row (hub text taken from the owner's own `setName` and
+    topic names, nothing invented) is in `_data/mcqSpec.json`; the owner's earlier plan for row 4, "Manuscripts and survival"
+    (meta "50 questions &middot; the four codices, the Ruthwell Cross, Sutton Hoo, the 1731 fire", topic `manuscripts`, levels
+    medium and hard, 50 questions), was replaced by it and is kept here so it is not lost; re-add it as a new set number
+    when the owner wants it (the hub text says "six sets" in four places, so a seventh row means editing those). The hub's
+    "Manuscripts and survival" topic option now matches no set. The owner did not re-check facts (they are verified by
+    the owner); the loader's own checks passed. Open for the owner: Set 3 and Set 4 both cover prose and its writers.
+    Browser-tested against the real files (Supabase mocked) 21 of 21.
+  - **Not done / next (after Set 4):** the paid layer (entitlements, promo codes, gateway) is not built; the owner will
+    choose which sets become paid. Point 7 of the owner's message of 2026-11-07 was empty. The branch has NOT been merged:
+    About, Privacy and Terms say "some MCQ sets ask you to log in first", which is only true once Set 4 is live.
 - **"Choose your path" screen redesigned** (2026-11-07, branch `claude/fervent-wozniak-pz99op`; published to `main` at the owner's word the same day; the owner sent a
   screenshot of `/login/?path=1`). Causes found: `login-page.css` had `.pathscreen{padding:0}` while the card border stayed, so text
   touched the border; the big heading above still said "Welcome back"; `site.css` `section{padding:40px 0}` added 40px above and below

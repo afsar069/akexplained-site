@@ -45,7 +45,7 @@ eleventyExcludeFromCollections: true
         <li class="mcqb-set" data-set="{{ st.id }}" data-count="{{ st.count }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}>
           <label>
             <input type="checkbox" disabled>
-            <span class="mcqb-text"><span class="mcqb-name">Set {{ st.n }} &middot; {{ st.title }}</span><span class="mcqb-meta">{{ st.meta | safe }}</span></span>
+            <span class="mcqb-text"><span class="mcqb-name">Set {{ st.n }} &middot; {{ st.title }}</span><span class="mcqb-meta">{{ st.meta | safe }}</span>{% if st.access == 'login' %}<span class="mcqb-meta">Needs a free login</span>{% endif %}</span>
           </label>
           <span class="mcqb-soon">Coming soon</span>
         </li>

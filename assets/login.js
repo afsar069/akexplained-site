@@ -97,6 +97,29 @@
       // Did we just come back from Google? (set just before we leave for Google)
       var fromGoogle = false;
       try { fromGoogle = sessionStorage.getItem('ak:oauth') === 'google'; } catch (e) { /* private mode */ }
+
+      // ?next=/some/page — a page that needs a login (a login-only MCQ set) sends people here and wants
+      // them back afterwards. Only a path on this same site is accepted (never another site). It is kept in
+      // sessionStorage so it survives the trip to Google. Used for the "returning person" exits only; a new
+      // person still goes through "Choose your path" to the dashboard, as before.
+      var NEXT_KEY = 'ak:next';
+      function cleanNext(raw) {
+        if (!raw || raw.charAt(0) !== '/' || raw.charAt(1) === '/' || raw.indexOf('\\') > -1) return '';
+        try {
+          var u = new URL(raw, location.origin);
+          return u.origin === location.origin ? u.pathname + u.search + u.hash : '';
+        } catch (e) { return ''; }
+      }
+      try {
+        var askedNext = cleanNext(new URLSearchParams(location.search).get('next'));
+        if (askedNext) sessionStorage.setItem(NEXT_KEY, askedNext);
+        else if (!fromGoogle) sessionStorage.removeItem(NEXT_KEY);     // drop an old, unused one
+      } catch (e) { /* private mode */ }
+      function goAfterLogin(fallback) {
+        var to = '';
+        try { to = cleanNext(sessionStorage.getItem(NEXT_KEY) || ''); sessionStorage.removeItem(NEXT_KEY); } catch (e) { /* ignore */ }
+        location.replace(to || fallback);
+      }
       showReturnError();
 
       // Landing from an email link? 'recovery' = password reset, 'signup' = email confirmation.
@@ -113,7 +136,7 @@
           if (forcePath) openPath(session);
           else if (fromGoogle) finishGoogle(session);
           else if (isConfirm) finishConfirm(session);
-          else location.replace('/account/');
+          else goAfterLogin('/account/');
         } else if (fromGoogle) {
           try { sessionStorage.removeItem('ak:oauth'); } catch (e) { /* ignore */ }
         }
@@ -185,9 +208,9 @@
           }) : Promise.resolve();
           return saved.then(function () {
             if (!exams.error && (!exams.data || exams.data.length === 0)) openPath(session);
-            else location.replace('/account/');
+            else goAfterLogin('/account/');
           });
-        }).catch(function () { location.replace('/account/'); });
+        }).catch(function () { goAfterLogin('/account/'); });
       }
 
       // Google (or Supabase) can send the person back with an error in the address.
@@ -358,8 +381,8 @@
           submit.disabled = false; submit.textContent = 'Sign in';
           if (res.error) { showError(box, friendly(res.error)); return; }
           if (auth.refreshHeader) auth.refreshHeader(res.data.session);
-          // Returning user → their account. (Path was chosen at signup.)
-          location.replace('/account/');
+          // Returning user → the page that sent them here (?next=), else their account. (Path was chosen at signup.)
+          goAfterLogin('/account/');
         }).catch(function (err) {
           submit.disabled = false; submit.textContent = 'Sign in';
           showError(box, friendly(err));

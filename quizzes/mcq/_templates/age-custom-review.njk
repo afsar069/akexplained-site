@@ -39,7 +39,8 @@ eleventyExcludeFromCollections: true
      data-custom
      data-age="{{ age.slug }}"
      data-levels="{{ age.levelAttr }}"
-     data-src="/assets/questions/{set}-{level}.json"
+{% if age.gatedIds %}     data-gated="{{ age.gatedIds }}"
+{% endif %}     data-src="/assets/questions/{set}-{level}.json"
      data-back="/quizzes/mcq/{{ age.slug }}/custom/"
      data-new="/quizzes/mcq/{{ age.slug }}/build/">
 
