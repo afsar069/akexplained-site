@@ -1,6 +1,12 @@
-# PGT exam hub — design QA
+# PGT exam hub and NET hero — design QA
 
 final result: passed
+
+## NET hero reuse — 2026-11-07
+
+- Visual source: the released PGT header, `docs/pgt-hub/desktop.png` and `mobile-top.png`. NET browser captures at the same 1440px desktop and 390px phone widths are `docs/net-pgt-hero/net-1440.png` and `net-390.png`.
+- The illustration asset, image alignment, hero height, left text column, typography scale and phone overlay follow the PGT header. NET-specific heading and description replace the PGT copy; the longer NET title uses two lines. The rest of the NET hub keeps its existing layout.
+- At 320, 390, 768, 1024 and 1440px the hero copy stays inside the illustration. Browser checks found no horizontal overflow or console errors, and the shared footer is present. NET About, back navigation and syllabus links open their expected routes. Eleventy build and internal link checks passed. No actionable visual issues remain; final result: passed.
 
 ## Reference and evidence
 
