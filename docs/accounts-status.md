@@ -4,12 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (UP PGT detail header is prepared for review. Anglo-Norman Set 2 remains live behind login; Set 1 remains free and live.)_
+_Last updated: 2026-11-07 (The owner approved publication of the UP PGT detail header. Anglo-Norman Set 2 remains live behind login; Set 1 remains free and live.)_
 
-## UP PGT detail header — awaiting publication (2026-11-07)
+## UP PGT detail header — publication approved (2026-11-07)
 
 - The owner asked to carry the PGT hub's illustrated header onto `/exams/pgt/up-pgt/`, with a fade that signals a subpage. The detail page reuses the hub illustration and live text placement, at 58% image opacity and a shorter desktop height. Its breadcrumb, separate back link, four study sections and shared footer remain.
-- Feature branch: `feat/up-pgt-faded-hero`; it has not been merged into `main`. Eleventy build and 7,556 internal references pass. Browser checks at 320, 390, 768, 1024 and 1440px found contained text, no overflow or console errors, and the shared footer. The back link opens the PGT hub. Evidence: `docs/up-pgt-hero/`.
+- The owner explicitly said “live kar do” for PR #21 (`feat/up-pgt-faded-hero`); merging that PR into `main` triggers Cloudflare Pages publication. Eleventy build and 7,556 internal references pass. Browser checks at 320, 390, 768, 1024 and 1440px found contained text, no overflow or console errors, and the shared footer. The back link opens the PGT hub. Evidence: `docs/up-pgt-hero/`.
 
 ## Anglo-Norman Set 2 — login set, merged to main (2026-11-07)
 
