@@ -13,6 +13,8 @@
 .pgt-hero .eyebrow{letter-spacing:.1em;margin:0 0 14px}
 .pgt-hero h1,.pgt-detail h1{font-family:var(--serif);font-size:clamp(1.6rem,3.4vw,2.3rem);line-height:1.2;font-weight:600;letter-spacing:normal;color:var(--ink);margin:0 0 16px}
 .pgt-hero-description{max-width:47ch;font-size:1.06rem;line-height:1.65;color:var(--ink);margin:0}
+.pgt-hero-detail .pgt-hero-art img{opacity:.58}
+.pgt-hero-detail .pgt-hero-inner{min-height:clamp(230px,21vw,300px)}
 .pgt-hub{padding-top:30px;padding-bottom:54px;container-type:inline-size}
 .pgt-featured{display:flex;align-items:center;gap:26px;width:100%;padding:24px 30px;min-height:122px;margin:0 0 40px;background:var(--teal);color:#fff;border-bottom:5px solid #DDAA38;border-radius:10px;text-decoration:none;transition:background-color .18s}
 .pgt-featured:hover{background:var(--teal-dark);color:#fff}
@@ -42,9 +44,8 @@
 
 /* The UP guide retains the existing English study material at the site scale. */
 .pgt-detail{padding-bottom:48px}
-.pgt-detail-head{padding:24px 0 30px;border-bottom:1px solid var(--border)}
-.pgt-back{display:inline-flex;align-items:center;gap:9px;min-height:44px;margin-bottom:24px;font-weight:600}
-.pgt-detail-head > p:last-child{max-width:72ch;margin:0}
+.pgt-detail-nav{padding-top:10px;padding-bottom:10px}
+.pgt-back{display:inline-flex;align-items:center;gap:9px;min-height:44px;font-weight:600}
 .pgt-reading{padding:30px 0}
 .pgt-reading + .pgt-reading{border-top:1px solid var(--border)}
 .pgt-reading p,.pgt-reading ul,.pgt-reading ol{max-width:78ch}
@@ -84,6 +85,7 @@
   .pgt-hero .eyebrow{font-size:clamp(6.5px,1.75vw,11px);line-height:1.3;letter-spacing:.07em;margin-bottom:clamp(4px,.8vw,8px)}
   .pgt-hero h1{font-size:clamp(13px,3.9vw,26px);line-height:1.25;margin-bottom:clamp(5px,1.2vw,10px)}
   .pgt-hero-description{font-size:clamp(9px,2.55vw,17px);line-height:1.5;max-width:32ch}
+  .pgt-hero-detail .pgt-hero-inner{min-height:0}
   .pgt-hub{padding-top:24px;padding-bottom:36px}
   .pgt-featured{margin-bottom:32px}
   .pgt-exam-section + .pgt-exam-section{margin-top:32px}

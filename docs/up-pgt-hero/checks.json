@@ -1,0 +1,152 @@
+[
+  {
+    "width": 320,
+    "hero": {
+      "x": 0,
+      "y": 204,
+      "width": 320,
+      "height": 115,
+      "bottom": 319
+    },
+    "copy": {
+      "x": 14,
+      "y": 219,
+      "width": 161,
+      "height": 85,
+      "bottom": 303
+    },
+    "heading": {
+      "x": 14,
+      "y": 243,
+      "width": 161,
+      "height": 16,
+      "bottom": 259
+    },
+    "imageOpacity": "0.58",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "readingSections": 4,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "hero": {
+      "x": 0,
+      "y": 180,
+      "width": 390,
+      "height": 140,
+      "bottom": 320
+    },
+    "copy": {
+      "x": 14,
+      "y": 204,
+      "width": 199,
+      "height": 91,
+      "bottom": 295
+    },
+    "heading": {
+      "x": 14,
+      "y": 229,
+      "width": 199,
+      "height": 19,
+      "bottom": 248
+    },
+    "imageOpacity": "0.58",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "readingSections": 4,
+    "errors": []
+  },
+  {
+    "width": 768,
+    "hero": {
+      "x": 0,
+      "y": 180,
+      "width": 768,
+      "height": 231,
+      "bottom": 411
+    },
+    "copy": {
+      "x": 22,
+      "y": 190,
+      "width": 362,
+      "height": 209,
+      "bottom": 399
+    },
+    "heading": {
+      "x": 22,
+      "y": 260,
+      "width": 362,
+      "height": 31,
+      "bottom": 291
+    },
+    "imageOpacity": "0.58",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "readingSections": 4,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "hero": {
+      "x": 272,
+      "y": 114,
+      "width": 752,
+      "height": 231,
+      "bottom": 345
+    },
+    "copy": {
+      "x": 294,
+      "y": 119,
+      "width": 354,
+      "height": 220,
+      "bottom": 339
+    },
+    "heading": {
+      "x": 294,
+      "y": 189,
+      "width": 354,
+      "height": 42,
+      "bottom": 231
+    },
+    "imageOpacity": "0.58",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "readingSections": 4,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "hero": {
+      "x": 272,
+      "y": 114,
+      "width": 1168,
+      "height": 301,
+      "bottom": 415
+    },
+    "copy": {
+      "x": 294,
+      "y": 153,
+      "width": 674,
+      "height": 222,
+      "bottom": 375
+    },
+    "heading": {
+      "x": 294,
+      "y": 223,
+      "width": 674,
+      "height": 44,
+      "bottom": 267
+    },
+    "imageOpacity": "0.58",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "readingSections": 4,
+    "errors": []
+  }
+]

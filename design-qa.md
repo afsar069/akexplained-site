@@ -2,6 +2,12 @@
 
 final result: passed
 
+## UP PGT detail header — 2026-11-07
+
+- Reference: the PGT hub's existing illustration and live text overlay. The detail page uses that same art with a 58% image opacity and a shorter desktop hero so the breadcrumb and back link clearly mark it as a subpage. The four study sections and shared footer remain below.
+- Captures: `docs/up-pgt-hero/390.png` and `1440.png`; measurements and checks: `checks.json`. At 320, 390, 768, 1024 and 1440px, text stays within the hero, the image loads, and there are no page errors or horizontal overflow. The back link returns to `/exams/pgt/`.
+- Build and 7,556 internal reference checks pass. No actionable visual issues remain; final result: passed.
+
 ## NET hero reuse — 2026-11-07
 
 - Visual source: the released PGT header, `docs/pgt-hub/desktop.png` and `mobile-top.png`. NET browser captures at the same 1440px desktop and 390px phone widths are `docs/net-pgt-hero/net-1440.png` and `net-390.png`.
