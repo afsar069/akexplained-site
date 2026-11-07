@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (login-set layer built, SQL live, code on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
+_Last updated: 2026-11-07 (login layer and Set 4 live on main; lock on login sets and login-and-come-back on the branch; dashboard fixes are live; login illustrations updated; MCQ page top strips fixed and live; "Choose your path" screen redesigned and live)._
 
 ## Live on `main` (akexplained.com)
 - **Question tagging done.** All 2,000 Daily + 300 Old English MCQ questions carry `topicId` + `periodId`.
@@ -90,6 +90,24 @@ Done at the owner's word after a full check of the live dashboard (see the list 
   for now), reading progress and exam-wise progress, tile PNGs (nothing to do until the owner has pictures).
 
 ## Waiting on a feature branch (the login-layer block below is already merged; kept here for its details)
+- **Lock on login sets, and "login and come back" through every exit** (2026-11-07, branch `claude/youthful-brown-vwwtyp`; NOT on `main` yet).
+  Owner's asks: (1) a login set should look locked from outside, a tap on the lock takes a guest straight to the login page;
+  (2) after logging in the student lands exactly where they left ("login karke seedha wahin"); (3) write the rule changes down
+  so another AI and the next session can carry on.
+  - **Lock:** `quizzes/mcq/_templates/age-hub.njk` (padlock link before the title of a login set, `data-guest-only`, so a
+    logged-in student does not see it), `.agehub-lock` in `assets/site.css`. Link: `/login/?next=%2Fquizzes%2Fmcq%2F<age>%2Fset-<n>%2F`.
+    The text tag "Login needed" stays removed. The "Build your own test" page still says "Needs a free login" (not asked to change).
+  - **Come back:** `assets/login.js`: `?next=` is kept in `localStorage` (`ak:next`) for one hour (survives Google and an email link
+    opened in a new tab); all ten exits go through `goAfterLogin()`: password sign-in, already logged in, Google (new and returning),
+    email-confirm landing, "Choose your path" Save and Skip, new password. A plain visit to `/login/` drops an old `next`. Only
+    same-site paths are accepted. The email-confirm redirect URL is untouched.
+  - **Tested** (scratch copy of the site, real Set 4 files, Supabase mocked): 18 of 18 new checks (lock shows to a guest only and
+    only on Set 4; plain-words label; tap size 32 px on a phone and no sideways scroll; click goes to `/login/?next=…`; returns to
+    the set page after password sign-in, Google (has a path and new person), email link in a new tab, password reset; a 2-hour-old
+    `next` and a plain visit are ignored) plus the earlier 21 of 21.
+  - **Notes for other AIs:** `AGENTS.md` (new, one page) and `CLAUDE.md` (top pointer; rule 5 has the merge steps; rule 7 the
+    "owner says verified" exception; rule 14 what the session cannot reach; rule 15 the lock and the return rule).
+    `tools/mcq-skill/README.md` has a login-set section. Not checked on the live site (the session cannot open it).
 - **Login layer for MCQ sets** (2026-11-07; MERGED to `main` at the owner's word the same day, pull request 1, merge commit `191c802`, so it publishes to akexplained.com once Cloudflare has built it; the session cannot reach akexplained.com, so the live page was not checked by Claude). Owner's decisions (rule 15):
   free sets stay open (the 300 Old English MCQs and any set the owner calls free); a set the owner calls "login" is kept in the
   database, readable only by logged-in students; paid comes later (the owner picks which sets, and a promo code can give the

@@ -6,6 +6,42 @@
 (function () {
   'use strict';
 
+  // ?next=/some/page — a page that needs a login (a login-only MCQ set; the lock on the hub row) sends people
+  // here and wants them back afterwards, "login karke seedha wahin jahan se chhoda tha" (owner, 2026-11-07).
+  // Only a path on this same site is accepted (never another site). It is kept in localStorage with a time,
+  // not sessionStorage, so it survives the trip to Google AND an email-confirm or password-reset link opened
+  // in a new tab. It is dropped after one hour, and whenever someone visits /login/ without it (see wire()).
+  // Every way out of the login page (password, Google, email link, "Choose your path", new password) calls
+  // goAfterLogin(), so a student always lands back on the page they came from; with nothing stored, on the
+  // old default page.
+  var NEXT_KEY = 'ak:next';
+  var NEXT_TTL_MS = 60 * 60 * 1000;
+  function cleanNext(raw) {
+    if (!raw || raw.charAt(0) !== '/' || raw.charAt(1) === '/' || raw.indexOf('\\') > -1) return '';
+    try {
+      var u = new URL(raw, location.origin);
+      return u.origin === location.origin ? u.pathname + u.search + u.hash : '';
+    } catch (e) { return ''; }
+  }
+  function rememberNext(url) {
+    try { localStorage.setItem(NEXT_KEY, JSON.stringify({ u: url, t: Date.now() })); } catch (e) { /* private mode */ }
+  }
+  function forgetNext() {
+    try { localStorage.removeItem(NEXT_KEY); } catch (e) { /* ignore */ }
+  }
+  function readNext() {
+    try {
+      var d = JSON.parse(localStorage.getItem(NEXT_KEY) || 'null');
+      if (!d || typeof d.u !== 'string' || !(Date.now() - d.t < NEXT_TTL_MS)) return '';
+      return cleanNext(d.u);
+    } catch (e) { return ''; }
+  }
+  function goAfterLogin(fallback) {
+    var to = readNext();
+    forgetNext();
+    location.replace(to || fallback);
+  }
+
   // Turn a raw Supabase error into a short, plain message. We still fall back
   // to the raw text so nothing ever fails silently.
   function friendly(err) {
@@ -98,28 +134,12 @@
       var fromGoogle = false;
       try { fromGoogle = sessionStorage.getItem('ak:oauth') === 'google'; } catch (e) { /* private mode */ }
 
-      // ?next=/some/page — a page that needs a login (a login-only MCQ set) sends people here and wants
-      // them back afterwards. Only a path on this same site is accepted (never another site). It is kept in
-      // sessionStorage so it survives the trip to Google. Used for the "returning person" exits only; a new
-      // person still goes through "Choose your path" to the dashboard, as before.
-      var NEXT_KEY = 'ak:next';
-      function cleanNext(raw) {
-        if (!raw || raw.charAt(0) !== '/' || raw.charAt(1) === '/' || raw.indexOf('\\') > -1) return '';
-        try {
-          var u = new URL(raw, location.origin);
-          return u.origin === location.origin ? u.pathname + u.search + u.hash : '';
-        } catch (e) { return ''; }
-      }
-      try {
-        var askedNext = cleanNext(new URLSearchParams(location.search).get('next'));
-        if (askedNext) sessionStorage.setItem(NEXT_KEY, askedNext);
-        else if (!fromGoogle) sessionStorage.removeItem(NEXT_KEY);     // drop an old, unused one
-      } catch (e) { /* private mode */ }
-      function goAfterLogin(fallback) {
-        var to = '';
-        try { to = cleanNext(sessionStorage.getItem(NEXT_KEY) || ''); sessionStorage.removeItem(NEXT_KEY); } catch (e) { /* ignore */ }
-        location.replace(to || fallback);
-      }
+      // Remember ?next= (see the top of this file). A visit to /login/ with no ?next= drops an old, unused one,
+      // except on the way back from Google or from an email link, where it must stay.
+      var emailLanding = auth.urlType === 'signup' || auth.urlType === 'recovery';
+      var askedNext = cleanNext(new URLSearchParams(location.search).get('next'));
+      if (askedNext) rememberNext(askedNext);
+      else if (!fromGoogle && !emailLanding) forgetNext();
       showReturnError();
 
       // Landing from an email link? 'recovery' = password reset, 'signup' = email confirmation.
@@ -281,7 +301,7 @@
           submit.disabled = false; submit.textContent = 'Set new password';
           if (res.error) { showError(box, friendly(res.error)); return; }
           if (auth.refreshHeader) auth.session().then(function (s) { auth.refreshHeader(s); });
-          location.replace('/account/');
+          goAfterLogin('/account/');
         }).catch(function (err) {
           submit.disabled = false; submit.textContent = 'Set new password';
           showError(box, friendly(err));
@@ -304,9 +324,9 @@
           }) : Promise.resolve();
           return saved.then(function () {
             if (!exams.error && (!exams.data || exams.data.length === 0)) openPath(session);
-            else location.replace('/account/');
+            else goAfterLogin('/account/');
           });
-        }).catch(function () { location.replace('/account/'); });
+        }).catch(function () { goAfterLogin('/account/'); });
       }
 
       // ---- signup ----
@@ -558,8 +578,8 @@
           showError(box, res.error.message || 'Could not save. Please try again.');
           return;
         }
-        // Journey chosen: take the person straight to their dashboard.
-        location.replace('/dashboard/');
+        // Journey chosen: back to the page they came from (?next=), else straight to their dashboard.
+        goAfterLogin('/dashboard/');
       }).catch(function (err) {
         btnSave.disabled = false; btnSkip.disabled = false;
         showError(box, (err && err.message) || 'Could not save. Please try again.');

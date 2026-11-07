@@ -1,5 +1,9 @@
 # AK Explained — working rules
 
+**For any AI agent (Claude, Codex or another):** this file is the full rulebook and wins on any difference.
+`AGENTS.md` is the one-page short version with the rules that must never be broken. `docs/accounts-status.md`
+says where things stand today.
+
 ## 1. Site text is in simple English. Always.
 Anything a visitor can read — headings, labels, buttons, form hints, error
 messages, empty states, alt text — is written in **simple, plain English**.
@@ -23,6 +27,7 @@ breaking it breaks a promise already made.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
+- `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, page-head motif and `nav.js` into every built page
 
@@ -41,6 +46,13 @@ sidebar markup copied into `index.html` and `404.html` (every other page gets it
 ## 5. Deploys
 Work goes on the feature branch. Merging to `main` publishes to akexplained.com,
 so do that only when asked.
+**How to merge when the owner says so** (worked twice on 2026-11-07): `git fetch origin main` and check that
+`git log HEAD..origin/main` is empty (if not, merge main into the branch, rebuild and retest first). Open a pull
+request with the GitHub tools (`create_pull_request`, then `merge_pull_request` with `merge_method: merge` and
+`expectedHeadSha` set to the commit you tested). Then `git fetch origin main`,
+`git checkout -B <branch> origin/main` and `git push -u origin <branch>`, so the branch equals main (the
+session's stop hook complains about unpushed commits otherwise). Cloudflare Pages then builds `main`. A cloud
+session cannot open akexplained.com (rule 14), so give the owner the live links to look at.
 
 ## 6. Off for now
 - `write-a-review/` — built form, excluded from the build in `eleventy.config.js`.
@@ -58,7 +70,9 @@ here is public for good. Free: the steps below. Login: rule 15 (the files never 
 To publish a (free) set:
 1. `python3 tools/mcq-skill/validate_mcq.py <easy> <medium> --notes notes/<article>/index.md --others <other sets' files of the age>` — no errors.
 2. Spot-check about ten questions against their `src`, and every one a warning or the report flags.
-   Fix or replace a wrong one; never keep a guess.
+   Fix or replace a wrong one; never keep a guess. **If the owner says the files are already verified** (as
+   for Old English Set 4, 2026-11-07: "verified, overlaps are fine"), do not re-check the facts or the
+   near-duplicates: run the structure checks only and mention once anything that stood out.
 3. Files go to `assets/questions/` (free sets only; a login set never goes there, rule 15).
 4. `_data/mcqSpec.json` is the registry. An age with no `sets` gets a "questions coming soon" hub
    (noindex, not linked from `/quizzes/mcq/`). To plan an age, add its `sets` (number, title, one-line
@@ -341,6 +355,10 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   on the provider's **own** page — aggregator/comparison sites are unreliable (owner's rule). If a host
   is blocked (the network policy blocks some: Supabase over plain `WebFetch`, provider pricing pages),
   either ask the owner to add it under the environment's Network access, or ask the owner for the fact.
+- **What this session cannot reach** (2026-11-07): `akexplained.com` and `en.wikipedia.org` do not resolve
+  (the network policy). `WebSearch` works. So Claude cannot look at the live site: say so and give the owner the
+  links to check. Britannica and the Oxford Companion are the question files' `src`; say which source could not
+  be opened.
 - **The owner cannot open your container.** Never point them at a `/tmp/...` (scratchpad) path — those
   are inside the session and vanish when it is reclaimed. Paste the content into chat, or give a repo
   path / GitHub link they can open themselves.
@@ -392,6 +410,22 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
 - The dashboard pool counts a login set as `count x levels` from the registry (`tools/build-syllabus.js`).
 - Engine: `assets/cbt.js` reads a login set with `data-gated` on the page (`gatedPaper()`); it must wait for
   `window.akAuth`, because `cbt.js` runs before `auth.js`.
-- **Login and come back**: a login set shows "Log in to take this test" with a link to `/login/?next=<path>`.
-  `login.js` sends a returning person (password sign-in, Google, already logged in) back there. A brand-new
-  person still goes through "Choose your path" to the dashboard. Only a path on this site is accepted as `next`.
+- **The lock on the hub** (owner, 2026-11-07): the hub row of a login set shows a padlock before its title, a link
+  to `/login/?next=<that set's page>`, so a student sees from outside that a login is needed, and one tap takes
+  a guest straight to the login page. It is `data-guest-only`, so `auth.js` hides it for a logged-in student.
+  There is no text tag ("Login needed" was removed on the owner's word). Start still opens the set page, which
+  shows "Log in to take this test" to a guest (its button links to `/login/?next=<page and query>`, `cbt.js` `needLogin()`). The "Build your own test" page still says "Needs a free login"
+  on the row (the owner has not asked to remove it). Template `quizzes/mcq/_templates/age-hub.njk`, CSS
+  `.agehub-lock` in `assets/site.css`.
+- **Login and come back** (owner: "login karke seedha wahin jahan se chhoda hai"): `?next=<same-site path>` on
+  `/login/` is kept in `localStorage` (`ak:next`, with a time) so it survives Google and an email link opened
+  in a new tab, for **one hour**. **Every** way out of the login page calls `goAfterLogin()` in `assets/login.js`:
+  password sign-in, already logged in, Google (new or returning), email-confirm landing, "Choose your path"
+  Save and Skip, and the new-password form. With nothing stored they go where they always went (`/account/` or
+  `/dashboard/`). A visit to `/login/` without `?next=` drops an old one, except on the way back from Google or an
+  email link. Only a path on this site is accepted (not `https://…`, `//…`, `/\…`, `javascript:`).
+  The email-confirm redirect URL itself is untouched (Supabase's allowed-URL list). Change an exit only through
+  `goAfterLogin()`.
+- **Hub words when the owner gives none:** use only the file's own `setName`, topic names, count and levels,
+  say so, never invent (Old English Set 4 was done like this and the owner kept it). Two sets on the same
+  topic get the file's own different names.
