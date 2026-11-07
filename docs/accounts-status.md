@@ -4,14 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-07 (Anglo-Norman Set 1 is prepared as a free, public set on `feat/anglo-norman-set-1-free`; it is not on `main` yet. The NET header, PGT hub and Old English Set 6 are live.)_
+_Last updated: 2026-11-07 (Anglo-Norman Set 1 was merged as a free, public set in PR #17. The NET header, PGT hub and Old English Set 6 are live.)_
 
-## Anglo-Norman Set 1 — free, prepared on branch (2026-11-07)
+## Anglo-Norman Set 1 — free, merged to main (2026-11-07)
 
-- The owner supplied 50 easy and 50 medium questions and explicitly chose free access without login. Both public files are in `assets/questions/`; no Supabase load or access rule change is needed. Set 1 is live in the registry on the feature branch; Sets 2 and 3 stay planned. The MCQ age card opens the hub, and guest visitors can start either level.
+- The owner supplied 50 easy and 50 medium questions and explicitly chose free access without login. Both public files are in `assets/questions/`; no Supabase load or access rule change was needed. Set 1 is live in the registry on `main`; Sets 2 and 3 stay planned. The MCQ age card opens the hub, and guest visitors can start either level. The owner approved merging [PR #17](https://github.com/afsar069/akexplained-site/pull/17), which was merged as `d289b0e`.
 - The uploads used `middle-english-set-1` as the set ID while the MCQ page uses `anglo-norman`. Only `setId`, `age`, `ageName` and each question ID were changed to match the page; all question text, options, answer indices, explanations, sources and passages were preserved exactly. The Middle English notes link remains correct. Validator: zero errors, 58 advice warnings about length and answer clues. The topic/period build gate passed.
 - The existing plan excludes the 1362 Statute of Pleading and later mystery/morality plays from this period. The owner reviewed this mismatch and explicitly chose to keep the uploaded comparative questions unchanged in Set 1. The cited Oxford Companion entries were not attached for independent fact checking; accessible Wikipedia/Gutenberg citations were spot checked. The quiz data is public in Git history once pushed.
-- Eleventy build passed, 6,971 internal links and assets resolved. Guest-browser checks passed for the MCQ age card, free Start link, easy/medium test screens, a medium-level passage and the build page. The owner has not yet asked to merge this feature branch into `main`.
+- Eleventy build passed, 6,971 internal links and assets resolved. Guest-browser checks passed for the MCQ age card, free Start link, easy/medium test screens, a medium-level passage and the build page. The live website cannot be opened from this cloud session; production is checked through Cloudflare Pages.
 
 ## NET header matched to PGT — live (2026-11-07)
 
@@ -35,9 +35,9 @@ _Last updated: 2026-11-07 (Anglo-Norman Set 1 is prepared as a free, public set 
 - The owner explicitly instructed "merge karke live kar do now" on 2026-11-07. PR #13 is the release vehicle; merging publishes through the existing Cloudflare Pages main-branch deployment. Deployment results are attached to its merge commit in GitHub checks.
 - Phone refinement: the owner approved desktop unchanged and asked for smaller hero text over the left side of the image on phones. Updated only the max-width 760px hero rules. Checked 320–760px text containment and confirmed the 1440px desktop screenshot is pixel-identical to the approved capture. Evidence: `docs/pgt-hub/mobile-top.png`, `mobile-hero-comparison.png`, `mobile-hero-checks.json`. Included in the approved PR #13 release.
 
-## Anglo-Norman MCQ plan — Set 1 ready on branch (2026-11-07)
+## Anglo-Norman MCQ plan — Set 1 live (2026-11-07)
 
-- The owner asked for a plan like the Old English one, "Set 1, Set 2, Set 3", with the age prepared from the UGC NET point of view, and left the topics to Claude. The plan is in `_data/mcqSpec.json` (`anglo-norman`: three sets and five hub topics). Set 1 is now prepared as a free set on the feature branch; Sets 2 and 3 remain "Coming soon". The hub topic and level filters work.
+- The owner asked for a plan like the Old English one, "Set 1, Set 2, Set 3", with the age prepared from the UGC NET point of view, and left the topics to Claude. The plan is in `_data/mcqSpec.json` (`anglo-norman`: three sets and five hub topics). Set 1 is live as a free set; Sets 2 and 3 remain "Coming soon". The hub topic and level filters work.
 - Set 1 "Across the whole age" (easy, medium): the Conquest, the three languages, the chroniclers, the poems, the prose, the first plays. Set 2 "Poetry and romance" (medium, hard). Set 3 "Chronicles, religious writing and early drama" (medium, hard). 50 questions per level, so 300 questions in all if every level is filled.
 - Where the words come from: the scope line the owner approved for the Daily Anglo-Norman page ("It covers the Norman Conquest and its languages, Wace, Layamon, Marie de France, the Arthurian chronicles, the early romances and the religious prose") and the works named in the 100 Daily questions, plus the Middle English notes. Only works those sources already name are in the meta lines.
 - The NET side is **not** checked against the official syllabus text: `ugcnetonline.in` and the NTA site do not resolve from a cloud session. The unit mapping uses only the unit titles already on `/exams/net/syllabus/` (Unit I Drama, Unit II Poetry, Unit V Language). Check it against the official syllabus before calling a set "NET level" (Old English Set 6 carries the extra tag "UGC NET level"; add it only when the files match that pattern).
