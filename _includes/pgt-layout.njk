@@ -14,16 +14,28 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"></header>
 <div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if pgt_hub %}PGT English{% else %}<a href="/exams/pgt/">PGT English</a><span>/</span>{{ crumb_label or title }}{% endif %}</p></div>
-<main id="main"{% if not pgt_hub %} class="wrap pgt-detail"{% endif %}>
+<main id="main"{% if not pgt_hub %} class="pgt-detail"{% endif %}>
 {% if not pgt_hub %}
-  <header class="pgt-detail-head">
+  <div class="wrap pgt-detail-nav">
     <a class="pgt-back" href="/exams/pgt/"><img src="/assets/icons/feather/arrow-left.svg" alt="" width="18" height="18">Back to PGT exams</a>
-    <p class="eyebrow">Uttar Pradesh · UPESSC</p>
-    <h1>{{ title }}</h1>
-    <p>{{ description }}</p>
-  </header>
+  </div>
+  <section class="pgt-hero pgt-hero-detail" aria-labelledby="pgt-detail-title">
+    <picture class="pgt-hero-art" aria-hidden="true">
+      <source type="image/webp" srcset="/assets/exams/pgt-hero-1200.webp 1200w, /assets/exams/pgt-hero-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
+      <img src="/assets/exams/pgt-hero-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="wrap pgt-hero-inner">
+      <div class="pgt-hero-copy">
+        <p class="eyebrow">Uttar Pradesh · UPESSC</p>
+        <h1 id="pgt-detail-title">{{ title }}</h1>
+        <p class="pgt-hero-description">{{ description }}</p>
+      </div>
+    </div>
+  </section>
+  <div class="wrap pgt-detail-body">
 {% endif %}
 {{ content | safe }}
+{% if not pgt_hub %}</div>{% endif %}
 </main>
 <footer class="site-footer"></footer>
 </body>
