@@ -52,6 +52,14 @@ final result: passed
 - A fresh 1440px desktop screenshot is identical in decoded pixels to the approved pre-edit capture. The original six-width navigation/link/font/image checks and Eleventy build passed again. Results: `checks.json` and `mobile-hero-checks.json`.
 - No actionable P0/P1/P2 findings remain. final result: passed.
 
+## Default footer correction — 2026-11-07
+
+- The owner clarified that every page must keep the default site footer; this instruction supersedes the initial mock's compact custom footer.
+- Authoritative footer source: `_includes/base.njk`. Both PGT output files now contain its exact shared footer markup, supplied by `syncChrome`. Removed custom footer CSS.
+- Opened and inspected the browser captures `docs/pgt-footer/desktop.png` (1440px browser viewport, 1168px footer region) and `mobile.png` (390px viewport). Branding, Study/Explore/More, social links and Privacy/Terms are present in the standard layout.
+- Both PGT routes passed at 390px and 1440px: one default footer, 24 links, valid local destinations, no overflow or console errors. Pixel comparison confirms the desktop above the footer is unchanged. Results: `docs/pgt-footer/checks.json`.
+- `npm run build` passed. No actionable P0/P1/P2 findings remain; final result: passed.
+
 ## Implementation checklist
 
 - [x] Approved hero, active UP button and all 13 Coming soon cards.

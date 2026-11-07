@@ -42,6 +42,8 @@ Names, years and pictures come from the Daily page. Invent none of them.
 The menu lives in three places and must stay in step: `_includes/base.njk` and the
 sidebar markup copied into `index.html` and `404.html` (every other page gets it from base.njk at build).
 
+**The default footer belongs on every public page**, including custom exam hubs and their related pages (owner, 2026-11-07). Keep the shared footer from `_includes/base.njk`; custom layouts use `<footer class="site-footer"></footer>` so `syncChrome` supplies it automatically. A new page design must not replace it with a page-specific footer.
+
 ## 4. Before pushing
 `npx eleventy` must build clean, and no internal link may 404.
 
