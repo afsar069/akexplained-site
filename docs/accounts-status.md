@@ -4,12 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-08 (The UP PGT MCQ day index is prepared on a feature branch. The resource cards and card scale correction remain live.)_
+_Last updated: 2026-11-08 (The owner approved publication of the UP PGT MCQ day index. The resource cards and card scale correction remain live.)_
 
-## UP PGT MCQ day index — awaiting publication (2026-11-08)
+## UP PGT MCQ day index — publication approved (2026-11-08)
 
-- The owner selected the professional MCQ press design: a right-side quiz machine illustration in the existing compact hero, with live `UP PGT` / `English MCQs` text on the left. The MCQ card now leads to a day index with six expandable groups of ten day links, all 60 present on one page. Day 1 is Elizabethan Age; Days 2–60 have no supplied topics.
-- Each day opens a noindex Coming soon page because MCQ questions were not supplied. All other UP PGT resource pages and the shared default footer remain. The branch `feat/up-pgt-mcq-days` is not merged to `main`; the owner has not instructed this new page to go live.
+- The owner selected the professional MCQ press design: a right-side quiz machine illustration in the existing compact hero, with live `UP PGT` / `English MCQs` text on the left. The MCQ card leads to a day index with six expandable groups of ten day links, all 60 present on one page. Every day says Coming soon; no topic is assigned until its questions are uploaded, as the owner instructed.
+- Each day opens a noindex Coming soon page because MCQ questions were not supplied. All other UP PGT resource pages and the shared default footer remain. The owner explicitly asked to make this revised page live on 2026-11-08 through PR #24 (`feat/up-pgt-mcq-days`); merging it to `main` triggers Cloudflare Pages publication.
 - Screenshots, responsive measurements, route checks and design QA evidence are in `docs/up-pgt-mcq-days/`.
 
 ## UP PGT card scale — publication approved (2026-11-07)

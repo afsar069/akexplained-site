@@ -3,6 +3,5 @@ module.exports = Array.from({ length: 60 }, (_, index) => {
   return {
     number,
     label: String(number).padStart(2, "0"),
-    topic: number === 1 ? "Elizabethan Age" : null,
   };
 });

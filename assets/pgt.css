@@ -40,13 +40,8 @@
 .pgt-mcq-day:focus-visible{outline:3px solid var(--teal-dark);outline-offset:3px}
 .pgt-mcq-day-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
 .pgt-mcq-day-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.3}
-.pgt-mcq-day-copy span,.pgt-mcq-day-copy em{font-size:.92rem;line-height:1.35}
-.pgt-mcq-day-copy em{font-style:italic}
+.pgt-mcq-day-copy span{font-size:.92rem;line-height:1.35}
 .pgt-mcq-day > img{width:20px;height:20px;flex:none}
-.pgt-mcq-day-first{background:var(--teal);border-color:var(--teal);color:#fff}
-.pgt-mcq-day-first strong{color:#fff}
-.pgt-mcq-day-first:hover{background:var(--teal-dark);color:#fff}
-.pgt-mcq-day-first > img{filter:brightness(0) invert(1)}
 .pgt-resource-hub{padding:30px 0 24px}
 .pgt-course-card{display:flex;align-items:center;gap:26px;min-height:122px;padding:24px 30px;margin-bottom:18px;border-bottom:5px solid #DDAA38;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none}
 .pgt-course-card:hover{background:var(--teal-dark);color:#fff}

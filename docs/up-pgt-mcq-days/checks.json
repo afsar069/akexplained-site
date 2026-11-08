@@ -2,24 +2,11 @@
   {
     "width": 320,
     "status": 200,
-    "hero": {
-      "x": 0,
-      "y": 203.8125,
-      "width": 320,
-      "height": 115.28125,
-      "bottom": 319.09375
-    },
-    "copy": {
-      "x": 14,
-      "y": 224.484375,
-      "width": 160.59375,
-      "height": 72.9375,
-      "bottom": 297.421875
-    },
-    "imageLoaded": true,
     "groups": 6,
     "dayLinks": 60,
-    "openGroups": 1,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
     "overflow": false,
     "footer": true,
     "errors": []
@@ -27,24 +14,11 @@
   {
     "width": 390,
     "status": 200,
-    "hero": {
-      "x": 0,
-      "y": 179.65625,
-      "width": 390,
-      "height": 140.28125,
-      "bottom": 319.9375
-    },
-    "copy": {
-      "x": 14,
-      "y": 209.71875,
-      "width": 199.09375,
-      "height": 79.15625,
-      "bottom": 288.875
-    },
-    "imageLoaded": true,
     "groups": 6,
     "dayLinks": 60,
-    "openGroups": 1,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
     "overflow": false,
     "footer": true,
     "errors": []
@@ -56,33 +30,22 @@
   {
     "day60Route": "/exams/pgt/up-pgt/mcqs/day-60/",
     "day60Noindex": "noindex,follow",
+    "day60Heading": "Day 60",
     "day60Footer": 1
   },
   {
     "day1Route": "/exams/pgt/up-pgt/mcqs/day-1/",
-    "elizabethan": 2
+    "day1Heading": "Day 01",
+    "day1ComingSoon": 1
   },
   {
     "width": 768,
     "status": 200,
-    "hero": {
-      "x": 0,
-      "y": 179.65625,
-      "width": 768,
-      "height": 231,
-      "bottom": 410.65625
-    },
-    "copy": {
-      "x": 22,
-      "y": 206.265625,
-      "width": 376.46875,
-      "height": 176.78125,
-      "bottom": 383.046875
-    },
-    "imageLoaded": true,
     "groups": 6,
     "dayLinks": 60,
-    "openGroups": 1,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
     "overflow": false,
     "footer": true,
     "errors": []
@@ -90,24 +53,11 @@
   {
     "width": 1024,
     "status": 200,
-    "hero": {
-      "x": 272,
-      "y": 113.65625,
-      "width": 752,
-      "height": 231,
-      "bottom": 344.65625
-    },
-    "copy": {
-      "x": 294,
-      "y": 131.125,
-      "width": 368.15625,
-      "height": 195.0625,
-      "bottom": 326.1875
-    },
-    "imageLoaded": true,
     "groups": 6,
     "dayLinks": 60,
-    "openGroups": 1,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
     "overflow": false,
     "footer": true,
     "errors": []
@@ -115,24 +65,11 @@
   {
     "width": 1440,
     "status": 200,
-    "hero": {
-      "x": 272,
-      "y": 113.65625,
-      "width": 1168,
-      "height": 301,
-      "bottom": 414.65625
-    },
-    "copy": {
-      "x": 294,
-      "y": 164.03125,
-      "width": 584.46875,
-      "height": 199.234375,
-      "bottom": 363.265625
-    },
-    "imageLoaded": true,
     "groups": 6,
     "dayLinks": 60,
-    "openGroups": 1,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
     "overflow": false,
     "footer": true,
     "errors": []
