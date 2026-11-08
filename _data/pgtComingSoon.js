@@ -1,1 +1,1 @@
-module.exports = require("./pgtResources.json").filter(resource => resource.slug !== "mcqs");
+module.exports = require("./pgtResources.json").filter(resource => !["mcqs", "mock-tests"].includes(resource.slug));

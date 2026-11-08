@@ -2,6 +2,12 @@
 
 final result: passed
 
+## UP PGT Mock Tests index — 2026-11-08
+
+- The approved UP PGT MCQ day page is the visual reference. The Mock Tests page uses the same responsive header art, typography, 60-card hierarchy, six native expandable groups, shared footer and content insets; only the practice labels and stopwatch icons change. Final captures: `docs/up-pgt-mock-tests/390.png` and `1440.png`, with a phone comparison beside the existing MCQ page in `comparison.png`.
+- Every card reads Mock Test 01–60 and Coming soon. Each opens a distinct noindex placeholder page without invented questions or test details. The Mock Tests resource card links to the new index. A screenshot pixel comparison found the MCQ page unchanged after sharing its styles with Mock Tests.
+- Chromium checks at 320, 390, 768, 1024 and 1440px found 60 test links, six groups, a loaded header image, the default footer, no horizontal overflow and no page errors. Opening the last group exposed Test 60; its route, noindex marker and footer work. Test 1 also opens its placeholder. Results: `docs/up-pgt-mock-tests/checks.json`. No actionable visual issues remain; final result: passed.
+
 ## UP PGT MCQ day index — 2026-11-08
 
 - Approved visual proposal: `docs/up-pgt-mcq-days/reference.png`; final local browser captures: `1440.png` and `390.png`; side-by-side composition check: `comparison.png`. The quiz press artwork is a separate optimized WebP image, while the `UP PGT` and `English MCQs` heading remains selectable HTML. The hero keeps the existing compact UP PGT subpage height, site fonts, sidebar, content insets and shared footer.

@@ -1,0 +1,42 @@
+---
+layout: pgt-layout.njk
+title: UP PGT English Mock Tests
+description: Mock tests are coming soon.
+crumb_label: Mock Tests
+pgt_practice_index: true
+pgt_practice_hero_title: English Mock Tests
+pgt_practice_collection_label: Mock Tests
+pgt_resources: true
+---
+<section class="pgt-practice-index" aria-labelledby="pgt-practice-index-title">
+  <header class="pgt-practice-intro">
+    <div>
+      <h2 id="pgt-practice-index-title">Choose a mock test</h2>
+      <p>All mock tests are coming soon.</p>
+    </div>
+    <span>60 tests</span>
+  </header>
+  <div class="pgt-practice-groups">
+    {% for group in pgtMockTestGroups %}
+    <details class="pgt-practice-group"{% if loop.first %} open{% endif %}>
+      <summary>
+        <img class="pgt-practice-group-icon" src="/assets/icons/tabler/stopwatch.svg" alt="" width="28" height="28">
+        <span>Tests {{ group.startLabel }}–{{ group.endLabel }}</span>
+        <small>10 tests</small>
+        <img class="pgt-practice-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
+      </summary>
+      <div class="pgt-practice-card-grid">
+        {% for mockTest in group.tests %}
+        <a class="pgt-practice-card" href="/exams/pgt/up-pgt/mock-tests/test-{{ mockTest.number }}/" aria-label="Mock Test {{ mockTest.number }} — coming soon">
+          <span class="pgt-practice-card-copy">
+            <strong>Mock Test {{ mockTest.label }}</strong>
+            <span>Coming soon</span>
+          </span>
+          <img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24">
+        </a>
+        {% endfor %}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
