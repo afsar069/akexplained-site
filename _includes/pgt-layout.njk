@@ -14,21 +14,25 @@
 <body class="pgt-page">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"></header>
-<div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if pgt_hub %}PGT English{% else %}<a href="/exams/pgt/">PGT English</a><span>/</span>{{ crumb_label or title }}{% endif %}</p></div>
+<div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if pgt_hub %}PGT English{% elif pgt_mcqs or pgt_mcq_day %}<a href="/exams/pgt/">PGT English</a><span>/</span><a href="/exams/pgt/up-pgt/">UP PGT</a><span>/</span>{% if pgt_mcq_day %}<a href="/exams/pgt/up-pgt/mcqs/">MCQs</a><span>/</span>{% endif %}{{ crumb_label or title }}{% else %}<a href="/exams/pgt/">PGT English</a><span>/</span>{{ crumb_label or title }}{% endif %}</p></div>
 <main id="main"{% if not pgt_hub %} class="pgt-detail{% if pgt_resources %} pgt-detail-resources{% endif %}"{% endif %}>
 {% if not pgt_hub %}
   <div class="wrap pgt-detail-nav">
-    <a class="pgt-back" href="/exams/pgt/"><img src="/assets/icons/feather/arrow-left.svg" alt="" width="18" height="18">Back to PGT exams</a>
+    <a class="pgt-back" href="{% if pgt_mcq_day %}/exams/pgt/up-pgt/mcqs/{% elif pgt_mcqs %}/exams/pgt/up-pgt/{% else %}/exams/pgt/{% endif %}"><img src="/assets/icons/feather/arrow-left.svg" alt="" width="18" height="18">{% if pgt_mcq_day %}Back to MCQ days{% elif pgt_mcqs %}Back to UP PGT{% else %}Back to PGT exams{% endif %}</a>
   </div>
-  <section class="pgt-hero pgt-hero-detail" aria-labelledby="pgt-detail-title">
+  <section class="pgt-hero pgt-hero-detail{% if pgt_mcqs %} pgt-mcq-hero{% endif %}" aria-labelledby="pgt-detail-title">
     <picture class="pgt-hero-art" aria-hidden="true">
+      {% if pgt_mcqs %}
+      <source type="image/webp" srcset="/assets/exams/pgt-mcq-press-1200.webp 1200w, /assets/exams/pgt-mcq-press-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
+      <img src="/assets/exams/pgt-mcq-press-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+      {% else %}
       <source type="image/webp" srcset="/assets/exams/pgt-hero-1200.webp 1200w, /assets/exams/pgt-hero-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
       <img src="/assets/exams/pgt-hero-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+      {% endif %}
     </picture>
     <div class="wrap pgt-hero-inner">
       <div class="pgt-hero-copy">
-        <p class="eyebrow">Uttar Pradesh · UPESSC</p>
-        <h1 id="pgt-detail-title">{{ title }}</h1>
+        {% if pgt_mcqs %}<h1 id="pgt-detail-title"><span>UP PGT</span><span>English MCQs</span></h1>{% else %}<p class="eyebrow">Uttar Pradesh · UPESSC</p><h1 id="pgt-detail-title">{{ title }}</h1>{% endif %}
         <p class="pgt-hero-description">{{ description }}</p>
       </div>
     </div>

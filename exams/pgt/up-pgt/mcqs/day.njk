@@ -1,0 +1,24 @@
+---
+layout: pgt-layout.njk
+pagination:
+  data: pgtMcqDays
+  size: 1
+  alias: day
+permalink: "/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/index.html"
+eleventyComputed:
+  title: "Day {{ day.label }} — Coming soon"
+  description: "The topic and MCQs for Day {{ day.number }} of UP PGT English are coming soon."
+  crumb_label: "Day {{ day.label }}"
+coming_soon: true
+pgt_mcq_day: true
+---
+<section class="pgt-resource-coming" aria-labelledby="pgt-coming-title">
+  <img src="/assets/icons/tabler/list-check.svg" alt="" width="56" height="56">
+  <p class="eyebrow">Coming soon</p>
+  <h2 id="pgt-coming-title">Day {{ day.label }}</h2>
+  <p>The topic and MCQs for this day are coming soon.</p>
+  <div class="pgt-resource-coming-links">
+    <a href="/exams/pgt/up-pgt/mcqs/">Browse all 60 days</a>
+    <a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide</a>
+  </div>
+</section>

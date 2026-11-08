@@ -2,6 +2,12 @@
 
 final result: passed
 
+## UP PGT MCQ day index — 2026-11-08
+
+- Approved visual proposal: `docs/up-pgt-mcq-days/reference.png`; final local browser captures: `1440.png` and `390.png`; side-by-side composition check: `comparison.png`. The quiz press artwork is a separate optimized WebP image, while the `UP PGT` and `English MCQs` heading remains selectable HTML. The hero keeps the existing compact UP PGT subpage height, site fonts, sidebar, content insets and shared footer.
+- The MCQ resource card opens six native expandable groups covering Days 01–60. The owner clarified that topics are chosen only when questions are uploaded, so all day cards now say Coming soon. The sample Elizabethan Age label and Day 1 highlight in the visual proposal are deliberately absent. All day links have individual noindex Coming soon routes, ready for later question sets.
+- Chromium checks at 320, 390, 768, 1024 and 1440px found 60 day links, six groups, a loaded hero image, the default footer, no horizontal overflow and no page errors. Opening the last group exposes Day 60; its route, noindex marker and footer work. Day 1 and Day 60 both show the pending topic and MCQ message. Measurements and results: `docs/up-pgt-mcq-days/checks.json`. No actionable visual issues remain; final result: passed.
+
 ## UP PGT type and spacing correction — 2026-11-07
 
 - Captured the published UP PGT page and the PGT and NET hubs in the current browser run at 390px and 1440px. The hero heading and shared content insets already agreed. The four resource titles, helpers and icons were too large compared with both hubs; see `docs/up-pgt-card-scale/before-metrics.json` and `comparison.md`.

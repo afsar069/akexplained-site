@@ -1,0 +1,77 @@
+[
+  {
+    "width": 320,
+    "status": 200,
+    "groups": 6,
+    "dayLinks": 60,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "groups": 6,
+    "dayLinks": 60,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "openedLast": true,
+    "day60Visible": true
+  },
+  {
+    "day60Route": "/exams/pgt/up-pgt/mcqs/day-60/",
+    "day60Noindex": "noindex,follow",
+    "day60Heading": "Day 60",
+    "day60Footer": 1
+  },
+  {
+    "day1Route": "/exams/pgt/up-pgt/mcqs/day-1/",
+    "day1Heading": "Day 01",
+    "day1ComingSoon": 1
+  },
+  {
+    "width": 768,
+    "status": 200,
+    "groups": 6,
+    "dayLinks": 60,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "status": 200,
+    "groups": 6,
+    "dayLinks": 60,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "status": 200,
+    "groups": 6,
+    "dayLinks": 60,
+    "comingSoonCards": 60,
+    "noAssignedTopics": true,
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  }
+]

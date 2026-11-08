@@ -1,0 +1,40 @@
+---
+layout: pgt-layout.njk
+title: UP PGT English MCQs
+description: Day-wise English Literature practice.
+crumb_label: MCQs
+pgt_mcqs: true
+pgt_resources: true
+---
+<section class="pgt-mcq-index" aria-labelledby="pgt-mcq-index-title">
+  <header class="pgt-mcq-intro">
+    <div>
+      <h2 id="pgt-mcq-index-title">Choose your practice day</h2>
+      <p>Topics and MCQs are coming soon.</p>
+    </div>
+    <span>60 days</span>
+  </header>
+  <div class="pgt-mcq-groups">
+    {% for group in pgtMcqGroups %}
+    <details class="pgt-mcq-group"{% if loop.first %} open{% endif %}>
+      <summary>
+        <img class="pgt-mcq-group-icon" src="/assets/icons/tabler/calendar-check.svg" alt="" width="28" height="28">
+        <span>Days {{ group.startLabel }}–{{ group.endLabel }}</span>
+        <small>10 days</small>
+        <img class="pgt-mcq-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
+      </summary>
+      <div class="pgt-mcq-day-grid">
+        {% for day in group.days %}
+        <a class="pgt-mcq-day" href="/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/" aria-label="Day {{ day.number }} — coming soon">
+          <span class="pgt-mcq-day-copy">
+            <strong>Day {{ day.label }}</strong>
+            <span>Coming soon</span>
+          </span>
+          <img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24">
+        </a>
+        {% endfor %}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
