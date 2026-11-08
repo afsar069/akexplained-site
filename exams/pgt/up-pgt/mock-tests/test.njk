@@ -6,14 +6,26 @@ pagination:
   alias: mockTest
 permalink: "/exams/pgt/up-pgt/mock-tests/test-{{ mockTest.number }}/index.html"
 eleventyComputed:
-  title: "Mock Test {{ mockTest.label }} — Coming soon"
-  description: "Questions for UP PGT English Mock Test {{ mockTest.number }} are coming soon."
+  title: "Mock Test {{ mockTest.label }}{% if not mockTest.live %} — Coming soon{% endif %}"
+  description: "{% if mockTest.live %}Take UP PGT English Mock Test 1 free, with 90 questions and no login required.{% else %}Questions for UP PGT English Mock Test {{ mockTest.number }} are coming soon.{% endif %}"
   crumb_label: "Mock Test {{ mockTest.label }}"
 coming_soon: true
 pgt_practice_item: true
 pgt_practice_collection_url: /exams/pgt/up-pgt/mock-tests/
 pgt_practice_collection_label: Mock Tests
+pgt_cbt: true
 ---
+{% if mockTest.live %}
+<div class="cbt-printhead" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="34" height="34">
+  <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
+</div>
+<div class="cbt-body" data-cbt data-exam-mock data-set="up-pgt-mock-test-1"
+     data-src="/assets/questions/up-pgt-mock-test-1.json"
+     data-back="/exams/pgt/up-pgt/mock-tests/" data-back-label="Mock Tests">
+  <noscript><div class="cbt-start"><h2>This test needs JavaScript</h2><p>Turn on JavaScript and reload to use the test screen.</p></div></noscript>
+</div>
+{% else %}
 <section class="pgt-resource-coming" aria-labelledby="pgt-coming-title">
   <img src="/assets/icons/tabler/stopwatch.svg" alt="" width="56" height="56">
   <p class="eyebrow">Coming soon</p>
@@ -24,3 +36,4 @@ pgt_practice_collection_label: Mock Tests
     <a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide</a>
   </div>
 </section>
+{% endif %}

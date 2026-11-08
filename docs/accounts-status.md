@@ -4,7 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-08 (The UP PGT Mock Tests index and MCQ day index are on `main`.)_
+_Last updated: 2026-11-08 (UP PGT Mock Test 1 is free and public.)_
+
+## UP PGT Mock Test 1 — free CBT paper (2026-11-08)
+
+- The owner supplied `paper_01.json` with 90 verified questions and requested Mock Test 1 for everyone without login. The question objects are preserved exactly; a CBT paper wrapper supplies only the test metadata. Structural checks passed, including unique IDs, four options and valid answers, and existing topic/period tags. No fact review was repeated.
+- The Mock Tests index marks only Test 1 available. `/exams/pgt/up-pgt/mock-tests/test-1/` loads `/assets/questions/up-pgt-mock-test-1.json` directly, without the login gate, and its review is at `/test-1/review/`. Tests 2–60 remain Coming soon and noindex. Exam-specific labels avoid the literature-age messages elsewhere in the shared CBT result screen.
 
 ## UP PGT Mock Tests index — on main (2026-11-08)
 
