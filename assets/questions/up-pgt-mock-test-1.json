@@ -1,0 +1,1217 @@
+{
+  "setId": "up-pgt-mock-test-1",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 1,
+  "setName": "Mock Test 1",
+  "level": "all",
+  "levelName": "Full paper",
+  "questions": [
+    {
+      "id": "paper-01-e-01",
+      "question": "Choose the antonym of 'prodigal':",
+      "options": [
+        "reckless",
+        "thrifty",
+        "wasteful",
+        "lavish"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Prodigal means wasteful, so its opposite is thrifty.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-02",
+      "question": "Combine into a complex sentence: He is poor. He is honest.",
+      "options": [
+        "He is poor so he is honest.",
+        "He is poor and honest.",
+        "Being poor and honest.",
+        "Though he is poor, he is honest."
+      ],
+      "correct_option_id": 3,
+      "explanation": "A subordinate clause with though makes it complex, not merely compound.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "paper-01-e-03",
+      "question": "The idiom 'a blessing in disguise' means:",
+      "options": [
+        "a fancy costume",
+        "a lucky charm",
+        "a good thing that first seemed bad",
+        "a hidden curse"
+      ],
+      "correct_option_id": 2,
+      "explanation": "It describes something that looks like misfortune but turns out well.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-04",
+      "question": "'The camel is the ship of the desert' is an example of:",
+      "options": [
+        "Hyperbole",
+        "Simile",
+        "Personification",
+        "Metaphor"
+      ],
+      "correct_option_id": 3,
+      "explanation": "One thing is called another directly, so it is a metaphor.",
+      "topicId": "metaphor"
+    },
+    {
+      "id": "paper-01-e-05",
+      "question": "Correct the sentence: Each of the boys have a pen.",
+      "options": [
+        "Each of the boys have a pen.",
+        "Each of the boys had have a pen.",
+        "Each of the boys has a pen.",
+        "Each of the boys are having a pen."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Each takes a singular verb, so it is has.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-06",
+      "question": "The word 'stationery' means:",
+      "options": [
+        "a railway stop",
+        "writing materials",
+        "not moving",
+        "a fixed position"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Stationery with an e means writing materials; stationary with an a means not moving.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-07",
+      "question": "'As quiet as a nun' is an example of:",
+      "options": [
+        "Apostrophe",
+        "Simile",
+        "Personification",
+        "Metaphor"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The comparison uses 'as', which marks a simile.",
+      "topicId": "simile"
+    },
+    {
+      "id": "paper-01-e-08",
+      "question": "Geoffrey Chaucer's most celebrated work is:",
+      "options": [
+        "Piers Plowman",
+        "The Faerie Queene",
+        "The Canterbury Tales",
+        "Le Morte d'Arthur"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Canterbury Tales is Chaucer's masterpiece; the others are by Langland, Malory and Spenser.",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "paper-01-e-09",
+      "question": "The protagonist of Mulk Raj Anand's novel 'Untouchable' is:",
+      "options": [
+        "Bakha",
+        "Gangu",
+        "Munoo",
+        "Lalu"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bakha, a young sweeper, is the central figure of Untouchable.",
+      "topicId": "untouchable"
+    },
+    {
+      "id": "paper-01-e-10",
+      "question": "The repetition of similar vowel sounds in nearby words is called:",
+      "options": [
+        "consonance",
+        "alliteration",
+        "assonance",
+        "onomatopoeia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Assonance is the repetition of vowel sounds; alliteration repeats initial consonants.",
+      "topicId": "assonance"
+    },
+    {
+      "id": "paper-01-e-11",
+      "question": "Walt Whitman's life-long, repeatedly revised poetry collection is:",
+      "options": [
+        "Drum-Taps",
+        "Leaves of Grass",
+        "Sea-Drift",
+        "Calamus"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Whitman kept enlarging Leaves of Grass across many editions.",
+      "topicId": "leaves-of-grass"
+    },
+    {
+      "id": "paper-01-e-12",
+      "question": "Shelley's cry 'O World! O Life! O Time!' is an example of:",
+      "options": [
+        "Pun",
+        "Apostrophe",
+        "Antithesis",
+        "Hyperbole"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poet directly addresses absent or abstract things, which is apostrophe.",
+      "topicId": "apostrophe-device"
+    },
+    {
+      "id": "paper-01-e-13",
+      "question": "T. S. Eliot's poem 'The Waste Land' was first published in which year?",
+      "options": [
+        "1922",
+        "1948",
+        "1915",
+        "1930"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Waste Land appeared in 1922, the same year as Joyce's Ulysses.",
+      "topicId": "the-waste-land",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "paper-01-e-14",
+      "question": "Rearrange into a meaningful sentence: always / truth / the / speak",
+      "options": [
+        "The truth always speak.",
+        "Always speak the truth.",
+        "Speak the always truth.",
+        "Speak always the truth."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The natural imperative order is Always speak the truth.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "paper-01-e-15",
+      "question": "Choose the correctly spelled word.",
+      "options": [
+        "Ocassion",
+        "Occassion",
+        "Ocasion",
+        "Occasion"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct spelling has one c, two s: Occasion.",
+      "topicId": "standardisation-of-english"
+    },
+    {
+      "id": "paper-01-e-16",
+      "question": "'Frailty, thy name is woman' is spoken in which play by Shakespeare?",
+      "options": [
+        "Othello",
+        "Hamlet",
+        "Macbeth",
+        "King Lear"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hamlet says it about his mother Gertrude in his first soliloquy.",
+      "topicId": "hamlet",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-17",
+      "question": "T. S. Eliot famously called which play 'an artistic failure'?",
+      "options": [
+        "Hamlet",
+        "Macbeth",
+        "King Lear",
+        "Othello"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Eliot made this claim in his essay Hamlet and His Problems.",
+      "topicId": "ts-eliot",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "paper-01-e-18",
+      "question": "Change into indirect speech: She said, 'I am writing a letter.'",
+      "options": [
+        "She said that she is writing a letter.",
+        "She said that she had written a letter.",
+        "She said that she was writing a letter.",
+        "She said that I was writing a letter."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Present continuous shifts to past continuous and the pronoun changes to she.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-19",
+      "question": "The character Shylock appears in which play by Shakespeare?",
+      "options": [
+        "Twelfth Night",
+        "As You Like It",
+        "Much Ado About Nothing",
+        "The Merchant of Venice"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shylock the moneylender belongs to The Merchant of Venice.",
+      "topicId": "the-merchant-of-venice",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-20",
+      "question": "The title of Faulkner's novel 'The Sound and the Fury' is taken from a speech in which play?",
+      "options": [
+        "Othello",
+        "King Lear",
+        "Macbeth",
+        "Hamlet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "It comes from Macbeth's 'sound and fury, signifying nothing' speech.",
+      "topicId": "macbeth",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-21",
+      "question": "The orphan hero named Pip appears in which Dickens novel?",
+      "options": [
+        "Great Expectations",
+        "Hard Times",
+        "David Copperfield",
+        "Oliver Twist"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pip is the narrator and hero of Great Expectations.",
+      "topicId": "great-expectations",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-22",
+      "question": "Who described Shelley as 'a beautiful and ineffectual angel'?",
+      "options": [
+        "Matthew Arnold",
+        "T. S. Eliot",
+        "A. C. Swinburne",
+        "John Ruskin"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The phrase is from Matthew Arnold's essay on Shelley.",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-23",
+      "question": "Pick the correctly spelled word from the options:",
+      "options": [
+        "Separete",
+        "Seprate",
+        "Seperate",
+        "Separate"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct spelling is Separate, with an a in the middle.",
+      "topicId": "standardisation-of-english"
+    },
+    {
+      "id": "paper-01-e-24",
+      "question": "In Wordsworth's famous lyric 'I wandered lonely as a cloud', the poet sees a host of:",
+      "options": [
+        "roses",
+        "tulips",
+        "lilies",
+        "daffodils"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poem describes a crowd of golden daffodils beside a lake.",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-25",
+      "question": "'The pen is mightier than the sword' uses which figure of speech?",
+      "options": [
+        "Metonymy",
+        "Simile",
+        "Oxymoron",
+        "Metaphor"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pen and sword stand for writing and warfare, so the figure is metonymy.",
+      "topicId": "metonymy"
+    },
+    {
+      "id": "paper-01-e-26",
+      "question": "'April is the cruellest month' is the opening line of which poem?",
+      "options": [
+        "The Waste Land",
+        "Ash Wednesday",
+        "Gerontion",
+        "The Hollow Men"
+      ],
+      "correct_option_id": 0,
+      "explanation": "These words open the first section of Eliot's The Waste Land.",
+      "topicId": "the-waste-land",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "paper-01-e-27",
+      "question": "The idiom 'to let the cat out of the bag' means:",
+      "options": [
+        "to run away quickly",
+        "to buy a pet",
+        "to reveal a secret",
+        "to make a loud noise"
+      ],
+      "correct_option_id": 2,
+      "explanation": "It means to disclose a secret, often by accident.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-28",
+      "question": "The novel 'Middlemarch' was written by:",
+      "options": [
+        "Jane Austen",
+        "Charlotte Bronte",
+        "George Eliot",
+        "Elizabeth Gaskell"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Middlemarch is George Eliot's best known novel.",
+      "topicId": "george-eliot",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-29",
+      "question": "Choose the antonym of 'augment':",
+      "options": [
+        "enlarge",
+        "diminish",
+        "expand",
+        "increase"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Augment means to increase, so diminish is its opposite.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-30",
+      "question": "Choose the word nearest in meaning to 'benevolent':",
+      "options": [
+        "proud",
+        "cruel",
+        "lazy",
+        "kind"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Benevolent means well-meaning or kind.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-31",
+      "question": "In 'Macbeth', who speaks the line 'Will all great Neptune's ocean wash this blood clean from my hand?'",
+      "options": [
+        "Macbeth",
+        "Banquo",
+        "Lady Macbeth",
+        "Duncan"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Macbeth says it after killing Duncan; Lady Macbeth's guilt speech is the later sleepwalking scene.",
+      "topicId": "macbeth",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-32",
+      "question": "The expression 'all the perfumes of Arabia' in Macbeth is an example of:",
+      "options": [
+        "Hyperbole",
+        "Irony",
+        "Simile",
+        "Metonymy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "It is deliberate exaggeration, hence hyperbole.",
+      "topicId": "hyperbole"
+    },
+    {
+      "id": "paper-01-e-33",
+      "question": "Change into indirect speech: The teacher said, 'The earth moves round the sun.'",
+      "options": [
+        "The teacher said that the earth is moving round the sun.",
+        "The teacher said that the earth moved round the sun.",
+        "The teacher said that the earth had moved round the sun.",
+        "The teacher said that the earth moves round the sun."
+      ],
+      "correct_option_id": 3,
+      "explanation": "A universal truth keeps the present tense even after a past reporting verb.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-34",
+      "question": "Which of the following is spelled correctly?",
+      "options": [
+        "Definately",
+        "Defiantly",
+        "Definitly",
+        "Definitely"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct spelling is Definitely.",
+      "topicId": "standardisation-of-english"
+    },
+    {
+      "id": "paper-01-e-35",
+      "question": "Fill in the correct tense: By next year, he ____ his degree.",
+      "options": [
+        "completes",
+        "will complete",
+        "will have completed",
+        "had completed"
+      ],
+      "correct_option_id": 2,
+      "explanation": "An action finished before a future time takes the future perfect will have completed.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-36",
+      "question": "Rearrange into a meaningful sentence: a / is / he / teacher / good",
+      "options": [
+        "He is a good teacher.",
+        "Good teacher he is a.",
+        "A good he is teacher.",
+        "He a good teacher is."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The subject-verb-object order gives He is a good teacher.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "paper-01-e-37",
+      "question": "'And miles to go before I sleep' is the repeated closing line of which Frost poem?",
+      "options": [
+        "Mending Wall",
+        "Stopping by Woods on a Snowy Evening",
+        "Birches",
+        "The Road Not Taken"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The line is repeated at the close of Stopping by Woods on a Snowy Evening.",
+      "topicId": "stopping-by-woods-on-a-snowy-evening"
+    },
+    {
+      "id": "paper-01-e-38",
+      "question": "The adjective formed from the noun 'danger' is:",
+      "options": [
+        "dangerous",
+        "dangerful",
+        "dangerish",
+        "dangerly"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct adjective is dangerous.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "paper-01-e-39",
+      "question": "A mock-epic treats a trivial subject in the lofty style of:",
+      "options": [
+        "a lyric",
+        "an elegy",
+        "an epic",
+        "a ballad"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A mock-epic applies grand epic style to a trivial theme for comic effect.",
+      "topicId": "mock-epic"
+    },
+    {
+      "id": "paper-01-e-40",
+      "question": "Arthur Miller's play 'The Crucible' dramatizes which historical episode?",
+      "options": [
+        "the Great Depression",
+        "the American Revolution",
+        "the Civil War",
+        "the Salem witch trials"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Crucible retells the 1692 Salem witch trials as political allegory.",
+      "topicId": "the-crucible"
+    },
+    {
+      "id": "paper-01-e-41",
+      "question": "The age dominated by Wordsworth, Coleridge, Shelley and Keats is known as the:",
+      "options": [
+        "Victorian Period",
+        "Restoration",
+        "Augustan Age",
+        "Romantic Period"
+      ],
+      "correct_option_id": 3,
+      "explanation": "These four are central poets of the Romantic Period.",
+      "topicId": "romantic-age",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-42",
+      "question": "Nissim Ezekiel is often regarded as the father of modern:",
+      "options": [
+        "Indian English drama",
+        "Indian English poetry",
+        "the Indian novel",
+        "Indian literary criticism"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ezekiel is widely called a father of modern Indian English poetry.",
+      "topicId": "nissim-ezekiel"
+    },
+    {
+      "id": "paper-01-e-43",
+      "question": "Choose the word nearest in meaning to 'ephemeral':",
+      "options": [
+        "eternal",
+        "short-lived",
+        "ancient",
+        "heavy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ephemeral means lasting a very short time.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-44",
+      "question": "'A thing of beauty is a joy for ever' is the opening line of which poem by Keats?",
+      "options": [
+        "Endymion",
+        "Lamia",
+        "Hyperion",
+        "Ode to Psyche"
+      ],
+      "correct_option_id": 0,
+      "explanation": "This line opens Keats's long poem Endymion.",
+      "topicId": "john-keats",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-45",
+      "question": "A word that means the exact opposite of another word is a/an:",
+      "options": [
+        "homonym",
+        "antonym",
+        "synonym",
+        "acronym"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Words of opposite meaning are antonyms.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-46",
+      "question": "The imaginary regional setting of Thomas Hardy's novels is called:",
+      "options": [
+        "Wessex",
+        "Northanger",
+        "Mercia",
+        "Barsetshire"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hardy set his novels in the semi-fictional region of Wessex.",
+      "topicId": "wessex",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-47",
+      "question": "Toni Morrison was awarded the Nobel Prize in Literature in:",
+      "options": [
+        "1993",
+        "2003",
+        "1975",
+        "1983"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Toni Morrison won the Nobel Prize in Literature in 1993.",
+      "topicId": "toni-morrison"
+    },
+    {
+      "id": "paper-01-e-48",
+      "question": "In Hemingway's 'The Old Man and the Sea', the old fisherman is named:",
+      "options": [
+        "Robert Jordan",
+        "Santiago",
+        "Nick",
+        "Jake"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Santiago is the old Cuban fisherman at the centre of the novella.",
+      "topicId": "the-old-man-and-the-sea"
+    },
+    {
+      "id": "paper-01-e-49",
+      "question": "Who wrote the comedy 'Twelfth Night'?",
+      "options": [
+        "Ben Jonson",
+        "William Shakespeare",
+        "Christopher Marlowe",
+        "John Webster"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Twelfth Night is a comedy by Shakespeare; the others are different Elizabethan or Jacobean dramatists.",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-50",
+      "question": "Dickens's novel 'A Tale of Two Cities' is set in London and which other city?",
+      "options": [
+        "Vienna",
+        "Paris",
+        "Rome",
+        "New York"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The two cities are London and Paris during the French Revolution.",
+      "topicId": "a-tale-of-two-cities",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-51",
+      "question": "Toni Morrison's novel about Sethe and the legacy of slavery is:",
+      "options": [
+        "Jazz",
+        "Tar Baby",
+        "Beloved",
+        "Sula"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beloved centres on Sethe, a formerly enslaved mother.",
+      "topicId": "beloved"
+    },
+    {
+      "id": "paper-01-e-52",
+      "question": "Choose the grammatically correct sentence.",
+      "options": [
+        "He living here since 2010.",
+        "He has been living here since 2010.",
+        "He is living here since 2010.",
+        "He lives here since 2010."
+      ],
+      "correct_option_id": 1,
+      "explanation": "A state continuing from a past point needs the present perfect continuous with since.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-53",
+      "question": "The noun formed from the verb 'abound' is:",
+      "options": [
+        "abundance",
+        "abundant",
+        "abounding",
+        "aboundment"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The noun is abundance; abundant is the adjective.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "paper-01-e-54",
+      "question": "Fill in the blank: He is good ____ mathematics.",
+      "options": [
+        "with",
+        "on",
+        "in",
+        "at"
+      ],
+      "correct_option_id": 3,
+      "explanation": "We say good at a subject or skill.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-55",
+      "question": "Choose the word nearest in meaning to 'candid':",
+      "options": [
+        "rude",
+        "secretive",
+        "dull",
+        "frank"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Candid means open and frank.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-56",
+      "question": "Among the Romantics, who is especially called the poet of beauty and sensuousness?",
+      "options": [
+        "P. B. Shelley",
+        "S. T. Coleridge",
+        "John Keats",
+        "Lord Byron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats is traditionally called the poet of beauty for his rich sensuous imagery.",
+      "topicId": "john-keats",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-57",
+      "question": "The novel 'Tess of the d'Urbervilles' was written by:",
+      "options": [
+        "George Eliot",
+        "Charles Dickens",
+        "Thomas Hardy",
+        "W. M. Thackeray"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tess of the d'Urbervilles is one of Hardy's major tragic novels.",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-58",
+      "question": "Choose the correctly punctuated sentence.",
+      "options": [
+        "Where are you going!",
+        "Where are you going?",
+        "where are you going?",
+        "Where are you going."
+      ],
+      "correct_option_id": 1,
+      "explanation": "A direct question begins with a capital and ends with a question mark.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-59",
+      "question": "'Ode to the West Wind' ends with which famous line?",
+      "options": [
+        "Bird thou never wert",
+        "Beauty is truth, truth beauty",
+        "Ring out the old, ring in the new",
+        "If Winter comes, can Spring be far behind?"
+      ],
+      "correct_option_id": 3,
+      "explanation": "That hopeful closing line is Shelley's; the others belong to Keats, Shelley's Skylark and Tennyson.",
+      "topicId": "ode-to-the-west-wind",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-60",
+      "question": "Change into the passive voice: They built this house in 1990.",
+      "options": [
+        "This house was build in 1990.",
+        "This house has been built in 1990.",
+        "This house is built in 1990.",
+        "This house was built in 1990."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Past simple active becomes was plus past participle built in the passive.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-61",
+      "question": "The Metaphysical poets, such as Donne, belong chiefly to which century?",
+      "options": [
+        "19th century",
+        "18th century",
+        "17th century",
+        "16th century"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Metaphysical poetry flourished in the seventeenth century.",
+      "topicId": "metaphysical-poetry",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "paper-01-e-62",
+      "question": "Arthur Miller's tragedy about the travelling salesman Willy Loman is:",
+      "options": [
+        "A View from the Bridge",
+        "Death of a Salesman",
+        "The Crucible",
+        "All My Sons"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Willy Loman is the hero of Death of a Salesman.",
+      "topicId": "death-of-a-salesman"
+    },
+    {
+      "id": "paper-01-e-63",
+      "question": "'George Eliot' was the pen name of:",
+      "options": [
+        "Emily Bronte",
+        "Mary Shelley",
+        "Elizabeth Barrett",
+        "Mary Ann Evans"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novelist George Eliot was really Mary Ann Evans.",
+      "topicId": "george-eliot",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-64",
+      "question": "In which poem does Keats write 'Beauty is truth, truth beauty'?",
+      "options": [
+        "To Autumn",
+        "Ode to Psyche",
+        "Ode on a Grecian Urn",
+        "Ode to a Nightingale"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The lines close Keats's Ode on a Grecian Urn.",
+      "topicId": "ode-on-a-grecian-urn",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-65",
+      "question": "Change into indirect speech: He said, 'What a beautiful scene!'",
+      "options": [
+        "He exclaimed that it was a very beautiful scene.",
+        "He said that what a beautiful scene.",
+        "He exclaimed what a beautiful scene.",
+        "He asked what a beautiful scene it was."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Exclamatory sentences become statements introduced by exclaimed that.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-66",
+      "question": "Geoffrey Chaucer is traditionally called the father of English:",
+      "options": [
+        "the novel",
+        "poetry",
+        "drama",
+        "criticism"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chaucer is honoured as the father of English poetry.",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "paper-01-e-67",
+      "question": "The idiom 'to burn the midnight oil' means:",
+      "options": [
+        "to waste money",
+        "to sleep very early",
+        "to work late into the night",
+        "to start a fire"
+      ],
+      "correct_option_id": 2,
+      "explanation": "It means to study or work until late at night.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-68",
+      "question": "Wordsworth and Coleridge jointly published which volume in 1798?",
+      "options": [
+        "Poems in Two Volumes",
+        "The Prelude",
+        "Lyrical Ballads",
+        "Biographia Literaria"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lyrical Ballads, published in 1798, is a landmark of English Romanticism.",
+      "topicId": "lyrical-ballads",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-69",
+      "question": "Rearrange into a meaningful sentence: to / likes / she / read / books",
+      "options": [
+        "Likes she to read books.",
+        "She likes to read books.",
+        "To read she likes books.",
+        "She likes read to books."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct order is She likes to read books.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "paper-01-e-70",
+      "question": "'The old order changeth, yielding place to new' is a line from Tennyson's:",
+      "options": [
+        "Maud",
+        "The Lotos-Eaters",
+        "Locksley Hall",
+        "Morte d'Arthur"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The line comes from Tennyson's Morte d'Arthur, later part of the Idylls of the King.",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-71",
+      "question": "Which of the following is NOT a tragedy by Shakespeare?",
+      "options": [
+        "Macbeth",
+        "The Tempest",
+        "King Lear",
+        "Othello"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Tempest is a romance or comedy; Othello, King Lear and Macbeth are tragedies.",
+      "topicId": "the-tempest",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-72",
+      "question": "Charles Lamb wrote his essays under which pen name?",
+      "options": [
+        "Elia",
+        "Saki",
+        "Orwell",
+        "Boz"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lamb published as Elia; Boz was Dickens, Saki was H. H. Munro.",
+      "topicId": "essays-of-elia",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-73",
+      "question": "A government by a small privileged group is called:",
+      "options": [
+        "democracy",
+        "monarchy",
+        "anarchy",
+        "oligarchy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Rule by a few is an oligarchy.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-74",
+      "question": "'Good fences make good neighbours' is a line from which Robert Frost poem?",
+      "options": [
+        "Mending Wall",
+        "The Road Not Taken",
+        "Fire and Ice",
+        "After Apple-Picking"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The proverb is quoted by the neighbour in Mending Wall.",
+      "topicId": "mending-wall"
+    },
+    {
+      "id": "paper-01-e-75",
+      "question": "One who can speak many languages is called a:",
+      "options": [
+        "orator",
+        "novice",
+        "linguist",
+        "polyglot"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A polyglot knows and uses several languages.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "paper-01-e-76",
+      "question": "Shakespeare was born in which English town?",
+      "options": [
+        "Oxford",
+        "Stratford-upon-Avon",
+        "London",
+        "Canterbury"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shakespeare was born in Stratford-upon-Avon in 1564.",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "paper-01-e-77",
+      "question": "Shelley's elegy on the death of John Keats is titled:",
+      "options": [
+        "Lycidas",
+        "Adonais",
+        "Thyrsis",
+        "In Memoriam"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Adonais is Shelley's elegy for Keats; Lycidas is Milton's, Thyrsis is Arnold's, In Memoriam is Tennyson's.",
+      "topicId": "adonais",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-78",
+      "question": "Fill in the blank: One of my friends ____ a doctor.",
+      "options": [
+        "is",
+        "are",
+        "have",
+        "were"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The subject is one, which is singular, so the verb is is.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-79",
+      "question": "Fill in the correct form: She ____ to school every day.",
+      "options": [
+        "going",
+        "go",
+        "goes",
+        "gone"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A habitual action with a third person singular subject takes goes.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-80",
+      "question": "Which prefix added to 'polite' forms its opposite?",
+      "options": [
+        "un-",
+        "in-",
+        "im-",
+        "dis-"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The opposite of polite is impolite.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "paper-01-e-81",
+      "question": "In literary history the 'Renaissance' chiefly means the revival of:",
+      "options": [
+        "nature poetry",
+        "religious drama",
+        "classical learning",
+        "folk ballads"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Renaissance revived classical Greek and Latin learning.",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "paper-01-e-82",
+      "question": "Fill in the blank: The horse jumped ____ the fence.",
+      "options": [
+        "over",
+        "above",
+        "on",
+        "into"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Over expresses movement across and above the fence.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-83",
+      "question": "The idea that 'poetry is a criticism of life' was put forward by:",
+      "options": [
+        "Matthew Arnold",
+        "William Wordsworth",
+        "Dr Johnson",
+        "S. T. Coleridge"
+      ],
+      "correct_option_id": 0,
+      "explanation": "This definition of poetry is Matthew Arnold's.",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-84",
+      "question": "A Shakespearean sonnet consists of how many lines?",
+      "options": [
+        "12",
+        "10",
+        "16",
+        "14"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Every sonnet, Shakespearean included, has fourteen lines.",
+      "topicId": "shakespearean-sonnet"
+    },
+    {
+      "id": "paper-01-e-85",
+      "question": "Which of these is NOT a work by Charles Lamb?",
+      "options": [
+        "The Last Essays of Elia",
+        "Essays of Elia",
+        "Tales from Shakespeare",
+        "The Spectator"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Spectator was by Addison and Steele; the rest are Lamb's.",
+      "topicId": "charles-lamb",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-86",
+      "question": "Who called Wordsworth's poetic self the 'egotistical sublime'?",
+      "options": [
+        "John Keats",
+        "Matthew Arnold",
+        "P. B. Shelley",
+        "S. T. Coleridge"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Keats used the phrase in a letter contrasting Wordsworth with his own ideal of negative capability.",
+      "topicId": "keats-letters",
+      "periodId": "romantic"
+    },
+    {
+      "id": "paper-01-e-87",
+      "question": "Fill in the blank: She has been ill ____ Monday.",
+      "options": [
+        "since",
+        "for",
+        "from",
+        "by"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Since is used with a point of time such as Monday.",
+      "topicId": "traditional-grammar"
+    },
+    {
+      "id": "paper-01-e-88",
+      "question": "Tennyson's long elegy written for Arthur Henry Hallam is:",
+      "options": [
+        "Adonais",
+        "Thyrsis",
+        "Lycidas",
+        "In Memoriam"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Memoriam A. H. H. is Tennyson's elegy for his friend Arthur Hallam.",
+      "topicId": "in-memoriam",
+      "periodId": "victorian"
+    },
+    {
+      "id": "paper-01-e-89",
+      "question": "Kamala Das's autobiography is titled:",
+      "options": [
+        "The Old Playhouse",
+        "Summer in Calcutta",
+        "My Story",
+        "The Descendants"
+      ],
+      "correct_option_id": 2,
+      "explanation": "My Story is Kamala Das's autobiography; the others are poetry collections.",
+      "topicId": "kamala-das"
+    },
+    {
+      "id": "paper-01-e-90",
+      "question": "Who wrote the poem 'Ode to the West Wind'?",
+      "options": [
+        "Lord Byron",
+        "John Keats",
+        "P. B. Shelley",
+        "William Wordsworth"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ode to the West Wind is one of Shelley's best known odes.",
+      "topicId": "percy-bysshe-shelley",
+      "periodId": "romantic"
+    }
+  ]
+}

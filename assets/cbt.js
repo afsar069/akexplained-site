@@ -91,6 +91,7 @@
   var arrived = 0;             /* is sawal par kab pahunche */
   var paper = null;            /* file se aaya hua set (custom me: milaya hua) */
   var CUSTOM = root.hasAttribute('data-custom');
+  var EXAM_MOCK = root.hasAttribute('data-exam-mock');
   var AGE = root.getAttribute('data-age') || '';
   var cfg = null;              /* custom: URL ya rakhe hue attempt se aaya mel */
   var cpapers = {};            /* custom: 'set|level' -> file */
@@ -220,9 +221,9 @@
   }
 
   /* "Set 2" ya custom me "Your own test"; "this set" / "this test". */
-  function setTag() { return CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
-  function testName() { return CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
-  function thisSet() { return CUSTOM ? 'this test' : 'this set'; }
+  function setTag() { return EXAM_MOCK ? 'Mock Test ' + (paper.setNumber || 1) : CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
+  function testName() { return EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
+  function thisSet() { return CUSTOM || EXAM_MOCK ? 'this test' : 'this set'; }
   function retake() { return CUSTOM ? 'build another test from the same sets' : 'take this set again'; }
 
   /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
@@ -286,7 +287,7 @@
         'Check that you are online and try once more.</p>' +
         '<p class="small muted">' + esc(e && e.message ? e.message : 'unknown') + '</p>' +
         '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
-        '">Back to the age</a></p>' +
+        '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
       '</div>';
   }
 
@@ -588,7 +589,7 @@
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + Q.length + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + minutes + ' min</b><span>Time</span></div>' +
-          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>Level</span></div>' +
+          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>' + (EXAM_MOCK ? 'Paper' : 'Level') + '</span></div>' +
         '</div>' +
         '<button type="button" class="cbt-begin" id="cbtBegin">Begin</button>' +
       '</div>';
@@ -615,14 +616,15 @@
         '<div class="cbt-facts">' +
           '<div class="cbt-fact"><b>' + p.n + '</b><span>Questions</span></div>' +
           '<div class="cbt-fact"><b>' + p.minutes + ' min</b><span>Time</span></div>' +
-          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>Level</span></div>' +
+          '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>' + (EXAM_MOCK ? 'Paper' : 'Level') + '</span></div>' +
         '</div>' +
         '<ul class="cbt-rules">' +
           '<li>One question on the screen at a time. The clock runs from the moment you begin.</li>' +
           '<li>Use <b>Mark for review</b> on anything you want to come back to.</li>' +
           '<li>The grid on the side shows every question and how it stands. Tap a number to jump.</li>' +
           '<li>Nothing is marked until you press <b>Submit</b>. When the clock runs out it submits itself.</li>' +
-          '<li>Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.</li>' +
+          '<li>' + (EXAM_MOCK ? 'No sign-in is needed. This browser saves your current attempt.' :
+            'Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.') + '</li>' +
         '</ul>' +
 
         /* Har exam negative marking nahi lagata, isliye ye chunav reader ka
@@ -992,8 +994,8 @@
        strongWeak, levelCard, rankCell, loadBoard/paintBoard) neeche bane rehte
        hain: wahi se dashboard par le jaaye jaayenge, isliye mitaye nahi. */
     root.innerHTML =
-      cheerRow(t) + ctaRow() + analysisRow(t) +
-      actionRow() + journeyRow(t) + suggestRow(t);
+      cheerRow(t) + (EXAM_MOCK ? '' : ctaRow()) + analysisRow(t) +
+      actionRow() + (EXAM_MOCK ? '' : journeyRow(t) + suggestRow(t));
 
     wireResult(t);
     paintAuthBits(root);
@@ -1132,12 +1134,12 @@
             (used ? clock(used) : '—'), 'Time taken',
             allowed ? 'out of ' + clock(allowed) : '') +
         '</section>' +
-        '<section class="cbt-nums cbt-nums2" aria-label="Accuracy and level">' +
+        '<section class="cbt-nums cbt-nums2" aria-label="' + (EXAM_MOCK ? 'Accuracy and paper' : 'Accuracy and level') + '">' +
           numCell('is-acc', ic('<path d="M4 19V9M10 19V5M16 19v-6M3 20h18"/>'),
             t.acc + '%', 'Your accuracy', 'of the ' + t.answered + ' you answered',
             '<span class="cbt-meter"><i style="width:' + t.acc + '%"></i></span>') +
           numCell('is-diff', ic('<path d="M5 20v-5M12 20V8M19 20v-9M3 20h18"/>'),
-            esc(levelLabel()), 'Difficulty level',
+            esc(levelLabel()), EXAM_MOCK ? 'Question set' : 'Difficulty level',
             Q.length + ' questions in this test') +
         '</section>' +
       '</div>' +
@@ -1461,7 +1463,7 @@
       '<button type="button" class="cbt-btn" id="cbtPrint">Download result (PDF)</button>' +
       '<button type="button" class="cbt-btn" id="cbtAgain">Take a new test</button>' +
       '<a class="cbt-btn is-gold" href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') +
-        '">Back to ' + esc(paper.ageName || 'the age') + '</a>' +
+        '">Back to ' + esc(root.getAttribute('data-back-label') || paper.ageName || 'the age') + '</a>' +
     '</div>';
   }
 
@@ -1620,6 +1622,11 @@
      Rang CSS me hain: .cbt-score.b1 se .b5 tak.
      --------------------------------------------------------- */
   function grade(pc) {
+    if (EXAM_MOCK) return {
+      cls: pc >= 75 ? 'b4' : pc >= 50 ? 'b3' : pc >= 30 ? 'b2' : 'b1',
+      name: 'Mock Test 1 complete',
+      line: 'Review your answers below to see what you got right and what to revisit.'
+    };
     if (pc >= 90) return { cls: 'b5', name: 'Outstanding! You nailed it!',
       line: 'You are awesome. Almost nothing on this paper got past you. Keep it warm with a short run every week, and move on to the next age.' };
     if (pc >= 75) return { cls: 'b4', name: 'Bravo! You did a great job.',
@@ -1816,11 +1823,11 @@
       root.innerHTML =
         '<div class="cbt-start">' +
           '<h1>Nothing to review yet</h1>' +
-          '<p class="lede">This page shows the answers from your last ' + (CUSTOM ? 'custom test' : 'run at this set') + ', ' +
+          '<p class="lede">This page shows the answers from your last ' + (EXAM_MOCK ? 'mock test' : CUSTOM ? 'custom test' : 'run at this set') + ', ' +
             'and there is no finished run saved in this browser.</p>' +
           '<p><a class="btn" href="' + esc(CUSTOM ? (root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/')
                                                  : (root.getAttribute('data-back') || '/quizzes/mcq/')) +
-            '">' + (CUSTOM ? 'Build a test' : 'Take the set first') + '</a></p>' +
+            '">' + (CUSTOM ? 'Build a test' : EXAM_MOCK ? 'Take the test first' : 'Take the set first') + '</a></p>' +
         '</div>';
       return;
     }
