@@ -994,8 +994,8 @@
        strongWeak, levelCard, rankCell, loadBoard/paintBoard) neeche bane rehte
        hain: wahi se dashboard par le jaaye jaayenge, isliye mitaye nahi. */
     root.innerHTML =
-      cheerRow(t) + (EXAM_MOCK ? '' : ctaRow()) + analysisRow(t) +
-      actionRow() + (EXAM_MOCK ? '' : journeyRow(t) + suggestRow(t));
+      cheerRow(t) + ctaRow() + analysisRow(t) +
+      actionRow() + journeyRow(t) + suggestRow(t);
 
     wireResult(t);
     paintAuthBits(root);
@@ -1010,8 +1010,8 @@
     return '<section class="cbt-cta" aria-label="Keep your progress">' +
       '<a class="cbt-ctalink" href="/login/" data-auth-out>' +
         '<span class="cbt-ctatxt">' +
-          '<b>Log in to record your progress and learn chronologically</b>' +
-          '<em>Save every test, choose your course, and move age by age.</em>' +
+          '<b>' + (EXAM_MOCK ? 'Log in to record your progress' : 'Log in to record your progress and learn chronologically') + '</b>' +
+          '<em>' + (EXAM_MOCK ? 'Keep future test results with your account. Taking this test is free without login.' : 'Save every test, choose your course, and move age by age.') + '</em>' +
         '</span>' +
         '<span class="cbt-ctago">Log in →</span>' +
       '</a>' +
@@ -1474,14 +1474,14 @@
       { pc: 30, label: 'Getting started' },
       { pc: 50, label: 'Good effort' },
       { pc: 75, label: 'Strong ground' },
-      { pc: 90, label: 'Exam ready' }
+      { pc: 90, label: EXAM_MOCK ? 'High score' : 'Exam ready' }
     ];
     var next = marks.filter(function (m) { return m.pc > at; })[0];
 
     return '<section class="cbt-card cbt-journey">' +
       '<div class="cbt-jhead">' +
         '<div>' +
-          '<h2>Your journey through ' + esc(paper.ageName || 'this age') + '</h2>' +
+          '<h2>' + (EXAM_MOCK ? 'Your score in ' + esc(testName()) : 'Your journey through ' + esc(paper.ageName || 'this age')) + '</h2>' +
           '<p class="sub">Where this paper puts you on the scale for ' + thisSet() + '.</p>' +
         '</div>' +
         '<p class="cbt-jnow"><b>' + at + '%</b>' +
@@ -1562,7 +1562,7 @@
   function suggestRow(t) {
     var weak = t.topics.filter(function (o) { return o.total >= 3 && o.pc < 70; })
       .sort(function (a, b) { return a.pc - b.pc; }).slice(0, 3);
-    var pick = weak.length ? weak : t.topics.slice(0, 3);
+    var pick = EXAM_MOCK ? [] : weak.length ? weak : t.topics.slice(0, 3);
 
     return '<div class="cbt-two cbt-suggest">' +
       '<section class="cbt-card">' +
@@ -1572,17 +1572,21 @@
             return '<li><a href="' + esc(paper.notes || '/notes/') + '#' + esc(o.read || '') + '">' +
               esc(o.name) + '</a><span>' + o.right + ' of ' + o.total + ' here</span></li>';
           }).join('') +
-          '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +
-            'Quick revision — 50 points</a><span>the whole age on one screen</span></li>' +
+          (EXAM_MOCK
+            ? '<li><a href="/exams/pgt/up-pgt/study-guide/">UP PGT English study guide</a><span>General English study guidance</span></li>'
+            : '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +
+              'Quick revision — 50 points</a><span>the whole age on one screen</span></li>') +
         '</ul>' +
       '</section>' +
       '<section class="cbt-card">' +
         '<h2>Where to go next</h2>' +
         '<ul class="cbt-sug">' +
-          '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
-            esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>' +
+          (EXAM_MOCK
+            ? '<li><a href="/exams/pgt/up-pgt/">UP PGT English preparation</a><span>Browse study resources</span></li>'
+            : '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
+              esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>') +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
-            'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one</span></li>' +
+            (EXAM_MOCK ? 'UP PGT Mock Tests</a><span>Browse the mock tests' : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
         '</ul>' +
       '</section>' +
@@ -1624,7 +1628,7 @@
   function grade(pc) {
     if (EXAM_MOCK) return {
       cls: pc >= 75 ? 'b4' : pc >= 50 ? 'b3' : pc >= 30 ? 'b2' : 'b1',
-      name: 'Mock Test 1 complete',
+      name: esc(testName()) + ' complete',
       line: 'Review your answers below to see what you got right and what to revisit.'
     };
     if (pc >= 90) return { cls: 'b5', name: 'Outstanding! You nailed it!',
