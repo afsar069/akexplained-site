@@ -15,6 +15,38 @@
 .pgt-hero-description{max-width:47ch;font-size:1.06rem;line-height:1.65;color:var(--ink);margin:0}
 .pgt-hero-detail .pgt-hero-art img{opacity:.58}
 .pgt-hero-detail .pgt-hero-inner{min-height:clamp(230px,21vw,300px)}
+.pgt-mcq-hero .pgt-hero-art img{opacity:1;object-fit:contain;mask-image:linear-gradient(to right,transparent 40%,#000 62%)}
+.pgt-mcq-hero .pgt-hero-copy{width:52%}
+.pgt-mcq-hero h1 span{display:block}
+.pgt-mcq-hero h1 span:first-child{font-size:.75em;color:var(--teal);margin-bottom:6px}
+.pgt-mcq-index{padding:28px 0 24px}
+.pgt-mcq-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:22px}
+.pgt-mcq-intro h2{font-size:clamp(1.3rem,2.5vw,1.72rem);line-height:1.3;margin:0 0 6px}
+.pgt-mcq-intro p{margin:0;line-height:1.5}
+.pgt-mcq-intro > span{font-family:var(--serif);font-style:italic;font-size:1.06rem;white-space:nowrap;color:#8C5B14}
+.pgt-mcq-group{margin:0 0 10px;border:1px solid #DCC298;border-radius:8px;background:var(--paper);overflow:hidden}
+.pgt-mcq-group summary{display:flex;align-items:center;gap:18px;min-height:56px;padding:12px 18px;cursor:pointer;list-style:none;font-family:var(--serif);font-size:1.3rem;font-weight:600;line-height:1.3}
+.pgt-mcq-group summary::-webkit-details-marker{display:none}
+.pgt-mcq-group summary::marker{content:""}
+.pgt-mcq-group summary:hover{background:var(--teal-soft)}
+.pgt-mcq-group summary:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+.pgt-mcq-group-icon{flex:none;width:28px;height:28px;filter:invert(32%) sepia(46%) saturate(936%) hue-rotate(133deg) brightness(83%)}
+.pgt-mcq-group summary small{margin-left:auto;font-family:var(--sans);font-size:.92rem;font-style:italic;font-weight:400;color:var(--body);white-space:nowrap}
+.pgt-mcq-chevron{flex:none;transition:transform .18s;filter:invert(32%) sepia(46%) saturate(936%) hue-rotate(133deg) brightness(83%)}
+.pgt-mcq-group[open] .pgt-mcq-chevron{transform:rotate(180deg)}
+.pgt-mcq-day-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px;border-top:1px solid #DCC298}
+.pgt-mcq-day{display:flex;align-items:center;justify-content:space-between;gap:12px;min-width:0;min-height:70px;padding:12px 18px;border:1px solid #DCC298;border-radius:8px;color:var(--ink);text-decoration:none}
+.pgt-mcq-day:hover{background:var(--teal-soft);color:var(--ink);border-color:var(--teal)}
+.pgt-mcq-day:focus-visible{outline:3px solid var(--teal-dark);outline-offset:3px}
+.pgt-mcq-day-copy{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pgt-mcq-day-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.3}
+.pgt-mcq-day-copy span,.pgt-mcq-day-copy em{font-size:.92rem;line-height:1.35}
+.pgt-mcq-day-copy em{font-style:italic}
+.pgt-mcq-day > img{width:20px;height:20px;flex:none}
+.pgt-mcq-day-first{background:var(--teal);border-color:var(--teal);color:#fff}
+.pgt-mcq-day-first strong{color:#fff}
+.pgt-mcq-day-first:hover{background:var(--teal-dark);color:#fff}
+.pgt-mcq-day-first > img{filter:brightness(0) invert(1)}
 .pgt-resource-hub{padding:30px 0 24px}
 .pgt-course-card{display:flex;align-items:center;gap:26px;min-height:122px;padding:24px 30px;margin-bottom:18px;border-bottom:5px solid #DDAA38;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none}
 .pgt-course-card:hover{background:var(--teal-dark);color:#fff}
@@ -117,6 +149,14 @@
   .pgt-hero h1{font-size:clamp(13px,3.9vw,26px);line-height:1.25;margin-bottom:clamp(5px,1.2vw,10px)}
   .pgt-hero-description{font-size:clamp(9px,2.55vw,17px);line-height:1.5;max-width:32ch}
   .pgt-hero-detail .pgt-hero-inner{min-height:0}
+  .pgt-mcq-hero .pgt-hero-copy{width:55%}
+  .pgt-mcq-hero h1 span:first-child{margin-bottom:2px}
+  .pgt-mcq-index{padding-top:24px}
+  .pgt-mcq-intro{gap:8px}
+  .pgt-mcq-intro > span{font-size:.9rem}
+  .pgt-mcq-group summary{gap:12px;padding:12px;font-size:1.06rem}
+  .pgt-mcq-group summary small{font-size:.82rem}
+  .pgt-mcq-day-grid{grid-template-columns:1fr}
   .pgt-resource-hub{padding-top:24px}
   .pgt-course-card{flex-wrap:wrap;gap:14px;padding:20px;min-height:0}
   .pgt-course-icon{padding-right:16px}
