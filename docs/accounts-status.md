@@ -4,12 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-08 (The UP PGT Mock Tests index is prepared on a feature branch; the MCQ day index is on `main`.)_
+_Last updated: 2026-11-08 (The UP PGT Mock Tests index and MCQ day index are on `main`.)_
 
-## UP PGT Mock Tests index — awaiting publication (2026-11-08)
+## UP PGT Mock Tests index — on main (2026-11-08)
 
 - The owner asked for a 60-test page like the UP PGT MCQ day index. The Mock Tests card now opens six expandable groups of ten numbered tests, using the same compact illustrated header and shared footer. Every card and individual test route says Coming soon; no test questions or other details were supplied.
-- The 60 test destinations are noindex until content is available. The branch `feat/up-pgt-mock-tests` is not merged to `main`; the owner has not asked to publish this new page. Visual and route checks are in `docs/up-pgt-mock-tests/`.
+- The 60 test destinations are noindex until content is available. The owner asked to make this page live on 2026-11-08; PR #25 (`feat/up-pgt-mock-tests`) was merged to `main` as `c76e802`, which triggers Cloudflare Pages publication. Visual and route checks are in `docs/up-pgt-mock-tests/`.
 
 ## UP PGT MCQ day index — on main (2026-11-08)
 
