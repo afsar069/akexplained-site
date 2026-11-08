@@ -4,12 +4,17 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-08 (The owner approved publication of the UP PGT MCQ day index. The resource cards and card scale correction remain live.)_
+_Last updated: 2026-11-08 (The UP PGT Mock Tests index is prepared on a feature branch; the MCQ day index is on `main`.)_
 
-## UP PGT MCQ day index — publication approved (2026-11-08)
+## UP PGT Mock Tests index — awaiting publication (2026-11-08)
+
+- The owner asked for a 60-test page like the UP PGT MCQ day index. The Mock Tests card now opens six expandable groups of ten numbered tests, using the same compact illustrated header and shared footer. Every card and individual test route says Coming soon; no test questions or other details were supplied.
+- The 60 test destinations are noindex until content is available. The branch `feat/up-pgt-mock-tests` is not merged to `main`; the owner has not asked to publish this new page. Visual and route checks are in `docs/up-pgt-mock-tests/`.
+
+## UP PGT MCQ day index — on main (2026-11-08)
 
 - The owner selected the professional MCQ press design: a right-side quiz machine illustration in the existing compact hero, with live `UP PGT` / `English MCQs` text on the left. The MCQ card leads to a day index with six expandable groups of ten day links, all 60 present on one page. Every day says Coming soon; no topic is assigned until its questions are uploaded, as the owner instructed.
-- Each day opens a noindex Coming soon page because MCQ questions were not supplied. All other UP PGT resource pages and the shared default footer remain. The owner explicitly asked to make this revised page live on 2026-11-08 through PR #24 (`feat/up-pgt-mcq-days`); merging it to `main` triggers Cloudflare Pages publication.
+- Each day opens a noindex Coming soon page because MCQ questions were not supplied. All other UP PGT resource pages and the shared default footer remain. The owner explicitly asked to make this revised page live on 2026-11-08. PR #24 (`feat/up-pgt-mcq-days`) was merged to `main` as `695b83c`; Cloudflare Pages publishes `main`.
 - Screenshots, responsive measurements, route checks and design QA evidence are in `docs/up-pgt-mcq-days/`.
 
 ## UP PGT card scale — publication approved (2026-11-07)

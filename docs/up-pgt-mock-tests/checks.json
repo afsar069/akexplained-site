@@ -1,0 +1,85 @@
+[
+  {
+    "width": 320,
+    "status": 200,
+    "groups": 6,
+    "testLinks": 60,
+    "comingSoonCards": 60,
+    "heroText": "UP PGT\nEnglish Mock Tests",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 390,
+    "status": 200,
+    "groups": 6,
+    "testLinks": 60,
+    "comingSoonCards": 60,
+    "heroText": "UP PGT\nEnglish Mock Tests",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "openedLast": true,
+    "test60Visible": true
+  },
+  {
+    "test60Route": "/exams/pgt/up-pgt/mock-tests/test-60/",
+    "noindex": "noindex,follow",
+    "heading": "Mock Test 60",
+    "footer": 1
+  },
+  {
+    "test1Route": "/exams/pgt/up-pgt/mock-tests/test-1/",
+    "heading": "Mock Test 01",
+    "message": 1
+  },
+  {
+    "resourceLink": "/exams/pgt/up-pgt/mock-tests/"
+  },
+  {
+    "width": 768,
+    "status": 200,
+    "groups": 6,
+    "testLinks": 60,
+    "comingSoonCards": 60,
+    "heroText": "UP PGT\nEnglish Mock Tests",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "status": 200,
+    "groups": 6,
+    "testLinks": 60,
+    "comingSoonCards": 60,
+    "heroText": "UP PGT\nEnglish Mock Tests",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "status": 200,
+    "groups": 6,
+    "testLinks": 60,
+    "comingSoonCards": 60,
+    "heroText": "UP PGT\nEnglish Mock Tests",
+    "imageLoaded": true,
+    "overflow": false,
+    "footer": true,
+    "errors": []
+  },
+  {
+    "mcqRoute": "/exams/pgt/up-pgt/mcqs/",
+    "mcqHeading": "UP PGT\nEnglish MCQs",
+    "mcqDays": 60
+  }
+]

@@ -1,0 +1,26 @@
+---
+layout: pgt-layout.njk
+pagination:
+  data: pgtMockTests
+  size: 1
+  alias: mockTest
+permalink: "/exams/pgt/up-pgt/mock-tests/test-{{ mockTest.number }}/index.html"
+eleventyComputed:
+  title: "Mock Test {{ mockTest.label }} — Coming soon"
+  description: "Questions for UP PGT English Mock Test {{ mockTest.number }} are coming soon."
+  crumb_label: "Mock Test {{ mockTest.label }}"
+coming_soon: true
+pgt_practice_item: true
+pgt_practice_collection_url: /exams/pgt/up-pgt/mock-tests/
+pgt_practice_collection_label: Mock Tests
+---
+<section class="pgt-resource-coming" aria-labelledby="pgt-coming-title">
+  <img src="/assets/icons/tabler/stopwatch.svg" alt="" width="56" height="56">
+  <p class="eyebrow">Coming soon</p>
+  <h2 id="pgt-coming-title">Mock Test {{ mockTest.label }}</h2>
+  <p>Questions for this mock test are coming soon.</p>
+  <div class="pgt-resource-coming-links">
+    <a href="/exams/pgt/up-pgt/mock-tests/">Browse all 60 mock tests</a>
+    <a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide</a>
+  </div>
+</section>
