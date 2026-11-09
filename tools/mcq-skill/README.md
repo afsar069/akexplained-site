@@ -44,3 +44,9 @@ Repo public hai, isliye login wale set ki files kabhi repo me nahi jaati. Unke l
 
 Command ka namuna (files kisi bhi folder me rakh sakte hain, repo ke andar nahi):
 `python3 tools/mcq-skill/make_gated_sql.py --access login easy.json medium.json --out load.sql --chunk 25`
+
+## Pehle se bani file ko tag karna ho (alag skill)
+Agar koi **pehle se bana** MCQ JSON (kisi bhi AI ka — GPT, Gemini — ya purana file) tag karna ho
+(`topicId` + `periodId` daalna), to uske liye alag skill hai: **`tools/mcq-tagger-skill/`**. Wo
+question kuch nahi badalti, sirf tag lagati hai, aur ek checker (`tag_mcq.py`) se garanti deti hai
+ki tag website par chadhne layak hain. Uska apna `README.md` aur `SKILL.md` wahin hai.
