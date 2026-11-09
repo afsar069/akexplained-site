@@ -6,6 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-09 (UP PGT Mock Test 6 added for logged-in students.)_
 
+## UP PGT Mock Test actions — corrected (2026-11-09)
+
+- The owner reported that a signed-in student saw both the lock and Start on Test 6. The lock's `display:inline-flex` overrode the browser's default `[hidden]` style outside the Anglo-Norman hub. The Mock Tests card now explicitly hides `[hidden]` actions, and the lock begins hidden until auth resolves. Signed-in students see only Start; guests see only the lock on Test 6.
+- Tests 1–5 now show a Start button for both guests and signed-in students. The test access rules and question storage are unchanged.
+
 ## UP PGT Mock Test 6 — login CBT paper (2026-11-09)
 
 - The owner supplied `PGT_batch_6.json` with 90 verified questions for Test 6, available only to logged-in students. Question objects were preserved in a private paper and loaded into `public.mcq_papers` as `set_id = up-pgt-mock-test-6`, `level = medium` (an internal storage slot), `access = login`, `rev = 1`; the visible level name is “Full paper.” No question file or question-bearing SQL is committed to this public repository. The owner should retain their uploaded copy.

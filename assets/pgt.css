@@ -43,6 +43,7 @@
 .pgt-practice-card-copy span{font-size:.92rem;line-height:1.35}
 .pgt-practice-card > img{width:20px;height:20px;flex:none}
 .pgt-practice-card .agehub-go{width:auto;order:0;flex:none}
+.pgt-practice-card [hidden]{display:none !important}
 .pgt-resource-hub{padding:30px 0 24px}
 .pgt-course-card{display:flex;align-items:center;gap:26px;min-height:122px;padding:24px 30px;margin-bottom:18px;border-bottom:5px solid #DDAA38;border-radius:10px;background:var(--teal);color:#fff;text-decoration:none}
 .pgt-course-card:hover{background:var(--teal-dark);color:#fff}
