@@ -4,7 +4,56 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-09 (UP PGT Mock Test 7 added for logged-in students.)_
+_Last updated: 2026-11-09 (Student Reviews design decided — login-gated, auto-live; not built yet.)_
+
+## Student Reviews — login-gated, auto-live (PLANNED, not built) (2026-11-09)
+
+The owner decided how the home-page "What Our Students Say" section should work, but asked to
+**build it later, not now**. This entry records the decision so the next session can implement it
+directly, without re-reading the chat.
+
+**Decision (owner, 2026-11-09):**
+- Reviews are **login-gated**: only a logged-in student can write one (a guest sees a login wall →
+  `/login/?next=/write-a-review/`). Reason the owner gave: only serious, real students review, they
+  stay authentic, and there is nothing to approve by hand.
+- **Auto-live**: a submitted review appears on the site immediately. **No per-review approval step** —
+  the owner does not want to open Pages CMS for each review.
+- **Moderation by exception only**: the owner removes a review, or asks Claude to remove it via the
+  Supabase connector. A **low-star review is NOT a reason to remove** — those are kept. **Delete only
+  when a review uses inappropriate language.**
+- **One review per student** (anti-spam).
+
+**Honest caveat to carry into the build:** "Confirm email" is still OFF (no SMTP yet, rule 13), so
+anyone can create a free account in seconds — login lowers spam but is not a hard wall. The
+one-review-per-user limit and easy removal are the real safety net until Confirm email is ON.
+
+**What to build (not yet done):**
+1. **Supabase:** new `public.reviews` table (`id`, `user_id default auth.uid()`, `name`, `role`,
+   `heading`, `stars`, `body`, `created_at`, `visible boolean default true`). RLS: INSERT authenticated
+   with `user_id = auth.uid()` and one row per user; SELECT public only where `visible = true` (anon
+   reads visible rows) plus a user's own rows; UPDATE/DELETE owner-only (hide/remove). Migration in
+   `supabase/migrations/`, applied via the connector (rule 9), security advisors kept clean (rule 14).
+2. **Enable the page:** remove the `write-a-review/**` ignore line in `eleventy.config.js`.
+3. **`/write-a-review/`:** gate it like the CBT login flow — a guest sees "Log in to write a review";
+   a logged-in student sees the form with the name prefilled from the profile; submit writes a row via
+   the vendored supabase-js. It must wait for `window.akAuth` (as `cbt.js` does).
+4. **Home carousel:** `assets/home.js` `loadReviews()` reads **visible reviews from Supabase** (the
+   publishable key), not `assets/reviews.json`. The empty state becomes "Be the first to share your
+   experience" + a link to `/write-a-review/` (not "Coming soon").
+5. Keep the shared footer; simple English only (rule 1); **no seeded or fake reviews** (rule 2).
+6. **Fix the wording that promises manual approval** so it matches auto-live: the `/write-a-review/`
+   page's "He reads and approves it … only then does it appear" note, and any matching About-page line.
+   New sense: the review appears once the student posts it, and the owner may remove any that break the
+   rules.
+7. **Privacy/Terms (rule 10):** state that a logged-in review stores the student's name (shown
+   publicly), role, stars and review text, tied to their account, in Supabase — in the same commit.
+8. **Old path to decide:** `assets/reviews.json` + the Pages CMS "Student Reviews" collection +
+   `assets/review-form.js` (web3forms/WhatsApp). Likely retire, or keep as a manual override; the owner
+   has not said.
+9. Build clean + link check + browser test (guest wall, logged-in submit, auto-live on home,
+   one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
+
+**Status: not built. Awaiting the owner's go-ahead to implement.**
 
 ## UP PGT Mock Test 7 — login CBT paper (2026-11-09)
 
