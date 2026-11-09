@@ -1,7 +1,7 @@
 ---
 layout: pgt-layout.njk
 title: UP PGT English Mock Tests
-description: Take Mock Tests 1 to 5 free with no login. More tests are coming soon.
+description: Take Mock Tests 1 to 5 free without login. Mock Test 6 is open to logged-in students.
 crumb_label: Mock Tests
 pgt_practice_index: true
 pgt_practice_hero_title: English Mock Tests
@@ -12,7 +12,7 @@ pgt_resources: true
   <header class="pgt-practice-intro">
     <div>
       <h2 id="pgt-practice-index-title">Choose a mock test</h2>
-      <p>Mock Tests 1 to 5 are free for everyone. More tests are coming soon.</p>
+      <p>Mock Tests 1 to 5 are free for everyone. Log in to take Mock Test 6. More tests are coming soon.</p>
     </div>
     <span>60 tests</span>
   </header>
@@ -27,6 +27,13 @@ pgt_resources: true
       </summary>
       <div class="pgt-practice-card-grid">
         {% for mockTest in group.tests %}
+        {% if mockTest.access == 'login' %}
+        <div class="pgt-practice-card">
+          <span class="pgt-practice-card-copy"><strong>Mock Test {{ mockTest.label }}</strong><span>90 questions</span></span>
+          <a class="agehub-go agehub-go-lock" data-guest-only href="/login/?next={{ ('/exams/pgt/up-pgt/mock-tests/test-' ~ mockTest.number ~ '/') | urlencode }}" aria-label="Mock Test {{ mockTest.number }} needs a login. Log in to open it." title="Log in to open Mock Test {{ mockTest.number }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
+          <a class="agehub-go is-solid" data-auth-only hidden href="/exams/pgt/up-pgt/mock-tests/test-{{ mockTest.number }}/">Start</a>
+        </div>
+        {% else %}
         <a class="pgt-practice-card" href="/exams/pgt/up-pgt/mock-tests/test-{{ mockTest.number }}/" aria-label="Mock Test {{ mockTest.number }} — {% if mockTest.live %}free, no login needed{% else %}coming soon{% endif %}">
           <span class="pgt-practice-card-copy">
             <strong>Mock Test {{ mockTest.label }}</strong>
@@ -34,6 +41,7 @@ pgt_resources: true
           </span>
           <img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24">
         </a>
+        {% endif %}
         {% endfor %}
       </div>
     </details>

@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-09 (UP PGT Mock Test 5 added as a free public CBT paper.)_
+_Last updated: 2026-11-09 (UP PGT Mock Test 6 added for logged-in students.)_
+
+## UP PGT Mock Test 6 — login CBT paper (2026-11-09)
+
+- The owner supplied `PGT_batch_6.json` with 90 verified questions for Test 6, available only to logged-in students. Question objects were preserved in a private paper and loaded into `public.mcq_papers` as `set_id = up-pgt-mock-test-6`, `level = medium` (an internal storage slot), `access = login`, `rev = 1`; the visible level name is “Full paper.” No question file or question-bearing SQL is committed to this public repository. The owner should retain their uploaded copy.
+- Structural checks passed (90 distinct IDs and stems, four options per question, answer indexes, topic and period tags, no public ID collisions). Factual answers were not rechecked. Live read-back returned 90 questions and fingerprint `4ec64a75fa99ee696b1b4de588b579c3`, matching the source paper. RLS is enabled, `anon` has no SELECT grant, authenticated users do, and the existing `mcq_papers_login_read` policy covers login rows. Security advisors have only the two previously recorded warnings (leaderboard function and leaked-password protection).
+- The Mock Tests hub places a lock button in Test 6's action slot for guests; it opens `/login/?next=%2Fexams%2Fpgt%2Fup-pgt%2Fmock-tests%2Ftest-6%2F`. Signed-in students see Start. The test and review use the shared CBT result layout with `data-gated`; Tests 1–5 stay public and 7–60 stay Coming soon.
 
 ## UP PGT Mock Test 5 — free CBT paper (2026-11-09)
 

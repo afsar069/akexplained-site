@@ -3,6 +3,7 @@ module.exports = Array.from({ length: 60 }, (_, index) => {
   return {
     number,
     label: String(number).padStart(2, "0"),
-    live: number <= 5,
+    live: number <= 6,
+    access: number === 6 ? "login" : "free",
   };
 });

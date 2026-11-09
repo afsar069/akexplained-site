@@ -298,7 +298,7 @@
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>Log in to take this test</h1>' +
-        '<p class="lede">This set is for students with a free account. ' +
+        '<p class="lede">' + (EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
         'Log in, or create an account, to open it.</p>' +
         '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
         '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to the age</a></p>' +
@@ -623,7 +623,7 @@
           '<li>Use <b>Mark for review</b> on anything you want to come back to.</li>' +
           '<li>The grid on the side shows every question and how it stands. Tap a number to jump.</li>' +
           '<li>Nothing is marked until you press <b>Submit</b>. When the clock runs out it submits itself.</li>' +
-          '<li>' + (EXAM_MOCK ? 'No sign-in is needed. This browser saves your current attempt.' :
+          '<li>' + (EXAM_MOCK && GATED.length ? 'A free account is needed to take this test. This browser saves your current attempt.' : EXAM_MOCK ? 'No sign-in is needed. This browser saves your current attempt.' :
             'Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.') + '</li>' +
         '</ul>' +
 
