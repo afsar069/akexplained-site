@@ -1,17 +1,18 @@
 {% extends "mcq-page.njk" %}
-{% set pageTitle %}UP PGT English Mock Test 1{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
-{% set pageDescription %}Take UP PGT English Mock Test 1 free, with 90 questions and no login required.{% endset %}
-{% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-1/{% if examReview %}review/{% endif %}{% endset %}
+{% set n = mockNumber or 1 %}
+{% set pageTitle %}UP PGT English Mock Test {{ n }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
+{% set pageDescription %}Take UP PGT English Mock Test {{ n }} free, with 90 questions and no login required.{% endset %}
+{% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-{{ n }}/{% if examReview %}review/{% endif %}{% endset %}
 {% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
-{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'Mock Tests',h:'/exams/pgt/up-pgt/mock-tests/'},{t:'Mock Test 1',h:'/exams/pgt/up-pgt/mock-tests/test-1/'}] %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'Mock Tests',h:'/exams/pgt/up-pgt/mock-tests/'},{t:'Mock Test ' ~ n,h:'/exams/pgt/up-pgt/mock-tests/test-' ~ n ~ '/'}] %}
 {% set mainClass = "cbt" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">
-  <span class="mark" aria-hidden="true">1</span>
+  <span class="mark" aria-hidden="true">{{ n }}</span>
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP PGT English</p>
-    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Mock Test 1{% endif %}</h1>
+    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Mock Test {{ n }}{% endif %}</h1>
     <p class="lede" id="cbtLede">{% if examReview %}Your answer, the right one, and the explanation for each question.{% else %}90 questions. Free for everyone, with no login required.{% endif %}</p>
   </div>
 </section>
@@ -20,9 +21,9 @@
   <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
 </div>
 <div class="wrap cbt-body" data-cbt data-exam-mock{% if examReview %} data-mode="review"{% endif %}
-     data-set="up-pgt-mock-test-1" data-src="/assets/questions/up-pgt-mock-test-1.json"
-     data-back="/exams/pgt/up-pgt/mock-tests/{% if examReview %}test-1/{% endif %}"
-     data-back-label="{% if examReview %}Mock Test 1{% else %}Mock Tests{% endif %}">
+     data-set="up-pgt-mock-test-{{ n }}" data-src="/assets/questions/up-pgt-mock-test-{{ n }}.json"
+     data-back="/exams/pgt/up-pgt/mock-tests/{% if examReview %}test-{{ n }}/{% endif %}"
+     data-back-label="{% if examReview %}Mock Test {{ n }}{% else %}Mock Tests{% endif %}">
   <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
 </div>
 {% endblock %}

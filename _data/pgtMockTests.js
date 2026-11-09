@@ -3,6 +3,6 @@ module.exports = Array.from({ length: 60 }, (_, index) => {
   return {
     number,
     label: String(number).padStart(2, "0"),
-    live: number === 1,
+    live: number === 1 || number === 2,
   };
 });
