@@ -4,12 +4,17 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-08 (UP PGT Mock Test 1 is free and public.)_
+_Last updated: 2026-11-09 (UP PGT Mock Test 3 added as a free public CBT paper.)_
+
+## UP PGT Mock Test 3 — free CBT paper (2026-11-09)
+
+- The owner supplied `PGT_batch_3_tagged.json` with 90 verified questions and requested Mock Test 3 outside login. The question objects are unchanged in the public JSON paper; only the CBT wrapper metadata was added. Structural and build checks were run without repeating fact review.
+- The Mock Tests index marks Tests 1–3 free, and `/exams/pgt/up-pgt/mock-tests/test-3/` uses the shared CBT layout with a review route at `/test-3/review/`. Tests 4–60 remain Coming soon and noindex. The source change was prepared on `feat/up-pgt-mock-test-3` for publication through `main`.
 
 ## UP PGT Mock Test 1 — free CBT paper (2026-11-08)
 
 - The owner supplied `paper_01.json` with 90 verified questions and requested Mock Test 1 for everyone without login. The question objects are preserved exactly; a CBT paper wrapper supplies only the test metadata. Structural checks passed, including unique IDs, four options and valid answers, and existing topic/period tags. No fact review was repeated.
-- The Mock Tests index marks only Test 1 available. `/exams/pgt/up-pgt/mock-tests/test-1/` loads `/assets/questions/up-pgt-mock-test-1.json` directly, without the login gate, and its review is at `/test-1/review/`. Tests 2–60 remain Coming soon and noindex.
+- At that publication, the Mock Tests index marked only Test 1 available. `/exams/pgt/up-pgt/mock-tests/test-1/` loads `/assets/questions/up-pgt-mock-test-1.json` directly, without the login gate, and its review is at `/test-1/review/`.
 - Owner correction: use the existing CBT result page, not a different scoreboard. The test and review now extend the same `mcq-page.njk` layout as the existing MCQ tests, through `up-pgt-cbt.njk`. Submission uses the same `showResult()` components and order (score, optional account prompt, analysis, actions, score scale and reading/next links) on the test URL. Only exam-specific wording and links differ; no separate result route or engine exists. Placeholder pages keep the PGT layout.
 
 ## UP PGT Mock Tests index — on main (2026-11-08)
