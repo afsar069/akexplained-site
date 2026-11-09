@@ -1,0 +1,1228 @@
+{
+  "setId": "up-pgt-mock-test-3",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 3,
+  "setName": "Mock Test 3",
+  "level": "all",
+  "levelName": "Full paper",
+  "questions": [
+    {
+      "id": "up-pgt-mock-batch-3-m-01",
+      "question": "In Shakespeare's tragedy 'Othello', who is Othello's deceitful ensign who meticulously orchestrates his tragic downfall?",
+      "options": [
+        "Cassio",
+        "Brabantio",
+        "Iago",
+        "Roderigo"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Iago poisons Othello mind against Desdemona through cunning villainy.",
+      "topicId": "othello",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-02",
+      "question": "Which melancholic lord in 'As You Like It' delivers the famous monologue beginning 'All the world's a stage, and all the men and women merely players'?",
+      "options": [
+        "Duke Senior",
+        "Orlando",
+        "Jaques",
+        "Touchstone"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lord Jaques delivers the Seven Ages of Man speech in Act 2 Scene 7.",
+      "topicId": "as-you-like-it",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-03",
+      "question": "In Shakespeare's 'Twelfth Night', what ridiculous attire is the pompous steward Malvolio tricked into wearing by Maria's forged letter?",
+      "options": [
+        "A fool motley coat and cap",
+        "A scarlet velvet ceremonial cloak",
+        "Yellow stockings cross-gartered",
+        "A black solemn mourning shroud"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Malvolio appears smiling and cross-gartered in yellow stockings to please Olivia.",
+      "topicId": "twelfth-night",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-04",
+      "question": "Select the correct indirect narration: He said, 'I have passed the examination.'",
+      "options": [
+        "He said that I had passed the entire examination.",
+        "He said that he had passed the examination.",
+        "He told that he had passed the examination successfully.",
+        "He said that he has passed the difficult examination."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Present perfect tense changes to past perfect tense in indirect speech.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-05",
+      "question": "Change into indirect speech: The officer said to the soldiers, 'Halt!'",
+      "options": [
+        "The officer commanded the soldiers to halt.",
+        "The officer requested the soldiers to halt immediately.",
+        "The officer said the soldiers to halt at once.",
+        "The officer told to the soldiers that they must halt."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Military orders are transformed using commanded or ordered followed by to infinitive.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-06",
+      "question": "Which historical chronicles served as William Shakespeare's chief source for his English history plays and 'Macbeth'?",
+      "options": [
+        "Gesta Romanorum Annals",
+        "Plutarch's Parallel Lives",
+        "Holinshed's Chronicles",
+        "Hall's Historical Chronicle"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Raphael Holinshed Chronicles published in 1577 was his main historical source.",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-07",
+      "question": "Which Romantic poet praised William Shakespeare as the supreme exemplar of 'Negative Capability' in an 1817 letter?",
+      "options": [
+        "Lord Byron",
+        "S.T. Coleridge",
+        "P.B. Shelley",
+        "John Keats"
+      ],
+      "correct_option_id": 3,
+      "explanation": "John Keats named Shakespeare as possessing Negative Capability so enormously.",
+      "topicId": "negative-capability",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-08",
+      "question": "In P.B. Shelley's elegy 'Adonais', in which historic cemetery in Rome is John Keats buried near the pyramid of Cestius?",
+      "options": [
+        "Verano Historic Cemetery",
+        "Campo Santo Monumental",
+        "The Protestant Cemetery",
+        "Flaminio Municipal Cemetery"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats is buried in the Protestant Cemetery in Rome where Shelley ashes were also later placed.",
+      "topicId": "john-keats",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-09",
+      "question": "Choose the correct indirect form: She said, 'Alas! I am undone.'",
+      "options": [
+        "She exclaimed with sorrow that she was undone.",
+        "She said with sorrow that I am utterly undone.",
+        "She exclaimed with joy that she was finally undone.",
+        "She cried out in grief that she had been undone."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Alas expresses grief and transforms into exclaimed with sorrow followed by past simple.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-10",
+      "question": "Choose the correct antonym of the word 'METICULOUS':",
+      "options": [
+        "Negligent",
+        "Accurate",
+        "Methodical",
+        "Fastidious"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Meticulous means taking immense care with details; its opposite is negligent or careless.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-11",
+      "question": "'I met a traveller from an antique land / Who said: Two vast and trunkless legs of stone / Stand in the desert' opens which sonnet by P.B. Shelley?",
+      "options": [
+        "Feelings of a Republican",
+        "Ozymandias",
+        "England in 1819",
+        "To Wordsworth"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ozymandias published in 1818 reflects on the fleeting nature of political power.",
+      "topicId": "ozymandias",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-12",
+      "question": "In which body of water did P.B. Shelley drown in July 1822 when his boat Don Juan was caught in a storm?",
+      "options": [
+        "Lake Geneva in Switzerland",
+        "The Aegean Sea around Greece",
+        "The Bay of Naples in southern Italy",
+        "The Gulf of Spezia"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shelley drowned in the Gulf of Spezia off Livorno on 8 July 1822 at age twenty-nine.",
+      "topicId": "percy-bysshe-shelley",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-13",
+      "question": "'Thou wast not born for death, immortal Bird! / No hungry generations tread thee down' is addressed to the bird in which ode by John Keats?",
+      "options": [
+        "Ode on Melancholy in Autumn",
+        "Ode on Indolence in Summer",
+        "Ode to Psyche in Spring",
+        "Ode to a Nightingale"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Keats contrasts mortal human suffering with the immortal art of the nightingale.",
+      "topicId": "ode-to-a-nightingale",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-14",
+      "question": "Select the closest synonym for the word 'BENEVOLENT':",
+      "options": [
+        "Openly hostile",
+        "Selfish and bitter",
+        "Malevolent towards others",
+        "Compassionate"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Benevolent means well-meaning and kindly, matching compassionate.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-15",
+      "question": "What is the exact antonym of the word 'AFFLUENT'?",
+      "options": [
+        "Extremely wealthy",
+        "Prosperous in society",
+        "Opulent and rich",
+        "Impoverished"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Affluent means having a great deal of money; impoverished means made poor.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-16",
+      "question": "Which celebrated literary ballad by John Keats takes its title from a fifteenth-century French poem by Alain Chartier?",
+      "options": [
+        "Isabella; or, The Pot of Basil",
+        "The Eve of St. Mark in Spring",
+        "Otho the Great Tragedy",
+        "La Belle Dame sans Merci"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Keats borrowed the title from Alain Chartier courtly French lyric.",
+      "topicId": "john-keats",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-17",
+      "question": "What famous inscription did John Keats request to be carved upon his tombstone without his name?",
+      "options": [
+        "Beauty was his True Life and Truth his Beauty",
+        "A Young Poet of Truth and Untouched Beauty",
+        "Here lies One Whose Name was writ in Water",
+        "Gone to the Realm of Uncertainties and Doubts"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats dictated this modest epitaph reflecting his feelings of unfulfilled ambition.",
+      "topicId": "john-keats",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-18",
+      "question": "Which poem by Alfred Lord Tennyson commemorates the doomed cavalry charge at the Battle of Balaclava in the Crimean War?",
+      "options": [
+        "The Charge of the Heavy Brigade",
+        "Locksley Hall Sixty Years After",
+        "The Charge of the Light Brigade",
+        "The Revenge; A Ballad of the Fleet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tennyson wrote the famous lines Into the valley of Death / Rode the six hundred in 1854.",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-19",
+      "question": "Choose the correct synonym of the verb 'AMELIORATE':",
+      "options": [
+        "Worsen",
+        "Destroy",
+        "Stagnate",
+        "Improve"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ameliorate signifies making something bad or unsatisfactory better, meaning improve.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-20",
+      "question": "What is the antonym of the word 'BELLICOSE'?",
+      "options": [
+        "Peaceable",
+        "Aggressive",
+        "Combative",
+        "Hostile"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bellicose means demonstrating aggression and willingness to fight; peaceable is its antonym.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-21",
+      "question": "What is the collective title of Alfred Lord Tennyson's cycle of twelve narrative poems retelling the legend of King Arthur and his knights?",
+      "options": [
+        "The Holy Grail Cycle",
+        "Idylls of the King",
+        "The Arthurian Romance",
+        "The Round Table Epic"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Idylls of the King published between 1859 and 1885 retells Arthurian legend in blank verse.",
+      "topicId": "idylls-of-the-king",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-22",
+      "question": "Ebenezer Scrooge, the reformed miser visited by three Christmas spirits, is the central protagonist of which work by Charles Dickens?",
+      "options": [
+        "The Cricket on the Hearth",
+        "A Christmas Carol",
+        "The Chimes",
+        "The Battle of Life"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A Christmas Carol in Prose published in 1843 is Dickens beloved holiday novella.",
+      "topicId": "charles-dickens",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-23",
+      "question": "The interminable Chancery suit 'Jarndyce and Jarndyce' provides the satirical framework for which Charles Dickens novel?",
+      "options": [
+        "Our Mutual Friend",
+        "Dombey and Son",
+        "The Mystery of Edwin Drood",
+        "Bleak House"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Bleak House published in 1852-53 severely satirizes the corrupt Court of Chancery.",
+      "topicId": "bleak-house",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-24",
+      "question": "Choose the statement that correctly distinguishes 'COMPLIMENT' from 'COMPLEMENT':",
+      "options": [
+        "Compliment means something that completes; complement means polite praise.",
+        "Both words denote an expression of admiration or flatter in speech.",
+        "Both words signify an addition that improves something significantly.",
+        "Compliment means polite praise; complement means something that completes."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Compliment with i is polite praise; complement with e means completing a set.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-25",
+      "question": "A separate introductory section of a literary, dramatic, or musical work is called a:",
+      "options": [
+        "Dialogue",
+        "Prologue",
+        "Monologue",
+        "Epilogue"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A prologue is an opening section providing background or context to a drama or novel.",
+      "topicId": "prologue"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-26",
+      "question": "'Five years have past; five summers, with the length / Of five long winters!' is the opening line of which masterpiece poem by William Wordsworth?",
+      "options": [
+        "Tintern Abbey",
+        "Michael",
+        "The Prelude",
+        "Resolution and Independence"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wordsworth opens Lines Composed a Few Miles above Tintern Abbey revisiting the banks of the Wye.",
+      "topicId": "tintern-abbey",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-27",
+      "question": "In 'The World Is Too Much with Us', Wordsworth laments modern commercialism and longs to see which sea god rising from the waters?",
+      "options": [
+        "Oceanus",
+        "Proteus",
+        "Neptune",
+        "Poseidon"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wordsworth writes Have sight of Proteus rising from the sea or hear old Triton blow his wreathed horn.",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-28",
+      "question": "Which family member kept the detailed 'Grasmere Journals' that frequently provided William Wordsworth with poetic inspiration?",
+      "options": [
+        "Mary Hutchinson Wordsworth",
+        "Sara Hutchinson Coleridge",
+        "Dora Wordsworth Quillinan",
+        "Dorothy Wordsworth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "His sister Dorothy Wordsworth journals recorded observations of daffodils and country life.",
+      "topicId": "romantic",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-29",
+      "question": "One who possesses unlimited power and authority is described as:",
+      "options": [
+        "Omniscient",
+        "Omnipresent",
+        "Omnipotent",
+        "Omnivorous"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Omnipotent means having unlimited power; omniscient means all-knowing.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-30",
+      "question": "An account of a person's life written by that person himself or herself is an:",
+      "options": [
+        "Historical memoir",
+        "Biography of a leader",
+        "Spiritual hagiography",
+        "Autobiography"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An autobiography is a self-written life history; biography is written by another.",
+      "topicId": "autobiography"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-31",
+      "question": "Which 1935 verse play by T.S. Eliot dramatizes the assassination of Archbishop Thomas Becket in Canterbury Cathedral in 1170?",
+      "options": [
+        "The Family Reunion",
+        "Murder in the Cathedral",
+        "The Cocktail Party",
+        "The Confidential Clerk"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Commissioned for the Canterbury Festival, it portrays Becket martyrdom resisting royal authority.",
+      "topicId": "murder-in-the-cathedral",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-32",
+      "question": "In his seminal 1919 essay 'Tradition and the Individual Talent', T.S. Eliot compared the mind of the mature poet to which scientific catalyst?",
+      "options": [
+        "A fine grain of pure gold",
+        "A shred of platinum",
+        "A drop of liquid mercury",
+        "A polished prism of quartz"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Eliot famously analogies the creative process to sulphurous acid formed in the presence of platinum.",
+      "topicId": "tradition-and-the-individual-talent",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-33",
+      "question": "In which famous essay of Elia does Charles Lamb humorously describe the Chinese peasant Bo-bo accidentally burning down a cottage?",
+      "options": [
+        "The South-Sea House",
+        "Witches and Other Night-Fears",
+        "The Praise of Chimney-Sweepers",
+        "A Dissertation upon Roast Pig"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A Dissertation upon Roast Pig recounts the mythical discovery of the delicacy of roast pig.",
+      "topicId": "charles-lamb",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-34",
+      "question": "An inscription or phrase written on a tombstone or monument in memory of a deceased person is an:",
+      "options": [
+        "Epitaph",
+        "Epithet",
+        "Epilogue",
+        "Epigram"
+      ],
+      "correct_option_id": 0,
+      "explanation": "An epitaph is an inscription engraved on a tombstone or monument.",
+      "topicId": "rhetoric-and-criticism-terms"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-35",
+      "question": "What is the meaning of the idiom 'to beat about the bush'?",
+      "options": [
+        "To clear thick bushes in an overgrown garden",
+        "To search vigorously for wild game in the woods",
+        "To avoid discussing the main topic directly",
+        "To strike someone repeatedly with a walking stick"
+      ],
+      "correct_option_id": 2,
+      "explanation": "To beat about the bush means approaching an issue in an evasive or roundabout manner.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-36",
+      "question": "Which 1808 pioneering anthology compiled by Charles Lamb restored critical appreciation for neglected Elizabethan and Jacobean dramatists?",
+      "options": [
+        "Classic Plays of the Ancient London Authors",
+        "Specimens of English Dramatic Poets",
+        "The Dramatic Mirror of English Authors",
+        "Anthology of Great Elizabethan Dramatists"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Specimens of English Dramatic Poets revived interest in Marlowe and Webster.",
+      "topicId": "charles-lamb",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-37",
+      "question": "Gabriel Oak, Bathsheba Everdene, and Farmer Boldwood are the central characters in which Wessex novel by Thomas Hardy?",
+      "options": [
+        "Far from the Madding Crowd",
+        "A Pair of Blue Eyes in Cornwall",
+        "The Woodlanders of Blackmoor Vale",
+        "Under the Greenwood Tree in Wessex"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Far from the Madding Crowd published in 1874 was Hardy first major critical and commercial triumph.",
+      "topicId": "far-from-the-madding-crowd",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-38",
+      "question": "Which poem by Thomas Hardy, published on 31 December 1900, reflects on the close of the nineteenth century through an aged singing thrush?",
+      "options": [
+        "The Darkling Thrush",
+        "The Ruined Maid in Society",
+        "Neutral Tones in Winter",
+        "Channel Firing at Night"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Originally titled By the Century Deathbed, the poem finds a frail hope in the thrush song.",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-39",
+      "question": "The idiomatic phrase 'to leave no stone unturned' signifies:",
+      "options": [
+        "To destroy valuable historical monuments in time of war",
+        "To wander aimlessly across rocky terrain without direction",
+        "To engage in strenuous masonry or building work with rocks",
+        "To try every possible means to achieve an objective"
+      ],
+      "correct_option_id": 3,
+      "explanation": "It means using every available resource or method to achieve a desired goal.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-40",
+      "question": "What does the expression 'through thick and thin' mean?",
+      "options": [
+        "Eating heavy rich foods and thin light broths alternately",
+        "Walking across deep muddy ground and dense forests",
+        "Under all conditions, both pleasant and difficult",
+        "Gradually gaining and losing personal physical weight"
+      ],
+      "correct_option_id": 2,
+      "explanation": "It signifies remaining steadfast in loyalty and support through good and bad times.",
+      "topicId": "semantics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-41",
+      "question": "Which famous poem by Robert Frost opens with the line 'Something there is that doesn't love a wall'?",
+      "options": [
+        "The Wood-Pile in Woods",
+        "Mending Wall",
+        "The Mountain in Winter",
+        "Birches in New England"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mending Wall published in North of Boston in 1914 explores natural and human barriers.",
+      "topicId": "mending-wall",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-42",
+      "question": "Robert Frost delivered his poem 'The Gift Outright' from memory at the presidential inauguration of which U.S. President in January 1961?",
+      "options": [
+        "John F. Kennedy",
+        "Franklin D. Roosevelt",
+        "Harry S. Truman",
+        "Dwight D. Eisenhower"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Unable to read his newly written poem due to snow glare, Frost recited The Gift Outright from memory.",
+      "topicId": "robert-frost",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-43",
+      "question": "In Kamala Das's celebrated poem 'The Dance of the Eunuchs', what physical atmosphere mirrors the sterile anguish of the dancers?",
+      "options": [
+        "A dry, sultry wind followed by meager rain",
+        "A calm autumn sunset by the tropical seaside",
+        "A chilling winter breeze under gloomy clouds",
+        "A torrential downpour during the monsoon season"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The harsh heat and meager raindrops symbolize the sterile and unfulfilled passion of the eunuchs.",
+      "topicId": "kamala-das",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-44",
+      "question": "Fill in the blank with the correct preposition: He is senior ______ me in service by four years.",
+      "options": [
+        "from",
+        "than",
+        "with",
+        "to"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Latin comparatives ending in -ior like senior junior superior take preposition to not than.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-45",
+      "question": "Fill in the blank: The poor laborer died ______ cholera after drinking contaminated water.",
+      "options": [
+        "from",
+        "by",
+        "of",
+        "with"
+      ],
+      "correct_option_id": 2,
+      "explanation": "One dies of a disease like cholera or malaria, but dies from overwork or a wound.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-46",
+      "question": "In Mulk Raj Anand's tragic novel 'Two Leaves and a Bud' (1937), what is the geographical and occupational setting of Gangu's exploitation?",
+      "options": [
+        "A rural Punjab wheat farm",
+        "An Assam tea plantation",
+        "A Calcutta industrial jute factory",
+        "A Bombay cotton textile mill"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novel depicts the brutal exploitation of poor coolies on a British-managed Assam tea estate.",
+      "topicId": "mulk-raj-anand",
+      "periodId": "iwe-fiction"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-47",
+      "question": "What is the name of Ernest Hemingway's minimalist aesthetic principle that only one-eighth of a story's meaning should appear on the surface?",
+      "options": [
+        "The Objective Correlative Method",
+        "The Stream of Consciousness Technique",
+        "The Iceberg Theory",
+        "The Nonlinear Flashback Structure"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hemingway Theory of Omission or Iceberg Theory leaves deeper meaning implicit under simple prose.",
+      "topicId": "ernest-hemingway",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-48",
+      "question": "In Nissim Ezekiel's satirical poem 'Goodbye Party for Miss Pushpa T.S.', Miss Pushpa is preparing to travel abroad for:",
+      "options": [
+        "improving her prospect",
+        "higher postgraduate university study",
+        "advanced specialized medical training",
+        "visiting wealthy foreign relatives"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The speaker announces in Indian English that Miss Pushpa is departing for foreign to improve her prospect.",
+      "topicId": "nissim-ezekiel",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-49",
+      "question": "Choose the appropriate preposition: The security guard prevented the stranger ______ entering the premises.",
+      "options": [
+        "to",
+        "at",
+        "from",
+        "against"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The verb prevent is standardly followed by from plus gerund.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-50",
+      "question": "Which negative prefix is attached to the adjective 'PURE' to form its opposite meaning?",
+      "options": [
+        "Un- prefix",
+        "Dis- prefix",
+        "Im-",
+        "In- prefix"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Words beginning with p frequently take the negative prefix im- to form impure.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-51",
+      "question": "Walt Whitman broke away from traditional European poetic meter and rhyme, earning him title of the father of American:",
+      "options": [
+        "Traditional blank verse",
+        "Classic ballad meter",
+        "Free verse",
+        "Heroic couplets in poetry"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Whitman pioneered modern free verse using cadence, parallelism, and cataloging in Leaves of Grass.",
+      "topicId": "free-verse",
+      "periodId": "american-renaissance"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-52",
+      "question": "The Bundren family's arduous journey across Mississippi to bury their deceased mother Addie is recounted in which William Faulkner novel?",
+      "options": [
+        "Intruder in the Dust",
+        "Sanctuary",
+        "As I Lay Dying",
+        "The Hamlet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "As I Lay Dying in 1930 uses fifteen distinct narrators across fifty-nine interior monologues.",
+      "topicId": "as-i-lay-dying",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-53",
+      "question": "Which major narrative poem by Geoffrey Chaucer, composed in rime royale, tells the tragic romance of two lovers during the siege of Troy?",
+      "options": [
+        "Troilus and Criseyde",
+        "The Parliament of Fowls",
+        "The Book of the Duchess",
+        "The House of Fame"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Troilus and Criseyde based on Boccaccio Filostrato is Chaucer greatest finished narrative poem.",
+      "topicId": "troilus-and-criseyde",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-54",
+      "question": "Which suffix is added to the noun 'HERO' to derive an adjective signifying noble courage?",
+      "options": [
+        "-ous suffix",
+        "-ic",
+        "-al suffix",
+        "-ful suffix"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hero takes the suffix -ic to form the descriptive adjective heroic.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-55",
+      "question": "What is the proper negative prefix for the adjective 'OBEDIENT'?",
+      "options": [
+        "In- prefix",
+        "Mal- prefix",
+        "Dis-",
+        "Un- prefix"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Obedient takes the negative prefix dis- to form disobedient.",
+      "topicId": "morphology-linguistics"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-56",
+      "question": "In 'The Canterbury Tales', which lively pilgrim from near Bath has had five husbands and discourses at length on female sovereignty in marriage?",
+      "options": [
+        "The Wife of Bath",
+        "The Devout Second Nun",
+        "The Prioress Madam Eglantine",
+        "The Guildsman's Wealthy Wife"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Wife of Bath Alison delivers a spirited prologue arguing that women desire mastery over husbands.",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-57",
+      "question": "Dorothea Brooke, an idealistic young woman who enters an unhappy marriage with the pedantic scholar Edward Casaubon, is the heroine of:",
+      "options": [
+        "Middlemarch",
+        "Daniel Deronda in London",
+        "Scenes of Clerical Life Stories",
+        "Romola in Florence"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dorothea marital disillusionment with Casaubon forms the primary emotional arc of Middlemarch.",
+      "topicId": "middlemarch",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-58",
+      "question": "Which 1859 novel was George Eliot's first published full-length novel, portraying the carpenter Adam Bede and the dairymaid Hetty Sorrel?",
+      "options": [
+        "Impressions of Theophrastus Such",
+        "Brother Jacob in Short Story",
+        "Adam Bede",
+        "The Lifted Veil in Novella"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Adam Bede established Mary Ann Evans reputation as an exceptional Victorian realistic novelist.",
+      "topicId": "adam-bede",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-59",
+      "question": "Identify the grammatically correct sentence from the following options:",
+      "options": [
+        "Each of the participant was given a certificate.",
+        "Each of the participants was given a certificate.",
+        "Each of the participant were given a certificate.",
+        "Each of the participants were given a certificate."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Each of takes a plural noun followed by a singular verb in standard grammar.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-60",
+      "question": "Transform the sentence into a negative sentence without changing meaning: 'He is as cunning as a fox.'",
+      "options": [
+        "A fox is as cunning as he is in cleverness.",
+        "A fox is distinctly less cunning than he is.",
+        "He is not more cunning than any fox in nature.",
+        "A fox is not more cunning than he is."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Equative positive comparison transforms into comparative negative asserting equal cunning.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-61",
+      "question": "Eddie Carbone, a Brooklyn longshoreman whose unacknowledged passion for his niece Catherine destroys him, is the protagonist of which Arthur Miller play?",
+      "options": [
+        "After the Fall Autographical",
+        "A View from the Bridge",
+        "The Price Family Drama",
+        "Incident at Vichy in France"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A View from the Bridge in 1955 follows Eddie Carbone tragic jealousy involving Italian cousins.",
+      "topicId": "arthur-miller",
+      "periodId": "american-contemporary"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-62",
+      "question": "In Arthur Miller's 'Death of a Salesman', what are the names of Willy and Linda Loman's two grown sons?",
+      "options": [
+        "Chris and Larry Keller",
+        "Rodolpho and Marco",
+        "Biff and Happy",
+        "Bernard and Charley"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Biff, the former high school football star, and Happy, the assistant, are Willy sons.",
+      "topicId": "death-of-a-salesman",
+      "periodId": "american-contemporary"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-63",
+      "question": "Which 1973 novel by Toni Morrison focuses on the community of the Bottom and the complex friendship between Nel Wright and Sula Peace?",
+      "options": [
+        "Sula",
+        "Love in Coastal Florida",
+        "Paradise in Oklahoma",
+        "Tar Baby in the Islands"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sula set in the Bottom explores female bonding, individuality, and social expectations.",
+      "topicId": "sula",
+      "periodId": "american-contemporary"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-64",
+      "question": "Transform the rhetorical interrogative sentence into an assertive sentence: 'Who can touch pitch and not be defiled?'",
+      "options": [
+        "No one can touch pitch without being defiled.",
+        "None can touch pitch and avoid being defiled completely.",
+        "Everyone can touch pitch and not be defiled at all.",
+        "Someone can easily touch pitch and be defiled forever."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Rhetorical question Who can... transforms into the negative assertive No one can.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-65",
+      "question": "Select the sentence with grammatically correct correlative conjunction usage:",
+      "options": [
+        "No sooner had the bell rung than the children ran out.",
+        "No sooner did the bell rang than all the children ran out quickly.",
+        "No sooner had the bell rung but all the children ran out at once.",
+        "No sooner the bell had rung when the children ran out outside."
+      ],
+      "correct_option_id": 0,
+      "explanation": "No sooner is followed by auxiliary inversion had plus subject and correlates with than.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-66",
+      "question": "Set in Harlem during the 1920s, which 1992 historical novel by Toni Morrison follows Joe and Violet Trace against the backdrop of the Jazz Age?",
+      "options": [
+        "Tar Baby in the Caribbean",
+        "A Mercy in Early America",
+        "Jazz",
+        "Paradise in Western Towns"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Jazz published in 1992 forms the second work in Morrison historical fiction trilogy.",
+      "topicId": "toni-morrison",
+      "periodId": "american-contemporary"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-67",
+      "question": "'Fair is foul, and foul is fair' spoken by the three witches in Shakespeare's 'Macbeth' is an example of which rhetorical figure of reversal?",
+      "options": [
+        "Hyperbolic exaggeration",
+        "Chiasmus",
+        "Euphemistic substitute",
+        "Metonymic expression"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chiasmus involves a reversal in the order of words in two parallel phrases in an ABBA pattern.",
+      "topicId": "chiasmus"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-68",
+      "question": "Replacing a harsh or blunt expression with an inoffensive or mild phrase, such as saying 'passed away' instead of 'died', is called a:",
+      "options": [
+        "Euphemism",
+        "Pleonasmo style",
+        "Dysphemism remark",
+        "Paronomasia play"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A euphemism substitutes an agreeable or mild expression for one that may offend or suggest unpleasantness.",
+      "topicId": "euphemism-device"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-69",
+      "question": "Identify the sentence that correctly employs the conjunction 'Although':",
+      "options": [
+        "Although he worked hard, but he failed in the test.",
+        "Although he worked hard, he failed in the test.",
+        "Although he worked hard, yet he failed in the test.",
+        "Although he worked hard, so he failed in the test."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Although should be paired with a comma or yet, but combining although with but is incorrect.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-70",
+      "question": "Choose the correct passive voice: 'The committee will announce the final results tomorrow.'",
+      "options": [
+        "The final results are announced by the committee tomorrow.",
+        "The final results will be announced by the committee tomorrow.",
+        "The final results would be announced by the committee tomorrow.",
+        "The final results will announce tomorrow by the committee."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Future simple passive is formed using will be plus past participle announced.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-71",
+      "question": "'Ten thousand saw I at a glance, / Tossing their heads in sprightly dance' in Wordsworth's 'Daffodils' is an example of:",
+      "options": [
+        "Dramatic irony",
+        "Hyperbole",
+        "Litotes understatement",
+        "Oxymoronic pairing"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ten thousand saw I at a glance is a deliberate poetic exaggeration known as hyperbole.",
+      "topicId": "hyperbole"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-72",
+      "question": "'Milton! thou shouldst be living at this hour: / England hath need of thee' in Wordsworth's sonnet 'London, 1802' is an example of:",
+      "options": [
+        "Apostrophe",
+        "Synecdochic phrase",
+        "Extended metaphor",
+        "Descriptive simile"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Directly addressing the deceased poet John Milton who is absent is an apostrophe.",
+      "topicId": "apostrophe-device"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-73",
+      "question": "In the sentence 'He has five hungry mouths to feed', using 'mouths' to refer to persons is an example of which figure of speech?",
+      "options": [
+        "Synecdoche",
+        "Poetic metonymy",
+        "Rhetorical oxymoron",
+        "Extended metaphor"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Synecdoche is a figure of speech in which a part of something represents the whole.",
+      "topicId": "synecdoche"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-74",
+      "question": "Change the passive sentence into active voice: 'The wooden bridge was swept away by the raging flood.'",
+      "options": [
+        "The raging flood was sweeping away the wooden bridge.",
+        "The raging flood swept away the wooden bridge.",
+        "The raging flood sweeps away the wooden bridge.",
+        "The raging flood had swept away the wooden bridge."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Simple past passive was swept away converts into active past simple swept away.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-75",
+      "question": "Which of the following sentences exhibits correct subject-verb agreement with 'Neither... nor'?",
+      "options": [
+        "Neither the manager nor his assistants was present in the room.",
+        "Neither the manager nor his assistants has been present today.",
+        "Neither the manager nor his assistants is present at the meeting.",
+        "Neither the manager nor his assistants were present."
+      ],
+      "correct_option_id": 3,
+      "explanation": "In neither nor constructions, the verb agrees with the nearer subject assistants.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-76",
+      "question": "In 'An Apology for Poetry' (1595), which Elizabethan poet and critic defended poetry against Stephen Gosson's Puritan attacks?",
+      "options": [
+        "Sir Philip Sidney",
+        "George Puttenham the critic",
+        "Thomas Wilson the rhetorician",
+        "Roger Ascham of Cambridge"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sidney defended poetry asserting that the poet never lieth because he nothing affirmeth.",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-77",
+      "question": "'A little learning is a dang'rous thing; / Drink deep, or taste not the Pierian spring' is a celebrated couplet from which poem by Alexander Pope?",
+      "options": [
+        "The Dunciad heroic satire",
+        "The Rape of the Lock mock epic",
+        "An Essay on Man in verse",
+        "An Essay on Criticism"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pope published An Essay on Criticism in heroic couplets in 1711 when he was twenty-three.",
+      "topicId": "an-essay-on-criticism",
+      "periodId": "augustan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-78",
+      "question": "Which literary theorist and critic established the distinction between the 'scientific or referential' use and the 'emotive' use of language in 1924?",
+      "options": [
+        "I.A. Richards",
+        "Cleanth Brooks in America",
+        "T.S. Eliot in essays",
+        "F.R. Leavis in Cambridge"
+      ],
+      "correct_option_id": 0,
+      "explanation": "I.A. Richards formulated this distinction in Principles of Literary Criticism.",
+      "topicId": "i-a-richards",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-79",
+      "question": "Identify the word that is correctly spelled from the choices given below:",
+      "options": [
+        "Concentious worker",
+        "Conscientous person",
+        "Conscientious",
+        "Consciencious in duty"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Conscientious is spelled c-o-n-s-c-i-e-n-t-i-o-u-s.",
+      "topicId": "english-language-and-elt"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-80",
+      "question": "Select the correctly spelled word from the following options:",
+      "options": [
+        "Maintenence cost",
+        "Maintainance in office",
+        "Maintanence work",
+        "Maintenance"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Maintenance is spelled with tenance as m-a-i-n-t-e-n-a-n-c-e.",
+      "topicId": "english-language-and-elt"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-81",
+      "question": "In 'The Function of Criticism at the Present Time' (1864), which critic defined criticism as 'a disinterested endeavour to learn and propagate the best'?",
+      "options": [
+        "John Ruskin the critic",
+        "Leslie Stephen the essayist",
+        "Walter Horatio Pater",
+        "Matthew Arnold"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Matthew Arnold championed disinterestedness and the best that is known and thought in the world.",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-82",
+      "question": "The English Augustan Age in literature, distinguished by formal wit, satire, and imitation of Roman models, spans approximately:",
+      "options": [
+        "1745 to 1785 Transition",
+        "1700 to 1745",
+        "1785 to 1832 Romantic",
+        "1660 to 1700 Restoration"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Augustan Age corresponds to the literary era of Pope, Swift, and Addison in early eighteenth century.",
+      "topicId": "augustan",
+      "periodId": "augustan"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-83",
+      "question": "Which famous poem by Thomas Gray is regarded as the pinnacle of the eighteenth-century 'Graveyard School' of poetry?",
+      "options": [
+        "Ode on the Spring by Thomas Gray",
+        "Elegy Written in a Country Churchyard",
+        "Night Thoughts by Edward Young in London",
+        "The Grave by Robert Blair in Scotland"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Thomas Gray Elegy published in 1751 meditates on mortality among humble rural forefathers.",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-84",
+      "question": "Find the word with the correct spelling:",
+      "options": [
+        "Questionaire in survey",
+        "Questionnaire",
+        "Questionairre sheet",
+        "Questionnare form"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Questionnaire has double n and ending aire as q-u-e-s-t-i-o-n-n-a-i-r-e.",
+      "topicId": "english-language-and-elt"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-85",
+      "question": "Identify the correctly spelled word among the following:",
+      "options": [
+        "Occurrence",
+        "Occurrance of error",
+        "Ocurrence of storm",
+        "Occurence in event"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Occurrence features double c and double r as o-c-c-u-r-r-e-n-c-e.",
+      "topicId": "english-language-and-elt"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-86",
+      "question": "The Jacobean era of English literature corresponds to the reign of which English monarch between 1603 and 1625?",
+      "options": [
+        "King Henry VIII",
+        "King James II",
+        "King Charles I",
+        "King James I"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Jacobean is derived from Jacobus, the Latin form of James, following Elizabeth I death in 1603.",
+      "topicId": "jacobean-era",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-87",
+      "question": "Which three-line interlocking stanza form rhyming 'aba bcb cdc' was invented by Dante Alighieri and used in English by Shelley in 'Ode to the West Wind'?",
+      "options": [
+        "Spenserian stanza",
+        "Ottava rima",
+        "Rime royale",
+        "Terza rima"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Terza rima is an Italian tercet form with chain rhyme aba bcb cdc.",
+      "topicId": "terza-rima"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-88",
+      "question": "What is the term for verse written in unrhymed iambic pentameter lines, famously used by Marlowe, Shakespeare, and Milton?",
+      "options": [
+        "Free verse style",
+        "Alexandrine line",
+        "Heroic rhyming verse",
+        "Blank verse"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Blank verse is regular unrhymed iambic pentameter, the staple of English dramatic poetry.",
+      "topicId": "blank-verse"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-89",
+      "question": "Select the sentence with correct punctuation in direct speech:",
+      "options": [
+        "He said, 'Where are you going'?",
+        "He said, Where are you going?",
+        "He said, 'Where are you going?'",
+        "He said 'Where are you going?'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The introductory reporting verb is set off by a comma, and punctuation stays inside quotes.",
+      "topicId": "syntax"
+    },
+    {
+      "id": "up-pgt-mock-batch-3-m-90",
+      "question": "Identify the tense of the underlined verb phrase: 'She will be preparing for her examination at this time tomorrow.'",
+      "options": [
+        "Future Perfect Tense",
+        "Future Continuous Tense",
+        "Simple Future Tense",
+        "Future Perfect Continuous Tense"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Will be preparing denotes an ongoing action in progress at a specific time in the future.",
+      "topicId": "syntax"
+    }
+  ]
+}
