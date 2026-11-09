@@ -4,7 +4,12 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-09 (UP PGT Mock Test 3 added as a free public CBT paper.)_
+_Last updated: 2026-11-09 (UP PGT Mock Test 4 added as a free public CBT paper.)_
+
+## UP PGT Mock Test 4 — free CBT paper (2026-11-09)
+
+- The owner supplied `PGT_batch_4.json` with 90 verified questions for Test 4, free without login. All question objects are unchanged in the public paper; only CBT metadata was added. Structural checks covered options, answers, unique IDs and topic/period tags; factual answers were not rechecked.
+- The Mock Tests index marks Tests 1–4 free. `/exams/pgt/up-pgt/mock-tests/test-4/` uses the shared CBT and result layout, with answer review at `/test-4/review/`. Tests 5–60 remain Coming soon and noindex.
 
 ## UP PGT Mock Test 3 — free CBT paper (2026-11-09)
 
