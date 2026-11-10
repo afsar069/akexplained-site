@@ -85,7 +85,7 @@
   border-bottom:1px solid var(--border);
   color:var(--teal-dark);
   text-decoration:none;
-  transition:background-color .18s,color .18s;
+  transition:background-color .18s,color .18s,transform .18s,box-shadow .18s;
 }
 .net-action-icon{
   display:flex;
@@ -110,6 +110,8 @@
 .net-action-arrow{width:20px;height:20px;flex:none;transition:transform .18s}
 .net-action:hover{background:var(--teal-soft);color:var(--teal-dark)}
 .net-action:hover .net-action-arrow{transform:translateX(3px)}
+/* An active (available) action lifts into a soft rounded pill on hover, so a visitor can tell it apart from a "Coming soon" row. */
+.net-action--live:hover{border-radius:10px;border-bottom-color:transparent;transform:translateY(-3px);box-shadow:0 10px 22px -12px rgba(15,118,110,.55)}
 .net-action:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
 .net-paper-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .net-paper{padding:0;border:1px solid var(--border);border-radius:14px;overflow:hidden}
@@ -234,6 +236,7 @@
 }
 @media (prefers-reduced-motion:reduce){
   .net-action,.net-action-arrow,.net-syllabus-unit summary > img{transition:none}
+  .net-action--live:hover{transform:none}
 }
 @media print{
   .net-hub{padding:0}
