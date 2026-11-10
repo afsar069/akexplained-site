@@ -55,8 +55,11 @@
 .pgt-course-copy span{font-size:1.06rem;line-height:1.45}
 .pgt-course-action{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:8px 18px;border-radius:8px;background:var(--cream);color:var(--teal-dark);font-weight:700;white-space:nowrap}
 .pgt-resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.pgt-resource-card{display:flex;align-items:center;gap:20px;min-width:0;min-height:114px;padding:18px 22px;border:1px solid #DCC298;border-radius:8px;background:var(--paper);color:var(--ink);text-decoration:none}
+.pgt-resource-card{display:flex;align-items:center;gap:20px;min-width:0;min-height:114px;padding:18px 22px;border:1px solid #DCC298;border-radius:8px;background:var(--paper);color:var(--ink);text-decoration:none;transition:background-color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease}
 .pgt-resource-card:hover{border-color:var(--teal);background:var(--teal-soft);color:var(--ink)}
+/* An active (live) resource button lifts, deepens and nudges its arrow on hover, so a visitor can tell it apart from a "Coming soon" card. */
+.pgt-resource-card--live:hover{border-color:var(--teal-dark);transform:translateY(-3px);box-shadow:0 10px 22px -12px rgba(15,118,110,.55)}
+.pgt-resource-card--live:hover .pgt-resource-arrow{transform:translateX(4px)}
 .pgt-resource-icon{display:flex;align-items:center;justify-content:flex-start;flex:0 0 58px;min-height:60px;border-right:1px solid #DCC298}
 .pgt-resource-icon img{width:34px;height:34px}
 .pgt-resource-icon img{filter:invert(32%) sepia(46%) saturate(936%) hue-rotate(133deg) brightness(83%)}
@@ -64,7 +67,7 @@
 .pgt-resource-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.35}
 .pgt-resource-copy > span:not(.pgt-resource-status){font-size:.92rem;line-height:1.4}
 .pgt-resource-status{font-size:.92rem;line-height:1.4;font-weight:600;color:#8C5B14}
-.pgt-resource-arrow{flex:none}
+.pgt-resource-arrow{flex:none;transition:transform .2s ease}
 .pgt-guide-link{margin:20px 0 0;text-align:right}
 .pgt-guide-link a{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-underline-offset:3px}
 .pgt-resource-coming{padding:42px 0 52px;max-width:70ch}
@@ -170,7 +173,11 @@
   .pgt-featured{margin-bottom:32px}
   .pgt-exam-section + .pgt-exam-section{margin-top:32px}
 }
-@media (prefers-reduced-motion:reduce){.pgt-featured,.pgt-featured-go img{transition:none}}
+@media (prefers-reduced-motion:reduce){
+  .pgt-featured,.pgt-featured-go img,.pgt-resource-card,.pgt-resource-arrow{transition:none}
+  .pgt-resource-card--live:hover{transform:none}
+  .pgt-resource-card--live:hover .pgt-resource-arrow{transform:none}
+}
 @media print{
   .pgt-hero-art,.pgt-breadcrumb,.pgt-back{display:none}
   .pgt-hero-inner{min-height:0}

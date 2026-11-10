@@ -16,7 +16,7 @@ pgt_resources: true
   </a>
   <div class="pgt-resource-grid">
     {% for resource in pgtResources %}{% if resource.slug != 'complete-course' %}
-    <a class="pgt-resource-card" href="/exams/pgt/up-pgt/{{ resource.slug }}/" aria-label="{{ resource.title }}{% if resource.slug == 'mcqs' %} — browse 60 days{% elif resource.slug == 'mock-tests' %} — browse 60 tests{% else %} — coming soon{% endif %}">
+    <a class="pgt-resource-card{% if resource.slug == 'mcqs' or resource.slug == 'mock-tests' %} pgt-resource-card--live{% endif %}" href="/exams/pgt/up-pgt/{{ resource.slug }}/" aria-label="{{ resource.title }}{% if resource.slug == 'mcqs' %} — browse 60 days{% elif resource.slug == 'mock-tests' %} — browse 60 tests{% else %} — coming soon{% endif %}">
       <span class="pgt-resource-icon" aria-hidden="true"><img src="/assets/icons/tabler/{{ resource.icon }}.svg" alt="" width="52" height="52"></span>
       <span class="pgt-resource-copy"><strong>{{ resource.title }}</strong><span>{{ resource.description }}</span><span class="pgt-resource-status">{% if resource.slug == 'mcqs' %}Browse 60 days{% elif resource.slug == 'mock-tests' %}Browse 60 tests{% else %}Coming soon{% endif %}</span></span>
       <img class="pgt-resource-arrow" src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26">
