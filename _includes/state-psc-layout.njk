@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} | AK Explained</title>
+<meta name="description" content="{{ description }}">
+{% if coming_soon %}<meta name="robots" content="noindex,follow">{% endif %}
+<link rel="canonical" href="https://akexplained.com{{ page.url }}">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/pgt.css">
+<link rel="stylesheet" href="/assets/state-psc.css">
+</head>
+<body class="pgt-page state-psc-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"></header>
+<div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if state_psc_hub %}State PSC{% else %}<a href="/exams/state-psc/">State PSC</a><span>/</span>{% if state_psc_resource %}<a href="/exams/state-psc/up-assistant-professor/">UP Assistant Professor</a><span>/</span>{{ crumb_label }}{% else %}UP Assistant Professor{% endif %}{% endif %}</p></div>
+<main id="main"{% if not state_psc_hub %} class="pgt-detail pgt-detail-resources"{% endif %}>
+{% if not state_psc_hub %}
+  <div class="wrap pgt-detail-nav">
+    <a class="pgt-back" href="{% if state_psc_resource %}/exams/state-psc/up-assistant-professor/{% else %}/exams/state-psc/{% endif %}"><img src="/assets/icons/feather/arrow-left.svg" alt="" width="18" height="18">{% if state_psc_resource %}Back to UP Assistant Professor{% else %}Back to State PSC{% endif %}</a>
+  </div>
+  <section class="pgt-hero pgt-hero-detail" aria-labelledby="state-psc-detail-title">
+    <picture class="pgt-hero-art" aria-hidden="true">
+      <source type="image/webp" srcset="/assets/exams/pgt-hero-1200.webp 1200w, /assets/exams/pgt-hero-1800.webp 1800w" sizes="(min-width:1024px) calc(100vw - 272px), 100vw">
+      <img src="/assets/exams/pgt-hero-1800.webp" alt="" width="1800" height="640" fetchpriority="high" decoding="async">
+    </picture>
+    <div class="wrap pgt-hero-inner">
+      <div class="pgt-hero-copy">
+        <p class="eyebrow">State PSC</p>
+        <h1 id="state-psc-detail-title">UP Assistant Professor</h1>
+        <p class="pgt-hero-description">Preparation resources for UP Assistant Professor.</p>
+      </div>
+    </div>
+  </section>
+  <div class="wrap pgt-detail-body">
+{% endif %}
+{{ content | safe }}
+{% if not state_psc_hub %}</div>{% endif %}
+</main>
+<footer class="site-footer"></footer>
+</body>
+</html>

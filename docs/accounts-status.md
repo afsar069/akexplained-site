@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Reviews + ready-made avatars LIVE on main; owner's avatar art, graduation-cap default.)_
+_Last updated: 2026-11-11 (State PSC and UP Assistant Professor pages prepared on a feature branch; review and avatar status follows below.)_
+
+## State PSC and UP Assistant Professor — awaiting publication (2026-11-11)
+
+- The owner requested a State PSC hub following the UP PGT design, with only UP Assistant Professor active. The previous general State PSC placeholder is replaced by the hub. Its featured card opens `/exams/state-psc/up-assistant-professor/`.
+- The UP Assistant Professor page shows five owner-specified resource cards: Download Syllabus, Paper 2 English Literature MCQs, Paper 2 English Literature Mock Tests, Paper 2 Study Notes and Paper 1 GK. Each card opens a noindex Coming soon page; no syllabus, notes, questions or test content was supplied.
+- The default footer and existing site navigation remain. This work is on `feat/state-psc-up-assistant-professor` and is not merged to `main`; the owner has not asked to publish it. Visual and route checks are in `docs/state-psc-up-assistant-professor/`.
 
 ## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
 
