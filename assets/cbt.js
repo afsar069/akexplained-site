@@ -49,6 +49,13 @@
 
   var SEC_PER_Q = 40;          /* default raftaar, hub wali hi */
   var SEC_MIN = 30, SEC_MAX = 60, MINUTES_CAP = 100;
+
+  /* Mock test (data-exam-mock) ke start screen par reader khud chunta hai
+     kitne sawal aur kitna waqt. Hadd malik ne di: 10 se 100 sawal, 5 se 120
+     minute. Default raftaar SEC_PER_Q (40 sec/sawal) hi hai — sawal kam karne
+     par waqt usi ratio se ghat-badh jata hai, jab tak reader waqt khud na badle. */
+  var MOCK_Q_MIN = 10, MOCK_Q_MAX = 100, MOCK_T_MIN = 5, MOCK_T_MAX = 120;
+
   var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -337,6 +344,13 @@
 
     var old = read();
     if (old && (old.more || '') !== more) old = null;     /* alag mel ka attempt — ye wala nahi */
+    /* Mock test me reader ne jitne sawal chune the (old.count), attempt unhi
+       pehle sawalo ka hai. Resume ke liye Q ko usi ginti par le aao, warna
+       (Q poora paper hone se) adhoora/poora test pakad me nahi aata. */
+    if (EXAM_MOCK && old && old.count && old.count !== Q.length) {
+      var reQ = questionsFor(old.count, '');
+      if (reQ.length === old.count) Q = reQ;
+    }
     if (old && !old.done && old.endsAt > Date.now() && old.count === Q.length) {
       st = old;
       runTest();              /* adhoora test chhoda tha — wahin se */
@@ -605,7 +619,21 @@
   /* ---------------------------------------------------------
      Parda 1 — shuru karne se pehle
      --------------------------------------------------------- */
+  /* Mock test ke start screen ka chunav (kitne sawal, kitna waqt). Sirf
+     data-exam-mock par banta hai; baaki jagah null rehta hai. */
+  var mp = null;
+  function mockPlanInit(p) {
+    var pool = paper.questions.length;
+    var qmax = Math.min(MOCK_Q_MAX, pool);
+    var qmin = Math.min(MOCK_Q_MIN, qmax);
+    var n = clamp(p.n, qmin, qmax);
+    mp = { pool: pool, qmin: qmin, qmax: qmax, rate: SEC_PER_Q, n: n,
+           minutes: clamp(Math.round(n * SEC_PER_Q / 60), MOCK_T_MIN, MOCK_T_MAX) };
+  }
+
   function showStart(p) {
+    if (EXAM_MOCK) mockPlanInit(p);
+
     root.innerHTML =
       '<div class="cbt-start">' +
         '<p class="eyebrow">' + esc(paper.ageName || '') + ' &middot; ' + esc(setTag()) + '</p>' +
@@ -614,8 +642,8 @@
           'You can go back to any question until you press Submit.</p>' +
         levelBlock() +
         '<div class="cbt-facts">' +
-          '<div class="cbt-fact"><b>' + p.n + '</b><span>Questions</span></div>' +
-          '<div class="cbt-fact"><b>' + p.minutes + ' min</b><span>Time</span></div>' +
+          '<div class="cbt-fact"><b' + (EXAM_MOCK ? ' id="cbtFactN"' : '') + '>' + (EXAM_MOCK ? mp.n : p.n) + '</b><span>Questions</span></div>' +
+          '<div class="cbt-fact"><b' + (EXAM_MOCK ? ' id="cbtFactT"' : '') + '>' + (EXAM_MOCK ? mp.minutes : p.minutes) + ' min</b><span>Time</span></div>' +
           '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>' + (EXAM_MOCK ? 'Paper' : 'Level') + '</span></div>' +
         '</div>' +
         '<ul class="cbt-rules">' +
@@ -626,6 +654,10 @@
           '<li>' + (EXAM_MOCK && GATED.length ? 'A free account is needed to take this test. This browser saves your current attempt.' : EXAM_MOCK ? 'No sign-in is needed. This browser saves your current attempt.' :
             'Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.') + '</li>' +
         '</ul>' +
+
+        /* Mock test: reader khud chunta hai kitne sawal aur kitna waqt.
+           Baaki sets ko ye chunav nahi (unka apna "build a test" page hai). */
+        mockPlanBlock() +
 
         /* Har exam negative marking nahi lagata, isliye ye chunav reader ka
            hai aur default band hai. Jo laga, wo yaad rakha jata hai. */
@@ -643,14 +675,17 @@
       '</div>';
 
     wireNeg();
+    wireMockPlan();
     $$('.cbt-lvlbtn').forEach(function (b) {
       b.addEventListener('click', function () { switchLevel(b.getAttribute('data-level')); });
     });
 
     $('#cbtBegin').addEventListener('click', function () {
+      var minutes = EXAM_MOCK ? mp.minutes : p.minutes;
       if (CUSTOM) Q = pickCustom(p.n);
+      else if (EXAM_MOCK) Q = questionsFor(mp.n, '');       /* reader ki chuni ginti ke pehle n sawal */
       st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
-             neg: negRate, startedAt: Date.now(), endsAt: Date.now() + p.minutes * 60000 };
+             neg: negRate, startedAt: Date.now(), endsAt: Date.now() + minutes * 60000 };
       if (CUSTOM) {
         st.custom = { sig: cfg.sig, sets: cfg.sets, level: cfg.level, more: more,
                       refs: Q.map(function (q) { return q.ref; }) };
@@ -658,6 +693,94 @@
       save();
       runTest();
     });
+  }
+
+  /* Mock test ka "kitne sawal, kitna waqt" dabba. Number box asli control hai
+     (keyboard aur screen reader uske saath), slider usi ka doosra roop. */
+  function mockPlanBlock() {
+    if (!EXAM_MOCK) return '';
+    return '<div class="cbt-neg cbt-plan">' +
+      '<p class="lbl" id="cbtPlanLbl">Questions and time</p>' +
+      '<p class="cbt-neghint">Take the full paper, or a shorter test. Change the number of questions and the time to suit you.</p>' +
+      '<div class="cbt-planrow" role="group" aria-labelledby="cbtPlanLbl">' +
+        '<div class="cbt-planfield">' +
+          '<label for="cbtPlanN">How many questions</label>' +
+          '<div class="cbt-numrow">' +
+            '<input type="number" id="cbtPlanN" min="' + mp.qmin + '" max="' + mp.qmax + '" step="1" inputmode="numeric" value="' + mp.n + '">' +
+            '<input type="range" id="cbtPlanNRange" min="' + mp.qmin + '" max="' + mp.qmax + '" step="1" value="' + mp.n + '" tabindex="-1" aria-hidden="true">' +
+          '</div>' +
+        '</div>' +
+        '<div class="cbt-planfield">' +
+          '<label for="cbtPlanT">How long</label>' +
+          '<div class="cbt-numrow">' +
+            '<input type="number" id="cbtPlanT" min="' + MOCK_T_MIN + '" max="' + MOCK_T_MAX + '" step="1" inputmode="numeric" value="' + mp.minutes + '">' +
+            '<span class="cbt-unit">minutes</span>' +
+            '<input type="range" id="cbtPlanTRange" min="' + MOCK_T_MIN + '" max="' + MOCK_T_MAX + '" step="1" value="' + mp.minutes + '" tabindex="-1" aria-hidden="true">' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+      '<p class="cbt-neghint" id="cbtPlanHint"></p>' +
+    '</div>';
+  }
+
+  function wireMockPlan() {
+    if (!EXAM_MOCK || !mp) return;
+    var nBox = $('#cbtPlanN'), nBar = $('#cbtPlanNRange');
+    var tBox = $('#cbtPlanT'), tBar = $('#cbtPlanTRange');
+    var hint = $('#cbtPlanHint');
+    var factN = $('#cbtFactN'), factT = $('#cbtFactT');
+    if (!nBox || !nBar || !tBox || !tBar) return;
+
+    function paint() {
+      nBox.value = nBar.value = mp.n;
+      tBox.value = tBar.value = mp.minutes;
+      if (factN) factN.textContent = mp.n;
+      if (factT) factT.textContent = mp.minutes + ' min';
+      var each = Math.round(mp.minutes * 60 / mp.n);
+      if (hint) {
+        hint.textContent = mp.n + (mp.n === 1 ? ' question' : ' questions') + ' in ' +
+          mp.minutes + (mp.minutes === 1 ? ' minute' : ' minutes') +
+          ' \u2014 about ' + each + ' seconds a question.' +
+          (mp.qmax < MOCK_Q_MAX && mp.n === mp.qmax ? ' That is the whole paper.' :
+           mp.qmax < MOCK_Q_MAX ? ' This paper has ' + mp.qmax + ' questions in all.' : '');
+      }
+    }
+
+    /* Sawal badle: waqt usi raftaar se ghat-badh (ratio wahi). */
+    function setN(v) {
+      v = parseInt(v, 10);
+      if (isNaN(v)) return;
+      mp.n = clamp(v, mp.qmin, mp.qmax);
+      mp.minutes = clamp(Math.round(mp.n * mp.rate / 60), MOCK_T_MIN, MOCK_T_MAX);
+      paint();
+    }
+    /* Waqt badla: ab yahi raftaar yaad rahegi. */
+    function setT(v) {
+      v = parseInt(v, 10);
+      if (isNaN(v)) return;
+      mp.minutes = clamp(v, MOCK_T_MIN, MOCK_T_MAX);
+      mp.rate = clamp(Math.round(mp.minutes * 60 / mp.n), 1, 3600);
+      paint();
+    }
+
+    /* Range turant, number box khoon-khula: galat beech ki value par kabja nahi. */
+    nBar.addEventListener('input', function () { setN(nBar.value); });
+    nBox.addEventListener('input', function () {
+      var v = parseInt(nBox.value, 10);
+      if (!isNaN(v) && v >= mp.qmin && v <= mp.qmax) setN(v);
+    });
+    nBox.addEventListener('change', function () { setN(nBox.value); });
+    nBox.addEventListener('blur', function () { setN(nBox.value); });
+
+    tBar.addEventListener('input', function () { setT(tBar.value); });
+    tBox.addEventListener('input', function () {
+      var v = parseInt(tBox.value, 10);
+      if (!isNaN(v) && v >= MOCK_T_MIN && v <= MOCK_T_MAX) setT(v);
+    });
+    tBox.addEventListener('change', function () { setT(tBox.value); });
+    tBox.addEventListener('blur', function () { setT(tBox.value); });
+
+    paint();
   }
 
   /* Level ka chunav: sirf tab dikhta hai jab ek se zyada level likhe hon.
