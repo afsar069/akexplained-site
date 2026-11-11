@@ -58,11 +58,23 @@ request with the GitHub tools (`create_pull_request`, then `merge_pull_request` 
 session's stop hook complains about unpushed commits otherwise). Cloudflare Pages then builds `main`. A cloud
 session cannot open akexplained.com (rule 14), so give the owner the live links to look at.
 
-## 6. Off for now
-- `write-a-review/` — built form, excluded from the build in `eleventy.config.js`.
-  Turns on with student accounts; remove the one ignore line.
-- Reviews on the home page show "Coming soon" until then. Published reviews live
-  in `assets/reviews.json` (Pages CMS → Student Reviews).
+## 6. Student reviews — live, login-gated, auto-live (owner, 2026-11-11)
+- Reviews are **login-gated and auto-live**: a logged-in student writes one at `/write-a-review/`
+  (`assets/review-form.js`) and it appears on the home page at once — **no approval step**. Guests see
+  a login wall there (`/login/?next=%2Fwrite-a-review%2F`). **One review per student.**
+- Storage is `public.reviews` in Supabase (migration `20261111120000_add_reviews.sql`): RLS lets anyone
+  read `visible = true` rows, a student read/insert only their own; no client UPDATE/DELETE. The home
+  carousel (`assets/home.js` `loadReviews`) reads visible rows with the publishable key; empty state is
+  a "Be the first" invite, never fake reviews (rule 2).
+- **Moderation is by exception only** (owner's rule): hide or delete a review **only for inappropriate
+  language** — a low-star review is kept. Do it from the owner side via the Supabase connector, e.g.
+  `update public.reviews set visible = false where id = '…';` (hide) or `delete from public.reviews
+  where id = '…';` (remove). Never from the browser.
+- Honest limit: while "Confirm email" is OFF (rule 13), login is not a hard spam wall; the
+  one-per-user rule and easy removal are the net. `/privacy/` states what a review stores and that it
+  is public — keep it true in the same commit as any change here (rule 10).
+- The old static `assets/reviews.json` + Pages CMS "Student Reviews" collection were retired when this
+  shipped (they no longer feed the home page).
 
 ## 7. MCQ question sets
 Question files are made with `tools/mcq-skill/SKILL.md` (by Claude Work or another AI) and

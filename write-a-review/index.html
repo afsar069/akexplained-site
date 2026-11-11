@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Write a review | AK Explained</title>
-<meta name="description" content="Share your experience of AK Explained — your review reaches Prof. Afsar Khan, and appears on the site once he approves it.">
+<meta name="description" content="Share your experience of AK Explained. Log in with your free account, write your review, and it appears on the home page right away.">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -94,21 +94,33 @@
   <div class="wrap">
     <p class="eyebrow">Students</p>
     <h1>Write a review</h1>
-    <p class="lede">Your review goes to Prof. Afsar Khan. It appears on the site only after he has approved it.</p>
+    <p class="lede">Log in with your free account and share how AK Explained has helped you. Your review appears on the home page right away.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <div class="formnote">
-      <p><strong>How your review reaches the site</strong></p>
-      <p>1. You fill in the form below &nbsp;&middot;&nbsp; 2. It goes to Prof. Afsar Khan
-         &nbsp;&middot;&nbsp; 3. He reads and approves it &nbsp;&middot;&nbsp; 4. Only then does it appear on the home page.</p>
-      <p class="muted">No review is published automatically. If you would like your photograph shown as well,
-         <a href="/go/whatsapp" rel="noopener">send it on WhatsApp</a>.</p>
+
+    <!-- Shown while we check if you are logged in. -->
+    <p class="muted" id="reviewChecking">Loading…</p>
+
+    <!-- Shown to a guest: a review needs a free account. -->
+    <div class="formnote" id="reviewGate" hidden>
+      <p><strong>Log in to write a review</strong></p>
+      <p>Only students with a free account can write a review. It takes a minute, and it keeps the reviews real.</p>
+      <p><a class="btn gold" href="/login/?next=%2Fwrite-a-review%2F">Log in or create a free account</a></p>
     </div>
 
-    <form class="formcard" id="reviewForm" novalidate>
+    <!-- Shown after you post, or if you have already written one. -->
+    <div class="formnote" id="reviewDone" hidden></div>
+
+    <div class="formnote" id="reviewHow" hidden>
+      <p><strong>How your review reaches the site</strong></p>
+      <p>You write it here, and it appears on the home page straight away &mdash; there is no waiting.
+         You can write one review. Prof. Afsar Khan may remove a review that breaks the site rules.</p>
+    </div>
+
+    <form class="formcard" id="reviewForm" novalidate hidden>
       <div class="field">
         <label for="rvName">Your name <span class="req">*</span></label>
         <input type="text" id="rvName" name="name" autocomplete="name" maxlength="60" required>
@@ -146,16 +158,9 @@
         <textarea id="rvText" name="review" maxlength="900" required></textarea>
       </div>
 
-      <div class="field">
-        <label for="rvEmail">Email
-          <span class="hint">Optional, and only so that you can be replied to if needed. It is never shown on the site.</span>
-        </label>
-        <input type="email" id="rvEmail" name="email" autocomplete="email" maxlength="120">
-      </div>
-
       <div class="formactions">
-        <button class="btn gold" type="submit">Send my review</button>
-        <span class="small muted">Your email address is never published.</span>
+        <button class="btn gold" type="submit">Post my review</button>
+        <span class="small muted">Your review and the name above are shown on the site. Your email is never shown.</span>
       </div>
 
       <div class="formmsg" id="formMsg" role="status" aria-live="polite"></div>

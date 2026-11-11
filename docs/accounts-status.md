@@ -4,15 +4,36 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-09 (Student Reviews design decided — login-gated, auto-live; not built yet.)_
+_Last updated: 2026-11-11 (Student Reviews built — login-gated, auto-live; on the branch, awaiting merge.)_
 
-## Student Reviews — login-gated, auto-live (PLANNED, not built) (2026-11-09)
+## Student Reviews — login-gated, auto-live (BUILT on the branch, 2026-11-11)
 
-The owner decided how the home-page "What Our Students Say" section should work, but asked to
-**build it later, not now**. This entry records the decision so the next session can implement it
-directly, without re-reading the chat.
+Built on the feature branch and tested; **live table is in Supabase already** (the migration was
+applied via the connector), the site code is **not yet on `main`** — merge when the owner says (rule 5).
 
-**Decision (owner, 2026-11-09):**
+**What is live now vs. on the branch:**
+- **Supabase (live):** `public.reviews` table + RLS created on the project via `apply_migration`
+  (migration `20261111120000_add_reviews.sql`). Read-back confirmed: RLS on; `anon` has SELECT (visible
+  rows only, by policy) and no INSERT; `authenticated` has INSERT, no UPDATE/DELETE; policies
+  `reviews_insert_own`, `reviews_own_read`, `reviews_public_read`; 0 rows. Security advisors show only
+  the two pre-existing warnings (leaderboard function, leaked-password) — no new finding.
+- **Site code (branch, not `main`):** `/write-a-review/` turned on (ignore line removed); login-gated
+  form writing to Supabase (`assets/review-form.js`); home carousel reads visible rows from Supabase
+  (`assets/home.js`), empty state is a "Be the first" invite + link; home section lede + "Write a
+  review" button; `/privacy/` updated; wording changed from "approved before shown" to auto-live; the
+  old `assets/reviews.json` + Pages CMS "Student Reviews" collection retired.
+- **Tested:** migration on a throwaway local Postgres with auth shims (insert-own ok, second review
+  blocked by the one-per-user unique, cross-user insert refused by RLS, anon sees only visible, hide
+  works, clients cannot update/delete, idempotent). `npx @11ty/eleventy` builds clean (246 files);
+  internal link check clean (only pre-existing runtime-template placeholders remain). Playwright (Supabase
+  mocked): 15/15 — guest gate, home renders reviews, empty invite, logged-in submit → live, name
+  prefill, insert payload, already-reviewed state, duplicate (23505) handled.
+
+**To remove a review (owner side only):** `update public.reviews set visible = false where id = '…';`
+to hide, or `delete from public.reviews where id = '…';` to remove. Only for inappropriate language;
+a low-star review is kept.
+
+**Decision (owner, 2026-11-09, unchanged):**
 - Reviews are **login-gated**: only a logged-in student can write one (a guest sees a login wall →
   `/login/?next=/write-a-review/`). Reason the owner gave: only serious, real students review, they
   stay authentic, and there is nothing to approve by hand.
@@ -27,7 +48,7 @@ directly, without re-reading the chat.
 anyone can create a free account in seconds — login lowers spam but is not a hard wall. The
 one-review-per-user limit and easy removal are the real safety net until Confirm email is ON.
 
-**What to build (not yet done):**
+**How it was built (all done on the branch; file paths for reference):**
 1. **Supabase:** new `public.reviews` table (`id`, `user_id default auth.uid()`, `name`, `role`,
    `heading`, `stars`, `body`, `created_at`, `visible boolean default true`). RLS: INSERT authenticated
    with `user_id = auth.uid()` and one row per user; SELECT public only where `visible = true` (anon
@@ -53,7 +74,8 @@ one-review-per-user limit and easy removal are the real safety net until Confirm
 9. Build clean + link check + browser test (guest wall, logged-in submit, auto-live on home,
    one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
 
-**Status: not built. Awaiting the owner's go-ahead to implement.**
+**Status: built on the branch and tested; the Supabase table is already live. Awaiting the owner's
+word to merge the site code to `main` (rule 5).**
 
 ## UP PGT Mock Test 7 — login CBT paper (2026-11-09)
 

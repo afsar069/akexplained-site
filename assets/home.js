@@ -262,9 +262,9 @@
   ];
 
   /* ---------- Student reviews ----------
-     Reviews assets/reviews.json se aate hain, taaki Pages CMS se approve
-     karke publish kiye ja sakein. Code chhoone ki zarurat nahi.
-     Har item: { name, role, stars, photo, text }
+     Reviews Supabase ki public.reviews table se aate hain (login-gated,
+     auto-live). loadReviews() visible rows padhta hai. Code chhoone ki
+     zarurat nahi. Har item: { name, role, stars, heading, text }
      4 ya zyada hone par carousel apne aap chalne lagta hai. */
   let reviews = [];
 
@@ -421,15 +421,15 @@
 
     if (!reviews.length) {
       track.classList.add('empty');
-      // Reviews login ke saath chalu honge. Tab tak Coming soon.
+      // Abhi koi review nahi — pehla review dene ka invite.
       track.innerHTML =
         '<div class="rvcard placeholder">' +
         '<img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60">' +
-        '<span class="soonbadge">Coming soon</span>' +
-        '<p class="txt">Student reviews will appear here once accounts are ready.</p>' +
+        '<p class="txt">Be the first student to share your experience.</p>' +
+        '<a class="btn gold" href="/write-a-review/">Write a review &rarr;</a>' +
         '</div>' +
-        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Coming soon</p></div>' +
-        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Coming soon</p></div>';
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Your review could be here.</p></div>' +
+        '<div class="rvcard placeholder dim"><img class="face" src="/assets/avatar-placeholder.webp" alt="" width="60" height="60"><p class="txt">Your review could be here.</p></div>';
       return;
     }
 
@@ -487,10 +487,19 @@
   }
 
   function loadReviews() {
-    return fetch('/assets/reviews.json', { cache: 'no-cache' })
+    // Reviews ab Supabase ki public.reviews table se aate hain (login-gated, auto-live).
+    // Anon publishable key se sirf visible rows padhte hain (RLS). Key na ho ya network
+    // fail ho to khaali reh jaata hai aur "Be the first" invite dikhta hai.
+    var cfg = window.AK_SUPABASE || {};
+    if (!cfg.url || !cfg.publishableKey) return Promise.resolve();
+    var url = cfg.url + '/rest/v1/reviews' +
+      '?select=name,role,stars,heading,text:body&visible=eq.true&order=created_at.desc';
+    return fetch(url, {
+      headers: { apikey: cfg.publishableKey, Authorization: 'Bearer ' + cfg.publishableKey }
+    })
       .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (d) { if (d && Array.isArray(d.items)) reviews = d.items; })
-      .catch(function () { /* file na mile to placeholder hi dikhega */ });
+      .then(function (d) { if (Array.isArray(d)) reviews = d; })
+      .catch(function () { /* network/off: invite placeholder hi dikhega */ });
   }
 
   document.addEventListener('DOMContentLoaded', function () {
