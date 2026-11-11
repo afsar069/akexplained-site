@@ -53,9 +53,7 @@ module.exports = function (eleventyConfig) {
   // Internal file hai — isse koi public page nahi banna chahiye.
   eleventyConfig.ignores.add("CLAUDE.md");
   eleventyConfig.ignores.add("AGENTS.md");   // dusre AI ke liye ek page ka note — site ka page nahi
-  // Review system login ke saath chalu hoga. Tab tak ye page build nahi hota —
-  // file repo me padi hai, chalu karne ke liye bas ye line hata dein.
-  eleventyConfig.ignores.add("write-a-review/**");
+  // Review system ab chalu hai (login-gated, auto-live). /write-a-review/ build hota hai.
   // tools/ me skill aur checker hain (maintainers ke liye) — site ka hissa nahi.
   eleventyConfig.ignores.add("tools/**");
   // docs/ me maintainers ke liye notes hain (DB notes, plans) — koi public page nahi banna chahiye.

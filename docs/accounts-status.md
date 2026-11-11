@@ -4,8 +4,123 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-09 (UP PGT Mock Test 8 added for logged-in students.)_
+_Last updated: 2026-11-11 (Reviews + ready-made avatars LIVE on main; owner's avatar art, graduation-cap default.)_
 
+## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
+
+The owner chose ready-made avatars (not photo uploads) so there is no storage and no image
+moderation. A student picks one of 10 character avatars; the choice shows on their review.
+**The default is a neutral graduation cap** (`assets/avatars/default.svg`) — everyone who does not
+choose shows this, stored as `avatar_id = null` (owner, 2026-11-11: "a9 tumhara graduate cap, usko
+default").
+
+- **Avatars = the owner's own art:** 10 character SVGs supplied by the owner (AK-Explained-Avatars.zip),
+  installed as `assets/avatars/a1.svg`..`a10.svg` in the preview's reading order:
+  a1 Male Student, a2 Male Class Clown, a3 Male Macho Man, a4 Male Scientist, a5 Male Professor,
+  a6 Female Reader, a7 Female Teacher, a8 Female Scientist, a9 Female Professor, a10 Female Class Clown.
+- **Default avatar:** `assets/avatars/default.svg` — a gold tile with a white graduation cap,
+  gender-neutral. Shown wherever `avatar_id` is null. To change the default, replace that one file.
+- **Shared helper `assets/avatars.js`** (`window.akAvatars`: `ids`, `defaultUrl`, `isValid`, `url`
+  (null/invalid → default.svg), `buildPicker`). The picker's first tile is the default (graduation
+  cap, `data-av=""`), then the 10 characters; picking it stores null. No uploads, no Supabase Storage
+  (0 buckets), nothing to moderate.
+- **Home section:** the "What Our Students Say" heading and intro are centred (`#reviews .sechead`
+  rules in `site.css`); the carousel auto-advances one card every 7 seconds (`home.js`), only when
+  there are more reviews than fit.
+- **Where it is chosen (owner's three places):**
+  1. **New user, at signup** — the "Choose your path" screen (`#pathAvatars` in `login/index.html`,
+     built in `assets/login.js` `buildPath`) now has a "Choose your picture" picker; the choice is
+     saved to `profiles.avatar_id` in `commit()` (both Save and Skip). The default (graduation cap) tile is pre-selected.
+  2. **Later, on the profile** — `/account/` "Your picture" card (`assets/account.js` `loadAvatar`)
+     saves `profiles.avatar_id`.
+  3. **On the review form** — `/write-a-review/` shows the picker (prefilled from the profile); the
+     choice is snapshotted onto the review at submit and written back to the profile. A non-chooser's
+     review stores null, so the graduation-cap default shows.
+- **Storage:** `profiles.avatar_id` (existing) + `public.reviews.avatar_id` (migration
+  `20261111130000_reviews_add_avatar_id.sql`; applied live; check `^a[0-9]{1,2}$`). The home carousel
+  reads `avatar_id` and shows the chosen avatar, else the graduation-cap default.
+- **Privacy:** `/privacy/` says a chosen ready-made avatar (never an uploaded photo) may be stored and
+  shown.
+- **Tested:** ALTER on throwaway local Postgres (valid/null accepted, junk rejected, idempotent).
+  Build clean (246 files); link check clean. Playwright: 14/14 (picker = default tile + 10,
+  url(null)→default.svg, home shows the cap for a null avatar, centred heading, review form
+  default-submits null and pick-a3 submits a3, login signup step renders the picker with the default
+  tile selected) plus the 15 earlier review checks.
+- **Not done (easy follow-ups if wanted):** show the avatar in the header next to the name and on
+  `/dashboard/`. The review keeps the avatar snapshotted at submit (changing the profile avatar later
+  does not change an already-posted review, because a student has no client UPDATE on reviews).
+
+
+
+## Student Reviews — login-gated, auto-live (BUILT on the branch, 2026-11-11)
+
+Built on the feature branch and tested; **live table is in Supabase already** (the migration was
+applied via the connector), and the site code is **live on `main`** (owner said "live kar do", 2026-11-11).
+
+**What is live now vs. on the branch:**
+- **Supabase (live):** `public.reviews` table + RLS created on the project via `apply_migration`
+  (migration `20261111120000_add_reviews.sql`). Read-back confirmed: RLS on; `anon` has SELECT (visible
+  rows only, by policy) and no INSERT; `authenticated` has INSERT, no UPDATE/DELETE; policies
+  `reviews_insert_own`, `reviews_own_read`, `reviews_public_read`; 0 rows. Security advisors show only
+  the two pre-existing warnings (leaderboard function, leaked-password) — no new finding.
+- **Site code (branch, not `main`):** `/write-a-review/` turned on (ignore line removed); login-gated
+  form writing to Supabase (`assets/review-form.js`); home carousel reads visible rows from Supabase
+  (`assets/home.js`), empty state is a "Be the first" invite + link; home section lede + "Write a
+  review" button; `/privacy/` updated; wording changed from "approved before shown" to auto-live; the
+  old `assets/reviews.json` + Pages CMS "Student Reviews" collection retired.
+- **Tested:** migration on a throwaway local Postgres with auth shims (insert-own ok, second review
+  blocked by the one-per-user unique, cross-user insert refused by RLS, anon sees only visible, hide
+  works, clients cannot update/delete, idempotent). `npx @11ty/eleventy` builds clean (246 files);
+  internal link check clean (only pre-existing runtime-template placeholders remain). Playwright (Supabase
+  mocked): 15/15 — guest gate, home renders reviews, empty invite, logged-in submit → live, name
+  prefill, insert payload, already-reviewed state, duplicate (23505) handled.
+
+**To remove a review (owner side only):** `update public.reviews set visible = false where id = '…';`
+to hide, or `delete from public.reviews where id = '…';` to remove. Only for inappropriate language;
+a low-star review is kept.
+
+**Decision (owner, 2026-11-09, unchanged):**
+- Reviews are **login-gated**: only a logged-in student can write one (a guest sees a login wall →
+  `/login/?next=/write-a-review/`). Reason the owner gave: only serious, real students review, they
+  stay authentic, and there is nothing to approve by hand.
+- **Auto-live**: a submitted review appears on the site immediately. **No per-review approval step** —
+  the owner does not want to open Pages CMS for each review.
+- **Moderation by exception only**: the owner removes a review, or asks Claude to remove it via the
+  Supabase connector. A **low-star review is NOT a reason to remove** — those are kept. **Delete only
+  when a review uses inappropriate language.**
+- **One review per student** (anti-spam).
+
+**Honest caveat to carry into the build:** "Confirm email" is still OFF (no SMTP yet, rule 13), so
+anyone can create a free account in seconds — login lowers spam but is not a hard wall. The
+one-review-per-user limit and easy removal are the real safety net until Confirm email is ON.
+
+**How it was built (all done on the branch; file paths for reference):**
+1. **Supabase:** new `public.reviews` table (`id`, `user_id default auth.uid()`, `name`, `role`,
+   `heading`, `stars`, `body`, `created_at`, `visible boolean default true`). RLS: INSERT authenticated
+   with `user_id = auth.uid()` and one row per user; SELECT public only where `visible = true` (anon
+   reads visible rows) plus a user's own rows; UPDATE/DELETE owner-only (hide/remove). Migration in
+   `supabase/migrations/`, applied via the connector (rule 9), security advisors kept clean (rule 14).
+2. **Enable the page:** remove the `write-a-review/**` ignore line in `eleventy.config.js`.
+3. **`/write-a-review/`:** gate it like the CBT login flow — a guest sees "Log in to write a review";
+   a logged-in student sees the form with the name prefilled from the profile; submit writes a row via
+   the vendored supabase-js. It must wait for `window.akAuth` (as `cbt.js` does).
+4. **Home carousel:** `assets/home.js` `loadReviews()` reads **visible reviews from Supabase** (the
+   publishable key), not `assets/reviews.json`. The empty state becomes "Be the first to share your
+   experience" + a link to `/write-a-review/` (not "Coming soon").
+5. Keep the shared footer; simple English only (rule 1); **no seeded or fake reviews** (rule 2).
+6. **Fix the wording that promises manual approval** so it matches auto-live: the `/write-a-review/`
+   page's "He reads and approves it … only then does it appear" note, and any matching About-page line.
+   New sense: the review appears once the student posts it, and the owner may remove any that break the
+   rules.
+7. **Privacy/Terms (rule 10):** state that a logged-in review stores the student's name (shown
+   publicly), role, stars and review text, tied to their account, in Supabase — in the same commit.
+8. **Old path to decide:** `assets/reviews.json` + the Pages CMS "Student Reviews" collection +
+   `assets/review-form.js` (web3forms/WhatsApp). Likely retire, or keep as a manual override; the owner
+   has not said.
+9. Build clean + link check + browser test (guest wall, logged-in submit, auto-live on home,
+   one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
+
+**Status: LIVE on `main` (merged 2026-11-11). Reviews + ready-made avatars + graduation-cap default + centred heading + 7s carousel are all published to akexplained.com.**
 ## UP PGT Mock Test 8 — login CBT paper (2026-11-09)
 
 - The owner supplied `PGT_batch_8.json` with 90 verified questions for Test 8, available only after login. The private paper preserves every question object and adds the same CBT metadata as Tests 6–7. It is stored in `public.mcq_papers` with `set_id = up-pgt-mock-test-8`, `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 8`, and visible level name “Full paper.” No question file or question-bearing SQL is in this public repository. The owner should keep the uploaded copy.

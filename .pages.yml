@@ -96,38 +96,8 @@ content:
       - eleventy.config.js
       - eleventy.article.js
 
-  - name: reviews
-    label: Student Reviews (publish after approval)
-    type: file
-    path: assets/reviews.json
-    format: json
-    fields:
-      - name: items
-        label: Published reviews
-        type: object
-        list: true
-        fields:
-          - name: name
-            label: Student's name
-            type: string
-            required: true
-          - name: role
-            label: 'Who they are, for example "NET Aspirant"'
-            type: string
-          - name: heading
-            label: Heading (one line from the review)
-            type: string
-          - name: stars
-            label: Stars (1 to 5)
-            type: number
-            default: 5
-          - name: photo
-            label: Photo (leave empty to use the default avatar)
-            type: image
-          - name: text
-            label: Review
-            type: text
-            required: true
+  # Student reviews moved to the Supabase public.reviews table (login-gated, auto-live, 2026-11-11).
+  # Students post them at /write-a-review/; there is no CMS collection to edit any more.
 
   - name: redirects
     label: Redirects (_redirects)

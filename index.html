@@ -322,20 +322,21 @@
 </section>
 
 <!-- ====== STUDENTS SAY ======
-     Reviews assets/home.js ke `reviews` array se aate hain.
-     Array khaali hai to "Be the first one to review" placeholder dikhta hai.
-     Review add karne ke liye bas array me ek object daal dijiye. -->
+     Reviews Supabase ki public.reviews table se aate hain (home.js loadReviews).
+     Koi review na ho to "Be the first" invite placeholder dikhta hai. Review
+     likhne ke liye student /write-a-review/ par login karke bhejte hain. -->
 <section id="reviews">
   <div class="wrap">
     <div class="sechead">
       <h2>What Our Students Say</h2>
     </div>
-    <p class="seclede">Reviews open when student accounts go live. Until then, you can always send a note on WhatsApp.</p>
+    <p class="seclede">These reviews are from students with a free account. Log in and share how the notes and quizzes have helped you.</p>
     <div class="reviewer">
       <button class="rvbtn prev" type="button" aria-label="Previous reviews" hidden>&#8249;</button>
       <div class="rvtrack" id="reviewTrack"></div>
       <button class="rvbtn next" type="button" aria-label="Next reviews" hidden>&#8250;</button>
     </div>
+    <p style="text-align:center;margin-top:22px"><a class="btn gold" href="/write-a-review/">Write a review &rarr;</a></p>
   </div>
 </section>
 
@@ -403,6 +404,7 @@
 </footer>
 
 <script src="/assets/nav.js" defer></script>
+<script src="/assets/avatars.js" defer></script>
 <script src="/assets/home.js" defer></script>
 </body>
 </html>

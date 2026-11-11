@@ -37,6 +37,7 @@
         body.hidden = false;
         var user = session.user;
         loadName(client, auth, user);
+        loadAvatar(client, user);
         loadExams(client, user);
         wireLogout(client);
       });
@@ -76,6 +77,30 @@
             box.hidden = false;
           });
       });
+    }
+
+    function loadAvatar(client, user) {
+      var grid = document.getElementById('avatarGrid');
+      var saved = document.getElementById('avatarSaved');
+      if (!grid || !window.akAvatars) return;
+
+      function paint(current) {
+        window.akAvatars.buildPicker(grid, current, function (id) {
+          // '' = default (graduation cap) -> null store karo; warna character id.
+          client.from('profiles').update({ avatar_id: id || null }).eq('id', user.id)
+            .then(function (res) {
+              if (res.error) return;
+              if (saved) {
+                saved.hidden = false;
+                setTimeout(function () { saved.hidden = true; }, 2000);
+              }
+            }, function () { /* ignore */ });
+        });
+      }
+
+      client.from('profiles').select('avatar_id').eq('id', user.id).maybeSingle()
+        .then(function (res) { paint((res.data && res.data.avatar_id) || ''); },
+              function () { paint(''); });
     }
 
     function loadExams(client, user) {

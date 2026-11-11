@@ -126,6 +126,13 @@
     <p>You can choose more than one. The first one you pick becomes your main path. You can change this later.</p>
     <div class="formerror" role="alert" hidden></div>
     <div id="pathGroups" class="pathgroups"><p class="small">Loading your options…</p></div>
+
+    <section class="pathgroup" aria-labelledby="pathAvatarsLabel">
+      <h3 id="pathAvatarsLabel">Choose your picture</h3>
+      <p class="small">Pick a picture for your profile. It shows on your reviews. You can change it later.</p>
+      <div id="pathAvatars" class="avgrid" role="group" aria-labelledby="pathAvatarsLabel"></div>
+    </section>
+
     <div class="pathactions">
       <button class="btn" id="pathSave" type="button">Save and continue</button>
       <button class="btn alt" id="pathSkip" type="button">Skip for now</button>
@@ -152,6 +159,7 @@
 <script src="/assets/supabase-config.js" defer></script>
 <script src="/assets/auth.js" defer></script>
 <script src="/assets/track.js" defer></script>
+<script src="/assets/avatars.js" defer></script>
 <script src="/assets/login.js" defer></script>
 </body>
 </html>
