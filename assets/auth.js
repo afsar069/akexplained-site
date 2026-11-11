@@ -49,6 +49,19 @@
     try { return localStorage.getItem('ak:name') || ''; } catch (e) { return ''; }
   }
 
+  // Which ready-made avatar the person picked ('a1'..'a10'); empty = default (graduation cap).
+  function cacheAvatar(id) {
+    try { if (id) localStorage.setItem('ak:avatar', id); else localStorage.removeItem('ak:avatar'); }
+    catch (e) { /* private mode: ignore */ }
+  }
+  function cachedAvatar() {
+    try { return localStorage.getItem('ak:avatar') || ''; } catch (e) { return ''; }
+  }
+  // Self-contained so the header avatar works on every page without avatars.js.
+  function avatarUrl(id) {
+    return /^a([1-9]|10)$/.test(id || '') ? '/assets/avatars/' + id + '.svg' : '/assets/avatars/default.svg';
+  }
+
   // A readable name from whatever we have: profile display name, the name given
   // at signup, or the part of the email before the @.
   function nameFrom(user, profileName) {
@@ -61,7 +74,7 @@
   }
 
   // Update every header control marked data-auth-link.
-  function paintHeader(loggedIn, name) {
+  function paintHeader(loggedIn, name, avatar) {
     var links = document.querySelectorAll('[data-auth-link]');
     for (var i = 0; i < links.length; i++) {
       var a = links[i];
@@ -76,6 +89,12 @@
         a.setAttribute('data-state', 'out');
       }
     }
+    // Avatar thumbnails in the header (marked data-auth-avatar): shown only when logged in.
+    var avs = document.querySelectorAll('[data-auth-avatar]');
+    for (var m = 0; m < avs.length; m++) {
+      if (loggedIn) { avs[m].setAttribute('src', avatarUrl(avatar)); avs[m].hidden = false; }
+      else { avs[m].hidden = true; avs[m].removeAttribute('src'); }
+    }
     // Menu items only for logged-in people (for example "My Dashboard"): shown or hidden with the login state.
     var only = document.querySelectorAll('[data-auth-only]');
     for (var j = 0; j < only.length; j++) only[j].hidden = !loggedIn;
@@ -86,40 +105,44 @@
 
   // Paint from the cache first (no flicker), then correct from the network.
   var cached = cachedName();
-  paintHeader(!!cached, cached || 'Login');
+  paintHeader(!!cached, cached || 'Login', cachedAvatar());
 
   if (!configured) {
     // Not wired up yet: make sure the header reads "Login" and stop here.
-    cacheName('');
-    paintHeader(false, 'Login');
-    window.akAuth = { ready: false, configured: false };
+    cacheName(''); cacheAvatar('');
+    paintHeader(false, 'Login', '');
+    window.akAuth = { ready: false, configured: false, avatarUrl: avatarUrl };
     return;
   }
 
   var client = window.supabase.createClient(cfg.url, cfg.publishableKey);
 
-  // Look up the profile row's display name (own row only, by RLS).
-  function fetchProfileName(userId) {
-    return client.from('profiles').select('display_name').eq('id', userId).maybeSingle()
-      .then(function (res) { return (res.data && res.data.display_name) || ''; })
-      .catch(function () { return ''; });
+  // Look up the profile row's display name and chosen avatar (own row only, by RLS).
+  function fetchProfile(userId) {
+    return client.from('profiles').select('display_name, avatar_id').eq('id', userId).maybeSingle()
+      .then(function (res) {
+        return { name: (res.data && res.data.display_name) || '', avatar: (res.data && res.data.avatar_id) || '' };
+      })
+      .catch(function () { return { name: '', avatar: '' }; });
   }
 
   function refresh(session) {
     if (session && session.user) {
       var user = session.user;
-      // Show something at once, then refine with the profile name.
+      // Show something at once (cached avatar too), then refine from the profile.
       var quick = nameFrom(user, '');
       cacheName(quick);
-      paintHeader(true, quick);
-      fetchProfileName(user.id).then(function (pn) {
-        var name = nameFrom(user, pn);
+      paintHeader(true, quick, cachedAvatar());
+      fetchProfile(user.id).then(function (p) {
+        var name = nameFrom(user, p.name);
         cacheName(name);
-        paintHeader(true, name);
+        cacheAvatar(p.avatar);
+        paintHeader(true, name, p.avatar);
       });
     } else {
       cacheName('');
-      paintHeader(false, 'Login');
+      cacheAvatar('');
+      paintHeader(false, 'Login', '');
     }
   }
 
@@ -140,6 +163,7 @@
     onRecovery: onRecovery,
     nameFrom: nameFrom,
     cacheName: cacheName,
+    avatarUrl: avatarUrl,
     refreshHeader: refresh,
     session: function () { return client.auth.getSession().then(function (r) { return r.data.session; }); }
   };

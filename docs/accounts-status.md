@@ -48,9 +48,16 @@ default").
   url(null)→default.svg, home shows the cap for a null avatar, centred heading, review form
   default-submits null and pick-a3 submits a3, login signup step renders the picker with the default
   tile selected) plus the 15 earlier review checks.
-- **Not done (easy follow-ups if wanted):** show the avatar in the header next to the name and on
-  `/dashboard/`. The review keeps the avatar snapshotted at submit (changing the profile avatar later
-  does not change an already-posted review, because a student has no client UPDATE on reviews).
+- **Header + dashboard avatar (done, 2026-11-11):** the avatar shows next to the name in the header
+  auth control (desktop side-nav `#navAuthLink` — the person icon is hidden when logged in; mobile
+  topbar `.topauth`) and on `/dashboard/` (the top-bar profile button `#dashUser` and the hero
+  greeting `.dashhero-ava`). `auth.js` fetches `avatar_id` with the name, caches it (`ak:avatar`),
+  exposes `window.akAuth.avatarUrl(id)`, and paints every `[data-auth-avatar]` img; `dashboard.js`
+  uses the same helper. Note: a global `img{display:block}` overrides the `hidden` attribute, so the
+  avatar imgs are hidden with an explicit `.topauth-av[hidden],.navauth-av[hidden]{display:none}`.
+- **Still open (easy follow-up if wanted):** the review keeps the avatar snapshotted at submit
+  (changing the profile avatar later does not change an already-posted review, because a student has
+  no client UPDATE on reviews).
 
 
 
