@@ -4,7 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+_Last updated: 2026-11-11 (UP Assistant Professor Paper 2 Mock Test 2 added to the feature branch; Mock-test start screen, State PSC, reviews and avatars follow below.)_
+
+## UP Assistant Professor, Paper 2 Mock Test 2 — login CBT paper (2026-11-11)
+
+- The owner supplied `up_ap_mock_test_set_2 (1).json` for the existing Paper 2 Mock Tests page and chose the same access as Mock Test 1: login-only. The private `public.mcq_papers` row `up-ap-p2-mock-test-2` has `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 2`, visible level name "Full paper", and 100 questions. No question file or question-bearing SQL is in the public repository; the owner should keep the uploaded copy.
+- The supplied question ids were kept. `correct_option_id` was added from the matching answer index; duplicate `answer`, `answer_index`, `answer_text` and empty `tags` fields were removed. The other supplied question fields were kept. Structure checks found 100 distinct ids and stems, four distinct options per question, matching answer letters/indexes/text, valid topic tags, and valid period tags where supplied. As in Test 1, 23 questions have no period tag in the supplied file and none was invented. There were no exact stem or id collisions with Test 1 or public question files. The file's `source_ref` values name study notes that were not supplied here, so factual answers were not independently checked.
+- The database row was read back and its complete JSON body matched the prepared private source exactly. The feature branch adds the second hub card, login return link, test route, review route and sitemap entry. These use the same CBT engine and start, timing, scoring and review functions as Test 1.
+- Publication status: source changes are on the feature branch; merge to `main` and live Cloudflare deployment are pending.
 
 ## Mock test — reader picks questions and time (BUILT on the branch, 2026-11-11)
 
