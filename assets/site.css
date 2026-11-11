@@ -3170,6 +3170,21 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 .acctcard h2{font-family:var(--serif);color:var(--ink);font-size:1.25rem;margin:0}
 .acctcard-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+/* Delete account: red, below Log out */
+.btn[hidden]{display:none}
+.btn.danger{background:#B3261E;border-color:#B3261E;color:#fff}
+.btn.danger:hover:not(:disabled){background:#8C1D18;border-color:#8C1D18;color:#fff;
+  box-shadow:0 14px 26px -8px rgba(179,38,30,.55)}
+.btn.danger:disabled{opacity:.5;cursor:not-allowed;transform:none;box-shadow:none}
+.btn.alt:disabled{opacity:.6;cursor:not-allowed}
+.acctdanger{border-color:#E6B8B4;border-top:3px solid #B3261E}
+.acctdanger h2{color:#8C1D18}
+.acctdanger .small{margin:6px 0 14px}
+.delpanel{margin-top:4px}
+.delwarn{margin:0 0 8px;color:var(--ink)}
+.dellist{margin:0 0 16px;padding-left:20px;color:var(--ink)}
+.dellist li{margin:3px 0}
+.delactions{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}
 .nameform{display:flex;flex-wrap:wrap;align-items:flex-end;gap:12px;margin-top:14px}
 .nameform .field{margin:0;flex:1 1 240px}
 .nameform .formerror{flex-basis:100%}
