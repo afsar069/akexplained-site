@@ -3531,9 +3531,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   width:90px;height:2px;background:linear-gradient(90deg,rgba(185,137,47,0),var(--gold),rgba(185,137,47,0));border-radius:2px}
 #reviews .seclede{text-align:center;max-width:62ch;margin-left:auto;margin-right:auto}
 
-/* Reviews: "Write a review" call-to-action band (owner, 2026-11-11) */
-.rvcta{max-width:640px;margin:34px auto 0;text-align:center;padding:26px 26px 28px;
+/* Reviews: thin "Write a review" strip — pen icon + button, no text (owner, 2026-11-11) */
+.rvcta{display:flex;align-items:center;justify-content:center;gap:12px;
+  width:max-content;max-width:94%;margin:30px auto 0;padding:7px 16px;
   background:linear-gradient(180deg,var(--cream),var(--paper));
-  border:1px solid var(--border);border-radius:18px;box-shadow:0 4px 18px rgba(22,48,74,.06)}
-.rvcta-ic{width:30px;height:30px;color:var(--gold);margin:0 auto 4px;display:block}
-.rvcta-text{margin:0 0 16px;font-family:var(--serif);color:var(--ink);font-size:1.06rem;line-height:1.5}
+  border:1px solid var(--border);border-radius:999px;box-shadow:0 3px 12px rgba(22,48,74,.06)}
+.rvcta-ic{width:22px;height:22px;color:var(--gold);flex:none}

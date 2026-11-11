@@ -27,8 +27,8 @@ default").
 - **Home section:** the "What Our Students Say" heading and intro are centred (`#reviews .sechead`
   rules in `site.css`); the intro is one line ("Log in and share how the notes and quizzes have helped
   you."); the carousel auto-advances one card every 7 seconds (`home.js`), only when there are more
-  reviews than fit. The "Write a review" button sits in a centred light band (`.rvcta` in `site.css`:
-  a soft cream panel with a quill icon and a one-line invite).
+  reviews than fit. The "Write a review" button sits in a centred thin pill strip (`.rvcta` in
+  `site.css`): a pen icon + the button, no text, hugging the button's size.
 - **Where it is chosen (owner's three places):**
   1. **New user, at signup** — the "Choose your path" screen (`#pathAvatars` in `login/index.html`,
      built in `assets/login.js` `buildPath`) now has a "Choose your picture" picker; the choice is
