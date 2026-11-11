@@ -436,7 +436,10 @@
     track.innerHTML = reviews.map(function (r) {
       const n = Math.max(1, Math.min(5, parseInt(r.stars, 10) || 5));
       const stars = '\u2605'.repeat(n) + '<span class="off">' + '\u2605'.repeat(5 - n) + '</span>';
-      const photo = /^\/[\w\-./]*$/.test(r.photo || '') ? r.photo : '/assets/avatar-placeholder.webp';
+      // Reviewer ki chuni hui ready-made avatar; na ho to default.
+      const photo = (window.akAvatars && window.akAvatars.isValid(r.avatar_id))
+        ? window.akAvatars.url(r.avatar_id)
+        : (/^\/[\w\-./]*$/.test(r.photo || '') ? r.photo : '/assets/avatar-placeholder.webp');
       return '<div class="rvcard">' +
              '<p class="stars">' + stars + '</p>' +
              (r.heading ? '<h3 class="rvhead">' + esc(r.heading) + '</h3>' : '') +
@@ -493,7 +496,7 @@
     var cfg = window.AK_SUPABASE || {};
     if (!cfg.url || !cfg.publishableKey) return Promise.resolve();
     var url = cfg.url + '/rest/v1/reviews' +
-      '?select=name,role,stars,heading,text:body&visible=eq.true&order=created_at.desc';
+      '?select=name,role,stars,heading,text:body,avatar_id&visible=eq.true&order=created_at.desc';
     return fetch(url, {
       headers: { apikey: cfg.publishableKey, Authorization: 'Bearer ' + cfg.publishableKey }
     })

@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/avatars.js" defer></script>
 <script src="/assets/review-form.js" defer></script>
 </head>
 <body>
@@ -138,6 +139,13 @@
           <span class="hint">One short line &mdash; such as &ldquo;The notes made my NET preparation easier&rdquo;</span>
         </label>
         <input type="text" id="rvHeading" name="heading" maxlength="90" required>
+      </div>
+
+      <div class="field">
+        <label id="avatarsLabel">Your picture
+          <span class="hint">Pick a picture to show with your review. You can skip this.</span>
+        </label>
+        <div id="rvAvatars" class="avgrid" role="group" aria-labelledby="avatarsLabel"></div>
       </div>
 
       <div class="field">

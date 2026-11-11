@@ -4,7 +4,35 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Student Reviews built — login-gated, auto-live; on the branch, awaiting merge.)_
+_Last updated: 2026-11-11 (Student Reviews + ready-made avatars built; on the branch, awaiting merge.)_
+
+## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
+
+The owner chose ready-made avatars (not photo uploads) so there is no storage and no image
+moderation. A student picks one of 10 avatars; the choice shows on their review.
+
+- **Avatars:** 10 self-made SVGs in `assets/avatars/a1.svg`..`a10.svg` (book, star, pen, leaf, sun,
+  moon, heart, flower, graduation cap, bookmark). Shared helper `assets/avatars.js`
+  (`window.akAvatars`: `ids`, `isValid`, `url`, `buildPicker`). No uploads, no Supabase Storage (0
+  buckets), nothing to moderate.
+- **Where it is chosen:** `/account/` has a "Your picture" card (`assets/account.js` `loadAvatar`)
+  that saves `profiles.avatar_id`. The `/write-a-review/` form also shows the picker (prefilled from
+  the profile); the choice is snapshotted onto the review at submit and also written back to the
+  profile.
+- **Storage:** `profiles.avatar_id` already existed (now used). `public.reviews.avatar_id` added
+  (migration `20261111130000_reviews_add_avatar_id.sql`; applied live; check constraint
+  `^a[0-9]{1,2}$`). The home carousel reads `avatar_id` and shows the avatar, else the default.
+- **Privacy:** `/privacy/` updated — the account section and the review section both say a chosen
+  ready-made avatar (never an uploaded photo) may be stored and shown.
+- **Tested:** ALTER on throwaway local Postgres (valid ids + null accepted, junk rejected,
+  idempotent). Build clean (246 files); link check clean. Playwright: 12/12 avatar checks (picker
+  renders/select/callback, url helper, home shows the avatar, form prefill + pick + submit sends
+  avatar_id + syncs to profile + done card shows it) plus the 15 earlier review checks still pass.
+- **Not done (easy follow-ups if wanted):** show the avatar in the header next to the name and on
+  `/dashboard/`. The review keeps the avatar snapshotted at submit (changing the profile avatar later
+  does not change an already-posted review, because a student has no client UPDATE on reviews).
+
+
 
 ## Student Reviews — login-gated, auto-live (BUILT on the branch, 2026-11-11)
 

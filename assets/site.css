@@ -3513,3 +3513,12 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashage-split{margin:2px 0 6px;font-size:.82rem;color:var(--mcq-ink-faint)}
 .dashage.is-now{border-color:var(--gold);box-shadow:0 2px 10px rgba(185,137,47,.14)}
 .dashage-foot{margin-top:9px;font-size:.84rem}
+
+/* Ready-made avatar picker (account page + review form) */
+.avgrid{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+.avpick{padding:0;border:2px solid var(--border);background:var(--paper);border-radius:14px;cursor:pointer;line-height:0;transition:border-color .15s,box-shadow .15s,transform .08s}
+.avpick img{display:block;width:52px;height:52px;border-radius:12px}
+.avpick:hover{border-color:var(--gold);transform:translateY(-1px)}
+.avpick.sel{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold)}
+.avpick:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+.avpick-none img{background:var(--cream)}

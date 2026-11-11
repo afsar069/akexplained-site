@@ -60,6 +60,14 @@
     // Shuru me sab chhupa; sirf "Loading…" dikhe.
     hide(form); hide(gate); hide(done); hide(how); show(checking);
 
+    var chosenAvatar = '';
+
+    function avatarFace(id) {
+      var src = (window.akAvatars && window.akAvatars.url) ? window.akAvatars.url(id) : '/assets/avatar-placeholder.webp';
+      return '<img class="face" src="' + src + '" alt="" width="52" height="52" ' +
+        'style="border-radius:12px;vertical-align:middle;margin-right:8px">';
+    }
+
     // Jab review post ho jaaye (ya pehle se ho), to yahi dikhega.
     function showDone(r, justPosted) {
       hide(form); hide(gate); hide(how); hide(checking);
@@ -68,7 +76,7 @@
         starLine(r.stars) + '</p>' +
         (r.heading ? '<p><strong>' + esc(r.heading) + '</strong></p>' : '') +
         '<p>“' + esc(r.body) + '”</p>' +
-        '<p class="muted">— ' + esc(r.name) + (r.role ? ', ' + esc(r.role) : '') + '</p>';
+        '<p class="muted">' + avatarFace(r.avatar_id) + esc(r.name) + (r.role ? ', ' + esc(r.role) : '') + '</p>';
       done.innerHTML =
         '<p><strong>' + (justPosted ? 'Thank you — your review is live.' : 'You have already shared a review.') + '</strong></p>' +
         '<p>' + (justPosted ? 'It now appears on the home page.' : 'This is the review shown on the site.') +
@@ -99,14 +107,23 @@
       }, function () { show(gate); });
     });
 
+    function buildAvatarPicker(current) {
+      var box = document.getElementById('rvAvatars');
+      if (box && window.akAvatars) {
+        window.akAvatars.buildPicker(box, current, function (id) { chosenAvatar = id || ''; });
+      }
+    }
+
     function prefillAndShow(client, user, a) {
-      // Naam profile se bhar do (badal bhi sakte hain).
-      client.from('profiles').select('display_name').eq('id', user.id).maybeSingle()
+      // Naam aur avatar profile se bhar do (badal bhi sakte hain).
+      client.from('profiles').select('display_name,avatar_id').eq('id', user.id).maybeSingle()
         .then(function (p) {
-          var pn = (p && p.data && p.data.display_name) || '';
-          var nm = a.nameFrom(user, pn);
+          var d = (p && p.data) || {};
+          var nm = a.nameFrom(user, d.display_name || '');
           if (nameInput && !nameInput.value && nm && nm !== 'My account') nameInput.value = nm;
-        }, function () { /* ignore */ });
+          chosenAvatar = (window.akAvatars && window.akAvatars.isValid(d.avatar_id)) ? d.avatar_id : '';
+          buildAvatarPicker(chosenAvatar);
+        }, function () { buildAvatarPicker(''); });
       wireSubmit(client, user);
       show(form); show(how);
     }
@@ -128,6 +145,9 @@
         if (!v.name || !v.body) return say('bad', 'Please fill in your name and your review.');
         if (v.body.length < 10) return say('bad', 'Please write a little more — at least 10 characters.');
 
+        var avatar = (window.akAvatars && window.akAvatars.isValid(chosenAvatar)) ? chosenAvatar : null;
+        v.avatar_id = avatar;
+
         btn.disabled = true;
         btn.textContent = 'Posting…';
 
@@ -137,7 +157,8 @@
           role: v.role || null,
           heading: v.heading || null,
           stars: v.stars,
-          body: v.body
+          body: v.body,
+          avatar_id: avatar
         }).then(function (res) {
           if (res && res.error) {
             var err = res.error;
@@ -147,6 +168,11 @@
               return;
             }
             throw new Error(err.message || 'insert failed');
+          }
+          // Avatar profile par bhi save kar do, taaki account/header me bhi dikhe (best-effort).
+          if (avatar) {
+            client.from('profiles').update({ avatar_id: avatar }).eq('id', user.id)
+              .then(function () {}, function () {});
           }
           showDone(v, true);
         }, function (err) {
