@@ -121,12 +121,17 @@ one-review-per-user limit and easy removal are the real safety net until Confirm
    one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
 
 **Status: LIVE on `main` (merged 2026-11-11). Reviews + ready-made avatars + graduation-cap default + centred heading + 7s carousel are all published to akexplained.com.**
+## UP PGT Mock Test 8 — login CBT paper (2026-11-09)
+
+- The owner supplied `PGT_batch_8.json` with 90 verified questions for Test 8, available only after login. The private paper preserves every question object and adds the same CBT metadata as Tests 6–7. It is stored in `public.mcq_papers` with `set_id = up-pgt-mock-test-8`, `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 8`, and visible level name “Full paper.” No question file or question-bearing SQL is in this public repository. The owner should keep the uploaded copy.
+- Structural checks found 90 distinct IDs and stems, valid options and answer indexes, valid topic tags, and no public ID/text collisions. The 43 literature questions carry valid period tags; the other 47 cover general grammar, linguistics, literary terms or criticism and have no period tag in the supplied file. No literary period was invented for them. Facts were not rechecked. Live read-back returned 90 questions and fingerprint `f8670dbf37e7ee80b96c54d07739dbbb`, matching the source paper. RLS and grants still restrict login rows to authenticated students, with no new security-advisor warning.
+- Guests see the login lock on the hub and the login prompt on the test; signed-in students see Start. Test and review use the existing gated CBT and result layout. Tests 1–5 remain public, Tests 6–8 are login-only, and Tests 9–60 remain Coming soon.
 
 ## UP PGT Mock Test 7 — login CBT paper (2026-11-09)
 
 - The owner supplied `PGT_batch_7.json` with 90 verified questions for Test 7, available only after login. Question objects were preserved in a private paper and loaded into `public.mcq_papers` as `set_id = up-pgt-mock-test-7`, `level = medium` (internal storage slot), `access = login`, `rev = 1`; the visible level name is “Full paper.” No question file or question-bearing SQL is in this public repository. The owner should retain the uploaded copy.
 - Structural checks found 90 distinct IDs and stems, valid options, answer indexes and topic/period tags, with no public ID collisions. Facts were not rechecked. Live read-back returned 90 questions and fingerprint `faebb4a9d31ff3578209d2f6a2414137`, matching the source paper.
-- The hub gives guests a lock that goes to login and back to Test 7; signed-in students see Start. The test and review use the existing gated CBT/result flow. Tests 1–5 remain public, Test 6 remains login-only, and Tests 8–60 remain Coming soon.
+- The hub gives guests a lock that goes to login and back to Test 7; signed-in students see Start. The test and review use the existing gated CBT/result flow. Tests 1–5 remain public, Tests 6 and 8 remain login-only, and Tests 9–60 remain Coming soon.
 
 ## UP PGT Mock Test actions — corrected (2026-11-09)
 
