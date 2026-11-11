@@ -246,6 +246,7 @@ and never ask the owner for it.**
   rule (the site is on Cloudflare Pages, whose `_redirects` cannot match a domain; the owner sets the rule in the
   Cloudflare dashboard). **That rule is live since 2026-11-03** (a 301 from `https://www.*` to `https://${1}`);
   the `auth.js` net stays as a backup. Details in `docs/accounts-status.md`.
+- **Delete my account** (`/account/`, 2026-11-11): the Edge Function `delete-account` (`supabase/functions/delete-account/`) removes the login user; everything else goes by `on delete cascade`, **so every new table with a `user_id` must reference `auth.users (id) on delete cascade`**. Details and the test record: `docs/accounts-status.md`. `/privacy/` and `/terms/` say students can delete their own account: keep them true.
 - **Keep `/privacy/` and `/terms/` true.** They state what is collected: with an account, name, email, a
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a

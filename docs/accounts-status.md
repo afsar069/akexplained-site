@@ -4,7 +4,16 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Dashboard avatars/links and PGT + UPSC CSE paths; Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+_Last updated: 2026-11-11 (Delete my account on /account/; Dashboard avatars/links and PGT + UPSC CSE paths; Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+
+## Delete my account (BUILT on the branch, function LIVE, 2026-11-11)
+
+- **What the student sees:** `/account/` has a red "Delete account" card under Log out. "Delete my account" opens an inline panel that lists what goes; the red "Delete everything" button stays disabled until the student types `DELETE`. On success the page shows "Your account and all your data have been deleted." and the browser's saved `ak:*` and `akd:*` keys are cleared. Code: `assets/account.js` (`wireDelete`, `done`), `account/index.html`, `.acctdanger` / `.btn.danger` in `assets/site.css`.
+- **How it deletes:** Supabase **Edge Function `delete-account`** (source `supabase/functions/delete-account/index.ts`, deployed with the connector, `verify_jwt = false` because the function checks the token itself with `auth.getUser`). It needs a valid login token **and** `{"confirm":"DELETE"}`, then hard-deletes only that token's user with the service role key that Supabase injects (it is never in the repo). CORS allows `https://akexplained.com` only, so a Cloudflare preview URL cannot call it. Changing the code means re-deploying with the connector (`deploy_edge_function`); the repo file is not auto-deployed.
+- **What goes:** every table that points at `auth.users` has `on delete cascade`: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `user_exams`, `notify_requests` and **`reviews` (the public review goes too: owner's choice)**. A new table with a `user_id` must also cascade, or this feature leaves its rows behind.
+- **Tested live (2026-11-11):** a throwaway user with one row in each of the 7 tables: no token, junk token, publishable key as token, wrong confirm word all refused; the real call returned 200; afterwards `auth.users` and all 7 tables had 0 rows for that id; the old token then got 401. The account page was tested in a browser with mocked Supabase (success, failure, `delete` in lower case stays disabled). Security advisors unchanged: the two known warnings only.
+- `/privacy/` and `/terms/` now say a student can delete their own account (privacy "Last updated" moved to 11 November 2026). Not claimed anywhere: how long Supabase keeps backups. Check Supabase's own pages before writing a number.
+- Unchanged: the Supabase connector cannot sign up a test student while email sending fails ("Error sending confirmation email"); the test user above was inserted by SQL and removed by the function itself.
 
 ## Dashboard: avatars on Top students, one-line rule, direct links; PGT and UPSC CSE paths open (2026-11-11, on the branch)
 
