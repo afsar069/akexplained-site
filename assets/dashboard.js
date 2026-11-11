@@ -185,11 +185,13 @@
     } catch (e) { return Promise.resolve(null); }
   }
 
-  // The person's display name (own profile row only, by RLS). '' if none.
-  function loadProfileName(client, uid) {
-    return client.from('profiles').select('display_name').eq('id', uid).maybeSingle()
-      .then(function (res) { return (res.data && res.data.display_name) || ''; })
-      .catch(function () { return ''; });
+  // The person's display name and chosen avatar (own profile row only, by RLS).
+  function loadProfile(client, uid) {
+    return client.from('profiles').select('display_name, avatar_id').eq('id', uid).maybeSingle()
+      .then(function (res) {
+        return { name: (res.data && res.data.display_name) || '', avatar: (res.data && res.data.avatar_id) || '' };
+      })
+      .catch(function () { return { name: '', avatar: '' }; });
   }
 
   /* ---------- working the numbers out ---------- */
@@ -935,6 +937,7 @@
         '<img src="/assets/dash-banner.webp" alt="' + esc(HERO_ALT) + '" width="1460" height="324">' +
       '</div>' +
       '<div class="dashhero-box">' +
+        '<img class="dashhero-ava" src="' + ((window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(ctx.avatar) : '/assets/avatars/default.svg') + '" alt="" width="74" height="74">' +
         '<p class="eyebrow">Your progress</p>' +
         '<h2 class="dashhero-title">' +
           '<span class="dashhero-hi">' + (fresh ? 'Welcome,' : 'Welcome back,') +
@@ -1081,12 +1084,12 @@
 
   // The profile button in the top bar. Until the name is known it keeps the
   // "Log in" wording the page ships with, so nothing is ever guessed.
-  function fillUserButton(name) {
+  function fillUserButton(name, avatar) {
     var el = document.getElementById('dashUser');
     if (!el || !name) return;
-    var first = String(name).trim().charAt(0).toUpperCase() || '?';
+    var ava = (window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(avatar) : '/assets/avatars/default.svg';
     el.setAttribute('href', '/account/');
-    el.innerHTML = '<span class="dashtop-ava" aria-hidden="true">' + esc(first) + '</span>' +
+    el.innerHTML = '<span class="dashtop-ava"><img src="' + ava + '" alt="" width="34" height="34"></span>' +
       '<span class="dashtop-who"><b>' + esc(name) + '</b><i>Student</i></span>' +
       '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" ' +
       'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
@@ -1101,12 +1104,17 @@
       now: new Date(), rows: [], truncated: false, stats: null,
       names: {}, namesError: false, exams: [], attemptsError: false,
       name: (auth && user && auth.nameFrom(user, '')) || '',  // quick name; refined by the profile below
-      board: null, syllabus: null, british: null, currentAge: '', runs: null
+      board: null, syllabus: null, british: null, currentAge: '', runs: null,
+      avatar: ''   // chosen avatar id; empty = default (graduation cap)
     };
 
-    fillUserButton(ctx.name);                               // the quick name, right away
-    var pName = loadProfileName(client, uid).then(function (pn) {
-      if (pn && auth && user) { ctx.name = auth.nameFrom(user, pn); fillUserButton(ctx.name); }
+    fillUserButton(ctx.name, ctx.avatar);                   // the quick name, right away
+    var pName = loadProfile(client, uid).then(function (p) {
+      if (auth && user) {
+        if (p.name) ctx.name = auth.nameFrom(user, p.name);
+        ctx.avatar = p.avatar || '';
+        fillUserButton(ctx.name, ctx.avatar);
+      }
     }, function () { /* keep the quick name */ });
 
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
