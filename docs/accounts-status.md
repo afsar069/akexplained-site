@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+_Last updated: 2026-11-11 (Dashboard avatars/links and PGT + UPSC CSE paths; Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+
+## Dashboard: avatars on Top students, one-line rule, direct links; PGT and UPSC CSE paths open (2026-11-11, on the branch)
+
+- **Choose your path** (`/login/?path=1`): `public.exams` rows `pgt` and `upsc-cse` are now `status = 'active'`, so they are pickable like UGC NET (the picker is data-driven; no JS change). Saving (or Skip) still goes to `/dashboard/` (unless a `?next=` is stored). Migration `20261111140100_open_pgt_and_upsc_cse_paths.sql`, applied live and read back. **The site has a PGT hub but no UPSC CSE page yet**, so the dashboard shows UPSC CSE as a plain label, not a link.
+- **Top students**: `public.leaderboard()` now returns `avatar` for each of the ten (`a1`..`a10`, else null = default cap; migration `20261111140000_leaderboard_add_avatar.sql`, tested on a scratch Postgres twice, applied live, grants unchanged, advisors show only the two known warnings). Cards were redesigned in `assets/site.css`/`assets/dashboard.js`: round avatar with a rank badge (gold/silver/bronze for 1-3), name, points, accuracy. The long note under the cards is now one short line ("Points = right answers × accuracy · each question counted once"), with "You are Nth of N" at its right end when you are outside the top ten. `/privacy/` now says the chosen picture is shown too.
+- **Your paths** (last block): each picked path is a link where a page exists (`PATH_PAGE` in `dashboard.js`), and a second row "Go straight to" links Reading (`/notes/`), MCQs (`/quizzes/mcq/`) and Quick MCQs (`/quizzes/daily/`).
 
 ## Mock test — reader picks questions and time (BUILT on the branch, 2026-11-11)
 
