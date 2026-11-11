@@ -149,7 +149,7 @@
         var out = [];
         rows.forEach(function (r) {
           var name = r.exams && r.exams.name;
-          if (name) out.push({ name: name, primary: !!r.is_primary });   // no name: skip, never show an id
+          if (name) out.push({ id: r.exam_id, name: name, primary: !!r.is_primary });   // no name: skip, never show an id
         });
         return out;
       });
@@ -781,24 +781,26 @@
       var shown = board.slice(0, BOARD_ROWS);
       var byPoints = shown.every(function (s) { return s.score != null; });   // false while the old database function is live
       var you = b.you || {};
-      var outside = you.eligible && you.rank && you.rank > shown.length
-        ? '<p class="small dashnote">You are ' + esc(ordinal(you.rank)) + ' of ' + fmt(b.total_ranked || you.rank) +
-          ' ranked students.</p>' : '';
-      // Up to ten cards, five to a line (fewer cards stretch across the line).
-      return '<ol class="dashlbrow" style="--lb-cols:' + Math.min(5, shown.length) + '">' + shown.map(function (s) {
-        return '<li class="dashlbcard' + (s.is_you ? ' is-you' : '') + (s.rank === 1 ? ' is-first' : '') + '">' +
-          '<b class="dashlbcard-rank">' + esc(ordinal(s.rank)) + '</b>' +
+      // Up to ten cards, five to a line (fewer cards stretch across the line). Each card: the student's
+      // picture with the rank on a small badge, then name, points, accuracy (owner, 2026-11-11).
+      var cards = '<ol class="dashlbrow" style="--lb-cols:' + Math.min(5, shown.length) + '">' + shown.map(function (s) {
+        var ava = (window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(s.avatar) : '/assets/avatars/default.svg';
+        return '<li class="dashlbcard' + (s.is_you ? ' is-you' : '') + (s.rank <= 3 ? ' is-top is-top' + s.rank : '') + '">' +
+          '<span class="dashlbcard-ava"><img src="' + esc(ava) + '" alt="" width="64" height="64" loading="lazy">' +
+          '<b class="dashlbcard-rank" aria-label="Rank ' + esc(String(s.rank)) + '">' + esc(String(s.rank)) + '</b></span>' +
           '<span class="dashlbcard-name">' + esc(s.is_you ? 'You' : s.name) + '</span>' +
           (s.score != null ? '<span class="dashlbcard-pts">' + esc(fmt(s.score)) + (s.score === 1 ? ' point' : ' points') + '</span>' : '') +
           '<em class="dashlbcard-acc">' + (s.accuracy == null ? 'No answers yet' : esc(String(s.accuracy)) + '% correct') + '</em></li>';
-      }).join('') + '</ol>' + outside +
-        '<p class="small dashnote">' + (byPoints
-          ? 'Ranked by points: the questions you got right, multiplied by your accuracy. ' +
-            'So more questions and better accuracy both lift you. Each question is counted once, by your latest answer. '
-          : 'Ranked by accuracy, each question counted once. ') +
-        (min <= 0 ? 'Everyone who has logged in is ranked. A student with no answers yet has 0 points and drops off once ten students are above them.'
-          : min === 1 ? 'Everyone who has answered a question is ranked.'
-          : 'You join after ' + fmt(min) + ' different questions.') + '</p>';
+      }).join('') + '</ol>';
+      // One short line under the cards, side by side with your own place when you are outside the top ten.
+      var rule = esc(byPoints ? 'Points = right answers × accuracy' : 'Ranked by accuracy') +
+        '<span class="dashlb-more"> · each question counted once' +
+        (min > 1 ? ' · you join after ' + esc(fmt(min)) + ' questions' : '') + '</span>';
+      var foot = '<div class="dashlb-foot"><span>' + rule + '</span>' +
+        (you.eligible && you.rank && you.rank > shown.length
+          ? '<b>You are ' + esc(ordinal(you.rank)) + ' of ' + fmt(b.total_ranked || you.rank) + '</b>' : '') +
+        '</div>';
+      return cards + foot;
     }
   });
 
@@ -883,20 +885,59 @@
     }
   });
 
-  // The last line of the page — the paths picked, as one thin strip
-  // (read-only here; they are changed on My Account).
+  // The last block of the page — the paths picked, each one a link where the site has a page for it,
+  // and under them direct links to the study tools (owner, 2026-11-11). Paths are changed on My Account.
+  // Only pages that exist are linked; a path with no page yet (UPSC CSE) is shown as a label, never a dead link.
+  var PATH_PAGE = {
+    'ugc-net': '/exams/net/', 'pgt': '/exams/pgt/', 'state-psc': '/exams/state-psc/',
+    'ccsu-ba': '/exams/ma-ba/', 'ccsu-ma': '/exams/ma-ba/', 'du-ba': '/exams/ma-ba/', 'du-ma': '/exams/ma-ba/',
+    'amu-ba': '/exams/ma-ba/', 'amu-ma': '/exams/ma-ba/', 'ignou-ba': '/exams/ma-ba/', 'ignou-ma': '/exams/ma-ba/',
+    'literature-journey': '/english-literature/'
+  };
+  var QUICK_LINKS = [
+    { href: '/notes/', label: 'Reading' },
+    { href: '/quizzes/mcq/', label: 'MCQs' },
+    { href: '/quizzes/daily/', label: 'Quick MCQs' },
+    { href: '/quizzes/mock-tests/', label: 'Mock Tests' },
+    { href: '/quizzes/pyq/', label: 'PYQs' },
+    { href: '/video-lessons/', label: 'Video Lessons' },
+    { href: '/english-literature/', label: 'English Literature' },
+    { href: '/download/', label: 'Download' }
+  ];
+  // Extra links that show only when that path is picked (both pages are live).
+  var PATH_LINKS = {
+    'pgt': [
+      { href: '/exams/pgt/up-pgt/mcqs/', label: 'PGT MCQs' },
+      { href: '/exams/pgt/up-pgt/mock-tests/', label: 'PGT Mock Tests' }
+    ]
+  };
+
   addSection({
     id: 'paths', order: 120, title: '', needs: '', bare: true,
     render: function (ctx) {
-      if (!ctx.exams.length) return '';
-      return '<div class="dashstrip">' +
-        '<span class="dashstrip-lbl">Your paths</span>' +
-        '<span class="dashstrip-items">' + ctx.exams.map(function (e) {
-          return '<span class="dashstrip-path">' + esc(e.name) +
-            (e.primary ? '<i>Main path</i>' : '') + '</span>';
+      var picked = ctx.exams || [];
+      var pathRow = picked.length
+        ? '<div class="dashstrip-row">' +
+            '<span class="dashstrip-lbl">Your paths</span>' +
+            '<span class="dashstrip-items">' + picked.map(function (e) {
+              var page = PATH_PAGE[e.id];
+              var tag = e.primary ? '<i>Main path</i>' : '';
+              return page
+                ? '<a class="dashstrip-pill" href="' + page + '">' + esc(e.name) + tag + '</a>'
+                : '<span class="dashstrip-pill is-plain">' + esc(e.name) + tag + '</span>';
+            }).join('') + '</span>' +
+            '<a class="dashstrip-link" href="/account/">Change on My Account</a>' +
+          '</div>'
+        : '';
+      var extra = [];
+      picked.forEach(function (e) { (PATH_LINKS[e.id] || []).forEach(function (l) { extra.push(l); }); });
+      var quickRow = '<div class="dashstrip-row">' +
+        '<span class="dashstrip-lbl">Go straight to</span>' +
+        '<span class="dashstrip-items">' + extra.concat(QUICK_LINKS).map(function (l) {
+          return '<a class="dashstrip-pill is-tool" href="' + l.href + '">' + esc(l.label) + '</a>';
         }).join('') + '</span>' +
-        '<a class="dashstrip-link" href="/account/">Change on My Account</a>' +
       '</div>';
+      return '<div class="dashstrip">' + pathRow + quickRow + '</div>';
     }
   });
 

@@ -3485,51 +3485,87 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .dashgoal .dashactions{margin-top:14px}
 
 /* Top students: up to ten cards, five to a line. The page sets --lb-cols to the
-   number of cards when there are fewer than five, so they still stretch across. */
+   number of cards when there are fewer than five, so they still stretch across.
+   Each card: the student's picture with the rank on a small badge, name, points, accuracy. */
 .dashlbrow{
   list-style:none;margin:4px 0 0;padding:0;max-width:none;
-  display:grid;grid-template-columns:repeat(var(--lb-cols,5),minmax(0,1fr));gap:12px;
+  display:grid;grid-template-columns:repeat(var(--lb-cols,5),minmax(0,1fr));gap:14px;
 }
 .dashlbcard{
-  display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;
-  padding:14px 10px;border:1px solid var(--card-line);border-radius:14px;background:var(--tint);
+  display:flex;flex-direction:column;align-items:center;gap:3px;text-align:center;
+  padding:18px 10px 14px;border:1px solid var(--card-line);border-radius:16px;
+  background:linear-gradient(180deg,var(--card-paper),var(--tint));
+}
+.dashlbcard-ava{position:relative;display:block;width:68px;height:68px;margin-bottom:8px}
+.dashlbcard-ava img{
+  display:block;width:68px;height:68px;border-radius:50%;object-fit:cover;
+  background:var(--card-paper);border:3px solid var(--card-paper);
+  box-shadow:0 0 0 2px var(--card-line);
 }
 .dashlbcard-rank{
-  font-family:var(--serif);font-weight:700;font-size:1.3rem;line-height:1;color:var(--teal-dark);
+  position:absolute;right:-6px;bottom:-4px;min-width:26px;height:26px;padding:0 6px;box-sizing:border-box;
+  display:flex;align-items:center;justify-content:center;border-radius:999px;
+  font-family:var(--serif);font-weight:700;font-size:.85rem;line-height:1;
+  color:#fff;background:var(--teal-dark);border:2px solid var(--card-paper);
 }
 .dashlbcard-name{font-weight:600;font-size:.95rem;color:var(--ink);min-width:0;overflow-wrap:anywhere}
-.dashlbcard-pts{font-weight:700;font-size:.9rem;color:var(--teal-dark)}
-.dashlbcard-acc{font-style:normal;font-size:.82rem;color:var(--mcq-ink-faint)}
-.dashlbcard.is-first{background:var(--cream);border-color:color-mix(in srgb,var(--gold) 45%,transparent)}
-.dashlbcard.is-first .dashlbcard-rank{color:var(--gold)}
+.dashlbcard-pts{font-weight:700;font-size:1.02rem;color:var(--teal-dark)}
+.dashlbcard-acc{font-style:normal;font-size:.8rem;color:var(--mcq-ink-faint)}
+.dashlbcard.is-top1{background:var(--cream);border-color:color-mix(in srgb,var(--gold) 55%,transparent)}
+.dashlbcard.is-top1 .dashlbcard-ava img{box-shadow:0 0 0 2px var(--gold)}
+.dashlbcard.is-top1 .dashlbcard-rank{background:var(--gold)}
+.dashlbcard.is-top2 .dashlbcard-ava img{box-shadow:0 0 0 2px #A8B1BA}
+.dashlbcard.is-top2 .dashlbcard-rank{background:#7F8A95}
+.dashlbcard.is-top3 .dashlbcard-ava img{box-shadow:0 0 0 2px #C58B5A}
+.dashlbcard.is-top3 .dashlbcard-rank{background:#A8683A}
 .dashlbcard.is-you{background:var(--teal-soft);border-color:var(--teal)}
 .dashlbcard.is-you .dashlbcard-name{color:var(--teal-dark)}
-@media (max-width:720px){
-  .dashlbrow{grid-template-columns:repeat(2,minmax(0,1fr))}
+/* The one-line rule under the cards (and your own place, when you are outside the top ten). */
+.dashlb-foot{
+  display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:4px 16px;
+  margin:14px 0 0;font-size:.84rem;color:var(--mcq-ink-faint);
+}
+.dashlb-foot b{color:var(--teal-dark);font-weight:700}
+@media (max-width:560px){.dashlb-more{display:none}}
+@media (max-width:900px){
+  .dashlbrow{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  .dashlbrow{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 }
 
-/* Your paths: one thin strip, the last line of the page. */
+/* Your paths: the paths picked, then direct links to the study tools, at the end of the page. */
 .dashstrip{
-  display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;
-  padding:11px 18px;margin:0 0 20px;
-  background:var(--card-paper);border:1px solid var(--card-line);border-radius:999px;
+  display:flex;flex-direction:column;gap:10px;
+  padding:14px 20px;margin:0 0 20px;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:18px;
 }
+.dashstrip-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px}
+.dashstrip-row + .dashstrip-row{padding-top:10px;border-top:1px solid var(--card-line)}
 .dashstrip-lbl{
+  flex:none;min-width:112px;
   font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);
 }
-.dashstrip-items{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;flex:1;min-width:0}
-.dashstrip-path{font-weight:600;font-size:.92rem;color:var(--ink);display:inline-flex;flex-wrap:wrap;align-items:center;gap:4px 7px}
-.dashstrip-path i{
-  font-style:normal;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+.dashstrip-items{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;flex:1;min-width:0}
+.dashstrip-pill{
+  display:inline-flex;align-items:center;gap:4px 8px;flex-wrap:wrap;
+  padding:6px 14px;border-radius:999px;font-weight:600;font-size:.9rem;line-height:1.2;
+  color:var(--ink);background:var(--tint);border:1px solid var(--card-line);text-decoration:none;
+}
+a.dashstrip-pill:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--teal-soft)}
+.dashstrip-pill.is-tool{color:var(--teal-dark);background:var(--teal-soft);border-color:color-mix(in srgb,var(--teal) 35%,transparent)}
+a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);color:#fff}
+.dashstrip-pill i{
+  font-style:normal;font-size:.66rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
   color:#fff;background:var(--teal);border-radius:999px;padding:2px 8px;
   white-space:nowrap;flex:none;      /* the badge never squeezes into two lines */
 }
 .dashstrip-link{font-size:.86rem;font-weight:600;white-space:nowrap}
-/* On a phone the strip stacks: the label, then each path on its own line, then the link.
-   (Side by side, the "Main path" badge was squeezed and touched the link.) */
+/* On a phone every row stacks: the label, then its links. */
 @media (max-width:560px){
-  .dashstrip{border-radius:16px;flex-direction:column;align-items:flex-start;gap:10px;padding:14px 16px}
-  .dashstrip-items{flex:none;width:100%;flex-direction:column;align-items:flex-start;gap:8px}
+  .dashstrip{padding:14px 16px}
+  .dashstrip-row{flex-direction:column;align-items:flex-start;gap:8px}
+  .dashstrip-items{flex:none;width:100%}
   .dashstrip-link{align-self:flex-start}
 }
 
