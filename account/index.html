@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>My Account | AK Explained</title>
-<meta name="description" content="Your AK Explained account: your name, the exams you picked, and log out.">
+<meta name="description" content="Your AK Explained account: your name, the exams you picked, log out, and delete your account.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
   <div class="wrap">
     <p class="eyebrow">Your account</p>
     <h1>My Account</h1>
-    <p class="lede">Your name, the paths you picked, and log out.</p>
+    <p class="lede">Your name, the paths you picked, log out, and delete your account.</p>
   </div>
 </section>
 
@@ -72,6 +72,31 @@
 
     <section class="acctcard">
       <button class="btn" id="logoutBtn" type="button">Log out</button>
+    </section>
+
+    <section class="acctcard acctdanger" aria-labelledby="delTitle">
+      <h2 id="delTitle">Delete account</h2>
+      <p class="small">This removes your account and everything saved with it. It cannot be undone.</p>
+      <button class="btn danger" id="deleteBtn" type="button" aria-expanded="false" aria-controls="deletePanel">Delete my account</button>
+
+      <div id="deletePanel" class="delpanel" hidden>
+        <p class="delwarn"><strong>This cannot be undone.</strong> These will be deleted for good:</p>
+        <ul class="dellist">
+          <li>Your name, email address and picture</li>
+          <li>The paths you picked</li>
+          <li>Your quiz answers, results and progress</li>
+          <li>Your review, if you wrote one</li>
+        </ul>
+        <div class="formerror" id="delError" role="alert" hidden></div>
+        <label class="field">
+          <span>Type DELETE to confirm</span>
+          <input id="delConfirm" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false">
+        </label>
+        <div class="delactions">
+          <button class="btn danger" id="delGo" type="button" disabled>Delete everything</button>
+          <button class="btn alt" id="delCancel" type="button">Keep my account</button>
+        </div>
+      </div>
     </section>
   </div>
 

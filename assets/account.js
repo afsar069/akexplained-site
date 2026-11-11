@@ -40,6 +40,7 @@
         loadAvatar(client, user);
         loadExams(client, user);
         wireLogout(client);
+        wireDelete(client, auth);
       });
     });
 
@@ -128,6 +129,79 @@
               '</li>';
           }).join('');
         });
+    }
+
+    // Account delete: browser sirf token bhejta hai; asli delete Edge Function `delete-account` karta hai
+    // (supabase/functions/delete-account). Baaki data cascade se apne-aap hat jaata hai.
+    function wireDelete(client, auth) {
+      var openBtn = document.getElementById('deleteBtn');
+      var panel   = document.getElementById('deletePanel');
+      var input   = document.getElementById('delConfirm');
+      var go      = document.getElementById('delGo');
+      var cancel  = document.getElementById('delCancel');
+      var box     = document.getElementById('delError');
+      if (!openBtn || !panel) return;
+
+      function close() {
+        panel.hidden = true; box.hidden = true; input.value = ''; go.disabled = true;
+        openBtn.hidden = false; openBtn.setAttribute('aria-expanded', 'false');
+        openBtn.focus({ preventScroll: true });
+      }
+      openBtn.addEventListener('click', function () {
+        panel.hidden = false; openBtn.hidden = true; openBtn.setAttribute('aria-expanded', 'true');
+        input.focus({ preventScroll: true });
+      });
+      cancel.addEventListener('click', close);
+      panel.addEventListener('keydown', function (e) { if (e.key === 'Escape') close(); });
+      input.addEventListener('input', function () {
+        go.disabled = input.value.trim() !== 'DELETE';
+      });
+
+      function fail(msg) {
+        box.textContent = msg; box.hidden = false;
+        go.disabled = input.value.trim() !== 'DELETE'; cancel.disabled = false; go.textContent = 'Delete everything';
+      }
+
+      go.addEventListener('click', function () {
+        if (input.value.trim() !== 'DELETE') return;
+        box.hidden = true; go.disabled = true; cancel.disabled = true; go.textContent = 'Deleting…';
+        var cfg = window.AK_SUPABASE || {};
+        client.auth.getSession().then(function (r) {
+          var token = r && r.data && r.data.session && r.data.session.access_token;
+          if (!token) { fail('Please log in again, then try once more.'); return; }
+          return fetch(cfg.url + '/functions/v1/delete-account', {
+            method: 'POST',
+            headers: { 'Authorization': 'Bearer ' + token, 'apikey': cfg.publishableKey, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ confirm: 'DELETE' })
+          }).then(function (res) {
+            if (!res.ok) { fail('We could not delete your account. Please try again in a moment.'); return; }
+            done(client);
+          });
+        }).catch(function () {
+          fail('We could not reach the server. Check your connection and try again.');
+        });
+      });
+    }
+
+    function done(client) {
+      // Account ab server par nahi hai; is browser ka saved data bhi saaf karo.
+      var finish = function () {
+        try {
+          var gone = [];
+          for (var i = 0; i < localStorage.length; i++) {
+            var k = localStorage.key(i);
+            if (k && (k.indexOf('ak:') === 0 || k.indexOf('akd:') === 0)) gone.push(k);
+          }
+          gone.forEach(function (k) { localStorage.removeItem(k); });
+        } catch (e) {}
+        document.getElementById('acctBody').hidden = true;
+        var notice = document.getElementById('acctNotice');
+        notice.hidden = false;
+        notice.innerHTML = 'Your account and all your data have been deleted. <a href="/">Go to the home page</a>.';
+        notice.setAttribute('tabindex', '-1');
+        notice.focus({ preventScroll: true });
+      };
+      client.auth.signOut({ scope: 'local' }).then(finish, finish);
     }
 
     function wireLogout(client) {

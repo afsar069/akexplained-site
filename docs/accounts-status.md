@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (UP Assistant Professor Paper 2 Mock Test 2 added to the feature branch; Mock-test start screen, State PSC, reviews and avatars follow below.)_
+_Last updated: 2026-11-11 (UP Assistant Professor Paper 2 Mock Test 2 added; account deletion, Dashboard, Mock-test start screen, State PSC, reviews and avatars follow below.)_
 
 ## UP Assistant Professor, Paper 2 Mock Test 2 — login CBT paper (2026-11-11)
 
@@ -12,6 +12,21 @@ _Last updated: 2026-11-11 (UP Assistant Professor Paper 2 Mock Test 2 added to t
 - The supplied question ids were kept. `correct_option_id` was added from the matching answer index; duplicate `answer`, `answer_index`, `answer_text` and empty `tags` fields were removed. The other supplied question fields were kept. Structure checks found 100 distinct ids and stems, four distinct options per question, matching answer letters/indexes/text, valid topic tags, and valid period tags where supplied. As in Test 1, 23 questions have no period tag in the supplied file and none was invented. There were no exact stem or id collisions with Test 1 or public question files. The file's `source_ref` values name study notes that were not supplied here, so factual answers were not independently checked.
 - The database row was read back and its complete JSON body matched the prepared private source exactly. The feature branch adds the second hub card, login return link, test route, review route and sitemap entry. These use the same CBT engine and start, timing, scoring and review functions as Test 1.
 - Publication status: source changes are on the feature branch; merge to `main` and live Cloudflare deployment are pending.
+
+## Delete my account (BUILT on the branch, function LIVE, 2026-11-11)
+
+- **What the student sees:** `/account/` has a red "Delete account" card under Log out. "Delete my account" opens an inline panel that lists what goes; the red "Delete everything" button stays disabled until the student types `DELETE`. On success the page shows "Your account and all your data have been deleted." and the browser's saved `ak:*` and `akd:*` keys are cleared. Code: `assets/account.js` (`wireDelete`, `done`), `account/index.html`, `.acctdanger` / `.btn.danger` in `assets/site.css`.
+- **How it deletes:** Supabase **Edge Function `delete-account`** (source `supabase/functions/delete-account/index.ts`, deployed with the connector, `verify_jwt = false` because the function checks the token itself with `auth.getUser`). It needs a valid login token **and** `{"confirm":"DELETE"}`, then hard-deletes only that token's user with the service role key that Supabase injects (it is never in the repo). CORS allows `https://akexplained.com` only, so a Cloudflare preview URL cannot call it. Changing the code means re-deploying with the connector (`deploy_edge_function`); the repo file is not auto-deployed.
+- **What goes:** every table that points at `auth.users` has `on delete cascade`: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `user_exams`, `notify_requests` and **`reviews` (the public review goes too: owner's choice)**. A new table with a `user_id` must also cascade, or this feature leaves its rows behind.
+- **Tested live (2026-11-11):** a throwaway user with one row in each of the 7 tables: no token, junk token, publishable key as token, wrong confirm word all refused; the real call returned 200; afterwards `auth.users` and all 7 tables had 0 rows for that id; the old token then got 401. The account page was tested in a browser with mocked Supabase (success, failure, `delete` in lower case stays disabled). Security advisors unchanged: the two known warnings only.
+- `/privacy/` and `/terms/` now say a student can delete their own account (privacy "Last updated" moved to 11 November 2026). Not claimed anywhere: how long Supabase keeps backups. Check Supabase's own pages before writing a number.
+- Signup is **not** broken: the "Error sending confirmation email" seen while testing came from using an `example.com` address, which Resend refuses (`550 Invalid 'to' field`). The test user above was inserted by SQL and removed by the function itself (see the testing tip in CLAUDE.md rule 14).
+
+## Dashboard: avatars on Top students, one-line rule, direct links; PGT and UPSC CSE paths open (2026-11-11, on the branch)
+
+- **Choose your path** (`/login/?path=1`): `public.exams` rows `pgt` and `upsc-cse` are now `status = 'active'`, so they are pickable like UGC NET (the picker is data-driven; no JS change). Saving (or Skip) still goes to `/dashboard/` (unless a `?next=` is stored). Migration `20261111140100_open_pgt_and_upsc_cse_paths.sql`, applied live and read back. **The site has a PGT hub but no UPSC CSE page yet**, so the dashboard shows UPSC CSE as a plain label, not a link.
+- **Top students**: `public.leaderboard()` now returns `avatar` for each of the ten (`a1`..`a10`, else null = default cap; migration `20261111140000_leaderboard_add_avatar.sql`, tested on a scratch Postgres twice, applied live, grants unchanged, advisors show only the two known warnings). Cards were redesigned in `assets/site.css`/`assets/dashboard.js`: round avatar with a rank badge (gold/silver/bronze for 1-3), name, points, accuracy. The long note under the cards is now one short line ("Points = right answers × accuracy · each question counted once"), with "You are Nth of N" at its right end when you are outside the top ten. `/privacy/` now says the chosen picture is shown too.
+- **Your paths** (last block): each picked path is a link where a page exists (`PATH_PAGE` in `dashboard.js`), and a second row "Go straight to" links Reading (`/notes/`), MCQs (`/quizzes/mcq/`) and Quick MCQs (`/quizzes/daily/`). Later the same day the "Go straight to" row got more links: Mock Tests, PYQs, Video Lessons, English Literature, Download, and PGT MCQs / PGT Mock Tests when PGT is picked (`QUICK_LINKS`, `PATH_LINKS`).
 
 ## Mock test — reader picks questions and time (BUILT on the branch, 2026-11-11)
 
@@ -134,9 +149,10 @@ a low-star review is kept.
   when a review uses inappropriate language.**
 - **One review per student** (anti-spam).
 
-**Honest caveat to carry into the build:** "Confirm email" is still OFF (no SMTP yet, rule 13), so
-anyone can create a free account in seconds — login lowers spam but is not a hard wall. The
-one-review-per-user limit and easy removal are the real safety net until Confirm email is ON.
+**Honest caveat to carry into the build:** _(corrected 2026-11-11: this used to say "Confirm email is still OFF". It is ON
+since 2026-11-03 with Resend SMTP; live check `mailer_autoconfirm = false`.)_ A review needs an email the student has
+confirmed, or a Google account, so login is a real wall, though not a perfect one. The one-review-per-user limit and easy
+removal are still the safety net.
 
 **How it was built (all done on the branch; file paths for reference):**
 1. **Supabase:** new `public.reviews` table (`id`, `user_id default auth.uid()`, `name`, `role`,
