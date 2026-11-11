@@ -86,8 +86,8 @@
 
       function paint(current) {
         window.akAvatars.buildPicker(grid, current, function (id) {
-          // Hamesha ek avatar chuna rehta hai (default a9); id store kar do.
-          client.from('profiles').update({ avatar_id: id }).eq('id', user.id)
+          // '' = default (graduation cap) -> null store karo; warna character id.
+          client.from('profiles').update({ avatar_id: id || null }).eq('id', user.id)
             .then(function (res) {
               if (res.error) return;
               if (saved) {

@@ -4,42 +4,48 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Reviews + ready-made avatars built; owner's avatar art, default a9; on the branch.)_
+_Last updated: 2026-11-11 (Reviews + ready-made avatars LIVE on main; owner's avatar art, graduation-cap default.)_
 
 ## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
 
 The owner chose ready-made avatars (not photo uploads) so there is no storage and no image
-moderation. A student picks one of 10 avatars; the choice shows on their review. **Everyone who does
-not choose gets the default, a9** (owner, 2026-11-11).
+moderation. A student picks one of 10 character avatars; the choice shows on their review.
+**The default is a neutral graduation cap** (`assets/avatars/default.svg`) — everyone who does not
+choose shows this, stored as `avatar_id = null` (owner, 2026-11-11: "a9 tumhara graduate cap, usko
+default").
 
 - **Avatars = the owner's own art:** 10 character SVGs supplied by the owner (AK-Explained-Avatars.zip),
   installed as `assets/avatars/a1.svg`..`a10.svg` in the preview's reading order:
   a1 Male Student, a2 Male Class Clown, a3 Male Macho Man, a4 Male Scientist, a5 Male Professor,
-  a6 Female Reader, a7 Female Teacher, a8 Female Scientist, **a9 Female Professor = DEFAULT**,
-  a10 Female Class Clown. (If the owner wants a different default, change `DEFAULT` in
-  `assets/avatars.js` and the mapping if needed — one line.)
-- **Shared helper `assets/avatars.js`** (`window.akAvatars`: `ids`, `defaultId='a9'`, `isValid`,
-  `resolve` (null/invalid → a9), `url`, `buildPicker`). The picker always has one avatar selected
-  (no "None"); an unset profile shows a9. No uploads, no Supabase Storage (0 buckets), nothing to
-  moderate.
+  a6 Female Reader, a7 Female Teacher, a8 Female Scientist, a9 Female Professor, a10 Female Class Clown.
+- **Default avatar:** `assets/avatars/default.svg` — a gold tile with a white graduation cap,
+  gender-neutral. Shown wherever `avatar_id` is null. To change the default, replace that one file.
+- **Shared helper `assets/avatars.js`** (`window.akAvatars`: `ids`, `defaultUrl`, `isValid`, `url`
+  (null/invalid → default.svg), `buildPicker`). The picker's first tile is the default (graduation
+  cap, `data-av=""`), then the 10 characters; picking it stores null. No uploads, no Supabase Storage
+  (0 buckets), nothing to moderate.
+- **Home section:** the "What Our Students Say" heading and intro are centred (`#reviews .sechead`
+  rules in `site.css`); the carousel auto-advances one card every 7 seconds (`home.js`), only when
+  there are more reviews than fit.
 - **Where it is chosen (owner's three places):**
   1. **New user, at signup** — the "Choose your path" screen (`#pathAvatars` in `login/index.html`,
      built in `assets/login.js` `buildPath`) now has a "Choose your picture" picker; the choice is
-     saved to `profiles.avatar_id` in `commit()` (both Save and Skip). a9 is pre-selected.
+     saved to `profiles.avatar_id` in `commit()` (both Save and Skip). The default (graduation cap) tile is pre-selected.
   2. **Later, on the profile** — `/account/` "Your picture" card (`assets/account.js` `loadAvatar`)
      saves `profiles.avatar_id`.
   3. **On the review form** — `/write-a-review/` shows the picker (prefilled from the profile); the
      choice is snapshotted onto the review at submit and written back to the profile. A non-chooser's
-     review posts with the default a9.
+     review stores null, so the graduation-cap default shows.
 - **Storage:** `profiles.avatar_id` (existing) + `public.reviews.avatar_id` (migration
   `20261111130000_reviews_add_avatar_id.sql`; applied live; check `^a[0-9]{1,2}$`). The home carousel
-  reads `avatar_id` and shows the chosen avatar, else the default a9.
+  reads `avatar_id` and shows the chosen avatar, else the graduation-cap default.
 - **Privacy:** `/privacy/` says a chosen ready-made avatar (never an uploaded photo) may be stored and
   shown.
 - **Tested:** ALTER on throwaway local Postgres (valid/null accepted, junk rejected, idempotent).
-  Build clean (246 files); link check clean. Playwright: 11/11 (picker 10 buttons no "None", default
-  a9, resolve/url, home shows default for null avatar, review form default-submits a9 and pick-a3
-  submits a3, login signup step renders the picker with a9 default) plus the 15 earlier review checks.
+  Build clean (246 files); link check clean. Playwright: 14/14 (picker = default tile + 10,
+  url(null)→default.svg, home shows the cap for a null avatar, centred heading, review form
+  default-submits null and pick-a3 submits a3, login signup step renders the picker with the default
+  tile selected) plus the 15 earlier review checks.
 - **Not done (easy follow-ups if wanted):** show the avatar in the header next to the name and on
   `/dashboard/`. The review keeps the avatar snapshotted at submit (changing the profile avatar later
   does not change an already-posted review, because a student has no client UPDATE on reviews).
@@ -49,7 +55,7 @@ not choose gets the default, a9** (owner, 2026-11-11).
 ## Student Reviews — login-gated, auto-live (BUILT on the branch, 2026-11-11)
 
 Built on the feature branch and tested; **live table is in Supabase already** (the migration was
-applied via the connector), the site code is **not yet on `main`** — merge when the owner says (rule 5).
+applied via the connector), and the site code is **live on `main`** (owner said "live kar do", 2026-11-11).
 
 **What is live now vs. on the branch:**
 - **Supabase (live):** `public.reviews` table + RLS created on the project via `apply_migration`
@@ -114,8 +120,7 @@ one-review-per-user limit and easy removal are the real safety net until Confirm
 9. Build clean + link check + browser test (guest wall, logged-in submit, auto-live on home,
    one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
 
-**Status: built on the branch and tested; the Supabase table is already live. Awaiting the owner's
-word to merge the site code to `main` (rule 5).**
+**Status: LIVE on `main` (merged 2026-11-11). Reviews + ready-made avatars + graduation-cap default + centred heading + 7s carousel are all published to akexplained.com.**
 
 ## UP PGT Mock Test 7 — login CBT paper (2026-11-09)
 

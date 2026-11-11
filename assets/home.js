@@ -478,7 +478,7 @@
       next.addEventListener('click', function () { go(at + 1); rest(); });
 
       const slow = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      function start() { if (!slow) timer = setInterval(function () { go(at + 1); }, 4500); }
+      function start() { if (!slow) timer = setInterval(function () { go(at + 1); }, 7000); }
       function rest() { clearInterval(timer); start(); }
       wrapEl.addEventListener('mouseenter', function () { clearInterval(timer); });
       wrapEl.addEventListener('mouseleave', start);

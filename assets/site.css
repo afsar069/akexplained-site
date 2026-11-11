@@ -3522,3 +3522,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .avpick.sel{border-color:var(--gold);box-shadow:0 0 0 2px var(--gold)}
 .avpick:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
 .avpick-none img{background:var(--cream)}
+
+/* Reviews section: centre the heading and intro (owner, 2026-11-11) */
+#reviews .sechead{justify-content:center;text-align:center}
+#reviews .sechead::after{display:none}
+#reviews .sechead h2{position:relative;padding-bottom:12px}
+#reviews .sechead h2::after{content:"";position:absolute;left:50%;transform:translateX(-50%);bottom:0;
+  width:90px;height:2px;background:linear-gradient(90deg,rgba(185,137,47,0),var(--gold),rgba(185,137,47,0));border-radius:2px}
+#reviews .seclede{text-align:center;max-width:62ch;margin-left:auto;margin-right:auto}

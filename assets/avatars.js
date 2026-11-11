@@ -6,12 +6,14 @@
    profiles.avatar_id me ek chhota id ('a1'..'a10') ke roop me
    rehti hai — koi file upload, koi storage nahi.
 
-   Jo kuch nahi chunta use DEFAULT ('a9') milta hai (owner, 2026-11-11).
+   DEFAULT = graduation cap (assets/avatars/default.svg). Jo kuch
+   nahi chunta use yahi milta hai (owner, 2026-11-11). Default ko
+   avatar_id = null se dikhaya jaata hai (koi character id nahi).
 
-   Mapping (owner ke avatars, preview order):
+   Mapping (owner ke 10 character avatars, preview order):
      a1 Male Student     a2 Male Class Clown  a3 Male Macho Man
      a4 Male Scientist   a5 Male Professor    a6 Female Reader
-     a7 Female Teacher   a8 Female Scientist  a9 Female Professor (default)
+     a7 Female Teacher   a8 Female Scientist  a9 Female Professor
      a10 Female Class Clown
 
    Ye file login (signup step), account page, review form aur home
@@ -21,19 +23,24 @@
   'use strict';
 
   var IDS = ['a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'a10'];
-  var DEFAULT = 'a9';
+  var DEFAULT_URL = '/assets/avatars/default.svg';
 
   function isValid(id) { return IDS.indexOf(id) !== -1; }
-  // Jo id valid na ho (null/khaali bhi) use default maan lo.
-  function resolve(id) { return isValid(id) ? id : DEFAULT; }
-  function url(id) { return '/assets/avatars/' + resolve(id) + '.svg'; }
+  // Character chuna ho to uska svg; warna (null/khaali) default graduation cap.
+  function url(id) { return isValid(id) ? '/assets/avatars/' + id + '.svg' : DEFAULT_URL; }
 
-  // Picker grid container me bana do. current = chuna hua id (ya khaali -> default).
-  // onPick(id) har choose par chalta hai. Hamesha ek avatar chuna rehta hai (koi "None" nahi).
+  // Picker grid: pehla tile default (graduation cap, data-av=""), phir 10 characters.
+  // current = chosen id, ya khaali/null = default. onPick(id) chalta hai ('' matlab default).
   function buildPicker(container, current, onPick) {
     if (!container) return;
-    var sel = resolve(current);
-    container.innerHTML = IDS.map(function (id) {
+    var sel = isValid(current) ? current : '';          // '' => default tile
+
+    var html = '<button type="button" class="avpick avpick-default' + (sel === '' ? ' sel' : '') +
+      '" data-av="" aria-pressed="' + (sel === '' ? 'true' : 'false') +
+      '" title="Default picture"><img src="' + DEFAULT_URL +
+      '" alt="Default picture" width="60" height="60"></button>';
+
+    html += IDS.map(function (id) {
       var on = id === sel;
       return '<button type="button" class="avpick' + (on ? ' sel' : '') +
         '" data-av="' + id + '" aria-pressed="' + (on ? 'true' : 'false') +
@@ -41,10 +48,12 @@
         '<img src="' + url(id) + '" alt="Avatar ' + id.slice(1) + '" width="60" height="60" loading="lazy"></button>';
     }).join('');
 
+    container.innerHTML = html;
+
     container.addEventListener('click', function (e) {
       var b = e.target.closest('.avpick');
       if (!b || !container.contains(b)) return;
-      var id = b.getAttribute('data-av');
+      var id = b.getAttribute('data-av') || '';          // '' => default
       var all = container.querySelectorAll('.avpick');
       for (var i = 0; i < all.length; i++) {
         all[i].classList.remove('sel');
@@ -58,9 +67,8 @@
 
   window.akAvatars = {
     ids: IDS,
-    defaultId: DEFAULT,
+    defaultUrl: DEFAULT_URL,
     isValid: isValid,
-    resolve: resolve,
     url: url,
     buildPicker: buildPicker
   };
