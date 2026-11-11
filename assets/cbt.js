@@ -301,7 +301,7 @@
         '<p class="lede">' + (EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
         'Log in, or create an account, to open it.</p>' +
         '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
-        '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to the age</a></p>' +
+        '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
       '</div>';
   }
 
@@ -1573,7 +1573,8 @@
               esc(o.name) + '</a><span>' + o.right + ' of ' + o.total + ' here</span></li>';
           }).join('') +
           (EXAM_MOCK
-            ? '<li><a href="/exams/pgt/up-pgt/study-guide/">UP PGT English study guide</a><span>General English study guidance</span></li>'
+            ? (root.hasAttribute('data-exam-home') ? ''
+              : '<li><a href="/exams/pgt/up-pgt/study-guide/">UP PGT English study guide</a><span>General English study guidance</span></li>')
             : '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +
               'Quick revision — 50 points</a><span>the whole age on one screen</span></li>') +
         '</ul>' +
@@ -1582,11 +1583,12 @@
         '<h2>Where to go next</h2>' +
         '<ul class="cbt-sug">' +
           (EXAM_MOCK
-            ? '<li><a href="/exams/pgt/up-pgt/">UP PGT English preparation</a><span>Browse study resources</span></li>'
+            ? '<li><a href="' + esc(root.getAttribute('data-exam-home') || '/exams/pgt/up-pgt/') + '">' +
+              esc(root.getAttribute('data-exam-home-label') || 'UP PGT English preparation') + '</a><span>Browse study resources</span></li>'
             : '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
               esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>') +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
-            (EXAM_MOCK ? 'UP PGT Mock Tests</a><span>Browse the mock tests' : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
+            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>Browse the mock tests' : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
         '</ul>' +
       '</section>' +

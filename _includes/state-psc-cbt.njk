@@ -1,0 +1,33 @@
+{% extends "mcq-page.njk" %}
+{# UP Assistant Professor, Paper 2 mock test: login wala CBT (sawal Supabase mcq_papers me, set_id up-ap-p2-mock-test-N). #}
+{% set n = mockNumber or 1 %}
+{% set base = "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/" %}
+{% set pageTitle %}UP Assistant Professor Paper 2 Mock Test {{ n }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
+{% set pageDescription %}Take UP Assistant Professor Paper 2 English Literature Mock Test {{ n }} with 100 questions after logging in.{% endset %}
+{% set canonical %}https://akexplained.com{{ base }}test-{{ n }}/{% if examReview %}review/{% endif %}{% endset %}
+{% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'State PSC',h:'/exams/state-psc/'},{t:'UP Assistant Professor',h:'/exams/state-psc/up-assistant-professor/'},{t:'Mock Tests',h:base},{t:'Mock Test ' ~ n,h:base ~ 'test-' ~ n ~ '/'}] %}
+{% set mainClass = "cbt" %}
+{% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
+{% block main %}
+<section class="pagehead pagehead-practice">
+  <span class="mark" aria-hidden="true">{{ n }}</span>
+  <div class="wrap">
+    <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP Assistant Professor</p>
+    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Mock Test {{ n }}{% endif %}</h1>
+    <p class="lede" id="cbtLede">{% if examReview %}Your answer, the right one, and the explanation for each question.{% else %}100 questions. Log in with a free account to take this test.{% endif %}</p>
+  </div>
+</section>
+<div class="cbt-printhead" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="34" height="34">
+  <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
+</div>
+<div class="wrap cbt-body" data-cbt data-exam-mock{% if examReview %} data-mode="review"{% endif %}
+     data-set="up-ap-p2-mock-test-{{ n }}" data-gated="up-ap-p2-mock-test-{{ n }}" data-levels="medium" data-default-level="medium"
+     data-exam-home="/exams/state-psc/up-assistant-professor/" data-exam-home-label="UP Assistant Professor resources"
+     data-exam-index-label="Paper 2 Mock Tests"
+     data-back="{{ base }}{% if examReview %}test-{{ n }}/{% endif %}"
+     data-back-label="{% if examReview %}Mock Test {{ n }}{% else %}Mock Tests{% endif %}">
+  <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
+</div>
+{% endblock %}
