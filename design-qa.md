@@ -6,7 +6,7 @@ final result: passed
 
 - Visual reference: the current PGT hub and UP PGT detail page. State PSC reuses their illustrated hero, typography, compact faded subpage hero, featured teal exam card, cream resource cards, content insets and default footer. Only UP Assistant Professor is active on the hub. All five resources are plainly marked Coming soon and have noindex destinations.
 - Browser captures at 390px and 1440px for both pages are in `docs/state-psc-up-assistant-professor/`, with current PGT comparison images. Checks at 320, 390, 768, 1024 and 1440px found contained hero text, loaded images, visible shared footers, no horizontal overflow and no page errors. The featured card opens UP Assistant Professor; all five resource routes resolve and remain noindex.
-- Final result: passed. The page is prepared on a feature branch and is not yet published.
+- Final result: passed. The owner approved publishing PR #40 on 2026-11-11.
 
 ## UP PGT Mock Tests index — 2026-11-08
 
