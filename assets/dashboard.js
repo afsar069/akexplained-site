@@ -897,8 +897,21 @@
   var QUICK_LINKS = [
     { href: '/notes/', label: 'Reading' },
     { href: '/quizzes/mcq/', label: 'MCQs' },
-    { href: '/quizzes/daily/', label: 'Quick MCQs' }
+    { href: '/quizzes/daily/', label: 'Quick MCQs' },
+    { href: '/quizzes/mock-tests/', label: 'Mock Tests' },
+    { href: '/quizzes/pyq/', label: 'PYQs' },
+    { href: '/video-lessons/', label: 'Video Lessons' },
+    { href: '/english-literature/', label: 'English Literature' },
+    { href: '/download/', label: 'Download' }
   ];
+  // Extra links that show only when that path is picked (both pages are live).
+  var PATH_LINKS = {
+    'pgt': [
+      { href: '/exams/pgt/up-pgt/mcqs/', label: 'PGT MCQs' },
+      { href: '/exams/pgt/up-pgt/mock-tests/', label: 'PGT Mock Tests' }
+    ]
+  };
+
   addSection({
     id: 'paths', order: 120, title: '', needs: '', bare: true,
     render: function (ctx) {
@@ -916,9 +929,11 @@
             '<a class="dashstrip-link" href="/account/">Change on My Account</a>' +
           '</div>'
         : '';
+      var extra = [];
+      picked.forEach(function (e) { (PATH_LINKS[e.id] || []).forEach(function (l) { extra.push(l); }); });
       var quickRow = '<div class="dashstrip-row">' +
         '<span class="dashstrip-lbl">Go straight to</span>' +
-        '<span class="dashstrip-items">' + QUICK_LINKS.map(function (l) {
+        '<span class="dashstrip-items">' + extra.concat(QUICK_LINKS).map(function (l) {
           return '<a class="dashstrip-pill is-tool" href="' + l.href + '">' + esc(l.label) + '</a>';
         }).join('') + '</span>' +
       '</div>';
