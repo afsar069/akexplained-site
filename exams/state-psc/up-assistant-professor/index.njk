@@ -1,0 +1,16 @@
+---
+layout: state-psc-layout.njk
+title: UP Assistant Professor
+description: Preparation resources for UP Assistant Professor.
+---
+<section class="pgt-resource-hub" aria-label="UP Assistant Professor resources">
+  <div class="pgt-resource-grid state-psc-resource-grid">
+    {% for resource in statePscResources %}
+    <a class="pgt-resource-card" href="/exams/state-psc/up-assistant-professor/{{ resource.slug }}/" aria-label="{{ resource.title }}{% if not resource.live %} — coming soon{% endif %}">
+      <span class="pgt-resource-icon" aria-hidden="true"><img src="/assets/icons/{{ resource.icon }}.svg" alt="" width="34" height="34"></span>
+      <span class="pgt-resource-copy"><strong>{{ resource.title }}</strong>{% if resource.live %}<span class="pgt-resource-status">Open</span>{% else %}<span class="pgt-resource-status">Coming soon</span>{% endif %}</span>
+      <img class="pgt-resource-arrow" src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26">
+    </a>
+    {% endfor %}
+  </div>
+</section>

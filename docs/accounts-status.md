@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Reviews + ready-made avatars LIVE on main; owner's avatar art, graduation-cap default.)_
+_Last updated: 2026-11-11 (The owner approved State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+
+## State PSC and UP Assistant Professor — publication approved (2026-11-11)
+
+- The owner requested a State PSC hub following the UP PGT design, with only UP Assistant Professor active. The previous general State PSC placeholder is replaced by the hub. Its featured card opens `/exams/state-psc/up-assistant-professor/`.
+- The UP Assistant Professor page shows five owner-specified resource cards: Download Syllabus, Paper 2 English Literature MCQs, Paper 2 English Literature Mock Tests, Paper 2 Study Notes and Paper 1 GK. Each card opens a noindex Coming soon page; no syllabus, notes, questions or test content was supplied.
+- The default footer and existing site navigation remain. The owner explicitly asked to make PR #40 (`feat/state-psc-up-assistant-professor`) live on 2026-11-11; merging it to `main` triggers Cloudflare Pages publication. Visual and route checks are in `docs/state-psc-up-assistant-professor/`.
 
 ## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
 
@@ -130,6 +136,15 @@ one-review-per-user limit and easy removal are the real safety net until Confirm
    one-per-user, owner delete). Push the branch; `main` only when asked (rule 5).
 
 **Status: LIVE on `main` (merged 2026-11-11). Reviews + ready-made avatars + graduation-cap default + centred heading + 7s carousel are all published to akexplained.com.**
+## UP Assistant Professor, Paper 2 Mock Test 1 — login CBT paper (2026-11-11)
+
+- The owner supplied `up_ap_mock_test_1.json` (100 questions, marked verified) for the page `/exams/state-psc/up-assistant-professor/paper-2-mock-tests/`, to be taken in the CBT and only after login. The questions are stored in `public.mcq_papers` as `set_id = up-ap-p2-mock-test-1`, `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 1`, visible level name "Full paper". No question file or question-bearing SQL is in this public repository. The owner should keep the uploaded copy.
+- What was changed from the supplied file: ids became `up-ap-p2-mock-1-001` to `-100` (the file had plain numbers 1 to 100), `correct_option_id` (0 to 3) was added because the engine reads it, and the duplicate fields `answer`, `answer_index`, `answer_text` and the empty `tags` list were dropped to keep each load statement small. Every other field is kept as supplied (`question`, `options`, `explanation`, `topicId`, `periodId`, `unit`, `unit_title`, `source_ref`, `difficulty`, `type`).
+- Structure checks: 100 distinct ids and stems, 4 distinct options each, letter, index and text of every answer agree, every `topicId` is in the master reference and every `periodId` is a `period` node. 23 questions (units V, VI and IX) carry no `periodId` in the supplied file, so none was invented. Facts were not rechecked (owner: verified). Things that stood out and were left as supplied: 60 of the 100 right answers are option B; question 66 reads "how Do the two ships" (capital D); question 74 has the lowercase name 'seeta' in option C.
+- Live read-back: 100 questions, `access = login`, `rev = 1`, fingerprint `1c6ac32e4088624090e8749c69462ae8` (md5 over id, question, options, answer, explanation, topic, period, unit, unit title, source ref, difficulty and type), equal to the source file. A data load changes no schema.
+- Pages: the Mock Tests card on `/exams/state-psc/up-assistant-professor/` now says "Open"; its hub shows a padlock for guests (login then back to the test) and Start for signed-in students. `test-1/` and `test-1/review/` use the shared CBT with `data-gated`. `assets/cbt.js` got three optional attributes (`data-exam-home`, `data-exam-home-label`, `data-exam-index-label`) so the result page links to the right exam; UP PGT pages are unchanged. Browser test (Playwright, Supabase mocked): guest sees the lock and no question text; signed-in student starts, answers all 100, submits (score 60/100 for all-B, as expected), and the review shows every question and explanation, with no console errors.
+- Only this one test exists; no other numbers, counts or dates were supplied, so none are shown.
+
 ## UP PGT Mock Test 8 — login CBT paper (2026-11-09)
 
 - The owner supplied `PGT_batch_8.json` with 90 verified questions for Test 8, available only after login. The private paper preserves every question object and adds the same CBT metadata as Tests 6–7. It is stored in `public.mcq_papers` with `set_id = up-pgt-mock-test-8`, `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 8`, and visible level name “Full paper.” No question file or question-bearing SQL is in this public repository. The owner should keep the uploaded copy.

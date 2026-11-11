@@ -1,0 +1,327 @@
+[
+  {
+    "kind": "hub",
+    "width": 320,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 139.8125,
+      "right": 320,
+      "bottom": 255.09375,
+      "width": 320,
+      "height": 115.28125
+    },
+    "heroCopy": {
+      "x": 14,
+      "y": 146.484375,
+      "right": 174.59375,
+      "bottom": 247.421875,
+      "width": 160.59375,
+      "height": 100.9375
+    },
+    "heading": "State PSC English Literature",
+    "featuredLinks": 1,
+    "resourceCards": 0,
+    "comingSoonCards": 0,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "detail",
+    "width": 320,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 225.46875,
+      "right": 320,
+      "bottom": 340.75,
+      "width": 320,
+      "height": 115.28125
+    },
+    "heroCopy": {
+      "x": 14,
+      "y": 240.265625,
+      "right": 174.59375,
+      "bottom": 324.953125,
+      "width": 160.59375,
+      "height": 84.6875
+    },
+    "heading": "UP Assistant Professor",
+    "featuredLinks": 0,
+    "resourceCards": 5,
+    "comingSoonCards": 5,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "hub",
+    "width": 390,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 115.65625,
+      "right": 390,
+      "bottom": 255.9375,
+      "width": 390,
+      "height": 140.28125
+    },
+    "heroCopy": {
+      "x": 14,
+      "y": 130.453125,
+      "right": 213.09375,
+      "bottom": 240.140625,
+      "width": 199.09375,
+      "height": 109.6875
+    },
+    "heading": "State PSC English Literature",
+    "featuredLinks": 1,
+    "resourceCards": 0,
+    "comingSoonCards": 0,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "detail",
+    "width": 390,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 179.65625,
+      "right": 390,
+      "bottom": 319.9375,
+      "width": 390,
+      "height": 140.28125
+    },
+    "heroCopy": {
+      "x": 14,
+      "y": 203.953125,
+      "right": 213.09375,
+      "bottom": 294.640625,
+      "width": 199.09375,
+      "height": 90.6875
+    },
+    "heading": "UP Assistant Professor",
+    "featuredLinks": 0,
+    "resourceCards": 5,
+    "comingSoonCards": 5,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "hub",
+    "width": 768,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 115.65625,
+      "right": 768,
+      "bottom": 416.65625,
+      "width": 768,
+      "height": 301
+    },
+    "heroCopy": {
+      "x": 22,
+      "y": 145.328125,
+      "right": 384,
+      "bottom": 385.96875,
+      "width": 362,
+      "height": 240.640625
+    },
+    "heading": "State PSC English Literature",
+    "featuredLinks": 1,
+    "resourceCards": 0,
+    "comingSoonCards": 0,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "detail",
+    "width": 768,
+    "status": 200,
+    "hero": {
+      "x": 0,
+      "y": 179.65625,
+      "right": 768,
+      "bottom": 410.65625,
+      "width": 768,
+      "height": 231
+    },
+    "heroCopy": {
+      "x": 22,
+      "y": 190,
+      "right": 384,
+      "bottom": 399.3125,
+      "width": 362,
+      "height": 209.3125
+    },
+    "heading": "UP Assistant Professor",
+    "featuredLinks": 0,
+    "resourceCards": 5,
+    "comingSoonCards": 5,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "hub",
+    "width": 1024,
+    "status": 200,
+    "hero": {
+      "x": 272,
+      "y": 49.65625,
+      "right": 1024,
+      "bottom": 350.65625,
+      "width": 752,
+      "height": 301
+    },
+    "heroCopy": {
+      "x": 294,
+      "y": 68.890625,
+      "right": 648,
+      "bottom": 330.40625,
+      "width": 354,
+      "height": 261.515625
+    },
+    "heading": "State PSC English Literature",
+    "featuredLinks": 1,
+    "resourceCards": 0,
+    "comingSoonCards": 0,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "detail",
+    "width": 1024,
+    "status": 200,
+    "hero": {
+      "x": 272,
+      "y": 113.65625,
+      "right": 1024,
+      "bottom": 376.171875,
+      "width": 752,
+      "height": 262.515625
+    },
+    "heroCopy": {
+      "x": 294,
+      "y": 113.65625,
+      "right": 648,
+      "bottom": 375.171875,
+      "width": 354,
+      "height": 261.515625
+    },
+    "heading": "UP Assistant Professor",
+    "featuredLinks": 0,
+    "resourceCards": 5,
+    "comingSoonCards": 5,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "hub",
+    "width": 1440,
+    "status": 200,
+    "hero": {
+      "x": 272,
+      "y": 49.65625,
+      "right": 1440,
+      "bottom": 468.25,
+      "width": 1168,
+      "height": 418.59375
+    },
+    "heroCopy": {
+      "x": 294,
+      "y": 161.359375,
+      "right": 968.390625,
+      "bottom": 355.53125,
+      "width": 674.390625,
+      "height": 194.171875
+    },
+    "heading": "State PSC English Literature",
+    "featuredLinks": 1,
+    "resourceCards": 0,
+    "comingSoonCards": 0,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "kind": "detail",
+    "width": 1440,
+    "status": 200,
+    "hero": {
+      "x": 272,
+      "y": 113.65625,
+      "right": 1440,
+      "bottom": 414.65625,
+      "width": 1168,
+      "height": 301
+    },
+    "heroCopy": {
+      "x": 294,
+      "y": 166.5625,
+      "right": 968.390625,
+      "bottom": 360.734375,
+      "width": 674.390625,
+      "height": 194.171875
+    },
+    "heading": "UP Assistant Professor",
+    "featuredLinks": 0,
+    "resourceCards": 5,
+    "comingSoonCards": 5,
+    "imageLoaded": true,
+    "footer": true,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "resource": "download-syllabus",
+    "status": 200,
+    "noindex": "noindex,follow",
+    "footer": 1,
+    "backHref": "/exams/state-psc/up-assistant-professor/"
+  },
+  {
+    "resource": "paper-2-mcqs",
+    "status": 200,
+    "noindex": "noindex,follow",
+    "footer": 1,
+    "backHref": "/exams/state-psc/up-assistant-professor/"
+  },
+  {
+    "resource": "paper-2-mock-tests",
+    "status": 200,
+    "noindex": "noindex,follow",
+    "footer": 1,
+    "backHref": "/exams/state-psc/up-assistant-professor/"
+  },
+  {
+    "resource": "paper-2-study-notes",
+    "status": 200,
+    "noindex": "noindex,follow",
+    "footer": 1,
+    "backHref": "/exams/state-psc/up-assistant-professor/"
+  },
+  {
+    "resource": "paper-1-gk",
+    "status": 200,
+    "noindex": "noindex,follow",
+    "footer": 1,
+    "backHref": "/exams/state-psc/up-assistant-professor/"
+  }
+]

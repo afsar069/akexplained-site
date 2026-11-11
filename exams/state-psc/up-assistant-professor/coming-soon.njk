@@ -1,0 +1,23 @@
+---
+layout: state-psc-layout.njk
+pagination:
+  data: statePscComingSoon
+  size: 1
+  alias: resource
+permalink: "/exams/state-psc/up-assistant-professor/{{ resource.slug }}/index.html"
+eleventyComputed:
+  title: "{{ resource.title }} — UP Assistant Professor"
+  description: "{{ resource.title }} for UP Assistant Professor is coming soon."
+  crumb_label: "{{ resource.title }}"
+coming_soon: true
+state_psc_resource: true
+---
+<section class="pgt-resource-coming" aria-labelledby="state-psc-coming-title">
+  <img src="/assets/icons/{{ resource.icon }}.svg" alt="" width="56" height="56">
+  <p class="eyebrow">Coming soon</p>
+  <h2 id="state-psc-coming-title">{{ resource.title }}</h2>
+  <p>This resource is coming soon.</p>
+  <div class="pgt-resource-coming-links">
+    <a href="/exams/state-psc/up-assistant-professor/">Back to UP Assistant Professor resources</a>
+  </div>
+</section>
