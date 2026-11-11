@@ -13,7 +13,7 @@ _Last updated: 2026-11-11 (Delete my account on /account/; Dashboard avatars/lin
 - **What goes:** every table that points at `auth.users` has `on delete cascade`: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `user_exams`, `notify_requests` and **`reviews` (the public review goes too: owner's choice)**. A new table with a `user_id` must also cascade, or this feature leaves its rows behind.
 - **Tested live (2026-11-11):** a throwaway user with one row in each of the 7 tables: no token, junk token, publishable key as token, wrong confirm word all refused; the real call returned 200; afterwards `auth.users` and all 7 tables had 0 rows for that id; the old token then got 401. The account page was tested in a browser with mocked Supabase (success, failure, `delete` in lower case stays disabled). Security advisors unchanged: the two known warnings only.
 - `/privacy/` and `/terms/` now say a student can delete their own account (privacy "Last updated" moved to 11 November 2026). Not claimed anywhere: how long Supabase keeps backups. Check Supabase's own pages before writing a number.
-- Unchanged: the Supabase connector cannot sign up a test student while email sending fails ("Error sending confirmation email"); the test user above was inserted by SQL and removed by the function itself.
+- Signup is **not** broken: the "Error sending confirmation email" seen while testing came from using an `example.com` address, which Resend refuses (`550 Invalid 'to' field`). The test user above was inserted by SQL and removed by the function itself (see the testing tip in CLAUDE.md rule 14).
 
 ## Dashboard: avatars on Top students, one-line rule, direct links; PGT and UPSC CSE paths open (2026-11-11, on the branch)
 
@@ -142,9 +142,10 @@ a low-star review is kept.
   when a review uses inappropriate language.**
 - **One review per student** (anti-spam).
 
-**Honest caveat to carry into the build:** "Confirm email" is still OFF (no SMTP yet, rule 13), so
-anyone can create a free account in seconds — login lowers spam but is not a hard wall. The
-one-review-per-user limit and easy removal are the real safety net until Confirm email is ON.
+**Honest caveat to carry into the build:** _(corrected 2026-11-11: this used to say "Confirm email is still OFF". It is ON
+since 2026-11-03 with Resend SMTP; live check `mailer_autoconfirm = false`.)_ A review needs an email the student has
+confirmed, or a Google account, so login is a real wall, though not a perfect one. The one-review-per-user limit and easy
+removal are still the safety net.
 
 **How it was built (all done on the branch; file paths for reference):**
 1. **Supabase:** new `public.reviews` table (`id`, `user_id default auth.uid()`, `name`, `role`,

@@ -71,8 +71,8 @@ session cannot open akexplained.com (rule 14), so give the owner the live links 
   language** — a low-star review is kept. Do it from the owner side via the Supabase connector, e.g.
   `update public.reviews set visible = false where id = '…';` (hide) or `delete from public.reviews
   where id = '…';` (remove). Never from the browser.
-- Honest limit: while "Confirm email" is OFF (rule 13), login is not a hard spam wall; the
-  one-per-user rule and easy removal are the net. `/privacy/` states what a review stores and that it
+- Honest limit: "Confirm email" is ON (rule 10), so a review needs an email the student has opened or a Google
+  account; that is a real wall, but not a perfect one. The one-per-user rule and easy removal are the net. `/privacy/` states what a review stores and that it
   is public — keep it true in the same commit as any change here (rule 10).
 - The old static `assets/reviews.json` + Pages CMS "Student Reviews" collection were retired when this
   shipped (they no longer feed the home page).
@@ -235,10 +235,11 @@ and never ask the owner for it.**
   is saved to `profiles`; someone who already has a path goes to `/account/`.
   **Identity linking** (Supabase auth server, `DetermineAccountLinking`): an OAuth sign-in whose provider
   email is verified is linked automatically to the one existing user with that email, so the same person
-  keeps one `user_id` and their `attempts` stay together. There is no switch to turn this off. Caveat:
-  while "Confirm email" is OFF, every email signup counts as confirmed, so anyone could pre-register
-  someone else's address with a password and later share the account when that person uses Google.
-  Turn "Confirm email" ON once SMTP works. A Google email that differs from the account's email makes a
+  keeps one `user_id` and their `attempts` stay together. There is no switch to turn this off. Caveat
+  (only if "Confirm email" is ever turned OFF again): every email signup would count as confirmed, so anyone could
+  pre-register someone else's address with a password and later share the account when that person uses Google.
+  **"Confirm email" is ON today** (owner, 2026-11-03; live check 2026-11-11: `/auth/v1/settings` gives
+  `mailer_autoconfirm = false`), so that hole is closed. Keep it ON. A Google email that differs from the account's email makes a
   second account (manual linking is a separate, off-by-default beta).
 - **One domain.** The site lives on `https://akexplained.com`. www is a different origin to the browser (separate
   login, separate saved progress, and Supabase only lets Google return to the bare domain), so `auth.js` sends
@@ -344,9 +345,10 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
 - Password reset and email-confirmation landings are built in `assets/login.js` (implicit flow:
   `auth.js` latches the `PASSWORD_RECOVERY` event and reads the link `type` from the URL). "Forgot
-  password?" shows the real reset form only once Confirm email is ON in Supabase
+  password?" shows the real reset form when Confirm email is ON in Supabase
   (`/auth/v1/settings` → `mailer_autoconfirm = false`, i.e. custom SMTP is live) or with `?reset=1`;
-  until then it shows the contact-us note. **Turn Confirm email ON only after custom SMTP works**, or
+  with it OFF it shows the contact-us note. **Live today: custom SMTP (Resend) is on and Confirm email is ON**
+  (since 2026-11-03; the reset flow was tested end to end). Keep it ON; it must only ever be ON with working SMTP, or
   real users cannot confirm or reset. The reset redirect lands on `/login/` (must be in Supabase →
   URL Configuration → Redirect URLs; `https://akexplained.com/**` already covers it).
 - Pre-existing MCQ hub links `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404 — unrelated
@@ -381,6 +383,11 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
 - **The owner cannot open your container.** Never point them at a `/tmp/...` (scratchpad) path — those
   are inside the session and vanish when it is reclaimed. Paste the content into chat, or give a repo
   path / GitHub link they can open themselves.
+- **Testing signup / login flows.** Resend refuses `example.com` (and similar test domains) with
+  `550 Invalid 'to' field`, and Supabase then answers a signup with **"Error sending confirmation email"** (500).
+  That is the test address, not a broken site: real signups work. To test something that needs a logged-in user (as the
+  delete-account test did, 2026-11-11), insert a confirmed throwaway user by SQL on the connector, sign in with
+  `POST /auth/v1/token?grant_type=password`, run the test, and delete the user afterwards. Do not spend real email on tests.
 - **Where things stand** at the end of a work block is kept in `docs/accounts-status.md` (a dated
   snapshot of what is live, what is on the branch unmerged, and what is pending). Update it when the
   state changes so the next session starts without re-reading the whole history.
