@@ -121,7 +121,8 @@
           var d = (p && p.data) || {};
           var nm = a.nameFrom(user, d.display_name || '');
           if (nameInput && !nameInput.value && nm && nm !== 'My account') nameInput.value = nm;
-          chosenAvatar = (window.akAvatars && window.akAvatars.isValid(d.avatar_id)) ? d.avatar_id : '';
+          // Profile ka avatar, warna default (a9). Non-chooser ka review default se post hota hai.
+          chosenAvatar = window.akAvatars ? window.akAvatars.resolve(d.avatar_id) : '';
           buildAvatarPicker(chosenAvatar);
         }, function () { buildAvatarPicker(''); });
       wireSubmit(client, user);
@@ -145,7 +146,8 @@
         if (!v.name || !v.body) return say('bad', 'Please fill in your name and your review.');
         if (v.body.length < 10) return say('bad', 'Please write a little more — at least 10 characters.');
 
-        var avatar = (window.akAvatars && window.akAvatars.isValid(chosenAvatar)) ? chosenAvatar : null;
+        // Default (a9) ke saath post ho, agar student ne kuch nahi chuna.
+        var avatar = window.akAvatars ? window.akAvatars.resolve(chosenAvatar) : (chosenAvatar || null);
         v.avatar_id = avatar;
 
         btn.disabled = true;

@@ -436,8 +436,8 @@
     track.innerHTML = reviews.map(function (r) {
       const n = Math.max(1, Math.min(5, parseInt(r.stars, 10) || 5));
       const stars = '\u2605'.repeat(n) + '<span class="off">' + '\u2605'.repeat(5 - n) + '</span>';
-      // Reviewer ki chuni hui ready-made avatar; na ho to default.
-      const photo = (window.akAvatars && window.akAvatars.isValid(r.avatar_id))
+      // Reviewer ki chuni hui ready-made avatar; na chuni ho to default (a9).
+      const photo = window.akAvatars
         ? window.akAvatars.url(r.avatar_id)
         : (/^\/[\w\-./]*$/.test(r.photo || '') ? r.photo : '/assets/avatar-placeholder.webp');
       return '<div class="rvcard">' +

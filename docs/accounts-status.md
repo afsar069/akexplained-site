@@ -4,30 +4,42 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (Student Reviews + ready-made avatars built; on the branch, awaiting merge.)_
+_Last updated: 2026-11-11 (Reviews + ready-made avatars built; owner's avatar art, default a9; on the branch.)_
 
 ## Ready-made avatars for profiles and reviews (BUILT on the branch, 2026-11-11)
 
 The owner chose ready-made avatars (not photo uploads) so there is no storage and no image
-moderation. A student picks one of 10 avatars; the choice shows on their review.
+moderation. A student picks one of 10 avatars; the choice shows on their review. **Everyone who does
+not choose gets the default, a9** (owner, 2026-11-11).
 
-- **Avatars:** 10 self-made SVGs in `assets/avatars/a1.svg`..`a10.svg` (book, star, pen, leaf, sun,
-  moon, heart, flower, graduation cap, bookmark). Shared helper `assets/avatars.js`
-  (`window.akAvatars`: `ids`, `isValid`, `url`, `buildPicker`). No uploads, no Supabase Storage (0
-  buckets), nothing to moderate.
-- **Where it is chosen:** `/account/` has a "Your picture" card (`assets/account.js` `loadAvatar`)
-  that saves `profiles.avatar_id`. The `/write-a-review/` form also shows the picker (prefilled from
-  the profile); the choice is snapshotted onto the review at submit and also written back to the
-  profile.
-- **Storage:** `profiles.avatar_id` already existed (now used). `public.reviews.avatar_id` added
-  (migration `20261111130000_reviews_add_avatar_id.sql`; applied live; check constraint
-  `^a[0-9]{1,2}$`). The home carousel reads `avatar_id` and shows the avatar, else the default.
-- **Privacy:** `/privacy/` updated — the account section and the review section both say a chosen
-  ready-made avatar (never an uploaded photo) may be stored and shown.
-- **Tested:** ALTER on throwaway local Postgres (valid ids + null accepted, junk rejected,
-  idempotent). Build clean (246 files); link check clean. Playwright: 12/12 avatar checks (picker
-  renders/select/callback, url helper, home shows the avatar, form prefill + pick + submit sends
-  avatar_id + syncs to profile + done card shows it) plus the 15 earlier review checks still pass.
+- **Avatars = the owner's own art:** 10 character SVGs supplied by the owner (AK-Explained-Avatars.zip),
+  installed as `assets/avatars/a1.svg`..`a10.svg` in the preview's reading order:
+  a1 Male Student, a2 Male Class Clown, a3 Male Macho Man, a4 Male Scientist, a5 Male Professor,
+  a6 Female Reader, a7 Female Teacher, a8 Female Scientist, **a9 Female Professor = DEFAULT**,
+  a10 Female Class Clown. (If the owner wants a different default, change `DEFAULT` in
+  `assets/avatars.js` and the mapping if needed — one line.)
+- **Shared helper `assets/avatars.js`** (`window.akAvatars`: `ids`, `defaultId='a9'`, `isValid`,
+  `resolve` (null/invalid → a9), `url`, `buildPicker`). The picker always has one avatar selected
+  (no "None"); an unset profile shows a9. No uploads, no Supabase Storage (0 buckets), nothing to
+  moderate.
+- **Where it is chosen (owner's three places):**
+  1. **New user, at signup** — the "Choose your path" screen (`#pathAvatars` in `login/index.html`,
+     built in `assets/login.js` `buildPath`) now has a "Choose your picture" picker; the choice is
+     saved to `profiles.avatar_id` in `commit()` (both Save and Skip). a9 is pre-selected.
+  2. **Later, on the profile** — `/account/` "Your picture" card (`assets/account.js` `loadAvatar`)
+     saves `profiles.avatar_id`.
+  3. **On the review form** — `/write-a-review/` shows the picker (prefilled from the profile); the
+     choice is snapshotted onto the review at submit and written back to the profile. A non-chooser's
+     review posts with the default a9.
+- **Storage:** `profiles.avatar_id` (existing) + `public.reviews.avatar_id` (migration
+  `20261111130000_reviews_add_avatar_id.sql`; applied live; check `^a[0-9]{1,2}$`). The home carousel
+  reads `avatar_id` and shows the chosen avatar, else the default a9.
+- **Privacy:** `/privacy/` says a chosen ready-made avatar (never an uploaded photo) may be stored and
+  shown.
+- **Tested:** ALTER on throwaway local Postgres (valid/null accepted, junk rejected, idempotent).
+  Build clean (246 files); link check clean. Playwright: 11/11 (picker 10 buttons no "None", default
+  a9, resolve/url, home shows default for null avatar, review form default-submits a9 and pick-a3
+  submits a3, login signup step renders the picker with a9 default) plus the 15 earlier review checks.
 - **Not done (easy follow-ups if wanted):** show the avatar in the header next to the name and on
   `/dashboard/`. The review keeps the avatar snapshotted at submit (changing the profile avatar later
   does not change an already-posted review, because a student has no client UPDATE on reviews).

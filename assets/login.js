@@ -441,6 +441,20 @@
     var wrap = document.getElementById('pathGroups');
     var box = document.querySelector('#pathScreen .formerror');
     var selection = []; // exam ids, in the order the user picked them
+    var chosenAvatar = window.akAvatars ? window.akAvatars.defaultId : 'a9';
+
+    // Avatar picker on the signup step. New user ko default (a9) chuna hua milta hai;
+    // badal sakta hai. Choice commit() me profile par save hoti hai.
+    (function buildAvatars() {
+      var abox = document.getElementById('pathAvatars');
+      if (!abox || !window.akAvatars) return;
+      function paint(cur) { window.akAvatars.buildPicker(abox, cur, function (id) { chosenAvatar = id; }); }
+      client.from('profiles').select('avatar_id').eq('id', session.user.id).maybeSingle()
+        .then(function (res) {
+          chosenAvatar = window.akAvatars.resolve(res.data && res.data.avatar_id);
+          paint(chosenAvatar);
+        }, function () { paint(chosenAvatar); });
+    })();
 
     client.from('exams').select('*').order('sort_order', { ascending: true })
       .then(function (res) {
@@ -571,6 +585,11 @@
       var btnSave = document.getElementById('pathSave');
       var btnSkip = document.getElementById('pathSkip');
       btnSave.disabled = true; btnSkip.disabled = true;
+      // Save the chosen avatar (default a9 if untouched) — Save and Skip both land here.
+      if (window.akAvatars && chosenAvatar) {
+        client.from('profiles').update({ avatar_id: chosenAvatar }).eq('id', session.user.id)
+          .then(function () {}, function () {});
+      }
       client.from('user_exams').delete().eq('user_id', session.user.id).then(function () {
         var rows = ids.map(function (id) {
           return { user_id: session.user.id, exam_id: id, is_primary: id === primaryId };
