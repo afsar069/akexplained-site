@@ -1921,6 +1921,33 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-negbtn[aria-pressed="true"],.cbt-lvlbtn[aria-pressed="true"]{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
 .cbt-neghint{font-size:.84rem;color:var(--mcq-ink-faint);margin:9px 0 0;max-width:62ch}
 
+/* Mock test: reader kitne sawal aur kitna waqt chunta hai. Number box asli
+   control hai, slider usi ka doosra roop (tabindex="-1", aria-hidden). */
+.cbt-plan .cbt-planrow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 26px;margin-top:4px}
+.cbt-planfield > label{display:block;font-size:.88rem;font-weight:600;color:var(--ink);margin-bottom:8px}
+.cbt-numrow{display:flex;align-items:center;gap:10px}
+.cbt-numrow input[type="number"]{
+  width:74px;flex:none;font:inherit;font-size:1.05rem;font-weight:700;color:var(--ink);
+  text-align:center;background:#fff;border:1.5px solid var(--border);border-radius:11px;padding:9px 6px;
+  transition:border-color .2s,box-shadow .25s;
+}
+.cbt-numrow input[type="number"]:hover{border-color:var(--teal)}
+.cbt-numrow input[type="number"]:focus-visible{border-color:var(--teal);box-shadow:var(--glow);outline:none}
+.cbt-unit{flex:none;font-size:.9rem;color:var(--body)}
+.cbt-numrow input[type="range"]{
+  flex:1;min-width:0;appearance:none;-webkit-appearance:none;
+  height:5px;border-radius:999px;background:var(--border);cursor:pointer;
+}
+.cbt-numrow input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;width:20px;height:20px;border-radius:50%;
+  background:var(--teal);border:2px solid #fff;cursor:pointer;
+  box-shadow:0 1px 5px rgba(22,48,74,.34);
+}
+.cbt-numrow input[type="range"]::-moz-range-thumb{
+  width:18px;height:18px;border-radius:50%;background:var(--teal);
+  border:2px solid #fff;cursor:pointer;box-shadow:0 1px 5px rgba(22,48,74,.34);
+}
+
 .cbt-begin{
   display:inline-block;font:inherit;font-size:1rem;font-weight:700;color:#fff;
   background:var(--teal);border:0;border-radius:11px;padding:14px 34px;cursor:pointer;
@@ -2743,6 +2770,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 @media (max-width:620px){
   .cbt-facts,.cbt-nums{grid-template-columns:repeat(2,minmax(0,1fr))}
   .cbt-facts .cbt-fact:last-child:nth-child(odd){grid-column:1/-1}   /* akela aakhri tile poori chaudai le, taaki "Easy + Medium" ek line me aaye */
+  .cbt-plan .cbt-planrow{grid-template-columns:1fr}
   .cbt-nums3{grid-template-columns:1fr}
   .cbt-lbrow{grid-template-columns:repeat(2,minmax(0,1fr))}   /* phone: do-do karke */
   .cbt-pace{grid-template-columns:1fr}

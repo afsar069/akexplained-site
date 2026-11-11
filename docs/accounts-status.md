@@ -4,7 +4,29 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (The owner approved State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+_Last updated: 2026-11-11 (Mock-test start screen now lets the reader choose how many questions and how long; State PSC and UP Assistant Professor publication; review and avatar status follows below.)_
+
+## Mock test — reader picks questions and time (BUILT on the branch, 2026-11-11)
+
+The owner asked for the mock-test start screen (the second stage, where negative marking is chosen)
+to let the reader choose **how many questions** and **how long**, like the MCQ "Build your own test"
+page — but with no Easy/Hard choice (a mock test has one paper).
+
+- **Where:** the "Questions and time" block is part of the shared CBT engine (`assets/cbt.js`
+  `showStart` → `mockPlanBlock` / `wireMockPlan`), so it appears on **every** mock test automatically —
+  UP PGT Mock Tests and the UP Assistant Professor Paper 2 mock test today, and any added later. No
+  per-page template edit is needed; the engine is the template.
+- **Only on mock tests** (`data-exam-mock`). Regular MCQ sets are unchanged — they keep their Level
+  choice and their own build page.
+- **Limits (owner's):** 10 to 100 questions, 5 to 120 minutes. The question cap is also capped at the
+  paper's own size (a 90-question paper tops out at 90).
+- **Ratio:** the default is the full paper at ~40 seconds a question (so 100 questions → 67 minutes,
+  90 → 60). Change the number of questions and the time moves with it at the same rate; change the
+  time and that new rate is remembered for the next change. Both clamp to the limits above.
+- The chosen count/time drive the test; the facts tiles at the top update live. A part-paper attempt
+  in progress resumes at the same count on reload (`begin()` re-slices to `old.count` for mock tests).
+- CSS: `.cbt-plan`, `.cbt-numrow`, `.cbt-unit` in `assets/site.css` (reuses the build page's number +
+  slider look; slider is `tabindex="-1"`/`aria-hidden`, the number box is the real control).
 
 ## State PSC and UP Assistant Professor — publication approved (2026-11-11)
 
