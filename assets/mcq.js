@@ -37,11 +37,11 @@
      --------------------------------------------------------- */
   var LIVE_AGES = [
     'old-english',
-    'anglo-norman'
+    'anglo-norman',
+    'age-of-chaucer'
   ];
 
   var SOON_HUBS = [
-    'age-of-chaucer',
     'fifteenth-century',
     'renaissance',
     'early-tudor',

@@ -32,7 +32,7 @@ from collections import Counter
 ALLOWED_DOMAINS = ['akexplained.com', 'wikipedia.org', 'britannica.com', 'bl.uk', 'gutenberg.org']
 OWN_DOMAIN = 'akexplained.com'
 
-AGES = ['old-english', 'anglo-norman', 'middle-english', 'renaissance', 'elizabethan', 'jacobean', 'caroline',
+AGES = ['old-english', 'anglo-norman', 'age-of-chaucer', 'middle-english', 'renaissance', 'elizabethan', 'jacobean', 'caroline',
         'restoration', 'augustan-age', 'romantic-age', 'victorian-age', 'modern', 'contemporary']
 LEVELS = ['easy', 'medium', 'hard']
 SKIP_ANCHORS = {'quick-quiz-25-questions', 'frequently-asked-questions', 'sources',
@@ -44,7 +44,7 @@ SET_KEYS = ['setId', 'rev', 'age', 'ageName', 'setNumber', 'setName', 'notes', '
 SAME_IN_PAIR = ['setId', 'rev', 'age', 'ageName', 'setNumber', 'setName', 'notes', 'notesTitle',
                 'topics', 'topicRead', 'quote']
 Q_CORE = ['question', 'options', 'correct_option_id', 'explanation', 'topic']
-Q_ALLOWED = Q_CORE + ['src', 'read', 'id', 'topicId', 'periodId', 'qtype', 'passageId']
+Q_ALLOWED = Q_CORE + ['src', 'read', 'id', 'topicId', 'periodId', 'qtype', 'passageId', 'difficulty']
 QTYPES = {'passage', 'direct', 'combination', 'match', 'chrono'}
 PASSAGE_KEYS = {'id', 'title', 'attribution', 'text', 'src'}
 LEGACY = False        # --legacy: older files without "src"
@@ -105,7 +105,8 @@ def check_set(path, d, anchors, count):
     w = path
     for k in SET_KEYS:
         if k not in d: err(w, 'missing "%s"' % k)
-    extra = [k for k in d if k not in SET_KEYS + ['quote', 'passages']]
+    # examCode / examName: inert header fields of the UGC NET batch generator (the site does not read them).
+    extra = [k for k in d if k not in SET_KEYS + ['quote', 'passages', 'examCode', 'examName']]
     if extra: err(w, 'unknown top-level field(s): %s' % ', '.join(extra))
     if any(k not in d for k in SET_KEYS): return False
 
@@ -150,9 +151,9 @@ def check_set(path, d, anchors, count):
     # "passages": optional. Questions point at one by "passageId" (checked per question).
     if 'passages' in d:
         ps = d['passages']
-        if not isinstance(ps, list) or not ps:
-            err(w, '"passages" must be a non-empty list when present')
-        else:
+        if not isinstance(ps, list):
+            err(w, '"passages" must be a list when present')
+        elif ps:   # an empty list is fine (the batch generator writes "passages": [] when a set has none)
             seen = set()
             for i, p in enumerate(ps, 1):
                 pw = '%s passage %d' % (w, i)

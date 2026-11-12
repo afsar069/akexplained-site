@@ -1,0 +1,926 @@
+{
+  "setId": "age-of-chaucer-set-1",
+  "rev": 1,
+  "examCode": "30",
+  "examName": "UGC NET English (Subject Code 30)",
+  "age": "age-of-chaucer",
+  "ageName": "Age of Chaucer",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/middle-english/",
+  "notesTitle": "Middle English - the full notes",
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational UGC-NET questions on the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain Poet, and Wycliffe from the UGC NET Drive notes.",
+  "topics": {
+    "history-wycliffe": "Black Death, Revolt & Wycliffe",
+    "chaucer": "Geoffrey Chaucer",
+    "langland": "Langland & Piers Plowman",
+    "gower": "John Gower",
+    "gawain-poet": "The Gawain / Pearl Poet"
+  },
+  "topicRead": {},
+  "passages": [],
+  "questions": [
+    {
+      "id": "age-of-chaucer-set-1-e-01",
+      "question": "In which years did the first major outbreak of the Black Death (Great Plague) sweep across England during the Age of Chaucer?",
+      "options": [
+        "1337-1338",
+        "1348-1349",
+        "1381-1382",
+        "1399-1400"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per the UGC NET study notes, the fierce epidemic of plague known as the Black Death first broke out in England in 1348-1349, sweeping away more than a third of the population.",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Upkar Guide Book & Course Hero Canterbury Tales",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-02",
+      "question": "In which year did the Peasants' Revolt (also known as Wat Tyler's Rebellion) take place in England?",
+      "options": [
+        "1348",
+        "1362",
+        "1381",
+        "1399"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per the UGC NET Easy Handbook and Upkar Guide Book, the Peasants' Revolt (Wat Tyler's Rebellion) took place in 1381 and accelerated the decline of serfdom.",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature & Upkar Guide Book",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-03",
+      "question": "Which fourteenth-century religious reformer is famously known as 'The Morning Star of the Reformation'?",
+      "options": [
+        "John Wycliffe",
+        "William Langland",
+        "John Gower",
+        "Thomas Cranmer"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, John Wycliffe (1324-1384) is called 'The Morning Star of the Reformation' for challenging papal authority and translating the Bible into English.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-04",
+      "question": "What name was given to the followers and 'poor priests' sent out by John Wycliffe to spread his reformist teachings across England?",
+      "options": [
+        "Cavaliers",
+        "mendicant Friars",
+        "Christian Humanists",
+        "Lollards"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, John Wycliffe sent disciples known as Lollards or 'poor priests' throughout England to preach gospel truth directly from the Bible.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-05",
+      "question": "From which language did John Wycliffe and his associates translate the Bible into Middle English in the 1380s?",
+      "options": [
+        "Ancient Greek",
+        "Latin (the Vulgate)",
+        "Biblical Hebrew",
+        "Anglo-Norman French"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Wycliffe's Bible (c. 1380-1382) was translated directly from the Latin Vulgate into Middle English.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-06",
+      "question": "Which title was earned by John Wycliffe for his landmark 1382 translation of the Bible into the English vernacular?",
+      "options": [
+        "Father of English Prose",
+        "Father of English Poetry",
+        "Well of English Undefiled",
+        "Morning Star of Song"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, Wycliffe's translation of the Bible in 1382 earned him the title 'Father of English Prose'.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-07",
+      "question": "Which Pope issued five papal bulls against John Wycliffe in 1377, accusing him on 18 counts of heresy and calling him 'the master of errors'?",
+      "options": [
+        "Pope Pius V",
+        "Pope Innocent III",
+        "Pope Gregory XI",
+        "Pope Urban VI"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, Pope Gregory XI issued five bulls (church edicts) against Wycliffe in 1377, accusing him on 18 counts of heresy and calling him 'the master of errors'.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-08",
+      "question": "Which war between England and France began in 1337-1338 during the reign of King Edward III and shaped the political backdrop of Chaucer's age?",
+      "options": [
+        "The Wars of the Roses",
+        "The Barons' War",
+        "The Bishops' War",
+        "The Hundred Years' War"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per Easy Handbook For NET English Literature and Upkar Guide Book, the Hundred Years' War between England and France began in 1337-1338 during the reign of Edward III.",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-09",
+      "question": "At which university did John Wycliffe serve as a scholastic philosopher, theologian, and seminary professor?",
+      "options": [
+        "University of Oxford",
+        "University of Cambridge",
+        "University of Paris",
+        "University of Bologna"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, John Wycliffe was an English scholastic philosopher, theologian, biblical translator, reformer, and seminary professor at the University of Oxford.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-10",
+      "question": "Geoffrey Chaucer lived through the reigns of which three successive English monarchs?",
+      "options": [
+        "Edward II, Edward III, and Richard II",
+        "Edward III, Richard II, and Henry IV",
+        "Richard II, Henry IV, and Henry V",
+        "Henry III, Edward I, and Edward II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist and Easy Handbook, Chaucer was born during the reign of Edward III (1327-1377), lived through Richard II (1377-1399), and died during the reign of Henry IV (1399-1413).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-11",
+      "question": "Which English royal duke served as Geoffrey Chaucer's chief patron and later married Philippa Roet's sister, Katherine Swynford?",
+      "options": [
+        "Thomas of Woodstock, Duke of Gloucester",
+        "Edmund of Langley, Duke of York",
+        "Edward, the Black Prince",
+        "John of Gaunt, Duke of Lancaster"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, John of Gaunt (fourth son of Edward III and Duke of Lancaster) was Chaucer's patron and later married Katherine Swynford, sister of Chaucer's wife Philippa Roet.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-12",
+      "question": "Chaucer's elegiac dream-vision 'The Book of the Duchess' (1369) was written to commemorate the death of which noblewoman?",
+      "options": [
+        "Anne of Bohemia",
+        "Elizabeth de Burgh, Countess of Ulster",
+        "Blanche, Duchess of Lancaster",
+        "Philippa of Hainault"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Easy Handbook, Chaucer's The Book of the Duchess (1369) is an allegory on the death of Blanche of Lancaster, wife of his patron John of Gaunt.",
+      "topic": "chaucer",
+      "topicId": "the-book-of-the-duchess",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-13",
+      "question": "Which Italian work by Giovanni Boccaccio served as the primary source for the plot of Chaucer's 'Troilus and Criseyde'?",
+      "options": [
+        "The Decameron",
+        "Il Filostrato",
+        "Il Teseida",
+        "Il Filocolo"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist and Easy Handbook, the plot of Chaucer's 8,239-line poem Troilus and Criseyde was taken largely from Boccaccio's Il Filostrato.",
+      "topic": "chaucer",
+      "topicId": "troilus-and-criseyde",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-14",
+      "question": "In which work did Geoffrey Chaucer introduce the heroic couplet (decasyllabic rhyming couplet) into English verse for the first time?",
+      "options": [
+        "The Legend of Good Women",
+        "The Book of the Duchess",
+        "The House of Fame",
+        "The Parliament of Fowls"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Easy Handbook and World Literature in Your Fist, Chaucer used the heroic couplet for the first time in English literature in The Legend of Good Women (1385).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-15",
+      "question": "What is the rhyme scheme and line count of the 'Rhyme Royal' (Chaucerian stanza) used by Chaucer in 'Troilus and Criseyde' and 'The Parliament of Foules'?",
+      "options": [
+        "Eight decasyllabic lines rhyming ABABABCC",
+        "Nine lines rhyming ABABBCBCC",
+        "Seven decasyllabic lines rhyming ABABBCC",
+        "Six lines rhyming ABABCC"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, Rhyme Royal (or Chaucerian stanza) consists of seven ten-syllable lines rhyming ABABBCC.",
+      "topic": "chaucer",
+      "topicId": "rhyme-royal",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-16",
+      "question": "Which dream-vision poem by Chaucer is thought to commemorate the 1382 marriage of King Richard II to Anne of Bohemia through a conference of birds on St. Valentine's Day?",
+      "options": [
+        "The House of Fame",
+        "The Book of the Duchess",
+        "The Romaunt of the Rose",
+        "The Parliament of Foules"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, The Parliament of Foules (1382) is a 699-line poem in rhyme royal describing a conference of birds choosing mates on St. Valentine's Day, commemorating Richard II's marriage to Anne of Bohemia.",
+      "topic": "chaucer",
+      "topicId": "the-parliament-of-fowls",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-17",
+      "question": "Which unfinished dream-poem by Chaucer shows a close resemblance to Dante's 'Divine Comedy' and features an eagle as the poet's guide?",
+      "options": [
+        "The House of Fame",
+        "The Legend of Good Women",
+        "The Book of the Duchess",
+        "Anelida and Arcite"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Easy Handbook and World Literature in Your Fist, Chaucer's The House of Fame (1380) closely resembles Dante's Divine Comedy and features an eagle who guides the poet to the Palace of Fame.",
+      "topic": "chaucer",
+      "topicId": "the-house-of-fame",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-18",
+      "question": "At which inn in Southwark do the pilgrims assemble before setting out for the shrine of St. Thomas Becket in 'The Canterbury Tales'?",
+      "options": [
+        "The Boar's Head Inn",
+        "The Tabard Inn",
+        "The Mermaid Tavern",
+        "The Red Lion Inn"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Complete Guide for UGC NET and World Literature in Your Fist, the pilgrims gather at the Tabard Inn in Southwark, owned by the jovial Host, Harry Bailly.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-19",
+      "question": "What is the name of the jovial Host of the Tabard Inn who proposes the storytelling contest in 'The Canterbury Tales'?",
+      "options": [
+        "Oswald the Reeve",
+        "Roger the Cook",
+        "Harry Bailly",
+        "Hubert the Friar"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Harry Bailly (or Bailey) is the Host of the Tabard Inn who proposes the storytelling game and serves as its judge.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-20",
+      "question": "With which two tales does Chaucer's 'The Canterbury Tales' respectively begin and end?",
+      "options": [
+        "Begins with The Miller's Tale and ends with The Pardoner's Tale",
+        "Begins with The Clerk's Tale and ends with The Tale of Melibee",
+        "Begins with The Squire's Tale and ends with The Manciple's Tale",
+        "Begins with The Knight's Tale and ends with The Parson's Tale"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per Easy Handbook For NET English Literature, Chaucer's The Canterbury Tales begins with The Knight's Tale and concludes with The Parson's Tale.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-21",
+      "question": "Although 120 stories were originally planned in 'The Canterbury Tales' (two each way per pilgrim), how many tales were actually included in the work?",
+      "options": [
+        "24 tales",
+        "30 tales",
+        "32 tales",
+        "58 tales"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist and Complete Guide for UGC NET, although 120 tales were planned, only 24 tales were included before Chaucer's death.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-22",
+      "question": "What Latin inscription is engraved on the gold brooch worn by the Prioress (Madame Eglentyne) in the General Prologue to 'The Canterbury Tales'?",
+      "options": [
+        "Memento Mori",
+        "Amor Vincit Omnia",
+        "Radix Malorum Est Cupiditas",
+        "Dulce et Utile"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Easy Handbook and World Literature in Your Fist, Madame Eglentyne (the Prioress) wears a brooch engraved with 'Amor Vincit Omnia' ('Love conquers all').",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-23",
+      "question": "Which poet in 'The Faerie Queene' praised Geoffrey Chaucer as the 'well of English undefiled'?",
+      "options": [
+        "John Dryden",
+        "Matthew Arnold",
+        "Thomas Hoccleve",
+        "Edmund Spenser"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist and Easy Handbook, Edmund Spenser in The Faerie Queene praised Chaucer as 'well of English undefiled'.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-24",
+      "question": "Which critic famously remarked 'Here is God's plenty' regarding the variety of characters in Chaucer's 'The Canterbury Tales'?",
+      "options": [
+        "Matthew Arnold",
+        "G. K. Chesterton",
+        "John Dryden",
+        "W. J. Long"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Complete Guide for UGC NET, John Dryden praised Chaucer's characterization with the famous phrase 'Here is God's plenty' and called him 'The father of English poetry'.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-25",
+      "question": "On which hills does the dreamer Will fall asleep at the opening of William Langland's allegorical poem 'Piers Plowman'?",
+      "options": [
+        "Malvern Hills",
+        "Cotswold Hills",
+        "Chiltern Hills",
+        "Quantock Hills"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, the narrator Will lies down on the Malvern Hills in Worcestershire on a May morning and falls asleep to experience the dream visions of Piers Plowman.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-26",
+      "question": "Into which two principal parts is William Langland's 'The Vision of Piers the Plowman' divided?",
+      "options": [
+        "Fabula and Syuzhet",
+        "Visio and Vita",
+        "Prologue and Epilogue",
+        "Inferno and Purgatorio"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Easy Handbook and World Literature in Your Fist, Piers Plowman is divided into two distinct parts: Visio (the vision of Piers) and Vita (the lives of Dowel, Dobet, and Dobest).",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-27",
+      "question": "What is the subject of the very first vision seen by the dreamer in William Langland's 'Piers Plowman'?",
+      "options": [
+        "The Seven Deadly Sins at Confession",
+        "The Marriage of Lady Meed",
+        "A 'Field Full of Folk'",
+        "The Harrowing of Hell"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, the first vision in Piers Plowman is that of a 'Field Full of Folk' situated between the Tower of Truth and the Dungeon of Wrong.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-28",
+      "question": "In the 'Vita' section of Langland's 'Piers Plowman', which three allegorical figures does the dreamer seek in his spiritual quest?",
+      "options": [
+        "Faith, Hope, and Charity",
+        "Truth, Reason, and Conscience",
+        "Mercy, Peace, and Righteousness",
+        "Dowel, Dobet, and Dobest"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, the second part (Vita) of Piers Plowman is a series of visions titled 'The Search for Dowel, Dobet, and Dobest' (do well, do better, do best).",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-29",
+      "question": "What term is used for the individual sections or cantos into which William Langland's 'Piers Plowman' is divided?",
+      "options": [
+        "Fitts",
+        "Passus",
+        "Books",
+        "Eclogues"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Piers Plowman is divided into sections called 'Passus' (Latin for 'step').",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-30",
+      "question": "In which Middle English dialect was William Langland's 'The Vision of Piers the Plowman' composed?",
+      "options": [
+        "West Midland dialect",
+        "East Midland dialect",
+        "Kentish dialect",
+        "Northern Scottish dialect"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, William Langland wrote The Vision of Piers the Plowman in the West Midland English dialect as part of the Alliterative Revival.",
+      "topic": "langland",
+      "topicId": "william-langland",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-31",
+      "question": "In the climax of 'Piers Plowman', with which figure is Piers the Plowman ultimately identified as he triumphs over death?",
+      "options": [
+        "King Arthur",
+        "Saint Thomas Becket",
+        "Jesus Christ",
+        "Pope Gregory"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, the poem rises to its highest intensity in Piers's triumph over death, where Piers finally appears as Jesus Christ before the dreamer wakes to the sound of Easter bells.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-32",
+      "question": "In which language did John Gower compose his first major poem, 'Speculum Meditantis' (also titled 'Mirour de l'Omme')?",
+      "options": [
+        "Classical Latin",
+        "Middle English",
+        "Tuscan Italian",
+        "French (Anglo-Norman)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per Easy Handbook and World Literature in Your Fist, Gower's Speculum Meditantis (Mirour de l'Omme) was written in French (Anglo-Norman).",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Easy Handbook For NET English Literature",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-33",
+      "question": "Which of John Gower's major poems was written in Latin elegiac couplets and gives a vivid dream-vision account of the Peasants' Revolt of 1381 in its first book?",
+      "options": [
+        "Vox Clamantis",
+        "Speculum Meditantis",
+        "Confessio Amantis",
+        "Cronica Tripertita"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, Vox Clamantis ('The voice of one crying out') is a Latin poem in seven books whose first book is a dream vision recounting the Peasants' Rebellion of 1381.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-34",
+      "question": "Which 33,000-line poem by John Gower was written in Middle English and translates as 'The Lover's Confession'?",
+      "options": [
+        "Vox Clamantis",
+        "Confessio Amantis",
+        "Speculum Meditantis",
+        "In Praise of Peace"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Confessio Amantis ('The Lover's Confession') is Gower's 33,000-line Middle English poem structured around the confession of an ageing lover.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-35",
+      "question": "In the prologue to the first recension of 'Confessio Amantis', which king did John Gower meet on a royal barge on the River Thames, prompting the commission of the poem?",
+      "options": [
+        "King Edward III",
+        "King Henry V",
+        "King Richard II",
+        "King James I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, in the first recension of Confessio Amantis (1390), Gower describes meeting King Richard II on a barge on the River Thames, where the king asked him to write 'som newe thing'.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-36",
+      "question": "In dedicating 'Troilus and Criseyde' to John Gower, what famous epithet did Geoffrey Chaucer bestow upon his contemporary?",
+      "options": [
+        "'O Moral Gower'",
+        "'Well of English undefiled'",
+        "'Philosophical Strode'",
+        "'The Morning Star of Song'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, Chaucer dedicated Troilus and Criseyde to John Gower and addressed him with the enduring epithet 'O Moral Gower'.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-37",
+      "question": "In the frame story of John Gower's 'Confessio Amantis', to whom does the ageing lover make his confession?",
+      "options": [
+        "Morpheus, the god of sleep",
+        "Apollo, the god of poetry",
+        "Piers the Plowman",
+        "Genius, the chaplain of Venus"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Confessio Amantis uses the confession made by an ageing lover (Amans) to the chaplain of Venus (Genius) as its frame story.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-38",
+      "question": "When John Gower revised 'Confessio Amantis' between 1390 and 1392, to which nobleman (later King Henry IV) did he add a new dedication?",
+      "options": [
+        "Edward, the Black Prince",
+        "Henry of Lancaster (Henry Bolingbroke)",
+        "Lionel, Duke of Clarence",
+        "Richard, Duke of York"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, between 1390 and 1392 Gower revised the conclusion of Confessio Amantis and added a dedication to Henry of Lancaster (Henry Bolingbroke), who replaced Richard II in 1399.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-39",
+      "question": "Besides 'Sir Gawain and the Green Knight', which three other Middle English poems found in the same manuscript are attributed to the Gawain Poet (Pearl Poet)?",
+      "options": [
+        "Piers Plowman, Brut, and Ormulum",
+        "The Owl and the Nightingale, Havelok, and King Horn",
+        "Pearl, Patience, and Cleanness (Purity)",
+        "Vox Clamantis, Confessio Amantis, and Speculum Meditantis"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Course Hero Sir Gawain study guide, the Gawain Poet (Pearl Poet) is attributed with four poems in the same manuscript: Sir Gawain and the Green Knight, Pearl, Patience, and Cleanness (Purity).",
+      "topic": "gawain-poet",
+      "topicId": "the-gawain-poet",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Course Hero Sir Gawain",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-40",
+      "question": "What name is given to the signature five-line rhyming conclusion (a short two-syllable line followed by four rhyming lines ABAB) at the end of each alliterative stanza in 'Sir Gawain and the Green Knight'?",
+      "options": [
+        "Rhyme royal",
+        "Heroic couplet",
+        "Tail-rhyme",
+        "Bob and wheel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per Course Hero Sir Gawain study guide, each Gawain stanza ends with a short connecting line ('bob') followed by four rhyming lines ('wheel'), collectively called the 'bob and wheel'.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-41",
+      "question": "During which holiday celebration does the Green Knight ride into King Arthur's court at Camelot to propose his beheading game?",
+      "options": [
+        "New Year's Eve (Christmas season)",
+        "Easter Sunday",
+        "Midsummer's Eve",
+        "Whitsunday (Pentecost)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, King Arthur's court is celebrating New Year's Eve during the Christmas festivities when the Green Knight bursts in to propose the beheading game.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-42",
+      "question": "Who is revealed at the end of 'Sir Gawain and the Green Knight' to be the true identity of the Green Knight in his unenchanted human form?",
+      "options": [
+        "Sir Lancelot of the Lake",
+        "Sir Mordred",
+        "Bertilak de Hautdesert",
+        "Uther Pendragon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per Course Hero and LitCharts Sir Gawain study guides, the Green Knight reveals at the Green Chapel that he is actually Lord Bertilak de Hautdesert, who hosted Gawain at his castle.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-43",
+      "question": "Which enchantress is revealed to be the old lady at Castle Hautdesert who orchestrated the Green Knight's challenge to test the pride of Arthur's court and frighten Guinevere?",
+      "options": [
+        "The Lady of the Lake",
+        "Morgan le Fay",
+        "Queen Mab",
+        "Alcina"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per LitCharts and Course Hero Sir Gawain study guides, the old woman at Bertilak's castle is the sorceress Morgan le Fay (Arthur's half-sister), who enchanted Bertilak to test Camelot.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-44",
+      "question": "What symbolic geometric emblem is painted in gold on the outside of Sir Gawain's red shield to represent his five sets of five chivalric and Christian virtues?",
+      "options": [
+        "The Red Cross of St. George",
+        "The White Rose",
+        "The Phoenix",
+        "The Pentangle (endless knot)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, Gawain's shield is decorated on the outside with a symbolic five-pointed Christian pentangle representing his five virtues.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-45",
+      "question": "What is the central genre and subject of the Middle English poem 'Pearl' by the Pearl Poet?",
+      "options": [
+        "An allegorical dream-vision elegy mourning the death of a young child",
+        "A chivalric romance about the quest for the Holy Grail",
+        "A prose treatise on the translation of the Latin Bible",
+        "A political satire on the Peasants' Revolt of 1381"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Course Hero Sir Gawain study guide, Pearl is a religious dream-vision elegy mourning the loss of a dead child (likened to a lost pearl).",
+      "topic": "gawain-poet",
+      "topicId": "pearl",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-46",
+      "question": "Consider the following statements regarding the socio-economic consequences of the Black Death (1348-1349) in England:\nI. It swept away between one-third and two-thirds of the population, creating a severe shortage of agricultural labour.\nII. The plague recurred in England in 1362, 1367, and 1370, followed by famine and social unrest.\nIII. It strengthened the feudal manor system permanently and eliminated the emerging urban middle class.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Upkar Guide Book and Course Hero Canterbury Tales study guide, the Black Death killed over a third of England's population in 1348-49, recurred in 1362, 1367, and 1370, and created a labour shortage that weakened feudalism and helped skilled workers demand higher wages (making Statement III false).",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, Upkar Guide Book & Course Hero Canterbury Tales",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-47",
+      "question": "Consider the following statements regarding the pilgrims in the General Prologue to 'The Canterbury Tales':\nI. The Knight, the Parson, the Clerk of Oxford, and the Plowman are idealized portraits whom Chaucer does not satirize.\nII. The Plowman is presented as the honest brother of the Parson who helps the poor for the love of Christ.\nIII. The Canon's Yeoman is one of the original 29 pilgrims described at the Tabard Inn before the journey begins.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, the Knight, Parson, Clerk, and Plowman (the Parson's brother) are idealized and not satirized. Statement III is false because the Canon and the Canon's Yeoman join the pilgrims later on the road to Canterbury.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-48",
+      "question": "Arrange the following three literary periods of Geoffrey Chaucer's career and their representative works in correct chronological order:\n1. The English Period (The Canterbury Tales)\n2. The French Period (The Romaunt of the Rose and The Book of the Duchess)\n3. The Italian Period (The House of Fame, The Parliament of Foules, and Troilus and Criseyde)\nChoose the correct sequence:",
+      "options": [
+        "3, 2, 1",
+        "2, 1, 3",
+        "2, 3, 1",
+        "1, 2, 3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, Chaucer's career is divided chronologically into the French Period (1359-1372), the Italian Period (1372-1385), and the English Period (1386-1400).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-49",
+      "question": "Arrange the animals hunted by Lord Bertilak across the three days of the Exchange of Winnings game in 'Sir Gawain and the Green Knight' in correct chronological order:\n1. A cunning fox\n2. A herd of deer\n3. A fierce wild boar\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 1",
+        "3, 2, 1",
+        "1, 2, 3",
+        "2, 1, 3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, Bertilak hunts deer on the first day (exchanged for one kiss), a wild boar on the second day (exchanged for two kisses), and a fox on the third day (exchanged for three kisses, while Gawain conceals the green girdle).",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "easy"
+    },
+    {
+      "id": "age-of-chaucer-set-1-e-50",
+      "question": "Match List I (Work by John Gower) with List II (Language and Verse Form):\nList I:\na. Speculum Meditantis (Mirour de l'Omme)\nb. Vox Clamantis\nc. Confessio Amantis\nList II:\n1. Middle English poem of 33,000 lines in octosyllabic couplets\n2. Anglo-Norman French poem of 29,945 lines in iambic octosyllables\n3. Latin poem of 10,265 lines in elegiac couplets\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-1",
+        "a-2, b-3, c-1",
+        "a-1, b-3, c-2",
+        "a-2, b-1, c-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Gower's Speculum Meditantis (Mirour de l'Omme) is a 29,945-line French poem; Vox Clamantis is a 10,265-line Latin poem in elegiac couplets; and Confessio Amantis is a 33,000-line Middle English poem.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "match",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "easy"
+    }
+  ]
+}

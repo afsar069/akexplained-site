@@ -267,7 +267,7 @@
         {
           "n": 1,
           "title": "Across the whole age",
-          "meta": "50 questions at each level &middot; the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain poet and Wycliffe",
+          "meta": "50 questions &middot; the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain poet and Wycliffe",
           "topics": [
             "ground",
             "chaucer",
@@ -276,10 +276,12 @@
             "terms"
           ],
           "levels": [
-            "easy",
-            "medium"
+            "easy"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "titleCase": "Across the Whole Age",
+          "lede": "Fifty questions at easy level on the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain poet and Wycliffe."
         },
         {
           "n": 2,
@@ -324,6 +326,11 @@
           "count": 50
         }
       ],
+      "hub": {
+        "description": "Age of Chaucer MCQ practice (1340–1400). Set 1 has fifty easy questions on the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain poet and Wycliffe, open to everyone.",
+        "ogDescription": "Practice Age of Chaucer literature with Set 1: fifty easy questions, open to everyone.",
+        "heroSub": "1340 to 1400 &middot; Set 1 is open at easy level"
+      },
       "topics": [
         {
           "value": "ground",
