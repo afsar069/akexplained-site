@@ -39,7 +39,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 CSV_PATH = os.path.join(HERE, '..', 'references', 'taxonomy-master-reference.csv')
 
 # One age slug -> its single period, for the unambiguous single-age sets. Ambiguous
-# ages (middle-english, renaissance, modern, augustan-age) are left out on purpose:
+# ages (middle-english, renaissance, neoclassical) are left out on purpose:
 # pass --period for those, because the set could sit in either child period.
 AGE_TO_PERIOD = {
     'old-english': 'anglo-saxon',
@@ -52,6 +52,9 @@ AGE_TO_PERIOD = {
     'caroline': 'caroline',
     'commonwealth': 'commonwealth',
     'restoration': 'restoration-era',
+    'augustan-age': 'augustan',
+    'age-of-sensibility': 'age-of-sensibility',
+    'modern': 'modern-era',
     'romantic-age': 'romantic',
     'romantic': 'romantic',
     'victorian-age': 'victorian',

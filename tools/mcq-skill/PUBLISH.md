@@ -21,6 +21,10 @@ it. You do **not** need to change the engine for a set in this format.
 python3 tools/mcq-skill/validate_mcq.py <file(s)> --notes notes/<article>/index.md
 ```
 - Add `--legacy` only for an old set with no `src` field (set 1 and 2 style).
+- Add `--strict` for a **new** file (and always for files from the UGC NET skill, `tools/ugc-net-mcq-skill/`): it also
+  checks the file name, `setId`, `age`, `ageName`, `notes`, `setName`, ids and level letter, the tags against the master
+  taxonomy, the fields that must not be there, and explanations that name their source. The skill's files must pass it with
+  no errors, so they need no renaming. Without `--strict` the same faults are only warnings, so old live files stay valid.
 - Add `--others <other sets' files>` to catch repeated facts.
 - **Errors must be zero.** Warnings are advice (a long stem, a stem that shares a word with its answer);
   fix only what is truly wrong. If the owner said "verified", do not fact-check beyond this.
@@ -38,6 +42,8 @@ already tagged (`make_gated_sql.py` will warn if a tag is missing).
    if none, use only the file's own `setName` / topic names — invent nothing). `rev` is read from the file.
 4. In `assets/mcq.js`, move the age's slug from `SOON_HUBS` to `LIVE_AGES` if this is its first live set.
 5. `npx eleventy` (clean, no 404), browser-test, push the branch. `main` only when the owner asks.
+6. The UGC NET skill keeps a copy of the set plan (which sets are live). After a set goes live, or the taxonomy or the registry
+   changes, run `python3 tools/build_skill_zip.py` and commit the new `tools/dist/*.zip` (`--check` says when it is out of date).
 
 ## 3b. LOGIN set (questions go to the database, never to the repo)
 1. Registry `_data/mcqSpec.json`: `"live": true`, `"access": "login"`, `"rev": <n>`, `count`, `levels`,

@@ -63,8 +63,8 @@ function mcqPools(root) {
         if (!fs.existsSync(f)) throw new Error('[syllabus] live MCQ set file missing: ' + path.relative(root, f));
         const d = JSON.parse(fs.readFileSync(f, 'utf8'));
         (d.questions || []).forEach(function (q) {
-          const ok = new RegExp('^' + age.slug.replace(/[-]/g, '\\-') + '-set-' + set.n + '-[em]-\\d+$').test(String(q.id || ''));
-          if (!ok) throw new Error('[syllabus] MCQ id "' + q.id + '" does not look like ' + setId + '-<e|m>-NN');
+          const ok = new RegExp('^' + age.slug.replace(/[-]/g, '\\-') + '-set-' + set.n + '-[emh]-\\d+$').test(String(q.id || ''));
+          if (!ok) throw new Error('[syllabus] MCQ id "' + q.id + '" does not look like ' + setId + '-<e|m|h>-NN');
           if (ids[q.id]) throw new Error('[syllabus] MCQ id used twice: ' + q.id);
           ids[q.id] = 1;
           total++;

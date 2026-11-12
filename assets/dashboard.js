@@ -280,7 +280,7 @@
   function ageOfQuestion(qid, B) {
     var m = /^([a-z]+)-[eh]-\d+$/.exec(String(qid || ''));
     if (m) return { age: B.byDaily[m[1]] || null, mcq: false };
-    m = /^(.+)-set-\d+-[em]-\d+$/.exec(String(qid || ''));
+    m = /^(.+)-set-\d+-[emh]-\d+$/.exec(String(qid || ''));   // e / m / h: a hard level exists (Old English Set 6)
     if (m) return { age: B.byMcq[m[1]] || null, mcq: true };
     return { age: null, mcq: false };
   }
