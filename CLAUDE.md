@@ -101,6 +101,10 @@ To publish a (free) set:
    questions yet (card keeps saying "Questions coming soon"). When an age's first set goes live, move
    its slug to `LIVE_AGES` (card shows progress).
 6. `npx eleventy`, link check, browser test, push the branch. `main` only when asked (rule 5).
+7. **Files from the UGC NET skill** (`tools/ugc-net-mcq-skill/`, Drive folder "UGC NET"): they are made in the site's exact format and must
+   already pass `validate_mcq.py <files> --strict` with no errors; if they do not, send them back rather than editing them. The skill's
+   zip (`tools/dist/ugc-net-mcq-generator-tagger.zip`) holds a copy of the taxonomy and of the set plan: after a set goes live, or the
+   taxonomy, the registry or the validator changes, run `python3 tools/build_skill_zip.py` and commit the new zip (`--check` says when).
 `tools/` is ignored by the build and is not published.
 
 ## 8. Instant quiz (Daily page)
@@ -338,9 +342,8 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
   (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
-  Still to do: align the MCQ generator (`tools/mcq-skill`) to emit `id` + `topicId` + `periodId`, so
-  new sets arrive tagged. (`validate_mcq.py` also still reports "unknown field(s)" for `id`, `topicId`, `periodId`, `qtype`,
-  `passageId` and `passages`, as Old English Set 5 arrived in that format; for a login set `make_gated_sql.py` is the real gate.) Nodes still missing from the master are collected in
+  The UGC NET skill (`tools/ugc-net-mcq-skill/`) now emits `id` + `topicId` + `periodId` + `qtype` and is checked by `validate_mcq.py --strict`;
+  the older generator (`tools/mcq-skill/SKILL.md`) still does not. (`validate_mcq.py` accepts these fields; for a login set `make_gated_sql.py` is the real gate.) Nodes still missing from the master are collected in
   `tools/tagging/reports/node-gaps.md` (next migration batch; the owner decides).
 - Migrate a guest's `localStorage` attempts into the DB on login — planned, not built.
 - Password reset and email-confirmation landings are built in `assets/login.js` (implicit flow:

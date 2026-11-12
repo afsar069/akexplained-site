@@ -50,3 +50,9 @@ Agar koi **pehle se bana** MCQ JSON (kisi bhi AI ka — GPT, Gemini — ya puran
 (`topicId` + `periodId` daalna), to uske liye alag skill hai: **`tools/mcq-tagger-skill/`**. Wo
 question kuch nahi badalti, sirf tag lagati hai, aur ek checker (`tag_mcq.py`) se garanti deti hai
 ki tag website par chadhne layak hain. Uska apna `README.md` aur `SKILL.md` wahin hai.
+
+## UGC NET ke liye (Google Drive "UGC NET" folder se) — alag skill
+UGC NET MCQ batches ke liye **`tools/ugc-net-mcq-skill/`** hai. Ye Drive ke notes se sawal banati hai, site ke exact
+format (set/ids/age/setName/topicRead) aur owner ke tagging rules ke saath, aur files bhejne se pehle
+`validate_mcq.py --strict` chalati hai. Upload karne wala zip: `tools/dist/ugc-net-mcq-generator-tagger.zip`
+(`python3 tools/build_skill_zip.py` se banta hai). Uska `README.md` wahin hai.

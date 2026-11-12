@@ -26,7 +26,8 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 
 ## The two jobs you will meet most
 - **Publish an MCQ set**: free = `CLAUDE.md` rule 7 (files in `assets/questions/`, registry row in
-  `_data/mcqSpec.json`). Login = rule 15 (questions go into the Supabase table `mcq_papers` with
+  `_data/mcqSpec.json`; check new files with `python3 tools/mcq-skill/validate_mcq.py <files> --strict`; files from the UGC NET skill
+  must already pass it). Login = rule 15 (questions go into the Supabase table `mcq_papers` with
   `tools/mcq-skill/make_gated_sql.py`, read back with the fingerprint, files never in the repo).
 - **Change the database**: rules 9 and 14. Test the SQL on a scratch local Postgres first, then apply it,
   read it back, run the security advisors, keep the migration file in `supabase/migrations/`. If you have no
