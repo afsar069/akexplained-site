@@ -1,0 +1,872 @@
+{
+  "setId": "early-tudor-set-1",
+  "rev": 1,
+  "age": "early-tudor",
+  "ageName": "Early Tudor Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/renaissance/",
+  "notesTitle": "Renaissance — the full notes",
+  "topics": {
+    "ground": "Humanism and the Reformation",
+    "poetry": "Poetry and the sonnet",
+    "prose": "Prose and the English Bible",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Fifty foundational recall questions across More's Utopia, Skelton, Wyatt, Surrey, Tottel's Miscellany, Tyndale and Ascham.",
+  "questions": [
+    {
+      "id": "early-tudor-set-1-e-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Which thirty-year dynastic conflict between the Houses of Lancaster and York (1455–1485) ended with the accession of Henry VII and the establishment of the Tudor dynasty?",
+      "options": [
+        "The Wars of the Roses",
+        "The Hundred Years' War",
+        "The Bishops' Wars",
+        "The Barons' War"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Wars of the Roses (1455–1485), fought between the House of Lancaster (Red Rose) and the House of York (White Rose), ended with the accession of Henry VII in 1485, founding the Tudor dynasty.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Which Italian poet and scholar is honoured in literary history as the 'Father of Humanism'?",
+      "options": [
+        "Boccaccio",
+        "Petrarch",
+        "Ariosto",
+        "Tasso"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Francesco Petrarca (Petrarch) is recognized as the Father of Humanism; his revival of classical antiquity and his Italian sonnet form deeply shaped Early Tudor humanists and courtier poets.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "desiderius-erasmus",
+      "periodId": "early-tudor",
+      "question": "Which Dutch Christian humanist and close friend of Sir Thomas More wrote the satirical Latin treatise Moriae Encomium (The Praise of Folly, 1509), whose title puns on More's surname?",
+      "options": [
+        "Sebastian Brant",
+        "Amerigo Vespucci",
+        "Desiderius Erasmus",
+        "Philip Melanchthon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Desiderius Erasmus (1466–1536), called 'the crowning glory of the Christian humanists', wrote Moriae Encomium (The Praise of Folly, 1509), using a Latin title that playfully puns on the name of his friend Thomas More.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "desiderius-erasmus",
+      "periodId": "early-tudor",
+      "question": "Who is the female personified speaker that narrates Desiderius Erasmus's 1509 humanist satire Moriae Encomium?",
+      "options": [
+        "Fortune",
+        "Nature",
+        "Fame",
+        "Folly"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Erasmus's Moriae Encomium (The Praise of Folly, 1509), the personified figure of Folly herself serves as the narrator, delivering an ironic encomium on human pretension and ecclesiastical abuses.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Which German reformer sparked the Protestant Reformation in 1517 by publishing his Ninety-Five Theses against the sale of indulgences?",
+      "options": [
+        "Ulrich Zwingli",
+        "Martin Luther",
+        "John Calvin",
+        "Philip Melanchthon"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1517 Martin Luther challenged papal authority with his Ninety-Five Theses attacking corrupt indulgence practices and affirming scripture and faith, initiating the Protestant Reformation.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-06",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "In whose household did the young Thomas More serve as a page during his boyhood—a statesman and Archbishop of Canterbury who later appears as a character in Book I of Utopia?",
+      "options": [
+        "Cardinal John Morton",
+        "Cardinal Thomas Wolsey",
+        "Archbishop Thomas Cranmer",
+        "Bishop Hugh Latimer"
+      ],
+      "correct_option_id": 0,
+      "explanation": "As a boy, Thomas More served as a page in the household of John Morton, Archbishop of Canterbury and Lord Chancellor under Henry VII; More later portrayed Cardinal Morton as the host of a dinner debate in Book I of Utopia.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-07",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "Which one of the four London Inns of Court did Sir Thomas More enter in 1496 to train as a barrister after studying for two years at Oxford?",
+      "options": [
+        "Gray's Inn",
+        "The Inner Temple",
+        "The Middle Temple",
+        "Lincoln's Inn"
+      ],
+      "correct_option_id": 3,
+      "explanation": "After two years at Oxford University studying Greek and Latin, Thomas More returned to London in 1496 and was admitted to Lincoln's Inn to train for the legal profession.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-08",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "What highest judicial and political office in the realm did Sir Thomas More hold under King Henry VIII from October 1529 until his resignation in May 1532?",
+      "options": [
+        "Lord High Treasurer of the Realm",
+        "Archbishop of Canterbury",
+        "Lord High Chancellor of England",
+        "Master of the Royal Household"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sir Thomas More served as Lord High Chancellor of England from October 1529 until 16 May 1532, resigning when he could not in conscience support Henry VIII's break with Rome.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-09",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "Which two parliamentary statutes of 1534 did Sir Thomas More refuse to swear to, leading to his imprisonment in the Tower of London and execution on 6 July 1535?",
+      "options": [
+        "The Act of Uniformity and the Corporation Act",
+        "The Statute of Artificers and the Poor Law Act",
+        "The Act of Succession and the Act of Supremacy",
+        "The Petition of Right and the Grand Remonstrance"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 1534 Sir Thomas More refused to swear to the Act of Succession and the Act (Oath) of Supremacy, which recognized Henry VIII's marriage to Anne Boleyn and declared the king Supreme Head of the Church of England.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-10",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "What famous last words did Sir Thomas More speak on the scaffold on 6 July 1535 before his execution for refusing the Oath of Supremacy?",
+      "options": [
+        "'The king's good servant, but God's first.'",
+        "'We shall this day light such a candle in England.'",
+        "'This is the headsman that shall cure all my grief.'",
+        "'Lord, open the King of England's eyes.'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Before being beheaded on 6 July 1535, Sir Thomas More declared on the scaffold that he died 'the king's good servant, but God's first.' He was later canonized by Pope Pius XI in 1935.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-11",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "john-heywood",
+      "periodId": "early-tudor",
+      "question": "What dramatic genre of short, witty secular plays—performed between courses at court banquets under Henry VIII and exemplified by John Heywood's The Four PP—bridged morality plays and regular Tudor comedy?",
+      "options": [
+        "The mystery cycle",
+        "The interlude",
+        "The court masque",
+        "The heroic tragedy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Interludes were short dramatic pieces filling intervals at court feasts and noble halls that flourished under the patronage of Henry VIII, with John Heywood's The Four PP as the most famous example.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "early-tudor-set-1-e-12",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Arrange the reigns of the following four Tudor monarchs in chronological order:\n(A) King Henry VII\n(B) King Henry VIII\n(C) King Edward VI\n(D) Queen Mary I",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → D → C",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Henry VII reigned from 1485 to 1509 (A), followed by his son Henry VIII from 1509 to 1547 (B), his grandson Edward VI from 1547 to 1553 (C), and Queen Mary I from 1553 to 1558 (D).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "early-tudor-set-1-e-13",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "early-tudor",
+      "question": "From which three universities did the Early Tudor poet John Skelton receive the academic honour and title of 'Poet Laureate'?",
+      "options": [
+        "Oxford, Louvain, and Cambridge",
+        "Paris, Bologna, and Wittenberg",
+        "St Andrews, Glasgow, and Aberdeen",
+        "Padua, Salamanca, and Heidelberg"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Skelton (1460–1529), tutor to Prince Henry (later Henry VIII), was created Poet Laureate as an academic distinction by the Universities of Oxford, Louvain, and Cambridge.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-14",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "early-tudor",
+      "question": "Which satirical poem by John Skelton takes the persona of a ragged vagabond to attack the corruption and abuses of the clergy, and later gave Edmund Spenser the name of his pastoral persona?",
+      "options": [
+        "The Bowge of Courte",
+        "Phyllyp Sparowe",
+        "Collyn Clout",
+        "Dirge on Edward IV"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Skelton's Collyn Clout is a scathing complaint by a vagabond speaker against the misdeeds of the clergy; Edmund Spenser later adopted the name 'Colin Clout' for his shepherd persona in The Shepheardes Calender.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-15",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "early-tudor",
+      "question": "Which realistic and coarse satirical poem by John Skelton vividly depicts country women flocking to an alewife's tavern in Surrey to barter household goods for ale?",
+      "options": [
+        "A Garlande of Laurell",
+        "The Tunnyng of Elynour Rummyng",
+        "Ballade of the Scottysshe Kynge",
+        "Why Come Ye Nat to Courte?"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In The Tunnyng of Elynour Rummyng, John Skelton uses rapid Skeltonic verse to give a realistic, earthy satire of tippling country women at Elynour Rummyng's alehouse.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-16",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "early-tudor",
+      "question": "Which morality play by John Skelton portrays a generous prince ruined by mistaken liberality and bad courtly counsellors before being restored by Good Hope and Perseverance?",
+      "options": [
+        "Fulgens and Lucres",
+        "The Castle of Perseverance",
+        "The Play of the Weather",
+        "Magnificence"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Skelton's Magnificence is a Tudor political morality play in which the prince Magnificence is corrupted by courtly vices such as Counterfeit Countenance and Cloaked Collusion, ruined by Adversity, and restored by Good Hope and Perseverance.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-17",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "alexander-barclay",
+      "periodId": "early-tudor",
+      "question": "Which Early Tudor poet translated Sebastian Brant's German satire Narrenschiff into English verse as The Ship of Fools (1509) and wrote the earliest English pastoral Eclogues (1513–1514)?",
+      "options": [
+        "Stephen Hawes",
+        "George Gascoigne",
+        "Alexander Barclay",
+        "Nicholas Udall"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Alexander Barclay (1484–1552) adapted Sebastian Brant's German Narrenschiff into English verse as The Ship of Fools (1509) and composed Certayne Egloges (1513–1514), the earliest formal pastorals in English.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-18",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "stephen-hawes",
+      "periodId": "early-tudor",
+      "question": "Which Tudor poet and groom of the chamber to Henry VII wrote the allegorical chivalric romance The Passetyme of Pleasure (1509) and The Example of Virtue (1512), both printed by Wynkyn de Worde?",
+      "options": [
+        "Alexander Barclay",
+        "Stephen Hawes",
+        "Nicholas Udall",
+        "Roger Ascham"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Stephen Hawes (1474–1523) wrote the Tudor allegories The Passetyme of Pleasure (printed by Wynkyn de Worde in 1509) and The Example of Virtue (printed in 1512).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-19",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-wyatt",
+      "periodId": "early-tudor",
+      "question": "In which county of England was the courtier poet and diplomat Sir Thomas Wyatt born in 1503, where he later served as High Sheriff?",
+      "options": [
+        "Kent",
+        "Devon",
+        "Yorkshire",
+        "Warwickshire"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sir Thomas Wyatt (1503–1542), son of Henry VIII's councillor Sir Henry Wyatt, was born at Allington Castle in Kent; he was knighted in 1535, appointed High Sheriff of Kent, and elected Knight of the Shire in 1541.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-20",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-wyatt",
+      "periodId": "early-tudor",
+      "question": "Which lyric poem by Sir Thomas Wyatt opens with the line 'They flee from me, that sometime did me seek / With naked foot, stalking in my chamber'?",
+      "options": [
+        "'Whoso List to Hunt'",
+        "'My Galley Charged with Forgetfulness'",
+        "'Forget Not Yet the Tried Intent'",
+        "'They Flee from Me'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sir Thomas Wyatt's famous court lyric 'They Flee from Me', written in three rhyme-royal stanzas, opens with 'They flee from me, that sometime did me seek / With naked foot, stalking in my chamber.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "terza-rima",
+      "periodId": "early-tudor",
+      "question": "Besides the Petrarchan sonnet, which Italian three-line interlocking stanza form did Sir Thomas Wyatt introduce into English poetry in his verse satires and penitential psalms?",
+      "options": [
+        "Spenserian stanza",
+        "Terza rima",
+        "Heroic couplet",
+        "Alliterative long line"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In addition to introducing the Petrarchan sonnet into English, Sir Thomas Wyatt introduced Dante's interlocking three-line stanza form, terza rima (aba bcb cdc), as well as ottava rima and rondeaux.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "early-tudor-set-1-e-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "henry-howard-surrey",
+      "periodId": "early-tudor",
+      "question": "To which noble lady (Lady Elizabeth Fitzgerald) did Henry Howard, Earl of Surrey, address a celebrated group of his love sonnets?",
+      "options": [
+        "Penelope",
+        "Rosalind",
+        "Geraldine",
+        "Lucasta"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Henry Howard, Earl of Surrey (1517–1547), addressed his famous love sonnets to 'Geraldine' (Lady Elizabeth Fitzgerald, daughter of the Earl of Kildare).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "henry-howard-surrey",
+      "periodId": "early-tudor",
+      "question": "What fate befell the poet Henry Howard, Earl of Surrey, on 13 January 1547 in the final days of King Henry VIII's reign?",
+      "options": [
+        "He was beheaded on Tower Hill on a charge of treason",
+        "He was burned at the stake at Vilvoorde for heresy",
+        "He drowned in the Irish Sea on a voyage to Dublin",
+        "He died of a fever at Sherborne while travelling to Falmouth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Suspected by the ageing and paranoid King Henry VIII of plotting to usurp the crown from Prince Edward, Henry Howard, Earl of Surrey, was arrested with his father the Duke of Norfolk and beheaded on 13 January 1547.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "tottels-miscellany",
+      "periodId": "early-tudor",
+      "question": "How many poems in total—including 97 attributed to Sir Thomas Wyatt and 40 to the Earl of Surrey—were printed in the first edition of Richard Tottel's Songs and Sonettes (Tottel's Miscellany, 1557)?",
+      "options": [
+        "108 poems",
+        "154 poems",
+        "365 poems",
+        "271 poems"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Richard Tottel's Songs and Sonettes (Tottel's Miscellany, 1557) contained 271 poems in total, of which 97 were attributed to Sir Thomas Wyatt and 40 to Henry Howard, Earl of Surrey.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-25",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "thomas-wyatt",
+      "periodId": "early-tudor",
+      "question": "Which of the following statements about the poetic innovations of Sir Thomas Wyatt and Henry Howard, Earl of Surrey, are correct?\n(A) Wyatt introduced the fourteen-line sonnet into English from the Italian model of Petrarch.\n(B) Surrey established the English (or Shakespearean) sonnet pattern of three quatrains and a final rhyming couplet (abab cdcd efef gg).\n(C) Surrey introduced blank verse (unrhymed iambic pentameter) into English in his translation of Books II and IV of Virgil's Aeneid.\n(D) Both Wyatt and Surrey published all of their sonnets during the reign of Henry VII before 1509.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statements (A), (B), and (C) accurately summarize the prosodic achievements of Wyatt and Surrey. Statement (D) is false because Wyatt (b. 1503) and Surrey (b. 1517) wrote under Henry VIII and their poems were first collected in print posthumously in Tottel's Miscellany (1557).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-26",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "In which language and in which year was Sir Thomas More's two-book political and philosophical work Utopia first published on the Continent?",
+      "options": [
+        "In Latin in 1516",
+        "In English in 1551",
+        "In French in 1509",
+        "In Italian in 1535"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sir Thomas More wrote and published Utopia in Latin in 1516; it was first translated into English thirty-five years later by Ralph Robinson in 1551.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-27",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "Who is the fictional Portuguese traveller and philosopher in Sir Thomas More's Utopia who claims to have sailed with Amerigo Vespucci and lived for five years on the island of Utopia?",
+      "options": [
+        "Peter Giles of Antwerp",
+        "Cardinal John Morton",
+        "Raphael Hythloday",
+        "John Clement of London"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Raphael Hythloday (or Hythlodaeus) is the fictional Portuguese mariner and scholar who accompanied Amerigo Vespucci to the New World and narrates the customs and institutions of Utopia in Book II.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-28",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "In which Flemish city does the narrator Thomas More meet his real-life humanist friend Peter Giles and the traveller Raphael Hythloday in Book I of Utopia?",
+      "options": [
+        "Geneva",
+        "Florence",
+        "Wittenberg",
+        "Antwerp"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Book I of Utopia, after attending a royal diplomatic mission in Bruges in 1515, Thomas More travels to Antwerp, where his friend Peter Giles introduces him to the mariner Raphael Hythloday.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-29",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "According to Book II of Sir Thomas More's Utopia, what is the capital city of the island of Utopia, situated on the river Anider among the island's fifty-four uniform cities?",
+      "options": [
+        "Amaurot",
+        "Bensalem",
+        "Heliopolis",
+        "Cleopolis"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Book II of Utopia, the island contains fifty-four planned cities identical in layout, laws, and language, with Amaurot (situated on the river Anider) serving as the capital where the central council meets.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-30",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "In Book II of More's Utopia, how many hours a day do the citizens of Utopia work, since both men and women share equally in useful labour and there are no idle classes?",
+      "options": [
+        "Ten hours a day",
+        "Six hours a day",
+        "Twelve hours a day",
+        "Fourteen hours a day"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Because all able-bodied Utopian men and women engage in productive work (including agriculture and a trade) and no one wastes labour on luxury, citizens work only six hours a day and devote their leisure to lectures, music, and conversation.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "For what humiliating everyday objects do the citizens of More's Utopia use gold and silver in order to strip precious metals of their false value?",
+      "options": [
+        "Ploughshares and spades for farming",
+        "Roof tiles for the temples of Mithras",
+        "Armour and shields for their national army",
+        "Chamber pots and fetters for slaves"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Utopians value iron for its practical utility and hold gold and silver in contempt, using gold and silver to make chamber pots and close-stools as well as chains and fetters for slaves, while giving pearls and gems to children as toys.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "thomas-more",
+      "periodId": "early-tudor",
+      "question": "Besides Utopia, which historical prose biography written by Sir Thomas More in both English and Latin shaped the Tudor view of the last Yorkist king and later served as a source for William Shakespeare?",
+      "options": [
+        "The History of the Reign of King Henry VII",
+        "The History of the World",
+        "The History of King Richard III",
+        "Chronicles of England, Scotland, and Ireland"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sir Thomas More wrote The History of King Richard III (composed c. 1513, printed 1557) in both English and Latin, a landmark of Tudor historical prose that established the portrait of Richard III dramatized by Shakespeare.",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Which Reformation scholar and martyr produced the first printed English New Testament (1525–1526), translated directly from the original Greek?",
+      "options": [
+        "Nicholas of Hereford",
+        "William Tyndale",
+        "Miles Coverdale",
+        "Archbishop Thomas Cranmer"
+      ],
+      "correct_option_id": 1,
+      "explanation": "William Tyndale (1494–1536) was the first scholar to translate the New Testament into Early Modern English directly from the original Greek and to print it using the movable-type press in 1525–1526.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Which Tudor translator completed William Tyndale's biblical work and published the first complete printed English Bible (Old and New Testaments) in 1535?",
+      "options": [
+        "Ralph Robinson",
+        "Sir Thomas North",
+        "William Caxton",
+        "Miles Coverdale"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Miles Coverdale completed the translation begun by William Tyndale and brought out the first complete printed English Bible in 1535.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "early-tudor-set-1-e-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "To which Tudor monarch did Roger Ascham dedicate his 1545 English dialogue on the art of archery, Toxophilus?",
+      "options": [
+        "King Henry VIII",
+        "King Edward IV",
+        "Queen Elizabeth I",
+        "King James I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Roger Ascham published Toxophilus ('lover of the bow'), the first book on archery in English, in 1545 and dedicated it to King Henry VIII.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-36",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "What are the names of the two speakers who conduct the Platonic dialogue in Roger Ascham's 1545 treatise on the art of archery?",
+      "options": [
+        "Irenius and Eudoxus",
+        "More and Hythlodaeus",
+        "Toxophilus and Philologus",
+        "Piscator and Venator"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Roger Ascham's Toxophilus (1545) is cast as a Platonic dialogue between Toxophilus ('lover of the bow', a student of archery) and Philologus ('lover of learning', a scholar).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-37",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Which royal princess did Roger Ascham serve as tutor in Greek and Latin between 1548 and 1550?",
+      "options": [
+        "Margaret Tudor, Queen of Scots",
+        "Mary Stuart, Queen of Scots",
+        "Princess Mary, Duchess of Suffolk",
+        "Princess Elizabeth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Roger Ascham (1515–1568) served as tutor in Greek and Latin to the young Princess Elizabeth between 1548 and 1550 and later served as Latin Secretary at court.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-38",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Which of the following statements accurately describe Roger Ascham's educational treatise The Scholemaster?\n(A) Ascham began writing The Scholemaster in 1563, and it was published posthumously in 1570.\n(B) It focuses on the teaching of Latin and the moral and intellectual bringing-up of youth in gentlemen's and noblemen's households.\n(C) John Lyly borrowed the Greek name 'Euphues' (a person well-endowed by nature with wit and grace) from Ascham's The Scholemaster.\n(D) The Scholemaster was written in medieval French verse as a chivalric romance on King Arthur.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statements (A), (B), and (C) are all accurate facts about Roger Ascham's The Scholemaster (begun 1563, published 1570). Statement (D) is false because The Scholemaster is a plain-style English prose treatise on classical education and the psychology of learning.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-39",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "utopian-literature",
+      "periodId": "early-tudor",
+      "question": "From which Greek roots did Sir Thomas More coin the word 'Utopia', creating a deliberate play on two nearly identical Greek compounds?",
+      "options": [
+        "Ou-topos ('no place') and eu-topos ('good place')",
+        "Dys-topos ('bad place') and pan-topos ('all places')",
+        "Hiero-topos ('sacred place') and paleo-topos ('ancient place')",
+        "Cosmo-topos ('world place') and mono-topos ('single place')"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sir Thomas More coined 'Utopia' from the Greek ou-topos ('no place' or 'nowhere') while punning on the homophonous Greek eu-topos ('a good place').",
+      "src": "user-supplied: Utopia Study Guide (Course Hero)"
+    },
+    {
+      "id": "early-tudor-set-1-e-40",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "dystopian-literature",
+      "periodId": "early-tudor",
+      "question": "What literary term serves as the direct opposite of a 'utopia', designating an imaginary society that is oppressive, nightmarish, or anti-ideal?",
+      "options": [
+        "Arcadia",
+        "Pastoral",
+        "Dystopia",
+        "Picaresque"
+      ],
+      "correct_option_id": 2,
+      "explanation": "While a utopia depicts an ideal commonwealth ('no place' / 'good place'), its opposite is a dystopia (anti-utopia), an imaginary society where uniformity or tyranny crushes human freedom.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "petrarchan-sonnet",
+      "periodId": "early-tudor",
+      "question": "How are the fourteen lines of a traditional Petrarchan sonnet divided, and what is the standard rhyme scheme of its opening eight-line section?",
+      "options": [
+        "An eight-line octave (abbaabba) and a six-line sestet (cdecde or cdcdcd)",
+        "Three four-line quatrains (abab cdcd efef) and a two-line rhyming couplet (gg)",
+        "Two seven-line rhyme-royal stanzas rhyming ababbcc dedeeff",
+        "Seven rhyming heroic couplets of iambic pentameter (aabbccddeeffgg)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Petrarchan sonnet, introduced into English by Sir Thomas Wyatt, divides its fourteen lines into an eight-line octave rhyming abbaabba and a six-line sestet rhyming cdecde or cdcdcd.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "petrarchan-sonnet",
+      "periodId": "early-tudor",
+      "question": "In Sir Thomas Wyatt's English adaptation of the Italian sonnet (such as 'Whoso List to Hunt'), how does he frequently modify the six-line sestet so that it closes with a rhyming couplet?",
+      "options": [
+        "ababcc",
+        "bcbcee",
+        "defdef",
+        "cddcee"
+      ],
+      "correct_option_id": 3,
+      "explanation": "While keeping the Petrarchan octave (abbaabba), Sir Thomas Wyatt frequently varied the sestet in English to rhyme cddcee (as in 'Whoso List to Hunt'), introducing a concluding couplet.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "early-tudor-set-1-e-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "blank-verse",
+      "periodId": "early-tudor",
+      "question": "What is the exact prosodic definition of the 'blank verse' introduced into English poetry by Henry Howard, Earl of Surrey?",
+      "options": [
+        "Rhymed iambic heptameter couplets of fourteen syllables per line",
+        "Unrhymed iambic pentameter (five iambic feet per line)",
+        "Unrhymed dactylic hexameter modelled on Homer and Virgil",
+        "Short two- or three-stress lines linked by rapid run-on rhymes"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Blank verse consists of unrhymed iambic pentameter (five iambic feet, or ten syllables per line, without end rhyme); Surrey pioneered it in his translation of Books II and IV of Virgil's Aeneid.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "metre",
+      "periodId": "early-tudor",
+      "question": "What is the metrical structure of 'Poulter's measure', a verse form used frequently by Wyatt, Surrey, and George Gascoigne in the sixteenth century?",
+      "options": [
+        "Eight iambic pentameter lines followed by a 12-syllable iambic alexandrine",
+        "Seven iambic pentameter lines rhyming ababbcc in Chaucerian rhyme royal",
+        "Couplets alternating a 12-syllable alexandrine and a 14-syllable fourteener",
+        "Three-line tercets linked by the interlocking chain rhyme aba bcb cdc"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Poulter's measure consists of rhymed couplets in which a 12-syllable iambic hexameter line (an alexandrine) alternates with a 14-syllable iambic heptameter line (a fourteener), as in Surrey's 'Complaint of the Absence of Her Love Being upon the Sea'.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "early-tudor-set-1-e-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "pastoral",
+      "periodId": "early-tudor",
+      "question": "What literary term designates a conventional poem or dialogue celebrating the idealized rural life, music, and loves of shepherds, introduced into Tudor English by Alexander Barclay's Certayne Egloges (1513–1514)?",
+      "options": [
+        "Pastoral",
+        "Epithalamion",
+        "Picaresque",
+        "Fabliau"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pastoral (and its dialogue form, the eclogue) celebrates in idealized terms the rural life, song contests, and loves of shepherds; Alexander Barclay's Certayne Egloges (1513–1514) were the earliest English pastorals.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-46",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "What bibliographical term is given to books printed in Europe during the earliest infancy of movable-type printing, specifically before the year 1501?",
+      "options": [
+        "Variorum",
+        "Incunabula",
+        "Miscellany",
+        "Palimpsest"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The term 'incunabula' (meaning 'swaddling clothes' or 'cradle') refers to books printed from movable type before the year 1501, such as the editions of William Caxton and early Wynkyn de Worde.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-47",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "cs-lewis",
+      "periodId": "early-tudor",
+      "question": "Which twentieth-century critic and literary historian, in English Literature in the Sixteenth Century, Excluding Drama, called Sir Thomas Wyatt 'the father of the Drab Age'?",
+      "options": [
+        "George Saintsbury",
+        "F. R. Leavis",
+        "C. S. Lewis",
+        "E. M. W. Tillyard"
+      ],
+      "correct_option_id": 2,
+      "explanation": "C. S. Lewis divided sixteenth-century English verse into the 'Drab' (plain, unadorned) and 'Golden' ages and called Sir Thomas Wyatt 'the father of the Drab Age'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-48",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "early-tudor",
+      "periodId": "early-tudor",
+      "question": "Which English Reformation translator is frequently called the 'Architect of the English Language' for coining enduring biblical phrases that passed directly into the King James Bible of 1611?",
+      "options": [
+        "Roger Ascham",
+        "Sir Thomas Elyot",
+        "Stephen Hawes",
+        "William Tyndale"
+      ],
+      "correct_option_id": 3,
+      "explanation": "William Tyndale (1494–1536), fluent in eight languages, is called the 'Architect of the English Language' because his 1526 Greek-to-English New Testament shaped the phrasing of the 1611 Authorized Version.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-49",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Match List I (Early Tudor Writer) with List II (Major Work):\n\nList I (Early Tudor Writer)\n(A) Sir Thomas More\n(B) John Skelton\n(C) Roger Ascham\n(D) Alexander Barclay\n\nList II (Major Work)\n(I) Toxophilus (1545)\n(II) Utopia (1516)\n(III) The Ship of Fools (1509)\n(IV) Collyn Clout",
+      "options": [
+        "A-II, B-IV, C-I, D-III",
+        "A-IV, B-II, C-I, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-III, B-IV, C-I, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sir Thomas More wrote Utopia (A-II); John Skelton wrote the ecclesiastical satire Collyn Clout (B-IV); Roger Ascham wrote Toxophilus (C-I); and Alexander Barclay wrote The Ship of Fools (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "early-tudor-set-1-e-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "tottels-miscellany",
+      "periodId": "early-tudor",
+      "question": "Match List I (Early Tudor Literary Milestone) with List II (Year):\n\nList I (Early Tudor Literary Milestone)\n(A) Latin publication of Sir Thomas More's Utopia\n(B) Miles Coverdale's first complete printed English Bible\n(C) Roger Ascham's Toxophilus dedicated to Henry VIII\n(D) Richard Tottel's Songs and Sonettes (Tottel's Miscellany)\n\nList II (Year)\n(I) 1535\n(II) 1516\n(III) 1557\n(IV) 1545",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "More's Latin Utopia appeared in 1516 (A-II); Miles Coverdale's complete printed English Bible appeared in 1535 (B-I); Roger Ascham's Toxophilus appeared in 1545 (C-IV); and Tottel's Miscellany was published in 1557 (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}
