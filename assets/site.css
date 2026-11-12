@@ -3645,3 +3645,20 @@ a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);c
 /* Side-nav auth link avatar (desktop header): show avatar, hide the person icon when logged in */
 .navauth-av{width:22px;height:22px;border-radius:50%;object-fit:cover;flex:none;background:var(--border)}
 #navAuthLink[data-state="in"] .ico{display:none}
+
+/* Owner-only "upload a paper" page (/admin/upload-paper/), 2026-11-12.
+   Drop-downs match the text boxes above them; the check list uses a tick or a cross. */
+.field select{
+  width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);background:#fff;
+  border:1.5px solid var(--border);border-radius:10px;padding:11px 13px;
+}
+.field select:focus{outline:none;border-color:var(--teal);box-shadow:var(--glow)}
+.field input[type=file]{padding:9px 11px;font-size:.95rem}
+.uprep{list-style:none;margin:0;padding:0;font-size:.93rem;line-height:1.55}
+.uprep li{position:relative;padding-left:26px;margin:0 0 8px;color:var(--ink)}
+.uprep li::before{position:absolute;left:0;top:0;font-weight:700}
+.uprep li.ok::before{content:"\2713";color:var(--teal)}
+.uprep li.no::before{content:"\2717";color:var(--accent)}
+.uprep li.no{color:#8A2B16}
+.uprep li.info::before{content:"\2022";color:var(--body)}
+.uprep li.info{color:var(--body)}

@@ -1,4 +1,11 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
 <?xml version="1.0" encoding="UTF-8"?>
+{# Hand-written, except the UP Assistant Professor mock tests: those lines come from the paper
+    catalog (_data/paperCatalog.json), the same list that makes their pages. Every other page's
+    line is added by hand, as before. -#}
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://akexplained.com/</loc><priority>1.0</priority></url>
   <url><loc>https://akexplained.com/english-literature/</loc><priority>0.9</priority></url>
@@ -24,9 +31,9 @@
   <url><loc>https://akexplained.com/exams/state-psc/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/paper-2-mock-tests/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/paper-2-mock-tests/test-1/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/paper-2-mock-tests/test-2/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/paper-2-mock-tests/test-3/</loc><priority>0.6</priority></url>
+{%- for mock in statePscMockTests.tests %}
+  <url><loc>https://akexplained.com{{ mock.url }}</loc><priority>0.6</priority></url>
+{%- endfor %}
   <url><loc>https://akexplained.com/exams/ma-ba/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/university/ccs-meerut/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/university/ignou/</loc><priority>0.8</priority></url>

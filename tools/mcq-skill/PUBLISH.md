@@ -46,6 +46,23 @@ already tagged (`make_gated_sql.py` will warn if a tag is missing).
    changes, run `python3 tools/build_skill_zip.py` and commit the new `tools/dist/*.zip` (`--check` says when it is out of date).
 
 ## 3b. LOGIN set (questions go to the database, never to the repo)
+
+**The owner can now do this part themselves at `/admin/upload-paper/`** (built 2026-11-12). The page takes
+the file, checks it, and writes the rows with the owner's own login — no SQL, no pasting. Steps 2 to 4 below
+are the old route, still needed when the owner wants someone else to load it, or when a paper must be loaded
+from a session rather than a browser. Either way the registry step (1) and the page work (5 to 7) are the same.
+
+**The upload page route**
+1. Registry as in step 1 below (an MCQ set); a mock test needs no registry row.
+2. Tell the owner: open `/admin/upload-paper/`, choose the file(s), check the report, set Title, Category
+   and Status, press Upload. The page shows a short code for each level; the code matching proves the
+   database holds exactly their file.
+3. The paper's metadata lands in `public.paper_catalog` by itself. To put it on the site, read the live
+   rows and run `tools/sync_catalog.py` (see that file's header), then `npx @11ty/eleventy` and push.
+4. Only the owner's own login is on the allow list (`public.paper_admins`). To add another, insert one
+   row by SQL — never from a browser.
+
+**The old SQL route**
 1. Registry `_data/mcqSpec.json`: `"live": true`, `"access": "login"`, `"rev": <n>`, `count`, `levels`,
    `titleCase`, `lede` (owner's words; else the file's own words).
 2. Make the load SQL (this does NOT touch the database; it checks the file against the registry, the master

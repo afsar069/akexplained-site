@@ -97,12 +97,48 @@ read it. One row is one level of one set (for example `old-english-set-4` / `med
 | `level`      | `easy`, `medium` or `hard`. |
 | `access`     | `login` (any logged-in student can read it) or `paid` (not built yet, so nobody can read it). |
 | `rev`        | The question file's `rev`. Raised when a question's meaning changes. |
+| `status`     | `live` (students can read it) or `draft` (only an owner-side account can). Added 2026-11-12; new rows start as `draft`. |
 | `body`       | The whole question file as JSON, exactly what the test page reads. It must name the same set, level and rev as the row. |
 | `updated_at` | When the row was last loaded. |
 
-Rules: a logged-in student can **read** `login` rows and nothing else; logged-out visitors get nothing; nobody can add,
-change or delete a row from the browser (rows are loaded with SQL by the site's maintainer, never by a student's browser).
-The table has no link to `auth.users`, so deleting an account never touches it. Free sets are not in this table.
+Rules: a logged-in student can **read** `login` rows that are `live`, and nothing else; logged-out visitors get nothing;
+**nobody can delete a row from a browser, ever** (there is no delete permission and no delete rule). Since 2026-11-12 an
+account listed in `paper_admins` may add and change a `login` row from the upload page, and the database checks the paper
+first (see below). The table has no link to `auth.users`, so deleting an account never touches it. Free sets are not in
+this table.
+
+### `paper_admins` (added 2026-11-12)
+
+The short list of login accounts allowed to upload a question paper at `/admin/upload-paper/`. One row is one account.
+
+| Column    | Meaning |
+| --------- | ------- |
+| `user_id` | Whose account it is. Points at `auth.users`. Deleted with the user. |
+| `added_at`| When the row was added. |
+
+Rules: a signed-in person may read **only their own** row, which is how the page answers "am I allowed?"; nobody can add,
+change or delete a row from a browser. A row is added by SQL, by the site's maintainer, and only after the owner says
+which account is theirs. An ordinary student has no row, so the page tells them they are not allowed.
+
+### `paper_catalog` (added 2026-11-12)
+
+What is publicly known **about** each paper — never its questions. A trigger keeps it in step with `mcq_papers`, and
+`tools/sync_catalog.py` copies the live rows into the site's own data file, so the hub cards, the test pages and the
+sitemap lines are built from it.
+
+| Column           | Meaning |
+| ---------------- | ------- |
+| `set_id`         | The paper, for example `up-ap-p2-mock-test-3`. One row per paper, not per level. |
+| `title`          | The name students see, for example "Mock Test 3". It comes from the uploaded file. |
+| `exam_id`        | Which exam it belongs to (`exams`), or empty for the English Literature practice sets, which belong to no exam. |
+| `kind`           | `mock-test` or `mcq-set`. |
+| `number`         | Its number inside that series, for example 3. |
+| `question_count` | How many questions in all, every level added together. |
+| `status`         | `live` only when every level of the paper is live; otherwise `draft`. |
+| `updated_at`     | When it last changed. |
+
+Rules: everyone, even logged out, may read the `live` rows — those titles are already printed on the hub pages. An
+owner-side account (see `paper_admins`) reads and writes all rows; nobody can delete a row from a browser.
 
 ### 3. `reading_progress`
 

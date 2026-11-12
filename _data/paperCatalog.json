@@ -1,0 +1,112 @@
+{
+  "papers": [
+    {
+      "setId": "up-pgt-mock-test-6",
+      "title": "Mock Test 6",
+      "examId": "pgt",
+      "kind": "mock-test",
+      "number": 6,
+      "questionCount": 90,
+      "status": "live"
+    },
+    {
+      "setId": "up-pgt-mock-test-7",
+      "title": "Mock Test 7",
+      "examId": "pgt",
+      "kind": "mock-test",
+      "number": 7,
+      "questionCount": 90,
+      "status": "live"
+    },
+    {
+      "setId": "up-pgt-mock-test-8",
+      "title": "Mock Test 8",
+      "examId": "pgt",
+      "kind": "mock-test",
+      "number": 8,
+      "questionCount": 90,
+      "status": "live"
+    },
+    {
+      "setId": "up-pgt-mock-test-9",
+      "title": "Mock Test 9",
+      "examId": "pgt",
+      "kind": "mock-test",
+      "number": 9,
+      "questionCount": 90,
+      "status": "live"
+    },
+    {
+      "setId": "up-pgt-mock-test-10",
+      "title": "Mock Test 10",
+      "examId": "pgt",
+      "kind": "mock-test",
+      "number": 10,
+      "questionCount": 90,
+      "status": "live"
+    },
+    {
+      "setId": "up-ap-p2-mock-test-1",
+      "title": "Mock Test 1",
+      "examId": "state-psc",
+      "kind": "mock-test",
+      "number": 1,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
+      "setId": "up-ap-p2-mock-test-2",
+      "title": "Mock Test 2",
+      "examId": "state-psc",
+      "kind": "mock-test",
+      "number": 2,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
+      "setId": "up-ap-p2-mock-test-3",
+      "title": "Mock Test 3",
+      "examId": "state-psc",
+      "kind": "mock-test",
+      "number": 3,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
+      "setId": "anglo-norman-set-2",
+      "title": "Anglo-Norman Poetry and Romance",
+      "examId": null,
+      "kind": "mcq-set",
+      "number": 2,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
+      "setId": "old-english-set-4",
+      "title": "Prose and its writers: Alfred, the Chronicle, Ælfric, Wulfstan, the law codes",
+      "examId": null,
+      "kind": "mcq-set",
+      "number": 4,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
+      "setId": "old-english-set-5",
+      "title": "Terms, dates and sources: kenning, caesura, comitatus, wergild, futhorc, Danelaw, Danegeld",
+      "examId": null,
+      "kind": "mcq-set",
+      "number": 5,
+      "questionCount": 50,
+      "status": "live"
+    },
+    {
+      "setId": "old-english-set-6",
+      "title": "Criticism and scholarship: Ker, Chambers, Klaeber, the 1936 lecture, Whitelock, Magoun, Heaney",
+      "examId": null,
+      "kind": "mcq-set",
+      "number": 6,
+      "questionCount": 100,
+      "status": "live"
+    }
+  ]
+}
