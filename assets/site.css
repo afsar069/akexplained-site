@@ -1028,23 +1028,26 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-carry-bar i{display:block;height:100%;background:var(--mcq-teal-deep);border-radius:999px}
 
 /* ---------- age grid ---------- */
-.mcq-agegrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+/* Compact cards (owner, 2026-11-12): five to a line on a wide screen, so the
+   twenty ages sit in four lines, not five. Smaller picture (16:9), tighter
+   padding and type. Fewer columns on narrower screens (rules further down). */
+.mcq-agegrid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .mcq-agecard{
   display:block;overflow:hidden;background:var(--mcq-paper);
-  border:1px solid var(--mcq-line);border-radius:16px;
+  border:1px solid var(--mcq-line);border-radius:12px;
   text-decoration:none;color:inherit;
 }
 .mcq-agecard:hover{border-color:var(--mark,var(--mcq-blue))}
 .mcq-agecard.is-current{border-color:var(--mcq-blue);box-shadow:0 0 0 1px var(--mcq-blue)}
 .mcq-pic{
-  display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;
+  display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;
   border-bottom:1px solid var(--mcq-line);
 }
-.mcq-agename{display:block;padding:13px 16px 0;margin-bottom:11px}
-.mcq-agename strong{display:block;font-weight:600;font-size:16px;line-height:1.25}
-.mcq-years{display:block;font-size:13px;color:var(--mcq-ink-faint)}
-.mcq-agecard .mcq-bar{height:5px;margin:0 16px 9px}
-.mcq-state{display:block;padding:0 16px 15px;font-size:13px;color:var(--mcq-ink-faint)}
+.mcq-agename{display:block;padding:10px 12px 0;margin-bottom:8px}
+.mcq-agename strong{display:block;font-weight:600;font-size:15px;line-height:1.25}
+.mcq-years{display:block;font-size:12.5px;color:var(--mcq-ink-faint)}
+.mcq-agecard .mcq-bar{height:4px;margin:0 12px 7px}
+.mcq-state{display:block;padding:0 12px 11px;font-size:12.5px;color:var(--mcq-ink-faint)}
 .mcq-state.is-done{color:var(--mcq-green);font-weight:600}
 .mcq-state.is-going{color:var(--mcq-blue-dark);font-weight:600}
 .mcq-state.is-weak{color:#9A3412;font-weight:600}
@@ -1124,8 +1127,19 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .mcq-other p{margin:0;font-size:14.5px;color:var(--mcq-ink-soft)}
 
 /* ---------- narrower screens ---------- */
-@media (max-width:1040px){
+/* Age cards: 5 to a line from 1260px (the menu stands beside the page from
+   1024px and takes 272px of it), then 4, then 3; a phone gets a list (below).
+   Just beside the menu (1024 to 1099px) the page is only ~700px wide, so 3. */
+@media (max-width:1259px){
+  .mcq-agegrid{grid-template-columns:repeat(4,minmax(0,1fr))}
+}
+@media (min-width:1024px) and (max-width:1099px){
   .mcq-agegrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:859px){
+  .mcq-agegrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1040px){
   .mcq-topicgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .mcq-othergrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
@@ -1150,8 +1164,10 @@ summary.ptbtn::-webkit-details-marker{display:none}
     aspect-ratio:auto;border-bottom:0;border-right:1px solid var(--mcq-line);
   }
   .mcq-agename{grid-column:2;padding:10px 14px 0;margin:0}
+  .mcq-agename strong{font-size:16px}
+  .mcq-years{font-size:13px}
   .mcq-agecard .mcq-bar{display:none}
-  .mcq-state{grid-column:2;padding:0 14px 10px}
+  .mcq-state{grid-column:2;padding:0 14px 10px;font-size:13px}
 
   .mcq-topicgrid,.mcq-othergrid{grid-template-columns:1fr}
   .mcq-start,.mcq-build{padding:16px 18px;gap:14px}
