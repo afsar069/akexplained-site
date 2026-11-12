@@ -1,0 +1,926 @@
+{
+  "setId": "age-of-chaucer-set-1",
+  "rev": 1,
+  "examCode": "30",
+  "examName": "UGC NET English (Subject Code 30)",
+  "age": "age-of-chaucer",
+  "ageName": "Age of Chaucer",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/middle-english/",
+  "notesTitle": "Middle English - the full notes",
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "UGC-NET Paper II pattern questions (50% complex: multi-statement, Assertion-Reason, chronology, and matching) on the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain Poet, and Wycliffe.",
+  "topics": {
+    "history-wycliffe": "Black Death, Revolt & Wycliffe",
+    "chaucer": "Geoffrey Chaucer",
+    "langland": "Langland & Piers Plowman",
+    "gower": "John Gower",
+    "gawain-poet": "The Gawain / Pearl Poet"
+  },
+  "topicRead": {},
+  "passages": [],
+  "questions": [
+    {
+      "id": "age-of-chaucer-set-1-m-01",
+      "question": "How did the severe labour shortage following the Black Death of 1348-1349 alter the traditional three-estate social structure of fourteenth-century England?",
+      "options": [
+        "The peasantry voluntarily surrendered all freehold land to the monasteries in exchange for clerical protection",
+        "Skilled workers demanded higher wages and mobility, weakening serfdom and accelerating the rise of a middle class",
+        "Parliament abolished all taxation on the peasantry and dissolved the guild system in London",
+        "King Edward III replaced English labourers entirely with Norman knights on royal estates"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Course Hero Canterbury Tales study guide, the Black Plague reduced the population drastically, creating a labour shortage that resulted in higher wages for skilled workers and challenged the rigid three-estate hierarchy.",
+      "topic": "history-wycliffe",
+      "topicId": "three-estates",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero The Canterbury Tales",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-02",
+      "question": "In the division of labour for Wycliffe's Bible (1382), which part of the Scripture is John Wycliffe believed to have translated personally while his associates translated the Old Testament?",
+      "options": [
+        "The Pentateuch and the Book of Psalms only",
+        "The Apocrypha and the Book of Revelation only",
+        "The Gospels of Matthew, Mark, Luke, and John (and possibly the entire New Testament)",
+        "The Pauline Epistles and the Book of Job only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, in the 1382 Wycliffe Bible, Wycliffe probably translated the four Gospels (Matthew, Mark, Luke, and John) and possibly the entire New Testament himself, while his associates translated the Old Testament.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-03",
+      "question": "What core soteriological doctrine did John Wycliffe champion in opposition to the corrupt practices of medieval pardoners and the Roman Catholic hierarchy?",
+      "options": [
+        "Christians should commune with God directly through Scripture and achieve salvation by piety rather than buying pardons",
+        "Salvation could only be obtained by undertaking annual pilgrimages to Rome and Canterbury",
+        "Only Latin-speaking bishops possessed the spiritual authority to interpret the Gospels",
+        "Monastic orders should hold a legal monopoly over all secular courts and royal taxation"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Course Hero Canterbury Tales study guide and World Literature in Your Fist, Wycliffe promoted the idea that Christians should seek their religion in the Bible directly without priestly intermediaries and that salvation could not be bought from a pardoner.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero The Canterbury Tales",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-04",
+      "question": "In 1357, Geoffrey Chaucer began his courtly career as a page in the household of which noblewoman, wife of Prince Lionel?",
+      "options": [
+        "Blanche, Duchess of Lancaster",
+        "Margaret, Duchess of Burgundy",
+        "Joan of Kent, Princess of Wales",
+        "Elizabeth de Burgh, Countess of Ulster"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, in 1357 Chaucer served as a page in the household of Elizabeth de Burgh, Countess of Ulster (wife of Edward III's son Prince Lionel).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-05",
+      "question": "In the third fragment of Chaucer's 'The Romaunt of the Rose', which allegorical character disguises himself as a religious pilgrim and delivers a long satirical confession on clerical hypocrisy before absolving Wikked-Tunge?",
+      "options": [
+        "Daunger (Disdain)",
+        "Fals-Semblant (False-Seeming)",
+        "Piers the Plowman",
+        "Genius"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, the third fragment of The Romaunt of the Rose features Fals-Semblant ('false-seeming'), who exposes clerical hypocrisy, disguises himself as a pilgrim, and absolves Wikked-Tunge at the fortress of Jealousy.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-06",
+      "question": "In Chaucer's 'The Book of the Duchess', which classical myth from Ovid does the insomniac narrator read before falling asleep, in which Morpheus inhabits a drowned king's body to appear to his grieving queen?",
+      "options": [
+        "Ceyx and Alcyone",
+        "Pyramus and Thisbe",
+        "Orpheus and Eurydice",
+        "Pygmalion and Galatea"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, the sleepless narrator of The Book of the Duchess reads the romance of King Ceyx (who drowns at sea) and Queen Alcyone, whom Juno and Morpheus visit with a dream of her dead husband.",
+      "topic": "chaucer",
+      "topicId": "the-book-of-the-duchess",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-07",
+      "question": "At the abrupt conclusion of Book III of Chaucer's 'The House of Fame', what mysterious figure appears in the House of Rumour just before the unfinished poem breaks off?",
+      "options": [
+        "'The Clerk of Oxenford'",
+        "'The Plowman of Malvern'",
+        "'A man of gret auctorite'",
+        "'The Knight of the Garter'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, towards the end of The House of Fame, amid bearers of false tidings, the confusion seems about to be resolved by the appearance of 'A man of gret auctorite...', where the poem abruptly ends.",
+      "topic": "chaucer",
+      "topicId": "the-house-of-fame",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-08",
+      "question": "In the Prologue to 'The Legend of Good Women', why does the God of Love angrily reprimand Chaucer and assign him the penance of writing stories of faithful women?",
+      "options": [
+        "Because Chaucer had satirized the Prioress and the Wife of Bath in The Canterbury Tales",
+        "Because Chaucer had supported John Gower's tales of incest in Confessio Amantis",
+        "Because Chaucer had failed to write an elegy on the death of Queen Philippa",
+        "Because Chaucer had translated the heresy of The Romaunt of the Rose and depicted Criseyde's infidelity in Troilus and Criseyde"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, in the Prologue to The Legend of Good Women, the God of Love is angry at Chaucer for writing about women who betray men (such as in Romaunt of the Rose and Troilus and Criseyde) and orders him as penance to write of good women.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-09",
+      "question": "In the Prologue to the Man of Law's Tale, why does the Man of Law contrast Geoffrey Chaucer's stories with those of his contemporary John Gower?",
+      "options": [
+        "He remarks that Chaucer has told more stories of lovers than Ovid, yet unlike Gower he refuses to write tales of incest",
+        "He claims that Chaucer writes only in Latin elegiac couplets while Gower writes exclusively in West Midland alliterative verse",
+        "He argues that Chaucer supports the Lollard priesthood whereas Gower defends the Pardoner's relics",
+        "He states that Chaucer borrowed all his plots from Homer while Gower relied solely on Dante"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist (The Prologue and Tale of the Man of Law), the Man of Law remarks that Chaucer has told more stories of lovers than Ovid and does not print wicked tales of incest (such as Canacee and Apollonius) as John Gower does.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-10",
+      "question": "In 'The Canterbury Tales', when the Host Harry Bailly interrupts Chaucer the pilgrim's doggerel rhyme of 'Sir Thopas', which long moral prose tale does Chaucer narrate instead?",
+      "options": [
+        "The Parson's Tale",
+        "The Tale of Melibee",
+        "The Clerk's Tale",
+        "The Manciple's Tale"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, after Harry Bailly interrupts the parody of bad poetry in The Tale of Sir Thopas, Chaucer tells his second tale, the long moral prose story of Melibee and his wise wife Prudence.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-11",
+      "question": "Which famous line from the General Prologue to 'The Canterbury Tales' describes the scholarly devotion of the Clerk of Oxenford?",
+      "options": [
+        "'He was a verray, parfit gentil knyght'",
+        "'He was as fressh as is the month of May'",
+        "'Amor vincit omnia'",
+        "'And gladly wolde he lerne, and gladly teche'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Chaucer characterizes the sincere Oxford student (the Clerk) with the famous line 'And gladly would he learn and gladly teach'.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-12",
+      "question": "In 'The Monk's Tale', how many tragic 'falls of illustrious men' (beginning with Lucifer and Adam) does the Monk narrate before the Knight interrupts him?",
+      "options": [
+        "7 tragic falls",
+        "24 tragic falls",
+        "17 tragic falls",
+        "100 tragic falls"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, the Monk narrates 17 tragic falls of noble figures (including Lucifer, Adam, Samson, Hercules, Nebuchadnezzar, Belshazzar, and Zenobia) before the Knight interrupts.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-13",
+      "question": "In 'A Study of Poetry', on what specific ground did Matthew Arnold argue that Geoffrey Chaucer, despite his liquid diction, is not one of the 'great classics'?",
+      "options": [
+        "Chaucer wrote in the East Midland dialect rather than Classical Latin",
+        "Chaucer lacks the 'high seriousness' (spoudaiotes) of Homer, Dante, and Shakespeare",
+        "Chaucer left The Canterbury Tales and The House of Fame unfinished",
+        "Chaucer borrowed his plots from Boccaccio and Guillaume de Lorris"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Matthew Arnold famously judged that 'Chaucer lacks not only the accent of Dante, but also the high seriousness' required of the supreme classics.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-14",
+      "question": "Which fifteenth-century disciple of Chaucer mourned his master's death in 'The Regiment of Princes' (Governail of Princes, 1411-1412)?",
+      "options": [
+        "Thomas Hoccleve (Occleve)",
+        "John Barbour",
+        "Robert Henryson",
+        "Stephen Hawes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Thomas Hoccleve (Occleve) wrote a famous lament mourning the death of Chaucer in The Regiment of Princes (Governail of Princes).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Upkar Guide Book",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-15",
+      "question": "In Passus V of William Langland's 'Piers Plowman', when the penitent Seven Deadly Sins ask the way to Saint Truth, how does Piers first test their sincerity?",
+      "options": [
+        "He orders them to purchase papal indulgences from the Pardoner at Westminster",
+        "He sends them on a sea voyage to Jerusalem with Sir John Mandeville",
+        "He refuses to leave his work until they help him plough and sow his half-acre of land",
+        "He requires them to debate theology in Latin with the Clerk of Oxford"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, when the Seven Deadly Sins ask Piers the way to Truth, Piers is ploughing his half-acre of land and sets them all to honest toil as the best remedy for their vices.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-16",
+      "question": "How did William Langland's 'Piers Plowman' expand between its first appearance (the A-text, c. 1362) and its major revision (the B-text, c. 1377-1379)?",
+      "options": [
+        "From 858 lines in 1362 to 17,000 lines in 1377-1379",
+        "From 699 lines in 1362 to 33,000 lines in 1377-1379",
+        "From 1,212 lines in 1362 to 29,945 lines in 1377-1379",
+        "From about 2,500 lines in 1362 to about 7,200 lines in 1377-1379"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Piers Plowman first appeared in 1362 in about 2,500 lines, and after revision reached about 7,200 lines in 1377-1379 (comprising 8 visions divided into 20 passus).",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-17",
+      "question": "Which biblical prophet crying in the wilderness is Piers the Plowman repeatedly likened to as he preaches the gospel of honest work in Langland's poem?",
+      "options": [
+        "John the Baptist",
+        "The Prophet Jonah",
+        "King Solomon",
+        "Judas Maccabeus"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, Piers Plowman opens with 'The voice of him that crieth in the wilderness, prepare ye the way of the Lord' and throughout the poem Piers resembles John the Baptist preaching to the crowd.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-18",
+      "question": "In John Gower's Anglo-Norman allegory 'Speculum Meditantis' (Mirour de l'Omme), what is the central theological plot through which mankind seeks salvation?",
+      "options": [
+        "King Arthur's knights embark on a quest for the Holy Grail to heal the Fisher King",
+        "The union of the Devil and Sin produces the Seven Deadly Sins, whom God opposes with the Seven Virtues until man repents through the Virgin's intercession",
+        "A group of thirty London merchants debates the causes of the Hundred Years' War",
+        "An eagle carries the poet to the Temple of Glass to witness the fall of Troy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, in Speculum Meditantis the union of the Devil and Sin produces seven daughters (the Seven Deadly Sins), opposed by God's seven Virtues, and man's salvation requires repentance through the intercession of the Virgin.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-19",
+      "question": "In John Gower's 'Vox Clamantis', while Book I presents a dream vision of the 1381 Peasants' Revolt, what is the primary subject of the remaining six books?",
+      "options": [
+        "A chivalric romance recounting the siege of Thebes and Troy",
+        "A liturgical commentary on the Sanskrit Rasas and classical poetics",
+        "Estates satire examining the moral corruption and duties of the three orders of medieval society",
+        "A biographical chronicle of William Caxton's printing press at Bruges"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist,Vox Clamantis consists of seven books: Book I is a dream vision of the 1381 Peasants' Rebellion, while the remaining six books form an estates satire complaining about corruption across the degrees of society.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-20",
+      "question": "Which classical work serves as the most frequent narrative source for the unoriginal exempla and tales retold in John Gower's 'Confessio Amantis'?",
+      "options": [
+        "Homer's Odyssey",
+        "Horace's Ars Poetica",
+        "Aristotle's Poetics",
+        "Ovid's Metamorphoses"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, none of Gower's tales in Confessio Amantis are original, and the source he relies on most heavily is Ovid's Metamorphoses.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-21",
+      "question": "In 'Sir Gawain and the Green Knight', why does Sir Gawain secretly accept and conceal the green silk girdle offered by Lady Bertilak on the third day?",
+      "options": [
+        "She tells him it possesses magical properties that protect the wearer from being slain",
+        "He intends to present it to Queen Guinevere as a trophy of courtly love",
+        "He believes it belongs to King Arthur's treasury at Camelot",
+        "He wants to trade it to Bertilak in exchange for the wild boar's head"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, Gawain refuses the lady's rings and tokens until she offers him her green girdle, claiming that whoever wears it cannot be killed; hoping to survive the Green Knight's axe blow, Gawain accepts and hides it.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-22",
+      "question": "How does the Green Knight execute the three-stroke return blow at the Green Chapel in 'Sir Gawain and the Green Knight'?",
+      "options": [
+        "He shatters Gawain's shield on the first two blows and spares him on the third because Morgan le Fay intervenes",
+        "He makes two feints without striking and on the third blow gives Gawain a slight nick on the neck for concealing the green girdle",
+        "He beheads Gawain on the first blow, after which the Virgin Mary restores Gawain to life",
+        "He refuses to swing his axe at all because Gawain returned all three kisses to Bertilak"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, the Green Knight makes two false strikes (representing the first two days when Gawain was honest) and on the third strike slightly wounds Gawain's neck as punishment for hiding the green girdle on the third day.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-23",
+      "question": "According to the Course Hero study guide on 'Sir Gawain and the Green Knight', which ancient Irish text from c. 1100 CE preserves the oldest known version of the 'Beheading Game' motif?",
+      "options": [
+        "The Cattle Raid of Cooley in The Book of Leinster",
+        "The Song of Roland in the Oxford Manuscript",
+        "Layamon's Brut in the Cotton Caligula Manuscript",
+        "Bricriu's Feast (The Feast of Bricriu) in The Book of the Dun Cow"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per Course Hero and LitCharts Sir Gawain study guides, the oldest known version of the beheading game is Bricriu's Feast (The Feast of Bricriu), preserved in the Irish manuscript The Book of the Dun Cow (c. 1100 CE).",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-24",
+      "question": "The conclusion of 'Sir Gawain and the Green Knight', in which King Arthur's court adopts the green sash as a badge of honour, is historically linked to King Edward III's founding of which chivalric order in 1348?",
+      "options": [
+        "The Order of the Golden Fleece",
+        "The Knights Templar",
+        "The Order of the Garter",
+        "The Order of the Bath"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per Course Hero Sir Gawain study guide, Arthur's court wearing green laces in solidarity with Gawain is linked to King Edward III's founding of the Order of the Garter in 1348 with the motto 'Shame to him who thinks evil on it' (Honi soit qui mal y pense).",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-25",
+      "question": "How did the Northwest Midland dialect of the Pearl Poet differ linguistically from the London (East Midland) dialect used by Geoffrey Chaucer?",
+      "options": [
+        "It was much less influenced by French and preserved the Old English alliterative four-stress line tradition",
+        "It was written entirely in rhyming heroic couplets borrowed from Italian humanists",
+        "It used Latin inflectional endings exclusively and avoided native Anglo-Saxon vocabulary",
+        "It was adopted by William Caxton in 1476 as the official printing standard of London"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Course Hero Sir Gawain study guide, the Pearl Poet wrote in the Northwest Midland dialect, which was far less influenced by French than Chaucer's London dialect and belonged to the Alliterative Revival evoking Old English four-stress verse.",
+      "topic": "gawain-poet",
+      "topicId": "the-gawain-poet",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-26",
+      "question": "Given below are two statements:\nStatement I: While Geoffrey Chaucer's 'The Canterbury Tales' portrays a merry company of pilgrims riding through 'Merrie England' in fair spring weather, William Langland's 'Piers Plowman' exposes the grim social misery and moral degradation of the common people.\nStatement II: Both Chaucer and Langland died in the same year (1400), marking the close of the fourteenth-century flowering of Middle English poetry.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Complete Guide for UGC NET and World Literature in Your Fist, Chaucer portrays the bright holiday side of society while Langland pictures the suffering of the poor, and both poets died in the year 1400.",
+      "topic": "langland",
+      "topicId": "william-langland",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET & World Literature in Your Fist",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-27",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Roman Catholic hierarchy in late fourteenth-century England fiercely persecuted John Wycliffe and his Lollard followers, condemning Wycliffe on 18 counts of heresy.\nReason (R): Wycliffe challenged papal authority, denounced clerical wealth and the sale of pardons, and translated the Latin Vulgate Bible into Middle English so laypeople could read Scripture directly.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist and Course Hero Canterbury Tales study guide, Wycliffe and the Lollards were condemned for heresy precisely because they attacked clerical corruption, rejected priestly intermediaries, and translated the Vulgate into English.",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Course Hero Canterbury Tales",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-28",
+      "question": "Consider the following statements regarding the biblical translation history noted in the UGC NET study materials:\nI. St. Jerome translated the Bible into Latin (the Vulgate) from ancient sources.\nII. John Wycliffe and his associates completed the first Middle English translation of the Bible directly from the Latin Vulgate in the early 1380s.\nIII. William Tyndale's English New Testament (1525-1526) preceded Wycliffe's Bible by more than a century.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Wycliffe translated the Bible into Middle English from the Latin Vulgate in 1380-1382, whereas William Tyndale's New Testament appeared much later in 1525 (making Statement III false).",
+      "topic": "history-wycliffe",
+      "topicId": "john-wycliffe",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Upkar Guide Book",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-29",
+      "question": "Consider the following statements regarding Chaucer's 'Troilus and Criseyde':\nI. It is an 8,239-line tragic verse romance written in seven-line Rhyme Royal stanzas.\nII. Criseyde is the widowed daughter of the Trojan priest Calchas, who defects to the Greek camp.\nIII. Pandarus, who acts as the go-between for the lovers, is the younger brother of Diomedes.\nIV. The narrative incorporates Boethian discussions of free will and determinism and concludes by contrasting earthly passion with the eternal love of God.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III only",
+        "I, II and IV only",
+        "II, III and IV only",
+        "I, III and IV only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Troilus and Criseyde is an 8,239-line poem in rhyme royal with Boethian reflections on fate and free will. Statement III is false because Pandarus is Criseyde's uncle and Troilus's Trojan friend, not Diomedes's brother.",
+      "topic": "chaucer",
+      "topicId": "troilus-and-criseyde",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-30",
+      "question": "Consider the following statements regarding Chaucer's 'The Legend of Good Women':\nI. It was composed at the bidding of Queen Anne of Bohemia to celebrate women who remained faithful in love despite betrayal by men.\nII. Its stories include classical heroines such as Cleopatra, Thisbe, Dido, Lucrece, Ariadne, and Philomela.\nIII. It was the last dream-vision poem composed by Geoffrey Chaucer.\nIV. It was written entirely in unrhymed alliterative verse modeled on Langland.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III only",
+        "I, III and IV only",
+        "II, III and IV only",
+        "I, II, III and IV"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, The Legend of Good Women was written at Queen Anne of Bohemia's bidding, is Chaucer's fourth and final dream-vision poem, and marks Chaucer's first use of the decasyllabic heroic couplet (making Statement IV false).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-31",
+      "question": "Consider the following statements regarding the structure and text of 'The Canterbury Tales':\nI. The General Prologue contains 858 lines written in heroic couplets.\nII. Only two tales in the entire collection—Chaucer's Tale of Melibee and The Parson's Tale—are written in prose.\nIII. The Cook's Tale (about the apprentice Perkyn Reveller) and The Squire's Tale (about King Cambyuskan) are both unfinished.\nIV. The Plowman narrates a beast fable about a rooster named Chanticleer.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and IV only",
+        "II, III and IV only",
+        "I, II and III only",
+        "I, III and IV only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist, the General Prologue has 858 lines in heroic couplets, Melibee and The Parson's Tale are the two prose tales, and both The Cook's Tale and The Squire's Tale are unfinished. Statement IV is false because the Plowman tells no tale (Chanticleer is in The Nun's Priest's Tale).",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-32",
+      "question": "Given below are two statements regarding the rivalry between the Miller and the Reeve in 'The Canterbury Tales':\nStatement I: Because the Miller tells a bawdy fabliau about an Oxford scholar (Nicholas) who cuckolds an old carpenter (John), Oswald the Reeve—who is a carpenter by trade—takes personal offence.\nStatement II: In retaliation, the Reeve tells the story of two Cambridge students, John and Alayn, who outwit a dishonest miller after he steals their corn.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Oswald the Reeve is a carpenter who takes offence at the Miller's Tale about foolish carpenter John and counters with his own tale of students John and Alayn humiliating a thieving miller.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-33",
+      "question": "Consider the following statements regarding 'The Prioress's Tale' and 'The Merchant's Tale' in 'The Canterbury Tales':\nI. In The Prioress's Tale, a seven-year-old Christian schoolboy murdered in a ghetto miraculously continues to sing 'Alma Redemptoris' after his throat is slit.\nII. The Merchant's Tale satirizes unequal marriage through the story of the old blind knight January, his young wife May, and the squire Damian in a pear tree.\nIII. In The Merchant's Tale, the fairy king Pluto restores January's sight just as May is in the pear tree with Damian.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, all three statements accurately describe The Prioress's Tale (the widow's son singing Alma Redemptoris) and The Merchant's Tale (January, May, Damian in the pear tree, and Pluto restoring January's sight).",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-34",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Chaucer's East-Midland (London) dialect, rather than the West-Midland dialect of Langland and the Pearl Poet, eventually became the foundation of Modern Standard English.\nReason (R): London was the political, commercial, and royal centre of England, and William Caxton later printed Chaucer's 'The Canterbury Tales' and other major works in this 'King's English'.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Complete Guide for UGC NET, Chaucer used the Southeast/East-Midland dialect of London, and Caxton's printing of The Canterbury Tales and Morte d'Arthur fixed this dialect as the standard literary language of England.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-35",
+      "question": "Consider the following statements regarding William Langland's 'Piers Plowman':\nI. It is a major work of the fourteenth-century Alliterative Revival written for and appealing to the common people.\nII. Unlike Chaucer, who depicts the cheerful Tabard Inn, Langland depicts a tavern scene of moral and physical degradation where Gluttony is lured away from church.\nIII. Langland's poem was written in rhyming heroic couplets modeled on Boccaccio and Petrarch.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per Complete Guide for UGC NET, Piers Plowman is the greatest poem of the Alliterative Revival and contrasts Chaucer's merry Tabard Inn with a gritty tavern scene of moral degradation. Statement III is false because Langland used unrhymed Anglo-Saxon alliterative verse, not heroic couplets.",
+      "topic": "langland",
+      "topicId": "piers-plowman",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-36",
+      "question": "Consider the following statements regarding John Gower's literary career and his three major poems:\nI. Gower's three major works—Speculum Meditantis (French), Vox Clamantis (Latin), and Confessio Amantis (English)—are united by common moral and political themes.\nII. Confessio Amantis is divided into a Prologue and eight books structured around the Seven Deadly Sins.\nIII. The conclusion of Speculum Meditantis (Mirour de l'Omme) has been lost in the surviving manuscript.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, all three statements are true: Gower's trilingual poems share moral/political themes, Confessio Amantis consists of a Prologue and eight books, and the conclusion of Speculum Meditantis is lost.",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-37",
+      "question": "Given below are two statements regarding John Gower and the politics of the 1380s and 1390s:\nStatement I: In Book I of 'Vox Clamantis', Gower portrays the rebellious peasants of 1381 sympathetically as righteous Christian reformers led by Piers Plowman.\nStatement II: Although Gower initially wrote 'Confessio Amantis' for King Richard II in 1390, he revised the poem between 1390 and 1392 to remove praise of Richard II and add a dedication to Henry of Lancaster (Bolingbroke).\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Gower's Vox Clamantis is an aristocratic estates satire that views the 1381 Peasants' Rebellion with horror as a nightmare vision (making Statement I false), while Statement II accurately describes Gower's revision of Confessio Amantis in favour of Henry Bolingbroke.",
+      "topic": "gower",
+      "topicId": "confessio-amantis",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-38",
+      "question": "Consider the following statements regarding the poetic form and narrative of 'Sir Gawain and the Green Knight':\nI. Each stanza consists of a variable number of alliterative long lines (with four stressed syllables) followed by a five-line rhyming 'bob and wheel' (ABABA).\nII. Sir Gawain is King Arthur's nephew and is tested both through the beheading game and the three-day bedroom temptation at Castle Hautdesert.\nIII. When Gawain returns to Camelot wearing the green girdle as a badge of shame and humility, Arthur's court banishes him from the Round Table.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per Course Hero and LitCharts Sir Gawain study guides, Statements I and II are correct. Statement III is false because King Arthur and the Round Table welcome Gawain warmly, admire his humility, and agree to wear green sashes in solidarity.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, Course Hero & LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-39",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): In 'Sir Gawain and the Green Knight', the real conflict ultimately lies not between Gawain and a monstrous villain, but between Gawain's commitment to the chivalric code of 'trawthe' (honesty/integrity) and his human instinct for self-preservation.\nReason (R): Gawain resists Lady Bertilak's sexual advances for three days out of courtesy and loyalty to his host, yet fails his word slightly by concealing the magical green girdle in hopes of saving his own life.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight, the climax reveals that the true conflict is between Gawain's desire to uphold the knightly code of virtues and his natural desire to stay alive, demonstrated when he hides the green girdle to survive the axe blow.",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-40",
+      "question": "Consider the following statements regarding the religious and moral vision of the Age of Chaucer:\nI. In 'The Canterbury Tales', Chaucer satirizes corrupt ecclesiastical figures such as the hunting Monk, the wanton Friar, the lecherous Summoner, and the greedy Pardoner.\nII. Both William Langland and John Gower attacked the moral decay of the clergy and sought to revive genuine Christian conduct.\nIII. The Pearl Poet's companion poems 'Patience' and 'Purity' (Cleanness) serve as homiletic moral teachings grounded in biblical narratives.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist and Course Hero Sir Gawain study guide, all three statements accurately reflect the religious and moral themes of Chaucer, Langland, Gower, and the Pearl Poet.",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist & Course Hero Sir Gawain",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-41",
+      "question": "Arrange the following major historical events of fourteenth-century England in correct chronological order:\n1. Outbreak of the Black Death in England\n2. Wat Tyler's Peasants' Rebellion\n3. Beginning of the Hundred Years' War and the Battle of Crecy\n4. Deposition of Richard II and accession of Henry IV\nChoose the correct sequence:",
+      "options": [
+        "3, 1, 2, 4",
+        "1, 3, 2, 4",
+        "3, 2, 1, 4",
+        "1, 2, 3, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per Upkar Guide Book (Important Events of the Age of Chaucer): Beginning of the Hundred Years' War (1337-38) and Battle of Crecy (1346) -> Black Death (1348-49) -> Wat Tyler's Rebellion (1381) -> Henry IV ascends the throne (1399).",
+      "topic": "history-wycliffe",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, Upkar Guide Book",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-42",
+      "question": "Arrange the following milestones in Geoffrey Chaucer's public and diplomatic career in correct chronological order:\n1. Appointed Clerk of the King's Works overseeing royal building projects\n2. Captured by the French during the Brittany expedition and ransomed by Edward III\n3. Appointed Comptroller of the customs for the port of London\n4. Elected Member of Parliament for Kent\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 3, 1",
+        "3, 2, 4, 1",
+        "2, 3, 4, 1",
+        "2, 3, 1, 4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist: Captured in the Brittany Expedition (1359) -> Appointed Comptroller of London customs (1374) -> Elected Member of Parliament for Kent (1386) -> Made Clerk of the King's Works (1389).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-43",
+      "question": "Arrange the following works by Geoffrey Chaucer in the chronological order of their composition as given in the UGC NET study notes:\n1. The Book of the Duchess\n2. The Romaunt of the Rose\n3. The Legend of Good Women\n4. The House of Fame\nChoose the correct sequence:",
+      "options": [
+        "1, 2, 4, 3",
+        "2, 1, 4, 3",
+        "2, 4, 1, 3",
+        "1, 4, 3, 2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist: The Romaunt of the Rose (c. 1360) -> The Book of the Duchess (1369) -> The House of Fame (1380) -> The Legend of Good Women (1385).",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-44",
+      "question": "Arrange the first four tales of Fragment I of 'The Canterbury Tales' in the exact order in which they are narrated:\n1. The Reeve's Tale\n2. The Knight's Tale\n3. The Cook's Tale\n4. The Miller's Tale\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 4, 3",
+        "4, 2, 1, 3",
+        "2, 4, 3, 1",
+        "2, 4, 1, 3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist, Fragment I of The Canterbury Tales proceeds in the order: The Knight's Tale -> The Miller's Tale -> The Reeve's Tale -> The Cook's Tale.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-45",
+      "question": "Arrange John Gower's three major poems in the chronological order of their composition:\n1. Confessio Amantis (Middle English)\n2. Speculum Meditantis / Mirour de l'Omme (Anglo-Norman French)\n3. Vox Clamantis (Latin)\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 1",
+        "3, 2, 1",
+        "1, 2, 3",
+        "2, 1, 3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist, Gower composed Speculum Meditantis (Mirour de l'Omme) in French first (completed before 1380), followed by Vox Clamantis in Latin (incorporating the 1381 revolt), and Confessio Amantis in English (completed 1390, revised 1390-1392).",
+      "topic": "gower",
+      "topicId": "john-gower",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-46",
+      "question": "Arrange the following key episodes in 'Sir Gawain and the Green Knight' in correct narrative sequence:\n1. Gawain arrives at Bertilak's Castle Hautdesert on Christmas Eve and agrees to the Exchange of Winnings game.\n2. Gawain beheads the Green Knight at Camelot during the New Year's feast.\n3. Gawain receives a slight nick on the neck at the Green Chapel and learns of Morgan le Fay's plot.\n4. Gawain sets out from Camelot around Michaelmas/All Saints' Day bearing the pentangle shield.\nChoose the correct sequence:",
+      "options": [
+        "4, 2, 1, 3",
+        "2, 4, 1, 3",
+        "2, 1, 4, 3",
+        "1, 2, 4, 3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per LitCharts Sir Gawain and the Green Knight: Gawain beheads the Green Knight at New Year's (2) -> departs Camelot in autumn with the pentangle shield (4) -> reaches Bertilak's castle at Christmas and plays the exchange game (1) -> faces the Green Knight at the Green Chapel (3).",
+      "topic": "gawain-poet",
+      "topicId": "sir-gawain-and-the-green-knight",
+      "periodId": "age-of-chaucer",
+      "qtype": "chrono",
+      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-47",
+      "question": "Match List I (Critic / Writer) with List II (Famous Critical Remark on Geoffrey Chaucer):\nList I:\na. G. K. Chesterton\nb. John Livingston Lowes\nc. S. D. Neill\nd. W. J. Long\nList II:\n1. 'Chaucer found his native tongue a dialect and left it a language.'\n2. 'If Chaucer is the father of English poetry, he is the grandfather of the English novel.'\n3. Called the Prologue to The Canterbury Tales 'the prologue to modern fiction'.\n4. 'Had Chaucer written in prose it is possible his Troilus and Criseyde and not Richardson's Pamela would be celebrated as the first English novel.'\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-3, d-4",
+        "a-2, b-4, c-1, d-3",
+        "a-3, b-1, c-4, d-2",
+        "a-2, b-1, c-4, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Per World Literature in Your Fist (p. 21), Chesterton called Chaucer 'the grandfather of the English novel'; Lowes said he 'found his native tongue a dialect and left it a language'; S. D. Neill compared Troilus and Criseyde to Pamela; and W. J. Long called the General Prologue 'the prologue to modern fiction'.",
+      "topic": "chaucer",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "match",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-48",
+      "question": "Match List I (Canterbury Pilgrim) with List II (Distinguishing Detail in the General Prologue):\nList I:\na. The Doctor of Physic\nb. The Summoner\nc. The Franklin\nd. The Reeve (Oswald)\nList II:\n1. His house 'positively snowed with meat and drink' and all dainties.\n2. He kept the gold he won in pestilence because 'gold in physic is a cordial' that stimulates the heart.\n3. He loved garlic, onions, and leeks, and shouted only in Latin when drunk.\n4. A slender, choleric man from Norfolk whom no auditor could ever catch in arrears.\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-1, d-4",
+        "a-2, b-1, c-3, d-4",
+        "a-2, b-3, c-1, d-4",
+        "a-4, b-3, c-2, d-1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Per World Literature in Your Fist (pp. 24-27), the Doctor loved gold won in pestilence; the Summoner loved garlic, onions, and leeks and spoke Latin when drunk; the Franklin's house snowed with meat and drink; and Oswald the Reeve was a slender, choleric estate manager never caught in arrears.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "match",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-49",
+      "question": "Match List I (Canterbury Tale) with List II (Central Characters / Plot):\nList I:\na. The Man of Law's Tale\nb. The Clerk's Tale\nc. The Squire's Tale\nd. The Nun's Priest's Tale\nList II:\n1. The patient peasant woman Griselda tested relentlessly by her aristocratic husband\n2. King Cambyuskan, his daughter Canacee, and the gifts of a magic brass horse, mirror, ring, and sword\n3. The Christian princess Custance, King Alla of Northumberland, and the forged letters of Donegild\n4. The proud rooster Chanticleer carried off by a flattering fox\nChoose the correct option:",
+      "options": [
+        "a-3, b-1, c-2, d-4",
+        "a-1, b-3, c-2, d-4",
+        "a-3, b-2, c-1, d-4",
+        "a-4, b-1, c-3, d-2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Per World Literature in Your Fist (pp. 29-33), The Man of Law's Tale narrates the trials of Custance and King Alla; The Clerk's Tale tells of patient Griselda; The Squire's Tale features Cambyuskan and Canacee's magic ring; and The Nun's Priest's Tale is the beast fable of Chanticleer.",
+      "topic": "chaucer",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "match",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    },
+    {
+      "id": "age-of-chaucer-set-1-m-50",
+      "question": "Match List I (Fourteenth-Century Author) with List II (Major Contribution / Work):\nList I:\na. William Langland\nb. John Gower\nc. John Wycliffe\nd. The Pearl Poet\nList II:\n1. Trilingual moralist who wrote Speculum Meditantis, Vox Clamantis, and Confessio Amantis\n2. Alliterative poet of the West Midlands who composed Visio and Vita of Piers Plowman\n3. Oxford reformer who instigated the Lollard movement and translated the Latin Vulgate Bible (1382)\n4. Northwest Midland author of Sir Gawain and the Green Knight, Pearl, Patience, and Cleanness\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-3, d-4",
+        "a-2, b-1, c-3, d-4",
+        "a-2, b-3, c-1, d-4",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Per World Literature in Your Fist, Langland wrote Piers Plowman (Visio and Vita); Gower wrote Speculum Meditantis, Vox Clamantis, and Confessio Amantis; Wycliffe led the Lollards and translated the Vulgate; and the Pearl Poet wrote Sir Gawain, Pearl, Patience, and Cleanness.",
+      "topic": "langland",
+      "topicId": "age-of-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "match",
+      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
+      "difficulty": "medium"
+    }
+  ]
+}
