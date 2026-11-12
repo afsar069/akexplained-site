@@ -26,6 +26,7 @@ import re
 import sys
 import zipfile
 
+sys.dont_write_bytecode = True      # importing validate_mcq.py must not leave a __pycache__ in tools/
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SKILL = 'ugc-net-mcq-generator-tagger'
 OUT = os.path.join(ROOT, 'tools', 'dist', SKILL + '.zip')
