@@ -81,12 +81,16 @@ on their own data files for now, as the owner's brief allows.
 **/privacy/ and /terms/ need no change**: `paper_admins` holds one user id (the owner's), and `paper_catalog`
 holds titles that the hub pages already show. Nothing new is collected about a student.
 
+**The allow list** `paper_admins` has **one row**: the owner's own account, added 2026-11-12 after the owner
+named it (one INSERT by SQL, selected by email from `auth.users`; no email and no id is in the repo, rule 2).
+Checked as that account: it sees its own allow-list row, reads all 15 papers, and a test upload was accepted
+and then rolled back, so nothing was kept (`select count(*)` after: 15 papers, all live, no probe row).
+
 **What is pending**
-1. **`paper_admins` is empty, so the page works for nobody yet.** The owner must say which login account is
-   theirs (the email they log in with); then one INSERT adds it. No email or id is in the repo (rule 2).
-2. Merge to `main` — not done; the branch is pushed and waiting for the owner's word (rule 5).
-3. First real use: do the owner's next paper together, on the page.
-4. Later, if wanted: UP PGT and UGC NET pages from the same catalog, and a "make it live / make it draft"
+1. Merge to `main` — the owner said on 2026-11-12 to **keep it on the branch for now**, so the page is NOT on
+   akexplained.com yet. The database half is live either way. Merge when the owner asks (rule 5).
+2. First real use: do the owner's next paper together, on the page.
+3. Later, if wanted: UP PGT and UGC NET pages from the same catalog, and a "make it live / make it draft"
    switch on the page (today a re-upload at a higher rev sets the status).
 
 ## UP Assistant Professor, Paper 2 Mock Test 3 — login CBT paper (2026-11-12)
