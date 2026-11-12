@@ -4,7 +4,11 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-12 (UP PGT Mock Test 10 database paper loaded; site page prepared for publication.)_
+_Last updated: 2026-11-12 (NET hub: two Paper 2 cards now link to the MCQ and Daily quiz hubs.)_
+
+## NET hub links (2026-11-12)
+
+- On `/exams/net/`, **English Literature MCQs** now opens `/quizzes/mcq/` and **British Ages Quick MCQs** opens `/quizzes/daily/` (owner's request). `_data/netResources.json` has an optional `href` that `_includes/net-action.njk` uses instead of `/exams/net/<slug>/`; both cards are `available: true`, so their Coming-soon pages are no longer built (`/exams/net/english-mcqs/` and `/exams/net/british-ages-quick-mcqs/` now 404).
 
 ## UP PGT Mock Test 10 — login CBT paper (2026-11-12)
 

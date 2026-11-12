@@ -1,5 +1,5 @@
 {% macro action(item, extraClass = "") %}
-<a class="net-action{% if item.available %} net-action--live{% endif %} {{ extraClass }}" href="/exams/net/{{ item.slug }}/">
+<a class="net-action{% if item.available %} net-action--live{% endif %} {{ extraClass }}" href="{{ item.href or ('/exams/net/' + item.slug + '/') }}">
   <span class="net-action-icon"><img src="/assets/icons/feather/{{ item.icon }}.svg" alt="" width="44" height="44"></span>
   <span class="net-action-copy">
     <span class="net-action-title">{{ item.title }}</span>
