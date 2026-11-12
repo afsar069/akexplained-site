@@ -1,14 +1,12 @@
 {
   "setId": "age-of-chaucer-set-1",
   "rev": 1,
-  "examCode": "30",
-  "examName": "UGC NET English (Subject Code 30)",
   "age": "age-of-chaucer",
   "ageName": "Age of Chaucer",
   "setNumber": 1,
   "setName": "Across the whole age",
   "notes": "/notes/middle-english/",
-  "notesTitle": "Middle English - the full notes",
+  "notesTitle": "Middle English — the full notes",
   "level": "medium",
   "levelName": "Medium",
   "levelNote": "UGC-NET Paper II pattern questions (50% complex: multi-statement, Assertion-Reason, chronology, and matching) on the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain Poet, and Wycliffe.",
@@ -20,7 +18,6 @@
     "gawain-poet": "The Gawain / Pearl Poet"
   },
   "topicRead": {},
-  "passages": [],
   "questions": [
     {
       "id": "age-of-chaucer-set-1-m-01",
@@ -32,13 +29,12 @@
         "King Edward III replaced English labourers entirely with Norman knights on royal estates"
       ],
       "correct_option_id": 1,
-      "explanation": "Per Course Hero Canterbury Tales study guide, the Black Plague reduced the population drastically, creating a labour shortage that resulted in higher wages for skilled workers and challenged the rigid three-estate hierarchy.",
+      "explanation": "The Black Plague reduced the population drastically, creating a labour shortage that resulted in higher wages for skilled workers and challenged the rigid three-estate hierarchy.",
       "topic": "history-wycliffe",
       "topicId": "three-estates",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, Course Hero The Canterbury Tales",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero The Canterbury Tales"
     },
     {
       "id": "age-of-chaucer-set-1-m-02",
@@ -50,13 +46,12 @@
         "The Pauline Epistles and the Book of Job only"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist, in the 1382 Wycliffe Bible, Wycliffe probably translated the four Gospels (Matthew, Mark, Luke, and John) and possibly the entire New Testament himself, while his associates translated the Old Testament.",
+      "explanation": "In the 1382 Wycliffe Bible, Wycliffe probably translated the four Gospels (Matthew, Mark, Luke, and John) and possibly the entire New Testament himself, while his associates translated the Old Testament.",
       "topic": "history-wycliffe",
       "topicId": "john-wycliffe",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-03",
@@ -68,13 +63,12 @@
         "Monastic orders should hold a legal monopoly over all secular courts and royal taxation"
       ],
       "correct_option_id": 0,
-      "explanation": "Per Course Hero Canterbury Tales study guide and World Literature in Your Fist, Wycliffe promoted the idea that Christians should seek their religion in the Bible directly without priestly intermediaries and that salvation could not be bought from a pardoner.",
+      "explanation": "Wycliffe promoted the idea that Christians should seek their religion in the Bible directly without priestly intermediaries and that salvation could not be bought from a pardoner.",
       "topic": "history-wycliffe",
       "topicId": "john-wycliffe",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, Course Hero The Canterbury Tales",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero The Canterbury Tales"
     },
     {
       "id": "age-of-chaucer-set-1-m-04",
@@ -86,13 +80,12 @@
         "Elizabeth de Burgh, Countess of Ulster"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, in 1357 Chaucer served as a page in the household of Elizabeth de Burgh, Countess of Ulster (wife of Edward III's son Prince Lionel).",
+      "explanation": "In 1357 Chaucer served as a page in the household of Elizabeth de Burgh, Countess of Ulster (wife of Edward III's son Prince Lionel).",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-05",
@@ -104,13 +97,12 @@
         "Genius"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, the third fragment of The Romaunt of the Rose features Fals-Semblant ('false-seeming'), who exposes clerical hypocrisy, disguises himself as a pilgrim, and absolves Wikked-Tunge at the fortress of Jealousy.",
+      "explanation": "The third fragment of The Romaunt of the Rose features Fals-Semblant ('false-seeming'), who exposes clerical hypocrisy, disguises himself as a pilgrim, and absolves Wikked-Tunge at the fortress of Jealousy.",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-06",
@@ -122,13 +114,12 @@
         "Pygmalion and Galatea"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, the sleepless narrator of The Book of the Duchess reads the romance of King Ceyx (who drowns at sea) and Queen Alcyone, whom Juno and Morpheus visit with a dream of her dead husband.",
+      "explanation": "The sleepless narrator of The Book of the Duchess reads the romance of King Ceyx (who drowns at sea) and Queen Alcyone, whom Juno and Morpheus visit with a dream of her dead husband.",
       "topic": "chaucer",
       "topicId": "the-book-of-the-duchess",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-07",
@@ -140,13 +131,12 @@
         "'The Knight of the Garter'"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist, towards the end of The House of Fame, amid bearers of false tidings, the confusion seems about to be resolved by the appearance of 'A man of gret auctorite...', where the poem abruptly ends.",
+      "explanation": "Towards the end of The House of Fame, amid bearers of false tidings, the confusion seems about to be resolved by the appearance of 'A man of gret auctorite...', where the poem abruptly ends.",
       "topic": "chaucer",
       "topicId": "the-house-of-fame",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-08",
@@ -158,13 +148,12 @@
         "Because Chaucer had translated the heresy of The Romaunt of the Rose and depicted Criseyde's infidelity in Troilus and Criseyde"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, in the Prologue to The Legend of Good Women, the God of Love is angry at Chaucer for writing about women who betray men (such as in Romaunt of the Rose and Troilus and Criseyde) and orders him as penance to write of good women.",
+      "explanation": "In the Prologue to The Legend of Good Women, the God of Love is angry at Chaucer for writing about women who betray men (such as in Romaunt of the Rose and Troilus and Criseyde) and orders him as penance to write of good women.",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-09",
@@ -176,13 +165,12 @@
         "He states that Chaucer borrowed all his plots from Homer while Gower relied solely on Dante"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist (The Prologue and Tale of the Man of Law), the Man of Law remarks that Chaucer has told more stories of lovers than Ovid and does not print wicked tales of incest (such as Canacee and Apollonius) as John Gower does.",
+      "explanation": "The Man of Law remarks that Chaucer has told more stories of lovers than Ovid and does not print wicked tales of incest (such as Canacee and Apollonius) as John Gower does.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-10",
@@ -194,13 +182,12 @@
         "The Manciple's Tale"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, after Harry Bailly interrupts the parody of bad poetry in The Tale of Sir Thopas, Chaucer tells his second tale, the long moral prose story of Melibee and his wise wife Prudence.",
+      "explanation": "After Harry Bailly interrupts the parody of bad poetry in The Tale of Sir Thopas, Chaucer tells his second tale, the long moral prose story of Melibee and his wise wife Prudence.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-11",
@@ -212,13 +199,12 @@
         "'And gladly wolde he lerne, and gladly teche'"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, Chaucer characterizes the sincere Oxford student (the Clerk) with the famous line 'And gladly would he learn and gladly teach'.",
+      "explanation": "Chaucer characterizes the sincere Oxford student (the Clerk) with the famous line 'And gladly would he learn and gladly teach'.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-12",
@@ -230,13 +216,12 @@
         "100 tragic falls"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist, the Monk narrates 17 tragic falls of noble figures (including Lucifer, Adam, Samson, Hercules, Nebuchadnezzar, Belshazzar, and Zenobia) before the Knight interrupts.",
+      "explanation": "The Monk narrates 17 tragic falls of noble figures (including Lucifer, Adam, Samson, Hercules, Nebuchadnezzar, Belshazzar, and Zenobia) before the Knight interrupts.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-13",
@@ -248,13 +233,12 @@
         "Chaucer borrowed his plots from Boccaccio and Guillaume de Lorris"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, Matthew Arnold famously judged that 'Chaucer lacks not only the accent of Dante, but also the high seriousness' required of the supreme classics.",
+      "explanation": "Matthew Arnold famously judged that 'Chaucer lacks not only the accent of Dante, but also the high seriousness' required of the supreme classics.",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-14",
@@ -266,13 +250,12 @@
         "Stephen Hawes"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Thomas Hoccleve (Occleve) wrote a famous lament mourning the death of Chaucer in The Regiment of Princes (Governail of Princes).",
+      "explanation": "Thomas Hoccleve (Occleve) wrote a famous lament mourning the death of Chaucer in The Regiment of Princes (Governail of Princes).",
       "topic": "chaucer",
-      "topicId": "geoffrey-chaucer",
+      "topicId": "thomas-hoccleve",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Upkar Guide Book",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition & Upkar Guide Book"
     },
     {
       "id": "age-of-chaucer-set-1-m-15",
@@ -284,13 +267,12 @@
         "He requires them to debate theology in Latin with the Clerk of Oxford"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist, when the Seven Deadly Sins ask Piers the way to Truth, Piers is ploughing his half-acre of land and sets them all to honest toil as the best remedy for their vices.",
+      "explanation": "When the Seven Deadly Sins ask Piers the way to Truth, Piers is ploughing his half-acre of land and sets them all to honest toil as the best remedy for their vices.",
       "topic": "langland",
       "topicId": "piers-plowman",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-16",
@@ -302,13 +284,12 @@
         "From about 2,500 lines in 1362 to about 7,200 lines in 1377-1379"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, Piers Plowman first appeared in 1362 in about 2,500 lines, and after revision reached about 7,200 lines in 1377-1379 (comprising 8 visions divided into 20 passus).",
+      "explanation": "Piers Plowman first appeared in 1362 in about 2,500 lines, and after revision reached about 7,200 lines in 1377-1379 (comprising 8 visions divided into 20 passus).",
       "topic": "langland",
       "topicId": "piers-plowman",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-17",
@@ -320,13 +301,12 @@
         "Judas Maccabeus"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, Piers Plowman opens with 'The voice of him that crieth in the wilderness, prepare ye the way of the Lord' and throughout the poem Piers resembles John the Baptist preaching to the crowd.",
+      "explanation": "Piers Plowman opens with 'The voice of him that crieth in the wilderness, prepare ye the way of the Lord' and throughout the poem Piers resembles John the Baptist preaching to the crowd.",
       "topic": "langland",
       "topicId": "piers-plowman",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-18",
@@ -338,13 +318,12 @@
         "An eagle carries the poet to the Temple of Glass to witness the fall of Troy"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, in Speculum Meditantis the union of the Devil and Sin produces seven daughters (the Seven Deadly Sins), opposed by God's seven Virtues, and man's salvation requires repentance through the intercession of the Virgin.",
+      "explanation": "In Speculum Meditantis the union of the Devil and Sin produces seven daughters (the Seven Deadly Sins), opposed by God's seven Virtues, and man's salvation requires repentance through the intercession of the Virgin.",
       "topic": "gower",
       "topicId": "john-gower",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-19",
@@ -356,13 +335,12 @@
         "A biographical chronicle of William Caxton's printing press at Bruges"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist,Vox Clamantis consists of seven books: Book I is a dream vision of the 1381 Peasants' Rebellion, while the remaining six books form an estates satire complaining about corruption across the degrees of society.",
+      "explanation": "Vox Clamantis consists of seven books: Book I is a dream vision of the 1381 Peasants' Rebellion, while the remaining six books form an estates satire complaining about corruption across the degrees of society.",
       "topic": "gower",
       "topicId": "john-gower",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-20",
@@ -374,13 +352,12 @@
         "Ovid's Metamorphoses"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, none of Gower's tales in Confessio Amantis are original, and the source he relies on most heavily is Ovid's Metamorphoses.",
+      "explanation": "None of Gower's tales in Confessio Amantis are original, and the source he relies on most heavily is Ovid's Metamorphoses.",
       "topic": "gower",
       "topicId": "confessio-amantis",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-21",
@@ -392,13 +369,12 @@
         "He wants to trade it to Bertilak in exchange for the wild boar's head"
       ],
       "correct_option_id": 0,
-      "explanation": "Per LitCharts Sir Gawain and the Green Knight, Gawain refuses the lady's rings and tokens until she offers him her green girdle, claiming that whoever wears it cannot be killed; hoping to survive the Green Knight's axe blow, Gawain accepts and hides it.",
+      "explanation": "Gawain refuses the lady's rings and tokens until she offers him her green girdle, claiming that whoever wears it cannot be killed; hoping to survive the Green Knight's axe blow, Gawain accepts and hides it.",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: LitCharts Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-22",
@@ -410,17 +386,16 @@
         "He refuses to swing his axe at all because Gawain returned all three kisses to Bertilak"
       ],
       "correct_option_id": 1,
-      "explanation": "Per LitCharts Sir Gawain and the Green Knight, the Green Knight makes two false strikes (representing the first two days when Gawain was honest) and on the third strike slightly wounds Gawain's neck as punishment for hiding the green girdle on the third day.",
+      "explanation": "The Green Knight makes two false strikes (representing the first two days when Gawain was honest) and on the third strike slightly wounds Gawain's neck as punishment for hiding the green girdle on the third day.",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: LitCharts Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-23",
-      "question": "According to the Course Hero study guide on 'Sir Gawain and the Green Knight', which ancient Irish text from c. 1100 CE preserves the oldest known version of the 'Beheading Game' motif?",
+      "question": "Which ancient Irish text from c. 1100 CE preserves the oldest known version of the 'Beheading Game' motif found in 'Sir Gawain and the Green Knight'?",
       "options": [
         "The Cattle Raid of Cooley in The Book of Leinster",
         "The Song of Roland in the Oxford Manuscript",
@@ -428,13 +403,12 @@
         "Bricriu's Feast (The Feast of Bricriu) in The Book of the Dun Cow"
       ],
       "correct_option_id": 3,
-      "explanation": "Per Course Hero and LitCharts Sir Gawain study guides, the oldest known version of the beheading game is Bricriu's Feast (The Feast of Bricriu), preserved in the Irish manuscript The Book of the Dun Cow (c. 1100 CE).",
+      "explanation": "The oldest known version of the beheading game is Bricriu's Feast (The Feast of Bricriu), preserved in the Irish manuscript The Book of the Dun Cow (c. 1100 CE).",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-24",
@@ -446,13 +420,12 @@
         "The Order of the Bath"
       ],
       "correct_option_id": 2,
-      "explanation": "Per Course Hero Sir Gawain study guide, Arthur's court wearing green laces in solidarity with Gawain is linked to King Edward III's founding of the Order of the Garter in 1348 with the motto 'Shame to him who thinks evil on it' (Honi soit qui mal y pense).",
+      "explanation": "Arthur's court wearing green laces in solidarity with Gawain is linked to King Edward III's founding of the Order of the Garter in 1348 with the motto 'Shame to him who thinks evil on it' (Honi soit qui mal y pense).",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-25",
@@ -464,13 +437,12 @@
         "It was adopted by William Caxton in 1476 as the official printing standard of London"
       ],
       "correct_option_id": 0,
-      "explanation": "Per Course Hero Sir Gawain study guide, the Pearl Poet wrote in the Northwest Midland dialect, which was far less influenced by French than Chaucer's London dialect and belonged to the Alliterative Revival evoking Old English four-stress verse.",
+      "explanation": "The Pearl Poet wrote in the Northwest Midland dialect, which was far less influenced by French than Chaucer's London dialect and belonged to the Alliterative Revival evoking Old English four-stress verse.",
       "topic": "gawain-poet",
       "topicId": "the-gawain-poet",
       "periodId": "age-of-chaucer",
       "qtype": "direct",
-      "src": "user-supplied: UGC NET folder, Course Hero Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-26",
@@ -482,13 +454,12 @@
         "Both Statement I and Statement II are false"
       ],
       "correct_option_id": 1,
-      "explanation": "Per Complete Guide for UGC NET and World Literature in Your Fist, Chaucer portrays the bright holiday side of society while Langland pictures the suffering of the poor, and both poets died in the year 1400.",
+      "explanation": "Chaucer portrays the bright holiday side of society while Langland pictures the suffering of the poor, and both poets died in the year 1400.",
       "topic": "langland",
       "topicId": "william-langland",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET & World Literature in Your Fist",
-      "difficulty": "medium"
+      "src": "user-supplied: Complete Guide for UGC NET & World Literature in Your Fist"
     },
     {
       "id": "age-of-chaucer-set-1-m-27",
@@ -500,17 +471,16 @@
         "(A) is false, but (R) is true"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist and Course Hero Canterbury Tales study guide, Wycliffe and the Lollards were condemned for heresy precisely because they attacked clerical corruption, rejected priestly intermediaries, and translated the Vulgate into English.",
+      "explanation": "Wycliffe and the Lollards were condemned for heresy precisely because they attacked clerical corruption, rejected priestly intermediaries, and translated the Vulgate into English.",
       "topic": "history-wycliffe",
       "topicId": "john-wycliffe",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Course Hero Canterbury Tales",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition & Course Hero Canterbury Tales"
     },
     {
       "id": "age-of-chaucer-set-1-m-28",
-      "question": "Consider the following statements regarding the biblical translation history noted in the UGC NET study materials:\nI. St. Jerome translated the Bible into Latin (the Vulgate) from ancient sources.\nII. John Wycliffe and his associates completed the first Middle English translation of the Bible directly from the Latin Vulgate in the early 1380s.\nIII. William Tyndale's English New Testament (1525-1526) preceded Wycliffe's Bible by more than a century.\nWhich of the statements given above are correct?",
+      "question": "Consider the following statements regarding the biblical translation history:\nI. St. Jerome translated the Bible into Latin (the Vulgate) from ancient sources.\nII. John Wycliffe and his associates completed the first Middle English translation of the Bible directly from the Latin Vulgate in the early 1380s.\nIII. William Tyndale's English New Testament (1525-1526) preceded Wycliffe's Bible by more than a century.\nWhich of the statements given above are correct?",
       "options": [
         "II and III only",
         "I and III only",
@@ -518,13 +488,12 @@
         "I and II only"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist and Upkar Guide Book, Wycliffe translated the Bible into Middle English from the Latin Vulgate in 1380-1382, whereas William Tyndale's New Testament appeared much later in 1525 (making Statement III false).",
+      "explanation": "Wycliffe translated the Bible into Middle English from the Latin Vulgate in 1380-1382, whereas William Tyndale's New Testament appeared much later in 1525 (making Statement III false).",
       "topic": "history-wycliffe",
       "topicId": "john-wycliffe",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition & Upkar Guide Book",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition & Upkar Guide Book"
     },
     {
       "id": "age-of-chaucer-set-1-m-29",
@@ -536,13 +505,12 @@
         "I, III and IV only"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, Troilus and Criseyde is an 8,239-line poem in rhyme royal with Boethian reflections on fate and free will. Statement III is false because Pandarus is Criseyde's uncle and Troilus's Trojan friend, not Diomedes's brother.",
+      "explanation": "Troilus and Criseyde is an 8,239-line poem in rhyme royal with Boethian reflections on fate and free will. Statement III is false because Pandarus is Criseyde's uncle and Troilus's Trojan friend, not Diomedes's brother.",
       "topic": "chaucer",
       "topicId": "troilus-and-criseyde",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-30",
@@ -554,13 +522,12 @@
         "I, II, III and IV"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, The Legend of Good Women was written at Queen Anne of Bohemia's bidding, is Chaucer's fourth and final dream-vision poem, and marks Chaucer's first use of the decasyllabic heroic couplet (making Statement IV false).",
+      "explanation": "The Legend of Good Women was written at Queen Anne of Bohemia's bidding, is Chaucer's fourth and final dream-vision poem, and marks Chaucer's first use of the decasyllabic heroic couplet (making Statement IV false).",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-31",
@@ -572,13 +539,12 @@
         "I, III and IV only"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist, the General Prologue has 858 lines in heroic couplets, Melibee and The Parson's Tale are the two prose tales, and both The Cook's Tale and The Squire's Tale are unfinished. Statement IV is false because the Plowman tells no tale (Chanticleer is in The Nun's Priest's Tale).",
+      "explanation": "The General Prologue has 858 lines in heroic couplets, Melibee and The Parson's Tale are the two prose tales, and both The Cook's Tale and The Squire's Tale are unfinished. Statement IV is false because the Plowman tells no tale (Chanticleer is in The Nun's Priest's Tale).",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-32",
@@ -590,13 +556,12 @@
         "Both Statement I and Statement II are true"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, Oswald the Reeve is a carpenter who takes offence at the Miller's Tale about foolish carpenter John and counters with his own tale of students John and Alayn humiliating a thieving miller.",
+      "explanation": "Oswald the Reeve is a carpenter who takes offence at the Miller's Tale about foolish carpenter John and counters with his own tale of students John and Alayn humiliating a thieving miller.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-33",
@@ -608,13 +573,12 @@
         "I and III only"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, all three statements accurately describe The Prioress's Tale (the widow's son singing Alma Redemptoris) and The Merchant's Tale (January, May, Damian in the pear tree, and Pluto restoring January's sight).",
+      "explanation": "All three statements accurately describe The Prioress's Tale (the widow's son singing Alma Redemptoris) and The Merchant's Tale (January, May, Damian in the pear tree, and Pluto restoring January's sight).",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-34",
@@ -626,13 +590,12 @@
         "(A) is false, but (R) is true"
       ],
       "correct_option_id": 1,
-      "explanation": "Per Complete Guide for UGC NET, Chaucer used the Southeast/East-Midland dialect of London, and Caxton's printing of The Canterbury Tales and Morte d'Arthur fixed this dialect as the standard literary language of England.",
+      "explanation": "Chaucer used the Southeast/East-Midland dialect of London, and Caxton's printing of The Canterbury Tales and Morte d'Arthur fixed this dialect as the standard literary language of England.",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET",
-      "difficulty": "medium"
+      "src": "user-supplied: Complete Guide for UGC NET"
     },
     {
       "id": "age-of-chaucer-set-1-m-35",
@@ -644,13 +607,12 @@
         "I, II and III"
       ],
       "correct_option_id": 2,
-      "explanation": "Per Complete Guide for UGC NET, Piers Plowman is the greatest poem of the Alliterative Revival and contrasts Chaucer's merry Tabard Inn with a gritty tavern scene of moral degradation. Statement III is false because Langland used unrhymed Anglo-Saxon alliterative verse, not heroic couplets.",
+      "explanation": "Piers Plowman is the greatest poem of the Alliterative Revival and contrasts Chaucer's merry Tabard Inn with a gritty tavern scene of moral degradation. Statement III is false because Langland used unrhymed Anglo-Saxon alliterative verse, not heroic couplets.",
       "topic": "langland",
       "topicId": "piers-plowman",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, Complete Guide for UGC NET",
-      "difficulty": "medium"
+      "src": "user-supplied: Complete Guide for UGC NET"
     },
     {
       "id": "age-of-chaucer-set-1-m-36",
@@ -662,13 +624,12 @@
         "II and III only"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, all three statements are true: Gower's trilingual poems share moral/political themes, Confessio Amantis consists of a Prologue and eight books, and the conclusion of Speculum Meditantis is lost.",
+      "explanation": "All three statements are true: Gower's trilingual poems share moral/political themes, Confessio Amantis consists of a Prologue and eight books, and the conclusion of Speculum Meditantis is lost.",
       "topic": "gower",
       "topicId": "john-gower",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-37",
@@ -680,13 +641,12 @@
         "Statement I is false, but Statement II is true"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, Gower's Vox Clamantis is an aristocratic estates satire that views the 1381 Peasants' Rebellion with horror as a nightmare vision (making Statement I false), while Statement II accurately describes Gower's revision of Confessio Amantis in favour of Henry Bolingbroke.",
+      "explanation": "Gower's Vox Clamantis is an aristocratic estates satire that views the 1381 Peasants' Rebellion with horror as a nightmare vision (making Statement I false), while Statement II accurately describes Gower's revision of Confessio Amantis in favour of Henry Bolingbroke.",
       "topic": "gower",
       "topicId": "confessio-amantis",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-38",
@@ -698,13 +658,12 @@
         "I, II and III"
       ],
       "correct_option_id": 1,
-      "explanation": "Per Course Hero and LitCharts Sir Gawain study guides, Statements I and II are correct. Statement III is false because King Arthur and the Round Table welcome Gawain warmly, admire his humility, and agree to wear green sashes in solidarity.",
+      "explanation": "Statements I and II are correct. Statement III is false because King Arthur and the Round Table welcome Gawain warmly, admire his humility, and agree to wear green sashes in solidarity.",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, Course Hero & LitCharts Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: Course Hero & LitCharts Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-39",
@@ -716,13 +675,12 @@
         "(A) is false, but (R) is true"
       ],
       "correct_option_id": 2,
-      "explanation": "Per LitCharts Sir Gawain and the Green Knight, the climax reveals that the true conflict is between Gawain's desire to uphold the knightly code of virtues and his natural desire to stay alive, demonstrated when he hides the green girdle to survive the axe blow.",
+      "explanation": "The climax reveals that the true conflict is between Gawain's desire to uphold the knightly code of virtues and his natural desire to stay alive, demonstrated when he hides the green girdle to survive the axe blow.",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: LitCharts Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-40",
@@ -734,13 +692,12 @@
         "I, II and III"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist and Course Hero Sir Gawain study guide, all three statements accurately reflect the religious and moral themes of Chaucer, Langland, Gower, and the Pearl Poet.",
+      "explanation": "All three statements accurately reflect the religious and moral themes of Chaucer, Langland, Gower, and the Pearl Poet.",
       "topic": "history-wycliffe",
       "topicId": "age-of-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "combination",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist & Course Hero Sir Gawain",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist & Course Hero Sir Gawain"
     },
     {
       "id": "age-of-chaucer-set-1-m-41",
@@ -752,13 +709,12 @@
         "1, 2, 3, 4"
       ],
       "correct_option_id": 0,
-      "explanation": "Per Upkar Guide Book (Important Events of the Age of Chaucer): Beginning of the Hundred Years' War (1337-38) and Battle of Crecy (1346) -> Black Death (1348-49) -> Wat Tyler's Rebellion (1381) -> Henry IV ascends the throne (1399).",
+      "explanation": "Beginning of the Hundred Years' War (1337-38) and Battle of Crecy (1346) -> Black Death (1348-49) -> Wat Tyler's Rebellion (1381) -> Henry IV ascends the throne (1399).",
       "topic": "history-wycliffe",
       "topicId": "age-of-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, Upkar Guide Book",
-      "difficulty": "medium"
+      "src": "user-supplied: Upkar Guide Book"
     },
     {
       "id": "age-of-chaucer-set-1-m-42",
@@ -770,17 +726,16 @@
         "2, 3, 1, 4"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist: Captured in the Brittany Expedition (1359) -> Appointed Comptroller of London customs (1374) -> Elected Member of Parliament for Kent (1386) -> Made Clerk of the King's Works (1389).",
+      "explanation": "Captured in the Brittany Expedition (1359) -> Appointed Comptroller of London customs (1374) -> Elected Member of Parliament for Kent (1386) -> Made Clerk of the King's Works (1389).",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-43",
-      "question": "Arrange the following works by Geoffrey Chaucer in the chronological order of their composition as given in the UGC NET study notes:\n1. The Book of the Duchess\n2. The Romaunt of the Rose\n3. The Legend of Good Women\n4. The House of Fame\nChoose the correct sequence:",
+      "question": "Arrange the following works by Geoffrey Chaucer in the chronological order of their composition:\n1. The Book of the Duchess\n2. The Romaunt of the Rose\n3. The Legend of Good Women\n4. The House of Fame\nChoose the correct sequence:",
       "options": [
         "1, 2, 4, 3",
         "2, 1, 4, 3",
@@ -788,13 +743,12 @@
         "1, 4, 3, 2"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist: The Romaunt of the Rose (c. 1360) -> The Book of the Duchess (1369) -> The House of Fame (1380) -> The Legend of Good Women (1385).",
+      "explanation": "The Romaunt of the Rose (c. 1360) -> The Book of the Duchess (1369) -> The House of Fame (1380) -> The Legend of Good Women (1385).",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-44",
@@ -806,13 +760,12 @@
         "2, 4, 1, 3"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist, Fragment I of The Canterbury Tales proceeds in the order: The Knight's Tale -> The Miller's Tale -> The Reeve's Tale -> The Cook's Tale.",
+      "explanation": "Fragment I of The Canterbury Tales proceeds in the order: The Knight's Tale -> The Miller's Tale -> The Reeve's Tale -> The Cook's Tale.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-45",
@@ -824,13 +777,12 @@
         "2, 1, 3"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist, Gower composed Speculum Meditantis (Mirour de l'Omme) in French first (completed before 1380), followed by Vox Clamantis in Latin (incorporating the 1381 revolt), and Confessio Amantis in English (completed 1390, revised 1390-1392).",
+      "explanation": "Gower composed Speculum Meditantis (Mirour de l'Omme) in French first (completed before 1380), followed by Vox Clamantis in Latin (incorporating the 1381 revolt), and Confessio Amantis in English (completed 1390, revised 1390-1392).",
       "topic": "gower",
       "topicId": "john-gower",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-46",
@@ -842,13 +794,12 @@
         "1, 2, 4, 3"
       ],
       "correct_option_id": 1,
-      "explanation": "Per LitCharts Sir Gawain and the Green Knight: Gawain beheads the Green Knight at New Year's (2) -> departs Camelot in autumn with the pentangle shield (4) -> reaches Bertilak's castle at Christmas and plays the exchange game (1) -> faces the Green Knight at the Green Chapel (3).",
+      "explanation": "Gawain beheads the Green Knight at New Year's (2) -> departs Camelot in autumn with the pentangle shield (4) -> reaches Bertilak's castle at Christmas and plays the exchange game (1) -> faces the Green Knight at the Green Chapel (3).",
       "topic": "gawain-poet",
       "topicId": "sir-gawain-and-the-green-knight",
       "periodId": "age-of-chaucer",
       "qtype": "chrono",
-      "src": "user-supplied: UGC NET folder, LitCharts Sir Gawain and the Green Knight",
-      "difficulty": "medium"
+      "src": "user-supplied: LitCharts Sir Gawain and the Green Knight"
     },
     {
       "id": "age-of-chaucer-set-1-m-47",
@@ -860,13 +811,12 @@
         "a-2, b-1, c-4, d-3"
       ],
       "correct_option_id": 3,
-      "explanation": "Per World Literature in Your Fist (p. 21), Chesterton called Chaucer 'the grandfather of the English novel'; Lowes said he 'found his native tongue a dialect and left it a language'; S. D. Neill compared Troilus and Criseyde to Pamela; and W. J. Long called the General Prologue 'the prologue to modern fiction'.",
+      "explanation": "Chesterton called Chaucer 'the grandfather of the English novel'; Lowes said he 'found his native tongue a dialect and left it a language'; S. D. Neill compared Troilus and Criseyde to Pamela; and W. J. Long called the General Prologue 'the prologue to modern fiction'.",
       "topic": "chaucer",
       "topicId": "geoffrey-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "match",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-48",
@@ -878,13 +828,12 @@
         "a-4, b-3, c-2, d-1"
       ],
       "correct_option_id": 2,
-      "explanation": "Per World Literature in Your Fist (pp. 24-27), the Doctor loved gold won in pestilence; the Summoner loved garlic, onions, and leeks and spoke Latin when drunk; the Franklin's house snowed with meat and drink; and Oswald the Reeve was a slender, choleric estate manager never caught in arrears.",
+      "explanation": "The Doctor loved gold won in pestilence; the Summoner loved garlic, onions, and leeks and spoke Latin when drunk; the Franklin's house snowed with meat and drink; and Oswald the Reeve was a slender, choleric estate manager never caught in arrears.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "match",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-49",
@@ -896,13 +845,12 @@
         "a-4, b-1, c-3, d-2"
       ],
       "correct_option_id": 0,
-      "explanation": "Per World Literature in Your Fist (pp. 29-33), The Man of Law's Tale narrates the trials of Custance and King Alla; The Clerk's Tale tells of patient Griselda; The Squire's Tale features Cambyuskan and Canacee's magic ring; and The Nun's Priest's Tale is the beast fable of Chanticleer.",
+      "explanation": "The Man of Law's Tale narrates the trials of Custance and King Alla; The Clerk's Tale tells of patient Griselda; The Squire's Tale features Cambyuskan and Canacee's magic ring; and The Nun's Priest's Tale is the beast fable of Chanticleer.",
       "topic": "chaucer",
       "topicId": "the-canterbury-tales",
       "periodId": "age-of-chaucer",
       "qtype": "match",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     },
     {
       "id": "age-of-chaucer-set-1-m-50",
@@ -914,13 +862,12 @@
         "a-4, b-1, c-2, d-3"
       ],
       "correct_option_id": 1,
-      "explanation": "Per World Literature in Your Fist, Langland wrote Piers Plowman (Visio and Vita); Gower wrote Speculum Meditantis, Vox Clamantis, and Confessio Amantis; Wycliffe led the Lollards and translated the Vulgate; and the Pearl Poet wrote Sir Gawain, Pearl, Patience, and Cleanness.",
+      "explanation": "Langland wrote Piers Plowman (Visio and Vita); Gower wrote Speculum Meditantis, Vox Clamantis, and Confessio Amantis; Wycliffe led the Lollards and translated the Vulgate; and the Pearl Poet wrote Sir Gawain, Pearl, Patience, and Cleanness.",
       "topic": "langland",
       "topicId": "age-of-chaucer",
       "periodId": "age-of-chaucer",
       "qtype": "match",
-      "src": "user-supplied: UGC NET folder, World Literature in Your Fist 3rd Edition",
-      "difficulty": "medium"
+      "src": "user-supplied: World Literature in Your Fist 3rd Edition"
     }
   ]
 }
