@@ -17,7 +17,7 @@ exact format me** tag karke deti hai, taaki Claude Code ko baad me kuch rename y
 | Explanation: "Per Upkar Guide Book..." (students ko dikhta hai, repo public hai) | sirf wajah likhi jaati hai; book ka naam sirf `src` me |
 | Tag: sawal ke naam se, jawab ke nahi (jaise Hoccleve wale sawal par `geoffrey-chaucer`) | owner ka rule: **jawab hi subject hai** (`thomas-hoccleve`) |
 | Sirf `tag_mcq.py` (tags check karta tha, format nahi) | **site ka apna validator** `--strict`: file ka naam, ids, set-header, tags, fields aur explanation ka style, sab check karta hai |
-| "UGC NET" naam se search: purane paper ("Solved Papers", "PYQs Telegram Polls") bhi mil sakte the | in files ko fact-source banana mana hai; folder ka exact naam na mile to skill aapse link maangegi |
+| "UGC NET" naam se search me purane paper ("Solved Papers", "PYQs Telegram Polls") bhi aa sakte hain | skill exact naam "UGC NET" wala folder chunti hai; purane paper ko fact-source banana mana hai; folder na mile ya kai mile to aapse link maangegi |
 
 ## Claude me lagana
 
