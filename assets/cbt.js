@@ -50,11 +50,13 @@
   var SEC_PER_Q = 40;          /* default raftaar, hub wali hi */
   var SEC_MIN = 30, SEC_MAX = 60, MINUTES_CAP = 100;
 
-  /* Mock test (data-exam-mock) ke start screen par reader khud chunta hai
-     kitne sawal aur kitna waqt. Hadd malik ne di: 10 se 100 sawal, 5 se 120
-     minute. Default raftaar SEC_PER_Q (40 sec/sawal) hi hai — sawal kam karne
-     par waqt usi ratio se ghat-badh jata hai, jab tak reader waqt khud na badle. */
-  var MOCK_Q_MIN = 10, MOCK_Q_MAX = 100, MOCK_T_MIN = 5, MOCK_T_MAX = 120;
+  /* Start screen par reader khud chunta hai kitne sawal aur kitna waqt — har
+     CBT page par (mock test ho ya MCQ set), siwaye "apna test" ke (us par ye
+     chunav build page par pehle hi ho chuka hota hai). Hadd malik ne di: 10 se
+     100 sawal, 5 se 120 minute. Default raftaar SEC_PER_Q (40 sec/sawal) hi hai —
+     sawal kam karne par waqt usi ratio se ghat-badh jata hai, jab tak reader
+     waqt khud na badle. Sawal set ke order me pehle n liye jate hain. */
+  var CHOICE_Q_MIN = 10, CHOICE_Q_MAX = 100, CHOICE_T_MIN = 5, CHOICE_T_MAX = 120;
 
   var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -99,6 +101,8 @@
   var paper = null;            /* file se aaya hua set (custom me: milaya hua) */
   var CUSTOM = root.hasAttribute('data-custom');
   var EXAM_MOCK = root.hasAttribute('data-exam-mock');
+  /* "Kitne sawal, kitna waqt" ka chunav: mock test aur MCQ set dono par, custom par nahi. */
+  var PLAN_CHOICE = !CUSTOM;
   var AGE = root.getAttribute('data-age') || '';
   var cfg = null;              /* custom: URL ya rakhe hue attempt se aaya mel */
   var cpapers = {};            /* custom: 'set|level' -> file */
@@ -344,11 +348,12 @@
 
     var old = read();
     if (old && (old.more || '') !== more) old = null;     /* alag mel ka attempt — ye wala nahi */
-    /* Mock test me reader ne jitne sawal chune the (old.count), attempt unhi
-       pehle sawalo ka hai. Resume ke liye Q ko usi ginti par le aao, warna
-       (Q poora paper hone se) adhoora/poora test pakad me nahi aata. */
-    if (EXAM_MOCK && old && old.count && old.count !== Q.length) {
-      var reQ = questionsFor(old.count, '');
+    /* Reader ne jitne sawal chune the (old.count), attempt unhi pehle sawalo ka
+       hai. Resume ke liye Q ko usi ginti par le aao, warna (Q poora set/paper
+       hone se) adhoora/poora test pakad me nahi aata. Custom me sawal record ki
+       apni list se aate hain, isliye wahan ye nahi. */
+    if (PLAN_CHOICE && old && old.count && old.count !== Q.length) {
+      var reQ = questionsFor(old.count, more);
       if (reQ.length === old.count) Q = reQ;
     }
     if (old && !old.done && old.endsAt > Date.now() && old.count === Q.length) {
@@ -619,20 +624,25 @@
   /* ---------------------------------------------------------
      Parda 1 — shuru karne se pehle
      --------------------------------------------------------- */
-  /* Mock test ke start screen ka chunav (kitne sawal, kitna waqt). Sirf
-     data-exam-mock par banta hai; baaki jagah null rehta hai. */
+  /* Start screen ka chunav (kitne sawal, kitna waqt). PLAN_CHOICE par banta hai
+     (mock test aur MCQ set); apna test (custom) par null rehta hai. */
   var mp = null;
-  function mockPlanInit(p) {
-    var pool = paper.questions.length;
-    var qmax = Math.min(MOCK_Q_MAX, pool);
-    var qmin = Math.min(MOCK_Q_MIN, qmax);
+  function planChoiceInit(p) {
+    var all = paper.questions.length;
+    /* Doosre level ke sawal pool me tabhi, jab link ke ?n= ne is level se bada maanga ho (p.more). */
+    var pool = all + (p.more && papers[p.more] ? papers[p.more].questions.length : 0);
+    var qmax = Math.min(CHOICE_Q_MAX, pool);
+    var qmin = Math.min(CHOICE_Q_MIN, qmax);
     var n = clamp(p.n, qmin, qmax);
-    mp = { pool: pool, qmin: qmin, qmax: qmax, rate: SEC_PER_Q, n: n,
-           minutes: clamp(Math.round(n * SEC_PER_Q / 60), MOCK_T_MIN, MOCK_T_MAX) };
+    /* Link me ?t= ho to wahi waqt aur uski raftaar; warna default raftaar. */
+    var asked = parseInt(new URLSearchParams(location.search).get('t'), 10);
+    var minutes = clamp(asked || Math.round(n * SEC_PER_Q / 60), CHOICE_T_MIN, CHOICE_T_MAX);
+    mp = { pool: pool, qmin: qmin, qmax: qmax, n: n, minutes: minutes,
+           rate: asked ? clamp(Math.round(minutes * 60 / n), 1, 3600) : SEC_PER_Q };
   }
 
   function showStart(p) {
-    if (EXAM_MOCK) mockPlanInit(p);
+    if (PLAN_CHOICE) planChoiceInit(p);
 
     root.innerHTML =
       '<div class="cbt-start">' +
@@ -642,8 +652,8 @@
           'You can go back to any question until you press Submit.</p>' +
         levelBlock() +
         '<div class="cbt-facts">' +
-          '<div class="cbt-fact"><b' + (EXAM_MOCK ? ' id="cbtFactN"' : '') + '>' + (EXAM_MOCK ? mp.n : p.n) + '</b><span>Questions</span></div>' +
-          '<div class="cbt-fact"><b' + (EXAM_MOCK ? ' id="cbtFactT"' : '') + '>' + (EXAM_MOCK ? mp.minutes : p.minutes) + ' min</b><span>Time</span></div>' +
+          '<div class="cbt-fact"><b' + (PLAN_CHOICE ? ' id="cbtFactN"' : '') + '>' + (PLAN_CHOICE ? mp.n : p.n) + '</b><span>Questions</span></div>' +
+          '<div class="cbt-fact"><b' + (PLAN_CHOICE ? ' id="cbtFactT"' : '') + '>' + (PLAN_CHOICE ? mp.minutes : p.minutes) + ' min</b><span>Time</span></div>' +
           '<div class="cbt-fact"><b>' + esc(levelLabel()) + '</b><span>' + (EXAM_MOCK ? 'Paper' : 'Level') + '</span></div>' +
         '</div>' +
         '<ul class="cbt-rules">' +
@@ -655,9 +665,9 @@
             'Your answers stay in this browser. Nothing is sent anywhere, and no sign-in is needed.') + '</li>' +
         '</ul>' +
 
-        /* Mock test: reader khud chunta hai kitne sawal aur kitna waqt.
-           Baaki sets ko ye chunav nahi (unka apna "build a test" page hai). */
-        mockPlanBlock() +
+        /* Reader khud chunta hai kitne sawal aur kitna waqt (mock test aur MCQ set
+           dono par). Apna test (custom) par nahi: wahan ye build page par chuna ja chuka hai. */
+        planChoiceBlock() +
 
         /* Har exam negative marking nahi lagata, isliye ye chunav reader ka
            hai aur default band hai. Jo laga, wo yaad rakha jata hai. */
@@ -675,15 +685,20 @@
       '</div>';
 
     wireNeg();
-    wireMockPlan();
+    wirePlanChoice();
     $$('.cbt-lvlbtn').forEach(function (b) {
       b.addEventListener('click', function () { switchLevel(b.getAttribute('data-level')); });
     });
 
     $('#cbtBegin').addEventListener('click', function () {
-      var minutes = EXAM_MOCK ? mp.minutes : p.minutes;
+      var minutes = PLAN_CHOICE ? mp.minutes : p.minutes;
       if (CUSTOM) Q = pickCustom(p.n);
-      else if (EXAM_MOCK) Q = questionsFor(mp.n, '');       /* reader ki chuni ginti ke pehle n sawal */
+      else {
+        /* Reader ki chuni ginti ke pehle n sawal. Doosre level ke sawal tabhi,
+           jab ginti is level se badi ho; warna record me "more" khali rehta hai. */
+        more = mp.n > paper.questions.length ? more : '';
+        Q = questionsFor(mp.n, more);
+      }
       st = { pick: {}, marked: {}, seen: {}, spent: {}, at: 0, done: false, count: Q.length,
              neg: negRate, startedAt: Date.now(), endsAt: Date.now() + minutes * 60000 };
       if (CUSTOM) {
@@ -697,11 +712,14 @@
 
   /* Mock test ka "kitne sawal, kitna waqt" dabba. Number box asli control hai
      (keyboard aur screen reader uske saath), slider usi ka doosra roop. */
-  function mockPlanBlock() {
-    if (!EXAM_MOCK) return '';
+  /* Mock test ko reader "paper" kehta hai, MCQ set ko "set". */
+  function planWord() { return EXAM_MOCK ? 'paper' : 'set'; }
+
+  function planChoiceBlock() {
+    if (!PLAN_CHOICE) return '';
     return '<div class="cbt-neg cbt-plan">' +
       '<p class="lbl" id="cbtPlanLbl">Questions and time</p>' +
-      '<p class="cbt-neghint">Take the full paper, or a shorter test. Change the number of questions and the time to suit you.</p>' +
+      '<p class="cbt-neghint">Take the full ' + planWord() + ', or a shorter test. Change the number of questions and the time to suit you.</p>' +
       '<div class="cbt-planrow" role="group" aria-labelledby="cbtPlanLbl">' +
         '<div class="cbt-planfield">' +
           '<label for="cbtPlanN">How many questions</label>' +
@@ -713,9 +731,9 @@
         '<div class="cbt-planfield">' +
           '<label for="cbtPlanT">How long</label>' +
           '<div class="cbt-numrow">' +
-            '<input type="number" id="cbtPlanT" min="' + MOCK_T_MIN + '" max="' + MOCK_T_MAX + '" step="1" inputmode="numeric" value="' + mp.minutes + '">' +
+            '<input type="number" id="cbtPlanT" min="' + CHOICE_T_MIN + '" max="' + CHOICE_T_MAX + '" step="1" inputmode="numeric" value="' + mp.minutes + '">' +
             '<span class="cbt-unit">minutes</span>' +
-            '<input type="range" id="cbtPlanTRange" min="' + MOCK_T_MIN + '" max="' + MOCK_T_MAX + '" step="1" value="' + mp.minutes + '" tabindex="-1" aria-hidden="true">' +
+            '<input type="range" id="cbtPlanTRange" min="' + CHOICE_T_MIN + '" max="' + CHOICE_T_MAX + '" step="1" value="' + mp.minutes + '" tabindex="-1" aria-hidden="true">' +
           '</div>' +
         '</div>' +
       '</div>' +
@@ -723,8 +741,8 @@
     '</div>';
   }
 
-  function wireMockPlan() {
-    if (!EXAM_MOCK || !mp) return;
+  function wirePlanChoice() {
+    if (!PLAN_CHOICE || !mp) return;
     var nBox = $('#cbtPlanN'), nBar = $('#cbtPlanNRange');
     var tBox = $('#cbtPlanT'), tBar = $('#cbtPlanTRange');
     var hint = $('#cbtPlanHint');
@@ -741,8 +759,8 @@
         hint.textContent = mp.n + (mp.n === 1 ? ' question' : ' questions') + ' in ' +
           mp.minutes + (mp.minutes === 1 ? ' minute' : ' minutes') +
           ' \u2014 about ' + each + ' seconds a question.' +
-          (mp.qmax < MOCK_Q_MAX && mp.n === mp.qmax ? ' That is the whole paper.' :
-           mp.qmax < MOCK_Q_MAX ? ' This paper has ' + mp.qmax + ' questions in all.' : '');
+          (mp.qmax < CHOICE_Q_MAX && mp.n === mp.qmax ? ' That is the whole ' + planWord() + '.' :
+           mp.qmax < CHOICE_Q_MAX ? ' This ' + planWord() + ' has ' + mp.qmax + ' questions in all.' : '');
       }
     }
 
@@ -751,14 +769,14 @@
       v = parseInt(v, 10);
       if (isNaN(v)) return;
       mp.n = clamp(v, mp.qmin, mp.qmax);
-      mp.minutes = clamp(Math.round(mp.n * mp.rate / 60), MOCK_T_MIN, MOCK_T_MAX);
+      mp.minutes = clamp(Math.round(mp.n * mp.rate / 60), CHOICE_T_MIN, CHOICE_T_MAX);
       paint();
     }
     /* Waqt badla: ab yahi raftaar yaad rahegi. */
     function setT(v) {
       v = parseInt(v, 10);
       if (isNaN(v)) return;
-      mp.minutes = clamp(v, MOCK_T_MIN, MOCK_T_MAX);
+      mp.minutes = clamp(v, CHOICE_T_MIN, CHOICE_T_MAX);
       mp.rate = clamp(Math.round(mp.minutes * 60 / mp.n), 1, 3600);
       paint();
     }
@@ -775,7 +793,7 @@
     tBar.addEventListener('input', function () { setT(tBar.value); });
     tBox.addEventListener('input', function () {
       var v = parseInt(tBox.value, 10);
-      if (!isNaN(v) && v >= MOCK_T_MIN && v <= MOCK_T_MAX) setT(v);
+      if (!isNaN(v) && v >= CHOICE_T_MIN && v <= CHOICE_T_MAX) setT(v);
     });
     tBox.addEventListener('change', function () { setT(tBox.value); });
     tBox.addEventListener('blur', function () { setT(tBox.value); });

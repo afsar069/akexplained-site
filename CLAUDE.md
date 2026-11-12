@@ -445,6 +445,11 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   keeps the line breaks. The passage `text` is shown exactly as supplied and `src` is not shown. A file with no `passages` behaves as
   before. Empty `topicRead` is fine (no per-topic notes links for that set). Keep this working when `cbt.js` is touched: a passage
   question without its passage is unanswerable.
+- **Questions and time chooser = the default of the CBT engine** (owner, 2026-11-12: "jahan bhi CBT MCQs honge wahan ye system hoga"). The start
+  screen of **every** CBT page except the custom test ("Your own test") lets the reader pick how many questions (10 to 100, capped at the set's size) and
+  how long (5 to 120 minutes): MCQ sets (free and login) and mock tests alike. It is `assets/cbt.js` only (`PLAN_CHOICE`, `planChoiceInit`, `planChoiceBlock`,
+  `wirePlanChoice`); a new set or a new mock test gets it with no template work. Questions are the first N of the set in its own order. The attempt record's
+  `count` carries the choice, so resume, result, review and "Practise my mistakes" follow it. Keep this working when `cbt.js` is touched.
 - **The lock on the hub** (owner, 2026-11-07, said twice: "jahan par Start, wahan par lock; kone me nahi"): on the
   hub row of a login set, a guest sees a padlock BUTTON in the place of the Start button (same slot, same height; template
   `quizzes/mcq/_templates/age-hub.njk`, `.agehub-go-lock` in `assets/site.css`). It links to `/login/?next=<that set's

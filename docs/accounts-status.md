@@ -4,9 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-12 (Age of Chaucer Set 1 is a free set on the feature branch, easy level, not on main yet. Before that: MCQ plan of 3 to 5 sets for the other 18 ages, merged to main as PR #54.)_
+_Last updated: 2026-11-12 (The "Questions and time" chooser is now the default on every MCQ set page, not only mock tests; on the feature branch, not on main yet. Before that: Age of Chaucer Set 1 free, easy level, and the MCQ plan for the other 18 ages, both on main.)_
 
-## Age of Chaucer Set 1 — free, easy level, prepared on the branch (2026-11-12)
+## "Questions and time" chooser on every MCQ set (BUILT on the branch, 2026-11-12)
+
+- The owner asked for the mock-test chooser (reader picks how many questions and how long) to be the **default of the CBT engine**, "jahan bhi CBT MCQs hon". It now shows on the start screen of **every CBT page except "Your own test"** (`data-custom`): the MCQ set pages (free and login sets, e.g. `/quizzes/mcq/age-of-chaucer/set-1/`) and the mock tests. No template change: it is `assets/cbt.js` only (`PLAN_CHOICE = !CUSTOM`). A custom test keeps its own count and time from the build page.
+- Same limits and rule as the mock test: 10 to 100 questions (capped at the set's own size, so a 50-question level gives 10 to 50), 5 to 120 minutes, default ~40 seconds a question; a changed time is remembered as the new speed. Text says "set" on an MCQ set and "paper" on a mock test. The Level buttons stay on sets that have two levels; switching level resets the chooser to the whole level.
+- **Questions are the first N of the set, in the set's own order** (as on the mock test). So a short test always covers the first topics of the set. Random picking would need the chosen question ids stored in the attempt record (as the custom test does) and changes in `begin`, `showReview` and `beginWrongOnly`; not built, ask first.
+- The saved attempt keeps `count`, so a part-set attempt resumes on reload at the same count (`begin()` re-slices to `old.count` for every non-custom page now, not only mocks), the result and review use it, "Practise my mistakes" works, and "Do it again" returns to the chooser. A link `?n=<count>` (the hub's Continue link) and `?n=70&t=47` (two levels mixed) still work; a `?t=` in the link sets the starting time. Cosmetic: on the hub a finished 20-question attempt counts its unanswered questions as "still to see" out of 20, as a finished full set already did.
+- Renamed in `cbt.js` (names no longer say "mock"): `planChoiceInit`, `planChoiceBlock`, `wirePlanChoice`, `CHOICE_Q_MIN/MAX`, `CHOICE_T_MIN/MAX`. The older section below uses the old names.
+- **Checked in a browser** (Playwright on `_site`): defaults and limits on Age of Chaucer Set 1; the number boxes move each other and clamp; a 20-question, 13-minute test starts with a 13:00 clock, resumes on reload, scores out of 20, reviews 20; Anglo-Norman Set 1 (two levels): level switch resets the chooser, a 12-question Medium test starts, `?n=70&t=47` still opens a 70-question mixed test and resumes without the link; UP PGT Mock Test 1 unchanged ("paper", 90 q / 60 min, 25-question test resumes); the custom test has no chooser; a login set (mocked student session, synthetic questions) shows the chooser, switches level, resumes and reviews, and a guest still sees "Log in to take this test"; no horizontal scroll at 375px. The mocked session was incomplete (the header script wanted `nameFrom`), which is not a site fault.
+
+## Age of Chaucer Set 1 — free, easy level (2026-11-12, merged to main as PR #56)
 
 - The owner supplied `age-of-chaucer-batch-1-easy.json` (50 easy questions) and said to keep it **outside login**, and that questions and answers are already verified. It matches planned Set 1 "Across the whole age" word for word (the file's own level note names the same seven topics), so it is Set 1. Facts and near-duplicates were **not** re-checked (no other Age of Chaucer set is live, so there was nothing to compare with). Structure checks: 50 distinct ids and stems, four options each, answer positions 13/13/12/12, every `topicId` and `periodId` is in the master taxonomy, build gate "54 question files checked ... OK".
 - **Public for good:** the file is `assets/questions/age-of-chaucer-set-1-easy.json` (the repo is public). Its `src` lines ("user-supplied: UGC NET folder, ...") and its reasons ("Per World Literature in Your Fist ...", "Per Upkar Guide Book ...", Course Hero, LitCharts) are the owner's own words and were left exactly as supplied; the reasons are shown to students on the review page. The owner may want to decide whether naming those guide books in public is what they want.
@@ -14,7 +23,7 @@ _Last updated: 2026-11-12 (Age of Chaucer Set 1 is a free set on the feature bra
 - **Registry (`_data/mcqSpec.json`):** Set 1 is `live` with `levels: ["easy"]` (the medium file has not arrived; when it does, add the file, add `"medium"` to `levels` and put "at each level" back in `meta`). `lede`, `titleCase` and the hub description lines use only the file's own topic names. No `access` key, so it is free; `rev` (1) is read from the file. `assets/mcq.js`: `age-of-chaucer` moved from `SOON_HUBS` to `LIVE_AGES`. `sitemap.xml`: hub added. `assets/syllabus-british.json` was regenerated by the build (the Age of Chaucer MCQ pool is now 50). Sets 2 to 4 stay "Coming soon".
 - **Validator (`tools/mcq-skill/validate_mcq.py`):** now accepts this generator's inert fields (`examCode`, `examName` at the top, `difficulty` on each question), an empty `"passages": []`, and the age `age-of-chaucer`, so the next batches of this kind pass. It reports no errors and 10 warnings: long stems and no "?" on the 5 combination, chronology and match questions (Q46 to Q50), the file's level note being long, and Q12 ("duchess" appears in the stem and in the right option only).
 - **Checked in a browser as a guest (no login):** the start screen says no sign-in is needed; 50 questions load; the five multi-line questions keep their line breaks; answering 40 right, 5 wrong and 5 skipped scored 40/50; the review page shows all 50 with their reasons, and "only wrong" filters; the hub shows Set 1 with Start (no padlock) and Sets 2 to 4 "Coming soon"; the `/quizzes/mcq/` card opens the hub; the build page lists the set; no horizontal scroll at 375px; no console errors. The Age of Chaucer hub is now indexable (it was `noindex` while nothing was live).
-- Not on `main` yet: the owner has not asked for this merge.
+- Merged to `main` as PR #56 on the owner's word (after merging the newer `main` in and retesting).
 
 ## MCQ plan for all 18 remaining ages — 76 sets (2026-11-12, merged to main as PR #54; Age of Chaucer Set 1 went live afterwards, see above)
 
@@ -85,18 +94,17 @@ to let the reader choose **how many questions** and **how long**, like the MCQ "
 page — but with no Easy/Hard choice (a mock test has one paper).
 
 - **Where:** the "Questions and time" block is part of the shared CBT engine (`assets/cbt.js`
-  `showStart` → `mockPlanBlock` / `wireMockPlan`), so it appears on **every** mock test automatically —
+  `showStart` → `planChoiceBlock` / `wirePlanChoice`, renamed from `mockPlanBlock` / `wireMockPlan` on 2026-11-12), so it appears on **every** mock test automatically —
   UP PGT Mock Tests and the UP Assistant Professor Paper 2 mock test today, and any added later. No
   per-page template edit is needed; the engine is the template.
-- **Only on mock tests** (`data-exam-mock`). Regular MCQ sets are unchanged — they keep their Level
-  choice and their own build page.
+- ~~Only on mock tests~~ **Since 2026-11-12 it is on every CBT page except the custom test** (see the section above); MCQ sets also keep their Level choice and their own build page.
 - **Limits (owner's):** 10 to 100 questions, 5 to 120 minutes. The question cap is also capped at the
   paper's own size (a 90-question paper tops out at 90).
 - **Ratio:** the default is the full paper at ~40 seconds a question (so 100 questions → 67 minutes,
   90 → 60). Change the number of questions and the time moves with it at the same rate; change the
   time and that new rate is remembered for the next change. Both clamp to the limits above.
 - The chosen count/time drive the test; the facts tiles at the top update live. A part-paper attempt
-  in progress resumes at the same count on reload (`begin()` re-slices to `old.count` for mock tests).
+  in progress resumes at the same count on reload (`begin()` re-slices to `old.count`, now for every non-custom page).
 - CSS: `.cbt-plan`, `.cbt-numrow`, `.cbt-unit` in `assets/site.css` (reuses the build page's number +
   slider look; slider is `tabindex="-1"`/`aria-hidden`, the number box is the real control).
 
