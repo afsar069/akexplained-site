@@ -263,7 +263,89 @@
       "notesName": "Middle English",
       "color": "#4A6473",
       "image": "middle-english",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the Black Death, the Peasants' Revolt, Chaucer, Langland, Gower, the Gawain poet and Wycliffe",
+          "topics": [
+            "ground",
+            "chaucer",
+            "poets",
+            "church",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Chaucer and his works",
+          "meta": "50 questions at each level &middot; <i>The Book of the Duchess</i>, <i>The House of Fame</i>, <i>The Parliament of Fowls</i>, <i>Troilus and Criseyde</i>, <i>The Canterbury Tales</i>",
+          "topics": [
+            "chaucer",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Langland, Gower and the Gawain poet",
+          "meta": "50 questions at each level &middot; <i>Piers Plowman</i>, <i>Confessio Amantis</i>, <i>Vox Clamantis</i>, <i>Pearl</i>, <i>Sir Gawain and the Green Knight</i>",
+          "topics": [
+            "poets",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Life and times, the Church and prose",
+          "meta": "50 questions at each level &middot; the Peasants' Revolt, the Hundred Years' War, Wycliffe and the Lollards, Julian of Norwich, Mandeville's <i>Travels</i>",
+          "topics": [
+            "ground",
+            "church"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its events"
+        },
+        {
+          "value": "chaucer",
+          "label": "Chaucer and his works"
+        },
+        {
+          "value": "poets",
+          "label": "Langland, Gower and the Gawain poet"
+        },
+        {
+          "value": "church",
+          "label": "The Church and prose"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "fifteenth-century",
@@ -273,7 +355,89 @@
       "notesName": "Middle English",
       "color": "#4D6A6E",
       "image": "/assets/topics/fifteenth-century.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Caxton, Malory, the mystery and morality plays, the Scottish Chaucerians, Lydgate, Hoccleve, Skelton and the Paston Letters",
+          "topics": [
+            "ground",
+            "prose",
+            "poetry",
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Prose, printing and letters",
+          "meta": "50 questions at each level &middot; <i>Le Morte d'Arthur</i>, Caxton's press at Westminster, the Paston Letters, <i>The Book of Margery Kempe</i>",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Poetry: Lydgate, Hoccleve, the Scottish Chaucerians and Skelton",
+          "meta": "50 questions at each level &middot; <i>Troy Book</i>, <i>Regement of Princes</i>, <i>The Testament of Cresseid</i>, <i>Lament for the Makaris</i> and Skelton",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Mystery and morality plays",
+          "meta": "50 questions at each level &middot; <i>The Second Shepherds' Play</i>, the Towneley cycle, <i>The Castle of Perseverance</i>, <i>Mankind</i>, <i>Everyman</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age, printing and the Wars of the Roses"
+        },
+        {
+          "value": "prose",
+          "label": "Prose, printing and letters"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "drama",
+          "label": "Mystery and morality plays"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "renaissance",
@@ -283,7 +447,103 @@
       "notesName": "Renaissance",
       "color": "#4F6F68",
       "image": "renaissance",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Spenser, Sidney, Marlowe, Shakespeare, Jonson, Donne, the Cavalier poets, Bacon and Milton",
+          "topics": [
+            "ground",
+            "drama",
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Drama from Kyd to Webster",
+          "meta": "50 questions at each level &middot; <i>The Spanish Tragedy</i>, <i>Doctor Faustus</i>, <i>Hamlet</i>, <i>Volpone</i>, <i>The Duchess of Malfi</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Poetry from Wyatt to Milton",
+          "meta": "50 questions at each level &middot; Wyatt, Surrey, <i>Astrophil and Stella</i>, <i>The Faerie Queene</i>, Donne, Herbert, Herrick, <i>Lycidas</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Prose and criticism",
+          "meta": "50 questions at each level &middot; <i>Utopia</i>, <i>Euphues</i>, <i>The Defence of Poesy</i>, Bacon's <i>Essays</i>, <i>The Anatomy of Melancholy</i>, the King James Bible",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Terms, movements and criticism",
+          "meta": "50 questions at each level &middot; humanism, the sonnet, blank verse, the Spenserian stanza, euphuism, the University Wits, Tillyard, Eliot on the Metaphysical poets",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age, its ideas and its language"
+        },
+        {
+          "value": "drama",
+          "label": "Drama"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "prose",
+          "label": "Prose and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, movements and criticism"
+        }
+      ]
     },
     {
       "slug": "early-tudor",
@@ -293,7 +553,71 @@
       "notesName": "Renaissance",
       "color": "#517063",
       "image": "/assets/topics/early-tudor.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; More's <i>Utopia</i>, Skelton, Wyatt, Surrey, <i>Tottel's Miscellany</i>, Tyndale and Ascham",
+          "topics": [
+            "ground",
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Poetry and the sonnet",
+          "meta": "50 questions at each level &middot; Wyatt, Surrey's English sonnets and blank-verse <i>Aeneid</i>, <i>Tottel's Miscellany</i>, Skelton's <i>Philip Sparrow</i> and <i>Colin Clout</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Prose, humanism and the Reformation",
+          "meta": "50 questions at each level &middot; More's <i>Utopia</i> and <i>History of King Richard III</i>, Tyndale's New Testament, Ascham's <i>Toxophilus</i>, Christian humanism",
+          "topics": [
+            "ground",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age, humanism and the Reformation"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and the sonnet"
+        },
+        {
+          "value": "prose",
+          "label": "Prose and the English Bible"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "elizabethan",
@@ -303,7 +627,103 @@
       "notesName": "Renaissance",
       "color": "#53705F",
       "image": "renaissance",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Spenser, Sidney, Marlowe, Kyd, the University Wits, Shakespeare, the playhouses and the critics",
+          "topics": [
+            "ground",
+            "poetry",
+            "drama",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Spenser, Sidney and the sonnet",
+          "meta": "50 questions at each level &middot; <i>The Shepheardes Calender</i>, <i>The Faerie Queene</i>, <i>Amoretti</i>, <i>Epithalamion</i>, <i>Astrophil and Stella</i>, <i>Arcadia</i>, <i>Delia</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The University Wits and Elizabethan drama",
+          "meta": "50 questions at each level &middot; Kyd's <i>The Spanish Tragedy</i>, Marlowe's <i>Tamburlaine</i> and <i>Doctor Faustus</i>, Lyly, Peele, Greene, Nashe",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Shakespeare and the playhouses",
+          "meta": "50 questions at each level &middot; <i>Venus and Adonis</i>, <i>Romeo and Juliet</i>, <i>Julius Caesar</i>, <i>Hamlet</i>, the playhouses and the companies",
+          "topics": [
+            "drama",
+            "ground"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Prose and criticism",
+          "meta": "50 questions at each level &middot; <i>Euphues</i>, <i>The Unfortunate Traveller</i>, <i>The Defence of Poesy</i>, Puttenham's <i>Arte</i>, Hakluyt, Bacon's <i>Essays</i>",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its playhouses"
+        },
+        {
+          "value": "poetry",
+          "label": "Spenser, Sidney and the sonnet"
+        },
+        {
+          "value": "drama",
+          "label": "The University Wits and Shakespeare"
+        },
+        {
+          "value": "prose",
+          "label": "Prose and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "jacobean",
@@ -313,7 +733,90 @@
       "notesName": "Jacobean and Caroline",
       "color": "#566F5A",
       "image": "/assets/topics/jacobean.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; James I, the King James Bible, Shakespeare's later plays, Jonson, Webster, Middleton, Donne, Bacon and the court masques",
+          "topics": [
+            "ground",
+            "drama",
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Shakespeare's later plays and the Jacobean stage",
+          "meta": "50 questions at each level &middot; <i>Othello</i>, <i>King Lear</i>, <i>Macbeth</i>, <i>The Winter's Tale</i>, <i>The Tempest</i>, the First Folio",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Jonson, Webster, Middleton and the court masque",
+          "meta": "50 questions at each level &middot; <i>Volpone</i>, <i>The Alchemist</i>, <i>Bartholomew Fair</i>, <i>The White Devil</i>, <i>The Duchess of Malfi</i>, <i>The Changeling</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Donne, Bacon and the prose of the age",
+          "meta": "50 questions at each level &middot; Donne's <i>Songs and Sonnets</i> and <i>Holy Sonnets</i>, Bacon's <i>Essays</i>, <i>The Anatomy of Melancholy</i>, the King James Bible",
+          "topics": [
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age of James I"
+        },
+        {
+          "value": "drama",
+          "label": "Drama and the court masque"
+        },
+        {
+          "value": "poetry",
+          "label": "Donne and the Metaphysical poets"
+        },
+        {
+          "value": "prose",
+          "label": "Bacon, Burton and the King James Bible"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "caroline",
@@ -323,7 +826,76 @@
       "notesName": "Jacobean and Caroline",
       "color": "#5F7254",
       "image": "/assets/topics/caroline.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Charles I, the Civil War, the Cavalier poets, Herbert, Ford, Milton's early works and Browne",
+          "topics": [
+            "ground",
+            "poetry",
+            "drama",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Cavalier and devotional poetry",
+          "meta": "50 questions at each level &middot; Herrick's <i>Hesperides</i>, Carew, Suckling, Lovelace, Herbert's <i>The Temple</i>, Crashaw's <i>Steps to the Temple</i>, Vaughan, Milton's <i>Comus</i> and <i>Lycidas</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Drama and prose",
+          "meta": "50 questions at each level &middot; Ford's <i>'Tis Pity She's a Whore</i> and <i>The Broken Heart</i>, Massinger, Shirley's <i>Hyde Park</i>, Browne's <i>Religio Medici</i>, Hobbes",
+          "topics": [
+            "drama",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "Charles I and the Civil War"
+        },
+        {
+          "value": "poetry",
+          "label": "Cavalier and devotional poetry"
+        },
+        {
+          "value": "drama",
+          "label": "Drama before the theatres closed"
+        },
+        {
+          "value": "prose",
+          "label": "Browne, Hobbes and prose"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "commonwealth",
@@ -333,7 +905,71 @@
       "notesName": "Jacobean and Caroline",
       "color": "#627254",
       "image": "/assets/topics/commonwealth.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the Commonwealth and the Protectorate, Milton, Marvell, Hobbes, Browne, Walton, Vaughan, Cowley and the theatre ban",
+          "topics": [
+            "ground",
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Poetry: Marvell, Vaughan, Cowley and Katherine Philips",
+          "meta": "50 questions at each level &middot; Marvell's 'Horatian Ode' and 'The Garden', Vaughan's <i>Silex Scintillans</i>, Cowley, Katherine Philips's <i>Poems</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Prose, ideas and the stage",
+          "meta": "50 questions at each level &middot; Hobbes's <i>Leviathan</i>, Browne's <i>Urn Burial</i>, Walton's <i>The Compleat Angler</i>, Milton's <i>Eikonoklastes</i>, Margaret Cavendish, Davenant's <i>The Siege of Rhodes</i>, the Diggers and Levellers",
+          "topics": [
+            "ground",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The Commonwealth and the theatre ban"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "prose",
+          "label": "Prose, ideas and the stage"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "neoclassical",
@@ -343,7 +979,103 @@
       "notesName": "Restoration",
       "color": "#697451",
       "image": "restoration",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the Restoration stage, Dryden, Pope, Swift, Addison and Steele, Defoe, Richardson, Fielding, Sterne, Johnson, Gray and Goldsmith",
+          "topics": [
+            "ground",
+            "poetry",
+            "drama",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Poetry: Dryden, Pope, Gray and Goldsmith",
+          "meta": "50 questions at each level &middot; <i>Absalom and Achitophel</i>, <i>The Rape of the Lock</i>, <i>An Essay on Man</i>, <i>Elegy Written in a Country Churchyard</i>, <i>The Deserted Village</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The stage: Restoration comedy to Sheridan",
+          "meta": "50 questions at each level &middot; <i>The Country Wife</i>, <i>The Way of the World</i>, <i>The Beggar's Opera</i>, <i>She Stoops to Conquer</i>, <i>The School for Scandal</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Prose and the rise of the novel",
+          "meta": "50 questions at each level &middot; <i>The Spectator</i>, <i>Robinson Crusoe</i>, <i>Gulliver's Travels</i>, <i>Pamela</i>, <i>Tom Jones</i>, <i>Tristram Shandy</i>, Johnson's <i>Dictionary</i>",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Criticism, ideas and terms",
+          "meta": "50 questions at each level &middot; Dryden's <i>Of Dramatic Poesie</i>, Pope's <i>An Essay on Criticism</i>, Johnson's <i>Preface to Shakespeare</i>, neoclassicism, the heroic couplet, sensibility",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its ideas"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and satire"
+        },
+        {
+          "value": "drama",
+          "label": "The stage"
+        },
+        {
+          "value": "prose",
+          "label": "Essays and the novel"
+        },
+        {
+          "value": "terms",
+          "label": "Criticism, terms and ideas"
+        }
+      ]
     },
     {
       "slug": "restoration",
@@ -353,7 +1085,90 @@
       "notesName": "Restoration",
       "color": "#6F744F",
       "image": "/assets/topics/restoration-age.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Charles II, the reopened theatres, Dryden, Congreve, Aphra Behn, Milton, Bunyan and Pepys",
+          "topics": [
+            "ground",
+            "drama",
+            "poetry",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Restoration comedy and tragedy",
+          "meta": "50 questions at each level &middot; <i>The Man of Mode</i>, <i>The Country Wife</i>, <i>The Way of the World</i>, <i>The Rover</i>, <i>The Relapse</i>, <i>Venice Preserv'd</i>, <i>All for Love</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Dryden, Milton and Restoration poetry",
+          "meta": "50 questions at each level &middot; <i>Absalom and Achitophel</i>, <i>MacFlecknoe</i>, <i>Paradise Lost</i>, <i>Hudibras</i>, Rochester's <i>A Satyr against Mankind</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Prose, diaries and ideas",
+          "meta": "50 questions at each level &middot; <i>The Pilgrim's Progress</i>, Pepys's <i>Diary</i>, Evelyn, Locke's <i>Essay Concerning Human Understanding</i>, <i>Oroonoko</i>, Rymer and Collier",
+          "topics": [
+            "ground",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age, the king and the theatres"
+        },
+        {
+          "value": "drama",
+          "label": "Comedy and tragedy"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and satire"
+        },
+        {
+          "value": "prose",
+          "label": "Prose, diaries and ideas"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "augustan-age",
@@ -363,7 +1178,89 @@
       "notesName": "Augustan Age",
       "color": "#7D7548",
       "image": "/assets/topics/augustan-age.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Pope, Swift, Defoe, Addison and Steele, Gay, Farquhar, Rowe, Anne Finch, Berkeley and Hume",
+          "topics": [
+            "ground",
+            "poetry",
+            "prose",
+            "stage",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Pope and Augustan verse",
+          "meta": "50 questions at each level &middot; <i>An Essay on Criticism</i>, <i>The Rape of the Lock</i>, <i>The Dunciad</i>, <i>An Essay on Man</i>, Gay's <i>Trivia</i>, Anne Finch, Isaac Watts",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Swift, Defoe and the periodical essay",
+          "meta": "50 questions at each level &middot; <i>Gulliver's Travels</i>, <i>A Modest Proposal</i>, <i>Robinson Crusoe</i>, <i>Moll Flanders</i>, <i>The Tatler</i>, <i>The Spectator</i>",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "The stage, ideas and women writers",
+          "meta": "50 questions at each level &middot; <i>The Beggar's Opera</i>, Farquhar, Rowe, Berkeley, Hume, Lady Mary Wortley Montagu, Anne Finch",
+          "topics": [
+            "ground",
+            "stage"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its ideas"
+        },
+        {
+          "value": "poetry",
+          "label": "Pope and Augustan verse"
+        },
+        {
+          "value": "prose",
+          "label": "Swift, Defoe and the periodical essay"
+        },
+        {
+          "value": "stage",
+          "label": "The stage, ideas and women writers"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "age-of-sensibility",
@@ -373,7 +1270,90 @@
       "notesName": "Augustan Age",
       "color": "#847247",
       "image": "/assets/topics/age-of-sensibility.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Johnson, Goldsmith, Sheridan, Richardson, Fielding, Sterne, Gray, Cowper, Gibbon and Burke",
+          "topics": [
+            "ground",
+            "novel",
+            "poetry",
+            "johnson",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The novel: Richardson, Fielding, Smollett and Sterne",
+          "meta": "50 questions at each level &middot; <i>Clarissa</i>, <i>Tom Jones</i>, <i>Roderick Random</i>, <i>Humphry Clinker</i>, <i>Tristram Shandy</i>, Walpole's <i>The Castle of Otranto</i>, Mackenzie",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Poetry: Gray, Collins, Smart, Cowper and Crabbe",
+          "meta": "50 questions at each level &middot; Gray's <i>Elegy</i>, Collins, Smart, Cowper's <i>The Task</i>, Crabbe, Goldsmith's <i>The Deserted Village</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Johnson, the stage and the prose of ideas",
+          "meta": "50 questions at each level &middot; Johnson's <i>Dictionary</i> and <i>Lives of the Poets</i>, Boswell, <i>She Stoops to Conquer</i>, <i>The School for Scandal</i>, Gibbon, Adam Smith, Burke",
+          "topics": [
+            "johnson",
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its tastes"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "johnson",
+          "label": "Johnson, the stage and ideas"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "romantic-age",
@@ -383,7 +1363,109 @@
       "notesName": "Romantic Age",
       "color": "#8A6A44",
       "image": "romantic",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Burns, Blake, Wordsworth, Coleridge, Byron, Shelley, Keats, Austen, Scott, Mary Shelley, Lamb and Hazlitt",
+          "topics": [
+            "ground",
+            "first",
+            "second",
+            "novel",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Blake, Wordsworth and Coleridge",
+          "meta": "50 questions at each level &middot; <i>Songs of Innocence</i> and <i>of Experience</i>, <i>Lyrical Ballads</i>, <i>The Prelude</i>, <i>The Rime of the Ancient Mariner</i>, <i>Kubla Khan</i>, <i>Biographia Literaria</i>",
+          "topics": [
+            "first",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Byron, Shelley, Keats and Clare",
+          "meta": "50 questions at each level &middot; <i>Don Juan</i>, <i>Prometheus Unbound</i>, <i>Adonais</i>, <i>A Defence of Poetry</i>, Keats's odes, <i>The Eve of St Agnes</i>, John Clare",
+          "topics": [
+            "second",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "The novel: Austen, Scott, Mary Shelley and the Gothic",
+          "meta": "50 questions at each level &middot; <i>Pride and Prejudice</i>, <i>Emma</i>, <i>Waverley</i>, <i>Ivanhoe</i>, <i>Frankenstein</i>, the Gothic novel",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Essays, ideas and criticism",
+          "meta": "50 questions at each level &middot; Burke, Paine, Wollstonecraft, Godwin, Lamb's <i>Essays of Elia</i>, Hazlitt's <i>The Spirit of the Age</i>, De Quincey's <i>Confessions</i>, Peacock's <i>The Four Ages of Poetry</i>",
+          "topics": [
+            "ground",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its revolutions"
+        },
+        {
+          "value": "first",
+          "label": "Blake, Wordsworth and Coleridge"
+        },
+        {
+          "value": "second",
+          "label": "Byron, Shelley, Keats and Clare"
+        },
+        {
+          "value": "novel",
+          "label": "The novel and the Gothic"
+        },
+        {
+          "value": "prose",
+          "label": "Essays, ideas and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "victorian-age",
@@ -393,7 +1475,109 @@
       "notesName": "Victorian Age",
       "color": "#8D5A45",
       "image": "victorian",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Dickens, Thackeray, the Bront&euml;s, George Eliot, Hardy, Tennyson, Browning, Arnold, Carlyle, Ruskin and Wilde",
+          "topics": [
+            "ground",
+            "novel",
+            "poetry",
+            "prose",
+            "late",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The Victorian novel: Dickens to Hardy",
+          "meta": "50 questions at each level &middot; <i>Great Expectations</i>, <i>Vanity Fair</i>, <i>Jane Eyre</i>, <i>Wuthering Heights</i>, <i>Middlemarch</i>, <i>Tess of the d'Urbervilles</i>, Gaskell, Trollope",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Victorian poetry: Tennyson to Hopkins",
+          "meta": "50 questions at each level &middot; <i>In Memoriam</i>, <i>Idylls of the King</i>, <i>The Ring and the Book</i>, 'Dover Beach', Rossetti, Swinburne, Hopkins, FitzGerald's <i>Rubaiyat</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Prose, ideas and criticism",
+          "meta": "50 questions at each level &middot; Carlyle's <i>Sartor Resartus</i>, Mill's <i>On Liberty</i>, Ruskin, Newman's <i>Apologia</i>, Darwin's <i>On the Origin of Species</i>, Arnold's <i>Culture and Anarchy</i>, Pater's <i>The Renaissance</i>",
+          "topics": [
+            "ground",
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "The late Victorians: fiction, drama and the fin de siècle",
+          "meta": "50 questions at each level &middot; <i>Dr Jekyll and Mr Hyde</i>, <i>The Time Machine</i>, <i>Dracula</i>, Kipling, <i>The Importance of Being Earnest</i>, Pinero, aestheticism",
+          "topics": [
+            "late",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "prose",
+          "label": "Essays, ideas and criticism"
+        },
+        {
+          "value": "late",
+          "label": "The late Victorians and the fin de siècle"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "edwardian",
@@ -403,7 +1587,90 @@
       "notesName": "Modern",
       "color": "#8C5446",
       "image": "/assets/topics/edwardian.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Shaw, Galsworthy, Bennett, Wells, Conrad, Forster, Yeats, Hardy, Synge and the Abbey Theatre",
+          "topics": [
+            "ground",
+            "novel",
+            "drama",
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The novel: Conrad, Forster, Wells, Bennett and Galsworthy",
+          "meta": "50 questions at each level &middot; <i>Nostromo</i>, <i>The Secret Agent</i>, <i>Howards End</i>, <i>Tono-Bungay</i>, <i>The Old Wives' Tale</i>, <i>The Man of Property</i>, Henry James",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Drama and the Abbey Theatre",
+          "meta": "50 questions at each level &middot; Shaw's <i>Man and Superman</i>, Synge's <i>Riders to the Sea</i> and <i>The Playboy of the Western World</i>, Barrie's <i>Peter Pan</i>, Yeats, Lady Gregory",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Poetry, new movements and the Bloomsbury Group",
+          "meta": "50 questions at each level &middot; Yeats, Hardy's <i>The Dynasts</i>, the Georgian poets, the Imagists, Pound's <i>Ripostes</i>, Kipling, Chesterton, the Bloomsbury Group",
+          "topics": [
+            "ground",
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "drama",
+          "label": "Drama and the Abbey Theatre"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry and new movements"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "georgian",
@@ -413,7 +1680,90 @@
       "notesName": "Modern",
       "color": "#87494D",
       "image": "/assets/topics/georgian.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Georgian Poetry, Brooke, the war poets, Lawrence, Woolf, Joyce, Eliot, Yeats, Huxley and Auden",
+          "topics": [
+            "ground",
+            "poetry",
+            "novel",
+            "later",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Georgian poets and the war poets",
+          "meta": "50 questions at each level &middot; <i>Georgian Poetry</i>, the Dymock poets, Brooke, Masefield, Owen, Sassoon, Rosenberg, Sorley, Gurney, Blunden",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The novel: Lawrence, Woolf, Joyce, Ford and Forster",
+          "meta": "50 questions at each level &middot; <i>Sons and Lovers</i>, <i>Ulysses</i>, <i>Mrs Dalloway</i>, <i>To the Lighthouse</i>, <i>The Good Soldier</i>, <i>A Passage to India</i>, Huxley's <i>Brave New World</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Eliot, Yeats, Auden and the stage",
+          "meta": "50 questions at each level &middot; <i>The Waste Land</i>, Yeats's <i>The Tower</i>, Auden, Shaw's <i>Saint Joan</i>, Orwell, Waugh's <i>Decline and Fall</i>",
+          "topics": [
+            "later",
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its movements"
+        },
+        {
+          "value": "poetry",
+          "label": "Georgian poetry and the war poets"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "later",
+          "label": "Eliot, Yeats, Auden and the stage"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "modern",
@@ -423,7 +1773,108 @@
       "notesName": "Modern",
       "color": "#85484F",
       "image": "modern",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; the war poets, Yeats, Eliot, Joyce, Woolf, Lawrence, Auden, Orwell, Greene, Shaw and the critics Richards, Empson and Leavis",
+          "topics": [
+            "ground",
+            "poetry",
+            "novel",
+            "thirties",
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Poetry: the war poets, Yeats and Eliot",
+          "meta": "50 questions at each level &middot; Owen, Sassoon, Rosenberg, David Jones, Yeats's <i>The Tower</i>, Eliot's <i>The Waste Land</i> and <i>Four Quartets</i>, Pound's <i>The Cantos</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The novel: Joyce, Woolf, Lawrence and Forster",
+          "meta": "50 questions at each level &middot; <i>Ulysses</i>, <i>Mrs Dalloway</i>, <i>Women in Love</i>, <i>A Passage to India</i>, <i>Parade's End</i>, Mansfield's <i>The Garden Party</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "The 1930s and 1940s: Auden, Orwell, Waugh and Greene",
+          "meta": "50 questions at each level &middot; Auden, <i>Animal Farm</i>, Waugh's <i>A Handful of Dust</i>, Greene's <i>Brighton Rock</i>, Huxley's <i>Brave New World</i>, MacNeice, Dylan Thomas",
+          "topics": [
+            "thirties",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Drama, criticism and terms",
+          "meta": "50 questions at each level &middot; Shaw, O'Casey's <i>Juno and the Paycock</i>, Coward, Bradley, Richards's <i>Practical Criticism</i>, Empson, Leavis, modernism, stream of consciousness, the objective correlative",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its movements"
+        },
+        {
+          "value": "poetry",
+          "label": "War poets, Yeats and Eliot"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "thirties",
+          "label": "The 1930s and 1940s"
+        },
+        {
+          "value": "drama",
+          "label": "Drama and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms, dates and sources"
+        }
+      ]
     },
     {
       "slug": "postmodern",
@@ -433,7 +1884,108 @@
       "notesName": "Contemporary",
       "color": "#7A4258",
       "image": "/assets/topics/postmodern.webp",
-      "sets": []
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Orwell, Golding, Beckett, Pinter, Larkin, Hughes, Heaney, Rushdie and Achebe",
+          "topics": [
+            "ground",
+            "novel",
+            "drama",
+            "poetry",
+            "postcolonial",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The novel from Orwell to Mantel",
+          "meta": "50 questions at each level &middot; <i>Nineteen Eighty-Four</i>, <i>Lord of the Flies</i>, <i>The Golden Notebook</i>, <i>The French Lieutenant's Woman</i>, <i>The Bloody Chamber</i>, <i>The Remains of the Day</i>, <i>Wolf Hall</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Drama: Beckett, Pinter, Osborne, Stoppard and Friel",
+          "meta": "50 questions at each level &middot; <i>Waiting for Godot</i>, <i>Look Back in Anger</i>, <i>The Birthday Party</i>, <i>Rosencrantz and Guildenstern Are Dead</i>, Friel, Churchill's <i>Top Girls</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Poetry: Larkin, Hughes, Heaney and Walcott",
+          "meta": "50 questions at each level &middot; <i>The Whitsun Weddings</i>, <i>The Hawk in the Rain</i>, <i>Death of a Naturalist</i>, <i>North</i>, <i>Omeros</i>, the Movement",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Postcolonial writing and critical ideas",
+          "meta": "50 questions at each level &middot; <i>Things Fall Apart</i>, <i>A House for Mr Biswas</i>, <i>Midnight's Children</i>, <i>The God of Small Things</i>, Coetzee, Said's <i>Orientalism</i>, poststructuralism",
+          "topics": [
+            "postcolonial",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its movements"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "drama",
+          "label": "Drama"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "postcolonial",
+          "label": "Postcolonial writing and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
     }
   ]
 }

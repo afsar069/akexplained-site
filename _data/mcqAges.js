@@ -26,7 +26,8 @@ function words(n) {
 }
 const cap = (s) => s.charAt(0).toUpperCase() + s.slice(1);
 const ORDINALS = ["", "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth",
-  "ninth", "tenth", "eleventh", "twelfth"];
+  "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth", "sixteenth",
+  "seventeenth", "eighteenth", "nineteenth", "twentieth"];
 
 // Article ke title ke bracket ke saal ("Renaissance Literature (1500-1603)" -> "1500 to 1603").
 // Kai ages ek article baantte hain, isliye card par article ke saal dikhte hain, age ke nahi.
