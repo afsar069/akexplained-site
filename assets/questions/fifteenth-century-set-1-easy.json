@@ -1,0 +1,873 @@
+{
+  "setId": "fifteenth-century-set-1",
+  "rev": 1,
+  "age": "fifteenth-century",
+  "ageName": "Fifteenth Century",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/middle-english/",
+  "notesTitle": "Middle English — the full notes",
+  "topics": {
+    "ground": "The age and printing",
+    "prose": "Prose, printing and letters",
+    "poetry": "Lydgate, Hoccleve and Skelton",
+    "scottish": "The Scottish Chaucerians",
+    "drama": "Mystery and morality plays"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Fifty direct and simple recall questions across Caxton, Malory, the poets, the Scottish Chaucerians, drama and the Paston Letters.",
+  "questions": [
+    {
+      "id": "fifteenth-century-set-1-e-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "In which year did William Caxton establish the first printing press in England at Westminster?",
+      "options": [
+        "1476, at the sign of the Red Pale",
+        "1453, after the fall of Constantinople",
+        "1485, after the Battle of Bosworth Field",
+        "1501, at the close of the incunabula era"
+      ],
+      "correct_option_id": 0,
+      "explanation": "William Caxton set up England's first printing press at Westminster in 1476 at the sign of the Red Pale. The year 1453 marks the fall of Constantinople and the end of the Hundred Years' War, while 1485 marks the Battle of Bosworth Field and Caxton's printing of Le Morte d'Arthur.",
+      "src": "https://akexplained.com/notes/middle-english/#how-the-writing-survived"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "What was the name of the shop sign at Westminster where William Caxton operated his printing press?",
+      "options": [
+        "The Tabard Inn",
+        "The Red Pale",
+        "The Brazen Head",
+        "The White Hart"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Caxton's Westminster printing shop was known by its heraldic sign, 'The Red Pale'. The Tabard Inn is the Southwark hostelry in Chaucer's Canterbury Tales, while the other two names are unrelated tavern and bookseller signs.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "In which German city did William Caxton first learn the art of printing during 1471–1472?",
+      "options": [
+        "Wittenberg",
+        "Augsburg",
+        "Cologne",
+        "Heidelberg"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Caxton learned the trade of movable-type printing during his stay in Cologne between 1471 and 1472 before returning to Bruges. Wittenberg, Augsburg, and Heidelberg were other German centres of learning, not where Caxton trained as a printer.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "With which Flemish collaborator did William Caxton set up a printing press at Bruges before moving to England?",
+      "options": [
+        "Richard Pynson",
+        "John Rastell",
+        "Robert Large",
+        "Colard Mansion"
+      ],
+      "correct_option_id": 3,
+      "explanation": "At Bruges, Caxton partnered with the Flemish calligrapher and printer Colard Mansion to produce the first books printed in the English language. Robert Large was the London mercer to whom Caxton was apprenticed in 1438, while Richard Pynson and John Rastell were later printers in England.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Who succeeded William Caxton at the Westminster printing press upon Caxton's death in 1491?",
+      "options": [
+        "Anthony Woodville",
+        "Wynkyn de Worde",
+        "Humphrey Pitt",
+        "Colard Mansion"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wynkyn de Worde, Caxton's chief assistant, took over the Westminster press in 1491 and later moved his business to Fleet Street in London. Anthony Woodville, Earl Rivers, was a translator for Caxton, and Humphrey Pitt was the seventeenth-century owner of the Percy Folio.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-06",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which two rival royal houses fought the Wars of the Roses in England between 1455 and 1485?",
+      "options": [
+        "The House of Lancaster and the House of York",
+        "The House of Stuart and the House of Hanover",
+        "The House of Normandy and the House of Blois",
+        "The House of Wessex and the House of Mercia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Wars of the Roses (1455–1485) were dynastic civil wars fought between the House of Lancaster (whose badge was the Red Rose) and the House of York (whose badge was the White Rose). The conflict ended in 1485 when Henry Tudor defeated Richard III at Bosworth Field.",
+      "src": "https://akexplained.com/notes/middle-english/#political-life"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-07",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which 1415 victory in the Hundred Years' War made King Henry V a celebrated English national hero?",
+      "options": [
+        "The Battle of Flodden Field",
+        "The Battle of Otterburn",
+        "The Battle of Bosworth Field",
+        "The Battle of Agincourt"
+      ],
+      "correct_option_id": 3,
+      "explanation": "King Henry V defeated a much larger French army at the Battle of Agincourt in 1415 during the Hundred Years' War. Bosworth Field (1485) ended the Wars of the Roses, Flodden Field (1513) was fought against James IV of Scotland, and Otterburn (1388) was an Anglo-Scottish border battle.",
+      "src": "https://akexplained.com/notes/middle-english/#political-life"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-08",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Who led the 1450 Kentish uprising of 15,000 men against royal maladministration in London?",
+      "options": [
+        "Wat Tyler",
+        "John Ball",
+        "Jack Cade",
+        "Jack Straw"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Jack Cade led the 1450 rebellion against the government of King Henry VI, marching on London before being slain. Wat Tyler, John Ball, and Jack Straw were leaders of the earlier 1381 Peasants' Revolt under Richard II.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-09",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "standardisation-of-english",
+      "periodId": "fifteenth-century",
+      "question": "Which regional variety of Middle English was adopted by the royal Chancery and Caxton's press as the basis of Standard English?",
+      "options": [
+        "The West Saxon and Kentish dialect",
+        "The Northern and Northumbrian dialect",
+        "The London and East Midland dialect",
+        "The West Midland alliterative dialect"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chancery Standard and William Caxton's Westminster printing press fixed the London and East Midland dialect as the written standard of English. West Saxon had been the Old English literary standard before 1066, while Northern and West Midland remained regional dialects.",
+      "src": "https://akexplained.com/notes/middle-english/#the-language"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-10",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following fifteenth-century historical milestones in chronological order from earliest to latest:\n(A) Henry V's victory at the Battle of Agincourt\n(B) Jack Cade's Rebellion against Henry VI's government\n(C) Fall of Constantinople and end of the Hundred Years' War\n(D) William Caxton sets up his press at Westminster",
+      "options": [
+        "A → B → C → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → A → B → D"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Battle of Agincourt took place in 1415 (A), Jack Cade's Rebellion occurred in 1450 (B), Constantinople fell to the Ottoman Turks and the Hundred Years' War ended in 1453 (C), and William Caxton established his Westminster press in 1476 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-11",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Which translation from Raoul Lefevre's French romance was the first book printed in the English language by William Caxton at Bruges?",
+      "options": [
+        "The Dictes and Sayings of the Philosophers",
+        "The Recuyell of the Historyes of Troy",
+        "The Governance of England",
+        "The Book of Margery Kempe"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Caxton translated Raoul Lefevre's French romance as The Recuyell of the Historyes of Troy for Margaret, Duchess of Burgundy, and printed it at Bruges as the first book printed in English. The Dictes and Sayings (1477) was the first dated book printed in England.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-12",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Which noble patroness, the sister of King Edward IV, encouraged William Caxton to complete his translation of The Recuyell of the Historyes of Troy?",
+      "options": [
+        "Joan Beaufort, Queen of Scots",
+        "Margaret Tudor, Queen of Scots",
+        "Margaret Paston of Norfolk",
+        "Margaret, Duchess of Burgundy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1469 Caxton entered the service of Margaret, Duchess of Burgundy (sister of King Edward IV), who read his draft translation and urged him to finish The Recuyell of the Historyes of Troy. Joan Beaufort married James I of Scotland, and Margaret Tudor married James IV.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-13",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Which work, translated by Anthony Woodville, Earl Rivers, and issued on 18 November 1477, was the first dated book printed by Caxton on English soil?",
+      "options": [
+        "The Dictes and Sayings of the Philosophers",
+        "The Game and Playe of the Chesse",
+        "The Recuyell of the Historyes of Troy",
+        "The Repressor of Over Much Blaming of the Clergy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Dictes and Sayings of the Philosophers, translated from French by Anthony Woodville, Earl Rivers, and printed at Westminster on 18 November 1477, is the first dated book printed in England. The Recuyell and The Game and Playe of the Chesse were printed earlier at Bruges.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-14",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "thomas-malory",
+      "periodId": "fifteenth-century",
+      "question": "Where did Sir Thomas Malory compile and write the Arthurian prose cycle known as Le Morte d'Arthur around 1469–1470?",
+      "options": [
+        "At the royal court of Burgundy",
+        "In a Benedictine abbey in Suffolk",
+        "In prison in London (Newgate)",
+        "At Caister Castle in Norfolk"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sir Thomas Malory of Newbold Revel wrote Le Morte d'Arthur while imprisoned in London (Newgate Prison) around 1469–1470, praying throughout the manuscript for 'good deliverance' from prison. He died in 1471, fourteen years before Caxton printed the work.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-15",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Into how many books did William Caxton divide Sir Thomas Malory's eight Arthurian tales when he printed Le Morte d'Arthur in 1485?",
+      "options": [
+        "Twelve books",
+        "Twenty-one books",
+        "Fourteen books",
+        "Twenty-four books"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Malory originally wrote eight separate Arthurian tales, which William Caxton edited and divided into twenty-one books (and 507 chapters) when he published Le Morte d'Arthur on 31 July 1485.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-16",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "In which school library did W. F. Oakeshott discover the only surviving manuscript of Malory's Arthurian tales in 1934?",
+      "options": [
+        "Eton College",
+        "Harrow School",
+        "Charterhouse School",
+        "Winchester College"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1934 W. F. Oakeshott discovered a fifteenth-century manuscript of Malory's work in the fellows' library of Winchester College. Known as the Winchester Manuscript, it was edited by Eugène Vinaver in 1947 as The Works of Sir Thomas Malory.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-17",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "In Malory's Le Morte d'Arthur, which pure knight is the only one worthy to behold the full spiritual mysteries of the Sangreal (Holy Grail) and be taken up to heaven?",
+      "options": [
+        "Sir Gawaine",
+        "Sir Tristram",
+        "Sir Galahad",
+        "Sir Gareth"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sir Galahad, the chaste son of Sir Launcelot and Elaine of Corbin, is the only knight pure enough to behold the full mysteries of the Sangreal before angels bear his soul to heaven. Sir Percivale and Sir Bors accompany him on the final Grail quest.",
+      "src": "user-supplied: Le Morte d'Arthur Notes"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-18",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "To which English county did the Paston family belong, whose correspondence from 1422 to 1509 preserves a vivid record of fifteenth-century domestic and legal life?",
+      "options": [
+        "Cornwall",
+        "Norfolk",
+        "Northumberland",
+        "Devonshire"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Paston Letters (1422–1509) are the private letters and family papers of three generations of the Paston family of Norfolk, documenting property disputes, the siege of Caister Castle, and everyday English life during the Wars of the Roses.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-19",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "margery-kempe",
+      "periodId": "fifteenth-century",
+      "question": "Which fifteenth-century mystic from King's Lynn dictated the earliest surviving autobiography in the English language?",
+      "options": [
+        "Margery Kempe",
+        "Julian of Norwich",
+        "Margaret Paston",
+        "Christine de Pizan"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Margery Kempe of King's Lynn in Norfolk (c. 1373–after 1438), an illiterate mother of fourteen, dictated The Book of Margery Kempe to two scribes, creating the earliest known autobiography in English. Julian of Norwich wrote Revelations of Divine Love.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-20",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following knights in Malory's Le Morte d'Arthur are the three companions who achieve the quest of the Sangreal (Holy Grail)?\n(A) Sir Galahad\n(B) Sir Percivale\n(C) Sir Bors de Ganis\n(D) Sir Mordred\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Book 6 of Malory's work ('The Noble Tale of the Sangreal'), only three knights achieve the Holy Grail quest: Sir Galahad, Sir Percivale, and Sir Bors de Ganis (who alone returns to Arthur's court to tell the tale). Sir Mordred is the traitorous usurper who mortally wounds Arthur.",
+      "src": "user-supplied: Le Morte d'Arthur Notes"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-hoccleve",
+      "periodId": "fifteenth-century",
+      "question": "In which London royal department did the poet Thomas Hoccleve work for many years as a clerk?",
+      "options": [
+        "The Royal Mint at the Tower",
+        "The Office of the Privy Seal",
+        "The Customs House of Wool",
+        "The Court of Star Chamber"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Thomas Hoccleve worked for some thirty-five years as a clerk in the Office of the Privy Seal at Westminster, and his poems frequently complain of backache, eye strain, and unpaid annuities. Geoffrey Chaucer had earlier served as Comptroller of Customs.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-hoccleve",
+      "periodId": "fifteenth-century",
+      "question": "Which poem by Thomas Hoccleve, written in 1411–1412 for Henry, Prince of Wales, contains a famous marginal portrait and lament for Geoffrey Chaucer?",
+      "options": [
+        "The Temple of Glas",
+        "The Bowge of Courte",
+        "The Regement of Princes",
+        "The Passetyme of Pleasure"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hoccleve's The Regement of Princes (1411–1412), written for the future Henry V, praises Chaucer as the 'firste fyndere of our faire langage' and preserves a famous marginal portrait of him. The Temple of Glas is by Lydgate, The Bowge of Courte by Skelton, and Passetyme by Hawes.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "With which Benedictine monastery in Suffolk was the prolific fifteenth-century poet John Lydgate associated as a monk?",
+      "options": [
+        "Bury St Edmunds",
+        "Glastonbury Abbey",
+        "Westminster Abbey",
+        "Whitby Abbey"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Lydgate (c. 1370–c. 1450), born in the Suffolk village of Lidgate, entered the great Benedictine abbey of Bury St Edmunds and was widely known as the 'Monk of Bury'.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "Which 30,000-line poem by John Lydgate, translated from Guido delle Colonne's Latin history, was commissioned in 1412 by Prince Henry (later Henry V)?",
+      "options": [
+        "Reason and Sensuality",
+        "The Complaint of the Black Knight",
+        "London Lickpenny",
+        "Troy Book"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Lydgate's Troy Book (1412–1420) is a 30,000-line heroic-couplet translation of Guido delle Colonne's Historia destructionis Troiae, commissioned by Prince Henry so that the chivalric history of Troy might be read in English.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "In which poem does John Lydgate introduce himself as a monk riding home from Canterbury who joins Chaucer's pilgrims to tell the first story on the return journey?",
+      "options": [
+        "The Fall of Princes",
+        "The Siege of Thebes",
+        "The Temple of Glas",
+        "The Assembly of Gods"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the prologue to The Siege of Thebes (1420–1422, also called The Story of Thebes), Lydgate meets Harry Bailly and Chaucer's pilgrims at an inn in Canterbury and tells the Theban backstory to Chaucer's Knight's Tale on the ride back to London.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-26",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "Which Tudor king had the poet John Skelton as his childhood tutor when he was still a young royal prince?",
+      "options": [
+        "King Henry VIII",
+        "King Henry VI",
+        "King Edward IV",
+        "King Richard III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Skelton served in the late 1490s as royal tutor to Prince Henry, who later ascended the throne in 1509 as King Henry VIII, before Skelton became rector of Diss in Norfolk.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-27",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "What name is given to John Skelton's characteristic metre of short, rapid two- or three-stress lines linked by run-on end rhymes?",
+      "options": [
+        "Poulter's measure",
+        "Spenserian stanza",
+        "Skeltonic verse",
+        "Fourteener couplets"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Skeltonic verse (or 'tumbling verse') consists of short, energetic lines of two or three stresses grouped in rapid, irregular rhyme runs, used by Skelton in poems such as Phyllyp Sparowe, Collyn Clout, and The Tunnyng of Elynour Rummyng.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-28",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "In John Skelton's mock-elegy Phyllyp Sparowe, which young lady laments the death of her pet bird killed by a cat named Gib?",
+      "options": [
+        "Elynour Rummyng",
+        "Margery Brews",
+        "Lady Jane Beaufort",
+        "Jane Scrope"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Phyllyp Sparowe is a 1,400-line lament inspired by Catullus, spoken by Jane Scrope, a young pupil at the Benedictine convent of Carrow Abbey near Norwich, whose pet sparrow Philip was killed by the convent cat, Gib.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-29",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "Which powerful churchman and minister of Henry VIII is the chief target of John Skelton's satires Speke, Parrot and Why Come Ye Nat to Courte?",
+      "options": [
+        "Cardinal Thomas Wolsey",
+        "Archbishop Thomas Arundel",
+        "Bishop Reginald Pecock",
+        "Cardinal John Morton"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Skelton directed bitter satirical attacks against Henry VIII's all-powerful chief minister, Cardinal Thomas Wolsey, in Speke, Parrot, Collyn Clout, and Why Come Ye Nat to Courte?, before later reconciling with Wolsey.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-30",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Poet) with List II (Poetic Work):\n\nList I (Poet)\n(A) Thomas Hoccleve\n(B) John Lydgate\n(C) John Skelton\n(D) Alexander Barclay\n\nList II (Poetic Work)\n(I) The Fall of Princes\n(II) La Male Regle\n(III) The Ship of Fools\n(IV) The Tunnyng of Elynour Rummyng",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Thomas Hoccleve wrote the autobiographical poem La Male Regle (A-II); John Lydgate wrote the massive rhyme-royal collection The Fall of Princes (B-I); John Skelton wrote the vivid tavern satire The Tunnyng of Elynour Rummyng (C-IV); and Alexander Barclay adapted Sebastian Brant's Narrenschiff as The Ship of Fools in 1509 (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-31",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "Which Scottish royal poet wrote the dream allegory The Kingis Quair in seven-line Chaucerian stanzas after eighteen years of captivity in England?",
+      "options": [
+        "King James IV of Scotland",
+        "Robert Henryson of Dunfermline",
+        "Sir David Lyndsay of the Mount",
+        "King James I of Scotland"
+      ],
+      "correct_option_id": 3,
+      "explanation": "King James I of Scotland (1394–1437), captured by the English in 1406 and held for eighteen years until 1424, wrote The Kingis Quair ('The King's Book') celebrating his love for Lady Joan (Jane) Beaufort. His use of Chaucer's seven-line stanza (ababbcc) gave it the name 'rhyme royal'.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-32",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "rhyme-royal",
+      "periodId": "fifteenth-century",
+      "question": "What is the rhyme scheme of the seven-line Chaucerian stanza known as 'rhyme royal', used in The Kingis Quair and The Testament of Cresseid?",
+      "options": [
+        "ababcdc",
+        "aabbcdd",
+        "ababbcc",
+        "ababbcb"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rhyme royal is a seven-line iambic pentameter stanza rhyming ababbcc, introduced into English by Geoffrey Chaucer and widely used by the Scottish Chaucerians as well as Hoccleve and Lydgate.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-33",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "With which Scottish town was the makar Robert Henryson associated as a schoolmaster?",
+      "options": [
+        "Dunkeld",
+        "Dunfermline",
+        "St Andrews",
+        "Aberdeen"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Robert Henryson (c. 1425–c. 1506) is recorded on the title pages of his works as schoolmaster of Dunfermline in Fife. Gavin Douglas was later Bishop of Dunkeld.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-34",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "Which poem by Robert Henryson serves as a tragic sequel to Geoffrey Chaucer's Troilus and Criseyde?",
+      "options": [
+        "The Morall Fabillis of Esope",
+        "Robene and Makyne",
+        "The Goldyn Targe",
+        "The Testament of Cresseid"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In The Testament of Cresseid, Robert Henryson continues Chaucer's Troilus and Criseyde by showing Cresseid abandoned by Diomede, stricken with leprosy after blaspheming Venus and Cupid, and dying in repentance after receiving alms from Troilus.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-35",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "william-dunbar",
+      "periodId": "fifteenth-century",
+      "question": "Which Scottish makar is celebrated as the 'Chaucer of Scotland' and perfected the ornate Latinate style known as aureate diction?",
+      "options": [
+        "William Dunbar",
+        "Gavin Douglas",
+        "Blind Harry",
+        "John Barbour"
+      ],
+      "correct_option_id": 0,
+      "explanation": "William Dunbar (c. 1460–c. 1520), court poet to James IV of Scotland, is often called the 'Chaucer of Scotland' and is noted for perfecting aureate diction as well as comic and satiric verse.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-36",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "william-dunbar",
+      "periodId": "fifteenth-century",
+      "question": "Which 1503 allegorical poem by William Dunbar celebrates the royal marriage of King James IV of Scotland and Princess Margaret Tudor of England?",
+      "options": [
+        "The Lament for the Makaris",
+        "The Dance of the Sevin Deidly Synnis",
+        "The Thrissill and the Rois",
+        "The Flyting of Dunbar and Kennedie"
+      ],
+      "correct_option_id": 2,
+      "explanation": "William Dunbar's The Thrissill and the Rois ('The Thistle and the Rose', 1503) is an allegorical marriage poem uniting the Scottish emblem of the Thistle (James IV) with the English emblem of the Rose (Margaret Tudor, daughter of Henry VII).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-37",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "william-dunbar",
+      "periodId": "fifteenth-century",
+      "question": "What is the recurring Latin refrain in William Dunbar's elegiac roll-call of dead poets, Lament for the Makaris?",
+      "options": [
+        "Ubi sunt qui ante nos fuerunt",
+        "Radix malorum est Cupiditas",
+        "Amor vincit omnia",
+        "Timor mortis conturbat me"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Every four-line stanza of William Dunbar's Lament for the Makaris ends with the solemn Latin refrain from the Office of the Dead, 'Timor mortis conturbat me' ('The fear of death confounds me'), mourning Chaucer, Gower, Lydgate, Henryson, and other dead poets.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-38",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "gavin-douglas",
+      "periodId": "fifteenth-century",
+      "question": "Which Scottish Chaucerian and Bishop of Dunkeld completed in 1513 the Eneados, the first full verse translation of Virgil's Aeneid in any Anglic tongue?",
+      "options": [
+        "Robert Henryson",
+        "Gavin Douglas",
+        "William Dunbar",
+        "Walter Kennedy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gavin Douglas (c. 1474–1522), Bishop of Dunkeld, completed his Eneados in 1513, translating all twelve books of Virgil's Aeneid into Scots heroic couplets with original prologues to each book.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-39",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "What literary term describes the highly ornate, 'gilded' poetic style rich in Latin coinages and internal rhyme favoured by Lydgate and the Scottish Chaucerians?",
+      "options": [
+        "Aureate diction",
+        "Euphuistic prose",
+        "Metaphysical conceit",
+        "Sprung rhythm"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Aureate diction ('gilded' language, a term used by John Lydgate) refers to the high, ornate Latinate vocabulary and internal rhyme cultivated in the fifteenth century by Lydgate and perfected in Scotland by William Dunbar.",
+      "src": "user-supplied: Literary Movements — Scottish Chaucerians and Aureate Diction"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-40",
+      "qtype": "match",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Scottish Makar) with List II (Major Work):\n\nList I (Scottish Makar)\n(A) King James I of Scotland\n(B) Robert Henryson\n(C) William Dunbar\n(D) Gavin Douglas\n\nList II (Major Work)\n(I) The Palice of Honour\n(II) The Kingis Quair\n(III) The Morall Fabillis of Esope\n(IV) The Goldyn Targe",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-III, B-II, C-I, D-IV",
+        "A-II, B-III, C-IV, D-I",
+        "A-IV, B-III, C-II, D-I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "King James I of Scotland wrote The Kingis Quair (A-II); Robert Henryson wrote the thirteen beast fables in The Morall Fabillis of Esope (B-III); William Dunbar wrote the dream allegory The Goldyn Targe (C-IV); and Gavin Douglas wrote the early allegory The Palice of Honour (D-I).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-41",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "Around which Christian summer feast day, instituted in 1311, were the great English civic Mystery play cycles performed each year?",
+      "options": [
+        "The Feast of Corpus Christi",
+        "The Feast of St Stephen",
+        "The Feast of Michaelmas",
+        "The Feast of Candlemas"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The civic Mystery cycles were staged annually in summer around the Feast of Corpus Christi (the Thursday after Trinity Sunday), instituted by the Church in 1311, when outdoor weather suited day-long processional performances.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-42",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which organizations in English medieval towns took charge of financing and staging individual pageants in the Mystery play cycles?",
+      "options": [
+        "The Inns of Court and Chancery",
+        "The travelling royal masque troupes",
+        "The Lollard poor preaching friars",
+        "The civic trade and craft guilds"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Once religious drama moved outside church buildings into town streets, the civic trade and craft guilds ('mysteries') assumed responsibility for staging individual biblical episodes on wheeled pageant wagons.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-43",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which of the four surviving English Mystery play cycles is the largest, consisting of forty-eight surviving pageants?",
+      "options": [
+        "The Chester cycle",
+        "The York cycle",
+        "The Towneley cycle",
+        "The N-Town cycle"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The York cycle is the largest surviving English Mystery cycle with forty-eight plays. By comparison, the Chester cycle has twenty-five plays, the Towneley (Wakefield) cycle has thirty-two, and the N-Town (Ludus Coventriae) cycle has forty-two.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-44",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "In which Yorkshire Mystery play cycle does the Wakefield Master's comic masterpiece, The Second Shepherds' Play (Secunda Pastorum), appear?",
+      "options": [
+        "The Chester cycle",
+        "The York cycle",
+        "The Towneley cycle",
+        "The Cornish Ordinalia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Second Shepherds' Play (Secunda Pastorum), featuring the sheep-stealer Mak and his wife Gill, is one of thirty-two plays in the Towneley (or Wakefield) cycle and is attributed to the anonymous poet known as the Wakefield Master.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-45",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "In The Second Shepherds' Play, how do the thief Mak and his wife Gill disguise the stolen sheep when the three shepherds search their cottage?",
+      "options": [
+        "They swaddle it in a cradle as a newborn baby",
+        "They hide it inside a sack of church grain",
+        "They dress it in the cloak of a parish priest",
+        "They lock it inside a wooden merchant chest"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gill wraps the stolen sheep in swaddling clothes and lays it in a cradle, pretending she has just given birth; the ruse is exposed when the shepherd Daw returns to give the 'child' a sixpence and sees its long snout, providing a comic parallel to the Nativity at Bethlehem.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-46",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which fifteen-century play of 3,649 lines is the earliest complete surviving English Morality play and includes a circular staging diagram in its manuscript?",
+      "options": [
+        "The Pride of Life",
+        "The Castle of Perseverance",
+        "Magnificence",
+        "Fulgens and Lucres"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Castle of Perseverance (c. 1405–1425), preserved in the Macro Manuscript with a famous circular stage plan showing a moated castle in the centre, is the earliest complete surviving English Morality play. The Pride of Life survives only as an earlier fragment.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-47",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "In the East Anglian morality play Mankind (c. 1465–1470), what is the name of the comic devil who collects a collection from the audience before appearing on stage?",
+      "options": [
+        "Beliall",
+        "Mephistophilis",
+        "Titivillus",
+        "Archimago"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Mankind, the minor vices New Guise, Nowadays, and Nought pass the hat among the spectators before summoning the great devil Titivillus, who whispers temptations to Mankind while he sleeps and steals his spade.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-48",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "everyman",
+      "periodId": "fifteenth-century",
+      "question": "In the morality play Everyman, which allegorical figure is the ONLY companion who descends into the grave with Everyman at the end of the play?",
+      "options": [
+        "Fellowship",
+        "Knowledge",
+        "Five Wits",
+        "Good Deeds"
+      ],
+      "correct_option_id": 3,
+      "explanation": "When Death summons Everyman to give his reckoning before God, Fellowship, Kindred, Cousin, and Goods desert him first, and even Beauty, Strength, Discretion, Five Wits, and Knowledge leave him at the edge of the grave; only Good Deeds goes down into the grave with him.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-49",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "henry-medwall",
+      "periodId": "fifteenth-century",
+      "question": "Which two-part Tudor interlude by Henry Medwall, performed around 1497 at Cardinal Morton's banquet hall, is the earliest surviving purely secular English play?",
+      "options": [
+        "Fulgens and Lucres",
+        "The Play of the Weather",
+        "Ralph Roister Doyster",
+        "Gammer Gurton's Needle"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Henry Medwall's Fulgens and Lucres (c. 1497), in which the Roman senator Fulgens's daughter Lucres chooses between a noble patrician and a virtuous commoner while two servants named A and B provide a comic subplot, is the earliest surviving purely secular play in English.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-e-50",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following belong to the four complete surviving English Mystery play cycles?\n(A) The York cycle\n(B) The Chester cycle\n(C) The Towneley (Wakefield) cycle\n(D) The Oberammergau cycle\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The four complete surviving English Mystery cycles are the York, Chester, Towneley (Wakefield), and N-Town (Ludus Coventriae) cycles. Oberammergau is a later German Passion Play in Bavaria, not an English medieval cycle.",
+      "src": "user-supplied: A Brief History of British Literature"
+    }
+  ]
+}
