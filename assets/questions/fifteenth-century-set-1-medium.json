@@ -1,0 +1,873 @@
+{
+  "setId": "fifteenth-century-set-1",
+  "rev": 1,
+  "age": "fifteenth-century",
+  "ageName": "Fifteenth Century",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/middle-english/",
+  "notesTitle": "Middle English — the full notes",
+  "topics": {
+    "ground": "The age and printing",
+    "prose": "Prose, printing and letters",
+    "poetry": "Lydgate, Hoccleve and Skelton",
+    "scottish": "The Scottish Chaucerians",
+    "drama": "Mystery and morality plays"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Fifty UGC NET Paper II questions mixing direct recall, multi-statement, chronology and matching across the fifteenth century.",
+  "questions": [
+    {
+      "id": "fifteenth-century-set-1-m-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "In the preface to which 1490 translation did William Caxton tell the famous anecdote of a northern merchant asking a Thames-side Kentish woman for 'eggys' while she knew only the word 'eyren'?",
+      "options": [
+        "Eneydos",
+        "The Golden Legend",
+        "The Game and Playe of the Chesse",
+        "The History of Reynard the Fox"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In the preface to his 1490 romance Eneydos, Caxton recounts how a northern merchant asked a Thames-side woman for 'eggys' while she knew only the Kentish form 'eyren', illustrating how regional dialects made choosing a print standard difficult.",
+      "src": "https://akexplained.com/notes/middle-english/#an-interesting-story"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "What official mercantile title did William Caxton hold in Bruges during the 1460s before turning to the business of translating and printing books?",
+      "options": [
+        "Comptroller of the Petty Customs of the Port of London",
+        "Governor of the English Nation of Merchant Adventurers",
+        "Master of the Worshipful Company of Stationers",
+        "Chancellor of the Duchy of Lancaster at Westminster"
+      ],
+      "correct_option_id": 1,
+      "explanation": "After serving his apprenticeship to the London mercer Robert Large (1438), Caxton prospered in Bruges and rose in the 1460s to become Governor of the English Nation of Merchant Adventurers in the Low Countries.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "What bibliographic term refers specifically to books printed in Europe from the invention of movable type up to the end of the year 1500, including all of Caxton's output?",
+      "options": [
+        "Palimpsests",
+        "apocrypha",
+        "Incunabula",
+        "Chapbooks"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The term 'incunabula' (from the Latin for 'swaddling clothes' or 'cradle') designates books printed before 1501 during the infancy of movable-type printing in Europe.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which parliamentary statute of 1401 under King Henry IV authorized the burning at the stake of unrepentant Lollard heretics in England?",
+      "options": [
+        "Praemunire",
+        "Provisors",
+        "Magna Carta",
+        "De Heretico Comburendo"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Passed in 1401 under Henry IV, the statute De Heretico Comburendo ('On the Burning of a Heretic') introduced death by burning for unrepentant Lollards, followed in 1407–1409 by Archbishop Thomas Arundel's Constitutions banning unauthorized English Bible translations.",
+      "src": "https://akexplained.com/notes/middle-english/#political-life"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "great-vowel-shift",
+      "periodId": "fifteenth-century",
+      "question": "Which linguistic sound change, beginning around 1400, systematically raised the seven long vowels of Middle English and caused the two highest vowels /iː/ and /uː/ to diphthongize?",
+      "options": [
+        "Grimm's First Consonant Shift",
+        "The Great Vowel Shift",
+        "Verner's Voicing Law",
+        "I-mutation (Umlaut)"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Great Vowel Shift (c. 1400–1700) raised all Middle English long vowels and diphthongized high /iː/ (as in 'time') and /uː/ (as in 'house') to /aɪ/ and /aʊ/, while Caxton's printing press fixed late Middle English spellings before the sound shift had finished.",
+      "src": "https://akexplained.com/notes/middle-english/#the-language"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-06",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements accurately describe the career and publications of William Caxton?\n(A) He was apprenticed in 1438 to the prominent London mercer Robert Large.\n(B) He printed roughly 100 works in total and personally translated about 24 of them.\n(C) He printed Chaucer's Canterbury Tales, Boethius, Reynard the Fox, and The Golden Legend.\n(D) He printed the first complete English translation of the Bible at Westminster in 1480.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Caxton was apprenticed to Robert Large in 1438 (A), printed about 100 works and translated 24 (B), and published The Canterbury Tales, Boethius (1479), Reynard the Fox (1481), and The Golden Legend (1483) (C). Statement (D) is false because Arundel's Constitutions banned unauthorized English Bibles.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-07",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements about fifteenth-century English political and cultural history are true?\n(A) During the minority of the infant King Henry VI, the Duke of Bedford served as regent in France and Humphrey, Duke of Gloucester, in England.\n(B) Archbishop Thomas Arundel's Constitutions of 1407–1409 prohibited the making or reading of unauthorized English Bible translations.\n(C) The Wars of the Roses concluded on 22 August 1485 at the Battle of Bosworth Field with the victory of Henry Tudor (Henry VII).\n(D) The Hundred Years' War ended in 1453 with England retaining control of Normandy, Aquitaine, and Paris.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) are historically accurate. Statement (D) is false because when the Hundred Years' War ended in 1453, England lost all its French territories except the port of Calais.",
+      "src": "https://akexplained.com/notes/middle-english/#political-life"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-08",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "william-caxton",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following works printed by William Caxton at Westminster in chronological order of their publication:\n(A) The Dictes and Sayings of the Philosophers\n(B) The History of Reynard the Fox\n(C) The Golden Legend\n(D) Sir Thomas Malory's Le Morte d'Arthur",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 2,
+      "explanation": "At Westminster, Caxton issued The Dictes and Sayings of the Philosophers on 18 November 1477 (A), his translation of The History of Reynard the Fox from the Dutch in 1481 (B), The Golden Legend in 1483 (C), and Malory's Le Morte d'Arthur on 31 July 1485 (D).",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-09",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following events in the life of William Caxton in chronological order:\n(A) Becomes apprentice to the London mercer Robert Large\n(B) Enters the service of Margaret, Duchess of Burgundy\n(C) Learns the art of printing in Cologne\n(D) Succeeds in establishing the Red Pale press at Westminster",
+      "options": [
+        "A → C → B → D",
+        "B → A → C → D",
+        "A → B → C → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Caxton was apprenticed to Robert Large in 1438 (A), entered the household of Margaret, Duchess of Burgundy, in 1469 (B), learned printing in Cologne in 1471–1472 (C), and established his press at Westminster in 1476 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-10",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Historical Figure or Printer) with List II (Role or Achievement):\n\nList I (Historical Figure or Printer)\n(A) Humphrey, Duke of Gloucester\n(B) Anthony Woodville, Earl Rivers\n(C) Wynkyn de Worde\n(D) Richard Pynson\n\nList II (Role or Achievement)\n(I) Translated The Dictes and Sayings of the Philosophers for Caxton's press\n(II) Early printer in London who became King's Printer in the Tudor era\n(III) Humanist patron who commissioned Lydgate's Fall of Princes and endowed Oxford's library\n(IV) Caxton's assistant who succeeded him at Westminster in 1491 and later moved to Fleet Street",
+      "options": [
+        "A-III, B-I, C-IV, D-II",
+        "A-I, B-III, C-IV, D-II",
+        "A-III, B-IV, C-I, D-II",
+        "A-II, B-I, C-IV, D-III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Humphrey, Duke of Gloucester, was the royal patron who commissioned Lydgate's Fall of Princes (A-III); Anthony Woodville, Earl Rivers, translated The Dictes and Sayings of the Philosophers (B-I); Wynkyn de Worde succeeded Caxton in 1491 (C-IV); and Richard Pynson was the other leading early printer who followed Caxton's generation (D-II).",
+      "src": "https://akexplained.com/notes/middle-english/#how-the-writing-survived"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-11",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "What was the original title of Sir Thomas Malory's Arthurian cycle before William Caxton printed it under the name of its final section, Le Morte d'Arthur?",
+      "options": [
+        "The Chronicle of the Realm of Logris and the Fellowship of Camelot",
+        "The Whole Book of King Arthur and of His Noble Knights of the Round Table",
+        "The History of the Kings of Britain and the Quest of the Sangreal",
+        "The Mirror of Chivalry and the Noble Acts of King Arthur"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Malory's closing explicit in the Winchester Manuscript gives the cycle's title as The Whole Book of King Arthur and of His Noble Knights of the Round Table. When Caxton printed the work in 1485, he applied the title of the final part, Le Morte d'Arthur, to the whole book.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-12",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Which scholar edited the newly discovered Winchester Manuscript of Malory in 1947 in three volumes under the title The Works of Sir Thomas Malory?",
+      "options": [
+        "W. F. Oakeshott",
+        "Francis James Child",
+        "Sanford Brown Meech",
+        "Eugène Vinaver"
+      ],
+      "correct_option_id": 3,
+      "explanation": "After W. F. Oakeshott found the Winchester Manuscript in 1934, the scholar Eugène Vinaver edited it in 1947 in three volumes as The Works of Sir Thomas Malory, arguing that Malory wrote eight distinct Arthurian romances rather than a single unified book.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-13",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "In Book 4 of Malory's Le Morte d'Arthur, what mocking nickname does the seneschal Sir Kay give to the disguised Sir Gareth of Orkney when he works for a year as a kitchen boy?",
+      "options": [
+        "Beaumains ('Fair-Hands')",
+        "La Cote Male Taile ('The Ill-Cut Coat')",
+        "Breuse Saunce Pité ('Without Pity')",
+        "Le Chevalier Mal Fet ('The Ill-Made Knight')"
+      ],
+      "correct_option_id": 0,
+      "explanation": "When Arthur's nephew Sir Gareth of Orkney arrives anonymously at Camelot and asks only for food and drink for a year, Sir Kay mocks his soft, noble hands by calling him 'Beaumains' ('Fair-Hands') before Gareth rides out with the sharp-tongued damsel Linet to rescue her sister Dame Lionesse.",
+      "src": "user-supplied: Le Morte d'Arthur Notes"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-14",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which fifteenth-century bishop of Chichester wrote The Repressor of Over Much Blaming of the Clergy (c. 1449) in English prose to refute Lollard attacks on church images and pilgrimages, only to be tried for heresy himself?",
+      "options": [
+        "Sir John Fortescue",
+        "John Capgrave",
+        "Reginald Pecock",
+        "Thomas Arundel"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Reginald Pecock (c. 1395–c. 1460) wrote The Repressor of Over Much Blaming of the Clergy in logical English prose to argue with Lollards by appeal to human reason rather than sheer church authority, which led to his own condemnation for heresy in 1457 and forced recantation.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-15",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which fifteenth-century Chief Justice of the King's Bench wrote The Governance of England (The Difference between an Absolute and a Limited Monarchy), contrasting French 'dominium regale' with English 'dominium politicum et regale'?",
+      "options": [
+        "Sir Thomas Malory",
+        "Sir John Fortescue",
+        "William Paston",
+        "Anthony Woodville"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sir John Fortescue (c. 1394–c. 1476), Chief Justice under Henry VI, wrote De Laudibus Legum Angliae in Latin and The Governance of England in English, drawing the classic constitutional distinction between absolute monarchy in France and limited parliamentary monarchy in England.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-16",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following episodes precipitate the final civil war between King Arthur and Sir Launcelot in the closing books of Malory's Le Morte d'Arthur?\n(A) Sir Agravaine and Sir Mordred trap Launcelot and Queen Guenever together and expose their affair to King Arthur.\n(B) While rescuing Guenever from being burned at the stake, Launcelot accidentally slays the unarmed brothers Sir Gareth and Sir Gaheris.\n(C) Sir Gawaine, enraged by the death of his beloved brother Gareth, refuses reconciliation and compels Arthur to besiege Launcelot at Benwick.\n(D) Sir Tristram joins Mordred's rebellion at Camelot and slays Sir Bedivere on Salisbury Plain.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) accurately trace the tragic chain of events in Books 7 and 8 of Malory's work. Statement (D) is false: Tristram does not join Mordred's rebellion (he was murdered earlier by King Mark), and Sir Bedivere survives the final battle to cast Excalibur into the water.",
+      "src": "user-supplied: Le Morte d'Arthur Notes"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-17",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements about the Paston Letters and other fifteenth-century letter collections are correct?\n(A) Margaret Mautby Paston dictated over a hundred letters in the Paston collection, including accounts of defending family manors in Norfolk.\n(B) Margery Brews's February 1477 letter addressing John Paston III as her 'right well-beloved Valentine' is the earliest surviving Valentine letter in English.\n(C) The Cely Letters (1472–1488) preserve the business correspondence of a family of London wool merchants trading with the Calais Staple.\n(D) The Paston Letters were first printed by William Caxton at Westminster in 1484.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are all true facts from the Middle English prose notes. Statement (D) is false: the Paston Letters were private family archives running up to 1509 and were first edited and published in the late eighteenth century by Sir John Fenn (1787), not by Caxton.",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-18",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following tales of Sir Thomas Malory's Le Morte d'Arthur in the exact structural order of Malory's eight books:\n(A) The Noble Tale Between King Arthur and Lucius the Emperor of Rome\n(B) The Tale of Sir Gareth of Orkney (Beaumains)\n(C) The Book of Sir Tristram de Lyones\n(D) The Noble Tale of the Sangreal",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Malory's eight-book design, Book 2 is 'King Arthur and Lucius the Emperor of Rome' (A), Book 4 is 'The Tale of Sir Gareth of Orkney' (B), Book 5 is 'The Book of Sir Tristram de Lyones' (C), and Book 6 is 'The Noble Tale of the Sangreal' (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-19",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "le-morte-darthur",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Character in Le Morte d'Arthur) with List II (Role or Action in the Narrative):\n\nList I (Character in Le Morte d'Arthur)\n(A) Nimue (Lady of the Lake)\n(B) Sir Balin le Savage\n(C) Sir Bedivere\n(D) Sir Ector de Maris\n\nList II (Role or Action in the Narrative)\n(I) Strikes the Dolorous Stroke against King Pellam and unknowingly fights to the death with his own brother Balan\n(II) Casts Arthur's sword Excalibur back into the water at the king's dying command\n(III) Learns sorcery from Merlin and seals the infatuated wizard forever under a stone or cave\n(IV) Delivers the famous final elegy over the body of his brother Sir Launcelot ('thou were the curtest knight that ever bare shield')",
+      "options": [
+        "A-III, B-I, C-II, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-III, B-II, C-I, D-IV",
+        "A-IV, B-I, C-II, D-III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Nimue seals Merlin in a cave (A-III); Sir Balin strikes the Dolorous Stroke and dies fighting his brother Balan (B-I); Sir Bedivere casts Excalibur into the lake (C-II); and Sir Ector de Maris speaks the final elegy over his half-brother Sir Launcelot (D-IV).",
+      "src": "https://akexplained.com/notes/middle-english/#prose"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-20",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "fifteenth-century",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Fifteenth-Century Prose Text) with List II (Distinguishing Feature):\n\nList I (Fifteenth-Century Prose Text)\n(A) The Book of Margery Kempe\n(B) The Governance of England\n(C) The Repressor of Over Much Blaming of the Clergy\n(D) The Dictes and Sayings of the Philosophers\n\nList II (Distinguishing Feature)\n(I) Derived ultimately from an Arabic wisdom compilation by al-Mubashshir ibn Fatik via French\n(II) Full manuscript rediscovered in 1934 in the Butler-Bowdon family library after long being known only from Wynkyn de Worde's 1501 extracts\n(III) Contrasts absolute royal rule in France with constitutional monarchy in England\n(IV) Defends the use of religious images and pilgrimages in vernacular logical prose against the Lollards",
+      "options": [
+        "A-II, B-IV, C-III, D-I",
+        "A-I, B-III, C-IV, D-II",
+        "A-III, B-II, C-I, D-IV",
+        "A-II, B-III, C-IV, D-I"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Book of Margery Kempe was found in the Butler-Bowdon library in 1934 (A-II); Fortescue's Governance of England contrasts French and English monarchy (B-III); Pecock's Repressor defends images against the Lollards (C-IV); and Dictes and Sayings derives via French from al-Mubashshir ibn Fatik's Arabic work (D-I).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-hoccleve",
+      "periodId": "fifteenth-century",
+      "question": "In which linked sequence of poems (c. 1419–1421), opening with 'My Compleinte' and 'Dialogue with a Friend', does Thomas Hoccleve candidly describe his period of mental illness and social isolation?",
+      "options": [
+        "The Letter of Cupid",
+        "The Series",
+        "The Regiment of Princes",
+        "The Complaint of Our Lady"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hoccleve's late poetic sequence known as The Series (c. 1419–1421) begins with 'My Compleinte' and 'Dialogue with a Friend', in which the poet describes his mental breakdown ('wild infirmity'), his recovery, and how Londoners still looked askance at him in Westminster Hall.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "Which massive 36,000-line rhyme-royal poem by John Lydgate, adapted from Laurent de Premierfait's French version of Boccaccio's De Casibus Virorum Illustrium for Humphrey, Duke of Gloucester, later inspired the Tudor collection A Mirror for Magistrates?",
+      "options": [
+        "The Temple of Glas",
+        "The Complaint of the Black Knight",
+        "The Fall of Princes",
+        "Reason and Sensuality"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lydgate's The Fall of Princes (1431–1438), commissioned by Humphrey, Duke of Gloucester, renders Boccaccio's De Casibus Virorum Illustrium (via Laurent de Premierfait's French prose) into over 36,000 lines of rhyme royal and directly inspired the Tudor tragic collection A Mirror for Magistrates (1559).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "In John Skelton's rhyme-royal dream allegory The Bowge of Courte, what is the name of the anxious narrator who boards the ship owned by Dame Sans-Peer and is harassed by seven courtly vices?",
+      "options": [
+        "Drede",
+        "Graunde Amoure",
+        "Collyn Clout",
+        "Godfrey Gobelive"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In The Bowge of Courte ('court rations', from French bouche de cour), the nervous narrator Drede falls asleep at Harwich and dreams of boarding a ship where seven personified court vices (Favell, Suspecte, Disdayne, Ryotte, Dissimulacion, Subtylte, and Deceyte) drive him to leap overboard.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "stephen-hawes",
+      "periodId": "fifteenth-century",
+      "question": "In Stephen Hawes's Tudor chivalric allegory The Passetyme of Pleasure (1509), what are the names of the hero knight and the lady whose love he seeks after studying the Seven Liberal Arts in the Tower of Doctrine?",
+      "options": [
+        "Troilus and Cresseid",
+        "Pelleas and Ettard",
+        "Robene and Makyne",
+        "Graunde Amoure and La Bell Pucell"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Stephen Hawes's The Passetyme of Pleasure (printed by Wynkyn de Worde in 1509) narrates the quest of the knight Graunde Amoure to win La Bell Pucell after studying the Seven Liberal Arts in the Tower of Doctrine, linking Lydgate's allegory to Spenser's Faerie Queene.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "popular-ballads",
+      "periodId": "fifteenth-century",
+      "question": "Which fifteenth-century stanzaic dialogue poem, admired in the ballad revival as a counterpart to Chaucer's 'Patient Griselda', tests a woman's fidelity when her lover pretends to be a banished outlaw going to the greenwood?",
+      "options": [
+        "The Wife of Usher's Well",
+        "The Nut-Brown Maid",
+        "The Hunting of the Cheviot",
+        "Sir Patrick Spens"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Nut-Brown Maid (first printed in Arnold's Chronicle c. 1502) is a dramatic dialogue in which a lover tests the constancy of the 'Nut-Brown Maid' by claiming he is a banished squire fleeing to the greenwood, before revealing at the end that he is actually an earl's son.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-26",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements accurately describe the works of John Skelton?\n(A) He received the academic title of 'Poet Laureate' from the Universities of Oxford, Louvain, and Cambridge.\n(B) His poem Ballade of the Scottysshe Kynge celebrates the English victory over the Scots at the Battle of Flodden Field in 1513.\n(C) His poem A Garlande of Laurell is an allegory of self-praise in which Skelton is crowned among the great poets of the world.\n(D) His poem Collyn Clout is a translation of Sebastian Brant's German satire Narrenschiff.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statements (A), (B), and (C) accurately describe Skelton's works. Statement (D) is false: Collyn Clout is an original Skeltonic satire against Church abuses (whence Spenser took the name Colin Clout), whereas Sebastian Brant's Narrenschiff was adapted as The Ship of Fools (1509) by Alexander Barclay.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-27",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "popular-ballads",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements about fifteenth-century popular ballads and their later preservation are correct?\n(A) A Gest of Robyn Hode is a long narrative compilation weaving together several early Robin Hood ballad tales.\n(B) The Battle of Otterburn and The Hunting of the Cheviot (Chevy Chase) are border ballads celebrating Anglo-Scottish rivalry between the Percy and Douglas families.\n(C) The mid-seventeenth-century Percy Folio manuscript belonging to Humphrey Pitt of Shifnal formed the basis of Thomas Percy's Reliques of Ancient English Poetry (1765).\n(D) Francis James Child founded the Percy Society in 1840 in London to print the first edition of Skelton's Magnificence.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are accurate. Statement (D) is false: the Percy Society was founded in 1840 by Croker, Dyce, Halliwell-Phillipps, and Collier, whereas the American scholar Francis James Child (1825–1896) compiled the five-volume English and Scottish Popular Ballads.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-28",
+      "qtype": "chrono",
+      "topic": "poetry",
+      "topicId": "thomas-hoccleve",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following fifteenth- and early sixteenth-century English poems in chronological order of their composition or publication:\n(A) Thomas Hoccleve's The Letter of Cupid\n(B) Thomas Hoccleve's The Regement of Princes\n(C) John Lydgate's The Fall of Princes\n(D) Stephen Hawes's The Passetyme of Pleasure",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hoccleve adapted Christine de Pizan's Epistre au Dieu d'Amours as The Letter of Cupid in 1402 (A); Hoccleve wrote The Regement of Princes in 1411–1412 (B); Lydgate composed The Fall of Princes in the 1430s (C); and Stephen Hawes published The Passetyme of Pleasure in 1509 (D).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-29",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "john-lydgate",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Fifteenth-Century Poem) with List II (Chaucerian or Continental Model):\n\nList I (Fifteenth-Century Poem)\n(A) Lydgate's The Complaint of the Black Knight\n(B) Lydgate's The Temple of Glas\n(C) Hoccleve's The Letter of Cupid\n(D) Barclay's Certayne Egloges\n\nList II (Chaucerian or Continental Model)\n(I) Chaucer's The Book of the Duchess\n(II) Chaucer's The House of Fame\n(III) Christine de Pizan's Epistre au Dieu d'Amours\n(IV) Latin pastorals of Aeneas Silvius Piccolomini and Mantuan",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lydgate's Complaint of the Black Knight is modeled on Chaucer's Book of the Duchess (A-I); Lydgate's Temple of Glas draws on Chaucer's House of Fame (B-II); Hoccleve's Letter of Cupid adapts Christine de Pizan (C-III); and Barclay's Certayne Egloges (1513–1514) adapt Piccolomini and Mantuan (D-IV).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-30",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "john-skelton",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Poem Associated with the Fifteenth Century) with List II (Subject or Narrator):\n\nList I (Poem Associated with the Fifteenth Century)\n(A) London Lickpenny\n(B) La Male Regle de Thomas Hoccleve\n(C) A Replycacion (by John Skelton)\n(D) The Flower and the Leaf\n\nList II (Subject or Narrator)\n(I) Late-night tavern misrule and an empty purse confessed to the god of health\n(II) A poor Kentish countryman who cannot obtain justice in Westminster courts because he lacks money\n(III) Female narrator in a Chaucerian dream vision comparing the chaste knights and ladies of the Laurel with the idle revellers of the Daisy\n(IV) 1528 attack dedicated to Cardinal Wolsey condemning the Cambridge scholars Thomas Bilney and Thomas Arthur",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "London Lickpenny depicts a penniless countryman seeking justice in Westminster (A-II); Hoccleve's La Male Regle (1406) confesses tavern misrule (B-I); Skelton's Replycacion (1528) attacks the Cambridge scholars Bilney and Arthur (C-IV); and The Flower and the Leaf is a fifteenth-century dream allegory with a female narrator (D-III).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-31",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "In Robert Henryson's The Testament of Cresseid, which cold planetary deity pronounces the sentence of leprosy upon Cresseid after she blames Venus and Cupid for her misery?",
+      "options": [
+        "Mercury",
+        "Jupiter",
+        "Apollo",
+        "Saturn"
+      ],
+      "correct_option_id": 3,
+      "explanation": "When Cresseid curses Venus and Cupid in her father Calchas's temple, Cupid summons a planetary court of the seven planets, and the cold, frosty god Saturn (together with Cynthia, the Moon) touches her head with his wand and sentences her to incurable leprosy.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-32",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "Which poem by Robert Henryson, narrating a witty debate of unrequited and reversed love between a shepherdess and a shepherd, is regarded as the earliest Scottish pastoral poem?",
+      "options": [
+        "The Bludy Serk",
+        "The Abbey Walk",
+        "Robene and Makyne",
+        "The Garmont of Gud Ladeis"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Henryson's Robene and Makyne is the earliest Scottish pastoral: Makyne pleads for Robene's love and is spurned, and when Robene later begs for hers, she rejects him with the proverb 'The man that will nocht quhen he may / Sall haif nocht quhen he wald'.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-33",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "william-dunbar",
+      "periodId": "fifteenth-century",
+      "question": "Which long, unrhymed alliterative poem by William Dunbar presents the candid Midsummer Eve conversation of three richly dressed women drinking wine in a garden?",
+      "options": [
+        "The Thrissill and the Rois",
+        "The Tretis of the Tua Mariit Wemen and the Wedo",
+        "The Goldyn Targe",
+        "The Dance of the Sevin Deidly Synnis"
+      ],
+      "correct_option_id": 1,
+      "explanation": "William Dunbar's The Tretis of the Tua Mariit Wemen and the Wedo ('The Treatise of the Two Married Women and the Widow') uses the old unrhymed alliterative long line in contrast to an ornate courtly garden opening, as three women frankly discuss marriage and their husbands.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-34",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "william-dunbar",
+      "periodId": "fifteenth-century",
+      "question": "With which rival Ayrshire poet did William Dunbar exchange virtuosic Scots invective and insult in the famous poetic contest The Flyting of Dunbar and Kennedie?",
+      "options": [
+        "Gavin Douglas",
+        "Blind Harry",
+        "John Barbour",
+        "Walter Kennedy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In The Flyting of Dunbar and Kennedie, William Dunbar and his fellow makar Walter Kennedy (whom Dunbar later mourned warmly in Lament for the Makaris) hurl comic, inventive verbal abuse at each other in the Scottish tradition of 'flyting'.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-35",
+      "qtype": "direct",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "Which late-fifteenth-century Scottish minstrel composed The Actes and Deidis of the Illustre and Vallyeant Campioun Schir William Wallace (c. 1477) in heroic couplets as a companion to John Barbour's Bruce?",
+      "options": [
+        "Blind Harry",
+        "Sir David Lyndsay",
+        "Gavin Douglas",
+        "Andrew of Wyntoun"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Blind Harry (also known as Henry the Minstrel) composed the patriotic narrative poem The Wallace (c. 1477) in twelve books of heroic couplets celebrating the Scottish national hero Sir William Wallace.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-36",
+      "qtype": "combination",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements accurately describe Robert Henryson's The Morall Fabillis of Esope the Phrygian?\n(A) The collection contains thirteen fables written in Middle Scots, mostly in rhyme royal.\n(B) Each fable is divided into a lively narrative ('The Taill') followed by an explicit Christian or social allegory ('The Moralitas').\n(C) The collection includes 'The Taill of the Cock and the Jasp' and 'The Taill of the Uponlandis Mous and the Burges Mous'.\n(D) It is a prose translation of William Caxton's 1484 Westminster edition of Aesop.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) accurately describe Henryson's masterpiece The Morall Fabillis of Esope the Phrygian. Statement (D) is false: Henryson's fables are original verse poems in Middle Scots (drawing on Latin Aesopic and Reynardian beast-epic traditions), not a prose translation of Caxton.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-37",
+      "qtype": "combination",
+      "topic": "scottish",
+      "topicId": "gavin-douglas",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements about Gavin Douglas's Eneados (completed 1513) are true?\n(A) It translates all twelve books of Virgil's Aeneid together with the thirteenth book by the Italian humanist Mapheus Vegius.\n(B) Each book is preceded by an original prologue in which Douglas discusses translation, criticism, or the Scottish landscape across the seasons.\n(C) In his First Prologue, Douglas praises William Caxton's 1490 Eneydos as an exact word-for-word rendering of Virgil's Latin.\n(D) Douglas writes in heroic couplets and refers to his own language deliberately as 'Scottis' rather than 'Inglis'.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and D only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (D) are all true of Gavin Douglas's Eneados. Statement (C) is false: in his First Prologue, Douglas sharply criticizes Caxton's 1490 Eneydos (which was translated from a loose French prose paraphrase) as being no more like Virgil than 'the devill and Sanct Austyne'.",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-38",
+      "qtype": "chrono",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following Scottish literary works in chronological order from earliest to latest:\n(A) John Barbour's patriotic verse chronicle The Bruce\n(B) King James I of Scotland's The Kingis Quair\n(C) William Dunbar's marriage allegory The Thrissill and the Rois\n(D) Gavin Douglas's completed translation of the Eneados",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "B → C → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Barbour completed The Bruce around 1375 (A); King James I wrote The Kingis Quair around 1424 (B); William Dunbar composed The Thrissill and the Rois for the royal wedding of 1503 (C); and Gavin Douglas completed the Eneados in 1513 (D).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-39",
+      "qtype": "match",
+      "topic": "scottish",
+      "topicId": "scottish-chaucerians",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Scottish Poem) with List II (Key Literary Detail):\n\nList I (Scottish Poem)\n(A) The Kingis Quair\n(B) The Testament of Cresseid\n(C) The Goldyn Targe\n(D) Ane Satyre of the Thrie Estaitis\n\nList II (Key Literary Detail)\n(I) Troilus tosses a purse of gold and jewels into a leper woman's begging cup without recognizing her face\n(II) The prisoner-poet looks from his tower window onto a garden and sees Lady Joan Beaufort walking below\n(III) Sir David Lyndsay's panoramic Scottish morality play satirizing the Spirituality, Temporality, and Burgesses\n(IV) The shield of Reason protects the dreamer until Presence throws dust into his eyes in Venus's court",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-II, D-IV"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In The Kingis Quair, captive James I sees Joan Beaufort from his window (A-II); in Henryson's Testament of Cresseid, Troilus gives alms to Cresseid without recognizing her (B-I); in Dunbar's Goldyn Targe, Presence blinds the dreamer (C-IV); and Lyndsay's Thrie Estaitis is a Scottish morality play (D-III).",
+      "src": "https://akexplained.com/notes/middle-english/#geoffrey-chaucer-and-his-followers"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-40",
+      "qtype": "match",
+      "topic": "scottish",
+      "topicId": "robert-henryson",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Work by Henryson or Douglas) with List II (Genre or Subject):\n\nList I (Work by Henryson or Douglas)\n(A) Orpheus and Eurydice (by Henryson)\n(B) The Taill of the Cock and the Jasp (by Henryson)\n(C) King Hart (by Gavin Douglas)\n(D) The Palice of Honour (by Gavin Douglas)\n\nList II (Genre or Subject)\n(I) Opening fable of the Morall Fabillis where a rooster spurns a jewel symbolizing wisdom\n(II) Classical myth retold with a Boethian moralitas derived from Nicholas Trivet's commentary\n(III) Allegory of the human heart besieged in his castle by Dame Pleasance, Youth, and Age\n(IV) Dream vision dedicated to James IV journeying past Minerva, Diana, and Venus to true honour",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-III, C-I, D-IV",
+        "A-II, B-I, C-III, D-IV",
+        "A-IV, B-I, C-III, D-II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Henryson's Orpheus and Eurydice pairs the Orpheus myth with a Boethian moralitas from Nicholas Trivet (A-II); 'The Cock and the Jasp' opens Henryson's Morall Fabillis (B-I); King Hart is an allegory of the heart attributed to Douglas (C-III); and The Palice of Honour is Douglas's dream vision (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-41",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which manuscript collection takes its name from its eighteenth-century owner Rev. Cox Macro and preserves the three major English morality plays The Castle of Perseverance, Wisdom, and Mankind?",
+      "options": [
+        "The Macro Manuscript",
+        "The Auchinleck Manuscript",
+        "The Cotton Vitellius Manuscript",
+        "The Exeter Book"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Macro Manuscript (now in the Folger Shakespeare Library), named after its eighteenth-century owner Rev. Cox Macro of Suffolk, preserves the only complete texts of The Castle of Perseverance and Mankind alongside Wisdom.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-42",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "everyman",
+      "periodId": "fifteenth-century",
+      "question": "With which late-fifteenth-century Dutch morality play (printed around 1495 and attributed to Peter van Diest) is the English morality play Everyman closely related?",
+      "options": [
+        "Lanseloet van Denemerken",
+        "Mariken van Nieumeghen",
+        "Abele Spelen",
+        "Elckerlijc"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The English morality play Everyman (printed in the early sixteenth century by John Skot and Richard Pynson) is closely paired with the Dutch play Elckerlijc ('Everyman', c. 1495), attributed to Peter van Diest (Petrus Dorlandus).",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-43",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "In the fifteenth-century morality play Wisdom, which three Augustinian faculties of the human soul (Anima) are corrupted by Lucifer before being restored by Christ?",
+      "options": [
+        "Memory, Fancy, and Conscience",
+        "Mind, Will, and Understanding",
+        "Faith, Hope, and Charity",
+        "Beauty, Strength, and Discretion"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the fifteenth-century morality play Wisdom, the soul Anima is accompanied by her five wits and her three Augustinian faculties—Mind, Will, and Understanding—whom Lucifer seduces into pride, lechery, and covetousness before Wisdom restores them to grace.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-44",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "john-heywood",
+      "periodId": "fifteenth-century",
+      "question": "In John Heywood's Tudor interlude The Four PP, which four characters compete in a lying contest won by the traveller who declares he has never seen a woman out of patience?",
+      "options": [
+        "A Parson, a Plowman, a Prioress, and a Physician",
+        "A Prelate, a Prince, a Peasant, and a Poet",
+        "A Palmer, a Pardoner, a Pothecary, and a Pedlar",
+        "A Prior, a Page, a Porter, and a Provost"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In John Heywood's interlude The Four PP, a Palmer, a Pardoner, and a Pothecary argue over their callings until a Pedlar judges a contest to see who can tell the biggest lie; the Palmer wins by declaring he has never seen a woman out of patience.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-45",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "miracle-plays",
+      "periodId": "fifteenth-century",
+      "question": "In strict literary history, how is a medieval 'Miracle play' distinguished from a 'Mystery play', even though English usage often applied 'Miracle' to both?",
+      "options": [
+        "Miracle plays dramatize saints' lives and miracles, whereas Mystery plays dramatize biblical history from Creation to Doomsday",
+        "Miracle plays use personified virtues and vices, whereas Mystery plays stage secular Roman history and court debates",
+        "Miracle plays are silent courtly pantomimes, whereas Mystery plays are Latin liturgical chants sung inside monasteries",
+        "Miracle plays are five-act blank-verse tragedies, whereas Mystery plays are prose pastoral romances for royal banquets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Strictly defined, Mystery plays dramatize scriptural history from Creation to the Last Judgment (staged by craft 'mysteries' or guilds), whereas Miracle plays dramatize the lives, martyrdoms, and miracles of the Virgin Mary and Christian saints such as St Nicholas or Mary Magdalene.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-46",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements accurately describe The Castle of Perseverance?\n(A) Its protagonist, Humanum Genus (Mankind), is accompanied from birth to death by a Good Angel (Bonus Angelus) and a Bad Angel (Malus Angelus).\n(B) After Humanum Genus dies in covetousness, the Four Daughters of God—Mercy, Peace, Truth, and Righteousness—debate the fate of his soul before God's throne.\n(C) The manuscript contains a circular staging plan showing a castle in the middle surrounded by a ditch or moat and five peripheral scaffolds.\n(D) The play was written by John Skelton in 1519 to satirize the financial policies of Cardinal Wolsey.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statements (A), (B), and (C) are all key features of The Castle of Perseverance (c. 1405–1425). Statement (D) is false: John Skelton's morality play is Magnificence (published 1519), whereas The Castle of Perseverance is an anonymous early fifteenth-century East Midland play.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-47",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "mystery-plays",
+      "periodId": "fifteenth-century",
+      "question": "Which of the following statements about the Wakefield Master and the Towneley Mystery cycle are true?\n(A) The Wakefield Master is named for a distinctive nine-line stanza (often thirteen lines in older layouts) combining internal rhyme and northern alliteration.\n(B) Among the plays attributed to him are Noah (Processus Noe cum filiis), The First Shepherds' Play, The Second Shepherds' Play, Herod the Great, and The Buffeting (Coliphizatio).\n(C) In his Noah play, Noah's sharp-tongued wife stubbornly refuses to enter the Ark and boxes her husband's ears while spinning on her rock.\n(D) The Towneley cycle was performed annually in the Cornish language inside amphitheatres called plen-an-gwary.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) accurately describe the Wakefield Master's plays in the Towneley cycle of Yorkshire. Statement (D) is false: the Cornish Ordinalia were performed in Cornish in circular amphitheatres called plen-an-gwary, whereas the Towneley cycle is in Northern Middle English.",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-48",
+      "qtype": "chrono",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "Arrange the following developments in early English drama in chronological order from earliest to latest:\n(A) The fragmentary morality play The Pride of Life\n(B) The complete morality play The Castle of Perseverance\n(C) The East Anglian morality play Mankind\n(D) Henry Medwall's secular interlude Fulgens and Lucres",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Pride of Life (c. 1400 fragment) is the earliest surviving morality play text (A), followed by the earliest complete morality play The Castle of Perseverance (c. 1405–1425) (B), the East Anglian morality Mankind (c. 1465–1470) (C), and Henry Medwall's secular interlude Fulgens and Lucres (c. 1497) (D).",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-49",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "morality-plays",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Dramatic Work) with List II (Key Characters):\n\nList I (Dramatic Work)\n(A) The Second Shepherds' Play\n(B) Mankind\n(C) Everyman\n(D) Magnificence (by John Skelton)\n\nList II (Key Characters)\n(I) Mercy, Mischief, New Guise, Nowadays, Nought, and Titivillus\n(II) Coll, Gib, Daw, the sheep-thief Mak, and his wife Gill\n(III) Fellowship, Kindred, Cousin, Goods, Good Deeds, and Knowledge\n(IV) Felicity, Liberty, Measure, Counterfeit Countenance, Cloaked Collusion, and Perseverance",
+      "options": [
+        "A-II, B-I, C-III, D-IV",
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-III, C-I, D-IV",
+        "A-IV, B-I, C-III, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Second Shepherds' Play features Coll, Gib, Daw, Mak, and Gill (A-II); Mankind features Mercy, Mischief, New Guise, Nowadays, Nought, and Titivillus (B-I); Everyman features Fellowship, Kindred, Goods, Good Deeds, and Knowledge (C-III); and Skelton's Magnificence pits Measure against Cloaked Collusion (D-IV).",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    },
+    {
+      "id": "fifteenth-century-set-1-m-50",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "miracle-plays",
+      "periodId": "fifteenth-century",
+      "question": "Match List I (Medieval or Early Tudor Play) with List II (Dramatic Category and Subject):\n\nList I (Medieval or Early Tudor Play)\n(A) The Croxton Play of the Sacrament\n(B) The Digby Mary Magdalene\n(C) The N-Town Cycle (Ludus Coventriae)\n(D) The Play of the Weather (by John Heywood)\n\nList II (Dramatic Category and Subject)\n(I) East Anglian Mystery cycle of forty-two plays notable for its Marian sequences\n(II) Tudor interlude where Jupiter hears conflicting petitions on the weather from eight suitors\n(III) Fifteenth-century miracle play staging the testing of a consecrated Host at Heraclea\n(IV) Saint and miracle play combining biblical scenes, the Seven Deadly Sins, and a voyage to Marseilles",
+      "options": [
+        "A-IV, B-III, C-I, D-II",
+        "A-III, B-IV, C-I, D-II",
+        "A-III, B-I, C-IV, D-II",
+        "A-II, B-IV, C-I, D-III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Croxton Play of the Sacrament (after 1461) stages the testing of a Host (A-III); the Digby Mary Magdalene blends biblical, morality, and romance scenes (B-IV); the N-Town cycle has forty-two plays with a Marian sequence (C-I); and Heywood's Play of the Weather shows Jupiter hearing eight weather petitioners (D-II).",
+      "src": "https://akexplained.com/notes/middle-english/#drama"
+    }
+  ]
+}
