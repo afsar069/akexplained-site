@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-11 (UP Assistant Professor Paper 2 Mock Test 2, account deletion, Dashboard, Mock-test start screen, State PSC, reviews and avatars follow below.)_
+_Last updated: 2026-11-12 (UP PGT Mock Test 9 database paper loaded; site page prepared for publication.)_
+
+## UP PGT Mock Test 9 — login CBT paper (2026-11-12)
+
+- The owner supplied `PGT_batch_9.json` with 90 verified questions for Test 9, available only after login. The private paper preserves every question object and adds the same CBT metadata as Test 8. It is stored in `public.mcq_papers` with `set_id = up-pgt-mock-test-9`, `level = medium` (internal storage slot), `access = login`, `rev = 1`, `setNumber = 9`, and visible level name “Full paper.” No question file or question-bearing SQL is in this public repository; the owner should retain the uploaded copy.
+- Structural checks found 90 distinct IDs and stems, four options and valid answer indexes, valid topic tags, and no public ID/text collisions. The 44 supplied period tags are valid; the other 46 questions have no period tag, and none was invented. Facts were not rechecked. A scratch PostgreSQL insert and exact JSONB comparison passed before the live load. Live read-back returned 90 questions, `exact_match = true`, and body fingerprint `8430724144e7afc6a0afbd3de19f2a6a`. Security advisors are unchanged: the existing leaderboard function and leaked-password warnings remain.
+- The hub marks Tests 6–9 as login-only. Test 9 and its review use the shared gated CBT flow; Tests 1–5 remain public, and Tests 10–60 remain Coming soon. The Eleventy build and all 18,145 internal references passed; no Test 9 question file is in the public build. In a mocked browser, a guest saw the login prompt and no questions; a signed-in student started, submitted and reviewed all 90, with no page errors or phone overflow. The database row is live; the site page is prepared on `feat/up-pgt-mock-test-9-login` for publication through `main`.
 
 ## UP Assistant Professor, Paper 2 Mock Test 2 — login CBT paper (2026-11-11)
 
