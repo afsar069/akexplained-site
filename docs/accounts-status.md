@@ -6,6 +6,10 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-12 (NET hub: two Paper 2 cards now link to the MCQ and Daily quiz hubs.)_
 
+## "Arrange for" buttons removed (2026-11-12)
+
+- The owner said the "Arrange for" row (Every exam / UGC NET / PGT / State PSC / MA-BA) on `/quizzes/mcq/` and `/quizzes/daily/` does nothing useful, so the markup is gone from both pages. `wireExams()` in `assets/mcq.js` returns early with no chips, and the `.mcq-exams` rules in `assets/site.css` are now unused. On the branch, not yet on `main`.
+
 ## NET hub links (2026-11-12)
 
 - On `/exams/net/`, **English Literature MCQs** now opens `/quizzes/mcq/` and **British Ages Quick MCQs** opens `/quizzes/daily/` (owner's request). `_data/netResources.json` has an optional `href` that `_includes/net-action.njk` uses instead of `/exams/net/<slug>/`; both cards are `available: true`, so their Coming-soon pages are no longer built (`/exams/net/english-mcqs/` and `/exams/net/british-ages-quick-mcqs/` now 404).
