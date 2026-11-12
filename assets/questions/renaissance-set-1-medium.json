@@ -1,0 +1,873 @@
+{
+  "setId": "renaissance-set-1",
+  "rev": 1,
+  "age": "renaissance",
+  "ageName": "Renaissance Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/renaissance/",
+  "notesTitle": "Renaissance — the full notes",
+  "topics": {
+    "ground": "The age and its ideas",
+    "drama": "Drama: Marlowe to Jonson",
+    "poetry": "Poetry: Spenser to Milton",
+    "prose": "Bacon, prose and criticism",
+    "terms": "Terms, movements and forms"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Fifty UGC NET Paper II questions mixing direct recall, multi-statement, chronology and matching from Wyatt and Spenser to Milton.",
+  "questions": [
+    {
+      "id": "renaissance-set-1-m-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Which English humanist and tutor to Princess Elizabeth wrote the dialogue on archery Toxophilus (1545) and the posthumous educational treatise The Scholemaster (1570)?",
+      "options": [
+        "Roger Ascham",
+        "Sir Thomas Elyot",
+        "William Camden",
+        "Richard Mulcaster"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Roger Ascham (1515–1568), Greek and Latin tutor to Princess Elizabeth, dedicated his Platonic dialogue on archery Toxophilus (1545) to Henry VIII and wrote The Scholemaster (published 1570), from which John Lyly took the name 'Euphues'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "elizabethan",
+      "question": "What name was given to the late-1570s literary circle of Sir Philip Sidney, Edmund Spenser, Gabriel Harvey, Fulke Greville, and Edward Dyer that discussed adapting classical quantitative metre to English verse?",
+      "options": [
+        "The Tribe of Ben",
+        "The Areopagus",
+        "The Mermaid Club",
+        "The Kit-Cat Club"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1579–1580, Spenser, Gabriel Harvey, Sidney, Edward Dyer, and Fulke Greville formed an informal literary circle playfully called the 'Areopagus', discussing the reformation of English versification along classical quantitative lines.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "robert-greene",
+      "periodId": "elizabethan",
+      "question": "In which 1592 pamphlet did the dying Robert Greene attack William Shakespeare as 'an upstart Crow, beautified with our feathers' and 'the only Shake-scene in a country'?",
+      "options": [
+        "Pierce Penilesse: His Supplication to the Divell",
+        "Pandosto: The Triumph of Time",
+        "Greenes, Groats-Worth of Witte, bought with a million of Repentance",
+        "The Schoole of Abuse, Conteining a plesaunt invective"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Greenes, Groats-Worth of Witte (1592), Robert Greene warned his fellow University Wits against the actor-playwright Shakespeare, parodying a line from 3 Henry VI ('O tiger's heart wrapt in a woman's hide') as 'his Tyger's hart wrapt in a Players hyde'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "war-of-the-theatres",
+      "periodId": "elizabethan",
+      "question": "In the 'War of the Theatres' (Poetomachia, 1599–1601), which play was staged by the Lord Chamberlain's Men and written by Thomas Dekker (with John Marston) as a counter-attack against Ben Jonson's Poetaster?",
+      "options": [
+        "Eastward Ho, a comedy of London apprentices",
+        "The Shoemaker's Holiday, or The Gentle Craft",
+        "The Knight of the Burning Pestle",
+        "Satiromastix, or The Untrussing of the Humorous Poet"
+      ],
+      "correct_option_id": 3,
+      "explanation": "After Ben Jonson ridiculed John Marston and Thomas Dekker (as Crispinus and Demetrius) in Poetaster (1601), Dekker and Marston retaliated with Satiromastix, or The Untrussing of the Humorous Poet (1601), mocking Jonson as Horace.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-m-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "What bibliographic term did scholars apply to the printer William Jaggard's unauthorized 1619 collection of ten Shakespearean and pseudo-Shakespearean quartos?",
+      "options": [
+        "The Stationers' Register",
+        "The False Folio",
+        "The Second Folio of 1632",
+        "The Passionate Pilgrim"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1619, the printer William Jaggard and publisher Thomas Pavier issued ten Shakespearean and apocryphal plays in quarto with some backdated title pages—an unauthorized collection known to bibliographers as the 'False Folio', four years before the 1623 First Folio.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-06",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "tottels-miscellany",
+      "periodId": "early-tudor",
+      "question": "Which of the following statements accurately describe Sir Thomas Wyatt, Henry Howard (Earl of Surrey), and Tottel's Miscellany (1557)?\n(A) Richard Tottel's 1557 anthology Songs and Sonettes contained 271 poems, including 97 attributed to Wyatt and 40 to Surrey.\n(B) Wyatt's lyric 'They Flee from Me' is written in the seven-line rhyme-royal stanza.\n(C) Surrey was beheaded on Tower Hill in January 1547 at the end of Henry VIII's reign on a charge of treason.\n(D) Wyatt and Surrey collaborated in 1557 to edit Tottel's Miscellany personally in London.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statements (A), (B), and (C) are all accurate facts from the Early Tudor period. Statement (D) is false because Wyatt died in 1542 and Surrey was executed in 1547, so both poets were already dead when Richard Tottel published his Miscellany in 1557.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-07",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements about the early Folio editions of William Shakespeare's plays and their commendatory verses are true?\n(A) The First Folio (1623) grouped thirty-six plays into Comedies, Histories, and Tragedies, omitting Pericles, Prince of Tyre.\n(B) Ben Jonson contributed a famous commendatory poem to the First Folio hailing Shakespeare as 'not of an age, but for all time'.\n(C) John Milton's sixteen-line poem 'On Shakespeare' ('What needs my Shakespeare for his honour'd bones') was first printed anonymously in the Second Folio of 1632.\n(D) The First Folio was edited and published by Shakespeare himself shortly before his retirement to Stratford in 1611.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) are true. Statement (D) is false because Shakespeare never collected his own plays; the First Folio was compiled seven years after his death by his fellow actors John Heminges and Henry Condell in 1623.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-08",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "english-renaissance-humanism",
+      "periodId": "early-tudor",
+      "question": "Arrange the following sixteenth-century English literary landmarks in chronological order of their first publication or performance:\n(A) William Tyndale's printed English New Testament\n(B) Roger Ascham's treatise on archery Toxophilus\n(C) Norton and Sackville's blank-verse tragedy Gorboduc\n(D) Edmund Spenser's pastoral cycle The Shepheardes Calender",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tyndale printed his English New Testament from the Greek in 1525–1526 (A); Roger Ascham published Toxophilus in 1545 (B); Norton and Sackville's Gorboduc was performed in 1561/1562 (C); and Spenser published The Shepheardes Calender in 1579 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-09",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "jacobean-drama",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following seventeenth-century literary publications in chronological order from earliest to latest:\n(A) Francis Bacon's The Advancement of Learning\n(B) The Authorized Version (King James Bible)\n(C) The Folio Workes of Benjamin Jonson\n(D) The First Folio of William Shakespeare's plays",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Francis Bacon published The Advancement of Learning in 1605 (A); the King James Bible appeared in 1611 (B); Ben Jonson published his Folio Workes in 1616 (C); and Shakespeare's First Folio appeared in 1623 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-10",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Match List I (Play by the University Wits) with List II (Dramatist and Subject):\n\nList I (Play by the University Wits)\n(A) Campaspe (1584)\n(B) The Arraignment of Paris (1584)\n(C) The Old Wives Tale (1595)\n(D) Friar Bacon and Friar Bungay (c. 1590)\n\nList II (Dramatist and Subject)\n(I) Robert Greene's comedy of white magic and a brazen head in medieval England\n(II) George Peele's court pastoral in which Diana awards the golden apple to the nymph Eliza\n(III) John Lyly's prose court comedy about Alexander the Great, Apelles, and a Theban captive\n(IV) George Peele's play-within-a-play romance narrated by the blacksmith's wife Madge around the enchanter Sacrapant",
+      "options": [
+        "A-III, B-II, C-IV, D-I",
+        "A-II, B-III, C-IV, D-I",
+        "A-III, B-IV, C-II, D-I",
+        "A-I, B-II, C-IV, D-III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Lyly's Campaspe depicts Alexander and Apelles (A-III); George Peele's The Arraignment of Paris flatters Queen Elizabeth as Eliza (B-II); Peele's The Old Wives Tale frames Sacrapant inside Madge's tale (C-IV); and Robert Greene's Friar Bacon and Friar Bungay is his famous comedy (D-I).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-11",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "edward-ii",
+      "periodId": "elizabethan",
+      "question": "In Christopher Marlowe's historical tragedy Edward II, what is the name of the chillingly professional assassin—whose name is an Anglicised form of 'Lucifer'—hired by Mortimer Junior to murder the deposed king at Berkeley Castle?",
+      "options": [
+        "Ithamore",
+        "Lightborn",
+        "Bosola",
+        "Flamineo"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Act V of Marlowe's Edward II (1594), Mortimer Junior hires the smooth, sadistic assassin Lightborn (an English rendering of 'Lucifer', 'light-bearer') to murder the imprisoned King Edward II at Berkeley Castle before Gurney kills Lightborn to silence him.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-12",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "measure-for-measure",
+      "periodId": "jacobean-era",
+      "question": "In William Shakespeare's problem play Measure for Measure, what disguise does Duke Vincentio adopt to observe the strict rule of his deputy Angelo in Vienna?",
+      "options": [
+        "Caius the servant",
+        "Sir Topas the curate",
+        "Poor Tom o' Bedlam",
+        "Friar Lodowick"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Measure for Measure (1604), Duke Vincentio of Vienna hands temporary power to his puritanical deputy Angelo and disguises himself as Friar Lodowick, arranging the 'bed-trick' with Mariana to save Isabella's honour and Claudio's life.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-13",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "king-lear",
+      "periodId": "jacobean-era",
+      "question": "Which Restoration poet and playwright rewrote Shakespeare's King Lear in 1681 with a non-tragic ending in which Cordelia survives and marries Edgar?",
+      "options": [
+        "Nahum Tate",
+        "Thomas Shadwell",
+        "William Davenant",
+        "Colley Cibber"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 1681, Nahum Tate revised Shakespeare's The History of King Lear with a happy ending in which Lear regains his throne and Cordelia survives to marry Edgar, a version that held the English stage for more than a century.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-14",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In Ben Jonson's comedy Epicene, or The Silent Woman (1609), why does the noise-hating old bachelor Morose agree to marry Epicene, only to discover at the end of the play that his bride is a boy in disguise?",
+      "options": [
+        "To win a wager against Sir Politic Would-be",
+        "To escape prosecution by Justice Adam Overdo",
+        "To disinherit his nephew Sir Dauphine Eugenie",
+        "To obtain the dowry of the widow Dame Pliant"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Jonson's Epicene, or The Silent Woman (1609), Morose—who hates noise—marries the seemingly mute Epicene to disinherit his nephew Sir Dauphine Eugenie; once married, Epicene turns noisy until Dauphine secures his allowance and reveals that Epicene is a boy.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-15",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "bartholomew-fair",
+      "periodId": "jacobean-era",
+      "question": "Which 1614 comedy by Ben Jonson—the only play by Jonson written entirely in prose—satirizes the hypocritical Puritan Zeal-of-the-Land Busy and Justice Adam Overdo at a London summer fair?",
+      "options": [
+        "The Devil Is an Ass",
+        "Bartholomew Fair",
+        "The Staple of News",
+        "Every Man in His Humour"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ben Jonson's Bartholomew Fair (1614), written entirely in prose, portrays the bustling London fair on St Bartholomew's Day (24 August), featuring the country squire Bartholomew Cokes, his tutor Wasp, Justice Adam Overdo, and the gluttonous Puritan Zeal-of-the-Land Busy.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-16",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "christopher-marlowe",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe the plays of Christopher Marlowe?\n(A) In Tamburlaine the Great, Part I, Tamburlaine defeats the Turkish Emperor Bajazeth, keeps him in an iron cage, and uses him as a footstool.\n(B) In Tamburlaine the Great, Part II, Tamburlaine harnesses the defeated kings of Trebizond and Soria to pull his chariot ('Holla, ye pampered jades of Asia!') and burns the Qur'an at Babylon.\n(C) In Doctor Faustus, Faustus learns the black arts from Valdes and Cornelius and conjures the spirit of Helen of Troy near the end of his twenty-four years.\n(D) In The Jew of Malta, Barabas repents of his crimes, restores his fortune to the nuns, and marries Bellamira in Venice.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) are authentic episodes in Marlowe's plays. Statement (D) is false: in The Jew of Malta, Barabas poisons the entire convent of nuns (including his daughter Abigail), poisons Bellamira, Pilia-Borza, and Ithamore, and dies in his own boiling cauldron.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-17",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements about Ben Jonson's life and dramatic career are true?\n(A) William Shakespeare acted in the 1598 Lord Chamberlain's Men production of Jonson's Every Man in His Humour.\n(B) In 1605 Jonson was imprisoned along with George Chapman and John Marston over satirical passages against the Scots in their collaborative city comedy Eastward Ho.\n(C) Samuel Taylor Coleridge praised the plot of Jonson's The Alchemist, alongside Oedipus Tyrannus and Tom Jones, as one of the three most perfect plots ever planned.\n(D) Jonson's Roman tragedies Sejanus His Fall and Catiline His Conspiracy were his greatest popular successes on the Jacobean stage.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are true facts from Jonson's biography and criticism. Statement (D) is false: Jonson's learned Roman tragedies Sejanus (1603) and Catiline (1611) failed with popular audiences, prompting T. S. Eliot's remark that 'Jonson failed as a tragic dramatist'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-18",
+      "qtype": "chrono",
+      "topic": "drama",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following plays by Ben Jonson in chronological order of their first performance:\n(A) Every Man in His Humour\n(B) Volpone, or The Fox\n(C) The Alchemist\n(D) Bartholomew Fair",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "B → C → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ben Jonson's Every Man in His Humour was first performed in 1598 (A), Volpone, or The Fox in 1605–1606 (B), The Alchemist in 1610 (C), and Bartholomew Fair in 1614 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-19",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Shakespearean Play) with List II (Primary Literary or Historical Source):\n\nList I (Shakespearean Play)\n(A) The Winter's Tale\n(B) Othello\n(C) Julius Caesar and Coriolanus\n(D) Pericles, Prince of Tyre\n\nList II (Primary Literary or Historical Source)\n(I) Cinthio's Italian novella collection Hecatommithi\n(II) Robert Greene's prose pastoral romance Pandosto\n(III) John Gower's Confessio Amantis and Laurence Twine's The Patterne of Painefull Adventures\n(IV) Sir Thomas North's 1579 translation of Plutarch's Lives of the Noble Grecians and Romanes",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Winter's Tale is based on Robert Greene's Pandosto (A-II); Othello derives from Cinthio's Hecatommithi (B-I); Shakespeare's Roman plays draw on Thomas North's translation of Plutarch's Lives (C-IV); and Pericles draws on Gower's Confessio Amantis and Laurence Twine (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-20",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Play by Shakespeare or Jonson) with List II (Prologue, Epilogue, or Masque Speaker):\n\nList I (Play by Shakespeare or Jonson)\n(A) Henry IV, Part 2\n(B) Troilus and Cressida\n(C) The Tempest\n(D) Every Man in His Humour\n\nList II (Prologue, Epilogue, or Masque Speaker)\n(I) Epilogue spoken by Pandarus\n(II) Prologue spoken by the personified figure of Rumour ('painted full of tongues')\n(III) Epilogue spoken by Prospero asking the audience's indulgence to set him free\n(IV) Prologue attacking contemporary stage romance and setting out the theory of humours, with Captain Bobadill in the cast",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-III, C-I, D-IV",
+        "A-IV, B-I, C-III, D-II",
+        "A-II, B-I, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Henry IV, Part 2 opens with a Prologue spoken by Rumour (A-II); Troilus and Cressida closes with an Epilogue spoken by Pandarus (B-I); The Tempest closes with Prospero's Epilogue (C-III); and Jonson's Every Man in His Humour features his programmatic Prologue and the braggart soldier Captain Bobadill (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Which satirical beast fable by Edmund Spenser, published in his Complaints volume of 1591 about the adventures of an Ape and a Fox at court, offended Queen Elizabeth's chief minister Lord Burghley?",
+      "options": [
+        "Colin Clouts Come Home Againe",
+        "Prosopopoia, or Mother Hubberds Tale",
+        "Daphnaida, an Elegie upon Douglas Howard",
+        "Prothalamion, or A Spousall Verse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Spenser's Prosopopoia, or Mother Hubberds Tale (published in Complaints, 1591) tells how a Fox and an Ape steal the sleeping Lion's crown and skin to tyrannize over the beasts—a sharp satire on Lord Burghley that led to the poem's calling-in and cost Spenser court favour.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "george-chapman",
+      "periodId": "jacobean-era",
+      "question": "Which poet and translator of Homer completed Christopher Marlowe's unfinished narrative poem Hero and Leander and published the complete work in 1598?",
+      "options": [
+        "Michael Drayton",
+        "Samuel Daniel",
+        "George Chapman",
+        "Thomas Campion"
+      ],
+      "correct_option_id": 2,
+      "explanation": "At his death in 1593, Christopher Marlowe left two sestiads of his Ovidian epyllion Hero and Leander; George Chapman added four more sestiads to complete the tragic story and published the whole poem in 1598.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "shakespeares-sonnets",
+      "periodId": "jacobean-era",
+      "question": "Which two sonnets of William Shakespeare—including 'When my love swears that she is made of truth' and 'Two loves I have of comfort and despair'—were first printed in 1599 in William Jaggard's miscellany The Passionate Pilgrim, ten years before Thomas Thorpe's 1609 Quarto?",
+      "options": [
+        "Sonnets 138 and 144",
+        "Sonnets 1 and 18",
+        "Sonnets 99 and 126",
+        "Sonnets 153 and 154"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Versions of Shakespeare's Sonnet 138 and Sonnet 144 ('Two loves I have of comfort and despair') appeared in 1599 in the pirated anthology The Passionate Pilgrim, ten years before Thomas Thorpe published Shake-speares Sonnets (154 sonnets) in 1609.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "For the death of which young gentlewoman—the fourteen-year-old daughter of his patron Sir Robert Drury—did John Donne compose his two Anniversary poems, An Anatomy of the World (1611) and Of the Progress of the Soul (1612)?",
+      "options": [
+        "Anne More",
+        "Lucy, Countess of Bedford",
+        "Magdalen Herbert",
+        "Elizabeth Drury"
+      ],
+      "correct_option_id": 3,
+      "explanation": "John Donne wrote The First Anniversary: An Anatomy of the World (1611, containing 'And new Philosophy calls all in doubt') and The Second Anniversary: Of the Progress of the Soul (1612) to commemorate Elizabeth Drury, daughter of his patron Sir Robert Drury.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "In Book I of John Milton's Paradise Lost, which fallen angel—identified with the Greek god Hephaestus or Vulcan hurled down by Jove—is the chief architect who builds Satan's infernal palace of Pandemonium?",
+      "options": [
+        "Abdiel",
+        "Mulciber",
+        "Uriel",
+        "Ithuriel"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Book I of Paradise Lost, Mammon leads the fallen angels in mining gold from Hell's soil, and the architect Mulciber (the Roman name of Vulcan/Hephaestus) designs the great hall of Pandemonium ('all the demons'), the capital of Hell.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-26",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "the-faerie-queene",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately match the books of Edmund Spenser's The Faerie Queene with their titular knights and virtues?\n(A) Book II tells the legend of Sir Guyon, Knight of Temperance, who destroys Acrasia's Bower of Bliss with the aid of the Palmer.\n(B) Book III tells the legend of Britomart, the female Knight of Chastity, who rescues Amoret from the enchanter Busirane.\n(C) Book V tells the legend of Sir Artegall, Knight of Justice, and Book VI tells the legend of Sir Calidore, Knight of Courtesy.\n(D) Book IV tells the legend of Sir Gawaine, Knight of Patience, who slays the Blatant Beast in Kilcolman.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statements (A), (B), and (C) accurately match Books II, III, V, and VI of The Faerie Queene. Statement (D) is false: Book IV is the Legend of Cambell and Triamond, or Of Friendship, and the Blatant Beast is pursued by Sir Calidore in Book VI.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-27",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "john-milton",
+      "periodId": "commonwealth",
+      "question": "Which of the following statements accurately describe John Milton's Paradise Regained and Samson Agonistes (published together in 1671)?\n(A) Paradise Regained is a four-book blank-verse epic centred on Satan's temptations of Christ in the wilderness.\n(B) In Book IV of Paradise Regained, Satan tempts Christ with the classical learning of Athens and the imperial throne of Tiberius, before placing him on the pinnacle of the temple in Jerusalem.\n(C) Samson Agonistes is a tragic closet drama modeled on Greek tragedy, dealing with the blind Samson's captivity in Gaza and ending with the Chorus's words 'And calm of mind, all passion spent'.\n(D) Samson Agonistes was publicly staged by Thomas Killigrew's King's Company at the Theatre Royal in 1671.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) accurately describe Paradise Regained and Samson Agonistes (published together in 1671). Statement (D) is false: as Milton explicitly stated in his preface, Samson Agonistes was written as a closet drama on the model of Greek tragedy and was never intended for the stage.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-28",
+      "qtype": "chrono",
+      "topic": "poetry",
+      "topicId": "john-milton",
+      "periodId": "commonwealth",
+      "question": "Arrange the following poetic works by John Milton in chronological order of their composition or publication:\n(A) On the Morning of Christ's Nativity\n(B) A Mask Presented at Ludlow Castle (Comus)\n(C) Lycidas (in Justa Edouardo King Naufrago)\n(D) Paradise Lost (first edition in ten books)",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton composed On the Morning of Christ's Nativity in December 1629 (A); Comus was performed at Ludlow Castle in 1634 (B); Lycidas was written in 1637 and published in 1638 (C); and the ten-book first edition of Paradise Lost appeared in 1667 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-29",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Poem by John Donne) with List II (Opening Line or Central Conceit):\n\nList I (Poem by John Donne)\n(A) The Canonization\n(B) The Flea\n(C) Holy Sonnet XIV ('Batter my heart')\n(D) Elegy XIX ('To His Mistress Going to Bed')\n\nList II (Opening Line or Central Conceit)\n(I) 'O my America! my new-found-land, / My kingdom, safeliest when with one man mann'd'\n(II) 'For God's sake hold your tongue, and let me love, / Or chide my palsy, or my gout'\n(III) 'This flea is you and I, and this / Our marriage bed, and marriage temple is'\n(IV) 'Take me to you, imprison me, for I / Except you enthrall me, never shall be free'",
+      "options": [
+        "A-II, B-III, C-IV, D-I",
+        "A-III, B-II, C-IV, D-I",
+        "A-II, B-IV, C-III, D-I",
+        "A-I, B-III, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'The Canonization' opens with 'For God's sake hold your tongue, and let me love' (A-II); 'The Flea' calls the insect their 'marriage bed, and marriage temple' (B-III); Holy Sonnet XIV closes with freedom through divine imprisonment (C-IV); and Elegy XIX compares the mistress to 'my America! my new-found-land' (D-I).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-30",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "cavalier-poets",
+      "periodId": "caroline",
+      "question": "Match List I (Seventeenth-Century Lyric) with List II (Poet):\n\nList I (Seventeenth-Century Lyric)\n(A) 'Why so pale and wan, fond lover?'\n(B) 'He that loves a rosy cheek' ('Disdain Returned')\n(C) 'An Ode for him [Ben Jonson]' ('Ah Ben! Say how, or when / Shall we thy guests')\n(D) 'An Horatian Ode upon Cromwell's Return from Ireland'\n\nList II (Poet)\n(I) Sir John Suckling\n(II) Thomas Carew\n(III) Robert Herrick\n(IV) Andrew Marvell",
+      "options": [
+        "A-II, B-I, C-III, D-IV",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sir John Suckling wrote 'Why so pale and wan, fond lover?' (A-I); Thomas Carew wrote 'He that loves a rosy cheek' (B-II); Robert Herrick wrote 'An Ode for Ben Jonson' (C-III); and Andrew Marvell wrote 'An Horatian Ode upon Cromwell's Return from Ireland' in 1650 (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "renaissance-set-1-m-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "In Edmund Spenser's 1596 prose treatise A View of the Present State of Ireland (published 1633), what are the names of the two interlocutors who debate Irish laws, customs, and religion?",
+      "options": [
+        "Toxophilus and Philologus",
+        "Wiseman and Attentive",
+        "Piscator and Venator",
+        "Irenius and Eudoxus"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Spenser's A View of the Present State of Ireland (written 1596, printed 1633) is cast as a prose dialogue between Irenius (who has recently returned from Ireland) and Eudoxus, categorizing Irish ills under laws, customs, and religion.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "the-advancement-of-learning",
+      "periodId": "jacobean-era",
+      "question": "In The Advancement of Learning (1605), how does Francis Bacon divide the three main branches of human learning according to the three faculties of the human understanding?",
+      "options": [
+        "Grammar to Speech, Rhetoric to Emotion, and Logic to Judgment",
+        "Theology to Faith, Ethics to Will, and Physics to Sensation",
+        "History to Memory, Poesy to Imagination, and Philosophy to Reason",
+        "Chronicle to Past, Drama to Present, and Prophecy to Future"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Book II of The Advancement of Learning (1605), Francis Bacon classifies all human learning by the three faculties of the rational soul: History corresponds to Memory, Poesy (Poetry) to Imagination, and Philosophy to Reason.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "novum-organum",
+      "periodId": "jacobean-era",
+      "question": "In Francis Bacon's Novum Organum (1620), what collective term does he give to the four classes of false notions and prejudices (of the Tribe, the Cave, the Marketplace, and the Theatre) that obstruct human reason?",
+      "options": [
+        "The Humours",
+        "The Idols (Idola)",
+        "The Syllogisms",
+        "The Conceits"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Book I of Novum Organum (1620, the second part of the Instauratio Magna), Francis Bacon calls the fallacies and mental biases that hinder inductive science 'The Idols' (Idola Tribus, Idola Specus, Idola Fori, and Idola Theatri).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In which prose work by John Donne—divided into twenty-three parts each consisting of a Meditation, an Expostulation, and a Prayer—do the famous lines 'No man is an island' and 'never send to know for whom the bell tolls' occur?",
+      "options": [
+        "Biathanatos: A Declaration of that Paradoxe",
+        "Pseudo-Martyr",
+        "Ignatius His Conclave",
+        "Devotions upon Emergent Occasions"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Composed during Donne's near-fatal illness of late 1623, Devotions upon Emergent Occasions (1624) consists of twenty-three stations (Meditation, Expostulation, and Prayer); Meditation XVII contains 'No man is an Island, entire of it self' and 'never send to know for whom the bell tolls; It tolls for thee.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "Which seventeenth-century biographer of John Donne and George Herbert also wrote the pastoral dialogue on fishing, The Compleat Angler, or the Contemplative Man's Recreation (1653)?",
+      "options": [
+        "Izaak Walton",
+        "Sir Thomas Browne",
+        "Thomas Fuller",
+        "Jeremy Taylor"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Izaak Walton (1593–1683) wrote the pioneering English biographies of John Donne (1640), Sir Henry Wotton, Richard Hooker, George Herbert, and Robert Sanderson, as well as the classic country dialogue The Compleat Angler (1653).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-m-36",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan",
+      "question": "Which of the following arguments are advanced by Sir Philip Sidney in An Apology for Poetry (The Defence of Poesy)?\n(A) Poetry is an art of imitation ('mimesis')—a 'speaking picture' whose end is 'to teach and delight'.\n(B) The poet is superior to both the philosopher (who gives abstract precept without example) and the historian (who is tied to particular fact, 'what is', rather than 'what should be').\n(C) The poet 'nothing affirms, and therefore never lieth', refuting the charge that poetry is the 'mother of lies'.\n(D) Sidney praises contemporary English tragicomedies for mingling kings and clowns and ignoring the classical unities of time and place.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are central arguments of Sidney's Apology for Poetry. Statement (D) is false: Sidney praises Gorboduc for its Senecan style but criticizes contemporary English plays for violating the unities of time and place and for 'mingling kings and clowns' in 'mongrel tragi-comedy'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-37",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "bacons-essays",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements about the editions and style of Francis Bacon's Essays are correct?\n(A) The first edition contained 10 essays, the second edition of 1612 contained 38 essays, and the final third edition of 1625 (Counsels, Civil and Moral) contained 58 essays.\n(B) Bacon drew his title Essays from Michel de Montaigne's French Essais (1580), though Bacon's style is aphoristic, impersonal, and prudential rather than confessional.\n(C) In his dedication to the 1625 edition, Bacon remarked that his essays 'come home to men's business and bosoms'.\n(D) In his essay 'Of Marriage and Single Life', Bacon argues that married men with large families make the boldest soldiers and most selfless public servants.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) accurately describe Bacon's Essays. Statement (D) is false: in 'Of Marriage and Single Life', Bacon writes that 'He that hath wife and children hath given hostages to fortune; for they are impediments to great enterprises, either of virtue or mischief.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-38",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "john-milton",
+      "periodId": "commonwealth",
+      "question": "Arrange the following prose tracts by John Milton in chronological order of their publication:\n(A) Of Reformation Touching Church-Discipline in England\n(B) The Doctrine and Discipline of Divorce\n(C) Areopagitica\n(D) The Tenure of Kings and Magistrates",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Milton published his first anti-episcopal tract Of Reformation in May 1641 (A); The Doctrine and Discipline of Divorce appeared in August 1643 (B); Areopagitica was published in November 1644 (C); and The Tenure of Kings and Magistrates appeared in February 1649 immediately after the execution of Charles I (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-39",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "bacons-essays",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Opening or Famous Quotation from Francis Bacon's Essays) with List II (Essay Title):\n\nList I (Quotation)\n(A) 'Men in great place are thrice servants: servants of the sovereign or state; servants of fame; and servants of business.'\n(B) 'God Almighty first planted a garden; and indeed it is the purest of human pleasures.'\n(C) 'Wives are young men's mistresses; companions for middle age; and old men's nurses.'\n(D) 'A crowd is not company; and faces are but a gallery of pictures; and talk but a tinkling cymbal, where there is no love.'\n\nList II (Essay Title)\n(I) Of Gardens\n(II) Of Great Place\n(III) Of Friendship\n(IV) Of Marriage and Single Life",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'Men in great place are thrice servants' is from 'Of Great Place' (A-II); 'God Almighty first planted a garden' opens 'Of Gardens' (B-I); 'Wives are young men's mistresses...' is from 'Of Marriage and Single Life' (C-IV); and 'A crowd is not company...' is from 'Of Friendship' (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-40",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "areopagitica",
+      "periodId": "commonwealth",
+      "question": "Match List I (Prose Work by Donne, Herbert, Browne, or Milton) with List II (Description):\n\nList I (Prose Work)\n(A) Ignatius His Conclave (by John Donne)\n(B) A Priest to the Temple, or The Country Parson (by George Herbert)\n(C) Religio Medici (by Sir Thomas Browne)\n(D) Areopagitica (by John Milton)\n\nList II (Description)\n(I) 1642 meditation reconciling the author's scientific inquiry as a physician with Christian faith and charity\n(II) 1611 anti-Jesuit satire in which Loyola contends in Hell and is sent to colonize the Moon\n(III) 1644 address to Parliament declaring 'I cannot praise a fugitive and cloistered virtue, unexercised and unbreathed'\n(IV) Prose handbook setting out the pastoral duties and daily life of a rural Anglican clergyman",
+      "options": [
+        "A-IV, B-II, C-I, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-IV, C-I, D-II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Donne's Ignatius His Conclave (1611) satirizes the Jesuits (A-II); George Herbert's A Priest to the Temple outlines the duties of a rural parson (B-IV); Sir Thomas Browne's Religio Medici (1642) means 'The Religion of a Physician' (C-I); and Milton's Areopagitica (1644) rejects 'a fugitive and cloistered virtue' (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "euphuism",
+      "periodId": "elizabethan",
+      "question": "From which earlier humanist educational treatise did John Lyly borrow the Greek name 'Euphues' ('graceful, witty, well-endowed by nature') for the hero of his 1578 prose romance?",
+      "options": [
+        "Roger Ascham's The Scholemaster (1570)",
+        "Sir Thomas Elyot's The Boke Named the Governour (1531)",
+        "George Puttenham's The Arte of English Poesie (1589)",
+        "William Webbe's A Discourse of English Poetrie (1586)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Lyly took the Greek term 'Euphues' (meaning a person well-endowed by nature with wit and grace) directly from Roger Ascham's educational treatise The Scholemaster (1570).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "comedy-of-humours",
+      "periodId": "elizabethan",
+      "question": "In the Induction to which 1599 play did Ben Jonson define how the four humours apply to dramatic character ('When some one peculiar quality / Doth so possess a man... all to run one way')?",
+      "options": [
+        "Cynthia's Revels",
+        "The Poetaster",
+        "The Magnetic Lady",
+        "Every Man Out of His Humour"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the Induction to Every Man Out of His Humour (1599), Ben Jonson distinguishes between 'true humour' (where one dominant quality possesses a person body and soul) and 'adopted humour' (affected singularity in dress or manners).",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-m-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "the-court-masque",
+      "periodId": "jacobean-era",
+      "question": "What dramatic innovation did Ben Jonson introduce in The Masque of Queens (1609) to provide a grotesque, disorderly foil of witches or fools before the entry of the noble masquers?",
+      "options": [
+        "The dumb-show",
+        "The antimasque",
+        "The induction",
+        "The chorus epode"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In The Masque of Queens (1609), Ben Jonson introduced the 'antimasque' ('ante-masque' or 'anti-masque')—a grotesque comic or disorderly episode performed by professional actors (such as twelve hags/witches) that is dispelled by the entry of the courtly masquers.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "abraham-cowley",
+      "periodId": "commonwealth",
+      "question": "Which seventeenth-century poet popularized the irregular English 'Pindarique Ode' (in his 1656 collection Pindarique Odes) alongside his unfinished biblical epic Davideis?",
+      "options": [
+        "Richard Crashaw",
+        "Henry Vaughan",
+        "Abraham Cowley",
+        "Thomas Carew"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Abraham Cowley (1618–1667) adapted the Greek odes of Pindar into irregular English stanzas of varying line lengths in his Pindarique Odes (1656), a form widely imitated by Dryden and later seventeenth- and eighteenth-century poets.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "dissociation-of-sensibility",
+      "periodId": "jacobean-era",
+      "question": "In his influential 1921 essay 'The Metaphysical Poets', what critical phrase did T. S. Eliot coin to describe the seventeenth-century split between thought and feeling that set in after Donne and his contemporaries?",
+      "options": [
+        "Dissociation of sensibility",
+        "Objective correlative",
+        "Negative capability",
+        "Egotistical sublime"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'The Metaphysical Poets' (1921), T. S. Eliot praised Donne and his contemporaries for their 'unification of sensibility' and argued that in the seventeenth century a 'dissociation of sensibility' set in, aggravated by the influence of Milton and Dryden.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-m-46",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Which of the following characteristics are identified in literary history as shared features of the drama of the University Wits?\n(A) A fondness for heroic themes and larger-than-life figures such as Tamburlaine.\n(B) Heroic treatment featuring splendid descriptions, long swelling speeches, and violent incidents.\n(C) The use of resonant, declamatory blank verse ('Marlowe's mighty line') suited to tragic passion.\n(D) Strict adherence to everyday bourgeois domestic realism in prose and complete avoidance of classical mythology.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statements (A), (B), and (C) are the classic features of the University Wits' dramatic style. Statement (D) is false: the University Wits steeped their plays in classical mythology and romantic or heroic grandeur rather than bourgeois prose realism.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-m-47",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "cavalier-poets",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe the 'Sons of Ben' ('Tribe of Ben') and Cavalier poetry?\n(A) Jonson and his literary followers gathered for wit and conviviality in the Apollo Room of the Devil Tavern near Temple Bar in London.\n(B) The Cavalier poets blended Jonsonian classical conciseness and Horatian carpe diem grace with courtly gallantry in lyrics addressed to Julia, Anthea, Althea, and Lucasta.\n(C) Joe Lee Davis identified eleven Caroline dramatists—including Richard Brome, Thomas Randolph, William Cartwright, and Sir William Davenant—as dramatic 'Sons of Ben'.\n(D) The Cavalier poets were staunch parliamentary Roundheads who supported Oliver Cromwell's execution of Charles I.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are all true facts about the Sons of Ben and Cavalier Poets. Statement (D) is false: the Cavalier poets were ardent Royalists who supported King Charles I against the parliamentary Roundheads.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-m-48",
+      "qtype": "chrono",
+      "topic": "terms",
+      "topicId": "metaphysical-poetry",
+      "periodId": "caroline",
+      "question": "Arrange the following seventeenth-century poetry volumes in chronological order of their first publication:\n(A) Ben Jonson's Epigrammes and The Forrest (in his Folio Workes)\n(B) George Herbert's The Temple: Sacred Poems and Private Ejaculations\n(C) Robert Herrick's Hesperides and Noble Numbers\n(D) Henry Vaughan's Silex Scintillans (Part I)",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ben Jonson published Epigrammes and The Forrest in his 1616 Folio (A); George Herbert's The Temple and John Donne's Poems were published posthumously in 1633 (B); Robert Herrick published Hesperides and Noble Numbers in 1648 (C); and Henry Vaughan published Part I of Silex Scintillans in 1650 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-49",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Match List I (Famous Critical Remark on Spenser, Shakespeare, Donne, or Milton) with List II (Critic or Poet Who Made It):\n\nList I (Critical Remark)\n(A) Called Edmund Spenser 'the poets' poet'\n(B) Said Edmund Spenser 'writ no language' and that 'Donne, for not keeping of accent, deserved hanging'\n(C) Called Edmund Spenser 'our sage and serious Poet Spencer, whom I dare be known to think a better teacher than Scotus or Aquinas'\n(D) Said in The Marriage of Heaven and Hell that John Milton 'was a true Poet and of the Devil's party without knowing it'\n\nList II (Critic or Poet)\n(I) Charles Lamb\n(II) Ben Jonson\n(III) John Milton (in Areopagitica)\n(IV) William Blake",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Charles Lamb called Spenser 'the poets' poet' (A-I); Ben Jonson said Spenser 'writ no language' and Donne 'deserved hanging' (B-II); Milton praised Spenser in Areopagitica (1644) as 'our sage and serious Poet Spencer' (C-III); and William Blake said Milton was 'of the Devil's party without knowing it' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-m-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "poetic-forms",
+      "periodId": "elizabethan",
+      "question": "Match List I (Renaissance Poetic Form or Term) with List II (Definition and Example):\n\nList I (Poetic Form or Term)\n(A) Poulter's measure\n(B) Epithalamion\n(C) Blazon\n(D) Aubade\n\nList II (Definition and Example)\n(I) Dawn song in which lovers welcome or lament the arrival of morning, such as Donne's 'The Sun Rising'\n(II) Alternating couplets of a twelve-syllable alexandrine and a fourteen-syllable fourteener used in Tudor verse\n(III) Nuptial ode celebrating a wedding and the bridal chamber, such as Spenser's 1595 poem for Elizabeth Boyle\n(IV) Petrarchan catalogue comparing a lady's physical features to jewels, flowers, or celestial objects",
+      "options": [
+        "A-III, B-II, C-IV, D-I",
+        "A-II, B-III, C-IV, D-I",
+        "A-II, B-IV, C-III, D-I",
+        "A-I, B-III, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Poulter's measure alternates a 12-syllable alexandrine with a 14-syllable fourteener (A-II); an epithalamion is a wedding ode blessing the bridal chamber (B-III); a blazon catalogues a beloved's features using ornate comparisons (C-IV); and an aubade is a dawn love song such as Donne's 'The Sun Rising' (D-I).",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    }
+  ]
+}
