@@ -1,0 +1,873 @@
+{
+  "setId": "renaissance-set-1",
+  "rev": 1,
+  "age": "renaissance",
+  "ageName": "Renaissance Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/renaissance/",
+  "notesTitle": "Renaissance — the full notes",
+  "topics": {
+    "ground": "The age and its ideas",
+    "drama": "Drama: Marlowe to Jonson",
+    "poetry": "Poetry: Spenser to Milton",
+    "prose": "Bacon, prose and criticism",
+    "terms": "Terms, movements and forms"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Fifty foundational recall questions across Spenser, Sidney, Marlowe, Shakespeare, Jonson, Donne, the Cavalier poets, Bacon and Milton.",
+  "questions": [
+    {
+      "id": "renaissance-set-1-e-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "tottels-miscellany",
+      "periodId": "early-tudor",
+      "question": "In which year did the printer Richard Tottel publish Songs and Sonettes, popularly known as Tottel's Miscellany?",
+      "options": [
+        "1557, near the end of Mary I's reign",
+        "1509, at the accession of Henry VIII",
+        "1579, alongside The Shepheardes Calender",
+        "1603, upon the death of Elizabeth I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richard Tottel published Songs and Sonettes (Tottel's Miscellany) in 1557, bringing the poems of Sir Thomas Wyatt and Henry Howard, Earl of Surrey, into print for the first time.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-wyatt",
+      "periodId": "early-tudor",
+      "question": "Which sixteenth-century diplomat and courtier introduced the Italian Petrarchan sonnet into English literature?",
+      "options": [
+        "Roger Ascham",
+        "Sir Thomas Wyatt",
+        "Thomas Norton",
+        "Stephen Gosson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sir Thomas Wyatt (1503–1542), courtier and ambassador to King Henry VIII, introduced the Petrarchan sonnet form (octave and sestet) into English verse.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "henry-howard-surrey",
+      "periodId": "early-tudor",
+      "question": "Which Tudor poet pioneered English blank verse in his translation of Books II and IV of Virgil's Aeneid?",
+      "options": [
+        "Sir Thomas More of Chelsea",
+        "George Gascoigne of Gray's Inn",
+        "Henry Howard, Earl of Surrey",
+        "Nicholas Udall of Eton"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Henry Howard, Earl of Surrey (1517–1547), introduced unrhymed iambic pentameter (blank verse) into English in his translation of Books II and IV of Virgil's Aeneid and established the English sonnet rhyme scheme.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "gorboduc",
+      "periodId": "elizabethan",
+      "question": "Which 1561 blank-verse play by Thomas Norton and Thomas Sackville is recognized as the first regular English tragedy?",
+      "options": [
+        "Endymion",
+        "Campaspe",
+        "Tamburlaine",
+        "Gorboduc"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gorboduc (also subtitled Ferrex and Porrex), written by Thomas Norton (Acts I–III) and Thomas Sackville (Acts IV–V) and performed at the Inner Temple in 1561, is the first regular English tragedy in blank verse.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "nicholas-udall",
+      "periodId": "early-tudor",
+      "question": "Who wrote Ralph Roister Doister, generally regarded as the first regular English comedy divided into acts and scenes?",
+      "options": [
+        "Thomas Sackville",
+        "Nicholas Udall",
+        "George Puttenham",
+        "Richard Hakluyt"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Nicholas Udall, headmaster of Eton and Westminster, wrote Ralph Roister Doister (c. 1552), adapting the braggart-soldier comedy of Plautus's Miles Gloriosus into the first regular English comedy.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-06",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "elizabethan-drama",
+      "periodId": "elizabethan",
+      "question": "In which year did England defeat the Spanish Armada during the reign of Queen Elizabeth I?",
+      "options": [
+        "1588",
+        "1558",
+        "1576",
+        "1603"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Spanish Armada was defeated in 1588, sparking a wave of patriotic pride reflected in Elizabethan chronicle plays and poetry. Elizabeth I ascended the throne in 1558 and died in 1603.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-07",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "king-james-bible",
+      "periodId": "jacobean-era",
+      "question": "In which year was the Authorized Version of the Bible (the King James Bible), prepared by forty-seven scholars, first published?",
+      "options": [
+        "1535",
+        "1560",
+        "1642",
+        "1611"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Authorized Version (King James Bible), commissioned by King James I and translated by forty-seven scholars, was published in 1611 and became a landmark of English prose.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-08",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "jacobean-drama",
+      "periodId": "caroline",
+      "question": "In which year did the Puritan-controlled Parliament order the official closure of the London public theatres at the outbreak of the Civil War?",
+      "options": [
+        "1616",
+        "1625",
+        "1642",
+        "1660"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Parliament ordered the London theatres closed in 1642 at the outbreak of the English Civil War; they remained officially closed for eighteen years until the Restoration of Charles II in 1660.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-09",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Which two fellow actors of William Shakespeare edited and published the First Folio collection of his plays in 1623?",
+      "options": [
+        "Richard Burbage and Will Kempe",
+        "Philip Henslowe and Edward Alleyn",
+        "John Heminges and Henry Condell",
+        "Francis Beaumont and John Fletcher"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Seven years after Shakespeare's death in 1616, his fellow King's Men actors John Heminges and Henry Condell compiled and published the First Folio of his plays in 1623.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-10",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "elizabethan-drama",
+      "periodId": "elizabethan",
+      "question": "Arrange the following milestones of the English Renaissance and seventeenth century in chronological order:\n(A) Publication of Tottel's Miscellany\n(B) Defeat of the Spanish Armada\n(C) Publication of the King James Bible (Authorized Version)\n(D) Parliamentary closure of the London theatres",
+      "options": [
+        "A → B → C → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Tottel's Miscellany was published in 1557 (A), the Spanish Armada was defeated in 1588 (B), the King James Bible appeared in 1611 (C), and Parliament closed the theatres in 1642 (D).",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-11",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-spanish-tragedy",
+      "periodId": "elizabethan",
+      "question": "Which revenge tragedy by Thomas Kyd is subtitled Hieronimo Is Mad Again and features the ghost of Don Andrea?",
+      "options": [
+        "The Jew of Malta",
+        "The Spanish Tragedy",
+        "The White Devil",
+        "The Maid's Tragedy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Thomas Kyd's The Spanish Tragedy, subtitled Hieronimo Is Mad Again, opens with the Ghost of Don Andrea and Revenge and established the conventions of Elizabethan revenge tragedy, including a play-within-a-play.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-12",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "doctor-faustus",
+      "periodId": "elizabethan",
+      "question": "For how many years of power and pleasure does Doctor Faustus sell his soul to Lucifer in Christopher Marlowe's tragedy?",
+      "options": [
+        "Twelve years",
+        "Seven years",
+        "Forty years",
+        "Twenty-four years"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Marlowe's The Tragical History of the Life and Death of Doctor Faustus, the German scholar signs a deed in his own blood selling his soul in exchange for twenty-four years of power with Mephistopheles as his servant.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-13",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-jew-of-malta",
+      "periodId": "elizabethan",
+      "question": "Who is the wealthy merchant protagonist of Christopher Marlowe's tragedy The Jew of Malta, introduced in a prologue spoken by Machevill?",
+      "options": [
+        "Barabas",
+        "Shylock",
+        "Ithamore",
+        "Ferneze"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Barabas is the avaricious and vengeful protagonist of Marlowe's The Jew of Malta, whose estate is confiscated by Governor Ferneze and who is assisted in his plots by his slave Ithamore.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-14",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "as-you-like-it",
+      "periodId": "elizabethan",
+      "question": "Which pastoral romance by Thomas Lodge served as the primary narrative source for William Shakespeare's comedy As You Like It?",
+      "options": [
+        "Pandosto, or The Triumph of Time",
+        "Euphues: The Anatomy of Wit",
+        "Rosalynde, or Euphues' Golden Legacy",
+        "Menaphon: Camilla's Alarum"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thomas Lodge's prose romance Rosalynde: Euphues' Golden Legacy (1590) provided the plot for Shakespeare's As You Like It. Robert Greene's Pandosto (1588) was the source for The Winter's Tale.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-15",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "hamlet",
+      "periodId": "elizabethan",
+      "question": "In Shakespeare's Hamlet, what title does Prince Hamlet give to the play-within-a-play ('The Murder of Gonzago') staged to catch the conscience of King Claudius?",
+      "options": [
+        "The Nine Worthies",
+        "The Mousetrap",
+        "Pyramus and Thisbe",
+        "Soliman and Perseda"
+      ],
+      "correct_option_id": 1,
+      "explanation": "When Claudius asks the title of the play performed by the travelling actors at Elsinore, Hamlet calls it 'The Mousetrap', designed to test whether Claudius murdered Hamlet's father.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "renaissance-set-1-e-16",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "othello",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's Othello, which character warns against jealousy as 'the green-ey'd monster which doth mock / The meat it feeds on'?",
+      "options": [
+        "Cassio",
+        "Roderigo",
+        "Brabantio",
+        "Iago"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Act III, Scene iii of Othello, the villain Iago hypocritically warns Othello to beware of jealousy as 'the green-ey'd monster' while simultaneously planting suspicion against Desdemona and Cassio.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-17",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-tempest",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's late romance The Tempest, what is the name of the deformed son of the witch Sycorax whom Prospero enslaves on the island?",
+      "options": [
+        "Ariel",
+        "Trinculo",
+        "Caliban",
+        "Ferdinand"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Caliban is the son of the Algerian witch Sycorax on the enchanted island in The Tempest, who tells Prospero, 'You taught me language, and my profit on't / Is, I know how to curse.' Ariel is the airy spirit freed by Prospero from a cloven pine.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-18",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "volpone",
+      "periodId": "jacobean-era",
+      "question": "In Ben Jonson's comedy Volpone, or The Fox, what is the name of Volpone's clever parasite servant whose Italian name means 'the Fly'?",
+      "options": [
+        "Voltore",
+        "Mosca",
+        "Corbaccio",
+        "Corvino"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mosca ('the Fly') is Volpone's parasite servant in Venice who helps his master gull the greedy legacy-hunters Voltore ('Vulture'), Corbaccio ('Raven'), and Corvino ('Crow').",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-19",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-alchemist",
+      "periodId": "jacobean-era",
+      "question": "In Ben Jonson's comedy The Alchemist, which greedy knight dreams of possessing the philosopher's stone to turn all metal in his house into gold?",
+      "options": [
+        "Sir Epicure Mammon",
+        "Sir Politic Would-be",
+        "Sir Toby Belch",
+        "Captain Bobadill"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In The Alchemist (1610), Sir Epicure Mammon is the chief dupe of the con-men Subtle, Face, and Dol Common, fantasizing about sensual luxury and boundless wealth from the philosopher's stone.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-20",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "shakespearean-comedy",
+      "periodId": "elizabethan",
+      "question": "Match List I (Shakespearean Heroine) with List II (Male Disguise Adopted in the Play):\n\nList I (Shakespearean Heroine)\n(A) Rosalind (in As You Like It)\n(B) Viola (in Twelfth Night)\n(C) Portia (in The Merchant of Venice)\n(D) Imogen (in Cymbeline)\n\nList II (Male Disguise Adopted in the Play)\n(I) Cesario\n(II) Ganymede\n(III) Fidele\n(IV) Balthazar",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II",
+        "A-II, B-I, C-IV, D-III"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In As You Like It, Rosalind disguises herself as Ganymede (A-II); in Twelfth Night, Viola serves Duke Orsino as the page Cesario (B-I); in The Merchant of Venice, Portia appears in court as Balthazar (C-IV); and in Cymbeline, Imogen takes the page name Fidele (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "philip-sidney",
+      "periodId": "elizabethan",
+      "question": "To whom did Edmund Spenser dedicate his pastoral sequence of twelve eclogues, The Shepheardes Calender (1579), under the pen-name 'Immerito'?",
+      "options": [
+        "Sir Walter Raleigh",
+        "Sir Philip Sidney",
+        "Lord Grey de Wilton",
+        "Earl of Southampton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Signing himself 'Immerito', Edmund Spenser dedicated The Shepheardes Calender (1579), consisting of twelve monthly pastoral eclogues, to Sir Philip Sidney. He later addressed the introductory letter of The Faerie Queene to Sir Walter Raleigh.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "the-faerie-queene",
+      "periodId": "elizabethan",
+      "question": "In Book I of Edmund Spenser's The Faerie Queene, which moral virtue is represented by the Redcrosse Knight, who travels with Lady Una?",
+      "options": [
+        "Temperance",
+        "Chastity",
+        "Holiness",
+        "Justice"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Book I of The Faerie Queene, the Redcrosse Knight embodies the Christian virtue of Holiness and is accompanied by Lady Una (True Religion), whereas Sir Guyon represents Temperance (Book II), Britomart Chastity (Book III), and Sir Artegall Justice (Book V).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "epithalamion",
+      "periodId": "elizabethan",
+      "question": "Whose marriage to Edmund Spenser in Ireland on 11 June 1594 is celebrated in his sonnet sequence Amoretti and his nuptial ode Epithalamion?",
+      "options": [
+        "Elizabeth Boyle",
+        "Penelope Devereux",
+        "Anne Hathaway",
+        "Mary Powell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Spenser addressed his Amoretti sonnets and his wedding ode Epithalamion (both published together by William Ponsonby in 1595) to his bride Elizabeth Boyle. Penelope Devereux is Stella in Sidney's Astrophil and Stella.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "astrophil-and-stella",
+      "periodId": "elizabethan",
+      "question": "Which lady, the daughter of the Earl of Essex who married Lord Rich, is addressed as 'Stella' in Sir Philip Sidney's sonnet sequence Astrophil and Stella?",
+      "options": [
+        "Elizabeth Boyle",
+        "Mary Herbert",
+        "Anne More",
+        "Penelope Devereux"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Astrophil and Stella (108 sonnets and 11 songs), 'Astrophil' ('Star-lover') is Sir Philip Sidney and 'Stella' ('Star') is Lady Penelope Devereux, who married Lord Rich.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "a-valediction-forbidding-mourning",
+      "periodId": "jacobean-era",
+      "question": "In which poem by John Donne does the speaker compare the united souls of two parted lovers to the 'stiff twin compasses' of a geometric divider?",
+      "options": [
+        "The Canonization",
+        "A Valediction: Forbidding Mourning",
+        "The Sun Rising",
+        "A Nocturnal upon St. Lucy's Day"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Written for his wife Anne More before a journey to continental Europe, Donne's 'A Valediction: Forbidding Mourning' contains the famous metaphysical conceit comparing the lovers' souls to the fixed and moving legs of a pair of compasses.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-26",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "robert-herrick",
+      "periodId": "caroline",
+      "question": "Which Cavalier poet published his secular lyrics Hesperides and his religious poems Noble Numbers together in a single volume in 1648?",
+      "options": [
+        "Robert Herrick",
+        "Richard Lovelace",
+        "Sir John Suckling",
+        "Thomas Carew"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Robert Herrick (1591–1674), the foremost of the Cavalier poets ('Sons of Ben'), published Hesperides (containing 'To the Virgins, to Make Much of Time' and 'To Daffodils') together with his sacred poems Noble Numbers in 1648.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-27",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "richard-lovelace",
+      "periodId": "caroline",
+      "question": "Which Cavalier poet wrote the lyrics 'To Althea, from Prison' ('Stone walls do not a prison make') and 'To Lucasta, Going to the Wars'?",
+      "options": [
+        "Sir John Suckling",
+        "Thomas Carew",
+        "Richard Lovelace",
+        "Edmund Waller"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The royalist Cavalier poet Richard Lovelace (1618–1658) composed 'To Althea, from Prison' while imprisoned by Parliament at Gatehouse and 'To Lucasta, Going to the Wars' ('I could not love thee, Dear, so much, / Loved I not Honour more').",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "renaissance-set-1-e-28",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "lycidas",
+      "periodId": "commonwealth",
+      "question": "Whose death by drowning in the Irish Sea did John Milton mourn in his pastoral elegy Lycidas?",
+      "options": [
+        "Charles Diodati, his closest school friend",
+        "Sir Philip Sidney, who fell at Zutphen",
+        "Arthur Henry Hallam, who died in Vienna",
+        "Edward King, his fellow student at Cambridge"
+      ],
+      "correct_option_id": 3,
+      "explanation": "John Milton wrote the pastoral elegy Lycidas to mourn the death of his Christ's College, Cambridge contemporary Edward King, who drowned when his ship sank in the Irish Sea in 1637.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-29",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "How many books did John Milton's epic Paradise Lost contain in its first edition of 1667 and in its revised second edition of 1674?",
+      "options": [
+        "Ten books in 1667, rearranged into twelve books in 1674",
+        "Six books in 1667, expanded into twelve books in 1674",
+        "Eight books in 1667, rearranged into ten books in 1674",
+        "Twelve books in 1667, expanded into twenty-four books in 1674"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Paradise Lost was first published in 1667 in ten books; in the second edition of 1674, Milton divided Books VII and X into two books each to match the twelve-book structure of Virgil's Aeneid.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-30",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "cavalier-poets",
+      "periodId": "caroline",
+      "question": "Which of the following seventeenth-century poets belong to the Royalist group known as the Cavalier Poets ('Tribe of Ben')?\n(A) Robert Herrick\n(B) Thomas Carew\n(C) Sir John Suckling\n(D) John Bunyan\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Robert Herrick, Thomas Carew, Sir John Suckling, and Richard Lovelace are the four principal Cavalier poets ('Sons of Ben') who supported King Charles I. John Bunyan was a Puritan preacher and author of The Pilgrim's Progress.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "utopia",
+      "periodId": "early-tudor",
+      "question": "Who translated Sir Thomas More's 1516 Latin treatise Utopia into English in 1551?",
+      "options": [
+        "John Florio",
+        "Thomas North",
+        "William Tyndale",
+        "Ralph Robinson"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sir Thomas More wrote Utopia in Latin in 1516 (featuring the traveller Raphael Hythlodaeus), and Ralph Robinson published the first English translation in 1551.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-lyly",
+      "periodId": "elizabethan",
+      "question": "Which Elizabethan writer inaugurated the ornate, antithetical prose style known as 'Euphuism' in Euphues: The Anatomy of Wit (1578)?",
+      "options": [
+        "Thomas Nashe",
+        "Richard Hooker",
+        "John Lyly",
+        "Robert Burton"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Lyly's prose romance Euphues: The Anatomy of Wit (1578) and its sequel Euphues and His England (1580) popularized the highly artificial, balanced, and alliterative prose style called Euphuism.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "stephen-gosson",
+      "periodId": "elizabethan",
+      "question": "Whose 1579 Puritan attack on plays and poetry, The School of Abuse, provoked Sir Philip Sidney to write An Apology for Poetry (The Defence of Poesy)?",
+      "options": [
+        "William Prynne",
+        "Stephen Gosson",
+        "Jeremy Collier",
+        "Thomas Rymer"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Stephen Gosson dedicated his anti-stage pamphlet The School of Abuse (1579) without permission to Sir Philip Sidney, prompting Sidney's celebrated critical reply An Apology for Poetry (also published as The Defence of Poesy in 1595).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "arcadia",
+      "periodId": "elizabethan",
+      "question": "For which noblewoman, his sister, did Sir Philip Sidney write his pastoral prose romance Arcadia?",
+      "options": [
+        "Penelope Devereux, Lady Rich",
+        "Lucy Harington, Countess of Bedford",
+        "Alice Spencer, Countess of Derby",
+        "Mary Herbert, Countess of Pembroke"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sidney wrote his pastoral prose romance Arcadia to entertain his sister Mary Herbert, Countess of Pembroke, who supervised its publication in 1593 as The Countess of Pembroke's Arcadia.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "the-unfortunate-traveller",
+      "periodId": "elizabethan",
+      "question": "Who is the page-boy protagonist of Thomas Nashe's 1594 picaresque prose narrative The Unfortunate Traveller?",
+      "options": [
+        "Jack Wilton",
+        "Euphues of Athens",
+        "Raphael Hythlodaeus",
+        "Pierce Pennilesse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Thomas Nashe's The Unfortunate Traveller, or The Life of Jack Wilton (1594), the earliest picaresque novel in English, narrates the continental adventures of the page Jack Wilton during the reign of Henry VIII.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-36",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "bacons-essays",
+      "periodId": "jacobean-era",
+      "question": "In which of Francis Bacon's essays do the famous aphorisms 'Some books are to be tasted, others to be swallowed' and 'Reading maketh a full man' appear?",
+      "options": [
+        "Of Truth",
+        "Of Great Place",
+        "Of Studies",
+        "Of Friendship"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Francis Bacon's essay 'Of Studies' opens with 'Studies serve for delight, for ornament, and for ability' and includes the maxims 'Some books are to be tasted, others to be swallowed, and some few to be chewed and digested' and 'Reading maketh a full man'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-37",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "In Francis Bacon's unfinished utopian fable New Atlantis (1627), what is the name of the scientific research college on the island of Bensalem?",
+      "options": [
+        "The Abbey of Theleme",
+        "The Bower of Bliss",
+        "The House of Holiness",
+        "Salomon's House (Solomon's House)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Francis Bacon's New Atlantis (published posthumously in 1627), the utopian island of Bensalem features a state-supported scientific research institution called Salomon's House (or Solomon's House), which foreshadowed the Royal Society (1662).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-38",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "robert-burton",
+      "periodId": "jacobean-era",
+      "question": "Which Jacobean Oxford scholar published the encyclopedic treatise The Anatomy of Melancholy in 1621 under the pseudonym 'Democritus Junior'?",
+      "options": [
+        "Sir Thomas Browne",
+        "Robert Burton",
+        "Izaak Walton",
+        "Thomas Fuller"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Robert Burton (1577–1640) published The Anatomy of Melancholy in 1621, analyzing human melancholy and humoral psychology; its meditative tone influenced John Milton's Il Penseroso.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-39",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "areopagitica",
+      "periodId": "commonwealth",
+      "question": "Which 1644 prose tract by John Milton is an impassioned speech to the Parliament of England defending the liberty of unlicensed printing?",
+      "options": [
+        "Areopagitica",
+        "Eikonoklastes",
+        "Tetrachordon",
+        "Tenure of Kings and Magistrates"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Milton published Areopagitica: A Speech of Mr. John Milton for the Liberty of Unlicens'd Printing, to the Parlament of England in 1644, opposing Parliament's 1643 licensing order and declaring that 'a good book is the precious life-blood of a master spirit'.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "renaissance-set-1-e-40",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Which of the following works were written by Francis Bacon?\n(A) The Advancement of Learning (1605)\n(B) Novum Organum (1620)\n(C) The History of the Reign of King Henry the Seventh (1622)\n(D) Hydriotaphia, Urn Burial (1658)\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Francis Bacon wrote The Advancement of Learning (1605), the Latin treatise Novum Organum (1620), and The History of the Reign of King Henry the Seventh (1622). Hydriotaphia, Urn Burial (1658) was written by Sir Thomas Browne.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "spenserian-stanza",
+      "periodId": "elizabethan",
+      "question": "What is the metrical structure and rhyme scheme of the nine-line Spenserian stanza invented by Edmund Spenser for The Faerie Queene?",
+      "options": [
+        "Eight iambic pentameter lines followed by an alexandrine (iambic hexameter), rhyming ababbcbcc",
+        "Seven iambic pentameter lines followed by a heroic couplet, rhyming ababbccdd",
+        "Eight iambic tetrameter lines followed by a pentameter line, rhyming abababcc",
+        "Six iambic pentameter lines followed by a tercet, rhyming ababccddd"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Spenserian stanza consists of eight 10-syllable iambic pentameter lines followed by a ninth 12-syllable iambic hexameter line (an alexandrine), rhyming ababbcbcc.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "shakespearean-sonnet",
+      "periodId": "elizabethan",
+      "question": "What is the standard division and rhyme scheme of the English or Shakespearean sonnet developed by the Earl of Surrey and used by William Shakespeare?",
+      "options": [
+        "Three interlocking quatrains and a couplet, rhyming abab bcbc cdcd ee",
+        "An octave and a sestet, rhyming abbaabba cdecde",
+        "Two septets of rhyme royal, rhyming ababbcc dedeeff",
+        "Three quatrains and a concluding couplet, rhyming abab cdcd efef gg"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The English or Shakespearean sonnet (introduced by Henry Howard, Earl of Surrey) consists of three independent quatrains and a final rhyming couplet (abab cdcd efef gg), whereas Spenser's Amoretti uses the interlocking scheme abab bcbc cdcd ee.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "renaissance-set-1-e-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Which nineteenth-century literary historian coined the phrase 'University Wits' for the late-sixteenth-century group of Oxford and Cambridge playwrights?",
+      "options": [
+        "Frederick S. Boas",
+        "George Saintsbury",
+        "A. H. Thorndike",
+        "H. J. C. Grierson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The term 'University Wits' was coined in the nineteenth century by the critic and literary historian George Saintsbury to describe the group of educated Elizabethan dramatists and pamphleteers led by Marlowe, Lyly, Peele, Greene, Lodge, and Nashe.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "thomas-kyd",
+      "periodId": "elizabethan",
+      "question": "Which dramatist is commonly grouped with the University Wits for his style and influence, even though he did not attend Oxford or Cambridge?",
+      "options": [
+        "Robert Greene",
+        "John Lyly",
+        "Thomas Kyd",
+        "George Peele"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thomas Kyd, educated at the Merchant Taylors' School in London, did not attend either Oxford or Cambridge, whereas Marlowe, Greene, and Nashe studied at Cambridge and Lyly, Peele, and Lodge studied at Oxford.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "comedy-of-humours",
+      "periodId": "elizabethan",
+      "question": "Which four bodily fluids constitute the medieval and Renaissance physiological theory underlying Ben Jonson's 'Comedy of Humours'?",
+      "options": [
+        "Blood, phlegm, yellow bile (choler), and black bile (melancholy)",
+        "Ether, marrow, spirit, and vital lymph",
+        "Fire, water, earth, and quicksilver",
+        "Spleen, gall, plasma, and humeral vapour"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ben Jonson's Comedy of Humours draws on the physiological doctrine of the four bodily humours: blood (sanguine), phlegm (phlegmatic), choler or yellow bile (choleric), and melancholy or black bile (melancholic).",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-46",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "the-court-masque",
+      "periodId": "jacobean-era",
+      "question": "With which renowned architect and stage designer did Ben Jonson collaborate and eventually quarrel while creating Jacobean and Caroline court masques?",
+      "options": [
+        "Henry Lawes",
+        "Inigo Jones",
+        "Christopher Wren",
+        "Philip Henslowe"
+      ],
+      "correct_option_id": 1,
+      "explanation": "From The Masque of Blackness (1605) to 1631, Ben Jonson collaborated with the architect and stage designer Inigo Jones on lavish court masques for James I and Charles I before quarrelling over whether poetry or spectacle was the soul of the masque.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-47",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "metaphysical-poetry",
+      "periodId": "jacobean-era",
+      "question": "In which critical work did Dr. Samuel Johnson coin the label 'Metaphysical poets' and define their wit as 'the most heterogeneous ideas... yoked by violence together'?",
+      "options": [
+        "The 'Preface to Shakespeare' in his 1765 edition",
+        "The 'Life of Milton' in Lives of the Most Eminent English Poets",
+        "The 'Life of Cowley' in Lives of the Most Eminent English Poets",
+        "An Essay of Dramatic Poesy by John Dryden"
+      ],
+      "correct_option_id": 2,
+      "explanation": "While John Dryden earlier remarked that Donne 'affects the metaphysics', it was Samuel Johnson in his 'Life of Cowley' (in Lives of the Most Eminent English Poets, 1779–1781) who coined the term 'Metaphysical poets' and famously described their conceits as 'heterogeneous ideas... yoked by violence together'.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "renaissance-set-1-e-48",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "george-herbert",
+      "periodId": "caroline",
+      "question": "Which two poems in George Herbert's The Temple (1633) are classic seventeenth-century examples of pattern or concrete poetry whose printed lines form visual shapes?",
+      "options": [
+        "'The Collar' and 'The Pulley'",
+        "'The Flea' and 'The Sun Rising'",
+        "'The Retreat' and 'The World'",
+        "'Easter Wings' and 'The Altar'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "George Herbert's 'Easter Wings' and 'The Altar' in The Temple (1633) are pattern (shaped or concrete) poems whose typographic layout visually mirrors a pair of wings and a classical altar.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "renaissance-set-1-e-49",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "shakespeares-problem-plays",
+      "periodId": "jacobean-era",
+      "question": "Which critic introduced the term 'problem plays' into Shakespearean criticism to group All's Well That Ends Well, Measure for Measure, Troilus and Cressida, and Hamlet?",
+      "options": [
+        "Frederick S. Boas",
+        "A. C. Bradley",
+        "Stephen Orgel",
+        "Edward Dowden"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Shakspere and His Predecessors (1896), Frederick S. Boas applied the term 'problem plays' (borrowed from nineteenth-century Ibsenite drama) to All's Well That Ends Well, Measure for Measure, Troilus and Cressida, and Hamlet.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "renaissance-set-1-e-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Match List I (University Wit) with List II (University Attended):\n\nList I (University Wit)\n(A) Christopher Marlowe\n(B) Thomas Nashe\n(C) John Lyly\n(D) George Peele\n\nList II (University Attended)\n(I) University of Cambridge (Corpus Christi College)\n(II) University of Cambridge (St John's College)\n(III) University of Oxford (Magdalen College)\n(IV) University of Oxford (Christ Church)",
+      "options": [
+        "A-III, B-IV, C-I, D-II",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-II, B-I, C-IV, D-III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Among the University Wits, Marlowe, Greene, and Nashe were educated at Cambridge (A-I, B-II), whereas Lyly, Peele, and Lodge were educated at Oxford (C-III, D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}

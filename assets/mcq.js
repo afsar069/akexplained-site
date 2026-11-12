@@ -39,11 +39,11 @@
     'old-english',
     'anglo-norman',
     'age-of-chaucer',
-    'fifteenth-century'
+    'fifteenth-century',
+    'renaissance'
   ];
 
   var SOON_HUBS = [
-    'renaissance',
     'early-tudor',
     'elizabethan',
     'jacobean',
