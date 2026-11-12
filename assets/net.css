@@ -207,6 +207,49 @@
 .net-unit-description{margin:0 0 22px;padding:0 45px 0 64px;max-width:none}
 .net-syllabus-unit:has(summary:focus-visible){outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
 
+/* About UGC-NET: jump links, key facts, tables, steps, cards and a note box for a long reading page. */
+.net-reading h2,.net-anchor{scroll-margin-top:90px}
+.net-reading h3{margin:28px 0 10px;font-family:var(--serif);font-size:1.12rem;font-weight:600;line-height:1.4;letter-spacing:normal;color:var(--ink)}
+.net-jump{display:flex;flex-wrap:wrap;gap:10px;margin:24px 0 0}
+.net-jump a{display:inline-flex;align-items:center;min-height:44px;padding:8px 16px;border:1px solid var(--teal);border-radius:999px;color:var(--teal-dark);font-size:.95rem;font-weight:600;line-height:1.4;text-decoration:none}
+.net-jump a:hover{background:var(--teal-soft)}
+.net-jump a:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.net-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:24px 0 8px}
+.net-facts div{padding:16px 18px;border:1px solid var(--border);border-top:3px solid var(--teal);border-radius:12px;background:var(--card-paper)}
+.net-facts dt{margin:0 0 6px;color:var(--teal);font-size:.76rem;font-weight:700;letter-spacing:.07em;line-height:1.4;text-transform:uppercase}
+.net-facts dd{margin:0;color:var(--ink);font-family:var(--serif);font-size:1.02rem;font-weight:600;line-height:1.45}
+.net-reading .tablewrap{margin:18px 0 22px;border:1px solid var(--border);border-radius:12px;background:#fff}
+.net-reading .tablewrap table{min-width:0;border:0;background:transparent}
+.net-reading caption{caption-side:top;padding:14px 16px 10px;text-align:left;color:var(--ink);font-family:var(--serif);font-size:.98rem;font-weight:600;line-height:1.4}
+.net-reading th,.net-reading td{border:0;border-top:1px solid var(--border);padding:12px 16px;font-size:.95rem;line-height:1.55}
+.net-reading thead th{background:var(--teal-soft);color:var(--teal-dark);font-size:.82rem;letter-spacing:.04em}
+.net-reading tbody th{background:transparent;color:var(--ink);font-weight:600}
+.net-steps{list-style:none;counter-reset:step;margin:16px 0 22px;padding:0}
+.net-steps li{counter-increment:step;position:relative;margin:0;padding:12px 0 12px 52px;border-bottom:1px solid var(--border)}
+.net-steps li:last-child{border-bottom:0}
+.net-steps li::before{content:counter(step);position:absolute;left:0;top:11px;display:flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;background:var(--teal);color:#fff;font-family:var(--serif);font-size:1rem;font-weight:700}
+.net-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:22px 0}
+.net-card{padding:20px 22px;border:1px solid var(--border);border-radius:14px;background:var(--card-paper)}
+.net-card h3{margin:0 0 8px;color:var(--teal-dark)}
+.net-card p{margin:0;font-size:.97rem;line-height:1.6}
+.net-callout{margin:24px 0 0;padding:18px 22px;border:1px solid #CEB47D;border-left:4px solid var(--gold);border-radius:10px;background:var(--cream)}
+.net-callout p{margin:0 0 12px}
+.net-callout p:last-child{margin:0}
+@media (max-width:900px){
+  .net-facts{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:640px){
+  .net-facts,.net-cards{grid-template-columns:1fr}
+  .net-reading th,.net-reading td{padding:10px 9px;font-size:.92rem}
+  .net-reading thead th{letter-spacing:0}
+  .net-reading caption{padding:12px 9px 8px}
+  .net-card{padding:18px}
+}
+@media print{
+  .net-jump{display:none}
+  .net-facts div,.net-card,.net-callout,.net-reading tr{break-inside:avoid}
+}
+
 @container (max-width:560px){
   .net-resource-grid,.net-paper-grid{grid-template-columns:1fr}
   .net-resource-grid{gap:0}

@@ -4,7 +4,16 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-12 (NET hub: two Paper 2 cards now link to the MCQ and Daily quiz hubs.)_
+_Last updated: 2026-11-12 (About UGC-NET page rewritten from the NTA December 2026 bulletin.)_
+
+## About UGC-NET page rewritten (2026-11-12)
+
+- `/exams/net/about/` (`exams/net/about/index.njk`) is now a full guide: overview and three qualifying categories, eligibility (Master's and four-year bachelor's routes), age limit and relaxation, exam pattern and marking, how the result is decided (6% rule, 40% / 35% minimum), reservation table, benefits, a December 2026 dates and fee snapshot, how to apply, and the existing preparation steps. New styles are the "About UGC-NET" block in `assets/net.css` (`.net-jump`, `.net-facts`, `.net-cards`, `.net-steps`, `.net-callout`, table look inside `.net-reading`).
+- **Source:** every figure comes from the NTA *Updated Information Bulletin of UGC-NET December 2026 as on 16.10.2026* (read in full from the NIC file host), plus NTA public notices of 27 Oct, 1 Nov and 2 Nov 2026 (application and fee extension, correction window, helpdesk). English = subject code 30 was checked in the bulletin's Annexure II.
+- **Not on the page, on purpose:** the JRF fellowship amount. The bulletin only says "fellowship of UGC under various schemes", with no figure, and `ugc.gov.in` could not be opened from the session. Add it only from a UGC page the owner supplies or confirms.
+- **Needs a refresh each cycle:** the "Dates, fees and how to apply" tables are a snapshot of the December 2026 cycle (registration already closed). Update the dates, fees, age-limit date (1 December 2026) and the source note when a new bulletin comes out. The rest follows the bulletin too, so re-read chapters 2, 3 and 11 each time.
+- The session's cloud environment `akexplained-site` now allows `ugcnet.nta.ac.in`, `ugcnet.nta.nic.in`, `nta.ac.in`, `ugcnetonline.in`, `ugc.gov.in` and `cdnbbsr.s3waas.gov.in` (the official NTA, UGC and NIC hosts), so later sessions can read the bulletins. `ugc.gov.in` still resets the connection and `www.ugcnetonline.in` is not on the list.
+- Build clean; internal link check clean (only the `/go/*` redirects, which are Cloudflare rules); browser check at 1440, 768 and 375px: no overflow, no console errors, footer present.
 
 ## "Arrange for" buttons removed (2026-11-12)
 
