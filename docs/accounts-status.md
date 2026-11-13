@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-13 (Elizabethan Set 1 is a free set, easy and medium, on the feature branch, not on main yet. Early Tudor Set 1 went to main on 2026-11-12, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61. On main already: the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/` and `validate_mcq.py --strict`, Age of Chaucer Set 1 at easy and medium level, the "Questions and time" chooser on every MCQ set page, and the MCQ plan for the other 18 ages.)_
+_Last updated: 2026-11-13 (Jacobean Set 1 is prepared as a free, no-login set at easy and medium level. Elizabethan Set 1 and the admin area have reached main. Earlier sections below record their status when each change was made.)_
+
+## Jacobean Set 1 — free, easy and medium (2026-11-13)
+
+- The owner supplied `jacobean-set-1-easy.json` and `-medium.json` (50 questions each), named the existing "Across the whole age" slot, chose **free, no login**, and said the questions are already verified. Facts and near-duplicates were not rechecked. Strict structure validation passed with no errors or warnings: 50 unique questions per level, four options per question, valid answers and taxonomy tags.
+- Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Jacobean moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 to 4 remain Coming soon.
+- Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All internal links and assets on the MCQ index, hub, set, review, build and custom pages resolved.
 
 ## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
 
