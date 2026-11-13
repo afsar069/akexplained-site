@@ -1,0 +1,101 @@
+---
+permalink: /admin/upload-paper/index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Upload a paper | AK Explained</title>
+<meta name="description" content="Owner-only page for adding a login-only question paper.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">U</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>Upload a paper</h1>
+    <p class="lede">Add a login-only question paper from its file. The questions go straight into the database, never into the website's files.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+
+  <div id="upNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+
+  <div id="upBody" hidden>
+
+    <div class="authcard">
+      <h2>1. Choose the question file</h2>
+      <div class="formerror" id="upFileError" role="alert" hidden></div>
+      <label class="field">
+        <span>Question file (.json)</span>
+        <input id="upFiles" type="file" accept=".json,application/json" multiple>
+        <span class="hint">One file for each level. A mock test has one file. An MCQ set with an easy and a medium level has two.</span>
+      </label>
+      <ul class="uprep" id="upReport"></ul>
+    </div>
+
+    <div class="authcard" id="upDetails" hidden>
+      <h2>2. Name it</h2>
+      <label class="field">
+        <span>Title</span>
+        <input id="upTitle" type="text" autocomplete="off">
+        <span class="hint">The name students see on the hub card, for example Mock Test 4. It is taken from the file; change it if you want.</span>
+      </label>
+      <label class="field">
+        <span>Category</span>
+        <select id="upExam">
+          <option value="">Choose one&hellip;</option>
+          {%- for c in paperCategories %}
+          <option value="{{ c.value }}" data-exam="{{ c.examId or '' }}">{{ c.label }}</option>
+          {%- endfor %}
+        </select>
+        <span class="hint">Only exams and sections that already have a page on the site are listed. Pick &ldquo;English Literature MCQ set&rdquo; for a set that is not for one exam.</span>
+      </label>
+      <label class="field">
+        <span>Status</span>
+        <select id="upStatus">
+          <option value="draft" selected>Draft &mdash; only you can see it</option>
+          <option value="live">Live &mdash; logged-in students can take it</option>
+        </select>
+        <span class="hint">Leave it on Draft until the pages for it are ready. You can make it live later.</span>
+      </label>
+    </div>
+
+    <div class="authcard" id="upGo" hidden>
+      <h2>3. Upload</h2>
+      <div class="formerror" id="upError" role="alert" hidden></div>
+      <p class="small" id="upSummary"></p>
+      <button class="btn" id="upButton" type="button">Upload this paper</button>
+    </div>
+
+    <div class="authcard" id="upDone" hidden>
+      <h2>Done</h2>
+      <ul class="uprep" id="upDoneReport"></ul>
+      <p class="small">Keep your own copy of the file. The database is the only copy now &mdash; the file is not saved anywhere on the website.</p>
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/upload-paper.js" defer></script>
+</body>
+</html>

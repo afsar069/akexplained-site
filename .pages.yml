@@ -86,7 +86,7 @@ content:
     exclude:
       - 404.html
       - robots.txt
-      - sitemap.xml
+      - sitemap.njk
       - _redirects
       - .pages.yml
       - .gitignore
@@ -108,7 +108,7 @@ content:
   - name: sitemap
     label: Sitemap
     type: file
-    path: sitemap.xml
+    path: sitemap.njk
     format: code
 
   - name: robots

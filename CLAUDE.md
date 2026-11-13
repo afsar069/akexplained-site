@@ -23,13 +23,15 @@ breaking it breaks a promise already made.
 - Other `*/index.html` — hub and utility pages, standalone HTML
 - `exams/net/` — preparation hub and related pages use Nunjucks (`index.njk`, `about/`, `syllabus/`, and `coming-soon.njk`), with `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, and `_data/netResources.json`. The two information pages are available; the other NET hub resources are coming soon. Do not create `exams/net/index.html` alongside its template.
 - `exams/pgt/` — exam hub in `index.njk`, with `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`, `assets/pgt.css` and `_data/pgtExams.json`. Only `/exams/pgt/up-pgt/` is active; the other ten state and three central destinations are non-interactive Coming soon cards. The UP PGT page has five preparation resource cards from `_data/pgtResources.json`. Its MCQ card opens `/exams/pgt/up-pgt/mcqs/`, a six-group day index driven by `_data/pgtMcqDays.js`; each of the 60 day routes is a noindex Coming soon page until questions are supplied. No day has a topic assigned yet; the owner will decide each topic when its questions are uploaded. Its Mock Tests card opens `/exams/pgt/up-pgt/mock-tests/`, a matching six-group index driven by `_data/pgtMockTests.js`; Mock Tests 1–5 are free public CBT papers; Tests 6–10 are login-only CBT papers stored in Supabase with hub locks for guests, while tests 11–60 remain noindex Coming soon pages. Each open test has 90 questions and a review route. The remaining resource destinations use `up-pgt/coming-soon.njk` until real content arrives. The former general English study guide is preserved at `/exams/pgt/up-pgt/study-guide/` and is clearly distinguished from an official UP-specific syllabus. Do not recreate `exams/pgt/index.html` beside the template.
-- `exams/state-psc/` — exam hub in `index.njk` with the UP PGT visual scale, `_includes/state-psc-layout.njk`, `assets/pgt.css` and `assets/state-psc.css`. UP Assistant Professor is its only active exam card. `/exams/state-psc/up-assistant-professor/` has the five owner-specified resource cards from `_data/statePscResources.json`; **Paper 2 English Literature Mock Tests** (`paper-2-mock-tests/`) has Mock Tests 1 to 3, all login-only 100-question CBT papers using `_includes/state-psc-cbt.njk` and separate test/review routes. Questions are the `public.mcq_papers` rows `up-ap-p2-mock-test-1`, `up-ap-p2-mock-test-2` and `up-ap-p2-mock-test-3`, never files in the repo (rule 15). The other four resource cards still open a noindex Coming soon page from `coming-soon.njk` (the list is `_data/statePscComingSoon.js`, which skips any resource marked `"live": true` in `statePscResources.json`) until content is supplied. Do not recreate `exams/state-psc/index.html` beside its template.
+- `exams/state-psc/` — exam hub in `index.njk` with the UP PGT visual scale, `_includes/state-psc-layout.njk`, `assets/pgt.css` and `assets/state-psc.css`. UP Assistant Professor is its only active exam card. `/exams/state-psc/up-assistant-professor/` has the five owner-specified resource cards from `_data/statePscResources.json`; **Paper 2 English Literature Mock Tests** (`paper-2-mock-tests/`) has Mock Tests 1 to 3, all login-only 100-question CBT papers using `_includes/state-psc-cbt.njk`. Its hub cards, the `test.njk` and `review.njk` routes and its `sitemap.njk` lines are all **generated** from `_data/statePscMockTests.js`, which reads the live rows of `_data/paperCatalog.json` (the paper catalog, rule 15) — do not hand-write `test-N.njk` or `review-N.njk` here again. Questions are `public.mcq_papers` rows (`up-ap-p2-mock-test-N`), never files in the repo (rule 15). The other four resource cards still open a noindex Coming soon page from `coming-soon.njk` (the list is `_data/statePscComingSoon.js`, which skips any resource marked `"live": true` in `statePscResources.json`) until content is supplied. Do not recreate `exams/state-psc/index.html` beside its template.
 - `quizzes/mcq/<age>/…` (hub, `build/`, `custom/`, `set-<n>/`) is **generated**, not hand-written:
   templates in `quizzes/mcq/_templates/` and `_includes/mcq-page.njk`, data in `_data/mcqSpec.json`
   (see rule 7). Change the template or the registry, never a generated page.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
+- `admin/upload-paper/index.njk` + `assets/upload-paper.js` — the owner-only page for uploading a login paper (rule 15). Noindex, in no menu and in no sitemap, and it shows nothing but "You are not allowed to use this page." to everyone except the logins listed in `public.paper_admins`.
+- `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, page-head motif and `nav.js` into every built page
@@ -143,7 +145,7 @@ The goal is to get the reader into a quiz in as few taps as possible. Start must
 3. Genuinely new questions for another period: copy the Anglo-Saxon hub page and change only the period's
    words (title, meta, banner line and colour from `_data/mcqSpec.json`, notes link, the two level lines,
    the "It covers" line from the real questions, `data-bank`, `data-src`), add the pair of files, open the
-   card on the Daily page ("Start Quiz →"), add the page to `sitemap.xml`. Anglo-Norman was done this way.
+   card on the Daily page ("Start Quiz →"), add the page to `sitemap.njk` (it builds `/sitemap.xml`). Anglo-Norman was done this way.
    Keep the supplied text as it is. If words look damaged (for example a lost apostrophe, "Wit s"),
    list them for the owner, and fix only if they say so.
    When the owner then says to fix or check a flagged question: verify it with a reliable source (web
@@ -186,6 +188,11 @@ Claude writes the SQL and gives click-by-click steps (SQL Editor → New query �
 "Success. No rows returned."), pointing to the file's GitHub **raw** link and the copy button rather than
 pasting hundreds of lines into chat. To confirm row counts use `select count(*)` — the dashboard table
 view only shows 100 rows at a time, so hand-counting misleads.
+
+**A login paper does not need SQL any more** (2026-11-12). The owner uploads the question file at
+`/admin/upload-paper/` with their own login, and the database checks it (rule 15). Prefer that over writing a
+load SQL: it is fewer steps for everyone and no 90 KB of SQL moves through chat. Claude still does the rest —
+the registry row, the pages, `tools/sync_catalog.py`, the build and the push.
 
 ## 10. Accounts and the database (Supabase)
 User accounts are **live**. Backend is a Supabase project; the browser talks to it with
@@ -256,7 +263,7 @@ and never ask the owner for it.**
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
   new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
-- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15), `exams`, `topics`, `exam_topics`,
+- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15; it has a `status` column, `draft` or `live`), `paper_admins` (who may upload a paper), `paper_catalog` (a paper's public metadata, no questions), `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
   reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
 - Migrations live in `supabase/migrations/` (ordered, run once by the owner). Each is one
@@ -416,7 +423,32 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   chosen; never invent a fee or a limit (rule 14). The "no paid tier" lines in `/terms/` and `/contact/`, and
   the About line, change in the same commit that makes paid real. Moving a set login → paid later is one
   UPDATE of `access` plus the registry label. Paid → free is never done silently: it publishes the questions.
-- **Publishing a login set** (instead of rule 7 steps 3 to 6). The question files stay in the session's scratchpad.
+- **The upload page** (`/admin/upload-paper/`, built 2026-11-12) is the normal way to get a login paper in.
+  The owner picks the file(s), a Title, a Category and Draft or Live, and the browser writes the rows itself with
+  the publishable key and the owner's login. There is **no service key and no Edge Function** (owner's decision).
+  - Who may write: a row in `public.paper_admins` (added by SQL only, never from a browser). Everyone else —
+    guest or student — sees only "You are not allowed to use this page."
+  - The database is the real gate, not the page's JavaScript: the trigger `mcq_papers_check_body` refuses a paper
+    unless every question has a unique id (in this paper and in every other paper), exactly four different
+    non-empty options, the right option marked 0 to 3, an explanation, a real `topicId` and, when given, a real
+    `periodId`; it refuses a question already in another paper, anything but `access = 'login'`, a body that names
+    another set, level or rev, and a rev that goes backwards. Its messages are plain English and the page shows
+    them as they are.
+  - `mcq_papers.status` is `draft` (only an admin can read it) or `live` (students can). New uploads default to
+    draft; everything loaded before 2026-11-12 is live.
+  - `public.paper_catalog` keeps each paper's public metadata (title, exam, kind, number, question count, status)
+    in step by trigger — **no questions**. `tools/sync_catalog.py` copies the live rows into
+    `_data/paperCatalog.json`, and the pages are built from that (rule 3: the UP AP mock tests already are).
+    Hub pages stay static; nothing is fetched from Supabase when a page is viewed.
+  - Category comes from `_data/paperCategories.js` (which stops the build if a listed hub page is missing): the
+    exams with an open hub (UGC NET, UP PGT, UP Assistant Professor), plus **English Literature MCQ set (no exam)**
+    for a login MCQ set under `/quizzes/mcq/<age>/`. The literature category writes no `examId` (so
+    `paper_catalog.exam_id` stays null, like the login MCQ sets loaded before this tool). TGT is not offered: it
+    has no page yet.
+  - Changing a live paper: upload it again with a **raised rev**. Nobody can delete a paper from a browser
+    (no DELETE grant, no DELETE policy); hide it by setting `status = 'draft'`.
+- **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of
+  rule 7 steps 3 to 6). The question files stay in the session's scratchpad.
   1. `validate_mcq.py` on them (rule 7 steps 1 and 2), as for any set.
   2. `_data/mcqSpec.json`: the set gets `"access": "login"`, `"rev": <n>` (the registry carries rev, because there
      is no file to read it from), `count`, `levels`, `titleCase`, `lede` (the owner supplies the words), `"live": true`.

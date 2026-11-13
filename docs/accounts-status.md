@@ -4,7 +4,95 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-12 (UP Assistant Professor Paper 2 Mock Test 3 is a login-only CBT paper, loaded into `public.mcq_papers` and merged to main on the owner's word. Early Tudor Set 1 went to main as PR #63, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61. On main already: the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/` and `validate_mcq.py --strict`, Age of Chaucer Set 1 at easy and medium level, the "Questions and time" chooser on every MCQ set page, and the MCQ plan for the other 18 ages.)_
+_Last updated: 2026-11-12 (the owner-only **upload a paper** page is on the branch `claude/upload-paper-tool`, not yet merged; its database half IS live. Before that: UP Assistant Professor Paper 2 Mock Test 3 as a login CBT paper on main; Early Tudor Set 1 as PR #63, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61; the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/`, Age of Chaucer Set 1, and the "Questions and time" chooser on every MCQ set page.)_
+
+## Upload a paper — the owner-only tool (2026-11-12, branch `claude/upload-paper-tool`)
+
+**Why:** a login paper used to be loaded by pasting a load SQL through the connector. Mock Test 3 was about
+90 KB of SQL, read and pasted twice, and one wrong `set_id` in a WHERE clause cost a redo. The owner asked for
+a page instead: no Edge Function, no service key, the browser writes with the publishable key and the owner's
+own login, and the **database** decides who may write and whether the paper is sound.
+
+**Live in the database already** (migration `supabase/migrations/20261112130000_paper_upload_admin.sql`, applied
+2026-11-12 through the connector; the two function bodies on the live project are byte-identical (md5) to the
+ones the repo file creates):
+- `public.paper_admins (user_id → auth.users on delete cascade, added_at)`. RLS on; the only policy lets a user
+  read **their own** row, which is how the page answers "am I allowed?". No insert / update / delete policy and
+  no such grant: a row is added by SQL only. **The table is still EMPTY** — see "What is pending".
+- `mcq_papers.status` — `draft` or `live`. Added with default `live`, so all 15 papers that were already loaded
+  stayed live; the default is now `draft`, so a new upload is hidden until it is made live.
+- Policies on `mcq_papers`: `mcq_papers_login_read` is now `access = 'login' AND status = 'live'` (students);
+  `mcq_papers_admin_read` (all rows), `mcq_papers_admin_insert` and `mcq_papers_admin_update` (both demand an
+  admin **and** `access = 'login'`). Grants: `authenticated` has SELECT, INSERT, UPDATE; `anon` has nothing.
+  **No DELETE grant and no DELETE policy anywhere** in this work.
+- Trigger `mcq_papers_check_body` (BEFORE INSERT OR UPDATE, SECURITY **INVOKER**, `search_path = ''`, EXECUTE
+  revoked): refuses a paper unless every question has a non-empty id unique in this paper and across every other
+  paper, a stem that is not already in another paper, exactly four different non-empty string options, a
+  `correct_option_id` that is a whole number 0–3, an explanation, a `topicId` that exists in `topics` and (when
+  given) a `periodId` whose node is `kind = period`; and unless the body names the same set, level and rev as the
+  row, the access is `login`, the exam (if given) is a real `exams` row, the kind is `mock-test` or `mcq-set`, and
+  the rev does not go backwards. A change to nothing but `status` does **not** re-read the body, so an old paper is
+  never re-judged by a newer rule.
+- `public.paper_catalog (set_id, title, exam_id → exams, kind, number, question_count, status, updated_at)` —
+  **metadata only, no questions.** Kept in step by the AFTER trigger `mcq_papers_sync_catalog` (also INVOKER).
+  Everyone may read the `status = 'live'` rows (those titles are already on the hub pages); an admin reads and
+  writes all. `question_count` adds the levels together; `status` is `live` only when every level is live.
+  `exam_id` falls back to what the catalog already holds, because the papers loaded before this tool carry no
+  `examId` in their body.
+- Backfill: 12 catalog rows for the 15 existing papers. Titles, numbers and counts were **read from the papers
+  themselves** (`body -> setName` / `setNumber`), so nothing was invented; only the exam was named by hand, from
+  the page each paper sits on (`up-ap-p2-*` → `state-psc`, `up-pgt-*` → `pgt`, the four literature sets → none).
+
+**Tested before it was applied** (throwaway Postgres 16 under `/var/tmp`, roles `anon` / `authenticated`,
+`request.jwt.claims`, the real `mcq_papers` migration first): the migration runs twice with no error; a guest
+reads nothing and cannot write; a student reads live login papers only, cannot see a draft, cannot insert or
+update (RLS), cannot delete (no grant); an admin inserts and updates and flips the status, and still cannot
+delete, cannot write `access = 'paid'`, and cannot add anyone to `paper_admins`; the catalog row follows every
+write; and the trigger rejected all 17 broken papers tried, each with its own plain-English message. On the live
+project afterwards: all 15 papers are live, a signed-in student still reads all 15 (UP AP Tests 1–3 included) and
+no draft, a logged-out visitor is refused outright, a dry run (rewrite every body, then roll back) proved all 15
+existing papers pass the new checks unchanged, and the security advisors show the **same two** older warnings and
+nothing new.
+
+**The page** `/admin/upload-paper/` (`admin/upload-paper/index.njk` + `assets/upload-paper.js`): noindex, in no
+menu and in no sitemap. A guest or an ordinary student sees only "You are not allowed to use this page." The
+owner gets a file picker (one file per level, up to three), Title, Category and Status (**Draft** by default).
+It reads the file and reports in simple English: count, level, rev, the tags checked against the live `topics`
+table, whether the set is already there and at what rev, which levels are not being replaced, and a warning
+before a live set is turned into a draft. A broken file cannot be uploaded at all. After the upload it reads the
+rows back and shows a short code per level, computed over ids, questions, options, answers, reasons and tags, from
+the file and from the database — matching codes prove the database holds exactly the file. The Category list comes
+from `_data/paperCategories.js`, which **stops the build** if a listed exam's hub page is missing (today: UGC NET,
+UP PGT, UP Assistant Professor, and "English Literature MCQ set (no exam)" for a login MCQ set under
+`/quizzes/mcq/<age>/`, added 2026-11-13 — it writes no `examId`; TGT is not offered because it has no page).
+**Browser test: 61 checks, all passing** (Playwright, Supabase mocked, guest / student / owner; broken file, file
+that is not JSON, same rev, higher rev, unknown tag, two levels at once, a database refusal shown as it is, and no
+sideways scroll at 375px).
+
+**Pages built from the catalog.** `tools/sync_catalog.py` turns the live catalog rows into
+`_data/paperCatalog.json` (it refuses a file carrying question text). `_data/statePscMockTests.js` turns those
+into the UP Assistant Professor mock tests, and the hub cards, the `test.njk` and `review.njk` routes and the
+`sitemap.njk` lines now all come from it — the six hand-written `test-N.njk` / `review-N.njk` files are gone, and
+`sitemap.xml` became `sitemap.njk` (`.pages.yml` updated, Pages CMS still edits it as "Sitemap"). **Proof: the
+built `_site` is byte-identical before and after the change, sitemap included.** Adding one catalog row for a
+Mock Test 4 then produced its test page, its review page (noindex, right canonical), the hub card, the sitemap
+line and the new meta description, with no page edited; that row was removed again. UP PGT and UGC NET were left
+on their own data files for now, as the owner's brief allows.
+
+**/privacy/ and /terms/ need no change**: `paper_admins` holds one user id (the owner's), and `paper_catalog`
+holds titles that the hub pages already show. Nothing new is collected about a student.
+
+**The allow list** `paper_admins` has **one row**: the owner's own account, added 2026-11-12 after the owner
+named it (one INSERT by SQL, selected by email from `auth.users`; no email and no id is in the repo, rule 2).
+Checked as that account: it sees its own allow-list row, reads all 15 papers, and a test upload was accepted
+and then rolled back, so nothing was kept (`select count(*)` after: 15 papers, all live, no probe row).
+
+**What is pending**
+1. Merge to `main` — the owner said on 2026-11-12 to **keep it on the branch for now**, so the page is NOT on
+   akexplained.com yet. The database half is live either way. Merge when the owner asks (rule 5).
+2. First real use: do the owner's next paper together, on the page.
+3. Later, if wanted: UP PGT and UGC NET pages from the same catalog, and a "make it live / make it draft"
+   switch on the page (today a re-upload at a higher rev sets the status).
 
 ## UP Assistant Professor, Paper 2 Mock Test 3 — login CBT paper (2026-11-12)
 

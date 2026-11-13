@@ -63,7 +63,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("404.html");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("robots.txt");
-  eleventyConfig.addPassthroughCopy("sitemap.xml");
 
   // Purane pages ka header/footer nikaal kar base.njk wala naya laga do
   eleventyConfig.addTransform("syncChrome", function (content) {
