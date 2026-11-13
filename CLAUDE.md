@@ -76,6 +76,11 @@ session cannot open akexplained.com (rule 14), so give the owner the live links 
 - Honest limit: "Confirm email" is ON (rule 10), so a review needs an email the student has opened or a Google
   account; that is a real wall, but not a perfect one. The one-per-user rule and easy removal are the net. `/privacy/` states what a review stores and that it
   is public — keep it true in the same commit as any change here (rule 10).
+- **Long reviews are cut at 12 lines** (owner, 2026-11-13): on the home carousel a review that needs more than 12 lines
+  shows 12 lines and a round "+" button under the text; the button opens the whole review (it turns into a "−") and a
+  second tap closes it. A review that fits in 12 lines gets no button. It is CSS `.txt.clamp` plus `markClamps()` in
+  `assets/home.js` (the line count is measured, so it follows the screen width). While any review is open the carousel does
+  not auto-advance. Keep this working when the review card is touched.
 - The old static `assets/reviews.json` + Pages CMS "Student Reviews" collection were retired when this
   shipped (they no longer feed the home page).
 

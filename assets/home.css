@@ -249,8 +249,24 @@
 .rvcard .stars{color:var(--gold);letter-spacing:.14em;font-size:.95rem;margin:0}
 .rvcard .stars .off{color:#DCD6C2}
 .rvcard .rvhead{font-family:var(--serif);font-size:1rem;line-height:1.35;color:var(--ink);margin:0}
-.rvcard .txt{font-family:var(--serif);color:var(--ink);font-size:.94rem;margin:0;flex:1}
-.rvcard .who{display:flex;align-items:center;gap:11px;margin-top:4px}
+.rvcard .txt{font-family:var(--serif);color:var(--ink);font-size:.94rem;line-height:1.55;margin:0;flex:0 0 auto}
+/* Lamba review: sirf 12 line dikhti hain, baaki "+" dabane par khulti hai (home.js). */
+.rvcard .txt.clamp{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:12;line-clamp:12;overflow:hidden}
+.rvcard.open .txt.clamp{display:block;overflow:visible;-webkit-line-clamp:none;line-clamp:none}
+.rvmore{
+  align-self:center;flex:none;width:30px;height:30px;padding:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:#fff;border:1px solid var(--card-line);color:var(--teal);
+  transition:background .2s,color .2s,border-color .2s,box-shadow .2s;
+}
+.rvmore[hidden]{display:none}
+.rvmore:hover,.rvmore:focus-visible{background:var(--teal);border-color:var(--teal);color:#fff}
+.rvmore:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.rvmore svg{display:block}
+.rvmore .v{transform-box:fill-box;transform-origin:center;transition:transform .2s}
+.rvcard.open .rvmore .v{transform:scaleY(0)}
+@media(prefers-reduced-motion:reduce){.rvmore .v{transition:none}}
+.rvcard .who{display:flex;align-items:center;gap:11px;margin-top:auto;padding-top:4px}
 .rvcard .face{width:46px;height:46px;border-radius:50%;object-fit:cover;border:2px solid #fff;box-shadow:0 3px 10px rgba(22,48,74,.16);flex:none}
 .rvcard .who b{display:block;color:var(--ink);font-size:.92rem}
 .rvcard .who i{font-style:normal;font-size:.8rem;color:var(--teal)}

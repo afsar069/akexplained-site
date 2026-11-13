@@ -443,7 +443,13 @@
       return '<div class="rvcard">' +
              '<p class="stars">' + stars + '</p>' +
              (r.heading ? '<h3 class="rvhead">' + esc(r.heading) + '</h3>' : '') +
-             '<p class="txt">\u201C' + esc(r.text) + '\u201D</p>' +
+             '<p class="txt clamp">\u201C' + esc(r.text) + '\u201D</p>' +
+             // "+" tab dikhta hai jab text 12 line se lamba ho (markClamps neeche).
+             '<button class="rvmore" type="button" hidden aria-expanded="false" ' +
+             'aria-label="Read the full review" title="Read the full review">' +
+             '<svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" ' +
+             'stroke-width="2" stroke-linecap="round" aria-hidden="true">' +
+             '<path d="M2.5 8h11"/><path class="v" d="M8 2.5v11"/></svg></button>' +
              '<div class="who">' +
              '<img class="face" src="' + photo + '" alt="" width="46" height="46" loading="lazy">' +
              '<span><b>' + esc(r.name) + '</b>' + (r.role ? '<i>' + esc(r.role) + '</i>' : '') + '</span>' +
@@ -458,6 +464,8 @@
 
     let at = 0;
     let timer = null;
+    const moves = reviews.length > perView();
+    const slow = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     function maxAt() { return Math.max(0, reviews.length - perView()); }
 
@@ -471,22 +479,83 @@
 
     function go(n) { at = n < 0 ? maxAt() : (n > maxAt() ? 0 : n); show(); }
 
+    // Koi review khula ho to carousel aage nahi badhna chahiye (padhne wale ke saamne se
+    // card na hat jaye). Phone par hover nahi hota, isliye ye zaruri hai.
+    function anyOpen() { return !!track.querySelector('.rvcard.open'); }
+    // Mouse wale device par hover me carousel ruka rehta hai; touch par "hover" chipak
+    // jata hai, isliye wahan band karte hi carousel phir chalna chahiye.
+    const canHover = window.matchMedia('(hover: hover)').matches;
+    function start() {
+      clearInterval(timer);
+      if (!moves || slow || anyOpen()) return;
+      if (canHover && wrapEl.matches(':hover')) return;
+      timer = setInterval(function () { go(at + 1); }, 7000);
+    }
+    function rest() { clearInterval(timer); start(); }
+
     // Arrows and auto-advance only pay their way once the row actually overflows.
-    if (reviews.length > perView()) {
+    if (moves) {
       prev.hidden = next.hidden = false;
       prev.addEventListener('click', function () { go(at - 1); rest(); });
       next.addEventListener('click', function () { go(at + 1); rest(); });
-
-      const slow = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      function start() { if (!slow) timer = setInterval(function () { go(at + 1); }, 7000); }
-      function rest() { clearInterval(timer); start(); }
       wrapEl.addEventListener('mouseenter', function () { clearInterval(timer); });
       wrapEl.addEventListener('mouseleave', start);
-      start();
     }
 
-    window.addEventListener('resize', show);
+    /* ---- Lamba review: 12 line tak dikhao, "+" se poora kholo ---- */
+    // Text sach me 12 line se lamba hai ya nahi, ye naapte hain (width ke saath
+    // line count badalta hai, isliye resize par dobara).
+    function markClamps() {
+      track.querySelectorAll('.rvcard:not(.placeholder)').forEach(function (card) {
+        const p = card.querySelector('.txt');
+        const btn = card.querySelector('.rvmore');
+        if (!p || !btn || card.classList.contains('open')) return;
+        const lh = parseFloat(getComputedStyle(p).lineHeight) ||
+                   parseFloat(getComputedStyle(p).fontSize) * 1.55;
+        p.classList.remove('clamp');
+        const full = p.offsetHeight;
+        p.classList.add('clamp');
+        btn.hidden = full <= lh * 12 + 2;
+      });
+    }
+
+    track.addEventListener('click', function (e) {
+      const btn = e.target.closest ? e.target.closest('.rvmore') : null;
+      if (!btn) return;
+      const card = btn.closest('.rvcard');
+      const open = !card.classList.contains('open');
+      card.classList.toggle('open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const label = open ? 'Show less' : 'Read the full review';
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+      if (open) clearInterval(timer); else start();
+      // Band karne par, agar card ka upar ka hissa screen se bahar chala gaya, wapas laao.
+      if (!open) {
+        const top = card.getBoundingClientRect().top;
+        if (top < 0) card.scrollIntoView({ block: 'nearest', behavior: slow ? 'auto' : 'smooth' });
+      }
+    });
+
+    // Keyboard (Tab) se kisi doosre card ke "+" par jaane par browser band hisse ko
+    // andar khinch leta hai; carousel ko usi card par laao aur khinchav hata do.
+    track.addEventListener('focusin', function (e) {
+      clearInterval(timer);
+      wrapEl.scrollLeft = 0;
+      const cards = Array.prototype.slice.call(track.querySelectorAll('.rvcard'));
+      const idx = cards.indexOf(e.target.closest('.rvcard'));
+      if (idx < 0) return;
+      if (idx < at) go(idx);
+      else if (idx >= at + perView()) go(Math.min(idx - perView() + 1, maxAt()));
+    });
+    track.addEventListener('focusout', start);
+
+    window.addEventListener('resize', function () { show(); markClamps(); });
     show();
+    markClamps();
+    // Font aane ke baad line count badal sakta hai.
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(markClamps);
+    start();
   }
 
   function loadReviews() {
