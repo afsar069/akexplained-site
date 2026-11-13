@@ -1,0 +1,873 @@
+{
+  "setId": "caroline-set-1",
+  "rev": 1,
+  "age": "caroline",
+  "ageName": "Caroline Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/jacobean-and-caroline-age/",
+  "notesTitle": "Jacobean and Caroline — the full notes",
+  "topics": {
+    "ground": "Charles I and the Civil War",
+    "poetry": "Cavalier & devotional poetry",
+    "drama": "Drama before 1642 closure",
+    "prose": "Browne, Hobbes and prose",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Exam-grade direct and complex questions across Caroline poetry, drama before 1642, Milton's early works, and prose.",
+  "questions": [
+    {
+      "id": "caroline-set-1-m-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "caroline",
+      "periodId": "caroline",
+      "question": "Which prayer from Sir Philip Sidney's pastoral romance Arcadia ('O All-seeing Light') did King Charles I repeat in his final hours before facing execution on the scaffold in 1649—an act later attacked by John Milton in Eikonoklastes?",
+      "options": [
+        "The captive Princess Pamela's prayer in prison",
+        "Redcrosse Knight's prayer from The Faerie Queene",
+        "Prospero's epilogue from The Tempest",
+        "Doctor Faustus's final soliloquy at midnight"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Facing death on the scaffold in 1649, King Charles I used the prayer spoken by the captive Princess Pamela ('O All-seeing Light') from Sir Philip Sidney's Arcadia—a borrowing that Milton mocked in Eikonoklastes (1649).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Why did John Milton cut short his fifteen-month grand tour of France and Italy in 1638–1639 and abandon his planned journey to Greece and Sicily?",
+      "options": [
+        "He was appointed Poet Laureate by Charles I to stage court masques at Whitehall",
+        "He heard of civil strife at home and refused to travel while countrymen fought for liberty",
+        "He lost his eyesight completely while visiting the Vatican Library in Rome",
+        "He was arrested by the Spanish Armada off the coast of Naples"
+      ],
+      "correct_option_id": 1,
+      "explanation": "After fifteen months in France and Italy, Milton abandoned his trip to Greece upon hearing of the struggle between King and Parliament, saying he 'thought it base to be traveling at my ease for culture when my countrymen at home were fighting for liberty'.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "To which close boyhood friend from St. Paul's School—an Anglo-Italian physician who died in August 1638 while Milton was in Italy—did John Milton address his first Latin elegy (Elegia Prima, 1626) and the Latin pastoral elegy Epitaphium Damonis (1639)?",
+      "options": [
+        "Henry Lawes",
+        "Edward King",
+        "Charles Diodati",
+        "Cyriack Skinner"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charles Diodati, son of an Italian Protestant physician in London, was John Milton's closest friend from St. Paul's School; Milton addressed Elegia Prima (1626) and Elegia Sexta (1629) to him and mourned his death in the Latin pastoral elegy Epitaphium Damonis (1639).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "richard-lovelace",
+      "periodId": "caroline",
+      "question": "In April 1642 the Cavalier poet Richard Lovelace was imprisoned by the Long Parliament in the Gatehouse Prison at Westminster—where he wrote 'To Althea, from Prison'—for presenting which Royalist petition to the House of Commons?",
+      "options": [
+        "The Humble Petition and Advice offering Oliver Cromwell the crown",
+        "The Grand Remonstrance demanding the abolition of all bishops",
+        "The Root and Branch Petition calling for Presbyterian church government",
+        "The Kentish Petition seeking the restoration of the King's authority and the Anglican liturgy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Chosen by the Royalist gentry of Kent to present the pro-episcopal and pro-Royalist Kentish Petition to the House of Commons in April 1642, Richard Lovelace was confined for seven weeks in the Gatehouse Prison at Westminster, where he composed 'To Althea, from Prison'.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-prynne",
+      "periodId": "caroline",
+      "question": "Which Puritan lawyer and pamphleteer published the thousand-page encyclopedia of stage denunciations titled Histriomastix: The Player's Scourge, or Actor's Tragedy (1632/1633), for which the Star Chamber had his ears cropped because an entry on 'women actors' was deemed an insult to Queen Henrietta Maria?",
+      "options": [
+        "William Prynne",
+        "Stephen Gosson",
+        "Jeremy Collier",
+        "John Stubbs"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Histriomastix (dated 1633, issued late 1632), the Puritan lawyer William Prynne condemned stage plays, masques, dancing, and female performers ('women actors, notorious whores') just as Queen Henrietta Maria was rehearsing Walter Montagu's pastoral The Shepherd's Paradise, leading to Prynne's prosecution by the Star Chamber.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-06",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "caroline",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe the political and religious conflict of the Caroline Age (1625–1649)?\n(A) The central struggle of Charles I's reign pitted the Royalists (Cavaliers), who upheld the monarch and the divine right of kings, against the Parliamentarians and Puritans (Roundheads).\n(B) In 1642 the English Civil War broke out and the Puritan-controlled Parliament ordered the public playhouses closed as 'evil and degrading places'.\n(C) In January 1649 King Charles I was tried for high treason and beheaded at Whitehall, ushering in the Commonwealth.\n(D) Throughout his twenty-four-year reign, Charles I abolished the Anglican episcopacy and ruled as a strict Calvinist elder in alliance with John Bunyan.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because Charles I and Archbishop William Laud enforced High Church Anglican episcopacy and ceremony against the Puritans, provoking the Scottish Bishops' Wars and the English Civil War.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-07",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe John Milton's life and works up to 1649?\n(A) Born in London in 1608, Milton was educated at St. Paul's School and Christ's College, Cambridge, where he wrote 'On the Morning of Christ's Nativity' in 1629.\n(B) During his Horton retirement (1632–1638) he composed 'L'Allegro', 'Il Penseroso', 'Arcades', Comus, and Lycidas, before travelling in France and Italy.\n(C) During the 1640s he published anti-prelatical tracts, four divorce tracts, Of Education, Areopagitica (1644), and The Tenure of Kings and Magistrates (1649).\n(D) In 1642 Milton joined the Royalist cavalry of King Charles I and wrote Hesperides in praise of Queen Henrietta Maria.",
+      "options": [
+        "B, C and D only",
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (D) is false because Milton championed the Parliamentary and Republican cause throughout the 1640s, while Hesperides (1648) was written by the Royalist Cavalier poet Robert Herrick.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-08",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Arrange the following early poems and masques of John Milton in chronological order of their composition or first performance:\n(A) 'On the Morning of Christ's Nativity' (composed at Cambridge)\n(B) 'On Shakespeare' (sixteen-line epitaph composed for the Second Folio)\n(C) A Mask Presented at Ludlow Castle (Comus, performed before the Earl of Bridgewater)\n(D) Lycidas (pastoral elegy mourning the drowning of Edward King)",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton composed 'On the Morning of Christ's Nativity' in December 1629 (A), wrote 'On Shakespeare' in 1630 (printed 1632, B), staged Comus at Ludlow Castle in September 1634 (C), and composed Lycidas in November 1637 (printed 1638, D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-09",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "cavalier-poets",
+      "periodId": "caroline",
+      "question": "Match List I (Seventeenth-Century Poet) with List II (Civil War Fortune):\n\nList I (Poet)\n(A) Robert Herrick\n(B) Richard Lovelace\n(C) Sir John Suckling\n(D) Richard Crashaw\n\nList II (Civil War Fortune)\n(I) Vicar of Dean Prior in Devon who was ejected by the Puritans in 1647 and published Hesperides in 1648\n(II) Imprisoned in the Westminster Gatehouse in 1642 and 1648, where he prepared Lucasta for the press\n(III) Royalist courtier who raised a troop of horse for Charles I, fled to France, and died in Paris in 1642\n(IV) Fellow of Peterhouse, Cambridge, who was ejected by Parliamentarians, converted to Catholicism, and died in Italy in 1649",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Herrick was ejected from Dean Prior and published Hesperides in 1648 (A-I), Lovelace was twice imprisoned by Parliament and published Lucasta in 1649 (B-II), Suckling fled to Paris and died in 1642 (C-III), and Crashaw lost his Peterhouse fellowship, converted to Catholicism, and died at Loreto in 1649 (D-IV).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-10",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Match List I (Famous Tribute or Critical Verdict on John Milton) with List II (Poet or Critic):\n\nList I (Tribute or Verdict)\n(A) 'Milton! thou shouldst be living at this hour... Thy soul was like a star, and dwelt apart'\n(B) 'O mighty-mouth'd inventor of harmonies... God-gifted organ-voice of England'\n(C) 'He was a true Poet and of the Devil's party without knowing it'\n(D) 'Compared with Paradise Lost, [Milton's sonnets] are like tender flowers that adorn the base of some proud column'\n\nList II (Poet or Critic)\n(I) William Wordsworth\n(II) Alfred, Lord Tennyson\n(III) William Blake\n(IV) William Hazlitt",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wordsworth wrote 'London, 1802' ('Milton! thou shouldst be living at this hour', A-I), Tennyson called Milton the 'God-gifted organ-voice of England' (B-II), Blake declared him 'of the Devil's party without knowing it' in The Marriage of Heaven and Hell (C-III), and Hazlitt praised his sonnets in 'On Milton's Sonnets' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-11",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "the-temple",
+      "periodId": "caroline",
+      "question": "In which poem from George Herbert's The Temple (1633) does God pour out a glass of blessings upon newly created man—bestowing strength, beauty, wisdom, honour, and pleasure—while withholding 'Rest' at the bottom so that 'weariness / May toss him to my breast'?",
+      "options": [
+        "'The Windows'",
+        "'The Elixir'",
+        "'The Pulley'",
+        "'The Pearl'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In George Herbert's 'The Pulley' (a reworking of the Pandora myth in The Temple, 1633), God withholds the jewel of 'Rest' from His glass of blessings so that man's restless exhaustion will draw ('pull') him back to his Creator.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-12",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "george-herbert",
+      "periodId": "caroline",
+      "question": "Which short lyric in George Herbert's The Temple (1633) opens with the apostrophe 'Sweet day, so cool, so calm, so bright, / The bridal of the earth and sky' and concludes that 'Only a sweet and virtuous soul, / Like season'd timber, never gives'?",
+      "options": [
+        "'Jordan (I)'",
+        "'Redemption'",
+        "'Love (III)'",
+        "'Virtue'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "George Herbert's four-stanza lyric 'Virtue' contrasts the mortality of the sweet day, the angry rose, and the spring with the endurance of a virtuous soul, which 'though the whole world turn to coal, / Then chiefly lives'.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-13",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "george-herbert",
+      "periodId": "caroline",
+      "question": "In which poem from George Herbert's The Temple (1633) does the speaker open with the plea, 'Throw away thy rod, / Throw away thy wrath: / O my God, / Take the gentle path'?",
+      "options": [
+        "'Discipline'",
+        "'Affliction (I)'",
+        "'The Pilgrimage'",
+        "'Bitter-Sweet'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'Discipline' (from The Temple, 1633), George Herbert implores God to lay aside His rod of wrath and 'Take the gentle path', arguing that 'Love will do the deed: / For with love / Stony hearts will bleed'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-14",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "henry-vaughan",
+      "periodId": "caroline",
+      "question": "Which mystical poem by Henry Vaughan in Silex Scintillans (1650)—opening 'Happy those early days! when I / Shin'd in my Angel-infancy'—laments the adult soul's loss of childhood celestial vision and inspired William Wordsworth's Ode: Intimations of Immortality?",
+      "options": [
+        "'Corruption'",
+        "'The Retreat'",
+        "'The Night'",
+        "'Peace'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Henry Vaughan's 'The Retreat' (in Silex Scintillans, 1650) celebrates the pre-existence and heavenly vision of 'Angel-infancy' before the soul's earthly journey, directly influencing Wordsworth's Immortality Ode.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "caroline-set-1-m-15",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "henry-vaughan",
+      "periodId": "caroline",
+      "question": "Which visionary poem by Henry Vaughan in Silex Scintillans (1650) opens with the celebrated lines: 'I saw Eternity the other night / Like a great Ring of pure and endless light, / All calm, as it was bright'?",
+      "options": [
+        "'The Waterfall'",
+        "'Regeneration'",
+        "'The World'",
+        "'The Morning-Watch'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Henry Vaughan's 'The World' opens with the sublime mystical vision 'I saw Eternity the other night / Like a great Ring of pure and endless light', beneath which 'Time in hours, days, years, / Driv'n by the spheres / Like a vast shadow mov'd'.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-16",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "the-temple",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe George Herbert (1593–1633) and his devotional collection The Temple (1633)?\n(A) Herbert described the poems of The Temple as 'a picture of the many spiritual conflicts that have passed betwixt God and my soul, before I could subject mine to the will of Jesus, my Master'.\n(B) Published in 1633 immediately after Herbert's death, The Temple went through eleven editions in its early decades and earned Herbert the title 'the saint of the Metaphysical School'.\n(C) Notable poems in The Temple include the shaped poems 'The Altar' and 'Easter Wings', as well as 'The Collar', 'The Pulley', 'Virtue', 'Discipline', 'Affliction', and 'The Pilgrimage'.\n(D) Herbert wrote The Temple as a collection of bawdy Restoration stage prologues for King Charles II.",
+      "options": [
+        "A, C and D only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statement (D) is false because George Herbert died in 1633—twenty-seven years before the Restoration of Charles II—and The Temple is a collection of sacred Anglican lyrics.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-17",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "lycidas",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe John Milton's pastoral elegy Lycidas (composed 1637, printed 1638)?\n(A) Cast as a pastoral monody in which an 'uncouth swain' mourns his drowned fellow shepherd Lycidas (Edward King), the poem blends classical pastoral conventions with Christian consolation.\n(B) In the stern 'Pilot of the Galilean lake' digression, St. Peter denounces the corrupt, greedy clergy as 'blind mouths' while 'the hungry sheep look up, and are not fed'.\n(C) The poem reflects on poetic ambition—calling Fame 'that last infirmity of noble mind'—and concludes with an eight-line ottava rima stanza ('Tomorrow to fresh woods, and pastures new').\n(D) The poem is written in strict heroic couplets celebrating Archbishop William Laud's persecution of the Puritans.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statement (D) is false because Lycidas is written in irregular rhymed verse paragraphs (not heroic couplets) and fiercely attacks Laud's corrupt episcopal clergy through the voice of St. Peter.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-18",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "lallegro-and-il-penseroso",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately contrast John Milton's companion poems L'Allegro and Il Penseroso (c. 1631)?\n(A) L'Allegro banishes 'loathed Melancholy' and invokes the goddess Mirth ('Euphrosyne'), whereas Il Penseroso banishes 'vain deluding Joys' and welcomes 'divinest Melancholy'.\n(B) L'Allegro celebrates morning larks, country dances, and the stage plays of 'learned Jonson' and 'sweetest Shakespeare, Fancy's child', whereas Il Penseroso celebrates evening twilight, the nightingale ('Philomel'), tragedy, and cloistered study.\n(C) In writing Il Penseroso, Milton's view of pensive melancholy was influenced by Robert Burton's The Anatomy of Melancholy (1621), and William Blake later illustrated both poems.\n(D) L'Allegro is a funeral elegy on the execution of Charles I, while Il Penseroso is a military ode for Oliver Cromwell.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because L'Allegro and Il Penseroso are early Horton lyrics (c. 1631) contrasting the pleasures of the cheerful, sociable man and the pensive, contemplative scholar.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-19",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "metaphysical-poetry",
+      "periodId": "caroline",
+      "question": "Match List I (Seventeenth-Century Poem) with List II (Key Image or Quotation):\n\nList I (Poem)\n(A) Abraham Cowley's 'The Given Heart'\n(B) Richard Crashaw's 'A Song'\n(C) Henry Vaughan's 'They Are All Gone into the World of Light'\n(D) Andrew Marvell's 'A Dialogue Between the Soul and Body'\n\nList II (Key Image or Quotation)\n(I) Compares the lover's heart entering his mistress's breast to 'a granado shot into a magazine'\n(II) 'Still live in me this loving strife / Of living Death and dying Life'\n(III) 'They are all gone into the world of light! / And I alone sit ling'ring here'\n(IV) Debates whether the Soul is a prisoner in a dungeon of bones or a tyrant tormenting the Body",
+      "options": [
+        "A-I, B-III, C-II, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Cowley's 'The Given Heart' compares the heart to a hand grenade ('granado', A-I), Crashaw's 'A Song' celebrates 'living Death and dying Life' (B-II), Vaughan's elegy opens 'They are all gone into the world of light!' (C-III), and Marvell's dialogue pits Soul against Body (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-20",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "to-his-coy-mistress",
+      "periodId": "caroline",
+      "question": "Match List I (Section or Conceit in Andrew Marvell's 'To His Coy Mistress') with List II (Quotation from the Poem):\n\nList I (Section or Conceit)\n(A) Geographical hyperbole of infinite leisure (Stanza 1)\n(B) Botanical conceit of slow, vast courtship (Stanza 1)\n(C) Sudden intrusion of mortality and time (Stanza 2)\n(D) Urgent carpe diem resolution (Stanza 3)\n\nList II (Quotation)\n(I) 'Thou by the Indian Ganges' side / Shouldst rubies find; I by the tide / Of Humber would complain'\n(II) 'My vegetable love should grow / Vaster than empires, and more slow'\n(III) 'But at my back I always hear / Time's wingèd chariot hurrying near'\n(IV) 'Let us roll all our strength and all / Our sweetness up into one ball'",
+      "options": [
+        "A-IV, B-II, C-III, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Stanza 1 pairs the Indian Ganges and Hull's River Humber (A-I) with 'vegetable love' growing vaster than empires (B-II), Stanza 2 introduces 'Time's wingèd chariot hurrying near' (C-III), and Stanza 3 urges rolling 'all our strength and all / Our sweetness up into one ball' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-21",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "philip-massinger",
+      "periodId": "caroline",
+      "question": "Who is the rapacious extortioner and greedy knight in Philip Massinger's comedy A New Way to Pay Old Debts (c. 1625, printed 1633), who ruins his nephew Frank Wellborn and goes mad when his parchment deeds turn blank?",
+      "options": [
+        "Sir Giles Overreach",
+        "Sir Epicure Mammon",
+        "Sir Politic Would-be",
+        "Sir Fopling Flutter"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Modelled on the real-life monopolist Sir Giles Mompesson, the ruthless usurer Sir Giles Overreach is the central villain of Philip Massinger's A New Way to Pay Old Debts, outwitted by his nephew Wellborn and Lord Lovell.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-22",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "In John Milton's masque Comus (1634), which river nymph—the legendary maiden drowned in the River Severn—rises at the song of the Attendant Spirit to sprinkle pure water and free the Lady from Comus's enchanted chair?",
+      "options": [
+        "Arethusa",
+        "Sabrina",
+        "Cymodoce",
+        "Galatea"
+      ],
+      "correct_option_id": 1,
+      "explanation": "When the two brothers drive off Comus but fail to seize his wand to unbind their sister from the marble chair, the Attendant Spirit invokes Sabrina, the virgin goddess of the River Severn, whose touch frees the Lady.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-23",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "In the mythological genealogy invented by John Milton for his masque Comus (1634), who are the parents of the forest enchanter Comus?",
+      "options": [
+        "Pluto (lord of the underworld) and Proserpina",
+        "Apollo (god of music) and the muse Calliope",
+        "Bacchus (Dionysus, god of wine) and the sorceress Circe",
+        "Neptune (god of the sea) and the witch Sycorax"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Comus, Milton makes the reveller Comus the son of Bacchus (Dionysus, god of wine) and Homer's witch Circe, combining his father's drunken revelry with his mother's power to transform humans into beasts.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-24",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "abraham-cowley",
+      "periodId": "caroline",
+      "question": "Which 1641 university comedy by Abraham Cowley—originally acted before Prince Charles at Trinity College, Cambridge—was revised in 1658 and published in 1661 under the title Cutter of Coleman Street?",
+      "options": [
+        "The Captives",
+        "The Rival Ladies",
+        "The Scornful Lady",
+        "The Guardian"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Abraham Cowley wrote the comedy The Guardian for performance before Prince Charles at Trinity College, Cambridge, in 1641, and later reworked it in 1658 into the anti-Puritan comedy Cutter of Coleman Street (published 1661).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-25",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "richard-brome",
+      "periodId": "caroline",
+      "question": "Which Caroline dramatist—who began his career as Ben Jonson's servant before becoming one of the leading 'Sons of Ben'—wrote the comedies The City Wit, The Antipodes, and A Jovial Crew?",
+      "options": [
+        "Richard Brome",
+        "Thomas Heywood",
+        "John Marston",
+        "Cyril Tourneur"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richard Brome (c. 1590–1652), originally Ben Jonson's manservant and later his warm friend and dramatic disciple among the 'Sons of Ben', wrote fifteen Caroline comedies including The Antipodes (1638) and A Jovial Crew (1641).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-26",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe John Milton's masque Comus (1634)?\n(A) Staged at Ludlow Castle before the Earl of Bridgewater with music by Henry Lawes, it starred the Earl's three children.\n(B) Lost in a dark wood, the Lady is captured by the enchanter Comus and his monster-headed rout, but refutes his arguments through chastity.\n(C) Influenced by Peele's Old Wives' Tale, Spenser's Faerie Queene, and Homer's Circe, it ends with the epilogue 'Love Virtue, she alone is free.'\n(D) Comus is a five-act prose farce set in a London tavern where Falstaff debates Oliver Cromwell.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because Comus is a blank-verse and lyric pastoral masque celebrating moral purity and temperance ('Love Virtue, she alone is free'), performed at Ludlow Castle in 1634.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-27",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "james-shirley",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe the Caroline stage and its dramatists between 1625 and 1642?\n(A) James Shirley's tragedy The Cardinal (1641) was written under the direct influence of John Webster's The Duchess of Malfi.\n(B) Sir William Davenant's early tragedy Albovine, King of the Lombards (1629) anticipated the bombastic plots and declamatory style of the later Restoration heroic drama, which Davenant inaugurated in The Siege of Rhodes (1656).\n(C) John Ford's tragedies—including 'Tis Pity She's a Whore, The Broken Heart, and Love's Sacrifice—explored forbidden passions, Burtonian melancholy, and stoic suffering.\n(D) Between 1625 and 1642 all female roles on the public London stage were played exclusively by professional English actresses led by Margaret Hughes.",
+      "options": [
+        "B, C and D only",
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (D) is false because before the reign of Charles II (when Margaret Hughes played Desdemona in December 1660), women's roles on the public London stage were performed by boy actors.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-28",
+      "qtype": "chrono",
+      "topic": "drama",
+      "topicId": "william-davenant",
+      "periodId": "caroline",
+      "question": "Arrange the following seventeenth-century theatrical landmarks in chronological order from earliest to latest:\n(A) Production of Sir William Davenant's first tragedy Albovine, King of the Lombards\n(B) Performance of John Milton's masque Comus before the Earl of Bridgewater at Ludlow Castle\n(C) Licensing and performance of James Shirley's tragedy The Cardinal by the King's Men\n(D) Parliamentary ordinance closing the London public playhouses at the outbreak of the Civil War",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Davenant's Albovine was brought out in 1629 (A), Milton's Comus was performed in September 1634 (B), Shirley's The Cardinal was staged in 1641 (C), and Parliament closed the theatres in September 1642 (D).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-29",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "john-ford",
+      "periodId": "caroline",
+      "question": "Match List I (Caroline Dramatic Work) with List II (Key Plot or Theme):\n\nList I (Dramatic Work)\n(A) John Ford's 'Tis Pity She's a Whore (1633)\n(B) John Ford's The Broken Heart (1633)\n(C) John Ford's The Lover's Melancholy (1629)\n(D) John Milton's Comus (1634)\n\nList II (Key Plot or Theme)\n(I) Incestuous passion of Giovanni and Annabella in Parma, ending with her heart on his dagger\n(II) Spartan tragedy in which Penthea starves herself and Princess Calantha dances through three death reports\n(III) Cyprus play inspired by Burton's Anatomy of Melancholy in which Corax stages a 'Masque of Melancholy'\n(IV) Ludlow Castle masque in which the Lady resists the enchanter's cup and is freed by Sabrina",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'Tis Pity She's a Whore dramatizes Giovanni and Annabella in Parma (A-I), The Broken Heart dramatizes Penthea and Calantha in Sparta (B-II), The Lover's Melancholy adapts Burtonian psychology in Cyprus (C-III), and Comus celebrates the Lady's chastity at Ludlow Castle (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-30",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "caroline",
+      "periodId": "caroline",
+      "question": "Match List I (Critical Judgment on Shakespeare's Successors in the Stuart Drama) with List II (Writer or Critic):\n\nList I (Critical Judgment)\n(A) Regarded Beaumont, Fletcher, and their Stuart fellows as 'an inferior sort of Sidneys and Shakespeares' and edited Specimens of English Dramatic Poets\n(B) Wrote poetically of the Stuart dramatists: 'They stood around / The throne of Shakespeare, sturdy, but unclean'\n(C) Praised them as 'a race of giants, a common and noble brood, of whom Shakespeare was simply the tallest'\n(D) Maintained that 'Shakespeare is not only immeasurably superior to the dramatists of his time, but is utterly unlike them in almost every respect'\n\nList II (Writer or Critic)\n(I) Charles Lamb\n(II) Walter Savage Landor\n(III) William Hazlitt\n(IV) Alexander Dyce",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Lamb called them 'an inferior sort of Sidneys and Shakespeares' (A-I), Landor wrote 'They stood around / The throne of Shakespeare, sturdy, but unclean' (B-II), Hazlitt called them 'a race of giants' (C-III), and Dyce pronounced Shakespeare utterly unlike them (D-IV).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "edmund-spenser",
+      "periodId": "caroline",
+      "question": "In Areopagitica (1644), which earlier English poet does John Milton hail as 'our sage and serious poet... whom I dare be known to think a better teacher than Scotus or Aquinas', citing Sir Guyon's trial in the Cave of Mammon and the Bower of Bliss?",
+      "options": [
+        "John Gower",
+        "Geoffrey Chaucer",
+        "Edmund Spenser",
+        "John Skelton"
+      ],
+      "correct_option_id": 2,
+      "explanation": "To illustrate that true virtue must be tested against temptation rather than kept 'fugitive and cloistered', Milton in Areopagitica calls Edmund Spenser 'our sage and serious poet... a better teacher than Scotus or Aquinas' and cites Book II of The Faerie Queene.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "What polemical acronym—formed from the initials of five Puritan ministers (Stephen Marshall, Edmund Calamy, Thomas Young, Matthew Newcomen, and William Spurstowe)—featured in the controversy defended by John Milton in his 1641–1642 tracts Animadversions and An Apology?",
+      "options": [
+        "Scriblerus",
+        "Martin Marprelate",
+        "Cabal",
+        "Smectymnuus"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1641 five Presbyterian divines—including Milton's former tutor Thomas Young—published an anti-episcopal pamphlet under the acronym 'Smectymnuus' (from their initials S.M., E.C., T.Y., M.N., W.S.), whom Milton defended against Bishop Joseph Hall in Animadversions (1641) and Apology for Smectymnuus (1642).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Which political treatise did John Milton publish in February 1649—immediately after the execution of King Charles I—arguing that sovereigns and rulers derive their authority from the people and may lawfully be deposed or put to death if they turn tyrants?",
+      "options": [
+        "The Tenure of Kings and Magistrates",
+        "Of Prelatical Episcopacy",
+        "Tetrachordon",
+        "Aeropagitica"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Published in February 1649 when Europe was stunned by the execution of Charles I, Milton's The Tenure of Kings and Magistrates argued on natural-law and covenantal grounds that a free people may lawfully try, depose, and execute a tyrant.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Which October 1649 prose tract—whose Greek title means 'The Image-Breaker'—did John Milton write on behalf of the Commonwealth to demolish the royalist cult of the martyred Charles I created by the King's purported book of prayers and meditations, Eikon Basilike?",
+      "options": [
+        "Colasterion",
+        "Eikonoklastes",
+        "Defensio Secunda",
+        "Artis Logicae"
+      ],
+      "correct_option_id": 1,
+      "explanation": "When Eikon Basilike ('The Royal Portrait', 1649) won widespread public sympathy for the executed Charles I as a Christian martyr, Milton answered chapter by chapter with Eikonoklastes ('The Image-Breaker', October 1649).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "izaak-walton",
+      "periodId": "caroline",
+      "question": "Which five seventeenth-century Anglican churchmen and writers are the subjects of Izaak Walton's affectionate biographical collection Lives (published between 1640 and 1678)?",
+      "options": [
+        "William Shakespeare, Christopher Marlowe, John Webster, John Ford, and James Shirley",
+        "Edmund Spenser, Sir Philip Sidney, Sir Walter Raleigh, Francis Bacon, and Ben Jonson",
+        "John Donne, Sir Henry Wotton, Richard Hooker, George Herbert, and Bishop Robert Sanderson",
+        "John Milton, John Bunyan, Andrew Marvell, Samuel Butler, and John Dryden"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Izaak Walton's Lives comprises the biographies of five men of gentle, devout Anglican spirit: John Donne (1640), Sir Henry Wotton (1651), Richard Hooker (1665), George Herbert (1670), and Bishop Robert Sanderson (1678).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-36",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "thomas-browne",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe Sir Thomas Browne (1605–1682) and his prose works?\n(A) A learned physician settled at Norwich, Browne wrote Religio Medici ('Religion of a Physician', printed 1642/1643), a tolerant meditation reconciling Christian faith with scientific curiosity.\n(B) In Pseudodoxia Epidemica (Vulgar Errors, 1646), Browne investigated hundreds of popular legends in natural history, although he himself still accepted the reality of witchcraft.\n(C) In Hydriotaphia, Urne-Buriall (1658), prompted by ancient cremation urns unearthed in Norfolk, Browne composed one of the most musical meditations on mortality and oblivion in English prose.\n(D) Browne wrote in coarse Puritan doggerel rhyme demanding the burning of all medical books and Anglican churches.",
+      "options": [
+        "A, C and D only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statement (D) is false because Sir Thomas Browne was a loyal Royalist and Anglican physician whose ornate, Latinate prose in Religio Medici and Hydriotaphia is celebrated for its charity, serenity, and musical cadence.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-37",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe John Milton's four divorce tracts of 1643–1645?\n(A) The four tracts are The Doctrine and Discipline of Divorce (1643), The Judgement of Martin Bucer Concerning Divorce (1644), Tetrachordon (1645), and Colasterion (1645).\n(B) Tetrachordon ('four-stringed') expounds the four chief scriptural passages on marriage and divorce in Genesis, Deuteronomy, Matthew, and 1 Corinthians.\n(C) Across these tracts, Milton argues that marriage was ordained primarily for spiritual and intellectual companionship ('a meet and happy conversation') rather than merely physical union.\n(D) The Westminster Assembly of Divines unanimously endorsed the tracts and appointed Milton Archbishop of Canterbury in 1645.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statement (D) is false because the Presbyterian clergy of the Westminster Assembly denounced Milton's divorce tracts as scandalous and heretical, which helped turn Milton against Presbyterian censorship in Areopagitica.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-38",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "religio-medici",
+      "periodId": "caroline",
+      "question": "Arrange the following seventeenth-century works in chronological order of their first publication or performance:\n(A) John Milton's masque Comus at Ludlow Castle\n(B) Sir Thomas Browne's Religio Medici\n(C) John Milton's speech for the liberty of unlicensed printing, Areopagitica\n(D) Sir Thomas Browne's Hydriotaphia, Urne-Buriall",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "B → C → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Milton's Comus was performed in 1634 and printed in 1637 (A), Browne's Religio Medici appeared in 1642/1643 (B), Milton's Areopagitica appeared in November 1644 (C), and Browne's Hydriotaphia, Urne-Buriall was published in 1658 (D).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-39",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "areopagitica",
+      "periodId": "caroline",
+      "question": "Match List I (Memorable Quotation from John Milton's Early Prose and Poetry) with List II (Work):\n\nList I (Quotation)\n(A) 'A good book is the precious life-blood of a master spirit, imbalm'd and treasur'd up on purpose to a life beyond life'\n(B) 'He who would not be frustrate of his hope to write well... ought himself to be a true poem'\n(C) 'Love Virtue, she alone is free, / She can teach ye how to climb / Higher than the sphery chime'\n(D) 'Fame is no plant that grows on mortal soil'\n\nList II (Work)\n(I) Areopagitica (1644)\n(II) Apology for Smectymnuus (1642)\n(III) Comus (1634)\n(IV) Lycidas (1637/1638)",
+      "options": [
+        "A-I, B-III, C-II, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'A good book is the precious life-blood' is from Areopagitica (A-I), 'ought himself to be a true poem' is from Apology for Smectymnuus (B-II), 'Love Virtue, she alone is free' closes Comus (C-III), and 'Fame is no plant' is from Lycidas (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-40",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "thomas-browne",
+      "periodId": "caroline",
+      "question": "Match List I (Seventeenth-Century Prose Work) with List II (Author):\n\nList I (Prose Work)\n(A) Hydriotaphia, Urne-Buriall and Pseudodoxia Epidemica (Vulgar Errors)\n(B) The Liberty of Prophesying, Holy Living, and Holy Dying\n(C) The Church-History of Britain and The Worthies of England\n(D) The History of the Rebellion and Civil Wars in England\n\nList II (Author)\n(I) Sir Thomas Browne\n(II) Jeremy Taylor\n(III) Thomas Fuller\n(IV) Edward Hyde, 1st Earl of Clarendon",
+      "options": [
+        "A-IV, B-II, C-III, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Browne wrote Hydriotaphia and Vulgar Errors (A-I), Jeremy Taylor wrote The Liberty of Prophesying, Holy Living, and Holy Dying (B-II), Thomas Fuller wrote The Church-History of Britain and The Worthies of England (C-III), and Edward Hyde, Earl of Clarendon, wrote The History of the Rebellion (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "ode",
+      "periodId": "caroline",
+      "question": "Which stanzaic form of the ode—used by Andrew Marvell in his 1650 ode on Oliver Cromwell's return from Ireland—employs a single uniform repeating stanza pattern throughout the poem rather than Pindaric triads of strophe, antistrophe, and epode?",
+      "options": [
+        "The Horatian (or homostrophic) ode",
+        "The irregular Cowleyan Pindarique ode",
+        "The choral dithyrambic ode",
+        "The Petrarchan canzone"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Modelled on the Latin odes of Horace, the Horatian ode repeats a single uniform stanza pattern (homostrophic) of the poet's choosing throughout the poem—such as Marvell's four-line stanzas of two iambic tetrameter lines followed by two iambic trimeter lines (aabb).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "andrew-marvell",
+      "periodId": "caroline",
+      "question": "In his 1921 tercentenary essay 'Andrew Marvell', what memorable critical phrase did T. S. Eliot use to define the distinctive quality of Marvell's Metaphysical wit?",
+      "options": [
+        "\"The spontaneous overflow of powerful feelings\"",
+        "\"A tough reasonableness beneath the slight lyric grace\"",
+        "\"The motive-hunting of motiveless malignity\"",
+        "\"A fugitive and cloistered virtue unexercised\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "In his 1921 essay 'Andrew Marvell', T. S. Eliot defined Marvell's wit as 'more than a technical accomplishment, or the vocabulary and syntax of an epoch; it is, what we have designated tentatively as wit, a tough reasonableness beneath the slight lyric grace'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "matthew-arnold",
+      "periodId": "caroline",
+      "question": "Which Victorian poet and critic popularized the critical phrase 'the Grand Style' (in On Translating Homer) to characterize the sustained elevation, majesty, and musicality of John Milton's verse?",
+      "options": [
+        "Algernon Charles Swinburne",
+        "Robert Browning",
+        "Matthew Arnold",
+        "Dante Gabriel Rossetti"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Matthew Arnold coined and popularized the phrase 'the Grand Style' to describe the sustained moral and poetic sublimity that he found in Homer, Dante, and above all in John Milton.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "To which movement in seventeenth-century European art and architecture—characterized by dramatic tension, dynamic movement, and ornate grandeur—is John Milton's 'Grand Style' considered closest by literary historians?",
+      "options": [
+        "The Impressionist",
+        "The Rococo",
+        "The Pre-Raphaelite",
+        "The Baroque"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Literary historians align John Milton's 'Grand Style'—as well as the ecstatic devotional conceits of Richard Crashaw—most closely with the seventeenth-century European Baroque aesthetic.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "samuel-butler-hudibras",
+      "periodId": "caroline",
+      "question": "Begun during the Civil War and published in three parts (1663, 1664, 1678), which mock-heroic poem by Samuel Butler—written in octosyllabic doggerel couplets and modelled on Cervantes's Don Quixote—satirizes a Presbyterian knight and his Independent squire Ralpho?",
+      "options": [
+        "Hudibras",
+        "Mac Flecknoe",
+        "Absalom and Achitophel",
+        "Gondibert"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Taking its hero's name from Book II of Spenser's The Faerie Queene and its comic structure from Don Quixote, Samuel Butler's mock-heroic poem Hudibras ridicules Puritan hypocrisy during the Civil War through the adventures of the Presbyterian knight Sir Hudibras and his squire Ralpho.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "caroline-set-1-m-46",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "heroic-couplet",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately trace the development of the 'closed heroic couplet' in the Caroline and Restoration periods?\n(A) A heroic couplet consists of two rhyming lines of iambic pentameter; in its 'closed' form, the thought is completed within the two lines with balanced caesuras.\n(B) While Geoffrey Chaucer had used an open, run-on decasyllabic couplet, Edmund Waller and Sir John Denham regularized the smooth, closed heroic couplet in the 1630s and 1640s.\n(C) John Dryden and Alexander Pope credited Waller and Denham with reforming English versification and preparing the way for neoclassical satire.\n(D) In Paradise Lost (1667), John Milton praised the rhymed heroic couplet as the only fit metre for an epic and rejected blank verse.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because in his preface on 'The Verse' added to Paradise Lost, Milton rejected rhyme as 'the invention of a barbarous age, to set off wretched matter and lame metre' and championed unrhymed blank verse.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-47",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "samuel-johnson",
+      "periodId": "caroline",
+      "question": "Which of the following statements accurately describe Dr. Samuel Johnson's judgments in Lives of the Poets (1779–1781)?\n(A) While praising Paradise Lost, Johnson judged Comus to be 'a drama in the epic style, inelegantly splendid, and tediously instructive'.\n(B) Johnson condemned Lycidas for 'harsh' diction and artificial pastoralism, and remarked of Milton's sonnets that 'of the best it can only be said that they are not bad'.\n(C) In his 'Life of Cowley', Johnson defined Metaphysical wit as a 'discordia concors' where 'heterogeneous ideas are yoked by violence together'.\n(D) Johnson declared Lycidas and Herbert's 'Easter Wings' to be the two most faultless poems in English.",
+      "options": [
+        "B, C and D only",
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (D) is false because Johnson severely censured both the pastoral conventions of Lycidas and the pattern-poetry conceits of the Metaphysical school.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "caroline-set-1-m-48",
+      "qtype": "chrono",
+      "topic": "terms",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Arrange the following seventeenth-century poets in chronological order of their birth from earliest to latest:\n(A) Robert Herrick (1591) and George Herbert (1593)\n(B) Edmund Waller (1606) and John Milton (1608)\n(C) Sir John Denham (1615)\n(D) Abraham Cowley and Richard Lovelace (1618), followed by Andrew Marvell (1621)",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Herrick (1591) and Herbert (1593) were born in the 1590s (A), Waller (1606) and Milton (1608) in the first decade of the 1600s (B), Denham in 1615 (C), and Cowley (1618), Lovelace (1618), and Marvell (1621) between 1618 and 1621 (D).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-49",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "cavalier-poets",
+      "periodId": "caroline",
+      "question": "Match List I (Cavalier or Devotional Poet) with List II (Distinctive Literary Work and Contribution):\n\nList I (Poet)\n(A) Francis Quarles\n(B) Thomas Traherne\n(C) Sir John Suckling\n(D) Edmund Waller\n\nList II (Work and Contribution)\n(I) Published the popular Royalist devotional book Emblems (1635), pairing allegorical engravings with biblical epigrams\n(II) Mystic cleric whose Poems and Centuries of Meditations remained in manuscript for over two centuries until their recovery in 1903–1908\n(III) Cavalier wit who wrote 'A Ballad upon a Wedding' and the lyric 'Why so pale and wan, fond lover?' in Aglaura\n(IV) Addressed 'Go, lovely Rose!' to Sacharissa and helped pioneer the smooth closed heroic couplet",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Francis Quarles published Emblems in 1635 (A-I), Thomas Traherne's Poems and Centuries of Meditations were recovered in the early twentieth century (B-II), Suckling wrote 'A Ballad upon a Wedding' and 'Why so pale and wan' (C-III), and Waller wrote 'Go, lovely Rose!' and smoothed the heroic couplet (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "caroline-set-1-m-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "john-milton",
+      "periodId": "caroline",
+      "question": "Match List I (Early Poem or Masque by John Milton) with List II (Literary Genre and Metrical Form):\n\nList I (Work by John Milton)\n(A) 'On the Morning of Christ's Nativity' (1629)\n(B) Arcades (1632) and Comus (1634)\n(C) Lycidas (1637/1638)\n(D) 'On His Having Arrived at the Age of Twenty-Three' (1631/1632)\n\nList II (Genre and Metrical Form)\n(I) Devotional ode comprising a four-stanza Prelude in rhyme royal followed by a twenty-seven-stanza Hymn ending each stanza with an alexandrine\n(II) Aristocratic courtly masques combining blank-verse dialogue, octosyllabic speeches, and songs set to music by Henry Lawes\n(III) Pastoral monody in irregular rhymed verse paragraphs concluding with an eight-line ottava rima stanza\n(IV) Fourteen-line Petrarchan (Italian) sonnet divided into an octave (abbaabba) and a sestet",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Nativity Ode combines a rhyme-royal Prelude with a 27-stanza Hymn (A-I), Arcades and Comus are courtly masques with music by Henry Lawes (B-II), Lycidas is a pastoral monody ending in ottava rima (C-III), and 'On His Having Arrived at the Age of Twenty-Three' is a Petrarchan sonnet (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}

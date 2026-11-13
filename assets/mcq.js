@@ -43,11 +43,11 @@
     'renaissance',
     'early-tudor',
     'elizabethan',
-    'jacobean'
+    'jacobean',
+    'caroline'
   ];
 
   var SOON_HUBS = [
-    'caroline',
     'commonwealth',
     'neoclassical',
     'restoration',
