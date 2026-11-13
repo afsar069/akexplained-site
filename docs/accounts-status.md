@@ -18,12 +18,12 @@ _Last updated: 2026-11-13 (Caroline Set 1 is prepared as a free, no-login set at
 - Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Jacobean moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 to 4 remain Coming soon.
 - Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All internal links and assets on the MCQ index, hub, set, review, build and custom pages resolved.
 
-## Result PDF question summary (2026-11-13, branch `fix/result-pdf-question-summary-20261113`)
+## Result PDF question summary (2026-11-13, PR #73)
 
 The print rules in `assets/site.css` no longer hide the CBT result page's question-wise grid. Printed
 numbers use visible correct, incorrect and unanswered colours. `npx eleventy` passes. A browser PDF check
 is pending because headless Chromium stalled in this environment and the cloud browser blocked local files.
-This is on the feature branch, not on `main` yet.
+Release: PR #73.
 
 ## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
 
