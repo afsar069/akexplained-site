@@ -108,6 +108,14 @@ module.exports = function (eleventyConfig) {
         '<script src="/assets/track.js" defer></script>\n</body>');
     }
 
+    // The account bar (shared header) is wired by account-menu.js. Add it on its
+    // own, not tied to the auth.js block above, so pages that already ship their
+    // own auth.js (login, account) still get it. account-menu.js waits for
+    // window.akAuth, so the load order does not matter.
+    if (!out.includes("/assets/account-menu.js") && out.includes("</body>")) {
+      out = out.replace("</body>", '<script src="/assets/account-menu.js" defer></script>\n</body>');
+    }
+
     return out;
   });
 

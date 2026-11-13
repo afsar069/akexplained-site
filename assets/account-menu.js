@@ -21,6 +21,9 @@
 
   var bar = document.querySelector('.homebar');
   if (!bar) return;
+  // The dashboard has its own top bar (.dashtop) with the same bell and profile.
+  // Never run a second one there (CSS also hides .homebar on that page).
+  if (document.querySelector('.dashtop')) { bar.style.display = 'none'; return; }
 
   function waitForAuth(cb) {
     var n = 0;
