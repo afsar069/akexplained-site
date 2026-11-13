@@ -28,13 +28,14 @@
     <span class="dashtop-side" aria-hidden="true"></span>
     <h1 class="dashtop-title">My Dashboard</h1>
     <div class="dashtop-tools">
-      <!-- The bell is built but not wired to anything yet, so it is disabled.
-           To switch it on later: drop `disabled`, change the two labels, and
-           add the click handler. Never show a dot or a count until there is a
-           real notification behind it. -->
+      <!-- The bell starts disabled with no dot. assets/dashboard.js (wireBell)
+           wakes it up only when the student actually has a notification, and
+           shows a count only while some are unread. Never show a dot "for
+           looks" (CLAUDE.md rule 10). Messages come from public.notifications,
+           sent by an admin at /admin/notify/. -->
       <button class="dashtop-bell" type="button" disabled
-              title="Notifications — not working yet"
-              aria-label="Notifications — not working yet">
+              title="No notifications yet"
+              aria-label="No notifications yet">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
              stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10.5 20a2 2 0 0 0 3 0"/>

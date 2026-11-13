@@ -4,7 +4,49 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-12 (the owner-only **upload a paper** page is on the branch `claude/upload-paper-tool`, not yet merged; its database half IS live. Before that: UP Assistant Professor Paper 2 Mock Test 3 as a login CBT paper on main; Early Tudor Set 1 as PR #63, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61; the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/`, Age of Chaucer Set 1, and the "Questions and time" chooser on every MCQ set page.)_
+_Last updated: 2026-11-13 (the admin area — notices to the dashboard bell, an all-papers Live/Draft switch, a students list and review moderation — is on branch `claude/upload-paper-tool`, built and tested, its database half live, NOT merged. Before it: the owner-only upload-paper page + its "English Literature MCQ set" category, on the same branch.)_
+
+## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
+
+The owner asked (2026-11-13) to grow the upload page into a small admin area, and chose to leave paid sets +
+promo codes and big-PDF/R2 for next time (they are in the plan, rule 13/15). Built and tested; **not merged yet**.
+
+**Live in the database** (migration `supabase/migrations/20261113120000_admin_dashboard.sql`, applied through the
+connector; no new security-advisor finding — still the same two older warnings):
+- `public.notifications` (dashboard-bell messages: `audience 'all'` broadcast or `'user'` one student; title,
+  body, same-site `link`, `created_by`) and `public.notification_reads` (one row per student+notice opened, so the
+  bell count clears on every device). RLS: a student reads a broadcast or their own + their own reads; an admin
+  (a `paper_admins` row) reads all, inserts and deletes a notice; nobody updates one. No delete grant for students.
+- Admin **read** policies added to `profiles`, `attempts`, `quiz_runs`, `reviews`; admin **update + delete** on
+  `reviews` (students unchanged). No `auth.users` access and no `SECURITY DEFINER` function, so no email is exposed.
+- Tested on a throwaway Postgres (roles anon/authenticated, `request.jwt.claims`): admin sends broadcast + personal
+  (constraints reject a broadcast with a user_id, a user message with none, and off-site/`//` links); a student sees
+  only broadcasts + their own, can't send/delete, marks read → unread 0; another student sees only the broadcast and
+  can't read the first student's reads; admin reads all profiles/attempts/runs while a student sees only their own;
+  admin hides a review (guest then sees it gone) and deletes it, a student can do neither. Migration idempotent.
+  On the live project (rolled back): the owner admin inserts a notice and reads all 20 profiles; a real student sees
+  the one broadcast and their own insert is refused. Nothing left behind (0 notifications, 0 reads).
+
+**The admin area** `/admin/` (home) with `/admin/upload-paper/`, `/admin/papers/`, `/admin/notify/`,
+`/admin/students/`, `/admin/reviews/` — all noindex, in no menu, in no sitemap, `/admin/` Disallowed in
+`robots.txt`. `assets/admin.js` runs the gate (a `paper_admins` row) + the tools nav + every section except
+upload (which keeps `assets/upload-paper.js`; admin.js there only adds the nav). A guest or ordinary student sees
+only "You are not allowed to use this page." Papers: flip Live/Draft (updates `mcq_papers.status`). Notify: send a
+notice to one student or everyone, delete a sent one. Students: name, joined, answers, accuracy, quizzes, last
+active — **no email**. Reviews: read all, hide/show, delete (owner's rule 6: only for rude language).
+
+**The dashboard bell** (`assets/dashboard.js` `wireBell`, `dashboard/index.html`): stays disabled with no dot while
+the student has no notice; wakes up when there is one; a dot shows the unread count; opening the panel writes
+`notification_reads` and clears the dot. Never a dot "for looks" (rule 10).
+
+**Browser tests** (Playwright, Supabase mocked): **51 admin + bell checks** pass (gate for guest/student/admin;
+papers list + toggle; notify broadcast + personal + off-site-link refusal + delete; students list with no email;
+reviews hide + delete; bell disabled with none, enabled with a count, panel lists, opening marks exactly the unread
+one read and clears the dot; no sideways scroll at 375px). The upload-paper suite still passes 68/68 (admin.js on
+that page only adds the nav). `/privacy/` now lists dashboard notices.
+
+**Pending:** add the owner (done — `paper_admins` has their row) is already in place, so the admin area works for
+the owner as soon as the branch is merged. Merge to `main` is the owner's call (rule 5). Paid layer + R2 are next.
 
 ## Upload a paper — the owner-only tool (2026-11-12, branch `claude/upload-paper-tool`)
 

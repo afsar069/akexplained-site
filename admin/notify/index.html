@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Send a notice | AK Explained</title>
+<meta name="description" content="Owner-only admin page.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-admin="notify">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>Send a notice</h1>
+    <p class="lede">Put a short message on the student dashboard bell.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+  <div id="adminNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
+
+  <div id="adminBody" hidden>
+    <div class="authcard">
+      <h2>Write a notice</h2>
+      <div class="formerror" id="admNotifyError" role="alert" hidden></div>
+      <div class="authnotice" id="admNotifyOk" role="status" hidden></div>
+      <form id="admNotifyForm" novalidate>
+        <label class="field">
+          <span>Who is it for?</span>
+          <select id="admAudience">
+            <option value="all">Everyone</option>
+            <option value="user">One student</option>
+          </select>
+        </label>
+        <label class="field" id="admStudentWrap" hidden>
+          <span>Which student?</span>
+          <select id="admStudent"><option value="">Loading students…</option></select>
+        </label>
+        <label class="field">
+          <span>Title</span>
+          <input id="admTitle" type="text" maxlength="120" autocomplete="off">
+          <span class="hint">A few words, for example: New mock test is live.</span>
+        </label>
+        <label class="field">
+          <span>Message <small>(you can leave this empty)</small></span>
+          <textarea id="admBody" rows="3" maxlength="1000"></textarea>
+        </label>
+        <label class="field">
+          <span>Link <small>(you can leave this empty)</small></span>
+          <input id="admLink" type="text" maxlength="300" autocomplete="off" placeholder="/exams/state-psc/up-assistant-professor/paper-2-mock-tests/">
+          <span class="hint">A page on this site, starting with one "/". When the student taps the notice it opens this page.</span>
+        </label>
+        <button class="btn" type="submit">Send notice</button>
+      </form>
+    </div>
+
+    <div class="authcard">
+      <h2>Notices you have sent</h2>
+      <ul class="admnlist" id="admNotifList"><li class="small">Loading…</li></ul>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/admin.js" defer></script>
+</body>
+</html>
