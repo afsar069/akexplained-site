@@ -41,11 +41,11 @@
     'age-of-chaucer',
     'fifteenth-century',
     'renaissance',
-    'early-tudor'
+    'early-tudor',
+    'elizabethan'
   ];
 
   var SOON_HUBS = [
-    'elizabethan',
     'jacobean',
     'caroline',
     'commonwealth',
