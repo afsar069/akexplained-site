@@ -15,7 +15,7 @@ permalink: /admin/upload-paper/index.html
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
+<body data-admin="upload">
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site-header"></header>
@@ -32,6 +32,8 @@ permalink: /admin/upload-paper/index.html
 </section>
 
 <div class="wrap authwrap">
+
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
 
   <div id="upNotice" class="authnotice" role="status">Checking your account&hellip;</div>
 
@@ -96,6 +98,7 @@ permalink: /admin/upload-paper/index.html
 
 <footer class="site-footer"></footer>
 
+<script src="/assets/admin.js" defer></script>
 <script src="/assets/upload-paper.js" defer></script>
 </body>
 </html>

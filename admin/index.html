@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Admin | AK Explained</title>
+<meta name="description" content="Owner-only admin area.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-admin="home">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>Admin</h1>
+    <p class="lede">Your tools for running the site. Only you can see this page.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+  <div id="adminNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
+
+  <div id="adminBody" hidden>
+    <div class="admcards">
+      <a class="admcard" href="/admin/upload-paper/">
+        <h2>Upload a paper</h2>
+        <p>Add a login-only mock test or MCQ set from its file.</p>
+      </a>
+      <a class="admcard" href="/admin/papers/">
+        <h2>All papers</h2>
+        <p>See every paper and switch it between Live and Draft.</p>
+      </a>
+      <a class="admcard" href="/admin/notify/">
+        <h2>Send a notice</h2>
+        <p>Put a message on the dashboard bell, for one student or everyone.</p>
+      </a>
+      <a class="admcard" href="/admin/students/">
+        <h2>Students</h2>
+        <p>See who has signed up, how active they are, and how they are doing.</p>
+      </a>
+      <a class="admcard" href="/admin/reviews/">
+        <h2>Reviews</h2>
+        <p>Read every review, and hide or delete a rude one.</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/admin.js" defer></script>
+</body>
+</html>

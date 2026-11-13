@@ -30,7 +30,7 @@ breaking it breaks a promise already made.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
-- `admin/upload-paper/index.njk` + `assets/upload-paper.js` — the owner-only page for uploading a login paper (rule 15). Noindex, in no menu and in no sitemap, and it shows nothing but "You are not allowed to use this page." to everyone except the logins listed in `public.paper_admins`.
+- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews). The last four plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
@@ -228,8 +228,11 @@ and never ask the owner for it.**
   "Student", never an email. Both are one place in the SQL (`min_questions`, `score`).
   `/dashboard/` has **no page head and no breadcrumb**: its own top bar (`.dashtop`, static markup in
   `dashboard/index.html`) carries the `h1`, the bell and the profile button, and the header card sits right
-  under it. The **bell is `disabled` and shows no dot or count** until something real is behind it — never
-  add one for looks. The header is two pictures and nothing else to edit: `assets/dash-banner.webp`
+  under it. The **bell is wired to `public.notifications`** (2026-11-13, `assets/dashboard.js` `wireBell`): it
+  stays `disabled` with no dot while the student has **no** notification at all, wakes up once there is one, and
+  shows a dot with the unread count only while some are unread; opening the panel writes `notification_reads` so
+  the count clears on every device. Never show a dot or count with nothing real behind it. An admin sends the
+  messages from `/admin/notify/`. The header is two pictures and nothing else to edit: `assets/dash-banner.webp`
   (the wide painting, 2268x494, shown at 1134x247) and `assets/dash-box.webp` (the panel the centred
   greeting sits on, 1988x422, stretched — art at the two ends, middle clear, **no frame in the picture**:
   the gold frame is a 1px CSS border; the picture stays at every width, the type just steps down on a
@@ -263,9 +266,10 @@ and never ask the owner for it.**
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
   new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
-- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15; it has a `status` column, `draft` or `live`), `paper_admins` (who may upload a paper), `paper_catalog` (a paper's public metadata, no questions), `exams`, `topics`, `exam_topics`,
-  `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows);
-  reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
+- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15; it has a `status` column, `draft` or `live`), `paper_admins` (the admin allow list — who may upload a paper AND use every other admin tool), `paper_catalog` (a paper's public metadata, no questions), `notifications` + `notification_reads` (dashboard bell messages and who has opened them, rule 16), `exams`, `topics`, `exam_topics`,
+  `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows); an **admin** (a `paper_admins`
+  row) also reads all `profiles`, `attempts`, `quiz_runs`, `reviews` and `mcq_papers`, and may moderate reviews and
+  send notifications (rule 16). Reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
 - Migrations live in `supabase/migrations/` (ordered, run once by the owner). Each is one
   transaction; data loads use `on conflict (id) do nothing`; topic rows are inserted
   parents-first. `supabase/full-setup.sql` is a consolidated, idempotent one-shot.
@@ -508,3 +512,34 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
 - **Hub words when the owner gives none:** use only the file's own `setName`, topic names, count and levels,
   say so, never invent (Old English Set 4 was done like this and the owner kept it). Two sets on the same
   topic get the file's own different names.
+
+## 16. The admin area (`/admin/...`, owner, 2026-11-13)
+The admin area is the one place the owner runs the site from a browser. **One allow list for every power:**
+a row in `public.paper_admins` (added by SQL only, never from a browser). A guest or an ordinary student
+sees only "You are not allowed to use this page." on every admin page. No service key, no Edge Function: the
+browser writes with the publishable key and the admin's own login, and **RLS is the real gate** (the page's
+JavaScript is only quick feedback). Migration `20261113120000_admin_dashboard.sql`. Pages run on
+`assets/admin.js` (home, papers, notify, students, reviews) except upload-paper, which keeps
+`assets/upload-paper.js`; admin.js there only builds the shared tools nav. Every admin page is noindex, in no
+menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
+- **Upload a paper** — `/admin/upload-paper/`, rule 15.
+- **All papers** (`/admin/papers/`) — lists `paper_catalog`; a button flips a set between Live and Draft
+  (`update mcq_papers set status=… where set_id=…`; the status-only path skips re-validation; the catalog
+  trigger follows). The change is in the database at once; the public page updates on the next build +
+  `tools/sync_catalog.py` (for the UP AP mock tests).
+- **Send a notice** (`/admin/notify/`) — inserts `public.notifications`: `audience 'all'` (broadcast, `user_id`
+  null) or `'user'` (one student, picked by name from `profiles`). Title, optional message, optional **same-site**
+  link (starts with one "/"; the DB check enforces it). `created_by` is stamped as the admin. A sent notice can be
+  deleted. It shows on the student's dashboard bell (rule 10).
+- **Students** (`/admin/students/`) — name (`profiles.display_name`), joined (`profiles.created_at`), answers +
+  accuracy (`attempts`), quizzes (`quiz_runs`), last active. **No email and no auth.users** (so no new security
+  advisor; a non-admin still sees only their own rows). "Last active" = last answer or finished quiz.
+- **Reviews** (`/admin/reviews/`) — reads every review (even hidden), hides/shows one (`visible`), or deletes one.
+  Owner's rule 6 stands: moderate **only** for rude or inappropriate language; a low rating is kept. This replaces
+  running the SQL by hand; the browser path is admin-only by RLS.
+- **Data layer:** `notifications` (RLS: a student reads a broadcast or their own; an admin reads all, inserts,
+  deletes — no one updates), `notification_reads` (a student reads/inserts only their own; it clears the bell
+  count across devices). Admin **read** policies were added to `profiles`, `attempts`, `quiz_runs` and `reviews`,
+  and admin **update/delete** to `reviews`. `/privacy/` now lists dashboard notices (kept true, rule 10).
+- **Not here yet:** paid sets + promo codes, and big PDFs on Cloudflare R2 (both rule 13/15) — the owner chose to
+  build these next.

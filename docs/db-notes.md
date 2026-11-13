@@ -140,6 +140,37 @@ sitemap lines are built from it.
 Rules: everyone, even logged out, may read the `live` rows — those titles are already printed on the hub pages. An
 owner-side account (see `paper_admins`) reads and writes all rows; nobody can delete a row from a browser.
 
+### `notifications` and `notification_reads` (added 2026-11-13)
+
+Messages for the student **dashboard bell**. An admin sends them from `/admin/notify/`.
+
+`notifications` — one row per message.
+
+| Column       | Meaning |
+| ------------ | ------- |
+| `id`         | The message. |
+| `audience`   | `all` (everyone — a broadcast) or `user` (one student). |
+| `user_id`    | Which student, when `audience = user`; empty for a broadcast. Points at `auth.users`, deleted with the user. |
+| `title`      | The short heading the student sees. |
+| `body`       | The message (may be empty). |
+| `link`       | A page on this site to open (starts with one `/`), or empty. |
+| `created_by` | Which admin sent it. |
+| `created_at` | When. |
+
+`notification_reads` — one row per `(student, notification)` the student has opened, so the bell count
+clears and stays cleared on every device. A student reads and inserts only their own rows.
+
+Rules: a student reads a broadcast or a message addressed to them; an **admin** (a `paper_admins` row) reads
+all, sends one, and can delete one. Nobody updates a notification. No question or private student data is in
+either table.
+
+### Admin read of the student data (added 2026-11-13)
+
+So the admin pages (`/admin/students/`, `/admin/reviews/`) can work, an **admin** may also read every row of
+`profiles`, `attempts`, `quiz_runs` and `reviews`, and may hide/show or delete a `reviews` row. These are extra
+policies keyed on `paper_admins`; a non-admin still sees only their own rows, exactly as before. No admin power
+touches `auth.users`, so no email is exposed and no `SECURITY DEFINER` function was added.
+
 ### 3. `reading_progress`
 
 One row per user per article. It records whether a user has finished an article

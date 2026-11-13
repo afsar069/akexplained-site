@@ -1138,8 +1138,92 @@
     el.setAttribute('aria-label', 'My Account — ' + name);
   }
 
+  /* The dashboard bell. Messages come from public.notifications (an admin sends them
+     from /admin/notify/). The bell stays disabled while the student has NO notification
+     at all — never a dot "for looks" (CLAUDE.md rule 10). Once there is at least one, the
+     bell wakes up; a dot with the count shows while any are unread. Opening the panel marks
+     them read (public.notification_reads), so the dot clears here and on every device. */
+  var NMON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function notifDate(v) {
+    var d = new Date(v); if (isNaN(d.getTime())) return '';
+    return d.getDate() + ' ' + NMON[d.getMonth()] + ' ' + d.getFullYear();
+  }
+  function safePath(p) {   // only a same-site path may be a link
+    return (typeof p === 'string' && /^\/[^/]/.test(p)) ? p : '';
+  }
+  function wireBell(client, uid) {
+    var bell = document.querySelector('.dashtop-bell');
+    if (!bell) return;
+    Promise.all([
+      client.from('notifications').select('id, title, body, link, created_at')
+        .order('created_at', { ascending: false }).limit(50),
+      client.from('notification_reads').select('notification_id')
+    ]).then(function (r) {
+      if (r[0].error) return;                 // on any error, leave the bell disabled
+      var notifs = r[0].data || [];
+      if (!notifs.length) return;             // nothing behind it — stays disabled (rule 10)
+      var read = {};
+      ((r[1] && r[1].data) || []).forEach(function (x) { read[x.notification_id] = 1; });
+      var unread = notifs.filter(function (n) { return !read[n.id]; });
+      enableBell(bell, notifs, unread, client, uid);
+    }, function () { /* leave the bell as it is */ });
+  }
+  function enableBell(bell, notifs, unread, client, uid) {
+    bell.disabled = false;
+    bell.title = 'Notifications';
+    bell.setAttribute('aria-label', 'Notifications' + (unread.length ? ' (' + unread.length + ' new)' : ''));
+    if (unread.length) {
+      var dot = document.createElement('span');
+      dot.className = 'dashbell-dot';
+      dot.textContent = unread.length > 9 ? '9+' : String(unread.length);
+      bell.appendChild(dot);
+    }
+
+    var panel = document.createElement('div');
+    panel.className = 'dashbell-panel';
+    panel.hidden = true;
+    panel.innerHTML = '<div class="dashbell-head">Notifications</div>' +
+      '<ul class="dashbell-list">' + notifs.map(function (n) {
+        var link = safePath(n.link);
+        var inner = '<b>' + esc(n.title) + '</b>' +
+          (n.body ? '<span>' + esc(n.body) + '</span>' : '') +
+          '<i>' + notifDate(n.created_at) + '</i>';
+        var cls = 'dashbell-item' + (read_is_unread(n) ? ' is-unread' : '');
+        return '<li class="' + cls + '">' +
+          (link ? '<a href="' + esc(link) + '">' + inner + '</a>' : '<div>' + inner + '</div>') +
+          '</li>';
+      }).join('') + '</ul>';
+    function read_is_unread(n) { return unread.some(function (u) { return u.id === n.id; }); }
+    bell.parentNode.appendChild(panel);
+
+    function closePanel() { panel.hidden = true; bell.setAttribute('aria-expanded', 'false'); }
+    bell.setAttribute('aria-expanded', 'false');
+    bell.addEventListener('click', function (ev) {
+      ev.stopPropagation();
+      var open = panel.hidden;
+      panel.hidden = !open;
+      bell.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (open && unread.length) {
+        // mark the unread ones read, clear the dot
+        var rows = unread.map(function (u) { return { user_id: uid, notification_id: u.id }; });
+        client.from('notification_reads').insert(rows).then(function () {}, function () {});
+        unread = [];
+        var d = bell.querySelector('.dashbell-dot'); if (d) d.remove();
+        var items = panel.querySelectorAll('.dashbell-item.is-unread');
+        for (var i = 0; i < items.length; i++) items[i].classList.remove('is-unread');
+      }
+    });
+    document.addEventListener('click', function (ev) {
+      if (panel.hidden) return;
+      if (ev.target === bell || bell.contains(ev.target) || panel.contains(ev.target)) return;
+      closePanel();
+    });
+    document.addEventListener('keydown', function (ev) { if (ev.key === 'Escape') closePanel(); });
+  }
+
   function start(client, uid, root, user, auth) {
     var view = root.getAttribute('data-view') || 'main';
+    wireBell(client, uid);
     root.innerHTML = '<p class="dashloading">Loading your progress…</p>';
     var ctx = {
       now: new Date(), rows: [], truncated: false, stats: null,

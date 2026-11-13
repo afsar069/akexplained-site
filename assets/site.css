@@ -3086,6 +3086,8 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .authcard h2{font-family:var(--serif);color:var(--ink);font-size:1.3rem;margin:0 0 16px}
 
 .field{display:block;margin:0 0 15px}
+/* The [hidden] attribute must win over display:block when JS hides a field. */
+.field[hidden]{display:none}
 .field>span{display:block;font-size:.84rem;font-weight:700;color:var(--ink);margin-bottom:6px}
 .field input{
   width:100%;font-family:var(--sans);font-size:1rem;color:var(--ink);background:#fff;
@@ -3261,13 +3263,37 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-family:var(--serif);font-weight:700;color:var(--ink);
   font-size:clamp(1.05rem,2vw,1.35rem);line-height:1.2;
 }
-.dashtop-tools{grid-column:3;justify-self:end;display:flex;align-items:center;gap:10px}
+.dashtop-tools{grid-column:3;justify-self:end;position:relative;display:flex;align-items:center;gap:10px}
 .dashtop-bell{
+  position:relative;
   flex:none;display:inline-flex;align-items:center;justify-content:center;
   width:40px;height:40px;border-radius:11px;cursor:pointer;
   background:var(--tint);border:1px solid var(--border);color:var(--teal-dark);
   transition:background .2s,border-color .2s,color .2s;
 }
+/* The unread count, 2026-11-13. Shown only when a real notice is unread (dashboard.js). */
+.dashbell-dot{
+  position:absolute;top:-5px;right:-5px;min-width:18px;height:18px;padding:0 4px;
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--accent);color:#fff;font-size:.68rem;font-weight:700;line-height:1;
+  border-radius:999px;border:2px solid #fff;
+}
+.dashbell-panel{
+  position:absolute;top:calc(100% + 8px);right:0;z-index:40;width:300px;max-width:84vw;
+  background:#fff;border:1px solid var(--card-line);border-radius:14px;
+  box-shadow:0 18px 44px -20px rgba(22,48,74,.55);overflow:hidden;
+}
+.dashbell-head{padding:12px 15px;font-weight:700;color:var(--ink);border-bottom:1px solid var(--card-line);background:var(--cream)}
+.dashbell-list{list-style:none;margin:0;padding:0;max-height:60vh;overflow-y:auto}
+.dashbell-item{border-bottom:1px solid var(--card-line)}
+.dashbell-item:last-child{border-bottom:none}
+.dashbell-item a,.dashbell-item div{display:block;padding:12px 15px;text-decoration:none;color:var(--ink)}
+.dashbell-item a:hover{background:var(--cream)}
+.dashbell-item b{display:block;font-size:.95rem;margin:0 0 3px}
+.dashbell-item span{display:block;font-size:.86rem;color:var(--body);margin:0 0 4px}
+.dashbell-item i{display:block;font-size:.76rem;color:var(--body);font-style:normal}
+.dashbell-item.is-unread{background:var(--teal-soft)}
+.dashbell-item.is-unread b::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:7px;vertical-align:middle}
 .dashtop-bell:hover:not(:disabled){background:var(--teal);border-color:var(--teal);color:#fff}
 .dashtop-bell:disabled{cursor:not-allowed;opacity:.55}
 .dashtop-user{
@@ -3662,3 +3688,51 @@ a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);c
 .uprep li.no{color:#8A2B16}
 .uprep li.info::before{content:"\2022";color:var(--body)}
 .uprep li.info{color:var(--body)}
+
+/* Admin area (/admin/...), 2026-11-13. Owner-only pages; plain and compact. */
+.adminnav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 20px}
+.adminnav a{display:inline-block;padding:7px 13px;border-radius:999px;border:1.5px solid var(--border);
+  background:#fff;color:var(--ink);font-size:.9rem;font-weight:600;text-decoration:none;transition:border-color .2s,background .2s}
+.adminnav a:hover{border-color:var(--teal)}
+.adminnav a[aria-current=page]{background:var(--teal);border-color:var(--teal);color:#fff}
+
+.admcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px}
+.admcard{display:block;background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
+  padding:18px 20px;text-decoration:none;color:var(--ink);box-shadow:0 10px 30px -24px rgba(22,48,74,.5);
+  transition:border-color .2s,transform .2s}
+.admcard:hover{border-color:var(--teal);transform:translateY(-2px)}
+.admcard h2{font-family:var(--serif);font-size:1.12rem;margin:0 0 6px;color:var(--ink)}
+.admcard p{margin:0;font-size:.9rem;color:var(--body)}
+
+.admtable{width:100%;border-collapse:collapse;font-size:.92rem;margin:0 0 6px}
+.admtable th,.admtable td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--card-line);vertical-align:top}
+.admtable th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--body);font-weight:700}
+.admtable tbody tr:hover{background:var(--cream)}
+.admsub{display:block;font-size:.76rem;color:var(--body);margin-top:2px}
+.admtag{display:inline-block;padding:2px 9px;border-radius:999px;font-size:.78rem;font-weight:700}
+.admtag.is-live{background:var(--teal-soft);color:var(--teal-dark)}
+.admtag.is-draft{background:#FBE9D8;color:#8A5A1E}
+.admbtn{padding:6px 12px;font-size:.84rem}
+.admnote{color:var(--body);margin-top:10px}
+.admerr{background:#FCECEC;border:1px solid #E7B4B4;border-left:4px solid var(--accent);color:#8A2B16;
+  border-radius:10px;padding:11px 14px;font-weight:600}
+.admstat{display:flex;flex-wrap:wrap;gap:20px;margin:0 0 16px}
+.admstat span{font-size:.95rem;color:var(--body)}
+.admstat b{font-size:1.4rem;color:var(--ink);font-family:var(--serif);margin-right:4px}
+
+.admnlist{list-style:none;margin:0;padding:0}
+.admnlist li{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;
+  padding:12px 0;border-bottom:1px solid var(--card-line)}
+.admnlist li strong{display:block;color:var(--ink)}
+.admnbody{display:block;font-size:.9rem;color:var(--body);margin-top:3px}
+
+.admreview{background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;padding:16px 18px;margin:0 0 14px}
+.admreview.is-hidden{opacity:.65;background:var(--cream)}
+.admreview-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 6px}
+.admstars{color:var(--gold);letter-spacing:1px}
+.admreview-h{font-weight:700;color:var(--ink);margin:0 0 4px}
+.admreview-b{margin:0 0 12px;color:var(--ink);white-space:pre-line}
+.admreview-act{display:flex;gap:10px}
+@media (max-width:560px){
+  .admtable{display:block;overflow-x:auto;white-space:nowrap}
+}
