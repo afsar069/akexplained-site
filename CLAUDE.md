@@ -440,8 +440,11 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     in step by trigger — **no questions**. `tools/sync_catalog.py` copies the live rows into
     `_data/paperCatalog.json`, and the pages are built from that (rule 3: the UP AP mock tests already are).
     Hub pages stay static; nothing is fetched from Supabase when a page is viewed.
-  - Only exams with an open hub page may be a Category (`_data/paperCategories.js`, which stops the build if a
-    listed hub is missing). TGT is not offered: it has no page yet.
+  - Category comes from `_data/paperCategories.js` (which stops the build if a listed hub page is missing): the
+    exams with an open hub (UGC NET, UP PGT, UP Assistant Professor), plus **English Literature MCQ set (no exam)**
+    for a login MCQ set under `/quizzes/mcq/<age>/`. The literature category writes no `examId` (so
+    `paper_catalog.exam_id` stays null, like the login MCQ sets loaded before this tool). TGT is not offered: it
+    has no page yet.
   - Changing a live paper: upload it again with a **raised rev**. Nobody can delete a paper from a browser
     (no DELETE grant, no DELETE policy); hide it by setting `status = 'draft'`.
 - **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of

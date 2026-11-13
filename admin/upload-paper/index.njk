@@ -60,10 +60,10 @@ permalink: /admin/upload-paper/index.html
         <select id="upExam">
           <option value="">Choose one&hellip;</option>
           {%- for c in paperCategories %}
-          <option value="{{ c.examId }}">{{ c.label }}</option>
+          <option value="{{ c.value }}" data-exam="{{ c.examId or '' }}">{{ c.label }}</option>
           {%- endfor %}
         </select>
-        <span class="hint">Only exams that already have a page on the site are listed.</span>
+        <span class="hint">Only exams and sections that already have a page on the site are listed. Pick &ldquo;English Literature MCQ set&rdquo; for a set that is not for one exam.</span>
       </label>
       <label class="field">
         <span>Status</span>

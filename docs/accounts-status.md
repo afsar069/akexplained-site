@@ -63,7 +63,8 @@ before a live set is turned into a draft. A broken file cannot be uploaded at al
 rows back and shows a short code per level, computed over ids, questions, options, answers, reasons and tags, from
 the file and from the database — matching codes prove the database holds exactly the file. The Category list comes
 from `_data/paperCategories.js`, which **stops the build** if a listed exam's hub page is missing (today: UGC NET,
-UP PGT, UP Assistant Professor; TGT is not offered because it has no page).
+UP PGT, UP Assistant Professor, and "English Literature MCQ set (no exam)" for a login MCQ set under
+`/quizzes/mcq/<age>/`, added 2026-11-13 — it writes no `examId`; TGT is not offered because it has no page).
 **Browser test: 61 checks, all passing** (Playwright, Supabase mocked, guest / student / owner; broken file, file
 that is not JSON, same rev, higher rev, unknown tag, two levels at once, a database refusal shown as it is, and no
 sideways scroll at 375px).

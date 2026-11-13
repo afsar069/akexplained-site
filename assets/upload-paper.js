@@ -368,18 +368,22 @@
       if (!client || !papers.length) return;
 
       var title = String(titleInput.value || '').trim();
-      var examId = String(examSelect.value || '');
+      var category = String(examSelect.value || '');
+      // The chosen category carries its real exam id in data-exam; the English Literature sets
+      // belong to no exam, so it is empty and no examId is written (paper_catalog.exam_id stays null).
+      var chosen = examSelect.options[examSelect.selectedIndex];
+      var examId = chosen ? String(chosen.getAttribute('data-exam') || '') : '';
       var status = statusSelect.value === 'live' ? 'live' : 'draft';
 
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
-      if (!examId) { fail(goError, 'Choose a category.'); return; }
+      if (!category) { fail(goError, 'Choose a category.'); return; }
 
       var kind = /mock-test/.test(setId) ? 'mock-test' : 'mcq-set';
       var rows = papers.map(function (p) {
         var out = {};
         Object.keys(p.body).forEach(function (k) { out[k] = p.body[k]; });
         out.title = title;
-        out.examId = examId;
+        if (examId) { out.examId = examId; } else { delete out.examId; }
         out.kind = kind;
         return {
           set_id: p.body.setId,
