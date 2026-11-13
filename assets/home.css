@@ -2,13 +2,101 @@
    AK Explained — landing page only
    ========================================================== */
 
+/* ---------- Home account bar (thin strip above the hero) ----------
+   A guest sees Log in / Sign up. A logged-in student sees the
+   notification bell and their avatar menu, so they get their notices
+   and their account right here, without opening the dashboard.
+   Behaviour: assets/account-menu.js (+ assets/auth.js for login state). */
+.homebar{
+  box-sizing:border-box;
+  display:flex;align-items:center;gap:12px;
+  width:min(calc(var(--maxw) - 44px), calc(100% - 32px));
+  margin:14px auto 2px;padding:7px 10px 7px 14px;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
+  box-shadow:0 10px 30px -24px rgba(22,48,74,.5);
+}
+.homebar-brand{display:flex;align-items:center;gap:9px;color:var(--ink)}
+.homebar-brand img{width:32px;height:32px;border-radius:50%;border:2px solid #fff;box-shadow:0 2px 8px rgba(22,48,74,.16)}
+.homebar-brand .nm{font-family:var(--serif);font-weight:700;font-size:1.02rem;color:var(--ink);line-height:1}
+.homebar-brand .nm i{color:var(--teal);font-style:normal}
+.homebar-tools{margin-left:auto;position:relative;display:flex;align-items:center;gap:9px}
+
+/* Guest buttons */
+.homebar-guest{display:flex;align-items:center;gap:8px}
+.homebar-acct{display:inline-flex;align-items:center;gap:9px}
+/* A CSS display rule overrides the plain [hidden] attribute, so guard both:
+   auth.js shows exactly one of these by login state. */
+.homebar-guest[hidden],.homebar-acct[hidden]{display:none}
+.homebar-login{font-weight:600;color:var(--ink);padding:7px 15px;border-radius:999px;border:1px solid var(--border);background:var(--tint);transition:border-color .2s,color .2s,box-shadow .2s}
+.homebar-login:hover{border-color:var(--teal);color:var(--teal-dark);box-shadow:var(--glow)}
+.homebar-signup{font-weight:700;color:#fff;padding:7px 16px;border-radius:999px;background:var(--teal);border:1px solid var(--teal);transition:background .2s}
+.homebar-signup:hover{background:var(--teal-dark)}
+
+/* Notification bell (uses the shared .dashbell-dot / .dashbell-panel styles) */
+.homebar-bell{
+  position:relative;flex:none;display:inline-flex;align-items:center;justify-content:center;
+  width:38px;height:38px;border-radius:11px;cursor:pointer;
+  background:var(--tint);border:1px solid var(--border);color:var(--teal-dark);
+  transition:background .2s,border-color .2s,color .2s;
+}
+.homebar-bell:hover:not(:disabled){background:var(--teal);border-color:var(--teal);color:#fff}
+.homebar-bell:disabled{cursor:not-allowed;opacity:.5}
+.homebar-bellpanel{right:0}
+
+/* Avatar button + caret */
+.homebar-user{
+  display:inline-flex;align-items:center;gap:8px;cursor:pointer;
+  padding:4px 11px 4px 5px;border-radius:999px;
+  background:var(--tint);border:1px solid var(--border);color:var(--ink);
+  transition:background .2s,border-color .2s,transform .2s;
+}
+.homebar-user:hover{background:#fff;border-color:var(--teal);transform:translateY(-1px)}
+.homebar-av{width:30px;height:30px;border-radius:50%;object-fit:cover;background:var(--border);flex:none}
+.homebar-av[hidden]{display:none}
+.homebar-name{font-weight:600;font-size:.9rem;max-width:12ch;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.homebar-caret{flex:none;color:var(--teal);transition:transform .2s}
+.homebar-user[aria-expanded="true"] .homebar-caret{transform:rotate(180deg)}
+
+/* The drop-down menu */
+.homebar-menu{
+  position:absolute;top:calc(100% + 8px);right:0;z-index:40;width:252px;max-width:84vw;
+  background:#fff;border:1px solid var(--card-line);border-radius:14px;
+  box-shadow:0 18px 44px -20px rgba(22,48,74,.55);overflow:hidden;
+}
+.homebar-menu[hidden]{display:none}
+.homebar-menu-head{display:flex;align-items:center;gap:11px;padding:13px 15px;background:var(--cream);border-bottom:1px solid var(--card-line)}
+.homebar-menu-head img{width:40px;height:40px;border-radius:50%;object-fit:cover;background:var(--border);flex:none}
+.homebar-menu-head b{display:block;font-size:.95rem;color:var(--ink);line-height:1.25;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:15ch}
+.homebar-menu-head i{font-style:normal;font-size:.76rem;color:var(--body)}
+.homebar-menu-item{
+  display:flex;align-items:center;gap:11px;width:100%;box-sizing:border-box;
+  padding:11px 15px;font-family:var(--sans);font-size:.92rem;font-weight:500;color:var(--ink);
+  background:none;border:none;border-top:1px solid var(--card-line);cursor:pointer;text-align:left;
+  transition:background .18s,color .18s;
+}
+.homebar-menu-head + .homebar-menu-item{border-top:none}
+.homebar-menu-item:hover{background:var(--cream);color:var(--teal-dark)}
+.homebar-menu-item svg{flex:none;width:18px;height:18px;color:var(--teal)}
+.homebar-menu-out{color:var(--accent)}
+.homebar-menu-out:hover{color:var(--accent);background:#FCEDED}
+.homebar-menu-out svg{color:var(--accent)}
+
+/* The mobile top bar already carries the brand; the home bar only needs its
+   tools there. And the home bar now carries login, so hide the mobile top
+   bar's own Login control on the home page (no duplicate). */
+@media (max-width:1023px){
+  .homebar{margin-top:10px}
+  .homebar-brand{display:none}
+}
+.home .topauth{display:none}
+
 /* ---------- Hero ---------- */
 .hero{
   position:relative;overflow:hidden;text-align:center;
   background:var(--cream) url('/assets/hero-floral.webp') center/cover no-repeat;
   border-bottom:2px solid var(--border);
-  padding:clamp(30px,5vw,62px) 0 clamp(26px,4vw,46px);
-  min-height:clamp(300px,33vw,430px);display:flex;align-items:center;
+  padding:clamp(22px,3.4vw,40px) 0 clamp(20px,3vw,34px);
+  min-height:clamp(220px,24vw,320px);display:flex;align-items:center;
 }
 .hero::before{
   content:"";position:absolute;inset:0;pointer-events:none;
@@ -23,14 +111,14 @@
 .hero h1 .sub{display:block;font-size:.62em;font-weight:600;color:var(--teal)}
 .hero .motto{
   font-family:var(--serif);font-size:clamp(.95rem,1.6vw,1.12rem);color:#3D4B59;
-  margin-bottom:20px;letter-spacing:.01em;
+  margin-bottom:15px;letter-spacing:.01em;
 }
 
 /* Today in Literary History */
 .today{
   display:inline-flex;align-items:center;gap:13px;flex-wrap:wrap;justify-content:center;
   background:#fff;border:1px solid var(--border);border-left:4px solid var(--gold);
-  border-radius:13px;padding:11px 20px;margin-bottom:18px;text-align:left;
+  border-radius:13px;padding:10px 20px;margin-bottom:15px;text-align:left;
   box-shadow:0 4px 16px rgba(22,48,74,.07);max-width:100%;
 }
 .today .tag{
@@ -68,7 +156,7 @@
 #searchPanel .empty{padding:12px 14px;font-size:.9rem;margin:0}
 
 /* Animated opening line */
-.quoteline{margin-top:20px;min-height:3.4em}
+.quoteline{margin-top:15px;min-height:3.4em}
 .quoteline .q{
   font-family:var(--serif);font-style:italic;color:var(--ink);
   font-size:clamp(.92rem,1.5vw,1.04rem);line-height:1.5;max-width:60ch;margin:0 auto;

@@ -20,7 +20,7 @@
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/home.css">
 </head>
-<body>
+<body class="home">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="topbar">
@@ -99,6 +99,68 @@
 </header>
 
 <main id="main">
+
+<!-- ====== ACCOUNT BAR ======
+     A thin strip above the hero. A guest sees "Log in" and "Sign up".
+     A logged-in student sees a notification bell (the same notices as the
+     dashboard) and their avatar; the avatar opens a small menu (My account,
+     My dashboard, Write a review, Log out). Login state, the name and the
+     avatar are set by assets/auth.js (the shared data-auth- controls); the
+     bell and the menu are wired by assets/account-menu.js. -->
+<div class="homebar" aria-label="Your account">
+  <a class="homebar-brand" href="/" aria-label="AK Explained home">
+    <img src="/assets/logo.png" alt="" width="32" height="32">
+    <span class="nm">AK <i>Explained</i></span>
+  </a>
+  <div class="homebar-tools">
+    <!-- Guest: log in / sign up -->
+    <span class="homebar-guest" data-guest-only>
+      <a class="homebar-login" href="/login/">Log in</a>
+      <a class="homebar-signup" href="/login/">Sign up</a>
+    </span>
+
+    <!-- Logged in: notification bell + avatar menu -->
+    <span class="homebar-acct" data-auth-only hidden>
+      <button class="homebar-bell" type="button" disabled
+              title="No notifications yet" aria-label="No notifications yet">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor"
+             stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 9a6 6 0 1 0-12 0c0 5-2 6-2 6h16s-2-1-2-6"/><path d="M10.5 20a2 2 0 0 0 3 0"/>
+        </svg>
+      </button>
+
+      <button class="homebar-user" type="button" data-auth-link
+              aria-haspopup="true" aria-expanded="false" aria-label="Your account menu">
+        <img class="homebar-av" data-auth-avatar alt="" width="30" height="30" hidden>
+        <span class="homebar-name" data-auth-label>Login</span>
+        <svg class="homebar-caret" viewBox="0 0 24 24" width="15" height="15" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="m6 9 6 6 6-6"/>
+        </svg>
+      </button>
+
+      <div class="homebar-menu" role="menu" hidden>
+        <div class="homebar-menu-head"></div>
+        <a class="homebar-menu-item" role="menuitem" href="/account/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8.5" r="3.6"/><path d="M4.5 20c.9-3.8 3.9-5.8 7.5-5.8s6.6 2 7.5 5.8"/></svg>
+          My account
+        </a>
+        <a class="homebar-menu-item" role="menuitem" href="/dashboard/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20v-6"/><path d="M12 20V5"/><path d="M19 20v-10"/></svg>
+          My dashboard
+        </a>
+        <a class="homebar-menu-item" role="menuitem" href="/write-a-review/">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+          Write a review
+        </a>
+        <button class="homebar-menu-item homebar-menu-out" role="menuitem" type="button" data-homebar-logout>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><path d="m16 17 5-5-5-5"/><path d="M21 12H9"/></svg>
+          Log out
+        </button>
+      </div>
+    </span>
+  </div>
+</div>
 
 <!-- ====== HERO ====== -->
 <section class="hero">
@@ -408,6 +470,7 @@
 
 <script src="/assets/nav.js" defer></script>
 <script src="/assets/avatars.js" defer></script>
+<script src="/assets/account-menu.js" defer></script>
 <script src="/assets/home.js" defer></script>
 </body>
 </html>
