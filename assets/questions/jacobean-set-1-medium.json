@@ -1,0 +1,873 @@
+{
+  "setId": "jacobean-set-1",
+  "rev": 1,
+  "age": "jacobean",
+  "ageName": "Jacobean Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/jacobean-and-caroline-age/",
+  "notesTitle": "Jacobean and Caroline — the full notes",
+  "topics": {
+    "ground": "The age of James I",
+    "drama": "Drama and the court masque",
+    "poetry": "Donne & Metaphysical poetry",
+    "prose": "Bacon, Burton & the Bible",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Exam-grade direct and complex questions across Jacobean drama, Metaphysical poetry, prose, and court masques.",
+  "questions": [
+    {
+      "id": "jacobean-set-1-m-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "At which Fleet Street tavern near Temple Bar—housing the 'Apollo Room' inscribed with his Latin convivial rules—did Ben Jonson preside over the gatherings of his younger poetic followers known as the 'Sons of Ben'?",
+      "options": [
+        "The Devil Tavern",
+        "The Boar's Head Tavern",
+        "The Tabard Inn",
+        "Will's Coffeehouse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "While Ben Jonson had earlier frequented the Mermaid Tavern in Bread Street, in his later Jacobean and Caroline years he and the 'Sons of Ben' congregated in the Apollo Room of the Devil Tavern near Temple Bar.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-m-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In September 1598 Ben Jonson killed which fellow actor of Philip Henslowe's company in a duel at Hoxton Fields, escaping the gallows only by pleading 'benefit of clergy' and having his thumb branded?",
+      "options": [
+        "Richard Burbage",
+        "Gabriel Spencer",
+        "Edward Alleyn",
+        "Robert Armin"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ben Jonson fought a duel with the actor Gabriel Spencer in September 1598, killed him, was tried at the Old Bailey, and escaped hanging by reading his 'neck-verse' in Latin to claim benefit of clergy.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In 1597 Ben Jonson was imprisoned in the Marshalsea Prison after co-authoring and acting in which now-lost satirical comedy—begun by Thomas Nashe for Philip Henslowe—that offended the Privy Council?",
+      "options": [
+        "The Knight of the Burning Pestle",
+        "Satiromastix",
+        "The Isle of Dogs",
+        "A Chaste Maid in Cheapside"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 1597 Philip Henslowe engaged Ben Jonson to finish Thomas Nashe's satirical comedy The Isle of Dogs (now lost); its seditious satire caused the Privy Council to jail Jonson and briefly order the London playhouses closed.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In Ben Jonson's 1603 Roman tragedy Sejanus His Fall, first performed by the King's Men at the Globe Theatre, which two famous members of the company are recorded in the 1616 Folio as having acted in the original cast?",
+      "options": [
+        "John Lyly and George Peele",
+        "Christopher Marlowe and Thomas Kyd",
+        "Edward Alleyn and Philip Henslowe",
+        "William Shakespeare and Richard Burbage"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ben Jonson's Roman tragedy Sejanus His Fall (1603) was staged by the King's Men at the Globe with both William Shakespeare (in one of his last recorded acting roles) and lead tragedian Richard Burbage in the cast.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "When the young Francis Bacon accompanied his father Sir Nicholas Bacon to the royal court, by what affectionate nickname did Queen Elizabeth I jestingly address the precocious boy?",
+      "options": [
+        "'My little Lord Keeper'",
+        "'My little Shepherd of the Ocean'",
+        "'My little Master of the Revels'",
+        "'My little Star-Lover'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Because Francis Bacon's father Sir Nicholas Bacon served as Lord Keeper of the Great Seal under Queen Elizabeth I, the Queen was struck by the boy's grave wit and jestingly called him 'my little Lord Keeper'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-06",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "jacobean-era",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the reign of King James I (1603–1625)?\n(A) In 1603 James VI of Scotland became James I of England under the Stuart dynasty and became patron of the King's Men.\n(B) In 1604 James I commissioned forty-seven scholars to prepare the Authorized Version of the Bible (published 1611).\n(C) In 1605 James I ordered the permanent closure of all London playhouses for the rest of his reign.\n(D) In 1621 Lord Chancellor Francis Bacon was impeached for accepting bribes, fined £40,000, and barred from office.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (C) is false because King James I and Queen Anne were generous patrons of the theatre and court masques; the London theatres were not closed until the Puritan Parliament's ordinance of 1642.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-m-07",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the life and career of John Donne (1572/73–1631)?\n(A) Born into a Roman Catholic family in London, Donne was debarred from taking a university degree because of his religion and secretly married Anne More in 1601.\n(B) Donne served twice as a Member of Parliament (in 1601 and 1614) before taking Anglican holy orders in 1615 at the urging of King James I.\n(C) Donne published a complete folio edition of his Songs and Sonnets and Holy Sonnets in 1616 alongside Ben Jonson's Workes.\n(D) Appointed Dean of St. Paul's in 1621, Donne became the most celebrated preacher of the Jacobean Church, and his first biography was written by Izaak Walton.",
+      "options": [
+        "B, C and D only",
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (C) is false because John Donne circulated his secular love lyrics and Holy Sonnets in manuscript during his lifetime; the first collected edition of his Poems was published posthumously in 1633.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-08",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following milestones in the public career of Francis Bacon under King James I in chronological order from earliest to latest:\n(A) Knighted at the accession of King James I\n(B) Appointed Solicitor General of England\n(C) Appointed Attorney General of England\n(D) Appointed Lord High Chancellor of England and created Baron Verulam",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Francis Bacon was knighted in 1603 (A), appointed Solicitor General in 1607 (B), promoted to Attorney General in 1613 (C), and made Lord Keeper in 1617 before becoming Lord High Chancellor and Baron Verulam in 1618 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-09",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Critical or Poetic Tribute to Ben Jonson) with List II (Author):\n\nList I (Critical or Poetic Tribute to Ben Jonson)\n(A) 'An Ode for Him' ('Ah Ben! / Say how, or when / Shall we thy guests / Meet at those lyric feasts / Made at the Sun, / The Dog, the Triple Tun?')\n(B) 'If I would compare him with Shakespeare, I must acknowledge him the more correct poet, but Shakespeare the greater wit... I admire him, but I love Shakespeare'\n(C) 'Jonson brought critical learning into vogue'\n(D) 'Jonson is the legitimate heir of Marlowe... his work is \"of the surface\", carefully avoiding the word \"superficial\"'\n\nList II (Author)\n(I) Robert Herrick\n(II) John Dryden\n(III) Alexander Pope\n(IV) T. S. Eliot",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Robert Herrick wrote 'An Ode for Ben Jonson' recalling the tavern feasts (A-I), John Dryden compared Jonson and Shakespeare in An Essay of Dramatic Poesy (B-II), Alexander Pope noted that Jonson brought critical learning into vogue (C-III), and T. S. Eliot assessed Jonson in his 1919 essay 'Ben Jonson' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-10",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "jacobean-drama",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Collaborative Play of the Jacobean Age) with List II (Co-Authors):\n\nList I (Collaborative Play)\n(A) Eastward Ho (1605)\n(B) Westward Ho and Northward Ho (published 1607)\n(C) The Witch of Edmonton (1621)\n(D) The Two Noble Kinsmen and Henry VIII (1613)\n\nList II (Co-Authors)\n(I) Ben Jonson, George Chapman, and John Marston\n(II) John Webster and Thomas Dekker\n(III) Thomas Dekker, John Ford, and William Rowley\n(IV) William Shakespeare and John Fletcher",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Eastward Ho (1605) was written by Jonson, Chapman, and Marston (A-I), Westward Ho and Northward Ho (1607) by Webster and Dekker (B-II), The Witch of Edmonton (1621) by Dekker, Ford, and Rowley (C-III), and The Two Noble Kinsmen and Henry VIII by Shakespeare and Fletcher (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-11",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "measure-for-measure",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's Measure for Measure (1604), whose severed head is ultimately sent to the deputy Angelo in place of Claudio's after the drunken prisoner Barnardine stubbornly refuses to be executed?",
+      "options": [
+        "Lucio, a fantastic gentleman of Vienna",
+        "Pompey Bum, a tapster serving Mistress Overdone",
+        "Ragozine, a pirate who died in prison of a fever",
+        "Froth, a foolish customer arrested by Elbow"
+      ],
+      "correct_option_id": 2,
+      "explanation": "When the unrepentant prisoner Barnardine refuses to be executed in Act IV of Measure for Measure, the Provost substitutes the head of Ragozine, a notorious pirate of Claudio's age and beard who has just died in the prison of a cruel fever.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-12",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "cymbeline",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's late romance Cymbeline, what name does Princess Imogen adopt when she disguises herself as a page boy and journeys toward Milford Haven in Wales?",
+      "options": [
+        "Balthazar",
+        "Cesario",
+        "Ganymede",
+        "Fidele"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Warned by the loyal servant Pisanio that her husband Posthumus Leonatus has been tricked by Iachimo into ordering her death, Princess Imogen disguises herself as a boy under the name Fidele ('Faithful') and shelters in Belarius's Welsh cave.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-13",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-white-devil",
+      "periodId": "jacobean-era",
+      "question": "In Act V of John Webster's The White Devil (1612), what disguise does Francisco de Medici, Duke of Florence, assume at Padua to avenge the murder of his sister Isabella?",
+      "options": [
+        "Mulinassar, a Moorish soldier",
+        "Friar Lodowick of Vienna",
+        "Scoto of Mantua, an Italian mountebank",
+        "Piato, a discontented courtier"
+      ],
+      "correct_option_id": 0,
+      "explanation": "To avenge the poisoning of his sister Isabella by the Duke of Brachiano, Francisco de Medici enters Brachiano's court at Padua disguised as Mulinassar, a Moor, accompanied by Count Lodovico and Gasparo disguised as Capuchin monks.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-14",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-duchess-of-malfi",
+      "periodId": "jacobean-era",
+      "question": "In Act V of John Webster's The Duchess of Malfi, with what clinical delusion ('lycanthropia') is Duke Ferdinand stricken after ordering the strangulation of his twin sister the Duchess?",
+      "options": [
+        "He believes that his body is made of brittle glass",
+        "He goes mad and believes that he is a wolf",
+        "He imagines that he is the ghost of Julius Caesar",
+        "He loses his voice and can only communicate in Latin"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Overwhelmed by remorse after Bosola strangles the Duchess ('Cover her face; mine eyes dazzle: she died young'), Duke Ferdinand is stricken with lycanthropia in Act V, believing himself to be a wolf that digs up dead bodies at midnight.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-15",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-alchemist",
+      "periodId": "jacobean-era",
+      "question": "In Ben Jonson's comedy The Alchemist (1610), which sceptical gamester sees through the alchemy fraud of Subtle, Face, and Dol Common and disguises himself as a Spanish count to rescue Dame Pliant?",
+      "options": [
+        "Tribulation Wholesome",
+        "Abel Drugger",
+        "Pertinax Surly",
+        "Dapper the clerk"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Unlike his gullible friend Sir Epicure Mammon, the shrewd gamester Pertinax Surly refuses to believe in the philosopher's stone and disguises himself as a Spanish don ('Don Diego') to expose Subtle and Face and win the wealthy widow Dame Pliant.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-16",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "king-lear",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the plot, characters, and stage history of Shakespeare's King Lear (1605–06)?\n(A) In the subplot, Gloucester's legitimate son Edgar flees onto the heath disguised as the mad beggar 'Tom o' Bedlam' ('Poor Tom') and later guides his blinded father toward Dover.\n(B) Both Goneril and Regan lust after Gloucester's illegitimate son Edmund; Goneril poisons the widowed Regan and later stabs herself after her treasonous letter is exposed.\n(C) At the end of Shakespeare's tragedy, Cordelia defeats Edmund's army, restores Lear to the British throne, and marries the Duke of Burgundy.\n(D) From 1788 to 1820 King Lear was banned from the English stage during the periods of mental illness of King George III.",
+      "options": [
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, B and D only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statement (C) is false because in Shakespeare's tragedy the French forces are defeated, Cordelia is hanged in prison on Edmund's order, and Lear dies of grief holding her body.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-17",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "volpone",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe Ben Jonson's comedy Volpone, or The Fox (1605–06)?\n(A) Set in Venice, the play gives its principal characters Italian beast-fable names: Volpone ('the Fox'), Mosca ('the Fly'), Voltore ('the Vulture'), Corbaccio ('the Raven'), and Corvino ('the Crow').\n(B) Disguised in the public square below Corvino's window as a mountebank selling a miraculous elixir, Volpone catches sight of Corvino's virtuous wife Celia when she throws down her handkerchief.\n(C) Corbaccio's upright son Bonario leaps out of hiding and rescues Celia when Volpone attempts to force himself upon her.\n(D) At the end of the play, the Venetian court pardons Volpone and Mosca and rewards them with Corbaccio's estate.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statement (D) is false because when Mosca tries to lock Volpone out of his fortune, Volpone unmasks himself in court and the Venetian Avocatori sentence Mosca to the galleys, Volpone to the hospital of the Incurabili in irons, and the legacy-hunters to severe penalties.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-18",
+      "qtype": "chrono",
+      "topic": "drama",
+      "topicId": "macbeth",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following dramatic events in Shakespeare's Macbeth (1606) in the sequence in which they occur in the play:\n(A) The three witches hail Macbeth on the heath as Thane of Glamis, Thane of Cawdor, and 'king hereafter'\n(B) Macbeth murders King Duncan at Inverness and frames the sleeping chamberlains\n(C) Banquo is assassinated by hired murderers while Fleance escapes, and Banquo's ghost appears at Macbeth's royal banquet\n(D) The witches' cauldron apparitions warn Macbeth to beware Macduff, promise that none of woman born shall harm him, and pledge safety until Birnam Wood comes to Dunsinane",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "A → B → D → C"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Act I the witches greet Macbeth and Banquo on the heath (A), in Act II Macbeth murders Duncan at Inverness (B), in Act III Banquo is murdered and his ghost haunts the banquet (C), and in Act IV Macbeth visits the witches' cauldron and sees the three apparitions (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-19",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "shakespearean-tragedy",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Quotation from Shakespeare's Jacobean Plays) with List II (Play and Speaker):\n\nList I (Quotation)\n(A) 'As flies to wanton boys are we to th' gods; / They kill us for their sport'\n(B) 'Some rise by sin, and some by virtue fall'\n(C) 'I kiss'd thee ere I kill'd thee: no way but this, / Killing myself, to die upon a kiss'\n(D) 'Give me my robe, put on my crown; I have / Immortal longings in me'\n\nList II (Play and Speaker)\n(I) The blinded Earl of Gloucester in King Lear\n(II) Escalus in Measure for Measure\n(III) Othello in Othello\n(IV) Cleopatra in Antony and Cleopatra",
+      "options": [
+        "A-I, B-III, C-II, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Gloucester speaks 'As flies to wanton boys' in King Lear (A-I), Escalus speaks 'Some rise by sin' in Measure for Measure (B-II), Othello speaks 'I kiss'd thee ere I kill'd thee' (C-III), and Cleopatra calls for her robe and crown (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-20",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "shakespeares-romances",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Shakespearean Late Play) with List II (Key Plot Episode):\n\nList I (Shakespearean Late Play)\n(A) Pericles, Prince of Tyre\n(B) The Winter's Tale\n(C) The Tempest\n(D) Timon of Athens\n\nList II (Key Plot Episode)\n(I) Narrated by John Gower as Chorus, the hero solves Antiochus's riddle and reunites with Thaisa and Marina at Ephesus\n(II) After sixteen years of Leontes's penitence, Paulina unveils a 'statue' of Queen Hermione that comes to life\n(III) Assisted by Ariel, the deposed Duke of Milan raises a storm and forgives his usurping brother Antonio\n(IV) Ruined by prodigal generosity, an Athenian lord serves his false friends covered dishes of stones and boiling water",
+      "options": [
+        "A-IV, B-II, C-III, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pericles is narrated by Gower and ends at Ephesus (A-I), The Winter's Tale awakens Hermione's statue (B-II), The Tempest dramatizes Prospero's magic and forgiveness (C-III), and Timon of Athens stages the banquet of stones and water (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In which sombre lyric by John Donne does the bereaved speaker meditate at midnight on the winter solstice, calling himself 'every dead thing, / In whom love wrought new alchemy' and 'the grave / Of all, that's nothing'?",
+      "options": [
+        "'A Nocturnal upon S. Lucy's Day, Being the Shortest Day'",
+        "'A Valediction: Of My Name, in the Window'",
+        "'The Damp'",
+        "'Love's Alchemy'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Set at midnight on St. Lucy's Day (13 December, the shortest day of the year in the Julian calendar), Donne's 'A Nocturnal upon S. Lucy's Day' portrays the mourning speaker as the quintessence of 'absence, darkness, death; things which are not'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Whose death in August 1617—five days after giving birth to their twelfth child—inspired John Donne's deeply personal Holy Sonnet XVII beginning 'Since she whom I lov'd hath paid her last debt / To Nature, and to hers, and my good is dead'?",
+      "options": [
+        "His patroness Lucy, Countess of Bedford",
+        "His wife Anne More",
+        "Queen Anne of Denmark",
+        "Elizabeth Drury, daughter of Sir Robert Drury"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Donne's wife Anne More died on 15 August 1617 after giving birth to a stillborn twelfth child; Donne mourned her loss in Holy Sonnet XVII ('Since she whom I lov'd hath paid her last debt').",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In which poem by John Donne does the anguished speaker enter a spring landscape surrounded by trees, lament 'the spider love, which transubstantiates all, / And can convert manna to gall', and bid lovers bring crystal vials to collect his tears as 'love's wine'?",
+      "options": [
+        "'The Ecstasy'",
+        "'The Bait'",
+        "'Twickenham Garden'",
+        "'Air and Angels'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Named after the residence of Donne's patroness Lucy, Countess of Bedford, 'Twickenham Garden' contrasts the blooming spring garden with the lover's inward grief and compares his tears to 'love's wine'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In his 1619 Conversations with William Drummond of Hawthornden, what famous verdict did Ben Jonson pronounce against John Donne's rough, speech-like metrical rhythms?",
+      "options": [
+        "\"He was the poetical son of Edmund Spenser\"",
+        "\"Donne writ no language, but affected the ancients\"",
+        "\"Would he had blotted a thousand of his lines\"",
+        "\"Donne, for not keeping of accent, deserved hanging\""
+      ],
+      "correct_option_id": 3,
+      "explanation": "Although Ben Jonson admired John Donne as 'the first poet in the world in some things', he told William Drummond of Hawthornden that 'Donne, for not keeping of accent, deserved hanging' because of his irregular, colloquial stress patterns.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "metaphysical-poetry",
+      "periodId": "jacobean-era",
+      "question": "Which twentieth-century scholar edited the landmark 1921 anthology Metaphysical Lyrics & Poems of the Seventeenth Century: Donne to Butler (which prompted T. S. Eliot's famous essay) and identified three strains in Donne's love poetry—cynical, Platonic, and conjugal?",
+      "options": [
+        "Sir Herbert Grierson",
+        "George Saintsbury",
+        "Cleanth Brooks",
+        "John Crowe Ransom"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sir Herbert J. C. Grierson edited the two-volume Oxford edition of Donne's Poems (1912) and Metaphysical Lyrics & Poems of the Seventeenth Century: Donne to Butler (1921), distinguishing the cynical, Platonic, and conjugal strains in Donne's love poetry.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-26",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "holy-sonnets",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe John Donne's Holy Sonnets (Divine Meditations)?\n(A) The nineteen Holy Sonnets adapt the fourteen-line sonnet form (typically two quatrains and a sestet) to intense religious themes of mortality, divine judgment, grace, and penitence.\n(B) In Holy Sonnet X ('Death, be not proud'), the speaker humbles personified Death as 'slave to Fate, Chance, kings, and desperate men' and compares death to a 'short sleep' before eternal waking.\n(C) In Holy Sonnet XIV ('Batter my heart, three-person'd God'), the speaker implores the Trinity to overthrow, bend, break, blow, burn, and ravish his soul so that he may be free and chaste.\n(D) All nineteen Holy Sonnets were dedicated to Queen Elizabeth I and printed in Tottel's Miscellany in 1557.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because Tottel's Miscellany was published in 1557 (fifteen years before Donne's birth), whereas Donne's Holy Sonnets were composed in the early seventeenth century and first printed posthumously in 1633 and 1635.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-27",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the non-dramatic poetry of Ben Jonson?\n(A) Jonson included two collections of his verse—Epigrams and The Forest—in his landmark 1616 Folio Workes.\n(B) A third, larger collection of Jonson's miscellaneous poems, titled Underwoods (The Underwood), was published posthumously in the 1640 Folio edition.\n(C) Disgusted by the hostile stage reception of his late comedy The New Inn (1629), Jonson wrote his defiant 'Ode to Himself' beginning 'Come, leave the loathed stage'.\n(D) Jonson never wrote any epigrams, country-house poems, or odes, confining his entire literary career to five-act blank-verse tragedies.",
+      "options": [
+        "B, C and D only",
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (D) is false because Ben Jonson was a master of the classical epigram, the country-house poem ('To Penshurst'), the lyric ('Song: To Celia'), and the Pindaric ode ('To the Immortal Memory and Friendship of That Noble Pair, Sir Lucius Cary and Sir H. Morison').",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-28",
+      "qtype": "chrono",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following events and dated publications in the life of John Donne in chronological order from earliest to latest:\n(A) Secret marriage to Anne More and brief imprisonment in the Fleet Prison\n(B) Publication of his anti-Catholic polemical tract Pseudo-Martyr and the First Anniversary (An Anatomy of the World)\n(C) Ordination as an Anglican priest at the urging of King James I and death of his wife Anne More\n(D) Appointment as Dean of St. Paul's Cathedral and posthumous first edition of Poems, by J. D.",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Donne secretly married Anne More in 1601 (A), published Pseudo-Martyr in 1610 and An Anatomy of the World in 1611 (B), took Anglican orders in 1615 and lost Anne in 1617 (C), and became Dean of St. Paul's in 1621 before his Poems appeared posthumously in 1633 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-29",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Poem by John Donne) with List II (Key Image or Quotation):\n\nList I (Poem by John Donne)\n(A) Elegy VIII: The Comparison\n(B) The Good-Morrow\n(C) A Valediction: Forbidding Mourning\n(D) Elegy XIX: To His Mistress Going to Bed\n\nList II (Key Image or Quotation)\n(I) Compares the space between the mistress's breasts to the Hellespont\n(II) 'My face in thine eye, thine in mine appears, / And true plain hearts do in the faces rest'\n(III) 'As virtuous men pass mildly away... So let us melt, and make no noise, / No tear-floods, nor sigh-tempests move'\n(IV) 'Come, Madam, come, all rest my powers defy, / Until I labour, I in labour lie'",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Elegy VIII compares the lover's breasts to the Hellespont (A-I), 'The Good-Morrow' celebrates mutual reflection in the lovers' eyes (B-II), 'A Valediction: Forbidding Mourning' opens 'As virtuous men pass mildly away' (C-III), and Elegy XIX opens 'Come, Madam, come' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-30",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "metaphysical-poetry",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Seventeenth-Century Metaphysical or Devotional Work) with List II (Author):\n\nList I (Work)\n(A) The Temple: Sacred Poems and Private Ejaculations ('The Collar', 'Easter Wings')\n(B) Steps to the Temple and Carmen Deo Nostro\n(C) Silex Scintillans ('The Retreat', 'Regeneration')\n(D) Centuries of Meditations\n\nList II (Author)\n(I) George Herbert\n(II) Richard Crashaw\n(III) Henry Vaughan\n(IV) Thomas Traherne",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "George Herbert wrote The Temple (1633, A-I), Richard Crashaw wrote Steps to the Temple (1646) and Carmen Deo Nostro (1652, B-II), Henry Vaughan wrote Silex Scintillans (1650/1655, C-III), and Thomas Traherne wrote the devotional prose Centuries of Meditations (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "jacobean-set-1-m-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "the-advancement-of-learning",
+      "periodId": "jacobean-era",
+      "question": "In Book I of The Advancement of Learning (1605), which three principal distempers or obstacles to learning does Francis Bacon identify—corresponding to 'delicate learning', 'contentious learning', and 'fantastical learning'?",
+      "options": [
+        "Navigation, printing with movable type, and gunpowder artillery",
+        "Epic poetry, pastoral romance, and Senecan revenge tragedy",
+        "Rhetoric (vain words), medieval scholasticism (vain matter), and pseudo-science (deceit or untruth)",
+        "Greek tragedy, Roman comedy, and Italian court masques"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In The Advancement of Learning (1605), Francis Bacon diagnoses three chief 'distempers' or obstacles to learning: empty Ciceronian rhetoric ('delicate learning', studying words and not matter), medieval scholasticism ('contentious learning', spinning cobwebs of disputation), and pseudo-science such as astrology and alchemy ('fantastical learning').",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "novum-organum",
+      "periodId": "jacobean-era",
+      "question": "In Francis Bacon's Novum Organum (1620), what specific philosophical term does he apply to the general scientific propositions or laws gradually ascended to by inductive reasoning from empirical particulars?",
+      "options": [
+        "Humours",
+        "Eclogues",
+        "Emblems",
+        "Axioms"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Novum Organum, Francis Bacon calls the true general statements or laws gradually established by inductive investigation of natural phenomena 'Axioms' (ascending from lesser through middle to universal axioms).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "In Francis Bacon's unfinished utopian fable New Atlantis (1627), what is the literal meaning of the Hebrew-derived name 'Bensalem' given to the remote Pacific island where Salomon's House stands?",
+      "options": [
+        "'Son of Peace' (or 'Offspring of Peace')",
+        "'No Place' (or 'Land of Nowhere')",
+        "'Island of the Four Winds'",
+        "'Citadel of the Sun-King'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Francis Bacon's New Atlantis (1627), the utopian island of Bensalem takes its name from the Hebrew Ben ('Son') and Salem ('Peace' or 'Safety'), meaning 'Son of Peace'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "the-anatomy-of-melancholy",
+      "periodId": "jacobean-era",
+      "question": "In which prose genre—named after a Greek cynic and practiced by Marcus Terentius Varro, characterized by encyclopedic length and an attack on pedantic mental attitudes rather than single individuals—do Northrop Frye and literary historians classify Robert Burton's The Anatomy of Melancholy (1621)?",
+      "options": [
+        "The picaresque rogue novel",
+        "Menippean (or Varronian) satire",
+        "The courtesy book for princes",
+        "The Senecan closet tragedy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Northrop Frye (in Anatomy of Criticism) and literary historians classify Robert Burton's encyclopedic, digressive The Anatomy of Melancholy (1621) as a supreme English example of Menippean (or Varronian) satire, which targets intellectual obsessions and mental attitudes rather than individuals.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In John Donne's Devotions upon Emergent Occasions, each of the twenty-three stations—recording a single stage of his near-fatal relapsing fever—is divided into which three sequential subsections?",
+      "options": [
+        "A Strophe, an Antistrophe, and an Epode",
+        "A Prologue, an Antimasque, and an Epilogue",
+        "A Meditation, an Expostulation, and a Prayer",
+        "An Octave, a Volta, and a Sestet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Donne's Devotions upon Emergent Occasions is divided into twenty-three parts (following the daily stages of his illness), and each part consists of three subsections: a Meditation (on the human condition), an Expostulation (debating with God), and a Prayer.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-36",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the philosophical, historical, and utopian prose works of Francis Bacon?\n(A) Of the Proficience and Advancement of Learning, Divine and Human (1605) is divided into two books and addressed to King James I as a defence and survey of human knowledge.\n(B) Novum Organum (1620), written in Latin as the second part of the Instauratio Magna, attacks Aristotelian deductive logic and lists twenty-seven 'prerogative (privileged) instances' to guide inductive investigation.\n(C) The History of the Reign of King Henry VII (1622), written after Bacon's parliamentary impeachment, pioneered modern analytical historiography in English.\n(D) In New Atlantis (1627), Bacon condemned experimental science as witchcraft and proposed abolishing all laboratories and colleges.",
+      "options": [
+        "A, C and D only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statement (D) is false because New Atlantis celebrates experimental science through Salomon's House, a state-supported research college whose cooperative investigations prefigured the founding of the Royal Society in 1662.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-37",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe John Donne's prose satire Ignatius His Conclave (1611)?\n(A) Published in both Latin and English in 1611, the work is a prose satire targeting St. Ignatius of Loyola and the Society of Jesus (the Jesuits).\n(B) In the narrative vision of Hell, Ignatius of Loyola stands beside Lucifer and challenges innovators such as Copernicus, Paracelsus, Machiavelli, and Columbus who seek admission as the greatest disturbers of the world.\n(C) At the end of the satire, Lucifer schemes to send Ignatius and the Jesuits to colonize the Moon (newly observed through Galileo's telescope) so they will cause less trouble in Hell.\n(D) The tract was written to persuade King James I to abolish the Church of England and restore papal supremacy in Britain.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statement (D) is false because Ignatius His Conclave (1611), like Pseudo-Martyr (1610), is a royalist anti-Jesuit polemic defending King James I against papal and Jesuit claims to depose monarchs.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-38",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "king-james-bible",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following landmarks in the history of the English Bible in chronological order from earliest to latest:\n(A) John Wycliffe's manuscript translation of the Bible from the Latin Vulgate\n(B) William Tyndale's first printed English translation of the New Testament from the original Greek\n(C) Miles Coverdale's first complete printed English Bible and the Great Bible\n(D) The Authorized Version (the King James Bible) prepared by forty-seven scholars",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "B → C → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Wycliffe's manuscript English translation from the Latin Vulgate appeared around 1382 (A), William Tyndale's printed English New Testament appeared in 1525/1526 (B), Miles Coverdale's complete printed English Bible (1535) and Great Bible (1539) followed under Henry VIII (C), and the King James Bible was published in 1611 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-39",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "bacons-essays",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Quotation from Francis Bacon's Essays) with List II (Essay Title):\n\nList I (Quotation)\n(A) 'A crowd is not company, and faces are but a gallery of pictures, and talk is but a tinkling cymbal, where there is no love'\n(B) 'It were better to have no opinion of God at all, than such an opinion as is unworthy of him'\n(C) 'Since custom is the principal magistrate of man's life, let men by all means endeavour to obtain good customs'\n(D) 'Beauty is as summer fruits, which are easy to corrupt, and cannot last'\n\nList II (Essay Title)\n(I) Of Friendship\n(II) Of Superstition\n(III) Of Custom and Education\n(IV) Of Beauty",
+      "options": [
+        "A-I, B-III, C-II, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'A crowd is not company' is from 'Of Friendship' (A-I), 'It were better to have no opinion of God' opens 'Of Superstition' (B-II), 'Custom is the principal magistrate' is from 'Of Custom and Education' (C-III), and 'Beauty is as summer fruits' is from 'Of Beauty' (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-40",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Famous Remark on Francis Bacon) with List II (Writer or Thinker):\n\nList I (Famous Remark on Francis Bacon)\n(A) 'If parts allure thee, think how Bacon shin'd, / The wisest, brightest, meanest of mankind'\n(B) Called Francis Bacon 'the father of empiricism' and of experimental philosophy\n(C) Annotated Bacon's Essays as 'Good advice for Satan's kingdom'\n(D) Described Bacon as possessing 'a chymical brain' forever busy with new theories\n\nList II (Writer or Thinker)\n(I) Alexander Pope\n(II) Voltaire\n(III) William Blake\n(IV) Peter Heylyn",
+      "options": [
+        "A-IV, B-II, C-III, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pope called Bacon 'The wisest, brightest, meanest of mankind' (A-I), Voltaire hailed him as the father of empiricism (B-II), Blake annotated Bacon's Essays as 'Good advice for Satan's kingdom' (C-III), and Peter Heylyn credited him with 'a chymical brain' (D-IV).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-m-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "comedy-of-humours",
+      "periodId": "jacobean-era",
+      "question": "In Every Man Out of His Humour (1599), what distinction does Ben Jonson draw between the two types of 'humour'—one in which a single dominant quality genuinely possesses a person body and soul, and another in which a fop merely affects singular clothes and speech?",
+      "options": [
+        "True humour versus adopted humour",
+        "Sanguine humour versus phlegmatic humour",
+        "Tragic hubris versus comic bathos",
+        "Courtly wit versus rustic buffoonery"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Every Man Out of His Humour (1599), Ben Jonson distinguishes between 'true humour', in which one peculiar disposition genuinely possesses a person body and soul, and 'adopted humour' (mannerism), in which a coxcomb affects eccentric dress and speech simply to appear singular.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-m-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "In his critical commonplace book Timber: or, Discoveries (published 1640–1641), what famous reply did Ben Jonson record when the actors praised William Shakespeare for never having 'blotted out a line'?",
+      "options": [
+        "\"He was not of an age, but for all time\"",
+        "\"Would he had blotted a thousand\"",
+        "\"He blotted every second line that he wrote\"",
+        "\"Nature herself was proud of his designs\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Timber: or, Discoveries, Ben Jonson wrote: 'I remember the players have often mentioned it as an honour to Shakespeare, that in his writing (whatsoever he penned) he never blotted out a line. My answer hath been, \"Would he had blotted a thousand.\"'",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-m-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "coriolanus",
+      "periodId": "jacobean-era",
+      "question": "In his 1919 critical essay 'Hamlet and His Problems' (collected in The Sacred Wood), which two late tragedies by William Shakespeare did T. S. Eliot pronounce 'Shakespeare's most assured artistic success'?",
+      "options": [
+        "Othello and Timon of Athens",
+        "King Lear and Macbeth",
+        "Coriolanus and Antony and Cleopatra",
+        "Romeo and Juliet and Titus Andronicus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 'Hamlet and His Problems' (in The Sacred Wood, 1920), T. S. Eliot argued that Hamlet lacked an objective correlative and declared that Coriolanus and Antony and Cleopatra were 'Shakespeare's most assured artistic success'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "zeugma",
+      "periodId": "jacobean-era",
+      "question": "Which rhetorical figure of speech—in which one verb or preposition joins two objects in different senses—is exemplified by the famous dirge in Shakespeare's Cymbeline: 'Golden lads and girls all must, / As chimney-sweepers, come to dust'?",
+      "options": [
+        "Litotes",
+        "Chiasmus",
+        "Synecdoche",
+        "Zeugma"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the funeral song 'Fear no more the heat o' the sun' in Act IV, Scene ii of Cymbeline, the phrase 'come to dust' governs both 'Golden lads and girls' (mortal decay) and 'chimney-sweepers' (their soot-sweeping trade), forming a classic example of zeugma.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "jacobean-set-1-m-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "the-white-devil",
+      "periodId": "jacobean-era",
+      "question": "Which real-life sixteenth-century Italian murder—occurring in Padua on 22 December 1585—served as the historical source for John Webster's tragedy The White Devil (1612)?",
+      "options": [
+        "The murder of Vittoria Accoramboni, Duchess of Bracciano",
+        "The murder of Giovanna d'Aragona, Duchess of Amalfi",
+        "The assassination of Lorenzino de' Medici in Venice",
+        "The poisoning of Sir Thomas Overbury in the Tower of London"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Webster based The White Devil (1612) on contemporary news accounts of the life and murder of Vittoria Accoramboni (who married Paolo Giordano Orsini, Duke of Bracciano) in Padua on 22 December 1585.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-46",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "the-court-masque",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the Jacobean court masque and the collaboration of Ben Jonson and Inigo Jones?\n(A) The court masque combined allegorical poetry, music, song, lavish costumes, and perspective stage machinery, culminating in the 'revels' where masked courtiers danced with the audience.\n(B) From The Masque of Blackness (1605) to Oberon, the Faery Prince (1611) and beyond, Ben Jonson wrote the poetic texts while Inigo Jones designed the architecture, costumes, and movable scenery.\n(C) Jonson and Jones eventually quarrelled bitterly over whether poetry (the 'soul' of the masque) or visual spectacle and carpentry (its 'body') deserved primacy.\n(D) In 1609 Jonson abolished all music, dancing, and stage scenery from the court masque, turning it into a silent closet drama read only in Latin.",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (D) is false because in The Masque of Queens (1609) Jonson enriched the theatrical spectacle by introducing the 'antimasque'—a grotesque dance of witches foiling the main masque—rather than abolishing music or stagecraft.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-m-47",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "shakespeares-problem-plays",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe Shakespeare's 'problem plays' or 'dark comedies'?\n(A) Frederick S. Boas grouped All's Well That Ends Well, Measure for Measure, Troilus and Cressida, and Hamlet as problem plays probing moral dilemmas.\n(B) All's Well That Ends Well (from Boccaccio's Decameron) and Measure for Measure both employ the 'bed-trick' using Helena and Mariana.\n(C) Troilus and Cressida ends bleakly as Cressida betrays Troilus for Diomedes and Achilles's Myrmidons kill Hector.\n(D) All three dark comedies were omitted from the 1623 First Folio and remained unprinted until 1800.",
+      "options": [
+        "B, C and D only",
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statement (D) is false because All's Well That Ends Well, Measure for Measure, and Troilus and Cressida were all printed in the 1623 First Folio (with Troilus and Cressida also published in Quarto in 1609).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-48",
+      "qtype": "chrono",
+      "topic": "terms",
+      "topicId": "john-webster",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following Jacobean plays associated with John Webster in chronological order of their first performance or publication:\n(A) Induction and additions to John Marston's tragicomedy The Malcontent\n(B) Citizen comedies Westward Ho and Northward Ho written in collaboration with Thomas Dekker\n(C) Tragedy The White Devil performed by Queen Anne's Men at the Red Bull Theatre and printed in Quarto\n(D) First Quarto publications of The Duchess of Malfi and the tragicomedy The Devil's Law-Case",
+      "options": [
+        "B → C → A → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Webster wrote the Induction and additions to Marston's The Malcontent in 1604 (A), published Westward Ho and Northward Ho with Dekker in 1607 (B), staged and published The White Devil in 1612 (C), and published The Duchess of Malfi and The Devil's Law-Case in 1623 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-49",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Fool, Clown, or Comic Character in Shakespeare's Jacobean Plays) with List II (Play):\n\nList I (Comic Character)\n(A) Autolycus (a roguish peddler and ballad-seller)\n(B) Pompey Bum (a tapster and bawd serving Mistress Overdone)\n(C) Lavatch (a clown in the household of the Countess of Rousillon)\n(D) Trinculo (King Alonso's jester who drinks with Stephano and Caliban)\n\nList II (Play)\n(I) The Winter's Tale\n(II) Measure for Measure\n(III) All's Well That Ends Well\n(IV) The Tempest",
+      "options": [
+        "A-I, B-II, C-III, D-IV",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Autolycus is the rogue peddler in Bohemia in The Winter's Tale (A-I), Pompey Bum works for Mistress Overdone in Vienna in Measure for Measure (B-II), Lavatch is the Countess's clown in All's Well That Ends Well (C-III), and Trinculo is Alonso's jester in The Tempest (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-m-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "jacobean-drama",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Jacobean Play) with List II (Primary Literary or Historical Source):\n\nList I (Jacobean Play)\n(A) Shakespeare's All's Well That Ends Well\n(B) Shakespeare's Macbeth and King Lear\n(C) Webster's The Duchess of Malfi\n(D) Shakespeare's Troilus and Cressida\n\nList II (Primary Source)\n(I) Giovanni Boccaccio's Decameron (via William Painter's Palace of Pleasure)\n(II) Raphael Holinshed's Chronicles of England, Scotland, and Ireland\n(III) Sixteenth-century Italian history of Giovanna d'Aragona, Duchess of Amalfi\n(IV) Homer's Iliad and medieval Troy narratives",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "All's Well That Ends Well derives from Boccaccio's Decameron (A-I), Macbeth and King Lear draw on Holinshed's Chronicles (B-II), Webster's The Duchess of Malfi dramatizes the historical marriage and murder of Giovanna d'Aragona, Duchess of Amalfi (C-III), and Troilus and Cressida draws on Homer's Iliad and medieval Troy lore (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}
