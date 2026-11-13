@@ -6,6 +6,13 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-13 (Elizabethan Set 1 is a free set, easy and medium, on the feature branch, not on main yet. Early Tudor Set 1 went to main on 2026-11-12, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61. On main already: the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/` and `validate_mcq.py --strict`, Age of Chaucer Set 1 at easy and medium level, the "Questions and time" chooser on every MCQ set page, and the MCQ plan for the other 18 ages.)_
 
+## Result PDF question summary (2026-11-13, branch `fix/result-pdf-question-summary-20261113`)
+
+The print rules in `assets/site.css` no longer hide the CBT result page's question-wise grid. Printed
+numbers use visible correct, incorrect and unanswered colours. `npx eleventy` passes. A browser PDF check
+is pending because headless Chromium stalled in this environment and the cloud browser blocked local files.
+This is on the feature branch, not on `main` yet.
+
 ## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
 
 The owner asked (2026-11-13) to grow the upload page into a small admin area, and chose to leave paid sets +

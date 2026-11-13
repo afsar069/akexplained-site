@@ -2854,11 +2854,10 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-ring .fill,.cbt-trackfill{transition:none}
 }
 /* ---------- chhap kar rakhne layak ----------
-   Sirf report card jata hai: score, ginti, topic ka hisaab, kya majboot
-   kya kamzor. Sawal aur unke jawab nahi — wo chhapne ke liye nahi hain. */
+   Report card mein har sawal ka number aur uska result bhi dikhna chahiye. */
 @media print{
   .cbt-bar,.cbt-side,.cbt-nav,.cbt-submit,
-  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,.cbt-cta,
+  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-cta,
   .site-header,.site-footer,.crumb,.skip{display:none !important}
   .cbt-card .sub{display:none}
   body{background:#fff}
@@ -2887,6 +2886,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
     border-color:#999;background:#fff;page-break-inside:avoid;
   }
   .cbt-two,.cbt-three{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cbt-qgrid{align-content:start;flex:none;gap:5px;margin-top:10px}
+  .cbt-qcell{min-width:0;font-size:8pt;cursor:default;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .cbt-qcell.q-right{background:#d9eee9;border-color:#08786e;color:#111}
+  .cbt-qcell.q-wrong{background:#f7dede;border-color:#b91c1c;color:#111}
+  .cbt-qcell.q-skip{background:#ece9df;border-color:#8d887b;color:#111}
   .cbt-quote{page-break-inside:avoid}
 }
 
