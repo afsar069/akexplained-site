@@ -1,0 +1,873 @@
+{
+  "setId": "elizabethan-set-1",
+  "rev": 1,
+  "age": "elizabethan",
+  "ageName": "Elizabethan Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/renaissance/",
+  "notesTitle": "Renaissance — the full notes",
+  "topics": {
+    "ground": "The age and its playhouses",
+    "poetry": "Spenser, Sidney and the sonnet",
+    "drama": "University Wits & Shakespeare",
+    "prose": "Prose and criticism",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Fifty UGC NET Paper II questions mixing direct recall, multi-statement, chronology and matching across the Elizabethan Age.",
+  "questions": [
+    {
+      "id": "elizabethan-set-1-m-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "In 1580 Edmund Spenser went to Ireland as secretary to which Lord Deputy of Ireland—whom Spenser later allegorized as Sir Artegall, the Knight of Justice, in Book V of The Faerie Queene?",
+      "options": [
+        "Lord Grey de Wilton",
+        "Robert Dudley, Earl of Leicester",
+        "William Cecil, Lord Burghley",
+        "Robert Devereux, Earl of Essex"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Through the patronage of Sidney and Leicester, Spenser was appointed secretary in 1580 to Arthur Grey, 14th Baron Grey de Wilton, the Queen's Lord Deputy in Ireland, who appears in Book V of The Faerie Queene as Sir Artegall.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Which Irish castle and 3,000-acre estate in County Cork—confiscated from the Earl of Desmond—was granted to Edmund Spenser, where he wrote much of The Faerie Queene until the castle was burned in the 1598 rebellion?",
+      "options": [
+        "Penshurst Place",
+        "Kilcolman Castle",
+        "Wilton House",
+        "Kenilworth Castle"
+      ],
+      "correct_option_id": 1,
+      "explanation": "For his services in Ireland, Spenser was granted Kilcolman Castle and 3,000 acres taken from the Earl of Desmond; Kilcolman was burned during Tyrone's rebellion in 1598 shortly before Spenser's death in London in 1599.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "christopher-marlowe",
+      "periodId": "elizabethan",
+      "question": "By whom was the twenty-nine-year-old dramatist Christopher Marlowe fatally stabbed in a Deptford tavern brawl in May 1593, twelve days after a Privy Council warrant was issued for his arrest?",
+      "options": [
+        "Francis Meres",
+        "Thomas Hawkins",
+        "Ingram Frizer",
+        "Philip Henslowe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "After a warrant was issued for his arrest on 18 May 1593, Christopher Marlowe was stabbed to death by Ingram Frizer on 30 May 1593.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "thomas-kyd",
+      "periodId": "elizabethan",
+      "question": "Which eighteenth-century scholar first established in 1773 that Kyd was the author of the anonymously printed The Spanish Tragedy by finding a quotation attributed to 'M. Kyd' in Heywood's An Apology for Actors (1612)?",
+      "options": [
+        "Nicholas Rowe",
+        "Edmond Malone",
+        "Lewis Theobald",
+        "Thomas Hawkins"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Spanish Tragedy was published anonymously in the Elizabethan period; in 1773 Thomas Hawkins proved Thomas Kyd's authorship from a passage in Thomas Heywood's An Apology for Actors (1612) attributing lines from the play to 'M. Kyd'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan",
+      "question": "According to the Stratford legend recorded by Shakespeare's first biographer Nicholas Rowe (1709), on whose estate at Charlecote did the young William Shakespeare allegedly poach deer before leaving Stratford for London?",
+      "options": [
+        "Sir Robert Drury",
+        "Sir Thomas Lucy",
+        "Sir William Hatton",
+        "Sir Charles Blount"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Nicholas Rowe recounted the tradition that the young Shakespeare left Stratford-upon-Avon for London to escape prosecution after poaching deer on the game preserves of the local squire Sir Thomas Lucy (satirized as Justice Shallow).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-06",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "elizabethan-drama",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe theatrical conditions and acting companies in the Elizabethan Age?\n(A) Because City of London authorities and Puritan preachers opposed the stage, the public playhouses (starting in 1576) were built outside the city walls.\n(B) All female roles on the Elizabethan public and private stage were performed by boy actors.\n(C) Alongside adult companies such as the Lord Chamberlain's Men and the Lord Admiral's Men, choirboy companies from St Paul's and the Chapel Royal acted plays by Lyly and Peele.\n(D) Women actresses played all the leading tragic heroines at the Globe Theatre from 1599 to 1603.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statements (A), (B), and (C) accurately describe the Elizabethan stage. Statement (D) is false because women did not appear professionally on the English public stage until after the Restoration of 1660.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-07",
+      "qtype": "combination",
+      "topic": "ground",
+      "topicId": "philip-sidney",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe the life and works of Sir Philip Sidney (1554–1586)?\n(A) His masque The Lady of May was written and performed for Queen Elizabeth I in 1578–1579.\n(B) In 1579 Sidney retired temporarily from court after writing a letter to Queen Elizabeth opposing her proposed French marriage to the Duke of Anjou.\n(C) None of Sidney's major literary works (Arcadia, Astrophil and Stella, An Apology for Poetry) were printed during his lifetime; all appeared posthumously in the 1590s.\n(D) Sidney lived until 1616 and personally edited the First Folio of his works for King James I.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) are all authentic biographical facts about Sir Philip Sidney. Statement (D) is false because Sidney died in 1586 at the age of thirty-one from a wound received at the Battle of Zutphen.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-08",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Arrange the following Elizabethan literary works in chronological order of their first publication:\n(A) John Lyly's Euphues: The Anatomy of Wit\n(B) Edmund Spenser's The Shepheardes Calender\n(C) Books I–III of Edmund Spenser's The Faerie Queene\n(D) Books I–VI of Edmund Spenser's The Faerie Queene and Prothalamion",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "A → B → C → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lyly's Euphues: The Anatomy of Wit appeared in 1578 (A); Spenser's The Shepheardes Calender appeared in 1579 (B); the first three books of The Faerie Queene appeared in 1590 (C); and the six-book edition of The Faerie Queene and Prothalamion appeared in 1596 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-09",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Match List I (Contemporary Tribute or Remark on Christopher Marlowe) with List II (Elizabethan Writer Who Made It):\n\nList I (Tribute or Remark)\n(A) 'Dead Shepherd, now I find thy saw of might, / Who ever loved that loved not at first sight?'\n(B) 'Marley, the Muses' darling'\n(C) 'Poor deceased Kit Marlowe'\n(D) 'Marlowe's mighty line'\n\nList II (Writer)\n(I) George Peele\n(II) William Shakespeare (in As You Like It)\n(III) Ben Jonson (in the First Folio commendatory poem)\n(IV) Thomas Nashe",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shakespeare paid tribute to Marlowe as 'Dead Shepherd' in As You Like It, quoting Hero and Leander (A-II); George Peele called him 'Marley, the Muses' darling' (B-I); Thomas Nashe called him 'Poor deceased Kit Marlowe' (C-IV); and Ben Jonson coined 'Marlowe's mighty line' (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-10",
+      "qtype": "match",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan",
+      "question": "Match List I (Elizabethan Work) with List II (Dedicatee or Patron):\n\nList I (Elizabethan Work)\n(A) Spenser's The Tears of the Muses (in Complaints, 1591)\n(B) Greene's Pandosto: The Triumph of Time (1588)\n(C) Shakespeare's Venus and Adonis (1593) and The Rape of Lucrece\n(D) Spenser's pastoral elegy Astrophel (1595)\n\nList II (Dedicatee or Patron)\n(I) George Clifford, Earl of Cumberland\n(II) Lady Strange (Alice Spencer)\n(III) Frances Walsingham, Countess of Essex (widow of Sir Philip Sidney)\n(IV) Henry Wriothesley, third Earl of Southampton",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Spenser dedicated The Tears of the Muses to Lady Strange (A-II); Robert Greene dedicated Pandosto to George Clifford (B-I); Shakespeare dedicated Venus and Adonis and The Rape of Lucrece to Henry Wriothesley, Earl of Southampton (C-IV); and Spenser dedicated Astrophel to Sidney's widow, the Countess of Essex (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-11",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "the-shepheardes-calender",
+      "periodId": "elizabethan",
+      "question": "In Edmund Spenser's The Shepheardes Calender (1579), which monthly eclogue presents a debate between the Protestant shepherd Piers and the Catholic shepherd Palinode, while the October eclogue meditates on the lofty calling and disappointments of the poet?",
+      "options": [
+        "The January eclogue",
+        "The May eclogue",
+        "The April eclogue",
+        "The August eclogue"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Spenser's The Shepheardes Calender (1579), the May eclogue represents Protestant and Catholic pastors through the shepherds Piers and Palinode; January and December are Colin Clout's complaints, April praises Queen Elizabeth ('Eliza, Queene of shepheardes'), and October discusses the ideal poet.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-12",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "epithalamion",
+      "periodId": "elizabethan",
+      "question": "How is the numerical structure of Edmund Spenser's wedding ode Epithalamion (1595) organized to mirror the hours of midsummer's day and the days of the year?",
+      "options": [
+        "12 stanzas (for the 12 months) and 108 lines (for Sidney's sonnets)",
+        "7 stanzas (for the 7 days of creation) and 52 lines (for the weeks)",
+        "52 stanzas (for the 52 weeks) and 416 lines (in ottava rima)",
+        "24 stanzas (for the 24 hours) and 365 lines (for the days of the year)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Spenser's Epithalamion (published with Amoretti by William Ponsonby in 1595) is structured into 24 stanzas corresponding to the 24 hours of midsummer's day (11 June) and contains 365 lines corresponding to the days of the year.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-13",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "thomas-lodge",
+      "periodId": "elizabethan",
+      "question": "Which 1589 Ovidian verse fable by Thomas Lodge—written in the six-line ababcc stanza—was the earliest English epyllion and served as a direct model for Shakespeare's Venus and Adonis?",
+      "options": [
+        "Scillaes Metamorphosis (Glaucus and Scilla)",
+        "A Fig for Momus",
+        "A Margarite of America",
+        "An Alarum Against Usurers"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Thomas Lodge's Ovidian verse fable Scillaes Metamorphosis (1589), written in the six-line stanza (ababcc) that was later called the 'Venus and Adonis stanza', directly influenced Shakespeare's Venus and Adonis (1593).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-14",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "michael-drayton",
+      "periodId": "elizabethan",
+      "question": "Which Elizabethan poet—author of the sonnet sequence Idea's Mirror—wrote the patriotic ballad 'The Battle of Agincourt', the topographical poem Poly-Olbion, and 'Ode to the Virginian Voyage'?",
+      "options": [
+        "Samuel Daniel",
+        "Henry Constable",
+        "Michael Drayton",
+        "George Gascoigne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Michael Drayton (1563–1631) wrote the sonnet sequence Idea's Mirror (containing 'Since there's no help, come let us kiss and part'), 'The Battle of Agincourt', 'Ode to the Virginian Voyage', England's Heroical Epistles, The Barons' Wars, and Poly-Olbion.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-15",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "shakespeares-sonnets",
+      "periodId": "elizabethan",
+      "question": "In William Shakespeare's 1609 Quarto of Sonnets, which two sonnets depart from the standard fourteen-line pentameter structure—one having 15 lines and the other consisting of 12 lines (six rhyming couplets) closing the Fair Youth sequence?",
+      "options": [
+        "Sonnet 18 (16 lines) and Sonnet 116 (10 lines)",
+        "Sonnet 99 (15 lines) and Sonnet 126 (12 lines)",
+        "Sonnet 1 (12 lines) and Sonnet 130 (15 lines)",
+        "Sonnet 30 (18 lines) and Sonnet 154 (12 lines)"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Shakespeare's 154 Sonnets, Sonnet 99 ('The forward violet thus did I chide') has 15 lines (an extra opening line creating a five-line first stanza), while Sonnet 126 ('O thou, my lovely boy') concludes the Fair Youth sequence in 12 lines of six rhyming couplets.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-16",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "the-faerie-queene",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe Books I and II of Spenser's The Faerie Queene?\n(A) In Book I, the Redcrosse Knight slays Errour, is separated from Una by Archimago, is deceived by Duessa, and is rescued from the giant Orgoglio by Prince Arthur.\n(B) The Redcrosse Knight is restored in the House of Holiness (ruled by Caelia) before slaying the dragon that besieges Una's parents.\n(C) In Book II, Sir Guyon (guided by the Palmer) captures Acrasia in her Bower of Bliss, where the hog Grylle reviles his rescuers when restored to human shape.\n(D) In Book I, Sir Guyon marries Duessa in the Bower of Bliss and crowns Archimago King.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) accurately recount the episodes of Books I and II of The Faerie Queene. Statement (D) is false because Duessa (Falsehood/Mary Stuart) and Archimago (Hypocrisy/Heresy) are the chief antagonists defeated in Books I and II.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-17",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "astrophil-and-stella",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe the publication and contents of Sir Philip Sidney's Astrophil and Stella?\n(A) In the sequence, 'Astrophil' means 'Star-lover' (playing on Philip's Greek name) and 'Stella' means 'Star' (representing Penelope Devereux, Lady Rich).\n(B) Thomas Newman's unauthorized first edition of 1591 included a preface by Thomas Nashe as well as poems by Samuel Daniel, Thomas Campion, and the Earl of Oxford.\n(C) Although Sidney adopted the Italian sonnet model, he used fifteen rhyme-scheme variants and opened Sonnet 1 in twelve-syllable alexandrines closing with ''Fool,' said my Muse to me, 'look in thy heart and write.''\n(D) Astrophil and Stella was written in unrhymed dactylic hexameter to celebrate Sidney's marriage to Elizabeth Boyle in Ireland.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are all accurate facts about Sidney's Astrophil and Stella. Statement (D) is false because Elizabeth Boyle married Edmund Spenser in Ireland (celebrated in Amoretti and Epithalamion, 1595), whereas Sidney married Frances Walsingham in 1583.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-18",
+      "qtype": "chrono",
+      "topic": "poetry",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Arrange the following poetic publications of Edmund Spenser in chronological order:\n(A) The Shepheardes Calender (published by Hugh Singleton)\n(B) Complaints: Containing Sundrie Small Poemes of the Worlds Vanitie\n(C) Amoretti and Epithalamion (published by William Ponsonby)\n(D) Two Cantos of Mutabilitie (first printed in the 1609 Folio reprint of The Faerie Queene)",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Shepheardes Calender was published in 1579 (A); Complaints appeared in 1591 (B); Amoretti and Epithalamion appeared in 1595 (C); and the Two Cantos of Mutabilitie were first printed posthumously in 1609 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-19",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "shakespeares-sonnets",
+      "periodId": "elizabethan",
+      "question": "Match List I (Shakespearean Sonnet Number) with List II (Opening Line and Central Theme):\n\nList I (Sonnet Number)\n(A) Sonnet 18\n(B) Sonnet 30\n(C) Sonnet 116\n(D) Sonnet 130\n\nList II (Opening Line and Central Theme)\n(I) 'When to the sessions of sweet silent thought' — grieving over past losses until the thought of the dear friend restores all\n(II) 'Shall I compare thee to a summer's day?' — immortalizing the Fair Youth's beauty in eternal verse\n(III) 'My mistress' eyes are nothing like the sun' — anti-Petrarchan parody rejecting false comparisons for the Dark Lady\n(IV) 'Let me not to the marriage of true minds / Admit impediments' — defining constant love as an ever-fixed mark not subject to Time's sickle",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sonnet 18 opens with 'Shall I compare thee to a summer's day?' (A-II); Sonnet 30 opens with 'When to the sessions of sweet silent thought' (B-I); Sonnet 116 defines unwavering love ('Love's not Time's fool') (C-IV); and Sonnet 130 parodies Petrarchan blazons (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-20",
+      "qtype": "match",
+      "topic": "poetry",
+      "topicId": "the-faerie-queene",
+      "periodId": "elizabethan",
+      "question": "Match List I (Character in Spenser's The Faerie Queene) with List II (Allegorical or Historical Identification in the Notes):\n\nList I (Character in The Faerie Queene)\n(A) Gloriana and Belphoebe\n(B) Duessa\n(C) Sir Artegall\n(D) Timias (Prince Arthur's squire)\n\nList II (Allegorical or Historical Identification)\n(I) Falsehood / the Roman Catholic Church and Mary, Queen of Scots\n(II) Queen Elizabeth I in her royal glory and her chaste womanhood\n(III) Sir Walter Raleigh\n(IV) Justice and Spenser's Irish patron Lord Grey de Wilton",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II",
+        "A-II, B-I, C-IV, D-III"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gloriana and Belphoebe represent Queen Elizabeth I (A-II); Duessa represents Falsehood and Mary Stuart (B-I); Sir Artegall represents Justice and Lord Grey de Wilton (C-IV); and the squire Timias represents Sir Walter Raleigh (D-III).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-21",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "john-lyly",
+      "periodId": "elizabethan",
+      "question": "Which 1595 play by John Lyly—featuring Pandora as its protagonist afflicted in each act by the seven jealous planets (Saturn, Jupiter, Mars, Sol, Venus, Mercury, and Luna)—is the only play by Lyly written in blank verse rather than prose?",
+      "options": [
+        "Mother Bombie",
+        "The Woman in the Moon",
+        "Sapho and Phao",
+        "Gallathea"
+      ],
+      "correct_option_id": 1,
+      "explanation": "While John Lyly wrote all his other court comedies (such as Campaspe, Sapho and Phao, Endymion, Gallathea, Midas, and Mother Bombie) in euphuistic prose, The Woman in the Moon (1595), starring Pandora and the seven planets, is his only play in blank verse.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-22",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "christopher-marlowe",
+      "periodId": "elizabethan",
+      "question": "In Christopher Marlowe's Dido, Queen of Carthage (based on Books I, II, and IV of Virgil's Aeneid), which rejected suitor of Dido supplies Aeneas with his missing tackle and kills himself after Dido leaps onto her funeral pyre?",
+      "options": [
+        "Ascanius",
+        "Cosroe",
+        "Iarbas",
+        "Calymath"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Marlowe's Dido, Queen of Carthage, Venus disguises Cupid as Aeneas's son Ascanius to make Dido fall in love with Aeneas and reject her suitor Iarbas; when Aeneas sails for Italy at Jupiter's command, Dido throws herself onto her pyre, followed in suicide by Iarbas and her sister Anna.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-23",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "shakespearean-comedy",
+      "periodId": "elizabethan",
+      "question": "In Shakespeare's early court comedy Love's Labour's Lost, what is the name of the comical show-within-a-play staged by Holofernes, Sir Nathaniel, Don Adriano de Armado, Costard, and Moth before the King of Navarre and the Princess of France?",
+      "options": [
+        "The Pageant of the Nine Worthies",
+        "The Tragical Mirth of Pyramus and Thisbe",
+        "The Murder of Gonzago",
+        "The Tragedy of Soliman and Perseda"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Act V of Love's Labour's Lost, the pedant Holofernes, the curate Nathaniel, the fantastical Spaniard Don Armado, and the clown Costard perform 'The Pageant of the Nine Worthies' before a messenger interrupts with news of the French King's death.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-24",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "twelfth-night",
+      "periodId": "elizabethan",
+      "question": "In Shakespeare's Twelfth Night, what four cryptic letters appear in the forged love letter dropped by Maria, convincing Olivia's puritanical steward Malvolio to appear in yellow stockings and cross-garters?",
+      "options": [
+        "S.P.Q.R.",
+        "I.N.R.I.",
+        "E.K.G.S.",
+        "M.O.A.I."
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Twelfth Night, Maria's forged letter contains the riddle 'M.O.A.I. doth sway my life', which the vain steward Malvolio twists into his own name and follows its instructions to wear yellow stockings and cross-garters and smile continually before Olivia.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-25",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "ts-eliot",
+      "periodId": "elizabethan",
+      "question": "In his 1919 critical essay 'Hamlet and His Problems' (collected in The Sacred Wood), which critic argued that Shakespeare's Hamlet is an 'artistic failure' because the play lacks an 'objective correlative' for Hamlet's excess of emotion?",
+      "options": [
+        "Johann Wolfgang von Goethe",
+        "T. S. Eliot",
+        "A. C. Bradley",
+        "Harold Bloom"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 'Hamlet and His Problems' (in The Sacred Wood, 1920), T. S. Eliot famously argued that in Hamlet 'Shakespeare tackled a problem which proved too much for him' and coined the critical concept of the 'objective correlative'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-26",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "the-spanish-tragedy",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe Thomas Kyd's The Spanish Tragedy (c. 1587–1592)?\n(A) The play opens with the Ghost of Don Andrea and Revenge, who remain onstage as a Chorus.\n(B) After Horatio is murdered by Lorenzo and Balthazar, his mother Isabella goes mad and kills herself, while Bel-Imperia writes a letter in her own blood to Hieronimo.\n(C) In Act IV, Hieronimo and Bel-Imperia stage Soliman and Perseda to stab Lorenzo and Balthazar, after which Hieronimo bites out his own tongue.\n(D) At the end of the play, Horatio is revived by Friar Lawrence and marries Bel-Imperia in Lisbon.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Statements (A), (B), and (C) accurately summarize the plot of Kyd's The Spanish Tragedy. Statement (D) is false: Horatio's murder in Act II triggers the tragedy, and at the end Bel-Imperia stabs herself and Hieronimo bites out his tongue, kills the Duke of Castile, and stabs himself.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-27",
+      "qtype": "combination",
+      "topic": "drama",
+      "topicId": "shakespearean-history-plays",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately distinguish William Shakespeare's two historical tetralogies?\n(A) The First (or Minor) Tetralogy—written earlier in Shakespeare's career—consists of Henry VI, Part 1, Henry VI, Part 2, Henry VI, Part 3, and Richard III, dealing with the Wars of the Roses.\n(B) The Second (or Major) Tetralogy—dealing with the earlier historical period from 1398 to 1415—consists of Richard II, Henry IV, Part 1, Henry IV, Part 2, and Henry V.\n(C) Sir John Falstaff appears as Prince Hal's comic companion in Henry IV, Part 1 and Henry IV, Part 2 (and is brought back in The Merry Wives of Windsor).\n(D) King John and Henry VIII belong to the Major Tetralogy between Richard II and Henry V.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) accurately define Shakespeare's Minor and Major Tetralogies and the appearances of Falstaff. Statement (D) is false because King John (1596) and Henry VIII (1613) are standalone English history plays outside the two four-play cycles.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-28",
+      "qtype": "chrono",
+      "topic": "drama",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan",
+      "question": "Arrange the following plays by William Shakespeare in chronological order of their composition across his four dramatic periods:\n(A) Love's Labour's Lost (First Period: Early Experiment)\n(B) A Midsummer Night's Dream (Second Period: Development)\n(C) Hamlet (Third Period: Maturity and Great Tragedies)\n(D) The Tempest (Fourth Period: Late Romances)",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Love's Labour's Lost (c. 1590) belongs to Shakespeare's First Period (A); A Midsummer Night's Dream (c. 1595) to his Second Period (B); Hamlet (c. 1600–1601) to his Third Period (C); and The Tempest (c. 1611) to his Fourth Period (D).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-29",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "university-wits",
+      "periodId": "elizabethan",
+      "question": "Match List I (Play by Lyly, Peele, Greene, or Lodge) with List II (Key Plot Detail):\n\nList I (Play)\n(A) Endymion, the Man in the Moon (by John Lyly)\n(B) A Looking Glasse for London and England (by Robert Greene and Thomas Lodge)\n(C) The Love of King David and Fair Bethsabe (by George Peele)\n(D) The Wounds of Civil War (by Thomas Lodge)\n\nList II (Key Plot Detail)\n(I) Morality-style biblical drama using the prophet Jonah and the fall of Nineveh to warn Elizabethan London\n(II) Court allegory in which Cynthia's kiss awakens a sleeping shepherd-prince after forty years\n(III) Classical Roman history play dramatizing the bloody rivalry between Marius and Sulla\n(IV) Elizabethan biblical tragedy dramatizing King David's passion for Bathsheba and the rebellion of Absalom",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lyly's Endymion allegorizes Queen Elizabeth as Cynthia (A-II); Greene and Lodge's A Looking Glasse for London and England parallels Nineveh and London (B-I); Peele's David and Bethsabe is a biblical tragedy (C-IV); and Lodge's The Wounds of Civil War dramatizes Marius and Sulla (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-30",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "julius-caesar",
+      "periodId": "elizabethan",
+      "question": "Match List I (Quotation from Shakespeare's Plays to 1601) with List II (Play and Speaker):\n\nList I (Quotation)\n(A) 'The lunatic, the lover, and the poet / Are of imagination all compact.'\n(B) 'The villainy you teach me, I will execute, and it shall go hard, but I will better the instruction.'\n(C) 'Cowards die many times before their deaths; / The valiant never taste of death but once.'\n(D) 'Dost thou think, because thou art virtuous, there shall be no more cakes and ale?'\n\nList II (Play and Speaker)\n(I) Shylock in The Merchant of Venice\n(II) Duke Theseus in A Midsummer Night's Dream\n(III) Sir Toby Belch (to Malvolio) in Twelfth Night\n(IV) Julius Caesar in Julius Caesar",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Theseus speaks 'The lunatic, the lover, and the poet' (A-II); Shylock speaks 'The villainy you teach me' in The Merchant of Venice (B-I); Caesar speaks 'Cowards die many times' in Julius Caesar (C-IV); and Sir Toby Belch speaks of 'cakes and ale' in Twelfth Night (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan",
+      "question": "In An Apology for Poetry, which old English border ballad does Sir Philip Sidney confess moves his heart 'more than with a trumpet' even when sung by some blind crowder?",
+      "options": [
+        "'Sir Patrick Spens'",
+        "'The Nut-Brown Maid'",
+        "'The Wife of Usher's Well'",
+        "'The old song of Percy and Douglas' (Chevy Chase)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In An Apology for Poetry, Sir Philip Sidney famously writes: 'Certainly I must confess my own barbarousness; I never heard the old song of Percy and Douglas [Chevy Chase] that I found not my heart moved more than with a trumpet.'",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan",
+      "question": "In An Apology for Poetry, which Middle English poem by Geoffrey Chaucer does Sir Philip Sidney single out for warm praise for its clear vision in a misty age?",
+      "options": [
+        "The House of Fame",
+        "The Book of the Duchess",
+        "Troilus and Criseyde",
+        "The Legend of Good Women"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In surveying English literature in An Apology for Poetry, Sir Philip Sidney praises Chaucer's Troilus and Criseyde, remarking that he does not know whether to marvel more that Chaucer in that misty time could see so clearly, or that we in this clear age walk so stumblingly after him.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "the-unfortunate-traveller",
+      "periodId": "elizabethan",
+      "question": "In Thomas Nashe's picaresque prose novel The Unfortunate Traveller, or The Life of Jack Wilton (1594), which Tudor courtier-poet serves as Jack Wilton's travelling companion to Italy to defend the honour of Geraldine in a tournament?",
+      "options": [
+        "Sir Thomas Wyatt the Elder",
+        "Henry Howard, Earl of Surrey",
+        "Sir Philip Sidney",
+        "Sir Walter Raleigh"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Nashe's The Unfortunate Traveller (1594), set during the reign of Henry VIII, the page Jack Wilton travels to Italy as companion to the poet Henry Howard, Earl of Surrey, who champions his lady Geraldine in a tournament at Florence.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "richard-hakluyt",
+      "periodId": "elizabethan",
+      "question": "Which Elizabethan geographer and clergyman compiled The Principal Navigations, Voyages, Traffiques, and Discoveries of the English Nation (1589; enlarged 1598–1600), celebrating the maritime exploits of Hawkins, Drake, Frobisher, and Raleigh?",
+      "options": [
+        "Richard Hooker",
+        "Raphael Holinshed",
+        "William Camden",
+        "Richard Hakluyt"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Richard Hakluyt (1552–1616) compiled the great prose collection of Elizabethan exploration narratives, The Principal Navigations, Voyages, Traffiques, and Discoveries of the English Nation, often called the 'prose epic of the modern English nation'.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "elizabethan-set-1-m-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "thomas-campion",
+      "periodId": "elizabethan",
+      "question": "Which Elizabethan poet, physician, and composer published Observations in the Art of English Poesie in 1602, attacking rhyme as a 'vulgar and unartificial custom' and advocating unrhymed classical quantitative metres?",
+      "options": [
+        "Thomas Campion",
+        "Samuel Daniel",
+        "George Puttenham",
+        "Francis Meres"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Although himself a master of rhymed lute songs, Thomas Campion published Observations in the Art of English Poesie in 1602 to advocate classical quantitative verse without rhyme, provoking Samuel Daniel's A Defence of Ryme (1602/1603).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-36",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "arcadia",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately describe the composition, editions, and afterlife of Sir Philip Sidney's Arcadia?\n(A) Sidney originally wrote the five-act 'Old Arcadia' (interspersed with verse eclogues) around 1580 to entertain his sister Mary Herbert, Countess of Pembroke.\n(B) After Sidney's death, Fulke Greville, Matthew Gwinne, and John Florio edited and published the incomplete revised 'New Arcadia' in 1590, followed by Mary Herbert's composite edition The Countess of Pembroke's Arcadia in 1593.\n(C) King Charles I famously used Pamela's prayer from Sidney's Arcadia ('O All-seeing Light') during his imprisonment before his execution in 1649.\n(D) Sidney wrote Arcadia in 1625 as a scientific treatise advocating the founding of the Royal Society.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) accurately trace the composition, 1590/1593 editions, and historical impact of Sidney's Arcadia. Statement (D) is false because Francis Bacon's New Atlantis (1627)—not Sidney's Arcadia—envisioned the scientific college that foreshadowed the Royal Society.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-37",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "euphuism",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements about John Lyly's Euphues and the later reception of Euphuism are correct?\n(A) The proverb 'All is fair in love and war' is attributed to John Lyly's Euphues.\n(B) William Shakespeare parodied the affectations of Euphuism and pedantic rhetoric in characters such as Holofernes in Love's Labour's Lost (and Falstaff's mock-speech in 1 Henry IV).\n(C) In the nineteenth century, Sir Walter Scott satirized Euphuism in the character of Sir Piercie Shafton in The Monastery, while Charles Kingsley defended Euphues in Westward Ho!\n(D) John Lyly borrowed the name 'Euphues' from Thomas Hobbes's Leviathan (1651).\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "B, C and D only",
+        "A, B and C only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statements (A), (B), and (C) are all verified facts from the notes on Lyly and Euphuism. Statement (D) is false because Lyly took the name 'Euphues' in 1578 from Roger Ascham's The Scholemaster (1570).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-38",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan",
+      "question": "Arrange the following Elizabethan critical works in chronological order of their publication:\n(A) Stephen Gosson's The School of Abuse\n(B) William Webbe's A Discourse of English Poetrie\n(C) George Puttenham's The Arte of English Poesie\n(D) Thomas Campion's Observations in the Art of English Poesie",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gosson's The School of Abuse was published in 1579 (A); Webbe's A Discourse of English Poetrie in 1586 (B); Puttenham's The Arte of English Poesie in 1589 (C); and Campion's Observations in the Art of English Poesie in 1602 (D).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-39",
+      "qtype": "chrono",
+      "topic": "prose",
+      "topicId": "robert-greene",
+      "periodId": "elizabethan",
+      "question": "Arrange the following Elizabethan prose romances and pamphlets in chronological order of their first publication:\n(A) John Lyly's Euphues: The Anatomy of Wit\n(B) Robert Greene's Mamillia: A Mirror or Looking-Glass for the Ladies of England\n(C) Thomas Lodge's Rosalynde: Euphues' Golden Legacy\n(D) Thomas Nashe's The Unfortunate Traveller, or The Life of Jack Wilton",
+      "options": [
+        "A → B → C → D",
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lyly's Euphues: The Anatomy of Wit appeared in 1578 (A); Greene's first romance Mamillia appeared in 1583 (B); Lodge's Rosalynde appeared in 1590 (C); and Nashe's The Unfortunate Traveller appeared in 1594 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-40",
+      "qtype": "match",
+      "topic": "prose",
+      "topicId": "an-apology-for-poetry",
+      "periodId": "elizabethan",
+      "question": "Match List I (Elizabethan Critical Work) with List II (Central Argument or Subject):\n\nList I (Work)\n(A) Sir Philip Sidney's An Apology for Poetry (1595)\n(B) Francis Meres's Palladis Tamia: Wit's Treasury (1598)\n(C) Thomas Campion's Observations in the Art of English Poesie (1602)\n(D) Samuel Daniel's A Defence of Ryme (1602/1603)\n\nList II (Central Argument or Subject)\n(I) Comparative survey praising Shakespeare as equal to Plautus and Seneca in comedy and tragedy\n(II) Vindication of poetry as a 'speaking picture' superior to philosophy and history\n(III) Defence of native English rhymed verse against unrhymed quantitative rules\n(IV) Attack on rhyme calling for English verse to be measured by classical syllable quantity",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sidney's Apology defends poetry as a 'speaking picture' that teaches and delights (A-II); Meres's Palladis Tamia (1598) praises Shakespeare's comedies, tragedies, and 'sugared sonnets' (B-I); Campion's Observations (1602) attacks rhyme in favour of classical quantity (C-IV); and Daniel's Defence of Ryme (1602/1603) vindicates rhyme (D-III).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "e-k",
+      "periodId": "elizabethan",
+      "question": "By what initials is the mysterious glossator and commentator known who supplied the introductory epistle to Gabriel Harvey and the scholarly 'Glosse' to each eclogue of Edmund Spenser's The Shepheardes Calender (1579)?",
+      "options": [
+        "E. K.",
+        "W. H.",
+        "R. B.",
+        "T. T."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The 1579 first edition of Spenser's The Shepheardes Calender was accompanied by a dedicatory epistle to Gabriel Harvey and learned glosses on each month signed 'E. K.' (often identified with Spenser's Cambridge friend Edward Kirke or Spenser himself).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "doctor-faustus",
+      "periodId": "elizabethan",
+      "question": "Which 1587 Frankfurt book—translated into English as The Historie of the Damnable Life, and Deserved Death of Doctor Iohn Faustus—served as Christopher Marlowe's primary source for Doctor Faustus?",
+      "options": [
+        "Sebastian Brant's Narrenschiff",
+        "Heinrich Kramer's Malleus Maleficarum",
+        "Thomas Mann's Doktor Faustus",
+        "Historia von D. Johann Fausten"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Historia von D. Johann Fausten, first published in Frankfurt in 1587 (and translated into English as the English Faust Book), was the source for Christopher Marlowe's tragedy Doctor Faustus.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "twelfth-night",
+      "periodId": "elizabethan",
+      "question": "From which 1581 story by Barnabe Rich (in Riche His Farewell to Militarie Profession) did William Shakespeare draw the main shipwreck and cross-dressing plot of Twelfth Night?",
+      "options": [
+        "'Rosalynde: Euphues' Golden Legacy'",
+        "'Of Apolonius and Silla'",
+        "'Pandosto: The Triumph of Time'",
+        "'The History of Romeus and Juliet'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The main plot of Shakespeare's Twelfth Night—involving the shipwrecked twins Viola and Sebastian, Duke Orsino, and Countess Olivia—is drawn from Barnabe Rich's story 'Of Apolonius and Silla' (1581).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "shakespearean-comedy",
+      "periodId": "elizabethan",
+      "question": "Which twenty-seven-letter Latin word—meaning 'the state of being able to achieve honours' and longest word in Shakespeare's works—is spoken by the clown Costard in Act V, Scene i of Love's Labour's Lost?",
+      "options": [
+        "Antipericatametaanaparbeugedamphicribrationes",
+        "Contrapuntalistic",
+        "Honorificabilitudinitatibus",
+        "Anthropophaginian"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Act V, Scene i of Love's Labour's Lost, the clown Costard marvels at the twenty-seven-letter medieval Latin word 'honorificabilitudinitatibus' ('the state of being able to achieve honours').",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "john-dryden",
+      "periodId": "elizabethan",
+      "question": "In his 1668 An Essay of Dramatic Poesy, which major critic paid tribute to William Shakespeare as 'the man who of all modern, and perhaps ancient poets, had the largest and most comprehensive soul'?",
+      "options": [
+        "John Dryden",
+        "Samuel Pepys",
+        "Thomas Rymer",
+        "Leo Tolstoy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In An Essay of Dramatic Poesy (1668), John Dryden inaugurated comparative Shakespearean criticism with his famous eulogy: 'To begin then with Shakespeare; he was the man who of all modern, and perhaps ancient poets, had the largest and most comprehensive soul.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-46",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "elizabethan-drama",
+      "periodId": "elizabethan",
+      "question": "Which of the following statements accurately contrast the classical 'three unities' with the native Elizabethan public stage?\n(A) Classical theory required Unity of Action, Unity of Time (a single day), and Unity of Place (a single locality), while keeping tragedy and comedy separate.\n(B) In An Apology for Poetry, Sidney criticized English plays for violating the unities of time and place and mingling kings and clowns in 'mongrel tragi-comedy'.\n(C) Popular Elizabethan chronicle and romantic plays freely spanned many years, shifted scenes across countries, and mingled comic clowns with kings.\n(D) Shakespeare strictly observed the twenty-four-hour Unity of Time in all of his English history plays and in The Winter's Tale.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, B and C only",
+        "A, C and D only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statements (A), (B), and (C) accurately contrast classical dramatic rules (defended by Sidney) with native Elizabethan stage practice. Statement (D) is false because Shakespeare's histories and romances span years (The Winter's Tale even introduces Time as a Chorus skipping sixteen years).",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "elizabethan-set-1-m-47",
+      "qtype": "combination",
+      "topic": "terms",
+      "topicId": "edmund-spenser",
+      "periodId": "elizabethan",
+      "question": "Which of the following critical judgments on Edmund Spenser and his poetry are accurately attributed?\n(A) In The Faerie Queene, Spenser paid tribute to Geoffrey Chaucer as 'Dan Chaucer, well of English undefiled'.\n(B) John Dryden called John Milton 'the poetical son of Spenser' and remarked that 'Shakespeare himself might not have achieved so much, if Spenser had not lived and laboured'.\n(C) William Wordsworth praised Spenser in Book III of The Prelude as 'Sweet Spenser, moving through his clouded heaven / With the moon's beauty and the moon's soft pace'.\n(D) Ben Jonson praised Spenser's archaic diction in Timber as the purest model of everyday conversational London English.\nChoose the correct answer from the options given below:",
+      "options": [
+        "A, B and D only",
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Statements (A), (B), and (C) are all authentic critical tributes from the notes on Spenser. Statement (D) is false because Ben Jonson famously complained of Spenser's archaic style that 'Spenser, in affecting the ancients, writ no language.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-48",
+      "qtype": "chrono",
+      "topic": "terms",
+      "topicId": "elizabethan-sonnet-sequence",
+      "periodId": "elizabethan",
+      "question": "Arrange the following milestones of the English sonnet tradition in chronological order of their first publication:\n(A) Richard Tottel's Songs and Sonettes (Tottel's Miscellany)\n(B) Sir Philip Sidney's Astrophil and Stella (printed by Thomas Newman)\n(C) Edmund Spenser's Amoretti (printed by William Ponsonby)\n(D) William Shakespeare's Sonnets (printed in Quarto by Thomas Thorpe)",
+      "options": [
+        "B → A → C → D",
+        "A → C → B → D",
+        "C → B → A → D",
+        "A → B → C → D"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Tottel's Miscellany appeared in 1557 (A); Sidney's Astrophil and Stella was first printed in 1591 (B); Spenser's Amoretti was published in 1595 (C); and Thomas Thorpe published Shake-speares Sonnets in 1609 (D).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-49",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "william-shakespeare",
+      "periodId": "elizabethan",
+      "question": "Match List I (Famous Critical Remark on William Shakespeare) with List II (Critic or Writer):\n\nList I (Critical Remark)\n(A) 'He was not of an age, but for all time!' and 'thou hadst small Latin, and less Greek'\n(B) 'The work of a correct and regular writer is a garden accurately formed and diligently planted... the composition of Shakespeare is a forest.'\n(C) 'Dante and Shakespeare divide the modern world between them; there is no third.'\n(D) Called A Midsummer Night's Dream in his 1662 diary 'the most insipid ridiculous play that ever I saw in my life'\n\nList II (Critic or Writer)\n(I) Dr Samuel Johnson (in his 1765 Preface to Shakespeare)\n(II) Ben Jonson\n(III) Samuel Pepys\n(IV) T. S. Eliot",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ben Jonson wrote 'not of an age, but for all time' (A-II); Dr Johnson compared Shakespeare's work to a forest (B-I); T. S. Eliot wrote 'Dante and Shakespeare divide the modern world between them' (C-IV); and Samuel Pepys dismissed A Midsummer Night's Dream in his 1662 diary (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "elizabethan-set-1-m-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "the-faerie-queene",
+      "periodId": "elizabethan",
+      "question": "Match List I (Elizabethan Poem or Play) with List II (Classical or Italian Model):\n\nList I (Elizabethan Poem or Play)\n(A) Edmund Spenser's The Faerie Queene\n(B) Edmund Spenser's The Shepheardes Calender\n(C) Christopher Marlowe's Dido, Queen of Carthage\n(D) William Shakespeare's Venus and Adonis\n\nList II (Classical or Italian Model)\n(I) The pastoral Eclogues of Virgil, Theocritus, Mantuan, and Clément Marot\n(II) Ariosto's Orlando Furioso and Torquato Tasso's Jerusalem Delivered (plus Aristotle's virtues)\n(III) Ovid's Metamorphoses\n(IV) Books I, II, and IV of Virgil's Aeneid",
+      "options": [
+        "A-I, B-II, C-IV, D-III",
+        "A-II, B-I, C-IV, D-III",
+        "A-II, B-IV, C-I, D-III",
+        "A-III, B-I, C-IV, D-II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Faerie Queene is modelled on Ariosto's Orlando Furioso and Tasso's Jerusalem Delivered (A-II); The Shepheardes Calender imitates Theocritus, Virgil, Mantuan, and Marot (B-I); Marlowe's Dido is based on Books I, II, and IV of Virgil's Aeneid (C-IV); and Venus and Adonis is based on Ovid's Metamorphoses (D-III).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}
