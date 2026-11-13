@@ -2,13 +2,17 @@
    AK Explained — landing page only
    ========================================================== */
 
+/* The account bar (.homebar) styles live in assets/site.css now, because the
+   bar is on every page's chrome, not only the home page. Only the slimmer hero
+   below is home-page specific. */
+
 /* ---------- Hero ---------- */
 .hero{
   position:relative;overflow:hidden;text-align:center;
   background:var(--cream) url('/assets/hero-floral.webp') center/cover no-repeat;
   border-bottom:2px solid var(--border);
-  padding:clamp(30px,5vw,62px) 0 clamp(26px,4vw,46px);
-  min-height:clamp(300px,33vw,430px);display:flex;align-items:center;
+  padding:clamp(22px,3.4vw,40px) 0 clamp(20px,3vw,34px);
+  min-height:clamp(220px,24vw,320px);display:flex;align-items:center;
 }
 .hero::before{
   content:"";position:absolute;inset:0;pointer-events:none;
@@ -23,14 +27,14 @@
 .hero h1 .sub{display:block;font-size:.62em;font-weight:600;color:var(--teal)}
 .hero .motto{
   font-family:var(--serif);font-size:clamp(.95rem,1.6vw,1.12rem);color:#3D4B59;
-  margin-bottom:20px;letter-spacing:.01em;
+  margin-bottom:15px;letter-spacing:.01em;
 }
 
 /* Today in Literary History */
 .today{
   display:inline-flex;align-items:center;gap:13px;flex-wrap:wrap;justify-content:center;
   background:#fff;border:1px solid var(--border);border-left:4px solid var(--gold);
-  border-radius:13px;padding:11px 20px;margin-bottom:18px;text-align:left;
+  border-radius:13px;padding:10px 20px;margin-bottom:15px;text-align:left;
   box-shadow:0 4px 16px rgba(22,48,74,.07);max-width:100%;
 }
 .today .tag{
@@ -68,7 +72,7 @@
 #searchPanel .empty{padding:12px 14px;font-size:.9rem;margin:0}
 
 /* Animated opening line */
-.quoteline{margin-top:20px;min-height:3.4em}
+.quoteline{margin-top:15px;min-height:3.4em}
 .quoteline .q{
   font-family:var(--serif);font-style:italic;color:var(--ink);
   font-size:clamp(.92rem,1.5vw,1.04rem);line-height:1.5;max-width:60ch;margin:0 auto;
