@@ -283,11 +283,18 @@
 .net-pyq-year summary small{margin-left:auto;font-size:.92rem;font-style:italic;color:var(--body);white-space:nowrap}
 .net-pyq-chevron{flex:none;width:22px;height:22px;transition:transform .18s}
 .net-pyq-year[open] .net-pyq-chevron{transform:rotate(180deg)}
-.net-pyq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:10px;padding:12px;border-top:1px solid var(--border)}
-.net-pyq-card{display:flex;align-items:center;justify-content:space-between;gap:14px;min-width:0;min-height:76px;padding:12px 14px 12px 18px;border:1px solid var(--border);border-radius:10px;background:var(--card-paper);color:var(--ink);text-decoration:none;transition:background-color .18s,border-color .18s,box-shadow .18s}
+.net-pyq-section{padding:14px 12px 4px;border-top:1px solid var(--border)}
+.net-pyq-section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding:0 6px 10px}
+.net-pyq-section-head h3{margin:0;font-family:var(--serif);font-size:1.18rem;font-weight:600;line-height:1.3;color:var(--ink);letter-spacing:normal}
+.net-pyq-section-head small{font-size:.9rem;font-style:italic;color:var(--body)}
+.net-pyq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:10px;margin:0 0 12px;padding:0;list-style:none}
+.net-pyq-grid li{display:block;margin:0;padding:0;min-width:0}
+.net-pyq-grid li::marker{content:""}
+.net-pyq-step{flex:none;display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:50%;background:var(--teal-soft);color:var(--teal-dark);font-weight:700;font-size:.95rem}
+.net-pyq-card{display:flex;align-items:center;justify-content:flex-start;gap:14px;min-width:0;min-height:76px;padding:12px 14px 12px 18px;border:1px solid var(--border);border-radius:10px;background:var(--card-paper);color:var(--ink);text-decoration:none;transition:background-color .18s,border-color .18s,box-shadow .18s}
 .net-pyq-card:hover{background:var(--teal-soft);border-color:var(--teal);box-shadow:0 8px 18px -12px rgba(15,118,110,.55)}
 .net-pyq-card:focus-visible{outline:3px solid var(--teal-dark);outline-offset:3px}
-.net-pyq-card-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.net-pyq-card-copy{display:flex;flex-direction:column;gap:3px;min-width:0;flex:1}
 .net-pyq-card-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.35;overflow-wrap:break-word}
 .net-pyq-card-copy span{font-size:.92rem;line-height:1.4;color:var(--body)}
 .net-pyq-go{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:76px;min-height:44px;padding:0 20px;border-radius:8px;background:var(--teal);color:#fff;font-weight:700;line-height:1}
