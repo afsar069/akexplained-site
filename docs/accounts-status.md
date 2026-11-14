@@ -1256,3 +1256,7 @@ count, not which questions, not email, not timing), and how to stay off.
 
 ## Landing page: Meet the Author photo and button (2026-11-14, on the branch, NOT merged)
 - `index.html` "Meet the Author" uses the owner's new photo `assets/afsar-khan.webp` (cropped from the owner's upload; a stray strip along its top edge was cut off). The old `assets/prof_afsar.png` was removed (nothing else used it). The "Know more about me" button is now a small button in the bottom-right corner of the quote card (`.saysfoot` in `assets/home.css`), on the same row as "— AK". The bio text is unchanged, waiting for the owner's wording.
+
+## Landing page: review strip, and one more rename (2026-11-14)
+- Under the reviews on `index.html`, the pen icon + gold "Write a review" button was replaced by **one thin full-width strip** (`.rvcta` in `assets/site.css`, dark teal with a gold underline) that is the whole link to `/write-a-review/` and reads "Write your review or Share your ideas". The "Write a review" button inside the empty-state card (`home.js`) is unchanged.
+- The card on `/video-lessons/` that links to the timeline is now titled "British Literature by Ages", like the landing page.
