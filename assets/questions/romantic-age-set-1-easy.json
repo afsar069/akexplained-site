@@ -1,0 +1,874 @@
+{
+  "setId": "romantic-age-set-1",
+  "rev": 1,
+  "age": "romantic-age",
+  "ageName": "Romantic Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/romantic-age/",
+  "notesTitle": "Romantic Age — the full notes",
+  "topics": {
+    "ground": "The age and its revolutions",
+    "first": "Blake, Wordsworth, Coleridge",
+    "second": "Byron, Shelley, Keats, Clare",
+    "novel": "The novel and the Gothic",
+    "prose": "Essays, ideas and criticism",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on the Romantic poets, novelists, prose writers and ideas.",
+  "questions": [
+    {
+      "id": "romantic-age-set-1-e-01",
+      "question": "Which Scottish poet published Poems, Chiefly in the Scottish Dialect in 1786?",
+      "options": [
+        "James Hogg",
+        "Walter Scott",
+        "John Clare",
+        "Robert Burns"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Burns became celebrated after the Kilmarnock edition of his Scots-language poems appeared in 1786.",
+      "topic": "ground",
+      "topicId": "robert-burns",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Robert_Burns"
+    },
+    {
+      "id": "romantic-age-set-1-e-02",
+      "question": "Which paired collection by William Blake explores contrasting states of childhood and social life?",
+      "options": [
+        "Lyrical Ballads",
+        "Songs of Innocence and of Experience",
+        "The Excursion",
+        "The Lady of the Lake"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Blake joined the contrasting sequences in a combined illuminated volume in 1794.",
+      "topic": "first",
+      "topicId": "songs-of-innocence-and-of-experience",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-03",
+      "question": "Who wrote the lyric commonly titled I Wandered Lonely as a Cloud?",
+      "options": [
+        "William Blake",
+        "Robert Southey",
+        "William Wordsworth",
+        "Samuel Taylor Coleridge"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wordsworth transformed the memory of daffodils seen beside Ullswater into the lyric.",
+      "topic": "first",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-04",
+      "question": "Which poem tells of a sailor who kills an albatross and suffers a curse?",
+      "options": [
+        "The Rime of the Ancient Mariner",
+        "Christabel",
+        "The Lady of the Lake",
+        "The Eve of St Agnes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The sailor’s killing of the bird leads to supernatural punishment and eventual spiritual insight.",
+      "topic": "first",
+      "topicId": "the-rime-of-the-ancient-mariner",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-05",
+      "question": "Which poem made Lord Byron suddenly famous in 1812?",
+      "options": [
+        "The Seasons",
+        "Endymion",
+        "Queen Mab",
+        "Childe Harold’s Pilgrimage"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The first two cantos brought Byron extraordinary public attention in 1812.",
+      "topic": "second",
+      "topicId": "childe-harolds-pilgrimage",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-06",
+      "question": "Which dramatic poem by Percy Shelley features a Titan resisting tyranny?",
+      "options": [
+        "The Cenci",
+        "Prometheus Unbound",
+        "Manfred",
+        "The Siege of Corinth"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Prometheus Unbound imagines liberation through the resistance of Prometheus to oppressive authority.",
+      "topic": "second",
+      "topicId": "prometheus-unbound",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-07",
+      "question": "Which Keats ode sets a bird’s song against human sorrow and mortality?",
+      "options": [
+        "The Bard",
+        "Ode to the West Wind",
+        "Ode to a Nightingale",
+        "Ode on Melancholy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The song suggests a realm of imaginative joy set against suffering and passing time.",
+      "topic": "second",
+      "topicId": "ode-to-a-nightingale",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-08",
+      "question": "Which Jane Austen novel features Elizabeth Bennet and Mr Darcy?",
+      "options": [
+        "Mansfield Park",
+        "Emma",
+        "Pride and Prejudice",
+        "Persuasion"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The novel develops its marriage plot through misunderstandings involving Elizabeth and Darcy.",
+      "topic": "novel",
+      "topicId": "pride-and-prejudice",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-09",
+      "question": "Which novel first launched Walter Scott’s historical fiction in 1814?",
+      "options": [
+        "Waverley",
+        "Kenilworth",
+        "Rob Roy",
+        "Ivanhoe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Waverley appeared anonymously in 1814 and began Scott’s celebrated series of historical novels.",
+      "topic": "novel",
+      "topicId": "waverley",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-10",
+      "question": "Who wrote Frankenstein, first published in 1818?",
+      "options": [
+        "Ann Radcliffe",
+        "Frances Burney",
+        "Jane Austen",
+        "Mary Shelley"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mary Shelley first published her Gothic and scientific novel anonymously in 1818.",
+      "topic": "novel",
+      "topicId": "mary-shelley",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-11",
+      "question": "Which collection of personal writings did Charles Lamb publish in 1823?",
+      "options": [
+        "Essays of Elia",
+        "Table-Talk",
+        "The Spirit of the Age",
+        "The Friend"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Essays of Elia gathered witty, affectionate prose pieces written under a literary persona.",
+      "topic": "prose",
+      "topicId": "essays-of-elia",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-12",
+      "question": "Who wrote The Spirit of the Age, a volume of contemporary literary portraits?",
+      "options": [
+        "William Hazlitt",
+        "Charles Lamb",
+        "Thomas De Quincey",
+        "Walter Scott"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hazlitt examined leading writers and thinkers in his 1825 collection of portraits.",
+      "topic": "prose",
+      "topicId": "william-hazlitt",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-13",
+      "question": "Which poet wrote To a Mouse after disturbing a small animal while ploughing?",
+      "options": [
+        "William Blake",
+        "Robert Burns",
+        "William Cowper",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem addresses a mouse whose nest has been disrupted by the speaker’s plough.",
+      "topic": "ground",
+      "topicId": "robert-burns",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Robert_Burns"
+    },
+    {
+      "id": "romantic-age-set-1-e-14",
+      "question": "Which Blake poem questions the creator of a fearsome striped creature?",
+      "options": [
+        "The Tyger",
+        "The Chimney Sweeper",
+        "London",
+        "The Lamb"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Tyger uses the animal’s fearful symmetry to ask about creation and power.",
+      "topic": "first",
+      "topicId": "the-tyger",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-15",
+      "question": "Which long autobiographical poem traces the growth of Wordsworth’s mind?",
+      "options": [
+        "Endymion",
+        "Don Juan",
+        "The Prelude",
+        "The Excursion"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Prelude explores the poet’s childhood, education and mental development in blank verse.",
+      "topic": "first",
+      "topicId": "the-prelude",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-16",
+      "question": "Which Coleridge poem was published in 1816 as a fragment associated with a dream?",
+      "options": [
+        "Childe Harold",
+        "The Prelude",
+        "The Tyger",
+        "Kubla Khan"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Kubla Khan appeared with Christabel in 1816 after an earlier period in manuscript.",
+      "topic": "first",
+      "topicId": "kubla-khan",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-17",
+      "question": "Which long satirical poem by Byron remained unfinished at his death?",
+      "options": [
+        "Adonais",
+        "The Prelude",
+        "Don Juan",
+        "The Task"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Don Juan uses a wandering hero and comic digressions to expose social hypocrisy.",
+      "topic": "second",
+      "topicId": "don-juan",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-18",
+      "question": "Which elegy did Percy Shelley compose in memory of John Keats?",
+      "options": [
+        "Alastor",
+        "Lycidas",
+        "The Giaour",
+        "Adonais"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Adonais was written in 1821 as an elegiac response to Keats’s death.",
+      "topic": "second",
+      "topicId": "adonais",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-19",
+      "question": "Which 1798 publication is conventionally used to mark the beginning of English Romanticism?",
+      "options": [
+        "The Dunciad",
+        "Lyrical Ballads",
+        "The Faerie Queene",
+        "The Prelude"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Lyrical Ballads introduced a new poetic programme associated with Wordsworth and Coleridge.",
+      "topic": "ground",
+      "topicId": "lyrical-ballads",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#the-language"
+    },
+    {
+      "id": "romantic-age-set-1-e-20",
+      "question": "Which Keats ode reflects on images preserved on an ancient vessel?",
+      "options": [
+        "To Autumn",
+        "Ode on a Grecian Urn",
+        "The Prelude",
+        "Dejection: An Ode"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The urn presents enduring scenes that invite thought about art and human change.",
+      "topic": "second",
+      "topicId": "ode-on-a-grecian-urn",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-21",
+      "question": "Which Austen novel follows a confident young woman whose attempts at matchmaking go wrong?",
+      "options": [
+        "Sense and Sensibility",
+        "Lady Susan",
+        "Northanger Abbey",
+        "Emma"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Emma Woodhouse repeatedly misreads the affections and motives of those around her.",
+      "topic": "novel",
+      "topicId": "emma",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-22",
+      "question": "Which Scott novel takes its readers to medieval England?",
+      "options": [
+        "The Antiquary",
+        "Waverley",
+        "Ivanhoe",
+        "The Heart of Midlothian"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ivanhoe is a historical romance set in medieval England, unlike many of Scott’s Scottish novels.",
+      "topic": "novel",
+      "topicId": "ivanhoe",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-23",
+      "question": "What is the name of the scientist who creates a living being in Frankenstein?",
+      "options": [
+        "Robert Walton",
+        "Alphonse Frankenstein",
+        "Victor Frankenstein",
+        "Henry Clerval"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Victor conducts the experiment and then abandons the being he has animated.",
+      "topic": "novel",
+      "topicId": "frankenstein",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-24",
+      "question": "What pen name did Charles Lamb use for his best-known magazine essays?",
+      "options": [
+        "Isaac Bickerstaff",
+        "Junius",
+        "Boz",
+        "Elia"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The persona Elia enabled Lamb to write intimate, playful reflections on ordinary life.",
+      "topic": "prose",
+      "topicId": "charles-lamb",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-25",
+      "question": "In which year did Hazlitt publish The Spirit of the Age?",
+      "options": [
+        "1825",
+        "1840",
+        "1807",
+        "1813"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The book collected Hazlitt’s critical portraits of his contemporaries in 1825.",
+      "topic": "prose",
+      "topicId": "william-hazlitt",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#writers-and-works"
+    },
+    {
+      "id": "romantic-age-set-1-e-26",
+      "question": "Which narrative by the Scottish poet features a farmer and a frightening encounter with witches?",
+      "options": [
+        "Tam o' Shanter",
+        "The Eve of St Agnes",
+        "The Excursion",
+        "Marmion"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Tam o Shanter follows a farmer who witnesses a supernatural gathering and flees.",
+      "topic": "terms",
+      "topicId": "robert-burns",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Robert_Burns"
+    },
+    {
+      "id": "romantic-age-set-1-e-27",
+      "question": "What technique did Blake use to print words and illustrations together from etched plates?",
+      "options": [
+        "Illuminated printing",
+        "Movable-type only",
+        "Lithographic journalism",
+        "Steel engraving alone"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Blake etched text and images together on copper plates and coloured impressions by hand.",
+      "topic": "terms",
+      "topicId": "william-blake",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-28",
+      "question": "Who became Poet Laureate in 1843 after Robert Southey?",
+      "options": [
+        "Thomas Moore",
+        "John Keats",
+        "William Wordsworth",
+        "George Gordon Byron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wordsworth accepted the laureateship in 1843 and held it until his death in 1850.",
+      "topic": "terms",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#how-the-age-ends"
+    },
+    {
+      "id": "romantic-age-set-1-e-29",
+      "question": "Which prose work published in 1817 discusses imagination and fancy?",
+      "options": [
+        "A Defence of Poetry",
+        "Essays of Elia",
+        "Biographia Literaria",
+        "The Spirit of the Age"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Coleridge developed a theory of imagination and criticised aspects of Wordsworth’s poetic theory.",
+      "topic": "first",
+      "topicId": "biographia-literaria",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "romantic-age-set-1-e-30",
+      "question": "In which country did Byron die while supporting a war for independence?",
+      "options": [
+        "Switzerland",
+        "Italy",
+        "Greece",
+        "France"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Byron died at Missolonghi in Greece in 1824 while aiding the independence movement.",
+      "topic": "terms",
+      "topicId": "lord-byron",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-31",
+      "question": "Which Shelley poem addresses a powerful wind as an agent of change?",
+      "options": [
+        "Ode on a Grecian Urn",
+        "Ode to the West Wind",
+        "The Tyger",
+        "To Autumn"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The wind is invoked to spread the poet’s words and help bring renewal.",
+      "topic": "second",
+      "topicId": "ode-to-the-west-wind",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-32",
+      "question": "What name did Keats give the ability to remain in uncertainty without impatiently seeking certainty?",
+      "options": [
+        "Fancy",
+        "Negative capability",
+        "Poetic justice",
+        "Objective correlative"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Keats proposed negative capability in a letter written in December 1817.",
+      "topic": "terms",
+      "topicId": "negative-capability",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#key-terms"
+    },
+    {
+      "id": "romantic-age-set-1-e-33",
+      "question": "Which was the first of Austen’s novels published in her lifetime?",
+      "options": [
+        "Pride and Prejudice",
+        "Mansfield Park",
+        "Emma",
+        "Sense and Sensibility"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sense and Sensibility appeared in 1811 under the authorial description By a Lady.",
+      "topic": "novel",
+      "topicId": "sense-and-sensibility",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-34",
+      "question": "Which literary form became especially associated with Scott’s blending of invented people and real past events?",
+      "options": [
+        "Historical novel",
+        "Problem play",
+        "Gothic lyric",
+        "Pastoral elegy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Scott made the historical novel influential by placing fictional characters in documented historical settings.",
+      "topic": "terms",
+      "topicId": "the-historical-novel",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-35",
+      "question": "Which lakeside gathering helped inspire the creation of Frankenstein?",
+      "options": [
+        "A poetry contest in Edinburgh",
+        "The ghost-story contest near Geneva",
+        "A theatrical debate in London",
+        "A lecture series in Oxford"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The group’s challenge to write ghost stories near Lake Geneva in 1816 inspired the novel.",
+      "topic": "terms",
+      "topicId": "mary-shelley",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-36",
+      "question": "With which family member did Lamb collaborate on Tales from Shakespear?",
+      "options": [
+        "His brother John",
+        "His sister Mary",
+        "His cousin George",
+        "His father John"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Charles and Mary Lamb retold Shakespearean plays in prose for young readers in 1807.",
+      "topic": "prose",
+      "topicId": "charles-lamb",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Charles_Lamb"
+    },
+    {
+      "id": "romantic-age-set-1-e-37",
+      "question": "What is the focus of Hazlitt’s 1817 book about the plays of Shakespeare?",
+      "options": [
+        "Medieval theology",
+        "Shakespearean characters and drama",
+        "Maritime navigation",
+        "Ancient architecture"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hazlitt’s 1817 volume critically discusses the dramatic characters in Shakespeare’s plays.",
+      "topic": "prose",
+      "topicId": "william-hazlitt",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Hazlitt"
+    },
+    {
+      "id": "romantic-age-set-1-e-38",
+      "question": "Consider the following statements regarding the poetry of Robert Burns:\nI. His Kilmarnock volume appeared in 1786.\nII. He drew upon Scots speech and rural experience.\nIII. He died in 1832 after publishing Waverley.\nWhich of the statements given above are correct?",
+      "options": [
+        "I only",
+        "III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Burns published his first major volume in 1786 and died in 1796; Scott wrote Waverley.",
+      "topic": "ground",
+      "topicId": "robert-burns",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Robert_Burns"
+    },
+    {
+      "id": "romantic-age-set-1-e-39",
+      "question": "Consider the following statements regarding William Blake’s writing and art:\nI. Songs of Innocence appeared in 1789.\nII. Songs of Experience appeared in 1794.\nIII. His books were normally mass-produced by newspaper presses.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I only",
+        "II only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Blake used his own illuminated printing method rather than normal commercial mass printing.",
+      "topic": "first",
+      "topicId": "william-blake",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-40",
+      "question": "Consider the following statements regarding the early Romantic poetry collection:\nI. Wordsworth and Coleridge contributed poems.\nII. The first edition was edited by Walter Scott in 1814.\nIII. The first edition appeared in 1798.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I only",
+        "I, II and III",
+        "III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The 1798 volume was the work of Wordsworth and Coleridge, not Scott.",
+      "topic": "first",
+      "topicId": "lyrical-ballads",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/romantic-age/#the-language"
+    },
+    {
+      "id": "romantic-age-set-1-e-41",
+      "question": "Which poet explained the idea of a willing suspension of disbelief?",
+      "options": [
+        "Samuel Johnson",
+        "John Keats",
+        "Alexander Pope",
+        "Samuel Taylor Coleridge"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Coleridge used the phrase while reflecting on supernatural poetry and its readers.",
+      "topic": "terms",
+      "topicId": "samuel-taylor-coleridge",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#the-language"
+    },
+    {
+      "id": "romantic-age-set-1-e-42",
+      "question": "What term describes the proud, brooding and rebellious outsider associated with Byron’s poetry?",
+      "options": [
+        "The Byronic hero",
+        "The pastoral shepherd",
+        "The comic servant",
+        "The sentimental rake"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Byronic hero combines charisma, defiance and often a burden of hidden guilt.",
+      "topic": "second",
+      "topicId": "the-byronic-hero",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#key-terms"
+    },
+    {
+      "id": "romantic-age-set-1-e-43",
+      "question": "Which prose essay by Shelley was written in 1821 and published posthumously?",
+      "options": [
+        "Biographia Literaria",
+        "A Defence of Poetry",
+        "An Essay on Criticism",
+        "The Spirit of the Age"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A Defence of Poetry argues for the imaginative and moral significance of poets.",
+      "topic": "terms",
+      "topicId": "a-defence-of-poetry",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "romantic-age-set-1-e-44",
+      "question": "Which emphasis most strongly distinguishes Romantic writing from much Augustan poetry?",
+      "options": [
+        "Imagination and individual feeling",
+        "Rigid adherence to court etiquette",
+        "Avoidance of the natural world",
+        "Exclusive use of heroic couplets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Romantic writers often foreground imaginative vision, nature and personal experience.",
+      "topic": "ground",
+      "topicId": "romanticism",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#key-terms"
+    },
+    {
+      "id": "romantic-age-set-1-e-45",
+      "question": "Which poet died in Rome in 1821 at the age of twenty-five?",
+      "options": [
+        "Percy Bysshe Shelley",
+        "Lord Byron",
+        "John Keats",
+        "William Hazlitt"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats died of tuberculosis in Rome after travelling to Italy for his health.",
+      "topic": "second",
+      "topicId": "john-keats",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-46",
+      "question": "Which Austen novel gently satirises a heroine’s enthusiasm for Gothic fiction?",
+      "options": [
+        "Persuasion",
+        "Northanger Abbey",
+        "Lady Susan",
+        "Mansfield Park"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Catherine Morland misreads ordinary events through expectations learned from Gothic stories.",
+      "topic": "terms",
+      "topicId": "northanger-abbey",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-47",
+      "question": "Consider the following statements regarding Walter Scott’s career:\nI. He first gained fame as a poet.\nII. Waverley was originally published without his name.\nIII. He became Poet Laureate in 1813.\nWhich of the statements given above are correct?",
+      "options": [
+        "II only",
+        "I and II only",
+        "I only",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Scott declined the laureateship, which went to Robert Southey; his earliest novels appeared anonymously.",
+      "topic": "novel",
+      "topicId": "walter-scott",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/romantic-age/#poetry"
+    },
+    {
+      "id": "romantic-age-set-1-e-48",
+      "question": "Consider the following statements regarding Mary Shelley’s early fiction:\nI. The novel was published anonymously at first.\nII. The Last Man was published before the turn of the eighteenth century.\nIII. Frankenstein appeared in 1818.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Frankenstein was issued without Mary Shelley’s name, while The Last Man came later in 1826.",
+      "topic": "novel",
+      "topicId": "mary-shelley",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-49",
+      "question": "In which periodical were Lamb’s Elia essays originally published?",
+      "options": [
+        "The Spectator",
+        "The Rambler",
+        "The Tatler",
+        "The London Magazine"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Lamb’s familiar essays appeared in the London Magazine before collection in book form.",
+      "topic": "terms",
+      "topicId": "charles-lamb",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/romantic-age/#prose"
+    },
+    {
+      "id": "romantic-age-set-1-e-50",
+      "question": "Which series collected Hazlitt’s conversational essays in the early 1820s?",
+      "options": [
+        "The Rambler",
+        "The Spectator",
+        "Essays of Elia",
+        "Table-Talk"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Table-Talk gathered Hazlitt’s literary and social essays in a familiar prose style.",
+      "topic": "terms",
+      "topicId": "william-hazlitt",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Hazlitt"
+    }
+  ]
+}

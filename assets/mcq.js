@@ -49,11 +49,11 @@
     'neoclassical',
     'restoration',
     'augustan-age',
-    'age-of-sensibility'
+    'age-of-sensibility',
+    'romantic-age'
   ];
 
   var SOON_HUBS = [
-    'romantic-age',
     'victorian-age',
     'edwardian',
     'georgian',
