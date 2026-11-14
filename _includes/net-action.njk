@@ -5,6 +5,6 @@
     <span class="net-action-title">{{ item.title }}</span>
     {% if item.available %}<span class="net-action-description">{{ item.description }}</span>{% else %}<span class="net-action-description net-status">Coming soon</span>{% endif %}
   </span>
-  <img class="net-action-arrow" src="/assets/icons/feather/{% if item.slug == 'books' or item.slug == 'syllabus-download' %}download{% else %}arrow-right{% endif %}.svg" alt="" width="24" height="24">
+  {% if item.badge %}<span class="net-action-badge">{{ item.badge }}</span>{% else %}<img class="net-action-arrow" src="/assets/icons/feather/{% if item.slug == 'books' or item.slug == 'syllabus-download' %}download{% else %}arrow-right{% endif %}.svg" alt="" width="24" height="24">{% endif %}
 </a>
 {% endmacro %}

@@ -303,11 +303,17 @@
 <section id="ages">
   <div class="wrap">
     <div class="sechead">
-      <h2>English Literature by Ages</h2>
+      <h2>British Literature by Ages</h2>
       <a class="more" href="/english-literature/">View complete timeline &rarr;</a>
     </div>
     <p class="seclede">Writers, texts, movements and key concepts from every literary period.</p>
-    <div class="agegrid" id="ageGrid"></div>
+    <div class="agegrid is-collapsed" id="ageGrid"></div>
+    <div class="agemore-wrap">
+      <button class="agemore" id="ageMore" type="button" hidden aria-expanded="false" aria-controls="ageGrid"
+              aria-label="Show all literary ages" title="Show all literary ages">
+        <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M2.5 8h11"/><path class="v" d="M8 2.5v11"/></svg>
+      </button>
+    </div>
   </div>
 </section>
 
@@ -328,19 +334,21 @@
   <div class="wrap">
     <div class="sechead"><h2>Meet the Author</h2></div>
     <div class="authorbox">
-      <img class="photo" src="/assets/prof_afsar.png" alt="Prof. Afsar Khan" width="124" height="124" loading="lazy">
+      <img class="photo" src="/assets/afsar-khan.webp" alt="Prof. Afsar Khan" width="132" height="132" loading="lazy">
       <div class="bio">
         <p>Hi, I am <strong>Afsar Khan</strong>, a teacher of English Literature with a Ph.D. in the subject.
         AK Explained began as a YouTube channel for students who find the language harder than the ideas.
         This website is the written half of that work &mdash; notes, syllabus maps and quizzes.</p>
-        <a class="btn" href="/about/">Know more about me</a>
       </div>
       <div class="says">
         <span class="quill" aria-hidden="true">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.5 2.2c-9.6 1-14.3 6.3-15.6 15.4l-1.2 2.9 1.8.7 1.1-2.7c8.2.5 13.1-4.1 13.9-16.3Z"/></svg>
         </span>
         <p>&ldquo;To make English literature simple, meaningful and accessible to every learner.&rdquo;</p>
-        <span class="by">&mdash; AK</span>
+        <div class="saysfoot">
+          <span class="by">&mdash; AK</span>
+          <a class="btn" href="/about/">Know more about me</a>
+        </div>
       </div>
     </div>
   </div>
@@ -391,10 +399,11 @@
       <div class="rvtrack" id="reviewTrack"></div>
       <button class="rvbtn next" type="button" aria-label="Next reviews" hidden>&#8250;</button>
     </div>
-    <div class="rvcta">
+    <a class="rvcta" href="/write-a-review/">
       <svg class="rvcta-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-      <a class="btn gold" href="/write-a-review/">Write a review &rarr;</a>
-    </div>
+      <span class="rvcta-txt">Write your review or Share your ideas</span>
+      <span class="rvcta-go" aria-hidden="true">&rarr;</span>
+    </a>
   </div>
 </section>
 

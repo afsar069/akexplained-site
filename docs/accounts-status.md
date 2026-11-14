@@ -1241,3 +1241,22 @@ count, not which questions, not email, not timing), and how to stay off.
   `PASSWORD_RECOVERY` and reads the link `type`.
 - Identity linking is automatic on a verified email and cannot be switched off — one person, one `user_id`.
 - Migrations are owner-run (rule 9). Test them on a local Postgres first (rule 14).
+
+## NET hub buttons (2026-11-14, on the branch, NOT merged)
+- On `/exams/net/` the three active Paper 2 cards (English Literature MCQs, UGC NET English PYQs, Quick Quizzes) now show a teal "Open" box where the arrow was (`badge` in `_data/netResources.json`, `.net-action-badge` in `assets/net.css`). The English Literature MCQs card is no longer the green primary row. "British Ages Quick MCQs" is now "Quick Quizzes".
+
+## NET hub: Paper 1 Mock Tests card and dark headers (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` Paper 1 box has a third card, **Paper 1 Mock Tests** (Coming soon; `paper-1-mock-tests` in `_data/netResources.json`, its noindex Coming-soon page is built by `coming-soon.njk`). The Paper 1 and Paper 2 box headers are now dark green (`.net-paper-head`, `--teal-dark`) with white text.
+
+## NET hub: resources section in two boxes (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` "Know the exam & get your resources" is now two boxes like the Paper boxes: **Know the exam** (About UGC-NET, View NET Syllabus; group `know`) and **Get your resources** (Download Important Books, Download Complete Syllabus; group `get`) in `_data/netResources.json`. They reuse `.net-paper-grid` / `.net-paper`; the old `.net-resource-grid` CSS is gone.
+
+## Landing page: ages show two rows, "+" opens all (2026-11-14, on the branch, NOT merged)
+- `index.html` "British Literature by Ages" (renamed from "English Literature by Ages", 2026-11-14) shows only the first two rows of age cards (10 on a wide screen, 6 on a tablet, 4 on a phone, by `nth-child` rules in `assets/home.css`); a round "+" button under the grid (`#ageMore`, wired in `renderAges()` in `assets/home.js`) opens all 20 and turns into a "−". If the column counts of `.agegrid` change, change the three `nth-child` limits with them.
+
+## Landing page: Meet the Author photo and button (2026-11-14, on the branch, NOT merged)
+- `index.html` "Meet the Author" uses the owner's new photo `assets/afsar-khan.webp` (cropped from the owner's upload; a stray strip along its top edge was cut off). The old `assets/prof_afsar.png` was removed (nothing else used it). The "Know more about me" button is now a small button in the bottom-right corner of the quote card (`.saysfoot` in `assets/home.css`), on the same row as "— AK". The bio text is unchanged, waiting for the owner's wording.
+
+## Landing page: review strip, and one more rename (2026-11-14)
+- Under the reviews on `index.html`, the pen icon + gold "Write a review" button was replaced by **one thin full-width strip** (`.rvcta` in `assets/site.css`, dark teal with a gold underline) that is the whole link to `/write-a-review/` and reads "Write your review or Share your ideas". The "Write a review" button inside the empty-state card (`home.js`) is unchanged.
+- The card on `/video-lessons/` that links to the timeline is now titled "British Literature by Ages", like the landing page.
