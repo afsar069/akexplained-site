@@ -48,11 +48,11 @@
     'commonwealth',
     'neoclassical',
     'restoration',
-    'augustan-age'
+    'augustan-age',
+    'age-of-sensibility'
   ];
 
   var SOON_HUBS = [
-    'age-of-sensibility',
     'romantic-age',
     'victorian-age',
     'edwardian',

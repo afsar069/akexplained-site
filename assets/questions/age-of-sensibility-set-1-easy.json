@@ -1,0 +1,873 @@
+{
+  "setId": "age-of-sensibility-set-1",
+  "rev": 1,
+  "age": "age-of-sensibility",
+  "ageName": "Age of Sensibility",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/augustan-age/",
+  "notesTitle": "Augustan Age — the full notes",
+  "topics": {
+    "ground": "The age and its tastes",
+    "novel": "The novel",
+    "poetry": "Poetry",
+    "johnson": "Johnson, the stage and ideas",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on the leading poets, novelists, playwrights and thinkers of the Age of Sensibility.",
+  "questions": [
+    {
+      "id": "age-of-sensibility-set-1-e-01",
+      "question": "Who compiled A Dictionary of the English Language, published in 1755?",
+      "options": [
+        "Samuel Johnson",
+        "James Boswell",
+        "Edmund Burke",
+        "Oliver Goldsmith"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Samuel Johnson issued his influential dictionary in 1755 after years of work.",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-02",
+      "question": "Which series of moral essays did Samuel Johnson publish between 1750 and 1752?",
+      "options": [
+        "The Tatler",
+        "The Rambler",
+        "The Spectator",
+        "The Guardian"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Rambler appeared twice weekly and developed Johnson’s serious moral prose.",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Johnson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-03",
+      "question": "Which philosophical tale did Johnson publish in 1759?",
+      "options": [
+        "The Vicar of Wakefield",
+        "Clarissa",
+        "Rasselas",
+        "Evelina"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rasselas follows an Abyssinian prince searching for a satisfying form of life.",
+      "topic": "johnson",
+      "topicId": "rasselas",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Johnson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-04",
+      "question": "What is the subject of Johnson’s Lives of the Poets?",
+      "options": [
+        "Accounts of ancient wars",
+        "Travels across Europe",
+        "Stories of naval battles",
+        "Biographies and criticism of poets"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Lives of the Poets combines literary biographies with judgements on English poetry.",
+      "topic": "johnson",
+      "topicId": "lives-of-the-poets",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-05",
+      "question": "Consider the following statements regarding Johnson’s Dictionary:\nI. Its first edition appeared in 1755.\nII. It illustrated meanings with examples from literature.\nIII. It was a novel told entirely through letters.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II only",
+        "II and III only",
+        "I only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The dictionary provided definitions supported by quotations from writers; it was not an epistolary novel.",
+      "topic": "terms",
+      "topicId": "johnsons-dictionary",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-06",
+      "question": "Who wrote the novel The Vicar of Wakefield?",
+      "options": [
+        "Samuel Richardson",
+        "Oliver Goldsmith",
+        "Laurence Sterne",
+        "Henry Fielding"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Oliver Goldsmith published The Vicar of Wakefield in 1766.",
+      "topic": "johnson",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-07",
+      "question": "Which poem by Goldsmith appeared in 1770?",
+      "options": [
+        "The Task",
+        "The Seasons",
+        "The Deserted Village",
+        "The Bard"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Deserted Village portrays rural displacement and the loss of an old community.",
+      "topic": "poetry",
+      "topicId": "the-deserted-village",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-08",
+      "question": "Which Goldsmith comedy was first performed in 1773?",
+      "options": [
+        "The Rivals",
+        "The Beggar’s Opera",
+        "The Conscious Lovers",
+        "She Stoops to Conquer"
+      ],
+      "correct_option_id": 3,
+      "explanation": "She Stoops to Conquer revived lively comedy with mistakes of identity and social class.",
+      "topic": "johnson",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-09",
+      "question": "What is the profession of Dr Charles Primrose in The Vicar of Wakefield?",
+      "options": [
+        "A clergyman",
+        "A naval officer",
+        "A military captain",
+        "A court painter"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dr Primrose is the village vicar whose family experiences misfortune and restoration.",
+      "topic": "terms",
+      "topicId": "the-vicar-of-wakefield",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Vicar_of_Wakefield"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-10",
+      "question": "Consider the following statements regarding Goldsmith’s verse:\nI. The Traveller appeared in 1764.\nII. The Deserted Village examines the fate of rural communities.\nIII. Goldsmith composed The Task in 1785.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III only",
+        "I and II only",
+        "I only",
+        "III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Traveller and The Deserted Village are Goldsmith’s poems; The Task belongs to William Cowper.",
+      "topic": "poetry",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Oliver_Goldsmith"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-11",
+      "question": "Who wrote the play The Rivals?",
+      "options": [
+        "Oliver Goldsmith",
+        "John Gay",
+        "Richard Brinsley Sheridan",
+        "George Farquhar"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sheridan’s comedy The Rivals was first performed in 1775.",
+      "topic": "johnson",
+      "topicId": "richard-brinsley-sheridan",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-12",
+      "question": "Which Sheridan comedy premiered in 1777?",
+      "options": [
+        "The Critic",
+        "The Duenna",
+        "The Conscious Lovers",
+        "The School for Scandal"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The School for Scandal satirizes fashionable gossip and false reputations.",
+      "topic": "johnson",
+      "topicId": "the-school-for-scandal",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-13",
+      "question": "Which character in The Rivals famously misuses long words?",
+      "options": [
+        "Mrs Malaprop",
+        "Lady Sneerwell",
+        "Kate Hardcastle",
+        "Mrs Hardcastle"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mrs Malaprop’s mistaken word choices gave English the term malapropism.",
+      "topic": "terms",
+      "topicId": "the-rivals",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-14",
+      "question": "What social behaviour is chiefly attacked in The School for Scandal?",
+      "options": [
+        "Religious pilgrimage",
+        "Malicious gossip and hypocrisy",
+        "Heroic military courage",
+        "Rural agricultural reform"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The comedy exposes people who trade in gossip and pretend to moral superiority.",
+      "topic": "johnson",
+      "topicId": "the-school-for-scandal",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_School_for_Scandal"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-15",
+      "question": "Consider the following statements regarding Sheridan’s dramatic works:\nI. The Duenna is a comic opera.\nII. The Critic parodies theatrical rehearsals.\nIII. Sheridan wrote the tragedy Venice Preserv’d.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "III only",
+        "I and II only",
+        "I only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Duenna uses music and comic intrigue, while The Critic ridicules stage practice; Otway wrote Venice Preserv’d.",
+      "topic": "johnson",
+      "topicId": "richard-brinsley-sheridan",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Richard_Brinsley_Sheridan"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-16",
+      "question": "Who wrote Pamela, or Virtue Rewarded?",
+      "options": [
+        "Henry Fielding",
+        "Daniel Defoe",
+        "Tobias Smollett",
+        "Samuel Richardson"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Samuel Richardson published Pamela in 1740, helping establish the epistolary novel.",
+      "topic": "novel",
+      "topicId": "samuel-richardson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-17",
+      "question": "What literary form chiefly tells the story of Pamela?",
+      "options": [
+        "Letters written by characters",
+        "Rhymed heroic couplets",
+        "A sequence of stage scenes",
+        "An all-knowing verse narrator"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pamela is an epistolary novel whose letters give access to the heroine’s feelings.",
+      "topic": "novel",
+      "topicId": "pamela",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-18",
+      "question": "Which Richardson novel tells the tragic story of a young woman threatened by the libertine Lovelace?",
+      "options": [
+        "Amelia",
+        "Clarissa",
+        "Evelina",
+        "Moll Flanders"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Richardson’s Clarissa depicts a heroine struggling against coercion and exploitation.",
+      "topic": "novel",
+      "topicId": "clarissa",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-19",
+      "question": "In which year did the first edition of Pamela appear?",
+      "options": [
+        "1719",
+        "1759",
+        "1740",
+        "1778"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Pamela appeared in 1740 and presented its heroine’s virtue through letters.",
+      "topic": "novel",
+      "topicId": "pamela",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-20",
+      "question": "Consider the following statements regarding the epistolary novel:\nI. It can present a story through correspondence.\nII. It often gives access to characters’ private thoughts.\nIII. It requires every event to be narrated in heroic couplets.\nWhich of the statements given above are correct?",
+      "options": [
+        "II only",
+        "III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Letters help reveal private experiences; an epistolary novel does not require a verse form.",
+      "topic": "terms",
+      "topicId": "the-epistolary-novel",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#key-terms"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-21",
+      "question": "Who wrote The History of Tom Jones, a Foundling?",
+      "options": [
+        "Henry Fielding",
+        "Samuel Richardson",
+        "Laurence Sterne",
+        "Oliver Goldsmith"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Henry Fielding published Tom Jones in 1749.",
+      "topic": "novel",
+      "topicId": "henry-fielding",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-22",
+      "question": "Which Fielding novel follows the travels of a young servant with Parson Adams?",
+      "options": [
+        "Pamela",
+        "Joseph Andrews",
+        "The Vicar of Wakefield",
+        "Rasselas"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Joseph Andrews follows the adventures of a servant and his companion Parson Adams.",
+      "topic": "novel",
+      "topicId": "joseph-andrews",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-23",
+      "question": "In which year was Tom Jones published?",
+      "options": [
+        "1740",
+        "1766",
+        "1749",
+        "1759"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tom Jones appeared in 1749 as a large, carefully plotted comic narrative.",
+      "topic": "novel",
+      "topicId": "tom-jones",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-24",
+      "question": "Which short satire did Fielding publish as a response to Pamela?",
+      "options": [
+        "Clarissa",
+        "The Dunciad",
+        "A Modest Proposal",
+        "Shamela"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shamela mocks what Fielding saw as the self-interested virtue of Richardson’s heroine.",
+      "topic": "novel",
+      "topicId": "shamela",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-25",
+      "question": "Consider the following statements regarding Fielding’s fiction:\nI. Fielding called Joseph Andrews a comic epic poem in prose.\nII. Tom Jones follows the life of a foundling.\nIII. Fielding is primarily known for writing medieval miracle plays.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "I only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Fielding adapted epic conventions to prose fiction; his major works are eighteenth-century novels.",
+      "topic": "terms",
+      "topicId": "henry-fielding",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-26",
+      "question": "Who wrote The Life and Opinions of Tristram Shandy, Gentleman?",
+      "options": [
+        "Henry Fielding",
+        "Laurence Sterne",
+        "Samuel Richardson",
+        "Tobias Smollett"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Laurence Sterne published the experimental novel in volumes from 1759 to 1767.",
+      "topic": "novel",
+      "topicId": "laurence-sterne",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-27",
+      "question": "Whose death is marked by a black page in Tristram Shandy?",
+      "options": [
+        "Uncle Toby",
+        "Corporal Trim",
+        "Parson Yorick",
+        "Walter Shandy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The novel uses an entirely black page to mark Parson Yorick’s death, turning mourning into visual form.",
+      "topic": "novel",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Tristram_Shandy"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-28",
+      "question": "Which travel narrative did Sterne publish in 1768?",
+      "options": [
+        "The Traveller",
+        "Rasselas",
+        "The Task",
+        "A Sentimental Journey"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A Sentimental Journey follows the emotional encounters of its travelling narrator.",
+      "topic": "novel",
+      "topicId": "a-sentimental-journey",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Laurence_Sterne"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-29",
+      "question": "Which narrative feature is especially associated with Tristram Shandy?",
+      "options": [
+        "Frequent digressions and interruptions",
+        "Strict chronological order",
+        "A single heroic couplet",
+        "Letters with no narrator"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Tristram Shandy constantly interrupts its own story with reflections, detours and jokes.",
+      "topic": "novel",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Tristram_Shandy"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-30",
+      "question": "What was Laurence Sterne’s occupation besides being a novelist?",
+      "options": [
+        "A naval admiral",
+        "An Anglican clergyman",
+        "A royal astronomer",
+        "A professional soldier"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sterne served as a clergyman while writing his best-known fictional works.",
+      "topic": "terms",
+      "topicId": "laurence-sterne",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Laurence_Sterne"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-31",
+      "question": "Who wrote Elegy Written in a Country Churchyard?",
+      "options": [
+        "William Cowper",
+        "Oliver Goldsmith",
+        "Thomas Gray",
+        "James Thomson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thomas Gray’s elegy meditates on death and unrecognized lives among the rural poor.",
+      "topic": "poetry",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-32",
+      "question": "In which year was Gray’s Elegy Written in a Country Churchyard published?",
+      "options": [
+        "1711",
+        "1770",
+        "1785",
+        "1751"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gray’s Elegy appeared in 1751 and soon became widely admired.",
+      "topic": "poetry",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-33",
+      "question": "Which poet wrote Ode on a Distant Prospect of Eton College?",
+      "options": [
+        "Thomas Gray",
+        "William Collins",
+        "Alexander Pope",
+        "Robert Burns"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gray’s ode reflects on youthful innocence from the perspective of experience.",
+      "topic": "poetry",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Gray"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-34",
+      "question": "Which of these titles is another important ode by Thomas Gray?",
+      "options": [
+        "The Task",
+        "The Bard",
+        "The Deserted Village",
+        "An Essay on Man"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Bard is one of Gray’s major Pindaric odes.",
+      "topic": "poetry",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Gray"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-35",
+      "question": "Which setting frames Gray’s famous Elegy?",
+      "options": [
+        "A crowded city market",
+        "A royal palace",
+        "A rural churchyard",
+        "A university lecture hall"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The graves of ordinary villagers prompt Gray’s reflections on mortality and lost potential.",
+      "topic": "terms",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-36",
+      "question": "Who wrote The Task?",
+      "options": [
+        "Thomas Gray",
+        "James Thomson",
+        "Oliver Goldsmith",
+        "William Cowper"
+      ],
+      "correct_option_id": 3,
+      "explanation": "William Cowper published The Task in 1785.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-37",
+      "question": "In which year did Cowper’s long poem The Task appear?",
+      "options": [
+        "1785",
+        "1751",
+        "1770",
+        "1798"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Task was published in 1785 and celebrates nature and domestic life.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Task_(poem)"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-38",
+      "question": "With which hymn writer did Cowper collaborate on Olney Hymns?",
+      "options": [
+        "Isaac Watts",
+        "John Newton",
+        "Charles Wesley",
+        "John Wesley"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cowper and John Newton collaborated on the devotional collection Olney Hymns.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-39",
+      "question": "Which humorous ballad by Cowper follows a runaway horse and its rider?",
+      "options": [
+        "The Bard",
+        "The Traveller",
+        "The Diverting History of John Gilpin",
+        "The Seasons"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Gilpin is the central rider in Cowper’s famous comic ballad.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-40",
+      "question": "What setting is especially prominent in Cowper’s poetry?",
+      "options": [
+        "Royal court intrigue",
+        "Maritime imperial battles",
+        "Ancient Greek warfare",
+        "Domestic and rural life"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Cowper repeatedly celebrates gardens, households and country life.",
+      "topic": "terms",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-41",
+      "question": "Who wrote The History of the Decline and Fall of the Roman Empire?",
+      "options": [
+        "Edward Gibbon",
+        "Samuel Johnson",
+        "Edmund Burke",
+        "David Hume"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Edward Gibbon wrote the celebrated historical account of Rome’s decline.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-42",
+      "question": "What historical civilization is the main subject of Gibbon’s Decline and Fall?",
+      "options": [
+        "The Mongol Empire",
+        "The Roman Empire",
+        "The Ottoman Empire",
+        "The Mughal Empire"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gibbon surveys the political and cultural history of the Roman and later Byzantine empires.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-43",
+      "question": "In which year did the first volume of Decline and Fall appear?",
+      "options": [
+        "1755",
+        "1788",
+        "1776",
+        "1798"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The first volume of Gibbon’s major history was published in 1776.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-44",
+      "question": "How many volumes did Gibbon’s Decline and Fall comprise in its original publication?",
+      "options": [
+        "Two volumes",
+        "Four volumes",
+        "Eight volumes",
+        "Six volumes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The full historical work appeared in six volumes over several years.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-45",
+      "question": "Which intellectual movement strongly shaped Gibbon’s historical method?",
+      "options": [
+        "The Enlightenment",
+        "The Pre-Raphaelites",
+        "The Imagists",
+        "The Bloomsbury Group"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gibbon’s interest in evidence, reason and religious history reflects Enlightenment thought.",
+      "topic": "terms",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-46",
+      "question": "Who wrote A Philosophical Enquiry into the Origin of Our Ideas of the Sublime and Beautiful?",
+      "options": [
+        "David Hume",
+        "Edmund Burke",
+        "Samuel Johnson",
+        "Edward Gibbon"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Edmund Burke published his influential study of aesthetics in 1757.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-47",
+      "question": "Which major revolution did Burke criticize in Reflections on the Revolution in France?",
+      "options": [
+        "The Glorious Revolution",
+        "The American Revolution",
+        "The French Revolution",
+        "The English Civil War"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Burke’s 1790 book challenged the radical political upheaval in France.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-48",
+      "question": "What two aesthetic categories are examined in Burke’s Enquiry?",
+      "options": [
+        "The tragic and the comic",
+        "The epic and the lyric",
+        "The sacred and the secular",
+        "The sublime and the beautiful"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Burke’s treatise analyzes how human passions respond to sublimity and beauty.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-49",
+      "question": "In which year was Burke’s Reflections on the Revolution in France published?",
+      "options": [
+        "1790",
+        "1757",
+        "1776",
+        "1815"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Reflections appeared in 1790 as a response to the French Revolution of 1789.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-e-50",
+      "question": "Which aesthetic concept did Burke especially associate with terror and overwhelming power?",
+      "options": [
+        "Decorum",
+        "The sublime",
+        "The pastoral",
+        "The pathetic fallacy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Burke treated experiences of fear, vastness and power as central to the sublime.",
+      "topic": "terms",
+      "topicId": "the-sublime",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    }
+  ]
+}
