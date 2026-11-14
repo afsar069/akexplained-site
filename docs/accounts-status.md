@@ -1250,3 +1250,6 @@ count, not which questions, not email, not timing), and how to stay off.
 
 ## NET hub: resources section in two boxes (2026-11-14, on the branch, NOT merged)
 - `/exams/net/` "Know the exam & get your resources" is now two boxes like the Paper boxes: **Know the exam** (About UGC-NET, View NET Syllabus; group `know`) and **Get your resources** (Download Important Books, Download Complete Syllabus; group `get`) in `_data/netResources.json`. They reuse `.net-paper-grid` / `.net-paper`; the old `.net-resource-grid` CSS is gone.
+
+## Landing page: ages show two rows, "+" opens all (2026-11-14, on the branch, NOT merged)
+- `index.html` "English Literature by Ages" shows only the first two rows of age cards (10 on a wide screen, 6 on a tablet, 4 on a phone, by `nth-child` rules in `assets/home.css`); a round "+" button under the grid (`#ageMore`, wired in `renderAges()` in `assets/home.js`) opens all 20 and turns into a "−". If the column counts of `.agegrid` change, change the three `nth-child` limits with them.
