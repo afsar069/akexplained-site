@@ -1247,3 +1247,6 @@ count, not which questions, not email, not timing), and how to stay off.
 
 ## NET hub: Paper 1 Mock Tests card and dark headers (2026-11-14, on the branch, NOT merged)
 - `/exams/net/` Paper 1 box has a third card, **Paper 1 Mock Tests** (Coming soon; `paper-1-mock-tests` in `_data/netResources.json`, its noindex Coming-soon page is built by `coming-soon.njk`). The Paper 1 and Paper 2 box headers are now dark green (`.net-paper-head`, `--teal-dark`) with white text.
+
+## NET hub: resources section in two boxes (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` "Know the exam & get your resources" is now two boxes like the Paper boxes: **Know the exam** (About UGC-NET, View NET Syllabus; group `know`) and **Get your resources** (Download Important Books, Download Complete Syllabus; group `get`) in `_data/netResources.json`. They reuse `.net-paper-grid` / `.net-paper`; the old `.net-resource-grid` CSS is gone.
