@@ -1059,7 +1059,10 @@
             "easy",
             "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "titleCase": "Across the Whole Age",
+          "lede": "Fifty questions at each level, easy and medium, on the Restoration stage, Dryden, Pope, Swift, Addison and Steele, Defoe, Richardson, Fielding, Sterne, Johnson, Gray and Goldsmith."
         },
         {
           "n": 2,
@@ -1118,6 +1121,11 @@
           "count": 50
         }
       ],
+      "hub": {
+        "description": "Neoclassical Period MCQ practice (1660–1785). Set 1 has fifty easy and fifty medium questions on the Restoration stage, Dryden, Pope, Swift, Addison and Steele, Defoe, Richardson, Fielding, Sterne, Johnson, Gray and Goldsmith, open to everyone.",
+        "ogDescription": "Practice Neoclassical literature with Set 1: fifty easy and fifty medium questions, open to everyone.",
+        "heroSub": "1660 to 1785 &middot; Set 1 is open at easy and medium level"
+      },
       "topics": [
         {
           "value": "ground",

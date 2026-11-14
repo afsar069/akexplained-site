@@ -45,11 +45,11 @@
     'elizabethan',
     'jacobean',
     'caroline',
-    'commonwealth'
+    'commonwealth',
+    'neoclassical'
   ];
 
   var SOON_HUBS = [
-    'neoclassical',
     'restoration',
     'augustan-age',
     'age-of-sensibility',

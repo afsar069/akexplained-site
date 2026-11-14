@@ -1,0 +1,880 @@
+{
+  "setId": "neoclassical-set-1",
+  "rev": 1,
+  "age": "neoclassical",
+  "ageName": "Neoclassical Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/restoration-age/",
+  "notesTitle": "Restoration — the full notes",
+  "topics": {
+    "stage": "The Restoration stage",
+    "dryden": "John Dryden",
+    "pope": "Alexander Pope",
+    "swift": "Jonathan Swift",
+    "periodical": "Addison and Steele",
+    "defoe": "Daniel Defoe",
+    "richardson": "Samuel Richardson",
+    "fielding": "Henry Fielding",
+    "sterne": "Laurence Sterne",
+    "johnson": "Samuel Johnson",
+    "gray": "Thomas Gray",
+    "goldsmith": "Oliver Goldsmith"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Intermediate UGC NET questions testing literary context, interpretation, narrative techniques, satire and eighteenth-century drama.",
+  "questions": [
+    {
+      "id": "neoclassical-set-1-m-01",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "question": "In Restoration comedy, what is most often exposed through witty exchanges and romantic intrigue?",
+      "options": [
+        "The moral lessons of saints’ lives",
+        "The political economy of colonial plantations",
+        "The pretensions and hypocrisy of fashionable society",
+        "The necessity of classical unities in epic"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The comedy of manners tests social performance and exposes fashionable affectation.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-02",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "question": "Which combination best characterizes the commercial Restoration theatre?",
+      "options": [
+        "Actresses, indoor playhouses and movable scenery",
+        "Medieval pageant wagons and guild patronage",
+        "Boy actors exclusively, open-air amphitheatres and no scenery",
+        "Latin dialogue, liturgical ritual and church sponsorship"
+      ],
+      "correct_option_id": 0,
+      "explanation": "After 1660 public professional theatre adopted actresses and spectacular indoor staging.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-03",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "question": "In The Way of the World, which pair negotiates the famous proviso scene before marriage?",
+      "options": [
+        "Dorimant and Harriet",
+        "Mirabell and Millamant",
+        "Almanzor and Almahide",
+        "Horner and Margery Pinchwife"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mirabell and Millamant negotiate terms of married independence in Congreve’s proviso scene.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-04",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "william-wycherley",
+      "periodId": "restoration-era",
+      "question": "Which play features Horner’s deception that he is impotent?",
+      "options": [
+        "The Rover",
+        "The Country Wife",
+        "The Conscious Lovers",
+        "The Way of the World"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wycherley’s The Country Wife uses Horner’s pretence of impotence as a central plot device.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-05",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "question": "What distinguishes the Restoration heroic play from a typical comedy of manners?",
+      "options": [
+        "A humble village setting with rustic speakers",
+        "Elevated love-and-honour conflicts, often in rhymed couplets",
+        "A first-person sequence of private letters",
+        "Satire of urbane marriage negotiations only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Heroic tragedy privileges grand passions, conflicts of honour and elevated verse.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-06",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "In Dryden’s Absalom and Achitophel, which figure corresponds most closely to Charles II?",
+      "options": [
+        "Absalom",
+        "Zimri",
+        "King David",
+        "Achitophel"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The allegorical King David represents Charles II in the Exclusion Crisis satire.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-07",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Who is primarily satirized as Shadwell in Dryden’s Mac Flecknoe?",
+      "options": [
+        "A betrayed Roman general",
+        "A loyal military commander",
+        "A heroic classical dramatist",
+        "The successor to a kingdom of dullness"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shadwell inherits the throne of poetic stupidity from Flecknoe in this mock-heroic attack.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-08",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Why is All for Love formally distinct from Dryden’s earlier rhymed heroic drama?",
+      "options": [
+        "It is a sequence of epistles",
+        "It is written chiefly in blank verse",
+        "It uses only ballad stanzas",
+        "It is entirely prose"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Dryden wrote All for Love in blank verse, reworking Antony and Cleopatra.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-09",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Which critical issue is debated in An Essay of Dramatic Poesy?",
+      "options": [
+        "The relative merits of ancient and modern, English and French drama",
+        "The proper number of letters in an English dictionary",
+        "The moral education of a servant heroine",
+        "The economic causes of enclosure"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dryden stages a dialogue on classical and modern dramatists and French versus English practice.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-10",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "The Hind and the Panther (1687) is especially associated with which theme?",
+      "options": [
+        "Rural depopulation after enclosure",
+        "Religious controversy and Dryden’s Catholic position",
+        "The history of a lock of hair",
+        "The domestic life of Crusoe on his island"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The allegorical animal poem explores religious debate after Dryden’s conversion to Catholicism.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-11",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "question": "Which feature makes The Rape of the Lock a mock-epic?",
+      "options": [
+        "It narrates an actual military conquest",
+        "It abandons all allusions to classical epic",
+        "It applies grand epic conventions to a trivial social quarrel",
+        "It treats only biblical creation"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The trivial cutting of Belinda’s hair is magnified by epic machinery and style.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-12",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "question": "Which supernatural beings protect Belinda in The Rape of the Lock?",
+      "options": [
+        "Valkyries",
+        "Furies",
+        "Sylphs",
+        "Muses"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Pope’s sylphs form the poem’s mock-epic supernatural machinery.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-13",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "an-essay-on-man",
+      "periodId": "augustan",
+      "question": "Which principle is centrally explored in An Essay on Man?",
+      "options": [
+        "The absolute autonomy of the individual from nature",
+        "Human limitations within a providentially ordered universe",
+        "The irrelevance of reason to moral life",
+        "The need to overthrow all poetic rules"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pope examines humanity’s position and limits within the universal order.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-14",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "the-dunciad",
+      "periodId": "augustan",
+      "question": "Why does Pope enthrone Dulness in The Dunciad?",
+      "options": [
+        "To satirize cultural decline and the triumph of bad writing",
+        "To narrate the plot of Pamela",
+        "To celebrate the return of medieval chivalry",
+        "To praise the heroic conduct of Marlborough"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dulness personifies the spread of intellectual and literary mediocrity.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-15",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "question": "Which statement best explains the “Augustan” quality of Pope’s heroic couplets?",
+      "options": [
+        "They reject all metre and rhyme",
+        "They imitate Old English alliterative verse",
+        "They avoid ethical and social judgement",
+        "They seek balance, antithesis and controlled wit"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pope’s couplets frequently balance clauses and sharpen satirical or moral arguments through antithesis.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-16",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "What is the main satirical purpose of the Lilliput–Blefuscu conflict over egg-breaking?",
+      "options": [
+        "To defend every policy of European courts",
+        "To celebrate the value of religious persecution",
+        "To expose the absurdity of sectarian and political disputes",
+        "To explain English maritime technology"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The quarrel exaggerates minor differences to reveal the irrationality of partisan conflict.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-17",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "How does Brobdingnag reverse Gulliver’s position in the first voyage?",
+      "options": [
+        "He rules a kingdom of tiny people",
+        "He becomes a rational horse",
+        "He encounters only flying philosophers",
+        "He becomes tiny and vulnerable among giants"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Part II reverses the first voyage’s scale, undermining Gulliver’s sense of superiority.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-18",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "question": "What is the key effect of the calm, economic language in A Modest Proposal?",
+      "options": [
+        "It presents a sentimental love narrative",
+        "It makes the proposed scheme sincere policy",
+        "It heightens horror through sustained irony",
+        "It removes the work’s political criticism"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A detached calculating voice exposes the cruelty of treating the poor as commodities.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-19",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "What do the Yahoos chiefly represent in the fourth voyage of Gulliver’s Travels?",
+      "options": [
+        "A court of Restoration comedians",
+        "Degraded aspects of human appetite and behaviour",
+        "A peaceful community of shepherd poets",
+        "The noblest achievements of scientific reason"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Yahoos reflect a brutally pessimistic satirical portrait of human vice.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-20",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "the-spectator",
+      "periodId": "augustan",
+      "question": "What did the fictional Spectator Club chiefly help Addison and Steele achieve?",
+      "options": [
+        "A chronological history of Roman emperors",
+        "A social cross-section through which to observe contemporary manners",
+        "A continuous adventure story told by letters",
+        "A platform for anonymous court tragedies only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Club’s varied types allowed the essays to comment on different parts of social life.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-21",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "the-spectator",
+      "periodId": "augustan",
+      "question": "Which fictional gentleman became a recurring model of amiable rural conservatism in The Spectator?",
+      "options": [
+        "Squire Allworthy",
+        "Parson Yorick",
+        "Sir Roger de Coverley",
+        "Isaac Bickerstaff"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sir Roger de Coverley is the well-known country gentleman of the Spectator Club.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-22",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "richard-steele",
+      "periodId": "augustan",
+      "question": "What purpose best describes Steele’s The Tatler?",
+      "options": [
+        "To publish a complete dictionary in weekly parts",
+        "To revive medieval mystery plays",
+        "To serialize Tom Jones",
+        "To combine news, manners and moral commentary in short periodical essays"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Steele used The Tatler to blend social observation, criticism and ethical improvement.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-23",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "joseph-addison",
+      "periodId": "augustan",
+      "question": "Why were Addison’s Spectator essays influential in prose style?",
+      "options": [
+        "They helped establish an accessible, polished conversational essay",
+        "They eliminated humour from moral writing",
+        "They promoted obscure technical vocabulary",
+        "They replaced prose with unrhymed pentameter"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Addison’s clear, urbane essays brought moral and literary criticism to a wide readership.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-24",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "question": "What narrative technique most helps Robinson Crusoe convey verisimilitude?",
+      "options": [
+        "A detailed first-person account of practical everyday experience",
+        "A chorus that predicts every event",
+        "Continuous rhymed couplets describing gods",
+        "A series of anonymous newspaper editorials"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The realistic first-person narration details Crusoe’s labour, survival and decisions.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-25",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "question": "What does Crusoe’s construction of a self-sufficient island life especially foreground?",
+      "options": [
+        "The impossibility of learning practical skills",
+        "The rejection of all religious reflection",
+        "Labour, property and individual resourcefulness",
+        "The rituals of the London theatre"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Crusoe’s survival emphasises work, ownership and providential self-examination.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-26",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "moll-flanders",
+      "periodId": "augustan",
+      "question": "What feature links Moll Flanders to the picaresque tradition?",
+      "options": [
+        "The story follows Aristotle’s tragic unities",
+        "A resourceful protagonist moves through varied social worlds and adventures",
+        "The work uses only dialogue between allegorical animals",
+        "The heroine remains in one ideal pastoral village"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Moll’s episodic criminal and social experiences recall picaresque narration.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-27",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "question": "Why is A Journal of the Plague Year sometimes mistaken for direct eyewitness testimony?",
+      "options": [
+        "Its vivid documentary-style narration creates a convincing historical voice",
+        "It contains an actual government medical register only",
+        "It narrates the events through supernatural sprites",
+        "It consists solely of sonnets written during the plague"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Defoe’s 1722 fictionalized account uses detailed reports and first-person observation to mimic testimony.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-28",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "pamela",
+      "periodId": "augustan",
+      "question": "Which social tension is central to Pamela?",
+      "options": [
+        "An aristocrat’s desire to enter parliament",
+        "A servant’s resistance to her socially superior employer’s advances",
+        "A poet’s inability to complete an epic",
+        "A traveller’s encounter with rational horses"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pamela frames a conflict of class, power and sexual coercion through letters.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-29",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "clarissa",
+      "periodId": "augustan",
+      "question": "What makes Clarissa especially significant within the epistolary novel?",
+      "options": [
+        "Multiple correspondents offer competing perspectives on moral and psychological events",
+        "It is a single stage act without letters",
+        "The entire novel uses one external omniscient narrator",
+        "It is narrated by a chorus in heroic couplets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richardson’s multi-voiced letters expose motives, pressure and conflicting interpretations.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-30",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "samuel-richardson",
+      "periodId": "augustan",
+      "question": "Which quality of epistolary narration allows Richardson to present emotional immediacy?",
+      "options": [
+        "Letters are written close to the events being described",
+        "All characters speak through a single allegorical mask",
+        "A narrator knows the future at every moment",
+        "A distant historian summarises events centuries later"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richardson often presents feelings and decisions through letters composed as events unfold.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-31",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "pamela",
+      "periodId": "augustan",
+      "question": "What did Fielding’s Shamela primarily challenge in Richardson’s Pamela?",
+      "options": [
+        "Its description of giants in a foreign land",
+        "Its political attack on the Exclusion Crisis",
+        "Its use of theatrical scenery",
+        "The apparent sincerity and moral self-presentation of its heroine"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Fielding parodied what he saw as Pamela’s self-serving claims to virtue.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-32",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "joseph-andrews",
+      "periodId": "augustan",
+      "question": "How does Joseph Andrews initially relate to Richardson’s Pamela?",
+      "options": [
+        "It translates Pamela into Latin",
+        "It continues Pamela as a historical epic",
+        "It reverses and parodies the servant-virtue situation with a male protagonist",
+        "It gives Pamela the role of an English queen"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Fielding initially satirizes Pamela by placing the virtuous servant in the position of a man.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-33",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "henry-fielding",
+      "periodId": "augustan",
+      "question": "What did Fielding call the kind of prose fiction developed in Joseph Andrews?",
+      "options": [
+        "A heroic tragedy in blank verse",
+        "A comic epic-poem in prose",
+        "A metaphysical lyric sequence",
+        "A pastoral masque"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Fielding’s preface defines his narrative as a comic epic-poem in prose.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-34",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "tom-jones",
+      "periodId": "augustan",
+      "question": "What is the narrative role of Squire Allworthy in Tom Jones?",
+      "options": [
+        "A cynical manipulator from Clarissa",
+        "A French officer in A Sentimental Journey",
+        "A malicious lawyer plotting with Lovelace",
+        "A benevolent guardian whose judgment shapes Tom’s upbringing"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Allworthy raises Tom and becomes central to questions of charity and moral judgment.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-35",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "tom-jones",
+      "periodId": "augustan",
+      "question": "Which narrative technique distinguishes Tom Jones from Richardson’s epistolary fiction?",
+      "options": [
+        "A sequence of rhymed dramatic monologues",
+        "A self-conscious, intrusive third-person narrator",
+        "A diary kept solely by Sophia Western",
+        "A novel made entirely of private letters"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Fielding’s narrator frequently addresses readers and comments on narrative technique.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-36",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "question": "Why does Tristram Shandy resist conventional chronological plotting?",
+      "options": [
+        "It begins at the hero’s death and never moves backward",
+        "Its action obeys the three dramatic unities",
+        "It consists entirely of official legal documents",
+        "Its narrator repeatedly digresses before reaching the main events of his life"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel deliberately delays the life story through anecdotes, interruptions and digressions.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-37",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "question": "What is the function of the famous black page in Tristram Shandy?",
+      "options": [
+        "It records a printing error corrected by the author",
+        "It visually marks mourning for Yorick",
+        "It lists the cast of a play",
+        "It represents the map of Lilliput"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sterne experiments with typography by printing a black page to commemorate Yorick.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-38",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "laurence-sterne",
+      "periodId": "age-of-sensibility",
+      "question": "What does the word “sentimental” emphasize in Sterne’s A Sentimental Journey?",
+      "options": [
+        "A strict chronological itinerary with no digressions",
+        "Sympathy and feeling in brief social encounters",
+        "The rules of epic battle",
+        "The necessity of impersonal scientific proof"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yorick’s journey foregrounds emotion and sensibility rather than a comprehensive travel guide.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-39",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "How does Johnson’s Preface to Shakespeare respond to strict neoclassical rules?",
+      "options": [
+        "It claims plays must never mix comic and serious material",
+        "It defends Shakespeare’s representation of general human nature despite broken unities",
+        "It rejects Shakespeare for violating all three unities",
+        "It argues that only Greek tragedy can be performed"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Johnson praises Shakespeare’s broad representation of life and questions rigid application of dramatic rules.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-40",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "johnsons-dictionary",
+      "periodId": "age-of-sensibility",
+      "question": "Why is Johnson’s Dictionary (1755) historically important?",
+      "options": [
+        "It consists only of technical scientific terms",
+        "It was the first book ever printed in English",
+        "It removed all foreign-derived vocabulary",
+        "It systematically documents English words through definitions and literary quotations"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Johnson combined definitions with extensive illustrative quotations from English literature.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-41",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "rasselas",
+      "periodId": "age-of-sensibility",
+      "question": "Which philosophical problem drives Rasselas?",
+      "options": [
+        "Whether women should perform on stage",
+        "Who should inherit the throne of Dulness",
+        "Whether lasting happiness can be found through different ways of life",
+        "How Crusoe learned to build a canoe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rasselas examines the human search for happiness and the limits of worldly choices.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-42",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "Which recurring concern unifies many of Johnson’s Rambler essays?",
+      "options": [
+        "The geography of remote islands",
+        "A systematic attack on Shakespeare as a plagiarist",
+        "Moral self-examination and the uncertainties of human hopes",
+        "Court gossip presented as heroic romance"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Rambler commonly examines ethical conduct, desire, disappointment and self-knowledge.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-43",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "Which statement best describes Johnson’s Lives of the Poets?",
+      "options": [
+        "It is a satirical account of Lilliput",
+        "It is a novel told through love letters",
+        "It is a blank-verse epic of Adam and Eve",
+        "It combines literary biography with evaluative criticism"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Johnson joins biographical accounts with critical judgments on English poets.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-44",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "question": "Whose lives receive sympathetic attention in Gray’s Elegy?",
+      "options": [
+        "The wealthy courtiers of Charles II alone",
+        "Only ancient Roman generals",
+        "The inhabitants of Lilliput",
+        "Obscure rural people whose talents remained unrealized"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gray’s Elegy meditates on the forgotten dead and the unfulfilled potential of ordinary villagers.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-45",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "question": "What does the village graveyard symbolize in Gray’s Elegy?",
+      "options": [
+        "The shared mortality of people across social ranks",
+        "The triumph of political satire",
+        "A kingdom in an epic allegory",
+        "A setting for fashionable courtship"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The humble graves prompt reflection on death, social inequality and remembrance.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-46",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "question": "Which formal quality makes Gray’s Elegy recognizably different from Pope’s satirical couplets?",
+      "options": [
+        "Unrhymed prose rather than verse",
+        "A dramatic dialogue between shepherds only",
+        "An epistolary narration told in letters",
+        "Meditative elegiac quatrains rather than pointed rhymed couplets"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Elegy uses iambic-pentameter ABAB quatrains for reflective meditation.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-47",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "question": "Why does Kate Hardcastle pretend to be a barmaid in She Stoops to Conquer?",
+      "options": [
+        "To escape with Tony Lumpkin",
+        "To disguise herself from Sir Roger de Coverley",
+        "To make the shy Marlow speak naturally to her",
+        "To steal the family fortune"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Marlow is awkward with respectable women but relaxed with those he thinks socially inferior.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-48",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "question": "Which comic misunderstanding sets much of She Stoops to Conquer in motion?",
+      "options": [
+        "Kate mistakes Marlow for a clergyman",
+        "Sir Charles mistakes Hastings for his son",
+        "Marlow mistakes the Hardcastle home for an inn",
+        "Tony mistakes London for Paris"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tony misdirects the travellers, leading Marlow and Hastings to treat the Hardcastle house as an inn.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-49",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "the-vicar-of-wakefield",
+      "periodId": "age-of-sensibility",
+      "question": "Which family’s fortunes stand at the centre of The Vicar of Wakefield?",
+      "options": [
+        "The Shandy family",
+        "The Primrose family",
+        "The Harlowe family",
+        "The Western family"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Dr Primrose and his household undergo reverses in Goldsmith’s novel.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-m-50",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "question": "What social concern underlies The Deserted Village?",
+      "options": [
+        "The decline of classical Greek dictionaries",
+        "Displacement of rural communities by wealth and changing landownership",
+        "The advantages of imperial warfare",
+        "The need for more court masques"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem laments depopulation and the destruction of village life in pursuit of wealth.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    }
+  ]
+}

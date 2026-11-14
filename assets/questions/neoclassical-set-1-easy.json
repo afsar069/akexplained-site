@@ -1,0 +1,880 @@
+{
+  "setId": "neoclassical-set-1",
+  "rev": 1,
+  "age": "neoclassical",
+  "ageName": "Neoclassical Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/restoration-age/",
+  "notesTitle": "Restoration — the full notes",
+  "topics": {
+    "stage": "The Restoration stage",
+    "dryden": "John Dryden",
+    "pope": "Alexander Pope",
+    "swift": "Jonathan Swift",
+    "periodical": "Addison and Steele",
+    "defoe": "Daniel Defoe",
+    "richardson": "Samuel Richardson",
+    "fielding": "Henry Fielding",
+    "sterne": "Laurence Sterne",
+    "johnson": "Samuel Johnson",
+    "gray": "Thomas Gray",
+    "goldsmith": "Oliver Goldsmith"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational UGC NET English Literature MCQs on Restoration drama, Dryden, Pope, Swift, Addison, Steele, Defoe, Richardson, Fielding, Sterne, Johnson, Gray and Goldsmith.",
+  "questions": [
+    {
+      "id": "neoclassical-set-1-e-01",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "question": "Which year marks the reopening of English public theatres after the Interregnum?",
+      "options": [
+        "1714",
+        "1660",
+        "1688",
+        "1642"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Restoration of Charles II in 1660 brought the return of licensed public theatre.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-02",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "question": "Which dramatic genre is especially associated with fashionable wit and sexual intrigue on the Restoration stage?",
+      "options": [
+        "Comedy of manners",
+        "Morality play",
+        "Miracle play",
+        "Mystery cycle"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Restoration comedy of manners satirizes fashionable behaviour, courtship and social hypocrisy.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-03",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "question": "Who wrote The Way of the World (1700)?",
+      "options": [
+        "John Dryden",
+        "Thomas Otway",
+        "George Etherege",
+        "William Congreve"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Congreve wrote The Way of the World, a landmark comedy of manners.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-04",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "question": "Which pioneering woman dramatist wrote The Rover?",
+      "options": [
+        "Aphra Behn",
+        "Frances Burney",
+        "Hannah More",
+        "Eliza Haywood"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Aphra Behn wrote The Rover, first performed in 1677.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-05",
+      "qtype": "direct",
+      "topic": "stage",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "question": "Which change distinguished the English professional stage after 1660?",
+      "options": [
+        "Plays could only be performed in Latin",
+        "Female roles were permanently forbidden",
+        "Women regularly performed female roles",
+        "All theatres became open-air"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Women entered the professional public stage in the Restoration, unlike the earlier all-male companies.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-06",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Who became Poet Laureate in 1668?",
+      "options": [
+        "Alexander Pope",
+        "Oliver Goldsmith",
+        "John Dryden",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Dryden received the office of Poet Laureate in 1668.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-07",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "question": "Which Dryden poem satirizes the Exclusion Crisis through a biblical allegory?",
+      "options": [
+        "The Rape of the Lock",
+        "The Dunciad",
+        "Absalom and Achitophel",
+        "The Deserted Village"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Absalom and Achitophel (1681) uses the story of David and Absalom to address contemporary politics.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-08",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Dryden’s All for Love reworks the story of which lovers?",
+      "options": [
+        "Dido and Aeneas",
+        "Antony and Cleopatra",
+        "Romeo and Juliet",
+        "Troilus and Cressida"
+      ],
+      "correct_option_id": 1,
+      "explanation": "All for Love (1677) is Dryden’s tragedy about Antony and Cleopatra.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-09",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "Which work is Dryden’s famous dialogue on dramatic criticism?",
+      "options": [
+        "An Essay on Criticism",
+        "Biographia Literaria",
+        "An Essay of Dramatic Poesy",
+        "Preface to Shakespeare"
+      ],
+      "correct_option_id": 2,
+      "explanation": "An Essay of Dramatic Poesy (1668) debates principles of drama through four speakers.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-10",
+      "qtype": "direct",
+      "topic": "dryden",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "question": "What verse form did Dryden notably refine for satire and argument?",
+      "options": [
+        "Ballad stanza",
+        "Heroic couplet",
+        "Spenserian stanza",
+        "Ottava rima"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Dryden became a leading master of rhymed iambic-pentameter couplets.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-11",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "question": "Who wrote The Rape of the Lock?",
+      "options": [
+        "Alexander Pope",
+        "Samuel Johnson",
+        "John Dryden",
+        "Jonathan Swift"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Alexander Pope created the mock-heroic poem The Rape of the Lock.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-12",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "question": "What object is cut from Belinda in The Rape of the Lock?",
+      "options": [
+        "A ribbon",
+        "A necklace",
+        "A glove",
+        "A lock of hair"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Baron cuts a lock of Belinda’s hair, producing the poem’s mock-epic conflict.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-13",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "an-essay-on-man",
+      "periodId": "augustan",
+      "question": "Who wrote An Essay on Man?",
+      "options": [
+        "Alexander Pope",
+        "John Milton",
+        "Richard Steele",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pope’s philosophical poem An Essay on Man appeared in epistles during 1733–34.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-14",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "the-dunciad",
+      "periodId": "augustan",
+      "question": "The Dunciad principally attacks what?",
+      "options": [
+        "Pastoral shepherds",
+        "Dullness and literary corruption",
+        "Colonial trade routes",
+        "Medieval chivalry"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pope’s satirical epic presents the triumph of Dulness.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-15",
+      "qtype": "direct",
+      "topic": "pope",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "question": "Which verse form is strongly associated with Pope’s major poems?",
+      "options": [
+        "Terza rima",
+        "Heroic couplet",
+        "Blank verse",
+        "Free verse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pope’s polished rhyming pentameter couplets became emblematic of Augustan verse.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-16",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "Who wrote Gulliver’s Travels?",
+      "options": [
+        "Henry Fielding",
+        "Daniel Defoe",
+        "Jonathan Swift",
+        "Laurence Sterne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Jonathan Swift published Gulliver’s Travels in 1726.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-17",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "What are the tiny inhabitants encountered in Gulliver’s first voyage called?",
+      "options": [
+        "Lilliputians",
+        "Brobdingnagians",
+        "Houyhnhnms",
+        "Yahoos"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lilliput is the country of miniature people in Part I of Gulliver’s Travels.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-18",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "question": "Which Swift prose satire proposes an outrageous solution to Irish poverty?",
+      "options": [
+        "The Tatler",
+        "The Rambler",
+        "The Spectator",
+        "A Modest Proposal"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A Modest Proposal (1729) uses shocking irony to criticize exploitation and indifference.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-19",
+      "qtype": "direct",
+      "topic": "swift",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "question": "Which creatures embody rational horses in Gulliver’s Travels?",
+      "options": [
+        "Laputans",
+        "Brobdingnagians",
+        "Lilliputians",
+        "Houyhnhnms"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Houyhnhnms are the rational horses of the fourth voyage.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-20",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "the-tatler",
+      "periodId": "augustan",
+      "question": "Which periodical was founded by Richard Steele in 1709?",
+      "options": [
+        "The Guardian of 1821",
+        "The Idler",
+        "The Tatler",
+        "The Rambler"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Steele launched The Tatler in 1709 under the persona Isaac Bickerstaff.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-21",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "the-spectator",
+      "periodId": "augustan",
+      "question": "Which periodical did Addison and Steele establish in 1711?",
+      "options": [
+        "The Spectator",
+        "The Monthly Review",
+        "The Examiner",
+        "The Edinburgh Review"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Spectator began in 1711 and helped popularize the periodical essay.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-22",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "joseph-addison",
+      "periodId": "augustan",
+      "question": "Who wrote the tragedy Cato (1713)?",
+      "options": [
+        "Richard Steele",
+        "Oliver Goldsmith",
+        "Joseph Addison",
+        "John Dryden"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Joseph Addison’s Cato is a neoclassical tragedy first produced in 1713.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-23",
+      "qtype": "direct",
+      "topic": "periodical",
+      "topicId": "richard-steele",
+      "periodId": "augustan",
+      "question": "Who created the fictional journalist Isaac Bickerstaff for The Tatler?",
+      "options": [
+        "Henry Fielding",
+        "Richard Steele",
+        "Alexander Pope",
+        "Samuel Johnson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Steele used the Bickerstaff persona in the early issues of The Tatler.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-24",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "question": "Who wrote Robinson Crusoe?",
+      "options": [
+        "Henry Fielding",
+        "Jonathan Swift",
+        "Daniel Defoe",
+        "Samuel Richardson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Daniel Defoe published Robinson Crusoe in 1719.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-25",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "question": "What is the name of Crusoe’s companion whom he rescues?",
+      "options": [
+        "Trim",
+        "Sancho",
+        "Parson Adams",
+        "Friday"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Crusoe names the rescued man Friday.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-26",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "moll-flanders",
+      "periodId": "augustan",
+      "question": "Which Defoe novel follows a woman through crime, survival and repentance?",
+      "options": [
+        "Moll Flanders",
+        "Clarissa",
+        "Evelina",
+        "Pamela"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Moll Flanders (1722) follows its resourceful heroine through a turbulent life.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-27",
+      "qtype": "direct",
+      "topic": "defoe",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "question": "Which Defoe work presents a fictionalized account of London’s plague?",
+      "options": [
+        "The Castle of Otranto",
+        "A Journal of the Plague Year",
+        "Rasselas",
+        "The Vicar of Wakefield"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Defoe published A Journal of the Plague Year in 1722, depicting the 1665 outbreak.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-28",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "pamela",
+      "periodId": "augustan",
+      "question": "Who wrote Pamela; or, Virtue Rewarded?",
+      "options": [
+        "Henry Fielding",
+        "Daniel Defoe",
+        "Samuel Richardson",
+        "Laurence Sterne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richardson published Pamela in 1740.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-29",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "samuel-richardson",
+      "periodId": "augustan",
+      "question": "What form is central to Samuel Richardson’s major novels?",
+      "options": [
+        "Mock-epic verse",
+        "Epistolary narration",
+        "Spenserian allegory",
+        "Dramatic monologue"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Richardson narrates through letters, presenting characters’ experiences and emotions directly.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-30",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "clarissa",
+      "periodId": "augustan",
+      "question": "What is the surname of Clarissa, heroine of Richardson’s novel?",
+      "options": [
+        "Harlowe",
+        "Primrose",
+        "Western",
+        "Earnshaw"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Clarissa Harlowe is the central character of Richardson’s Clarissa.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-31",
+      "qtype": "direct",
+      "topic": "richardson",
+      "topicId": "pamela",
+      "periodId": "augustan",
+      "question": "What is the chief concern of Pamela?",
+      "options": [
+        "A soldier’s adventures in Flanders",
+        "A country vicar’s bankruptcy",
+        "A servant woman’s virtue and social position",
+        "A voyage to Lilliput"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Pamela centres on a young servant resisting her employer’s advances and questions of virtue and class.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-32",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "tom-jones",
+      "periodId": "augustan",
+      "question": "Who wrote The History of Tom Jones, a Foundling?",
+      "options": [
+        "Tobias Smollett",
+        "Samuel Richardson",
+        "Oliver Goldsmith",
+        "Henry Fielding"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Fielding’s Tom Jones was published in 1749.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-33",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "joseph-andrews",
+      "periodId": "augustan",
+      "question": "Who is the author of Joseph Andrews?",
+      "options": [
+        "Henry Fielding",
+        "Daniel Defoe",
+        "Samuel Johnson",
+        "Laurence Sterne"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Henry Fielding published Joseph Andrews in 1742.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-34",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "henry-fielding",
+      "periodId": "augustan",
+      "question": "What is the title of Fielding’s parody of Richardson’s Pamela?",
+      "options": [
+        "The Man of Feeling",
+        "Rasselas",
+        "Shamela",
+        "Clarissa"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Fielding’s An Apology for the Life of Mrs Shamela Andrews (1741) satirizes Pamela.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-35",
+      "qtype": "direct",
+      "topic": "fielding",
+      "topicId": "tom-jones",
+      "periodId": "augustan",
+      "question": "Which heroine is Tom Jones’s principal beloved?",
+      "options": [
+        "Clarissa Harlowe",
+        "Olivia Primrose",
+        "Sophia Western",
+        "Belinda"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sophia Western is the central love interest in Tom Jones.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-36",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "question": "Who wrote The Life and Opinions of Tristram Shandy, Gentleman?",
+      "options": [
+        "Samuel Richardson",
+        "Laurence Sterne",
+        "Daniel Defoe",
+        "Henry Fielding"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Laurence Sterne’s Tristram Shandy appeared in nine volumes between 1759 and 1767.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-37",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "laurence-sterne",
+      "periodId": "age-of-sensibility",
+      "question": "Which novel by Sterne features the traveller Yorick?",
+      "options": [
+        "Pamela",
+        "A Sentimental Journey",
+        "Tom Jones",
+        "Robinson Crusoe"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yorick narrates Sterne’s A Sentimental Journey Through France and Italy (1768).",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-38",
+      "qtype": "direct",
+      "topic": "sterne",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "question": "Which device is especially associated with Tristram Shandy?",
+      "options": [
+        "Epic invocations to gods",
+        "Unbroken chronological narration",
+        "Rhymed heroic couplets",
+        "Digression and experimental typography"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sterne’s novel playfully digresses and experiments with its printed form.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-39",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "johnsons-dictionary",
+      "periodId": "age-of-sensibility",
+      "question": "In which year did Samuel Johnson publish his Dictionary of the English Language?",
+      "options": [
+        "1755",
+        "1711",
+        "1668",
+        "1798"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Johnson’s Dictionary of the English Language appeared in 1755.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-40",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "Which periodical essay series did Johnson begin in 1750?",
+      "options": [
+        "The Craftsman",
+        "The Spectator",
+        "The Tatler",
+        "The Rambler"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Johnson’s Rambler essays were published from 1750 to 1752.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-41",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "rasselas",
+      "periodId": "age-of-sensibility",
+      "question": "Who wrote Rasselas?",
+      "options": [
+        "Oliver Goldsmith",
+        "Alexander Pope",
+        "Samuel Johnson",
+        "Laurence Sterne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Samuel Johnson published Rasselas in 1759.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-42",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "Who compiled Lives of the Most Eminent English Poets?",
+      "options": [
+        "Thomas Gray",
+        "Jonathan Swift",
+        "Joseph Addison",
+        "Samuel Johnson"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Johnson’s Lives of the Poets appeared between 1779 and 1781.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-43",
+      "qtype": "direct",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "question": "Which critic wrote the Preface to Shakespeare in 1765?",
+      "options": [
+        "Richard Steele",
+        "John Dryden",
+        "Samuel Johnson",
+        "Alexander Pope"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Johnson’s 1765 edition of Shakespeare included his influential Preface.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-44",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "question": "Who wrote Elegy Written in a Country Churchyard?",
+      "options": [
+        "Thomas Gray",
+        "James Thomson",
+        "Oliver Goldsmith",
+        "William Collins"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Thomas Gray published his famous Elegy in 1751.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-45",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "question": "What setting is evoked by Gray’s Elegy?",
+      "options": [
+        "A crowded London playhouse",
+        "A rural churchyard at evening",
+        "A ship near an island",
+        "A royal palace at noon"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem opens at twilight in a country churchyard.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-46",
+      "qtype": "direct",
+      "topic": "gray",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "question": "Thomas Gray is commonly associated with which pre-Romantic group?",
+      "options": [
+        "Graveyard poets",
+        "Lake poets",
+        "University Wits",
+        "Cavalier dramatists"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gray’s reflective poetry is often discussed in the tradition of the Graveyard poets.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-47",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "question": "Who wrote She Stoops to Conquer?",
+      "options": [
+        "Richard Sheridan",
+        "Oliver Goldsmith",
+        "John Dryden",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Goldsmith’s comedy She Stoops to Conquer was staged in 1773.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-48",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "the-vicar-of-wakefield",
+      "periodId": "age-of-sensibility",
+      "question": "Who wrote The Vicar of Wakefield?",
+      "options": [
+        "Henry Fielding",
+        "Laurence Sterne",
+        "Oliver Goldsmith",
+        "Samuel Johnson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Goldsmith published The Vicar of Wakefield in 1766.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-49",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "question": "Which Goldsmith poem laments the decline of rural community?",
+      "options": [
+        "The Dunciad",
+        "The Deserted Village",
+        "The Vanity of Human Wishes",
+        "The Seasons"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Goldsmith’s The Deserted Village (1770) contrasts rural happiness with displacement and depopulation.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    },
+    {
+      "id": "neoclassical-set-1-e-50",
+      "qtype": "direct",
+      "topic": "goldsmith",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "question": "Which character is the central young woman of She Stoops to Conquer?",
+      "options": [
+        "Kate Hardcastle",
+        "Pamela Andrews",
+        "Sophia Western",
+        "Belinda"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Kate Hardcastle pretends to be a barmaid to overcome Marlow’s shyness.",
+      "src": "user-supplied: AK Explained editorial practice MCQ"
+    }
+  ]
+}
