@@ -4,9 +4,9 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14. **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — is **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — is **built and tested on branch `claude/affectionate-brown-ahs63h`, not yet merged** (see the two sections below). Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
+_Last updated: 2026-11-14. **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
 
-## Self-serve publish — English Literature login MCQ sets (2026-11-14, branch `claude/affectionate-brown-ahs63h`, NOT merged)
+## Self-serve publish — English Literature login MCQ sets (2026-11-14, SHIPPED — merged to main, PR #76)
 
 **Series 2 of the self-serve work.** The owner chose (2026-11-14) the **"flip planned sets live"** approach over
 adding a `paper_catalog` metadata column: because every age already lists its sets in `mcqSpec.json` with full
@@ -44,8 +44,9 @@ links, no route collisions.
 (`tools/build-syllabus.js`), so a set published self-serve to a Coming-soon slot is playable but not in the pool
 denominator until the registry is edited + rebuilt. Documented in rule 3 and the plan doc; not a blocker.
 
-**Pending:** merge to main is the owner's call (rule 5). Next series: UP PGT login mock tests (same pattern as
-series 1). Scratch Playwright tests live only in the session scratchpad.
+**Status:** merged to main (PR #76), live on akexplained.com. Future series (UP PGT, UGC NET) are planned for a
+later session — the owner asked (2026-11-14) to record the plan and build them later; see
+`docs/self-serve-publish-plan.md` → "Roadmap". Scratch Playwright tests live only in the session scratchpad.
 
 ## Self-serve publish — UP AP Paper 2 mock tests (2026-11-14, SHIPPED — merged to main, PR #75)
 

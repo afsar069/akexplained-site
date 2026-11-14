@@ -1,29 +1,32 @@
-# Self-serve publish — plan (series 1 of 3 shipped on the branch)
+# Self-serve publish — status + roadmap
 
-> **Progress (2026-11-14):**
-> - **Series 1 — UP Assistant Professor Paper 2 mock tests: SHIPPED (merged to main, PR #75).**
+> **Status (2026-11-14): 2 series live, 2 planned for later. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
+>
+> **DONE — live on akexplained.com:**
+> - **Series 1 — UP Assistant Professor Paper 2 mock tests: SHIPPED (merged, PR #75).**
 >   `assets/paper-list.js` (runtime hub cards from the live catalog), `statePscMockTests.range` (pre-built
->   `test-1..30` + review routes), `data-catalog-check` gate in `assets/cbt.js`. 27 Playwright checks + 5
->   regression checks passed.
-> - **Series 2 — English Literature login MCQ sets: BUILT and tested on branch
->   `claude/affectionate-brown-ahs63h`.** The owner chose the **"flip planned sets live"** approach (no
->   `paper_catalog` metadata column, no upload-page change — see the decision below). A planned slot (live-login
->   or Coming-soon) flips live from the catalog at view time: `_data/mcqPendingSets.js` + `set-pending-test.njk`
->   / `set-pending-review.njk` (pre-built gated+catalog-checked pages for not-yet-live planned slots),
->   `data-catalog-check` on the live-login set/review pages, `data-catalog-set` on login/pending hub rows, and
->   `catalogFlip`/`flipOn`/`flipOff` in `assets/mcq-age.js`. Free sets untouched. 28 Playwright checks pass
->   (pending→live flip on hub + page, draft→Coming-soon revert, free untouched, guest/student, 375px,
->   Supabase-off fail-safe) + series-1 and regression suites still green. Rule 3 (`quizzes/mcq` note) and rule
->   17 in `CLAUDE.md` record it.
-> - **Decision made (2026-11-14):** the richer card is delivered by keeping the set's existing registry card and
->   flipping it live from the catalog — so **no `paper_catalog` metadata column and no upload-page change** were
->   needed. The metadata-column idea (option (a) below) is only needed for a set that was never planned in the
->   registry; deferred until that case actually arises.
-> - **Known gap (both series use the registry for the dashboard pool):** a login set published self-serve to a
->   Coming-soon slot is not counted in the dashboard age pool (rule 10) until the registry is edited to mark it
->   live + a rebuild. The set itself is fully playable; only the pool denominator lags.
-> **Still to do (one at a time, each its own branch + merge):** UP PGT login mock tests (same pattern as
-> series 1).
+>   `test-1..30` + review routes), `data-catalog-check` gate in `assets/cbt.js`. 27 + 5 Playwright checks passed.
+> - **Series 2 — English Literature login MCQ sets: SHIPPED (merged, PR #76).** Owner chose the **"flip planned
+>   sets live"** approach (no `paper_catalog` metadata column, no upload-page change): a planned slot (live-login
+>   or Coming-soon) flips live from the catalog at view time. `_data/mcqPendingSets.js` + `set-pending-test.njk`
+>   / `set-pending-review.njk` (pre-built gated+catalog-checked pages for not-yet-live slots), `data-catalog-check`
+>   on the live-login set/review pages, `data-catalog-set` on login/pending hub rows, `catalogFlip`/`flipOn`/
+>   `flipOff` in `assets/mcq-age.js`. Free sets untouched. 28 Playwright checks + series-1 + regression all green.
+>
+> **TO BUILD LATER (owner, 2026-11-14 — "baad baad me build karenge"): see "Roadmap" at the bottom.**
+> - **Series 3 — UP PGT login mock tests** (same pattern as series 1).
+> - **Series 4 — UGC NET** (new owner ask, 2026-11-14): NET's English Literature MCQs already ride on series 2
+>   (that resource points at `/quizzes/mcq/`); NET's **own** mock tests / Paper 1 need their pages built first.
+>
+> **Decision made (2026-11-14):** the richer card is delivered by keeping the set's existing registry card and
+> flipping it live — so no `paper_catalog` metadata column and no upload-page change were needed. The
+> metadata-column idea (option (a) below) is only for a set never planned in the registry; deferred.
+>
+> **Known gap (carry into every future series that uses the registry for the dashboard):** a login set published
+> self-serve to a Coming-soon slot is playable immediately but is **not counted in the dashboard age pool**
+> (rule 10, `tools/build-syllabus.js`) until the registry is edited to mark it live + a rebuild. Only the pool
+> denominator lags; the set and its scores work. Closing this would need the pool to also read the live catalog
+> (or a periodic registry sync). Not a blocker; decide with the owner if it should be closed.
 
 
 **Owner's ask (2026-11-13 / 2026-11-14):** after the owner uploads a paper at `/admin/upload-paper/` and marks
@@ -32,7 +35,9 @@ series**, not just one: UP Assistant Professor Paper 2 mock tests, UP PGT mock t
 login MCQ sets. The owner asked for this to be built in a **fresh session on a bigger model (Opus 5)**, one
 series at a time.
 
-Nothing here is built yet. This is the design to implement and test.
+> **Note (2026-11-14):** the design below was the original brief. Series 1 and 2 are now **built and live**
+> (see the Status block above and the **Roadmap** at the bottom for what remains). The rest of this section is
+> kept as the background design and the per-series notes.
 
 ## Why it needs a change
 The site is static (Cloudflare Pages builds it from the GitHub repo). A button in the browser cannot rebuild
@@ -103,3 +108,58 @@ once. Start with UP AP (the active series). Update rule 3, rule 15/16 and this f
   Paper 2 mock tests are the only series built straight from the catalog (`_data/statePscMockTests.js`).
 - `paper_catalog` columns: `set_id, title, exam_id, kind, number, question_count, status`. Public read for
   `status = 'live'`; admins read all.
+
+---
+
+## Roadmap — future series to build later (owner, 2026-11-14: build these in a later session)
+
+Both follow the **same two proven patterns** already live:
+- **Mock-test pattern** (series 1): `assets/paper-list.js` runtime hub cards + a pre-built fixed route range +
+  `data-catalog-check` in `cbt.js`. Use when the cards only show title + question count.
+- **Flip-planned-slots pattern** (series 2): registry plans the slots; pre-built pending pages + hub flip in
+  `assets/mcq-age.js`. Use when the cards are rich (lede, topics) and already planned per-item.
+
+Do each on its own branch, test with Playwright + mocked Supabase (guest vs student, live vs not-live, 375px +
+desktop, prove live-shows / draft-hides, and a regression pass on the already-live series), and merge on its own
+(rule 5). Reuse the scratch test harness shape from series 1/2 (static server of `_site`, route-mock
+`**<ref>.supabase.co/**`, seed `sb-<ref>-auth-token` for a logged-in student). Update rules 3/15/16/17 and this
+file as each ships.
+
+### Series 3 — UP PGT login mock tests
+- **Scope:** the **login** mock tests at `/exams/pgt/up-pgt/mock-tests/` (today Tests 6–10 are login). Keep the
+  **free** Tests 1–5 (file-based) and the **Coming-soon** 11–60 exactly as they are — do not touch them.
+- **Pattern:** the **mock-test pattern** (series 1). The UP PGT cards are title + question count, so no metadata
+  is needed. Catalog filter: `exam_id = 'pgt' AND kind = 'mock-test'` (prefix guard `up-pgt-mock-test-`).
+- **Parts to build:**
+  1. Give the login section of the hub (`exams/pgt/up-pgt/mock-tests/index.njk`, driven by `_data/pgtMockTests.js`)
+     a `data-paper-list` grid for the login tests, with `assets/paper-list.js` and a static fallback. The free
+     1–5 and Coming-soon 11–60 blocks stay static as they are.
+  2. Pre-build the login test routes for a fixed range and add `data-catalog-check` to them. The UP PGT test
+     pages use `_includes/up-pgt-cbt.njk`; today the routes come from `_data/pgtMockTests.js`. Add a `range`
+     there (like `statePscMockTests.range`) for the login band, and add `data-catalog-check="{{ sid }}"` to
+     `up-pgt-cbt.njk` (mirror `state-psc-cbt.njk`).
+  3. Keep the sitemap listing only the live login tests.
+- **Watch out:** UP PGT mixes free + login + coming-soon on one hub; keep each band isolated so only the login
+  band becomes catalog-driven. `up-pgt-mock-test-N` ids already exist in `paper_catalog` (Tests 6–10 live).
+
+### Series 4 — UGC NET (new ask, 2026-11-14)
+- **Already covered:** NET's **"English Literature MCQs"** resource (`_data/netResources.json`) points at
+  `/quizzes/mcq/`, which is series 2 — so NET's literature MCQ practice is **already self-serve**. Nothing to do
+  there.
+- **Not built yet (blockers):** NET's **own Mock Tests** and **Paper 1 MCQs** are `available: false` in
+  `_data/netResources.json` ("will be added here"). There are **no NET mock-test / Paper 1 pages** in the repo
+  yet (`exams/net/` has only `index.njk`, `about/`, `syllabus/`, `coming-soon.njk`), and **no NET destination**
+  in `_data/paperDestinations.js` (the upload picker offers only UP AP Paper 2, UP PGT, English Literature MCQ
+  set). So NET self-serve is **blocked on content pages being built first**.
+- **Order to build NET self-serve (later):**
+  1. Decide with the owner what NET needs: NET **mock tests** (CBT papers, like UP PGT) and/or NET **Paper 1
+     MCQ sets**, and whether they are free or login.
+  2. Build the NET hub + test/set pages (open the `available:false` resources), and add a NET **exams** row +
+     a NET **destination** in `_data/paperDestinations.js` so uploads can target it (its hub page must exist, or
+     the destination build-guard stops the build).
+  3. Apply the matching self-serve pattern: mock-test pattern for NET mock tests (filter `exam_id = '<net>' AND
+     kind = 'mock-test'`); flip-planned-slots pattern if NET MCQs are per-age registry sets like literature.
+  4. Test + merge on its own branch, update the rules + this file.
+- **Note:** the UGC NET MCQ generator skill (`tools/ugc-net-mcq-skill/`) already emits site-format question
+  files; those currently publish as English Literature MCQ sets (per age), which are already self-serve. A
+  NET-specific destination is only needed if the owner wants NET papers separate from the per-age literature sets.
