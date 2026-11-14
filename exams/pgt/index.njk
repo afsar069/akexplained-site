@@ -19,14 +19,13 @@ pgt_hub: true
 </section>
 
 <div class="wrap pgt-hub">
-  <a class="pgt-featured" href="/exams/pgt/up-pgt/">
-    <span class="pgt-featured-icon" aria-hidden="true"><img src="/assets/icons/tabler/building-bank.svg" alt="" width="58" height="58"></span>
-    <span class="pgt-featured-copy"><span class="pgt-featured-title">UP PGT</span><span class="pgt-featured-state">Uttar Pradesh · UPESSC</span></span>
-    <span class="pgt-featured-go">Open UP PGT<img src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26"></span>
-  </a>
-
   <section class="pgt-exam-section" aria-labelledby="pgt-state-heading">
     <h2 id="pgt-state-heading">State-Level PGT Exams</h2>
+    <a class="pgt-featured pgt-featured--listed" href="/exams/pgt/up-pgt/">
+      <span class="pgt-featured-icon" aria-hidden="true"><img src="/assets/icons/tabler/building-bank.svg" alt="" width="58" height="58"></span>
+      <span class="pgt-featured-copy"><span class="pgt-featured-title">UP PGT</span><span class="pgt-featured-state">Uttar Pradesh · UPESSC</span></span>
+      <span class="pgt-featured-go">Open UP PGT<img src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26"></span>
+    </a>
     <ul class="pgt-exam-grid">
       {% for exam in pgtExams.state %}{% include "pgt-exam-card.njk" %}{% endfor %}
     </ul>
