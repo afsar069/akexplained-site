@@ -24,7 +24,7 @@ pgt_hub: true
     <a class="pgt-featured pgt-featured--listed" href="/exams/pgt/up-pgt/">
       <span class="pgt-featured-icon" aria-hidden="true"><img src="/assets/icons/tabler/building-bank.svg" alt="" width="58" height="58"></span>
       <span class="pgt-featured-copy"><span class="pgt-featured-title">UP PGT</span><span class="pgt-featured-state">Uttar Pradesh · UPESSC</span></span>
-      <span class="pgt-featured-go">Open UP PGT<img src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26"></span>
+      <span class="pgt-featured-go">Open UP PGT<span class="pgt-go-arrow" aria-hidden="true"></span></span>
     </a>
     <ul class="pgt-exam-grid">
       {% for exam in pgtExams.state %}{% include "pgt-exam-card.njk" %}{% endfor %}
