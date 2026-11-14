@@ -226,26 +226,29 @@
   /* Live nahi (ya hai hi nahi) — na login wall, na khali page. Banner bhi theek kar do,
      kyunki wo [data-cbt] ke bahar hai (sirf root.innerHTML badalne se nahi badalta). */
   function notOpenYet() {
+    var thing = EXAM_MOCK ? 'test' : 'set';
+    var longName = EXAM_MOCK ? 'mock test' : 'practice set';
+    var backLabel = root.getAttribute('data-back-label') || (EXAM_MOCK ? 'the tests' : 'the age');
     var title = document.getElementById('cbtTitle');
     var lede = document.getElementById('cbtLede');
     if (title) title.textContent = 'Not open yet';
-    if (lede) lede.textContent = 'This mock test has not been published yet.';
+    if (lede) lede.textContent = 'This ' + longName + ' has not been published yet.';
     root.innerHTML =
       '<div class="cbt-start">' +
-        '<h1>This test is not open yet</h1>' +
-        '<p class="lede">This mock test has not been published yet. Please check back soon.</p>' +
+        '<h1>This ' + thing + ' is not open yet</h1>' +
+        '<p class="lede">This ' + longName + ' has not been published yet. Please check back soon.</p>' +
         '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/') +
-        '">Back to ' + esc(root.getAttribute('data-back-label') || 'the tests') + '</a></p>' +
+        '">Back to ' + esc(backLabel) + '</a></p>' +
       '</div>';
   }
 
-  /* Live row mila: upar ke banner me sahi ginti dikhao, taaki 100 na ho to bhi sach rahe. */
+  /* Live row mila: upar ke banner me sahi ginti dikhao, taaki build-time ki ginti galat ho to bhi sach rahe. */
   function applyCatalogMeta(row) {
     if (!row || root.getAttribute('data-mode') === 'review') return;
     var qn = parseInt(row.question_count, 10);
     if (!(qn > 0)) return;
     var lede = document.getElementById('cbtLede');
-    if (lede) lede.textContent = qn + ' questions. Log in with a free account to take this test.';
+    if (lede) lede.textContent = qn + ' questions. Log in with a free account to take this ' + (EXAM_MOCK ? 'test.' : 'set.');
   }
 
   /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to

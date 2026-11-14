@@ -28,6 +28,20 @@ breaking it breaks a promise already made.
   templates in `quizzes/mcq/_templates/` and `_includes/mcq-page.njk`, data in `_data/mcqSpec.json`
   (see rule 7). Change the template or the registry, never a generated page.
   `quizzes/mcq/index.html` (all ages) is still hand-written.
+  **Login MCQ sets are self-serve-published** (owner, 2026-11-14, rule 17): a set that is **planned**
+  in the registry — whether already live-login (`access: "login"`) or still a "Coming soon" slot — goes
+  live the moment the owner uploads its questions and marks the set **Live** on `/admin/papers/`, with no
+  rebuild; marking it Draft hides it again. Every not-yet-live planned slot gets a pre-built, login-gated,
+  catalog-checked set/review page (`_data/mcqPendingSets.js` + `set-pending-test.njk` / `set-pending-review.njk`;
+  no question file in the repo, rule 15), and every login set page (live or pending) carries
+  `data-catalog-check` so `assets/cbt.js` opens it only when `<age>-set-N` is a **live** `paper_catalog` row,
+  else "This set is not open yet" (no login wall). On the age hub, `assets/mcq-age.js` flips a login/pending
+  set row (marked `data-catalog-set`) between "Coming soon" and Start/lock from the live catalog at view time.
+  **Free sets are never catalog-checked** and behave exactly as before. A brand-new login set still needs its
+  slot planned in the registry once (title, topics, levels, count); after that, publishing is self-serve.
+  Known gap: the dashboard age pool (rule 10) counts a login set only once it is `live` in the registry, so a
+  set published self-serve to a Coming-soon slot is not in the pool denominator until the next registry edit +
+  rebuild.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews). The last four plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
@@ -591,11 +605,19 @@ already public for live rows), so `/privacy/` needs no change.
 - **Sitemap + static fallback still list only the live papers** (from the `…MockTests.tests`-style live list),
   never the whole pre-built range; the login test pages need no SEO.
 
-**Shipped so far:** UP Assistant Professor Paper 2 mock tests (`exams/state-psc/up-assistant-professor/paper-2-mock-tests/`).
+**Shipped so far:**
+1. UP Assistant Professor Paper 2 mock tests (`exams/state-psc/up-assistant-professor/paper-2-mock-tests/`) —
+   hub cards from `assets/paper-list.js`, pre-built `test-1..30`, `data-catalog-check` in `cbt.js`.
+2. English Literature login MCQ sets (`quizzes/mcq/<age>/`) — the owner chose the **"flip planned sets live"**
+   approach (no `paper_catalog` metadata column, no upload-page change): a planned slot (live-login or
+   Coming-soon) flips live from the catalog at view time. Parts: `_data/mcqPendingSets.js` + the two
+   `set-pending-*.njk` templates (pre-built gated+catalog-checked pages for not-yet-live planned slots),
+   `data-catalog-check` added to the live-login set/review pages, `data-catalog-set` on login/pending hub rows,
+   and the flip logic (`catalogFlip`/`flipOn`/`flipOff`) in `assets/mcq-age.js`. See the `quizzes/mcq` note in
+   rule 3 for the full behavior and the known dashboard-pool gap.
+
 **Still static (convert next, one at a time):** UP PGT login mock tests (6–10 and new; keep free 1–5 and
-coming-soon 11–60 as they are), and the English Literature login MCQ sets (`quizzes/mcq/<age>/`; their cards are
-richer than the catalog carries today — decide a small `paper_catalog` metadata column vs a simple card **with
-the owner** before building). Do each series on its own branch, test it (Playwright + mocked Supabase: guest vs
-student, live vs not-yet-live, 375px and desktop; prove a new live row shows and Draft hides with no rebuild),
-and merge on its own (rule 5) so a bug can never take down every mock-test page at once. Update rules 3, 15, 16
-and this rule, and `docs/self-serve-publish-plan.md`, as each ships.
+coming-soon 11–60 as they are) — the same pattern as series 1. Do each series on its own branch, test it
+(Playwright + mocked Supabase: guest vs student, live vs not-yet-live, 375px and desktop; prove a new live set
+shows and Draft hides with no rebuild), and merge on its own (rule 5) so a bug can never take down every page at
+once. Update rules 3, 15, 16 and this rule, and `docs/self-serve-publish-plan.md`, as each ships.

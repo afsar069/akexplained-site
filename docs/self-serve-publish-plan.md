@@ -1,14 +1,29 @@
 # Self-serve publish — plan (series 1 of 3 shipped on the branch)
 
-> **Progress (2026-11-14):** **UP Assistant Professor Paper 2 mock tests — BUILT and tested on branch
-> `claude/affectionate-brown-ahs63h`, not yet merged.** The design below is implemented exactly:
-> `assets/paper-list.js` (runtime hub cards from the live catalog), `statePscMockTests.range` (pre-built
-> `test-1..30` + review routes), and a `data-catalog-check` gate in `assets/cbt.js` (live → opens login-gated;
-> not-live → "This test is not open yet", no login wall; read-fail → fail-open). Rules 3, 15, 16 and the new
-> **rule 17** in `CLAUDE.md` record it. 27 Playwright checks pass (guest/student × live/not-live, the
-> draft-hides / live-shows proof, 375px, Supabase-off fallback) + 5 regression checks on untouched series.
-> **Still to do (one at a time, each its own branch + merge):** UP PGT login mock tests, then the English
-> Literature login MCQ sets (decide the card-richness question with the owner — see "Per series" below).
+> **Progress (2026-11-14):**
+> - **Series 1 — UP Assistant Professor Paper 2 mock tests: SHIPPED (merged to main, PR #75).**
+>   `assets/paper-list.js` (runtime hub cards from the live catalog), `statePscMockTests.range` (pre-built
+>   `test-1..30` + review routes), `data-catalog-check` gate in `assets/cbt.js`. 27 Playwright checks + 5
+>   regression checks passed.
+> - **Series 2 — English Literature login MCQ sets: BUILT and tested on branch
+>   `claude/affectionate-brown-ahs63h`.** The owner chose the **"flip planned sets live"** approach (no
+>   `paper_catalog` metadata column, no upload-page change — see the decision below). A planned slot (live-login
+>   or Coming-soon) flips live from the catalog at view time: `_data/mcqPendingSets.js` + `set-pending-test.njk`
+>   / `set-pending-review.njk` (pre-built gated+catalog-checked pages for not-yet-live planned slots),
+>   `data-catalog-check` on the live-login set/review pages, `data-catalog-set` on login/pending hub rows, and
+>   `catalogFlip`/`flipOn`/`flipOff` in `assets/mcq-age.js`. Free sets untouched. 28 Playwright checks pass
+>   (pending→live flip on hub + page, draft→Coming-soon revert, free untouched, guest/student, 375px,
+>   Supabase-off fail-safe) + series-1 and regression suites still green. Rule 3 (`quizzes/mcq` note) and rule
+>   17 in `CLAUDE.md` record it.
+> - **Decision made (2026-11-14):** the richer card is delivered by keeping the set's existing registry card and
+>   flipping it live from the catalog — so **no `paper_catalog` metadata column and no upload-page change** were
+>   needed. The metadata-column idea (option (a) below) is only needed for a set that was never planned in the
+>   registry; deferred until that case actually arises.
+> - **Known gap (both series use the registry for the dashboard pool):** a login set published self-serve to a
+>   Coming-soon slot is not counted in the dashboard age pool (rule 10) until the registry is edited to mark it
+>   live + a rebuild. The set itself is fully playable; only the pool denominator lags.
+> **Still to do (one at a time, each its own branch + merge):** UP PGT login mock tests (same pattern as
+> series 1).
 
 
 **Owner's ask (2026-11-13 / 2026-11-14):** after the owner uploads a paper at `/admin/upload-paper/` and marks

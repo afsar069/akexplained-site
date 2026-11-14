@@ -109,7 +109,7 @@ eleventyExcludeFromCollections: true
 
         {% for st in age.sets %}
         <!-- SET {{ st.n }} -->
-        <div class="agehub-set" data-set="{{ st.id }}"{% if st.rev %} data-rev="{{ st.rev }}"{% endif %} data-count="{{ st.count }}" data-topic="{{ st.topicAttr }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}>
+        <div class="agehub-set" data-set="{{ st.id }}"{% if st.rev %} data-rev="{{ st.rev }}"{% endif %} data-count="{{ st.count }}" data-topic="{{ st.topicAttr }}" data-level="{{ st.levelAttr }}"{% if st.live %} data-live{% endif %}{% if st.access or not st.live %} data-catalog-set="{{ st.id }}"{% endif %}>
           <span class="agehub-badge" aria-hidden="true">{{ st.n }}</span>
           <div class="agehub-setbody">
             <span class="agehub-settitle">Set {{ st.n }} &middot; {{ st.title }}</span>
