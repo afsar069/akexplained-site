@@ -42,13 +42,13 @@
     'fifteenth-century',
     'renaissance',
     'early-tudor',
-    'elizabethan'
+    'elizabethan',
+    'commonwealth'
   ];
 
   var SOON_HUBS = [
     'jacobean',
     'caroline',
-    'commonwealth',
     'neoclassical',
     'restoration',
     'augustan-age',
