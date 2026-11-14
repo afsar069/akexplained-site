@@ -25,6 +25,7 @@ eyebrow: Previous-year question papers
         <small>{{ group.papers.length }} paper{% if group.papers.length != 1 %}s{% endif %}</small>
         <img class="net-pyq-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
       </summary>
+      <div class="net-pyq-sections">
       {% for section in group.sections %}
       <section class="net-pyq-section" aria-labelledby="net-pyq-{{ group.year }}-{{ section.paper | lower }}">
         <header class="net-pyq-section-head">
@@ -47,6 +48,7 @@ eyebrow: Previous-year question papers
         </ol>
       </section>
       {% endfor %}
+      </div>
     </details>
     {% endfor %}
   </div>
