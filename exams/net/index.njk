@@ -38,7 +38,7 @@ net_hub: true
       <section class="net-paper" aria-labelledby="net-paper-2-title">
         <header class="net-paper-head"><p>Paper 2</p><h3 id="net-paper-2-title">English Literature</h3></header>
         <div class="net-paper-actions">
-          {% for item in netResources %}{% if item.group == 'paper2' %}{{ action(item, 'net-action-primary' if item.slug == 'english-mcqs' else '') }}{% endif %}{% endfor %}
+          {% for item in netResources %}{% if item.group == 'paper2' %}{{ action(item) }}{% endif %}{% endfor %}
         </div>
       </section>
       <section class="net-paper" aria-labelledby="net-paper-1-title">

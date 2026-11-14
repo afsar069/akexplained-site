@@ -1241,3 +1241,6 @@ count, not which questions, not email, not timing), and how to stay off.
   `PASSWORD_RECOVERY` and reads the link `type`.
 - Identity linking is automatic on a verified email and cannot be switched off — one person, one `user_id`.
 - Migrations are owner-run (rule 9). Test them on a local Postgres first (rule 14).
+
+## NET hub buttons (2026-11-14, on the branch, NOT merged)
+- On `/exams/net/` the three active Paper 2 cards (English Literature MCQs, UGC NET English PYQs, Quick Quizzes) now show a teal "Open" box where the arrow was (`badge` in `_data/netResources.json`, `.net-action-badge` in `assets/net.css`). The English Literature MCQs card is no longer the green primary row. "British Ages Quick MCQs" is now "Quick Quizzes".
