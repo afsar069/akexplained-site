@@ -1,0 +1,35 @@
+{% extends "mcq-page.njk" %}
+{# UGC-NET English PYQ (previous-year paper): free CBT page, no login (CLAUDE.md rule 18).
+   `pyq` aliases one paper of _data/netPyqPapers.js; the test and review routes are made from it
+   (exams/net/english-pyqs/test.njk and review.njk), so a new paper needs nothing here.
+   The questions are the public file assets/questions/<setId>.json. #}
+{% set base = "/exams/net/english-pyqs/" %}
+{% set pageTitle %}{{ pyq.title }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
+{% set pageDescription %}Take {{ pyq.title }} as an online test with {{ pyq.count }} questions, a clock and a full answer review. Free, with no login required.{% endset %}
+{% set canonical %}https://akexplained.com{{ pyq.href }}{% if examReview %}review/{% endif %}{% endset %}
+{% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'UGC-NET',h:'/exams/net/'},{t:'English PYQs',h:base},{t:pyq.title,h:pyq.href}] %}
+{% set mainClass = "cbt" %}
+{% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
+{% block main %}
+<section class="pagehead pagehead-practice">
+  <span class="mark" aria-hidden="true">{{ pyq.year }}</span>
+  <div class="wrap">
+    <p class="eyebrow" id="cbtEyebrow">Practice &middot; UGC NET English &middot; Previous-year paper</p>
+    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}{{ pyq.title }}{% endif %}</h1>
+    <p class="lede" id="cbtLede">{% if examReview %}Your answer, the right one, and the explanation for each question.{% else %}{{ pyq.count }} questions. Free for everyone, with no login required.{% endif %}</p>
+  </div>
+</section>
+<div class="cbt-printhead" aria-hidden="true">
+  <img src="/assets/logo.png" alt="" width="34" height="34">
+  <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
+</div>
+<div class="wrap cbt-body" data-cbt data-exam-pyq{% if examReview %} data-mode="review"{% endif %}
+     data-set="{{ pyq.setId }}" data-src="/assets/questions/{{ pyq.setId }}.json"
+     data-exam-home="/exams/net/" data-exam-home-label="UGC-NET English preparation"
+     data-exam-index-label="English Literature PYQs"
+     data-back="{{ base }}{% if examReview %}{{ pyq.slug }}/{% endif %}"
+     data-back-label="{% if examReview %}the paper{% else %}English PYQs{% endif %}">
+  <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
+</div>
+{% endblock %}

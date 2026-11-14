@@ -277,13 +277,46 @@
   .net-syllabus-unit summary{gap:12px}
   .net-unit-description{padding:0 10px 0 48px}
 }
+/* English Literature PYQs hub (/exams/net/english-pyqs/): one group per year, one card per paper (CLAUDE.md rule 18). */
+.net-pyq{padding:30px 0 10px}
+.net-pyq-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;margin-bottom:22px}
+.net-pyq-intro h2{margin:0 0 6px;font-size:clamp(1.3rem,2.5vw,1.72rem);font-weight:600;line-height:1.3;letter-spacing:normal}
+.net-pyq-intro p{max-width:62ch;margin:0;line-height:1.5}
+.net-pyq-total{font-family:var(--serif);font-style:italic;font-size:1.06rem;white-space:nowrap;color:#8C5B14}
+.net-pyq-year{margin:0 0 10px;border:1px solid var(--border);border-radius:12px;background:#fff;overflow:hidden}
+.net-pyq-year summary{display:flex;align-items:center;gap:16px;min-height:60px;padding:12px 18px;list-style:none;cursor:pointer}
+.net-pyq-year summary::-webkit-details-marker{display:none}
+.net-pyq-year summary::marker{content:""}
+.net-pyq-year summary:hover{background:var(--teal-soft)}
+.net-pyq-year summary:focus-visible{outline:3px solid var(--teal);outline-offset:-3px}
+.net-pyq-year-icon{flex:none;width:26px;height:26px;background:var(--teal);-webkit-mask:url(/assets/icons/feather/file-text.svg) center/contain no-repeat;mask:url(/assets/icons/feather/file-text.svg) center/contain no-repeat}
+.net-pyq-year-name{font-family:var(--serif);font-size:1.3rem;font-weight:600;line-height:1.3;color:var(--ink)}
+.net-pyq-year summary small{margin-left:auto;font-size:.92rem;font-style:italic;color:var(--body);white-space:nowrap}
+.net-pyq-chevron{flex:none;width:22px;height:22px;transition:transform .18s}
+.net-pyq-year[open] .net-pyq-chevron{transform:rotate(180deg)}
+.net-pyq-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:10px;padding:12px;border-top:1px solid var(--border)}
+.net-pyq-card{display:flex;align-items:center;justify-content:space-between;gap:14px;min-width:0;min-height:76px;padding:12px 14px 12px 18px;border:1px solid var(--border);border-radius:10px;background:var(--card-paper);color:var(--ink);text-decoration:none;transition:background-color .18s,border-color .18s,box-shadow .18s}
+.net-pyq-card:hover{background:var(--teal-soft);border-color:var(--teal);box-shadow:0 8px 18px -12px rgba(15,118,110,.55)}
+.net-pyq-card:focus-visible{outline:3px solid var(--teal-dark);outline-offset:3px}
+.net-pyq-card-copy{display:flex;flex-direction:column;gap:3px;min-width:0}
+.net-pyq-card-copy strong{font-family:var(--serif);font-size:1.06rem;font-weight:600;line-height:1.35;overflow-wrap:break-word}
+.net-pyq-card-copy span{font-size:.92rem;line-height:1.4;color:var(--body)}
+.net-pyq-go{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:76px;min-height:44px;padding:0 20px;border-radius:8px;background:var(--teal);color:#fff;font-weight:700;line-height:1}
+.net-pyq-card:hover .net-pyq-go{background:var(--teal-dark)}
+.net-pyq-note{margin-top:14px;border-top:1px solid var(--border)}
+@media (max-width:640px){
+  .net-pyq-intro{flex-direction:column;gap:8px}
+  .net-pyq-total{display:none}
+  .net-pyq-year summary{gap:12px;padding:10px 14px}
+  .net-pyq-card{padding:12px 12px 12px 14px}
+}
 @media (prefers-reduced-motion:reduce){
-  .net-action,.net-action-arrow,.net-syllabus-unit summary > img{transition:none}
+  .net-action,.net-action-arrow,.net-syllabus-unit summary > img,.net-pyq-card,.net-pyq-chevron{transition:none}
   .net-action--live:hover{transform:none}
 }
 @media print{
   .net-hub{padding:0}
-  .net-action,.net-mock,.net-paper{break-inside:avoid}
+  .net-action,.net-mock,.net-paper,.net-pyq-card{break-inside:avoid}
   .net-paper-grid{display:block}
   .net-paper{margin-bottom:18pt}
   .net-mock{background:#fff;color:#000;border:1px solid #999}

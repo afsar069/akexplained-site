@@ -24,7 +24,7 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 6. **Never gate content that is already free** (articles, the Daily quiz, the free MCQ sets).
 7. Anything destructive in the database (drop, delete, truncate) needs the owner's word first.
 
-## The two jobs you will meet most
+## The jobs you will meet most
 - **Publish an MCQ set**: free = `CLAUDE.md` rule 7 (files in `assets/questions/`, registry row in
   `_data/mcqSpec.json`; check new files with `python3 tools/mcq-skill/validate_mcq.py <files> --strict`; files from the UGC NET skill
   must already pass it). Login = rule 15: the owner normally
@@ -32,6 +32,8 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
   enters the repo), and `tools/mcq-skill/make_gated_sql.py` is the older SQL route. Either way the questions
   live only in the Supabase table `mcq_papers`, and the paper's pages are built from `_data/paperCatalog.json`
   (`tools/sync_catalog.py`).
+- **Publish a UGC NET PYQ** (previous-year paper, free, no login): `CLAUDE.md` rule 18. Run `tools/pyq/prepare_pyq.py` on the tagged file; a
+  question with two or more right ids becomes ONE (the owner's rule), recorded in `tools/pyq/decisions/`; then one line in `_data/netPyqs.json`.
 - **Change the database**: rules 9 and 14. Test the SQL on a scratch local Postgres first, then apply it,
   read it back, run the security advisors, keep the migration file in `supabase/migrations/`. If you have no
   Supabase connection, write the SQL and give the owner the steps to paste it in Supabase → SQL Editor.
@@ -45,4 +47,4 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 Question ids and tags: rules 11 and 12. Accounts, login, dashboard: rule 10. Access layers (free, login, paid):
 rule 15. The owner-only **admin area** (`/admin/...`: upload, papers, notices to the dashboard bell, students,
 reviews — one allow list, `public.paper_admins`): rule 16. What is not built yet (paid layer, R2 for big PDFs):
-rule 13. Daily quiz: rule 8.
+rule 13. Daily quiz: rule 8. NET PYQs: rule 18.

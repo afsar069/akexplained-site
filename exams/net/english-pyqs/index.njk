@@ -1,0 +1,48 @@
+---
+layout: net-layout.njk
+title: English Literature PYQs
+description: Take real UGC-NET English papers from earlier years as an online test, with a clock and a full answer review. Free, with no login.
+crumb_label: English PYQs
+eyebrow: Previous-year question papers
+---
+{# CLAUDE.md rule 18. The cards come from _data/netPyqs.json (grouped by year in _data/netPyqYears.js). A new paper is one
+   registry line plus its question file; this page needs no change. #}
+<section class="net-pyq" aria-labelledby="net-pyq-title">
+  <header class="net-pyq-intro">
+    <div>
+      <h2 id="net-pyq-title">Choose a paper</h2>
+      <p>Each paper opens as a real test, with one question at a time, a clock and a full review at the end. Free for everyone, with no login needed.</p>
+    </div>
+    <span class="net-pyq-total">{{ netPyqPapers.length }} paper{% if netPyqPapers.length != 1 %}s{% endif %}</span>
+  </header>
+
+  <div class="net-pyq-years">
+    {% for group in netPyqYears %}
+    <details class="net-pyq-year"{% if loop.first %} open{% endif %}>
+      <summary>
+        <span class="net-pyq-year-icon" aria-hidden="true"></span>
+        <span class="net-pyq-year-name">{{ group.year }}</span>
+        <small>{{ group.papers.length }} paper{% if group.papers.length != 1 %}s{% endif %}</small>
+        <img class="net-pyq-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
+      </summary>
+      <div class="net-pyq-grid">
+        {% for paper in group.papers %}
+        <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
+          <span class="net-pyq-card-copy">
+            <strong>{{ paper.title }}</strong>
+            <span>{{ paper.count }} questions · Free · No login</span>
+          </span>
+          <span class="net-pyq-go" aria-hidden="true">Start</span>
+        </a>
+        {% endfor %}
+      </div>
+    </details>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="net-reading net-pyq-note" aria-labelledby="net-pyq-note-title">
+  <h2 id="net-pyq-note-title">How these papers are marked</h2>
+  <p>The questions and answers follow the UGC question paper and its updated answer key. This site counts one right answer for each question. Sometimes the official key accepts more than one option, or gives marks to every candidate. In that case the test counts one option, and the explanation for that question tells you which one.</p>
+  <p>Your answers stay in this browser. Log in if you also want your results kept with your account. <a href="/exams/net/">Back to NET preparation</a></p>
+</section>

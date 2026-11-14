@@ -160,6 +160,8 @@ file as each ships.
   3. Apply the matching self-serve pattern: mock-test pattern for NET mock tests (filter `exam_id = '<net>' AND
      kind = 'mock-test'`); flip-planned-slots pattern if NET MCQs are per-age registry sets like literature.
   4. Test + merge on its own branch, update the rules + this file.
+- **Update (2026-11-14):** NET's English **PYQs** now exist as a free, static hub (`/exams/net/english-pyqs/`, CLAUDE.md rule 18): papers are
+  public files plus a registry line, not self-serve. They do not change the NET mock-test / Paper 1 blockers above.
 - **Note:** the UGC NET MCQ generator skill (`tools/ugc-net-mcq-skill/`) already emits site-format question
   files; those currently publish as English Literature MCQ sets (per age), which are already self-serve. A
   NET-specific destination is only needed if the owner wants NET papers separate from the per-age literature sets.
