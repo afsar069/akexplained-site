@@ -1429,8 +1429,8 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
   .dq-go{margin:14px 6px 0}
 }
 
-/* Five across only where each card is wide enough for its words beside a picture */
-@media (max-width:1399px){.dq-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* Five across from a 1280px screen up (each card is then about 180px or more); 4 and 3 across below that */
+@media (max-width:1279px){.dq-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:1179px){.dq-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:760px){.dq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){
