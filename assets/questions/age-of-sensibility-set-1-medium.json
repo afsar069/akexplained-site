@@ -1,0 +1,873 @@
+{
+  "setId": "age-of-sensibility-set-1",
+  "rev": 1,
+  "age": "age-of-sensibility",
+  "ageName": "Age of Sensibility",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/augustan-age/",
+  "notesTitle": "Augustan Age — the full notes",
+  "topics": {
+    "ground": "The age and its tastes",
+    "novel": "The novel",
+    "poetry": "Poetry",
+    "johnson": "Johnson, the stage and ideas",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Analytical questions on major works, literary ideas, chronology and critical comparisons in the Age of Sensibility.",
+  "questions": [
+    {
+      "id": "age-of-sensibility-set-1-m-01",
+      "question": "Why did Johnson argue that strict unity of place is unnecessary in drama?",
+      "options": [
+        "All characters must remain in a single room",
+        "Shakespeare wrote only classical tragedies",
+        "Audiences know that the stage is a representation",
+        "No dramatic action can occupy several days"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Johnson reasoned that spectators do not mistake a stage for the actual location of events.",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-02",
+      "question": "Why was literary quotation important in Johnson’s lexicography?",
+      "options": [
+        "It replaced definitions with plot summaries",
+        "It required all words to be Latin",
+        "It classified each entry by verse metre",
+        "It supplied evidence of how words were used"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Johnson supported meanings by citing examples from respected authors rather than relying solely on prescription.",
+      "topic": "johnson",
+      "topicId": "johnsons-dictionary",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-03",
+      "question": "Given below are two statements:\nStatement I: Lives of the Poets combines biography with critical judgement.\nStatement II: It was conceived as a catalogue of Roman emperors.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Johnson evaluated English writers while describing their lives; the work does not concern Roman rulers.",
+      "topic": "johnson",
+      "topicId": "lives-of-the-poets",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-04",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Rambler begins publication\n2. Johnson publishes Rasselas\n3. Johnson issues his Shakespeare edition\n4. Lives of the Poets begins publication\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 4, 1",
+        "1, 2, 3, 4",
+        "3, 2, 1, 4",
+        "2, 4, 3, 1"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Johnson’s sequence runs from The Rambler in 1750 through Rasselas in 1759, Shakespeare in 1765 and Lives in 1779.",
+      "topic": "terms",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Johnson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-05",
+      "question": "Match List I (Johnson work) with List II (Literary form):\nList I:\na. Rasselas\nb. The Rambler\nc. Lives of the Poets\nd. A Dictionary of the English Language\nList II:\n1. Moral periodical essays\n2. Philosophical tale\n3. Literary biography and criticism\n4. Lexicographical reference\nChoose the correct option:",
+      "options": [
+        "a-2, b-4, c-3, d-1",
+        "a-3, b-1, c-2, d-4",
+        "a-2, b-1, c-3, d-4",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The four works respectively explore a prince’s choices, publish moral essays, evaluate poets and define English vocabulary.",
+      "topic": "johnson",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Johnson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-06",
+      "question": "What role does Dr Primrose play in The Vicar of Wakefield?",
+      "options": [
+        "The villain who spreads malicious gossip",
+        "The narrator of a series of military campaigns",
+        "The tutor of an Abyssinian prince",
+        "The clergyman whose family faces repeated trials"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Primrose’s values and family misfortunes provide the novel’s moral center.",
+      "topic": "johnson",
+      "topicId": "the-vicar-of-wakefield",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Vicar_of_Wakefield"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-07",
+      "question": "What social change does Goldsmith lament in The Deserted Village?",
+      "options": [
+        "The loss of rural communities through displacement",
+        "The closing of Roman theatres",
+        "The decline of maritime trade routes",
+        "The spread of classical education"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem imagines a village emptied as wealth and changing land use disrupt ordinary lives.",
+      "topic": "poetry",
+      "topicId": "the-deserted-village",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-08",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): She Stoops to Conquer uses social misidentification to create comedy.\nReason (R): Marlow is at ease with women he takes for servants but shy with women of his own class.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Marlow’s contradictory conduct across social settings explains why mistaken identity drives the comedy.",
+      "topic": "johnson",
+      "topicId": "she-stoops-to-conquer",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Oliver_Goldsmith"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-09",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Traveller is published\n2. The Vicar of Wakefield is published\n3. The Deserted Village is published\n4. She Stoops to Conquer is staged\nChoose the correct sequence:",
+      "options": [
+        "4, 2, 1, 3",
+        "1, 3, 2, 4",
+        "1, 2, 3, 4",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The publications and premiere occurred in 1764, 1766, 1770 and 1773 respectively.",
+      "topic": "johnson",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Oliver_Goldsmith"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-10",
+      "question": "Match List I (Goldsmith work) with List II (Genre):\nList I:\na. The Traveller\nb. The Vicar of Wakefield\nc. The Deserted Village\nd. She Stoops to Conquer\nList II:\n1. Stage comedy\n2. Philosophical travel poem\n3. Socially reflective poem\n4. Domestic prose fiction\nChoose the correct option:",
+      "options": [
+        "a-4, b-2, c-3, d-1",
+        "a-1, b-4, c-2, d-3",
+        "a-3, b-2, c-4, d-1",
+        "a-2, b-4, c-3, d-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Goldsmith worked across reflective verse, fictional family narrative, social poetry and comedy.",
+      "topic": "johnson",
+      "topicId": "oliver-goldsmith",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Oliver_Goldsmith"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-11",
+      "question": "Which brother’s virtuous reputation is misleading in The School for Scandal?",
+      "options": [
+        "Joseph Surface",
+        "Charles Surface",
+        "Sir Peter Teazle",
+        "Sir Oliver Surface"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Joseph appears respectable but is hypocritical, whereas Charles proves more generous than his reputation.",
+      "topic": "johnson",
+      "topicId": "the-school-for-scandal",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_School_for_Scandal"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-12",
+      "question": "Why does Lydia Languish initially resist a straightforward wealthy marriage?",
+      "options": [
+        "She has already taken religious vows",
+        "She longs for the romance of elopement",
+        "She intends to join a colonial expedition",
+        "She despises all forms of reading"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Lydia’s imagination has been shaped by sentimental novels and a romantic ideal of secret courtship.",
+      "topic": "johnson",
+      "topicId": "the-rivals",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Richard_Brinsley_Sheridan"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-13",
+      "question": "Given below are two statements:\nStatement I: Lady Sneerwell uses gossip to manipulate reputations.\nStatement II: The play presents Joseph Surface as consistently honest and open.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true, but Statement II is false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lady Sneerwell organizes malicious intrigue, while Joseph uses a show of respectability to hide hypocrisy.",
+      "topic": "johnson",
+      "topicId": "the-school-for-scandal",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/The_School_for_Scandal"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-14",
+      "question": "Consider the following statements regarding the comic technique in The Rivals:\nI. Mrs Malaprop uses impressive-sounding words incorrectly.\nII. Mistaken identity and romantic pretence affect the plot.\nIII. The comedy follows the classical unities without any courtship intrigue.\nWhich of the statements given above are correct?",
+      "options": [
+        "III only",
+        "II and III only",
+        "I, II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Language mistakes and romantic deception drive the comedy; courtship intrigue is central, not absent.",
+      "topic": "terms",
+      "topicId": "the-rivals",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Richard_Brinsley_Sheridan"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-15",
+      "question": "Match List I (Sheridan play) with List II (Distinguishing feature):\nList I:\na. The Rivals\nb. The School for Scandal\nc. The Critic\nd. The Duenna\nList II:\n1. Joseph and Charles Surface\n2. A rehearsal that satirizes theatrical conventions\n3. Mrs Malaprop and Lydia Languish\n4. A comic opera built on romantic schemes\nChoose the correct option:",
+      "options": [
+        "a-3, b-1, c-2, d-4",
+        "a-4, b-3, c-2, d-1",
+        "a-3, b-1, c-4, d-2",
+        "a-3, b-2, c-4, d-1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sheridan used verbal comedy, social hypocrisy, theatrical parody and song-based intrigue in these plays.",
+      "topic": "johnson",
+      "topicId": "richard-brinsley-sheridan",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Richard_Brinsley_Sheridan"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-16",
+      "question": "Why is Clarissa often described as a psychologically detailed novel?",
+      "options": [
+        "It tells the whole plot through heroic couplets",
+        "Its letters trace conflicting motives and inner distress",
+        "It excludes the heroine’s point of view",
+        "It is arranged as a series of five stage acts"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Letters from different characters expose shifting pressures, feelings and moral choices.",
+      "topic": "novel",
+      "topicId": "clarissa",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Richardson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-17",
+      "question": "What differentiates Richardson’s narrative method from Fielding’s in broad terms?",
+      "options": [
+        "Richardson uses a single all-knowing stage narrator",
+        "Richardson avoids individual moral choices",
+        "Richardson privileges inward feeling through correspondence",
+        "Richardson usually writes in rhymed heroic couplets"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richardson’s epistolary novels bring readers into private reactions and moral conflict.",
+      "topic": "novel",
+      "topicId": "samuel-richardson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-18",
+      "question": "Given below are two statements:\nStatement I: Clarissa Harlowe is pressured by her family over marriage.\nStatement II: Richard Lovelace functions as an entirely trustworthy protector.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Family pressure is central to Clarissa, but Lovelace deceives and exploits the heroine.",
+      "topic": "novel",
+      "topicId": "clarissa",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Richardson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-19",
+      "question": "Arrange the following events in the correct chronological order:\n1. Pamela is first published\n2. Clarissa begins appearing in print\n3. Sir Charles Grandison begins publication\n4. Richardson dies\nChoose the correct sequence:",
+      "options": [
+        "1, 2, 3, 4",
+        "2, 4, 1, 3",
+        "1, 4, 2, 3",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pamela appeared in 1740, Clarissa began in 1747, Grandison began in 1753 and Richardson died in 1761.",
+      "topic": "novel",
+      "topicId": "samuel-richardson",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Richardson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-20",
+      "question": "Match List I (Richardson novel) with List II (Central figure or feature):\nList I:\na. Pamela\nb. Clarissa\nc. Sir Charles Grandison\nd. Pamela in Her Exalted Condition\nList II:\n1. A servant resisting her employer’s advances\n2. Continuation of the first Pamela story\n3. A heroine threatened by family and Lovelace\n4. An exemplary male protagonist\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-1, d-2",
+        "a-1, b-3, c-4, d-2",
+        "a-4, b-2, c-3, d-1",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Each novel pairs a distinctive protagonist or narrative situation with Richardson’s moral fiction.",
+      "topic": "terms",
+      "topicId": "samuel-richardson",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Samuel_Richardson"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-21",
+      "question": "How does Fielding characterize the form of Joseph Andrews in its preface?",
+      "options": [
+        "A tragedy entirely in blank verse",
+        "An epistolary spiritual autobiography",
+        "A comic epic poem in prose",
+        "A historical chronicle in heroic couplets"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Fielding adapts the range and structure of epic to a humorous prose narrative about ordinary life.",
+      "topic": "novel",
+      "topicId": "joseph-andrews",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-22",
+      "question": "Which guardian is associated with Tom’s upbringing in Tom Jones?",
+      "options": [
+        "Mr B.",
+        "Walter Shandy",
+        "Mr Thornhill",
+        "Squire Allworthy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Squire Allworthy raises Tom and stands for benevolence within the novel’s intricate plot.",
+      "topic": "novel",
+      "topicId": "tom-jones",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-23",
+      "question": "Given below are two statements:\nStatement I: Shamela parodies the moral presentation of Richardson’s Pamela.\nStatement II: Joseph Andrews begins with the protagonist serving as a sailor at sea.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Shamela attacks Pamela, while Joseph begins as a servant rather than a seafaring adventurer.",
+      "topic": "novel",
+      "topicId": "henry-fielding",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-24",
+      "question": "Arrange the following events in the correct chronological order:\n1. Shamela appears\n2. Joseph Andrews appears\n3. Tom Jones appears\n4. Amelia appears\nChoose the correct sequence:",
+      "options": [
+        "3, 1, 2, 4",
+        "1, 2, 3, 4",
+        "3, 2, 1, 4",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Fielding published the works in 1741, 1742, 1749 and 1751 in that order.",
+      "topic": "novel",
+      "topicId": "henry-fielding",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-25",
+      "question": "Match List I (Fielding novel) with List II (Identification):\nList I:\na. Shamela\nb. Joseph Andrews\nc. Tom Jones\nd. Amelia\nList II:\n1. A later domestic narrative centered on married life\n2. A direct satire of Pamela\n3. Travels with Parson Adams\n4. A foundling reared by Allworthy\nChoose the correct option:",
+      "options": [
+        "a-2, b-4, c-3, d-1",
+        "a-2, b-4, c-1, d-3",
+        "a-2, b-3, c-4, d-1",
+        "a-2, b-1, c-4, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Fielding’s works move from parody through comic travel and plotted social fiction toward domestic experience.",
+      "topic": "novel",
+      "topicId": "henry-fielding",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Henry_Fielding"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-26",
+      "question": "Why does Tristram Shandy challenge conventional narrative time?",
+      "options": [
+        "All nine volumes cover one continuous day",
+        "Its episodes follow a fixed chronological sequence",
+        "It contains no narrative voice",
+        "Its narrator repeatedly postpones the main story"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Digressions, memories and interruptions repeatedly delay the narrator’s account of his own life.",
+      "topic": "novel",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Tristram_Shandy"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-27",
+      "question": "Which eccentric family member is known for his military hobby-horse in Tristram Shandy?",
+      "options": [
+        "Uncle Toby",
+        "Squire Allworthy",
+        "Sir Roger de Coverley",
+        "Captain Macheath"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Uncle Toby’s fascination with fortifications and sieges gives the novel a memorable comic obsession.",
+      "topic": "novel",
+      "topicId": "laurence-sterne",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Tristram_Shandy"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-28",
+      "question": "Who narrates Sterne’s A Sentimental Journey?",
+      "options": [
+        "Clarissa Harlowe",
+        "The Reverend Mr Yorick",
+        "Dr Charles Primrose",
+        "Tom Jones"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yorick recounts his travels through France and Italy, focusing on feeling and social encounters.",
+      "topic": "novel",
+      "topicId": "a-sentimental-journey",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Laurence_Sterne"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-29",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): A Sentimental Journey emphasizes emotional responses to encounters.\nReason (R): Sterne structures the narrative around the traveler’s sensibility rather than a rigid travel itinerary.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The narrator’s feelings and responses organize the journey, making the reason a direct explanation of the emphasis on sentiment.",
+      "topic": "terms",
+      "topicId": "sentimentalism",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Laurence_Sterne"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-30",
+      "question": "Match List I (Character) with List II (Book or narrative):\nList I:\na. Uncle Toby\nb. Parson Adams\nc. Lovelace\nd. Squire Allworthy\nList II:\n1. Tom Jones\n2. Joseph Andrews\n3. Clarissa\n4. Tristram Shandy\nChoose the correct option:",
+      "options": [
+        "a-1, b-3, c-2, d-4",
+        "a-1, b-4, c-2, d-3",
+        "a-1, b-4, c-3, d-2",
+        "a-4, b-2, c-3, d-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Toby is a Sterne character; Adams and Allworthy belong to Fielding, while Lovelace belongs to Richardson.",
+      "topic": "novel",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Tristram_Shandy"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-31",
+      "question": "What possibility does Gray’s Elegy imagine for the people buried in its churchyard?",
+      "options": [
+        "Their abilities may have remained unrecognized",
+        "They were all celebrated rulers of nations",
+        "Their graves reveal complete personal biographies",
+        "Their poverty proves a lack of moral worth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem reflects on talents and achievements denied to people by unequal opportunities.",
+      "topic": "poetry",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-32",
+      "question": "Why is Gray often treated as a transitional poet?",
+      "options": [
+        "His poems reject nature and mortality altogether",
+        "His polished form coexists with strong feeling and melancholy",
+        "He wrote only dramatic tragedies in prose",
+        "He promoted medieval mystery cycles as the sole model"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gray combines eighteenth-century formal control with themes of solitude, nature and emotion.",
+      "topic": "poetry",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Gray"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-33",
+      "question": "How does Gray’s Elegy use the rural setting?",
+      "options": [
+        "It celebrates a victorious monarch after battle",
+        "It stages a dispute in an urban coffee house",
+        "It turns ordinary graves into a reflection on mortality",
+        "It recounts a voyage across the Atlantic"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The churchyard prompts a meditation on unnoticed lives and the shared fate of death.",
+      "topic": "poetry",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-34",
+      "question": "Given below are two statements:\nStatement I: The Elegy concerns the lives of ordinary villagers.\nStatement II: Its dominant purpose is to glorify a military conquest.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gray reflects on the dead and lost human potential, not a triumphant campaign.",
+      "topic": "poetry",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-35",
+      "question": "Consider the following statements regarding Gray’s poetry:\nI. The Bard draws on a Welsh historical legend.\nII. Ode on a Distant Prospect of Eton College looks back on youthful innocence.\nIII. Elegy Written in a Country Churchyard celebrates courtly luxury without questioning mortality.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I only",
+        "II only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The two odes explore history and lost innocence, while the Elegy confronts mortality and human obscurity.",
+      "topic": "terms",
+      "topicId": "thomas-gray",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Gray"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-36",
+      "question": "Why did Cowper’s nature poetry appeal to readers moving beyond Augustan urban satire?",
+      "options": [
+        "It imitated only crowded court masquerades",
+        "It foregrounded domestic affection and rural observation",
+        "It avoided the countryside and household life",
+        "It treated nature solely as a military allegory"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cowper’s personal attention to ordinary landscapes helped prepare later poetry of feeling.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-37",
+      "question": "Which opening section of The Task begins with an apparently humble household object?",
+      "options": [
+        "The Bard",
+        "The Vanity of Human Wishes",
+        "The Sofa",
+        "The Hermit"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Task opens with The Sofa and expands from everyday comfort into wider reflection.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Task_(poem)"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-38",
+      "question": "Which metre is used in Cowper’s long poem The Task?",
+      "options": [
+        "Rhymed couplets throughout",
+        "Short alliterative half-lines",
+        "Ottava rima in every stanza",
+        "Unrhymed iambic pentameter"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Cowper wrote The Task in blank verse, allowing a flexible conversational meditation.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Task_(poem)"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-39",
+      "question": "Given below are two statements:\nStatement I: Cowper collaborated with John Newton on Olney Hymns.\nStatement II: The Task is chiefly a dramatic work written for actors.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Cowper joined Newton in hymn writing, while The Task is a reflective long poem in blank verse.",
+      "topic": "poetry",
+      "topicId": "william-cowper",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/William_Cowper"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-40",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Cowper’s The Task helped readers value domestic and rural experience.\nReason (R): The poem repeatedly finds moral and emotional significance in everyday country life.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The attention to ordinary settings provides the reason the poem supports a poetry of feeling and home.",
+      "topic": "terms",
+      "topicId": "sentimentalism",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/The_Task_(poem)"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-41",
+      "question": "What does Gibbon’s treatment of Rome illustrate about Enlightenment historiography?",
+      "options": [
+        "A rejection of all documentary evidence",
+        "A preference for legends over historical comparison",
+        "An effort to explain events through critical inquiry",
+        "A demand that every ruler be praised without qualification"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Gibbon examines institutions, religion and political change through argument and historical evidence.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-42",
+      "question": "Which later empire is included within the extended scope of Decline and Fall?",
+      "options": [
+        "The Inca Empire",
+        "The Carolingian Empire alone",
+        "The Japanese Empire",
+        "The Byzantine Empire"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The work follows the Roman imperial world into its eastern Byzantine continuation.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-43",
+      "question": "Where did Gibbon recall receiving his inspiration for the history of Rome?",
+      "options": [
+        "Among the ancient ruins of Rome",
+        "Inside the Palace of Versailles",
+        "At the theatre in Drury Lane",
+        "On the island of Robinson Crusoe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gibbon recalled sitting among the ruins of Rome in 1764 while imagining his historical project.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-44",
+      "question": "Arrange the following events in the correct chronological order:\n1. Gibbon conceives his Roman history in Rome\n2. The first volume of Decline and Fall is published\n3. Volumes II and III are published\n4. The final volumes appear\nChoose the correct sequence:",
+      "options": [
+        "1, 4, 3, 2",
+        "1, 2, 3, 4",
+        "2, 1, 3, 4",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His project was conceived in 1764; the principal publication stages followed in 1776, 1781 and 1788.",
+      "topic": "terms",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-45",
+      "question": "Consider the following statements regarding Gibbon’s historical writing:\nI. Decline and Fall covers the later eastern empire as well as Rome.\nII. Its prose uses argument and irony rather than merely listing dates.\nIII. Its complete text was issued as a single brief pamphlet in 1776.\nWhich of the statements given above are correct?",
+      "options": [
+        "III only",
+        "I and III only",
+        "I and II only",
+        "I only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The work is a multivolume analysis of imperial decline, not a single pamphlet.",
+      "topic": "ground",
+      "topicId": "edward-gibbon",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Edward_Gibbon"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-46",
+      "question": "Why did Burke distrust revolutionary plans to redesign society from abstract principles?",
+      "options": [
+        "He rejected all forms of parliamentary deliberation",
+        "He believed monarchy should never face any legal limits",
+        "He thought historical experience was politically irrelevant",
+        "He valued inherited institutions and gradual reform"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Burke feared abstract redesign would destroy traditions that sustain political society.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-47",
+      "question": "What distinguishes the sublime from the beautiful in Burke’s aesthetics?",
+      "options": [
+        "The sublime involves fear and overwhelming power",
+        "The sublime is limited to pleasant miniature objects",
+        "Beauty and terror are interchangeable sensations",
+        "Beauty is defined only by military conquest"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Burke connects sublimity with awe and terror, while beauty generally draws on softer attraction.",
+      "topic": "ground",
+      "topicId": "the-sublime",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-48",
+      "question": "Which cause did Burke defend in major parliamentary speeches of the 1770s?",
+      "options": [
+        "Immediate abolition of the British Parliament",
+        "Conciliation with Britain’s American colonies",
+        "The return of a medieval feudal army",
+        "The complete rejection of political representation"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Burke urged accommodation of colonial grievances during rising conflict with America.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-49",
+      "question": "Arrange the following events in the correct chronological order:\n1. A Philosophical Enquiry is published\n2. Thoughts on the Cause of the Present Discontents appears\n3. Speech on Conciliation with America is delivered\n4. Reflections on the Revolution in France appears\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 3, 4",
+        "4, 3, 1, 2",
+        "1, 2, 3, 4",
+        "4, 1, 2, 3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Burke’s aesthetic study appeared in 1757, followed by his political writings of 1770, 1775 and 1790.",
+      "topic": "terms",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    },
+    {
+      "id": "age-of-sensibility-set-1-m-50",
+      "question": "Consider the following statements regarding Burke’s intellectual positions:\nI. Burke examined the relation of terror to the sublime.\nII. He was a prominent critic of the French Revolution.\nIII. He demanded that all inherited customs be abandoned immediately.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Burke distinguished sublime experiences and opposed revolutionary attacks on inherited institutions.",
+      "topic": "ground",
+      "topicId": "edmund-burke",
+      "periodId": "age-of-sensibility",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Edmund_Burke"
+    }
+  ]
+}

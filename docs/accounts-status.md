@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14. Augustan Age Set 1 is prepared as a free, no-login set at easy and medium level. Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
+_Last updated: 2026-11-14. Age of Sensibility Set 1 is prepared as a free, no-login set at easy and medium level. Augustan Age, Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
+
+## Age of Sensibility Set 1 — free, easy and medium (2026-11-14)
+
+- The owner supplied `age-of-sensibility-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said all questions are verified. Facts and near-duplicates were not rechecked. Both files match the site plan and were copied unchanged into `assets/questions/`.
+- Strict structure validation passed with no errors. It gave one advisory tag suggestion (easy Q38); the supplied tag was left unchanged. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Age of Sensibility moved from `SOON_HUBS` to `LIVE_AGES`; the hub was added to `sitemap.njk`, the syllabus count and UGC NET skill zip were regenerated. Sets 2 to 4 remain Coming soon.
+- Eleventy built clean. The guest browser test passed at both levels: Start has no lock, each level loads its supplied first question, and a ten-question run opens a ten-question review. All 35,828 local links and assets resolved.
 
 ## Augustan Age Set 1 — free, easy and medium (2026-11-14)
 
