@@ -112,6 +112,9 @@
 .net-action:hover .net-action-arrow{transform:translateX(3px)}
 /* An active (available) action lifts into a soft rounded pill on hover, so a visitor can tell it apart from a "Coming soon" row. */
 .net-action--live:hover{border-radius:10px;border-bottom-color:transparent;transform:translateY(-3px);box-shadow:0 10px 22px -12px rgba(15,118,110,.55)}
+/* "Open" box on an active action: the same teal box as the Start button on the PYQs cards (.net-pyq-go). */
+.net-action-badge{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:76px;min-height:44px;padding:0 20px;border-radius:8px;background:var(--teal);color:#fff;font-size:.92rem;font-weight:700;line-height:1;transition:background-color .18s}
+.net-action:hover .net-action-badge{background:var(--teal-dark);color:#fff}
 .net-action:focus-visible{outline:3px solid var(--teal);outline-offset:4px;border-radius:4px}
 .net-paper-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
 .net-paper{padding:0;border:1px solid var(--border);border-radius:14px;overflow:hidden}
@@ -122,18 +125,6 @@
 .net-paper .net-action{min-height:84px;padding:16px 20px;gap:14px}
 .net-paper .net-action-icon{flex-basis:40px}
 .net-paper .net-action:last-child{border-bottom:0}
-.net-paper .net-action-primary{
-  margin:0 0 8px;
-  border:0;
-  border-radius:11px;
-  background:var(--teal);
-  color:#fff;
-}
-.net-action-primary .net-action-icon{border-color:#8BC4BA}
-.net-action-primary .net-action-icon img,
-.net-action-primary .net-action-arrow{filter:brightness(0) invert(1)}
-.net-action-primary .net-action-description{color:#fff}
-.net-action-primary:hover{background:var(--teal-dark);color:#fff}
 .net-mock{
   display:grid;
   grid-template-columns:60px minmax(0,1fr) auto;
@@ -322,8 +313,5 @@
   .net-mock{background:#fff;color:#000;border:1px solid #999}
   .net-mock h2{color:#000}
   .net-mock-icon{filter:none}
-  .net-action-primary{background:#fff!important;color:#000!important}
-  .net-action-primary .net-action-description{color:#000}
-  .net-action-primary img{filter:none!important}
   .net-detail{padding:0}
 }
