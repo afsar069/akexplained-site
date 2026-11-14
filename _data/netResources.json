@@ -1,12 +1,13 @@
 [
-  {"slug":"about","title":"About UGC-NET","group":"resources","icon":"info","description":"Exam pattern, eligibility and key details","available":true},
-  {"slug":"syllabus","title":"View NET Syllabus","group":"resources","icon":"book-open","description":"Explore the syllabus before you begin","available":true},
-  {"slug":"books","title":"Download Important Books","group":"resources","icon":"layers","description":"Important books for NET preparation will be added here.","available":false},
-  {"slug":"syllabus-download","title":"Download Complete Syllabus","group":"resources","icon":"file-text","description":"The complete syllabus download will be added here.","available":false},
-  {"slug":"english-mcqs","title":"English Literature MCQs","group":"paper2","icon":"layers","description":"Practise English Literature multiple-choice questions.","available":true,"href":"/quizzes/mcq/"},
-  {"slug":"english-pyqs","title":"English Literature PYQs","group":"paper2","icon":"book-open","description":"English Literature previous-year questions will be added here.","available":false},
-  {"slug":"british-ages-quick-mcqs","title":"British Ages Quick MCQs","group":"paper2","icon":"zap","description":"Take a quick quiz on any British literary age.","available":true,"href":"/quizzes/daily/"},
+  {"slug":"about","title":"About UGC-NET","group":"know","icon":"info","description":"Exam pattern, eligibility and key details","available":true},
+  {"slug":"syllabus","title":"View NET Syllabus","group":"know","icon":"book-open","description":"Explore the syllabus before you begin","available":true},
+  {"slug":"books","title":"Download Important Books","group":"get","icon":"layers","description":"Important books for NET preparation will be added here.","available":false},
+  {"slug":"syllabus-download","title":"Download Complete Syllabus","group":"get","icon":"file-text","description":"The complete syllabus download will be added here.","available":false},
+  {"slug":"english-mcqs","title":"English Literature MCQs","group":"paper2","icon":"layers","description":"Practise English Literature multiple-choice questions.","available":true,"badge":"Open","href":"/quizzes/mcq/"},
+  {"slug":"english-pyqs","title":"UGC NET English PYQs","group":"paper2","icon":"book-open","description":"Take real UGC-NET English papers from earlier years.","available":true,"badge":"Open"},
+  {"slug":"british-ages-quick-mcqs","title":"Quick Quizzes","group":"paper2","icon":"zap","description":"Take a quick quiz on any British literary age.","available":true,"badge":"Open","href":"/quizzes/daily/"},
   {"slug":"paper-1-mcqs","title":"Paper 1 MCQs","group":"paper1","icon":"check-square","description":"Paper 1 multiple-choice practice will be added here.","available":false},
   {"slug":"paper-1-pyqs","title":"Paper 1 PYQs","group":"paper1","icon":"file-text","description":"Paper 1 previous-year questions will be added here.","available":false},
+  {"slug":"paper-1-mock-tests","title":"Paper 1 Mock Tests","group":"paper1","icon":"target","description":"Paper 1 mock tests will be added here.","available":false},
   {"slug":"mock-tests","title":"Mock Tests","group":"mock","icon":"target","description":"NET mock tests will be added here.","available":false}
 ]

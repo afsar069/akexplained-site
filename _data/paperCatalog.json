@@ -73,6 +73,15 @@
       "status": "live"
     },
     {
+      "setId": "up-ap-p2-mock-test-4",
+      "title": "Mock Test 04",
+      "examId": "state-psc",
+      "kind": "mock-test",
+      "number": 4,
+      "questionCount": 100,
+      "status": "live"
+    },
+    {
       "setId": "anglo-norman-set-2",
       "title": "Anglo-Norman Poetry and Romance",
       "examId": null,

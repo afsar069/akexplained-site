@@ -1,0 +1,1353 @@
+{
+  "setId": "ugc-net-english-2012-dec-paper-iii",
+  "rev": 1,
+  "ageName": "UGC NET English",
+  "setName": "Paper III — December 2012",
+  "level": "all",
+  "levelName": "Full paper",
+  "title": "UGC NET English Paper III — December 2012",
+  "exam": "UGC NET",
+  "subject": "English",
+  "paper": "III",
+  "session": "December 2012",
+  "topics": {
+    "british": "British Literature",
+    "american": "American Literature",
+    "theory": "Criticism and Theory",
+    "postcolonial": "Indian and Postcolonial",
+    "terms": "Terms and Concepts",
+    "world": "World Literature",
+    "history": "Literary History",
+    "language": "English Language, Linguistics and ELT"
+  },
+  "topicRead": {},
+  "questions": [
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q01",
+      "questionNumber": 1,
+      "question": "Which of the following book by V.S. Naipaul is subtitled The Caribbean Revisited?",
+      "options": [
+        "In a Free State",
+        "A Bend in the River",
+        "The Middle Passage",
+        "An Area of Darkness"
+      ],
+      "correct_option_id": 2,
+      "explanation": "V.S. Naipaul\"s The Middle Passage is subtitled The Caribbean Revisited. It is a non-fiction book length essay which was published in 1962 as Impression of five Societies: British, French and Dutch in West Indies and South America. Hence, option (c) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "v-s-naipaul",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q02",
+      "questionNumber": 2,
+      "question": "'Fluency' in Language is the same as",
+      "options": [
+        "The ability to put oneself across comfortably in speech and/or writing.",
+        "the ability to command language rather than language commanding the user.",
+        "glibness",
+        "accuracy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In language, fluency is same as the ability to put oneself across comfortably in speech and/or writing. Hence, option (a) will be correct answer.",
+      "topic": "language",
+      "topicId": "elt",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q03",
+      "questionNumber": 3,
+      "question": "Which of the following statements on Pathetic Fallacy is NOT TRUE ?",
+      "options": [
+        "This term applies to descriptions that are not true but imaginary and fanciful.",
+        "Pathetic Fallacy is generally understood as human traits being applied or attributed to non-human things in nature.",
+        "In its first use, the term was used with disapproval because nature cannot be equated with the human in respect of emotions and responses.",
+        "The term was originally used by Alexander Pope in his Pastorals (1709)."
+      ],
+      "correct_option_id": 3,
+      "explanation": "The term Pathetic fallacy was originally used by Pope in his Pastorals (1709) rather it was coined by the English Cultural critic John Ruskin in his work Modern Painters (1856). It is a literary device in which the author attributes human emotions and traits to nature or inanimate objects. Hence, option (d) will be correct answer.",
+      "topic": "theory",
+      "topicId": "pathetic-fallacy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q04",
+      "questionNumber": 4,
+      "question": "Identify the correctly matched group: List-I List-II i. 'L' Allegro and 1. pastoral elegy Il\" Penseroso\" ii. 'Lycidas' 2. masque iii. \"Comus\" 3. Sonnet iv. 'On His Blindness' 4. Prose tract v. \"Areopagitica\" 5. Companion poems in octo-syllabic couplets Codes : i ii iii iv v",
+      "options": [
+        "1 2 3 4 5",
+        "5 1 2 3 4",
+        "1 3 2 4 5",
+        "5 1 2 4 3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The source matches: L’Allegro and Il Penseroso – companion poems in octosyllabic couplets; Lycidas – pastoral elegy; Comus – masque; On His Blindness – sonnet; Areopagitica – prose tract. Therefore option (b) is correct.",
+      "topic": "british",
+      "topicId": "john-milton",
+      "periodId": "commonwealth",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q05",
+      "questionNumber": 5,
+      "question": "The Pre-Raphaelite Brotherhood, the University Wits, the Rhymers’ Club, the Scottish Chaucerians and the Transitional Poets. What is the correct chronological sequence?",
+      "options": [
+        "The Scottish Chaucerians- The University Wits- The Transitional Poets- The Pre- Raphaelite brotherhood- The Rhymers' Club.",
+        "The Rhymers' Club- The University Wits- The Scottish Chaucerians- The Pre- Raphaelite brotherhood.",
+        "The Pre-Raphaelite brotherhood- The Rhymers' Club- The Transitional Poets- The Scottish Chaucerians- The University Wits.",
+        "The University Wits- The Scottish Chaucerians- The Pre- Raphaelite brotherhood- The Transitional Poets- The Rhymers' Club."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct chronological sequence is– 1425-1650 – The Scottish Chaucerians – James I, Dunbar etc. 1585-1600 – The University Wits – Marlowe, Kyd etc. Mid 18th Cent – The Transitional Poets – Gray, Blake etc. Mid 19th Cent – The Pre-Raphaelite Brotherhood – Hunt, Millais, Rossetti etc. 1890s – The Rhymer\"s Club – Yeats, Rhys etc. Hence, option (a) will be correct answer.",
+      "topic": "history",
+      "topicId": "british-literature",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q06",
+      "questionNumber": 6,
+      "question": "'Aucitya' refers to: I. Decorum II. Propriety III. Proportion IV. Accuracy",
+      "options": [
+        "I and IV are correct.",
+        "I and III are correct.",
+        "II is correct.",
+        "II and IV are correct."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Auchitya refers to propriety or appropriateness. It shows the kind of justification. Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "indian-poetics",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q07",
+      "questionNumber": 7,
+      "question": "In the closing paragraph of The Trial, two men accompany Joseph K. to a part of the city to execute him. The place is",
+      "options": [
+        "a Public Park",
+        "a church",
+        "a quarry",
+        "an Abandoned Factory"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Kafka's (c) novel The The place Trial of (1925) murder is in a query. the closing para of Hence, option (c) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q08",
+      "questionNumber": 8,
+      "question": "Match given below List-I : with List-II according to the code List-I List-II (Character) (Work) i. Telemachus 1. Notes from underground ii. Anya 2. Old Goriot iii. Zverkov 3. The Cherry Orchard iv. Rastignac 4. The Odyssey Codes: i ii iii iv",
+      "options": [
+        "4 1 2 3",
+        "3 1 4 2",
+        "2 4 1 3",
+        "4 3 1 2"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct matches are – (i) Telemachus – 4. \"The (8th Odyssey\" cent BC) by Homer (ii) Anya – 3. \"The Chekhov Cherry (1904) orchard\" by (iii) Zverkov – 1. \"Notes by Dostoevsky from underground\" (1864) (iv) Rastignac – 2. \"Old (1835) Goriot\" by Balzac Hence, option (d) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q09",
+      "questionNumber": 9,
+      "question": "This renowned German poet was born in Prague, met Tolstoy when young and was influenced by him. The titles of his last two works contain the words \"sonnets\" and \"elegies\". He is",
+      "options": [
+        "Herman Hesse",
+        "Heinrich Heine",
+        "Joseph Freiherr Von Eichendorff",
+        "Rainer Maria Rilke"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The above description is of Raine Marie Rilke. His Orpheus. last two works were – Duino Elegies and Sonnets to Hence, option (d) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q10",
+      "questionNumber": 10,
+      "question": "Which of the following plays gained notoriety for its caricature of the philosopher Socrates?",
+      "options": [
+        "'The Birds'",
+        "'The Wasps'",
+        "'The Clouds'",
+        "'The Frogs'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "gained mentioned philosopher\"s world\"s (c) notoriety first Aristophanes in extant trial Plato\"s for & (surviving) execution. its Apology comedy caricature comedy as It The can a of contributor Clouds be of Socrates considered ideas. (423 and to BC) the the is Hence, option (c) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q11",
+      "questionNumber": 11,
+      "question": "Raskolnikov murders the old lady : I. to get her money and achieve his ambition in life II. to achieve his political goal as an extremist and a nihilist III. to prove his superiority over other young men of the time. IV. All of the above Find the correct combination according to the code :",
+      "options": [
+        "I and II are correct.",
+        "I and III are correct.",
+        "II and III are correct.",
+        "I. II and III are correct."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Raskolnikov, in Dostoevsky\"s Crime and Punishment (1866), murders the old lady to get her money to achieve his ambition in life and to prove his superiority over other young men of the time. Hence, option (b) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q12",
+      "questionNumber": 12,
+      "question": "In his preface to The Order of Things, Foucault mentions being influenced by a Latin American writer and his work. Choose the correct answer:",
+      "options": [
+        "Marquez - \"The Solitude of Latin America\"",
+        "Borges - \"Chinese Encyclopedia\"",
+        "Juan Rulfo - Pedro Paramo",
+        "Alejo - \"On the Marvelous Carpentier in America\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "In his preface to The Order of Things, Foucault mentions being influenced by Louis Borges' Chinese Encyclopedia. Hence, option (b) will be correct answer.",
+      "topic": "theory",
+      "topicId": "michel-foucault",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q13",
+      "questionNumber": 13,
+      "question": "Here is a list of Partition novels which have 'violence on the women's body' as a significant theme. Pick the odd one out:",
+      "options": [
+        "The Pakistani Bride",
+        "What the Body Remembers",
+        "Train to Pakistan",
+        "The Ice-Candy Man"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Train to Pakistan is the odd one in the list as it is by a male author Khushwant Singh. The Pakistani Bride (1990) – Bapsi Sidhwa What the Body Remembers (1999) – Shauna Singh Baldwin The Ice-Candy Man (1991) – Bapsi Sidhwa Hence, option (c) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "indian-writing-in-english",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q14",
+      "questionNumber": 14,
+      "question": "Match the translators in List-I with the English translation of Indian literarure texts in List-II according to the code given below : List-I List-II i. K.B. Vaid 1. Says Tuka ii. O.V. Vijayan 2. The Diary of a Maid Servant iii. Dilip Chitre 3. Samskara iv. A.K. Ramanujan 4. Dharmapuri Codes : i ii iii iv",
+      "options": [
+        "4 1 2 3",
+        "3 2 1 4",
+        "2 4 1 3",
+        "1 2 3 4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The correct matches are – (i) K.B. Vaid – 2. 'The Diary of a Maid Servant' (2007) (ii) O.V. Vijayan – 4. 'Saga of Dharmapuri' (1985) (iii) Dilip Chitra – 1. 'Says Tuka' (1991) (iv) A.K. Ramanujan – 3. 'Samskara' (Eng. Trans. 1976) Hence, option (c) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "indian-writing-in-english",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q15",
+      "questionNumber": 15,
+      "question": "In his poem \"A Morning Walk\", Nissim Ezekiel talks about a 'Barbaric City sick with slums/ Deprived of seasons, Blessed with rains? Its hawkers, beggars, iron- Lunged/ Processions led by frantic drums.' Identify the city :",
+      "options": [
+        "Calcutta",
+        "Banaras",
+        "Bombay",
+        "Agra"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ezekiel talks about Bombay in the above lines from his poem A Morning Walk. Hence, option (c) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "nissim-ezekiel",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q16",
+      "questionNumber": 16,
+      "question": "In Practical Criticism I.A. Richards Iinks four kinds of meanings in most human utterances to four aspects. These are",
+      "options": [
+        "Sense, Feeling, Tone, Intention",
+        "Sound, Feeling, Nuance, Intention",
+        "Sense, Voice, Emotion, Intention",
+        "Sense, Image, Tone, Intention"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The aspects mentioned by I.A. Richards in Practical Criticism (1929) are sense, feeling, tone and intention. This work was written to develop his critical method to discern the psychological foundations of reading and interpretation and a means for readers to discover how they think and feel about poetry. Hence, option (a) will be correct answer.",
+      "topic": "theory",
+      "topicId": "practical-criticism",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q17",
+      "questionNumber": 17,
+      "question": "In 'Christabel' after Geraldine enters Sir Leoline's castle on her way to Christabel's chamber there are several ill omens which warn the reader about Geraldine. Pick out the phrase which does not serve as an omen :",
+      "options": [
+        "'the angry moan of the ailing mastiff bitch'",
+        "\"The Owlet's Scritch'",
+        "\"The Moaning Wind\"",
+        "'a tongue of light, a fit of flame'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The phrase The moaning wind does not appear as an ill omen in Coleridge\"s Christabel (1797-1800). Some supernatural signs (a dog angrily moaning despite asleep, fading flames on torches suddenly reigniting, Geraldine being unable to cross an iron gaet, denial of prayer seem to indicate that all is not well. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "christabel",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q18",
+      "questionNumber": 18,
+      "question": "The word resurrect is",
+      "options": [
+        "an abbreviation",
+        "a spurious verb",
+        "a back-formation",
+        "a disguised compound"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The word resurrect is an example of back formation which is a process of creating a new lexeme usually by removing the suffixes (like-ion removed from resurrection, a Latin word). The term \"back- formation\" was coined by James Murray in 1889. Hence, option (c) will be correct answer.",
+      "topic": "language",
+      "topicId": "morphology-linguistics",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q19",
+      "questionNumber": 19,
+      "question": "Match List-I with List-II according to the code given below : List-I List-II i. Annie John 1. Picaresque ii. Tom Jones 2. Bildungsroman iii. The Sorrows of 3. Gothic Young Werther iv. Vathek 4. Epistolary Codes: i ii iii iv",
+      "options": [
+        "1 2 3 4",
+        "2 1 4 3",
+        "4 3 2 1",
+        "3 4 1 2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct matches are – (i) Jamaica Kincaid\"s \"Annie John\"–2. Bildungsroman (1985) (ii) Henry Fielding\"s \"Tom Jones\"–1. Picaresque (1749) (iii) Goethe\"s \"The Sorrows of Young Werther\" (1774) – 4. Epistolary (iv) William Beckford\"s \"Vathek\" (1786) – 3. Gothic Hence, option (b) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q20",
+      "questionNumber": 20,
+      "question": "Ted Hughes's poem \"The Thought-Fox\" is : I. About Thought as Fox II. About the Fox as Thought III. About the process of writing poetry. IV. About thought entering the poet's brain like the Fox emerging from darkness. Find the most appropriate combination according to the code :",
+      "options": [
+        "I and II are correct.",
+        "I and III are correct.",
+        "I and IV are correct.",
+        "I, III and IV are correct."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ted Hughes' poem The Thought Fox (1957) is about thought as fox and the process of writing poetry. It is about Thought entering the poet\"s brain like the fox emerging from darkness. Hence, option (d) I, III and IV are correct.",
+      "topic": "british",
+      "topicId": "ted-hughes",
+      "periodId": "contemporary",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q21",
+      "questionNumber": 21,
+      "question": "In Aristotle's Poetics we read that it is the imitation of an action that is complete and whole, and of a certain magnitude... having a beginning, a middle, and an end'. What is 'it'?",
+      "options": [
+        "tragedy",
+        "epic",
+        "poetry",
+        "farce"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In Poetics Aristotle has defined tragedy as the imitation of an action that is complete and whole and of a certain magnitude, having a beginning, a middle and an end. In this book, Aristotle countered Plato's indictment by stressing what is normal and useful about literary art. Hence, option (a) will be correct answer.",
+      "topic": "theory",
+      "topicId": "aristotle-poetics",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q22",
+      "questionNumber": 22,
+      "question": "According to Matthew Arnold, 'touchstones' help us test truth and seriousness that constitute the best poetry. What are the 'touchstones'?",
+      "options": [
+        "The purple passages of lyric poetry",
+        "Passages from ancient poets",
+        "The lines and expressions of the great masters",
+        "Passages of epic strength and vigour"
+      ],
+      "correct_option_id": 2,
+      "explanation": "lines relative method Roman by the and (c) modern and merit of According expressions criticism. French of English poetry. author to He authors. of Arnold, This the as admired the great method the models the touchstones masters is ancient to a comparative be to followed test are Greek, the the Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "the-touchstone-method",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q23",
+      "questionNumber": 23,
+      "question": "An extremely simplified form of language used for oral, verbal communication among members of a community who do not share a common language but speak different languages, in order to fulfil essential contact needs. Which of the following best describes this definition?",
+      "options": [
+        "Creole",
+        "Pidgin",
+        "Dialect",
+        "Lingua franca"
+      ],
+      "correct_option_id": 1,
+      "explanation": "language community among (b) its members. used A that pidgin for does is oral, an not extremely verbal share communication a common simplified language form in of a Hence, option (b) will be correct answer.",
+      "topic": "language",
+      "topicId": "pidgin-and-creole",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q24",
+      "questionNumber": 24,
+      "question": "What do the prosodic features of a language tell us?",
+      "options": [
+        "The speaker's native language and its cognate languages.",
+        "The speaker's educational background, age, emotional state, social class, geographical provenance, etc.",
+        "The speaker's self-confidence or lack of it.",
+        "The speaker's command of the resources of the language spoken by him/her and their deployment."
+      ],
+      "correct_option_id": 1,
+      "explanation": "the educational speaker\"s (b) The background, prosodic age emotional features geographical of a state language provenance social tell etc. us class of Hence, option (b) will be correct answer.",
+      "topic": "language",
+      "topicId": "phonetics-terms",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q25",
+      "questionNumber": 25,
+      "question": "Which novel answers the following description? A 1990 bestseller by a British writer, subtitled A Romance, it incorporates contemporary and Victorian time periods and genres such as letters, diaries, poetry and third-person narratives.",
+      "options": [
+        "The Virgin in the Garden",
+        "Possession",
+        "The Girl in the Polka Dot Dress",
+        "The Sea Lady"
+      ],
+      "correct_option_id": 1,
+      "explanation": "best the Clandestine Victorian lives seller (b) of poets. The Possession: a pair relationship above of young description A Romance. academics between is of The A.S. as two they novel Byatt\"s long uncover is about 1990 dead a Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "as-byatt",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q26",
+      "questionNumber": 26,
+      "question": "The following phrases, \"the fat of the land\", \"peace makers\", \"help-meet\", \"labour of love\", \"the eleventh hour\" and \"the shadow of death\", were made current by",
+      "options": [
+        "the British Greek scholars like Roger Ascham",
+        "the fifteenth-century British prelates",
+        "the Puritan tractarians",
+        "the sixteenth-century translators of the Bible"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The above words and phrases were made current by the sixteenth century translators of the Bible. Hence, option (d) will be correct answer.",
+      "topic": "language",
+      "topicId": "king-james-bible",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q27",
+      "questionNumber": 27,
+      "question": "Who among the following writers asserted 'Commonwealth Literature' does not exist ?",
+      "options": [
+        "Amitav Ghosh",
+        "Salman Rushdie",
+        "V.S. Naipaul",
+        "Nirad Chaudhari"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Salman Rushdie had asserted once that Commonwealth Literature does not exist. The writers of Commonwealth countries are engaged on writing in the same similar language to each other. as if there is a union between them Hence, option (b) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "salman-rushdie",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q28",
+      "questionNumber": 28,
+      "question": "Identify the one correct chronological sequence:",
+      "options": [
+        "The Norman Conquest – The Death of Geoffrey Chaucer – William Tyndale’s New Testament – The Birth of William Shakespeare",
+        "The Death of Geoffrey Chaucer – William Tyndale’s New Testament – The Birth of William Shakespeare – The Norman Conquest",
+        "The Norman Conquest – William Tyndale’s New Testament – The Death of Geoffrey Chaucer – The Birth of William Shakespeare",
+        "William Tyndale’s New Testament – The Norman Conquest – The Death of Geoffrey Chaucer – The Birth of William Shakespeare"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct chronological sequence is – 1066 – The Norman Conquest 1400 – Death of Geoffrey Chaucer 1525 – Tyndale\"s \"New Testament\" 1564 – Birth of William Shakespeare Hence, option (a) will be correct answer.",
+      "topic": "history",
+      "topicId": "british-literature",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q29",
+      "questionNumber": 29,
+      "question": "Which of the following arrangements is in the correct chronological sequence?",
+      "options": [
+        "Mary Rights Wollstonecraft's of Women'- 'A 'Lyrical Vindication Ballads' of the by Wordsworth and Coleridge- 'Lyrical Ballads with 'Preface', second edition' by Wordsworth 'Reflections on and the Coleridge- Revolution Edmund in France'. Burke's",
+        "Edmund Burke's 'Reflections on the Revolution in France'- Mary Wollstonecraft's 'A 'Lyrical Vindication Ballads' of the by Rights Wordsworth of Women'- and Coleridge- 'Lyrical Ballads with Preface, second edition' by Wordsworth and Coleridge.",
+        "'Lyrical ballads with 'Preface', second edition' by Wordsworth and Coleridge- 'Lyrical Ballads' by Wordsworth and Coleridge- Edmund Revolution Burke's in France'- 'Reflection Mary Wollstonecraft's on the 'A Vindication of the Rights of Women'.",
+        "'Lyrical Ballads' by Wordsworth and Coleridge- second edition' 'Lyrical by Ballads Wordsworth with 'Preface', and Coleridge- Edmund Burke's 'Reflection on the Revolution in France'- Mary Wollstonecraft's of Women'. 'A Vindication of the Rights"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct chronological sequence is – 1790 – Edmund Burke\"s Reflections on the Revolution in France. 1792 – Mary Wollstonecraft\"s A Vindication of the Rights of Women. 1798 – Wordsworth and Coleridge\"s Lyrical Ballads first edition. 1800 – Second edition of Lyrical Ballads with The Preface. Hence, option (b) will be correct answer.",
+      "topic": "history",
+      "topicId": "romantic",
+      "periodId": "romantic",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q30",
+      "questionNumber": 30,
+      "question": "Who is John Keats's 'Sylvan Historian'?",
+      "options": [
+        "Fanny Brawne",
+        "Nightingale",
+        "The Grecian Urn",
+        "The Bridge of Quietness"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Grecian Urn is itself the story teller or Sylvan Historian in John Keats' Ode on a Grecian Urn. This shows the hellenistic approach of John Keats. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "ode-on-a-grecian-urn",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q31",
+      "questionNumber": 31,
+      "question": "This periodical was started in 1709 with a motive 'to expose the false arts of life, to pull the disguise of cunning, vanity and affectation, and to recommend a general simplicity in our dress, our discourse and our behaviour'. The founder of the periodical wrote under the pseudonym of Isaac Bickerstaff. The periodical described above is",
+      "options": [
+        "The Tatler",
+        "The Spectator",
+        "The Critical Review",
+        "The Rambler"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Addison and Steele had started the above described periodical in 1709 with a motive \"to expose the false arts of life….\". It represted a new apprach to journalism, feturing cultivated essays on contemporary manners. Hence, option (a) will be correct answer.",
+      "topic": "history",
+      "topicId": "the-tatler",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q32",
+      "questionNumber": 32,
+      "question": "Arrange the following in the order in which the details of a research article/essay appear in your bibliography.",
+      "options": [
+        "Page numbers, the title of the essay, the title of the journal, volume and issue numbers, year of publication",
+        "The title of the essay, page numbers, the title of the journal, volume and issue numbers, year of publication",
+        "The title of the journal, the title of the essay, page numbers, volume and issue numbers, year of publication",
+        "The title of the essay, the title of the journal, volume and issue numbers, the year of publication, page number"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct syntax in bibliography is - The title of the essay or article, the title of the journal, volume and issue numbers, the year of publication, page numbers. Hence, option (d) will be correct answer.",
+      "topic": "theory",
+      "topicId": "bibliography",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q33",
+      "questionNumber": 33,
+      "question": "From the following indicate the work which is not a Dystopia :",
+      "options": [
+        "Aldous Huxley – Brave New World",
+        "George Orwell – 1984",
+        "Yevgeny Zamyatin – We",
+        "Evelyn Waugh – Brideshead Revisited"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Dystopia is a catastrophic term used as an opposite of Utopia. From the given options, Evelyn Waugh's Brideshed Revisited is not a dystopian novel. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "dystopian-literature",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q34",
+      "questionNumber": 34,
+      "question": "'Unless wariness be used, as good almost kill a man as kill a good book. Who kills a man kills a reasonable creature, God's Image, but he who destroys a good book, kills reason itsilf, kills the image of God as if were in the eye. Many a man lives a burden to the earth; but a good book is the precious life-blood of a master spirit.....' Where is the passage from?",
+      "options": [
+        "Milton's Areopagitica",
+        "Sidney's Apologie for Poetry",
+        "Dryden's 'Preface to the Fables'",
+        "Marvell's The Rehearsal Transposed"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The above passage is taken from Milton\"s Areopagitica (1964). It aruges against government censorship emphasizing the impotance of open discourse and the pursuit of truth. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "areopagitica",
+      "periodId": "commonwealth",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q35",
+      "questionNumber": 35,
+      "question": "Virginia Woolf rubbished the idea of character and the understanding of realism of writers like Arnold Bennett, John Galsworthy and H.G. Wells. Her famous essay is called 'Mr. Bennet and Mrs. Brown'. Who is Mrs. Brown?",
+      "options": [
+        "The name Woolf gives a woman whom she happens to meet in a train",
+        "A servant in Mr. Bennett's household.",
+        "A character in a Bennett story.",
+        "Mr. Bennett's neighbour who happens to be a writer."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mrs. Brown, in Virgina Woolf\"s essay was the name given by Woolf to a woman whom she met in a train. In her essay Moern Fiction, she criticizes H.G. Wells, Arnold Bennett and John Galsworthy and priases Thomas Hardy, Joseph Cornad, William Henry Hudson, James Joyce and Anton Chekhov. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "virginia-woolf",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q36",
+      "questionNumber": 36,
+      "question": "E.M. Forster uses some recurrent images in A Passage to India. Pick the odd one out:",
+      "options": [
+        "Wasp",
+        "Stone",
+        "Thunder",
+        "Echo"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thunder is not a recurrent image used by Forster in A Passage to India (1924) while 'wasp' has been used as a symbol of the unity of all life. 'Echo' stands for a repetition or imitation of sound. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "a-passage-to-india",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q37",
+      "questionNumber": 37,
+      "question": "Now stop your noses, readers, all and some, For here's a tun of midnight-work to come, Og, from a treason-tavern rolling home. Round as a globe, and liquor'd ev'ry chink Goodly and great he rails behind his link' In the above extract from Absalom and Achitophel Og is",
+      "options": [
+        "Elkanah Settle",
+        "Lord Harvey",
+        "Thomas Shadwell",
+        "Joseph Addison"
+      ],
+      "correct_option_id": 2,
+      "explanation": "\"Og\" in Dryden\"s \"Absalom and Achitophel\" (1681) is Thomas Shadwell who was the contemporary of John Dryden and later became poet Laureate after Dryden. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q38",
+      "questionNumber": 38,
+      "question": "D.H. Lawrence uses the expression 'a bright book of life' to describe",
+      "options": [
+        "the novel",
+        "the dramatic monologue",
+        "the Bible",
+        "the short lyric"
+      ],
+      "correct_option_id": 0,
+      "explanation": "D.H. Lawrence uses the expression \"a bright book of life\" to describe the novel. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "dh-lawrence",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q39",
+      "questionNumber": 39,
+      "question": "Identify the correctly matched group: List-I List-II i. Where Angels 1. Malay Fear to Tread (E.M. Forster, 1905) ii. A Portrait of the 2. Russia Artist as a Young Man (James Joyce, 1916) iii. The Plumed 3. Italy Serpent (D. H. Lawrence, 1926) iv. An Outcast of 4. Mexico the Islands (Joseph Conrad, 1896) v. Under Western 5. Dublin Eyes Codes: i ii iii iv v",
+      "options": [
+        "3 5 4 1 2",
+        "4 3 5 2 1",
+        "5 4 3 2 1",
+        "2 1 3 4 5"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correctly matched pairs are – (i) \"Where Angels Fear to Tread\" – 3. Italy (ii) 'A Portrait of the Artist as – 5. Dublin a Young Man' (iii) \"The Plumed Serpent\" – 4. Mexico (iv) \"An Outcast of the Islands\" – 1. Malay (v) \"Under Western Eyes\" – 2. Russia Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "modern",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q40",
+      "questionNumber": 40,
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other labelled as Reason (R): Assertion (A) : Chaucer describes 'Madame Eglentyne' Thus: 'She was so charitable and so piteous, she wolde wepe. If that 'she sawe a mous caught in a trappe' Reason (R) : On her 'broche of gold full shene' was written Amor Vincit Omnia. In the context of the two statements, which one of the following is correct?",
+      "options": [
+        "Both (A) and (R) are true and (R) is the correct explanation of (A).",
+        "Both (A) and (R) are true but (R) is not the correct explanation of (A).",
+        "(A) is true but (R) is false.",
+        "(A) is false bur (R) is true."
+      ],
+      "correct_option_id": 1,
+      "explanation": "It is clear on reading the two statements that both (A) and (R) are true but (R) is not the correct explanation of (A). Hence option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q41",
+      "questionNumber": 41,
+      "question": "Identify the correct statement on Langue and Parole below: 1. Langue is the abstract language system, the grammar of a language. 2. Parole is the language actually produced by its users following langue. 3. Langue is the language actually produced by its users following parole. 4. Parole is the abstract language system, the grammar of a system.",
+      "options": [
+        "1 and 3 are correct.",
+        "1 and 2 are correct.",
+        "2 and 3 are correct.",
+        "2 and 4 are correct."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Langue and Parole are syntactic units. Langue is the abstract language system, the grammar of a language; Parole is the language actually produced by its users following language. -Parole [Product that is visible] -Langue [abstract system not visible] Hence option, (b) will be correct answer.",
+      "topic": "language",
+      "topicId": "langue-and-parole",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q42",
+      "questionNumber": 42,
+      "question": "In Monica Ali's 'Brick Lane' which among the following characters has 'a face like a frog' ?",
+      "options": [
+        "Nazneen",
+        "Chanu",
+        "Hasina",
+        "Karim"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Monica Ali\"s Brick Lane (2003), Chanu has a face like a frog. Chanu is Nazneen's husband and he is working as a mid-Level Civil servant. He prides himself on his intellectual abilities and his knowledge of Banglandesh history. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "contemporary",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q43",
+      "questionNumber": 43,
+      "question": "\"The grey-eyed morn smiles on the frowning night, Check'ring the eastern clouds with streaks of light; And flecked darkness like a drunkard reels From forth day's path and Titan's burning wheels\". (Romeo and Juliet II, 3, 1 - 4) The speaker describes",
+      "options": [
+        "The Setting Sun",
+        "The Return Home of a Drunkard",
+        "The Drawing of a New Day",
+        "The Rising Sun"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shakespeare in above lines from Romeo and Juliet describes the drawing of a new day. Simply it means that the morning smiles as it replaces frowing night and streaks light across the clouds in the east. Darkness straggers away from the Sun's path like a drunkard. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "romeo-and-juliet",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q44",
+      "questionNumber": 44,
+      "question": "'How noble in reason! How infinite in faculty! In form and moving how express and admirable! In action how like an angel! In apprehension how like a God!\" What does Hamlet marvel at in this passage?",
+      "options": [
+        "His own self",
+        "His father",
+        "Man",
+        "Woman"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Simply Hamlet is talking about the worthlessness of human beings. According to him human being is essentially only a pile of dust. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "hamlet",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q45",
+      "questionNumber": 45,
+      "question": "Said identifies Orientalism as : I. What an Orientalist does. II. A style of thought based on an ontological and epistemological distinction made between the Orient and the Occident. III. a discourse dealing with the Orient IV. a fact of nature rather than one of human production In the light of the statement above :",
+      "options": [
+        "II and III are correct, I and IV are wrong.",
+        "I and III are correct, II and IV are wrong.",
+        "I, II and III are correct and IV is wrong.",
+        "IV is correct and I, II and III are wrong."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Said identifies Orientalism as – I. What an Orientalist does. II. A style of thought based on an ontological and epistemological distinction made between the orient and the accident. III. A discourse dealing with the Orient. Orientalism is not a fact of nature but an ideology. This particular work (Orientalism, 1978) is the landmakr in the history of post-colonial literature. Here, he has given the conception of Us and other by saying \"White are white and rest are others\". Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "orientalism",
+      "periodId": "contemporary",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q46",
+      "questionNumber": 46,
+      "question": "Identify the period during which the Puritans under the rule of Oliver Cromwell and his Commonwealth shut down all English theatres on religious and moral grounds:",
+      "options": [
+        "1640-1660",
+        "1649-1660",
+        "1649-1659",
+        "1640-1659"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Puritans believed in the theory of John Calvin that was known as Calvinism. The theory propounds that Man is born sinners, they are sent on this planet just because of repenting their sins. If they are living a luxurious life, they are disobeying the God. The theatres were spreading vulgarity and obscenity in the shadow of entertainment. Therefore, when The Civil War started in 1642 under the rule of Oliver Cromwell and order was issued to shut down the theatres and it continued till 1660 when the Restoration of Monarchy came into existence. Note : Though, the Civil War started from 1642 and ends with the execution of Charles I and after that there comes a period that is called The Common Wealth period or Interregnum period. The theatres were reopened when Charles II came on throne. Thus, UGC has considered option ( b and a) as correct answer. Official UGC updated answer key for December 2012, English Paper III, question 46, lists B (1649–1660) as the answer. The source document also notes A was historically accepted.",
+      "topic": "history",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q47",
+      "questionNumber": 47,
+      "question": "\"To tell the truth Shug act more manly than rest, men. I mean she upright, honest, speak her mind.....\" What light does the quotation throw on Shug Avery?",
+      "options": [
+        "She is a manly woman.",
+        "She is upright and honest in asserting her lesbian identity.",
+        "She is bent on self-assertion",
+        "Both (b) and (c)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The extract on Shug Avery asserts that she is upright and honest in asserting her lesbian identity and is bent on self-assertion. Hence, option (d) will be correct answer.",
+      "topic": "american",
+      "topicId": "the-color-purple",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q48",
+      "questionNumber": 48,
+      "question": "1. A content word is not a function word. 2. A content word has lesser meaning than a function word. 3. A content word has no function. 4. A content word bears lexical meaning whereas a function word just about means functionally. Which of these statements are correct ?",
+      "options": [
+        "1 and 4 are correct.",
+        "1 and 2 are correct.",
+        "3 and 4 are correct.",
+        "2 and 4 are correct."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct statements are : A content word is not a function word, it bears lexical meaning whereas a function word just about means functionally. Hence, option (a) will be correct answer.",
+      "topic": "language",
+      "topicId": "grammar-and-syntax",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q49",
+      "questionNumber": 49,
+      "question": "The year 1828 is a landmark in the history of American language and literature. Identify the reason from the following:",
+      "options": [
+        "Mark Twain's, 'The Adventures of Huckleberry Finn' was published in that year.",
+        "The Southern Literary Messenger gained wide circulation since that year.",
+        "Washington Irving was adjudged the nation's greatest writer in that year.",
+        "Noah Webster published 'An American Dictionary of the English Language' in that year."
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1828 Noah Webster published his landmark An American Dictionary of the English Language. His dictionary reflected his principles that spelling, grammar and usage should be based upon the living, spoken language rather than on artificial rules. Hence, option (d) will be correct answer.",
+      "topic": "language",
+      "topicId": "english-language-history",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q50",
+      "questionNumber": 50,
+      "question": "What alternative title to her 'Frankenstein' did Marry Shelley give?",
+      "options": [
+        "A Gothic Tale",
+        "A Gothic Romance",
+        "The Modern Prometheus",
+        "A Modern Parable"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Mary Shelley\"s Frankenstein (1818) is also known as The Modern Prometheus. It comes under the category of Gothic novel. It is based on sci-fiction. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "frankenstein",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q51",
+      "questionNumber": 51,
+      "question": "Which of the following statements on George Lamming's 'In the Castle of My Skin' (1953) is not true?",
+      "options": [
+        "On one level this is a coming- of - age story.",
+        "It is an elegiac account of a village's growth into awareness in the late colonial period.",
+        "Its themes parody The Tempest.",
+        "This was George Lamming's first novel."
+      ],
+      "correct_option_id": 2,
+      "explanation": "George Lamming\"s In the Castle of My Skin (1953) does not parody The Tempest. The other three statements correctly describe the novel. Hence, option (c) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "in-the-castle-of-my-skin",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q52",
+      "questionNumber": 52,
+      "question": "We are likely to misunderstand an Emily Dickinson poem if we take her famous dashes to be.......",
+      "options": [
+        "quite specific and unambiguous",
+        "ambiguous and indeterminate",
+        "suggestive of both forward and backward movements in terms of sense",
+        "suggestive of links but equivocally"
+      ],
+      "correct_option_id": 0,
+      "explanation": "misunderstood unambiguous. statements. (a) Emily They if are taken Dickinson\"s as described as quite dashes in the specific other can three and be Hence, option (a) will be correct answer.",
+      "topic": "american",
+      "topicId": "emily-dickinson",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q53",
+      "questionNumber": 53,
+      "question": "Readers of Tayeb Salih’s Season of Migration to the North will undoubtedly notice its parallels with the following story/stories: I. Death in Venice II. Othello III. Bartleby the Scrivener IV. Heart of Darkness. Of the above:",
+      "options": [
+        "I And II are correct.",
+        "Only IV is correct.",
+        "II and III are correct.",
+        "II and IV are correct."
+      ],
+      "correct_option_id": 3,
+      "explanation": "North of works, Darkness. has and (d) parallels Tayib he There is a renowned Salih's with is a the reference Seasons stories writer of of of of Othello Sudan. Migration Othello and in to Heart these the Hence, option (d) will be correct answer.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q54",
+      "questionNumber": 54,
+      "question": "Which statement is NOT true of Benedict Anderson’s Imagined Communities?",
+      "options": [
+        "It is a prosaic response to the myth of El Dorado.",
+        "It is subtitled Reflections on the Origin and Spread of Nationalism.",
+        "In this book, Anderson advances the view that nations are not natural entities but narrative constructs.",
+        "In Anderson’s view, modern nationalism was basically a consequence of the convergence of print technology and capitalism, resulting in the fixity of vernacular languages."
+      ],
+      "correct_option_id": 0,
+      "explanation": "response are understand simply know correct. one (a) too to another. The the as large Anderson imagined myth false for of statement all explained El communities of Dorado. their is that members The that because nations other it is to statements a must they actually prosaic are be Hence, option (a) will be correct answer.",
+      "topic": "world",
+      "topicId": "postcolonial-criticism",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q55",
+      "questionNumber": 55,
+      "question": "\"For the rain it raineth every day\" and \"I could never thrive\" are lines from Twelfth Night that occur in which novel?",
+      "options": [
+        "Middlemarch",
+        "Vanity Fair",
+        "Our Mutual Friend",
+        "Far From the Madding Crowd"
+      ],
+      "correct_option_id": 0,
+      "explanation": "the novel (a) Middlemarch The above lines (1872) from by Twelfth George Night Eliot. occur in Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "twelfth-night",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q56",
+      "questionNumber": 56,
+      "question": "What poem is a mock-heroic poem? A mock- heroic",
+      "options": [
+        "mocks critics at heroic pretensions in poets and",
+        "mocks epics heroism, an exaggerated virtue in all",
+        "uses affectations a heroic style to deride airs and",
+        "uses hero-worship a mocking style to deride heroes and"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A mock-epic poem uses a heroic style to deride airs and affectations. Hence, option (c) will be correct answer.",
+      "topic": "terms",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q57",
+      "questionNumber": 57,
+      "question": "Which of the following statements is not true of Laurence Sterne's Tristram Shandy ?",
+      "options": [
+        "It has a linear plot.",
+        "It opens and ends with the theme of birth.",
+        "It contains a trip to France.",
+        "It contains a marbled page."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The false statement about Laurence Sterne\"s Tristram writers this Shandy narrative (1759-67) as he is that thinks, it has since a linear his plot. mind he associates ideas unnaturally his thoughts become related in non-linear patterns. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "tristram-shandy",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q58",
+      "questionNumber": 58,
+      "question": "In drama, an aside is addressed...",
+      "options": [
+        "to an audience by an actor; the words spoken are not meant to be heard by other actors on stage.",
+        "to other actors on stage; the words spoken are not meant to be heard by the audience.",
+        "by the playwright to the audience.",
+        "by the protagonist to his/her antagonist."
+      ],
+      "correct_option_id": 0,
+      "explanation": "In drama an aside is addressed to an audience by an actor, the words so spoken are not meant to be heard by other actor on stage. Hence, option (a) will be correct answer.",
+      "topic": "terms",
+      "topicId": "aside",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q59",
+      "questionNumber": 59,
+      "question": "Match List-I with List-II according to the code given below: List-I List-II (Novels) (Last Lines) i. The Mayor 1. 'He walked of Casterbridge towards the faintly humming, glowing town, quickly.' ii. Sons and Lovers 2. 'In Their death, they were not divided.' iii. The Great Gatsby 3. 'Happiness was but the episode occasional in a general drama of pain.' iv. The Mill on the Floss 4. 'So we beat on, boats against Codes: i ii iii iv",
+      "options": [
+        "1 2 3 4",
+        "2 1 3 4",
+        "4 3 2 1",
+        "3 1 4 2"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct matches are– (i) Thomas Hardy\"s The Mayor of Casterbridge (1886) 3. \"Happiness was but the occasional episode in a general drama of pain.\" (ii) D.H. Lawrence\"s Sons 1. \"He walked towards and Lovers (1913) the faintly humming, glowing town, quickly.\" (iii) F. Scott Fitzgerald\"s The (1925) Great Gatsby 4. \"So we beat on, boats against\". (iv) G. Eliot\"s The Mill on 2. \"In their death, they the Floss (1860) were not divided.\" Hence, option (d) will be correct answer.",
+      "topic": "american",
+      "topicId": "american-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q60",
+      "questionNumber": 60,
+      "question": "\"There is nothing outside the text,\" is a statement by",
+      "options": [
+        "Victor Shklovsky",
+        "Jacques Derrida",
+        "Roland Barthes",
+        "Ferdinand de Saussure"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Jacques Derrida has said, \"there is nothing outside the text\". He is known for Deconstruction theory. multiple According meaningful to ways. him the This text would can be be interpreted the idea of in relativism. Hence, option. (b) will be correct answer.",
+      "topic": "theory",
+      "topicId": "deconstruction",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q61",
+      "questionNumber": 61,
+      "question": "Here is a list of women abandoned by their lovers in Hardy's novels. Pick the odd one out :",
+      "options": [
+        "Fanny Robin",
+        "Tess D' Urberville",
+        "Marty South",
+        "Bathsheba Everdene"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Bathsheba Everdene in Far from the Madding Crowed (1874) is the only one in the list who abandoned her suitors instead, while all others were abandoned by their lovers. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q62",
+      "questionNumber": 62,
+      "question": "What is the following a description of? 'a loose sally of the mind; an irregular indigested piece'",
+      "options": [
+        "Essay",
+        "Autobiography",
+        "Epistolary Fiction",
+        "Diary"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Essay was defined by a famous critic as a loose sally of the mind, an irregular indigested piece. Hence, option (a) will be correct answer.",
+      "topic": "terms",
+      "topicId": "essay-genre",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q63",
+      "questionNumber": 63,
+      "question": "From the following indicate the critic who is not a New Critic:",
+      "options": [
+        "Allen Tate",
+        "Robert Penn Warren",
+        "Cleanth Brooks",
+        "Claude Levi-Strauss"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Claude Levi-Strauss is associated with Structuralism and Post-Structuralism while rest belong to New Criticism. Hence, option (d) will be correct answer.",
+      "topic": "theory",
+      "topicId": "new-criticism",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q64",
+      "questionNumber": 64,
+      "question": "From the following list, pick out a woman character who does not belong to Amitav Ghosh's novels :",
+      "options": [
+        "IIa",
+        "Urvashi",
+        "Sonali",
+        "Piyali"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Character List (Book) Illa - The Shadow Lines Sonali - The Calcutta Chromosome Piyali - The Hungry Tide Urvashi is not a character in Amitav Ghoshi\"s novels. Hence, option (b) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "amitav-ghosh",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q65",
+      "questionNumber": 65,
+      "question": "Pick the odd man out of the following members of the subaltern group :",
+      "options": [
+        "Ranajit Guha",
+        "Partha Chatterjee",
+        "Dipesh Chakrabarty",
+        "Sumit Sarkar"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sumit Sarkar is a Modern Indian Historian associated with the Swadeshi Movement. Hence, option (d) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "postcolonial-criticism",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q66",
+      "questionNumber": 66,
+      "question": "Statement (S) : \"Our birth is but a sleep and forgetting.\" Interpretation (I) : The human soul never tires in the course of life, it never dies. Therefore, the human life is a long sleep and ephemeral events are better forgotten.",
+      "options": [
+        "(S) is a view and (I) is not correct.",
+        "(S) is a view and (I) is correct.",
+        "(S) is a poetic view, the (I) does not suit it.",
+        "(S) is a poetic view and bears no relationship to (I)."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The line given in the statement is from Immortality Ode by Wordsworth which proposes the possibility that the human soul exists before birth else where and cometh from a far when we are born and the given interpretation correctly explains the statement. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "immortality-ode",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q67",
+      "questionNumber": 67,
+      "question": "\"The parish of rich women, physical decay,/ Yourself....\" What do these make of W.B. Yeats in W.H. Auden's view?",
+      "options": [
+        "Proud",
+        "Vainglorious",
+        "Avaricious",
+        "Silly"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In above extract from his In Memory of W.B. Yeats, W.H. Auden views W.B. Yeats as silly– \"You were silly like us; your gift survived it all : The Parish ....Yourself\". Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q68",
+      "questionNumber": 68,
+      "question": "Who among Charles Dickens's characters is 'umble' and who 'willin' ?",
+      "options": [
+        "Mr. Pickwick, Mrs. Gamp",
+        "Master Humphrey, Nicolas Nickleby",
+        "Martin, Little Nell",
+        "Uriah Heep, Barkis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The above described characters are – Uriah Heep and Barkis from Dickens\" David Copperfield. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "david-copperfield",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q69",
+      "questionNumber": 69,
+      "question": "\"Fourth World Literature\" refers to I. the works of native people living in a land that has been taken over by non-natives II. the works of black people in the United States. III. the literature of the marginalized IV. refers to the works of non-heterosexuals Of the above :",
+      "options": [
+        "I and II are correct.",
+        "I and III are correct.",
+        "II and IV are correct.",
+        "I, III and IV are correct."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Fourth World Literature refers to the works of black people in the US and to the works of non- heterosexuals. Hence, option (b) will be correct answer.",
+      "topic": "terms",
+      "topicId": "new-literatures-in-english",
+      "periodId": "contemporary",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q70",
+      "questionNumber": 70,
+      "question": "Assertion (A) : In 'The Duchess of Malfi' Ferdinand sets a whole group of mad men on the Duchess and they dance and sing in a crazy manner. Reason (R) : His desire was to provide a strange entertainment to drive the Duchess mad. In the context of the two statements, which one of the following is correct?",
+      "options": [
+        "(A) is correct, but (R) is wrong.",
+        "Both (A) and (R) are correct.",
+        "(A) is wrong, but (R) is correct.",
+        "Both (A) and (R) are wrong."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Both (A) and (R) are correct. The Duchess of Malfi is a Jacobean revenge tragedy by John Webster. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-duchess-of-malfi",
+      "periodId": "jacobean-era",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q71",
+      "questionNumber": 71,
+      "question": "Why is 'The Signifying Monkey' of Henry Louis Gates JR. a notable contribution to the study of African-American literature?",
+      "options": [
+        "It focuses on largely neglected African-American novelists and poets.",
+        "It offers a theory of African-American criticism that draws upon rhetorical and signifying practices.",
+        "It offers a theory of African-American films and dramatic arts that signify Black ethos.",
+        "It departs from critical theory of autobiographical narrative involving Black lives and cultural traditions."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Signifying Monkey by Henry Louis Gates JR offers a theory of African-American criticism that draws upon rhetorical and signifying practices. Hence, option (b) will be correct answer.",
+      "topic": "american",
+      "topicId": "american-literature",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q72",
+      "questionNumber": 72,
+      "question": "This influential critic I. wrote influential commentaries on such poets as Shelley, Blake and Yeats. II. Published such titles as The Anxiety of Influence, A Map of Misreading, Poetry and Repression and The Western Canon. III. asserted that most literary criticism is but slightly disguised religion and IV. is, arguably, the most widely known and contrarian among his American peers in the English Academy. Identify the critic",
+      "options": [
+        "Edward Said",
+        "Geoffrey Chaucer",
+        "Harold Bloom",
+        "Sven Birkerts"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The above description is about Harold Bloom. He is known for his innovative interpretations of literary history and of the creation of literature. Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "the-anxiety-of-influence",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q73",
+      "questionNumber": 73,
+      "question": "According to the Italian Marxist theorist Antonio Gramsci :",
+      "options": [
+        "hegemony is synonymous with domination",
+        "hegemony involves a degree of consent on the part of subject people.",
+        "hegemony involves a degree of co-political entity.",
+        "hegemony is synonymous with subjugation."
+      ],
+      "correct_option_id": 1,
+      "explanation": "According to Gramsci, hegemony involves a degree of consent on the part of subject people. It is a type of domination based primarily on dominated people's and group's. Hence, option (b) will be correct answer.",
+      "topic": "theory",
+      "topicId": "antonio-gramsci",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q74",
+      "questionNumber": 74,
+      "question": "Match the following: i. George Peele, Robert Greene, Thomas Lodge, Thomas Kyd - 1. The Rhymers' Club/The Decadents of The 1890's ii. William Congreve, William Wycherley, George Etherege, George Farquhar - 2. The Pre-Raphaelite Brotherhood iii. John Everett Millais, James Collinson, Ford Madox Brown, Dante Gabriel Rossetti - 3. The University Wits iv. Ernest Dowson, Lionel Johnson, W.B. Yeats - 4. The Restoration Playwrights Codes: i ii iii iv",
+      "options": [
+        "3 2 1 4",
+        "1 4 3 2",
+        "2 1 4 3",
+        "3 4 2 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct matches are – (i) George Peele, Robert Greene, Thomas Lodge, Thomas Kyd – 3. The University Wits (ii) William Congreve, William Wycherley, George Etherege, George Farquhar – 4. The Restoration Playwrights (iii) John Everett Millais, James Collinson, Ford Madox Brown, D.G. Rossetti – 2. The Pre-Raphaelite Brotherhood (iv) Ernest Dowson, Lionel Johnson, W.B. Yeats – 1. The Rhymers' Club; The Decadents of the 1890's Hence, option (d) will be correct answer.",
+      "topic": "history",
+      "topicId": "british-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper III, December 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-3-dec-2012-q75",
+      "questionNumber": 75,
+      "question": "Combine the statements correctly: According to Homi Bhabha.................. 1. mimicry is not mere copying or emulating the colonizer's culture, behaviour and manners. 2. but it is further aimed at perfection and excess. 3. mimicry is mere copying the colonizer's culture, behaviour and manners................ 4. but is informed by both mockery and a certain menace.",
+      "options": [
+        "1 and 4",
+        "1 and 2",
+        "3 and 4",
+        "3 and 2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "According to Homi Bhabha – Mimicry is not mere copying or emulating the colonizer\"s culture, behaviour and manners but it is informed by both mockery and a certain menace. Homi Bhabha is a post-colonial writer known for hybridity. Hence, option (a) will be correct answer.",
+      "topic": "theory",
+      "topicId": "mimicry-and-ambivalence",
+      "periodId": "contemporary",
+      "qtype": "combination",
+      "src": "UGC NET English Paper III, December 2012"
+    }
+  ]
+}

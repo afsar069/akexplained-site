@@ -47,6 +47,9 @@
     return {
       row: row,
       id: row.getAttribute('data-set') || '',
+      /* Self-serve publish (rule 17): login/pending set rows carry data-catalog-set — their real
+         live/draft state comes from the live paper_catalog, not from the build. */
+      catalogSet: row.getAttribute('data-catalog-set') || '',
       topics: (row.getAttribute('data-topic') || '').split(/\s+/).filter(Boolean),
       levels: (row.getAttribute('data-level') || '').split(/\s+/).filter(Boolean),
       name: (($('.agehub-settitle', row) || {}).textContent || '').trim(),
@@ -130,6 +133,106 @@
         a.setAttribute('data-auth-only', '');
         a.hidden = !lock.hidden;
       }
+    });
+  }
+
+  /* ---------------------------------------------------------
+     SELF-SERVE PUBLISH (rule 17) — login/pending set rows ka asli haal paper_catalog se
+
+     Jis row par data-catalog-set hai uska live/draft build se nahi, live catalog se tay hota hai:
+       - Coming-soon slot jiska set ab LIVE hai  -> Start/lock (login card),
+       - live login set jo Draft kar diya gaya   -> wapas "Coming soon",
+       - baaki                                   -> jaisa tha waisa hi.
+     Free set (bina data-catalog-set) ko chhua tak nahi jata. Padhne me dikkat (network) ho to
+     page jaisa bana tha waisa hi rehta hai — kuch nahi badalta, isliye fail-safe hai.
+     --------------------------------------------------------- */
+  var LOCK_SVG = '<svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false">' +
+    '<rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/>' +
+    '<path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+
+  /* auth.js har page par Supabase client banata hai (guest ke paas bhi). ~3s intezaar. */
+  function whenAuth() {
+    return new Promise(function (resolve) {
+      var tries = 0;
+      (function check() {
+        if (window.akAuth) return resolve(window.akAuth);
+        if (tries++ > 100) return resolve(null);
+        setTimeout(check, 30);
+      })();
+    });
+  }
+
+  /* Coming-soon slot ko login card bana do (Start + lock). */
+  function flipOn(s, row) {
+    if (s.live) return;
+    s.live = true;
+    if (row && row.question_count > 0 && !s.count) { s.count = row.question_count; s.size = row.question_count; }
+    s.base = '/quizzes/mcq/' + AGE + '/' + s.id.replace(AGE + '-', '') + '/';
+
+    var start = document.createElement('a');
+    start.className = 'agehub-go' + (s.open ? ' is-solid' : '');
+    start.href = s.base;
+    start.textContent = s.done ? 'Do it again' : s.open ? 'Carry on' : 'Start';
+    start.setAttribute('data-auth-only', '');
+    start.hidden = true;               /* guest ko default me lock dikhe, Start nahi */
+    s.link = start;
+
+    var slot = $('.agehub-soon', s.row);
+    if (slot) slot.parentNode.replaceChild(start, slot);
+    else s.row.appendChild(start);
+
+    if (!$('.agehub-go-lock', s.row)) {
+      var lock = document.createElement('a');
+      lock.className = 'agehub-go agehub-go-lock';
+      lock.setAttribute('data-guest-only', '');
+      lock.href = '/login/?next=' + encodeURIComponent(s.base);
+      lock.setAttribute('aria-label', 'This set needs a login. Log in to open it.');
+      lock.setAttribute('title', 'This set needs a login. Log in to open it.');
+      lock.innerHTML = LOCK_SVG;
+      start.parentNode.insertBefore(lock, start);
+    }
+  }
+
+  /* Live login set jo Draft ho gaya — wapas "Coming soon". */
+  function flipOff(s) {
+    if (!s.live) return;
+    s.live = false;
+    if (s.link && s.link.parentNode) {
+      var soon = document.createElement('span');
+      soon.className = 'agehub-soon';
+      soon.textContent = 'Coming soon';
+      s.link.parentNode.replaceChild(soon, s.link);
+    }
+    s.link = null;
+    var lock = $('.agehub-go-lock', s.row);
+    if (lock && lock.parentNode) lock.parentNode.removeChild(lock);
+    s.row.classList.remove('is-open', 'is-done');
+  }
+
+  function catalogFlip() {
+    var managed = sets.filter(function (s) { return s.catalogSet; });
+    if (!managed.length) return;
+    whenAuth().then(function (a) {
+      if (!a || !a.configured || !a.client) return;   /* Supabase off — page jaisa hai waisa hi */
+      a.client.from('paper_catalog').select('set_id,question_count').eq('kind', 'mcq-set')
+        .then(function (res) {
+          if (res.error || !Array.isArray(res.data)) return;   /* read fail — koi badlaav nahi */
+          var live = {};
+          res.data.forEach(function (r) { if (r && r.set_id) live[r.set_id] = r; });
+          var changed = false;
+          managed.forEach(function (s) {
+            var nowLive = !!live[s.catalogSet];
+            if (nowLive === s.live) return;
+            if (nowLive) flipOn(s, live[s.catalogSet]); else flipOff(s);
+            changed = true;
+          });
+          if (!changed) return;
+          /* Naye Start/lock ko login ki haalat se dikhao/chhupao. */
+          try { a.session().then(function (ss) { if (a.refreshHeader) a.refreshHeader(ss); }); } catch (e) {}
+          try { paintSets(); } catch (e) {}
+          try { apply(); } catch (e) {}
+          try { paintStats(); } catch (e) {}
+        }, function () {});
     });
   }
 
@@ -431,6 +534,7 @@
     try { readState(); } catch (e) {}
     try { wireFilters(); apply(); } catch (e) {}
     try { wireWipe(); } catch (e) {}
+    try { catalogFlip(); } catch (e) {}
   }
 
   if (document.readyState === 'loading') {

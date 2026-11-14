@@ -1,0 +1,17 @@
+{
+  "10": {
+    "correct": 1,
+    "explanation": "The original UGC question asks for a Nobel Laureate. Both Toni Morrison (1993) and Seamus Heaney (1995) received the Nobel Prize in Literature. This test counts (b), Seamus Heaney.",
+    "sources": [
+      "https://www.ugcnetonline.in/showPdf.php?p1=question_papers/June2012_paper-II/J-30-12%20(English).pdf",
+      "https://www.nobelprize.org/prizes/literature/1993/press-release/",
+      "https://www.nobelprize.org/prizes/lists/all-nobel-prizes-in-literature/all/"
+    ],
+    "note": "The supplied tagged file says Poet Laureate, but the UGC paper says Nobel Laureate. Its supplied explanation also conflicts with the two marked options. The public question restores the UGC wording and Toni Morrison's given name."
+  },
+  "32": {
+    "correct": 0,
+    "explanation": "The UGC key dropped this question and gave credit to all candidates. This practice test counts (a), the matching combination supplied in the tagged file: Balachandra Rajan—The Dark Dancer; R. K. Narayan—The Dark Room; Kamala Markandaya—The Coffer Dams; Romen Basu—The Tamarind Tree.",
+    "source": "https://ugcnetonline.in/updated_keys/J2012_updatekeys/SC030_II.pdf"
+  }
+}

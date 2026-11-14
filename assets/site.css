@@ -1188,7 +1188,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
 }
 
 /* ---------- practice pages: painted header ----------
-   Used by Quizzes, MCQ Practice, PYQ and Mock Tests. The picture sits at 80%
+   Used by Quizzes, PYQ and Mock Tests (MCQ Practice and Daily have their own picture, below). The picture sits at 80%
    opacity and fades out at the bottom edge, into the page below. It replaces
    the small motif, which the build only adds to a plain .pagehead. */
 .pagehead-practice::before{
@@ -1204,16 +1204,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .pagehead-practice::before{opacity:.4;background-position:right bottom}
 }
 
-/* The MCQ practice head, larger — the same big, two-tone title as the Daily head,
-   but it keeps its own practice painting (not the Daily picture). */
-.pagehead-mcq{min-height:320px}
-.pagehead-mcq .eyebrow{letter-spacing:.24em}
-.pagehead-mcq h1{
-  font-size:clamp(2.4rem,5.8vw,4.1rem);line-height:1.05;font-weight:700;margin-bottom:12px;
-}
-.pagehead-mcq h1 em{font-style:normal;color:#A9741F}
-.pagehead-mcq p.lede{font-size:clamp(1.02rem,1.7vw,1.24rem);line-height:1.4;max-width:46ch}
-@media (max-width:760px){.pagehead-mcq{min-height:0}}
+/* The MCQ Practice page (/quizzes/mcq/) uses the Daily head below (.pagehead-daily): same picture, same title size. */
 
 /* =========================================================
    DAILY MCQ PAGE  —  /quizzes/daily/
@@ -1429,8 +1420,8 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
   .dq-go{margin:14px 6px 0}
 }
 
-/* Five across only where each card is wide enough for its words beside a picture */
-@media (max-width:1399px){.dq-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+/* Five across from a 1280px screen up (each card is then about 180px or more); 4 and 3 across below that */
+@media (max-width:1279px){.dq-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:1179px){.dq-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:760px){.dq-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){
@@ -2854,11 +2845,10 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-ring .fill,.cbt-trackfill{transition:none}
 }
 /* ---------- chhap kar rakhne layak ----------
-   Sirf report card jata hai: score, ginti, topic ka hisaab, kya majboot
-   kya kamzor. Sawal aur unke jawab nahi — wo chhapne ke liye nahi hain. */
+   Report card mein har sawal ka number aur uska result bhi dikhna chahiye. */
 @media print{
   .cbt-bar,.cbt-side,.cbt-nav,.cbt-submit,
-  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-qgrid,.cbt-cta,
+  .cbt-filters,#cbtReview,.cbt-after,.cbt-soon,.cbt-cta,
   .site-header,.site-footer,.crumb,.skip{display:none !important}
   .cbt-card .sub{display:none}
   body{background:#fff}
@@ -2887,6 +2877,11 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
     border-color:#999;background:#fff;page-break-inside:avoid;
   }
   .cbt-two,.cbt-three{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cbt-qgrid{align-content:start;flex:none;gap:5px;margin-top:10px}
+  .cbt-qcell{min-width:0;font-size:8pt;cursor:default;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .cbt-qcell.q-right{background:#d9eee9;border-color:#08786e;color:#111}
+  .cbt-qcell.q-wrong{background:#f7dede;border-color:#b91c1c;color:#111}
+  .cbt-qcell.q-skip{background:#ece9df;border-color:#8d887b;color:#111}
   .cbt-quote{page-break-inside:avoid}
 }
 
@@ -3747,12 +3742,21 @@ a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);c
   width:90px;height:2px;background:linear-gradient(90deg,rgba(185,137,47,0),var(--gold),rgba(185,137,47,0));border-radius:2px}
 #reviews .seclede{text-align:center;max-width:62ch;margin-left:auto;margin-right:auto}
 
-/* Reviews: thin "Write a review" strip — pen icon + button, no text (owner, 2026-11-11) */
+/* Reviews: one thin full-width strip that is the whole link (owner, 2026-11-14; before: pen icon + gold button). */
 .rvcta{display:flex;align-items:center;justify-content:center;gap:12px;
-  width:max-content;max-width:94%;margin:30px auto 0;padding:7px 16px;
-  background:linear-gradient(180deg,var(--cream),var(--paper));
-  border:1px solid var(--border);border-radius:999px;box-shadow:0 3px 12px rgba(22,48,74,.06)}
-.rvcta-ic{width:22px;height:22px;color:var(--gold);flex:none}
+  width:100%;min-height:50px;margin:30px 0 0;padding:10px 20px;
+  background:linear-gradient(90deg,var(--teal-dark),var(--teal) 50%,var(--teal-dark));
+  border:1px solid var(--teal-dark);border-bottom:3px solid var(--gold);border-radius:12px;
+  color:#fff;font-weight:600;font-size:.98rem;line-height:1.3;text-align:center;
+  box-shadow:0 8px 20px -10px rgba(11,87,80,.55);
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,filter .2s}
+.rvcta:hover{color:#fff;transform:translateY(-2px);filter:brightness(1.08);box-shadow:0 14px 26px -10px rgba(11,87,80,.6)}
+.rvcta:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.rvcta-ic{width:22px;height:22px;color:#F1D58B;flex:none}
+.rvcta-go{flex:none;transition:transform .2s}
+.rvcta:hover .rvcta-go{transform:translateX(4px)}
+@media(max-width:420px){.rvcta{font-size:.9rem;gap:9px;padding:10px 14px}}
+@media(prefers-reduced-motion:reduce){.rvcta,.rvcta-go{transition:none}.rvcta:hover{transform:none}}
 
 /* Avatar thumbnails: header auth pill, dashboard profile button, dashboard hero (owner, 2026-11-11) */
 .topauth-av{display:inline-block;width:26px;height:26px;border-radius:50%;object-fit:cover;vertical-align:middle;margin-right:7px;background:var(--border)}

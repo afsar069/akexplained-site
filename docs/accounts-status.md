@@ -4,7 +4,166 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14 (Commonwealth Set 1 is a free set, easy and medium, on the feature branch, not on main yet. Elizabethan Set 1 is on main as PR #69, Early Tudor Set 1 went to main on 2026-11-12, Renaissance Set 1 as PR #62 and Fifteenth Century Set 1 as PR #61. On main already: the UGC NET MCQ skill under `tools/ugc-net-mcq-skill/` and `validate_mcq.py --strict`, Age of Chaucer Set 1 at easy and medium level, the "Questions and time" chooser on every MCQ set page, and the MCQ plan for the other 18 ages.)_
+_Last updated: 2026-11-14. **Commonwealth Set 1 (free, easy and medium) is being merged to main** (see its section below; the same commit fixes the Elizabethan hub block). **UGC NET PYQs hub (rule 18) is on the branch, not merged.** **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
+
+## UGC NET PYQs — UGC NET English PYQs hub (2026-11-14, on the branch, NOT merged)
+
+**What the owner asked:** the UGC NET English Paper II December 2012 paper (50 questions, already verified) goes live behind
+the **UGC NET English PYQs** button on `/exams/net/`, free and with no login, as a CBT test with the same engine as the
+British MCQs. The button on the page is a hub that shows each PYQ by its full name (year, month); later PYQs will be added the
+same way. Any question with two right ids becomes one.
+
+**What was built (rule 18).** `/exams/net/english-pyqs/` (year groups, newest first, one card per paper), one test page and one
+review page per paper, all made from `_data/netPyqs.json` (registry) + `_data/netPyqPapers.js` / `netPyqYears.js` (read the
+question file, stop the build on a bad file). `_includes/net-pyq-cbt.njk`, `.net-pyq-*` in `assets/net.css`, sitemap lines from
+the registry, `english-pyqs` marked `available: true` in `_data/netResources.json`. `assets/cbt.js`: a `data-exam-pyq` flag
+(names only: "Previous-year paper", the paper's `setName`, "Paper complete", NET next-step links); everything else is the
+British-MCQ engine. `tools/pyq/prepare_pyq.py` turns a tagged PYQ file into the site file and refuses to continue until every
+question whose key is not "single" has a decision (`tools/pyq/decisions/<setId>.json`).
+
+**The four questions that had more than one right id** (the file's `answerKey` said so; the engine scores one option):
+Q10 (official c and d) counts **(c) Gyanpeeth**; Q45 (official a or c) counts **(c) Lucien Goldmann**; Q15 (official: marks to all)
+counts **option "1", "a tragicomedy in two acts"**; Q32 (official: marks to all) counts **the first option, Swift's Battle of the
+Books**. Each explanation says what the test counts. Checked by web search on 2026-11-14 (secondary sources: Britannica for
+Ghosh's Jnanpith, booksellers and The Conversation for the Godot subtitle, Wikipedia / Gutenberg for the Battle of the Books, a
+mix of academic pages for Goldmann's homology). The owner can flip any pick by editing the decisions file and re-running the tool.
+Q10 is the closest call: both (c) and (d) are accepted by the official key.
+
+**Tested.** `npx @11ty/eleventy` builds clean (497 files, check-topics OK, no clash of ids). Playwright on the built `_site`
+(Supabase blocked, as a guest): 66 checks pass at 1280px and 375px — NET hub button is live, hub card shows the full name and
+50 questions, start screen (no levels, "no sign-in needed", chooser up to 50), full 50-question run, result ("Paper complete",
+paper name, no mock-test or UP PGT wording), review shows the four counted-answer explanations, review with no attempt, no
+sideways scroll, no page errors, canonical and robots. The paper and key links in the file could not be opened from the
+session (the answer-key host is blocked by the network policy), so the page does not show them.
+
+**Not done / for later.** `/quizzes/pyq/` (the older general PYQ page) is unchanged and still says papers are "being added";
+it could link to the new hub if the owner wants. Paper 1 PYQs are still "Coming soon". PYQs are not self-serve (rule 17): a new
+paper needs a registry line and a build.
+
+## Self-serve publish — English Literature login MCQ sets (2026-11-14, SHIPPED — merged to main, PR #76)
+
+**Series 2 of the self-serve work.** The owner chose (2026-11-14) the **"flip planned sets live"** approach over
+adding a `paper_catalog` metadata column: because every age already lists its sets in `mcqSpec.json` with full
+rich cards (title, summary, topic tags) — including "Coming soon" slots — the richest possible card already
+exists at build time. So a planned login set goes live the moment the owner uploads its questions and marks it
+Live, with **no rebuild, no database change, and no upload-page change**. Draft hides it again.
+
+**How it works.** A set row is "catalog-managed" when it is a login set (`access: "login"`) or a not-yet-live
+planned slot. Such rows carry `data-catalog-set`; their real live/draft state comes from the live
+`paper_catalog` (kind `mcq-set`), read in the browser with the publishable key (RLS gives a guest only live
+rows). Free sets carry nothing and are untouched.
+- **New `_data/mcqPendingSets.js`** lists every planned slot that is not yet live in the registry;
+  **`set-pending-test.njk` / `set-pending-review.njk`** pre-build its `/set-N/` + `/set-N/review/` routes as
+  login-gated, `data-catalog-check` pages with **no** `data-src` (no question file in the repo, rule 15). A free
+  set that later fills a slot becomes a live registry set (built by `mcqLiveSets`) and drops out of
+  `mcqPendingSets`, so the two never build the same route (verified: anglo-norman set-2 live-login + set-3
+  pending both build cleanly).
+- **`data-catalog-check`** added to the live-login `set-test.njk` / `set-review.njk` pages too, so drafting a
+  live login set shows "This set is not open yet". Free set pages are unchanged (no `st.access`).
+- **`assets/cbt.js`**: `notOpenYet` / `applyCatalogMeta` are now set-aware ("set" vs "mock test"). The
+  `data-catalog-check` gate from series 1 is reused unchanged.
+- **`assets/mcq-age.js`**: `catalogFlip()` reads the catalog once per hub and flips each `data-catalog-set` row
+  — a Coming-soon slot whose set is live → `flipOn` (creates Start + padlock); a live login set gone Draft →
+  `flipOff` (back to "Coming soon"). Fail-safe: any read failure leaves the build-time state untouched.
+
+**Tested (Playwright on built `_site`, Supabase mocked):** 28 checks pass — guest hub: pending set-3 flips to a
+padlock, or stays "Coming soon" when not live; student hub: Start; **draft proof**: a live login set-4 reverts
+to "Coming soon" while set-5 stays; free set-1 never touched; the pending set **page**: guest+live → login wall,
+guest+not-live → "This set is not open yet" (no login wall), student+live → opens; a drafted live-login page →
+"not open yet"; free set page unaffected; 375px no sideways scroll; Supabase-off keeps the build-time state. The
+series-1 suite (27) and the regression suite (5) are still green. Build clean (495 files), no broken internal
+links, no route collisions.
+
+**Known gap:** the dashboard age pool (rule 10) counts a login set only once it is `live` in the registry
+(`tools/build-syllabus.js`), so a set published self-serve to a Coming-soon slot is playable but not in the pool
+denominator until the registry is edited + rebuilt. Documented in rule 3 and the plan doc; not a blocker.
+
+**Status:** merged to main (PR #76), live on akexplained.com. Future series (UP PGT, UGC NET) are planned for a
+later session — the owner asked (2026-11-14) to record the plan and build them later; see
+`docs/self-serve-publish-plan.md` → "Roadmap". Scratch Playwright tests live only in the session scratchpad.
+
+## Self-serve publish — UP AP Paper 2 mock tests (2026-11-14, SHIPPED — merged to main, PR #75)
+
+**What the owner asked:** after uploading a login paper and marking it **Live** on `/admin/papers/`, it should
+appear on its page **with no rebuild and no Claude**, and this must work for **every series**. Built **one
+series at a time**, starting with the UP Assistant Professor Paper 2 mock tests (already catalog-backed). Design:
+`docs/self-serve-publish-plan.md`; rulebook: new **rule 17** in `CLAUDE.md` (and rules 3, 15, 16 updated).
+
+**How it works now (this series).** The site is static with no service key / Edge Function, so the paper list
+is rendered **in the browser from the live `public.paper_catalog`** (public read is `status = 'live'` only —
+drafts stay hidden; confirmed in the DB: `anon` has SELECT, policy `paper_catalog_public_read` is
+`status = 'live'`). The one approved exception to rule 3's "hub pages stay static".
+- **New `assets/paper-list.js`** — reads the live catalog for a filter (`data-exam-id`, `data-kind`,
+  `data-prefix`, `data-base`, `data-route`, `data-label`, `data-empty` on the hub's card grid) and draws the
+  cards, reusing the guest-lock / Start swap (`data-guest-only` / `data-auth-only` + `refreshHeader`). Waits for
+  `window.akAuth`, reads with the publishable key, and on any failure leaves the **static fallback cards**
+  (the build-time live list) so the page is never blank.
+- **`_data/statePscMockTests.js`** — added a `range` (1..`RANGE_MAX`=30). `test.njk` / `review.njk` now
+  paginate over that fixed range, so `test-1..30` + `test-1..30/review` are pre-built (a static host 404s on an
+  unbuilt path). `tests` (live only) still feeds the sitemap and the static fallback cards.
+- **`_includes/state-psc-cbt.njk`** — the `[data-cbt]` div carries `data-catalog-check="<set_id>"`.
+- **`assets/cbt.js`** — a `boot()` gate: if `data-catalog-check` is present, read the catalog first —
+  live row → `load()` as before (login-gated); checked-and-not-live → `notOpenYet()` ("This test is not open
+  yet", **no login wall**); read failed → **fail-open** to `load()` (a live test is never blocked by a network
+  blip). `applyCatalogMeta` updates the banner count honestly. Pages **without** the attribute are untouched.
+- **`index.njk`** — generic intro line ("take a mock test"), `data-paper-list` on the grid, loads
+  `paper-list.js`. The sitemap (`statePscMockTests.tests`) is unchanged: only live tests.
+
+**Tested.** `npx @11ty/eleventy` builds clean (355 files); all 30 `test-*` routes generated; sitemap lists only
+the 4 live tests; a scratch internal-link scan found no real broken link (the only hits are `{level}` / `NAME`
+template placeholders in pre-existing `data-src` attributes). **Playwright on the built `_site`, Supabase mocked
+(auth storage key `sb-almlqoxcyzwieuwrgwry-auth-token`): 27 checks pass** — guest hub (5 live → 5 padlocks, 0
+Start), student hub (5 Start, 0 padlock), **the proof** (catalog live=[1-4] → 4 cards, Test 5 card gone; live=
+[1-6] → 6 cards incl. "Mock Test 06" — all with no rebuild), guest opens a live test-5 → login wall (not "not
+open yet"), student opens live test-5 → test opens, guest **and** student open not-live test-9 → "not open yet"
+with **no** login wall, not-live `test-20/review` → "not open yet", 375px no horizontal scroll, Supabase-off →
+static fallback (4 cards) remains. **5 regression checks**: a free MCQ set and a UP PGT login mock test (both
+**without** `data-catalog-check`) behave exactly as before. No console errors anywhere.
+
+**Status:** **Merged to main via PR #75 (2026-11-14), live on akexplained.com.** The owner checks the live
+links (a cloud session cannot open the site). The scratch Playwright tests live in the session scratchpad only
+(they vanish with the session), as the repo keeps no committed browser tests.
+
+
+## Mistake-proof upload + Mock Test 4 (2026-11-13, branch `claude/upload-paper-tool`)
+
+- **Mock Test 4 (UP AP Paper 2) is live on main** (PR #70). The owner uploaded it, but it did not appear on the
+  page: its file's `setId` was `up-ap-mock-test-4` (missing the `p2` that Tests 1–3 use), so
+  `_data/statePscMockTests.js` could not match it, and the page is static (built from `_data/paperCatalog.json`,
+  so a DB upload alone never shows). Fix: renamed the rows in Supabase to `up-ap-p2-mock-test-4` (delete-then-insert
+  via the connector, because the validation trigger refuses a direct `set_id` change — it would see the old row as
+  another paper with the same question ids), regenerated `_data/paperCatalog.json`, rebuilt. Four cards now (01–04).
+- **The upload page no longer trusts the file's id** (to stop that happening again). The **Category** dropdown was
+  replaced by a **Where does it go?** step (`_data/paperDestinations.js`, replacing `paperCategories.js`): the owner
+  picks the series (UP AP Paper 2 Mock Test / UP PGT Mock Test / English Literature MCQ set), a number, and an age
+  (for the MCQ set). `assets/upload-paper.js` builds the `set_id` from that and overwrites the file's `setId`,
+  `setNumber`, `examId`, `kind` and `title`; question ids inside are left as supplied. A live preview shows the id
+  ("It will be saved as up-ap-p2-mock-test-5") and the title auto-fills. The id-exists + rev guard now runs against
+  the built id. **39 browser checks pass** (Playwright, Supabase mocked), the key one being that a file whose id is
+  `up-ap-mock-test-99` is saved as `up-ap-p2-mock-test-5` when the owner picks UP AP + number 5.
+- **Still pending (owner asked, 2026-11-13):** a self-serve "publish" so the owner does not need Claude for the last
+  step. Today a new UP AP mock test still needs `tools/sync_catalog.py` + rebuild + merge (static site). The clean
+  fix is to make the mock-test hub + test pages read the live catalog at runtime (changes rule 3's "hub pages stay
+  static"); proposed to the owner, not yet built. Picking more than one category at once: skipped by the owner for now.
+
+## Caroline Set 1 — free, easy and medium (2026-11-13)
+
+- The owner supplied `caroline-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said the questions are already verified. Facts and near-duplicates were not rechecked. Strict structure validation passed with no errors or warnings: 50 unique questions per level, four options per question, valid answers and taxonomy tags.
+- Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Caroline moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 and 3 remain Coming soon.
+- Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link with no lock, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All 21,435 local links and assets resolved.
+
+## Jacobean Set 1 — free, easy and medium (2026-11-13)
+
+- The owner supplied `jacobean-set-1-easy.json` and `-medium.json` (50 questions each), named the existing "Across the whole age" slot, chose **free, no login**, and said the questions are already verified. Facts and near-duplicates were not rechecked. Strict structure validation passed with no errors or warnings: 50 unique questions per level, four options per question, valid answers and taxonomy tags.
+- Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Jacobean moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 to 4 remain Coming soon.
+- Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All internal links and assets on the MCQ index, hub, set, review, build and custom pages resolved.
+
+## Result PDF question summary (2026-11-13, PR #73)
+
+The print rules in `assets/site.css` no longer hide the CBT result page's question-wise grid. Printed
+numbers use visible correct, incorrect and unanswered colours. `npx eleventy` passes. A browser PDF check
+is pending because headless Chromium stalled in this environment and the cloud browser blocked local files.
+Release: PR #73.
 
 ## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
 
@@ -1093,3 +1252,22 @@ count, not which questions, not email, not timing), and how to stay off.
   `PASSWORD_RECOVERY` and reads the link `type`.
 - Identity linking is automatic on a verified email and cannot be switched off — one person, one `user_id`.
 - Migrations are owner-run (rule 9). Test them on a local Postgres first (rule 14).
+
+## NET hub buttons (2026-11-14, on the branch, NOT merged)
+- On `/exams/net/` the three active Paper 2 cards (English Literature MCQs, UGC NET English PYQs, Quick Quizzes) now show a teal "Open" box where the arrow was (`badge` in `_data/netResources.json`, `.net-action-badge` in `assets/net.css`). The English Literature MCQs card is no longer the green primary row. "British Ages Quick MCQs" is now "Quick Quizzes".
+
+## NET hub: Paper 1 Mock Tests card and dark headers (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` Paper 1 box has a third card, **Paper 1 Mock Tests** (Coming soon; `paper-1-mock-tests` in `_data/netResources.json`, its noindex Coming-soon page is built by `coming-soon.njk`). The Paper 1 and Paper 2 box headers are now dark green (`.net-paper-head`, `--teal-dark`) with white text.
+
+## NET hub: resources section in two boxes (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` "Know the exam & get your resources" is now two boxes like the Paper boxes: **Know the exam** (About UGC-NET, View NET Syllabus; group `know`) and **Get your resources** (Download Important Books, Download Complete Syllabus; group `get`) in `_data/netResources.json`. They reuse `.net-paper-grid` / `.net-paper`; the old `.net-resource-grid` CSS is gone.
+
+## Landing page: ages show two rows, "+" opens all (2026-11-14, on the branch, NOT merged)
+- `index.html` "British Literature by Ages" (renamed from "English Literature by Ages", 2026-11-14) shows only the first two rows of age cards (10 on a wide screen, 6 on a tablet, 4 on a phone, by `nth-child` rules in `assets/home.css`); a round "+" button under the grid (`#ageMore`, wired in `renderAges()` in `assets/home.js`) opens all 20 and turns into a "−". If the column counts of `.agegrid` change, change the three `nth-child` limits with them.
+
+## Landing page: Meet the Author photo and button (2026-11-14, on the branch, NOT merged)
+- `index.html` "Meet the Author" uses the owner's new photo `assets/afsar-khan.webp` (cropped from the owner's upload; a stray strip along its top edge was cut off). The old `assets/prof_afsar.png` was removed (nothing else used it). The "Know more about me" button is now a small button in the bottom-right corner of the quote card (`.saysfoot` in `assets/home.css`), on the same row as "— AK". The bio text is unchanged, waiting for the owner's wording.
+
+## Landing page: review strip, and one more rename (2026-11-14)
+- Under the reviews on `index.html`, the pen icon + gold "Write a review" button was replaced by **one thin full-width strip** (`.rvcta` in `assets/site.css`, dark teal with a gold underline) that is the whole link to `/write-a-review/` and reads "Write your review or Share your ideas". The "Write a review" button inside the empty-state card (`home.js`) is unchanged.
+- The card on `/video-lessons/` that links to the timeline is now titled "British Literature by Ages", like the landing page.

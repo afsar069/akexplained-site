@@ -135,6 +135,14 @@
     return problems;
   }
 
+  /* The id a destination + number (+ age) make. The file's own id is ignored, so a wrong id in
+     the file cannot send the paper to the wrong place. */
+  function slugFor(dest, number, age) {
+    if (!dest || !(number >= 1)) return '';
+    if (dest.needsAge) return age ? age + '-set-' + number : '';
+    return dest.prefix + number;
+  }
+
   /* ---------- the page ---------- */
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -146,8 +154,12 @@
     var fileError = el('upFileError');
     var report = el('upReport');
     var details = el('upDetails');
+    var destSelect = el('upDest');
+    var ageWrap = el('upAgeWrap');
+    var ageSelect = el('upAge');
+    var numberInput = el('upNumber');
+    var slugPreview = el('upSlugPreview');
     var titleInput = el('upTitle');
-    var examSelect = el('upExam');
     var statusSelect = el('upStatus');
     var goCard = el('upGo');
     var goError = el('upError');
@@ -158,60 +170,87 @@
 
     var client = null;      // Supabase client, once we know the person is an admin
     var papers = [];        // one per chosen file: { name, body }
-    var existing = [];      // rows already in the table for this set
-    var setId = '';
+    var titleTouched = false;
 
-    function line(kind, text) {
-      return '<li class="' + kind + '">' + esc(text) + '</li>';
-    }
+    function line(kind, text) { return '<li class="' + kind + '">' + esc(text) + '</li>'; }
     function paint(items) { report.innerHTML = items.join(''); }
-
-    function fail(box, text) {
-      if (!box) return;
-      box.textContent = text;
-      show(box);
-    }
+    function fail(box, text) { if (box) { box.textContent = text; show(box); } }
     function clearFail(box) { if (box) { box.textContent = ''; hide(box); } }
+
+    // The destination the owner picked, as a plain object read from the <option>.
+    function currentDest() {
+      var o = destSelect.options[destSelect.selectedIndex];
+      if (!o || !o.value) return null;
+      return {
+        id: o.value,
+        examId: o.getAttribute('data-exam') || '',
+        kind: o.getAttribute('data-kind') || 'mcq-set',
+        prefix: o.getAttribute('data-prefix') || '',
+        needsAge: o.getAttribute('data-needs-age') === 'yes',
+        titleWord: o.getAttribute('data-title-word') || 'Set',
+        autoPage: o.getAttribute('data-auto') === 'yes'
+      };
+    }
+    function currentNumber() {
+      var n = parseInt(numberInput.value, 10);
+      return (n >= 1 && String(n) === String(numberInput.value).trim()) ? n : 0;
+    }
+
+    // Live preview: show the id that will be used, and fill the title unless the owner typed one.
+    function refreshPreview() {
+      var dest = currentDest();
+      var number = currentNumber();
+      var age = ageSelect.value;
+      if (dest && dest.needsAge) { show(ageWrap); } else { hide(ageWrap); }
+
+      var slug = slugFor(dest, number, age);
+      if (!dest) {
+        slugPreview.textContent = '';
+      } else if (!number) {
+        slugPreview.textContent = 'Now type the number.';
+      } else if (dest.needsAge && !age) {
+        slugPreview.textContent = 'Now choose the age.';
+      } else {
+        slugPreview.innerHTML = 'It will be saved as <strong>' + esc(slug) + '</strong>' +
+          (dest.autoPage ? ' — it will show on its page after the site is next built.'
+                         : ' — the questions go live in the database; its page is wired separately.');
+      }
+
+      if (dest && number && !titleTouched) {
+        titleInput.value = dest.titleWord + ' ' + number;
+      }
+    }
+
+    destSelect && destSelect.addEventListener('change', function () { refreshPreview(); });
+    ageSelect && ageSelect.addEventListener('change', function () { refreshPreview(); });
+    numberInput && numberInput.addEventListener('input', function () { refreshPreview(); });
+    titleInput && titleInput.addEventListener('input', function () { titleTouched = true; });
 
     /* --- who is this? --- */
     whenAuth().then(function (auth) {
-      if (!auth || !auth.configured || !auth.client) {
-        notice.textContent = 'You are not allowed to use this page.';
-        return;
-      }
+      if (!auth || !auth.configured || !auth.client) { notice.textContent = 'You are not allowed to use this page.'; return; }
       return auth.session().then(function (s) {
-        if (!s || !s.user) {
-          notice.textContent = 'You are not allowed to use this page.';
-          return;
-        }
+        if (!s || !s.user) { notice.textContent = 'You are not allowed to use this page.'; return; }
         return auth.client.from('paper_admins').select('user_id').maybeSingle()
           .then(function (res) {
-            if (res.error || !res.data) {
-              notice.textContent = 'You are not allowed to use this page.';
-              return;
-            }
+            if (res.error || !res.data) { notice.textContent = 'You are not allowed to use this page.'; return; }
             client = auth.client;
             notice.textContent = 'Signed in as the owner. Choose a question file to begin.';
             show(body);
           });
       });
-    }).catch(function () {
-      notice.textContent = 'You are not allowed to use this page.';
-    });
+    }).catch(function () { notice.textContent = 'You are not allowed to use this page.'; });
 
     /* --- a file was chosen --- */
     filesInput.addEventListener('change', function () {
       clearFail(fileError); clearFail(goError);
       hide(details); hide(goCard); hide(doneCard);
       paint([]);
-      papers = []; existing = []; setId = '';
+      papers = []; titleTouched = false;
 
       var chosen = Array.prototype.slice.call(filesInput.files || []);
       if (!chosen.length) return;
-      if (chosen.length > 3) {
-        fail(fileError, 'Choose at most three files — one for each level.');
-        return;
-      }
+      if (chosen.length > 3) { fail(fileError, 'Choose at most three files — one for each level.'); return; }
 
       paint([line('info', 'Reading ' + chosen.length + ' file(s)…')]);
 
@@ -219,7 +258,7 @@
         return f.text().then(function (text) {
           var parsed = null, err = '';
           try { parsed = JSON.parse(text); } catch (e) { err = e.message || 'it is not readable JSON'; }
-          return { name: f.name, body: parsed, err: err, size: text.length };
+          return { name: f.name, body: parsed, err: err };
         });
       })).then(function (read) {
         var items = [], problems = [];
@@ -247,36 +286,26 @@
           return;
         }
 
-        // every file must be the same set, and each level only once
+        // The files must be one set (same inner id), each level once, same rev. The inner id is a
+        // sanity check that they belong together; it does NOT decide where the paper goes.
         var sets = {}, levels = {};
         papers.forEach(function (p) { sets[p.body.setId] = 1; levels[p.body.level] = (levels[p.body.level] || 0) + 1; });
         if (Object.keys(sets).length > 1) {
           paint(items);
-          fail(fileError, 'These files are for different sets (' + Object.keys(sets).join(', ') + '). Upload one set at a time.');
+          fail(fileError, 'These files look like different sets (' + Object.keys(sets).join(', ') + '). Upload the levels of one set at a time.');
           return;
         }
         var twice = Object.keys(levels).filter(function (l) { return levels[l] > 1; });
-        if (twice.length) {
-          paint(items);
-          fail(fileError, 'Two files say they are the same level (' + twice.join(', ') + ').');
-          return;
-        }
+        if (twice.length) { paint(items); fail(fileError, 'Two files say they are the same level (' + twice.join(', ') + ').'); return; }
         var revs = {};
         papers.forEach(function (p) { revs[String(p.body.rev)] = 1; });
-        if (Object.keys(revs).length > 1) {
-          paint(items);
-          fail(fileError, 'The files are at different revs (' + Object.keys(revs).join(', ') + '). All levels of one set must share a rev.');
-          return;
-        }
+        if (Object.keys(revs).length > 1) { paint(items); fail(fileError, 'The files are at different revs (' + Object.keys(revs).join(', ') + '). All levels of one set must share a rev.'); return; }
 
-        setId = papers[0].body.setId;
-        items.push(line('info', 'Set id: ' + setId + ' · ' + papers.length + ' level(s) · ' +
-          papers.reduce(function (n, p) { return n + p.body.questions.length; }, 0) + ' questions in all.'));
-        items.push(line('info', 'It will be saved as ' +
-          (/mock-test/.test(setId) ? 'a mock test' : 'an MCQ set') + ', login only.'));
+        items.push(line('info', papers.length + ' level(s) · ' +
+          papers.reduce(function (n, p) { return n + p.body.questions.length; }, 0) + ' questions in all · rev ' + papers[0].body.rev + '.'));
         paint(items);
 
-        // the tags, and whether this set is already in the table
+        // Check the tags against the live topic list (this does not need to know where it goes).
         var tags = {};
         papers.forEach(function (p) {
           p.body.questions.forEach(function (q) {
@@ -285,26 +314,17 @@
           });
         });
         var topicIds = [], periodIds = [];
-        Object.keys(tags).forEach(function (k) {
-          if (k.charAt(0) === 't') topicIds.push(tags[k]); else periodIds.push(tags[k]);
-        });
-
+        Object.keys(tags).forEach(function (k) { if (k.charAt(0) === 't') topicIds.push(tags[k]); else periodIds.push(tags[k]); });
         var all = topicIds.concat(periodIds).filter(function (v, i, a) { return a.indexOf(v) === i; });
 
-        Promise.all([
-          client.from('topics').select('id, kind').in('id', all),
-          client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId)
-        ]).then(function (res) {
-          var topicsRes = res[0], mineRes = res[1];
+        client.from('topics').select('id, kind').in('id', all).then(function (res) {
           var known = {};
-          if (!topicsRes.error && topicsRes.data) {
-            topicsRes.data.forEach(function (r) { known[r.id] = r.kind; });
-          }
+          if (!res.error && res.data) res.data.forEach(function (r) { known[r.id] = r.kind; });
           var missingTopics = topicIds.filter(function (id) { return !known[id]; });
           var notPeriods = periodIds.filter(function (id) { return known[id] !== 'period'; });
 
-          if (topicsRes.error) {
-            items.push(line('info', 'Could not check the tags against the topic list: ' + topicsRes.error.message));
+          if (res.error) {
+            items.push(line('info', 'Could not check the tags against the topic list: ' + res.error.message));
           } else if (missingTopics.length) {
             items.push(line('no', 'These topic tags are not in the topic list: ' + missingTopics.slice(0, 8).join(', ') + (missingTopics.length > 8 ? '…' : '')));
           } else if (notPeriods.length) {
@@ -312,47 +332,15 @@
           } else {
             items.push(line('ok', 'All ' + all.length + ' tags are real nodes of the topic list.'));
           }
-
-          existing = (!mineRes.error && mineRes.data) ? mineRes.data : [];
-          var newRev = parseInt(papers[0].body.rev, 10);
-          var highest = existing.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-
-          if (existing.length) {
-            items.push(line('info', 'This set is already in the database: ' +
-              existing.map(function (r) { return r.level + ' (rev ' + r.rev + ', ' + r.status + ')'; }).join(', ') + '.'));
-            var here = papers.map(function (p) { return p.body.level; });
-            var leftOut = existing.filter(function (r) { return here.indexOf(r.level) < 0; });
-            if (leftOut.length) {
-              items.push(line('info', 'You are not replacing the ' +
-                leftOut.map(function (r) { return r.level; }).join(' and ') +
-                ' level, so it stays at its old rev. Upload every level of a set together if you can.'));
-            }
-            if (existing.some(function (r) { return r.status === 'live'; })) {
-              items.push(line('info', 'This set is live now. If you upload it as a Draft, students will not see it until you make it live again.'));
-            }
-            if (!(newRev > highest)) {
-              items.push(line('no', 'To replace it, the file\'s rev must be higher than ' + highest + '. This file says rev ' + newRev + '.'));
-            } else {
-              items.push(line('ok', 'Rev ' + newRev + ' is higher than ' + highest + ', so this upload replaces it.'));
-            }
-          } else {
-            items.push(line('ok', 'This set is new — nothing will be replaced.'));
-          }
-
           paint(items);
 
-          var blocked = missingTopics.length || notPeriods.length || (existing.length && !(newRev > highest));
-          if (blocked) {
+          if (missingTopics.length || notPeriods.length) {
             fail(fileError, 'This file cannot be uploaded yet. Fix what is marked above, or ask for a corrected file.');
             return;
           }
-
-          // fill in the name boxes from the file and let the owner finish
-          titleInput.value = papers[0].body.title || papers[0].body.setName || '';
           show(details);
           show(goCard);
-          summary.textContent = 'Set ' + setId + ' · ' + papers.length + ' level(s) · ' +
-            papers.reduce(function (n, p) { return n + p.body.questions.length; }, 0) + ' questions · rev ' + newRev + '.';
+          refreshPreview();
         }).catch(function (e) {
           paint(items);
           fail(fileError, 'Could not reach the database: ' + (e && e.message ? e.message : 'unknown error'));
@@ -367,87 +355,101 @@
       clearFail(goError);
       if (!client || !papers.length) return;
 
+      var dest = currentDest();
+      var number = currentNumber();
+      var age = ageSelect.value;
       var title = String(titleInput.value || '').trim();
-      var category = String(examSelect.value || '');
-      // The chosen category carries its real exam id in data-exam; the English Literature sets
-      // belong to no exam, so it is empty and no examId is written (paper_catalog.exam_id stays null).
-      var chosen = examSelect.options[examSelect.selectedIndex];
-      var examId = chosen ? String(chosen.getAttribute('data-exam') || '') : '';
       var status = statusSelect.value === 'live' ? 'live' : 'draft';
 
+      if (!dest) { fail(goError, 'Choose where this paper goes (the exam / series).'); return; }
+      if (dest.needsAge && !age) { fail(goError, 'Choose the age for this MCQ set.'); return; }
+      if (!number) { fail(goError, 'Type the test or set number (a whole number, 1 or more).'); return; }
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
-      if (!category) { fail(goError, 'Choose a category.'); return; }
 
-      var kind = /mock-test/.test(setId) ? 'mock-test' : 'mcq-set';
+      var setId = slugFor(dest, number, age);
+      var newRev = parseInt(papers[0].body.rev, 10);
+
+      // Build each level's row, with the id and the catalog fields set from the owner's choice,
+      // not from the file. Question ids inside are left exactly as supplied (they are frozen).
       var rows = papers.map(function (p) {
         var out = {};
         Object.keys(p.body).forEach(function (k) { out[k] = p.body[k]; });
+        out.setId = setId;
+        out.setNumber = number;
         out.title = title;
-        if (examId) { out.examId = examId; } else { delete out.examId; }
-        out.kind = kind;
-        return {
-          set_id: p.body.setId,
-          level: p.body.level,
-          access: 'login',
-          rev: parseInt(p.body.rev, 10),
-          status: status,
-          body: out
-        };
+        out.kind = dest.kind;
+        if (dest.examId) { out.examId = dest.examId; } else { delete out.examId; }
+        return { set_id: setId, level: p.body.level, access: 'login', rev: newRev, status: status, body: out };
       });
 
       goButton.disabled = true;
-      goButton.textContent = 'Uploading…';
+      goButton.textContent = 'Checking…';
 
-      client.from('mcq_papers').upsert(rows, { onConflict: 'set_id,level' })
-        .then(function (res) {
-          if (res.error) throw new Error(res.error.message || 'the database refused it');
-          // read it back and compare the fingerprints
-          return client.from('mcq_papers').select('set_id, level, rev, status, body').eq('set_id', setId);
-        })
-        .then(function (res) {
-          if (res.error) throw new Error(res.error.message || 'could not read it back');
-          var saved = res.data || [];
-          var jobs = rows.map(function (r) {
-            var back = saved.filter(function (s) { return s.level === r.level; })[0];
-            return Promise.all([
-              fingerprint(canonical(r.body)),
-              back ? fingerprint(canonical(back.body)) : Promise.resolve('')
-            ]).then(function (f) {
-              return { level: r.level, sent: f[0], got: f[1], count: (r.body.questions || []).length, back: back };
+      // Is this id already taken? If so, the file's rev must be higher to replace it.
+      client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
+        var existing = (!res.error && res.data) ? res.data : [];
+        var highest = existing.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
+        if (existing.length && !(newRev > highest)) {
+          goButton.disabled = false; goButton.textContent = 'Upload this paper';
+          fail(goError, setId + ' already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
+          return;
+        }
+
+        goButton.textContent = 'Uploading…';
+        client.from('mcq_papers').upsert(rows, { onConflict: 'set_id,level' })
+          .then(function (res2) {
+            if (res2.error) throw new Error(res2.error.message || 'the database refused it');
+            return client.from('mcq_papers').select('set_id, level, rev, status, body').eq('set_id', setId);
+          })
+          .then(function (res3) {
+            if (res3.error) throw new Error(res3.error.message || 'could not read it back');
+            var saved = res3.data || [];
+            var jobs = rows.map(function (r) {
+              var back = saved.filter(function (s) { return s.level === r.level; })[0];
+              return Promise.all([
+                fingerprint(canonical(r.body)),
+                back ? fingerprint(canonical(back.body)) : Promise.resolve('')
+              ]).then(function (f) {
+                return { level: r.level, sent: f[0], got: f[1], count: (r.body.questions || []).length, back: back };
+              });
             });
-          });
-          return Promise.all(jobs);
-        })
-        .then(function (results) {
-          var items = [];
-          var allMatch = true;
-          results.forEach(function (r) {
-            if (r.back && r.sent === r.got) {
-              items.push(line('ok', r.level + ': ' + r.count + ' questions saved, rev ' + r.back.rev + ', ' + r.back.status + '. Code ' + r.sent + '.'));
-            } else {
-              allMatch = false;
-              items.push(line('no', r.level + ': what the database holds does not match the file. Upload it again.'));
+            return Promise.all(jobs);
+          })
+          .then(function (results) {
+            var items = [], allMatch = true;
+            results.forEach(function (r) {
+              if (r.back && r.sent === r.got) {
+                items.push(line('ok', r.level + ': ' + r.count + ' questions saved, rev ' + r.back.rev + ', ' + r.back.status + '. Code ' + r.sent + '.'));
+              } else {
+                allMatch = false;
+                items.push(line('no', r.level + ': what the database holds does not match the file. Upload it again.'));
+              }
+            });
+            if (allMatch) {
+              items.push(line('info', 'Saved as ' + setId + '.'));
+              if (status === 'draft') {
+                items.push(line('info', 'It is a Draft, so students cannot see it yet. Upload it again as Live when its page is ready, or make it live from the All papers page.'));
+              } else if (dest.autoPage) {
+                items.push(line('info', 'It is Live. It will show on its page after the site is next built — tell Claude to publish it, or it appears on the next build.'));
+              } else {
+                items.push(line('info', 'It is Live in the database. Its page still needs wiring — tell Claude to put it on the site.'));
+              }
             }
+            doneReport.innerHTML = items.join('');
+            show(doneCard);
+            goButton.textContent = 'Upload this paper';
+            goButton.disabled = false;
+            doneCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          })
+          .catch(function (e) {
+            fail(goError, 'It was not uploaded. The database said: ' + (e && e.message ? e.message : 'unknown error'));
+            goButton.textContent = 'Upload this paper';
+            goButton.disabled = false;
           });
-          if (allMatch) {
-            items.push(line('info', 'Set id: ' + setId + ' — use this id on the page that shows the test.'));
-            if (status === 'draft') {
-              items.push(line('info', 'It is a Draft, so students cannot see it yet. Come back and upload it again with Status = Live when the pages are ready, or ask for it to be made live.'));
-            } else {
-              items.push(line('info', 'It is Live. A logged-in student can take it as soon as its page is on the site.'));
-            }
-          }
-          doneReport.innerHTML = items.join('');
-          show(doneCard);
-          goButton.textContent = 'Upload this paper';
-          goButton.disabled = false;
-          doneCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        })
-        .catch(function (e) {
-          fail(goError, 'It was not uploaded. The database said: ' + (e && e.message ? e.message : 'unknown error'));
-          goButton.textContent = 'Upload this paper';
-          goButton.disabled = false;
-        });
+      }).catch(function (e) {
+        goButton.disabled = false; goButton.textContent = 'Upload this paper';
+        fail(goError, 'Could not reach the database: ' + (e && e.message ? e.message : 'unknown error'));
+      });
     });
   });
 })();

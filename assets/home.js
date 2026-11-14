@@ -384,6 +384,19 @@
              '<p class="era">' + a.era + '</p>' +
              '<p class="who">' + a.who + '</p></a>';
     }).join('');
+
+    // "+" tab: pehle sirf do line dikhti hain, dabane par saari ages khulti hain (aur "-" se band).
+    const btn = document.getElementById('ageMore');
+    if (!btn) return;
+    btn.hidden = false;
+    btn.addEventListener('click', function () {
+      const open = grid.classList.contains('is-collapsed');
+      grid.classList.toggle('is-collapsed', !open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      const label = open ? 'Show fewer literary ages' : 'Show all literary ages';
+      btn.setAttribute('aria-label', label);
+      btn.title = label;
+    });
   }
 
   /* ---------- Video grid ---------- */

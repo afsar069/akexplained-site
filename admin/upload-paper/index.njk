@@ -51,21 +51,36 @@ permalink: /admin/upload-paper/index.html
     </div>
 
     <div class="authcard" id="upDetails" hidden>
-      <h2>2. Name it</h2>
+      <h2>2. Where does it go?</h2>
+      <p class="small">You choose where this paper belongs. The right id is built from your choice, so the paper always lands in the right place &mdash; even if the file was made with a wrong id.</p>
+      <label class="field">
+        <span>Exam / series</span>
+        <select id="upDest">
+          <option value="">Choose one&hellip;</option>
+          {%- for d in paperDestinations %}
+          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}">{{ d.label }}</option>
+          {%- endfor %}
+        </select>
+      </label>
+      <label class="field" id="upAgeWrap" hidden>
+        <span>Which age?</span>
+        <select id="upAge">
+          <option value="">Choose the age&hellip;</option>
+          {%- for d in paperDestinations %}{% if d.needsAge %}{% for a in d.ages %}
+          <option value="{{ a.slug }}">{{ a.name }}</option>
+          {%- endfor %}{% endif %}{% endfor %}
+        </select>
+      </label>
+      <label class="field">
+        <span>Test / set number</span>
+        <input id="upNumber" type="number" min="1" step="1" inputmode="numeric" autocomplete="off">
+        <span class="hint">For a mock test, its number (for example 5). For an MCQ set, the set number for that age.</span>
+      </label>
+      <p class="small" id="upSlugPreview" aria-live="polite"></p>
       <label class="field">
         <span>Title</span>
         <input id="upTitle" type="text" autocomplete="off">
-        <span class="hint">The name students see on the hub card, for example Mock Test 4. It is taken from the file; change it if you want.</span>
-      </label>
-      <label class="field">
-        <span>Category</span>
-        <select id="upExam">
-          <option value="">Choose one&hellip;</option>
-          {%- for c in paperCategories %}
-          <option value="{{ c.value }}" data-exam="{{ c.examId or '' }}">{{ c.label }}</option>
-          {%- endfor %}
-        </select>
-        <span class="hint">Only exams and sections that already have a page on the site are listed. Pick &ldquo;English Literature MCQ set&rdquo; for a set that is not for one exam.</span>
+        <span class="hint">The name shown for this paper. It is filled in for you from your choice; change it if you want.</span>
       </label>
       <label class="field">
         <span>Status</span>
