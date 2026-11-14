@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-13 (on branch `claude/upload-paper-tool`, not yet merged: the upload page now builds the paper's id from a Where-does-it-go picker, so a file with a wrong id can't land in the wrong place. On main already: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area (notices/papers/students/reviews) and the dashboard bell; the upload-paper tool.)_
+_Last updated: 2026-11-14 (on branch `claude/upload-paper-tool`, not yet merged: the upload page builds the paper's id from a Where-does-it-go picker so a wrong id in the file cannot misplace it, plus the self-serve publish plan in `docs/self-serve-publish-plan.md` for the next session. On main already: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area + dashboard bell; the upload-paper tool; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary via PR #73.)_
 
 ## Mistake-proof upload + Mock Test 4 (2026-11-13, branch `claude/upload-paper-tool`)
 
@@ -26,6 +26,25 @@ _Last updated: 2026-11-13 (on branch `claude/upload-paper-tool`, not yet merged:
   step. Today a new UP AP mock test still needs `tools/sync_catalog.py` + rebuild + merge (static site). The clean
   fix is to make the mock-test hub + test pages read the live catalog at runtime (changes rule 3's "hub pages stay
   static"); proposed to the owner, not yet built. Picking more than one category at once: skipped by the owner for now.
+
+## Caroline Set 1 — free, easy and medium (2026-11-13)
+
+- The owner supplied `caroline-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said the questions are already verified. Facts and near-duplicates were not rechecked. Strict structure validation passed with no errors or warnings: 50 unique questions per level, four options per question, valid answers and taxonomy tags.
+- Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Caroline moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 and 3 remain Coming soon.
+- Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link with no lock, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All 21,435 local links and assets resolved.
+
+## Jacobean Set 1 — free, easy and medium (2026-11-13)
+
+- The owner supplied `jacobean-set-1-easy.json` and `-medium.json` (50 questions each), named the existing "Across the whole age" slot, chose **free, no login**, and said the questions are already verified. Facts and near-duplicates were not rechecked. Strict structure validation passed with no errors or warnings: 50 unique questions per level, four options per question, valid answers and taxonomy tags.
+- Both files were copied unchanged into `assets/questions/`. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Jacobean moved from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js`; the hub was added to `sitemap.njk`, the syllabus count was regenerated, and the UGC NET skill zip was rebuilt. Sets 2 to 4 remain Coming soon.
+- Eleventy built clean. Local guest browser checks passed: Set 1 has a Start link, easy and medium load their supplied first question, a ten-question run starts and opens a ten-question review at each level, and no page errors were seen. All internal links and assets on the MCQ index, hub, set, review, build and custom pages resolved.
+
+## Result PDF question summary (2026-11-13, PR #73)
+
+The print rules in `assets/site.css` no longer hide the CBT result page's question-wise grid. Printed
+numbers use visible correct, incorrect and unanswered colours. `npx eleventy` passes. A browser PDF check
+is pending because headless Chromium stalled in this environment and the cloud browser blocked local files.
+Release: PR #73.
 
 ## Admin area — notices, papers, students, reviews (2026-11-13, branch `claude/upload-paper-tool`)
 

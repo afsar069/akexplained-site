@@ -1,0 +1,873 @@
+{
+  "setId": "jacobean-set-1",
+  "rev": 1,
+  "age": "jacobean",
+  "ageName": "Jacobean Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/jacobean-and-caroline-age/",
+  "notesTitle": "Jacobean and Caroline — the full notes",
+  "topics": {
+    "ground": "The age of James I",
+    "drama": "Drama and the court masque",
+    "poetry": "Donne & Metaphysical poetry",
+    "prose": "Bacon, Burton & the Bible",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions across James I, the King James Bible, Shakespeare, Jonson, Webster, Donne, and Bacon.",
+  "questions": [
+    {
+      "id": "jacobean-set-1-e-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "jacobean-era",
+      "periodId": "jacobean-era",
+      "question": "Which years mark the reign of King James I of England (the Jacobean Age), from his accession after Queen Elizabeth I to his death?",
+      "options": [
+        "1603 to 1625",
+        "1558 to 1603",
+        "1625 to 1649",
+        "1649 to 1660"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Following the death of Queen Elizabeth I in March 1603, James VI of Scotland ascended the English throne as King James I and reigned until his death in 1625, giving his name (from the Latin Jacobus) to the Jacobean Age.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "jacobean-set-1-e-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "jacobean-era",
+      "periodId": "jacobean-era",
+      "question": "Which royal dynasty—founded in Scotland by Robert II in 1371—began ruling England in 1603 when King James VI of Scotland succeeded Queen Elizabeth I as James I of England?",
+      "options": [
+        "The House of Tudor",
+        "The House of Stuart",
+        "The House of Plantagenet",
+        "The House of Hanover"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Tudor dynasty ended with the death of the childless Queen Elizabeth I in 1603, and the Stuart dynasty began ruling England when James VI of Scotland became King James I of England.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "king-james-bible",
+      "periodId": "jacobean-era",
+      "question": "In which year did the newly crowned King James I appoint a committee of forty-seven scholars to prepare a revised English translation of the Bible?",
+      "options": [
+        "1560",
+        "1539",
+        "1604",
+        "1623"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shortly after his accession in 1603, King James I commissioned forty-seven scholars in 1604 to undertake a new revision of the English Bible, which was completed and published in 1611 as the Authorized Version.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "After his accession in 1603, under what new royal title did King James I take William Shakespeare's acting company (formerly the Lord Chamberlain's Men)?",
+      "options": [
+        "The Children of the Chapel",
+        "The Lord Admiral's Men",
+        "Queen Elizabeth's Men",
+        "The King's Men"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In May 1603 King James I took the Lord Chamberlain's Men—in which William Shakespeare was a dramatist, actor, and shareholder—under his direct royal patronage as the King's Men.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "the-white-devil",
+      "periodId": "jacobean-era",
+      "question": "Which Jacobean acting company—under the patronage of the royal consort of King James I—first staged John Webster's tragedy The White Devil at the Red Bull Theatre in Clerkenwell in 1612?",
+      "options": [
+        "Queen Anne's Men",
+        "The Lord Chamberlain's Men",
+        "The Earl of Leicester's Men",
+        "The Children of Paul's"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Webster's tragedy The White Devil was written for and first performed in 1612 at the open-air Red Bull Theatre in Clerkenwell by Queen Anne's Men, the troupe patronized by Queen Anne of Denmark.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-06",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "the-duchess-of-malfi",
+      "periodId": "jacobean-era",
+      "question": "At which roofed indoor London playhouse—used by the King's Men alongside the open-air Globe—was John Webster's tragedy The Duchess of Malfi first privately performed around 1613–1614?",
+      "options": [
+        "The Rose Theatre",
+        "The Blackfriars Theatre",
+        "The Swan Theatre",
+        "The Curtain Theatre"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Webster's tragedy The Duchess of Malfi was first performed privately by the King's Men at the indoor Blackfriars Theatre before also being staged at the Globe.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-07",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "In 1616 King James I granted Ben Jonson an annual royal pension of one hundred marks (about £60), leading literary historians to recognize Jonson as the first unofficial holder of which title?",
+      "options": [
+        "Lord High Chancellor",
+        "Master of the Revels",
+        "Poet Laureate",
+        "Historiographer Royal"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 1616—the same year Ben Jonson published his Folio Workes—King James I granted him a yearly pension of 100 marks, establishing Jonson's status as England's first unofficial Poet Laureate.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-08",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "What famous four-word inscription was carved on the gravestone of the author of Volpone when he was buried in Poets' Corner, Westminster Abbey, in 1637?",
+      "options": [
+        "\"Monarch of English wit\"",
+        "\"Exit pursued by time\"",
+        "\"Sweet Swan of Avon\"",
+        "\"O rare Ben Jonson\""
+      ],
+      "correct_option_id": 3,
+      "explanation": "Upon his death in August 1637, Ben Jonson was buried in Westminster Abbey beneath a stone slab bearing the simple, celebrated inscription 'O rare Ben Jonson'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-09",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In 1621 King James I appointed the poet and royal chaplain John Donne to which prominent church office in London, which he held until his death in 1631?",
+      "options": [
+        "Dean of St. Paul's Cathedral",
+        "Archbishop of Canterbury",
+        "Bishop of Winchester",
+        "Master of the Temple"
+      ],
+      "correct_option_id": 0,
+      "explanation": "After entering the Anglican priesthood in 1615 at the insistence of King James I, John Donne was appointed Dean of St. Paul's Cathedral in 1621, where he delivered his most famous sermons.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-10",
+      "qtype": "chrono",
+      "topic": "ground",
+      "topicId": "jacobean-era",
+      "periodId": "jacobean-era",
+      "question": "Arrange the following historical and literary milestones of the Jacobean Age in chronological order from earliest to latest:\n(A) Accession of James VI of Scotland as King James I of England\n(B) Appointment of the forty-seven scholars by James I to revise the English Bible\n(C) Death of William Shakespeare in Stratford and publication of Ben Jonson's Folio Workes\n(D) Death of King James I and accession of his son Charles I",
+      "options": [
+        "B → A → C → D",
+        "A → B → C → D",
+        "A → C → B → D",
+        "A → B → D → C"
+      ],
+      "correct_option_id": 1,
+      "explanation": "James I ascended the English throne in 1603 (A), appointed the forty-seven Bible translators in 1604 (B), Shakespeare died and Jonson's Folio Workes appeared in 1616 (C), and James I died in 1625, succeeded by Charles I (D).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "jacobean-set-1-e-11",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "othello",
+      "periodId": "jacobean-era",
+      "question": "Which Jacobean tragedy by William Shakespeare is subtitled The Moor of Venice and dramatizes the fatal destruction of Desdemona's marriage on the island of Cyprus?",
+      "options": [
+        "Timon of Athens",
+        "Coriolanus",
+        "Othello",
+        "Antony and Cleopatra"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Composed around 1603–1604, Shakespeare's tragedy Othello is subtitled The Moor of Venice and moves from Venice to Cyprus, where Iago's machinations drive Othello to murder his innocent wife Desdemona.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-12",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "king-lear",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's King Lear, which loyal nobleman—banished in Act I for defending Cordelia—returns in disguise under the name Caius to serve the old king and is put in the stocks by Cornwall and Regan?",
+      "options": [
+        "The Duke of Burgundy",
+        "The Duke of Albany",
+        "The Earl of Gloucester",
+        "The Earl of Kent"
+      ],
+      "correct_option_id": 3,
+      "explanation": "After King Lear banishes him for speaking out on Cordelia's behalf, the loyal Earl of Kent disguises himself as a plain-spoken servant named Caius to continue serving Lear and is placed in the stocks by Cornwall and Regan.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-13",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "macbeth",
+      "periodId": "jacobean-era",
+      "question": "In Act V of Shakespeare's Macbeth, who slays and beheads Macbeth at Dunsinane after revealing that he was 'from his mother's womb / Untimely ripp'd'?",
+      "options": [
+        "Macduff, the Thane of Fife",
+        "Malcolm, the Prince of Cumberland",
+        "Fleance, the son of Banquo",
+        "Lennox, a Scottish nobleman"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Delivered by Caesarean section ('from his mother's womb / Untimely ripp'd'), Macduff, the Thane of Fife, fulfills the second apparition's prophecy that 'none of woman born / Shall harm Macbeth' and beheads the tyrant.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-14",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "antony-and-cleopatra",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's Antony and Cleopatra, which Roman officer and friend of Mark Antony speaks the famous tribute to Cleopatra beginning 'Age cannot wither her, nor custom stale / Her infinite variety'?",
+      "options": [
+        "Marcus Aemilius Lepidus",
+        "Domitius Enobarbus",
+        "Sextus Pompeius",
+        "Octavius Caesar"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Act II, Scene ii of Antony and Cleopatra, Antony's lieutenant Domitius Enobarbus describes Cleopatra on the barge of Cydnus and declares that 'Age cannot wither her, nor custom stale / Her infinite variety'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-15",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-winters-tale",
+      "periodId": "jacobean-era",
+      "question": "In Shakespeare's late romance The Winter's Tale (1611), what name is given to the infant daughter of King Leontes and Queen Hermione of Sicilia, who is abandoned on the coast of Bohemia and raised by a shepherd?",
+      "options": [
+        "Miranda",
+        "Marina",
+        "Perdita",
+        "Imogen"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Named Perdita ('the lost one') because she is cast away as an infant on the shores of Bohemia by Leontes's order, the princess grows up as a shepherdess, falls in love with Prince Florizel, and is reunited with her parents in Sicilia.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-16",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-tempest",
+      "periodId": "jacobean-era",
+      "question": "In Act IV of Shakespeare's The Tempest, which three Roman mythological goddesses are impersonated by Prospero's island spirits in the betrothal masque celebrating the union of Ferdinand and Miranda?",
+      "options": [
+        "Flora, Pomona, and Aurora",
+        "Venus, Diana, and Minerva",
+        "Hecate, Proserpina, and Cynthia",
+        "Iris, Ceres, and Juno"
+      ],
+      "correct_option_id": 3,
+      "explanation": "To bless the betrothal of Ferdinand and Miranda in Act IV, Scene i of The Tempest, Prospero summons Ariel and his fellow spirits to perform a courtly wedding masque in the shapes of Iris (the rainbow messenger), Ceres (harvest), and Juno (marriage).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-17",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-duchess-of-malfi",
+      "periodId": "jacobean-era",
+      "question": "In John Webster's tragedy The Duchess of Malfi, who is the cynical, melancholic ex-galley slave hired by Ferdinand and the Cardinal as a Gentleman of the Horse to spy upon their widowed sister?",
+      "options": [
+        "Daniel de Bosola",
+        "Antonio Bologna",
+        "Count Lodovico",
+        "Flamineo"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Daniel de Bosola is placed in the Duchess's household by her brothers Ferdinand and the Cardinal as anintelligencer; he discovers her secret marriage to her steward Antonio by offering her apricots, carries out her execution, and ultimately avenges her death.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-18",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-white-devil",
+      "periodId": "jacobean-era",
+      "question": "Who is the Venetian lady at the centre of John Webster's 1612 tragedy The White Devil, who marries Paolo Giordano Ursini, Duke of Brachiano, after the murder of her husband Camillo?",
+      "options": [
+        "Giovanna d'Aragona",
+        "Vittoria Corombona",
+        "Beatrice-Joanna",
+        "Bianca Capello"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Subtitled With the Life and Death of Vittoria Corombona the Famous Venetian Curtisan, Webster's The White Devil (1612) dramatizes Vittoria's illicit passion for the Duke of Brachiano, her defiant arraignment before Cardinal Monticelso, and her murder in Padua.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-19",
+      "qtype": "direct",
+      "topic": "drama",
+      "topicId": "the-court-masque",
+      "periodId": "jacobean-era",
+      "question": "Which Queen Consort of England—the wife of King James I—commissioned and danced with her court ladies in Ben Jonson's early court masques such as The Masque of Blackness (1605) and The Masque of Beauty (1608)?",
+      "options": [
+        "Queen Catherine of Aragon",
+        "Queen Henrietta Maria",
+        "Queen Anne of Denmark",
+        "Queen Mary of Modena"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Queen Anne of Denmark, the consort of King James I, was an enthusiastic patron and performer in Jacobean court masques between 1603 and 1611, dancing with her ladies in Ben Jonson and Inigo Jones's The Masque of Blackness (1605), The Masque of Beauty (1608), and The Masque of Queens (1609).",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-e-20",
+      "qtype": "match",
+      "topic": "drama",
+      "topicId": "jacobean-drama",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Jacobean Play) with List II (Dramatist):\n\nList I (Jacobean Play)\n(A) A Woman Killed with Kindness\n(B) A New Way to Pay Old Debts\n(C) The Knight of the Burning Pestle\n(D) A Game at Chess\n\nList II (Dramatist)\n(I) Thomas Heywood\n(II) Philip Massinger\n(III) Francis Beaumont\n(IV) Thomas Middleton",
+      "options": [
+        "A-IV, B-II, C-III, D-I",
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-III, C-II, D-IV",
+        "A-I, B-II, C-III, D-IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Thomas Heywood wrote the domestic tragedy A Woman Killed with Kindness (A-I), Philip Massinger wrote the comedy A New Way to Pay Old Debts (B-II), Francis Beaumont wrote the mock-chivalric burlesque The Knight of the Burning Pestle (C-III), and Thomas Middleton wrote the political satire A Game at Chess (D-IV).",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "jacobean-set-1-e-21",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Whose secret marriage to John Donne in December 1601—without the consent of her father Sir George More—led to Donne's dismissal by Sir Thomas Egerton and brief imprisonment?",
+      "options": [
+        "Anne More",
+        "Elizabeth Drury",
+        "Lucy Harington, Countess of Bedford",
+        "Magdalen Herbert"
+      ],
+      "correct_option_id": 0,
+      "explanation": "While serving as secretary to Lord Keeper Sir Thomas Egerton, John Donne secretly married Egerton's young niece Anne More in 1601; her furious father Sir George More had Donne imprisoned and dismissed from office.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-22",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Which lyric in John Donne's Songs and Sonnets opens with the waking lovers' colloquial question, 'I wonder, by my troth, what thou and I / Did, till we loved'?",
+      "options": [
+        "'The Sun Rising'",
+        "'The Good-Morrow'",
+        "'The Anniversary'",
+        "'Break of Day'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "'The Good-Morrow' opens John Donne's Songs and Sonnets with the speaker marvelling at how childish their lives were before they fell in love, when their 'one little room' became 'an everywhere'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-23",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "In John Donne's cynical lyric beginning 'Go and catch a falling star, / Get with child a mandrake root', what conclusion does the speaker reach even if a traveller rides 'ten thousand days and nights'?",
+      "options": [
+        "Every courtier at Whitehall can easily master alchemy",
+        "True Platonic love outlasts the rise and fall of empires",
+        "No woman in the world remains both faithful and beautiful",
+        "Country shepherds are happier than city merchants"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 'Song: Go and catch a falling star', the speaker declares that a traveller who rides until his hair turns white will swear upon returning that 'No where / Lives a woman true, and fair'—or that even if one were found, she would turn false before a letter was written.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-24",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "the-canonization",
+      "periodId": "jacobean-era",
+      "question": "Which poem by John Donne opens with the exasperated dramatic command 'For God's sake hold your tongue, and let me love, / Or chide my palsy, or my gout'?",
+      "options": [
+        "'The Extasie'",
+        "'The Flea'",
+        "'The Relic'",
+        "'The Canonization'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "'The Canonization' opens abruptly with 'For God's sake hold your tongue, and let me love', rebuking a worldly listener and arguing that the lovers' mutual devotion will canonize them as saints of love.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-25",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "holy-sonnets",
+      "periodId": "jacobean-era",
+      "question": "By what alternative two-word title are John Donne's nineteen religious Holy Sonnets (published posthumously in 1633 and 1635) also known?",
+      "options": [
+        "Divine Meditations",
+        "Noble Numbers",
+        "Sacred Emblems",
+        "Christian Morals"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Donne's nineteen Holy Sonnets—addressing mortality, divine judgment, repentance, and grace—are also titled Divine Meditations (or Divine Sonnets).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-26",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "holy-sonnets",
+      "periodId": "jacobean-era",
+      "question": "With which triumphant paradoxical line does John Donne's Holy Sonnet X ('Death, be not proud, though some have called thee / Mighty and dreadful') conclude?",
+      "options": [
+        "\"Take me to you, imprison me, for I, / Except you enthral me, never shall be free\"",
+        "\"One short sleep past, we wake eternally, / And death shall be no more; Death, thou shalt die\"",
+        "\"At the round earth's imagin'd corners, blow / Your trumpets, Angels, and arise, arise\"",
+        "\"Therefore never send to know for whom the bell tolls; it tolls for thee\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the closing couplet of Holy Sonnet X, Donne defies personified mortality with Christian resurrection: 'One short sleep past, we wake eternally, / And death shall be no more; Death, thou shalt die.'",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-27",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "For which royal wedding on 14 February 1613 did John Donne compose an epithalamion opening 'Hail Bishop Valentine, whose day this is; / All the air is thy diocese'?",
+      "options": [
+        "Prince Charles and Princess Henrietta Maria of France",
+        "King James VI of Scotland and Princess Anne of Denmark",
+        "Princess Elizabeth (daughter of James I) and Frederick, Count Palatine",
+        "King Henry VIII and Anne Boleyn at Whitehall"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Donne wrote 'An Epithalamion, Or Marriage Song on the Lady Elizabeth, and Count Palatine being Married on St. Valentine's Day' for the wedding of King James I's daughter Princess Elizabeth to Frederick V, Elector Palatine, on 14 February 1613.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-28",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "Which famous lyric by Ben Jonson—included in his 1616 collection The Forest and adapted from the Greek prose epistles of Philostratus—opens with the line 'Drink to me only with thine eyes'?",
+      "options": [
+        "'A Hymn to Diana'",
+        "'On My First Son'",
+        "'To Penshurst'",
+        "'Song: To Celia'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ben Jonson's 'Song: To Celia' ('Drink to me only with thine eyes, / And I will pledge with mine') was published in The Forest (1616) and weaves together passages from the Greek love letters of Philostratus.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-29",
+      "qtype": "direct",
+      "topic": "poetry",
+      "topicId": "ben-jonson",
+      "periodId": "jacobean-era",
+      "question": "What collective name was adopted by the younger seventeenth-century poets and dramatists—including Robert Herrick, Thomas Carew, Sir John Suckling, Richard Lovelace, and Richard Brome—who revered Ben Jonson as their literary father?",
+      "options": [
+        "The Sons of Ben (or Tribe of Ben)",
+        "The University Wits",
+        "The School of Spenser",
+        "The Graveyard Poets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The younger Royalist lyricists and playwrights who gathered around Ben Jonson at London taverns and emulated his classical polish, epigrammatic clarity, and wit styled themselves the 'Sons of Ben' or the 'Tribe of Ben'.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-e-30",
+      "qtype": "combination",
+      "topic": "poetry",
+      "topicId": "metaphysical-poetry",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the characteristics and critical reception of Metaphysical poetry?\n(A) Metaphysical poems frequently open with an abrupt, colloquial dramatic address and pursue an analytical argument through paradox and ingenious conceits.\n(B) Sir Walter Scott remarked that 'the Metaphysicals played with thoughts as the Elizabethans had played with words'.\n(C) Metaphysical poets strictly imitated Petrarchan pastoral conventions and avoided all imagery drawn from science, astronomy, alchemy, or theology.\n(D) Leading poets associated with the Metaphysical school include John Donne, George Herbert, Richard Crashaw, Henry Vaughan, Andrew Marvell, and Abraham Cowley.",
+      "options": [
+        "A, B and C only",
+        "A, B and D only",
+        "B, C and D only",
+        "A, C and D only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Statement (C) is false because Metaphysical poets broke away from smooth Elizabethan pastoral conventions and drew heavily on new science, astronomy, geography, alchemy, and scholastic theology for their conceits.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-31",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "bacons-essays",
+      "periodId": "jacobean-era",
+      "question": "What is the subtitle given by Francis Bacon to the expanded 1625 final edition of his fifty-eight Essays?",
+      "options": [
+        "The Proficience of Human Learning",
+        "Places of Persuasion and Dissuasion",
+        "Counsels, Civil and Moral",
+        "Maxims of the Common Law"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The final 1625 edition of Francis Bacon's fifty-eight essays was published under the full title The Essayes or Counsels, Civill and Morall.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-32",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Under King James I, Francis Bacon rose through the legal offices of Solicitor General (1607), Attorney General (1613), and Lord Keeper (1617) to reach which highest state office in 1618, along with the peerages of Baron Verulam and Viscount St. Albans?",
+      "options": [
+        "Archbishop of York",
+        "Lord High Treasurer of England",
+        "Speaker of the House of Commons",
+        "Lord High Chancellor of England"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 1618 Francis Bacon was appointed Lord High Chancellor of England and created Baron Verulam (and Viscount St. Albans in 1621), holding the highest judicial office until his parliamentary impeachment in 1621.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-33",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "What Latin title—meaning 'The Great Renewal' and modelled on the six days of Creation—did Francis Bacon give to his vast, unfinished six-part scheme for the total reconstruction of human knowledge?",
+      "options": [
+        "Instauratio Magna",
+        "De Sapientia Veterum",
+        "Meditationes Sacrae",
+        "Historia Vitae et Mortis"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Francis Bacon designed his comprehensive six-part philosophical project as the Instauratio Magna ('The Great Instauration' or 'Great Renewal'), of which The Advancement of Learning and Novum Organum formed the first two parts.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-34",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "novum-organum",
+      "periodId": "jacobean-era",
+      "question": "Which method of scientific inquiry—proceeding from particular empirical observations and experiments to general axioms, in opposition to Aristotelian deductive syllogism—did Francis Bacon champion in Novum Organum (1620)?",
+      "options": [
+        "The scholastic deductive syllogism",
+        "The inductive method of reasoning",
+        "The Platonic doctrine of innate forms",
+        "The Cartesian method of pure geometry"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Novum Organum (1620), Francis Bacon rejected Aristotle's deductive syllogism (Organon) and introduced the inductive method of reasoning based on systematic observation, experimentation, and exclusion.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-35",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "francis-bacon",
+      "periodId": "jacobean-era",
+      "question": "Which 1609 Latin treatise by Francis Bacon (De Sapientia Veterum) interprets thirty-one ancient Greek myths and fables as allegories concealing moral, political, and scientific truths?",
+      "options": [
+        "The History of Life and Death",
+        "The Advancement of Learning",
+        "The Wisdom of the Ancients",
+        "The Colours of Good and Evil"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Published in Latin in 1609 as De Sapientia Veterum and dedicated to the Earl of Salisbury and the University of Cambridge, Francis Bacon's The Wisdom of the Ancients expounds the hidden philosophical meanings of classical Greek myths.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-36",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Which 1610 polemical prose tract—John Donne's first published book—argued that English Roman Catholics could in good conscience take the Oath of Allegiance to King James I without throwing away their lives as false martyrs?",
+      "options": [
+        "Essays in Divinity",
+        "Biathanatos",
+        "Devotions upon Emergent Occasions",
+        "Pseudo-Martyr"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Published in 1610, Pseudo-Martyr was John Donne's first printed book, written to persuade English Roman Catholics to take the civil Oath of Allegiance to King James I.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-37",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-donne",
+      "periodId": "jacobean-era",
+      "question": "Which posthumously published prose treatise by John Donne (composed c. 1608) presents a learned, casuistical inquiry into whether self-homicide (suicide) is so naturally a sin that it can never be otherwise?",
+      "options": [
+        "Biathanatos",
+        "Ignatius His Conclave",
+        "Pseudo-Martyr",
+        "Death's Duell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Composed around 1608 and published posthumously by his son, John Donne's Biathanatos examines biblical and philosophical precedents to argue paradoxically that self-sacrifice is not in every case a sin against natural law.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-38",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "john-florio",
+      "periodId": "jacobean-era",
+      "question": "Which Anglo-Italian lexicographer and royal tutor at the court of James I published the celebrated 1603 English translation of Michel de Montaigne's Essais that influenced both Shakespeare and Bacon?",
+      "options": [
+        "Sir Thomas North",
+        "John Florio",
+        "Philemon Holland",
+        "Arthur Golding"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Florio, reader in Italian to Queen Anne of Denmark at the court of James I, published his influential English translation of Montaigne's Essais in 1603.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-39",
+      "qtype": "direct",
+      "topic": "prose",
+      "topicId": "walter-raleigh",
+      "periodId": "jacobean-era",
+      "question": "Which imprisoned Elizabethan and Jacobean courtier wrote the unfinished prose monument The History of the World (published in 1614) for Henry, Prince of Wales, while confined in the Tower of London under King James I?",
+      "options": [
+        "Sir Fulke Greville",
+        "Sir Francis Drake",
+        "Sir Walter Raleigh",
+        "Sir Henry Wotton"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Imprisoned in the Tower of London by King James I in 1603 on charges of treason, Sir Walter Raleigh composed The History of the World (1614) for James I's eldest son, Henry, Prince of Wales, before being executed in 1618.",
+      "src": "user-supplied: Upkar's UGC NET/JRF/SET English"
+    },
+    {
+      "id": "jacobean-set-1-e-40",
+      "qtype": "combination",
+      "topic": "prose",
+      "topicId": "king-james-bible",
+      "periodId": "jacobean-era",
+      "question": "Which of the following statements accurately describe the 1611 Authorized Version of the Bible (the King James Bible) and its place in English prose?\n(A) Appointed by King James I in 1604, forty-seven scholars completed the translation that was published in 1611.\n(B) Its rhythmic, unadorned prose drew deeply on the earlier English translations of William Tyndale and Miles Coverdale rather than the artificial conceits of Euphuism.\n(C) Its translators rejected the Hebrew and Greek scriptures and translated exclusively from John Lyly's Euphues.\n(D) The New Testament contains twenty-seven books originally written in Koine Greek, while the Old Testament preserves the Hebrew scriptures.",
+      "options": [
+        "A, C and D only",
+        "A, B and C only",
+        "B, C and D only",
+        "A, B and D only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Statement (C) is false because the forty-seven scholars translated from the original Hebrew and Koine Greek texts while building on the English prose tradition of Tyndale, Coverdale, and earlier Tudor Bibles.",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-41",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "the-court-masque",
+      "periodId": "jacobean-era",
+      "question": "Which spectacular indoor entertainment of the Stuart court—combining poetic drama, music, song, allegorical mythology, costly stage machinery, and a final dance joining disguised courtiers with the audience—was ended by the Civil War of the 1640s?",
+      "options": [
+        "The court masque",
+        "The morality play",
+        "The mystery cycle",
+        "The heroic tragedy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Flourishing at the courts of James I and Charles I through the collaboration of Ben Jonson and Inigo Jones, the court masque combined poetry, music, dance, lavish costume, and stage machinery before the Puritan Revolution of the 1640s ended it.",
+      "src": "user-supplied: Literary Movements — Renaissance to Cavalier Poets"
+    },
+    {
+      "id": "jacobean-set-1-e-42",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "metaphysical-conceit",
+      "periodId": "jacobean-era",
+      "question": "What literary term denotes an ingenious, logically complex extended comparison—characteristic of John Donne and his followers—that yokes together two radically dissimilar images or ideas, such as parted lovers and a pair of compasses?",
+      "options": [
+        "The Homeric epic simile",
+        "The metaphysical conceit",
+        "The pastoral elegy",
+        "The Horatian epode"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Unlike the conventional sensual comparisons of the Petrarchan sonnet, the metaphysical conceit fuses sensory and abstract ideas in a surprising, intellectually complex extended metaphor, such as Donne's twin compasses in 'A Valediction: Forbidding Mourning'.",
+      "src": "user-supplied: A Glossary of Poetic Terms"
+    },
+    {
+      "id": "jacobean-set-1-e-43",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "john-dryden",
+      "periodId": "jacobean-era",
+      "question": "Which Restoration poet and critic was the first to apply the word 'metaphysics' to John Donne's poetry in 1693, observing that 'he affects the metaphysics, not only in his satires, but in his amorous verses'?",
+      "options": [
+        "Samuel Johnson",
+        "Alexander Pope",
+        "John Dryden",
+        "Joseph Addison"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In A Discourse Concerning the Original and Progress of Satire (1693), John Dryden first used the term in connection with Donne, remarking that 'Donne affects the metaphysics, not only in his satires, but in his amorous verses, where nature only should reign'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-44",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "thomas-carew",
+      "periodId": "jacobean-era",
+      "question": "Which Cavalier poet—a disciple of both Ben Jonson and John Donne—praised Donne in a famous 1633 funeral elegy as a king who ruled as sees 'the universal monarchy of wit'?",
+      "options": [
+        "Edmund Waller",
+        "Sir John Suckling",
+        "Richard Lovelace",
+        "Thomas Carew"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 'An Elegy upon the Death of the Dean of Paul's, Dr. John Donne' (printed in the 1633 edition of Donne's Poems), Thomas Carew hailed Donne with the famous couplet: 'Here lies a king, that ruled as he thought fit / The universal monarchy of wit.'",
+      "src": "user-supplied: A Brief History of British Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-45",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "samuel-taylor-coleridge",
+      "periodId": "jacobean-era",
+      "question": "Which Romantic poet and critic coined the famous phrase 'the motive-hunting of motiveless malignity' to describe Iago's final soliloquy in Act I, Scene iii of Shakespeare's Othello?",
+      "options": [
+        "Samuel Taylor Coleridge",
+        "William Wordsworth",
+        "Percy Bysshe Shelley",
+        "Matthew Arnold"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In his marginalia and lectures on Shakespeare, Samuel Taylor Coleridge famously described Iago's soliloquy at the end of Act I of Othello as 'the motive-hunting of motiveless malignity'.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-46",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "charles-lamb",
+      "periodId": "jacobean-era",
+      "question": "Which Romantic essayist argued in 'On the Tragedies of Shakespeare' (1811) that Shakespeare's King Lear 'is essentially impossible to be represented on a stage'?",
+      "options": [
+        "William Hazlitt",
+        "Charles Lamb",
+        "Leigh Hunt",
+        "Walter Pater"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In his 1811 essay 'On the Tragedies of Shakespeare, Considered with Reference to Their Fitness for Stage Representation', Charles Lamb contended that the spiritual grandeur of King Lear's mind cannot be acted or staged.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-47",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "thomas-de-quincey",
+      "periodId": "jacobean-era",
+      "question": "Which Romantic prose writer authored the celebrated 1823 psychological essay 'On the Knocking at the Gate in Macbeth', analysing the Porter scene immediately after the murder of King Duncan?",
+      "options": [
+        "John Ruskin",
+        "Thomas Carlyle",
+        "Thomas De Quincey",
+        "Walter Savage Landor"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 'On the Knocking at the Gate in Macbeth' (published in the London Magazine in October 1823), Thomas De Quincey explained how the loud knocking after Duncan's murder marks the resumption of the ordinary human world after a suspension of nature.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-48",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "a-c-bradley",
+      "periodId": "jacobean-era",
+      "question": "Which literary critic published the landmark 1904 study Shakespearean Tragedy: Lectures on Hamlet, Othello, King Lear, Macbeth, examining character and the tragic flaw?",
+      "options": [
+        "E. M. W. Tillyard",
+        "G. Wilson Knight",
+        "F. R. Leavis",
+        "A. C. Bradley"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A. C. Bradley's Shakespearean Tragedy (1904) established character-based analysis of Shakespeare's four great tragedies—Hamlet, Othello, King Lear, and Macbeth—and their protagonists' fatal flaws.",
+      "src": "user-supplied: Easy Handbook for NET English Literature"
+    },
+    {
+      "id": "jacobean-set-1-e-49",
+      "qtype": "direct",
+      "topic": "terms",
+      "topicId": "shakespeares-romances",
+      "periodId": "jacobean-era",
+      "question": "By what collective genre label do modern critics and editors classify Shakespeare's four late plays of tempest, loss, and miraculous family reunion—Pericles, Cymbeline, The Winter's Tale, and The Tempest?",
+      "options": [
+        "The Late Romances (or Dramatic Romances)",
+        "The Early Chronicle Histories",
+        "The Senecan Revenge Tragedies",
+        "The Restoration Heroic Plays"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Although grouped among the Comedies and Tragedies in the 1623 First Folio (which omitted Pericles), Pericles, Cymbeline, The Winter's Tale, and The Tempest are classified by modern critics (following Edward Dowden) as Shakespeare's Late Romances.",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    },
+    {
+      "id": "jacobean-set-1-e-50",
+      "qtype": "match",
+      "topic": "terms",
+      "topicId": "william-shakespeare",
+      "periodId": "jacobean-era",
+      "question": "Match List I (Twentieth-Century Novel Title) with List II (Shakespearean Jacobean Play from Which the Title Is Taken):\n\nList I (Twentieth-Century Novel Title)\n(A) William Faulkner's The Sound and the Fury\n(B) Aldous Huxley's Brave New World\n(C) Vladimir Nabokov's Pale Fire\n(D) Eric Linklater's Ripeness Is All\n\nList II (Shakespearean Jacobean Play)\n(I) Macbeth\n(II) The Tempest\n(III) Timon of Athens\n(IV) King Lear",
+      "options": [
+        "A-II, B-I, C-IV, D-III",
+        "A-I, B-II, C-III, D-IV",
+        "A-I, B-III, C-II, D-IV",
+        "A-IV, B-II, C-III, D-I"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Faulkner's The Sound and the Fury comes from Macbeth's 'Tomorrow, and tomorrow, and tomorrow' soliloquy (A-I), Huxley's Brave New World from Miranda's exclamation in The Tempest (B-II), Nabokov's Pale Fire from Timon of Athens (C-III), and Linklater's Ripeness Is All from Edgar in King Lear (D-IV).",
+      "src": "user-supplied: World Literature in Your Fist (3rd edn)"
+    }
+  ]
+}
