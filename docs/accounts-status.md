@@ -4,7 +4,51 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14 (on branch `claude/upload-paper-tool`, not yet merged: the upload page builds the paper's id from a Where-does-it-go picker so a wrong id in the file cannot misplace it, plus the self-serve publish plan in `docs/self-serve-publish-plan.md` for the next session. On main already: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area + dashboard bell; the upload-paper tool; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary via PR #73.)_
+_Last updated: 2026-11-14 (on branch `claude/affectionate-brown-ahs63h`, not yet merged: **self-serve publish for the UP Assistant Professor Paper 2 mock tests** — see the section right below. Earlier work now on main: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary via PR #73.)_
+
+## Self-serve publish — UP AP Paper 2 mock tests (2026-11-14, branch `claude/affectionate-brown-ahs63h`, NOT merged)
+
+**What the owner asked:** after uploading a login paper and marking it **Live** on `/admin/papers/`, it should
+appear on its page **with no rebuild and no Claude**, and this must work for **every series**. Built **one
+series at a time**, starting with the UP Assistant Professor Paper 2 mock tests (already catalog-backed). Design:
+`docs/self-serve-publish-plan.md`; rulebook: new **rule 17** in `CLAUDE.md` (and rules 3, 15, 16 updated).
+
+**How it works now (this series).** The site is static with no service key / Edge Function, so the paper list
+is rendered **in the browser from the live `public.paper_catalog`** (public read is `status = 'live'` only —
+drafts stay hidden; confirmed in the DB: `anon` has SELECT, policy `paper_catalog_public_read` is
+`status = 'live'`). The one approved exception to rule 3's "hub pages stay static".
+- **New `assets/paper-list.js`** — reads the live catalog for a filter (`data-exam-id`, `data-kind`,
+  `data-prefix`, `data-base`, `data-route`, `data-label`, `data-empty` on the hub's card grid) and draws the
+  cards, reusing the guest-lock / Start swap (`data-guest-only` / `data-auth-only` + `refreshHeader`). Waits for
+  `window.akAuth`, reads with the publishable key, and on any failure leaves the **static fallback cards**
+  (the build-time live list) so the page is never blank.
+- **`_data/statePscMockTests.js`** — added a `range` (1..`RANGE_MAX`=30). `test.njk` / `review.njk` now
+  paginate over that fixed range, so `test-1..30` + `test-1..30/review` are pre-built (a static host 404s on an
+  unbuilt path). `tests` (live only) still feeds the sitemap and the static fallback cards.
+- **`_includes/state-psc-cbt.njk`** — the `[data-cbt]` div carries `data-catalog-check="<set_id>"`.
+- **`assets/cbt.js`** — a `boot()` gate: if `data-catalog-check` is present, read the catalog first —
+  live row → `load()` as before (login-gated); checked-and-not-live → `notOpenYet()` ("This test is not open
+  yet", **no login wall**); read failed → **fail-open** to `load()` (a live test is never blocked by a network
+  blip). `applyCatalogMeta` updates the banner count honestly. Pages **without** the attribute are untouched.
+- **`index.njk`** — generic intro line ("take a mock test"), `data-paper-list` on the grid, loads
+  `paper-list.js`. The sitemap (`statePscMockTests.tests`) is unchanged: only live tests.
+
+**Tested.** `npx @11ty/eleventy` builds clean (355 files); all 30 `test-*` routes generated; sitemap lists only
+the 4 live tests; a scratch internal-link scan found no real broken link (the only hits are `{level}` / `NAME`
+template placeholders in pre-existing `data-src` attributes). **Playwright on the built `_site`, Supabase mocked
+(auth storage key `sb-almlqoxcyzwieuwrgwry-auth-token`): 27 checks pass** — guest hub (5 live → 5 padlocks, 0
+Start), student hub (5 Start, 0 padlock), **the proof** (catalog live=[1-4] → 4 cards, Test 5 card gone; live=
+[1-6] → 6 cards incl. "Mock Test 06" — all with no rebuild), guest opens a live test-5 → login wall (not "not
+open yet"), student opens live test-5 → test opens, guest **and** student open not-live test-9 → "not open yet"
+with **no** login wall, not-live `test-20/review` → "not open yet", 375px no horizontal scroll, Supabase-off →
+static fallback (4 cards) remains. **5 regression checks**: a free MCQ set and a UP PGT login mock test (both
+**without** `data-catalog-check`) behave exactly as before. No console errors anywhere.
+
+**Pending:** merge to `main` is the owner's call (rule 5) — a cloud session cannot open akexplained.com, so the
+owner checks the live links after merge. Then convert UP PGT, then the English Literature login MCQ sets (decide
+the richer-card question with the owner first). The scratch Playwright tests live in the session scratchpad only
+(they vanish with the session), as the repo keeps no committed browser tests.
+
 
 ## Mistake-proof upload + Mock Test 4 (2026-11-13, branch `claude/upload-paper-tool`)
 

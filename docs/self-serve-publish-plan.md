@@ -1,4 +1,15 @@
-# Self-serve publish — plan for the next session
+# Self-serve publish — plan (series 1 of 3 shipped on the branch)
+
+> **Progress (2026-11-14):** **UP Assistant Professor Paper 2 mock tests — BUILT and tested on branch
+> `claude/affectionate-brown-ahs63h`, not yet merged.** The design below is implemented exactly:
+> `assets/paper-list.js` (runtime hub cards from the live catalog), `statePscMockTests.range` (pre-built
+> `test-1..30` + review routes), and a `data-catalog-check` gate in `assets/cbt.js` (live → opens login-gated;
+> not-live → "This test is not open yet", no login wall; read-fail → fail-open). Rules 3, 15, 16 and the new
+> **rule 17** in `CLAUDE.md` record it. 27 Playwright checks pass (guest/student × live/not-live, the
+> draft-hides / live-shows proof, 375px, Supabase-off fallback) + 5 regression checks on untouched series.
+> **Still to do (one at a time, each its own branch + merge):** UP PGT login mock tests, then the English
+> Literature login MCQ sets (decide the card-richness question with the owner — see "Per series" below).
+
 
 **Owner's ask (2026-11-13 / 2026-11-14):** after the owner uploads a paper at `/admin/upload-paper/` and marks
 it **Live**, it should appear on its page **with no rebuild and no Claude** — and this must work for **every
