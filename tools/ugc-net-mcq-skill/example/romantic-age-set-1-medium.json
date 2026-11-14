@@ -1,0 +1,363 @@
+{
+  "setId": "romantic-age-set-1",
+  "rev": 1,
+  "age": "romantic-age",
+  "ageName": "Romantic Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/romantic-age/",
+  "notesTitle": "Romantic Age — the full notes",
+  "topics": {
+    "first": "The first generation",
+    "second": "The second generation",
+    "novel": "The novel",
+    "prose": "Essays and criticism",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Conceptual questions, dates and combinations on the Romantic poets, the novel and the critics.",
+  "questions": [
+    {
+      "id": "romantic-age-set-1-m-01",
+      "question": "Which novel, published anonymously in 1814, began Sir Walter Scott's long series of historical novels?",
+      "options": [
+        "Waverley",
+        "Ivanhoe",
+        "Rob Roy",
+        "Kenilworth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Scott published Waverley without his name in 1814. It was an instant success and the first of the Waverley novels.",
+      "topic": "novel",
+      "topicId": "waverley",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Waverley-novel-by-Scott"
+    },
+    {
+      "id": "romantic-age-set-1-m-02",
+      "question": "In which verse form is Wordsworth's The Prelude written?",
+      "options": [
+        "Heroic couplets",
+        "Blank verse",
+        "Ballad stanza",
+        "Rhyme royal"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Prelude is an autobiographical epic poem in blank verse, that is, unrhymed iambic pentameter.",
+      "topic": "terms",
+      "topicId": "blank-verse",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/The-Prelude"
+    },
+    {
+      "id": "romantic-age-set-1-m-03",
+      "question": "How many cantos of Don Juan had Byron completed when he left the poem unfinished?",
+      "options": [
+        "8",
+        "12",
+        "16",
+        "24"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Byron left Don Juan unfinished at his death, with sixteen cantos completed.",
+      "topic": "terms",
+      "topicId": "don-juan",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Don-Juan-poem-by-Byron"
+    },
+    {
+      "id": "romantic-age-set-1-m-04",
+      "question": "Where did William Wordsworth die?",
+      "options": [
+        "Dove Cottage",
+        "Alfoxden House",
+        "Allan Bank",
+        "Rydal Mount"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wordsworth died at Rydal Mount, his home in the Lake District, in 1850.",
+      "topic": "terms",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/biography/William-Wordsworth"
+    },
+    {
+      "id": "romantic-age-set-1-m-05",
+      "question": "In 1794 Blake paired his poems of childhood with a darker group of poems. What was the combined volume called?",
+      "options": [
+        "Poetical Sketches",
+        "Songs of Innocence and of Experience",
+        "The Marriage of Heaven and Hell",
+        "Jerusalem"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1794 Blake published Songs of Innocence and of Experience. It reissued the earlier songs and added a darker group, the Songs of Experience.",
+      "topic": "first",
+      "topicId": "william-blake",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Songs-of-Innocence"
+    },
+    {
+      "id": "romantic-age-set-1-m-06",
+      "question": "Which ode by Keats sets visionary happiness against human grief, sickness and the passing of youth and beauty?",
+      "options": [
+        "Ode to Psyche",
+        "To Autumn",
+        "Ode to a Nightingale",
+        "Ode on Indolence"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In Ode to a Nightingale the bird's song suggests visionary happiness. Keats sets it against human grief, sickness and the fading of youth and beauty.",
+      "topic": "second",
+      "topicId": "ode-to-a-nightingale",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/biography/John-Keats"
+    },
+    {
+      "id": "romantic-age-set-1-m-07",
+      "question": "Which essay by Shelley contains the line 'Poets are the unacknowledged legislators of the world'?",
+      "options": [
+        "A Defence of Poetry",
+        "Biographia Literaria",
+        "Preface to Lyrical Ballads",
+        "The Four Ages of Poetry"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The line comes from Shelley's A Defence of Poetry, which argues that poets create the values and imaginative forms that shape society.",
+      "topic": "prose",
+      "topicId": "a-defence-of-poetry",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/A-Defence-of-Poetry"
+    },
+    {
+      "id": "romantic-age-set-1-m-08",
+      "question": "In the Preface to Lyrical Ballads, Wordsworth says that good poetry is the spontaneous overflow of what?",
+      "options": [
+        "classical learning",
+        "careful argument",
+        "public opinion",
+        "powerful feelings"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the Preface of 1800 Wordsworth writes that all good poetry is the spontaneous overflow of powerful feelings.",
+      "topic": "prose",
+      "topicId": "preface-to-lyrical-ballads",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Preface_to_the_Lyrical_Ballads"
+    },
+    {
+      "id": "romantic-age-set-1-m-09",
+      "question": "In Biographia Literaria, Coleridge distinguishes fancy from which other power of the mind?",
+      "options": [
+        "Memory",
+        "Imagination",
+        "Judgement",
+        "Sensibility"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Biographia Literaria sets out Coleridge's distinction between fancy and imagination. Throughout the book he shows great respect for the power of imagination.",
+      "topic": "prose",
+      "topicId": "biographia-literaria",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Biographia-Literaria"
+    },
+    {
+      "id": "romantic-age-set-1-m-10",
+      "question": "Kubla Khan survives as a fragment of how many lines?",
+      "options": [
+        "54",
+        "120",
+        "200",
+        "300"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Kubla Khan survives as a fragment of 54 lines. Coleridge said that he composed several hundred lines in a dream but could remember only this part.",
+      "topic": "terms",
+      "topicId": "kubla-khan",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Kubla-Khan"
+    },
+    {
+      "id": "romantic-age-set-1-m-11",
+      "question": "Which poet does Wordsworth name only as 'a Friend' in the Preface to Lyrical Ballads?",
+      "options": [
+        "Robert Southey",
+        "Charles Lamb",
+        "Samuel Taylor Coleridge",
+        "William Blake"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In the Preface Wordsworth refers to Coleridge only as 'a Friend', without naming him.",
+      "topic": "prose",
+      "topicId": "samuel-taylor-coleridge",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/topic/Lyrical-Ballads"
+    },
+    {
+      "id": "romantic-age-set-1-m-12",
+      "question": "At which villa near Geneva did Byron, Percy Shelley and Mary Godwin hold a ghost-story contest?",
+      "options": [
+        "Villa Borghese",
+        "Villa Medici",
+        "Villa Capponi",
+        "Villa Diodati"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The contest took place at Villa Diodati, Byron's mansion near Lake Geneva, when bad weather kept the group indoors.",
+      "topic": "novel",
+      "topicId": "frankenstein",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "https://www.britannica.com/event/Haunted-Summer-of-1816"
+    },
+    {
+      "id": "romantic-age-set-1-m-13",
+      "question": "Consider the following statements regarding Lyrical Ballads:\nI. The first edition was published anonymously.\nII. The first edition contained poems by both Wordsworth and Coleridge.\nIII. Wordsworth's 'Tintern Abbey' opened the first edition.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The first edition appeared anonymously with poems by both poets. Statement III is false because Coleridge's 'The Rime of the Ancient Mariner' opened the volume and 'Tintern Abbey' closed it.",
+      "topic": "first",
+      "topicId": "lyrical-ballads",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://www.britannica.com/topic/Lyrical-Ballads"
+    },
+    {
+      "id": "romantic-age-set-1-m-14",
+      "question": "Given below are two statements:\nStatement I: Jane Austen's Pride and Prejudice was published in January 1813.\nStatement II: The first version of Pride and Prejudice, written in 1796–97, was titled Sense and Sensibility.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pride and Prejudice was published in January 1813. Statement II is false because its first version, written in 1796–97, was titled First Impressions.",
+      "topic": "novel",
+      "topicId": "pride-and-prejudice",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://www.britannica.com/question/When-was-Pride-and-Prejudice-written"
+    },
+    {
+      "id": "romantic-age-set-1-m-15",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Blake could print his Songs of Innocence without a commercial printer.\nReason (R): He devised illuminated printing, in which words and pictures were etched together on copper plates.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is false, but (R) is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Blake etched both text and pictures onto copper plates himself, so he could be his own printer. Illuminated printing therefore explains why he needed no commercial printer.",
+      "topic": "first",
+      "topicId": "william-blake",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://www.britannica.com/topic/Songs-of-Innocence"
+    },
+    {
+      "id": "romantic-age-set-1-m-16",
+      "question": "Consider the following statements regarding John Keats:\nI. He wrote his greatest poetry in 1819.\nII. He died in Rome.\nIII. He died at the age of twenty-five.\nIV. He died of cholera.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and IV only",
+        "II, III and IV only",
+        "I, III and IV only",
+        "I, II and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Keats wrote his greatest poetry in 1819 and died of tuberculosis in Rome in 1821, aged twenty-five. Statement IV is false because the cause of death was tuberculosis.",
+      "topic": "second",
+      "topicId": "john-keats",
+      "periodId": "romantic",
+      "qtype": "combination",
+      "src": "https://www.britannica.com/biography/John-Keats"
+    },
+    {
+      "id": "romantic-age-set-1-m-17",
+      "question": "Arrange the following events in the life of William Wordsworth in the correct chronological order:\n1. He becomes Poet Laureate.\n2. The Prelude is published.\n3. The first edition of Lyrical Ballads appears.\n4. Lyrical Ballads is reissued with a Preface.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "3, 4, 1, 2",
+        "3, 4, 2, 1",
+        "4, 3, 2, 1"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The first edition of Lyrical Ballads appeared in 1798 and the second edition, with the Preface, in 1800. Wordsworth became Poet Laureate in 1843, and The Prelude was published in 1850 after his death.",
+      "topic": "first",
+      "topicId": "william-wordsworth",
+      "periodId": "romantic",
+      "qtype": "chrono",
+      "src": "https://www.britannica.com/biography/William-Wordsworth"
+    },
+    {
+      "id": "romantic-age-set-1-m-18",
+      "question": "Arrange the following events in the correct chronological order:\n1. Byron dies at Missolonghi.\n2. Canto III of Childe Harold's Pilgrimage is published.\n3. Cantos I and II of Childe Harold's Pilgrimage are published.\n4. Canto IV of Childe Harold's Pilgrimage is published.\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 4, 1",
+        "3, 2, 1, 4",
+        "3, 4, 2, 1",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Cantos I and II appeared in 1812, Canto III in 1816 and Canto IV in 1818. Byron died at Missolonghi in 1824.",
+      "topic": "second",
+      "topicId": "lord-byron",
+      "periodId": "romantic",
+      "qtype": "chrono",
+      "src": "https://www.britannica.com/biography/Lord-Byron-poet"
+    },
+    {
+      "id": "romantic-age-set-1-m-19",
+      "question": "Match List I (Work by Shelley) with List II (Year of first publication):\nList I:\na. Queen Mab\nb. Prometheus Unbound\nc. Hellas\nd. A Defence of Poetry\nList II:\n1. 1822\n2. 1813\n3. 1840\n4. 1820\nChoose the correct option:",
+      "options": [
+        "a-2, b-4, c-1, d-3",
+        "a-4, b-2, c-1, d-3",
+        "a-2, b-4, c-3, d-1",
+        "a-1, b-3, c-2, d-4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Queen Mab appeared in 1813, Prometheus Unbound in 1820 and Hellas in 1822. A Defence of Poetry, written in 1821, was published only in 1840.",
+      "topic": "second",
+      "topicId": "percy-bysshe-shelley",
+      "periodId": "romantic",
+      "qtype": "match",
+      "src": "https://www.britannica.com/biography/Percy-Bysshe-Shelley"
+    },
+    {
+      "id": "romantic-age-set-1-m-20",
+      "question": "Match List I (Event or work) with List II (Year):\nList I:\na. The ghost-story contest at Villa Diodati\nb. First publication of Frankenstein\nc. Publication of Polidori's The Vampyre\nd. The revised edition of Frankenstein\nList II:\n1. 1819\n2. 1831\n3. 1816\n4. 1818\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-1, d-2",
+        "a-3, b-4, c-2, d-1",
+        "a-3, b-4, c-1, d-2",
+        "a-1, b-2, c-3, d-4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The contest was held in 1816, Frankenstein appeared in 1818, Polidori's The Vampyre in 1819 and Mary Shelley's revised edition of Frankenstein in 1831.",
+      "topic": "novel",
+      "topicId": "frankenstein",
+      "periodId": "romantic",
+      "qtype": "match",
+      "src": "https://www.britannica.com/topic/Frankenstein-or-The-Modern-Prometheus"
+    }
+  ]
+}
