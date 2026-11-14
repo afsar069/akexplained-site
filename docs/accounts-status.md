@@ -6,10 +6,10 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-14. **UGC NET PYQs hub (rule 18) is on the branch, not merged.** **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
 
-## UGC NET PYQs — English Literature PYQs hub (2026-11-14, on the branch, NOT merged)
+## UGC NET PYQs — UGC NET English PYQs hub (2026-11-14, on the branch, NOT merged)
 
 **What the owner asked:** the UGC NET English Paper II December 2012 paper (50 questions, already verified) goes live behind
-the **English Literature PYQs** button on `/exams/net/`, free and with no login, as a CBT test with the same engine as the
+the **UGC NET English PYQs** button on `/exams/net/`, free and with no login, as a CBT test with the same engine as the
 British MCQs. The button on the page is a hub that shows each PYQ by its full name (year, month); later PYQs will be added the
 same way. Any question with two right ids becomes one.
 
