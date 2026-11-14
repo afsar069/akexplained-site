@@ -196,6 +196,58 @@
     return job.then(function (data) { papers[lv] = data; return data; });
   }
 
+  /* ---------------------------------------------------------
+     SELF-SERVE PUBLISH — page build ke waqt banta hai, par "khulta" tabhi
+     jab uski set_id paper_catalog me LIVE ho (owner, 2026-11-14).
+
+     Mock-test ke routes pehle hi bana diye jate hain (test-1..30), kyunki
+     static host na-bane pate par 404 deta hai. Jis page par data-catalog-check
+     hota hai, wo khulte hi catalog dekhta hai:
+       - row LIVE mila        -> test normal tarah chalta hai (login-gated),
+       - checked, live nahi    -> "This test is not open yet" (koi login wall nahi),
+       - padha hi na ja saka   -> fail-open: test khul jata hai (live test
+                                   kabhi network blip se na ruke).
+     paper_catalog par guest/student ko RLS sirf live row dikhata hai; draft
+     chhupa rehta hai. Isliye upload -> Live karte hi card/page apne aap aata hai,
+     aur Draft karte hi chhup jata hai — bina rebuild, bina Claude ke.
+     --------------------------------------------------------- */
+  function catalogLookup(sid) {
+    return whenAuth().then(function (a) {
+      if (!a || !a.configured || !a.client) return { checked: false };
+      return a.client.from('paper_catalog')
+        .select('set_id,title,question_count').eq('set_id', sid).limit(1)
+        .then(function (res) {
+          if (res.error) return { checked: false };
+          return { checked: true, row: (res.data && res.data[0]) || null };
+        }, function () { return { checked: false }; });
+    });
+  }
+
+  /* Live nahi (ya hai hi nahi) — na login wall, na khali page. Banner bhi theek kar do,
+     kyunki wo [data-cbt] ke bahar hai (sirf root.innerHTML badalne se nahi badalta). */
+  function notOpenYet() {
+    var title = document.getElementById('cbtTitle');
+    var lede = document.getElementById('cbtLede');
+    if (title) title.textContent = 'Not open yet';
+    if (lede) lede.textContent = 'This mock test has not been published yet.';
+    root.innerHTML =
+      '<div class="cbt-start">' +
+        '<h1>This test is not open yet</h1>' +
+        '<p class="lede">This mock test has not been published yet. Please check back soon.</p>' +
+        '<p><a class="btn" href="' + esc(root.getAttribute('data-back') || '/') +
+        '">Back to ' + esc(root.getAttribute('data-back-label') || 'the tests') + '</a></p>' +
+      '</div>';
+  }
+
+  /* Live row mila: upar ke banner me sahi ginti dikhao, taaki 100 na ho to bhi sach rahe. */
+  function applyCatalogMeta(row) {
+    if (!row || root.getAttribute('data-mode') === 'review') return;
+    var qn = parseInt(row.question_count, 10);
+    if (!(qn > 0)) return;
+    var lede = document.getElementById('cbtLede');
+    if (lede) lede.textContent = qn + ' questions. Log in with a free account to take this test.';
+  }
+
   /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to
      bache hue sawal wahin se aate hain. */
   function otherLevel() {
@@ -2188,9 +2240,22 @@
     } catch (e) { return null; }
   }
 
+  /* Jis page par data-catalog-check nahi, wo seedha load() — purana vyavhaar bilkul waisa hi.
+     Jis par hai (self-serve publish wale mock-test routes), pehle catalog dekho. */
+  function boot() {
+    var want = root.getAttribute('data-catalog-check');
+    if (!want) { load(); return; }
+    catalogLookup(want).then(function (r) {
+      if (!r.checked) { load(); return; }     /* check na ho paya — fail-open */
+      if (!r.row) { notOpenYet(); return; }    /* checked, live nahi — not open yet */
+      applyCatalogMeta(r.row);
+      load();
+    }).catch(function () { load(); });
+  }
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', load);
+    document.addEventListener('DOMContentLoaded', boot);
   } else {
-    load();
+    boot();
   }
 })();

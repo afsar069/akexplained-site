@@ -23,7 +23,7 @@ breaking it breaks a promise already made.
 - Other `*/index.html` — hub and utility pages, standalone HTML
 - `exams/net/` — preparation hub and related pages use Nunjucks (`index.njk`, `about/`, `syllabus/`, and `coming-soon.njk`), with `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, and `_data/netResources.json`. The two information pages are available; the other NET hub resources are coming soon. Do not create `exams/net/index.html` alongside its template.
 - `exams/pgt/` — exam hub in `index.njk`, with `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`, `assets/pgt.css` and `_data/pgtExams.json`. Only `/exams/pgt/up-pgt/` is active; the other ten state and three central destinations are non-interactive Coming soon cards. The UP PGT page has five preparation resource cards from `_data/pgtResources.json`. Its MCQ card opens `/exams/pgt/up-pgt/mcqs/`, a six-group day index driven by `_data/pgtMcqDays.js`; each of the 60 day routes is a noindex Coming soon page until questions are supplied. No day has a topic assigned yet; the owner will decide each topic when its questions are uploaded. Its Mock Tests card opens `/exams/pgt/up-pgt/mock-tests/`, a matching six-group index driven by `_data/pgtMockTests.js`; Mock Tests 1–5 are free public CBT papers; Tests 6–10 are login-only CBT papers stored in Supabase with hub locks for guests, while tests 11–60 remain noindex Coming soon pages. Each open test has 90 questions and a review route. The remaining resource destinations use `up-pgt/coming-soon.njk` until real content arrives. The former general English study guide is preserved at `/exams/pgt/up-pgt/study-guide/` and is clearly distinguished from an official UP-specific syllabus. Do not recreate `exams/pgt/index.html` beside the template.
-- `exams/state-psc/` — exam hub in `index.njk` with the UP PGT visual scale, `_includes/state-psc-layout.njk`, `assets/pgt.css` and `assets/state-psc.css`. UP Assistant Professor is its only active exam card. `/exams/state-psc/up-assistant-professor/` has the five owner-specified resource cards from `_data/statePscResources.json`; **Paper 2 English Literature Mock Tests** (`paper-2-mock-tests/`) has the live Paper 2 Mock Tests (from the catalog; 1 to 4 so far), all login-only 100-question CBT papers using `_includes/state-psc-cbt.njk`. Its hub cards, the `test.njk` and `review.njk` routes and its `sitemap.njk` lines are all **generated** from `_data/statePscMockTests.js`, which reads the live rows of `_data/paperCatalog.json` (the paper catalog, rule 15) — do not hand-write `test-N.njk` or `review-N.njk` here again. Questions are `public.mcq_papers` rows (`up-ap-p2-mock-test-N`), never files in the repo (rule 15). The other four resource cards still open a noindex Coming soon page from `coming-soon.njk` (the list is `_data/statePscComingSoon.js`, which skips any resource marked `"live": true` in `statePscResources.json`) until content is supplied. Do not recreate `exams/state-psc/index.html` beside its template.
+- `exams/state-psc/` — exam hub in `index.njk` with the UP PGT visual scale, `_includes/state-psc-layout.njk`, `assets/pgt.css` and `assets/state-psc.css`. UP Assistant Professor is its only active exam card. `/exams/state-psc/up-assistant-professor/` has the five owner-specified resource cards from `_data/statePscResources.json`; **Paper 2 English Literature Mock Tests** (`paper-2-mock-tests/`) has the live Paper 2 Mock Tests, all login-only 100-question CBT papers using `_includes/state-psc-cbt.njk`. **This series is self-serve-published** (owner, 2026-11-14, rule 17): its hub cards are drawn from the **live** `public.paper_catalog` in the browser by `assets/paper-list.js` (static fallback cards from `_data/statePscMockTests.js` stay in the HTML for no-JS/SEO). The `test.njk` and `review.njk` routes are **pre-built for a fixed range** `test-1..30` (from `statePscMockTests.range`), and each page checks the catalog at view time (`data-catalog-check`, `assets/cbt.js`): a live set opens login-gated, anything else shows "This test is not open yet" (never a login wall). So the owner uploads a test, marks it Live on `/admin/papers/`, and its card and page appear with no rebuild; Draft hides them at once. The `sitemap.njk` lines and the static fallback cards still list only the **live** tests, from `statePscMockTests.tests`. Do not hand-write `test-N.njk` or `review-N.njk` here again. Questions are `public.mcq_papers` rows (`up-ap-p2-mock-test-N`), never files in the repo (rule 15). The other four resource cards still open a noindex Coming soon page from `coming-soon.njk` (the list is `_data/statePscComingSoon.js`, which skips any resource marked `"live": true` in `statePscResources.json`) until content is supplied. Do not recreate `exams/state-psc/index.html` beside its template.
 - `quizzes/mcq/<age>/…` (hub, `build/`, `custom/`, `set-<n>/`) is **generated**, not hand-written:
   templates in `quizzes/mcq/_templates/` and `_includes/mcq-page.njk`, data in `_data/mcqSpec.json`
   (see rule 7). Change the template or the registry, never a generated page.
@@ -448,7 +448,9 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   - `public.paper_catalog` keeps each paper's public metadata (title, exam, kind, number, question count, status)
     in step by trigger — **no questions**. `tools/sync_catalog.py` copies the live rows into
     `_data/paperCatalog.json`, and the pages are built from that (rule 3: the UP AP mock tests already are).
-    Hub pages stay static; nothing is fetched from Supabase when a page is viewed.
+    Most hub pages stay static. **Exception (owner, 2026-11-14, rule 17): the self-serve-published series
+    read the live catalog in the browser at view time** (today: the UP Assistant Professor Paper 2 mock tests;
+    more as each series ships). For those, a newly-live paper appears with no rebuild. See rule 17.
   - **The owner picks the destination, and the page builds the id** (2026-11-13, "upload hi aisa ho jo galti hi na
     ho"): a **Where does it go?** step (`_data/paperDestinations.js`, which stops the build if a listed page is
     missing) with the series (UP AP Paper 2 Mock Test → `up-ap-p2-mock-test-N`, UP PGT Mock Test →
@@ -536,8 +538,10 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
 - **Upload a paper** — `/admin/upload-paper/`, rule 15.
 - **All papers** (`/admin/papers/`) — lists `paper_catalog`; a button flips a set between Live and Draft
   (`update mcq_papers set status=… where set_id=…`; the status-only path skips re-validation; the catalog
-  trigger follows). The change is in the database at once; the public page updates on the next build +
-  `tools/sync_catalog.py` (for the UP AP mock tests).
+  trigger follows). The change is in the database at once. For a **self-serve-published series (rule 17)** this
+  button is a real **publish / unpublish**: the card and page appear or disappear with no rebuild (today, the
+  UP AP Paper 2 mock tests). For a series still built statically, the public page updates on the next build +
+  `tools/sync_catalog.py`.
 - **Send a notice** (`/admin/notify/`) — inserts `public.notifications`: `audience 'all'` (broadcast, `user_id`
   null) or `'user'` (one student, picked by name from `profiles`). Title, optional message, optional **same-site**
   link (starts with one "/"; the DB check enforces it). `created_by` is stamped as the admin. A sent notice can be
@@ -554,3 +558,44 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
   and admin **update/delete** to `reviews`. `/privacy/` now lists dashboard notices (kept true, rule 10).
 - **Not here yet:** paid sets + promo codes, and big PDFs on Cloudflare R2 (both rule 13/15) — the owner chose to
   build these next.
+
+## 17. Self-serve publish — a live paper appears with no rebuild (owner, 2026-11-14)
+The owner uploads a login paper at `/admin/upload-paper/` and marks it **Live** on `/admin/papers/`; for a
+self-serve series the paper then appears on its page **with no rebuild and no Claude**, and Draft hides it at
+once. The site is static (Cloudflare Pages from the repo) and there is **no service key and no Edge Function**
+(rule 15), so a browser button cannot rebuild or commit. The only safe way is to **render the paper lists in
+the browser at view time** from the live `public.paper_catalog`, which has a public read policy for
+`status = 'live'` rows (a guest reads live rows; drafts stay hidden — confirmed in the DB). **This is the one
+approved exception to rule 3's "hub pages stay static; nothing is fetched from Supabase when a page is
+viewed"**, and only for the paper-list pages of a self-serve series. No new data is collected (the catalog is
+already public for live rows), so `/privacy/` needs no change.
+
+**How a series is made self-serve (the parts, all general):**
+- **Hub cards** come from the live catalog via `assets/paper-list.js`. The hub's card grid carries
+  `data-paper-list` plus the filter and how to build each link: `data-exam-id`, `data-kind`, optional
+  `data-prefix` (a `set_id` guard), `data-base`, `data-route` (e.g. `test-{n}/`), `data-label`, `data-empty`.
+  The script waits for `window.akAuth`, reads with the publishable key, and on any failure leaves the **static
+  fallback cards** (the papers live at build time, kept in the HTML for no-JS/SEO). It reuses the site's
+  guest-lock / Start swap: each card has `data-guest-only` (padlock → `/login/?next=…`) and `data-auth-only`
+  (Start), and it re-runs `window.akAuth.refreshHeader(session)` after injecting so the new cards swap by login
+  state. Add `<script src="/assets/paper-list.js" defer></script>` to the hub.
+- **Routes are pre-built for a fixed range** (a static host 404s on an unbuilt path), e.g. UP AP `test-1..30` +
+  their review routes, paginated over a range array (see `statePscMockTests.range`, `RANGE_MAX`). Raising the
+  range is a one-number change.
+- **Each test page checks the catalog at view time** via `data-catalog-check="<set_id>"` on the `[data-cbt]`
+  element. `assets/cbt.js` then, before the normal flow: live row → opens exactly as before (login-gated);
+  checked-and-not-live → a plain "This test is not open yet" screen (never a login wall for a set that does not
+  exist); could-not-read (network) → **fail-open** to the normal flow, so a live test is never blocked by a
+  blip. Pages **without** `data-catalog-check` (free MCQ sets, other series not yet converted) are untouched —
+  `cbt.js` runs exactly as before, which is how the rollout stays one series at a time.
+- **Sitemap + static fallback still list only the live papers** (from the `…MockTests.tests`-style live list),
+  never the whole pre-built range; the login test pages need no SEO.
+
+**Shipped so far:** UP Assistant Professor Paper 2 mock tests (`exams/state-psc/up-assistant-professor/paper-2-mock-tests/`).
+**Still static (convert next, one at a time):** UP PGT login mock tests (6–10 and new; keep free 1–5 and
+coming-soon 11–60 as they are), and the English Literature login MCQ sets (`quizzes/mcq/<age>/`; their cards are
+richer than the catalog carries today — decide a small `paper_catalog` metadata column vs a simple card **with
+the owner** before building). Do each series on its own branch, test it (Playwright + mocked Supabase: guest vs
+student, live vs not-yet-live, 375px and desktop; prove a new live row shows and Draft hides with no rebuild),
+and merge on its own (rule 5) so a bug can never take down every mock-test page at once. Update rules 3, 15, 16
+and this rule, and `docs/self-serve-publish-plan.md`, as each ships.

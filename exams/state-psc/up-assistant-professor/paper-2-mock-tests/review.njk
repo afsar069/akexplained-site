@@ -1,6 +1,6 @@
 ---
 pagination:
-  data: statePscMockTests.tests
+  data: statePscMockTests.range
   size: 1
   alias: mock
 permalink: "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/test-{{ mock.number }}/review/index.html"
@@ -8,6 +8,5 @@ examReview: true
 eleventyComputed:
   mockNumber: "{{ mock.number }}"
   mockSetId: "{{ mock.setId }}"
-  mockQuestions: "{{ mock.questionCount }}"
 ---
 {% extends "state-psc-cbt.njk" %}

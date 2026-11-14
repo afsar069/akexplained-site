@@ -7,17 +7,29 @@ state_psc_resource: true
 eleventyComputed:
   description: "Take Mock Tests {{ statePscMockTests.numbers }} for UP Assistant Professor Paper 2 English Literature{{ statePscMockTests.countPhrase }}. Log in with a free account to open them."
 ---
-{#- The cards come from the paper catalog (_data/paperCatalog.json), so a new mock test needs no edit here. -#}
+{#- The cards are drawn from the LIVE paper catalog in the browser (assets/paper-list.js), so a
+    mock test the owner uploads and marks Live appears with no rebuild. The cards below are the
+    static fallback (the tests live at build time), kept for no-JS and search engines; the script
+    replaces them with the live list. A test that is not live shows a "not open yet" page, so the
+    static sitemap and these fallback cards still list only the live tests. -#}
 <section class="pgt-practice-index" aria-labelledby="state-psc-mock-title">
   <header class="pgt-practice-intro">
     <div>
       <h2 id="state-psc-mock-title">Choose a mock test</h2>
-      <p>Log in with a free account to take Mock Tests {{ statePscMockTests.numbers }}.</p>
+      <p>Log in with a free account to take a mock test.</p>
     </div>
     <span>Paper 2</span>
   </header>
   <div class="pgt-practice-groups"><div class="pgt-practice-group">
-  <div class="pgt-practice-card-grid state-psc-mock-grid">
+  <div class="pgt-practice-card-grid state-psc-mock-grid"
+       data-paper-list
+       data-exam-id="state-psc"
+       data-kind="mock-test"
+       data-prefix="up-ap-p2-mock-test-"
+       data-base="/exams/state-psc/up-assistant-professor/paper-2-mock-tests/"
+       data-route="test-{n}/"
+       data-label="Mock Test"
+       data-empty="No mock tests are open yet. Please check back soon.">
     {%- for mock in statePscMockTests.tests %}
     <div class="pgt-practice-card">
       <span class="pgt-practice-card-copy"><strong>Mock Test {{ mock.label }}</strong><span>{{ mock.questionCount }} questions</span></span>
@@ -28,3 +40,4 @@ eleventyComputed:
   </div>
   </div></div>
 </section>
+<script src="/assets/paper-list.js" defer></script>

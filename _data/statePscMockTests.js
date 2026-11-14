@@ -48,8 +48,24 @@ function numbersPhrase(numbers) {
 
 const counts = tests.map(t => t.questionCount).filter((v, i, a) => a.indexOf(v) === i);
 
+/* Self-serve publish (owner, 2026-11-14): the test and review pages are built for a FIXED
+   range of numbers (1..RANGE_MAX), not only for the tests that are live at build time. A static
+   host 404s on an address it never built, so the routes must already exist; each page then
+   checks the live catalog when it is opened (assets/cbt.js, data-catalog-check):
+     - the set_id is a LIVE paper_catalog row -> the test opens exactly as before (login-gated),
+     - otherwise -> a plain "This test is not open yet" screen (never a login wall).
+   So the owner can upload a Mock Test 5, mark it Live, and its page works with no rebuild.
+   The hub cards and the sitemap still list only the live tests (see `tests` above). To make
+   room for more than RANGE_MAX tests, raise this one number. */
+const RANGE_MAX = 30;
+const range = [];
+for (let i = 1; i <= RANGE_MAX; i++) {
+  range.push({ number: i, setId: PREFIX + i });
+}
+
 module.exports = {
   tests: tests,
+  range: range,
   numbers: numbersPhrase(tests.map(t => t.number)),
   // Said only when every test is the same length, so the page can never claim a wrong number.
   countPhrase: counts.length === 1 ? ", with " + counts[0] + " questions each" : ""
