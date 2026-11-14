@@ -4,7 +4,28 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-13 (Caroline Set 1 is prepared as a free, no-login set at easy and medium level. Jacobean and Elizabethan Set 1 and the admin area have reached main. Earlier sections below record their status when each change was made.)_
+_Last updated: 2026-11-14 (on branch `claude/upload-paper-tool`, not yet merged: the upload page builds the paper's id from a Where-does-it-go picker so a wrong id in the file cannot misplace it, plus the self-serve publish plan in `docs/self-serve-publish-plan.md` for the next session. On main already: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area + dashboard bell; the upload-paper tool; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary via PR #73.)_
+
+## Mistake-proof upload + Mock Test 4 (2026-11-13, branch `claude/upload-paper-tool`)
+
+- **Mock Test 4 (UP AP Paper 2) is live on main** (PR #70). The owner uploaded it, but it did not appear on the
+  page: its file's `setId` was `up-ap-mock-test-4` (missing the `p2` that Tests 1–3 use), so
+  `_data/statePscMockTests.js` could not match it, and the page is static (built from `_data/paperCatalog.json`,
+  so a DB upload alone never shows). Fix: renamed the rows in Supabase to `up-ap-p2-mock-test-4` (delete-then-insert
+  via the connector, because the validation trigger refuses a direct `set_id` change — it would see the old row as
+  another paper with the same question ids), regenerated `_data/paperCatalog.json`, rebuilt. Four cards now (01–04).
+- **The upload page no longer trusts the file's id** (to stop that happening again). The **Category** dropdown was
+  replaced by a **Where does it go?** step (`_data/paperDestinations.js`, replacing `paperCategories.js`): the owner
+  picks the series (UP AP Paper 2 Mock Test / UP PGT Mock Test / English Literature MCQ set), a number, and an age
+  (for the MCQ set). `assets/upload-paper.js` builds the `set_id` from that and overwrites the file's `setId`,
+  `setNumber`, `examId`, `kind` and `title`; question ids inside are left as supplied. A live preview shows the id
+  ("It will be saved as up-ap-p2-mock-test-5") and the title auto-fills. The id-exists + rev guard now runs against
+  the built id. **39 browser checks pass** (Playwright, Supabase mocked), the key one being that a file whose id is
+  `up-ap-mock-test-99` is saved as `up-ap-p2-mock-test-5` when the owner picks UP AP + number 5.
+- **Still pending (owner asked, 2026-11-13):** a self-serve "publish" so the owner does not need Claude for the last
+  step. Today a new UP AP mock test still needs `tools/sync_catalog.py` + rebuild + merge (static site). The clean
+  fix is to make the mock-test hub + test pages read the live catalog at runtime (changes rule 3's "hub pages stay
+  static"); proposed to the owner, not yet built. Picking more than one category at once: skipped by the owner for now.
 
 ## Caroline Set 1 — free, easy and medium (2026-11-13)
 
