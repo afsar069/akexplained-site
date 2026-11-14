@@ -1,6 +1,6 @@
 {
   "setId": "ugc-net-english-2012-jun-paper-iii",
-  "rev": 1,
+  "rev": 2,
   "ageName": "UGC NET English",
   "setName": "Paper III — June 2012",
   "level": "all",
@@ -673,24 +673,6 @@
       "explanation": "The correct pair will be– I. Langue/Parole C. Ferdinand de Saussure II. Competence/Performance A. Noam Chomsky III. Iconio/Indexical B. C.S. Pierce IV. Readerly/writerly D. Roland Barthes Langue describes the social consensus of how signs are applied while 'Parole' describes the physical manifestation of Langue. Competence is the unconscious idealized knowledge that native speakers have of their language while Performance is the actual use of that language by its native speakers. Hence, option (b) will be correct answer.",
       "topic": "language",
       "topicId": "linguistics",
-      "qtype": "match",
-      "src": "UGC NET English Paper III, June 2012"
-    },
-    {
-      "id": "ugc-net-english-2012-jun-paper-iii-38",
-      "questionNumber": 38,
-      "question": "Match the writers with their works: 1. Joy Kogawa; 2. M. G. Vasanjee; 3. Sky Lee; 4. Arnold Itwaru. (a) Body Rites; (b) Obasan; (c) The Gunny Sack; (d) Disappearing Moon Cafe.",
-      "options": [
-        "d, a, b, c",
-        "a, d, c, b",
-        "b, c, d, a",
-        "a, b, c, d"
-      ],
-      "correct_option_id": 2,
-      "explanation": "The correct pairs are – 1. Joy Kogawa – (b) 'Obasan' (1981) (Japanese-Canadian) 2. M.G. Vassanji. – (c) 'The Gunny (Nairobi-Tanzanian) sack' (2005) 3. Sky (Chinese-Canadian) Lee – (d) 'Disappearing Moon Café' (1990) 4. Arnold Itwaru – (a) 'Body Rites' (1991, book of poetry) Hence option (c) will be correct answer.",
-      "topic": "postcolonial",
-      "topicId": "canadian-literature",
-      "periodId": "contemporary",
       "qtype": "match",
       "src": "UGC NET English Paper III, June 2012"
     },
