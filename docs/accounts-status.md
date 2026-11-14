@@ -4,9 +4,50 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14 (on branch `claude/affectionate-brown-ahs63h`, not yet merged: **self-serve publish for the UP Assistant Professor Paper 2 mock tests** — see the section right below. Earlier work now on main: Mock Test 4 (UP AP Paper 2) via PR #70; the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary via PR #73.)_
+_Last updated: 2026-11-14. **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — is **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — is **built and tested on branch `claude/affectionate-brown-ahs63h`, not yet merged** (see the two sections below). Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
 
-## Self-serve publish — UP AP Paper 2 mock tests (2026-11-14, branch `claude/affectionate-brown-ahs63h`, NOT merged)
+## Self-serve publish — English Literature login MCQ sets (2026-11-14, branch `claude/affectionate-brown-ahs63h`, NOT merged)
+
+**Series 2 of the self-serve work.** The owner chose (2026-11-14) the **"flip planned sets live"** approach over
+adding a `paper_catalog` metadata column: because every age already lists its sets in `mcqSpec.json` with full
+rich cards (title, summary, topic tags) — including "Coming soon" slots — the richest possible card already
+exists at build time. So a planned login set goes live the moment the owner uploads its questions and marks it
+Live, with **no rebuild, no database change, and no upload-page change**. Draft hides it again.
+
+**How it works.** A set row is "catalog-managed" when it is a login set (`access: "login"`) or a not-yet-live
+planned slot. Such rows carry `data-catalog-set`; their real live/draft state comes from the live
+`paper_catalog` (kind `mcq-set`), read in the browser with the publishable key (RLS gives a guest only live
+rows). Free sets carry nothing and are untouched.
+- **New `_data/mcqPendingSets.js`** lists every planned slot that is not yet live in the registry;
+  **`set-pending-test.njk` / `set-pending-review.njk`** pre-build its `/set-N/` + `/set-N/review/` routes as
+  login-gated, `data-catalog-check` pages with **no** `data-src` (no question file in the repo, rule 15). A free
+  set that later fills a slot becomes a live registry set (built by `mcqLiveSets`) and drops out of
+  `mcqPendingSets`, so the two never build the same route (verified: anglo-norman set-2 live-login + set-3
+  pending both build cleanly).
+- **`data-catalog-check`** added to the live-login `set-test.njk` / `set-review.njk` pages too, so drafting a
+  live login set shows "This set is not open yet". Free set pages are unchanged (no `st.access`).
+- **`assets/cbt.js`**: `notOpenYet` / `applyCatalogMeta` are now set-aware ("set" vs "mock test"). The
+  `data-catalog-check` gate from series 1 is reused unchanged.
+- **`assets/mcq-age.js`**: `catalogFlip()` reads the catalog once per hub and flips each `data-catalog-set` row
+  — a Coming-soon slot whose set is live → `flipOn` (creates Start + padlock); a live login set gone Draft →
+  `flipOff` (back to "Coming soon"). Fail-safe: any read failure leaves the build-time state untouched.
+
+**Tested (Playwright on built `_site`, Supabase mocked):** 28 checks pass — guest hub: pending set-3 flips to a
+padlock, or stays "Coming soon" when not live; student hub: Start; **draft proof**: a live login set-4 reverts
+to "Coming soon" while set-5 stays; free set-1 never touched; the pending set **page**: guest+live → login wall,
+guest+not-live → "This set is not open yet" (no login wall), student+live → opens; a drafted live-login page →
+"not open yet"; free set page unaffected; 375px no sideways scroll; Supabase-off keeps the build-time state. The
+series-1 suite (27) and the regression suite (5) are still green. Build clean (495 files), no broken internal
+links, no route collisions.
+
+**Known gap:** the dashboard age pool (rule 10) counts a login set only once it is `live` in the registry
+(`tools/build-syllabus.js`), so a set published self-serve to a Coming-soon slot is playable but not in the pool
+denominator until the registry is edited + rebuilt. Documented in rule 3 and the plan doc; not a blocker.
+
+**Pending:** merge to main is the owner's call (rule 5). Next series: UP PGT login mock tests (same pattern as
+series 1). Scratch Playwright tests live only in the session scratchpad.
+
+## Self-serve publish — UP AP Paper 2 mock tests (2026-11-14, SHIPPED — merged to main, PR #75)
 
 **What the owner asked:** after uploading a login paper and marking it **Live** on `/admin/papers/`, it should
 appear on its page **with no rebuild and no Claude**, and this must work for **every series**. Built **one
@@ -44,9 +85,8 @@ with **no** login wall, not-live `test-20/review` → "not open yet", 375px no h
 static fallback (4 cards) remains. **5 regression checks**: a free MCQ set and a UP PGT login mock test (both
 **without** `data-catalog-check`) behave exactly as before. No console errors anywhere.
 
-**Pending:** merge to `main` is the owner's call (rule 5) — a cloud session cannot open akexplained.com, so the
-owner checks the live links after merge. Then convert UP PGT, then the English Literature login MCQ sets (decide
-the richer-card question with the owner first). The scratch Playwright tests live in the session scratchpad only
+**Status:** **Merged to main via PR #75 (2026-11-14), live on akexplained.com.** The owner checks the live
+links (a cloud session cannot open the site). The scratch Playwright tests live in the session scratchpad only
 (they vanish with the session), as the repo keeps no committed browser tests.
 
 

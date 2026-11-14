@@ -43,9 +43,10 @@ eleventyExcludeFromCollections: true
      data-set="{{ st.id }}"
      data-levels="{{ st.levels | join(',') }}"
      data-default-level="{{ st.defaultLevel }}"
-{% if st.access %}     data-gated="{{ st.id }}"
+{% if st.access %}     data-gated="{{ st.id }}" data-catalog-check="{{ st.id }}"
 {% endif %}     data-src="/assets/questions/{{ st.id }}-{level}.json"
-     data-back="/quizzes/mcq/{{ age.slug }}/">
+     data-back="/quizzes/mcq/{{ age.slug }}/"
+     data-back-label="{{ age.name }}">
 
   <!-- Engine (assets/cbt.js) is dabbe ko bharta hai. Script band ho ya
        file na mile to neeche wali baat dikhti rehti hai — khali page nahi. -->
