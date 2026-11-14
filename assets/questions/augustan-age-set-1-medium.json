@@ -1,0 +1,873 @@
+{
+  "setId": "augustan-age-set-1",
+  "rev": 1,
+  "age": "augustan-age",
+  "ageName": "Augustan Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/augustan-age/",
+  "notesTitle": "Augustan Age — the full notes",
+  "topics": {
+    "ground": "The age and its ideas",
+    "poetry": "Pope and Augustan verse",
+    "prose": "Swift, Defoe and essays",
+    "stage": "Drama and the stage",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Analytical questions on Augustan writing, political satire, drama and philosophy.",
+  "questions": [
+    {
+      "id": "augustan-age-set-1-m-01",
+      "question": "In Berkeley’s Three Dialogues, which speaker argues for an immaterialist account of sensible things?",
+      "options": [
+        "Philonous",
+        "Hylas",
+        "Captain Macheath",
+        "Sir Roger de Coverley"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Philonous, whose name means lover of mind, defends Berkeley’s view against Hylas.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-m-02",
+      "question": "How does Berkeley explain the continuity of sensible objects beyond any one human perceiver?",
+      "options": [
+        "They survive through an unknowable physical substratum",
+        "They remain known to an ever-perceiving divine mind",
+        "They are made of tiny poetic atoms",
+        "They exist only while a particular person is awake"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Berkeley gives God a central role as the perceiver sustaining the order of ideas.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-m-03",
+      "question": "Consider the following statements regarding Berkeley’s philosophy:\nI. It rejects mind-independent material substance.\nII. Its direct objects of sensation are ideas.\nIII. It holds that sensory qualities reside only in unperceived physical matter.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Berkeley regards ideas as perceived in minds and rejects an independent material substratum.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-m-04",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Berkeley argues that sensible objects are mind-dependent.\nReason (R): He treats our immediately perceived qualities as ideas rather than properties of independent matter.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true",
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Both statements describe the same argument: perceived qualities belong to mind-dependent ideas.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-m-05",
+      "question": "What does Hume regard as the basis of many expectations about cause and effect?",
+      "options": [
+        "Habit formed by repeated experience",
+        "A law fixed by political authority",
+        "A pre-existing memory of every future event",
+        "A demonstrative proof of necessary connection"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hume argues that custom leads us to expect familiar patterns, without logically demonstrating future outcomes.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-m-06",
+      "question": "What distinction helps organize Hume’s account of the contents of the mind?",
+      "options": [
+        "Whigs and Tories",
+        "Impressions and ideas",
+        "Epic and lyric",
+        "Tragedies and comedies"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hume distinguishes forceful impressions from the fainter ideas that derive from them.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-m-07",
+      "question": "Why does Hume question claims of necessary connection in causation?",
+      "options": [
+        "Causation depends entirely on poetic convention",
+        "Every observation is created by a royal law",
+        "We observe conjunctions of events, not a directly sensed necessity",
+        "Repeated events prove every future outcome deductively"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hume distinguishes the observed sequence of events from the necessity we habitually attribute to it.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-m-08",
+      "question": "Consider the following statements regarding Hume’s philosophical writings:\nI. A Treatise of Human Nature appeared in 1739–1740.\nII. An Enquiry Concerning Human Understanding appeared in 1748.\nIII. Hume treated regular experience as irrelevant to claims of miracles.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III only",
+        "II and III only",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The publication dates are correct, while the credibility of miracle reports is assessed against experience.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-m-09",
+      "question": "What is the function of the sylphs in The Rape of the Lock?",
+      "options": [
+        "They act as supernatural guardians of Belinda",
+        "They serve as the judges of criticism",
+        "They carry Gulliver to Laputa",
+        "They record the royal succession"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The sylphs guard Belinda and parody the supernatural machinery of a classical epic.",
+      "topic": "poetry",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-m-10",
+      "question": "Who was replaced by Colley Cibber as the central figure of The Dunciad in the 1743 version?",
+      "options": [
+        "George Berkeley",
+        "Lewis Theobald",
+        "Richard Steele",
+        "John Gay"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The earlier Dunciad focused on Lewis Theobald; the later version made Colley Cibber its hero of dullness.",
+      "topic": "poetry",
+      "topicId": "the-dunciad",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-m-11",
+      "question": "Consider the following statements regarding Pope’s writing:\nI. He helped finance his career through subscriptions for Homer translations.\nII. His Essay on Man reflects on humanity and universal order.\nIII. The Dunciad celebrates the triumph of imaginative originality over dullness.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III only",
+        "II and III only",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Subscription funded Pope’s Homer translations, and An Essay on Man explores universal order; The Dunciad satirizes dullness.",
+      "topic": "poetry",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-m-12",
+      "question": "Match List I (work by Pope) with List II (purpose or device):\nList I:\na. The Rape of the Lock\nb. The Dunciad\nc. An Essay on Man\nd. An Essay on Criticism\nList II:\n1. Philosophical epistles on the human place in the universe\n2. Grand epic style for a trivial incident\n3. Precepts for literary taste and judgement\n4. Satirical kingdom of Dullness\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-4, d-3",
+        "a-2, b-3, c-1, d-4",
+        "a-2, b-3, c-4, d-1",
+        "a-2, b-4, c-1, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Each work has a distinct aim: mock epic, satire on dullness, philosophy and criticism, respectively.",
+      "topic": "poetry",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-m-13",
+      "question": "How does A Nocturnal Reverie differ from much public Augustan satire?",
+      "options": [
+        "It closely observes nature and the peace of night",
+        "It argues for licensing the London stage",
+        "It recounts a fictional ocean voyage",
+        "It mocks the tactics of political parties"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Finch makes quiet nighttime observation and solitude central, anticipating later nature poetry.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-m-14",
+      "question": "What critical issue is central to Finch’s poem The Introduction?",
+      "options": [
+        "The overthrow of the Hanovers",
+        "The social obstacles faced by a woman poet",
+        "The economics of the slave trade",
+        "The supernatural in epic machinery"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem addresses prejudice against women’s authorship and intellectual ambition.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-m-15",
+      "question": "Which subject does Finch examine in The Spleen?",
+      "options": [
+        "A naval battle in the Dutch wars",
+        "The founding of the Royal Society",
+        "Melancholy and disquiet of mind",
+        "A comic duel between actors"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Finch’s The Spleen portrays the experience and pressures of mental disturbance.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-m-16",
+      "question": "Consider the following statements regarding Anne Finch’s career:\nI. Her poetry includes A Nocturnal Reverie.\nII. Her The Spleen was published around 1701.\nIII. She was better known as the author of Robinson Crusoe.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Finch wrote the nature poem and The Spleen; Defoe wrote Robinson Crusoe.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-m-17",
+      "question": "What do the Houyhnhnms represent in the fourth voyage of Gulliver’s Travels?",
+      "options": [
+        "A society of rational horses",
+        "A nation of tiny courtiers",
+        "A kingdom governed by giants",
+        "A floating academy of astronomers"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The fourth voyage contrasts the reasoning Houyhnhnms with the degrading behaviour of the Yahoos.",
+      "topic": "prose",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-18",
+      "question": "What dispute prompted Swift’s Drapier’s Letters?",
+      "options": [
+        "The editing of Shakespeare’s plays",
+        "The proposal to circulate William Wood’s copper coins in Ireland",
+        "The publication of the Statute of Anne",
+        "The licensing of London theatres"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Swift opposed an English patent for Irish copper coinage, presenting his case through a shopkeeper persona.",
+      "topic": "prose",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-19",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): A Modest Proposal uses a calm, calculating tone.\nReason (R): Its deliberately shocking suggestion exposes the brutal treatment of poor Irish people.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Both claims are true: the apparently rational tone makes the cruel proposal a weapon of satire.",
+      "topic": "prose",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-20",
+      "question": "Match List I (voyage location) with List II (inhabitants or feature):\nList I:\na. Lilliput\nb. Brobdingnag\nc. Laputa\nd. Country of the Houyhnhnms\nList II:\n1. A floating island absorbed in impractical learning\n2. People much smaller than Gulliver\n3. Reasoning horses and the Yahoos\n4. Giants who dwarf Gulliver\nChoose the correct option:",
+      "options": [
+        "a-1, b-3, c-2, d-4",
+        "a-4, b-3, c-1, d-2",
+        "a-4, b-3, c-2, d-1",
+        "a-2, b-4, c-1, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The four voyages move from tiny people to giants, speculative scholars and finally rational horses.",
+      "topic": "prose",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-21",
+      "question": "Which satirical pamphlet led to Defoe’s punishment in the pillory in 1703?",
+      "options": [
+        "The Shortest-Way with the Dissenters",
+        "The Spectator",
+        "A Modest Proposal",
+        "The Dunciad"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The pamphlet mimicked extreme religious intolerance, angering authorities who failed to appreciate its irony.",
+      "topic": "prose",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#how-writing-reached-readers"
+    },
+    {
+      "id": "augustan-age-set-1-m-22",
+      "question": "What feature makes the fiction of Robinson Crusoe resemble a factual memoir?",
+      "options": [
+        "An omniscient narrator explaining all minds",
+        "Detailed first-person accounts of ordinary tasks",
+        "A chorus commenting on the action",
+        "Heroic couplets instead of prose"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The narrator describes tools, supplies and daily survival in a matter-of-fact voice.",
+      "topic": "prose",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-m-23",
+      "question": "Which Defoe book portrays the London epidemic of 1665 through a purported eyewitness-style narrative?",
+      "options": [
+        "The History of Tom Jones",
+        "The Pilgrim’s Progress",
+        "A Journal of the Plague Year",
+        "A Tale of a Tub"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The 1722 narrative depicts the plague of 1665 using a documentary-like first-person voice.",
+      "topic": "prose",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-m-24",
+      "question": "Consider the following statements regarding Defoe’s early fiction:\nI. Robinson Crusoe appeared in 1719.\nII. Moll Flanders appeared in 1722.\nIII. A Journal of the Plague Year is a stage comedy in rhyming couplets.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The first two publication dates are correct; A Journal of the Plague Year is a prose narrative.",
+      "topic": "prose",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-m-25",
+      "question": "Which tragedy by Joseph Addison presents Roman republican virtue and was staged in 1713?",
+      "options": [
+        "Cato",
+        "The Fair Penitent",
+        "The Conscious Lovers",
+        "The Beggar’s Opera"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Cato uses an ancient Roman setting to debate civic honour and political virtue.",
+      "topic": "prose",
+      "topicId": "joseph-addison",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-m-26",
+      "question": "Which Steele play became a notable example of sentimental comedy in 1722?",
+      "options": [
+        "Love for Love",
+        "The Conscious Lovers",
+        "The Beggar’s Opera",
+        "The Rival Queens"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Steele’s The Conscious Lovers praises virtue and produces sympathy rather than Restoration-style ridicule.",
+      "topic": "prose",
+      "topicId": "richard-steele",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-m-27",
+      "question": "Consider the following statements regarding The Spectator and its audience:\nI. Mr Spectator is presented as a largely silent observer of society.\nII. The paper often turns everyday manners into subjects for reflection.\nIII. Its essays were originally written as a single long epic poem.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The observer persona and treatment of everyday manners define the periodical, not an epic narrative form.",
+      "topic": "prose",
+      "topicId": "the-spectator",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-28",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The Spectator aimed to make serious thinking accessible beyond academic institutions.\nReason (R): Addison sought to carry discussion of philosophy into clubs, homes and coffee houses.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "(A) is true, but (R) is false",
+        "(A) is false, but (R) is true",
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Both are true, and the expansion beyond universities explains the paper’s accessible social criticism.",
+      "topic": "prose",
+      "topicId": "joseph-addison",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-29",
+      "question": "How does The Beggar’s Opera turn social hierarchy upside down?",
+      "options": [
+        "It gives thieves the manners of fashionable rulers",
+        "It replaces songs with sermons",
+        "It presents only ancient Greek gods",
+        "It makes the cast wholly heroic nobles"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gay’s underworld figures imitate elite behaviour, using criminals to expose corruption above them.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-m-30",
+      "question": "What kind of music helped distinguish Gay’s ballad opera from imported Italian opera?",
+      "options": [
+        "A continuous symphonic score",
+        "Familiar popular tunes",
+        "Courtly instrumental dance alone",
+        "Only unaccompanied Latin chant"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Beggar’s Opera sets new satirical words to well-known airs rather than using Italian operatic conventions.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-m-31",
+      "question": "Consider the following statements regarding Gay’s satire:\nI. The Beggar’s Opera was first staged in 1728.\nII. Its characters include highwaymen and thieves.\nIII. It openly praises political dishonesty as an ideal of government.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III only",
+        "I and II only",
+        "II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The opera satirizes greed through criminal characters rather than endorsing corruption.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-m-32",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Beggar’s Opera appears\n2. Gay publishes Trivia\n3. The Tatler begins\n4. The Licensing Act limits new plays\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "1, 4, 3, 2",
+        "2, 3, 4, 1",
+        "3, 2, 1, 4"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The periodical began in 1709, Trivia appeared in 1716, the opera in 1728 and the Licensing Act in 1737.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/John_Gay"
+    },
+    {
+      "id": "augustan-age-set-1-m-33",
+      "question": "What do Aimwell and Archer seek through their schemes in The Beaux’ Stratagem?",
+      "options": [
+        "Money and a way out of their financial troubles",
+        "The invention of a new stage machine",
+        "A crown through military conquest",
+        "A religious office in Ireland"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The two men travel in disguise to repair their finances by making advantageous matches.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-m-34",
+      "question": "Which occupation did Farquhar leave after a dangerous accident during a staged fight?",
+      "options": [
+        "Medicine",
+        "Acting",
+        "Bookbinding",
+        "Naval service"
+      ],
+      "correct_option_id": 1,
+      "explanation": "He wounded another actor with a real sword during a performance and turned to writing plays.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-m-35",
+      "question": "Which of Farquhar’s plays presents army enlistment and provincial courtship?",
+      "options": [
+        "Cato",
+        "The Fair Penitent",
+        "The Recruiting Officer",
+        "The Conscious Lovers"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The play explores recruiting, courtship and military life in an English provincial setting.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-m-36",
+      "question": "Consider the following statements regarding George Farquhar’s stage career:\nI. The Recruiting Officer appeared in 1706.\nII. The Beaux’ Stratagem appeared in 1707.\nIII. Farquhar’s principal successes were tragedies of Roman republican virtue.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The dates are correct; Farquhar is chiefly associated with lively English comedy.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-m-37",
+      "question": "Why is Rowe’s 1709 Shakespeare edition historically notable?",
+      "options": [
+        "It helped establish biographical and editorial presentation of the plays",
+        "It was the First Folio of 1623",
+        "It removed Shakespeare’s name from publication",
+        "It was the first edition to translate every play into Latin"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Rowe supplied a life of Shakespeare and modernized texts in an influential early collected edition.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-m-38",
+      "question": "Which Rowe work is associated with the tragic heroine Calista?",
+      "options": [
+        "The Recruiting Officer",
+        "The Fair Penitent",
+        "The Beggar’s Opera",
+        "The Conscious Lovers"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Calista is the central suffering woman in Rowe’s 1703 tragedy The Fair Penitent.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-m-39",
+      "question": "Which of Rowe’s tragedies uses a historical figure linked to Richard III’s England?",
+      "options": [
+        "The Beaux’ Stratagem",
+        "Cato",
+        "Jane Shore",
+        "The Tatler"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rowe’s Jane Shore dramatizes the story of a woman at the court of Edward IV and its aftermath.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-m-40",
+      "question": "Consider the following statements regarding Nicholas Rowe:\nI. He prepared a collected Shakespeare edition in 1709.\nII. He became Poet Laureate in 1715.\nIII. The Fair Penitent is a ballad opera by John Gay.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Rowe edited Shakespeare and held the laureateship; The Fair Penitent is Rowe’s tragedy.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-m-41",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Dunciad first appears\n2. An Essay on Criticism is published\n3. An Essay on Man begins appearing\n4. The Rape of the Lock first appears\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 1, 3",
+        "3, 1, 4, 2",
+        "2, 4, 3, 1",
+        "1, 4, 2, 3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The works appeared in 1711, 1712, 1728 and 1733, respectively.",
+      "topic": "terms",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-m-42",
+      "question": "Arrange the following events in the correct chronological order:\n1. Gulliver’s Travels is published\n2. Swift’s Bickerstaff hoax appears\n3. Drapier’s Letters begin appearing\n4. A Modest Proposal is published\nChoose the correct sequence:",
+      "options": [
+        "1, 3, 4, 2",
+        "2, 3, 1, 4",
+        "2, 4, 3, 1",
+        "2, 1, 4, 3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Bickerstaff hoax dates to 1708, the Drapier campaign to 1724, Gulliver to 1726 and A Modest Proposal to 1729.",
+      "topic": "terms",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-43",
+      "question": "Arrange the following events in the correct chronological order:\n1. Moll Flanders is published\n2. Robinson Crusoe appears\n3. Defoe is pilloried for a pamphlet\n4. The Tatler first appears\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 3, 4",
+        "4, 2, 1, 3",
+        "3, 4, 2, 1",
+        "4, 1, 2, 3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Defoe’s pamphlet brought punishment in 1703, then The Tatler began in 1709; the novels followed in 1719 and 1722.",
+      "topic": "terms",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/augustan-age/#how-writing-reached-readers"
+    },
+    {
+      "id": "augustan-age-set-1-m-44",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Conscious Lovers is staged\n2. The Spectator begins\n3. The Tatler begins\n4. Addison’s Cato is staged\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "1, 4, 3, 2",
+        "2, 1, 4, 3",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Tatler began in 1709, followed by The Spectator in 1711, Cato in 1713 and The Conscious Lovers in 1722.",
+      "topic": "terms",
+      "topicId": "the-periodical-essay",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-m-45",
+      "question": "Match List I (work or theatrical term) with List II (description):\nList I:\na. Trivia\nb. The Beggar’s Opera\nc. Ballad opera\nd. Sentimental comedy\nList II:\n1. Play using popular melodies\n2. Verse guide to London’s streets\n3. Moral plays stressing virtue and feeling\n4. Criminal society in musical satire\nChoose the correct option:",
+      "options": [
+        "a-2, b-4, c-1, d-3",
+        "a-3, b-4, c-2, d-1",
+        "a-2, b-1, c-4, d-3",
+        "a-4, b-1, c-3, d-2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Trivia addresses street life, the opera satirizes society, and the two stage terms name different forms.",
+      "topic": "terms",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/John_Gay"
+    },
+    {
+      "id": "augustan-age-set-1-m-46",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Beaux’ Stratagem is staged\n2. Love and a Bottle is staged\n3. The Recruiting Officer is staged\n4. The Constant Couple is staged\nChoose the correct sequence:",
+      "options": [
+        "1, 4, 2, 3",
+        "2, 4, 3, 1",
+        "2, 4, 1, 3",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Farquhar’s sequence runs from Love and a Bottle in 1698 to The Constant Couple in 1699, Recruiting Officer in 1706 and Beaux’ Stratagem in 1707.",
+      "topic": "terms",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-m-47",
+      "question": "Match List I (work by Rowe) with List II (date or literary role):\nList I:\na. The Fair Penitent\nb. Jane Shore\nc. Shakespeare edition\nd. Tamerlane\nList II:\n1. Edited collection published in 1709\n2. Tragedy published in 1703\n3. Historical tragedy about a conqueror\n4. Historical tragedy staged in 1714\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-4, d-3",
+        "a-4, b-1, c-3, d-2",
+        "a-2, b-4, c-1, d-3",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Fair Penitent was published in 1703, Jane Shore staged in 1714, and Rowe’s Shakespeare edition appeared in 1709; Tamerlane is a historical tragedy.",
+      "topic": "terms",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-m-48",
+      "question": "Match List I (poem by Finch) with List II (dominant concern):\nList I:\na. A Nocturnal Reverie\nb. The Spleen\nc. The Introduction\nd. The Petition for an Absolute Retreat\nList II:\n1. Obstacles to women’s authorship\n2. Nature and nocturnal quiet\n3. Friendship and the wish for retreat\n4. Melancholy\nChoose the correct option:",
+      "options": [
+        "a-2, b-3, c-1, d-4",
+        "a-3, b-4, c-1, d-2",
+        "a-3, b-4, c-2, d-1",
+        "a-2, b-4, c-1, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poems treat nighttime nature, melancholy, restrictions on women’s writing, friendship and withdrawal.",
+      "topic": "terms",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-m-49",
+      "question": "Arrange the following events in the correct chronological order:\n1. Three Dialogues between Hylas and Philonous is published\n2. A Treatise Concerning the Principles of Human Knowledge appears\n3. An Essay Towards a New Theory of Vision appears\n4. Hume’s Treatise begins publication\nChoose the correct sequence:",
+      "options": [
+        "3, 2, 1, 4",
+        "4, 2, 1, 3",
+        "4, 3, 1, 2",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Berkeley’s works appeared in 1709, 1710 and 1713, before Hume’s Treatise began in 1739.",
+      "topic": "terms",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-m-50",
+      "question": "Match List I (Humean concept or work) with List II (description):\nList I:\na. Impressions\nb. Ideas\nc. Custom\nd. An Enquiry Concerning Human Understanding\nList II:\n1. Habitual basis of expectations\n2. More vivid original perceptions\n3. Revised discussion of knowledge and miracles\n4. Fainter representations of impressions\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-2, d-1",
+        "a-2, b-4, c-1, d-3",
+        "a-1, b-4, c-2, d-3",
+        "a-1, b-3, c-4, d-2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hume separates impressions and ideas, grounds expectations in custom and examines knowledge in the Enquiry.",
+      "topic": "terms",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    }
+  ]
+}
