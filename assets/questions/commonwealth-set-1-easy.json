@@ -1,0 +1,877 @@
+{
+  "setId": "commonwealth-set-1",
+  "rev": 1,
+  "age": "commonwealth",
+  "ageName": "Commonwealth Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/jacobean-and-caroline-age/",
+  "notesTitle": "Jacobean and Caroline Literature (1603–1660)",
+  "topics": {
+    "ground": "The Commonwealth, Protectorate and Restoration",
+    "milton": "John Milton and his writings",
+    "marvell": "Andrew Marvell and his poetry",
+    "hobbes": "Thomas Hobbes and political philosophy",
+    "browne": "Sir Thomas Browne and prose",
+    "walton": "Izaak Walton and literary biography",
+    "vaughan": "Henry Vaughan and devotional verse",
+    "cowley": "Abraham Cowley and poetry",
+    "theatre": "Theatre closure and performance during the Interregnum"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on the Commonwealth, Protectorate, Milton, Marvell, Hobbes, Browne, Walton, Vaughan, Cowley and the theatre ban.",
+  "questions": [
+    {
+      "id": "commonwealth-set-1-e-01",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "In which year was Charles I executed?",
+      "options": [
+        "1649",
+        "1653",
+        "1660",
+        "1642"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Charles I was executed on 30 January 1649.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-02",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Which political system replaced the English monarchy in 1649?",
+      "options": [
+        "Glorious Revolution",
+        "Commonwealth",
+        "Tudor dynasty",
+        "Restoration monarchy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "England was declared a Commonwealth in May 1649.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-03",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Who became Lord Protector of England in 1653?",
+      "options": [
+        "James I",
+        "Oliver Cromwell",
+        "Thomas Fairfax",
+        "Charles II"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cromwell took office as Lord Protector in December 1653.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-04",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "What name is given to the period without an English monarch from 1649 to 1660?",
+      "options": [
+        "Regency",
+        "Augustan Age",
+        "Victorian Age",
+        "Interregnum"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Interregnum means the interval between reigns.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-05",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Which king returned to the English throne at the Restoration of 1660?",
+      "options": [
+        "Charles II",
+        "Charles I",
+        "William III",
+        "James II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Charles II became king at the Restoration.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-06",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Who succeeded Oliver Cromwell as Lord Protector?",
+      "options": [
+        "George Monck",
+        "Richard Cromwell",
+        "John Pym",
+        "Henry Cromwell"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Oliver's son Richard briefly succeeded him in 1658.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-07",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "In which year did Oliver Cromwell die?",
+      "options": [
+        "1651",
+        "1649",
+        "1658",
+        "1665"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Cromwell died on 3 September 1658.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-08",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Which group was especially influential in opposing public stage plays in the 1640s?",
+      "options": [
+        "Pre-Raphaelites",
+        "Puritans",
+        "Romantics",
+        "Imagists"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Puritan opposition contributed to theatre suppression.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-09",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "In which year did Parliament order public stage plays to cease?",
+      "options": [
+        "1653",
+        "1649",
+        "1660",
+        "1642"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The theatre-closure order dates to 2 September 1642.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-10",
+      "qtype": "direct",
+      "topic": "ground",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Which document established the Protectorate in 1653?",
+      "options": [
+        "Magna Carta",
+        "Bill of Rights",
+        "Instrument of Government",
+        "Act of Union"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Instrument of Government provided the Protectorate's constitutional basis.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-11",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "Who wrote Paradise Lost?",
+      "options": [
+        "John Milton",
+        "Abraham Cowley",
+        "Henry Vaughan",
+        "Andrew Marvell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Paradise Lost is Milton's epic.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-12",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "In which year was Paradise Lost first published?",
+      "options": [
+        "1644",
+        "1667",
+        "1651",
+        "1678"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Its first edition appeared in 1667.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-13",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "paradise-regained",
+      "periodId": "commonwealth",
+      "question": "Which epic is a sequel to Paradise Lost?",
+      "options": [
+        "The Prelude",
+        "The Faerie Queene",
+        "Davideis",
+        "Paradise Regained"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton published Paradise Regained in 1671.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-14",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "areopagitica",
+      "periodId": "commonwealth",
+      "question": "Who wrote Areopagitica?",
+      "options": [
+        "Sir Thomas Browne",
+        "Izaak Walton",
+        "Thomas Hobbes",
+        "John Milton"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton wrote Areopagitica in 1644.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-15",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "areopagitica",
+      "periodId": "commonwealth",
+      "question": "What issue does Areopagitica chiefly address?",
+      "options": [
+        "Angling ethics",
+        "Freedom of unlicensed printing",
+        "The divine right of kings",
+        "Rules for fishing"
+      ],
+      "correct_option_id": 1,
+      "explanation": "It argues against pre-publication licensing.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-16",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "samson-agonistes",
+      "periodId": "commonwealth",
+      "question": "Which Miltonic work dramatizes the biblical story of Samson?",
+      "options": [
+        "Lycidas",
+        "The Tenure of Kings and Magistrates",
+        "Samson Agonistes",
+        "Comus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Samson Agonistes is Milton's closet tragedy.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-17",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "lycidas",
+      "periodId": "commonwealth",
+      "question": "Which early Milton poem mourns Edward King?",
+      "options": [
+        "The Passion",
+        "On the Morning of Christ's Nativity",
+        "Il Penseroso",
+        "Lycidas"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Lycidas is a pastoral elegy for Edward King.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-18",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "john-milton",
+      "periodId": "commonwealth",
+      "question": "Which Milton poem presents a masque performed at Ludlow Castle?",
+      "options": [
+        "L'Allegro",
+        "Paradise Regained",
+        "Eikonoklastes",
+        "Comus"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Comus is Milton's masque.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-19",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "Which literary form is primarily used in Paradise Lost?",
+      "options": [
+        "Blank verse",
+        "Ballad metre",
+        "Spenserian stanzas",
+        "Heroic couplets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The epic is written in unrhymed iambic pentameter.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-20",
+      "qtype": "direct",
+      "topic": "milton",
+      "topicId": "paradise-lost",
+      "periodId": "commonwealth",
+      "question": "Which biblical figures are central to Paradise Lost?",
+      "options": [
+        "David and Jonathan",
+        "Ruth and Boaz",
+        "Moses and Aaron",
+        "Adam and Eve"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Fall of Adam and Eve is central to the epic.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-21",
+      "qtype": "direct",
+      "topic": "marvell",
+      "topicId": "to-his-coy-mistress",
+      "periodId": "commonwealth",
+      "question": "Who wrote To His Coy Mistress?",
+      "options": [
+        "John Milton",
+        "Abraham Cowley",
+        "Henry Vaughan",
+        "Andrew Marvell"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Marvell authored the carpe diem poem.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-22",
+      "qtype": "direct",
+      "topic": "marvell",
+      "topicId": "to-his-coy-mistress",
+      "periodId": "commonwealth",
+      "question": "To His Coy Mistress is chiefly a poem about what?",
+      "options": [
+        "Sea exploration",
+        "Love and the urgency of time",
+        "Pastoral fishing",
+        "The English crown"
+      ],
+      "correct_option_id": 1,
+      "explanation": "It urges love in the face of mortality.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-23",
+      "qtype": "direct",
+      "topic": "marvell",
+      "topicId": "andrew-marvell",
+      "periodId": "commonwealth",
+      "question": "Which poet wrote The Garden?",
+      "options": [
+        "Thomas Hobbes",
+        "Andrew Marvell",
+        "Sir Thomas Browne",
+        "Izaak Walton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Garden is by Andrew Marvell.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-24",
+      "qtype": "direct",
+      "topic": "marvell",
+      "topicId": "andrew-marvell",
+      "periodId": "commonwealth",
+      "question": "Which political leader is the subject of Marvell's Horatian Ode?",
+      "options": [
+        "Charles II",
+        "William of Orange",
+        "Oliver Cromwell",
+        "Henry VIII"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The poem concerns Cromwell's return from Ireland.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-25",
+      "qtype": "direct",
+      "topic": "marvell",
+      "topicId": "andrew-marvell",
+      "periodId": "commonwealth",
+      "question": "What is the usual literary classification of Andrew Marvell?",
+      "options": [
+        "Elizabethan chronicler",
+        "Metaphysical poet",
+        "Modernist dramatist",
+        "Romantic novelist"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Marvell is often associated with metaphysical poetry.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-26",
+      "qtype": "direct",
+      "topic": "hobbes",
+      "topicId": "leviathan",
+      "periodId": "commonwealth",
+      "question": "Who wrote Leviathan?",
+      "options": [
+        "Thomas Browne",
+        "John Milton",
+        "John Locke",
+        "Thomas Hobbes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Leviathan appeared in 1651.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-27",
+      "qtype": "direct",
+      "topic": "hobbes",
+      "topicId": "leviathan",
+      "periodId": "commonwealth",
+      "question": "In which year was Leviathan published?",
+      "options": [
+        "1688",
+        "1642",
+        "1667",
+        "1651"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hobbes published Leviathan in 1651.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-28",
+      "qtype": "direct",
+      "topic": "hobbes",
+      "topicId": "leviathan",
+      "periodId": "commonwealth",
+      "question": "Leviathan is chiefly a work of what kind?",
+      "options": [
+        "Political philosophy",
+        "Pastoral poetry",
+        "Devotional biography",
+        "Stage tragedy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "It explains sovereignty and political authority.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-29",
+      "qtype": "direct",
+      "topic": "hobbes",
+      "topicId": "thomas-hobbes",
+      "periodId": "commonwealth",
+      "question": "What is the familiar name for Hobbes's imagined condition without common government?",
+      "options": [
+        "Golden Age",
+        "Restoration",
+        "State of nature",
+        "Age of Reason"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The state of nature is key to his political argument.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-30",
+      "qtype": "direct",
+      "topic": "hobbes",
+      "topicId": "thomas-hobbes",
+      "periodId": "commonwealth",
+      "question": "According to Hobbes, a strong sovereign chiefly prevents what?",
+      "options": [
+        "Civil conflict and insecurity",
+        "The growth of poetry",
+        "Trade across borders",
+        "Scientific discovery"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sovereignty is meant to secure peace.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-31",
+      "qtype": "direct",
+      "topic": "browne",
+      "topicId": "religio-medici",
+      "periodId": "commonwealth",
+      "question": "Who wrote Religio Medici?",
+      "options": [
+        "Thomas Hobbes",
+        "Izaak Walton",
+        "John Milton",
+        "Sir Thomas Browne"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Browne wrote Religio Medici.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-32",
+      "qtype": "direct",
+      "topic": "browne",
+      "topicId": "religio-medici",
+      "periodId": "commonwealth",
+      "question": "What does the Latin title Religio Medici mean?",
+      "options": [
+        "The Religion of a Physician",
+        "The Law of the King",
+        "The Garden of the Soul",
+        "The Art of Angling"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The title identifies a physician's religious reflections.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-33",
+      "qtype": "direct",
+      "topic": "browne",
+      "topicId": "thomas-browne",
+      "periodId": "commonwealth",
+      "question": "Which Browne work is also known as Urn-Burial?",
+      "options": [
+        "Hydriotaphia",
+        "The Compleat Angler",
+        "The Garden",
+        "Leviathan"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hydriotaphia is Browne's meditation on burial and mortality.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-34",
+      "qtype": "direct",
+      "topic": "browne",
+      "topicId": "thomas-browne",
+      "periodId": "commonwealth",
+      "question": "Who wrote Pseudodoxia Epidemica?",
+      "options": [
+        "Henry Vaughan",
+        "Andrew Marvell",
+        "Sir Thomas Browne",
+        "Abraham Cowley"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Browne examined widely held errors in Pseudodoxia Epidemica.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-35",
+      "qtype": "direct",
+      "topic": "browne",
+      "topicId": "thomas-browne",
+      "periodId": "commonwealth",
+      "question": "What was Sir Thomas Browne's profession?",
+      "options": [
+        "Playwright",
+        "Naval officer",
+        "Printer",
+        "Physician"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Browne trained and practised as a physician.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-36",
+      "qtype": "direct",
+      "topic": "walton",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "Who wrote The Compleat Angler?",
+      "options": [
+        "Abraham Cowley",
+        "John Milton",
+        "Izaak Walton",
+        "Thomas Hobbes"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Walton's classic treats fishing and the contemplative life.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-37",
+      "qtype": "direct",
+      "topic": "walton",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "The Compleat Angler was first published in which year?",
+      "options": [
+        "1653",
+        "1642",
+        "1667",
+        "1700"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Its first edition was published in 1653.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-38",
+      "qtype": "direct",
+      "topic": "walton",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "What activity is central to The Compleat Angler?",
+      "options": [
+        "Fishing",
+        "Hunting",
+        "Navigation",
+        "Acting"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Angling means fishing with rod and line.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-39",
+      "qtype": "direct",
+      "topic": "walton",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "Which writer is famous for biographical Lives of John Donne and George Herbert?",
+      "options": [
+        "Andrew Marvell",
+        "Abraham Cowley",
+        "Izaak Walton",
+        "Thomas Hobbes"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Walton wrote influential literary lives.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-40",
+      "qtype": "direct",
+      "topic": "walton",
+      "topicId": "izaak-walton",
+      "periodId": "commonwealth",
+      "question": "Which of these is a prose work by Izaak Walton?",
+      "options": [
+        "Silex Scintillans",
+        "Davideis",
+        "The Compleat Angler",
+        "Samson Agonistes"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Compleat Angler is Walton's prose classic.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-41",
+      "qtype": "direct",
+      "topic": "vaughan",
+      "topicId": "henry-vaughan",
+      "periodId": "commonwealth",
+      "question": "Who wrote Silex Scintillans?",
+      "options": [
+        "Sir Thomas Browne",
+        "Abraham Cowley",
+        "Andrew Marvell",
+        "Henry Vaughan"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Vaughan published Silex Scintillans in 1650 and 1655.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-42",
+      "qtype": "direct",
+      "topic": "vaughan",
+      "topicId": "henry-vaughan",
+      "periodId": "commonwealth",
+      "question": "Henry Vaughan is especially known for which kind of poetry?",
+      "options": [
+        "Restoration comedy",
+        "Religious and devotional poetry",
+        "Epic satire",
+        "Gothic ballads"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Vaughan is a religious metaphysical poet.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-43",
+      "qtype": "direct",
+      "topic": "vaughan",
+      "topicId": "henry-vaughan",
+      "periodId": "commonwealth",
+      "question": "Which poet strongly influenced Henry Vaughan's religious verse?",
+      "options": [
+        "Lord Byron",
+        "George Herbert",
+        "Alexander Pope",
+        "John Keats"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Vaughan acknowledged Herbert's spiritual influence.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-44",
+      "qtype": "direct",
+      "topic": "vaughan",
+      "topicId": "henry-vaughan",
+      "periodId": "commonwealth",
+      "question": "Who wrote The Retreat?",
+      "options": [
+        "Thomas Hobbes",
+        "Henry Vaughan",
+        "Izaak Walton",
+        "Sir Thomas Browne"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Retreat is a Vaughan poem about childhood and spiritual memory.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-45",
+      "qtype": "direct",
+      "topic": "vaughan",
+      "topicId": "henry-vaughan",
+      "periodId": "commonwealth",
+      "question": "What language supplies the title Silex Scintillans?",
+      "options": [
+        "French",
+        "Latin",
+        "Italian",
+        "Old English"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The title is Latin, often translated as The Fiery Flint.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-46",
+      "qtype": "direct",
+      "topic": "cowley",
+      "topicId": "abraham-cowley",
+      "periodId": "commonwealth",
+      "question": "Who wrote Davideis?",
+      "options": [
+        "John Milton",
+        "Abraham Cowley",
+        "Andrew Marvell",
+        "Henry Vaughan"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Davideis is Cowley's unfinished biblical epic.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-47",
+      "qtype": "direct",
+      "topic": "cowley",
+      "topicId": "abraham-cowley",
+      "periodId": "commonwealth",
+      "question": "Which poet is especially associated with English Pindaric odes?",
+      "options": [
+        "Izaak Walton",
+        "Abraham Cowley",
+        "Sir Thomas Browne",
+        "Thomas Hobbes"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cowley popularized the irregular Pindaric ode in English.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-48",
+      "qtype": "direct",
+      "topic": "cowley",
+      "topicId": "abraham-cowley",
+      "periodId": "commonwealth",
+      "question": "Which work is a collection of love poems by Abraham Cowley?",
+      "options": [
+        "Religio Medici",
+        "The Garden of Cyrus",
+        "The Temple",
+        "The Mistress"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Mistress includes Cowley's love verse.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-49",
+      "qtype": "direct",
+      "topic": "cowley",
+      "topicId": "abraham-cowley",
+      "periodId": "commonwealth",
+      "question": "Cowley is commonly grouped with which school of poets?",
+      "options": [
+        "War poets",
+        "Metaphysical poets",
+        "Lake poets",
+        "Movement poets"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cowley is commonly discussed among the metaphysicals.",
+      "src": "user-supplied: AK Explained practice question"
+    },
+    {
+      "id": "commonwealth-set-1-e-50",
+      "qtype": "direct",
+      "topic": "theatre",
+      "topicId": "commonwealth",
+      "periodId": "commonwealth",
+      "question": "Which event in 1660 enabled the reopening of public theatres in England?",
+      "options": [
+        "The Restoration",
+        "The Glorious Revolution",
+        "The Gunpowder Plot",
+        "The Great Fire"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Restoration brought licensed professional theatre back into prominence.",
+      "src": "user-supplied: AK Explained practice question"
+    }
+  ]
+}
