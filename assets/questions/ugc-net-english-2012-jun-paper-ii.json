@@ -1,0 +1,911 @@
+{
+  "setId": "ugc-net-english-2012-jun-paper-ii",
+  "rev": 1,
+  "ageName": "UGC NET English",
+  "setName": "Paper II — June 2012",
+  "level": "all",
+  "levelName": "Full paper",
+  "title": "UGC NET English Paper II — June 2012",
+  "exam": "UGC NET",
+  "subject": "English",
+  "paper": "II",
+  "session": "June 2012",
+  "topics": {
+    "british": "British Literature",
+    "american": "American Literature",
+    "theory": "Criticism and Theory",
+    "postcolonial": "Indian and Postcolonial",
+    "terms": "Terms and Concepts"
+  },
+  "topicRead": {},
+  "sourceQuestionPaper": "https://www.ugcnetonline.in/showPdf.php?p1=question_papers/June2012_paper-II/J-30-12%20(English).pdf",
+  "sourceAnswerKey": "https://ugcnetonline.in/updated_keys/J2012_updatekeys/SC030_II.pdf",
+  "questions": [
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q01",
+      "questionNumber": 1,
+      "question": "Derrida makes use of the term ______ to refer to the unresolvable difficulties that a text may open up.",
+      "options": [
+        "aporia",
+        "difference",
+        "erasure",
+        "supplement"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In deconstruction theory, Derrida uses 'aporia' to refer to an impasse, perplexity, paradox, or irresolvable uncertainty within a text.",
+      "topic": "theory",
+      "topicId": "aporia",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q02",
+      "questionNumber": 2,
+      "question": "Who among the following English playwrights scripted the film Shakespeare in Love?",
+      "options": [
+        "Harold Pinter",
+        "Alan Bennett",
+        "Caryl Churchill",
+        "Tom Stoppard"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The film Shakespeare in Love (1998) was scripted by Tom Stoppard and Marc Norman and directed by John Madden.",
+      "topic": "british",
+      "topicId": "tom-stoppard",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q03",
+      "questionNumber": 3,
+      "question": "Arrange the following in chronological order: 1. Mary Wollstonecraft's A Vindication of the Rights of Woman 2. Lyrical Ballads 3. French Revolution 4. Percy's Reliques of Ancient English Poetry",
+      "options": [
+        "4, 3, 1, 2",
+        "3, 2, 1, 2",
+        "1, 2, 4, 3",
+        "2, 1, 3, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The source gives this order: Percy's Reliques of Ancient English Poetry (1765), French Revolution (1789), Mary Wollstonecraft's A Vindication of the Rights of Woman (1792), and Lyrical Ballads (1798).",
+      "topic": "british",
+      "topicId": "romanticism",
+      "periodId": "romantic",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q04",
+      "questionNumber": 4,
+      "question": "Which of the following employs a frame narrative structure in which the main action is relayed second-hand through an enclosing story?",
+      "options": [
+        "Sons and Lovers",
+        "Ulysses",
+        "The Power and the Glory",
+        "Heart of Darkness"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Joseph Conrad's Heart of Darkness uses a frame narrative. Marlow narrates his experiences in Africa within an enclosing narrative.",
+      "topic": "british",
+      "topicId": "heart-of-darkness",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q05",
+      "questionNumber": 5,
+      "question": "The Irish Dramatic Movement was heralded by such figures as",
+      "options": [
+        "W. B. Yeats, Lady Gregory and Edward Martyn",
+        "Jonathan Swift and his contemporaries",
+        "H. Drummond, Edward Irving and John Ervine",
+        "Oscar Wilde and his contemporaries"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Irish Dramatic Movement was heralded by such figures as – W.B. Yeats, Lady Gregory and Edward Martyn. The Irish Literary Theatre was founded by Yeats. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-irish-literary-revival",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q06",
+      "questionNumber": 6,
+      "question": "Which poem by Chaucer was written on the death of Blanche, Wife of John of Gaunt?",
+      "options": [
+        "Troilus and Criseyde",
+        "The House of Fame",
+        "The Book of Duchess",
+        "The Legend of Good Women"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chaucer\"s \"The Book of the Duchess\" was written on the death of John of Gaunt\"s wife Blanche. This book also known as The Death of Blaunche, is a medieval dream narrative poem about a man who struggles to sleep and has grown apathetic with life. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-book-of-the-duchess",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q07",
+      "questionNumber": 7,
+      "question": "The Tragedy of Ferrex and Porrex is the other title of",
+      "options": [
+        "Gorboduc",
+        "Ralph Roister Doister",
+        "Damon and Pythias",
+        "Lamentable Tragedy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Tragedy of Ferrex and Porrex is the subtitle of Sackville and Norton\"s Gorboduc (1561). It is considered to be the first regular tragedy in English Literature. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "gorboduc",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q08",
+      "questionNumber": 8,
+      "question": "Who of the following poets is Australian?",
+      "options": [
+        "Austin Clarke",
+        "Judith Wright",
+        "Edwin Muir",
+        "Derek Walcott"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Judith Wright is of Australian origin, Austin Clarke - Irish, Edwin Muir - Scottish (Orkney), Derek Walcott - Caribbean (St. Lucia). Hence, option (b) will be correct answer.",
+      "topic": "postcolonial",
+      "topicId": "judith-wright",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q09",
+      "questionNumber": 9,
+      "question": "\"He found it [English] brick and left it marble\", remarked one great writer on another. Who were they?",
+      "options": [
+        "Milton on Shakespeare",
+        "Dryden on Shakespeare",
+        "Johnson on Dryden",
+        "Jonson on Shakespeare"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Samuel Johnson remarked on Dryden that \"he found it (English) brick and left it marble.\" He was praising Dryden through this statement. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "samuel-johnson",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q10",
+      "questionNumber": 10,
+      "question": "Who, among the following, is a Nobel Laureate?",
+      "options": [
+        "Toni Morrison",
+        "Seamus Heaney",
+        "Ted Hughes",
+        "Geoffrey Hill"
+      ],
+      "explanation": "The original UGC question asks for a Nobel Laureate. Both Toni Morrison (1993) and Seamus Heaney (1995) received the Nobel Prize in Literature. This test counts (b), Seamus Heaney.",
+      "topic": "british",
+      "topicId": "seamus-heaney",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012",
+      "correct_option_id": 1
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q11",
+      "questionNumber": 11,
+      "question": "List-I List-II I. \"Because I could a. Robert Frost not stop for death...\" II. \"O Captain! b. William Carlos My Captain!\" Williams III. \"Two roads diverged c. Emily Dickinson in a wood.....\" IV. \"So much d. Walt Whitman depends/upon\" The correctly matched series would be:",
+      "options": [
+        "I-d, II-c, III-b, IV-a",
+        "I-a, II-b, III-c, IV-d",
+        "I-b, II-a, III-d, IV-c",
+        "I-c, II-d, III-a, IV-b"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct matches are – I. \"Because I could not – c. Emily Dickinson stop for death.\" II. \"O Captain! – d. Walt Whitman My Captain!\" III. \"Two roads diverged – a. Robert Frost in a wood.\" IV. \" So much depends – b. William Carlos upon\" Williams. Hence, option (d) will be correct answer.",
+      "topic": "american",
+      "topicId": "american-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q12",
+      "questionNumber": 12,
+      "question": "The predominant tone and thrust of Jonathan Swift's \"A Modest Proposal\" are",
+      "options": [
+        "comic",
+        "solemn",
+        "hortatory",
+        "irony"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The predominant tone and thrust of J. Swift\"s A Modest Proposal (1729) is irony. The message behind this particular work was to ease poverty in the society. It addresses the poverty and oppression suffered by the Irish people at the hands of their English landlords. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "a-modest-proposal",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q13",
+      "questionNumber": 13,
+      "question": "I sit in one of the dives On Fifty Second Street, Uncertain and afraid As the clever hopes expire Of a low dishonest decade. So begins Auden's \"September 1, 1939\". What is the meaning of the \"word in italics?",
+      "options": [
+        "bench",
+        "night club",
+        "house",
+        "park"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In the above extract from Auden\"s September 1, 1939 the word \"dives\" refers to a night club. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q14",
+      "questionNumber": 14,
+      "question": "C. K. Ogden and I. A. Richards ware reputed in the 1930s for introducing",
+      "options": [
+        "Practical Criticism",
+        "New Criticism",
+        "Standard English Project",
+        "Basic English Project"
+      ],
+      "correct_option_id": 3,
+      "explanation": "C.K. Ogden and I.A. Richards were reputed in the 1930s for introducing – Basic English project. The design of Basic English drew heavily on the semiotic theory put forward by Ogden and Richards in their book The Meaning of Meaning (1923). Hence, option (d) will be correct answer.",
+      "topic": "terms",
+      "topicId": "i-a-richards",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q15",
+      "questionNumber": 15,
+      "question": "In which of the following works does Mrs. Malaprop appear?",
+      "options": [
+        "The Rivals",
+        "She Stoops to Conquer",
+        "The Mysteries of Udolpho",
+        "The Way of the World"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mrs. Malaprop appears in R.B. Sheridan\"s The Rivals (1775). The word Malapropism means to use a word that sounds like the intended word but in the wrong context. It was used by Shakespeare in his play Much Ado About Nothing. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-rivals",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q16",
+      "questionNumber": 16,
+      "question": "Which of the following statements about Christopher Marlowe are true? I. Edward II was written in the last year of Marlowe's life II. Many critics consider Doctor Faustus to be Marlowe's best play. III. His Spanish Tragedy comes a close second. IV. Marlowe was less educated than Shakespeare.",
+      "options": [
+        "I and II are true.",
+        "II and III are true.",
+        "II and IV are true.",
+        "III and IV are true."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Marlowe was a University Wit who was killed in a tavern brawl in 1593, the year in which Edward II was written and published next year. Doctor Faustus (pub. 1604) is considered his best play. The \"Spanish Tragedy\" was authored by Thomas Kyd. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "christopher-marlowe",
+      "periodId": "elizabethan",
+      "qtype": "combination",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q17",
+      "questionNumber": 17,
+      "question": "\"Art for Art's Sake\" became a rallying cry for:",
+      "options": [
+        "the Aesthetes",
+        "the Symbolists",
+        "the Imagists",
+        "the Art Noveau School"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Art for Art's sake became a rallying cry for The Aesthetes in 1880s. This was a French slogan. It means : Art should be independent of all Clap-trap, should stand alone and appeal to the artistic sense of eye or ear without confounding this with emotions entirely foreign to it, as devotion pity, love, patriotism and the like. Hence, option (a) will be correct answer.",
+      "topic": "theory",
+      "topicId": "aestheticism",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q18",
+      "questionNumber": 18,
+      "question": "Confessions of an English Opium Eater is a literary work by:",
+      "options": [
+        "S.T. Coleridge",
+        "P. B. Shelley",
+        "Thomas De Quincey",
+        "Lord Byron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thomas De Quincey wrote Confessions of an English Opium Eater in 1822. The book begins with an autobiographical account of the author's addiction. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "thomas-de-quincey",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q19",
+      "questionNumber": 19,
+      "question": "Which of the following statements about The Canterbury Tales is true?",
+      "options": [
+        "\"The General Prologue' is appended to The Canterbury Tales.",
+        "In all, Chaucer tells thirty tales in this work.",
+        "The Canterbury Tales remained unfinished at the time of its author's death.",
+        "The Wife of Bath, The Clerk, Sir Gawain and The Franklin are characters and tale-tellers in this work."
+      ],
+      "correct_option_id": 2,
+      "explanation": "The true fact from the above statements is that The Canterbury Tales remained unfinished at the time of its author\"s death. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-canterbury-tales",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q20",
+      "questionNumber": 20,
+      "question": "Who, among the following was a Catholic novelist, an Intelligence Officer, a film critic and set his fictions in far-away places wrecked by political conflicts?",
+      "options": [
+        "Anthony Powell",
+        "Evelyn Waugh",
+        "William Golding",
+        "Graham Greene"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The description refers to Graham Greene, a Catholic novelist who worked in intelligence and as a film critic, and set many works amid political conflict.",
+      "topic": "british",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q21",
+      "questionNumber": 21,
+      "question": "List-I List-II 1. Good sense is the I. Brooks, The body of poetic genius Formalist Critic 2. Poetry is the breath II. Sidney, Defence/ and a finer spirit of An Apology all knowledge. for Poetry 3. Literary description criticism and III. Wordsworth, Preface evaluation of its object 4. Nature never set IV. Coleridge, forth the earth in as Biographia rich a tapestry as Literaria diverse poets have done 1 2 3 4",
+      "options": [
+        "IV III I II",
+        "II IV III I",
+        "III II I IV",
+        "IV II I III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct matches are – 1. Good sense is the – IV. Coleridge, body of poetic genius \"Biographia Literaria\" 2. Poetry is the breath – III. Wordsworth and a finer spirit 'Preface' of all 3. Literary criticism is the – I. Brooks, \"The description and Formalist Critic\" evaluation of its object 4. Nature never set forth – II. Sidney, \"Defence/ the earth in as rich a An Apology\" tapestry as diverse poets have done Hence, option (a) will be correct answer.",
+      "topic": "theory",
+      "topicId": "literary-criticism-and-theory",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q22",
+      "questionNumber": 22,
+      "question": "In which of the following travel books does Mark Twain give an account of his visit to India?",
+      "options": [
+        "A Tramp Abroad",
+        "Roughing It",
+        "The Innocents Abroad",
+        "Following the Equator"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mark Twain gave an account of his visit to India in his book \"Following the Equator\" (1897). Hence, option (d) will be correct answer.",
+      "topic": "american",
+      "topicId": "mark-twain",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q23",
+      "questionNumber": 23,
+      "question": "William Blake’s famous poems \"London\", \"The Sick Rose\", and \"The Tyger\" appear in",
+      "options": [
+        "Songs of Innocence",
+        "Songs of Experience",
+        "The Marriage of Heaven and Hell",
+        "Vision of the Daughters of Albion"
+      ],
+      "correct_option_id": 1,
+      "explanation": "William Blake\"s above mentioned poems appear in the collection Songs of Experience. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "songs-of-innocence-and-of-experience",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q24",
+      "questionNumber": 24,
+      "question": "Who among the following English artists illustrated novels by Dickens and Scott?",
+      "options": [
+        "Richard Hogarth",
+        "Joshua Reynolds",
+        "George Cruikshank",
+        "John Tennial"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The novels of Dickens and Scott were illustrated by George Cruikshank, a British caricaturist and illustrator.",
+      "topic": "british",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q25",
+      "questionNumber": 25,
+      "question": "The last voyage in Gulliver's Travels is to:",
+      "options": [
+        "The Land of the Houyhnhnms",
+        "The Land of Homosapiens",
+        "The Land of the Hurricanes",
+        "The Newfound Land"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Gulliver's final voyage in Swift's Gulliver's Travels is to the land of the Houyhnhnms.",
+      "topic": "british",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q26",
+      "questionNumber": 26,
+      "question": "Madam Merle is a character in",
+      "options": [
+        "The Great Gatsby",
+        "The Portrait of a Lady",
+        "The Jungle",
+        "The Heart is a Lonely Hunter"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Madame Merle is a character in Henry James's The Portrait of a Lady (1881), which explores personal freedom, betrayal, and relationships.",
+      "topic": "british",
+      "topicId": "the-portrait-of-a-lady",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q27",
+      "questionNumber": 27,
+      "question": "In which of the following scenes of The Waste Land do we find a departure from Standard English?",
+      "options": [
+        "The typist scene",
+        "The pub scene",
+        "The hyacinth garden scene",
+        "The Chapel Perilous scene"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The departure from Standard English appears in the pub scene in T. S. Eliot's The Waste Land.",
+      "topic": "british",
+      "topicId": "the-waste-land",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q28",
+      "questionNumber": 28,
+      "question": "The words \"If it were done when ’tis done, then ’twere well / It were done quickly\" are uttered by",
+      "options": [
+        "Hamlet",
+        "Lear",
+        "Othello",
+        "Macbeth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The quoted lines are from Macbeth's soliloquy in Shakespeare's Macbeth.",
+      "topic": "british",
+      "topicId": "macbeth",
+      "periodId": "jacobean-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q29",
+      "questionNumber": 29,
+      "question": "John Dryden's Absalom and Achitophel is a :",
+      "options": [
+        "religious tract",
+        "political allegory",
+        "comic verse epic",
+        "comedy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Dryden's Absalom and Achitophel (1681) is a political allegory satirising figures such as Shaftesbury (Achitophel) and the Duke of Monmouth (Absalom).",
+      "topic": "british",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q30",
+      "questionNumber": 30,
+      "question": "The term 'the comedy of menace' is associated with the early plays of",
+      "options": [
+        "Arnold Wesker",
+        "John Arden",
+        "Harold Pinter",
+        "David Hare"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Harold Pinter's early plays, including The Birthday Party (1958), are associated with the Comedy of Menace.",
+      "topic": "british",
+      "topicId": "comedy-of-menace",
+      "periodId": "contemporary",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q31",
+      "questionNumber": 31,
+      "question": "Examine the following statements and identify one of them which is not true.",
+      "options": [
+        "Rudyard Kipling died in the year 1936.",
+        "He was born in India but schooled in England.",
+        "He returned to India as a police constable in Burma.",
+        "He is the author of Jungle Book and Barrack Room Ballads."
+      ],
+      "correct_option_id": 2,
+      "explanation": "The incorrect statement about Kipling is (c) because he worked as a journalist in India and not as a constable in Burma. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "rudyard-kipling",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q32",
+      "questionNumber": 32,
+      "question": "What is the correct combination of the following? I. Balachandra a. The Tamarind Rajan Tree II. R. K. Narayan b. The Coffer Dams III. Kamala c. The Dark Dancer Markandaya IV. Romen Basu d. The Dark Room",
+      "options": [
+        "I-c; II-d; III-b; IV-a",
+        "I-d; II-a; III-b; IV-c",
+        "I-c; II-a; III-d; IV-b",
+        "I-d; II-c; III-a; IV-b"
+      ],
+      "explanation": "The UGC key dropped this question and gave credit to all candidates. This practice test counts (a), the matching combination supplied in the tagged file: Balachandra Rajan—The Dark Dancer; R. K. Narayan—The Dark Room; Kamala Markandaya—The Coffer Dams; Romen Basu—The Tamarind Tree.",
+      "topic": "postcolonial",
+      "topicId": "indian-writing-in-english",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, June 2012",
+      "correct_option_id": 0
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q33",
+      "questionNumber": 33,
+      "question": "Name the poet who chooses his successor and the successor-poet whom Dryden satirises in his famous poem.",
+      "options": [
+        "James Shirley and Chris Shirley",
+        "Henry Treece and Charles Triesten",
+        "Richard Flecknoe and Thomas Shadwell",
+        "Thomas Percy and Samuel Pepys"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In his Absalom and Achitophel (1681) Dryden satirises Richard Flecknoe and Thomas Shadwell. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "mac-flecknoe",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q34",
+      "questionNumber": 34,
+      "question": "\"If______ comes, can _____ be far behind ?\" (Shelley, \"Ode to the West Wind\")",
+      "options": [
+        "winter, spring",
+        "autumn, summer",
+        "wind, rains",
+        "spring, winter"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In his poem Ode to the West Wind Shelley says – \"If winter comes, can spring be far behind.\" This shows the optimistic approach of Shelley. Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "ode-to-the-west-wind",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q35",
+      "questionNumber": 35,
+      "question": "The following passages are the very first lines of well-known works. Match the lines and the works: I. Let us go then, a. Moby dick you and I..... II. Call me b. Macbeth Ishmael..... III. When shall we c. The Love Song three meet again? of J. Alfred Prufrock IV. He disappeared d. Tristram Shandy in the dead of winter V. I wish either.... e. In Memory of begot me.... of W. B. Yeats",
+      "options": [
+        "I-c; II-a; III-b; IV-e;V-d",
+        "I-e; II-b; III-a; IV-c;V-d",
+        "I-b; II-a; III-d; IV-e;V-c",
+        "I-b; II-e; III-d; IV-c;V-a"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct matches are – I. \"Let us go then, you – (c) T.S. Eliot\"s 'The and I\" Love Song of J. Alfred Prufrock' (1915) II. \"Call me Ishmael ..\" – (a) H. Melville\"s 'Moby Dick' (1851) III. \"When shall we – (b) Shakespeare\"s three meet again?\" \"Macbeth\" (1606) IV. \"He disappeared in – (e) W.H. Auden\"s the dead of winter\" 'In memory of W.B. Yeats' (1939) V. \"I wish either . . . – (d) L. Sterne\"s begot me . . .\" 'Tristram Shandy' (1759-67) Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "british-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q36",
+      "questionNumber": 36,
+      "question": "Which of the following is not a revenge tragedy?",
+      "options": [
+        "Hamlet",
+        "The Duchess of Malfi",
+        "Volpone",
+        "Gorboduc"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Volpone was a comedy by Ben Jonson printed in 1607 while Hamlet is a play by Shakespeare and Gorboduc is the first regular tragedy in English by Thomas Norton and Thomas Sackville. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "revenge-tragedy",
+      "periodId": "renaissance",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q37",
+      "questionNumber": 37,
+      "question": "What is a neologism ?",
+      "options": [
+        "A word with roots in a native language",
+        "A word whose meaning changes with every renewed use",
+        "A word newly coined or used in a new sense",
+        "An obsession with new words and phrases"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Neologism is a word newly coined or used in a new sense. Hence, option (c) will be correct answer.",
+      "topic": "terms",
+      "topicId": "literary-terms-and-devices",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q38",
+      "questionNumber": 38,
+      "question": "Which of the following is not true of Edward Said's Orientalism?",
+      "options": [
+        "Makes use of Foucault's concept of discursive formulation",
+        "Is one of the founding texts of Postcolonial theory",
+        "Makes use of Barthes' concept of writerly text",
+        "Utilizes the Gramscian notion of hegemony"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Said does not use Barthes\" concept of writerly text in Orientalism: Western Conceptions of the Orient (1978). Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "orientalism",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q39",
+      "questionNumber": 39,
+      "question": "Thomas Love Peacock classified poetry into 4 periods. They are :",
+      "options": [
+        "carbon, gold, silver and brass",
+        "brass, silver, gold and diamond",
+        "iron, gold, silver and brass",
+        "gold, platinum, silver and diamond"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Peacock classified poetry into iron, gold, silver and brass periods. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "thomas-love-peacock",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q40",
+      "questionNumber": 40,
+      "question": "Which among the following novels has more than one ending?",
+      "options": [
+        "Lucky Jim",
+        "The Prime of Jean Brodie",
+        "The French Lieutenant's Woman",
+        "The Clockwork Orange"
+      ],
+      "correct_option_id": 2,
+      "explanation": "John Fowle\"s The French Lieutenants's Woman (1969) has several endings. The first ending is that Charles married to Ernestina, the second with a successful reestablishment of a relationship with Sarah and the third with Charles Cast back into the world without a partner. Hence, option (c) will be correct answer.",
+      "topic": "british",
+      "topicId": "the-french-lieutenants-woman",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q41",
+      "questionNumber": 41,
+      "question": "\"You have seen how a man was made a slave; you shall see how a slave was made a man\" is an example of",
+      "options": [
+        "Bathos",
+        "Apostrophe",
+        "Chiasmus",
+        "Anti-climax"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The above statement is an example of criss- cross or Chiasmus. Chaiasmus is a two-part sentence or phrase, where the second part is a reversal of the first. Hence, option (c) will be correct answer.",
+      "topic": "terms",
+      "topicId": "chiasmus",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q42",
+      "questionNumber": 42,
+      "question": "Which of the following statements is NOT correct?",
+      "options": [
+        "Chaucer used the rhyme royal, a stanzaic form in some of his major poems.",
+        "Chaucer was the author of The Legend of Good Women.",
+        "Chaucer wrote in English when the court poetry of his day was written in Anglo- Norman and Latin.",
+        "Chaucer wrote The Book Named the Governor"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Thomas Elyot is the author of The Book named The Governor (1531) and not Chaucer. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "geoffrey-chaucer",
+      "periodId": "age-of-chaucer",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q43",
+      "questionNumber": 43,
+      "question": "Material feminism studies inequality in terms of",
+      "options": [
+        "only gender",
+        "only class",
+        "both class and gender",
+        "only patriarchy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Material feminism studies inequality in terms of both class and gender. This particular term was coined by Christine Delphy. It argues that material conditions of all sorts play a vital role in the social production of gender and assays the different ways in which women collaborate and participate in these productions. Hence, option (c) will be correct answer.",
+      "topic": "theory",
+      "topicId": "feminist-criticism",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q44",
+      "questionNumber": 44,
+      "question": "Who among the following is not an Irish writer?",
+      "options": [
+        "Oscar Wilde",
+        "Oliver Goldsmith",
+        "Edmund Burke",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Thomas Gray is an English writer from Eton, England while rest of the given writers are Irish. Hence, option (d) will be correct answer.",
+      "topic": "british",
+      "topicId": "british-literature",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q45",
+      "questionNumber": 45,
+      "question": "Entries in The Diary of Samuel Pepys begins after:",
+      "options": [
+        "The Restoration",
+        "The Glorious Revolution",
+        "The Reformation",
+        "The French Revolution"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Restoration (a) The year Diary 1660 and of Samuel continues Pepys till 1669. begins in the Hence, option (a) will be correct answer.",
+      "topic": "british",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q46",
+      "questionNumber": 46,
+      "question": "In a poem, a line may either be end stopped or:",
+      "options": [
+        "rhymed",
+        "broken",
+        "accented",
+        "run-on"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In a poem a line can be end stopped or run-on. Hence, option (d) will be correct answer.",
+      "topic": "terms",
+      "topicId": "enjambment",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q47",
+      "questionNumber": 47,
+      "question": "Which of the following poets wrote the essay \"Naipaul’s India and Mine\"?",
+      "options": [
+        "Kamala Das",
+        "R. Parthasarthy",
+        "A.K. Ramanujan",
+        "Nissim Ezekiel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Nissim Ezekiel wrote the essay 'Naipaul’s India and Mine' in response to Naipaul's view of India.",
+      "topic": "postcolonial",
+      "topicId": "nissim-ezekiel",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q48",
+      "questionNumber": 48,
+      "question": "Match the following: I. James Joyce 1. Peter Ackroyd II. T. S. Eliot 2. James Boswell III. Life of Johnson 3. Samuel Johnson IV. Lives of poets 4. Richard Ellman",
+      "options": [
+        "I-3; II-4; III-1; IV-2",
+        "I-4; II-1; III-2; IV-3",
+        "I-1; II-2; III-3; IV-4",
+        "I-2; II-3; III-1; IV-4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct matches are – I. \"James Joyce\" – 4. Richard Ellman II. \"T.S. Eliot\" – 1. Peter Ackroyd III. \"Life of Johnson\" – 2. James Boswell IV. \"Lives of Poets\" – 3. Samuel Johnson. Hence, option (b) will be correct answer.",
+      "topic": "british",
+      "topicId": "biography",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q49",
+      "questionNumber": 49,
+      "question": "\"The pen is mightier than the sword\" is an example of :",
+      "options": [
+        "simile",
+        "image",
+        "conceit",
+        "metonymy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "\"The pen is mightier than the sword\" is an example of metonymy, in which a thing is referred to by the name of something closely associated with it.",
+      "topic": "terms",
+      "topicId": "metonymy",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    },
+    {
+      "id": "ugc-net-english-paper-2-jun-2012-q50",
+      "questionNumber": 50,
+      "question": "An epilogue is :",
+      "options": [
+        "prefixed to a text which it introduces.",
+        "suffixed to a text which it sums up or extends.",
+        "a piece of writing or speech that formally begins a book",
+        "a piece of writing or speech that bears no relation to the text at hand"
+      ],
+      "correct_option_id": 1,
+      "explanation": "An epilogue is placed at the end of a work and sums up or extends it; a prologue appears at the beginning.",
+      "topic": "terms",
+      "topicId": "epilogue",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, June 2012"
+    }
+  ]
+}
