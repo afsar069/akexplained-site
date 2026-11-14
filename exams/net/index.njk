@@ -27,8 +27,19 @@ net_hub: true
 
   <section class="net-hub-section" aria-labelledby="net-resources-title">
     <h2 id="net-resources-title" class="net-section-title">Know the exam &amp; get your resources</h2>
-    <div class="net-resource-grid">
-      {% for item in netResources %}{% if item.group == 'resources' %}{{ action(item) }}{% endif %}{% endfor %}
+    <div class="net-paper-grid">
+      <section class="net-paper" aria-labelledby="net-know-title">
+        <header class="net-paper-head"><p>Exam information</p><h3 id="net-know-title">Know the exam</h3></header>
+        <div class="net-paper-actions">
+          {% for item in netResources %}{% if item.group == 'know' %}{{ action(item) }}{% endif %}{% endfor %}
+        </div>
+      </section>
+      <section class="net-paper" aria-labelledby="net-get-title">
+        <header class="net-paper-head"><p>Downloads</p><h3 id="net-get-title">Get your resources</h3></header>
+        <div class="net-paper-actions">
+          {% for item in netResources %}{% if item.group == 'get' %}{{ action(item) }}{% endif %}{% endfor %}
+        </div>
+      </section>
     </div>
   </section>
 

@@ -74,7 +74,6 @@
   font-weight:600;
   letter-spacing:normal;
 }
-.net-resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:16px}
 .net-action{
   display:flex;
   align-items:center;
@@ -242,8 +241,7 @@
 }
 
 @container (max-width:560px){
-  .net-resource-grid,.net-paper-grid{grid-template-columns:1fr}
-  .net-resource-grid{gap:0}
+  .net-paper-grid{grid-template-columns:1fr}
   .net-action{min-height:84px}
   .net-paper .net-action{min-height:84px}
   .net-mock{grid-template-columns:54px minmax(0,1fr);gap:16px;padding:22px 20px}
