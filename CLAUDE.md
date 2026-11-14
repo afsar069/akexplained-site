@@ -624,8 +624,9 @@ once. Update rules 3, 15, 16 and this rule, and `docs/self-serve-publish-plan.md
 
 ## 18. UGC NET PYQs (previous-year papers) — free, no login (owner, 2026-11-14)
 The NET hub's **UGC NET English PYQs** button opens `/exams/net/english-pyqs/` (`exams/net/english-pyqs/index.njk`, styles
-`.net-pyq-*` in `assets/net.css`): one group per year, newest first, one card per paper with its full name
-("UGC NET English Paper II — December 2012") and a Start button. Each paper is a CBT page at
+`.net-pyq-*` in `assets/net.css`): one group per year, newest first; inside a year one section per paper (Paper II, Paper III),
+with its cards oldest first (June, then December), each card numbered 1, 2 and carrying a Start button (owner, 2026-11-14). The full name
+("UGC NET English Paper II — December 2012") is the card's aria-label and the test page's title. Each paper is a CBT page at
 `/exams/net/english-pyqs/<slug>/` with its review at `.../review/` (`test.njk` and `review.njk` paginate over
 `_data/netPyqPapers.js`; markup in `_includes/net-pyq-cbt.njk`). The hub, the two routes and the sitemap lines all come
 from the registry `_data/netPyqs.json` (`slug`, `year`, `month`, `file`); the title, paper and question count are read

@@ -25,17 +25,28 @@ eyebrow: Previous-year question papers
         <small>{{ group.papers.length }} paper{% if group.papers.length != 1 %}s{% endif %}</small>
         <img class="net-pyq-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
       </summary>
-      <div class="net-pyq-grid">
-        {% for paper in group.papers %}
-        <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
-          <span class="net-pyq-card-copy">
-            <strong>{{ paper.title }}</strong>
-            <span>{{ paper.count }} questions · Free · No login</span>
-          </span>
-          <span class="net-pyq-go" aria-hidden="true">Start</span>
-        </a>
-        {% endfor %}
-      </div>
+      {% for section in group.sections %}
+      <section class="net-pyq-section" aria-labelledby="net-pyq-{{ group.year }}-{{ section.paper | lower }}">
+        <header class="net-pyq-section-head">
+          <h3 id="net-pyq-{{ group.year }}-{{ section.paper | lower }}">Paper {{ section.paper }}</h3>
+          <small>{{ section.papers.length }} paper{% if section.papers.length != 1 %}s{% endif %}, oldest first</small>
+        </header>
+        <ol class="net-pyq-grid">
+          {% for paper in section.papers %}
+          <li>
+            <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
+              <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
+              <span class="net-pyq-card-copy">
+                <strong>{{ paper.monthName }} {{ paper.year }}</strong>
+                <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Free · No login</span>
+              </span>
+              <span class="net-pyq-go" aria-hidden="true">Start</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ol>
+      </section>
+      {% endfor %}
     </details>
     {% endfor %}
   </div>
