@@ -1188,7 +1188,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
 }
 
 /* ---------- practice pages: painted header ----------
-   Used by Quizzes, MCQ Practice, PYQ and Mock Tests. The picture sits at 80%
+   Used by Quizzes, PYQ and Mock Tests (MCQ Practice and Daily have their own picture, below). The picture sits at 80%
    opacity and fades out at the bottom edge, into the page below. It replaces
    the small motif, which the build only adds to a plain .pagehead. */
 .pagehead-practice::before{
@@ -1204,16 +1204,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .pagehead-practice::before{opacity:.4;background-position:right bottom}
 }
 
-/* The MCQ practice head, larger — the same big, two-tone title as the Daily head,
-   but it keeps its own practice painting (not the Daily picture). */
-.pagehead-mcq{min-height:320px}
-.pagehead-mcq .eyebrow{letter-spacing:.24em}
-.pagehead-mcq h1{
-  font-size:clamp(2.4rem,5.8vw,4.1rem);line-height:1.05;font-weight:700;margin-bottom:12px;
-}
-.pagehead-mcq h1 em{font-style:normal;color:#A9741F}
-.pagehead-mcq p.lede{font-size:clamp(1.02rem,1.7vw,1.24rem);line-height:1.4;max-width:46ch}
-@media (max-width:760px){.pagehead-mcq{min-height:0}}
+/* The MCQ Practice page (/quizzes/mcq/) uses the Daily head below (.pagehead-daily): same picture, same title size. */
 
 /* =========================================================
    DAILY MCQ PAGE  —  /quizzes/daily/
