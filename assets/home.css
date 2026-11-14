@@ -150,6 +150,24 @@
 .agegrid{display:grid;gap:14px;grid-template-columns:repeat(2,1fr)}
 @media(min-width:620px){.agegrid{grid-template-columns:repeat(3,1fr)}}
 @media(min-width:1000px){.agegrid{grid-template-columns:repeat(5,1fr)}}
+/* Landing page: sirf do line dikhti hain (is-collapsed); "+" se poori list khulti hai. Column count upar wale breakpoints ke saath mel khata hai. */
+.agegrid.is-collapsed .agecard:nth-child(n+5){display:none}
+@media(min-width:620px){.agegrid.is-collapsed .agecard:nth-child(n+5){display:block}.agegrid.is-collapsed .agecard:nth-child(n+7){display:none}}
+@media(min-width:1000px){.agegrid.is-collapsed .agecard:nth-child(n+7){display:block}.agegrid.is-collapsed .agecard:nth-child(n+11){display:none}}
+.agemore-wrap{display:flex;justify-content:center;margin-top:18px}
+.agemore{
+  width:38px;height:38px;padding:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;
+  background:#fff;border:1px solid var(--card-line);color:var(--teal);
+  transition:background .2s,color .2s,border-color .2s;
+}
+.agemore[hidden]{display:none}
+.agemore:hover,.agemore:focus-visible{background:var(--teal);border-color:var(--teal);color:#fff}
+.agemore:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.agemore svg{display:block}
+.agemore .v{transform-box:fill-box;transform-origin:center;transition:transform .2s}
+.agemore[aria-expanded="true"] .v{transform:scaleY(0)}
+@media(prefers-reduced-motion:reduce){.agemore .v{transition:none}}
 .agecard{
   display:block;color:inherit;background:var(--paper);
   border:1px solid var(--card-line);border-radius:15px;padding:11px 11px 15px;
