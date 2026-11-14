@@ -1,0 +1,17 @@
+{
+  "20": {
+    "correct": 0,
+    "explanation": "The supplied UGC key gives credit to all candidates for this question. This practice test counts (a) as its single scoring option; it is not presented as the only officially accepted answer.",
+    "note": "The owner-supplied solved paper shows Right Answer: (*) and says all four options received credit."
+  },
+  "32": {
+    "correct": 0,
+    "explanation": "The supplied UGC key gives credit to all candidates because the choices do not fit the intended answer cleanly. This practice test counts (a): statements (C) and (D) are incorrect, while (A) and (B) are true.",
+    "note": "The owner-supplied solved paper shows Right Answer: (*)."
+  },
+  "74": {
+    "correct": 1,
+    "explanation": "The supplied UGC key gives credit to all candidates because none of the listed combinations is fully correct. This practice test counts (b) as its single scoring option; it is not an official unique answer.",
+    "note": "The owner-supplied solved paper shows Right Answer: (*). Its explanation identifies Theatre of Cruelty with Antonin Artaud, Theatre of the Oppressed with Augusto Boal, Expressionist Theatre with Frank Wedekind, and Agitprop with Safdar Hashmi."
+  }
+}
