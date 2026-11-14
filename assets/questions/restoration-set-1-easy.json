@@ -1,0 +1,873 @@
+{
+  "setId": "restoration-set-1",
+  "rev": 1,
+  "age": "restoration",
+  "ageName": "Restoration Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/restoration-age/",
+  "notesTitle": "Restoration — the full notes",
+  "topics": {
+    "ground": "The return of Charles II",
+    "drama": "The reopened stage",
+    "poetry": "Dryden and Milton",
+    "prose": "Bunyan and Pepys",
+    "terms": "Literary forms and terms"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on Charles II, theatres, Dryden, Congreve, Behn, Milton, Bunyan and Pepys.",
+  "questions": [
+    {
+      "id": "restoration-set-1-e-01",
+      "question": "In which year was Charles II restored to the English throne?",
+      "options": [
+        "1660",
+        "1642",
+        "1653",
+        "1688"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Charles II returned in May 1660 after the Interregnum, restoring the Stuart monarchy.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-02",
+      "question": "On what date did Charles II make his ceremonial return to London?",
+      "options": [
+        "30 January 1649",
+        "29 May 1660",
+        "2 September 1666",
+        "5 November 1688"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Charles II entered London on 29 May 1660, the day of his thirtieth birthday.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-03",
+      "question": "Which king was the father of the monarch restored in 1660?",
+      "options": [
+        "James II",
+        "James I",
+        "Charles I",
+        "William III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charles I was executed in 1649; his son Charles II regained the throne in 1660.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-04",
+      "question": "Who succeeded Charles II as monarch in 1685?",
+      "options": [
+        "William III",
+        "Charles I",
+        "Oliver Cromwell",
+        "James II"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Charles II died in February 1685, and his brother James, Duke of York, succeeded him.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-05",
+      "question": "Which document issued in April 1660 helped prepare the return of Charles II?",
+      "options": [
+        "Declaration of Breda",
+        "Act of Settlement",
+        "Instrument of Government",
+        "Bill of Rights"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Declaration of Breda promised pardons and qualified freedom of conscience.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-06",
+      "question": "Which English city suffered the Great Fire of 1666 during the Restoration?",
+      "options": [
+        "Canterbury",
+        "London",
+        "Bristol",
+        "Oxford"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Great Fire of September 1666 destroyed much of central London.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#social-life"
+    },
+    {
+      "id": "restoration-set-1-e-07",
+      "question": "Consider the following statements about the reign of Charles II:\nI. He returned to the English throne in 1660.\nII. The Great Fire of London occurred during his reign.\nIII. He was succeeded immediately by his father Charles I.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III",
+        "I and II only",
+        "II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charles II returned in 1660 and ruled during the fire of 1666. His brother James II succeeded him in 1685.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-e-08",
+      "question": "What happened to the public theatres after Charles II returned in 1660?",
+      "options": [
+        "They became church buildings",
+        "They were moved to universities",
+        "They were permanently abolished",
+        "They reopened under royal authority"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Charles II authorized companies to stage public plays, reversing the long closure.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-09",
+      "question": "Who managed the King’s Company after the reopening of the theatres?",
+      "options": [
+        "Thomas Killigrew",
+        "John Bunyan",
+        "William Davenant",
+        "Samuel Pepys"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Killigrew held the royal patent for the King’s Company.",
+      "topic": "drama",
+      "topicId": "thomas-killigrew",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-10",
+      "question": "Which playwright led the Duke’s Company under royal patronage?",
+      "options": [
+        "Thomas Shadwell",
+        "William Davenant",
+        "John Dryden",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Davenant managed the Duke’s Company, sponsored by the Duke of York.",
+      "topic": "drama",
+      "topicId": "william-davenant",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-11",
+      "question": "Who began performing female roles professionally on the English public stage after 1660?",
+      "options": [
+        "Clergymen only",
+        "Choirboys only",
+        "Women actresses",
+        "Members of Parliament"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Professional actresses became a defining feature of Restoration performance.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-12",
+      "question": "Which work did William Davenant present as a musical entertainment in 1656?",
+      "options": [
+        "The Country Wife",
+        "The Rover",
+        "The Way of the World",
+        "The Siege of Rhodes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Davenant’s The Siege of Rhodes was staged during the theatre restrictions.",
+      "topic": "drama",
+      "topicId": "william-davenant",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-13",
+      "question": "Who wrote the Restoration comedy The Way of the World?",
+      "options": [
+        "William Congreve",
+        "Aphra Behn",
+        "John Dryden",
+        "William Wycherley"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Congreve’s The Way of the World is a leading comedy of manners.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-14",
+      "question": "In which year was The Way of the World first performed?",
+      "options": [
+        "1677",
+        "1700",
+        "1660",
+        "1681"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Way of the World appeared on the London stage in 1700.",
+      "topic": "drama",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-15",
+      "question": "Which woman is Mirabell’s witty partner in The Way of the World?",
+      "options": [
+        "Hellena",
+        "Imoinda",
+        "Millamant",
+        "Sophia Western"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Millamant and Mirabell negotiate marriage as partners in wit.",
+      "topic": "drama",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-16",
+      "question": "Which male character courts Millamant in The Way of the World?",
+      "options": [
+        "Dorimant",
+        "Horner",
+        "Willmore",
+        "Mirabell"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mirabell and Millamant are the play’s central lovers.",
+      "topic": "drama",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-17",
+      "question": "Which play was Congreve’s first major theatrical success in 1693?",
+      "options": [
+        "The Old Bachelor",
+        "The Country Wife",
+        "All for Love",
+        "The Rover"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Old Bachelor established Congreve as a successful young dramatist in 1693.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-18",
+      "question": "Who wrote the comedy The Rover?",
+      "options": [
+        "Mary Astell",
+        "Aphra Behn",
+        "Anne Finch",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Aphra Behn wrote The Rover, a Restoration comedy staged in 1677.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-19",
+      "question": "In which year was Aphra Behn’s The Rover first performed?",
+      "options": [
+        "1700",
+        "1688",
+        "1677",
+        "1642"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Rover was staged in 1677 and became her best-known comedy.",
+      "topic": "drama",
+      "topicId": "the-rover",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-20",
+      "question": "Which prose work by Aphra Behn follows an African prince enslaved in Surinam?",
+      "options": [
+        "The Pilgrim’s Progress",
+        "The Way of the World",
+        "Grace Abounding",
+        "Oroonoko"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Oroonoko depicts an enslaved African prince and his resistance to oppression.",
+      "topic": "drama",
+      "topicId": "oroonoko",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-21",
+      "question": "Which playwright is often described as an early English woman who earned her living by writing?",
+      "options": [
+        "Aphra Behn",
+        "Lady Mary Wroth",
+        "Katherine Philips",
+        "Anne Killigrew"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Behn wrote plays and prose for income and helped establish professional female authorship.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-22",
+      "question": "Which play was Aphra Behn’s first staged work, performed in 1670?",
+      "options": [
+        "The Plain Dealer",
+        "The Forc’d Marriage",
+        "The Old Bachelor",
+        "The Rover"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Forc’d Marriage was staged in September 1670.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-23",
+      "question": "Given below are two statements:\nStatement I: Professional actresses appeared on the English public stage after the Restoration.\nStatement II: The royal patents of 1660 established two licensed theatrical companies.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The reopened theatres featured professional actresses and operated under two royal patents.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-e-24",
+      "question": "Arrange the following events in the correct chronological order:\n1. First performance of The Way of the World.\n2. First performance of Love for Love.\n3. First performance of The Old Bachelor.\n4. Restoration of Charles II.\nChoose the correct sequence:",
+      "options": [
+        "3, 4, 2, 1",
+        "4, 2, 3, 1",
+        "2, 3, 1, 4",
+        "4, 3, 2, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Charles II returned in 1660, followed by The Old Bachelor in 1693, Love for Love in 1695 and The Way of the World in 1700.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-25",
+      "question": "Consider the following statements about Aphra Behn:\nI. The Rover was staged in 1677.\nII. Oroonoko concerns an African prince who is enslaved.\nIII. Behn wrote The Way of the World.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Behn wrote The Rover and Oroonoko. The Way of the World was written by William Congreve.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-26",
+      "question": "Who became Poet Laureate in 1668?",
+      "options": [
+        "John Milton",
+        "John Dryden",
+        "Andrew Marvell",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Dryden was appointed Poet Laureate in 1668 during the reign of Charles II.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-27",
+      "question": "Which poet wrote Astraea Redux to welcome the returning monarch in 1660?",
+      "options": [
+        "Samuel Butler",
+        "John Bunyan",
+        "John Dryden",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Dryden’s Astraea Redux celebrates the return of Charles II.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-28",
+      "question": "Which poem by Dryden uses biblical characters to satirize the Exclusion Crisis?",
+      "options": [
+        "The Pilgrim’s Progress",
+        "The Rape of the Lock",
+        "Paradise Regained",
+        "Absalom and Achitophel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Absalom and Achitophel (1681) reshapes contemporary political conflict as biblical allegory.",
+      "topic": "poetry",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-29",
+      "question": "Which writer is ridiculed as the heir to dullness in Dryden’s MacFlecknoe?",
+      "options": [
+        "Thomas Shadwell",
+        "John Milton",
+        "Samuel Pepys",
+        "William Congreve"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dryden’s mock-heroic satire presents Shadwell as the successor of Flecknoe.",
+      "topic": "poetry",
+      "topicId": "thomas-shadwell",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-30",
+      "question": "Which Dryden tragedy retells the story of Antony and Cleopatra?",
+      "options": [
+        "The Rover",
+        "All for Love",
+        "Venice Preserv’d",
+        "Love for Love"
+      ],
+      "correct_option_id": 1,
+      "explanation": "All for Love (1677) reworks the lovers’ tragic story in blank verse.",
+      "topic": "poetry",
+      "topicId": "all-for-love",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#heroic-plays-and-tragedy"
+    },
+    {
+      "id": "restoration-set-1-e-31",
+      "question": "In which year did Paradise Lost first appear in print?",
+      "options": [
+        "1651",
+        "1700",
+        "1667",
+        "1678"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Milton’s epic Paradise Lost was first published in 1667.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-32",
+      "question": "Which biblical pair is central to the Fall described in Paradise Lost?",
+      "options": [
+        "Abraham and Sarah",
+        "David and Bathsheba",
+        "Samson and Delilah",
+        "Adam and Eve"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The epic narrates the temptation and fall of Adam and Eve.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-33",
+      "question": "Which kind of verse is used in Paradise Lost?",
+      "options": [
+        "Blank verse",
+        "Rhyme royal",
+        "Heroic couplets",
+        "Ballad metre"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Milton composed the epic in unrhymed iambic pentameter.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-34",
+      "question": "Which shorter epic did Milton publish alongside Samson Agonistes in 1671?",
+      "options": [
+        "Hudibras",
+        "Paradise Regained",
+        "The Faerie Queene",
+        "The Prelude"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Paradise Regained and Samson Agonistes appeared together in 1671.",
+      "topic": "poetry",
+      "topicId": "paradise-regained",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-35",
+      "question": "Which Milton work dramatizes a hero from the Book of Judges?",
+      "options": [
+        "Astraea Redux",
+        "The Rover",
+        "Samson Agonistes",
+        "The Country Wife"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Samson Agonistes presents the biblical hero’s final struggle in dramatic form.",
+      "topic": "poetry",
+      "topicId": "samson-agonistes",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-36",
+      "question": "Which poet of the Restoration had become blind before completing his great epic?",
+      "options": [
+        "John Dryden",
+        "William Congreve",
+        "Samuel Butler",
+        "John Milton"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton was blind when he completed and published Paradise Lost.",
+      "topic": "poetry",
+      "topicId": "john-milton",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-37",
+      "question": "Consider the following statements about John Dryden:\nI. He wrote Astraea Redux in 1660.\nII. He was appointed Poet Laureate in 1668.\nIII. He wrote The Pilgrim’s Progress.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dryden welcomed the returning king in Astraea Redux and became Poet Laureate in 1668. Bunyan wrote The Pilgrim’s Progress.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-e-38",
+      "question": "Who wrote The Pilgrim’s Progress?",
+      "options": [
+        "John Dryden",
+        "John Bunyan",
+        "Samuel Pepys",
+        "John Milton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Bunyan’s allegorical narrative follows Christian on a spiritual journey.",
+      "topic": "prose",
+      "topicId": "john-bunyan",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-39",
+      "question": "What is the name of the central pilgrim in Part I of The Pilgrim’s Progress?",
+      "options": [
+        "Mirabell",
+        "Willmore",
+        "Christian",
+        "Absalom"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Christian journeys from destruction toward salvation.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-40",
+      "question": "From which place does Christian begin his journey in The Pilgrim’s Progress?",
+      "options": [
+        "Heavenly City",
+        "Dorset Garden",
+        "Vanity Fair",
+        "City of Destruction"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Christian leaves the City of Destruction at the start of his pilgrimage.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-41",
+      "question": "What is the destination of Christian’s pilgrimage?",
+      "options": [
+        "Heavenly City",
+        "Surinam",
+        "City of London",
+        "Lilliput"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Heavenly City represents the goal of Christian’s spiritual journey.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-42",
+      "question": "Which writer kept a famous diary during the early Restoration?",
+      "options": [
+        "John Bunyan",
+        "Samuel Pepys",
+        "John Dryden",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pepys recorded everyday life, politics and disasters during the reign of Charles II.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-43",
+      "question": "What years are covered by Samuel Pepys’s celebrated diary?",
+      "options": [
+        "1700–1709",
+        "1688–1699",
+        "1660–1669",
+        "1640–1649"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Pepys kept his extensive diary from January 1660 until 1669.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-44",
+      "question": "Which institution employed Samuel Pepys during the Restoration?",
+      "options": [
+        "College of Heralds",
+        "Court of Star Chamber",
+        "Royal Mint",
+        "Navy Office"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pepys was a naval administrator and recorded his work in the Navy Office.",
+      "topic": "prose",
+      "topicId": "samuel-pepys",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-45",
+      "question": "Which disaster of 1666 did Pepys describe as an eyewitness?",
+      "options": [
+        "Great Fire of London",
+        "Great Storm of 1703",
+        "Black Death of 1348",
+        "Lisbon earthquake"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pepys witnessed and described the Great Fire in his diary.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-46",
+      "question": "In what year was Pepys’s diary first published?",
+      "options": [
+        "1755",
+        "1825",
+        "1660",
+        "1700"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His diary was written in shorthand and first printed in 1825.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-e-47",
+      "question": "Which genre satirizes fashionable society through witty dialogue and courtship intrigue?",
+      "options": [
+        "Mystery cycle",
+        "Morality play",
+        "Comedy of manners",
+        "Miracle play"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Comedy of manners exposes social pretension, flirtation and hypocrisy.",
+      "topic": "terms",
+      "topicId": "comedy-of-manners",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-e-48",
+      "question": "Which Restoration dramatic form commonly features grand heroes torn between love and honour?",
+      "options": [
+        "Domestic realism",
+        "Absurdist drama",
+        "Medieval interlude",
+        "Heroic drama"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Heroic drama favoured elevated action and a conflict between love and honour.",
+      "topic": "terms",
+      "topicId": "heroic-tragedy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#heroic-plays-and-tragedy"
+    },
+    {
+      "id": "restoration-set-1-e-49",
+      "question": "Which verse form is closely associated with Dryden’s satire and criticism?",
+      "options": [
+        "Heroic couplet",
+        "Ottava rima",
+        "Ballad stanza",
+        "Spenserian stanza"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A heroic couplet consists of two rhyming iambic-pentameter lines.",
+      "topic": "terms",
+      "topicId": "heroic-couplet",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#key-terms"
+    },
+    {
+      "id": "restoration-set-1-e-50",
+      "question": "What literary form describes characters and places standing for abstract ideas in Bunyan’s narrative?",
+      "options": [
+        "Mock-epic",
+        "Allegory",
+        "Pastoral elegy",
+        "Farce"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In allegory, story elements represent moral or spiritual meanings beyond the literal action.",
+      "topic": "terms",
+      "topicId": "allegory",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#key-terms"
+    }
+  ]
+}

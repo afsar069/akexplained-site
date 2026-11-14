@@ -1,0 +1,873 @@
+{
+  "setId": "restoration-set-1",
+  "rev": 1,
+  "age": "restoration",
+  "ageName": "Restoration Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/restoration-age/",
+  "notesTitle": "Restoration — the full notes",
+  "topics": {
+    "ground": "The return of Charles II",
+    "drama": "The reopened stage",
+    "poetry": "Dryden and Milton",
+    "prose": "Bunyan and Pepys",
+    "terms": "Literary forms and terms"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Analytical questions on Restoration history, drama, poetry and prose, with statements, chronology and matching.",
+  "questions": [
+    {
+      "id": "restoration-set-1-m-01",
+      "question": "Which political controversy sought to prevent Charles II’s Catholic brother from succeeding him?",
+      "options": [
+        "Exclusion Crisis",
+        "Gunpowder Plot",
+        "Glorious Revolution",
+        "Pilgrimage of Grace"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Exclusion Crisis of 1679–81 attempted to remove James, Duke of York, from the succession.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-02",
+      "question": "Which politician supported the Duke of Monmouth during the Exclusion Crisis?",
+      "options": [
+        "Duke of Wellington",
+        "Earl of Shaftesbury",
+        "Earl of Essex under Elizabeth I",
+        "Oliver Cromwell"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shaftesbury helped lead attempts to exclude James and supported the Protestant Monmouth.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-03",
+      "question": "Which Portuguese princess brought Bombay as part of her marriage dowry to Charles II?",
+      "options": [
+        "Mary of Modena",
+        "Henrietta Maria",
+        "Catherine of Braganza",
+        "Anne of Denmark"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charles married Catherine of Braganza in 1662, and Bombay was included in her dowry.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-04",
+      "question": "Which accusation caused widespread anti-Catholic panic in England in 1678?",
+      "options": [
+        "Rye House Plot of 1683",
+        "Gunpowder Plot of 1605",
+        "Meal-Tub Plot of 1681",
+        "Popish Plot"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Titus Oates’s false Popish Plot allegations triggered panic and persecution in 1678.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-05",
+      "question": "Consider the following statements about the Restoration settlement:\nI. Charles II issued the Declaration of Breda before returning to England.\nII. The Declaration of Breda offered pardon to most former opponents.\nIII. The restored monarch abolished Parliament permanently in 1660.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Declaration of Breda preceded Charles’s return and offered qualified pardon. Parliament continued to function under the restored monarchy.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-06",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): The succession of James, Duke of York, became controversial under Charles II.\nReason (R): James was Roman Catholic, raising fears among many English Protestants.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)",
+        "(A) is false, but (R) is true",
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)"
+      ],
+      "correct_option_id": 1,
+      "explanation": "James’s religion fuelled Protestant opposition to his succession during the Exclusion Crisis.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-07",
+      "question": "Arrange the following events in the correct chronological order:\n1. Great Fire of London.\n2. Charles II returns to London.\n3. Charles II dies.\n4. Popish Plot allegations gain currency.\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 1, 3",
+        "4, 1, 2, 3",
+        "2, 1, 4, 3",
+        "1, 2, 4, 3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The dates are 1660 for the return, 1666 for the fire, 1678 for the Popish Plot and 1685 for Charles’s death.",
+      "topic": "ground",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#political-life"
+    },
+    {
+      "id": "restoration-set-1-m-08",
+      "question": "What was significant about Davenant’s The Siege of Rhodes in 1656?",
+      "options": [
+        "It rewrote King Lear with a happy ending",
+        "It was Dryden’s first court comedy",
+        "It granted a royal patent to the King’s Company",
+        "It presented sung drama despite restrictions on stage plays"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Its musical format allowed a theatrical entertainment under the Interregnum restrictions.",
+      "topic": "drama",
+      "topicId": "william-davenant",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-09",
+      "question": "Which Shakespeare play opened the King’s Company in November 1660?",
+      "options": [
+        "Henry IV, Part 1",
+        "The Tempest",
+        "Macbeth",
+        "King Lear"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Killigrew’s company reopened with Henry IV, Part 1 in a converted tennis court.",
+      "topic": "drama",
+      "topicId": "thomas-killigrew",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-10",
+      "question": "Whose adaptation gave King Lear a happy ending in 1681?",
+      "options": [
+        "John Dryden",
+        "Nahum Tate",
+        "Thomas Otway",
+        "William Congreve"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Nahum Tate rewrote King Lear so that Lear and Cordelia survive.",
+      "topic": "drama",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-11",
+      "question": "What is the purpose of the famous proviso scene in The Way of the World?",
+      "options": [
+        "To depict the battle of Worcester",
+        "To report a plague outbreak in London",
+        "To negotiate terms of marriage between two lovers",
+        "To crown an epic monarch"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Mirabell and Millamant discuss personal freedom and obligations before marriage.",
+      "topic": "drama",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-12",
+      "question": "Which Congreve comedy followed The Old Bachelor and The Double-Dealer in 1695?",
+      "options": [
+        "The Rover",
+        "The Rehearsal",
+        "The Country Wife",
+        "Love for Love"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Congreve’s Love for Love appeared in 1695 between his early comedies and The Way of the World.",
+      "topic": "drama",
+      "topicId": "love-for-love",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-13",
+      "question": "In which Italian city is Aphra Behn’s The Rover largely set?",
+      "options": [
+        "Naples",
+        "Venice",
+        "Rome",
+        "Florence"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Rover follows English cavaliers and women amid Carnival life in Naples.",
+      "topic": "drama",
+      "topicId": "the-rover",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-14",
+      "question": "Which colonial setting shapes Aphra Behn’s Oroonoko?",
+      "options": [
+        "Jamaica",
+        "Surinam",
+        "Virginia",
+        "Barbados"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Oroonoko depicts an African prince enslaved in the South American colony of Surinam.",
+      "topic": "drama",
+      "topicId": "oroonoko",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-15",
+      "question": "Which feature makes Oroonoko especially important to discussions of Restoration prose?",
+      "options": [
+        "Its eyewitness diary of the Great Fire",
+        "Its defence of prior printing licences",
+        "Its sympathetic portrait of an enslaved African prince",
+        "Its complete dramatization of the Exclusion Crisis"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Behn treats the enslaved prince as noble while showing the cruelty and betrayal of his captors.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-16",
+      "question": "Consider the following statements about the reopened theatres:\nI. Charles II authorized the King’s Company and the Duke’s Company.\nII. The new stages employed movable scenery and professional actresses.\nIII. The companies were required to perform exclusively in medieval pageant wagons.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The patents supported two companies, and Restoration stages used actresses and scenic technology rather than pageant wagons.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-17",
+      "question": "Given below are two statements:\nStatement I: William Congreve produced The Old Bachelor and The Double-Dealer in 1693.\nStatement II: The Way of the World was first staged during the reign of Elizabeth I.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The two early comedies appeared in 1693, but The Way of the World was first staged in 1700.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-18",
+      "question": "Consider the following statements about The Way of the World:\nI. Mirabell and Millamant bargain over their marriage.\nII. Congreve uses wit to explore social expectations.\nIII. Its central story follows a pilgrim named Christian.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Congreve’s comedy examines courtship and social manners. Christian is the protagonist of Bunyan’s allegory.",
+      "topic": "drama",
+      "topicId": "the-way-of-the-world",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-19",
+      "question": "Consider the following statements about Aphra Behn’s literary range:\nI. She wrote both plays and prose.\nII. Oroonoko is a narrative about enslavement.\nIII. Her surviving work consists only of political sermons.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Behn wrote across drama and narrative prose, including Oroonoko. Her output was not limited to sermons.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-20",
+      "question": "Given below are two statements, one labelled as Assertion (A) and the other as Reason (R):\nAssertion (A): Oroonoko presents its enslaved central figure as a noble man.\nReason (R): Behn’s narrative contrasts his conduct with the cruelty of those who enslave him.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "(A) is false, but (R) is true",
+        "Both (A) and (R) are true, but (R) is NOT the correct explanation of (A)",
+        "(A) is true, but (R) is false",
+        "Both (A) and (R) are true, and (R) is the correct explanation of (A)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The narrative depicts the prince as honourable and places his oppressors under moral scrutiny.",
+      "topic": "drama",
+      "topicId": "oroonoko",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-21",
+      "question": "Arrange the following theatrical events in the correct chronological order:\n1. The Duke of Buckingham’s The Rehearsal appears.\n2. The Siege of Rhodes is presented as a musical entertainment.\n3. The royal patents restore two licensed companies.\n4. Jeremy Collier attacks the English stage.\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 1, 4",
+        "1, 2, 4, 3",
+        "3, 2, 1, 4",
+        "2, 1, 3, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Siege of Rhodes appeared in 1656, the patents followed in 1660, The Rehearsal in 1671 and Collier’s attack in 1698.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-22",
+      "question": "Arrange the following Restoration plays in chronological order:\n1. The Man of Mode.\n2. The Country Wife.\n3. The Rehearsal.\n4. Love for Love.\nChoose the correct sequence:",
+      "options": [
+        "1, 2, 4, 3",
+        "3, 2, 1, 4",
+        "2, 3, 1, 4",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Rehearsal appeared in 1671, The Country Wife in 1675, The Man of Mode in 1676 and Love for Love in 1695.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-23",
+      "question": "Arrange the following works by Aphra Behn in chronological order:\n1. Oroonoko.\n2. The Rover.\n3. The Forc’d Marriage.\n4. The Feign’d Curtezans.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "2, 3, 1, 4",
+        "3, 2, 4, 1",
+        "3, 4, 2, 1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The works appeared in 1670, 1677, 1679 and 1688, respectively.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-24",
+      "question": "Match List I (Restoration figure) with List II (role or achievement):\nList I:\na. Thomas Killigrew\nb. William Davenant\nc. Thomas Betterton\nd. Nahum Tate\nList II:\n1. Rewrote King Lear with a happy ending\n2. Leading Restoration actor\n3. Managed the Duke’s Company\n4. Managed the King’s Company\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-1, d-2",
+        "a-4, b-2, c-3, d-1",
+        "a-1, b-3, c-2, d-4",
+        "a-4, b-3, c-2, d-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Killigrew ran the King’s Company, Davenant the Duke’s Company, Betterton became a leading actor, and Tate adapted Lear.",
+      "topic": "drama",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-25",
+      "question": "Match List I (Restoration comedy) with List II (playwright):\nList I:\na. The Way of the World\nb. The Rover\nc. The Country Wife\nd. The Man of Mode\nList II:\n1. George Etherege\n2. William Wycherley\n3. Aphra Behn\n4. William Congreve\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-2, d-1",
+        "a-3, b-4, c-1, d-2",
+        "a-4, b-1, c-2, d-3",
+        "a-2, b-3, c-4, d-1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Congreve, Behn, Wycherley and Etherege wrote the respective comedies.",
+      "topic": "drama",
+      "topicId": "william-congreve",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-26",
+      "question": "Match List I (Aphra Behn work) with List II (detail):\nList I:\na. The Forc’d Marriage\nb. The Rover\nc. The Feign’d Curtezans\nd. Oroonoko\nList II:\n1. Prose narrative about enslavement\n2. Comedy staged in 1679\n3. Comedy of cavaliers set in Naples\n4. Her first staged play\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-3, c-2, d-1",
+        "a-4, b-1, c-3, d-2",
+        "a-2, b-3, c-1, d-4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The four works match Behn’s first staged play, a Naples comedy, a later comedy and a prose narrative on enslavement.",
+      "topic": "drama",
+      "topicId": "aphra-behn",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-27",
+      "question": "In Dryden’s Absalom and Achitophel, whom does the biblical David represent?",
+      "options": [
+        "James II",
+        "Oliver Cromwell",
+        "Charles II",
+        "William III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "David stands for the restored monarch Charles II in Dryden’s political allegory.",
+      "topic": "poetry",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-28",
+      "question": "Which political figure appears as Achitophel in Dryden’s satire?",
+      "options": [
+        "Duke of Buckingham",
+        "Thomas Shadwell",
+        "Duke of Monmouth",
+        "Earl of Shaftesbury"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Achitophel represents Shaftesbury, who encouraged opposition to the succession.",
+      "topic": "poetry",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-29",
+      "question": "Why did Dryden lose the position of Poet Laureate in 1689?",
+      "options": [
+        "He refused allegiance to William and Mary",
+        "He died during the plague",
+        "He permanently abandoned writing plays in 1660",
+        "He accepted command of the Royal Navy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "After the Glorious Revolution, Dryden would not swear the new oath of allegiance.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-30",
+      "question": "Which Dryden work takes the form of a dialogue about English and French drama?",
+      "options": [
+        "MacFlecknoe",
+        "Of Dramatic Poesie",
+        "Astraea Redux",
+        "The Hind and the Panther"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Of Dramatic Poesie explores competing approaches to drama through four speakers.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "restoration-set-1-m-31",
+      "question": "What central purpose does Milton announce for Paradise Lost?",
+      "options": [
+        "To satirize London’s coffeehouses",
+        "To recount the Siege of Rhodes",
+        "To justify divine ways to humankind",
+        "To celebrate the coronation of James II"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The epic explores the Fall and the problem of divine justice.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-32",
+      "question": "What literary description best fits Milton’s Samson Agonistes?",
+      "options": [
+        "A political pamphlet praising Charles II",
+        "A fashion comedy about London life",
+        "A diary of naval administration",
+        "A tragedy designed chiefly for reading"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Samson Agonistes uses a dramatic form modelled on classical tragedy.",
+      "topic": "poetry",
+      "topicId": "samson-agonistes",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-33",
+      "question": "Which biblical episode supplies the main action of Paradise Regained?",
+      "options": [
+        "The temptation of Christ in the wilderness",
+        "The coronation of Solomon",
+        "The crossing of the Red Sea",
+        "The building of Noah’s ark"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Paradise Regained focuses on Christ’s successful resistance to Satan’s temptations.",
+      "topic": "poetry",
+      "topicId": "paradise-regained",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-34",
+      "question": "Consider the following statements about Dryden’s literary career:\nI. All for Love was written in blank verse.\nII. The Rehearsal mocked heroic drama.\nIII. Dryden wrote both plays as joint author with Bunyan.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "All for Love uses blank verse, and Buckingham’s The Rehearsal satirized heroic drama. Bunyan was not their co-author.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#heroic-plays-and-tragedy"
+    },
+    {
+      "id": "restoration-set-1-m-35",
+      "question": "Consider the following identifications in Absalom and Achitophel:\nI. Absalom represents the Duke of Monmouth.\nII. Achitophel represents Shaftesbury.\nIII. Zimri represents the Duke of Buckingham.\nIV. David represents Oliver Cromwell.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, III and IV only",
+        "I, II and IV only",
+        "I, II and III only",
+        "II, III and IV only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The political allegory identifies Monmouth, Shaftesbury and Buckingham with those figures. David represents Charles II, not Cromwell.",
+      "topic": "poetry",
+      "topicId": "absalom-and-achitophel",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-36",
+      "question": "Consider the following statements about Milton’s Restoration publications:\nI. Paradise Lost was published in 1667.\nII. Paradise Regained and Samson Agonistes appeared together in 1671.\nIII. Paradise Lost was first published after Milton’s death in 1674.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Paradise Lost appeared in Milton’s lifetime in 1667, while the other two works were published in 1671.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-37",
+      "question": "Arrange the following Dryden works in order of first appearance:\n1. The Hind and the Panther.\n2. Astraea Redux.\n3. Absalom and Achitophel.\n4. Annus Mirabilis.\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 3, 1",
+        "4, 2, 3, 1",
+        "2, 3, 4, 1",
+        "3, 2, 1, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Astraea Redux appeared in 1660, Annus Mirabilis in 1667, Absalom and Achitophel in 1681 and The Hind and the Panther in 1687.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-38",
+      "question": "Match List I (Dryden work) with List II (literary form):\nList I:\na. Absalom and Achitophel\nb. MacFlecknoe\nc. All for Love\nd. Of Dramatic Poesie\nList II:\n1. Critical prose dialogue\n2. Tragedy in blank verse\n3. Mock-heroic satire on a rival\n4. Political satire with biblical allegory\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-1, d-2",
+        "a-4, b-3, c-2, d-1",
+        "a-2, b-1, c-4, d-3",
+        "a-1, b-2, c-3, d-4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The four works respectively represent biblical political satire, mock-heroic ridicule, blank-verse tragedy and dramatic criticism.",
+      "topic": "poetry",
+      "topicId": "john-dryden",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-39",
+      "question": "Match List I (work) with List II (principal subject or form):\nList I:\na. Paradise Lost\nb. Paradise Regained\nc. Samson Agonistes\nd. The Pilgrim’s Progress\nList II:\n1. Allegorical spiritual journey\n2. Biblical tragedy\n3. Temptation of Christ\n4. Fall of Adam and Eve\nChoose the correct option:",
+      "options": [
+        "a-2, b-4, c-3, d-1",
+        "a-4, b-1, c-2, d-3",
+        "a-4, b-3, c-2, d-1",
+        "a-3, b-4, c-1, d-2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Milton’s works treat the Fall, Christ’s temptation and Samson’s tragedy; Bunyan’s book is spiritual allegory.",
+      "topic": "poetry",
+      "topicId": "paradise-lost",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#poetry"
+    },
+    {
+      "id": "restoration-set-1-m-40",
+      "question": "Who undertakes the central pilgrimage in the second part of The Pilgrim’s Progress?",
+      "options": [
+        "Imoinda",
+        "Lady Wishfort",
+        "Millamant",
+        "Christiana"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Part II follows Christiana, Christian’s wife, on her journey toward the Heavenly City.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-41",
+      "question": "What kind of work is Bunyan’s Grace Abounding to the Chief of Sinners?",
+      "options": [
+        "Spiritual autobiography",
+        "Comedy of manners",
+        "Royal court diary",
+        "Political verse satire"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Grace Abounding recounts Bunyan’s inward spiritual struggles and religious experience.",
+      "topic": "prose",
+      "topicId": "john-bunyan",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-42",
+      "question": "What writing method helped make Samuel Pepys’s original diary private?",
+      "options": [
+        "Greek hexameters",
+        "Shorthand",
+        "Hieroglyphics",
+        "Alliterative verse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pepys wrote his journal in shorthand and sometimes mixed several languages in sensitive passages.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-43",
+      "question": "Consider the following statements about Bunyan’s The Pilgrim’s Progress:\nI. Christian travels away from the City of Destruction.\nII. Places such as Vanity Fair have allegorical significance.\nIII. Part II follows the journey of Mirabell.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Bunyan’s journey uses symbolic locations; Part II follows Christiana rather than Mirabell.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-44",
+      "question": "Given below are two statements:\nStatement I: Pepys kept his diary during the years 1660–69.\nStatement II: The diary was printed during the first month in which he wrote it.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true, but Statement II is false"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pepys began the diary in 1660 and ended it in 1669. It was not published until 1825.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-45",
+      "question": "Arrange the following events or publications in chronological order:\n1. The first part of The Pilgrim’s Progress is published.\n2. Milton’s Paradise Lost first appears.\n3. The second part of The Pilgrim’s Progress is published.\n4. Bunyan’s Grace Abounding is published.\nChoose the correct sequence:",
+      "options": [
+        "4, 2, 1, 3",
+        "1, 4, 2, 3",
+        "2, 4, 1, 3",
+        "4, 1, 2, 3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Grace Abounding appeared in 1666, Paradise Lost in 1667, and the two parts of The Pilgrim’s Progress in 1678 and 1684.",
+      "topic": "prose",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-46",
+      "question": "Match List I (historical event or text) with List II (year):\nList I:\na. Pepys begins his diary\nb. Great Plague of London\nc. Great Fire of London\nd. Pepys ends his diary\nList II:\n1. 1666\n2. 1669\n3. 1660\n4. 1665\nChoose the correct option:",
+      "options": [
+        "a-1, b-4, c-2, d-3",
+        "a-3, b-4, c-1, d-2",
+        "a-4, b-3, c-1, d-2",
+        "a-3, b-1, c-4, d-2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pepys wrote from 1660 to 1669 and recorded London’s plague of 1665 and fire of 1666.",
+      "topic": "prose",
+      "topicId": "pepys-diary",
+      "periodId": "restoration-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/restoration-age/#prose"
+    },
+    {
+      "id": "restoration-set-1-m-47",
+      "question": "Why were painted movable scenes important to Restoration performance?",
+      "options": [
+        "They required performances to use a single fixed scene",
+        "They replaced all London theatres with court masques",
+        "They enabled changes of visual setting during a play",
+        "They prevented the use of perspective painting"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Restoration indoor stages used movable scenery to create changing visual spectacles.",
+      "topic": "terms",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#the-stage-and-its-audience"
+    },
+    {
+      "id": "restoration-set-1-m-48",
+      "question": "Which stage feature extended performance space in front of the proscenium arch?",
+      "options": [
+        "Chorus platform",
+        "Skene building",
+        "Medieval pageant wagon",
+        "Apron stage"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The apron stage projected toward the audience beyond the framed scenic stage.",
+      "topic": "terms",
+      "topicId": "restoration-comedy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#key-terms"
+    },
+    {
+      "id": "restoration-set-1-m-49",
+      "question": "Which literary form is The Way of the World an especially celebrated example of?",
+      "options": [
+        "Comedy of manners",
+        "Medieval mystery play",
+        "Puritan allegory",
+        "Heroic epic"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Its refined dialogue and marriage negotiations exemplify the comedy of manners.",
+      "topic": "terms",
+      "topicId": "comedy-of-manners",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/restoration-age/#comedy-of-manners"
+    },
+    {
+      "id": "restoration-set-1-m-50",
+      "question": "Given below are two statements:\nStatement I: Heroic drama commonly presented conflict between love and honour.\nStatement II: Heroic drama always avoided elevated language and grand characters.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Restoration heroic plays featured grand heroes, high language and conflicts between love and honour.",
+      "topic": "terms",
+      "topicId": "heroic-tragedy",
+      "periodId": "restoration-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/restoration-age/#heroic-plays-and-tragedy"
+    }
+  ]
+}
