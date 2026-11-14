@@ -1244,3 +1244,6 @@ count, not which questions, not email, not timing), and how to stay off.
 
 ## NET hub buttons (2026-11-14, on the branch, NOT merged)
 - On `/exams/net/` the three active Paper 2 cards (English Literature MCQs, UGC NET English PYQs, Quick Quizzes) now show a teal "Open" box where the arrow was (`badge` in `_data/netResources.json`, `.net-action-badge` in `assets/net.css`). The English Literature MCQs card is no longer the green primary row. "British Ages Quick MCQs" is now "Quick Quizzes".
+
+## NET hub: Paper 1 Mock Tests card and dark headers (2026-11-14, on the branch, NOT merged)
+- `/exams/net/` Paper 1 box has a third card, **Paper 1 Mock Tests** (Coming soon; `paper-1-mock-tests` in `_data/netResources.json`, its noindex Coming-soon page is built by `coming-soon.njk`). The Paper 1 and Paper 2 box headers are now dark green (`.net-paper-head`, `--teal-dark`) with white text.
