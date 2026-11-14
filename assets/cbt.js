@@ -100,7 +100,11 @@
   var arrived = 0;             /* is sawal par kab pahunche */
   var paper = null;            /* file se aaya hua set (custom me: milaya hua) */
   var CUSTOM = root.hasAttribute('data-custom');
-  var EXAM_MOCK = root.hasAttribute('data-exam-mock');
+  /* PYQ = ek purana exam paper (UGC NET ka previous-year paper), data-exam-pyq (CLAUDE.md rule 18).
+     Wo mock test ki tarah ek hi file ka poora paper hai (koi level nahi, "Paper" label, age ke notes ke link nahi),
+     isliye EXAM_MOCK bhi on hota hai; bas naam aur kuch lines PYQ ki hain ("Previous-year paper", paper ka naam). */
+  var PYQ = root.hasAttribute('data-exam-pyq');
+  var EXAM_MOCK = root.hasAttribute('data-exam-mock') || PYQ;
   /* "Kitne sawal, kitna waqt" ka chunav: mock test aur MCQ set dono par, custom par nahi. */
   var PLAN_CHOICE = !CUSTOM;
   var AGE = root.getAttribute('data-age') || '';
@@ -287,8 +291,9 @@
   }
 
   /* "Set 2" ya custom me "Your own test"; "this set" / "this test". */
-  function setTag() { return EXAM_MOCK ? 'Mock Test ' + (paper.setNumber || 1) : CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
-  function testName() { return EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
+  function setTag() { return PYQ ? 'Previous-year paper' : EXAM_MOCK ? 'Mock Test ' + (paper.setNumber || 1) : CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
+  /* PYQ: paper ka apna naam (file ka setName, jaise "Paper II — December 2012"); upar ageName "UGC NET English" judta hai. */
+  function testName() { return PYQ ? (paper.setName || 'Previous-year paper') : EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
   function thisSet() { return CUSTOM || EXAM_MOCK ? 'this test' : 'this set'; }
   function retake() { return CUSTOM ? 'build another test from the same sets' : 'take this set again'; }
 
@@ -1769,7 +1774,8 @@
               esc(o.name) + '</a><span>' + o.right + ' of ' + o.total + ' here</span></li>';
           }).join('') +
           (EXAM_MOCK
-            ? (root.hasAttribute('data-exam-home') ? ''
+            ? (PYQ ? '<li><a href="/exams/net/syllabus/">NET English syllabus</a><span>See what each unit covers</span></li>'
+              : root.hasAttribute('data-exam-home') ? ''
               : '<li><a href="/exams/pgt/up-pgt/study-guide/">UP PGT English study guide</a><span>General English study guidance</span></li>')
             : '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +
               'Quick revision — 50 points</a><span>the whole age on one screen</span></li>') +
@@ -1784,7 +1790,7 @@
             : '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
               esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>') +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
-            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>Browse the mock tests' : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
+            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>' + (PYQ ? 'Browse the papers' : 'Browse the mock tests') : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
         '</ul>' +
       '</section>' +
@@ -1826,7 +1832,7 @@
   function grade(pc) {
     if (EXAM_MOCK) return {
       cls: pc >= 75 ? 'b4' : pc >= 50 ? 'b3' : pc >= 30 ? 'b2' : 'b1',
-      name: esc(testName()) + ' complete',
+      name: PYQ ? 'Paper complete' : esc(testName()) + ' complete',
       line: 'Review your answers below to see what you got right and what to revisit.'
     };
     if (pc >= 90) return { cls: 'b5', name: 'Outstanding! You nailed it!',
@@ -2025,7 +2031,7 @@
       root.innerHTML =
         '<div class="cbt-start">' +
           '<h1>Nothing to review yet</h1>' +
-          '<p class="lede">This page shows the answers from your last ' + (EXAM_MOCK ? 'mock test' : CUSTOM ? 'custom test' : 'run at this set') + ', ' +
+          '<p class="lede">This page shows the answers from your last ' + (PYQ ? 'attempt at this paper' : EXAM_MOCK ? 'mock test' : CUSTOM ? 'custom test' : 'run at this set') + ', ' +
             'and there is no finished run saved in this browser.</p>' +
           '<p><a class="btn" href="' + esc(CUSTOM ? (root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/')
                                                  : (root.getAttribute('data-back') || '/quizzes/mcq/')) +

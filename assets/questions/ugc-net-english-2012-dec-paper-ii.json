@@ -1,0 +1,912 @@
+{
+  "setId": "ugc-net-english-2012-dec-paper-ii",
+  "rev": 1,
+  "ageName": "UGC NET English",
+  "setName": "Paper II — December 2012",
+  "level": "all",
+  "levelName": "Full paper",
+  "title": "UGC NET English Paper II — December 2012",
+  "exam": "UGC NET",
+  "subject": "English",
+  "paper": "II",
+  "session": "December 2012",
+  "topics": {
+    "british": "British Literature",
+    "american": "American Literature",
+    "theory": "Criticism and Theory",
+    "postcolonial": "Indian and Postcolonial",
+    "terms": "Terms and Concepts"
+  },
+  "topicRead": {},
+  "sourceQuestionPaper": "https://ugcnetonline.in/showPdf.php?p1=question_papers/Dec2012_paper-II/D-30-12.pdf",
+  "sourceAnswerKey": "https://mail.ugcnetonline.in/updated_keys/D2012_updatekeys/SC030_II.pdf",
+  "questions": [
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-01",
+      "questionNumber": 1,
+      "question": "Identify the work below that does not belong to the literature of the eighteenth century :",
+      "options": [
+        "Advancement of Learning",
+        "Gulliver's Travels",
+        "The Spectator",
+        "An Epistle to Dr. Arbuthnot"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bacon's The Advancement of Learning appeared in 1605; the other three works belong to the eighteenth century.",
+      "topic": "british",
+      "topicId": "the-advancement-of-learning",
+      "periodId": "jacobean-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-02",
+      "questionNumber": 2,
+      "question": "Which, among the following, is a place through which John Bunyan's Christian does NOT pass?",
+      "options": [
+        "The Slough of Despond",
+        "Mount Helicon",
+        "The Valley of Humiliation",
+        "Vanity Fair"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mount Helicon is not among the places Christian visits in The Pilgrim's Progress.",
+      "topic": "british",
+      "topicId": "the-pilgrims-progress",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-03",
+      "questionNumber": 3,
+      "question": "The period of Queen Victoria's reign is",
+      "options": [
+        "1830-1900",
+        "1837-1901",
+        "1830-1901",
+        "1837-1900"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Queen Victoria reigned from 1837 to 1901.",
+      "topic": "british",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-04",
+      "questionNumber": 4,
+      "question": "Which of the following statements about the Lyrical Ballads is NOT true?",
+      "options": [
+        "It carried only one ballad proper, which was Coleridge's The Rime of the Ancient Mariner.",
+        "It also carried pastoral and other poems.",
+        "It carried a \"Preface\" which Wordsworth added in 1800.",
+        "It also printed from Gray's Elegy Written in a Country Churchyard."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gray's Elegy was not printed in Lyrical Ballads.",
+      "topic": "british",
+      "topicId": "lyrical-ballads",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-05",
+      "questionNumber": 5,
+      "question": "One of the following texts was published earlier than 1955. Identify the text :",
+      "options": [
+        "William Golding, The Inheritors",
+        "Philip Larkin, The Less Deceived",
+        "William Empson, Collected Poems",
+        "Samuel Becket, Waiting for Godot"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Waiting for Godot appeared before 1955, making it the answer recorded in the updated UGC key.",
+      "topic": "british",
+      "topicId": "waiting-for-godot",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-06",
+      "questionNumber": 6,
+      "question": "Who among the poets in England during the 1930s had left-leaning tendencies?",
+      "options": [
+        "T.S. Eliot, Ezra Pound, Richard Aldington",
+        "Wilfred Owen, Siegfried Sassoon, Rupert Brooke",
+        "W.H. Auden, Louis MacNeice, Cecil Day Lewis",
+        "J. Fleckner, W.H. Davies, Edward Marsh"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Auden, MacNeice and Day-Lewis were associated with left-wing politics in the 1930s.",
+      "topic": "british",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-07",
+      "questionNumber": 7,
+      "question": "Match the following:\n1. The Sage of Concord\n2. The Nun of Amherst\n3. Mark Twain\n4. Old Possum\n5. Emily Dickinson\n6. R. W. Emerson\n7. T. S. Eliot\n8. Samuel L. Clemens",
+      "options": [
+        "1-6; 2-5; 3-8; 4-7",
+        "1-5; 2-6; 3-7; 4-8",
+        "1-8; 2-7; 3-6; 4-5",
+        "1-7; 2-8; 3-5; 4-6"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Emerson was the Sage of Concord, Dickinson the Nun of Amherst, Mark Twain was Samuel L. Clemens, and Old Possum was T. S. Eliot.",
+      "topic": "american",
+      "topicId": "american-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-08",
+      "questionNumber": 8,
+      "question": "Name the theorist who divided poets into \"strong\" and \"weak\" and popularized the practice of misreading:",
+      "options": [
+        "Alan Bloom",
+        "Harold Bloom",
+        "Geoffrey Gartman",
+        "Stanley Fish"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Harold Bloom used the terms strong and weak poets and developed the account of poetic misreading.",
+      "topic": "theory",
+      "topicId": "harold-bloom",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-09",
+      "questionNumber": 9,
+      "question": "In The Rape of the Lock Pope repeatedly compares Belinda to",
+      "options": [
+        "the sun",
+        "the moon",
+        "the north star",
+        "the rose"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Belinda is repeatedly compared to the sun in The Rape of the Lock.",
+      "topic": "british",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-10",
+      "questionNumber": 10,
+      "question": "Which of the following awards is not given to Indian-English writers?",
+      "options": [
+        "The Booker prize",
+        "The Sahitya Akademi Award",
+        "The Gyanpeeth",
+        "Whitbread Prize"
+      ],
+      "explanation": "The updated UGC answer key accepts both (c) and (d) for this question. This test counts (c), the Gyanpeeth (Jnanpith) Award: when this paper was set in December 2012, no writer in English had won it. Amitav Ghosh became the first, with the award for 2018.",
+      "topic": "postcolonial",
+      "topicId": "indian-writing-in-english",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012",
+      "correct_option_id": 2
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-11",
+      "questionNumber": 11,
+      "question": "Identify the correct statement below :",
+      "options": [
+        "Gorboduc is a comedy, while Ralph Roister Doister and Gammer Gurton's Needle are tragedies.",
+        "Gorboduc is a tragedy, while Ralph Roister Doister and Gammer Gurton's Needle are comedies.",
+        "all of them are problem plays.",
+        "All of them are farces."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gorboduc is a tragedy; Ralph Roister Doister and Gammer Gurton's Needle are comedies.",
+      "topic": "british",
+      "topicId": "elizabethan-drama",
+      "periodId": "early-tudor",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-12",
+      "questionNumber": 12,
+      "question": "W.M. Thackeray's Vanity Fair owes its title to",
+      "options": [
+        "Browning's Fifine at the Fair",
+        "Shakespeare's Merchant of Venice",
+        "Goldsmith's Vicar of Wakefield",
+        "Bunyan's Pilgrim's Progress"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Thackeray's Vanity Fair takes its title from the fair in Bunyan's The Pilgrim's Progress.",
+      "topic": "british",
+      "topicId": "vanity-fair",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-13",
+      "questionNumber": 13,
+      "question": "The Puritans shut down all theaters in England in",
+      "options": [
+        "1642",
+        "1640",
+        "1659",
+        "1660"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Parliament ordered the closure of English theatres in 1642.",
+      "topic": "british",
+      "topicId": "caroline",
+      "periodId": "caroline",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-14",
+      "questionNumber": 14,
+      "question": "Who of the following was not a contemporary of Wordsworth and Coleridge?",
+      "options": [
+        "Robert Southey",
+        "Sir Walter Scott",
+        "William Hazlitt",
+        "A.C. Swinburne"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Swinburne belongs to the Victorian generation, later than Wordsworth and Coleridge.",
+      "topic": "british",
+      "topicId": "algernon-swinburne",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-15",
+      "questionNumber": 15,
+      "question": "Which of the following statements about Waiting for Godot is true?\n1. It carries a subtitle: \"a tragicomedy in two acts\"\n2. It carries a subtitle: \"a tragicomedy in two scenes\"\n3. It carries a subtitle: \"a tragicomedy in two parts\"\n4. It does not carry a subtitle.",
+      "options": [
+        "4",
+        "2",
+        "3",
+        "1"
+      ],
+      "explanation": "Beckett's English version carries the subtitle \"a tragicomedy in two acts\", which is statement 1 (the last option). The updated UGC key gave marks to every candidate for this item; this test counts that option.",
+      "topic": "british",
+      "topicId": "waiting-for-godot",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "UGC NET English Paper II, December 2012",
+      "correct_option_id": 3
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-16",
+      "questionNumber": 16,
+      "question": "The Bloomsbury Group included British intellectuals, critics, writers and artists. Who among the following belonged to the Bloomsbury Group?\nI. John Maynard Keynes, Lytton Strachey\nII. E.M. Forster, Roger Fry, Clive Bell\nIII. Patrick Brunty, Paul Haworth\nIV. Thomas Hardy, Henry James, Walter Pater",
+      "options": [
+        "I and II",
+        "I",
+        "II and III",
+        "IV"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Keynes, Strachey, Forster, Fry and Bell were members of the Bloomsbury Group.",
+      "topic": "british",
+      "topicId": "the-bloomsbury-group",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-17",
+      "questionNumber": 17,
+      "question": "Who among the following is credited with the making of the first authoritative Dictionary of the English Language?",
+      "options": [
+        "Bishop Berkeley",
+        "Samuel Johnson",
+        "Edmund Burke",
+        "Horace Walpole"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Samuel Johnson published A Dictionary of the English Language in 1755.",
+      "topic": "british",
+      "topicId": "johnsons-dictionary",
+      "periodId": "age-of-sensibility",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-18",
+      "questionNumber": 18,
+      "question": "In Dryden's Essay of Dramatic Poesy (1668), who opens the discussion on behalf of the ancients?",
+      "options": [
+        "Lisideius",
+        "Crites",
+        "Eugenius",
+        "Neander"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Crites speaks for the ancients in Dryden's An Essay of Dramatic Poesy.",
+      "topic": "british",
+      "topicId": "an-essay-of-dramatic-poesy",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-19",
+      "questionNumber": 19,
+      "question": "The term 'invective' refers to",
+      "options": [
+        "the abusive writing or speech in which there is harsh denunciation of some person or thing.",
+        "an insulting writing attack upon a real person, in verse or prose, usually involving caricature and ridicule.",
+        "a written or spoken text in which an apparently straightforward statement or event is undermined in its context so as to give it a very different significance.",
+        "the chanting or reciting of words deemed to have magical power."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Invective is abusive speech or writing directed against someone or something.",
+      "topic": "terms",
+      "topicId": "invective",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-20",
+      "questionNumber": 20,
+      "question": "Which of the following novels depicts the plight of the Bangladeshi immigrants in East London?",
+      "options": [
+        "How far can you go",
+        "The White Teeth",
+        "An Equal Music",
+        "Brick Lane"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Monica Ali's Brick Lane centres on Bangladeshi immigrant life in East London.",
+      "topic": "postcolonial",
+      "topicId": "new-literatures-in-english",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-21",
+      "questionNumber": 21,
+      "question": "The year 1939 proved to be a crucial year for two important writers in England. Identify the correct phrase below :",
+      "options": [
+        "For Yeats who died, for Auden who left England for the U.S.",
+        "For Eliot who started publishing verse- drama, for Hardy, whose 'Wessex Poems' were published.",
+        "For Evelyn Waugh and Graham Greene, each for publishing his first novels.",
+        "For Eliot who won the Nobel Prize and Orwell who published his 'Animal Farm'."
+      ],
+      "correct_option_id": 0,
+      "explanation": "W. B. Yeats died in 1939, the year W. H. Auden moved to the United States.",
+      "topic": "british",
+      "topicId": "modern-era",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-22",
+      "questionNumber": 22,
+      "question": "The Enlightenment was characterized by",
+      "options": [
+        "accelerated industrial production and general well-being of the public.",
+        "a belief in the universal authority of reason and emphasis on scientific experimentation.",
+        "the Protestant work ethic and compliance with Christian values of life.",
+        "an undue faith in predestination and neglect of free will."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Enlightenment stressed reason and scientific inquiry.",
+      "topic": "terms",
+      "topicId": "augustan",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-23",
+      "questionNumber": 23,
+      "question": "Which Shakespearean play contains the line: \" ....... there is a special providence in the fall of a sparrow\"?",
+      "options": [
+        "King Lear",
+        "Hamlet",
+        "Coriolanus",
+        "Macbeth"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hamlet says this to Horatio before the duel with Laertes.",
+      "topic": "british",
+      "topicId": "hamlet",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-24",
+      "questionNumber": 24,
+      "question": "Match the following pairs of books and authors:\nI. Condition of the Working Class in England\nII. London Labour and the London Poor\nIII. Past and Present\nIV. Unto This Last\ni. John Ruskin\nii. Henry Mayhew\niii. Thomas Carlyle\niv. Friedrich Engels\nCodes: I II III IV",
+      "options": [
+        "iv i ii iii",
+        "iv ii iii i",
+        "ii iv i ii",
+        "iii ii iv iv"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct matching is Engels, Mayhew, Carlyle and Ruskin, in that order.",
+      "topic": "british",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-25",
+      "questionNumber": 25,
+      "question": "In which of the following texts do Aston, Davies and Mick appear as characters?",
+      "options": [
+        "Wyndham Lewis's Enemy",
+        "Harold Pinter's Caretaker",
+        "Katherine Mansfield's Life of Ma Parker",
+        "Graham Greene's Brighton Rock"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Aston, Davies and Mick are characters in Pinter's The Caretaker.",
+      "topic": "british",
+      "topicId": "the-caretaker",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-26",
+      "questionNumber": 26,
+      "question": "What is common to the following writers? Identify the correct description below:\nWilliam Congreve\nGeorge Etherege\nWilliam Wycherley\nThomas Otway",
+      "options": [
+        "All of these were Restoration play-wrights",
+        "All of them were critics of Orwell's regime",
+        "All of them edited Shakespeare's plays",
+        "All of them wrote tragedies in the same age"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Congreve, Etherege, Wycherley and Otway were Restoration playwrights.",
+      "topic": "british",
+      "topicId": "restoration-era",
+      "periodId": "restoration-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-27",
+      "questionNumber": 27,
+      "question": "In which Jane Austen novel do you find the characters Anne Elliott, Lady Russell, Louisa Musgrove and Captain Wentworth?",
+      "options": [
+        "Emma",
+        "Mansfield Park",
+        "Persuasion",
+        "Northanger Abbey"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Anne Elliot, Lady Russell, Louisa Musgrove and Captain Wentworth appear in Persuasion.",
+      "topic": "british",
+      "topicId": "persuasion",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-28",
+      "questionNumber": 28,
+      "question": "In which of his essays does Homi Bhabha discuss the 'discovery' of English in colonial India?",
+      "options": [
+        "\"Signs taken for Wonders\"",
+        "\"Mimicry\"",
+        "\"Nation and Narration\"",
+        "\"The Commitment to Theory\""
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bhabha discusses the colonial introduction of English in 'Signs Taken for Wonders'.",
+      "topic": "theory",
+      "topicId": "homi-bhabha",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-29",
+      "questionNumber": 29,
+      "question": ".........was The first Sonnet Sequence in English.",
+      "options": [
+        "Edmund Spenser's Amoretti",
+        "Philip Sidney's Astrophel and Stella",
+        "Samuel Daniel's Delia",
+        "Michael Drayton's Idea's Mirror"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sidney's Astrophel and Stella is the sequence identified by the updated UGC key.",
+      "topic": "british",
+      "topicId": "elizabethan-sonnet-sequence",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-30",
+      "questionNumber": 30,
+      "question": "Which is the correct sequence of the novels of V.S. Naipaul?",
+      "options": [
+        "The Mystic Masseur- Miguel Street- The Suffrage of Elvira- A House for Mr. Biswas.",
+        "Miguel Street- The Mystic Masseur- A House for Mr. Biswas- The Suffrage of Elvira.",
+        "The Suffrage of Elvira- Miguel Street- The Mystic Masseur- A House for Mr. Biswas.",
+        "The Mystic Masseur- The Suffrage of Elvira- Miguel Street- A House for Mr. Biswas."
+      ],
+      "correct_option_id": 3,
+      "explanation": "The listed publication order is The Mystic Masseur, The Suffrage of Elvira, Miguel Street and A House for Mr Biswas.",
+      "topic": "postcolonial",
+      "topicId": "v-s-naipaul",
+      "periodId": "caribbean-literature",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-31",
+      "questionNumber": 31,
+      "question": "\"Kubla Khan\" takes an epigraph from",
+      "options": [
+        "Samuel Purchas' Purchas His Pilgrimage",
+        "Hakluyt's Voyages",
+        "The Book Named the Governour",
+        "Sir Thomas More's Utopia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The epigraph to 'Kubla Khan' draws on Samuel Purchas's Purchas His Pilgrimage.",
+      "topic": "british",
+      "topicId": "kubla-khan",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-32",
+      "questionNumber": 32,
+      "question": "Which of the following author-theme is correctly matched? Author Theme",
+      "options": [
+        "'The Battle of the Books' (J. Swift) Quarrel between ancient and modern authors.",
+        "'The Rape of the Lock' (A. Pope) Tribute to \"The rude forefathers of the hamlet\".",
+        "Gray's \"Elegy\" Accumulation of wealth and loss of human lives and values.",
+        "'The Deserted Village' (Oliver Goldsmith) Quarrel between two families caused by Lord Peter."
+      ],
+      "explanation": "Only the first pairing is correct: Swift's The Battle of the Books is a satire on the quarrel between ancient and modern authors. The other three pairings mix up works and themes. The updated UGC key gave marks to every candidate for this item; this test counts the first option.",
+      "topic": "british",
+      "topicId": "the-battle-of-the-books",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012",
+      "correct_option_id": 0
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-33",
+      "questionNumber": 33,
+      "question": "Which among the following titles set a course for academic literary feminism?",
+      "options": [
+        "Nostromo",
+        "From Ritual to Romance",
+        "A Room of One's Own",
+        "A Dance to the Music of Time"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Virginia Woolf's A Room of One's Own became a foundational text of academic literary feminism.",
+      "topic": "british",
+      "topicId": "a-room-of-ones-own",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-34",
+      "questionNumber": 34,
+      "question": "In which play do we see a reworking of E.M. Forster's A Passage to India as a cameo?",
+      "options": [
+        "The Birthday Party",
+        "A Resounding Tinkle",
+        "Indian Ink",
+        "Amadeus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tom Stoppard's Indian Ink includes a cameo reworking of A Passage to India.",
+      "topic": "british",
+      "topicId": "tom-stoppard",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-35",
+      "questionNumber": 35,
+      "question": "Shakespeare's sonnets",
+      "options": [
+        "do not carry a dedication.",
+        "are dedicated to James I of England.",
+        "are dedicated to Mary Arden.",
+        "are dedicated to an unknown \"Mr. W.H.\""
+      ],
+      "correct_option_id": 3,
+      "explanation": "The dedication in the 1609 edition of Shakespeare's sonnets addresses 'Mr. W. H.'; his identity is uncertain.",
+      "topic": "british",
+      "topicId": "shakespeares-sonnets",
+      "periodId": "elizabethan",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-36",
+      "questionNumber": 36,
+      "question": "Which of the following poems uses terza rima?",
+      "options": [
+        "John Keats's \"Ode to a Nightingale\"",
+        "P.B. Shelley's \"Ode to the West Wind\"",
+        "William Wordsworth's \"The Solitary Reaper\"",
+        "Alfred Tennyson's \"Ulysses\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shelley's 'Ode to the West Wind' uses interlocking terza rima rhymes.",
+      "topic": "british",
+      "topicId": "ode-to-the-west-wind",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-37",
+      "questionNumber": 37,
+      "question": "When one says that \"someone is no more\" or that \"someone has breathed his/her last\", The speaker is resorting to",
+      "options": [
+        "euphism",
+        "euphony",
+        "understatement",
+        "euphemism"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A euphemism uses a milder expression for a potentially harsh one.",
+      "topic": "terms",
+      "topicId": "euphemism-device",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-38",
+      "questionNumber": 38,
+      "question": "Which of the following are \"companion poems\"?",
+      "options": [
+        "\"Gypsy songs\" and \"Songs and Sonnets\"",
+        "\"L'Allegro\" and \"II Penseroso\"",
+        "\"The Good Morrow\" and \"The Sun Rising\"",
+        "\"Full Fathom Five\" and \"Hark, Hark! the Lark\""
+      ],
+      "correct_option_id": 1,
+      "explanation": "Milton's 'L'Allegro' and 'Il Penseroso' are companion poems contrasting states of mind.",
+      "topic": "british",
+      "topicId": "lallegro-and-il-penseroso",
+      "periodId": "commonwealth",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-39",
+      "questionNumber": 39,
+      "question": "What does the term 'episteme' signify?",
+      "options": [
+        "Knowledge",
+        "Archive",
+        "Theology",
+        "Scholarship"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Episteme is a Greek term for knowledge.",
+      "topic": "terms",
+      "topicId": "episteme",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-40",
+      "questionNumber": 40,
+      "question": "Which of the following is a better definition of an image in literary writing?",
+      "options": [
+        "A reflection",
+        "A speaking picture",
+        "A refraction",
+        "A reflected picture"
+      ],
+      "correct_option_id": 1,
+      "explanation": "'A speaking picture' is the option selected in the updated UGC key.",
+      "topic": "terms",
+      "topicId": "literary-terms-and-devices",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-41",
+      "questionNumber": 41,
+      "question": "Whom did Keats regard as the prime example of 'negative capability'?",
+      "options": [
+        "John Milton",
+        "William Wordsworth",
+        "William Shakespeare",
+        "P.B. Shelley"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats held Shakespeare up as an example of negative capability.",
+      "topic": "british",
+      "topicId": "negative-capability",
+      "periodId": "romantic",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-42",
+      "questionNumber": 42,
+      "question": "Charles Dickens's A Tale of Two Cities begins with the sentence",
+      "options": [
+        "It was the best of times, it was the worst of times.",
+        "It was the brightest of times, it was the darkest of times.",
+        "It was the richest of times, it was the poorest of times.",
+        "It was the happiest of times, it was the saddest of times."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The novel opens, 'It was the best of times, it was the worst of times.'",
+      "topic": "british",
+      "topicId": "a-tale-of-two-cities",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-43",
+      "questionNumber": 43,
+      "question": "The works of Gerard Manley Hopkins were published posthumously by",
+      "options": [
+        "Edwin Muir",
+        "Edward Thomas",
+        "Robert Bridges",
+        "Coventry Patmore"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Robert Bridges edited Hopkins's poems for posthumous publication.",
+      "topic": "british",
+      "topicId": "gerard-manley-hopkins",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-44",
+      "questionNumber": 44,
+      "question": "Which of the following is the correct chronological sequence?",
+      "options": [
+        "A Poison Tree - The Deserted Village - The Blessed Damozel - Ozymandias",
+        "The Deserted Village - A Poison Tree - Ozymandias - The Blessed Damozel",
+        "The Blessed Damozel - A Poison Tree - The Deserted Village - Ozymandias",
+        "The Deserted Village - The Blessed Damozel - Ozymandias - A Poison Tree"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The order is The Deserted Village (1770), 'A Poison Tree' (1794), 'Ozymandias' (1818), and 'The Blessed Damozel' (1850).",
+      "topic": "british",
+      "topicId": "british-literature",
+      "qtype": "chrono",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-45",
+      "questionNumber": 45,
+      "question": "The term homology means a correspondence between two or more structures. Who of the following developed a theory of relations between literary works and social classes in terms of homologies?",
+      "options": [
+        "Raymond Williams",
+        "Christopher Caudwell",
+        "Lucien Goldmann",
+        "Antonio Gramsci"
+      ],
+      "explanation": "The updated UGC answer key accepts either (a) Raymond Williams or (c) Lucien Goldmann. This test counts (c): Goldmann's genetic structuralism rests on homologies between the structure of a literary work and the mental structure of a social group.",
+      "topic": "theory",
+      "topicId": "marxist-criticism",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012",
+      "correct_option_id": 2
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-46",
+      "questionNumber": 46,
+      "question": "F. Turner's famous hypothesis is that",
+      "options": [
+        "the Frontier has outlived its ideological utility in American civilization.",
+        "the Frontier has posed a challenge to the American creative imagination",
+        "the Frontier has been the one great determinant of American civilization",
+        "the frontier has been the one great deterrent to American progress."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Frederick Jackson Turner's frontier thesis treats the frontier as a major force shaping American civilization.",
+      "topic": "american",
+      "topicId": "american-literature",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-47",
+      "questionNumber": 47,
+      "question": "Which statement(s) below on the Spenserian Stanza is/are accurate?\nI. a quatrain, unrhymed, but alliterative\nII. a stanza of four lines in iambic pentameter\nIII. an eight-line stanza in iambic pentameter followed by a ninth in six iambic feet\nIV. an eight-line stanza with six iambic feet followed by a ninth in iambic pentameter",
+      "options": [
+        "I and II",
+        "II",
+        "III",
+        "IV"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A Spenserian stanza has eight pentameter lines followed by a ninth alexandrine line.",
+      "topic": "british",
+      "topicId": "spenserian-stanza",
+      "periodId": "elizabethan",
+      "qtype": "combination",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-48",
+      "questionNumber": 48,
+      "question": "Match the following texts with their respective themes:\nI. Areopagitica (Milton)\nII. Leviathan (Hobbes)\nIII. Alexander's Feast (Dryden)\nIV. The Way of the World (Congreve)\ni. Fashion, courtship, seduction\nii. The liberty for unlicensed printing\niii. Absolute sovereignty\niv. The power of music\nCodes: I II III IV",
+      "options": [
+        "i ii iii iv",
+        "ii iii iv i",
+        "iii iv i ii",
+        "iv iii i ii"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The pairings are Areopagitica—unlicensed printing, Leviathan—sovereignty, Alexander's Feast—music, and The Way of the World—fashion and courtship.",
+      "topic": "british",
+      "topicId": "british-literature",
+      "qtype": "match",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-49",
+      "questionNumber": 49,
+      "question": "The preliminary version of James Joyce's Portrait of the Artist as a Young Man was called",
+      "options": [
+        "Stephen Hero",
+        "Bloom's Blunder",
+        "A Day in the life of Stephen Dedalus",
+        "The Dead"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Joyce's earlier version of A Portrait of the Artist as a Young Man was Stephen Hero.",
+      "topic": "british",
+      "topicId": "a-portrait-of-the-artist-as-a-young-man",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "UGC NET English Paper II, December 2012"
+    },
+    {
+      "id": "ugc-net-english-2012-dec-paper-ii-50",
+      "questionNumber": 50,
+      "question": "(i) A pastiche is a mixture of themes, stylistic elements of subjects borrowed from other works.\n(ii) It is distinguished from parody because not all parody is pastiche.\n(iii) A pastiche is also known as a 'purple passage'.\n(iv) A pastiche is given to an elevated style, especially in its use of figurative language.",
+      "options": [
+        "(i) and (ii) are correct.",
+        "only (i) is correct.",
+        "(iii) and (iv) are correct.",
+        "only (iv) is correct."
+      ],
+      "correct_option_id": 0,
+      "explanation": "The updated UGC key selects statements (i) and (ii) about pastiche.",
+      "topic": "terms",
+      "topicId": "pastiche",
+      "qtype": "combination",
+      "src": "UGC NET English Paper II, December 2012"
+    }
+  ]
+}

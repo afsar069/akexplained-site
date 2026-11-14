@@ -21,7 +21,7 @@ breaking it breaks a promise already made.
 - `index.html` — landing page (plain HTML + `assets/home.css` + `assets/home.js`)
 - `_includes/base.njk` — layout for markdown article pages (Pages CMS publishes these)
 - Other `*/index.html` — hub and utility pages, standalone HTML
-- `exams/net/` — preparation hub and related pages use Nunjucks (`index.njk`, `about/`, `syllabus/`, and `coming-soon.njk`), with `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, and `_data/netResources.json`. The two information pages are available; the other NET hub resources are coming soon. Do not create `exams/net/index.html` alongside its template.
+- `exams/net/` — preparation hub and related pages use Nunjucks (`index.njk`, `about/`, `syllabus/`, and `coming-soon.njk`), with `_includes/net-layout.njk`, `_includes/net-action.njk`, `assets/net.css`, and `_data/netResources.json`. The two information pages, **English Literature PYQs** (`english-pyqs/`, rule 18) and the two links to the MCQ and Daily quizzes are live; the other NET hub resources are coming soon (`coming-soon.njk` skips any resource marked `available: true` in `netResources.json`). Do not create `exams/net/index.html` alongside its template.
 - `exams/pgt/` — exam hub in `index.njk`, with `_includes/pgt-layout.njk`, `_includes/pgt-exam-card.njk`, `assets/pgt.css` and `_data/pgtExams.json`. Only `/exams/pgt/up-pgt/` is active; the other ten state and three central destinations are non-interactive Coming soon cards. The UP PGT page has five preparation resource cards from `_data/pgtResources.json`. Its MCQ card opens `/exams/pgt/up-pgt/mcqs/`, a six-group day index driven by `_data/pgtMcqDays.js`; each of the 60 day routes is a noindex Coming soon page until questions are supplied. No day has a topic assigned yet; the owner will decide each topic when its questions are uploaded. Its Mock Tests card opens `/exams/pgt/up-pgt/mock-tests/`, a matching six-group index driven by `_data/pgtMockTests.js`; Mock Tests 1–5 are free public CBT papers; Tests 6–10 are login-only CBT papers stored in Supabase with hub locks for guests, while tests 11–60 remain noindex Coming soon pages. Each open test has 90 questions and a review route. The remaining resource destinations use `up-pgt/coming-soon.njk` until real content arrives. The former general English study guide is preserved at `/exams/pgt/up-pgt/study-guide/` and is clearly distinguished from an official UP-specific syllabus. Do not recreate `exams/pgt/index.html` beside the template.
 - `exams/state-psc/` — exam hub in `index.njk` with the UP PGT visual scale, `_includes/state-psc-layout.njk`, `assets/pgt.css` and `assets/state-psc.css`. UP Assistant Professor is its only active exam card. `/exams/state-psc/up-assistant-professor/` has the five owner-specified resource cards from `_data/statePscResources.json`; **Paper 2 English Literature Mock Tests** (`paper-2-mock-tests/`) has the live Paper 2 Mock Tests, all login-only 100-question CBT papers using `_includes/state-psc-cbt.njk`. **This series is self-serve-published** (owner, 2026-11-14, rule 17): its hub cards are drawn from the **live** `public.paper_catalog` in the browser by `assets/paper-list.js` (static fallback cards from `_data/statePscMockTests.js` stay in the HTML for no-JS/SEO). The `test.njk` and `review.njk` routes are **pre-built for a fixed range** `test-1..30` (from `statePscMockTests.range`), and each page checks the catalog at view time (`data-catalog-check`, `assets/cbt.js`): a live set opens login-gated, anything else shows "This test is not open yet" (never a login wall). So the owner uploads a test, marks it Live on `/admin/papers/`, and its card and page appear with no rebuild; Draft hides them at once. The `sitemap.njk` lines and the static fallback cards still list only the **live** tests, from `statePscMockTests.tests`. Do not hand-write `test-N.njk` or `review-N.njk` here again. Questions are `public.mcq_papers` rows (`up-ap-p2-mock-test-N`), never files in the repo (rule 15). The other four resource cards still open a noindex Coming soon page from `coming-soon.njk` (the list is `_data/statePscComingSoon.js`, which skips any resource marked `"live": true` in `statePscResources.json`) until content is supplied. Do not recreate `exams/state-psc/index.html` beside its template.
 - `quizzes/mcq/<age>/…` (hub, `build/`, `custom/`, `set-<n>/`) is **generated**, not hand-written:
@@ -621,3 +621,37 @@ coming-soon 11–60 as they are) — the same pattern as series 1. Do each serie
 (Playwright + mocked Supabase: guest vs student, live vs not-yet-live, 375px and desktop; prove a new live set
 shows and Draft hides with no rebuild), and merge on its own (rule 5) so a bug can never take down every page at
 once. Update rules 3, 15, 16 and this rule, and `docs/self-serve-publish-plan.md`, as each ships.
+
+## 18. UGC NET PYQs (previous-year papers) — free, no login (owner, 2026-11-14)
+The NET hub's **English Literature PYQs** button opens `/exams/net/english-pyqs/` (`exams/net/english-pyqs/index.njk`, styles
+`.net-pyq-*` in `assets/net.css`): one group per year, newest first, one card per paper with its full name
+("UGC NET English Paper II — December 2012") and a Start button. Each paper is a CBT page at
+`/exams/net/english-pyqs/<slug>/` with its review at `.../review/` (`test.njk` and `review.njk` paginate over
+`_data/netPyqPapers.js`; markup in `_includes/net-pyq-cbt.njk`). The hub, the two routes and the sitemap lines all come
+from the registry `_data/netPyqs.json` (`slug`, `year`, `month`, `file`); the title, paper and question count are read
+from the question file, and the build stops with a plain message if a file is missing or a question is not scoreable.
+- **Free, no login** (the owner said "login ke bahar"). The questions are the public file `assets/questions/<setId>.json`
+  (the papers are public UGC documents). If a future paper should be login, the owner must say so: ask, never assume (rule 15).
+  Not self-serve (rule 17): a new paper needs a registry line and a build.
+- **Engine: the same `assets/cbt.js` as the British MCQs** (questions-and-time chooser, clock, palette, resume, result,
+  review, "Practise my mistakes", dashboard tracking). `data-exam-pyq` on the page switches on the one-paper "exam" behaviour
+  (no levels, "Paper" label, no age-notes links) and only changes names: eyebrow "UGC NET English · Previous-year paper",
+  the paper's `setName` ("Paper II — December 2012"), the result badge "Paper complete" and the next-step links
+  (NET syllabus, English PYQs). Keep this working when `cbt.js` is touched.
+- **Adding a paper.** The owner sends the tagged file (`…-tagged.json`, every question carries an `answerKey`) and says it is
+  verified, so do **not** re-check its facts. (1) Run
+  `python3 tools/pyq/prepare_pyq.py --in <file> --decisions tools/pyq/decisions/<setId>.json --out assets/questions/<setId>.json`.
+  It copies text, options, ids and tags exactly as supplied and stops on a bad option count, a repeated id, an unknown
+  `topicId` or `periodId`, or any question whose key is not "single". (2) **Owner's rule (2026-11-14): a question with two
+  or more right ids becomes ONE**, because the engine scores one option. For each `multiple_accepted` or `credit_all`
+  question write a decision in `tools/pyq/decisions/<setId>.json` (`correct` = one option the official key accepts, plus an
+  `explanation` that says what the test counts). Verify the fact for that pick on a reliable page, say which, and never
+  guess; the decisions file is the audit trail. (3) Add one line to `_data/netPyqs.json`. (4) `npx eleventy`, link check,
+  browser test, push the branch (`main` only when asked, rule 5).
+- **First paper** (2026-11-14): UGC NET English Paper II, December 2012, 50 questions. Four decisions: Q10 counts (c) Gyanpeeth
+  (official key: c and d), Q45 counts (c) Lucien Goldmann (official: a or c), Q15 counts option "1" (a tragicomedy in two
+  acts) and Q32 counts the first option, the Battle of the Books pairing (official: marks to all). The paper and key links
+  in the file (`sourceQuestionPaper`, `sourceAnswerKey`) are kept in the data and not shown on the page.
+- **Paper 1 PYQs** (`paper-1-pyqs`) stay "Coming soon". Do not mix them into this hub unasked: the hub is English Paper 2 only.
+- **Dashboard:** PYQ answers feed the by-topic and by-period views through their tags. They are not in an age's level pool
+  (their ids do not start with an age prefix, rule 10), so the level meter is unchanged.

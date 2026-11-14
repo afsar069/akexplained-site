@@ -4,7 +4,41 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14. **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
+_Last updated: 2026-11-14. **UGC NET PYQs hub (rule 18) is on the branch, not merged.** **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
+
+## UGC NET PYQs — English Literature PYQs hub (2026-11-14, on the branch, NOT merged)
+
+**What the owner asked:** the UGC NET English Paper II December 2012 paper (50 questions, already verified) goes live behind
+the **English Literature PYQs** button on `/exams/net/`, free and with no login, as a CBT test with the same engine as the
+British MCQs. The button on the page is a hub that shows each PYQ by its full name (year, month); later PYQs will be added the
+same way. Any question with two right ids becomes one.
+
+**What was built (rule 18).** `/exams/net/english-pyqs/` (year groups, newest first, one card per paper), one test page and one
+review page per paper, all made from `_data/netPyqs.json` (registry) + `_data/netPyqPapers.js` / `netPyqYears.js` (read the
+question file, stop the build on a bad file). `_includes/net-pyq-cbt.njk`, `.net-pyq-*` in `assets/net.css`, sitemap lines from
+the registry, `english-pyqs` marked `available: true` in `_data/netResources.json`. `assets/cbt.js`: a `data-exam-pyq` flag
+(names only: "Previous-year paper", the paper's `setName`, "Paper complete", NET next-step links); everything else is the
+British-MCQ engine. `tools/pyq/prepare_pyq.py` turns a tagged PYQ file into the site file and refuses to continue until every
+question whose key is not "single" has a decision (`tools/pyq/decisions/<setId>.json`).
+
+**The four questions that had more than one right id** (the file's `answerKey` said so; the engine scores one option):
+Q10 (official c and d) counts **(c) Gyanpeeth**; Q45 (official a or c) counts **(c) Lucien Goldmann**; Q15 (official: marks to all)
+counts **option "1", "a tragicomedy in two acts"**; Q32 (official: marks to all) counts **the first option, Swift's Battle of the
+Books**. Each explanation says what the test counts. Checked by web search on 2026-11-14 (secondary sources: Britannica for
+Ghosh's Jnanpith, booksellers and The Conversation for the Godot subtitle, Wikipedia / Gutenberg for the Battle of the Books, a
+mix of academic pages for Goldmann's homology). The owner can flip any pick by editing the decisions file and re-running the tool.
+Q10 is the closest call: both (c) and (d) are accepted by the official key.
+
+**Tested.** `npx @11ty/eleventy` builds clean (497 files, check-topics OK, no clash of ids). Playwright on the built `_site`
+(Supabase blocked, as a guest): 66 checks pass at 1280px and 375px — NET hub button is live, hub card shows the full name and
+50 questions, start screen (no levels, "no sign-in needed", chooser up to 50), full 50-question run, result ("Paper complete",
+paper name, no mock-test or UP PGT wording), review shows the four counted-answer explanations, review with no attempt, no
+sideways scroll, no page errors, canonical and robots. The paper and key links in the file could not be opened from the
+session (the answer-key host is blocked by the network policy), so the page does not show them.
+
+**Not done / for later.** `/quizzes/pyq/` (the older general PYQ page) is unchanged and still says papers are "being added";
+it could link to the new hub if the owner wants. Paper 1 PYQs are still "Coming soon". PYQs are not self-serve (rule 17): a new
+paper needs a registry line and a build.
 
 ## Self-serve publish — English Literature login MCQ sets (2026-11-14, SHIPPED — merged to main, PR #76)
 
