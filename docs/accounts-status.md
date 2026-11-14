@@ -4,7 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-14. **Commonwealth Set 1 (free, easy and medium) is being merged to main** (see its section below; the same commit fixes the Elizabethan hub block). **UGC NET PYQs hub (rule 18) is on the branch, not merged.** **Self-serve publish (rule 17):** Series 1 — UP AP Paper 2 mock tests — **merged to main (PR #75, live)**. Series 2 — English Literature login MCQ sets — **merged to main (PR #76, live)** (see the two sections below). Future series (UP PGT, UGC NET) are planned for later — see `docs/self-serve-publish-plan.md` → "Roadmap". Earlier work on main: the admin area + dashboard bell; the upload-paper tool with the Where-does-it-go id picker; Caroline Set 1 and Jacobean Set 1 (free); the result-PDF question summary (PR #73)._
+_Last updated: 2026-11-14. Neoclassical Set 1 is prepared as a free, no-login set at easy and medium level. Earlier sections below record their status when written; see Git history for subsequent merges._
+
+## Neoclassical Set 1 — free, easy and medium (2026-11-14)
+
+- The owner first named the Restoration hub by mistake, then confirmed these two 50-question files belong on the Neoclassical page. Each supplied file identifies `age: neoclassical` and covers the Restoration, Augustan Age and Age of Sensibility. The owner said the questions are already verified, so their facts and near-duplicates were not rechecked.
+- The files were adapted to the site's planned `neoclassical-set-1` slot: set ID, question ID prefix, set title and notes labels/link match the registry. Every question's wording, options, right answer, explanation and tags are unchanged. The `src` value was prefixed with `user-supplied:` to meet the site's required format; the original label was retained. Strict validation passed with no errors. It gave 18 advisory warnings, including 12 topic categories, tag suggestions, and all 50 medium questions having `qtype: direct`; these fields were left as supplied.
+- Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Neoclassical moved from `SOON_HUBS` to `LIVE_AGES`; its hub was added to `sitemap.njk`, the syllabus count and UGC NET skill zip were regenerated. Sets 2 to 5 remain Coming soon.
+- Eleventy built clean. The guest browser test passed at both levels: Start has no lock, each level loads its supplied first question, and a ten-question run opens a ten-question review. All 35,228 local links and assets resolved.
 
 ## UGC NET PYQs — UGC NET English PYQs hub (2026-11-14, on the branch, NOT merged)
 
