@@ -47,11 +47,11 @@
     'caroline',
     'commonwealth',
     'neoclassical',
-    'restoration'
+    'restoration',
+    'augustan-age'
   ];
 
   var SOON_HUBS = [
-    'augustan-age',
     'age-of-sensibility',
     'romantic-age',
     'victorian-age',

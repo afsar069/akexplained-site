@@ -1,0 +1,873 @@
+{
+  "setId": "augustan-age-set-1",
+  "rev": 1,
+  "age": "augustan-age",
+  "ageName": "Augustan Age",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/augustan-age/",
+  "notesTitle": "Augustan Age — the full notes",
+  "topics": {
+    "ground": "The age and its ideas",
+    "poetry": "Pope and Augustan verse",
+    "prose": "Swift, Defoe and essays",
+    "stage": "Drama and the stage",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on Augustan writers, works, genres and ideas.",
+  "questions": [
+    {
+      "id": "augustan-age-set-1-e-01",
+      "question": "Who wrote Three Dialogues between Hylas and Philonous?",
+      "options": [
+        "George Berkeley",
+        "David Hume",
+        "John Locke",
+        "Francis Bacon"
+      ],
+      "correct_option_id": 0,
+      "explanation": "George Berkeley presented a dialogue defending his theory of immaterialism.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-e-02",
+      "question": "In which year did Berkeley publish A Treatise Concerning the Principles of Human Knowledge?",
+      "options": [
+        "1688",
+        "1710",
+        "1739",
+        "1755"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Berkeley published the Principles in 1710 as a defence of his immaterialist philosophy.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-e-03",
+      "question": "What are the names of the speakers in Berkeley’s famous 1713 dialogues?",
+      "options": [
+        "Gulliver and Macheath",
+        "Pope and Gay",
+        "Hylas and Philonous",
+        "Sir Roger and Bickerstaff"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Berkeley uses Hylas and Philonous to stage a dispute over perception and matter.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-e-04",
+      "question": "Which Irish bishop is known for developing philosophical immaterialism?",
+      "options": [
+        "David Hume",
+        "Robert Lowth",
+        "Joseph Butler",
+        "George Berkeley"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Berkeley became Bishop of Cloyne and was a leading defender of immaterialism.",
+      "topic": "ground",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-e-05",
+      "question": "Who wrote A Treatise of Human Nature?",
+      "options": [
+        "David Hume",
+        "John Locke",
+        "Alexander Pope",
+        "George Berkeley"
+      ],
+      "correct_option_id": 0,
+      "explanation": "David Hume developed his account of human understanding in A Treatise of Human Nature.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-e-06",
+      "question": "When did Hume’s A Treatise of Human Nature first appear?",
+      "options": [
+        "1719–1720",
+        "1739–1740",
+        "1788–1789",
+        "1709–1710"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The first two books appeared in 1739 and the third in 1740.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-e-07",
+      "question": "Which Hume work first appeared in 1748?",
+      "options": [
+        "The Spectator",
+        "The Dunciad",
+        "An Enquiry Concerning Human Understanding",
+        "A Treatise Concerning Human Knowledge"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hume published the Enquiry in 1748, reworking arguments about knowledge and experience.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-e-08",
+      "question": "Which religious claim did Hume critically examine in a famous essay section?",
+      "options": [
+        "Roman civic triumphs",
+        "The six days of Creation as epic poetry",
+        "The English church courts",
+        "Reports of miracles"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hume examined whether testimony could establish a miracle against regular experience.",
+      "topic": "ground",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    },
+    {
+      "id": "augustan-age-set-1-e-09",
+      "question": "Who wrote The Rape of the Lock?",
+      "options": [
+        "Alexander Pope",
+        "James Thomson",
+        "Jonathan Swift",
+        "John Gay"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Alexander Pope transformed a fashionable quarrel over a cut lock of hair into a satirical poem.",
+      "topic": "poetry",
+      "topicId": "alexander-pope",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-e-10",
+      "question": "Which Pope poem about the rules of literary judgement appeared in 1711?",
+      "options": [
+        "Eloisa to Abelard",
+        "An Essay on Criticism",
+        "The Dunciad",
+        "An Essay on Man"
+      ],
+      "correct_option_id": 1,
+      "explanation": "An Essay on Criticism was published in 1711 and examines taste, good writing and good judgement.",
+      "topic": "poetry",
+      "topicId": "an-essay-on-criticism",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-e-11",
+      "question": "Which incident inspired the story of The Rape of the Lock?",
+      "options": [
+        "A disputed inheritance",
+        "A lost royal crown",
+        "A stolen lock of hair",
+        "A missing manuscript"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lord Petre cut a lock of Arabella Fermor’s hair, and Pope treated the dispute as a mock epic.",
+      "topic": "poetry",
+      "topicId": "the-rape-of-the-lock",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-e-12",
+      "question": "Which philosophical poem did Pope publish in epistles in 1733–1734?",
+      "options": [
+        "Windsor-Forest",
+        "The Temple",
+        "The Seasons",
+        "An Essay on Man"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An Essay on Man considers humanity’s place in an ordered universe and the limits of human understanding.",
+      "topic": "poetry",
+      "topicId": "an-essay-on-man",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-e-13",
+      "question": "Which poet held the title Countess of Winchilsea?",
+      "options": [
+        "Anne Finch",
+        "Aphra Behn",
+        "Eliza Haywood",
+        "Mary Astell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Anne Finch is also known by her title Countess of Winchilsea.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-e-14",
+      "question": "Who wrote A Nocturnal Reverie?",
+      "options": [
+        "Alexander Pope",
+        "Anne Finch",
+        "John Gay",
+        "Edward Young"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A Nocturnal Reverie is among Finch’s best-known poems about the natural world.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-e-15",
+      "question": "Which Finch poem explores a troubled state of mind associated with melancholy?",
+      "options": [
+        "The Dunciad",
+        "The Task",
+        "The Spleen",
+        "The Seasons"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Spleen was published in 1701 and treats mental unease and melancholy.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-e-16",
+      "question": "Which collection of Finch’s poetry appeared in 1713?",
+      "options": [
+        "Lyrical Ballads",
+        "The Temple",
+        "Songs of Innocence",
+        "Miscellany Poems, on Several Occasions"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Finch’s collection of poems and other writings appeared in 1713.",
+      "topic": "poetry",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-e-17",
+      "question": "Who wrote Gulliver’s Travels?",
+      "options": [
+        "Jonathan Swift",
+        "Joseph Addison",
+        "Richard Steele",
+        "Daniel Defoe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Jonathan Swift published Gulliver’s Travels as a satirical series of imaginary voyages.",
+      "topic": "prose",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-18",
+      "question": "In which year was Gulliver’s Travels first published?",
+      "options": [
+        "1719",
+        "1726",
+        "1734",
+        "1711"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gulliver’s Travels appeared in 1726 and uses voyages to criticize European habits and institutions.",
+      "topic": "prose",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-19",
+      "question": "What is the name of the land inhabited by tiny people in Gulliver’s Travels?",
+      "options": [
+        "Laputa",
+        "Houyhnhnmland",
+        "Lilliput",
+        "Brobdingnag"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The first voyage takes Gulliver to Lilliput, where the inhabitants are very small.",
+      "topic": "prose",
+      "topicId": "gullivers-travels",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-20",
+      "question": "Which 1729 satire suggests that impoverished Irish families sell their babies as food?",
+      "options": [
+        "Robinson Crusoe",
+        "The Tatler",
+        "The Dunciad",
+        "A Modest Proposal"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A Modest Proposal feigns a practical scheme to expose indifference to poverty and exploitation.",
+      "topic": "prose",
+      "topicId": "jonathan-swift",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-21",
+      "question": "Who wrote Robinson Crusoe?",
+      "options": [
+        "Daniel Defoe",
+        "Samuel Richardson",
+        "Jonathan Swift",
+        "Henry Fielding"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Daniel Defoe created the castaway narrator of Robinson Crusoe.",
+      "topic": "prose",
+      "topicId": "daniel-defoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-e-22",
+      "question": "In which year was Robinson Crusoe first published?",
+      "options": [
+        "1740",
+        "1719",
+        "1709",
+        "1726"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novel first appeared in 1719 and presents the adventures as a factual memoir.",
+      "topic": "prose",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-e-23",
+      "question": "Which real castaway helped inspire the story of Robinson Crusoe?",
+      "options": [
+        "John Dryden",
+        "James Boswell",
+        "Alexander Selkirk",
+        "Robert Walpole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Selkirk spent years alone on an island before his rescue, providing a real-life precedent.",
+      "topic": "prose",
+      "topicId": "robinson-crusoe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-e-24",
+      "question": "Which Defoe novel published in 1722 follows a woman’s eventful life?",
+      "options": [
+        "Pamela",
+        "Clarissa",
+        "Evelina",
+        "Moll Flanders"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Moll Flanders is a fictional first-person life narrative published in 1722.",
+      "topic": "prose",
+      "topicId": "moll-flanders",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-e-25",
+      "question": "Who founded The Tatler in 1709?",
+      "options": [
+        "Richard Steele",
+        "Alexander Pope",
+        "John Gay",
+        "Nicholas Rowe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richard Steele started The Tatler in April 1709 under the persona Isaac Bickerstaff.",
+      "topic": "prose",
+      "topicId": "richard-steele",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-26",
+      "question": "What kind of publication was The Tatler?",
+      "options": [
+        "A verse epic",
+        "A periodical of essays and news",
+        "A five-act tragedy",
+        "A philosophical dialogue"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Tatler provided short recurring pieces of manners, conversation and news for readers.",
+      "topic": "prose",
+      "topicId": "the-tatler",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-27",
+      "question": "Which paper did Addison and Steele launch together in 1711?",
+      "options": [
+        "The Rambler",
+        "The Examiner",
+        "The Spectator",
+        "The Daily Courant"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Spectator began in March 1711 and offered a short essay on manners and ideas.",
+      "topic": "prose",
+      "topicId": "the-spectator",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-28",
+      "question": "Which fictional country gentleman appears in essays associated with The Spectator?",
+      "options": [
+        "Captain Macheath",
+        "Roderick Random",
+        "Robinson Crusoe",
+        "Sir Roger de Coverley"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Sir Roger de Coverley is a kindly, old-fashioned member of the Spectator Club.",
+      "topic": "prose",
+      "topicId": "joseph-addison",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-29",
+      "question": "Who wrote The Beggar’s Opera?",
+      "options": [
+        "John Gay",
+        "George Farquhar",
+        "Richard Steele",
+        "Nicholas Rowe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "John Gay wrote the 1728 hit that used popular tunes and satirical criminal characters.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-e-30",
+      "question": "In which year did The Beggar’s Opera premiere?",
+      "options": [
+        "1711",
+        "1728",
+        "1740",
+        "1707"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Beggar’s Opera appeared in 1728 and became a major theatrical success.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-e-31",
+      "question": "Which character is the highwayman in The Beggar’s Opera?",
+      "options": [
+        "Hylas",
+        "Isaac Bickerstaff",
+        "Captain Macheath",
+        "Sir Roger de Coverley"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Macheath is the central highwayman whose affairs and fate drive the satirical action.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-e-32",
+      "question": "What social target is prominent in The Beggar’s Opera?",
+      "options": [
+        "Renaissance exploration",
+        "The Anglo-Saxon conversion",
+        "Medieval chivalric duty",
+        "Corruption and hypocrisy among the powerful"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gay’s criminals echo the conduct of fashionable and political elites, exposing corruption.",
+      "topic": "stage",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#drama"
+    },
+    {
+      "id": "augustan-age-set-1-e-33",
+      "question": "Who wrote The Beaux’ Stratagem?",
+      "options": [
+        "George Farquhar",
+        "William Congreve",
+        "Nicholas Rowe",
+        "John Gay"
+      ],
+      "correct_option_id": 0,
+      "explanation": "George Farquhar wrote the comedy first staged in 1707.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-e-34",
+      "question": "Which Farquhar play appeared in 1706?",
+      "options": [
+        "The Conscious Lovers",
+        "The Recruiting Officer",
+        "The Fair Penitent",
+        "Cato"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Recruiting Officer premiered in 1706 and draws on the world of military recruiting.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-e-35",
+      "question": "In which year was The Beaux’ Stratagem first staged?",
+      "options": [
+        "1728",
+        "1693",
+        "1707",
+        "1713"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Beaux’ Stratagem premiered in 1707, the final year of Farquhar’s life.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-e-36",
+      "question": "Which pair of adventurers appears in The Beaux’ Stratagem?",
+      "options": [
+        "Macheath and Lockit",
+        "Hylas and Philonous",
+        "Pope and Gay",
+        "Aimwell and Archer"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Aimwell and Archer enter a provincial setting hoping to recover their fortunes through marriage.",
+      "topic": "stage",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-e-37",
+      "question": "Who edited an important six-volume edition of Shakespeare in 1709?",
+      "options": [
+        "Nicholas Rowe",
+        "Richard Steele",
+        "John Gay",
+        "Alexander Pope"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Nicholas Rowe’s 1709 edition was an influential early attempt to edit Shakespeare’s plays.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-e-38",
+      "question": "Who wrote the tragedy The Fair Penitent?",
+      "options": [
+        "George Farquhar",
+        "Nicholas Rowe",
+        "Joseph Addison",
+        "Samuel Richardson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Nicholas Rowe’s The Fair Penitent was published in 1703; its earliest performances date to 1702.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-e-39",
+      "question": "Which Rowe play dramatises the story of Jane Shore?",
+      "options": [
+        "The Beggar’s Opera",
+        "The Recruiting Officer",
+        "The Tragedy of Jane Shore",
+        "The Conscious Lovers"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rowe’s Jane Shore was performed in 1714 and became a popular tragedy.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-e-40",
+      "question": "Which literary office did Nicholas Rowe receive in 1715?",
+      "options": [
+        "Lord Chancellor",
+        "Bishop of Cloyne",
+        "Master of the Revels",
+        "Poet Laureate"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Rowe was appointed Poet Laureate in 1715 during the reign of George I.",
+      "topic": "stage",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-e-41",
+      "question": "Consider the following statements regarding the mock-epic form:\nI. The Rape of the Lock treats a trivial social incident in an epic style.\nII. A mock-epic can use grand supernatural machinery to magnify a small event.\nIII. A mock-epic must recount a historical military victory.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "I, II and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem turns a cut lock of hair into an epic-scale event; a genuine military victory is not required.",
+      "topic": "terms",
+      "topicId": "mock-epic",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#poetry"
+    },
+    {
+      "id": "augustan-age-set-1-e-42",
+      "question": "Consider the following statements regarding Swiftian satire:\nI. Swift uses apparent reasonableness to expose human cruelty.\nII. Gulliver’s Travels compares imagined societies with real European faults.\nIII. Satire is primarily designed to avoid all social criticism.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "I, II and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Swift makes social criticism through seemingly rational but ironic narratives; satire is critical rather than neutral.",
+      "topic": "terms",
+      "topicId": "satire",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#prose"
+    },
+    {
+      "id": "augustan-age-set-1-e-43",
+      "question": "Consider the following statements regarding Defoe’s prose fiction:\nI. Robinson Crusoe presents detailed accounts of daily survival.\nII. The narrative manner can make invented events sound like a true report.\nIII. Defoe wrote Robinson Crusoe as a five-act tragedy for the stage.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III only",
+        "I and II only",
+        "II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Defoe uses plain details to suggest an authentic memoir, not the conventions of stage tragedy.",
+      "topic": "terms",
+      "topicId": "the-rise-of-the-novel",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/augustan-age/#the-rise-of-the-novel"
+    },
+    {
+      "id": "augustan-age-set-1-e-44",
+      "question": "What form did Addison and Steele help popularize through short regular publications?",
+      "options": [
+        "The stage masque",
+        "The verse chronicle",
+        "The Gothic romance",
+        "The periodical essay"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The periodical essay brought discussions of morals, taste and manners to everyday readers.",
+      "topic": "terms",
+      "topicId": "the-periodical-essay",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/augustan-age/#key-terms"
+    },
+    {
+      "id": "augustan-age-set-1-e-45",
+      "question": "Consider the following statements regarding John Gay’s work:\nI. Trivia describes walking through London streets.\nII. The Beggar’s Opera uses songs set to familiar tunes.\nIII. Both works are medieval religious mystery cycles.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I, II and III only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Trivia treats urban life in verse and The Beggar’s Opera is a ballad opera, not a medieval cycle.",
+      "topic": "terms",
+      "topicId": "john-gay",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/John_Gay"
+    },
+    {
+      "id": "augustan-age-set-1-e-46",
+      "question": "Which genre best describes Farquhar’s witty courtship plays?",
+      "options": [
+        "Pastoral elegy",
+        "Comedy of manners",
+        "Biblical allegory",
+        "Heroic epic"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His comedies use social deception, courtship and worldly conversation to entertain and criticize.",
+      "topic": "terms",
+      "topicId": "comedy-of-manners",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Farquhar"
+    },
+    {
+      "id": "augustan-age-set-1-e-47",
+      "question": "What term is often applied to Rowe’s tragedies centred on suffering female characters?",
+      "options": [
+        "Morality cycle",
+        "Ballad opera",
+        "She-tragedy",
+        "Mock-epic"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rowe’s tragedies such as The Fair Penitent emphasize the plight of their female protagonists.",
+      "topic": "terms",
+      "topicId": "nicholas-rowe",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nicholas_Rowe_(writer)"
+    },
+    {
+      "id": "augustan-age-set-1-e-48",
+      "question": "Consider the following statements regarding Anne Finch’s poems:\nI. A Nocturnal Reverie pays close attention to the natural world.\nII. The Introduction questions prejudices against women’s writing.\nIII. The Spleen is a comedy written for the Duke’s Company.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Finch wrote reflective poetry on nature, gender and melancholy, not theatre comedy.",
+      "topic": "terms",
+      "topicId": "anne-finch",
+      "periodId": "augustan",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Anne_Finch,_Countess_of_Winchilsea"
+    },
+    {
+      "id": "augustan-age-set-1-e-49",
+      "question": "Which theory argues that sensible objects cannot exist independently of minds?",
+      "options": [
+        "Immaterialism",
+        "Deism",
+        "Materialism",
+        "Mechanism"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Berkeley argued that sensible things are mind-dependent rather than independent material substances.",
+      "topic": "terms",
+      "topicId": "george-berkeley",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Berkeley"
+    },
+    {
+      "id": "augustan-age-set-1-e-50",
+      "question": "In Hume’s account, what helps create expectations that events will occur together again?",
+      "options": [
+        "Innate geometrical proof",
+        "Custom or habit",
+        "Courtly etiquette",
+        "A royal decree"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hume argued that repeated experience forms habitual expectations about causal relations.",
+      "topic": "terms",
+      "topicId": "david-hume",
+      "periodId": "augustan",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/David_Hume"
+    }
+  ]
+}

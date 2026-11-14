@@ -1274,7 +1274,10 @@
             "easy",
             "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "titleCase": "Across the Whole Age",
+          "lede": "Fifty questions at each level, easy and medium, on Pope, Swift, Defoe, Addison and Steele, Gay, Farquhar, Rowe, Anne Finch, Berkeley and Hume."
         },
         {
           "n": 2,
@@ -1319,6 +1322,11 @@
           "count": 50
         }
       ],
+      "hub": {
+        "description": "Augustan Age MCQ practice (1700–1745). Set 1 has fifty easy and fifty medium questions on Pope, Swift, Defoe, Addison and Steele, Gay, Farquhar, Rowe, Anne Finch, Berkeley and Hume, open to everyone.",
+        "ogDescription": "Practice Augustan literature with Set 1: fifty easy and fifty medium questions, open to everyone.",
+        "heroSub": "1700 to 1745 &middot; Set 1 is open at easy and medium level"
+      },
       "topics": [
         {
           "value": "ground",
