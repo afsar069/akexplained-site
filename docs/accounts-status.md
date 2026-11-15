@@ -65,6 +65,10 @@ _Last updated: 2026-11-15. UP PGT login mock tests (slots 6–60) are built as s
 - The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
 - Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
+## Paper 2 mock tests list: Important Links band (2026-11-15, on the branch, NOT merged)
+
+- The owner asked for the link section under the list at `/exams/state-psc/up-assistant-professor/paper-2-mock-tests/`. Done with `hub_links: true` in that page's front matter (the shared `_includes/hub-links.njk` band, "Pages that help you prepare alongside these mock tests."). The test and review pages have no band. All 7 links return 200; no sideways scroll at 1280 / 375 px; the paper list (login padlocks, self-serve cards) is unchanged.
+
 ## UP Assistant Professor page: Start button on the live card (2026-11-15, on the branch, NOT merged)
 
 - The live resource card on `/exams/state-psc/up-assistant-professor/` (Paper 2 English Literature Mock Tests) now ends in a teal **Start** button instead of the arrow and the "Open" line; the four Coming-soon cards are unchanged. Template `exams/state-psc/up-assistant-professor/index.njk`, style `.state-psc-start` in `assets/state-psc.css`. A newly live resource gets the button by itself (`"live": true`).
