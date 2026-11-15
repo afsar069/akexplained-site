@@ -53,11 +53,11 @@
     'romantic-age',
     'victorian-age',
     'edwardian',
-    'georgian'
+    'georgian',
+    'modern'
   ];
 
   var SOON_HUBS = [
-    'modern',
     'postmodern'
   ];
 
