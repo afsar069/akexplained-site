@@ -6,6 +6,13 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-15. Edwardian Period Set 1 is prepared as a free, no-login set at easy and medium level. Victorian Period, Romantic Period, Age of Sensibility, Augustan Age, Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
 
+## PYQ front door (2026-11-15, on the branch, NOT merged)
+
+- The owner asked for `/quizzes/pyq/` to be the page that links every PYQ we upload: students click an exam and land on that exam's PYQ page. UGC NET is live; PGT and TGT are Coming soon.
+- Built (rule 19): `quizzes/pyq/index.njk` (was hand-written HTML), `_data/pyqHub.js` (the cards), `.pyq-cat*` in `assets/site.css`. The NET card reads its count and years from `_data/netPyqPapers.js` (today 4 papers, 2012). Coming-soon cards have no link. The old "worked explanations are being added" paragraph was replaced with a plain "new papers appear in the cards above" line.
+- Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): no sideways scroll, no page errors, no failed requests, the NET card opens `/exams/net/english-pyqs/`, the two Coming-soon cards are not links. All internal links on the page resolve.
+- Owner to confirm: the TGT card's exact name (written "UPSC TGT"; the card says "TGT English").
+
 ## Edwardian Period Set 1 — free, easy and medium (2026-11-15)
 
 - The owner supplied `edwardian-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said all questions are verified. Facts and near-duplicates were not rechecked. Both files match the site plan and were copied unchanged into `assets/questions/`.

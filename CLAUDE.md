@@ -44,6 +44,7 @@ breaking it breaks a promise already made.
   rebuild.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
+- `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); PGT English and TGT English are non-link Coming soon cards. Not hand-written HTML any more.
 - `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews). The last four plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
@@ -656,3 +657,14 @@ from the question file, and the build stops with a plain message if a file is mi
 - **Paper 1 PYQs** (`paper-1-pyqs`) stay "Coming soon". Do not mix them into this hub unasked: the hub is English Paper 2 only.
 - **Dashboard:** PYQ answers feed the by-topic and by-period views through their tags. They are not in an age's level pool
   (their ids do not start with an age prefix, rule 10), so the level meter is unchanged.
+
+## 19. The PYQ front door — `/quizzes/pyq/` (owner, 2026-11-15)
+The page's job: every previous-year paper we publish is reachable from here. The student picks an **exam card**, and a live
+card goes straight to that exam's PYQ page (UGC NET English → `/exams/net/english-pyqs/`, rule 18).
+- Cards live in **`_data/pyqHub.js`** (one entry per exam: `title`, `icon`, `blurb`, and for a live exam `href`, `meta`, `live: true`).
+  The page is `quizzes/pyq/index.njk` (Nunjucks, so the UGC NET card counts its own papers and years from `_data/netPyqPapers.js`:
+  a new NET paper changes the card with no page edit). Styles `.pyq-cat*` in `assets/site.css`.
+- A card with `live: false` is a plain box with "Coming soon" and **no link** (so no 404). To open an exam: build its PYQ page, then set `href` and `live: true`.
+- Today: **UGC NET English** live; **PGT English** and **TGT English** Coming soon. The owner wrote "UPSC TGT"; the card says "TGT English"
+  (UPSC does not run TGT exams) — confirm the exact name with the owner before adding a body or state name. Never invent a paper count or year.
+- Below the cards the page keeps the owner's own text: why past papers matter, the five-step method, and where to find authentic papers.

@@ -1,10 +1,13 @@
+---
+---
+{# Rule 3 hub page; made from _data/pyqHub.js so the NET card counts itself (CLAUDE.md rule 19). #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Previous Year Questions | AK Explained</title>
-<meta name="description" content="How to use previous-year question papers as diagnosis rather than rehearsal, and where to find authentic papers for NET, university and IGNOU examinations.">
+<meta name="description" content="Previous-year question papers by exam. Take UGC-NET English papers as an online test; PGT and TGT are coming soon. Also: how to use past papers well, and where to find authentic ones.">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -74,6 +77,39 @@
 </section>
 
 
+<section class="pyq-pick" aria-labelledby="pyqPickTitle">
+  <div class="wrap">
+    <div class="sechead">
+      <h2 id="pyqPickTitle">Choose Your Exam</h2>
+    </div>
+    <p class="seclede">Pick an exam to open its previous-year papers. Papers for the other exams will appear here as they are added.</p>
+    <div class="pyq-cats">
+{% for c in pyqHub %}
+{% if c.live %}
+      <a class="pyq-cat" href="{{ c.href }}">
+        <span class="pyq-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
+        <span class="pyq-cat-txt">
+          <strong>{{ c.title }}</strong>
+          <span>{{ c.blurb }}</span>
+          <small>{{ c.meta }}</small>
+        </span>
+        <span class="pyq-cat-go">Open</span>
+      </a>
+{% else %}
+      <div class="pyq-cat is-soon" aria-disabled="true">
+        <span class="pyq-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
+        <span class="pyq-cat-txt">
+          <strong>{{ c.title }}</strong>
+          <span>{{ c.blurb }}</span>
+        </span>
+        <span class="pyq-cat-go">Coming soon</span>
+      </div>
+{% endif %}
+{% endfor %}
+    </div>
+  </div>
+</section>
+
 <section class="intro-band">
   <div class="wrap">
     <h2>What a previous-year paper is really for</h2>
@@ -104,7 +140,7 @@
       <li><strong>University papers</strong> — most universities publish past papers in their examination or student section. For CCSU, papers are archived by course code.</li>
       <li><strong>IGNOU</strong> — term-end examination papers are available through the university's own question paper repository.</li>
     </ul>
-    <p>Papers with worked explanations are being added to this section, starting with the units where candidates lose the most marks. If there is a particular year or paper you want covered first, <a href="/contact/">tell me</a> and it will move up the queue.</p>
+    <p>New papers appear in the exam cards at the top of this page as soon as they are ready. If there is a particular exam, year or paper you want first, <a href="/contact/">tell me</a> and it will move up the queue.</p>
     <p style="margin-top:14px"><a class="btn alt" href="/quizzes/mcq/">Meanwhile, try the practice MCQs</a></p>
   </div>
 </section>
