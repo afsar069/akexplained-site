@@ -19,6 +19,11 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 - The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
 - Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
+## UP Assistant Professor page: Start button on the live card (2026-11-15, on the branch, NOT merged)
+
+- The live resource card on `/exams/state-psc/up-assistant-professor/` (Paper 2 English Literature Mock Tests) now ends in a teal **Start** button instead of the arrow and the "Open" line; the four Coming-soon cards are unchanged. Template `exams/state-psc/up-assistant-professor/index.njk`, style `.state-psc-start` in `assets/state-psc.css`. A newly live resource gets the button by itself (`"live": true`).
+- Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): no sideways scroll, no page errors, only the live card has the button, and Start opens `/exams/state-psc/up-assistant-professor/paper-2-mock-tests/`.
+
 ## State PSC hub: other states as Coming soon (2026-11-15, on the branch, NOT merged)
 
 - The owner asked for cards for other states' exams at the level of UP Assistant Professor, as Coming soon, chosen by web search (J&K named). Added six: **HPSC Haryana, HPPSC Himachal Pradesh, JKPSC Jammu and Kashmir, MPPSC Madhya Pradesh, RPSC Rajasthan, UKPSC Uttarakhand** (`_data/statePscExams.json`, `exams/state-psc/index.njk`, rule 21). The UP card now sits under a "State Assistant Professor Exams" heading with the six boxes below it.
