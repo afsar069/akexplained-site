@@ -1,0 +1,873 @@
+{
+  "setId": "edwardian-set-1",
+  "rev": 1,
+  "age": "edwardian",
+  "ageName": "Edwardian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its society",
+    "novel": "The novel",
+    "drama": "Drama and the Abbey Theatre",
+    "poetry": "Poetry and new movements",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on Edwardian fiction, drama, poetry, ideas and Irish theatre.",
+  "questions": [
+    {
+      "id": "edwardian-set-1-e-01",
+      "question": "Who wrote the play Pygmalion?",
+      "options": [
+        "George Bernard Shaw",
+        "Oscar Wilde",
+        "J. M. Barrie",
+        "John Galsworthy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Shaw used the story of Eliza Doolittle to examine social class and the power of speech.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "edwardian-set-1-e-02",
+      "question": "Which Shaw play centers on a flower seller learning new speech habits?",
+      "options": [
+        "Major Barbara",
+        "Saint Joan",
+        "Candida",
+        "Pygmalion"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Eliza Doolittle receives phonetics lessons and discovers how accents shape social judgments.",
+      "topic": "drama",
+      "topicId": "pygmalion",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-e-03",
+      "question": "What institution features prominently in Shaw’s Major Barbara?",
+      "options": [
+        "The Royal Navy",
+        "The Royal Society",
+        "The Salvation Army",
+        "The British Museum"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Barbara works with the Salvation Army, and the play questions its relation to wealth and power.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-e-04",
+      "question": "In what year did Shaw receive the Nobel Prize in Literature?",
+      "options": [
+        "1905",
+        "1925",
+        "1913",
+        "1932"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shaw won the literature prize in 1925, after becoming famous for his plays of ideas.",
+      "topic": "ground",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#writers-and-works"
+    },
+    {
+      "id": "edwardian-set-1-e-05",
+      "question": "Which Shaw play includes the philosophical episode Don Juan in Hell?",
+      "options": [
+        "Man and Superman",
+        "Arms and the Man",
+        "The Doctor’s Dilemma",
+        "John Bull’s Other Island"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The dream interlude in Man and Superman turns a comedy into a debate about life and evolution.",
+      "topic": "drama",
+      "topicId": "man-and-superman",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-e-06",
+      "question": "Which family stands at the centre of The Man of Property?",
+      "options": [
+        "The Baineses",
+        "The Schlegels",
+        "The Wilcoxes",
+        "The Forsytes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel introduces the prosperous Forsytes and their possessive ideas of family and property.",
+      "topic": "novel",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-e-07",
+      "question": "Who wrote the 1906 novel The Man of Property?",
+      "options": [
+        "Arnold Bennett",
+        "E. M. Forster",
+        "John Galsworthy",
+        "Joseph Conrad"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Galsworthy began his extended portrait of an English upper-middle-class family with this novel.",
+      "topic": "novel",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#writers-and-works"
+    },
+    {
+      "id": "edwardian-set-1-e-08",
+      "question": "What major international literary prize did Galsworthy win in 1932?",
+      "options": [
+        "The Booker Prize",
+        "The Nobel Prize in Literature",
+        "The Pulitzer Prize for Fiction",
+        "The Hawthornden Prize"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Nobel Prize recognised his literary achievements, especially his portrayal of the Forsytes.",
+      "topic": "novel",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-e-09",
+      "question": "The Silver Box by John Galsworthy belongs to which literary genre?",
+      "options": [
+        "Drama",
+        "Lyric poetry",
+        "Historical romance",
+        "Literary biography"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Silver Box is a stage play that contrasts how rich and poor people are treated.",
+      "topic": "drama",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-e-10",
+      "question": "In which year did Galsworthy publish The Man of Property?",
+      "options": [
+        "1895",
+        "1916",
+        "1924",
+        "1906"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Man of Property appeared in 1906 and became the first Forsyte novel.",
+      "topic": "terms",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-e-11",
+      "question": "Which Bennett novel follows the divergent lives of two sisters?",
+      "options": [
+        "The Secret Agent",
+        "Howards End",
+        "The Old Wives’ Tale",
+        "The Man of Property"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The story traces sisters Constance and Sophia from youth to old age in very different settings.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-e-12",
+      "question": "Bennett’s fictional Five Towns are based mainly on which English district?",
+      "options": [
+        "The Yorkshire Dales",
+        "The Staffordshire Potteries",
+        "The Cornish coast",
+        "The Sussex Downs"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Five Towns fictionalise the pottery towns of Staffordshire where Bennett grew up.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-e-13",
+      "question": "Who wrote the novel Clayhanger?",
+      "options": [
+        "Arnold Bennett",
+        "John Galsworthy",
+        "H. G. Wells",
+        "E. M. Forster"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Clayhanger is part of Bennett’s fiction about provincial life in the Five Towns.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-e-14",
+      "question": "Which Bennett novel, first published in 1902, takes its name from the Five Towns?",
+      "options": [
+        "The Old Wives’ Tale",
+        "Hilda Lessways",
+        "The Pretty Lady",
+        "Anna of the Five Towns"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The 1902 novel places Anna within Bennett’s fictional pottery-town community.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-e-15",
+      "question": "Which novelist was the target of Virginia Woolf’s essay Mr Bennett and Mrs Brown?",
+      "options": [
+        "Walter de la Mare",
+        "John Masefield",
+        "Arnold Bennett",
+        "Arthur Conan Doyle"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Woolf used Bennett to criticize fiction overly concerned with outward details rather than inner life.",
+      "topic": "terms",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-e-16",
+      "question": "Who wrote Tono-Bungay, an Edwardian novel about commerce and society?",
+      "options": [
+        "Arnold Bennett",
+        "H. G. Wells",
+        "Joseph Conrad",
+        "John Galsworthy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wells used the business world to expose pretensions and inequalities of Edwardian society.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "edwardian-set-1-e-17",
+      "question": "Which H. G. Wells novel about a young draper appeared in 1905?",
+      "options": [
+        "Kipps",
+        "Nostromo",
+        "Clayhanger",
+        "The Longest Journey"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Kipps follows a shop assistant thrust into unfamiliar social circumstances.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-e-18",
+      "question": "Which early Wells book is a classic of time-travel science fiction?",
+      "options": [
+        "Tono-Bungay",
+        "The Old Wives’ Tale",
+        "The Man of Property",
+        "The Time Machine"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Time Machine imagines a journey into humanity’s distant future.",
+      "topic": "terms",
+      "topicId": "science-fiction",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-e-19",
+      "question": "Which novel by Wells portrays a young woman resisting conventional restrictions?",
+      "options": [
+        "The Secret Agent",
+        "The Dynasts",
+        "Ann Veronica",
+        "Riders to the Sea"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ann Veronica questions the limits imposed on a young woman’s freedom and choices.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-e-20",
+      "question": "In what year was Wells’s social novel Tono-Bungay published?",
+      "options": [
+        "1895",
+        "1909",
+        "1901",
+        "1918"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Tono-Bungay appeared in 1909 during Wells’s period of socially focused fiction.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#writers-and-works"
+    },
+    {
+      "id": "edwardian-set-1-e-21",
+      "question": "Which Conrad novel is set in the imaginary South American republic of Costaguana?",
+      "options": [
+        "Nostromo",
+        "Lord Jim",
+        "The Secret Agent",
+        "The Arrow of Gold"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Nostromo explores power, politics and conflicting loyalties in Costaguana.",
+      "topic": "novel",
+      "topicId": "nostromo",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-e-22",
+      "question": "Which English-language novelist was born in Poland and had worked at sea?",
+      "options": [
+        "Arnold Bennett",
+        "John Galsworthy",
+        "H. G. Wells",
+        "Joseph Conrad"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Conrad drew on his seafaring life and brought a distinctive international perspective to fiction.",
+      "topic": "novel",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-e-23",
+      "question": "Which Conrad novel portrays anarchist intrigue in London?",
+      "options": [
+        "The Longest Journey",
+        "The Old Wives’ Tale",
+        "The Secret Agent",
+        "The Dynasts"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Secret Agent depicts political conspiracy and violence in metropolitan life.",
+      "topic": "novel",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "edwardian-set-1-e-24",
+      "question": "Which Conrad novel focuses on a sailor seeking moral redemption after a failure?",
+      "options": [
+        "Nostromo",
+        "Lord Jim",
+        "The History of Mr Polly",
+        "Howards End"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Jim’s struggle with dishonour and courage is central to the novel.",
+      "topic": "novel",
+      "topicId": "lord-jim",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-e-25",
+      "question": "English was Joseph Conrad’s language number what, after Polish and French?",
+      "options": [
+        "Third",
+        "First",
+        "Second",
+        "Fourth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Polish was Conrad’s mother tongue, French was another early language, and he wrote fiction in English.",
+      "topic": "terms",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#writers-and-works"
+    },
+    {
+      "id": "edwardian-set-1-e-26",
+      "question": "Which E. M. Forster novel is named after an inherited country house?",
+      "options": [
+        "A Passage to India",
+        "The Longest Journey",
+        "Where Angels Fear to Tread",
+        "Howards End"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The house becomes a focus for questions of belonging, class and relationships.",
+      "topic": "novel",
+      "topicId": "howards-end",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-e-27",
+      "question": "Which Forster novel published in 1908 takes place partly in Italy?",
+      "options": [
+        "Howards End",
+        "A Passage to India",
+        "A Room with a View",
+        "Maurice"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A Room with a View contrasts the liberating experience of Italy with English convention.",
+      "topic": "novel",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-e-28",
+      "question": "Which 1924 Forster novel examines tensions under British rule in India?",
+      "options": [
+        "Where Angels Fear to Tread",
+        "A Passage to India",
+        "The Longest Journey",
+        "A Room with a View"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A Passage to India dramatizes the difficulties of friendship under colonial power.",
+      "topic": "novel",
+      "topicId": "a-passage-to-india",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "edwardian-set-1-e-29",
+      "question": "Who wrote the critical study Aspects of the Novel?",
+      "options": [
+        "E. M. Forster",
+        "H. G. Wells",
+        "Arnold Bennett",
+        "John Galsworthy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Forster’s lectures discuss story, plot, characters and other elements of fiction.",
+      "topic": "terms",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-e-30",
+      "question": "Consider the following statements regarding Forster’s fiction:\nI. Forster wrote Howards End.\nII. His novel A Room with a View appeared in 1908.\nIII. His first novel was A Passage to India.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Howards End and A Room with a View are Forster novels; Where Angels Fear to Tread was his first published novel.",
+      "topic": "novel",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-e-31",
+      "question": "Which Yeats poem imagines escaping to a quiet island retreat?",
+      "options": [
+        "The Second Coming",
+        "Leda and the Swan",
+        "The Lake Isle of Innisfree",
+        "Easter 1916"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The speaker dreams of a small cabin and the peace of an island in Lough Gill.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._B._Yeats"
+    },
+    {
+      "id": "edwardian-set-1-e-32",
+      "question": "Which Yeats poem responds to the Irish uprising of 1916?",
+      "options": [
+        "The Second Coming",
+        "Easter 1916",
+        "Sailing to Byzantium",
+        "The Lake Isle of Innisfree"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem reflects on the Easter Rising and the complicated transformation of its participants.",
+      "topic": "poetry",
+      "topicId": "easter-1916",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-33",
+      "question": "Which poet was awarded the Nobel Prize in Literature in 1923?",
+      "options": [
+        "W. B. Yeats",
+        "Thomas Hardy",
+        "Ezra Pound",
+        "W. H. Auden"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Yeats received the prize in 1923 in recognition of his distinctive poetry.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#writers-and-works"
+    },
+    {
+      "id": "edwardian-set-1-e-34",
+      "question": "Yeats drew heavily on the legends and folklore of which country?",
+      "options": [
+        "Spain",
+        "Denmark",
+        "Norway",
+        "Ireland"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Irish folklore and myth shaped his early imaginative world and work for the theatre.",
+      "topic": "ground",
+      "topicId": "the-irish-literary-revival",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-35",
+      "question": "Consider the following statements regarding early Yeats:\nI. He was primarily known as a naturalist novelist.\nII. He helped foster the Irish literary revival.\nIII. His early work drew on Irish legend.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Yeats was a poet and dramatist who drew on Irish myth, not principally a naturalist novelist.",
+      "topic": "terms",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-36",
+      "question": "Who wrote the epic verse drama The Dynasts?",
+      "options": [
+        "Alfred Tennyson",
+        "Thomas Hardy",
+        "George Bernard Shaw",
+        "W. B. Yeats"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hardy wrote the expansive dramatic work after returning his attention to poetry.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-37",
+      "question": "Which historical wars are the central background of Hardy’s The Dynasts?",
+      "options": [
+        "The Napoleonic Wars",
+        "The Crimean War",
+        "The Boer Wars",
+        "The English Civil Wars"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Dynasts spans the Napoleonic period while viewing human action on a grand scale.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-38",
+      "question": "What was the title of Hardy’s verse collection issued in 1898?",
+      "options": [
+        "Satires of Circumstance",
+        "Moments of Vision",
+        "The Dynasts",
+        "Wessex Poems"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wessex Poems marked Hardy’s public emergence as a major poet after his fiction career.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-e-39",
+      "question": "After Jude the Obscure, which genre received Hardy’s main creative attention?",
+      "options": [
+        "Detective fiction",
+        "Opera librettos",
+        "Poetry",
+        "Historical scholarship"
+      ],
+      "correct_option_id": 2,
+      "explanation": "After the controversial reception of his final major novel, Hardy concentrated on verse.",
+      "topic": "ground",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-e-40",
+      "question": "Consider the following statements regarding Hardy’s later career:\nI. The Dynasts was issued in three parts.\nII. Hardy abandoned verse to write new novels after 1900.\nIII. Hardy published Time’s Laughingstocks in 1909.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hardy issued The Dynasts in three parts and Time’s Laughingstocks in 1909, but wrote no further novels.",
+      "topic": "terms",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-e-41",
+      "question": "Who wrote the one-act tragedy Riders to the Sea?",
+      "options": [
+        "J. M. Synge",
+        "George Bernard Shaw",
+        "John Galsworthy",
+        "Lady Gregory"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Synge shaped the lives of an island fishing family into a short tragic drama.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "edwardian-set-1-e-42",
+      "question": "In what year did The Playboy of the Western World provoke riots?",
+      "options": [
+        "1901",
+        "1913",
+        "1925",
+        "1907"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The play caused angry reactions during its Abbey Theatre performances in 1907.",
+      "topic": "drama",
+      "topicId": "the-playboy-of-the-western-world",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-e-43",
+      "question": "Which Irish islands inspired Synge’s rhythms of speech and dramatic settings?",
+      "options": [
+        "The Hebrides",
+        "The Shetlands",
+        "The Aran Islands",
+        "The Scilly Isles"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Synge travelled to the Aran Islands and drew on local storytelling and speech.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-e-44",
+      "question": "What is the name of the mother in Riders to the Sea?",
+      "options": [
+        "Pegeen Mike",
+        "Maurya",
+        "Christy Mahon",
+        "Nora Helmer"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Maurya fears the sea will take the remaining members of her family.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://www.gutenberg.org/cache/epub/994/pg994-images.html"
+    },
+    {
+      "id": "edwardian-set-1-e-45",
+      "question": "Consider the following statements regarding Synge’s plays:\nI. Riders to the Sea is a one-act tragedy.\nII. The Playboy of the Western World caused controversy.\nIII. Synge wrote The Importance of Being Earnest.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Synge wrote the two Irish plays, whereas the comedy in Statement III was written by Oscar Wilde.",
+      "topic": "terms",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-e-46",
+      "question": "In which city did the Abbey Theatre open?",
+      "options": [
+        "Belfast",
+        "London",
+        "Edinburgh",
+        "Dublin"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Abbey opened in Dublin to provide a stage for distinctly Irish theatrical work.",
+      "topic": "drama",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-e-47",
+      "question": "In which year was the Abbey Theatre inaugurated?",
+      "options": [
+        "1891",
+        "1914",
+        "1904",
+        "1922"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The theatre opened in December 1904 as a home for Irish plays.",
+      "topic": "drama",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-e-48",
+      "question": "Which patron helped fund the early Abbey Theatre?",
+      "options": [
+        "Sarah Bernhardt",
+        "Annie Horniman",
+        "Florence Nightingale",
+        "Beatrice Webb"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Horniman’s support enabled the group to establish a permanent theatre in Dublin.",
+      "topic": "ground",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-e-49",
+      "question": "Which Irish woman playwright helped Yeats found the Abbey Theatre?",
+      "options": [
+        "Lady Gregory",
+        "Edith Sitwell",
+        "Elizabeth Bowen",
+        "Christina Rossetti"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lady Gregory worked with Yeats in establishing and sustaining the Abbey Theatre.",
+      "topic": "drama",
+      "topicId": "lady-gregory",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "edwardian-set-1-e-50",
+      "question": "Consider the following statements regarding the Abbey Theatre:\nI. It opened during Queen Victoria’s reign.\nII. Its programme promoted plays about Irish life.\nIII. The theatre was established in Dublin.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Abbey opened in 1904, after Victoria’s death, and promoted Irish drama.",
+      "topic": "terms",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    }
+  ]
+}
