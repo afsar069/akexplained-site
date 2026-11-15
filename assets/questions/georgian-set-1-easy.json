@@ -1,0 +1,873 @@
+{
+  "setId": "georgian-set-1",
+  "rev": 1,
+  "age": "georgian",
+  "ageName": "Georgian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "poetry": "Georgian and war poetry",
+    "novel": "The novel",
+    "later": "Eliot, Yeats and Auden",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on Georgian poets, war poetry, modern fiction and leading literary figures.",
+  "questions": [
+    {
+      "id": "georgian-set-1-e-01",
+      "question": "Who edited the Georgian Poetry anthology series?",
+      "options": [
+        "Ezra Pound",
+        "Robert Bridges",
+        "T. S. Eliot",
+        "Edward Marsh"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Edward Marsh selected contemporary English verse for the five-volume anthology series.",
+      "topic": "ground",
+      "topicId": "edward-marsh",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-e-02",
+      "question": "Which monarch gave the Georgian literary period its name?",
+      "options": [
+        "Edward VII",
+        "George IV",
+        "George V",
+        "William IV"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Georgian poetic revival took its name from the reign of George V, beginning in 1910.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-e-03",
+      "question": "How many volumes appeared in the original Georgian Poetry series?",
+      "options": [
+        "Nine",
+        "Five",
+        "Seven",
+        "Three"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Five anthologies were issued over the years 1912 to 1922, creating a recognizable literary grouping.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-e-04",
+      "question": "Which subject is particularly associated with much Georgian verse?",
+      "options": [
+        "Everyday rural life",
+        "Colonial legal documents",
+        "Surrealist dream analysis",
+        "Medieval scholastic debate"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Many Georgian poets preferred accessible language and familiar scenes of nature and ordinary life.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-e-05",
+      "question": "Consider the following statements regarding the Georgian anthology movement:\nI. The first Georgian Poetry anthology appeared in 1912.\nII. Edward Marsh was its editor.\nIII. The anthology series consisted of a single volume.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "II and III only",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The anthologies began in 1912 under Marsh and eventually ran to five volumes.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-e-06",
+      "question": "Which poet wrote the war sonnet The Soldier?",
+      "options": [
+        "Isaac Rosenberg",
+        "Wilfred Owen",
+        "W. H. Auden",
+        "Rupert Brooke"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Brooke wrote The Soldier as part of his sequence of idealistic wartime sonnets.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-07",
+      "question": "In which year did Rupert Brooke die?",
+      "options": [
+        "1915",
+        "1918",
+        "1922",
+        "1917"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Brooke died in April 1915 before reaching the battlefields of Gallipoli.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-08",
+      "question": "On which Greek island was Rupert Brooke buried?",
+      "options": [
+        "Skyros",
+        "Corfu",
+        "Rhodes",
+        "Crete"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Brooke died while travelling with his naval unit and was buried on Skyros.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-09",
+      "question": "Which quality best describes Brooke’s early war sonnets?",
+      "options": [
+        "Dadaist wordplay",
+        "Patriotic idealism",
+        "A sustained antiwar trial",
+        "Bitter trench realism"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His early war sonnets portray sacrifice in an idealistic, patriotic manner.",
+      "topic": "terms",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-10",
+      "question": "Which location gives its name to one of Brooke’s nostalgic poems?",
+      "options": [
+        "Grantchester",
+        "Wuthering Heights",
+        "Tintern Abbey",
+        "Canterbury Cathedral"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Old Vicarage, Grantchester recalls a Cambridgeshire village from afar.",
+      "topic": "terms",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-11",
+      "question": "Which war poet wrote Dulce et Decorum Est?",
+      "options": [
+        "Edward Marsh",
+        "Wilfred Owen",
+        "Rupert Brooke",
+        "W. B. Yeats"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Owen attacks the supposed glory of war through images of exhausted soldiers and a gas attack.",
+      "topic": "poetry",
+      "topicId": "wilfred-owen",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-12",
+      "question": "Which poet encouraged Wilfred Owen while both were at Craiglockhart?",
+      "options": [
+        "T. S. Eliot",
+        "John Masefield",
+        "Thomas Hardy",
+        "Siegfried Sassoon"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Owen met Sassoon at Craiglockhart in 1917 and benefited from his encouragement.",
+      "topic": "poetry",
+      "topicId": "siegfried-sassoon",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-13",
+      "question": "Which poet wrote Break of Day in the Trenches?",
+      "options": [
+        "Rupert Brooke",
+        "W. H. Auden",
+        "Isaac Rosenberg",
+        "Walter de la Mare"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rosenberg contrasts trench warfare with the ordinary movement of a rat at dawn.",
+      "topic": "poetry",
+      "topicId": "isaac-rosenberg",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Isaac_Rosenberg"
+    },
+    {
+      "id": "georgian-set-1-e-14",
+      "question": "Which writer helped publish Wilfred Owen’s poems after his death?",
+      "options": [
+        "Siegfried Sassoon",
+        "Arnold Bennett",
+        "Edward Marsh",
+        "John Galsworthy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sassoon supported Owen during the war and assisted the later publication of his work.",
+      "topic": "terms",
+      "topicId": "siegfried-sassoon",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-15",
+      "question": "Consider the following statements regarding First World War poetry:\nI. Rupert Brooke often wrote in an idealistic patriotic tone.\nII. Wilfred Owen frequently presented war as brutal and dehumanizing.\nIII. Siegfried Sassoon was a leading medieval epic poet.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Brooke is associated with early patriotic ideals, while Owen and Sassoon exposed the costs of trench warfare.",
+      "topic": "terms",
+      "topicId": "the-war-poets",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-16",
+      "question": "Which novel follows Paul Morel and his troubled family relationships?",
+      "options": [
+        "Sons and Lovers",
+        "Kangaroo",
+        "The Rainbow",
+        "Women in Love"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sons and Lovers explores Paul Morel’s emotional entanglement with his mother and others.",
+      "topic": "novel",
+      "topicId": "sons-and-lovers",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-17",
+      "question": "Which novel by D. H. Lawrence was suppressed in Britain in 1915?",
+      "options": [
+        "The White Peacock",
+        "The Rainbow",
+        "Aaron’s Rod",
+        "The Lost Girl"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Rainbow faced prosecution and suppression soon after publication in 1915.",
+      "topic": "novel",
+      "topicId": "the-rainbow",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-18",
+      "question": "Which novel continues the story of the Brangwen sisters after The Rainbow?",
+      "options": [
+        "Brave New World",
+        "The Waves",
+        "Women in Love",
+        "Ulysses"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Women in Love follows characters and relationships developed from The Rainbow.",
+      "topic": "novel",
+      "topicId": "women-in-love",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-19",
+      "question": "What was the occupation of D. H. Lawrence’s father?",
+      "options": [
+        "University professor",
+        "Theatre manager",
+        "Coal miner",
+        "Naval officer"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lawrence grew up in a Nottinghamshire mining family, a background visible in his fiction.",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-20",
+      "question": "Which late novel by Lawrence faced major obscenity controversy?",
+      "options": [
+        "Lady Chatterley’s Lover",
+        "The Old Wives’ Tale",
+        "The Secret Agent",
+        "A Passage to India"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lady Chatterley’s Lover challenged sexual conventions and was long restricted in Britain.",
+      "topic": "novel",
+      "topicId": "lady-chatterleys-lover",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-21",
+      "question": "Which novel by Virginia Woolf follows preparations for a London party?",
+      "options": [
+        "The Waves",
+        "Night and Day",
+        "Mrs Dalloway",
+        "Orlando"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Clarissa Dalloway plans a party while the narrative moves through memories and inner lives.",
+      "topic": "novel",
+      "topicId": "mrs-dalloway",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-22",
+      "question": "What was the name of the press founded by Virginia and Leonard Woolf?",
+      "options": [
+        "Faber and Faber",
+        "Poetry Bookshop",
+        "Cuala Press",
+        "Hogarth Press"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Woolfs founded the Hogarth Press in 1917 to print new literature.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-23",
+      "question": "Which essay argues that a woman writer needs money and a room of her own?",
+      "options": [
+        "Tradition and the Individual Talent",
+        "The Spirit of the Age",
+        "The Sacred Wood",
+        "A Room of One’s Own"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Woolf argues that material independence and space matter for women’s literary creation.",
+      "topic": "novel",
+      "topicId": "a-room-of-ones-own",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-24",
+      "question": "Which London circle included Virginia Woolf and the critic Roger Fry?",
+      "options": [
+        "The Scriblerus Club",
+        "The Inklings",
+        "The Dymock Poets",
+        "Bloomsbury Group"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Bloomsbury Group linked writers, artists and thinkers through friendship and discussion.",
+      "topic": "novel",
+      "topicId": "the-bloomsbury-group",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-25",
+      "question": "Consider the following statements regarding Virginia Woolf’s fiction:\nI. Mrs Dalloway was published in 1925.\nII. To the Lighthouse appeared in 1927.\nIII. Woolf wrote the novel Ulysses.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The first two novels are Woolf’s; Ulysses belongs to James Joyce.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-26",
+      "question": "Which James Joyce book collects short stories about Dublin life?",
+      "options": [
+        "The Rainbow",
+        "The Tower",
+        "Dubliners",
+        "The Waves"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Dubliners presents ordinary lives in the Irish capital through fifteen short stories.",
+      "topic": "novel",
+      "topicId": "dubliners",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-27",
+      "question": "On which date do the events of Ulysses take place?",
+      "options": [
+        "16 June 1904",
+        "11 November 1918",
+        "4 August 1914",
+        "1 January 1901"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The action takes place during one day in Dublin, now commemorated as Bloomsday.",
+      "topic": "novel",
+      "topicId": "ulysses-joyce",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-28",
+      "question": "Who is the central advertising canvasser in Joyce’s Ulysses?",
+      "options": [
+        "Bernard Marx",
+        "Leopold Bloom",
+        "Paul Morel",
+        "Stephen Blackpool"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Leopold Bloom is one of the novel’s central figures, alongside Stephen Dedalus and Molly Bloom.",
+      "topic": "novel",
+      "topicId": "ulysses-joyce",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-29",
+      "question": "Which term describes a sudden moment of insight in Joyce’s fiction?",
+      "options": [
+        "Objective correlative",
+        "Pathetic fallacy",
+        "Epiphany",
+        "Negative capability"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Joyce used epiphany for a revealing moment that changes the understanding of ordinary experience.",
+      "topic": "novel",
+      "topicId": "epiphany",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-30",
+      "question": "Which novel traces Stephen Dedalus from schooldays toward leaving Ireland?",
+      "options": [
+        "To the Lighthouse",
+        "The Man of Property",
+        "Sons and Lovers",
+        "A Portrait of the Artist as a Young Man"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel traces Stephen Dedalus’s artistic and intellectual development before his departure from Ireland.",
+      "topic": "novel",
+      "topicId": "a-portrait-of-the-artist-as-a-young-man",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-e-31",
+      "question": "Which modernist poem by T. S. Eliot appeared in 1922?",
+      "options": [
+        "In Memoriam",
+        "The Waste Land",
+        "The Dynasts",
+        "The Prelude"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Waste Land portrays a fragmented modern civilization through multiple voices and allusions.",
+      "topic": "later",
+      "topicId": "the-waste-land",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-32",
+      "question": "Which Eliot poem presents an anxious speaker who hesitates over a social encounter?",
+      "options": [
+        "The Hollow Men",
+        "The Second Coming",
+        "The Love Song of J. Alfred Prufrock",
+        "The Soldier"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Prufrock’s anxious inner monologue presents a modern voice of hesitation.",
+      "topic": "later",
+      "topicId": "the-love-song-of-j-alfred-prufrock",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-33",
+      "question": "What is the opening section of The Waste Land called?",
+      "options": [
+        "Death by Water",
+        "What the Thunder Said",
+        "The Fire Sermon",
+        "The Burial of the Dead"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Burial of the Dead introduces the poem’s broken images of memory and renewal.",
+      "topic": "later",
+      "topicId": "the-waste-land",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-34",
+      "question": "How many sections make up The Waste Land?",
+      "options": [
+        "Seven",
+        "Three",
+        "Five",
+        "Nine"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The poem consists of five separately titled sections.",
+      "topic": "later",
+      "topicId": "the-waste-land",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-35",
+      "question": "Consider the following statements regarding T. S. Eliot:\nI. The Waste Land was published in 1922.\nII. Eliot formulated the objective correlative in his criticism.\nIII. Eliot wrote A Room of One’s Own.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I, II and III",
+        "I and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The first two claims concern Eliot; A Room of One’s Own was written by Virginia Woolf.",
+      "topic": "later",
+      "topicId": "ts-eliot",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-36",
+      "question": "Which Irish poet received the Nobel Prize in Literature in 1923?",
+      "options": [
+        "James Joyce",
+        "W. B. Yeats",
+        "Rupert Brooke",
+        "Wilfred Owen"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yeats was awarded the Nobel Prize in 1923 for his poetry and literary achievement.",
+      "topic": "later",
+      "topicId": "wb-yeats",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-37",
+      "question": "Which poem by Yeats imagines the collapse of an old historical order?",
+      "options": [
+        "Dulce et Decorum Est",
+        "In Memoriam",
+        "The Soldier",
+        "The Second Coming"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Second Coming imagines violent historical transformation through apocalyptic symbols.",
+      "topic": "later",
+      "topicId": "the-second-coming",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-38",
+      "question": "What does the phrase Celtic Twilight describe in Yeats’s early writing?",
+      "options": [
+        "Irish myth and folklore",
+        "English courtly satire",
+        "American frontier humour",
+        "London finance and trade"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Yeats’s early verse often draws on Irish legends, supernatural imagery and cultural revival.",
+      "topic": "later",
+      "topicId": "the-irish-literary-revival",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-39",
+      "question": "Which work sets out Yeats’s symbolic theory of historical cycles?",
+      "options": [
+        "A Vision",
+        "Biographia Literaria",
+        "The Sacred Wood",
+        "The Common Reader"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A Vision explains a system of historical cycles and interlocking gyres.",
+      "topic": "later",
+      "topicId": "a-vision",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-40",
+      "question": "Which political event is the subject of Yeats’s poem Easter 1916?",
+      "options": [
+        "The Boer War of 1899",
+        "The Dublin rebellion of 1916",
+        "The French Revolution of 1789",
+        "The Chartist demonstrations"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem considers the Irish uprising and the transformed lives of its participants.",
+      "topic": "later",
+      "topicId": "easter-1916",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-e-41",
+      "question": "Who wrote the dystopian novel Brave New World?",
+      "options": [
+        "H. G. Wells",
+        "Aldous Huxley",
+        "George Orwell",
+        "E. M. Forster"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Huxley’s novel depicts a technologically managed future society.",
+      "topic": "novel",
+      "topicId": "aldous-huxley",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-e-42",
+      "question": "In which year was Brave New World first published?",
+      "options": [
+        "1949",
+        "1922",
+        "1914",
+        "1932"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Brave New World appeared in 1932 as an early twentieth-century dystopia.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-e-43",
+      "question": "What is soma in the society of Brave New World?",
+      "options": [
+        "A secret railway",
+        "An ancient manuscript",
+        "A political newspaper",
+        "A pleasure-inducing drug"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Soma helps pacify citizens by providing chemical comfort instead of confronting distress.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-e-44",
+      "question": "What genre best describes Brave New World?",
+      "options": [
+        "Pastoral romance",
+        "Domestic comedy",
+        "Dystopian fiction",
+        "Historical chronicle"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The novel imagines a frightening social order built around control, conditioning and pleasure.",
+      "topic": "novel",
+      "topicId": "dystopian-literature",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-e-45",
+      "question": "Consider the following statements regarding the fictional World State:\nI. People are conditioned from early life to fit social roles.\nII. Consumer pleasure is used to discourage independent thought.\nIII. The society is governed by freely elected village councils.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The World State relies on conditioning and consumption, not democratic village government.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-e-46",
+      "question": "Which poet is commonly associated with the Thirties Poets?",
+      "options": [
+        "John Milton",
+        "W. H. Auden",
+        "Alexander Pope",
+        "William Wordsworth"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Auden became a leading voice among the politically alert poets of the 1930s.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-e-47",
+      "question": "What was the title of Auden’s influential 1930 collection?",
+      "options": [
+        "Poems",
+        "The Tower",
+        "The Prelude",
+        "Georgian Poetry"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Poems, published in 1930, helped establish Auden’s reputation.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-e-48",
+      "question": "Which historical conflict inspired Auden’s poem Spain?",
+      "options": [
+        "Spanish Civil War",
+        "Crimean War",
+        "Napoleonic Wars",
+        "American Civil War"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Auden wrote about the Spanish Civil War during the politically charged 1930s.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-e-49",
+      "question": "Which poet belonged to the group often associated with Auden?",
+      "options": [
+        "Thomas Gray",
+        "William Blake",
+        "Stephen Spender",
+        "John Dryden"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Spender is regularly grouped with Auden, Day-Lewis and MacNeice among the 1930s poets.",
+      "topic": "later",
+      "topicId": "stephen-spender",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-e-50",
+      "question": "Which image source helped give some 1930s writers the nickname pylon poets?",
+      "options": [
+        "Ancient temple ruins",
+        "Industrial landscapes",
+        "Medieval monasteries",
+        "Pastoral Greek islands"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The nickname reflects their use of pylons, railways and machinery as poetic images.",
+      "topic": "later",
+      "topicId": "the-thirties-poets",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    }
+  ]
+}

@@ -52,11 +52,11 @@
     'age-of-sensibility',
     'romantic-age',
     'victorian-age',
-    'edwardian'
+    'edwardian',
+    'georgian'
   ];
 
   var SOON_HUBS = [
-    'georgian',
     'modern',
     'postmodern'
   ];
