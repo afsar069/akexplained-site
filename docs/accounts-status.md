@@ -22,6 +22,7 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 ## UP Assistant Professor page: Start button on the live card (2026-11-15, on the branch, NOT merged)
 
 - The live resource card on `/exams/state-psc/up-assistant-professor/` (Paper 2 English Literature Mock Tests) now ends in a teal **Start** button instead of the arrow and the "Open" line; the four Coming-soon cards are unchanged. Template `exams/state-psc/up-assistant-professor/index.njk`, style `.state-psc-start` in `assets/state-psc.css`. A newly live resource gets the button by itself (`"live": true`).
+- **Important Links band added under the cards (owner, same day):** the band is now the shared include `_includes/hub-links.njk` (used by the PYQ page, the Mock Tests page and this page); `state-psc-layout.njk` renders it when `hub_links: true`. All 7 links return 200 on all three pages; the other State PSC pages have no band.
 - Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): no sideways scroll, no page errors, only the live card has the button, and Start opens `/exams/state-psc/up-assistant-professor/paper-2-mock-tests/`.
 
 ## State PSC hub: other states as Coming soon (2026-11-15, on the branch, NOT merged)

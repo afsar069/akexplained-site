@@ -110,27 +110,8 @@
   </div>
 </section>
 
-<section class="hub-links" aria-labelledby="hubLinksTitle">
-  <div class="wrap">
-    <div class="sechead">
-      <h2 id="hubLinksTitle">Important Links</h2>
-    </div>
-    <p class="seclede">Pages that help you prepare alongside these papers.</p>
-    <ul class="hub-linklist">
-{% for l in hubLinks %}
-      <li>
-        <a class="hub-link" href="{{ l.href }}">
-          <span class="hub-link-txt">
-            <strong>{{ l.title }}</strong>
-            <span>{{ l.text }}</span>
-          </span>
-          <span class="hub-link-arrow" aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
-{% endfor %}
-    </ul>
-  </div>
-</section>
+{% set hubLinksText = "Pages that help you prepare alongside these papers." %}
+{% include "hub-links.njk" %}
 
 </main>
 

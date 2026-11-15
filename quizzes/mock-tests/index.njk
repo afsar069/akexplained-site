@@ -139,27 +139,8 @@
   </div>
 </section>
 
-<section class="hub-links" aria-labelledby="mockLinksTitle">
-  <div class="wrap">
-    <div class="sechead">
-      <h2 id="mockLinksTitle">Important Links</h2>
-    </div>
-    <p class="seclede">Pages that help you prepare alongside these mock tests.</p>
-    <ul class="hub-linklist">
-{% for l in hubLinks %}
-      <li>
-        <a class="hub-link" href="{{ l.href }}">
-          <span class="hub-link-txt">
-            <strong>{{ l.title }}</strong>
-            <span>{{ l.text }}</span>
-          </span>
-          <span class="hub-link-arrow" aria-hidden="true">&rarr;</span>
-        </a>
-      </li>
-{% endfor %}
-    </ul>
-  </div>
-</section>
+{% set hubLinksText = "Pages that help you prepare alongside these mock tests." %}
+{% include "hub-links.njk" %}
 
 </main>
 
