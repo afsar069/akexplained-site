@@ -89,23 +89,26 @@
 #exams .sechead::after{display:none}
 .examgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(198px,1fr))}
 .examcard{
-  position:relative;display:block;border-radius:16px;padding:20px 20px 54px;
+  --exam-accent:var(--teal);
+  position:relative;display:flex;flex-direction:column;align-items:flex-start;border-radius:16px;padding:20px;
   border:1px solid var(--card-line);color:inherit;overflow:hidden;
   background:linear-gradient(160deg,var(--c1,#F4F1E6),var(--c2,#EAE6D6));
+  background:linear-gradient(160deg,color-mix(in srgb,var(--c1,#F4F1E6) 90%,var(--exam-accent)),color-mix(in srgb,var(--c2,#EAE6D6) 90%,var(--exam-accent)));
   transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
 }
 /* Piche ki halki image: right-bottom se crop, opacity kam, left par fade taaki text saaf padhe. */
 .examcard::before{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:var(--img) right bottom/cover no-repeat;opacity:.42;
+  background:var(--img) right bottom/cover no-repeat;opacity:.46;
   -webkit-mask-image:linear-gradient(to top left,#000 22%,transparent 82%);
   mask-image:linear-gradient(to top left,#000 22%,transparent 82%);
   transition:opacity .28s,transform .5s;
 }
-.examcard:hover::before{opacity:.7;transform:scale(1.05)}
+.examcard::after{content:"";position:absolute;inset:0;pointer-events:none;background:var(--exam-accent);opacity:0;transition:opacity .28s}
 .examcard>*{position:relative;z-index:1}
-.examcard:hover{transform:translateY(-5px);border-color:var(--teal);
-  box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32)}
+.examcard:focus-visible{outline-color:var(--exam-accent);border-radius:16px}
+.examcard:focus-visible::after{opacity:.1}
+.examcard:active{transform:translateY(-1px) scale(.99)}
 .examcard .ic{
   position:relative;width:72px;height:72px;border-radius:21px;display:flex;align-items:center;justify-content:center;
   background:rgba(255,253,247,.88);margin-bottom:16px;box-shadow:0 4px 14px rgba(22,48,74,.08);
@@ -116,16 +119,21 @@
 .examcard .quiz-animation svg{width:100%;height:100%}
 .examcard .ic.is-animated > img{visibility:hidden}
 .examcard .ic.is-animated .quiz-animation{opacity:1}
-.examcard:hover .ic{transform:scale(1.07) rotate(-3deg)}
 .examcard h3{font-size:1.04rem;margin-bottom:3px;line-height:1.25}
-.examcard p{font-size:.85rem;margin:0;color:var(--body)}
-.examcard .arrow{
-  position:absolute;right:16px;bottom:15px;width:31px;height:31px;border-radius:50%;
-  background:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.9);
-  display:flex;align-items:center;justify-content:center;
-  color:var(--teal);font-weight:700;font-size:.92rem;transition:background .22s,color .22s,transform .22s;
+.examcard p{font-size:.85rem;margin:0 0 20px;color:var(--body)}
+.exam-cta{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;margin-top:auto;
+  padding:10px 12px;border-radius:11px;background:var(--c2);background:color-mix(in srgb,var(--c2) 85%,var(--exam-accent));
+  color:var(--exam-accent);font-size:.78rem;font-weight:700;transition:background .25s,color .25s,box-shadow .25s}
+.examcard .arrow{font-size:1.15rem;line-height:1;transition:transform .25s}
+.examcard:focus-visible .exam-cta{background:var(--exam-accent);color:#fff}
+@media(hover:hover){
+  .examcard:hover{transform:translateY(-5px);border-color:var(--exam-accent);box-shadow:0 16px 30px -12px rgba(22,48,74,.28)}
+  .examcard:hover::before{opacity:.62;transform:scale(1.05)}
+  .examcard:hover::after{opacity:.1}
+  .examcard:hover .ic{transform:scale(1.07) rotate(-3deg)}
+  .examcard:hover .exam-cta{background:var(--exam-accent);color:#fff;box-shadow:0 4px 12px rgba(22,48,74,.12)}
+  .examcard:hover .arrow{transform:translateX(3px)}
 }
-.examcard:hover .arrow{background:var(--teal);color:#fff;transform:translateX(3px)}
 
 /* ---------- Quizzes ---------- */
 .quizzone{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--cream),var(--bg) 65%,var(--teal-soft));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
@@ -187,7 +195,7 @@
 }
 @media(prefers-reduced-motion:reduce){
   .quizzone .quizcard,.quizzone .quizcard *,.quizzone .quizcard::after{transition:none!important;animation:none!important;transform:none!important}
-  #exams .examcard,#exams .examcard *,#exams .examcard::before{transition:none!important;animation:none!important;transform:none!important}
+  #exams .examcard,#exams .examcard *,#exams .examcard::before,#exams .examcard::after{transition:none!important;animation:none!important;transform:none!important}
 }
 
 /* ---------- Ages ---------- */
