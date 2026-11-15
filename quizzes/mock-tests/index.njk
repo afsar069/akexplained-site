@@ -1,6 +1,6 @@
 ---
 ---
-{# Rule 3 hub page; made from _data/mockHub.js (CLAUDE.md rule 20). Cards share the .exam-cat styles with /quizzes/pyq/. #}
+{# Rule 3 hub page; made from _data/mockHub.js (CLAUDE.md rule 20). Cards share the .exam-cat styles, and the Important Links band (_data/hubLinks.json) is the same one as on /quizzes/pyq/. #}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -136,6 +136,28 @@
 {% endif %}
 {% endfor %}
     </div>
+  </div>
+</section>
+
+<section class="hub-links" aria-labelledby="mockLinksTitle">
+  <div class="wrap">
+    <div class="sechead">
+      <h2 id="mockLinksTitle">Important Links</h2>
+    </div>
+    <p class="seclede">Pages that help you prepare alongside these mock tests.</p>
+    <ul class="hub-linklist">
+{% for l in hubLinks %}
+      <li>
+        <a class="hub-link" href="{{ l.href }}">
+          <span class="hub-link-txt">
+            <strong>{{ l.title }}</strong>
+            <span>{{ l.text }}</span>
+          </span>
+          <span class="hub-link-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+{% endfor %}
+    </ul>
   </div>
 </section>
 
