@@ -1188,7 +1188,7 @@ summary.ptbtn::-webkit-details-marker{display:none}
 }
 
 /* ---------- practice pages: painted header ----------
-   Used by Quizzes, PYQ and Mock Tests (MCQ Practice and Daily have their own picture, below). The picture sits at 80%
+   Used by Quizzes (Daily, MCQ Practice, PYQ and Mock Tests share the Daily picture below). The picture sits at 80%
    opacity and fades out at the bottom edge, into the page below. It replaces
    the small motif, which the build only adds to a plain .pagehead. */
 .pagehead-practice::before{
@@ -1214,8 +1214,8 @@ summary.ptbtn::-webkit-details-marker{display:none}
    (.pagehead-practice, .mcq-modes, .mcq-exams, .mcq-top). Only what is
    new here starts with .dq-.
 
-   Header picture: /assets/daily-header.webp, set below with --head-pic (the
-   other practice pages keep the painting from .pagehead-practice).
+   Header picture: /assets/daily-header.webp, set below with --head-pic.
+   PYQ and Mock Tests reuse this artwork with .pagehead-daily-art.
    ========================================================= */
 
 /* ---------- head: the painted picture, then the two-tone title ----------
@@ -1227,15 +1227,15 @@ summary.ptbtn::-webkit-details-marker{display:none}
    ends in a soft cream curve that fades into the page below.
    (The file names carry no version in the CSS, so a new picture gets a new name;
    browsers keep an old picture under the old name.) */
-.pagehead-daily{
+.pagehead-daily,.pagehead-daily-art{
   --head-pic:url("/assets/daily-header.webp");
   --head-w:calc(min(100vw,var(--maxw)) - 44px);
   min-height:max(300px,calc(var(--head-w) / 3));
 }
 @media (min-width:1024px){                        /* the menu stands beside the page */
-  .pagehead-daily{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
+  .pagehead-daily,.pagehead-daily-art{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
 }
-.pagehead-daily::before{
+.pagehead-daily::before,.pagehead-daily-art::before{
   inset:0;margin:0 auto;width:min(calc(100% - 44px),calc(var(--maxw) - 44px));
   opacity:1;background-size:cover;background-position:center bottom;
   /* sides: a short fade in at the left (a little of the painted books and castle stays
@@ -1248,15 +1248,15 @@ summary.ptbtn::-webkit-details-marker{display:none}
 /* Under about 1000px of head the words would run into the quote, so the quote
    fades out and the girl and her books stay on the right. */
 @media (max-width:1271px){
-  .pagehead-daily::before{
+  .pagehead-daily::before,.pagehead-daily-art::before{
     -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
     mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
   }
 }
 @media (max-width:760px){
   /* on a phone the picture is smaller and sits faintly behind the words */
-  .pagehead-daily{--head-pic:url("/assets/daily-header-sm.webp");min-height:0}
-  .pagehead-daily::before{opacity:.32;background-size:auto 130%;background-position:right bottom;-webkit-mask-image:none;mask-image:none}
+  .pagehead-daily,.pagehead-daily-art{--head-pic:url("/assets/daily-header-sm.webp");min-height:0}
+  .pagehead-daily::before,.pagehead-daily-art::before{opacity:.32;background-size:auto 130%;background-position:right bottom;-webkit-mask-image:none;mask-image:none}
 }
 .pagehead-daily .eyebrow{color:var(--body);letter-spacing:.24em}
 .pagehead-daily h1{
