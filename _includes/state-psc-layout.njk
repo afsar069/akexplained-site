@@ -38,6 +38,7 @@
 {% endif %}
 {{ content | safe }}
 {% if not state_psc_hub %}</div>{% endif %}
+{% if hub_links %}{% set hubLinksText = hub_links_text %}{% include "hub-links.njk" %}{% endif %}
 </main>
 <footer class="site-footer"></footer>
 </body>

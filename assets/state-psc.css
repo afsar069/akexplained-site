@@ -4,3 +4,12 @@
 .state-psc-resource-grid .pgt-resource-card{min-height:114px}
 .state-psc-resource-grid .pgt-resource-icon img[src*="/feather/"]{filter:none}
 .state-psc-mock-grid{border-top:0}
+
+/* A live resource card ends in a Start button (not an arrow), so it reads as something to press.
+   The whole card is still the link. Coming soon cards keep the arrow. */
+.state-psc-start{
+  flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 24px;
+  border-radius:8px;background:var(--teal);color:#fff;font-size:.95rem;font-weight:700;line-height:1;
+  box-shadow:0 2px 0 rgba(0,0,0,.18);transition:background-color .18s;
+}
+.pgt-resource-card:hover .state-psc-start{background:var(--teal-dark)}
