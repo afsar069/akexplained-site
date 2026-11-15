@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-15. Modern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+
+## Modern Period Set 1 — free, easy and medium (2026-11-15)
+
+- The owner supplied `modern-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said all questions are verified. Facts and near-duplicates were not rechecked. Both files match the site plan and were copied unchanged into `assets/questions/`.
+- Strict structure validation passed with no errors or warnings. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Modern Period moved from `SOON_HUBS` to `LIVE_AGES`; the hub was added to `sitemap.njk`, the syllabus count and UGC NET skill zip were regenerated. Sets 2 to 5 remain Coming soon.
+- The result page's hardcoded "six in all" was replaced with "Browse the sets" because the planned set count differs by age. Eleventy built clean. Guest browser tests passed at both levels: Start has no lock, each level loads a supplied question, and a ten-question run opens its ten-question review. All 39,011 local links and assets resolved.
 
 ## Georgian Period Set 1 — free, easy and medium (2026-11-15)
 

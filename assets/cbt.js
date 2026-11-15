@@ -1790,7 +1790,7 @@
             : '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
               esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>') +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
-            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>' + (PYQ ? 'Browse the papers' : 'Browse the mock tests') : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>six in all, opening one by one') + '</span></li>' +
+            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>' + (PYQ ? 'Browse the papers' : 'Browse the mock tests') : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>Browse the sets') + '</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
         '</ul>' +
       '</section>' +
