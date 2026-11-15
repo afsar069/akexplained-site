@@ -667,4 +667,4 @@ card goes straight to that exam's PYQ page (UGC NET English → `/exams/net/engl
 - A card with `live: false` is a plain box with "Coming soon" and **no link** (so no 404). To open an exam: build its PYQ page, then set `href` and `live: true`.
 - Today: **UGC NET English** live; **PGT English** and **TGT English** Coming soon. The owner wrote "UPSC TGT"; the card says "TGT English"
   (UPSC does not run TGT exams) — confirm the exact name with the owner before adding a body or state name. Never invent a paper count or year.
-- Below the cards the page keeps the owner's own text: why past papers matter, the five-step method, and where to find authentic papers.
+- **The page is the head plus the exam cards and nothing below them** (owner, 2026-11-15: the three text sections — "What a previous-year paper is really for", "A method that works", "Where to get authentic papers" — were removed). They are in git history (commit `d3212c9` and earlier) if the owner ever wants them back.

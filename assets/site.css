@@ -3838,7 +3838,7 @@ a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);c
 
 /* ---------- PYQ front door: one card per exam (/quizzes/pyq/) ----------
    A live exam is a link; an exam still being prepared is a plain box with "Coming soon" (no link, so no 404). */
-.pyq-pick{padding:30px 0 8px}
+.pyq-pick{padding:30px 0 48px}
 .pyq-cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .pyq-cat{
   display:grid;grid-template-columns:46px minmax(0,1fr);grid-template-rows:1fr auto;column-gap:14px;row-gap:14px;
