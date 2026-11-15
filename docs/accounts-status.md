@@ -19,14 +19,21 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 - The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
 - Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
+## Mock-test front door (2026-11-15, on the branch, NOT merged)
+
+- The owner asked for `/quizzes/mock-tests/` to be built like the PYQ front door: every mock test we have linked from it, the possible ones as Coming soon. Built (rule 20): `quizzes/mock-tests/index.njk` (was hand-written HTML with one "coming soon" box) and `_data/mockHub.js`.
+- Cards: **UP PGT English** (live, 10 tests, 90 questions each, 5 free + 5 with login, read from the data), **UP Assistant Professor English** (live, login, 100 questions each, no test count because it is self-serve), **UGC NET English** and **TGT English** (Coming soon, no link).
+- The card styles were renamed from `.pyq-*` to neutral names (`.exam-cat*`, `.exam-pick`, `.hub-link*`, `.hub-links`) so both pages share them; the PYQ page was checked after the rename (3 cards, 7 links, band intact).
+- Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): no sideways scroll, no page errors, both live links return 200, Coming-soon cards are not links. The old meta description ("coming soon") was replaced. No Important Links band here (not asked).
+
 ## PYQ front door (2026-11-15, merged in PR #110; text sections removed afterwards, on the branch, NOT merged)
 
 - **Important Links (owner, same day, on the branch, NOT merged):** seven same-site links under the cards, from `_data/pyqLinks.json` (NET hub, About UGC-NET, NET syllabus, English Literature MCQs, Quick Quizzes, PGT hub, State PSC hub). Tested at 1280 / 800 / 375 px; every link returns 200. No external links were added (none verified).
-- **Partition (owner, same day, on the branch, NOT merged):** the Important Links sit in a tinted band with a thin gold tab on its top edge, so the exam cards read as the main part and the links as a section below. CSS only (`.pyq-links`).
+- **Partition (owner, same day, on the branch, NOT merged):** the Important Links sit in a tinted band with a thin gold tab on its top edge, so the exam cards read as the main part and the links as a section below. CSS only (`.hub-links`).
 - **Follow-up (owner, same day):** the three text sections under the cards (why past papers matter, the method, where to find papers) were removed; the page is now head + exam cards only (rule 19).
 
 - The owner asked for `/quizzes/pyq/` to be the page that links every PYQ we upload: students click an exam and land on that exam's PYQ page. UGC NET is live; PGT and TGT are Coming soon.
-- Built (rule 19): `quizzes/pyq/index.njk` (was hand-written HTML), `_data/pyqHub.js` (the cards), `.pyq-cat*` in `assets/site.css`. The NET card reads its count and years from `_data/netPyqPapers.js` (today 4 papers, 2012). Coming-soon cards have no link. The old "worked explanations are being added" paragraph was replaced with a plain "new papers appear in the cards above" line.
+- Built (rule 19): `quizzes/pyq/index.njk` (was hand-written HTML), `_data/pyqHub.js` (the cards), `.exam-cat*` in `assets/site.css`. The NET card reads its count and years from `_data/netPyqPapers.js` (today 4 papers, 2012). Coming-soon cards have no link. The old "worked explanations are being added" paragraph was replaced with a plain "new papers appear in the cards above" line.
 - Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): no sideways scroll, no page errors, no failed requests, the NET card opens `/exams/net/english-pyqs/`, the two Coming-soon cards are not links. All internal links on the page resolve.
 - Owner to confirm: the TGT card's exact name (written "UPSC TGT"; the card says "TGT English").
 
