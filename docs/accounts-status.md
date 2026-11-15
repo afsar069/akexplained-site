@@ -4,7 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. Edwardian Period Set 1 is prepared as a free, no-login set at easy and medium level. Victorian Period, Romantic Period, Age of Sensibility, Augustan Age, Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
+_Last updated: 2026-11-15. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata has been prepared for the site build. Edwardian Period Set 1 and earlier set updates follow below; see Git history for subsequent merges._
+
+## UP Assistant Professor Paper 2 Mock Test 5 — login-only (2026-11-15)
+
+- The owner supplied `up-ap-mock-test-5.json`, selected the login-only Mock Test 5 slot and marked all questions verified. Factual answers were not rechecked. Structure checks passed: 100 distinct ids and stems, four distinct options and a valid answer per question, explanations, real topic tags and valid period tags where supplied. The 24 questions with no period tag were left as supplied. No exact id or stem collided with public question files; the database validation trigger accepted the paper against its existing private papers.
+- The upload destination requires `setId = up-ap-p2-mock-test-5`, so only that paper-level identifier was changed. The uploader's destination metadata was added (`examId = state-psc`, `kind = mock-test`, `title = Mock Test 5`); every question object and id remained as supplied. `public.mcq_papers` stores the 100 questions as `access = login`, `status = live`, `level = medium`, `rev = 1`. A full database read-back matched the prepared private JSON exactly. No question content or load SQL is in this public repository; the owner should keep the uploaded copy.
+- The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
+- Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
 ## Edwardian Period Set 1 — free, easy and medium (2026-11-15)
 
