@@ -1182,10 +1182,13 @@
   function showResult() {
     var t = tally();
 
-    /* Page ka apna header hi badal dete hain — do header nahi. */
+    /* Malik (2026-11-15): result page par upar ki tasveer wali patti (pagehead) nahi chahiye.
+       Text pehle jaisa set rehta hai (screen reader / tab ke liye), bas patti chhupi rehti hai. */
     setHead('Your Final Score Board',
       (paper.ageName || '') + ' — ' + testName(),
       'You have completed the test. Here is your detailed performance analysis.');
+    var topBand = document.querySelector('.pagehead');
+    if (topBand) topBand.style.display = 'none';
 
     /* Malik (2026-11-04): score board saaf kar diya. Guest ko sirf iss paper
        ka apna hisaab dikhta hai, aur ek patti jo login ki taraf le jati hai.
