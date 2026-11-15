@@ -1816,7 +1816,10 @@
             "easy",
             "medium"
           ],
-          "count": 50
+          "count": 50,
+          "live": true,
+          "titleCase": "Across the Whole Age",
+          "lede": "Fifty questions at each level, easy and medium, on Georgian Poetry, Brooke, the war poets, Lawrence, Woolf, Joyce, Eliot, Yeats, Huxley and Auden."
         },
         {
           "n": 2,
@@ -1862,6 +1865,11 @@
           "count": 50
         }
       ],
+      "hub": {
+        "description": "Georgian Period MCQ practice (1910–1936). Set 1 has fifty easy and fifty medium questions on Georgian Poetry, Brooke, the war poets, Lawrence, Woolf, Joyce, Eliot, Yeats, Huxley and Auden, open to everyone.",
+        "ogDescription": "Practice Georgian literature with Set 1: fifty easy and fifty medium questions, open to everyone.",
+        "heroSub": "1910 to 1936 &middot; Set 1 is open at easy and medium level"
+      },
       "topics": [
         {
           "value": "ground",
