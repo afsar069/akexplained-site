@@ -1,0 +1,873 @@
+{
+  "setId": "georgian-set-1",
+  "rev": 1,
+  "age": "georgian",
+  "ageName": "Georgian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "poetry": "Georgian and war poetry",
+    "novel": "The novel",
+    "later": "Eliot, Yeats and Auden",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Conceptual analysis, dates, comparisons and multi-part reasoning in Georgian literature.",
+  "questions": [
+    {
+      "id": "georgian-set-1-m-01",
+      "question": "What most clearly separates much Georgian verse from the Imagist programme?",
+      "options": [
+        "Imagists exclusively wrote plays for the stage",
+        "Georgian poets often retained accessible narrative and familiar landscape",
+        "Georgian poets rejected all traditional metres",
+        "Imagists generally preferred expansive and moralizing narratives of village life"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Georgian writers frequently used recognizable subjects and forms, whereas Imagism prized compact, precise images.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-m-02",
+      "question": "Where did the Georgian Poetry anthologies originally appear under Harold Monro’s imprint?",
+      "options": [
+        "The Abbey Theatre in Dublin",
+        "The Hogarth Press in Richmond",
+        "The Cuala Press in Dublin",
+        "The Poetry Bookshop in London"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Harold Monro’s Poetry Bookshop issued the anthologies edited by Edward Marsh.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-m-03",
+      "question": "Consider the following statements regarding the Georgian poets:\nI. Membership was broadly associated with inclusion in Marsh’s anthologies.\nII. All contributors followed a single written manifesto.\nIII. The anthology series included poets of differing styles.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The group was defined by anthology participation rather than a binding artistic manifesto.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-m-04",
+      "question": "Given below are two statements:\nStatement I: The Georgian Poetry anthologies reached five volumes by 1922.\nStatement II: The first anthology was edited by Ezra Pound.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Marsh edited the five-volume sequence; Ezra Pound was associated instead with Imagism.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-m-05",
+      "question": "Arrange the following events in the correct chronological order:\n1. The First World War begins\n2. George V succeeds to the throne\n3. Imagist principles circulate in literary magazines\n4. The first Georgian Poetry anthology appears\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 3, 1",
+        "2, 3, 4, 1",
+        "2, 4, 1, 3",
+        "4, 2, 3, 1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The accession was in 1910, the anthology followed in 1912, Imagist declarations appeared in 1913 and war began in 1914.",
+      "topic": "ground",
+      "topicId": "georgian-poetry",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Georgian_Poetry"
+    },
+    {
+      "id": "georgian-set-1-m-06",
+      "question": "Which institution did Rupert Brooke attend after Rugby School?",
+      "options": [
+        "University College, London",
+        "Balliol College, Oxford",
+        "King’s College, Cambridge",
+        "Trinity College, Dublin"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Brooke studied at King’s College, Cambridge, before his brief literary and military career.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Rupert_Brooke"
+    },
+    {
+      "id": "georgian-set-1-m-07",
+      "question": "What was the immediate cause of Rupert Brooke’s death in April 1915?",
+      "options": [
+        "Aerial bombardment in London",
+        "Blood poisoning following an infection",
+        "A shell wound at the Somme",
+        "Drowning off the coast of France"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Brooke died from blood poisoning while travelling towards the Gallipoli campaign, not from combat injury.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Rupert_Brooke"
+    },
+    {
+      "id": "georgian-set-1-m-08",
+      "question": "Which wartime unit did Rupert Brooke serve with?",
+      "options": [
+        "Royal Flying Corps",
+        "Indian Medical Service",
+        "French Foreign Legion",
+        "Royal Naval Division"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Brooke joined the Royal Naval Division and participated in the Antwerp expedition.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Rupert_Brooke"
+    },
+    {
+      "id": "georgian-set-1-m-09",
+      "question": "Consider the following statements regarding Rupert Brooke’s 1914 sonnets:\nI. The sonnet sequence includes a poem called Peace.\nII. The sequence was written after the Armistice of 1918.\nIII. The Soldier belongs to the same sequence.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The sonnets were composed early in the war; Brooke himself died in 1915.",
+      "topic": "terms",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-10",
+      "question": "Match List I (Poem by Brooke) with List II (Primary association):\nList I:\na. Peace\nb. Safety\nc. The Soldier\nd. The Old Vicarage, Grantchester\nList II:\n1. Nostalgia for an English village\n2. Patriotic self-sacrifice\n3. Security beyond physical death\n4. War as spiritual awakening\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-2, d-1",
+        "a-4, b-3, c-2, d-1",
+        "a-4, b-2, c-3, d-1",
+        "a-4, b-3, c-1, d-2"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Peace presents renewal, Safety imagines enduring refuge, The Soldier idealizes sacrifice, and Grantchester recalls a beloved place.",
+      "topic": "terms",
+      "topicId": "rupert-brooke",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-11",
+      "question": "In Anthem for Doomed Youth, what replaces the conventional rituals of a soldier’s funeral?",
+      "options": [
+        "The sounds and images of warfare",
+        "The rites of a medieval wedding",
+        "A grand coronation ceremony",
+        "A cheerful pastoral festival"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Owen sets gunfire and the sounds of battle against prayers and bells associated with mourning.",
+      "topic": "poetry",
+      "topicId": "wilfred-owen",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-12",
+      "question": "What does the rat in Break of Day in the Trenches help expose?",
+      "options": [
+        "The beauty of a courtly masquerade",
+        "The superiority of trench medicine",
+        "The absurdity of national boundaries in war",
+        "The triumph of modern railway systems"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The rat can cross between opposing trenches, highlighting the arbitrariness of the human conflict.",
+      "topic": "poetry",
+      "topicId": "isaac-rosenberg",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Isaac_Rosenberg"
+    },
+    {
+      "id": "georgian-set-1-m-13",
+      "question": "Consider the following statements regarding Siegfried Sassoon and Wilfred Owen:\nI. Both poets died in France before the Armistice.\nII. Owen met Sassoon while receiving treatment at Craiglockhart.\nIII. Sassoon protested publicly against the continuation of the war in 1917.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sassoon survived the war; Owen was killed shortly before the Armistice.",
+      "topic": "poetry",
+      "topicId": "the-war-poets",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-14",
+      "question": "Arrange the following events in the correct chronological order:\n1. The First World War begins\n2. Wilfred Owen is killed in action\n3. Sassoon issues his public antiwar declaration\n4. Owen’s first collected Poems volume appears\nChoose the correct sequence:",
+      "options": [
+        "1, 3, 2, 4",
+        "1, 3, 4, 2",
+        "3, 1, 2, 4",
+        "1, 2, 3, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "War began in 1914; Sassoon protested in 1917, Owen died in 1918, and the collection followed in 1920.",
+      "topic": "terms",
+      "topicId": "the-war-poets",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-15",
+      "question": "Match List I (Poem) with List II (Poet):\nList I:\na. The Soldier\nb. Dulce et Decorum Est\nc. Counter-Attack\nd. Break of Day in the Trenches\nList II:\n1. Siegfried Sassoon\n2. Wilfred Owen\n3. Isaac Rosenberg\n4. Rupert Brooke\nChoose the correct option:",
+      "options": [
+        "a-4, b-2, c-3, d-1",
+        "a-2, b-4, c-1, d-3",
+        "a-4, b-1, c-2, d-3",
+        "a-4, b-2, c-1, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Brooke wrote The Soldier; Owen, Dulce et Decorum Est; Sassoon, Counter-Attack; and Rosenberg, Break of Day in the Trenches.",
+      "topic": "terms",
+      "topicId": "the-war-poets",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Siegfried_Sassoon"
+    },
+    {
+      "id": "georgian-set-1-m-16",
+      "question": "What central emotional conflict shapes Paul Morel in Sons and Lovers?",
+      "options": [
+        "His struggle to inherit a royal throne",
+        "His rivalry with another artist over career success and financial security",
+        "His attachment to his mother complicates adult relationships",
+        "His need to solve a missing-person mystery"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Paul’s powerful bond with his mother is inseparable from his difficulty establishing independent romantic ties.",
+      "topic": "novel",
+      "topicId": "sons-and-lovers",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-17",
+      "question": "Which family’s history across generations is central to The Rainbow?",
+      "options": [
+        "The Brangwens",
+        "The Dalloways",
+        "The Dedaluses",
+        "The Forsytes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Rainbow traces several generations of the Brangwen family and their changing relations with modern life.",
+      "topic": "novel",
+      "topicId": "the-rainbow",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/D._H._Lawrence"
+    },
+    {
+      "id": "georgian-set-1-m-18",
+      "question": "Which sisters are important protagonists in Women in Love?",
+      "options": [
+        "Ursula and Gudrun Brangwen",
+        "Vanessa and Virginia Stephen",
+        "Maggie and Lucy Tulliver",
+        "Elinor and Marianne Dashwood"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Women in Love follows the Brangwen sisters Ursula and Gudrun through contrasting relationships.",
+      "topic": "novel",
+      "topicId": "women-in-love",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/D._H._Lawrence"
+    },
+    {
+      "id": "georgian-set-1-m-19",
+      "question": "Consider the following statements regarding D. H. Lawrence’s major novels:\nI. The Rainbow precedes Women in Love.\nII. Lady Chatterley’s Lover was written by Virginia Woolf.\nIII. Both novels investigate human intimacy and industrial modernity.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The two Lawrence novels are closely linked in subject and character; Lady Chatterley’s Lover is also Lawrence’s work.",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-20",
+      "question": "Match List I (Lawrence novel) with List II (Year of publication):\nList I:\na. Sons and Lovers\nb. The Rainbow\nc. Women in Love\nd. Lady Chatterley’s Lover\nList II:\n1. 1915\n2. 1928\n3. 1920\n4. 1913\nChoose the correct option:",
+      "options": [
+        "a-4, b-1, c-2, d-3",
+        "a-4, b-3, c-1, d-2",
+        "a-1, b-4, c-3, d-2",
+        "a-4, b-1, c-3, d-2"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The four novels first appeared in 1913, 1915, 1920 and 1928 respectively.",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-21",
+      "question": "What is the relationship between Septimus Smith and the novel’s wider concern with modern society?",
+      "options": [
+        "He secretly controls the British Parliament",
+        "He commands a submarine in the war",
+        "He is a historian translating ancient Greek",
+        "His war trauma contrasts with fashionable London life"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The narrative juxtaposes Septimus’s psychological suffering with Clarissa’s social world.",
+      "topic": "novel",
+      "topicId": "mrs-dalloway",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-22",
+      "question": "Which formal feature of To the Lighthouse makes the passage of years especially visible?",
+      "options": [
+        "A series of numbered courtroom hearings",
+        "An interlude called Time Passes",
+        "A chain of letters dated by one narrator",
+        "A sequence of dramatic acts set in Rome"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The middle section, Time Passes, compresses years and changes the human significance of the house.",
+      "topic": "novel",
+      "topicId": "to-the-lighthouse",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/To_the_Lighthouse"
+    },
+    {
+      "id": "georgian-set-1-m-23",
+      "question": "Given below are two statements:\nStatement I: Virginia Woolf criticized Edwardian novelists for dwelling heavily on external details.\nStatement II: She believed that fiction should attend to the shifting impressions of consciousness.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Woolf objected to excessive external description and advocated recording the movement of experience in the mind.",
+      "topic": "novel",
+      "topicId": "modern-fiction-essay",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-24",
+      "question": "Arrange the following events in the correct chronological order:\n1. To the Lighthouse is published\n2. Orlando is published\n3. A Room of One’s Own is published\n4. Mrs Dalloway is published\nChoose the correct sequence:",
+      "options": [
+        "4, 1, 3, 2",
+        "4, 2, 1, 3",
+        "1, 4, 2, 3",
+        "4, 1, 2, 3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "These works appeared successively in 1925, 1927, 1928 and 1929.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-25",
+      "question": "Match List I (Woolf work) with List II (Distinctive feature):\nList I:\na. Mrs Dalloway\nb. To the Lighthouse\nc. Orlando\nd. The Waves\nList II:\n1. The Ramsay family and a lighthouse\n2. A protagonist living across centuries\n3. Six interwoven inner voices\n4. One day in London\nChoose the correct option:",
+      "options": [
+        "a-4, b-2, c-1, d-3",
+        "a-1, b-4, c-2, d-3",
+        "a-4, b-1, c-3, d-2",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The four works explore one day, memory and family, a shifting historical identity, and multiple streams of consciousness.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/The_Waves"
+    },
+    {
+      "id": "georgian-set-1-m-26",
+      "question": "What classical epic provides the principal structural parallel for Ulysses?",
+      "options": [
+        "Dante’s Divine Comedy",
+        "Homer’s Odyssey",
+        "Milton’s Paradise Lost",
+        "Virgil’s Aeneid"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Joyce maps a day in modern Dublin onto episodes and patterns associated with Homer’s wandering hero.",
+      "topic": "novel",
+      "topicId": "ulysses-joyce",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-27",
+      "question": "Why is the closing episode of Ulysses a major example of interior monologue?",
+      "options": [
+        "It is written solely as a newspaper advertisement",
+        "It presents a sequence of carefully punctuated parliamentary speeches",
+        "It moves through Molly Bloom’s thoughts with little punctuation",
+        "It lists the speeches of mythological gods"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The concluding episode immerses readers in Molly Bloom’s associative and largely unpunctuated stream of thought.",
+      "topic": "novel",
+      "topicId": "interior-monologue",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-28",
+      "question": "Consider the following statements regarding James Joyce’s prose:\nI. Finnegans Wake was published before Ulysses.\nII. A Portrait of the Artist as a Young Man follows Stephen Dedalus.\nIII. Dubliners is a collection of short stories.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Finnegans Wake came in 1939, well after Ulysses appeared in 1922.",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-29",
+      "question": "Arrange the following events in the correct chronological order:\n1. Ulysses is published in book form\n2. Finnegans Wake is published\n3. Dubliners is published\n4. A Portrait of the Artist as a Young Man appears\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "3, 4, 2, 1",
+        "3, 4, 1, 2",
+        "3, 1, 4, 2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Joyce’s principal publications appeared in 1914, 1916, 1922 and 1939 in that order.",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-30",
+      "question": "Match List I (Joyce work) with List II (Defining feature):\nList I:\na. Dubliners\nb. A Portrait of the Artist as a Young Man\nc. Ulysses\nd. Finnegans Wake\nList II:\n1. Leopold Bloom’s Dublin day\n2. Stories of ordinary Dublin life\n3. Development of Stephen Dedalus\n4. Multilingual dreamlike wordplay\nChoose the correct option:",
+      "options": [
+        "a-2, b-3, c-1, d-4",
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-1, d-4",
+        "a-2, b-3, c-4, d-1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Each work develops a different form, from realist short fiction to an artistic education, a day-long modern epic and experimental dream language.",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "georgian-set-1-m-31",
+      "question": "Which mythical figure becomes a unifying observer of different lives in The Waste Land?",
+      "options": [
+        "Beowulf",
+        "Satan",
+        "Prometheus",
+        "Tiresias"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Tiresias connects otherwise fragmented voices and experiences in the poem’s third section.",
+      "topic": "later",
+      "topicId": "the-waste-land",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-32",
+      "question": "Which pairing identifies two studies that influenced the mythic patterns of The Waste Land?",
+      "options": [
+        "Marx’s Capital and Darwin’s Descent of Man",
+        "Locke’s Essay and Hume’s Treatise",
+        "John Ruskin’s Modern Painters and Thomas Carlyle’s Sartor Resartus",
+        "Frazer’s The Golden Bough and Weston’s From Ritual to Romance"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poem draws on comparative religion and Grail scholarship as frameworks for its modern images.",
+      "topic": "later",
+      "topicId": "the-waste-land",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-33",
+      "question": "In which essay did Eliot introduce the concept of the objective correlative?",
+      "options": [
+        "A Defence of Poetry",
+        "The Study of Poetry",
+        "Hamlet and His Problems",
+        "The Function of Criticism at the Present Time"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Eliot described how a set of objects and events can embody a specific emotion in Hamlet and His Problems.",
+      "topic": "later",
+      "topicId": "objective-correlative",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-34",
+      "question": "Consider the following statements regarding T. S. Eliot’s criticism:\nI. Tradition and the Individual Talent argues that the poet responds to earlier literature.\nII. Eliot argued that all poetry must be an unedited diary of the poet.\nIII. Eliot associated poetry with an escape from merely personal emotion.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Eliot stressed historical awareness and impersonal artistic transformation, not diary-like self-disclosure.",
+      "topic": "later",
+      "topicId": "tradition-and-the-individual-talent",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-35",
+      "question": "Arrange the following events in the correct chronological order:\n1. The Waste Land is published\n2. Ash-Wednesday is published\n3. Prufrock appears in the magazine Poetry\n4. Tradition and the Individual Talent is published\nChoose the correct sequence:",
+      "options": [
+        "3, 4, 2, 1",
+        "3, 1, 4, 2",
+        "3, 4, 1, 2",
+        "4, 3, 1, 2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The relevant dates are 1915, 1919, 1922 and 1930 respectively.",
+      "topic": "later",
+      "topicId": "ts-eliot",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-36",
+      "question": "Which recurring image helps Yeats imagine the cyclical movement of history?",
+      "options": [
+        "A fixed mechanical clock",
+        "Interlocking gyres",
+        "A closed garden wall",
+        "A perfectly straight road"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The gyres represent alternating movements through which civilizations and historical phases change.",
+      "topic": "later",
+      "topicId": "a-vision",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-37",
+      "question": "What opposition is central to Sailing to Byzantium?",
+      "options": [
+        "Classical epic and detective fiction",
+        "Colonial trade and naval transport",
+        "Aging natural life and enduring artistic form",
+        "Rural farming and urban housing"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The poem turns from bodily aging towards an imagined realm of lasting art and spirit.",
+      "topic": "later",
+      "topicId": "sailing-to-byzantium",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-38",
+      "question": "Which image signals an approaching new historical era in The Second Coming?",
+      "options": [
+        "A rough beast moving towards Bethlehem",
+        "A nightingale singing in a garden",
+        "A golden ship arriving at Venice",
+        "An unbroken coronation procession"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The threatening creature transforms the expectation of a peaceful religious return into a vision of historical terror.",
+      "topic": "later",
+      "topicId": "the-second-coming",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-39",
+      "question": "Given below are two statements:\nStatement I: Yeats used images of Irish myth and folklore in his early writing.\nStatement II: His later poetry remained entirely unaffected by political upheaval in Ireland.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Early Celtic material gave way to more politically and historically charged poetry following revolutionary events.",
+      "topic": "later",
+      "topicId": "wb-yeats",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-40",
+      "question": "Match List I (Work by Yeats) with List II (Central subject):\nList I:\na. Easter 1916\nb. The Second Coming\nc. Sailing to Byzantium\nd. A Vision\nList II:\n1. An ominous change of historical era\n2. Cycles of history and symbolic gyres\n3. Age, art and spiritual permanence\n4. The Irish uprising and its legacy\nChoose the correct option:",
+      "options": [
+        "a-4, b-1, c-3, d-2",
+        "a-4, b-1, c-2, d-3",
+        "a-1, b-4, c-3, d-2",
+        "a-4, b-3, c-1, d-2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The works address revolutionary Ireland, a threatened historical order, the quest for artistic endurance and the theory of cyclical time.",
+      "topic": "later",
+      "topicId": "wb-yeats",
+      "periodId": "georgian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "georgian-set-1-m-41",
+      "question": "What makes Bernard Marx a source of tension within the World State?",
+      "options": [
+        "He is an ancient historian living outside time",
+        "He rules the World State as its elected president",
+        "He is a socially uncomfortable Alpha who questions conformity",
+        "He commands the fleet that defends the islands"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Bernard’s insecurity and dissatisfaction expose cracks in the supposedly contented social hierarchy.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-m-42",
+      "question": "Why is John called the Savage in Brave New World?",
+      "options": [
+        "He leads a rebellion in nineteenth-century London",
+        "He grows up outside the World State on a reservation",
+        "He is the inventor of the artificial incubation system",
+        "He edits the official government newspaper"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John’s upbringing outside the conditioned society makes his beliefs clash with its controlled happiness.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-m-43",
+      "question": "What role does hypnopaedia play in Huxley’s imagined society?",
+      "options": [
+        "It reinforces social conditioning during sleep",
+        "It transmits historical documents into space",
+        "It preserves old theatre performances",
+        "It teaches citizens to write epic poetry"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sleep-learning repeats slogans so that citizens accept the beliefs assigned to their social class.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-m-44",
+      "question": "Given below are two statements:\nStatement I: The World State suppresses independent thinking partly through comfort and conditioning.\nStatement II: Its citizens are encouraged to choose their own caste after adulthood.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Statement I is false, but Statement II is true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The society shapes people from before birth and fixes social roles rather than allowing unrestricted choice.",
+      "topic": "novel",
+      "topicId": "brave-new-world",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-m-45",
+      "question": "Arrange the following events in the correct chronological order:\n1. Point Counter Point is published\n2. Those Barren Leaves is published\n3. Crome Yellow is published\n4. Brave New World is published\nChoose the correct sequence:",
+      "options": [
+        "3, 2, 1, 4",
+        "3, 2, 4, 1",
+        "2, 3, 1, 4",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "These four major Huxley novels appeared in 1921, 1925, 1928 and 1932 respectively.",
+      "topic": "novel",
+      "topicId": "aldous-huxley",
+      "periodId": "georgian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Brave_New_World"
+    },
+    {
+      "id": "georgian-set-1-m-46",
+      "question": "What occasion does Auden address in In Memory of W. B. Yeats?",
+      "options": [
+        "The death of an Irish poet in 1939",
+        "The beginning of the Boer War",
+        "The signing of the Treaty of Utrecht",
+        "A Victorian royal wedding"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The elegy reflects on Yeats’s death and on what poetry can mean in troubled times.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-m-47",
+      "question": "How does Auden’s 1930s verse often differ from earlier pastoral Georgian writing?",
+      "options": [
+        "It rejects all references to present society",
+        "It incorporates politics and imagery from modern industry",
+        "It is confined to mythological pastoral romances",
+        "It consists only of translations from Greek"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Auden and related poets made public crises, industry and political arguments part of their literary material.",
+      "topic": "later",
+      "topicId": "the-thirties-poets",
+      "periodId": "georgian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-m-48",
+      "question": "Consider the following statements regarding the poets associated with Auden:\nI. Alexander Pope edited the anthology New Signatures in 1932.\nII. Cecil Day-Lewis was linked with Auden’s literary generation.\nIII. Stephen Spender belonged to the Thirties Poets.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Spender and Day-Lewis were Auden’s contemporaries; Pope lived in the eighteenth century.",
+      "topic": "later",
+      "topicId": "the-thirties-poets",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-m-49",
+      "question": "Given below are two statements:\nStatement I: Auden’s poem Spain grew from the conflict of the 1930s.\nStatement II: Auden’s early reputation was established by Poems in 1930.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Spain responds to the Spanish Civil War, while the earlier 1930 collection had already drawn notice to his work.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "georgian-set-1-m-50",
+      "question": "Consider the following statements regarding Auden and literary developments:\nI. Auden’s verse often turned towards the economic and political problems of his day.\nII. Auden was a member of the seventeenth-century Cavalier poetic circle.\nIII. His poetic contemporaries included Louis MacNeice.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The historical claim about the Cavalier circle is impossible; MacNeice was a genuine contemporary of Auden.",
+      "topic": "later",
+      "topicId": "wh-auden",
+      "periodId": "georgian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    }
+  ]
+}
