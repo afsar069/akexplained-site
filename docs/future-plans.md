@@ -54,6 +54,32 @@ The "no paid tier" lines in `/terms/`, `/contact/` and About change in the same 
 - `CLAUDE.md` rule 18 ("First paper …") and `docs/accounts-status.md` do not yet describe the June 2012 papers and the two Paper III papers. `tools/pyq/decisions/` has files for three of the four papers (none for December 2012 Paper III); not checked whether that paper needed one.
 - Two old remote branches (`fix/pgt-shared-footer`, `fix/result-pdf-question-summary-20261113`) show commits not in `main`'s history; likely already merged by another route. Not verified.
 
+## 5b. Profile picture upload — first use of a Supabase Storage bucket (owner asked to note it, 2026-11-15)
+**Status: planned, nothing built.** Today a student picks one of ten ready-made avatars (`a1`..`a10`, column `profiles.avatar_id`,
+files in `assets/avatars/`, helper `window.akAuth.avatarUrl()` in `assets/auth.js`). The plan adds the option to **upload their own photo**.
+Facts checked on the live project (2026-11-15): the Storage area is empty (0 files, 0 bytes); the whole database is 14 MB. The plan's limit
+for Storage on the owner's Supabase plan was **not verified** (rule 14): read it on Supabase → Settings → Usage before setting a size cap.
+- **Where it lives:** a bucket (for example `avatars`) in Supabase Storage. Path per student: `<user-id>/<file>`. The `profiles` table keeps only the
+  path (a new column, such as `avatar_path`); the ready-made `avatar_id` stays as the fallback, so nobody is forced to upload.
+- **Access (RLS on `storage.objects`, the real gate; no service key, rule 10):** a student may add, replace and delete **only inside their own
+  folder**. Public bucket so the picture can show in the header, the dashboard and on reviews; an admin (`paper_admins`) may remove any picture.
+- **Limits to set on the bucket:** image types only (JPEG, PNG, WebP) and a small maximum file size. The number is the owner's choice after the
+  plan limit is read; never invent one.
+- **Account deletion (rule 10):** `on delete cascade` does **not** remove Storage files. The Edge Function `delete-account` must also delete the
+  student's folder, and the change must be tested the way the earlier delete test was (`docs/accounts-status.md`).
+- **Privacy and Terms (rule 10):** `/privacy/` and `/terms/` must say a profile photo is stored, who can see it, and that deleting the account removes it,
+  in the same commit that ships the feature.
+- **Reviews:** a review keeps the avatar snapshotted when it was posted (see `docs/accounts-status.md`). Decide whether an uploaded photo is snapshotted too
+  (simpler, a student has no UPDATE on reviews) or shown live.
+- **Pages that change:** `/account/` (the picker plus an upload button), the header and dashboard avatar paint in `assets/auth.js`
+  (`avatarUrl()` learns the path), `assets/dashboard.js`, the review card in `assets/home.js`.
+- **Moderation:** a public picture can be inappropriate. Same approach as reviews (rule 6): act only on inappropriate content, from the admin side.
+  Whether to add a hide/remove button in `/admin/` is for the owner to decide.
+- **Same bucket idea later (not planned in detail):** pictures and text files for a future publishing page. Needs its own decisions (who may upload,
+  live at once or after approval, which file types), so it is not part of this item.
+- **Tests when built:** throwaway Postgres for the policies (own folder only; another student's folder refused; guest refused; wrong type and
+  oversize refused), then Playwright with Supabase mocked; run the security advisors afterwards (rule 14).
+
 ## 6. Decisions owed by the owner
 - Taxonomy node-gaps batch 3 (21 titles, `tools/tagging/reports/node-gaps.md`).
 - "Meet the Author" bio wording.
