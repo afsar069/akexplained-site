@@ -22,6 +22,7 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 ## PYQ front door (2026-11-15, merged in PR #110; text sections removed afterwards, on the branch, NOT merged)
 
 - **Important Links (owner, same day, on the branch, NOT merged):** seven same-site links under the cards, from `_data/pyqLinks.json` (NET hub, About UGC-NET, NET syllabus, English Literature MCQs, Quick Quizzes, PGT hub, State PSC hub). Tested at 1280 / 800 / 375 px; every link returns 200. No external links were added (none verified).
+- **Partition (owner, same day, on the branch, NOT merged):** the Important Links sit in a tinted band with a thin gold tab on its top edge, so the exam cards read as the main part and the links as a section below. CSS only (`.pyq-links`).
 - **Follow-up (owner, same day):** the three text sections under the cards (why past papers matter, the method, where to find papers) were removed; the page is now head + exam cards only (rule 19).
 
 - The owner asked for `/quizzes/pyq/` to be the page that links every PYQ we upload: students click an exam and land on that exam's PYQ page. UGC NET is live; PGT and TGT are Coming soon.
