@@ -7,7 +7,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Previous Year Questions | AK Explained</title>
-<meta name="description" content="Previous-year question papers by exam. Take UGC-NET English papers as an online test; PGT and TGT are coming soon. Also: how to use past papers well, and where to find authentic ones.">
+<meta name="description" content="Previous-year question papers by exam. Take UGC-NET English papers as an online test; PGT and TGT are coming soon.">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -110,38 +110,25 @@
   </div>
 </section>
 
-<section class="intro-band">
+<section class="pyq-links" aria-labelledby="pyqLinksTitle">
   <div class="wrap">
-    <h2>What a previous-year paper is really for</h2>
-    <p>Most students treat past papers as a final rehearsal — something to attempt in the last fortnight to check whether the preparation worked. That is the least valuable use of them.</p>
-    <p>A past paper is a document about the examiner's mind. It shows you which authors return every year and which appeared once in a decade, how deep the questions actually go, how much of the paper is recognition and how much is reasoning, and which parts of a large syllabus are effectively decorative. All of that is information you want in your <em>first</em> month, not your last.</p>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>A method that works</h2>
-    <ol>
-      <li><strong>Attempt before you study.</strong> Take a paper you have never seen, on a syllabus you have only half-covered, and attempt it honestly. The score will be poor and that is not the point.</li>
-      <li><strong>Mark it yourself, question by question.</strong> Against each wrong answer write one word: <em>gap</em>, <em>misread</em> or <em>doubted</em>. Do not skip this — the pattern that emerges over three papers is worth more than the papers themselves.</li>
-      <li><strong>Tally by unit, not by paper.</strong> Count how many questions came from criticism, how many from drama, how many from language. Compare that with how you are spending your study hours. The mismatch is usually startling.</li>
-      <li><strong>Rework the paper a week later.</strong> Not to score better — to check whether the corrections held. Anything you get wrong twice needs a different method, not more repetition.</li>
-      <li><strong>Keep a single error notebook</strong> across all papers. In the last week before your examination, this notebook is the most valuable document you own.</li>
-    </ol>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <h2>Where to get authentic papers</h2>
-    <p>Use official sources only. Question papers circulating on messaging apps are frequently mistyped, mixed between years, or carry wrong answer keys — and a confidently wrong answer key is worse than no practice at all.</p>
-    <ul>
-      <li><strong>UGC-NET</strong> — question papers and answer keys are released by the National Testing Agency on its official portal after each cycle.</li>
-      <li><strong>University papers</strong> — most universities publish past papers in their examination or student section. For CCSU, papers are archived by course code.</li>
-      <li><strong>IGNOU</strong> — term-end examination papers are available through the university's own question paper repository.</li>
+    <div class="sechead">
+      <h2 id="pyqLinksTitle">Important Links</h2>
+    </div>
+    <p class="seclede">Pages that help you prepare alongside these papers.</p>
+    <ul class="pyq-linklist">
+{% for l in pyqLinks %}
+      <li>
+        <a class="pyq-link" href="{{ l.href }}">
+          <span class="pyq-link-txt">
+            <strong>{{ l.title }}</strong>
+            <span>{{ l.text }}</span>
+          </span>
+          <span class="pyq-link-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+{% endfor %}
     </ul>
-    <p>New papers appear in the exam cards at the top of this page as soon as they are ready. If there is a particular exam, year or paper you want first, <a href="/contact/">tell me</a> and it will move up the queue.</p>
-    <p style="margin-top:14px"><a class="btn alt" href="/quizzes/mcq/">Meanwhile, try the practice MCQs</a></p>
   </div>
 </section>
 

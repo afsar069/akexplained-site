@@ -19,7 +19,10 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 - The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
 - Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
-## PYQ front door (2026-11-15, on the branch, NOT merged)
+## PYQ front door (2026-11-15, merged in PR #110; text sections removed afterwards, on the branch, NOT merged)
+
+- **Important Links (owner, same day, on the branch, NOT merged):** seven same-site links under the cards, from `_data/pyqLinks.json` (NET hub, About UGC-NET, NET syllabus, English Literature MCQs, Quick Quizzes, PGT hub, State PSC hub). Tested at 1280 / 800 / 375 px; every link returns 200. No external links were added (none verified).
+- **Follow-up (owner, same day):** the three text sections under the cards (why past papers matter, the method, where to find papers) were removed; the page is now head + exam cards only (rule 19).
 
 - The owner asked for `/quizzes/pyq/` to be the page that links every PYQ we upload: students click an exam and land on that exam's PYQ page. UGC NET is live; PGT and TGT are Coming soon.
 - Built (rule 19): `quizzes/pyq/index.njk` (was hand-written HTML), `_data/pyqHub.js` (the cards), `.pyq-cat*` in `assets/site.css`. The NET card reads its count and years from `_data/netPyqPapers.js` (today 4 papers, 2012). Coming-soon cards have no link. The old "worked explanations are being added" paragraph was replaced with a plain "new papers appear in the cards above" line.
