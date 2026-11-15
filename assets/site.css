@@ -881,16 +881,19 @@ summary.ptbtn::-webkit-details-marker{display:none}
     -webkit-mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%);mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%)}
 }
 
+/* Text-only page head (no picture): About page. The motif is added only to a plain "pagehead" class. */
+.pagehead-plain{min-height:0;padding:40px 0 34px}
+
 /* ---------- About page: author portrait beside the opening text ----------
-   Text left, portrait right on a wide screen; on a phone the portrait goes on top. */
+   Portrait first (left), text beside it on a wide screen; on a phone the portrait goes on top. */
 .about-intro::before{display:none}
 .about-intro-grid{
   display:grid;gap:48px;align-items:center;
-  grid-template-columns:minmax(0,1fr) minmax(0,300px);
+  grid-template-columns:minmax(0,300px) minmax(0,1fr);
 }
-.about-intro-text{grid-column:1;grid-row:1}
+.about-intro-text{grid-column:2;grid-row:1}
 .about-intro-text p{max-width:none}
-.about-portrait{grid-column:2;grid-row:1;margin:0;justify-self:center;width:100%;max-width:300px}
+.about-portrait{grid-column:1;grid-row:1;margin:0;justify-self:center;width:100%;max-width:300px}
 /* One frame holds the photo and the name panel together. The gold outline sits behind the whole frame. */
 .about-portrait-frame{
   position:relative;padding:8px 8px 0;border-radius:22px;
