@@ -1980,6 +1980,238 @@
   }
 
   /* ---------------------------------------------------------
+     Result ka PDF — ek tap me seedha download
+
+     Pehle ye button window.print() chalata tha. Mobile browser me print
+     ka dialog khulta hai aur file nahi utarti. Ab PDF yahin banti hai
+     (koi library nahi, sirf Helvetica ki saadi PDF) aur <a download> se
+     seedha phone me utar jati hai. Kuch bhi fail ho to purana print chalta hai.
+     Likha sirf wahi jata hai jo score board par pehle se dikhta hai (rule 2).
+     --------------------------------------------------------- */
+  function plainText(html) {
+    var d = document.createElement('div');
+    d.innerHTML = html;
+    return d.textContent || '';
+  }
+
+  function makeResultPdf(t) {
+    var W = 595, H = 842, M = 40;                 // A4 (pt), margin
+    var pages = [], ops = [], y = 0;
+    var TEAL = [0.03, 0.47, 0.43], RED = [0.725, 0.11, 0.11], GREY = [0.35, 0.35, 0.35],
+        INK = [0.07, 0.07, 0.07], SAND = [0.93, 0.91, 0.87];
+
+    /* Text ko PDF ke WinAnsi bytes me badalna; jo akshar nahi milta use '?' */
+    var MAP = { 8212: 151, 8211: 150, 8217: 146, 8216: 145, 8220: 147, 8221: 148, 8226: 149, 8722: 45, 8230: 133 };
+    function enc(s) {
+      var out = '';
+      s = String(s);
+      for (var i = 0; i < s.length; i++) {
+        var c = s.charCodeAt(i);
+        if (MAP[c]) c = MAP[c];
+        else if (c > 255 || (c < 32 && c !== 10)) c = c === 160 ? 32 : 63;
+        var ch = String.fromCharCode(c);
+        out += (ch === '(' || ch === ')' || ch === '\\') ? '\\' + ch : ch;
+      }
+      return out;
+    }
+
+    /* Chaudai naapna: canvas me Arial (Helvetica jaisa naap), na mile to andaaza. */
+    var ctx = null;
+    try { ctx = document.createElement('canvas').getContext('2d'); } catch (e) {}
+    function width(s, size, bold) {
+      if (ctx) {
+        ctx.font = (bold ? 'bold ' : '') + '100px Arial, Helvetica, sans-serif';
+        return ctx.measureText(s).width * size / 100;
+      }
+      return String(s).length * size * (bold ? 0.58 : 0.54);
+    }
+    function wrap(s, size, bold, maxW) {
+      var words = String(s).split(/\s+/), lines = [], cur = '';
+      words.forEach(function (w) {
+        var tryIt = cur ? cur + ' ' + w : w;
+        if (cur && width(tryIt, size, bold) > maxW) { lines.push(cur); cur = w; }
+        else cur = tryIt;
+      });
+      if (cur) lines.push(cur);
+      return lines;
+    }
+
+    function col(c, stroke) { return c.map(function (n) { return n.toFixed(3); }).join(' ') + (stroke ? ' RG' : ' rg'); }
+    function text(x, ty, s, size, bold, c, align, boxW) {
+      var w = width(s, size, bold);
+      if (align === 'center') x += (boxW - w) / 2;
+      else if (align === 'right') x += boxW - w;
+      ops.push('BT /' + (bold ? 'F2' : 'F1') + ' ' + size + ' Tf ' + col(c || INK) + ' ' +
+        x.toFixed(2) + ' ' + (H - ty).toFixed(2) + ' Td (' + enc(s) + ') Tj ET');
+    }
+    function rect(x, ry, w, h, fill, stroke) {
+      var o = '';
+      if (fill) o += col(fill) + ' ';
+      if (stroke) o += col(stroke, true) + ' 0.8 w ';
+      o += x.toFixed(2) + ' ' + (H - ry - h).toFixed(2) + ' ' + w.toFixed(2) + ' ' + h.toFixed(2) + ' re ' +
+        (fill && stroke ? 'B' : fill ? 'f' : 'S');
+      ops.push(o);
+    }
+    function hline(ry, c, lw) {
+      ops.push(col(c, true) + ' ' + (lw || 1) + ' w ' + M + ' ' + (H - ry).toFixed(2) + ' m ' + (W - M) + ' ' + (H - ry).toFixed(2) + ' l S');
+    }
+
+    function footer(n, total) {
+      hline(H - 38, SAND, 0.8);
+      text(M, H - 24, 'AK Explained  -  akexplained.com', 8.5, false, GREY);
+      text(M, H - 24, 'Page ' + n + ' of ' + total, 8.5, false, GREY, 'right', W - 2 * M);
+    }
+    function header() {
+      text(M, 46, 'AK Explained', 15, true, TEAL);
+      text(M, 46, "The Student's Library", 9.5, false, GREY, 'right', W - 2 * M);
+      hline(56, INK, 1.5);
+      y = 84;
+    }
+    function newPage() { if (ops.length) pages.push(ops); ops = []; header(); }
+    function need(h) { if (y + h > H - 56) newPage(); }
+
+    /* ---- sabse upar ---- */
+    newPage();
+    text(M, y, 'Your Final Score Board', 22, true, INK);
+    y += 22;
+    wrap(plainText((paper.ageName ? paper.ageName + ' - ' : '') + testName()), 12, false, W - 2 * M).forEach(function (ln) {
+      text(M, y, ln, 12, false, GREY); y += 16;
+    });
+    var when = '';
+    try { when = new Date(st.endedAt || Date.now()).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }); } catch (e) {}
+    text(M, y, plainText(whoAmI()) + (when ? '  -  ' + when : ''), 10.5, false, GREY);
+    y += 26;
+
+    /* ---- score ka dabba ---- */
+    var g = grade(t.pc);
+    var score = t.neg ? t.net + '/' + Q.length : t.right + '/' + Q.length;
+    rect(M, y, W - 2 * M, 92, [0.96, 0.98, 0.97], TEAL);
+    text(M + 18, y + 24, 'YOUR SCORE', 9, true, GREY);
+    text(M + 18, y + 66, score, 36, true, TEAL);
+    text(M + 24 + width(score, 36, true), y + 66, t.pc + '%', 18, true, INK);
+    var gName = plainText(g.name);
+    wrap(gName, 13, true, 250).slice(0, 2).forEach(function (ln, i) {
+      text(W - M - 18 - 250, y + 38 + i * 17, ln, 13, true, INK, 'right', 250);
+    });
+    if (t.neg) text(W - M - 18 - 250, y + 76, t.right + ' right, less ' + t.lost + ' for ' + t.wrong + ' wrong at -' + t.neg + ' each', 8.5, false, GREY, 'right', 250);
+    y += 92 + 18;
+
+    /* ---- chhe ginti ---- */
+    var used = (st.startedAt && st.endedAt) ? Math.max(1, Math.round((st.endedAt - st.startedAt) / 1000)) : 0;
+    var allowed = (st.endsAt && st.startedAt) ? Math.round((st.endsAt - st.startedAt) / 1000) : 0;
+    var cells = [
+      ['Correct', String(t.right), TEAL],
+      ['Incorrect', String(t.wrong), RED],
+      ['Unanswered', String(t.skipped), GREY],
+      ['Accuracy', t.acc + '%', INK],
+      ['Time taken', used ? clock(used) : '-', INK],
+      ['Questions', String(Q.length), INK]
+    ];
+    var cw = (W - 2 * M - 10 * 2) / 3, chh = 52;
+    cells.forEach(function (c, i) {
+      var cx = M + (i % 3) * (cw + 10), cy = y + Math.floor(i / 3) * (chh + 10);
+      rect(cx, cy, cw, chh, [1, 1, 1], SAND);
+      text(cx + 12, cy + 19, c[0], 9, false, GREY);
+      text(cx + 12, cy + 41, c[1], 17, true, c[2]);
+    });
+    y += chh * 2 + 10 + 22;
+    if (allowed && used) {
+      text(M, y, 'Time allowed: ' + clock(allowed).trim() + '.   Level: ' + plainText(levelLabel()) + '.', 9.5, false, GREY);
+      y += 30;
+    } else y += 8;
+
+    /* ---- sawal-wise patti ---- */
+    need(60);
+    text(M, y, 'Question-wise summary', 13, true, INK); y += 8;
+    hline(y, SAND, 1); y += 18;
+    var per = 15, gap = 4, sz = (W - 2 * M - gap * (per - 1)) / per;
+    var gridRows = Math.ceil(Q.length / per);
+    Q.forEach(function (q, i) {
+      var r = Math.floor(i / per);
+      if (i % per === 0) need(sz + gap + 4);
+      var state = st.pick[i] === undefined ? 'skip' : st.pick[i] === q.correct_option_id ? 'right' : 'wrong';
+      var gx = M + (i % per) * (sz + gap);
+      rect(gx, y, sz, sz,
+        state === 'right' ? [0.85, 0.93, 0.91] : state === 'wrong' ? [0.97, 0.87, 0.87] : [0.93, 0.91, 0.87],
+        state === 'right' ? TEAL : state === 'wrong' ? RED : [0.55, 0.53, 0.48]);
+      text(gx, y + sz / 2 + 3, String(i + 1), 8, false, INK, 'center', sz);
+      if (i % per === per - 1 || i === Q.length - 1) y += sz + gap;
+    });
+    y += 16;
+    need(24);
+    [['Correct', [0.85, 0.93, 0.91], TEAL], ['Incorrect', [0.97, 0.87, 0.87], RED], ['Unanswered', [0.93, 0.91, 0.87], [0.55, 0.53, 0.48]]]
+      .forEach(function (k, i) {
+        var lx = M + i * 110;
+        rect(lx, y - 8, 10, 10, k[1], k[2]);
+        text(lx + 15, y, k[0], 9, false, GREY);
+      });
+    y += 26;
+
+    /* ---- topic ke hisaab se ---- */
+    var topics = t.topics.filter(function (o) { return o.name && o.name !== 'other'; });
+    if (topics.length > 1) {
+      need(60);
+      text(M, y, 'Topic-wise result', 13, true, INK); y += 8;
+      hline(y, SAND, 1); y += 18;
+      topics.forEach(function (o) {
+        var lines = wrap(plainText(o.name), 10, false, W - 2 * M - 150);
+        var rowH = lines.length * 13 + 8;
+        need(rowH);
+        lines.forEach(function (ln, i) { text(M, y + i * 13, ln, 10, false, INK); });
+        text(W - M - 130, y, o.right + '/' + o.total, 10, false, GREY, 'right', 50);
+        text(W - M - 70, y, o.pc + '%', 10, true, o.pc >= 70 ? TEAL : o.pc < 40 ? RED : INK, 'right', 70);
+        y += rowH;
+      });
+    }
+
+    pages.push(ops);
+    var total = pages.length;
+    pages.forEach(function (p, i) { ops = p; footer(i + 1, total); });
+
+    /* ---- PDF ki file khud jodna ---- */
+    var objs = [];
+    objs.push('<< /Type /Catalog /Pages 2 0 R >>');
+    var kids = pages.map(function (_, i) { return (5 + i * 2) + ' 0 R'; }).join(' ');
+    objs.push('<< /Type /Pages /Kids [' + kids + '] /Count ' + total + ' >>');
+    objs.push('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>');
+    objs.push('<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>');
+    pages.forEach(function (p, i) {
+      var body = p.join('\n');
+      objs.push('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 ' + W + ' ' + H + '] ' +
+        '/Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents ' + (6 + i * 2) + ' 0 R >>');
+      objs.push('<< /Length ' + body.length + ' >>\nstream\n' + body + '\nendstream');
+    });
+    var out = '%PDF-1.4\n', offs = [];
+    objs.forEach(function (o, i) { offs.push(out.length); out += (i + 1) + ' 0 obj\n' + o + '\nendobj\n'; });
+    var xref = out.length;
+    out += 'xref\n0 ' + (objs.length + 1) + '\n0000000000 65535 f \n';
+    offs.forEach(function (o) { out += ('0000000000' + o).slice(-10) + ' 00000 n \n'; });
+    out += 'trailer\n<< /Size ' + (objs.length + 1) + ' /Root 1 0 R >>\nstartxref\n' + xref + '\n%%EOF';
+
+    var bytes = new Uint8Array(out.length);
+    for (var i = 0; i < out.length; i++) bytes[i] = out.charCodeAt(i) & 255;
+    return new Blob([bytes], { type: 'application/pdf' });
+  }
+
+  function downloadResult(t) {
+    try {
+      var blob = makeResultPdf(t);
+      var name = plainText((paper.ageName ? paper.ageName + ' ' : '') + testName())
+        .toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+      var a = document.createElement('a');
+      var url = URL.createObjectURL(blob);
+      a.href = url;
+      a.download = 'ak-explained-' + (name || 'test') + '-result.pdf';
+      a.style.display = 'none';
+      document.body.appendChild(a);
+      a.click();
+      setTimeout(function () { document.body.removeChild(a); URL.revokeObjectURL(url); }, 4000);
+    } catch (e) {
+      window.print();        // purana raasta, agar PDF bani hi nahi
+    }
+  }
+
+  /* ---------------------------------------------------------
      Result ke sab button
      --------------------------------------------------------- */
   function wireResult(t) {
@@ -2006,7 +2238,7 @@
     }
 
     var pr = $('#cbtPrint');
-    if (pr) pr.addEventListener('click', function () { window.print(); });
+    if (pr) pr.addEventListener('click', function () { downloadResult(t); });
 
     var again = $('#cbtAgain');
     if (again) {
