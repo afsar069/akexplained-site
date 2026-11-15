@@ -443,6 +443,11 @@
             if (badCount.length) {
               items.push({ k: 'warn', t: 'The plan says ' + p.count + ' questions at each level, but ' + badCount.map(function (r) { return cap(r.level) + ' has ' + r.body.questions.length; }).join(' and ') + '. The page text may be wrong until Claude updates the plan.' });
             }
+            var revSet = {};
+            saved.forEach(function (r) { revSet[r.rev] = 1; });
+            if (Object.keys(revSet).length > 1) {
+              items.push({ k: 'warn', t: 'The levels of this set are saved at different revs (' + saved.map(function (r) { return r.level + ' rev ' + r.rev; }).join(', ') + '). It is tidier when they match. Tell Claude if this was not on purpose.' });
+            }
             if (p.state === 'free') {
               items.push({ k: 'warn', t: 'Set ' + p.n + ' of this age is already open to everyone as a free set. This login copy will not replace it on the page. Check the set number.' });
             }
@@ -566,12 +571,17 @@
       goButton.textContent = 'Checking…';
 
       // Is this id already taken? If so, the file's rev must be higher to replace it.
+      // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
+      // use the same rev. The database rule is the same: it only refuses a rev that goes down.
       client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
+        var chosenLevels = rows.map(function (r) { return r.level; });
         var existing = (!res.error && res.data) ? res.data : [];
-        var highest = existing.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-        if (existing.length && !(newRev > highest)) {
+        var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
+        var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
+        if (same.length && !(newRev > highest)) {
+          var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
-          fail(goError, setId + ' already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
+          fail(goError, setId + ' (' + lv + ') already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
           return;
         }
 
