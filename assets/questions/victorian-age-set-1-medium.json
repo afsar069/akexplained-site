@@ -1,0 +1,874 @@
+{
+  "setId": "victorian-age-set-1",
+  "rev": 1,
+  "age": "victorian-age",
+  "ageName": "Victorian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/victorian-age/",
+  "notesTitle": "Victorian Age — the full notes",
+  "topics": {
+    "ground": "The age and society",
+    "novel": "The Victorian novel",
+    "poetry": "Victorian poetry",
+    "prose": "Ideas and criticism",
+    "late": "The late Victorians",
+    "terms": "Terms and dates"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Interpretive questions on Victorian writing, literary forms, chronology, themes and context.",
+  "questions": [
+    {
+      "id": "victorian-age-set-1-m-01",
+      "question": "Which work's monthly instalments made Dickens famous before Victoria's accession?",
+      "options": [
+        "The Pickwick Papers",
+        "Bleak House",
+        "Little Dorrit",
+        "The Mystery of Edwin Drood"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The story began appearing in March 1836 and became a major publishing success.",
+      "topic": "novel",
+      "topicId": "the-pickwick-papers",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#how-books-reached-readers"
+    },
+    {
+      "id": "victorian-age-set-1-m-02",
+      "question": "How does In Memoriam develop emotionally across its sequence?",
+      "options": [
+        "From political satire toward court comedy",
+        "From grief and doubt toward qualified hope",
+        "From nautical adventure toward imperial triumph",
+        "From pastoral play toward Gothic horror"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem explores mourning and religious uncertainty while seeking a difficult form of consolation.",
+      "topic": "poetry",
+      "topicId": "in-memoriam",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-03",
+      "question": "In Arnold's criticism, what is culture intended to counteract?",
+      "options": [
+        "The reading of ancient Greek poetry",
+        "The expansion of public education",
+        "Narrow class attitudes and complacency",
+        "The appreciation of fine art"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Culture should enlarge human understanding rather than reinforce inherited prejudices.",
+      "topic": "prose",
+      "topicId": "culture-and-anarchy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-04",
+      "question": "How does the painted portrait operate within Wilde's novel?",
+      "options": [
+        "It documents a naval expedition",
+        "It provides a scientific record of aging",
+        "It proves a disputed royal genealogy",
+        "It exposes corruption hidden by youthful appearance"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The portrait records moral damage while the sitter preserves a deceptively young exterior.",
+      "topic": "late",
+      "topicId": "the-picture-of-dorian-gray",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-05",
+      "question": "Consider the following statements regarding Matthew Arnold:\nI. He grouped social classes as Barbarians, Philistines and Populace.\nII. His touchstone method tests poems through acknowledged masterpieces.\nIII. He wrote Modern Painters to defend contemporary art.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Arnold used class labels and touchstones in his criticism. Modern Painters was written by John Ruskin.",
+      "topic": "ground",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-06",
+      "question": "Arrange the following Victorian poetic works in the correct chronological order:\n1. The Ring and the Book begins appearing.\n2. The Charge of the Light Brigade appears.\n3. In Memoriam appears.\n4. Idylls of the King first appears.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "3, 2, 4, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The sequence is In Memoriam (1850), The Charge of the Light Brigade (1854), the first Idylls (1859), then The Ring and the Book (1868).",
+      "topic": "terms",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-07",
+      "question": "Which novel draws particularly strongly upon its author's childhood experiences?",
+      "options": [
+        "The Moonstone",
+        "Vanity Fair",
+        "David Copperfield",
+        "Barchester Towers"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Dickens transformed difficult early experiences into the life story of his protagonist.",
+      "topic": "novel",
+      "topicId": "david-copperfield",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-08",
+      "question": "What does the phrase about nature being red in tooth and claw suggest?",
+      "options": [
+        "Nature's guaranteed protection of the innocent",
+        "A return to medieval chivalry",
+        "The superiority of urban industry",
+        "Nature's indifference to individual suffering"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The description challenges reassuring beliefs about the natural world's benevolence.",
+      "topic": "poetry",
+      "topicId": "in-memoriam",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-09",
+      "question": "How does Carlyle challenge the self-congratulation of industrial Britain?",
+      "options": [
+        "He contrasts national wealth with workers' hardship",
+        "He argues that money alone measures progress",
+        "He rejects all interest in political reform",
+        "He presents factories as places without inequality"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The contrast questions the moral health of a society that leaves working people poor.",
+      "topic": "prose",
+      "topicId": "thomas-carlyle",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-m-10",
+      "question": "What do Wilde's society comedies most frequently expose?",
+      "options": [
+        "The techniques of medieval siege warfare",
+        "The absurdities of fashionable respectability",
+        "The laws of parliamentary taxation",
+        "The rules of classical epic composition"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Their wit reveals hypocrisy beneath polished upper-class manners.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-m-11",
+      "question": "Consider the following statements regarding Thomas Carlyle:\nI. Past and Present appeared in 1843.\nII. The Condition of England question concerned social conditions.\nIII. Carlyle wrote The Stones of Venice.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Carlyle addressed poverty and society in the 1840s. Ruskin wrote The Stones of Venice.",
+      "topic": "ground",
+      "topicId": "thomas-carlyle",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-m-12",
+      "question": "Arrange the following works of Victorian ideas in the correct chronological order:\n1. Culture and Anarchy appears.\n2. Modern Painters begins.\n3. Unto This Last appears.\n4. Dover Beach appears in print.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4",
+        "2, 3, 4, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Modern Painters began in 1843, Unto This Last appeared in 1860, Dover Beach in 1867, and Culture and Anarchy in 1869.",
+      "topic": "terms",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-13",
+      "question": "In Bleak House, what is the central significance of the prolonged court proceedings?",
+      "options": [
+        "A critique of institutional delay",
+        "A celebration of military courage",
+        "A defence of colonial conquest",
+        "A fantasy of medieval knighthood"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The fictional lawsuit shows how legal procedures can ruin lives rather than deliver justice.",
+      "topic": "novel",
+      "topicId": "bleak-house",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-14",
+      "question": "How does the speaker in My Last Duchess reveal more than he intends?",
+      "options": [
+        "By presenting a neutral historical report",
+        "Through possessive comments about a portrait",
+        "Through the poet's direct confession",
+        "By quoting an impersonal scientific law"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His speech unwittingly exposes pride, control and troubling jealousy.",
+      "topic": "poetry",
+      "topicId": "the-dramatic-monologue",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-15",
+      "question": "Which description best fits Carlyle's Sartor Resartus?",
+      "options": [
+        "A collection of lyric sonnets about the sea",
+        "A realistic novel of a London law court",
+        "A philosophical fiction about meaning and appearances",
+        "A dramatic monologue by an Italian duke"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The unusual book blends fictional presentation with reflections on belief and society.",
+      "topic": "prose",
+      "topicId": "sartor-resartus",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Sartor_Resartus"
+    },
+    {
+      "id": "victorian-age-set-1-m-16",
+      "question": "Which cultural mood helps explain the late-Victorian appeal of Wilde's art?",
+      "options": [
+        "Early Tudor religious reform",
+        "Elizabethan maritime expansion",
+        "Georgian pastoral simplicity",
+        "Fin de siècle aesthetic experimentation"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The late-century artistic climate challenged conventional morality and valued stylistic innovation.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#how-the-age-ends"
+    },
+    {
+      "id": "victorian-age-set-1-m-17",
+      "question": "Consider the following statements regarding Victorian reading habits:\nI. Novel instalments allowed readers to follow fiction over months.\nII. Mudie opened a circulating library in London in 1842.\nIII. Three-volume fiction was cheaper than a single newspaper.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Serialisation and lending libraries expanded access. Three-volume books remained costly for private buyers.",
+      "topic": "ground",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#how-books-reached-readers"
+    },
+    {
+      "id": "victorian-age-set-1-m-18",
+      "question": "Match List I (work) with List II (focus or form):\nList I:\na. In Memoriam\nb. Idylls of the King\nc. My Last Duchess\nd. The Ring and the Book\nList II:\n1. An Italian duke’s revealing speech\n2. Arthurian legends\n3. Multiple accounts of a murder\n4. Elegiac grief for Hallam\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-4, b-2, c-1, d-3",
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The elegy mourns Hallam, the Idylls recount Arthur, the duchess poem presents a duke, and the long Browning poem revisits a murder.",
+      "topic": "terms",
+      "topicId": "the-dramatic-monologue",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-19",
+      "question": "Which pair of characters provides a revealing contrast in Thackeray's social satire?",
+      "options": [
+        "Jane Eyre and Bertha Mason",
+        "Tess Durbeyfield and Sue Bridehead",
+        "Becky Sharp and Amelia Sedley",
+        "Maggie Tulliver and Dorothea Brooke"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Becky's ambition contrasts with Amelia's sentimental passivity within the same social world.",
+      "topic": "novel",
+      "topicId": "vanity-fair",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Vanity_Fair_%28novel%29"
+    },
+    {
+      "id": "victorian-age-set-1-m-20",
+      "question": "What technique enables The Ring and the Book to examine truth from competing angles?",
+      "options": [
+        "A single omniscient narrator",
+        "An unbroken sonnet sequence",
+        "A comic ballad refrain",
+        "Multiple dramatic perspectives"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Different speakers interpret the same Roman murder case in their own ways.",
+      "topic": "poetry",
+      "topicId": "the-ring-and-the-book",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-21",
+      "question": "What objection underlies Ruskin's praise of medieval stone-carvers?",
+      "options": [
+        "Mechanical labour deprives workers of creative freedom",
+        "Medieval sculpture avoided religious subjects",
+        "Art becomes valuable only when mass-produced",
+        "The Gothic style rejects all hand craftsmanship"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ruskin admires work that preserves individual expression rather than repetitive industrial discipline.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-22",
+      "question": "Consider the following statements regarding Oscar Wilde:\nI. The Picture of Dorian Gray is his novel.\nII. The Importance of Being Earnest was staged in 1895.\nIII. Wilde wrote The Ring and the Book.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Wilde wrote the novel and the 1895 comedy. The Ring and the Book is by Robert Browning.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-m-23",
+      "question": "Match List I (work) with List II (principal topic):\nList I:\na. Culture and Anarchy\nb. Past and Present\nc. The Stones of Venice\nd. Unto This Last\nList II:\n1. The moral implications of economic life\n2. Culture and class divisions\n3. The Condition of England\n4. Medieval craftsmanship\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-4, d-1",
+        "a-2, b-3, c-4, d-1",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Arnold explores culture, Carlyle social distress, and Ruskin medieval craft and ethical economics.",
+      "topic": "ground",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-24",
+      "question": "Match List I (term) with List II (definition):\nList I:\na. Fin de siècle\nb. Three-decker\nc. Dramatic monologue\nd. Aestheticism\nList II:\n1. A poem spoken by a character\n2. End-of-century cultural mood\n3. Art that centres the value of beauty\n4. A novel printed in three volumes\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-1, c-2, d-3",
+        "a-2, b-4, c-1, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Fin de siècle describes the late-century mood; three-deckers have three volumes, monologues have speakers, and aestheticism prizes beauty.",
+      "topic": "terms",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#key-terms"
+    },
+    {
+      "id": "victorian-age-set-1-m-25",
+      "question": "Why is the refusal of a conventional hero important to Thackeray's satirical method?",
+      "options": [
+        "It unsettles simple moral idealisation",
+        "It restores classical epic conventions",
+        "It requires an omniscient supernatural narrator",
+        "It eliminates all secondary characters"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The narrative exposes weakness and compromise instead of offering an unquestioned moral champion.",
+      "topic": "novel",
+      "topicId": "william-thackeray",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-26",
+      "question": "What does the retreating Sea of Faith most directly express?",
+      "options": [
+        "The rising fortunes of British trade",
+        "The decline of religious certainty",
+        "The return of medieval monasticism",
+        "The end of the Crimean War"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The sea image turns a physical ebb into a metaphor for spiritual uncertainty.",
+      "topic": "poetry",
+      "topicId": "dover-beach",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-27",
+      "question": "Why does Ruskin treat a nation's art as a moral indicator?",
+      "options": [
+        "Art has no connection with society",
+        "Only foreign art possesses historical value",
+        "Art reflects the values governing its labour and life",
+        "Paintings can replace all public institutions"
+      ],
+      "correct_option_id": 2,
+      "explanation": "He regards artistic practice and social ethics as closely related.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-28",
+      "question": "Arrange the following events in Wilde’s career in the correct chronological order:\n1. The Importance of Being Earnest premieres.\n2. Lady Windermere’s Fan premieres.\n3. The Picture of Dorian Gray first appears.\n4. Wilde dies in Paris.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4",
+        "3, 2, 1, 4"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel appeared in 1890, Lady Windermere’s Fan in 1892, Earnest in 1895, and Wilde died in 1900.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-m-29",
+      "question": "What gives the narrator's demand for equality its force in Jane Eyre?",
+      "options": [
+        "Her first-person account of experience",
+        "A detached account by a historian",
+        "A chorus of mythical figures",
+        "An anonymous travelogue in letters"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The governess tells her own story and insists on personal dignity despite class limitations.",
+      "topic": "novel",
+      "topicId": "jane-eyre",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-30",
+      "question": "Consider the following statements regarding Tennyson:\nI. He succeeded Wordsworth as Poet Laureate.\nII. In Memoriam mourns Arthur Hallam.\nIII. The Charge of the Light Brigade commemorates a battle of the Napoleonic Wars.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The laureateship and elegy are correctly described. The cavalry charge occurred during the Crimean War.",
+      "topic": "poetry",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-31",
+      "question": "Consider the following statements regarding Ruskin:\nI. Modern Painters began appearing in 1843.\nII. The Stones of Venice admires medieval craftsmanship.\nIII. Unto This Last argues that only market price determines value.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ruskin wrote both works on art and labour. His economic criticism rejected reducing value to market prices alone.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-m-32",
+      "question": "How does the Yorkshire moorland function in Wuthering Heights?",
+      "options": [
+        "It represents metropolitan consumer culture",
+        "It recreates the streets of industrial London",
+        "It symbolises imperial naval power",
+        "It amplifies violent feeling and isolation"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The exposed landscape reinforces the novel's turbulent emotions and conflicts.",
+      "topic": "novel",
+      "topicId": "wuthering-heights",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-33",
+      "question": "Consider the following statements regarding Browning’s poetry:\nI. My Last Duchess uses a dramatic monologue.\nII. The Ring and the Book draws on a Roman murder case.\nIII. Browning wrote Dover Beach as an elegy for Elizabeth Barrett.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The first two works are Browning’s. Dover Beach is a poem by Matthew Arnold.",
+      "topic": "poetry",
+      "topicId": "robert-browning",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-m-34",
+      "question": "What social difficulty is central to The Tenant of Wildfell Hall?",
+      "options": [
+        "A soldier's return from the Crimean War",
+        "A woman's struggle to leave a cruel husband",
+        "A merchant's bankruptcy in London",
+        "A painter's rivalry in Florence"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novel depicts the serious personal and social barriers to escaping a destructive marriage.",
+      "topic": "novel",
+      "topicId": "anne-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-35",
+      "question": "What does the interconnected structure of Middlemarch chiefly illuminate?",
+      "options": [
+        "The triumph of a solitary epic warrior",
+        "The supernatural history of a haunted castle",
+        "The consequences of choices within a community",
+        "The adventures of a sailor in the Pacific"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Several lives intersect to reveal the moral complexity of provincial society.",
+      "topic": "novel",
+      "topicId": "middlemarch",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-36",
+      "question": "What distinguishes George Eliot's treatment of ethical dilemmas?",
+      "options": [
+        "A simple contrast of gods and monsters",
+        "Exclusive focus on courtship games",
+        "The elimination of psychological conflict",
+        "Attention to motives and social consequences"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Her realism examines how ordinary decisions affect both individuals and their communities.",
+      "topic": "novel",
+      "topicId": "george-eliot",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-37",
+      "question": "Which forces most often combine to shape tragedy in Hardy's fiction?",
+      "options": [
+        "Chance, class and rigid social conventions",
+        "Divine intervention and heroic conquest",
+        "Courtly love and feudal chivalry",
+        "Technological optimism and scientific progress"
+      ],
+      "correct_option_id": 0,
+      "explanation": "His characters face suffering intensified by circumstance and restrictive moral judgements.",
+      "topic": "novel",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-38",
+      "question": "Why did Hardy turn away from novel-writing after his late fiction?",
+      "options": [
+        "A royal appointment as Poet Laureate",
+        "Hostile responses to its social criticism",
+        "His election to Parliament",
+        "A permanent move to America"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The adverse reception of Jude the Obscure contributed to his return to writing poetry.",
+      "topic": "novel",
+      "topicId": "jude-the-obscure",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-39",
+      "question": "Consider the following statements regarding Dickens and his publishing career:\nI. Oliver Twist centres on an orphan caught in London’s underworld.\nII. Hard Times praises a curriculum restricted to facts.\nIII. The Mystery of Edwin Drood was unfinished at Dickens’s death.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Oliver Twist depicts an orphan and his dangers, and the last novel remained incomplete. Hard Times criticises education limited to facts.",
+      "topic": "novel",
+      "topicId": "charles-dickens",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-40",
+      "question": "Consider the following statements regarding Thackeray and Vanity Fair:\nI. Vanity Fair first appeared in 1847–48.\nII. Thackeray celebrated class climbing without irony.\nIII. He became the first editor of the Cornhill Magazine.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel was published in 1847–48 and Thackeray edited the Cornhill. Its satire criticises social pretension.",
+      "topic": "novel",
+      "topicId": "vanity-fair",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-41",
+      "question": "Consider the following statements regarding the Brontë sisters:\nI. Charlotte published Jane Eyre under the name Currer Bell.\nII. Emily was the author of Wuthering Heights.\nIII. Anne published The Tenant of Wildfell Hall.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "All three statements correctly pair the sisters with their novels and the pen name Currer Bell.",
+      "topic": "novel",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-42",
+      "question": "Consider the following statements regarding George Eliot:\nI. Middlemarch has the subtitle A Study of Provincial Life.\nII. Eliot published Adam Bede in 1859.\nIII. George Eliot was the pen name of Elizabeth Gaskell.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The first two facts are correct. George Eliot was Mary Ann Evans, not Elizabeth Gaskell.",
+      "topic": "novel",
+      "topicId": "middlemarch",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-43",
+      "question": "Consider the following statements regarding Thomas Hardy:\nI. Hardy’s Wessex is based on south-west England.\nII. Jude the Obscure appeared before Far from the Madding Crowd.\nIII. Hardy trained as an architect.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wessex reflects the south-west and Hardy trained in architecture. Far from the Madding Crowd preceded Jude by two decades.",
+      "topic": "novel",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-44",
+      "question": "Arrange the following Dickens publications in the correct chronological order:\n1. Hard Times is published.\n2. The Pickwick Papers begins serialisation.\n3. Bleak House begins publication.\n4. Oliver Twist begins publication.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4",
+        "2, 4, 3, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Pickwick Papers began in 1836, Oliver Twist in 1837, Bleak House in 1852 and Hard Times in 1854.",
+      "topic": "novel",
+      "topicId": "charles-dickens",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-45",
+      "question": "Arrange the following novel publications in the correct chronological order:\n1. Villette appears.\n2. The Tenant of Wildfell Hall appears.\n3. Adam Bede appears.\n4. Wuthering Heights appears.\nChoose the correct sequence:",
+      "options": [
+        "4, 2, 1, 3",
+        "4, 3, 2, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wuthering Heights appeared in 1847, The Tenant in 1848, Villette in 1853 and Adam Bede in 1859.",
+      "topic": "novel",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-46",
+      "question": "Arrange the following nineteenth-century novels in the correct chronological order:\n1. Tess of the d’Urbervilles appears.\n2. Middlemarch begins publication.\n3. Adam Bede appears.\n4. Far from the Madding Crowd appears.\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "3, 2, 4, 1",
+        "2, 1, 4, 3",
+        "3, 1, 2, 4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Adam Bede was published in 1859, Middlemarch from 1871, Far from the Madding Crowd in 1874, and Tess in 1891.",
+      "topic": "novel",
+      "topicId": "george-eliot",
+      "periodId": "victorian",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-47",
+      "question": "Match List I (novel) with List II (central concern):\nList I:\na. Oliver Twist\nb. Bleak House\nc. Hard Times\nd. Great Expectations\nList II:\n1. Industrial fact-based schooling\n2. A workhouse orphan\n3. A young man’s ambitions\n4. A prolonged lawsuit\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-4, d-1",
+        "a-2, b-4, c-1, d-3",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Oliver Twist concerns a workhouse child, Bleak House a lawsuit, Hard Times mechanised thinking, and Great Expectations social aspiration.",
+      "topic": "novel",
+      "topicId": "charles-dickens",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-48",
+      "question": "Match List I (novelist) with List II (work):\nList I:\na. Charlotte Brontë\nb. Emily Brontë\nc. Anne Brontë\nd. George Eliot\nList II:\n1. Middlemarch\n2. The Tenant of Wildfell Hall\n3. Jane Eyre\n4. Wuthering Heights\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-1, c-2, d-3",
+        "a-3, b-4, c-2, d-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Charlotte wrote Jane Eyre, Emily Wuthering Heights, Anne The Tenant of Wildfell Hall, and Eliot Middlemarch.",
+      "topic": "novel",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-49",
+      "question": "Match List I (work) with List II (author):\nList I:\na. Adam Bede\nb. Wuthering Heights\nc. Vanity Fair\nd. Jude the Obscure\nList II:\n1. Thomas Hardy\n2. Emily Brontë\n3. William Thackeray\n4. George Eliot\nChoose the correct option:",
+      "options": [
+        "a-4, b-2, c-3, d-1",
+        "a-2, b-1, c-3, d-4",
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Adam Bede is by Eliot, Wuthering Heights by Emily Brontë, Vanity Fair by Thackeray, and Jude by Hardy.",
+      "topic": "novel",
+      "topicId": "george-eliot",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-m-50",
+      "question": "Match List I (Hardy novel) with List II (publication year):\nList I:\na. Far from the Madding Crowd\nb. Tess of the d’Urbervilles\nc. Jude the Obscure\nd. The Return of the Native\nList II:\n1. 1895\n2. 1878\n3. 1891\n4. 1874\nChoose the correct option:",
+      "options": [
+        "a-2, b-1, c-3, d-4",
+        "a-4, b-3, c-1, d-2",
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novels appeared in 1874, 1891, 1895 and 1878 respectively.",
+      "topic": "novel",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    }
+  ]
+}

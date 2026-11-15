@@ -1,0 +1,874 @@
+{
+  "setId": "victorian-age-set-1",
+  "rev": 1,
+  "age": "victorian-age",
+  "ageName": "Victorian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/victorian-age/",
+  "notesTitle": "Victorian Age — the full notes",
+  "topics": {
+    "ground": "The age and society",
+    "novel": "The Victorian novel",
+    "poetry": "Victorian poetry",
+    "prose": "Ideas and criticism",
+    "late": "The late Victorians",
+    "terms": "Terms and dates"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Foundational questions on Victorian novelists, poets, stage, ideas and cultural change.",
+  "questions": [
+    {
+      "id": "victorian-age-set-1-e-01",
+      "question": "Which novel follows a workhouse orphan into London's criminal underworld?",
+      "options": [
+        "Oliver Twist",
+        "David Copperfield",
+        "The Old Curiosity Shop",
+        "A Tale of Two Cities"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The orphan's harsh workhouse life exposes poverty and criminal exploitation in Victorian London.",
+      "topic": "novel",
+      "topicId": "oliver-twist",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-02",
+      "question": "Whose death inspired In Memoriam A.H.H.?",
+      "options": [
+        "John Keats",
+        "Arthur Henry Hallam",
+        "Percy Shelley",
+        "Algernon Swinburne"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Tennyson mourned the friend who died suddenly in 1833.",
+      "topic": "poetry",
+      "topicId": "in-memoriam",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-03",
+      "question": "Which work of 1869 offers humane refinement as an answer to class divisions?",
+      "options": [
+        "Past and Present",
+        "Unto This Last",
+        "Culture and Anarchy",
+        "Sartor Resartus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The book argues that culture offers a way beyond narrow class interests.",
+      "topic": "prose",
+      "topicId": "culture-and-anarchy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-e-04",
+      "question": "Which novel centres on a portrait that ages instead of its subject?",
+      "options": [
+        "The Moonstone",
+        "Dracula",
+        "The Time Machine",
+        "The Picture of Dorian Gray"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The changing painting exposes the central character's hidden moral corruption.",
+      "topic": "late",
+      "topicId": "the-picture-of-dorian-gray",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-05",
+      "question": "What did Carlyle's Condition of England question principally concern?",
+      "options": [
+        "Industrial poverty and social distress",
+        "The authorship of Shakespeare's plays",
+        "The discovery of new planets",
+        "The form of the sonnet"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The phrase raised moral questions about inequality and the treatment of workers.",
+      "topic": "ground",
+      "topicId": "thomas-carlyle",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-e-06",
+      "question": "Who was the first editor of the Cornhill Magazine in 1860?",
+      "options": [
+        "Charles Kingsley",
+        "William Makepeace Thackeray",
+        "John Stuart Mill",
+        "Robert Browning"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novelist was the magazine's first editor when it began publication.",
+      "topic": "terms",
+      "topicId": "william-thackeray",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#how-books-reached-readers"
+    },
+    {
+      "id": "victorian-age-set-1-e-07",
+      "question": "Which novel criticises schooling based only on facts and figures?",
+      "options": [
+        "Bleak House",
+        "Little Dorrit",
+        "Hard Times",
+        "Our Mutual Friend"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The story challenges utilitarian education and the dehumanising values of an industrial town.",
+      "topic": "novel",
+      "topicId": "hard-times",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-08",
+      "question": "Who succeeded Wordsworth as Poet Laureate in 1850?",
+      "options": [
+        "Robert Browning",
+        "Matthew Arnold",
+        "William Morris",
+        "Alfred Tennyson"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The laureateship passed to Tennyson after Wordsworth's death.",
+      "topic": "poetry",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-09",
+      "question": "Which 1843 work condemned a wealthy nation that let its poor suffer?",
+      "options": [
+        "Past and Present",
+        "The Renaissance",
+        "The Stones of Venice",
+        "Modern Painters"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The work attacks the social and spiritual failures of industrial Britain.",
+      "topic": "prose",
+      "topicId": "thomas-carlyle",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-e-10",
+      "question": "Which comedy by Oscar Wilde was first staged in 1895?",
+      "options": [
+        "The Second Mrs Tanqueray",
+        "The Importance of Being Earnest",
+        "The School for Scandal",
+        "The Rivals"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The comedy mocks fashionable conventions through mistaken identities and elaborate wit.",
+      "topic": "late",
+      "topicId": "the-importance-of-being-earnest",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-e-11",
+      "question": "Consider the following statements regarding Victorian Britain:\nI. Victoria succeeded to the throne in 1837.\nII. Industrial towns expanded in the nineteenth century.\nIII. Queen Victoria died in 1881.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Victoria became queen in 1837 and lived until January 1901. Industrialisation changed the population and economy.",
+      "topic": "ground",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-world-of-this-age"
+    },
+    {
+      "id": "victorian-age-set-1-e-12",
+      "question": "In which Yorkshire village did the Brontë sisters grow up?",
+      "options": [
+        "Grasmere",
+        "Tintern",
+        "Stratford-upon-Avon",
+        "Haworth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The daughters of the village clergyman lived at Haworth Parsonage.",
+      "topic": "terms",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-13",
+      "question": "Which novel places a seemingly endless lawsuit at the centre of its plot?",
+      "options": [
+        "Bleak House",
+        "Great Expectations",
+        "Nicholas Nickleby",
+        "Dombey and Son"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The drawn-out legal proceedings expose the human costs of an inefficient court system.",
+      "topic": "novel",
+      "topicId": "bleak-house",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-14",
+      "question": "Which poem responded to the disastrous cavalry attack at Balaclava?",
+      "options": [
+        "Ulysses",
+        "The Charge of the Light Brigade",
+        "Dover Beach",
+        "The Lady of Shalott"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem commemorates the cavalry charge during the Crimean War.",
+      "topic": "poetry",
+      "topicId": "alfred-tennyson",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-15",
+      "question": "Which work by Carlyle was first serialised in 1833-34?",
+      "options": [
+        "On Liberty",
+        "Culture and Anarchy",
+        "Sartor Resartus",
+        "The Renaissance"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The unusual philosophical work appeared in periodical instalments during the 1830s.",
+      "topic": "prose",
+      "topicId": "sartor-resartus",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#writers-and-works"
+    },
+    {
+      "id": "victorian-age-set-1-e-16",
+      "question": "Which play by Wilde premiered in 1892?",
+      "options": [
+        "The Importance of Being Earnest",
+        "The School for Scandal",
+        "The Silver Box",
+        "Lady Windermere's Fan"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The play helped establish Wilde's reputation as a brilliant stage wit.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-e-17",
+      "question": "Consider the following statements regarding the Victorian public:\nI. Railways helped transform travel and industry.\nII. The growth of cheap print expanded reading.\nIII. The first Victorian monarch was George IV.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Railways and a wider reading public transformed society. Victoria, not George IV, gave the age its name.",
+      "topic": "ground",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#the-world-of-this-age"
+    },
+    {
+      "id": "victorian-age-set-1-e-18",
+      "question": "For which profession did Thomas Hardy originally train?",
+      "options": [
+        "Medicine",
+        "Architecture",
+        "The law",
+        "Naval engineering"
+      ],
+      "correct_option_id": 1,
+      "explanation": "He trained as an architect before making writing his career.",
+      "topic": "terms",
+      "topicId": "thomas-hardy",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-19",
+      "question": "Which novel follows a poor boy whose ambition is to become a gentleman?",
+      "options": [
+        "Oliver Twist",
+        "The Pickwick Papers",
+        "Great Expectations",
+        "A Christmas Carol"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The young protagonist discovers that gentility and wealth do not guarantee moral worth.",
+      "topic": "novel",
+      "topicId": "great-expectations",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-20",
+      "question": "Which Tennyson work retells Arthurian legend?",
+      "options": [
+        "The Ring and the Book",
+        "Aurora Leigh",
+        "The Earthly Paradise",
+        "Idylls of the King"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The cycle reimagines stories of Arthur and his knights.",
+      "topic": "poetry",
+      "topicId": "idylls-of-the-king",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-21",
+      "question": "Which series began Ruskin's career as an art critic in 1843?",
+      "options": [
+        "Modern Painters",
+        "Sartor Resartus",
+        "On Heroes and Hero-Worship",
+        "The Ring and the Book"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ruskin's study of painting established him as a leading writer on art.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-e-22",
+      "question": "Which artistic outlook was closely associated with Wilde?",
+      "options": [
+        "Utilitarianism",
+        "Aestheticism",
+        "Social Darwinism",
+        "Realist naturalism"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Aestheticism presents beauty and artistic experience as central values.",
+      "topic": "late",
+      "topicId": "aestheticism",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#key-terms"
+    },
+    {
+      "id": "victorian-age-set-1-e-23",
+      "question": "Consider the following statements regarding late-Victorian culture:\nI. The Pre-Raphaelite Brotherhood began in 1848.\nII. The Yellow Book first appeared in 1894.\nIII. Victoria celebrated her Diamond Jubilee in 1847.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Brotherhood formed in 1848 and the magazine began in 1894. The Diamond Jubilee came in 1897.",
+      "topic": "ground",
+      "topicId": "victorian",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#how-the-age-ends"
+    },
+    {
+      "id": "victorian-age-set-1-e-24",
+      "question": "What is the form of a poem spoken by one character to an implied listener?",
+      "options": [
+        "Pastoral elegy",
+        "Petrarchan sonnet",
+        "Mock-heroic epic",
+        "Dramatic monologue"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A single speaker indirectly exposes personality and situation through an imagined speech.",
+      "topic": "terms",
+      "topicId": "the-dramatic-monologue",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#key-terms"
+    },
+    {
+      "id": "victorian-age-set-1-e-25",
+      "question": "Which novelist died leaving The Mystery of Edwin Drood unfinished?",
+      "options": [
+        "Charles Dickens",
+        "Wilkie Collins",
+        "Anthony Trollope",
+        "George Meredith"
+      ],
+      "correct_option_id": 0,
+      "explanation": "His final novel remained incomplete when he died in 1870.",
+      "topic": "novel",
+      "topicId": "charles-dickens",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-26",
+      "question": "Who speaks in Browning's My Last Duchess?",
+      "options": [
+        "A village schoolmaster",
+        "An Italian duke",
+        "An English sailor",
+        "A medieval pilgrim"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The aristocratic speaker reveals his character through remarks about a portrait.",
+      "topic": "poetry",
+      "topicId": "my-last-duchess",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-27",
+      "question": "Which work praises the freedom of medieval stone carvers?",
+      "options": [
+        "Past and Present",
+        "A Defence of Poetry",
+        "The Stones of Venice",
+        "The Golden Bough"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ruskin values the medieval craftsman's freedom and criticises mechanised labour.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-e-28",
+      "question": "For which kind of dramatic writing is Wilde especially remembered?",
+      "options": [
+        "Elizabethan revenge tragedy",
+        "Miracle cycles",
+        "Restoration heroic tragedy",
+        "Witty social comedy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "His stage comedies expose social pretensions through polished epigrams and irony.",
+      "topic": "late",
+      "topicId": "oscar-wilde",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#drama"
+    },
+    {
+      "id": "victorian-age-set-1-e-29",
+      "question": "What did Arnold call comparing lines of poetry with great poetic models?",
+      "options": [
+        "The touchstone method",
+        "The objective correlative",
+        "Sprung rhythm",
+        "The pathetic fallacy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Arnold proposed testing literary quality against selected lines of acknowledged excellence.",
+      "topic": "terms",
+      "topicId": "the-touchstone-method",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-e-30",
+      "question": "Who wrote the nineteenth-century novel Vanity Fair?",
+      "options": [
+        "Anthony Trollope",
+        "William Makepeace Thackeray",
+        "George Eliot",
+        "Charles Dickens"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The work presents a sharp satirical portrait of class ambition and fashionable society.",
+      "topic": "novel",
+      "topicId": "william-thackeray",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-31",
+      "question": "Which Browning poem revisits a Roman murder case from several viewpoints?",
+      "options": [
+        "In Memoriam A.H.H.",
+        "The Princess",
+        "The Ring and the Book",
+        "The Waste Land"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The extended poem uses different voices to explore the same criminal case.",
+      "topic": "poetry",
+      "topicId": "the-ring-and-the-book",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-32",
+      "question": "Which Ruskin work links wealth with moral responsibility?",
+      "options": [
+        "Modern Painters",
+        "The Germ",
+        "The Renaissance",
+        "Unto This Last"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The writing asks readers to judge economics by its effects on human life.",
+      "topic": "prose",
+      "topicId": "john-ruskin",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#essays-and-ideas"
+    },
+    {
+      "id": "victorian-age-set-1-e-33",
+      "question": "Consider the following statements regarding Victorian publishing:\nI. A three-decker novel had three volumes.\nII. Serial publication released stories in instalments.\nIII. Circulating libraries only sold books and never lent them.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Three-volume novels and serial instalments were common. Circulating libraries lent books to subscribers.",
+      "topic": "terms",
+      "topicId": "the-victorian-novel",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#key-terms"
+    },
+    {
+      "id": "victorian-age-set-1-e-34",
+      "question": "What is the subtitle of Vanity Fair?",
+      "options": [
+        "A Study of Provincial Life",
+        "A Novel without a Hero",
+        "A Tale of Two Cities",
+        "Scenes of Clerical Life"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The subtitle signals a satire that refuses to supply a single idealised central hero.",
+      "topic": "novel",
+      "topicId": "vanity-fair",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-35",
+      "question": "Which celebrated woman poet married the author of My Last Duchess?",
+      "options": [
+        "Christina Rossetti",
+        "Felicia Hemans",
+        "Elizabeth Barrett Browning",
+        "Emily Dickinson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "They married secretly in 1846 before settling in Italy.",
+      "topic": "poetry",
+      "topicId": "elizabeth-barrett-browning",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-36",
+      "question": "Consider the following statements regarding literary forms:\nI. A Condition-of-England novel explores social inequality.\nII. A dramatic monologue presents a distinctive speaker.\nIII. Aestheticism values utility above beauty in art.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Social-problem fiction and dramatic monologue fit the first two definitions. Aestheticism gives priority to artistic beauty.",
+      "topic": "terms",
+      "topicId": "condition-of-england-novel",
+      "periodId": "victorian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/victorian-age/#key-terms"
+    },
+    {
+      "id": "victorian-age-set-1-e-37",
+      "question": "Which behaviour is especially mocked in Vanity Fair?",
+      "options": [
+        "Status-seeking and social climbing",
+        "Scientific experimentation",
+        "Medieval religious devotion",
+        "Rural agricultural reform"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The novel exposes ambition, snobbery and the pursuit of rank in polite society.",
+      "topic": "novel",
+      "topicId": "vanity-fair",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-38",
+      "question": "Which poem compares the loss of religious faith to a retreating tide?",
+      "options": [
+        "The Lotos-Eaters",
+        "Dover Beach",
+        "The Charge of the Light Brigade",
+        "My Last Duchess"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The imagery of the withdrawing sea expresses uncertainty about belief.",
+      "topic": "poetry",
+      "topicId": "dover-beach",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#poetry"
+    },
+    {
+      "id": "victorian-age-set-1-e-39",
+      "question": "Which sister wrote Jane Eyre?",
+      "options": [
+        "Emily Brontë",
+        "Anne Brontë",
+        "Charlotte Brontë",
+        "Elizabeth Gaskell"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charlotte published the novel under a masculine pen name in 1847.",
+      "topic": "novel",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-40",
+      "question": "What term did Matthew Arnold apply to the self-satisfied middle class?",
+      "options": [
+        "Barbarians",
+        "Lake Poets",
+        "Pre-Raphaelites",
+        "Philistines"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Arnold used this label for people indifferent to intellectual and artistic culture.",
+      "topic": "poetry",
+      "topicId": "matthew-arnold",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "victorian-age-set-1-e-41",
+      "question": "Who wrote the novel Wuthering Heights?",
+      "options": [
+        "Emily Brontë",
+        "Charlotte Brontë",
+        "Anne Brontë",
+        "George Eliot"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Emily's only novel depicts violent passion and revenge on the Yorkshire moors.",
+      "topic": "novel",
+      "topicId": "emily-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-42",
+      "question": "Which writer created The Tenant of Wildfell Hall?",
+      "options": [
+        "Charlotte Brontë",
+        "Anne Brontë",
+        "Emily Brontë",
+        "Elizabeth Gaskell"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Anne portrayed a woman escaping an abusive marriage in her 1848 novel.",
+      "topic": "novel",
+      "topicId": "anne-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-43",
+      "question": "Which novelist used the pen name Currer Bell?",
+      "options": [
+        "Anne Brontë",
+        "Emily Brontë",
+        "Charlotte Brontë",
+        "Mary Ann Evans"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Charlotte adopted the name when publishing fiction in the nineteenth century.",
+      "topic": "novel",
+      "topicId": "charlotte-bronte",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-44",
+      "question": "What was the real name of novelist George Eliot?",
+      "options": [
+        "Charlotte Brontë",
+        "Elizabeth Gaskell",
+        "Mary Shelley",
+        "Mary Ann Evans"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mary Ann Evans adopted the masculine literary name George Eliot.",
+      "topic": "novel",
+      "topicId": "george-eliot",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-45",
+      "question": "What subtitle appears with Middlemarch?",
+      "options": [
+        "A Study of Provincial Life",
+        "A Novel without a Hero",
+        "The Modern Prometheus",
+        "A Chronicle of Youth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The phrase reflects its interconnected portrait of social life in an English town.",
+      "topic": "novel",
+      "topicId": "middlemarch",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-46",
+      "question": "Which novel of 1859 established George Eliot's reputation as a novelist?",
+      "options": [
+        "Silas Marner",
+        "Adam Bede",
+        "Romola",
+        "Daniel Deronda"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The success of this early novel made George Eliot widely known.",
+      "topic": "novel",
+      "topicId": "adam-bede",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-47",
+      "question": "Which approach best describes the fiction of George Eliot?",
+      "options": [
+        "Gothic supernatural romance",
+        "Classical heroic tragedy",
+        "Moral and psychological realism",
+        "Medieval allegorical vision"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Her novels examine personal choices, social relationships and ethical consequences.",
+      "topic": "novel",
+      "topicId": "george-eliot",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-48",
+      "question": "Which region forms the setting for many of Thomas Hardy's novels?",
+      "options": [
+        "Barsetshire",
+        "Coketown",
+        "Lilliput",
+        "Wessex"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hardy's fictional Wessex draws upon the landscape of south-western England.",
+      "topic": "novel",
+      "topicId": "wessex",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-49",
+      "question": "Which Hardy novel appeared in 1891?",
+      "options": [
+        "Tess of the d'Urbervilles",
+        "Jude the Obscure",
+        "The Mayor of Casterbridge",
+        "The Return of the Native"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The novel explores the suffering of a young woman under harsh moral conventions.",
+      "topic": "novel",
+      "topicId": "tess-of-the-durbervilles",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    },
+    {
+      "id": "victorian-age-set-1-e-50",
+      "question": "Which novel did Hardy publish in 1895?",
+      "options": [
+        "Far from the Madding Crowd",
+        "Jude the Obscure",
+        "Under the Greenwood Tree",
+        "The Woodlanders"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Its controversial treatment of marriage and society drew fierce reactions.",
+      "topic": "novel",
+      "topicId": "jude-the-obscure",
+      "periodId": "victorian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/victorian-age/#the-novel"
+    }
+  ]
+}
