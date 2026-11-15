@@ -85,6 +85,8 @@
 @keyframes blink{50%{opacity:0}}
 
 /* ---------- Pick your exam ---------- */
+#exams .sechead{flex-wrap:wrap;justify-content:space-between}
+#exams .sechead::after{display:none}
 .examgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(198px,1fr))}
 .examcard{
   position:relative;display:block;border-radius:16px;padding:20px 20px 54px;
@@ -105,10 +107,15 @@
 .examcard:hover{transform:translateY(-5px);border-color:var(--teal);
   box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32)}
 .examcard .ic{
-  width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;
-  color:#fff;margin-bottom:13px;box-shadow:0 7px 16px -5px rgba(22,48,74,.45);
+  position:relative;width:72px;height:72px;border-radius:21px;display:flex;align-items:center;justify-content:center;
+  background:rgba(255,253,247,.88);margin-bottom:16px;box-shadow:0 4px 14px rgba(22,48,74,.08);
   transition:transform .22s;
 }
+.examcard .ic > img{width:64px;height:64px}
+.examcard .quiz-animation{position:absolute;inset:4px;opacity:0}
+.examcard .quiz-animation svg{width:100%;height:100%}
+.examcard .ic.is-animated > img{visibility:hidden}
+.examcard .ic.is-animated .quiz-animation{opacity:1}
 .examcard:hover .ic{transform:scale(1.07) rotate(-3deg)}
 .examcard h3{font-size:1.04rem;margin-bottom:3px;line-height:1.25}
 .examcard p{font-size:.85rem;margin:0;color:var(--body)}
@@ -171,7 +178,7 @@
   .quizcard:hover .arrow{transform:translateX(3px)}
 }
 @media(max-width:559px){
-  .quizzone .sechead{align-items:flex-start;gap:12px;flex-direction:column}
+  .quizzone .sechead,#exams .sechead{align-items:flex-start;gap:12px;flex-direction:column}
   .quiz-actions{justify-content:flex-start;gap:12px}
   .quizcard{display:grid;grid-template-columns:64px minmax(0,1fr);gap:14px 18px;padding:20px}
   .quizcard .ic{width:64px;height:64px;border-radius:19px;grid-row:1 / 3;align-self:center}
@@ -180,6 +187,7 @@
 }
 @media(prefers-reduced-motion:reduce){
   .quizzone .quizcard,.quizzone .quizcard *,.quizzone .quizcard::after{transition:none!important;animation:none!important;transform:none!important}
+  #exams .examcard,#exams .examcard *,#exams .examcard::before{transition:none!important;animation:none!important;transform:none!important}
 }
 
 /* ---------- Ages ---------- */
