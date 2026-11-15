@@ -110,6 +110,28 @@
   </div>
 </section>
 
+<section class="pyq-links" aria-labelledby="pyqLinksTitle">
+  <div class="wrap">
+    <div class="sechead">
+      <h2 id="pyqLinksTitle">Important Links</h2>
+    </div>
+    <p class="seclede">Pages that help you prepare alongside these papers.</p>
+    <ul class="pyq-linklist">
+{% for l in pyqLinks %}
+      <li>
+        <a class="pyq-link" href="{{ l.href }}">
+          <span class="pyq-link-txt">
+            <strong>{{ l.title }}</strong>
+            <span>{{ l.text }}</span>
+          </span>
+          <span class="pyq-link-arrow" aria-hidden="true">&rarr;</span>
+        </a>
+      </li>
+{% endfor %}
+    </ul>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer">
