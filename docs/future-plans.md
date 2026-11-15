@@ -17,7 +17,7 @@ reads the repo, not the live pages.
   login MCQ sets live 2, 4, 5, 6 (Old English).
 
 ## 1. Self-serve publish (rule 17) — next series
-1. **Series 3 — UP PGT login mock tests (6–60): BUILT 2026-11-15, on the branch, not merged.** Slot mode of
+1. **Series 3 — UP PGT login mock tests (6–60): SHIPPED 2026-11-15 (merged, PR #120).** Slot mode of
    `assets/paper-list.js` + pre-built login pages with `data-catalog-check`. Free Tests 1–5 untouched. See rule 17 and
    `docs/self-serve-publish-plan.md`. Same quirk still open in series 2: `assets/mcq-age.js` `catalogFlip` does not ask for
    `status = 'live'`, so the owner (admin) still sees a Draft literature set as open on the age hub; students do not.

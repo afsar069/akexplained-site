@@ -4,11 +4,11 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. UP PGT login mock tests (slots 6–60) are built as self-serve on the branch, not merged. Postmodern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-15. UP PGT login mock tests (slots 6–60) are self-serve and merged to main (PR #120). Postmodern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
 
-## Self-serve publish — UP PGT login mock tests (2026-11-15, on the branch, NOT merged)
+## Self-serve publish — UP PGT login mock tests (2026-11-15, SHIPPED — merged to main, PR #120)
 
-**Series 3 of the self-serve work** (rule 17; plan `docs/self-serve-publish-plan.md`). Branch `claude/confident-lovelace-lqsa7h`.
+**Series 3 of the self-serve work** (rule 17; plan `docs/self-serve-publish-plan.md`). Merged to `main` on 2026-11-15 (PR #120). Not yet checked on the live site by the owner: a real upload → Live → Draft round.
 
 - **What the owner gets:** upload a UP PGT mock test at `/admin/upload-paper/` (number 6 to 60), mark it Live on
   `/admin/papers/`, and its card on `/exams/pgt/up-pgt/mock-tests/` turns from "Coming soon" into the padlock (guest) or

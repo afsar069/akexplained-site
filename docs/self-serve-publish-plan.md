@@ -1,9 +1,8 @@
 # Self-serve publish — status + roadmap
 
-> **Status (2026-11-15): series 1 and 2 live; series 3 (UP PGT) BUILT on the branch, waiting for the owner's word to
-> merge; series 4 (UGC NET) blocked on its pages. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
+> **Status (2026-11-15): series 1, 2 and 3 live; series 4 (UGC NET) blocked on its pages. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
 >
-> **Series 3 — UP PGT login mock tests: BUILT (2026-11-15, branch `claude/confident-lovelace-lqsa7h`, NOT merged).**
+> **Series 3 — UP PGT login mock tests: SHIPPED (2026-11-15, merged, PR #120).**
 > The hub is a fixed grid of 60 slots with the free tests 1–5 inside it, so it does not use the plain list of
 > series 1: `assets/paper-list.js` got a **slot mode** (`data-paper-slots` on the host, `data-paper-slot` on each
 > card 6–60) that flips a slot between "Coming soon" and lock/Start from the live catalog. `login-test.njk` /
