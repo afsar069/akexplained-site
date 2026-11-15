@@ -891,29 +891,31 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .about-intro-text{grid-column:1;grid-row:1}
 .about-intro-text p{max-width:none}
 .about-portrait{grid-column:2;grid-row:1;margin:0;justify-self:center;width:100%;max-width:300px}
+/* One frame holds the photo and the name panel together. The gold outline sits behind the whole frame. */
 .about-portrait-frame{
-  position:relative;aspect-ratio:4/5;border-radius:20px;
+  position:relative;padding:8px 8px 0;border-radius:22px;
+  background:var(--paper);border:1px solid var(--card-line);
   box-shadow:0 22px 44px -22px rgba(22,48,74,.55);
 }
-/* Thin gold outline set slightly behind the photo gives it a framed, editorial look. */
 .about-portrait-frame::before{
-  content:"";position:absolute;inset:0;border:2px solid var(--gold);border-radius:20px;
-  transform:translate(12px,12px);z-index:0;opacity:.7;
+  content:"";position:absolute;inset:0;border:2px solid var(--gold);border-radius:22px;
+  transform:translate(12px,12px);z-index:-1;opacity:.7;
 }
 .about-portrait-frame img{
-  position:relative;z-index:1;display:block;width:100%;height:100%;
+  display:block;width:100%;aspect-ratio:4/5;height:auto;
   object-fit:cover;object-position:center 18%;
-  border-radius:20px;border:5px solid #fff;background:var(--tint);
+  border-radius:15px;background:var(--tint);
 }
 .about-portrait figcaption{
-  position:relative;z-index:2;margin:-22px 0 0;padding:13px 14px 12px;text-align:center;
-  background:var(--paper);border:1px solid var(--card-line);border-top:3px solid var(--teal);
-  border-radius:12px;box-shadow:0 12px 26px -16px rgba(22,48,74,.45);
-  display:grid;gap:2px;
+  display:grid;gap:3px;text-align:center;padding:14px 10px 16px;
 }
-.about-portrait figcaption b{font-family:var(--serif);font-size:1.06rem;color:var(--ink);font-weight:700;line-height:1.25}
+/* a short gold rule between the photo and the name */
+.about-portrait figcaption::before{
+  content:"";justify-self:center;width:44px;height:2px;border-radius:2px;background:var(--gold);margin-bottom:8px;
+}
+.about-portrait figcaption b{font-family:var(--serif);font-size:1.2rem;color:var(--ink);font-weight:700;line-height:1.25}
 .about-portrait figcaption span{font-size:.86rem;color:var(--body);line-height:1.35}
-.about-portrait figcaption .site{font-weight:700;color:var(--teal);letter-spacing:.02em}
+.about-portrait figcaption .site{font-weight:700;color:var(--teal);letter-spacing:.03em;margin-top:2px}
 @media (max-width:820px){
   .about-intro-grid{grid-template-columns:1fr;gap:34px}
   .about-intro-text{grid-column:1;grid-row:2}
