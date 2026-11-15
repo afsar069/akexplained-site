@@ -77,32 +77,32 @@
 </section>
 
 
-<section class="pyq-pick" aria-labelledby="pyqPickTitle">
+<section class="exam-pick" aria-labelledby="pyqPickTitle">
   <div class="wrap">
     <div class="sechead">
       <h2 id="pyqPickTitle">Choose Your Exam</h2>
     </div>
     <p class="seclede">Pick an exam to open its previous-year papers. Papers for the other exams will appear here as they are added.</p>
-    <div class="pyq-cats">
+    <div class="exam-cats">
 {% for c in pyqHub %}
 {% if c.live %}
-      <a class="pyq-cat" href="{{ c.href }}">
-        <span class="pyq-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
-        <span class="pyq-cat-txt">
+      <a class="exam-cat" href="{{ c.href }}">
+        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
+        <span class="exam-cat-txt">
           <strong>{{ c.title }}</strong>
           <span>{{ c.blurb }}</span>
           <small>{{ c.meta }}</small>
         </span>
-        <span class="pyq-cat-go">Open</span>
+        <span class="exam-cat-go">Open</span>
       </a>
 {% else %}
-      <div class="pyq-cat is-soon" aria-disabled="true">
-        <span class="pyq-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
-        <span class="pyq-cat-txt">
+      <div class="exam-cat is-soon" aria-disabled="true">
+        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/{{ c.icon }}.svg" alt="" width="24" height="24"></span>
+        <span class="exam-cat-txt">
           <strong>{{ c.title }}</strong>
           <span>{{ c.blurb }}</span>
         </span>
-        <span class="pyq-cat-go">Coming soon</span>
+        <span class="exam-cat-go">Coming soon</span>
       </div>
 {% endif %}
 {% endfor %}
@@ -110,21 +110,21 @@
   </div>
 </section>
 
-<section class="pyq-links" aria-labelledby="pyqLinksTitle">
+<section class="hub-links" aria-labelledby="hubLinksTitle">
   <div class="wrap">
     <div class="sechead">
-      <h2 id="pyqLinksTitle">Important Links</h2>
+      <h2 id="hubLinksTitle">Important Links</h2>
     </div>
     <p class="seclede">Pages that help you prepare alongside these papers.</p>
-    <ul class="pyq-linklist">
-{% for l in pyqLinks %}
+    <ul class="hub-linklist">
+{% for l in hubLinks %}
       <li>
-        <a class="pyq-link" href="{{ l.href }}">
-          <span class="pyq-link-txt">
+        <a class="hub-link" href="{{ l.href }}">
+          <span class="hub-link-txt">
             <strong>{{ l.title }}</strong>
             <span>{{ l.text }}</span>
           </span>
-          <span class="pyq-link-arrow" aria-hidden="true">&rarr;</span>
+          <span class="hub-link-arrow" aria-hidden="true">&rarr;</span>
         </a>
       </li>
 {% endfor %}

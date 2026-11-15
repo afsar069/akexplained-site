@@ -48,7 +48,7 @@ The "no paid tier" lines in `/terms/`, `/contact/` and About change in the same 
 
 ## 5. Small clean-ups found in this check
 - ~~`/quizzes/pyq/` stale~~ — **done 2026-11-15** (branch): it is now the PYQ front door with exam cards (rule 19). New exams are one entry in `_data/pyqHub.js`.
-- `/quizzes/mock-tests/` meta description still says "coming soon" although UP PGT and UP AP mock tests are live. Needs the owner's wording.
+- ~~`/quizzes/mock-tests/` stale~~ — **done 2026-11-15** (branch): it is now the mock-test front door with exam cards (rule 20).
 - `CLAUDE.md` rule 18 ("First paper …") and `docs/accounts-status.md` do not yet describe the June 2012 papers and the two Paper III papers. `tools/pyq/decisions/` has files for three of the four papers (none for December 2012 Paper III); not checked whether that paper needed one.
 - Two old remote branches (`fix/pgt-shared-footer`, `fix/result-pdf-question-summary-20261113`) show commits not in `main`'s history; likely already merged by another route. Not verified.
 
