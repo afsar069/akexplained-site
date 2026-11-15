@@ -431,7 +431,7 @@
               items.push({ k: 'ok', t: 'Levels match the plan: ' + p.levels.map(cap).join(' and ') + '.' });
             }
             if (missing.length) {
-              items.push({ k: 'warn', t: 'The plan for this set has ' + p.levels.map(cap).join(' and ') + ', but ' + missing.map(cap).join(' and ') + ' is not uploaded yet. A student who picks ' + missing.map(cap).join(' or ') + ' will see "This set is not open to you yet." Upload the missing file (same age, same set number), or ask Claude to take that level out of the plan.' });
+              items.push({ k: 'warn', t: 'The plan for this set has ' + p.levels.map(cap).join(' and ') + ', but ' + missing.map(cap).join(' and ') + (missing.length > 1 ? ' are' : ' is') + ' not uploaded yet. A student who picks ' + missing.map(cap).join(' or ') + ' will see "This set is not open to you yet." Upload the missing file (same age, same set number), or ask Claude to take that level out of the plan.' });
             }
             if (extra.length) {
               items.push({ k: 'warn', t: 'You uploaded ' + extra.map(cap).join(' and ') + ', which is not in the plan for this set. The page will not offer it until Claude adds it to the plan.' });
