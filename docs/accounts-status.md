@@ -19,6 +19,13 @@ _Last updated: 2026-11-15. Georgian Period Set 1 is prepared as a free, no-login
 - The live `public.paper_catalog` row has the title, number 5 and 100-question count. `_data/paperCatalog.json` was synced so the static fallback card and sitemap include Test 5. The test and review routes were already pre-built by `statePscMockTests.range` and use the shared CBT and live-catalog check, so no separate Test 5 template is needed.
 - Eleventy built clean. A local browser with Supabase mocked showed Test 5's guest lock and login return link, then a signed-in ten-question run with answer, mark, submit, score and review; no page errors. All 38,684 internal links and assets across 530 built pages resolved.
 
+## State PSC hub: other states as Coming soon (2026-11-15, on the branch, NOT merged)
+
+- The owner asked for cards for other states' exams at the level of UP Assistant Professor, as Coming soon, chosen by web search (J&K named). Added six: **HPSC Haryana, HPPSC Himachal Pradesh, JKPSC Jammu and Kashmir, MPPSC Madhya Pradesh, RPSC Rajasthan, UKPSC Uttarakhand** (`_data/statePscExams.json`, `exams/state-psc/index.njk`, rule 21). The UP card now sits under a "State Assistant Professor Exams" heading with the six boxes below it.
+- The search confirmed English Assistant Professor recruitment for these six (mostly news and coaching sites; official sites not opened). **Left out:** JPSC (Jharkhand), BPSC (Bihar), Punjab: English not confirmed. Cards show only the name and state, no counts or dates.
+- **Open exam button (owner, same day):** the UP Assistant Professor card now ends in a white "Open exam →" button (the same `pgt-featured--listed` style as the UP PGT card on `/exams/pgt/`), so it reads as something to press. The whole card is still the link.
+- Tested on the built `_site` (Playwright, 1280 / 800 / 375 px): 6 cards, none is a link, no sideways scroll, no page errors, the UP card still opens `/exams/state-psc/up-assistant-professor/`.
+
 ## Mock-test front door (2026-11-15, on the branch, NOT merged)
 
 - The owner asked for `/quizzes/mock-tests/` to be built like the PYQ front door: every mock test we have linked from it, the possible ones as Coming soon. Built (rule 20): `quizzes/mock-tests/index.njk` (was hand-written HTML with one "coming soon" box) and `_data/mockHub.js`.

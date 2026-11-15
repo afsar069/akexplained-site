@@ -1,0 +1,11 @@
+{
+  "_about": "Other state Assistant Professor exams shown as Coming soon cards on /exams/state-psc/ (CLAUDE.md rule 21). Each is a state commission's recruitment of Assistant Professors for government colleges, the same level as UP Assistant Professor. Checked by web search on 2026-11-15 that the commission has recruited Assistant Professors in English; no counts or dates are shown on the cards because they were not confirmed on the official sites. To open one, build its page and move it out of this list.",
+  "state": [
+    { "name": "HPSC Assistant Professor", "state": "Haryana", "icon": "tabler/school" },
+    { "name": "HPPSC Assistant Professor", "state": "Himachal Pradesh", "icon": "feather/book-open" },
+    { "name": "JKPSC Assistant Professor", "state": "Jammu and Kashmir", "icon": "feather/layers" },
+    { "name": "MPPSC Assistant Professor", "state": "Madhya Pradesh", "icon": "tabler/school" },
+    { "name": "RPSC Assistant Professor", "state": "Rajasthan", "icon": "feather/book-open" },
+    { "name": "UKPSC Assistant Professor", "state": "Uttarakhand", "icon": "feather/layers" }
+  ]
+}
