@@ -58,7 +58,7 @@ permalink: /admin/upload-paper/index.html
         <select id="upDest">
           <option value="">Choose one&hellip;</option>
           {%- for d in paperDestinations %}
-          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}">{{ d.label }}</option>
+          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}" data-page-base="{{ d.pageBase or '' }}">{{ d.label }}</option>
           {%- endfor %}
         </select>
       </label>
@@ -100,8 +100,15 @@ permalink: /admin/upload-paper/index.html
     </div>
 
     <div class="authcard" id="upDone" hidden>
-      <h2>Done</h2>
+      <h2 id="upDoneTitle">Done</h2>
+      <p class="upverdict" id="upVerdict" role="status"></p>
       <ul class="uprep" id="upDoneReport"></ul>
+      <div class="upcopy" id="upCopy" hidden>
+        <p class="small"><strong>Something needs fixing.</strong> Press the button, then paste the text to Claude. It has everything needed to find the cause and fix it.</p>
+        <textarea id="upCopyText" rows="9" readonly aria-label="Text to paste to Claude"></textarea>
+        <button class="btn" id="upCopyBtn" type="button">Copy this for Claude</button>
+        <span class="small" id="upCopyNote" aria-live="polite"></span>
+      </div>
       <p class="small">Keep your own copy of the file. The database is the only copy now &mdash; the file is not saved anywhere on the website.</p>
     </div>
 
@@ -113,6 +120,7 @@ permalink: /admin/upload-paper/index.html
 
 <footer class="site-footer"></footer>
 
+<script type="application/json" id="upPlan">{{ uploadPlan.json | safe }}</script>
 <script src="/assets/admin.js" defer></script>
 <script src="/assets/upload-paper.js" defer></script>
 </body>

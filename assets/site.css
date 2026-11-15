@@ -3785,7 +3785,15 @@ a.dashstrip-pill.is-tool:hover{background:var(--teal);border-color:var(--teal);c
 .uprep li.ok::before{content:"\2713";color:var(--teal)}
 .uprep li.no::before{content:"\2717";color:var(--accent)}
 .uprep li.no{color:#8A2B16}
+.uprep li.warn::before{content:"!";color:#B26A00}
+.uprep li.warn{color:#7A4A00}
 .uprep li.info::before{content:"\2022";color:var(--body)}
+.upverdict{margin:0 0 14px;padding:10px 14px;border-radius:10px;font-weight:600;line-height:1.5;border:1px solid var(--line,#ddd)}
+.upverdict.is-ok{background:#E7F4F0;color:#0B5B4D;border-color:#9FD3C7}
+.upverdict.is-warn{background:#FFF4DF;color:#7A4A00;border-color:#E8C987}
+.upverdict.is-no{background:#FBE9E5;color:#8A2B16;border-color:#E8B3A6}
+.upcopy{margin-top:16px;padding-top:14px;border-top:1px dashed var(--line,#ddd)}
+.upcopy textarea{display:block;width:100%;box-sizing:border-box;margin:8px 0 12px;padding:10px;font:inherit;font-size:.85rem;line-height:1.5;border:1px solid var(--line,#ccc);border-radius:8px;background:#fff;color:var(--ink)}
 .uprep li.info{color:var(--body)}
 
 /* Admin area (/admin/...), 2026-11-13. Owner-only pages; plain and compact. */

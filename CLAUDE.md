@@ -481,6 +481,15 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     `minNumber` / `maxNumber` (read from the series' own data: UP PGT 6–60, because 1–5 are the free files; UP AP
     1–30, the pre-built range) and the page **refuses a number outside it**, because such a paper could never be opened. TGT is not offered:
     it has no page yet.
+  - **The final check after an upload** (owner, 2026-11-15, `assets/upload-paper.js` `finalChecks()`): the Done card no longer
+    gives one fixed line. It shows a verdict (green = Live and open to students now, amber = check the points, red =
+    saved but students cannot open it) and a list: saved copy matches (fingerprint), the paper is in `paper_catalog`,
+    the levels and the question count match the registry plan, and the test and review pages exist on the live site (a
+    same-site fetch). The plan comes from `_data/uploadPlan.js` (embedded as `#upPlan`; no question text); a mock series
+    uses `pageBase` from `_data/paperDestinations.js`. A set number with no planned slot, a missing planned level, a
+    different count, a clash with a free set and a rev that differs from the registry all show here in plain English.
+    When anything is amber or red the card also shows a **"Copy this for Claude"** text (and the same on a failed upload)
+    that the owner pastes to Claude. Keep these checks in step when a destination or the registry changes.
   - Changing a live paper: upload it again with a **raised rev** (the page refuses an equal/lower rev on an id that
     exists). Nobody can delete a paper from a browser (no DELETE grant, no DELETE policy); hide it with `status = 'draft'`.
 - **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of
