@@ -1,0 +1,874 @@
+{
+  "setId": "postmodern-set-1",
+  "rev": 1,
+  "age": "postmodern",
+  "ageName": "Postmodern Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/contemporary-age/",
+  "notesTitle": "Contemporary — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "novel": "The novel",
+    "drama": "Drama",
+    "poetry": "Poetry",
+    "postcolonial": "Postcolonial writing",
+    "terms": "Terms and criticism"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Interpretation, comparison, chronology and matching across postwar literature.",
+  "questions": [
+    {
+      "id": "postmodern-set-1-m-01",
+      "question": "Which government department in Nineteen Eighty-Four rewrites past records?",
+      "options": [
+        "The Ministry of Peace",
+        "The Ministry of Truth",
+        "The Ministry of Love",
+        "The Ministry of Plenty"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Ministry of Truth manufactures records to support the Party’s latest version of events.",
+      "topic": "novel",
+      "topicId": "nineteen-eighty-four",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
+    },
+    {
+      "id": "postmodern-set-1-m-02",
+      "question": "Which political event chiefly underlies the allegory in Animal Farm?",
+      "options": [
+        "The Russian Revolution",
+        "The English Civil War",
+        "The French Revolution",
+        "The American Revolution"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The animals’ overthrow of their owner and subsequent domination by pigs satirize the Soviet revolutionary experience.",
+      "topic": "novel",
+      "topicId": "animal-farm",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-m-03",
+      "question": "Which Orwell essay attacks vague political writing and verbal dishonesty?",
+      "options": [
+        "Shooting an Elephant",
+        "The Lion and the Unicorn",
+        "Politics and the English Language",
+        "Why I Write"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The essay argues that stale phrases can conceal thought and make political deception easier.",
+      "topic": "terms",
+      "topicId": "politics-and-the-english-language",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Politics_and_the_English_Language"
+    },
+    {
+      "id": "postmodern-set-1-m-04",
+      "question": "Which character first uses the conch to gather the boys in Lord of the Flies?",
+      "options": [
+        "Roger",
+        "Jack",
+        "Ralph",
+        "Simon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ralph blows the conch to assemble the survivors, establishing a symbol of collective order.",
+      "topic": "novel",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-m-05",
+      "question": "What does Piggy’s broken pair of spectacles mainly supply before it is stolen?",
+      "options": [
+        "A map of the island",
+        "A way to contact ships",
+        "A means of finding food",
+        "The means to make fire"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The boys use the spectacles to concentrate sunlight, so the glasses become important for maintaining fire.",
+      "topic": "novel",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-m-06",
+      "question": "Which broader claim does Lord of the Flies challenge through the boys’ conduct?",
+      "options": [
+        "That knowledge requires schools",
+        "That civilized behaviour is automatic",
+        "That nature cannot be understood",
+        "That war destroys every island"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The boys’ slide into violence suggests that social order depends on fragile restraints, not innate goodness.",
+      "topic": "ground",
+      "topicId": "william-golding",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-m-07",
+      "question": "Who are the two central waiting figures in Waiting for Godot?",
+      "options": [
+        "Stanley and Goldberg",
+        "Hamm and Clov",
+        "Aston and Mick",
+        "Vladimir and Estragon"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Vladimir and Estragon remain beside a road, repeatedly waiting for the elusive Godot.",
+      "topic": "drama",
+      "topicId": "waiting-for-godot",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Waiting_for_Godot"
+    },
+    {
+      "id": "postmodern-set-1-m-08",
+      "question": "Which Beckett play includes the characters Hamm and Clov?",
+      "options": [
+        "The Caretaker",
+        "The Homecoming",
+        "Happy Days",
+        "Endgame"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hamm and Clov are interdependent figures in Beckett’s one-act tragicomedy.",
+      "topic": "drama",
+      "topicId": "endgame",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Endgame_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-09",
+      "question": "What recording device is central to Krapp’s Last Tape?",
+      "options": [
+        "A gramophone",
+        "A tape recorder",
+        "A telephone",
+        "A radio receiver"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Krapp listens to recordings of his earlier self, confronting a divided sense of identity.",
+      "topic": "drama",
+      "topicId": "krapps-last-tape",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Krapp%27s_Last_Tape"
+    },
+    {
+      "id": "postmodern-set-1-m-10",
+      "question": "Which homeless character is invited into the room in Pinter’s The Caretaker?",
+      "options": [
+        "Teddy",
+        "Davies",
+        "Goldberg",
+        "Stanley"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Aston offers Davies temporary shelter; his presence unsettles the brothers’ relationship.",
+      "topic": "drama",
+      "topicId": "the-caretaker",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Caretaker_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-11",
+      "question": "Which pair arrives to interrogate Stanley in The Birthday Party?",
+      "options": [
+        "Goldberg and McCann",
+        "Hamm and Clov",
+        "Aston and Mick",
+        "Vladimir and Estragon"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The visitors’ questioning turns the boarding house into an environment of intimidation.",
+      "topic": "drama",
+      "topicId": "the-birthday-party",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Birthday_Party_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-12",
+      "question": "What gives early Pinter dialogue its characteristic sense of menace?",
+      "options": [
+        "Threat beneath banal talk",
+        "A fixed moral conclusion",
+        "Ritualized heroic couplets",
+        "A chorus explaining events"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ordinary speech and seemingly empty pauses can mask struggles for power and sudden danger.",
+      "topic": "terms",
+      "topicId": "comedy-of-menace",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-13",
+      "question": "What uncertainty is central to the speaker’s visit in Church Going?",
+      "options": [
+        "The future role of religion",
+        "The value of military service",
+        "The price of railway travel",
+        "The origins of political satire"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The speaker questions why churches may still matter in an increasingly secular society.",
+      "topic": "poetry",
+      "topicId": "church-going",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-14",
+      "question": "What type of scene connects the episodes in Larkin’s title poem The Whitsun Weddings?",
+      "options": [
+        "A school reunion",
+        "A courtroom trial",
+        "A church service",
+        "A train journey"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A railway journey draws together glimpses of wedding parties and the social life around them.",
+      "topic": "poetry",
+      "topicId": "the-whitsun-weddings",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/The_Whitsun_Weddings"
+    },
+    {
+      "id": "postmodern-set-1-m-15",
+      "question": "Which anthology, edited by Robert Conquest, became closely identified with the Movement?",
+      "options": [
+        "New Lines",
+        "Georgian Poetry",
+        "The New Poetry",
+        "The Faber Book of Modern Verse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "New Lines appeared in 1956 and gathered poets known for direct language and controlled form.",
+      "topic": "terms",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-16",
+      "question": "In which year was Hughes’s collection Crow first published?",
+      "options": [
+        "1957",
+        "1970",
+        "1985",
+        "1964"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Crow appeared in 1970 and marked an experimental turn towards mythic and unsettling figures.",
+      "topic": "poetry",
+      "topicId": "crow",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Crow_(poetry)"
+    },
+    {
+      "id": "postmodern-set-1-m-17",
+      "question": "What standpoint shapes the voice of Hawk Roosting?",
+      "options": [
+        "An animal claiming absolute power",
+        "A child mourning a parent",
+        "A sailor seeking a homeland",
+        "A farmer awaiting a harvest"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The hawk speaks as if its power were natural and unquestionable, making domination the poem’s central concern.",
+      "topic": "poetry",
+      "topicId": "hawk-roosting",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Ted_Hughes"
+    },
+    {
+      "id": "postmodern-set-1-m-18",
+      "question": "Which contrast best describes Hughes’s animal imagery alongside Movement poetry?",
+      "options": [
+        "Religious allegory versus travel",
+        "Scientific optimism versus myth",
+        "Raw instinct versus restraint",
+        "Urban elegance versus chivalry"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hughes emphasizes violent vitality where many Movement poets favoured understatement and formal control.",
+      "topic": "poetry",
+      "topicId": "ted-hughes",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-19",
+      "question": "What ancient remains become central images in Heaney’s North?",
+      "options": [
+        "Bronze Age coins",
+        "Medieval manuscripts",
+        "Roman marble statues",
+        "Bodies preserved in peat"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The bog bodies provide unsettling parallels for violence in the modern Irish Troubles.",
+      "topic": "poetry",
+      "topicId": "north-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-20",
+      "question": "Which craft does the speaker choose instead of his family’s agricultural labour in Digging?",
+      "options": [
+        "Travelling overseas",
+        "Writing poetry",
+        "Building stone walls",
+        "Studying astronomy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The pen becomes an instrument of skilled work analogous to the spades of earlier generations.",
+      "topic": "poetry",
+      "topicId": "digging",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Digging_(poem)"
+    },
+    {
+      "id": "postmodern-set-1-m-21",
+      "question": "Which twentieth-century conflict informs Heaney’s North?",
+      "options": [
+        "The Spanish Civil War",
+        "The Boer War",
+        "The Crimean War",
+        "The Troubles in Northern Ireland"
+      ],
+      "correct_option_id": 3,
+      "explanation": "North connects contemporary sectarian violence with archaeological images from northern Europe.",
+      "topic": "terms",
+      "topicId": "seamus-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-22",
+      "question": "How does Midnight’s Children connect an individual life with the nation’s past?",
+      "options": [
+        "Through a neutral police report",
+        "Through a personal historical narrative",
+        "Through an impersonal scientific essay",
+        "Through a purely pastoral adventure"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The narrator recounts his life as part of the larger story of independent India.",
+      "topic": "postcolonial",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-m-23",
+      "question": "Which novel by Rushdie was published in 1988 and provoked international controversy?",
+      "options": [
+        "The Moor’s Last Sigh",
+        "The Enchantress of Florence",
+        "Shame",
+        "The Satanic Verses"
+      ],
+      "correct_option_id": 3,
+      "explanation": "This 1988 novel led to intense disputes over religious representation and free expression.",
+      "topic": "postcolonial",
+      "topicId": "the-satanic-verses",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-m-24",
+      "question": "Who is the central tragic protagonist of Things Fall Apart?",
+      "options": [
+        "Saleem Sinai",
+        "Okonkwo",
+        "Ezeulu",
+        "Obi Okonkwo"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Okonkwo’s choices and his community’s encounter with colonial power drive the novel’s tragedy.",
+      "topic": "postcolonial",
+      "topicId": "things-fall-apart",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Things_Fall_Apart"
+    },
+    {
+      "id": "postmodern-set-1-m-25",
+      "question": "How does Achebe’s English prose often represent Igbo oral culture?",
+      "options": [
+        "Through French symbolist imagery",
+        "Through proverbs and speech patterns",
+        "Through Latin legal formulas",
+        "Through Elizabethan blank verse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Achebe adapts English to carry Igbo idioms and proverbial wisdom, giving local speech cultural authority.",
+      "topic": "postcolonial",
+      "topicId": "chinua-achebe",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-m-26",
+      "question": "Given below are two statements:\nStatement I: The Party in Nineteen Eighty-Four alters historical records.\nStatement II: Telescreens guarantee complete privacy to citizens.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Party edits the past and uses telescreens for surveillance rather than privacy.",
+      "topic": "novel",
+      "topicId": "nineteen-eighty-four",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Nineteen_Eighty-Four"
+    },
+    {
+      "id": "postmodern-set-1-m-27",
+      "question": "Given below are two statements:\nStatement I: Animal Farm represents a revolution followed by a new ruling elite.\nStatement II: The pigs consistently refuse any special privileges.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true",
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The animals replace one authority with another as the pigs accumulate privileges.",
+      "topic": "ground",
+      "topicId": "animal-farm",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-m-28",
+      "question": "Given below are two statements:\nStatement I: The conch initially gives boys a framework for meetings.\nStatement II: Jack’s group ultimately defends rule by open democratic discussion.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The conch symbolizes order, whereas Jack’s faction increasingly governs through fear.",
+      "topic": "novel",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-m-29",
+      "question": "Given below are two statements:\nStatement I: Simon suggests that the feared beast lies within human beings.\nStatement II: The ending introduces an adult naval officer.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Simon recognizes the boys’ internal violence, and a naval officer eventually interrupts the hunt for Ralph.",
+      "topic": "ground",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-m-30",
+      "question": "Given below are two statements:\nStatement I: Hamm is unable to walk in Endgame.\nStatement II: Clov cannot sit down.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Their physical limitations make them interdependent while their relationship remains antagonistic.",
+      "topic": "drama",
+      "topicId": "endgame",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Endgame_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-31",
+      "question": "Given below are two statements:\nStatement I: Endgame portrays routines and mutual dependence without conventional resolution.\nStatement II: Theatre of the Absurd always offers an explanatory ending.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Beckett portrays repetitive dependence, while absurd drama often resists explanatory closure.",
+      "topic": "drama",
+      "topicId": "theatre-of-the-absurd",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-m-32",
+      "question": "Given below are two statements:\nStatement I: Davies is an itinerant man offered shelter in The Caretaker.\nStatement II: Aston and Mick are brothers.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The play centres on the unsettled relationship of a homeless visitor and two brothers.",
+      "topic": "drama",
+      "topicId": "the-caretaker",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/The_Caretaker_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-33",
+      "question": "Given below are two statements:\nStatement I: The Birthday Party initially drew unfavourable responses.\nStatement II: Pinter avoids threatening undercurrents in ordinary conversations.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The play was poorly received at first; its everyday speech repeatedly conceals menace.",
+      "topic": "drama",
+      "topicId": "the-birthday-party",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-m-34",
+      "question": "Given below are two statements:\nStatement I: Movement poets commonly valued clear speech and controlled form.\nStatement II: Larkin often explored ordinary life, time and mortality.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Movement valued plain expression, and Larkin repeatedly shaped everyday scenes into reflections on loss.",
+      "topic": "poetry",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-35",
+      "question": "Given below are two statements:\nStatement I: Crow draws on mythic and grotesque material.\nStatement II: The Hawk in the Rain was published after Crow.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true",
+        "Statement I is false but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Crow appeared in 1970, while Hughes’s debut The Hawk in the Rain appeared in 1957.",
+      "topic": "poetry",
+      "topicId": "crow",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Crow_(poetry)"
+    },
+    {
+      "id": "postmodern-set-1-m-36",
+      "question": "Given below are two statements:\nStatement I: North was published in 1975.\nStatement II: Heaney received the Nobel Prize in Literature in 2005.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 1,
+      "explanation": "North appeared in 1975; Heaney received the Nobel in 1995.",
+      "topic": "poetry",
+      "topicId": "north-heaney",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/North_(poetry_collection)"
+    },
+    {
+      "id": "postmodern-set-1-m-37",
+      "question": "Given below are two statements:\nStatement I: Saleem Sinai is born at the moment India becomes independent.\nStatement II: The novel makes magical experiences part of historical narration.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Saleem’s life parallels the new nation, and magical events enter its familiar historical world.",
+      "topic": "postcolonial",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-m-38",
+      "question": "Given below are two statements:\nStatement I: Achebe’s novel incorporates Igbo idioms and proverbs.\nStatement II: Things Fall Apart portrays colonial rule as having no effect on village life.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Its language conveys Igbo cultural knowledge, while the colonial encounter disrupts the community.",
+      "topic": "postcolonial",
+      "topicId": "things-fall-apart",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-m-39",
+      "question": "Arrange these post-war novels in order of first publication:\n1. Nineteen Eighty-Four\n2. Things Fall Apart\n3. Animal Farm\n4. Lord of the Flies\nChoose the correct sequence:",
+      "options": [
+        "3, 2, 4, 1",
+        "2, 4, 1, 3",
+        "3, 1, 4, 2",
+        "3, 2, 1, 4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Animal Farm appeared in 1945, Nineteen Eighty-Four in 1949, Lord of the Flies in 1954 and Things Fall Apart in 1958.",
+      "topic": "ground",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-m-40",
+      "question": "Arrange these post-war stage works in order of their first productions:\n1. The Caretaker\n2. The Birthday Party\n3. Waiting for Godot\n4. Endgame\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 2, 1",
+        "3, 1, 2, 4",
+        "3, 4, 2, 1",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The sequence is Godot in 1953, Endgame in 1957, The Birthday Party in 1958 and The Caretaker in 1960.",
+      "topic": "drama",
+      "topicId": "theatre-of-the-absurd",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/The_Caretaker_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-41",
+      "question": "Arrange these poetry collections from earliest to latest publication:\n1. Death of a Naturalist\n2. The Hawk in the Rain\n3. The Less Deceived\n4. The Whitsun Weddings\nChoose the correct sequence:",
+      "options": [
+        "3, 4, 2, 1",
+        "4, 2, 3, 1",
+        "1, 2, 3, 4",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The dates are 1955 for The Less Deceived, 1957 for The Hawk in the Rain, 1964 for The Whitsun Weddings and 1966 for Death of a Naturalist.",
+      "topic": "poetry",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-42",
+      "question": "Arrange these works from earliest to latest publication:\n1. Midnight’s Children\n2. Arrow of God\n3. The Satanic Verses\n4. Things Fall Apart\nChoose the correct sequence:",
+      "options": [
+        "1, 4, 3, 2",
+        "4, 1, 3, 2",
+        "2, 3, 4, 1",
+        "4, 2, 1, 3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Things Fall Apart was published in 1958, Arrow of God in 1964, Midnight’s Children in 1981 and The Satanic Verses in 1988.",
+      "topic": "postcolonial",
+      "topicId": "postcolonial-criticism",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Arrow_of_God"
+    },
+    {
+      "id": "postmodern-set-1-m-43",
+      "question": "Arrange these Nobel Prize awards in chronological order:\n1. Harold Pinter\n2. Samuel Beckett\n3. Seamus Heaney\n4. William Golding\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 4, 3",
+        "4, 1, 2, 3",
+        "3, 4, 2, 1",
+        "2, 4, 3, 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The awards went to Beckett in 1969, Golding in 1983, Heaney in 1995 and Pinter in 2005.",
+      "topic": "terms",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-44",
+      "question": "Arrange these literary milestones by year:\n1. Midnight’s Children receives the Booker Prize\n2. New Lines anthology appears\n3. The Theatre of the Absurd is named by Esslin\n4. The Bloody Chamber is published\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 3, 4",
+        "2, 1, 4, 3",
+        "2, 3, 4, 1",
+        "4, 2, 3, 1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "New Lines appeared in 1956, Esslin named the Theatre of the Absurd in 1961, The Bloody Chamber came in 1979, and Midnight’s Children won in 1981.",
+      "topic": "terms",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-45",
+      "question": "Match List I (writers) with List II (central concerns):\nList I:\na. George Orwell\nb. William Golding\nc. Samuel Beckett\nd. Harold Pinter\nList II:\n1. The fragility of civilized restraint\n2. The corruption of public truth\n3. Threats beneath ordinary conversation\n4. Repetition and uncertain purpose\nChoose the correct option:",
+      "options": [
+        "a-4, b-1, c-3, d-2",
+        "a-1, b-4, c-2, d-3",
+        "a-2, b-1, c-4, d-3",
+        "a-3, b-1, c-2, d-4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Orwell questions manipulated truth; Golding explores fragile restraint; Beckett depicts repetitive uncertainty; Pinter places hidden menace in ordinary talk.",
+      "topic": "novel",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-m-46",
+      "question": "Match List I (poets) with List II (poetry collections):\nList I:\na. Philip Larkin\nb. Ted Hughes\nc. Seamus Heaney\nd. Robert Conquest\nList II:\n1. The Hawk in the Rain\n2. New Lines\n3. The Whitsun Weddings\n4. North\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-1, d-2",
+        "a-1, b-2, c-4, d-3",
+        "a-3, b-1, c-4, d-2",
+        "a-4, b-3, c-2, d-1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Larkin wrote The Whitsun Weddings; Hughes wrote The Hawk in the Rain; Heaney wrote North; Conquest edited New Lines.",
+      "topic": "poetry",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-m-47",
+      "question": "Match List I (characters) with List II (plays):\nList I:\na. Davies\nb. Vladimir\nc. Hamm\nd. Stanley\nList II:\n1. Endgame\n2. The Birthday Party\n3. Waiting for Godot\n4. The Caretaker\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-1, d-2",
+        "a-4, b-2, c-3, d-1",
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-4, c-2, d-3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Davies appears in The Caretaker; Vladimir in Waiting for Godot; Hamm in Endgame; Stanley in The Birthday Party.",
+      "topic": "drama",
+      "topicId": "theatre-of-the-absurd",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/The_Caretaker_(play)"
+    },
+    {
+      "id": "postmodern-set-1-m-48",
+      "question": "Match List I (concepts) with List II (examples):\nList I:\na. Political fable\nb. Theatre of the Absurd\nc. Comedy of menace\nd. Magic realism\nList II:\n1. The Birthday Party\n2. Animal Farm\n3. Midnight’s Children\n4. Waiting for Godot\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-2, c-3, d-4",
+        "a-2, b-4, c-1, d-3",
+        "a-3, b-1, c-2, d-4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Animal Farm is a political fable; Godot exemplifies absurd drama; Pinter dramatizes menace; Rushdie uses magic realism.",
+      "topic": "terms",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-49",
+      "question": "Match List I (literary images) with List II (interpretations):\nList I:\na. The conch shell\nb. Big Brother\nc. The bog bodies\nd. The magical children\nList II:\n1. National history and new possibilities\n2. Surveillance and ideological power\n3. Collective order and lawful speech\n4. The Troubles viewed through ancient remains\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-4, d-1",
+        "a-4, b-2, c-1, d-3",
+        "a-2, b-3, c-4, d-1",
+        "a-2, b-4, c-1, d-3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The conch marks order, Big Brother stands for surveillance, the bog bodies link past and present violence, and the children connect magic to national history.",
+      "topic": "terms",
+      "topicId": "postmodernism-theory",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-m-50",
+      "question": "Match List I (characters) with List II (literary works):\nList I:\na. Okonkwo\nb. Saleem Sinai\nc. Ralph\nd. Winston Smith\nList II:\n1. Lord of the Flies\n2. Nineteen Eighty-Four\n3. Things Fall Apart\n4. Midnight’s Children\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-1, d-2",
+        "a-1, b-3, c-2, d-4",
+        "a-4, b-3, c-1, d-2",
+        "a-2, b-1, c-4, d-3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Okonkwo belongs to Things Fall Apart; Saleem to Midnight’s Children; Ralph to Lord of the Flies; Winston to Nineteen Eighty-Four.",
+      "topic": "postcolonial",
+      "topicId": "postcolonial-criticism",
+      "periodId": "postmodern",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    }
+  ]
+}
