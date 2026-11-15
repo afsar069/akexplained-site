@@ -188,8 +188,21 @@
         prefix: o.getAttribute('data-prefix') || '',
         needsAge: o.getAttribute('data-needs-age') === 'yes',
         titleWord: o.getAttribute('data-title-word') || 'Set',
-        autoPage: o.getAttribute('data-auto') === 'yes'
+        autoPage: o.getAttribute('data-auto') === 'yes',
+        /* Self-serve series (rule 17): Live karte hi page par aa jata hai, bina rebuild.
+           min/max = jin numbers ke page pehle se bane hain; bahar ka number kabhi khul nahi sakta. */
+        selfServe: o.getAttribute('data-self-serve') === 'yes',
+        min: parseInt(o.getAttribute('data-min'), 10) || 0,
+        max: parseInt(o.getAttribute('data-max'), 10) || 0,
+        numberNote: o.getAttribute('data-number-note') || ''
       };
+    }
+    // Is this number one the series has a page for? (No limits on a destination = any number.)
+    function numberFits(dest, number) {
+      if (!dest || !number) return true;
+      if (dest.min && number < dest.min) return false;
+      if (dest.max && number > dest.max) return false;
+      return true;
     }
     function currentNumber() {
       var n = parseInt(numberInput.value, 10);
@@ -210,9 +223,12 @@
         slugPreview.textContent = 'Now type the number.';
       } else if (dest.needsAge && !age) {
         slugPreview.textContent = 'Now choose the age.';
+      } else if (!numberFits(dest, number)) {
+        slugPreview.textContent = 'This number cannot be used here. ' + dest.numberNote;
       } else {
         slugPreview.innerHTML = 'It will be saved as <strong>' + esc(slug) + '</strong>' +
-          (dest.autoPage ? ' — it will show on its page after the site is next built.'
+          (dest.selfServe ? ' — once it is Live it shows on its page at once. No rebuild is needed.'
+            : dest.autoPage ? ' — it will show on its page after the site is next built.'
                          : ' — the questions go live in the database; its page is wired separately.');
       }
 
@@ -364,6 +380,7 @@
       if (!dest) { fail(goError, 'Choose where this paper goes (the exam / series).'); return; }
       if (dest.needsAge && !age) { fail(goError, 'Choose the age for this MCQ set.'); return; }
       if (!number) { fail(goError, 'Type the test or set number (a whole number, 1 or more).'); return; }
+      if (!numberFits(dest, number)) { fail(goError, 'This number cannot be used here. ' + dest.numberNote); return; }
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
 
       var setId = slugFor(dest, number, age);
@@ -427,8 +444,12 @@
             });
             if (allMatch) {
               items.push(line('info', 'Saved as ' + setId + '.'));
-              if (status === 'draft') {
+              if (status === 'draft' && dest.selfServe) {
+                items.push(line('info', 'It is a Draft, so students cannot see it yet. Make it Live from the All papers page and it will show on its page at once.'));
+              } else if (status === 'draft') {
                 items.push(line('info', 'It is a Draft, so students cannot see it yet. Upload it again as Live when its page is ready, or make it live from the All papers page.'));
+              } else if (dest.selfServe) {
+                items.push(line('info', 'It is Live. It is on its page now and logged-in students can take it. No rebuild is needed.'));
               } else if (dest.autoPage) {
                 items.push(line('info', 'It is Live. It will show on its page after the site is next built — tell Claude to publish it, or it appears on the next build.'));
               } else {

@@ -3,6 +3,8 @@
 // `live: false` card sirf "Coming soon" dikhata hai, koi link nahi (404 nahi).
 // Counts file/catalog se aate hain, haath se nahi likhe. UP AP self-serve hai (rule 17): uske tests runtime par badalte hain,
 // isliye uske card par tests ki ginti nahi dikhate, sirf "har test me kitne sawal" (build ke time ke catalog se).
+// UP PGT ke login tests bhi ab self-serve hain (2026-11-15): free tests ki ginti pakki hai (files), par login tests ki
+// ginti bina rebuild badal sakti hai — isliye card par sirf "N free tests" aur "more with a free login" likha jata hai.
 const fs = require("fs");
 const path = require("path");
 
@@ -33,8 +35,8 @@ module.exports = function () {
       title: "UP PGT English",
       icon: "target",
       blurb: "Full-length UP PGT English mock tests, with a clock and a full review.",
-      meta: pgtTests.length + " tests" + (pgtSame ? " · " + pgtCounts[0] + " questions each" : "") +
-        " · " + pgtFree + " free, " + pgtLogin + " with login",
+      meta: pgtFree + " free tests" + (pgtSame ? " · " + pgtCounts[0] + " questions each" : "") +
+        (pgtLogin ? " · more with a free login" : ""),
       href: "/exams/pgt/up-pgt/mock-tests/",
       live: true
     },

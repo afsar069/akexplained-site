@@ -58,7 +58,7 @@ permalink: /admin/upload-paper/index.html
         <select id="upDest">
           <option value="">Choose one&hellip;</option>
           {%- for d in paperDestinations %}
-          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}">{{ d.label }}</option>
+          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}">{{ d.label }}</option>
           {%- endfor %}
         </select>
       </label>

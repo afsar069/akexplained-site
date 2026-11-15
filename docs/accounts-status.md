@@ -4,7 +4,41 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. Postmodern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-15. UP PGT login mock tests (slots 6–60) are built as self-serve on the branch, not merged. Postmodern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+
+## Self-serve publish — UP PGT login mock tests (2026-11-15, on the branch, NOT merged)
+
+**Series 3 of the self-serve work** (rule 17; plan `docs/self-serve-publish-plan.md`). Branch `claude/confident-lovelace-lqsa7h`.
+
+- **What the owner gets:** upload a UP PGT mock test at `/admin/upload-paper/` (number 6 to 60), mark it Live on
+  `/admin/papers/`, and its card on `/exams/pgt/up-pgt/mock-tests/` turns from "Coming soon" into the padlock (guest) or
+  Start (logged-in) and its page `test-N/` opens, with no rebuild and no Claude. Draft turns the card back to "Coming soon"
+  and the page says "This test is not open yet".
+- **Free Mock Tests 1–5 are untouched** (public files, hand-written pages, no catalog read).
+- **Parts:** `_data/pgtMockTests.js` (60 slots; the login ones read their build-time state from `_data/paperCatalog.json`),
+  `_data/pgtMockTestsLogin.js` (slots 6–60), `exams/pgt/up-pgt/mock-tests/login-test.njk` + `login-review.njk` (replace the
+  hand-written `test-6..10.njk`, `review-6..10.njk` and the old Coming soon `test.njk`), `_includes/up-pgt-cbt.njk`
+  (`data-catalog-check` on login pages; no question count printed for a slot that is not live at build),
+  `assets/paper-list.js` (new slot mode + `status = 'live'` in the read), the hub `index.njk`, `sitemap.njk` (login lines now
+  come from the data; the output is the same today).
+- **Wording changed because the numbers now move without a rebuild:** the hub says "Log in with a free account to take the
+  other open tests" (it named "6 to 10"), and the UP PGT card on `/quizzes/mock-tests/` says "5 free tests · 90 questions
+  each · more with a free login" (it said "10 tests · … · 5 free, 5 with login"). The owner can ask for other words.
+- **Upload page:** UP PGT and UP AP are marked self-serve, so the page says a Live paper shows at once; it refuses a number
+  that has no page (UP PGT 1–5 and above 60; UP AP above 30) with a plain reason.
+- **Live database checked (read only, 2026-11-15):** `paper_catalog` has `up-pgt-mock-test-6..10`, `exam_id = pgt`,
+  `kind = mock-test`, 90 questions, all live; the public read policy is `status = 'live'` for `anon` and `authenticated`,
+  and an admin reads all rows (hence the `status = 'live'` filter in the script). No SQL was run and nothing in the
+  database changed: this series needed no migration.
+- **Tested:** `npx eleventy` clean; built pages for Tests 1–10 differ from `main` only by `data-catalog-check` on 6–10;
+  `sitemap.xml` is byte-identical; no new broken link. 63 Playwright checks with Supabase mocked: guest / student / admin,
+  today's catalog, Test 11 made Live (card + page open, real count shown), Test 10 and Test 6 made Draft (hidden), catalog
+  unreadable (the built page stays; a live test still opens), 375px and desktop, free Test 1 asks the database nothing,
+  series-1 (UP AP) regression, upload-page number guard.
+- **After a new test goes live self-serve:** run `tools/sync_catalog.py` and rebuild at some point, so the no-JS fallback
+  card, the sitemap line and the page's noindex flag catch up. Students do not need it.
+- **Same quirk still in series 2 (not changed here):** `assets/mcq-age.js` `catalogFlip` does not ask for `status = 'live'`,
+  so the owner, as admin, still sees a Draft literature set as open on its age hub. Students are not affected.
 
 ## Postmodern Period Set 1 — free, easy and medium (2026-11-15)
 

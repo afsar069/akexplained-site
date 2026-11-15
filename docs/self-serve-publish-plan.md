@@ -1,6 +1,20 @@
 # Self-serve publish — status + roadmap
 
-> **Status (2026-11-14): 2 series live, 2 planned for later. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
+> **Status (2026-11-15): series 1 and 2 live; series 3 (UP PGT) BUILT on the branch, waiting for the owner's word to
+> merge; series 4 (UGC NET) blocked on its pages. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
+>
+> **Series 3 — UP PGT login mock tests: BUILT (2026-11-15, branch `claude/confident-lovelace-lqsa7h`, NOT merged).**
+> The hub is a fixed grid of 60 slots with the free tests 1–5 inside it, so it does not use the plain list of
+> series 1: `assets/paper-list.js` got a **slot mode** (`data-paper-slots` on the host, `data-paper-slot` on each
+> card 6–60) that flips a slot between "Coming soon" and lock/Start from the live catalog. `login-test.njk` /
+> `login-review.njk` pre-build slots 6–60 with `data-catalog-check`; `cbt.js` is unchanged. Free tests 1–5 are
+> untouched. Differences from the brief below, on purpose: (1) slots 11–60 are no longer the old Coming soon
+> page — a new test must be able to open at `test-11/` with no rebuild, so the address is now the login CBT page
+> and says "This test is not open yet" until the set is live; the hub card still says "Coming soon";
+> (2) `paper-list.js` now asks for `status = 'live'` itself, because an admin can read drafts and would otherwise
+> still see a Draft card (this also fixes series 1 for the owner); (3) the upload page refuses a number with no
+> page (UP PGT 6–60, UP AP 1–30) and tells the owner a self-serve paper shows at once.
+> 63 Playwright checks passed (guest / student / admin, live / draft / read fails, 375px and desktop, series-1 regression).
 >
 > **DONE — live on akexplained.com:**
 > - **Series 1 — UP Assistant Professor Paper 2 mock tests: SHIPPED (merged, PR #75).**

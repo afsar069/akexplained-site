@@ -17,8 +17,10 @@ reads the repo, not the live pages.
   login MCQ sets live 2, 4, 5, 6 (Old English).
 
 ## 1. Self-serve publish (rule 17) — next series
-1. **Series 3 — UP PGT login mock tests (6–10 and new).** Same pattern as UP AP: runtime hub cards, pre-built route range,
-   `data-catalog-check`. Free Tests 1–5 and Coming-soon 11–60 stay exactly as they are. Plan: `docs/self-serve-publish-plan.md`.
+1. **Series 3 — UP PGT login mock tests (6–60): BUILT 2026-11-15, on the branch, not merged.** Slot mode of
+   `assets/paper-list.js` + pre-built login pages with `data-catalog-check`. Free Tests 1–5 untouched. See rule 17 and
+   `docs/self-serve-publish-plan.md`. Same quirk still open in series 2: `assets/mcq-age.js` `catalogFlip` does not ask for
+   `status = 'live'`, so the owner (admin) still sees a Draft literature set as open on the age hub; students do not.
 2. **Series 4 — UGC NET mock tests and Paper 1 MCQs.** Blocked: those pages do not exist yet (`available: false` in
    `_data/netResources.json`), and the upload picker has no NET destination. The owner must first say what NET needs and whether it is free or login.
 
