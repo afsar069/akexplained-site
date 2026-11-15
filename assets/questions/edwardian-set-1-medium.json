@@ -1,0 +1,873 @@
+{
+  "setId": "edwardian-set-1",
+  "rev": 1,
+  "age": "edwardian",
+  "ageName": "Edwardian Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its society",
+    "novel": "The novel",
+    "drama": "Drama and the Abbey Theatre",
+    "poetry": "Poetry and new movements",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Analytical questions, statements, chronology and matching on Edwardian writing and Irish drama.",
+  "questions": [
+    {
+      "id": "edwardian-set-1-m-01",
+      "question": "What ethical question is central to Shaw’s The Doctor’s Dilemma?",
+      "options": [
+        "Whom a doctor should treat with limited resources",
+        "Whether the state should abolish the monarchy and its institutions",
+        "How to restore medieval church ritual",
+        "Who should inherit a country estate"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The doctor must confront competing claims for care, making professional ethics the dramatic problem.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-m-02",
+      "question": "The Don Juan in Hell episode of Man and Superman is chiefly a debate about what?",
+      "options": [
+        "The origin and decline of Gothic fiction in nineteenth-century literary culture",
+        "The legal status of suffrage",
+        "The decline of feudal estates",
+        "The Life Force and creative evolution"
+      ],
+      "correct_option_id": 3,
+      "explanation": "This extended dream sequence lets characters debate Shaw’s ideas about life and human evolution.",
+      "topic": "drama",
+      "topicId": "man-and-superman",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-m-03",
+      "question": "Which political relationship is examined in Shaw’s John Bull’s Other Island?",
+      "options": [
+        "Britain and China",
+        "France and Prussia",
+        "Britain and Ireland",
+        "India and Portugal"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shaw uses an Irish setting to question sentimental English assumptions about Ireland.",
+      "topic": "ground",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-m-04",
+      "question": "Consider the following statements regarding Shaw’s plays:\nI. Major Barbara examines wealth and charitable morality.\nII. Pygmalion explores accents and social class.\nIII. Saint Joan was first published in 1895.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Major Barbara explores morality and money, while Pygmalion treats speech and class; Saint Joan appeared later in 1923.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-m-05",
+      "question": "Arrange the following Shaw plays in the correct chronological order:\n1. Pygmalion\n2. Man and Superman\n3. Saint Joan\n4. Major Barbara\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 1, 3",
+        "3, 1, 4, 2",
+        "4, 3, 2, 1",
+        "1, 2, 3, 4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct order is Man and Superman (1903), Major Barbara (1905), Pygmalion (1913), Saint Joan (1923).",
+      "topic": "terms",
+      "topicId": "bernard-shaw",
+      "periodId": "edwardian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/George_Bernard_Shaw"
+    },
+    {
+      "id": "edwardian-set-1-m-06",
+      "question": "Which Galsworthy play examines the consequences of an unjust penal system?",
+      "options": [
+        "The Silver Box",
+        "Strife",
+        "The Eldest Son",
+        "Justice"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Justice centres on legal punishment and its destructive effects on a vulnerable person.",
+      "topic": "drama",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-m-07",
+      "question": "Galsworthy’s play Strife primarily portrays conflict between which groups?",
+      "options": [
+        "Doctors and patients",
+        "Clergy and bishops",
+        "Workers and employers",
+        "Actors and audiences"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Strife dramatizes a bitter industrial dispute between management and labour.",
+      "topic": "drama",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-m-08",
+      "question": "Which position does In Chancery occupy in the original Forsyte trilogy?",
+      "options": [
+        "Opening novel",
+        "Second novel",
+        "Third novel",
+        "Separate prefatory tale"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Chancery follows The Man of Property and precedes To Let in the trilogy.",
+      "topic": "novel",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-m-09",
+      "question": "Consider the following statements regarding the Forsyte sequence:\nI. The Man of Property was first published in 1926.\nII. The Forsyte Saga collected three main novels in 1922.\nIII. To Let followed In Chancery.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "To Let was published in 1921, and the trilogy was collected in 1922; the first novel dates from 1906.",
+      "topic": "novel",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-m-10",
+      "question": "Match List I (Forsyte works and publication dates) with List II (year):\nList I:\na. The Man of Property\nb. To Let\nc. In Chancery\nd. The Forsyte Saga collection\nList II:\n1. 1922\n2. 1906\n3. 1921\n4. 1920\nChoose the correct option:",
+      "options": [
+        "a-4, b-1, c-3, d-2",
+        "a-4, b-2, c-1, d-3",
+        "a-3, b-1, c-4, d-2",
+        "a-2, b-3, c-4, d-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct pairs are The Man of Property (1906), To Let (1921), In Chancery (1920), The Forsyte Saga collection (1922).",
+      "topic": "terms",
+      "topicId": "john-galsworthy",
+      "periodId": "edwardian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/John_Galsworthy"
+    },
+    {
+      "id": "edwardian-set-1-m-11",
+      "question": "What are the names of the two sisters whose lives diverge in The Old Wives’ Tale?",
+      "options": [
+        "Lucy and Helen",
+        "Maggie and Lucy",
+        "Constance and Sophia",
+        "Margaret and Helen"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Constance remains closely associated with the Five Towns while Sophia’s life takes her elsewhere.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-m-12",
+      "question": "What is the first novel in Bennett’s Clayhanger trilogy?",
+      "options": [
+        "Hilda Lessways",
+        "Clayhanger",
+        "These Twain",
+        "Leonora"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Clayhanger begins the sequence, followed by Hilda Lessways and These Twain.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-m-13",
+      "question": "What marks Bennett’s portrayal of life in the Five Towns?",
+      "options": [
+        "Detailed observation of everyday provincial society",
+        "A dreamlike allegory of supernatural voyages through medieval cities",
+        "Exclusive focus on aristocratic battles",
+        "Narration entirely through surreal dialogue"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The novels carefully describe work, shops, families and habits in the Potteries.",
+      "topic": "terms",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-m-14",
+      "question": "Consider the following statements regarding Bennett’s fictional region:\nI. His Five Towns fictionalise a pottery district.\nII. His Five Towns are located in medieval Scotland.\nIII. He repeatedly described provincial middle-class life.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Five Towns are based on Staffordshire, not Scotland; their ordinary social life is central.",
+      "topic": "novel",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-m-15",
+      "question": "Match List I (Bennett novels and publication dates) with List II (year):\nList I:\na. The Old Wives’ Tale\nb. Hilda Lessways\nc. Anna of the Five Towns\nd. Clayhanger\nList II:\n1. 1911\n2. 1910\n3. 1902\n4. 1908\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-1, d-2",
+        "a-4, b-2, c-1, d-3",
+        "a-4, b-1, c-3, d-2",
+        "a-3, b-1, c-4, d-2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The correct pairs are The Old Wives’ Tale (1908), Hilda Lessways (1911), Anna of the Five Towns (1902), Clayhanger (1910).",
+      "topic": "terms",
+      "topicId": "novel",
+      "periodId": "edwardian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Arnold_Bennett"
+    },
+    {
+      "id": "edwardian-set-1-m-16",
+      "question": "What kind of product drives the speculative commercial venture in Tono-Bungay?",
+      "options": [
+        "An experimental steam engine designed for a very large industrial factory",
+        "A heavily advertised patent medicine",
+        "A chain of cheap newspapers",
+        "A new coal-mining device"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The supposed tonic becomes a vehicle for exposing commercial deception and ambition.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-m-17",
+      "question": "What social predicament does the young draper face in Kipps?",
+      "options": [
+        "Sudden wealth and unfamiliar upper-class manners",
+        "A failed expedition to the Arctic",
+        "A diplomatic dispute over Ireland",
+        "A lengthy legal dispute about ownership of an ancient country estate"
+      ],
+      "correct_option_id": 0,
+      "explanation": "His new money places him among customs and people for which his upbringing has not prepared him.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-m-18",
+      "question": "Which Wells novel features a dissatisfied draper trying to escape his routine?",
+      "options": [
+        "The Secret Agent",
+        "Clayhanger",
+        "The Longest Journey",
+        "The History of Mr Polly"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Mr Polly’s frustrations drive a comic examination of lower-middle-class existence.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-m-19",
+      "question": "Consider the following statements regarding Wells’s career:\nI. His early books included scientific romances.\nII. His later fiction often examined class and society.\nIII. Tono-Bungay is a poem in heroic couplets.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wells moved from scientific romance toward social novels, and Tono-Bungay is a novel.",
+      "topic": "novel",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "edwardian-set-1-m-20",
+      "question": "Arrange the following Wells publications in the correct chronological order:\n1. The History of Mr Polly\n2. Kipps\n3. The Time Machine\n4. Tono-Bungay\nChoose the correct sequence:",
+      "options": [
+        "2, 3, 1, 4",
+        "3, 2, 4, 1",
+        "1, 3, 2, 4",
+        "4, 2, 1, 3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct order is The Time Machine (1895), Kipps (1905), Tono-Bungay (1909), The History of Mr Polly (1910).",
+      "topic": "terms",
+      "topicId": "hg-wells",
+      "periodId": "edwardian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/H._G._Wells"
+    },
+    {
+      "id": "edwardian-set-1-m-21",
+      "question": "Which character narrates significant portions of Lord Jim?",
+      "options": [
+        "Marlow",
+        "Soames Forsyte",
+        "George Ponderevo",
+        "Christy Mahon"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Marlow frames much of Jim’s troubled history and asks how moral judgment should work.",
+      "topic": "novel",
+      "topicId": "lord-jim",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-m-22",
+      "question": "Which Conrad novel examines political radicalism in Russia and its effects on private lives?",
+      "options": [
+        "A Room with a View",
+        "The Old Wives’ Tale",
+        "The Well of the Saints",
+        "Under Western Eyes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The novel treats Russian revolutionary politics through betrayal and mistrust.",
+      "topic": "novel",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-m-23",
+      "question": "Which London landmark is targeted in the bombing plot of The Secret Agent?",
+      "options": [
+        "The Tower of London",
+        "St Paul’s Cathedral",
+        "Greenwich Observatory",
+        "Westminster Abbey"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The attempt against the Observatory exposes the cruelty and absurdity of extremist political theatre.",
+      "topic": "novel",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-m-24",
+      "question": "Consider the following statements regarding Conrad’s writing:\nI. He was born in an English coastal town.\nII. He used narrative frames and morally uncertain narrators.\nIII. He drew on his maritime experience.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Conrad was Polish-born, and his sea career and complex narrative perspectives shaped his fiction.",
+      "topic": "terms",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-m-25",
+      "question": "Match List I (Conrad novels and publication dates) with List II (year):\nList I:\na. The Secret Agent\nb. Lord Jim\nc. Under Western Eyes\nd. Nostromo\nList II:\n1. 1904\n2. 1911\n3. 1900\n4. 1907\nChoose the correct option:",
+      "options": [
+        "a-4, b-3, c-2, d-1",
+        "a-4, b-2, c-1, d-3",
+        "a-1, b-2, c-3, d-4",
+        "a-4, b-1, c-3, d-2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct pairs are The Secret Agent (1907), Lord Jim (1900), Under Western Eyes (1911), Nostromo (1904).",
+      "topic": "terms",
+      "topicId": "joseph-conrad",
+      "periodId": "edwardian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/Joseph_Conrad"
+    },
+    {
+      "id": "edwardian-set-1-m-26",
+      "question": "Which social contrast structures much of Forster’s Howards End?",
+      "options": [
+        "A powerful dynasty of Roman emperors and successive groups of medieval pilgrims",
+        "Norse warriors and Saxon peasants",
+        "Royal courtiers and Tudor sailors",
+        "Intellectual Schlegels and wealthy Wilcoxes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The two families expose class distinctions and the limits of wealth without understanding.",
+      "topic": "novel",
+      "topicId": "howards-end",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-m-27",
+      "question": "What does the phrase only connect urge readers to value in Forster’s fiction?",
+      "options": [
+        "Keeping social classes completely separate",
+        "Treating people as mere economic types",
+        "Joining emotional life with social understanding",
+        "Preferring property to human relationships"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Forster’s ideal asks for integration of inner feeling, relationships and the public world.",
+      "topic": "terms",
+      "topicId": "howards-end",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-m-28",
+      "question": "Consider the following statements regarding Forster’s early novels:\nI. Where Angels Fear to Tread appeared in 1905.\nII. Howards End appeared before either work.\nIII. The Longest Journey was published in 1907.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Howards End came in 1910, after both earlier novels.",
+      "topic": "novel",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-m-29",
+      "question": "Given below are two statements:\nStatement I: Forster’s novels often expose English class prejudice.\nStatement II: Forster’s first published novel was A Passage to India.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Class and convention recur in his fiction, while Where Angels Fear to Tread was his debut.",
+      "topic": "novel",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-m-30",
+      "question": "Arrange the following Forster novels in the correct chronological order:\n1. The Longest Journey\n2. Howards End\n3. Where Angels Fear to Tread\n4. A Room with a View\nChoose the correct sequence:",
+      "options": [
+        "2, 1, 4, 3",
+        "2, 3, 1, 4",
+        "3, 4, 1, 2",
+        "3, 1, 4, 2"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct order is Where Angels Fear to Tread (1905), The Longest Journey (1907), A Room with a View (1908), Howards End (1910).",
+      "topic": "terms",
+      "topicId": "em-forster",
+      "periodId": "edwardian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/E._M._Forster"
+    },
+    {
+      "id": "edwardian-set-1-m-31",
+      "question": "Which Yeats volume published in 1903 continues his early engagement with Irish myth?",
+      "options": [
+        "The Tower",
+        "Last Poems",
+        "In the Seven Woods",
+        "A Vision"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In the Seven Woods belongs to the phase when Irish history and legend remained important to his verse.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._B._Yeats"
+    },
+    {
+      "id": "edwardian-set-1-m-32",
+      "question": "Yeats supplied an introduction to the English Gitanjali of which poet?",
+      "options": [
+        "Sarojini Naidu",
+        "Rabindranath Tagore",
+        "Toru Dutt",
+        "Aurobindo Ghose"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yeats helped present Tagore’s poetry to English-language readers before Tagore’s Nobel Prize.",
+      "topic": "ground",
+      "topicId": "rabindranath-tagore",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-m-33",
+      "question": "Consider the following statements regarding Yeats’s development:\nI. His early poems drew on Celtic legend.\nII. His later writing developed a harder symbolic style.\nIII. His Nobel Prize in Literature came in 1903.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Yeats evolved stylistically over time, while he received the Nobel Prize in 1923.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-m-34",
+      "question": "Given below are two statements:\nStatement I: Yeats’s first major activity was as an Edwardian science-fiction novelist.\nStatement II: Yeats was important to the Irish Literary Revival.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Yeats worked chiefly as poet and dramatist in the revival, not as a science-fiction novelist.",
+      "topic": "ground",
+      "topicId": "the-irish-literary-revival",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/W._B._Yeats"
+    },
+    {
+      "id": "edwardian-set-1-m-35",
+      "question": "Match List I (Yeats poetry collections and publication dates) with List II (year):\nList I:\na. Responsibilities\nb. In the Seven Woods\nc. The Green Helmet and Other Poems\nd. The Wind Among the Reeds\nList II:\n1. 1903\n2. 1910\n3. 1899\n4. 1914\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-3, d-4",
+        "a-4, b-3, c-1, d-2",
+        "a-4, b-1, c-2, d-3",
+        "a-4, b-2, c-1, d-3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The correct pairs are Responsibilities (1914), In the Seven Woods (1903), The Green Helmet and Other Poems (1910), The Wind Among the Reeds (1899).",
+      "topic": "terms",
+      "topicId": "wb-yeats",
+      "periodId": "edwardian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/W._B._Yeats"
+    },
+    {
+      "id": "edwardian-set-1-m-36",
+      "question": "How is Hardy’s The Dynasts best described formally?",
+      "options": [
+        "A realistic novel in three volumes",
+        "A vast epic drama intended chiefly for reading",
+        "A one-act Irish peasant tragedy",
+        "A collection of short detective tales"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The work uses dramatic scenes and choric perspectives to survey the Napoleonic era.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-m-37",
+      "question": "What force repeatedly undercuts individual freedom in The Dynasts?",
+      "options": [
+        "An impersonal Immanent Will",
+        "A comic supernatural fairy",
+        "A benevolent classical Muse",
+        "A narrator who is also a detective"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Immanent Will suggests a largely unseeing force operating beyond human intentions.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-m-38",
+      "question": "Consider the following statements regarding Hardy as poet:\nI. He stopped publishing poetry in 1901.\nII. The Dynasts is concerned with Napoleon’s campaigns.\nIII. He turned mainly to verse after his final novels.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hardy continued publishing poetry through the twentieth century; the epic drama concerns Napoleonic conflict.",
+      "topic": "poetry",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "edwardian-set-1-m-39",
+      "question": "Given below are two statements:\nStatement I: Wessex Poems was issued before the Edwardian reign.\nStatement II: Hardy’s verse career began only after the First World War.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true, but Statement II is false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Wessex Poems appeared in 1898, and Hardy was writing verse long before 1914.",
+      "topic": "ground",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-m-40",
+      "question": "Arrange the following Hardy verse volumes in the correct chronological order:\n1. Wessex Poems\n2. Time’s Laughingstocks\n3. Satires of Circumstance\n4. The Dynasts Part I\nChoose the correct sequence:",
+      "options": [
+        "3, 2, 4, 1",
+        "1, 4, 2, 3",
+        "2, 3, 1, 4",
+        "4, 2, 1, 3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct order is Wessex Poems (1898), The Dynasts Part I (1904), Time’s Laughingstocks (1909), Satires of Circumstance (1914).",
+      "topic": "terms",
+      "topicId": "thomas-hardy",
+      "periodId": "edwardian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Thomas_Hardy"
+    },
+    {
+      "id": "edwardian-set-1-m-41",
+      "question": "Which son in Riders to the Sea leaves for the Galway fair despite warnings?",
+      "options": [
+        "Bartley",
+        "Michael",
+        "Christy Mahon",
+        "Shawn Keogh"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bartley goes to sell horses while his mother fears another death at sea.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://www.gutenberg.org/cache/epub/994/pg994-images.html"
+    },
+    {
+      "id": "edwardian-set-1-m-42",
+      "question": "Which missing son is identified through recovered clothing in Riders to the Sea?",
+      "options": [
+        "Bartley",
+        "Jimmy Farrell",
+        "James Tyrone",
+        "Michael"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The family receives clothing associated with Michael, bringing news of his death.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://www.gutenberg.org/cache/epub/994/pg994-images.html"
+    },
+    {
+      "id": "edwardian-set-1-m-43",
+      "question": "Consider the following statements regarding Synge’s dramatic catalogue:\nI. The Well of the Saints is a play by Synge.\nII. He lived until the middle of the twentieth century.\nIII. His book The Aran Islands appeared in 1907.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The play and book belong to Synge’s work, but he died in 1909, well before mid-century.",
+      "topic": "drama",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-m-44",
+      "question": "Given below are two statements:\nStatement I: His plays attempted to reproduce the language of the French royal court.\nStatement II: Synge drew dramatic speech from the Irish English he heard in the Aran Islands.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Statement I is false, but Statement II is true",
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 1,
+      "explanation": "His distinctive stage dialogue arose from observations of western Irish speech, not French court language.",
+      "topic": "terms",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-m-45",
+      "question": "Match List I (Synge plays and first performance dates) with List II (year):\nList I:\na. Riders to the Sea\nb. In the Shadow of the Glen\nc. The Playboy of the Western World\nd. The Well of the Saints\nList II:\n1. 1905\n2. 1903\n3. 1904\n4. 1907\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-4, d-1",
+        "a-1, b-4, c-2, d-3",
+        "a-4, b-2, c-1, d-3",
+        "a-1, b-3, c-2, d-4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct pairs are Riders to the Sea (1904), In the Shadow of the Glen (1903), The Playboy of the Western World (1907), The Well of the Saints (1905).",
+      "topic": "terms",
+      "topicId": "jm-synge",
+      "periodId": "edwardian",
+      "qtype": "match",
+      "src": "https://en.wikipedia.org/wiki/John_Millington_Synge"
+    },
+    {
+      "id": "edwardian-set-1-m-46",
+      "question": "Which Yeats play began the Abbey Theatre’s opening-night programme?",
+      "options": [
+        "The Shadow of the Glen",
+        "The Tinker’s Wedding",
+        "The Countess Cathleen",
+        "On Baile’s Strand"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Abbey’s first evening began with Yeats’s On Baile’s Strand in December 1904.",
+      "topic": "drama",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-m-47",
+      "question": "What central cultural goal motivated the early Abbey Theatre?",
+      "options": [
+        "Presenting only imported London musicals to the wealthiest Anglo-Irish audiences",
+        "Reviving French court ballet exclusively",
+        "Providing a stage for Irish life and new Irish writing",
+        "Replacing all spoken plays with silent film"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Its founders wanted a national theatre where Irish writers could dramatize their society and traditions.",
+      "topic": "drama",
+      "topicId": "the-irish-literary-revival",
+      "periodId": "edwardian",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-m-48",
+      "question": "Consider the following statements regarding the Abbey opening programme:\nI. The first night included a play by Yeats.\nII. Lady Gregory supplied a play for the same opening night.\nIII. All three inaugural plays were written by George Bernard Shaw.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yeats and Gregory provided the inaugural plays; Shaw did not write the three opening pieces.",
+      "topic": "drama",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-m-49",
+      "question": "Given below are two statements:\nStatement I: The Abbey became a permanent home for Irish national drama.\nStatement II: Its initial support came mainly from a state arts ministry founded in 1904.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true, but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is false, but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Private benefaction, particularly from Annie Horniman, enabled the theatre; it was not founded by a ministry.",
+      "topic": "ground",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    },
+    {
+      "id": "edwardian-set-1-m-50",
+      "question": "Arrange the following early Irish theatre milestones in the correct chronological order:\n1. The Irish National Theatre Society is founded\n2. The Irish Literary Theatre is founded\n3. The Playboy of the Western World causes riots\n4. The Abbey Theatre opens\nChoose the correct sequence:",
+      "options": [
+        "2, 4, 1, 3",
+        "1, 3, 2, 4",
+        "3, 1, 4, 2",
+        "2, 1, 4, 3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct order is The Irish Literary Theatre is founded (1899), The Irish National Theatre Society is founded (1903), The Abbey Theatre opens (1904), The Playboy of the Western World causes riots (1907).",
+      "topic": "terms",
+      "topicId": "the-abbey-theatre",
+      "periodId": "edwardian",
+      "qtype": "chrono",
+      "src": "https://en.wikipedia.org/wiki/Abbey_Theatre"
+    }
+  ]
+}

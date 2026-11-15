@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. Victorian Period Set 1 is prepared as a free, no-login set at easy and medium level. Romantic Period, Age of Sensibility, Augustan Age, Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
+_Last updated: 2026-11-15. Edwardian Period Set 1 is prepared as a free, no-login set at easy and medium level. Victorian Period, Romantic Period, Age of Sensibility, Augustan Age, Restoration and Neoclassical Set 1 have reached main. Earlier sections below record their status when written; see Git history for subsequent merges._
+
+## Edwardian Period Set 1 — free, easy and medium (2026-11-15)
+
+- The owner supplied `edwardian-set-1-easy.json` and `-medium.json` (50 questions each) for the existing "Across the whole age" slot, chose **free, no login**, and said all questions are verified. Facts and near-duplicates were not rechecked. Both files match the site plan and were copied unchanged into `assets/questions/`.
+- Strict structure validation passed with no errors. It gave four advisory warnings about possible clues in question wording; the supplied questions were left unchanged. Set 1 is live in `_data/mcqSpec.json` with easy and medium levels and no `access` key. Edwardian Period moved from `SOON_HUBS` to `LIVE_AGES`; the hub was added to `sitemap.njk`, the syllabus count and UGC NET skill zip were regenerated. Sets 2 to 4 remain Coming soon.
+- Eleventy built clean. The guest browser test passed at both levels: Start has no lock, each level loads its supplied first question, and a ten-question run opens a ten-question review. All 36,428 local links and assets resolved.
 
 ## Victorian Period Set 1 — free, easy and medium (2026-11-15)
 
