@@ -53,13 +53,12 @@
     'romantic-age',
     'victorian-age',
     'edwardian',
-    'georgian'
-  ];
-
-  var SOON_HUBS = [
+    'georgian',
     'modern',
     'postmodern'
   ];
+
+  var SOON_HUBS = [];
 
   /* How many questions each age holds, once it is live.
      Used for the progress bars. Leave an age out and the card

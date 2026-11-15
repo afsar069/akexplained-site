@@ -167,6 +167,15 @@
     var goButton = el('upButton');
     var doneCard = el('upDone');
     var doneReport = el('upDoneReport');
+    var doneTitle = el('upDoneTitle');
+    var verdictBox = el('upVerdict');
+    var copyBox = el('upCopy');
+    var copyText = el('upCopyText');
+    var copyBtn = el('upCopyBtn');
+    var copyNote = el('upCopyNote');
+    /* Registry ka plan (har English Literature set ke liye): levels, count, aur page ki haalat. */
+    var plan = {};
+    try { plan = JSON.parse(el('upPlan').textContent).sets || {}; } catch (e) { plan = {}; }
 
     var client = null;      // Supabase client, once we know the person is an admin
     var papers = [];        // one per chosen file: { name, body }
@@ -188,8 +197,23 @@
         prefix: o.getAttribute('data-prefix') || '',
         needsAge: o.getAttribute('data-needs-age') === 'yes',
         titleWord: o.getAttribute('data-title-word') || 'Set',
-        autoPage: o.getAttribute('data-auto') === 'yes'
+        autoPage: o.getAttribute('data-auto') === 'yes',
+        /* Self-serve series (rule 17): Live karte hi page par aa jata hai, bina rebuild.
+           min/max = jin numbers ke page pehle se bane hain; bahar ka number kabhi khul nahi sakta. */
+        selfServe: o.getAttribute('data-self-serve') === 'yes',
+        min: parseInt(o.getAttribute('data-min'), 10) || 0,
+        max: parseInt(o.getAttribute('data-max'), 10) || 0,
+        numberNote: o.getAttribute('data-number-note') || '',
+        pageBase: o.getAttribute('data-page-base') || '',
+        label: (o.textContent || '').trim()
       };
+    }
+    // Is this number one the series has a page for? (No limits on a destination = any number.)
+    function numberFits(dest, number) {
+      if (!dest || !number) return true;
+      if (dest.min && number < dest.min) return false;
+      if (dest.max && number > dest.max) return false;
+      return true;
     }
     function currentNumber() {
       var n = parseInt(numberInput.value, 10);
@@ -210,10 +234,13 @@
         slugPreview.textContent = 'Now type the number.';
       } else if (dest.needsAge && !age) {
         slugPreview.textContent = 'Now choose the age.';
+      } else if (!numberFits(dest, number)) {
+        slugPreview.textContent = 'This number cannot be used here. ' + dest.numberNote;
       } else {
         slugPreview.innerHTML = 'It will be saved as <strong>' + esc(slug) + '</strong>' +
-          (dest.autoPage ? ' — it will show on its page after the site is next built.'
-                         : ' — the questions go live in the database; its page is wired separately.');
+          (dest.selfServe ? ' — once it is Live it shows on its page at once. No rebuild is needed.'
+            : dest.autoPage ? ' — it will show on its page after the site is next built.'
+                         : ' — the questions go into the database. When you upload, this page checks that the set has a page on the site.');
       }
 
       if (dest && number && !titleTouched) {
@@ -350,6 +377,163 @@
       });
     });
 
+    /* --- the final check (owner, 2026-11-15) ---
+       Upload ke baad page khud dekhta hai ki paper sach me page par khulega ya nahi, aur jo kami hai
+       saaf shabdon me likhta hai. Agar kuch theek karna ho to ek "Copy for Claude" text deta hai. */
+    function pageUrlFor(dest, setId, number) {
+      if (plan[setId] && plan[setId].path) return plan[setId].path;
+      if (dest && dest.pageBase && number) return dest.pageBase + 'test-' + number + '/';
+      return '';
+    }
+    function getPage(url) {
+      return fetch(url, { cache: 'no-store' }).then(
+        function (r) { return { ok: r.ok, status: r.status }; },
+        function () { return { ok: null, status: 0 }; }
+      );
+    }
+    function cap(w) { return w ? w.charAt(0).toUpperCase() + w.slice(1) : w; }
+
+    function finalChecks(ctx) {
+      var items = [];
+      var dest = ctx.dest, setId = ctx.setId, saved = ctx.saved || [];
+      var p = plan[setId] || null;
+      var isLit = dest.kind === 'mcq-set';
+      var url = pageUrlFor(dest, setId, ctx.number);
+
+      return Promise.all([
+        client.from('paper_catalog').select('set_id, status, question_count, title').eq('set_id', setId).maybeSingle()
+          .then(function (r) { return r; }, function (e) { return { error: e }; }),
+        url ? getPage(url) : Promise.resolve(null),
+        url ? getPage(url + 'review/') : Promise.resolve(null)
+      ]).then(function (got) {
+        var cat = got[0], test = got[1], rev = got[2];
+
+        // 1. Is it in the public paper list?
+        if (cat.error) {
+          items.push({ k: 'warn', t: 'Could not read the paper list to check it: ' + (cat.error.message || 'unknown error') + '.' });
+        } else if (!cat.data) {
+          items.push({ k: 'no', t: 'It is not in the public paper list. The database should add it by itself, so this needs Claude.' });
+        } else if (cat.data.status === 'live') {
+          items.push({ k: 'ok', t: 'It is in the public paper list as Live (' + cat.data.question_count + ' questions).' });
+        } else {
+          items.push({ k: 'info', t: 'It is in the paper list as Draft, so students do not see it.' });
+        }
+
+        // 2. Levels and count against the registry plan (English Literature sets).
+        if (isLit) {
+          if (!p) {
+            items.push({ k: 'no', t: 'No page is planned for this set yet (' + setId + '). The questions are saved safely, but nobody can open this set until Claude adds the set to the registry. Send Claude the text below.' });
+          } else {
+            var have = saved.map(function (r) { return r.level; });
+            var missing = p.levels.filter(function (l) { return have.indexOf(l) < 0; });
+            var extra = have.filter(function (l) { return p.levels.indexOf(l) < 0; });
+            if (!missing.length && !extra.length) {
+              items.push({ k: 'ok', t: 'Levels match the plan: ' + p.levels.map(cap).join(' and ') + '.' });
+            }
+            if (missing.length) {
+              items.push({ k: 'warn', t: 'The plan for this set has ' + p.levels.map(cap).join(' and ') + ', but ' + missing.map(cap).join(' and ') + (missing.length > 1 ? ' are' : ' is') + ' not uploaded yet. A student who picks ' + missing.map(cap).join(' or ') + ' will see "This set is not open to you yet." Upload the missing file (same age, same set number), or ask Claude to take that level out of the plan.' });
+            }
+            if (extra.length) {
+              items.push({ k: 'warn', t: 'You uploaded ' + extra.map(cap).join(' and ') + ', which is not in the plan for this set. The page will not offer it until Claude adds it to the plan.' });
+            }
+            var badCount = saved.filter(function (r) {
+              var n = (r.body && r.body.questions) ? r.body.questions.length : 0;
+              return p.count && n !== p.count;
+            });
+            if (badCount.length) {
+              items.push({ k: 'warn', t: 'The plan says ' + p.count + ' questions at each level, but ' + badCount.map(function (r) { return cap(r.level) + ' has ' + r.body.questions.length; }).join(' and ') + '. The page text may be wrong until Claude updates the plan.' });
+            }
+            var revSet = {};
+            saved.forEach(function (r) { revSet[r.rev] = 1; });
+            if (Object.keys(revSet).length > 1) {
+              items.push({ k: 'warn', t: 'The levels of this set are saved at different revs (' + saved.map(function (r) { return r.level + ' rev ' + r.rev; }).join(', ') + '). It is tidier when they match. Tell Claude if this was not on purpose.' });
+            }
+            if (p.state === 'free') {
+              items.push({ k: 'warn', t: 'Set ' + p.n + ' of this age is already open to everyone as a free set. This login copy will not replace it on the page. Check the set number.' });
+            }
+            if (p.state === 'login' && p.rev && saved.length && saved[0].rev !== p.rev) {
+              items.push({ k: 'warn', t: 'The registry says rev ' + p.rev + ' for this set, but you saved rev ' + saved[0].rev + '. Tell Claude so the two match.' });
+            }
+          }
+        }
+
+        // 3. Does the page itself exist on the site?
+        if (url && (!isLit || p)) {
+          if (test && test.ok === true && rev && rev.ok === true) {
+            items.push({ k: 'ok', t: 'Its test page and review page are on the site (' + url + ').' });
+          } else if (test && test.ok === null) {
+            items.push({ k: 'warn', t: 'Could not check whether the page ' + url + ' is on the site (no network answer). Open it yourself to be sure.' });
+          } else {
+            var which = (test && test.ok === false ? 'test page' : '') + (test && test.ok === false && rev && rev.ok === false ? ' and ' : '') + (rev && rev.ok === false ? 'review page' : '');
+            items.push({ k: 'no', t: 'The ' + (which || 'page') + ' for this paper (' + url + ') is not on the site yet. If a new site build was only just started, wait a few minutes and check again by opening the link. If it is still missing, send Claude the text below.' });
+          }
+        }
+        return items;
+      });
+    }
+
+    function verdictFor(items, status) {
+      var no = items.filter(function (i) { return i.k === 'no'; }).length;
+      var warn = items.filter(function (i) { return i.k === 'warn'; }).length;
+      if (no) return { k: 'no', t: 'Saved, but students cannot open it yet. See what is marked below.' };
+      if (status === 'draft') {
+        return warn
+          ? { k: 'warn', t: 'Saved as a Draft. Check the points below before you make it Live.' }
+          : { k: 'ok', t: 'Saved as a Draft. Students cannot see it yet. Make it Live on the All papers page when you are ready.' };
+      }
+      if (warn) return { k: 'warn', t: 'It is Live, but check the points below.' };
+      return { k: 'ok', t: 'It is Live. Logged-in students can open it now. No rebuild is needed.' };
+    }
+
+    function claudeText(ctx, verdict, items) {
+      var tag = { ok: 'OK', warn: 'WARNING', no: 'PROBLEM', info: 'NOTE' };
+      var out = [];
+      out.push('Upload check from /admin/upload-paper/ (' + new Date().toISOString().slice(0, 10) + ')');
+      out.push('Paper: ' + ctx.setId + ' (' + (ctx.title || '') + ')');
+      out.push('Where: ' + (ctx.dest.label || ctx.dest.id));
+      out.push('Status chosen: ' + ctx.status);
+      if (ctx.saved && ctx.saved.length) {
+        out.push('Saved in the database: ' + ctx.saved.map(function (r) {
+          return r.level + ' (' + ((r.body && r.body.questions) ? r.body.questions.length : '?') + ' questions, rev ' + r.rev + ', ' + r.status + ')';
+        }).join('; '));
+      }
+      out.push('Result: ' + verdict.t);
+      out.push('');
+      items.forEach(function (i) { out.push('[' + (tag[i.k] || i.k) + '] ' + i.t); });
+      out.push('');
+      out.push('Please look into the warnings and problems above, find the cause and fix it. Do not add any questions of your own.');
+      return out.join('\n');
+    }
+
+    function showOutcome(ctx, verdict, items, heading) {
+      doneTitle.textContent = heading || 'Done';
+      verdictBox.className = 'upverdict is-' + verdict.k;
+      verdictBox.textContent = verdict.t;
+      doneReport.innerHTML = items.map(function (i) { return line(i.k, i.t); }).join('');
+      var needsHelp = items.some(function (i) { return i.k === 'no' || i.k === 'warn'; }) || verdict.k === 'no';
+      if (needsHelp) {
+        copyText.value = claudeText(ctx, verdict, items);
+        copyNote.textContent = '';
+        show(copyBox);
+      } else {
+        hide(copyBox);
+      }
+      show(doneCard);
+      doneCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    copyBtn && copyBtn.addEventListener('click', function () {
+      var text = copyText.value;
+      function done(ok) { copyNote.textContent = ok ? ' Copied. Now paste it to Claude.' : ' Could not copy by itself: select the text above and copy it.'; }
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { done(true); }, function () { copyText.select(); done(false); });
+          return;
+        }
+      } catch (e) {}
+      try { copyText.select(); done(document.execCommand('copy')); } catch (e) { done(false); }
+    });
+
     /* --- upload --- */
     goButton && goButton.addEventListener('click', function () {
       clearFail(goError);
@@ -364,6 +548,7 @@
       if (!dest) { fail(goError, 'Choose where this paper goes (the exam / series).'); return; }
       if (dest.needsAge && !age) { fail(goError, 'Choose the age for this MCQ set.'); return; }
       if (!number) { fail(goError, 'Type the test or set number (a whole number, 1 or more).'); return; }
+      if (!numberFits(dest, number)) { fail(goError, 'This number cannot be used here. ' + dest.numberNote); return; }
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
 
       var setId = slugFor(dest, number, age);
@@ -386,12 +571,17 @@
       goButton.textContent = 'Checking…';
 
       // Is this id already taken? If so, the file's rev must be higher to replace it.
+      // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
+      // use the same rev. The database rule is the same: it only refuses a rev that goes down.
       client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
+        var chosenLevels = rows.map(function (r) { return r.level; });
         var existing = (!res.error && res.data) ? res.data : [];
-        var highest = existing.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-        if (existing.length && !(newRev > highest)) {
+        var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
+        var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
+        if (same.length && !(newRev > highest)) {
+          var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
-          fail(goError, setId + ' already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
+          fail(goError, setId + ' (' + lv + ') already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
           return;
         }
 
@@ -413,36 +603,39 @@
                 return { level: r.level, sent: f[0], got: f[1], count: (r.body.questions || []).length, back: back };
               });
             });
-            return Promise.all(jobs);
+            return Promise.all(jobs).then(function (results) { return { results: results, saved: saved }; });
           })
-          .then(function (results) {
+          .then(function (out) {
+            var results = out.results;
+            var ctx = { dest: dest, setId: setId, number: number, title: title, status: status, saved: out.saved };
             var items = [], allMatch = true;
             results.forEach(function (r) {
               if (r.back && r.sent === r.got) {
-                items.push(line('ok', r.level + ': ' + r.count + ' questions saved, rev ' + r.back.rev + ', ' + r.back.status + '. Code ' + r.sent + '.'));
+                items.push({ k: 'ok', t: r.level + ': ' + r.count + ' questions saved, rev ' + r.back.rev + ', ' + r.back.status + '. Code ' + r.sent + '.' });
               } else {
                 allMatch = false;
-                items.push(line('no', r.level + ': what the database holds does not match the file. Upload it again.'));
+                items.push({ k: 'no', t: r.level + ': what the database holds does not match the file. Upload it again.' });
               }
             });
-            if (allMatch) {
-              items.push(line('info', 'Saved as ' + setId + '.'));
-              if (status === 'draft') {
-                items.push(line('info', 'It is a Draft, so students cannot see it yet. Upload it again as Live when its page is ready, or make it live from the All papers page.'));
-              } else if (dest.autoPage) {
-                items.push(line('info', 'It is Live. It will show on its page after the site is next built — tell Claude to publish it, or it appears on the next build.'));
-              } else {
-                items.push(line('info', 'It is Live in the database. Its page still needs wiring — tell Claude to put it on the site.'));
-              }
-            }
-            doneReport.innerHTML = items.join('');
-            show(doneCard);
-            goButton.textContent = 'Upload this paper';
-            goButton.disabled = false;
-            doneCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            goButton.textContent = 'Checking the site…';
+            var next = allMatch
+              ? finalChecks(ctx).then(function (more) { return items.concat([{ k: 'info', t: 'Saved as ' + setId + '.' }], more); })
+              : Promise.resolve(items);
+            return next.then(function (all) {
+              var verdict = allMatch ? verdictFor(all, status)
+                : { k: 'no', t: 'It was not saved correctly. Upload it again.' };
+              showOutcome(ctx, verdict, all);
+              goButton.textContent = 'Upload this paper';
+              goButton.disabled = false;
+            });
           })
           .catch(function (e) {
-            fail(goError, 'It was not uploaded. The database said: ' + (e && e.message ? e.message : 'unknown error'));
+            var msg = 'It was not uploaded. The database said: ' + (e && e.message ? e.message : 'unknown error');
+            fail(goError, msg);
+            try {
+              showOutcome({ dest: dest, setId: setId, number: number, title: title, status: status, saved: [] },
+                { k: 'no', t: 'It was not uploaded.' }, [{ k: 'no', t: msg }], 'Not uploaded');
+            } catch (e2) {}
             goButton.textContent = 'Upload this paper';
             goButton.disabled = false;
           });

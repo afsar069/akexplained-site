@@ -1,0 +1,874 @@
+{
+  "setId": "postmodern-set-1",
+  "rev": 1,
+  "age": "postmodern",
+  "ageName": "Postmodern Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/contemporary-age/",
+  "notesTitle": "Contemporary — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "novel": "The novel",
+    "drama": "Drama",
+    "poetry": "Poetry",
+    "postcolonial": "Postcolonial writing",
+    "terms": "Terms and criticism"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Core writers, major works, characters, literary movements and essential concepts.",
+  "questions": [
+    {
+      "id": "postmodern-set-1-e-01",
+      "question": "Who wrote the political fable Animal Farm?",
+      "options": [
+        "Graham Greene",
+        "William Golding",
+        "George Orwell",
+        "Aldous Huxley"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Orwell used a farmyard revolution to satirize the betrayal of revolutionary ideals.",
+      "topic": "novel",
+      "topicId": "george-orwell",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-02",
+      "question": "Which novel features the surveillance figure Big Brother?",
+      "options": [
+        "Nineteen Eighty-Four",
+        "The Man in the High Castle",
+        "Brave New World",
+        "Lord of the Flies"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Big Brother personifies the totalitarian surveillance state in Orwell’s dystopian novel.",
+      "topic": "novel",
+      "topicId": "nineteen-eighty-four",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-03",
+      "question": "Which animals become the ruling class after the revolt in Animal Farm?",
+      "options": [
+        "The sheep",
+        "The chickens",
+        "The horses",
+        "The pigs"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The pigs take control after the animals overthrow the farmer and increasingly imitate their former oppressors.",
+      "topic": "ground",
+      "topicId": "animal-farm",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-e-04",
+      "question": "In what year was Animal Farm first published?",
+      "options": [
+        "1945",
+        "1932",
+        "1949",
+        "1954"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Animal Farm appeared in August 1945, just as Europe was emerging from the Second World War.",
+      "topic": "novel",
+      "topicId": "animal-farm",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-05",
+      "question": "What term describes a fictional society marked by oppressive control and loss of freedom?",
+      "options": [
+        "Utopian romance",
+        "Pastoral idyll",
+        "Dystopia",
+        "Comedy of manners"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A dystopia portrays a deeply damaged society, often under authoritarian or technological control.",
+      "topic": "terms",
+      "topicId": "dystopian-literature",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-06",
+      "question": "Who is the author of Lord of the Flies?",
+      "options": [
+        "William Golding",
+        "Kingsley Amis",
+        "John Fowles",
+        "George Orwell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Golding published the novel in 1954 and later received the Nobel Prize in Literature.",
+      "topic": "novel",
+      "topicId": "william-golding",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-07",
+      "question": "What group is stranded in Lord of the Flies?",
+      "options": [
+        "University teachers",
+        "Army officers",
+        "Schoolboys",
+        "Shipwrecked sailors"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The story follows schoolboys whose attempt at self-government collapses on an island.",
+      "topic": "novel",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-08",
+      "question": "What kind of location forms the main setting of Lord of the Flies?",
+      "options": [
+        "An English country estate",
+        "A London boarding school",
+        "A seaside holiday resort",
+        "An isolated island"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The boys find themselves cut off from adult authority on an uninhabited island.",
+      "topic": "ground",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-e-09",
+      "question": "Which object is used to call assemblies in Lord of the Flies?",
+      "options": [
+        "A wooden whistle",
+        "A hunting horn",
+        "A bronze bell",
+        "A conch shell"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Ralph uses the conch as a signal, and it becomes associated with orderly discussion.",
+      "topic": "novel",
+      "topicId": "lord-of-the-flies",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Lord_of_the_Flies"
+    },
+    {
+      "id": "postmodern-set-1-e-10",
+      "question": "Which Nobel Prize was awarded to William Golding in 1983?",
+      "options": [
+        "Literature",
+        "Physiology or Medicine",
+        "Chemistry",
+        "Peace"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Golding received the 1983 Nobel Prize in Literature for his fiction.",
+      "topic": "novel",
+      "topicId": "william-golding",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#prose"
+    },
+    {
+      "id": "postmodern-set-1-e-11",
+      "question": "Which Beckett play features two companions beside a road without a resolution?",
+      "options": [
+        "The Caretaker",
+        "Waiting for Godot",
+        "The Birthday Party",
+        "Look Back in Anger"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The two principal figures remain by a road while the person they await never appears.",
+      "topic": "drama",
+      "topicId": "waiting-for-godot",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-12",
+      "question": "Who wrote Waiting for Godot?",
+      "options": [
+        "Tom Stoppard",
+        "Harold Pinter",
+        "Samuel Beckett",
+        "John Osborne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Beckett wrote the play first in French and later prepared an English version.",
+      "topic": "drama",
+      "topicId": "samuel-beckett",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-13",
+      "question": "What theatrical label is closely associated with Beckett?",
+      "options": [
+        "Kitchen-sink realism",
+        "Theatre of the Absurd",
+        "Restoration tragedy",
+        "Comedy of manners"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Absurdist drama depicts repetitive action and uncertain purpose rather than conventional resolution.",
+      "topic": "drama",
+      "topicId": "theatre-of-the-absurd",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-14",
+      "question": "In which language was Waiting for Godot originally written?",
+      "options": [
+        "English",
+        "French",
+        "Italian",
+        "German"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Beckett first wrote the play in French, the language of its 1953 Paris premiere.",
+      "topic": "ground",
+      "topicId": "waiting-for-godot",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-e-15",
+      "question": "In which year did Beckett win the Nobel Prize in Literature?",
+      "options": [
+        "1969",
+        "1975",
+        "1983",
+        "1953"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Beckett was awarded the Nobel Prize in Literature in 1969.",
+      "topic": "drama",
+      "topicId": "samuel-beckett",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-16",
+      "question": "Who wrote The Birthday Party?",
+      "options": [
+        "John Osborne",
+        "Samuel Beckett",
+        "Arnold Wesker",
+        "Harold Pinter"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pinter’s 1958 play turns an apparently ordinary lodging house into a scene of menace.",
+      "topic": "drama",
+      "topicId": "harold-pinter",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-17",
+      "question": "Which phrase is often used for the threatening tone of early Pinter plays?",
+      "options": [
+        "Sentimental comedy",
+        "Comedy of humours",
+        "Comedy of menace",
+        "Heroic tragedy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ordinary exchanges and pauses conceal danger in what is called a comedy of menace.",
+      "topic": "drama",
+      "topicId": "comedy-of-menace",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-18",
+      "question": "Which early Pinter play appeared in 1958?",
+      "options": [
+        "The Homecoming",
+        "Betrayal",
+        "The Birthday Party",
+        "Old Times"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Birthday Party was first staged in 1958 and was initially poorly received.",
+      "topic": "drama",
+      "topicId": "the-birthday-party",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-19",
+      "question": "In which year did Harold Pinter receive the Nobel Prize in Literature?",
+      "options": [
+        "1983",
+        "1995",
+        "1969",
+        "2005"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pinter received the Nobel Prize in Literature in 2005.",
+      "topic": "ground",
+      "topicId": "harold-pinter",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-e-20",
+      "question": "Which play by Pinter has a title referring to a domestic helper?",
+      "options": [
+        "The Birthday Party",
+        "The Homecoming",
+        "The Caretaker",
+        "The Dumb Waiter"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Caretaker is an early play exploring uncertainty, power and unstable relationships.",
+      "topic": "drama",
+      "topicId": "the-caretaker",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-21",
+      "question": "Who wrote the collection The Whitsun Weddings?",
+      "options": [
+        "Dylan Thomas",
+        "Philip Larkin",
+        "Ted Hughes",
+        "Seamus Heaney"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Larkin published The Whitsun Weddings in 1964.",
+      "topic": "poetry",
+      "topicId": "philip-larkin",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-22",
+      "question": "Which group is associated with restrained, plain-speaking poetry in 1950s Britain?",
+      "options": [
+        "The Pre-Raphaelites",
+        "The Movement",
+        "The Georgian Poets",
+        "The Imagists"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Movement valued ordinary subjects, clear argument and controlled poetic form.",
+      "topic": "poetry",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-23",
+      "question": "Which Larkin poem reflects on an unused place of worship?",
+      "options": [
+        "The Second Coming",
+        "Church Going",
+        "Hawk Roosting",
+        "Digging"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The speaker of Church Going explores a place of worship without sharing its traditional faith.",
+      "topic": "poetry",
+      "topicId": "church-going",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-24",
+      "question": "Which profession did Philip Larkin pursue for much of his working life?",
+      "options": [
+        "Naval officer",
+        "School inspector",
+        "Physician",
+        "Librarian"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Larkin combined his poetry with a long career as a university librarian.",
+      "topic": "poetry",
+      "topicId": "philip-larkin",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-25",
+      "question": "Which collection by Larkin appeared in 1974?",
+      "options": [
+        "The Hawk in the Rain",
+        "High Windows",
+        "Crow",
+        "North"
+      ],
+      "correct_option_id": 1,
+      "explanation": "High Windows was published in 1974, after his earlier collection The Whitsun Weddings.",
+      "topic": "terms",
+      "topicId": "philip-larkin",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-26",
+      "question": "Who wrote the debut poetry collection The Hawk in the Rain?",
+      "options": [
+        "Seamus Heaney",
+        "Philip Larkin",
+        "Ted Hughes",
+        "Robert Conquest"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hughes’s first collection appeared in 1957 and foregrounded the energies of animal life.",
+      "topic": "poetry",
+      "topicId": "ted-hughes",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-27",
+      "question": "Which recurring subject strongly characterizes Ted Hughes’s early poetry?",
+      "options": [
+        "Courtly etiquette",
+        "Wild animals",
+        "Pastoral shepherdesses",
+        "Urban bureaucracy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hughes frequently uses animals and their force to investigate violence and nature.",
+      "topic": "poetry",
+      "topicId": "ted-hughes",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-28",
+      "question": "Which poem presents a hawk speaking in a voice of domination?",
+      "options": [
+        "Church Going",
+        "The Whitsun Weddings",
+        "Digging",
+        "Hawk Roosting"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hughes allows the hawk to express a chilling sense of effortless power.",
+      "topic": "poetry",
+      "topicId": "hawk-roosting",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-29",
+      "question": "Which Ted Hughes sequence takes its title from a black bird?",
+      "options": [
+        "The Tower",
+        "Crow",
+        "High Windows",
+        "North"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Crow is a major sequence that uses an often savage bird figure to explore myth and violence.",
+      "topic": "poetry",
+      "topicId": "crow",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-30",
+      "question": "Which American poet was married to Ted Hughes?",
+      "options": [
+        "Anne Sexton",
+        "Elizabeth Jennings",
+        "Adrienne Rich",
+        "Sylvia Plath"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Hughes and Plath were married, and both became influential twentieth-century poets.",
+      "topic": "terms",
+      "topicId": "sylvia-plath",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-31",
+      "question": "Who wrote Death of a Naturalist?",
+      "options": [
+        "Ted Hughes",
+        "Seamus Heaney",
+        "Philip Larkin",
+        "Dylan Thomas"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Heaney’s first major collection, Death of a Naturalist, appeared in 1966.",
+      "topic": "poetry",
+      "topicId": "seamus-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-32",
+      "question": "In which country was Seamus Heaney born?",
+      "options": [
+        "Northern Ireland",
+        "Wales",
+        "England",
+        "Scotland"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Heaney grew up in County Derry in Northern Ireland and often wrote of rural life.",
+      "topic": "poetry",
+      "topicId": "seamus-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-33",
+      "question": "Which collection by Heaney uses peat-bog discoveries to reflect on violence?",
+      "options": [
+        "High Windows",
+        "Ariel",
+        "Crow",
+        "North"
+      ],
+      "correct_option_id": 3,
+      "explanation": "North links archaeological bog bodies with the history of conflict in Ireland.",
+      "topic": "poetry",
+      "topicId": "north-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-34",
+      "question": "Which poem connects a poet’s pen to family traditions of manual work?",
+      "options": [
+        "Church Going",
+        "Hawk Roosting",
+        "The Whitsun Weddings",
+        "Digging"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Heaney treats writing as his own means of continuing the careful work of his father and grandfather.",
+      "topic": "poetry",
+      "topicId": "digging",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-35",
+      "question": "Which Irish poet received the Nobel Prize in Literature in 1995?",
+      "options": [
+        "Ted Hughes",
+        "Dylan Thomas",
+        "Philip Larkin",
+        "Seamus Heaney"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Heaney received the Nobel Prize in Literature in 1995.",
+      "topic": "terms",
+      "topicId": "seamus-heaney",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-36",
+      "question": "Who wrote Midnight’s Children?",
+      "options": [
+        "Salman Rushdie",
+        "V. S. Naipaul",
+        "Amitav Ghosh",
+        "Chinua Achebe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Rushdie’s novel connects an individual life with the history of independent India.",
+      "topic": "postcolonial",
+      "topicId": "salman-rushdie",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-37",
+      "question": "In which year was Midnight’s Children published?",
+      "options": [
+        "1975",
+        "1958",
+        "1997",
+        "1981"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Midnight’s Children was published in 1981 and won that year’s Booker Prize.",
+      "topic": "postcolonial",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-38",
+      "question": "Which country’s independence is central to Midnight’s Children?",
+      "options": [
+        "India",
+        "Ireland",
+        "South Africa",
+        "Nigeria"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Its protagonist is born at the moment of India’s independence in 1947.",
+      "topic": "postcolonial",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-39",
+      "question": "Which narrative mode combines ordinary history with extraordinary events in Midnight’s Children?",
+      "options": [
+        "Magic realism",
+        "Documentary realism",
+        "Sentimental allegory",
+        "Pure naturalism"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Magic realism allows supernatural incidents to exist within an otherwise historical setting.",
+      "topic": "postcolonial",
+      "topicId": "magic-realism",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-40",
+      "question": "Who is the narrator-protagonist of Midnight’s Children?",
+      "options": [
+        "Winston Smith",
+        "Saleem Sinai",
+        "Okonkwo",
+        "Leopold Bloom"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Saleem Sinai recounts his life in parallel with the history of modern India.",
+      "topic": "terms",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-41",
+      "question": "Who wrote Things Fall Apart?",
+      "options": [
+        "Ngugi wa Thiong’o",
+        "Chinua Achebe",
+        "Salman Rushdie",
+        "Wole Soyinka"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Achebe’s 1958 novel explores Igbo society and the upheaval of colonial encounter.",
+      "topic": "postcolonial",
+      "topicId": "chinua-achebe",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-42",
+      "question": "Which people’s culture is central to Things Fall Apart?",
+      "options": [
+        "The Zulu",
+        "The Igbo",
+        "The Maasai",
+        "The Yoruba"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The novel depicts an Igbo community before and during the arrival of colonial forces.",
+      "topic": "postcolonial",
+      "topicId": "things-fall-apart",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-43",
+      "question": "In which year was Things Fall Apart published?",
+      "options": [
+        "1966",
+        "1981",
+        "1958",
+        "1945"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Things Fall Apart appeared in 1958, helping to transform the English-language novel in Africa.",
+      "topic": "postcolonial",
+      "topicId": "things-fall-apart",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-44",
+      "question": "Which fictional village is central to Things Fall Apart?",
+      "options": [
+        "Umuofia",
+        "Maycomb",
+        "Malgudi",
+        "Macondo"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Much of the novel takes place in the Igbo village of Umuofia.",
+      "topic": "postcolonial",
+      "topicId": "things-fall-apart",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-45",
+      "question": "What is the nationality of the novelist Chinua Achebe?",
+      "options": [
+        "Ghanaian",
+        "Irish",
+        "Nigerian",
+        "Indian"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Achebe was a Nigerian novelist whose fiction examines the history and languages of his society.",
+      "topic": "terms",
+      "topicId": "chinua-achebe",
+      "periodId": "postmodern",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/contemporary-age/#key-terms"
+    },
+    {
+      "id": "postmodern-set-1-e-46",
+      "question": "Given below are two statements:\nStatement I: Animal Farm was published in 1945.\nStatement II: Orwell wrote the novel Lord of the Flies.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Orwell wrote Animal Farm, whereas Lord of the Flies is William Golding’s novel.",
+      "topic": "ground",
+      "topicId": "george-orwell",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#literature-in-this-age"
+    },
+    {
+      "id": "postmodern-set-1-e-47",
+      "question": "Given below are two statements:\nStatement I: Waiting for Godot was first performed in Paris.\nStatement II: The title character Godot arrives on stage.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are false",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The play premiered in Paris in 1953, but Godot never appears.",
+      "topic": "drama",
+      "topicId": "samuel-beckett",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#drama"
+    },
+    {
+      "id": "postmodern-set-1-e-48",
+      "question": "Given below are two statements:\nStatement I: Philip Larkin is associated with the Movement.\nStatement II: The Movement preferred clear diction and ordinary subjects.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is false but Statement II is true",
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Larkin was a major Movement poet, and its writers generally favoured clarity and everyday experience.",
+      "topic": "poetry",
+      "topicId": "the-movement",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#poetry"
+    },
+    {
+      "id": "postmodern-set-1-e-49",
+      "question": "Given below are two statements:\nStatement I: Midnight’s Children centres on the moment of Indian independence.\nStatement II: Its protagonist Saleem Sinai is born on 15 August 1947.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Both Statement I and Statement II are true",
+        "Both Statement I and Statement II are false",
+        "Statement I is true but Statement II is false",
+        "Statement I is false but Statement II is true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Saleem’s birth at midnight links his personal story with the independence of India.",
+      "topic": "postcolonial",
+      "topicId": "midnights-children",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    },
+    {
+      "id": "postmodern-set-1-e-50",
+      "question": "Given below are two statements:\nStatement I: Chinua Achebe was a Nigerian novelist.\nStatement II: Things Fall Apart is primarily set in nineteenth-century London.\nIn light of the above statements, choose the correct answer:",
+      "options": [
+        "Statement I is true but Statement II is false",
+        "Both Statement I and Statement II are false",
+        "Statement I is false but Statement II is true",
+        "Both Statement I and Statement II are true"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Achebe depicts Igbo life and colonial disruption, not London society.",
+      "topic": "postcolonial",
+      "topicId": "chinua-achebe",
+      "periodId": "postmodern",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/contemporary-age/#writers-from-outside-britain"
+    }
+  ]
+}

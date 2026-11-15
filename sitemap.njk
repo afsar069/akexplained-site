@@ -26,11 +26,9 @@ eleventyExcludeFromCollections: true
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-3/</loc><priority>0.6</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-4/</loc><priority>0.6</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-5/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-6/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-7/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-8/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-9/</loc><priority>0.6</priority></url>
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-10/</loc><priority>0.6</priority></url>
+{%- for mock in pgtMockTestsLogin %}{% if mock.live %}
+  <url><loc>https://akexplained.com{{ mock.url }}</loc><priority>0.6</priority></url>
+{%- endif %}{% endfor %}
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/study-guide/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/state-psc/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/state-psc/up-assistant-professor/</loc><priority>0.7</priority></url>
@@ -94,6 +92,8 @@ eleventyExcludeFromCollections: true
   <url><loc>https://akexplained.com/quizzes/mcq/victorian-age/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/quizzes/mcq/edwardian/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/quizzes/mcq/georgian/</loc><priority>0.7</priority></url>
+  <url><loc>https://akexplained.com/quizzes/mcq/modern/</loc><priority>0.7</priority></url>
+  <url><loc>https://akexplained.com/quizzes/mcq/postmodern/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/quizzes/pyq/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/video-lessons/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/publish-with-us/</loc><priority>0.7</priority></url>

@@ -1,0 +1,14 @@
+---
+pagination:
+  data: pgtMockTestsLogin
+  size: 1
+  alias: mock
+permalink: "/exams/pgt/up-pgt/mock-tests/test-{{ mock.number }}/review/index.html"
+mockLogin: true
+examReview: true
+eleventyComputed:
+  mockNumber: "{{ mock.number }}"
+  mockQuestions: "{{ mock.questionCount or '' }}"
+  mockLiveAtBuild: "{{ 'yes' if mock.live else '' }}"
+---
+{% extends "up-pgt-cbt.njk" %}

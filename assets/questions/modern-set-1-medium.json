@@ -1,0 +1,874 @@
+{
+  "setId": "modern-set-1",
+  "rev": 1,
+  "age": "modern",
+  "ageName": "Modern Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "poetry": "War poets, Yeats and Eliot",
+    "novel": "The novel",
+    "thirties": "The 1930s and 1940s",
+    "drama": "Drama and criticism",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "medium",
+  "levelName": "Medium",
+  "levelNote": "Analytical questions on modernist techniques, chronology, criticism and writer-work connections.",
+  "questions": [
+    {
+      "id": "modern-set-1-m-01",
+      "question": "At which military hospital did Sassoon meet and encourage Wilfred Owen?",
+      "options": [
+        "Chelsea Royal Hospital",
+        "Craiglockhart War Hospital",
+        "Charing Cross Hospital",
+        "Netley Military Hospital"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sassoon met Owen during his wartime treatment at Craiglockhart near Edinburgh.",
+      "topic": "poetry",
+      "topicId": "siegfried-sassoon",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-02",
+      "question": "Which uprising does Yeats commemorate in his well-known poem about Ireland in 1916?",
+      "options": [
+        "The Boer War",
+        "The Dublin Easter Rising",
+        "The Irish Famine",
+        "The Battle of the Somme"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem responds to the Easter Rising and examines political sacrifice and transformation.",
+      "topic": "ground",
+      "topicId": "easter-1916",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-03",
+      "question": "Which critical term describes objects and situations that evoke a particular emotion in a work?",
+      "options": [
+        "Pathetic fallacy",
+        "Organic unity",
+        "Objective correlative",
+        "Negative capability"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Eliot proposed the objective correlative as an external pattern capable of expressing emotion.",
+      "topic": "poetry",
+      "topicId": "objective-correlative",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-04",
+      "question": "What term did Joyce use for a sudden, revealing moment of understanding in ordinary experience?",
+      "options": [
+        "Defamiliarization",
+        "Anagnorisis",
+        "Catharsis",
+        "Epiphany"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An epiphany discloses an unexpected significance in an everyday action or moment.",
+      "topic": "novel",
+      "topicId": "epiphany",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-05",
+      "question": "Which essay by Woolf urges writers to record the mind’s flow of fleeting impressions?",
+      "options": [
+        "The Common Reader",
+        "Modern Fiction",
+        "The Sacred Wood",
+        "Tradition and the Individual Talent"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Modern Fiction challenges conventionally materialist narrative and calls for attention to consciousness.",
+      "topic": "novel",
+      "topicId": "modern-fiction-essay",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-06",
+      "question": "Which English industrial region is closely linked to Lawrence’s family background and his early fiction?",
+      "options": [
+        "The Cornish coast",
+        "The Yorkshire Dales",
+        "Nottinghamshire coal country",
+        "The Kentish Weald"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Lawrence grew up near Nottingham’s coalfields, which helped shape his early portrayals of working life.",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-07",
+      "question": "Which publishing house issued Auden’s first major collection, Poems, in 1930?",
+      "options": [
+        "The Hogarth Press",
+        "Macmillan and Co.",
+        "Chatto and Windus",
+        "Faber and Faber"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Auden’s Poems was published by Faber and Faber, where Eliot played an editorial role.",
+      "topic": "ground",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-08",
+      "question": "What genre best describes the use of talking animals to represent struggles over power in Animal Farm?",
+      "options": [
+        "Political allegory",
+        "Pastoral elegy",
+        "Gothic romance",
+        "Mock-heroic epic"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Animal Farm uses animal characters and a fictional revolution to comment on political power.",
+      "topic": "ground",
+      "topicId": "animal-farm",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-09",
+      "question": "What is the name of the murderous teenage gang leader in Brighton Rock?",
+      "options": [
+        "Scobie",
+        "Maurice Bendrix",
+        "Arthur Rowe",
+        "Pinkie Brown"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pinkie Brown is the violent central character whose moral anxiety shapes Brighton Rock.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-m-10",
+      "question": "Who teaches Eliza Doolittle phonetics in Shaw’s Pygmalion?",
+      "options": [
+        "Henry Higgins",
+        "Andrew Undershaft",
+        "Captain Shotover",
+        "John Tanner"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Professor Higgins undertakes to change Eliza’s social presentation through spoken English.",
+      "topic": "ground",
+      "topicId": "pygmalion",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-m-11",
+      "question": "What identifying details did Richards withhold from students in his reading experiments?",
+      "options": [
+        "Authors and dates",
+        "Every word in the final stanza",
+        "Line divisions and stanza breaks",
+        "Poem titles and all punctuation"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Richards supplied poems without the author or date to observe readers’ unaided interpretations.",
+      "topic": "drama",
+      "topicId": "practical-criticism",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-12",
+      "question": "How long before the Armistice was Wilfred Owen killed in France?",
+      "options": [
+        "About one year",
+        "About two years",
+        "About six months",
+        "About one week"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Owen died on 4 November 1918, only seven days before the Armistice.",
+      "topic": "ground",
+      "topicId": "wilfred-owen",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-13",
+      "question": "In which Yeats poem does the speaker seek an enduring artistic form beyond the ageing body?",
+      "options": [
+        "The Stolen Child",
+        "The Lake Isle of Innisfree",
+        "Sailing to Byzantium",
+        "September 1913"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sailing to Byzantium contrasts bodily decay with an imagined permanence through art.",
+      "topic": "poetry",
+      "topicId": "sailing-to-byzantium",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-14",
+      "question": "Which essay examines how a new writer’s achievement changes our understanding of earlier works?",
+      "options": [
+        "The Decay of Lying",
+        "The Study of Poetry",
+        "The Function of Criticism",
+        "Tradition and the Individual Talent"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The essay argues that individual poets work within a continuing order of earlier literature.",
+      "topic": "terms",
+      "topicId": "tradition-and-the-individual-talent",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-15",
+      "question": "Which ancient epic provides the principal structural parallel for Ulysses?",
+      "options": [
+        "The Odyssey",
+        "Paradise Lost",
+        "The Aeneid",
+        "The Iliad"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Joyce organizes the modern Dublin story through parallels with the adventures in Homer’s Odyssey.",
+      "topic": "terms",
+      "topicId": "ulysses-joyce",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-16",
+      "question": "Which shell-shocked veteran provides a counterpoint to Clarissa in Mrs Dalloway?",
+      "options": [
+        "Paul Morel",
+        "Stephen Dedalus",
+        "Charles Tansley",
+        "Septimus Warren Smith"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Septimus’s trauma offers a darker perspective on the same London day as Clarissa’s party.",
+      "topic": "terms",
+      "topicId": "mrs-dalloway",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-17",
+      "question": "Which conflict is especially central to Lawrence’s fiction in Women in Love?",
+      "options": [
+        "Instinct and intellectual control",
+        "Monastic vows and knighthood",
+        "Royal succession and divine right",
+        "Colonial trade and naval warfare"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The novel explores the tension between intense personal desires and social or rational constraints.",
+      "topic": "novel",
+      "topicId": "women-in-love",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-18",
+      "question": "Which writer collaborated with Auden on the stage play The Ascent of F6?",
+      "options": [
+        "Stephen Spender",
+        "Louis MacNeice",
+        "C. Day-Lewis",
+        "Christopher Isherwood"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Auden and Isherwood collaborated on several theatrical works, including The Ascent of F6.",
+      "topic": "thirties",
+      "topicId": "christopher-isherwood",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "modern-set-1-m-19",
+      "question": "Which work records Orwell’s experiences of poverty in two European capitals?",
+      "options": [
+        "Coming Up for Air",
+        "Homage to Catalonia",
+        "Down and Out in Paris and London",
+        "The Road to Wigan Pier"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The book draws on his time among low-paid workers and the destitute in the two cities.",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-20",
+      "question": "Which 1936 novel did Greene classify among his suspense entertainments?",
+      "options": [
+        "Our Man in Havana",
+        "The Quiet American",
+        "A Gun for Sale",
+        "The Heart of the Matter"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A Gun for Sale is one of Greene’s earlier thriller-like entertainments published in 1936.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-m-21",
+      "question": "Which historical figure’s religious visions and prosecution are dramatized in Saint Joan?",
+      "options": [
+        "Mary Queen of Scots",
+        "Catherine of Aragon",
+        "Elizabeth I",
+        "Joan of Arc"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shaw stages Joan’s convictions and the institutions that prosecuted her.",
+      "topic": "drama",
+      "topicId": "saint-joan",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-m-22",
+      "question": "What is the main subject of Empson’s Seven Types of Ambiguity?",
+      "options": [
+        "Classical rules of tragedy",
+        "The history of heroic drama",
+        "Multiple meanings in poetic language",
+        "Printing errors in old manuscripts"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Empson shows how verbal patterns can support several interacting interpretations.",
+      "topic": "terms",
+      "topicId": "seven-types-of-ambiguity",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-23",
+      "question": "Which war poet came from the East End of London and wrote Break of Day in the Trenches?",
+      "options": [
+        "Rupert Brooke",
+        "Isaac Rosenberg",
+        "Charles Sorley",
+        "Edward Thomas"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Rosenberg was raised in London’s East End and wrote vivid poems about trench warfare.",
+      "topic": "poetry",
+      "topicId": "isaac-rosenberg",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-24",
+      "question": "Consider the following statements about Yeats’s artistic career:\nI. His early writing drew on Irish legend.\nII. A Vision explains a private symbolic system.\nIII. His poetry never responded to Irish politics.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and III only",
+        "I and II only",
+        "II and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Irish mythology shaped his early verse, and A Vision sets out symbols. His later poems also confront public events.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-25",
+      "question": "What name did Eliot give to an alleged historical separation of thought and feeling in English poetry?",
+      "options": [
+        "Willing suspension of disbelief",
+        "Dissociation of sensibility",
+        "The intentional fallacy",
+        "Poetic justice"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Eliot used the phrase when discussing later poetry in contrast with the metaphysicals.",
+      "topic": "poetry",
+      "topicId": "dissociation-of-sensibility",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-26",
+      "question": "Consider the following statements about Joyce’s narrative practice:\nI. Ulysses employs parallels with Homer.\nII. Dubliners often moves toward epiphanic moments.\nIII. Finnegans Wake follows a conventional realistic narration.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ulysses uses Homeric parallels and Dubliners includes epiphanies; Finnegans Wake is linguistically experimental.",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-27",
+      "question": "Consider the following statements about Woolf’s modernist fiction:\nI. Mrs Dalloway unfolds within one London day.\nII. To the Lighthouse foregrounds memory and time.\nIII. Woolf rejected all attention to mental experience.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Both novels shift attention toward consciousness and memory, precisely what Woolf wanted fiction to explore.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-28",
+      "question": "Consider the following statements about D. H. Lawrence:\nI. His fiction often explores feeling and the body.\nII. He depicted the pressures of industrial life.\nIII. Women in Love is set entirely in ancient Rome.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "II and III only",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Lawrence treats instinct and industrial modernity; Women in Love portrays modern English relationships.",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-29",
+      "question": "Consider the following statements about Auden and the 1930s:\nI. Auden was grouped with Spender and MacNeice.\nII. Industrial images appear in the poetry of his circle.\nIII. His first major Faber collection appeared in 1955.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Auden circle used industrial imagery, while his Faber Poems appeared in 1930.",
+      "topic": "thirties",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-30",
+      "question": "Consider the following statements about Orwell’s political writing:\nI. Homage to Catalonia records experience in Spain.\nII. The Road to Wigan Pier explores working-class hardship.\nIII. Animal Farm celebrates unrestrained dictatorship.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Orwell reported on Spain and industrial poverty, but Animal Farm satirizes the abuse of revolutionary power.",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-31",
+      "question": "Consider the following statements about Graham Greene:\nI. Brighton Rock combines crime with questions of sin.\nII. The Power and the Glory emerged from his encounter with Mexican religious persecution.\nIII. The Ministry of Fear was written by George Orwell.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Greene wrote all three works; his Mexican experiences informed The Power and the Glory.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-m-32",
+      "question": "Consider the following statements about Shaw’s theatre:\nI. His plays frequently stage clashes between ideas.\nII. Saint Joan considers religion and institutional authority.\nIII. Pygmalion argues that accent has no effect on social judgement.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shaw makes drama a debate about society; Pygmalion specifically exposes prejudices about speech and class.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-m-33",
+      "question": "Which two poets receive particular attention in Leavis’s New Bearings in English Poetry?",
+      "options": [
+        "Wordsworth and Coleridge",
+        "Dryden and Pope",
+        "T. S. Eliot and Ezra Pound",
+        "Milton and Marvell"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Leavis argued that Eliot and Pound showed important new directions for English poetry.",
+      "topic": "terms",
+      "topicId": "f-r-leavis",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-34",
+      "question": "Consider the following statements about the war poets:\nI. Sassoon wrote a public protest against the war in 1917.\nII. Owen died after the Armistice was signed.\nIII. Brooke died before the Gallipoli landings.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sassoon protested in 1917 and Brooke died in April 1915. Owen died before the November 1918 Armistice.",
+      "topic": "poetry",
+      "topicId": "the-war-poets",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-35",
+      "question": "Arrange the following Yeats-related publications in the correct chronological order:\n1. The Tower\n2. Introduction to Tagore’s Gitanjali\n3. A Vision\n4. The Wild Swans at Coole\nChoose the correct sequence:",
+      "options": [
+        "1, 4, 3, 2",
+        "4, 1, 2, 3",
+        "2, 4, 3, 1",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The dates are Introduction to Tagore’s Gitanjali (1912), The Wild Swans at Coole (1919), A Vision (1925), The Tower (1928).",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-36",
+      "question": "Consider the following statements about T. S. Eliot:\nI. The Sacred Wood was issued in 1920.\nII. Ash-Wednesday followed his turn toward Anglican faith.\nIII. Four Quartets was completed before The Waste Land.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "II and III only",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Sacred Wood appeared in 1920 and Ash-Wednesday in 1930. Four Quartets was collected decades after The Waste Land.",
+      "topic": "poetry",
+      "topicId": "ts-eliot",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-37",
+      "question": "Arrange the following Joyce books in the correct chronological order:\n1. A Portrait of the Artist as a Young Man\n2. Ulysses\n3. Dubliners\n4. Finnegans Wake\nChoose the correct sequence:",
+      "options": [
+        "3, 1, 4, 2",
+        "3, 1, 2, 4",
+        "1, 4, 2, 3",
+        "3, 2, 1, 4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The dates are Dubliners (1914), A Portrait of the Artist as a Young Man (1916), Ulysses (1922), Finnegans Wake (1939).",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-38",
+      "question": "Match List I (Woolf work) with List II (description):\nList I:\na. Mrs Dalloway\nb. To the Lighthouse\nc. Orlando\nd. A Room of One’s Own\nList II:\n1. The Ramsay family and changing time\n2. A protagonist passing through centuries\n3. Material conditions for women writers\n4. A London day and a traumatised veteran\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-2, c-3, d-4",
+        "a-1, b-3, c-2, d-4",
+        "a-4, b-1, c-2, d-3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct links are Mrs Dalloway — A London day and a traumatised veteran, To the Lighthouse — The Ramsay family and changing time, Orlando — A protagonist passing through centuries, A Room of One’s Own — Material conditions for women writers.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-39",
+      "question": "Arrange the following Lawrence publications in the correct chronological order:\n1. Women in Love\n2. Lady Chatterley’s Lover\n3. The Rainbow\n4. Sons and Lovers\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "1, 2, 4, 3",
+        "1, 4, 3, 2",
+        "1, 3, 4, 2"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The dates are Sons and Lovers (1913), The Rainbow (1915), Women in Love (1920), Lady Chatterley’s Lover (1928).",
+      "topic": "novel",
+      "topicId": "dh-lawrence",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-40",
+      "question": "Match List I (Auden and contemporaries) with List II (description):\nList I:\na. W. H. Auden\nb. Stephen Spender\nc. Louis MacNeice\nd. T. S. Eliot\nList II:\n1. The Criterion\n2. Autumn Journal\n3. The Orators\n4. Pylon-poet circle\nChoose the correct option:",
+      "options": [
+        "a-3, b-4, c-2, d-1",
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-3, c-2, d-4",
+        "a-1, b-2, c-3, d-4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct links are W. H. Auden — The Orators, Stephen Spender — Pylon-poet circle, Louis MacNeice — Autumn Journal, T. S. Eliot — The Criterion.",
+      "topic": "thirties",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-41",
+      "question": "Arrange the following Orwell publications in the correct chronological order:\n1. The Road to Wigan Pier\n2. Down and Out in Paris and London\n3. Animal Farm\n4. Homage to Catalonia\nChoose the correct sequence:",
+      "options": [
+        "1, 2, 3, 4",
+        "1, 4, 3, 2",
+        "2, 1, 4, 3",
+        "4, 1, 3, 2"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The dates are Down and Out in Paris and London (1933), The Road to Wigan Pier (1937), Homage to Catalonia (1938), Animal Farm (1945).",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-42",
+      "question": "Match List I (modern prose work) with List II (description):\nList I:\na. Brighton Rock\nb. Animal Farm\nc. Brave New World\nd. A Handful of Dust\nList II:\n1. Aldous Huxley, 1932\n2. Graham Greene, 1938\n3. George Orwell, 1945\n4. Evelyn Waugh, 1934\nChoose the correct option:",
+      "options": [
+        "a-1, b-3, c-2, d-4",
+        "a-2, b-3, c-1, d-4",
+        "a-1, b-2, c-3, d-4",
+        "a-1, b-2, c-4, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct links are Brighton Rock — Graham Greene, 1938, Animal Farm — George Orwell, 1945, Brave New World — Aldous Huxley, 1932, A Handful of Dust — Evelyn Waugh, 1934.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-m-43",
+      "question": "Match List I (Shaw play) with List II (description):\nList I:\na. Man and Superman\nb. Major Barbara\nc. Pygmalion\nd. Saint Joan\nList II:\n1. John Tanner and the Life Force\n2. Arms money and charitable ethics\n3. Phonetics and class prejudice\n4. The trial of Joan of Arc\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-3, c-4, d-2",
+        "a-1, b-3, c-2, d-4",
+        "a-1, b-2, c-3, d-4"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The correct links are Man and Superman — John Tanner and the Life Force, Major Barbara — Arms money and charitable ethics, Pygmalion — Phonetics and class prejudice, Saint Joan — The trial of Joan of Arc.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-m-44",
+      "question": "Consider the following statements about Richards’s practical criticism:\nI. Readers received poems without authors’ names.\nII. Interpretations were examined for recurring errors.\nIII. The exercise required readers to know each poet’s biography first.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Richards concealed author and date in order to test readers’ interpretations without biographical clues.",
+      "topic": "drama",
+      "topicId": "practical-criticism",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-45",
+      "question": "Match List I (war poet or memoirist) with List II (description):\nList I:\na. Wilfred Owen\nb. Siegfried Sassoon\nc. Robert Graves\nd. Rupert Brooke\nList II:\n1. The Soldier\n2. Goodbye to All That\n3. Dulce et Decorum Est\n4. Counter-Attack\nChoose the correct option:",
+      "options": [
+        "a-1, b-2, c-3, d-4",
+        "a-3, b-4, c-2, d-1",
+        "a-1, b-3, c-2, d-4",
+        "a-1, b-2, c-4, d-3"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The correct links are Wilfred Owen — Dulce et Decorum Est, Siegfried Sassoon — Counter-Attack, Robert Graves — Goodbye to All That, Rupert Brooke — The Soldier.",
+      "topic": "poetry",
+      "topicId": "the-war-poets",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-46",
+      "question": "Arrange the following Eliot publications in the correct chronological order:\n1. Ash-Wednesday\n2. The Waste Land\n3. Four Quartets as a volume\n4. Prufrock in Poetry magazine\nChoose the correct sequence:",
+      "options": [
+        "1, 3, 2, 4",
+        "4, 2, 1, 3",
+        "2, 1, 4, 3",
+        "3, 2, 4, 1"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The dates are Prufrock in Poetry magazine (1915), The Waste Land (1922), Ash-Wednesday (1930), Four Quartets as a volume (1943).",
+      "topic": "poetry",
+      "topicId": "ts-eliot",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-m-47",
+      "question": "Consider the following statements about Empson’s account of ambiguity:\nI. One phrase may support multiple senses.\nII. Ambiguity can contribute to poetic complexity.\nIII. A poem must always have exactly one dictionary meaning.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and II only",
+        "I, II and III",
+        "I and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Empson showed that several meanings can work together; he did not restrict poems to a single sense.",
+      "topic": "drama",
+      "topicId": "seven-types-of-ambiguity",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-48",
+      "question": "Consider the following statements about Leavis and the journal Scrutiny:\nI. The journal was launched in 1932.\nII. Its criticism encouraged discriminating literary judgement.\nIII. Leavis was the founder of the Abbey Theatre.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Scrutiny became a central platform for Leavis’s criticism; the Abbey Theatre was founded earlier in Dublin.",
+      "topic": "drama",
+      "topicId": "f-r-leavis",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-49",
+      "question": "Arrange the following modern critical publications in the correct chronological order:\n1. Seven Types of Ambiguity\n2. New Bearings in English Poetry\n3. Practical Criticism\n4. Principles of Literary Criticism\nChoose the correct sequence:",
+      "options": [
+        "4, 3, 1, 2",
+        "4, 2, 1, 3",
+        "3, 1, 2, 4",
+        "3, 4, 2, 1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The dates are Principles of Literary Criticism (1924), Practical Criticism (1929), Seven Types of Ambiguity (1930), New Bearings in English Poetry (1932).",
+      "topic": "drama",
+      "topicId": "new-criticism",
+      "periodId": "modern-era",
+      "qtype": "chrono",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-m-50",
+      "question": "Match List I (critic) with List II (description):\nList I:\na. I. A. Richards\nb. William Empson\nc. F. R. Leavis\nd. T. S. Eliot\nList II:\n1. New Bearings in English Poetry\n2. Seven Types of Ambiguity\n3. Principles of Literary Criticism\n4. Tradition and the Individual Talent\nChoose the correct option:",
+      "options": [
+        "a-3, b-2, c-1, d-4",
+        "a-1, b-2, c-4, d-3",
+        "a-1, b-3, c-2, d-4",
+        "a-1, b-2, c-3, d-4"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The correct links are I. A. Richards — Principles of Literary Criticism, William Empson — Seven Types of Ambiguity, F. R. Leavis — New Bearings in English Poetry, T. S. Eliot — Tradition and the Individual Talent.",
+      "topic": "drama",
+      "topicId": "new-criticism",
+      "periodId": "modern-era",
+      "qtype": "match",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    }
+  ]
+}

@@ -1,0 +1,874 @@
+{
+  "setId": "modern-set-1",
+  "rev": 1,
+  "age": "modern",
+  "ageName": "Modern Period",
+  "setNumber": 1,
+  "setName": "Across the whole age",
+  "notes": "/notes/modern-age/",
+  "notesTitle": "Modern — the full notes",
+  "topics": {
+    "ground": "The age and its movements",
+    "poetry": "War poets, Yeats and Eliot",
+    "novel": "The novel",
+    "thirties": "The 1930s and 1940s",
+    "drama": "Drama and criticism",
+    "terms": "Terms, dates and sources"
+  },
+  "topicRead": {},
+  "level": "easy",
+  "levelName": "Easy",
+  "levelNote": "Key authors, works, dates and ideas from modern British literature.",
+  "questions": [
+    {
+      "id": "modern-set-1-e-01",
+      "question": "Who wrote the war poem Dulce et Decorum Est?",
+      "options": [
+        "Robert Graves",
+        "Rupert Brooke",
+        "John Masefield",
+        "Wilfred Owen"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Owen portrays the suffering of a gas attack and challenges the idea that war is glorious.",
+      "topic": "poetry",
+      "topicId": "wilfred-owen",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-02",
+      "question": "Who received the Nobel Prize in Literature in 1923 for his poetry?",
+      "options": [
+        "W. B. Yeats",
+        "W. H. Auden",
+        "D. H. Lawrence",
+        "T. S. Eliot"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Yeats won the Nobel Prize in Literature in 1923 after a long career in Irish poetry.",
+      "topic": "ground",
+      "topicId": "wb-yeats",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-03",
+      "question": "Which major modernist poem did T. S. Eliot publish in 1922?",
+      "options": [
+        "The Waste Land",
+        "The Dynasts",
+        "Hugh Selwyn Mauberley",
+        "The Tower"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Waste Land appeared in 1922 and presents a fragmented vision of modern European life.",
+      "topic": "poetry",
+      "topicId": "the-waste-land",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-04",
+      "question": "In which city does the action of Joyce’s Ulysses take place?",
+      "options": [
+        "Dublin",
+        "Edinburgh",
+        "Paris",
+        "London"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Joyce sets Ulysses in Dublin on a single day in June 1904.",
+      "topic": "novel",
+      "topicId": "ulysses-joyce",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-05",
+      "question": "Which novel by Virginia Woolf follows Clarissa preparing for a party in London?",
+      "options": [
+        "Orlando",
+        "The Waves",
+        "Mrs Dalloway",
+        "The Rainbow"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Mrs Dalloway follows a single day in London and moves through several characters’ memories and thoughts.",
+      "topic": "novel",
+      "topicId": "mrs-dalloway",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-06",
+      "question": "Which novel by D. H. Lawrence follows Paul Morel and his powerful bond with his mother?",
+      "options": [
+        "Kangaroo",
+        "Sons and Lovers",
+        "The Rainbow",
+        "Women in Love"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Sons and Lovers studies Paul Morel’s family ties and difficulties in forming adult relationships.",
+      "topic": "novel",
+      "topicId": "sons-and-lovers",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-07",
+      "question": "Who was the leading poet of the Oxford-linked group of the 1930s?",
+      "options": [
+        "Edward Marsh",
+        "W. B. Yeats",
+        "Rupert Brooke",
+        "W. H. Auden"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Auden was associated with Spender, Day-Lewis and MacNeice in the poetry of the 1930s.",
+      "topic": "ground",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-08",
+      "question": "Which novel by George Orwell uses talking farm animals to satirize revolution and dictatorship?",
+      "options": [
+        "Brave New World",
+        "The Time Machine",
+        "Animal Farm",
+        "The Secret Agent"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Animal Farm is a political fable published in 1945.",
+      "topic": "ground",
+      "topicId": "animal-farm",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-09",
+      "question": "Who wrote Brighton Rock, published in 1938?",
+      "options": [
+        "Evelyn Waugh",
+        "Graham Greene",
+        "Aldous Huxley",
+        "George Orwell"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Greene’s Brighton Rock explores violent criminality, guilt and Catholic morality.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-e-10",
+      "question": "Which playwright received the Nobel Prize in Literature in 1925?",
+      "options": [
+        "J. B. Priestley",
+        "J. M. Synge",
+        "George Bernard Shaw",
+        "Noël Coward"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shaw received the Nobel Prize in Literature in 1925 for his dramatic writing.",
+      "topic": "ground",
+      "topicId": "bernard-shaw",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-e-11",
+      "question": "Who wrote Practical Criticism, published in 1929?",
+      "options": [
+        "A. C. Bradley",
+        "William Empson",
+        "I. A. Richards",
+        "F. R. Leavis"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richards developed a method for studying readers’ responses to poems without identifying information.",
+      "topic": "drama",
+      "topicId": "i-a-richards",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-12",
+      "question": "Which soldier-poet protested publicly in 1917 against the continuation of the First World War?",
+      "options": [
+        "Rupert Brooke",
+        "Edward Thomas",
+        "Siegfried Sassoon",
+        "Isaac Rosenberg"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sassoon issued a public protest in 1917 and was sent to Craiglockhart War Hospital.",
+      "topic": "ground",
+      "topicId": "siegfried-sassoon",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-13",
+      "question": "Which poem by Yeats imagines an approaching historical catastrophe and a rough beast?",
+      "options": [
+        "The Second Coming",
+        "Easter 1916",
+        "The Tower",
+        "Sailing to Byzantium"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Second Coming uses a disturbing prophetic vision to suggest the breakdown of an existing order.",
+      "topic": "poetry",
+      "topicId": "the-second-coming",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-14",
+      "question": "Which Eliot poem features a hesitant speaker who struggles to act and speak?",
+      "options": [
+        "September 1, 1939",
+        "The Second Coming",
+        "The Charge of the Light Brigade",
+        "The Love Song of J. Alfred Prufrock"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Prufrock is a self-questioning speaker whose thoughts and social anxieties shape the poem.",
+      "topic": "terms",
+      "topicId": "the-love-song-of-j-alfred-prufrock",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-15",
+      "question": "Which book by Joyce is a collection of stories set in the Irish capital?",
+      "options": [
+        "The Orators",
+        "Women in Love",
+        "The Waves",
+        "Dubliners"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Dubliners consists of stories about ordinary lives in Dublin, published together in 1914.",
+      "topic": "terms",
+      "topicId": "dubliners",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-16",
+      "question": "Which Woolf essay argues that women writers need financial independence and private space?",
+      "options": [
+        "A Room of One’s Own",
+        "A Vision",
+        "Modern Fiction",
+        "Three Guineas"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A Room of One’s Own argues that money and a private room are essential to women’s creative independence.",
+      "topic": "terms",
+      "topicId": "a-room-of-ones-own",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-17",
+      "question": "Which Lawrence novel was suppressed in Britain after publication in 1915?",
+      "options": [
+        "The Rainbow",
+        "Sons and Lovers",
+        "The White Peacock",
+        "The Trespasser"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Rainbow faced an obscenity prosecution and copies were seized in 1915.",
+      "topic": "novel",
+      "topicId": "the-rainbow",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-18",
+      "question": "Which poetry collection was Auden’s first commercially published book in 1930?",
+      "options": [
+        "Look, Stranger!",
+        "Poems",
+        "Another Time",
+        "The Orators"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Auden’s Poems appeared with Faber and Faber in 1930.",
+      "topic": "thirties",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "modern-set-1-e-19",
+      "question": "Which country’s civil war did Orwell describe in Homage to Catalonia?",
+      "options": [
+        "Spain",
+        "Russia",
+        "France",
+        "Ireland"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Homage to Catalonia recounts Orwell’s experience fighting in the Spanish Civil War.",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-20",
+      "question": "Which Greene novel published in 1940 follows a fugitive Catholic priest in Mexico?",
+      "options": [
+        "Brighton Rock",
+        "The Power and the Glory",
+        "The Confidential Agent",
+        "The Ministry of Fear"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Power and the Glory follows a hunted priest during anti-Catholic persecution in Mexico.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-e-21",
+      "question": "Which Shaw play explores social class through the speech training of Eliza Doolittle?",
+      "options": [
+        "Arms and the Man",
+        "Major Barbara",
+        "Saint Joan",
+        "Pygmalion"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Pygmalion follows Eliza Doolittle’s transformation through speech lessons and questions class prejudice.",
+      "topic": "drama",
+      "topicId": "pygmalion",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-e-22",
+      "question": "What critical method asks students to respond to an unattributed poem before learning its author?",
+      "options": [
+        "Source criticism",
+        "Biographical criticism",
+        "Historical philology",
+        "Practical criticism"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Practical criticism tests interpretation by removing names and dates that might bias reading.",
+      "topic": "terms",
+      "topicId": "practical-criticism",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-23",
+      "question": "Which poet wrote the patriotic sonnets collectively known as 1914?",
+      "options": [
+        "Wilfred Owen",
+        "Rupert Brooke",
+        "Siegfried Sassoon",
+        "Isaac Rosenberg"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Brooke wrote the patriotic 1914 sonnets before dying in 1915 on the way to Gallipoli.",
+      "topic": "poetry",
+      "topicId": "rupert-brooke",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-24",
+      "question": "Which prose work of Yeats sets out his private system of historical cycles and symbols?",
+      "options": [
+        "A Vision",
+        "The Sacred Wood",
+        "The Orators",
+        "The Four Quartets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A Vision, published in 1925, develops Yeats’s symbolic system of cycles and history.",
+      "topic": "poetry",
+      "topicId": "a-vision",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-25",
+      "question": "Which Eliot drama centres on the killing of Archbishop Thomas Becket?",
+      "options": [
+        "Murder in the Cathedral",
+        "Saint Joan",
+        "The Cocktail Party",
+        "Juno and the Paycock"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Murder in the Cathedral dramatizes the murder of Becket at Canterbury in 1170.",
+      "topic": "poetry",
+      "topicId": "murder-in-the-cathedral",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-e-26",
+      "question": "Which novel by Joyce uses highly experimental dream language and wordplay?",
+      "options": [
+        "The Man of Property",
+        "Finnegans Wake",
+        "The Rainbow",
+        "Brighton Rock"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Finnegans Wake experiments with multilingual puns and a dreamlike verbal texture.",
+      "topic": "novel",
+      "topicId": "finnegans-wake",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-27",
+      "question": "Who founded the Hogarth Press with Leonard Woolf?",
+      "options": [
+        "Vera Brittain",
+        "Katherine Mansfield",
+        "Virginia Woolf",
+        "Dorothy Richardson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Virginia and Leonard Woolf established the Hogarth Press in 1917 and published new literature.",
+      "topic": "novel",
+      "topicId": "virginia-woolf",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-28",
+      "question": "Which Lawrence novel follows the sisters Ursula and Gudrun Brangwen?",
+      "options": [
+        "Women in Love",
+        "Aaron’s Rod",
+        "Lady Chatterley’s Lover",
+        "The Plumed Serpent"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Women in Love centres on Ursula and Gudrun Brangwen and their different relationships.",
+      "topic": "novel",
+      "topicId": "women-in-love",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-29",
+      "question": "What nickname was given to poets of the 1930s who used imagery from factories and industrial structures?",
+      "options": [
+        "Cavalier poets",
+        "Graveyard poets",
+        "Pylon poets",
+        "Lake poets"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Their imagery often included pylons, railways and factories, linking verse to modern industry.",
+      "topic": "thirties",
+      "topicId": "the-thirties-poets",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-30",
+      "question": "Which Orwell book investigates poverty and life in northern English industrial towns?",
+      "options": [
+        "The Road to Wigan Pier",
+        "Down and Out in Paris and London",
+        "Burmese Days",
+        "Coming Up for Air"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Road to Wigan Pier describes working-class hardship in the industrial north.",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-31",
+      "question": "Which of these novels by Greene was published in 1943?",
+      "options": [
+        "Our Man in Havana",
+        "The Ministry of Fear",
+        "The Heart of the Matter",
+        "The End of the Affair"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Ministry of Fear appeared in 1943 and is among Greene’s suspense novels.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-e-32",
+      "question": "Which Shaw play dramatizes the trial and fate of Joan of Arc?",
+      "options": [
+        "Heartbreak House",
+        "Major Barbara",
+        "Saint Joan",
+        "Man and Superman"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Saint Joan stages the conflict between Joan’s beliefs and the institutions that condemn her.",
+      "topic": "drama",
+      "topicId": "saint-joan",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-e-33",
+      "question": "Which book by I. A. Richards appeared in 1924?",
+      "options": [
+        "The Great Tradition",
+        "Principles of Literary Criticism",
+        "New Bearings in English Poetry",
+        "Seven Types of Ambiguity"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Principles of Literary Criticism preceded Richards’s later practical classroom experiments.",
+      "topic": "terms",
+      "topicId": "principles-of-literary-criticism",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-34",
+      "question": "Who wrote the war memoir Goodbye to All That?",
+      "options": [
+        "Siegfried Sassoon",
+        "Vera Brittain",
+        "Robert Graves",
+        "Edward Thomas"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Graves published Goodbye to All That in 1929, recalling his experiences of the war.",
+      "topic": "poetry",
+      "topicId": "robert-graves",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-35",
+      "question": "Consider the following statements about W. B. Yeats:\nI. Yeats introduced Tagore’s English Gitanjali in 1912.\nII. Yeats won the Nobel Prize in 1923.\nIII. Yeats wrote Ulysses in 1922.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Yeats introduced Tagore’s collection and won the 1923 Nobel; Joyce wrote Ulysses.",
+      "topic": "poetry",
+      "topicId": "wb-yeats",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-36",
+      "question": "What is the collective title of Eliot’s four meditative poems on time and spiritual experience?",
+      "options": [
+        "Selected Essays",
+        "The Hollow Men",
+        "Prufrock and Other Observations",
+        "Four Quartets"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Four Quartets brings together four long poems concerned with time, faith and experience.",
+      "topic": "poetry",
+      "topicId": "four-quartets",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-37",
+      "question": "Consider the following statements about James Joyce:\nI. Ulysses takes place in Dublin.\nII. Dubliners was published in 1914.\nIII. Joyce authored Mrs Dalloway in 1925.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Joyce wrote the Dublin-set Ulysses and Dubliners; Woolf wrote Mrs Dalloway.",
+      "topic": "novel",
+      "topicId": "james-joyce",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-38",
+      "question": "Which Virginia Woolf novel appeared in 1927?",
+      "options": [
+        "Orlando",
+        "The Waves",
+        "Mrs Dalloway",
+        "To the Lighthouse"
+      ],
+      "correct_option_id": 3,
+      "explanation": "To the Lighthouse was published in 1927 and explores memory, time and family relationships.",
+      "topic": "novel",
+      "topicId": "to-the-lighthouse",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-39",
+      "question": "Which Lawrence novel was first published privately in 1928 and later became central to a British obscenity trial?",
+      "options": [
+        "Lady Chatterley’s Lover",
+        "The Trespasser",
+        "Kangaroo",
+        "The White Peacock"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lady Chatterley’s Lover appeared in 1928; its uncensored British edition became famous during the 1960 trial.",
+      "topic": "novel",
+      "topicId": "lady-chatterleys-lover",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-40",
+      "question": "Which Auden work published in 1932 mixes poetry, prose and social commentary?",
+      "options": [
+        "The Dynasts",
+        "The Tower",
+        "The Sacred Wood",
+        "The Orators"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Orators, subtitled An English Study, appeared in 1932.",
+      "topic": "thirties",
+      "topicId": "wh-auden",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/W._H._Auden"
+    },
+    {
+      "id": "modern-set-1-e-41",
+      "question": "Which Orwell book about poverty appeared in 1933?",
+      "options": [
+        "Down and Out in Paris and London",
+        "Animal Farm",
+        "The Road to Wigan Pier",
+        "Homage to Catalonia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Down and Out in Paris and London is his early account of poverty and precarious work.",
+      "topic": "thirties",
+      "topicId": "george-orwell",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#prose"
+    },
+    {
+      "id": "modern-set-1-e-42",
+      "question": "Which religious tradition most strongly shapes Greene’s novels of sin and grace?",
+      "options": [
+        "Calvinist Puritanism",
+        "Anglican Evangelicalism",
+        "Roman Catholicism",
+        "Quaker nonconformity"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Greene converted to Catholicism, and its ideas of sin, guilt and grace shape several novels.",
+      "topic": "thirties",
+      "topicId": "graham-greene",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://en.wikipedia.org/wiki/Graham_Greene"
+    },
+    {
+      "id": "modern-set-1-e-43",
+      "question": "Which Shaw drama brings together questions of wealth, arms manufacture and morality?",
+      "options": [
+        "You Never Can Tell",
+        "Major Barbara",
+        "The Doctor’s Dilemma",
+        "Candida"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Major Barbara debates charity, money and the morality of the arms industry.",
+      "topic": "drama",
+      "topicId": "bernard-shaw",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#drama"
+    },
+    {
+      "id": "modern-set-1-e-44",
+      "question": "Who wrote Seven Types of Ambiguity?",
+      "options": [
+        "F. R. Leavis",
+        "T. S. Eliot",
+        "I. A. Richards",
+        "William Empson"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Empson’s 1930 book analyses the multiple meanings literary language can carry.",
+      "topic": "drama",
+      "topicId": "william-empson",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-45",
+      "question": "Consider the following statements about First World War poets:\nI. Rupert Brooke wrote patriotic sonnets in 1914.\nII. Siegfried Sassoon protested publicly in 1917.\nIII. Wilfred Owen lived until the 1930s.\nWhich of the statements given above are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Brooke’s sonnets were patriotic, and Sassoon protested in 1917. Owen died in November 1918.",
+      "topic": "poetry",
+      "topicId": "the-war-poets",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-46",
+      "question": "Consider the following statements about Eliot’s The Waste Land:\nI. The poem appeared in 1922.\nII. Ezra Pound substantially edited its draft.\nIII. It has a continuous single narrator throughout.\nWhich of the statements given above are correct?",
+      "options": [
+        "I, II and III",
+        "I and II only",
+        "I and III only",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem was published in 1922 after Pound’s editorial cuts; it moves among many voices.",
+      "topic": "poetry",
+      "topicId": "the-waste-land",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#poetry"
+    },
+    {
+      "id": "modern-set-1-e-47",
+      "question": "Which critic was a pupil of I. A. Richards at Cambridge?",
+      "options": [
+        "Cleanth Brooks",
+        "William Empson",
+        "Northrop Frye",
+        "Lionel Trilling"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Empson studied under Richards and became influential for his close analysis of ambiguity.",
+      "topic": "drama",
+      "topicId": "william-empson",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-48",
+      "question": "Who helped found the literary journal Scrutiny in 1932?",
+      "options": [
+        "Ezra Pound",
+        "William Empson",
+        "Samuel Beckett",
+        "F. R. Leavis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Leavis helped establish Scrutiny as a major forum for evaluating literature.",
+      "topic": "drama",
+      "topicId": "f-r-leavis",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-49",
+      "question": "Which critic published New Bearings in English Poetry in 1932?",
+      "options": [
+        "I. A. Richards",
+        "William Empson",
+        "A. C. Bradley",
+        "F. R. Leavis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Leavis argued for a renewed reading of modern poetry, especially Eliot and Pound.",
+      "topic": "drama",
+      "topicId": "f-r-leavis",
+      "periodId": "modern-era",
+      "qtype": "direct",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    },
+    {
+      "id": "modern-set-1-e-50",
+      "question": "Consider the following statements about modern literary criticism:\nI. Richards developed classroom experiments in close reading.\nII. Empson studied ambiguity in literary language.\nIII. Leavis founded a journal called The Criterion.\nWhich of the statements given above are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "I, II and III",
+        "II and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Richards analysed readers’ responses; Empson examined ambiguity. Leavis helped found Scrutiny, not The Criterion.",
+      "topic": "drama",
+      "topicId": "new-criticism",
+      "periodId": "modern-era",
+      "qtype": "combination",
+      "src": "https://akexplained.com/notes/modern-age/#criticism-and-scholarship"
+    }
+  ]
+}
