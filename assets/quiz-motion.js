@@ -44,7 +44,7 @@
       const lottie = await loadRuntime();
       // A preference change while the player downloads should also stop JSON loading.
       if (reducedMotion.matches) { loading = false; return; }
-      zone.querySelectorAll('[data-quiz-animation]').forEach(function (container, index) {
+      zone.querySelectorAll('[data-quiz-animation]').forEach(function (container) {
         let ready = false;
         const canvas = document.createElement('span');
         canvas.className = 'quiz-animation';
@@ -54,12 +54,13 @@
           renderer: 'svg',
           loop: true,
           autoplay: false,
-          path: '/assets/animations/quiz-' + container.dataset.quizAnimation + '.json',
+          // Dynamic assets do not pass through Eleventy's HTML cache-busting transform.
+          path: '/assets/animations/quiz-' + container.dataset.quizAnimation + '.json?v=full-turn-1',
           rendererSettings: { focusable: false, progressiveLoad: false }
         });
         animation.addEventListener('DOMLoaded', function () {
           ready = true;
-          animation.goToAndStop(index * 12, true);
+          animation.goToAndStop(0, true);
           icons.push({ animation: animation, container: container });
           sync();
         });
@@ -68,12 +69,12 @@
           animation.destroy();
           canvas.remove();
         });
-        container.closest('a').addEventListener('pointerenter', function () {
+        function replay() {
           if (ready && !paused && !reducedMotion.matches && !document.hidden) animation.goToAndPlay(0, true);
-        });
-        container.closest('a').addEventListener('focus', function () {
-          if (ready && !paused && !reducedMotion.matches && !document.hidden) animation.goToAndPlay(0, true);
-        });
+        }
+        container.closest('a').addEventListener('pointerenter', replay);
+        container.addEventListener('pointerenter', replay);
+        container.closest('a').addEventListener('focus', replay);
       });
     } catch (_) {
       // The native links and their original SVG icons work without animation assets.

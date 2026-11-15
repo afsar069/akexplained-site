@@ -4,10 +4,11 @@ The homepage practice cards use ivory, teal, sage, gold and muted blue from the 
 
 ## Motion assets
 
-- Four original vector animations in `assets/animations/quiz-*.json`: target, checklist, past paper with clock, and test timer.
+- Four original vector animations in `assets/animations/quiz-*.json`: a target with a revolving arrow, checklist with sequential ticks and a clock, past paper with sequential ticks and a clock, and test timer with a completion tick.
 - Run `python3 tools/build-quiz-icons.py` to rebuild those JSON files.
 - SVG Lottie Light 5.13.0 is self-hosted in `assets/vendor/`, with its MIT license alongside it. The player and four JSON files download only near this section. No production npm dependency or third-party animation service is required.
-- Each six-second loop contains a short movement and a long rest. Hover or keyboard focus replays the icon.
+- Each six-second loop includes a complete 360-degree rotation over four seconds, then a two-second rest. Checklist and past-paper ticks draw one at a time. The test completion tick draws after the timer's full turn. Entering either the card or the icon with the pointer, or focusing the card with the keyboard, replays from the beginning.
+- The dynamic JSON URLs carry an animation revision in `quiz-motion.js`; change that revision when the JSON changes so returning visitors receive the updated artwork.
 - Pause/Play controls the loops. Icons pause outside the viewport or in a hidden tab. Reduced-motion users see static SVGs and skip the animation downloads on first visit.
 - If the player or an individual JSON file fails, the original SVG icon remains visible and the link works.
 
