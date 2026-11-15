@@ -44,6 +44,7 @@ const DESTINATIONS = [
     selfServe: true,
     minNumber: Math.min.apply(null, apNumbers),
     maxNumber: Math.max.apply(null, apNumbers),
+    pageBase: "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/",
     numberNote: "Pages are ready for Mock Tests " + Math.min.apply(null, apNumbers) + " to " + Math.max.apply(null, apNumbers) +
       ". For a higher number, ask Claude to make more pages first.",
     hub: "exams/state-psc/up-assistant-professor/paper-2-mock-tests/index.njk"
@@ -60,6 +61,7 @@ const DESTINATIONS = [
     selfServe: true,
     minNumber: Math.min.apply(null, pgtLoginNumbers),
     maxNumber: Math.max.apply(null, pgtLoginNumbers),
+    pageBase: "/exams/pgt/up-pgt/mock-tests/",
     numberNote: "Mock Tests " + Math.min.apply(null, pgtFreeNumbers) + " to " + Math.max.apply(null, pgtFreeNumbers) +
       " are the free tests. A login test here must be number " + Math.min.apply(null, pgtLoginNumbers) + " to " +
       Math.max.apply(null, pgtLoginNumbers) + ".",
