@@ -906,8 +906,8 @@ summary.ptbtn::-webkit-details-marker{display:none}
   border-radius:20px;border:5px solid #fff;background:var(--tint);
 }
 .about-portrait figcaption{
-  position:relative;z-index:2;margin:-26px 14px 0 -10px;padding:12px 16px 12px 18px;
-  background:var(--paper);border:1px solid var(--card-line);border-left:4px solid var(--teal);
+  position:relative;z-index:2;margin:-22px 0 0;padding:13px 14px 12px;text-align:center;
+  background:var(--paper);border:1px solid var(--card-line);border-top:3px solid var(--teal);
   border-radius:12px;box-shadow:0 12px 26px -16px rgba(22,48,74,.45);
   display:grid;gap:2px;
 }
