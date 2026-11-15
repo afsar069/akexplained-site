@@ -881,6 +881,48 @@ summary.ptbtn::-webkit-details-marker{display:none}
     -webkit-mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%);mask-image:linear-gradient(to right,transparent 0,#000 40%),linear-gradient(to bottom,transparent 0,#000 30%)}
 }
 
+/* ---------- About page: author portrait beside the opening text ----------
+   Text left, portrait right on a wide screen; on a phone the portrait goes on top. */
+.about-intro::before{display:none}
+.about-intro-grid{
+  display:grid;gap:48px;align-items:center;
+  grid-template-columns:minmax(0,1fr) minmax(0,300px);
+}
+.about-intro-text{grid-column:1;grid-row:1}
+.about-intro-text p{max-width:none}
+.about-portrait{grid-column:2;grid-row:1;margin:0;justify-self:center;width:100%;max-width:300px}
+/* One frame holds the photo and the name panel together. The gold outline sits behind the whole frame. */
+.about-portrait-frame{
+  position:relative;padding:8px 8px 0;border-radius:22px;
+  background:var(--paper);border:1px solid var(--card-line);
+  box-shadow:0 22px 44px -22px rgba(22,48,74,.55);
+}
+.about-portrait-frame::before{
+  content:"";position:absolute;inset:0;border:2px solid var(--gold);border-radius:22px;
+  transform:translate(12px,12px);z-index:-1;opacity:.7;
+}
+.about-portrait-frame img{
+  display:block;width:100%;aspect-ratio:4/5;height:auto;
+  object-fit:cover;object-position:center 18%;
+  border-radius:15px;background:var(--tint);
+}
+.about-portrait figcaption{
+  display:grid;gap:3px;text-align:center;padding:14px 10px 16px;
+}
+/* a short gold rule between the photo and the name */
+.about-portrait figcaption::before{
+  content:"";justify-self:center;width:44px;height:2px;border-radius:2px;background:var(--gold);margin-bottom:8px;
+}
+.about-portrait figcaption b{font-family:var(--serif);font-size:1.2rem;color:var(--ink);font-weight:700;line-height:1.25}
+.about-portrait figcaption span{font-size:.86rem;color:var(--body);line-height:1.35}
+.about-portrait figcaption .site{font-weight:700;color:var(--teal);letter-spacing:.03em;margin-top:2px}
+@media (max-width:820px){
+  .about-intro-grid{grid-template-columns:1fr;gap:34px}
+  .about-intro-text{grid-column:1;grid-row:2}
+  .about-portrait{grid-column:1;grid-row:1;max-width:260px}
+  .about-portrait-frame::before{transform:translate(9px,9px)}
+}
+
 /* =========================================================
    MCQ PRACTICE PAGE  —  /quizzes/mcq/
    Append this whole block to the end of assets/site.css.
