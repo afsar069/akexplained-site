@@ -1,4 +1,4 @@
-{# The "Important Links" band (CLAUDE.md rules 19 to 22). Needs `hubLinksText` set before the include. Optional `hubLinksSkip` = a path to leave out (the page's own link). List: _data/hubLinks.json #}
+{# The "Important Links" band (CLAUDE.md rules 19 to 22). Needs `hubLinksText` set before the include. Optional `hubLinksList` (another list than hubLinks.json, e.g. pgtHubLinks.json) and optional `hubLinksSkip` = a path to leave out (the page's own link). List: _data/hubLinks.json #}
 <section class="hub-links" aria-labelledby="hubLinksTitle">
   <div class="wrap">
     <div class="sechead">
@@ -6,7 +6,7 @@
     </div>
     <p class="seclede">{{ hubLinksText }}</p>
     <ul class="hub-linklist">
-{% for l in hubLinks %}{% if l.href != hubLinksSkip %}
+{% for l in (hubLinksList or hubLinks) %}{% if l.href != hubLinksSkip %}
       <li>
         <a class="hub-link" href="{{ l.href }}">
           <span class="hub-link-txt">

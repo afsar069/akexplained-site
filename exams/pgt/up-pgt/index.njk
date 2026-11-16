@@ -19,9 +19,11 @@ pgt_resources: true
     <a class="pgt-resource-card{% if resource.slug == 'mcqs' or resource.slug == 'mock-tests' %} pgt-resource-card--live{% endif %}" href="/exams/pgt/up-pgt/{{ resource.slug }}/" aria-label="{{ resource.title }}{% if resource.slug == 'mcqs' %} — browse 60 days{% elif resource.slug == 'mock-tests' %} — browse 60 tests{% else %} — coming soon{% endif %}">
       <span class="pgt-resource-icon" aria-hidden="true"><img src="/assets/icons/tabler/{{ resource.icon }}.svg" alt="" width="52" height="52"></span>
       <span class="pgt-resource-copy"><strong>{{ resource.title }}</strong><span>{{ resource.description }}</span><span class="pgt-resource-status">{% if resource.slug == 'mcqs' %}Browse 60 days{% elif resource.slug == 'mock-tests' %}Browse 60 tests{% else %}Coming soon{% endif %}</span></span>
-      <img class="pgt-resource-arrow" src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26">
+      {% if resource.slug == 'mcqs' or resource.slug == 'mock-tests' %}<span class="pgt-resource-open">Open</span>{% else %}<img class="pgt-resource-arrow" src="/assets/icons/feather/arrow-right.svg" alt="" width="26" height="26">{% endif %}
     </a>
     {% endif %}{% endfor %}
   </div>
   <p class="pgt-guide-link"><a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide<img src="/assets/icons/feather/arrow-right.svg" alt="" width="18" height="18"></a></p>
 </section>
+
+{% set hubLinksText = "Pages that help you prepare for PGT English." %}{% set hubLinksList = pgtHubLinks %}{% set hubLinksSkip = "/exams/pgt/up-pgt/" %}{% include "hub-links.njk" %}
