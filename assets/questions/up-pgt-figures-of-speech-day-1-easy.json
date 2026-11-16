@@ -1,0 +1,768 @@
+{
+  "setId": "up-pgt-figures-of-speech-day-1",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 1,
+  "setName": "Day 1 · Figure of Speech",
+  "level": "easy",
+  "levelName": "Easy",
+  "topics": {
+    "foundations": "Foundations",
+    "comparisons": "Comparisons",
+    "personification": "Personification",
+    "hyperbole": "Hyperbole",
+    "sound-devices": "Sound Devices"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-01",
+      "question": "What is defined in the study note as 'a way of using words so that the meaning goes beyond the plain, word-for-word sense'?",
+      "options": [
+        "A literal dictionary entry",
+        "A figure of speech",
+        "A rhyme royal stanza",
+        "A dramatic monologue"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Section 2 defines a figure of speech as a way of using words so that the meaning goes beyond the plain, word-for-word sense.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-02",
+      "question": "Which figure of speech compares two unlike things by using a joining word such as 'like' or 'as'?",
+      "options": [
+        "Hyperbole",
+        "Metaphor",
+        "Personification",
+        "Simile"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A simile compares two different or unlike things explicitly with a joining word such as 'like' or 'as'.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-03",
+      "question": "Which figure of speech calls one thing another directly, following the pattern 'A is B' with no joining word?",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Assonance",
+        "Metaphor"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A metaphor says one thing IS another directly without using 'like' or 'as'.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-04",
+      "question": "Which figure of speech is also known as an 'implied simile', as asked in UP PGT 2000?",
+      "options": [
+        "Personification",
+        "Hyperbole",
+        "Metonymy",
+        "Metaphor"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Because the comparison in a metaphor stays hidden without 'like' or 'as', it is also called an implied simile, which was asked in the 2000 paper.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-05",
+      "question": "Which figure of speech gives human actions, qualities, or feelings to an object, an animal, or an idea?",
+      "options": [
+        "Personification",
+        "Hyperbole",
+        "Simile",
+        "Assonance"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Personification gives human actions or feelings to a non-human thing such as an object, animal, or abstract idea.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-06",
+      "question": "What is the older, Greek-based name for Personification that appeared as an option in the 2000 paper?",
+      "options": [
+        "Oxymoron",
+        "Prosopopeia",
+        "Caesura",
+        "Consonance"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Prosopopeia is the older, Greek-based name for personification and appeared as a wrong option in the 2000 exam.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-07",
+      "question": "Which figure of speech uses deliberate exaggeration to stress or emphasise a point rather than to deceive anyone?",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Hyperbole",
+        "Metaphor"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hyperbole is deliberate exaggeration used for emphasis and emotional force, not for literal deception.",
+      "topic": "hyperbole",
+      "topicId": "hyperbole",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-08",
+      "question": "By what English nickname did the Elizabethan writer Puttenham call the figure of speech Hyperbole?",
+      "options": [
+        "'The sheltering tree'",
+        "'The over reacher'",
+        "'The implied simile'",
+        "'The walking shadow'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "As noted under Section 4.5 and the Fact Slots table, the Elizabethan critic George Puttenham called hyperbole 'the over reacher'.",
+      "topic": "hyperbole",
+      "topicId": "hyperbole",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-09",
+      "question": "Which figure of speech is the repetition of the same letter or sound at the beginning of adjacent or closely linked words?",
+      "options": [
+        "Consonance",
+        "Alliteration",
+        "Hyperbole",
+        "Assonance"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Alliteration repeats the same starting consonant sound at the beginning of two or more nearby words, as asked in 2013 Q6.",
+      "topic": "sound-devices",
+      "topicId": "alliteration",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-10",
+      "question": "Which figure of speech is the repetition or rhyming of identical vowel sounds inside nearby words without matching consonants?",
+      "options": [
+        "Assonance",
+        "Alliteration",
+        "Prosopopeia",
+        "Consonance"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Assonance repeats a vowel sound inside nearby words while the surrounding consonants differ, as asked in 2000, 2005, and 2010.",
+      "topic": "sound-devices",
+      "topicId": "assonance",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-11",
+      "question": "How many figures of speech in total are listed in the official UP PGT English syllabus?",
+      "options": [
+        "5 figures of speech",
+        "10 figures of speech",
+        "22 figures of speech",
+        "14 figures of speech"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The UP PGT syllabus lists 14 figures of speech in all, and Simile, Metaphor, Personification, Hyperbole, and Alliteration are the first five.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-12",
+      "question": "Which figure of speech taught in the Day 1 note is NOT in the official syllabus list of 14, but was still asked in three papers?",
+      "options": [
+        "Alliteration",
+        "Assonance",
+        "Hyperbole",
+        "Personification"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Assonance is not in the official syllabus list of 14 figures, but it was asked as a definition question in 2000, 2005, and 2010.",
+      "topic": "sound-devices",
+      "topicId": "assonance",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-13",
+      "question": "What is the term for a figure that places two clashing metaphors onto a single object?",
+      "options": [
+        "A mixed metaphor",
+        "A vocal assonance",
+        "An implied simile",
+        "A double alliteration"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Section 4.3 explains that a mixed metaphor puts two clashing metaphors onto one object.",
+      "topic": "foundations",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-14",
+      "question": "In the Confusion Corner, which device is distinguished from Alliteration because it repeats whole words rather than just a starting sound?",
+      "options": [
+        "Assonance",
+        "Metonymy",
+        "Apostrophe",
+        "Repetition"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Alliteration repeats a starting sound, whereas repetition repeats entire words, as in 'Alone, alone, all, all alone'.",
+      "topic": "sound-devices",
+      "topicId": "sound-devices",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-15",
+      "question": "Which sound device repeats consonant sounds rather than vowel sounds and appeared as a wrong option in the 2010 paper?",
+      "options": [
+        "Caesura",
+        "Assonance",
+        "Prosopopeia",
+        "Consonance"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Consonance is the repetition of consonant sounds; it appeared as a distractor alongside Assonance in 2010 Q12.",
+      "topic": "sound-devices",
+      "topicId": "consonance",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-16",
+      "question": "In the Confusion Corner, which figure of speech means speaking directly to an absent person or a thing, as in 'O World! O Life! O Time!'?",
+      "options": [
+        "Metonymy",
+        "Personification",
+        "Apostrophe",
+        "Oxymoron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "While personification gives human traits to a non-human thing, apostrophe addresses a person or thing directly, as in 'O World! O Life! O Time!'.",
+      "topic": "foundations",
+      "topicId": "apostrophe-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-17",
+      "question": "According to the Confusion Corner, which figure of speech is used in 'The pen is mightier than the sword', where a thing is replaced by something closely linked to it?",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Metonymy",
+        "Hyperbole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'The pen is mightier than the sword', asked in 2000, is Metonymy rather than Metaphor because it replaces a thing with something closely associated with it.",
+      "topic": "foundations",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-18",
+      "question": "In the 2009 Q82 matching question, which figure of speech is defined as joining two opposite terms together?",
+      "options": [
+        "Oxymoron",
+        "Assonance",
+        "Metaphor",
+        "Hyperbole"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 2009 Q82, Hyperbole is deliberate exaggeration, Metaphor identifies two unlike things, and Oxymoron joins two opposite terms.",
+      "topic": "foundations",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-19",
+      "question": "Identify the figure of speech in Wordsworth's line: 'The holy time is quiet as a Nun'.",
+      "options": [
+        "Metaphor",
+        "Hyperbole",
+        "Personification",
+        "Simile"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The evening time is compared to a nun using the joining word 'as', making it a simile, as asked in 2010 Q15.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-20",
+      "question": "Identify the figure of speech in Wordsworth's opening line: 'I wandered lonely as a cloud'.",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Metaphor",
+        "Assonance"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The speaker compares himself to a lonely cloud using the word 'as', which is a clear simile.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-21",
+      "question": "Identify the figure of speech in William Blake's lines: 'The moon, like a flower / In heaven's high bower!'",
+      "options": [
+        "Metaphor",
+        "Personification",
+        "Hyperbole",
+        "Simile"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Blake's poem 'Night', the moon is explicitly compared to a flower using the word 'like', making it a simile.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-22",
+      "question": "Identify the figure of speech in T. S. Eliot's lines: 'the evening is spread out against the sky / Like a patient etherised upon a table'.",
+      "options": [
+        "Personification",
+        "Assonance",
+        "Simile",
+        "Metaphor"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Asked in 2009 Q69, this line from 'Prufrock' compares the evening to an etherised patient using the word 'Like', which is a simile.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-23",
+      "question": "Identify the figure of speech in Portia's lines: 'The quality of mercy is not strained, / It droppeth as the gentle rain from heaven'.",
+      "options": [
+        "Alliteration",
+        "Simile",
+        "Hyperbole",
+        "Metaphor"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Asked in 2009 Q47, Portia compares mercy to gentle rain from heaven with the joining word 'as', making it a simile.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-24",
+      "question": "Identify the figure of speech in Robert Burns's line: 'O my love is like a red, red rose'.",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Hyperbole",
+        "Personification"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2013 Q71, love is compared to a red rose with the word 'like', which is a simile.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-25",
+      "question": "Which figure of speech is used in the everyday comparison 'as strong as an ox' and 'She is as sweet as mishri'?",
+      "options": [
+        "Hyperbole",
+        "Simile",
+        "Personification",
+        "Metaphor"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Both everyday expressions in Section 4.2 compare two unlike things using 'as', making them similes.",
+      "topic": "comparisons",
+      "topicId": "simile",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-26",
+      "question": "Identify the figure of speech in Macbeth's line: 'Life's but a walking shadow, a poor player'.",
+      "options": [
+        "Simile",
+        "Personification",
+        "Metaphor",
+        "Hyperbole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Macbeth directly calls life a walking shadow and a poor actor without using 'like' or 'as', which is a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-27",
+      "question": "Identify the figure of speech in Macbeth's lines: 'It is a tale / Told by an idiot, full of sound and fury'.",
+      "options": [
+        "Metaphor",
+        "Alliteration",
+        "Personification",
+        "Simile"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Life is directly called a tale without 'like' or 'as' and without performing a human action, making it a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-28",
+      "question": "Identify the figure of speech in Coleridge's line: 'Friendship is a sheltering tree'.",
+      "options": [
+        "Metaphor",
+        "Simile",
+        "Hyperbole",
+        "Personification"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2005 Q10 from Coleridge's 'Youth and Age', friendship is directly identified as a sheltering tree without 'like' or 'as', so it is a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-29",
+      "question": "Identify the figure of speech in the standard dictionary phrase 'abysmal ignorance', where ignorance is pictured as a bottomless pit.",
+      "options": [
+        "Assonance",
+        "Hyperbole",
+        "Metaphor",
+        "Simile"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Section 4.3 notes 'abysmal ignorance' as a standard dictionary example of metaphor, depicting ignorance as a bottomless abyss.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-30",
+      "question": "Identify the figure of speech in the everyday sentence given in Section 4.3: 'Our classroom is a zoo.'",
+      "options": [
+        "Personification",
+        "Alliteration",
+        "Metaphor",
+        "Simile"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The classroom is directly called a zoo without 'like' or 'as', making it a daily-life metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-31",
+      "question": "Identify the figure of speech in the 2009 Q46 exam sentence: 'The camel is the ship of desert.'",
+      "options": [
+        "Simile",
+        "Personification",
+        "Metaphor",
+        "Hyperbole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Asked in 2009 Q46, the camel is directly called the ship of the desert with no 'like' or 'as', so it is a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-32",
+      "question": "Identify the figure of speech in the 2013 Q111 exam sentence: 'Life is a dream.'",
+      "options": [
+        "Metaphor",
+        "Simile",
+        "Personification",
+        "Hyperbole"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2013 Q111, life is directly identified as a dream without 'like' or 'as', making it a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-33",
+      "question": "Identify the figure of speech in Thomas Hardy's line: 'Happiness is but an occasional episode in the general drama of the pain'.",
+      "options": [
+        "Metaphor",
+        "Simile",
+        "Personification",
+        "Hyperbole"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2000 Q4, happiness is called an episode and pain or life is called a drama without 'like' or 'as', making it a metaphor.",
+      "topic": "comparisons",
+      "topicId": "metaphor",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-34",
+      "question": "Identify the figure of speech in Wordsworth's line: 'This Sea that bares her bosom to the moon'.",
+      "options": [
+        "Personification",
+        "Hyperbole",
+        "Simile",
+        "Metaphor"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2010 Q16, the sea is called 'her' and performs the human action of baring her bosom, which is personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-35",
+      "question": "Identify the figure of speech in Macbeth's lines: 'Tomorrow and tomorrow and tomorrow / Creeps in this petty pace from day to day'.",
+      "options": [
+        "Hyperbole",
+        "Personification",
+        "Metaphor",
+        "Simile"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Tomorrow is given the living action of creeping from day to day, making it personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-36",
+      "question": "Identify the figure of speech in Wordsworth's line describing the daffodils: 'Fluttering and dancing in the breeze'.",
+      "options": [
+        "Hyperbole",
+        "Personification",
+        "Assonance",
+        "Simile"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Because flowers cannot literally dance like people, describing the daffodils as dancing in the breeze is personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-37",
+      "question": "Identify the figure of speech in Tennyson's line: 'Authority forgets a dying king'.",
+      "options": [
+        "Simile",
+        "Hyperbole",
+        "Metaphor",
+        "Personification"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Asked in 2005 Q58, the abstract idea 'Authority' is given the human act of forgetting, which is personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-38",
+      "question": "Identify the figure of speech in William Blake's line: 'Little sorrows sit and weep'.",
+      "options": [
+        "Metaphor",
+        "Simile",
+        "Personification",
+        "Hyperbole"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Asked in 2006 Q21, abstract 'sorrows' are given the human actions of sitting and weeping, making it personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-39",
+      "question": "Identify the figure of speech in John Keats's line: 'Where Beauty cannot keep her lustrous eyes'.",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Alliteration",
+        "Personification"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Asked in 2009 Q23, abstract 'Beauty' is referred to as 'her' and given human eyes, which is personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-40",
+      "question": "Identify the figure of speech in James Shirley's line: 'Death lays his icy hand on kings'.",
+      "options": [
+        "Metaphor",
+        "Personification",
+        "Simile",
+        "Hyperbole"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Asked in 2013 Q124, Death is called 'his' and given an icy human hand that touches kings, which is personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-41",
+      "question": "Identify the figure of speech in the standard dictionary example: 'The leaves laughed in the trees'.",
+      "options": [
+        "Simile",
+        "Personification",
+        "Hyperbole",
+        "Metaphor"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Section 4.4 and the Fact Slots table give 'The leaves laughed in the trees' as a standard dictionary example of personification.",
+      "topic": "personification",
+      "topicId": "personification",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-42",
+      "question": "Identify the figure of speech in Lady Macbeth's line: 'All the perfumes of Arabia will not sweeten this little hand'.",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Hyperbole",
+        "Personification"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Asked in 2000, 2006, and 2013, Lady Macbeth exaggerates the impossibility of washing away her guilt, which is hyperbole.",
+      "topic": "hyperbole",
+      "topicId": "hyperbole",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-43",
+      "question": "Identify the figure of speech in Marlowe's lines: 'Was this the face that launched a thousand ships? / And burnt the topless towers of Ilium?'",
+      "options": [
+        "Simile",
+        "Personification",
+        "Hyperbole",
+        "Assonance"
+      ],
+      "correct_option_id": 2,
+      "explanation": "From Marlowe's 'Dr Faustus', this is the Oxford Companion's standard example of hyperbole, using grand exaggeration for Helen's beauty.",
+      "topic": "hyperbole",
+      "topicId": "hyperbole",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-44",
+      "question": "Identify the figure of speech in the everyday statement given in Section 4.5: 'I told you a million times!'",
+      "options": [
+        "Hyperbole",
+        "Metaphor",
+        "Simile",
+        "Alliteration"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Saying 'I told you a million times!' is an obvious exaggeration used for emphasis, not deception, making it hyperbole.",
+      "topic": "hyperbole",
+      "topicId": "hyperbole",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-45",
+      "question": "Identify the primary sound figure tagged in the Witches' closing line: 'Fair is foul, and foul is fair'.",
+      "options": [
+        "Hyperbole",
+        "Simile",
+        "Alliteration",
+        "Personification"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The repeated starting 'f' sound in 'Fair' and 'foul' makes this the note's signature example of alliteration.",
+      "topic": "sound-devices",
+      "topicId": "alliteration",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-46",
+      "question": "Identify the figure of speech in the Witches' chant: 'Double, double toil and trouble; / Fire burn, and cauldron bubble'.",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Personification",
+        "Alliteration"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In Act 4, scene 1 of 'Macbeth', the repeated starting consonant sounds in 'Double, double', 'toil and trouble', and 'burn... bubble' illustrate alliteration.",
+      "topic": "sound-devices",
+      "topicId": "alliteration",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-47",
+      "question": "Identify the figure of speech in Gerard Manley Hopkins's phrase: 'dapple-dawn-drawn Falcon'.",
+      "options": [
+        "Simile",
+        "Alliteration",
+        "Metaphor",
+        "Hyperbole"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Hopkins's 'dapple-dawn-drawn Falcon' repeats the initial 'd' sound and is the Oxford Companion's example of alliteration.",
+      "topic": "sound-devices",
+      "topicId": "alliteration",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-48",
+      "question": "Identify the figure of speech in Swinburne's phrase: 'lilies and languors of virtue'.",
+      "options": [
+        "Hyperbole",
+        "Alliteration",
+        "Personification",
+        "Simile"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The repeated starting 'l' sound in 'lilies and languors' is cited by the Oxford Companion as an example of Swinburne's alliteration.",
+      "topic": "sound-devices",
+      "topicId": "alliteration",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-49",
+      "question": "Identify the sound figure in W. B. Yeats's line: 'That dolphin-torn, that gong-tormented sea'.",
+      "options": [
+        "Hyperbole",
+        "Simile",
+        "Personification",
+        "Assonance"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Yeats's line from 'Byzantium' is the Oxford Companion's example of assonance, echoing the 'o' vowel sound across different consonants.",
+      "topic": "sound-devices",
+      "topicId": "assonance",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-1-e-50",
+      "question": "Identify the sound figure in Keats's lines: 'Then in a wailful choir the small gnats mourn / Among the river sallows, borne aloft'.",
+      "options": [
+        "Assonance",
+        "Metonymy",
+        "Simile",
+        "Hyperbole"
+      ],
+      "correct_option_id": 0,
+      "explanation": "These lines from Keats's 'To Autumn' are cited by the Oxford Companion as an example of quiet vowel-echo assonance.",
+      "topic": "sound-devices",
+      "topicId": "assonance",
+      "qtype": "direct"
+    }
+  ]
+}

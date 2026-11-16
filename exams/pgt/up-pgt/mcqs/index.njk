@@ -12,7 +12,7 @@ pgt_resources: true
   <header class="pgt-practice-intro">
     <div>
       <h2 id="pgt-practice-index-title">Choose your practice day</h2>
-      <p>Topics and MCQs are coming soon.</p>
+      <p>Day 1 is open for free, with no login required. More days are coming soon.</p>
     </div>
     <span>60 days</span>
   </header>
@@ -27,10 +27,10 @@ pgt_resources: true
       </summary>
       <div class="pgt-practice-card-grid">
         {% for day in group.days %}
-        <a class="pgt-practice-card" href="/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/" aria-label="Day {{ day.number }} — coming soon">
+        <a class="pgt-practice-card" href="/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/" aria-label="Day {{ day.number }}{% if day.access %} — {{ day.title }}, {{ day.questionCount }} questions, free, no login{% else %} — coming soon{% endif %}">
           <span class="pgt-practice-card-copy">
             <strong>Day {{ day.label }}</strong>
-            <span>Coming soon</span>
+            <span>{% if day.access %}{{ day.title }} · {{ day.questionCount }} questions · Free · No login{% else %}Coming soon{% endif %}</span>
           </span>
           <img src="/assets/icons/feather/arrow-right.svg" alt="" width="24" height="24">
         </a>
