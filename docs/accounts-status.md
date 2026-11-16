@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-15. UP PGT login mock tests (slots 6–60) are built as self-serve on the branch, not merged. Postmodern Period Set 1 is prepared as a free, no-login set at easy and medium level. UP Assistant Professor Paper 2 Mock Test 5 is live in the login-only database and its catalog metadata is in the site build. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-16. UP PGT English MCQs Day 1, Figure of Speech, is prepared as a free, no-login CBT set with 50 easy questions. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 1 — Figure of Speech (2026-11-16)
+
+- The owner supplied 50 tagged, verified easy questions and requested Day 1 on `/exams/pgt/up-pgt/mcqs/` as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public question file is `assets/questions/up-pgt-figures-of-speech-day-1-easy.json`. Its 50 question objects are unchanged from the upload. The Day 1 card names Figure of Speech and links to `/exams/pgt/up-pgt/mcqs/day-1/`; its review is at `day-1/review/`.
+- Days 2–60 remain Coming soon. Day 1 uses `data-exam-day` in the shared CBT engine, with no login gate or catalog check. Eleventy build, question/topic ID checks, guest CBT and review browser flow, and 320–1440 px overflow checks passed.
 
 ## Self-serve publish — UP PGT login mock tests (2026-11-15, on the branch, NOT merged)
 

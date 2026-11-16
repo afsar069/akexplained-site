@@ -104,7 +104,8 @@
      Wo mock test ki tarah ek hi file ka poora paper hai (koi level nahi, "Paper" label, age ke notes ke link nahi),
      isliye EXAM_MOCK bhi on hota hai; bas naam aur kuch lines PYQ ki hain ("Previous-year paper", paper ka naam). */
   var PYQ = root.hasAttribute('data-exam-pyq');
-  var EXAM_MOCK = root.hasAttribute('data-exam-mock') || PYQ;
+  var EXAM_DAY = root.hasAttribute('data-exam-day');
+  var EXAM_MOCK = root.hasAttribute('data-exam-mock') || PYQ || EXAM_DAY;
   /* "Kitne sawal, kitna waqt" ka chunav: mock test aur MCQ set dono par, custom par nahi. */
   var PLAN_CHOICE = !CUSTOM;
   var AGE = root.getAttribute('data-age') || '';
@@ -291,11 +292,11 @@
   }
 
   /* "Set 2" ya custom me "Your own test"; "this set" / "this test". */
-  function setTag() { return PYQ ? 'Previous-year paper' : EXAM_MOCK ? 'Mock Test ' + (paper.setNumber || 1) : CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
+  function setTag() { return PYQ ? 'Previous-year paper' : EXAM_DAY ? 'Day ' + (paper.setNumber || 1) : EXAM_MOCK ? 'Mock Test ' + (paper.setNumber || 1) : CUSTOM ? 'Your own test' : 'Set ' + String(paper.setNumber || 1); }
   /* PYQ: paper ka apna naam (file ka setName, jaise "Paper II — December 2012"); upar ageName "UGC NET English" judta hai. */
-  function testName() { return PYQ ? (paper.setName || 'Previous-year paper') : EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
+  function testName() { return PYQ ? (paper.setName || 'Previous-year paper') : EXAM_DAY ? (paper.setName || setTag()) : EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
   function thisSet() { return CUSTOM || EXAM_MOCK ? 'this test' : 'this set'; }
-  function retake() { return CUSTOM ? 'build another test from the same sets' : 'take this set again'; }
+  function retake() { return CUSTOM ? 'build another test from the same sets' : EXAM_DAY ? 'take this day again' : 'take this set again'; }
 
   /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
      uska (taaki adhoora test wahin se chale), phir ?level=, phir default. */
@@ -1793,7 +1794,7 @@
             : '<li><a href="' + esc(paper.notes || '/notes/') + '">' +
               esc(paper.ageName || 'This age') + ' — the full notes</a><span>the reading behind this age</span></li>') +
           '<li><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">' +
-            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>' + (PYQ ? 'Browse the papers' : 'Browse the mock tests') : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>Browse the sets') + '</span></li>' +
+            (EXAM_MOCK ? esc(root.getAttribute('data-exam-index-label') || 'UP PGT Mock Tests') + '</a><span>' + (PYQ ? 'Browse the papers' : EXAM_DAY ? 'Browse the practice days' : 'Browse the mock tests') : 'More sets in ' + esc(paper.ageName || 'this age') + '</a><span>Browse the sets') + '</span></li>' +
           '<li><a href="/quizzes/mcq/">Every age</a><span>Old English to the present day</span></li>' +
         '</ul>' +
       '</section>' +
@@ -2266,7 +2267,7 @@
       root.innerHTML =
         '<div class="cbt-start">' +
           '<h1>Nothing to review yet</h1>' +
-          '<p class="lede">This page shows the answers from your last ' + (PYQ ? 'attempt at this paper' : EXAM_MOCK ? 'mock test' : CUSTOM ? 'custom test' : 'run at this set') + ', ' +
+          '<p class="lede">This page shows the answers from your last ' + (PYQ ? 'attempt at this paper' : EXAM_DAY ? 'practice day' : EXAM_MOCK ? 'mock test' : CUSTOM ? 'custom test' : 'run at this set') + ', ' +
             'and there is no finished run saved in this browser.</p>' +
           '<p><a class="btn" href="' + esc(CUSTOM ? (root.getAttribute('data-new') || root.getAttribute('data-back') || '/quizzes/mcq/')
                                                  : (root.getAttribute('data-back') || '/quizzes/mcq/')) +
