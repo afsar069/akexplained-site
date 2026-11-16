@@ -68,6 +68,9 @@
 .pgt-resource-copy > span:not(.pgt-resource-status){font-size:.92rem;line-height:1.4}
 .pgt-resource-status{font-size:.92rem;line-height:1.4;font-weight:600;color:#8C5B14}
 .pgt-resource-arrow{flex:none;transition:transform .2s ease}
+/* An active resource card ends in a teal Open button (same box as the NET and State PSC cards). The whole card is still the link. */
+.pgt-resource-open{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:76px;min-height:44px;padding:0 20px;border-radius:8px;background:var(--teal);color:#fff;font-size:.95rem;font-weight:700;line-height:1;box-shadow:0 2px 0 rgba(0,0,0,.18);transition:background-color .18s}
+.pgt-resource-card:hover .pgt-resource-open{background:var(--teal-dark);color:#fff}
 .pgt-guide-link{margin:20px 0 0;text-align:right}
 .pgt-guide-link a{display:inline-flex;align-items:center;gap:8px;font-weight:600;text-underline-offset:3px}
 .pgt-resource-coming{padding:42px 0 52px;max-width:70ch}
