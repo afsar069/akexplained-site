@@ -1,0 +1,967 @@
+{
+  "setId": "up-pgt-day-07-chaucer-1",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 7,
+  "setName": "Day 7 · Chaucer 1: Age, Middle English, Canterbury Tales & Pilgrims",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "pilgrims": "Pilgrims",
+    "tales-plan": "The Tales Plan",
+    "chaucer-age": "Chaucer and His Age",
+    "middle-english": "Middle English",
+    "chaucer-position": "Chaucer’s Position",
+    "general-prologue": "The General Prologue"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-01",
+      "question": "Which century is most closely associated with Geoffrey Chaucer's literary career?",
+      "options": [
+        "The fourteenth century",
+        "The twelfth century",
+        "The sixteenth century",
+        "The eighteenth century"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Chaucer lived c. 1340s–1400 and wrote his major works in fourteenth-century England.",
+      "topic": "chaucer-age",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-02",
+      "question": "Which prolonged conflict between England and France began during Chaucer's age?",
+      "options": [
+        "The Wars of the Roses",
+        "The Hundred Years' War",
+        "The English Civil War",
+        "The War of Spanish Succession"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Hundred Years' War began in 1337, before Chaucer was born, and continued long after his lifetime.",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-03",
+      "question": "Which major epidemic struck England in 1348–1350, during Chaucer's early lifetime?",
+      "options": [
+        "The Great Plague of London of 1665",
+        "The influenza pandemic of 1918",
+        "The Black Death",
+        "The cholera outbreak of 1832"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Black Death ravaged England in 1348–1350 and profoundly affected late-medieval society.",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-04",
+      "question": "Which uprising against social and fiscal conditions took place in England in 1381?",
+      "options": [
+        "The Pilgrimage of Grace",
+        "The Glorious Revolution",
+        "The Peterloo protest",
+        "The Peasants' Revolt"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Peasants' Revolt of 1381 is a defining event of the social world in which Chaucer lived.",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-05",
+      "question": "Consider these statements about late-medieval English society:\nI. Knights and nobles belonged to a privileged social estate.\nII. Clergy formed an identifiable social estate.\nIII. Tradespeople and workers were absent from Chaucer's imagined pilgrimage.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The prologue includes aristocratic, clerical and working or commercial figures. The third statement is false.",
+      "topic": "chaucer-age",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://www.cambridge.org/core/books/abs/new-companion-to-critical-thinking-on-chaucer/summaries-of-the-works-of-chaucer/F0B30171F34BDB22A7624BF1CEFC5E54",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-06",
+      "question": "Which religious reformer was a contemporary of Chaucer and is associated with the English Lollard movement?",
+      "options": [
+        "John Wesley",
+        "John Wycliffe",
+        "Thomas Cranmer",
+        "William Laud"
+      ],
+      "correct_option_id": 1,
+      "explanation": "John Wycliffe lived in the fourteenth century, and his followers helped shape debates about church authority.",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-07",
+      "question": "Which king succeeded Edward III in 1377, during Chaucer's public career?",
+      "options": [
+        "Henry VIII",
+        "Charles II",
+        "Richard II",
+        "James I"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richard II became king in 1377 after the death of Edward III.",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-08",
+      "question": "Arrange these events in chronological order:\nI. Peasants' Revolt\nII. Black Death reaches England\nIII. Accession of Richard II\nIV. Accession of Henry IV",
+      "options": [
+        "III – II – I – IV",
+        "II – I – III – IV",
+        "I – II – IV – III",
+        "II – III – I – IV"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The sequence is the Black Death (1348), Richard II (1377), the revolt (1381), and Henry IV (1399).",
+      "topic": "chaucer-age",
+      "topicId": "age-of-chaucer",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-09",
+      "question": "Which historical event is conventionally linked to the beginning of the Middle English period?",
+      "options": [
+        "The Norman Conquest of 1066",
+        "The printing of the King James Bible",
+        "The accession of Elizabeth I",
+        "The restoration of Charles II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Norman Conquest of 1066 changed English society and the language's contact with French.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/english-language-fourteenth-century"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-10",
+      "question": "In which broad historical variety of English did Chaucer write The Canterbury Tales?",
+      "options": [
+        "Old English",
+        "Middle English",
+        "Early Modern English",
+        "Present-Day English"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Canterbury Tales is written in Middle English, not the Anglo-Saxon language of Beowulf.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/english-language-fourteenth-century",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-11",
+      "question": "Which regional urban usage is particularly associated with the language of Chaucer's poetry?",
+      "options": [
+        "West Saxon Old English",
+        "Early Scots alone",
+        "London English, influenced by East Midland varieties",
+        "Modern American Standard English"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chaucer's London-based literary language stood within the East Midland and London linguistic context.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/middle-english-dialects",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-12",
+      "question": "After the Norman Conquest, which language had especially strong prestige at the English aristocratic court?",
+      "options": [
+        "Spanish",
+        "German",
+        "Welsh",
+        "French"
+      ],
+      "correct_option_id": 3,
+      "explanation": "French enjoyed high social prestige among the elite for centuries after 1066, while English remained widely spoken.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/english-language-fourteenth-century"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-13",
+      "question": "Consider these claims about language in fourteenth-century England:\nI. English increasingly gained ground in schooling and public affairs.\nII. French remained culturally influential at court.\nIII. Latin had disappeared completely from written records.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "English gained public ground and French retained prestige, while Latin continued to serve important written functions.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/english-language-fourteenth-century",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-14",
+      "question": "In the famous opening of the General Prologue, what is the modern meaning of \"Aprill\"?",
+      "options": [
+        "Autumn",
+        "April",
+        "August",
+        "A royal title"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Aprill is Chaucer's Middle English spelling of April in the opening spring description.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-15",
+      "question": "Consider these statements about reading Chaucer's Middle English:\nI. Vocabulary may contain French-derived words.\nII. Spelling and pronunciation may differ from modern English.\nIII. Every written final -e must always be silent in Chaucer's metre.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Middle English includes French influence and older pronunciation; final -e is often metrically significant, not invariably silent.",
+      "topic": "middle-english",
+      "topicId": "middle-english-language",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/english-language-fourteenth-century",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-16",
+      "question": "Why is Chaucer conventionally honoured as a foundational figure in English poetry?",
+      "options": [
+        "He invented the English language",
+        "He composed all his poetry in Latin",
+        "He wrote the earliest surviving English poem",
+        "He raised the prestige and expressive reach of literary English"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Chaucer demonstrated that English could sustain sophisticated narratives and a wide range of literary voices.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/life-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-17",
+      "question": "Alongside poetry, which role did Chaucer perform for the English royal court?",
+      "options": [
+        "Diplomatic service",
+        "Archbishop of Canterbury",
+        "Master of the royal mint throughout his life",
+        "Speaker of the House of Commons"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official documents record diplomatic journeys among Chaucer's varied royal duties.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/life-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-18",
+      "question": "Which London administrative office was Chaucer appointed to in 1374?",
+      "options": [
+        "Lord Chancellor of England",
+        "Controller of customs",
+        "Chief Justice of the King's Bench",
+        "Mayor of London"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 1374 Chaucer became a controller of customs in London.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-19",
+      "question": "Which pair of Italian writers is especially important to the background of Chaucer's mature poetry?",
+      "options": [
+        "Homer and Virgil",
+        "Spenser and Milton",
+        "Dante and Boccaccio",
+        "Pope and Dryden"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chaucer engaged with Italian literary culture; Dante and Boccaccio are central figures in that influence.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-20",
+      "question": "Consider these statements about Chaucer's literary and public life:\nI. He performed official duties for the crown.\nII. He encountered continental European literary culture.\nIII. He wrote exclusively in Latin and rejected English verse.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Chaucer was a royal servant and a cosmopolitan writer, but his major poetry includes original Middle English work.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/life-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-21",
+      "question": "Which Chaucer work is a substantial Middle English narrative centred on the lovers Troilus and Criseyde?",
+      "options": [
+        "Troilus and Criseyde",
+        "Piers Plowman",
+        "Sir Gawain and the Green Knight",
+        "The Faerie Queene"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Troilus and Criseyde is Chaucer's extended romance about love and loss set against the Trojan story.",
+      "topic": "chaucer-position",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-22",
+      "question": "Consider these work–description statements:\nI. The Book of the Duchess is connected with mourning and consolation.\nII. The Parliament of Fowls is an allegorical dream vision involving birds.\nIII. The Canterbury Tales was finished according to its complete original plan.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Both named early poems are linked to dream-vision traditions; the Canterbury storytelling project remained unfinished.",
+      "topic": "chaucer-position",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 1: the age, Middle English, his position",
+      "src": "https://chaucer.fas.harvard.edu/pages/brief-chronology-chaucers-life-and-times-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-23",
+      "question": "To which religious shrine are the travellers in The Canterbury Tales making their pilgrimage?",
+      "options": [
+        "The shrine of St Cuthbert at Durham",
+        "The shrine of St James at Santiago",
+        "The shrine of St Thomas Becket at Canterbury",
+        "The abbey of St Denis near Paris"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The pilgrims journey to Canterbury to honour the martyred Archbishop Thomas Becket.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-24",
+      "question": "At which inn do the pilgrims gather before leaving London?",
+      "options": [
+        "The Mermaid Tavern in Cheapside",
+        "The Boar's Head in Eastcheap",
+        "The George Inn at Salisbury",
+        "The Tabard Inn in Southwark"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The group meets at the Tabard in Southwark, south of the Thames.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-25",
+      "question": "How many other pilgrims does Chaucer's narrator say arrived at the Tabard in a company?",
+      "options": [
+        "Twenty-nine",
+        "Twelve",
+        "Twenty-four",
+        "Forty"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The narrator reports meeting twenty-nine fellow travellers; he also joins their company.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-26",
+      "question": "Who proposes and supervises the storytelling contest in The Canterbury Tales?",
+      "options": [
+        "The Knight",
+        "Harry Bailly, the Host",
+        "The Pardoner",
+        "The Parson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The innkeeper Harry Bailly offers to accompany the company and judge the tales.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-27",
+      "question": "How many stories was each participating pilgrim expected to tell under the Host's plan?",
+      "options": [
+        "Two: both on the outward journey",
+        "Three: one on each successive day",
+        "Four: two outward and two on the return journey",
+        "One: only upon reaching Canterbury"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Host's proposed scheme allowed two tales toward Canterbury and two on the journey home.",
+      "topic": "tales-plan",
+      "topicId": "frame-narrative",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-28",
+      "question": "How many tales survive in the unfinished Canterbury Tales collection in the standard account?",
+      "options": [
+        "Twelve",
+        "Forty-eight",
+        "One hundred and twenty",
+        "Twenty-four"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The standard count is twenty-four extant tales, far fewer than the original storytelling plan.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://www.cambridge.org/core/books/abs/new-companion-to-critical-thinking-on-chaucer/summaries-of-the-works-of-chaucer/F0B30171F34BDB22A7624BF1CEFC5E54",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-29",
+      "question": "What is the reward promised to the winner of the Canterbury storytelling contest?",
+      "options": [
+        "A supper at the Tabard paid for by the other pilgrims",
+        "A purse of one hundred gold coins",
+        "A knighthood from the king",
+        "Ownership of the Tabard Inn"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The best storyteller is promised a meal at the company's expense when they return.",
+      "topic": "tales-plan",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-30",
+      "question": "Consider these statements about the Host's proposal:\nI. He is to act as the journey's guide and judge.\nII. The winning tale should offer both pleasure and meaning.\nIII. All planned tales were completed before Chaucer died.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Host organizes and judges the contest, valuing both enjoyment and substance; the full plan was never completed.",
+      "topic": "tales-plan",
+      "topicId": "frame-narrative",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-31",
+      "question": "Match the narrative element with its role:\nA. Tabard Inn\nB. Thomas Becket\nC. Harry Bailly\nD. Pilgrim Chaucer\n1. Narrator within the company\n2. Proposed judge and guide\n3. Saint whose shrine is the destination\n4. Initial meeting place",
+      "options": [
+        "A-3, B-4, C-2, D-1",
+        "A-4, B-2, C-3, D-1",
+        "A-4, B-3, C-2, D-1",
+        "A-1, B-3, C-2, D-4"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The inn is the starting setting, Becket defines the destination, Bailly hosts the contest, and the pilgrim Chaucer narrates.",
+      "topic": "tales-plan",
+      "topicId": "frame-narrative",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/summary-framing-narrative",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-32",
+      "question": "In which season does the General Prologue begin?",
+      "options": [
+        "Midwinter",
+        "High summer",
+        "Late autumn",
+        "Spring"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The opening welcomes April showers and the renewed impulse to travel and pilgrimage.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-33",
+      "question": "How many lines are traditionally counted in the General Prologue before the Knight's Tale begins?",
+      "options": [
+        "858",
+        "100",
+        "1,200",
+        "24"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The General Prologue runs through line 858 in the traditional numbering of Fragment I.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-34",
+      "question": "Which classical wind is named near the opening of the General Prologue?",
+      "options": [
+        "Boreas, the north wind",
+        "Zephirus, the west wind",
+        "Notus, the south wind",
+        "Eurus, the east wind"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The spring opening invokes Zephirus breathing life into shoots and fields.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-35",
+      "question": "Which critical description best fits the social portraits in the General Prologue?",
+      "options": [
+        "A single-hero classical epic",
+        "A drama restricted to royal characters",
+        "Estates satire depicting many ranks and professions",
+        "An exclusively religious sermon"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Its portraits survey medieval social roles, frequently contrasting expected conduct with actual behaviour.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://www.cambridge.org/core/books/abs/new-companion-to-critical-thinking-on-chaucer/summaries-of-the-works-of-chaucer/F0B30171F34BDB22A7624BF1CEFC5E54",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-36",
+      "question": "Consider these statements about the narrator of the General Prologue:\nI. He speaks as a first-person member of the pilgrim company.\nII. Readers must always accept his favourable comments as objective fact.\nIII. Contrasts between his praise and a pilgrim's behaviour can create irony.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The pilgrim narrator participates in events, while his apparently innocent admiration can invite an ironic reading.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-37",
+      "question": "Consider these statements about Chaucer's characterization:\nI. Clothes and manners can reveal social aspirations.\nII. Occupation helps identify a pilgrim's place in society.\nIII. Every clerical figure is portrayed as equally corrupt.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Costume and profession are descriptive tools, but the virtuous Parson prevents a blanket charge against all clergy.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-38",
+      "question": "Consider these claims about the opening of the General Prologue:\nI. Nature's renewal helps prompt travel.\nII. Pilgrimage links travellers from different parts of England.\nIII. The travellers are introduced as one family from a single estate.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Spring urges people to travel; the pilgrims are of diverse backgrounds, not a single family or class.",
+      "topic": "general-prologue",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-39",
+      "question": "Which pilgrim is especially associated with chivalry, honour, and military service?",
+      "options": [
+        "The Miller",
+        "The Summoner",
+        "The Knight",
+        "The Cook"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chaucer introduces the Knight as an experienced warrior who values honour and courtesy.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-40",
+      "question": "What is the family relationship between the Knight and the Squire?",
+      "options": [
+        "Uncle and nephew",
+        "Brothers",
+        "Master and chaplain",
+        "Father and son"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Chaucer introduces the Squire as the Knight's young son, who accompanies him on the pilgrimage.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-41",
+      "question": "What name is given to the Prioress in the General Prologue?",
+      "options": [
+        "Madame Eglentyne",
+        "Dame Alice",
+        "Lady Blanche",
+        "Madame Prudence"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Chaucer calls the Prioress Madame Eglentyne and describes her polished manners and affected French.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-42",
+      "question": "What worldly activity particularly attracts the Monk described in the General Prologue?",
+      "options": [
+        "Copying manuscripts all day",
+        "Hunting and riding",
+        "Begging barefoot in villages",
+        "Teaching poor children grammar"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Monk loves hunting, horses and rich living more than strict observance of monastic rules.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-43",
+      "question": "Consider these statements about the Friar:\nI. His name is Hubert.\nII. He is shown as socially polished and good at acquiring money.\nIII. The narrator presents him as a model of strict poverty without any irony.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hubert is a merry, socially skilful friar; his profitable conduct is presented with critical irony.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-44",
+      "question": "How many husbands does the Wife of Bath say she has had in the General Prologue?",
+      "options": [
+        "One",
+        "Two",
+        "Seven",
+        "Five"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Wife of Bath has had five husbands at the church door, an early signal of her marital experience.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-45",
+      "question": "Which item is especially precious to the Clerk of Oxford, who prefers learning to luxury?",
+      "options": [
+        "His books",
+        "His hunting falcons",
+        "His jeweled horse harness",
+        "His collection of relics"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Clerk spends his resources on books and study instead of expensive possessions.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-46",
+      "question": "Consider these statements about the Parson:\nI. He is poor in money but rich in moral conduct.\nII. He practises the teaching he gives to others.\nIII. He sells false relics to increase parish income.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Parson is a positive portrait of selfless pastoral duty; the selling of dubious relics characterizes the Pardoner.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-47",
+      "question": "Which pilgrim is introduced as the brother of the virtuous Parson?",
+      "options": [
+        "The Franklin",
+        "The Physician",
+        "The Plowman",
+        "The Reeve"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The honest Plowman is explicitly presented as the Parson's brother.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-48",
+      "question": "Consider these statements about the Pardoner:\nI. He claims to possess valuable religious relics.\nII. His trade involves the sale of pardons or indulgences.\nIII. Chaucer presents all his relics as unquestionably genuine.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Pardoner profits from claimed holy objects and pardons, but the account strongly questions their authenticity.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-49",
+      "question": "Which pilgrim serves as an officer who summons people before an ecclesiastical court?",
+      "options": [
+        "The Summoner",
+        "The Franklin",
+        "The Yeoman",
+        "The Manciple"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Summoner's official role is to bring accused people before church courts.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-07-chaucer1-mix-50",
+      "question": "Match the pilgrim with the most characteristic portrait detail:\nA. Wife of Bath\nB. Clerk of Oxford\nC. Monk\nD. Miller\n1. Fond of hunting\n2. Loves books and study\n3. Powerful wrestler\n4. Experienced in marriage",
+      "options": [
+        "A-2, B-4, C-1, D-3",
+        "A-4, B-2, C-1, D-3",
+        "A-4, B-1, C-2, D-3",
+        "A-3, B-2, C-1, D-4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Wife of Bath recounts marriages, the Clerk prizes books, the Monk hunts, and the Miller is strong.",
+      "topic": "pilgrims",
+      "topicId": "the-canterbury-tales",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "The Canterbury Tales: plan, General Prologue, the pilgrims",
+      "src": "https://chaucer.fas.harvard.edu/pages/general-prologue-0",
+      "periodId": "age-of-chaucer"
+    }
+  ]
+}
