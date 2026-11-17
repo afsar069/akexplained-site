@@ -247,6 +247,12 @@
       '</div>';
   }
 
+  /* Catalog me paper ka apna naam: MCQ day ka topic. Sirf "Day 13" ho to naam nahi mana jata. */
+  function dayTitleFrom(row) {
+    var t = String(row && row.title != null ? row.title : '').trim();
+    return /^day\s*\d+$/i.test(t) ? '' : t;
+  }
+
   /* Live row mila: upar ke banner me sahi ginti dikhao, taaki build-time ki ginti galat ho to bhi sach rahe. */
   function applyCatalogMeta(row) {
     if (!row || root.getAttribute('data-mode') === 'review') return;
@@ -254,7 +260,9 @@
     if (!(qn > 0)) return;
     var lede = document.getElementById('cbtLede');
     if (!lede) return;
-    var dayTitle = root.getAttribute('data-day-title');
+    /* Jis din ka naam build ke waqt pata hi nahi tha (paper abhi upload hua hai), wo naam
+       live catalog se aata hai. "Day 13" jaisa naam dohrane ka koi fayda nahi, to use chhod do. */
+    var dayTitle = root.getAttribute('data-day-title') || dayTitleFrom(row);
     if (EXAM_DAY && dayTitle) {
       lede.textContent = dayTitle + ' · ' + qn + ' ' + (root.getAttribute('data-day-level-label') || '') + ' questions · Free login required.';
     } else {

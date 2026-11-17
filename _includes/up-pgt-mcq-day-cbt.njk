@@ -1,8 +1,17 @@
 {% extends "mcq-page.njk" %}
-{% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}: {{ day.title }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
-{% set pageDescription %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if day.access == 'login' %}A free login is required.{% else %}Free for everyone, with no login required.{% endif %}{% endset %}
+{# UP PGT English MCQ day ka CBT page.
+   Free days 1–10: public file (data-src), live-day.njk / live-day-review.njk se bante hain.
+   Login days (11 se aage): gated-day.njk / gated-day-review.njk se PEHLE hi ban jate hain, sawal
+   Supabase mcq_papers me. Self-serve publish (rule 17): data-catalog-check lagta hai, to page tabhi
+   khulta hai jab set paper_catalog me LIVE ho; warna "This set is not open yet".
+   Jis din ka paper abhi upload hi nahi hua, uska naam aur ginti build ke waqt pata nahi — isliye
+   yahan kuch bhi nahi likhte; cbt.js live catalog se asli naam aur ginti bhar deta hai. #}
+{% set known = day.title %}
+{% set gated = day.managed %}
+{% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}{% if known %}: {{ day.title }}{% endif %}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
+{% set pageDescription %}{% if known %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if gated %}A free login is required.{% else %}Free for everyone, with no login required.{% endif %}{% else %}Day {{ day.number }} of the UP PGT English MCQ practice days. Log in with a free account to take it once it is open.{% endif %}{% endset %}
 {% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/{% if examReview %}review/{% endif %}{% endset %}
-{% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
+{% if examReview or not day.liveAtBuild %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
 {% set mainClass = "cbt" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
@@ -12,7 +21,7 @@
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP PGT English</p>
     <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Day {{ day.number }}{% endif %}</h1>
-    <p class="lede" id="cbtLede">{% if examReview %}{{ day.title }} · Your answers, the correct answers, and explanations.{% elif day.access == 'login' %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free login required.{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
+    <p class="lede" id="cbtLede">{% if examReview %}{% if known %}{{ day.title }} · {% endif %}Your answers, the correct answers, and explanations.{% elif not known %}Log in with a free account to take this set.{% elif gated %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free login required.{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
   </div>
 </section>
 <div class="cbt-printhead" aria-hidden="true">
@@ -21,7 +30,7 @@
 </div>
 <div class="wrap cbt-body" data-cbt data-exam-day{% if examReview %} data-mode="review"{% endif %}
      data-set="{{ day.setId }}"
-     {% if day.access == 'login' %}data-gated="{{ day.setId }}" data-catalog-check="{{ day.setId }}" data-levels="{{ day.level }}" data-default-level="{{ day.level }}" data-day-title="{{ day.title }}" data-day-level-label="{{ day.levelName | lower }}"{% else %}data-src="/assets/questions/{{ day.questionFile }}"{% endif %}
+     {% if gated %}data-gated="{{ day.setId }}" data-catalog-check="{{ day.setId }}" data-levels="{{ day.level }}" data-default-level="{{ day.level }}"{% if known %} data-day-title="{{ day.title }}"{% endif %} data-day-level-label="{{ day.levelName | lower }}"{% else %}data-src="/assets/questions/{{ day.questionFile }}"{% endif %}
      data-exam-home="/exams/pgt/up-pgt/"
      data-exam-index-label="UP PGT MCQs"
      data-back="/exams/pgt/up-pgt/mcqs/{% if examReview %}day-{{ day.number }}/{% endif %}"

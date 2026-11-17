@@ -25,9 +25,20 @@ const mcqSpec = require("./mcqSpec.json");
 
 const pgtMockTests = require("./pgtMockTests");
 const statePscMockTests = require("./statePscMockTests");
+const pgtMcqSeries = require("./pgtMcqSeries");
+const pgtMcqDays = require("./pgtMcqDays");
 const pgtLoginNumbers = pgtMockTests.filter(function (t) { return t.access === "login"; }).map(function (t) { return t.number; });
 const pgtFreeNumbers = pgtMockTests.filter(function (t) { return t.access === "free"; }).map(function (t) { return t.number; });
 const apNumbers = statePscMockTests.range.map(function (t) { return t.number; });
+
+/* UP PGT MCQ days: every login day (11 upward) has a page. Days 11 and 12 were loaded into the
+   database under their own ids before this series became self-serve, so the id of a day is taken
+   from the registry, not guessed: dayIds holds the ones that are not prefix + number. */
+const pgtDayNumbers = pgtMcqDays.filter(function (d) { return d.managed; }).map(function (d) { return d.number; });
+const pgtDayIds = {};
+pgtMcqDays.forEach(function (d) {
+  if (d.managed && d.setId !== pgtMcqSeries.prefix + d.number) pgtDayIds[d.number] = d.setId;
+});
 
 const AGES = (mcqSpec.ages || []).map(function (a) { return { slug: a.slug, name: a.name }; });
 
@@ -45,6 +56,8 @@ const DESTINATIONS = [
     minNumber: Math.min.apply(null, apNumbers),
     maxNumber: Math.max.apply(null, apNumbers),
     pageBase: "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/",
+    pageRoute: "test-{n}/",
+    pageLevels: ["medium"],
     numberNote: "Pages are ready for Mock Tests " + Math.min.apply(null, apNumbers) + " to " + Math.max.apply(null, apNumbers) +
       ". For a higher number, ask Claude to make more pages first.",
     hub: "exams/state-psc/up-assistant-professor/paper-2-mock-tests/index.njk"
@@ -62,10 +75,33 @@ const DESTINATIONS = [
     minNumber: Math.min.apply(null, pgtLoginNumbers),
     maxNumber: Math.max.apply(null, pgtLoginNumbers),
     pageBase: "/exams/pgt/up-pgt/mock-tests/",
+    pageRoute: "test-{n}/",
+    pageLevels: ["medium"],
     numberNote: "Mock Tests " + Math.min.apply(null, pgtFreeNumbers) + " to " + Math.max.apply(null, pgtFreeNumbers) +
       " are the free tests. A login test here must be number " + Math.min.apply(null, pgtLoginNumbers) + " to " +
       Math.max.apply(null, pgtLoginNumbers) + ".",
     hub: "exams/pgt/up-pgt/mock-tests/index.njk"
+  },
+  {
+    id: "up-pgt-day",
+    label: "UP PGT English — MCQ Day",
+    examId: "pgt",
+    kind: "mcq-set",
+    prefix: pgtMcqSeries.prefix,
+    titleWord: "Day",
+    needsAge: false,
+    autoPage: true,
+    selfServe: true,
+    ids: pgtDayIds,
+    minNumber: Math.min.apply(null, pgtDayNumbers),
+    maxNumber: Math.max.apply(null, pgtDayNumbers),
+    pageBase: pgtMcqSeries.base,
+    pageRoute: "day-{n}/",
+    pageLevels: ["medium"],
+    titleNote: "Type the day's topic here, for example \u201cShakespeare 3: Tragedies\u201d. Students see this on the day's card.",
+    numberNote: "Days 1 to " + pgtMcqSeries.freeMax + " are the free days. A login day here must be number " +
+      Math.min.apply(null, pgtDayNumbers) + " to " + Math.max.apply(null, pgtDayNumbers) + ".",
+    hub: "exams/pgt/up-pgt/mcqs/index.njk"
   },
   {
     id: "lit-mcq",
@@ -76,6 +112,7 @@ const DESTINATIONS = [
     titleWord: "Set",
     needsAge: true,
     autoPage: false,
+    usesRegistryPlan: true,
     ages: AGES,
     hub: "quizzes/mcq/index.html"
   }
@@ -88,5 +125,7 @@ module.exports = DESTINATIONS.map(function (d) {
       d.hub + " is not in the repo. Open the page first, or remove the destination."
     );
   }
+  /* ids is printed on the page as one attribute, so it must be safe inside HTML. */
+  d.idsJson = JSON.stringify(d.ids || {});
   return d;
 });

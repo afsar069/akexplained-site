@@ -8,39 +8,51 @@ pgt_practice_hero_title: English MCQs
 pgt_practice_collection_label: MCQs
 pgt_resources: true
 ---
+{#- Days 1–10 are free public files and are never touched by the script.
+    Every later day is a login day and is self-serve-published (rule 17): each card carries
+    data-paper-slot (and data-slot-id, because Days 11 and 12 were loaded under their own ids),
+    and assets/paper-list.js (slot mode) flips it between "Coming soon" and lock/Start from the
+    LIVE paper catalog when the page is opened. What is printed here is the build-time picture,
+    kept as the fallback for no-JS, search engines and a failed read. -#}
 <section class="pgt-practice-index" aria-labelledby="pgt-practice-index-title">
   <header class="pgt-practice-intro">
     <div>
       <h2 id="pgt-practice-index-title">Choose your practice day</h2>
-      <p>Days 1 to 10 are open without login. Days 11 and 12 are open with a free login. More days are coming soon.</p>
+      <p>Days 1 to {{ pgtMcqSeries.freeMax }} are open without login. The later days open with a free login as each one is published.</p>
     </div>
-    <span>60 days</span>
+    <span>{{ pgtMcqDays.length }} days</span>
   </header>
-  <div class="pgt-practice-groups">
+  <div class="pgt-practice-groups"
+       data-paper-slots
+       data-kind="mcq-set"
+       data-prefix="{{ pgtMcqSeries.prefix }}"
+       data-base="{{ pgtMcqSeries.base }}"
+       data-route="day-{n}/"
+       data-label="Day"
+       data-copy="title">
     {% for group in pgtMcqGroups %}
     <details class="pgt-practice-group"{% if loop.first %} open{% endif %}>
       <summary>
         <img class="pgt-practice-group-icon" src="/assets/icons/tabler/calendar-check.svg" alt="" width="28" height="28">
         <span>Days {{ group.startLabel }}–{{ group.endLabel }}</span>
-        <small>10 days</small>
+        <small>{{ group.days.length }} days</small>
         <img class="pgt-practice-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
       </summary>
       <div class="pgt-practice-card-grid">
         {% for day in group.days %}
-        {% set dayUrl = '/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/' %}
-        {% if day.access == 'login' %}
+        {% if not day.managed %}
         <div class="pgt-practice-card">
           <span class="pgt-practice-card-copy"><strong>Day {{ day.label }}</strong><span>{{ day.title }}</span></span>
-          <a class="agehub-go agehub-go-lock" data-guest-only hidden href="/login/?next={{ dayUrl | urlencode }}" aria-label="Day {{ day.number }} needs a login. Log in to open it." title="Log in to open Day {{ day.number }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
-          <a class="agehub-go is-solid" data-auth-only hidden href="{{ dayUrl }}">Start</a>
+          <a class="agehub-go is-solid" href="{{ day.url }}" aria-label="Start Day {{ day.number }}">Start</a>
         </div>
-        {% elif day.access == 'free' %}
-        <div class="pgt-practice-card">
+        {% elif day.liveAtBuild %}
+        <div class="pgt-practice-card" data-paper-slot="{{ day.number }}" data-slot-id="{{ day.setId }}" data-slot-state="live" data-slot-copy="{{ day.title }}">
           <span class="pgt-practice-card-copy"><strong>Day {{ day.label }}</strong><span>{{ day.title }}</span></span>
-          <a class="agehub-go is-solid" href="{{ dayUrl }}" aria-label="Start Day {{ day.number }}">Start</a>
+          <a class="agehub-go agehub-go-lock" data-guest-only hidden href="/login/?next={{ day.url | urlencode }}" aria-label="Day {{ day.number }} needs a login. Log in to open it." title="Log in to open Day {{ day.number }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
+          <a class="agehub-go is-solid" data-auth-only hidden href="{{ day.url }}">Start</a>
         </div>
         {% else %}
-        <a class="pgt-practice-card" href="{{ dayUrl }}" aria-label="Day {{ day.number }} — coming soon">
+        <a class="pgt-practice-card" data-paper-slot="{{ day.number }}" data-slot-id="{{ day.setId }}" data-slot-state="soon" href="{{ day.url }}" aria-label="Day {{ day.number }} — coming soon">
           <span class="pgt-practice-card-copy">
             <strong>Day {{ day.label }}</strong>
             <span>Coming soon</span>
@@ -54,3 +66,4 @@ pgt_resources: true
     {% endfor %}
   </div>
 </section>
+<script src="/assets/paper-list.js" defer></script>

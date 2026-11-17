@@ -58,7 +58,7 @@ permalink: /admin/upload-paper/index.html
         <select id="upDest">
           <option value="">Choose one&hellip;</option>
           {%- for d in paperDestinations %}
-          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}" data-page-base="{{ d.pageBase or '' }}">{{ d.label }}</option>
+          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}" data-page-base="{{ d.pageBase or '' }}" data-page-route="{{ d.pageRoute or '' }}" data-page-levels="{{ (d.pageLevels or []) | join(',') }}" data-registry-plan="{{ 'yes' if d.usesRegistryPlan else '' }}" data-ids="{{ d.idsJson }}" data-title-note="{{ d.titleNote or '' }}">{{ d.label }}</option>
           {%- endfor %}
         </select>
       </label>
@@ -74,13 +74,14 @@ permalink: /admin/upload-paper/index.html
       <label class="field">
         <span>Test / set number</span>
         <input id="upNumber" type="number" min="1" step="1" inputmode="numeric" autocomplete="off">
-        <span class="hint">For a mock test, its number (for example 5). For an MCQ set, the set number for that age.</span>
+        <span class="hint">For a mock test, its number (for example 5). For an MCQ day, the day number (for example 13). For an MCQ set, the set number for that age.</span>
       </label>
       <p class="small" id="upSlugPreview" aria-live="polite"></p>
       <label class="field">
         <span>Title</span>
         <input id="upTitle" type="text" autocomplete="off">
         <span class="hint">The name shown for this paper. It is filled in for you from your choice; change it if you want.</span>
+        <span class="hint" id="upTitleNote"></span>
       </label>
       <label class="field">
         <span>Status</span>
