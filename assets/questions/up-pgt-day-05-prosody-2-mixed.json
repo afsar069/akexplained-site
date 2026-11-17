@@ -1,0 +1,919 @@
+{
+  "setId": "up-pgt-day-05-prosody-2",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 5,
+  "setName": "Day 5 · Prosody 2: Rhyme & Stanza Forms",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "blank-and-free-verse": "Blank and Free Verse",
+    "rhyme-royal-ottava": "Rhyme Royal and Ottava Rima",
+    "heroic-and-couplets": "Heroic Verse and Couplets",
+    "rhyme-scheme": "Rhyme Scheme",
+    "tercets-and-quatrains": "Tercets and Quatrains",
+    "spenserian-stanza": "Spenserian Stanza"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-01",
+      "question": "What does a rhyme scheme record in a stanza?",
+      "options": [
+        "The poet’s arrangement of punctuation marks",
+        "The sequence of stressed and unstressed feet",
+        "The number of syllables in every word",
+        "The pattern of matching end sounds represented by letters"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A rhyme scheme tracks end-rhyme relationships. The first distinct rhyme is A, the next B, and so on.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-02",
+      "question": "Four lines end in light, day, night, and play, in that order. What is their rhyme scheme?",
+      "options": [
+        "ABBA",
+        "ABAB",
+        "ABCB",
+        "AABB"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Light rhymes with night (A), and day rhymes with play (B), producing ABAB.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-03",
+      "question": "A quatrain ends with stone, clear, near, and alone. Which rhyme scheme fits these endings?",
+      "options": [
+        "ABAB",
+        "AABB",
+        "ABCB",
+        "ABBA"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Stone and alone share rhyme A; clear and near share rhyme B. Their order is ABBA.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-04",
+      "question": "A four-line stanza ends with rain, train, bell, shell. Which scheme results?",
+      "options": [
+        "ABCB",
+        "AABB",
+        "ABBA",
+        "ABAB"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The first two endings rhyme with each other, and the last two form a different rhyme pair: AABB.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-05",
+      "question": "A four-line ballad-like stanza ends with flame, night, shore, bright. Which rhyme scheme does it show?",
+      "options": [
+        "ABBA",
+        "ABAB",
+        "AABB",
+        "ABCB"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Only night and bright rhyme. Flame and shore each introduce a separate ending sound, so the pattern is ABCB.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-06",
+      "question": "Six original lines end with light, snow, bright, glow, sea, free. Which label sequence is correct?",
+      "options": [
+        "ABBACC",
+        "AABBCC",
+        "ABABCC",
+        "ABABAB"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Light/bright form A, snow/glow form B, and sea/free form C; therefore the sequence is ABABCC.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-07",
+      "question": "Eight line endings run sky, flame, high, shore, name, more, rain, train. Which is the full rhyme scheme?",
+      "options": [
+        "ABABABCC",
+        "ABBCACDD",
+        "ABACBCDD",
+        "ABACBCCD"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sky/high are A; flame/name B; shore/more C; rain/train D. The order is ABACBCDD.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-08",
+      "question": "A quatrain uses ABBA end rhyme. If only its third and fourth line endings exchange places, what scheme follows?",
+      "options": [
+        "ABBA",
+        "ABAB",
+        "AABB",
+        "BAAB"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The original sequence A-B-B-A becomes A-B-A-B when the third and fourth endings are exchanged.",
+      "topic": "rhyme-scheme",
+      "topicId": "rhyme-scheme",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: rhyme scheme",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-09",
+      "question": "Which description defines traditional English blank verse?",
+      "options": [
+        "Unrhymed iambic pentameter",
+        "Unrhymed lines with no regular metre",
+        "Eight-line stanzas rhyming ABABABCC",
+        "Rhyming iambic pentameter couplets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Blank verse keeps the five-beat iambic pattern but does not use a fixed end-rhyme scheme.",
+      "topic": "blank-and-free-verse",
+      "topicId": "blank-verse",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: blank verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-10",
+      "question": "Which major work is widely written in blank verse?",
+      "options": [
+        "Lord Byron’s Don Juan",
+        "Edmund Spenser’s The Faerie Queene",
+        "Alexander Pope’s The Rape of the Lock",
+        "John Milton’s Paradise Lost"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Paradise Lost is predominantly unrhymed iambic pentameter, the defining structure of English blank verse.",
+      "topic": "blank-and-free-verse",
+      "topicId": "blank-verse",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: blank verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-11",
+      "question": "An English poem has no end rhymes, but its lines generally contain five iambic feet. What is the best classification?",
+      "options": [
+        "Free verse",
+        "Blank verse",
+        "Ottava rima",
+        "Heroic couplets"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A consistent five-iamb rhythm without end rhyme points to blank verse rather than free verse.",
+      "topic": "blank-and-free-verse",
+      "topicId": "blank-verse",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: blank verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-12",
+      "question": "Which feature would DISQUALIFY an otherwise regular iambic-pentameter passage from being blank verse?",
+      "options": [
+        "Enjambment across two lines",
+        "A pause within a line",
+        "A systematic ABAB end-rhyme scheme",
+        "Occasional inversion of an iamb"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Blank verse permits metrical variation, pauses, and enjambment; a systematic end-rhyme scheme makes it rhymed verse instead.",
+      "topic": "blank-and-free-verse",
+      "topicId": "blank-verse",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: blank verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-13",
+      "question": "Consider the claims about a 14-line poem: I. Every line follows iambic pentameter. II. Its ends rhyme ABAB CDCD EFEF GG. III. It is blank verse because it has five iambs per line. Which judgment is correct?",
+      "options": [
+        "All three are correct because rhyme does not matter in blank verse.",
+        "I is false because iambic pentameter cannot occur in a sonnet.",
+        "II proves the poem is free verse rather than rhymed metre.",
+        "I and II may be true, but III is false because the lines rhyme."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Regular iambic pentameter can occur in both rhymed and unrhymed poetry; the stated sonnet rhyme pattern rules out blank verse.",
+      "topic": "blank-and-free-verse",
+      "topicId": "blank-verse",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: blank verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-14",
+      "question": "Which feature most clearly identifies free verse?",
+      "options": [
+        "No obligation to follow a fixed metrical pattern",
+        "Exactly five iambic feet in every line",
+        "A required ABABBCC rhyme scheme",
+        "A mandatory rhymed couplet at the end"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Free verse permits the poet to shape rhythm without adhering to a prescribed recurring metre.",
+      "topic": "blank-and-free-verse",
+      "topicId": "free-verse",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: free verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-15",
+      "question": "Which technique can still give free verse a sense of musical rhythm?",
+      "options": [
+        "Exactly ten syllables in every line",
+        "A required final alexandrine",
+        "Deliberate line breaks, repetition, and natural speech cadence",
+        "Identical end rhymes in every line"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Free verse can create audible rhythm through phrasing and repetition without a fixed metrical scheme.",
+      "topic": "blank-and-free-verse",
+      "topicId": "free-verse",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: free verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-16",
+      "question": "Which statement about free verse is the most accurate?",
+      "options": [
+        "All free-verse lines must contain exactly three unstressed syllables.",
+        "Free verse must eliminate all sonic devices, including alliteration.",
+        "Occasional rhyme may occur, but no regular rhyme-and-metre plan governs the whole poem.",
+        "Every free-verse stanza ends in a heroic couplet."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Free verse may contain echoes of rhyme and rhythmic pattern, but it is not committed to an established regular scheme.",
+      "topic": "blank-and-free-verse",
+      "topicId": "free-verse",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: free verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-17",
+      "question": "A poet uses unequal line lengths, speech-like pauses, and variable stresses, without a repeated metrical design. Which form fits best?",
+      "options": [
+        "Heroic couplets",
+        "Blank verse",
+        "Free verse",
+        "Rhyme royal"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Variable lengths and cadences with no sustained metrical grid characterize free verse.",
+      "topic": "blank-and-free-verse",
+      "topicId": "free-verse",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: free verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-18",
+      "question": "Two unrhymed passages are compared. Passage A consistently follows five iambs per line; Passage B varies the number and arrangement of stresses. Which distinction is sound?",
+      "options": [
+        "A is blank verse; B may be free verse.",
+        "Both must be free verse because neither rhymes.",
+        "A is ottava rima; B is rhyme royal.",
+        "Both must be blank verse because neither rhymes."
+      ],
+      "correct_option_id": 0,
+      "explanation": "End rhyme alone does not decide the form: A has regular iambic pentameter, whereas B lacks the sustained metrical pattern.",
+      "topic": "blank-and-free-verse",
+      "topicId": "free-verse",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: free verse",
+      "src": "https://www.poetryfoundation.org/education/glossary/free-verse"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-19",
+      "question": "What is the standard metrical and rhyming form of a heroic couplet?",
+      "options": [
+        "Two successive rhyming lines of iambic pentameter",
+        "Two unrhymed lines of iambic tetrameter",
+        "Four lines with ABBA end rhyme",
+        "Three lines with ABA end rhyme"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A heroic couplet consists of a pair of adjacent iambic-pentameter lines that rhyme with one another.",
+      "topic": "heroic-and-couplets",
+      "topicId": "heroic-couplet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: heroic couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-20",
+      "question": "Which eighteenth-century poet is especially associated with polished heroic couplets?",
+      "options": [
+        "Walt Whitman",
+        "Alexander Pope",
+        "Edmund Spenser",
+        "Gerard Manley Hopkins"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Alexander Pope regularly used balanced, rhymed iambic-pentameter pairs in Augustan poetry.",
+      "topic": "heroic-and-couplets",
+      "topicId": "heroic-couplet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 2: heroic couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-21",
+      "question": "What chiefly distinguishes a heroic couplet from a pair of consecutive blank-verse lines?",
+      "options": [
+        "Only blank verse can contain iambic pentameter.",
+        "A heroic couplet always has six stresses per line.",
+        "The heroic couplet has end rhyme; blank verse does not.",
+        "Blank verse is normally made of three-line stanzas."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Both can use iambic pentameter, but the heroic couplet has linked end rhymes and blank verse does not.",
+      "topic": "heroic-and-couplets",
+      "topicId": "heroic-couplet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: heroic couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-22",
+      "question": "A passage contains four successive iambic-pentameter lines rhyming AABB. How are these lines organised?",
+      "options": [
+        "As two adjacent heroic couplets",
+        "As one ottava-rima stanza",
+        "As a single rhyme-royal stanza",
+        "As two interlocking terza-rima tercets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In AABB, lines 1–2 rhyme and lines 3–4 rhyme, giving two consecutive five-beat rhyming pairs.",
+      "topic": "heroic-and-couplets",
+      "topicId": "heroic-couplet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 2: heroic couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-23",
+      "question": "Two rhyming iambic-pentameter lines form a complete sentence that stops at the second line. What makes this a CLOSED heroic couplet?",
+      "options": [
+        "The second line must be an alexandrine.",
+        "The syntax and sense reach a clear grammatical close at the end of the pair.",
+        "The two lines have no end rhyme.",
+        "The sentence must continue into the next couplet."
+      ],
+      "correct_option_id": 1,
+      "explanation": "A closed couplet contains a complete grammatical unit; enjambment beyond the pair would make it open instead.",
+      "topic": "heroic-and-couplets",
+      "topicId": "heroic-couplet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 2: heroic couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-24",
+      "question": "How many lines form a couplet?",
+      "options": [
+        "Two",
+        "Three",
+        "Four",
+        "Seven"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A couplet is a two-line verse unit, most commonly linked by end rhyme.",
+      "topic": "heroic-and-couplets",
+      "topicId": "couplet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-25",
+      "question": "Which rhyme pattern consists of two consecutive rhyming couplets?",
+      "options": [
+        "AABB",
+        "ABBA",
+        "ABAB",
+        "ABCB"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The first two lines share rhyme A and the next two share rhyme B, forming two pairs.",
+      "topic": "heroic-and-couplets",
+      "topicId": "couplet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-26",
+      "question": "What feature makes a couplet CLOSED rather than OPEN?",
+      "options": [
+        "Its lines do not rhyme at all.",
+        "It contains three lines rather than two.",
+        "It necessarily uses six iambic feet.",
+        "Its grammatical sense ends with the second line."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Closure depends on completed syntax at the end of the pair, not on a particular subject or change of meter.",
+      "topic": "heroic-and-couplets",
+      "topicId": "couplet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-27",
+      "question": "A four-line stanza rhymes ABAB. A student calls lines 1–2 and 3–4 two rhymed couplets. Why is that classification wrong?",
+      "options": [
+        "Couplets cannot form part of a four-line stanza.",
+        "An ABAB stanza contains no end rhyme at all.",
+        "A couplet must always be six lines long.",
+        "Neither adjacent pair rhymes internally; each A rhymes with a nonadjacent A, and likewise for B."
+      ],
+      "correct_option_id": 3,
+      "explanation": "The defining paired end rhymes would be AA and BB, not the alternating pattern ABAB.",
+      "topic": "heroic-and-couplets",
+      "topicId": "couplet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: couplet",
+      "src": "https://www.poetryfoundation.org/education/glossary/couplet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-28",
+      "question": "What is the defining line count of a tercet?",
+      "options": [
+        "Four lines",
+        "Two lines",
+        "Eight lines",
+        "Three lines"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A tercet is a unit of three poetic lines, whether rhymed or unrhymed.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "tercet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: tercet",
+      "src": "https://www.poetryfoundation.org/education/glossary/tercet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-29",
+      "question": "Which pattern can be used by a rhymed tercet?",
+      "options": [
+        "ABABABCC",
+        "AAA",
+        "ABAB",
+        "ABBA"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A three-line unit may use a single shared end rhyme, giving the pattern AAA.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "tercet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: tercet",
+      "src": "https://www.poetryfoundation.org/education/glossary/tercet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-30",
+      "question": "A poet places three lines together, with lines 1 and 3 rhyming while line 2 differs. What is the unit and pattern?",
+      "options": [
+        "An AABB couplet pair",
+        "An ABABABCC octave",
+        "An ABBA quatrain",
+        "An ABA tercet"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Three lines make a tercet; matching first and third endings produce ABA.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "tercet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: tercet",
+      "src": "https://www.poetryfoundation.org/education/glossary/tercet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-31",
+      "question": "In terza rima, a first tercet rhymes ABA. Which scheme must the next interlocking tercet take?",
+      "options": [
+        "BAB",
+        "CDC",
+        "BCB",
+        "ABB"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Terza rima carries the previous stanza’s middle-line rhyme into the first and third lines of the next tercet.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "tercet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: tercet",
+      "src": "https://www.poetryfoundation.org/education/glossary/tercet"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-32",
+      "question": "How many lines are in a quatrain?",
+      "options": [
+        "Three",
+        "Four",
+        "Seven",
+        "Nine"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A quatrain is a four-line stanza, and it can use several different rhyme patterns.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "quatrain",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: quatrain",
+      "src": "https://www.poetryfoundation.org/education/glossary/quatrain"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-33",
+      "question": "Which name is commonly given to the ABBA quatrain rhyme pattern?",
+      "options": [
+        "Paired rhyme",
+        "Enclosed or envelope rhyme",
+        "Alternate rhyme",
+        "Monorhyme"
+      ],
+      "correct_option_id": 1,
+      "explanation": "ABBA encloses the inner BB pair within matching A end sounds.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "quatrain",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: quatrain",
+      "src": "https://www.poetryfoundation.org/education/glossary/quatrain"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-34",
+      "question": "In a typical ABCB ballad quatrain, which lines rhyme with one another?",
+      "options": [
+        "The first and second lines",
+        "The first and third lines",
+        "All four lines",
+        "The second and fourth lines"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In ABCB the B rhyme recurs on lines 2 and 4; lines 1 and 3 do not rhyme with those or each other.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "quatrain",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: quatrain",
+      "src": "https://www.poetryfoundation.org/education/glossary/quatrain"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-35",
+      "question": "Two quatrains have schemes ABBA and ABAB. Which comparison is correct?",
+      "options": [
+        "ABBA encloses a central pair; ABAB alternates two rhymes.",
+        "Both are examples of AABB paired rhyme.",
+        "ABAB lacks any matching end sounds.",
+        "ABBA requires five lines, unlike ABAB."
+      ],
+      "correct_option_id": 0,
+      "explanation": "ABBA places A around two B lines, whereas ABAB alternates A and B across four lines.",
+      "topic": "tercets-and-quatrains",
+      "topicId": "quatrain",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: quatrain",
+      "src": "https://www.poetryfoundation.org/education/glossary/quatrain"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-36",
+      "question": "How many lines are in a traditional rhyme-royal stanza?",
+      "options": [
+        "Nine",
+        "Seven",
+        "Five",
+        "Eight"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Rhyme royal is a seven-line stanza typically written in iambic pentameter.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: rhyme royal",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-37",
+      "question": "Which end-rhyme pattern is standard for rhyme royal?",
+      "options": [
+        "ABABBCBCC",
+        "ABABBCC",
+        "ABABABCC",
+        "ABABCDCD"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Rhyme royal follows ABABBCC, with a final CC couplet.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: rhyme royal",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-38",
+      "question": "Which medieval English poet famously employed rhyme royal in Troilus and Criseyde?",
+      "options": [
+        "Edmund Spenser",
+        "Geoffrey Chaucer",
+        "Alexander Pope",
+        "John Milton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chaucer helped establish the seven-line ABABBCC stanza in English narrative poetry.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: rhyme royal",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-39",
+      "question": "A seven-line stanza has rhyme scheme ABABBCC. How many distinct rhyme sounds are present, and which lines form the closing couplet?",
+      "options": [
+        "Two distinct rhymes; lines 5 and 6",
+        "Four distinct rhymes; lines 1 and 7",
+        "Three distinct rhymes; lines 4 and 5",
+        "Three distinct rhymes; lines 6 and 7"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A, B, and C are the three rhyme families; C appears twice at the end, in lines 6 and 7.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: rhyme royal",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-40",
+      "question": "A student writes seven lines rhyming ABABBCC, but all lines are regular iambic tetrameter. What is the most precise assessment?",
+      "options": [
+        "The rhyme pattern matches rhyme royal, but its customary ten-syllable pentameter lines are absent.",
+        "It must be a Spenserian stanza because it ends in CC.",
+        "It is fully standard rhyme royal because the form requires tetrameter.",
+        "It must be ottava rima, since that form has seven lines."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Standard English rhyme royal uses seven iambic-pentameter lines; its ABABBCC rhyme pattern alone does not reproduce the usual metrical form.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: rhyme royal",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-41",
+      "question": "How many lines make up an ottava-rima stanza?",
+      "options": [
+        "Seven",
+        "Six",
+        "Eight",
+        "Nine"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ottava rima is an eight-line stanza imported into English from Italian verse.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: ottava rima",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-42",
+      "question": "Which rhyme scheme belongs to ottava rima?",
+      "options": [
+        "ABABABCC",
+        "AABCCB",
+        "ABABBCBCC",
+        "ABABBCC"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ottava rima alternates two rhymes over six lines and closes with a CC couplet.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: ottava rima",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-43",
+      "question": "Which major English-language poem uses ottava rima for extended comic and satirical narration?",
+      "options": [
+        "Shelley’s Adonais",
+        "Milton’s Paradise Lost",
+        "Lord Byron’s Don Juan",
+        "Spenser’s The Faerie Queene"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Byron adapted the eight-line ABABABCC form for the witty, digressive narrative of Don Juan.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: ottava rima",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-44",
+      "question": "Which feature distinguishes ottava rima from rhyme royal when both end with a rhyming couplet?",
+      "options": [
+        "Ottava rima has eight lines and ABABABCC; rhyme royal has seven and ABABBCC.",
+        "Ottava rima ends in DD; rhyme royal never ends in a couplet.",
+        "Ottava rima has seven lines; rhyme royal has eight.",
+        "Ottava rima is always unrhymed, while rhyme royal is rhymed."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Both are rhymed stanzas that close in a couplet, but their line counts and preceding rhyme sequences differ.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: ottava rima",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-45",
+      "question": "An eight-line draft is labelled ABABACCC. Which SINGLE revision makes its scheme exactly ottava rima?",
+      "options": [
+        "Change line 8 from C to B.",
+        "Change line 5 from A to C.",
+        "Change line 6 from rhyme C to rhyme B.",
+        "Change line 7 from C to A."
+      ],
+      "correct_option_id": 2,
+      "explanation": "ABABACCC becomes ABABABCC when the sixth line adopts rhyme B; the final two lines remain CC.",
+      "topic": "rhyme-royal-ottava",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: ottava rima",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-46",
+      "question": "How many lines are in a Spenserian stanza?",
+      "options": [
+        "Seven",
+        "Eight",
+        "Nine",
+        "Ten"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Spenserian stanza contains nine rhymed lines, the last of which is longer than the first eight.",
+      "topic": "spenserian-stanza",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: Spenserian stanza",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-47",
+      "question": "Which work by Edmund Spenser is especially associated with the Spenserian stanza?",
+      "options": [
+        "The Faerie Queene",
+        "The Prelude",
+        "Don Juan",
+        "Paradise Lost"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Spenser developed this interlaced nine-line stanza in The Faerie Queene.",
+      "topic": "spenserian-stanza",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Stanza forms: Spenserian stanza",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-48",
+      "question": "What is the traditional rhyme scheme of the Spenserian stanza?",
+      "options": [
+        "ABABBCC",
+        "ABBAABBA",
+        "ABABABCC",
+        "ABABBCBCC"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Its nine-line rhyme scheme is ABABBCBCC, with interlocking B and C sounds.",
+      "topic": "spenserian-stanza",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Stanza forms: Spenserian stanza",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-49",
+      "question": "What metrical change occurs in the ninth line of a standard Spenserian stanza?",
+      "options": [
+        "A rhymed couplet replaces the ninth line entirely.",
+        "An alexandrine of six iambic feet replaces the preceding iambic-pentameter lines.",
+        "A seven-foot trochaic line replaces the preceding blank verse.",
+        "A three-foot iambic line replaces eight lines of hexameter."
+      ],
+      "correct_option_id": 1,
+      "explanation": "The first eight lines are iambic pentameter; the ninth is an alexandrine, or iambic hexameter.",
+      "topic": "spenserian-stanza",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: Spenserian stanza",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-05-prosody-2-mix-50",
+      "question": "In the scheme ABABBCBCC, which four line positions share the B rhyme?",
+      "options": [
+        "Lines 2, 4, 5, and 7",
+        "Lines 5, 6, 8, and 9",
+        "Lines 2, 4, 6, and 9",
+        "Lines 1, 3, 6, and 8"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Reading ABABBCBCC from left to right, B occurs at positions 2, 4, 5, and 7.",
+      "topic": "spenserian-stanza",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Stanza forms: Spenserian stanza",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    }
+  ]
+}
