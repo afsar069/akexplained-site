@@ -1523,3 +1523,22 @@ count, not which questions, not email, not timing), and how to stay off.
   `periodId` is present (allowed — those questions will not show in the dashboard's by-period view).
 - Tested: 23 Playwright checks on the new path (the owner's real file, re-upload → rev 2, a lower named rev
   still refused, two files where one has no level, rubbish still refused) plus the earlier 23 + 37 checks green.
+
+## Three fixes after the MCQ-day series (2026-11-17, on the branch)
+1. **Period tags for Day 13.** The owner's Day 13 file (Shakespeare Tragedies) carried topic tags but no
+   `periodId`. A rev 2 copy was prepared and handed to the owner to upload; nothing but the tags was added.
+   The tags follow rule 12: Hamlet questions → `elizabethan` (c. 1600-01), Macbeth / Othello / King Lear →
+   `jacobean-era`, and four questions that are about someone else's work take their own age — the 1919 T. S.
+   Eliot essay → `modern-era`, Coleridge's "motiveless malignity" → `romantic`, Sidney's *Arcadia* as the
+   Gloucester subplot's source → `elizabethan`, Nahum Tate's 1681 adaptation → `restoration-era` (the question
+   itself says "Restoration playwright").
+2. **Draft sets no longer look open to the owner.** `assets/mcq-age.js` asked `paper_catalog` without
+   `status = 'live'`; an admin reads drafts by RLS, so the owner saw a Draft literature set as open. One line.
+3. **The dashboard age pool follows the live catalog.** It was a build-time number, so a login set published
+   self-serve was not in the denominator until the next registry edit + rebuild (the "known gap" of rule 17
+   series 2). `tools/build-syllabus.js` now writes a per-age `liveSets` list, and `assets/dashboard.js`
+   (`applyLiveCatalog`) re-adds the MCQ part of each pool against the live catalog: free sets are files and
+   always count, a login set counts while it is live, a set published into a Coming-soon slot is added, and a
+   failed read leaves the built pool alone.
+- Tested: 9 new Playwright checks (pool unchanged / set drafted / set published / read fails / another age
+  untouched / both hub reads ask for live rows) and the earlier 37 + 23 + 23 checks still green.

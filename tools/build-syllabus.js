@@ -51,13 +51,17 @@ function mcqPools(root) {
   return (spec.ages || []).map(function (age) {
     let total = 0;
     const ids = {};
+    const liveSets = [];                                        // what went into `total`, set by set (see below)
     (age.sets || []).forEach(function (set) {
       if (!set.live) return;                                    // only live sets count
       const setId = age.slug + '-set-' + set.n;
       if (set.access) {                                         // login set: no file in the repo; count from the registry
-        total += (set.count | 0) * (set.levels || []).length;   // (the load tool checks each level has exactly `count` questions)
+        const n = (set.count | 0) * (set.levels || []).length;  // (the load tool checks each level has exactly `count` questions)
+        total += n;
+        liveSets.push({ id: setId, access: 'login', count: n });
         return;
       }
+      const before = total;
       (set.levels || []).forEach(function (lvl) {
         const f = path.join(qdir, setId + '-' + lvl + '.json');
         if (!fs.existsSync(f)) throw new Error('[syllabus] live MCQ set file missing: ' + path.relative(root, f));
@@ -70,8 +74,9 @@ function mcqPools(root) {
           total++;
         });
       });
+      liveSets.push({ id: setId, access: 'free', count: total - before });
     });
-    return { slug: age.slug, total: total };
+    return { slug: age.slug, total: total, liveSets: liveSets };
   });
 }
 
@@ -105,6 +110,11 @@ module.exports = function buildSyllabus(root) {
     return {
       slug: slug, name: name, prefix: pref[0],
       dailyTotal: total, mcqSlug: mcq[idx].slug, mcqTotal: mcq[idx].total,
+      /* Which MCQ sets that count is made of. The dashboard re-does this sum against the LIVE
+         paper catalog (rule 17): a login set published self-serve is added, one hidden as Draft
+         is taken out, so the pool follows the site with no rebuild. Free sets are files and
+         always count. */
+      liveSets: mcq[idx].liveSets || [],
       total: total + mcq[idx].total
     };
   });
