@@ -1482,3 +1482,28 @@ count, not which questions, not email, not timing), and how to stay off.
 ## Landing page: review strip, and one more rename (2026-11-14)
 - Under the reviews on `index.html`, the pen icon + gold "Write a review" button was replaced by **one thin full-width strip** (`.rvcta` in `assets/site.css`, dark teal with a gold underline) that is the whole link to `/write-a-review/` and reads "Write your review or Share your ideas". The "Write a review" button inside the empty-state card (`home.js`) is unchanged.
 - The card on `/video-lessons/` that links to the timeline is now titled "British Literature by Ages", like the landing page.
+
+## UP PGT MCQ days: self-serve publishing (2026-11-17, on the branch, NOT merged)
+- **What the owner can now do with no Claude and no rebuild:** upload a day's question file at `/admin/upload-paper/`
+  (destination **UP PGT English — MCQ Day**, a day number 11–60, the day's topic as the Title), mark it **Live** on
+  `/admin/papers/`, and the day's card on `/exams/pgt/up-pgt/mcqs/` and its page at `/exams/pgt/up-pgt/mcqs/day-N/` open
+  at once for logged-in students. Draft hides both again. Days 1–10 stay free and are untouched.
+- **How:** the hub's slots 11–60 are flipped from the live `paper_catalog` by `assets/paper-list.js` (slot mode), and
+  every slot's page is pre-built with `data-catalog-check`, so a day that is not live says "This set is not open yet"
+  instead of 404ing or showing a login wall (CLAUDE.md rule 17, series 4).
+- **New, general bits:** a slot may name its own paper id (`data-slot-id`), slot mode now asks the catalog for exactly
+  the ids on the page, a card's second line can be the paper's own title (`data-copy="title"`), and `cbt.js` takes a
+  day's title from the catalog when the build did not know it. The upload page's final check also catches a file saved
+  at a level the series' pages cannot read.
+- **Ids:** a new day is `up-pgt-mcq-day-N`. Days 11 and 12 keep the ids they were loaded with
+  (`up-pgt-day-11-shakespeare-comedies`, `up-pgt-day-12-shakespeare-major-comedies`); the registry holds them and the
+  upload page reuses them, so re-uploading Day 11 with a raised rev replaces it instead of making a second copy. No
+  database change was needed and none was made.
+- **More than 60 days later:** raise `total` in `_data/pgtMcqSeries.js` and rebuild — the grid, the pre-built pages, the
+  sitemap and the number the upload page accepts all follow.
+- **Tested:** 60 Playwright checks against `_site` with a mocked Supabase (guest / student, live / not live / read
+  fails, old and new ids, free days untouched, UP PGT mock-test and UP AP regressions, 375px). `npx eleventy` builds
+  clean and no internal link 404s.
+- **Open, for the owner to decide:** the two legacy day ids could be renamed to `up-pgt-mcq-day-11` / `-12` so every day
+  shares one shape. It needs SQL on the live database (and leaves an unused old `paper_catalog` row), so it was not done
+  unasked; nothing is broken without it.

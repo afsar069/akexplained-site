@@ -23,8 +23,8 @@ eleventyExcludeFromCollections: true
 {%- for day in pgtMcqLiveDays %}
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/</loc><priority>0.6</priority></url>
 {%- endfor %}
-{%- for day in pgtMcqLoginDays %}
-  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/</loc><priority>0.6</priority></url>
+{%- for day in pgtMcqGatedDays %}{% if day.liveAtBuild %}
+  <url><loc>https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/</loc><priority>0.6</priority></url>{% endif %}
 {%- endfor %}
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mock-tests/test-1/</loc><priority>0.6</priority></url>

@@ -1,9 +1,26 @@
 # Self-serve publish — status + roadmap
 
-> **Status (2026-11-15): series 1 and 2 live; series 3 (UP PGT) BUILT on the branch, waiting for the owner's word to
-> merge; series 4 (UGC NET) blocked on its pages. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
+> **Status (2026-11-17): series 1, 2 and 3 live; series 4 (UP PGT MCQ days) BUILT on the branch, waiting for the
+> owner's word to merge; UGC NET still blocked on its pages. Rulebook: `CLAUDE.md` rule 17 + rule 3.**
 >
-> **Series 3 — UP PGT login mock tests: BUILT (2026-11-15, branch `claude/confident-lovelace-lqsa7h`, NOT merged).**
+> **Series 4 — UP PGT login MCQ days (Days 11–60): BUILT (2026-11-17, branch `claude/kind-einstein-9ssy8l`, NOT merged).**
+> The MCQ day hub is the same 60-slot grid as the mock tests, so it reuses **slot mode**. Two general additions were
+> needed: (1) a slot may carry **`data-slot-id`**, because Days 11 and 12 went into the database under their own
+> topic-shaped ids before the series became self-serve — the id now always comes from the registry, so old and new ids
+> work side by side; (2) in slot mode `paper-list.js` asks the catalog for **exactly the ids on the page**
+> (`set_id=in.(…)`) instead of filtering by `exam_id` + `kind`, which is both narrower and immune to a legacy row whose
+> `exam_id` / `number` was never set. `data-copy="title"` makes a card's second line the paper's own title (a day is known
+> by its topic, not by a question count), and `cbt.js` takes that title from the catalog when the page did not know it at
+> build. `gated-day.njk` / `gated-day-review.njk` replace the old Coming-soon day page and pre-build days 11–60 with
+> `data-catalog-check`. `_data/pgtMcqSeries.js` holds how big the series is (raise `total` for more than 60 days);
+> `_data/pgtMcqDays.js` also reads the live rows of `_data/paperCatalog.json`, so a day published self-serve gets a proper
+> static card and sitemap line at the next rebuild. Upload page: a new destination **UP PGT English — MCQ Day**
+> (`up-pgt-mcq-day-N`, numbers 11–60, Day 11/12 mapped to their own ids), a note asking for the day's topic as the title,
+> and a new final check that catches a file saved at a level the series' pages cannot read. Free days 1–10 untouched.
+> 60 Playwright checks passed (guest / student, live / not live / read fails, old and new ids, free days, mock-test and
+> UP AP regressions, 375px).
+>
+> **Series 3 — UP PGT login mock tests: SHIPPED (2026-11-15, merged).**
 > The hub is a fixed grid of 60 slots with the free tests 1–5 inside it, so it does not use the plain list of
 > series 1: `assets/paper-list.js` got a **slot mode** (`data-paper-slots` on the host, `data-paper-slot` on each
 > card 6–60) that flips a slot between "Coming soon" and lock/Start from the live catalog. `login-test.njk` /
@@ -28,8 +45,8 @@
 >   `flipOff` in `assets/mcq-age.js`. Free sets untouched. 28 Playwright checks + series-1 + regression all green.
 >
 > **TO BUILD LATER (owner, 2026-11-14 — "baad baad me build karenge"): see "Roadmap" at the bottom.**
-> - **Series 3 — UP PGT login mock tests** (same pattern as series 1).
-> - **Series 4 — UGC NET** (new owner ask, 2026-11-14): NET's English Literature MCQs already ride on series 2
+> - **Series 3 — UP PGT login mock tests** (same pattern as series 1). DONE.
+> - **Series 5 — UGC NET** (new owner ask, 2026-11-14; it was numbered 4 before the UP PGT MCQ days took that slot): NET's English Literature MCQs already ride on series 2
 >   (that resource points at `/quizzes/mcq/`); NET's **own** mock tests / Paper 1 need their pages built first.
 >
 > **Decision made (2026-11-14):** the richer card is delivered by keeping the set's existing registry card and
@@ -156,7 +173,7 @@ file as each ships.
 - **Watch out:** UP PGT mixes free + login + coming-soon on one hub; keep each band isolated so only the login
   band becomes catalog-driven. `up-pgt-mock-test-N` ids already exist in `paper_catalog` (Tests 6–10 live).
 
-### Series 4 — UGC NET (new ask, 2026-11-14)
+### Series 5 — UGC NET (new ask, 2026-11-14; numbered 4 before the UP PGT MCQ days took that slot)
 - **Already covered:** NET's **"English Literature MCQs"** resource (`_data/netResources.json`) points at
   `/quizzes/mcq/`, which is series 2 — so NET's literature MCQ practice is **already self-serve**. Nothing to do
   there.

@@ -136,10 +136,13 @@
   }
 
   /* The id a destination + number (+ age) make. The file's own id is ignored, so a wrong id in
-     the file cannot send the paper to the wrong place. */
+     the file cannot send the paper to the wrong place. A series may name the id of a paper that
+     was loaded before the series became self-serve (UP PGT MCQ Days 11 and 12): that id wins, so
+     uploading the same day again replaces it instead of making a second copy. */
   function slugFor(dest, number, age) {
     if (!dest || !(number >= 1)) return '';
     if (dest.needsAge) return age ? age + '-set-' + number : '';
+    if (dest.ids && dest.ids[String(number)]) return dest.ids[String(number)];
     return dest.prefix + number;
   }
 
@@ -160,6 +163,7 @@
     var numberInput = el('upNumber');
     var slugPreview = el('upSlugPreview');
     var titleInput = el('upTitle');
+    var titleNote = el('upTitleNote');
     var statusSelect = el('upStatus');
     var goCard = el('upGo');
     var goError = el('upError');
@@ -186,6 +190,11 @@
     function fail(box, text) { if (box) { box.textContent = text; show(box); } }
     function clearFail(box) { if (box) { box.textContent = ''; hide(box); } }
 
+    function parseIds(raw) {
+      if (!raw) return {};
+      try { var v = JSON.parse(raw); return (v && typeof v === 'object') ? v : {}; } catch (e) { return {}; }
+    }
+
     // The destination the owner picked, as a plain object read from the <option>.
     function currentDest() {
       var o = destSelect.options[destSelect.selectedIndex];
@@ -205,6 +214,15 @@
         max: parseInt(o.getAttribute('data-max'), 10) || 0,
         numberNote: o.getAttribute('data-number-note') || '',
         pageBase: o.getAttribute('data-page-base') || '',
+        /* How the page address is built, e.g. test-{n}/ or day-{n}/ */
+        pageRoute: o.getAttribute('data-page-route') || 'test-{n}/',
+        /* The levels the series' pages can read. A file saved at any other level is saved
+           safely but the page would never show it, so the final check says so. */
+        pageLevels: (o.getAttribute('data-page-levels') || '').split(',').filter(Boolean),
+        /* Only the English Literature sets are planned set by set in the registry. */
+        registryPlan: o.getAttribute('data-registry-plan') === 'yes',
+        ids: parseIds(o.getAttribute('data-ids')),
+        titleNote: o.getAttribute('data-title-note') || '',
         label: (o.textContent || '').trim()
       };
     }
@@ -246,6 +264,7 @@
       if (dest && number && !titleTouched) {
         titleInput.value = dest.titleWord + ' ' + number;
       }
+      if (titleNote) titleNote.textContent = dest ? dest.titleNote : '';
     }
 
     destSelect && destSelect.addEventListener('change', function () { refreshPreview(); });
@@ -382,7 +401,7 @@
        saaf shabdon me likhta hai. Agar kuch theek karna ho to ek "Copy for Claude" text deta hai. */
     function pageUrlFor(dest, setId, number) {
       if (plan[setId] && plan[setId].path) return plan[setId].path;
-      if (dest && dest.pageBase && number) return dest.pageBase + 'test-' + number + '/';
+      if (dest && dest.pageBase && number) return dest.pageBase + (dest.pageRoute || 'test-{n}/').replace('{n}', number);
       return '';
     }
     function getPage(url) {
@@ -397,7 +416,7 @@
       var items = [];
       var dest = ctx.dest, setId = ctx.setId, saved = ctx.saved || [];
       var p = plan[setId] || null;
-      var isLit = dest.kind === 'mcq-set';
+      var isLit = !!dest.registryPlan;
       var url = pageUrlFor(dest, setId, ctx.number);
 
       return Promise.all([
@@ -454,6 +473,17 @@
             if (p.state === 'login' && p.rev && saved.length && saved[0].rev !== p.rev) {
               items.push({ k: 'warn', t: 'The registry says rev ' + p.rev + ' for this set, but you saved rev ' + saved[0].rev + '. Tell Claude so the two match.' });
             }
+          }
+        }
+
+        // 2b. Can the page read the levels that were saved? (Its page asks for one level only.)
+        if (dest.pageLevels && dest.pageLevels.length) {
+          var unread = saved.map(function (r) { return r.level; })
+            .filter(function (l) { return dest.pageLevels.indexOf(l) < 0; });
+          if (unread.length) {
+            items.push({ k: 'no', t: 'The page for this paper only opens the ' + dest.pageLevels.map(cap).join(' and ') +
+              ' level, but you saved ' + unread.map(cap).join(' and ') + '. Students would see nothing. Ask for the file at the ' +
+              dest.pageLevels.map(cap).join(' or ') + ' level, or send Claude the text below.' });
           }
         }
 

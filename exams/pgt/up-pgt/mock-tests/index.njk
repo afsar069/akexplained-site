@@ -45,13 +45,13 @@ pgt_resources: true
           <a class="agehub-go is-solid" href="{{ mockTest.url }}" aria-label="Start Mock Test {{ mockTest.number }}">Start</a>
         </div>
         {% elif mockTest.live %}
-        <div class="pgt-practice-card" data-paper-slot="{{ mockTest.number }}" data-slot-state="live" data-slot-count="{{ mockTest.questionCount or '' }}">
+        <div class="pgt-practice-card" data-paper-slot="{{ mockTest.number }}" data-slot-state="live" data-slot-copy="{% if mockTest.questionCount %}{{ mockTest.questionCount }} questions{% endif %}">
           <span class="pgt-practice-card-copy"><strong>Mock Test {{ mockTest.label }}</strong>{% if mockTest.questionCount %}<span>{{ mockTest.questionCount }} questions</span>{% endif %}</span>
           <a class="agehub-go agehub-go-lock" data-guest-only hidden href="/login/?next={{ mockTest.url | urlencode }}" aria-label="Mock Test {{ mockTest.number }} needs a login. Log in to open it." title="Log in to open Mock Test {{ mockTest.number }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
           <a class="agehub-go is-solid" data-auth-only hidden href="{{ mockTest.url }}">Start</a>
         </div>
         {% else %}
-        <a class="pgt-practice-card" data-paper-slot="{{ mockTest.number }}" data-slot-state="soon" href="{{ mockTest.url }}" aria-label="Mock Test {{ mockTest.number }} — coming soon">
+        <a class="pgt-practice-card" data-paper-slot="{{ mockTest.number }}" data-slot-state="soon" data-slot-copy="" href="{{ mockTest.url }}" aria-label="Mock Test {{ mockTest.number }} — coming soon">
           <span class="pgt-practice-card-copy">
             <strong>Mock Test {{ mockTest.label }}</strong>
             <span>Coming soon</span>
