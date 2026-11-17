@@ -35,4 +35,13 @@ module.exports = [
     setId: "up-pgt-day-04-rhetoric-prosody",
     questionFile: "up-pgt-day-04-rhetoric-prosody-mixed.json",
   },
+  {
+    number: 5,
+    title: "Prosody 2: Rhyme & Stanza Forms",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-05-prosody-2",
+    questionFile: "up-pgt-day-05-prosody-2-mixed.json",
+  },
 ];
