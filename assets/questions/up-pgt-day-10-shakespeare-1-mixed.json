@@ -1,0 +1,952 @@
+{
+  "setId": "up-pgt-day-10-shakespeare-1",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 10,
+  "setName": "Day 10 · Shakespeare 1: Life, Chronology, Four Periods & Comedies",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "life": "Shakespeare’s Life",
+    "chronology": "Chronology",
+    "four-periods": "Four Periods of His Career",
+    "early-comedies": "Early Comedies",
+    "festive-comedies": "Festive Comedies",
+    "problem-comedies": "Problem Comedies"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-01",
+      "question": "In which English town was William Shakespeare born?",
+      "options": [
+        "Stratford-upon-Avon",
+        "Warwick Castle",
+        "Canterbury",
+        "Oxford"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Shakespeare was born in Stratford-upon-Avon, Warwickshire, in 1564.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeares-life/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-02",
+      "question": "What date is recorded for Shakespeare’s baptism at Holy Trinity Church?",
+      "options": [
+        "23 April 1582",
+        "26 April 1564",
+        "23 April 1564",
+        "26 April 1616"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The parish register records his baptism on 26 April 1564; 23 April is a traditional, not documented, birth date.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeares-life/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-03",
+      "question": "What trade is especially associated with Shakespeare’s father, John Shakespeare?",
+      "options": [
+        "Printing religious pamphlets",
+        "Building ocean-going ships",
+        "Teaching at Cambridge",
+        "Glove making and leatherwork"
+      ],
+      "correct_option_id": 3,
+      "explanation": "John Shakespeare worked with leather and was especially known as a glover.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeares-life/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-04",
+      "question": "Whom did William Shakespeare marry in 1582?",
+      "options": [
+        "Judith Quiney",
+        "Anne Hathaway",
+        "Mary Arden",
+        "Susanna Hall"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shakespeare married Anne Hathaway in November 1582. Mary Arden was his mother.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-05",
+      "question": "What were the names of Shakespeare’s twins, baptized in 1585?",
+      "options": [
+        "Anne and Joan",
+        "Susanna and Judith",
+        "Hamnet and Judith",
+        "Hamlet and Ophelia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Shakespeare’s twins were Hamnet and Judith; his older daughter Susanna was born in 1583.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-06",
+      "question": "Who made the 1592 printed allusion to Shakespeare as an “upstart crow”?",
+      "options": [
+        "Christopher Marlowe",
+        "Francis Meres",
+        "Robert Greene",
+        "Ben Jonson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The jibe appears in the work Greene’s Groats-Worth of Wit, published in 1592 and associated with Robert Greene.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-07",
+      "question": "What does the phrase “lost years” refer to in accounts of Shakespeare’s life?",
+      "options": [
+        "A period of exile in Italy after 1603",
+        "Years spent at Oxford University",
+        "A poorly documented span after 1585 and before his London fame",
+        "The years between the Globe fire and the First Folio"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Records are sparse between the baptism of the twins in 1585 and his emergence in the London theatre by 1592.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeares-life/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-08",
+      "question": "Which of Shakespeare’s children died in 1596?",
+      "options": [
+        "His son Hamnet",
+        "His daughter Judith",
+        "His granddaughter Elizabeth",
+        "His daughter Susanna"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Hamnet, Shakespeare’s only son, died in 1596 while still a child.",
+      "topic": "life",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-09",
+      "question": "What name did the Lord Chamberlain’s Men take in 1603?",
+      "options": [
+        "The Lord Strange’s Men",
+        "The King’s Men",
+        "The Admiral’s Men",
+        "The Queen’s Revels"
+      ],
+      "correct_option_id": 1,
+      "explanation": "At James I’s accession in 1603 Shakespeare’s company became the King’s Men.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-10",
+      "question": "Which event destroyed the original Globe Theatre in 1613?",
+      "options": [
+        "A fire during a performance of Henry VIII",
+        "A flood of the Thames",
+        "A fire during the opening of Hamlet",
+        "The demolition ordered by Oliver Cromwell"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A stage effect during Henry VIII ignited the thatched roof, burning the Globe in June 1613.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-11",
+      "question": "In what year was Shakespeare’s First Folio published?",
+      "options": [
+        "1623",
+        "1603",
+        "1599",
+        "1616"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The First Folio appeared posthumously in 1623, seven years after Shakespeare’s death.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeare-in-print/publishing-shakespeare/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-12",
+      "question": "Which two actor-colleagues helped compile Shakespeare’s First Folio?",
+      "options": [
+        "John Fletcher and Francis Beaumont",
+        "Thomas Kyd and Christopher Marlowe",
+        "John Heminge and Henry Condell",
+        "Ben Jonson and John Donne"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Heminge and Condell, fellow members of the King’s Men, gathered the plays for the 1623 Folio.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeare-in-print/publishing-shakespeare/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-13",
+      "question": "How were plays chiefly arranged in the contents of the 1623 First Folio?",
+      "options": [
+        "Pastorals, romances, and sermons",
+        "Sonnets, epics, and essays",
+        "Comedies, histories, and tragedies",
+        "Moralities, interludes, and masques"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The First Folio grouped the 36 plays under the headings comedies, histories, and tragedies.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.folger.edu/explore/shakespeare-in-print/publishing-shakespeare/"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-14",
+      "question": "Which of these was Shakespeare’s first printed long narrative poem, published in 1593?",
+      "options": [
+        "A Lover’s Complaint",
+        "Venus and Adonis",
+        "The Rape of Lucrece",
+        "The Phoenix and the Turtle"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Venus and Adonis appeared in 1593; The Rape of Lucrece followed in 1594.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-15",
+      "question": "Consider these statements about Shakespeare’s early publication record:\n1. Venus and Adonis was published in 1593.\n2. Titus Andronicus appeared in print in 1594.\n3. The First Folio was published during Shakespeare’s lifetime.\nWhich statements are correct?",
+      "options": [
+        "1, 2 and 3",
+        "1 and 3 only",
+        "2 and 3 only",
+        "1 and 2 only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Folger’s timeline records Venus and Adonis in 1593 and Titus Andronicus in 1594. The First Folio was issued only in 1623.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-16",
+      "question": "Put these documented events in chronological order:\n1. Publication of the First Folio\n2. Marriage to Anne Hathaway\n3. The “upstart crow” reference\n4. The company becomes the King’s Men",
+      "options": [
+        "2 → 4 → 3 → 1",
+        "2 → 3 → 4 → 1",
+        "3 → 2 → 4 → 1",
+        "2 → 3 → 1 → 4"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Marriage took place in 1582, the Greene allusion in 1592, the company’s renaming in 1603, and the Folio in 1623.",
+      "topic": "chronology",
+      "topicId": "william-shakespeare",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://shakespearedocumented.folger.edu/timeline-shakespeares-life"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-17",
+      "question": "Which general sequence best represents the customary four-phase account of Shakespeare’s dramatic career?",
+      "options": [
+        "Early experiments → histories and festive comedies → tragedies and problem plays → late romances",
+        "Histories → late romances → early experiments → problem plays",
+        "Late romances → tragedies → early experiments → festive comedies",
+        "Tragedies → early experiments → histories → late romances"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A common critical model moves from experiment to mature histories and comedies, then major tragedies, and finally romances.",
+      "topic": "four-periods",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.gutenberg.org/cache/epub/7800/pg7800-images.html"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-18",
+      "question": "Which comedy is commonly grouped with Shakespeare’s early dramatic experiments rather than with his late romances?",
+      "options": [
+        "Cymbeline",
+        "The Winter’s Tale",
+        "The Tempest",
+        "The Comedy of Errors"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Comedy of Errors belongs to his early comic experiments; the other works belong to the late romance phase.",
+      "topic": "four-periods",
+      "topicId": "the-comedy-of-errors",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://internetshakespeare.uvic.ca/Library/SLT/reference/sources/sourcecomedies.html",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-19",
+      "question": "Which statements about the conventional four-period model are accurate?\n1. The second phase is especially associated with histories and festive comedies.\n2. The third phase includes major tragedies and darker problem plays.\n3. The fourth phase is dominated by early Roman farces.",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1 and 3 only",
+        "1, 2 and 3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The second phase stresses mature histories and festive comedy; the third features tragedy and darker comedy; late romances characterize the fourth.",
+      "topic": "four-periods",
+      "topicId": "william-shakespeare",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.gutenberg.org/cache/epub/7800/pg7800-images.html"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-20",
+      "question": "Which pair is generally identified as Shakespearean “problem plays” rather than uncomplicated festive comedies?",
+      "options": [
+        "All’s Well That Ends Well and Measure for Measure",
+        "As You Like It and A Midsummer Night’s Dream",
+        "The Tempest and The Winter’s Tale",
+        "The Comedy of Errors and The Taming of the Shrew"
+      ],
+      "correct_option_id": 0,
+      "explanation": "All’s Well That Ends Well and Measure for Measure are often classed as problem plays because they pose disturbing ethical questions within comic structures.",
+      "topic": "four-periods",
+      "topicId": "shakespeares-problem-plays",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/tragedies-comedies-histories",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-21",
+      "question": "Which pair belongs most clearly to the late-romance phase of Shakespeare’s writing?",
+      "options": [
+        "The Tempest and The Winter’s Tale",
+        "Much Ado About Nothing and As You Like It",
+        "The Comedy of Errors and Love’s Labour’s Lost",
+        "Hamlet and Othello"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Tempest and The Winter’s Tale combine loss, reconciliation, and extraordinary recovery in the late-romance mode.",
+      "topic": "four-periods",
+      "topicId": "shakespeares-romances",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/tragedies-comedies-histories",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-22",
+      "question": "Which tragedy is conventionally associated with Shakespeare’s period of great tragedies around 1600–1608?",
+      "options": [
+        "Titus Andronicus",
+        "King Lear",
+        "The Two Gentlemen of Verona",
+        "The Tempest"
+      ],
+      "correct_option_id": 1,
+      "explanation": "King Lear is normally dated to about 1605–1606 and exemplifies the mature tragic phase.",
+      "topic": "four-periods",
+      "topicId": "king-lear",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/histories-timeline/timeline",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-23",
+      "question": "Which comedy is dated around 1601 by the Royal Shakespeare Company and stands near the turn toward darker drama?",
+      "options": [
+        "Love’s Labour’s Lost",
+        "The Tempest",
+        "The Comedy of Errors",
+        "Twelfth Night"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Twelfth Night is usually placed around 1601, near the close of Shakespeare’s great festive-comedy sequence.",
+      "topic": "four-periods",
+      "topicId": "twelfth-night",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/histories-timeline/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-24",
+      "question": "Which play, probably written in 1610–1611, exemplifies Shakespeare’s late phase?",
+      "options": [
+        "The Comedy of Errors",
+        "The Taming of the Shrew",
+        "The Tempest",
+        "Richard III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Tempest is placed around 1610–1611, among Shakespeare’s late works.",
+      "topic": "four-periods",
+      "topicId": "the-tempest",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-tempest/about-the-play/dates-and-sources",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-25",
+      "question": "Choose the most plausible order of composition for these plays, from earlier to later:\n1. The Tempest\n2. A Midsummer Night’s Dream\n3. The Comedy of Errors\n4. Twelfth Night",
+      "options": [
+        "3 → 4 → 2 → 1",
+        "2 → 4 → 1 → 3",
+        "2 → 3 → 4 → 1",
+        "3 → 2 → 4 → 1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Comedy of Errors precedes A Midsummer Night’s Dream, which precedes Twelfth Night; The Tempest is a late romance.",
+      "topic": "four-periods",
+      "topicId": "william-shakespeare",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/histories-timeline/timeline"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-26",
+      "question": "Match the plays in List I with the career phases in List II:\nList I: 1. The Comedy of Errors; 2. Much Ado About Nothing; 3. King Lear; 4. The Tempest.\nList II: A. Late romance; B. Early experiment; C. Mature festive comedy; D. Great tragedy.",
+      "options": [
+        "1-A, 2-C, 3-D, 4-B",
+        "1-C, 2-B, 3-D, 4-A",
+        "1-B, 2-C, 3-D, 4-A",
+        "1-B, 2-D, 3-C, 4-A"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The plays broadly represent early experiment, festive comedy, major tragedy, and late romance in that order.",
+      "topic": "four-periods",
+      "topicId": "william-shakespeare",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.gutenberg.org/cache/epub/7800/pg7800-images.html"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-27",
+      "question": "How many pairs of identical twins generate the main confusion in The Comedy of Errors?",
+      "options": [
+        "One pair",
+        "Three pairs",
+        "Four pairs",
+        "Two pairs"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Antipholus twins and the servant Dromio twins create overlapping mistaken identities.",
+      "topic": "early-comedies",
+      "topicId": "the-comedy-of-errors",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-comedy-of-errors/dates-and-sources",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-28",
+      "question": "Which Roman writer’s Menaechmi furnished a central source for The Comedy of Errors?",
+      "options": [
+        "Terence",
+        "Seneca",
+        "Ovid",
+        "Plautus"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shakespeare developed the twins plot from Plautus’s Menaechmi, adding the second set of twin servants.",
+      "topic": "early-comedies",
+      "topicId": "the-comedy-of-errors",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-comedy-of-errors/dates-and-sources",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-29",
+      "question": "Which assertions about The Comedy of Errors are correct?\n1. It features two Antipholus brothers.\n2. The Dromio servants are also twins.\n3. Its central action occurs in the Forest of Arden.",
+      "options": [
+        "1 and 3 only",
+        "2 and 3 only",
+        "1, 2 and 3",
+        "1 and 2 only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The two Antipholus brothers and the Dromios are central; Ephesus, not Arden, is the play’s principal setting.",
+      "topic": "early-comedies",
+      "topicId": "the-comedy-of-errors",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-comedy-of-errors/dates-and-sources",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-30",
+      "question": "Who are the two male friends named in the title The Two Gentlemen of Verona?",
+      "options": [
+        "Orlando and Oliver",
+        "Valentine and Proteus",
+        "Benedick and Claudio",
+        "Antipholus and Dromio"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Valentine and Proteus are the gentlemen whose friendship is tested by romantic rivalry.",
+      "topic": "early-comedies",
+      "topicId": "shakespearean-comedy",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-two-gentlemen-of-verona/the-plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-31",
+      "question": "What male name does Julia assume while disguised as a page in The Two Gentlemen of Verona?",
+      "options": [
+        "Sebastian",
+        "Cesario",
+        "Balthasar",
+        "Ganymede"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Julia adopts the page identity Sebastian while seeking Proteus in Milan.",
+      "topic": "early-comedies",
+      "topicId": "shakespearean-comedy",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-two-gentlemen-of-verona/the-plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-32",
+      "question": "In The Taming of the Shrew, who courts and marries Katherina?",
+      "options": [
+        "Tranio",
+        "Petruchio",
+        "Lucentio",
+        "Hortensio"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Petruchio takes Katherina as his wife; Lucentio is associated with Bianca.",
+      "topic": "early-comedies",
+      "topicId": "the-taming-of-the-shrew",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-taming-of-the-shrew/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-33",
+      "question": "Why does Baptista initially prevent Bianca from marrying in The Taming of the Shrew?",
+      "options": [
+        "He demands that Bianca leave Padua",
+        "Bianca has secretly married the Duke",
+        "Bianca has promised to join a convent",
+        "He insists that her elder sister Katherina must marry first"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Baptista requires the older daughter to marry before permitting Bianca’s suitors to proceed.",
+      "topic": "early-comedies",
+      "topicId": "the-taming-of-the-shrew",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-taming-of-the-shrew/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-34",
+      "question": "What do the King of Navarre and his companions vow to avoid in Love’s Labour’s Lost?",
+      "options": [
+        "Military service to the French king",
+        "Travel outside Italy for a decade",
+        "All books and formal learning",
+        "The company of women while pursuing study"
+      ],
+      "correct_option_id": 3,
+      "explanation": "They pledge three years of study and avoidance of romantic entanglements, a promise tested by the French princess’s arrival.",
+      "topic": "early-comedies",
+      "topicId": "shakespearean-comedy",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/loves-labours-lost",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-35",
+      "question": "Which statements about the ending of Love’s Labour’s Lost are correct?\n1. News of the French king’s death interrupts the courtship.\n2. The women require the men to demonstrate constancy over time.\n3. The play concludes with an immediate quadruple wedding.",
+      "options": [
+        "1 and 3 only",
+        "2 and 3 only",
+        "1 and 2 only",
+        "1, 2 and 3"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The princess must depart after her father’s death, and the women postpone commitment rather than marry at once.",
+      "topic": "early-comedies",
+      "topicId": "shakespearean-comedy",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/loves-labours-lost",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-36",
+      "question": "Who are the fairy king and queen in A Midsummer Night’s Dream?",
+      "options": [
+        "Lysander and Hermia",
+        "Theseus and Hippolyta",
+        "Oberon and Titania",
+        "Demetrius and Helena"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Oberon and Titania rule the fairy world, while Theseus and Hippolyta belong to the Athenian court.",
+      "topic": "early-comedies",
+      "topicId": "a-midsummer-nights-dream",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/a-midsummer-nights-dream/story/plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-37",
+      "question": "Consider these events in A Midsummer Night’s Dream:\n1. Puck gives Bottom an ass’s head.\n2. Enchanted Titania falls in love with Bottom.\n3. Oberon and Puck later reverse the enchantments.\nWhich statements are correct?",
+      "options": [
+        "1, 2 and 3",
+        "1 and 3 only",
+        "2 and 3 only",
+        "1 and 2 only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bottom is transformed, Titania is enchanted, and the fairy magic is subsequently undone.",
+      "topic": "festive-comedies",
+      "topicId": "a-midsummer-nights-dream",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/a-midsummer-nights-dream/story/plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-38",
+      "question": "In A Midsummer Night’s Dream, which Athenian lover receives the love potion by Puck’s initial mistake?",
+      "options": [
+        "Theseus",
+        "Oberon",
+        "Lysander",
+        "Demetrius"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Puck anoints Lysander instead of Demetrius, intensifying the confusion among the four young lovers.",
+      "topic": "festive-comedies",
+      "topicId": "a-midsummer-nights-dream",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/a-midsummer-nights-dream/story/plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-39",
+      "question": "In The Merchant of Venice, who demands a pound of Antonio’s flesh as a forfeit?",
+      "options": [
+        "Gratiano",
+        "Shylock",
+        "Lorenzo",
+        "Bassanio"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shylock is the lender whose bond specifies the forfeit if Antonio does not repay the debt.",
+      "topic": "festive-comedies",
+      "topicId": "the-merchant-of-venice",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-merchant-of-venice",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-40",
+      "question": "Which casket does Bassanio choose successfully in The Merchant of Venice?",
+      "options": [
+        "Lead",
+        "Gold",
+        "Silver",
+        "Ivory"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Bassanio chooses the lead casket and wins the opportunity to marry Portia.",
+      "topic": "festive-comedies",
+      "topicId": "the-merchant-of-venice",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-merchant-of-venice",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-41",
+      "question": "Which statements about the trial scene in The Merchant of Venice are correct?\n1. Portia appears in the disguise of a lawyer named Balthasar.\n2. The bond explicitly allows Shylock to shed Antonio’s blood.\n3. Portia argues that the bond grants flesh but not a drop of blood.",
+      "options": [
+        "1 and 2 only",
+        "2 and 3 only",
+        "1, 2 and 3",
+        "1 and 3 only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Portia appears as Balthasar and distinguishes the permitted pound of flesh from blood, which the bond does not allow.",
+      "topic": "festive-comedies",
+      "topicId": "the-merchant-of-venice",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/the-merchant-of-venice/story/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-42",
+      "question": "Which pair is known for its witty verbal exchanges in Much Ado About Nothing?",
+      "options": [
+        "Rosalind and Oliver",
+        "Beatrice and Benedick",
+        "Hero and Don John",
+        "Portia and Bassanio"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Beatrice and Benedick conduct the play’s famous verbal contest before admitting mutual love.",
+      "topic": "festive-comedies",
+      "topicId": "much-ado-about-nothing",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/much-ado-about-nothing/story/plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-43",
+      "question": "Who engineers the deception that causes Claudio to believe Hero has been unfaithful in Much Ado About Nothing?",
+      "options": [
+        "Dogberry",
+        "Friar Francis",
+        "Don John",
+        "Don Pedro"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Don John plots to ruin Hero’s reputation, using a staged scene to deceive Claudio.",
+      "topic": "festive-comedies",
+      "topicId": "much-ado-about-nothing",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/much-ado-about-nothing/story/plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-44",
+      "question": "What male name does Rosalind adopt while disguised in As You Like It?",
+      "options": [
+        "Cesario",
+        "Sebastian",
+        "Ganymede",
+        "Balthasar"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Rosalind assumes the identity Ganymede during her stay in the Forest of Arden.",
+      "topic": "festive-comedies",
+      "topicId": "as-you-like-it",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/as-you-like-it/story/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-45",
+      "question": "In As You Like It, under what name does Celia travel while disguised?",
+      "options": [
+        "Olivia",
+        "Aliena",
+        "Mariana",
+        "Silvia"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Celia disguises herself as Aliena and travels with Rosalind into the Forest of Arden.",
+      "topic": "festive-comedies",
+      "topicId": "as-you-like-it",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/as-you-like-it/story/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-46",
+      "question": "In Twelfth Night, what is Viola’s assumed male name?",
+      "options": [
+        "Cesario",
+        "Sebastian",
+        "Ganymede",
+        "Valentine"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Viola disguises herself as Cesario and enters Duke Orsino’s service.",
+      "topic": "festive-comedies",
+      "topicId": "twelfth-night",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/twelfth-night/story/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-47",
+      "question": "Consider the romantic triangle in Twelfth Night:\n1. Orsino loves Olivia.\n2. Olivia falls in love with Cesario.\n3. Viola, disguised as Cesario, loves Orsino.\nWhich statements are correct?",
+      "options": [
+        "1 and 3 only",
+        "1, 2 and 3",
+        "1 and 2 only",
+        "2 and 3 only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "All three connections are true and explain the dramatic irony created by Viola’s disguise as Cesario.",
+      "topic": "festive-comedies",
+      "topicId": "twelfth-night",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/twelfth-night/story/timeline",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-48",
+      "question": "Which comic knight attempts to woo Mistress Ford and Mistress Page in The Merry Wives of Windsor?",
+      "options": [
+        "Sir Toby Belch",
+        "Sir John Suckling",
+        "Sir Andrew Aguecheek",
+        "Sir John Falstaff"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Falstaff sends similar love letters to both women, who discover his scheme and plan his humiliation.",
+      "topic": "festive-comedies",
+      "topicId": "shakespearean-comedy",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/the-merry-wives-of-windsor/the-plot",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-49",
+      "question": "Match the comedies in List I with their plots in List II:\nList I: 1. Measure for Measure; 2. All’s Well That Ends Well; 3. The Comedy of Errors.\nList II: A. Helena seeks to win Bertram; B. Angelo judges Claudio; C. Two pairs of identical twins.",
+      "options": [
+        "1-B, 2-C, 3-A",
+        "1-B, 2-A, 3-C",
+        "1-C, 2-A, 3-B",
+        "1-A, 2-B, 3-C"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Measure for Measure centres on Angelo and Claudio; All’s Well follows Helena and Bertram; The Comedy of Errors features the twins.",
+      "topic": "problem-comedies",
+      "topicId": "shakespeares-problem-plays",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeares-plays/tragedies-comedies-histories",
+      "periodId": "jacobean-era"
+    },
+    {
+      "id": "up-pgt-day-10-shakespeare1-mix-50",
+      "question": "Which statements about Measure for Measure are correct?\n1. The Duke of Vienna disguises himself as a friar.\n2. Angelo sentences Claudio under strict morality laws.\n3. Isabella willingly accepts Angelo’s coercive proposal.\nChoose the correct statements.",
+      "options": [
+        "1 and 2 only",
+        "1, 2 and 3",
+        "1 and 3 only",
+        "2 and 3 only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The disguised Duke watches Angelo enforce harsh laws against Claudio. Isabella rejects Angelo’s proposal.",
+      "topic": "problem-comedies",
+      "topicId": "measure-for-measure",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Shakespeare 1: Life, Chronology, the Four Periods of His Career, and the Comedies",
+      "src": "https://www.rsc.org.uk/shakespeare-learning-zone/measure-for-measure/story/plot",
+      "periodId": "jacobean-era"
+    }
+  ]
+}
