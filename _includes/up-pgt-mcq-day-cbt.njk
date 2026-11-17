@@ -1,6 +1,6 @@
 {% extends "mcq-page.njk" %}
 {% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}: {{ day.title }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
-{% set pageDescription %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. Free for everyone, with no login required.{% endset %}
+{% set pageDescription %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if day.access == 'login' %}A free login is required.{% else %}Free for everyone, with no login required.{% endif %}{% endset %}
 {% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/{% if examReview %}review/{% endif %}{% endset %}
 {% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
@@ -12,7 +12,7 @@
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP PGT English</p>
     <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Day {{ day.number }}{% endif %}</h1>
-    <p class="lede" id="cbtLede">{% if examReview %}{{ day.title }} · Your answers, the correct answers, and explanations.{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
+    <p class="lede" id="cbtLede">{% if examReview %}{{ day.title }} · Your answers, the correct answers, and explanations.{% elif day.access == 'login' %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free login required.{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
   </div>
 </section>
 <div class="cbt-printhead" aria-hidden="true">
@@ -21,7 +21,7 @@
 </div>
 <div class="wrap cbt-body" data-cbt data-exam-day{% if examReview %} data-mode="review"{% endif %}
      data-set="{{ day.setId }}"
-     data-src="/assets/questions/{{ day.questionFile }}"
+     {% if day.access == 'login' %}data-gated="{{ day.setId }}" data-catalog-check="{{ day.setId }}" data-levels="{{ day.level }}" data-default-level="{{ day.level }}" data-day-title="{{ day.title }}" data-day-level-label="{{ day.levelName | lower }}"{% else %}data-src="/assets/questions/{{ day.questionFile }}"{% endif %}
      data-exam-home="/exams/pgt/up-pgt/"
      data-exam-index-label="UP PGT MCQs"
      data-back="/exams/pgt/up-pgt/mcqs/{% if examReview %}day-{{ day.number }}/{% endif %}"
