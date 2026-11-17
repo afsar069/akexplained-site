@@ -8,4 +8,13 @@ module.exports = [
     access: "login",
     setId: "up-pgt-day-11-shakespeare-comedies",
   },
+  {
+    number: 12,
+    title: "Shakespeare: Major Comedies — As You Like It, The Two Gentlemen of Verona & The Tempest",
+    questionCount: 50,
+    levelName: "Mixed",
+    level: "medium",
+    access: "login",
+    setId: "up-pgt-day-12-shakespeare-major-comedies",
+  },
 ];
