@@ -88,6 +88,14 @@
 
   /* ---------- the quick checks ---------- */
 
+  /* Some question makers hand over just the LIST of questions, with nothing around it. That is a
+     real question file too: the set it belongs to is the owner's choice on this page anyway, and the
+     level and the rev are asked for below. So a plain list is wrapped here and goes on as usual. */
+  function unwrap(parsed) {
+    if (Array.isArray(parsed)) return { questions: parsed, bare: true };
+    return parsed;
+  }
+
   function checkOneFile(name, body) {
     var problems = [];
     function bad(m) { problems.push(m); }
@@ -96,9 +104,9 @@
       bad('This is not a question file.');
       return problems;
     }
-    if (!body.setId) bad('It does not say which set it is (setId).');
-    if (LEVELS.indexOf(body.level) < 0) bad('The level must be easy, medium or hard. This says "' + body.level + '".');
-    if (!(parseInt(body.rev, 10) >= 1)) bad('The rev must be a whole number, 1 or more.');
+    /* A file may leave the level and the rev out; it may not get them wrong. */
+    if (body.level != null && LEVELS.indexOf(body.level) < 0) bad('The level must be easy, medium or hard. This says "' + body.level + '".');
+    if (body.rev != null && !(parseInt(body.rev, 10) >= 1)) bad('The rev must be a whole number, 1 or more.');
     if (!Array.isArray(body.questions) || !body.questions.length) {
       bad('It has no questions.');
       return problems;
@@ -162,6 +170,8 @@
     var ageSelect = el('upAge');
     var numberInput = el('upNumber');
     var slugPreview = el('upSlugPreview');
+    var levelWrap = el('upLevelWrap');
+    var levelSelect = el('upLevel');
     var titleInput = el('upTitle');
     var titleNote = el('upTitleNote');
     var statusSelect = el('upStatus');
@@ -238,9 +248,19 @@
       return (n >= 1 && String(n) === String(numberInput.value).trim()) ? n : 0;
     }
 
+    /* A file that does not name its level takes the one chosen on the page (Medium by default,
+       which is what every CBT page of a mock series reads). */
+    function needsLevel() {
+      return papers.some(function (p) { return !p.body.level; });
+    }
+    function chosenLevel() {
+      return (levelSelect && LEVELS.indexOf(levelSelect.value) > -1) ? levelSelect.value : 'medium';
+    }
+
     // Live preview: show the id that will be used, and fill the title unless the owner typed one.
     function refreshPreview() {
       var dest = currentDest();
+      if (needsLevel()) { show(levelWrap); } else { hide(levelWrap); }
       var number = currentNumber();
       var age = ageSelect.value;
       if (dest && dest.needsAge) { show(ageWrap); } else { hide(ageWrap); }
@@ -256,6 +276,7 @@
         slugPreview.textContent = 'This number cannot be used here. ' + dest.numberNote;
       } else {
         slugPreview.innerHTML = 'It will be saved as <strong>' + esc(slug) + '</strong>' +
+          (needsLevel() ? ' at the ' + esc(cap(chosenLevel())) + ' level' : '') +
           (dest.selfServe ? ' — once it is Live it shows on its page at once. No rebuild is needed.'
             : dest.autoPage ? ' — it will show on its page after the site is next built.'
                          : ' — the questions go into the database. When you upload, this page checks that the set has a page on the site.');
@@ -270,6 +291,7 @@
     destSelect && destSelect.addEventListener('change', function () { refreshPreview(); });
     ageSelect && ageSelect.addEventListener('change', function () { refreshPreview(); });
     numberInput && numberInput.addEventListener('input', function () { refreshPreview(); });
+    levelSelect && levelSelect.addEventListener('change', function () { refreshPreview(); });
     titleInput && titleInput.addEventListener('input', function () { titleTouched = true; });
 
     /* --- who is this? --- */
@@ -303,7 +325,7 @@
       Promise.all(chosen.map(function (f) {
         return f.text().then(function (text) {
           var parsed = null, err = '';
-          try { parsed = JSON.parse(text); } catch (e) { err = e.message || 'it is not readable JSON'; }
+          try { parsed = unwrap(JSON.parse(text)); } catch (e) { err = e.message || 'it is not readable JSON'; }
           return { name: f.name, body: parsed, err: err };
         });
       })).then(function (read) {
@@ -321,7 +343,11 @@
             if (probs.length > 12) items.push(line('no', r.name + ' — and ' + (probs.length - 12) + ' more problem(s).'));
             problems = problems.concat(probs);
           } else {
-            items.push(line('ok', r.name + ' — ' + r.body.questions.length + ' questions, ' + r.body.level + ' level, rev ' + r.body.rev + '.'));
+            var told = (r.body.level ? r.body.level + ' level' : '') +
+              (r.body.level && r.body.rev ? ', ' : '') + (r.body.rev ? 'rev ' + r.body.rev : '');
+            items.push(line('ok', r.name + ' — ' + r.body.questions.length + ' questions' + (told ? ', ' + told : '') + '.'));
+            if (!r.body.level) items.push(line('info', r.name + ' — it does not say which level it is. Choose the level below.'));
+            if (!r.body.rev) items.push(line('info', r.name + ' — it does not say which rev it is. This page will use the next free rev.'));
             papers.push({ name: r.name, body: r.body });
           }
         });
@@ -334,8 +360,17 @@
 
         // The files must be one set (same inner id), each level once, same rev. The inner id is a
         // sanity check that they belong together; it does NOT decide where the paper goes.
+        /* A file with no level of its own takes the level chosen below, and there is only one such
+           choice — so only one such file can be uploaded at a time. */
+        var noLevel = papers.filter(function (p) { return !p.body.level; });
+        if (noLevel.length && papers.length > 1) {
+          paint(items);
+          fail(fileError, 'One of these files does not say which level it is (' + noLevel[0].name +
+            '). Upload that one on its own and choose its level, or ask for files that name their level.');
+          return;
+        }
         var sets = {}, levels = {};
-        papers.forEach(function (p) { sets[p.body.setId] = 1; levels[p.body.level] = (levels[p.body.level] || 0) + 1; });
+        papers.forEach(function (p) { if (p.body.setId) sets[p.body.setId] = 1; if (p.body.level) levels[p.body.level] = (levels[p.body.level] || 0) + 1; });
         if (Object.keys(sets).length > 1) {
           paint(items);
           fail(fileError, 'These files look like different sets (' + Object.keys(sets).join(', ') + '). Upload the levels of one set at a time.');
@@ -344,11 +379,12 @@
         var twice = Object.keys(levels).filter(function (l) { return levels[l] > 1; });
         if (twice.length) { paint(items); fail(fileError, 'Two files say they are the same level (' + twice.join(', ') + ').'); return; }
         var revs = {};
-        papers.forEach(function (p) { revs[String(p.body.rev)] = 1; });
+        papers.forEach(function (p) { if (p.body.rev) revs[String(p.body.rev)] = 1; });
         if (Object.keys(revs).length > 1) { paint(items); fail(fileError, 'The files are at different revs (' + Object.keys(revs).join(', ') + '). All levels of one set must share a rev.'); return; }
 
         items.push(line('info', papers.length + ' level(s) · ' +
-          papers.reduce(function (n, p) { return n + p.body.questions.length; }, 0) + ' questions in all · rev ' + papers[0].body.rev + '.'));
+          papers.reduce(function (n, p) { return n + p.body.questions.length; }, 0) + ' questions in all' +
+          (papers[0].body.rev ? ' · rev ' + papers[0].body.rev : '') + '.'));
         paint(items);
 
         // Check the tags against the live topic list (this does not need to know where it goes).
@@ -582,20 +618,10 @@
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
 
       var setId = slugFor(dest, number, age);
-      var newRev = parseInt(papers[0].body.rev, 10);
-
-      // Build each level's row, with the id and the catalog fields set from the owner's choice,
-      // not from the file. Question ids inside are left exactly as supplied (they are frozen).
-      var rows = papers.map(function (p) {
-        var out = {};
-        Object.keys(p.body).forEach(function (k) { out[k] = p.body[k]; });
-        out.setId = setId;
-        out.setNumber = number;
-        out.title = title;
-        out.kind = dest.kind;
-        if (dest.examId) { out.examId = dest.examId; } else { delete out.examId; }
-        return { set_id: setId, level: p.body.level, access: 'login', rev: newRev, status: status, body: out };
-      });
+      /* A file may name its own level and rev. When it does not, the level is the one chosen above
+         and the rev is worked out below, once we know what is already saved under this id. */
+      var fileRev = parseInt(papers[0].body.rev, 10);
+      var levelOf = function (p) { return p.body.level || chosenLevel(); };
 
       goButton.disabled = true;
       goButton.textContent = 'Checking…';
@@ -604,16 +630,33 @@
       // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
       // use the same rev. The database rule is the same: it only refuses a rev that goes down.
       client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
-        var chosenLevels = rows.map(function (r) { return r.level; });
+        var chosenLevels = papers.map(levelOf);
         var existing = (!res.error && res.data) ? res.data : [];
         var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-        if (same.length && !(newRev > highest)) {
+        var newRev = (fileRev >= 1) ? fileRev : highest + 1;
+        if (fileRev >= 1 && same.length && !(newRev > highest)) {
           var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
           fail(goError, setId + ' (' + lv + ') already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
           return;
         }
+
+        // Build each level's row, with the id, the level, the rev and the catalog fields set from the
+        // owner's choice, not from the file. Question ids inside are left exactly as supplied (frozen).
+        var rows = papers.map(function (p) {
+          var out = {};
+          Object.keys(p.body).forEach(function (k) { out[k] = p.body[k]; });
+          delete out.bare;
+          out.setId = setId;
+          out.setNumber = number;
+          out.title = title;
+          out.kind = dest.kind;
+          out.level = levelOf(p);
+          out.rev = newRev;
+          if (dest.examId) { out.examId = dest.examId; } else { delete out.examId; }
+          return { set_id: setId, level: out.level, access: 'login', rev: newRev, status: status, body: out };
+        });
 
         goButton.textContent = 'Uploading…';
         client.from('mcq_papers').upsert(rows, { onConflict: 'set_id,level' })

@@ -1507,3 +1507,19 @@ count, not which questions, not email, not timing), and how to stay off.
 - **Open, for the owner to decide:** the two legacy day ids could be renamed to `up-pgt-mcq-day-11` / `-12` so every day
   shares one shape. It needs SQL on the live database (and leaves an unused old `paper_catalog` row), so it was not done
   unasked; nothing is broken without it.
+
+## The upload page takes a plain list of questions (2026-11-17, on the branch)
+- The owner's MCQ generator hands over a file that is **just the list of questions** (a JSON array), with no
+  wrapper saying which set, level or rev it is. `/admin/upload-paper/` refused it with "This is not a question
+  file." It now accepts it: the page wraps the list itself, shows a **Which level?** field (Medium first — the
+  level every mock-test and MCQ-day page reads), and works out the rev (1 for a new paper, else the highest
+  saved rev of that level plus one). A file that names its own level or rev still rules, and a rev that goes
+  backwards is still refused. Only one such file at a time, because there is one level choice.
+- Nothing else was loosened: the per-question checks, the tag check against `topics`, the fingerprint read-back
+  and the database trigger all run exactly as before. The saved body carries the level and rev that were used,
+  so it never disagrees with its row.
+- Day 13 (Shakespeare Tragedies, 50 mixed questions) was the file that found this. Its questions, options,
+  answers, explanations and ids are the owner's, unchanged; all seven topic tags are real master nodes; no
+  `periodId` is present (allowed — those questions will not show in the dashboard's by-period view).
+- Tested: 23 Playwright checks on the new path (the owner's real file, re-upload → rev 2, a lower named rev
+  still refused, two files where one has no level, rubbish still refused) plus the earlier 23 + 37 checks green.
