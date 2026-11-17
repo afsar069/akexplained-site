@@ -1,18 +1,18 @@
 {% extends "mcq-page.njk" %}
-{% set pageTitle %}UP PGT English MCQs — Day 1: Figure of Speech{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
-{% set pageDescription %}Day 1 Figure of Speech: 50 easy UP PGT English MCQs in a CBT test. Free for everyone, with no login required.{% endset %}
-{% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-1/{% if examReview %}review/{% endif %}{% endset %}
+{% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}: {{ day.title }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
+{% set pageDescription %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} easy UP PGT English MCQs in a CBT test. Free for everyone, with no login required.{% endset %}
+{% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/{% if examReview %}review/{% endif %}{% endset %}
 {% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
-{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day 1',h:'/exams/pgt/up-pgt/mcqs/day-1/'}] %}
+{% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
 {% set mainClass = "cbt" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">
-  <span class="mark" aria-hidden="true">1</span>
+  <span class="mark" aria-hidden="true">{{ day.number }}</span>
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP PGT English</p>
-    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Day 1{% endif %}</h1>
-    <p class="lede" id="cbtLede">{% if examReview %}Figure of Speech · Your answers, the correct answers, and explanations.{% else %}Figure of Speech · 50 easy questions · Free · No login required.{% endif %}</p>
+    <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Day {{ day.number }}{% endif %}</h1>
+    <p class="lede" id="cbtLede">{% if examReview %}{{ day.title }} · Your answers, the correct answers, and explanations.{% else %}{{ day.title }} · {{ day.questionCount }} easy questions · Free · No login required.{% endif %}</p>
   </div>
 </section>
 <div class="cbt-printhead" aria-hidden="true">
@@ -20,12 +20,12 @@
   <span><b>AK Explained</b> &middot; The Student's Library<br>akexplained.com</span>
 </div>
 <div class="wrap cbt-body" data-cbt data-exam-day{% if examReview %} data-mode="review"{% endif %}
-     data-set="up-pgt-figures-of-speech-day-1"
-     data-src="/assets/questions/up-pgt-figures-of-speech-day-1-easy.json"
+     data-set="{{ day.setId }}"
+     data-src="/assets/questions/{{ day.questionFile }}"
      data-exam-home="/exams/pgt/up-pgt/"
      data-exam-index-label="UP PGT MCQs"
-     data-back="/exams/pgt/up-pgt/mcqs/{% if examReview %}day-1/{% endif %}"
-     data-back-label="{% if examReview %}Day 1{% else %}MCQs{% endif %}">
+     data-back="/exams/pgt/up-pgt/mcqs/{% if examReview %}day-{{ day.number }}/{% endif %}"
+     data-back-label="{% if examReview %}Day {{ day.number }}{% else %}MCQs{% endif %}">
   <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
 </div>
 {% endblock %}

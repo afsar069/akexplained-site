@@ -4,13 +4,19 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-16. UP PGT English MCQs Day 1, Figure of Speech, is prepared as a free, no-login CBT set with 50 easy questions. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1 and 2 are free, no-login Figure of Speech CBT sets with 50 easy questions each. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 2 — Figure of Speech (2026-11-17)
+
+- The owner supplied 50 tagged, verified easy questions and requested Day 2 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public file `assets/questions/up-pgt-figures-of-speech-day-2-easy.json` contains the unchanged uploaded question objects. Day 2 and its review are generated from `_data/pgtMcqLiveDays.js` and `_includes/up-pgt-mcq-day-cbt.njk`. Day 1 uses the same shared template. Days 3–60 remain Coming soon.
+- The Eleventy build and topic/id checks passed. A guest browser completed a 10-question Day 2 CBT attempt and review; Day 1 still opened.
 
 ## UP PGT English MCQs Day 1 — Figure of Speech (2026-11-16)
 
 - The owner supplied 50 tagged, verified easy questions and requested Day 1 on `/exams/pgt/up-pgt/mcqs/` as a free CBT set outside login. Facts and near-duplicates were not re-checked.
 - The public question file is `assets/questions/up-pgt-figures-of-speech-day-1-easy.json`. Its 50 question objects are unchanged from the upload. The Day 1 card names Figure of Speech and links to `/exams/pgt/up-pgt/mcqs/day-1/`; its review is at `day-1/review/`.
-- Days 2–60 remain Coming soon. Day 1 uses `data-exam-day` in the shared CBT engine, with no login gate or catalog check. Eleventy build, question/topic ID checks, guest CBT and review browser flow, and 320–1440 px overflow checks passed.
+- At the time, Days 2–60 remained Coming soon. Day 1 uses `data-exam-day` in the shared CBT engine, with no login gate or catalog check. Eleventy build, question/topic ID checks, guest CBT and review browser flow, and 320–1440 px overflow checks passed.
 
 ## Self-serve publish — UP PGT login mock tests (2026-11-15, on the branch, NOT merged)
 
