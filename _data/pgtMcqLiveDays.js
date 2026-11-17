@@ -62,4 +62,13 @@ module.exports = [
     setId: "up-pgt-day-07-chaucer-1",
     questionFile: "up-pgt-day-07-chaucer-1-mixed.json",
   },
+  {
+    number: 8,
+    title: "Chaucer 2: Dream Visions, Troilus, Legend & Epithets",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-08-chaucer-2",
+    questionFile: "up-pgt-day-08-chaucer-2-mixed.json",
+  },
 ];

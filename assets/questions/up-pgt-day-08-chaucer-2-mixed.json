@@ -1,0 +1,969 @@
+{
+  "setId": "up-pgt-day-08-chaucer-2",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 8,
+  "setName": "Day 8 · Chaucer 2: Dream Visions, Troilus, Legend & Epithets",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "book-of-duchess": "The Book of the Duchess",
+    "parliament-of-fowls": "The Parliament of Fowls",
+    "house-of-fame": "The House of Fame",
+    "troilus-criseyde": "Troilus and Criseyde",
+    "legend-good-women": "The Legend of Good Women",
+    "epithets-dates-firsts": "Epithets, Dates & Firsts"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-01",
+      "question": "Which historical loss is commemorated in Chaucer's The Book of the Duchess?",
+      "options": [
+        "The death of John Gower",
+        "The fall of Troy",
+        "The death of Richard II",
+        "The death of Blanche of Lancaster"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The poem mourns Blanche, first wife of John of Gaunt, through an allegorical dream of loss.",
+      "topic": "book-of-duchess",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-02",
+      "question": "What name describes the grieving male figure whom the dreamer meets in The Book of the Duchess?",
+      "options": [
+        "The Green Knight",
+        "The Pardoner",
+        "The Black Knight",
+        "The Franklin"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Black Knight laments the loss of his beloved during the dreamer's conversation with him.",
+      "topic": "book-of-duchess",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-03",
+      "question": "Which figure is represented allegorically by the Black Knight in The Book of the Duchess?",
+      "options": [
+        "Thomas Becket",
+        "William Langland",
+        "John of Gaunt",
+        "King Henry V"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The mourner represents John of Gaunt, whose wife Blanche had died.",
+      "topic": "book-of-duchess",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-04",
+      "question": "Which mythological couple's story does the sleepless narrator read before dreaming in The Book of the Duchess?",
+      "options": [
+        "Pyramus and Thisbe",
+        "Ceyx and Alcyone",
+        "Jason and Medea",
+        "Orpheus and Eurydice"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The tale of Ceyx and Alcyone precedes the narrator's sleep and dream.",
+      "topic": "book-of-duchess",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://academic.oup.com/eic/article/73/4/379/7511948",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-05",
+      "question": "Consider these statements about The Book of the Duchess:\nI. It frames an encounter with a mourner inside a dream.\nII. The knight's grief centres on a lost lady.\nIII. Its primary plot is the pilgrimage to Canterbury.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The dreamer meets a mourning knight. The pilgrimage frame belongs to The Canterbury Tales, not this elegiac dream vision.",
+      "topic": "book-of-duchess",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-06",
+      "question": "On which festival day do the birds gather to choose mates in The Parliament of Fowls?",
+      "options": [
+        "Easter Sunday",
+        "All Saints' Day",
+        "Saint Valentine's Day",
+        "Christmas Day"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Nature presides over a gathering of birds choosing mates on Saint Valentine's Day.",
+      "topic": "parliament-of-fowls",
+      "topicId": "the-parliament-of-fowls",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.literatureproject.com/canterbury-tales/canterbury-tales_29.htm",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-07",
+      "question": "In The Parliament of Fowls, what bird receives the attention of three competing male eagles?",
+      "options": [
+        "A female eagle (formel)",
+        "A nightingale",
+        "A white swan",
+        "A dove"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Three male eagles make competing claims for the same formel eagle.",
+      "topic": "parliament-of-fowls",
+      "topicId": "the-parliament-of-fowls",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.literatureproject.com/canterbury-tales/canterbury-tales_29.htm",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-08",
+      "question": "How does the dispute over the formel eagle end in The Parliament of Fowls?",
+      "options": [
+        "She is granted a year before choosing",
+        "She is forced to choose the cuckoo",
+        "The birds elect a human monarch",
+        "She immediately accepts the first eagle"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Nature grants the female eagle a year to decide rather than compelling an immediate match.",
+      "topic": "parliament-of-fowls",
+      "topicId": "the-parliament-of-fowls",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.thefifthdesk.org/work/the-parliament-of-fowls/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-09",
+      "question": "Which classical dream narrative does Chaucer's narrator read before his vision in The Parliament of Fowls?",
+      "options": [
+        "The Metamorphoses' tale of Narcissus",
+        "The Dream of Scipio",
+        "The Aeneid's account of Dido",
+        "The Iliad's account of Hector"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Cicero's Dream of Scipio provides an important starting point for Chaucer's vision.",
+      "topic": "parliament-of-fowls",
+      "topicId": "the-parliament-of-fowls",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.thefifthdesk.org/work/the-parliament-of-fowls/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-10",
+      "question": "Consider these statements about The Parliament of Fowls:\nI. The figure of Nature presides over the birds.\nII. Three male eagles compete for one formel eagle.\nIII. The formel is forced to choose one suitor immediately.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I and II only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Nature supervises the gathering and allows the formel additional time rather than requiring an immediate choice.",
+      "topic": "parliament-of-fowls",
+      "topicId": "the-parliament-of-fowls",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.literatureproject.com/canterbury-tales/canterbury-tales_29.htm",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-11",
+      "question": "Which creature lifts the dreamer through the air in Chaucer's The House of Fame?",
+      "options": [
+        "A golden swan",
+        "A winged horse",
+        "A great eagle",
+        "A griffin"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A talkative eagle carries the dreaming narrator through the heavens.",
+      "topic": "house-of-fame",
+      "topicId": "the-house-of-fame",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-12",
+      "question": "Which personified figure determines the distribution of reputation in The House of Fame?",
+      "options": [
+        "Fortune's daughter Nature",
+        "Fame",
+        "Lady White",
+        "Queen Alceste"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem presents the goddess Fame as an unpredictable distributor of public renown.",
+      "topic": "house-of-fame",
+      "topicId": "the-house-of-fame",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-13",
+      "question": "Into how many books is Chaucer's unfinished The House of Fame conventionally divided?",
+      "options": [
+        "Seven books",
+        "Three books",
+        "One book",
+        "Five books"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The surviving dream-vision narrative of The House of Fame is arranged in three books.",
+      "topic": "house-of-fame",
+      "topicId": "the-house-of-fame",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-14",
+      "question": "What is the chief thematic contrast explored through Fame and Rumour in The House of Fame?",
+      "options": [
+        "The unstable circulation of stories and reputation",
+        "The proper order of monastic services",
+        "The customs of Canterbury pilgrims",
+        "The triumph of a crusading knight"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The poem questions how information, rumours and reputations travel and acquire authority.",
+      "topic": "house-of-fame",
+      "topicId": "the-house-of-fame",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-15",
+      "question": "Match each Chaucerian dream vision with its prominent figure or motif:\nA. The Book of the Duchess\nB. The Parliament of Fowls\nC. The House of Fame\nD. The Legend of Good Women\n1. Cupid and Alceste\n2. The Black Knight\n3. The eagle carrying the dreamer\n4. The formel eagle and competing suitors",
+      "options": [
+        "A-2, B-4, C-3, D-1",
+        "A-3, B-4, C-2, D-1",
+        "A-2, B-1, C-3, D-4",
+        "A-4, B-2, C-1, D-3"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The four recurring figures are the Black Knight, the formel eagle, the airborne guide, and Cupid with Alceste.",
+      "topic": "house-of-fame",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Dream Visions",
+      "src": "https://www.poetryfoundation.org/poets/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-16",
+      "question": "In Chaucer's Troilus and Criseyde, Troilus is a prince of which city?",
+      "options": [
+        "Troy",
+        "Rome",
+        "Athens",
+        "Thebes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Troilus is a Trojan prince whose love story unfolds against the background of the Trojan War.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-17",
+      "question": "Who is the king and father of Troilus in Troilus and Criseyde?",
+      "options": [
+        "Agamemnon",
+        "Priam",
+        "Creon",
+        "Menelaus"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Troilus is a son of King Priam of Troy.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-18",
+      "question": "Which character acts as a go-between for Troilus and Criseyde?",
+      "options": [
+        "Calchas",
+        "Aeneas",
+        "Pandarus",
+        "Diomede"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Pandarus helps bring the lovers together and guides their courtship.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-19",
+      "question": "Which Greek warrior courts Criseyde after she joins the Greek camp?",
+      "options": [
+        "Diomede",
+        "Pandarus",
+        "Hector",
+        "Paris"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Diomede pursues Criseyde after she leaves Troy for the Greek camp.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-20",
+      "question": "How many books make up Chaucer's Troilus and Criseyde?",
+      "options": [
+        "Seven",
+        "Three",
+        "Twelve",
+        "Five"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The complete narrative is divided into five books.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-21",
+      "question": "Which Italian poem provided the principal narrative source for Troilus and Criseyde?",
+      "options": [
+        "Ariosto's Orlando Furioso",
+        "Boccaccio's Il Filostrato",
+        "Dante's Vita Nuova",
+        "Petrarch's Africa"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chaucer adapted the Trojan love story principally from Boccaccio's Il Filostrato.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://chaucer.fas.harvard.edu/pages/rime-royal",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-22",
+      "question": "Which stanza form is used throughout Chaucer's Troilus and Criseyde?",
+      "options": [
+        "Ottava rima (eight lines: abababcc)",
+        "Spenserian stanza (nine lines)",
+        "Blank verse without rhyme",
+        "Rhyme royal (seven lines: ababbcc)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Troilus and Criseyde uses seven-line rhyme-royal stanzas in a pattern of ababbcc.",
+      "topic": "troilus-criseyde",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.english.cam.ac.uk/troilus/?page_id=49",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-23",
+      "question": "Who is Criseyde's father in the Trojan story as told by Chaucer?",
+      "options": [
+        "Hector",
+        "Antenor",
+        "Priam",
+        "Calchas"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Calchas is Criseyde's father and has gone over to the Greek side.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.english.upenn.edu/sites/www.english.upenn.edu/files/articles/Davies.%20Troilus%20and%20Siege.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-24",
+      "question": "Which Trojan prisoner is central to the exchange that sends Criseyde to the Greek camp?",
+      "options": [
+        "Helenus",
+        "Pandarus",
+        "Antenor",
+        "Aeneas"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The negotiations over Antenor's return lead to Criseyde's departure from Troy.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.english.upenn.edu/sites/www.english.upenn.edu/files/articles/Davies.%20Troilus%20and%20Siege.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-25",
+      "question": "What movement of feeling is announced by the phrase \"double sorrow\" in the opening of Troilus and Criseyde?",
+      "options": [
+        "From childhood to prosperity without reversal",
+        "From victory to exile and back to kingship",
+        "From distress to joy and back to distress",
+        "From worship to disbelief and then to silence"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The narrator announces a love story that rises from grief to joy before returning to sorrow.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-26",
+      "question": "Consider these claims about Troilus and Criseyde:\nI. The action occurs during the Trojan War.\nII. Pandarus facilitates the lovers' relationship.\nIII. The poem ends with a joyful wedding of Troilus and Criseyde.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Trojan setting and Pandarus' role are central, but the lovers do not marry at the conclusion.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-27",
+      "question": "Consider these statements about Chaucer's adaptation:\nI. Boccaccio's Il Filostrato is a major source.\nII. Chaucer wrote Troilus and Criseyde entirely in Italian.\nIII. The English poem uses rhyme royal.\nWhich statements are correct?",
+      "options": [
+        "I and III only",
+        "I, II and III",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Italian source is recast as a Middle English poem in rhyme royal.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://chaucer.fas.harvard.edu/pages/rime-royal",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-28",
+      "question": "Consider the narrative after Criseyde leaves Troy:\nI. She joins the Greek camp.\nII. Diomede begins to court her.\nIII. She promptly returns to Troy and marries Troilus.\nWhich statements are correct?",
+      "options": [
+        "I, II and III",
+        "I and III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Criseyde's move to the Greek camp and Diomede's attention contribute to the tragic separation.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-29",
+      "question": "Which name does the narrator of Troilus and Criseyde present as an old literary authority, rather than naming Boccaccio as his principal source?",
+      "options": [
+        "Thomas Usk",
+        "William Caxton",
+        "Lollius",
+        "John Lydgate"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Chaucer invokes Lollius as an ancient authority, although the poem's principal narrative model is Boccaccio.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-30",
+      "question": "Match the characters with their roles in Troilus and Criseyde:\nA. Troilus\nB. Criseyde\nC. Pandarus\nD. Calchas\n1. Criseyde's father\n2. Trojan prince\n3. Pandarus' niece\n4. Intermediary between the lovers",
+      "options": [
+        "A-2, B-3, C-4, D-1",
+        "A-3, B-2, C-4, D-1",
+        "A-1, B-3, C-2, D-4",
+        "A-2, B-4, C-3, D-1"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Troilus is Priam's son, Criseyde is Pandarus' niece, Pandarus mediates, and Calchas is her father.",
+      "topic": "troilus-criseyde",
+      "topicId": "troilus-and-criseyde",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Troilus and Criseyde",
+      "src": "https://www.thefifthdesk.org/work/troilus-and-criseyde/",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-31",
+      "question": "Which deity rebukes Chaucer's dreamer for unfavourable representations of women in The Legend of Good Women?",
+      "options": [
+        "The God of Love (Cupid)",
+        "Saturn",
+        "Mars",
+        "Apollo"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Cupid challenges the narrator over his earlier portrayals of women and fidelity.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/e/472/files/2017/04/Chaucer-The-Legend-of-Good-Women-1rncqic.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-32",
+      "question": "Who speaks on the narrator's behalf in the Prologue to The Legend of Good Women?",
+      "options": [
+        "Urania",
+        "Alceste",
+        "Criseyde",
+        "Philomela"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Alceste intercedes and helps secure a compensating literary task for the narrator.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/e/472/files/2017/04/Chaucer-The-Legend-of-Good-Women-1rncqic.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-33",
+      "question": "Which queen is the subject of the first surviving legend in The Legend of Good Women?",
+      "options": [
+        "Dido",
+        "Hypermnestra",
+        "Cleopatra",
+        "Lucretia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The extant sequence of narratives begins with the legend of Cleopatra.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-34",
+      "question": "Which pair of young lovers is the subject of a legend within The Legend of Good Women?",
+      "options": [
+        "Troilus and Helen",
+        "Pyramus and Thisbe",
+        "Romeo and Juliet",
+        "Tristan and Isolde"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The poem retells the classical tragedy of Thisbe and Pyramus.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-35",
+      "question": "By what letters are the two principal surviving versions of the Prologue to The Legend of Good Women commonly designated?",
+      "options": [
+        "F and G",
+        "A and Z",
+        "X and Y",
+        "B and C"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Scholars distinguish two principal manuscript versions of the Prologue as F and G.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://public.archive.wsu.edu/delahoyd/public_html/chaucer/LGW.html",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-36",
+      "question": "Which mythical hero is linked with both Hypsipyle and Medea in The Legend of Good Women?",
+      "options": [
+        "Achilles",
+        "Paris",
+        "Theseus",
+        "Jason"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The tales of Hypsipyle and Medea are linked by Jason's dealings with these women.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-37",
+      "question": "Which woman is the subject of the final, unfinished legend in the surviving sequence?",
+      "options": [
+        "Cassandra",
+        "Cleopatra",
+        "Penelope",
+        "Hypermnestra"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The legend of Hypermnestra is the final narrative and survives incomplete.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-38",
+      "question": "In The Legend of Good Women, the story of Dido focuses on her betrayal by which hero?",
+      "options": [
+        "Aeneas",
+        "Odysseus",
+        "Jason",
+        "Hector"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Dido's tragedy centres on the departure of Aeneas after their relationship.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/e/472/files/2017/04/Chaucer-The-Legend-of-Good-Women-1rncqic.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-39",
+      "question": "Consider these claims about The Legend of Good Women:\nI. Nine separate legends survive.\nII. The narratives together concern ten women.\nIII. The complete intended cycle of legends was finished.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and II only",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The surviving material contains nine narrative legends about ten women, but the larger project was left unfinished.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-40",
+      "question": "Consider the dream-vision Prologue to The Legend of Good Women:\nI. Cupid reproves the narrator.\nII. Alceste intervenes on the narrator's behalf.\nIII. The narrator is commanded to write a celebration of faithless men.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The divine rebuke and Alceste's intervention lead to tales exemplifying faithful women, not praise of male betrayal.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/e/472/files/2017/04/Chaucer-The-Legend-of-Good-Women-1rncqic.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-41",
+      "question": "Consider these claims about Chaucer's verse forms:\nI. The Legend of Good Women is important for Chaucer's use of decasyllabic couplets.\nII. Troilus and Criseyde uses seven-line rhyme-royal stanzas.\nIII. The Legend of Good Women is written wholly in unrhymed blank verse.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Legend develops the longer rhymed couplet; Troilus is in rhyme royal. The Legend is not blank verse.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://bpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/e/472/files/2017/04/Chaucer-The-Legend-of-Good-Women-1rncqic.pdf",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-42",
+      "question": "Match a woman in The Legend of Good Women with the figure linked to her story:\nA. Dido\nB. Ariadne\nC. Medea\nD. Thisbe\n1. Pyramus\n2. Jason\n3. Aeneas\n4. Theseus",
+      "options": [
+        "A-4, B-3, C-1, D-2",
+        "A-2, B-4, C-3, D-1",
+        "A-3, B-1, C-2, D-4",
+        "A-3, B-4, C-2, D-1"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The pairs are Dido–Aeneas, Ariadne–Theseus, Medea–Jason, and Thisbe–Pyramus.",
+      "topic": "legend-good-women",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Legend of Good Women",
+      "src": "https://searcharchives.bl.uk/catalog/032-002020030",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-43",
+      "question": "Which familiar literary epithet is often applied to Geoffrey Chaucer?",
+      "options": [
+        "The Lake Poet",
+        "The Father of English Poetry",
+        "The Bard of Avon",
+        "The Sage of Chelsea"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chaucer is often called the Father of English Poetry because of his foundational achievements in Middle English verse.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-44",
+      "question": "At which London church was Geoffrey Chaucer buried?",
+      "options": [
+        "Temple Church",
+        "Southwark Cathedral",
+        "St Paul's Cathedral",
+        "Westminster Abbey"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Chaucer was buried in Westminster Abbey in the area later known as Poets' Corner.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-45",
+      "question": "Which English poet was the first to be buried in what later became Westminster Abbey's Poets' Corner?",
+      "options": [
+        "Geoffrey Chaucer",
+        "Edmund Spenser",
+        "John Dryden",
+        "John Milton"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Chaucer was buried there in 1400; later literary burials helped establish Poets' Corner.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/history/explore-our-history/poets-corner",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-46",
+      "question": "On which date did Geoffrey Chaucer die, according to Westminster Abbey's memorial record?",
+      "options": [
+        "25 October 1500",
+        "14 February 1381",
+        "23 April 1616",
+        "25 October 1400"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Westminster Abbey records Chaucer's death on 25 October 1400.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-47",
+      "question": "Which work is associated with Chaucer's earliest major response to the death of Blanche of Lancaster?",
+      "options": [
+        "The Legend of Good Women",
+        "The Book of the Duchess",
+        "The Canterbury Tales",
+        "Troilus and Criseyde"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Book of the Duchess was written in memory of Blanche, who died in 1368.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "the-book-of-the-duchess",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-48",
+      "question": "Arrange these events in chronological order:\nI. Chaucer's death\nII. The death of Blanche of Lancaster\nIII. Nicholas Brigham's Chaucer monument erected\nIV. Edmund Spenser's burial near Chaucer",
+      "options": [
+        "II – I – III – IV",
+        "II – I – IV – III",
+        "II – III – I – IV",
+        "I – II – III – IV"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Blanche died in 1368; Chaucer in 1400; his monument was erected in 1556; Spenser was buried there in 1599.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-49",
+      "question": "Consider these statements about Chaucer's literary reputation and biography:\nI. He is often called the Father of English Poetry.\nII. His birth year can be established with complete certainty as 1340.\nIII. He was buried at Westminster Abbey in 1400.\nWhich statements are correct?",
+      "options": [
+        "I, II and III",
+        "I and III only",
+        "II and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Chaucer's birth is usually placed in the early 1340s, not pinned down to an indisputable single year; his reputation and burial are well attested.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "geoffrey-chaucer",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://www.westminster-abbey.org/abbey-commemorations/commemorations/geoffrey-chaucer",
+      "periodId": "age-of-chaucer"
+    },
+    {
+      "id": "up-pgt-day-08-chaucer2-mix-50",
+      "question": "Consider these claims about the history of rhyme royal:\nI. It normally consists of seven lines rhyming ababbcc.\nII. Chaucer was its earliest known user in English.\nIII. Its later name has been connected with use by James I of Scotland.\nWhich statements are correct?",
+      "options": [
+        "II and III only",
+        "I, II and III",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Harvard identifies Chaucer as the earliest English user and notes the later association with King James I of Scotland; the form rhymes ababbcc.",
+      "topic": "epithets-dates-firsts",
+      "topicId": "rhyme-royal",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Chaucer 2: Epithets, Dates and Firsts",
+      "src": "https://chaucer.fas.harvard.edu/pages/rime-royal",
+      "periodId": "age-of-chaucer"
+    }
+  ]
+}
