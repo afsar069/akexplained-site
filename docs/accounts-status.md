@@ -4,7 +4,14 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1–10 are free, no-login CBT sets. Day 10 covers Shakespeare 1 with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1–10 are free, no-login CBT sets. Day 11 login pages are prepared on a feature branch; the protected question load and publication are pending. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 11 — Shakespeare 2 (prepared, not live; 2026-11-17)
+
+- The owner supplied 50 tagged, verified mixed-difficulty questions and requested a login-only CBT set. Facts and near-duplicates were not re-checked. The upload remains outside the public repository.
+- The feature branch prepares a Day 11 lock card and gated test/review pages. The uploaded question objects are unchanged. The database accepts only `easy`, `medium` or `hard` as a storage level, so the page uses `medium` while displaying the supplied mixed-difficulty label.
+- Automatic approval review rejected writing the full login-only set to the AK Explained Supabase project because the user had not explicitly named that sensitive destination. The database still has no Day 11 row; do not merge the prepared pages before the protected row is loaded and verified.
+- Eleventy, link checks, and local guest/logged-in CBT flows with a mocked database passed. Day 11 is not published; Days 1–10 remain live.
 
 ## UP PGT English MCQs Day 10 — Shakespeare 1 (2026-11-17)
 

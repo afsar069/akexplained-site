@@ -253,7 +253,13 @@
     var qn = parseInt(row.question_count, 10);
     if (!(qn > 0)) return;
     var lede = document.getElementById('cbtLede');
-    if (lede) lede.textContent = qn + ' questions. Log in with a free account to take this ' + (EXAM_MOCK ? 'test.' : 'set.');
+    if (!lede) return;
+    var dayTitle = root.getAttribute('data-day-title');
+    if (EXAM_DAY && dayTitle) {
+      lede.textContent = dayTitle + ' · ' + qn + ' ' + (root.getAttribute('data-day-level-label') || '') + ' questions · Free login required.';
+    } else {
+      lede.textContent = qn + ' questions. Log in with a free account to take this ' + (EXAM_MOCK ? 'test.' : 'set.');
+    }
   }
 
   /* Doosra level (abhi do hi hain). Ginti isse zyada maangi jaye to
