@@ -39,9 +39,11 @@ breaking it breaks a promise already made.
   set row (marked `data-catalog-set`) between "Coming soon" and Start/lock from the live catalog at view time.
   **Free sets are never catalog-checked** and behave exactly as before. A brand-new login set still needs its
   slot planned in the registry once (title, topics, levels, count); after that, publishing is self-serve.
-  Known gap: the dashboard age pool (rule 10) counts a login set only once it is `live` in the registry, so a
-  set published self-serve to a Coming-soon slot is not in the pool denominator until the next registry edit +
-  rebuild.
+  **The dashboard age pool follows the live catalog** (owner, 2026-11-17; this closes the gap this series
+  shipped with): `assets/dashboard.js` adds the MCQ part of each age's pool up again against the live
+  `paper_catalog` — a free set is a file and always counts, a login set the build counted counts only while it
+  is live, and a login set published into a Coming-soon slot is added. `tools/build-syllabus.js` writes the
+  per-age `liveSets` list that makes this possible. If the catalog cannot be read, the built pool stands.
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); PGT English and TGT English are non-link Coming soon cards. Not hand-written HTML any more.
@@ -239,7 +241,10 @@ and never ask the owner for it.**
   **The level counts MCQs too** (owner, 2026-11-06): an age's pool = its Daily questions + the questions of its
   live MCQ sets (`tools/build-syllabus.js` matches the 20 MCQ ages to the 20 Daily ages by position). Daily and
   MCQ answers count the same, each question once by its latest answer, 60% answered at 60% right. A set that is
-  not live is not in the pool. Strengths and Areas to improve judge **specific topics only** (never a whole
+  not live is not in the pool. **Which login sets are live is read from the live `paper_catalog` when the
+  dashboard opens** (owner, 2026-11-17, rule 17), so a set published or hidden self-serve changes the pool at
+  once; the syllabus file's `liveSets` says what the build counted, and a failed read leaves the built pool
+  as it is. Strengths and Areas to improve judge **specific topics only** (never a whole
   period, never "not sorted"), at least 3 answers each. **Top students** shows up to 10, ranked by **points =
   right answers x accuracy** (each question once, latest answer; owner, 2026-11-06: rank must depend on both how
   many questions and how accurate, never one lucky answer on top). The board shows rank, name, points and accuracy;
@@ -664,6 +669,16 @@ already public for live rows), so `/privacy/` needs no change.
    (`up-pgt-mcq-day-N`, or Day 11's or 12's own id), and the final check now also says when a file's level is one the
    series' pages cannot read. 60 Playwright checks passed (guest / student, live / not live / read fails, old and new ids,
    free days untouched, mock-test and UP AP regressions, 375px).
+
+**Two follow-ups shipped with series 4** (owner, 2026-11-17):
+- `assets/mcq-age.js` now asks the catalog for `status = 'live'` itself, as `paper-list.js` already did. An
+  admin can read drafts by RLS, so without it the owner saw a Draft literature set as open while students did
+  not.
+- The **dashboard age pool is no longer a build-time number**: `assets/dashboard.js` re-adds the MCQ part of
+  each age's pool from the live catalog (`applyLiveCatalog`), using the per-age `liveSets` list that
+  `tools/build-syllabus.js` now writes into `assets/syllabus-british.json`. A set published self-serve counts
+  at once, one put back to Draft drops out, and a failed read keeps the built number. This closes the "known
+  gap" series 2 shipped with.
 
 **Still static:** nothing that has pages. UGC NET mock tests / Paper 1 are blocked on their pages
 (`docs/self-serve-publish-plan.md`, series 5). Do each series on its own branch, test it

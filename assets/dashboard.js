@@ -185,6 +185,50 @@
     } catch (e) { return Promise.resolve(null); }
   }
 
+  /* The login MCQ sets that are LIVE right now (public.paper_catalog; RLS gives a guest or a
+     student only live rows, and we ask for them anyway so an admin sees what a student sees).
+     Returns null when it cannot be read — then the pool stays exactly as the build made it. */
+  function loadMcqCatalog(client) {
+    try {
+      return client.from('paper_catalog').select('set_id, question_count')
+        .eq('kind', 'mcq-set').eq('status', 'live')
+        .then(function (res) { return (res.error || !Array.isArray(res.data)) ? null : res.data; },
+              function () { return null; });
+    } catch (e) { return Promise.resolve(null); }
+  }
+
+  /* Self-serve publish (rule 17) means a login set can go live, or be hidden again, without a new
+     build — so the age pool in the syllabus file can be out of date the moment it is written.
+     Here the MCQ part of each age's pool is added up again against the live catalog:
+       - a free set is a file on the site and always counts;
+       - a login set the build counted counts only while it is live;
+       - a login set the build did not know about (published into a Coming-soon slot) is added.
+     The Daily questions are files and never change here. With no catalog, nothing is touched. */
+  function applyLiveCatalog(syl, rows) {
+    if (!syl || !syl.ages || !rows) return syl;
+    var live = {};
+    rows.forEach(function (r) {
+      if (r && r.set_id) live[String(r.set_id)] = (parseInt(r.question_count, 10) > 0) ? parseInt(r.question_count, 10) : 0;
+    });
+    syl.ages.forEach(function (a) {
+      if (!a.liveSets) return;                      // an older syllabus file: leave it alone
+      var counted = {}, total = 0;
+      a.liveSets.forEach(function (set) {
+        counted[set.id] = 1;
+        if (set.access === 'login') { if (live[set.id] != null) total += live[set.id]; }
+        else total += (set.count | 0);
+      });
+      Object.keys(live).forEach(function (id) {
+        if (counted[id]) return;
+        var m = /^(.+)-set-\d+$/.exec(id);
+        if (m && m[1] === a.mcqSlug) total += live[id];
+      });
+      a.mcqTotal = total;
+      a.total = (a.dailyTotal != null ? a.dailyTotal : 0) + total;
+    });
+    return syl;
+  }
+
   // The person's display name and chosen avatar (own profile row only, by RLS).
   function loadProfile(client, uid) {
     return client.from('profiles').select('display_name, avatar_id').eq('id', uid).maybeSingle()
@@ -1243,7 +1287,11 @@
     }, function () { /* keep the quick name */ });
 
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
-    var pSyl = loadSyllabus().then(function (s) { ctx.syllabus = s; }, function () { ctx.syllabus = null; });
+    /* The syllabus file gives the pool as it was at the last build; the live catalog corrects the
+       MCQ part of it, so a set published or hidden since then is counted right (rule 17). */
+    var pSyl = Promise.all([loadSyllabus(), loadMcqCatalog(client)]).then(function (got) {
+      ctx.syllabus = applyLiveCatalog(got[0], got[1]);
+    }, function () { ctx.syllabus = null; });
     var pRuns = loadRuns(client, uid).then(function (n) { ctx.runs = n; }, function () { ctx.runs = null; });
 
     var pAttempts = loadAttempts(client, uid).then(function (r) {

@@ -214,7 +214,9 @@
     if (!managed.length) return;
     whenAuth().then(function (a) {
       if (!a || !a.configured || !a.client) return;   /* Supabase off — page jaisa hai waisa hi */
-      a.client.from('paper_catalog').select('set_id,question_count').eq('kind', 'mcq-set')
+      /* status = 'live' yahan khud maanga jata hai: admin ko RLS draft bhi padhne deta hai,
+         isliye bina iske owner ko ek Draft set bhi "khula" dikh jata, student ko nahi. */
+      a.client.from('paper_catalog').select('set_id,question_count').eq('kind', 'mcq-set').eq('status', 'live')
         .then(function (res) {
           if (res.error || !Array.isArray(res.data)) return;   /* read fail — koi badlaav nahi */
           var live = {};

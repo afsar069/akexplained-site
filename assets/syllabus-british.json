@@ -18,6 +18,38 @@
       "dailyTotal": 100,
       "mcqSlug": "old-english",
       "mcqTotal": 550,
+      "liveSets": [
+        {
+          "id": "old-english-set-1",
+          "access": "free",
+          "count": 100
+        },
+        {
+          "id": "old-english-set-2",
+          "access": "free",
+          "count": 100
+        },
+        {
+          "id": "old-english-set-3",
+          "access": "free",
+          "count": 100
+        },
+        {
+          "id": "old-english-set-4",
+          "access": "login",
+          "count": 100
+        },
+        {
+          "id": "old-english-set-5",
+          "access": "login",
+          "count": 50
+        },
+        {
+          "id": "old-english-set-6",
+          "access": "login",
+          "count": 100
+        }
+      ],
       "total": 650
     },
     {
@@ -27,6 +59,18 @@
       "dailyTotal": 100,
       "mcqSlug": "anglo-norman",
       "mcqTotal": 200,
+      "liveSets": [
+        {
+          "id": "anglo-norman-set-1",
+          "access": "free",
+          "count": 100
+        },
+        {
+          "id": "anglo-norman-set-2",
+          "access": "login",
+          "count": 100
+        }
+      ],
       "total": 300
     },
     {
@@ -36,6 +80,13 @@
       "dailyTotal": 100,
       "mcqSlug": "age-of-chaucer",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "age-of-chaucer-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -45,6 +96,13 @@
       "dailyTotal": 100,
       "mcqSlug": "fifteenth-century",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "fifteenth-century-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -54,6 +112,13 @@
       "dailyTotal": 100,
       "mcqSlug": "renaissance",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "renaissance-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -63,6 +128,13 @@
       "dailyTotal": 100,
       "mcqSlug": "early-tudor",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "early-tudor-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -72,6 +144,13 @@
       "dailyTotal": 100,
       "mcqSlug": "elizabethan",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "elizabethan-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -81,6 +160,13 @@
       "dailyTotal": 100,
       "mcqSlug": "jacobean",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "jacobean-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -90,6 +176,13 @@
       "dailyTotal": 100,
       "mcqSlug": "caroline",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "caroline-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -99,6 +192,13 @@
       "dailyTotal": 100,
       "mcqSlug": "commonwealth",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "commonwealth-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -108,6 +208,13 @@
       "dailyTotal": 100,
       "mcqSlug": "neoclassical",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "neoclassical-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -117,6 +224,13 @@
       "dailyTotal": 100,
       "mcqSlug": "restoration",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "restoration-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -126,6 +240,13 @@
       "dailyTotal": 100,
       "mcqSlug": "augustan-age",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "augustan-age-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -135,6 +256,13 @@
       "dailyTotal": 100,
       "mcqSlug": "age-of-sensibility",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "age-of-sensibility-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -144,6 +272,13 @@
       "dailyTotal": 100,
       "mcqSlug": "romantic-age",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "romantic-age-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -153,6 +288,13 @@
       "dailyTotal": 100,
       "mcqSlug": "victorian-age",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "victorian-age-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -162,6 +304,13 @@
       "dailyTotal": 100,
       "mcqSlug": "edwardian",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "edwardian-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -171,6 +320,13 @@
       "dailyTotal": 100,
       "mcqSlug": "georgian",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "georgian-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -180,6 +336,13 @@
       "dailyTotal": 100,
       "mcqSlug": "modern",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "modern-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     },
     {
@@ -189,6 +352,13 @@
       "dailyTotal": 100,
       "mcqSlug": "postmodern",
       "mcqTotal": 100,
+      "liveSets": [
+        {
+          "id": "postmodern-set-1",
+          "access": "free",
+          "count": 100
+        }
+      ],
       "total": 200
     }
   ]
