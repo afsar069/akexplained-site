@@ -1,0 +1,769 @@
+{
+  "setId": "up-pgt-figures-of-speech-day-2",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 2,
+  "setName": "Day 2 · Figure of Speech",
+  "level": "easy",
+  "levelName": "Easy",
+  "topics": {
+    "foundations": "Foundations",
+    "metonymy": "Metonymy",
+    "sound-devices": "Sound Devices",
+    "oxymoron": "Oxymoron",
+    "wordplay": "Wordplay",
+    "synecdoche": "Synecdoche"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-01",
+      "question": "Which figure of speech is defined as the formation of a word by imitating a sound?",
+      "options": [
+        "Synecdoche",
+        "Onomatopoeia",
+        "Oxymoron",
+        "Metonymy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Onomatopoeia is the formation of a word by imitating a real sound, such as buzz, creak, or hiss.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-02",
+      "question": "What is the literal meaning of the Greek source behind the word 'onomatopoeia'?",
+      "options": [
+        "'Change of name'",
+        "'Pointedly foolish'",
+        "'A receiving together'",
+        "'The making of a name or word'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Section 4.1 and the Fact Slots table state that the Greek source of onomatopoeia means 'the making of a name or word'.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-03",
+      "question": "Which figure of speech unites two incongruous or contradictory terms in a single phrase for a sharp point?",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Metonymy",
+        "Oxymoron"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An oxymoron joins two contradictory or incongruous terms in one phrase, such as 'sick health' or 'cold fire'.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-04",
+      "question": "Derived from the Greek words 'oxys' (sharp) and 'moros' (stupid), what does 'oxymoron' literally mean?",
+      "options": [
+        "'Change of name'",
+        "'A receiving together'",
+        "'Sound echoing sense'",
+        "'Pointedly foolish'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Oxymoron comes from Greek oxys meaning sharp and moros meaning stupid, so it literally means 'pointedly foolish'.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-05",
+      "question": "Which figure of speech is a play on words where one word or sound conveys two different meanings at the same time?",
+      "options": [
+        "Pun",
+        "Synecdoche",
+        "Oxymoron",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Asked in 2011 Q43, a pun is a play on words based on similarity of sound and difference of meaning.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-06",
+      "question": "In the UP PGT 2005 Q95 question 'He knows how to play ___ words', which preposition completes the idiom meaning to make a pun?",
+      "options": [
+        "by",
+        "on",
+        "with",
+        "at"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Page 9 notes that 2005 Q95 asked for the missing word in 'play on words', which means to make a pun.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-07",
+      "question": "Which figure of speech names a part for the whole, or the whole for a part, as asked in UP PGT 2005 Q13?",
+      "options": [
+        "Oxymoron",
+        "Onomatopoeia",
+        "Synecdoche",
+        "Metonymy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Synecdoche substitutes a part for the whole or the whole for a part, such as 'hands' for workers or 'Oxford' for the team.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-08",
+      "question": "What is the literal meaning of the Greek source behind the word 'synecdoche'?",
+      "options": [
+        "'The making of a word'",
+        "'A receiving together'",
+        "'Change of name'",
+        "'Pointedly foolish'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Section 4.4 and the Fact Slots table state that the Greek source of synecdoche means 'a receiving together'.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-09",
+      "question": "Which figure of speech substitutes an attribute or a closely linked thing for the thing itself?",
+      "options": [
+        "Oxymoron",
+        "Metonymy",
+        "Onomatopoeia",
+        "Synecdoche"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Metonymy names a closely associated thing, symbol, place, or tool instead of the thing itself, such as 'the crown' for the king.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-10",
+      "question": "What does the Greek word behind 'metonymy' mean, as tested in UP PGT 2016 Q101?",
+      "options": [
+        "'Change of name'",
+        "'A receiving together'",
+        "'The making of a word'",
+        "'Pointedly foolish'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sections 3, 4.5, and 7 state that the Greek root of metonymy means 'change of name'.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-11",
+      "question": "In the Confusion Corner, which device is defined as a whole statement that sounds false at first but holds a truth?",
+      "options": [
+        "Oxymoron",
+        "Satire",
+        "Antithesis",
+        "Paradox"
+      ],
+      "correct_option_id": 3,
+      "explanation": "While an oxymoron is a compact phrase of two clashing words, a paradox is a whole statement that seems false yet holds truth.",
+      "topic": "foundations",
+      "topicId": "paradox",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-12",
+      "question": "In the Confusion Corner, which figure sets two opposite ideas side by side in a balanced pair rather than gluing two words into one phrase?",
+      "options": [
+        "Synecdoche",
+        "Antithesis",
+        "Metonymy",
+        "Oxymoron"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Oxymoron glues two opposites into one phrase like 'loving hate', whereas antithesis sets two opposite ideas side by side in a balanced structure.",
+      "topic": "foundations",
+      "topicId": "antithesis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-13",
+      "question": "In the Confusion Corner, which figure is defined in the 2000 paper as one where the real meaning is the opposite of the words used?",
+      "options": [
+        "Irony",
+        "Innuendo",
+        "Satire",
+        "Paradox"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Page 6 notes that in Irony, asked in 2000 Q9, the real meaning is the opposite of the literal words.",
+      "topic": "foundations",
+      "topicId": "irony",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-14",
+      "question": "According to the Confusion Corner, which figure is used in 'He received a mortal wound' (2016 Q28), where 'mortal' is moved from the man to his wound?",
+      "options": [
+        "Metonymy",
+        "Synecdoche",
+        "Prosopopeia",
+        "Transferred epithet"
+      ],
+      "correct_option_id": 3,
+      "explanation": "'He received a mortal wound' shifts the adjective 'mortal' from the man to his wound, which is a transferred epithet, asked in 2016 Q28.",
+      "topic": "foundations",
+      "topicId": "transferred-epithet",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-15",
+      "question": "How many direct questions in total were asked on Day 2's five figures across the 10 UP PGT papers from 2000 to 2016?",
+      "options": [
+        "14 questions in 10 papers",
+        "22 questions in 10 papers",
+        "5 questions in 10 papers",
+        "11 questions in 10 papers"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Section 1 records that Day 2's five figures accounted for 11 direct questions across the 10 papers from 2000 to 2016, or about 1.1 per paper.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-16",
+      "question": "Which figure of speech is illustrated by the words 'buzz', 'creak', 'hiss', and 'hurlyburly'?",
+      "options": [
+        "Synecdoche",
+        "Oxymoron",
+        "Onomatopoeia",
+        "Metonymy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Words like 'buzz', 'creak', 'hiss', and 'hurlyburly' imitate the actual sounds they name, so they are examples of onomatopoeia.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-17",
+      "question": "When a pressure cooker makes a 'seeti', a fan 'whirs', or a clock 'ticks', which figure of speech do these words illustrate?",
+      "options": [
+        "Oxymoron",
+        "Metonymy",
+        "Onomatopoeia",
+        "Synecdoche"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Section 4.1 explains that 'seeti', 'whirs', 'ticks', and 'buzzes' each copy the real noise they name, illustrating onomatopoeia.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-18",
+      "question": "Which figure of speech is illustrated by the opening words of the Hindi film song 'Dhak Dhak Karne Laga'?",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Section 2 explains that 'Dhak Dhak' does not merely describe a heartbeat but imitates the heartbeat's sound, which is onomatopoeia.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-19",
+      "question": "In UP PGT 2003 Q3, which of the following four words was identified as an onomatopoeic 'sound' word?",
+      "options": [
+        "Dreamlike",
+        "Sparkled",
+        "Peered",
+        "Chuckle"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 2003 Q3, 'Chuckle' imitates the sound of a low laugh, whereas 'Dreamlike', 'Peered', and 'Sparkled' only describe visual appearance.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-20",
+      "question": "Identify the figure of speech in Tennyson's lines: 'The moan of doves in immemorial elms, / And murmuring of innumerable bees.'",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Tennyson's 'murmuring of innumerable bees' is cited in the note as the best-known textbook example of onomatopoeia.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-21",
+      "question": "Identify the figure of speech described in Alexander Pope's rule: 'The sound must seem an echo to the sense'.",
+      "options": [
+        "Oxymoron",
+        "Pun",
+        "Synecdoche",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In 'An Essay on Criticism', Pope states the principle of onomatopoeia: the sound of a verse line should echo its meaning.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-22",
+      "question": "Identify the figure of speech in Pope's line: 'The hoarse, rough verse should like the torrent roar'.",
+      "options": [
+        "Pun",
+        "Metonymy",
+        "Onomatopoeia",
+        "Oxymoron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The harsh words 'hoarse', 'rough', 'torrent', and 'roar' imitate the roaring sound of a stormy sea, illustrating onomatopoeia.",
+      "topic": "sound-devices",
+      "topicId": "onomatopoeia",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-23",
+      "question": "Which figure of speech is used in the everyday phrases 'bittersweet', 'open secret', and 'deafening silence'?",
+      "options": [
+        "Metonymy",
+        "Oxymoron",
+        "Synecdoche",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Section 4.2 lists 'bittersweet', 'open secret', and 'deafening silence' as everyday oxymorons that join two opposite words in one phrase.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-24",
+      "question": "Identify the figure of speech in Tennyson's line: 'Faith unfaithful kept him falsely true'.",
+      "options": [
+        "Oxymoron",
+        "Onomatopoeia",
+        "Synecdoche",
+        "Pun"
+      ],
+      "correct_option_id": 0,
+      "explanation": "From Tennyson's 'Idylls of the King', 'Faith unfaithful' and 'falsely true' join contradictory terms, making this a standard oxymoron.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-25",
+      "question": "Identify the figure of speech in Romeo's words: 'O brawling love, O loving hate'.",
+      "options": [
+        "Pun",
+        "Oxymoron",
+        "Metonymy",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In 'Romeo and Juliet' Act 1, Scene 1, 'brawling love' and 'loving hate' pair opposite terms together as oxymorons.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-26",
+      "question": "Identify the figure of speech in Romeo's words: 'O heavy lightness, serious vanity'.",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'Heavy lightness' and 'serious vanity' in 'Romeo and Juliet' Act 1, Scene 1 unite contradictory words into oxymoronic phrases.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-27",
+      "question": "Identify the figure of speech in Romeo's phrases: 'Feather of lead, bright smoke, cold fire, sick health'.",
+      "options": [
+        "Oxymoron",
+        "Synecdoche",
+        "Pun",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Each pair—'feather of lead', 'bright smoke', 'cold fire', and 'sick health'—joins two opposite concepts into an oxymoron.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-28",
+      "question": "Identify the figure of speech in Juliet's famous line: 'Parting is such sweet sorrow'.",
+      "options": [
+        "Oxymoron",
+        "Onomatopoeia",
+        "Metonymy",
+        "Synecdoche"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'Romeo and Juliet' Act 2, Scene 2, Juliet joins the opposite terms 'sweet' and 'sorrow' in an oxymoron.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-29",
+      "question": "Identify the figure of speech in Milton's description of Hell: 'No light, but rather darkness visible'.",
+      "options": [
+        "Synecdoche",
+        "Pun",
+        "Oxymoron",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "In 'Paradise Lost', Book 1, Milton joins the contradictory terms 'darkness' and 'visible' in a famous oxymoron.",
+      "topic": "oxymoron",
+      "topicId": "oxymoron",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-30",
+      "question": "Identify the figure of speech in the shopkeeper's remark: 'Sir, this bargain is a real steal!'",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Pun",
+        "Oxymoron"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Section 4.3 uses 'a real steal' to illustrate a pun, because 'steal' simultaneously means a great bargain and theft.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-31",
+      "question": "Identify the figure of speech in Shakespeare's Sonnet 138: 'Therefore I lie with her and she with me, / And in our faults by lies we flattered be.'",
+      "options": [
+        "Oxymoron",
+        "Onomatopoeia",
+        "Pun",
+        "Metonymy"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sonnet 138 makes a serious pun on the word 'lie', meaning both to tell a falsehood and to lie down together as lovers.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-32",
+      "question": "Identify the figure of speech in Mercutio's dying line: 'Ask for me tomorrow, and you shall find me a grave man.'",
+      "options": [
+        "Pun",
+        "Oxymoron",
+        "Onomatopoeia",
+        "Synecdoche"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'Romeo and Juliet' Act 3, Scene 1, Mercutio puns on 'grave', meaning both serious in manner and a burial tomb.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-33",
+      "question": "Identify the figure of speech in Hamlet's aside: 'A little more than kin and less than kind.'",
+      "options": [
+        "Pun",
+        "Oxymoron",
+        "Onomatopoeia",
+        "Metonymy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'Hamlet' Act 1, Scene 2, Hamlet puns on the similar-sounding words 'kin' meaning family and 'kind' meaning friendly or natural.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-34",
+      "question": "Identify the figure of speech in John Donne's line: 'When thou hast done, thou hast not done, / For I have more.'",
+      "options": [
+        "Pun",
+        "Synecdoche",
+        "Oxymoron",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "In 'A Hymn to God the Father', Donne makes a serious pun on 'done' and his own surname 'Donne'.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-35",
+      "question": "Identify the figure of speech in the 2002 Q64 sentence: 'An ambassador is a gentleman who lies abroad for good of his country.'",
+      "options": [
+        "Metonymy",
+        "Pun",
+        "Synecdoche",
+        "Oxymoron"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Asked in 2002 Q64, this sentence puns on 'lies', meaning both resides abroad and tells falsehoods.",
+      "topic": "wordplay",
+      "topicId": "pun",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-36",
+      "question": "Identify the figure of speech in the neighbour's sentence: 'We have five mouths to feed at home.'",
+      "options": [
+        "Oxymoron",
+        "Synecdoche",
+        "Onomatopoeia",
+        "Metonymy"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Here 'five mouths', a physical part of the body, stands for five whole persons, which is synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-37",
+      "question": "Identify the figure of speech when 'six guns' is used to mean six men who carry guns.",
+      "options": [
+        "Oxymoron",
+        "Pun",
+        "Metonymy",
+        "Synecdoche"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Section 4.4 gives 'six guns' for six armed men as an example of part-for-whole synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-38",
+      "question": "Identify the figure of speech in 'Oxford won the match', where the university stands for its sports team.",
+      "options": [
+        "Oxymoron",
+        "Metonymy",
+        "Synecdoche",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Section 4.4 gives 'Oxford won the match' as an example of whole-for-part synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-39",
+      "question": "Identify the figure of speech in the expressions 'new wheels' for a car and 'all hands on deck' for workers.",
+      "options": [
+        "Metonymy",
+        "Oxymoron",
+        "Pun",
+        "Synecdoche"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Because wheels are a physical part of a car and hands are a physical part of workers, both are examples of synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-40",
+      "question": "Identify the figure of speech in Thomas Gray's line: 'Some heart once pregnant with celestial fire'.",
+      "options": [
+        "Oxymoron",
+        "Synecdoche",
+        "Metonymy",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Gray's 'Elegy', 'heart' is a part of a person used to stand for the whole person, which is synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-41",
+      "question": "In Thomas Gray's line 'Hands, that the rod of empire might have sway'd', which figure of speech is used in the word 'Hands'?",
+      "options": [
+        "Metonymy",
+        "Synecdoche",
+        "Pun",
+        "Oxymoron"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Gray's 'Elegy', 'Hands' is a physical part of a person standing for the whole person, making it synecdoche.",
+      "topic": "synecdoche",
+      "topicId": "synecdoche",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-42",
+      "question": "Identify the figure of speech in the news headline: 'Dalal Street fell today.'",
+      "options": [
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'Dalal Street' names the street where the stock exchange stands in place of the share market itself, which is metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-43",
+      "question": "Identify the figure of speech in the news statement: 'She lost her seat in the Lok Sabha election.'",
+      "options": [
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy",
+        "Pun"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Here 'seat' is a closely associated object standing for her parliamentary post as a member, which is metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-44",
+      "question": "Identify the figure of speech when 'the bench' is used for the judiciary and 'the crown' is used for the king.",
+      "options": [
+        "Metonymy",
+        "Oxymoron",
+        "Synecdoche",
+        "Onomatopoeia"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Section 4.5 lists 'the bench' for the judiciary and 'the crown' for the king as textbook cases of metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-45",
+      "question": "Identify the figure of speech in the UP PGT 2010 Q13 sentence: 'He is too fond of red-tape.'",
+      "options": [
+        "Oxymoron",
+        "Synecdoche",
+        "Metonymy",
+        "Personification"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Asked in 2010 Q13, 'red-tape'—the tape used to tie government files—stands for official delay and paperwork, which is metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-46",
+      "question": "Identify the figure of speech in the UP PGT 2000 Q53 proverb: 'The pen is mightier than the sword.'",
+      "options": [
+        "Synecdoche",
+        "Metaphor",
+        "Simile",
+        "Metonymy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Asked in 2000 Q53, 'pen' stands for writing and 'sword' stands for armed force, making it metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-47",
+      "question": "Identify the figure of speech when 'White House' stands for the US President and 'suits' stands for businessmen.",
+      "options": [
+        "Synecdoche",
+        "Metonymy",
+        "Oxymoron",
+        "Pun"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Page 5 explains that 'White House' and 'suits' name an associated place or dress rather than a body part, so they are metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-48",
+      "question": "Identify the figure of speech in James Shirley's lines: 'Sceptre and Crown / Must tumble down'.",
+      "options": [
+        "Onomatopoeia",
+        "Metonymy",
+        "Oxymoron",
+        "Synecdoche"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In Shirley's 'The Glories of our Blood and State', the sceptre and crown are royal symbols standing for kingly power, which is metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-49",
+      "question": "In Thomas Gray's line 'Hands, that the rod of empire might have sway'd', which figure of speech is used in 'the rod of empire'?",
+      "options": [
+        "Onomatopoeia",
+        "Synecdoche",
+        "Oxymoron",
+        "Metonymy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "As explained in Section 4.5 and the Quote Bank, 'the rod of empire' is a symbol of ruling power standing for power itself, making it metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-2-e-50",
+      "question": "In UP PGT 2016 Q101, using 'the sceptre' to stand for a king is confirmed as a true example of which figure of speech?",
+      "options": [
+        "Metonymy",
+        "Pun",
+        "Synecdoche",
+        "Oxymoron"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Section 4.5 and 2016 Q101 confirm that using 'the sceptre' to stand for a king is a textbook example of metonymy.",
+      "topic": "metonymy",
+      "topicId": "metonymy",
+      "qtype": "direct"
+    }
+  ]
+}
