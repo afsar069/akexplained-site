@@ -4,12 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1–5 are free, no-login CBT sets. Day 5 covers Prosody 2: Rhyme & Stanza Forms with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1–6 are free, no-login CBT sets. Day 6 covers major stanza and poetic forms with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 6 — Major Stanza Forms (2026-11-17)
+
+- The owner supplied 50 tagged, verified mixed-difficulty questions and requested Day 6 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public file `assets/questions/up-pgt-day-06-poetic-forms-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 7–60 remain Coming soon.
+- Eleventy, topic/id checks, internal links, and a guest CBT and review flow passed locally.
 
 ## UP PGT English MCQs Day 5 — Prosody 2: Rhyme & Stanza Forms (2026-11-17)
 
 - The owner supplied 50 tagged, verified mixed-difficulty questions and requested Day 5 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
-- The public file `assets/questions/up-pgt-day-05-prosody-2-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 6–60 remain Coming soon.
+- The public file `assets/questions/up-pgt-day-05-prosody-2-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; At the time, Days 6–60 remained Coming soon.
 - Eleventy, topic/id checks, internal links, and a guest CBT and review flow passed locally.
 
 ## UP PGT English MCQs Day 4 — Rhetoric & Prosody 1 (2026-11-17)

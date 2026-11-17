@@ -1,0 +1,920 @@
+{
+  "setId": "up-pgt-day-06-poetic-forms",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 6,
+  "setName": "Day 6 · Major Stanza Forms: Sonnet, Ballad, Elegy, Ode, Epic & Mock Epic",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "sonnet": "Sonnet",
+    "stanza-forms": "Stanza Forms",
+    "ballad": "Ballad",
+    "elegy": "Elegy",
+    "ode": "Ode",
+    "epic": "Epic",
+    "mock-epic": "Mock Epic"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-01",
+      "question": "In poetry, what is a stanza?",
+      "options": [
+        "The repeated sound at a word ending",
+        "A group of lines arranged as a unit within a poem",
+        "A prose paragraph in a novel",
+        "A pause inside a single metrical line"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A stanza groups verse lines into a unit, often separated visually from other groups.",
+      "topic": "stanza-forms",
+      "topicId": "stanza",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/stanza"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-02",
+      "question": "A stanza made up of four lines is called a:",
+      "options": [
+        "Couplet",
+        "Quatrain",
+        "Tercet",
+        "Sestet"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A quatrain has four lines regardless of whether its lines rhyme.",
+      "topic": "stanza-forms",
+      "topicId": "quatrain",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/quatrain"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-03",
+      "question": "Which rhyme scheme characterizes a traditional ottava rima stanza?",
+      "options": [
+        "ABABBCC",
+        "ABBAABBA",
+        "ABABABCC",
+        "ABABBCBCC"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ottava rima has eight lines and normally rhymes ABABABCC.",
+      "topic": "stanza-forms",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/ottava-rima"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-04",
+      "question": "A seven-line stanza in iambic pentameter rhymes ABABBCC. What is its name?",
+      "options": [
+        "Terza rima",
+        "Spenserian stanza",
+        "Ottava rima",
+        "Rhyme royal"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The seven-line ABABBCC pattern identifies rhyme royal, associated with Chaucer.",
+      "topic": "stanza-forms",
+      "topicId": "rhyme-royal",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-05",
+      "question": "Which feature distinguishes a Spenserian stanza from an ordinary set of nine pentameter lines?",
+      "options": [
+        "Its first line must be a rhyming couplet",
+        "Its ninth line is an alexandrine, typically iambic hexameter",
+        "Its ninth line has no metre",
+        "It consists of three equal tercets"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Spenserian stanza has eight pentameter lines followed by a longer, six-foot alexandrine.",
+      "topic": "stanza-forms",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-06",
+      "question": "If linked tercets begin ABA BCB, which rhyme pattern would normally follow in terza rima?",
+      "options": [
+        "BBC",
+        "AAA",
+        "CDC",
+        "CDE"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The middle rhyme of a tercet becomes the outer rhyme of the following one: ABA BCB CDC.",
+      "topic": "stanza-forms",
+      "topicId": "terza-rima",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/terza-rima"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-07",
+      "question": "Two stanza patterns are ABABBCC and ABABABCC. Which pairing identifies them correctly?",
+      "options": [
+        "Ottava rima; rhyme royal",
+        "Ballad stanza; Spenserian stanza",
+        "Spenserian stanza; terza rima",
+        "Rhyme royal; ottava rima"
+      ],
+      "correct_option_id": 3,
+      "explanation": "ABABBCC belongs to seven-line rhyme royal; ABABABCC belongs to eight-line ottava rima.",
+      "topic": "stanza-forms",
+      "topicId": "ottava-rima",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/rhyme-royal-rime-royale"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-08",
+      "question": "A student claims that a Spenserian stanza and a Spenserian sonnet have the same length. Which correction is accurate?",
+      "options": [
+        "The stanza has nine lines; the sonnet has fourteen",
+        "Both have fourteen lines and identical rhyme patterns",
+        "Both have eight lines but different metres",
+        "The stanza has fourteen lines; the sonnet has nine"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A Spenserian stanza has nine lines, whereas the Spenserian sonnet follows a fourteen-line pattern.",
+      "topic": "stanza-forms",
+      "topicId": "spenserian-stanza",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Major stanza forms",
+      "src": "https://www.poetryfoundation.org/education/glossary/spenserian-stanza"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-09",
+      "question": "How many lines does a traditional sonnet contain?",
+      "options": [
+        "Eighteen",
+        "Twelve",
+        "Sixteen",
+        "Fourteen"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The traditional sonnet is a lyric form of fourteen lines.",
+      "topic": "sonnet",
+      "topicId": "sonnet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-10",
+      "question": "What is the usual structural division of a Shakespearean sonnet?",
+      "options": [
+        "Three quatrains followed by a couplet",
+        "An octave followed by a sestet",
+        "Four tercets followed by a refrain",
+        "Two seven-line stanzas"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Shakespearean sonnet comprises twelve lines arranged in three quatrains plus a final couplet.",
+      "topic": "sonnet",
+      "topicId": "shakespearean-sonnet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/shakespearean-sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-11",
+      "question": "In what order do the two principal sections appear in a conventional Petrarchan sonnet?",
+      "options": [
+        "An octave and a sestet",
+        "Five couplets and a quatrain",
+        "Two quatrains and a tercet",
+        "A sestet and an octave"
+      ],
+      "correct_option_id": 0,
+      "explanation": "An Italian or Petrarchan sonnet conventionally divides into eight lines and six lines.",
+      "topic": "sonnet",
+      "topicId": "petrarchan-sonnet",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-12",
+      "question": "Which pattern is most characteristic of the opening octave of a Petrarchan sonnet?",
+      "options": [
+        "ABABCDCD",
+        "ABABBCBC",
+        "AABBCCDD",
+        "ABBAABBA"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Petrarchan octave typically uses enclosed rhymes in the pattern ABBAABBA.",
+      "topic": "sonnet",
+      "topicId": "petrarchan-sonnet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-13",
+      "question": "Which full rhyme scheme identifies the standard Shakespearean sonnet?",
+      "options": [
+        "ABABBCC DEDEFGG",
+        "ABBA ABBA CDE CDE",
+        "ABAB CDCD EFEF GG",
+        "ABAB BCBC CDCD EE"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The standard English sonnet uses three independently rhymed quatrains and a final GG couplet.",
+      "topic": "sonnet",
+      "topicId": "shakespearean-sonnet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/shakespearean-sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-14",
+      "question": "What does the term \"volta\" mean in sonnet analysis?",
+      "options": [
+        "A fixed pause after every fourth syllable",
+        "The repeated opening word of each stanza",
+        "The final stressed syllable of a line",
+        "A turn or shift in thought or argument"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The volta marks a change in the poem’s direction of thought, often near a structural boundary.",
+      "topic": "sonnet",
+      "topicId": "sonnet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-15",
+      "question": "A sonnet uses ABAB BCBC CDCD EE. Which subtype best fits this rhyme scheme?",
+      "options": [
+        "Spenserian sonnet",
+        "Curtal sonnet",
+        "Petrarchan sonnet",
+        "Shakespearean sonnet with separate rhymes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The linked B and C rhymes across quatrains distinguish the Spenserian sonnet.",
+      "topic": "sonnet",
+      "topicId": "spenserian-sonnet",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-16",
+      "question": "A fourteen-line poem rhymes ABBAABBA CDECDE, and its argument turns after line eight. Which reading is most precise?",
+      "options": [
+        "It is a rhyme-royal stanza followed by a sestet",
+        "It is a Shakespearean sonnet with three independent quatrains",
+        "It is ottava rima followed by a heroic quatrain",
+        "It is a Petrarchan sonnet with the volta at the octave-sestet boundary"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The enclosed octave and six-line response form a conventional Petrarchan sonnet.",
+      "topic": "sonnet",
+      "topicId": "petrarchan-sonnet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-17",
+      "question": "A fourteen-line poem has three independently rhymed quatrains and ends with a couplet that overturns the earlier claim. What most strongly identifies its form?",
+      "options": [
+        "The structural build-up and final couplet of a Shakespearean sonnet",
+        "The seven-line grouping of rhyme royal",
+        "The eight-plus-six division of a Petrarchan sonnet",
+        "The interwoven tercets of terza rima"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A Shakespearean sonnet normally builds through three quatrains and can conclude with a pointed couplet.",
+      "topic": "sonnet",
+      "topicId": "shakespearean-sonnet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/shakespearean-sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-18",
+      "question": "Gerard Manley Hopkins devised a compressed sonnet form of ten and a half lines. What is it called?",
+      "options": [
+        "Spenserian stanza",
+        "Rhyme royal",
+        "Caudate sonnet",
+        "Curtal sonnet"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The curtal sonnet contracts the proportions of the fourteen-line form to ten and a half lines.",
+      "topic": "sonnet",
+      "topicId": "sonnet",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Sonnet",
+      "src": "https://www.poetryfoundation.org/education/glossary/sonnet"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-19",
+      "question": "Which description best defines a traditional ballad?",
+      "options": [
+        "A poem without any narrative action",
+        "A long poem primarily praising an object",
+        "A narrative song that tells a story",
+        "A fixed fourteen-line argument"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Traditional ballads are narrative songs transmitted orally, often centred on dramatic events.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-20",
+      "question": "Which rhyme scheme is especially common in the English ballad quatrain?",
+      "options": [
+        "ABABABCC",
+        "ABBAABBA",
+        "ABCB",
+        "AABB"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The second and fourth lines of a traditional ballad quatrain usually rhyme: ABCB.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-21",
+      "question": "A narrative poem uses repeated phrases, simple dialogue and short song-like stanzas. Which genre does this most strongly suggest?",
+      "options": [
+        "Petrarchan sonnet",
+        "Epic",
+        "Pindaric ode",
+        "Ballad"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A plot-driven story with repetition and song-like stanzas is characteristic of a ballad.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-22",
+      "question": "In the common English ballad metre, how do stresses typically alternate across four lines?",
+      "options": [
+        "Six, four, six, four",
+        "Three, three, three, three",
+        "Four, three, four, three",
+        "Five, five, five, five"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Traditional ballad measure alternates four-stress and three-stress lines.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-23",
+      "question": "A poem tells a compact supernatural story in quatrains with alternating four- and three-beat lines. Which classification is best supported?",
+      "options": [
+        "An epic written in blank verse",
+        "A ballad using common ballad metre",
+        "A Horatian ode",
+        "A Petrarchan sonnet"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Storytelling and alternating four- and three-beat lines are hallmarks of the English ballad tradition.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-24",
+      "question": "Which claim about literary ballads is the most accurate?",
+      "options": [
+        "A ballad cannot contain a supernatural incident",
+        "Every ballad must have an unknown author",
+        "Named poets can adapt folk-ballad conventions in newly written works",
+        "All ballads must follow an identical rhyme scheme"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Literary ballads are authored poems that adapt techniques of orally transmitted folk ballads.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballad"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-25",
+      "question": "A syllabus note confuses \"ballad\" with \"ballade.\" Which distinction corrects it?",
+      "options": [
+        "Both terms exclusively mean a fourteen-line poem",
+        "Ballad usually names a narrative song; ballade names a French fixed verse form",
+        "Ballad is necessarily unrhymed, while ballade is always an epic",
+        "Ballade is another name for blank verse"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The English ballad is a storytelling genre; the French ballade has prescribed stanzas and an envoy.",
+      "topic": "ballad",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Ballad",
+      "src": "https://www.poetryfoundation.org/education/glossary/ballade"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-26",
+      "question": "Which central concern most commonly defines an elegy in English poetry?",
+      "options": [
+        "A comic quarrel over a trivial object",
+        "A hero’s extended military campaign",
+        "Grief, mortality or loss",
+        "The celebration of an athletic victory"
+      ],
+      "correct_option_id": 2,
+      "explanation": "An elegy expresses mourning or reflective grief, often in response to death.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/elegy"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-27",
+      "question": "Which poem is a pastoral elegy written by John Milton?",
+      "options": [
+        "The Rape of the Lock",
+        "The Faerie Queene",
+        "Ode on a Grecian Urn",
+        "Lycidas"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Milton wrote Lycidas to mourn Edward King, using the shepherd-world conventions of pastoral elegy.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/pastoral"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-28",
+      "question": "An elegy’s emotional movement may end by offering which response to grief?",
+      "options": [
+        "An unrelated invocation to a Muse",
+        "A heroic battle scene",
+        "A comic punchline",
+        "Consolation"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Traditional elegies often move beyond lament toward consolation or a renewed perspective.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/elegy"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-29",
+      "question": "What rhyme and metre define the English elegiac stanza associated with the eighteenth century?",
+      "options": [
+        "ABAB quatrains in iambic pentameter",
+        "ABABABCC octaves in trochaic metre",
+        "ABBA tercets in iambic trimeter",
+        "Unrhymed couplets in dactylic hexameter"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The English elegiac stanza is a four-line iambic-pentameter unit rhyming ABAB.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Elegy",
+      "src": "https://www.poetryfoundation.org/education/glossary/elegy"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-30",
+      "question": "Which pair consists of pastoral elegies mourning deceased poets or friends?",
+      "options": [
+        "Milton’s Lycidas and Shelley’s Adonais",
+        "Keats’s Ode to a Nightingale and To Autumn",
+        "Byron’s Don Juan and Milton’s Paradise Lost",
+        "Pope’s The Rape of the Lock and Dryden’s Mac Flecknoe"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Lycidas and Adonais use pastoral conventions to memorialize Edward King and John Keats respectively.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/pastoral"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-31",
+      "question": "Which order best represents the conventional emotional progression of a traditional elegy?",
+      "options": [
+        "A riddle, a quarrel, a witty final couplet",
+        "Lament, praise of the dead, consolation",
+        "Invocation, battle, victory feast",
+        "Consolation, satire, triumph"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The elegiac movement commonly begins in grief, honours the lost person, and seeks consolation.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/elegy"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-32",
+      "question": "Which statement avoids confusing a poetic genre with a metrical pattern?",
+      "options": [
+        "All elegies must consist of fourteen lines",
+        "An elegy is identified chiefly by mournful subject matter, not by one compulsory rhyme scheme",
+        "Any poem written in quatrains is automatically an elegy",
+        "All elegies must use the ABAB elegiac stanza"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Elegy is a genre of mourning; the ABAB elegiac stanza is only one form elegies may use.",
+      "topic": "elegy",
+      "topicId": "elegy",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Elegy",
+      "src": "https://poets.org/glossary/elegy"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-33",
+      "question": "An ode most typically addresses or celebrates what?",
+      "options": [
+        "Only the death of a recently deceased poet",
+        "Only a petty event described satirically",
+        "A person, object, place or idea in an elevated lyric manner",
+        "Only a war between nations"
+      ],
+      "correct_option_id": 2,
+      "explanation": "An ode is a formally sustained lyric of address, praise or contemplation.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-34",
+      "question": "Which ancient Greek poet is associated with odes celebrating athletic victories?",
+      "options": [
+        "Pindar",
+        "Petrarch",
+        "Homer",
+        "Virgil"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pindaric odes grew out of Greek public praise poems celebrating athletic success.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-35",
+      "question": "Which description better suits a Horatian ode than a Pindaric victory ode?",
+      "options": [
+        "A fixed heroic plot told in twelve books",
+        "An obligatory celebration of Olympic champions",
+        "A relatively contemplative, philosophical tone",
+        "A fourteen-line octave-and-sestet structure"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Horatian odes are typically reflective and personal; Pindaric odes often celebrate public victories.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-36",
+      "question": "Which work most clearly belongs to the ode tradition?",
+      "options": [
+        "The anonymous ballad Barbara Allen",
+        "John Milton’s Paradise Lost",
+        "John Keats’s Ode on a Grecian Urn",
+        "Alexander Pope’s The Rape of the Lock"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Keats’s poem addresses an urn and uses it for sustained aesthetic reflection, a characteristic ode practice.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-37",
+      "question": "A student says, \"Every ode must have exactly fourteen lines.\" Which response is correct?",
+      "options": [
+        "False because every ode must have eight lines instead",
+        "False; odes have varied stanza lengths and structures",
+        "True; all odes are therefore sonnets",
+        "True only for Horatian odes"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Ode describes a lyric mode of address and celebration; its stanza structures vary widely.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-38",
+      "question": "A lyric directly addresses an abstract idea, moving from praise to reflective questioning. Which classification is strongest even without a fixed rhyme scheme?",
+      "options": [
+        "Mock epic",
+        "Epic",
+        "Ballad",
+        "Ode"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The sustained lyric address to an idea is characteristic of an ode, whose formal pattern may vary.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-39",
+      "question": "Which comparison between ode and elegy is most defensible?",
+      "options": [
+        "Odes typically address or contemplate a subject; elegies centrally explore loss and mourning",
+        "Odes must rhyme ABBA; elegies must be unrhymed",
+        "Both must have fourteen lines and a final couplet",
+        "Odes always narrate battles; elegies always mock trivial incidents"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Ode and elegy are distinguishable by their central literary purposes rather than a universally fixed line count.",
+      "topic": "ode",
+      "topicId": "ode",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Ode",
+      "src": "https://www.poetryfoundation.org/education/glossary/ode"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-40",
+      "question": "Which description most accurately defines an epic poem?",
+      "options": [
+        "A long narrative of culturally or historically significant heroic action",
+        "A fixed fourteen-line argument",
+        "A short comic refrain without narrative",
+        "A two-line lyric of private grief"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Epics sustain a heroic narrative on a large historical, mythic or cultural scale.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/categories/epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-41",
+      "question": "Which work is an English epic by John Milton?",
+      "options": [
+        "Lycidas",
+        "The Rape of the Lock",
+        "Paradise Lost",
+        "Ode to a Nightingale"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Milton’s Paradise Lost is a major English epic dealing with the Fall of humankind.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/categories/epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-42",
+      "question": "When a poet appeals to the Muse for inspiration at the opening of a heroic narrative, which epic convention is being used?",
+      "options": [
+        "Envoi",
+        "Invocation",
+        "Volta",
+        "Refrain"
+      ],
+      "correct_option_id": 1,
+      "explanation": "An epic invocation directly addresses a Muse or deity for help in composing the poem.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/invocation"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-43",
+      "question": "What is a canto in the structure of a long epic poem?",
+      "options": [
+        "A single stressed syllable",
+        "A mandatory refrain after each stanza",
+        "A pair of rhyming lines",
+        "A substantial division comparable to a chapter"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Cantos are major subdivisions of epics and other long narrative poems.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/canto"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-44",
+      "question": "A lengthy comparison of a hero’s army to a natural phenomenon stretches across several lines. Which term fits this device?",
+      "options": [
+        "Oxymoron",
+        "Epic or Homeric simile",
+        "Refrain",
+        "Volta"
+      ],
+      "correct_option_id": 1,
+      "explanation": "An epic simile is an extended comparison elaborated over multiple lines.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/epic-simile"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-45",
+      "question": "Which statement about the verse form of English epics is correct?",
+      "options": [
+        "All epics must be written in fourteen-line sonnets",
+        "An English epic can be written in unrhymed iambic pentameter, as Paradise Lost is",
+        "An epic cannot contain invocations or similes",
+        "An epic must always use rhyming heroic couplets"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Milton used unrhymed iambic pentameter in Paradise Lost, so epic is not limited to one rhyme pattern.",
+      "topic": "epic",
+      "topicId": "epic",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/blank-verse"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-46",
+      "question": "What is the central technique of a mock epic?",
+      "options": [
+        "Replacing all verse with plain historical records",
+        "Using grand epic conventions to treat a trivial or satiric subject",
+        "Composing only poems about the death of kings",
+        "Avoiding irony and exaggeration entirely"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mock epic gains satirical force by applying high epic style to relatively minor subjects.",
+      "topic": "mock-epic",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Mock Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/mock-epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-47",
+      "question": "Who wrote the well-known mock epic The Rape of the Lock?",
+      "options": [
+        "Alexander Pope",
+        "William Wordsworth",
+        "John Milton",
+        "Geoffrey Chaucer"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pope’s The Rape of the Lock transforms a social scandal into a mock-heroic conflict.",
+      "topic": "mock-epic",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Mock Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/mock-epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-48",
+      "question": "Which work by John Dryden uses mock-epic technique to satirize a literary rival?",
+      "options": [
+        "Lycidas",
+        "Mac Flecknoe",
+        "Paradise Lost",
+        "The Faerie Queene"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Mac Flecknoe borrows elevated epic conventions to ridicule the poet Thomas Shadwell.",
+      "topic": "mock-epic",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Mock Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/mock-epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-49",
+      "question": "A poet presents the loss of a fashionable accessory as a war of gods, champions and supernatural armies. Which genre is most appropriate?",
+      "options": [
+        "Mock epic",
+        "Traditional epic without irony",
+        "Pastoral elegy",
+        "Horatian ode"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Treating a small social incident with grand epic machinery is the satirical disproportion of mock epic.",
+      "topic": "mock-epic",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Mock Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/mock-epic"
+    },
+    {
+      "id": "up-pgt-day-06-poetic-forms-mix-50",
+      "question": "What is the chief satirical effect when a mock-epic poet uses an invocation and heroic language for a minor quarrel?",
+      "options": [
+        "The inflated style exposes the absurd disproportion between subject and treatment",
+        "The event is automatically made historically heroic",
+        "The story ceases to contain satire because epic devices are always sincere",
+        "The poem becomes a historical source about actual gods"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mock epic contrasts grand narrative conventions with insignificant events to produce irony.",
+      "topic": "mock-epic",
+      "topicId": "mock-epic",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Mock Epic",
+      "src": "https://www.poetryfoundation.org/education/glossary/mock-epic"
+    }
+  ]
+}
