@@ -1,0 +1,769 @@
+{
+  "setId": "up-pgt-figures-of-speech-day-3",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 3,
+  "setName": "Day 3 · Figure of Speech",
+  "level": "easy",
+  "levelName": "Easy",
+  "topics": {
+    "foundations": "Foundations",
+    "extra-devices": "Extra Devices",
+    "apostrophe": "Apostrophe",
+    "euphemism": "Euphemism",
+    "antithesis": "Antithesis",
+    "transferred-epithet": "Transferred Epithet"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-01",
+      "question": "According to the Day 3 study note, how many figures of speech are listed on the printed UP PGT syllabus in total?",
+      "options": [
+        "13 figures in all",
+        "14 figures",
+        "9 figures in all",
+        "10 figures in all"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Day strip states that the printed syllabus lists 14 figures of speech in total, and Day 3 covers the last four plus five extras.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-02",
+      "question": "How many of the figures of speech covered in Day 3 are officially on the printed syllabus?",
+      "options": [
+        "Thirteen figures in all",
+        "Five extra figures",
+        "Nine figures in all",
+        "Four figures"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Four figures in Day 3 are on the printed syllabus: apostrophe, antithesis, euphemism, and transferred epithet.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-03",
+      "question": "How many extra figures of speech not in the printed syllabus are taught in Part B of Day 3 because past papers asked them?",
+      "options": [
+        "Four syllabus figures",
+        "Nine total figures",
+        "Fourteen total figures",
+        "Five figures"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Five extra figures not in the printed syllabus are covered in Part B: irony, litotes, anaphora, innuendo, and periphrasis.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-04",
+      "question": "How many questions in total came from the Day 3 figures of speech across the ten solved past papers?",
+      "options": [
+        "14 questions in all",
+        "10 questions in all",
+        "9 questions in all",
+        "13 questions"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Across the ten past papers, the Day 3 figures together with understatement were asked 13 times, averaging about 1.3 per paper.",
+      "topic": "foundations",
+      "topicId": "figures-of-speech",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-05",
+      "question": "Which figure of speech is the most frequently asked topic of Day 3, appearing four times in ten past papers?",
+      "options": [
+        "Apostrophe",
+        "Antithesis in verse",
+        "Transferred epithet",
+        "Periphrasis in prose"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Apostrophe is the most asked figure of Day 3, appearing four times across the ten papers: twice in 2000, once in 2002, and once in 2009.",
+      "topic": "foundations",
+      "topicId": "apostrophe-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-06",
+      "question": "Which figure of speech is a direct address to a dead person, an absent person, or a thing or idea as if it could hear?",
+      "options": [
+        "Transferred epithet",
+        "Apostrophe",
+        "Antithesis",
+        "Periphrasis or circumlocution"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Apostrophe is a direct address to someone dead or absent, or to a thing or idea, as if it were present and listening.",
+      "topic": "apostrophe",
+      "topicId": "apostrophe-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-07",
+      "question": "Which figure of speech sets two opposite ideas side by side in balanced words, phrases, or clauses?",
+      "options": [
+        "Euphemism",
+        "Innuendo in speech",
+        "Antithesis",
+        "Apostrophe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Antithesis contrasts or combines two opposite ideas side by side in balanced parts of matching shape.",
+      "topic": "antithesis",
+      "topicId": "antithesis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-08",
+      "question": "Which figure of speech uses a mild or indirect word or phrase in place of one that sounds harsh, rude, or painful?",
+      "options": [
+        "Transferred epithet",
+        "Euphemism",
+        "Anaphora",
+        "Antithesis"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A euphemism is a mild, polite, or indirect expression used instead of a harsh, offensive, or painful one.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-09",
+      "question": "In which figure of speech is a describing word moved from the person it truly describes to a nearby noun?",
+      "options": [
+        "Direct apostrophe",
+        "Transferred epithet",
+        "Balanced antithesis",
+        "Dramatic irony"
+      ],
+      "correct_option_id": 1,
+      "explanation": "In a transferred epithet, an adjective or describing word shifts from the person it truly describes to another noun nearby.",
+      "topic": "transferred-epithet",
+      "topicId": "transferred-epithet",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-10",
+      "question": "Which figure of speech involves a gap between what is said and what is meant, where the real meaning is the opposite of the words?",
+      "options": [
+        "Irony",
+        "Anaphora",
+        "Transferred epithet",
+        "Euphemism"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Irony is a gap between what is said and what is meant, where the intended meaning is the opposite of the literal words.",
+      "topic": "extra-devices",
+      "topicId": "irony",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-11",
+      "question": "Which figure of speech states a positive idea by denying its opposite, using words like 'no' or 'not'?",
+      "options": [
+        "Anaphora",
+        "Apostrophe",
+        "Periphrasis",
+        "Litotes"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Litotes affirms a positive statement by denying its opposite, such as saying 'no small feat' or 'The man is no fool'.",
+      "topic": "extra-devices",
+      "topicId": "litotes",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-12",
+      "question": "Which figure of speech repeats the same word or words at the beginning of successive phrases, clauses, or lines?",
+      "options": [
+        "Euphemism",
+        "Anaphora",
+        "Litotes",
+        "Innuendo"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Anaphora is the repetition of the same word or words at the start of successive phrases, clauses, or lines.",
+      "topic": "extra-devices",
+      "topicId": "anaphora",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-13",
+      "question": "Which figure of speech is an indirect hint or veiled remark, especially one that harms someone's character or reputation?",
+      "options": [
+        "Innuendo",
+        "Apostrophe",
+        "Anaphora",
+        "Antithesis"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Innuendo is an indirect hint or veiled remark that suggests something improper or harms someone's reputation.",
+      "topic": "extra-devices",
+      "topicId": "innuendo",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-14",
+      "question": "Which figure of speech uses a longer, roundabout phrase in place of a shorter, plainer word?",
+      "options": [
+        "Anaphora",
+        "Litotes",
+        "Antithesis",
+        "Periphrasis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Periphrasis is the use of a longer, roundabout phrase where a shorter word would do.",
+      "topic": "extra-devices",
+      "topicId": "periphrasis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-15",
+      "question": "What is another standard rhetorical name given in the note for 'periphrasis'?",
+      "options": [
+        "Pathetic fallacy",
+        "Hypallage in verse",
+        "Deliberate oxymoron",
+        "Circumlocution"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Quick Facts item 9 states that another name for periphrasis is circumlocution.",
+      "topic": "extra-devices",
+      "topicId": "periphrasis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-16",
+      "question": "Which wider rhetorical term meaning 'transference of the epithet' is given in the section on transferred epithet?",
+      "options": [
+        "Pathetic fallacy",
+        "Circumlocution",
+        "Hypallage",
+        "Tautology in prose"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Hypallage is the wider term meaning 'transference of the epithet', though the UP PGT paper uses the name transferred epithet.",
+      "topic": "transferred-epithet",
+      "topicId": "transferred-epithet",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-17",
+      "question": "Which poet wrote the famous apostrophe, 'Milton! thou shouldst be living at this hour'?",
+      "options": [
+        "Alexander Pope",
+        "Percy Bysshe Shelley",
+        "William Wordsworth",
+        "Thomas Gray"
+      ],
+      "correct_option_id": 2,
+      "explanation": "William Wordsworth wrote 'Milton! thou shouldst be living at this hour' in his sonnet 'London, 1802'.",
+      "topic": "apostrophe",
+      "topicId": "william-wordsworth",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-18",
+      "question": "In which sonnet by William Wordsworth does the line 'Milton! thou shouldst be living at this hour' appear?",
+      "options": [
+        "'London, 1802'",
+        "'The Convergence of the Twain'",
+        "'The Clod and the Pebble'",
+        "'A Lament' of 1824"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The line opens Wordsworth's sonnet 'London, 1802', where he calls out to the dead poet John Milton.",
+      "topic": "apostrophe",
+      "topicId": "william-wordsworth",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-19",
+      "question": "Which poet opens the lyric 'A Lament' with the apostrophe 'O world! O life! O time!'?",
+      "options": [
+        "William Wordsworth",
+        "Thomas Hardy",
+        "William Blake",
+        "Percy Bysshe Shelley"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Shelley opens his poem 'A Lament' with 'O world! O life! O time!', addressing three ideas one after another.",
+      "topic": "apostrophe",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-20",
+      "question": "Who wrote the famous line of antithesis, 'To err is human, to forgive, divine'?",
+      "options": [
+        "Alexander Pope",
+        "William Wordsworth",
+        "Thomas Gray",
+        "Edmund Spenser"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Alexander Pope wrote 'To err is human, to forgive, divine' in 'An Essay on Criticism', published in 1711.",
+      "topic": "antithesis",
+      "topicId": "alexander-pope",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-21",
+      "question": "From which 1711 work by Alexander Pope is the line 'To err is human, to forgive, divine' taken?",
+      "options": [
+        "'Elegy Written in a Country Churchyard'",
+        "'Posthumous Poems' of 1824",
+        "'Poems in Two Volumes' of 1807",
+        "'An Essay on Criticism'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The famous antithesis 'To err is human, to forgive, divine' comes from Pope's 'An Essay on Criticism', 1711.",
+      "topic": "antithesis",
+      "topicId": "an-essay-on-criticism",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-22",
+      "question": "Which poet wrote the model line for transferred epithet, 'The ploughman homeward plods his weary way'?",
+      "options": [
+        "William Wordsworth",
+        "Thomas Hardy",
+        "Thomas Gray",
+        "Alexander Pope"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Thomas Gray wrote 'The ploughman homeward plods his weary way' in his 'Elegy Written in a Country Churchyard' of 1751.",
+      "topic": "transferred-epithet",
+      "topicId": "thomas-gray",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-23",
+      "question": "In which year was Thomas Gray's 'Elegy Written in a Country Churchyard' published?",
+      "options": [
+        "1824",
+        "1751",
+        "1807",
+        "1711"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Gray's 'Elegy Written in a Country Churchyard' was published in 1751; Pope's 'Essay' appeared in 1711.",
+      "topic": "transferred-epithet",
+      "topicId": "elegy-written-in-a-country-churchyard",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-24",
+      "question": "In which year was Alexander Pope's 'An Essay on Criticism' published after being written in 1709?",
+      "options": [
+        "1711",
+        "1751",
+        "1856",
+        "1802"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pope's 'An Essay on Criticism' was written in 1709 and published in 1711.",
+      "topic": "antithesis",
+      "topicId": "an-essay-on-criticism",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-25",
+      "question": "In which year was Shelley's 'A Lament' first printed after his death?",
+      "options": [
+        "1751",
+        "1824",
+        "1856",
+        "1807"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Shelley's 'A Lament' was first printed in 1824 in 'Posthumous Poems', edited by Mary Shelley.",
+      "topic": "apostrophe",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-26",
+      "question": "In which year was Wordsworth's sonnet 'London, 1802' first printed in 'Poems in Two Volumes'?",
+      "options": [
+        "1802",
+        "1824",
+        "1807",
+        "1751"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Although titled 'London, 1802', Wordsworth's sonnet was printed in 1807 in 'Poems in Two Volumes'.",
+      "topic": "apostrophe",
+      "topicId": "william-wordsworth",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-27",
+      "question": "According to the Fact Slots table, to which year is Shakespeare's 'Macbeth' generally dated?",
+      "options": [
+        "1606",
+        "1709",
+        "1650",
+        "1580"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Fact Slots table notes that Shakespeare's 'Macbeth' is generally dated 1606.",
+      "topic": "foundations",
+      "topicId": "macbeth",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-28",
+      "question": "Which figure of speech is used in the sentence, 'He has gone to a better place'?",
+      "options": [
+        "Euphemism",
+        "Antithesis",
+        "Transferred epithet",
+        "Anaphora"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'He has gone to a better place' is a mild euphemism used at a funeral instead of the harsh statement 'He is dead.'",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-29",
+      "question": "Which figure of speech is illustrated by the sentence, 'The man is no fool'?",
+      "options": [
+        "Periphrasis",
+        "Anaphora",
+        "Litotes",
+        "Euphemism"
+      ],
+      "correct_option_id": 2,
+      "explanation": "'The man is no fool' is litotes because the speaker states the positive idea 'wise' by denying its opposite, 'fool'.",
+      "topic": "extra-devices",
+      "topicId": "litotes",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-30",
+      "question": "Which figure of speech appears in Martin Luther King Jr.'s line, 'Go back to Mississippi, go back to Alabama'?",
+      "options": [
+        "Innuendo",
+        "Transferred epithet",
+        "Anaphora",
+        "Litotes"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Repeating the opening words 'go back to' at the start of successive clauses is an example of anaphora.",
+      "topic": "extra-devices",
+      "topicId": "anaphora",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-31",
+      "question": "Which figure of speech is used in 'He resembles the animal that browses on thistles'?",
+      "options": [
+        "Anaphora",
+        "Antithesis",
+        "Periphrasis",
+        "Apostrophe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Using the long roundabout phrase 'the animal that browses on thistles' instead of the plain word 'donkey' is periphrasis.",
+      "topic": "extra-devices",
+      "topicId": "periphrasis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-32",
+      "question": "Which figure of speech is shown in 'Their son got that job very quickly. I wonder who he knows.'?",
+      "options": [
+        "Innuendo",
+        "Anaphora",
+        "Apostrophe",
+        "Transferred epithet"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The speaker makes no open accusation but drops a veiled hint that harms reputation, which is innuendo.",
+      "topic": "extra-devices",
+      "topicId": "innuendo",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-33",
+      "question": "What figure of speech is present in the everyday phrase 'a sleepless night'?",
+      "options": [
+        "Transferred epithet",
+        "Direct apostrophe",
+        "Balanced antithesis",
+        "Veiled innuendo"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'A sleepless night' is a transferred epithet because the person lies awake, not the night itself.",
+      "topic": "transferred-epithet",
+      "topicId": "transferred-epithet",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-34",
+      "question": "What does the Greek root word 'apostrophos' literally mean?",
+      "options": [
+        "'Turning away'",
+        "'Pretended ignorance'",
+        "'Speaking around'",
+        "'A carrying back'"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Greek word 'apostrophos' means 'turning away', like a speaker who turns away from a crowd to address someone else.",
+      "topic": "apostrophe",
+      "topicId": "apostrophe-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-35",
+      "question": "What is the literal meaning of the Greek word 'antithesis'?",
+      "options": [
+        "'Something added to a noun'",
+        "'Opposition' or 'a setting against'",
+        "'Speaking with fair words'",
+        "'Plainness' or 'simplicity'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Greek word 'antithesis' means 'opposition', literally 'a setting against'.",
+      "topic": "antithesis",
+      "topicId": "antithesis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-36",
+      "question": "What does the Greek word 'euphemismos' mean?",
+      "options": [
+        "'Pretended ignorance in speech'",
+        "'To speak with fair words'",
+        "'A carrying back of words'",
+        "'To turn away from the crowd'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Greek word 'euphemismos' means 'to speak with fair words', from 'eu' meaning good and 'pheme' meaning speech.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-37",
+      "question": "What does the Greek word 'epitheton', the root of 'epithet', mean?",
+      "options": [
+        "'By nodding at'",
+        "'Plainness or simplicity'",
+        "'Speaking around'",
+        "'Something added'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Greek word 'epitheton' means 'something added', referring to a describing word added to a noun.",
+      "topic": "transferred-epithet",
+      "topicId": "transferred-epithet",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-38",
+      "question": "What does the Greek word 'eironeia', the root of 'irony', mean?",
+      "options": [
+        "'A setting against'",
+        "'Speaking with fair words'",
+        "'Pretended ignorance'",
+        "'A carrying back'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Greek word 'eironeia' means 'pretended ignorance' and was used of Socrates, who played the humble questioner.",
+      "topic": "extra-devices",
+      "topicId": "irony",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-39",
+      "question": "What does the Greek root word 'litotes' mean?",
+      "options": [
+        "'Opposition' or 'contrast'",
+        "'Turning away'",
+        "'Speaking around'",
+        "'Plainness' or 'simplicity'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Word story section notes that the Greek word 'litotes' means 'plainness' or 'simplicity'.",
+      "topic": "extra-devices",
+      "topicId": "litotes",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-40",
+      "question": "What does the Greek word 'anaphora' literally mean?",
+      "options": [
+        "'Something added'",
+        "'A carrying back'",
+        "'By nodding at'",
+        "'Pretended ignorance'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Greek word 'anaphora' means 'a carrying back', referring to carrying back the same opening words.",
+      "topic": "extra-devices",
+      "topicId": "anaphora",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-41",
+      "question": "From which language does 'innuendo' come, and what does it mean?",
+      "options": [
+        "Greek, meaning 'to speak with fair words'",
+        "Latin, meaning 'by nodding at' or 'by pointing to'",
+        "Latin, meaning 'something added to a noun'",
+        "Greek, meaning 'a carrying back of clauses'"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Latin word 'innuendo' means 'by nodding at' or 'by pointing to', from the verb 'innuere' meaning 'to nod at'.",
+      "topic": "extra-devices",
+      "topicId": "innuendo",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-42",
+      "question": "What does the Greek word 'periphrasis' literally mean?",
+      "options": [
+        "'Turning away'",
+        "'Plainness or simplicity'",
+        "'Speaking around'",
+        "'A setting against'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Greek word 'periphrasis' means 'speaking around', from 'peri' meaning around and 'phrazein' meaning to express.",
+      "topic": "extra-devices",
+      "topicId": "periphrasis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-43",
+      "question": "In the section on euphemism, what ugly reality does the phrase 'collateral damage' hide?",
+      "options": [
+        "Sacking someone from a job",
+        "A train leaving the platform late",
+        "Civilians killed in a war",
+        "A donkey browsing on thistles"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The note gives 'collateral damage' as a euphemism used to hide the ugly fact of civilians killed in a war.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-44",
+      "question": "In the study note on euphemism, what harsh action does the phrase 'letting someone go' stand for?",
+      "options": [
+        "Sacking someone",
+        "Killing civilians in war",
+        "Dying at a funeral",
+        "Failing an examination"
+      ],
+      "correct_option_id": 0,
+      "explanation": "'Letting someone go' is cited as a polite workplace euphemism that stands for 'sacking someone'.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-45",
+      "question": "Litotes is a deliberate understatement and the direct opposite of which Day 1 figure of speech?",
+      "options": [
+        "Personification",
+        "Alliteration",
+        "Hyperbole",
+        "Metaphor"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Litotes makes something sound smaller by denying its opposite, making it the opposite of hyperbole from Day 1.",
+      "topic": "extra-devices",
+      "topicId": "litotes",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-46",
+      "question": "In which decade did the English language adopt the word 'antithesis' as a term of rhetoric?",
+      "options": [
+        "The 1650s",
+        "The 1670s",
+        "The 1580s",
+        "The 1520s"
+      ],
+      "correct_option_id": 3,
+      "explanation": "English first used 'antithesis' in the 1520s as a term of rhetoric; 'euphemism' entered in the 1650s and 'innuendo' in the 1670s.",
+      "topic": "antithesis",
+      "topicId": "antithesis",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-47",
+      "question": "In which decade did English adopt the word 'euphemism'?",
+      "options": [
+        "The 1520s",
+        "The 1650s",
+        "The 1530s",
+        "The 1570s"
+      ],
+      "correct_option_id": 1,
+      "explanation": "According to the Fact Slots table, English took the word 'euphemism' in the 1650s.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-48",
+      "question": "In which decade did the Latin word 'innuendo' enter the English language?",
+      "options": [
+        "The 1580s",
+        "The 1670s",
+        "The 1530s",
+        "The 1520s"
+      ],
+      "correct_option_id": 1,
+      "explanation": "English took the word 'innuendo' in the 1670s, the latest adoption date among the Day 3 figures.",
+      "topic": "extra-devices",
+      "topicId": "innuendo",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-49",
+      "question": "How many times was 'euphemism' asked as the correct answer across the ten solved UP PGT papers?",
+      "options": [
+        "1 time in 2003",
+        "2 times in all",
+        "4 times in all",
+        "0 times"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the ten solved papers, euphemism was never asked directly as the right answer, appearing only once as a wrong option in 2002.",
+      "topic": "euphemism",
+      "topicId": "euphemism-device",
+      "qtype": "direct"
+    },
+    {
+      "id": "up-pgt-figures-of-speech-day-3-e-50",
+      "question": "Which critic coined the term 'pathetic fallacy' in 1856 for giving human feelings to nature?",
+      "options": [
+        "John Ruskin",
+        "Thomas Hardy",
+        "Mary Shelley",
+        "Alexander Pope"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Confusion Corner and Fact Slots state that John Ruskin coined the term 'pathetic fallacy' in 1856.",
+      "topic": "extra-devices",
+      "topicId": "john-ruskin",
+      "qtype": "direct"
+    }
+  ]
+}

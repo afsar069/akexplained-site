@@ -4,12 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1 and 2 are free, no-login Figure of Speech CBT sets with 50 easy questions each. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1–3 are free, no-login Figure of Speech CBT sets with 50 easy questions each. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 3 — Figure of Speech (2026-11-17)
+
+- The owner supplied 50 tagged, verified easy questions and requested Day 3 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public file `assets/questions/up-pgt-figures-of-speech-day-3-easy.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 4–60 remain Coming soon.
+- Eleventy and topic/id checks passed. The guest CBT and review flow were tested locally.
 
 ## UP PGT English MCQs Day 2 — Figure of Speech (2026-11-17)
 
 - The owner supplied 50 tagged, verified easy questions and requested Day 2 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
-- The public file `assets/questions/up-pgt-figures-of-speech-day-2-easy.json` contains the unchanged uploaded question objects. Day 2 and its review are generated from `_data/pgtMcqLiveDays.js` and `_includes/up-pgt-mcq-day-cbt.njk`. Day 1 uses the same shared template. Days 3–60 remain Coming soon.
+- The public file `assets/questions/up-pgt-figures-of-speech-day-2-easy.json` contains the unchanged uploaded question objects. Day 2 and its review are generated from `_data/pgtMcqLiveDays.js` and `_includes/up-pgt-mcq-day-cbt.njk`. Day 1 uses the same shared template. At the time, Days 3–60 remained Coming soon.
 - The Eleventy build and topic/id checks passed. A guest browser completed a 10-question Day 2 CBT attempt and review; Day 1 still opened.
 
 ## UP PGT English MCQs Day 1 — Figure of Speech (2026-11-16)
