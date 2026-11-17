@@ -71,4 +71,13 @@ module.exports = [
     setId: "up-pgt-day-08-chaucer-2",
     questionFile: "up-pgt-day-08-chaucer-2-mixed.json",
   },
+  {
+    number: 9,
+    title: "Renaissance and Reformation",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-09-renaissance-reformation",
+    questionFile: "up-pgt-day-09-renaissance-reformation-mixed.json",
+  },
 ];

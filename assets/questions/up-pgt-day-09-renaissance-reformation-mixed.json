@@ -1,0 +1,965 @@
+{
+  "setId": "up-pgt-day-09-renaissance-reformation",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 9,
+  "setName": "Day 9 · Renaissance and Reformation",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "humanism": "Humanism",
+    "print-classical": "Printing & Classical Learning",
+    "reformation": "Reformation",
+    "bible-religious": "Bible & Religious Writing",
+    "tudor-literature": "Tudor Literature",
+    "elizabethan-culture": "Elizabethan Culture"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-01",
+      "question": "The term \"Renaissance\" literally means which of the following?",
+      "options": [
+        "Rejection",
+        "Religious unity",
+        "Royal succession",
+        "Rebirth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Renaissance denotes a cultural rebirth associated with renewed study of classical learning and artistic forms.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/vatican/humanism.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-02",
+      "question": "Which intellectual activity most clearly characterizes Renaissance humanism?",
+      "options": [
+        "Rejecting all Greek and Latin books",
+        "Re-examining ancient Greek and Roman texts",
+        "Replacing education with feudal military training",
+        "Abolishing written rhetoric"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Humanists studied and edited classical texts and used them as models for education, ethics, and eloquence.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/vatican/humanism.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-03",
+      "question": "Where did the Renaissance humanist movement first flourish before influencing England?",
+      "options": [
+        "Industrial Manchester",
+        "Victorian Scotland",
+        "Norman England",
+        "The Italian city-states"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Humanism emerged prominently in Italian centres such as Florence and later influenced northern Europe and England.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/vatican/humanism.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-04",
+      "question": "What did Renaissance scholars mean by the humanist slogan \"ad fontes\"?",
+      "options": [
+        "Only the king may interpret scripture",
+        "Avoid all pre-Christian writers",
+        "Back to the original sources",
+        "Replace written sources with rumours"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ad fontes encouraged return to original classical and biblical texts instead of relying only on later commentaries.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://exhibits.lib.arizona.edu/exhibits/show/reformation/sources",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-05",
+      "question": "Which English humanist wrote the work Utopia?",
+      "options": [
+        "Sir Thomas Wyatt",
+        "Thomas More",
+        "John Foxe",
+        "Thomas Kyd"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Thomas More was a leading English Renaissance humanist and the author of Utopia.",
+      "topic": "humanism",
+      "topicId": "thomas-more",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://plato.stanford.edu/entries/thomas-more/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-06",
+      "question": "Which statement correctly identifies the first publication of Thomas More's Utopia?",
+      "options": [
+        "It appeared in Middle English in 1476",
+        "It was first published in English in 1611",
+        "It was printed as a Greek tragedy in 1599",
+        "It appeared in Latin in 1516"
+      ],
+      "correct_option_id": 3,
+      "explanation": "More wrote Utopia in Latin, and its first edition appeared in 1516, reflecting the international language of humanist scholarship.",
+      "topic": "humanism",
+      "topicId": "utopia",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://plato.stanford.edu/entries/thomas-more/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-07",
+      "question": "A Renaissance teacher asks pupils to study rhetoric, history, and moral philosophy through classical books. Which approach is this?",
+      "options": [
+        "Medieval chivalric combat training",
+        "Industrial vocational instruction",
+        "Humanist education",
+        "Restoration theatrical censorship"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Humanist education emphasized language, eloquence, history, ethics, and the study of classical authors.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/vatican/humanism.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-08",
+      "question": "Consider these statements about Renaissance humanism:\nI. It encouraged careful study of Greek and Latin works.\nII. It regarded rhetoric as valuable for public life.\nIII. It required every scholar to reject Christianity.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Classical scholarship and effective rhetoric were central to humanism; many humanists were also committed Christians.",
+      "topic": "humanism",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/vatican/humanism.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-09",
+      "question": "Which claims about More and the Renaissance are accurate?\nI. Utopia was composed in Latin.\nII. More belonged to English Renaissance humanism.\nIII. Utopia first appeared after the publication of the King James Bible.\nSelect the correct answer.",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I, II and III",
+        "I and II only"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Utopia appeared in 1516 and was written in Latin; the King James Bible was published much later, in 1611.",
+      "topic": "humanism",
+      "topicId": "utopia",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://plato.stanford.edu/entries/thomas-more/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-10",
+      "question": "Who produced the famous Bible with movable metal type at Mainz in the mid-fifteenth century?",
+      "options": [
+        "William Tyndale",
+        "William Caxton",
+        "Thomas Cranmer",
+        "Johannes Gutenberg"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Gutenberg printed the celebrated Latin Bible at Mainz around 1455, an important milestone in European printing.",
+      "topic": "print-classical",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-11",
+      "question": "Which description of Gutenberg's achievement is historically accurate?",
+      "options": [
+        "A major development in movable-metal-type printing in Western Europe",
+        "The first printing of any kind anywhere in world history",
+        "The first printing press established in Elizabethan London",
+        "The invention of the handwritten medieval manuscript"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Movable metal type existed earlier in East Asia; Gutenberg transformed its development and use in Western Europe.",
+      "topic": "print-classical",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-12",
+      "question": "Who established a printing press at Westminster in 1476?",
+      "options": [
+        "Richard Tottel",
+        "William Caxton",
+        "John Day",
+        "William Shakespeare"
+      ],
+      "correct_option_id": 1,
+      "explanation": "William Caxton established his Westminster press in 1476, helping to expand the availability of printed books in England.",
+      "topic": "print-classical",
+      "topicId": "william-caxton",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.gla.ac.uk/myglasgow/library/files/special/exhibns/printing/"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-13",
+      "question": "What was a major literary effect of the spread of printing in Renaissance Europe?",
+      "options": [
+        "All printed books became free of charge",
+        "Latin disappeared immediately from education",
+        "More copies of texts could circulate among literate readers",
+        "The use of manuscripts ended everywhere overnight"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Printing increased the reproduction and circulation of classical, religious, and literary works without instantly replacing manuscript culture.",
+      "topic": "print-classical",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-14",
+      "question": "Consider the following claims about printing:\nI. Caxton established a Westminster press in 1476.\nII. Gutenberg's Bible was produced in Latin.\nIII. Gutenberg's Bible was the world's first use of movable metal type.\nWhich are correct?",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Caxton's Westminster press dates to 1476 and Gutenberg's Bible was Latin. Earlier movable-metal-type printing existed in East Asia.",
+      "topic": "print-classical",
+      "topicId": "william-caxton",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-15",
+      "question": "Arrange the developments in chronological order:\nI. Caxton establishes a press at Westminster.\nII. Luther issues the Ninety-Five Theses.\nIII. Gutenberg prints the Bible at Mainz.\nIV. Parliament passes the Act of Supremacy.\nChoose the correct sequence.",
+      "options": [
+        "III, I, II, IV",
+        "I, III, IV, II",
+        "III, II, I, IV",
+        "II, III, IV, I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The approximate dates are Gutenberg c.1455, Caxton 1476, Luther 1517, and the English Act of Supremacy 1534.",
+      "topic": "print-classical",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-16",
+      "question": "Which of these publications came earliest?",
+      "options": [
+        "Tyndale's printed New Testament (1526)",
+        "Coverdale's complete English Bible (1535)",
+        "The Gutenberg Bible (c.1455)",
+        "The Great Bible (1539)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The Gutenberg Bible belongs to the mid-fifteenth century, while the English Bible editions listed appeared in the 1520s and 1530s.",
+      "topic": "print-classical",
+      "topicId": "english-renaissance-humanism",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/gutenberg/index.html"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-17",
+      "question": "Which reformer is associated with the Ninety-Five Theses of 1517?",
+      "options": [
+        "Thomas More",
+        "Henry VIII",
+        "Martin Luther",
+        "Philip Sidney"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Martin Luther's theses in 1517 helped launch the Protestant Reformation.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/resource/gdcwdl.wdl_07497/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-18",
+      "question": "Which church practice did Luther particularly challenge in the Ninety-Five Theses?",
+      "options": [
+        "The translation of Homer",
+        "The selling of indulgences",
+        "The composition of courtly sonnets",
+        "The use of blank verse in plays"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Luther challenged abuses associated with indulgences, including payments linked to remission of penalties for sin.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/resource/gdcwdl.wdl_07497/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-19",
+      "question": "Consider these statements about Henry VIII's break with Rome:\nI. Parliament played a major part in changing church jurisdiction.\nII. The 1534 settlement recognized the monarch's supremacy over the English Church.\nIII. The break immediately removed every inherited Catholic practice from English worship.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Parliament enacted changes culminating in royal supremacy, but Henry VIII retained various older church practices; reform developed in stages.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-20",
+      "question": "In what year was Henry VIII's Act of Supremacy enacted?",
+      "options": [
+        "1517",
+        "1549",
+        "1559",
+        "1534"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The Act of Supremacy of 1534 recognized Henry VIII as supreme head of the English Church.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-21",
+      "question": "What title did the Act of Supremacy of 1534 recognize for Henry VIII?",
+      "options": [
+        "Supreme Head of the Church of England",
+        "Pope of the Universal Church",
+        "Archbishop of Canterbury",
+        "Lord Protector of the Commonwealth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The legislation declared the English monarch the supreme head of the national church in place of papal jurisdiction.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-22",
+      "question": "Which chief minister helped steer the Acts that broke England's ties with Rome under Henry VIII?",
+      "options": [
+        "Thomas Nashe",
+        "Francis Bacon",
+        "Robert Greene",
+        "Thomas Cromwell"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Thomas Cromwell guided key parliamentary measures in the 1530s, including those supporting the royal supremacy.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-23",
+      "question": "Which disputed royal marriage was central to Henry VIII's conflict with the papacy?",
+      "options": [
+        "His marriage to Mary, Queen of Scots",
+        "The marriage of Elizabeth I to Philip II",
+        "His marriage to Catherine of Aragon",
+        "The marriage of James I to Anne of Denmark"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Papal resistance to Henry's effort to annul his marriage to Catherine of Aragon contributed to the break with Rome.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-24",
+      "question": "Which major institutional change took place during Henry VIII's religious reforms?",
+      "options": [
+        "The establishment of the Globe Theatre",
+        "The creation of the universities of Oxford and Cambridge",
+        "The appointment of Luther as Archbishop of Canterbury",
+        "The dissolution of many monasteries and sale of their lands"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Legislation in the 1530s led to the closure and disposal of many English monastic houses.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-25",
+      "question": "Which Tudor monarch restored Roman Catholic worship after Edward VI?",
+      "options": [
+        "Mary I",
+        "Elizabeth I",
+        "Henry VII",
+        "James I"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Mary I restored Catholic religious practices during her reign from 1553 to 1558.",
+      "topic": "reformation",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-26",
+      "question": "In which year did Elizabeth I's religious settlement establish renewed uniformity of worship?",
+      "options": [
+        "1534",
+        "1559",
+        "1549",
+        "1603"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The Elizabethan settlement included an Act of Uniformity in 1559, requiring use of the revised Book of Common Prayer.",
+      "topic": "reformation",
+      "topicId": "elizabethan",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-uniformity-1559/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-27",
+      "question": "Check the historical statements:\nI. The Act of Supremacy under Henry VIII dates to 1534.\nII. Mary I's reign involved a restoration of Catholicism.\nIII. Elizabeth I's Act of Uniformity belongs to 1559.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "I, II and III",
+        "II and III only",
+        "I and III only"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The three events belong respectively to the Henrician break in 1534, Mary's Catholic restoration, and Elizabeth's 1559 settlement.",
+      "topic": "reformation",
+      "topicId": "elizabethan",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/overview/reformation/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-28",
+      "question": "Who translated the New Testament from Greek into English for the influential printed edition of 1526?",
+      "options": [
+        "John Foxe",
+        "Thomas More",
+        "William Tyndale",
+        "Edmund Spenser"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tyndale's New Testament was printed at Worms in 1526 and became influential in later English Bible translations.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/KJV/bibleinen.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-29",
+      "question": "Assess the claims about William Tyndale and early English Bible printing:\nI. His complete New Testament appeared in print at Worms in 1526.\nII. He worked from the Greek text.\nIII. His 1526 New Testament was the first complete printed English Bible, Old and New Testaments together.\nWhich statements are true?",
+      "options": [
+        "I and III only",
+        "I and II only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Tyndale issued a Greek-based printed New Testament in 1526; the first complete Bible printed in English was Coverdale's 1535 version.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/KJV/bibleinen.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-30",
+      "question": "Who produced the first complete Bible printed in English in 1535?",
+      "options": [
+        "Martin Luther",
+        "Miles Coverdale",
+        "John Colet",
+        "Henry Howard"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Coverdale's 1535 Bible is identified as the first printed complete Bible in English.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/KJV/bibleinen.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-31",
+      "question": "Which 1539 English Bible was the first officially authorized version for use in the Church of England?",
+      "options": [
+        "The Great Bible",
+        "The King James Bible",
+        "The Geneva Bible of 1560",
+        "The Wycliffite manuscript Bible"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Great Bible of 1539 was authorized under Henry VIII, with much of its material derived from Tyndale and Coverdale.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.loc.gov/exhibits/bibles/interactives/more/other10.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-32",
+      "question": "Who is most closely associated with compiling the first Book of Common Prayer, issued in 1549?",
+      "options": [
+        "Sir Thomas Wyatt",
+        "Thomas Cranmer",
+        "Christopher Marlowe",
+        "John Skelton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Archbishop Thomas Cranmer prepared the 1549 Book of Common Prayer during Edward VI's reign.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-uniformity-1559/",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-33",
+      "question": "Which Reformation writer published Actes and Monuments, widely known as the Book of Martyrs, in English in 1563?",
+      "options": [
+        "William Caxton",
+        "George Puttenham",
+        "Richard Hooker",
+        "John Foxe"
+      ],
+      "correct_option_id": 3,
+      "explanation": "John Foxe's illustrated Actes and Monuments, first issued in English in 1563, narrated Protestant persecution and martyrdom.",
+      "topic": "bible-religious",
+      "topicId": "john-foxe",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.folger.edu/explore/collection-highlights/the-book-of-martyrs/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-34",
+      "question": "Match the publication with the date:\n1. Tyndale's printed New Testament\n2. Coverdale's complete English Bible\n3. The Great Bible\n4. Elizabethan Act of Uniformity\nA. 1559\nB. 1539\nC. 1526\nD. 1535\nChoose the correct matching.",
+      "options": [
+        "1-D, 2-C, 3-B, 4-A",
+        "1-C, 2-B, 3-D, 4-A",
+        "1-C, 2-D, 3-B, 4-A",
+        "1-B, 2-D, 3-A, 4-C"
+      ],
+      "correct_option_id": 2,
+      "explanation": "These date respectively to 1526, 1535, 1539, and 1559, showing successive stages of English religious print culture.",
+      "topic": "bible-religious",
+      "topicId": "early-tudor",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://wwwe.lib.cam.ac.uk/CUL/exhibitions/KJV/bibleinen.html",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-35",
+      "question": "Which Tudor poet is most commonly credited with introducing the sonnet into English?",
+      "options": [
+        "Edmund Spenser",
+        "John Milton",
+        "John Donne",
+        "Sir Thomas Wyatt"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Wyatt adapted Italian Petrarchan sonnets to English in the early sixteenth century.",
+      "topic": "tudor-literature",
+      "topicId": "thomas-wyatt",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.poetryfoundation.org/poets/thomas-wyatt",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-36",
+      "question": "Which English poet pioneered blank verse through translations of Virgil's Aeneid?",
+      "options": [
+        "John Foxe",
+        "Henry Howard, Earl of Surrey",
+        "Roger Ascham",
+        "Thomas More"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Surrey used unrhymed iambic pentameter in his translations of the Aeneid, pioneering English blank verse.",
+      "topic": "tudor-literature",
+      "topicId": "henry-howard-surrey",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.poetryfoundation.org/poets/henry-howard",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-37",
+      "question": "Examine these statements about Surrey's development of the English sonnet:\nI. The form has three quatrains.\nII. It closes with a rhyming couplet.\nIII. It always consists of a Petrarchan octave followed by a sestet.\nWhich are correct?",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Surrey developed the English sonnet with three quatrains and a final couplet, instead of the Petrarchan octave-and-sestet division.",
+      "topic": "tudor-literature",
+      "topicId": "henry-howard-surrey",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.ox.ac.uk/news/2021-09-16-the-mystery-of-the-first-english-sonnet",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-38",
+      "question": "Which 1557 anthology helped preserve the Tudor poems of Wyatt and Surrey?",
+      "options": [
+        "The Shepheardes Calender",
+        "Astrophil and Stella",
+        "Tottel's Miscellany",
+        "The Faerie Queene"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Richard Tottel's Songs and Sonnets, known as Tottel's Miscellany, collected works by Wyatt, Surrey, and other court poets.",
+      "topic": "tudor-literature",
+      "topicId": "tottels-miscellany",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.poetryfoundation.org/poets/henry-howard",
+      "periodId": "early-tudor"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-39",
+      "question": "Which work established Edmund Spenser's reputation as a pastoral poet in 1579?",
+      "options": [
+        "The Shepheardes Calender",
+        "Utopia",
+        "The Spanish Tragedy",
+        "The School of Abuse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Shepheardes Calender was published in 1579 and organized its pastoral poems around the months of the year.",
+      "topic": "tudor-literature",
+      "topicId": "the-shepheardes-calender",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.english.cam.ac.uk/spenser/census.html",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-40",
+      "question": "How many eclogues does Spenser's The Shepheardes Calender contain?",
+      "options": [
+        "Six, one for each virtue",
+        "Twelve, arranged around the months",
+        "Eight, representing classical muses",
+        "Twenty-four, one for each book of The Faerie Queene"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Spenser's pastoral volume has twelve eclogues corresponding to the twelve months.",
+      "topic": "tudor-literature",
+      "topicId": "the-shepheardes-calender",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.english.cam.ac.uk/spenser/census.html",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-41",
+      "question": "Consider these statements about Spenser's The Faerie Queene:\nI. Its first three books appeared in 1590.\nII. Three more books followed in 1596.\nIII. The poem uses moral allegory and knightly adventures.\nWhich statements are correct?",
+      "options": [
+        "I and II only",
+        "II and III only",
+        "I, II and III",
+        "I and III only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Spenser published three books in 1590 and three more in 1596; allegorical quests embody moral virtues.",
+      "topic": "tudor-literature",
+      "topicId": "the-faerie-queene",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.poetryfoundation.org/collections/154826/an-introduction-to-the-english-renaissance",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-42",
+      "question": "Why is The Faerie Queene considered a distinctively Renaissance literary project?",
+      "options": [
+        "It rejects all classical and medieval influences",
+        "It combines chivalric narrative with humanist moral allegory",
+        "It is a factual chronicle of Henry VIII's divorce proceedings",
+        "It contains only sermons translated from Latin"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Spenser fused romance conventions, classical models, and ethical allegory to explore the making of virtuous individuals.",
+      "topic": "tudor-literature",
+      "topicId": "the-faerie-queene",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.poetryfoundation.org/collections/154826/an-introduction-to-the-english-renaissance",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-43",
+      "question": "Which sonnet sequence by Sir Philip Sidney was first printed in 1591?",
+      "options": [
+        "Astrophil and Stella",
+        "Amoretti",
+        "Delia",
+        "Shakespeare's Sonnets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Sidney's Astrophil and Stella circulated in manuscript and was first published in 1591.",
+      "topic": "tudor-literature",
+      "topicId": "astrophil-and-stella",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://celm.folger.edu/authors/sidneysirphilip.html",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-44",
+      "question": "Which statements about Sidney's literary criticism are true?\nI. An Apology for Poetry defends the value of imaginative literature.\nII. It first appeared in print in 1595.\nIII. It supports the claim that poetry must be abolished from education.\nSelect the correct option.",
+      "options": [
+        "I and III only",
+        "II and III only",
+        "I and II only",
+        "I, II and III"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Sidney's defence of poetry was first printed in 1595 and argues for poetry's ethical and imaginative value.",
+      "topic": "tudor-literature",
+      "topicId": "an-apology-for-poetry",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://ebooks.inflibnet.ac.in/engp10/chapter/sir-philip-sidney-an-apology-for-poetry/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-45",
+      "question": "Which English monarch began her reign in 1558 and gave her name to a major literary age?",
+      "options": [
+        "Mary II",
+        "Victoria",
+        "Anne",
+        "Elizabeth I"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Elizabeth I reigned from 1558 to 1603, a period strongly associated with English Renaissance poetry and drama.",
+      "topic": "elizabethan-culture",
+      "topicId": "elizabethan",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.parliament.uk/about/living-heritage/transformingsociety/private-lives/religion/collections/common-prayer/act-of-uniformity-1559/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-46",
+      "question": "Who built the London public playhouse called The Theatre in 1576?",
+      "options": [
+        "Richard Tottel",
+        "William Caxton",
+        "Thomas Cromwell",
+        "James Burbage"
+      ],
+      "correct_option_id": 3,
+      "explanation": "James Burbage built The Theatre at Shoreditch in 1576, an important development in London professional drama.",
+      "topic": "elizabethan-culture",
+      "topicId": "elizabethan-drama",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.folger.edu/explore/shakespeares-theater/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-47",
+      "question": "In which year did Shakespeare's company open the first Globe playhouse?",
+      "options": [
+        "1599",
+        "1549",
+        "1576",
+        "1611"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The Lord Chamberlain's Men opened the first Globe in 1599, using timbers from the older Theatre.",
+      "topic": "elizabethan-culture",
+      "topicId": "elizabethan-drama",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.folger.edu/explore/shakespeares-theater/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-48",
+      "question": "Which statements correctly describe the writers commonly called the University Wits?\nI. Christopher Marlowe and Robert Greene are commonly included.\nII. John Lyly is also associated with this late-Elizabethan group.\nIII. The group was founded as an official royal theatre company in 1599.\nChoose the correct answer.",
+      "options": [
+        "I and II only",
+        "I and III only",
+        "II and III only",
+        "I, II and III"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Marlowe, Greene, and Lyly are commonly classed among the University Wits, an informal later literary grouping rather than a formally founded company.",
+      "topic": "elizabethan-culture",
+      "topicId": "university-wits",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://internetshakespeare.uvic.ca/Library/SLT/drama/contemporaries/greene.html",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-49",
+      "question": "Match the Renaissance publication or event with its date:\n1. Tottel's Miscellany\n2. The Shepheardes Calender\n3. First three books of The Faerie Queene\n4. Opening of the first Globe\nA. 1599\nB. 1579\nC. 1590\nD. 1557\nChoose the correct match.",
+      "options": [
+        "1-B, 2-D, 3-C, 4-A",
+        "1-D, 2-B, 3-C, 4-A",
+        "1-D, 2-C, 3-B, 4-A",
+        "1-C, 2-B, 3-A, 4-D"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The dates are Tottel 1557, Spenser's pastoral 1579, the first Faerie Queene books 1590, and the Globe 1599.",
+      "topic": "elizabethan-culture",
+      "topicId": "elizabethan-drama",
+      "qtype": "match",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.folger.edu/explore/shakespeares-theater/",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-day-09-renaissance-reformation-mix-50",
+      "question": "Arrange these events from earliest to latest:\nI. Elizabeth I begins her reign.\nII. The first Globe opens.\nIII. The Theatre is built by James Burbage.\nIV. The Act of Uniformity strengthens Elizabeth's settlement.\nChoose the correct sequence.",
+      "options": [
+        "I, IV, III, II",
+        "IV, I, II, III",
+        "I, III, IV, II",
+        "III, I, IV, II"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Elizabeth acceded in 1558, the Act of Uniformity followed in 1559, The Theatre opened in 1576, and the Globe in 1599.",
+      "topic": "elizabethan-culture",
+      "topicId": "elizabethan-drama",
+      "qtype": "chrono",
+      "difficulty": "hard",
+      "syllabusKey": "Renaissance and Reformation",
+      "src": "https://www.folger.edu/explore/shakespeares-theater/",
+      "periodId": "elizabethan"
+    }
+  ]
+}
