@@ -1,0 +1,919 @@
+{
+  "setId": "up-pgt-day-04-rhetoric-prosody",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setNumber": 4,
+  "setName": "Day 4 · Rhetoric & Prosody 1",
+  "level": "mixed",
+  "levelName": "Mixed",
+  "topics": {
+    "rhetoric": "Rhetoric",
+    "spondee-and-mixed-metre": "Spondee and Mixed Metre",
+    "foot-and-metre": "Foot and Metre",
+    "scansion": "Scansion",
+    "iamb-and-trochee": "Iamb and Trochee",
+    "anapest-and-dactyl": "Anapest and Dactyl"
+  },
+  "questions": [
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-01",
+      "question": "Which description best defines rhetoric in the context of public speaking?",
+      "options": [
+        "The art of using language effectively to persuade an audience",
+        "The study of the origins of every English word",
+        "The classification of English vowel sounds",
+        "The counting of stressed syllables in poetry"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Rhetoric studies how speakers and writers make communication effective, especially for persuasion.",
+      "topic": "rhetoric",
+      "topicId": "rhetoric",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situation/aristotles_rhetorical_situation.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-02",
+      "question": "An argument that uses numerical evidence and clear reasoning mainly appeals to which rhetorical mode?",
+      "options": [
+        "Kairos",
+        "Ethos",
+        "Pathos",
+        "Logos"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Logos persuades through reasons, evidence, and logical connections between claims.",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-03",
+      "question": "A speaker introduces her qualifications to establish trust. Which appeal is most directly involved?",
+      "options": [
+        "Pathos",
+        "Logos",
+        "Ethos",
+        "Anapest"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Ethos is an appeal based on the speaker’s credibility, character, or trustworthiness.",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-04",
+      "question": "A charity advertisement tells the moving story of a family affected by a flood. Which rhetorical appeal is primary?",
+      "options": [
+        "Pathos",
+        "Logos",
+        "Scansion",
+        "Ethos"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Pathos encourages persuasion by engaging the audience’s emotions and sympathies.",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-05",
+      "question": "A researcher says, \"I have studied rivers for twenty years, and our measurements show a steady rise in flood levels.\" Which TWO appeals are clearly combined?",
+      "options": [
+        "Pathos and metre",
+        "Ethos and logos",
+        "Pathos and kairos only",
+        "Ethos and trochee"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The researcher’s experience establishes credibility (ethos), while the measurements support reasoning (logos).",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-06",
+      "question": "A campaign message is released immediately after a major policy announcement so that its timing increases its impact. Which rhetorical concept is most relevant?",
+      "options": [
+        "Scansion",
+        "Spondee",
+        "Kairos",
+        "Iamb"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Kairos concerns the fitting occasion or timing of an argument in its rhetorical setting.",
+      "topic": "rhetoric",
+      "topicId": "rhetoric",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situation/aristotles_rhetorical_situation.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-07",
+      "question": "A speaker is unknown to the audience but offers a valid syllogism supported by reliable data. Which appeal could remain strong even without personal prestige?",
+      "options": [
+        "Neither ethos nor logos",
+        "Logos",
+        "Ethos alone",
+        "Pathos alone"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A claim can persuade by its logical support even if the audience knows little about the speaker’s status.",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-08",
+      "question": "Which statements about the three classical appeals are correct?\nI. Logos appeals to reasoning.\nII. Ethos is identical to emotional manipulation.\nIII. Pathos addresses the audience’s emotions.",
+      "options": [
+        "I, II and III",
+        "II and III only",
+        "I and III only",
+        "I and II only"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Logos concerns reason and pathos concerns emotion; ethos concerns character or credibility, not emotional manipulation.",
+      "topic": "rhetoric",
+      "topicId": "ethos-pathos-logos",
+      "qtype": "combination",
+      "difficulty": "hard",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/rhetorical_strategies.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-09",
+      "question": "A scientist explaining the same research to schoolchildren replaces technical jargon with clear everyday examples. Which rhetorical consideration explains this change best?",
+      "options": [
+        "Making the speaker’s credentials irrelevant by definition",
+        "Replacing logical evidence with metre",
+        "Adapting the message to the audience",
+        "Substituting trochees for iambs"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Audience expectations and knowledge are important elements of the rhetorical situation.",
+      "topic": "rhetoric",
+      "topicId": "rhetoric",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Rhetoric",
+      "src": "https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situation/elements_of_rhetorical_situations.html"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-10",
+      "question": "What is a metrical foot in English accentual-syllabic verse?",
+      "options": [
+        "A pair of words that rhyme",
+        "A pause at the end of every stanza",
+        "A recurring unit of stressed and unstressed syllables",
+        "An entire poem of fourteen lines"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A foot is a unit of poetic metre organized by a particular stress pattern.",
+      "topic": "foot-and-metre",
+      "topicId": "foot",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: foot",
+      "src": "https://www.poetryfoundation.org/education/glossary/Foot"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-11",
+      "question": "What does metre primarily describe in a line of English verse?",
+      "options": [
+        "Its organized pattern of rhythmic stresses and feet",
+        "Only its printed line length in centimetres",
+        "Only the poem’s subject",
+        "Only the number of metaphors"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Metre is the patterned organization of rhythm in verse, commonly described by foot type and number of feet.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poets.org/glossary/meter"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-12",
+      "question": "How many metrical feet are indicated by the term trimeter?",
+      "options": [
+        "Three",
+        "Six",
+        "Four",
+        "Two"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The prefix tri- specifies three metrical feet in a line.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-13",
+      "question": "A line described as pentameter contains how many metrical feet?",
+      "options": [
+        "Three",
+        "Five",
+        "Four",
+        "Six"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Pentameter names a line with five feet; it does not, by itself, specify the type of foot.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-14",
+      "question": "What does the term accentual-syllabic metre indicate?",
+      "options": [
+        "A system counting only written punctuation marks",
+        "A system that ignores both syllables and stress",
+        "A form determined entirely by the number of rhymes",
+        "A verse system that takes account of both stressed beats and syllable patterns"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Accentual-syllabic metre relates counted syllables to patterns of stress.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-15",
+      "question": "Two lines each contain four feet. One uses iambs and the other uses dactyls. What metrical feature do they necessarily share?",
+      "options": [
+        "Both are iambic",
+        "Both have only rising feet",
+        "Both are tetrameter",
+        "Both contain exactly eight syllables"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Tetrameter specifies four feet, regardless of whether each foot contains two or three syllables.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-16",
+      "question": "In an ideal line consisting of FOUR complete dactyls, how many syllables and stressed positions are there?",
+      "options": [
+        "Four syllables and twelve stressed positions",
+        "Eight syllables and four stressed positions",
+        "Twelve syllables and four stressed positions",
+        "Twelve syllables and eight stressed positions"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Each dactyl contains three syllables with one stress, so four complete dactyls yield twelve syllables and four stresses.",
+      "topic": "foot-and-metre",
+      "topicId": "dactyl",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: dactyl",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-17",
+      "question": "Two perfectly regular lines each have ten syllables. One consists of five iambs and the other of five trochees. Which statement is correct?",
+      "options": [
+        "The lines necessarily have identical stress patterns",
+        "Both must be iambic pentameter",
+        "One is trimeter and the other is tetrameter",
+        "Both are pentameter, but their stress direction differs"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Both lines have five feet, but iambs rise from weak to strong whereas trochees fall from strong to weak.",
+      "topic": "foot-and-metre",
+      "topicId": "metre",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: metre",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-18",
+      "question": "What is scansion?",
+      "options": [
+        "The identification of all its proper nouns",
+        "The analysis and marking of a poem’s rhythmic stress pattern",
+        "The tracing of a poem’s publication history",
+        "The translation of a poem into another language"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Scansion identifies accented and unaccented syllables and the organization of feet.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-19",
+      "question": "For the next questions, u means unstressed and / means stressed. In this notation, what does u / represent?",
+      "options": [
+        "One dactyl",
+        "One spondee",
+        "One trochee",
+        "One iamb"
+      ],
+      "correct_option_id": 3,
+      "explanation": "An iamb has an unstressed syllable followed by a stressed syllable.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-20",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. How should u / | u / | u / be classified?",
+      "options": [
+        "Trochaic trimeter",
+        "Iambic tetrameter",
+        "Iambic trimeter",
+        "Anapestic trimeter"
+      ],
+      "correct_option_id": 2,
+      "explanation": "There are three feet and each has the rising two-syllable pattern u /.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-21",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. Which name describes / u | / u | / u | / u ?",
+      "options": [
+        "Dactylic trimeter",
+        "Trochaic tetrameter",
+        "Iambic tetrameter",
+        "Trochaic pentameter"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Four feet appear, and each begins with stress followed by an unstressed syllable.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-22",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. Read the feet in u / | / u | u u / from left to right.",
+      "options": [
+        "Trochee, iamb, dactyl",
+        "Iamb, trochee, anapest",
+        "Anapest, trochee, iamb",
+        "Iamb, spondee, trochee"
+      ],
+      "correct_option_id": 1,
+      "explanation": "The successive patterns are weak-strong (iamb), strong-weak (trochee), and weak-weak-strong (anapest).",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-23",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. An otherwise iambic four-foot line scans u / | u / | / u | u /. Which foot is a trochaic substitution?",
+      "options": [
+        "The first foot",
+        "The second foot",
+        "The fourth foot",
+        "The third foot"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The third foot reverses the normal iambic order and has the trochaic pattern / u.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-24",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. A four-foot trochaic line scans / u | / u | / u | /, with the last foot missing its weak syllable. What is this shortening called?",
+      "options": [
+        "Anacrusis",
+        "Catalexis",
+        "Elision of a whole stanza",
+        "Internal rhyme"
+      ],
+      "correct_option_id": 1,
+      "explanation": "A catalectic line has an incomplete final foot compared with its underlying metre.",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://odp.library.tamu.edu/victorianpoetry/chapter/guide-to-poetic-meter/"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-25",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. In u / | / / | u / | u /, which foot is the spondee?",
+      "options": [
+        "The fourth foot",
+        "The third foot",
+        "The first foot",
+        "The second foot"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Only the second foot contains two stressed positions (/ /).",
+      "topic": "scansion",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-26",
+      "question": "Which stress pattern defines an iamb?",
+      "options": [
+        "Stressed followed by unstressed (/ u)",
+        "Unstressed followed by stressed (u /)",
+        "Two stressed syllables (/ /)",
+        "Stressed followed by two unstressed (/ u u)"
+      ],
+      "correct_option_id": 1,
+      "explanation": "An iamb is a rising two-syllable metrical foot.",
+      "topic": "iamb-and-trochee",
+      "topicId": "iamb",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: iamb",
+      "src": "https://poets.org/glossary/meter"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-27",
+      "question": "Which stress pattern defines a trochee?",
+      "options": [
+        "Stressed followed by unstressed (/ u)",
+        "Unstressed followed by stressed (u /)",
+        "Two unstressed followed by stressed (u u /)",
+        "Two unstressed syllables (u u)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A trochee is a falling foot consisting of a strong syllable followed by a weak syllable.",
+      "topic": "iamb-and-trochee",
+      "topicId": "trochee",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: trochee",
+      "src": "https://poets.org/glossary/meter"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-28",
+      "question": "Which word best illustrates an iamb in ordinary pronunciation?",
+      "options": [
+        "happy (HAP-py)",
+        "garden (GAR-den)",
+        "relax (re-LAX)",
+        "table (TA-ble)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "The word relax has its main stress on the second syllable, matching u /.",
+      "topic": "iamb-and-trochee",
+      "topicId": "iamb",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: iamb",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-29",
+      "question": "Which word best illustrates a trochee in ordinary pronunciation?",
+      "options": [
+        "return (re-TURN)",
+        "above (a-BOVE)",
+        "table (TA-ble)",
+        "begin (be-GIN)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Table typically stresses its first syllable, then has an unstressed second syllable.",
+      "topic": "iamb-and-trochee",
+      "topicId": "trochee",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: trochee",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-30",
+      "question": "Which of the following is a rising DISYLLABIC foot?",
+      "options": [
+        "Iamb",
+        "Trochee",
+        "Dactyl",
+        "Spondee"
+      ],
+      "correct_option_id": 0,
+      "explanation": "An iamb rises from an unstressed syllable to a stressed one and contains exactly two syllables.",
+      "topic": "iamb-and-trochee",
+      "topicId": "iamb",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: iamb",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-31",
+      "question": "A poet repeatedly uses two-syllable feet that start with stress. What is the best classification of the basic pattern?",
+      "options": [
+        "Iambic",
+        "Trochaic",
+        "Anapestic",
+        "Spondaic"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Trochaic metre consists principally of stressed-unstressed two-syllable feet.",
+      "topic": "iamb-and-trochee",
+      "topicId": "trochee",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: trochee",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-32",
+      "question": "The noun PRE-sent and the verb pre-SENT are pronounced with different stresses. Which sequence of feet do they illustrate, respectively?",
+      "options": [
+        "Spondee, then dactyl",
+        "Anapest, then trochee",
+        "Iamb, then trochee",
+        "Trochee, then iamb"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The noun has first-syllable stress (/ u), while the verb has second-syllable stress (u /).",
+      "topic": "iamb-and-trochee",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-33",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. Which description precisely matches u / | / u | u / | / u ?",
+      "options": [
+        "Two iambs alternating with two trochees",
+        "Two dactyls followed by an anapest",
+        "Four iambs",
+        "Four trochees"
+      ],
+      "correct_option_id": 0,
+      "explanation": "The line alternates rising and falling two-syllable feet: iamb, trochee, iamb, trochee.",
+      "topic": "iamb-and-trochee",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-34",
+      "question": "Which three-syllable sequence defines an anapaest (anapest)?",
+      "options": [
+        "Stressed, unstressed, unstressed (/ u u)",
+        "Unstressed, stressed (u /)",
+        "Unstressed, unstressed, stressed (u u /)",
+        "Stressed, stressed (/ /)"
+      ],
+      "correct_option_id": 2,
+      "explanation": "An anapaest rises through two weak syllables to a final stress.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "anapest",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: anapaest",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-35",
+      "question": "Which three-syllable sequence defines a dactyl?",
+      "options": [
+        "Stressed, unstressed, unstressed (/ u u)",
+        "Unstressed, unstressed, stressed (u u /)",
+        "Stressed, stressed (/ /)",
+        "Unstressed, stressed (u /)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "A dactyl begins with a strong syllable followed by two weak syllables.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "dactyl",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: dactyl",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-36",
+      "question": "Assuming the stated stresses, which phrase forms a single anapaest?",
+      "options": [
+        "BRIGHT lit-tle (/ u u)",
+        "STOP NOW (/ /)",
+        "TA-ble (/ u)",
+        "in the NIGHT (u u /)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "In the NIGHT has two unstressed syllables followed by the stressed word NIGHT.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "anapest",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: anapaest",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-37",
+      "question": "Which word most clearly demonstrates a dactyl when pronounced as three syllables?",
+      "options": [
+        "WON-der-ful",
+        "TA-ble",
+        "to-DAY",
+        "be-GIN"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Wonderful has primary stress on its first syllable followed by two weaker syllables in a three-syllable pronunciation.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "dactyl",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: dactyl",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-38",
+      "question": "A recurring three-syllable foot ends with its only stress. What metre is being described?",
+      "options": [
+        "Anapestic",
+        "Dactylic",
+        "Trochaic",
+        "Spondaic"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Anapests have the rising pattern u u /, with stress at the end of each foot.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "anapest",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: anapaest",
+      "src": "https://poets.org/glossary/meter"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-39",
+      "question": "A regular line contains TWO complete dactyls. How many syllables and strong positions does it have?",
+      "options": [
+        "Four syllables and two strong positions",
+        "Six syllables and two strong positions",
+        "Six syllables and four strong positions",
+        "Three syllables and two strong positions"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Each dactyl comprises three syllables with one initial stress, so two feet give six syllables and two stresses.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "dactyl",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: dactyl",
+      "src": "https://poets.org/glossary/meter"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-40",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. Classify u u / | u u / | u u / and give its syllable total.",
+      "options": [
+        "Anapestic tetrameter, twelve syllables",
+        "Anapestic trimeter, nine syllables",
+        "Dactylic trimeter, nine syllables",
+        "Iambic trimeter, six syllables"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Three groups of u u / produce three anapests and a total of nine syllables.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-41",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. Which statement about / u u | / u u | / u u | / u u is correct?",
+      "options": [
+        "It is dactylic tetrameter with twelve syllables",
+        "It is dactylic trimeter with nine syllables",
+        "It is trochaic tetrameter with eight syllables",
+        "It is anapestic tetrameter with twelve syllables"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Four stressed-unstressed-unstressed feet give dactylic tetrameter with four stresses and twelve syllables.",
+      "topic": "anapest-and-dactyl",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-42",
+      "question": "Which pattern defines a spondee in English stress-based scansion?",
+      "options": [
+        "One stressed and one unstressed (/ u)",
+        "One unstressed and one stressed (u /)",
+        "Two unstressed and one stressed (u u /)",
+        "Two stressed syllables (/ /)"
+      ],
+      "correct_option_id": 3,
+      "explanation": "A spondee is a two-syllable foot where both positions carry stress.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "spondee",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: spondee",
+      "src": "https://www.poetryfoundation.org/education/glossary/Foot"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-43",
+      "question": "Which marked phrase illustrates a spondee when BOTH words are emphatically stressed?",
+      "options": [
+        "STOP NOW (/ /)",
+        "to-DAY (u /)",
+        "in the DARK (u u /)",
+        "TA-ble (/ u)"
+      ],
+      "correct_option_id": 0,
+      "explanation": "An emphatic STOP NOW gives both syllables a strong beat, the pattern of a spondee.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "spondee",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: spondee",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-44",
+      "question": "How does a spondee differ from an iamb?",
+      "options": [
+        "A spondee contains no stressed syllable",
+        "A spondee has three syllables; an iamb has two stresses",
+        "A spondee has two stresses; an iamb has a weak syllable followed by a stress",
+        "A spondee ends unstressed; an iamb starts stressed"
+      ],
+      "correct_option_id": 2,
+      "explanation": "A spondee is / /, while an iamb is u /. Both are two-syllable feet.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "spondee",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: spondee",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-45",
+      "question": "In a predominantly iambic line, a single spondee replaces an expected iamb. What is the best interpretation?",
+      "options": [
+        "It is a local metrical substitution that can add emphasis",
+        "Every other foot automatically becomes a dactyl",
+        "The line must contain exactly two feet",
+        "The entire poem must now be called free verse"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Individual substitutions can vary the rhythm without necessarily destroying the underlying metre.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-46",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. A mainly iambic line scans u / | u / | / / | u / | u /. Which description is most accurate?",
+      "options": [
+        "Five-foot iambic line with an anapest in foot 3",
+        "Five-foot trochaic line with a dactyl in foot 3",
+        "Four-foot anapestic line with no substitutions",
+        "Five-foot iambic line with a spondee substituted in foot 3"
+      ],
+      "correct_option_id": 3,
+      "explanation": "There are five feet; four are iambs and the third is / /, a spondee.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-47",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. How many feet AND stressed syllables are present in u / | / / | u / ?",
+      "options": [
+        "Four feet and four stressed syllables",
+        "Four feet and three stressed syllables",
+        "Three feet and three stressed syllables",
+        "Three feet and four stressed syllables"
+      ],
+      "correct_option_id": 3,
+      "explanation": "The bars divide three feet. Their stress counts are one, two, and one, totaling four stresses.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-48",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. What is the metre of u / | u / | u / | u / | u / ?",
+      "options": [
+        "Trochaic pentameter",
+        "Iambic pentameter",
+        "Anapestic tetrameter",
+        "Iambic trimeter"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Five identical iambic feet produce regular iambic pentameter.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "iambic-pentameter",
+      "qtype": "direct",
+      "difficulty": "easy",
+      "syllabusKey": "Prosody 1: iamb",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-49",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. What is the metre and syllable count of u u / | u u / | u u / | u u / ?",
+      "options": [
+        "Anapestic trimeter with nine syllables",
+        "Anapestic tetrameter with twelve syllables",
+        "Dactylic tetrameter with twelve syllables",
+        "Iambic hexameter with twelve syllables"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Four anapestic feet create tetrameter, and each three-syllable foot gives twelve syllables total.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "anapest",
+      "qtype": "direct",
+      "difficulty": "medium",
+      "syllabusKey": "Prosody 1: anapaest",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    },
+    {
+      "id": "up-pgt-day-04-rhetoric-prosody-mix-50",
+      "question": "Notation: u = unstressed; / = stressed; | = foot boundary. A line scans / u | u / | u / | / / | u /. If iambic pentameter is its underlying scheme, which account of substitutions is correct?",
+      "options": [
+        "A spondee in foot 1 and a trochee in foot 4",
+        "A trochee in foot 2 and a spondee in foot 5",
+        "A dactyl in foot 1 and an anapest in foot 4",
+        "A trochee in foot 1 and a spondee in foot 4"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Five feet are marked. Foot 1 is / u (trochee), foot 4 is / / (spondee), and the remaining feet are iambs.",
+      "topic": "spondee-and-mixed-metre",
+      "topicId": "scansion",
+      "qtype": "direct",
+      "difficulty": "hard",
+      "syllabusKey": "Prosody 1: scansion",
+      "src": "https://poetry.harvard.edu/guide-prosody"
+    }
+  ]
+}
