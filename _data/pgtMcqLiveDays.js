@@ -44,4 +44,13 @@ module.exports = [
     setId: "up-pgt-day-05-prosody-2",
     questionFile: "up-pgt-day-05-prosody-2-mixed.json",
   },
+  {
+    number: 6,
+    title: "Major Stanza Forms: Sonnet, Ballad, Elegy, Ode, Epic & Mock Epic",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-06-poetic-forms",
+    questionFile: "up-pgt-day-06-poetic-forms-mixed.json",
+  },
 ];
