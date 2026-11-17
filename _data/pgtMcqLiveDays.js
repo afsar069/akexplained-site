@@ -53,4 +53,13 @@ module.exports = [
     setId: "up-pgt-day-06-poetic-forms",
     questionFile: "up-pgt-day-06-poetic-forms-mixed.json",
   },
+  {
+    number: 7,
+    title: "Chaucer 1: Age, Middle English, Canterbury Tales & Pilgrims",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-07-chaucer-1",
+    questionFile: "up-pgt-day-07-chaucer-1-mixed.json",
+  },
 ];
