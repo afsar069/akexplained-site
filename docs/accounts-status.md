@@ -4,12 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1–8 are free, no-login CBT sets. Day 8 covers Chaucer 2 with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1–9 are free, no-login CBT sets. Day 9 covers Renaissance and Reformation with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 9 — Renaissance and Reformation (2026-11-17)
+
+- The owner supplied 50 tagged, verified mixed-difficulty questions and requested Day 9 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public file `assets/questions/up-pgt-day-09-renaissance-reformation-mixed.json` preserves the uploaded question content and tags. All question IDs had a Day 8 prefix in the Day 9 upload, so only that prefix was corrected to Day 9. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 10–60 remain Coming soon.
+- Eleventy, topic/id checks, internal links, and a guest CBT and review flow passed locally.
 
 ## UP PGT English MCQs Day 8 — Chaucer 2 (2026-11-17)
 
 - The owner supplied 50 tagged, verified mixed-difficulty questions and requested Day 8 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
-- The public file `assets/questions/up-pgt-day-08-chaucer-2-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 9–60 remain Coming soon.
+- The public file `assets/questions/up-pgt-day-08-chaucer-2-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; At the time, Days 9–60 remained Coming soon.
 - Eleventy, topic/id checks, internal links, and a guest CBT and review flow passed locally.
 
 ## UP PGT English MCQs Day 7 — Chaucer 1 (2026-11-17)
