@@ -80,4 +80,13 @@ module.exports = [
     setId: "up-pgt-day-09-renaissance-reformation",
     questionFile: "up-pgt-day-09-renaissance-reformation-mixed.json",
   },
+  {
+    number: 10,
+    title: "Shakespeare 1: Life, Chronology, Four Periods & Comedies",
+    questionCount: 50,
+    levelName: "Mixed",
+    access: "free",
+    setId: "up-pgt-day-10-shakespeare-1",
+    questionFile: "up-pgt-day-10-shakespeare-1-mixed.json",
+  },
 ];
