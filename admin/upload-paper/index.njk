@@ -77,6 +77,15 @@ permalink: /admin/upload-paper/index.html
         <span class="hint">For a mock test, its number (for example 5). For an MCQ day, the day number (for example 13). For an MCQ set, the set number for that age.</span>
       </label>
       <p class="small" id="upSlugPreview" aria-live="polite"></p>
+      <label class="field" id="upLevelWrap" hidden>
+        <span>Which level?</span>
+        <select id="upLevel">
+          <option value="medium" selected>Medium</option>
+          <option value="easy">Easy</option>
+          <option value="hard">Hard</option>
+        </select>
+        <span class="hint">This file does not say which level it is. Mock tests and the UP PGT MCQ days are saved as Medium.</span>
+      </label>
       <label class="field">
         <span>Title</span>
         <input id="upTitle" type="text" autocomplete="off">

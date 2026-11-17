@@ -490,6 +490,15 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     different count, a clash with a free set and a rev that differs from the registry all show here in plain English.
     When anything is amber or red the card also shows a **"Copy this for Claude"** text (and the same on a failed upload)
     that the owner pastes to Claude. Keep these checks in step when a destination or the registry changes.
+  - **A file may be just the list of questions** (owner, 2026-11-17: their generator hands over a bare JSON
+    array, and the page used to answer "This is not a question file."). Such a file is accepted: the page wraps
+    it, and because a bare list names no level and no rev, a **Which level?** field appears (Medium first, which
+    is what every mock-test and MCQ-day page reads) and the **rev is worked out** — 1 for a new id, else the
+    highest saved rev of that level plus one. A file that DOES name its level or rev still rules, and a named rev
+    that goes backwards is still refused. Only one such file can be uploaded at a time (there is one level
+    choice), and every other check — the per-question checks, the tag check, the fingerprint, the database
+    trigger — is unchanged. `out.level` and `out.rev` are written into the saved body, so the body never
+    disagrees with its row.
   - Changing a live paper: upload it again with a **raised rev** (the page refuses an equal/lower rev on an id that
     exists). Nobody can delete a paper from a browser (no DELETE grant, no DELETE policy); hide it with `status = 'draft'`.
 - **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of
