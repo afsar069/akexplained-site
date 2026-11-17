@@ -4,12 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1–3 are free, no-login Figure of Speech CBT sets with 50 easy questions each. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-17. UP PGT English MCQs Days 1–4 are free, no-login CBT sets. Day 4 covers Rhetoric & Prosody 1 with 50 mixed questions. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UP PGT English MCQs Day 4 — Rhetoric & Prosody 1 (2026-11-17)
+
+- The owner supplied 50 tagged, verified mixed-difficulty questions and requested Day 4 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
+- The public file `assets/questions/up-pgt-day-04-rhetoric-prosody-mixed.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 5–60 remain Coming soon.
+- Eleventy, topic/id checks, internal links, and a guest CBT and review flow passed locally.
 
 ## UP PGT English MCQs Day 3 — Figure of Speech (2026-11-17)
 
 - The owner supplied 50 tagged, verified easy questions and requested Day 3 as a free CBT set outside login. Facts and near-duplicates were not re-checked.
-- The public file `assets/questions/up-pgt-figures-of-speech-day-3-easy.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; Days 4–60 remain Coming soon.
+- The public file `assets/questions/up-pgt-figures-of-speech-day-3-easy.json` contains the unchanged uploaded question objects. `_data/pgtMcqLiveDays.js` opens its card and test/review routes; At the time, Days 4–60 remained Coming soon.
 - Eleventy and topic/id checks passed. The guest CBT and review flow were tested locally.
 
 ## UP PGT English MCQs Day 2 — Figure of Speech (2026-11-17)
