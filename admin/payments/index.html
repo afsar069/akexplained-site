@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Payments | AK Explained</title>
+<meta name="description" content="Owner-only admin page.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-admin="payments">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>Payments</h1>
+    <p class="lede">The pass price, promo codes, and every order with its refund details.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+  <div id="adminNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
+
+  <div id="adminBody" hidden>
+    <div class="authcard">
+      <h2>The pass and its price</h2>
+      <div class="formerror" id="admPlanError" role="alert" hidden></div>
+      <div class="authnotice" id="admPlanOk" role="status" hidden></div>
+      <form id="admPlanForm" novalidate>
+        <label class="field">
+          <span>Name of the pass</span>
+          <input id="admPlanTitle" type="text" maxlength="80" autocomplete="off">
+        </label>
+        <label class="field">
+          <span>One line about it</span>
+          <input id="admPlanDesc" type="text" maxlength="200" autocomplete="off">
+        </label>
+        <label class="field">
+          <span>Price in rupees, for one period</span>
+          <input id="admPlanPrice" type="number" min="1" step="1" inputmode="numeric" autocomplete="off">
+          <span class="hint">For example 199. Leave empty until you decide.</span>
+        </label>
+        <label class="field">
+          <span>Days in one period</span>
+          <input id="admPlanDays" type="number" min="1" max="366" step="1" inputmode="numeric">
+        </label>
+        <label class="field">
+          <span>Most periods a student can buy at once</span>
+          <input id="admPlanMax" type="number" min="1" max="24" step="1" inputmode="numeric">
+        </label>
+        <label class="field admcheck">
+          <input id="admPlanActive" type="checkbox">
+          <span>On sale (students can buy it)</span>
+        </label>
+        <button class="btn" type="submit">Save</button>
+      </form>
+      <p class="small admnote">A new price is used for new purchases only. Passes already bought are not changed.</p>
+    </div>
+
+    <div class="authcard">
+      <h2>Make a promo code</h2>
+      <div class="formerror" id="admPromoError" role="alert" hidden></div>
+      <div class="authnotice" id="admPromoOk" role="status" hidden></div>
+      <form id="admPromoForm" novalidate>
+        <label class="field">
+          <span>Code</span>
+          <input id="admPromoCode" type="text" maxlength="30" autocomplete="off" autocapitalize="characters" spellcheck="false">
+          <span class="hint">3 to 30 letters or numbers, for example LAUNCH20. Students type it on the pass page.</span>
+        </label>
+        <label class="field">
+          <span>Discount</span>
+          <select id="admPromoKind">
+            <option value="percent">Percent off</option>
+            <option value="flat">Rupees off</option>
+          </select>
+        </label>
+        <label class="field">
+          <span id="admPromoValLabel">How many percent off (100 = free)</span>
+          <input id="admPromoVal" type="number" min="1" step="1" inputmode="numeric">
+        </label>
+        <label class="field">
+          <span>Most times it can be used <small>(leave empty for no limit)</small></span>
+          <input id="admPromoMax" type="number" min="1" step="1" inputmode="numeric">
+        </label>
+        <label class="field">
+          <span>Last day it works <small>(leave empty for no end)</small></span>
+          <input id="admPromoUntil" type="date">
+        </label>
+        <label class="field admcheck">
+          <input id="admPromoOnce" type="checkbox" checked>
+          <span>Each student can use it only once</span>
+        </label>
+        <label class="field">
+          <span>Note for yourself <small>(students do not see it)</small></span>
+          <input id="admPromoNote" type="text" maxlength="200" autocomplete="off">
+        </label>
+        <button class="btn" type="submit">Make the code</button>
+      </form>
+    </div>
+
+    <div class="authcard">
+      <h2>Promo codes</h2>
+      <div id="admPromos"><p class="small">Loading…</p></div>
+    </div>
+
+    <div class="authcard">
+      <h2>Orders</h2>
+      <div id="admOrders"><p class="small">Loading…</p></div>
+      <p class="small admnote">Refund rule: a full refund if asked within 24 hours of paying and no paid test was opened. A failed, wrongly taken or double payment is always returned. Refund the money in your Razorpay dashboard first; the order then turns to Refunded by itself. If it does not, press Mark refunded.</p>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/admin.js" defer></script>
+</body>
+</html>

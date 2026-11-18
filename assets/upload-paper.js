@@ -671,12 +671,16 @@
       // Is this id already taken? If so, the file's rev must be higher to replace it.
       // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
       // use the same rev. The database rule is the same: it only refuses a rev that goes down.
-      client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
+      client.from('mcq_papers').select('set_id, level, rev, status, access').eq('set_id', setId).then(function (res) {
         var chosenLevels = papers.map(levelOf);
         var existing = (!res.error && res.data) ? res.data : [];
         var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
         var newRev = (fileRev >= 1) ? fileRev : highest + 1;
+        // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
+        // (the database refuses anything else); a new paper takes its destination's access (login unless
+        // the destination says "paid").
+        var access = existing.some(function (r) { return r.access === 'paid'; }) ? 'paid' : (dest.access === 'paid' ? 'paid' : 'login');
         if (fileRev >= 1 && same.length && !(newRev > highest)) {
           var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
@@ -697,7 +701,7 @@
           out.level = levelOf(p);
           out.rev = newRev;
           if (dest.examId) { out.examId = dest.examId; } else { delete out.examId; }
-          return { set_id: setId, level: out.level, access: 'login', rev: newRev, status: status, body: out };
+          return { set_id: setId, level: out.level, access: access, rev: newRev, status: status, body: out };
         });
 
         goButton.textContent = 'Uploading…';

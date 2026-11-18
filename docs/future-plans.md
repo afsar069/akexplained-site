@@ -24,10 +24,10 @@ reads the repo, not the live pages.
 2. **Series 4 — UGC NET mock tests and Paper 1 MCQs.** Blocked: those pages do not exist yet (`available: false` in
    `_data/netResources.json`), and the upload picker has no NET destination. The owner must first say what NET needs and whether it is free or login.
 
-## 2. Paid layer (rules 13 and 15) — owner said "build next"
-Entitlements table, promo codes, server-side redeem, one more RLS policy, then allow `"paid"` in the registry.
-Payment gateway: **not chosen**; no fee or limit is to be invented. Big PDFs on **Cloudflare R2**: nothing built, ask first.
-The "no paid tier" lines in `/terms/`, `/contact/` and About change in the same commit that makes paid real.
+## 2. Paid layer (rule 22) — built 2026-11-18, waiting for Razorpay
+All Access pass, promo codes and Razorpay are built (rule 22; launch steps in `docs/accounts-status.md`). Still to do: the
+owner's Razorpay account and keys, a price, the launch merge, then making the login mock tests paid. Later: one plan per course.
+Big PDFs on **Cloudflare R2**: nothing built, ask first.
 
 ## 3. Content waiting for the owner's files
 - **British MCQ sets:** Set 1 for Georgian, Modern, Postmodern. Later sets: most ages still have Sets 2 to 5 planned

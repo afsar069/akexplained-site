@@ -6,6 +6,34 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
+## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, on the branch, NOT merged; DB + functions live but switched off)
+- **Owner's decisions:** one pass for now ("All Access": every paid mock test); 30 days per period, 1 to 6 periods at a time;
+  the price lives in the database and the owner sets it on `/admin/payments/` (no price chosen yet, pass is **not on sale**);
+  all **login** mock tests become paid at launch, the free ones stay free; refund rule = `/refund-policy/` (no refund after a paid
+  test is opened; 100% back if asked within 24 hours and no paid test opened; failed / wrongly taken / double payments returned;
+  refund sent within 72 hours of approval). Razorpay account: **not made yet**.
+- **Live in Supabase now (inert):** migration `20261118130000_paid_pass.sql` (tables `pass_plans`, `promo_codes`, `pass_orders`,
+  `passes`, `paper_opens`; `paper_catalog.access`; policy `mcq_papers_paid_read`; server-only functions `pass_quote`,
+  `pass_create_order`, `pass_grant`), Edge Functions `pass-checkout` and `razorpay-webhook` (verify_jwt off; they answer "not set
+  up" until the Razorpay secrets are added). Read back: plan `all-access` price null, inactive; 0 paid papers; advisors show only
+  the two old warnings (leaderboard, leaked-password).
+- **On the branch:** `/pass/` (`assets/pass.js`), `/refund-policy/`, `/admin/payments/` (admin.js `paymentsSection`), paywall in
+  `assets/cbt.js` (`needPass`, `paper_opens` note), upload page keeps a paid paper paid, Terms / Privacy / Contact / About updated,
+  footer + sitemap links. Tested: migration twice on scratch Postgres (quotes, promos, stacking, double payment, refund ends the
+  pass, RLS for student / admin / anon, paid re-upload refused) and 30 Playwright checks (guest / student / free promo / paywall /
+  login test unchanged / admin page / 375px).
+- **Launch steps (in order, each needs the owner):** 1. owner makes a Razorpay account; 2. owner adds `RAZORPAY_KEY_ID`,
+  `RAZORPAY_KEY_SECRET` (Test Mode) and `RAZORPAY_WEBHOOK_SECRET` in Supabase → Edge Functions → Secrets, and the webhook URL
+  `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, order.paid,
+  payment.failed, refund.processed in Razorpay; 3. owner sets a price and "On sale" on `/admin/payments/`, test payment in Test
+  Mode; 4. merge (owner's word) so Razorpay can review the live pages; 5. KYC → live keys replace test keys; 6. with the owner's
+  word, one UPDATE makes the login mock tests paid (`update mcq_papers set access='paid' where set_id like 'up-pgt-mock-test-%'
+  or set_id like 'up-ap-p2-mock-test-%'`) and `paperDestinations.js` gets `access: 'paid'` on those two destinations.
+- **Open questions for the owner:** the price; a launch promo for students who used these tests free; whether the UGC NET login
+  PYQs and login MCQ days/sets stay login (they are not mock tests, so they stay login unless the owner says otherwise); the footer
+  line "free for every student" (most of the site is still free — keep or reword?). Deleting an account also deletes its order
+  records (rule 10 cascade); Razorpay keeps its own payment record.
+
 ## Upload check: a few similar questions are allowed (2026-11-18)
 
 - Trigger: the owner's UGC NET Paper III, December 2013 upload was refused because one question was the same as a question in the

@@ -51,5 +51,5 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 ## Where the rules live
 Question ids and tags: rules 11 and 12. Accounts, login, dashboard: rule 10. Access layers (free, login, paid):
 rule 15. The owner-only **admin area** (`/admin/...`: upload, papers, notices to the dashboard bell, students,
-reviews — one allow list, `public.paper_admins`): rule 16. What is not built yet (paid layer, R2 for big PDFs):
-rule 13. Daily quiz: rule 8. NET PYQs: rule 18. Self-serve publishing (a live paper shows with no rebuild): rule 17.
+reviews, payments — one allow list, `public.paper_admins`): rule 16. The paid layer (All Access pass, promo codes,
+Razorpay; Razorpay secrets never in the repo or chat): rule 22. What is not built yet (R2 for big PDFs): rule 13. Daily quiz: rule 8. NET PYQs: rule 18. Self-serve publishing (a live paper shows with no rebuild): rule 17.
