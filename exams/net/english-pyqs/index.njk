@@ -43,8 +43,8 @@ eyebrow: Previous-year question papers
             <div class="net-pyq-card net-pyq-card-login" data-net-pyq-slot="{{ paper.setId }}" data-slot-state="{{ 'live' if paper.live else 'soon' }}" aria-label="{{ paper.title }}">
               <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
               <span class="net-pyq-card-copy">
-                <strong>{{ paper.monthName }} {{ paper.year }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
-                <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Needs a free login</span>
+                <strong>{{ paper.session }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
+                <span>Paper {{ paper.paper }} · <span data-pyq-count>{{ paper.count }} questions</span> · Needs a free login</span>
               </span>
               <span class="net-pyq-actions" data-slot-live{% if not paper.live %} hidden{% endif %}>
                 <a class="net-pyq-go net-pyq-go-lock" data-guest-only hidden href="/login/?next={{ paper.href | urlencode }}" aria-label="{{ paper.title }} needs a login. Log in to open it." title="Log in to open {{ paper.title }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
@@ -56,7 +56,7 @@ eyebrow: Previous-year question papers
             <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
               <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
               <span class="net-pyq-card-copy">
-                <strong>{{ paper.monthName }} {{ paper.year }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
+                <strong>{{ paper.session }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
                 <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Free · No login</span>
               </span>
               <span class="net-pyq-go" aria-hidden="true">Start</span>

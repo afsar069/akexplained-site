@@ -4,17 +4,22 @@
 // UGC NET ka count aur saal seedha netPyqPapers se aate hain, isliye naya NET paper judte hi card badal jata hai.
 module.exports = function () {
   const net = require("./netPyqPapers.js")();
-  const years = Array.from(new Set(net.map(function (p) { return p.year; }))).sort(function (a, b) { return b - a; });
+  const years = net.map(function (p) { return p.year; });
+  const minY = Math.min.apply(null, years), maxY = Math.max.apply(null, years);
+  const span = minY === maxY ? String(minY) : minY + "–" + maxY;   // "2012–2025" when there are many years
   const n = net.length;
-  // A login paper (rule 18) makes "No login" untrue for the whole list, so the card says so in plain words.
-  const anyLogin = net.some(function (p) { return p.access === "login"; });
+  // How many need a login, so the card says it plainly (the free 2012 papers are open to all).
+  const loginN = net.filter(function (p) { return p.access === "login"; }).length;
+  const access = loginN === 0 ? "Free, no login"
+    : loginN >= net.length - loginN ? "Some free, most need a free login"
+    : "Free, some need a free login";
   return [
     {
       slug: "net",
       title: "UGC NET English",
       icon: "book-open",
       blurb: "Real UGC-NET English papers as an online test, with a clock and a full review.",
-      meta: n + " paper" + (n === 1 ? "" : "s") + " · " + years.join(", ") + (anyLogin ? " · Free · Some need a login" : " · Free · No login"),
+      meta: n + " paper" + (n === 1 ? "" : "s") + " · " + span + " · " + access,
       href: "/exams/net/english-pyqs/",
       live: true
     },
