@@ -249,16 +249,26 @@
       return a.session();
     }).then(function (s) {
       session = s && s.user ? s : null;
-      return auth.client.from('pass_plans').select('id, title, description, price_paise, days_per_unit, max_units')
-        .eq('id', PLAN_ID).eq('active', true).maybeSingle();
+      /* Price set ho to dikhao, sale band ho tab bhi (Razorpay review ke liye price dikhna chahiye);
+         Pay sirf tab jab active = true. */
+      return auth.client.from('pass_plans').select('id, title, description, price_paise, days_per_unit, max_units, active')
+        .eq('id', PLAN_ID).maybeSingle();
     }).then(function (res) {
       if (res.error || !res.data || res.data.price_paise == null) {
         notice.textContent = 'The pass is not on sale yet. Please check back soon.';
         return myPass().then(function (p) { if (p) showMine(p, false); });
       }
       plan = res.data;
-      notice.hidden = true;
       setup();
+      if (!plan.active) {
+        notice.textContent = 'Payments open soon. The price of the pass is shown below.';
+        ['passGo', 'passLogin', 'passApply'].forEach(function (id) { el(id).hidden = true; });
+        el('passCode').disabled = true;
+        el('passGo').removeAttribute('data-auth-only');
+        el('passLogin').removeAttribute('data-guest-only');
+      } else {
+        notice.hidden = true;
+      }
       if (window.akAuth && window.akAuth.refreshHeader) window.akAuth.refreshHeader(session);
       return myPass().then(function (p) { showMine(p, false); });
     }).catch(function () {

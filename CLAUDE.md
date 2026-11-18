@@ -828,7 +828,7 @@ no Razorpay keys). Launch steps and open questions: `docs/accounts-status.md`.
   marks failed, refund.processed in full marks refunded). Secrets `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`,
   `RAZORPAY_WEBHOOK_SECRET` are added by the owner in Supabase → Edge Functions → Secrets; **never in the repo or chat**. CORS
   allows only `https://akexplained.com`.
-- **Pages.** `/pass/` (`assets/pass.js`): price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
+- **Pages.** `/pass/` (`assets/pass.js`): a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
   loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
   running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
   paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
