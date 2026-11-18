@@ -857,6 +857,11 @@ history: `docs/accounts-status.md`.
   Quick health check from a session: `curl -X POST .../functions/v1/razorpay-webhook -H 'x-razorpay-signature: 00' -d '{}'`
   must answer `Bad signature` (a missing secret answers `Not set up`); `.../pass-checkout` with no token answers "Please log in first".
   The one Test Mode payment (Rs 25, owner's account, pass to 18 Dec 2026) carries the order note "Razorpay Test Mode payment".
+- **Promo code shown to everyone** (owner, 2026-11-18: FIRSTIME50, Rs 50 off, once per student): `pass_plans.featured_promo` +
+  `featured_label` (migration `20261118160000_featured_promo.sql`) put one code in an "Offer" strip on the pass card with a
+  "Use code" button (fills and applies it). On `/admin/payments/` each active code has **Show to everyone** / **Hide**;
+  turning a shown code off also hides it. Only ONE code per purchase (one field; the server applies one code) and the page
+  says so. The code is still checked by the server (dates, limits, once per student).
 - **How the owner runs it (no Claude needed):** price / On sale, promo codes and free passes on `/admin/payments/`; a refund is
   made in the Razorpay dashboard and the webhook marks the order Refunded and ends that pass (or "Mark refunded" by hand). The
   orders table shows "Paid test opened?" for the 24-hour rule.

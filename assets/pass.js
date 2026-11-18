@@ -290,6 +290,16 @@
       if (quote) { quote = null; localSummary(); codeMsg(''); }
     });
     el('passForm').addEventListener('submit', function (e) { e.preventDefault(); pay(); });
+    /* Owner ka chuna hua ek promo code sabko dikhao (pass_plans.featured_promo); jaanch phir bhi server karta hai. */
+    if (plan.featured_promo && plan.active) {
+      el('passOfferCode').textContent = plan.featured_promo;
+      el('passOfferLabel').textContent = plan.featured_label || 'A discount';
+      el('passOffer').hidden = false;
+      el('passOfferUse').addEventListener('click', function () {
+        el('passCode').value = plan.featured_promo;
+        applyCode();
+      });
+    }
     var next = safeNext();
     if (next) el('passLogin').href = '/login/?next=' + encodeURIComponent('/pass/?next=' + encodeURIComponent(next));
     el('passBuy').hidden = false;
@@ -306,7 +316,7 @@
       loadInventory(auth.client);
       /* Price set ho to dikhao, sale band ho tab bhi (Razorpay review ke liye price dikhna chahiye);
          Pay sirf tab jab active = true. */
-      return auth.client.from('pass_plans').select('id, title, description, price_paise, days_per_unit, max_units, active')
+      return auth.client.from('pass_plans').select('id, title, description, price_paise, days_per_unit, max_units, active, featured_promo, featured_label')
         .eq('id', PLAN_ID).maybeSingle();
     }).then(function (res) {
       if (res.error || !res.data || res.data.price_paise == null) {

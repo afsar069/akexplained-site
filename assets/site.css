@@ -4083,3 +4083,12 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 }
 @media (max-width:420px){ .passpromo{flex-direction:column;align-items:stretch} }
 .admsubhead{font-size:1rem;margin:22px 0 8px;color:var(--ink)}
+.pass-offer{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:0 0 16px;padding:10px 12px;border-radius:12px;
+  background:#FFF7E6;border:1px dashed #E3B65A}
+.pass-offer-tag{background:#E3B65A;color:#16304A;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:6px}
+.pass-offer-text{flex:1;min-width:150px;color:var(--ink);font-size:.95rem}
+.pass-offer-text code{font-family:inherit;font-weight:800;letter-spacing:.04em;color:#7A5A1A;background:#fff;border:1px solid #EBD3A0;border-radius:6px;padding:1px 6px}
+.pass-offer-use{border:0;background:var(--ink);color:#fff;font-weight:700;font-size:.85rem;padding:7px 12px;border-radius:999px;cursor:pointer}
+.pass-offer-use:hover{background:var(--teal)}
+.pass-onecode{margin:6px 0 0}
+.pass-offer[hidden]{display:none}
