@@ -1,6 +1,7 @@
-// The PYQ papers grouped by year, newest year first (feeds the hub's year groups).
+// The PYQ papers grouped by year, OLDEST year first (owner, 2026-11-18: the free 2012 papers stay on top,
+// newer papers come below). The year order follows netPyqPapers (already oldest first).
 // Inside a year the papers are split into one section per paper (Paper I, II, III), and inside a section
-// they run in the order they were held: January first, December last (the reader works through them in time order).
+// they run in the order they were held: January first, December last, and within a session Shift 1 before Shift 2.
 const PAPER_ORDER = ["I", "II", "III"];
 
 module.exports = function () {
@@ -17,7 +18,9 @@ module.exports = function () {
     group.papers.forEach(function (x) { if (names.indexOf(x.paper) < 0) names.push(x.paper); });
     group.sections = names.map(function (name) {
       const papers = group.papers.filter(function (x) { return x.paper === name; })
-        .sort(function (a, b) { return a.month - b.month || a.slug.localeCompare(b.slug); });
+        .sort(function (a, b) {
+          return a.month - b.month || (a.shift || "").localeCompare(b.shift || "") || a.slug.localeCompare(b.slug);
+        });
       return {
         paper: name,
         papers: papers,

@@ -6,6 +6,17 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
+## UGC NET English PYQ hub — all exam patterns + oldest-first order (2026-11-18)
+
+- The PYQ registry and hub now carry every exam pattern, so the owner can publish papers from 2012 to the present:
+  Paper II (50 old / 100 new), Paper III (75), and NTA-era shifts (optional `"shift"` on a login entry). The CBT engine
+  already handled any question count; only `_data/netPyqPapers.js`, `netPyqYears.js` and the hub card changed (shift label,
+  validation, sort). A new login paper is still one registry line + a build, then the owner uploads it — the upload
+  destination lists every planned login PYQ, not just 2013.
+- Order is now **oldest first**: the free 2012 papers stay at the top, newer years below; every year group is open by default.
+- Pending (owner to decide): the full list of papers to plan (year, session, Paper II/III, shift). Each needs one registry
+  line before the owner can self-upload it.
+
 ## UGC NET English PYQ — Paper II, June 2013, login-only (2026-11-18)
 
 - **State: built on the branch, NOT merged, and the questions are NOT in the database yet.** This session had no Supabase connector, so the owner loads the

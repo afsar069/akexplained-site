@@ -38,6 +38,7 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
   question with two or more right ids becomes ONE (the owner's rule), recorded in `tools/pyq/decisions/`; then one line in `_data/netPyqs.json`.
   **A login-only PYQ** (`"access": "login"`) has no file in the repo: one registry line, and the owner uploads the questions at `/admin/upload-paper/` (rule 18).
   The generator's instruction is `tools/pyq/PYQ-TAGGER-INSTRUCTIONS.md`; check its file with `python3 tools/pyq/check_upload_file.py <file>` first.
+  The registry carries Paper II/III, single 100-Q papers and NTA shifts (optional `shift`), oldest-first (2012 free on top).
 - **Change the database**: rules 9 and 14. Test the SQL on a scratch local Postgres first, then apply it,
   read it back, run the security advisors, keep the migration file in `supabase/migrations/`. If you have no
   Supabase connection, write the SQL and give the owner the steps to paste it in Supabase → SQL Editor.

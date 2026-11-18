@@ -688,8 +688,9 @@ once. Update rules 3, 15, 16 and this rule, and `docs/self-serve-publish-plan.md
 
 ## 18. UGC NET PYQs (previous-year papers) — free, no login; a paper can also be login-only (owner, 2026-11-14 / 2026-11-18)
 The NET hub's **UGC NET English PYQs** button opens `/exams/net/english-pyqs/` (`exams/net/english-pyqs/index.njk`, styles
-`.net-pyq-*` in `assets/net.css`): one group per year, newest first; inside a year one section per paper (Paper II, Paper III),
-with its cards oldest first (June, then December), each card numbered 1, 2 and carrying a Start button (owner, 2026-11-14). The full name
+`.net-pyq-*` in `assets/net.css`): one group per year, **oldest first** (owner, 2026-11-18: the free 2012 papers stay on top,
+newer years below), every year group **open by default** so no paper is hidden; inside a year one section per paper (Paper II,
+Paper III), with its cards oldest first (June, then December, and Shift 1 before Shift 2), each card numbered 1, 2 and carrying a Start button (owner, 2026-11-14). The full name
 ("UGC NET English Paper II — December 2012") is the card's aria-label and the test page's title. Each paper is a CBT page at
 `/exams/net/english-pyqs/<slug>/` with its review at `.../review/` (`test.njk` and `review.njk` paginate over
 `_data/netPyqPapers.js`; markup in `_includes/net-pyq-cbt.njk`). The hub, the two routes and the sitemap lines all come
@@ -744,6 +745,14 @@ from the question file, and the build stops with a plain message if a file is mi
   and the Harvard Classics text on Wikisource, found through web search; the Kubla Khan pages could not be opened from the session, so Q31 rests on the
   poem's own line order). Q40 keeps the supplied key: its fourth pair (Doll Tearsheet, a Henry IV Part 2 character, set against The City Madam) is a printing slip, the other three
   pairs are right and only option (a) fits them, so it carries a note. Q8, Q16 and Q19 still say "the source" in their supplied explanations (not edited; the owner decides).
+- **Exam patterns the registry carries** (owner, 2026-11-18; the CBT engine already takes any question count, so only the
+  registry/hub/uploader label them). 2012–2017 (CBSE, 3-paper era): a subject paper is `"paper": "II"` (50 questions) or
+  `"paper": "III"` (75 questions). 2018 onward (NTA, 2-paper era): one subject paper, `"paper": "II"` with 100 questions, held
+  in shifts — add `"shift": "Shift 1"` (or `"Shift 2"`) so two papers of the same month/year/paper read apart; the card shows
+  the shift and the slug/setId carry it (`2019-june-paper-ii-shift-1`, `ugc-net-english-2019-jun-paper-ii-shift-1`).
+  `_data/netPyqPapers.js` validates the shift label; `netPyqYears.js` sorts Shift 1 before Shift 2. A new login paper is still
+  one registry line (then build, then the owner uploads at `/admin/upload-paper/`): the **UGC NET English — Previous-year paper**
+  destination lists every planned login PYQ by its full title, so the owner can publish any year, not only 2013.
 - **Paper 1 PYQs** (`paper-1-pyqs`) stay "Coming soon". Do not mix them into this hub unasked: the hub is English Paper 2 only.
 - **Dashboard:** PYQ answers feed the by-topic and by-period views through their tags. They are not in an age's level pool
   (their ids do not start with an age prefix, rule 10), so the level meter is unchanged.
