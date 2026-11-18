@@ -1,17 +1,19 @@
 ---
 layout: net-layout.njk
 title: UGC NET English PYQs
-description: Take real UGC-NET English papers from earlier years as an online test, with a clock and a full answer review. Free, with no login.
+description: Take real UGC-NET English papers from earlier years as an online test, with a clock and a full answer review. Most papers are free, and some need a free login.
 crumb_label: English PYQs
 eyebrow: Previous-year question papers
 ---
 {# CLAUDE.md rule 18. The cards come from _data/netPyqs.json (grouped by year in _data/netPyqYears.js). A new paper is one
-   registry line plus its question file; this page needs no change. #}
+   registry line plus its question file; this page needs no change. A LOGIN paper (access: "login") has no file: its card
+   shows the padlock to a guest and Start to a student, or "Coming soon" until it is Live, and assets/net-pyq-live.js flips
+   it from the live paper catalog with no rebuild (rule 17). #}
 <section class="net-pyq" aria-labelledby="net-pyq-title">
   <header class="net-pyq-intro">
     <div>
       <h2 id="net-pyq-title">Choose a paper</h2>
-      <p>Each paper opens as a real test, with one question at a time, a clock and a full review at the end. Free for everyone, with no login needed.</p>
+      <p>Each paper opens as a real test, with one question at a time, a clock and a full review at the end. Most papers are free for everyone. A paper marked with a padlock needs a free login.</p>
     </div>
     <span class="net-pyq-total">{{ netPyqPapers.length }} paper{% if netPyqPapers.length != 1 %}s{% endif %}</span>
   </header>
@@ -35,6 +37,20 @@ eyebrow: Previous-year question papers
         <ol class="net-pyq-grid">
           {% for paper in section.papers %}
           <li>
+            {%- if paper.access == "login" %}
+            <div class="net-pyq-card net-pyq-card-login" data-net-pyq-slot="{{ paper.setId }}" data-slot-state="{{ 'live' if paper.live else 'soon' }}" aria-label="{{ paper.title }}">
+              <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
+              <span class="net-pyq-card-copy">
+                <strong>{{ paper.monthName }} {{ paper.year }}</strong>
+                <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Needs a free login</span>
+              </span>
+              <span class="net-pyq-actions" data-slot-live{% if not paper.live %} hidden{% endif %}>
+                <a class="net-pyq-go net-pyq-go-lock" data-guest-only hidden href="/login/?next={{ paper.href | urlencode }}" aria-label="{{ paper.title }} needs a login. Log in to open it." title="Log in to open {{ paper.title }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
+                <a class="net-pyq-go" data-auth-only hidden href="{{ paper.href }}" aria-label="Start {{ paper.title }}">Start</a>
+              </span>
+              <span class="net-pyq-soon" data-slot-soon{% if paper.live %} hidden{% endif %}>Coming soon</span>
+            </div>
+            {%- else %}
             <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
               <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
               <span class="net-pyq-card-copy">
@@ -43,6 +59,7 @@ eyebrow: Previous-year question papers
               </span>
               <span class="net-pyq-go" aria-hidden="true">Start</span>
             </a>
+            {%- endif %}
           </li>
           {% endfor %}
         </ol>
@@ -57,7 +74,8 @@ eyebrow: Previous-year question papers
 <section class="net-reading net-pyq-note" aria-labelledby="net-pyq-note-title">
   <h2 id="net-pyq-note-title">How these papers are marked</h2>
   <p>The questions and answers follow the UGC question paper and its updated answer key. This site counts one right answer for each question. Sometimes the official key accepts more than one option, or gives marks to every candidate. In that case the test counts one option, and the explanation for that question tells you which one.</p>
-  <p>Your answers stay in this browser. Log in if you also want your results kept with your account. <a href="/exams/net/">Back to NET preparation</a></p>
+  <p>On a free paper, your answers stay in this browser. Log in if you also want your results kept with your account. A paper with a padlock needs a free login to open. <a href="/exams/net/">Back to NET preparation</a></p>
 </section>
 
 {% set hubLinksText = "Pages that help you prepare for UGC-NET English." %}{% include "hub-links.njk" %}
+<script src="/assets/net-pyq-live.js" defer></script>

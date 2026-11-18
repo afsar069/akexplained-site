@@ -6,13 +6,15 @@ module.exports = function () {
   const net = require("./netPyqPapers.js")();
   const years = Array.from(new Set(net.map(function (p) { return p.year; }))).sort(function (a, b) { return b - a; });
   const n = net.length;
+  // A login paper (rule 18) makes "No login" untrue for the whole list, so the card says so in plain words.
+  const anyLogin = net.some(function (p) { return p.access === "login"; });
   return [
     {
       slug: "net",
       title: "UGC NET English",
       icon: "book-open",
       blurb: "Real UGC-NET English papers as an online test, with a clock and a full review.",
-      meta: n + " paper" + (n === 1 ? "" : "s") + " · " + years.join(", ") + " · Free · No login",
+      meta: n + " paper" + (n === 1 ? "" : "s") + " · " + years.join(", ") + (anyLogin ? " · Free · Some need a login" : " · Free · No login"),
       href: "/exams/net/english-pyqs/",
       live: true
     },

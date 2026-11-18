@@ -55,7 +55,8 @@
         String(q.correct_option_id),
         String(q.explanation == null ? '' : q.explanation).replace(/\s+/g, ' ').trim(),
         q.topicId || '',
-        q.periodId || ''
+        q.periodId || '',
+        String(q.note == null ? '' : q.note).replace(/\s+/g, ' ').trim()
       ].join('\u001e');
     });
     return [body.setId, body.level, String(body.rev), String(qs.length)].join('\u001e') + '\n' + lines.join('\n');
@@ -147,7 +148,9 @@
      the file cannot send the paper to the wrong place. A series may name the id of a paper that
      was loaded before the series became self-serve (UP PGT MCQ Days 11 and 12): that id wins, so
      uploading the same day again replaces it instead of making a second copy. */
-  function slugFor(dest, number, age) {
+  function slugFor(dest, number, age, paperId) {
+    /* A previous-year paper has no number: its id is the paper the owner picked from the planned list. */
+    if (dest && dest.needsPaper) return paperId || '';
     if (!dest || !(number >= 1)) return '';
     if (dest.needsAge) return age ? age + '-set-' + number : '';
     if (dest.ids && dest.ids[String(number)]) return dest.ids[String(number)];
@@ -168,6 +171,9 @@
     var destSelect = el('upDest');
     var ageWrap = el('upAgeWrap');
     var ageSelect = el('upAge');
+    var paperWrap = el('upPaperWrap');
+    var paperSelect = el('upPaper');
+    var numberWrap = el('upNumberWrap');
     var numberInput = el('upNumber');
     var slugPreview = el('upSlugPreview');
     var levelWrap = el('upLevelWrap');
@@ -215,6 +221,7 @@
         kind: o.getAttribute('data-kind') || 'mcq-set',
         prefix: o.getAttribute('data-prefix') || '',
         needsAge: o.getAttribute('data-needs-age') === 'yes',
+        needsPaper: o.getAttribute('data-needs-paper') === 'yes',
         titleWord: o.getAttribute('data-title-word') || 'Set',
         autoPage: o.getAttribute('data-auto') === 'yes',
         /* Self-serve series (rule 17): Live karte hi page par aa jata hai, bina rebuild.
@@ -243,6 +250,12 @@
       if (dest.max && number > dest.max) return false;
       return true;
     }
+    /* The planned paper picked in the "Which paper?" list (only for a destination that needs one). */
+    function chosenPaper() {
+      var o = paperSelect && paperSelect.options[paperSelect.selectedIndex];
+      if (!o || !o.value) return null;
+      return { id: o.value, title: o.getAttribute('data-title') || '', path: o.getAttribute('data-path') || '' };
+    }
     function currentNumber() {
       var n = parseInt(numberInput.value, 10);
       return (n >= 1 && String(n) === String(numberInput.value).trim()) ? n : 0;
@@ -263,16 +276,20 @@
       if (needsLevel()) { show(levelWrap); } else { hide(levelWrap); }
       var number = currentNumber();
       var age = ageSelect.value;
+      var picked = chosenPaper();
       if (dest && dest.needsAge) { show(ageWrap); } else { hide(ageWrap); }
+      if (dest && dest.needsPaper) { show(paperWrap); hide(numberWrap); } else { hide(paperWrap); show(numberWrap); }
 
-      var slug = slugFor(dest, number, age);
+      var slug = slugFor(dest, number, age, picked && picked.id);
       if (!dest) {
         slugPreview.textContent = '';
-      } else if (!number) {
+      } else if (dest.needsPaper && !picked) {
+        slugPreview.textContent = 'Now choose the paper.';
+      } else if (!dest.needsPaper && !number) {
         slugPreview.textContent = 'Now type the number.';
       } else if (dest.needsAge && !age) {
         slugPreview.textContent = 'Now choose the age.';
-      } else if (!numberFits(dest, number)) {
+      } else if (!dest.needsPaper && !numberFits(dest, number)) {
         slugPreview.textContent = 'This number cannot be used here. ' + dest.numberNote;
       } else {
         slugPreview.innerHTML = 'It will be saved as <strong>' + esc(slug) + '</strong>' +
@@ -282,7 +299,9 @@
                          : ' — the questions go into the database. When you upload, this page checks that the set has a page on the site.');
       }
 
-      if (dest && number && !titleTouched) {
+      if (dest && dest.needsPaper) {
+        if (picked && !titleTouched) titleInput.value = picked.title;
+      } else if (dest && number && !titleTouched) {
         titleInput.value = dest.titleWord + ' ' + number;
       }
       if (titleNote) titleNote.textContent = dest ? dest.titleNote : '';
@@ -290,6 +309,7 @@
 
     destSelect && destSelect.addEventListener('change', function () { refreshPreview(); });
     ageSelect && ageSelect.addEventListener('change', function () { refreshPreview(); });
+    paperSelect && paperSelect.addEventListener('change', function () { refreshPreview(); });
     numberInput && numberInput.addEventListener('input', function () { refreshPreview(); });
     levelSelect && levelSelect.addEventListener('change', function () { refreshPreview(); });
     titleInput && titleInput.addEventListener('input', function () { titleTouched = true; });
@@ -436,6 +456,7 @@
        Upload ke baad page khud dekhta hai ki paper sach me page par khulega ya nahi, aur jo kami hai
        saaf shabdon me likhta hai. Agar kuch theek karna ho to ek "Copy for Claude" text deta hai. */
     function pageUrlFor(dest, setId, number) {
+      if (dest && dest.needsPaper && dest.paperPath) return dest.paperPath;
       if (plan[setId] && plan[setId].path) return plan[setId].path;
       if (dest && dest.pageBase && number) return dest.pageBase + (dest.pageRoute || 'test-{n}/').replace('{n}', number);
       return '';
@@ -608,16 +629,23 @@
       var dest = currentDest();
       var number = currentNumber();
       var age = ageSelect.value;
+      var picked = chosenPaper();
       var title = String(titleInput.value || '').trim();
       var status = statusSelect.value === 'live' ? 'live' : 'draft';
 
       if (!dest) { fail(goError, 'Choose where this paper goes (the exam / series).'); return; }
       if (dest.needsAge && !age) { fail(goError, 'Choose the age for this MCQ set.'); return; }
-      if (!number) { fail(goError, 'Type the test or set number (a whole number, 1 or more).'); return; }
-      if (!numberFits(dest, number)) { fail(goError, 'This number cannot be used here. ' + dest.numberNote); return; }
+      if (dest.needsPaper) {
+        if (!picked) { fail(goError, 'Choose which paper this is.'); return; }
+        dest.paperPath = picked.path;
+        number = 0;       /* a previous-year paper has no number */
+      } else {
+        if (!number) { fail(goError, 'Type the test or set number (a whole number, 1 or more).'); return; }
+        if (!numberFits(dest, number)) { fail(goError, 'This number cannot be used here. ' + dest.numberNote); return; }
+      }
       if (!title) { fail(goError, 'Give the paper a title.'); return; }
 
-      var setId = slugFor(dest, number, age);
+      var setId = slugFor(dest, number, age, picked && picked.id);
       /* A file may name its own level and rev. When it does not, the level is the one chosen above
          and the rev is worked out below, once we know what is already saved under this id. */
       var fileRev = parseInt(papers[0].body.rev, 10);
@@ -649,7 +677,7 @@
           Object.keys(p.body).forEach(function (k) { out[k] = p.body[k]; });
           delete out.bare;
           out.setId = setId;
-          out.setNumber = number;
+          if (number) { out.setNumber = number; } else { delete out.setNumber; }
           out.title = title;
           out.kind = dest.kind;
           out.level = levelOf(p);

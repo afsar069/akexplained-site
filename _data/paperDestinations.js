@@ -14,6 +14,10 @@
    marked Live shows on its page AT ONCE, with no rebuild (UP AP Paper 2 and UP PGT mock tests).
    For the others the id is still made correct here; wiring the page is a separate step.
 
+   needsPaper = true (UGC NET previous-year papers, rule 18): the paper has no number. The owner picks it from
+   `papers` (the login PYQs planned in _data/netPyqs.json, each with its set id and its page address) and the id is
+   exactly that paper's set id. The page is already built; Live shows it at once (rule 17).
+
    minNumber / maxNumber: the numbers that have a page. A self-serve series pre-builds its pages
    for a fixed range, so a paper saved outside it could never be opened; the upload page refuses
    such a number and shows numberNote. Both ends are read from the series' own data file, so they
@@ -39,6 +43,9 @@ const pgtDayIds = {};
 pgtMcqDays.forEach(function (d) {
   if (d.managed && d.setId !== pgtMcqSeries.prefix + d.number) pgtDayIds[d.number] = d.setId;
 });
+
+/* UGC NET previous-year papers that are login papers (no public file, rule 18). The owner picks one by name. */
+const netLoginPapers = require("./netPyqPapers")().filter(function (p) { return p.access === "login"; });
 
 const AGES = (mcqSpec.ages || []).map(function (a) { return { slug: a.slug, name: a.name }; });
 
@@ -104,6 +111,23 @@ const DESTINATIONS = [
     hub: "exams/pgt/up-pgt/mcqs/index.njk"
   },
   {
+    id: "net-pyq",
+    label: "UGC NET English \u2014 Previous-year paper",
+    examId: "ugc-net",
+    kind: "mcq-set",
+    prefix: null,
+    titleWord: "Paper",
+    needsAge: false,
+    needsPaper: true,
+    papers: netLoginPapers.map(function (p) { return { id: p.setId, title: p.title, path: p.href }; }),
+    autoPage: true,
+    selfServe: true,
+    pageBase: "/exams/net/english-pyqs/",
+    pageLevels: ["medium"],
+    titleNote: "Filled in from the paper you choose. Students see this name on the paper's pages.",
+    hub: "exams/net/english-pyqs/index.njk"
+  },
+  {
     id: "lit-mcq",
     label: "English Literature — MCQ set",
     examId: null,
@@ -118,7 +142,8 @@ const DESTINATIONS = [
   }
 ];
 
-module.exports = DESTINATIONS.map(function (d) {
+/* No planned login PYQ = nothing to pick, so the destination is not offered. */
+module.exports = DESTINATIONS.filter(function (d) { return !d.needsPaper || d.papers.length; }).map(function (d) {
   if (!fs.existsSync(path.join(__dirname, "..", d.hub))) {
     throw new Error(
       "[paperDestinations] " + d.label + " is offered on the upload page, but its page " +
