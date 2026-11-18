@@ -19,8 +19,10 @@ eyebrow: Previous-year question papers
   </header>
 
   <div class="net-pyq-years">
+    {# Every year group is open by default so no paper is hidden on this reference page (owner, 2026-11-18:
+       2012 stays on top, newer years below). The reader can still collapse a year with the summary. #}
     {% for group in netPyqYears %}
-    <details class="net-pyq-year"{% if loop.first %} open{% endif %}>
+    <details class="net-pyq-year" open>
       <summary>
         <span class="net-pyq-year-icon" aria-hidden="true"></span>
         <span class="net-pyq-year-name">{{ group.year }}</span>
@@ -41,7 +43,7 @@ eyebrow: Previous-year question papers
             <div class="net-pyq-card net-pyq-card-login" data-net-pyq-slot="{{ paper.setId }}" data-slot-state="{{ 'live' if paper.live else 'soon' }}" aria-label="{{ paper.title }}">
               <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
               <span class="net-pyq-card-copy">
-                <strong>{{ paper.monthName }} {{ paper.year }}</strong>
+                <strong>{{ paper.monthName }} {{ paper.year }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
                 <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Needs a free login</span>
               </span>
               <span class="net-pyq-actions" data-slot-live{% if not paper.live %} hidden{% endif %}>
@@ -54,7 +56,7 @@ eyebrow: Previous-year question papers
             <a class="net-pyq-card" href="{{ paper.href }}" aria-label="Start {{ paper.title }}">
               <span class="net-pyq-step" aria-hidden="true">{{ loop.index }}</span>
               <span class="net-pyq-card-copy">
-                <strong>{{ paper.monthName }} {{ paper.year }}</strong>
+                <strong>{{ paper.monthName }} {{ paper.year }}{% if paper.shift %} · {{ paper.shift }}{% endif %}</strong>
                 <span>Paper {{ paper.paper }} · {{ paper.count }} questions · Free · No login</span>
               </span>
               <span class="net-pyq-go" aria-hidden="true">Start</span>

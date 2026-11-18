@@ -1,6 +1,15 @@
-// UGC-NET English PYQs (previous-year papers), newest first. CLAUDE.md rule 18.
+// UGC-NET English PYQs (previous-year papers), OLDEST first (owner, 2026-11-18: the free 2012 papers
+// stay at the top, newer papers come below them). CLAUDE.md rule 18.
 // _data/netPyqs.json lists each paper (slug, year, month, question file). Everything the page shows
 // — title, paper, number of questions — is read from the question file itself, so nothing is typed twice.
+//
+// EXAM PATTERNS (owner, 2026-11-18; the engine already takes any of them, the registry just labels them):
+//   - 2012–2017 (CBSE, 3-paper era): one subject paper is "Paper II" (50 questions) and one is
+//     "Paper III" (75 questions). "paper": "II" or "III", "count": 50 or 75.
+//   - 2018 onward (NTA, 2-paper era): one subject paper, "Paper II" with 100 questions, held in shifts.
+//     Add "shift": "Shift 1" (or "Shift 2") so two papers of the same month/year/paper read apart.
+//   The slug and the setId are written in the registry line, so they carry the shift when there is one
+//   (e.g. slug "2019-june-paper-ii-shift-1", setId "ugc-net-english-2019-jun-paper-ii-shift-1").
 // The build STOPS with a plain message if a listed file is missing or any question is not scoreable
 // (the CBT engine needs exactly four options and one right option, 0 to 3).
 //
@@ -40,6 +49,10 @@ module.exports = function () {
     }
     const access = entry.access || "free";
     if (access !== "free" && access !== "login") throw new Error(where + ": access must be \"free\" or \"login\"");
+    const shift = String(entry.shift || "").trim();
+    if (shift && !/^[A-Za-z0-9][A-Za-z0-9 ]{0,18}$/.test(shift)) {
+      throw new Error(where + ": shift must be a short label such as \"Shift 1\"");
+    }
 
     let data;
     let count;
@@ -89,6 +102,7 @@ module.exports = function () {
       title: data.title,
       paper: data.paper,
       session: data.session,
+      shift: shift,
       count: count,
       access: access,
       live: live,
@@ -96,9 +110,11 @@ module.exports = function () {
       reviewHref: BASE + entry.slug + "/review/",
     };
   });
+  // Oldest first: year, then month, then Paper II before Paper III, then the shift, then the slug.
   papers.sort(function (a, b) {
-    return b.year - a.year || b.month - a.month ||
-      (PAPER_ORDER[a.paper] || 9) - (PAPER_ORDER[b.paper] || 9) || a.slug.localeCompare(b.slug);
+    return a.year - b.year || a.month - b.month ||
+      (PAPER_ORDER[a.paper] || 9) - (PAPER_ORDER[b.paper] || 9) ||
+      (a.shift || "").localeCompare(b.shift || "") || a.slug.localeCompare(b.slug);
   });
   return papers;
 };
