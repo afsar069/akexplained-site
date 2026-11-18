@@ -14,6 +14,8 @@ _Last updated: 2026-11-18 (end of the paid-layer session)._
   Test Mode payment passed end to end before the switch. No real payment has been made yet.
 - The owner can, alone: set the price and On sale, make promo codes, give a free pass (and stop it), see orders, mark a
   refund (`/admin/payments/`). Refunds themselves are made in the Razorpay dashboard.
+- **Later the same day:** the owner put the pass **On sale at Rs 199** and made promo codes FIRSTIME50 (Rs 50 off, once per
+  student, shown to everyone on the pass page) and UPPGT100 (Rs 100 off, one use). The pass page was redesigned (PR #156).
 - Watch out: while not on sale, a NEW upload is saved as login (open to any logged-in student), not paid. See rule 22.
 - Open questions: real price; launch promo; paid sets in a no-pass student's dashboard level pool; footer "free for every
   student"; per-course passes later. Full rules: CLAUDE.md rule 22. Merged PRs: afsar069/akexplained-site#153 (pages,

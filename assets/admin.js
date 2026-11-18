@@ -446,8 +446,10 @@
     function loadPromos() {
       Promise.all([
         ctx.client.from('promo_codes').select('*').order('created_at', { ascending: false }),
-        readAll(ctx.client, 'pass_orders', 'promo_code, status', function (q) { return q.not('promo_code', 'is', null); })
+        readAll(ctx.client, 'pass_orders', 'promo_code, status', function (q) { return q.not('promo_code', 'is', null); }),
+        ctx.client.from('pass_plans').select('featured_promo').eq('id', PLAN).maybeSingle()
       ]).then(function (r) {
+        var shown = r[2] && r[2].data ? r[2].data.featured_promo : null;
         if (r[0].error) { promoBox.innerHTML = '<p class="admerr">Could not load the codes: ' + esc(r[0].error.message) + '</p>'; return; }
         var used = {};
         (r[1] || []).forEach(function (o) {
@@ -455,7 +457,7 @@
         });
         var rows = r[0].data || [];
         if (!rows.length) { promoBox.innerHTML = '<p class="small">No promo codes yet.</p>'; return; }
-        promoBox.innerHTML = '<table class="admtable"><thead><tr><th>Code</th><th>Discount</th><th>Used</th><th>Last day</th><th>Status</th><th>Change</th></tr></thead><tbody>' +
+        promoBox.innerHTML = '<table class="admtable"><thead><tr><th>Code</th><th>Discount</th><th>Used</th><th>Last day</th><th>Status</th><th>Change</th><th>On the pass page</th></tr></thead><tbody>' +
           rows.map(function (c) {
             var off = c.percent_off != null ? c.percent_off + '% off' : rupees(c.amount_off_paise) + ' off';
             return '<tr><td><strong>' + esc(c.code) + '</strong>' + (c.note ? '<span class="admsub">' + esc(c.note) + '</span>' : '') + '</td>' +
@@ -463,19 +465,39 @@
               '<td>' + (used[c.code] || 0) + (c.max_uses ? ' of ' + c.max_uses : '') + '</td>' +
               '<td>' + (c.valid_until ? esc(niceDate(new Date(new Date(c.valid_until).getTime() - 1))) : 'No end') + '</td>' +
               '<td><span class="admtag ' + (c.active ? 'is-live' : 'is-draft') + '">' + (c.active ? 'On' : 'Off') + '</span></td>' +
-              '<td><button class="btn alt admbtn" data-code="' + esc(c.code) + '" data-to="' + (c.active ? 'off' : 'on') + '">' + (c.active ? 'Turn off' : 'Turn on') + '</button></td></tr>';
+              '<td><button class="btn alt admbtn" data-code="' + esc(c.code) + '" data-to="' + (c.active ? 'off' : 'on') + '">' + (c.active ? 'Turn off' : 'Turn on') + '</button></td>' +
+              '<td>' + (shown === c.code
+                ? '<span class="admtag is-live">Shown</span> <button class="btn alt admbtn" data-feature="" >Hide</button>'
+                : (c.active ? '<button class="btn alt admbtn" data-feature="' + esc(c.code) + '" data-label="' + esc(off) + '">Show to everyone</button>' : '')) + '</td></tr>';
           }).join('') + '</tbody></table>';
       }).catch(function (e) { promoBox.innerHTML = '<p class="admerr">Could not load the codes: ' + esc(e.message) + '</p>'; });
     }
     loadPromos();
     promoBox.addEventListener('click', function (ev) {
+      /* Ek hi code pass page par sabko dikhta hai (pass_plans.featured_promo). */
+      var f = ev.target.closest ? ev.target.closest('[data-feature]') : null;
+      if (f) {
+        var code = f.getAttribute('data-feature') || null;
+        f.disabled = true;
+        ctx.client.from('pass_plans').update({ featured_promo: code, featured_label: code ? f.getAttribute('data-label') : '' })
+          .eq('id', PLAN).select('id').then(function (res) {
+            if (res.error || !res.data || !res.data.length) { f.disabled = false; alert('Could not change it: ' + ((res.error && res.error.message) || 'not saved')); return; }
+            loadPromos();
+          });
+        return;
+      }
       var b = ev.target.closest ? ev.target.closest('[data-code]') : null;
       if (!b) return;
       b.disabled = true;
-      ctx.client.from('promo_codes').update({ active: b.getAttribute('data-to') === 'on' })
-        .eq('code', b.getAttribute('data-code')).then(function (res) {
+      var turningOff = b.getAttribute('data-to') === 'off', code = b.getAttribute('data-code');
+      ctx.client.from('promo_codes').update({ active: !turningOff })
+        .eq('code', code).then(function (res) {
           if (res.error) { b.disabled = false; alert('Could not change it: ' + res.error.message); return; }
-          loadPromos();
+          // A code that is turned off is no longer shown on the pass page either.
+          var after = turningOff
+            ? ctx.client.from('pass_plans').update({ featured_promo: null, featured_label: '' }).eq('id', PLAN).eq('featured_promo', code)
+            : Promise.resolve();
+          Promise.resolve(after).then(loadPromos, loadPromos);
         });
     });
 
