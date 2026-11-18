@@ -559,6 +559,20 @@
       });
     }
 
+    /* A few questions may be the same as a question in another paper (owner, 2026-11-18; the database allows
+       up to 10 and refuses a copy). They are saved and live; this only TELLS the owner which ones, as plain
+       information (kind 'info'), never as a failure. Admin-only RPC, ids only. If it cannot be read, say nothing. */
+    function similarCheck(setId) {
+      return client.rpc('paper_similar_questions', { p_set_id: setId }).then(function (res) {
+        var rows = (!res.error && Array.isArray(res.data)) ? res.data : [];
+        if (!rows.length) return [];
+        var list = rows.slice(0, 10).map(function (r) { return r.question_id + ' = ' + r.other_set_id + ' ' + r.other_question_id; }).join('; ');
+        return [{ k: 'info', t: rows.length + ' question' + (rows.length === 1 ? ' is' : 's are') +
+          ' the same as a question in another paper (up to 10 is allowed): ' + list +
+          '. They are saved and the paper is live. Nothing to fix unless this was not meant to be shared.' }];
+      }, function () { return []; });
+    }
+
     function verdictFor(items, status) {
       var no = items.filter(function (i) { return i.k === 'no'; }).length;
       var warn = items.filter(function (i) { return i.k === 'warn'; }).length;
@@ -720,7 +734,9 @@
             });
             goButton.textContent = 'Checking the site…';
             var next = allMatch
-              ? finalChecks(ctx).then(function (more) { return items.concat([{ k: 'info', t: 'Saved as ' + setId + '.' }], more); })
+              ? Promise.all([finalChecks(ctx), similarCheck(setId)]).then(function (got) {
+                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + '.' }], got[1], got[0]);
+                })
               : Promise.resolve(items);
             return next.then(function (all) {
               var verdict = allMatch ? verdictFor(all, status)

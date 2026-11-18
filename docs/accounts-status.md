@@ -6,6 +6,20 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
+## Upload check: a few similar questions are allowed (2026-11-18)
+
+- Trigger: the owner's UGC NET Paper III, December 2013 upload was refused because one question was the same as a question in the
+  already-loaded Paper II, December 2013. New rule (owner): **up to 10 questions** that match a question in another paper (exact text,
+  counted once each) are allowed; **more than 10** is refused as a copy or a wrongly named file. Ids must still be unique.
+- Applied to the live database with the connector as migration `allow_few_similar_questions` (same SQL as
+  `supabase/migrations/20261118120000_allow_few_similar_questions.sql`). Tested first on a scratch Postgres: 1 and exactly 10 shared
+  allowed, 11 and a full copy refused, same id still refused, re-saving a paper does not clash with itself, the report function shows
+  10 rows to an admin, 0 to a normal user, and is refused for anon. Read back on the live project: new rule present, old message gone,
+  the trigger still attached, 63 papers untouched. Security advisors show only the two older warnings (`leaderboard()` definer, leaked-password
+  protection), nothing new.
+- The upload page's final check now lists the shared questions as an information line (ids only; the paper stays Live, verdict stays
+  green). The JS part needs the branch merged; the database part is already live.
+
 ## UGC NET English PYQ — full 2012–2025 archive planned as login slots (2026-11-18)
 
 - From the owner's Drive folder "UGC NET PYQ" (the authoritative list of papers to upload), every UGC NET English paper 2012–2025

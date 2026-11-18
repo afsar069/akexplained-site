@@ -461,7 +461,7 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   - The database is the real gate, not the page's JavaScript: the trigger `mcq_papers_check_body` refuses a paper
     unless every question has a unique id (in this paper and in every other paper), exactly four different
     non-empty options, the right option marked 0 to 3, an explanation, a real `topicId` and, when given, a real
-    `periodId`; it refuses a question already in another paper, anything but `access = 'login'`, a body that names
+    `periodId`; it refuses a paper in which **more than 10** questions are already in another paper (owner, 2026-11-18: one to ten shared questions are allowed, because two exam papers do repeat a question; more than ten is a copy or a file saved under the wrong name; migration `20261118120000_allow_few_similar_questions.sql`; the upload page then lists the shared ones as information through the admin-only `paper_similar_questions(set_id)`), anything but `access = 'login'`, a body that names
     another set, level or rev, and a rev that goes backwards. Its messages are plain English and the page shows
     them as they are.
   - `mcq_papers.status` is `draft` (only an admin can read it) or `live` (students can). New uploads default to
