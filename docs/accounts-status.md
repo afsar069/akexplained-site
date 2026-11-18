@@ -22,6 +22,11 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
   footer + sitemap links. Tested: migration twice on scratch Postgres (quotes, promos, stacking, double payment, refund ends the
   pass, RLS for student / admin / anon, paid re-upload refused) and 30 Playwright checks (guest / student / free promo / paywall /
   login test unchanged / admin page / 375px).
+- **Done with the owner, 2026-11-18:** Razorpay account + KYC done. Test Mode keys + Test webhook set, one Test Mode
+  payment of Rs 25 went through end to end (webhook granted the pass, the browser verify came after and made no second pass;
+  that order carries the note "Razorpay Test Mode payment"). Then **Live keys** (`rzp_live_`) replaced the test keys in Supabase
+  and a **Live webhook** with its own secret was added (same URL, same 4 events). Plan: price Rs 25 (a test price), **not on sale**.
+  No real payment has been made yet.
 - **Launch steps (in order, each needs the owner):** 1. owner makes a Razorpay account; 2. owner adds `RAZORPAY_KEY_ID`,
   `RAZORPAY_KEY_SECRET` (Test Mode) and `RAZORPAY_WEBHOOK_SECRET` in Supabase → Edge Functions → Secrets, and the webhook URL
   `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, order.paid,
