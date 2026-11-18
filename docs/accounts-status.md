@@ -6,6 +6,19 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
+## UGC NET English PYQ — full 2012–2025 archive planned as login slots (2026-11-18)
+
+- From the owner's Drive folder "UGC NET PYQ" (the authoritative list of papers to upload), every UGC NET English paper 2012–2025
+  is now a registry slot in `_data/netPyqs.json`: 4 free (the 2012 papers already in the repo) + 39 login. Each login slot is
+  pre-built and "Coming soon" until the owner uploads its questions at `/admin/upload-paper/` and marks it Live (self-serve, rule 17).
+  No questions were opened or verified — year / session / paper / shift all come from the Drive file names.
+- Paper II + Paper III for June 2012 → November 2017; Paper II only (100 Q) from July 2018. Shifts, the merged cycles
+  (December 2020 / June 2021 under 2021; December 2021 / June 2022 under 2022), June 2024 (Cancelled), its re-exams and
+  December 2024 (07.01.2025) are all represented. Registry counts are the standard 50 / 75 / 100; `net-pyq-live.js` shows the exact
+  catalog count once a paper is live.
+- 56 Playwright checks passed (hub guest/student/not-live/read-fails/375px, catalog count override, test page flows, upload page,
+  regressions). Build clean, no new broken link. **Pending: the owner uploads each paper's questions over time; nothing else is needed.**
+
 ## UGC NET English PYQ hub — all exam patterns + oldest-first order (2026-11-18)
 
 - The PYQ registry and hub now carry every exam pattern, so the owner can publish papers from 2012 to the present:

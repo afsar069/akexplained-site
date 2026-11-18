@@ -39,6 +39,14 @@
     });
   }
 
+  /* The card shows the exam's standard count (50 / 75 / 100) before the paper is live. Once it is live
+     the real count from the catalog is shown, so a paper with a dropped question reads exactly right. */
+  function setCount(card, count) {
+    if (!(count > 0)) return;
+    var el = card.querySelector('[data-pyq-count]');
+    if (el) el.textContent = count + ' question' + (count === 1 ? '' : 's');
+  }
+
   function setState(card, isLive) {
     if ((card.getAttribute('data-slot-state') === 'live') === isLive) return false;
     card.setAttribute('data-slot-state', isLive ? 'live' : 'soon');
@@ -60,14 +68,16 @@
     }
     if (!ids.length) return;
 
-    a.client.from('paper_catalog').select('set_id').eq('status', 'live').in('set_id', ids)
+    a.client.from('paper_catalog').select('set_id,question_count').eq('status', 'live').in('set_id', ids)
       .then(function (res) {
         if (res.error || !Array.isArray(res.data)) return;   /* read failed: keep the build-time state */
         var live = {};
-        res.data.forEach(function (r) { if (r && r.set_id) live[String(r.set_id)] = true; });
+        res.data.forEach(function (r) { if (r && r.set_id) live[String(r.set_id)] = r; });
         var changed = false;
         for (var j = 0; j < cards.length; j++) {
-          if (setState(cards[j], !!live[cards[j].getAttribute('data-net-pyq-slot')])) changed = true;
+          var row = live[cards[j].getAttribute('data-net-pyq-slot')];
+          if (row) setCount(cards[j], parseInt(row.question_count, 10));
+          if (setState(cards[j], !!row)) changed = true;
         }
         /* The buttons now showing were printed hidden; let auth.js paint them for the login state. */
         if (changed && window.akAuth && window.akAuth.refreshHeader && window.akAuth.session) {

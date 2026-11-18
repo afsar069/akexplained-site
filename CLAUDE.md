@@ -753,6 +753,15 @@ from the question file, and the build stops with a plain message if a file is mi
   `_data/netPyqPapers.js` validates the shift label; `netPyqYears.js` sorts Shift 1 before Shift 2. A new login paper is still
   one registry line (then build, then the owner uploads at `/admin/upload-paper/`): the **UGC NET English — Previous-year paper**
   destination lists every planned login PYQ by its full title, so the owner can publish any year, not only 2013.
+- **The whole 2012–2025 archive is planned** (owner, 2026-11-18, from the Drive folder "UGC NET PYQ"). The four 2012 papers stay FREE
+  (already in the repo); every other paper is a login slot, pre-built and "Coming soon" until the owner uploads it and marks it Live
+  (self-serve, rule 17). Paper II + Paper III run June 2012 → November 2017 (CBSE); Paper II only (100 Q) from July 2018 (NTA). The
+  merged NTA cycles are grouped by the year they were HELD and the session string keeps the real name ("December 2020 / June 2021"
+  under 2021, "December 2021 / June 2022" under 2022); June 2024 is kept as "(Cancelled)" and its re-exams (21 Aug two shifts, 4 Sept)
+  and December 2024 "(07.01.2025)" sit under 2024. Counts in the registry are the exam's standard per-era counts (50 / 75 / 100); the
+  hub card shows the **exact** count from the live catalog once a paper is live (`assets/net-pyq-live.js` updates `[data-pyq-count]`),
+  so a dropped-question paper reads right. The card heading is the paper's `session` (not month+year), so the merged cycles read
+  correctly. The `/quizzes/pyq/` front-door card shows "N papers · 2012–2025 · ..." with the access worded from the free/login split.
 - **Paper 1 PYQs** (`paper-1-pyqs`) stay "Coming soon". Do not mix them into this hub unasked: the hub is English Paper 2 only.
 - **Dashboard:** PYQ answers feed the by-topic and by-period views through their tags. They are not in an age's level pool
   (their ids do not start with an age prefix, rule 10), so the level meter is unchanged.
