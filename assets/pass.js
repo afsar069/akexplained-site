@@ -99,6 +99,60 @@
     el('sumTotal').textContent = q.amount_paise === 0 ? 'Free' : rupees(q.amount_paise);
   }
 
+
+  /* "Inside the pass": paid papers ki live ginti (paper_catalog, sirf live + paid; koi sawal nahi).
+     Group set_id / exam_id se. Na padh paye to dash hi rehte hain, page baaki theek chalta hai. */
+  var GROUPS = {
+    'pgt-mock': { one: 'test', many: 'tests' },
+    'ap-mock':  { one: 'test', many: 'tests' },
+    'pgt-days': { one: 'day', many: 'days' },
+    'net-pyq':  { one: 'paper', many: 'papers' },
+    'lit-sets': { one: 'set', many: 'sets' }
+  };
+  function grpOf(r) {
+    var id = String(r.set_id || '');
+    if (/^up-pgt-mock-test-/.test(id)) return 'pgt-mock';
+    if (/^up-ap-p2-mock-test-/.test(id)) return 'ap-mock';
+    if (r.exam_id === 'pgt') return 'pgt-days';
+    if (r.exam_id === 'ugc-net') return 'net-pyq';
+    if (!r.exam_id) return 'lit-sets';
+    return null;
+  }
+  function num(n) { return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ','); }
+  function loadInventory(client) {
+    return client.from('paper_catalog').select('set_id, exam_id, question_count')
+      .eq('status', 'live').eq('access', 'paid')
+      .then(function (res) {
+        if (res.error) throw new Error(res.error.message);
+        var tally = {}, papers = 0, qs = 0;
+        Object.keys(GROUPS).forEach(function (k) { tally[k] = { n: 0, q: 0 }; });
+        (res.data || []).forEach(function (r) {
+          var g = grpOf(r); if (!g) return;
+          tally[g].n++; tally[g].q += (parseInt(r.question_count, 10) || 0);
+          papers++; qs += (parseInt(r.question_count, 10) || 0);
+        });
+        Object.keys(GROUPS).forEach(function (k) {
+          var t = tally[k], w = GROUPS[k];
+          var card = document.querySelector('.pass-inv-card[data-grp="' + k + '"]');
+          if (card) {
+            card.querySelector('[data-n]').textContent = t.n ? num(t.n) : '0';
+            card.querySelector('[data-q]').textContent = t.n ? num(t.q) + ' questions' : 'Coming soon';
+            card.classList.toggle('is-empty', !t.n);
+          }
+          var cmp = document.querySelector('[data-cmp="' + k + '"]');
+          if (cmp && t.n) cmp.textContent = num(t.n) + ' paid ' + (t.n === 1 ? w.one : w.many) + ' (' + num(t.q) + ' questions)';
+        });
+        document.querySelectorAll('[data-paid-total-papers]').forEach(function (e) { e.textContent = num(papers); });
+        document.querySelectorAll('[data-paid-total-q]').forEach(function (e) { e.textContent = num(qs); });
+        var series = Object.keys(tally).filter(function (k) { return tally[k].n > 0; }).length;
+        document.querySelectorAll('[data-paid-series]').forEach(function (e) { e.textContent = series; });
+      })
+      .catch(function () {
+        var note = el('passInvNote');
+        if (note) note.textContent = 'The numbers could not be loaded just now. Open any card to see the tests on that page.';
+      });
+  }
+
   function myPass() {
     if (!session) return Promise.resolve(null);
     return auth.client.from('passes').select('starts_at, ends_at')
@@ -115,10 +169,9 @@
     var box = el('passMine');
     var next = safeNext();
     if (!session) { box.hidden = true; return; }
-    if (!p) {
-      box.innerHTML = '<h2>Your pass</h2><p class="small">You do not have a pass yet.</p>';
-    } else {
-      box.innerHTML = '<h2>' + (justBought ? 'Your pass is ready' : 'Your pass') + '</h2>' +
+    if (!p) { box.hidden = true; return; }   /* pass nahi: khareedne ka dabba hi kaafi hai */
+    {
+      box.innerHTML = '<h3>' + (justBought ? 'Your pass is ready' : 'Your pass') + '</h3>' +
         '<p>Your All Access pass is open until <strong>' + esc(niceDate(p.until)) + '</strong>.</p>' +
         (next ? '<p><a class="btn" href="' + esc(next) + '">Go back to your test</a></p>' : '') +
         (p.running ? '' : '<p class="small muted">It starts when your current pass ends.</p>');
@@ -219,6 +272,7 @@
     el('passDesc').textContent = plan.description || '';
     el('passPrice').textContent = rupees(plan.price_paise);
     el('passDays').textContent = plan.days_per_unit;
+    document.querySelectorAll('[data-plan-days]').forEach(function (e) { e.textContent = plan.days_per_unit; });
     var sel = el('passUnits');
     var html = '';
     for (var i = 1; i <= plan.max_units; i++) {
@@ -249,6 +303,7 @@
       return a.session();
     }).then(function (s) {
       session = s && s.user ? s : null;
+      loadInventory(auth.client);
       /* Price set ho to dikhao, sale band ho tab bhi (Razorpay review ke liye price dikhna chahiye);
          Pay sirf tab jab active = true. */
       return auth.client.from('pass_plans').select('id, title, description, price_paise, days_per_unit, max_units, active')

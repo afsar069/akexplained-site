@@ -1,0 +1,193 @@
+---
+permalink: /pass/
+eleventyExcludeFromCollections: true
+---
+{%- set f = passFree -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Access pass | AK Explained</title>
+<meta name="description" content="The All Access pass opens every test on AK Explained that is not free: mock tests, MCQ practice sets and previous-year papers. See what is free, what the pass adds, the price, and pay with Razorpay.">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span>All Access pass</p></div>
+<main id="main" class="passpage">
+
+{# CLAUDE.md rule 22. Free numbers come from _data/passFree.js (the site's own files, at build time). Paid numbers
+   come from the live paper_catalog in the browser (assets/pass.js), because paid papers are added self-serve. #}
+
+<section class="pass-hero">
+  <div class="wrap pass-hero-grid">
+    <div class="pass-hero-copy">
+      <p class="pass-badge">All Access pass</p>
+      <h1>Every test on AK Explained, with one pass</h1>
+      <p class="pass-hero-lede">Mock tests, MCQ practice sets and previous-year papers for UP PGT, UP Assistant Professor and UGC NET English, all opened by a single payment. Everything that is free today stays free.</p>
+      <ul class="pass-ticks">
+        <li>Every paid test opens the moment you pay, with answers and explanations</li>
+        <li>New tests are added to the pass as they are published</li>
+        <li>No automatic renewal: the pass simply ends when its days are over</li>
+        <li>Your dashboard and progress stay free, with or without a pass</li>
+      </ul>
+      <div class="pass-stats" aria-label="The pass at a glance">
+        <div><b data-paid-total-papers>&ndash;</b><span>paid tests</span></div>
+        <div><b data-paid-total-q>&ndash;</b><span>questions</span></div>
+        <div><b data-paid-series>&ndash;</b><span>test series</span></div>
+      </div>
+      <p class="pass-trust">Secure payment by Razorpay &middot; UPI, cards, netbanking and wallets</p>
+    </div>
+
+    <aside class="pass-buy" id="passCard" aria-labelledby="passTitle">
+      <div id="passNotice" class="authnotice" role="status">Loading the pass&hellip;</div>
+      <section id="passMine" class="pass-mine" hidden></section>
+
+      <section id="passBuy" hidden>
+        <h2 id="passTitle">All Access pass</h2>
+        <p id="passDesc" class="small muted"></p>
+        <p class="passprice"><strong id="passPrice"></strong> <span class="muted">for every <span id="passDays">30</span> days</span></p>
+
+        <form id="passForm" novalidate>
+          <label class="field">
+            <span>How long</span>
+            <select id="passUnits"></select>
+          </label>
+
+          <div class="passpromo">
+            <label class="field">
+              <span>Promo code (if you have one)</span>
+              <input id="passCode" type="text" autocomplete="off" autocapitalize="characters" maxlength="30" spellcheck="false">
+            </label>
+            <button id="passApply" class="btn alt" type="button">Apply</button>
+          </div>
+          <p id="passCodeMsg" class="small" role="status" hidden></p>
+
+          <dl class="passsum">
+            <div><dt>Price</dt><dd id="sumBase">&mdash;</dd></div>
+            <div id="sumDiscRow" hidden><dt>Promo discount</dt><dd id="sumDisc">&mdash;</dd></div>
+            <div class="passsum-total"><dt>To pay</dt><dd id="sumTotal">&mdash;</dd></div>
+          </dl>
+
+          <div class="formerror" id="passError" role="alert" hidden></div>
+          <button id="passGo" class="btn pass-cta" type="submit" data-auth-only hidden>Pay and open the pass</button>
+          <a id="passLogin" class="btn pass-cta" href="/login/?next=%2Fpass%2F" data-guest-only>Log in to buy the pass</a>
+          <p class="small muted pass-fine">By paying you agree to the <a href="/terms/">Terms</a> and the <a href="/refund-policy/">Refund Policy</a>.</p>
+        </form>
+      </section>
+    </aside>
+  </div>
+</section>
+
+
+
+
+
+<section class="pass-sec">
+  <div class="wrap">
+    <div class="pass-sec-head">
+      <p class="eyebrow">Free or with the pass</p>
+      <h2>What you get, side by side</h2>
+    </div>
+    <div class="pass-cmp-wrap">
+      <table class="pass-cmp">
+        <thead>
+          <tr><th scope="col">What</th><th scope="col">Free</th><th scope="col">With the pass</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Articles and notes on English literature</th><td class="y" data-label="Free">All</td><td class="y" data-label="With the pass">All</td></tr>
+          <tr><th scope="row">Daily quiz</th><td class="y" data-label="Free">{{ f.daily.ages }} ages, {{ f.daily.questions }} questions</td><td class="y" data-label="With the pass">The same</td></tr>
+          <tr><th scope="row">English Literature MCQ practice sets</th><td class="y" data-label="Free">{{ f.sets.count }} sets, {{ f.sets.questions }} questions</td><td class="y" data-label="With the pass">The free sets, plus <span data-cmp="lit-sets">the paid sets</span></td></tr>
+          <tr><th scope="row">UP PGT English mock tests</th><td class="y" data-label="Free">{{ f.pgtMock.count }} tests, {{ f.pgtMock.questions }} questions</td><td class="y" data-label="With the pass">The free tests, plus <span data-cmp="pgt-mock">the paid tests</span></td></tr>
+          <tr><th scope="row">UP PGT English MCQ days</th><td class="y" data-label="Free">{{ f.pgtDays.count }} days, {{ f.pgtDays.questions }} questions</td><td class="y" data-label="With the pass">The free days, plus <span data-cmp="pgt-days">the paid days</span></td></tr>
+          <tr><th scope="row">UP Assistant Professor Paper 2 mock tests</th><td class="n" data-label="Free">None</td><td class="y" data-label="With the pass"><span data-cmp="ap-mock">All the tests</span></td></tr>
+          <tr><th scope="row">UGC NET English previous-year papers</th><td class="y" data-label="Free">{{ f.netPyq.count }} papers ({{ f.netPyq.years }}), {{ f.netPyq.questions }} questions</td><td class="y" data-label="With the pass">The free papers, plus <span data-cmp="net-pyq">the paid papers</span></td></tr>
+          <tr><th scope="row">Answers, explanations and review after each test</th><td class="y" data-label="Free">On every free test</td><td class="y" data-label="With the pass">On every test</td></tr>
+          <tr><th scope="row">Dashboard, progress and top students list</th><td class="y" data-label="Free">Yes, with a free account</td><td class="y" data-label="With the pass">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="pass-sec pass-sec-tint">
+  <div class="wrap">
+    <div class="pass-sec-head">
+      <p class="eyebrow">Inside the pass</p>
+      <h2>What the pass opens today</h2>
+      <p class="muted">These numbers are read live from the site, so they grow as new tests are published.</p>
+    </div>
+    <div class="pass-inv" id="passInv">
+      <a class="pass-inv-card" href="/exams/pgt/up-pgt/mock-tests/" data-grp="pgt-mock">
+        <span class="pass-inv-num" data-n>&ndash;</span>
+        <span class="pass-inv-name">UP PGT English mock tests</span>
+        <span class="pass-inv-q" data-q></span>
+      </a>
+      <a class="pass-inv-card" href="/exams/state-psc/up-assistant-professor/paper-2-mock-tests/" data-grp="ap-mock">
+        <span class="pass-inv-num" data-n>&ndash;</span>
+        <span class="pass-inv-name">UP Assistant Professor Paper 2 mock tests</span>
+        <span class="pass-inv-q" data-q></span>
+      </a>
+      <a class="pass-inv-card" href="/exams/pgt/up-pgt/mcqs/" data-grp="pgt-days">
+        <span class="pass-inv-num" data-n>&ndash;</span>
+        <span class="pass-inv-name">UP PGT English MCQ days</span>
+        <span class="pass-inv-q" data-q></span>
+      </a>
+      <a class="pass-inv-card" href="/exams/net/english-pyqs/" data-grp="net-pyq">
+        <span class="pass-inv-num" data-n>&ndash;</span>
+        <span class="pass-inv-name">UGC NET English previous-year papers</span>
+        <span class="pass-inv-q" data-q></span>
+      </a>
+      <a class="pass-inv-card" href="/quizzes/mcq/" data-grp="lit-sets">
+        <span class="pass-inv-num" data-n>&ndash;</span>
+        <span class="pass-inv-name">English Literature MCQ practice sets</span>
+        <span class="pass-inv-q" data-q></span>
+      </a>
+    </div>
+    <p class="small muted" id="passInvNote">Open any card to see the tests on that page.</p>
+  </div>
+</section>
+<section class="pass-sec">
+  <div class="wrap pass-faq">
+    <div class="pass-sec-head">
+      <p class="eyebrow">Questions</p>
+      <h2>Before you pay</h2>
+    </div>
+    <details><summary>How long does the pass last?</summary><p>Each period is <span data-plan-days>30</span> days. You can buy several periods at once, and the total is shown before you pay.</p></details>
+    <details><summary>Does it renew on its own?</summary><p>No. The pass ends when its days are over, and you are never charged again unless you buy again.</p></details>
+    <details><summary>What if I buy again while my pass is running?</summary><p>The new days start when your current pass ends, so you lose no day.</p></details>
+    <details><summary>Will tests added later be included?</summary><p>Yes. Any test that needs the pass opens for you while your pass runs, including tests published after you pay.</p></details>
+    <details><summary>Can I get a refund?</summary><p>If you have not opened any paid test, ask within 24 hours of paying for a full refund. Failed, wrongly taken and double payments are always returned. The full rules are in the <a href="/refund-policy/">Refund Policy</a>.</p></details>
+    <details><summary>The money was taken but the pass did not open. What now?</summary><p>Wait a few minutes and open this page again: the pass usually opens on its own. If it still has not, write from the <a href="/contact/">Contact page</a> with the date of the payment, and it will be opened or the money returned.</p></details>
+    <details><summary>Do I lose my progress if my pass ends?</summary><p>No. Your answers, results and dashboard stay with your account.</p></details>
+  </div>
+</section>
+<section class="pass-sec pass-sec-tint pass-sec-last">
+  <div class="wrap">
+    <div class="pass-sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps to start</h2>
+    </div>
+    <ol class="pass-steps">
+      <li><span class="pass-step-n">1</span><h3>Log in</h3><p>Use your free AK Explained account, or make one in a minute.</p></li>
+      <li><span class="pass-step-n">2</span><h3>Choose and pay</h3><p>Pick how many days, add a promo code if you have one, and pay with Razorpay.</p></li>
+      <li><span class="pass-step-n">3</span><h3>Start practising</h3><p>Every paid test opens at once. Your pass dates are shown on this page.</p></li>
+    </ol>
+    <p class="pass-steps-cta"><a class="btn" href="#passCard">See the price and get the pass</a></p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/pass.js" defer></script>
+</body>
+</html>
