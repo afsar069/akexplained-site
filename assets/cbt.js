@@ -248,7 +248,7 @@
     return whenAuth().then(function (a) {
       if (!a || !a.configured || !a.client) return { checked: false };
       return a.client.from('paper_catalog')
-        .select('set_id,title,question_count').eq('set_id', sid).limit(1)
+        .select('set_id,title,question_count,access').eq('set_id', sid).limit(1)
         .then(function (res) {
           if (res.error) return { checked: false };
           return { checked: true, row: (res.data && res.data[0]) || null };
@@ -282,7 +282,10 @@
   }
 
   /* Live row mila: upar ke banner me sahi ginti dikhao, taaki build-time ki ginti galat ho to bhi sach rahe. */
+  /* Catalog batata hai paper login hai ya paid (rule 22): screens ke shabd isi se. */
+  var CAT_PAID = false;
   function applyCatalogMeta(row) {
+    if (row && row.access === 'paid') CAT_PAID = true;
     if (!row || root.getAttribute('data-mode') === 'review') return;
     var qn = parseInt(row.question_count, 10);
     if (!(qn > 0)) return;
@@ -292,9 +295,12 @@
        live catalog se aata hai. "Day 13" jaisa naam dohrane ka koi fayda nahi, to use chhod do. */
     var dayTitle = root.getAttribute('data-day-title') || dayTitleFrom(row);
     if (EXAM_DAY && dayTitle) {
-      lede.textContent = dayTitle + ' · ' + qn + ' ' + (root.getAttribute('data-day-level-label') || '') + ' questions · Free login required.';
+      lede.textContent = dayTitle + ' · ' + qn + ' ' + (root.getAttribute('data-day-level-label') || '') + ' questions · ' +
+        (CAT_PAID ? 'All Access pass required.' : 'Free login required.');
     } else {
-      lede.textContent = qn + ' questions. Log in with a free account to take this ' + (PYQ ? 'paper.' : EXAM_MOCK ? 'test.' : 'set.');
+      lede.textContent = qn + ' questions. ' + (CAT_PAID
+        ? 'This ' + (PYQ ? 'paper' : EXAM_MOCK ? 'test' : 'set') + ' needs the All Access pass.'
+        : 'Log in with a free account to take this ' + (PYQ ? 'paper.' : EXAM_MOCK ? 'test.' : 'set.'));
     }
   }
 
@@ -410,11 +416,15 @@
      ?next= se isi test par wapas aate hain (login.js wapas bhejta hai). */
   function needLogin() {
     var back = location.pathname + location.search;
+    var thing = PYQ ? 'paper' : EXAM_MOCK ? 'mock test' : 'set';
+    var why = CAT_PAID
+      ? 'This ' + thing + ' needs the All Access pass. Log in first; then you can open it with your pass, or get one. '
+      : (PYQ ? 'This paper is for students with a free account. ' : EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
+        'Log in, or create an account, to open it.';
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>Log in to take this test</h1>' +
-        '<p class="lede">' + (PYQ ? 'This paper is for students with a free account. ' : EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
-        'Log in, or create an account, to open it.</p>' +
+        '<p class="lede">' + why + '</p>' +
         '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
         '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
       '</div>';

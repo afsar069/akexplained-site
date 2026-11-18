@@ -517,6 +517,75 @@
       });
     });
 
+
+    /* -- free passes given by an admin (owner, 2026-11-18) -- */
+    var gSel = el('admGiftStudent'), gForm = el('admGiftForm'), gErr = el('admGiftError'), gOk = el('admGiftOk'), gBox = el('admGifts');
+    var gNames = {};
+    readAll(ctx.client, 'profiles', 'id, display_name').then(function (rows) {
+      rows = rows.slice().sort(function (a, b) { return String(a.display_name || '').localeCompare(String(b.display_name || '')); });
+      rows.forEach(function (r) { gNames[r.id] = r.display_name; });
+      gSel.innerHTML = '<option value="">Choose a student…</option>' + rows.map(function (r) {
+        return '<option value="' + esc(r.id) + '">' + esc(r.display_name || '(no name)') + '</option>';
+      }).join('');
+      loadGifts();
+    }).catch(function (e) { gSel.innerHTML = '<option value="">Could not load students</option>'; msg(gErr, 'Could not load the students: ' + e.message); });
+
+    function loadGifts() {
+      ctx.client.from('passes').select('id, user_id, starts_at, ends_at, note, created_at')
+        .eq('source', 'admin').order('created_at', { ascending: false }).limit(200)
+        .then(function (res) {
+          if (res.error) { gBox.innerHTML = '<p class="admerr">Could not load: ' + esc(res.error.message) + '</p>'; return; }
+          var rows = res.data || [];
+          if (!rows.length) { gBox.innerHTML = '<p class="small">None yet.</p>'; return; }
+          var now = Date.now();
+          gBox.innerHTML = '<table class="admtable"><thead><tr><th>Student</th><th>From</th><th>Until</th><th>Status</th><th>Change</th></tr></thead><tbody>' +
+            rows.map(function (p) {
+              var running = new Date(p.ends_at).getTime() > now;
+              return '<tr><td>' + esc(gNames[p.user_id] || 'Student') + (p.note ? '<span class="admsub">' + esc(p.note) + '</span>' : '') + '</td>' +
+                '<td>' + esc(niceDate(p.starts_at)) + '</td><td>' + esc(niceDate(p.ends_at)) + '</td>' +
+                '<td><span class="admtag ' + (running ? 'is-live' : 'is-draft') + '">' + (running ? 'Open' : 'Ended') + '</span></td>' +
+                '<td>' + (running ? '<button class="btn alt admbtn" data-stop="' + esc(p.id) + '" data-start="' + esc(p.starts_at) + '">Stop now</button>' : '') + '</td></tr>';
+            }).join('') + '</tbody></table>';
+        });
+    }
+    gBox.addEventListener('click', function (ev) {
+      var b = ev.target.closest ? ev.target.closest('[data-stop]') : null;
+      if (!b) return;
+      if (!window.confirm('Stop this free pass now? The student will lose access to paid tests at once (unless they have another pass).')) return;
+      b.disabled = true;
+      var start = new Date(b.getAttribute('data-start')).getTime();
+      var end = new Date(Math.max(start, Date.now())).toISOString();
+      ctx.client.from('passes').update({ ends_at: end }).eq('id', b.getAttribute('data-stop')).then(function (res) {
+        if (res.error) { b.disabled = false; alert('Could not stop it: ' + res.error.message); return; }
+        loadGifts();
+      });
+    });
+    gForm.addEventListener('submit', function (ev) {
+      ev.preventDefault(); msg(gErr, ''); msg(gOk, '');
+      var uid = gSel.value;
+      var days = parseInt(el('admGiftDays').value, 10);
+      if (!uid) { msg(gErr, 'Choose a student.'); return; }
+      if (!(days >= 1 && days <= 3650)) { msg(gErr, 'Days must be from 1 to 3650.'); return; }
+      var btn = gForm.querySelector('button[type=submit]'); btn.disabled = true;
+      // Naye din purane pass ke khatam hone ke baad se (koi din bekar na jaye).
+      ctx.client.from('passes').select('ends_at').eq('user_id', uid).order('ends_at', { ascending: false }).limit(1)
+        .then(function (r) {
+          var last = r.data && r.data[0] ? new Date(r.data[0].ends_at).getTime() : 0;
+          var start = new Date(Math.max(Date.now(), last));
+          var end = new Date(start.getTime() + days * 86400000);
+          return ctx.client.from('passes').insert({
+            user_id: uid, plan_id: PLAN, source: 'admin', starts_at: start.toISOString(), ends_at: end.toISOString(),
+            note: el('admGiftNote').value.trim()
+          });
+        }).then(function (res) {
+          btn.disabled = false;
+          if (res.error) { msg(gErr, 'Could not give the pass: ' + res.error.message); return; }
+          msg(gOk, 'Done. ' + (gNames[uid] || 'The student') + ' now has a free pass for ' + days + ' days.');
+          el('admGiftNote').value = '';
+          loadGifts();
+        }).catch(function (e) { btn.disabled = false; msg(gErr, 'Could not give the pass: ' + e.message); });
+    });
+
     /* -- orders -- */
     var oBox = el('admOrders');
     function loadOrders() {

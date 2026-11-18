@@ -6,7 +6,7 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
-## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, on the branch, NOT merged; DB + functions live but switched off)
+## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, MERGED to main (PR #153) and live, switched off: no price, not on sale, no paper paid)
 - **Owner's decisions:** one pass for now ("All Access": every paid mock test); 30 days per period, 1 to 6 periods at a time;
   the price lives in the database and the owner sets it on `/admin/payments/` (no price chosen yet, pass is **not on sale**);
   all **login** mock tests become paid at launch, the free ones stay free; refund rule = `/refund-policy/` (no refund after a paid
@@ -22,6 +22,14 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
   footer + sitemap links. Tested: migration twice on scratch Postgres (quotes, promos, stacking, double payment, refund ends the
   pass, RLS for student / admin / anon, paid re-upload refused) and 30 Playwright checks (guest / student / free promo / paywall /
   login test unchanged / admin page / 375px).
+- **Done with the owner, 2026-11-18:** Razorpay account + KYC done. Test Mode keys + Test webhook set, one Test Mode
+  payment of Rs 25 went through end to end (webhook granted the pass, the browser verify came after and made no second pass;
+  that order carries the note "Razorpay Test Mode payment"). Then **Live keys** (`rzp_live_`) replaced the test keys in Supabase
+  and a **Live webhook** with its own secret was added (same URL, same 4 events). Plan: price Rs 25 (a test price), **not on sale**.
+  No real payment has been made yet.
+- **LAUNCHED 2026-11-18** (owner: "launch karo"): `paidLayer.live = true`, About / Privacy / Terms / Anglo-Norman registry
+  text and the CBT screens worded for the pass, every login paper made paid by the one-time UPDATE, and **Give a free pass**
+  added to `/admin/payments/`. Still the owner's: the real price, On sale, and any launch promo code.
 - **Launch steps (in order, each needs the owner):** 1. owner makes a Razorpay account; 2. owner adds `RAZORPAY_KEY_ID`,
   `RAZORPAY_KEY_SECRET` (Test Mode) and `RAZORPAY_WEBHOOK_SECRET` in Supabase → Edge Functions → Secrets, and the webhook URL
   `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, order.paid,
