@@ -18,7 +18,7 @@ pgt_resources: true
   <header class="pgt-practice-intro">
     <div>
       <h2 id="pgt-practice-index-title">Choose your practice day</h2>
-      <p>Days 1 to {{ pgtMcqSeries.freeMax }} are open without login. The later days open with a free login as each one is published.</p>
+      <p>Days 1 to {{ pgtMcqSeries.freeMax }} are open without login. {% if paidLayer.live %}The later days open with the <a href="/pass/">All Access pass</a> as each one is published.{% else %}The later days open with a free login as each one is published.{% endif %}</p>
     </div>
     <span>{{ pgtMcqDays.length }} days</span>
   </header>

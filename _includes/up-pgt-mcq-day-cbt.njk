@@ -9,7 +9,7 @@
 {% set known = day.title %}
 {% set gated = day.managed %}
 {% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}{% if known %}: {{ day.title }}{% endif %}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
-{% set pageDescription %}{% if known %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if gated %}A free login is required.{% else %}Free for everyone, with no login required.{% endif %}{% else %}Day {{ day.number }} of the UP PGT English MCQ practice days. Log in with a free account to take it once it is open.{% endif %}{% endset %}
+{% set pageDescription %}{% if known %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if gated %}{% if paidLayer.live %}The All Access pass is required.{% else %}A free login is required.{% endif %}{% else %}Free for everyone, with no login required.{% endif %}{% else %}Day {{ day.number }} of the UP PGT English MCQ practice days. Log in with a free account to take it once it is open.{% endif %}{% endset %}
 {% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/{% if examReview %}review/{% endif %}{% endset %}
 {% if examReview or not day.liveAtBuild %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
@@ -21,7 +21,7 @@
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP PGT English</p>
     <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Day {{ day.number }}{% endif %}</h1>
-    <p class="lede" id="cbtLede">{% if examReview %}{% if known %}{{ day.title }} · {% endif %}Your answers, the correct answers, and explanations.{% elif not known %}Log in with a free account to take this set.{% elif gated %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free login required.{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
+    <p class="lede" id="cbtLede">{% if examReview %}{% if known %}{{ day.title }} · {% endif %}Your answers, the correct answers, and explanations.{% elif not known %}{% if paidLayer.live %}This set needs the All Access pass.{% else %}Log in with a free account to take this set.{% endif %}{% elif gated %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · {% if paidLayer.live %}All Access pass required.{% else %}Free login required.{% endif %}{% else %}{{ day.title }} · {{ day.questionCount }} {{ day.levelName | lower }} questions · Free · No login required.{% endif %}</p>
   </div>
 </section>
 <div class="cbt-printhead" aria-hidden="true">

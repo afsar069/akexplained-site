@@ -428,7 +428,7 @@
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>This ' + thing + ' needs the All Access pass</h1>' +
-        '<p class="lede">One pass opens every paid mock test on the site for as long as it runs. ' +
+        '<p class="lede">One pass opens every paid test on the site for as long as it runs: the mock tests, the UP PGT MCQ days and the UGC NET previous-year papers that need it. ' +
         'If your pass has ended, you can buy more days.</p>' +
         '<p><a class="btn" href="/pass/?next=' + encodeURIComponent(back) + '">See the pass and the price</a></p>' +
         '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +

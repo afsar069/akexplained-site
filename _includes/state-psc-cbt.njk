@@ -19,7 +19,7 @@
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; UP Assistant Professor</p>
     <h1 id="cbtTitle">{% if examReview %}Review your answers{% else %}Mock Test {{ n }}{% endif %}</h1>
-    <p class="lede" id="cbtLede">{% if examReview %}Your answer, the right one, and the explanation for each question.{% else %}{{ qcount }} questions. Log in with a free account to take this test.{% endif %}</p>
+    <p class="lede" id="cbtLede">{% if examReview %}Your answer, the right one, and the explanation for each question.{% else %}{{ qcount }} questions. {% if paidLayer.live %}This test needs the All Access pass.{% else %}Log in with a free account to take this test.{% endif %}{% endif %}</p>
   </div>
 </section>
 <div class="cbt-printhead" aria-hidden="true">

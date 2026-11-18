@@ -36,7 +36,7 @@ module.exports = function () {
       icon: "target",
       blurb: "Full-length UP PGT English mock tests, with a clock and a full review.",
       meta: pgtFree + " free tests" + (pgtSame ? " · " + pgtCounts[0] + " questions each" : "") +
-        (pgtLogin ? " · more with a free login" : ""),
+        (pgtLogin ? (require("./paidLayer.js").live ? " · more with the All Access pass" : " · more with a free login") : ""),
       href: "/exams/pgt/up-pgt/mock-tests/",
       live: true
     },
@@ -45,7 +45,7 @@ module.exports = function () {
       title: "UP Assistant Professor English",
       icon: "layers",
       blurb: "Paper 2 English Literature mock tests, with a clock and a full review.",
-      meta: (apCounts.length === 1 ? apCounts[0] + " questions each · " : "") + "Log in to take them",
+      meta: (apCounts.length === 1 ? apCounts[0] + " questions each · " : "") + (require("./paidLayer.js").live ? "Needs the All Access pass" : "Log in to take them"),
       href: "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/",
       live: true
     },

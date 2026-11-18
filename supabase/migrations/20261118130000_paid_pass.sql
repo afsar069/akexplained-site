@@ -46,7 +46,7 @@ comment on table public.pass_plans is
   'What can be bought. price_paise is per unit (one unit = days_per_unit days). A plan can be bought only while active, and it can be active only with a price. Edited by an admin on /admin/payments/.';
 
 insert into public.pass_plans (id, title, description, price_paise, days_per_unit, max_units, active)
-values ('all-access', 'All Access pass', 'Every paid mock test on the site, for as long as the pass runs.', null, 30, 6, false)
+values ('all-access', 'All Access pass', 'Every paid test on the site (mock tests, UP PGT MCQ days and UGC NET previous-year papers), for as long as the pass runs.', null, 30, 6, false)
 on conflict (id) do nothing;
 
 alter table public.pass_plans enable row level security;

@@ -27,10 +27,12 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
   `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, order.paid,
   payment.failed, refund.processed in Razorpay; 3. owner sets a price and "On sale" on `/admin/payments/`, test payment in Test
   Mode; 4. merge (owner's word) so Razorpay can review the live pages; 5. KYC → live keys replace test keys; 6. with the owner's
-  word, one UPDATE makes the login mock tests paid (`update mcq_papers set access='paid' where set_id like 'up-pgt-mock-test-%'
-  or set_id like 'up-ap-p2-mock-test-%'`) and `paperDestinations.js` gets `access: 'paid'` on those two destinations.
-- **Open questions for the owner:** the price; a launch promo for students who used these tests free; whether the UGC NET login
-  PYQs and login MCQ days/sets stay login (they are not mock tests, so they stay login unless the owner says otherwise); the footer
+  word, the one-time UPDATE in rule 22 makes every login paper of an exam paid (mock tests, UP PGT MCQ days 11+, UGC NET login
+  PYQs — 31 papers on 2026-11-18; literature login sets stay login) and `_data/paidLayer.js` goes to `live: true` in the same
+  commit. New uploads for exams are saved paid automatically once the pass is On sale.
+- **Owner, 2026-11-18 (second message):** the UGC NET login PYQs and the UP PGT login MCQ days are paid too; the dashboard stays free.
+- **Open questions for the owner:** the price; a launch promo for students who used these tests free; the English Literature
+  login practice sets (not asked about; they stay login); the footer
   line "free for every student" (most of the site is still free — keep or reword?). Deleting an account also deletes its order
   records (rule 10 cascade); Razorpay keeps its own payment record.
 

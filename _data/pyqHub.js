@@ -10,9 +10,11 @@ module.exports = function () {
   const n = net.length;
   // How many need a login, so the card says it plainly (the free 2012 papers are open to all).
   const loginN = net.filter(function (p) { return p.access === "login"; }).length;
+  const paid = require("./paidLayer.js").live;            // rule 22: launch switch
+  const gate = paid ? "the All Access pass" : "a free login";
   const access = loginN === 0 ? "Free, no login"
-    : loginN >= net.length - loginN ? "Some free, most need a free login"
-    : "Free, some need a free login";
+    : loginN >= net.length - loginN ? "Some free, most need " + gate
+    : "Free, some need " + gate;
   return [
     {
       slug: "net",

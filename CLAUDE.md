@@ -798,8 +798,18 @@ no Razorpay keys). Launch steps and open questions: `docs/accounts-status.md`.
 - **Owner's decisions.** One pass for now, "All Access": one payment opens every paid mock test. 30 days per period,
   1 to 6 periods at a time (both editable). The **price is not in code**: it is `pass_plans.price_paise`, set by the owner on
   `/admin/payments/`; never invent one. Later each course gets its own plan (one more `pass_plans` row; the paid read policy
-  then needs to check the plan, today any running pass opens every paid paper). Only the **login mock tests** become paid; free
-  files stay free for good (they are public in git). Refund rule (`/refund-policy/`, the owner's words): no refund after a paid
+  then needs to check the plan, today any running pass opens every paid paper). **What becomes paid** (owner, 2026-11-18,
+  two messages): every **login paper that belongs to an exam** — the UP PGT and UP AP login mock tests, the UP PGT login MCQ
+  days (11 onward) and the UGC NET login PYQs; i.e. `paper_catalog.exam_id is not null`. The English Literature login practice
+  sets (`<age>-set-N`, no exam) stay login. Free files stay free for good (they are public in git). **The dashboard stays free**
+  (owner): it reads only the student's own `attempts` / `quiz_runs` and the public catalog, never a paid paper, so a student
+  without a pass still sees all their progress.
+- **Launch switch `_data/paidLayer.js` (`live`).** `false` today: the hub and test pages of those series say "free login".
+  `true` on launch day, in the same commit as the one-time UPDATE: the same pages say "needs the All Access pass" (NET PYQ hub,
+  UP PGT MCQ days and mock tests hubs, UP AP mock tests hub, the four CBT includes, the `/quizzes/pyq/` and
+  `/quizzes/mock-tests/` cards). Launch UPDATE (owner's word first): `update public.mcq_papers p set access = 'paid' where
+  access = 'login' and exists (select 1 from public.paper_catalog c where c.set_id = p.set_id and c.exam_id is not null);`
+  From the moment the pass is **On sale**, the upload page saves a new paper for an exam destination as paid by itself. Refund rule (`/refund-policy/`, the owner's words): no refund after a paid
   test is opened; 100% back if asked within 24 hours and no paid test opened; failed, wrongly taken and double payments are
   returned; an approved refund is sent within 72 hours. No automatic renewal.
 - **Database** (`20261118130000_paid_pass.sql`): `pass_plans` (public read of active plans, admin update), `promo_codes`

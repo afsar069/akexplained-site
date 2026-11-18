@@ -198,6 +198,7 @@
     try { plan = JSON.parse(el('upPlan').textContent).sets || {}; } catch (e) { plan = {}; }
 
     var client = null;      // Supabase client, once we know the person is an admin
+    var passOnSale = false; // the All Access pass is on sale -> new exam papers are paid (rule 22)
     var papers = [];        // one per chosen file: { name, body }
     var titleTouched = false;
 
@@ -323,6 +324,11 @@
           .then(function (res) {
             if (res.error || !res.data) { notice.textContent = 'You are not allowed to use this page.'; return; }
             client = auth.client;
+            // Paid layer (owner, 2026-11-18): once the pass is on sale, a new paper for an exam (mock tests,
+            // UP PGT MCQ days, UGC NET PYQs) is saved as paid. English Literature practice sets stay login.
+            client.from('pass_plans').select('id').eq('active', true).limit(1).then(function (r) {
+              passOnSale = !r.error && !!(r.data && r.data.length);
+            }, function () {});
             notice.textContent = 'Signed in as the owner. Choose a question file to begin.';
             show(body);
           });
@@ -583,7 +589,7 @@
           : { k: 'ok', t: 'Saved as a Draft. Students cannot see it yet. Make it Live on the All papers page when you are ready.' };
       }
       if (warn) return { k: 'warn', t: 'It is Live, but check the points below.' };
-      return { k: 'ok', t: 'It is Live. Logged-in students can open it now. No rebuild is needed.' };
+      return { k: 'ok', t: 'It is Live. Students can open it now (a paid paper: those with the All Access pass). No rebuild is needed.' };
     }
 
     function claudeText(ctx, verdict, items) {
@@ -678,9 +684,10 @@
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
         var newRev = (fileRev >= 1) ? fileRev : highest + 1;
         // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
-        // (the database refuses anything else); a new paper takes its destination's access (login unless
-        // the destination says "paid").
-        var access = existing.some(function (r) { return r.access === 'paid'; }) ? 'paid' : (dest.access === 'paid' ? 'paid' : 'login');
+        // (the database refuses anything else). A new paper is paid when its destination belongs to an exam
+        // and the pass is on sale; an English Literature practice set (no examId) stays login.
+        var access = (existing.some(function (r) { return r.access === 'paid'; }) ||
+                      dest.access === 'paid' || (passOnSale && dest.examId)) ? 'paid' : 'login';
         if (fileRev >= 1 && same.length && !(newRev > highest)) {
           var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
@@ -739,7 +746,7 @@
             goButton.textContent = 'Checking the site…';
             var next = allMatch
               ? Promise.all([finalChecks(ctx), similarCheck(setId)]).then(function (got) {
-                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + '.' }], got[1], got[0]);
+                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + (access === 'paid' ? ', a paid paper: students need the All Access pass to open it.' : ', a login paper: any logged-in student can open it.') }], got[1], got[0]);
                 })
               : Promise.resolve(items);
             return next.then(function (all) {
