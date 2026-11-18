@@ -144,7 +144,8 @@
         });
         document.querySelectorAll('[data-paid-total-papers]').forEach(function (e) { e.textContent = num(papers); });
         document.querySelectorAll('[data-paid-total-q]').forEach(function (e) { e.textContent = num(qs); });
-        document.querySelectorAll('[data-paid-total-q-line]').forEach(function (e) { e.hidden = !qs; });
+        var series = Object.keys(tally).filter(function (k) { return tally[k].n > 0; }).length;
+        document.querySelectorAll('[data-paid-series]').forEach(function (e) { e.textContent = series; });
       })
       .catch(function () {
         var note = el('passInvNote');

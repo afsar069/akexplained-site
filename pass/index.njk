@@ -30,19 +30,24 @@ eleventyExcludeFromCollections: true
 <section class="pass-hero">
   <div class="wrap pass-hero-grid">
     <div class="pass-hero-copy">
-      <p class="eyebrow">All Access pass</p>
+      <p class="pass-badge">All Access pass</p>
       <h1>Every test on AK Explained, with one pass</h1>
       <p class="pass-hero-lede">Mock tests, MCQ practice sets and previous-year papers for UP PGT, UP Assistant Professor and UGC NET English, all opened by a single payment. Everything that is free today stays free.</p>
       <ul class="pass-ticks">
-        <li><span data-paid-total-papers>All</span> paid tests open the moment you pay<span class="pass-tick-sub" data-paid-total-q-line hidden><span data-paid-total-q></span> questions, with answers and explanations</span></li>
+        <li>Every paid test opens the moment you pay, with answers and explanations</li>
         <li>New tests are added to the pass as they are published</li>
         <li>No automatic renewal: the pass simply ends when its days are over</li>
         <li>Your dashboard and progress stay free, with or without a pass</li>
       </ul>
+      <div class="pass-stats" aria-label="The pass at a glance">
+        <div><b data-paid-total-papers>&ndash;</b><span>paid tests</span></div>
+        <div><b data-paid-total-q>&ndash;</b><span>questions</span></div>
+        <div><b data-paid-series>&ndash;</b><span>test series</span></div>
+      </div>
       <p class="pass-trust">Secure payment by Razorpay &middot; UPI, cards, netbanking and wallets</p>
     </div>
 
-    <aside class="pass-buy" aria-labelledby="passTitle">
+    <aside class="pass-buy" id="passCard" aria-labelledby="passTitle">
       <div id="passNotice" class="authnotice" role="status">Loading the pass&hellip;</div>
       <section id="passMine" class="pass-mine" hidden></section>
 
@@ -82,7 +87,37 @@ eleventyExcludeFromCollections: true
   </div>
 </section>
 
+
+
+
+
 <section class="pass-sec">
+  <div class="wrap">
+    <div class="pass-sec-head">
+      <p class="eyebrow">Free or with the pass</p>
+      <h2>What you get, side by side</h2>
+    </div>
+    <div class="pass-cmp-wrap">
+      <table class="pass-cmp">
+        <thead>
+          <tr><th scope="col">What</th><th scope="col">Free</th><th scope="col">With the pass</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Articles and notes on English literature</th><td class="y" data-label="Free">All</td><td class="y" data-label="With the pass">All</td></tr>
+          <tr><th scope="row">Daily quiz</th><td class="y" data-label="Free">{{ f.daily.ages }} ages, {{ f.daily.questions }} questions</td><td class="y" data-label="With the pass">The same</td></tr>
+          <tr><th scope="row">English Literature MCQ practice sets</th><td class="y" data-label="Free">{{ f.sets.count }} sets, {{ f.sets.questions }} questions</td><td class="y" data-label="With the pass">The free sets, plus <span data-cmp="lit-sets">the paid sets</span></td></tr>
+          <tr><th scope="row">UP PGT English mock tests</th><td class="y" data-label="Free">{{ f.pgtMock.count }} tests, {{ f.pgtMock.questions }} questions</td><td class="y" data-label="With the pass">The free tests, plus <span data-cmp="pgt-mock">the paid tests</span></td></tr>
+          <tr><th scope="row">UP PGT English MCQ days</th><td class="y" data-label="Free">{{ f.pgtDays.count }} days, {{ f.pgtDays.questions }} questions</td><td class="y" data-label="With the pass">The free days, plus <span data-cmp="pgt-days">the paid days</span></td></tr>
+          <tr><th scope="row">UP Assistant Professor Paper 2 mock tests</th><td class="n" data-label="Free">None</td><td class="y" data-label="With the pass"><span data-cmp="ap-mock">All the tests</span></td></tr>
+          <tr><th scope="row">UGC NET English previous-year papers</th><td class="y" data-label="Free">{{ f.netPyq.count }} papers ({{ f.netPyq.years }}), {{ f.netPyq.questions }} questions</td><td class="y" data-label="With the pass">The free papers, plus <span data-cmp="net-pyq">the paid papers</span></td></tr>
+          <tr><th scope="row">Answers, explanations and review after each test</th><td class="y" data-label="Free">On every free test</td><td class="y" data-label="With the pass">On every test</td></tr>
+          <tr><th scope="row">Dashboard, progress and top students list</th><td class="y" data-label="Free">Yes, with a free account</td><td class="y" data-label="With the pass">Yes</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+<section class="pass-sec pass-sec-tint">
   <div class="wrap">
     <div class="pass-sec-head">
       <p class="eyebrow">Inside the pass</p>
@@ -119,49 +154,7 @@ eleventyExcludeFromCollections: true
     <p class="small muted" id="passInvNote">Open any card to see the tests on that page.</p>
   </div>
 </section>
-
-<section class="pass-sec pass-sec-tint">
-  <div class="wrap">
-    <div class="pass-sec-head">
-      <p class="eyebrow">Free or with the pass</p>
-      <h2>What you get, side by side</h2>
-    </div>
-    <div class="pass-cmp-wrap">
-      <table class="pass-cmp">
-        <thead>
-          <tr><th scope="col">What</th><th scope="col">Free</th><th scope="col">With the pass</th></tr>
-        </thead>
-        <tbody>
-          <tr><th scope="row">Articles and notes on English literature</th><td class="y" data-label="Free">All</td><td class="y" data-label="With the pass">All</td></tr>
-          <tr><th scope="row">Daily quiz</th><td class="y" data-label="Free">{{ f.daily.ages }} ages, {{ f.daily.questions }} questions</td><td class="y" data-label="With the pass">The same</td></tr>
-          <tr><th scope="row">English Literature MCQ practice sets</th><td class="y" data-label="Free">{{ f.sets.count }} sets, {{ f.sets.questions }} questions</td><td class="y" data-label="With the pass">The free sets, plus <span data-cmp="lit-sets">the paid sets</span></td></tr>
-          <tr><th scope="row">UP PGT English mock tests</th><td class="y" data-label="Free">{{ f.pgtMock.count }} tests, {{ f.pgtMock.questions }} questions</td><td class="y" data-label="With the pass">The free tests, plus <span data-cmp="pgt-mock">the paid tests</span></td></tr>
-          <tr><th scope="row">UP PGT English MCQ days</th><td class="y" data-label="Free">{{ f.pgtDays.count }} days, {{ f.pgtDays.questions }} questions</td><td class="y" data-label="With the pass">The free days, plus <span data-cmp="pgt-days">the paid days</span></td></tr>
-          <tr><th scope="row">UP Assistant Professor Paper 2 mock tests</th><td class="n" data-label="Free">None</td><td class="y" data-label="With the pass"><span data-cmp="ap-mock">All the tests</span></td></tr>
-          <tr><th scope="row">UGC NET English previous-year papers</th><td class="y" data-label="Free">{{ f.netPyq.count }} papers ({{ f.netPyq.years }}), {{ f.netPyq.questions }} questions</td><td class="y" data-label="With the pass">The free papers, plus <span data-cmp="net-pyq">the paid papers</span></td></tr>
-          <tr><th scope="row">Answers, explanations and review after each test</th><td class="y" data-label="Free">On every free test</td><td class="y" data-label="With the pass">On every test</td></tr>
-          <tr><th scope="row">Dashboard, progress and top students list</th><td class="y" data-label="Free">Yes, with a free account</td><td class="y" data-label="With the pass">Yes</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
 <section class="pass-sec">
-  <div class="wrap">
-    <div class="pass-sec-head">
-      <p class="eyebrow">How it works</p>
-      <h2>Three steps</h2>
-    </div>
-    <ol class="pass-steps">
-      <li><span class="pass-step-n">1</span><h3>Log in</h3><p>Use your free AK Explained account, or make one in a minute.</p></li>
-      <li><span class="pass-step-n">2</span><h3>Choose and pay</h3><p>Pick how many days, add a promo code if you have one, and pay with Razorpay.</p></li>
-      <li><span class="pass-step-n">3</span><h3>Start practising</h3><p>Every paid test opens at once. Your pass dates are shown on this page.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section class="pass-sec pass-sec-tint">
   <div class="wrap pass-faq">
     <div class="pass-sec-head">
       <p class="eyebrow">Questions</p>
@@ -174,6 +167,20 @@ eleventyExcludeFromCollections: true
     <details><summary>Can I get a refund?</summary><p>If you have not opened any paid test, ask within 24 hours of paying for a full refund. Failed, wrongly taken and double payments are always returned. The full rules are in the <a href="/refund-policy/">Refund Policy</a>.</p></details>
     <details><summary>The money was taken but the pass did not open. What now?</summary><p>Wait a few minutes and open this page again: the pass usually opens on its own. If it still has not, write from the <a href="/contact/">Contact page</a> with the date of the payment, and it will be opened or the money returned.</p></details>
     <details><summary>Do I lose my progress if my pass ends?</summary><p>No. Your answers, results and dashboard stay with your account.</p></details>
+  </div>
+</section>
+<section class="pass-sec pass-sec-tint pass-sec-last">
+  <div class="wrap">
+    <div class="pass-sec-head">
+      <p class="eyebrow">How it works</p>
+      <h2>Three steps to start</h2>
+    </div>
+    <ol class="pass-steps">
+      <li><span class="pass-step-n">1</span><h3>Log in</h3><p>Use your free AK Explained account, or make one in a minute.</p></li>
+      <li><span class="pass-step-n">2</span><h3>Choose and pay</h3><p>Pick how many days, add a promo code if you have one, and pay with Razorpay.</p></li>
+      <li><span class="pass-step-n">3</span><h3>Start practising</h3><p>Every paid test opens at once. Your pass dates are shown on this page.</p></li>
+    </ol>
+    <p class="pass-steps-cta"><a class="btn" href="#passCard">See the price and get the pass</a></p>
   </div>
 </section>
 

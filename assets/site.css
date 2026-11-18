@@ -3961,21 +3961,34 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 
 /* /pass/ — redesigned 2026-11-18: hero + buy card, live inventory, free-vs-pass table, steps, FAQ. */
 .passpage{padding-bottom:10px}
-.pass-hero{background:linear-gradient(180deg,var(--cream),#fff);border-bottom:1px solid var(--card-line);padding:34px 0 40px}
-.pass-hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:40px;align-items:start}
-.pass-hero h1{font-family:var(--serif);font-size:clamp(1.7rem,3.4vw,2.45rem);line-height:1.18;color:var(--ink);margin:0 0 14px}
-.pass-hero-lede{font-size:1.07rem;color:var(--body);margin:0 0 20px;max-width:56ch}
-.pass-ticks{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:11px}
-.pass-ticks li{position:relative;padding-left:32px;color:var(--ink);font-weight:500}
+.pass-hero{position:relative;overflow:hidden;color:#fff;padding:44px 0 52px;
+  background:radial-gradient(900px 420px at 85% -10%,rgba(185,137,47,.35),transparent 60%),
+             radial-gradient(700px 380px at -10% 110%,rgba(20,150,138,.45),transparent 60%),
+             linear-gradient(135deg,#16304A 0%,#123F52 45%,#0F766E 100%)}
+.pass-hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.07;
+  background-image:radial-gradient(#fff 1px,transparent 1px);background-size:18px 18px}
+.pass-hero .wrap{position:relative;z-index:1}
+.pass-hero-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:44px;align-items:start}
+.pass-badge{display:inline-flex;align-items:center;gap:8px;margin:0 0 16px;padding:6px 14px;border-radius:999px;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);color:#F3D9A4;
+  font-size:.76rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+.pass-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#E3B65A;box-shadow:0 0 0 4px rgba(227,182,90,.25)}
+.pass-hero h1{font-family:var(--serif);font-size:clamp(1.85rem,3.8vw,2.75rem);line-height:1.14;color:#fff;margin:0 0 14px}
+.pass-hero-lede{font-size:1.08rem;color:rgba(255,255,255,.86);margin:0 0 22px;max-width:56ch}
+.pass-ticks{list-style:none;margin:0 0 24px;padding:0;display:grid;gap:11px;max-width:none}
+.pass-ticks li{position:relative;padding-left:32px;color:#fff;font-weight:500}
 .pass-ticks li::before{content:"";position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;
-  background:var(--teal) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.2 4.2L19 7'/%3E%3C/svg%3E") center/13px no-repeat}
-.pass-tick-sub{display:block;font-weight:400;font-size:.9rem;color:var(--body);margin-top:2px}
-.pass-trust{font-size:.88rem;color:var(--body);margin:0;display:flex;align-items:center;gap:8px}
+  background:#E3B65A url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2316304A' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.2 4.2L19 7'/%3E%3C/svg%3E") center/13px no-repeat}
+.pass-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0 0 20px;max-width:520px}
+.pass-stats div{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.22);border-radius:14px;padding:14px 14px 12px;backdrop-filter:blur(2px)}
+.pass-stats b{display:block;font-family:var(--serif);font-size:1.75rem;line-height:1.05;color:#fff}
+.pass-stats span{font-size:.82rem;color:rgba(255,255,255,.78)}
+.pass-trust{font-size:.88rem;color:rgba(255,255,255,.82);margin:0;display:flex;align-items:center;gap:8px}
 .pass-trust::before{content:"";width:16px;height:16px;flex:none;
-  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230F766E' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='10' width='16' height='11' rx='2'/%3E%3Cpath d='M8 10V7a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/contain no-repeat}
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E3B65A' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='10' width='16' height='11' rx='2'/%3E%3Cpath d='M8 10V7a4 4 0 0 1 8 0v3'/%3E%3C/svg%3E") center/contain no-repeat}
 
-.pass-buy{background:#fff;border:1px solid var(--card-line);border-top:4px solid var(--teal);border-radius:16px;
-  padding:22px 22px 18px;box-shadow:0 22px 50px -30px rgba(22,48,74,.55);position:sticky;top:90px}
+.pass-buy{background:#fff;color:var(--body);border:1px solid rgba(255,255,255,.6);border-top:5px solid #E3B65A;border-radius:18px;
+  padding:24px 24px 20px;box-shadow:0 30px 60px -28px rgba(0,0,0,.55);position:relative}
 .pass-buy h2{font-family:var(--serif);font-size:1.3rem;margin:0 0 4px;color:var(--ink)}
 .pass-buy .authnotice{margin:0 0 12px}
 .pass-mine{background:var(--teal-soft);border:1px solid #BFDCD5;border-radius:12px;padding:12px 14px;margin:0 0 16px}
@@ -4005,7 +4018,7 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 .pass-sec-head h2{font-family:var(--serif);font-size:clamp(1.35rem,2.4vw,1.75rem);color:var(--ink);margin:0 0 6px}
 .pass-sec-head p{margin:0}
 
-.pass-inv{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin:0 0 12px}
+.pass-inv{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin:0 0 12px}
 .pass-inv-card{display:flex;flex-direction:column;gap:4px;background:var(--card-paper);border:1px solid var(--card-line);
   border-radius:14px;padding:18px 18px 16px;text-decoration:none;color:var(--ink);transition:border-color .2s,transform .2s,box-shadow .2s}
 .pass-inv-card:hover{border-color:var(--teal);transform:translateY(-3px);box-shadow:0 14px 30px -22px rgba(15,118,110,.6);color:var(--ink)}
@@ -4027,7 +4040,9 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 .pass-cmp td.n::before{content:"\2013";color:var(--body)}
 .pass-cmp td.n{color:var(--body)}
 
-.pass-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.pass-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:none}
+.pass-steps-cta{margin:22px 0 0;text-align:center}
+.pass-sec-last{border-bottom:0}
 .pass-steps li{background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;padding:20px}
 .pass-step-n{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;
   background:var(--teal);color:#fff;font-weight:700;margin-bottom:10px}
@@ -4041,15 +4056,20 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 .pass-faq details[open] summary::after{content:"\2212"}
 .pass-faq details p{margin:0 0 14px;color:var(--body)}
 
+@media (max-width:1100px){
+  .pass-inv{grid-template-columns:repeat(5,minmax(170px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .pass-inv-card{scroll-snap-align:start}
+}
 @media (max-width:900px){
-  .pass-hero-grid{grid-template-columns:1fr;gap:26px}
-  .pass-buy{position:static}
+  .pass-hero-grid{grid-template-columns:1fr;gap:28px}
   .pass-steps{grid-template-columns:1fr}
 }
 @media (max-width:640px){
   .pass-sec{padding:34px 0}
-  .pass-inv{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .pass-inv{grid-template-columns:repeat(5,minmax(150px,1fr));gap:10px}
   .pass-inv-card{padding:14px}
+  .pass-stats b{font-size:1.35rem}
+  .pass-stats div{padding:11px 10px 9px}
   .pass-inv-num{font-size:1.8rem}
   .pass-cmp-wrap{border:0;background:none;overflow:visible}
   .pass-cmp{min-width:0}
