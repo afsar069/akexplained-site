@@ -13,9 +13,12 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 ## Never break these
 1. **The GitHub repo is public.** Never commit the questions of a login (or paid) MCQ set, nor any SQL that
    contains them. A file committed here is public for good, even if deleted later.
-2. **Free or login? Ask.** When question files arrive, the owner says which. If not said, ask before writing
+2. **Paid layer (rule 22, launched 2026-11-18):** everything that is not a public free file is paid; the dashboard and the
+   free files stay free. Never make a paid paper free or a free file paid without the owner's word.
+2b. **Free or login? Ask.** When question files arrive, the owner says which. If not said, ask before writing
    anything into the repo. Never assume free.
-3. **Never put the Supabase secret key** in the repo, a chat, or a file, and never ask the owner for it. The
+3. **Never put the Supabase secret key, or any Razorpay key or webhook secret,** in the repo, a chat, or a file, and never
+   ask the owner to paste one. The owner types Razorpay secrets into Supabase → Edge Functions → Secrets themselves. The
    browser uses the public (publishable) key only; row level security protects the data.
 4. **Nothing is invented**: no dates, titles, counts, prices, limits or hub texts that were not supplied or
    checked. Leave a placeholder and ask. Verify a fact on the provider's own page.

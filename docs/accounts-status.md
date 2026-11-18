@@ -4,9 +4,22 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-18 (end of the paid-layer session)._
 
-## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, MERGED to main (PR #153) and live, switched off: no price, not on sale, no paper paid)
+## START HERE — state at the end of 2026-11-18
+- **Paid layer is LAUNCHED but the pass is NOT ON SALE** (owner will tick On sale when ready). All 48 papers in
+  `mcq_papers` (64 rows) are `access = 'paid'`; a student without a running pass cannot open them. Free files, the Daily
+  quiz, articles and the dashboard are free. Plan `all-access`: Rs 25 (test price), `active = false`.
+- Razorpay: account + KYC done; **live** keys and a **live** webhook are set in Supabase secrets (test pair replaced). One
+  Test Mode payment passed end to end before the switch. No real payment has been made yet.
+- The owner can, alone: set the price and On sale, make promo codes, give a free pass (and stop it), see orders, mark a
+  refund (`/admin/payments/`). Refunds themselves are made in the Razorpay dashboard.
+- Watch out: while not on sale, a NEW upload is saved as login (open to any logged-in student), not paid. See rule 22.
+- Open questions: real price; launch promo; paid sets in a no-pass student's dashboard level pool; footer "free for every
+  student"; per-course passes later. Full rules: CLAUDE.md rule 22. Merged PRs: afsar069/akexplained-site#153 (pages,
+  switched off) and afsar069/akexplained-site#154 (launch + Give a free pass).
+
+## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18; history of how it was built and launched)
 - **Owner's decisions:** one pass for now ("All Access": every paid mock test); 30 days per period, 1 to 6 periods at a time;
   the price lives in the database and the owner sets it on `/admin/payments/` (no price chosen yet, pass is **not on sale**);
   all **login** mock tests become paid at launch, the free ones stay free; refund rule = `/refund-policy/` (no refund after a paid

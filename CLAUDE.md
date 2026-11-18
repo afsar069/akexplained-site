@@ -375,7 +375,7 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
-- **The paid layer** is built but not switched on (rule 22): the pass is not on sale and no paper is paid yet. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
+- **The paid layer** is launched (rule 22): every login paper is paid; the pass goes **On sale** only when the owner ticks it. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
   (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
@@ -444,11 +444,11 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   of a login set, and no SQL that contains its questions, is ever committed.** The set's page, title and lede
   are public; only the questions are not. A logged-in student can still copy what they see; the wall stops
   the public, not copying.
-- **paid**: BUILT (rule 22), not switched on. A paid paper is a `public.mcq_papers` row with `access = 'paid'`;
-  a student reads it only while a pass of theirs is running (`mcq_papers_paid_read`). `_data/mcqAges.js` still stops the
-  build if an MCQ registry set says `"access": "paid"` (the owner chose mock tests for paid; literature sets stay login).
-  Moving a paper login → paid is one UPDATE of `access` (owner's word first). Paid → free is never done silently: it
-  publishes the questions.
+- **paid**: LIVE since 2026-11-18 (rule 22). **Every** `mcq_papers` row is now `access = 'paid'` (there are no login rows
+  left); a student reads one only while a pass of theirs is running (`mcq_papers_paid_read`); an admin reads all. The
+  registry (`_data/mcqSpec.json`, `_data/netPyqs.json`) still labels these sets `"access": "login"` (it means "not a public
+  file"; `_data/mcqAges.js` stops the build on `"paid"`); the database decides login vs paid, and the pages read it from
+  `paper_catalog.access`. Paid → free is never done silently: it publishes the questions.
 - **The upload page** (`/admin/upload-paper/`, built 2026-11-12) is the normal way to get a login paper in.
   The owner picks the file(s), a Title, a Category and Draft or Live, and the browser writes the rows itself with
   the publishable key and the owner's login. There is **no service key and no Edge Function** (owner's decision).
@@ -458,7 +458,8 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     unless every question has a unique id (in this paper and in every other paper), exactly four different
     non-empty options, the right option marked 0 to 3, an explanation, a real `topicId` and, when given, a real
     `periodId`; it refuses a paper in which **more than 10** questions are already in another paper (owner, 2026-11-18: one to ten shared questions are allowed, because two exam papers do repeat a question; more than ten is a copy or a file saved under the wrong name; migration `20261118120000_allow_few_similar_questions.sql`; the upload page then lists the shared ones as information through the admin-only `paper_similar_questions(set_id)`), anything but `access = 'login'`, a body that names
-    another set, level or rev, and a rev that goes backwards. Its messages are plain English and the page shows
+    another set, level or rev, a rev that goes backwards, and (since 2026-11-18) an access other than login/paid or a
+    paid paper re-uploaded as login. Its messages are plain English and the page shows
     them as they are.
   - `mcq_papers.status` is `draft` (only an admin can read it) or `live` (students can). New uploads default to
     draft; everything loaded before 2026-11-12 is live.
@@ -799,7 +800,13 @@ The State PSC hub lists UP Assistant Professor (live) and, under it, **Coming so
 secrets); one Test Mode payment passed end to end before that. Every login paper was made paid by the one-time UPDATE,
 `_data/paidLayer.js` is `live: true`. The owner sets the real price and ticks On sale on `/admin/payments/`. Details and
 history: `docs/accounts-status.md`.
-- **Owner's decisions.** One pass for now, "All Access": one payment opens every paid mock test. 30 days per period,
+- **Where it stands (end of 2026-11-18):** engine built and launched, **pass NOT on sale** (owner: "jab mujhe on sale karna
+  hoga, tab karunga"). Plan `all-access` holds a test price of Rs 25 and `active = false`. **Consequence: since the launch
+  UPDATE, students without a pass cannot open any of the 48 paid papers** (they see "needs the All Access pass" and the pass
+  page says "Payments open soon"); free files and the dashboard are untouched. The owner can open access for one student with
+  **Give a free pass**. Going on sale is the owner's own two clicks on `/admin/payments/` (real price, tick On sale, Save) — no
+  Claude, no rebuild.
+- **Owner's decisions.** One pass for now, "All Access": one payment opens every paid test. 30 days per period,
   1 to 6 periods at a time (both editable). The **price is not in code**: it is `pass_plans.price_paise`, set by the owner on
   `/admin/payments/`; never invent one. Later each course gets its own plan (one more `pass_plans` row; the paid read policy
   then needs to check the plan, today any running pass opens every paid paper). **What becomes paid** (owner, 2026-11-18,
@@ -809,13 +816,12 @@ history: `docs/accounts-status.md`.
   passes come later. Free files stay free for good (they are public in git). **The dashboard stays free**
   (owner): it reads only the student's own `attempts` / `quiz_runs` and the public catalog, never a paid paper, so a student
   without a pass still sees all their progress.
-- **Launch switch `_data/paidLayer.js` (`live`).** `false` today: the hub and test pages of those series say "free login".
-  `true` on launch day, in the same commit as the one-time UPDATE: the same pages say "needs the All Access pass" (NET PYQ hub,
+- **Launch switch `_data/paidLayer.js` (`live`).** **`true` since the launch (2026-11-18).** (`false` = the old "free login"
+  wording; it was flipped in the same commit as the one-time UPDATE.) With `true` the same pages say "needs the All Access pass" (NET PYQ hub,
   UP PGT MCQ days and mock tests hubs, UP AP mock tests hub, the four CBT includes, the literature "Build your own test" row
-  and pending-set pages, the `/quizzes/pyq/` and `/quizzes/mock-tests/` cards). Static HTML that still says "Some MCQ sets
-  ask you to log in first" must be reworded by hand in that commit: `about/index.html`, `privacy/index.html` (short version),
-  `terms/index.html` (Accounts). Launch UPDATE (owner's word first): `update public.mcq_papers set access = 'paid' where
-  access = 'login';` From the moment the pass is **On sale**, the upload page saves every new paper as paid by itself. Refund rule (`/refund-policy/`, the owner's words): no refund after a paid
+  and pending-set pages, the `/quizzes/pyq/` and `/quizzes/mock-tests/` cards). The static About / Privacy /
+  Terms lines were reworded by hand in that commit, and `cbt.js` reads `paper_catalog.access` for its banner and guest
+  screen. The launch UPDATE that ran: `update public.mcq_papers set access = 'paid' where access = 'login';` (64 rows, 48 papers). From the moment the pass is **On sale**, the upload page saves every new paper as paid by itself. Refund rule (`/refund-policy/`, the owner's words): no refund after a paid
   test is opened; 100% back if asked within 24 hours and no paid test opened; failed, wrongly taken and double payments are
   returned; an approved refund is sent within 72 hours. No automatic renewal.
 - **Database** (`20261118130000_paid_pass.sql`): `pass_plans` (public read of active plans, admin update), `promo_codes`
@@ -836,7 +842,26 @@ history: `docs/accounts-status.md`.
   loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
   running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
   paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
-  re-upload); a destination with `access: 'paid'` in `_data/paperDestinations.js` uploads new papers as paid.
+  re-upload); once the pass is On sale every new upload is saved as paid (and a destination with `access: 'paid'` in
+  `_data/paperDestinations.js` always is). While the pass is NOT on sale a brand-new upload is saved as **login** (any
+  logged-in student can open it): to keep it paid, the owner should tick On sale first, or Claude flips it with one UPDATE.
 - **Legal pages** were changed with it: Terms ("The All Access pass"), Privacy (order record, `paper_opens`, Razorpay as the sixth
   service), Contact and About (only payment = the pass, on akexplained.com through Razorpay), footer link to `/refund-policy/`.
   Keep them true with any change here (rule 10). Razorpay fees and limits: never state a number not read on Razorpay's own page.
+- **Razorpay setup as done with the owner (2026-11-18)** — for any later change of keys:
+  Razorpay account + KYC done. Secrets in Supabase → Edge Functions → Secrets: `RAZORPAY_KEY_ID` / `RAZORPAY_KEY_SECRET`
+  (now the **live** `rzp_live_` pair; the owner pressed "Replace" over the test pair) and `RAZORPAY_WEBHOOK_SECRET` (the live
+  webhook's own secret). Webhooks in Razorpay are per mode: a Test Mode one and a **Live Mode** one, both to
+  `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, payment.failed,
+  order.paid, refund.processed. A key secret is shown once; if lost, Regenerate in Razorpay and Replace in Supabase.
+  Quick health check from a session: `curl -X POST .../functions/v1/razorpay-webhook -H 'x-razorpay-signature: 00' -d '{}'`
+  must answer `Bad signature` (a missing secret answers `Not set up`); `.../pass-checkout` with no token answers "Please log in first".
+  The one Test Mode payment (Rs 25, owner's account, pass to 18 Dec 2026) carries the order note "Razorpay Test Mode payment".
+- **How the owner runs it (no Claude needed):** price / On sale, promo codes and free passes on `/admin/payments/`; a refund is
+  made in the Razorpay dashboard and the webhook marks the order Refunded and ends that pass (or "Mark refunded" by hand). The
+  orders table shows "Paid test opened?" for the 24-hour rule.
+- **Still open with the owner:** the real price; a launch promo for students who used the login tests free; whether a paid set
+  should count in the dashboard level pool of a student with no pass (today every live set counts); the footer line "free for
+  every student"; per-course passes later (one more `pass_plans` row, and the paid read policy must then check the plan).
+- **This session cannot open razorpay.com** (network policy), like akexplained.com: give the owner click-by-click steps and
+  ask for screenshots without secrets.
