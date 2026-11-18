@@ -324,8 +324,7 @@
           .then(function (res) {
             if (res.error || !res.data) { notice.textContent = 'You are not allowed to use this page.'; return; }
             client = auth.client;
-            // Paid layer (owner, 2026-11-18): once the pass is on sale, a new paper for an exam (mock tests,
-            // UP PGT MCQ days, UGC NET PYQs) is saved as paid. English Literature practice sets stay login.
+            // Paid layer (owner, 2026-11-18): once the pass is on sale, every new paper is saved as paid.
             client.from('pass_plans').select('id').eq('active', true).limit(1).then(function (r) {
               passOnSale = !r.error && !!(r.data && r.data.length);
             }, function () {});
@@ -684,10 +683,10 @@
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
         var newRev = (fileRev >= 1) ? fileRev : highest + 1;
         // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
-        // (the database refuses anything else). A new paper is paid when its destination belongs to an exam
-        // and the pass is on sale; an English Literature practice set (no examId) stays login.
+        // (the database refuses anything else). Once the pass is on sale, every new paper is paid
+        // (owner: everything behind a login goes behind the pass; free files stay free).
         var access = (existing.some(function (r) { return r.access === 'paid'; }) ||
-                      dest.access === 'paid' || (passOnSale && dest.examId)) ? 'paid' : 'login';
+                      dest.access === 'paid' || passOnSale) ? 'paid' : 'login';
         if (fileRev >= 1 && same.length && !(newRev > highest)) {
           var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
