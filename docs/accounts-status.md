@@ -6,7 +6,7 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
 
-## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, on the branch, NOT merged; DB + functions live but switched off)
+## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18, MERGED to main (PR #153) and live, switched off: no price, not on sale, no paper paid)
 - **Owner's decisions:** one pass for now ("All Access": every paid mock test); 30 days per period, 1 to 6 periods at a time;
   the price lives in the database and the owner sets it on `/admin/payments/` (no price chosen yet, pass is **not on sale**);
   all **login** mock tests become paid at launch, the free ones stay free; refund rule = `/refund-policy/` (no refund after a paid
