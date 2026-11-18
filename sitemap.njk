@@ -14,9 +14,9 @@ eleventyExcludeFromCollections: true
   <url><loc>https://akexplained.com/exams/net/about/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/exams/net/syllabus/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/exams/net/english-pyqs/</loc><priority>0.8</priority></url>
-{%- for pyq in netPyqPapers %}
+{%- for pyq in netPyqPapers %}{% if pyq.access != "login" or pyq.live %}
   <url><loc>https://akexplained.com{{ pyq.href }}</loc><priority>0.7</priority></url>
-{%- endfor %}
+{%- endif %}{% endfor %}
   <url><loc>https://akexplained.com/exams/pgt/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/mcqs/</loc><priority>0.7</priority></url>

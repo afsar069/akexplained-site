@@ -4,7 +4,22 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-17. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
+_Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CBT sets, and Days 11–12 are login-only CBT sets. Earlier set updates follow below; see Git history for subsequent merges._
+
+## UGC NET English PYQ — Paper II, June 2013, login-only (2026-11-18)
+
+- **State: built on the branch, NOT merged, and the questions are NOT in the database yet.** This session had no Supabase connector, so the owner loads the
+  questions at `/admin/upload-paper/` after the branch is merged (steps were given in chat). Until then the hub card says "Coming soon" and the test page says
+  "This paper is not open yet".
+- The owner supplied 50 tagged, verified questions and asked for them behind login. Facts were not re-checked. The supplied tags were **not** master nodes
+  (all 50 `topicId`s and four `periodId`s were unknown to the database), so they were re-mapped under rule 12 (writer / work / concept ladder; pairing
+  questions tagged to the shared group). Four questions are decisions under rule 18 (see there). The prepared file lives only in the session; the owner has
+  it as a download. No question file or load SQL is in the repo (rule 15).
+- Code: `_data/netPyqs.json` (login entry), `_data/netPyqPapers.js` (login branch, public-file guard), the hub card and `assets/net-pyq-live.js`,
+  `_includes/net-pyq-cbt.njk` (gated + catalog-checked), the upload destination `net-pyq` in `_data/paperDestinations.js` with a "Which paper?" picker in
+  `admin/upload-paper/` and `assets/upload-paper.js`, PYQ wording in `assets/cbt.js`, `_data/pyqHub.js`, `sitemap.njk`.
+- Tested (Playwright, Supabase mocked): hub as guest / student / not live / read fails / 375px; test page as guest / student / not live; a full 50-question
+  run (50/50) and its review; the free 2012 paper unchanged; the upload page end to end with the new destination. `npx eleventy` clean, no new broken link.
 
 ## UP PGT English MCQs Day 12 — Shakespeare major comedies (2026-11-17)
 

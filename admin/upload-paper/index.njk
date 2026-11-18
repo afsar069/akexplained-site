@@ -58,7 +58,7 @@ permalink: /admin/upload-paper/index.html
         <select id="upDest">
           <option value="">Choose one&hellip;</option>
           {%- for d in paperDestinations %}
-          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}" data-page-base="{{ d.pageBase or '' }}" data-page-route="{{ d.pageRoute or '' }}" data-page-levels="{{ (d.pageLevels or []) | join(',') }}" data-registry-plan="{{ 'yes' if d.usesRegistryPlan else '' }}" data-ids="{{ d.idsJson }}" data-title-note="{{ d.titleNote or '' }}">{{ d.label }}</option>
+          <option value="{{ d.id }}" data-exam="{{ d.examId or '' }}" data-kind="{{ d.kind }}" data-prefix="{{ d.prefix or '' }}" data-needs-age="{{ 'yes' if d.needsAge else '' }}" data-needs-paper="{{ 'yes' if d.needsPaper else '' }}" data-title-word="{{ d.titleWord }}" data-auto="{{ 'yes' if d.autoPage else '' }}" data-self-serve="{{ 'yes' if d.selfServe else '' }}" data-min="{{ d.minNumber or '' }}" data-max="{{ d.maxNumber or '' }}" data-number-note="{{ d.numberNote or '' }}" data-page-base="{{ d.pageBase or '' }}" data-page-route="{{ d.pageRoute or '' }}" data-page-levels="{{ (d.pageLevels or []) | join(',') }}" data-registry-plan="{{ 'yes' if d.usesRegistryPlan else '' }}" data-ids="{{ d.idsJson }}" data-title-note="{{ d.titleNote or '' }}">{{ d.label }}</option>
           {%- endfor %}
         </select>
       </label>
@@ -71,7 +71,17 @@ permalink: /admin/upload-paper/index.html
           {%- endfor %}{% endif %}{% endfor %}
         </select>
       </label>
-      <label class="field">
+      <label class="field" id="upPaperWrap" hidden>
+        <span>Which paper?</span>
+        <select id="upPaper">
+          <option value="">Choose the paper&hellip;</option>
+          {%- for d in paperDestinations %}{% if d.needsPaper %}{% for pp in d.papers %}
+          <option value="{{ pp.id }}" data-title="{{ pp.title }}" data-path="{{ pp.path }}">{{ pp.title }}</option>
+          {%- endfor %}{% endif %}{% endfor %}
+        </select>
+        <span class="hint">Only papers that are already planned on the site are listed. The paper's id is made from your choice.</span>
+      </label>
+      <label class="field" id="upNumberWrap">
         <span>Test / set number</span>
         <input id="upNumber" type="number" min="1" step="1" inputmode="numeric" autocomplete="off">
         <span class="hint">For a mock test, its number (for example 5). For an MCQ day, the day number (for example 13). For an MCQ set, the set number for that age.</span>

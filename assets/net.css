@@ -305,6 +305,16 @@
 .net-pyq-card-copy span{font-size:.92rem;line-height:1.4;color:var(--body)}
 .net-pyq-go{flex:none;display:inline-flex;align-items:center;justify-content:center;min-width:76px;min-height:44px;padding:0 20px;border-radius:8px;background:var(--teal);color:#fff;font-weight:700;line-height:1}
 .net-pyq-card:hover .net-pyq-go{background:var(--teal-dark)}
+/* Login paper (rule 18): the card is a box, not one big link, so it keeps its colour on hover; the padlock or Start button is the link. */
+div.net-pyq-card:hover{background:var(--card-paper);border-color:var(--border);box-shadow:none}
+.net-pyq-card [hidden]{display:none !important}
+.net-pyq-actions{flex:none;display:inline-flex}
+.net-pyq-go-lock{background:var(--card-paper);color:var(--teal);border:1.5px solid var(--teal)}
+.net-pyq-card:hover .net-pyq-go-lock{background:var(--teal-soft)}
+.net-pyq-go-lock:hover,.net-pyq-go-lock:focus-visible{background:var(--teal-soft);color:var(--teal-dark)}
+.net-pyq-go:focus-visible{outline:3px solid var(--teal-dark);outline-offset:3px}
+.net-pyq-go-lock svg{display:block;width:1.5em;height:1.65em}
+.net-pyq-soon{flex:none;display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 16px;border-radius:8px;background:var(--teal-soft);color:var(--teal-dark);font-weight:600;font-size:.92rem;line-height:1}
 .net-pyq-note{margin-top:14px;border-top:1px solid var(--border)}
 @media (max-width:640px){
   .net-pyq-intro{flex-direction:column;gap:8px}

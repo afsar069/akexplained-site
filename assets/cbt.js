@@ -231,8 +231,8 @@
   /* Live nahi (ya hai hi nahi) — na login wall, na khali page. Banner bhi theek kar do,
      kyunki wo [data-cbt] ke bahar hai (sirf root.innerHTML badalne se nahi badalta). */
   function notOpenYet() {
-    var thing = EXAM_MOCK ? 'test' : 'set';
-    var longName = EXAM_MOCK ? 'mock test' : 'practice set';
+    var thing = PYQ ? 'paper' : EXAM_MOCK ? 'test' : 'set';
+    var longName = PYQ ? 'paper' : EXAM_MOCK ? 'mock test' : 'practice set';
     var backLabel = root.getAttribute('data-back-label') || (EXAM_MOCK ? 'the tests' : 'the age');
     var title = document.getElementById('cbtTitle');
     var lede = document.getElementById('cbtLede');
@@ -266,7 +266,7 @@
     if (EXAM_DAY && dayTitle) {
       lede.textContent = dayTitle + ' · ' + qn + ' ' + (root.getAttribute('data-day-level-label') || '') + ' questions · Free login required.';
     } else {
-      lede.textContent = qn + ' questions. Log in with a free account to take this ' + (EXAM_MOCK ? 'test.' : 'set.');
+      lede.textContent = qn + ' questions. Log in with a free account to take this ' + (PYQ ? 'paper.' : EXAM_MOCK ? 'test.' : 'set.');
     }
   }
 
@@ -384,7 +384,7 @@
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>Log in to take this test</h1>' +
-        '<p class="lede">' + (EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
+        '<p class="lede">' + (PYQ ? 'This paper is for students with a free account. ' : EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
         'Log in, or create an account, to open it.</p>' +
         '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
         '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
