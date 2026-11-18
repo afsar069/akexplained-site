@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All Access pass | AK Explained</title>
+<meta name="description" content="The All Access pass opens every test on AK Explained that is not free: MCQ practice sets, mock tests and previous-year papers. See the price, use a promo code and pay with Razorpay.">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span>All Access pass</p></div>
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Mock tests</p>
+    <h1>All Access pass</h1>
+    <p class="lede">One payment opens every paid test on the site, for as long as your pass runs.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap passwrap">
+  <div id="passNotice" class="authnotice" role="status">Loading the pass&hellip;</div>
+
+  <section id="passMine" class="acctcard" hidden></section>
+
+  <section id="passBuy" class="acctcard" hidden>
+    <h2 id="passTitle">All Access pass</h2>
+    <p id="passDesc" class="small"></p>
+    <p class="passprice"><strong id="passPrice"></strong> <span class="muted">for every <span id="passDays">30</span> days</span></p>
+
+    <form id="passForm" novalidate>
+      <label class="field">
+        <span>How long</span>
+        <select id="passUnits"></select>
+      </label>
+
+      <div class="passpromo">
+        <label class="field">
+          <span>Promo code (if you have one)</span>
+          <input id="passCode" type="text" autocomplete="off" autocapitalize="characters" maxlength="30" spellcheck="false">
+        </label>
+        <button id="passApply" class="btn alt" type="button">Apply</button>
+      </div>
+      <p id="passCodeMsg" class="small" role="status" hidden></p>
+
+      <dl class="passsum">
+        <div><dt>Price</dt><dd id="sumBase">&mdash;</dd></div>
+        <div id="sumDiscRow" hidden><dt>Promo discount</dt><dd id="sumDisc">&mdash;</dd></div>
+        <div class="passsum-total"><dt>To pay</dt><dd id="sumTotal">&mdash;</dd></div>
+      </dl>
+
+      <div class="formerror" id="passError" role="alert" hidden></div>
+      <button id="passGo" class="btn" type="submit" data-auth-only hidden>Pay and open the pass</button>
+      <a id="passLogin" class="btn" href="/login/?next=%2Fpass%2F" data-guest-only>Log in to buy the pass</a>
+      <p class="small muted">Payments are handled by Razorpay. By paying you agree to the <a href="/terms/">Terms</a> and the <a href="/refund-policy/">Refund Policy</a>.</p>
+    </form>
+  </section>
+
+  <section class="acctcard">
+    <h2>What the pass covers</h2>
+    <ul class="small">
+      <li>Every test that needs the pass, on every exam page, while your pass runs: every MCQ practice set, mock test, MCQ day and previous-year paper that is not free.</li>
+      <li>Free tests, free practice sets, the Daily quiz and every article stay free, with or without a pass.</li>
+      <li>Your dashboard stays free too: it shows your progress on everything you answer, with or without a pass.</li>
+      <li>If you buy again while your pass is running, the new days start when the old ones end, so you lose no day.</li>
+      <li>Please read the <a href="/refund-policy/">Refund Policy</a> before you pay.</li>
+    </ul>
+  </section>
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/pass.js" defer></script>
+</body>
+</html>

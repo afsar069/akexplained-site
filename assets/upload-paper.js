@@ -198,6 +198,7 @@
     try { plan = JSON.parse(el('upPlan').textContent).sets || {}; } catch (e) { plan = {}; }
 
     var client = null;      // Supabase client, once we know the person is an admin
+    var passOnSale = false; // the All Access pass is on sale -> new exam papers are paid (rule 22)
     var papers = [];        // one per chosen file: { name, body }
     var titleTouched = false;
 
@@ -323,6 +324,10 @@
           .then(function (res) {
             if (res.error || !res.data) { notice.textContent = 'You are not allowed to use this page.'; return; }
             client = auth.client;
+            // Paid layer (owner, 2026-11-18): once the pass is on sale, every new paper is saved as paid.
+            client.from('pass_plans').select('id').eq('active', true).limit(1).then(function (r) {
+              passOnSale = !r.error && !!(r.data && r.data.length);
+            }, function () {});
             notice.textContent = 'Signed in as the owner. Choose a question file to begin.';
             show(body);
           });
@@ -583,7 +588,7 @@
           : { k: 'ok', t: 'Saved as a Draft. Students cannot see it yet. Make it Live on the All papers page when you are ready.' };
       }
       if (warn) return { k: 'warn', t: 'It is Live, but check the points below.' };
-      return { k: 'ok', t: 'It is Live. Logged-in students can open it now. No rebuild is needed.' };
+      return { k: 'ok', t: 'It is Live. Students can open it now (a paid paper: those with the All Access pass). No rebuild is needed.' };
     }
 
     function claudeText(ctx, verdict, items) {
@@ -671,12 +676,17 @@
       // Is this id already taken? If so, the file's rev must be higher to replace it.
       // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
       // use the same rev. The database rule is the same: it only refuses a rev that goes down.
-      client.from('mcq_papers').select('set_id, level, rev, status').eq('set_id', setId).then(function (res) {
+      client.from('mcq_papers').select('set_id, level, rev, status, access').eq('set_id', setId).then(function (res) {
         var chosenLevels = papers.map(levelOf);
         var existing = (!res.error && res.data) ? res.data : [];
         var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
         var newRev = (fileRev >= 1) ? fileRev : highest + 1;
+        // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
+        // (the database refuses anything else). Once the pass is on sale, every new paper is paid
+        // (owner: everything behind a login goes behind the pass; free files stay free).
+        var access = (existing.some(function (r) { return r.access === 'paid'; }) ||
+                      dest.access === 'paid' || passOnSale) ? 'paid' : 'login';
         if (fileRev >= 1 && same.length && !(newRev > highest)) {
           var lv = same.map(function (r) { return r.level; }).join(' and ');
           goButton.disabled = false; goButton.textContent = 'Upload this paper';
@@ -697,7 +707,7 @@
           out.level = levelOf(p);
           out.rev = newRev;
           if (dest.examId) { out.examId = dest.examId; } else { delete out.examId; }
-          return { set_id: setId, level: out.level, access: 'login', rev: newRev, status: status, body: out };
+          return { set_id: setId, level: out.level, access: access, rev: newRev, status: status, body: out };
         });
 
         goButton.textContent = 'Uploading…';
@@ -735,7 +745,7 @@
             goButton.textContent = 'Checking the site…';
             var next = allMatch
               ? Promise.all([finalChecks(ctx), similarCheck(setId)]).then(function (got) {
-                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + '.' }], got[1], got[0]);
+                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + (access === 'paid' ? ', a paid paper: students need the All Access pass to open it.' : ', a login paper: any logged-in student can open it.') }], got[1], got[0]);
                 })
               : Promise.resolve(items);
             return next.then(function (all) {

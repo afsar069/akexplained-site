@@ -64,7 +64,8 @@
     { page: 'papers', label: 'All papers', href: '/admin/papers/' },
     { page: 'notify', label: 'Send a notice', href: '/admin/notify/' },
     { page: 'students', label: 'Students', href: '/admin/students/' },
-    { page: 'reviews', label: 'Reviews', href: '/admin/reviews/' }
+    { page: 'reviews', label: 'Reviews', href: '/admin/reviews/' },
+    { page: 'payments', label: 'Payments', href: '/admin/payments/' }
   ];
 
   function buildNav(active) {
@@ -116,7 +117,7 @@
     box.innerHTML = '<p class="small">Loading your papers…</p>';
 
     ctx.client.from('paper_catalog')
-      .select('set_id, title, exam_id, kind, number, question_count, status')
+      .select('set_id, title, exam_id, kind, number, question_count, status, access')
       .then(function (res) {
         if (res.error) { box.innerHTML = '<p class="admerr">Could not load the papers: ' + esc(res.error.message) + '</p>'; return; }
         var rows = (res.data || []).slice().sort(function (a, b) {
@@ -145,7 +146,8 @@
             '<td><strong>' + esc(r.title || r.set_id) + '</strong><span class="admsub">' + esc(r.set_id) + '</span></td>' +
             '<td>' + esc(examLabel(r.exam_id)) + '<span class="admsub">' + (r.kind === 'mock-test' ? 'Mock test' : 'MCQ set') + '</span></td>' +
             '<td>' + esc(r.question_count) + '</td>' +
-            '<td><span class="admtag ' + (live ? 'is-live' : 'is-draft') + '">' + (live ? 'Live' : 'Draft') + '</span></td>' +
+            '<td><span class="admtag ' + (live ? 'is-live' : 'is-draft') + '">' + (live ? 'Live' : 'Draft') + '</span>' +
+              (r.access === 'paid' ? ' <span class="admtag is-paid">Paid</span>' : '') + '</td>' +
             '<td><button class="btn alt admbtn" data-toggle data-set="' + esc(r.set_id) + '" data-to="' + (live ? 'draft' : 'live') + '">' +
               (live ? 'Make draft' : 'Make live') + '</button></td>' +
             '</tr>';
@@ -388,11 +390,184 @@
     });
   }
 
+  /* ---------------- PAYMENTS (owner, 2026-11-18) ----------------
+     Pass ki price (pass_plans), promo codes (promo_codes) aur orders (pass_orders).
+     Sab RLS se admin-only. Order sirf "refunded" me badal sakta hai (DB trigger). */
+  function paymentsSection(ctx) {
+    var PLAN = 'all-access';
+    function rupees(p) { return p == null ? '—' : '₹' + (p / 100).toLocaleString('en-IN'); }
+    function timeOf(v) {
+      if (!v) return '';
+      var d = new Date(v); if (isNaN(d.getTime())) return '';
+      return niceDate(v) + ', ' + String(d.getHours()).padStart(2, '0') + ':' + String(d.getMinutes()).padStart(2, '0');
+    }
+    function msg(box, text) { box.textContent = text; if (text) show(box); else hide(box); }
+
+    /* -- the plan -- */
+    var pf = el('admPlanForm'), pErr = el('admPlanError'), pOk = el('admPlanOk');
+    ctx.client.from('pass_plans').select('*').eq('id', PLAN).maybeSingle().then(function (res) {
+      if (res.error || !res.data) { msg(pErr, 'Could not load the pass: ' + ((res.error && res.error.message) || 'not found')); return; }
+      var p = res.data;
+      el('admPlanTitle').value = p.title || '';
+      el('admPlanDesc').value = p.description || '';
+      el('admPlanPrice').value = p.price_paise == null ? '' : String(p.price_paise / 100);
+      el('admPlanDays').value = p.days_per_unit;
+      el('admPlanMax').value = p.max_units;
+      el('admPlanActive').checked = !!p.active;
+    });
+    pf.addEventListener('submit', function (ev) {
+      ev.preventDefault(); msg(pErr, ''); msg(pOk, '');
+      var title = el('admPlanTitle').value.trim();
+      var priceTxt = el('admPlanPrice').value.trim();
+      var price = priceTxt === '' ? null : Math.round(parseFloat(priceTxt) * 100);
+      var days = parseInt(el('admPlanDays').value, 10);
+      var max = parseInt(el('admPlanMax').value, 10);
+      var active = el('admPlanActive').checked;
+      if (!title) { msg(pErr, 'Give the pass a name.'); return; }
+      if (price !== null && !(price >= 100)) { msg(pErr, 'The price must be at least 1 rupee.'); return; }
+      if (!(days >= 1 && days <= 366)) { msg(pErr, 'Days must be from 1 to 366.'); return; }
+      if (!(max >= 1 && max <= 24)) { msg(pErr, 'Periods must be from 1 to 24.'); return; }
+      if (active && price === null) { msg(pErr, 'Set a price before putting the pass on sale.'); return; }
+      ctx.client.from('pass_plans').update({
+        title: title, description: el('admPlanDesc').value.trim(), price_paise: price,
+        days_per_unit: days, max_units: max, active: active, updated_at: new Date().toISOString()
+      }).eq('id', PLAN).select('id').then(function (res) {
+        if (res.error || !res.data || !res.data.length) { msg(pErr, 'Could not save: ' + ((res.error && res.error.message) || 'no change was saved')); return; }
+        msg(pOk, active ? 'Saved. The pass is on sale at ' + rupees(price) + ' for ' + days + ' days.' : 'Saved. The pass is not on sale.');
+      });
+    });
+
+    /* -- promo codes -- */
+    var kind = el('admPromoKind'), valLabel = el('admPromoValLabel');
+    kind.addEventListener('change', function () {
+      valLabel.textContent = kind.value === 'percent' ? 'How many percent off (100 = free)' : 'How many rupees off';
+    });
+    var promoBox = el('admPromos');
+    function loadPromos() {
+      Promise.all([
+        ctx.client.from('promo_codes').select('*').order('created_at', { ascending: false }),
+        readAll(ctx.client, 'pass_orders', 'promo_code, status', function (q) { return q.not('promo_code', 'is', null); })
+      ]).then(function (r) {
+        if (r[0].error) { promoBox.innerHTML = '<p class="admerr">Could not load the codes: ' + esc(r[0].error.message) + '</p>'; return; }
+        var used = {};
+        (r[1] || []).forEach(function (o) {
+          if (o.status === 'paid' || o.status === 'refunded') used[o.promo_code] = (used[o.promo_code] || 0) + 1;
+        });
+        var rows = r[0].data || [];
+        if (!rows.length) { promoBox.innerHTML = '<p class="small">No promo codes yet.</p>'; return; }
+        promoBox.innerHTML = '<table class="admtable"><thead><tr><th>Code</th><th>Discount</th><th>Used</th><th>Last day</th><th>Status</th><th>Change</th></tr></thead><tbody>' +
+          rows.map(function (c) {
+            var off = c.percent_off != null ? c.percent_off + '% off' : rupees(c.amount_off_paise) + ' off';
+            return '<tr><td><strong>' + esc(c.code) + '</strong>' + (c.note ? '<span class="admsub">' + esc(c.note) + '</span>' : '') + '</td>' +
+              '<td>' + esc(off) + '<span class="admsub">' + (c.once_per_student ? 'Once per student' : 'Many times per student') + '</span></td>' +
+              '<td>' + (used[c.code] || 0) + (c.max_uses ? ' of ' + c.max_uses : '') + '</td>' +
+              '<td>' + (c.valid_until ? esc(niceDate(new Date(new Date(c.valid_until).getTime() - 1))) : 'No end') + '</td>' +
+              '<td><span class="admtag ' + (c.active ? 'is-live' : 'is-draft') + '">' + (c.active ? 'On' : 'Off') + '</span></td>' +
+              '<td><button class="btn alt admbtn" data-code="' + esc(c.code) + '" data-to="' + (c.active ? 'off' : 'on') + '">' + (c.active ? 'Turn off' : 'Turn on') + '</button></td></tr>';
+          }).join('') + '</tbody></table>';
+      }).catch(function (e) { promoBox.innerHTML = '<p class="admerr">Could not load the codes: ' + esc(e.message) + '</p>'; });
+    }
+    loadPromos();
+    promoBox.addEventListener('click', function (ev) {
+      var b = ev.target.closest ? ev.target.closest('[data-code]') : null;
+      if (!b) return;
+      b.disabled = true;
+      ctx.client.from('promo_codes').update({ active: b.getAttribute('data-to') === 'on' })
+        .eq('code', b.getAttribute('data-code')).then(function (res) {
+          if (res.error) { b.disabled = false; alert('Could not change it: ' + res.error.message); return; }
+          loadPromos();
+        });
+    });
+
+    var mf = el('admPromoForm'), mErr = el('admPromoError'), mOk = el('admPromoOk');
+    mf.addEventListener('submit', function (ev) {
+      ev.preventDefault(); msg(mErr, ''); msg(mOk, '');
+      var code = el('admPromoCode').value.trim().toUpperCase();
+      var val = parseInt(el('admPromoVal').value, 10);
+      var maxTxt = el('admPromoMax').value.trim();
+      var until = el('admPromoUntil').value;
+      if (!/^[A-Z0-9_-]{3,30}$/.test(code)) { msg(mErr, 'The code must be 3 to 30 letters or numbers (no spaces).'); return; }
+      var row = { code: code, once_per_student: el('admPromoOnce').checked, note: el('admPromoNote').value.trim() };
+      if (kind.value === 'percent') {
+        if (!(val >= 1 && val <= 100)) { msg(mErr, 'Percent off must be from 1 to 100.'); return; }
+        row.percent_off = val;
+      } else {
+        if (!(val >= 1)) { msg(mErr, 'Rupees off must be at least 1.'); return; }
+        row.amount_off_paise = val * 100;
+      }
+      if (maxTxt !== '') {
+        var mx = parseInt(maxTxt, 10);
+        if (!(mx >= 1)) { msg(mErr, 'The limit must be 1 or more, or empty.'); return; }
+        row.max_uses = mx;
+      }
+      if (until) {
+        /* "Last day it works" = us din ke ant tak (India time): agle din 00:00 IST se band. */
+        var end = new Date(until + 'T00:00:00+05:30');
+        if (isNaN(end.getTime())) { msg(mErr, 'The last day is not a date.'); return; }
+        row.valid_until = new Date(end.getTime() + 86400000).toISOString();
+      }
+      ctx.client.from('promo_codes').insert(row).then(function (res) {
+        if (res.error) {
+          msg(mErr, /duplicate|unique/i.test(res.error.message) ? 'There is already a code called ' + code + '.' : 'Could not make it: ' + res.error.message);
+          return;
+        }
+        msg(mOk, 'Made. Students can now type ' + code + ' on the pass page.');
+        mf.reset(); kind.dispatchEvent(new Event('change'));
+        loadPromos();
+      });
+    });
+
+    /* -- orders -- */
+    var oBox = el('admOrders');
+    function loadOrders() {
+      Promise.all([
+        ctx.client.from('pass_orders').select('*').order('created_at', { ascending: false }).limit(300),
+        readAll(ctx.client, 'profiles', 'id, display_name'),
+        readAll(ctx.client, 'paper_opens', 'user_id, set_id, first_opened_at')
+      ]).then(function (r) {
+        if (r[0].error) { oBox.innerHTML = '<p class="admerr">Could not load the orders: ' + esc(r[0].error.message) + '</p>'; return; }
+        var names = {}; (r[1] || []).forEach(function (p) { names[p.id] = p.display_name; });
+        var opens = {}; (r[2] || []).forEach(function (o) { (opens[o.user_id] = opens[o.user_id] || []).push(o); });
+        var rows = (r[0].data || []).filter(function (o) { return o.status !== 'created'; });
+        if (!rows.length) { oBox.innerHTML = '<p class="small">No orders yet.</p>'; return; }
+        oBox.innerHTML = '<table class="admtable"><thead><tr><th>When</th><th>Student</th><th>Bought</th><th>Paid</th><th>Status</th><th>Paid test opened?</th><th>Change</th></tr></thead><tbody>' +
+          rows.map(function (o) {
+            var after = (opens[o.user_id] || []).filter(function (x) { return o.paid_at && x.first_opened_at >= o.paid_at; })
+              .sort(function (a, b) { return a.first_opened_at < b.first_opened_at ? -1 : 1; });
+            var opened = after.length ? 'Yes, ' + esc(timeOf(after[0].first_opened_at)) + '<span class="admsub">' + after.length + ' test' + (after.length > 1 ? 's' : '') + '</span>' : (o.status === 'paid' ? 'No' : '—');
+            var within = o.paid_at && (Date.now() - new Date(o.paid_at).getTime()) < 86400000;
+            var hint = o.status === 'paid' && !after.length && within && o.amount_paise > 0 ? '<span class="admsub">Can be refunded if asked</span>' : '';
+            var tag = { paid: 'is-live', refunded: 'is-draft', failed: 'is-draft' }[o.status] || '';
+            var label = { paid: 'Paid', refunded: 'Refunded', failed: 'Failed' }[o.status] || o.status;
+            return '<tr><td>' + esc(timeOf(o.paid_at || o.created_at)) + '</td>' +
+              '<td>' + esc(names[o.user_id] || 'Student') + '</td>' +
+              '<td>' + o.days + ' days' + (o.promo_code ? '<span class="admsub">Code ' + esc(o.promo_code) + ' (' + rupees(o.discount_paise) + ' off)</span>' : '') + '</td>' +
+              '<td>' + (o.amount_paise === 0 ? 'Free' : rupees(o.amount_paise)) + (o.rzp_payment_id ? '<span class="admsub">' + esc(o.rzp_payment_id) + '</span>' : '') + '</td>' +
+              '<td><span class="admtag ' + tag + '">' + esc(label) + '</span>' + (o.note ? '<span class="admsub">' + esc(o.note) + '</span>' : '') + '</td>' +
+              '<td>' + opened + hint + '</td>' +
+              '<td>' + (o.status === 'paid' && o.amount_paise > 0 ? '<button class="btn alt admbtn" data-refund="' + esc(o.id) + '">Mark refunded</button>' : '') + '</td></tr>';
+          }).join('') + '</tbody></table>';
+      }).catch(function (e) { oBox.innerHTML = '<p class="admerr">Could not load the orders: ' + esc(e.message) + '</p>'; });
+    }
+    loadOrders();
+    oBox.addEventListener('click', function (ev) {
+      var b = ev.target.closest ? ev.target.closest('[data-refund]') : null;
+      if (!b) return;
+      if (!window.confirm('Mark this order refunded? Do this only after you have refunded it in Razorpay. The student\'s pass from this order stops at once.')) return;
+      b.disabled = true;
+      ctx.client.from('pass_orders').update({ status: 'refunded' }).eq('id', b.getAttribute('data-refund')).then(function (res) {
+        if (res.error) { b.disabled = false; alert('Could not change it: ' + res.error.message); return; }
+        loadOrders();
+      });
+    });
+  }
+
   var SECTIONS = {
     papers: papersSection,
     notify: notifySection,
     students: studentsSection,
-    reviews: reviewsSection
+    reviews: reviewsSection,
+    payments: paymentsSection
   };
 
   document.addEventListener('DOMContentLoaded', function () {

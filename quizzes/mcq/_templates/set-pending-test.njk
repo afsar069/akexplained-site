@@ -14,7 +14,7 @@ eleventyExcludeFromCollections: true
 {% extends "mcq-page.njk" %}
 {% set age = entry.age %}{% set st = entry.set %}
 {% set pageTitle %}{{ age.name }} Practice &mdash; Set {{ st.n }}, {{ st.titleCase }} | AK Explained{% endset %}
-{% set pageDescription %}{{ age.name }} practice Set {{ st.n }}, {{ st.titleCase }}. Log in with a free account to take it once it is open.{% endset %}
+{% set pageDescription %}{{ age.name }} practice Set {{ st.n }}, {{ st.titleCase }}. {% if paidLayer.live %}It needs the All Access pass once it is open.{% else %}Log in with a free account to take it once it is open.{% endif %}{% endset %}
 {% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/set-" + st.n + "/" %}
 {% set robots = "noindex,follow" %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Quizzes',h:'/quizzes/'},{t:'MCQ Practice',h:'/quizzes/mcq/'},{t:age.name,h:'/quizzes/mcq/' + age.slug + '/'},{t:'Set ' + st.n}] %}
@@ -27,7 +27,7 @@ eleventyExcludeFromCollections: true
   <div class="wrap">
     <p class="eyebrow" id="cbtEyebrow">Practice &middot; MCQ &middot; {{ age.name }}</p>
     <h1 id="cbtTitle">Set {{ st.n }} &middot; {{ st.title }}</h1>
-    <p class="lede" id="cbtLede">Log in with a free account to take this set.</p>
+    <p class="lede" id="cbtLede">{% if paidLayer.live %}This set needs the All Access pass.{% else %}Log in with a free account to take this set.{% endif %}</p>
   </div>
 </section>
 

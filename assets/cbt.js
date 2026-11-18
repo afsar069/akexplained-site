@@ -182,20 +182,42 @@
     });
   }
 
+  /* Paid paper (owner, 2026-11-18): logged-in student ke paas chalta hua pass nahi — RLS row nahi deta.
+     Tab catalog batata hai ki paper 'paid' hai, aur broke() "Get the pass" screen dikhata hai. */
+  function needPassError() {
+    var e = new Error('pass needed');
+    e.needsPass = true;
+    return e;
+  }
+
   function gatedPaper(sid, lv) {
-    var a = null;
+    var a = null, uid = null;
     return whenAuth().then(function (auth) {
       a = auth;
       if (!a || !a.configured || !a.client) throw needLoginError();
       return a.session();
     }).then(function (s) {
       if (!s || !s.user) throw needLoginError();
-      return a.client.from('mcq_papers').select('body').eq('set_id', sid).eq('level', lv).maybeSingle();
+      uid = s.user.id;
+      return a.client.from('mcq_papers').select('body, access').eq('set_id', sid).eq('level', lv).maybeSingle();
     }).then(function (res) {
       if (res.error) throw new Error(res.error.message || 'could not read the questions');
       var data = res.data && res.data.body;
       if (!data || !Array.isArray(data.questions) || !data.questions.length) {
-        throw new Error('This set is not open to you yet.');
+        /* Row nahi mila: paid paper hai aur pass nahi? Catalog se poochho. */
+        return a.client.from('paper_catalog').select('access').eq('set_id', sid).maybeSingle()
+          .then(function (c) {
+            if (c && !c.error && c.data && c.data.access === 'paid') throw needPassError();
+            throw new Error('This set is not open to you yet.');
+          });
+      }
+      /* Paid paper pehli baar khula: refund rule ke liye note (fire-and-forget, test kabhi na ruke). */
+      if (res.data.access === 'paid') {
+        try {
+          a.client.from('paper_opens')
+            .upsert({ user_id: uid, set_id: sid }, { onConflict: 'user_id,set_id', ignoreDuplicates: true })
+            .then(function () {}, function () {});
+        } catch (e) {}
       }
       return withPassages(data);
     });
@@ -372,6 +394,7 @@
   /* File na mile to khali page nahi — saaf baat aur wapas jane ka rasta. */
   function broke(e) {
     if (e && e.needsLogin) { needLogin(); return; }
+    if (e && e.needsPass) { needPass(); return; }
     root.innerHTML =
       '<div class="cbt-start">' +
         '<h1>The questions did not load</h1>' +
@@ -393,6 +416,21 @@
         '<p class="lede">' + (PYQ ? 'This paper is for students with a free account. ' : EXAM_MOCK ? 'This mock test is for students with a free account. ' : 'This set is for students with a free account. ') +
         'Log in, or create an account, to open it.</p>' +
         '<p><a class="btn" href="/login/?next=' + encodeURIComponent(back) + '">Log in or create a free account</a></p>' +
+        '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
+      '</div>';
+  }
+
+  /* Paid test, logged-in student, pass nahi (ya khatam): pass page ka rasta. Pass ke baad
+     /pass/?next= isi test par wapas bhejta hai. */
+  function needPass() {
+    var back = location.pathname + location.search;
+    var thing = PYQ ? 'paper' : EXAM_MOCK ? 'mock test' : 'set';
+    root.innerHTML =
+      '<div class="cbt-start">' +
+        '<h1>This ' + thing + ' needs the All Access pass</h1>' +
+        '<p class="lede">One pass opens every paid test on the site for as long as it runs: every MCQ practice set, mock test, MCQ day and previous-year paper that is not free. ' +
+        'If your pass has ended, you can buy more days.</p>' +
+        '<p><a class="btn" href="/pass/?next=' + encodeURIComponent(back) + '">See the pass and the price</a></p>' +
         '<p><a href="' + esc(root.getAttribute('data-back') || '/quizzes/mcq/') + '">Back to ' + esc(root.getAttribute('data-back-label') || 'the age') + '</a></p>' +
       '</div>';
   }

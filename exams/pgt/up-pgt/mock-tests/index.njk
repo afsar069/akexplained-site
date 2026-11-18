@@ -17,7 +17,7 @@ pgt_resources: true
   <header class="pgt-practice-intro">
     <div>
       <h2 id="pgt-practice-index-title">Choose a mock test</h2>
-      <p>Mock Tests 1 to 5 are free for everyone. Log in with a free account to take the other open tests. More tests are coming soon.</p>
+      <p>Mock Tests 1 to 5 are free for everyone. {% if paidLayer.live %}The other open tests need the <a href="/pass/">All Access pass</a>.{% else %}Log in with a free account to take the other open tests.{% endif %} More tests are coming soon.</p>
     </div>
     <span>60 tests</span>
   </header>

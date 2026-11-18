@@ -397,3 +397,18 @@ grant), and the logged-out read returns no data.
 
 If every step passes, isolation is working: each user reaches only their own
 rows, deletes are blocked, and logged-out visitors get nothing.
+
+## The paid layer — All Access pass (2026-11-18, migration `20261118130000_paid_pass.sql`)
+In plain English (full rules: CLAUDE.md rule 22):
+- **pass_plans** — what can be bought. Today one row, `all-access`: a price per period (set by the owner on
+  `/admin/payments/`), how many days a period is (30), and the most periods at once (6). Nothing can be bought until a
+  price is set and "On sale" is ticked. Anyone can read a plan that is on sale; only an admin can change one.
+- **promo_codes** — discount codes: a percent (100 = free) or a rupee amount off, with an optional limit on uses, a last
+  day, and "once per student". Only an admin can see or make them; the server checks a code when a student uses it.
+- **pass_orders** — one row each time a student presses Pay: the price, the discount, the amount, and whether it was
+  paid, failed or refunded, with Razorpay's order and payment numbers. A student sees only their own. Only the server
+  writes them; an admin may only mark a paid order refunded.
+- **passes** — what a payment buys: a pass from one date to another. A student sees only their own. A refund ends it.
+- **paper_opens** — the first time a student opened each paid test, so the refund rule ("no paid test opened") is fair.
+- **mcq_papers.access = 'paid'** — a paid paper; a student can read it only while their pass is running.
+- `paper_catalog.access` copies login / paid, so a test page knows to ask for the pass instead of a login.

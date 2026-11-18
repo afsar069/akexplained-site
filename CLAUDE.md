@@ -48,7 +48,8 @@ breaking it breaks a promise already made.
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); PGT English and TGT English are non-link Coming soon cards. Not hand-written HTML any more.
 - `quizzes/mock-tests/` — the **mock-test front door** (rule 20): one card per exam, made by `quizzes/mock-tests/index.njk` from `_data/mockHub.js`, same look as `/quizzes/pyq/` (`.exam-cat*`). UP PGT English and UP Assistant Professor English are live cards; UGC NET English and TGT English are non-link Coming soon cards.
-- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews). The last four plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
+- `pass/` (the All Access pass page, `assets/pass.js`) and `refund-policy/` — the paid layer's public pages (rule 22).
+- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
@@ -292,7 +293,7 @@ and never ask the owner for it.**
   hashed password or Google sign-in, chosen path(s), "notify me" requests, and quiz answers while logged in, held
   in Supabase. Change them in the same commit as any change to what is collected (for example a new table, a
   new provider, or emails after SMTP). The Terms line "no paid tier" is the owner's and must change when that does.
-- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15; it has a `status` column, `draft` or `live`), `paper_admins` (the admin allow list — who may upload a paper AND use every other admin tool), `paper_catalog` (a paper's public metadata, no questions), `notifications` + `notification_reads` (dashboard bell messages and who has opened them, rule 16), `exams`, `topics`, `exam_topics`,
+- Schema: `profiles`, `attempts`, `quiz_runs`, `reading_progress`, `mcq_papers` (login / paid MCQ sets, rule 15; it has a `status` column, `draft` or `live`), `paper_admins` (the admin allow list — who may upload a paper AND use every other admin tool), `paper_catalog` (a paper's public metadata, no questions), `notifications` + `notification_reads` (dashboard bell messages and who has opened them, rule 16), `pass_plans`, `promo_codes`, `pass_orders`, `passes`, `paper_opens` (the paid layer, rule 22), `exams`, `topics`, `exam_topics`,
   `user_exams`, `notify_requests`. RLS is own-rows-only (a user sees only their rows); an **admin** (a `paper_admins`
   row) also reads all `profiles`, `attempts`, `quiz_runs`, `reviews` and `mcq_papers`, and may moderate reviews and
   send notifications (rule 16). Reference tables (`exams`, `topics`, `exam_topics`) are world-readable; anon gets nothing.
@@ -374,8 +375,7 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
-- **The paid layer** (rule 15): no entitlements, no promo codes, no payment gateway. A set can be free or
-  login today. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
+- **The paid layer** is built but not switched on (rule 22): the pass is not on sale and no paper is paid yet. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
   (tagged with `tools/tagging/write_tags.py`; the owner's ruling on each doubtful kind is in rule 12).
@@ -444,15 +444,11 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   of a login set, and no SQL that contains its questions, is ever committed.** The set's page, title and lede
   are public; only the questions are not. A logged-in student can still copy what they see; the wall stops
   the public, not copying.
-- **paid**: NOT BUILT. `access = 'paid'` is allowed in the table but no policy reads it (invisible to everyone,
-  it fails closed), and `_data/mcqAges.js` stops the build if a set says `"access": "paid"`. The owner's plan:
-  every gated set starts as login; later the owner picks which become paid; a **promo code** gives a student
-  the paid pass for free ("paid but free by promo code"). To build it: an entitlements table (who has a pass,
-  from payment or promo, until when; only the server writes it, never the browser), a promo-codes table, a
-  server-side redeem function, one more RLS policy, then allow `"paid"` in the registry. Payment gateway: not
-  chosen; never invent a fee or a limit (rule 14). The "no paid tier" lines in `/terms/` and `/contact/`, and
-  the About line, change in the same commit that makes paid real. Moving a set login → paid later is one
-  UPDATE of `access` plus the registry label. Paid → free is never done silently: it publishes the questions.
+- **paid**: BUILT (rule 22), not switched on. A paid paper is a `public.mcq_papers` row with `access = 'paid'`;
+  a student reads it only while a pass of theirs is running (`mcq_papers_paid_read`). `_data/mcqAges.js` still stops the
+  build if an MCQ registry set says `"access": "paid"` (the owner chose mock tests for paid; literature sets stay login).
+  Moving a paper login → paid is one UPDATE of `access` (owner's word first). Paid → free is never done silently: it
+  publishes the questions.
 - **The upload page** (`/admin/upload-paper/`, built 2026-11-12) is the normal way to get a login paper in.
   The owner picks the file(s), a Title, a Category and Draft or Live, and the browser writes the rows itself with
   the publishable key and the owner's login. There is **no service key and no Edge Function** (owner's decision).
@@ -598,8 +594,9 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
   deletes — no one updates), `notification_reads` (a student reads/inserts only their own; it clears the bell
   count across devices). Admin **read** policies were added to `profiles`, `attempts`, `quiz_runs` and `reviews`,
   and admin **update/delete** to `reviews`. `/privacy/` now lists dashboard notices (kept true, rule 10).
-- **Not here yet:** paid sets + promo codes, and big PDFs on Cloudflare R2 (both rule 13/15) — the owner chose to
-  build these next.
+- **Payments** (`/admin/payments/`, rule 22) — the pass price and "on sale", promo codes (make, turn off), and orders
+  with "paid test opened?" for the refund rule and a Mark refunded button.
+- **Not here yet:** big PDFs on Cloudflare R2 (rule 13).
 
 ## 17. Self-serve publish — a live paper appears with no rebuild (owner, 2026-11-14)
 The owner uploads a login paper at `/admin/upload-paper/` and marks it **Live** on `/admin/papers/`; for a
@@ -794,3 +791,48 @@ The State PSC hub lists UP Assistant Professor (live) and, under it, **Coming so
 - To open one: build its page like `up-assistant-professor/`, then move its entry out of `statePscExams.json` into a live card. Never invent a number or a date on a card.
 - **Resource cards on `/exams/state-psc/up-assistant-professor/`** (owner, 2026-11-15): a **live** card (`"live": true` in `_data/statePscResources.json`) ends in a teal **Start** button (`.state-psc-start`) and has no "Open" line; a Coming soon card keeps its "Coming soon" line and the arrow. The whole card stays the link. Today only Paper 2 English Literature Mock Tests is live.
 - **Important Links band on that page too** (owner, 2026-11-15), under the resource cards. The band is now one shared include, **`_includes/hub-links.njk`** (list `_data/hubLinks.json`, text from `hubLinksText`), used by `/quizzes/pyq/`, `/quizzes/mock-tests/`, this page and the Paper 2 mock tests list (`paper-2-mock-tests/`, owner 2026-11-15; the test and review pages themselves have no band); `state-psc-layout.njk` shows it when a page sets `hub_links: true` and `hub_links_text` in its front matter. Edit the markup once and all three change.
+
+## 22. The paid layer — All Access pass, promo codes, Razorpay (owner, 2026-11-18)
+**State:** built and tested; database and Edge Functions are live but **switched off** (plan not on sale, no paper paid,
+no Razorpay keys). Launch steps and open questions: `docs/accounts-status.md`.
+- **Owner's decisions.** One pass for now, "All Access": one payment opens every paid mock test. 30 days per period,
+  1 to 6 periods at a time (both editable). The **price is not in code**: it is `pass_plans.price_paise`, set by the owner on
+  `/admin/payments/`; never invent one. Later each course gets its own plan (one more `pass_plans` row; the paid read policy
+  then needs to check the plan, today any running pass opens every paid paper). **What becomes paid** (owner, 2026-11-18,
+  final word): "what is free without a login stays free; everything behind a login goes behind the pay wall". So at launch
+  **every** `mcq_papers` row becomes paid — mock tests, MCQ days, UGC NET login PYQs and the English Literature login practice
+  sets — and every new upload after the pass is On sale is paid. One pass ("single pay door") opens all of it; per-course
+  passes come later. Free files stay free for good (they are public in git). **The dashboard stays free**
+  (owner): it reads only the student's own `attempts` / `quiz_runs` and the public catalog, never a paid paper, so a student
+  without a pass still sees all their progress.
+- **Launch switch `_data/paidLayer.js` (`live`).** `false` today: the hub and test pages of those series say "free login".
+  `true` on launch day, in the same commit as the one-time UPDATE: the same pages say "needs the All Access pass" (NET PYQ hub,
+  UP PGT MCQ days and mock tests hubs, UP AP mock tests hub, the four CBT includes, the literature "Build your own test" row
+  and pending-set pages, the `/quizzes/pyq/` and `/quizzes/mock-tests/` cards). Static HTML that still says "Some MCQ sets
+  ask you to log in first" must be reworded by hand in that commit: `about/index.html`, `privacy/index.html` (short version),
+  `terms/index.html` (Accounts). Launch UPDATE (owner's word first): `update public.mcq_papers set access = 'paid' where
+  access = 'login';` From the moment the pass is **On sale**, the upload page saves every new paper as paid by itself. Refund rule (`/refund-policy/`, the owner's words): no refund after a paid
+  test is opened; 100% back if asked within 24 hours and no paid test opened; failed, wrongly taken and double payments are
+  returned; an approved refund is sent within 72 hours. No automatic renewal.
+- **Database** (`20261118130000_paid_pass.sql`): `pass_plans` (public read of active plans, admin update), `promo_codes`
+  (admin only; percent 1–100 or rupees off, optional plan, max uses, dates, once per student, switch off — never deleted),
+  `pass_orders` (student reads own; written by the server; an admin may only mark paid → refunded or add a note, trigger
+  `pass_orders_guard`; refunded ends the pass, trigger `pass_orders_end_pass`), `passes` (own read; written by the server; a
+  new purchase starts when the last pass ends), `paper_opens` (the first time a student opened each paid paper; written by
+  `cbt.js`, read by the refund rule). `paper_catalog.access` says login or paid. `pass_quote` / `pass_create_order` /
+  `pass_grant` are **service-role only** and are the only place a price is worked out; `pass_grant` is idempotent (row lock)
+  and notes a second, different payment on a paid order as a double payment. All user tables cascade on account delete.
+- **Edge Functions** (verify_jwt off, they check the token themselves): `pass-checkout` (`quote`, `order`, `verify`: checks the
+  Razorpay signature with the key secret, reads the payment back from Razorpay and captures it if only authorized) and
+  `razorpay-webhook` (signature on the raw body with the webhook secret; payment.captured / order.paid grant, payment.failed
+  marks failed, refund.processed in full marks refunded). Secrets `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`,
+  `RAZORPAY_WEBHOOK_SECRET` are added by the owner in Supabase → Edge Functions → Secrets; **never in the repo or chat**. CORS
+  allows only `https://akexplained.com`.
+- **Pages.** `/pass/` (`assets/pass.js`): a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
+  loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
+  running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
+  paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
+  re-upload); a destination with `access: 'paid'` in `_data/paperDestinations.js` uploads new papers as paid.
+- **Legal pages** were changed with it: Terms ("The All Access pass"), Privacy (order record, `paper_opens`, Razorpay as the sixth
+  service), Contact and About (only payment = the pass, on akexplained.com through Razorpay), footer link to `/refund-policy/`.
+  Keep them true with any change here (rule 10). Razorpay fees and limits: never state a number not read on Razorpay's own page.
