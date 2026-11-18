@@ -729,12 +729,21 @@ from the question file, and the build stops with a plain message if a file is mi
   The source file's tags are **not** trusted: its `topicId` / `periodId` must be re-mapped to master nodes (rule 12; the database refuses anything else), and a
   question with two accepted ids or a dropped key still becomes ONE (the rule above), with the decision written into that question's explanation. A different
   front-door copy follows: "Some need a login" on `/quizzes/pyq/`, "Most papers are free" on the hub. To add another login PYQ: one registry line, build, then the owner uploads.
+- **Faint note under a question** (owner, 2026-11-18): a question may carry `"note"` (one short line, simple English, 220 characters or less).
+  `assets/cbt.js` `noteHtml()` shows it as a small italic line under the question on the test screen, the review and the wrong-answer cards
+  (`.cbt-note` in `site.css`). It is for a question whose key accepts two options, was dropped, or has a printing slip, and it **must not name the right
+  option** because it shows during the test; the counted option goes only in the explanation (review). The upload fingerprint covers the note.
+- **Generator instruction + checker** (owner, 2026-11-18): `tools/pyq/PYQ-TAGGER-INSTRUCTIONS.md` is the instruction for the AI that tags PYQ papers, so its
+  file is upload-ready (format, key decisions, note, master tags, inner periods only, English only, no Devanagari). `python3 tools/pyq/check_upload_file.py <file>`
+  runs the upload page's and the database's checks plus the site's own (tags real, no broad age, a note must not give the answer). Run it on every PYQ file
+  before it goes to the owner; send a file back that does not pass rather than editing it (rule 7 step 7 habit).
 - **First login paper** (2026-11-18): UGC NET English Paper II, June 2013, 50 questions. Four decisions (the questions are not in the repo, so only the numbers
   and the picked letters are recorded here): Q12 and Q17 (key dropped, marks to all) count (a) and (b), the answers the supplied explanations give; Q31
   (key accepts a and b) counts (b), the caverns the river reaches directly; Q33 (key accepts a and b) counts (b), checked against Browne's own sentence
   "I love to lose my self in a mystery, to pursue my Reason to an O altitudo!" (Religio Medici, Part I, section IX, Fordham Internet History Sourcebooks
   and the Harvard Classics text on Wikisource, found through web search; the Kubla Khan pages could not be opened from the session, so Q31 rests on the
-  poem's own line order).
+  poem's own line order). Q40 keeps the supplied key: its fourth pair (Doll Tearsheet, a Henry IV Part 2 character, set against The City Madam) is a printing slip, the other three
+  pairs are right and only option (a) fits them, so it carries a note. Q8, Q16 and Q19 still say "the source" in their supplied explanations (not edited; the owner decides).
 - **Paper 1 PYQs** (`paper-1-pyqs`) stay "Coming soon". Do not mix them into this hub unasked: the hub is English Paper 2 only.
 - **Dashboard:** PYQ answers feed the by-topic and by-period views through their tags. They are not in an age's level pool
   (their ids do not start with an age prefix, rule 10), so the level meter is unchanged.

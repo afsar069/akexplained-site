@@ -2048,6 +2048,9 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   font-family:var(--serif);font-size:clamp(1.02rem,1.9vw,1.2rem);line-height:1.5;
   color:var(--ink);margin-bottom:20px;max-width:62ch;
 }
+/* A faint one-line note under a question (q.note): the key accepts two options, the question was dropped, or it has a printing slip. */
+.cbt-note{font-size:.85rem;line-height:1.45;font-style:italic;color:#5F6B78;max-width:62ch;margin:-12px 0 16px}
+.cbt-rq + .cbt-note,.cbt-fcq + .cbt-note{margin:-4px 0 12px}
 /* A new line in a question stays a new line (List I / List II, and A. B. C. D.). Questions without one look the same. */
 .cbt-q,.cbt-fcq,.cbt-rq{white-space:pre-line}
 /* The passage a question points to ("Read Passage p1 above"). */

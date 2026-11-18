@@ -55,7 +55,8 @@
         String(q.correct_option_id),
         String(q.explanation == null ? '' : q.explanation).replace(/\s+/g, ' ').trim(),
         q.topicId || '',
-        q.periodId || ''
+        q.periodId || '',
+        String(q.note == null ? '' : q.note).replace(/\s+/g, ' ').trim()
       ].join('\u001e');
     });
     return [body.setId, body.level, String(body.rev), String(qs.length)].join('\u001e') + '\n' + lines.join('\n');

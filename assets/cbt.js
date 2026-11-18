@@ -83,6 +83,12 @@
     }
     return d;
   }
+  /* Sawal ke neeche ek halki, chhoti line (q.note): jab UGC ki key do option maanti hai, sawal drop hua tha,
+     ya sawal me chhapai ki kami hai. Sahi option yahan nahi likhte (test ke dauran dikhti hai); wo explanation me
+     jaata hai. note na ho to khali string. */
+  function noteHtml(q) {
+    return q && q.note ? '<p class="cbt-note">' + esc(q.note) + '</p>' : '';
+  }
   /* Passage ka dabba (sawal ke upar). Passage na ho to khali string. */
   function passageHtml(q) {
     var p = q && q.passage;
@@ -956,6 +962,7 @@
             '<p class="cbt-qnum" id="cbtQNum"></p>' +
             '<div id="cbtPassage"></div>' +
             '<p class="cbt-q" id="cbtQ"></p>' +
+            '<div id="cbtNote"></div>' +
             '<fieldset class="cbt-opts" id="cbtOpts">' +
               '<legend>Choose one answer</legend>' +
             '</fieldset>' +
@@ -1039,6 +1046,7 @@
     $('#cbtCount').textContent = 'Question ' + (i + 1) + ' of ' + Q.length;
     $('#cbtPassage').innerHTML = passageHtml(q);
     $('#cbtQ').textContent = q.question;
+    $('#cbtNote').innerHTML = noteHtml(q);
 
     var box = $('#cbtOpts');
     $$('.cbt-opt', box).forEach(function (n) { n.remove(); });
@@ -2388,7 +2396,7 @@
             '<p class="cbt-qnum">Question ' + (i + 1) +
               (q.topic && paper.topics ? ' · ' + esc(paper.topics[q.topic] || '') : '') + '</p>' +
             passageHtml(q) +
-            '<p class="cbt-fcq">' + esc(q.question) + '</p>' +
+            '<p class="cbt-fcq">' + esc(q.question) + '</p>' + noteHtml(q) +
             (shown
               ? '<div class="cbt-fcans">' +
                   '<p class="cbt-fcrow is-right"><span class="key">' +
@@ -2463,7 +2471,7 @@
         (q.topic && paper.topics ? '<span class="cbt-rtopic">' +
           esc(paper.topics[q.topic] || '') + '</span>' : '') + '</div>' +
       passageHtml(q) +
-      '<p class="cbt-rq">' + esc(q.question) + '</p>' + opts +
+      '<p class="cbt-rq">' + esc(q.question) + '</p>' + noteHtml(q) + opts +
       (q.explanation ? '<p class="cbt-why"><b>Why:</b> ' + esc(q.explanation) +
         (q.read ? ' <a href="' + esc(paper.notes || '/notes/') + '#' + esc(q.read) +
           '">Read this part \u2192</a>' : '') + '</p>' : '') +

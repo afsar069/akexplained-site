@@ -18,6 +18,9 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
 - Code: `_data/netPyqs.json` (login entry), `_data/netPyqPapers.js` (login branch, public-file guard), the hub card and `assets/net-pyq-live.js`,
   `_includes/net-pyq-cbt.njk` (gated + catalog-checked), the upload destination `net-pyq` in `_data/paperDestinations.js` with a "Which paper?" picker in
   `admin/upload-paper/` and `assets/upload-paper.js`, PYQ wording in `assets/cbt.js`, `_data/pyqHub.js`, `sitemap.njk`.
+- Added the same day: a faint `note` line under a doubtful question (Q12, Q17, Q31, Q33, Q40), the generator instruction
+  `tools/pyq/PYQ-TAGGER-INSTRUCTIONS.md` and the checker `tools/pyq/check_upload_file.py`. A read-only look at the live database (no write) found none of the 50
+  questions or ids in another paper, all 61 tags real (18 of them period nodes), and the paper not yet loaded.
 - Tested (Playwright, Supabase mocked): hub as guest / student / not live / read fails / 375px; test page as guest / student / not live; a full 50-question
   run (50/50) and its review; the free 2012 paper unchanged; the upload page end to end with the new destination. `npx eleventy` clean, no new broken link.
 
