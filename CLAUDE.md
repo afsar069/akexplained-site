@@ -755,10 +755,11 @@ from the question file, and the build stops with a plain message if a file is mi
   destination lists every planned login PYQ by its full title, so the owner can publish any year, not only 2013.
 - **The whole 2012–2025 archive is planned** (owner, 2026-11-18, from the Drive folder "UGC NET PYQ"). The four 2012 papers stay FREE
   (already in the repo); every other paper is a login slot, pre-built and "Coming soon" until the owner uploads it and marks it Live
-  (self-serve, rule 17). Paper II + Paper III run June 2012 → November 2017 (CBSE); Paper II only (100 Q) from July 2018 (NTA). The
-  merged NTA cycles are grouped by the year they were HELD and the session string keeps the real name ("December 2020 / June 2021"
-  under 2021, "December 2021 / June 2022" under 2022); June 2024 is kept as "(Cancelled)" and its re-exams (21 Aug two shifts, 4 Sept)
-  and December 2024 "(07.01.2025)" sit under 2024. Counts in the registry are the exam's standard per-era counts (50 / 75 / 100); the
+  (self-serve, rule 17). Paper II + Paper III run June 2012 → November 2017 (CBSE); Paper II only (100 Q) from July 2018 (NTA). A paper
+  is grouped by the **cycle it is for, not the year it was held** (owner, 2026-11-18: an exam delayed into the next year still belongs to
+  its cycle), so the year is the earliest year in the session name: "December 2020 / June 2021" under **2020**, "December 2021 / June 2022"
+  under **2021**, and "December 2024 (07.01.2025)" (held January 2025) under **2024**. The session string keeps the real name; June 2024 is
+  kept as "(Cancelled)" and its re-exams (21 Aug two shifts, 4 Sept) sit under 2024. Counts in the registry are the exam's standard per-era counts (50 / 75 / 100); the
   hub card shows the **exact** count from the live catalog once a paper is live (`assets/net-pyq-live.js` updates `[data-pyq-count]`),
   so a dropped-question paper reads right. The card heading is the paper's `session` (not month+year), so the merged cycles read
   correctly. The `/quizzes/pyq/` front-door card shows "N papers · 2012–2025 · ..." with the access worded from the free/login split.

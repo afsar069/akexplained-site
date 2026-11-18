@@ -13,8 +13,8 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
   pre-built and "Coming soon" until the owner uploads its questions at `/admin/upload-paper/` and marks it Live (self-serve, rule 17).
   No questions were opened or verified — year / session / paper / shift all come from the Drive file names.
 - Paper II + Paper III for June 2012 → November 2017; Paper II only (100 Q) from July 2018. Shifts, the merged cycles
-  (December 2020 / June 2021 under 2021; December 2021 / June 2022 under 2022), June 2024 (Cancelled), its re-exams and
-  December 2024 (07.01.2025) are all represented. Registry counts are the standard 50 / 75 / 100; `net-pyq-live.js` shows the exact
+  (grouped by the cycle they are FOR, not when they were held: December 2020 / June 2021 under 2020; December 2021 / June 2022 under
+  2021; December 2024 held Jan 2025 under 2024), June 2024 (Cancelled) and its re-exams are all represented. Registry counts are the standard 50 / 75 / 100; `net-pyq-live.js` shows the exact
   catalog count once a paper is live.
 - 56 Playwright checks passed (hub guest/student/not-live/read-fails/375px, catalog count override, test page flows, upload page,
   regressions). Build clean, no new broken link. **Pending: the owner uploads each paper's questions over time; nothing else is needed.**
