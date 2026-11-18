@@ -3974,3 +3974,4 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 .passsum-total{border-top:1px solid var(--card-line);margin-top:4px;padding-top:8px}
 .passsum-total dd{font-size:1.15rem}
 @media (max-width:420px){ .passpromo{flex-direction:column;align-items:stretch} }
+.admsubhead{font-size:1rem;margin:22px 0 8px;color:var(--ink)}

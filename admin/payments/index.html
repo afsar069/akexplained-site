@@ -115,6 +115,30 @@
     </div>
 
     <div class="authcard">
+      <h2>Give a free pass</h2>
+      <p class="small">Open every paid test for one student, free, for as many days as you choose. If the student already has a pass, the new days start when it ends.</p>
+      <div class="formerror" id="admGiftError" role="alert" hidden></div>
+      <div class="authnotice" id="admGiftOk" role="status" hidden></div>
+      <form id="admGiftForm" novalidate>
+        <label class="field">
+          <span>Which student?</span>
+          <select id="admGiftStudent"><option value="">Loading students…</option></select>
+        </label>
+        <label class="field">
+          <span>How many days</span>
+          <input id="admGiftDays" type="number" min="1" max="3650" step="1" value="30" inputmode="numeric">
+        </label>
+        <label class="field">
+          <span>Note for yourself <small>(students do not see it)</small></span>
+          <input id="admGiftNote" type="text" maxlength="200" autocomplete="off">
+        </label>
+        <button class="btn" type="submit">Give the pass</button>
+      </form>
+      <h3 class="admsubhead">Free passes you have given</h3>
+      <div id="admGifts"><p class="small">Loading…</p></div>
+    </div>
+
+    <div class="authcard">
       <h2>Orders</h2>
       <div id="admOrders"><p class="small">Loading…</p></div>
       <p class="small admnote">Refund rule: a full refund if asked within 24 hours of paying and no paid test was opened. A failed, wrongly taken or double payment is always returned. Refund the money in your Razorpay dashboard first; the order then turns to Refunded by itself. If it does not, press Mark refunded.</p>

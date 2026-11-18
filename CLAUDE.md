@@ -594,8 +594,10 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
   deletes — no one updates), `notification_reads` (a student reads/inserts only their own; it clears the bell
   count across devices). Admin **read** policies were added to `profiles`, `attempts`, `quiz_runs` and `reviews`,
   and admin **update/delete** to `reviews`. `/privacy/` now lists dashboard notices (kept true, rule 10).
-- **Payments** (`/admin/payments/`, rule 22) — the pass price and "on sale", promo codes (make, turn off), and orders
-  with "paid test opened?" for the refund rule and a Mark refunded button.
+- **Payments** (`/admin/payments/`, rule 22) — the pass price and "on sale", promo codes (make, turn off), **Give a free pass**
+  (owner, 2026-11-18: pick a student, a number of days and a note; a `passes` row with `source = 'admin'`, stacked after any
+  running pass; "Stop now" ends it; migration `20261118150000_admin_give_pass.sql`), and orders with "paid test opened?" for the
+  refund rule and a Mark refunded button.
 - **Not here yet:** big PDFs on Cloudflare R2 (rule 13).
 
 ## 17. Self-serve publish — a live paper appears with no rebuild (owner, 2026-11-14)
@@ -793,8 +795,10 @@ The State PSC hub lists UP Assistant Professor (live) and, under it, **Coming so
 - **Important Links band on that page too** (owner, 2026-11-15), under the resource cards. The band is now one shared include, **`_includes/hub-links.njk`** (list `_data/hubLinks.json`, text from `hubLinksText`), used by `/quizzes/pyq/`, `/quizzes/mock-tests/`, this page and the Paper 2 mock tests list (`paper-2-mock-tests/`, owner 2026-11-15; the test and review pages themselves have no band); `state-psc-layout.njk` shows it when a page sets `hub_links: true` and `hub_links_text` in its front matter. Edit the markup once and all three change.
 
 ## 22. The paid layer — All Access pass, promo codes, Razorpay (owner, 2026-11-18)
-**State:** built and tested; database and Edge Functions are live but **switched off** (plan not on sale, no paper paid,
-no Razorpay keys). Launch steps and open questions: `docs/accounts-status.md`.
+**State: LAUNCHED 2026-11-18** (owner: "launch karo"). Razorpay live keys and live webhook are set (owner, in Supabase
+secrets); one Test Mode payment passed end to end before that. Every login paper was made paid by the one-time UPDATE,
+`_data/paidLayer.js` is `live: true`. The owner sets the real price and ticks On sale on `/admin/payments/`. Details and
+history: `docs/accounts-status.md`.
 - **Owner's decisions.** One pass for now, "All Access": one payment opens every paid mock test. 30 days per period,
   1 to 6 periods at a time (both editable). The **price is not in code**: it is `pass_plans.price_paise`, set by the owner on
   `/admin/payments/`; never invent one. Later each course gets its own plan (one more `pass_plans` row; the paid read policy

@@ -27,6 +27,9 @@ _Last updated: 2026-11-18. UP PGT English MCQs Days 1–10 are free, no-login CB
   that order carries the note "Razorpay Test Mode payment"). Then **Live keys** (`rzp_live_`) replaced the test keys in Supabase
   and a **Live webhook** with its own secret was added (same URL, same 4 events). Plan: price Rs 25 (a test price), **not on sale**.
   No real payment has been made yet.
+- **LAUNCHED 2026-11-18** (owner: "launch karo"): `paidLayer.live = true`, About / Privacy / Terms / Anglo-Norman registry
+  text and the CBT screens worded for the pass, every login paper made paid by the one-time UPDATE, and **Give a free pass**
+  added to `/admin/payments/`. Still the owner's: the real price, On sale, and any launch promo code.
 - **Launch steps (in order, each needs the owner):** 1. owner makes a Razorpay account; 2. owner adds `RAZORPAY_KEY_ID`,
   `RAZORPAY_KEY_SECRET` (Test Mode) and `RAZORPAY_WEBHOOK_SECRET` in Supabase → Edge Functions → Secrets, and the webhook URL
   `https://almlqoxcyzwieuwrgwry.supabase.co/functions/v1/razorpay-webhook` with events payment.captured, order.paid,
