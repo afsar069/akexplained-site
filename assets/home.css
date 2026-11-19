@@ -208,6 +208,18 @@
   .quizcard::after{display:none}
   .quizcard .quiz-cta{grid-column:2;font-size:.8rem;margin-top:0}
 }
+/* Sirf phone: Quizzes zone ki cards bhi patli row, ek ke neeche ek (Pick Your Exam jaisi). Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .quizgrid{gap:9px}
+  .quizcard{display:flex;flex-direction:row;align-items:center;gap:12px;padding:7px 12px;border-radius:12px}
+  .quizcard .ic{width:40px;height:40px;border-radius:12px;grid-row:auto;flex:none}
+  .quizcard .ic > svg{width:22px;height:22px}
+  .quizcard .txt{flex:1}
+  .quizcard h3{margin:0;font-size:.98rem}
+  .quizcard p{display:none}
+  .quizcard .quiz-cta{width:auto;grid-column:auto;margin:0;padding:0;background:none;border:0}
+  .quizcard .cta-text{display:none}
+}
 @media(prefers-reduced-motion:reduce){
   .quizzone .quizcard,.quizzone .quizcard *,.quizzone .quizcard::after{transition:none!important;animation:none!important;transform:none!important}
   #exams .examcard,#exams .examcard *,#exams .examcard::before,#exams .examcard::after{transition:none!important;animation:none!important;transform:none!important}
