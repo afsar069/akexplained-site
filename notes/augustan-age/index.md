@@ -5,11 +5,11 @@ description: A simple guide to the Augustan Age of English literature, its poetr
 eyebrow: Notes · Literary Ages
 mark: A
 crumb_label: Augustan Age
-hero_image: /assets/ages/augustan-hero.webp
-hero_class: hero-age
+hero_image: /assets/ages/augustan-hero-full-light.webp
+hero_class: hero-age hero-article-full
 hero_variants:
   - age: age-of-sensibility
-    image: /assets/ages/age-of-sensibility-hero.webp
+    image: /assets/ages/age-of-sensibility-hero-full-light.webp
 updated: 2026-10-13
 exams:
   - UGC-NET
