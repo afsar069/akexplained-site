@@ -949,6 +949,7 @@ question file, and the build stops with a plain message if a file is missing or 
   (3) One line in `_data/pgtPyqs.json`. (4) `npx @11ty/eleventy`, link check, browser test, push the branch (`main` only when asked, rule 5).
   Verify only the doubtful questions (a web search, say which page); a question whose options are damaged beyond repair is **left out**, never guessed, and
   `printedCount` keeps the printed total so the hub says so. The audit trail is `tools/pyq/decisions/<setId>-notes.md`.
+  **The owner can have the tagging done by ChatGPT** with `tools/pyq/UP-PGT-PYQ-TAGGER-INSTRUCTIONS.md` (self-contained; the owner attaches the .docx and `taxonomy-master-reference.csv`). Its file and report come back to Claude, who runs `check_upload_file.py` and still checks the left-out and doubtful lists; the generator never changes a key or a fact by itself.
 - **First paper** (2026-11-19): UP PGT English **2006**, 125 printed questions, **122 shown**. Left out: Q84 (two options misspelt in print), Q111 (three of the four options
   misspelt in print) and Q119 (a two-part sentence whose options repeat "No error"); their text is in the notes file so the owner can supply the original. Changed after
   checking: Q118's key (the supplied key said "our" is an error; "Every one of us ... our" agrees, so it now counts "No error"), Q32's option text ("Four times"), a note on
