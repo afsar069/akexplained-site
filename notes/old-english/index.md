@@ -123,7 +123,7 @@ Writing came in two systems. The oldest is the runic alphabet, the **futhorc**, 
 
 Nearly all Old English poetry sits in four manuscripts, all written around the year 1000, and none of them prepared as a complete or official collection.
 
-<figure class="article-illustration article-illustration--medium" data-illustration="manuscripts">
+<figure class="article-illustration" data-illustration="manuscripts">
   <img src="/assets/articles/old-english/manuscripts.webp" alt="Representative painting of early medieval parchment manuscripts on a library desk." width="1200" height="800" loading="lazy" decoding="async">
   <figcaption>Representative manuscripts preserving Old English writing.</figcaption>
 </figure>

@@ -9,7 +9,7 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
 ## Old English section illustrations — 2026-11-19
 - Owner requested three representative paintings within `/notes/old-english/`: Political life (king and advisers), Social life (hall and scop), and Religion (monastic manuscript copying).
 - Assets live in `assets/articles/old-english/`, as WebP under 200 KB each, with captions and lazy loading. The original three use 1200 × 800 source dimensions and fill the paragraph width.
-- Four additional paintings cover Economic life, The language, How the writing survived and Beowulf. Economic life floats right and the language image floats left beside prose on wider screens; both stack on phones. The manuscript image is centred at up to 480px; Beowulf uses the full column. All preserve their natural aspect ratios.
+- Four additional paintings cover Economic life, The language, How the writing survived and Beowulf. Economic life floats right and the language image floats left beside prose on wider screens; both stack on phones. The manuscript and Beowulf images use the full text column. Standalone article images must fill that column; smaller images are reserved for text-beside-image layouts (owner correction). All preserve their natural aspect ratios.
 - Existing article wording and hero artwork remain intact. Captions describe representative scenes, not a named historical event.
 
 ## Full-width artwork on all age articles — authorized rollout (2026-11-19)
