@@ -13,6 +13,7 @@
 {% if examReview or not mockLiveAtBuild %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'State PSC',h:'/exams/state-psc/'},{t:'UP Assistant Professor',h:'/exams/state-psc/up-assistant-professor/'},{t:'Mock Tests',h:base},{t:'Mock Test ' ~ n,h:base ~ 'test-' ~ n ~ '/'}] %}
 {% set mainClass = "cbt" %}
+{% set bodyClass = "pgt-cbt-page" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">
