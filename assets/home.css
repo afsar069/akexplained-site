@@ -220,6 +220,22 @@
   .quizcard .quiz-cta{width:auto;grid-column:auto;margin:0;padding:0;background:none;border:0}
   .quizcard .cta-text{display:none}
 }
+/* Sirf phone: heading hari patti me, baaki (pause button, link, line) hata diya, section chhota, rang thoda gehra. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #exams,#quizzes{padding:22px 0}
+  #exams .sechead,#quizzes .sechead{margin-bottom:12px}
+  #exams .quiz-actions,#quizzes .quiz-actions,#exams .seclede,#quizzes .seclede{display:none}
+  #exams .sechead h2,#quizzes .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .examcard{
+    background:linear-gradient(160deg,color-mix(in srgb,var(--c1,#F4F1E6) 72%,var(--exam-accent)),color-mix(in srgb,var(--c2,#EAE6D6) 72%,var(--exam-accent)));
+  }
+  .quizcard{
+    background:linear-gradient(145deg,color-mix(in srgb,var(--quiz-soft) 82%,var(--quiz-accent)),color-mix(in srgb,var(--quiz-soft) 68%,var(--quiz-accent)));
+  }
+}
 @media(prefers-reduced-motion:reduce){
   .quizzone .quizcard,.quizzone .quizcard *,.quizzone .quizcard::after{transition:none!important;animation:none!important;transform:none!important}
   #exams .examcard,#exams .examcard *,#exams .examcard::before,#exams .examcard::after{transition:none!important;animation:none!important;transform:none!important}
