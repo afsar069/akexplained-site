@@ -509,7 +509,6 @@ details.faq .body p:last-child{margin-bottom:0}
 /* Optional sizes let selected paintings sit beside the prose. */
 .article figure.article-illustration--float{float:right;width:44%;max-width:18rem;margin:4px 0 16px 24px}
 .article figure.article-illustration--left{float:left;margin:4px 24px 16px 0}
-.article figure.article-illustration--medium{width:min(100%,30rem);margin:24px auto;clear:both}
 .article figure.article-illustration--float ~ :is(h2,h3){clear:both}
 @media (max-width:640px){
   .article figure.article-illustration--float{float:none;width:100%;max-width:none;margin:24px 0}

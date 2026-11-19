@@ -20,6 +20,9 @@ breaking it breaks a promise already made.
 ## Image weight and format (owner, 2026-11-19)
 Use **WebP for website pictures**, aiming for **200 KB or less per image**. Do not add heavy JPG/JPEG pictures. Convert and compress generated or supplied artwork before using it, inspect visual quality, and check the actual exported file size. Keep agreed dimensions unless the owner asks to change them. When replacing a cached image, use a fresh asset filename and update its reference so visitors receive the lighter version.
 
+## Article image width (owner, 2026-11-19)
+A standalone article image must span **100% of the text column**, aligned with the left and right edges of the paragraphs. Show the whole image at its natural aspect ratio (`width:100%; height:auto`), without cropping or a narrower centred maximum width. A small image is appropriate when prose sits beside it; on phones, stack it at the full text width. Use a smaller standalone image only if the owner explicitly asks for one.
+
 ## 3. Structure
 - `index.html` — landing page (plain HTML + `assets/home.css` + `assets/home.js`)
 - `_includes/base.njk` — layout for markdown article pages (Pages CMS publishes these)
