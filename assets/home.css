@@ -329,6 +329,29 @@
 .vidcard h3{font-size:.98rem;margin-bottom:3px;line-height:1.3;min-height:2.6em;display:flex;align-items:flex-start}
 .vidcard p{font-size:.83rem;margin:0}
 
+/* Sirf phone: Video Lessons bhi hari heading patti ke saath, har video ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #videos{padding:22px 0}
+  #videos .sechead{margin-bottom:12px}
+  #videos .sechead::after,#videos .sechead .more,#videos .seclede{display:none}
+  #videos .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .vidgrid{grid-template-columns:1fr;gap:10px}
+  .vidcard{
+    display:grid;grid-template-columns:42% minmax(0,1fr);column-gap:13px;align-items:center;
+    padding:9px;border:1px solid var(--card-line);border-radius:13px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .vidcard .thumb{grid-row:1 / span 2;margin-bottom:0;border-radius:10px}
+  .vidcard .play{width:34px;height:34px}
+  .vidcard .play svg{width:16px;height:16px}
+  .vidcard h3,.vidcard p{grid-column:2}
+  .vidcard h3{min-height:0;margin:0 0 3px;font-size:1rem;align-self:end}
+  .vidcard p{align-self:start;color:var(--teal-dark);font-weight:600;font-size:.8rem}
+}
+
 /* ---------- Meet the author ---------- */
 .author{background:linear-gradient(180deg,var(--bg),var(--cream))}
 .authorbox{
