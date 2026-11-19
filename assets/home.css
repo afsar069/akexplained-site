@@ -384,6 +384,25 @@
   .authorbox .says{text-align:left}
 }
 
+/* Sirf phone: Meet the Author bhi hari heading patti ke saath. Photo side me (left), bio ka text uske side se shuru hokar neeche tak aata hai. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #author{padding:22px 0}
+  #author .sechead{margin-bottom:12px}
+  #author .sechead::after{display:none}
+  #author .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .authorbox{
+    display:block;text-align:left;padding:12px;border:1px solid var(--card-line);border-radius:13px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .authorbox::after{content:"";display:block;clear:both}
+  .authorbox .photo{float:left;width:104px;height:104px;margin:0 13px 6px 0;border-width:3px}
+  .authorbox .bio p{font-size:.92rem;line-height:1.55;margin:0 0 12px}
+  .authorbox .says{clear:both;background:var(--paper);padding:11px 14px}
+}
+
 /* ---------- Community ---------- */
 .commgrid{display:grid;gap:15px;grid-template-columns:repeat(auto-fit,minmax(205px,1fr))}
 .commcard{
