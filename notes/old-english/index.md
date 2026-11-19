@@ -33,6 +33,11 @@ Roman rule in Britain came to an end in the early fifth century, when the last t
 
 The newcomers did not build one kingdom. They built many small ones, which fought, absorbed each other and shifted borders constantly. Later writers called the main group of them the Heptarchy, the "seven kingdoms": Kent, Sussex, Wessex, Essex, East Anglia, Mercia and Northumbria. The name is a convenient simplification, not an exact political fact, because the number of kingdoms rose and fell over time.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/old-english/political-life.webp" alt="Representative painting of an Anglo-Saxon king meeting advisers outside a timber hall." width="1200" height="800" loading="lazy" decoding="async">
+  <figcaption>An Anglo-Saxon king meets his advisers.</figcaption>
+</figure>
+
 Power moved around. In the seventh century Northumbria was strongest, and it was there that the great age of monastic learning took place. In the eighth century Mercia took the lead, above all under King Offa, who ruled from 757 to 796 and built the long earthwork along the Welsh border that still carries his name. Then came the Vikings, and the balance changed again.
 
 Norse raiders attacked the monastery of Lindisfarne in 793, and the raids soon turned into invasion and settlement. By the 870s only Wessex was holding out. Its king, **Alfred the Great**, who ruled from 871 to 899, fought the Danish army to a standstill, made a treaty with their leader Guthrum, and accepted a divided England: the north and east became the **Danelaw**, under Danish law and custom, while Wessex and its allies held the south and west. Alfred's children and grandchildren pushed the frontier back north, and in 927 his grandson Æthelstan became the first king to rule all of England.
@@ -44,6 +49,11 @@ That unity did not last quietly. Fresh Danish attacks came in the reign of Æthe
 Anglo-Saxon society was built on loyalty between a lord and the men who fought for him. The lord gave his followers food, shelter, weapons, rings and gold; in return they gave him service in war and, if it came to it, their lives. This bond is usually called the **comitatus**, a Latin word taken from the Roman historian Tacitus, who described the same custom among the Germanic tribes of his own day. It is the single most important social fact behind Old English heroic poetry.
 
 The centre of this world was the hall. The hall was where men ate, drank, slept and received gifts; it was warm, lit and loud, and outside it lay cold, darkness and danger. In the hall the **scop**, the court poet, recited verse to the sound of a harp, praising the lord, remembering old battles and telling stories of heroes long dead. A good lord was a "ring-giver". A generous hall was a sign of a healthy kingdom.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/old-english/social-life.webp" alt="Representative painting of a scop playing a lyre for people gathered in an Anglo-Saxon hall." width="1200" height="800" loading="lazy" decoding="async">
+  <figcaption>Storytelling and shared life in an Anglo-Saxon hall.</figcaption>
+</figure>
 
 Outside the hall, society ran on kinship. If a man was killed, his family had two choices: take revenge, or accept payment. That payment was called **wergild**, literally "man-price", and the amount was fixed by law according to the dead man's rank. The system was meant to stop feuds, and often it did; but the poetry is full of feuds that payment could not end. The worst thing that could happen to a man was not death but exile — to lose his lord, his hall and his kin, and to wander alone. Several of the finest Old English poems are spoken by exactly such a man.
 
@@ -64,6 +74,11 @@ The settlers brought their own gods with them: Woden, Thunor, Tiw and Frig, whos
 Christianity came from two directions. In 597 Pope Gregory the Great sent **Augustine** to Kent, where King Æthelberht allowed him to preach and later accepted baptism; Canterbury became the centre of the Roman mission. From the north came Irish monks, above all Aidan, who founded Lindisfarne in 635 at the invitation of the Northumbrian king Oswald. The two traditions differed on small but visible points, especially the method of calculating Easter. The matter was settled at the **Synod of Whitby in 664**, where the Northumbrian king chose Roman practice.
 
 Conversion brought the Latin alphabet, parchment, books and schools. Within two generations Northumbria had produced one of the finest scholars in Europe, **Bede** of Jarrow, who died in 735 and whose *Ecclesiastical History of the English People* remains the main source for the whole early period. Learning spread outward: Aldhelm in Wessex, and later Alcuin of York, who left England to run the palace school of Charlemagne.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/old-english/religion.webp" alt="Representative painting of monks copying parchment manuscripts in an Anglo-Saxon monastery." width="1200" height="800" loading="lazy" decoding="async">
+  <figcaption>Monks copy manuscripts in an Anglo-Saxon monastery.</figcaption>
+</figure>
 
 The Viking wars broke much of this. Alfred complained that by his time there were very few men south of the Humber who could understand their service books in Latin. Recovery came in the tenth century with the **Benedictine Reform**, led by Dunstan, Æthelwold and Oswald, who restored monastic discipline, rebuilt libraries and set a common rule for English monasteries in the document known as the *Regularis Concordia*. Almost every surviving Old English manuscript of literary value was copied in the hundred years after that reform.
 
