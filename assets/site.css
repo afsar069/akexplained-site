@@ -4354,7 +4354,6 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .mcq-sec-page .grid.g2 > .card{padding:10px 14px;border-radius:12px}
   .mcq-sec-page .grid.g2 > .card .meta{margin:0 0 1px;font-size:.66rem}
   .mcq-sec-page .grid.g2 > .card h3{margin:0;font-size:1rem}
-  .mcq-sec-page .grid.g2 > .card p:not(.meta){display:none}
 }
 
 
@@ -4386,3 +4385,50 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   }
   .mcq-sec-page .iq-level-body small{font-size:.7rem}
 }
+
+/* Sirf phone, baaki sabhi pages (Exams, Notes, Timeline, About, Contact, University, policy pages): cards patli rows,
+   sajaavat wali badi tasveer hat gayi. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  /* intro-band ke neeche ki sajaavat wali tasveer ke liye 150px khali jagah thi */
+  .mcq-sec-page .intro-band{padding:20px 0 24px}
+  .mcq-sec-page .intro-band::before{display:none}
+
+  /* Link wale cards (Exams, Quizzes) aur Notes ke cards: ek patli row, description ki sirf 2 line */
+  .mcq-sec-page .grid{gap:8px}
+  .mcq-sec-page .grid > a.card,.thin-cards .grid > .card{padding:10px 14px;border-radius:12px}
+  .mcq-sec-page .grid > a.card .meta,.thin-cards .grid > .card .meta{margin:0 0 1px;font-size:.66rem}
+  .mcq-sec-page .grid > a.card h3,.thin-cards .grid > .card h3{margin:0 0 2px;font-size:1rem}
+  .mcq-sec-page .grid > a.card p:not(.meta),.thin-cards .grid > .card p:not(.meta){
+    font-size:.8rem;line-height:1.4;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+
+  /* English Literature (timeline): har age ek patli row, chhoti tasveer baayein */
+  .mcq-sec-page .age-grid{grid-template-columns:minmax(0,1fr);gap:8px}
+  .mcq-sec-page .age-tile{
+    display:grid;grid-template-columns:84px minmax(0,1fr);column-gap:12px;align-items:center;padding:8px;border-radius:12px;
+  }
+  .mcq-sec-page .age-tile .thumb{grid-row:1 / span 3;margin:0;border-radius:9px}
+  .mcq-sec-page .age-tile h3,.mcq-sec-page .age-tile .era,.mcq-sec-page .age-tile .who{grid-column:2;margin-left:0;margin-right:0}
+  .mcq-sec-page .age-tile h3{font-size:.98rem}
+  .mcq-sec-page .age-tile .who{
+    display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;overflow:hidden;
+  }
+
+  /* About: lekhak ka photo chhota */
+  .mcq-sec-page .about-portrait{max-width:200px}
+}
+
+/* Login page (phone): heading hari patti me, uski line safed patti me */
+@media(max-width:559px){
+  .login-page .login-eyebrow{display:none}
+  .login-page .login-left h1{
+    margin:0;padding:11px 16px 10px;background:var(--teal-dark);color:#fff;border-radius:12px 12px 0 0;
+    font:600 1.2rem/1.3 var(--serif);letter-spacing:normal;
+  }
+  .login-page .login-subtitle{
+    margin:0 0 16px;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font:600 .88rem/1.45 var(--sans);font-style:normal;
+    border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
+  }
+}
+
