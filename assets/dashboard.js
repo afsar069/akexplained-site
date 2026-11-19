@@ -1034,13 +1034,7 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
-  /* The header: the banner painting with the owner's own quote, then a
-     centred greeting on its own painted panel. Both pictures carry their own
-     artwork and wording, so nothing here changes when one is replaced:
-       /assets/dash-banner.webp   the wide painting at the top
-       /assets/dash-box.webp      the panel the greeting sits on (CSS) */
-  var HERO_ALT = 'Professor AK beside a university building, with his words: ' +
-    '“Literature is not just to read, but to think, question and connect with life.”';
+  /* The top banner shares the Daily artwork; the greeting panel stays below. */
 
   function welcomeHero(ctx) {
     var name = ctx.name || 'there';
@@ -1051,7 +1045,8 @@
     var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
     return '<section class="dashhero">' +
       '<div class="dashhero-banner">' +
-        '<img src="/assets/dash-banner.webp" alt="' + esc(HERO_ALT) + '" width="1460" height="324">' +
+        '<picture><source media="(max-width:760px)" srcset="/assets/daily-header-sm.webp">' +
+        '<img src="/assets/daily-header.webp" alt="" width="2000" height="667"></picture>' +
       '</div>' +
       '<div class="dashhero-box">' +
         '<img class="dashhero-ava" src="' + ((window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(ctx.avatar) : '/assets/avatars/default.svg') + '" alt="" width="74" height="74">' +
