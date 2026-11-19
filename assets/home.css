@@ -511,3 +511,27 @@
 }
 @media (max-width:860px){.deco-books{display:none}}
 
+
+/* Sirf phone: What Our Students Say bhi hari heading patti ke saath, review card chhota. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #reviews{padding:22px 0}
+  #reviews .sechead{margin-bottom:12px;justify-content:flex-start;text-align:left}
+  #reviews .sechead h2::after{display:none}
+  #reviews .seclede{display:none}
+  #reviews .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;text-align:left;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .rvcard{padding:12px 14px;gap:6px;border-radius:12px}
+  .rvcard .rvhead{font-size:.98rem}
+  .rvcard .txt{font-size:.9rem;line-height:1.5}
+  .rvcard .face{width:36px;height:36px}
+  .rvcard .who{gap:10px;padding-top:2px}
+  .rvcard.placeholder{min-height:0;flex-direction:column;align-items:stretch;text-align:center;padding:12px 14px;gap:8px}
+  .rvcard.placeholder .face{display:none}
+  .rvcard.placeholder .txt{max-width:none;font-size:.92rem}
+  .rvcard.placeholder .btn{display:block;text-align:center;padding:10px 14px}
+  .rvcard.placeholder.dim{display:none}
+  .rvbtn{width:34px;height:34px;font-size:1.3rem}
+  .rvcta{margin-top:12px;min-height:44px}
+}

@@ -4304,3 +4304,85 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .mcq-sec-page .agehub-go-lock{min-width:0;padding:7px 12px}
 }
 
+/* Sirf phone, /quizzes/ ke pages: cards patli rows (app jaisi), Daily Quiz ki list chhoti. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  /* Daily Quiz: har period ek patli row: chhoti tasveer, naam aur saal, chhota Start */
+  .mcq-sec-page .dq-grid{gap:8px}
+  .mcq-sec-page .dq-card{
+    display:grid;grid-template-columns:48px minmax(0,1fr) auto;column-gap:12px;align-items:center;
+    min-height:0;padding:8px 12px 8px 8px;border-radius:12px;
+  }
+  .mcq-sec-page .dq-art{display:contents}
+  .mcq-sec-page .dq-pic,.mcq-sec-page .dq-pic.is-tile{
+    position:static;grid-column:1;grid-row:1;width:48px;height:48px;max-width:none;aspect-ratio:1;
+    object-fit:cover;object-position:center top;border-radius:10px;border:1px solid rgba(255,255,255,.9);
+    box-shadow:none;mix-blend-mode:normal;background:rgba(255,255,255,.6);
+  }
+  .mcq-sec-page .dq-ph{position:static;grid-column:1;grid-row:1;width:48px;height:48px;border-radius:10px}
+  .mcq-sec-page .dq-card:has(.dq-pic,.dq-ph) .dq-text{max-width:none}
+  .mcq-sec-page .dq-text{grid-column:2;grid-row:1;min-width:0}
+  .mcq-sec-page .dq-title{font-size:.98rem;line-height:1.25}
+  .mcq-sec-page .dq-years{display:inline;font-size:.78rem}
+  .mcq-sec-page .dq-alias::before{content:" \00B7  "}
+  .mcq-sec-page .dq-go{
+    grid-column:3;grid-row:1;align-self:center;display:flex;align-items:center;justify-content:center;
+    width:34px;height:34px;padding:0;border-radius:50%;font-size:0;line-height:1;
+  }
+  .mcq-sec-page .dq-go::after{content:"\2192";font-size:1.1rem;font-weight:700}
+  .mcq-sec-page .dq-card.is-soon .dq-go::after{content:"\00B7  \00B7  \00B7";font-size:.9rem;letter-spacing:0}
+  .mcq-sec-page .dq-filters{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px;width:100%}
+  .mcq-sec-page .dq-select{min-height:42px;padding:8px 30px 8px 12px;font-size:.85rem;flex:none;width:100%;min-width:0}
+
+  /* PYQ aur Mock Tests: exam cards patli rows */
+  .mcq-sec-page .exam-cats{gap:8px}
+  .mcq-sec-page .exam-cat{display:flex;align-items:center;gap:12px;padding:9px 12px;min-height:0;border-radius:12px}
+  .mcq-sec-page .exam-cat-ic{width:40px;height:40px;border-radius:11px;flex:none}
+  .mcq-sec-page .exam-cat-ic img{width:22px;height:22px}
+  .mcq-sec-page .exam-cat-txt{gap:1px}
+  .mcq-sec-page .exam-cat-txt strong{font-size:1rem}
+  .mcq-sec-page a.exam-cat .exam-cat-txt > span{display:none}
+  .mcq-sec-page .exam-cat-txt > span,.mcq-sec-page .exam-cat-txt small{
+    font-size:.78rem;line-height:1.35;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .mcq-sec-page a.exam-cat .exam-cat-txt > span{display:none}
+  .mcq-sec-page .exam-cat-go{flex:none;align-self:center;min-height:0;height:auto;padding:7px 12px;font-size:.78rem;border-radius:8px}
+  .mcq-sec-page .exam-cat.is-soon .exam-cat-go{padding:5px 8px;font-size:.66rem}
+
+  /* /quizzes/: "Two kinds of practice" cards ek line ki row (lamba paragraph chhupa) */
+  .mcq-sec-page .grid.g2{gap:8px}
+  .mcq-sec-page .grid.g2 > .card{padding:10px 14px;border-radius:12px}
+  .mcq-sec-page .grid.g2 > .card .meta{margin:0 0 1px;font-size:.66rem}
+  .mcq-sec-page .grid.g2 > .card h3{margin:0;font-size:1rem}
+  .mcq-sec-page .grid.g2 > .card p:not(.meta){display:none}
+}
+
+
+/* Sirf phone, sabhi test pages: "Begin the test" wala shuru screen chhota aur app jaisa. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .cbt-start{padding:16px 14px;border-radius:12px}
+  .cbt-start h1,noscript .cbt-start h2{font-size:1.25rem;margin-bottom:4px}
+  .cbt-start .lede{font-size:.9rem;margin-bottom:12px;line-height:1.45}
+  .cbt-facts{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:14px}
+  .cbt-facts .cbt-fact:last-child:nth-child(odd){grid-column:auto}
+  .cbt-fact{padding:8px 10px;border-radius:10px}
+  .cbt-fact b{font-size:1rem;line-height:1.25}
+  .cbt-fact span{font-size:.62rem}
+  .cbt-rules{margin:0 0 14px 16px;font-size:.84rem;line-height:1.45}
+  .cbt-rules li{margin-bottom:3px}
+  .cbt-neg{margin-bottom:14px}
+}
+
+/* Sirf phone, Daily Quiz ka "Set Up Your Quiz": Easy aur Hard side by side, card chhota. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .mcq-sec-page .iq-card{padding:14px;border-radius:12px}
+  .mcq-sec-page .iq-lede{font-size:.88rem;line-height:1.45;margin-bottom:10px}
+  .mcq-sec-page .iq-levels{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:8px}
+  .mcq-sec-page .iq-level-body{padding:10px 11px}
+  .mcq-sec-page .iq-level-body b{font-size:1rem}
+  .mcq-sec-page .iq-level-body > span{
+    font-size:.74rem;line-height:1.35;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .mcq-sec-page .iq-level-body small{font-size:.7rem}
+}
