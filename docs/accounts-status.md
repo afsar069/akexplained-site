@@ -6,6 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Middle English article illustrations — 2026-11-19
+- Eight distinct scenes in `/notes/middle-english/`: Hastings, a guild workshop, the wool trade, church life, printing, the Green Knight, Canterbury pilgrims and a pageant play.
+- Styles move from tapestry-inspired Hastings to Gothic manuscript painting and hand-coloured early woodcut treatments for printing and drama. These are representative reconstructions or imagined literary scenes, not historical artefacts.
+- WebP assets under 200 KB each in `assets/articles/middle-english/`, with captions, alt text and lazy loading. The guild workshop and church images sit beside prose on wider screens and stack on phones; the other six fill the text column without cropping. Article wording and hero variants remain intact.
+
 ## Old English section illustrations — 2026-11-19
 - Owner requested three representative paintings within `/notes/old-english/`: Political life (king and advisers), Social life (hall and scop), and Religion (monastic manuscript copying).
 - Assets live in `assets/articles/old-english/`, as WebP under 200 KB each, with captions and lazy loading. The original three use 1200 × 800 source dimensions and fill the paragraph width.

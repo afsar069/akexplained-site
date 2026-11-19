@@ -23,6 +23,9 @@ Use **WebP for website pictures**, aiming for **200 KB or less per image**. Do n
 ## Article image width (owner, 2026-11-19)
 A standalone article image must span **100% of the text column**, aligned with the left and right edges of the paragraphs. Show the whole image at its natural aspect ratio (`width:100%; height:auto`), without cropping or a narrower centred maximum width. A small image is appropriate when prose sits beside it; on phones, stack it at the full text width. Use a smaller standalone image only if the owner explicitly asks for one.
 
+## Article artwork across literary ages (owner, 2026-11-19)
+Change the artistic treatment as the literary age advances, drawing on visual traditions appropriate to that period. Within an article, give each image a distinct subject and composition; do not repeat near-identical scenes. Include a relevant war scene when requested, with equipment appropriate to its date. Label imagined literary scenes and representative historical reconstructions clearly; do not present generated artwork as a surviving historical object.
+
 ## 3. Structure
 - `index.html` — landing page (plain HTML + `assets/home.css` + `assets/home.js`)
 - `_includes/base.njk` — layout for markdown article pages (Pages CMS publishes these)

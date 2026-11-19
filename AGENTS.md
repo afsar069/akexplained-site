@@ -28,6 +28,8 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
 7. Anything destructive in the database (drop, delete, truncate) needs the owner's word first.
 8. **Pictures: WebP, about 200 KB or less each** (owner, 2026-11-19). No heavy JPG/JPEG. Compress, inspect and check actual bytes before adding or replacing website artwork; keep agreed dimensions. **Article image width:** a standalone image must fill the text column, aligned with both paragraph edges, preserving its full aspect ratio without cropping. Small images are for layouts with text beside them; stack them at full text width on phones. Do not centre a smaller standalone image unless the owner explicitly requests it.
 
+9. **Article artwork:** change the style with the literary age and keep scenes distinct within each article. Match clothing, buildings and weapons to the period; identify imagined scenes and reconstructions (see `CLAUDE.md`).
+
 ## The jobs you will meet most
 - **Publish an MCQ set**: free = `CLAUDE.md` rule 7 (files in `assets/questions/`, registry row in
   `_data/mcqSpec.json`; check new files with `python3 tools/mcq-skill/validate_mcq.py <files> --strict`; files from the UGC NET skill
