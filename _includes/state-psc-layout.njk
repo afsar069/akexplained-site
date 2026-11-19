@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="/assets/pgt.css">
 <link rel="stylesheet" href="/assets/state-psc.css">
 </head>
-<body class="pgt-page state-psc-page">
+<body class="pgt-page state-psc-page{% if state_psc_hub %} pgt-hub-page{% endif %}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"></header>
 <div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if state_psc_hub %}State PSC{% else %}<a href="/exams/state-psc/">State PSC</a><span>/</span>{% if state_psc_resource %}<a href="/exams/state-psc/up-assistant-professor/">UP Assistant Professor</a><span>/</span>{{ crumb_label }}{% else %}UP Assistant Professor{% endif %}{% endif %}</p></div>
