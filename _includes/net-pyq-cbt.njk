@@ -14,6 +14,7 @@
 {% if examReview or (pyq.access == "login" and not pyq.live) %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'UGC-NET',h:'/exams/net/'},{t:'English PYQs',h:base},{t:pyq.title,h:pyq.href}] %}
 {% set mainClass = "cbt" %}
+{% set bodyClass = "net-pyq-page" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">
