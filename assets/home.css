@@ -285,6 +285,28 @@
 .agecard .era{font-size:.78rem;font-weight:600;color:var(--teal);margin:0 3px 5px}
 .agecard .who{font-size:.77rem;color:var(--body);margin:0 3px;line-height:1.45}
 
+/* Sirf phone: Ages bhi hari heading patti ke saath, har age ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #ages{padding:22px 0}
+  #ages .sechead{margin-bottom:12px}
+  #ages .sechead .more,#ages .seclede{display:none}
+  #ages .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .agegrid{grid-template-columns:1fr;gap:10px}
+  .agecard{
+    display:grid;grid-template-columns:42% minmax(0,1fr);column-gap:13px;align-content:center;align-items:center;
+    padding:9px;border-radius:13px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .agecard .thumb{grid-row:1 / span 3;margin-bottom:0}
+  .agecard h3,.agecard .era,.agecard .who{grid-column:2}
+  .agecard h3{margin:0 0 2px;font-size:1rem}
+  .agecard .era{margin:0 0 4px;color:var(--teal-dark)}
+  .agecard .who{margin:0}
+}
+
 /* ---------- Videos ---------- */
 .videos{background:var(--paper);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .vidgrid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(222px,1fr))}
