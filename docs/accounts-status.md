@@ -4,26 +4,38 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-18 (end of the paid-layer session)._
+_Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
-## START HERE — state at the end of 2026-11-18
-- **Paid layer is LAUNCHED but the pass is NOT ON SALE** (owner will tick On sale when ready). All 48 papers in
-  `mcq_papers` (64 rows) are `access = 'paid'`; a student without a running pass cannot open them. Free files, the Daily
-  quiz, articles and the dashboard are free. Plan `all-access`: Rs 25 (test price), `active = false`.
-- Razorpay: account + KYC done; **live** keys and a **live** webhook are set in Supabase secrets (test pair replaced). One
-  Test Mode payment passed end to end before the switch. No real payment has been made yet.
-- The owner can, alone: set the price and On sale, make promo codes, give a free pass (and stop it), see orders, mark a
-  refund (`/admin/payments/`). Refunds themselves are made in the Razorpay dashboard.
-- **Later the same day:** the owner put the pass **On sale at Rs 199** and made promo codes FIRSTIME50 (Rs 50 off, once per
-  student, shown to everyone on the pass page) and UPPGT100 (Rs 100 off, one use). The pass page was redesigned (PR #156).
-- Watch out: while not on sale, a NEW upload is saved as login (open to any logged-in student), not paid. See rule 22.
-- Open questions: real price; launch promo; paid sets in a no-pass student's dashboard level pool; footer "free for every
-  student"; per-course passes later. Full rules: CLAUDE.md rule 22. Merged PRs: afsar069/akexplained-site#153 (pages,
-  switched off) and afsar069/akexplained-site#154 (launch + Give a free pass).
+## START HERE — state on 2026-11-19
+- **The paid layer is LIVE and the pass is ON SALE.** Plan `all-access`: **Rs 199 per 30 days**, up to 6 periods, `active = true`
+  (the owner set both on `/admin/payments/`). All 48 papers (64 `mcq_papers` rows) are `access = 'paid'`, none is `login`.
+  A student without a running pass cannot open a paid paper; free files, the Daily quiz, articles and the dashboard are free.
+- **Money:** Razorpay account + KYC done; **live** keys and a **live** webhook are in Supabase secrets. One Test Mode payment
+  (Rs 25) passed end to end (webhook granted the pass, the browser verify made no second one). **No real-money payment yet**,
+  so the live keys are unproven; the owner may pay a small amount and refund it in the Razorpay dashboard.
+- **Promo codes (owner's):** FIRSTIME50 (Rs 50 off, once per student, shown to everyone on `/pass/`), UPPGT100 (Rs 100 off,
+  max 1 use, hidden; purpose not told). One code per purchase.
+- **What the paid papers are (snapshot):** 17 English Literature sets, 15 UP PGT mock tests, 8 UP AP Paper 2 mock tests, 4 UP PGT
+  MCQ days, 4 UGC NET PYQs. **Free (files):** Daily quiz 20 ages / 2,000 questions; 22 literature sets / 2,200; UP PGT mock
+  tests 1–5 / 450; MCQ days 1–10 / 500; NET 2012 papers 4 / 249. The pass page reads these itself; never type them.
+- **The owner runs it alone** on `/admin/payments/`: price and On sale, promo codes (Show to everyone / Hide / Turn off), Give a
+  free pass (and Stop now), orders with "Paid test opened?". A refund is made in the Razorpay dashboard; the webhook then marks
+  the order Refunded and ends that pass (or the owner presses Mark refunded).
+- **Merged this session:** afsar069/akexplained-site#153 (pages), #154 (launch + Give a free pass), #155 (notes), #156 (pass page
+  redesign), #157 (FIRSTIME50 shown on the pass page). The branch `claude/optimistic-meitner-1vc2x3` equals `main`.
+  Migrations applied live: `20261118130000_paid_pass`, `…140000_pass_price_visible`, `…150000_admin_give_pass`,
+  `…160000_featured_promo`. Edge Functions deployed: `pass-checkout`, `razorpay-webhook`. Security advisors: only the two old
+  warnings (leaderboard, leaked-password protection).
+- **Not yet checked by anyone:** the live `/pass/` after #157 (the offer strip). This session cannot open akexplained.com, so
+  ask the owner for a screenshot.
+- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): an "All Access pass" tag on paid cards; whether
+  a paid set counts in a no-pass student's dashboard level pool; the footer line "free for every student"; what UPPGT100 is for;
+  per-course passes later; the real-money check.
+- Watch out after every upload: confirm `paper_catalog.access` is `paid` (rule 22).
 
 ## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18; history of how it was built and launched)
 - **Owner's decisions:** one pass for now ("All Access": every paid mock test); 30 days per period, 1 to 6 periods at a time;
-  the price lives in the database and the owner sets it on `/admin/payments/` (no price chosen yet, pass is **not on sale**);
+  the price lives in the database and the owner sets it on `/admin/payments/` (at that time no price was chosen and the pass was not on sale; both changed later, see START HERE);
   all **login** mock tests become paid at launch, the free ones stay free; refund rule = `/refund-policy/` (no refund after a paid
   test is opened; 100% back if asked within 24 hours and no paid test opened; failed / wrongly taken / double payments returned;
   refund sent within 72 hours of approval). Razorpay account: **not made yet**.
@@ -40,7 +52,7 @@ _Last updated: 2026-11-18 (end of the paid-layer session)._
 - **Done with the owner, 2026-11-18:** Razorpay account + KYC done. Test Mode keys + Test webhook set, one Test Mode
   payment of Rs 25 went through end to end (webhook granted the pass, the browser verify came after and made no second pass;
   that order carries the note "Razorpay Test Mode payment"). Then **Live keys** (`rzp_live_`) replaced the test keys in Supabase
-  and a **Live webhook** with its own secret was added (same URL, same 4 events). Plan: price Rs 25 (a test price), **not on sale**.
+  and a **Live webhook** with its own secret was added (same URL, same 4 events). Plan then: Rs 25 (a test price), not on sale; the owner later set Rs 199 and On sale.
   No real payment has been made yet.
 - **LAUNCHED 2026-11-18** (owner: "launch karo"): `paidLayer.live = true`, About / Privacy / Terms / Anglo-Norman registry
   text and the CBT screens worded for the pass, every login paper made paid by the one-time UPDATE, and **Give a free pass**

@@ -412,3 +412,10 @@ In plain English (full rules: CLAUDE.md rule 22):
 - **paper_opens** — the first time a student opened each paid test, so the refund rule ("no paid test opened") is fair.
 - **mcq_papers.access = 'paid'** — a paid paper; a student can read it only while their pass is running.
 - `paper_catalog.access` copies login / paid, so a test page knows to ask for the pass instead of a login.
+- **pass_plans.featured_promo / featured_label** (migration `20261118160000`): the ONE promo code shown to everyone on `/pass/`
+  (an "Offer" strip with a Use code button) and what it gives in words (for example "₹50 off"). The owner picks it with
+  **Show to everyone** on `/admin/payments/`. The code is still checked by the server when used. A plan that has a price is
+  readable by everyone even before it is on sale (migration `20261118140000`), so the page can show the price.
+- **passes.source = 'admin'** (migration `20261118150000`): a free pass given by an admin (no order, no payment). `note` says why
+  and `created_by` is the admin. Only an admin can insert one, and only with source 'admin'; a student can never give themselves
+  a pass.

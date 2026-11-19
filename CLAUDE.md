@@ -796,16 +796,20 @@ The State PSC hub lists UP Assistant Professor (live) and, under it, **Coming so
 - **Important Links band on that page too** (owner, 2026-11-15), under the resource cards. The band is now one shared include, **`_includes/hub-links.njk`** (list `_data/hubLinks.json`, text from `hubLinksText`), used by `/quizzes/pyq/`, `/quizzes/mock-tests/`, this page and the Paper 2 mock tests list (`paper-2-mock-tests/`, owner 2026-11-15; the test and review pages themselves have no band); `state-psc-layout.njk` shows it when a page sets `hub_links: true` and `hub_links_text` in its front matter. Edit the markup once and all three change.
 
 ## 22. The paid layer — All Access pass, promo codes, Razorpay (owner, 2026-11-18)
-**State: LAUNCHED 2026-11-18** (owner: "launch karo"). Razorpay live keys and live webhook are set (owner, in Supabase
-secrets); one Test Mode payment passed end to end before that. Every login paper was made paid by the one-time UPDATE,
-`_data/paidLayer.js` is `live: true`. The owner sets the real price and ticks On sale on `/admin/payments/`. Details and
-history: `docs/accounts-status.md`.
-- **Where it stands (end of 2026-11-18):** engine built and launched, **pass NOT on sale** (owner: "jab mujhe on sale karna
-  hoga, tab karunga"). Plan `all-access` holds a test price of Rs 25 and `active = false`. **Consequence: since the launch
-  UPDATE, students without a pass cannot open any of the 48 paid papers** (they see "needs the All Access pass" and the pass
-  page says "Payments open soon"); free files and the dashboard are untouched. The owner can open access for one student with
-  **Give a free pass**. Going on sale is the owner's own two clicks on `/admin/payments/` (real price, tick On sale, Save) — no
-  Claude, no rebuild.
+**State: LAUNCHED 2026-11-18 and ON SALE** (owner: "launch karo"; the owner then set the price and ticked On sale
+themselves). Razorpay live keys and live webhook are set (owner, in Supabase secrets); one Test Mode payment passed end to end
+before that. Every login paper was made paid by the one-time UPDATE, `_data/paidLayer.js` is `live: true`. Day-to-day state
+and open items: `docs/accounts-status.md` ("START HERE").
+- **Where it stands (read from the live DB, 2026-11-19):** plan `all-access` is **active at Rs 199 per 30 days** (price and
+  On sale are the owner's, set on `/admin/payments/`; never change them unasked). 64 `mcq_papers` rows / 48 papers are `paid`, 0
+  `login`. A student without a running pass cannot open any paid paper (they see "needs the All Access pass"); free files and
+  the dashboard are untouched. Promo codes made by the owner: **FIRSTIME50** (Rs 50 off, once per student, shown to everyone
+  on `/pass/`) and **UPPGT100** (Rs 100 off, max 1 use, not shown; the owner has not said what it is for). The only paid
+  order so far is the owner's Test Mode test (note on the row); **no real-money payment has been made yet**, so the live
+  keys are still unproven end to end (the owner may do a small real payment and refund it in Razorpay). The owner can open
+  access for one student with **Give a free pass**. The owner's own account is an admin AND holds a test pass to 18 Dec 2026,
+  so it opens everything: to see the paywall use a second account with no pass (the owner did, 2026-11-18, and it sent them
+  to `/pass/`).
 - **Owner's decisions.** One pass for now, "All Access": one payment opens every paid test. 30 days per period,
   1 to 6 periods at a time (both editable). The **price is not in code**: it is `pass_plans.price_paise`, set by the owner on
   `/admin/payments/`; never invent one. Later each course gets its own plan (one more `pass_plans` row; the paid read policy
@@ -843,8 +847,10 @@ history: `docs/accounts-status.md`.
   running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
   paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
   re-upload); once the pass is On sale every new upload is saved as paid (and a destination with `access: 'paid'` in
-  `_data/paperDestinations.js` always is). While the pass is NOT on sale a brand-new upload is saved as **login** (any
-  logged-in student can open it): to keep it paid, the owner should tick On sale first, or Claude flips it with one UPDATE.
+  `_data/paperDestinations.js` always is). The page reads "is the pass on sale" once when the admin check passes; if the
+  pass is ever switched off again, or that read fails, a brand-new upload is saved as **login** (any logged-in student can
+  open it). **After every upload check `select access from paper_catalog where set_id = '…'`**, and flip a login row with one
+  UPDATE (`update public.mcq_papers set access='paid' where set_id='…'`) if it should be paid.
 - **Legal pages** were changed with it: Terms ("The All Access pass"), Privacy (order record, `paper_opens`, Razorpay as the sixth
   service), Contact and About (only payment = the pass, on akexplained.com through Razorpay), footer link to `/refund-policy/`.
   Keep them true with any change here (rule 10). Razorpay fees and limits: never state a number not read on Razorpay's own page.
@@ -865,8 +871,26 @@ history: `docs/accounts-status.md`.
 - **How the owner runs it (no Claude needed):** price / On sale, promo codes and free passes on `/admin/payments/`; a refund is
   made in the Razorpay dashboard and the webhook marks the order Refunded and ends that pass (or "Mark refunded" by hand). The
   orders table shows "Paid test opened?" for the 24-hour rule.
-- **Still open with the owner:** the real price; a launch promo for students who used the login tests free; whether a paid set
-  should count in the dashboard level pool of a student with no pass (today every live set counts); the footer line "free for
-  every student"; per-course passes later (one more `pass_plans` row, and the paid read policy must then check the plan).
+- **Still open with the owner** (ask, do not decide): (1) a small "All Access pass" tag on the card of every paid test, so a
+  student knows before pressing Start (offered 2026-11-18, no answer yet; today a logged-in student sees Start on a paid set and
+  learns about the pass on the test page); (2) whether a paid set should count in the dashboard level pool of a student with
+  no pass (today every live set counts, so their level climbs slowly; suggestion: count only what they can open); (3) the
+  footer line "free for every student" (most of the site is free, not all); (4) what UPPGT100 is for; (5) per-course passes
+  later (one more `pass_plans` row; the paid read policy must then check the plan; the page's one `PLAN_ID` becomes a choice);
+  (6) the real-money check of the live keys.
+- **Working notes for the next session.** The owner chats in Hinglish, wants click-by-click steps one at a time, never pastes
+  a secret, and merges only by saying "live kar do". Site text stays simple English. Never type a count or price into a page:
+  paid counts are read live from `paper_catalog` (`assets/pass.js` `loadInventory`), free counts from `_data/passFree.js`.
+  Supabase connector: `apply_migration` takes the SQL inline (strip comment lines and BEGIN/COMMIT, keep the file in
+  `supabase/migrations/` complete); Edge Functions are deployed with `deploy_edge_function` (`verify_jwt: false`, file text from
+  `supabase/functions/<name>/index.ts`), so a change to a function needs a redeploy, not just a merge. Health checks:
+  `pass-checkout` with no token says "Please log in first"; `razorpay-webhook` with a wrong signature says "Bad signature".
+  Browser test recipe (Playwright, `_site` served with `python3 -m http.server`): mock `**/rest/v1/**` (PostgREST: a
+  `maybeSingle` read sends `Accept: …vnd.pgrst.object`), `**/functions/v1/pass-checkout`, and `checkout.razorpay.com`
+  (a fake `window.Razorpay` whose `open()` calls `handler`); log in by writing the session JSON to
+  `localStorage['sb-almlqoxcyzwieuwrgwry-auth-token']`. CSS traps hit here: global `ul,ol{max-width:74ch}` needs
+  `max-width:none` in grids, and an element with `display:flex` needs its own `[hidden]{display:none}` rule. `.html` files are
+  not templated (`htmlTemplateEngine:false`), so anything with Nunjucks must be `.njk` (the pass page is), and Nunjucks in
+  front matter needs `eleventyComputed`. Razorpay's own pages cannot be opened from a session; its docs were read through search.
 - **This session cannot open razorpay.com** (network policy), like akexplained.com: give the owner click-by-click steps and
   ask for screenshots without secrets.
