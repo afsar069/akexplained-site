@@ -966,3 +966,8 @@ question file, and the build stops with a plain message if a file is missing or 
   checking: Q118's key (the supplied key said "our" is an error; "Every one of us ... our" agrees, so it now counts "No error"), Q32's option text ("Four times"), a note on
   Q35 (Hemingway left more than one work unfinished), and the explanations of Q1, Q5, Q10, Q26, Q27, Q35, Q61, Q87, Q113 and Q116. The reading passage of Q112 to Q117 is shortened in
   the supplied copy (marked "..."), so the page says so under the passage; its author is not named because the file does not name one (rule 2).
+- **Second paper** (2026-11-19, owner: "same as the 2006 one, free, no login, verified"): UP PGT English **2000**, 98 questions (`assets/questions/up-pgt-english-2000.json`, copied exactly as
+  supplied; `check_upload_file.py` passed). The file's numbers run 1 to 100 but **Q39 and Q45 are not in it**, and nobody said why, so the registry line carries `printedCount: 100` and its own
+  **`leftOutNote`** (an optional sentence that replaces the default "damaged options" one on the hub; use it whenever the reason is not damaged options, and never guess a reason). Kept as supplied
+  and noted for the owner in `tools/pyq/decisions/up-pgt-english-2000-notes.md`: every explanation is one template line, and the three passage cards (Q77 to Q79) repeat text that is already in the
+  question and are titled by the printed number ("Question 77") while the screen counts by position ("Question 75 of 98").
