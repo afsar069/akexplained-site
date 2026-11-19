@@ -4194,3 +4194,31 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .cbt-clock.is-out{background:#F5C6C6;color:#7A1F1F}
 }
 
+/* Confirmation box inside the test page (instead of a browser pop-up). */
+.cbt-modal{
+  position:fixed;inset:0;z-index:400;display:flex;align-items:center;justify-content:center;
+  padding:16px;background:rgba(17,49,47,.55);
+}
+.cbt-modal-card{
+  width:100%;max-width:420px;background:#fff;color:var(--body);border:1px solid var(--card-line);
+  border-radius:16px;padding:22px 22px 18px;box-shadow:0 24px 60px -16px rgba(17,49,47,.55);
+}
+.cbt-modal-card:focus{outline:none}
+.cbt-modal-card h2{font-size:1.25rem;margin:0 0 10px;color:var(--ink)}
+.cbt-modal-card p{margin:0 0 6px;font-size:.98rem;line-height:1.5;max-width:none}
+.cbt-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:18px}
+.cbt-modal-actions button{
+  font:inherit;font-weight:700;font-size:.95rem;border-radius:10px;padding:11px 18px;cursor:pointer;
+  min-height:44px;transition:background .2s,border-color .2s,color .2s;
+}
+.cbt-modal-no{background:#fff;color:var(--teal-dark);border:1.5px solid var(--teal)}
+.cbt-modal-no:hover{background:var(--teal-soft)}
+.cbt-modal-yes{background:var(--teal);color:#fff;border:1.5px solid var(--teal)}
+.cbt-modal-yes:hover{background:var(--teal-dark);border-color:var(--teal-dark)}
+.cbt-modal-actions button:focus-visible{outline:3px solid var(--teal-dark);outline-offset:2px}
+@media(max-width:420px){
+  .cbt-modal-actions{flex-direction:column-reverse}
+  .cbt-modal-actions button{width:100%}
+}
+@media print{.cbt-modal{display:none}}
+

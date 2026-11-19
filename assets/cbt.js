@@ -1211,14 +1211,73 @@
   function askSubmit() {
     var left = Q.length - Object.keys(st.pick).length;
     var mk = Object.keys(st.marked).length;
-    var say = 'Submit the test now?';
-    if (left) say += '\n\n' + left + ' question' + (left === 1 ? '' : 's') + ' not answered.';
-    if (mk) say += '\n' + mk + ' still marked for review.';
-    say += '\n\nYou cannot change your answers after this.';
-    if (window.confirm(say)) finish(false);
+    var lines = [];
+    if (left) lines.push(left + ' question' + (left === 1 ? '' : 's') + ' not answered.');
+    if (mk) lines.push(mk + ' still marked for review.');
+    lines.push('You cannot change your answers after this.');
+    openConfirm({
+      title: 'Submit the test now?',
+      lines: lines,
+      yes: 'Submit test',
+      no: 'Keep working',
+      onYes: function () { finish(false); }
+    });
+  }
+
+  /* ---------------------------------------------------------
+     Confirmation box inside the page (owner, 2026-11-19): no browser pop-up window.
+     Escape, a tap outside, or "Keep working" closes it without submitting.
+     --------------------------------------------------------- */
+  var confirmEl = null, confirmReturn = null;
+
+  function closeConfirm() {
+    if (!confirmEl) return;
+    var back = confirmReturn;
+    confirmEl.remove();
+    confirmEl = null;
+    confirmReturn = null;
+    document.body.style.overflow = '';
+    if (back && back.focus) { try { back.focus({ preventScroll: true }); } catch (e) {} }
+  }
+
+  function openConfirm(opt) {
+    if (confirmEl) return;
+    confirmReturn = document.activeElement;
+    var box = document.createElement('div');
+    box.className = 'cbt-modal';
+    box.innerHTML =
+      '<div class="cbt-modal-card" role="alertdialog" aria-modal="true" aria-labelledby="cbtModalT" aria-describedby="cbtModalD" tabindex="-1">' +
+        '<h2 id="cbtModalT">' + esc(opt.title) + '</h2>' +
+        '<div id="cbtModalD">' + opt.lines.map(function (l) { return '<p>' + esc(l) + '</p>'; }).join('') + '</div>' +
+        '<div class="cbt-modal-actions">' +
+          '<button type="button" class="cbt-modal-no">' + esc(opt.no) + '</button>' +
+          '<button type="button" class="cbt-modal-yes">' + esc(opt.yes) + '</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(box);
+    confirmEl = box;
+    document.body.style.overflow = 'hidden';
+
+    var yes = box.querySelector('.cbt-modal-yes');
+    var no = box.querySelector('.cbt-modal-no');
+    yes.addEventListener('click', function () { closeConfirm(); opt.onYes(); });
+    no.addEventListener('click', closeConfirm);
+    box.addEventListener('click', function (e) { if (e.target === box) closeConfirm(); });
+    // The test's own keyboard shortcuts must not fire while the box is open.
+    box.addEventListener('keydown', function (e) {
+      e.stopPropagation();
+      if (e.key === 'Escape') { e.preventDefault(); closeConfirm(); return; }
+      if (e.key === 'Tab') {
+        e.preventDefault();
+        (document.activeElement === no ? yes : no).focus();
+      }
+    });
+    // Focus starts on the safe choice, so a stray Enter does not submit the test.
+    no.focus({ preventScroll: true });
   }
 
   function finish(ranOut) {
+    closeConfirm();
     bank();
     arrived = 0;
     stopClock();
