@@ -206,3 +206,19 @@
 }
 /* UP PGT PYQs (rule 23): the note under a year card. (The disclaimer line is in site.css: the test pages do not load pgt.css.) */
 .pgt-pyq-leftout{margin:0;padding:0 18px 14px;font-size:.92rem;line-height:1.5;max-width:none}
+
+/* Sirf phone, sirf PGT hub (/exams/pgt/): head bina picture ke. Heading hari patti me, uske neeche judi hui safed patti me subtitle. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .pgt-hub-page .pagehead-practice{padding:16px 0 0;min-height:0;border-bottom:0;background:none}
+  .pgt-hub-page .pagehead-practice::before{display:none}
+  .pgt-hub-page .pagehead .eyebrow{display:none}
+  .pgt-hub-page .pagehead h1{
+    margin:0;padding:11px 16px 10px;background:var(--teal-dark);color:#fff;border-radius:12px 12px 0 0;
+    font-size:1.2rem;line-height:1.3;max-width:none;text-wrap:balance;
+  }
+  .pgt-hub-page .pagehead p.lede{
+    margin:0;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font-weight:600;
+    border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
+    font-family:var(--sans);font-size:.88rem;line-height:1.45;max-width:none;
+  }
+}
