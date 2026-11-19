@@ -890,7 +890,7 @@ and open items: `docs/accounts-status.md` ("START HERE").
   paid card becomes **Get access** → `/pass/?next=<that test>` for a logged-in student with no running pass; guests keep the
   padlock (login); a pass holder or an admin keeps Start; free cards are untouched. `assets/pass-gate.js` does it (reads the
   student's own `paper_admins` / `passes`; if a read fails Start stays, the database is still the real lock; pages with no paid
-  card make no request; Start is hidden only while the check runs, max 5 s). Wording: "Get access", not "Subscribe", because
+  card make no request; Start is hidden only while the check runs, max 5 s). Colour: gold (`#E3B65A`, navy text) so it reads as different from the teal Start (owner, 2026-11-19; rules at the end of `assets/site.css`). Wording: "Get access", not "Subscribe", because
   the pass never renews by itself (Terms). Browser-tested 2026-11-19: 4 hubs x (no pass / pass / admin / read fails / guest),
   free card unchanged, three ways into a test page, review link, 375px.
 - **Decided 2026-11-19 (owner):** the "All Access pass" tag on paid cards became the **Get access** button above (no separate

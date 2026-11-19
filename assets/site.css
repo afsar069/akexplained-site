@@ -4105,3 +4105,18 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
 .pass-notice-in .btn{padding:8px 16px;font-size:.9rem}
 .pass-notice-x{border:0;background:none;font-size:1.5rem;line-height:1;color:var(--body);cursor:pointer;padding:2px 8px}
 .pass-notice-x:hover{color:var(--ink)}
+
+/* "Get access" is gold, not the teal of Start, so a paid card reads as different at a glance
+   (owner, 2026-11-19). Gold with navy text: the same pair the pass page uses. Beats .agehub-go.is-solid
+   and .net-pyq-go on specificity; the banner button matches. */
+a.agehub-go[data-pass-getaccess],
+a.net-pyq-go[data-pass-getaccess],
+.pass-notice-in .btn{background:#E3B65A;border-color:#C99B3C;color:#16304A}
+a.agehub-go[data-pass-getaccess]:hover,
+a.agehub-go.is-solid[data-pass-getaccess]:hover,
+.net-pyq-card:hover a.net-pyq-go[data-pass-getaccess],
+a.net-pyq-go[data-pass-getaccess]:hover,
+.pass-notice-in .btn:hover{background:#D3A246;border-color:#B8862F;color:#16304A}
+a.agehub-go[data-pass-getaccess]:focus-visible,
+a.net-pyq-go[data-pass-getaccess]:focus-visible,
+.pass-notice-in .btn:focus-visible{outline:3px solid #16304A;outline-offset:3px}
