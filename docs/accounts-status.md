@@ -6,6 +6,14 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Google Search Console — set up (2026-11-19)
+- `akexplained.com` is a verified **Domain property** in the owner's Search Console (verified through the Cloudflare DNS route, which added a Google TXT record). **Never delete that DNS record**, or verification is lost. The owner's account also holds an older property for the Blogger blog `akenglishliterature.blogspot.com`; it is unrelated.
+- Sitemap `https://akexplained.com/sitemap.xml` was submitted the same day: status **Success**, 119 pages discovered.
+- URL Inspection of `https://akexplained.com/` said "URL is on Google" / "Page is indexed" (last crawl 18 Nov 2026), so no indexing request was needed. The **Pages** report still said "Processing data" on 2026-11-19; the number of indexed pages is **not known yet**: check it and record it here.
+- Article pages built from `_includes/base.njk` (10 pages) now carry `rel="canonical"`, Open Graph and Twitter card tags built from `page.url` (PR #170, live; the owner saw the canonical tag in the page source). Hand-written pages (home, hubs, quizzes) set their own tags; their canonicals were **not** audited.
+- `/help/` has no page: `_redirects` sends it to `/contact/` (301), and Google showed it as an old referring page for the home page. That is fine.
+- A cloud session cannot open akexplained.com or Search Console (rule 14); the owner runs those steps and sends screenshots.
+
 ## Full-width artwork on all age articles — authorized rollout (2026-11-19)
 - Owner approved new continuous artwork and the Old English text fade for all British Literature age articles, including the period-specific query views. All new assets use WebP and must stay under 200,000 bytes at their original dimensions.
 - The shared opt-in class is `hero-article-full`. Existing article copy, metadata, links and quiz content stay intact. The Old English artwork remains the approved version; all 19 remaining artwork assets are regenerated from their own references.
