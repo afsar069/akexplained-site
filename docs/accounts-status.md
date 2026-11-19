@@ -6,6 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Jacobean and Caroline article illustrations — 2026-11-19
+- Nine distinct paintings in `/notes/jacobean-and-caroline-age/`: small portraits of James I, Charles I, John Donne and the young John Milton; full-column scenes cover Naseby, Roe at Jahangir’s court, folio/quarto formats, Macbeth and the court masque.
+- Early Stuart and Baroque treatments deepen light, shadow and perspective; the Mughal court scene uses a period-appropriate miniature treatment. Generated portraits are labelled modern interpretations, and reconstructions/literary scenes are identified in captions.
+- WebP assets under 200 KB each in `assets/articles/jacobean-caroline/`, with captions, alt text, intrinsic dimensions and lazy loading. Portraits sit beside prose on larger screens and stack at full text width on phones. Existing prose, metadata and hero variants remain intact.
+
 ## Renaissance article illustrations — 2026-11-19
 - Nine period-specific paintings in `/notes/renaissance/`: small portraits of Henry VIII, Elizabeth I and Shakespeare beside their paragraphs; six full-column scenes cover the Armada, humanist education, enclosure, the English Bible, The Faerie Queene and an Elizabethan playhouse.
 - Renaissance oil-painting treatments use perspective and modelled figures, evolving from Middle English manuscript/tapestry styles. Portraits are labelled modern interpretations; literary and historical scenes are labelled imagined or representative.
