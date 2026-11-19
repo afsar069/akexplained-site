@@ -69,6 +69,37 @@
 .pgt-resource-coming > p:not(.eyebrow){margin:0 0 24px}
 .pgt-resource-coming-links{display:flex;flex-wrap:wrap;gap:12px 24px}
 .pgt-resource-coming-links a{font-weight:600;text-underline-offset:3px}
+/* Download Syllabus page: two cards side by side (General Paper, English Literature); each has one big teal button that starts the PDF download.
+   The cards share rows (subgrid), so the two buttons sit level with each other at every width. */
+.pgt-download{padding:42px 0 52px}
+.pgt-download .eyebrow{color:var(--teal);margin:0 0 8px}
+.pgt-download-main{margin:0 0 22px}
+.pgt-download-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:20px;row-gap:0;margin-bottom:26px}
+.pgt-download-card{display:grid;grid-template-rows:subgrid;grid-row:span 3;min-width:0;padding:26px 26px 22px;border:1px solid #DCC298;border-radius:8px;background:var(--paper)}
+.pgt-download-head > img{width:44px;height:44px;margin-bottom:14px}
+.pgt-download-head h3{margin:0 0 8px}
+.pgt-download-meta{margin:0 0 20px;font-size:.95rem;line-height:1.5}
+.pgt-download-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:0 24px;border-radius:8px;background:var(--teal);color:#fff;font-size:1.05rem;font-weight:700;line-height:1;box-shadow:0 2px 0 rgba(0,0,0,.18);transition:background-color .18s}
+.pgt-download-btn:hover{background:var(--teal-dark);color:#fff}
+.pgt-download-btn img{width:22px;height:22px;filter:brightness(0) invert(1)}
+/* After a click the button turns light parrot green and says "Download again" (assets/syllabus-download.js; owner 2026-11-19).
+   Green, not gold: gold already means "Get access" on paid cards. Dark text and a dark icon, because white does not read on a light green. */
+.pgt-download-btn.is-done{background:#A9DC6B;color:var(--ink)}
+.pgt-download-btn.is-done:hover{background:#96CF52;color:var(--ink)}
+.pgt-download-btn.is-done img{filter:brightness(0)}
+.pgt-download-status{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.pgt-download-read{margin:12px 0 22px;font-size:.95rem}
+.pgt-download-read a{font-weight:600;text-underline-offset:3px}
+.pgt-download-inside h4{margin:0 0 8px;font-size:1.05rem}
+.pgt-download-inside ul{margin:0;padding-left:1.2em;max-width:none;font-size:.95rem;line-height:1.55}
+.pgt-download-inside li + li{margin-top:8px}
+.pgt-download-note{margin:0 0 26px;padding:14px 18px;border-left:3px solid #DCC298;background:var(--paper);font-size:.95rem;line-height:1.55;max-width:none}
+@media (max-width:760px){
+  .pgt-download{padding:30px 0 40px}
+  .pgt-download-grid{grid-template-columns:1fr}
+  .pgt-download-card + .pgt-download-card{margin-top:16px}
+  .pgt-download-card{padding:22px 18px 20px}
+}
 .pgt-hub{padding-top:30px;padding-bottom:54px;container-type:inline-size}
 .pgt-featured{display:flex;align-items:center;gap:26px;width:100%;padding:24px 30px;min-height:122px;margin:0 0 40px;background:var(--teal);color:#fff;border-bottom:5px solid #DDAA38;border-radius:10px;text-decoration:none;transition:background-color .18s}
 .pgt-featured:hover{background:var(--teal-dark);color:#fff}
