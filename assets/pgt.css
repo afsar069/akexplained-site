@@ -204,3 +204,5 @@
   .pgt-featured-icon img,.pgt-featured-go img{filter:none}
   .pgt-exam-card{break-inside:avoid}
 }
+/* UP PGT PYQs (rule 23): the note under a year card. (The disclaimer line is in site.css: the test pages do not load pgt.css.) */
+.pgt-pyq-leftout{margin:0;padding:0 18px 14px;font-size:.92rem;line-height:1.5;max-width:none}

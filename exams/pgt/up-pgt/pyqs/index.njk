@@ -1,0 +1,45 @@
+---
+layout: pgt-layout.njk
+title: UP PGT English PYQs
+description: Take UP PGT English previous-year papers as an online test, with a clock and a full answer review. Free, with no login required.
+crumb_label: PYQs
+pgt_practice_index: true
+pgt_practice_hero_title: English PYQs
+pgt_practice_collection_label: PYQs
+pgt_resources: true
+---
+{#- CLAUDE.md rule 23. The cards come from _data/pgtPyqs.json (grouped by year in _data/pgtPyqYears.js). A new year is
+    one registry line plus its question file; this page needs no change. Free, no login (owner, 2026-11-19). -#}
+<section class="pgt-practice-index" aria-labelledby="pgt-practice-index-title">
+  <header class="pgt-practice-intro">
+    <div>
+      <h2 id="pgt-practice-index-title">Choose a year</h2>
+      <p>Each paper opens as a real test, with one question at a time, a clock and a full review at the end. Every paper is free for everyone, with no login required.</p>
+    </div>
+    <span>{{ pgtPyqPapers.length }} paper{% if pgtPyqPapers.length != 1 %}s{% endif %}</span>
+  </header>
+  <div class="pgt-practice-groups">
+    {% for group in pgtPyqYears %}
+    <details class="pgt-practice-group" open>
+      <summary>
+        <img class="pgt-practice-group-icon" src="/assets/icons/tabler/files.svg" alt="" width="28" height="28">
+        <span>{{ group.year }}</span>
+        <small>{{ group.papers.length }} paper{% if group.papers.length != 1 %}s{% endif %}</small>
+        <img class="pgt-practice-chevron" src="/assets/icons/feather/chevron-down.svg" alt="" width="22" height="22">
+      </summary>
+      <div class="pgt-practice-card-grid">
+        {% for paper in group.papers %}
+        <div class="pgt-practice-card">
+          <span class="pgt-practice-card-copy"><strong>UP PGT English {{ paper.year }}</strong><span>{{ paper.count }} questions · Free · No login</span></span>
+          <a class="agehub-go is-solid" href="{{ paper.href }}" aria-label="Start the UP PGT English {{ paper.year }} paper">Start</a>
+        </div>
+        {% endfor %}
+      </div>
+      {% for paper in group.papers %}{% if paper.leftOut %}
+      <p class="pgt-pyq-leftout">The printed {{ paper.year }} paper has {{ paper.printedCount }} questions. We show {{ paper.count }}, because {{ paper.leftOut }} question{% if paper.leftOut != 1 %}s{% endif %} have damaged options in our copy.</p>
+      {% endif %}{% endfor %}
+    </details>
+    {% endfor %}
+  </div>
+  <p class="pgt-pyq-disclaimer">{% include "pgt-pyq-disclaimer.njk" %}</p>
+</section>

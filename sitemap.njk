@@ -35,6 +35,10 @@ eleventyExcludeFromCollections: true
 {%- for mock in pgtMockTestsLogin %}{% if mock.live %}
   <url><loc>https://akexplained.com{{ mock.url }}</loc><priority>0.6</priority></url>
 {%- endif %}{% endfor %}
+  <url><loc>https://akexplained.com/exams/pgt/up-pgt/pyqs/</loc><priority>0.7</priority></url>
+{%- for pyq in pgtPyqPapers %}
+  <url><loc>https://akexplained.com{{ pyq.href }}</loc><priority>0.6</priority></url>
+{%- endfor %}
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/syllabus-download/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/pgt/up-pgt/study-guide/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/exams/state-psc/</loc><priority>0.7</priority></url>

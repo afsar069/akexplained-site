@@ -4061,3 +4061,5 @@ a.net-pyq-go[data-pass-getaccess]:hover,
 a.agehub-go[data-pass-getaccess]:focus-visible,
 a.net-pyq-go[data-pass-getaccess]:focus-visible,
 .pass-notice-in .btn:focus-visible{outline:3px solid #16304A;outline-offset:3px}
+/* UP PGT PYQs (rule 23): small disclaimer line at the foot of the hub and the test pages. */
+.pgt-pyq-disclaimer{margin:18px 0 0;font-size:.86rem;line-height:1.5;font-style:italic;color:var(--body);max-width:none}

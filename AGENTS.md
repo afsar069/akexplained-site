@@ -37,6 +37,7 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
   (`tools/sync_catalog.py`). **Self-serve series need no build at all** (rule 17): the UP Assistant Professor Paper 2
   mock tests, the UP PGT mock tests, the UP PGT MCQ days (Days 11–60) and the planned English Literature login sets
   appear the moment the owner marks the paper Live, and disappear on Draft.
+- **Publish a UP PGT English PYQ** (previous-year paper, free, no login): `CLAUDE.md` rule 23. Tag the paper, write `assets/questions/up-pgt-english-<year>.json`, run `tools/pyq/check_upload_file.py`, add one line to `_data/pgtPyqs.json`.
 - **Publish a UGC NET PYQ** (previous-year paper, free, no login): `CLAUDE.md` rule 18. Run `tools/pyq/prepare_pyq.py` on the tagged file; a
   question with two or more right ids becomes ONE (the owner's rule), recorded in `tools/pyq/decisions/`; then one line in `_data/netPyqs.json`.
   **A login-only PYQ** (`"access": "login"`) has no file in the repo: one registry line, and the owner uploads the questions at `/admin/upload-paper/` (rule 18).
