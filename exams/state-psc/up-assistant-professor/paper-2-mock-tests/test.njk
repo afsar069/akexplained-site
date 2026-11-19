@@ -7,5 +7,6 @@ permalink: "/exams/state-psc/up-assistant-professor/paper-2-mock-tests/test-{{ m
 eleventyComputed:
   mockNumber: "{{ mock.number }}"
   mockSetId: "{{ mock.setId }}"
+  mockLiveAtBuild: "{{ 'yes' if mock.liveAtBuild else '' }}"
 ---
 {% extends "state-psc-cbt.njk" %}

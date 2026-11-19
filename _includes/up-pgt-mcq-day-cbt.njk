@@ -11,7 +11,8 @@
 {% set pageTitle %}UP PGT English MCQs — Day {{ day.number }}{% if known %}: {{ day.title }}{% endif %}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
 {% set pageDescription %}{% if known %}Day {{ day.number }} {{ day.title }}: {{ day.questionCount }} {{ day.levelName | lower }} UP PGT English MCQs in a CBT test. {% if gated %}{% if paidLayer.live %}The All Access pass is required.{% else %}A free login is required.{% endif %}{% else %}Free for everyone, with no login required.{% endif %}{% else %}Day {{ day.number }} of the UP PGT English MCQ practice days. Log in with a free account to take it once it is open.{% endif %}{% endset %}
 {% set canonical %}https://akexplained.com/exams/pgt/up-pgt/mcqs/day-{{ day.number }}/{% if examReview %}review/{% endif %}{% endset %}
-{% if examReview or not day.liveAtBuild %}{% set robots = "noindex,follow" %}{% endif %}
+{# Free days (1-10) have a public question file, so they are indexed. Only a login day that is not live at build is noindex. #}
+{% if examReview or (gated and not day.liveAtBuild) %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
 {% set mainClass = "cbt" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
@@ -35,6 +36,6 @@
      data-exam-index-label="UP PGT MCQs"
      data-back="/exams/pgt/up-pgt/mcqs/{% if examReview %}day-{{ day.number }}/{% endif %}"
      data-back-label="{% if examReview %}Day {{ day.number }}{% else %}MCQs{% endif %}">
-  <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
+  <noscript><div class="cbt-start"><h2>This page needs JavaScript</h2><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
 </div>
 {% endblock %}
