@@ -222,3 +222,21 @@
     font-family:var(--sans);font-size:.88rem;line-height:1.45;max-width:none;
   }
 }
+
+/* Sirf phone, sirf UP PGT page: "Complete course in 60 days" (Coming soon) card sabse neeche, aur baaki cards se chhota. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .pgt-up-page .pgt-resource-hub{display:flex;flex-direction:column}
+  .pgt-up-page .pgt-resource-grid{order:1}
+  .pgt-up-page .pgt-guide-link{order:2}
+  .pgt-up-page .pgt-course-card{
+    order:3;flex-wrap:nowrap;align-items:center;gap:10px;min-height:0;margin:18px 0 0;padding:10px 12px;
+    border-bottom-width:3px;border-radius:8px;
+  }
+  .pgt-up-page .pgt-course-icon{padding-right:10px;border-right-width:1px}
+  .pgt-up-page .pgt-course-icon img{width:26px;height:26px}
+  .pgt-up-page .pgt-course-copy{flex:1 1 0;gap:0}
+  .pgt-up-page .pgt-course-copy strong{font-size:.92rem;line-height:1.25;text-wrap:balance}
+  .pgt-up-page .pgt-course-copy span{font-size:.76rem;line-height:1.3}
+  .pgt-up-page .pgt-course-action{flex:none;flex-basis:auto;min-height:30px;padding:3px 9px;font-size:.74rem;border-radius:6px}
+  .pgt-up-page .pgt-course-action img{display:none}
+}
