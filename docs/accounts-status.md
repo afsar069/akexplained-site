@@ -8,7 +8,7 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
 
 ## Old English section illustrations — 2026-11-19
 - Owner requested three representative paintings within `/notes/old-english/`: Political life (king and advisers), Social life (hall and scop), and Religion (monastic manuscript copying).
-- Assets live in `assets/articles/old-english/`, as WebP under 200 KB each. Each uses 1200 × 800 source dimensions and is displayed at up to 480px wide, shrinking to fit phones, with a short caption and lazy loading.
+- Assets live in `assets/articles/old-english/`, as WebP under 200 KB each. Each uses 1200 × 800 source dimensions and fills the paragraph width (up to 640px on screen), shrinking to fit phones while preserving its aspect ratio, with a short caption and lazy loading.
 - Existing article wording and hero artwork remain intact. Captions describe representative scenes, not a named historical event.
 
 ## Full-width artwork on all age articles — authorized rollout (2026-11-19)
