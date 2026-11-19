@@ -4,13 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Download Syllabus and Study Files | AK Explained</title>
-<meta name="description" content="Download free UP PGT syllabus PDFs and open the UGC NET English syllabus. All study downloads of AK Explained are listed here.">
+<meta name="description" content="Choose your exam (UGC NET, UP PGT, UP Assistant Professor, BA or MA) and find its syllabus, important books and notes in one place.">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
-<link rel="stylesheet" href="/assets/pgt.css">
 </head>
 <body class="mcq-sec-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -94,126 +93,259 @@
   <div class="wrap">
     <p class="eyebrow">Study Offline</p>
     <h1>Download</h1>
-    <p class="lede">Every file you can download from AK Explained is listed here. Click once to save a PDF, or open the page that holds the file.</p>
+    <p class="lede">Pick your exam to find its syllabus, important books and notes. A PDF downloads in one click.</p>
   </div>
 </section>
 
-<!-- Rule 2: sirf wahi files/links jo asal me maujood hain. NET books aur NET complete syllabus abhi Coming soon (owner ne files nahi di). -->
-<!-- Syllabus PDFs repo me hi hain (assets/downloads/), free, no login — wahi do cards jo UP PGT Download Syllabus page par hain, same JS (assets/syllabus-download.js). -->
-<section class="pgt-download dlhub-section" aria-labelledby="dl-pdf-title">
+<!-- Rule 2: sirf wahi files/links jo asal me maujood hain; baaki sab Coming soon (owner ne files nahi di). -->
+<!-- Exam cards (neeche) ek panel kholte hain; JS na chale to saare panels khule rehte hain aur card un tak jump karta hai. assets/download-hub.js -->
+<section class="dlx" id="dlx" aria-labelledby="dlx-title">
   <div class="wrap">
-    <p class="eyebrow">Free · No login needed</p>
-    <h2 class="pgt-download-main" id="dl-pdf-title">UP PGT syllabus PDFs</h2>
+    <div class="sechead"><h2 id="dlx-title">Choose your exam</h2></div>
+    <p class="seclede">Pick an exam. Its syllabus, important books and notes open below.</p>
+    <nav class="dlx-cards" aria-label="Exams">
+      <a class="dlx-card" href="#dl-net" aria-controls="dl-net" aria-expanded="false">
+        <span class="dlx-card-ic" aria-hidden="true"><img src="/assets/icons/tabler/target-arrow.svg" alt="" width="26" height="26"></span>
+        <span class="dlx-card-txt"><strong>UGC NET / JRF</strong><span>English</span></span>
+      </a>
+      <a class="dlx-card" href="#dl-up-pgt" aria-controls="dl-up-pgt" aria-expanded="false">
+        <span class="dlx-card-ic" aria-hidden="true"><img src="/assets/icons/tabler/school.svg" alt="" width="26" height="26"></span>
+        <span class="dlx-card-txt"><strong>UP PGT</strong><span>English</span></span>
+      </a>
+      <a class="dlx-card" href="#dl-up-ap" aria-controls="dl-up-ap" aria-expanded="false">
+        <span class="dlx-card-ic" aria-hidden="true"><img src="/assets/icons/tabler/building-bank.svg" alt="" width="26" height="26"></span>
+        <span class="dlx-card-txt"><strong>UP Assistant Professor</strong><span>English · State PSC</span></span>
+      </a>
+      <a class="dlx-card" href="#dl-ba" aria-controls="dl-ba" aria-expanded="false">
+        <span class="dlx-card-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="26" height="26"></span>
+        <span class="dlx-card-txt"><strong>BA</strong><span>English · University</span></span>
+      </a>
+      <a class="dlx-card" href="#dl-ma" aria-controls="dl-ma" aria-expanded="false">
+        <span class="dlx-card-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="26" height="26"></span>
+        <span class="dlx-card-txt"><strong>MA</strong><span>English · University</span></span>
+      </a>
+    </nav>
 
-    <div class="pgt-download-grid">
-      <article class="pgt-download-card" aria-labelledby="dl-general">
-        <div class="pgt-download-head">
-          <img src="/assets/icons/tabler/file-download.svg" alt="" width="44" height="44">
-          <h3 id="dl-general">General Paper Syllabus</h3>
-          <p class="pgt-download-meta">General Knowledge for TGT and PGT · 30 questions<br>PDF · 1 page · 305 KB</p>
-        </div>
-        <div class="pgt-download-get">
-          <a class="pgt-download-btn" href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" download="UP-PGT-General-Paper-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="22" height="22"><span class="pgt-download-label">Download PDF</span></a>
-          <p class="pgt-download-read">Want to read it first? <a href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" target="_blank" rel="noopener">Open it in your browser</a>.</p>
-          <span class="pgt-download-status" aria-live="polite"></span>
-        </div>
-        <div class="pgt-download-inside">
-          <h4>What is inside</h4>
-          <ul>
-            <li><strong>Unit 1:</strong> Current Affairs.</li>
-            <li><strong>Unit 2:</strong> Indian History, Indian Polity, Indian Economy and Indian Geography.</li>
-            <li><strong>Unit 3:</strong> General Science, Information and Communication Technology.</li>
+    <div class="dlx-panels">
+      <section class="dlx-panel" id="dl-net" aria-labelledby="dl-net-h">
+        <h3 id="dl-net-h">UGC NET / JRF — English</h3>
+        <p class="dlx-intro">Syllabus, books and notes for UGC NET English.</p>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/file-text.svg" alt="" width="20" height="20">Syllabus</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>NET English Syllabus</strong><span>The ten Paper 2 units and the common Paper 1 syllabus, with a link to the official UGC source.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/exams/net/syllabus/">Read</a></div>
+            </li>
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/external-link.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>Official UGC syllabus index</strong><span>Paper 1 (code 00) and English (code 30), on the official UGC NET site. Opens in a new tab.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="https://www.ugcnetonline.in/syllabus-new.php" target="_blank" rel="noopener">Open</a></div>
+            </li>
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>Complete NET Syllabus</strong><span>The complete NET syllabus as one PDF.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
           </ul>
         </div>
-      </article>
-
-      <article class="pgt-download-card" aria-labelledby="dl-english">
-        <div class="pgt-download-head">
-          <img src="/assets/icons/tabler/file-download.svg" alt="" width="44" height="44">
-          <h3 id="dl-english">English Literature Syllabus</h3>
-          <p class="pgt-download-meta">Lecturer (PGT) – English, Subject Code 03<br>PDF · 1 page · 358 KB</p>
-        </div>
-        <div class="pgt-download-get">
-          <a class="pgt-download-btn" href="/assets/downloads/up-pgt-english-syllabus.pdf" download="UP-PGT-English-Literature-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="22" height="22"><span class="pgt-download-label">Download PDF</span></a>
-          <p class="pgt-download-read">Want to read it first? <a href="/assets/downloads/up-pgt-english-syllabus.pdf" target="_blank" rel="noopener">Open it in your browser</a>.</p>
-          <span class="pgt-download-status" aria-live="polite"></span>
-        </div>
-        <div class="pgt-download-inside">
-          <h4>What is inside</h4>
-          <ul>
-            <li><strong>Section 1 – Language:</strong> an unseen passage for comprehension, and language topics such as tenses, idioms and phrases, synonyms and antonyms, and one word substitution.</li>
-            <li><strong>Section 2 – Literature:</strong> six literary periods, from Renaissance &amp; Reformation to Modern, figures of speech, rhetoric and prosody, major stanza forms, types of novel and forms of drama, major literary critics, and authors and their contributions.</li>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/book-open.svg" alt="" width="20" height="20">Important Books</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>UGC NET Important Books</strong><span>Books to read for this exam.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
           </ul>
         </div>
-      </article>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/layers.svg" alt="" width="20" height="20">Notes</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>English Literature Notes</strong><span>Age-wise and text-wise notes, from Old English to the postmodern period.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/notes/">Read</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="dlx-panel" id="dl-up-pgt" aria-labelledby="dl-up-pgt-h">
+        <h3 id="dl-up-pgt-h">UP PGT — English</h3>
+        <p class="dlx-intro">Syllabus, books and notes for UP PGT English.</p>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/file-text.svg" alt="" width="20" height="20">Syllabus</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/tabler/file-download.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt">
+                <strong>General Paper Syllabus</strong><span>General Knowledge for TGT and PGT · 30 questions</span><small>PDF · 1 page · 305 KB</small>
+                <details class="dlx-inside"><summary>What is inside</summary><ul><li><strong>Unit 1:</strong> Current Affairs.</li><li><strong>Unit 2:</strong> Indian History, Indian Polity, Indian Economy and Indian Geography.</li><li><strong>Unit 3:</strong> General Science, Information and Communication Technology.</li></ul></details>
+              </div>
+              <div class="dlx-act">
+                <a class="dlx-btn" href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" download="UP-PGT-General-Paper-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="20" height="20"><span class="dlx-label">Download PDF</span></a>
+                <a class="dlx-read" href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" target="_blank" rel="noopener">Open in browser</a>
+              </div>
+            </li>
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/tabler/file-download.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt">
+                <strong>English Literature Syllabus</strong><span>Lecturer (PGT) – English, Subject Code 03</span><small>PDF · 1 page · 358 KB</small>
+                <details class="dlx-inside"><summary>What is inside</summary><ul><li><strong>Section 1 – Language:</strong> an unseen passage for comprehension, and language topics such as tenses, idioms and phrases, synonyms and antonyms, and one word substitution.</li><li><strong>Section 2 – Literature:</strong> six literary periods, from Renaissance &amp; Reformation to Modern, figures of speech, rhetoric and prosody, major stanza forms, types of novel and forms of drama, major literary critics, and authors and their contributions.</li></ul></details>
+              </div>
+              <div class="dlx-act">
+                <a class="dlx-btn" href="/assets/downloads/up-pgt-english-syllabus.pdf" download="UP-PGT-English-Literature-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="20" height="20"><span class="dlx-label">Download PDF</span></a>
+                <a class="dlx-read" href="/assets/downloads/up-pgt-english-syllabus.pdf" target="_blank" rel="noopener">Open in browser</a>
+              </div>
+            </li>
+            <li class="dlx-note"><strong>About these files:</strong> Both PDFs carry the heading of the Uttar Pradesh Education Service Selection Commission, Prayagraj. These copies were taken from sarkariresult.com. AK Explained did not write or change them. For any later change, check the commission's own notices.</li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/book-open.svg" alt="" width="20" height="20">Important Books</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>UP PGT Important Books</strong><span>Books to read for this exam.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/layers.svg" alt="" width="20" height="20">Notes</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>UP PGT English Study Guide</strong><span>A general English literature study guide for PGT preparation. It is not the official UP syllabus.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/exams/pgt/up-pgt/study-guide/">Read</a></div>
+            </li>
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>English Literature Notes</strong><span>Age-wise and text-wise notes, from Old English to the postmodern period.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/notes/">Read</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="dlx-panel" id="dl-up-ap" aria-labelledby="dl-up-ap-h">
+        <h3 id="dl-up-ap-h">UP Assistant Professor — English</h3>
+        <p class="dlx-intro">Syllabus, books and notes for the UP Assistant Professor (State PSC) English exam.</p>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/file-text.svg" alt="" width="20" height="20">Syllabus</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>UP Assistant Professor Syllabus</strong><span>The syllabus as a PDF.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/book-open.svg" alt="" width="20" height="20">Important Books</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>UP Assistant Professor Important Books</strong><span>Books to read for this exam.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/layers.svg" alt="" width="20" height="20">Notes</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>English Literature Notes</strong><span>Age-wise and text-wise notes, from Old English to the postmodern period.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/notes/">Read</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="dlx-panel" id="dl-ba" aria-labelledby="dl-ba-h">
+        <h3 id="dl-ba-h">BA — English (University)</h3>
+        <p class="dlx-intro">Syllabus, books and notes for BA English. Choose your university on the BA / university page.</p>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/file-text.svg" alt="" width="20" height="20">Syllabus</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>MA / BA — University English</strong><span>CCS University Meerut, IGNOU and Delhi University: papers and preparation notes, by university.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/exams/ma-ba/">Open</a></div>
+            </li>
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>BA English Syllabus</strong><span>The syllabus as a PDF.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/book-open.svg" alt="" width="20" height="20">Important Books</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>BA Important Books</strong><span>Books to read for this exam.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/layers.svg" alt="" width="20" height="20">Notes</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>English Literature Notes</strong><span>Age-wise and text-wise notes, from Old English to the postmodern period.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/notes/">Read</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="dlx-panel" id="dl-ma" aria-labelledby="dl-ma-h">
+        <h3 id="dl-ma-h">MA — English (University)</h3>
+        <p class="dlx-intro">Syllabus, books and notes for MA English. Choose your university on the MA / university page.</p>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/file-text.svg" alt="" width="20" height="20">Syllabus</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>MA / BA — University English</strong><span>CCS University Meerut, IGNOU and Delhi University: papers and preparation notes, by university.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/exams/ma-ba/">Open</a></div>
+            </li>
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>MA English Syllabus</strong><span>The syllabus as a PDF.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/book-open.svg" alt="" width="20" height="20">Important Books</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item is-soon">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>MA Important Books</strong><span>Books to read for this exam.</span></div>
+              <div class="dlx-act"><span class="dlx-soon">Coming soon</span></div>
+            </li>
+          </ul>
+        </div>
+        <div class="dlx-group">
+          <h4><img src="/assets/icons/feather/layers.svg" alt="" width="20" height="20">Notes</h4>
+          <ul class="dlx-items">
+            <li class="dlx-item">
+              <span class="dlx-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="22" height="22"></span>
+              <div class="dlx-txt"><strong>English Literature Notes</strong><span>Age-wise and text-wise notes, from Old English to the postmodern period.</span></div>
+              <div class="dlx-act"><a class="dlx-btn dlx-btn-line" href="/notes/">Read</a></div>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
-
-    <p class="pgt-download-note"><strong>About these files:</strong> Both PDFs carry the heading of the Uttar Pradesh Education Service Selection Commission, Prayagraj. These copies were taken from sarkariresult.com. AK Explained did not write or change them. For any later change, check the commission's own notices.</p>
+    <p class="dlx-ask">Need a file that is not listed? <a href="/go/whatsapp" rel="noopener">Ask us on WhatsApp</a>.</p>
+    <p class="dlx-sr" id="dlxStatus" aria-live="polite"></p>
   </div>
 </section>
-
-<section class="exam-pick dlhub-links" aria-labelledby="dl-links-title">
-  <div class="wrap">
-    <div class="sechead">
-      <h2 id="dl-links-title">Syllabus pages and links</h2>
-    </div>
-    <p class="seclede">These open a page, or the official site, where you can read the syllabus.</p>
-    <div class="exam-cats">
-      <a class="exam-cat" href="/exams/net/syllabus/">
-        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="24" height="24"></span>
-        <span class="exam-cat-txt">
-          <strong>UGC NET English Syllabus</strong>
-          <span>The ten Paper 2 units and the common Paper 1 syllabus, with a link to the official UGC source.</span>
-        </span>
-        <span class="exam-cat-go">Read</span>
-      </a>
-      <a class="exam-cat" href="/exams/pgt/up-pgt/study-guide/">
-        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/layers.svg" alt="" width="24" height="24"></span>
-        <span class="exam-cat-txt">
-          <strong>UP PGT English Study Guide</strong>
-          <span>A general English literature study guide for PGT preparation. It is not the official UP syllabus.</span>
-        </span>
-        <span class="exam-cat-go">Read</span>
-      </a>
-      <a class="exam-cat" href="https://www.ugcnetonline.in/syllabus-new.php" target="_blank" rel="noopener">
-        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/external-link.svg" alt="" width="24" height="24"></span>
-        <span class="exam-cat-txt">
-          <strong>Official UGC syllabus index</strong>
-          <span>Paper 1 (code 00) and English (code 30), on the official UGC NET site. Opens in a new tab.</span>
-        </span>
-        <span class="exam-cat-go">Open</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section class="exam-pick dlhub-soon" aria-labelledby="dl-soon-title">
-  <div class="wrap">
-    <div class="sechead">
-      <h2 id="dl-soon-title">Coming soon</h2>
-    </div>
-    <p class="seclede">These downloads are not ready yet. They will appear here when they are added.</p>
-    <div class="exam-cats">
-      <div class="exam-cat is-soon" aria-disabled="true">
-        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/book-open.svg" alt="" width="24" height="24"></span>
-        <span class="exam-cat-txt">
-          <strong>UGC NET Important Books</strong>
-          <span>Books to read for NET preparation.</span>
-        </span>
-        <span class="exam-cat-go">Coming soon</span>
-      </div>
-      <div class="exam-cat is-soon" aria-disabled="true">
-        <span class="exam-cat-ic" aria-hidden="true"><img src="/assets/icons/feather/file-text.svg" alt="" width="24" height="24"></span>
-        <span class="exam-cat-txt">
-          <strong>UGC NET Complete Syllabus</strong>
-          <span>The complete NET syllabus as one file.</span>
-        </span>
-        <span class="exam-cat-go">Coming soon</span>
-      </div>
-    </div>
-    <p class="dlhub-ask">Need a file that is not listed? <a href="/go/whatsapp" rel="noopener">Ask us on WhatsApp</a>.</p>
-  </div>
-</section>
+<script src="/assets/download-hub.js"></script>
 
 </main>
 
@@ -276,6 +408,5 @@
 </footer>
 
 <script src="/assets/nav.js" defer></script>
-<script src="/assets/syllabus-download.js" defer></script>
 </body>
 </html>

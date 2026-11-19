@@ -7,7 +7,7 @@ Keep it updated when the state changes.
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
 ## Download hub — 2026-11-19
-- `/download/` was a Coming soon page; it is now the hub for every download (CLAUDE.md rule 3). Two UP PGT syllabus PDFs download in one click; links to the NET English syllabus, the UP PGT study guide and UGC's official syllabus index; Coming soon cards for NET Important Books and NET Complete Syllabus (no files supplied yet). Sitemap priority raised to 0.7. On the feature branch, not merged.
+- `/download/` was a Coming soon page; it is now the hub for every download, **by exam** (CLAUDE.md rule 3): cards for UGC NET / JRF, UP PGT, UP Assistant Professor, BA and MA open a panel with Syllabus, Important Books and Notes. Only the two UP PGT syllabus PDFs are real downloads; the rest are links to existing pages (NET syllabus, UP PGT study guide, age-wise notes, MA / BA university page, UGC's official syllabus index) or Coming soon rows. Sitemap priority raised to 0.7. On the feature branch, not merged.
 
 ## Restoration article illustrations — 2026-11-19
 - Nine distinct paintings in `/notes/restoration-age/`: small side portraits of Charles II, Aphra Behn and Dryden; six full-column scenes cover the Anglo-Dutch naval wars, a coffee house, the Great Fire, Royal Society experiments, the reopened theatre and The Pilgrim’s Progress.
