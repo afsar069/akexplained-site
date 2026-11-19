@@ -26,10 +26,12 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   Migrations applied live: `20261118130000_paid_pass`, `…140000_pass_price_visible`, `…150000_admin_give_pass`,
   `…160000_featured_promo`. Edge Functions deployed: `pass-checkout`, `razorpay-webhook`. Security advisors: only the two old
   warnings (leaderboard, leaked-password protection).
-- **Not yet checked by anyone:** the live `/pass/` after #157 (the offer strip). This session cannot open akexplained.com, so
-  ask the owner for a screenshot.
-- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): an "All Access pass" tag on paid cards; whether
-  a paid set counts in a no-pass student's dashboard level pool; the footer line "free for every student"; what UPPGT100 is for;
+- **Owner's answers, 2026-11-19:** paid-card tag: not decided, parked in `docs/future-plans.md`; dashboard level counts only
+  what the student can open (built, rule 10); footer line is now "for every literary student's need" (31 pages); UPPGT100 is for
+  the owner's own students who bought his course; the real-money check is postponed; the owner saw the FIRSTIME50 strip live.
+  The `/pass/` page was also shrunk to the site's normal type scale (the owner found it bigger than other pages).
+- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): UPPGT100 allows ONE use only (raise it if it is for
+  many students); the Terms / Contact lines "no coaching enrolment / no paid group" may need new words (ask, do not invent);
   per-course passes later; the real-money check.
 - Watch out after every upload: confirm `paper_catalog.access` is `paid` (rule 22).
 
