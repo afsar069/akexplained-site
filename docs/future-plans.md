@@ -24,9 +24,14 @@ reads the repo, not the live pages.
 2. **Series 4 — UGC NET mock tests and Paper 1 MCQs.** Blocked: those pages do not exist yet (`available: false` in
    `_data/netResources.json`), and the upload picker has no NET destination. The owner must first say what NET needs and whether it is free or login.
 
-## 2. Paid layer (rule 22) — built 2026-11-18, waiting for Razorpay
-All Access pass, promo codes and Razorpay are built (rule 22; launch steps in `docs/accounts-status.md`). Still to do: the
-owner's Razorpay account and keys, a price, the launch merge, then making the login mock tests paid. Later: one plan per course.
+## 2. Paid layer (rule 22) — LAUNCHED and on sale (2026-11-18); what is still ahead
+The pass, promo codes and Razorpay are live (state: `docs/accounts-status.md` "START HERE"; rules: CLAUDE.md rule 22).
+Ahead, none started:
+- **Paid-card tag — BUILT 2026-11-19 as a "Get access" button** (`assets/pass-gate.js`, CLAUDE.md rule 22): the owner decided
+  the same day to replace the idea of a tag and the middle "needs the pass" page with it. Nothing left to do here.
+- **One pass per course** (owner: later, "alag alag course ke alag alag price or plan"): one more `pass_plans` row per course,
+  the paid read policy (`mcq_papers_paid_read`) must then check the plan, `pass.js` has one `PLAN_ID` and must become a choice.
+- **A real-money check of the live keys** (owner: "abhi nahi"): a small real payment, then a refund in Razorpay.
 Big PDFs on **Cloudflare R2**: nothing built, ask first.
 
 ## 3. Content waiting for the owner's files

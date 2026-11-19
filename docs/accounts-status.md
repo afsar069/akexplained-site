@@ -20,7 +20,7 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   (Rs 25) passed end to end (webhook granted the pass, the browser verify made no second one). **No real-money payment yet**,
   so the live keys are unproven; the owner may pay a small amount and refund it in the Razorpay dashboard.
 - **Promo codes (owner's):** FIRSTIME50 (Rs 50 off, once per student, shown to everyone on `/pass/`), UPPGT100 (Rs 100 off,
-  max 1 use, hidden; purpose not told). One code per purchase.
+  once per student, no total limit, hidden; for the owner's own course students). One code per purchase.
 - **What the paid papers are (snapshot):** 17 English Literature sets, 15 UP PGT mock tests, 8 UP AP Paper 2 mock tests, 4 UP PGT
   MCQ days, 4 UGC NET PYQs. **Free (files):** Daily quiz 20 ages / 2,000 questions; 22 literature sets / 2,200; UP PGT mock
   tests 1–5 / 450; MCQ days 1–10 / 500; NET 2012 papers 4 / 249. The pass page reads these itself; never type them.
@@ -32,11 +32,19 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   Migrations applied live: `20261118130000_paid_pass`, `…140000_pass_price_visible`, `…150000_admin_give_pass`,
   `…160000_featured_promo`. Edge Functions deployed: `pass-checkout`, `razorpay-webhook`. Security advisors: only the two old
   warnings (leaderboard, leaked-password protection).
-- **Not yet checked by anyone:** the live `/pass/` after #157 (the offer strip). This session cannot open akexplained.com, so
-  ask the owner for a screenshot.
-- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): an "All Access pass" tag on paid cards; whether
-  a paid set counts in a no-pass student's dashboard level pool; the footer line "free for every student"; what UPPGT100 is for;
-  per-course passes later; the real-money check.
+- **Owner's answers, 2026-11-19:** paid-card tag: not decided, parked in `docs/future-plans.md`; dashboard level counts only
+  what the student can open (built, rule 10); footer line is now "for every literary student's need" (31 pages); UPPGT100 is for
+  the owner's own students who bought his course; the real-money check is postponed; the owner saw the FIRSTIME50 strip live.
+  The `/pass/` page was also shrunk to the site's normal type scale (the owner found it bigger than other pages).
+- **Settled later the same day:** UPPGT100 is one use per student with no total limit (`max_uses` null); the Terms ("Other
+  payments") and Contact lines about "no paid group" were reworded to what is true (the website takes payment only for the pass;
+  the owner's own course or coaching is not sold or paid for here); on `/pass/` the stat boxes now sit at the bottom of the hero.
+- **"Get access" built, on the branch until the owner says "live kar do" (2026-11-19):** a logged-in student with no pass sees
+  Get access instead of Start on paid cards (4 hubs); guests keep the padlock; pass holders and admins keep Start. A paid test
+  page opened by link sends a guest straight to login, and a student with no pass to the exam's page with a banner (free tests
+  first, then Get access). Details and the rule for new series (`data-pass-start`): CLAUDE.md rules 17 and 22. Also fixed:
+  the UP PGT mock-test hub said "More mock tests are open to logged-in students" (now "need the All Access pass").
+- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): per-course passes later; the real-money check.
 - Watch out after every upload: confirm `paper_catalog.access` is `paid` (rule 22).
 
 ## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18; history of how it was built and launched)

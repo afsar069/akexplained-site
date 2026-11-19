@@ -122,7 +122,8 @@
       '<a class="agehub-go agehub-go-lock" data-guest-only hidden href="/login/?next=' + encodeURIComponent(url) + '" ' +
         'aria-label="' + esc(name) + ' needs a login. Log in to open it." title="' + esc('Log in to open ' + name) + '">' +
         LOCK_SVG + '</a>' +
-      '<a class="agehub-go is-solid" data-auth-only hidden href="' + esc(url) + '">Start</a>' +
+      '<a class="agehub-go is-solid" data-auth-only' + (row.access === 'paid' ? ' data-pass-start' : '') +
+        ' hidden href="' + esc(url) + '">Start</a>' +
       '</div>';
   }
 
@@ -146,6 +147,8 @@
         try { window.akAuth.refreshHeader(s); } catch (e) {}
       }, function () {});
     }
+    /* A paid card's Start becomes "Get access" for a student with no pass (assets/pass-gate.js). */
+    try { if (window.akPass) window.akPass.refresh(); } catch (e) {}
   }
 
   function render(rows) {
@@ -188,7 +191,7 @@
       if (row) {
         var copy = copyFor({ number: slot.number, title: row.title, question_count: row.question_count });
         if (isLive && (el.getAttribute('data-slot-copy') || '') === copy) return;
-        el.outerHTML = cardHtml({ number: slot.number, set_id: slot.setId, title: row.title, question_count: row.question_count }, true);
+        el.outerHTML = cardHtml({ number: slot.number, set_id: slot.setId, title: row.title, question_count: row.question_count, access: row.access }, true);
         changed = true;
       } else if (isLive) {
         el.outerHTML = soonHtml(slot.number, slot.setId);
@@ -210,7 +213,7 @@
     var slots = SLOTS ? slotList() : null;
     if (SLOTS && !slots.length) return;
 
-    var q = a.client.from('paper_catalog').select('set_id,title,exam_id,kind,number,question_count').eq('status', 'live');
+    var q = a.client.from('paper_catalog').select('set_id,title,exam_id,kind,number,question_count,access').eq('status', 'live');
     if (SLOTS) {
       /* Slot mode: id se hi poocho — purani id wale din (11, 12) bhi isi se mil jate hain. */
       q = q.in('set_id', slots.map(function (s) { return s.setId; }));

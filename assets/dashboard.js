@@ -197,35 +197,60 @@
     } catch (e) { return Promise.resolve(null); }
   }
 
+  /* Can this student open the paid tests right now? (owner, 2026-11-19: "free student ke wohi question
+     gine jaayenge jo wo open kar sakta hai".) Yes for an admin (RLS lets them read every paper) and for
+     someone with a running pass. true / false, or null when it cannot be read — then nothing is held back. */
+  function loadPaidAccess(client) {
+    try {
+      return client.from('paper_admins').select('user_id').maybeSingle().then(function (a) {
+        if (a && a.error) return null;
+        if (a && a.data) return true;
+        return client.from('passes').select('starts_at, ends_at').gt('ends_at', new Date().toISOString()).limit(20)
+          .then(function (res) {
+            if (res.error || !Array.isArray(res.data)) return null;
+            var now = Date.now();
+            return res.data.some(function (p) { return stamp(p.starts_at) <= now && stamp(p.ends_at) > now; });
+          });
+      }).then(function (v) { return v; }, function () { return null; });
+    } catch (e) { return Promise.resolve(null); }
+  }
+
   /* Self-serve publish (rule 17) means a login set can go live, or be hidden again, without a new
      build — so the age pool in the syllabus file can be out of date the moment it is written.
      Here the MCQ part of each age's pool is added up again against the live catalog:
        - a free set is a file on the site and always counts;
        - a login set the build counted counts only while it is live;
        - a login set the build did not know about (published into a Coming-soon slot) is added.
+     A paid set (every set that is not a free file) counts only for a student who can open it now
+     (`paidOpen`: an admin, or a running pass). Without that, such sets are left out of the pool, and
+     computeBritish leaves their answers out too (`paidLocked`, `freeSetIds`), so coverage stays true.
      The Daily questions are files and never change here. With no catalog, nothing is touched. */
-  function applyLiveCatalog(syl, rows) {
+  function applyLiveCatalog(syl, rows, paidOpen) {
     if (!syl || !syl.ages || !rows) return syl;
+    var locked = (paidOpen === false), sawSets = false, freeIds = {};
     var live = {};
     rows.forEach(function (r) {
       if (r && r.set_id) live[String(r.set_id)] = (parseInt(r.question_count, 10) > 0) ? parseInt(r.question_count, 10) : 0;
     });
     syl.ages.forEach(function (a) {
       if (!a.liveSets) return;                      // an older syllabus file: leave it alone
+      sawSets = true;
       var counted = {}, total = 0;
       a.liveSets.forEach(function (set) {
         counted[set.id] = 1;
-        if (set.access === 'login') { if (live[set.id] != null) total += live[set.id]; }
-        else total += (set.count | 0);
+        if (set.access === 'login') { if (!locked && live[set.id] != null) total += live[set.id]; }
+        else { total += (set.count | 0); freeIds[set.id] = 1; }
       });
       Object.keys(live).forEach(function (id) {
         if (counted[id]) return;
         var m = /^(.+)-set-\d+$/.exec(id);
-        if (m && m[1] === a.mcqSlug) total += live[id];
+        if (m && m[1] === a.mcqSlug && !locked) total += live[id];
       });
       a.mcqTotal = total;
       a.total = (a.dailyTotal != null ? a.dailyTotal : 0) + total;
     });
+    syl.paidLocked = locked && sawSets;
+    syl.freeSetIds = freeIds;
     return syl;
   }
 
@@ -346,6 +371,10 @@
     for (var i = 0; i < rows.length; i++) {
       var qid = rows[i].question_id;
       if (!qid || seen[qid]) continue;
+      if (syl.paidLocked) {                // a paid set this student cannot open is left out, as in the pool
+        var ps = /^(.+-set-\d+)-[emh]-\d+$/.exec(String(qid));
+        if (ps && !syl.freeSetIds[ps[1]]) continue;
+      }
       var hit = ageOfQuestion(qid, B0);
       if (!hit.age) continue;             // not a question of any British age
       seen[qid] = 1;
@@ -725,7 +754,10 @@
         '</div>' +
         '<div class="dashbigbar" aria-hidden="true"><span style="width:' + B.pct + '%"></span>' + marks + '</div>' +
         '<p class="small dashnote">Daily quiz answers and MCQ answers both count. ' +
-          'Each question is counted once, by your latest answer.</p>' +
+          'Each question is counted once, by your latest answer.' +
+          (ctx.syllabus && ctx.syllabus.paidLocked
+            ? ' Tests that need the <a href="/pass/">All Access pass</a> are counted once you have a pass.' : '') +
+          '</p>' +
         '<ol class="dashladder">' +
           B.ladder.map(function (L, i) {
             return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '">' +
@@ -1284,8 +1316,8 @@
     var pBoard = loadBoard(client).then(function (b) { ctx.board = b; }, function () { ctx.board = null; });
     /* The syllabus file gives the pool as it was at the last build; the live catalog corrects the
        MCQ part of it, so a set published or hidden since then is counted right (rule 17). */
-    var pSyl = Promise.all([loadSyllabus(), loadMcqCatalog(client)]).then(function (got) {
-      ctx.syllabus = applyLiveCatalog(got[0], got[1]);
+    var pSyl = Promise.all([loadSyllabus(), loadMcqCatalog(client), loadPaidAccess(client)]).then(function (got) {
+      ctx.syllabus = applyLiveCatalog(got[0], got[1], got[2]);
     }, function () { ctx.syllabus = null; });
     var pRuns = loadRuns(client, uid).then(function (n) { ctx.runs = n; }, function () { ctx.runs = null; });
 

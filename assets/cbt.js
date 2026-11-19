@@ -197,7 +197,11 @@
       if (!a || !a.configured || !a.client) throw needLoginError();
       return a.session();
     }).then(function (s) {
-      if (!s || !s.user) throw needLoginError();
+      if (!s || !s.user) {
+        var ge = needLoginError();
+        ge.guest = true;          /* auth works and nobody is logged in: broke() sends them straight to login */
+        throw ge;
+      }
       uid = s.user.id;
       return a.client.from('mcq_papers').select('body, access').eq('set_id', sid).eq('level', lv).maybeSingle();
     }).then(function (res) {
@@ -399,7 +403,11 @@
 
   /* File na mile to khali page nahi — saaf baat aur wapas jane ka rasta. */
   function broke(e) {
-    if (e && e.needsLogin) { needLogin(); return; }
+    if (e && e.needsLogin) {
+      /* Owner, 2026-11-19: someone who comes by a link goes straight to the login page, and comes back here after. */
+      if (e.guest && toLogin()) return;
+      needLogin(); return;
+    }
     if (e && e.needsPass) { needPass(); return; }
     root.innerHTML =
       '<div class="cbt-start">' +
@@ -430,10 +438,22 @@
       '</div>';
   }
 
-  /* Paid test, logged-in student, pass nahi (ya khatam): pass page ka rasta. Pass ke baad
-     /pass/?next= isi test par wapas bhejta hai. */
+  function toLogin() {
+    try { location.replace('/login/?next=' + encodeURIComponent(location.pathname + location.search)); return true; }
+    catch (e) { return false; }
+  }
+
+  /* Paid test, logged-in student, pass nahi (ya khatam). Owner, 2026-11-19: seedha link se aaye student ko
+     beech wala page nahi dikhta; use is exam ke page par bhej do (wahan free tests try kar sake) aur ek note
+     chhod do — assets/pass-gate.js use banner banakar dikhata hai ("That test needs the All Access pass") jiska
+     Get access button /pass/?next= se isi test par wapas laata hai. Redirect na ho paye to purani screen niche hai. */
   function needPass() {
     var back = location.pathname + location.search;
+    var hub = root.getAttribute('data-back') || '';
+    if (/^\/(?![\/\\])/.test(hub) && hub !== location.pathname) {
+      try { sessionStorage.setItem('ak:passNeeded', JSON.stringify({ next: back, t: Date.now() })); } catch (e) {}
+      try { location.replace(hub); return; } catch (e) {}
+    }
     var thing = PYQ ? 'paper' : EXAM_MOCK ? 'mock test' : 'set';
     root.innerHTML =
       '<div class="cbt-start">' +

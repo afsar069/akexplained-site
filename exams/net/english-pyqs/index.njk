@@ -49,7 +49,7 @@ eyebrow: Previous-year question papers
               </span>
               <span class="net-pyq-actions" data-slot-live{% if not paper.live %} hidden{% endif %}>
                 <a class="net-pyq-go net-pyq-go-lock" data-guest-only hidden href="/login/?next={{ paper.href | urlencode }}" aria-label="{{ paper.title }} needs a login. Log in to open it." title="Log in to open {{ paper.title }}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true" focusable="false"><rect x="5" y="11" width="14" height="10" rx="2" fill="currentColor"/><path d="M8 11V8a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg></a>
-                <a class="net-pyq-go" data-auth-only hidden href="{{ paper.href }}" aria-label="Start {{ paper.title }}">Start</a>
+                <a class="net-pyq-go" data-auth-only data-pass-start hidden href="{{ paper.href }}" aria-label="Start {{ paper.title }}">Start</a>
               </span>
               <span class="net-pyq-soon" data-slot-soon{% if paper.live %} hidden{% endif %}>Coming soon</span>
             </div>

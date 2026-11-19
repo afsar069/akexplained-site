@@ -242,7 +242,11 @@ and never ask the owner for it.**
   **The level counts MCQs too** (owner, 2026-11-06): an age's pool = its Daily questions + the questions of its
   live MCQ sets (`tools/build-syllabus.js` matches the 20 MCQ ages to the 20 Daily ages by position). Daily and
   MCQ answers count the same, each question once by its latest answer, 60% answered at 60% right. A set that is
-  not live is not in the pool. **Which login sets are live is read from the live `paper_catalog` when the
+  not live is not in the pool. **Paid sets count only for a student who can open them** (owner, 2026-11-19: "jo question vo
+  open kar sakta hai"): an admin or someone with a running pass; otherwise those sets are left out of the pool AND their
+  answers are left out of the count (`loadPaidAccess`, `applyLiveCatalog(…, paidOpen)`, `syl.paidLocked` / `freeSetIds`,
+  `computeBritish`), so coverage never inflates; the level card then says paid tests count once there is a pass. If the
+  pass / admin read fails nothing is held back (the built pool stands). Free sets are files and always count. **Which login sets are live is read from the live `paper_catalog` when the
   dashboard opens** (owner, 2026-11-17, rule 17), so a set published or hidden self-serve changes the pool at
   once; the syllabus file's `liveSets` says what the build counted, and a failed read leaves the built pool
   as it is. Strengths and Areas to improve judge **specific topics only** (never a whole
@@ -546,8 +550,9 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   page>`. A logged-in student sees Start instead. The lock is `data-guest-only` and Start (made by `assets/mcq-age.js`) is
   `data-auth-only`, so `auth.js` swaps them by login state; `mcq-age.js` runs before `auth.js` and sets Start's first
   state from the lock. There is no text tag ("Login needed" was removed on the owner's word) and no lock in the title.
-  The set page itself still shows "Log in to take this test" to a guest (its button links to
-  `/login/?next=<page and query>`, `cbt.js` `needLogin()`). The "Build your own test" page still says "Needs a free
+  **Since 2026-11-19 (rule 22) a logged-in student with no running pass sees "Get access" in place of Start on a paid card**
+  (`assets/pass-gate.js`), and a guest who opens a gated test page by link is sent straight to the login page. The old "Log in
+  to take this test" screen (`cbt.js` `needLogin()`) now only shows when sign-in itself is unavailable. The "Build your own test" page still says "Needs a free
   login" on the row (the owner has not asked to remove it). `/login/?next=…` shows one line (`#nextNote`): "Log in, or
   create a free account, to open this page. Then you will come straight back to it."
 - **Login and come back** (owner: "login karke seedha wahin jahan se chhoda hai"): `?next=<same-site path>` on
@@ -620,6 +625,10 @@ already public for live rows), so `/privacy/` needs no change.
   guest-lock / Start swap: each card has `data-guest-only` (padlock → `/login/?next=…`) and `data-auth-only`
   (Start), and it re-runs `window.akAuth.refreshHeader(session)` after injecting so the new cards swap by login
   state. Add `<script src="/assets/paper-list.js" defer></script>` to the hub.
+- **Paid cards must carry `data-pass-start`** on their Start button (owner, 2026-11-19, rule 22): `assets/pass-gate.js` then
+  adds a "Get access" twin and shows it instead of Start to a logged-in student with no pass. A hub script that builds or
+  flips cards at view time must call `window.akPass.refresh()` right after (paper-list.js, mcq-age.js and net-pyq-live.js do);
+  select `access` from the catalog and mark only `access = 'paid'` cards. Without the attribute a new series quietly keeps Start.
 - **Routes are pre-built for a fixed range** (a static host 404s on an unbuilt path), e.g. UP AP `test-1..30` +
   their review routes, paginated over a range array (see `statePscMockTests.range`, `RANGE_MAX`). Raising the
   range is a one-number change.
@@ -803,7 +812,7 @@ and open items: `docs/accounts-status.md` ("START HERE").
   On sale are the owner's, set on `/admin/payments/`; never change them unasked). 64 `mcq_papers` rows / 48 papers are `paid`, 0
   `login`. A student without a running pass cannot open any paid paper (they see "needs the All Access pass"); free files and
   the dashboard are untouched. Promo codes made by the owner: **FIRSTIME50** (Rs 50 off, once per student, shown to everyone
-  on `/pass/`) and **UPPGT100** (Rs 100 off, max 1 use, not shown; the owner has not said what it is for). The only paid
+  on `/pass/`) and **UPPGT100** (Rs 100 off, **one use per student, no total limit** — `max_uses` null, `once_per_student` true; not shown on the page; it is for the owner's own students who bought his course). The only paid
   order so far is the owner's Test Mode test (note on the row); **no real-money payment has been made yet**, so the live
   keys are still unproven end to end (the owner may do a small real payment and refund it in Razorpay). The owner can open
   access for one student with **Give a free pass**. The owner's own account is an admin AND holds a test pass to 18 Dec 2026,
@@ -841,10 +850,15 @@ and open items: `docs/accounts-status.md` ("START HERE").
   marks failed, refund.processed in full marks refunded). Secrets `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`,
   `RAZORPAY_WEBHOOK_SECRET` are added by the owner in Supabase → Edge Functions → Secrets; **never in the repo or chat**. CORS
   allows only `https://akexplained.com`.
-- **Pages.** `/pass/` is `pass/index.njk` (redesigned 2026-11-18, owner: "professional"; order set by the owner): dark hero with live stat strip (paid tests, questions, series) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
-  loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
-  running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
-  paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
+- **Pages.** `/pass/` is `pass/index.njk` (redesigned 2026-11-18, owner: "professional"; order set by the owner; shrunk
+  2026-11-19 because it read bigger than the other pages: it now uses the site's own type scale, hero ~440px, h1 1.55–2.05rem, h2
+  from the global rule, 34px sections — keep new pass-page sizes at that scale): dark hero with live stat strip (paid tests, questions, series; the strip and the "Secure payment" line sit at the bottom of the left column, level with the bottom of the buy card — owner's request) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
+  loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a paid test page opened with no pass no longer shows a middle page (owner, 2026-11-19). A **guest** is sent
+  straight to `/login/?next=<that page>`; a **logged-in student with no running pass** is sent to the exam's own page
+  (`data-back`, where the free tests are) with a note in `sessionStorage['ak:passNeeded']` that `pass-gate.js` shows as a
+  banner ("That test needs the All Access pass. You can try the free tests on this page first…") whose Get access button goes
+  to `/pass/?next=<that test>`; the old "needs the pass" screen (`needPass`) is only the fallback if that redirect cannot
+  happen. A paid paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
   re-upload); once the pass is On sale every new upload is saved as paid (and a destination with `access: 'paid'` in
   `_data/paperDestinations.js` always is). The page reads "is the pass on sale" once when the admin check passes; if the
   pass is ever switched off again, or that read fails, a brand-new upload is saved as **login** (any logged-in student can
@@ -870,13 +884,28 @@ and open items: `docs/accounts-status.md` ("START HERE").
 - **How the owner runs it (no Claude needed):** price / On sale, promo codes and free passes on `/admin/payments/`; a refund is
   made in the Razorpay dashboard and the webhook marks the order Refunded and ends that pass (or "Mark refunded" by hand). The
   orders table shows "Paid test opened?" for the 24-hour rule.
-- **Still open with the owner** (ask, do not decide): (1) a small "All Access pass" tag on the card of every paid test, so a
-  student knows before pressing Start (offered 2026-11-18, no answer yet; today a logged-in student sees Start on a paid set and
-  learns about the pass on the test page); (2) whether a paid set should count in the dashboard level pool of a student with
-  no pass (today every live set counts, so their level climbs slowly; suggestion: count only what they can open); (3) the
-  footer line "free for every student" (most of the site is free, not all); (4) what UPPGT100 is for; (5) per-course passes
-  later (one more `pass_plans` row; the paid read policy must then check the plan; the page's one `PLAN_ID` becomes a choice);
-  (6) the real-money check of the live keys.
+- **"Get access" on paid cards** (owner, 2026-11-19: the middle "needs the pass" page was dropped for a direct button): on every
+  hub with paid cards (UP PGT mock tests and MCQ days, UP AP mock tests, literature age hubs, NET PYQs) the Start button of a
+  paid card becomes **Get access** → `/pass/?next=<that test>` for a logged-in student with no running pass; guests keep the
+  padlock (login); a pass holder or an admin keeps Start; free cards are untouched. `assets/pass-gate.js` does it (reads the
+  student's own `paper_admins` / `passes`; if a read fails Start stays, the database is still the real lock; pages with no paid
+  card make no request; Start is hidden only while the check runs, max 5 s). Colour: gold (`#E3B65A`, navy text) so it reads as different from the teal Start (owner, 2026-11-19; rules at the end of `assets/site.css`). Wording: "Get access", not "Subscribe", because
+  the pass never renews by itself (Terms). Browser-tested 2026-11-19: 4 hubs x (no pass / pass / admin / read fails / guest),
+  free card unchanged, three ways into a test page, review link, 375px.
+- **Decided 2026-11-19 (owner):** the "All Access pass" tag on paid cards became the **Get access** button above (no separate
+  tag was built); a student sees only the tests they can open in the dashboard level (done, rule 10); the footer line
+  "free for every student" became "for every literary student's need" on all 31 pages (sentence case; `_includes/base.njk` is
+  the source and the other footers are hand copies, so a future change needs a sed over `*.html`/`*.njk`); **UPPGT100 is for the
+  owner's own students who bought his course**; the real-money check of the live keys is postponed ("abhi nahi"); the owner
+  saw the FIRSTIME50 strip on the live pass page.
+- **Settled later on 2026-11-19 (owner):** UPPGT100 means "one use per student" (the owner's words: "ek student ek use"), so
+  `max_uses` was set to null with one SQL UPDATE; anyone who knows the code can use it once, so keep it unshown. The Terms
+  section "Other payments" and the Contact note now say only what is true: this website takes payment only for the All Access
+  pass (Razorpay), any course or coaching the owner gives is not sold or paid for on this website, and a doubtful payment
+  request in the name of AK Explained should be reported to the owner first. The old lines "no coaching enrolment and no
+  paid group" were removed (the About page already says the owner does classroom and examination coaching). Do not add a
+  course name, price or place of sale to these pages unless the owner supplies them (rule 2).
+- **Still open with the owner** (ask, do not decide): per-course passes later; the real-money check of the live keys.
 - **Working notes for the next session.** The owner chats in Hinglish, wants click-by-click steps one at a time, never pastes
   a secret, and merges only by saying "live kar do". Site text stays simple English. Never type a count or price into a page:
   paid counts are read live from `paper_catalog` (`assets/pass.js` `loadInventory`), free counts from `_data/passFree.js`.
