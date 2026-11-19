@@ -17,6 +17,9 @@ titles — none of it is made up. If a fact is not supplied or verifiable, leave
 placeholder and ask. The site's own About page states this rule to readers, so
 breaking it breaks a promise already made.
 
+## Image weight and format (owner, 2026-11-19)
+Use **WebP for website pictures**, aiming for **200 KB or less per image**. Do not add heavy JPG/JPEG pictures. Convert and compress generated or supplied artwork before using it, inspect visual quality, and check the actual exported file size. Keep agreed dimensions unless the owner asks to change them. When replacing a cached image, use a fresh asset filename and update its reference so visitors receive the lighter version.
+
 ## 3. Structure
 - `index.html` — landing page (plain HTML + `assets/home.css` + `assets/home.js`)
 - `_includes/base.njk` — layout for markdown article pages (Pages CMS publishes these)

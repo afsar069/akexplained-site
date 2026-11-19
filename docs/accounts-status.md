@@ -6,9 +6,13 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Website picture format — owner preference (2026-11-19)
+- All new or changed website pictures should use WebP and stay around 200 KB or less. Avoid heavy JPG/JPEG. This rule is also in `AGENTS.md` and `CLAUDE.md`.
+- The approved Old English painting was compressed from 569,780 to 189,362 bytes with its dimensions, artwork and fade treatment preserved. A fresh filename avoids reusing the cached heavier image.
+
 ## Old English full-art header — approved (2026-11-19)
 - Owner requested a single-page pilot on `/notes/old-english/`: regenerate the original Old English painting at **2086 × 754**, with artwork across its entire width and a soft fade behind live text.
-- Candidate image: `assets/ages/old-english-hero-full.webp`; the original `old-english-hero.webp` stays intact. The `hero-old-english-full` class is used only by this article.
+- Published artwork is optimized as `assets/ages/old-english-hero-full-light.webp` (189,362 bytes, 2086 × 754); the original `old-english-hero.webp` stays intact. The `hero-old-english-full` class is used only by this article.
 - The owner approved this Old English preview for publication via PR #166 on 2026-11-19. Do not apply this treatment to other articles until separately authorized.
 
 ## Header artwork update — 2026-11-19
