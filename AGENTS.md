@@ -26,6 +26,7 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
    (how: `CLAUDE.md` rule 5). `npx eleventy` must build clean and no internal link may 404 (rule 4).
 6. **Never gate content that is already free** (articles, the Daily quiz, the free MCQ sets).
 7. Anything destructive in the database (drop, delete, truncate) needs the owner's word first.
+8. **Pictures: WebP, about 200 KB or less each** (owner, 2026-11-19). No heavy JPG/JPEG. Compress, inspect and check actual bytes before adding or replacing website artwork; keep agreed dimensions.
 
 ## The jobs you will meet most
 - **Publish an MCQ set**: free = `CLAUDE.md` rule 7 (files in `assets/questions/`, registry row in
