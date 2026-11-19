@@ -6,7 +6,7 @@ eyebrow: Notes · Literary Ages
 mark: O
 crumb_label: Old English
 hero_image: /assets/ages/old-english-hero-full-light.webp
-hero_class: hero-old-english hero-old-english-full
+hero_class: hero-old-english hero-article-full
 updated: 2026-10-12
 exams:
   - UGC-NET

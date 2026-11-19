@@ -5,13 +5,13 @@ description: A simple guide to English Renaissance literature, its poetry, drama
 eyebrow: Notes · Literary Ages
 mark: R
 crumb_label: Renaissance
-hero_image: /assets/ages/renaissance-hero.webp
-hero_class: hero-age
+hero_image: /assets/ages/renaissance-hero-full-light.webp
+hero_class: hero-age hero-article-full
 hero_variants:
   - age: early-tudor
-    image: /assets/ages/early-tudor-hero.webp
+    image: /assets/ages/early-tudor-hero-full-light.webp
   - age: elizabethan
-    image: /assets/ages/elizabethan-hero.webp
+    image: /assets/ages/elizabethan-hero-full-light.webp
 updated: 2026-10-13
 exams:
   - UGC-NET

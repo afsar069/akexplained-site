@@ -69,6 +69,8 @@ sidebar markup copied into `index.html` and `404.html` (every other page gets it
 
 **The default footer belongs on every public page**, including custom exam hubs and their related pages (owner, 2026-11-07). Keep the shared footer from `_includes/base.njk`; custom layouts use `<footer class="site-footer"></footer>` so `syncChrome` supplies it automatically. A new page design must not replace it with a page-specific footer.
 
+**Literary-age article headers (owner, 2026-11-19):** every age article and its query-specific period view uses its own continuous, full-width painting with `hero-article-full`, the fade approved on Old English. Keep period-specific `hero_variants` working. New artwork is WebP under about 200 KB; preserve original dimensions and keep old artwork available. This treatment does not apply to the dashboard, landing page or non-article headers.
+
 ## 4. Before pushing
 `npx eleventy` must build clean, and no internal link may 404.
 

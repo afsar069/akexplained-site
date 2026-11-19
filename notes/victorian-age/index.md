@@ -5,8 +5,8 @@ description: "A simple guide to the Victorian Age (1837-1901): its history, nove
 eyebrow: Notes · Literary Ages
 mark: V
 crumb_label: Victorian
-hero_image: /assets/ages/victorian-hero.webp
-hero_class: hero-age
+hero_image: /assets/ages/victorian-hero-full-light.webp
+hero_class: hero-age hero-article-full
 updated: 2026-10-13
 exams:
   - UGC-NET

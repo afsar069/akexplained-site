@@ -5,8 +5,8 @@ description: A simple guide to English literature since 1945, its drama, poetry,
 eyebrow: Notes · Literary Ages
 mark: C
 crumb_label: Contemporary
-hero_image: /assets/ages/postmodern-hero.webp
-hero_class: hero-age
+hero_image: /assets/ages/postmodern-hero-full-light.webp
+hero_class: hero-age hero-article-full
 updated: 2026-10-13
 exams:
   - UGC-NET

@@ -5,13 +5,13 @@ description: "A simple guide to Modern English literature (1901-1945): its world
 eyebrow: Notes · Literary Ages
 mark: M
 crumb_label: Modern
-hero_image: /assets/ages/modern-hero.webp
-hero_class: hero-age
+hero_image: /assets/ages/modern-hero-full-light.webp
+hero_class: hero-age hero-article-full
 hero_variants:
   - age: edwardian
-    image: /assets/ages/edwardian-hero.webp
+    image: /assets/ages/edwardian-hero-full-light.webp
   - age: georgian
-    image: /assets/ages/georgian-hero.webp
+    image: /assets/ages/georgian-hero-full-light.webp
 updated: 2026-10-13
 exams:
   - UGC-NET
