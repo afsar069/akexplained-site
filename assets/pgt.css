@@ -93,9 +93,11 @@
 .pgt-download-btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:54px;padding:0 24px;border-radius:8px;background:var(--teal);color:#fff;font-size:1.05rem;font-weight:700;line-height:1;box-shadow:0 2px 0 rgba(0,0,0,.18);transition:background-color .18s}
 .pgt-download-btn:hover{background:var(--teal-dark);color:#fff}
 .pgt-download-btn img{width:22px;height:22px;filter:brightness(0) invert(1)}
-/* After a click the button turns navy and says "Download again" (assets/syllabus-download.js). Navy, not gold: gold already means "Get access" on paid cards. */
-.pgt-download-btn.is-done{background:var(--ink)}
-.pgt-download-btn.is-done:hover{background:#24466b;color:#fff}
+/* After a click the button turns light parrot green and says "Download again" (assets/syllabus-download.js; owner 2026-11-19).
+   Green, not gold: gold already means "Get access" on paid cards. Dark text and a dark icon, because white does not read on a light green. */
+.pgt-download-btn.is-done{background:#A9DC6B;color:var(--ink)}
+.pgt-download-btn.is-done:hover{background:#96CF52;color:var(--ink)}
+.pgt-download-btn.is-done img{filter:brightness(0)}
 .pgt-download-status{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
 .pgt-download-read{margin:12px 0 22px;font-size:.95rem}
 .pgt-download-read a{font-weight:600;text-underline-offset:3px}

@@ -1,5 +1,5 @@
 /* Download Syllabus page (/exams/pgt/up-pgt/syllabus-download/):
-   jab koi Download PDF dabata hai, us card ka button dusre rang ka ho jata hai aur "Download again" likha aata hai.
+   jab koi Download PDF dabata hai, us card ka button light parrot green ho jata hai aur "Download again" likha aata hai.
    Download khud nahi rokta: link ka apna download chalta rehta hai, dobara dabane par phir se download hota hai.
    Ye sirf is page ke liye hai; JavaScript na chale to button jaisa tha waisa hi kaam karta hai. */
 (function () {
