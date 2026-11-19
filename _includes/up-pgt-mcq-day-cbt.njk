@@ -15,6 +15,7 @@
 {% if examReview or (gated and not day.liveAtBuild) %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'MCQs',h:'/exams/pgt/up-pgt/mcqs/'},{t:'Day ' ~ day.number,h:'/exams/pgt/up-pgt/mcqs/day-' ~ day.number ~ '/'}] %}
 {% set mainClass = "cbt" %}
+{% set bodyClass = "pgt-cbt-page" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">

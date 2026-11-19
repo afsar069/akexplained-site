@@ -13,6 +13,7 @@
 {% if examReview or (mockLogin and not mockLiveAtBuild) %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'PGT English',h:'/exams/pgt/'},{t:'UP PGT',h:'/exams/pgt/up-pgt/'},{t:'Mock Tests',h:'/exams/pgt/up-pgt/mock-tests/'},{t:'Mock Test ' ~ n,h:'/exams/pgt/up-pgt/mock-tests/test-' ~ n ~ '/'}] %}
 {% set mainClass = "cbt" %}
+{% set bodyClass = "pgt-cbt-page" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
 {% block main %}
 <section class="pagehead pagehead-practice">
