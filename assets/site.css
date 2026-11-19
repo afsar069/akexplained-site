@@ -241,6 +241,37 @@ strong{color:var(--ink)}
   .hero-old-english h1{max-width:none}
 }
 
+/* Old English pilot only: full painting with a soft two-dimensional scrim
+   around the live copy. Other article paintings retain their original layout. */
+.hero-old-english-full .pagehead-art{
+  -webkit-mask-image:none;mask-image:none;
+}
+.hero-old-english-full::after{
+  background:radial-gradient(ellipse 69% 88% at 14% 49%,
+    rgba(250,245,233,.9) 0%,rgba(250,245,233,.81) 30%,
+    rgba(250,245,233,.57) 52%,rgba(250,245,233,.22) 72%,
+    rgba(250,245,233,0) 96%);
+}
+.hero-old-english-full :is(h1,.eyebrow,.lede,.artmeta){
+  text-shadow:0 1px 2px rgba(250,245,233,.7),0 0 18px rgba(250,245,233,.5);
+}
+@media (max-width:760px){
+  .pagehead.hero-old-english-full{
+    display:flex;align-items:flex-end;min-height:540px;
+  }
+  .hero-old-english-full .pagehead-art{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-position:90% center;-webkit-mask-image:none;mask-image:none;
+  }
+  .hero-old-english-full::after{
+    height:auto;bottom:0;
+    background:linear-gradient(180deg,rgba(250,245,233,0) 0%,
+      rgba(250,245,233,.12) 23%,rgba(250,245,233,.78) 48%,
+      rgba(250,245,233,.9) 82%,rgba(250,245,233,.65) 100%);
+  }
+  .hero-old-english-full > .wrap{padding-top:210px}
+}
+
 /* ---------- Article hero artwork (Middle English page) ----------
    Same pattern as the Old English head: the age painting sits behind
    the page head on a wide screen with a cream scrim on the left so the
