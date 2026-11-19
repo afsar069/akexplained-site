@@ -519,16 +519,61 @@
     btn.hidden = false;
 
     btn.addEventListener('click', function () {
-      if (!window.confirm('Clear your ' + (page.getAttribute('data-agename') || 'practice') +
-        ' progress on this device? This cannot be undone.')) return;
-      var s = store();
-      if (s) {
-        sets.forEach(function (set) {
-          try { s.removeItem('akq:' + set.id + ':v1'); } catch (e) {}
-        });
-      }
-      location.reload();
+      askBox({
+        title: 'Clear your ' + (page.getAttribute('data-agename') || 'practice') + ' progress?',
+        lines: ['This removes your answers for this age from this device.', 'This cannot be undone.'],
+        yes: 'Clear progress',
+        no: 'Keep it',
+        onYes: function () {
+          var s = store();
+          if (s) {
+            sets.forEach(function (set) {
+              try { s.removeItem('akq:' + set.id + ':v1'); } catch (e) {}
+            });
+          }
+          location.reload();
+        }
+      });
     });
+  }
+
+  /* A confirmation box inside the page, not a browser pop-up (owner, 2026-11-19).
+     Same look as the test's submit box (.cbt-modal in site.css). Escape, a tap outside
+     or "Keep it" closes it without doing anything. */
+  function askBox(opt) {
+    if (document.querySelector('.cbt-modal')) return;
+    var back = document.activeElement;
+    var box = document.createElement('div');
+    box.className = 'cbt-modal';
+    function esc(s) { return String(s).replace(/[&<>"]/g, function (ch) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); }
+    box.innerHTML =
+      '<div class="cbt-modal-card" role="alertdialog" aria-modal="true" aria-labelledby="akModalT" aria-describedby="akModalD" tabindex="-1">' +
+        '<h2 id="akModalT">' + esc(opt.title) + '</h2>' +
+        '<div id="akModalD">' + opt.lines.map(function (l) { return '<p>' + esc(l) + '</p>'; }).join('') + '</div>' +
+        '<div class="cbt-modal-actions">' +
+          '<button type="button" class="cbt-modal-no">' + esc(opt.no) + '</button>' +
+          '<button type="button" class="cbt-modal-yes">' + esc(opt.yes) + '</button>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(box);
+    document.body.style.overflow = 'hidden';
+    var yes = box.querySelector('.cbt-modal-yes');
+    var no = box.querySelector('.cbt-modal-no');
+    function close() {
+      box.remove();
+      document.body.style.overflow = '';
+      if (back && back.focus) { try { back.focus({ preventScroll: true }); } catch (e) {} }
+    }
+    yes.addEventListener('click', function () { close(); opt.onYes(); });
+    no.addEventListener('click', close);
+    box.addEventListener('click', function (e) { if (e.target === box) close(); });
+    box.addEventListener('keydown', function (e) {
+      e.stopPropagation();
+      if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+      if (e.key === 'Tab') { e.preventDefault(); (document.activeElement === no ? yes : no).focus(); }
+    });
+    // Focus starts on the safe choice.
+    no.focus({ preventScroll: true });
   }
 
   /* --------------------------------------------------------- */
