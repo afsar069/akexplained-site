@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="/assets/site.css">
 <link rel="stylesheet" href="/assets/pgt.css">
 </head>
-<body class="pgt-page{% if pgt_hub %} pgt-hub-page{% endif %}">
+<body class="pgt-page{% if pgt_hub %} pgt-hub-page{% endif %}{% if pgt_up_home %} pgt-up-page{% endif %}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header"></header>
 <div class="wrap pgt-breadcrumb"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/exams/">Exams</a><span>/</span>{% if pgt_hub %}PGT English{% elif pgt_practice_index or pgt_practice_item %}<a href="/exams/pgt/">PGT English</a><span>/</span><a href="/exams/pgt/up-pgt/">UP PGT</a><span>/</span>{% if pgt_practice_item %}<a href="{{ pgt_practice_collection_url }}">{{ pgt_practice_collection_label }}</a><span>/</span>{% endif %}{{ crumb_label or title }}{% else %}<a href="/exams/pgt/">PGT English</a><span>/</span>{{ crumb_label or title }}{% endif %}</p></div>

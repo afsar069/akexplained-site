@@ -207,18 +207,36 @@
 /* UP PGT PYQs (rule 23): the note under a year card. (The disclaimer line is in site.css: the test pages do not load pgt.css.) */
 .pgt-pyq-leftout{margin:0;padding:0 18px 14px;font-size:.92rem;line-height:1.5;max-width:none}
 
-/* Sirf phone, sirf PGT hub (/exams/pgt/): head bina picture ke. Heading hari patti me, uske neeche judi hui safed patti me subtitle. Desktop par kuch nahi badalta. */
+/* Sirf phone, sirf PGT hub (/exams/pgt/) aur UP PGT page (/exams/pgt/up-pgt/): head bina picture ke. Heading hari patti me, uske neeche judi hui safed patti me subtitle. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
-  .pgt-hub-page .pagehead-practice{padding:16px 0 0;min-height:0;border-bottom:0;background:none}
-  .pgt-hub-page .pagehead-practice::before{display:none}
-  .pgt-hub-page .pagehead .eyebrow{display:none}
-  .pgt-hub-page .pagehead h1{
+  :is(.pgt-hub-page,.pgt-up-page) .pagehead-practice{padding:16px 0 0;min-height:0;border-bottom:0;background:none}
+  :is(.pgt-hub-page,.pgt-up-page) .pagehead-practice::before{display:none}
+  :is(.pgt-hub-page,.pgt-up-page) .pagehead .eyebrow{display:none}
+  :is(.pgt-hub-page,.pgt-up-page) .pagehead h1{
     margin:0;padding:11px 16px 10px;background:var(--teal-dark);color:#fff;border-radius:12px 12px 0 0;
     font-size:1.2rem;line-height:1.3;max-width:none;text-wrap:balance;
   }
-  .pgt-hub-page .pagehead p.lede{
+  :is(.pgt-hub-page,.pgt-up-page) .pagehead p.lede{
     margin:0;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font-weight:600;
     border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
     font-family:var(--sans);font-size:.88rem;line-height:1.45;max-width:none;
   }
+}
+
+/* Sirf phone, sirf UP PGT page: "Complete course in 60 days" (Coming soon) card sabse neeche, aur baaki cards se chhota. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .pgt-up-page .pgt-resource-hub{display:flex;flex-direction:column}
+  .pgt-up-page .pgt-resource-grid{order:1}
+  .pgt-up-page .pgt-guide-link{order:2}
+  .pgt-up-page .pgt-course-card{
+    order:3;flex-wrap:nowrap;align-items:center;gap:10px;min-height:0;margin:18px 0 0;padding:10px 12px;
+    border-bottom-width:3px;border-radius:8px;
+  }
+  .pgt-up-page .pgt-course-icon{padding-right:10px;border-right-width:1px}
+  .pgt-up-page .pgt-course-icon img{width:26px;height:26px}
+  .pgt-up-page .pgt-course-copy{flex:1 1 0;gap:0}
+  .pgt-up-page .pgt-course-copy strong{font-size:.92rem;line-height:1.25;text-wrap:balance}
+  .pgt-up-page .pgt-course-copy span{font-size:.76rem;line-height:1.3}
+  .pgt-up-page .pgt-course-action{flex:none;flex-basis:auto;min-height:30px;padding:3px 9px;font-size:.74rem;border-radius:6px}
+  .pgt-up-page .pgt-course-action img{display:none}
 }
