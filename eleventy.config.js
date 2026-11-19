@@ -102,6 +102,7 @@ module.exports = function (eleventyConfig) {
     // that order. Never gates content; if unconfigured the header reads "Login".
     if (!out.includes("/assets/auth.js") && out.includes("</body>")) {
       out = out.replace("</body>",
+        '<script src="/assets/pass-gate.js" defer></script>\n' +
         '<script src="/assets/supabase-2.118.0.js" defer></script>\n' +
         '<script src="/assets/supabase-config.js" defer></script>\n' +
         '<script src="/assets/auth.js" defer></script>\n' +

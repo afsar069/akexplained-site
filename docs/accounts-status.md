@@ -33,6 +33,11 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
 - **Settled later the same day:** UPPGT100 is one use per student with no total limit (`max_uses` null); the Terms ("Other
   payments") and Contact lines about "no paid group" were reworded to what is true (the website takes payment only for the pass;
   the owner's own course or coaching is not sold or paid for here); on `/pass/` the stat boxes now sit at the bottom of the hero.
+- **"Get access" built, on the branch until the owner says "live kar do" (2026-11-19):** a logged-in student with no pass sees
+  Get access instead of Start on paid cards (4 hubs); guests keep the padlock; pass holders and admins keep Start. A paid test
+  page opened by link sends a guest straight to login, and a student with no pass to the exam's page with a banner (free tests
+  first, then Get access). Details and the rule for new series (`data-pass-start`): CLAUDE.md rules 17 and 22. Also fixed:
+  the UP PGT mock-test hub said "More mock tests are open to logged-in students" (now "need the All Access pass").
 - **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): per-course passes later; the real-money check.
 - Watch out after every upload: confirm `paper_catalog.access` is `paid` (rule 22).
 
