@@ -31,6 +31,6 @@
      data-set="up-pgt-mock-test-{{ n }}"{% if mockLogin %} data-gated="up-pgt-mock-test-{{ n }}" data-catalog-check="up-pgt-mock-test-{{ n }}" data-levels="medium" data-default-level="medium"{% else %} data-src="/assets/questions/up-pgt-mock-test-{{ n }}.json"{% endif %}
      data-back="/exams/pgt/up-pgt/mock-tests/{% if examReview %}test-{{ n }}/{% endif %}"
      data-back-label="{% if examReview %}Mock Test {{ n }}{% else %}Mock Tests{% endif %}">
-  <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
+  <noscript><div class="cbt-start"><h2>This page needs JavaScript</h2><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
 </div>
 {% endblock %}

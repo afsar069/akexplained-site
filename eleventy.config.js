@@ -119,6 +119,29 @@ module.exports = function (eleventyConfig) {
     return out;
   });
 
+  // SEO safety net (owner, 2026-11-19): every public page that Google may index gets a canonical
+  // link and share tags (Open Graph + Twitter card). A page that already has a tag keeps its own;
+  // this only fills the gaps, built from the page's own URL, <title> and meta description.
+  // Pages marked noindex (admin, login, review, coming soon...) are left alone.
+  eleventyConfig.addTransform("seoTags", function (content) {
+    if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
+    if (!this.page.url || !content.includes("</head>")) return content;
+    if (/<meta\s+name=["']robots["'][^>]*noindex/i.test(content)) return content;
+    const url = "https://akexplained.com" + this.page.url;
+    const title = (content.match(/<title[^>]*>([\s\S]*?)<\/title>/i) || [])[1];
+    const desc = (content.match(/<meta\s+name=["']description["']\s+content=["']([^"']*)["']/i) || [])[1];
+    const add = [];
+    if (!/<link\s+rel=["']canonical["']/i.test(content)) add.push('<link rel="canonical" href="' + url + '">');
+    if (!/property=["']og:title["']/i.test(content) && title) add.push('<meta property="og:title" content="' + title.trim() + '">');
+    if (!/property=["']og:description["']/i.test(content) && desc) add.push('<meta property="og:description" content="' + desc + '">');
+    if (!/property=["']og:image["']/i.test(content)) add.push('<meta property="og:image" content="https://akexplained.com/assets/social-card.png">');
+    if (!/property=["']og:url["']/i.test(content)) add.push('<meta property="og:url" content="' + url + '">');
+    if (!/property=["']og:type["']/i.test(content)) add.push('<meta property="og:type" content="website">');
+    if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary_large_image">');
+    if (!add.length) return content;
+    return content.replace("</head>", add.join("\n") + "\n</head>");
+  });
+
   // Cache se purani file na dikhe: har CSS/JS link me file ka chhota "version" jod do
   // (jaise /assets/site.css?v=1a2b3c4d). File badalte hi version badal jata hai,
   // isliye browser nayi file mangta hai — hard refresh ki zarurat nahi padti.

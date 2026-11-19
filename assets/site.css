@@ -1916,7 +1916,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   background:var(--card-paper);border:1px solid var(--card-line);
   border-radius:16px;padding:26px 28px;max-width:720px;margin:0 auto;
 }
-.cbt-start h1{
+.cbt-start h1,noscript .cbt-start h2{
   font-family:var(--serif);font-size:clamp(1.4rem,3vw,1.9rem);font-weight:600;
   color:var(--ink);line-height:1.2;margin-bottom:6px;
 }

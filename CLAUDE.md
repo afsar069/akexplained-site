@@ -71,6 +71,11 @@ sidebar markup copied into `index.html` and `404.html` (every other page gets it
 
 **Literary-age article headers (owner, 2026-11-19):** every age article and its query-specific period view uses its own continuous, full-width painting with `hero-article-full`, the fade approved on Old English. Keep period-specific `hero_variants` working. New artwork is WebP under about 200 KB; preserve original dimensions and keep old artwork available. This treatment does not apply to the dashboard, landing page or non-article headers.
 
+## SEO rules (owner, 2026-11-19)
+- **Anything free and open without a login is indexable** (free MCQ sets, free PGT MCQ days 1–10, free mock tests, free PYQs, hubs, notes). Login/paid pages, review pages, "build your own test", dashboard, admin, login and coming-soon pages are `noindex`. A login page that is not live at build is noindex too. A noindex page is never in `sitemap.njk`; an indexable page should be.
+- `eleventy.config.js` has a `seoTags` transform: every indexable page gets a canonical link and Open Graph / Twitter tags (from its own URL, `<title>` and description) unless it already has them. A new page needs only a good `<title>` and `<meta name="description">` (about 50–160 characters).
+- Each page has exactly one `<h1>` (a `noscript` message is an `<h2>`).
+
 ## 4. Before pushing
 `npx eleventy` must build clean, and no internal link may 404.
 

@@ -60,7 +60,7 @@ const counts = tests.map(t => t.questionCount).filter((v, i, a) => a.indexOf(v) 
 const RANGE_MAX = 30;
 const range = [];
 for (let i = 1; i <= RANGE_MAX; i++) {
-  range.push({ number: i, setId: PREFIX + i });
+  range.push({ number: i, setId: PREFIX + i, liveAtBuild: tests.some(t => t.number === i) });
 }
 
 module.exports = {

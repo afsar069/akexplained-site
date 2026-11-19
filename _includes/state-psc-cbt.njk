@@ -9,7 +9,8 @@
 {% set pageTitle %}UP Assistant Professor Paper 2 Mock Test {{ n }}{% if examReview %} — Review your answers{% endif %} | AK Explained{% endset %}
 {% set pageDescription %}Take UP Assistant Professor Paper 2 English Literature Mock Test {{ n }} with {{ qcount }} questions after logging in.{% endset %}
 {% set canonical %}https://akexplained.com{{ base }}test-{{ n }}/{% if examReview %}review/{% endif %}{% endset %}
-{% if examReview %}{% set robots = "noindex,follow" %}{% endif %}
+{# A test that is not live at build shows "not open yet" to everyone, so it is noindex (rule 17). #}
+{% if examReview or not mockLiveAtBuild %}{% set robots = "noindex,follow" %}{% endif %}
 {% set crumbs = [{t:'Home',h:'/'},{t:'Exams',h:'/exams/'},{t:'State PSC',h:'/exams/state-psc/'},{t:'UP Assistant Professor',h:'/exams/state-psc/up-assistant-professor/'},{t:'Mock Tests',h:base},{t:'Mock Test ' ~ n,h:base ~ 'test-' ~ n ~ '/'}] %}
 {% set mainClass = "cbt" %}
 {% set scripts = ["/assets/nav.js", "/assets/cbt.js"] %}
@@ -32,6 +33,6 @@
      data-exam-index-label="Paper 2 Mock Tests"
      data-back="{{ base }}{% if examReview %}test-{{ n }}/{% endif %}"
      data-back-label="{% if examReview %}Mock Test {{ n }}{% else %}Mock Tests{% endif %}">
-  <noscript><div class="cbt-start"><h1>This page needs JavaScript</h1><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
+  <noscript><div class="cbt-start"><h2>This page needs JavaScript</h2><p>Turn on JavaScript and reload to use the test and review screens.</p></div></noscript>
 </div>
 {% endblock %}
