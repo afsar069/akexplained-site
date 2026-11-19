@@ -4282,3 +4282,25 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .mcq-sec-page .agehub-buildlink .agehub-start{width:auto;padding:8px 14px;font-size:.85rem}
 }
 
+/* Sirf phone, MCQ age hub: har set ek patli row (number, naam aur ek-do line, daayein chhota Start). Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .mcq-sec-page .agehub-sets{border-radius:12px;margin-bottom:14px}
+  .mcq-sec-page .agehub-set{
+    display:grid;grid-template-columns:30px minmax(0,1fr) auto;column-gap:10px;align-items:center;
+    padding:10px 12px;
+  }
+  .mcq-sec-page .agehub-badge{width:30px;height:30px;font-size:.8rem}
+  .mcq-sec-page .agehub-setbody{flex:none;order:0;min-width:0}
+  .mcq-sec-page .agehub-settitle{
+    font-size:.95rem;line-height:1.3;margin-bottom:1px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .mcq-sec-page .agehub-setmeta{font-size:.78rem;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mcq-sec-page .agehub-tags{gap:4px;margin-top:4px;flex-wrap:nowrap;overflow:hidden}
+  .mcq-sec-page .agehub-tag{font-size:.64rem;padding:0 7px;line-height:1.5;white-space:nowrap}
+  .mcq-sec-page .agehub-set .mcq-bar{margin:6px 0 0}
+  .mcq-sec-page .agehub-go,.mcq-sec-page .agehub-soon{order:0;width:auto;padding:7px 14px;font-size:.82rem;border-radius:9px}
+  .mcq-sec-page .agehub-soon{font-size:.7rem;padding:5px 9px;text-align:center}
+  .mcq-sec-page .agehub-go-lock{min-width:0;padding:7px 12px}
+}
+
