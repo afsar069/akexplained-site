@@ -6,11 +6,16 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Old English full-art header — approved (2026-11-19)
+- Owner requested a single-page pilot on `/notes/old-english/`: regenerate the original Old English painting at **2086 × 754**, with artwork across its entire width and a soft fade behind live text.
+- Candidate image: `assets/ages/old-english-hero-full.webp`; the original `old-english-hero.webp` stays intact. The `hero-old-english-full` class is used only by this article.
+- The owner approved this Old English preview for publication via PR #166 on 2026-11-19. Do not apply this treatment to other articles until separately authorized.
+
 ## Header artwork update — 2026-11-19
 - Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
-- The dashboard's top banner uses the same Daily image; its greeting panel remains intact.
+- The dashboard keeps its original `assets/dash-banner.webp` banner and greeting panel (owner clarification after PR #162, 2026-11-19). It is excluded from the Daily-header changes.
 - British Literature reading articles keep their original age paintings, responsive layout and period-specific image variants (owner clarification, 2026-11-19). The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
-- The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the non-article headers use the Daily artwork.
+- The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the other illustrated headers use the Daily artwork, except the dashboard.
 
 ## START HERE — state on 2026-11-19
 - **UP PGT English PYQs, on branch `claude/wonderful-hawking-5kvei0`, not merged yet:** `/exams/pgt/up-pgt/pyqs/` lists papers year by year (free, no login, CLAUDE.md rule 23).

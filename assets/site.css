@@ -241,6 +241,37 @@ strong{color:var(--ink)}
   .hero-old-english h1{max-width:none}
 }
 
+/* Old English pilot only: full painting with a soft two-dimensional scrim
+   around the live copy. Other article paintings retain their original layout. */
+.hero-old-english-full .pagehead-art{
+  -webkit-mask-image:none;mask-image:none;
+}
+.hero-old-english-full::after{
+  background:radial-gradient(ellipse 69% 88% at 14% 49%,
+    rgba(250,245,233,.9) 0%,rgba(250,245,233,.81) 30%,
+    rgba(250,245,233,.57) 52%,rgba(250,245,233,.22) 72%,
+    rgba(250,245,233,0) 96%);
+}
+.hero-old-english-full :is(h1,.eyebrow,.lede,.artmeta){
+  text-shadow:0 1px 2px rgba(250,245,233,.7),0 0 18px rgba(250,245,233,.5);
+}
+@media (max-width:760px){
+  .pagehead.hero-old-english-full{
+    display:flex;align-items:flex-end;min-height:540px;
+  }
+  .hero-old-english-full .pagehead-art{
+    position:absolute;inset:0;width:100%;height:100%;
+    object-position:90% center;-webkit-mask-image:none;mask-image:none;
+  }
+  .hero-old-english-full::after{
+    height:auto;bottom:0;
+    background:linear-gradient(180deg,rgba(250,245,233,0) 0%,
+      rgba(250,245,233,.12) 23%,rgba(250,245,233,.78) 48%,
+      rgba(250,245,233,.9) 82%,rgba(250,245,233,.65) 100%);
+  }
+  .hero-old-english-full > .wrap{padding-top:210px}
+}
+
 /* ---------- Article hero artwork (Middle English page) ----------
    Same pattern as the Old English head: the age painting sits behind
    the page head on a wide screen with a cream scrim on the left so the
@@ -3402,14 +3433,14 @@ body:has(.dashtop) .homebar{display:none}
   .dashtop-user svg{display:none}
 }
 
-/* The dashboard reuses the Daily banner above its existing greeting panel. */
+/* The dashboard header: the banner painting (with Prof. AK's own quote
+   baked into it) and, under it, the greeting, the four steps and the path. */
 .dashhero{
   background:var(--card-paper);border:1px solid var(--card-line);
   border-radius:18px;padding:0;margin:0 0 20px;overflow:hidden;
   box-shadow:0 10px 30px -22px rgba(22,48,74,.5);
 }
 .dashhero-banner{display:block;line-height:0;background:var(--cream)}
-.dashhero-banner picture{display:block}
 .dashhero-banner img{display:block;width:100%;height:auto}
 /* Saara text ek hi panel par, beech me — bikhra hua na lage. Panel ki
    painting (sunehri kinara aur bel-boote) assets/dash-box.webp me hai, isliye
