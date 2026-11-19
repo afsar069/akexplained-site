@@ -42,11 +42,21 @@ The period closed with a change in technology. In 1476 William Caxton set up a p
 
 William of Normandy defeated King Harold at Hastings on 14 October 1066 and was crowned in Westminster Abbey on Christmas Day. He gave English land to his Norman followers, and in 1086 his officials carried out a great survey of the kingdom, recorded in **Domesday Book**. The new rulers were French-speaking lords who also held land across the Channel, and that link drew England into long wars with France.
 
+<figure class="article-illustration" data-illustration="hastings">
+  <img src="/assets/articles/middle-english/hastings.webp" alt="Representative tapestry-style painting of Norman cavalry approaching an Anglo-Saxon shield wall at Hastings." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of the Battle of Hastings, 1066.</figcaption>
+</figure>
+
 Royal power was tested at home as well. In 1215 the barons forced King John to accept Magna Carta, which limited what a king could demand. The Hundred Years' War began in 1337 and lasted until 1453. English armies won famous victories at Crécy in 1346 and Agincourt in 1415, but the taxes that paid for the war brought anger. In 1381 villagers in Essex refused to pay a poll tax, and thousands of rebels marched on London. The king, Richard II, was only fourteen. He met the Kentish leader Wat Tyler at Smithfield on 15 June, and Tyler was killed there. The promises made to the rebels were broken, but the poll tax was dropped.
 
 The crown itself passed uneasily. In 1399 Richard II was removed by his cousin Henry of Lancaster, who became Henry IV. From 1455 rival branches of the royal family fought the Wars of the Roses. They are usually said to have ended on 22 August 1485, when Henry Tudor defeated and killed Richard III at Bosworth Field. He became Henry VII, and a new dynasty began.
 
 ### Social life
+
+<figure class="article-illustration article-illustration--float" data-illustration="guild-workshop">
+  <img src="/assets/articles/middle-english/guild-workshop.webp" alt="Representative medieval painting of a shoemaker teaching an apprentice in an English guild workshop." width="1200" height="900" loading="lazy" decoding="async">
+  <figcaption>Craft skills passed from master to apprentice.</figcaption>
+</figure>
 
 English society was built in layers. The king gave land to great lords, the lords gave land to knights, and each held it in return for service in war. At the bottom were the peasants, many of them villeins, who worked their lord's fields, paid dues in labour and goods, and could not leave the manor freely. In the towns, craftsmen and merchants joined guilds that controlled training, prices and quality.
 
@@ -56,9 +66,19 @@ The ideal man of the upper class was the knight: brave, loyal and polite. Storie
 
 Wool was England's main wealth. Flocks grazed on the hills, and the wool was sold to the cloth towns of Flanders. The king taxed it at the ports, which is why Chaucer, as controller of customs in London from 1374, spent his working days checking wool, skins and leather. Most people, however, lived by farming, and the manor was the basic unit of country life.
 
+<figure class="article-illustration" data-illustration="wool-trade">
+  <img src="/assets/articles/middle-english/wool-trade.webp" alt="Representative medieval painting of merchants weighing wool bales at an English river port." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Wool merchants and porters at an English river port.</figcaption>
+</figure>
+
 In the summer of 1348 the **Black Death** reached England by sea from France. Estimates of the death toll vary, but it may have killed as many as half of the people. Whole villages were emptied. Workers became scarce, and the survivors could ask for higher wages. Lords and the government tried to hold wages down by law, and that angered the poor. Historians often see this long quarrel as one root of the revolt of 1381. In the longer run, many peasants gained more freedom and better pay.
 
 ### Religion
+
+<figure class="article-illustration article-illustration--float article-illustration--left" data-illustration="church-life">
+  <img src="/assets/articles/middle-english/church-life.webp" alt="Representative painting of parishioners praying beneath pointed arches and stained glass in a medieval English church." width="1200" height="900" loading="lazy" decoding="async">
+  <figcaption>Prayer and stained glass in a medieval church.</figcaption>
+</figure>
 
 The Catholic Church shaped daily life, and its language was Latin. Parish priests, monks, nuns and friars were part of every community. Pilgrimage was a popular form of devotion, and Canterbury drew crowds to the shrine of Thomas Becket, the archbishop murdered in his cathedral in 1170. The poets of the age knew the Church well and often laughed at its failings, especially greedy friars and sellers of pardons.
 
@@ -100,6 +120,11 @@ The poems of the Gawain poet survive in a single book, now called Cotton Nero A.
 
 Print changed the picture. William Caxton, a London merchant who learned printing abroad, set up the first English press at Westminster in 1476 and printed more than a hundred titles. They included *The Canterbury Tales*, printed within a few years of the press opening, and Malory's *Le Morte d'Arthur*, finished on 31 July 1485.
 
+<figure class="article-illustration" data-illustration="printing-press">
+  <img src="/assets/articles/middle-english/printing-press.webp" alt="Representative woodcut-style painting of printers operating a wooden press and setting movable type in late medieval England." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>A printing workshop in the age of Caxton.</figcaption>
+</figure>
+
 Luck still mattered. In 1934 two famous finds were made. At Winchester College a teacher, Walter Oakeshott, found a manuscript of Malory that differed from Caxton's printed text. In the same year the only manuscript of *The Book of Margery Kempe* turned up in the home of the Butler-Bowdon family. It lay in a cupboard among old papers and the family's table-tennis equipment.
 
 ### Poetry
@@ -112,6 +137,11 @@ The most popular kind of story was the **romance**, a tale of knights, love and 
 
 In the later fourteenth century the old unrhymed, alliterative verse came back in what is called the **alliterative revival**. *Sir Gawain and the Green Knight*, about 2,530 lines in 101 stanzas, is its finest romance. The poet is unknown, and the same hand is credited with *Pearl*, a dream vision in which a grieving speaker meets a young girl who has died, and with *Cleanness* and *Patience*. Each stanza of *Gawain* ends in five short rhymed lines called the **bob and wheel**. The story opens at Camelot at Christmas, when a green giant challenges the court to a beheading game. Gawain cuts off his head, and the giant picks it up and tells Gawain to meet him in a year. On the way Gawain stays in a castle, where the lady tempts him and he hides a green girdle that she says will protect his life. At the Green Chapel the Green Knight swings his axe three times and leaves only a small cut, because Gawain kept the girdle. The knight is the lord of the castle. The poem tests the ideal of the perfect knight and finds that he is human.
 
+<figure class="article-illustration" data-illustration="gawain">
+  <img src="/assets/articles/middle-english/gawain.webp" alt="Imagined Gothic miniature of the Green Knight riding into Arthur's hall at Christmas." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from Sir Gawain and the Green Knight.</figcaption>
+</figure>
+
 William Langland's *Piers Plowman* belongs to the same alliterative tradition but has a different spirit. It is a **dream vision**. A dreamer named Will falls asleep on the Malvern Hills and sees a field full of folk, rich and poor, who stand for the whole of society. In later dreams he sees the seven deadly sins confess and meets an honest ploughman named Piers. He searches for the answer to how a man should live, which the poem calls Do-Well, Do-Better and Do-Best. Langland attacks corrupt clergy and the greed of the powerful. The poem exists in versions called A (1360s), B (late 1370s) and C (1380s). It also holds the earliest certain mention of Robin Hood tales, when the lazy priest Sloth admits that he knows rhymes of Robin Hood better than his prayers.
 
 ### Geoffrey Chaucer and his followers
@@ -121,6 +151,11 @@ Geoffrey Chaucer was born in London around 1343, the son of a wine merchant. As 
 His poetry is often divided into three phases. In the first he followed French models. *The Book of the Duchess* mourns Blanche, the wife of John of Gaunt, who died in 1368. In the second he learned from Italian writers such as Boccaccio. *The Parliament of Fowls* and *Troilus and Criseyde*, a long love story set in the Trojan War and written in **rhyme royal**, belong here. In the third he turned to English life, and the result was *The Canterbury Tales*. He also translated Boethius and wrote a *Treatise on the Astrolabe* for his young son.
 
 *The Canterbury Tales*, begun about 1387, is a frame story. About thirty pilgrims meet at the Tabard Inn in Southwark on their way to the shrine of Thomas Becket at Canterbury. Their host, Harry Bailly, suggests that each of them should tell tales on the road, and that the best storyteller should win a free supper. Chaucer planned four tales from each pilgrim, two on the way there and two on the way back. He finished only 24, and some of those are incomplete. The General Prologue gives a sharp portrait of each traveller, from the Knight to the Miller, the Wife of Bath and the Pardoner. The tales that follow come in every style: a noble romance, a rude comic story called a **fabliau**, a beast fable, a sermon in prose. Most are in rhyming couplets of ten syllables, and Chaucer is usually credited with bringing both this couplet and the rhyme royal stanza into English poetry.
+
+<figure class="article-illustration" data-illustration="canterbury-pilgrims">
+  <img src="/assets/articles/middle-english/canterbury-pilgrims.webp" alt="Imagined medieval painting of Chaucer-inspired pilgrims riding and walking along an English country road." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Pilgrims on the road, imagined from The Canterbury Tales.</figcaption>
+</figure>
 
 Chaucer's friend John Gower wrote in French, Latin and English. His English poem *Confessio Amantis*, of about 33,000 lines, tells love stories to teach about the seven deadly sins. In the fifteenth century Thomas Hoccleve and John Lydgate praised Chaucer as their master. In Scotland, Robert Henryson wrote *The Testament of Cresseid*, a sequel to *Troilus*, and William Dunbar wrote the *Lament for the Makaris*, a poem on the death of poets.
 
@@ -137,6 +172,11 @@ The greatest English prose work of the period is *Le Morte d'Arthur* by Sir Thom
 ### Drama
 
 English drama began in church. Short scenes about Easter and Christmas were acted as part of Latin services, and by the fourteenth century plays in English were being performed outdoors. The most important kind was the **mystery play**, a series of short plays on Bible history from the fall of the angels to the Last Judgment. These cycles were played in summer at the feast of Corpus Christi, on wagons called **pageants**, and each play was usually the work of a craft guild.
+
+<figure class="article-illustration" data-illustration="pageant-play">
+  <img src="/assets/articles/middle-english/pageant-play.webp" alt="Representative woodcut-style painting of a guild mystery play on a wheeled pageant wagon before a town audience." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>A craft-guild mystery play on a pageant wagon.</figcaption>
+</figure>
 
 Four nearly complete cycles survive, from York, Chester, Wakefield and the group known as N-Town. The York cycle has 48 plays and was played from the mid-fourteenth century until 1569. The Wakefield, or Towneley, cycle has 32 plays, and its finest writer, called the Wakefield Master, is known for wit and satire. His *Second Shepherds' Play* shows a sheep thief, Mak, hiding a stolen lamb in a cradle as if it were a baby, before an angel announces the real birth of Christ.
 
