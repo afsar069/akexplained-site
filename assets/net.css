@@ -326,3 +326,20 @@ div.net-pyq-card:hover{background:var(--card-paper);border-color:var(--border);b
   .net-mock-icon{filter:none}
   .net-detail{padding:0}
 }
+
+/* Sirf phone: NET ke baaki pages (About, Syllabus, English PYQs, Coming soon) ka head. Heading hari patti me, uske neeche judi hui safed patti me subtitle, eyebrow line nahi. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .net-detail-head{padding:4px 0 18px;border-bottom:0}
+  .net-back{margin-bottom:14px}
+  .net-detail-head .eyebrow{display:none}
+  .net-detail-head h1{
+    margin:0;padding:11px 16px 10px;background:var(--teal-dark);color:#fff;border-radius:12px 12px 0 0;
+    font-size:1.2rem;line-height:1.3;text-wrap:balance;
+  }
+  .net-detail-lede{
+    margin:0;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font-weight:600;
+    border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
+    font-family:var(--sans);font-size:.88rem;line-height:1.45;
+  }
+}
+
