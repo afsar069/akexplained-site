@@ -61,6 +61,8 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   **Second paper (2026-11-19): 2000**, 98 questions, same way (free, no login, owner-verified, file copied as supplied). Its question numbers skip 39 and 45, so the hub says exactly that
   (`leftOutNote` in `_data/pgtPyqs.json`). Open points for the owner: the reason for the two missing numbers (or the two questions), the one-line template explanations, and the three passage
   cards that repeat the question text and say "Question 77" while the screen says 75 (`tools/pyq/decisions/up-pgt-english-2000-notes.md`).
+  **Third paper (2026-11-19): 2002**, 72 questions (numbers 1 to 85, 13 missing; own `leftOutNote`), same way, on the branch, not merged yet. The checker's "Q81 in the file twice" is a false alarm
+  (two different "Which sentence is correct-" questions). Notes: `tools/pyq/decisions/up-pgt-english-2002-notes.md`.
 - **Download Syllabus (UP PGT), on branch `claude/modest-tesla-u0ryql`, not merged yet:** `/exams/pgt/up-pgt/syllabus-download/` is a real page with two side-by-side
   one-click PDF downloads: General Paper Syllabus (TGT/PGT General Knowledge) and English Literature Syllabus. Free, no login, files in `assets/downloads/`, not in Supabase.
   The hub card shows "Free PDFs" + Open. See CLAUDE.md rule 3.

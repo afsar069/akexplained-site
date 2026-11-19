@@ -971,3 +971,6 @@ question file, and the build stops with a plain message if a file is missing or 
   **`leftOutNote`** (an optional sentence that replaces the default "damaged options" one on the hub; use it whenever the reason is not damaged options, and never guess a reason). Kept as supplied
   and noted for the owner in `tools/pyq/decisions/up-pgt-english-2000-notes.md`: every explanation is one template line, and the three passage cards (Q77 to Q79) repeat text that is already in the
   question and are titled by the printed number ("Question 77") while the screen counts by position ("Question 75 of 98").
+- **Third paper** (2026-11-19, same request: free, no login, verified): UP PGT English **2002**, 72 questions, numbered 1 to 85 with 5 to 11, 13, 14, 33, 39, 75 and 78 missing, so its registry line has
+  `printedCount: 85` and a `leftOutNote`. `check_upload_file.py` gave one error, "Q81 is in the file twice": Q76 and Q81 share the stem "Which sentence is correct-" but have different options, so it is a false alarm
+  for a free PYQ (the checker compares stems only); file used as supplied. Audit notes: `tools/pyq/decisions/up-pgt-english-2002-notes.md`.
