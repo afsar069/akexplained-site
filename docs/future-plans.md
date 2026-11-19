@@ -27,11 +27,8 @@ reads the repo, not the live pages.
 ## 2. Paid layer (rule 22) — LAUNCHED and on sale (2026-11-18); what is still ahead
 The pass, promo codes and Razorpay are live (state: `docs/accounts-status.md` "START HERE"; rules: CLAUDE.md rule 22).
 Ahead, none started:
-- **A tag on paid cards (owner, 2026-11-19: "abhi decide nahi hua hai, future plan me rakh do").** Idea only: a small
-  "All Access pass" mark on every paid test card (hubs, age hubs, PYQ hub) so a student knows before pressing Start. What it
-  looks like and where it goes is NOT decided; ask the owner before building. Today a logged-in student sees Start on a paid
-  set and meets the pass on the test page. Cards that would need it: `paper-list.js` (mock tests, MCQ days),
-  `mcq-age.js` (literature sets), `net-pyq-live.js` (PYQs), and the static fallback cards.
+- **Paid-card tag — BUILT 2026-11-19 as a "Get access" button** (`assets/pass-gate.js`, CLAUDE.md rule 22): the owner decided
+  the same day to replace the idea of a tag and the middle "needs the pass" page with it. Nothing left to do here.
 - **One pass per course** (owner: later, "alag alag course ke alag alag price or plan"): one more `pass_plans` row per course,
   the paid read policy (`mcq_papers_paid_read`) must then check the plan, `pass.js` has one `PLAN_ID` and must become a choice.
 - **A real-money check of the live keys** (owner: "abhi nahi"): a small real payment, then a refund in Razorpay.

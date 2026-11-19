@@ -85,6 +85,7 @@
             try { window.akAuth.refreshHeader(s); } catch (e) {}
           }, function () {});
         }
+        try { if (window.akPass) window.akPass.refresh(); } catch (e) {}   // Start -> "Get access" with no pass
       }, function () { /* ignore: keep the build-time state */ });
   });
 })();

@@ -131,6 +131,7 @@
       var lock = $('.agehub-go-lock', set.row);
       if (lock) {
         a.setAttribute('data-auth-only', '');
+        a.setAttribute('data-pass-start', '');   // a login/paid set: "Get access" for a student with no pass (pass-gate.js)
         a.hidden = !lock.hidden;
       }
     });
@@ -174,6 +175,7 @@
     start.href = s.base;
     start.textContent = s.done ? 'Do it again' : s.open ? 'Carry on' : 'Start';
     start.setAttribute('data-auth-only', '');
+    start.setAttribute('data-pass-start', '');
     start.hidden = true;               /* guest ko default me lock dikhe, Start nahi */
     s.link = start;
 
@@ -204,6 +206,8 @@
       s.link.parentNode.replaceChild(soon, s.link);
     }
     s.link = null;
+    var twin = $('[data-pass-getaccess]', s.row);
+    if (twin && twin.parentNode) twin.parentNode.removeChild(twin);
     var lock = $('.agehub-go-lock', s.row);
     if (lock && lock.parentNode) lock.parentNode.removeChild(lock);
     s.row.classList.remove('is-open', 'is-done');
@@ -234,6 +238,7 @@
           try { paintSets(); } catch (e) {}
           try { apply(); } catch (e) {}
           try { paintStats(); } catch (e) {}
+          try { if (window.akPass) window.akPass.refresh(); } catch (e) {}
         }, function () {});
     });
   }
@@ -537,6 +542,7 @@
     try { wireFilters(); apply(); } catch (e) {}
     try { wireWipe(); } catch (e) {}
     try { catalogFlip(); } catch (e) {}
+    try { if (window.akPass) window.akPass.refresh(); } catch (e) {}
   }
 
   if (document.readyState === 'loading') {
