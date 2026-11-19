@@ -4154,22 +4154,34 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   }
 }
 
-/* Sirf phone: NET PYQ aur PGT ke test/review pages ka head. Heading hari patti me, subtitle judi hui safed patti me, picture aur eyebrow nahi. Desktop par kuch nahi badalta. */
+/* Sirf phone: NET PYQ, PGT aur MCQ section ke pages ka head. Heading hari patti me, subtitle judi hui safed patti me, picture aur eyebrow nahi. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead-practice{padding:16px 0 0;min-height:0;border-bottom:0;background:none}
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead-practice::before,:is(.net-pyq-page,.pgt-cbt-page) .pagehead .mark{display:none}
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead .eyebrow{display:none}
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead h1{
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead-practice{padding:16px 0 0;min-height:0;border-bottom:0;background:none}
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead-practice::before,:is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead .mark{display:none}
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead .eyebrow{display:none}
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead h1{
     margin:0;padding:11px 16px 10px;background:var(--teal-dark);color:#fff;border-radius:12px 12px 0 0;
     font-size:1.2rem;line-height:1.3;max-width:none;text-wrap:balance;
   }
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead p.lede{
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead p.lede{
     margin:0;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font-weight:600;
     border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
     font-family:var(--sans);font-size:.88rem;line-height:1.45;max-width:none;
   }
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead p.lede:empty{display:none}
-  :is(.net-pyq-page,.pgt-cbt-page) .pagehead:has(p.lede:empty) h1{border-radius:12px}
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead p.lede:empty{display:none}
+  :is(.net-pyq-page,.pgt-cbt-page,.mcq-sec-page) .pagehead:has(p.lede:empty) h1{border-radius:12px}
+  /* MCQ hub (/quizzes/mcq/): heading ke andar ka "Practice" sunehra ho, aur neeche ke tabs ko thodi jagah. */
+  .mcq-sec-page .pagehead h1 em{color:#F3D58A}
+  .mcq-sec-page .pagehead-daily .mcq-modes{margin-top:14px}
+  .mcq-sec-page .pagehead-practice .mark{display:none}
+  /* Age hub: naam hari patti me, uski line safed patti me, "Read the notes first" button neeche. */
+  .mcq-sec-page .pagehead .agehead-row{display:block}
+  .mcq-sec-page .pagehead p.agehead-sub{
+    margin:0;padding:8px 16px 9px;background:#fff;color:var(--teal-dark);font-weight:600;
+    border:1px solid var(--teal-dark);border-top:0;border-radius:0 0 12px 12px;
+    font-family:var(--sans);font-size:.88rem;line-height:1.45;max-width:none;
+  }
+  .mcq-sec-page .pagehead .agehead-btn{margin-top:12px;width:100%;justify-content:center}
 }
 
 /* Sirf phone, sabhi test pages: chalte test ki gehri patti ab do alag halke rang ke hisse hai (upar paper ka naam: halka hara,
@@ -4221,4 +4233,74 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .cbt-modal-actions button{width:100%}
 }
 @media print{.cbt-modal{display:none}}
+
+/* Sirf phone, MCQ section: cards patle aur lambe (ek line ki row), choude/lambe dabbe nahi. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  /* "Not Sure Where To Begin?" (MCQ hub) */
+  .mcq-sec-page .mcq-start{flex-wrap:nowrap;padding:9px 12px;gap:12px;border-radius:12px}
+  .mcq-sec-page .mcq-start-ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .mcq-start-ic svg{width:20px;height:20px}
+  .mcq-sec-page .mcq-start-txt strong{font-size:1rem;margin:0}
+  .mcq-sec-page .mcq-start-txt span{display:none}
+  .mcq-sec-page .mcq-start-go{width:auto;flex:none;font-size:0;padding:6px 12px;border-radius:9px;line-height:1}
+  .mcq-sec-page .mcq-start-go::after{content:"\2192";font-size:1.15rem;font-weight:700}
+  .mcq-sec-page .mcq-start[aria-disabled="true"] .mcq-start-go::after{content:""}
+
+  /* "Twenty-five questions are ready now" (age hub) */
+  .mcq-sec-page .agehub-ready{flex-wrap:nowrap;gap:12px;padding:9px 12px;border-radius:12px;margin-bottom:16px}
+  .mcq-sec-page .agehub-ready .ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .agehub-ready .ic svg{width:20px;height:20px}
+  .mcq-sec-page .agehub-ready .txt{flex:1 1 0}
+  .mcq-sec-page .agehub-ready strong{font-size:1rem;line-height:1.3;margin:0}
+  .mcq-sec-page .agehub-ready .txt span{display:none}
+  .mcq-sec-page .agehub-ready .go{width:auto;font-size:0;padding:6px 12px;border-radius:9px;line-height:1}
+  .mcq-sec-page .agehub-ready .go::after{content:"\2192";font-size:1.15rem;font-weight:700}
+
+  /* "Build Your Own Set" (MCQ hub, coming soon) */
+  .mcq-sec-page .mcq-build{flex-wrap:nowrap;padding:9px 12px;gap:12px;border-radius:12px}
+  .mcq-sec-page .mcq-build .ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .mcq-build .txt{flex:1 1 0}
+  .mcq-sec-page .mcq-build .txt strong{font-size:1rem;margin:0}
+  .mcq-sec-page .mcq-build .txt span{display:none}
+  .mcq-sec-page .mcq-build .txt strong{font-size:.95rem}
+  .mcq-sec-page .mcq-build .go{width:auto;padding:5px 9px;font-size:.7rem;white-space:nowrap}
+
+  /* "Also In The Practice Zone" cards: icon on the left, name and one line beside it */
+  .mcq-sec-page .mcq-othergrid{gap:9px}
+  .mcq-sec-page .mcq-other{
+    display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;align-items:center;padding:9px 12px;border-radius:12px;
+  }
+  .mcq-sec-page .mcq-other .ic{grid-row:1 / span 2;width:40px;height:40px;margin:0;border-radius:11px}
+  .mcq-sec-page .mcq-other strong{grid-column:2;margin:0;font-size:1rem}
+  .mcq-sec-page .mcq-other p{grid-column:2;font-size:.8rem;line-height:1.35}
+
+  /* "Build your own test" (age hub): name and a small button in one row */
+  .mcq-sec-page .agehub-build{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px}
+  .mcq-sec-page .agehub-build h2{flex:1 1 0;margin:0;font-size:1rem}
+  .mcq-sec-page .agehub-build .sub{display:none}
+  .mcq-sec-page .agehub-buildgo{margin:0;flex:none}
+  .mcq-sec-page .agehub-buildlink .agehub-start{width:auto;padding:8px 14px;font-size:.85rem}
+}
+
+/* Sirf phone, MCQ age hub: har set ek patli row (number, naam aur ek-do line, daayein chhota Start). Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .mcq-sec-page .agehub-sets{border-radius:12px;margin-bottom:14px}
+  .mcq-sec-page .agehub-set{
+    display:grid;grid-template-columns:30px minmax(0,1fr) auto;column-gap:10px;align-items:center;
+    padding:10px 12px;
+  }
+  .mcq-sec-page .agehub-badge{width:30px;height:30px;font-size:.8rem}
+  .mcq-sec-page .agehub-setbody{flex:none;order:0;min-width:0}
+  .mcq-sec-page .agehub-settitle{
+    font-size:.95rem;line-height:1.3;margin-bottom:1px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .mcq-sec-page .agehub-setmeta{font-size:.78rem;line-height:1.35;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mcq-sec-page .agehub-tags{gap:4px;margin-top:4px;flex-wrap:nowrap;overflow:hidden}
+  .mcq-sec-page .agehub-tag{font-size:.64rem;padding:0 7px;line-height:1.5;white-space:nowrap}
+  .mcq-sec-page .agehub-set .mcq-bar{margin:6px 0 0}
+  .mcq-sec-page .agehub-go,.mcq-sec-page .agehub-soon{order:0;width:auto;padding:7px 14px;font-size:.82rem;border-radius:9px}
+  .mcq-sec-page .agehub-soon{font-size:.7rem;padding:5px 9px;text-align:center}
+  .mcq-sec-page .agehub-go-lock{min-width:0;padding:7px 12px}
+}
 

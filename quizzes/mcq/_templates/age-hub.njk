@@ -7,6 +7,7 @@ permalink: "/quizzes/mcq/{{ age.slug }}/index.html"
 eleventyExcludeFromCollections: true
 ---
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set pageTitle = age.hub.title %}
 {% set pageDescription = age.hub.description %}
 {% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/" %}

@@ -7,6 +7,7 @@ permalink: "/quizzes/mcq/{{ age.slug }}/custom/review/index.html"
 eleventyExcludeFromCollections: true
 ---
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set pageTitle %}{{ age.name }} Your Own Test &mdash; Review Your Answers | AK Explained{% endset %}
 {% set pageDescription %}Go back over every question in your own {{ age.name }} test — your answer, the right one, and the reason behind it.{% endset %}
 {% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/custom/review/" %}

@@ -7,6 +7,7 @@ permalink: "/quizzes/mcq/{{ entry.age.slug }}/set-{{ entry.set.n }}/review/index
 eleventyExcludeFromCollections: true
 ---
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set age = entry.age %}{% set st = entry.set %}
 {% set pageTitle %}{{ age.name }} Set {{ st.n }} &mdash; Review Your Answers | AK Explained{% endset %}
 {% set pageDescription %}Go back over every question in {{ age.name }} Set {{ st.n }} — your answer, the right one, and the reason behind it.{% endset %}

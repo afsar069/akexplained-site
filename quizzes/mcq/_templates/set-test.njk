@@ -7,6 +7,7 @@ permalink: "/quizzes/mcq/{{ entry.age.slug }}/set-{{ entry.set.n }}/index.html"
 eleventyExcludeFromCollections: true
 ---
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set age = entry.age %}{% set st = entry.set %}
 {% set pageTitle %}{{ age.name }} MCQ Set {{ st.n }}: {{ st.titleCase }} | AK Explained{% endset %}
 {% set pageDescription %}{{ st.countWords }} {{ age.name }} practice questions {% if st.focus %}on {{ st.focus }} {% endif %}at {{ st.levelsText }} level, in a timed test screen with a full answer review.{% endset %}
