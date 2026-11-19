@@ -40,11 +40,21 @@ The years from 1660 to 1700 are called the Restoration. The name comes from the 
 
 The republic did not last long after Oliver Cromwell died in September 1658. His son Richard became Lord Protector but had none of his father's authority, and in 1659 the army pushed him aside. England drifted toward new disorder. General George Monck, who commanded the army in Scotland, marched south to London in early 1660. A new Parliament met and invited Charles to come home.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="charles-ii">
+  <img src="/assets/articles/restoration/charles-ii.webp" alt="Modern painted interpretation of Charles II with long dark curls, a lace cravat and a blue sash." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>Charles II — modern painted interpretation.</figcaption>
+</figure>
+
 Charles had prepared the way. In April 1660 he issued the Declaration of Breda from the Dutch town where he was staying. It promised pardon to most of his enemies and "liberty to tender consciences" in religion. He knew exile well. After his father's death he had tried to win the crown back, had been beaten at Worcester in 1651, and had then lived for nine years in France and the Netherlands. Those years taught him French manners and an easy, cynical charm.
 
 The pardon had limits. Men who had signed the death warrant of Charles I were hunted down. In October 1660 one of them, Thomas Harrison, was hanged, drawn and quartered at Charing Cross, and the young official Samuel Pepys saw it. In January 1661 the bodies of Cromwell and two other republican leaders were dug up and hanged at Tyburn.
 
 The reign was never calm for long. Charles had no lawful child, so his heir was his brother James, Duke of York, a Roman Catholic. Many English Protestants feared Catholics, and they feared France, where the powerful Louis XIV was a Catholic king. Charles was also short of money, because Parliament controlled taxes. In 1670 he made a secret treaty with Louis XIV at Dover in return for French money. The country fought the Dutch twice, in 1665-67 and 1672-74, over trade and sea power.
+
+<figure class="article-illustration" data-illustration="anglo-dutch-war">
+  <img src="/assets/articles/restoration/anglo-dutch-war.webp" alt="Representative painting of English and Dutch warships exchanging cannon fire on a grey sea." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of the Anglo-Dutch naval wars.</figcaption>
+</figure>
 
 In 1678 fear turned into panic. A man named Titus Oates claimed that Catholics were plotting to kill the king. The story was false, but this "Popish Plot" led to the execution of innocent people. Between 1679 and 1681 Parliament tried to pass laws to keep James from the throne. This struggle is called the Exclusion Crisis. Its leader, the Earl of Shaftesbury, backed Charles's illegitimate Protestant son, the Duke of Monmouth, as heir. Those who wanted to exclude James and those who defended his right to rule hardened into rival parties, later called Whigs and Tories. Charles refused to give way, dissolved Parliament in 1681, and ruled without it for the rest of his reign. Shaftesbury was tried for treason that year and was acquitted.
 
@@ -58,7 +68,17 @@ After years of Puritan rule, many people welcomed the change. Plays, dancing, Ch
 
 London was by far the largest city in the country, and much of its talk happened in the coffee houses, where men drank coffee, read the news and argued about politics and poetry. Writers had favourite houses. Dryden is linked with Will's Coffee House in Covent Garden.
 
+<figure class="article-illustration" data-illustration="coffee-house">
+  <img src="/assets/articles/restoration/coffee-house.webp" alt="Representative painting of Restoration London coffee-house visitors sharing news and debating around wooden tables." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Coffee houses brought together news, politics and literary talk.</figcaption>
+</figure>
+
 Then came two disasters. In 1665 plague swept the city and killed tens of thousands of Londoners. The court left, and the theatres were closed. In the early hours of 2 September 1666 a fire began in a baker's shop in Pudding Lane and burned for several days. It destroyed about 13,200 houses, 87 parish churches and St Paul's Cathedral. The architect Christopher Wren designed a new St Paul's and many new churches, and London rose again in brick and stone.
+
+<figure class="article-illustration" data-illustration="great-fire">
+  <img src="/assets/articles/restoration/great-fire.webp" alt="Imagined painting of the Great Fire of London seen across the Thames, with smoke, boats and the pre-fire skyline." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of the Great Fire of London, 1666.</figcaption>
+</figure>
 
 ### Economic life
 
@@ -102,6 +122,11 @@ The writers of the Restoration had grown up in a time when words were weapons. P
 
 The new science helped this mood. The Royal Society, a club of people who loved experiment, met in London and received royal charters in 1662 and 1663. Its early members included scientists such as Robert Boyle and Robert Hooke, the architect Christopher Wren, and the writers John Evelyn, Edmund Waller and John Dryden. In 1667 Thomas Sprat published a *History of the Royal Society*, in which he praised careful experiment as the opposite of the angry passions of the war years. Writers close to the Society preferred a plain, clear style.
 
+<figure class="article-illustration" data-illustration="royal-society">
+  <img src="/assets/articles/restoration/royal-society.webp" alt="Representative painting of Restoration scholars studying a hand-operated air pump at a Royal Society gathering." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Observation and experiment at a representative Royal Society gathering.</figcaption>
+</figure>
+
 The French example added to the change. Charles's followers had lived in France and admired its tidy rules for plays and poems, and English writers began to value order, balance and good sense. In verse this meant the heroic couplet, two rhyming lines of ten syllables each. Sir John Denham's poem *Cooper's Hill*, first printed in 1642, was taken as a model. Dryden thought it set the exact standard of good writing, and he would make the couplet his own.
 
 ### The stage and its audience
@@ -113,6 +138,11 @@ When Charles returned, he gave two men the sole right to stage plays in London. 
 The new theatres were nothing like the Globe. They were built for the purpose, roofed and well lit, with names such as Lincoln's Inn Fields, Dorset Garden and Drury Lane. A proscenium arch framed the stage, and painted scenery could be changed in front of the audience. The actors played on an apron stage that reached out into the room. Seats cost between one and four shillings, so the audience was mostly courtiers and well-off townspeople. The king and his brother often attended.
 
 Women now acted on the public stage. During the closure no boys had been trained to play female parts, and actresses were already common on the continent. Pepys, who loved the theatre, noticed the handsome women on the stage with pleasure in 1662. Thomas Betterton became the leading actor of the age and learned the part of Hamlet from Davenant.
+
+<figure class="article-illustration" data-illustration="restoration-theatre">
+  <img src="/assets/articles/restoration/restoration-theatre.webp" alt="Representative painting of actresses and an actor performing before a seated audience in a roofed Restoration theatre." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Actresses, painted scenery and an indoor Restoration stage.</figcaption>
+</figure>
 
 Old plays came back, but not unchanged. Davenant and Dryden together rewrote Shakespeare's *The Tempest* with extra characters, music and dancing. In 1681 Nahum Tate rewrote *King Lear* with a happy ending in which Lear, Cordelia and Gloucester all survive, and his version held the stage until well into the nineteenth century. The same Pepys thought *A Midsummer Night's Dream* the silliest play he had ever seen. The taste of the age was not Shakespeare's taste.
 
@@ -132,6 +162,11 @@ Sir George Etherege set the style. His *The Comical Revenge* was a hit at the Du
 
 William Wycherley was sharper. In *The Country Wife* (1675) a young man named Horner spreads a false rumour that an illness has made him unable to be a lover, so that jealous husbands will trust him with their wives. The trick works, and Horner escapes punishment, while the people who talk loudly of their "honour" are shown to be fools or hypocrites. His *The Plain Dealer* (1676), partly taken from Molière's *Le Misanthrope*, is a darker play about an honest man who hates the false manners of society.
 
+<figure class="article-illustration article-illustration--float article-illustration--left article-illustration--portrait" data-illustration="aphra-behn">
+  <img src="/assets/articles/restoration/aphra-behn.webp" alt="Modern painted interpretation of Aphra Behn with dark curls, a silk gown and a small writing notebook." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>Aphra Behn — modern painted interpretation.</figcaption>
+</figure>
+
 A woman now wrote for the stage as well. Aphra Behn (1640-89) had little formal education and had lived for a time in the colony of Surinam in the early 1660s. She wrote for the theatre because she needed money, and she is long said to be the first English woman to earn her living by writing. Her first play, *The Forc'd Marriage*, was staged in September 1670, and she wrote seventeen more. Her best-known comedy is *The Rover* (1677), a lively tale of English cavaliers and the women they chase in Naples.
 
 William Congreve brought the form to its height. Born in 1670, he was in his early twenties when *The Old Bachelor* and *The Double-Dealer* were staged in 1693. *Love for Love* followed in 1695 and *The Way of the World* in 1700. Dryden praised him in a poem as the true heir of Etherege and Wycherley. *The Way of the World*, in which the witty lovers Mirabell and Millamant bargain over the terms of their marriage, is often named as the finest comedy of the age. Sir John Vanbrugh, now better known as an architect, added *The Relapse* (1696) with its vain Lord Foppington.
@@ -145,6 +180,11 @@ Rochester's *A Satyr against Mankind* (1675) attacked the idea that human reason
 Samuel Butler used wit against the Puritans. His comic poem *Hudibras* appeared in three parts, in 1662, 1663 and 1678. It follows a Puritan knight, Sir Hudibras, and his servant Ralpho in a mock-heroic story told in short, bouncing couplets. It was the most popular long poem of its day, and Butler became famous only at the age of forty-nine.
 
 Meanwhile the greatest poet of the defeated side had gone quiet. John Milton had defended the republic in prose, and its fall in 1660 ended his hopes of a Protestant commonwealth. Blind and in danger, he turned from politics to a poem he had long planned. *Paradise Lost* appeared in 1667 and was revised in 1674. It tells of "Man's First Disobedience", the fall of Adam and Eve, in blank verse, and it asks the reader to think and judge freely, as a Puritan believed everyone should. *Paradise Regained* and *Samson Agonistes* followed together in 1671.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="john-dryden">
+  <img src="/assets/articles/restoration/john-dryden.webp" alt="Modern painted interpretation of John Dryden with long brown hair, a dark coat and a white cravat." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>John Dryden — modern painted interpretation.</figcaption>
+</figure>
 
 The central figure of the age was John Dryden. Born in 1631, he had written verses on Cromwell's death in 1659, and in 1660 he welcomed the returning king in *Astraea Redux*. He then became the voice of the restored monarchy. *Annus Mirabilis* (1667) praised London and the king for surviving the Dutch war and the Great Fire. In 1668 he became Poet Laureate. For the next fourteen years or so he wrote mainly for the stage, which taught him to handle character and quick speech.
 
@@ -161,6 +201,11 @@ Women wrote poetry too. Katherine Philips, who wrote as "Orinda", published her 
 Samuel Pepys began his diary in January 1660, when England still had no settled government. He was a young official at the Navy Office, and in May he sailed with his patron, Lord Sandwich, to bring Charles home from the Netherlands. The diary went on to record the plague, the Great Fire, court gossip, music, food, quarrels with his wife and his own love affairs, which he sometimes hid in a private mixture of English, French, Italian and Spanish. He kept it until 1669. It was written in shorthand and was not printed until 1825. John Evelyn's diary, by comparison, is calmer and more formal.
 
 John Bunyan, a tinker's son from Bedfordshire, wrote from the other side of the Restoration world. Much of his finest work was written in prison. In *Grace Abounding* (1666) he told the story of his own religious struggles. Then he turned his experience into a story for everyone. *The Pilgrim's Progress* (Part I, 1678; Part II, 1684) is an allegory, a tale whose people and places stand for ideas. A man named Christian leaves the City of Destruction and travels through the Slough of Despond, Vanity Fair and the Valley of the Shadow of Death to reach the Heavenly City. The people he meets have names such as Mr Worldly-Wiseman and Talkative, so the reader knows at once what each one stands for. In the second part his wife Christiana makes the same journey. Bunyan's language is plain, vivid and full of the Bible, and the book was read in ordinary homes for generations.
+
+<figure class="article-illustration" data-illustration="pilgrims-progress">
+  <img src="/assets/articles/restoration/pilgrims-progress.webp" alt="Imagined painting of Christian from The Pilgrim’s Progress carrying a burden along a path towards a distant city." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from The Pilgrim's Progress: Christian on his journey.</figcaption>
+</figure>
 
 Aphra Behn wrote prose as well. Her short novel *Oroonoko* (1688) tells of an African prince who is tricked into slavery in Surinam, the colony where she had once lived. He rises in revolt against his masters, and the story presents him as a noble man and his oppressors as the ones who fail the test of honour.
 

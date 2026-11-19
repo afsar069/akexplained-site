@@ -6,6 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Restoration article illustrations — 2026-11-19
+- Nine distinct paintings in `/notes/restoration-age/`: small side portraits of Charles II, Aphra Behn and Dryden; six full-column scenes cover the Anglo-Dutch naval wars, a coffee house, the Great Fire, Royal Society experiments, the reopened theatre and The Pilgrim’s Progress.
+- Late Baroque portrait, genre, marine and landscape treatments reflect the period. Captions identify modern interpretations, representative scenes and imagined reconstructions.
+- WebP assets under 200 KB each in `assets/articles/restoration/`, with captions, alt text, intrinsic dimensions and lazy loading. Portraits wrap beside prose on larger screens and stack at full text width on phones. Original prose, metadata and hero variant remain intact.
+
 ## Jacobean and Caroline article illustrations — 2026-11-19
 - Nine distinct paintings in `/notes/jacobean-and-caroline-age/`: small portraits of James I, Charles I, John Donne and the young John Milton; full-column scenes cover Naseby, Roe at Jahangir’s court, folio/quarto formats, Macbeth and the court masque.
 - Early Stuart and Baroque treatments deepen light, shadow and perspective; the Mughal court scene uses a period-appropriate miniature treatment. Generated portraits are labelled modern interpretations, and reconstructions/literary scenes are identified in captions.
