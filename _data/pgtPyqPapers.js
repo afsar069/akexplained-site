@@ -47,6 +47,7 @@ module.exports = function () {
       count: count,
       printedCount: printed,
       leftOut: printed - count,
+      leftOutNote: entry.leftOutNote || "",   // optional own sentence (simple English) when the reason is not "damaged options"
       href: BASE + entry.slug + "/",
       reviewHref: BASE + entry.slug + "/review/",
     };

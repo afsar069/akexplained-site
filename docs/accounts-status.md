@@ -58,6 +58,9 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   Tagged with master topics (language questions have no period), one key changed (Q118) and a few explanations corrected after web checks; audit trail in
   `tools/pyq/decisions/up-pgt-english-2006-notes.md`. The PYQ front door `/quizzes/pyq/` now has a live **UP PGT English** card. A small English disclaimer sits at the
   bottom of the hub and the test pages ("we corrected the doubtful ones ourselves, we are not responsible if anything is wrong").
+  **Second paper (2026-11-19): 2000**, 98 questions, same way (free, no login, owner-verified, file copied as supplied). Its question numbers skip 39 and 45, so the hub says exactly that
+  (`leftOutNote` in `_data/pgtPyqs.json`). Open points for the owner: the reason for the two missing numbers (or the two questions), the one-line template explanations, and the three passage
+  cards that repeat the question text and say "Question 77" while the screen says 75 (`tools/pyq/decisions/up-pgt-english-2000-notes.md`).
 - **Download Syllabus (UP PGT), on branch `claude/modest-tesla-u0ryql`, not merged yet:** `/exams/pgt/up-pgt/syllabus-download/` is a real page with two side-by-side
   one-click PDF downloads: General Paper Syllabus (TGT/PGT General Knowledge) and English Literature Syllabus. Free, no login, files in `assets/downloads/`, not in Supabase.
   The hub card shows "Free PDFs" + Open. See CLAUDE.md rule 3.

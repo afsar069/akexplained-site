@@ -1,0 +1,1770 @@
+{
+  "setId": "up-pgt-english-2000",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setName": "2000 paper",
+  "level": "medium",
+  "levelName": "Full paper",
+  "title": "UP PGT English 2000 paper",
+  "exam": "UP PGT",
+  "subject": "English",
+  "paper": "English",
+  "session": "2000",
+  "topics": {
+    "british": "British Literature",
+    "american": "American Literature",
+    "indian": "Indian Writing in English",
+    "criticism": "Literary Criticism and Theory",
+    "terms": "Literary Terms",
+    "world": "World Literature",
+    "language": "English Language and Usage"
+  },
+  "topicRead": {},
+  "passages": [
+    {
+      "id": "p1",
+      "title": "Question 77",
+      "attribution": "",
+      "text": "And though a single word scatters all doubts I quake for wonder at your choice of me: Why, why and why?",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "p2",
+      "title": "Question 78",
+      "attribution": "",
+      "text": "Created half to rise and half to fall; Great Lord of all things, yet a prey to all.",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "p3",
+      "title": "Question 79",
+      "attribution": "",
+      "text": "\"But the ten poets represented in the following pages all share a technical master of English verse and a broad enough thematic concern to make them worthy of the attention of a wide audience.\"",
+      "src": "UP PGT English 2000"
+    }
+  ],
+  "questions": [
+    {
+      "id": "up-pgt-english-2000-q001",
+      "questionNumber": 1,
+      "question": "Hamlet's question 'To be or not to be.........?' means:",
+      "options": [
+        "To kill Claudius or not to kill him?",
+        "To kill Gertude or not to kill her?",
+        "To mary Ophelia or not to marry her?",
+        "To live or to die?"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) To live or to die?. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "hamlet",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2000-q002",
+      "questionNumber": 2,
+      "question": "Which of the following sentences has the figure if speech called 'Apostrophe'?",
+      "options": [
+        "Man is the measure of all things.",
+        "Patriotism, what horrors are done in your name.",
+        "My love is a red rose",
+        "All that glitters is not gold"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Patriotism, what horrors are done in your name.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "apostrophe-device",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q003",
+      "questionNumber": 3,
+      "question": "Which of the following words is Onomatopoeic:",
+      "options": [
+        "Carry",
+        "Fear",
+        "Bear",
+        "Bug"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Bug. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "onomatopoeia",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q004",
+      "questionNumber": 4,
+      "question": "The statement, namely, ' Happiness is but an occasional episode in the general drama of the pain'.Contains the figure of speech called:",
+      "options": [
+        "Simile",
+        "Personification",
+        "Paradox",
+        "Metaphor"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Metaphor. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "metaphor",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q005",
+      "questionNumber": 5,
+      "question": "When the sound of a word resembles the sound it denotes, the figure of speech is:",
+      "options": [
+        "Synecdoche",
+        "Onomatopoeia",
+        "Prosopopeia",
+        "Transferred epithet"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Onomatopoeia. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "onomatopoeia",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q006",
+      "questionNumber": 6,
+      "question": "The repetition of vowel sound in a sequence of nearby words is called:",
+      "options": [
+        "Rhyme",
+        "Rhythm",
+        "Assonance",
+        "Caesura"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Assonance. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "assonance",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q007",
+      "questionNumber": 7,
+      "question": "What is the name of an implied simile?",
+      "options": [
+        "Metaphor",
+        "Apostrophe",
+        "Hyperbole",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Metaphor. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "metaphor",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q008",
+      "questionNumber": 8,
+      "question": "What is a direct address to the dead, to the absent, or to a personified object or idea?",
+      "options": [
+        "Epigram",
+        "Personification",
+        "Apostrophe",
+        "None of the above"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Apostrophe. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "apostrophe-device",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q009",
+      "questionNumber": 9,
+      "question": "What is the figure of speech when the real meaning is exactly the opposite of that which is expressed by word apparently:",
+      "options": [
+        "Satire",
+        "Irony",
+        "Oxymoron",
+        "None of the above"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Irony. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "irony",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q010",
+      "questionNumber": 10,
+      "question": "What figure of speech has been used in the following line? \"All the perfumes of Arabia cannot sweeten this little hand.\"",
+      "options": [
+        "Metaphor",
+        "Oxymoron",
+        "Hyperbole",
+        "Apostrophe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Hyperbole. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "hyperbole",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q011",
+      "questionNumber": 11,
+      "question": "The movement of \"Return to nature\" has to do with:",
+      "options": [
+        "The Neoclassical Age",
+        "The Romantic Age",
+        "The Restoration Age",
+        "None of these"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) The Romantic Age. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "romanticism",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q012",
+      "questionNumber": 12,
+      "question": "What played the most important part in shaping Ernest Hemingway's literary creations like Farewell to Arms?",
+      "options": [
+        "Experiences of War",
+        "His friends and relations",
+        "His love affairs and marriages",
+        "His power of oratory"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Experiences of War. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "ernest-hemingway",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2000-q013",
+      "questionNumber": 13,
+      "question": "Which of the following poets wrote the poem entitled 'Dover Beach'?",
+      "options": [
+        "Arnold",
+        "Tennyson",
+        "Milton",
+        "Wordsworth"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Arnold. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "matthew-arnold",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q014",
+      "questionNumber": 14,
+      "question": "The imaginary County 'Yoknapatawpha' occurs in the novels of:",
+      "options": [
+        "Hardy",
+        "Dickens",
+        "Faulkner",
+        "MulkrajAnand"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Faulkner. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "william-faulkner",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2000-q015",
+      "questionNumber": 15,
+      "question": "The Waste Land was published in:",
+      "options": [
+        "1915",
+        "1918",
+        "1920",
+        "1922"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 1922. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-waste-land",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q016",
+      "questionNumber": 16,
+      "question": "The phase, \"Willing suspension of disbelief\" is associated with.......",
+      "options": [
+        "Byron",
+        "Keats",
+        "Coleridge",
+        "Wordsworth"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Coleridge. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "samuel-taylor-coleridge",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q017",
+      "questionNumber": 17,
+      "question": "The sonnet \"The World is Too Much with Us\" is written by.....",
+      "options": [
+        "Scott",
+        "Keats",
+        "Shelley",
+        "Wordsworth"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Wordsworth. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-wordsworth",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q018",
+      "questionNumber": 18,
+      "question": "Who called Shelley \" a beautiful but and ineffectual angel beating in the void his luminous Wings in vain\"?",
+      "options": [
+        "John Ruskin",
+        "Mathew Arnold",
+        "T. S. Eliot",
+        "Tennyson"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Mathew Arnold. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "matthew-arnold",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q019",
+      "questionNumber": 19,
+      "question": "\"Adonais\" by Shelley is an elegy on.....",
+      "options": [
+        "Wordsworth",
+        "Byron",
+        "Keats",
+        "Coleridge"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Keats. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "adonais",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q020",
+      "questionNumber": 20,
+      "question": "Who asserted himself as a classicist in literature, royalist in politics and anglo- Catholic in religion\"?",
+      "options": [
+        "Matthew Arnold",
+        "T. S. Eliot",
+        "Walt Whitman",
+        "None of these"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) T. S. Eliot. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ts-eliot",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q021",
+      "questionNumber": 21,
+      "question": "Wordsworth's 'The Lyrical Ballads' was published in:",
+      "options": [
+        "1789",
+        "1805",
+        "1799",
+        "1798"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 1798. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "lyrical-ballads",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q022",
+      "questionNumber": 22,
+      "question": "Which of the following writers writes uninhibitedly about his or her sexual relationship?",
+      "options": [
+        "Mulk Raj Anand",
+        "Nissim Ezekiel",
+        "Kamla Das",
+        "Robert Frost"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Kamla Das. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "kamala-das",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2000-q023",
+      "questionNumber": 23,
+      "question": "Which of the following writers is noted for what Keats called 'Negative Capability'?",
+      "options": [
+        "Milton",
+        "Shelley",
+        "Tennyson",
+        "Shakespeare"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Shakespeare. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2000-q024",
+      "questionNumber": 24,
+      "question": "Bathsheba is the heroine of:",
+      "options": [
+        "Return of the Native",
+        "Tess of D'urberville",
+        "Far From the Madding Crowd",
+        "Judge the Obscure"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Far From the Madding Crowd. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "far-from-the-madding-crowd",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q025",
+      "questionNumber": 25,
+      "question": "Which of the following epithets brings out the most characteristic quality of David Cooperfield pinpointed by the majority of Dickens scholars?",
+      "options": [
+        "Autobiographical",
+        "Grotesque",
+        "Baroque",
+        "Lengthy"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Autobiographical. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "david-copperfield",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q026",
+      "questionNumber": 26,
+      "question": "With which of the following poets do we associate the the 'pictorial quality' of poetry?",
+      "options": [
+        "Wordsworth",
+        "Keats",
+        "Shelley",
+        "Milton"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Keats. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "john-keats",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q027",
+      "questionNumber": 27,
+      "question": "'Break, Break, Break' was written on the death of:",
+      "options": [
+        "John Keats",
+        "William Wordsworth",
+        "Leigh Hunt",
+        "Arthur Hallam"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Arthur Hallam. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "alfred-tennyson",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q028",
+      "questionNumber": 28,
+      "question": "The name of Alfred Lord Tennyson's famous elegy is:",
+      "options": [
+        "'Lycidas'",
+        "'Adonais'",
+        "'Elegy Written in a Country Churchyard'",
+        "'In Memoriam'"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 'In Memoriam'. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "in-memoriam",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q029",
+      "questionNumber": 29,
+      "question": "Shakespeare's sonnet are in the following form:",
+      "options": [
+        "Three quatrains and a couplet",
+        "An octave and sestet",
+        "Two six-line stanzas and a couplet",
+        "None of these"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Three quatrains and a couplet. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "shakespeares-sonnets",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2000-q030",
+      "questionNumber": 30,
+      "question": "Fill in the blank space by choosing the right answer: Ten pounds.........money:",
+      "options": [
+        "Art a lot of",
+        "Is the lot of",
+        "Is a lot of",
+        "None of these"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Is a lot of. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q031",
+      "questionNumber": 31,
+      "question": "Choose the correct option from the following: One of my friends.........a fine collection of postage stamps.",
+      "options": [
+        "Has",
+        "Have",
+        "Do have",
+        "None of these"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Has. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q032",
+      "questionNumber": 32,
+      "question": "In which category will you place Arnold as a critic?",
+      "options": [
+        "Romantic",
+        "Marxist",
+        "Aesthetic",
+        "Classicist"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Classicist. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "criticism",
+      "topicId": "matthew-arnold",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q033",
+      "questionNumber": 33,
+      "question": "'To strive, to seek, to find and not to yield' occurs in the poem?",
+      "options": [
+        "'Lotos Eaters'",
+        "'Tears Idle Tears'",
+        "'Ulysses'",
+        "'The Charge of the Light Brigade'"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) 'Ulysses'. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ulysses-tennyson",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q034",
+      "questionNumber": 34,
+      "question": "The name of the protagonist of the Mayor of Casterbridge is:",
+      "options": [
+        "Newson",
+        "ClymYeobright",
+        "Alee D'Urbervilles",
+        "MichealHenchard"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) MichealHenchard. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-mayor-of-casterbridge",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q035",
+      "questionNumber": 35,
+      "question": "\"What the thunder said\" is a section of the poem:",
+      "options": [
+        "\"Four Quartets\"",
+        "\"Love song of J. Alfred. Prufrock\"",
+        "\"Gerontion\"",
+        "\" The Waste Land\""
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) \" The Waste Land\". Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-waste-land",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q036",
+      "questionNumber": 36,
+      "question": "Trace in the following list the drama which T. S. Eliot did not write?",
+      "options": [
+        "Cocktail",
+        "Family Reunion",
+        "Murder in the Cathedral",
+        "The Ascent of F6"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) The Ascent of F6. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ts-eliot",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q037",
+      "questionNumber": 37,
+      "question": "Which part of the United State has been written about in Faulkner's fiction?",
+      "options": [
+        "The northern",
+        "The southern",
+        "The eastern",
+        "The western"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) The southern. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "william-faulkner",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2000-q038",
+      "questionNumber": 38,
+      "question": "Which of the following collections of poems was written by Kamla Das?",
+      "options": [
+        "Summer in Calcutta",
+        "Gitanjali",
+        "Leaves of Grass",
+        "Songs and sonnets"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Summer in Calcutta. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "summer-in-calcutta",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2000-q040",
+      "questionNumber": 40,
+      "question": "T. S. Eliot migrated to England from....",
+      "options": [
+        "USA",
+        "France",
+        "Canada",
+        "Germeny"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) USA. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ts-eliot",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q041",
+      "questionNumber": 41,
+      "question": "Dicken's \"A Tale of Two Cities\" refers to:",
+      "options": [
+        "Berlin and London",
+        "Paris and Vienna",
+        "Berlin and Paris",
+        "Paris and London"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Paris and London. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "a-tale-of-two-cities",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q042",
+      "questionNumber": 42,
+      "question": "Who among the following writers was a University Professor of English?",
+      "options": [
+        "Kamala Das",
+        "Mulk Raj Anand",
+        "Nissim Ezekiel",
+        "None of them"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Nissim Ezekiel. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "nissim-ezekiel",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2000-q043",
+      "questionNumber": 43,
+      "question": "John Keats died at the age of...",
+      "options": [
+        "20",
+        "22",
+        "30",
+        "26"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 26. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "john-keats",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q044",
+      "questionNumber": 44,
+      "question": "Who among the following writers has not won the Noble Prize?",
+      "options": [
+        "T. S. Eliot",
+        "Mulk Raj Anand",
+        "William Faulkner",
+        "Ernest Hemingway"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Mulk Raj Anand. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q046",
+      "questionNumber": 46,
+      "question": "Choose the right meaning of the word 'Effeminate' from the following:",
+      "options": [
+        "A man who is womanish in his habits",
+        "A man who is devoted to welfare of women.",
+        "A man who amuses himselfs by love- making",
+        "A man who is prone to find fault with women"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) A man who is womanish in his habits. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q047",
+      "questionNumber": 47,
+      "question": "'Love song of J. Alfred Prufrock' opens with the line:",
+      "options": [
+        "April is the cruelest month",
+        "Let's go then you and I....",
+        "Let me not to the marriage of true mind.",
+        "Under the greenwood tree"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Let's go then you and I..... Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-love-song-of-j-alfred-prufrock",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2000-q048",
+      "questionNumber": 48,
+      "question": "Who is called The Prince among essayists:",
+      "options": [
+        "Bacon",
+        "Addison",
+        "Lamb",
+        "Hazlitt"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Lamb. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-lamb",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q049",
+      "questionNumber": 49,
+      "question": "Who composed the famous line: \"If winter comes can spring be for behind\"?",
+      "options": [
+        "Shelley",
+        "Keats",
+        "Wordsworth",
+        "None of them"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Shelley. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q050",
+      "questionNumber": 50,
+      "question": "Which of the following essays is not written by Charles Lamb?",
+      "options": [
+        "The Convalescence",
+        "Imperfect Sympathies",
+        "A Bachelor's Complaint",
+        "Of Studies"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Of Studies. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-lamb",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q051",
+      "questionNumber": 51,
+      "question": "Who wrote \"The Revolt of Islam\"?",
+      "options": [
+        "Tennyson",
+        "Shelley",
+        "Arnold",
+        "None of them"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Shelley. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q052",
+      "questionNumber": 52,
+      "question": "Choose the meaning of the world \"Teetotaller\" from the following:",
+      "options": [
+        "One who drinks only tea",
+        "One who takes everything",
+        "One who does not take any intoxicating drinks",
+        "One who is selected in the manner of drinks"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) One who does not take any intoxicating drinks. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q053",
+      "questionNumber": 53,
+      "question": "Identify the figure of speech in the following line: The pen is mightier than the sword.",
+      "options": [
+        "Metaphor",
+        "Simile",
+        "Personification",
+        "Metonymy"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Metonymy. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "metonymy",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q054",
+      "questionNumber": 54,
+      "question": "Who composed to the famous line: \"Our sweetest songs are those that tell of saddest thought\".",
+      "options": [
+        "Keats",
+        "Wordsworth",
+        "Shelley",
+        "None of the above"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Shelley. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q055",
+      "questionNumber": 55,
+      "question": "Whose novels throw light on the miseries of poor Orphan children?",
+      "options": [
+        "Dickens",
+        "Fielding",
+        "Jane Austen",
+        "Thackeray"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Dickens. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-dickens",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q056",
+      "questionNumber": 56,
+      "question": "Which of the following novels was written by W. Faulkner?",
+      "options": [
+        "For Whom The Bell Tolls",
+        "The Portrait of the Artist as a Young Man",
+        "Ulysses",
+        "The Sound and the Fury"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) The Sound and the Fury. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "the-sound-and-the-fury",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2000-q057",
+      "questionNumber": 57,
+      "question": "What is the unique quality of the Dickens humour?",
+      "options": [
+        "It blends humour with satire",
+        "It blends humour with romantic narration",
+        "It blends humour with pathos",
+        "None of the above"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) It blends humour with pathos. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-dickens",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q058",
+      "questionNumber": 58,
+      "question": "Who regarded poetry as the criticism of life?",
+      "options": [
+        "Matthew Arnold",
+        "Wordsworth",
+        "T. S Eliot",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Matthew Arnold. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "criticism",
+      "topicId": "matthew-arnold",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2000-q059",
+      "questionNumber": 59,
+      "question": "Which is the best alternative to complete the sentence: If I were the Prime Minister of India......",
+      "options": [
+        "I will help the poor",
+        "I would helped the poor",
+        "I had helped the poor",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) I will help the poor. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q060",
+      "questionNumber": 60,
+      "question": "Find out the correct sentence:",
+      "options": [
+        "He is rich enough to starve",
+        "He is too rich to starve",
+        "He is too rich not not to starve",
+        "None of the above"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) He is too rich to starve. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "note": "More than one sentence may be grammatically possible, depending on the intended context."
+    },
+    {
+      "id": "up-pgt-english-2000-q061",
+      "questionNumber": 61,
+      "question": "The given sentence wants punctuation. Find out the correctly punctuated sentence from the following sentences: 'It is not necessary says smiles to show that in economy is useful.'",
+      "options": [
+        "\"It is not necessary\", says Smiles, \"to show that economy is useful.",
+        "\"It is not necessary says Smiles to show that economy is useful\".",
+        "\"It is not\", Necessary says Smiles, to show that Economy is useful\"",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) \"It is not necessary\", says Smiles, \"to show that economy is useful.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "note": "One punctuation option has an unmatched quotation mark in the provided wording."
+    },
+    {
+      "id": "up-pgt-english-2000-q062",
+      "questionNumber": 62,
+      "question": "Select the right meaning of the word biography from the following:",
+      "options": [
+        "The life history of a man written by someone else",
+        "The life history of a man written by himself",
+        "The life history of a man as reflected in his writings",
+        "The life history of a man created in painting by someone else"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) The life history of a man written by someone else. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q063",
+      "questionNumber": 63,
+      "question": "What does the abbreviation I.P.C mean in the context of our Constitution?",
+      "options": [
+        "Indian People's Code",
+        "Indian Premier Code",
+        "Indian Popular Code",
+        "Indian Penal Code"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Indian Penal Code. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q064",
+      "questionNumber": 64,
+      "question": "Punctuation of the following sentence: \" As Caesar loved me I weep for him as he was fortunate rejoice at it as he was valiant I honour him but as he was ambitious I slew him' is given in the following sentences. Find out the correct one.",
+      "options": [
+        "Caesar loved me I weep for him, as he fortunate I rejoice at it as he was valiant I honour him, but as he was ambitiousI slew him.",
+        "As Caesar loved me I weep for him. As he was fortunate I rejoice at it. As he was valiant I honour him. But as he was ambitious I slew him.",
+        "As Caesar loved me, I weep for him; as he was fortunate, I rejoice at it; as he was valiant, I honoured him; but, as he was ambitious, I slew him .",
+        "None of the above."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) As Caesar loved me, I weep for him; as he was fortunate, I rejoice at it; as he was valiant, I honoured him; but, as he was ambitious, I slew him .. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "note": "Some punctuation options also change wording or verb tense."
+    },
+    {
+      "id": "up-pgt-english-2000-q065",
+      "questionNumber": 65,
+      "question": "He said, \"Alas! I am undone.\"",
+      "options": [
+        "He exclaimed Alas that he was undone.",
+        "He told Alas that he was undone.",
+        "He exclaimed sadly that he was undone",
+        "None of the above."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) He exclaimed sadly that he was undone. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q066",
+      "questionNumber": 66,
+      "question": "He said to me, \"what are you doing?\"",
+      "options": [
+        "He asked me what I was doing.",
+        "He asked to me what was I doing?",
+        "He asked me what I was doing?",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) He asked me what I was doing.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q067",
+      "questionNumber": 67,
+      "question": "What is the synonym of 'elegant'?",
+      "options": [
+        "Gentle",
+        "Famous",
+        "Graceful",
+        "None of them"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Graceful. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q068",
+      "questionNumber": 68,
+      "question": "What is the synonym of timorous?",
+      "options": [
+        "Up-to-date",
+        "Bright",
+        "Timid",
+        "None of the above"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Timid. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q069",
+      "questionNumber": 69,
+      "question": "What is the meaning of 'on the alert'?",
+      "options": [
+        "Ready to act",
+        "Depend on police",
+        "Depend on other",
+        "None of the above"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Ready to act. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q070",
+      "questionNumber": 70,
+      "question": "Which of the following words is mis- spelt?",
+      "options": [
+        "Career",
+        "Creator",
+        "Center",
+        "Carrier"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Center. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "note": "British and American English use different accepted spelling conventions."
+    },
+    {
+      "id": "up-pgt-english-2000-q071",
+      "questionNumber": 71,
+      "question": "Which of the following words means 'a cure for all ills'?",
+      "options": [
+        "Epidemic",
+        "Didactic",
+        "Panacea",
+        "Diction"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Panacea. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q072",
+      "questionNumber": 72,
+      "question": "Trace in the following list, the play which does not belong to the category to which the rest do:",
+      "options": [
+        "Othello",
+        "King Lear",
+        "Hamlet",
+        "The Tempest"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) The Tempest. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "shakespearean-tragedy",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q073",
+      "questionNumber": 73,
+      "question": "Which of the following sentence is in Passive Voice?",
+      "options": [
+        "I want to purchase a plot here.",
+        "She knows swimming very well",
+        "You cannot compete in this game this year.",
+        "She was awarded the British Council scholarship in 1999."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) She was awarded the British Council scholarship in 1999.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q074",
+      "questionNumber": 74,
+      "question": "Which of the following sentences is not in Passive voice?",
+      "options": [
+        "That nunance of the word was not intended by the speaker in his speech.",
+        "I am sure you will be awarded the Pulitzer for your novel this year.",
+        "My uncle seeks an appointment with you.",
+        "We are sure to be punished by the boss."
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) My uncle seeks an appointment with you.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q075",
+      "questionNumber": 75,
+      "question": "Which of the following words is the synonym of \"Apathetic\"?",
+      "options": [
+        "Hostile",
+        "Callous",
+        "Repulsive",
+        "Ominous"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Callous. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q076",
+      "questionNumber": 76,
+      "question": "Which of the following words is the \"Antonym\" of the word \"Auspicious\"?",
+      "options": [
+        "Oracular",
+        "Optical",
+        "Ominous",
+        "Austere"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Ominous. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q077",
+      "questionNumber": 77,
+      "question": "Read the following lines from a poem and answer the questions that follows: And though a single word scatters all doubts I quake for wonder at your choice of me: Why, why and why? How would you like to characterize the speaker of lines? (Choose the best option from the following):",
+      "options": [
+        "He is a melancholy person.",
+        "He was diffident regarding his selection as a lover by his lady- love but is now surprised at her choice of him.",
+        "He is skeptical By Nature.",
+        "He is despondent."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) He was diffident regarding his selection as a lover by his lady- love but is now surprised at her choice of him.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "passage",
+      "src": "UP PGT English 2000",
+      "passageId": "p1"
+    },
+    {
+      "id": "up-pgt-english-2000-q078",
+      "questionNumber": 78,
+      "question": "Read the lines that follow then answer the question based on them: Created half to rise and half to fall; Great Lord of all things, yet a prey to all. Which of the following statement best articulates the human condition, suggested in the above lines?",
+      "options": [
+        "Man is a mysterious being, defying all logic.",
+        "Man's state in the world is paradoxical.",
+        "Man is doomed to failure.",
+        "Man is a social being."
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Man's state in the world is paradoxical.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "paradox",
+      "qtype": "passage",
+      "src": "UP PGT English 2000",
+      "passageId": "p2"
+    },
+    {
+      "id": "up-pgt-english-2000-q079",
+      "questionNumber": 79,
+      "question": "Read the following passage and answer the question that follows it: \"But the ten poets represented in the following pages all share a technical master of English verse and a broad enough thematic concern to make them worthy of the attention of a wide audience.\" To which of the following categories does the book alluded to in the above statement belong?",
+      "options": [
+        "An anthology of poetry.",
+        "An anthology of critical essays on some poets.",
+        "A book of English prosody",
+        "A treaties on poetry and its nature"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) An anthology of poetry.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "passage",
+      "src": "UP PGT English 2000",
+      "passageId": "p3"
+    },
+    {
+      "id": "up-pgt-english-2000-q080",
+      "questionNumber": 80,
+      "question": "Fill in the blanks with the suitable preposition or verb. He_____ the bus when it came.",
+      "options": [
+        "Got off",
+        "Got on",
+        "Got in",
+        "None of the above"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Got on. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q081",
+      "questionNumber": 81,
+      "question": "Choose the right option which expresses the meaning of the word \"Invincible\":",
+      "options": [
+        "Defeated",
+        "Spoken",
+        "Learned",
+        "Unconquerable"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Unconquerable. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q082",
+      "questionNumber": 82,
+      "question": "Pick out the right option which expresses the meaning of the word \"Jealous\"?",
+      "options": [
+        "Enthusiastic",
+        "Envious",
+        "Proud",
+        "Popular"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Envious. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q083",
+      "questionNumber": 83,
+      "question": "What does the idiom \"Be-all and end- all\" mean ?",
+      "options": [
+        "From beginning to end",
+        "That which begins well",
+        "That which ends well",
+        "The whole and sole"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) The whole and sole. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q084",
+      "questionNumber": 84,
+      "question": "It had been part of Nelson's prayer, that the British fleet might be distinguished by humanity in the victory which he expected.\" What was Nelson's dream?",
+      "options": [
+        "A prayer to God",
+        "To serve humanity",
+        "Victory of the British fleet",
+        "None of them"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) To serve humanity. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q085",
+      "questionNumber": 85,
+      "question": "\"The talk of memorials to him in statues of bronze or marble or pillars and thus they mock him and belie his message.\" What does the writer say?",
+      "options": [
+        "Memorial of costly metals are important",
+        "The dead person's message is important",
+        "The people who build Memorials are important",
+        "None of the above"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) The dead person's message is important. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q086",
+      "questionNumber": 86,
+      "question": "A ballad is:",
+      "options": [
+        "A short poem narrating a Tale",
+        "A poem written on somebody's death",
+        "A prayer song",
+        "A marriage song"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) A short poem narrating a Tale. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q087",
+      "questionNumber": 87,
+      "question": "A lyric is:",
+      "options": [
+        "A long poem written in the form of an address",
+        "A poem written in the praise of God",
+        "A short poem in which the poet expresses his intense personal feeling",
+        "A triumphal song"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) A short poem in which the poet expresses his intense personal feeling. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "lyric",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q088",
+      "questionNumber": 88,
+      "question": "They literary Art of diminishing a subject by making it ridiculous and evoking towards it the attitudes of amusement and scorn is called:",
+      "options": [
+        "Allegory",
+        "Melodrama",
+        "Parody",
+        "Satire"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Parody. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "parody",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q089",
+      "questionNumber": 89,
+      "question": "How many lines does a Sonnet consist of?",
+      "options": [
+        "Twenty",
+        "Two",
+        "Nine",
+        "Fourteen"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Fourteen. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "sonnet",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q090",
+      "questionNumber": 90,
+      "question": "An iambic pentameter line contains:",
+      "options": [
+        "Five feet",
+        "Seven feet",
+        "Nine feet",
+        "Six feet"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Five feet. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "iambic-pentameter",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q091",
+      "questionNumber": 91,
+      "question": "A long poem telling the story of the leader of the whole community written in a narrative form and lofty style is called:",
+      "options": [
+        "A drama",
+        "An epic",
+        "A short story",
+        "A lyric"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) An epic. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "epic",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q092",
+      "questionNumber": 92,
+      "question": "Who defined tragedy in a following manner: \" tragedy is an imitation of an action, that is serious, complete and of a certain magnitude.....\"",
+      "options": [
+        "Plato",
+        "Shakespeare",
+        "Aristotle",
+        "Longinus"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Aristotle. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "criticism",
+      "topicId": "aristotle",
+      "qtype": "direct",
+      "src": "UP PGT English 2000"
+    },
+    {
+      "id": "up-pgt-english-2000-q093",
+      "questionNumber": 93,
+      "question": "Who is known as 'The Bard of Democracy' among the following:",
+      "options": [
+        "Emerson",
+        "Robert Frost",
+        "Walt Whitman",
+        "Emily Dickinson"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Walt Whitman. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "walt-whitman",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-renaissance"
+    },
+    {
+      "id": "up-pgt-english-2000-q094",
+      "questionNumber": 94,
+      "question": "Complete the following \"I Hear the America Singing\" is a ___lyric.",
+      "options": [
+        "Patriotic",
+        "Amorous",
+        "Mystic",
+        "Revolutionary"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Patriotic. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "walt-whitman",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-renaissance"
+    },
+    {
+      "id": "up-pgt-english-2000-q095",
+      "questionNumber": 95,
+      "question": "Who wrote the following well known lines: \"The woods are lovely dark and deep and I have promises to keep.....\"",
+      "options": [
+        "Whitman",
+        "Emerson",
+        "Frost",
+        "Faulkner"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Frost. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "robert-frost",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2000-q096",
+      "questionNumber": 96,
+      "question": "Who among the following writers did recently change his/het religion?",
+      "options": [
+        "Mulk Raj Anand",
+        "Kamala Das",
+        "Nissim Ezekiel",
+        "None of these"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Kamala Das. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "kamala-das",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2000-q097",
+      "questionNumber": 97,
+      "question": "\"Background, Casually\" is written by:",
+      "options": [
+        "Kamala Das",
+        "Whitman",
+        "Robert Frost",
+        "Nissim Ezekiel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Nissim Ezekiel. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "nissim-ezekiel",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2000-q098",
+      "questionNumber": 98,
+      "question": "Who said,- \" There is no essential difference between the language of prose and that of the metrical composition\"",
+      "options": [
+        "Wordsworth",
+        "Arnold",
+        "Keats",
+        "Eliot"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Wordsworth. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-wordsworth",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2000-q099",
+      "questionNumber": 99,
+      "question": "Shylock is a character in Shakespeare's....",
+      "options": [
+        "Twelfth Night",
+        "Merchant of Venice",
+        "As you Like it",
+        "Commedy of errors"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Merchant of Venice. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-merchant-of-venice",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2000-q100",
+      "questionNumber": 100,
+      "question": "Who is known as the fourth witch among Shakespeare's women characters?",
+      "options": [
+        "Desdemona",
+        "Gertrude",
+        "Lady Macbeth",
+        "Cordelia"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Lady Macbeth. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "macbeth",
+      "qtype": "direct",
+      "src": "UP PGT English 2000",
+      "periodId": "jacobean-era"
+    }
+  ]
+}

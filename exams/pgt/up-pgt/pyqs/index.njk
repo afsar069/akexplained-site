@@ -36,7 +36,7 @@ pgt_resources: true
         {% endfor %}
       </div>
       {% for paper in group.papers %}{% if paper.leftOut %}
-      <p class="pgt-pyq-leftout">The printed {{ paper.year }} paper has {{ paper.printedCount }} questions. We show {{ paper.count }}, because {{ paper.leftOut }} question{% if paper.leftOut != 1 %}s{% endif %} have damaged options in our copy.</p>
+      {% if paper.leftOutNote %}<p class="pgt-pyq-leftout">{{ paper.leftOutNote }}</p>{% else %}<p class="pgt-pyq-leftout">The printed {{ paper.year }} paper has {{ paper.printedCount }} questions. We show {{ paper.count }}, because {{ paper.leftOut }} question{% if paper.leftOut != 1 %}s{% endif %} have damaged options in our copy.</p>{% endif %}
       {% endif %}{% endfor %}
     </details>
     {% endfor %}
