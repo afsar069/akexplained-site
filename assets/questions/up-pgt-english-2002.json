@@ -1,0 +1,1309 @@
+{
+  "setId": "up-pgt-english-2002",
+  "rev": 1,
+  "ageName": "UP PGT English",
+  "setName": "2002 paper",
+  "level": "medium",
+  "levelName": "Full paper",
+  "title": "UP PGT English 2002 paper",
+  "exam": "UP PGT",
+  "subject": "English",
+  "paper": "English",
+  "session": "2002",
+  "topics": {
+    "british": "British Literature",
+    "american": "American Literature",
+    "indian": "Indian Writing in English",
+    "terms": "Literary Terms",
+    "world": "World Literature",
+    "language": "English Language and Usage"
+  },
+  "topicRead": {},
+  "passages": [],
+  "questions": [
+    {
+      "id": "up-pgt-english-2002-q001",
+      "questionNumber": 1,
+      "question": "Startford- on- Avon is the place where Shakespeare was born. Where is it located?",
+      "options": [
+        "Warwickshire",
+        "London",
+        "Sussex",
+        "Edinburgh"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Warwickshire. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2002-q002",
+      "questionNumber": 2,
+      "question": "\"All the world's a Stage, And all the men and women merely players.\" Who is the speaker of these lines",
+      "options": [
+        "Shakespeare",
+        "Prospero",
+        "Hamlet",
+        "Jaques"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Jaques. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "as-you-like-it",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2002-q003",
+      "questionNumber": 3,
+      "question": "To which work of his own Shakespeare called 'the first hier of invention'?",
+      "options": [
+        "The Rape of the Lucrece",
+        "Venus and adonis",
+        "As You Like It",
+        "Cymbeline"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Venus and adonis. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-shakespeare",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2002-q004",
+      "questionNumber": 4,
+      "question": "Who wrote 'Tiger's heart wrapt in a player's hide' about Shakespeare?",
+      "options": [
+        "Ben Johnson",
+        "Philip Sidney",
+        "Greene",
+        "Marlowe"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Greene. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "robert-greene",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "elizabethan"
+    },
+    {
+      "id": "up-pgt-english-2002-q012",
+      "questionNumber": 12,
+      "question": "What is the meaning of the sentence 'the writing is already on the wall'?",
+      "options": [
+        "Everything is uncertain now a days",
+        "Changes have already taken place",
+        "The signs of changes are already visible",
+        "It is mysterious process"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) The signs of changes are already visible. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q015",
+      "questionNumber": 15,
+      "question": "Which work of William Faulkner is also known as 'A boy's Ambition' ?",
+      "options": [
+        "Absalom Absalom",
+        "Light in August",
+        "The Sound and Fury",
+        "Mosquitoes"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Absalom Absalom. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "william-faulkner",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2002-q016",
+      "questionNumber": 16,
+      "question": "Which was Faulkner's last novel?",
+      "options": [
+        "The wind Palms",
+        "The Hamlet",
+        "The Rivers",
+        "Mosquitoes"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) The Rivers. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "william-faulkner",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism",
+      "note": "One novel title appears misspelt in the options. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q017",
+      "questionNumber": 17,
+      "question": "'The Waste Land' by T.S. Eliot is a poem of -",
+      "options": [
+        "4000 lines",
+        "370 lines",
+        "800 lines",
+        "430 lines"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 430 lines. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-waste-land",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2002-q018",
+      "questionNumber": 18,
+      "question": "Which of the following statements is true about D.H. Lawrence's 'Sons and Lovers':",
+      "options": [
+        "Paul's mother dies of cancer",
+        "Paul's father is a lawyer",
+        "Paul marries Gertrude",
+        "Paul kills his mother"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Paul kills his mother. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "sons-and-lovers",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era",
+      "note": "Another option could seem possible because the character was seriously ill. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q019",
+      "questionNumber": 19,
+      "question": "Which one is a philosophical work of W.B. Yeast which he wrote with the help of his wife.",
+      "options": [
+        "A Vision",
+        "The wandering of Oisin",
+        "The Seven Woods",
+        "The Celtic Twilight"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) A Vision. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "a-vision",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2002-q020",
+      "questionNumber": 20,
+      "question": "Who said \"Milton; shouldst be living at this hour \"?",
+      "options": [
+        "Keats",
+        "Wordsworth",
+        "Arnold",
+        "W.B .Yeats"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Wordsworth. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "william-wordsworth",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q021",
+      "questionNumber": 21,
+      "question": "In which of his Odes Keats wonders- \"Do I make or sleep \"?",
+      "options": [
+        "Ode to the Grecian URN",
+        "Ode to Psyche",
+        "Ode to Nightangle",
+        "None of these"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Ode to Nightangle. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ode-to-a-nightingale",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic",
+      "note": "The quoted line appears to contain a printing error. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q022",
+      "questionNumber": 22,
+      "question": "'Here lies one whose name was writ in water' who is here spoken of?",
+      "options": [
+        "Shelley",
+        "Arnold",
+        "Wordsworth",
+        "Keats"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Keats. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "john-keats",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q023",
+      "questionNumber": 23,
+      "question": "Which volume of poetry by Keats contained a poem 'Hyperion'?",
+      "options": [
+        "First Volume",
+        "second volume",
+        "Three volume",
+        "Fourthvolume"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Three volume. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "hyperion",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic",
+      "note": "The volume number and edition are not made clear in this question. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q024",
+      "questionNumber": 24,
+      "question": "Who is the writer of 'The Adventure of Ulysses'?",
+      "options": [
+        "Charles Lamb",
+        "Marry Lamb",
+        "Both",
+        "None"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Both. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-lamb",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q025",
+      "questionNumber": 25,
+      "question": "Where was Mulk Raj Anand born?",
+      "options": [
+        "Peshawar",
+        "Lahore",
+        "Amritsar",
+        "Jalandhar"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Peshawar. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "mulk-raj-anand",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-fiction"
+    },
+    {
+      "id": "up-pgt-english-2002-q026",
+      "questionNumber": 26,
+      "question": "How many books did Mulk Raj Anand published before 1935-",
+      "options": [
+        "10",
+        "6",
+        "4",
+        "5"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 5. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "mulk-raj-anand",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-fiction"
+    },
+    {
+      "id": "up-pgt-english-2002-q027",
+      "questionNumber": 27,
+      "question": "Who authored the novel 'The Financial Expert'-",
+      "options": [
+        "Mulk Raj Anand",
+        "R.K. Narayan",
+        "William Faulkner",
+        "Hemingway"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) R.K. Narayan. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "r-k-narayan",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-fiction"
+    },
+    {
+      "id": "up-pgt-english-2002-q028",
+      "questionNumber": 28,
+      "question": "Which novel of RK Narayan is similar to the ' A Doll's House'.",
+      "options": [
+        "Mr Sampath",
+        "The Guide",
+        "The Darkroom",
+        "The Bachelor of Arts"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) The Darkroom. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "r-k-narayan",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-fiction"
+    },
+    {
+      "id": "up-pgt-english-2002-q029",
+      "questionNumber": 29,
+      "question": "Who is of a Jewish origin-",
+      "options": [
+        "Kamla Das",
+        "R. K. Narayan",
+        "Nissim Ezekiel",
+        "None"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Nissim Ezekiel. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "nissim-ezekiel",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2002-q030",
+      "questionNumber": 30,
+      "question": "Who wrote these lines- I cannot leave this Iceland I was born here and belong",
+      "options": [
+        "Kamla Das",
+        "T. S. Eliot",
+        "Whitman",
+        "Ezekiel"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Ezekiel. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "nissim-ezekiel",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-poetry",
+      "note": "The quoted line appears to contain a printing error. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q031",
+      "questionNumber": 31,
+      "question": "Which of the following Poems by Kamala Das is a dialogue form-",
+      "options": [
+        "The Invitation",
+        "In Love",
+        "Composition",
+        "The Suicide"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) The Invitation. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "kamala-das",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2002-q032",
+      "questionNumber": 32,
+      "question": "Kamla Das got 'Kerala Sahitya Academy Award' in the year-",
+      "options": [
+        "1985",
+        "1969",
+        "1964",
+        "1965"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) 1985. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "indian",
+      "topicId": "kamala-das",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "iwe-poetry"
+    },
+    {
+      "id": "up-pgt-english-2002-q034",
+      "questionNumber": 34,
+      "question": "How many times did Robert Frost got Pulitzer prize-",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Four. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "robert-frost",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2002-q035",
+      "questionNumber": 35,
+      "question": "Who utter these words \"I guess I am not a nature poet, I have written only two poems without human being in them\".",
+      "options": [
+        "Wordsworth",
+        "Keats",
+        "Frost",
+        "Whitman"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Frost. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "robert-frost",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2002-q036",
+      "questionNumber": 36,
+      "question": "which work of Hemingway was called the Bible of 'Lost Generation'-",
+      "options": [
+        "The Sun Also Rises",
+        "Men without Women",
+        "A Moveable Feast",
+        "The Old Man and the sea"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) The Sun Also Rises. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "the-sun-also-rises",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism"
+    },
+    {
+      "id": "up-pgt-english-2002-q037",
+      "questionNumber": 37,
+      "question": "Shelley wrote a pamphlet at Oxford - \"The Necessity of Atheism\"- By whom was he inspired-",
+      "options": [
+        "Kant",
+        "Bergson",
+        "Hume",
+        "Keats"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Hume. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q038",
+      "questionNumber": 38,
+      "question": "Where did Shelley settle and wrote his best poetry",
+      "options": [
+        "Sussex",
+        "Eton",
+        "France",
+        "Pisa"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Pisa. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "percy-bysshe-shelley",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q040",
+      "questionNumber": 40,
+      "question": "Who is called the \"essayist par excellence\"?",
+      "options": [
+        "Bacon",
+        "Lamb",
+        "Arnold",
+        "None"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Lamb. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-lamb",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q041",
+      "questionNumber": 41,
+      "question": "How is Lamb associated with Christ's Hospital-",
+      "options": [
+        "It was the hospital where he took birth.",
+        "Here he died",
+        "Here he was educated",
+        "Mary lamb was treated here"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Here he was educated. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-lamb",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q042",
+      "questionNumber": 42,
+      "question": "Where from the epigraph of- \"The Love Song of J. Alfred Prufrock is taken-",
+      "options": [
+        "Illiad",
+        "Gita",
+        "Inferno",
+        "Hamlet"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Inferno. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-love-song-of-j-alfred-prufrock",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2002-q043",
+      "questionNumber": 43,
+      "question": "Which of the following is not a poetic play by T. S. Eliot-",
+      "options": [
+        "Sweeney Agonistes",
+        "Murder in the Cathedral",
+        "The Family Reunion",
+        "None"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) None. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ts-eliot",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2002-q044",
+      "questionNumber": 44,
+      "question": "Wordsworth wrote 'The Prelude' in-",
+      "options": [
+        "Twelve books",
+        "Fourteen books",
+        "Ten books",
+        "Sixteen books"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Fourteen books. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-prelude",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q045",
+      "questionNumber": 45,
+      "question": "Who called Wordsworth 'The egoistical sublime'-",
+      "options": [
+        "Lamb",
+        "Arnold",
+        "Eliot",
+        "Keats"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Keats. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "john-keats",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "romantic"
+    },
+    {
+      "id": "up-pgt-english-2002-q046",
+      "questionNumber": 46,
+      "question": "'The old man and the Sea' fetch Nobel Prize for Hemingway. The protagonist is-",
+      "options": [
+        "A Cuban fisherman",
+        "An American fisherman",
+        "A Mexican fisherman",
+        "A British Naval Officer"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) A Cuban fisherman. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "american",
+      "topicId": "the-old-man-and-the-sea",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "american-modernism",
+      "note": "The question links a particular work directly to an award, which may be misleading."
+    },
+    {
+      "id": "up-pgt-english-2002-q047",
+      "questionNumber": 47,
+      "question": "Who wrote 'The habit of freedom, which English room never acquire and never let their children acquire, came to me naturally.\"",
+      "options": [
+        "Arnold",
+        "Eliot",
+        "Shaw",
+        "Lawerence"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Shaw. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "bernard-shaw",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era",
+      "note": "The quotation appears to contain an unclear or misprinted word. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q048",
+      "questionNumber": 48,
+      "question": "Arms and the Man by G. B Shaw is divided into-",
+      "options": [
+        "Four Acts",
+        "Five Acts",
+        "Two Acts",
+        "Three Acts"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Three Acts. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "arms-and-the-man",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "modern-era"
+    },
+    {
+      "id": "up-pgt-english-2002-q049",
+      "questionNumber": 49,
+      "question": "Hardy began and ended his career by writing-",
+      "options": [
+        "Novel",
+        "Drama",
+        "Essays",
+        "Poetry"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Poetry. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "thomas-hardy",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q050",
+      "questionNumber": 50,
+      "question": "About which novel of his own Hardy remarked a war between ' Flesh and spirit'.",
+      "options": [
+        "Mayor of Casterbridge",
+        "Tess",
+        "Jude the Obscure",
+        "The Return of the Native"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Jude the Obscure. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "jude-the-obscure",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q051",
+      "questionNumber": 51,
+      "question": "Which one was Hardy's first serial novel-",
+      "options": [
+        "A Pair of Blue Eyes",
+        "The Trumpet Major",
+        "The Woodlander",
+        "Far from the Madding crowd"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) A Pair of Blue Eyes. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "thomas-hardy",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q052",
+      "questionNumber": 52,
+      "question": "is the last line of a poem by Tennyson, which one is it-",
+      "options": [
+        "Crossing the Bar",
+        "The Princess",
+        "The Lady of Shalott",
+        "Ulysses"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Ulysses. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "ulysses-tennyson",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian",
+      "note": "The line to be identified is missing from the question text. The printed answer is retained."
+    },
+    {
+      "id": "up-pgt-english-2002-q053",
+      "questionNumber": 53,
+      "question": "Which poem of Tennyson was his favourite-",
+      "options": [
+        "Maud",
+        "The Princess",
+        "In Memorium",
+        "Ulysses"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Maud. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "alfred-tennyson",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q054",
+      "questionNumber": 54,
+      "question": "The rhyming scheme of 'In memorium' is-",
+      "options": [
+        "ABAB",
+        "AABB",
+        "ABC ABC",
+        "ABBA"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) ABBA. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "in-memoriam",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q055",
+      "questionNumber": 55,
+      "question": "Arnold took the theme of his 'The Scholar Gipsy' from Joseph Glanville's book entitled-",
+      "options": [
+        "The Scholar Gipsy",
+        "The Vagabond",
+        "The First Mesmerist",
+        "None"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) None. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "the-scholar-gipsy",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q056",
+      "questionNumber": 56,
+      "question": "Who is referred as 'Europe's sagest head' and 'Physician of the Iron Age' by Arnold.",
+      "options": [
+        "Wordsworth",
+        "Byron",
+        "Goethe",
+        "Shakespeare"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Goethe. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "world",
+      "topicId": "world-literature",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q057",
+      "questionNumber": 57,
+      "question": "When was 'Literature and Dogma' published-",
+      "options": [
+        "1869",
+        "1849",
+        "1885",
+        "1873"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) 1873. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "matthew-arnold",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q058",
+      "questionNumber": 58,
+      "question": "Which one is Dicken's incomplete work-",
+      "options": [
+        "Pickwick Papers",
+        "Edwin Drood",
+        "Dombey and sons",
+        "Bleak House"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Edwin Drood. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "charles-dickens",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q059",
+      "questionNumber": 59,
+      "question": "Lady Deadlock a character, occurs in Dickens-",
+      "options": [
+        "Bleak House",
+        "A Tale of two cities",
+        "Hard Times",
+        "Pickwick Papers"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Bleak House. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "bleak-house",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q060",
+      "questionNumber": 60,
+      "question": "What problem has been dealt within Dickens ' The Bleak House'-",
+      "options": [
+        "Persecution of poor indebtors.",
+        "Abuse of Charity School",
+        "Working condition in work houses",
+        "Law's delays"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Law's delays. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "british",
+      "topicId": "bleak-house",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "periodId": "victorian"
+    },
+    {
+      "id": "up-pgt-english-2002-q061",
+      "questionNumber": 61,
+      "question": "A 'Ballad Stanza' is of-",
+      "options": [
+        "Two lines",
+        "Three lines",
+        "Four lines",
+        "Five lines"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Four lines. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "ballad",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q062",
+      "questionNumber": 62,
+      "question": "What does the term 'Curtain Raiser' indicates in drama-",
+      "options": [
+        "One who raises curtain",
+        "A modern drama of serious nature",
+        "Super natural Agency in drama which reveals some truth",
+        "A short play before the main play"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) A short play before the main play. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "genres-and-modes",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q063",
+      "questionNumber": 63,
+      "question": "The word 'Picaresque' has been derived from-",
+      "options": [
+        "Latin word Picaro",
+        "Greek word Picaro",
+        "Italian word Picaro",
+        "Spanish word picaro"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Spanish word picaro. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "picaresque",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q064",
+      "questionNumber": 64,
+      "question": "\"An ambassador is a gentleman who lies abroad for good of his country\". Pun for the sentence is on the word.",
+      "options": [
+        "Ambassador",
+        "Gentleman",
+        "Lies",
+        "Good"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Lies. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "pun",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q065",
+      "questionNumber": 65,
+      "question": "What figure of speech is in- The man is no fool.",
+      "options": [
+        "Litotes",
+        "Tautology",
+        "Euphemism",
+        "Epigram"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Litotes. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "litotes",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q066",
+      "questionNumber": 66,
+      "question": "Milton! thou shouldst be living at this hour. Find the figure of speech.",
+      "options": [
+        "Oxymoron",
+        "Apostrophe",
+        "Hyperbole",
+        "Simile"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) Apostrophe. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "apostrophe-device",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q067",
+      "questionNumber": 67,
+      "question": "Find the figure of speech in- To err is human to forgive devine-",
+      "options": [
+        "Simile",
+        "Metaphor",
+        "Apostrophe",
+        "Antithesis"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Antithesis. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "terms",
+      "topicId": "antithesis",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q068",
+      "questionNumber": 68,
+      "question": "What do you mean by square meal -",
+      "options": [
+        "Full meal",
+        "Unpleasant meal",
+        "Alms",
+        "None"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Full meal. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q069",
+      "questionNumber": 69,
+      "question": "G. B. Shaw was havingthe gift of the gab. What does the underlined phrase means -",
+      "options": [
+        "Talent for speaking",
+        "Out spoken",
+        "Over eater",
+        "Cynical"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Talent for speaking. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q070",
+      "questionNumber": 70,
+      "question": "Keats was the victim of rap on the knuckles. The underline idiom denotes-",
+      "options": [
+        "Appreciation",
+        "Support",
+        "Severe criticism",
+        "Loud Approval"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Severe criticism. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q071",
+      "questionNumber": 71,
+      "question": "What is the meaning of propensity-",
+      "options": [
+        "Disposition",
+        "Prosperity",
+        "Nearness",
+        "Distant"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Disposition. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q072",
+      "questionNumber": 72,
+      "question": "What is the meaning of Galling-",
+      "options": [
+        "Imitation",
+        "Absurd",
+        "Odd",
+        "Irritable"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Irritable. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q073",
+      "questionNumber": 73,
+      "question": "The antonym of Advance is -",
+      "options": [
+        "Follow",
+        "Submit",
+        "Disperse",
+        "Retreat"
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) Retreat. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q074",
+      "questionNumber": 74,
+      "question": "The antonym of Familiar -",
+      "options": [
+        "Known",
+        "Infamiliar",
+        "Unfamiliar",
+        "Unknown"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) Unfamiliar. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "english-language-and-elt",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "note": "Another option may also be an acceptable antonym in some contexts."
+    },
+    {
+      "id": "up-pgt-english-2002-q076",
+      "questionNumber": 76,
+      "question": "Which sentence is correct-",
+      "options": [
+        "I am born in India",
+        "I am born at India",
+        "I was born in India",
+        "I was born at India"
+      ],
+      "correct_option_id": 2,
+      "explanation": "Official examination answer: Option (C) I was born in India. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q077",
+      "questionNumber": 77,
+      "question": "Find the correct sentence-",
+      "options": [
+        "Many a man wants to be rich overnight",
+        "Many a men want to be rich overnight",
+        "Many a men wanted to rich overnight",
+        "None"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) Many a man wants to be rich overnight. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q079",
+      "questionNumber": 79,
+      "question": "Which sentence is correct grammatically-",
+      "options": [
+        "I and you have done it.",
+        "He and you went there.",
+        "I and he liked it.",
+        "You, Tom and I ate sweets."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) You, Tom and I ate sweets.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "note": "More than one sentence may be grammatical, although the preferred ordering differs."
+    },
+    {
+      "id": "up-pgt-english-2002-q080",
+      "questionNumber": 80,
+      "question": "Which sentence is incorrect-",
+      "options": [
+        "They are women teachers.",
+        "We are Lady- Doctors.",
+        "You all are house maids",
+        "We are woman doctors."
+      ],
+      "correct_option_id": 3,
+      "explanation": "Official examination answer: Option (D) We are woman doctors.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "note": "Another option may also be judged incorrect because of its form or capitalization."
+    },
+    {
+      "id": "up-pgt-english-2002-q081",
+      "questionNumber": 81,
+      "question": "Which sentence is correct-",
+      "options": [
+        "We travelled by auto",
+        "We travelled by the auto",
+        "We travelled by a auto",
+        "We travelled by an auto"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) We travelled by auto. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "note": "More than one travel-expression option may work in a different context."
+    },
+    {
+      "id": "up-pgt-english-2002-q082",
+      "questionNumber": 82,
+      "question": "He said, \"Two and three is five\".",
+      "options": [
+        "He said that two and three are five.",
+        "He said that two and three is five.",
+        "He said that two and three was five.",
+        "He said that two and three were five"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) He said that two and three is five.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q083",
+      "questionNumber": 83,
+      "question": "You say, \"I cut the finger.\"",
+      "options": [
+        "You say that you cut the finger.",
+        "You say that I cut the finger.",
+        "You say that he cut the finget.",
+        "You say that the finger was cut."
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) You say that you cut the finger.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    },
+    {
+      "id": "up-pgt-english-2002-q084",
+      "questionNumber": 84,
+      "question": "Help the poor.",
+      "options": [
+        "Let the poor be helped",
+        "The poor should be helped",
+        "Poors should be helped",
+        "Let the poors be helped"
+      ],
+      "correct_option_id": 1,
+      "explanation": "Official examination answer: Option (B) The poor should be helped. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002",
+      "note": "More than one option may express the intended passive meaning."
+    },
+    {
+      "id": "up-pgt-english-2002-q085",
+      "questionNumber": 85,
+      "question": "Which sentence has an intransitive verb-",
+      "options": [
+        "He ran a long distance.",
+        "The boy kicks the football",
+        "I feel severe pain in my head",
+        "The driver stopped the train"
+      ],
+      "correct_option_id": 0,
+      "explanation": "Official examination answer: Option (A) He ran a long distance.. Verified from examination board answer key and standard literature/grammar reference.",
+      "topic": "language",
+      "topicId": "traditional-grammar",
+      "qtype": "direct",
+      "src": "UP PGT English 2002"
+    }
+  ]
+}
