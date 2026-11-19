@@ -4234,3 +4234,51 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 }
 @media print{.cbt-modal{display:none}}
 
+/* Sirf phone, MCQ section: cards patle aur lambe (ek line ki row), choude/lambe dabbe nahi. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  /* "Not Sure Where To Begin?" (MCQ hub) */
+  .mcq-sec-page .mcq-start{flex-wrap:nowrap;padding:9px 12px;gap:12px;border-radius:12px}
+  .mcq-sec-page .mcq-start-ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .mcq-start-ic svg{width:20px;height:20px}
+  .mcq-sec-page .mcq-start-txt strong{font-size:1rem;margin:0}
+  .mcq-sec-page .mcq-start-txt span{display:none}
+  .mcq-sec-page .mcq-start-go{width:auto;flex:none;font-size:0;padding:6px 12px;border-radius:9px;line-height:1}
+  .mcq-sec-page .mcq-start-go::after{content:"\2192";font-size:1.15rem;font-weight:700}
+  .mcq-sec-page .mcq-start[aria-disabled="true"] .mcq-start-go::after{content:""}
+
+  /* "Twenty-five questions are ready now" (age hub) */
+  .mcq-sec-page .agehub-ready{flex-wrap:nowrap;gap:12px;padding:9px 12px;border-radius:12px;margin-bottom:16px}
+  .mcq-sec-page .agehub-ready .ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .agehub-ready .ic svg{width:20px;height:20px}
+  .mcq-sec-page .agehub-ready .txt{flex:1 1 0}
+  .mcq-sec-page .agehub-ready strong{font-size:1rem;line-height:1.3;margin:0}
+  .mcq-sec-page .agehub-ready .txt span{display:none}
+  .mcq-sec-page .agehub-ready .go{width:auto;font-size:0;padding:6px 12px;border-radius:9px;line-height:1}
+  .mcq-sec-page .agehub-ready .go::after{content:"\2192";font-size:1.15rem;font-weight:700}
+
+  /* "Build Your Own Set" (MCQ hub, coming soon) */
+  .mcq-sec-page .mcq-build{flex-wrap:nowrap;padding:9px 12px;gap:12px;border-radius:12px}
+  .mcq-sec-page .mcq-build .ic{width:38px;height:38px;border-radius:11px}
+  .mcq-sec-page .mcq-build .txt{flex:1 1 0}
+  .mcq-sec-page .mcq-build .txt strong{font-size:1rem;margin:0}
+  .mcq-sec-page .mcq-build .txt span{display:none}
+  .mcq-sec-page .mcq-build .txt strong{font-size:.95rem}
+  .mcq-sec-page .mcq-build .go{width:auto;padding:5px 9px;font-size:.7rem;white-space:nowrap}
+
+  /* "Also In The Practice Zone" cards: icon on the left, name and one line beside it */
+  .mcq-sec-page .mcq-othergrid{gap:9px}
+  .mcq-sec-page .mcq-other{
+    display:grid;grid-template-columns:40px minmax(0,1fr);column-gap:12px;align-items:center;padding:9px 12px;border-radius:12px;
+  }
+  .mcq-sec-page .mcq-other .ic{grid-row:1 / span 2;width:40px;height:40px;margin:0;border-radius:11px}
+  .mcq-sec-page .mcq-other strong{grid-column:2;margin:0;font-size:1rem}
+  .mcq-sec-page .mcq-other p{grid-column:2;font-size:.8rem;line-height:1.35}
+
+  /* "Build your own test" (age hub): name and a small button in one row */
+  .mcq-sec-page .agehub-build{display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:12px}
+  .mcq-sec-page .agehub-build h2{flex:1 1 0;margin:0;font-size:1rem}
+  .mcq-sec-page .agehub-build .sub{display:none}
+  .mcq-sec-page .agehub-buildgo{margin:0;flex:none}
+  .mcq-sec-page .agehub-buildlink .agehub-start{width:auto;padding:8px 14px;font-size:.85rem}
+}
+
