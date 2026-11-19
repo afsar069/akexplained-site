@@ -4432,3 +4432,12 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   }
 }
 
+
+/* ---------- /download/ hub: syllabus PDF cards (from pgt.css) + link and Coming soon cards (.exam-cat) ---------- */
+.dlhub-section{padding:34px 0 20px}
+.dlhub-section .pgt-download-grid{margin-bottom:20px}
+.dlhub-links,.dlhub-soon{padding:16px 0 30px}
+.dlhub-ask{margin:20px 0 0;max-width:none;font-size:.95rem}
+.dlhub-ask a{font-weight:600;text-underline-offset:3px}
+/* On a phone the compact PYQ-style rows hide the one-line note of a link card; here that note matters (for example "not the official UP syllabus"), so keep it. */
+.mcq-sec-page .dlhub-links a.exam-cat .exam-cat-txt > span{display:block;-webkit-line-clamp:unset;overflow:visible}
