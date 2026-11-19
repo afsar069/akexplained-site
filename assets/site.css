@@ -502,10 +502,18 @@ details.faq .body p:last-child{margin-bottom:0}
 .article img{border-radius:12px;margin:24px 0;border:1px solid var(--border)}
 .article figure{margin:24px 0}
 .article figcaption{font-family:var(--sans);font-size:.84rem;color:var(--body);text-align:center;margin-top:9px}
-/* Paintings align with both edges of the reading column at every width. */
+/* Paintings fill the reading column unless a size modifier is used. */
 .article figure.article-illustration{width:100%;margin:24px 0;break-inside:avoid}
 .article .article-illustration img{display:block;width:100%;height:auto;margin:0}
 .article .article-illustration figcaption{max-width:none;line-height:1.45}
+/* Optional sizes let selected paintings sit beside the prose. */
+.article figure.article-illustration--float{float:right;width:44%;max-width:18rem;margin:4px 0 16px 24px}
+.article figure.article-illustration--left{float:left;margin:4px 24px 16px 0}
+.article figure.article-illustration--medium{width:min(100%,30rem);margin:24px auto;clear:both}
+.article figure.article-illustration--float ~ :is(h2,h3){clear:both}
+@media (max-width:640px){
+  .article figure.article-illustration--float{float:none;width:100%;max-width:none;margin:24px 0}
+}
 .article table{width:100%;border-collapse:collapse;margin:0 0 22px;font-family:var(--sans);font-size:.92rem}
 .article th,.article td{border:1px solid var(--border);padding:9px 12px;text-align:left}
 .article th{background:var(--tint);font-weight:600;color:var(--ink)}

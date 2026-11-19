@@ -61,6 +61,11 @@ Women in this world appear in the poetry in a few clear roles: the queen who car
 
 ### Economic life
 
+<figure class="article-illustration article-illustration--float" data-illustration="economic-life">
+  <img src="/assets/articles/old-english/economic-life.webp" alt="Representative painting of farmers, oxen and livestock in an Anglo-Saxon settlement." width="1200" height="900" loading="lazy" decoding="async">
+  <figcaption>Farming in an Anglo-Saxon settlement.</figcaption>
+</figure>
+
 This was a farming world. Most people lived in small settlements, grew barley, wheat, oats and beans, and kept cattle, sheep and pigs. Land was measured in **hides**, a unit based roughly on what would support one household. Wealth was counted in land, livestock, slaves and worked metal rather than in cash.
 
 Trade existed but was limited. Coastal trading settlements grew up at places like Hamwic near Southampton and Lundenwic outside the old Roman walls of London, handling wine, pottery, querns and glass from the continent. Silver coins were struck from the seventh century onwards, first small ones now known as sceattas, later the penny, which became the standard coin of England.
@@ -107,11 +112,21 @@ The vocabulary was almost entirely Germanic. Where modern English borrows a word
 
 There were four main dialects: Northumbrian, Mercian, Kentish and West Saxon. Most of the earliest material was written in the northern dialects, but almost everything that survives was copied later in **late West Saxon**, the written standard of Wessex in the tenth and eleventh centuries. This is why a poem that may have been composed in Northumbria in the eighth century now appears in a West Saxon dress.
 
+<figure class="article-illustration article-illustration--float article-illustration--left" data-illustration="language">
+  <img src="/assets/articles/old-english/language.webp" alt="Representative painting of runic carving beside a parchment manuscript and writing tools." width="1200" height="900" loading="lazy" decoding="async">
+  <figcaption>Runic carving and parchment writing.</figcaption>
+</figure>
+
 Writing came in two systems. The oldest is the runic alphabet, the **futhorc**, cut into wood, bone, stone and metal, and used for short inscriptions rather than long texts. After the conversion, scribes used the Latin alphabet with four extra letters: þ (thorn) and ð (eth) for *th*, æ (ash) for the vowel in *cat*, and ƿ (wynn) for *w*.
 
 ### How the writing survived
 
 Nearly all Old English poetry sits in four manuscripts, all written around the year 1000, and none of them prepared as a complete or official collection.
+
+<figure class="article-illustration article-illustration--medium" data-illustration="manuscripts">
+  <img src="/assets/articles/old-english/manuscripts.webp" alt="Representative painting of early medieval parchment manuscripts on a library desk." width="1200" height="800" loading="lazy" decoding="async">
+  <figcaption>Representative manuscripts preserving Old English writing.</figcaption>
+</figure>
 
 The **Beowulf Manuscript**, also called the Nowell Codex, is now bound in the volume Cotton Vitellius A.xv in the British Library. Along with *Beowulf* it contains the fragmentary poem *Judith* and three prose texts. In 1731 a fire at Ashburnham House damaged the Cotton collection, and the edges of the Beowulf leaves were burnt and later crumbled; some words are now readable only in eighteenth-century transcripts.
 
@@ -132,6 +147,11 @@ Three habits of style follow from this verse form. The first is the **kenning**,
 These features also point to an oral background. The verse is full of repeated phrases and set formulas, the kind of ready-made building blocks a reciting poet needs. How far the surviving poems were actually composed in performance, and how far they were written compositions imitating that manner, is still argued about.
 
 The heroic poetry is the oldest layer in feeling, even where the manuscripts are late. **Beowulf**, 3,182 lines long, is the only complete Germanic heroic epic in any language. It is set not in England but in Scandinavia: the Geatish warrior Beowulf sails to Denmark, cleanses King Hrothgar's hall Heorot of the monster Grendel, kills Grendel's mother in her underwater lair, returns home, rules fifty years, and dies killing a dragon. The poem is Christian in its voice but heathen in its material, and that tension runs all through it.
+
+<figure class="article-illustration" data-illustration="beowulf">
+  <img src="/assets/articles/old-english/beowulf.webp" alt="Imagined painting of a Geatish warrior approaching the timber hall Heorot in the world of Beowulf." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from Beowulf: a warrior approaches Heorot.</figcaption>
+</figure>
 
 Other heroic poems survive in pieces. *The Battle of Maldon* describes a real defeat of 991, in which the ealdorman Byrhtnoth let a Viking force cross a causeway to fight on equal terms and was killed; its closing speeches are the clearest statement in English of the duty to die beside one's lord. *The Battle of Brunanburh*, on Æthelstan's victory of 937, is preserved inside the *Anglo-Saxon Chronicle*. *Widsith* is the imagined travel-list of a wandering poet; *Waldere* and *The Fight at Finnsburh* are fragments of longer stories from Germanic legend.
 
