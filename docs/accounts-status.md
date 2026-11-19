@@ -6,6 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Renaissance article illustrations — 2026-11-19
+- Nine period-specific paintings in `/notes/renaissance/`: small portraits of Henry VIII, Elizabeth I and Shakespeare beside their paragraphs; six full-column scenes cover the Armada, humanist education, enclosure, the English Bible, The Faerie Queene and an Elizabethan playhouse.
+- Renaissance oil-painting treatments use perspective and modelled figures, evolving from Middle English manuscript/tapestry styles. Portraits are labelled modern interpretations; literary and historical scenes are labelled imagined or representative.
+- All assets are WebP under 200 KB each, with captions, alt text, lazy loading and intrinsic dimensions. Portraits use an opt-in 32% / 208px maximum width on larger screens and stack at full text width on phones. Original prose and hero variants remain intact.
+
 ## Middle English article illustrations — 2026-11-19
 - Eight distinct scenes in `/notes/middle-english/`: Hastings, a guild workshop, the wool trade, church life, printing, the Green Knight, Canterbury pilgrims and a pageant play.
 - Styles move from tapestry-inspired Hastings to Gothic manuscript painting and hand-coloured early woodcut treatments for printing and drama. These are representative reconstructions or imagined literary scenes, not historical artefacts.

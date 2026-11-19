@@ -42,15 +42,30 @@ The century that followed, from 1500 to the death of Elizabeth I in 1603, began 
 
 Henry VII ruled from 1485 to 1509, and he spent those years making the crown safe. The Wars of the Roses had shown how dangerous great lords with private armies could be, so Henry kept them in check and filled the royal treasury. He left his son a calm and wealthy kingdom.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="henry-viii">
+  <img src="/assets/articles/renaissance/henry-viii.webp" alt="Modern painted interpretation of Henry VIII in a jeweled Tudor cap and fur-trimmed gown." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>Henry VIII — modern painted interpretation.</figcaption>
+</figure>
+
 That son, Henry VIII, became king in 1509 at the age of seventeen. He was clever, loved music and learning, and wanted to be seen as a great ruler in Europe. But one worry grew in him every year. His wife, Catherine of Aragon, had given him a daughter, Mary, but no living son, and he feared that a kingdom without a male heir might fall back into civil war. He asked the Pope to end the marriage. The Pope, who was then under the power of Catherine's nephew, the Emperor Charles V, refused.
 
 Henry's answer changed England. In 1534 Parliament passed the Act of Supremacy, which made the king, and not the Pope, the Supreme Head of the Church of England. By then Henry had married Anne Boleyn. Between 1536 and 1540 he closed the monasteries and took their lands and wealth. Anyone who refused to accept his new position was in danger. One of them was Thomas More, a former Lord Chancellor and once the king's friend, who was beheaded in 1535.
 
 Henry died in 1547. His son Edward VI came to the throne as a boy, ruled for six years under Protestant advisers, and died at fifteen in 1553. The crown then passed to Mary I, Catherine's daughter. Mary was a devout Catholic who wished to bring back the Pope's authority. She had hundreds of Protestants burned as heretics, and her marriage to Philip II of Spain was disliked by many of her subjects. She died childless in 1558.
 
+<figure class="article-illustration article-illustration--float article-illustration--left article-illustration--portrait" data-illustration="elizabeth-i">
+  <img src="/assets/articles/renaissance/elizabeth-i.webp" alt="Modern painted interpretation of Elizabeth I with red hair, pearls and a white lace ruff." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>Elizabeth I — modern painted interpretation.</figcaption>
+</figure>
+
 Elizabeth I, the daughter of Anne Boleyn, became queen at twenty-five. She inherited a divided and nervous country and ruled it for forty-four years. She chose her advisers well, above all William Cecil, later Lord Burghley, and she never married, though princes from across Europe asked for her hand. Her single life became part of her public image as the Virgin Queen, and poems, portraits and pageants grew up around it.
 
 Her dangers were real. In 1570 the Pope declared her excommunicated, which encouraged Catholic plots against her. Many of these plots gathered around her cousin Mary, Queen of Scots, a Catholic who had fled to England in 1568 and had a claim to the English crown. After long years in captivity Mary was executed in 1587. Philip II of Spain, who had once been Elizabeth's brother-in-law and was now her enemy, answered in 1588 by sending a great fleet, the Armada, to invade England. The English ships, helped by storms, drove it off. The victory did not make England a great power overnight, but it gave the country a new pride in itself, and writers soon made use of that pride.
+
+<figure class="article-illustration" data-illustration="armada">
+  <img src="/assets/articles/renaissance/armada.webp" alt="Representative painting of English and Spanish galleons in rough Channel waters during the Armada campaign." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of the Armada campaign, 1588.</figcaption>
+</figure>
 
 ### Social life
 
@@ -60,11 +75,21 @@ Life was changing all the same. The population grew, and many people moved from 
 
 Girls from rich families could be well taught. Elizabeth herself read several languages, and More made sure that his daughters learned Latin and Greek. Most girls, however, did not go to school, and the universities of Oxford and Cambridge took only men.
 
+<figure class="article-illustration" data-illustration="humanist-school">
+  <img src="/assets/articles/renaissance/humanist-school.webp" alt="Representative Renaissance painting of a master teaching classical learning in a Tudor grammar school." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>A Tudor grammar school shaped by humanist learning.</figcaption>
+</figure>
+
 Not everyone shared in the new learning or the growing wealth. Many people were poor, and plague came back to London again and again. In 1601 Parliament passed a Poor Law that made each parish responsible for its own poor.
 
 ### Economic life
 
 In 1500 England was mainly a farming country that earned its money from wool. Raw wool and woollen cloth were its chief exports, and much of the cloth went through the great port of Antwerp. When landlords found that sheep paid better than crops, they fenced off their fields, a practice called enclosure, and turned farmland into pasture. The families who had worked that land lost their living and took to the roads. Thomas More saw this misery and wrote in *Utopia* that the sheep, once so gentle, had begun to eat up men.
+
+<figure class="article-illustration" data-illustration="enclosure">
+  <img src="/assets/articles/renaissance/enclosure.webp" alt="Representative Tudor landscape showing fenced sheep pasture beside cultivated strips and a family leaving along a track." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Enclosure changed the use of land and the lives of farming families.</figcaption>
+</figure>
 
 Prices rose through the century. Henry VIII paid for his wars by putting less silver into the coins, and later, silver from Spanish America poured into Europe. Wages did not rise as fast as prices, so many ordinary people grew poorer.
 
@@ -75,6 +100,11 @@ Merchants, meanwhile, grew rich and bold. Sir Thomas Gresham founded the Royal E
 Religion in this age was never a private matter. It decided who could rule, whom a king could marry, and sometimes who lived. In 1517 a German monk named Martin Luther began to attack the Pope's power and the sale of pardons, and his protest grew into the Reformation, which split Western Christianity into Catholic and Protestant. Henry VIII at first opposed Luther. He wrote a book against him in 1521, and the Pope thanked him with the title Defender of the Faith. Only a few years later Henry broke with the Pope himself, for his own reasons. But once the Pope's authority was gone, Protestant ideas flowed in.
 
 Reformers argued that every Christian should read the Bible in a language he understood. William Tyndale, a scholar who worked abroad because the English authorities were against him, printed an English New Testament in 1526, and copies were smuggled into England. He was strangled and burnt as a heretic in 1536. Yet in 1539 the Great Bible, built largely on the work of Tyndale and Miles Coverdale, was placed in the parish churches by order of the king. In 1549 Thomas Cranmer, the Archbishop of Canterbury, produced the Book of Common Prayer, a book of services in English whose rhythms entered the memory of the whole nation.
+
+<figure class="article-illustration" data-illustration="english-bible">
+  <img src="/assets/articles/renaissance/english-bible.webp" alt="Representative painting of Tudor parishioners gathering around a printed Bible on a wooden lectern." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Reading an English Bible in a Tudor parish church.</figcaption>
+</figure>
 
 Mary's reign reversed all this. Many Protestants fled abroad, and a group of exiles in Geneva produced the Geneva Bible in 1560, with study notes in the margins. It became the favourite Bible of English households. John Foxe, another exile, published a long history of the Protestant martyrs, *Acts and Monuments*, in English in 1563. It was read for generations and is often called the Book of Martyrs.
 
@@ -131,6 +161,11 @@ Sidney, meanwhile, was writing something new. Born in 1554 into a noble family, 
 
 Spenser himself had gone to Ireland in 1580 as secretary to the Lord Deputy, Lord Grey, and settled on land at Kilcolman. There he worked on a great poem for Elizabeth. In 1589 Sir Walter Raleigh visited him and urged him to bring it to London, and in 1590 the first three books of *The Faerie Queene* were printed, with three more in 1596. Spenser planned twelve books, each following a knight who stands for one virtue, but he finished only six. In the first, the Red Cross Knight, who stands for Holiness, travels with Una, who stands for Truth, to free her parents from a dragon. He is deceived on the way by the wizard Archimago and the false lady Duessa, and nearly loses himself before he wins. The poem is an allegory, a story in which characters and events stand for ideas, and the Faerie Queene, Gloriana, who sends the knights on their quests, stands for Elizabeth. Spenser invented a new nine-line stanza for it, now called the Spenserian stanza. In 1594 he married Elizabeth Boyle and wrote for her the sonnets of *Amoretti* and the wedding hymn *Epithalamion* (1595). In 1598 Irish rebels burned his castle, and he died in London in January 1599. He was buried in Westminster Abbey near Chaucer.
 
+<figure class="article-illustration" data-illustration="faerie-queene">
+  <img src="/assets/articles/renaissance/faerie-queene.webp" alt="Imagined painting of the Redcrosse Knight riding beside Una, with a distant dragon in the landscape." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from The Faerie Queene: the Redcrosse Knight and Una.</figcaption>
+</figure>
+
 The plague of 1592 and 1593 closed the London theatres, and writers who depended on them found no work. A young playwright named William Shakespeare turned to poetry and in 1593 published *Venus and Adonis*, a story from Ovid about a goddess who loves a boy who rejects her, dedicated to the Earl of Southampton. *The Rape of Lucrece* followed in 1594. Short narrative poems on classical, usually love, themes were the fashion, and are called epyllia. Christopher Marlowe's *Hero and Leander*, left unfinished at his death and completed by George Chapman, is the finest of them. Marlowe also wrote a famous shepherd's love song, which Raleigh answered with a poem in the voice of the nymph, and both appeared in the anthology *England's Helicon* (1600).
 
 ### Drama
@@ -143,11 +178,21 @@ For plays to grow, players needed a home. Companies of actors had long travelled
 
 The playhouse itself was simple. The Globe was open to the sky, with a stage that jutted into a yard where common people, the groundlings, stood for a penny. Wealthier people sat in covered galleries around the walls. Plays were acted in the afternoon by daylight with hardly any scenery, so the words had to paint the forest or the battlefield. Women did not act on the public stage, and boys played the women's parts.
 
+<figure class="article-illustration" data-illustration="elizabethan-theatre">
+  <img src="/assets/articles/renaissance/elizabethan-theatre.webp" alt="Representative painting of actors on a thrust stage before a standing audience in an open-air Elizabethan playhouse." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined performance in an Elizabethan open-air playhouse.</figcaption>
+</figure>
+
 The first great dramatists were young men from the universities, known as the University Wits: John Lyly, George Peele, Robert Greene, Thomas Nashe, Thomas Lodge and Christopher Marlowe. Thomas Kyd, who did not go to university, is often named with them. Lyly wrote witty comedies for the court. Greene wrote romantic comedies such as *Friar Bacon and Friar Bungay*, and in 1592, dying in poverty, he warned his fellow writers against an "upstart crow", usually taken to mean Shakespeare.
 
 Kyd's *The Spanish Tragedy*, from the late 1580s, set the pattern for revenge tragedy. A father, Hieronimo, hunts for justice for his murdered son, goes half mad, and takes his revenge through a play staged within the play, while a ghost watches the whole action. Audiences loved it, and later writers, Shakespeare among them, borrowed its devices.
 
 Marlowe changed what a play could sound like. He was born in Canterbury in 1564, the son of a shoemaker, and won a scholarship to Cambridge. His *Tamburlaine the Great* (about 1587) told how a shepherd from Central Asia became a world conqueror, and its proud, thundering blank verse showed what the form could do on the public stage. Ben Jonson later praised "Marlowe's mighty line". In *Doctor Faustus* a learned man, bored with ordinary knowledge, sells his soul to the devil for twenty-four years of power, and cannot repent when the time comes. The play borrows from the old morality plays, with its Good and Bad Angels, but its hero is a Renaissance man whose hunger for knowledge and power leads to his ruin. Marlowe also wrote *The Jew of Malta* and *Edward II*. In May 1593 the Privy Council questioned him, and ten days later he was stabbed to death in a quarrel at Deptford, aged twenty-nine.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="shakespeare">
+  <img src="/assets/articles/renaissance/shakespeare.webp" alt="Modern painted interpretation of William Shakespeare with a high forehead, dark doublet and white linen collar." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>William Shakespeare — modern painted interpretation.</figcaption>
+</figure>
 
 William Shakespeare was born in 1564 in Stratford-upon-Avon, the son of a glove-maker and town official. He probably attended the local grammar school, and he married Anne Hathaway in 1582. By 1592 he was in London, working as an actor and writer. When the plague closed the theatres that year he wrote poems, and when they reopened he joined the Lord Chamberlain's Men in 1594, and stayed with the company for the rest of his career. He was actor, playwright and shareholder, so the company's success was his own. His early plays learned from Marlowe: the history plays *Henry VI* and *Richard III*, and the tragedy *Titus Andronicus*. Soon he showed a range that no other writer had, with comedies such as *The Comedy of Errors*, *A Midsummer Night's Dream* and *Twelfth Night*, the tragedy *Romeo and Juliet*, *Julius Caesar*, and, around 1600, *Hamlet*. For his histories he used the *Chronicles* of Raphael Holinshed (1577), and for *Julius Caesar* Thomas North's English version of Plutarch (1579). By 1598 Francis Meres could name twelve of his plays in print and rank him the best English writer of both comedy and tragedy. His greatest tragedies, however, belong to the next age.
 
