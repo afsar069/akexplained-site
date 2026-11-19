@@ -6,11 +6,11 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
-## Header artwork update — 2026-11-19 (prepared, not merged)
+## Header artwork update — 2026-11-19
 - Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
 - The dashboard's top banner uses the same Daily image; its greeting panel remains intact.
 - British Literature reading articles keep their original age paintings, responsive layout and period-specific image variants (owner clarification, 2026-11-19). The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
-- This work has not been merged to `main`; production remains unchanged.
+- The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the non-article headers use the Daily artwork.
 
 ## START HERE — state on 2026-11-19
 - **The paid layer is LIVE and the pass is ON SALE.** Plan `all-access`: **Rs 199 per 30 days**, up to 6 periods, `active = true`
