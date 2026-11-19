@@ -135,6 +135,21 @@
   .examcard:hover .arrow{transform:translateX(3px)}
 }
 
+/* Sirf phone: har exam ek patli row, ek ke neeche ek. Desktop/Chrome par kuch nahi badalta. */
+.examcard .nm-short{display:none}
+@media(max-width:559px){
+  .examgrid{grid-template-columns:1fr;gap:9px}
+  .examcard{flex-direction:row;align-items:center;gap:12px;padding:7px 12px;border-radius:12px}
+  .examcard .ic{width:40px;height:40px;border-radius:12px;margin-bottom:0;flex:none}
+  .examcard .ic > img{width:34px;height:34px}
+  .examcard h3{flex:1;margin:0;font-size:.98rem}
+  .examcard .nm-full{display:none}
+  .examcard .nm-short{display:inline}
+  .examcard p{display:none}
+  .examcard .exam-cta{width:auto;margin:0;padding:0;background:none;color:var(--exam-accent)}
+  .examcard .cta-text{display:none}
+}
+
 /* ---------- Quizzes ---------- */
 .quizzone{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--cream),var(--bg) 65%,var(--teal-soft));border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .quizzone .sechead{flex-wrap:wrap;justify-content:space-between}
