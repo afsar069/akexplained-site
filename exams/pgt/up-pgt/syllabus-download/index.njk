@@ -1,26 +1,58 @@
 ---
 layout: pgt-layout.njk
-title: "Download Syllabus — UP PGT English"
-description: "Download the UP PGT English syllabus as a PDF. It is free and needs no login."
+title: "Download Syllabus — UP PGT"
+description: "Download the UP PGT syllabus PDFs: General Paper and English Literature. They are free and need no login."
 crumb_label: "Download Syllabus"
 pgt_resources: true
 ---
-{# Syllabus PDF repo me hi hai (assets/downloads/), Supabase me nahi: ye free hai, har koi le sakta hai (owner, 2026-11-19). #}
+{# Syllabus PDFs repo me hi hain (assets/downloads/), Supabase me nahi: ye free hain, har koi le sakta hai (owner, 2026-11-19). #}
+{# Do cards side by side: General Paper (left), English Literature (right). Naam owner ke diye hue hain; PDF me "Paper 1/2" likha nahi, isliye page par bhi nahi. #}
 <section class="pgt-download" aria-labelledby="pgt-download-title">
-  <img src="/assets/icons/tabler/file-download.svg" alt="" width="56" height="56">
   <p class="eyebrow">Free · No login needed</p>
-  <h2 id="pgt-download-title">UP PGT English syllabus</h2>
-  <p class="pgt-download-meta">Lecturer (PGT) – English, Subject Code 03 · PDF · 1 page · 358 KB</p>
-  <a class="pgt-download-btn" href="/assets/downloads/up-pgt-english-syllabus.pdf" download="UP-PGT-English-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="22" height="22">Download PDF</a>
-  <p class="pgt-download-read">Want to read it first? <a href="/assets/downloads/up-pgt-english-syllabus.pdf" target="_blank" rel="noopener">Open it in your browser</a>.</p>
+  <h2 class="pgt-download-main" id="pgt-download-title">Choose your syllabus</h2>
 
-  <h3>What is inside</h3>
-  <ul class="pgt-download-list">
-    <li><strong>Section 1 – Language:</strong> an unseen passage for comprehension, and language topics such as tenses, idioms and phrases, synonyms and antonyms, and one word substitution.</li>
-    <li><strong>Section 2 – Literature:</strong> six literary periods, from Renaissance &amp; Reformation to Modern, figures of speech, rhetoric and prosody, major stanza forms, types of novel and forms of drama, major literary critics, and authors and their contributions.</li>
-  </ul>
+  <div class="pgt-download-grid">
+    <article class="pgt-download-card" aria-labelledby="pgt-dl-general">
+      <div class="pgt-download-head">
+        <img src="/assets/icons/tabler/file-download.svg" alt="" width="44" height="44">
+        <h3 id="pgt-dl-general">General Paper Syllabus</h3>
+        <p class="pgt-download-meta">General Knowledge for TGT and PGT · 30 questions<br>PDF · 1 page · 305 KB</p>
+      </div>
+      <div class="pgt-download-get">
+        <a class="pgt-download-btn" href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" download="UP-PGT-General-Paper-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="22" height="22">Download PDF</a>
+        <p class="pgt-download-read">Want to read it first? <a href="/assets/downloads/up-tgt-pgt-general-knowledge-syllabus.pdf" target="_blank" rel="noopener">Open it in your browser</a>.</p>
+      </div>
+      <div class="pgt-download-inside">
+        <h4>What is inside</h4>
+        <ul>
+          <li><strong>Unit 1:</strong> Current Affairs.</li>
+          <li><strong>Unit 2:</strong> Indian History, Indian Polity, Indian Economy and Indian Geography.</li>
+          <li><strong>Unit 3:</strong> General Science, Information and Communication Technology.</li>
+        </ul>
+      </div>
+    </article>
 
-  <p class="pgt-download-note"><strong>About this file:</strong> The PDF carries the heading of the Uttar Pradesh Education Service Selection Commission, Prayagraj. This copy was taken from sarkariresult.com. AK Explained did not write or change it. For any later change, check the commission's own notices.</p>
+    <article class="pgt-download-card" aria-labelledby="pgt-dl-english">
+      <div class="pgt-download-head">
+        <img src="/assets/icons/tabler/file-download.svg" alt="" width="44" height="44">
+        <h3 id="pgt-dl-english">English Literature Syllabus</h3>
+        <p class="pgt-download-meta">Lecturer (PGT) – English, Subject Code 03<br>PDF · 1 page · 358 KB</p>
+      </div>
+      <div class="pgt-download-get">
+        <a class="pgt-download-btn" href="/assets/downloads/up-pgt-english-syllabus.pdf" download="UP-PGT-English-Literature-Syllabus.pdf"><img src="/assets/icons/feather/download.svg" alt="" width="22" height="22">Download PDF</a>
+        <p class="pgt-download-read">Want to read it first? <a href="/assets/downloads/up-pgt-english-syllabus.pdf" target="_blank" rel="noopener">Open it in your browser</a>.</p>
+      </div>
+      <div class="pgt-download-inside">
+        <h4>What is inside</h4>
+        <ul>
+          <li><strong>Section 1 – Language:</strong> an unseen passage for comprehension, and language topics such as tenses, idioms and phrases, synonyms and antonyms, and one word substitution.</li>
+          <li><strong>Section 2 – Literature:</strong> six literary periods, from Renaissance &amp; Reformation to Modern, figures of speech, rhetoric and prosody, major stanza forms, types of novel and forms of drama, major literary critics, and authors and their contributions.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+
+  <p class="pgt-download-note"><strong>About these files:</strong> Both PDFs carry the heading of the Uttar Pradesh Education Service Selection Commission, Prayagraj. These copies were taken from sarkariresult.com. AK Explained did not write or change them. For any later change, check the commission's own notices.</p>
 
   <div class="pgt-resource-coming-links">
     <a href="/exams/pgt/up-pgt/study-guide/">Read the UP PGT English study guide</a>
