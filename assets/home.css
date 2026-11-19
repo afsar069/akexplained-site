@@ -426,6 +426,24 @@
 .commcard .txt{min-width:0}
 .commcard h3{font-size:1.04rem;margin-bottom:1px;line-height:1.2}
 .commcard p{font-size:.83rem;margin:0}
+/* Sirf phone: Our Community bhi hari heading patti ke saath, har card ek patli row, ek ke neeche ek. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  #community{padding:22px 0}
+  #community .sechead{margin-bottom:12px}
+  #community .sechead::after,#community .sechead .more,#community .seclede{display:none}
+  #community .sechead h2{
+    width:100%;margin:0;padding:8px 14px;border-radius:10px;
+    background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
+  }
+  .commgrid{grid-template-columns:1fr;gap:9px}
+  .commcard{
+    gap:13px;padding:8px 12px;border-radius:12px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .commcard .ic{width:40px;height:40px;border-radius:12px}
+  .commcard h3{font-size:1rem}
+  .commcard p{font-size:.8rem}
+}
 
 /* ---------- Students say: carousel ---------- */
 #reviews{background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border)}
