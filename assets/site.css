@@ -196,138 +196,6 @@ strong{color:var(--ink)}
 .pagehead h1{font-family:var(--serif);color:var(--ink);font-weight:600;line-height:1.2;font-size:clamp(1.6rem,3.4vw,2.3rem);margin-bottom:10px;text-wrap:balance}
 .pagehead p.lede{font-family:var(--serif);font-size:clamp(.98rem,1.4vw,1.06rem);color:#3D4B59;max-width:62ch}
 
-/* ---------- Article hero artwork (Old English page) ----------
-   The age painting sits behind the page head on a wide screen, with a
-   cream scrim on the left so the heading reads on plain paper. On a
-   phone the same picture becomes a band above the heading. Only pages
-   that set hero_image + hero_class in their front matter get this. */
-.pagehead.hero-old-english{
-  min-height:clamp(320px,32vw,430px);
-  padding:44px 0 40px;
-}
-.hero-old-english .pagehead-art{
-  position:absolute;inset:0;z-index:0;
-  width:100%;height:100%;object-fit:cover;object-position:78% 46%;
-  pointer-events:none;user-select:none;
-  /* Halka fade: painting ka baaya kinara cream pagehead me ghol deta hai. */
-  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 30%);
-  mask-image:linear-gradient(to right,transparent 0,#000 30%);
-}
-.hero-old-english::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:linear-gradient(90deg,
-    rgba(250,245,233,.98) 0%,rgba(250,245,233,.94) 34%,
-    rgba(250,245,233,.58) 50%,rgba(250,245,233,0) 66%);
-}
-.hero-old-english > .wrap{position:relative;z-index:1}
-.hero-old-english .motif{display:none}
-.hero-old-english h1{max-width:520px}
-.hero-old-english p.lede{max-width:56ch}
-@media (max-width:760px){
-  .pagehead.hero-old-english{display:block;min-height:0;padding:0}
-  .hero-old-english .pagehead-art{
-    position:relative;inset:auto;
-    width:100%;height:clamp(170px,46vw,230px);
-    object-position:100% 40%;
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-  }
-  .hero-old-english::after{
-    bottom:auto;height:clamp(170px,46vw,230px);
-    background:linear-gradient(180deg,
-      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
-  }
-  .hero-old-english > .wrap{padding:18px 22px 28px}
-  .hero-old-english h1{max-width:none}
-}
-
-/* ---------- Article hero artwork (Middle English page) ----------
-   Same pattern as the Old English head: the age painting sits behind
-   the page head on a wide screen with a cream scrim on the left so the
-   heading reads on plain paper, and becomes a band above the heading on
-   a phone. This painting already has blank parchment down its left side,
-   so the fade can start a little further out. Only pages that set
-   hero_image + hero_class in their front matter get this. */
-.pagehead.hero-middle-english{
-  min-height:clamp(320px,32vw,430px);
-  padding:44px 0 40px;
-}
-.hero-middle-english .pagehead-art{
-  position:absolute;inset:0;z-index:0;
-  width:100%;height:100%;object-fit:cover;object-position:88% 48%;
-  pointer-events:none;user-select:none;
-  /* Halka fade: painting ka baaya kinara cream pagehead me ghol deta hai. */
-  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 26%);
-  mask-image:linear-gradient(to right,transparent 0,#000 26%);
-}
-.hero-middle-english::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:linear-gradient(90deg,
-    rgba(250,245,233,.97) 0%,rgba(250,245,233,.93) 36%,
-    rgba(250,245,233,.55) 52%,rgba(250,245,233,0) 68%);
-}
-.hero-middle-english > .wrap{position:relative;z-index:1}
-.hero-middle-english .motif{display:none}
-.hero-middle-english h1{max-width:520px}
-.hero-middle-english p.lede{max-width:56ch}
-@media (max-width:760px){
-  .pagehead.hero-middle-english{display:block;min-height:0;padding:0}
-  .hero-middle-english .pagehead-art{
-    position:relative;inset:auto;
-    width:100%;height:clamp(170px,46vw,230px);
-    object-position:84% 42%;
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-  }
-  .hero-middle-english::after{
-    bottom:auto;height:clamp(170px,46vw,230px);
-    background:linear-gradient(180deg,
-      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
-  }
-  .hero-middle-english > .wrap{padding:18px 22px 28px}
-  .hero-middle-english h1{max-width:none}
-}
-
-/* Additional literary ages use the same article hero layout. */
-.pagehead.hero-age{
-  min-height:clamp(320px,32vw,430px);
-  padding:44px 0 40px;
-}
-.hero-age .pagehead-art{
-  position:absolute;inset:0;z-index:0;
-  width:100%;height:100%;object-fit:cover;object-position:88% 48%;
-  pointer-events:none;user-select:none;
-  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 26%);
-  mask-image:linear-gradient(to right,transparent 0,#000 26%);
-}
-.hero-age::after{
-  content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
-  background:linear-gradient(90deg,
-    rgba(250,245,233,.97) 0%,rgba(250,245,233,.93) 36%,
-    rgba(250,245,233,.55) 52%,rgba(250,245,233,0) 68%);
-}
-.hero-age > .wrap{position:relative;z-index:1}
-.hero-age .motif{display:none}
-.hero-age h1{max-width:520px}
-.hero-age p.lede{max-width:56ch}
-@media (max-width:760px){
-  .pagehead.hero-age{display:block;min-height:0;padding:0}
-  .hero-age .pagehead-art{
-    position:relative;inset:auto;
-    width:100%;height:clamp(170px,46vw,230px);
-    object-position:84% 42%;
-    -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-    mask-image:linear-gradient(to bottom,#000 0,#000 74%,transparent 100%);
-  }
-  .hero-age::after{
-    bottom:auto;height:clamp(170px,46vw,230px);
-    background:linear-gradient(180deg,
-      rgba(250,245,233,0) 55%,rgba(250,245,233,.5) 80%,rgba(250,245,233,.96) 100%);
-  }
-  .hero-age > .wrap{padding:18px 22px 28px}
-  .hero-age h1{max-width:none}
-}
-
 .crumb{font-size:.82rem;color:var(--body);padding:12px 0 0}
 .crumb a{color:var(--teal)}
 .crumb span{opacity:.6;padding:0 6px}
@@ -1232,22 +1100,12 @@ summary.ptbtn::-webkit-details-marker{display:none}
   .mcq-modes,.mcq-exams,.mcq-top,.mcq-build{display:none !important}
 }
 
-/* ---------- practice pages: painted header ----------
-   Used by Quizzes (Daily, MCQ Practice, PYQ and Mock Tests share the Daily picture below). The picture sits at 80%
-   opacity and fades out at the bottom edge, into the page below. It replaces
-   the small motif, which the build only adds to a plain .pagehead. */
+/* Existing illustrated page heads share the Daily artwork and responsive sizing. */
 .pagehead-practice::before{
   content:"";position:absolute;inset:0;pointer-events:none;
-  background:var(--head-pic,url("/assets/practice-head.webp")) right center/cover no-repeat;
-  opacity:.8;
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
-  mask-image:linear-gradient(to bottom,#000 0,#000 55%,transparent 100%);
+  background:var(--head-pic) right center/cover no-repeat;
 }
 .pagehead-practice{border-bottom-color:transparent}
-@media (max-width:760px){
-  /* on a narrow screen the text sits over the picture, so keep it light */
-  .pagehead-practice::before{opacity:.4;background-position:right bottom}
-}
 
 /* The MCQ Practice page (/quizzes/mcq/) uses the Daily head below (.pagehead-daily): same picture, same title size. */
 
@@ -1272,15 +1130,15 @@ summary.ptbtn::-webkit-details-marker{display:none}
    ends in a soft cream curve that fades into the page below.
    (The file names carry no version in the CSS, so a new picture gets a new name;
    browsers keep an old picture under the old name.) */
-.pagehead-daily,.pagehead-daily-art{
+.pagehead-practice{
   --head-pic:url("/assets/daily-header.webp");
   --head-w:calc(min(100vw,var(--maxw)) - 44px);
   min-height:max(300px,calc(var(--head-w) / 3));
 }
 @media (min-width:1024px){                        /* the menu stands beside the page */
-  .pagehead-daily,.pagehead-daily-art{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
+  .pagehead-practice{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
 }
-.pagehead-daily::before,.pagehead-daily-art::before{
+.pagehead-practice::before{
   inset:0;margin:0 auto;width:min(calc(100% - 44px),calc(var(--maxw) - 44px));
   opacity:1;background-size:cover;background-position:center bottom;
   /* sides: a short fade in at the left (a little of the painted books and castle stays
@@ -1293,16 +1151,27 @@ summary.ptbtn::-webkit-details-marker{display:none}
 /* Under about 1000px of head the words would run into the quote, so the quote
    fades out and the girl and her books stay on the right. */
 @media (max-width:1271px){
-  .pagehead-daily::before,.pagehead-daily-art::before{
+  .pagehead-practice::before{
     -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
     mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%),linear-gradient(to right,transparent 0,transparent 60%,#000 74%,#000 95%,transparent 100%);
   }
 }
 @media (max-width:760px){
   /* on a phone the picture is smaller and sits faintly behind the words */
-  .pagehead-daily,.pagehead-daily-art{--head-pic:url("/assets/daily-header-sm.webp");min-height:0}
-  .pagehead-daily::before,.pagehead-daily-art::before{opacity:.32;background-size:auto 130%;background-position:right bottom;-webkit-mask-image:none;mask-image:none}
+  .pagehead-practice{--head-pic:url("/assets/daily-header-sm.webp");min-height:0}
+  .pagehead-practice::before{opacity:.32;background-size:auto 130%;background-position:right bottom;-webkit-mask-image:none;mask-image:none}
 }
+@media (min-width:761px){
+  .pagehead-practice h1,.pagehead-practice .lede,
+  .pagehead-practice .agehead-sub,.pagehead-practice .metarow{
+    max-width:calc(var(--head-w) * .58);
+  }
+  .pagehead-practice .agehead-row{align-items:flex-start;flex-direction:column}
+}
+@media (min-width:1272px){
+  .pagehead-practice h1{max-width:calc(var(--head-w) * .44)}
+}
+@media print{.pagehead-practice::before{display:none}}
 .pagehead-daily .eyebrow{color:var(--body);letter-spacing:.24em}
 .pagehead-daily h1{
   font-size:clamp(2.5rem,6.2vw,4.3rem);line-height:1.04;font-weight:700;
@@ -1311,47 +1180,6 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .pagehead-daily h1 em{font-style:normal;color:#A9741F}
 .pagehead-daily p.lede{
   font-size:clamp(1.02rem,1.7vw,1.25rem);line-height:1.38;max-width:27em;
-}
-
-/* ---------- English Literature page header ----------
-   Daily MCQ jaisa hi: 3 : 1 ki chaudi tasveer (2000 x 668; phone ke liye 1000 x 334), head ki unchai
-   chaudai ka teesra hissa. Tasveer ka background safed hai, isliye multiply se wo cream kagaz me ghul jaata hai.
-   Daily wali side-fade yahan nahi, kyunki tasveer ka bayan hissa khaali hai aur daayen hisse me hi sab kuch hai.
-   (File ka naam badle to CSS me naya naam do; browser purani file naam se yaad rakhta hai.) */
-.pagehead-lit{
-  --head-pic:url("/assets/literature-header.webp");
-  --head-w:calc(min(100vw,var(--maxw)) - 44px);
-  min-height:max(300px,calc(var(--head-w) / 3));
-}
-@media (min-width:1024px){
-  .pagehead-lit{--head-w:calc(min(100vw - var(--navw),var(--maxw)) - 44px)}
-}
-.pagehead-lit::before{
-  inset:0;margin:0 auto;width:min(calc(100% - 44px),calc(var(--maxw) - 44px));
-  opacity:1;background-size:cover;background-position:right bottom;   /* bahut patle head me khaali bayen hisse se kate, daayen chehre nahi */
-  mix-blend-mode:multiply;
-  -webkit-mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
-  mask-image:linear-gradient(to bottom,#000 0,#000 93%,transparent 100%);
-}
-@media (max-width:760px){
-  .pagehead-lit{--head-pic:url("/assets/literature-header-sm.webp");min-height:0}
-  .pagehead-lit::before{opacity:.3;background-size:auto 130%;background-position:right bottom}
-}
-.pagehead-lit .eyebrow{color:var(--body);letter-spacing:.24em}
-.pagehead-lit h1{
-  font-size:clamp(2.2rem,5.4vw,3.6rem);line-height:1.06;font-weight:700;
-  margin-bottom:12px;
-}
-.pagehead-lit h1 em{font-style:normal;color:#A9741F}
-.pagehead-lit p.lede{
-  font-size:clamp(1rem,1.5vw,1.15rem);line-height:1.4;max-width:30em;
-}
-/* Badi screen par tasveer daayen 55% me hai, isliye likhai bayen 44% me rakhi hai aur
-   size head ki chaudai (--head-w) se chalta hai, taaki kisi width par tasveer par na chadhe. */
-@media (min-width:761px){
-  .pagehead-lit .eyebrow,.pagehead-lit h1,.pagehead-lit p.lede{max-width:calc(var(--head-w) * .44)}
-  .pagehead-lit h1{font-size:max(1.9rem,calc(var(--head-w) * .056))}
-  .pagehead-lit p.lede{font-size:max(.92rem,min(1.15rem,calc(var(--head-w) * .0165)))}
 }
 
 /* ---------- Choose a Topic ---------- */
@@ -1494,41 +1322,22 @@ a.dq-card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,48,74,.
    zaroori hai, warna JS se chhupaya hissa phir bhi dikh jata hai. */
 .agehub-body [hidden]{display:none !important}
 
-/* ---------- age ka rangeen banner ---------- */
-.agehead{
-  --age:#3F5165;
-  position:relative;padding:30px 0 34px;overflow:hidden;
-  background:var(--age);color:#fff;
-}
-/* Age ki painting banner ke daayein kinare par, bahut halki.
-   Text ke neeche se fade ho jaati hai taaki padhne me dikkat na ho. */
-.agehead::before{
-  content:"";position:absolute;inset:0;pointer-events:none;
-  background:var(--agepic) right center/cover no-repeat;opacity:.26;
-  -webkit-mask-image:linear-gradient(to right,transparent 0,#000 55%);
-  mask-image:linear-gradient(to right,transparent 0,#000 55%);
-}
-.agehead > .wrap{position:relative}
-.agehead .eyebrow{color:rgba(255,255,255,.82)}
-.agehead h1{
-  font-family:var(--serif);font-weight:600;color:#fff;
-  font-size:clamp(1.75rem,3.6vw,2.4rem);line-height:1.15;margin-bottom:8px;text-wrap:balance;
-}
+/* Period headers share the Daily artwork; keep their notes action readable. */
 .agehead-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px}
 .agehead-sub{
   font-family:var(--serif);font-size:clamp(.98rem,1.4vw,1.06rem);
-  color:rgba(255,255,255,.88);margin:0;max-width:52ch;
+  color:var(--body);margin:0;max-width:52ch;
 }
 .agehead-btn{
   flex:none;display:inline-flex;align-items:center;gap:7px;
-  font-size:.95rem;font-weight:600;color:#fff;
-  border:1.5px solid rgba(255,255,255,.42);background:rgba(255,255,255,.08);
+  font-size:.95rem;font-weight:600;color:var(--teal-dark);
+  border:1.5px solid var(--border);background:var(--cream);
   padding:11px 20px;border-radius:11px;
   transition:background .2s,border-color .2s,transform .2s;
 }
 .agehead-btn:hover{
-  color:#fff;background:rgba(255,255,255,.17);
-  border-color:rgba(255,255,255,.7);transform:translateY(-2px);
+  color:var(--teal-dark);background:#fff;
+  border-color:var(--teal);transform:translateY(-2px);
 }
 
 /* ---------- page ka body ---------- */
@@ -3461,14 +3270,14 @@ body:has(.dashtop) .homebar{display:none}
   .dashtop-user svg{display:none}
 }
 
-/* The dashboard header: the banner painting (with Prof. AK's own quote
-   baked into it) and, under it, the greeting, the four steps and the path. */
+/* The dashboard reuses the Daily banner above its existing greeting panel. */
 .dashhero{
   background:var(--card-paper);border:1px solid var(--card-line);
   border-radius:18px;padding:0;margin:0 0 20px;overflow:hidden;
   box-shadow:0 10px 30px -22px rgba(22,48,74,.5);
 }
 .dashhero-banner{display:block;line-height:0;background:var(--cream)}
+.dashhero-banner picture{display:block}
 .dashhero-banner img{display:block;width:100%;height:auto}
 /* Saara text ek hi panel par, beech me — bikhra hua na lage. Panel ki
    painting (sunehri kinara aur bel-boote) assets/dash-box.webp me hai, isliye

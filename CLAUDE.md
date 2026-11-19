@@ -53,7 +53,7 @@ breaking it breaks a promise already made.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
-  footer, page-head motif and `nav.js` into every built page
+  footer, the shared Daily artwork for existing illustrated page heads, and `nav.js` into every built page
 
 The list of literary periods (20, from Old English to Postmodern) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
@@ -259,8 +259,7 @@ and never ask the owner for it.**
   stays `disabled` with no dot while the student has **no** notification at all, wakes up once there is one, and
   shows a dot with the unread count only while some are unread; opening the panel writes `notification_reads` so
   the count clears on every device. Never show a dot or count with nothing real behind it. An admin sends the
-  messages from `/admin/notify/`. The header is two pictures and nothing else to edit: `assets/dash-banner.webp`
-  (the wide painting, 2268x494, shown at 1134x247) and `assets/dash-box.webp` (the panel the centred
+  messages from `/admin/notify/`. The header uses the shared Daily banner (`assets/daily-header.webp`, with `daily-header-sm.webp` on phones; owner, 2026-11-19) and `assets/dash-box.webp` (the panel the centred
   greeting sits on, 1988x422, stretched — art at the two ends, middle clear, **no frame in the picture**:
   the gold frame is a 1px CSS border; the picture stays at every width, the type just steps down on a
   phone). The name is **Playfair Display italic 700** (the owner's pick, 2026-11-06) — changing it

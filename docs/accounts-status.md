@@ -6,6 +6,12 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
+## Header artwork update — 2026-11-19 (prepared, not merged)
+- Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: article heads, quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
+- The dashboard's top banner uses the same Daily image; its greeting panel remains intact.
+- The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
+- This work has not been merged to `main`; production remains unchanged.
+
 ## START HERE — state on 2026-11-19
 - **The paid layer is LIVE and the pass is ON SALE.** Plan `all-access`: **Rs 199 per 30 days**, up to 6 periods, `active = true`
   (the owner set both on `/admin/payments/`). All 48 papers (64 `mcq_papers` rows) are `access = 'paid'`, none is `login`.

@@ -163,10 +163,7 @@
 {% endif %}
 
 {% if pagehead != false %}
-<section class="pagehead{% if hero_class %} {{ hero_class }}{% endif %}">
-  {% if hero_image %}<img class="pagehead-art" src="{{ hero_image }}" alt="" width="2086" height="754" fetchpriority="high" decoding="async" aria-hidden="true">{% endif %}
-  <img class="motif" src="/assets/reader-motif.webp" alt="" width="440" height="525" aria-hidden="true">
-  <span class="mark" aria-hidden="true">{{ mark or title | first | upper }}</span>
+<section class="pagehead pagehead-practice">
   <div class="wrap">
     <p class="eyebrow">{{ eyebrow or title }}</p>
     <h1>{{ title }}</h1>
@@ -199,21 +196,6 @@
     </div>
   </div>
 </section>
-{% if hero_variants %}
-<template id="age-hero-variants">
-  {% for variant in hero_variants %}<span data-age="{{ variant.age }}" data-image="{{ variant.image }}"></span>{% endfor %}
-</template>
-<script>
-  (() => {
-    const age = new URLSearchParams(window.location.search).get('age');
-    if (!age) return;
-    const variants = document.getElementById('age-hero-variants').content.querySelectorAll('span');
-    const variant = Array.from(variants).find(item => item.dataset.age === age);
-    const artwork = document.querySelector('.pagehead-art');
-    if (variant && artwork) artwork.src = variant.dataset.image;
-  })();
-</script>
-{% endif %}
 {% endif %}
 
 <div class="wrap">

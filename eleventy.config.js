@@ -83,13 +83,10 @@ module.exports = function (eleventyConfig) {
       out = out.slice(0, fStart) + NEW_FOOTER + out.slice(fEnd + "</footer>".length);
     }
 
-    // Har page ke pagehead me wahi halka floral motif lagao, taaki hub pages
-    // aur article pages dono par brand ka ek jaisa feel rahe.
-    const MOTIF = '<img class="motif" src="/assets/reader-motif.webp" alt="" ' +
-                  'width="440" height="525" aria-hidden="true">';
-    if (out.includes('<section class="pagehead">') && !out.includes('class="motif"')) {
-      out = out.replace('<section class="pagehead">', '<section class="pagehead">\n  ' + MOTIF);
-    }
+    // Plain page heads previously received reader-motif.webp here. Keep the
+    // same set of pages, using the Daily header's shared artwork and sizing.
+    out = out.replace('<section class="pagehead">',
+      '<section class="pagehead pagehead-practice">');
 
     // Sidebar ko chalane ke liye nav.js chahiye. Purane pages me wo tag nahi hai,
     // isliye yahan jod dete hain — tabhi mobile ka hamburger aur submenu kaam karega.
