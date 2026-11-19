@@ -10,6 +10,11 @@ module.exports = function () {
   const n = net.length;
   // How many need a login, so the card says it plainly (the free 2012 papers are open to all).
   const loginN = net.filter(function (p) { return p.access === "login"; }).length;
+  // UP PGT English PYQs (rule 23): free, read from _data/pgtPyqPapers.js so a new year changes the card by itself.
+  const pgt = require("./pgtPyqPapers.js")();
+  const pgtYears = pgt.map(function (p) { return p.year; });
+  const pgtN = pgt.length;
+  const pgtSpan = Math.min.apply(null, pgtYears) === Math.max.apply(null, pgtYears) ? String(pgtYears[0]) : Math.min.apply(null, pgtYears) + "–" + Math.max.apply(null, pgtYears);
   const paid = require("./paidLayer.js").live;            // rule 22: launch switch
   const gate = paid ? "the All Access pass" : "a free login";
   const access = loginN === 0 ? "Free, no login"
@@ -27,10 +32,12 @@ module.exports = function () {
     },
     {
       slug: "pgt",
-      title: "PGT English",
+      title: "UP PGT English",
       icon: "layers",
-      blurb: "Previous-year papers for PGT English will be added here.",
-      live: false
+      blurb: "Real UP PGT English papers as an online test, with a clock and a full review.",
+      meta: pgtN + " paper" + (pgtN === 1 ? "" : "s") + " · " + pgtSpan + " · Free, no login",
+      href: "/exams/pgt/up-pgt/pyqs/",
+      live: true
     },
     {
       slug: "tgt",

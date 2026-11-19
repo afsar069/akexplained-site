@@ -780,7 +780,8 @@
     var all = paper.questions.length;
     /* Doosre level ke sawal pool me tabhi, jab link ke ?n= ne is level se bada maanga ho (p.more). */
     var pool = all + (p.more && papers[p.more] ? papers[p.more].questions.length : 0);
-    var qmax = Math.min(CHOICE_Q_MAX, pool);
+    /* PYQ = ek asli exam paper: poora paper chunna ho sakta hai, chahe 100 se bada ho (UP PGT 2006 me 122 sawal hain). */
+    var qmax = Math.min(PYQ ? Math.max(CHOICE_Q_MAX, pool) : CHOICE_Q_MAX, pool);
     var qmin = Math.min(CHOICE_Q_MIN, qmax);
     var n = clamp(p.n, qmin, qmax);
     /* Link me ?t= ho to wahi waqt aur uski raftaar; warna default raftaar. */
@@ -1868,7 +1869,9 @@
               esc(o.name) + '</a><span>' + o.right + ' of ' + o.total + ' here</span></li>';
           }).join('') +
           (EXAM_MOCK
-            ? (PYQ ? '<li><a href="/exams/net/syllabus/">NET English syllabus</a><span>See what each unit covers</span></li>'
+            ? (PYQ ? (root.getAttribute('data-suggest-href')
+                ? '<li><a href="' + esc(root.getAttribute('data-suggest-href')) + '">' + esc(root.getAttribute('data-suggest-label') || 'Syllabus') + '</a><span>' + esc(root.getAttribute('data-suggest-note') || 'See what is covered') + '</span></li>'
+                : '<li><a href="/exams/net/syllabus/">NET English syllabus</a><span>See what each unit covers</span></li>')
               : root.hasAttribute('data-exam-home') ? ''
               : '<li><a href="/exams/pgt/up-pgt/study-guide/">UP PGT English study guide</a><span>General English study guidance</span></li>')
             : '<li><a href="' + esc(paper.notes || '/notes/') + '#quick-revision-50-points">' +

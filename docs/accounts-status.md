@@ -18,6 +18,11 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
 - The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the other illustrated headers use the Daily artwork, except the dashboard.
 
 ## START HERE — state on 2026-11-19
+- **UP PGT English PYQs, on branch `claude/wonderful-hawking-5kvei0`, not merged yet:** `/exams/pgt/up-pgt/pyqs/` lists papers year by year (free, no login, CLAUDE.md rule 23).
+  First paper: **2006**, 122 of 125 questions (Q84, Q111, Q119 left out because their options are damaged in the supplied copy; the owner may send the originals).
+  Tagged with master topics (language questions have no period), one key changed (Q118) and a few explanations corrected after web checks; audit trail in
+  `tools/pyq/decisions/up-pgt-english-2006-notes.md`. The PYQ front door `/quizzes/pyq/` now has a live **UP PGT English** card. A small English disclaimer sits at the
+  bottom of the hub and the test pages ("we corrected the doubtful ones ourselves, we are not responsible if anything is wrong").
 - **Download Syllabus (UP PGT), on branch `claude/modest-tesla-u0ryql`, not merged yet:** `/exams/pgt/up-pgt/syllabus-download/` is a real page with two side-by-side
   one-click PDF downloads: General Paper Syllabus (TGT/PGT General Knowledge) and English Literature Syllabus. Free, no login, files in `assets/downloads/`, not in Supabase.
   The hub card shows "Free PDFs" + Open. See CLAUDE.md rule 3.

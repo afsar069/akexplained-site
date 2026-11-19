@@ -1,0 +1,2172 @@
+{
+ "setId": "up-pgt-english-2006",
+ "rev": 1,
+ "ageName": "UP PGT English",
+ "setName": "2006 paper",
+ "level": "medium",
+ "levelName": "Full paper",
+ "title": "UP PGT English 2006 paper",
+ "exam": "UP PGT",
+ "subject": "English",
+ "paper": "English",
+ "session": "2006",
+ "topics": {
+  "british": "British Literature",
+  "american": "American Literature",
+  "indian": "Indian Writing in English",
+  "terms": "Literary Terms",
+  "language": "English Language and Usage"
+ },
+ "topicRead": {},
+ "passages": [
+  {
+   "id": "p1",
+   "title": "Questions 112 to 117",
+   "attribution": "The passage is shortened in our copy of the paper.",
+   "text": "The expression 'the rule of law' relates to human association. It purports to stand for human beings associated in terms of the recognition of certain conditions of association, namely 'laws'; human beings joined in an exclusive, specifiable mode of relationship...\n\nIn short, while persons may have (and, indeed, be largely composed of) a variety of different kinds of relationships with others and move between them without confusion, the subject in a mode of relationship is always the abstraction, a persona, a person in respect of being related to others in terms of distinct and exclusive conditions. And the 'rule of law', standing for a mode of relationship, identifies a persona related to others of the same modal character.\n\nSecondly, in spite of their modal diversity, all human relationships have a common character. Human beings are intelligent agents and the terms of all or any of the relationships they enjoy are beliefs and recognitions... Practice precedes the reflection in which its modal character is formulated.",
+   "src": "UP PGT English 2006"
+  }
+ ],
+ "questions": [
+  {
+   "id": "up-pgt-english-2006-q001",
+   "questionNumber": 1,
+   "question": "\"Let knowledge grow from more to more But more of reverence in us dwell\" In which poem of Tennyson do we find the above quoted lines?",
+   "options": [
+    "Ulysses",
+    "Morte d'Arthur",
+    "In Memoriam",
+    "Locksley Hall"
+   ],
+   "correct_option_id": 2,
+   "explanation": "These lines come from the Prologue of Alfred, Lord Tennyson's elegy 'In Memoriam A.H.H.' (1850).",
+   "topic": "british",
+   "topicId": "in-memoriam",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q002",
+   "questionNumber": 2,
+   "question": "Who is the most furious character in Fagin's Den in Dickens' Oliver Twist?",
+   "options": [
+    "Dodger",
+    "Chitling",
+    "Bates",
+    "Bill Sikes"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Bill Sikes is the brutally violent and ferocious housebreaker and thief associated with Fagin's gang in Charles Dickens' 'Oliver Twist'.",
+   "topic": "british",
+   "topicId": "oliver-twist",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q003",
+   "questionNumber": 3,
+   "question": "What can be the best explanation for the character of John Falstaff in Shakespeare's Henry IV?",
+   "options": [
+    "Simple",
+    "Complex",
+    "Novice",
+    "Caricature"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir John Falstaff is widely celebrated by literary critics (including Maurice Morgann and A. C. Bradley) as one of Shakespeare's most multifaceted and psychologically complex comic creations.",
+   "topic": "british",
+   "topicId": "henry-iv",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q004",
+   "questionNumber": 4,
+   "question": "In which play of Shakespeare do the characters 'Voltemand' and 'Cornelius' appear?",
+   "options": [
+    "The Merchant of Venice",
+    "Hamlet",
+    "Much Ado About Nothing",
+    "Macbeth"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Voltemand and Cornelius are Danish courtiers dispatched by King Claudius as ambassadors to Norway in Act I of Shakespeare's 'Hamlet'.",
+   "topic": "british",
+   "topicId": "hamlet",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q005",
+   "questionNumber": 5,
+   "question": "Keats' poetry is \"abundantly and enchantingly sensuous\". Who has made this comment about the poetry of Keats?",
+   "options": [
+    "Matthew Arnold",
+    "H. W. Garrod",
+    "Middleton Murry",
+    "Oliver Elton"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Matthew Arnold wrote this about Keats in his critical essay on the poet.",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q006",
+   "questionNumber": 6,
+   "question": "\"No nightingale did ever chaunt / More welcome notes to weary bands / Of travellers in some shady haunt / Among Arabian sands\" Wherefrom the above quoted lines of Wordsworth are taken?",
+   "options": [
+    "Solitary Reaper",
+    "Ode to a Nightingale",
+    "To the Cuckoo",
+    "To a Skylark"
+   ],
+   "correct_option_id": 0,
+   "explanation": "These lyrical lines form the second stanza of William Wordsworth's celebrated poem 'The Solitary Reaper' (composed 1805, published 1807).",
+   "topic": "british",
+   "topicId": "the-solitary-reaper",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q007",
+   "questionNumber": 7,
+   "question": "In which famous poem does Walt Whitman make a reference to Suez Canal and wire line across the Atlantic?",
+   "options": [
+    "O Captain, My Captain!",
+    "Passage to India",
+    "Earth My Likeness",
+    "Prayer of Columbus"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Passage to India' (1871), Whitman celebrates three great modern engineering triumphs: the Suez Canal, the Union Pacific Transcontinental Railroad, and the Atlantic telegraph cable.",
+   "topic": "american",
+   "topicId": "walt-whitman",
+   "periodId": "american-renaissance",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q008",
+   "questionNumber": 8,
+   "question": "Which of the following is the first poem of Eliot's first published volume of verse?",
+   "options": [
+    "The Waste Land",
+    "The Hollow Men",
+    "The Love Song of J. Alfred Prufrock",
+    "Gerontion"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'The Love Song of J. Alfred Prufrock' was the opening poem in T. S. Eliot's landmark first poetry collection, 'Prufrock and Other Observations' (1917).",
+   "topic": "british",
+   "topicId": "the-love-song-of-j-alfred-prufrock",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q009",
+   "questionNumber": 9,
+   "question": "The term 'essay' is the derivative of the French root 'essai', which means:",
+   "options": [
+    "to compose",
+    "to go on a walk",
+    "to try",
+    "to express"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The term originates from the French infinitive 'essayer' (meaning to attempt, trial, or try), first applied to literature by Michel de Montaigne in 1580.",
+   "topic": "terms",
+   "topicId": "essay-genre",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q010",
+   "questionNumber": 10,
+   "question": "Matthew Arnold's Rugby Chapel commemorates :",
+   "options": [
+    "the death of his father",
+    "the death of his friend",
+    "the death of a girl",
+    "the death of his relative"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Rugby Chapel' is Matthew Arnold's elegy for his father, Dr. Thomas Arnold, the famous headmaster of Rugby School.",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q011",
+   "questionNumber": 11,
+   "question": "Who has written the essay, 'The Old Benchers of the Inner Temple' ?",
+   "options": [
+    "Hazlitt",
+    "Bacon",
+    "Charles Lamb",
+    "Matthew Arnold"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'The Old Benchers of the Inner Temple' is one of the nostalgic personal essays published in Charles Lamb's 'Essays of Elia' (1823).",
+   "topic": "british",
+   "topicId": "charles-lamb",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q012",
+   "questionNumber": 12,
+   "question": "Ernest Hemingway's Men at War is:",
+   "options": [
+    "a novel",
+    "a collection of short stories",
+    "an essay",
+    "an autobiography"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Men at War: The Best War Stories of All Time' (1942) is an anthology of war literature and stories edited with an extensive introduction by Ernest Hemingway.",
+   "topic": "american",
+   "topicId": "ernest-hemingway",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q013",
+   "questionNumber": 13,
+   "question": "\"The analogy was that of the catalyst. When the two gases, previously mentioned, are mixed in the presence of a filament of platinum, they form sulphurous acid... The mind of the poet is the shred of platinum.\" The above lines are an extract from T. S. Eliot's essay:",
+   "options": [
+    "Hamlet and his Problems",
+    "The Perfect Critic",
+    "The Imperfect Critic",
+    "Tradition and Individual Talent"
+   ],
+   "correct_option_id": 3,
+   "explanation": "This famous platinum catalyst analogy appears in Part II of T. S. Eliot's seminal critical essay 'Tradition and the Individual Talent' (1919) to elucidate his Impersonal Theory of Poetry.",
+   "topic": "british",
+   "topicId": "tradition-and-the-individual-talent",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q014",
+   "questionNumber": 14,
+   "question": "Point out the figure of speech in the following line: \"The ploughman homeward plods his weary way.\"",
+   "options": [
+    "Metaphor",
+    "Personification",
+    "Transferred Epithet",
+    "Hyperbole"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Thomas Gray's 'Elegy Written in a Country Churchyard', the adjective 'weary' logically belongs to the ploughman but is transferred to the 'way' (Transferred Epithet / Hypallage).",
+   "topic": "terms",
+   "topicId": "transferred-epithet",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q015",
+   "questionNumber": 15,
+   "question": "To which character in Shakespeare's 'Hamlet' does the following description apply? \"the tedious wiseacre who meddles his way to his doom\"",
+   "options": [
+    "Claudius",
+    "Hamlet",
+    "Polonius",
+    "Rosencrantz"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Polonius, the Lord Chamberlain of Claudius's court, is a verbose, meddlesome old counsellor who eavesdrops behind the arras and is accidentally slain by Hamlet.",
+   "topic": "british",
+   "topicId": "hamlet",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q016",
+   "questionNumber": 16,
+   "question": "Who wrote Sohrab and Rustum?",
+   "options": [
+    "Wordsworth",
+    "Swinburne",
+    "Matthew Arnold",
+    "Tennyson"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Sohrab and Rustum' (1853) is a celebrated narrative poem in blank verse by Matthew Arnold, drawn from the Persian epic 'Shahnameh' by Ferdowsi.",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q017",
+   "questionNumber": 17,
+   "question": "Who praised Shakespeare thus ? \"Others abide our question thou art free We ask and ask-Thou smilest and art still\"",
+   "options": [
+    "Dr. Johnson",
+    "Matthew Arnold",
+    "Coleridge",
+    "T. S. Eliot"
+   ],
+   "correct_option_id": 1,
+   "explanation": "These are the memorable opening lines of Matthew Arnold's sonnet entitled 'Shakespeare' (published in 1849).",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q018",
+   "questionNumber": 18,
+   "question": "Who is 'Thyrsis' in the poem of the same name?",
+   "options": [
+    "Percy Bysshe Shelley",
+    "Arthur Hugh Clough",
+    "Arthur Hallam",
+    "Edward King"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Matthew Arnold's pastoral elegy 'Thyrsis' (1865), the titular shepherd Thyrsis represents his dear friend and fellow poet Arthur Hugh Clough.",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q019",
+   "questionNumber": 19,
+   "question": "Which of the following novels of Dickens was left unfinished ?",
+   "options": [
+    "A Tale of Two Cities",
+    "Bleak House",
+    "The Mystery of Edwin Drood",
+    "The Old Curiosity Shop"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Charles Dickens had only completed six of the planned twelve monthly installments of 'The Mystery of Edwin Drood' when he suffered a fatal stroke in June 1870.",
+   "topic": "british",
+   "topicId": "charles-dickens",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q020",
+   "questionNumber": 20,
+   "question": "Nissim Ezekiel's poem, 'Background, Casually' reflects :",
+   "options": [
+    "his feeling of alienation",
+    "his love for rural life",
+    "his love for religion",
+    "none of the above"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The autobiographical poem explores Ezekiel's cultural displacement, alienation, and marginal identity as a Bene-Israel Jew growing up in multi-religious Mumbai.",
+   "topic": "indian",
+   "topicId": "nissim-ezekiel",
+   "periodId": "iwe-poetry",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q021",
+   "questionNumber": 21,
+   "question": "Point out the figure of speech in the following: \"Little sorrows sit and weep\"",
+   "options": [
+    "Personification",
+    "Simile",
+    "Pun",
+    "Oxymoron"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The abstract noun 'sorrows' is given human actions (sitting and weeping), which is a clear instance of Personification.",
+   "topic": "terms",
+   "topicId": "personification",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q022",
+   "questionNumber": 22,
+   "question": "Frederick Henry, the hero of Hemingway's novel, A Farewell to Arms, is a driver in :",
+   "options": [
+    "Italian army",
+    "British army",
+    "American army",
+    "German army"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Lieutenant Frederic Henry is an American expatriate serving as an ambulance driver in the volunteer ambulance corps of the Italian Army.",
+   "topic": "american",
+   "topicId": "a-farewell-to-arms",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q023",
+   "questionNumber": 23,
+   "question": "Who is the author of The Unvanquished?",
+   "options": [
+    "F. Scott Fitzgerald",
+    "O'Henry",
+    "Henry Sinclair Lewis",
+    "William Cuthbert Faulkner"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'The Unvanquished' (1938) is an American Civil War novel by Nobel laureate William Faulkner revolving around the Sartoris family.",
+   "topic": "american",
+   "topicId": "william-faulkner",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q024",
+   "questionNumber": 24,
+   "question": "Santiago is the hero of Hemingway's novel :",
+   "options": [
+    "For Whom the Bell Tolls",
+    "The Old Man and the Sea",
+    "A Farewell to Arms",
+    "The Sun Also Rises"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Santiago is the resilient old Cuban fisherman who battles a giant marlin and predatory sharks in 'The Old Man and the Sea' (1952).",
+   "topic": "american",
+   "topicId": "the-old-man-and-the-sea",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q025",
+   "questionNumber": 25,
+   "question": "What was the origin of the race of Nissim Ezekiel ?",
+   "options": [
+    "Bene Israel",
+    "Indian Christian",
+    "Dravidian",
+    "Latin American"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Nissim Ezekiel was born into Mumbai's ancient Bene Israel Jewish community, which had settled on the Konkan coast of Maharashtra centuries earlier.",
+   "topic": "indian",
+   "topicId": "nissim-ezekiel",
+   "periodId": "iwe-poetry",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q026",
+   "questionNumber": 26,
+   "question": "In which year did Robert Frost sell his farm in New England and moved to England?",
+   "options": [
+    "1910",
+    "1911",
+    "1912",
+    "1913"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Frost sailed with his family to England in August 1912. Sources differ on whether the Derry farm was sold in 1911 or 1912; the answer counted here is 1912.",
+   "topic": "american",
+   "topicId": "robert-frost",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q027",
+   "questionNumber": 27,
+   "question": "Who has called Shelley a 'perfect singing God' ?",
+   "options": [
+    "A. C. Swinburne",
+    "William Morris",
+    "Matthew Arnold",
+    "S. A. Brooke"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Swinburne called Shelley 'the perfect singing-god' in his essay on Shelley in 'Essays and Studies' (1875).",
+   "topic": "british",
+   "topicId": "algernon-swinburne",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q028",
+   "questionNumber": 28,
+   "question": "Munoo' is the central character of M. R. Anand's novel :",
+   "options": [
+    "Coolie",
+    "Untouchable",
+    "Two Leaves and a Bud",
+    "The Village"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Munoo, an innocent hill boy from Kangra whose life is cut short by brutal capitalist and imperial exploitation, is the protagonist of Mulk Raj Anand's 'Coolie' (1936).",
+   "topic": "indian",
+   "topicId": "coolie",
+   "periodId": "iwe-fiction",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q029",
+   "questionNumber": 29,
+   "question": "Who said, \"The poet is a man speaking to men\"?",
+   "options": [
+    "T. S. Eliot",
+    "S. T. Coleridge",
+    "Dr. Samuel Johnson",
+    "William Wordsworth"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Wordsworth made this classic democratic definition of the poet in his 'Preface to Lyrical Ballads' (1800/1802).",
+   "topic": "british",
+   "topicId": "william-wordsworth",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q030",
+   "questionNumber": 30,
+   "question": "The romantic poetry is a revival of :",
+   "options": [
+    "Classicism",
+    "Romanticism",
+    "Medievalism",
+    "Humanism"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Romantic poetry is profoundly characterized by the revival of medieval romance, chivalric themes, ballads, gothic wonder, and supernatural mystery.",
+   "topic": "british",
+   "topicId": "romanticism",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q031",
+   "questionNumber": 31,
+   "question": "The Dance of Eunuchs has been written by:",
+   "options": [
+    "Sylvia Plath",
+    "Sarojini Naidu",
+    "Kamala Das",
+    "Nissim Ezekiel"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'The Dance of the Eunuchs' is a powerful, impassioned opening poem in Kamala Das's maiden collection 'Summer in Calcutta' (1965).",
+   "topic": "indian",
+   "topicId": "kamala-das",
+   "periodId": "iwe-poetry",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q032",
+   "questionNumber": 32,
+   "question": "How many times did Robert Frost win the prestigious Pulitzer Prize?",
+   "options": [
+    "Once",
+    "Twice",
+    "Thrice",
+    "Four times"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Robert Frost remains the only poet in history to win the Pulitzer Prize for Poetry four times: in 1924, 1931, 1937, and 1943.",
+   "topic": "american",
+   "topicId": "robert-frost",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q033",
+   "questionNumber": 33,
+   "question": "\"The rest is silence\"-These are the last words of ________ before his death in Shakespeare.",
+   "options": [
+    "Caesar",
+    "Macbeth",
+    "Hamlet",
+    "Lear"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Prince Hamlet utters 'The rest is silence' to his loyal friend Horatio right before dying in Act V, Scene 2 of 'Hamlet'.",
+   "topic": "british",
+   "topicId": "hamlet",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q034",
+   "questionNumber": 34,
+   "question": "The 'iambic pentameter' implies which of the following ?",
+   "options": [
+    "Five syllables in the pattern unstressed-stressed",
+    "Five syllables in the pattern stressed-unstressed",
+    "The pattern stressed-unstressed repeated five times",
+    "The pattern unstressed-stressed repeated five times"
+   ],
+   "correct_option_id": 3,
+   "explanation": "An iamb is a metrical foot consisting of one unstressed syllable followed by one stressed syllable (da-DUM); pentameter means this pattern repeats five times per line (ten syllables total).",
+   "topic": "terms",
+   "topicId": "iambic-pentameter",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q035",
+   "questionNumber": 35,
+   "question": "Which work was left incomplete because of Hemingway's sudden death?",
+   "options": [
+    "Islands in the Stream",
+    "A Moveable Feast",
+    "The Garden of Eden",
+    "The Dangerous Summer"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Hemingway died in 1961 and left more than one work unfinished. This test counts 'The Garden of Eden', which he worked on from 1946 until his death and which was published in 1986 in a shortened form.",
+   "topic": "american",
+   "topicId": "ernest-hemingway",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006",
+   "note": "Hemingway left more than one work unfinished. This site counts one of them."
+  },
+  {
+   "id": "up-pgt-english-2006-q036",
+   "questionNumber": 36,
+   "question": "The rhetorical device of 'anaphora' implies which of the following?",
+   "options": [
+    "A certain metrical arrangement in lines",
+    "Use of circumlocution in phraseology",
+    "Juxtaposing the abstract with the concrete",
+    "Repeating the first word or words of successive sentences or clauses"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Anaphora is a rhetorical figure that consists of repeating a sequence of words at the beginnings of neighboring clauses or sentences.",
+   "topic": "terms",
+   "topicId": "anaphora",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q037",
+   "questionNumber": 37,
+   "question": "Which of the following works is not associated with Matthew Arnold?",
+   "options": [
+    "Culture and Environment",
+    "Dover Beach",
+    "Thyrsis",
+    "Empedocles on Etna"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Culture and Environment' (1933) was written by F. R. Leavis and Denys Thompson. Matthew Arnold wrote 'Culture and Anarchy' (1869).",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q038",
+   "questionNumber": 38,
+   "question": "The Waste Land was first published in the year:",
+   "options": [
+    "1922",
+    "1932",
+    "1942",
+    "1912"
+   ],
+   "correct_option_id": 0,
+   "explanation": "T. S. Eliot's landmark modernist poem 'The Waste Land' was first published in October 1922 in his own quarterly journal 'The Criterion' and in America in 'The Dial'.",
+   "topic": "british",
+   "topicId": "the-waste-land",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q039",
+   "questionNumber": 39,
+   "question": "The Lake District in England is associated with:",
+   "options": [
+    "William Blake",
+    "William Collins",
+    "William Shakespeare",
+    "William Wordsworth"
+   ],
+   "correct_option_id": 3,
+   "explanation": "William Wordsworth, along with Samuel Taylor Coleridge and Robert Southey, lived in Cumbria's picturesque Lake District and became renowned as the 'Lake Poets'.",
+   "topic": "british",
+   "topicId": "william-wordsworth",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q040",
+   "questionNumber": 40,
+   "question": "Essays of Elia is:",
+   "options": [
+    "full of didactic sermonising",
+    "practically autobiographical fragments",
+    "remarkable for their terse and aphoristic style",
+    "satirical and critical"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Charles Lamb's essays under the pseudonym 'Elia' are quintessentially personal, lyric, intimate, and steeped in charming autobiographical reminiscences of his youth, relatives, and workplaces.",
+   "topic": "british",
+   "topicId": "essays-of-elia",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q041",
+   "questionNumber": 41,
+   "question": "Milton's Samson Agonistes is:",
+   "options": [
+    "an elegy",
+    "an ode",
+    "a classical epic",
+    "a classical tragedy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'Samson Agonistes' (1671) is John Milton's tragic closet drama composed strictly on the model of classical Greek tragedy (Aristotelian unities, Chorus, messenger).",
+   "topic": "british",
+   "topicId": "samson-agonistes",
+   "periodId": "commonwealth",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q042",
+   "questionNumber": 42,
+   "question": "\"Good fences make good neighbours\" This line occurs in which poem of Frost ?",
+   "options": [
+    "Birches",
+    "Mending Wall",
+    "Road Not Taken",
+    "Two Tramps in Mud Tune"
+   ],
+   "correct_option_id": 1,
+   "explanation": "This traditional New England adage is repeated by the speaker's tradition-bound neighbor in Robert Frost's poem 'Mending Wall' (1914).",
+   "topic": "american",
+   "topicId": "mending-wall",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q043",
+   "questionNumber": 43,
+   "question": "Which of the following is a work of Ezekiel?",
+   "options": [
+    "A Time to Change",
+    "Rough Passage",
+    "Summer",
+    "None of the above"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'A Time to Change' (1952), published in London by Fortune Press, was Nissim Ezekiel's groundbreaking debut collection of poems.",
+   "topic": "indian",
+   "topicId": "nissim-ezekiel",
+   "periodId": "iwe-poetry",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q044",
+   "questionNumber": 44,
+   "question": "The name of Macbeth's wife in the Shakespearean play is :",
+   "options": [
+    "Cordelia",
+    "Calpurnia",
+    "Desdemona",
+    "None of the above"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Shakespeare's tragedy, she is simply referred to as 'Lady Macbeth' throughout the script; historically, her name was Gruoch.",
+   "topic": "british",
+   "topicId": "macbeth",
+   "periodId": "jacobean-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q045",
+   "questionNumber": 45,
+   "question": "The figure of speech used in the following sentence is: \"All the perfumes of Arabia will not sweeten this little hand.\"",
+   "options": [
+    "Antithesis",
+    "Oxymoron",
+    "Hyperbole",
+    "Synecdoche"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Lady Macbeth's anguished statement in the sleepwalking scene (Act V, Scene 1) is a classic example of Hyperbole (deliberate dramatic overstatement).",
+   "topic": "terms",
+   "topicId": "hyperbole",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q046",
+   "questionNumber": 46,
+   "question": "Who first imported sonnet to England ?",
+   "options": [
+    "Sir Philip Sidney",
+    "Sir Thomas Wyatt",
+    "Shakespeare",
+    "Milton"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Sir Thomas Wyatt translated Petrarchan sonnets into English during the reign of King Henry VIII, introducing the 14-line sonnet form to England.",
+   "topic": "british",
+   "topicId": "thomas-wyatt",
+   "periodId": "early-tudor",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q047",
+   "questionNumber": 47,
+   "question": "Which one of the following theatre companies was owned by Shakespeare where his masterpieces were first performed?",
+   "options": [
+    "Wooden O",
+    "Globe",
+    "Rose",
+    "Curtain"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The Globe Theatre in London was built in 1599 by Shakespeare's playing company, the Lord Chamberlain's Men (in which Shakespeare was a shareholder and principal playwright).",
+   "topic": "british",
+   "topicId": "william-shakespeare",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q048",
+   "questionNumber": 48,
+   "question": "\"To follow knowledge like a sinking star Beyond the utmost bound of human thought.\" Who wrote these lines?",
+   "options": [
+    "P. B. Shelley",
+    "William Blake",
+    "Alfred Tennyson",
+    "Robert Browning"
+   ],
+   "correct_option_id": 2,
+   "explanation": "These stirring lines are spoken by the aged Greek hero Ulysses in Alfred, Lord Tennyson's dramatic monologue 'Ulysses' (1842).",
+   "topic": "british",
+   "topicId": "alfred-tennyson",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q049",
+   "questionNumber": 49,
+   "question": "\"O God! O God! How weary, stale and unprofitable Seems to me all the uses of this world!\" Which of Shakespeare's tragic heroes utters these words?",
+   "options": [
+    "Hamlet",
+    "Macbeth",
+    "Othello",
+    "King Lear"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Prince Hamlet utters these despondent words in his very first soliloquy (Act I, Scene 2) after his mother's hasty marriage to Claudius.",
+   "topic": "british",
+   "topicId": "hamlet",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q050",
+   "questionNumber": 50,
+   "question": "Which of the following novels of Hemingway deals with his actual disappointing experiences of love and war?",
+   "options": [
+    "A Farewell to Arms",
+    "To Have and Have Not",
+    "Across the River and into the Trees",
+    "The Sun Also Rises"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'A Farewell to Arms' (1929) draws heavily on Hemingway's real-life WWI ambulance service in Italy and his painful romance with Red Cross nurse Agnes von Kurowsky.",
+   "topic": "american",
+   "topicId": "a-farewell-to-arms",
+   "periodId": "american-modernism",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q051",
+   "questionNumber": 51,
+   "question": "In Yeats' poem Sailing to Byzantium, 'Byzantium' refers to :",
+   "options": [
+    "Constantinople",
+    "Himalayas",
+    "Athens",
+    "Jerusalem"
+   ],
+   "correct_option_id": 0,
+   "explanation": "Byzantium was the ancient Greek colony later renamed Constantinople (modern-day Istanbul), symbolizing in Yeats' mythology the timeless golden city of intellect, art, and spirit.",
+   "topic": "british",
+   "topicId": "sailing-to-byzantium",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q052",
+   "questionNumber": 52,
+   "question": "Tennyson's poetry represents :",
+   "options": [
+    "Victorian prudery",
+    "Victorian spirit of questioning and loss of faith",
+    "Victorian compromise",
+    "Victorian pessimism"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Tennyson's poetry mirrors the quintessential 'Victorian Compromise' between science and religion, progress and tradition, faith and scientific doubt.",
+   "topic": "british",
+   "topicId": "alfred-tennyson",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q053",
+   "questionNumber": 53,
+   "question": "Who coined the phrase \"Poetry is the criticism of life\"?",
+   "options": [
+    "T. S. Eliot",
+    "F. L. Lucas",
+    "F. R. Leavis",
+    "Matthew Arnold"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Matthew Arnold famously coined this enduring definition of literature in 'The Study of Poetry' (1880).",
+   "topic": "british",
+   "topicId": "matthew-arnold",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q054",
+   "questionNumber": 54,
+   "question": "Philip Pirrip' is a character in Charles Dickens' novel :",
+   "options": [
+    "A Tale of Two Cities",
+    "Great Expectations",
+    "Oliver Twist",
+    "David Copperfield"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Philip Pirrip, universally known as 'Pip', is the narrator and central character of Dickens' 'Great Expectations' (1861).",
+   "topic": "british",
+   "topicId": "great-expectations",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q055",
+   "questionNumber": 55,
+   "question": "Who wrote the poem The Triumph of Life?",
+   "options": [
+    "Keats",
+    "Tennyson",
+    "Shelley",
+    "Wordsworth"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'The Triumph of Life' (composed in 1822) was P. B. Shelley's visionary allegorical poem in terza rima, unfinished at his death.",
+   "topic": "british",
+   "topicId": "percy-bysshe-shelley",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q056",
+   "questionNumber": 56,
+   "question": "The word 'furtive' means:",
+   "options": [
+    "stealthy",
+    "quick",
+    "nervous",
+    "jerky"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Furtive' means attempting to avoid notice or attention, typically because of guilt; secretive, stealthy, or surreptitious.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q057",
+   "questionNumber": 57,
+   "question": "Find out the correct meaning of 'stimulate':",
+   "options": [
+    "move",
+    "push",
+    "rouse interest",
+    "pretend"
+   ],
+   "correct_option_id": 2,
+   "explanation": "To 'stimulate' means to raise levels of physiological or nervous activity; to encourage, excite, or rouse interest and action.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q058",
+   "questionNumber": 58,
+   "question": "PERPETUAL means:",
+   "options": [
+    "rigid",
+    "holy",
+    "eternal",
+    "rude"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Perpetual' means never ending or changing; occurring repeatedly; everlasting, continuous, or eternal.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q059",
+   "questionNumber": 59,
+   "question": "The word 'disparity' means:",
+   "options": [
+    "inequality",
+    "irregularity",
+    "impoliteness",
+    "unhappiness"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Disparity' denotes a noticeable and often unfair difference, imbalance, or inequality between things or people.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q060",
+   "questionNumber": 60,
+   "question": "Chronicle plays were very popular in :",
+   "options": [
+    "19th century",
+    "18th century",
+    "17th century",
+    "16th century"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Chronicle or English history plays (based on Holinshed and Hall) reached the peak of immense nationalistic popularity in Elizabethan England in the late 16th century (1590s).",
+   "topic": "british",
+   "topicId": "elizabethan",
+   "periodId": "elizabethan",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q061",
+   "questionNumber": 61,
+   "question": "'Lyrical Ballads' was first published in :",
+   "options": [
+    "1797",
+    "1798",
+    "1799",
+    "1796"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Lyrical Ballads, with a Few Other Poems' by William Wordsworth and Samuel Taylor Coleridge was published in 1798. It is taken as the start of the English Romantic movement.",
+   "topic": "british",
+   "topicId": "lyrical-ballads",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q062",
+   "questionNumber": 62,
+   "question": "A long romance entitled Endymion is written by:",
+   "options": [
+    "Shakespeare",
+    "Browning",
+    "Keats",
+    "Shelley"
+   ],
+   "correct_option_id": 2,
+   "explanation": "John Keats composed his 4,000-line pastoral poetic romance 'Endymion' in heroic couplets in 1818, based on the Greek myth of the shepherd loved by the Moon goddess Cynthia.",
+   "topic": "british",
+   "topicId": "john-keats",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q063",
+   "questionNumber": 63,
+   "question": "Robert Browning is famous for his :",
+   "options": [
+    "novels",
+    "short stories",
+    "dramatic monologues",
+    "plays"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Robert Browning brought the dramatic monologue form to its highest artistic and psychological perfection in masterpieces like 'My Last Duchess', 'Fra Lippo Lippi', and 'Andrea del Sarto'.",
+   "topic": "british",
+   "topicId": "the-dramatic-monologue",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q064",
+   "questionNumber": 64,
+   "question": "T. S. Eliot declared himself to be a :",
+   "options": [
+    "romanticist",
+    "poetic dramatist",
+    "painter",
+    "catholic"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In the preface to 'For Lancelot Andrewes' (1928), T. S. Eliot famously proclaimed himself 'classicist in literature, royalist in politics, and anglo-catholic in religion'.",
+   "topic": "british",
+   "topicId": "ts-eliot",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q065",
+   "questionNumber": 65,
+   "question": "Who said, \"Poetry is not a turning loose of emotion but an escape from emotion\" ?",
+   "options": [
+    "Shakespeare",
+    "Keats",
+    "Eliot",
+    "Arnold"
+   ],
+   "correct_option_id": 2,
+   "explanation": "This central tenet of the Impersonal Theory of Poetry appears in T. S. Eliot's essay 'Tradition and the Individual Talent' (1919).",
+   "topic": "british",
+   "topicId": "ts-eliot",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q066",
+   "questionNumber": 66,
+   "question": "The phrase 'stream of consciousness' was first used by:",
+   "options": [
+    "William Harvey",
+    "William James",
+    "William Jones",
+    "William Porter"
+   ],
+   "correct_option_id": 1,
+   "explanation": "American philosopher and psychologist William James coined the term 'stream of consciousness' in his seminal book 'The Principles of Psychology' (1890).",
+   "topic": "british",
+   "topicId": "stream-of-consciousness",
+   "periodId": "modern-era",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q067",
+   "questionNumber": 67,
+   "question": "In which poem does Tennyson commemorate his friend 'Arthur Hallam' ?",
+   "options": [
+    "The Princess",
+    "Enoch Arden",
+    "In Memoriam",
+    "Ulyssis"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Tennyson spent nearly two decades writing 'In Memoriam A.H.H.' (1850) following the sudden death of his Cambridge friend Arthur Henry Hallam in Vienna in 1833.",
+   "topic": "british",
+   "topicId": "in-memoriam",
+   "periodId": "victorian",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q068",
+   "questionNumber": 68,
+   "question": "In which poem has Wordsworth described different moods of nature?",
+   "options": [
+    "The Daffodils",
+    "Lines Written above Tintern Abbey",
+    "An Evening Walk",
+    "The Excursion"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Tintern Abbey' (1798), Wordsworth traces his evolving psychological and spiritual relationship with Nature through different stages: animal passion, sensory delight, and mature spiritual communion.",
+   "topic": "british",
+   "topicId": "tintern-abbey",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q069",
+   "questionNumber": 69,
+   "question": "Which of the following is not an essay by Charles Lamb?",
+   "options": [
+    "Night Fears",
+    "Christ's Hospital",
+    "Going on a Journey",
+    "Poor Relations"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'On Going a Journey' (1822) is one of William Hazlitt's most celebrated essays from 'Table-Talk'; the other three are famous essays by Charles Lamb in 'Essays of Elia'.",
+   "topic": "british",
+   "topicId": "essays-of-elia",
+   "periodId": "romantic",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q070",
+   "questionNumber": 70,
+   "question": "The idiom 'double Dutch' means:",
+   "options": [
+    "language spoken by the Dutch",
+    "unintelligible language",
+    "long distance march",
+    "two natives of the Netherlands"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In English idiom, 'double Dutch' denotes speech or writing that is entirely incomprehensible, confusing, or gibberish.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q071",
+   "questionNumber": 71,
+   "question": "Choose the correct meaning of the following idiom: 'in cold blood'",
+   "options": [
+    "indifferently",
+    "deliberately",
+    "unintentionally",
+    "in anger"
+   ],
+   "correct_option_id": 1,
+   "explanation": "To do something 'in cold blood' means ruthlessly, dispassionately, without emotion, and with deliberate premeditation.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q072",
+   "questionNumber": 72,
+   "question": "What does the underlined expression mean? \"Every verdict that he gave was sui generis.\"",
+   "options": [
+    "well-balanced",
+    "sensational",
+    "challengeable",
+    "unique"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'Sui generis' is a Latin legal and literary term meaning 'of its own kind', constituting a class of its own; hence, completely unique or singular.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q073",
+   "questionNumber": 73,
+   "question": "That which stays for a long time is:",
+   "options": [
+    "everlasting",
+    "permanent",
+    "durable",
+    "eternal"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Durable' refers to an object or material able to withstand wear, pressure, or damage and remain functional over a long period.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q074",
+   "questionNumber": 74,
+   "question": "What does the idiom 'Penelope's web' mean?",
+   "options": [
+    "a complicated web",
+    "a complicated situation",
+    "an unending work",
+    "an unending life"
+   ],
+   "correct_option_id": 2,
+   "explanation": "From Homer's Odyssey, Penelope promised to choose a suitor once she finished weaving a shroud, which she unpicked each night; thus 'Penelope's web' means an endless or futile task that is never completed.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q075",
+   "questionNumber": 75,
+   "question": "What is the meaning of the idiom 'ins and outs' ?",
+   "options": [
+    "outside and back side",
+    "internally",
+    "full details",
+    "partly"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The 'ins and outs' of something refers to all its intricate details, complex aspects, and inner workings.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q076",
+   "questionNumber": 76,
+   "question": "The antonym of GENUINE is :",
+   "options": [
+    "beautiful",
+    "ugly",
+    "brave",
+    "spurious"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'Genuine' means authentic, true, or real; its direct antonym is 'spurious' (counterfeit, fake, or false).",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q077",
+   "questionNumber": 77,
+   "question": "The antonym of VOLUNTEER is :",
+   "options": [
+    "support",
+    "defeat",
+    "conscript",
+    "provoke"
+   ],
+   "correct_option_id": 2,
+   "explanation": "A 'volunteer' enters service by free choice; a 'conscript' is enrolled into military or other service compulsorily by government order.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q078",
+   "questionNumber": 78,
+   "question": "The antonym of AGILE is:",
+   "options": [
+    "swift",
+    "hard",
+    "feeble",
+    "slow"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'Agile' means able to move quickly and easily; its opposite among the options is 'slow' (sluggish/uncoordinated).",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q079",
+   "questionNumber": 79,
+   "question": "Give the correct antonym of the word 'prodigal'.",
+   "options": [
+    "ardent",
+    "extravagant",
+    "frugal",
+    "liberal"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Prodigal' means wasteful, recklessly extravagant; its antonym is 'frugal' or thrifty.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q080",
+   "questionNumber": 80,
+   "question": "The synonym of AMNESTY is:",
+   "options": [
+    "penalty",
+    "justice",
+    "pardon",
+    "release"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Amnesty' refers to an official general pardon granted by a government for political or other offenses.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q081",
+   "questionNumber": 81,
+   "question": "The synonym of ADROIT is :",
+   "options": [
+    "skilful",
+    "cunning",
+    "villainous",
+    "wicked"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Adroit' (from French à droit) means clever, adept, or dexterous in using the hands or mind; highly skilful.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q082",
+   "questionNumber": 82,
+   "question": "The synonym of APEX is :",
+   "options": [
+    "peak",
+    "underground",
+    "qualified",
+    "greedy"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Apex' means the top or highest point of something, especially one forming a point; peak, zenith, or summit.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q083",
+   "questionNumber": 83,
+   "question": "The synonym of FELICITOUS is :",
+   "options": [
+    "happy",
+    "convenient",
+    "fervent",
+    "brittle"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Felicitous' means suited to the circumstances; apt, well-chosen, and causing happiness (from Latin felix = happy/fruitful).",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q085",
+   "questionNumber": 85,
+   "question": "Find out the correctly spelt word from the following:",
+   "options": [
+    "concomitent",
+    "concupiscence",
+    "concurdant",
+    "condescensition"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Concupiscence' (strong sexual desire/lust) is correctly spelled. (Others: concomitant, concordant, condescension).",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q086",
+   "questionNumber": 86,
+   "question": "Find out the correct spelling:",
+   "options": [
+    "rheumatic",
+    "rheumetic",
+    "rhumetic",
+    "rhumatic"
+   ],
+   "correct_option_id": 0,
+   "explanation": "The correct spelling of the medical term related to rheumatism is 'rheumatic'.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q087",
+   "questionNumber": 87,
+   "question": "Which of the following is the correct spelling?",
+   "options": [
+    "Iriconciliable",
+    "Irriconciliable",
+    "Irreconciliable",
+    "Irreconceliable"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The usual spelling is 'irreconcilable'. Of the four forms printed here, option (3) is the closest to it, and dictionaries list this form as an old, archaic spelling.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q088",
+   "questionNumber": 88,
+   "question": "Choose the correct meaning of the word 'peruse':",
+   "options": [
+    "to lie under oath",
+    "to argue convincingly",
+    "to read thoroughly",
+    "to look for the clues"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Peruse' strictly means to read, examine, or study with care and thorough attention.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q089",
+   "questionNumber": 89,
+   "question": "Choose the correct word to fill in the blank: Wordsworth was a great lover of natural scenery and ________.",
+   "options": [
+    "cite",
+    "site",
+    "sight",
+    "shite"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The noun 'sight' means things that are seen, spectacles, or visual scenes ('scenery and sight').",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q090",
+   "questionNumber": 90,
+   "question": "Choose the most appropriate one-word substitute: 'an office with good salary but no work'",
+   "options": [
+    "gratis",
+    "honorary",
+    "discretionary",
+    "sinecure"
+   ],
+   "correct_option_id": 3,
+   "explanation": "A 'sinecure' (from Latin sine cura = without care) is a position or office requiring little or no work but yielding financial benefit.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q091",
+   "questionNumber": 91,
+   "question": "Choose the correct meaning of the idiom: 'black and blue'",
+   "options": [
+    "multicoloured",
+    "in a severe manner",
+    "in a mixed manner",
+    "in an attractive manner"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Black and blue' describes skin discolored by extensive bruising; figuratively, to beat or thrash someone severely ('beaten black and blue').",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q092",
+   "questionNumber": 92,
+   "question": "Choose the most appropriate one-word substitute: 'a supporter of the cause of women'",
+   "options": [
+    "feminine",
+    "feminist",
+    "effeminate",
+    "sophist"
+   ],
+   "correct_option_id": 1,
+   "explanation": "A 'feminist' is an advocate for the rights and equality of women on grounds of political, social, and economic equality.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q093",
+   "questionNumber": 93,
+   "question": "Choose the correct word: 'a room for the display of works of art'",
+   "options": [
+    "artery",
+    "artillery",
+    "gallery",
+    "library"
+   ],
+   "correct_option_id": 2,
+   "explanation": "An 'art gallery' is a room, building, or exhibition space specifically designed for the public display of paintings, sculptures, and works of art.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q094",
+   "questionNumber": 94,
+   "question": "Select the best choice to replace the underlined expression: \"Aditya was not selected for the job of a medical officer because he was wet behind the ears.\"",
+   "options": [
+    "underage",
+    "inexperienced",
+    "ill-mannered",
+    "untrustworthy"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The colloquial idiom 'wet behind the ears' describes someone who is naive, immature, or lacking practical experience.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q095",
+   "questionNumber": 95,
+   "question": "'With a high hand' means:",
+   "options": [
+    "in a praiseworthy way",
+    "in a dictatorial way",
+    "in a hasty way",
+    "in an honorable way"
+   ],
+   "correct_option_id": 1,
+   "explanation": "'With a high hand' (high-handedly) means in an arrogant, autocratic, dictatorial, or overbearing manner.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q096",
+   "questionNumber": 96,
+   "question": "Which of the following means 'a charlatan'?",
+   "options": [
+    "who pretends to have more skill than he really has",
+    "a modest woman",
+    "a gentleman",
+    "a milkman"
+   ],
+   "correct_option_id": 0,
+   "explanation": "A 'charlatan' is a quack, fraud, or imposter who falsely claims to possess special knowledge or skills (especially in medicine or law).",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q097",
+   "questionNumber": 97,
+   "question": "The appropriate meaning of 'El Dorado' is:",
+   "options": [
+    "an attainable thing",
+    "an approachable thing",
+    "an unattainable thing",
+    "an invincible thing"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Originally a mythical city of gold sought by Spanish explorers, 'El Dorado' figuratively signifies a visionary, unattainable dream or place of fabulous abundance.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q098",
+   "questionNumber": 98,
+   "question": "Fill in the blank with appropriate word: The tree was ________ with fruits.",
+   "options": [
+    "load",
+    "loaded",
+    "laden",
+    "loading"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The adjective/participle 'laden' specifically collocates with the preposition 'with' when describing trees heavily weighed down with harvest: 'laden with fruits'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q099",
+   "questionNumber": 99,
+   "question": "Which of the following sentences is a correct one?",
+   "options": [
+    "The ship let go its anchor.",
+    "Let the ship go its anchor.",
+    "Let its anchor go the ship.",
+    "Its anchor let the ship go."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In standard nautical and English usage, 'let go' functions as a transitive phrasal verb meaning to release or drop: 'The ship let go its anchor'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q100",
+   "questionNumber": 100,
+   "question": "Find out the correct indirect narration: \"Please, please, don't drink too much. Remember that you'll have to drive home,\" she said to him.",
+   "options": [
+    "She forbade him not to drink too much, reminding him that he would have to drive home.",
+    "She begged him not to drink too much, reminding him that he would have to drive home.",
+    "She requested him again and again that he should not drink too much. She told him to remember that he will have to drive home.",
+    "She said to him please did not drink too much and remember that he'll have to drive home."
+   ],
+   "correct_option_id": 1,
+   "explanation": "'Please, please' conveys intense pleading, perfectly rendered by 'begged', and the tense shifted to 'would have to drive'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q101",
+   "questionNumber": 101,
+   "question": "Which of the given options is the correct indirect form of speech? \"Wish you a happy journey,\" Neeta said to me.",
+   "options": [
+    "Neeta told me that I should wish a happy journey.",
+    "Neeta wished me a happy journey.",
+    "Neeta told me to have a happy journey.",
+    "Neeta wished me that I wish a happy journey."
+   ],
+   "correct_option_id": 1,
+   "explanation": "Optative sentences expressing wishes or greetings are reported simply and concisely: Subject + wished + Indirect Object + Direct Object ('Neeta wished me a happy journey').",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q102",
+   "questionNumber": 102,
+   "question": "Point out the correct indirect form of: The mother said, \"Do not go out in rain.\"",
+   "options": [
+    "Mother requested (him) not to go out in rain.",
+    "Mother pleaded not to go out in rain.",
+    "Mother suggested (me) not to go out in rain.",
+    "Mother forbade (her) to go out in rain."
+   ],
+   "correct_option_id": 3,
+   "explanation": "The verb 'forbade' (past of forbid) conveys a negative order prohibiting an action; it takes an infinitive with 'to' without a negative particle 'not'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q103",
+   "questionNumber": 103,
+   "question": "Complete the following sentence: Please refer to the subject ________ above.",
+   "options": [
+    "sighted",
+    "sited",
+    "cited",
+    "sided"
+   ],
+   "correct_option_id": 2,
+   "explanation": "'Cited' means quoted, mentioned, or referred to as an authority or precedent ('the subject cited above').",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q104",
+   "questionNumber": 104,
+   "question": "He jumped off the bus while it ________.",
+   "options": [
+    "moved",
+    "was moving",
+    "had moved",
+    "had been moved"
+   ],
+   "correct_option_id": 1,
+   "explanation": "An action interrupted or occurring simultaneously while another action was in continuous progress requires the Past Continuous tense ('was moving').",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q105",
+   "questionNumber": 105,
+   "question": "Which of the following sentences is correct?",
+   "options": [
+    "Full many a flowers are born to blush unseen.",
+    "Full many a flower is born to blush unseen.",
+    "Full many a flower are born to blush unseen.",
+    "Full many a flowers is born to blush unseen."
+   ],
+   "correct_option_id": 1,
+   "explanation": "The grammatical construction 'many a' is followed by a singular countable noun ('flower') and a singular verb ('is born'), as in Thomas Gray's famous Elegy.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q106",
+   "questionNumber": 106,
+   "question": "I am looking forward to ________.",
+   "options": [
+    "see my friend",
+    "seeing my friend",
+    "have seen my friend",
+    "having been seen my friend"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In the phrasal construction 'look forward to', 'to' is a preposition and must be followed by a gerund ('-ing' form), hence 'seeing my friend'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q107",
+   "questionNumber": 107,
+   "question": "The gardens in Srinagar are more beautiful than ________.",
+   "options": [
+    "this of Mysore",
+    "that in Mysore",
+    "these of Mysore",
+    "those in Mysore"
+   ],
+   "correct_option_id": 3,
+   "explanation": "To avoid repetition when comparing plural nouns ('The gardens'), the demonstrative pronoun 'those' is used: 'more beautiful than those in Mysore'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q108",
+   "questionNumber": 108,
+   "question": "My friend came all the way from Kathmandu to congratulate me ________ my success.",
+   "options": [
+    "for",
+    "at",
+    "over",
+    "on"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The verb 'congratulate' takes the fixed preposition 'on' followed by the achievement: 'congratulate someone ON something'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q109",
+   "questionNumber": 109,
+   "question": "Which of the following sentences is correct one ?",
+   "options": [
+    "I went there with a view to meet him.",
+    "I went there with a view to meeting him.",
+    "I went there for a view to meeting him.",
+    "I went there with views to meeting him."
+   ],
+   "correct_option_id": 1,
+   "explanation": "The fixed prepositional phrase 'with a view to' requires a gerund ('-ing' verb form), yielding 'with a view to meeting him'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q110",
+   "questionNumber": 110,
+   "question": "Fill in the blank with appropriate tense: I wish I ________ dead.",
+   "options": [
+    "shall",
+    "will",
+    "may",
+    "were"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In expressions of an unreal, hypothetical, or impossible present wish after 'I wish', the subjunctive mood uses the plural past form 'were' for all persons.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q112",
+   "questionNumber": 112,
+   "question": "In a state or society human beings are associated with one another in terms of :",
+   "options": [
+    "Love",
+    "Friendship",
+    "Business concerns",
+    "Laws"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The opening sentence of the comprehension passage clearly states: 'The expression 'the rule of law' relates to human association... associated in terms of the recognition of certain conditions of association, namely 'laws''.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q113",
+   "questionNumber": 113,
+   "question": "In the context of the passage, which of the following statements is not correct?",
+   "options": [
+    "All human relationships are based on laws.",
+    "There are different modes of relationships among human beings.",
+    "Legal relationships can be indisputably blended with non-legal relationships.",
+    "There is no contradiction between a civil and an ecclesiastical relationship."
+   ],
+   "correct_option_id": 0,
+   "explanation": "The passage says that people have many different kinds of relationships and move between them. So it is not true that all human relationships are based on laws.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q114",
+   "questionNumber": 114,
+   "question": "Throughout the passage, the term 'mode' implies:",
+   "options": [
+    "style",
+    "rule",
+    "form",
+    "manner"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In philosophical discourse, 'mode of association' denotes a distinct form, structure, or category of relationship.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q115",
+   "questionNumber": 115,
+   "question": "In the phrase 'contingent assemblages', contingent means :",
+   "options": [
+    "accidental",
+    "convenient",
+    "specific",
+    "representative"
+   ],
+   "correct_option_id": 0,
+   "explanation": "'Contingent' in philosophical terminology means non-necessary, dependent on circumstance, or incidental/accidental.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q116",
+   "questionNumber": 116,
+   "question": "Which of the following statements is true about 'the rule of law' ?",
+   "options": [
+    "In spite of difference, human beings can accept the same modal character.",
+    "Human beings cannot be subjected to the same 'rule of law'.",
+    "All men and women being alike, the same 'rule of law' is not difficult to endorse.",
+    "Human beings are too egoistical to accept a common 'rule of law'."
+   ],
+   "correct_option_id": 0,
+   "explanation": "The passage says the 'rule of law' identifies a persona related to others of the same modal character, in spite of the differences between them.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q117",
+   "questionNumber": 117,
+   "question": "The tone of the passage is:",
+   "options": [
+    "critical",
+    "expository",
+    "descriptive",
+    "narrative"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The author systematically sets out, explains, and analyzes the theoretical conditions of human relationships and the rule of law, which is an expository tone.",
+   "topic": "language",
+   "topicId": "english-language-and-elt",
+   "qtype": "passage",
+   "src": "UP PGT English 2006",
+   "passageId": "p1"
+  },
+  {
+   "id": "up-pgt-english-2006-q118",
+   "questionNumber": 118,
+   "question": "Mark the part containing an error: Every one of us (1) / should do our duty (2) / to the country. (3) / No error (4)",
+   "options": [
+    "Every one of us",
+    "should do our duty",
+    "to the country.",
+    "No error"
+   ],
+   "correct_option_id": 3,
+   "explanation": "'Every one of us' goes with 'our'. The pronoun agrees with 'us', so the sentence has no error.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q120",
+   "questionNumber": 120,
+   "question": "Mark the part containing an error: Very few people now (1) / believe that (2) / the wages of sin are (3) / death. (4)",
+   "options": [
+    "Very few people now",
+    "believe that",
+    "the wages of sin are",
+    "death."
+   ],
+   "correct_option_id": 2,
+   "explanation": "In the biblical proverb (Romans 6:23), 'wages' when meaning retribution or consequence takes a singular verb: 'The wages of sin IS death'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q121",
+   "questionNumber": 121,
+   "question": "Fill in the blank with correct preposition: I do not agree ________ your proposal.",
+   "options": [
+    "with",
+    "from",
+    "to",
+    "on"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Idiomatic preposition usage: one 'agrees WITH a person' on an issue, but 'agrees TO a proposal, plan, or suggestion'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q122",
+   "questionNumber": 122,
+   "question": "Choose the correct tense of verb: I waited for my friend until he ________.",
+   "options": [
+    "had come",
+    "will come",
+    "came",
+    "comes"
+   ],
+   "correct_option_id": 2,
+   "explanation": "The main clause verb 'waited' is in the simple past tense, requiring the simple past 'came' after the temporal conjunction 'until'.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q123",
+   "questionNumber": 123,
+   "question": "Fill in the blank: Silkworm feed ________ mulberry trees.",
+   "options": [
+    "at",
+    "on",
+    "by",
+    "after"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Animals and insects 'feed ON' their food or plants ('Silkworms feed on mulberry leaves/trees').",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q124",
+   "questionNumber": 124,
+   "question": "Choose the correct transformation from complex to simple: \"While there is life, there is hope.\"",
+   "options": [
+    "So long as there is life, there is hope.",
+    "Life and hope are inseparable.",
+    "Until there is hope, there is life.",
+    "Where the life is, the hope is there."
+   ],
+   "correct_option_id": 1,
+   "explanation": "A simple sentence contains only one finite verb and no subordinate clause; option (2) eliminates the subordinate clause 'while...' by transforming it into a single independent clause with a compound subject.",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  },
+  {
+   "id": "up-pgt-english-2006-q125",
+   "questionNumber": 125,
+   "question": "Fill in the blank with the correct preposition : The cat is hiding ________ us.",
+   "options": [
+    "with",
+    "from",
+    "of",
+    "off"
+   ],
+   "correct_option_id": 1,
+   "explanation": "One hides 'FROM' someone or something to avoid being seen or found ('hiding from us').",
+   "topic": "language",
+   "topicId": "traditional-grammar",
+   "qtype": "direct",
+   "src": "UP PGT English 2006"
+  }
+ ]
+}
