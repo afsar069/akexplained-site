@@ -9,6 +9,7 @@ eleventyExcludeFromCollections: true
 {#- Review route for a planned-but-not-yet-live login set (rule 17). Pre-built so it exists
     before publishing; data-catalog-check shows "not open yet" until `<age>-set-N` is live. -#}
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set age = entry.age %}{% set st = entry.set %}
 {% set pageTitle %}{{ age.name }} Set {{ st.n }} &mdash; Review Your Answers | AK Explained{% endset %}
 {% set pageDescription %}Go back over every question in {{ age.name }} Set {{ st.n }} — your answer, the right one, and the reason behind it.{% endset %}

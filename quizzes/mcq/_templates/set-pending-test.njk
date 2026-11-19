@@ -12,6 +12,7 @@ eleventyExcludeFromCollections: true
     shows "This set is not open yet" (no login wall). A free set that fills this slot becomes a
     live registry set (set-test.njk) and drops out of mcqPendingSets, so no route collides. -#}
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set age = entry.age %}{% set st = entry.set %}
 {% set pageTitle %}{{ age.name }} Practice &mdash; Set {{ st.n }}, {{ st.titleCase }} | AK Explained{% endset %}
 {% set pageDescription %}{{ age.name }} practice Set {{ st.n }}, {{ st.titleCase }}. {% if paidLayer.live %}It needs the All Access pass once it is open.{% else %}Log in with a free account to take it once it is open.{% endif %}{% endset %}

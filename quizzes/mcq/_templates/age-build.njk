@@ -7,6 +7,7 @@ permalink: "/quizzes/mcq/{{ age.slug }}/build/index.html"
 eleventyExcludeFromCollections: true
 ---
 {% extends "mcq-page.njk" %}
+{% set bodyClass = "mcq-sec-page" %}
 {% set pageTitle %}Build Your Own {{ age.name }} Test | AK Explained{% endset %}
 {% set pageDescription %}Choose the {{ age.name }} sets you want, one level, how many questions and how long, and get a test made from them.{% endset %}
 {% set canonical = "https://akexplained.com/quizzes/mcq/" + age.slug + "/build/" %}
