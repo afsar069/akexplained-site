@@ -40,15 +40,30 @@ Literary history gives these fifty-seven years several names. **Jacobean** comes
 
 ### Political life
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="james-i">
+  <img src="/assets/articles/jacobean-caroline/james-i.webp" alt="Modern painted interpretation of James I with a pointed beard, pale collar and dark early Stuart doublet." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>James I — modern painted interpretation.</figcaption>
+</figure>
+
 James had been king of Scotland since he was thirteen months old, when his mother, Mary, Queen of Scots, was forced to give up her throne in 1567. He grew up among quarrelling nobles and stern Scottish preachers, and he learned to trust his own cleverness. He also wrote books. In *The True Law of Free Monarchies* (1598) he argued that a king receives his power from God and answers to God alone. This belief is called the **divine right of kings**. In Scotland he had ruled with it for years. In England it met a Parliament that was far more used to speaking its mind.
 
 English kings could not rule without Parliament for one plain reason: only Parliament could vote for taxes. Elizabeth had known this and had handled its members with care. She had also left debts behind, because of her long wars with Spain and in Ireland. James spent freely on gifts and favourites, and the debts grew. In 1610 he tried a bargain called the Great Contract, meant to give him a steady income, but it failed. In 1614 he called a Parliament that passed no laws at all and was sent home within weeks. It is remembered as the Addled Parliament. After that, James ruled without a Parliament until 1621.
+
+<figure class="article-illustration article-illustration--float article-illustration--left article-illustration--portrait" data-illustration="charles-i">
+  <img src="/assets/articles/jacobean-caroline/charles-i.webp" alt="Modern painted interpretation of Charles I with shoulder-length chestnut hair, a fine moustache and falling lace collar." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>Charles I — modern painted interpretation.</figcaption>
+</figure>
 
 Charles I became king in 1625. He was shy, serious and a fine judge of paintings. He shared his father's belief in royal power, but he lacked his father's skill at avoiding open quarrels. In the same year he married Henrietta Maria, a French Catholic princess, which made many Protestants uneasy. His favourite minister, the Duke of Buckingham, led military expeditions that failed, and Parliament hated him. In 1628 Buckingham was stabbed to death by a discontented officer, and in the same year Parliament forced Charles to accept the Petition of Right, which said that the king could not tax without consent or jail people without cause. A year later Charles sent Parliament home and ruled alone for eleven years. To find money he revived old taxes. The most hated was Ship Money, once paid only by port towns to keep the navy ready, which from 1635 he demanded from inland counties as well.
 
 The crisis came from Scotland. In 1637 Charles and his Archbishop of Canterbury, William Laud, tried to force a new Prayer Book on the Scottish church. To Scottish Presbyterians it looked too close to Catholic worship. They signed the National Covenant in 1638 and raised an army. Charles needed money to answer them, so in 1640 he had to call Parliament again. The first, the Short Parliament, refused to help and was dismissed in three weeks. The second, the Long Parliament, met in November 1640 and attacked the king's advisers. His chief minister, the Earl of Strafford, was executed in 1641. In January 1642 Charles walked into the House of Commons with armed men to arrest five members, but they had already escaped. After that, neither side trusted the other. In August 1642 Charles raised his royal flag at Nottingham, and the Civil War began.
 
 Supporters of the king were called Cavaliers, and supporters of Parliament were nicknamed Roundheads. Parliament built a disciplined force, the New Model Army, which crushed the royal army at Naseby in June 1645. Charles surrendered in 1646 but kept making secret deals, and a second war broke out in 1648. The army then removed the members of Parliament who wanted peace with him, and the rest set up a court. On 30 January 1649 Charles was beheaded outside the Banqueting House at Whitehall.
+
+<figure class="article-illustration" data-illustration="naseby">
+  <img src="/assets/articles/jacobean-caroline/naseby.webp" alt="Representative painting of cavalry, musketeers and pikemen on an English Civil War battlefield." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of the Battle of Naseby, 1645.</figcaption>
+</figure>
 
 England now became a republic, called the Commonwealth. Its strongest man was Oliver Cromwell, a country gentleman who had become a great general. After he put down resistance in Ireland and Scotland, he took the title Lord Protector in 1653. He died in 1658. His son Richard could not control the army, and the country drifted. In early 1660 General George Monck marched from Scotland to London, a new Parliament was chosen, and it invited Charles's son to return. Charles II entered London on 29 May 1660, his thirtieth birthday.
 
@@ -65,6 +80,11 @@ The wider world was opening too. In 1607 English settlers founded Jamestown in V
 ### Economic life
 
 Cloth made from English wool was the country's chief export, and London merchants grew rich by selling it abroad. Long sea voyages were costly and risky, so merchants joined together in companies, where many investors shared the cost and the profit. The East India Company had been set up in 1600, and the Virginia Company followed in 1606. In 1615 James sent Sir Thomas Roe as his ambassador to the Mughal emperor Jahangir, hoping to win trading rights for the East India Company. Roe landed at Surat in September 1615, was received by Jahangir at Ajmer in January 1616, and stayed until 1619 without winning the full agreement he wanted.
+
+<figure class="article-illustration" data-illustration="roe-jahangir">
+  <img src="/assets/articles/jacobean-caroline/roe-jahangir.webp" alt="Imagined Mughal-style painting of Thomas Roe received before Jahangir and his courtiers." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined reconstruction of Thomas Roe at Jahangir's court.</figcaption>
+</figure>
 
 At home, prices rose faster than wages, and the poor suffered. The crown needed money too, so it sold favours. James sold monopolies, which gave one person the sole right to trade in an item, and in 1611 he created a new rank, the baronet, which could be bought. Writers felt the same pinch. Few could live on the sale of books. They depended on rich patrons, court posts, the Church, or a share in a theatre company. Ben Jonson wrote for nobles and the court, John Donne spent years seeking patrons before the Church gave him a career, and Shakespeare earned his living as a sharer in the King's Men.
 
@@ -113,15 +133,30 @@ Poems were handled differently. Gentleman poets often thought it undignified to 
 
 Ben Jonson changed the attitude to plays. In 1616 he published his plays, masques and poems together as *The Workes of Benjamin Jonson*. The grand volume claimed that plays deserved the same respect as any other literature. Shakespeare died that same year. In 1623 two actor friends from the King's Men, John Heminges and Henry Condell, gathered thirty-six of his plays into one large book, the **First Folio**. Eighteen of them had never been printed before, among them *Macbeth* and *The Tempest*, and without the book they might have been lost. It also carried a poem by Jonson, praising Shakespeare as a writer for all time, not for one age.
 
+<figure class="article-illustration" data-illustration="first-folio">
+  <img src="/assets/articles/jacobean-caroline/first-folio.webp" alt="Representative still-life painting of a large folio volume beside small quarto pamphlets and a theatre manuscript." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>Folio, quarto and manuscript: representative forms that preserved the plays.</figcaption>
+</figure>
+
 ### Drama
 
 The theatre that James inherited was already famous. In London, acting companies, each protected by a noble patron, played to crowds who paid a penny to stand in the yard and more to sit. In May 1603, within weeks of arriving, James made Shakespeare's company his own, and the Lord Chamberlain's Men became the King's Men. Other companies took the names of Queen Anne and Prince Henry. The King's Men acted at the open-air Globe in summer, and after 1608 they also used the indoor Blackfriars theatre in winter.
 
 Shakespeare had written *Hamlet* and his great comedies before James arrived. In the Jacobean years he turned to darker stories: *Othello*, *King Lear*, *Macbeth*, *Antony and Cleopatra* and *Coriolanus*. *Macbeth*, written around 1606, suited the new king. James believed in witches, and he was said to descend from Banquo, the Scottish lord whom the witches in the play promise will father a line of kings. Later came *Pericles*, *Cymbeline*, *The Winter's Tale* and *The Tempest*, plays in which families are broken by jealousy or storm and healed only after long years. Shakespeare spent his last years mostly in Stratford and died on 23 April 1616.
 
+<figure class="article-illustration" data-illustration="macbeth">
+  <img src="/assets/articles/jacobean-caroline/macbeth.webp" alt="Imagined painting of Macbeth and Banquo encountering three cloaked women on a misty Scottish heath." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from Macbeth: the meeting on the heath.</figcaption>
+</figure>
+
 Ben Jonson wrote differently. He was a bricklayer's stepson who taught himself Latin and Greek, and he believed that plays should correct foolishness, as the old Roman writers had done. His temper was hot: in 1598 he killed an actor in a duel and escaped hanging only by proving that he could read Latin. His comedies were sharp and crowded. In *Volpone* (1606), a rich Venetian pretends to be dying so that greedy friends will bring him gifts in the hope of inheriting his gold. In *The Alchemist* (1610), three tricksters take over a London house, left empty because of the plague, and cheat the greedy visitors who come hoping to get rich. Jonson called his method the **comedy of humours**. In old medicine a "humour" was a body fluid thought to rule a person's mood, and Jonson built each character around one ruling obsession.
 
 At court the favourite entertainment was the **masque**, a show of music, dance, costume and painted scenery that ended when the masked players stepped down and danced with the audience. Queen Anne loved masques. Jonson wrote the words and the architect Inigo Jones designed the stage, and together they made *The Masque of Blackness* in 1605 and many others. The two men quarrelled over whether words or spectacle mattered more, and by 1631 Jonson had stopped writing for the court.
+
+<figure class="article-illustration" data-illustration="court-masque">
+  <img src="/assets/articles/jacobean-caroline/court-masque.webp" alt="Representative painting of masked dancers, musicians and painted classical scenery in an early Stuart court masque." width="1500" height="900" loading="lazy" decoding="async">
+  <figcaption>A court masque combining music, dance, costume and scenery.</figcaption>
+</figure>
 
 While Jonson laughed at fools, other playwrights stared at evil. Their tragedies are full of poison, spies, ghosts and cruel dukes, usually set in Italy or Spain, far from London, which let writers speak freely about wicked courts. This kind of play is called **revenge tragedy**, and it grew out of earlier plays such as Thomas Kyd's *The Spanish Tragedy* and Shakespeare's *Hamlet*. John Webster's *The White Devil* (about 1612) and *The Duchess of Malfi* (about 1613) are its best-known examples. In the second, a widowed duchess secretly marries her steward against the wishes of her two brothers, and they destroy her. Thomas Middleton and William Rowley's *The Changeling* (1622) tells how a young woman hires a servant to kill a man she does not want to marry, and finds that he demands a terrible price.
 
@@ -135,6 +170,11 @@ When Charles I became king, the stage grew more polished and more tied to the co
 
 Poetry changed along with the theatre. The sweet, smooth sonnets of the 1590s no longer satisfied younger readers, who wanted wit, argument and surprise. The poet who gave them that was John Donne.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-illustration="john-donne">
+  <img src="/assets/articles/jacobean-caroline/john-donne.webp" alt="Modern painted interpretation of John Donne in a black clerical robe and broad white collar." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>John Donne — modern painted interpretation.</figcaption>
+</figure>
+
 Donne was born in 1572 into a Catholic family at a time when Catholics were persecuted. His younger brother Henry died in prison after being arrested for sheltering a priest. Donne later left the old faith, studied law at Lincoln's Inn, and wrote clever, bold love poems that circulated in manuscript among friends. In 1601 he secretly married Anne More, the daughter of a powerful man, Sir George More, without his consent. Donne lost his post as secretary to the Lord Keeper, Sir Thomas Egerton, spent a short time in jail, and lived in poverty for years. King James finally urged him to take holy orders. Donne was ordained in 1615 and became Dean of St Paul's in 1621, where his sermons drew crowds. His later poems, such as the Holy Sonnets, burn with fear and love of God, as when he begs God to "batter my heart". He died in 1631.
 
 Donne's poetry sounds nothing like Elizabethan smoothness. A poem may open with a shout, as in "The Canonization": "For God's sake hold your tongue, and let me love." He argues like a lawyer, mixes body and soul, and compares lovers to the most unexpected things, such as the two legs of a pair of compasses in "A Valediction: Forbidding Mourning". Such a comparison, stretched far and worked out with logic, is called a **conceit**. The poets who wrote in this way are called the **metaphysical poets**.
@@ -144,6 +184,11 @@ George Herbert wrote with the same wit but a quieter voice. He came from a noble
 Younger poets followed. Henry Vaughan, a Welsh doctor, wrote of nature as a glimpse of heaven in *Silex Scintillans* (1650) and openly admired Herbert. Richard Crashaw, who became a Catholic, wrote passionate, almost dazzling religious verse. Andrew Marvell wrote one of the most famous argument poems of all, "To His Coy Mistress", in which a lover reasons that if time were endless he could court slowly, but since time is short, they should love now. Marvell also wrote the "Horatian Ode" in 1650, which praises Cromwell's power yet speaks with respect of the king's calm courage on the scaffold. His lyric poems were printed only after his death, in 1681.
 
 Another group of poets belonged to the court. The **Cavalier poets**, Thomas Carew, Sir John Suckling, Richard Lovelace and Robert Herrick, were gentlemen who served or admired Charles I. They were followers of Ben Jonson, and were sometimes called the "sons of Ben". Their verse was short, polished and light, and its themes were love, wine, loyalty and the fast passing of time. Herrick's famous advice, "Gather ye rosebuds while ye may", is an example of **carpe diem**, Latin for "seize the day". Suckling teased a pale lover with "Why so pale and wan, fond lover?" When war came, their loyalty was tested. In 1642 Lovelace was jailed for presenting a petition to Parliament in favour of the king, and in prison he wrote "To Althea, from Prison", which says that stone walls cannot make a prison for a free and loving mind. Herrick's *Hesperides* was published in 1648, in the middle of the war.
+
+<figure class="article-illustration article-illustration--float article-illustration--left article-illustration--portrait" data-illustration="john-milton">
+  <img src="/assets/articles/jacobean-caroline/john-milton.webp" alt="Modern painted interpretation of the young John Milton with long chestnut hair, a plain dark doublet and white collar." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>The young John Milton — modern painted interpretation.</figcaption>
+</figure>
 
 John Milton belonged to neither group. He studied at Cambridge and spent years in quiet study, planning to become a great poet. He wrote "On the Morning of Christ's Nativity" in 1629, a masque called *Comus* (1634) for the family of the Earl of Bridgewater at Ludlow Castle, and in 1637 "Lycidas", a poem of grief for a Cambridge friend, Edward King, who drowned in the Irish Sea. "Lycidas" is also an attack on corrupt clergy, a sign of the political storm to come. Then war came, and Milton put his great poem aside and wrote mostly prose for the Puritan cause. *Paradise Lost* (1667) belongs to the next age.
 
