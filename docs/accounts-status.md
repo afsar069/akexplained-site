@@ -7,6 +7,8 @@ Keep it updated when the state changes.
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
 ## START HERE — state on 2026-11-19
+- **Download Syllabus (UP PGT), on branch `claude/modest-tesla-u0ryql`, not merged yet:** `/exams/pgt/up-pgt/syllabus-download/` is now a real page
+  with a one-click PDF download (free, no login, file in `assets/downloads/`, not in Supabase). The hub card shows "Free PDF" + Open. See CLAUDE.md rule 3.
 - **The paid layer is LIVE and the pass is ON SALE.** Plan `all-access`: **Rs 199 per 30 days**, up to 6 periods, `active = true`
   (the owner set both on `/admin/payments/`). All 48 papers (64 `mcq_papers` rows) are `access = 'paid'`, none is `login`.
   A student without a running pass cannot open a paid paper; free files, the Daily quiz, articles and the dashboard are free.
