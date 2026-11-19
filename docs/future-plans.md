@@ -64,3 +64,47 @@ Big PDFs on **Cloudflare R2**: nothing built, ask first.
 - "Meet the Author" bio wording.
 - Names and default for the Literature-bank buttons.
 - Random-N question picking in the CBT chooser (today the first N questions are used; ask before building).
+
+## 7. Android app (owner asked on 2026-11-19; PARKED: "abhi future plan me rakho")
+Nothing is built. Do not start it unasked. This section keeps what was found so the next session does not repeat it.
+**Facts below came from web search summaries only.** Google's own help pages (`support.google.com`) could not be opened from the
+cloud session (network policy), so anything about Google Play rules must be checked on Google's page before it is relied on.
+
+**State of the site today (checked in the repo, 2026-11-19):** no web app manifest, no service worker, no `theme-color`; the only icon is
+`assets/logo.png` (120 x 120, too small: Android needs 192 and 512). Viewport meta, HTTPS, one domain, `/privacy/`, `/terms/` and account
+deletion (`/account/`) are in place.
+
+**Recommended route (Claude's advice, owner has not confirmed):**
+1. **PWA first** (no Play Store, no payment problem): manifest, icons 192/512, `theme-color`, small service worker; one change in the
+   chrome transform (`eleventy.config.js` `syncChrome`) puts the tags on every built page.
+2. **App mode in the same repo**: CSS under `@media (display-mode: standalone)` (bottom tab bar, smaller header, bigger buttons), and
+   optionally an app home route (`/app/`). **Owner decision needed first:** CLAUDE.md says the default footer stays on every public page
+   (owner, 2026-11-07); a bottom bar in app mode may need the footer hidden there. Ask.
+3. **Android package only after that**: a Trusted Web Activity (PWABuilder or Bubblewrap) needs `/.well-known/assetlinks.json` with the
+   SHA-256 fingerprint of the owner's signing key (the fingerprint is public; the key itself never goes in the repo or chat). Check that
+   Eleventy copies the dot-folder `.well-known/`. Capacitor is the next step up (push, offline); Flutter, React Native and Kotlin would be
+   a rewrite of the CBT engine, dashboard and admin, and are not advised.
+4. **Offline:** free question files and Daily quizzes may be cached; **paid papers must never be cached offline** (it would break the pass lock).
+
+**Payment is the one big risk (not verified on Google's page):** search summaries say Google Play's Payments policy generally requires
+Google Play Billing for digital goods and services sold in an app, and does not allow leading users from the app to another payment
+method, except under India's alternative billing programme (offered next to Play Billing; users see a choice screen; fee reduced by 4
+percentage points; every transaction must be reported to Google within 24 hours; refunds still need the Google API call). The All Access
+pass is a digital product. Not confirmed: whether Razorpay is accepted in that programme (a Supreme Court case on "Authorised Provider"
+is pending), the exact fee, and how Google treats a student who bought the pass on the website and uses it in the app. Options:
+A) no pass sale in the app (risky for review), B) India alternative billing with Razorpay (new backend work), C) Play Billing only
+(fee from 15%, new `passes.source`, purchase verification in an Edge Function), or skip the Play Store and ship the PWA only.
+**Ask Google Play support before choosing.**
+
+**Existing students:** passes live in `public.passes` by `user_id`, and the paid read policy checks "any running pass", so a student who
+logs in to the app with the same account keeps the pass, progress and dashboard. Nobody pays again. Test Google sign-in inside the
+TWA on a real phone. A Play-Billing pass would need its own `source`; Razorpay passes would stay valid beside it.
+
+**Work size (Claude's estimate):** PWA basics about one session; app mode one to two; Android package small; Play Console forms are
+the owner's (a few hours of clicking; Google's review and any required testing period are outside our control, check Google's page);
+payment integration (B or C) is large, several sessions.
+
+**What the owner supplies:** app name, a 512 x 512 logo, screenshots, descriptions (simple English, rule 1; nothing invented, rule 2),
+a Google Play developer account (fee and verification: see Google's page), the signing-key fingerprint. No new connector is needed to start;
+no Play Console connector was found in the registry search. Allowing `support.google.com` and `developer.android.com` in the session's
+network settings would let Claude read the policy pages itself.

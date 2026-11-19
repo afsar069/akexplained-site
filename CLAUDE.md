@@ -405,6 +405,8 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
   (since 2026-11-03; the reset flow was tested end to end). Keep it ON; it must only ever be ON with working SMTP, or
   real users cannot confirm or reset. The reset redirect lands on `/login/` (must be in Supabase →
   URL Configuration → Redirect URLs; `https://akexplained.com/**` already covers it).
+- **An Android app / PWA** is parked (owner, 2026-11-19: "future plan me rakho"). Nothing is built; the findings, the payment risk
+  (Google Play Billing, not verified on Google's page) and the advised order are in `docs/future-plans.md` section 7. Ask before starting.
 - Pre-existing MCQ hub links `/quizzes/mcq/build/` and `/quizzes/mcq/topic/*` 404 — unrelated
   to accounts, to be fixed separately.
 
