@@ -472,6 +472,37 @@ details.faq .body p:last-child{margin-bottom:0}
 .social a:hover{background:var(--teal);color:#fff;transform:translateY(-3px);
   box-shadow:var(--glow),0 12px 22px -8px rgba(15,118,110,.60)}
 
+/* Sirf phone: footer chhota. Upar pehchaan (logo + naam + social), neeche Study | More side by side, phir Explore do column me. Desktop par kuch nahi badalta. */
+@media(max-width:559px){
+  .site-footer{padding:18px 0 14px}
+  .site-footer .cols{
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px 18px;margin-bottom:12px;
+    grid-template-areas:"id id" "study more" "explore explore";
+  }
+  .site-footer .cols > :nth-child(1){grid-area:id}
+  .site-footer .cols > :nth-child(2){grid-area:study}
+  .site-footer .cols > :nth-child(3){grid-area:explore}
+  .site-footer .cols > :nth-child(4){grid-area:more}
+  .site-footer .id{display:grid;grid-template-columns:auto minmax(0,1fr) auto;column-gap:11px;align-items:center}
+  .site-footer .id img{grid-row:1 / span 2;margin:0}
+  .site-footer .id b{grid-column:2;align-self:end}
+  .site-footer .id .tag{grid-column:2;align-self:start}
+  .site-footer .id .social{grid-column:3;grid-row:1 / span 2;margin:0;gap:6px}
+  .site-footer .id .social a{width:30px;height:30px;border-radius:8px}
+  .site-footer .id p{grid-column:1 / -1;max-width:none;margin:9px 0 0;font-size:.8rem;line-height:1.45}
+  .site-footer h4{margin-bottom:5px;padding-bottom:4px;border-bottom:1px solid var(--border)}
+  .site-footer nav{gap:5px}
+  .site-footer nav a{font-size:.84rem}
+  .site-footer nav[aria-label="Explore links"]{display:grid;grid-template-columns:1fr 1fr;gap:5px 18px}
+  .site-footer .legal{gap:6px 14px;padding-top:10px;font-size:.78rem}
+  .site-footer .legal > span{flex:1 0 100%}
+}
+/* Bahut chhoti screen (320px): social icons naam ke saath nahi samate, isliye text ke neeche aa jaate hain. */
+@media(max-width:359px){
+  .site-footer .id{grid-template-columns:auto minmax(0,1fr)}
+  .site-footer .id .social{grid-column:1 / -1;grid-row:auto;margin-top:9px}
+}
+
 
 /* ==========================================================
    ARTICLE PAGE — reading column + study rail
