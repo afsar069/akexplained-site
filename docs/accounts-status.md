@@ -6,10 +6,10 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
-## Old English full-art header — preview only (2026-11-19)
+## Old English full-art header — approved (2026-11-19)
 - Owner requested a single-page pilot on `/notes/old-english/`: regenerate the original Old English painting at **2086 × 754**, with artwork across its entire width and a soft fade behind live text.
 - Candidate image: `assets/ages/old-english-hero-full.webp`; the original `old-english-hero.webp` stays intact. The `hero-old-english-full` class is used only by this article.
-- Await the owner's approval before merging or publishing. Do not apply this treatment to other articles until separately authorized.
+- The owner approved this Old English preview for publication via PR #166 on 2026-11-19. Do not apply this treatment to other articles until separately authorized.
 
 ## Header artwork update — 2026-11-19
 - Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
