@@ -8,9 +8,9 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
 
 ## Header artwork update — 2026-11-19
 - Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
-- The dashboard's top banner uses the same Daily image; its greeting panel remains intact.
+- The dashboard keeps its original `assets/dash-banner.webp` banner and greeting panel (owner clarification after PR #162, 2026-11-19). It is excluded from the Daily-header changes.
 - British Literature reading articles keep their original age paintings, responsive layout and period-specific image variants (owner clarification, 2026-11-19). The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
-- The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the non-article headers use the Daily artwork.
+- The owner approved publication on 2026-11-19 via PR #162. All 10 reading articles and their 20 image routes were verified against the original desktop/mobile layouts; the other illustrated headers use the Daily artwork, except the dashboard.
 
 ## START HERE — state on 2026-11-19
 - **Download Syllabus (UP PGT), on branch `claude/modest-tesla-u0ryql`, not merged yet:** `/exams/pgt/up-pgt/syllabus-download/` is a real page with two side-by-side

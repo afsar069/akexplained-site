@@ -3402,14 +3402,14 @@ body:has(.dashtop) .homebar{display:none}
   .dashtop-user svg{display:none}
 }
 
-/* The dashboard reuses the Daily banner above its existing greeting panel. */
+/* The dashboard header: the banner painting (with Prof. AK's own quote
+   baked into it) and, under it, the greeting, the four steps and the path. */
 .dashhero{
   background:var(--card-paper);border:1px solid var(--card-line);
   border-radius:18px;padding:0;margin:0 0 20px;overflow:hidden;
   box-shadow:0 10px 30px -22px rgba(22,48,74,.5);
 }
 .dashhero-banner{display:block;line-height:0;background:var(--cream)}
-.dashhero-banner picture{display:block}
 .dashhero-banner img{display:block;width:100%;height:auto}
 /* Saara text ek hi panel par, beech me — bikhra hua na lage. Panel ki
    painting (sunehri kinara aur bel-boote) assets/dash-box.webp me hai, isliye
