@@ -83,10 +83,12 @@ module.exports = function (eleventyConfig) {
       out = out.slice(0, fStart) + NEW_FOOTER + out.slice(fEnd + "</footer>".length);
     }
 
-    // Plain page heads previously received reader-motif.webp here. Keep the
-    // same set of pages, using the Daily header's shared artwork and sizing.
-    out = out.replace('<section class="pagehead">',
-      '<section class="pagehead pagehead-practice">');
+    // Standalone plain page heads previously received reader-motif.webp here.
+    // Article layouts already carry their original artwork or motif; preserve it.
+    if (!out.includes('class="motif"')) {
+      out = out.replace('<section class="pagehead">',
+        '<section class="pagehead pagehead-practice">');
+    }
 
     // Sidebar ko chalane ke liye nav.js chahiye. Purane pages me wo tag nahi hai,
     // isliye yahan jod dete hain — tabhi mobile ka hamburger aur submenu kaam karega.

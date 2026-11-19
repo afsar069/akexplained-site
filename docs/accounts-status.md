@@ -7,9 +7,9 @@ Keep it updated when the state changes.
 _Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
 
 ## Header artwork update — 2026-11-19 (prepared, not merged)
-- Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: article heads, quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
+- Existing illustrated headers now reuse `/quizzes/daily/` artwork and responsive sizing: quiz/test/review heads, period hubs, exam hubs, utility/admin heads and the 404 page.
 - The dashboard's top banner uses the same Daily image; its greeting panel remains intact.
-- The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
+- British Literature reading articles keep their original age paintings, responsive layout and period-specific image variants (owner clarification, 2026-11-19). The home page and pages without header artwork are unchanged. Shared styles are in `assets/site.css`; pages must opt in with `pagehead pagehead-practice`. Plain page heads that previously received a motif are opted in by `syncChrome`.
 - This work has not been merged to `main`; production remains unchanged.
 
 ## START HERE — state on 2026-11-19

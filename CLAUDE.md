@@ -53,7 +53,7 @@ breaking it breaks a promise already made.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
-  footer, the shared Daily artwork for existing illustrated page heads, and `nav.js` into every built page
+  footer, the shared Daily artwork for existing illustrated non-article page heads, and `nav.js` into every built page
 
 The list of literary periods (20, from Old English to Postmodern) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
