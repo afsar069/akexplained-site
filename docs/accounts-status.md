@@ -14,7 +14,7 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   (Rs 25) passed end to end (webhook granted the pass, the browser verify made no second one). **No real-money payment yet**,
   so the live keys are unproven; the owner may pay a small amount and refund it in the Razorpay dashboard.
 - **Promo codes (owner's):** FIRSTIME50 (Rs 50 off, once per student, shown to everyone on `/pass/`), UPPGT100 (Rs 100 off,
-  max 1 use, hidden; purpose not told). One code per purchase.
+  once per student, no total limit, hidden; for the owner's own course students). One code per purchase.
 - **What the paid papers are (snapshot):** 17 English Literature sets, 15 UP PGT mock tests, 8 UP AP Paper 2 mock tests, 4 UP PGT
   MCQ days, 4 UGC NET PYQs. **Free (files):** Daily quiz 20 ages / 2,000 questions; 22 literature sets / 2,200; UP PGT mock
   tests 1–5 / 450; MCQ days 1–10 / 500; NET 2012 papers 4 / 249. The pass page reads these itself; never type them.
@@ -30,9 +30,10 @@ _Last updated: 2026-11-19 (end of the paid-layer session; read from the live dat
   what the student can open (built, rule 10); footer line is now "for every literary student's need" (31 pages); UPPGT100 is for
   the owner's own students who bought his course; the real-money check is postponed; the owner saw the FIRSTIME50 strip live.
   The `/pass/` page was also shrunk to the site's normal type scale (the owner found it bigger than other pages).
-- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): UPPGT100 allows ONE use only (raise it if it is for
-  many students); the Terms / Contact lines "no coaching enrolment / no paid group" may need new words (ask, do not invent);
-  per-course passes later; the real-money check.
+- **Settled later the same day:** UPPGT100 is one use per student with no total limit (`max_uses` null); the Terms ("Other
+  payments") and Contact lines about "no paid group" were reworded to what is true (the website takes payment only for the pass;
+  the owner's own course or coaching is not sold or paid for here); on `/pass/` the stat boxes now sit at the bottom of the hero.
+- **Open with the owner** (full list and the working notes: CLAUDE.md rule 22): per-course passes later; the real-money check.
 - Watch out after every upload: confirm `paper_catalog.access` is `paid` (rule 22).
 
 ## Paid layer — All Access pass, promo codes, Razorpay (2026-11-18; history of how it was built and launched)

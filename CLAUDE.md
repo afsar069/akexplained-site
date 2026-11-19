@@ -808,7 +808,7 @@ and open items: `docs/accounts-status.md` ("START HERE").
   On sale are the owner's, set on `/admin/payments/`; never change them unasked). 64 `mcq_papers` rows / 48 papers are `paid`, 0
   `login`. A student without a running pass cannot open any paid paper (they see "needs the All Access pass"); free files and
   the dashboard are untouched. Promo codes made by the owner: **FIRSTIME50** (Rs 50 off, once per student, shown to everyone
-  on `/pass/`) and **UPPGT100** (Rs 100 off, max 1 use, not shown; the owner has not said what it is for). The only paid
+  on `/pass/`) and **UPPGT100** (Rs 100 off, **one use per student, no total limit** — `max_uses` null, `once_per_student` true; not shown on the page; it is for the owner's own students who bought his course). The only paid
   order so far is the owner's Test Mode test (note on the row); **no real-money payment has been made yet**, so the live
   keys are still unproven end to end (the owner may do a small real payment and refund it in Razorpay). The owner can open
   access for one student with **Give a free pass**. The owner's own account is an admin AND holds a test pass to 18 Dec 2026,
@@ -848,7 +848,7 @@ and open items: `docs/accounts-status.md` ("START HERE").
   allows only `https://akexplained.com`.
 - **Pages.** `/pass/` is `pass/index.njk` (redesigned 2026-11-18, owner: "professional"; order set by the owner; shrunk
   2026-11-19 because it read bigger than the other pages: it now uses the site's own type scale, hero ~440px, h1 1.55–2.05rem, h2
-  from the global rule, 34px sections — keep new pass-page sizes at that scale): dark hero with live stat strip (paid tests, questions, series) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
+  from the global rule, 34px sections — keep new pass-page sizes at that scale): dark hero with live stat strip (paid tests, questions, series; the strip and the "Secure payment" line sit at the bottom of the left column, level with the bottom of the buy card — owner's request) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
   loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
   running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
   paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
@@ -883,11 +883,14 @@ and open items: `docs/accounts-status.md` ("START HERE").
   the source and the other footers are hand copies, so a future change needs a sed over `*.html`/`*.njk`); **UPPGT100 is for the
   owner's own students who bought his course**; the real-money check of the live keys is postponed ("abhi nahi"); the owner
   saw the FIRSTIME50 strip on the live pass page.
-- **Still open with the owner** (ask, do not decide): (1) UPPGT100 has `max_uses = 1`, so only ONE student can ever use it; if it
-  is meant for all of the owner's course students, raise the limit (or make one code per student) on `/admin/payments/`, or
-  tell Claude; (2) the Terms line "There is no coaching enrolment and no paid group" and the Contact line "I do not run any
-  paid group" may no longer be true if the owner sells a course to his own students: ask the owner what to write, never
-  invent it (rule 2); (3) per-course passes later; (4) the real-money check of the live keys.
+- **Settled later on 2026-11-19 (owner):** UPPGT100 means "one use per student" (the owner's words: "ek student ek use"), so
+  `max_uses` was set to null with one SQL UPDATE; anyone who knows the code can use it once, so keep it unshown. The Terms
+  section "Other payments" and the Contact note now say only what is true: this website takes payment only for the All Access
+  pass (Razorpay), any course or coaching the owner gives is not sold or paid for on this website, and a doubtful payment
+  request in the name of AK Explained should be reported to the owner first. The old lines "no coaching enrolment and no
+  paid group" were removed (the About page already says the owner does classroom and examination coaching). Do not add a
+  course name, price or place of sale to these pages unless the owner supplies them (rule 2).
+- **Still open with the owner** (ask, do not decide): per-course passes later; the real-money check of the live keys.
 - **Working notes for the next session.** The owner chats in Hinglish, wants click-by-click steps one at a time, never pastes
   a secret, and merges only by saying "live kar do". Site text stays simple English. Never type a count or price into a page:
   paid counts are read live from `paper_catalog` (`assets/pass.js` `loadInventory`), free counts from `_data/passFree.js`.
