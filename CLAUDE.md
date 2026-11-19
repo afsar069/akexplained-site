@@ -242,7 +242,11 @@ and never ask the owner for it.**
   **The level counts MCQs too** (owner, 2026-11-06): an age's pool = its Daily questions + the questions of its
   live MCQ sets (`tools/build-syllabus.js` matches the 20 MCQ ages to the 20 Daily ages by position). Daily and
   MCQ answers count the same, each question once by its latest answer, 60% answered at 60% right. A set that is
-  not live is not in the pool. **Which login sets are live is read from the live `paper_catalog` when the
+  not live is not in the pool. **Paid sets count only for a student who can open them** (owner, 2026-11-19: "jo question vo
+  open kar sakta hai"): an admin or someone with a running pass; otherwise those sets are left out of the pool AND their
+  answers are left out of the count (`loadPaidAccess`, `applyLiveCatalog(…, paidOpen)`, `syl.paidLocked` / `freeSetIds`,
+  `computeBritish`), so coverage never inflates; the level card then says paid tests count once there is a pass. If the
+  pass / admin read fails nothing is held back (the built pool stands). Free sets are files and always count. **Which login sets are live is read from the live `paper_catalog` when the
   dashboard opens** (owner, 2026-11-17, rule 17), so a set published or hidden self-serve changes the pool at
   once; the syllabus file's `liveSets` says what the build counted, and a failed read leaves the built pool
   as it is. Strengths and Areas to improve judge **specific topics only** (never a whole
@@ -842,7 +846,9 @@ and open items: `docs/accounts-status.md` ("START HERE").
   marks failed, refund.processed in full marks refunded). Secrets `RAZORPAY_KEY_ID`, `RAZORPAY_KEY_SECRET`,
   `RAZORPAY_WEBHOOK_SECRET` are added by the owner in Supabase → Edge Functions → Secrets; **never in the repo or chat**. CORS
   allows only `https://akexplained.com`.
-- **Pages.** `/pass/` is `pass/index.njk` (redesigned 2026-11-18, owner: "professional"; order set by the owner): dark hero with live stat strip (paid tests, questions, series) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
+- **Pages.** `/pass/` is `pass/index.njk` (redesigned 2026-11-18, owner: "professional"; order set by the owner; shrunk
+  2026-11-19 because it read bigger than the other pages: it now uses the site's own type scale, hero ~440px, h1 1.55–2.05rem, h2
+  from the global rule, 34px sections — keep new pass-page sizes at that scale): dark hero with live stat strip (paid tests, questions, series) + buy card, then the Free vs pass table, then "What the pass opens today" (5 boxes in one line; a swipe row on narrow screens) (paid counts per series read **live** from `paper_catalog` where `access = 'paid'` by `loadInventory()` in `assets/pass.js`), the table's free counts come from `_data/passFree.js` (the site's own files, at build; it stacks into cards under 640px), then the FAQ, and the three steps last (3 boxes in one line). Never type a count into the page. `assets/pass.js`: a plan with a price is public even before it is on sale (migration `20261118140000`), so the page shows the price and "Payments open soon" for Razorpay's website review; Pay appears only when On sale. Price, how long, promo code, Razorpay Checkout (`checkout.razorpay.com/v1/checkout.js`,
   loaded only on Pay), `?next=` back to the test. A 100% promo skips Razorpay. `assets/cbt.js`: a logged-in student without a
   running pass on a paid paper gets "This … needs the All Access pass" (`needPass`), a guest still gets the login wall; a paid
   paper that loads writes `paper_opens`. The upload page keeps a paid paper paid (the database also refuses a paid → login
@@ -871,13 +877,17 @@ and open items: `docs/accounts-status.md` ("START HERE").
 - **How the owner runs it (no Claude needed):** price / On sale, promo codes and free passes on `/admin/payments/`; a refund is
   made in the Razorpay dashboard and the webhook marks the order Refunded and ends that pass (or "Mark refunded" by hand). The
   orders table shows "Paid test opened?" for the 24-hour rule.
-- **Still open with the owner** (ask, do not decide): (1) a small "All Access pass" tag on the card of every paid test, so a
-  student knows before pressing Start (offered 2026-11-18, no answer yet; today a logged-in student sees Start on a paid set and
-  learns about the pass on the test page); (2) whether a paid set should count in the dashboard level pool of a student with
-  no pass (today every live set counts, so their level climbs slowly; suggestion: count only what they can open); (3) the
-  footer line "free for every student" (most of the site is free, not all); (4) what UPPGT100 is for; (5) per-course passes
-  later (one more `pass_plans` row; the paid read policy must then check the plan; the page's one `PLAN_ID` becomes a choice);
-  (6) the real-money check of the live keys.
+- **Decided 2026-11-19 (owner):** the "All Access pass" tag on paid cards is NOT decided: parked in `docs/future-plans.md`, do
+  not build it unasked; a student sees only the tests they can open in the dashboard level (done, rule 10); the footer line
+  "free for every student" became "for every literary student's need" on all 31 pages (sentence case; `_includes/base.njk` is
+  the source and the other footers are hand copies, so a future change needs a sed over `*.html`/`*.njk`); **UPPGT100 is for the
+  owner's own students who bought his course**; the real-money check of the live keys is postponed ("abhi nahi"); the owner
+  saw the FIRSTIME50 strip on the live pass page.
+- **Still open with the owner** (ask, do not decide): (1) UPPGT100 has `max_uses = 1`, so only ONE student can ever use it; if it
+  is meant for all of the owner's course students, raise the limit (or make one code per student) on `/admin/payments/`, or
+  tell Claude; (2) the Terms line "There is no coaching enrolment and no paid group" and the Contact line "I do not run any
+  paid group" may no longer be true if the owner sells a course to his own students: ask the owner what to write, never
+  invent it (rule 2); (3) per-course passes later; (4) the real-money check of the live keys.
 - **Working notes for the next session.** The owner chats in Hinglish, wants click-by-click steps one at a time, never pastes
   a secret, and merges only by saying "live kar do". Site text stays simple English. Never type a count or price into a page:
   paid counts are read live from `paper_catalog` (`assets/pass.js` `loadInventory`), free counts from `_data/passFree.js`.
