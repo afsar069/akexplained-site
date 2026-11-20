@@ -12,6 +12,22 @@ WebP variants, so no artwork is duplicated. Daily, article illustrations and art
 headers retain their existing artwork. Card names, dates, writers and links are
 unchanged.
 
+## American Literature section (owner, 20 November 2026)
+
+`/english-literature/` has a second section, "American Literature by Age"
+(`#american-literature`), under the British one. It uses the same `.age-grid` and
+`.age-tile` markup. Card 1 is **Colonial and Early National (1600 – 1830)**, linking to
+`/notes/ages/american-colonial/` (`notes/ages/american-colonial/index.md`, written by the
+owner; the three names on the card come from that article). Its painting is
+`assets/age-cards/american-colonial-painted.webp` (480 × 300, 33,460 bytes) and
+`american-colonial-painted-240.webp` (240 × 150, 9,322 bytes): a New England meeting house,
+villagers on a dirt path and a sailing ship in the harbour. It was generated with vidIQ
+(GPT Image 2.6) from a text prompt only, cropped from 16:9 to 1.6:1 and exported to WebP.
+Add the next American age as one more `.age-tile` in that section, with its own scene. The
+landing page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
+ages only and were not changed. The article has no painted header yet (`hero_image`), and no
+body illustrations.
+
 ## Files and export
 
 - `assets/age-cards/<age>-painted.webp`: 480 × 300, 17,180–34,524 bytes.
