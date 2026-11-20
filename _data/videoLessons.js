@@ -6,17 +6,42 @@
    - id: YouTube video id (youtu.be/<id>)
    - topic: neeche `topics` me se ek key
    - duration: "M:SS" ya "H:MM:SS" (YouTube par jo dikhta hai)
-   Topic ka bucket sirf title dekh kar rakha gaya hai; galat lage to key badal do. */
+   Topic ka bucket sirf title dekh kar rakha gaya hai; galat lage to key badal do.
+   `yt` = channel ki asli YouTube playlist (vidIQ se mili, 2026-11-20): page par "More on YouTube" link banta hai.
+   Wahan jo videos hain woh is list se alag ho sakte hain; link sirf naam ke hisaab se jodi gayi hai. */
 
 const topics = [
-  { key: "poems",    label: "Poems" },
-  { key: "novels",   label: "Novels" },
-  { key: "drama",    label: "Plays and drama" },
-  { key: "stories",  label: "Short stories and essays" },
-  { key: "theory",   label: "Theory, criticism and thought" },
-  { key: "terms",    label: "Literary terms and forms" },
-  { key: "writers",  label: "Writers' lives" },
-  { key: "syllabus", label: "Syllabus help" },
+  { key: "poems", label: "Poem explanations",
+    yt: { id: "PLohpgCZBUVMgTmnYsZBernKOiIxTe6zyT", title: "English Poem in Hindi" },
+    icon: '<path d="M20 4C10 5 5.5 10.5 4.5 19.5"/><path d="M20 4c0 8-4.5 11.5-10 11.5H6.5"/><path d="M4 20h3"/>' },
+  { key: "novels", label: "Novel summaries",
+    icon: '<path d="M12 6.5S10 4.8 6.5 4.8 3 6 3 6v12s1-1.2 3.5-1.2S12 18.5 12 18.5Z"/><path d="M12 6.5s2-1.7 5.5-1.7S21 6 21 6v12s-1-1.2-3.5-1.2S12 18.5 12 18.5Z"/>' },
+  { key: "novel-types", label: "Types of novel",
+    yt: { id: "PLohpgCZBUVMj0Xl7C50msVS0leNAe8qM_", title: "Types of Novel" },
+    icon: '<path d="m12 3 9 4.5-9 4.5-9-4.5L12 3Z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/>' },
+  { key: "stories", label: "Short stories",
+    yt: { id: "PLohpgCZBUVMjoTkP0Lm7Kt8fr7KicZDLe", title: "Short Stories in Hindi" },
+    icon: '<path d="M7 3h8l4 4v14H7Z"/><path d="M15 3v4h4"/><path d="M10 12h6M10 16h6"/>' },
+  { key: "essays", label: "Essays",
+    yt: { id: "PLohpgCZBUVMgord9J__jMEsfNw2J0CoFS", title: "English Essay and in Hindi" },
+    icon: '<path d="m4 20 1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19Z"/><path d="m13 8 3 3"/>' },
+  { key: "drama", label: "Plays and drama",
+    yt: { id: "PLohpgCZBUVMjL12_F5lJQ3hUPYNCAti5N", title: "English plays/drama" },
+    icon: '<path d="M4 5h16v6a8 8 0 0 1-16 0Z"/><path d="M9 10h.01M15 10h.01"/><path d="M9 14.5c1 1 5 1 6 0"/>' },
+  { key: "biographies", label: "Biographies of writers",
+    yt: { id: "PLohpgCZBUVMjBUe85c08782wnzENsP-uE", title: "Biography" },
+    icon: '<circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c.9-3.8 3.9-5.8 7.5-5.8s6.6 2 7.5 5.8"/>' },
+  { key: "theory", label: "Literary theory and criticism",
+    yt: { id: "PLohpgCZBUVMg56rrhB_AdVuJ1vpzjh-OU", title: "Literary Theory / Culture Study" },
+    icon: '<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z"/>' },
+  { key: "philosophy", label: "Philosophy",
+    yt: { id: "PLohpgCZBUVMiRKr-6ZN1poULNmNCMzLfg", title: "Philosophy" },
+    icon: '<circle cx="12" cy="12" r="9"/><path d="M12 8.5a2.6 2.6 0 1 1 1.6 2.4c-.9.5-1.6 1.2-1.6 2.3"/><path d="M12 16.3h.01"/>' },
+  { key: "terms", label: "Literary terms and devices",
+    yt: { id: "PLohpgCZBUVMiUNKpYYIec0wg-1MrWH6qO", title: "Literary Terms" },
+    icon: '<path d="M5 9h14M5 15h14M10 4 8 20M16 4l-2 16"/>' },
+  { key: "syllabus", label: "University syllabus",
+    icon: '<path d="m12 4 9 4.5-9 4.5-9-4.5L12 4Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/>' },
 ];
 
 // Landing page par jo 4 video hain (assets/home.js `videos`): yahan sabse upar aate hain.
@@ -77,22 +102,22 @@ const rows = [
   ["Uqzdhz5ETfE", "stories", "THE HOME COMING | by RABINDRANATH TAGORE in Hindi | English Literature", "10:13"],
   ["-UTqy7rvZlQ", "stories", "A flight of Pigeons by Ruskin Bond | A flight of Pigeons Summary in Hindi", "5:06"],
   ["k7hyDjo45iM", "stories", "A Hot Noon in Malabar | A hot noon in Malabar In English Literature | A Hot noon in Malabar In Hindi", "9:13"],
-  ["k6Ky7r95-Yo", "stories", "An Apology for idlers by R. L. Stevenson short summary in Hindi and English", "13:58"],
-  ["AuPnCUdfjBw", "stories", "On Running After one's Hat by G. K. Chesterton short summary in Hindi", "6:42"],
-  ["RC8gsYeI0vM", "stories", "On shaking Hands by Alfred George Gardiner short summary  in Hindi", "7:08"],
-  ["1kyhH80iQak", "stories", "On Doing Nothing by J. B. Priestley short summary  in Hindi", "9:17"],
-  ["cdXx9TFnSI0", "stories", "Patriotism Beyond Politics and Religion  by A. P. J. Abdul Kalam for BA 1 CCSU Meerut", "5:55"],
-  ["7_WMyh6BPtY", "stories", "Professions for Women | Professions for Women By Virginia  Woolf Explain In Hindi BA 1 CCSU Meerut", "7:03"],
+  ["k6Ky7r95-Yo", "essays", "An Apology for idlers by R. L. Stevenson short summary in Hindi and English", "13:58"],
+  ["AuPnCUdfjBw", "essays", "On Running After one's Hat by G. K. Chesterton short summary in Hindi", "6:42"],
+  ["RC8gsYeI0vM", "essays", "On shaking Hands by Alfred George Gardiner short summary  in Hindi", "7:08"],
+  ["1kyhH80iQak", "essays", "On Doing Nothing by J. B. Priestley short summary  in Hindi", "9:17"],
+  ["cdXx9TFnSI0", "essays", "Patriotism Beyond Politics and Religion  by A. P. J. Abdul Kalam for BA 1 CCSU Meerut", "5:55"],
+  ["7_WMyh6BPtY", "essays", "Professions for Women | Professions for Women By Virginia  Woolf Explain In Hindi BA 1 CCSU Meerut", "7:03"],
 
   // ---- Theory, criticism and thought
   ["95rzAsRpbEk", "theory", "क्या भाषा कभी सच बोलती है? | Paul de Man Theory Explained in Hindi", "12:07"],
   ["94nyij4f3rw", "theory", "Hélène Cixous | Biography of Hélène Cixous | Philosophy of Hélène Cixous in English literature", "8:02"],
   ["ki9fGYBATfg", "theory", "Jean Baudrillard | Jean Baudrillard Philosophy | Jean Baudrillard Major Concepts in Literature", "9:10"],
   ["VM4VxhOGQnY", "theory", "Michel Foucault | Philosophy of Michel Foucault | Biography of Michel Foucault | English Literature", "16:58"],
-  ["2x0MegP5Fvw", "theory", "Jean-Paul Sartre | Jean-Paul Sartre Biography | Jean-Paul Sartre Philosophy | Sartre Existentialism", "12:17"],
-  ["0gh0dbyQnj0", "theory", "Friedrich Nietzsche | Philosophy of Friedrich Nietzsche | Biography of Friedrich Nietzsche", "13:49"],
-  ["j8tCO0vQNcM", "theory", "Epicurus | Biography of Epicurus | Philosophy of Epicurus in English Literature", "6:41"],
-  ["rjRcmIySa8c", "theory", "The Republic | The Republic Book Summary | The Republic By Plato in HIndi", "7:00"],
+  ["2x0MegP5Fvw", "philosophy", "Jean-Paul Sartre | Jean-Paul Sartre Biography | Jean-Paul Sartre Philosophy | Sartre Existentialism", "12:17"],
+  ["0gh0dbyQnj0", "philosophy", "Friedrich Nietzsche | Philosophy of Friedrich Nietzsche | Biography of Friedrich Nietzsche", "13:49"],
+  ["j8tCO0vQNcM", "philosophy", "Epicurus | Biography of Epicurus | Philosophy of Epicurus in English Literature", "6:41"],
+  ["rjRcmIySa8c", "philosophy", "The Republic | The Republic Book Summary | The Republic By Plato in HIndi", "7:00"],
   ["lMwkqt-boIo", "theory", "Langue and Parole | Ferdinand De Saussure | In HIndi | English Literature", "3:12"],
   ["e1c6vLXT9Ho", "theory", "F. R. Leavis | F. R. Leavis New Criticism | F. R. Leavis  Theory | F. R. Leavis in Literature", "6:55"],
   ["wRoYfK8Kz3I", "theory", "What is Postmodernism | PostModernism In English Literature | PostModernism Literary theory.", "11:22"],
@@ -106,13 +131,13 @@ const rows = [
   ["4sfao4BrOok", "terms", "Foreshadowing Explained in Hindi | BA & NET English Literature", "3:36"],
   ["xuXBUSKUyT0", "terms", "What is a foil character in English literature? | Easy Definition & Examples", "3:47"],
   ["vxOaXsfhqAM", "terms", "Flashback (Analepsis) Explained in Easy Hindi | Literary Devices", "3:45"],
-  ["ox_p5F49gtQ", "terms", "Regional novel  |  Regional Novel in English Literature |  Regional Novel Types and In Hindi", "4:17"],
-  ["BLuPCV50yD0", "terms", "Science Fiction | Science Fiction in Hindi | Science Fiction Types  | TGT PGT NET", "8:01"],
+  ["ox_p5F49gtQ", "novel-types", "Regional novel  |  Regional Novel in English Literature |  Regional Novel Types and In Hindi", "4:17"],
+  ["BLuPCV50yD0", "novel-types", "Science Fiction | Science Fiction in Hindi | Science Fiction Types  | TGT PGT NET", "8:01"],
   ["EXOyUD1Fc-M", "terms", "Kinds of Characterization | Characters | Kinds of Characters | Characterization in Hindi", "4:49"],
   ["BTP69QCNN2A", "terms", "What is narrative technique | Kinds of narrative technique |  narrative technique In Literature", "4:38"],
-  ["S5i3AO6_YGA", "terms", "Historical novel | Historical novel Types | Historical novel explained in Hindi for BA MA NET", "4:14"],
-  ["nlKThL_tk6w", "terms", "Picaresque novel | Picaresque novel Explain In Hindi | Picaresque novel In English Literature", "4:51"],
-  ["V9k7a4N60dM", "terms", "Gothic novel | Gothic novel explained in Hindi | Gothic novel in  English NET/JRF TGT PGT", "2:51"],
+  ["S5i3AO6_YGA", "novel-types", "Historical novel | Historical novel Types | Historical novel explained in Hindi for BA MA NET", "4:14"],
+  ["nlKThL_tk6w", "novel-types", "Picaresque novel | Picaresque novel Explain In Hindi | Picaresque novel In English Literature", "4:51"],
+  ["V9k7a4N60dM", "novel-types", "Gothic novel | Gothic novel explained in Hindi | Gothic novel in  English NET/JRF TGT PGT", "2:51"],
   ["B_3556oDM7k", "terms", "What is short story | types of short story | Elements of short story Explain in hindi", "13:19"],
   ["FKJaPIFZat0", "terms", "Elements of Short Stories | What is Short Story Explain In Hindi for BA 1st year CCS University", "8:30"],
   ["bNVN-lJyb_8", "terms", "Types of Prose and Prose Style | What is Prose and Prose Style in Hindi for CCS University BA 1st", "17:04"],
@@ -124,16 +149,16 @@ const rows = [
   ["PSMxAP1jCAE", "terms", "What is Plot in Fiction | Types of Plot in Hindi | Elements of Plot Explain Hindi | Plot in Hindi", "5:44"],
 
   // ---- Writers' lives
-  ["M5gV6mMxf_k", "writers", "Franz Kafka Explained in Hindi | Biography, Works & The Dark World of Kafka", "10:27"],
-  ["qBCTEndWlGM", "writers", "William Shakespeare | Biography of William Shakespeare | Works of William Shakespeare", "10:00"],
-  ["UqKVfP5kMIk", "writers", "Oscar Wilde | Biography of Oscar Wilde | Works & Contribution in English Literature", "8:21"],
-  ["DRJiS0BeDFY", "writers", "John Milton | Biography of John Milton | John Milton In English Literature", "4:55"],
-  ["_fq6jSkg2qQ", "writers", "Virginia Woolf | Biography of Virginia Woolf | Works of Virginia Woolf", "6:57"],
-  ["MgV9icrr3DM", "writers", "Mulk Raj Anand | Mulk Raj Anand Biography and Works In Hindi For PGT NET English Literature", "24:24"],
-  ["FzVEbqoudGs", "writers", "Jayanta Mahapatra | Biography of Jayanta Mahapatra | Life and Works Of Jayanta Mahapatra", "6:25"],
-  ["yFfYp4KcB8c", "writers", "Nissim Ezekiel | Biography of Nissim Ezekiel | Life and Works of Nissim Ezekiel in Hindi", "7:00"],
-  ["n-3EeHpZePA", "writers", "Vikram Seth | Vikram Seth Biography | Vikram Seth Works and Life | Vikram Seth Biography in Hindi", "4:20"],
-  ["QnWV6mDlFR0", "writers", "Biography of Sarojini Naidu | Life and Wors of Sarojini Naidu | Sarojini Naidu In Indian English Lit", "5:31"],
+  ["M5gV6mMxf_k", "biographies", "Franz Kafka Explained in Hindi | Biography, Works & The Dark World of Kafka", "10:27"],
+  ["qBCTEndWlGM", "biographies", "William Shakespeare | Biography of William Shakespeare | Works of William Shakespeare", "10:00"],
+  ["UqKVfP5kMIk", "biographies", "Oscar Wilde | Biography of Oscar Wilde | Works & Contribution in English Literature", "8:21"],
+  ["DRJiS0BeDFY", "biographies", "John Milton | Biography of John Milton | John Milton In English Literature", "4:55"],
+  ["_fq6jSkg2qQ", "biographies", "Virginia Woolf | Biography of Virginia Woolf | Works of Virginia Woolf", "6:57"],
+  ["MgV9icrr3DM", "biographies", "Mulk Raj Anand | Mulk Raj Anand Biography and Works In Hindi For PGT NET English Literature", "24:24"],
+  ["FzVEbqoudGs", "biographies", "Jayanta Mahapatra | Biography of Jayanta Mahapatra | Life and Works Of Jayanta Mahapatra", "6:25"],
+  ["yFfYp4KcB8c", "biographies", "Nissim Ezekiel | Biography of Nissim Ezekiel | Life and Works of Nissim Ezekiel in Hindi", "7:00"],
+  ["n-3EeHpZePA", "biographies", "Vikram Seth | Vikram Seth Biography | Vikram Seth Works and Life | Vikram Seth Biography in Hindi", "4:20"],
+  ["QnWV6mDlFR0", "biographies", "Biography of Sarojini Naidu | Life and Wors of Sarojini Naidu | Sarojini Naidu In Indian English Lit", "5:31"],
 
   // ---- Syllabus help
   ["K6pEeO6vi8w", "syllabus", "CCS University BA 1st Semester English Complete Syllabus 2025 | NEP Pattern", "2:26:49"],
@@ -152,7 +177,9 @@ featuredIds.forEach((id) => {
 
 const all = rows.map(([id, topic, title, duration]) => ({ id, topic, title, duration }));
 const featured = featuredIds.map((id) => all.find((v) => v.id === id));
-const rest = all.filter((v) => !featuredIds.includes(v.id));
+const order = topics.map((t) => t.key);
+const rest = all.filter((v) => !featuredIds.includes(v.id))
+  .sort((a, b) => order.indexOf(a.topic) - order.indexOf(b.topic)); // tiles ke order me (stable sort)
 
 module.exports = {
   // Pehle landing page wale 4, phir baaki topic ke order me.

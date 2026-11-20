@@ -111,13 +111,34 @@
 <section class="vl-browse" id="lessons" aria-labelledby="vl-heading">
   <div class="wrap">
     <h2 id="vl-heading">Browse the lessons</h2>
-    <p class="vl-lede">{{ videoLessons.total }} lessons from the channel, sorted by topic. Each title is shown exactly as it appears on YouTube, and each video opens on YouTube in a new tab.</p>
+    <p class="vl-lede">{{ videoLessons.total }} lessons from the channel, sorted into playlists. Each title is shown exactly as it appears on YouTube, and each video opens on YouTube in a new tab.</p>
 
-    <div class="vl-chips" id="vlChips" role="group" aria-label="Filter lessons by topic" hidden>
-      <button class="vl-chip" type="button" data-topic="all" aria-pressed="true">All<span class="n">{{ videoLessons.total }}</span></button>
-      {%- for t in videoLessons.topics %}
-      <button class="vl-chip" type="button" data-topic="{{ t.key }}" aria-pressed="false">{{ t.label }}<span class="n">{{ t.count }}</span></button>
-      {%- endfor %}
+    {# The picker needs JavaScript, so it stays hidden until the script shows it. With no script every lesson is simply listed. #}
+    <div class="vl-picker" id="vlPicker" hidden>
+      <button class="vl-bar" id="vlBar" type="button" aria-expanded="false" aria-controls="vlPanel">
+        <span class="vl-bar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h11M4 11h11M4 16h7"/><path d="m17 13 4 3-4 3Z"/></svg></span>
+        <span class="vl-bar-txt"><b>Choose Your Playlist</b><span class="now" id="vlBarNow">All lessons &middot; {{ videoLessons.total }}</span></span>
+        <span class="vl-bar-caret" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+      </button>
+      <div class="vl-panel" id="vlPanel" role="group" aria-label="Playlists" hidden>
+        <ul class="vl-lists">
+          <li><button class="vl-list" type="button" data-topic="all" aria-pressed="true">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            <span class="tx"><b>All lessons</b><span>{{ videoLessons.total }} lessons</span></span>
+          </button></li>
+          {%- for t in videoLessons.topics %}
+          <li><button class="vl-list" type="button" data-topic="{{ t.key }}" data-name="{{ t.label }}"{% if t.yt %} data-yt-id="{{ t.yt.id }}" data-yt-title="{{ t.yt.title }}"{% endif %} aria-pressed="false">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ t.icon | safe }}</svg></span>
+            <span class="tx"><b>{{ t.label }}</b><span>{{ t.count }} {% if t.count == 1 %}lesson{% else %}lessons{% endif %}</span></span>
+          </button></li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <div class="vl-head" id="vlHead" hidden>
+      <h3 id="vlTitle">All lessons</h3>
+      <a class="vl-yt" id="vlYt" href="#" target="_blank" rel="noopener" hidden>More on YouTube: <span id="vlYtName"></span> &#8599;</a>
     </div>
 
     <ul class="vl-grid" id="vlGrid">
