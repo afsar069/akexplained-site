@@ -4,12 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Video Lessons | AK Explained</title>
-<meta name="description" content="Full-length English literature video lessons from the AK Explained channel — plays, poems, movements and criticism explained for BA, MA, UGC-NET and PGT students.">
+<meta name="description" content="English literature video lessons from the AK Explained YouTube channel: poems, novels, plays, short stories, theory and writers' lives for BA, MA, NET and PGT.">
 <link rel="icon" href="/assets/logo.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<link rel="stylesheet" href="/assets/video-lessons.css">
 </head>
 <body class="mcq-sec-page">
 <a class="skip" href="#main">Skip to content</a>
@@ -97,29 +98,77 @@
   </div>
 </section>
 
+{# Videos come from _data/videoLessons.js: real videos of the AK Explained channel. #}
 <section class="intro-band">
   <div class="wrap">
-    <h2>Lessons on the channel</h2>
+    <h2>Lessons from the channel</h2>
     <p>AK Explained began as a YouTube channel, and the videos are still the best place to meet a text for the first time. Full-length explainers run through plays, poems and movements at the pace of a classroom, in the language students actually think in.</p>
-    <p>Every lesson lives on the channel. Subscribe there and new lessons reach you first.</p>
+    <p>Every lesson opens on YouTube. Subscribe there and new lessons reach you first.</p>
     <p><a class="btn" href="/go/youtube" rel="noopener">Open the YouTube channel</a></p>
   </div>
 </section>
 
-<section style="background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border)">
+<section class="vl-browse" id="lessons" aria-labelledby="vl-heading">
   <div class="wrap">
-    <div class="soon">
-      <img src="/assets/books-stack.webp" alt="" width="150" height="118" loading="lazy">
-      <span class="badge">Being organised</span>
-      <p>Lesson-by-lesson listings &mdash; sorted by age, by text and by examination &mdash; are being put together for this page. Until then, the full set is on the channel itself.</p>
-      <a class="btn" href="/go/youtube" rel="noopener">Watch on YouTube</a>
+    <h2 id="vl-heading">Browse the lessons</h2>
+    <p class="vl-lede">{{ videoLessons.total }} lessons from the channel, sorted into playlists. Each title is shown exactly as it appears on YouTube, and each video opens on YouTube in a new tab.</p>
+
+    {# The picker needs JavaScript, so it stays hidden until the script shows it. With no script every lesson is simply listed. #}
+    <div class="vl-picker" id="vlPicker" hidden>
+      <button class="vl-bar" id="vlBar" type="button" aria-expanded="false" aria-controls="vlPanel">
+        <span class="vl-bar-ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h11M4 11h11M4 16h7"/><path d="m17 13 4 3-4 3Z"/></svg></span>
+        <span class="vl-bar-txt"><b>Choose Your Playlist</b><span class="now" id="vlBarNow">All lessons &middot; {{ videoLessons.total }}</span></span>
+        <span class="vl-bar-caret" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
+      </button>
+      <div class="vl-panel" id="vlPanel" role="group" aria-label="Playlists" hidden>
+        <ul class="vl-lists">
+          <li><button class="vl-list" type="button" data-topic="all" aria-pressed="true">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m10 8.5 6 3.5-6 3.5Z"/></svg></span>
+            <span class="tx"><b>All lessons</b><span>{{ videoLessons.total }} lessons</span></span>
+          </button></li>
+          {%- for t in videoLessons.topics %}
+          <li><button class="vl-list" type="button" data-topic="{{ t.key }}" data-name="{{ t.label }}"{% if t.yt %} data-yt-id="{{ t.yt.id }}" data-yt-title="{{ t.yt.title }}"{% endif %} aria-pressed="false">
+            <span class="ico" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">{{ t.icon | safe }}</svg></span>
+            <span class="tx"><b>{{ t.label }}</b><span>{{ t.count }} {% if t.count == 1 %}lesson{% else %}lessons{% endif %}</span></span>
+          </button></li>
+          {%- endfor %}
+        </ul>
+      </div>
     </div>
+
+    <div class="vl-head" id="vlHead" hidden>
+      <h3 id="vlTitle">All lessons</h3>
+      <a class="vl-yt" id="vlYt" href="#" target="_blank" rel="noopener" hidden>More on YouTube: <span id="vlYtName"></span> &#8599;</a>
+    </div>
+
+    <ul class="vl-grid" id="vlGrid">
+      {%- for v in videoLessons.videos %}
+      <li class="vl-item" data-topic="{{ v.topic }}">
+        <a class="vl-card" data-topic="{{ v.topic }}" href="https://youtu.be/{{ v.id }}" target="_blank" rel="noopener" title="{{ v.title }}">
+          <span class="thumb">
+            <img src="https://img.youtube.com/vi/{{ v.id }}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" onerror="this.style.display='none'">
+            <span class="play"><svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5Z"/></svg></span>
+            <span class="len"><span class="sr-only">Length: </span>{{ v.duration }}</span>
+          </span>
+          <h3>{{ v.title }}</h3>
+          <p>{% for t in videoLessons.topics %}{% if t.key == v.topic %}{{ t.label }}{% endif %}{% endfor %}</p>
+        </a>
+      </li>
+      {%- endfor %}
+    </ul>
+
+    <div class="vl-foot" id="vlFoot" hidden>
+      <p class="vl-status" id="vlStatus" aria-live="polite"></p>
+      <button class="btn vl-more" id="vlMore" type="button">Show more lessons</button>
+    </div>
+
+    <p class="vl-note">The channel has more lessons than are listed here. <a href="/go/youtube" rel="noopener">Open YouTube</a> to see all of them.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>While you wait</h2>
+    <h2>Keep learning</h2>
     <div class="grid g3">
       <a class="card" href="/english-literature/"><p class="meta">Read</p><h3>British Literature by Ages</h3><p>The whole timeline, Old English to the present.</p></a>
       <a class="card" href="/quizzes/mcq/"><p class="meta">Practice</p><h3>MCQ Practice</h3><p>Check what a lesson actually left behind.</p></a>
@@ -189,5 +238,6 @@
 </footer>
 
 <script src="/assets/nav.js" defer></script>
+<script src="/assets/video-lessons.js" defer></script>
 </body>
 </html>

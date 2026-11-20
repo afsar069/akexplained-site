@@ -1,0 +1,122 @@
+/* /video-lessons/ — "Choose Your Playlist" bar, playlist panel and video cards
+   (card look copied from the home page video cards) */
+
+.vl-browse{background:var(--paper);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.vl-browse h2{margin-bottom:6px}
+.vl-lede{margin:0 0 20px;max-width:70ch}
+
+/* ---------- Intro band: no picture on this page (owner, 2026-11-20) ---------- */
+.intro-band::before{display:none}
+.intro-band{padding:34px 0}
+
+/* ---------- The bar ---------- */
+.vl-picker{margin:0 0 22px;max-width:none}
+.vl-picker[hidden]{display:none}
+.vl-bar{
+  display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;
+  font:inherit;color:#fff;padding:14px 18px;border:0;border-radius:14px;
+  background:linear-gradient(100deg,#0F766E 0%,#16847A 100%);   /* lighter teal (owner, 2026-11-20); white text stays above 4.5:1 */
+  border-left:5px solid var(--gold);
+  box-shadow:0 10px 24px -14px rgba(22,48,74,.55);
+  transition:box-shadow .25s,transform .2s;
+}
+.vl-bar:hover{box-shadow:var(--glow),0 14px 28px -12px rgba(22,48,74,.6)}
+.vl-bar:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.vl-bar[aria-expanded="true"]{border-bottom-left-radius:0;border-bottom-right-radius:0}
+.vl-bar-ico{display:flex;width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.12);align-items:center;justify-content:center;flex:none}
+.vl-bar-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.vl-bar-txt b{font-family:var(--serif,inherit);font-size:1.12rem;font-weight:700;letter-spacing:.01em;line-height:1.2}
+.vl-bar-txt .now{font-size:.88rem;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vl-bar-caret{display:flex;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.14);align-items:center;justify-content:center;flex:none;transition:transform .25s}
+.vl-bar[aria-expanded="true"] .vl-bar-caret{transform:rotate(180deg)}
+
+/* ---------- The panel (opens under the bar) ---------- */
+.vl-panel{
+  background:#fff;border:1px solid var(--border);border-top:0;
+  border-radius:0 0 14px 14px;padding:16px;
+  box-shadow:0 18px 30px -20px rgba(22,48,74,.45);
+}
+.vl-panel[hidden]{display:none}
+.vl-lists{display:grid;grid-template-columns:repeat(auto-fill,minmax(236px,1fr));gap:10px;list-style:none;margin:0;padding:0;max-width:none}
+.vl-lists li{margin:0;padding:0;max-width:none}
+.vl-list{
+  display:flex;align-items:center;gap:12px;width:100%;text-align:left;cursor:pointer;
+  font:inherit;color:var(--ink);background:var(--tint);padding:11px 13px;
+  border:1.5px solid transparent;border-radius:12px;
+  transition:background .2s,border-color .2s,transform .2s,box-shadow .25s;
+}
+.vl-list .ico{display:flex;width:40px;height:40px;border-radius:10px;background:#fff;color:var(--teal);align-items:center;justify-content:center;flex:none;border:1px solid var(--border)}
+.vl-list .tx{display:flex;flex-direction:column;min-width:0}
+.vl-list .tx b{font-size:.94rem;font-weight:600;line-height:1.25}
+.vl-list .tx span{font-size:.78rem;color:var(--muted,#5b6b7a);margin-top:2px}
+.vl-list:hover{border-color:var(--teal);transform:translateY(-2px);box-shadow:0 10px 18px -10px rgba(15,118,110,.5)}
+.vl-list:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.vl-list[aria-pressed="true"]{background:var(--teal);color:#fff}
+.vl-list[aria-pressed="true"] .tx span{color:rgba(255,255,255,.85)}
+.vl-list[aria-pressed="true"] .ico{border-color:transparent}
+
+/* ---------- Current playlist heading ---------- */
+.vl-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 18px;margin:0 0 16px}
+.vl-head[hidden]{display:none}
+.vl-head h3{margin:0;font-size:1.25rem}
+.vl-yt{font-size:.9rem;font-weight:600;color:var(--teal-dark)}
+.vl-yt[hidden]{display:none}
+
+/* ---------- Video grid ---------- */
+.vl-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));max-width:none;margin:0;padding:0;list-style:none}
+.vl-item{display:block;margin:0;padding:0;max-width:none}
+.vl-item[hidden]{display:none}
+.vl-card{display:block;color:inherit;transition:transform .22s cubic-bezier(.2,.7,.3,1)}
+.vl-card:hover{transform:translateY(-5px)}
+.vl-card .thumb{
+  position:relative;aspect-ratio:16/9;border-radius:13px;overflow:hidden;margin-bottom:11px;
+  background:linear-gradient(135deg,#1E4A47,#16304A);border:1px solid var(--card-line);
+  display:flex;align-items:center;justify-content:center;transition:box-shadow .28s;
+}
+.vl-card:hover .thumb{box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.42)}
+.vl-card .thumb img{width:100%;height:100%;object-fit:cover}
+.vl-card .play{
+  position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.93);
+  display:flex;align-items:center;justify-content:center;color:var(--teal);
+  box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .22s;
+}
+.vl-card:hover .play{transform:scale(1.12)}
+.vl-card .len{
+  position:absolute;right:8px;bottom:8px;padding:2px 7px;border-radius:6px;
+  background:rgba(10,20,30,.82);color:#fff;font-size:.74rem;font-weight:600;letter-spacing:.02em;
+}
+.vl-card h3{
+  font-size:.96rem;line-height:1.35;margin:0 0 4px;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;
+}
+.vl-card p{font-size:.78rem;margin:0;color:var(--teal);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+
+.vl-foot{margin-top:26px;text-align:center}
+.vl-foot[hidden]{display:none}
+.vl-status{margin:0 0 12px;font-size:.9rem}
+.vl-more{margin:0}
+.vl-more[hidden]{display:none}
+.vl-note{margin:22px auto 0;max-width:62ch;text-align:center;font-size:.92rem}
+
+/* ---------- Phone ---------- */
+@media(max-width:559px){
+  .vl-bar{padding:12px 14px;gap:11px}
+  .vl-bar-ico{width:38px;height:38px}
+  .vl-bar-txt b{font-size:1.02rem}
+  .vl-panel{padding:10px}
+  .vl-lists{grid-template-columns:1fr;gap:8px}
+  .vl-grid{grid-template-columns:1fr;gap:10px}
+  .vl-card{
+    display:grid;grid-template-columns:42% minmax(0,1fr);column-gap:13px;align-items:center;
+    padding:9px;border:1px solid var(--card-line);border-radius:13px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .vl-card .thumb{grid-row:1 / span 2;margin-bottom:0;border-radius:10px}
+  .vl-card .play{width:34px;height:34px}
+  .vl-card .play svg{width:16px;height:16px}
+  .vl-card h3,.vl-card p{grid-column:2}
+  .vl-card h3{-webkit-line-clamp:4;line-clamp:4}
+}
+@media(prefers-reduced-motion:reduce){
+  .vl-bar,.vl-bar-caret,.vl-list,.vl-card,.vl-card .play,.vl-card .thumb{transition:none}
+}
