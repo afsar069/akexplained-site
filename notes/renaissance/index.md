@@ -12,7 +12,7 @@ hero_variants:
     image: /assets/ages/early-tudor-hero-full-light.webp
   - age: elizabethan
     image: /assets/ages/elizabethan-hero-full-light.webp
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -28,7 +28,10 @@ prev:
 next:
   label: Jacobean and Caroline
   href: /notes/jacobean-and-caroline-age/
+reading_time_main: true
 ---
+
+The previous century gave England readers of Chaucer, Malory and early printed books. Renaissance writers inherited that culture and opened it to fresh possibilities. Classical learning encouraged new questions; religious change made the language of belief a matter of public conflict; poets and actors tested what English could do. A courtly lyric, a translated Bible and a play for a paying crowd might appear far apart, yet all raise questions about audience and the power of words. Read this guide as a story of expanding literary choices. The wider Renaissance also contains the Early Tudor, Elizabethan and early seventeenth-century chapters on the timeline, so its connections are a set of branches rather than one simple line.
 
 In 1476 a merchant named William Caxton set up a printing press at Westminster. Until then a book was a rare and costly thing, copied slowly by hand, and only the rich or the learned could own one. The press changed this. Within a few decades ideas could travel across the country faster than any rider, and ordinary readers began to ask for books in their own language.
 

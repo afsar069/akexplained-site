@@ -16,7 +16,10 @@ eleventyExcludeFromCollections: true
 prev:
   label: British Literature timeline
   href: /english-literature/
+reading_time_main: true
 ---
+
+The Augustan chapter made sharp judgement a public art. The later eighteenth century asks readers to pay closer attention to feeling as well. What can a poem make us notice about people whose lives have left little public record? Can a novel train sympathy, and can sympathy itself be mistaken? Gray, Johnson, Goldsmith and other writers approach those questions through different forms. The change is a shift of emphasis rather than a ban on wit or reason. This chapter connects the ordered verse and public debate of the earlier century with the interest in memory, landscape and individual experience that helps prepare Romantic writing. Read for the meeting of thought and feeling, not for a sudden victory of one over the other.
 
 The Age of Sensibility gives greater attention to feeling, sympathy and the reader's emotional response. It does not mean that reason disappeared after 1745; literary tastes overlapped. The label is useful for tracing a change within eighteenth-century culture before Romanticism.
 
@@ -98,6 +101,48 @@ Horace Walpole's *The Castle of Otranto* appeared in 1764 and is conventionally 
 The date 1785 marks a teaching boundary on this timeline. It is not the date when every writer stopped valuing sensibility. Cowper's *The Task* appeared in that year. *Lyrical Ballads* followed in 1798 and became another important landmark for accounts of Romanticism. Both chronology and literary continuity matter when a course chooses one boundary rather than another.
 
 
+## Sympathy can change what deserves attention
+
+A poem does not have to describe a famous person to ask a serious question about human value. Gray's Elegy turns toward people whose lives have left few public records. The act of noticing them becomes part of the poem's moral work. A reader is invited to consider the distance between a life's worth and the recognition it receives.
+
+This is a useful way to understand sensibility without making it a synonym for sadness. The issue is the ability to respond to another life. Feeling may begin in a scene, a memory or an imagined possibility. The writing then asks what that response should make us recognise. Emotion becomes a way of directing attention.
+
+At the same time, sympathy needs examination. A reader can be moved by an account that is incomplete or shaped to produce a particular effect. Literature can encourage concern while also asking how concern is guided. The question is not simply whether a work makes us feel, but how it makes us feel and what judgement follows.
+
+## Gray: an ordered form holds an unsettled thought
+
+The churchyard gives the Elegy a place from which to think about mortality. The poem moves from an observed setting toward imagined lives and unrealised possibilities. Its subject is not confined to the fact that everyone dies. It also asks how opportunity, remembrance and social position affect the lives that are lived before death.
+
+The verse remains carefully ordered. That matters because powerful feeling need not appear in a broken or formless structure. Rhythm and repeated stanza shape can make reflection steady enough for a reader to stay with difficult questions. Explain the relation between the calm movement and the emotional pressure rather than assuming that form merely decorates the thought.
+
+There is also a change of distance within the act of remembering. The speaker looks toward other lives, but the poem gradually makes the relation between observer and observed important. A person who remembers the dead may also imagine being remembered. The movement brings the question back toward the speaker and the reader. Sympathy is both outward-looking and aware of shared mortality.
+
+## Johnson: judgement remains part of the story
+
+The presence of Johnson prevents a simple account in which feeling replaces thought after Pope. A dictionary involves choices about meaning and usage; an edition examines the text a reader is to encounter; criticism weighs the effects and claims of writing. These activities belong beside the century's interest in sympathy. They show a culture continuing to ask how judgement should work.
+
+It is useful to compare the kinds of evidence involved. An emotional response may be important, but it cannot by itself establish a publication date or settle an authorship question. Conversely, getting a date right does not explain the effect of a poem. Literary study needs both kinds of attention. The factual foundation makes the interpretation accountable without doing all its work.
+
+## Goldsmith and the reader's expectation of comedy
+
+Comedy can expose the difference between what a character expects and what is actually happening. She Stoops to Conquer is useful for thinking about how misunderstanding changes behaviour. A social assumption may give someone confidence in one setting and take it away in another. The plot makes those habits visible through action.
+
+The stage also lets an audience know more than a character. We can recognise an error and wait to see how long it will continue. That gap creates pleasure, but it can also expose the assumptions that made the error possible. Comedy therefore has a way of teaching without turning every speech into an instruction. The audience learns by following the consequences.
+
+## Gothic fiction offers another emotional test
+
+The Castle of Otranto places fear and the marvellous within a story of threatened security. The past does not remain safely behind the present. A building, an inheritance or a claim to authority can become uncertain. The reader is made to ask what a familiar order may conceal.
+
+Do not treat the supernatural element as a historical claim. It belongs to the fiction's method of producing pressure and possibility. The Gothic can make the ordinary rules of a world seem less dependable, allowing fear to become a way of examining power. A useful answer explains the relation between the frightening event and the structure of authority around it.
+
+The genre also connects the period with older literary interests. Medieval settings and recovered traditions can provide material for new kinds of reading. The return to the past is therefore not simply backward movement. It can create a new experience for a contemporary audience. That is one of the bridges between sensibility and the Romantic imagination.
+
+## From feeling to imagination
+
+The next period will give imagination and individual experience a more prominent place in many accounts of poetry. The connection is prepared here through memory, sympathy, landscape and attention to lives outside public fame. Those interests do not all lead in the same direction, and their continuation does not make every later work identical.
+
+When revising the transition, choose one clear comparison. Gray and Wordsworth can be connected through attention to ordinary lives, but their language and purposes need separate explanation. Goldsmith and a later novelist may both use sympathy, yet do so through different kinds of narrative. A connection becomes convincing when it includes a difference rather than replacing one period with another label.
+
 ## Key terms
 
 - **Epistolary novel** - a novel told through letters, as in Richardson's *Pamela*.
@@ -130,7 +175,7 @@ The date 1785 marks a teaching boundary on this timeline. It is not the date whe
 9. **Rhymed quatrains** — Its ordered stanza form expresses reflection and feeling.
 10. **No; it is a teaching boundary** — Literary tastes overlap across period boundaries.
 
-## Quick quiz - 10 questions
+## Quick quiz - 15 questions
 
 Tap an answer to see at once if it is right. You do not need to log in.
 
@@ -223,6 +268,51 @@ Answer: A. Its ordered stanza form expresses reflection and feeling.
 - D) Yes; poetry was banned
 
 Answer: B. Literary tastes overlap across period boundaries.
+
+**11. What question does Gray's attention to ordinary graves raise?**
+
+- A) Whether all rural people were famous
+- B) Whether rhyme makes sympathy impossible
+- C) How human worth relates to public recognition
+- D) Whether only rulers can appear in poetry
+
+Answer: C. The poem considers lives that left little public record.
+
+**12. Which statement about strong feeling and poetic form is accurate?**
+
+- A) Feeling requires the absence of rhythm
+- B) Every elegy must be prose
+- C) A regular stanza forbids reflection
+- D) Strong feeling can work through an ordered form
+
+Answer: D. Gray's verse joins emotional pressure with a controlled movement.
+
+**13. Why does Johnson matter within an age of sensibility?**
+
+- A) Judgement and textual study continue beside feeling
+- B) All criticism had ended
+- C) He wrote no prose
+- D) He belonged to the Anglo-Norman period
+
+Answer: A. Feeling does not simply replace intellectual examination.
+
+**14. What can dramatic misunderstanding reveal in comedy?**
+
+- A) The writer's opinion in every line without mediation
+- B) Assumptions that shape a character's behaviour
+- C) The exact date of every manuscript
+- D) The absence of an audience
+
+Answer: B. An audience can see an error and follow its consequences.
+
+**15. What is a useful connection from sensibility to Romanticism?**
+
+- A) The compulsory use of heroic drama
+- B) A complete ban on landscape
+- C) Interest in memory, sympathy and individual experience
+- D) The disappearance of all earlier forms
+
+Answer: C. The connection is a development across overlapping interests.
 
 ## Frequently asked questions
 

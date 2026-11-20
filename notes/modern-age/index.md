@@ -12,7 +12,7 @@ hero_variants:
     image: /assets/ages/edwardian-hero-full-light.webp
   - age: georgian
     image: /assets/ages/georgian-hero-full-light.webp
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -28,7 +28,10 @@ prev:
 next:
   label: Contemporary Age
   href: /notes/contemporary-age/
+reading_time_main: true
 ---
+
+Edwardian social fiction and Georgian poetry continue into the years usually associated with Modernism. The connection matters: experiments in form did not appear in an empty literary world. Writers inherited stories, metres, stages and audiences, then questioned whether those forms could hold a changed experience. War, city life and new ways of thinking about the mind made time and point of view especially important. A poem might move between voices; a novel might follow the movement of thought instead of a simple chain of events. Read those experiments as choices with a purpose. Ask what the form lets a reader feel or understand that a more familiar method might have left outside the story.
 
 On 22 January 1901, Queen Victoria died at Osborne House on the Isle of Wight. She had ruled since 1837, so most people in Britain had never lived under another monarch. Her name had come to stand for a whole age of steady progress, strict manners and a vast empire. When the news spread, many felt that something larger than a reign had come to an end.
 

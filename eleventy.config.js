@@ -33,6 +33,14 @@ module.exports = function (eleventyConfig) {
     return Math.max(1, Math.round(words / 200));
   });
 
+  // Literary-age articles estimate the main reading, excluding study aids.
+  eleventyConfig.addFilter("mainReadingTime", function (content) {
+    const main = String(content).split(/<h2\b[^>]*>\s*(?:Writers and works|Key terms|Important points to remember|Quick revision|Quick quiz|Frequently asked questions|Sources)\b/i)[0];
+    const prose = main.replace(/<figure\b[\s\S]*?<\/figure>/gi, " ").replace(/<[^>]*>/g, " ");
+    const words = prose.trim().split(/\s+/).length;
+    return Math.max(1, Math.round(words / 200));
+  });
+
   // "Updated" tarikh ko saaf roop me dikhane ke liye. Pages CMS date ko
   // 2026-10-12 likhta hai, aur YAML use Date bana deta hai — bina is filter ke
   // page par lambi technical date ("Mon Oct 12 2026 00:00:00 GMT...") dikhti hai.

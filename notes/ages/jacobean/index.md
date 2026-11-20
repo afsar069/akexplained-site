@@ -16,7 +16,10 @@ eleventyExcludeFromCollections: true
 prev:
   label: British Literature timeline
   href: /english-literature/
+reading_time_main: true
 ---
+
+Elizabethan drama did not stop when Elizabeth died. Actors, writers and audiences carried their skills into the reign of James I. The connection is clear in Shakespeare's career, but continuity did not mean sameness. Jonson exposes greed through comedy; Webster places his characters in dangerous worlds of power; Donne makes a love poem sound like an urgent argument. The period becomes more interesting when these voices are heard together. As you read, ask what a speaker is trying to make someone believe. That question works in a tragedy, a satire, a sermon and a metaphysical lyric. It also helps explain why wit in this age is more than a clever phrase: it can be a way of testing ideas.
 
 The Jacobean age is the reign of James I in England. Court and public theatre continued after Elizabeth I, but plays often looked more sharply at corruption, power and violence. Poetry also became more argumentative and intellectually surprising.
 
@@ -178,7 +181,7 @@ A conceit is more than a decorative comparison. In Donne, the comparison can org
 13. **A surprising comparison worked out at length** — Donne's comparison of lovers to the legs of a pair of compasses is a famous example.
 14. **1605** — In it Bacon argued that knowledge must grow through observation and experiment.
 
-## Quick quiz - 14 questions
+## Quick quiz - 19 questions
 
 Tap an answer to see at once if it is right. You do not need to log in.
 
@@ -307,6 +310,51 @@ Answer: D. Donne's comparison of lovers to the legs of a pair of compasses is a 
 - D) 1625
 
 Answer: C. In it Bacon argued that knowledge must grow through observation and experiment.
+
+**15. How does a conceit often function in Donne?**
+
+- A) It replaces every speaker with a king
+- B) It guarantees the poem is historical prose
+- C) It helps organise the poem's argument
+- D) It supplies a compulsory happy ending
+
+Answer: C. An extended comparison can make a reader reconsider a relationship or idea.
+
+**16. Why is metaphysical a historical critical label?**
+
+- A) Donne registered a club with that title
+- B) It names a royal dynasty
+- C) It means all poetry after 1945
+- D) Later critics used it to describe certain poetic practices
+
+Answer: D. The label should not be confused with a group formally founded by Donne.
+
+**17. What does Jonson often expose through comedy?**
+
+- A) Greed and pretence
+- B) Only the Norman Conquest
+- C) Only an editor's bibliography
+- D) Only a pastoral funeral
+
+Answer: A. Comic action can reveal failures of judgement.
+
+**18. Which approach best compares Jacobean playwrights?**
+
+- A) Describe all tragedy as autobiography
+- B) Explain both shared conditions and distinct dramatic methods
+- C) Assume all plays have one tone
+- D) Ignore audiences and performance
+
+Answer: B. A common theatre culture does not make the works identical.
+
+**19. What should be kept distinct when dating Donne's work?**
+
+- A) All monarchs' reigns as one year
+- B) The reader's age and the poem's metre
+- C) Composition, circulation and later publication
+- D) Only the last printed edition and no other date
+
+Answer: C. A writer's career and the history of individual texts can cross period boundaries.
 
 ## Frequently asked questions
 

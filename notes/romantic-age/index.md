@@ -7,7 +7,7 @@ mark: R
 crumb_label: Romantic Age
 hero_image: /assets/ages/romantic-hero-full-light.webp
 hero_class: hero-age hero-article-full
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -23,7 +23,10 @@ prev:
 next:
   label: Victorian Age
   href: /notes/victorian-age/
+reading_time_main: true
 ---
+
+The Age of Sensibility had already drawn readers toward sympathy, memory and the emotional life. Romantic writers carried those interests into new arguments about imagination, nature and freedom. A walk, a remembered childhood scene or a meeting with a stranger could become the beginning of a serious poem. Yet Romanticism is not simply pleasant writing about the countryside. It also includes revolution, disappointment, isolation and difficult questions about responsibility. Follow the differences among the writers. Wordsworth's remembered experience, Coleridge's unsettling stories and Keats's intense attention do not offer one formula. Their connection is a willingness to ask what imagination can reveal about a person's relation to the world.
 
 In 1798, a thin book of poems appeared in Bristol with no author's name on its title page. It was called *Lyrical Ballads*. Two young friends, William Wordsworth and Samuel Taylor Coleridge, had written it, and a bookseller named Joseph Cottle published it. The book did not sell quickly, and the first reviewers were divided. Yet later readers chose it as the starting point of a new age in English writing.
 

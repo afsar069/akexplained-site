@@ -7,7 +7,7 @@ mark: C
 crumb_label: Contemporary
 hero_image: /assets/ages/postmodern-hero-full-light.webp
 hero_class: hero-age hero-article-full
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -20,7 +20,10 @@ topics: [angry-young-men, the-movement, theatre-of-the-absurd, postmodernism, po
 prev:
   label: Modern Age
   href: /notes/modern-age/
+reading_time_main: true
 ---
+
+Modernist writers had challenged simple stories about time, identity and a settled point of view. After the Second World War, later writers inherited those experiments while facing new political and cultural conditions. Some question the authority of a narrator, some revisit familiar stories, and others choose a plain surface to speak about everyday experience. Postmodern is therefore a useful label for particular methods, while post-1945 literature is a much wider field. Keep that distinction in mind. This chapter connects the broken certainties of the Modern period with writing that continues to ask who tells a story, who is left out, and what happens when an inherited account no longer seems complete.
 
 On 8 May 1945, crowds filled the streets of London to celebrate the end of the war in Europe. Winston Churchill, who had led Britain through nearly six years of fighting, was cheered like a hero. Less than three months later, the voters removed him from office in the general election of July 1945. They did not stop admiring him. They simply wanted a different country from the one he stood for.
 

@@ -10,7 +10,7 @@ hero_class: hero-age hero-article-full
 hero_variants:
   - age: neoclassical
     image: /assets/ages/neoclassical-hero-full-light.webp
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -26,7 +26,10 @@ prev:
 next:
   label: Augustan Age
   href: /notes/augustan-age/
+reading_time_main: true
 ---
+
+During the Commonwealth, public theatre had been restricted and political prose had argued over the future of government. The return of Charles II in 1660 changed the stage on which those questions were played out. Theatres reopened, courtly wit gained a new public life, and London became a meeting place for news, science and literary debate. It is easy to imagine only elegant people exchanging sharp remarks, but the age also includes religious dissent, enslavement, disaster and fierce political conflict. Read the comedy beside the satire and the prose. Together they show how a society could celebrate its return to order while continuing to argue about power, belief and the price of belonging.
 
 On 29 May 1660, the day he turned thirty, Charles II rode into London as king. Bells rang, and crowds filled the streets to watch a king come home. Eleven years earlier, in January 1649, his father Charles I had been beheaded outside the Banqueting House in Whitehall.
 

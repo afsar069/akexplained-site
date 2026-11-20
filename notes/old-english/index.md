@@ -7,7 +7,7 @@ mark: O
 crumb_label: Old English
 hero_image: /assets/ages/old-english-hero-full-light.webp
 hero_class: hero-old-english hero-article-full
-updated: 2026-10-12
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -17,7 +17,10 @@ age: old-english
 period: 450-1066
 exam_fit: [net, pgt, psc]
 topics: [beowulf, caedmon, cynewulf, exeter-book, vercelli-book, junius-manuscript, alfred, aelfric, wulfstan, kenning, elegy, anglo-saxon-chronicle]
+reading_time_main: true
 ---
+
+Before English literature had novels, theatres or printed books, it had voices in a hall. A storyteller could make listeners hear the sea, feel the fear outside a settlement, or remember a dead leader. Old English writing grew from that world of spoken memory, and Christian learning later helped carry it onto parchment. This is the starting point of our timeline, so there is no earlier English literary age to connect it to. There is, however, an older past behind it: Roman Britain, migration, inherited stories and changing beliefs. As you read, watch how the warmth of the hall stands against exile, danger and loss. That tension helps connect the hero of Beowulf with the lonely speakers of the elegies.
 
 English literature does not begin with English as we know it. It begins with a language that looks, on the page, like a foreign tongue: a language of thorns and ashes, of long compound words, of lines that hammer on the same sound again and again. This is Old English, also called Anglo-Saxon, and the writing made in it covers roughly six hundred years, from the Germanic settlement of Britain in the fifth century to the Norman Conquest of 1066.
 
