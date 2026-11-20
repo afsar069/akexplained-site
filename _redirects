@@ -5,6 +5,16 @@
 /go/instagram  https://www.instagram.com/akexplained              302
 /go/youtube    https://www.youtube.com/channel/UC3MKGiItBxSbP0r1VSTrpxA  302
 
+# Recover links to the summary pages replaced by the full original guides.
+/notes/ages/old-english/ /notes/old-english/ 301
+/notes/ages/renaissance/ /notes/renaissance/ 301
+/notes/ages/restoration/ /notes/restoration-age/ 301
+/notes/ages/augustan/ /notes/augustan-age/ 301
+/notes/ages/romantic/ /notes/romantic-age/ 301
+/notes/ages/victorian/ /notes/victorian-age/ 301
+/notes/ages/modern/ /notes/modern-age/ 301
+/notes/ages/postmodern/ /notes/contemporary-age/ 301
+
 # Pages removed or renamed in the 2026 redesign — keep old links working
 /exams/university/*  /exams/ma-ba/   301
 /exams/university    /exams/ma-ba/   301
