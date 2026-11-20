@@ -5,7 +5,7 @@ description: "The Age of Sensibility gives greater attention to feeling, sympath
 eyebrow: Notes · British Literature by Age
 mark: A
 crumb_label: Age of Sensibility
-hero_image: /assets/ages/age-of-sensibility-hero-full-light.webp
+hero_image: /assets/ages/age-of-sensibility-hero-corrected.webp
 hero_class: hero-age hero-article-full
 updated: 2026-11-20
 exams: [UGC-NET, PGT, MA / BA, State PSC]
