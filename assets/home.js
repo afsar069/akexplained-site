@@ -226,29 +226,29 @@
      Ye list /quizzes/daily/ aur /quizzes/mcq/ ki ages se mel khati hai \u2014 teenon jagah ek si.
      Kai mahin daur (Anglo-Norman, Age of Chaucer waghairah) ek hi notes article baantte hain,
      isliye har card me `article` saaf diya gaya hai (timeline par un sab ke anchor nahi hain).
-     Tasveer: `img` me poora path; na ho to /assets/ages/<slug>.webp. Fine daur /assets/topics/ se.
+     Tasveer: timeline wali original paintings /assets/age-cards/<slug>-painted.webp se aati hain.
      Writers daur ke pehchane-mane naam hain \u2014 badalne hon to yahin badal dijiye. */
   const ages = [
     { slug:'old-english',       yr:'450',  name:'Old English',         era:'450 \u2013 1066',   who:'Beowulf \u00b7 Caedmon \u00b7 Cynewulf',        article:'/notes/old-english/' },
-    { slug:'anglo-norman',      yr:'1066', name:'Anglo-Norman Period', era:'1066 \u2013 1340',  who:'Layamon \u00b7 Wace \u00b7 Marie de France',    article:'/notes/ages/anglo-norman/', img:'/assets/topics/anglo-norman.webp' },
-    { slug:'age-of-chaucer',    yr:'1340', name:'Age of Chaucer',      era:'1340 \u2013 1400',  who:'Chaucer \u00b7 Langland \u00b7 Gower',          article:'/notes/ages/age-of-chaucer/', img:'/assets/topics/medieval.webp' },
-    { slug:'fifteenth-century', yr:'1400', name:'Fifteenth Century',   era:'1400 \u2013 1500',  who:'Malory \u00b7 Lydgate \u00b7 Hoccleve',         article:'/notes/ages/fifteenth-century/', img:'/assets/topics/fifteenth-century.webp' },
-    { slug:'renaissance',       yr:'1500', name:'Renaissance Period',  era:'1500 \u2013 1660',  who:'Shakespeare \u00b7 Marlowe \u00b7 Spenser',     article:'/notes/renaissance/', img:'/assets/topics/renaissance.webp' },
-    { slug:'early-tudor',       yr:'1500', name:'Early Tudor Period',  era:'1500 \u2013 1558',  who:'More \u00b7 Wyatt \u00b7 Surrey',               article:'/notes/ages/early-tudor/', img:'/assets/topics/early-tudor.webp' },
-    { slug:'elizabethan',       yr:'1558', name:'Elizabethan Age',     era:'1558 \u2013 1603',  who:'Sidney \u00b7 Marlowe \u00b7 Kyd',              article:'/notes/ages/elizabethan/', img:'/assets/topics/elizabethan-drama.webp' },
-    { slug:'jacobean',          yr:'1603', name:'Jacobean Age',        era:'1603 \u2013 1625',  who:'Donne \u00b7 Jonson \u00b7 Webster',            article:'/notes/ages/jacobean/', img:'/assets/topics/jacobean.webp' },
-    { slug:'caroline',          yr:'1625', name:'Caroline Age',        era:'1625 \u2013 1649',  who:'Herrick \u00b7 Carew \u00b7 Lovelace',          article:'/notes/ages/caroline/', img:'/assets/topics/caroline.webp' },
-    { slug:'commonwealth',      yr:'1649', name:'Commonwealth Period', era:'1649 \u2013 1660',  who:'Milton \u00b7 Marvell \u00b7 Vaughan',          article:'/notes/ages/commonwealth/', img:'/assets/topics/commonwealth.webp' },
-    { slug:'neoclassical',      yr:'1660', name:'Neoclassical Period', era:'1660 \u2013 1785',  who:'Dryden \u00b7 Pope \u00b7 Johnson',             article:'/notes/ages/neoclassical/', img:'/assets/topics/restoration-18th-century.webp' },
-    { slug:'restoration',       yr:'1660', name:'Restoration Age',     era:'1660 \u2013 1700',  who:'Dryden \u00b7 Behn \u00b7 Congreve',            article:'/notes/restoration-age/', img:'/assets/topics/restoration-age.webp' },
-    { slug:'augustan',          yr:'1700', name:'Augustan Age',        era:'1700 \u2013 1745',  who:'Pope \u00b7 Swift \u00b7 Addison',              article:'/notes/augustan-age/', img:'/assets/topics/augustan-age.webp' },
-    { slug:'age-of-sensibility',yr:'1745', name:'Age of Sensibility',  era:'1745 \u2013 1785',  who:'Johnson \u00b7 Gray \u00b7 Goldsmith',          article:'/notes/ages/age-of-sensibility/', img:'/assets/topics/age-of-sensibility.webp' },
-    { slug:'romantic',          yr:'1785', name:'Romantic Period',     era:'1785 \u2013 1832',  who:'Wordsworth \u00b7 Coleridge \u00b7 Keats',      article:'/notes/romantic-age/', img:'/assets/topics/romantic.webp' },
-    { slug:'victorian',         yr:'1832', name:'Victorian Period',    era:'1832 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy',          article:'/notes/victorian-age/', img:'/assets/topics/victorian.webp' },
-    { slug:'edwardian',         yr:'1901', name:'Edwardian Period',    era:'1901 \u2013 1914',  who:'Shaw \u00b7 Wells \u00b7 Galsworthy',           article:'/notes/ages/edwardian/', img:'/assets/topics/edwardian.webp' },
-    { slug:'georgian',          yr:'1910', name:'Georgian Period',     era:'1910 \u2013 1936',  who:'Brooke \u00b7 de la Mare \u00b7 Masefield',     article:'/notes/ages/georgian/', img:'/assets/topics/georgian.webp' },
-    { slug:'modern',            yr:'1914', name:'Modern Period',       era:'1914 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce',               article:'/notes/modern-age/', img:'/assets/topics/modern.webp' },
-    { slug:'postmodern',        yr:'1945', name:'Postmodern Period',   era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie',          article:'/notes/contemporary-age/', img:'/assets/topics/postmodern.webp' },
+    { slug:'anglo-norman',      yr:'1066', name:'Anglo-Norman Period', era:'1066 \u2013 1340',  who:'Layamon \u00b7 Wace \u00b7 Marie de France',    article:'/notes/ages/anglo-norman/' },
+    { slug:'age-of-chaucer',    yr:'1340', name:'Age of Chaucer',      era:'1340 \u2013 1400',  who:'Chaucer \u00b7 Langland \u00b7 Gower',          article:'/notes/ages/age-of-chaucer/' },
+    { slug:'fifteenth-century', yr:'1400', name:'Fifteenth Century',   era:'1400 \u2013 1500',  who:'Malory \u00b7 Lydgate \u00b7 Hoccleve',         article:'/notes/ages/fifteenth-century/' },
+    { slug:'renaissance',       yr:'1500', name:'Renaissance Period',  era:'1500 \u2013 1660',  who:'Shakespeare \u00b7 Marlowe \u00b7 Spenser',     article:'/notes/renaissance/' },
+    { slug:'early-tudor',       yr:'1500', name:'Early Tudor Period',  era:'1500 \u2013 1558',  who:'More \u00b7 Wyatt \u00b7 Surrey',               article:'/notes/ages/early-tudor/' },
+    { slug:'elizabethan',       yr:'1558', name:'Elizabethan Age',     era:'1558 \u2013 1603',  who:'Sidney \u00b7 Marlowe \u00b7 Kyd',              article:'/notes/ages/elizabethan/' },
+    { slug:'jacobean',          yr:'1603', name:'Jacobean Age',        era:'1603 \u2013 1625',  who:'Donne \u00b7 Jonson \u00b7 Webster',            article:'/notes/ages/jacobean/' },
+    { slug:'caroline',          yr:'1625', name:'Caroline Age',        era:'1625 \u2013 1649',  who:'Herrick \u00b7 Carew \u00b7 Lovelace',          article:'/notes/ages/caroline/' },
+    { slug:'commonwealth',      yr:'1649', name:'Commonwealth Period', era:'1649 \u2013 1660',  who:'Milton \u00b7 Marvell \u00b7 Vaughan',          article:'/notes/ages/commonwealth/' },
+    { slug:'neoclassical',      yr:'1660', name:'Neoclassical Period', era:'1660 \u2013 1785',  who:'Dryden \u00b7 Pope \u00b7 Johnson',             article:'/notes/ages/neoclassical/' },
+    { slug:'restoration',       yr:'1660', name:'Restoration Age',     era:'1660 \u2013 1700',  who:'Dryden \u00b7 Behn \u00b7 Congreve',            article:'/notes/restoration-age/' },
+    { slug:'augustan',          yr:'1700', name:'Augustan Age',        era:'1700 \u2013 1745',  who:'Pope \u00b7 Swift \u00b7 Addison',              article:'/notes/augustan-age/' },
+    { slug:'age-of-sensibility',yr:'1745', name:'Age of Sensibility',  era:'1745 \u2013 1785',  who:'Johnson \u00b7 Gray \u00b7 Goldsmith',          article:'/notes/ages/age-of-sensibility/' },
+    { slug:'romantic',          yr:'1785', name:'Romantic Period',     era:'1785 \u2013 1832',  who:'Wordsworth \u00b7 Coleridge \u00b7 Keats',      article:'/notes/romantic-age/' },
+    { slug:'victorian',         yr:'1832', name:'Victorian Period',    era:'1832 \u2013 1901',  who:'Dickens \u00b7 Tennyson \u00b7 Hardy',          article:'/notes/victorian-age/' },
+    { slug:'edwardian',         yr:'1901', name:'Edwardian Period',    era:'1901 \u2013 1914',  who:'Shaw \u00b7 Wells \u00b7 Galsworthy',           article:'/notes/ages/edwardian/' },
+    { slug:'georgian',          yr:'1910', name:'Georgian Period',     era:'1910 \u2013 1936',  who:'Brooke \u00b7 de la Mare \u00b7 Masefield',     article:'/notes/ages/georgian/' },
+    { slug:'modern',            yr:'1914', name:'Modern Period',       era:'1914 \u2013 1945',  who:'Eliot \u00b7 Woolf \u00b7 Joyce',               article:'/notes/modern-age/' },
+    { slug:'postmodern',        yr:'1945', name:'Postmodern Period',   era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie',          article:'/notes/contemporary-age/' },
   ];
 
   /* ---------- Videos: real lessons on the channel ----------
@@ -376,9 +376,11 @@
     grid.innerHTML = ages.map(function (a) {
       // Article ban chuka ho to reader seedha wahan jaaye; warna timeline page par.
       const to = a.article || ('/english-literature/#' + a.slug);
-      const img = a.img || ('/assets/ages/' + a.slug + '.webp');
+      const img = '/assets/age-cards/' + a.slug + '-painted';
       return '<a class="agecard" href="' + to + '">' +
-             '<span class="thumb"><img src="' + img + '" alt="" width="480" height="300" loading="lazy">' +
+             '<span class="thumb"><img src="' + img + '.webp" srcset="' + img + '-240.webp 240w, ' + img + '.webp 480w" ' +
+             'sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" ' +
+             'alt="Painted interpretation of ' + a.name + '." width="480" height="300" loading="lazy">' +
              '<span class="yr">' + a.yr + '</span></span>' +
              '<h3>' + a.name + '</h3>' +
              '<p class="era">' + a.era + '</p>' +
