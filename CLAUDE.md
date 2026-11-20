@@ -71,8 +71,8 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 The list of literary periods (20, from Old English to Postmodern) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
 `assets/mcq.js`), the cards in `quizzes/daily/index.html` (and its period filter, one option per age), and `ages` in `assets/home.js`.
-The timeline page `english-literature/index.html` shows the same 20 ages (one small tile each, 6 to a line on a wide screen, same names, years, writers, pictures and notes link as `ages` in `assets/home.js`), so it must stay in step too.
-Names, years and pictures come from the Daily page. Invent none of them.
+The timeline page `english-literature/index.html` shows the same 20 ages (one small tile each, 6 to a line on a wide screen, same names, years, writers and notes link as `ages` in `assets/home.js`), so those details must stay in step too. **Its card artwork is a separate series** (owner, 2026-11-20): original representative painted scenes, one distinct scene per age in one consistent style, in `assets/age-cards/`. Do not replace these with public-domain portraits or reuse these card files as article heroes. Each has a 480 × 300 WebP and a 240 × 150 responsive copy; keep both compressed and inspect them at card size. See `docs/age-card-artwork.md`.
+Names and years come from the Daily page. Invent none of them. Home and Daily keep their existing pictures unless the owner asks to change them.
 
 The menu lives in three places and must stay in step: `_includes/base.njk` and the
 sidebar markup copied into `index.html` and `404.html` (every other page gets it from base.njk at build).
