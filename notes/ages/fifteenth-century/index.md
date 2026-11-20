@@ -13,10 +13,13 @@ age: fifteenth-century
 period: 1400–1500
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Age of Chaucer"
+  href: /notes/ages/age-of-chaucer/
+next:
+  label: "Renaissance Period"
+  href: /notes/renaissance/
 ---
 
 Chaucer's death did not leave English literature empty. It left later writers with a difficult and exciting inheritance: what could they do after such a powerful example? Some praised him, some borrowed his forms, and some returned to familiar stories with a different judgement. Meanwhile, religious writing, family letters and Arthurian prose continued to find readers. Near the end of the century, printing changed how a text could move through the world. Keep two images in mind as you read: a person copying a book by hand, and a printer making many copies from type. They belong to an overlapping culture. This chapter follows the movement from Chaucer's legacy toward the books and readers of the Tudor period.
@@ -76,6 +79,11 @@ The finds of 1934 changed Malory studies. Eugène Vinaver edited the Winchester 
 ## Literature in focus
 
 ### Hoccleve, Lydgate and the Scottish writers
+
+<figure class="article-illustration" data-sourced-image="chaucer">
+  <img src="/assets/articles/sourced/chaucer-hoccleve.webp" alt="Chaucer in a manuscript associated with Thomas Hoccleve." width="640" height="907" loading="lazy" decoding="async">
+  <figcaption>Chaucer in a manuscript associated with Thomas Hoccleve. <a href="https://commons.wikimedia.org/wiki/File:Chaucer_Hoccleve.png" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Thomas Hoccleve and John Lydgate acknowledged Chaucer as an important predecessor. Their existence helps explain how his reputation continued through the fifteenth century. The label "Chaucerian" describes an influence or relationship; it does not make every later poet an exact imitator. A reader should ask what a later work does with the authority of an admired earlier writer.
 

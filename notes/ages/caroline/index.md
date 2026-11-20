@@ -13,10 +13,13 @@ age: caroline
 period: 1625–1649
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Jacobean Age"
+  href: /notes/ages/jacobean/
+next:
+  label: "Commonwealth Period"
+  href: /notes/ages/commonwealth/
 ---
 
 The Caroline age inherits the theatres, court entertainments and poetic arguments of the Jacobean years. Yet the setting grows more divided. Charles I's court presents images of order while political and religious disagreements put that order under pressure. The literature cannot be reduced to a single mood. A Cavalier lyric may urge a lover to enjoy the present; Herbert turns inward to examine faith; Milton gives an apparently private poem a wider moral force. Keep the contrast between public order and private doubt in view. The Civil War changes the conditions in which writers work, but it does not stop them writing. It makes their choices of form, audience and loyalty harder to separate.

@@ -17,13 +17,13 @@ age: victorian
 period: 1837-1901
 exam_fit: [net, pgt, psc]
 topics: [queen-victoria, chartism, great-exhibition, oxford-movement, darwin, serial-novel, dickens, george-eliot, hardy, tennyson, browning, arnold, pre-raphaelites, aestheticism, fin-de-siecle, dramatic-monologue]
+reading_time_main: true
 prev:
-  label: Romantic Age
+  label: "Romantic Period"
   href: /notes/romantic-age/
 next:
-  label: Modern Age
-  href: /notes/modern-age/
-reading_time_main: true
+  label: "Edwardian Period"
+  href: /notes/ages/edwardian/
 ---
 
 Romantic writers had given imagination and individual experience a powerful place in literature. Victorian writers inherited that achievement in a society shaped by industry, reform and a growing reading public. The novel could follow many lives across a changing town, while a poem could turn a speaker's private uncertainty into a question about faith or duty. The connection with Romanticism remains visible, but the scale of attention often widens: who pays for progress, who is heard, and how should a person live among others? Read this age through those questions. Its interest lies in the variety of its answers, from Dickens's social worlds to the troubled voices of poetry and the difficult choices of later fiction.
@@ -97,6 +97,11 @@ More people could read than ever before. Schools, cheaper paper and steam-driven
 
 ### How books reached readers
 
+<figure class="article-illustration" data-sourced-image="victorian-scene">
+  <img src="/assets/articles/sourced/british-museum-reading-room.webp" alt="The British Museum Reading Room, photographed in February 2006. This later photograph shows the reading space; it is not a Victorian photograph." width="960" height="327" loading="lazy" decoding="async">
+  <figcaption>The British Museum Reading Room, photographed in February 2006. This later photograph shows the reading space; it is not a Victorian photograph. <a href="https://commons.wikimedia.org/wiki/File:British_Museum_Reading_Room_Panorama_Feb_2006.jpg" target="_blank" rel="noopener">Source</a>. Photo: Diliff. <a href="https://creativecommons.org/licenses/by/2.5" target="_blank" rel="noopener">CC BY 2.5</a>; resized.</figcaption>
+</figure>
+
 Most families could not afford to buy a novel, so publishers found other roads to them. One was the monthly part. Charles Dickens's *Pickwick Papers* began in March 1836 as a story sold in shilling instalments, and its success made him famous before the Queen's reign began. Soon magazines such as Dickens's *Household Words* (1850) and the *Cornhill Magazine* (1860), whose first editor was William Makepeace Thackeray, printed novels in weekly or monthly slices. A writer who worked this way wrote chapter by chapter, ended each part on a question and heard the readers' reaction while the story was still unfinished.
 
 The other road was the lending library. In 1842 Charles Edward Mudie opened a library in London that lent books for one guinea a year, one volume at a time. Mudie wanted books fit for the middle-class family, and he bought them in large numbers. Publishers therefore printed new novels in three volumes at thirty-one shillings and sixpence, a price that kept private buyers away but suited the library, which could divide a single novel among three borrowers. Authors learned to stretch their plots to fill the 'three-decker'. The habit lasted until 1894, when the great libraries stopped buying at that price.
@@ -119,6 +124,11 @@ The boldest experimenter lived and died almost unknown. Gerard Manley Hopkins, a
 
 Poetry won admiration, but the novel won the nation. Readers wanted stories about people like themselves, set in streets and homes they knew, and novelists gave them realism, a faithful picture of ordinary life. Most of these novels were told by a narrator who knew everything and was not shy of praising, scolding and explaining.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="dickens">
+  <img src="/assets/articles/sourced/charles-dickens-frith.webp" alt="Charles Dickens, painted by William Powell Frith, 1859." width="640" height="801" loading="lazy" decoding="async">
+  <figcaption>Charles Dickens, painted by William Powell Frith, 1859. <a href="https://commons.wikimedia.org/wiki/File:Charles_Dickens_by_Frith_1859_(2).jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
+
 Charles Dickens was the master. In 1824, when he was twelve, his father was sent to the Marshalsea debtors' prison and the boy was put to work pasting labels on pots of boot-blacking, a shame he never forgot. The memory runs through his books. *Oliver Twist* (1837-39) follows an orphan from the workhouse into London's criminal underworld. *David Copperfield* (1849-50) draws on his own childhood. *Bleak House* (1852-53) sets a lawsuit that never ends in the heart of foggy London. *Hard Times* (1854) attacks a school and a factory town that value only facts and figures. *Great Expectations* (1860-61) follows a poor boy whose dream of becoming a gentleman teaches him painful lessons. Dickens read from his books to huge audiences, and when he died in 1870 his last novel, *The Mystery of Edwin Drood*, was unfinished. Beside him stood Thackeray, whose *Vanity Fair* (1847-48), subtitled 'A Novel without a Hero', laughs at people who climb in society by any means.
 
 In 1847 two books by unknown authors appeared: *Jane Eyre* by Currer Bell and *Wuthering Heights* by Ellis Bell. They were the work of Charlotte and Emily Brontë, daughters of a clergyman in the Yorkshire village of Haworth, who had chosen men's names because women who wrote were not always taken seriously. *Jane Eyre* tells in its heroine's own voice how a poor orphan and governess insists on being treated as an equal. *Wuthering Heights* is a tale of wild love and revenge on the moors. Their sister Anne's *The Tenant of Wildfell Hall* (1848) shows a woman who leaves a cruel husband.
@@ -126,6 +136,11 @@ In 1847 two books by unknown authors appeared: *Jane Eyre* by Currer Bell and *W
 Elizabeth Gaskell, the wife of a Manchester minister, took readers into the mill towns. *Mary Barton* (1848) describes the hunger of cotton workers, and *North and South* (1854-55) brings a southern clergyman's daughter face to face with northern factory owners. Her life of her friend Charlotte Brontë appeared in 1857. Novels like these, which looked hard at the poverty of industrial England, were later called 'Condition of England' novels.
 
 George Eliot, the pen name of Mary Ann Evans (1819-80), brought deep thought to the novel. She began writing fiction in her late thirties, and *Adam Bede* (1859) made her famous. Her masterpiece, *Middlemarch* (1871-72), subtitled 'A Study of Provincial Life', follows several people in an English town through the choices that make or mar their lives. Her own life was not conventional. From 1854 she lived with George Henry Lewes, who was legally married to another woman, and some respectable people turned away from her.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="hardy">
+  <img src="/assets/articles/sourced/thomas-hardy-downey.webp" alt="Thomas Hardy, photographed by W. and D. Downey, 1894." width="640" height="969" loading="lazy" decoding="async">
+  <figcaption>Thomas Hardy, photographed by W. and D. Downey, 1894. <a href="https://commons.wikimedia.org/wiki/File:Thomas-Hardy.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Thomas Hardy belongs to the last third of the age. Born in Dorset in 1840, he trained as an architect before he turned to writing. His novels are set in Wessex, a made-up region based on the south-west of England: *Far from the Madding Crowd* (1874), *Tess of the d'Urbervilles* (1891) and *Jude the Obscure* (1895). His people are crushed by chance, class and rigid rules about marriage and religion. After the storm of angry reviews that greeted *Jude*, Hardy wrote no more novels and went back to poetry.
 

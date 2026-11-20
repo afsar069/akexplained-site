@@ -22,13 +22,13 @@ age: renaissance
 period: 1500-1603
 exam_fit: [net, pgt, psc]
 topics: [humanism, reformation, wyatt-surrey, sidney, spenser, marlowe, shakespeare, university-wits, sonnet, blank-verse]
-prev:
-  label: Middle English
-  href: /notes/middle-english/
-next:
-  label: Jacobean and Caroline
-  href: /notes/jacobean-and-caroline-age/
 reading_time_main: true
+prev:
+  label: "Fifteenth Century"
+  href: /notes/ages/fifteenth-century/
+next:
+  label: "Early Tudor Period"
+  href: /notes/ages/early-tudor/
 ---
 
 The previous century gave England readers of Chaucer, Malory and early printed books. Renaissance writers inherited that culture and opened it to fresh possibilities. Classical learning encouraged new questions; religious change made the language of belief a matter of public conflict; poets and actors tested what English could do. A courtly lyric, a translated Bible and a play for a paying crowd might appear far apart, yet all raise questions about audience and the power of words. Read this guide as a story of expanding literary choices. The wider Renaissance also contains the Early Tudor, Elizabethan and early seventeenth-century chapters on the timeline, so its connections are a set of branches rather than one simple line.
@@ -204,6 +204,11 @@ Ben Jonson was a different kind of writer. A learned man who respected the rules
 ### Prose
 
 English prose was still young. For centuries serious writers had used Latin, and the first great English prose came from the Bible and the Prayer Book.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="more">
+  <img src="/assets/articles/sourced/thomas-more-holbein.webp" alt="Thomas More, painted by Hans Holbein the Younger, 1527." width="640" height="806" loading="lazy" decoding="async">
+  <figcaption>Thomas More, painted by Hans Holbein the Younger, 1527. <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Thomas_More_by_Hans_Holbein_d._J._in_the_Frick_Collection.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Thomas More's *Utopia*, written in Latin and printed in 1516, was one of the first great works of the age. It describes an imaginary island, found by a traveller, where property is shared and greed has no place, and uses it to criticise the harshness and injustice of England. The name comes from Greek words meaning "no place". Ralph Robinson's English translation followed in 1551. More's unfinished *History of King Richard III*, written in the 1510s, painted the king as a monster and later gave Shakespeare his villain.
 

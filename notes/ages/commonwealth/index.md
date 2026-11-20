@@ -13,10 +13,13 @@ age: commonwealth
 period: 1649–1660
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Caroline Age"
+  href: /notes/ages/caroline/
+next:
+  label: "Neoclassical Period"
+  href: /notes/ages/neoclassical/
 ---
 
 The Caroline chapter ends with the execution of Charles I. The next chapter has to answer a question that would once have seemed almost unimaginable: what does English public life look like without a king? Political arguments become urgent, and writers have to think about obedience, conscience and the limits of authority. Milton serves the new government, Hobbes argues for a power strong enough to prevent disorder, and poets continue to explore faith and the passing of time. This is not a blank space between two royal ages. Follow the books, poems and arguments through the interruption. They help explain both what the Restoration changed and what its writers inherited from the years before it.
@@ -45,6 +48,11 @@ Writers chose their styles with care. Jonson and Bacon liked short, firm sentenc
 Younger poets followed. Henry Vaughan, a Welsh doctor, wrote of nature as a glimpse of heaven in *Silex Scintillans* (1650) and openly admired Herbert. Richard Crashaw, who became a Catholic, wrote passionate, almost dazzling religious verse. Andrew Marvell wrote one of the most famous argument poems of all, "To His Coy Mistress", in which a lover reasons that if time were endless he could court slowly, but since time is short, they should love now. Marvell also wrote the "Horatian Ode" in 1650, which praises Cromwell's power yet speaks with respect of the king's calm courage on the scaffold. His lyric poems were printed only after his death, in 1681.
 
 ## Prose and political thought
+
+<figure class="article-illustration article-illustration--float" data-sourced-image="commonwealth-book">
+  <img src="/assets/articles/sourced/hobbes-leviathan-title-1651.webp" alt="Title page of Thomas Hobbes’s Leviathan, 1651. Historical book illustration, British Library." width="500" height="775" loading="lazy" decoding="async">
+  <figcaption>Title page of Thomas Hobbes’s Leviathan, 1651. Historical book illustration, British Library. <a href="https://commons.wikimedia.org/wiki/File:Leviathan_-_Hobbes%27_Leviathan_(1651),_title_page_-_BL.jpg" target="_blank" rel="noopener">Source</a>. CC0.</figcaption>
+</figure>
 
 Then the Civil War turned prose into a weapon. Thomas Hobbes, who feared disorder, had gone to live in Paris in 1640, and there he wrote *Leviathan*, published in 1651. He argued that people must give up some freedom to a strong ruler, or life will be "solitary, poor, nasty, brutish, and short". John Milton argued in the opposite direction. In 1643 Parliament passed a law requiring books to be licensed before printing. Milton answered in 1644 with *Areopagitica*, a speech-like pamphlet saying that destroying a good book is like killing reason itself, and that truth grows stronger in a free contest with falsehood. After the king's execution he defended it in *The Tenure of Kings and Magistrates* (1649) and answered the popular book *Eikon Basilike*, which pictured Charles as a holy martyr, with *Eikonoklastes*. The new Commonwealth employed him as Latin Secretary, to write its letters to foreign powers, and he was blind by 1652. Others wanted more than a change of rulers. Gerrard Winstanley and his Diggers set up a farming community on common land in Surrey in 1649, claiming that the earth should be shared. These were years of fierce pamphlets, thousands of them.
 

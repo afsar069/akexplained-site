@@ -18,6 +18,13 @@ period: 450-1066
 exam_fit: [net, pgt, psc]
 topics: [beowulf, caedmon, cynewulf, exeter-book, vercelli-book, junius-manuscript, alfred, aelfric, wulfstan, kenning, elegy, anglo-saxon-chronicle]
 reading_time_main: true
+prev:
+  label: "British Literature timeline"
+  href: /english-literature/
+  direction: "All ages"
+next:
+  label: "Anglo-Norman Period"
+  href: /notes/ages/anglo-norman/
 ---
 
 Before English literature had novels, theatres or printed books, it had voices in a hall. A storyteller could make listeners hear the sea, feel the fear outside a settlement, or remember a dead leader. Old English writing grew from that world of spoken memory, and Christian learning later helped carry it onto parchment. This is the starting point of our timeline, so there is no earlier English literary age to connect it to. There is, however, an older past behind it: Roman Britain, migration, inherited stories and changing beliefs. As you read, watch how the warmth of the hall stands against exile, danger and loss. That tension helps connect the hero of Beowulf with the lonely speakers of the elegies.

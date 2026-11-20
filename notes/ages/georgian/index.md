@@ -13,10 +13,13 @@ age: georgian
 period: 1910–1936
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Edwardian Period"
+  href: /notes/ages/edwardian/
+next:
+  label: "Modern Period"
+  href: /notes/modern-age/
 ---
 
 The Edwardian years had already made writers question the life beneath a comfortable surface. In poetry, the new reign of George V encouraged another language of beginnings. Edward Marsh's Georgian anthologies offered readers a selection of recent work, bringing different poetic voices into one book. This chapter follows that publishing connection without pretending that every contributor shared one style. A mysterious house in de la Mare, a remembered place in Brooke and an observed bird in Davies ask for different kinds of attention. The First World War adds another pressure, while Modernism develops beside them. Read the Georgian writers as participants in that crowded present, rather than as a quiet pause before Eliot arrived.
@@ -63,6 +66,11 @@ The timeline uses 1910–1936, the reign of George V, as a broad date frame. Geo
 The first volume contains work by Rupert Brooke, Walter de la Mare, John Masefield, W. H. Davies and D. H. Lawrence, among others. Its preface presents the collection as a selection of recent writing rather than a complete survey of English poetry. This makes the anthology a useful primary source for checking membership. A poet's inclusion does not establish that every work he wrote follows one shared programme.
 
 ### Rupert Brooke
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="brooke">
+  <img src="/assets/articles/sourced/rupert-brooke-schell.webp" alt="Rupert Brooke, photographed by Sherril Schell in 1913; reproduced in the 1918 collected poems." width="640" height="838" loading="lazy" decoding="async">
+  <figcaption>Rupert Brooke, photographed by Sherril Schell in 1913; reproduced in the 1918 collected poems. <a href="https://commons.wikimedia.org/wiki/File:Frontispiece_(cropped)_to_Collected_poems_of_Rupert_Brooke_with_a_Memoir_1918.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Brooke's reputation became closely tied to his war sonnets, especially "The Soldier". His earlier "The Old Vicarage, Grantchester" belongs to the first Georgian anthology. Comparing the two helps separate the poet's pre-war voice from his later public reputation. His idealising treatment of sacrifice differs from the trench poetry associated with Owen and Sassoon. The difference is an invitation to compare particular poems, not to assume that every wartime response was the same.
 

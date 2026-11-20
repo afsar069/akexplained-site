@@ -13,10 +13,13 @@ age: jacobean
 period: 1603–1625
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Elizabethan Age"
+  href: /notes/ages/elizabethan/
+next:
+  label: "Caroline Age"
+  href: /notes/ages/caroline/
 ---
 
 Elizabethan drama did not stop when Elizabeth died. Actors, writers and audiences carried their skills into the reign of James I. The connection is clear in Shakespeare's career, but continuity did not mean sameness. Jonson exposes greed through comedy; Webster places his characters in dangerous worlds of power; Donne makes a love poem sound like an urgent argument. The period becomes more interesting when these voices are heard together. As you read, ask what a speaker is trying to make someone believe. That question works in a tragedy, a satire, a sermon and a metaphysical lyric. It also helps explain why wit in this age is more than a clever phrase: it can be a way of testing ideas.

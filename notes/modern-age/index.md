@@ -22,13 +22,13 @@ age: modern
 period: 1901-1945
 exam_fit: [net, pgt, psc]
 topics: [modernism, stream-of-consciousness, imagism, georgian-poetry, war-poets, eliot, waste-land, joyce, ulysses, woolf, lawrence, yeats, auden, abbey-theatre, practical-criticism]
-prev:
-  label: Victorian Age
-  href: /notes/victorian-age/
-next:
-  label: Contemporary Age
-  href: /notes/contemporary-age/
 reading_time_main: true
+prev:
+  label: "Georgian Period"
+  href: /notes/ages/georgian/
+next:
+  label: "Postmodern Period"
+  href: /notes/contemporary-age/
 ---
 
 Edwardian social fiction and Georgian poetry continue into the years usually associated with Modernism. The connection matters: experiments in form did not appear in an empty literary world. Writers inherited stories, metres, stages and audiences, then questioned whether those forms could hold a changed experience. War, city life and new ways of thinking about the mind made time and point of view especially important. A poem might move between voices; a novel might follow the movement of thought instead of a simple chain of events. Read those experiments as choices with a purpose. Ask what the form lets a reader feel or understand that a more familiar method might have left outside the story.
@@ -126,6 +126,11 @@ With Sassoon's encouragement, Owen wrote poems about gas, mud and the death of y
 
 Meanwhile, in London, a young American named Ezra Pound wanted poetry to be made new. Pound loved short Japanese and Chinese poems that set one sharp picture before the reader. In 1912 and 1913, with the poets H.D. (Hilda Doolittle) and Richard Aldington, he launched Imagism. It asked for direct treatment of the subject, no word that does not help, and a rhythm that follows the musical phrase rather than the beat of a metronome.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="eliot">
+  <img src="/assets/articles/sourced/ts-eliot-morrell.webp" alt="T. S. Eliot, photographed by Lady Ottoline Morrell, 1923." width="640" height="785" loading="lazy" decoding="async">
+  <figcaption>T. S. Eliot, photographed by Lady Ottoline Morrell, 1923. <a href="https://commons.wikimedia.org/wiki/File:T.S._Eliot,_1923.JPG" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
+
 One of Pound's friends was Thomas Stearns Eliot, born in St Louis, Missouri, in 1888 and educated at Harvard. Eliot came to England in 1914 and stayed. Pound read his poem "The Love Song of J. Alfred Prufrock", admired it, and helped it into *Poetry*, which printed it in June 1915. It shows a timid middle-aged man who wishes to speak of love and never dares to. The speaker is hesitant, the images are ordinary, and the lines fall into loose, uneven rhythms.
 
 In 1922 Eliot published *The Waste Land*, a poem of just over four hundred lines that became the best-known poem of the century. The war had left Europe exhausted, and many people felt cut off from the beliefs that once held society together. Drawing on Frazer's *The Golden Bough* and on Jessie Weston's *From Ritual to Romance* (1920), a study of the Grail legend, Eliot pictured a barren land waiting for rain.
@@ -145,6 +150,11 @@ Virginia Woolf watched these writers with growing impatience. In her view, they 
 The tools for a new kind of novel were already at hand. The American psychologist William James had used the phrase "stream of consciousness" in 1890 for the unbroken flow of thought. Dorothy Richardson began her long novel sequence *Pilgrimage* in 1915, following the thoughts of one young woman, Miriam Henderson, and in 1918 the novelist May Sinclair applied James's phrase to that kind of writing.
 
 James Joyce, born in Dublin, carried the method furthest. His stories in *Dubliners* (1914) often end in a sudden flash of understanding, which Joyce called an epiphany. *A Portrait of the Artist as a Young Man* (1916) follows Stephen Dedalus from childhood to the day he leaves Ireland. Then came *Ulysses* (1922), set on a single day, 16 June 1904, in Dublin. It follows Leopold Bloom, an advertising canvasser, the young Stephen Dedalus, and Bloom's wife Molly, and its eighteen episodes echo the adventures in Homer's *Odyssey*. It ends with Molly's thoughts running on almost without punctuation.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="woolf">
+  <img src="/assets/articles/sourced/virginia-woolf-beresford.webp" alt="Virginia Woolf, photographed by George Charles Beresford, 1902. Restored reproduction." width="640" height="874" loading="lazy" decoding="async">
+  <figcaption>Virginia Woolf, photographed by George Charles Beresford, 1902. Restored reproduction. <a href="https://commons.wikimedia.org/wiki/File:George_Charles_Beresford_-_Virginia_Woolf_in_1902_-_Restoration.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Woolf used the inward method in her own way. *Mrs Dalloway* (1925) covers one June day in London in 1923, moving between Clarissa Dalloway, who is preparing a party, and Septimus Smith, a soldier broken by the war. In *A Room of One's Own* (1929) she argued that a woman needs money and a room of her own if she is to write fiction.
 
@@ -216,6 +226,11 @@ Novelists became critics as well. Woolf's essays defended the new novel, and E. 
 ## How the age ends
 
 The Second World War drew in the writers who had spent the 1930s warning of it, and it scattered or silenced many of them. Yeats died in France in January 1939, just before the war began. In the same month Auden and his friend Christopher Isherwood sailed for the United States, a move that was attacked in Britain as desertion. Joyce died in Zurich in January 1941, and Virginia Woolf died in March of that year.
+
+<figure class="article-illustration" data-sourced-image="modern-scene">
+  <img src="/assets/articles/sourced/aldwych-air-raid-shelter-1940.webp" alt="People sheltering at Aldwych Underground Station, London, 1940. Ministry of Information photograph, Imperial War Museums D 1675." width="500" height="334" loading="lazy" decoding="async">
+  <figcaption>People sheltering at Aldwych Underground Station, London, 1940. Ministry of Information photograph, Imperial War Museums D 1675. <a href="https://commons.wikimedia.org/wiki/File:The_London_Underground_As_Air_Raid_Shelter,_London,_England,_1940_D1675.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 In London, the Blitz began in September 1940, and night after night people sheltered in Underground stations while bombs fell. Eliot's *Four Quartets*, gathered in one volume in 1943, thinks about time, memory and faith, and its last section, "Little Gidding", draws on the fire and bombing of those years.
 

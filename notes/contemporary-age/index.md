@@ -17,10 +17,14 @@ age: contemporary
 period: 1945-present
 exam_fit: [net, pgt, psc]
 topics: [angry-young-men, the-movement, theatre-of-the-absurd, postmodernism, postcolonial-writing, magic-realism, booker-prize, literary-theory]
-prev:
-  label: Modern Age
-  href: /notes/modern-age/
 reading_time_main: true
+prev:
+  label: "Modern Period"
+  href: /notes/modern-age/
+next:
+  label: "British Literature timeline"
+  href: /english-literature/
+  direction: "All ages"
 ---
 
 Modernist writers had challenged simple stories about time, identity and a settled point of view. After the Second World War, later writers inherited those experiments while facing new political and cultural conditions. Some question the authority of a narrator, some revisit familiar stories, and others choose a plain surface to speak about everyday experience. Postmodern is therefore a useful label for particular methods, while post-1945 literature is a much wider field. Keep that distinction in mind. This chapter connects the broken certainties of the Modern period with writing that continues to ask who tells a story, who is left out, and what happens when an inherited account no longer seems complete.
@@ -115,6 +119,11 @@ In 2009, Carol Ann Duffy became the first woman, and the first Scot, to be Poet 
 
 In the early 1950s, the London stage was mostly comfortable and polite. The big theatres showed plays about the middle and upper classes, and every script first went to the office of the Lord Chamberlain, a royal official who could ban a play or order changes.
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="beckett">
+  <img src="/assets/articles/sourced/samuel-beckett-gray.webp" alt="Samuel Beckett, painted by Reginald Gray, 1961." width="500" height="757" loading="lazy" decoding="async">
+  <figcaption>Samuel Beckett, painted by Reginald Gray, 1961. <a href="https://commons.wikimedia.org/wiki/File:Samuel_Beckett_by_Reginald_Gray.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
+
 The first shock came from Paris. Samuel Beckett, an Irishman living in France, wrote *Waiting for Godot* in French, and it opened at the Théâtre de Babylone on 5 January 1953. Two tramps wait beside a road for a man named Godot, who never comes. The English version reached the Arts Theatre in London in 1955. In 1961, the critic Martin Esslin named this new kind of drama the Theatre of the Absurd, because its plays showed a world with no clear purpose. Beckett won the Nobel Prize in 1969.
 
 The second shock came from London itself. A new company, the English Stage Company, had taken over the Royal Court Theatre under the director George Devine, and it asked for plays by new writers. John Osborne, a young actor, sent in *Look Back in Anger*. It opened on 8 May 1956 as the company's third production. Its hero, Jimmy Porter, is a clever young man from a working-class home who runs a sweet stall in spite of his university education. He pours his anger on his middle-class wife and on a country that offers him no place. Journalists soon called writers like Osborne the Angry Young Men.
@@ -152,6 +161,11 @@ Rushdie's next novel, *The Satanic Verses* (1988), angered many Muslims, who fel
 In Britain, the children of migrants began to write about the country as home. Zadie Smith's *White Teeth* (2000) follows families of Jamaican, Bangladeshi and English origin in north London. Andrea Levy's *Small Island* (2004) goes back to the Windrush years to tell the story from the migrants' side.
 
 ### An interesting story
+
+<figure class="article-illustration" data-sourced-image="postmodern-scene">
+  <img src="/assets/articles/sourced/godot-stage-document-1961.webp" alt="A visual document for En attendant Godot, 1961, held by the Bibliothèque nationale de France. It is later than the play’s first production." width="960" height="187" loading="lazy" decoding="async">
+  <figcaption>A visual document for En attendant Godot, 1961, held by the Bibliothèque nationale de France. It is later than the play’s first production. <a href="https://commons.wikimedia.org/wiki/File:En_attendant_Godot,_texte_de_Samuel_Beckett_-_btv1b10602045w_(02_of_25).jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 In November 1957, a small theatre company from San Francisco travelled to San Quentin, a prison beside the bay. The Actor's Workshop, led by Herbert Blau, had been staging Beckett's *Waiting for Godot* in the city, and some audiences there had left puzzled. Several prisoners had asked the warden whether a play could be shown. On 19 November, the actors performed *Godot* for the inmates in the prison dining hall. The men, who knew all about waiting, followed it closely. One prisoner, Rick Cluchey, who was serving a life sentence, heard about it from a cellmate and was so moved that he helped to start a drama group inside the prison. Years later, he became a friend of Beckett and a well-known performer of his work.
 

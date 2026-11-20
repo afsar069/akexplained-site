@@ -20,13 +20,13 @@ age: restoration
 period: 1660-1700
 exam_fit: [net, pgt, psc]
 topics: [charles-ii, restoration-comedy, heroic-drama, dryden, milton, bunyan, pepys, behn, rochester, wycherley, congreve, royal-society, satire]
-prev:
-  label: Jacobean and Caroline
-  href: /notes/jacobean-and-caroline-age/
-next:
-  label: Augustan Age
-  href: /notes/augustan-age/
 reading_time_main: true
+prev:
+  label: "Neoclassical Period"
+  href: /notes/ages/neoclassical/
+next:
+  label: "Augustan Age"
+  href: /notes/augustan-age/
 ---
 
 During the Commonwealth, public theatre had been restricted and political prose had argued over the future of government. The return of Charles II in 1660 changed the stage on which those questions were played out. Theatres reopened, courtly wit gained a new public life, and London became a meeting place for news, science and literary debate. It is easy to imagine only elegant people exchanging sharp remarks, but the age also includes religious dissent, enslavement, disaster and fierce political conflict. Read the comedy beside the satire and the prose. Together they show how a society could celebrate its return to order while continuing to argue about power, belief and the price of belonging.

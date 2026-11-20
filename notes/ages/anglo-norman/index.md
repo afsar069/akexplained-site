@@ -13,10 +13,13 @@ age: anglo-norman
 period: 1066–1340
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Old English"
+  href: /notes/old-english/
+next:
+  label: "Age of Chaucer"
+  href: /notes/ages/age-of-chaucer/
 ---
 
 The Old English chapter ended with a kingdom facing conquest. This chapter begins with its consequences. A change of rulers did not silence English, but it changed the languages of power, learning and literary fashion. Picture three books on a table: one in Latin, one in French and one in English. All three could belong to the literary life of medieval England. The interesting question is how their stories met. A legendary history could move from Latin to French and then into English; an adventure could gain a new audience through each retelling. Follow those journeys through this chapter. They show how English literature continued by changing, long before Chaucer became its most famous medieval voice.

@@ -13,10 +13,13 @@ age: age-of-sensibility
 period: 1745–1785
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Augustan Age"
+  href: /notes/augustan-age/
+next:
+  label: "Romantic Period"
+  href: /notes/romantic-age/
 ---
 
 The Augustan chapter made sharp judgement a public art. The later eighteenth century asks readers to pay closer attention to feeling as well. What can a poem make us notice about people whose lives have left little public record? Can a novel train sympathy, and can sympathy itself be mistaken? Gray, Johnson, Goldsmith and other writers approach those questions through different forms. The change is a shift of emphasis rather than a ban on wit or reason. This chapter connects the ordered verse and public debate of the earlier century with the interest in memory, landscape and individual experience that helps prepare Romantic writing. Read for the meeting of thought and feeling, not for a sudden victory of one over the other.
@@ -89,6 +92,11 @@ At the same time, poets turned toward an older and wilder past. Thomas Percy's *
 Sensibility means a capacity for feeling and responding, especially to other people's suffering. It became an important value in later eighteenth-century writing. That does not mean reason vanished in 1745. Johnson, Gray, Goldsmith and the writers of sentimental fiction worked in a culture where judgement and emotion continually met.
 
 ### Gray and ordinary lives
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="gray">
+  <img src="/assets/articles/sourced/thomas-gray-eccardt.webp" alt="Thomas Gray, painted by John Giles Eccardt, 1747–1748." width="640" height="798" loading="lazy" decoding="async">
+  <figcaption>Thomas Gray, painted by John Giles Eccardt, 1747–1748. <a href="https://commons.wikimedia.org/wiki/File:PortraitThomasGrayByJohnGilesEccart1747to1748.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Gray's *Elegy Written in a Country Churchyard* was published in 1751. Its speaker reflects on rural graves and on lives whose abilities may never have found public recognition. The measured verse makes an important comparison with the emotion of the subject: feeling is expressed through an ordered form. Sensibility should not be equated with shapeless or uncontrolled writing.
 

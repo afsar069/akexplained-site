@@ -23,10 +23,10 @@ period: 1066-1500
 exam_fit: [net, pgt, psc]
 topics: [chaucer, canterbury-tales, gawain-poet, langland, piers-plowman, layamon, malory, caxton, julian-of-norwich, margery-kempe, mystery-plays, morality-plays]
 prev:
-  label: Old English
+  label: "Old English"
   href: /notes/old-english/
 next:
-  label: Renaissance
+  label: "Renaissance Period"
   href: /notes/renaissance/
 ---
 
@@ -145,6 +145,11 @@ In the later fourteenth century the old unrhymed, alliterative verse came back i
 William Langland's *Piers Plowman* belongs to the same alliterative tradition but has a different spirit. It is a **dream vision**. A dreamer named Will falls asleep on the Malvern Hills and sees a field full of folk, rich and poor, who stand for the whole of society. In later dreams he sees the seven deadly sins confess and meets an honest ploughman named Piers. He searches for the answer to how a man should live, which the poem calls Do-Well, Do-Better and Do-Best. Langland attacks corrupt clergy and the greed of the powerful. The poem exists in versions called A (1360s), B (late 1370s) and C (1380s). It also holds the earliest certain mention of Robin Hood tales, when the lazy priest Sloth admits that he knows rhymes of Robin Hood better than his prayers.
 
 ### Geoffrey Chaucer and his followers
+
+<figure class="article-illustration" data-sourced-image="chaucer">
+  <img src="/assets/articles/sourced/chaucer-hoccleve.webp" alt="Chaucer in a manuscript associated with Thomas Hoccleve." width="640" height="907" loading="lazy" decoding="async">
+  <figcaption>Chaucer in a manuscript associated with Thomas Hoccleve. <a href="https://commons.wikimedia.org/wiki/File:Chaucer_Hoccleve.png" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Geoffrey Chaucer was born in London around 1343, the son of a wine merchant. As a young man he served as a page in a noble household, and in 1359 he was captured in France, where the king helped to pay his ransom. He later worked as a soldier, a diplomat who visited Italy, controller of wool customs in London from 1374, and Clerk of the King's Works from 1389. He died in 1400 and was buried in Westminster Abbey, in what later became Poets' Corner.
 

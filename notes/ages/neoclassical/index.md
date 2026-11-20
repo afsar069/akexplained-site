@@ -13,10 +13,13 @@ age: neoclassical
 period: 1660–1785
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Commonwealth Period"
+  href: /notes/ages/commonwealth/
+next:
+  label: "Restoration Age"
+  href: /notes/restoration-age/
 ---
 
 The Commonwealth ends with the return of the monarchy, but literary history does not simply return to its earlier position. New theatres, new readers and new forms of public debate reshape the world of writing. The broad Neoclassical label brings several stages of that change into view: Dryden's Restoration, Pope's Augustan years and the later world of Johnson and sensibility. The connecting thread is a continuing conversation with classical models, order and judgement. That thread does not make every text sound alike. A satire can attack vanity, an essay can teach a reader to look more carefully, and a novel can test conduct through a life story. This chapter follows those different uses of literary judgement.
@@ -95,6 +98,11 @@ Criticism began inside the age itself. Dryden's *Of Dramatic Poesie* (1668), wri
 The Neoclassical period on this timeline runs from 1660 to 1785. It contains the Restoration, the Augustan age and the Age of Sensibility. These are overlapping levels of description. Neoclassical points to the influence of classical models and habits of critical judgement; Restoration points first to a political event.
 
 ### From Dryden to Pope
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="pope">
+  <img src="/assets/articles/sourced/alexander-pope-kneller.webp" alt="Alexander Pope, painted by Godfrey Kneller." width="640" height="773" loading="lazy" decoding="async">
+  <figcaption>Alexander Pope, painted by Godfrey Kneller. <a href="https://commons.wikimedia.org/wiki/File:Alexander_Pope_portrait_painting.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Dryden's political satire and dramatic criticism helped establish a public language of judgement. Pope developed the heroic couplet into a remarkably flexible instrument of argument, praise and attack. In *The Rape of the Lock*, epic machinery is applied to a social quarrel. The difference in scale creates mock-heroic comedy: the form asks readers to reconsider the importance assigned to fashionable behaviour.
 
