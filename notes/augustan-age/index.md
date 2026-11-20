@@ -20,13 +20,13 @@ age: augustan-age
 period: 1700-1798
 exam_fit: [net, pgt, psc]
 topics: [pope, swift, addison, steele, defoe, richardson, fielding, johnson, sterne, gray, goldsmith, sheridan, heroic-couplet, periodical-essay, rise-of-the-novel]
+reading_time_main: true
 prev:
-  label: Restoration
+  label: "Restoration Age"
   href: /notes/restoration-age/
 next:
-  label: Romantic Age
-  href: /notes/romantic-age/
-reading_time_main: true
+  label: "Age of Sensibility"
+  href: /notes/ages/age-of-sensibility/
 ---
 
 Restoration writers had made wit, criticism and public argument central to literary life. In the early eighteenth century, those habits reached readers through new essays, poems and works of fiction. Pope could turn a social quarrel into a mock-epic; Swift could send a traveller through imaginary lands to make familiar human behaviour look strange. The coffeehouse and the printed page helped writers speak to readers they would never meet. This is the link with the previous age, but it also points forward. As prose fiction grows, literature gains new ways to follow a person's choices over time. Watch how the forms change while the questions about judgement, pride and good conduct continue.
@@ -108,6 +108,11 @@ Others wrote grammar books, such as Robert Lowth's *Short Introduction to Englis
 
 For centuries writers had depended on rich patrons, who gave money in return for praise in a dedication. Patronage did not vanish in 1700, but print slowly gave writers another way to live. In 1695 Parliament had let the old Licensing Act lapse, which ended the system of censoring books before they were printed. Authors could still be punished afterwards, as Daniel Defoe found in 1703, when he was put in the pillory for a pamphlet that mocked the enemies of the Dissenters. The *Daily Courant* became London's first daily newspaper in 1702, and in 1710 the Statute of Anne became the first copyright law, giving authors and booksellers rights over printed works for a fixed term.
 
+<figure class="article-illustration" data-sourced-image="poet-scene">
+  <img src="/assets/articles/sourced/hogarth-distrest-poet.webp" alt="The Distrest Poet, a satirical print by William Hogarth, 1740. It represents a literary theme, not an identified scene from a writer’s life." width="768" height="674" loading="lazy" decoding="async">
+  <figcaption>The Distrest Poet, a satirical print by William Hogarth, 1740. It represents a literary theme, not an identified scene from a writer’s life. <a href="https://commons.wikimedia.org/wiki/File:William_Hogarth_-_The_Distrest(ed)_Poet_-_B1981.25.1429_-_Yale_Center_for_British_Art.jpg" target="_blank" rel="noopener">Source</a>. CC0.</figcaption>
+</figure>
+
 Booksellers, who were also publishers, grew powerful, and a writer could now sell a manuscript to them for cash. Some who did so lived in poverty around Grub Street, a London street of hack writers whose name came to stand for all cheap, hurried writing. Others found a better way in subscription, in which readers paid in advance for a book not yet printed. Pope sold his translation of Homer's *Iliad* this way, and its success made him rich enough to live on his writing alone, in a villa at Twickenham beside the river Thames.
 
 Johnson's quarrel with Lord Chesterfield showed that the old system was ending. Chesterfield had given the *Dictionary* no help while it was being written, and then praised it in print when it was about to appear. In a letter of 1755 Johnson asked whether a patron was not someone who watches a drowning man without concern and then loads him with help once he has reached the shore.
@@ -115,6 +120,11 @@ Johnson's quarrel with Lord Chesterfield showed that the old system was ending. 
 Reading itself was spreading. Coffee houses kept newspapers on their tables, *The Gentleman's Magazine* began in 1731, and from the middle of the century circulating libraries lent novels for a small fee. The reading public now included merchants, shopkeepers' wives and ladies of leisure, and writers began to write for them.
 
 ### Poetry
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="pope">
+  <img src="/assets/articles/sourced/alexander-pope-kneller.webp" alt="Alexander Pope, painted by Godfrey Kneller." width="640" height="773" loading="lazy" decoding="async">
+  <figcaption>Alexander Pope, painted by Godfrey Kneller. <a href="https://commons.wikimedia.org/wiki/File:Alexander_Pope_portrait_painting.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Poetry still held the highest rank, and its master was Alexander Pope. He was born in London in 1688 to a Catholic linen merchant. The laws against Catholics kept him out of school and university, and spinal tuberculosis left him small and bent for life. He taught himself Latin, Greek and the English poets, and he wrote with such skill that he was famous in his early twenties. His *Essay on Criticism* (1711), written in heroic couplets, set out in clear verse what makes good writing and a good critic.
 

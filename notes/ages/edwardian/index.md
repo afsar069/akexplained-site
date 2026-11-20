@@ -13,10 +13,13 @@ age: edwardian
 period: 1901–1914
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Victorian Period"
+  href: /notes/victorian-age/
+next:
+  label: "Georgian Period"
+  href: /notes/ages/georgian/
 ---
 
 Queen Victoria's death gives this chapter a clear starting point, but books do not change with the turn of a calendar. Edwardian writers inherited Victorian realism, its detailed social worlds and its large reading public. They also questioned the institutions and habits those worlds had made familiar. Wells, Bennett, Galsworthy and Forster examine money, houses, work and belonging, while Shaw turns a conversation on stage into a contest between ideas. Begin with those ordinary objects and relationships. A house may reveal a whole system of class; an argument about charity may lead to questions about where wealth comes from. This is how the period connects inherited literary forms with a century becoming less certain of its own assumptions.
@@ -49,6 +52,11 @@ New ideas about the mind and the universe also unsettled old beliefs. In *The In
 Thomas Hardy stood between the old century and the new. After the hostile reception of his novel *Jude the Obscure* in 1895 he had given up fiction and returned to poetry, his first love. His epic drama *The Dynasts* (1904-08) pictured the Napoleonic wars as a puppet show moved by an unfeeling force.
 
 ## Prose
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="galsworthy">
+  <img src="/assets/articles/sourced/john-galsworthy-historical.webp" alt="John Galsworthy. Historical photograph; photographer and date are not identified in the source." width="640" height="879" loading="lazy" decoding="async">
+  <figcaption>John Galsworthy. Historical photograph; photographer and date are not identified in the source. <a href="https://commons.wikimedia.org/wiki/File:John_Galsworthy_2.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 The Edwardian novel carried on the Victorian habit of long, solid stories about society. H. G. Wells, who began with scientific romances, now wrote social comedies such as *Tono-Bungay* (1909). Arnold Bennett's *The Old Wives' Tale* (1908) followed two sisters through a lifetime in the pottery towns of Staffordshire, and John Galsworthy's *The Man of Property* (1906) opened the story of the Forsyte family.
 

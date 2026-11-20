@@ -13,10 +13,13 @@ age: early-tudor
 period: 1500–1558
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Renaissance Period"
+  href: /notes/renaissance/
+next:
+  label: "Elizabethan Age"
+  href: /notes/ages/elizabethan/
 ---
 
 Printing was already changing English reading when the early Tudor writers began their work. They also inherited medieval forms, familiar stories and the reputation of Chaucer. What changed was the range of models they could study and adapt. More imagined another society; Wyatt reshaped a continental lyric; Surrey experimented with a verse form that later playwrights would use. This is a quieter literary setting than the crowded Elizabethan theatre, but it prepares important parts of that later world. As you read, follow one question: how does a borrowed form become useful in another language? The answer involves more than copying a pattern. A writer must make its rhythm, tone and argument work for new readers.
@@ -81,6 +84,11 @@ The English theatre of 1500 was still medieval. Towns put on cycles of mystery p
 ## Prose and humanism
 
 English prose was still young. For centuries serious writers had used Latin, and the first great English prose came from the Bible and the Prayer Book.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="more">
+  <img src="/assets/articles/sourced/thomas-more-holbein.webp" alt="Thomas More, painted by Hans Holbein the Younger, 1527." width="640" height="806" loading="lazy" decoding="async">
+  <figcaption>Thomas More, painted by Hans Holbein the Younger, 1527. <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Thomas_More_by_Hans_Holbein_d._J._in_the_Frick_Collection.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Thomas More's *Utopia*, written in Latin and printed in 1516, was one of the first great works of the age. It describes an imaginary island, found by a traveller, where property is shared and greed has no place, and uses it to criticise the harshness and injustice of England. The name comes from Greek words meaning "no place". Ralph Robinson's English translation followed in 1551. More's unfinished *History of King Richard III*, written in the 1510s, painted the king as a monster and later gave Shakespeare his villain.
 

@@ -13,10 +13,13 @@ age: elizabethan
 period: 1558–1603
 article_extras: true
 eleventyExcludeFromCollections: true
-prev:
-  label: British Literature timeline
-  href: /english-literature/
 reading_time_main: true
+prev:
+  label: "Early Tudor Period"
+  href: /notes/ages/early-tudor/
+next:
+  label: "Jacobean Age"
+  href: /notes/ages/jacobean/
 ---
 
 The early Tudors had helped make the English sonnet, blank verse and humanist prose possible. Under Elizabeth I, those resources reached new audiences. A poem could circulate among friends, a printed romance could travel beyond its writer's circle, and a play could bring many kinds of Londoner into one audience. This chapter begins where the earlier experiments become a broad literary culture. It is tempting to let Shakespeare fill the whole picture, but Sidney, Spenser, Kyd, Marlowe and many others made different contributions. Watch how each form works: a sonnet turns on a thought, an allegory gives an adventure another meaning, and a play makes words into action in front of an audience.

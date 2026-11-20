@@ -17,13 +17,13 @@ age: romantic-age
 period: 1798-1837
 exam_fit: [net, pgt, psc]
 topics: [lyrical-ballads, wordsworth, coleridge, blake, byron, shelley, keats, scott, austen, mary-shelley, imagination, sublime, negative-capability]
-prev:
-  label: Augustan Age
-  href: /notes/augustan-age/
-next:
-  label: Victorian Age
-  href: /notes/victorian-age/
 reading_time_main: true
+prev:
+  label: "Age of Sensibility"
+  href: /notes/ages/age-of-sensibility/
+next:
+  label: "Victorian Period"
+  href: /notes/victorian-age/
 ---
 
 The Age of Sensibility had already drawn readers toward sympathy, memory and the emotional life. Romantic writers carried those interests into new arguments about imagination, nature and freedom. A walk, a remembered childhood scene or a meeting with a stranger could become the beginning of a serious poem. Yet Romanticism is not simply pleasant writing about the countryside. It also includes revolution, disappointment, isolation and difficult questions about responsibility. Follow the differences among the writers. Wordsworth's remembered experience, Coleridge's unsettling stories and Keats's intense attention do not offer one formula. Their connection is a willingness to ask what imagination can reveal about a person's relation to the world.
@@ -101,6 +101,11 @@ Poetry in 1790 still spoke in the voice of the eighteenth century. Alexander Pop
 
 The decisive step came in Somerset in 1797. Wordsworth, with his sister Dorothy, rented Alfoxden House, a few miles from the village of Nether Stowey, where Coleridge lived. The two poets walked and talked almost every day, and out of those talks came the plan for *Lyrical Ballads*. Coleridge later recalled the plan in *Biographia Literaria*. He would write about strange and supernatural events and make them feel true, by winning from the reader what he called a willing suspension of disbelief. Wordsworth would take ordinary people and everyday scenes and show the wonder hidden in them.
 
+<figure class="article-illustration article-illustration--float" data-sourced-image="romantic-scene">
+  <img src="/assets/articles/sourced/turner-tintern-abbey.webp" alt="Tintern Abbey, painted by J. M. W. Turner, 1794. Landscape artwork for the period; it does not document Wordsworth composing his poem." width="500" height="699" loading="lazy" decoding="async">
+  <figcaption>Tintern Abbey, painted by J. M. W. Turner, 1794. Landscape artwork for the period; it does not document Wordsworth composing his poem. <a href="https://commons.wikimedia.org/wiki/File:Turner_Tintern1.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
+
 The 1798 book opened with Coleridge's *The Rime of the Ancient Mariner* and closed with Wordsworth's "Lines Written a Few Miles above Tintern Abbey". Between them stood poems about a little girl who would not accept that two of her brothers and sisters had died, and about other humble people. When the second edition came out in 1800, Wordsworth added a long Preface to explain what the two friends were trying to do. He wrote that poetry should use the language really used by men, that good poetry is the "spontaneous overflow of powerful feelings", and that it takes its origin from "emotion recollected in tranquillity". In other words, a poem begins in strong feeling, but the poet shapes it afterwards in a calm mind.
 
 Not everyone agreed with him. Coleridge himself, in *Biographia Literaria* (1817), argued that Wordsworth's rule about the speech of country people was too narrow, because great poetry could not simply copy the talk of villagers.
@@ -118,6 +123,11 @@ Some of the greatest work reached readers late. Wordsworth went on revising *The
 Poetry had been moving towards new ground before 1798. Edmund Burke's essay of 1757 on the sublime and the beautiful had taught readers that vast and wild things, such as mountains and storms, could give a deep, almost fearful pleasure. Thomas Percy's *Reliques of Ancient English Poetry* (1765) brought old ballads back to readers, and James Macpherson's "Ossian" poems of the 1760s offered misty tales of an ancient Gaelic bard. Macpherson claimed to have translated them, but they proved to be largely his own work. Robert Burns, a farmer's son from Ayrshire, died in 1796, having shown that fine poetry could come from a ploughman's pen.
 
 William Blake stood apart from all of them. A London engraver, he printed his words and pictures together from copper plates that he etched himself and then coloured each page by hand. This method is called illuminated printing. *Songs of Innocence* (1789) looked at the world as a child sees it, and *Songs of Experience* (1794) looked at the same world after cruelty and injustice have been seen. His longer "prophetic books" told of giant figures in a mythology that he invented. Few people bought his work. A soldier once accused him of speaking against the king, and in 1804 a jury found him not guilty. He died in 1827 with little fame.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait" data-sourced-image="wordsworth">
+  <img src="/assets/articles/sourced/wordsworth-haydon.webp" alt="Wordsworth on Helvellyn, painted by Benjamin Robert Haydon, 1842. This portrait is later than the Romantic timeline boundary." width="640" height="785" loading="lazy" decoding="async">
+  <figcaption>Wordsworth on Helvellyn, painted by Benjamin Robert Haydon, 1842. This portrait is later than the Romantic timeline boundary. <a href="https://commons.wikimedia.org/wiki/File:Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg" target="_blank" rel="noopener">Source</a>. Public domain.</figcaption>
+</figure>
 
 Wordsworth grew up among the hills and lakes of northern England, and the memory of that landscape never left him. In December 1799 he and his sister Dorothy settled at Dove Cottage in Grasmere, in the Lake District. Dorothy kept journals in which she noted flowers, weather and passers-by, and William often turned her notes into poems. In April 1802 the two saw a long line of daffodils beside Ullswater, and Dorothy described the sight in her journal. Two years later it became "I Wandered Lonely as a Cloud". His greatest work was *The Prelude*, a long blank-verse poem addressed to Coleridge about the growth of his own mind. He began it in 1798 and first completed it in 1805. In it he looked back on his childhood, his years at Cambridge and his time in revolutionary France.
 
