@@ -1,0 +1,71 @@
+/* /video-lessons/ — topic chips + video cards (look copied from the home page video cards) */
+
+.vl-browse{background:var(--paper);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.vl-browse h2{margin-bottom:6px}
+.vl-lede{margin:0 0 18px;max-width:70ch}
+
+/* Chips (JS shows them; with no JS every video is simply listed) */
+.vl-chips{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 22px}
+.vl-chips[hidden]{display:none}
+.vl-chip{
+  font:inherit;font-size:.88rem;font-weight:500;color:var(--ink);background:#fff;cursor:pointer;
+  padding:8px 15px;border:1.5px solid var(--teal);border-radius:999px;
+  transition:background .2s,color .2s,box-shadow .25s,transform .2s;
+}
+.vl-chip:hover{background:var(--teal);color:#fff;transform:translateY(-2px)}
+.vl-chip[aria-pressed="true"]{background:var(--teal);color:#fff}
+.vl-chip:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.vl-chip .n{opacity:.75;font-weight:600;margin-left:4px}
+
+/* Grid */
+.vl-grid{display:grid;gap:22px 16px;grid-template-columns:repeat(auto-fill,minmax(232px,1fr));max-width:none;margin:0;padding:0;list-style:none}
+.vl-card{display:block;color:inherit;transition:transform .22s cubic-bezier(.2,.7,.3,1)}
+.vl-item{display:block;margin:0;padding:0;max-width:none}
+.vl-item[hidden]{display:none}
+.vl-card:hover{transform:translateY(-5px)}
+.vl-card .thumb{
+  position:relative;aspect-ratio:16/9;border-radius:13px;overflow:hidden;margin-bottom:11px;
+  background:linear-gradient(135deg,#1E4A47,#16304A);border:1px solid var(--card-line);
+  display:flex;align-items:center;justify-content:center;transition:box-shadow .28s;
+}
+.vl-card:hover .thumb{box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.42)}
+.vl-card .thumb img{width:100%;height:100%;object-fit:cover}
+.vl-card .play{
+  position:absolute;width:52px;height:52px;border-radius:50%;background:rgba(255,255,255,.93);
+  display:flex;align-items:center;justify-content:center;color:var(--teal);
+  box-shadow:0 6px 18px rgba(0,0,0,.3);transition:transform .22s;
+}
+.vl-card:hover .play{transform:scale(1.12)}
+.vl-card .len{
+  position:absolute;right:8px;bottom:8px;padding:2px 7px;border-radius:6px;
+  background:rgba(10,20,30,.82);color:#fff;font-size:.74rem;font-weight:600;letter-spacing:.02em;
+}
+.vl-card h3{
+  font-size:.96rem;line-height:1.35;margin:0 0 4px;
+  display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden;
+}
+.vl-card p{font-size:.78rem;margin:0;color:var(--teal);font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+
+.vl-foot{margin-top:26px;text-align:center}
+.vl-foot[hidden]{display:none}
+.vl-status{margin:0 0 12px;font-size:.9rem}
+.vl-more{margin:0 0 0}
+.vl-more[hidden]{display:none}
+.vl-note{margin:22px auto 0;max-width:62ch;text-align:center;font-size:.92rem}
+
+/* Phone: one row per video, picture on the left (same as the home page) */
+@media(max-width:559px){
+  .vl-grid{grid-template-columns:1fr;gap:10px}
+  .vl-card{
+    display:grid;grid-template-columns:42% minmax(0,1fr);column-gap:13px;align-items:center;
+    padding:9px;border:1px solid var(--card-line);border-radius:13px;
+    background:linear-gradient(145deg,color-mix(in srgb,var(--paper) 84%,var(--teal)),color-mix(in srgb,var(--paper) 72%,var(--teal)));
+  }
+  .vl-card .thumb{grid-row:1 / span 2;margin-bottom:0;border-radius:10px}
+  .vl-card .play{width:34px;height:34px}
+  .vl-card .play svg{width:16px;height:16px}
+  .vl-card h3,.vl-card p{grid-column:2}
+  .vl-card h3{-webkit-line-clamp:4;line-clamp:4}
+  .vl-chips{gap:8px}
+  .vl-chip{padding:7px 12px;font-size:.84rem}
+}
