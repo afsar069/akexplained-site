@@ -1,0 +1,47 @@
+# English Literature card artwork
+
+The owner requested original, representative paintings for the 20 cards on
+`/english-literature/` on 20 November 2026. Each age has a distinct scene, with
+consistent gouache-style brushwork and a teal, gold and terracotta palette.
+These are modern imagined interpretations, not historical paintings or portraits
+copied from public-domain sources. The page labels them accordingly.
+
+Only this page uses the new series. Home, Daily, article illustrations and article
+headers retain their existing artwork. Card names, dates, writers and links are
+unchanged.
+
+## Files and export
+
+- `assets/age-cards/<age>-painted.webp`: 480 × 300, 17,180–34,524 bytes.
+- `assets/age-cards/<age>-painted-240.webp`: 240 × 150, 5,294–10,220 bytes.
+- The page uses `srcset` and `sizes` to choose the appropriate copy, with lazy loading.
+- The 20 larger copies total 487,822 bytes; the smaller copies total 152,436 bytes.
+- Previously, this page's 20 images totalled 617,554 bytes.
+
+The original paintings were generated as five four-panel sheets, then exported
+as separate WebP thumbnails. Keep source sheets out of the published assets.
+The Commonwealth panel was corrected to remove an anachronistic domed cathedral;
+its window now shows ordinary pitched seventeenth-century rooftops.
+
+## Subjects, in card order
+
+1. Old English: timber mead hall, lyre and shield.
+2. Anglo-Norman: stone castle and mounted traveller.
+3. Chaucer: pilgrims travelling towards a cathedral.
+4. Fifteenth century: early wooden printing press.
+5. Renaissance: humanist study, globe and armillary sphere.
+6. Early Tudor: palace courtyard, Tudor rose and lute.
+7. Elizabethan: open-air playhouse.
+8. Jacobean: candlelit tragedy stage, skull and theatrical mask.
+9. Caroline: country garden, Cavalier hat and lute.
+10. Commonwealth: plain writing desk, pamphlets and quill.
+11. Neoclassical: ordered classical library courtyard, bust and laurel.
+12. Restoration: indoor theatre with red curtains.
+13. Augustan: coffeehouse conversation.
+14. Sensibility: solitary reader in a country churchyard.
+15. Romantic: wanderer above a mountain lake.
+16. Victorian: London street and steam railway.
+17. Edwardian: terrace, bicycle and parasol.
+18. Georgian: pastoral poet beneath an apple tree.
+19. Modern: fragmented city reflections and typewriter.
+20. Postmodern: imagined library with interlocking staircases.
