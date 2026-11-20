@@ -7,7 +7,7 @@ mark: V
 crumb_label: Victorian
 hero_image: /assets/ages/victorian-hero-full-light.webp
 hero_class: hero-age hero-article-full
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -23,7 +23,10 @@ prev:
 next:
   label: Modern Age
   href: /notes/modern-age/
+reading_time_main: true
 ---
+
+Romantic writers had given imagination and individual experience a powerful place in literature. Victorian writers inherited that achievement in a society shaped by industry, reform and a growing reading public. The novel could follow many lives across a changing town, while a poem could turn a speaker's private uncertainty into a question about faith or duty. The connection with Romanticism remains visible, but the scale of attention often widens: who pays for progress, who is heard, and how should a person live among others? Read this age through those questions. Its interest lies in the variety of its answers, from Dickens's social worlds to the troubled voices of poetry and the difficult choices of later fiction.
 
 Early on the morning of 20 June 1837, two men drove out to Kensington Palace to wake a girl of eighteen. The Archbishop of Canterbury and the Lord Chamberlain had come with news that her uncle, William IV, was dead and that she was now Queen. Her name was Victoria. Nobody in that room could have guessed that she would reign for more than sixty-three years, longer than any ruler Britain had known, or that a whole age would take her name.
 

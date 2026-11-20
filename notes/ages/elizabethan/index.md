@@ -16,7 +16,10 @@ eleventyExcludeFromCollections: true
 prev:
   label: British Literature timeline
   href: /english-literature/
+reading_time_main: true
 ---
+
+The early Tudors had helped make the English sonnet, blank verse and humanist prose possible. Under Elizabeth I, those resources reached new audiences. A poem could circulate among friends, a printed romance could travel beyond its writer's circle, and a play could bring many kinds of Londoner into one audience. This chapter begins where the earlier experiments become a broad literary culture. It is tempting to let Shakespeare fill the whole picture, but Sidney, Spenser, Kyd, Marlowe and many others made different contributions. Watch how each form works: a sonnet turns on a thought, an allegory gives an adventure another meaning, and a play makes words into action in front of an audience.
 
 The reign of Elizabeth I saw English poetry and drama grow in range and public reach. This age inherited Tudor humanist education and the English lyric, then added a flourishing theatre and ambitious works in prose and verse.
 
@@ -171,7 +174,7 @@ A sonnet sequence can build a continuing relationship through a series of separa
 11. **Ten** — Bacon published the first ten in 1597.
 12. **James VI of Scotland** — He was the son of Mary, Queen of Scots, and became James I.
 
-## Quick quiz - 12 questions
+## Quick quiz - 17 questions
 
 Tap an answer to see at once if it is right. You do not need to log in.
 
@@ -282,6 +285,51 @@ Answer: A. Bacon published the first ten in 1597.
 - D) James VI of Scotland
 
 Answer: D. He was the son of Mary, Queen of Scots, and became James I.
+
+**13. How does a sonnet sequence differ from a single sonnet?**
+
+- A) It develops meaning across a series of poems
+- B) It is necessarily a prose novel
+- C) It must contain only one line
+- D) It cannot have a recurring speaker
+
+Answer: A. The relation among poems contributes to a sequence's effect.
+
+**14. What can allegory add to an adventure?**
+
+- A) A compulsory modern setting
+- B) A meaning beyond the literal action
+- C) A guarantee that every event happened
+- D) The removal of all characters
+
+Answer: B. Spenser's narrative can work as both adventure and moral representation.
+
+**15. Why should Shakespeare not be confined to Elizabeth's reign?**
+
+- A) All his plays were written after 1660
+- B) He wrote only medieval prose
+- C) His career continued into the Jacobean years
+- D) He died before 1558
+
+Answer: C. The date of a particular work matters.
+
+**16. What made the public theatre a distinctive literary setting?**
+
+- A) Every reader had to own the script
+- B) No actors were involved
+- C) All plays were private letters
+- D) Words became action before a paying audience
+
+Answer: D. Performance links language with bodies, movement and audience response.
+
+**17. Which group correctly represents different Elizabethan forms?**
+
+- A) Spenser's allegory, Sidney's sonnets and Kyd's drama
+- B) Only Victorian novels
+- C) Only Old English elegies
+- D) Only Georgian anthologies
+
+Answer: A. The age has several major literary forms and writers.
 
 ## Frequently asked questions
 

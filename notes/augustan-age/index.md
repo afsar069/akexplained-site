@@ -10,7 +10,7 @@ hero_class: hero-age hero-article-full
 hero_variants:
   - age: age-of-sensibility
     image: /assets/ages/age-of-sensibility-hero-full-light.webp
-updated: 2026-10-13
+updated: 2026-11-20
 exams:
   - UGC-NET
   - PGT
@@ -26,7 +26,10 @@ prev:
 next:
   label: Romantic Age
   href: /notes/romantic-age/
+reading_time_main: true
 ---
+
+Restoration writers had made wit, criticism and public argument central to literary life. In the early eighteenth century, those habits reached readers through new essays, poems and works of fiction. Pope could turn a social quarrel into a mock-epic; Swift could send a traveller through imaginary lands to make familiar human behaviour look strange. The coffeehouse and the printed page helped writers speak to readers they would never meet. This is the link with the previous age, but it also points forward. As prose fiction grows, literature gains new ways to follow a person's choices over time. Watch how the forms change while the questions about judgement, pride and good conduct continue.
 
 Early in the eighteenth century, many English writers began to think of themselves as Romans. Rome had suffered long civil wars and then found peace under its first emperor, Augustus, who ruled from 27 BC to AD 14. In his reign the poets Virgil, Horace and Ovid wrote works that later ages treated as models of order, polish and good taste.
 

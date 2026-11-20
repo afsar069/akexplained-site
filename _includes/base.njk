@@ -181,7 +181,7 @@
     {% if description %}<p class="lede">{{ description }}</p>{% endif %}
     <div class="metarow">
     <p class="artmeta">
-      <span class="rt">{{ content | readingTime }} min read</span>
+      <span class="rt">{% if reading_time_main %}{{ content | mainReadingTime }}{% else %}{{ content | readingTime }}{% endif %} min read</span>
       {% if updated %}<span class="up">Updated {{ updated | niceDate }}</span>{% endif %}
       {% if exams %}{% for e in exams %}{% set eu = e | examUrl %}{% if eu %}<a class="xt" href="{{ eu }}">{{ e }}</a>{% else %}<span class="xt">{{ e }}</span>{% endif %}{% endfor %}{% endif %}
     </p>
