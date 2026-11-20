@@ -5,10 +5,6 @@
 .vl-browse h2{margin-bottom:6px}
 .vl-lede{margin:0 0 20px;max-width:70ch}
 
-/* ---------- Intro band: no picture on this page (owner, 2026-11-20) ---------- */
-.intro-band::before{display:none}
-.intro-band{padding:34px 0}
-
 /* ---------- The bar ---------- */
 .vl-picker{margin:0 0 22px;max-width:none}
 .vl-picker[hidden]{display:none}
