@@ -5,13 +5,17 @@
 .vl-browse h2{margin-bottom:6px}
 .vl-lede{margin:0 0 20px;max-width:70ch}
 
+/* ---------- Intro band: no picture on this page (owner, 2026-11-20) ---------- */
+.intro-band::before{display:none}
+.intro-band{padding:34px 0}
+
 /* ---------- The bar ---------- */
 .vl-picker{margin:0 0 22px;max-width:none}
 .vl-picker[hidden]{display:none}
 .vl-bar{
   display:flex;align-items:center;gap:14px;width:100%;text-align:left;cursor:pointer;
   font:inherit;color:#fff;padding:14px 18px;border:0;border-radius:14px;
-  background:linear-gradient(100deg,var(--teal-dark) 0%,#16304A 100%);
+  background:linear-gradient(100deg,#0F766E 0%,#16847A 100%);   /* lighter teal (owner, 2026-11-20); white text stays above 4.5:1 */
   border-left:5px solid var(--gold);
   box-shadow:0 10px 24px -14px rgba(22,48,74,.55);
   transition:box-shadow .25s,transform .2s;
@@ -22,7 +26,7 @@
 .vl-bar-ico{display:flex;width:42px;height:42px;border-radius:11px;background:rgba(255,255,255,.12);align-items:center;justify-content:center;flex:none}
 .vl-bar-txt{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
 .vl-bar-txt b{font-family:var(--serif,inherit);font-size:1.12rem;font-weight:700;letter-spacing:.01em;line-height:1.2}
-.vl-bar-txt .now{font-size:.88rem;opacity:.85;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vl-bar-txt .now{font-size:.88rem;opacity:.95;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .vl-bar-caret{display:flex;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.14);align-items:center;justify-content:center;flex:none;transition:transform .25s}
 .vl-bar[aria-expanded="true"] .vl-bar-caret{transform:rotate(180deg)}
 
