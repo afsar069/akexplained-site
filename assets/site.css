@@ -515,13 +515,15 @@ details.faq .body p:last-child{margin-bottom:0}
 }
 
 /* Reading column.
-   640px @ 19px Literata = ~70 characters per line. Ye wahi range hai jo un
+   720px (owner, 2026-11-20; was 640px) @ 19px Literata = ~80 characters per line. Images follow the column: full-width ones are 100% of it,
+   the side ones (--float, --portrait) have their max-width raised by the same 720/640 ratio (18rem->20.25rem, 13rem->14.6rem).
+   (old note: 640px @ 19px = ~70 characters per line.) Ye wahi range hai jo un
    sites par chalti hai jahan sabse zyada lambe article padhe jaate hain:
    Medium ~21px/680px, NYT ~19px/660px, Substack ~20px/728px, Guardian ~17px/620px.
    Sab serif body font par hain, aur sabka font 16px se bada hai.
    Times New Roman chahiye to --serif ki jagah yahan ye likh dein:
    font-family:'Times New Roman',Times,serif;  */
-.article{max-width:640px;margin:0 auto;padding:0;font-family:var(--serif);font-size:19px;line-height:1.72;color:#333E49}
+.article{max-width:720px;margin:0 auto;padding:0;font-family:var(--serif);font-size:19px;line-height:1.72;color:#333E49}
 .article > :first-child{margin-top:0}
 .article h2{font-size:1.5rem;margin-top:36px;margin-bottom:12px;line-height:1.3}
 .article h3{font-family:var(--serif);color:var(--ink);font-weight:600;font-size:1.22rem;margin-top:28px;margin-bottom:9px}
@@ -538,9 +540,9 @@ details.faq .body p:last-child{margin-bottom:0}
 .article .article-illustration img{display:block;width:100%;height:auto;margin:0}
 .article .article-illustration figcaption{max-width:none;line-height:1.45}
 /* Optional sizes let selected paintings sit beside the prose. */
-.article figure.article-illustration--float{float:right;width:44%;max-width:18rem;margin:4px 0 16px 24px}
+.article figure.article-illustration--float{float:right;width:44%;max-width:20.25rem;margin:4px 0 16px 24px}
 .article figure.article-illustration--left{float:left;margin:4px 24px 16px 0}
-.article figure.article-illustration--portrait{width:32%;max-width:13rem}
+.article figure.article-illustration--portrait{width:32%;max-width:14.6rem}
 .article figure.article-illustration--float ~ :is(h2,h3){clear:both}
 @media (max-width:640px){
   .article figure.article-illustration--float{float:none;width:100%;max-width:none;margin:24px 0}
