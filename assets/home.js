@@ -251,6 +251,23 @@
     { slug:'postmodern',        yr:'1945', name:'Postmodern Period',   era:'1945 \u2192',       who:'Beckett \u00b7 Larkin \u00b7 Rushdie',          article:'/notes/contemporary-age/' },
   ];
 
+  /* ---------- American ages (owner, 2026-11-21) ----------
+     Landing page par British ke neeche ek line me paanch card. Naam, saal, writers aur alt text
+     /english-literature/#american-literature wale cards se haath-ba-haath mel khate hain — badlne hon to dono jagah.
+     Tasveer: /assets/age-cards/<slug>-painted.webp (wahi jo timeline par hai). Ye 20 British ages me nahi ginti. */
+  const americanAges = [
+    { slug:'american-colonial',     yr:'1600', name:'Colonial and Early National', era:'1600 – 1830', who:'Bradstreet · Franklin · Irving',   article:'/notes/ages/american-colonial/',
+      alt:'Painted interpretation of a New England meeting house with villagers and a sailing ship in the harbour.' },
+    { slug:'american-renaissance',  yr:'1830', name:'American Renaissance',        era:'1830 – 1865', who:'Emerson · Hawthorne · Whitman',    article:'/notes/ages/american-renaissance/',
+      alt:'Painted interpretation of a nineteenth-century writer’s desk beside a woodland river.' },
+    { slug:'american-realism',      yr:'1865', name:'Realism and Naturalism',      era:'1865 – 1914', who:'Twain · James · Crane',            article:'/notes/ages/american-realism/',
+      alt:'Painted interpretation of a late nineteenth-century American street with a family, horse-drawn streetcar and factories.' },
+    { slug:'american-modernism',    yr:'1914', name:'American Modernism',          era:'1914 – 1945', who:'Hemingway · Faulkner · Hughes',    article:'/notes/ages/american-modernism/',
+      alt:'Painted interpretation of a 1920s Harlem cafe with a writer and jazz musicians.' },
+    { slug:'american-contemporary', yr:'1945', name:'Postwar and Contemporary',    era:'1945 →',      who:'Baldwin · Plath · Morrison',        article:'/notes/ages/american-contemporary/',
+      alt:'Painted interpretation of readers in a modern American public library.' },
+  ];
+
   /* ---------- Videos: real lessons on the channel ----------
      `title` khaali hai to card par "Watch on YouTube" dikhta hai.
      Asli title likh dene par wahi dikhne lagega. */
@@ -370,22 +387,34 @@
 
 
   /* ---------- Ages grid ---------- */
-  function renderAges() {
-    const grid = document.getElementById('ageGrid');
-    if (!grid) return;
-    grid.innerHTML = ages.map(function (a) {
+  /* Ek hi card-markup British aur American dono ke liye. */
+  function ageCardsHtml(list) {
+    return list.map(function (a) {
       // Article ban chuka ho to reader seedha wahan jaaye; warna timeline page par.
       const to = a.article || ('/english-literature/#' + a.slug);
       const img = '/assets/age-cards/' + a.slug + '-painted';
       return '<a class="agecard" href="' + to + '">' +
              '<span class="thumb"><img src="' + img + '.webp" srcset="' + img + '-240.webp 240w, ' + img + '.webp 480w" ' +
              'sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" ' +
-             'alt="Painted interpretation of ' + a.name + '." width="480" height="300" loading="lazy">' +
+             'alt="' + (a.alt || 'Painted interpretation of ' + a.name + '.') + '" width="480" height="300" loading="lazy">' +
              '<span class="yr">' + a.yr + '</span></span>' +
              '<h3>' + a.name + '</h3>' +
              '<p class="era">' + a.era + '</p>' +
              '<p class="who">' + a.who + '</p></a>';
     }).join('');
+  }
+
+  /* American ages: paanch card, desktop par ek poori line; "+" ki zarurat nahi. */
+  function renderAmericanAges() {
+    const grid = document.getElementById('americanAgeGrid');
+    if (!grid) return;
+    grid.innerHTML = ageCardsHtml(americanAges);
+  }
+
+  function renderAges() {
+    const grid = document.getElementById('ageGrid');
+    if (!grid) return;
+    grid.innerHTML = ageCardsHtml(ages);
 
     // "+" tab: pehle sirf do line dikhti hain, dabane par saari ages khulti hain (aur "-" se band).
     const btn = document.getElementById('ageMore');
@@ -591,6 +620,7 @@
 
   document.addEventListener('DOMContentLoaded', function () {
     renderAges();
+    renderAmericanAges();
     renderVideos();
     loadReviews().then(renderReviews);
     renderBirthday();
