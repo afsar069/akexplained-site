@@ -1,0 +1,113 @@
+---
+layout: state-psc-layout.njk
+permalink: /exams/state-psc/up-assistant-professor/english-pyq-2026/index.html
+title: English PYQ 2026 Quick Quiz — UP Assistant Professor
+description: Free quiz of 90 UP Assistant Professor 2026 English questions (31 to 120). Tap an answer and see at once if it is right. No login needed.
+crumb_label: English PYQ 2026
+state_psc_resource: true
+---
+{#- Quick Quiz (assets/instant.js), NOT the CBT engine (owner, 2026-11-21). One question file, no levels:
+    data-levels="paper" and data-max="90" (the engine's two small options). Free, no login, so not catalog-checked.
+    Questions are the public file assets/questions/up-ap-english-2026.json (CLAUDE.md rule 3). -#}
+<div class="iq-body state-psc-iq">
+  <div class="iq-grid">
+
+    <div class="iq-main" data-iq data-bank="up-ap-english-2026" data-levels="paper" data-max="90" data-src="/assets/questions/up-ap-english-2026.json" data-back="/exams/state-psc/up-assistant-professor/">
+
+      <noscript><p class="iq-card iq-nojs">This quiz needs JavaScript. Please turn it on in your browser and open the page again.</p></noscript>
+
+      <section id="iqSetup" class="iq-card" aria-labelledby="iqSetupTitle">
+        <h2 id="iqSetupTitle">English PYQ 2026: Quick Quiz</h2>
+        <p class="iq-lede">Questions 31 to 120 of the UP Assistant Professor 2026 English paper. Choose how many questions you want. If you choose nothing, you get 10 questions.</p>
+
+        <div id="iqResume" class="iq-resume" hidden>
+          <p id="iqResumeTxt"></p>
+          <div class="iq-resume-btns">
+            <button type="button" class="iq-btn iq-btn-small" id="iqResumeGo">Continue</button>
+            <button type="button" class="iq-btn iq-btn-ghost iq-btn-small" id="iqResumeDrop">Start a new one</button>
+          </div>
+        </div>
+
+        <p class="iq-sum" id="iqInfoPaper">90 questions</p>
+
+        <div class="iq-field">
+          <label class="iq-legend" for="iqCount">Number of questions</label>
+          <div class="iq-count">
+            <button type="button" class="iq-step" id="iqMinus" aria-label="One question fewer">&minus;</button>
+            <input id="iqCount" type="number" inputmode="numeric" min="10" max="90" step="1" value="10" aria-describedby="iqHint">
+            <button type="button" class="iq-step" id="iqPlus" aria-label="One question more">+</button>
+          </div>
+          <div class="iq-chips" role="group" aria-label="Quick choices">
+            <button type="button" class="mcq-chip" data-n="10" aria-pressed="true">10</button>
+            <button type="button" class="mcq-chip" data-n="30" aria-pressed="false">30</button>
+            <button type="button" class="mcq-chip" data-n="50" aria-pressed="false">50</button>
+            <button type="button" class="mcq-chip" data-n="70" aria-pressed="false">70</button>
+            <button type="button" class="mcq-chip" data-n="90" aria-pressed="false">90</button>
+          </div>
+          <p class="iq-hint" id="iqHint">Choose any number from 10 to 90.</p>
+        </div>
+
+        <p class="iq-loaderr" id="iqLoadErr" role="alert" hidden>The questions could not be loaded. Check your connection and press Start Quiz again.</p>
+
+        <div class="iq-startrow">
+          <p class="iq-sum" id="iqSum" aria-live="polite">Paper &middot; 10 questions</p>
+          <button type="button" class="iq-btn" id="iqStart">Start Quiz &rarr;</button>
+        </div>
+      </section>
+
+      <section id="iqPlay" class="iq-card" aria-label="Quiz" hidden>
+        <div class="iq-top">
+          <span class="iq-meta" id="iqMeta"></span>
+          <span class="iq-score" id="iqScore"></span>
+        </div>
+        <div class="iq-bar" aria-hidden="true"><i id="iqBar"></i></div>
+        <h2 class="iq-q" id="iqQ" tabindex="-1"></h2>
+        <ul class="iq-opts" id="iqOpts"></ul>
+        <p class="iq-keys">Tip: you can also press A, B, C or D.</p>
+        <div class="iq-fb" id="iqFb" role="status" aria-live="polite" hidden>
+          <b id="iqVerdict"></b>
+          <p id="iqRight"></p>
+          <p id="iqWhy"></p>
+        </div>
+        <div class="iq-nav">
+          <button type="button" class="iq-btn iq-btn-ghost iq-btn-small" id="iqStop">Stop and see result</button>
+          <button type="button" class="iq-btn" id="iqNext" hidden>Next question &rarr;</button>
+        </div>
+      </section>
+
+      <section id="iqResult" class="iq-card" aria-labelledby="iqRHead" hidden>
+        <h2 id="iqRHead" tabindex="-1">Your Result</h2>
+        <p class="iq-big"><b id="iqRRight">0</b> <span>out of</span> <b id="iqRTotal">0</b></p>
+        <p class="iq-pct" id="iqRPct"></p>
+        <p id="iqRNote"></p>
+        <p class="iq-seen" id="iqRSeen"></p>
+        <div class="iq-actions">
+          <button type="button" class="iq-btn" id="iqAgain">Try again</button>
+          <button type="button" class="iq-btn iq-btn-ghost" id="iqChange">Change the number</button>
+          <a class="iq-btn iq-btn-ghost" href="/exams/state-psc/up-assistant-professor/">Back to UP Assistant Professor</a>
+        </div>
+        <div class="iq-missed" id="iqRMissed"></div>
+      </section>
+
+    </div>
+
+    <aside class="iq-aside" aria-labelledby="iqAboutTitle">
+      <h2 id="iqAboutTitle">About This Quiz</h2>
+      <ul>
+        <li><b>90 questions.</b> These are Questions 31 to 120 of the paper.</li>
+        <li><b>Free for everyone.</b> You do not need to log in.</li>
+        <li><b>The answer shows at once.</b> Tap an option and it turns green or red, with the reason underneath.</li>
+        <li><b>It covers</b> English literature, literary theory and criticism, Indian and world writing, and language and linguistics.</li>
+        <li><b>New questions come first.</b> Then the ones you missed, then the ones you got right.</li>
+        <li><b>Your record stays in this browser</b> unless you are logged in.</li>
+      </ul>
+      <div class="iq-links">
+        <a href="/exams/state-psc/up-assistant-professor/paper-2-mock-tests/">Paper 2 Mock Tests &rarr;</a>
+        <a href="/exams/state-psc/up-assistant-professor/">All UP Assistant Professor resources &rarr;</a>
+      </div>
+    </aside>
+
+  </div>
+  <p class="pgt-pyq-disclaimer">{% include "state-psc-pyq-disclaimer.njk" %}</p>
+</div>
+<script src="/assets/instant.js" defer></script>

@@ -21,6 +21,7 @@
    are then dropped, so they never stick to a different question.
 
    Defaults (reader chooses nothing): Easy, 10 questions. Range 10 to 50.
+   A page may use one question file instead (data-levels="paper", data-max="90").
 
    Which questions: ones never seen first, then ones missed last time,
    then ones answered right. Inside each group the order is random.
@@ -43,9 +44,12 @@
   var BANK = root.getAttribute('data-bank');
   var SRC = root.getAttribute('data-src');
   var BACK = root.getAttribute('data-back') || '/quizzes/daily/';
-  var LEVELS = ['easy', 'hard'];
-  var LEVEL_NAME = { easy: 'Easy', hard: 'Hard' };
-  var MIN = 10, MAX = 50, DEF_LEVEL = 'easy', DEF_N = 10;
+  /* Two levels (Easy and Hard) and 10 to 50 questions, unless the page says otherwise:
+     data-levels="paper" is ONE question file with no level choice (a previous-year paper),
+     data-max="90" lets the reader take more than 50. In that case data-src has no {level}. */
+  var LEVELS = (root.getAttribute('data-levels') || 'easy,hard').split(',');
+  var LEVEL_NAME = { easy: 'Easy', hard: 'Hard', paper: 'Paper' };
+  var MIN = 10, MAX = parseInt(root.getAttribute('data-max'), 10) || 50, DEF_LEVEL = LEVELS[0], DEF_N = 10;
   var KEY = 'akd:' + BANK + ':v1';
   var RUN = 'akd:' + BANK + ':run:v1';
   var LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
@@ -405,7 +409,7 @@
     el.rTotal.textContent = answered.length;
     el.rPct.textContent = pct + '% right · ' + LEVEL_NAME[run.level] + (early ? ' · stopped early' : '');
     el.rNote.textContent = pct >= 80
-      ? 'Very good. Try the other level, or more questions.'
+      ? (LEVELS.length > 1 ? 'Very good. Try the other level, or more questions.' : 'Very good. Try again with more questions.')
       : pct >= 50
         ? 'A good start. Look at the ones you missed below, then try again.'
         : 'Read the notes, look at the ones you missed below, then try again.';

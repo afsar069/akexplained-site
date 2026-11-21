@@ -13,3 +13,6 @@
   box-shadow:0 2px 0 rgba(0,0,0,.18);transition:background-color .18s;
 }
 .pgt-resource-card:hover .state-psc-start{background:var(--teal-dark)}
+
+/* English PYQ quick quiz: the quiz box sits inside the page's own text column, so the Daily page's big padding is not needed */
+.state-psc-iq{padding-top:4px;padding-bottom:0}

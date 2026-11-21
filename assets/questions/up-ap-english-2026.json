@@ -1,0 +1,1140 @@
+{
+ "bankId": "up-ap-english-2026",
+ "period": "UP Assistant Professor English 2026, questions 31 to 120",
+ "level": "paper",
+ "rev": 1,
+ "questions": [
+  {
+   "id": "upap26-q031",
+   "question": "Which linguistic pattern most clearly exemplifies foregrounding in stylistic analysis?",
+   "options": [
+    "Reference chains that connect pronouns with earlier noun phrases",
+    "Turn-taking rules governing transitions between conversational speakers",
+    "Unmarked vocabulary selected solely for propositional transparency",
+    "Salient deviation or unexpectedly sustained structural parallelism"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In stylistic analysis (following Mukařovský and Leech), foregrounding is achieved through linguistic deviation (breaking norms) or unexpected, sustained parallelism that draws attention to the form itself.",
+   "src": "INFLIBNET: Stylistics"
+  },
+  {
+   "id": "upap26-q032",
+   "question": "In Christina Rossetti’s “Goblin Market”, how does Lizzie’s rescue of Laura transform the poem’s earlier pattern of consumption?",
+   "options": [
+    "By purchasing fruit at a higher price, Lizzie demonstrates that fair commercial exchange neutralizes its harmful effects.",
+    "By secretly eating the fruit, Lizzie transfers Laura’s appetite and suffering entirely to herself.",
+    "By destroying the goblins’ orchard, Lizzie permanently removes desire from both sisters’ lives.",
+    "By refusing to eat and enduring coercion, Lizzie carries the fruit’s juices back through sisterly self-sacrifice, turning destructive consumption into restoration."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Lizzie resists the goblins' assault without eating the fruit herself, bringing the smeared juices back for Laura ('Eat me, drink me, love me'), transforming Laura's fatal indulgence into redemptive healing.",
+   "src": "University of Toronto: Goblin Market"
+  },
+  {
+   "id": "upap26-q033",
+   "question": "How do rhythm and simile jointly represent the woman carried in Naidu’s “Palanquin Bearers”?",
+   "options": [
+    "Documentary description removes emotional and musical qualities from the act of carrying her.",
+    "Broken rhythm and images of stone and iron emphasise that she is an oppressive physical burden.",
+    "Irregular pauses and violent imagery establish her active resistance to the bearers throughout the journey.",
+    "Alternating movement and images of flowers, birds, stars, and pearls create an impression of light, fluid grace."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Naidu's lilting, swaying rhythm imitates the palanquin's motion. Similes likening the carried woman to a flower, bird, star and pearl make her seem delicate, graceful and buoyant rather than burdensome.",
+   "src": "Poetry Archive: Palanquin Bearers"
+  },
+  {
+   "id": "upap26-q034",
+   "question": "What is the principal rhetorical effect of Astrophil’s apostrophe to the moon in Sonnet 31?",
+   "options": [
+    "He uses the moon’s tidal force to explain why his emotional attachment changes predictably each month.",
+    "He projects his disappointed love onto the moon, converting its appearance into evidence of a supposedly universal pattern of disdain.",
+    "He invokes astronomical evidence to prove that Stella’s behaviour is controlled by lunar phases.",
+    "He treats the moon as Diana solely to renounce secular love and enter religious service."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Sidney's Astrophel and Stella Sonnet 31 ('With how sad steps, O Moon, thou climb'st the skies'), Astrophil projects his own unrequited longing onto the pale moon, imagining it also suffers from love and disdain.",
+   "src": "Poetry Foundation: Astrophil and Stella 31"
+  },
+  {
+   "id": "upap26-q035",
+   "question": "Which feature most directly follows from Williams’s designation of The Glass Menagerie as a memory play?",
+   "options": [
+    "Tom’s recollection permits selective emphasis, non-realistic lighting, music, and poetic distortion rather than photographic realism.",
+    "The scenes remain unrelated because memory prevents any emotional or thematic continuity.",
+    "Every event must be reproduced with documentary accuracy because memory provides objective historical evidence.",
+    "The narrator disappears after the opening so that the audience encounters an unmediated present-time action."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In his Production Notes and Tom's opening monologue, Tennessee Williams explains that as a 'memory play,' The Glass Menagerie is non-realistic; memory allows atmospheric lighting, music, and symbolic distortion."
+  },
+  {
+   "id": "upap26-q036",
+   "question": "Which premise underlies Johnson’s defence of Shakespeare’s violation of the unities of time and place?",
+   "options": [
+    "Spectators know the stage is representational, so imagined changes of place or time are no more inherently incredible than the initial setting.",
+    "Spectators mistake theatrical representation for literal reality and therefore require exact spatial continuity.",
+    "Unity of action becomes unnecessary whenever a dramatist combines tragedy with comic scenes.",
+    "Historical drama is exempt from all principles of probability because its events have already occurred."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Preface to Shakespeare, Samuel Johnson argues that spectators are always in their senses and know the stage is only a stage; if they can imagine London is Alexandria in Act I, they can just as easily imagine it is Rome in Act II.",
+   "src": "Project Gutenberg: Preface to Shakespeare"
+  },
+  {
+   "id": "upap26-q037",
+   "question": "In Bacon’s essay “Of Truth”, truth is compared to a pearl. What quality does Bacon attribute to that pearl?",
+   "options": [
+    "It shows best in varied lights",
+    "It shows best by day",
+    "It glows most brightly in darkness",
+    "It shines only by candlelight"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Of Truth,' Francis Bacon writes: 'Truth may perhaps come to the price of a pearl, that showeth best by day; but it will not rise to the price of a diamond, or carbuncle, that showeth best in varied lights.'",
+   "src": "Wikisource: Of Truth"
+  },
+  {
+   "id": "upap26-q038",
+   "question": "In Aristotle’s Poetics, tragedy is defined chiefly as an imitation of what?",
+   "options": [
+    "A philosophical debate between two rivals",
+    "A comic sequence of everyday misunderstandings",
+    "A serious, complete action of magnitude",
+    "A single virtuous character’s private thoughts"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Chapter 6 of Poetics, Aristotle defines tragedy as 'an imitation of an action that is serious, complete, and of a certain magnitude.'",
+   "src": "MIT: Aristotle Poetics"
+  },
+  {
+   "id": "upap26-q039",
+   "question": "Why does Johnson principally describe Shakespeare as “the poet of nature” in the Preface to Shakespeare?",
+   "options": [
+    "His characters are idealised according to social rank and therefore avoid ordinary human weaknesses.",
+    "His characters reproduce the speech and behaviour of Johnson’s contemporary readers without historical variation.",
+    "His characters embody general human passions and principles even when their particular manners vary across places and periods.",
+    "His characters consistently represent historically exact national customs rather than common human motives."
+   ],
+   "correct_option_id": 2,
+   "explanation": "Johnson calls Shakespeare 'the poet of nature: the poet that holds up to his readers a faithful mirrour of manners and of life,' whose characters represent universal human nature rather than local or temporary quirks.",
+   "src": "Project Gutenberg: Preface to Shakespeare"
+  },
+  {
+   "id": "upap26-q040",
+   "question": "Which source relationship most accurately describes Webster’s use of William Painter’s The Palace of Pleasure in The Duchess of Malfi?",
+   "options": [
+    "Painter supplies only the Bosola subplot, while Webster derives the Duchess and Antonio exclusively from Holinshed.",
+    "Painter provides a comic marriage plot that Webster reproduces without substantial thematic transformation.",
+    "Painter supplies the English narrative of the Duchess’s story, which Webster reshapes into a tragedy of autonomy, surveillance and dynastic control.",
+    "Painter translates a Plutarchan Roman biography that Webster relocates unchanged to Renaissance Italy."
+   ],
+   "correct_option_id": 2,
+   "explanation": "Webster adapted the narrative of the Duchess in William Painter's The Palace of Pleasure (1567). Painter's account draws on François de Belleforest's French adaptation of Matteo Bandello's Italian narrative. Webster develops this material into a Jacobean tragedy of female autonomy, surveillance and dynastic power.",
+   "src": "Royal Shakespeare Company: Sources"
+  },
+  {
+   "id": "upap26-q041",
+   "question": "Which statement most accurately summarises Neander’s defence of English tragicomedy in An Essay of Dramatic Poesy?",
+   "options": [
+    "Tragic and comic scenes may reflect life’s mixture and heighten one another through contrast.",
+    "Contrasting passions necessarily destroy dramatic unity and therefore belong in separate plays.",
+    "Tragic and comic actions may be combined only when both derive from documented history.",
+    "Comic interludes are acceptable solely because ancient Greek dramatists established the practice."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Dryden's An Essay of Dramatic Poesy, Neander defends English tragicomedy by arguing that mirth does not destroy compassion; rather, contraries set each other off, and comic relief gives the audience a breathing space."
+  },
+  {
+   "id": "upap26-q042",
+   "question": "What does Vivekananda mean by “Assimilation and not Destruction” in his final Chicago address?",
+   "options": [
+    "All religions should surrender their distinctive traditions and merge into one compulsory universal institution.",
+    "Each religion should learn from others while preserving its own individuality and path of development.",
+    "One religion should assimilate the followers of every other religion until doctrinal difference disappears.",
+    "Religious traditions should be replaced by a secular system that excludes spiritual claims from public life."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In his final address at the World's Parliament of Religions (27 September 1893), Swami Vivekananda stated that each religion 'must assimilate the spirit of the others and yet preserve his individuality and grow according to his own law of growth.'"
+  },
+  {
+   "id": "upap26-q043",
+   "question": "Which theological paradox most accurately structures the whisky priest’s characterization in The Power and the Glory?",
+   "options": [
+    "Institutional promotion rewards him for cooperating with the state’s suppression of Catholic worship.",
+    "Doctrinal heresy enables him to replace Catholic sacraments with revolutionary political instruction.",
+    "Personal moral failure coexists with a sacramental vocation that repeatedly draws him back to endangered believers.",
+    "Personal innocence conflicts with false accusations that he has abandoned every priestly function."
+   ],
+   "correct_option_id": 2,
+   "explanation": "The whisky priest is personally compromised by alcoholism, fear and having fathered a child, yet he persists in his priestly and sacramental obligations. He returns despite the risk of arrest to OFFER confession to the dying criminal Calver. Calver refuses, so it would be inaccurate to say the priest actually hears his confession.",
+   "src": "CliffsNotes: Calver and the priest"
+  },
+  {
+   "id": "upap26-q044",
+   "question": "Why is doublethink indispensable to the Party’s continual rewriting of the past?",
+   "options": [
+    "It enables officials to alter records knowingly while accepting each new version as having always been true.",
+    "It separates factual administration from ideology so that record-keepers remain politically neutral.",
+    "It allows citizens to compare competing records and determine which version possesses stronger evidence.",
+    "It preserves an unchanged private memory against every alteration made by the Ministry of Truth."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In George Orwell's Nineteen Eighty-Four, doublethink is the cognitive discipline of holding two contradictory beliefs simultaneously and accepting both—allowing Party members to falsify historical records while believing the fabricated version is the eternal truth.",
+   "src": "Orwell: Nineteen Eighty-Four (reference)"
+  },
+  {
+   "id": "upap26-q045",
+   "question": "Which formal practice most directly challenges the assumptions of continuous chronology and stable external narration associated with conventional nineteenth-century realism?",
+   "options": [
+    "Unified stage action, continuous location, compressed dramatic time, and observance of classical unities",
+    "Closed heroic couplets, fixed decorum, balanced antithesis, and imitation of Augustan satire",
+    "Omniscient narration, linear causality, social description, and comprehensive authorial explanation",
+    "Shifting focalisation, disrupted chronology, interior monologue, and fragmentary narrative structure"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Modernist fiction (e.g., Woolf, Joyce, Faulkner) breaks away from nineteenth-century realism's linear plot and omniscient narrator through fragmented structure, nonlinear time, multiple perspectives, and interior monologue."
+  },
+  {
+   "id": "upap26-q046",
+   "question": "What does Candida’s choice of “the weaker of the two” reveal in the concluding “auction” scene?",
+   "options": [
+    "Morell’s public authority and confidence depend more heavily on Candida’s emotional and domestic support than Marchbanks’s inward independence does.",
+    "Candida regards poetic imagination as weakness and therefore selects the more socially powerful man.",
+    "Marchbanks is physically incapable of supporting himself, whereas Morell possesses complete emotional independence.",
+    "Morell’s religious faith has collapsed entirely, while Marchbanks offers to replace him as a clergyman."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In George Bernard Shaw's Candida, Candida chooses her husband, Reverend James Morell, as 'the weaker of the two' because despite his outward public confidence, he relies entirely on her domestic care and emotional validation, whereas Marchbanks has learned to stand alone.",
+   "src": "Project Gutenberg: Candida"
+  },
+  {
+   "id": "upap26-q047",
+   "question": "Why does Santiago’s return with only the marlin’s skeleton not constitute complete defeat within the novella’s ethical framework?",
+   "options": [
+    "The villagers mistakenly believe that Santiago returned with the entire marlin and reward him accordingly.",
+    "Manolin’s assistance during the struggle transfers responsibility for the material loss away from Santiago.",
+    "The skeleton retains sufficient commercial value to make the voyage financially successful.",
+    "Santiago preserves discipline, endurance, and dignity even though natural forces destroy the material result of his struggle."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Hemingway's The Old Man and the Sea, Santiago embodies the Hemingway code hero—'A man can be destroyed but not defeated.' Though sharks strip the marlin's flesh, Santiago's courage, skill, and endurance remain intact."
+  },
+  {
+   "id": "upap26-q048",
+   "question": "In Freud’s structural model of the psyche, which part represents the unconscious reservoir of instinctual desires?",
+   "options": [
+    "The id",
+    "The ego",
+    "The libido",
+    "The superego"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Sigmund Freud's structural model (id, ego, superego), the id is the wholly unconscious reservoir of primitive, instinctual drives and desires operating according to the pleasure principle."
+  },
+  {
+   "id": "upap26-q049",
+   "question": "Why is Huck’s belief that helping Jim will condemn him to hell morally ironic?",
+   "options": [
+    "His socially trained conscience labels an act of loyalty and resistance to slavery as sinful, exposing the corruption of respectable morality.",
+    "Huck’s decision is motivated solely by fear of punishment from Tom Sawyer and not by his relationship with Jim.",
+    "His conscience correctly identifies betrayal of Jim as virtuous, but Huck accidentally destroys the letter.",
+    "Huck knows that Jim is already legally free and therefore faces no genuine ethical conflict."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Mark Twain's Adventures of Huckleberry Finn, Huck's 'deformed conscience' (shaped by a slaveholding society) tells him that helping Jim escape is a mortal sin, yet his innate empathy leads him to tear up the letter and say, 'All right, then, I'll go to hell'—exposing the moral hypocrisy of that society.",
+   "src": "Project Gutenberg: Huckleberry Finn"
+  },
+  {
+   "id": "upap26-q050",
+   "question": "Which conflict most directly exposes the defective model of success in Death of a Salesman?",
+   "options": [
+    "Willy rejects material achievement, whereas Biff pursues political authority as the sole measure of personal worth.",
+    "Willy values disciplined labour and self-knowledge, whereas Biff insists that reputation alone guarantees prosperity.",
+    "Willy accepts his ordinary limitations, whereas Biff refuses to acknowledge any difference between aspiration and achievement.",
+    "Willy equates charisma and being “well liked” with success, whereas Biff recognises that the family’s inflated self-image is a destructive lie."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Arthur Miller's Death of a Salesman, Willy Loman clings to the illusion that being 'well liked' and having personal attractiveness guarantees success, while Biff eventually confronts the truth and rejects the family's false self-image."
+  },
+  {
+   "id": "upap26-q051",
+   "question": "How does Ishmael’s encyclopaedic narrative method differ most significantly from Ahab’s interpretation of the whale?",
+   "options": [
+    "Ishmael confines the whale to its market price and excludes religious, philosophical, and aesthetic questions.",
+    "Ishmael accepts Ahab’s single interpretation and uses cetology only to prove the whale’s deliberate malice.",
+    "Ishmael rejects every form of factual inquiry because symbolic interpretation makes natural history irrelevant.",
+    "Ishmael accumulates scientific, cultural, comic, and metaphysical perspectives while acknowledging that the whale exceeds final explanation."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Melville's Moby-Dick, Ahab monomaniacally reduces the white whale to a single symbol of cosmic malice, whereas Ishmael approaches the whale through multiple, open-ended lenses (cetology, art, myth, humor, philosophy) while recognizing its ultimate unknowability.",
+   "src": "Project Gutenberg: Moby Dick"
+  },
+  {
+   "id": "upap26-q052",
+   "question": "In Biographia Literaria (Chapter XIV), Coleridge distinguishes a poem from works of science by stating that a poem proposes for its immediate object:",
+   "options": [
+    "Instruction, not delight",
+    "Pleasure, not truth",
+    "Truth, not pleasure",
+    "Imitation, not invention"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Chapter XIV of Biographia Literaria, Samuel Taylor Coleridge defines a poem as 'that species of composition, which is opposed to works of science, by proposing for its immediate object pleasure, not truth.'",
+   "src": "Project Gutenberg: Biographia Literaria"
+  },
+  {
+   "id": "upap26-q053",
+   "question": "Which paradox is created by the permanently suspended lovers on the Grecian urn?",
+   "options": [
+    "Their desire is protected from aging and loss, but its preservation also depends on never reaching fulfilment.",
+    "Their fixed condition proves that art can reproduce every stage of lived experience without loss.",
+    "Their love achieves physical fulfilment repeatedly because artistic time moves faster than human time.",
+    "Their separation disappears once the speaker reconstructs the urn’s original historical setting."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In John Keats's 'Ode on a Grecian Urn,' the 'Bold Lover' can never kiss his beloved, yet she can never fade or grow old—illustrating the paradox of timeless art offering eternal youth and passion at the cost of consummation.",
+   "src": "Poetry Foundation: Ode on a Grecian Urn"
+  },
+  {
+   "id": "upap26-q054",
+   "question": "In sociolinguistics, a “dialect” is chiefly distinguished from an “idiolect” in that a dialect is shared by a group while an idiolect refers to what?",
+   "options": [
+    "A specialised vocabulary of one profession",
+    "A formal style used only in writing",
+    "An individual speaker’s own unique speech pattern",
+    "A historical stage of a language’s development"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In linguistics, a dialect is a regional or social variety of language shared by a community of speakers, whereas an idiolect is the distinct, individual speech pattern of a single person."
+  },
+  {
+   "id": "upap26-q055",
+   "question": "What is the central metapoetic criticism in Ramanujan’s “A River”?",
+   "options": [
+    "Both old and new poets reject conventional imagery and concentrate exclusively on documentary social history.",
+    "New poets repeat inherited descriptions of the flood and thereby aestheticise spectacle while erasing particular victims and suffering.",
+    "The poem argues that floods cannot become poetic subjects because natural events possess no symbolic significance.",
+    "Old poets include excessive human detail, whereas new poets restore the river’s purely mythological grandeur."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In A.K. Ramanujan's 'A River,' the speaker critiques both traditional Tamil poets and the 'new poets' who only sang of the flooded Vaikai river's dramatic spectacle while ignoring the drowned pregnant woman and everyday human suffering."
+  },
+  {
+   "id": "upap26-q056",
+   "question": "In the General Prologue to The Canterbury Tales, the pilgrims are travelling to the shrine of which martyr?",
+   "options": [
+    "Edward the Confessor at Westminster",
+    "Thomas More at Westminster",
+    "Cuthbert at Durham Cathedral",
+    "Thomas Becket at Canterbury"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Geoffrey Chaucer's The Canterbury Tales, the pilgrims gather at the Tabard Inn in Southwark to travel to Canterbury Cathedral to visit the shrine of Saint Thomas Becket.",
+   "src": "Project Gutenberg: The Canterbury Tales"
+  },
+  {
+   "id": "upap26-q057",
+   "question": "Who is credited with coining the term “ecocriticism” in the 1978 essay “Literature and Ecology: An Experiment in Ecocriticism”?",
+   "options": [
+    "Greg Garrard",
+    "William Rueckert",
+    "Lawrence Buell",
+    "Cheryll Glotfelty"
+   ],
+   "correct_option_id": 1,
+   "explanation": "William Rueckert coined the term 'ecocriticism' in his 1978 essay 'Literature and Ecology: An Experiment in Ecocriticism' (published in Iowa Review)."
+  },
+  {
+   "id": "upap26-q058",
+   "question": "In Soyinka’s The Lion and the Jewel, what false news does Baroka arrange for Sadiku to spread in order to lure Sidi to his palace?",
+   "options": [
+    "That he is gravely ill and near death",
+    "That he has lost his manhood",
+    "That Lakunle has insulted the village elders",
+    "That he plans to give up his position as Bale"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Wole Soyinka's The Lion and the Jewel, the crafty Bale Baroka deceives his head wife Sadiku into believing he has become impotent ('lost his manhood'); knowing Sadiku will boast about it to Sidi, Baroka lures Sidi to his palace to mock him."
+  },
+  {
+   "id": "upap26-q059",
+   "question": "How does Stoppard’s use of Hamlet as an embedded prior script shape Rosencrantz and Guildenstern’s predicament?",
+   "options": [
+    "They occupy the margins of Shakespeare’s plot and are repeatedly drawn into predetermined roles whose ending they cannot escape.",
+    "They become omniscient narrators who understand both plays and control every transition between them.",
+    "They exist outside theatrical representation and therefore possess greater agency than Hamlet’s principal characters.",
+    "They revise Shakespeare’s events freely and prevent the deaths specified in the source play."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Tom Stoppard's Rosencrantz and Guildenstern Are Dead, the two minor courtiers are trapped inside the predetermined narrative of Shakespeare's Hamlet; whenever they intersect with the main plot, they are swept toward their inevitable, pre-scripted execution."
+  },
+  {
+   "id": "upap26-q060",
+   "question": "Which combination best characterises Restoration comedy of manners?",
+   "options": [
+    "Nonconformist clergy portrayed through devotional conflict and doctrinal exposition",
+    "Rural labouring communities examined through domestic pathos and moral conversion",
+    "Urban merchant guilds represented through documentary realism and occupational detail",
+    "Fashionable London society exposed through wit, courtship intrigue, and sexual or marital hypocrisy"
+   ],
+   "correct_option_id": 3,
+   "explanation": "Restoration comedy of manners (e.g., Congreve, Wycherley, Etherege) satirizes the affected manners, witty repartee, sexual intrigues, and marital cynicism of aristocratic and fashionable London society."
+  },
+  {
+   "id": "upap26-q061",
+   "question": "What is the principal effect of interweaving Voss’s inland expedition with his visionary connection to Laura Trevelyan?",
+   "options": [
+    "It converts geographical exploration into a parallel psychological and spiritual ordeal.",
+    "It separates Voss’s physical suffering from every form of inward transformation.",
+    "It reduces Laura to a documentary witness with no interpretive significance.",
+    "It supplies an objective cartographic record of colonial trade routes."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Patrick White's Voss, the telepathic, visionary bond between the explorer Johann Ulrich Voss in the Australian interior and Laura Trevelyan in Sydney transforms the physical expedition into a shared spiritual and psychological journey toward humility.",
+   "src": "Patrick White: Voss and Laura, critical study"
+  },
+  {
+   "id": "upap26-q062",
+   "question": "Which interpretation best explains why colonial institutions gain a foothold in Things Fall Apart?",
+   "options": [
+    "Missionaries exploit existing social exclusions and generational tensions, while colonial administration supplies coercive institutional power.",
+    "Okonkwo’s private quarrel alone causes every clan member to abandon traditional authority immediately.",
+    "Igbo society lacks law, religion, or political organisation before Europeans establish each institution.",
+    "Colonial rule succeeds principally because prolonged crop failure makes Christianity the only source of food."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Chinua Achebe's Things Fall Apart, Christian missionaries first attract marginalized Igbo people (osu, outcasts, mothers of twins, and disillusioned youth like Nwoye), while the British colonial district commissioner backs these conversions with courts, prisons, and military force."
+  },
+  {
+   "id": "upap26-q063",
+   "question": "Which trajectory most accurately describes the construction of identity in “Background, Casually”?",
+   "options": [
+    "From complete cultural belonging in childhood to permanent rejection of India after an entirely successful life in London",
+    "From minority alienation and colonial education through foreign experience to a self-conscious commitment to India and Indian English poetry",
+    "From professional rivalry with Indian poets to withdrawal from literary activity and public language",
+    "From religious certainty to a final decision that cultural and national identities have no relevance to poetic vocation"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Nissim Ezekiel's autobiographical poem 'Background, Casually,' the Bene Israel Jewish speaker moves from childhood alienation at school and a rootless stay in London back to Bombay, resolving: 'I have made my commitments now. / This is one: to stay where I am.'"
+  },
+  {
+   "id": "upap26-q064",
+   "question": "What does Higgins’s successful presentation of Eliza as a lady most clearly expose in Pygmalion?",
+   "options": [
+    "Social rank depends exclusively on ancestry and remains unaffected by linguistic performance.",
+    "Class identity is biologically fixed, even when every observer accepts Eliza’s cultivated performance.",
+    "Class identity is socially coded through speech and manners, though passing does not by itself resolve Eliza’s autonomy or social position.",
+    "Phonetic training permanently transfers property and legal status from one class to another."
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Shaw's Pygmalion, Eliza's triumph at the ambassador's garden party proves that upper-class status is largely a matter of speech and etiquette, yet once the experiment ends, Eliza lacks financial independence or a secure social role—highlighting her struggle for autonomy."
+  },
+  {
+   "id": "upap26-q065",
+   "question": "Why is /ŋ/ an English phoneme although */ŋɪk/ is excluded as an ordinary native-English word form?",
+   "options": [
+    "English prohibits every nasal consonant from appearing in an onset.",
+    "Word meaning prevents /ŋ/ from combining with high front vowels.",
+    "/ŋ/ occurs only in spelling and has no spoken phonological realisation.",
+    "/ŋ/ is permitted in codas but excluded from native-English word-initial onsets."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In English phonology, the velar nasal /ŋ/ is a distinct phoneme (as shown by minimal pairs like sin /sɪn/ vs. sing /sɪŋ/), even though phonotactic constraints restrict it to syllable codas and exclude it from native English word-initial onsets."
+  },
+  {
+   "id": "upap26-q066",
+   "question": "Which statement most accurately expresses Fish’s stronger claim about interpretive communities?",
+   "options": [
+    "Meaning is wholly private because no interpretive assumptions can be shared between individual readers.",
+    "Communities influence readers only after objectively self-evident textual features have been neutrally identified.",
+    "Every conceivable reading is equally acceptable because interpretive communities impose no standards.",
+    "Shared strategies help constitute what readers recognise as textual facts, evidence, intentions, and admissible interpretations."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Is There a Text in This Class?, Stanley Fish argues that interpretive communities do not merely interpret pre-existing textual facts; their shared interpretive strategies actually produce the formal features, intentions, and meanings readers perceive in a text.",
+   "src": "Florida International University: Stanley Fish"
+  },
+  {
+   "id": "upap26-q067",
+   "question": "How do the recurring lilac, western star, and hermit thrush function together in “When Lilacs Last in the Dooryard Bloom’d”?",
+   "options": [
+    "They connect recurring remembrance, Lincoln’s fallen presence, and a song that guides mourning toward acceptance of death.",
+    "They separate personal grief from national loss by confining the poem to private domestic memory.",
+    "They establish a chronological account of the assassination without transforming it through symbolic mourning.",
+    "They represent three political factions competing to determine Lincoln’s historical reputation."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Walt Whitman's elegy for Abraham Lincoln, the 'trinity' of symbols—the lilac (enduring love and spring's renewal), the drooping western star (Lincoln's death), and the hermit thrush (the soul's song of consolation)—weave together grief and spiritual reconciliation with death."
+  },
+  {
+   "id": "upap26-q068",
+   "question": "What is the principal structural function of the four marriages in Act V of As You Like It?",
+   "options": [
+    "They validate every pastoral identity and prevent the characters from returning to court.",
+    "They resolve the political conflict by transferring Duke Senior’s authority to Orlando and Rosalind.",
+    "They permanently establish the Forest of Arden as an alternative state independent of the court.",
+    "They reconcile the erotic plots and help reconstitute social order alongside the restoration of Duke Senior."
+   ],
+   "correct_option_id": 3,
+   "explanation": "At the end of Shakespeare's As You Like It, Hymen presides over four marriages (Rosalind–Orlando, Celia–Oliver, Phebe–Silvius, Audrey–Touchstone), resolving the romantic entanglements and restoring social harmony just as Duke Senior's rightful rule is restored.",
+   "src": "Folger Shakespeare Library: As You Like It"
+  },
+  {
+   "id": "upap26-q069",
+   "question": "What constitutes the “double pleasure” implicit in Hazlitt’s account of rereading old books?",
+   "options": [
+    "Correcting the author’s historical errors while demonstrating the reader’s superior critical training",
+    "Replacing youthful emotional responses with an entirely impersonal and objective judgment",
+    "Comparing successive editions while reconstructing the book’s commercial publication history",
+    "Recognizing the work’s familiar excellence while recovering the former self and circumstances associated with earlier readings"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 'On Reading Old Books,' William Hazlitt explains that rereading a favourite book gives both the enduring literary enjoyment of the work itself and the nostalgic recovery of the reader's past self, feelings, and surroundings when first reading it.",
+   "src": "Project Gutenberg: Hazlitt Essays"
+  },
+  {
+   "id": "upap26-q070",
+   "question": "Which description most accurately represents Wordsworth’s distinction between the poet and other people in the 1802 Preface to Lyrical Ballads?",
+   "options": [
+    "The poet differs in kind because artistic consciousness is unavailable to ordinary human beings.",
+    "The poet differs chiefly through formal education in classical languages and inherited literary conventions.",
+    "The poet differs by suppressing personal feeling in favour of detached intellectual description.",
+    "The poet differs chiefly in degree through heightened sensibility, knowledge of human nature, and readiness to express thought and feeling."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In the 1802 Preface to Lyrical Ballads, Wordsworth writes that a poet is 'a man speaking to men,' differing from other people 'not in kind, but in degree'—endowed with 'more lively sensibility, more enthusiasm and tenderness,' and a greater power of expressing what he thinks and feels."
+  },
+  {
+   "id": "upap26-q071",
+   "question": "Which statement gives the most defensible account of the base–superstructure relationship in Marxist cultural theory?",
+   "options": [
+    "The economic base conditions the superstructure, while cultural institutions may possess relative autonomy and exert reciprocal effects.",
+    "The economic base mechanically determines every cultural detail without mediation or historical variation.",
+    "Economic relations and cultural production remain analytically unrelated in every historical situation.",
+    "The cultural superstructure independently creates the economic base without being conditioned by material relations."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Marxist cultural theory (especially as refined by Engels, Gramsci, Althusser, and Raymond Williams), the economic base shapes and limits the superstructure in the 'last instance,' while ideological and cultural forms retain relative autonomy and can act back upon the base."
+  },
+  {
+   "id": "upap26-q072",
+   "question": "In Carol Ann Duffy’s “Valentine”, how does the developing onion metaphor complicate the poem’s rejection of conventional romantic symbols?",
+   "options": [
+    "It remains a single comic image whose meaning is exhausted by the onion’s low commercial price.",
+    "It idealizes love as permanently sweet and excludes jealousy, pain and bodily experience.",
+    "It replaces emotional love with an argument that relationships should be evaluated only through utility.",
+    "It moves from luminous intimacy through tears and bodily closeness toward possessiveness and potential violence."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Duffy's 'Valentine,' the onion starts as a 'moon wrapped in brown paper' promising light and honest intimacy, then evokes tears, lingering scent on the fingers, and finally 'lethal' possessiveness ('cling to your knife').",
+   "src": "Scottish Poetry Library: Valentine"
+  },
+  {
+   "id": "upap26-q073",
+   "question": "In Great Expectations, what does Miss Havisham’s stopping of all the clocks at twenty minutes to nine chiefly symbolise?",
+   "options": [
+    "Pip’s anxiety about arriving late for his visits to Satis House",
+    "The hour fixed by Jaggers for the transfer of Pip’s fortune",
+    "Her refusal to let life move beyond the moment of her jilting, arresting her in bitterness and decay",
+    "Her strict discipline in regulating the household’s daily routine"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Charles Dickens's Great Expectations, Miss Havisham stops every clock in Satis House at 8:40—the exact moment she received Compeyson's letter jilting her on her wedding morning—symbolizing her frozen grief, obsession with revenge, and emotional decay.",
+   "src": "Project Gutenberg: Great Expectations"
+  },
+  {
+   "id": "upap26-q074",
+   "question": "In the Preface to Shakespeare, what defect does Johnson illustrate by calling a quibble Shakespeare’s “fatal Cleopatra”?",
+   "options": [
+    "Shakespeare mingles tragic and comic passions without sufficient structural control.",
+    "Shakespeare compresses historical chronology at the expense of unity of time.",
+    "Shakespeare gives national and historical characters manners that are too particular.",
+    "Shakespeare sacrifices reason, propriety, and truth to his excessive delight in puns."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Samuel Johnson writes in Preface to Shakespeare: 'A quibble was to him the fatal Cleopatra for which he lost the world, and was content to lose it,' criticizing Shakespeare's irresistible fondness for wordplay and puns even at the expense of dignity and reason.",
+   "src": "Project Gutenberg: Preface to Shakespeare"
+  },
+  {
+   "id": "upap26-q075",
+   "question": "Which statement most accurately distinguishes the effect of sublimity from ordinary persuasion in Longinus’s On the Sublime?",
+   "options": [
+    "Sublimity exerts an elevating and nearly irresistible transport, whereas persuasion ordinarily remains open to rational acceptance or refusal.",
+    "Sublimity communicates factual propositions more accurately than ordinary rhetorical argument.",
+    "Persuasion compels every listener, whereas sublimity remains subject to voluntary acceptance.",
+    "Sublimity eliminates emotion so that an audience can evaluate an argument dispassionately."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In On the Sublime (Section 1.4), Longinus states that elevated language does not merely persuade the audience—it transports (ekstasis) them with an irresistible power that overrides rational resistance.",
+   "src": "Longinus: On the Sublime"
+  },
+  {
+   "id": "upap26-q076",
+   "question": "Which interpretation best explains the dramatic function of the overlapping narratives at the Act I dinner in Top Girls?",
+   "options": [
+    "They isolate the historical guests from Marlene’s career so that the scene functions as detachable fantasy.",
+    "They demonstrate that professional success has removed conflicts of class, maternity and gender from modern Britain.",
+    "They celebrate female advancement while exposing recurring patriarchal costs that complicate Marlene’s individualist model of success.",
+    "They establish a continuous feminist tradition in which every guest defines freedom identically."
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Caryl Churchill's Top Girls, the opening dinner with historical and fictional women uses overlapping dialogue to reveal that despite their achievements, each paid a steep price under patriarchy—foreshadowing the personal and class costs of Marlene's Thatcherite individualism."
+  },
+  {
+   "id": "upap26-q077",
+   "question": "In Jayanta Mahapatra’s “Dawn at Puri”, the widows’ “austere eyes,” caught in the “dawn’s shining strands of faith,” chiefly create a tension between what?",
+   "options": [
+    "Secular prosperity and rejection of religious belief",
+    "Ritual hope and continuing social-spiritual entrapment",
+    "Familial affection and voluntary withdrawal from society",
+    "Political resistance and liberation from temple authority"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Mahapatra's 'Dawn at Puri,' the white-clad widows waiting at the temple are 'caught in a net' of 'dawn's shining strands of faith,' juxtaposing their fragile spiritual devotion with the bleak social isolation and ritual confinement imposed on them.",
+   "src": "Poemotopia: Dawn at Puri"
+  },
+  {
+   "id": "upap26-q078",
+   "question": "Samuel Beckett’s Waiting for Godot is most closely associated with which twentieth-century dramatic movement?",
+   "options": [
+    "Poetic Drama revival",
+    "Theatre of the Absurd",
+    "Comedy of Manners",
+    "Kitchen Sink Realism"
+   ],
+   "correct_option_id": 1,
+   "explanation": "Waiting for Godot (1953) is the landmark play of the Theatre of the Absurd (a term coined by Martin Esslin), characterized by existential angst, circular plots, and the breakdown of purposeful communication."
+  },
+  {
+   "id": "upap26-q079",
+   "question": "Which statement most accurately represents Arnold’s contrast between Hebraism and Hellenism in Culture and Anarchy?",
+   "options": [
+    "Hellenism stresses obedience and conduct, whereas Hebraism stresses disinterested knowledge.",
+    "Both seek human perfection, but Hebraism stresses obedience and conduct while Hellenism stresses clear seeing and spontaneity of consciousness.",
+    "They are mutually exclusive national identities with no shared intellectual or ethical objective.",
+    "Culture requires the complete rejection of Hebraism in favour of unrestricted Hellenism."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Chapter IV of Culture and Anarchy, Matthew Arnold writes that while both Hebraism and Hellenism aim at 'man's perfection or salvation,' Hellenism's governing idea is 'spontaneity of consciousness' ('to see things as they really are') and Hebraism's is 'strictness of conscience' (conduct and obedience).",
+   "src": "Project Gutenberg: Culture and Anarchy"
+  },
+  {
+   "id": "upap26-q080",
+   "question": "How do the expressionist techniques of The Hairy Ape intensify Yank’s crisis of belonging?",
+   "options": [
+    "Naturalistic domestic scenes establish that his principal conflict is an unsuccessful childhood romance.",
+    "Conventional comic staging presents his search for belonging as a temporary misunderstanding without social significance.",
+    "Documentary realism proves that Yank’s crisis results solely from an objectively calculated loss of wages.",
+    "Distorted settings and stylised group behaviour externalise his alienation within an industrial system that first empowers and then dehumanises him."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Eugene O'Neill's The Hairy Ape uses expressionist devices—cramped stokehole cages, rhythmic mechanical voices, and mask-like Fifth Avenue aristocrats—to project Yank's inner psychological alienation and loss of identity in an industrialised society."
+  },
+  {
+   "id": "upap26-q081",
+   "question": "Which statement best expresses the New Historicist principles of the “historicity of texts” and the “textuality of history”?",
+   "options": [
+    "Historical facts do not exist, so fictional and documentary claims possess identical evidentiary status.",
+    "Literature merely reflects a complete and stable historical background without participating in its formation.",
+    "Every interpretation of a historical document is equally defensible regardless of available evidence.",
+    "Texts are embedded in material power relations, while access to the past is mediated through surviving documents and discourses."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Louis Montrose's famous chiasmus—the 'historicity of texts' and the 'textuality of history'—captures New Historicism's view that literary texts are shaped by their cultural/material contexts, and our knowledge of history is only accessible through written texts and discourses."
+  },
+  {
+   "id": "upap26-q082",
+   "question": "Which statement most accurately represents the status of catharsis in Aristotle’s Poetics?",
+   "options": [
+    "Aristotle identifies it exclusively with moral instruction delivered through elaborate theatrical spectacle.",
+    "Aristotle defines it unambiguously as the complete elimination of pity and fear from the spectator.",
+    "Aristotle uses it to describe the historian’s correction of inaccurate factual records.",
+    "Aristotle links it with pity and fear, but whether it means purgation, purification or clarification remains disputed."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Poetics Chapter 6, Aristotle mentions katharsis of pity and fear only once without defining it, leading to centuries of critical debate over whether it signifies medical purgation, moral/religious purification, or intellectual clarification.",
+   "src": "MIT: Aristotle Poetics"
+  },
+  {
+   "id": "upap26-q083",
+   "question": "What is the principal effect of the sequence of similes in Hughes’s “Harlem”, culminating in the question “Or does it explode?”",
+   "options": [
+    "It reduces deferred aspiration to a harmless private disappointment that naturally disappears.",
+    "It establishes that every deferred dream necessarily produces the same predictable physical outcome.",
+    "It moves from images of decay and burden toward the possibility of sudden collective or social violence.",
+    "It replaces political implication with a purely aesthetic catalogue of unrelated sensory images."
+   ],
+   "correct_option_id": 2,
+   "explanation": "Langston Hughes's 'Harlem' asks what happens to a 'dream deferred,' escalating through similes of drying up, festering, stinking, crusting over, and sagging like a heavy load before ending on the explosive italicised warning: 'Or does it explode?'",
+   "src": "Poetry Foundation: Harlem"
+  },
+  {
+   "id": "upap26-q084",
+   "question": "In Cry, the Peacock, Desai’s recurrent animal, floral and seasonal imagery functions most precisely as what?",
+   "options": [
+    "Documentary description independent of Maya’s consciousness",
+    "An objective contrast proving Maya’s emotional stability",
+    "An external correlative of Maya’s escalating psychic disintegration",
+    "A realistic account of Gautama’s scientific investigations"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Anita Desai's Cry, the Peacock, vivid sensory motifs (the dead pet Toto, lizards, rats, stifling summer heat, dust storms, and the peacocks' cry) mirror and intensify Maya's mounting neurosis and mental breakdown."
+  },
+  {
+   "id": "upap26-q085",
+   "question": "In Jonson’s comic adaptation of humoral theory in Every Man in His Humour, what makes a character “humorous”?",
+   "options": [
+    "The character changes temperament whenever the dramatic setting changes.",
+    "The character speaks only in a metrical form associated with one humour.",
+    "One ruling disposition disproportionately governs the character’s conduct.",
+    "Four bodily humours remain perfectly balanced throughout the action."
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Ben Jonson's comedy of humours, a 'humour' is a single dominant obsession or affectation (like Kitely's jealousy or Bobadill's boasting) that disproportionately skews a character's behaviour.",
+   "src": "Project Gutenberg: Every Man in His Humour"
+  },
+  {
+   "id": "upap26-q086",
+   "question": "Which formulation most accurately describes the narrative function of epiphany in Joyce’s early aesthetics?",
+   "options": [
+    "A doctrinal revelation confirms the authority of Catholic teaching at the close of each chapter.",
+    "An ordinary object or gesture suddenly discloses an apprehended significance exceeding its habitual appearance.",
+    "A conventional climax resolves every preceding conflict through externally verified knowledge.",
+    "A concealed narrator explains the causal significance of an event that the character cannot perceive."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In the unfinished early draft Stephen Hero, Stephen explicitly characterises an epiphany as a sudden spiritual manifestation in ordinary speech, gesture or mental experience. A Portrait of the Artist as a Young Man develops related moments of aesthetic perception and claritas, but the explicit epiphany definition belongs to Stephen Hero.",
+   "src": "Humanities LibreTexts: Joyce Epiphany"
+  },
+  {
+   "id": "upap26-q087",
+   "question": "Why does De Levis’s accusation against Dancy become a test of “loyalties” rather than merely a criminal allegation?",
+   "options": [
+    "The club’s class and military solidarity encourages protection of Dancy while antisemitic prejudice isolates De Levis.",
+    "The accusation challenges the legal immunity traditionally granted to all professional gamblers.",
+    "Club members possess conclusive evidence against Dancy but remain silent solely to obtain the missing money.",
+    "De Levis and Dancy belong to rival political parties competing for control of the same constituency."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In John Galsworthy's Loyalties, Captain Dancy's upper-class friends, fellow officers, and club members reflexively rally behind him out of class and professional loyalty, while viewing the Jewish outsider Ferdinand De Levis with antisemitic suspicion."
+  },
+  {
+   "id": "upap26-q088",
+   "question": "The Restoration period in English history begins with the return of which monarch from exile in 1660?",
+   "options": [
+    "William III",
+    "James II",
+    "Charles I",
+    "Charles II"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The English Restoration began in May 1660 when Charles II returned from exile on the continent to reclaim the throne after the collapse of the Commonwealth."
+  },
+  {
+   "id": "upap26-q089",
+   "question": "In Adventures of Huckleberry Finn, the Grangerford–Shepherdson episode chiefly satirises which of the following?",
+   "options": [
+    "Frontier temperance reform movements",
+    "A Southern aristocratic code of honour that sustains senseless hereditary bloodshed",
+    "The confidence tricks of itinerant Shakespearean performers",
+    "Mob cowardice exposed by a single defiant gunman"
+   ],
+   "correct_option_id": 1,
+   "explanation": "The feud between the genteel, church-going Grangerfords and Shepherdsons—who no longer even remember why their feud started—satirises the romanticised Southern code of honour and chivalry that leads to pointless violence."
+  },
+  {
+   "id": "upap26-q090",
+   "question": "How does the Spectator Club contribute to the periodical’s method of social criticism?",
+   "options": [
+    "Club members speak with one undifferentiated voice, eliminating distinctions of occupation, party and social position.",
+    "The framework reproduces parliamentary speeches without fictional characterization or editorial mediation.",
+    "Each member narrates a continuous autobiography, preventing comparative treatment of eighteenth-century social roles.",
+    "Representative social types generate multiple viewpoints, while the Spectator persona mediates them within an ideal of polite sociability."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In The Spectator (Addison and Steele), the Club's diverse figures—Sir Roger de Coverley, Sir Andrew Freeport, Captain Sentry, Will Honeycomb, and others—offer varied social perspectives moderated by Mr. Spectator's polite, urbane commentary.",
+   "src": "Project Gutenberg: The Spectator"
+  },
+  {
+   "id": "upap26-q091",
+   "question": "Which interpretation is best supported by Macbeth’s Act I, Scene 7 soliloquy?",
+   "options": [
+    "Macbeth considers the murder legitimate because Duncan has violated the reciprocal duties of kingship.",
+    "Prophecy compels Duncan’s murder so completely that Macbeth exercises no meaningful agency.",
+    "Macbeth opposes the murder on political grounds but remains morally indifferent to regicide.",
+    "Macbeth recognizes obligations to Duncan as king, kinsman and guest, yet allows “vaulting ambition” to override them."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 'If it were done when 'tis done' (Act I, Scene 7), Macbeth explicitly acknowledges his 'double trust' as Duncan's kinsman, subject, and host, admitting he has no spur to prick the sides of his intent except 'vaulting ambition.'",
+   "src": "Folger Shakespeare Library: Macbeth"
+  },
+  {
+   "id": "upap26-q092",
+   "question": "English has [pʰ] in pin, [p] in spin, and /p/–/b/ contrast in pin–bin. Which analysis is best supported?",
+   "options": [
+    "[pʰ] and [b] are one phoneme, while unaspirated [p] is non-linguistic.",
+    "[pʰ] and [p] are separate phonemes, while [b] is an allophone of /p/.",
+    "[pʰ], [p] and [b] are freely varying allophones of one phoneme.",
+    "[pʰ] and [p] are allophones of /p/, while /p/ and /b/ are distinct phonemes."
+   ],
+   "correct_option_id": 3,
+   "explanation": "Because [pʰ] (word-initial stressed onset) and [p] (after /s/) are in complementary distribution and never distinguish word meaning in English, they are allophones of /p/; whereas pin vs. bin is a minimal pair proving /p/ and /b/ are separate phonemes."
+  },
+  {
+   "id": "upap26-q093",
+   "question": "In Fredric Jameson’s account of postmodernism, what principally distinguishes pastiche from parody?",
+   "options": [
+    "Pastiche attacks political institutions, whereas parody addresses literary conventions.",
+    "Pastiche corrects an earlier work by restoring its original historical meaning.",
+    "Pastiche reproduces one source verbatim, whereas parody combines several sources.",
+    "Pastiche imitates obsolete styles without parody’s determinate satirical impulse."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Postmodernism, or, the Cultural Logic of Late Capitalism, Fredric Jameson defines pastiche as 'blank parody'—the neutral mimicry of dead styles without parody's ulterior satirical motive, norm, or laughter.",
+   "src": "New Left Review: Fredric Jameson"
+  },
+  {
+   "id": "upap26-q094",
+   "question": "Besides arbitrariness, what second principle does Saussure attribute to the linguistic sign in the Course in General Linguistics?",
+   "options": [
+    "The linear character of the signifier, which unfolds in time as a chain",
+    "The iconic resemblance between signified and referent",
+    "The universality of signifiers across all languages",
+    "The individual speaker’s freedom to alter established signs"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In Course in General Linguistics, Ferdinand de Saussure states two primordial characteristics of the linguistic sign: Principle I is the arbitrariness of the sign, and Principle II is the linear nature of the signifier (auditory signifiers unfold sequentially in time)."
+  },
+  {
+   "id": "upap26-q095",
+   "question": "Kamala Das’s poem “An Introduction” chiefly addresses the poet’s assertion of her own identity as a woman in what kind of society?",
+   "options": [
+    "A matriarchal society",
+    "A classless society",
+    "A patriarchal society",
+    "A stateless society"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 'An Introduction,' Kamala Das rebels against the rigid gender roles, dress codes, and linguistic expectations ('Dress in sarees, be girl, / Be wife, they said') imposed by a patriarchal society.",
+   "src": "LitCharts: An Introduction"
+  },
+  {
+   "id": "upap26-q096",
+   "question": "Which analysis of modernizations correctly distinguishes its derivational and inflectional morphology?",
+   "options": [
+    "Every element after modern is inflectional because none changes spelling.",
+    "modern + -ize are inflectional; -ation and -s are derivational.",
+    "modern + -ize + -ation are derivational; final -s is inflectional.",
+    "modern is inflectional; -ize, -ation and -s are all derivational."
+   ],
+   "correct_option_id": 2,
+   "explanation": "Starting from the root modern (adjective), -ize derives the verb modernize and -ation derives the noun modernization (both derivational suffixes changing word class), while the plural -s is an inflectional suffix."
+  },
+  {
+   "id": "upap26-q097",
+   "question": "In “Woman to Man”, the descriptions “eyeless labourer” and “the third who lay in our embrace” chiefly represent the unborn child as what?",
+   "options": [
+    "A purely passive object without agency or transformative power",
+    "An autonomous creative force produced through the lovers’ union",
+    "A remembered ancestor returning through inherited family history",
+    "A metaphor for geographical exile from the speaker’s homeland"
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Judith Wright's 'Woman to Man,' the unborn child ('the eyeless labourer in the night,' 'the third who lay in our embrace') is portrayed as an active, independent life force brought into being by the lovers' union.",
+   "src": "PN Review: Woman to Man"
+  },
+  {
+   "id": "upap26-q098",
+   "question": "Which account most precisely explains why Shelley calls the West Wind both “Destroyer and preserver”?",
+   "options": [
+    "It preserves the autumn landscape unchanged by resisting every process of decay and renewal.",
+    "It drives away dead leaves while carrying seeds to winter beds from which spring will awaken them.",
+    "It destroys vegetation permanently while preventing the seasonal return of organic life.",
+    "It destroys natural forms but preserves political institutions from revolutionary transformation."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In 'Ode to the West Wind,' P.B. Shelley addresses the wind as 'Destroyer and preserver' because it sweeps away dead autumn leaves while scattering winged seeds into the earth to lie dormant until spring's rebirth.",
+   "src": "University of Toronto: Ode to the West Wind"
+  },
+  {
+   "id": "upap26-q099",
+   "question": "What relationship between the finite self and the infinite divine is conveyed by the “frail vessel” and “reed flute” metaphors in Gitanjali 1?",
+   "options": [
+    "The human self achieves immortality by accumulating knowledge that makes divine agency unnecessary.",
+    "The metaphors establish an opposition in which bodily limitation prevents every form of spiritual expression.",
+    "The divine empties the individual permanently, demonstrating that finite life cannot participate in creativity.",
+    "The finite self becomes receptive to recurrent divine renewal and expression without becoming independently self-sufficient."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Gitanjali Song 1 ('Thou hast made me endless, such is thy pleasure'), Rabindranath Tagore uses the 'frail vessel' (emptied and refilled with fresh life) and the 'little flute of a reed' (through which God breathes melodies) to show the mortal self as an open channel for infinite divine grace.",
+   "src": "Academy of American Poets: Gitanjali I"
+  },
+  {
+   "id": "upap26-q100",
+   "question": "What is the principal irony of the concluding questions about whether the Unknown Citizen was “free” or “happy”?",
+   "options": [
+    "The bureaucracy possesses extensive behavioural data but lacks categories capable of recognizing freedom, happiness or individual inwardness.",
+    "The state has reliable evidence of his unhappiness but suppresses it solely to protect his family.",
+    "The questions reveal that he secretly led a political rebellion omitted from the preceding records.",
+    "The statistics demonstrate his freedom conclusively, making the final questions unnecessary but sincere."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In W.H. Auden's 'The Unknown Citizen,' the state's dossiers record every external conformity, making the closing questions—'Was he free? Was he happy? The question is absurd'—bitterly ironic about bureaucratic reductionism.",
+   "src": "Poetry Foundation: The Unknown Citizen"
+  },
+  {
+   "id": "upap26-q101",
+   "question": "What is the principal formal effect of the abrupt shifts of voice, language, register, and allusion in The Waste Land?",
+   "options": [
+    "They eliminate intertextuality so that the poem can be interpreted without reference to earlier traditions.",
+    "They enact cultural dislocation while compelling readers to construct provisional relations among heterogeneous fragments.",
+    "They establish a stable autobiographical speaker who resolves every cultural contradiction.",
+    "They restore continuous Victorian narration through a single authoritative moral perspective."
+   ],
+   "correct_option_id": 1,
+   "explanation": "T.S. Eliot's The Waste Land ('These fragments I have shored against my ruins') uses collage, polyphony, and jarring shifts in register and language to mirror post-WWI spiritual fragmentation and require active reader synthesis.",
+   "src": "Poetry Foundation: The Waste Land"
+  },
+  {
+   "id": "upap26-q102",
+   "question": "Under the Neogrammarian regularity hypothesis, how should an apparent lexical exception to a sound change first be investigated?",
+   "options": [
+    "As confirmation that grammatical change always precedes sound change",
+    "As proof that each word changes independently of phonological environment",
+    "As evidence that spelling directly causes every pronunciation change",
+    "As possible conditioning, borrowing or analogy rather than arbitrary exemption"
+   ],
+   "correct_option_id": 3,
+   "explanation": "The Neogrammarians held that sound laws operate without exception; apparent exceptions are explained by more specific phonological conditioning (like Verner's Law), dialect borrowing, or analogical levelling.",
+   "src": "University of Munich: Historical phonology"
+  },
+  {
+   "id": "upap26-q103",
+   "question": "In A.M. Klein’s “Indian Reservation: Caughnawaga”, what is exposed by the movement from childhood images of “braves” and a “chief” to tourist goods and display objects?",
+   "options": [
+    "The speaker’s childhood knowledge is confirmed as an ethnographically accurate cultural record.",
+    "Settler fantasy converts a living Mohawk community into romantic and commercially consumable signs.",
+    "Modern commerce preserves traditional authority without altering its meanings or social functions.",
+    "Museum display restores complete political autonomy to the community represented by the objects."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In A.M. Klein's 'Indian Reservation: Caughnawaga,' the speaker contrasts his romanticised boyhood myths of noble 'braves' with the grim reality of a dispossessed Mohawk community commodified for tourists."
+  },
+  {
+   "id": "upap26-q104",
+   "question": "A bilingual speaker says, “We should leave now, porque está lloviendo,” maintaining English before switching to a Spanish clause. This is best classified as what?",
+   "options": [
+    "Translation of the complete utterance into a single code",
+    "Permanent language shift from English to Spanish",
+    "Intrasentential code-switching between two grammatical codes",
+    "Monolingual lexical innovation within English morphology"
+   ],
+   "correct_option_id": 2,
+   "explanation": "Switching from English to Spanish within the boundaries of a single sentence ('We should leave now, porque está lloviendo') is an example of intrasentential code-switching.",
+   "src": "Cambridge University Press: Code-switching"
+  },
+  {
+   "id": "upap26-q105",
+   "question": "Which interpretation most precisely captures the allegorical logic of Archimago’s deception in Book I of The Faerie Queene?",
+   "options": [
+    "Justice is corrupted when political authority submits to bribery.",
+    "Friendship is destroyed when private jealousy overcomes loyalty.",
+    "Holiness trusts appearances fashioned by Hypocrisy, abandons Truth, and becomes vulnerable to Falsehood.",
+    "Courtesy fails when aristocratic conduct is displaced by rustic ignorance."
+   ],
+   "correct_option_id": 2,
+   "explanation": "In Book I of Edmund Spenser's The Faerie Queene, Redcrosse Knight (Holiness) is deceived by Archimago (Hypocrisy) into deserting Una (Truth), leaving him exposed to Duessa (Falsehood) and Pride.",
+   "src": "Project Gutenberg: The Faerie Queene"
+  },
+  {
+   "id": "upap26-q106",
+   "question": "What is the principal narratological effect of shifting focalisation among Ugwu, Olanna, and Richard in Half of a Yellow Sun?",
+   "options": [
+    "It grants Richard final ownership of Biafra’s history by confirming him as author of the embedded wartime book.",
+    "It confines knowledge of the conflict to military commanders and excludes domestic or civilian experience.",
+    "It removes differences among the characters by giving them identical knowledge, vocabulary, and political commitments.",
+    "It distributes the war across unequal class, gender, and racial positions, challenging any single authoritative version of Biafran history."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Chimamanda Ngozi Adichie's Half of a Yellow Sun, alternating third-person focalisation among Ugwu, Olanna, and Richard refracts the Nigerian Civil War through diverse social positions—and ultimately reveals Ugwu, not Richard, as the author of the book-within-the-book."
+  },
+  {
+   "id": "upap26-q107",
+   "question": "In his dedicatory letter to Arabella Fermor, Pope says the sylphs, gnomes, nymphs and salamanders of The Rape of the Lock are drawn from which source?",
+   "options": [
+    "The fallen angels catalogued in Milton’s Paradise Lost",
+    "The allegorical knights of Spenser’s The Faerie Queene",
+    "Norse mythology as recorded in the Prose Edda",
+    "Rosicrucian doctrine as described in Le Comte de Gabalis"
+   ],
+   "correct_option_id": 3,
+   "explanation": "In the dedicatory letter to Mrs. Arabella Fermor prefacing The Rape of the Lock (1714), Alexander Pope explains that his 'machinery' of sylphs, gnomes, nymphs, and salamanders is drawn from the Rosicrucian doctrine of spirits in Le Comte de Gabalis.",
+   "src": "Project Gutenberg: The Rape of the Lock"
+  },
+  {
+   "id": "upap26-q108",
+   "question": "Which formulation best captures Gordimer’s argument in “English-Language Literature and Politics in South Africa”?",
+   "options": [
+    "Apartheid influences oral literature alone, while printed English literature develops outside institutional control.",
+    "Under apartheid, literary production is inseparable from racial power structures shaping authorship, readership, censorship, and subject matter.",
+    "English-language writing becomes politically neutral once authors avoid explicit reference to legislation or racial identity.",
+    "Political conditions affect publication but leave literary form, audience, and writerly responsibility entirely autonomous."
+   ],
+   "correct_option_id": 1,
+   "explanation": "Nadine Gordimer argues that under South African apartheid, politics permeates every aspect of literature—determining who gets published or censored, who reads, and what moral responsibilities confront English-language writers."
+  },
+  {
+   "id": "upap26-q109",
+   "question": "How does the compass conceit resolve the apparent conflict between separation and unity in “A Valediction: Forbidding Mourning”?",
+   "options": [
+    "The moving leg circles without reference to the fixed leg, making constancy impossible.",
+    "The joined legs may extend apart, but the fixed foot’s responsive inclination guides the moving foot back to its origin.",
+    "The fixed leg prevents all movement, implying that genuine love requires physical proximity.",
+    "The legs become independent instruments, showing that separation terminates their former relationship."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In John Donne's 'A Valediction: Forbidding Mourning,' the twin compasses remain connected even when apart: the fixed foot leans after the roaming foot ('Thy firmness makes my circle just, / And makes me end where I begun'), uniting physical separation with spiritual constancy.",
+   "src": "Academy of American Poets: A Valediction"
+  },
+  {
+   "id": "upap26-q110",
+   "question": "Which formulation best captures Wollstonecraft’s critique of claims that women are naturally irrational?",
+   "options": [
+    "Rational capacity is naturally sex-specific, although moral virtue remains equally accessible through obedience.",
+    "Educational equality is unnecessary because private affection provides women with an equivalent form of citizenship.",
+    "Women possess equal reason but voluntarily reject its exercise because social admiration offers no compensating reward.",
+    "Gendered education cultivates dependence and excessive sensibility, after which those produced traits are cited as evidence of natural inferiority."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In A Vindication of the Rights of Woman, Mary Wollstonecraft argues that society deliberately denies women rational education—training them instead for dependence, vanity, and sensibility—and then circularly points to the resulting weakness as proof of women's 'natural' inferiority."
+  },
+  {
+   "id": "upap26-q111",
+   "question": "How does the Duke’s management of the portrait contribute to the dramatic irony of “My Last Duchess”?",
+   "options": [
+    "His identification of himself as the painter reveals that artistic rivalry caused the Duchess’s death.",
+    "His public exhibition of the portrait proves that he has renounced jealousy and accepted her independence.",
+    "His refusal to discuss the portrait prevents the envoy from learning anything about his attitudes toward marriage.",
+    "His control of the curtain reproduces the authority over display and access that he could not secure from the living Duchess."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Robert Browning's 'My Last Duchess,' the Duke's remark that 'none puts by / The curtain I have drawn for you, but I' ironically reveals his obsessive possessiveness and unwitting confession of having had his living wife silenced.",
+   "src": "Poetry Foundation: My Last Duchess"
+  },
+  {
+   "id": "upap26-q112",
+   "question": "What does Tizzic’s return to being “a slave again” after Ash Wednesday imply about carnival in Brathwaite’s poem?",
+   "options": [
+    "Carnival permanently dissolves colonial power by replacing Christianity with an autonomous national religion.",
+    "Ash Wednesday extends carnival freedom by releasing Tizzic from labour and institutional authority.",
+    "Christian ritual and carnival are presented as equivalent sources of uninterrupted social liberation.",
+    "Carnival permits a temporary inversion of domination, but imposed Christian discipline subsequently reasserts control."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In 'Tizzic', Carnival's music and masquerade briefly free the speaker from felt poverty, constraint and subordination. When the festivities give way to Ash Wednesday and Lenten observance, that release ends; 'slave again' is a metaphor for recurring social, economic and cultural domination, not literal re-enslavement. The poem also invites reflection on the tension between Caribbean expressive culture and imposed religious discipline.",
+   "src": "New World Journal: Brathwaite"
+  },
+  {
+   "id": "upap26-q113",
+   "question": "An author’s private letter states that a poem means X, but the poem’s publicly available language and structure support Y. Under Wimsatt and Beardsley’s argument, what should the critic do?",
+   "options": [
+    "Evaluate the poem through its publicly available verbal evidence rather than treating the private intention as the decisive standard.",
+    "Reject both interpretations because no historical or linguistic evidence may be used in criticism.",
+    "Select whichever interpretation produces the strongest personal emotional response in the reader.",
+    "Accept X as final because the author retains exclusive authority over the completed poem."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In 'The Intentional Fallacy,' W.K. Wimsatt and Monroe C. Beardsley argue that a poem belongs to the public once published and must be judged by its internal, publicly accessible language and structure rather than the author's private letters or stated intentions.",
+   "src": "Intentional Fallacy: Wimsatt and Beardsley"
+  },
+  {
+   "id": "upap26-q114",
+   "question": "Which combination most accurately represents Arnold’s criterion for the highest poetry in The Study of Poetry?",
+   "options": [
+    "Solemn subject matter combined with complex metre, irrespective of truth or sincerity",
+    "Extensive narrative scope combined with immediate popularity among contemporary readers",
+    "Profound truth and seriousness of substance united with distinction and sincerity of poetic treatment",
+    "Historical importance combined with strict adherence to a recognised classical genre"
+   ],
+   "correct_option_id": 2,
+   "explanation": "In 'The Study of Poetry,' Matthew Arnold defines 'high seriousness' as the hallmark of the greatest poetry—requiring both 'truth and seriousness' in substance and 'felicity and perfection of diction and manner' in style.",
+   "src": "Poetry Foundation: The Study of Poetry"
+  },
+  {
+   "id": "upap26-q115",
+   "question": "Which interpretive claim most accurately reflects critical posthumanism?",
+   "options": [
+    "Human reason is universally autonomous and remains categorically separate from every material dependency.",
+    "Literary interpretation should concern non-human characters only and exclude every representation of human experience.",
+    "Human subjects emerge through material relations with animals, technologies, environments, and other non-human agencies.",
+    "Human agency should be eliminated from analysis because only technological systems possess causal power."
+   ],
+   "correct_option_id": 2,
+   "explanation": "Critical posthumanism (associated with thinkers like Donna Haraway, Katherine Hayles, and Rosi Braidotti) rejects humanist anthropocentrism, viewing the human as co-constituted in relational networks with non-human animals, ecosystems, and technologies."
+  },
+  {
+   "id": "upap26-q116",
+   "question": "The exchange of Devadatta’s and Kapila’s heads most directly destabilises which assumption about personal identity?",
+   "options": [
+    "Personal identity remains unchanged by desire and embodiment.",
+    "Identity can be located unambiguously in the intellect-bearing head.",
+    "Bodily strength and intellectual ability are naturally inseparable.",
+    "Identity is determined entirely by social class and occupation."
+   ],
+   "correct_option_id": 1,
+   "explanation": "After Devadatta and Kapila exchange heads, the claim that the head alone defines personal identity is tested against bodily desire and lived experience. An initial judgment privileges the head, but the bodies gradually change in response to their newly attached heads, showing why a simple mind/body division cannot settle identity unambiguously.",
+   "src": "LitCharts: Hayavadana identity"
+  },
+  {
+   "id": "upap26-q117",
+   "question": "Which description best captures Sir Roger de Coverley’s satirical function in the Coverley Papers?",
+   "options": [
+    "He is a predatory urban financier used to condemn all commercial exchange as socially destructive.",
+    "He is a corrupt judge whose legal misconduct provides the papers with their principal political plot.",
+    "He is a fashionable courtier whose shifting alliances satirize competition for royal office.",
+    "He is an amiable, old-fashioned country squire whose eccentricities permit affectionate criticism without erasing his moral dignity."
+   ],
+   "correct_option_id": 3,
+   "explanation": "In Addison and Steele's Coverley Papers (The Spectator), Sir Roger de Coverley is a benevolent, eccentric Tory country squire whose outdated habits are gently mocked while preserving his warmth, generosity, and moral respectability.",
+   "src": "Project Gutenberg: The Spectator"
+  },
+  {
+   "id": "upap26-q118",
+   "question": "What is the principal narrative effect of Achakka’s adaptation of the sthala-purana form in Kanthapura?",
+   "options": [
+    "It separates nationalist events from the village’s religious imagination.",
+    "It absorbs anti-colonial politics into communal myth and sacred local history.",
+    "It confines the narrative to the private correspondence of village leaders.",
+    "It presents political events through strictly chronological documentation."
+   ],
+   "correct_option_id": 1,
+   "explanation": "In Raja Rao's Kanthapura, the grandmotherly narrator Achakka frames the Gandhian nationalist struggle as a sthala-purana (legendary history of a sacred place), blending anti-colonial politics with Hindu myth, local deities, and oral storytelling."
+  },
+  {
+   "id": "upap26-q119",
+   "question": "Which inquiry most directly exemplifies the ecocritical approach expressed in Glotfelty’s definition?",
+   "options": [
+    "Examining how a narrative represents the material environment and organises relationships between human and non-human life",
+    "Examining how a publisher’s advertising strategy determines the commercial reception of a nature poem",
+    "Examining a poem’s rhyme scheme while deliberately excluding every environmental implication",
+    "Examining a river solely as a conventional symbol without considering its material or ecological context"
+   ],
+   "correct_option_id": 0,
+   "explanation": "In The Ecocriticism Reader (1996), Cheryll Glotfelty defines ecocriticism as 'the study of the relationship between literature and the physical environment,' taking an earth-centered approach to literary studies."
+  },
+  {
+   "id": "upap26-q120",
+   "question": "In David Diop’s “Africa,” what is conveyed by the young tree that grows “patiently, obstinately” and bears fruit with the “bitter taste of liberty”?",
+   "options": [
+    "Decolonisation promises regeneration, but freedom emerges gradually through sacrifice and painful struggle.",
+    "Liberty remains impossible because the tree’s growth reproduces colonial domination without resistance.",
+    "African renewal depends primarily on abandoning collective memory of slavery and colonial exploitation.",
+    "Political independence restores the precolonial past immediately and without historical consequences."
+   ],
+   "correct_option_id": 0,
+   "explanation": "In David Diop's 'Africa' (Afrique), the sturdy young tree growing alone amidst white and faded flowers symbolises Africa's resilient, gradual regeneration—yielding a hard-won freedom tinged with the bitter memory of colonial suffering and sacrifice.",
+   "src": "Poemotopia: Africa"
+  }
+ ]
+}
