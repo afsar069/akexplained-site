@@ -23,6 +23,12 @@ owner; the three names on the card come from that article). Its painting is
 `american-colonial-painted-240.webp` (240 × 150, 9,322 bytes): a New England meeting house,
 villagers on a dirt path and a sailing ship in the harbour. It was generated with vidIQ
 (GPT Image 2.6) from a text prompt only, cropped from 16:9 to 1.6:1 and exported to WebP.
+Card 2 is **American Renaissance (1830 – 1865)**, linking to
+`/notes/ages/american-renaissance/` (`notes/ages/american-renaissance/index.md`, supplied by
+the owner). Its original gouache-style painting shows a nineteenth-century writer's
+desk beside a woodland river. The WebP copies are
+`assets/age-cards/american-renaissance-painted.webp` (480 × 300, 39,836 bytes) and
+`american-renaissance-painted-240.webp` (240 × 150, 9,646 bytes).
 Add the next American age as one more `.age-tile` in that section, with its own scene. The
 landing page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
 ages only and were not changed. The article has no painted header yet (`hero_image`), and no
