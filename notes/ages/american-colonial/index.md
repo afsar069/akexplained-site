@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/american-colonial/hero.webp
+hero_class: hero-age hero-article-full
 title: Colonial and Early National American Literature (1600-1830)
 description: A simple guide to American literature from 1600 to 1830, covering Puritans, the Revolution and the first novels, for BA, MA and UGC-NET students.
 eyebrow: Notes · American Literature
@@ -104,6 +106,11 @@ Later writers wanted a voice of their own. Noah Webster published his *American 
 
 ### How the writing was printed and kept
 
+<figure class="article-illustration">
+  <img src="/assets/articles/american-colonial/scene.webp" alt="A representative eighteenth-century printing shop, imagined by a modern artist." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>A representative eighteenth-century printing shop, imagined by a modern artist.</figcaption>
+</figure>
+
 Printing started late. The first press in the colonies came to Cambridge in 1638, brought over by Jesse Glover, with the printer Stephen Daye. Daye printed the *Bay Psalm Book* in 1640. It was a new English version of the psalms in verse, made by Puritan leaders including Richard Mather, John Eliot and Thomas Weld. It is called the first book printed in British North America. A press had worked in Mexico a century earlier, so it was not the first book printed anywhere in North America.
 
 Many colonial writers had to go to London to be printed. Anne Bradstreet's poems appeared there in 1650, Cotton Mather's big church history in 1702, Phillis Wheatley's poems in 1773 and Crèvecoeur's *Letters* in 1782. Franklin's *Autobiography* was printed first in French, in Paris in 1791.
@@ -113,6 +120,11 @@ Some works were lost and found again. William Bradford's manuscript disappeared 
 Newspapers, pamphlets and almanacs carried most of the new writing. *Common Sense* was a pamphlet of just 47 pages. Irving's *Sketch Book* came out in seven parts, from 1819 to 1820, before it became a book.
 
 ### Poetry
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/american-colonial/portrait.webp" alt="Modern imagined painted portrait of Anne Bradstreet." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Imagined portrait of Anne Bradstreet; no verified likeness is known.</figcaption>
+</figure>
 
 The earliest verse was religious. The *Bay Psalm Book* turned the psalms into rhymed lines that a congregation could sing. The first poet who is still widely read is Anne Bradstreet (about 1612-1672). She wrote while running a house and raising eight children. In the late 1640s her brother-in-law, the minister John Woodbridge, took her poems to England. They were printed in London in 1650 as *The Tenth Muse Lately Sprung Up in America*, "by a Gentlewoman in those parts". The Clements Library calls it the first book of poetry published by an American. It includes a long poem on the *Four Monarchies* and a *Dialogue between Old England and New*.
 

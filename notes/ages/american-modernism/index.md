@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/american-modernism/hero.webp
+hero_class: hero-age hero-article-full
 title: American Modernism (1914-1945)
 description: Explore American Modernism, the Lost Generation, Imagism and the Harlem Renaissance for BA, MA and UGC-NET students.
 eyebrow: Notes · American Literature
@@ -129,6 +131,11 @@ Faulkner's methods ask an ethical question as well as a formal one: who gets to 
 
 ### John Steinbeck and the Depression
 
+<figure class="article-illustration">
+  <img src="/assets/articles/american-modernism/scene.webp" alt="An imagined family journey during the Dust Bowl." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined family journey during the Dust Bowl.</figcaption>
+</figure>
+
 John Steinbeck (1902-1968) brought questions of work, land and inequality into fiction about ordinary families. Compared with Faulkner, his storytelling is often more direct, but it is not simple in its moral concerns. He gives attention to people whose opportunities are narrowed by poverty and harsh labor conditions. His stories combine individual lives with forces that no single character can control.
 
 *Of Mice and Men* (1937) follows two migrant ranch workers, George Milton and Lennie Small, who hope to own a place of their own. Their dream gives the story direction even as their circumstances threaten it. The work also appeared in a form suitable for stage performance. Its short scenes and repeated conversations make the struggle for security immediate.
@@ -158,6 +165,11 @@ E. E. Cummings (1894-1962) experimented with spacing, punctuation, capitalizatio
 Hart Crane (1899-1932) used dense images and ambitious rhythms to write about modern America. His long poem *The Bridge* (1930) treats the Brooklyn Bridge as a focus for questions about history and national possibility. Its imaginative connections can be challenging to follow. Crane represents a side of modernist poetry that seeks large patterns rather than the small, concentrated image alone.
 
 ### The Harlem Renaissance and many voices
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/american-modernism/portrait.webp" alt="Modern imagined painted portrait of Langston Hughes." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Langston Hughes — modern painted interpretation.</figcaption>
+</figure>
 
 The Harlem Renaissance was linked to migration, urban culture, publishing networks and Black political organization. Writers used different forms to discuss freedom, memory, art and unequal treatment. The movement included women and men with different religious beliefs and ideas about social change. Seeing it as a single voice would hide the debates that made it productive.
 
