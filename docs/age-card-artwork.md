@@ -6,8 +6,8 @@ consistent gouache-style brushwork and a teal, gold and terracotta palette.
 These are modern imagined interpretations, not historical paintings or portraits
 copied from public-domain sources. The page labels them accordingly.
 
-The timeline and landing page share the same series (owner, 20 November 2026).
-The landing page selects each painting by its age slug and uses the same responsive
+The timeline, landing page and MCQ Practice age cards share the same series.
+The landing page and MCQ Practice cards select each painting by its age and use the same responsive
 WebP variants, so no artwork is duplicated. Daily, article illustrations and article
 headers retain their existing artwork. Card names, dates, writers and links are
 unchanged.
