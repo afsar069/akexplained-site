@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/american-renaissance/hero.webp
+hero_class: hero-age hero-article-full
 title: American Renaissance Literature (1830-1865)
 description: Explore Transcendentalism, Gothic fiction and antislavery writing in the American Renaissance for BA, MA and UGC-NET students.
 eyebrow: Notes · American Literature
@@ -142,6 +144,11 @@ Hawthorne's fiction also looks back toward Puritan history, but it belongs to th
 
 ### Melville: obsession, work and the limits of knowledge
 
+<figure class="article-illustration">
+  <img src="/assets/articles/american-renaissance/scene.webp" alt="An imagined whaling scene inspired by Moby-Dick." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined whaling scene inspired by Moby-Dick.</figcaption>
+</figure>
+
 Herman Melville (1819-1891) made moral and philosophical uncertainty central to his fiction. *Moby-Dick* (1851) tells of Captain Ahab's pursuit of a white whale, narrated mainly through Ishmael. The voyage is an adventure, but it is also an inquiry into obsession and interpretation. Ahab forces the whale to bear the meaning of his anger. Ishmael is more open to multiple explanations, histories and human experiences.
 
 The novel shifts among narrative, dramatic exchanges, sermons and detailed discussions of whaling. This formal variety matters: the world is too large for a single method of understanding it. Ahab's destructive certainty contrasts with Ishmael's curiosity. The whale may suggest nature's vastness, the unknowable, or the limits of human control. No single symbol solves the book's meaning.
@@ -173,6 +180,11 @@ Emily Dickinson (1830-1886), writing largely in Amherst, followed a contrasting 
 “Because I could not stop for Death” was probably composed around **1862-1863** and first published in **1890**, after Dickinson's death, under the editorial title “The Chariot.” It imagines Death as a courteous carriage companion. The polite manner makes the journey disturbing rather than reassuring. A familiar social scene becomes a way to consider mortality and eternity. The poem's uncertain destination prevents an easy conclusion.
 
 ### Antislavery writing: Stowe, Douglass and Jacobs
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/american-renaissance/portrait.webp" alt="Modern imagined painted portrait of Frederick Douglass." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Frederick Douglass — modern painted interpretation.</figcaption>
+</figure>
 
 Harriet Beecher Stowe (1811-1896) used **sentimental fiction**, writing designed to engage readers' feelings, to challenge slavery. *Uncle Tom's Cabin* was serialized in 1851-1852 and published as a book in **1852**. Its scenes of family separation and suffering ask readers to connect domestic affection with political responsibility. The novel had enormous public reach, although modern criticism also examines its racial stereotypes and the limits of its representation.
 

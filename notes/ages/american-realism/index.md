@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/american-realism/hero.webp
+hero_class: hero-age hero-article-full
 title: American Realism and Naturalism (1865-1914)
 description: Explore realism, naturalism and social change in American literature, 1865-1914, for BA, MA and UGC-NET students.
 eyebrow: Notes · American Literature
@@ -102,6 +104,11 @@ Naturalism also drew on the work of French novelist Émile Zola, who connected f
 
 ### Mark Twain and the Mississippi
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/american-realism/portrait.webp" alt="Modern imagined painted portrait of Mark Twain." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Mark Twain — modern painted interpretation.</figcaption>
+</figure>
+
 **Mark Twain** was the pen name of Samuel Langhorne Clemens (1835-1910). His writing grew from experiences of towns, river travel and American speech. *The Adventures of Tom Sawyer* (1876) follows childhood adventure near the Mississippi River. Its humor comes partly from the gap between children's plans and adult rules. The book also shows how a town teaches its younger members what is admired and what is feared.
 
 Twain's *Adventures of Huckleberry Finn* was published in Britain in 1884 and the United States in 1885. Huck narrates his journey along the Mississippi with Jim, a man escaping enslavement. The **first-person narrator** speaks as a character inside the story. Huck's account is shaped by his limited knowledge and by ideas learned from his community. Readers can recognize cruelty or hypocrisy that Huck has not fully understood.
@@ -119,6 +126,11 @@ Howells's **social realism** concentrates on the ties between personal conduct a
 Howells argued publicly for literature that respected common experience. His book *Criticism and Fiction* (1891) collected arguments about taste and representation. Yet his own preferred realism reflected particular assumptions about social life. Later critics have asked which groups were welcomed into his idea of the ordinary. That question is essential when realism claims to tell the truth about a whole nation.
 
 ### Henry James and the life of the mind
+
+<figure class="article-illustration">
+  <img src="/assets/articles/american-realism/scene.webp" alt="An imagined Mississippi raft scene inspired by Huckleberry Finn." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined Mississippi raft scene inspired by Huckleberry Finn.</figcaption>
+</figure>
 
 **Henry James** (1843-1916) made inner thought and uncertain judgment central to fiction. His **psychological realism** follows how people interpret events and often misunderstand one another. In *Daisy Miller* (1878), a young American woman traveling in Europe becomes the subject of judgment and gossip. Social rules matter because the characters cannot easily know another person's intentions.
 

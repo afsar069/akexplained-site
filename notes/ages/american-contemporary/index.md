@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/american-contemporary/hero.webp
+hero_class: hero-age hero-article-full
 title: Postwar and Contemporary American Literature (1945-Present)
 description: Explore postwar fiction, the Beat writers and contemporary voices for BA, MA and UGC-NET students.
 eyebrow: Notes · American Literature
@@ -92,6 +94,11 @@ James Baldwin's *Go Tell It on the Mountain* (1953) examines a young boy, his fa
 
 ### The Beat Generation and freedom of expression
 
+<figure class="article-illustration">
+  <img src="/assets/articles/american-contemporary/scene.webp" alt="An imagined civil rights march in the 1960s." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined civil rights march in the 1960s.</figcaption>
+</figure>
+
 The **Beat Generation** developed around writers who opposed social conformity and valued personal experiment. **Conformity** means following accepted rules simply because society expects it. Jack Kerouac's *On the Road* (1957) follows travel across the United States through the narrator Sal Paradise. The road promises movement and discovery, but the book also reveals unstable friendships and uncertain goals. Its loose, energetic prose tries to resemble remembered speech and quick experience.
 
 Allen Ginsberg's *Howl* (published in 1956) uses long lines, repeated patterns and forceful public address. The poem challenges accepted attitudes to sexuality, authority and people treated as outsiders. Its rhythm suggests a voice speaking urgently before listeners rather than a calm account on a page. The book *Howl and Other Poems* became involved in a 1957 obscenity case, making questions about literary freedom part of its history.
@@ -117,6 +124,11 @@ Tennessee Williams wrote a **memory play**, a drama presented through someone's 
 Edward Albee's *Who's Afraid of Virginia Woolf?* (1962) follows two married couples during a night of harsh verbal games. Its dialogue tests the stories people tell about themselves. August Wilson's *Fences* first premiered in 1985 and reached Broadway in 1987. It centres on Troy Maxson, a Black working-class father whose hopes and disappointments affect his family. Wilson places personal choices within a changing history of racial opportunity.
 
 ### Black experience, historical memory and the novel
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/american-contemporary/portrait.webp" alt="Modern imagined painted portrait of Toni Morrison." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Toni Morrison — modern painted interpretation.</figcaption>
+</figure>
 
 Toni Morrison gave sustained attention to memory, family relationships and the consequences of slavery. Her first novel, *The Bluest Eye* (1970), follows a Black girl harmed by destructive ideas about beauty. *Sula* (1973) explores friendship, difference and the judgments placed on women in a community. These novels show how social standards enter intimate life. Morrison writes from within the experiences of her characters instead of treating them as distant subjects.
 
