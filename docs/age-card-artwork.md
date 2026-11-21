@@ -29,6 +29,12 @@ the owner). Its original gouache-style painting shows a nineteenth-century write
 desk beside a woodland river. The WebP copies are
 `assets/age-cards/american-renaissance-painted.webp` (480 × 300, 39,836 bytes) and
 `american-renaissance-painted-240.webp` (240 × 150, 9,646 bytes).
+Card 3 is **Realism and Naturalism (1865 – 1914)**, linking to
+`/notes/ages/american-realism/` (`notes/ages/american-realism/index.md`, supplied by
+the owner). Its original painting depicts a late nineteenth-century American
+street with a family, horse-drawn streetcar and factories. The WebP copies are
+`assets/age-cards/american-realism-painted.webp` (480 × 300, 48,892 bytes) and
+`american-realism-painted-240.webp` (240 × 150, 12,214 bytes).
 Add the next American age as one more `.age-tile` in that section, with its own scene. The
 landing page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
 ages only and were not changed. The article has no painted header yet (`hero_image`), and no
