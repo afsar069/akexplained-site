@@ -41,10 +41,16 @@ the owner). Its original painting shows an imagined 1920s Harlem cafe with a wri
 and jazz musicians. The WebP copies are
 `assets/age-cards/american-modernism-painted.webp` (480 × 300, 40,970 bytes) and
 `american-modernism-painted-240.webp` (240 × 150, 11,546 bytes).
-Add the next American age as one more `.age-tile` in that section, with its own scene. The
-landing page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
-ages only and were not changed. The article has no painted header yet (`hero_image`), and no
-body illustrations.
+Card 5 is **Postwar and Contemporary (1945 – present)**, linking to
+`/notes/ages/american-contemporary/` (`notes/ages/american-contemporary/index.md`,
+supplied by the owner). Its original painting shows an imagined modern public
+library with readers of several generations. The WebP copies are
+`assets/age-cards/american-contemporary-painted.webp` (480 × 300, 39,774 bytes) and
+`american-contemporary-painted-240.webp` (240 × 150, 11,262 bytes).
+The five American cards now cover the sequence through the present. The landing
+page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
+ages only and were not changed. These American articles have no painted headers
+yet (`hero_image`) or body illustrations.
 
 ## Files and export
 
