@@ -4,7 +4,18 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-19 (end of the paid-layer session; read from the live database that day)._
+_Last updated: 2026-11-21 (the Delete-an-ended-free-pass entry below); the rest was read from the live database on 2026-11-19._
+
+## Delete an ended free pass — 2026-11-21
+- Owner asked: after stopping a free pass on `/admin/payments/`, be able to delete it from "Free passes you have given". Built: a red
+  **Delete** button on every **Ended** row (a running row keeps **Stop now**). Page code `assets/admin.js` (`data-delgift`); the
+  database rule is migration `20261121120000_admin_delete_ended_given_pass.sql` (policy `passes_admin_delete_given`, see rule 16 and
+  `docs/db-notes.md`). **The migration is applied live; the page change is on the branch and goes live only when the owner says "live kar do".**
+- Tested: the policy in a rolled-back transaction on the live database (student 0 rows; admin: ended free pass 1, stopped-before-start 1,
+  running 0, payment pass 0); the page with Playwright and a mocked Supabase (50 checks: which rows get which button, the real DELETE
+  request, a refusal, a server error, Cancel, no page errors). Security advisors: only the two old warnings.
+- Nothing was deleted by Claude. The ended row the owner wants gone (a pass that ended on 19 Nov 2026) is still there until the owner presses Delete.
+- Known and unchanged: on a 375px phone the admin payments page already scrolled sideways by about 130px before this change (same with the old file).
 
 ## Download hub — 2026-11-19
 - `/download/` was a Coming soon page; it is now the hub for every download, **by exam** (CLAUDE.md rule 3): cards for UGC NET / JRF, UP PGT, UP Assistant Professor, BA and MA open a panel with Syllabus, Important Books and Notes. Only the two UP PGT syllabus PDFs are real downloads; the rest are links to existing pages (NET syllabus, UP PGT study guide, age-wise notes, MA / BA university page, UGC's official syllabus index) or Coming soon rows. Sitemap priority raised to 0.7. On the feature branch, not merged.
