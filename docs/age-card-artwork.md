@@ -35,6 +35,12 @@ the owner). Its original painting depicts a late nineteenth-century American
 street with a family, horse-drawn streetcar and factories. The WebP copies are
 `assets/age-cards/american-realism-painted.webp` (480 × 300, 48,892 bytes) and
 `american-realism-painted-240.webp` (240 × 150, 12,214 bytes).
+Card 4 is **American Modernism (1914 – 1945)**, linking to
+`/notes/ages/american-modernism/` (`notes/ages/american-modernism/index.md`, supplied by
+the owner). Its original painting shows an imagined 1920s Harlem cafe with a writer
+and jazz musicians. The WebP copies are
+`assets/age-cards/american-modernism-painted.webp` (480 × 300, 40,970 bytes) and
+`american-modernism-painted-240.webp` (240 × 150, 11,546 bytes).
 Add the next American age as one more `.age-tile` in that section, with its own scene. The
 landing page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
 ages only and were not changed. The article has no painted header yet (`hero_image`), and no
