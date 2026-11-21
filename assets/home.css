@@ -285,12 +285,16 @@
 .agecard .era{font-size:.78rem;font-weight:600;color:var(--teal);margin:0 3px 5px}
 .agecard .who{font-size:.77rem;color:var(--body);margin:0 3px;line-height:1.45}
 
+/* American ages (owner, 2026-11-21): British section ke neeche, apne alag halke sand-tint band me (British = --bg), taaki saaf dikhe ki ye alag ages hain.
+   Neeche ki line Videos ka border-top deta hai, isliye yahan sirf upar ki line. */
+#american-ages{background:var(--tint);border-top:1px solid var(--border)}
+
 /* Sirf phone: Ages bhi hari heading patti ke saath, har age ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
-  #ages{padding:22px 0}
-  #ages .sechead{margin-bottom:12px}
-  #ages .sechead .more,#ages .seclede{display:none}
-  #ages .sechead h2{
+  #ages,#american-ages{padding:22px 0}
+  #ages .sechead,#american-ages .sechead{margin-bottom:12px}
+  #ages .sechead .more,#ages .seclede,#american-ages .sechead .more,#american-ages .seclede{display:none}
+  #ages .sechead h2,#american-ages .sechead h2{
     width:100%;margin:0;padding:8px 14px;border-radius:10px;
     background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
   }
