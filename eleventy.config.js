@@ -16,6 +16,11 @@ const NEW_FOOTER = base.slice(
 const checkTopics = require("./tools/check-topics.js");
 const buildSyllabus = require("./tools/build-syllabus.js");
 
+// Link-card picture (owner, 2026-11-21): when any page link is shared (WhatsApp, Facebook, X, LinkedIn,
+// Telegram...) the card shows the portrait logo, square. Made by tools/make-share-image.py. If the
+// picture is ever changed it needs a NEW file name, because the apps remember the old one.
+const SHARE_IMAGE = "https://akexplained.com/assets/share-logo.png";
+
 module.exports = function (eleventyConfig) {
   // Publish-time safety: every question's topicId must exist in the master
   // taxonomy, and no two questions may share an id. Throwing fails the build.
@@ -142,10 +147,31 @@ module.exports = function (eleventyConfig) {
     if (!/<link\s+rel=["']canonical["']/i.test(content)) add.push('<link rel="canonical" href="' + url + '">');
     if (!/property=["']og:title["']/i.test(content) && title) add.push('<meta property="og:title" content="' + title.trim() + '">');
     if (!/property=["']og:description["']/i.test(content) && desc) add.push('<meta property="og:description" content="' + desc + '">');
-    if (!/property=["']og:image["']/i.test(content)) add.push('<meta property="og:image" content="https://akexplained.com/assets/social-card.png">');
+    if (!/property=["']og:image["']/i.test(content)) add.push('<meta property="og:image" content="' + SHARE_IMAGE + '">');
     if (!/property=["']og:url["']/i.test(content)) add.push('<meta property="og:url" content="' + url + '">');
     if (!/property=["']og:type["']/i.test(content)) add.push('<meta property="og:type" content="website">');
-    if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary_large_image">');
+    if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary">');
+    if (!add.length) return content;
+    return content.replace("</head>", add.join("\n") + "\n</head>");
+  });
+
+  // Link card on EVERY page, noindex ones too (owner, 2026-11-21: "har page ke link par vohi laga do").
+  // seoTags above skips noindex pages (login, test, review, coming soon, admin...), so a shared link to
+  // one of those used to show a card with no picture. Here every built page gets the portrait logo, its
+  // size and a plain alt text, and the small "summary" card (picture on the side, not a wide crop that
+  // would cut the face). A page that sets its own different og:image keeps it, and gets no size tags.
+  eleventyConfig.addTransform("shareImage", function (content) {
+    if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
+    if (!content.includes("</head>")) return content;
+    const add = [];
+    const hasImage = /property=["']og:image["']/i.test(content);
+    if (!hasImage) add.push('<meta property="og:image" content="' + SHARE_IMAGE + '">');
+    if (!hasImage || content.includes('content="' + SHARE_IMAGE + '"')) {
+      if (!/property=["']og:image:width["']/i.test(content)) add.push('<meta property="og:image:width" content="600">');
+      if (!/property=["']og:image:height["']/i.test(content)) add.push('<meta property="og:image:height" content="600">');
+      if (!/property=["']og:image:alt["']/i.test(content)) add.push('<meta property="og:image:alt" content="AK Explained logo">');
+      if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary">');
+    }
     if (!add.length) return content;
     return content.replace("</head>", add.join("\n") + "\n</head>");
   });
