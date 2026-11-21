@@ -58,7 +58,10 @@ markup and the same card files, so no artwork is duplicated. At 1000px and wider
 landing grid has five columns, so the five cards fill exactly one line; the British grid
 above it stays collapsed to two lines with its "+" tab. The American grid has no "+" tab
 (five cards only), so on tablet (3 columns) it wraps to 3 + 2 and on a phone it stacks
-like the British cards. Its "View complete timeline" link goes to
+like the British cards. The American band has its own background, the sand tint
+`--tint` (#F4F1E6) with a 1px top border, so it reads as a separate group from the
+British section above it, which stays on the page background (#FDFBF5); the Videos
+section below it is back on the paper colour. Its "View complete timeline" link goes to
 `/english-literature/#american-literature`. If an American card changes on the timeline,
 change `americanAges` too. Each American article has its own painted header, an illustrated scene, and a
 labelled modern portrait; artwork lives in `assets/articles/american-<age>/`.
