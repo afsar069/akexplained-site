@@ -16,13 +16,12 @@ const NEW_FOOTER = base.slice(
 const checkTopics = require("./tools/check-topics.js");
 const buildSyllabus = require("./tools/build-syllabus.js");
 
-// Link-card picture (owner, 2026-11-21): when any page link is shared (WhatsApp, Facebook, X, LinkedIn,
-// Telegram...) the card shows the owner's own card art (logo, "English Literature, explained.", the
-// four exam areas): 1200 x 600, 2:1, a light JPEG made by tools/make-share-card.py from
-// tools/share-card-source.webp. If the picture is ever changed it needs a NEW file name, because the
-// apps remember the old one. The alt text says only what the picture itself says (rule 2).
-const SHARE_IMAGE = "https://akexplained.com/assets/share-card.jpg";
-const SHARE_ALT = "AK Explained: English Literature, explained. Notes, literary timeline, topic-wise MCQs and PYQs for UGC NET/JRF, PGT/TGT, BA/MA and state exams.";
+// Link-card picture (owner, 2026-11-21: "card ko bilkul hatao, sirf potrait logo har page pe"): when any
+// page link is shared (WhatsApp, Facebook, X, LinkedIn, Telegram...) the card shows ONLY the portrait logo,
+// square, 600 x 600, made by tools/make-share-image.py from assets/logo.png. No wide banner. If the
+// picture is ever changed it needs a NEW file name, because the apps remember the old one.
+const SHARE_IMAGE = "https://akexplained.com/assets/share-logo.png";
+const SHARE_ALT = "AK Explained logo";
 
 module.exports = function (eleventyConfig) {
   // Publish-time safety: every question's topicId must exist in the master
@@ -153,18 +152,17 @@ module.exports = function (eleventyConfig) {
     if (!/property=["']og:image["']/i.test(content)) add.push('<meta property="og:image" content="' + SHARE_IMAGE + '">');
     if (!/property=["']og:url["']/i.test(content)) add.push('<meta property="og:url" content="' + url + '">');
     if (!/property=["']og:type["']/i.test(content)) add.push('<meta property="og:type" content="website">');
-    if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary_large_image">');
+    if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary">');
     if (!add.length) return content;
     return content.replace("</head>", add.join("\n") + "\n</head>");
   });
 
   // Link card on EVERY page, noindex ones too (owner, 2026-11-21: "har page ke link par vohi laga do").
   // seoTags above skips noindex pages (login, test, review, coming soon, admin...), so a shared link to
-  // one of those used to show a card with no picture. Here every built page gets the card picture, its
-  // size, its type and a plain alt text, and the wide "summary_large_image" card. The picture is 2:1;
-  // Facebook and LinkedIn trim it to 1.91:1 (about 2.4% off each side), so all text and the logo stay
-  // inside the middle of the art (checked 2026-11-21). A page that sets its own different og:image keeps
-  // it, and gets no size tags.
+  // one of those used to show a card with no picture. Here every built page gets the portrait logo, its
+  // size, its type and a plain alt text, and the small "summary" card (a square picture beside the title,
+  // never a wide crop that would cut the face). A page that sets its own different og:image keeps it,
+  // and gets no size tags.
   eleventyConfig.addTransform("shareImage", function (content) {
     if (!(this.page && this.page.outputPath && this.page.outputPath.endsWith(".html"))) return content;
     if (!content.includes("</head>")) return content;
@@ -172,11 +170,11 @@ module.exports = function (eleventyConfig) {
     const hasImage = /property=["']og:image["']/i.test(content);
     if (!hasImage) add.push('<meta property="og:image" content="' + SHARE_IMAGE + '">');
     if (!hasImage || content.includes('content="' + SHARE_IMAGE + '"')) {
-      if (!/property=["']og:image:width["']/i.test(content)) add.push('<meta property="og:image:width" content="1200">');
+      if (!/property=["']og:image:width["']/i.test(content)) add.push('<meta property="og:image:width" content="600">');
       if (!/property=["']og:image:height["']/i.test(content)) add.push('<meta property="og:image:height" content="600">');
-      if (!/property=["']og:image:type["']/i.test(content)) add.push('<meta property="og:image:type" content="image/jpeg">');
+      if (!/property=["']og:image:type["']/i.test(content)) add.push('<meta property="og:image:type" content="image/png">');
       if (!/property=["']og:image:alt["']/i.test(content)) add.push('<meta property="og:image:alt" content="' + SHARE_ALT + '">');
-      if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary_large_image">');
+      if (!/name=["']twitter:card["']/i.test(content)) add.push('<meta name="twitter:card" content="summary">');
     }
     if (!add.length) return content;
     return content.replace("</head>", add.join("\n") + "\n</head>");
