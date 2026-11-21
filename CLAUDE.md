@@ -625,8 +625,11 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
   and admin **update/delete** to `reviews`. `/privacy/` now lists dashboard notices (kept true, rule 10).
 - **Payments** (`/admin/payments/`, rule 22) — the pass price and "on sale", promo codes (make, turn off), **Give a free pass**
   (owner, 2026-11-18: pick a student, a number of days and a note; a `passes` row with `source = 'admin'`, stacked after any
-  running pass; "Stop now" ends it; migration `20261118150000_admin_give_pass.sql`), and orders with "paid test opened?" for the
-  refund rule and a Mark refunded button.
+  running pass; "Stop now" ends it; migration `20261118150000_admin_give_pass.sql`; **an ended free pass can then be deleted from
+  the list with a red Delete button**, owner 2026-11-21, migration `20261121120000_admin_delete_ended_given_pass.sql`: the database
+  allows DELETE on `passes` only for an admin, only `source = 'admin'` with no order, and only when `ends_at <= now()` or
+  `ends_at <= starts_at` (stopped before it began); a running pass must be stopped first, and a paid or promo pass is never deleted
+  from a browser), and orders with "paid test opened?" for the refund rule and a Mark refunded button.
 - **Not here yet:** big PDFs on Cloudflare R2 (rule 13).
 
 ## 17. Self-serve publish — a live paper appears with no rebuild (owner, 2026-11-14)

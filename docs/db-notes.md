@@ -418,4 +418,7 @@ In plain English (full rules: CLAUDE.md rule 22):
   readable by everyone even before it is on sale (migration `20261118140000`), so the page can show the price.
 - **passes.source = 'admin'** (migration `20261118150000`): a free pass given by an admin (no order, no payment). `note` says why
   and `created_by` is the admin. Only an admin can insert one, and only with source 'admin'; a student can never give themselves
-  a pass.
+  a pass. **Deleting** (migration `20261121120000`, owner 2026-11-21): policy `passes_admin_delete_given` lets an admin delete a
+  pass only when `source = 'admin'`, `order_id is null` and it has ended (`ends_at <= now()`, or `ends_at <= starts_at` for one
+  stopped before it began). A running pass cannot be deleted (stop it first); a student, a payment pass and a promo pass can never
+  be deleted from a browser. Deleting an ended free pass changes nobody's access.

@@ -562,15 +562,32 @@
           var now = Date.now();
           gBox.innerHTML = '<table class="admtable"><thead><tr><th>Student</th><th>From</th><th>Until</th><th>Status</th><th>Change</th></tr></thead><tbody>' +
             rows.map(function (p) {
-              var running = new Date(p.ends_at).getTime() > now;
+              /* "Ended" = the same rule the database uses for Delete: it is over, or it was stopped before it began (until <= from). */
+              var endMs = new Date(p.ends_at).getTime();
+              var running = endMs > now && endMs > new Date(p.starts_at).getTime();
               return '<tr><td>' + esc(gNames[p.user_id] || 'Student') + (p.note ? '<span class="admsub">' + esc(p.note) + '</span>' : '') + '</td>' +
                 '<td>' + esc(niceDate(p.starts_at)) + '</td><td>' + esc(niceDate(p.ends_at)) + '</td>' +
                 '<td><span class="admtag ' + (running ? 'is-live' : 'is-draft') + '">' + (running ? 'Open' : 'Ended') + '</span></td>' +
-                '<td>' + (running ? '<button class="btn alt admbtn" data-stop="' + esc(p.id) + '" data-start="' + esc(p.starts_at) + '">Stop now</button>' : '') + '</td></tr>';
+                '<td>' + (running
+                  ? '<button class="btn alt admbtn" data-stop="' + esc(p.id) + '" data-start="' + esc(p.starts_at) + '">Stop now</button>'
+                  : '<button class="btn danger admbtn" data-delgift="' + esc(p.id) + '">Delete</button>') + '</td></tr>';
             }).join('') + '</tbody></table>';
         });
     }
     gBox.addEventListener('click', function (ev) {
+      /* Delete an ENDED free pass from the list (owner, 2026-11-21). The database allows it only for an admin, only for a free
+         pass (source admin, no order) and only when it has ended; a running pass must be stopped first. */
+      var d = ev.target.closest ? ev.target.closest('[data-delgift]') : null;
+      if (d) {
+        if (!window.confirm('Delete this ended free pass from the list? This cannot be undone. The student loses nothing, because the pass is already over.')) return;
+        d.disabled = true;
+        ctx.client.from('passes').delete().eq('id', d.getAttribute('data-delgift')).eq('source', 'admin').select('id').then(function (res) {
+          if (res.error) { d.disabled = false; alert('Could not delete it: ' + res.error.message); return; }
+          if (!res.data || !res.data.length) { d.disabled = false; alert('Nothing was deleted. The pass may still be running. Stop it first, then try again.'); loadGifts(); return; }
+          loadGifts();
+        });
+        return;
+      }
       var b = ev.target.closest ? ev.target.closest('[data-stop]') : null;
       if (!b) return;
       if (!window.confirm('Stop this free pass now? The student will lose access to paid tests at once (unless they have another pass).')) return;
