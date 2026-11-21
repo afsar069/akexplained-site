@@ -51,6 +51,9 @@ The five American cards now cover the sequence through the present. The landing
 page and the 20-age lists in `assets/home.js` and `_data/mcqSpec.json` are the British
 ages only and were not changed. These American articles have no painted headers
 yet (`hero_image`) or body illustrations.
+On wide screens (1260px and up), the American cards use five equal columns so
+they fill one row; the British cards keep their six-column layout. Smaller screens
+keep the shared responsive grid.
 
 ## Files and export
 
