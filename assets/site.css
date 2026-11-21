@@ -909,12 +909,19 @@ summary.ptbtn::-webkit-details-marker{display:none}
 .formactions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:4px}
 
 /* ---------- Age tiles (English Literature page) ----------
-   Chhote cards, ek line me 6 (badi screen par), taaki 20 ages lagbhag 4 line le aur neeche
-   doosre deshon ke writers ke liye jagah bache. Poora card notes ka link hai. Phone par 2, tablet par 3-4. */
+   British cards use 6 columns on wide screens; the 5 American cards fill one row.
+   Each full card links to its notes. Smaller screens keep fewer columns. */
 .age-grid{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(min-width:520px){.age-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:760px){.age-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(min-width:1260px){.age-grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media(min-width:1260px){
+  #american-literature .age-grid{grid-template-columns:repeat(5,minmax(0,1fr))}
+  #american-literature .age-tile{padding:10px 10px 14px}
+  #american-literature .age-tile h3{font-size:1rem}
+  #american-literature .age-tile .era{font-size:.8rem}
+  #american-literature .age-tile .who{font-size:.78rem}
+}
 .age-tile{
   display:block;color:inherit;background:var(--card-paper);
   border:1px solid var(--card-line);border-radius:13px;padding:8px 8px 12px;
