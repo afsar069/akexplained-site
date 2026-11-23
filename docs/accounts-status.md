@@ -4,7 +4,11 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-23 (the admin upload, pass page and American MCQ plan entries below); the rest was read from the live database on 2026-11-19._
+_Last updated: 2026-11-23 (the landing page, admin upload, pass page and American MCQ plan entries below); the rest was read from the live database on 2026-11-19._
+
+## Indian English Literature on the landing page — 2026-11-23
+- Owner asked for the Indian English Literature section on the landing page too, "like the American one". Done: a band "Indian English Literature by Ages" (`#indian-ages`, `index.html`) under the American one, drawn by `assets/home.js` (`indianAges`, `renderIndianAges`) from the five timeline cards (introduction, Beginnings to 1857, 1857 to 1920, 1920 to 1947, 1947 to 1980) with the same card files, so no new artwork. Styles in `assets/home.css` (`#indian-ages`, plus the phone rules). Details: CLAUDE.md rule 3 and `docs/age-card-artwork.md`.
+- Tested with Playwright against the built site at 1280px, 800px and 375px: five cards, every picture loads, links go to the five articles, one line on desktop, 3 + 2 on a tablet, stacked on a phone, no sideways scroll, no page errors, British (20) and American (5) cards unchanged. The two more period articles of the series will make seven cards, which wraps 5 + 2: check the look when they come. On the branch, not merged until the owner says "live kar do".
 
 ## American MCQs on the admin upload page — 2026-11-23
 - Owner asked that American MCQ sets be uploadable on `/admin/upload-paper/` as easily as British ones. Checked first: the database (no age list in `mcq_papers_check_body`; the five `american-*` period nodes exist in `topics`; level `hard` allowed) and the page code already took an American age, so nothing was blocked. What was missing was a clear way in: the five American ages sat at the bottom of one 25-age list under "English Literature — MCQ set".

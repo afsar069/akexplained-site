@@ -273,6 +273,25 @@
       alt:'Painted interpretation of readers in a modern American public library.' },
   ];
 
+  /* ---------- Indian English Literature (owner, 2026-11-23) ----------
+     Landing page par American ke neeche ek aur band, usi card-markup me. Har card /english-literature/#indian-english-literature
+     wale card se haath-ba-haath mel khata hai (naam, saal, writers, alt text) — badlne hon to dono jagah.
+     Card ke shabd har article se aate hain. `slug` yahan sirf tasveer ka naam hai: /assets/age-cards/<slug>-painted.webp
+     (pehle card ka article slug indian-english-introduction hai, par uski tasveer indian-english-painted hai).
+     Ye 20 British ya paanch American ages me nahi ginti. Series ke baaki articles aate hi unka card yahin aur timeline par jodein. */
+  const indianAges = [
+    { slug:'indian-english',                  yr:'Intro', name:'Indian English Literature', era:'All periods', who:'Mahomet · Roy · Tagore',            article:'/notes/indian-english-introduction/',
+      alt:'Painted interpretation of young students and a teacher with books, a globe and a printing press on a Calcutta verandah beside a river with sailing ships.' },
+    { slug:'indian-english-beginnings',       yr:'1794',  name:'Beginnings to 1857',        era:'1794 – 1857', who:'Roy · Derozio · Dutt',              article:'/notes/indian-english-beginnings/',
+      alt:'Painted interpretation of a young poet writing by lamplight at a desk with books and manuscripts, with a river and a sailing ship at dusk beyond the window.' },
+    { slug:'indian-english-early-growth',     yr:'1857',  name:'1857 to 1920',              era:'1857 – 1920', who:'Toru Dutt · Tagore · Aurobindo',    article:'/notes/indian-english-early-growth/',
+      alt:'Painted interpretation of two young women reading under a tall casuarina tree in a Bengal garden, with a river and a sailing boat at sunset.' },
+    { slug:'indian-english-freedom-years',    yr:'1920',  name:'1920 to 1947',              era:'1920 – 1947', who:'Anand · Narayan · Raja Rao',        article:'/notes/indian-english-freedom-years/',
+      alt:'Original painted interpretation of a 1930s Indian town, with a writer, readers and a woman at a spinning wheel; no real individual is portrayed.' },
+    { slug:'indian-english-independence-era', yr:'1947',  name:'1947 to 1980',              era:'1947 – 1980', who:'Ezekiel · Desai · Karnad',          article:'/notes/indian-english-independence-era/',
+      alt:'Original painted interpretation of readers and writers in a 1960s Indian publishing room; no real individual is portrayed.' },
+  ];
+
   /* ---------- Videos: real lessons on the channel ----------
      `title` khaali hai to card par "Watch on YouTube" dikhta hai.
      Asli title likh dene par wahi dikhne lagega. */
@@ -414,6 +433,13 @@
     const grid = document.getElementById('americanAgeGrid');
     if (!grid) return;
     grid.innerHTML = ageCardsHtml(americanAges);
+  }
+
+  /* Indian English Literature: abhi paanch card (introduction + chaar daur), desktop par ek poori line; "+" ki zarurat nahi. */
+  function renderIndianAges() {
+    const grid = document.getElementById('indianAgeGrid');
+    if (!grid) return;
+    grid.innerHTML = ageCardsHtml(indianAges);
   }
 
   function renderAges() {
@@ -626,6 +652,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     renderAges();
     renderAmericanAges();
+    renderIndianAges();
     renderVideos();
     loadReviews().then(renderReviews);
     renderBirthday();

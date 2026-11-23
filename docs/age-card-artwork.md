@@ -159,9 +159,9 @@ The "Intro" badge must stay short: the phone thumbnail is 84px wide and the firs
 "Introduction", overflowed it by 4px (measured at 320 to 520px). None of the three articles has a
 `hero_image` yet, so all use the plain article header.
 
-The landing page does not show this card, and it is not in the 20 British ages or the five
-American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). All three articles are
-in the home search and the sitemap.
+It is not in the 20 British ages or the five American ones (`ages`, `americanAges` in
+`assets/home.js`, `_data/mcqSpec.json`). All three articles are in the home search and the sitemap.
+The landing page now shows the Indian cards too (added 23 November 2026, see the end of this file).
 
 
 ## Indian English Literature: 1920 to 1947 (added 23 November 2026)
@@ -171,3 +171,22 @@ The fourth article card links to `/notes/indian-english-freedom-years/`. Its tit
 ## Indian English Literature: 1947 to 1980 (added 23 November 2026)
 
 The fifth article card links to `/notes/indian-english-independence-era/`. Its names, Ezekiel, Desai and Karnad, come from the supplied article. The original painted interpretation shows an imagined 1960s Indian publishing room with writers, readers and a printing press. It portrays no identifiable person. The generated image was cropped to a 1.6:1 card and exported as `assets/age-cards/indian-english-independence-era-painted.webp` (480 x 300, 39,158 bytes) and `indian-english-independence-era-painted-240.webp` (240 x 150, 11,438 bytes). The article, card, search index and sitemap were added together.
+
+## Indian English Literature on the landing page (owner, 23 November 2026)
+
+`index.html` has a band "Indian English Literature by Ages" (`#indian-ages`) under the American one,
+asked for "like the American one". `assets/home.js` draws it from its own `indianAges` list with the shared
+`ageCardsHtml()`: the same `.agecard` markup and the same card files as the timeline, so no artwork is
+duplicated. The five cards copy the timeline's name, years, three writers, "Intro" or year badge, article
+link and alt text; if a timeline card changes, change `indianAges` too. Each entry's `slug` is only the
+picture's file name (`/assets/age-cards/<slug>-painted.webp`), so the introduction card uses
+`indian-english` while its article is `indian-english-introduction`. The line under the heading, "Start
+with the introduction, then read each period in order.", repeats what the timeline section already says.
+"View complete timeline" goes to `/english-literature/#indian-english-literature`.
+
+Layout: five columns from 1000px, so the five cards fill one line; three columns on a tablet (3 + 2);
+stacked cards on a phone, with the green heading bar like the British and American bands (the link and the
+line under the heading are hidden there). The band is on the page background (#FDFBF5) with a 1px top
+line, because the American band above it is the sand tint, so the three bands alternate. There is no "+"
+tab. When the next period article gets its card the grid will hold seven, which wraps 5 + 2 on a wide
+screen: check how it looks then.
