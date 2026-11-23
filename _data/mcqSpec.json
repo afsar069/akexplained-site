@@ -2130,6 +2130,611 @@
           "label": "Terms and criticism"
         }
       ]
+    },
+    {
+      "slug": "american-colonial",
+      "name": "American Colonial and Early National",
+      "years": "1600–1830",
+      "article": "ages/american-colonial",
+      "notesName": "American Colonial and Early National",
+      "color": "#7A5C3E",
+      "image": "/assets/age-cards/american-colonial-painted.webp",
+      "tradition": "american",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Bradstreet, Bradford, Edwards, Franklin, Paine, Wheatley, Irving and Cooper",
+          "topics": [
+            "ground",
+            "early",
+            "poetry",
+            "reason",
+            "fiction",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Early prose and Puritan writing",
+          "meta": "50 questions at each level &middot; John Smith, Bradford's <i>Of Plymouth Plantation</i>, Rowlandson, Cotton Mather, Edwards's <i>Sinners in the Hands of an Angry God</i>, the jeremiad, Perry Miller and Bercovitch",
+          "topics": [
+            "early",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Poetry: Bradstreet, Taylor, Wheatley and Freneau",
+          "meta": "50 questions at each level &middot; <i>The Tenth Muse</i>, <i>Several Poems</i>, Taylor's 'Huswifery', Wheatley's <i>Poems on Various Subjects, Religious and Moral</i>, Freneau's 'The Wild Honey Suckle', the <i>Bay Psalm Book</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "The Enlightenment and the Revolution: Franklin to Webster",
+          "meta": "50 questions at each level &middot; <i>Poor Richard's Almanack</i>, Franklin's <i>Autobiography</i>, Cr&egrave;vecoeur's <i>Letters from an American Farmer</i>, Paine's <i>Common Sense</i> and <i>The Age of Reason</i>, Webster, Deism",
+          "topics": [
+            "reason",
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Drama, the first novels, Irving and Cooper",
+          "meta": "50 questions at each level &middot; <i>The Contrast</i>, <i>The Power of Sympathy</i>, <i>Wieland</i>, <i>The Sketch Book</i>, the Leatherstocking Tales, the epistolary and sentimental novel, American Gothic",
+          "topics": [
+            "fiction",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "description": "American Colonial and Early National literature MCQ practice (1600–1830). Five sets are planned, from Puritan prose and poetry to the Revolution, the first novels, Irving and Cooper. The questions are being written; the notes are ready to read.",
+        "ogDescription": "Practice American Colonial and Early National literature, 1600 to 1830. Five sets are planned; the questions are being written.",
+        "heroSub": "1600 to 1830 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "early",
+          "label": "Early prose and Puritan writing"
+        },
+        {
+          "value": "poetry",
+          "label": "Poetry"
+        },
+        {
+          "value": "reason",
+          "label": "The Enlightenment and the Revolution"
+        },
+        {
+          "value": "fiction",
+          "label": "Drama, the first novels, Irving and Cooper"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "american-renaissance",
+      "name": "American Renaissance",
+      "years": "1830–1865",
+      "article": "ages/american-renaissance",
+      "notesName": "American Renaissance",
+      "color": "#4F6F52",
+      "image": "/assets/age-cards/american-renaissance-painted.webp",
+      "tradition": "american",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Emerson, Thoreau, Hawthorne, Melville, Poe, Whitman, Dickinson, Stowe and Douglass",
+          "topics": [
+            "ground",
+            "transcend",
+            "romance",
+            "poetry",
+            "antislavery",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Transcendentalism: Emerson, Thoreau and Fuller",
+          "meta": "50 questions at each level &middot; <i>Nature</i>, 'The American Scholar', 'Self-Reliance', <i>Walden</i>, 'Civil Disobedience', Fuller's <i>Woman in the Nineteenth Century</i>, <i>The Dial</i>",
+          "topics": [
+            "transcend",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Hawthorne, Melville and Poe: romance and the Gothic",
+          "meta": "50 questions at each level &middot; <i>The Scarlet Letter</i>, <i>The House of the Seven Gables</i>, <i>Moby-Dick</i>, 'Bartleby, the Scrivener', <i>Billy Budd</i>, 'The Fall of the House of Usher', 'The Raven'",
+          "topics": [
+            "romance",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Poetry: Whitman and Dickinson",
+          "meta": "50 questions at each level &middot; <i>Leaves of Grass</i>, 'Song of Myself', 'O Captain! My Captain!', 'Because I could not stop for Death', free verse, the catalogue",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Antislavery writing and the critics of the age",
+          "meta": "50 questions at each level &middot; <i>Uncle Tom's Cabin</i>, Douglass's <i>Narrative</i>, Jacobs's <i>Incidents in the Life of a Slave Girl</i>, Matthiessen's <i>American Renaissance</i>, Baym, Tompkins, Reynolds",
+          "topics": [
+            "antislavery",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "description": "American Renaissance MCQ practice (1830–1865). Five sets are planned, on Transcendentalism, Hawthorne, Melville and Poe, Whitman and Dickinson, and antislavery writing. The questions are being written; the notes are ready to read.",
+        "ogDescription": "Practice American Renaissance literature, 1830 to 1865. Five sets are planned; the questions are being written.",
+        "heroSub": "1830 to 1865 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "transcend",
+          "label": "Transcendentalism"
+        },
+        {
+          "value": "romance",
+          "label": "Hawthorne, Melville and Poe"
+        },
+        {
+          "value": "poetry",
+          "label": "Whitman and Dickinson"
+        },
+        {
+          "value": "antislavery",
+          "label": "Antislavery writing"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "american-realism",
+      "name": "American Realism and Naturalism",
+      "years": "1865–1914",
+      "article": "ages/american-realism",
+      "notesName": "American Realism and Naturalism",
+      "color": "#5B6F86",
+      "image": "/assets/age-cards/american-realism-painted.webp",
+      "tradition": "american",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Twain, James, Howells, Crane, Chopin, Wharton, Dreiser and Du Bois",
+          "topics": [
+            "ground",
+            "realism",
+            "naturalism",
+            "women",
+            "citizenship",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Realism: Twain, Howells and James",
+          "meta": "50 questions at each level &middot; <i>Adventures of Huckleberry Finn</i>, <i>The Rise of Silas Lapham</i>, <i>Daisy Miller</i>, <i>The Portrait of a Lady</i>, <i>The Turn of the Screw</i>, <i>The Ambassadors</i>, Amy Kaplan, Michael Davitt Bell",
+          "topics": [
+            "realism",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Naturalism: Crane, Dreiser, Norris and London",
+          "meta": "50 questions at each level &middot; <i>The Red Badge of Courage</i>, <i>Sister Carrie</i>, <i>McTeague</i>, <i>The Octopus</i>, <i>The Call of the Wild</i>, determinism, June Howard, Pizer",
+          "topics": [
+            "naturalism",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Women's lives and regional writing: Chopin and Wharton",
+          "meta": "50 questions at each level &middot; <i>The Awakening</i>, 'The Story of an Hour', <i>The House of Mirth</i>, <i>Ethan Frome</i>, <i>The Age of Innocence</i>, local color, dialect",
+          "topics": [
+            "women",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Race, education and citizenship: Washington and Du Bois",
+          "meta": "50 questions at each level &middot; <i>Up from Slavery</i>, <i>The Souls of Black Folk</i>, double consciousness, the color line, Reconstruction",
+          "topics": [
+            "citizenship",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "description": "American Realism and Naturalism MCQ practice (1865–1914). Five sets are planned, on Twain, Howells and James, the naturalists, women's lives and regional writing, and race, education and citizenship. The questions are being written; the notes are ready to read.",
+        "ogDescription": "Practice American Realism and Naturalism, 1865 to 1914. Five sets are planned; the questions are being written.",
+        "heroSub": "1865 to 1914 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "realism",
+          "label": "Twain, Howells and James"
+        },
+        {
+          "value": "naturalism",
+          "label": "Naturalism"
+        },
+        {
+          "value": "women",
+          "label": "Women's lives and regional writing"
+        },
+        {
+          "value": "citizenship",
+          "label": "Race, education and citizenship"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "american-modernism",
+      "name": "American Modernism",
+      "years": "1914–1945",
+      "article": "ages/american-modernism",
+      "notesName": "American Modernism",
+      "color": "#7B5575",
+      "image": "/assets/age-cards/american-modernism-painted.webp",
+      "tradition": "american",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Fitzgerald, Hemingway, Faulkner, Steinbeck, Frost, Hughes, Hurston and O'Neill",
+          "topics": [
+            "ground",
+            "novel",
+            "poetry",
+            "harlem",
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The novel: Fitzgerald, Hemingway, Faulkner and Steinbeck",
+          "meta": "50 questions at each level &middot; <i>The Great Gatsby</i>, <i>The Sun Also Rises</i>, <i>A Farewell to Arms</i>, <i>The Sound and the Fury</i>, <i>As I Lay Dying</i>, <i>Light in August</i>, <i>Of Mice and Men</i>, <i>The Grapes of Wrath</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Poetry: Imagism and the modern experiments",
+          "meta": "50 questions at each level &middot; 'Mending Wall', 'The Road Not Taken', Stevens's <i>Harmonium</i>, 'The Red Wheelbarrow', Cummings, Marianne Moore, <i>The Bridge</i>, Amy Lowell and Imagism",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "The Harlem Renaissance: Hughes, Hurston, McKay and Cullen",
+          "meta": "50 questions at each level &middot; 'The Negro Speaks of Rivers', <i>Their Eyes Were Watching God</i>, 'If We Must Die', <i>Harlem Shadows</i>, <i>Color</i>, the blues, Houston A. Baker Jr., Hutchinson",
+          "topics": [
+            "harlem",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Drama, and the critics of modernism",
+          "meta": "50 questions at each level &middot; <i>The Emperor Jones</i>, <i>Long Day's Journey Into Night</i>, expressionism, Michael North's <i>The Dialect of Modernism</i>, Rainey's <i>Institutions of Modernism</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "description": "American Modernism MCQ practice (1914–1945). Five sets are planned, on the novel from Fitzgerald to Steinbeck, Imagism and modern poetry, the Harlem Renaissance, and drama. The questions are being written; the notes are ready to read.",
+        "ogDescription": "Practice American Modernism, 1914 to 1945. Five sets are planned; the questions are being written.",
+        "heroSub": "1914 to 1945 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "The novel"
+        },
+        {
+          "value": "poetry",
+          "label": "Imagism and modern poetry"
+        },
+        {
+          "value": "harlem",
+          "label": "The Harlem Renaissance"
+        },
+        {
+          "value": "drama",
+          "label": "Drama"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "american-contemporary",
+      "name": "American Postwar and Contemporary",
+      "years": "1945–present",
+      "article": "ages/american-contemporary",
+      "notesName": "American Postwar and Contemporary",
+      "color": "#8A4B4B",
+      "image": "/assets/age-cards/american-contemporary-painted.webp",
+      "tradition": "american",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Salinger, Ellison, Baldwin, Kerouac, Plath, Arthur Miller, Morrison, Pynchon and Whitehead",
+          "topics": [
+            "ground",
+            "novel",
+            "poetry",
+            "drama",
+            "voices",
+            "postmodern",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The novel: Salinger to McCarthy",
+          "meta": "50 questions at each level &middot; <i>The Catcher in the Rye</i>, <i>Herzog</i>, <i>Invisible Man</i>, <i>Go Tell It on the Mountain</i>, <i>Rabbit, Run</i>, <i>Portnoy's Complaint</i>, 'A Good Man Is Hard to Find', <i>The Road</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The Beats and poetry: Ginsberg to Ashbery",
+          "meta": "50 questions at each level &middot; <i>On the Road</i>, <i>Howl</i>, <i>Life Studies</i>, <i>Ariel</i>, <i>Live or Die</i>, <i>77 Dream Songs</i>, <i>Diving into the Wreck</i>, <i>Self-Portrait in a Convex Mirror</i>",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Drama: Miller, Williams, Albee and Wilson",
+          "meta": "50 questions at each level &middot; <i>Death of a Salesman</i>, <i>The Crucible</i>, <i>The Glass Menagerie</i>, <i>A Streetcar Named Desire</i>, <i>Who's Afraid of Virginia Woolf?</i>, <i>Fences</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Black and Native voices: memory and history",
+          "meta": "50 questions at each level &middot; <i>Beloved</i>, <i>The Color Purple</i>, <i>I Know Why the Caged Bird Sings</i>, <i>The Underground Railroad</i>, <i>Sing, Unburied, Sing</i>, <i>There There</i>, <i>The Night Watchman</i>",
+          "topics": [
+            "voices",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 6,
+          "title": "Postmodern fiction and critical ideas",
+          "meta": "50 questions at each level &middot; <i>Lolita</i>, <i>Gravity's Rainbow</i>, <i>Slaughterhouse-Five</i>, <i>White Noise</i>, metafiction, Hutcheon, Gates, Morrison's <i>Playing in the Dark</i>",
+          "topics": [
+            "postmodern",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "description": "American Postwar and Contemporary literature MCQ practice (1945–present). Six sets are planned, on the postwar novel, the Beats and poetry, drama, Black and Native voices, and postmodern fiction. The questions are being written; the notes are ready to read.",
+        "ogDescription": "Practice American Postwar and Contemporary literature, 1945 to the present. Six sets are planned; the questions are being written.",
+        "heroSub": "1945 to present &middot; Six sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "The postwar novel"
+        },
+        {
+          "value": "poetry",
+          "label": "The Beats and poetry"
+        },
+        {
+          "value": "drama",
+          "label": "Drama"
+        },
+        {
+          "value": "voices",
+          "label": "Black and Native voices"
+        },
+        {
+          "value": "postmodern",
+          "label": "Postmodern fiction"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
     }
   ]
 }

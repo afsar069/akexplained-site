@@ -48,7 +48,9 @@ const ORDER = [
 function mcqPools(root) {
   const spec = JSON.parse(fs.readFileSync(path.join(root, '_data', 'mcqSpec.json'), 'utf8'));
   const qdir = path.join(root, 'assets', 'questions');
-  return (spec.ages || []).map(function (age) {
+  // Only the 20 British ages: the American ages ("tradition": "american", owner 2026-11-23) are a separate series
+  // and are not part of the British level pool.
+  return (spec.ages || []).filter(function (age) { return age.tradition !== 'american'; }).map(function (age) {
     let total = 0;
     const ids = {};
     const liveSets = [];                                        // what went into `total`, set by set (see below)

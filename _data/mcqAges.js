@@ -83,9 +83,17 @@ function fileRev(setId, levels, s) {
 const levelsText = (levels) => levels.join(" or ");
 const yearsText = (y) => y.replace("–", " to ");
 
+/* Ages ki do alag series hain (owner, 2026-11-23): British (registry me bina "tradition" wale, 20 ages)
+   aur "tradition": "american" (5 ages). "Ye 20 me se kaun sa age hai" aur agla/pichhla age har series ke
+   andar hi gine jate hain, isliye American ke aane se British ke 20 ki ginti ya uske shabd nahi badalte. */
+const tradeOf = (a) => a.tradition || "british";
+
 module.exports = function () {
-  const total = spec.ages.length;
-  const ages = spec.ages.map((a, i) => {
+  const sizes = {}, seen = {};
+  spec.ages.forEach((a) => { sizes[tradeOf(a)] = (sizes[tradeOf(a)] || 0) + 1; });
+  const ages = spec.ages.map((a) => {
+    const trade = tradeOf(a);
+    const total = sizes[trade];
     const hs = headings(a.article);
     const has = (id) => hs.some((h) => h.id === id);
     const notes = "/notes/" + a.article + "/";
@@ -137,10 +145,14 @@ module.exports = function () {
         : " &middot; questions coming soon")),
     };
 
-    const pos = i + 1;
-    const posText = pos === 1 ? a.name + " is the first. " + cap(words(total - 1)) + " more follow it."
-      : pos === total ? a.name + " is the last of " + words(total) + "."
-      : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " ages.";
+    const pos = seen[trade] = (seen[trade] || 0) + 1;
+    const posText = trade === "american"
+      ? (pos === 1 ? a.name + " is the first of " + words(total) + " American ages. " + cap(words(total - 1)) + " more follow it."
+        : pos === total ? a.name + " is the last of " + words(total) + " American ages."
+        : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " American ages.")
+      : (pos === 1 ? a.name + " is the first. " + cap(words(total - 1)) + " more follow it."
+        : pos === total ? a.name + " is the last of " + words(total) + "."
+        : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " ages.");
 
     return Object.assign({}, a, {
       pos, posText, notes, notesName: a.notesName, yearsText: yearsText(a.years),
@@ -152,9 +164,11 @@ module.exports = function () {
     });
   });
 
-  // Agla / pichhla age: live ho to uska hub, warna uske notes
+  // Agla / pichhla age (apni hi series me): sets planned ho to uska hub, warna uske notes
   ages.forEach((a, i) => {
-    const link = (b) => b && { name: b.name, yearsText: b.yearsText, href: b.hasLive ? "/quizzes/mcq/" + b.slug + "/" : b.notes };
+    const link = (b) => b && tradeOf(b) === tradeOf(a)
+      ? { name: b.name, yearsText: b.yearsText, href: b.hasPlan ? "/quizzes/mcq/" + b.slug + "/" : b.notes }
+      : undefined;
     a.next = link(ages[i + 1]);
     a.prev = link(ages[i - 1]);
   });

@@ -56,6 +56,24 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   `paper_catalog` — a free set is a file and always counts, a login set the build counted counts only while it
   is live, and a login set published into a Coming-soon slot is added. `tools/build-syllabus.js` writes the
   per-age `liveSets` list that makes this possible. If the catalog cannot be read, the built pool stands.
+  **American Literature MCQ ages** (owner, 2026-11-23: "american literature ko bhi vese hi plan karo"): `_data/mcqSpec.json` also
+  holds five American ages after the 20 British ones, each with `"tradition": "american"` (`american-colonial`, `american-renaissance`,
+  `american-realism`, `american-modernism`, `american-contemporary`; the slug is the notes article's `age:` value and the taxonomy's period id;
+  `article` is `ages/<slug>`, the notes of the timeline cards). They are a **separate series**: `_data/mcqAges.js` counts "the Nth of five
+  American ages" and the next / previous links inside the series, `tools/build-syllabus.js` leaves them out of the British dashboard pool, and
+  `tools/build_skill_zip.py` leaves them out of the UGC NET skill. **The plan** was made by Claude at the owner's request from each age's own
+  notes article (every writer, work, term and critic named in a set's one-line scope is in that article; nothing from outside), so the owner may
+  change any title, scope or level. **Five sets each, six for Postwar and Contemporary** (32 writers in its notes against 11 to 18 elsewhere).
+  Pattern: Set 1 = the whole age (easy + medium); the next sets are one group or genre each; the early sets easy + medium, the later ones
+  medium + hard; "terms and criticism" is a hub topic woven into every set, as for the Victorian age. Fifty questions at each level, as for
+  the British sets. **Every set is a planned slot with no questions yet** (Coming soon, noindex hub and pages): it opens the way every planned set
+  does (rule 17): the owner uploads it at `/admin/upload-paper/` (**English Literature — MCQ set**, then the age) and marks it Live, with no
+  rebuild; the hub row flips at view time. `/quizzes/mcq/` has an **American Literature By Age** section (`#american-literature`, five cards in
+  one line, same card markup and the timeline's painted pictures), under **British Literature By Age** (that heading used to read "Practise By
+  Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **When an age's first set
+  goes live, move its slug from `SOON_HUBS` to `LIVE_AGES` there** (step 5 of rule 7) and add its hub line to `sitemap.njk`. Not done on purpose:
+  American answers are not in the British level pool (the dashboard has no American level yet), and `validate_mcq.py` only warns "age is not in the
+  known list" for an American file (it has no American slugs; the upload page does not run it).
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); **UP PGT English is live too** (links to `/exams/pgt/up-pgt/pyqs/`, rule 23; its card, count and years are read from `_data/pgtPyqPapers.js`); TGT English is a non-link Coming soon card. Not hand-written HTML any more.
@@ -69,7 +87,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, the shared Daily artwork for existing illustrated non-article page heads, and `nav.js` into every built page
 
-The list of literary periods (20, from Old English to Postmodern) is the same on three pages and
+The list of literary periods (20, from Old English to Postmodern; the five American MCQ ages are a separate series, see rule 3's `quizzes/mcq` note) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
 `assets/mcq.js`), the cards in `quizzes/daily/index.html` (and its period filter, one option per age), and `ages` in `assets/home.js`.
 The timeline page `english-literature/index.html` shows the same 20 ages (one small tile each, 6 to a line on a wide screen, same names, years, writers and notes link as `ages` in `assets/home.js`), so those details must stay in step too. **The timeline and landing page share one card artwork series** (owner, 2026-11-20): original representative painted scenes, one distinct scene per age in one consistent style, in `assets/age-cards/`. Do not replace these with public-domain portraits or reuse these card files as article heroes. Each has a 480 × 300 WebP and a 240 × 150 responsive copy; keep both compressed and inspect them at card size. See `docs/age-card-artwork.md`.
