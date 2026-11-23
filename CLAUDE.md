@@ -67,11 +67,14 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   Pattern: Set 1 = the whole age (easy + medium); the next sets are one group or genre each; the early sets easy + medium, the later ones
   medium + hard; "terms and criticism" is a hub topic woven into every set, as for the Victorian age. Fifty questions at each level, as for
   the British sets. **Every set is a planned slot with no questions yet** (Coming soon, noindex hub and pages): it opens the way every planned set
-  does (rule 17): the owner uploads it at `/admin/upload-paper/` (**English Literature — MCQ set**, then the age) and marks it Live, with no
+  does (rule 17): the owner uploads it at `/admin/upload-paper/` (**American Literature — MCQ set**, then the age; owner, 2026-11-23: it is its own destination beside **British Literature — MCQ set** (the old "English Literature — MCQ set"), each showing only its own series' ages, and both make the id `<age>-set-N` with no exam) and marks it Live, with no
   rebuild; the hub row flips at view time. `/quizzes/mcq/` has an **American Literature By Age** section (`#american-literature`, five cards in
   one line, same card markup and the timeline's painted pictures), under **British Literature By Age** (that heading used to read "Practise By
-  Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **When an age's first set
-  goes live, move its slug from `SOON_HUBS` to `LIVE_AGES` there** (step 5 of rule 7) and add its hub line to `sitemap.njk`. Not done on purpose:
+  Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **An age's card opens by itself
+  (owner, 2026-11-23)**: `assets/mcq.js` `catalogAges()` reads the live `paper_catalog` at view time and, when it holds a Live set `<age>-set-<n>` of a `SOON_HUBS` age, turns that card into a
+  ready card ("Ready when you are", then the reader's own progress) with no rebuild; a failed read leaves "Questions coming soon". So an American set uploaded and marked Live needs no change in
+  `assets/mcq.js`. What still waits for a rebuild (needs Claude, step 5 of rule 7 and the registry): the hub's own noindex flag and its `sitemap.njk` line, and the hub's **Build your own test**
+  row with its `build/` and `custom/` pages, which exist only for an age with a set marked `"live": true` in `_data/mcqSpec.json` (a British age has them from its free sets). Not done on purpose:
   American answers are not in the British level pool (the dashboard has no American level yet), and `validate_mcq.py` only warns "age is not in the
   known list" for an American file (it has no American slugs; the upload page does not run it).
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
@@ -518,7 +521,7 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   - **The owner picks the destination, and the page builds the id** (2026-11-13, "upload hi aisa ho jo galti hi na
     ho"): a **Where does it go?** step (`_data/paperDestinations.js`, which stops the build if a listed page is
     missing) with the series (UP AP Paper 2 Mock Test → `up-ap-p2-mock-test-N`, UP PGT Mock Test →
-    `up-pgt-mock-test-N`, English Literature MCQ set → `<age>-set-N`), a number, and (for the literature set) an
+    `up-pgt-mock-test-N`, British Literature MCQ set or American Literature MCQ set → `<age>-set-N`), a number, and (for a literature set) an
     age. `assets/upload-paper.js` builds the `set_id` from that and **overwrites the file's own `setId`,
     `setNumber`, `examId`, `kind` and `title`** to match — so a file made with a wrong id (as Mock Test 4 was:
     `up-ap-mock-test-4` instead of `up-ap-p2-mock-test-4`) cannot land in the wrong place. Question ids inside the

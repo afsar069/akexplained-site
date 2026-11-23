@@ -197,6 +197,30 @@
     var plan = {};
     try { plan = JSON.parse(el('upPlan').textContent).sets || {}; } catch (e) { plan = {}; }
 
+    /* The age list has the ages of every literature series (British, American), each tagged with the
+       destination it belongs to. Take them out of the <select> and put back only those of the chosen
+       series, so "British Literature" never offers an American age and the other way round. */
+    var ageOptions = [];
+    var ageFor = null;      // the destination the age list was last filled for
+    if (ageSelect) {
+      Array.prototype.slice.call(ageSelect.querySelectorAll('option[data-dest]')).forEach(function (o) {
+        ageOptions.push({ value: o.value, text: o.textContent, dest: o.getAttribute('data-dest') });
+        ageSelect.removeChild(o);
+      });
+    }
+    function fillAges(destId) {
+      if (!ageSelect || destId === ageFor) return;
+      ageFor = destId;
+      while (ageSelect.options.length > 1) ageSelect.remove(1);
+      ageOptions.forEach(function (a) {
+        if (a.dest !== destId) return;
+        var op = document.createElement('option');
+        op.value = a.value; op.textContent = a.text;
+        ageSelect.appendChild(op);
+      });
+      ageSelect.value = '';   // another series: the age has to be chosen again
+    }
+
     var client = null;      // Supabase client, once we know the person is an admin
     var passOnSale = false; // the All Access pass is on sale -> new exam papers are paid (rule 22)
     var papers = [];        // one per chosen file: { name, body }
@@ -276,6 +300,7 @@
       var dest = currentDest();
       if (needsLevel()) { show(levelWrap); } else { hide(levelWrap); }
       var number = currentNumber();
+      fillAges(dest && dest.needsAge ? dest.id : '');
       var age = ageSelect.value;
       var picked = chosenPaper();
       if (dest && dest.needsAge) { show(ageWrap); } else { hide(ageWrap); }
