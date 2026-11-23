@@ -438,15 +438,49 @@
     grid.innerHTML = ageCardsHtml(americanAges);
   }
 
-  /* Indian English Literature: introduction + har daur ka card, "+" ki zarurat nahi. Desktop (1000px+) par columns card ki ginti se
-     chalte hain taaki akela card na bache: chhe tak ek poori line (6 card = 6 column), usse zyada ho to do barabar line
-     (7 = 4 + 3, 8 = 4 + 4). Tablet aur phone par wahi shared grid (3 column / ek ke neeche ek). */
+  /* Indian English Literature (owner, 2026-11-23): paanch card dikhte hain, baaki (abhi chhatha) slide button se khulte hain.
+     Track ek seedhi line hai jo side me scroll hoti hai (touch, trackpad aur keyboard bhi chalte hain). Gol button:
+       - abhi card baaki hain: "slide" -> track aage khisakta hai (ek baar me utne card jitne dikh rahe hain);
+       - aakhri card dikh gaya (ya sab card pehle se dikh rahe hain): wahi button /english-literature/ ka link ban jata hai.
+     Peeche jane ke liye chhota "<" button tabhi dikhta hai jab track aage khisak chuka ho. Phone par track seedhi list hai
+     (CSS sirf pehle paanch card dikhati hai), isliye wahan sirf neeche timeline ka link dikhta hai. */
   function renderIndianAges() {
-    const grid = document.getElementById('indianAgeGrid');
-    if (!grid) return;
-    grid.innerHTML = ageCardsHtml(indianAges);
-    const n = indianAges.length;
-    grid.style.setProperty('--cols', String(n <= 6 ? n : Math.ceil(n / 2)));
+    const track = document.getElementById('indianTrack');
+    if (!track) return;
+    track.innerHTML = ageCardsHtml(indianAges);
+
+    const prev = document.getElementById('indianPrev');
+    const next = document.getElementById('indianNext');
+    const end = document.getElementById('indianEnd');
+    const cap = document.getElementById('indianCap');
+    if (!prev || !next || !end) return;
+
+    function update() {
+      const max = track.scrollWidth - track.clientWidth;
+      const slideable = max > 2;                              // koi card nazar ke bahar hai
+      const atStart = track.scrollLeft <= 2;
+      const atEnd = !slideable || track.scrollLeft >= max - 2;
+      prev.hidden = !slideable || atStart;
+      next.hidden = atEnd;
+      end.hidden = !atEnd;
+      if (cap) cap.textContent = atEnd ? 'Full timeline' : 'More';
+    }
+
+    function moveBy(sign) {
+      const cards = track.querySelectorAll('.agecard');
+      if (!cards.length) return;
+      const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : track.clientWidth;   // card + gap
+      const gap = Math.max(0, step - cards[0].offsetWidth);
+      const shown = Math.max(1, Math.floor((track.clientWidth + gap) / step + 0.01));                 // kitne card dikh rahe hain
+      const smooth = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      track.scrollBy({ left: sign * shown * step, behavior: smooth ? 'smooth' : 'auto' });
+    }
+
+    next.addEventListener('click', function () { moveBy(1); });
+    prev.addEventListener('click', function () { moveBy(-1); });
+    track.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
   }
 
   function renderAges() {

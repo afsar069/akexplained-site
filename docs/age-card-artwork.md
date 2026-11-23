@@ -188,11 +188,15 @@ picture's file name (`/assets/age-cards/<slug>-painted.webp`), so the introducti
 with the introduction, then read each period in order.", repeats what the timeline section already says.
 "View complete timeline" goes to `/english-literature/#indian-english-literature`.
 
-Layout: from 1000px the number of columns follows the number of cards (`--cols`, set in
-`renderIndianAges`), so the six cards fill one line (the timeline section also shows six per line); with seven
-or more cards the grid splits into two even lines (7 = 4 + 3) so no card is left alone; three columns on a tablet (3 + 3);
-stacked cards on a phone, with the green heading bar like the British and American bands (the link and the
-line under the heading are hidden there). The band is on the page background (#FDFBF5) with a 1px top
-line, because the American band above it is the sand tint, so the three bands alternate. There is no "+"
-tab. When the next period article gets its card the grid will hold seven (4 + 3 on a wide screen): look at
-how it reads then.
+Layout (changed the same day, owner: "5 hi cards rakho"): the Indian band is a **slider**, not a grid. The
+cards sit in one row that scrolls sideways (`#indianTrack`); five are in view from 1000px (three from 620px,
+two from 560px), so the sixth card and any later one wait off to the right. A round arrow button at the right
+end slides the row on by one screenful (caption "More"); when the last card is in view the same spot becomes a
+link to `/english-literature/#indian-english-literature` (caption "Full timeline"), and a small back arrow
+appears once the row has slid. The header link "View complete timeline" stays. On a phone (under 560px) the
+band is a plain list of the first five cards with a full-width "Read the full timeline" link under it; the sixth
+card is only on the timeline page there. Touch swipe, trackpad and keyboard also move the row. The track
+has padding and a negative margin so the card's hover lift and shadow are not cut off. The band is on the page
+background (#FDFBF5) with a 1px top line, because the American band above it is the sand tint, so the three
+bands alternate. When another period article gets its card, add it to `indianAges` and to the timeline
+section; the slider needs no other change.
