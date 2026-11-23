@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-independence-era/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of Nissim Ezekiel and Indian writing after independence."
 title: Indian English Literature (1947-1980)
 description: Indian English literature from 1947 to 1980, with modern poetry, fiction and drama, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature

@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-early-growth/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of Rabindranath Tagore and the literary world of 1857 to 1920."
 title: Indian English Literature (1857-1920)
 description: A simple guide to Indian English literature from 1857 to 1920, with Toru Dutt, Tagore, Sri Aurobindo and Sarojini Naidu, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature
