@@ -33,6 +33,11 @@ We will first study the political, social, economic and religious world of indep
 
 India became independent in August 1947, but freedom came with **Partition**, the division of British India into India and Pakistan. Millions of people crossed new borders. Families lost homes, and violence affected several communities. Writers faced the difficult question of how a free country should remember a painful beginning.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-independence-era/event.webp" alt="An imagined railway platform where families wait with luggage during Partition in 1947." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined scene of families travelling during Partition in 1947.</figcaption>
+</figure>
+
 The Constitution of India came into effect on 26 January 1950. It established a democratic republic with guarantees of rights and a commitment to equality. Elections in 1951-52 gave adults the opportunity to choose representatives. These events introduced new ideas of citizenship into public life, even though inherited inequalities did not immediately disappear.
 
 Prime Minister Jawaharlal Nehru encouraged parliamentary institutions, scientific development and planning. In 1956, the States Reorganisation Act changed many state boundaries, largely in response to linguistic demands. Language was not simply a literary matter. It was connected with public identity, education and political representation.
@@ -54,6 +59,11 @@ Women's education and employment created new opportunities, although expectation
 The effects of Partition continued long after the borders were drawn. The experience could survive as memory, mistrust or silence within a household. Khushwant Singh's *Train to Pakistan* (1956) is an especially important example. Its village setting allows the reader to see how communal division enters ordinary relationships.
 
 A writer might speak Gujarati, Bengali, Tamil or Marathi at home while publishing poetry or fiction in English. An Indian English writer could belong to several linguistic worlds. This tension influenced both style and subject.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-independence-era/society.webp" alt="An imagined Bombay street with commuters, a bus and a bookstall in the 1960s." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined scene of everyday city life in 1960s Bombay.</figcaption>
+</figure>
 
 ### Economic life
 
@@ -143,6 +153,11 @@ Chaudhuri's *The Continent of Circe* (1965) developed further reflections on Ind
 ### Poetry: the new urban voice
 
 Modern Indian English poetry gained new importance during the 1950s. Earlier poets had often worked with song-like rhythms or idealised images of India. The newer generation turned towards ordinary speech, irony, uncertainty and the modern city. It was not a rejection of every earlier tradition.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-independence-era/portrait.webp" alt="Modern painted interpretation of Nissim Ezekiel." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Nissim Ezekiel — modern painted interpretation.</figcaption>
+</figure>
 
 **Nissim Ezekiel (1924-2004)** was a central figure in this change. His first collection, *A Time to Change* (1952), helped define a more personal, controlled voice. *Sixty Poems* followed in 1953, *The Unfinished Man* in 1960, and *The Exact Name* in 1965. The poems explore relationships, religion, urban surroundings and the gap between public speech and private intention.
 

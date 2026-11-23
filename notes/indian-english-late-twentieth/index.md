@@ -139,6 +139,11 @@ A character might feel attached to a family tradition while questioning its rest
 
 Late twentieth-century Indian English literature gave increasing attention to such complex experiences.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-late-twentieth/society.webp" alt="Readers in an imagined Indian bookshop, with a travelling family outside." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined bookshop scene suggesting urban reading and migration in the 1990s.</figcaption>
+</figure>
+
 ### Economic life
 
 The Indian economy experienced major changes during the 1980s and 1990s.
@@ -308,6 +313,11 @@ The period therefore produced several distinct approaches to fiction. It would b
 
 ### Salman Rushdie: history and imagination
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-late-twentieth/portrait.webp" alt="Modern painted interpretation of Salman Rushdie." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Salman Rushdie — modern painted interpretation.</figcaption>
+</figure>
+
 Salman Rushdie became one of the most widely discussed Indian-born novelists of the period.
 
 His *Midnight's Children* (1981) follows Saleem Sinai, who is born at midnight as India becomes independent on 15 August 1947. Saleem's life is connected with events in the history of modern India.
@@ -335,6 +345,11 @@ His *The Satanic Verses* (1988) follows, among other characters, Gibreel Farisht
 The novel provoked intense controversy and protests. Discussion of the work requires a distinction between its literary methods and the religious objections raised against it.
 
 Taken together, these novels show Rushdie's interest in history, identity and the power of storytelling. They also demonstrate how an English-language novel can draw upon several cultural and literary traditions.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-late-twentieth/event.webp" alt="An imagined literary award setting representing the 1981 Booker Prize for Midnight’s Children." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>A symbolic illustration of the 1981 Booker Prize awarded to Midnight’s Children.</figcaption>
+</figure>
 
 ### Amitav Ghosh: memory, borders and history
 

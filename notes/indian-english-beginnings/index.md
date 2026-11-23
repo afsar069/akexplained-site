@@ -43,6 +43,11 @@ The second group was the small body of educated Indians. They had become accusto
 
 Social reform was the great public cause of these years. **Sati** was the practice in which a widow was burned on her husband's funeral pyre. Rammohan Roy campaigned against it. In 1829 the Sati Regulation, passed under Governor-General Bentinck, made the practice illegal and punishable. The students of the **Hindu College** at Calcutta, who came to be known as **Young Bengal**, later became prominent in social reform, law and journalism.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-beginnings/society.webp" alt="An imagined Calcutta street with students, readers and a newspaper seller." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined street in early nineteenth-century Calcutta.</figcaption>
+</figure>
+
 ### Economic life
 
 The English education described in the first article had a practical purpose. It was meant mainly to train clerks and officials for the Company's government. Iyengar says that the young men who left the new schools were expected to join government service as clerks or to return to their villages.
@@ -52,6 +57,11 @@ Careers of the time show the same pattern. Rammohan Roy worked on and off for th
 ### Schools, colleges and the press
 
 The Hindu College, which opened in 1817, was the most important school for the new writers. Derozio taught there as a very young man. Kasi Prasad Ghose, an early poet, graduated from it in 1828.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-beginnings/event.webp" alt="An imagined scene of students arriving at Hindu College in 1817." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined scene of Hindu College opening in 1817.</figcaption>
+</figure>
 
 The government's next great step on education was the **Dispatch of 1854**. It was an official letter on education written by Sir Charles Wood. It led to a separate education department in each province and a system of **grants-in-aid**, which were government payments to schools. It also led to the founding of the universities of Calcutta, Bombay and Madras in 1857. Iyengar says the universities led to a gradual spread of education, and that the next two or three decades produced a new class of educated readers.
 
@@ -97,6 +107,11 @@ These writers mattered to the new Indian poets for a simple reason. They showed 
 ### Prose: Dean Mahomet and Rammohan Roy
 
 Dean Mahomet was born in 1759 at Patna, in what is now Bihar. At the age of eleven he joined the service of an Anglo-Irish officer in the army of the East India Company, and he campaigned in Bengal. In 1787 he went with the officer to Ireland. He lived in Cork for about twenty years, married there and became a Christian. His *Travels* was printed in Cork in 1794. It is an account of his life in India, and the University of California Press calls it an autobiographical **travel narrative**, which means a book that tells the story of a journey. He moved to London in 1807 and died in 1851, little known by then.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-beginnings/portrait.webp" alt="Modern painted interpretation of Raja Rammohan Roy." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Raja Rammohan Roy — modern painted interpretation.</figcaption>
+</figure>
 
 Raja Rammohan Roy was born on 22 May 1772 at Radhanagar in Bengal. He knew Sanskrit, Persian, Arabic, English, Bengali and Hindi. Iyengar says that he did pioneering work in Bengali prose and that he was also a master of effective English prose. He wrote in English when he wished to reach readers across India, or the rulers in Britain.
 

@@ -39,6 +39,11 @@ In February 1922 Gandhi stopped the movement after violence at Chauri Chaura. Th
 
 The **Civil Disobedience Movement** began in 1930. Civil disobedience means openly breaking a law judged unjust, generally through nonviolent action. Gandhi's Salt March from Sabarmati to Dandi made a common household necessity into a political symbol. The campaign showed that government power could be challenged through the actions of ordinary people. It also gave novelists scenes and language that connected national politics with local life.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-freedom-years/event.webp" alt="An imagined peaceful march towards the sea during the Salt March of 1930." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from the Salt March of 1930.</figcaption>
+</figure>
+
 The Second World War began in 1939 and brought new uncertainty. India became involved in the war while remaining under British rule. The Congress launched the **Quit India Movement** in August 1942, demanding an end to colonial government. Many leaders were arrested, and the movement faced strong repression. Jawaharlal Nehru was imprisoned during these years, and some of his most important English prose emerged from prison.
 
 British rule ended in August 1947. At the same time, Partition created India and Pakistan as independent states and brought violence and mass displacement. Independence was a political achievement, but it did not erase poverty, caste exclusion or religious conflict. Later Indian English writers would return to the human cost of Partition. The novels discussed in this article mainly belong to the years before that great break.
@@ -54,6 +59,11 @@ In Anand's *Untouchable*, Bakha is not simply a figure in a debate. He is a pers
 The period also saw wider participation by women in public activity, education and political protest. These changes did not end the unequal expectations placed upon women inside many families. Narayan's *The Dark Room* (1938), for example, examines a woman's difficult position within marriage. Its treatment of domestic power shows that a novel of this age did not have to describe a political march to be concerned with freedom.
 
 English created another social problem for writers. People often spoke one or more Indian languages in daily life, but an English novel might be read far from its setting. How could a writer convey the habits, speech and thoughts of Indian characters without making them sound like English characters? Anand, Narayan and Rao developed different solutions. Their work helped make **Indian English** a literary medium: English adapted to Indian experience, place and patterns of expression.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-freedom-years/society.webp" alt="An imagined Indian small town with schoolchildren, shops and a bicycle." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined small-town scene inspired by the everyday world of Malgudi.</figcaption>
+</figure>
 
 ### Economic life
 
@@ -110,6 +120,11 @@ Anand used the novel to expose social injustice. Narayan built a believable worl
 A **regional novel** is fiction closely connected to a particular place and its customs. A **fictional geography** is an invented setting that becomes familiar through several books. Malgudi is the best example in this period. **Irony** occurs when a situation or statement reveals a meaning different from what is expected. Narayan uses gentle irony to show the mistakes, hopes and pretensions of ordinary people. Anand uses sharper scenes of humiliation and hardship. Raja Rao brings the form of the village tale into the English novel.
 
 ### Mulk Raj Anand
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-freedom-years/portrait.webp" alt="Modern painted interpretation of Mulk Raj Anand." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Mulk Raj Anand — modern painted interpretation.</figcaption>
+</figure>
 
 Mulk Raj Anand (1905-2004) was a novelist concerned with people denied dignity by caste, poverty and unequal power. His writing is often described as **social realism** because it brings difficult conditions of labour and society into fiction. He does not treat the poor merely as objects of sympathy. His characters have feelings, desires and the capacity to question the world around them.
 
