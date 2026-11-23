@@ -114,13 +114,18 @@ its window now shows ordinary pitched seventeenth-century rooftops.
 by the owner). The card title, era line ("All periods", the article's own `period` value) and the
 three names (Mahomet, Roy, Tagore, from the article's writers table) come from that article.
 
-**There is no painted card art for it yet.** The thumbnail is an empty panel (the tile CSS gives
-`.thumb` a soft teal background) with a short "Intro" badge. The badge must stay short: the
-phone thumbnail is 84px wide and "Introduction" overflowed it by 4px (measured at 320 to 520px).
-To add art, create `assets/age-cards/indian-english-painted.webp` (480 × 300, 200 KB or less) and
-`indian-english-painted-240.webp` (240 × 150), then put the same `<img>` (with `srcset`, `sizes`,
-alt text, width, height, `loading="lazy"`) inside `.thumb` as the American cards do. The
-article itself has no `hero_image` yet, so it uses the plain article header.
+The painting is `assets/age-cards/indian-english-painted.webp` (480 × 300, 40,816 bytes) and
+`indian-english-painted-240.webp` (240 × 150, 12,112 bytes). It is an imagined early
+nineteenth-century Calcutta college verandah: young students and a teacher around a low table with
+English books, a globe and palm-leaf manuscripts, a hand printing press, and sailing ships on the
+river. No real person is shown and no text is readable. It was made with vidIQ from a text prompt
+only (the tool picked GPT Image 2.6, 2048 × 1152), centre-cropped from 16:9 to 1.6:1 (102 px off
+each side) and exported to WebP. The line under the section heading says it is an original painted
+interpretation, so it is not presented as a historical image.
+
+The "Intro" badge must stay short: the phone thumbnail is 84px wide and the first badge text,
+"Introduction", overflowed it by 4px (measured at 320 to 520px). The article itself has no
+`hero_image` yet, so it uses the plain article header.
 
 The landing page does not show this card, and it is not in the 20 British ages or the five
 American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). The article is
