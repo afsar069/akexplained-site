@@ -1,7 +1,5 @@
 ---
 layout: base.njk
-hero_image: /assets/articles/indian-english-independence-era/hero.webp
-hero_class: hero-age hero-article-full
 title: Indian English Literature (1947-1980)
 description: Indian English literature from 1947 to 1980, with modern poetry, fiction and drama, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature
@@ -17,9 +15,6 @@ age: indian-english-independence-era
 period: 1947-1980
 tradition: indian
 exam_fit: [net, pgt, psc]
-article_extras: true
-eleventyExcludeFromCollections: true
-reading_time_main: true
 topics: [g-v-desani, khushwant-singh, kamala-markandaya, nayantara-sahgal, anita-desai, nirad-c-chaudhuri, nissim-ezekiel, a-k-ramanujan, kamala-das, jayanta-mahapatra, a-k-mehrotra, keki-daruwalla, r-parthasarathy, dom-moraes, gieve-patel, dilip-chitre, eunice-de-souza, girish-karnad, vijay-tendulkar, badal-sircar, asif-currimbhoy, all-about-h-hatterr, train-to-pakistan, nectar-in-a-sieve, cry-the-peacock, clear-light-of-day, in-custody, the-autobiography-of-an-unknown-indian, night-of-the-scorpion, the-patriot, a-river, an-introduction, summer-in-calcutta, hunger-mahapatra, tughlaq, hayavadana, nagamandala, silence-the-court-is-in-session, ghashiram-kotwal, evam-indrajit]
 ---
 

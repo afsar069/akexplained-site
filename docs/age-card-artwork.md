@@ -104,3 +104,70 @@ its window now shows ordinary pitched seventeenth-century rooftops.
 18. Georgian: pastoral poet beneath an apple tree.
 19. Modern: fragmented city reflections and typewriter.
 20. Postmodern: imagined library with interlocking staircases.
+
+## Indian English Literature section (owner, 23 November 2026)
+
+`/english-literature/` has a third section, "Indian English Literature"
+(`#indian-english-literature`), under the American one, with the same `.age-grid` and
+`.age-tile` markup. It holds one card per article so far, all supplied by the owner:
+
+1. The introduction, `/notes/indian-english-introduction/`
+   (`notes/indian-english-introduction/index.md`). Its title, era line ("All periods", the
+   article's own `period` value) and three names (Mahomet, Roy, Tagore, from the article's writers
+   table) come from that article.
+2. **Beginnings to 1857**, `/notes/indian-english-beginnings/`
+   (`notes/indian-english-beginnings/index.md`). The title is the article's `crumb_label`, the era
+   line is 1794 – 1857 (the article's own working boundaries, shown in its opening) and the three
+   names (Roy, Derozio, Dutt) come from its writers table.
+3. **1857 to 1920**, `/notes/indian-english-early-growth/`
+   (`notes/indian-english-early-growth/index.md`). The title is the article's `crumb_label`, the era
+   line is 1857 – 1920 (its `period` value) and the three names (Toru Dutt, Tagore, Aurobindo) are the
+   first three in the article's description.
+
+Two more period articles follow in the series; add each one's card here in order.
+
+**Card 1 painting.** `assets/age-cards/indian-english-painted.webp` (480 × 300, 40,816 bytes) and
+`indian-english-painted-240.webp` (240 × 150, 12,112 bytes). It is an imagined early
+nineteenth-century Calcutta college verandah: young students and a teacher around a low table with
+English books, a globe and palm-leaf manuscripts, a hand printing press, and sailing ships on the
+river. No real person is shown and no text is readable. It was made with vidIQ from a text prompt
+only (the tool picked GPT Image 2.6, 2048 × 1152), centre-cropped from 16:9 to 1.6:1 (102 px off
+each side) and exported to WebP.
+
+**Card 2 painting.** `assets/age-cards/indian-english-beginnings-painted.webp` (480 × 300,
+28,688 bytes) and `indian-english-beginnings-painted-240.webp` (240 × 150, 8,302 bytes). It is an
+imagined young poet writing by lamplight at a desk with English poetry volumes and palm-leaf
+manuscripts, with the Hooghly and a sailing ship at dusk in the window. One figure, at night, so
+it differs from card 1's daytime group scene. No real person is shown and no text is readable.
+Made the same way (vidIQ, GPT Image 2.6, 2048 × 1152), cropped to 1.6:1 with the window starting
+150 px from the left (55 px off the right) instead of centred, because a centred crop cut off
+the ship's stern.
+
+**Card 3 painting.** `assets/age-cards/indian-english-early-growth-painted.webp` (480 × 300,
+40,428 bytes) and `indian-english-early-growth-painted-240.webp` (240 × 150, 11,690 bytes). It is
+an imagined late nineteenth-century Bengal garden at golden hour: two young women reading on a
+bench under a tall casuarina tree with a flowering creeper (a nod to the poem *Our Casuarina
+Tree*; they are not portraits of Toru Dutt or anyone else), a white colonnaded house, and the river
+with a sailing boat at sunset. Outdoor and warm-lit, so it differs from card 1 (a daytime group
+scene) and card 2 (one figure at night). No text is readable. Made the same way (vidIQ, GPT
+Image 2.6, 2048 × 1152) and centre-cropped to 1.6:1 (102 px off each side).
+
+The line under the section heading says the card pictures are original painted
+interpretations, so they are not presented as historical images.
+
+The "Intro" badge must stay short: the phone thumbnail is 84px wide and the first badge text,
+"Introduction", overflowed it by 4px (measured at 320 to 520px). None of the three articles has a
+`hero_image` yet, so all use the plain article header.
+
+The landing page does not show this card, and it is not in the 20 British ages or the five
+American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). All three articles are
+in the home search and the sitemap.
+
+
+## Indian English Literature: 1920 to 1947 (added 23 November 2026)
+
+The fourth article card links to `/notes/indian-english-freedom-years/`. Its title and period come from the article front matter; its names are Anand, Narayan and Raja Rao. Its distinct original painted interpretation shows a 1930s Indian town, a writer with books, local readers and a woman working a spinning wheel. The scene depicts imagined people, not identifiable historical figures. Two responsive WebP files are `assets/age-cards/indian-english-freedom-years-painted.webp` (480 x 300) and `assets/age-cards/indian-english-freedom-years-painted-240.webp` (240 x 150). Both are under 200 KB. The article, card, search index and sitemap were added together.
+
+## Indian English Literature: 1947 to 1980 (added 23 November 2026)
+
+The fifth article card links to `/notes/indian-english-independence-era/`. Its names, Ezekiel, Desai and Karnad, come from the supplied article. The original painted interpretation shows an imagined 1960s Indian publishing room with writers, readers and a printing press. It portrays no identifiable person. The generated image was cropped to a 1.6:1 card and exported as `assets/age-cards/indian-english-independence-era-painted.webp` (480 x 300, 39,158 bytes) and `indian-english-independence-era-painted-240.webp` (240 x 150, 11,438 bytes). The article, card, search index and sitemap were added together.
