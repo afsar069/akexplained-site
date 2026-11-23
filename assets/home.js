@@ -291,6 +291,8 @@
       alt:'Original painted interpretation of a 1930s Indian town, with a writer, readers and a woman at a spinning wheel; no real individual is portrayed.' },
     { slug:'indian-english-independence-era', yr:'1947',  name:'1947 to 1980',              era:'1947 – 1980', who:'Ezekiel · Desai · Karnad',          article:'/notes/indian-english-independence-era/',
       alt:'Original painted interpretation of readers and writers in a 1960s Indian publishing room; no real individual is portrayed.' },
+    { slug:'indian-english-late-twentieth',   yr:'1980',  name:'1980 to 2000',              era:'1980 – 2000', who:'Rushdie · Ghosh · Seth',            article:'/notes/indian-english-late-twentieth/',
+      alt:'Original painted interpretation of readers in a 1990s Indian bookshop, with books, a typewriter and a suitcase; no real individual is portrayed.' },
   ];
 
   /* ---------- Videos: real lessons on the channel ----------
@@ -436,11 +438,15 @@
     grid.innerHTML = ageCardsHtml(americanAges);
   }
 
-  /* Indian English Literature: abhi paanch card (introduction + chaar daur), desktop par ek poori line; "+" ki zarurat nahi. */
+  /* Indian English Literature: introduction + har daur ka card, "+" ki zarurat nahi. Desktop (1000px+) par columns card ki ginti se
+     chalte hain taaki akela card na bache: chhe tak ek poori line (6 card = 6 column), usse zyada ho to do barabar line
+     (7 = 4 + 3, 8 = 4 + 4). Tablet aur phone par wahi shared grid (3 column / ek ke neeche ek). */
   function renderIndianAges() {
     const grid = document.getElementById('indianAgeGrid');
     if (!grid) return;
     grid.innerHTML = ageCardsHtml(indianAges);
+    const n = indianAges.length;
+    grid.style.setProperty('--cols', String(n <= 6 ? n : Math.ceil(n / 2)));
   }
 
   function renderAges() {

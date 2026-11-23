@@ -181,16 +181,18 @@ The sixth article card links to `/notes/indian-english-late-twentieth/`. Its nam
 `index.html` has a band "Indian English Literature by Ages" (`#indian-ages`) under the American one,
 asked for "like the American one". `assets/home.js` draws it from its own `indianAges` list with the shared
 `ageCardsHtml()`: the same `.agecard` markup and the same card files as the timeline, so no artwork is
-duplicated. The five cards copy the timeline's name, years, three writers, "Intro" or year badge, article
+duplicated. The six cards copy the timeline's name, years, three writers, "Intro" or year badge, article
 link and alt text; if a timeline card changes, change `indianAges` too. Each entry's `slug` is only the
 picture's file name (`/assets/age-cards/<slug>-painted.webp`), so the introduction card uses
 `indian-english` while its article is `indian-english-introduction`. The line under the heading, "Start
 with the introduction, then read each period in order.", repeats what the timeline section already says.
 "View complete timeline" goes to `/english-literature/#indian-english-literature`.
 
-Layout: five columns from 1000px, so the five cards fill one line; three columns on a tablet (3 + 2);
+Layout: from 1000px the number of columns follows the number of cards (`--cols`, set in
+`renderIndianAges`), so the six cards fill one line (the timeline section also shows six per line); with seven
+or more cards the grid splits into two even lines (7 = 4 + 3) so no card is left alone; three columns on a tablet (3 + 3);
 stacked cards on a phone, with the green heading bar like the British and American bands (the link and the
 line under the heading are hidden there). The band is on the page background (#FDFBF5) with a 1px top
 line, because the American band above it is the sand tint, so the three bands alternate. There is no "+"
-tab. When the next period article gets its card the grid will hold seven, which wraps 5 + 2 on a wide
-screen: check how it looks then.
+tab. When the next period article gets its card the grid will hold seven (4 + 3 on a wide screen): look at
+how it reads then.

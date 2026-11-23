@@ -291,6 +291,8 @@
 /* Indian English Literature (owner, 2026-11-23): teesra band, American ke neeche. American sand-tint hai, isliye ye wapas
    page ke background par rehta hai (British ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
 #indian-ages{border-top:1px solid var(--border)}
+/* Desktop par columns card ki ginti se (--cols, assets/home.js renderIndianAges): chhe card ek line me, saat ho to 4 + 3. */
+@media(min-width:1000px){#indianAgeGrid{grid-template-columns:repeat(var(--cols,5),1fr)}}
 
 /* Sirf phone: Ages bhi hari heading patti ke saath, har age ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
