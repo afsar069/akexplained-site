@@ -291,8 +291,36 @@
 /* Indian English Literature (owner, 2026-11-23): teesra band, American ke neeche. American sand-tint hai, isliye ye wapas
    page ke background par rehta hai (British ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
 #indian-ages{border-top:1px solid var(--border)}
-/* Desktop par columns card ki ginti se (--cols, assets/home.js renderIndianAges): chhe card ek line me, saat ho to 4 + 3. */
-@media(min-width:1000px){#indianAgeGrid{grid-template-columns:repeat(var(--cols,5),1fr)}}
+
+/* Indian English Literature slider (owner, 2026-11-23): paanch card dikhte hain, baaki side me khisakne se; gol button slide karta hai,
+   aakhir me timeline ka link ban jata hai (assets/home.js renderIndianAges). --v = ek saath kitne card dikhte hain (agegrid ke columns jaisa:
+   2 / 3 / 5). Track overflow-x:auto hai, isliye hover ka uthna aur shadow kategi nahi, iske liye padding + negative margin. */
+.slider{--v:2;--gap:14px;display:flex;align-items:center;gap:12px}
+@media(min-width:620px){.slider{--v:3}}
+@media(min-width:1000px){.slider{--v:5}}
+.slider-track{
+  flex:1 1 auto;min-width:0;display:flex;gap:var(--gap);
+  overflow-x:auto;overflow-y:hidden;padding:12px 8px 32px;margin:-12px -8px -32px;
+  scrollbar-width:none;-ms-overflow-style:none;
+}
+.slider-track::-webkit-scrollbar{display:none}
+.slider-track:focus-visible{outline:2px solid var(--gold);outline-offset:-2px;border-radius:12px}
+.slider-track .agecard{flex:0 0 calc((100% - (var(--v) - 1) * var(--gap)) / var(--v))}
+.slider-nav{flex:0 0 66px;display:flex;flex-direction:column;align-items:center;gap:7px;text-align:center}
+.slider-btn{
+  width:40px;height:40px;padding:0;border-radius:50%;
+  display:flex;align-items:center;justify-content:center;cursor:pointer;text-decoration:none;
+  background:#fff;border:1px solid var(--card-line);color:var(--teal);
+  transition:background .2s,color .2s,border-color .2s;
+}
+.slider-btn[hidden]{display:none}
+.slider-btn:hover,.slider-btn:focus-visible{background:var(--teal);border-color:var(--teal);color:#fff}
+.slider-btn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.slider-btn svg{display:block}
+.slider-prev{width:30px;height:30px}
+.slider-cap{font-size:.7rem;font-weight:600;line-height:1.2;color:var(--teal)}
+.slider-endtext{display:none}
+@media(prefers-reduced-motion:reduce){.slider-btn{transition:none}}
 
 /* Sirf phone: Ages bhi hari heading patti ke saath, har age ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
@@ -304,6 +332,19 @@
     background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
   }
   .agegrid{grid-template-columns:1fr;gap:10px}
+  /* Indian English Literature: seedhi list, sirf pehle paanch card; slide button ki jagah neeche poori timeline ka link. */
+  .slider{display:block}
+  .slider-track{display:grid;grid-template-columns:1fr;gap:10px;overflow:visible;padding:0;margin:0}
+  .slider-track .agecard{flex:none}
+  .slider-track .agecard:nth-child(n+6){display:none}
+  .slider-nav{flex:none;display:block;margin-top:12px}
+  .slider-prev,.slider-next,.slider-cap{display:none}
+  .slider-end{
+    width:100%;height:auto;padding:11px 14px;border-radius:12px;gap:8px;
+    background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600;font-size:.95rem;
+  }
+  .slider-end svg{display:none}
+  .slider-endtext{display:inline}
   .agecard{
     display:grid;grid-template-columns:42% minmax(0,1fr);column-gap:13px;align-content:center;align-items:center;
     padding:9px;border-radius:13px;
