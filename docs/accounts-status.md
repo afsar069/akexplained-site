@@ -4,7 +4,15 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-21 (the Delete-an-ended-free-pass entry below); the rest was read from the live database on 2026-11-19._
+_Last updated: 2026-11-23 (the American MCQ plan entry below); the rest was read from the live database on 2026-11-19._
+
+## American Literature MCQ plan — 2026-11-23
+- Owner asked for an American Literature section on `/quizzes/mcq/` and a set plan for American literature "like British": at least 3 sets, at most 6, normally 5, more only for a big age.
+- Done (CLAUDE.md rule 3, `quizzes/mcq` note): five American ages in `_data/mcqSpec.json` (`"tradition": "american"`), **26 planned sets, no questions yet**: Colonial and Early National 5, American Renaissance 5, Realism and Naturalism 5, American Modernism 5, **Postwar and Contemporary 6** (the biggest: 32 writers in its notes). Every writer, work and term in a set's scope line is in that age's own notes article. The owner may change any title, scope or level.
+- The page has the new **American Literature By Age** section (five cards in one line); its cards open the five hub pages (noindex, every set "Coming soon"); 52 pre-built, noindex, catalog-checked set and review pages say "This set is not open yet" until the owner uploads a set at `/admin/upload-paper/` (**English Literature — MCQ set**, pick the age) and marks it Live (rule 17; no rebuild).
+- Tested on the branch, not merged: `npx @11ty/eleventy` clean; every British page is byte-identical to before (only `assets/mcq.js`, the MCQ page and the upload page's age list changed); no new broken link; hub filters, next / previous links, "not open yet" pages and the 375px layout checked with Playwright and a mocked Supabase.
+- Open points for the owner: (1) is 6 sets right only for Postwar and Contemporary (Colonial is the next candidate); (2) when the first American set goes live, its slug moves from `SOON_HUBS` to `LIVE_AGES` in `assets/mcq.js` and its hub line goes into `sitemap.njk`; (3) the dashboard level does not count American answers yet; (4) the `/quizzes/mcq/` lede under British Literature still says "Sets of twenty-five in every age", but the sets are fifty questions (not changed, owner's text).
+- Found while testing, not caused by this work: on a phone (under 560px) the hub filters on **every** age hub, British too, change the "N of M sets" count but do not hide the other sets (`.mcq-sec-page .agehub-set{display:grid}` in `assets/site.css` beats `.agehub-set.is-hidden{display:none}`).
 
 ## Delete an ended free pass — 2026-11-21
 - Owner asked: after stopping a free pass on `/admin/payments/`, be able to delete it from "Free passes you have given". Built: a red

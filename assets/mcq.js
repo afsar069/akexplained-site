@@ -58,7 +58,15 @@
     'postmodern'
   ];
 
-  var SOON_HUBS = [];
+  var SOON_HUBS = [
+    /* American Literature (owner, 2026-11-23): the plan is built, the questions are not written yet.
+       When an age's first set goes live, take its slug out of here and add it to LIVE_AGES. */
+    'american-colonial',
+    'american-renaissance',
+    'american-realism',
+    'american-modernism',
+    'american-contemporary'
+  ];
 
   /* How many questions each age holds, once it is live.
      Used for the progress bars. Leave an age out and the card
