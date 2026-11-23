@@ -37,6 +37,11 @@ Indians soon found a public voice of their own. In December 1885 the **Indian Na
 
 In 1905 the Viceroy, Lord Curzon, divided Bengal into two parts, and this became known as the **Partition of Bengal**. Indians answered with the **swadeshi** movement, a plan to boycott British goods and to use Indian-made goods instead. In 1911 the two parts of Bengal were reunited, and the capital of British India moved to Delhi.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-early-growth/event.webp" alt="An imagined market where people choose locally woven cloth during the swadeshi movement." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined scene of the swadeshi movement after the 1905 Partition of Bengal.</figcaption>
+</figure>
+
 ### Social life
 
 Iyengar describes Bengal in the later nineteenth century as seething with literary activity of all kinds. The great Bengali novelist Bankimchandra Chatterji was then producing his novels in quick succession. He began one novel in English but did not finish it, and he wrote most of his work in his mother tongue. Iyengar says that his presence on the scene inspired other writers, and that the last quarter of the century saw a great increase in English and **vernacular** publications. A vernacular is a local language of the country, such as Bengali or Gujarati. Iyengar writes that all India seemed to have woken from a long stupor. The movement of reform and new writing in these years is known as the **Indian renaissance**.
@@ -44,6 +49,11 @@ Iyengar describes Bengal in the later nineteenth century as seething with litera
 Women of educated families took a growing share in this world. Aru and Toru Dutt learned French and English abroad, and Toru wrote a French novel as well as English verse. Their father, Gobind Chandra Dutt, also published English verse, and Iyengar calls the family a cultured one.
 
 Reform remained a public cause. Behramji Malabari wrote against the marriage of very young girls and worked to raise the "age of consent". Iyengar says his work bore fruit in the raising of the age of consent and in public attention to the plight of the Indian widow.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-early-growth/society.webp" alt="Two readers beneath a casuarina tree in an imagined Bengal garden." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined reading scene in a late nineteenth-century Bengal garden.</figcaption>
+</figure>
 
 ### Economic life
 
@@ -121,6 +131,11 @@ Sri Aurobindo was born at Calcutta on 15 August 1872 and died at Pondicherry on 
 His prose belongs to the review *Arya*, where his long essays appeared from 1914 to 1921. Several of his best-known books grew out of those pages. *The Life Divine* appeared as a book in 1939. *Essays on the Gita* came out in 1922. The other works include *The Future Poetry*, *The Synthesis of Yoga* and *The Secret of the Veda*.
 
 ### Sarojini Naidu
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-early-growth/portrait.webp" alt="Modern painted interpretation of Sarojini Naidu." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Sarojini Naidu — modern painted interpretation.</figcaption>
+</figure>
 
 Sarojini Naidu was born at Hyderabad on 13 February 1879 and died at Lucknow on 2 March 1949. Her gifts showed early, for she passed the Madras matriculation at the age of twelve. She married Dr. Naidu in spite of caste prejudice, as Iyengar notes.
 

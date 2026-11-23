@@ -37,6 +37,11 @@ Iyengar describes how the traders became rulers. The English reached India while
 
 The Company's own role changed more slowly. From 1834 it acted as a managing agency for the British government in India. After the revolt of 1857, which British writers called the Mutiny, it lost even that role.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-introduction/society.webp" alt="An imagined Indian riverside town with readers, merchants and a printing shop." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined riverside town as trade and printing grew in India.</figcaption>
+</figure>
+
 ### The first scholars and the first newspaper
 
 Education was not at first a concern of the Company. Iyengar writes that the early British administrators, even when they meant well, had no spontaneous interest in Hindu culture and Oriental learning. Warren Hastings founded the Calcutta Madrassa, a school of Islamic learning, in 1781. A year earlier, in 1780, James Augustus Hicky had started *Hicky's Bengal Gazette* at Calcutta. Iyengar calls it India's first newspaper.
@@ -56,6 +61,11 @@ The missionaries mattered too. Their final aim was to convert Indians to Christi
 ### The decision on English education
 
 The third force was a **Minute**, an official written note, by Macaulay. It argued that it was necessary and possible "to make natives of this country good English scholars". Lord William Bentinck, the **Governor-General**, who was the highest British official in India, read the Minute and hesitated no longer. On 7 March 1835 the Governor-General in Council passed a resolution. It said that the great object of the British Government should be the promotion of European literature and science among the people of India. It also said that all funds for education would be best spent on English education alone.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/indian-english-introduction/event.webp" alt="An imagined discussion among Indian and British educators about English education in 1835." width="1440" height="810" loading="lazy" decoding="async">
+  <figcaption>An imagined discussion of the English education policy adopted in 1835.</figcaption>
+</figure>
 
 Iyengar stresses the last words. The plan was not to teach the masses in English. Government would run secondary schools and colleges with the funds it had. The young men who left them were expected to join government service as clerks, or to go back to their villages and pass the new learning on. In this way the new culture would filter down from the educated classes to the villages.
 
@@ -93,6 +103,11 @@ Later historians chose other words. Iyengar's larger history is titled *Indian W
 ### Who counts as a writer
 
 Iyengar's rule was simple. A writer belongs to the subject when an Indian uses English as the medium of artistic expression. The rule raised hard cases, and Iyengar discussed two of them in his preface.
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/indian-english-introduction/portrait.webp" alt="Modern painted interpretation of Rabindranath Tagore." width="768" height="960" loading="lazy" decoding="async">
+  <figcaption>Rabindranath Tagore — modern painted interpretation.</figcaption>
+</figure>
 
 The first was Rabindranath Tagore, a classic of Bengali literature who also has a place in English. Iyengar notes that Tagore wrote works such as *Sadhana* and *Personality*, and even a poem, "The Child", in English alone in the first instance. Several other works were first written in Bengali and then put into English by Tagore himself, or under his supervision. Iyengar chose to accept Tagore's first rank among Bengali writers and also to assess his importance for Indian English writing.
 
