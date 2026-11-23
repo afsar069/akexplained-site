@@ -104,3 +104,24 @@ its window now shows ordinary pitched seventeenth-century rooftops.
 18. Georgian: pastoral poet beneath an apple tree.
 19. Modern: fragmented city reflections and typewriter.
 20. Postmodern: imagined library with interlocking staircases.
+
+## Indian English Literature section (owner, 23 November 2026)
+
+`/english-literature/` has a third section, "Indian English Literature"
+(`#indian-english-literature`), under the American one, with the same `.age-grid` and
+`.age-tile` markup. For now it holds one card for the introduction article
+`/notes/indian-english-introduction/` (`notes/indian-english-introduction/index.md`, supplied
+by the owner). The card title, era line ("All periods", the article's own `period` value) and the
+three names (Mahomet, Roy, Tagore, from the article's writers table) come from that article.
+
+**There is no painted card art for it yet.** The thumbnail is an empty panel (the tile CSS gives
+`.thumb` a soft teal background) with a short "Intro" badge. The badge must stay short: the
+phone thumbnail is 84px wide and "Introduction" overflowed it by 4px (measured at 320 to 520px).
+To add art, create `assets/age-cards/indian-english-painted.webp` (480 × 300, 200 KB or less) and
+`indian-english-painted-240.webp` (240 × 150), then put the same `<img>` (with `srcset`, `sizes`,
+alt text, width, height, `loading="lazy"`) inside `.thumb` as the American cards do. The
+article itself has no `hero_image` yet, so it uses the plain article header.
+
+The landing page does not show this card, and it is not in the 20 British ages or the five
+American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). The article is
+in the home search and the sitemap.
