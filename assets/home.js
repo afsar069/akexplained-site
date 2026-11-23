@@ -274,27 +274,6 @@
       alt:'Painted interpretation of readers in a modern American public library.' },
   ];
 
-  /* ---------- Indian English Literature (owner, 2026-11-23) ----------
-     Landing page par American ke neeche ek aur band, usi card-markup me. Har card /english-literature/#indian-english-literature
-     wale card se haath-ba-haath mel khata hai (naam, saal, writers, alt text) — badlne hon to dono jagah.
-     Card ke shabd har article se aate hain. `slug` yahan sirf tasveer ka naam hai: /assets/age-cards/<slug>-painted.webp
-     (pehle card ka article slug indian-english-introduction hai, par uski tasveer indian-english-painted hai).
-     Ye 20 British ya paanch American ages me nahi ginti. Series ke baaki articles aate hi unka card yahin aur timeline par jodein. */
-  const indianAges = [
-    { slug:'indian-english',                  yr:'Intro', name:'Indian English Literature', era:'All periods', who:'Mahomet · Roy · Tagore',            article:'/notes/indian-english-introduction/',
-      alt:'Painted interpretation of young students and a teacher with books, a globe and a printing press on a Calcutta verandah beside a river with sailing ships.' },
-    { slug:'indian-english-beginnings',       yr:'1794',  name:'Beginnings to 1857',        era:'1794 – 1857', who:'Roy · Derozio · Dutt',              article:'/notes/indian-english-beginnings/',
-      alt:'Painted interpretation of a young poet writing by lamplight at a desk with books and manuscripts, with a river and a sailing ship at dusk beyond the window.' },
-    { slug:'indian-english-early-growth',     yr:'1857',  name:'1857 to 1920',              era:'1857 – 1920', who:'Toru Dutt · Tagore · Aurobindo',    article:'/notes/indian-english-early-growth/',
-      alt:'Painted interpretation of two young women reading under a tall casuarina tree in a Bengal garden, with a river and a sailing boat at sunset.' },
-    { slug:'indian-english-freedom-years',    yr:'1920',  name:'1920 to 1947',              era:'1920 – 1947', who:'Anand · Narayan · Raja Rao',        article:'/notes/indian-english-freedom-years/',
-      alt:'Original painted interpretation of a 1930s Indian town, with a writer, readers and a woman at a spinning wheel; no real individual is portrayed.' },
-    { slug:'indian-english-independence-era', yr:'1947',  name:'1947 to 1980',              era:'1947 – 1980', who:'Ezekiel · Desai · Karnad',          article:'/notes/indian-english-independence-era/',
-      alt:'Original painted interpretation of readers and writers in a 1960s Indian publishing room; no real individual is portrayed.' },
-    { slug:'indian-english-late-twentieth',   yr:'1980',  name:'1980 to 2000',              era:'1980 – 2000', who:'Rushdie · Ghosh · Seth',            article:'/notes/indian-english-late-twentieth/',
-      alt:'Original painted interpretation of readers in a 1990s Indian bookshop, with books, a typewriter and a suitcase; no real individual is portrayed.' },
-  ];
-
   /* ---------- Videos: real lessons on the channel ----------
      `title` khaali hai to card par "Watch on YouTube" dikhta hai.
      Asli title likh dene par wahi dikhne lagega. */
@@ -439,21 +418,21 @@
   }
 
   /* Indian English Literature (owner, 2026-11-23): paanch card dikhte hain, baaki (abhi chhatha) slide button se khulte hain.
+     Card seedha index.html me hain (yahan se nahi bante: purani cached home.js ke saath band khali dikha tha), yahan sirf slide button chalta hai.
      Track ek seedhi line hai jo side me scroll hoti hai (touch, trackpad aur keyboard bhi chalte hain). Gol button:
-       - abhi card baaki hain: "slide" -> track aage khisakta hai (ek baar me utne card jitne dikh rahe hain);
+       - abhi card baaki hain: "slide" -> track aage khisakta hai (ek baar me utne card jitne dikh rahe hain; aakhir me clamp hota hai,
+         isliye 6 card par ek hi card khisakta hai: line me paanch hi rehte hain, pehla chhup jata hai aur chhatha aa jata hai);
        - aakhri card dikh gaya (ya sab card pehle se dikh rahe hain): wahi button /english-literature/ ka link ban jata hai.
      Peeche jane ke liye chhota "<" button tabhi dikhta hai jab track aage khisak chuka ho. Phone par track seedhi list hai
-     (CSS sirf pehle paanch card dikhati hai), isliye wahan sirf neeche timeline ka link dikhta hai. */
-  function renderIndianAges() {
+     (CSS sirf pehle paanch card dikhati hai), isliye wahan sirf neeche timeline ka link dikhta hai.
+     JavaScript na chale to bhi card dikhte hain (aur side me scroll hote hain) aur timeline ka link kaam karta hai. */
+  function setupIndianSlider() {
     const track = document.getElementById('indianTrack');
-    if (!track) return;
-    track.innerHTML = ageCardsHtml(indianAges);
-
     const prev = document.getElementById('indianPrev');
     const next = document.getElementById('indianNext');
     const end = document.getElementById('indianEnd');
     const cap = document.getElementById('indianCap');
-    if (!prev || !next || !end) return;
+    if (!track || !prev || !next || !end) return;
 
     function update() {
       const max = track.scrollWidth - track.clientWidth;
@@ -480,6 +459,7 @@
     prev.addEventListener('click', function () { moveBy(-1); });
     track.addEventListener('scroll', update, { passive: true });
     window.addEventListener('resize', update);
+    window.addEventListener('load', update);                  // tasveerein aane ke baad bhi ek baar dekho
     update();
   }
 
@@ -693,7 +673,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     renderAges();
     renderAmericanAges();
-    renderIndianAges();
+    setupIndianSlider();
     renderVideos();
     loadReviews().then(renderReviews);
     renderBirthday();

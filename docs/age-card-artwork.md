@@ -179,12 +179,13 @@ The sixth article card links to `/notes/indian-english-late-twentieth/`. Its nam
 ## Indian English Literature on the landing page (owner, 23 November 2026)
 
 `index.html` has a band "Indian English Literature by Ages" (`#indian-ages`) under the American one,
-asked for "like the American one". `assets/home.js` draws it from its own `indianAges` list with the shared
-`ageCardsHtml()`: the same `.agecard` markup and the same card files as the timeline, so no artwork is
+asked for "like the American one". Unlike the British and American bands, its cards are **plain HTML in
+`index.html`** (not drawn by `assets/home.js`): the first version drew them from a list in `home.js`, and the
+owner's screenshot of 23 November 2026 showed the band with no cards when an older `home.js` ran against the
+new HTML. The same `.agecard` markup and the same card files as the timeline are used, so no artwork is
 duplicated. The six cards copy the timeline's name, years, three writers, "Intro" or year badge, article
-link and alt text; if a timeline card changes, change `indianAges` too. Each entry's `slug` is only the
-picture's file name (`/assets/age-cards/<slug>-painted.webp`), so the introduction card uses
-`indian-english` while its article is `indian-english-introduction`. The line under the heading, "Start
+link and alt text; if a timeline card changes, change the card in `index.html` too. The introduction card's
+picture is `indian-english-painted.webp` while its article is `indian-english-introduction`. The line under the heading, "Start
 with the introduction, then read each period in order.", repeats what the timeline section already says.
 "View complete timeline" goes to `/english-literature/#indian-english-literature`.
 
@@ -198,5 +199,5 @@ band is a plain list of the first five cards with a full-width "Read the full ti
 card is only on the timeline page there. Touch swipe, trackpad and keyboard also move the row. The track
 has padding and a negative margin so the card's hover lift and shadow are not cut off. The band is on the page
 background (#FDFBF5) with a 1px top line, because the American band above it is the sand tint, so the three
-bands alternate. When another period article gets its card, add it to `indianAges` and to the timeline
-section; the slider needs no other change.
+bands alternate. When another period article gets its card, add it to the track in `index.html` and to the
+timeline section; the slider needs no other change.
