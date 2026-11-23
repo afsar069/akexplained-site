@@ -171,3 +171,8 @@ The fourth article card links to `/notes/indian-english-freedom-years/`. Its tit
 ## Indian English Literature: 1947 to 1980 (added 23 November 2026)
 
 The fifth article card links to `/notes/indian-english-independence-era/`. Its names, Ezekiel, Desai and Karnad, come from the supplied article. The original painted interpretation shows an imagined 1960s Indian publishing room with writers, readers and a printing press. It portrays no identifiable person. The generated image was cropped to a 1.6:1 card and exported as `assets/age-cards/indian-english-independence-era-painted.webp` (480 x 300, 39,158 bytes) and `indian-english-independence-era-painted-240.webp` (240 x 150, 11,438 bytes). The article, card, search index and sitemap were added together.
+
+
+## Indian English Literature: 1980 to 2000 (added 23 November 2026)
+
+The sixth article card links to `/notes/indian-english-late-twentieth/`. Its names, Rushdie, Ghosh and Seth, come from the supplied article. The original generated painting depicts an imagined 1990s Indian bookshop with readers, a typewriter and a suitcase suggesting migration. It portrays no identifiable person. The responsive WebP files are `assets/age-cards/indian-english-late-twentieth-painted.webp` (480 x 300, 48,296 bytes) and `indian-english-late-twentieth-painted-240.webp` (240 x 150, 14,354 bytes). The supplied article text is unchanged. The card, homepage search and sitemap were added together.
