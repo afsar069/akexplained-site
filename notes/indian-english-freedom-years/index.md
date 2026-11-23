@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-freedom-years/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of R. K. Narayan and the freedom years."
 title: Indian English Literature (1920-1947)
 description: Indian English literature from 1920 to 1947, with Anand, Narayan, Raja Rao and freedom-era prose, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature

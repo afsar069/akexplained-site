@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-late-twentieth/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of Salman Rushdie and Indian fiction from 1980 to 2000."
 title: Indian English Literature (1980-2000)
 description: Indian English literature from 1980 to 2000, exploring novels, history and identity, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature

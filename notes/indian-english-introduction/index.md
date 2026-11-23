@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-introduction/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of Rabindranath Tagore and Indian literary history."
 title: "Indian English Literature: An Introduction"
 description: A simple guide to Indian English literature, its background, names and language debate, and the series plan, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature
