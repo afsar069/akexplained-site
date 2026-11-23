@@ -124,7 +124,7 @@ its window now shows ordinary pitched seventeenth-century rooftops.
    line is 1857 – 1920 (its `period` value) and the three names (Toru Dutt, Tagore, Aurobindo) are the
    first three in the article's description.
 
-Four more period articles follow in the series; add each one's card here in order.
+Two more period articles follow in the series; add each one's card here in order.
 
 **Card 1 painting.** `assets/age-cards/indian-english-painted.webp` (480 × 300, 40,816 bytes) and
 `indian-english-painted-240.webp` (240 × 150, 12,112 bytes). It is an imagined early
@@ -167,3 +167,7 @@ in the home search and the sitemap.
 ## Indian English Literature: 1920 to 1947 (added 23 November 2026)
 
 The fourth article card links to `/notes/indian-english-freedom-years/`. Its title and period come from the article front matter; its names are Anand, Narayan and Raja Rao. Its distinct original painted interpretation shows a 1930s Indian town, a writer with books, local readers and a woman working a spinning wheel. The scene depicts imagined people, not identifiable historical figures. Two responsive WebP files are `assets/age-cards/indian-english-freedom-years-painted.webp` (480 x 300) and `assets/age-cards/indian-english-freedom-years-painted-240.webp` (240 x 150). Both are under 200 KB. The article, card, search index and sitemap were added together.
+
+## Indian English Literature: 1947 to 1980 (added 23 November 2026)
+
+The fifth article card links to `/notes/indian-english-independence-era/`. Its names, Ezekiel, Desai and Karnad, come from the supplied article. The original painted interpretation shows an imagined 1960s Indian publishing room with writers, readers and a printing press. It portrays no identifiable person. The generated image was cropped to a 1.6:1 card and exported as `assets/age-cards/indian-english-independence-era-painted.webp` (480 x 300, 39,158 bytes) and `indian-english-independence-era-painted-240.webp` (240 x 150, 11,438 bytes). The article, card, search index and sitemap were added together.

@@ -207,6 +207,7 @@
     ['Note', '#4A5A6A', 'Early Indian English Literature (Beginnings to 1857)', '/notes/indian-english-beginnings/'],
     ['Note', '#4A5A6A', 'Indian English Literature (1857-1920)', '/notes/indian-english-early-growth/'],
     ['Note', '#4A5A6A', 'Indian English Literature (1920-1947)', '/notes/indian-english-freedom-years/'],
+    ['Note', '#4A5A6A', 'Indian English Literature (1947-1980)', '/notes/indian-english-independence-era/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
