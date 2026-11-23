@@ -70,8 +70,11 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   does (rule 17): the owner uploads it at `/admin/upload-paper/` (**American Literature — MCQ set**, then the age; owner, 2026-11-23: it is its own destination beside **British Literature — MCQ set** (the old "English Literature — MCQ set"), each showing only its own series' ages, and both make the id `<age>-set-N` with no exam) and marks it Live, with no
   rebuild; the hub row flips at view time. `/quizzes/mcq/` has an **American Literature By Age** section (`#american-literature`, five cards in
   one line, same card markup and the timeline's painted pictures), under **British Literature By Age** (that heading used to read "Practise By
-  Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **When an age's first set
-  goes live, move its slug from `SOON_HUBS` to `LIVE_AGES` there** (step 5 of rule 7) and add its hub line to `sitemap.njk`. Not done on purpose:
+  Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **An age's card opens by itself
+  (owner, 2026-11-23)**: `assets/mcq.js` `catalogAges()` reads the live `paper_catalog` at view time and, when it holds a Live set `<age>-set-<n>` of a `SOON_HUBS` age, turns that card into a
+  ready card ("Ready when you are", then the reader's own progress) with no rebuild; a failed read leaves "Questions coming soon". So an American set uploaded and marked Live needs no change in
+  `assets/mcq.js`. What still waits for a rebuild (needs Claude, step 5 of rule 7 and the registry): the hub's own noindex flag and its `sitemap.njk` line, and the hub's **Build your own test**
+  row with its `build/` and `custom/` pages, which exist only for an age with a set marked `"live": true` in `_data/mcqSpec.json` (a British age has them from its free sets). Not done on purpose:
   American answers are not in the British level pool (the dashboard has no American level yet), and `validate_mcq.py` only warns "age is not in the
   known list" for an American file (it has no American slugs; the upload page does not run it).
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).

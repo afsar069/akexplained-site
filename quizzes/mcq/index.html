@@ -360,8 +360,9 @@
   <!-- ====== AMERICAN LITERATURE BY AGE (owner, 2026-11-23) ======
        Five cards in one line, under the British ages. The plan of each age (five sets, six for the
        biggest) is in _data/mcqSpec.json, and each hub page is built from it. The cards stay
-       "Questions coming soon" and link to their hub through SOON_HUBS in assets/mcq.js; when an age's
-       first set goes live, move its slug to LIVE_AGES there (CLAUDE.md rule 7, step 5). -->
+       "Questions coming soon" and link to their hub through SOON_HUBS in assets/mcq.js. When an age's first
+       set is marked Live on /admin/papers/, assets/mcq.js turns its card into a ready card by itself, with
+       no rebuild (it reads the live paper_catalog, CLAUDE.md rule 17). -->
   <section class="mcq-sec" id="american-literature">
     <div class="sechead">
       <h2>American Literature By Age</h2>

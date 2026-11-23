@@ -26,12 +26,13 @@
   /* ---------------------------------------------------------
      1. WHICH AGES ARE READY
      LIVE_AGES: ages with questions. The card links to the hub and
-     shows progress. Add a slug here the day its first set goes live
-     (and take it out of SOON_HUBS).
+     shows progress. A British age is listed here by hand.
 
      SOON_HUBS: ages whose hub page is open (notes and a "questions
      are being written" note) but with no questions yet. The card
-     links to the hub and keeps saying "Questions coming soon".
+     links to the hub and says "Questions coming soon" until the live
+     paper_catalog holds a Live set of that age; then it turns into a
+     normal ready card with no rebuild (catalogAges).
 
      An age in neither list is not clickable.
      --------------------------------------------------------- */
@@ -60,7 +61,9 @@
 
   var SOON_HUBS = [
     /* American Literature (owner, 2026-11-23): the plan is built, the questions are not written yet.
-       When an age's first set goes live, take its slug out of here and add it to LIVE_AGES. */
+       A card here opens by itself (catalogAges, below) once the live paper_catalog holds a set of that age, so
+       an American set uploaded and marked Live needs no change in this file. Moving a slug to LIVE_AGES is
+       only for an age that should always show as ready, whatever the catalog says. */
     'american-colonial',
     'american-renaissance',
     'american-realism',
@@ -74,6 +77,13 @@
   var TOTALS = {
     // 'romantic-age': 150
   };
+
+  /* SOON_HUBS ages that already have a live set in the live paper_catalog (filled by catalogAges() below).
+     An American age moves from "Questions coming soon" to ready by itself the moment its first set is
+     marked Live on /admin/papers/, with no rebuild (CLAUDE.md rule 17), so nobody has to move its slug
+     into LIVE_AGES by hand. */
+  var catalogLive = {};
+  var lastAttempts = [];
 
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) {
@@ -150,6 +160,40 @@
     return 0;
   }
 
+  /* auth.js builds the Supabase client on every page (a guest gets one too). Wait up to about 3 seconds. */
+  function whenAuth() {
+    return new Promise(function (resolve) {
+      var tries = 0;
+      (function check() {
+        if (window.akAuth) return resolve(window.akAuth);
+        if (tries++ > 100) return resolve(null);
+        setTimeout(check, 30);
+      })();
+    });
+  }
+
+  /* Ask the live paper_catalog which literature MCQ sets are Live, and mark every SOON_HUBS age that has
+     at least one (a set id is <age>-set-<n>) as ready. status = 'live' is asked for here because an admin can
+     read drafts too, and a Draft must not open a card. If the read fails nothing changes: the card simply
+     keeps saying "Questions coming soon". */
+  function catalogAges() {
+    if (!SOON_HUBS.length) return;
+    whenAuth().then(function (a) {
+      if (!a || !a.configured || !a.client) return;
+      a.client.from('paper_catalog').select('set_id').eq('kind', 'mcq-set').eq('status', 'live').is('exam_id', null)
+        .then(function (res) {
+          if (res.error || !Array.isArray(res.data)) return;
+          var changed = false;
+          SOON_HUBS.forEach(function (slug) {
+            var re = new RegExp('^' + slug + '-set-\\d+$');
+            var has = res.data.some(function (r) { return r && re.test(String(r.set_id || '')); });
+            if (has && !catalogLive[slug]) { catalogLive[slug] = true; changed = true; }
+          });
+          if (changed) { try { paintAges(lastAttempts); } catch (e) {} }
+        }, function () {});
+    });
+  }
+
   /* ---------------------------------------------------------
      2. AGE CARDS
      --------------------------------------------------------- */
@@ -168,8 +212,9 @@
       var slug = card.getAttribute('data-age');
       var state = $('.mcq-state', card);
       var fill = $('.mcq-bar i', card);
-      var live = LIVE_AGES.indexOf(slug) > -1;
-      var soon = SOON_HUBS.indexOf(slug) > -1;
+      var live = LIVE_AGES.indexOf(slug) > -1 || !!catalogLive[slug];
+      var soon = !live && SOON_HUBS.indexOf(slug) > -1;
+      if (live) card.classList.remove('is-soon');
 
       /* The markup carries no href, so an age with no page yet is
          never a link, even with this script blocked. A live age, or one
@@ -354,9 +399,11 @@
   function start() {
     var attempts = [];
     try { attempts = readAttempts(); } catch (e) { attempts = []; }
+    lastAttempts = attempts;
     try { paintAges(attempts); } catch (e) {}
     try { paintResume(attempts); } catch (e) {}
     try { wireExams(); } catch (e) {}
+    try { catalogAges(); } catch (e) {}
   }
 
   if (document.readyState === 'loading') {
