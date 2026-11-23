@@ -204,6 +204,7 @@
     ['Note', '#4A5A6A', 'The Modern Age — full notes', '/notes/modern-age/'],
     ['Note', '#4A5A6A', 'Contemporary English Literature — full notes', '/notes/contemporary-age/'],
     ['Note', '#4A5A6A', 'Indian English Literature: An Introduction', '/notes/indian-english-introduction/'],
+    ['Note', '#4A5A6A', 'Early Indian English Literature (Beginnings to 1857)', '/notes/indian-english-beginnings/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
