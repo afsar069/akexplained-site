@@ -104,3 +104,29 @@ its window now shows ordinary pitched seventeenth-century rooftops.
 18. Georgian: pastoral poet beneath an apple tree.
 19. Modern: fragmented city reflections and typewriter.
 20. Postmodern: imagined library with interlocking staircases.
+
+## Indian English Literature section (owner, 23 November 2026)
+
+`/english-literature/` has a third section, "Indian English Literature"
+(`#indian-english-literature`), under the American one, with the same `.age-grid` and
+`.age-tile` markup. For now it holds one card for the introduction article
+`/notes/indian-english-introduction/` (`notes/indian-english-introduction/index.md`, supplied
+by the owner). The card title, era line ("All periods", the article's own `period` value) and the
+three names (Mahomet, Roy, Tagore, from the article's writers table) come from that article.
+
+The painting is `assets/age-cards/indian-english-painted.webp` (480 × 300, 40,816 bytes) and
+`indian-english-painted-240.webp` (240 × 150, 12,112 bytes). It is an imagined early
+nineteenth-century Calcutta college verandah: young students and a teacher around a low table with
+English books, a globe and palm-leaf manuscripts, a hand printing press, and sailing ships on the
+river. No real person is shown and no text is readable. It was made with vidIQ from a text prompt
+only (the tool picked GPT Image 2.6, 2048 × 1152), centre-cropped from 16:9 to 1.6:1 (102 px off
+each side) and exported to WebP. The line under the section heading says it is an original painted
+interpretation, so it is not presented as a historical image.
+
+The "Intro" badge must stay short: the phone thumbnail is 84px wide and the first badge text,
+"Introduction", overflowed it by 4px (measured at 320 to 520px). The article itself has no
+`hero_image` yet, so it uses the plain article header.
+
+The landing page does not show this card, and it is not in the 20 British ages or the five
+American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). The article is
+in the home search and the sitemap.
