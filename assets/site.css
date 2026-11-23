@@ -4104,7 +4104,7 @@ a.exam-cat:hover .exam-cat-go{background:var(--teal-dark)}
   .pass-cmp,.pass-cmp tbody,.pass-cmp tr,.pass-cmp th,.pass-cmp td{display:block;width:auto}
   .pass-cmp tr{background:#fff;border:1px solid var(--card-line);border-radius:10px;margin:0 0 8px;overflow:hidden}
   .pass-cmp tbody th{width:auto;border-bottom:1px solid var(--card-line);background:var(--card-paper)}
-  .pass-cmp td{border-bottom:0;padding:8px 14px}
+  .pass-cmp td{border-bottom:0;padding:8px 14px;display:flow-root}   /* flow-root: the floated label stays inside its cell when the text fills the line */
   .pass-cmp td::after{content:attr(data-label);float:right;font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;color:var(--body);margin-left:10px}
   .pass-cmp td:last-child::after{color:var(--teal-dark);font-weight:700}
 }

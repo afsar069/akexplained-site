@@ -31,12 +31,30 @@ module.exports = function () {
   const netQ = net.reduce(function (n, p) { return n + (p.count || 0); }, 0);
   const netYears = Array.from(new Set(net.map(function (p) { return p.year; }))).sort();
 
+  // UP PGT English previous-year papers (free public files, rule 23): _data/pgtPyqPapers.js reads the question files.
+  const pgtPyq = require("./pgtPyqPapers.js")();
+  const pgtPyqQ = pgtPyq.reduce(function (n, p) { return n + p.count; }, 0);
+  const pgtPyqYears = Array.from(new Set(pgtPyq.map(function (p) { return p.year; }))).sort();
+
+  // UP Assistant Professor English PYQ 2026 (free Quick Quiz file, rule 3): counted only while its card is live.
+  // The question range ("31 to 120") is read from the ids, upap26-q031 ... upap26-q120, so it is never typed by hand.
+  const apCard = require("./statePscResources.json").filter(function (r) { return r.slug === "english-pyq-2026" && r.live; });
+  let apPyq = { count: 0, questions: "0", from: 0, to: 0 };
+  if (apCard.length) {
+    const qs = JSON.parse(fs.readFileSync(path.join(root, "assets", "questions", "up-ap-english-2026.json"), "utf8")).questions;
+    const nums = qs.map(function (q) { return parseInt(String(q.id).replace(/^.*q0*/, ""), 10); }).filter(function (n) { return !isNaN(n); });
+    apPyq = { count: 1, questions: qs.length, from: Math.min.apply(null, nums), to: Math.max.apply(null, nums) };
+  }
+
   const c = function (n) { return Number(n).toLocaleString("en-US"); };   // 2000 -> "2,000"
+  apPyq.questions = c(apPyq.questions);
   return {
     daily: { ages: dailyAges, questions: c(dailyQ) },
     sets: { count: sets.length, questions: c(setsQ), ages: setsAges },
     pgtMock: { count: pgtFree.length, questions: c(pgtFreeQ) },
     pgtDays: { count: days.length, questions: c(daysQ) },
+    pgtPyq: { count: pgtPyq.length, questions: c(pgtPyqQ), years: pgtPyqYears.join(", ") },
+    apPyq: apPyq,
     netPyq: { count: net.length, questions: c(netQ), years: netYears.join(", ") }
   };
 };

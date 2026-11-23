@@ -4,7 +4,13 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-23 (the American MCQ plan entry below); the rest was read from the live database on 2026-11-19._
+_Last updated: 2026-11-23 (the pass page entry and the American MCQ plan entry below); the rest was read from the live database on 2026-11-19._
+
+## Pass page numbers brought up to date — 2026-11-23
+- Owner asked that `/pass/` show every newly added MCQ, PYQ and mock test with its current number. The **paid** numbers (cards, hero strip and the "plus N paid ..." words) were already read live from `paper_catalog` and need no edit; read from the live database on 2026-11-23 they are: 17 English Literature sets / 1,650 questions, 15 UP PGT mock tests / 1,350, 14 UP PGT MCQ days / 700, 8 UP AP Paper 2 mock tests / 800, 30 UGC NET PYQs / 2,321 (84 papers, 6,821 questions, 5 series). The older "snapshot" lines further down (4 MCQ days, 4 NET PYQs) are out of date.
+- The **free** side is built from the site's own files and was missing two newer free items. Added to `_data/passFree.js` and to the "side by side" table: **UP PGT English previous-year papers** (3 papers: 2000, 2002, 2006; 292 questions) and **UP Assistant Professor English previous-year paper** (2026 paper, questions 31 to 120; 90 questions). The other free counts did not change: Daily 20 ages / 2,000; literature sets 22 / 2,200; UP PGT mock tests 5 / 450; MCQ days 10 / 500; NET 2012 papers 4 / 249.
+- A small phone fix went in with it (`assets/site.css`, `.pass-cmp td{display:flow-root}`): a table cell whose text fills the line no longer drops its "FREE" label into the next cell.
+- Tested on the branch, not merged: `npx eleventy` clean; Playwright with a mocked Supabase carrying the live rows (all paid cards, hero stats and both new rows right at 1280px and 375px, no sideways scroll, no page errors). Goes live only when the owner says "live kar do".
 
 ## American Literature MCQ plan — 2026-11-23
 - Owner asked for an American Literature section on `/quizzes/mcq/` and a set plan for American literature "like British": at least 3 sets, at most 6, normally 5, more only for a big age.
