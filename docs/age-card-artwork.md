@@ -162,3 +162,8 @@ The "Intro" badge must stay short: the phone thumbnail is 84px wide and the firs
 The landing page does not show this card, and it is not in the 20 British ages or the five
 American ones (`ages`, `americanAges` in `assets/home.js`, `_data/mcqSpec.json`). All three articles are
 in the home search and the sitemap.
+
+
+## Indian English Literature: 1920 to 1947 (added 23 November 2026)
+
+The fourth article card links to `/notes/indian-english-freedom-years/`. Its title and period come from the article front matter; its names are Anand, Narayan and Raja Rao. Its distinct original painted interpretation shows a 1930s Indian town, a writer with books, local readers and a woman working a spinning wheel. The scene depicts imagined people, not identifiable historical figures. Two responsive WebP files are `assets/age-cards/indian-english-freedom-years-painted.webp` (480 x 300) and `assets/age-cards/indian-english-freedom-years-painted-240.webp` (240 x 150). Both are under 200 KB. The article, card, search index and sitemap were added together.
