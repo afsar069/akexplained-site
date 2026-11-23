@@ -350,6 +350,7 @@ strong{color:var(--ink)}
     position:absolute;inset:0;width:100%;height:100%;
     object-position:90% center;-webkit-mask-image:none;mask-image:none;
   }
+  .hero-indian-freedom .pagehead-art{object-position:53% center}
   .hero-article-full::after{
     height:auto;bottom:0;
     background:linear-gradient(180deg,rgba(250,245,233,0) 0%,

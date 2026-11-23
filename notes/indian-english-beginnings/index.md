@@ -1,5 +1,8 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/indian-english-beginnings/hero.webp
+hero_class: hero-age hero-article-full
+hero_caption: "Header image: a modern painted interpretation of Henry Louis Vivian Derozio and the early years of Indian English writing."
 title: Early Indian English Literature (Beginnings to 1857)
 description: A simple guide to early Indian English literature up to 1857, with Dean Mahomet, Rammohan Roy, Derozio and Madhusudan Dutt, for BA, MA and UGC-NET students.
 eyebrow: Notes · Indian English Literature
