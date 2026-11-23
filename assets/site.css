@@ -4298,6 +4298,8 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
     display:grid;grid-template-columns:30px minmax(0,1fr) auto;column-gap:10px;align-items:center;
     padding:10px 12px;
   }
+  /* Filter ne jo row chhupayi (mcq-age.js is-hidden), wo phone par bhi chhupi rahe: upar ka display:grid isse upar na jaye. */
+  .mcq-sec-page .agehub-set.is-hidden{display:none}
   .mcq-sec-page .agehub-badge{width:30px;height:30px;font-size:.8rem}
   .mcq-sec-page .agehub-setbody{flex:none;order:0;min-width:0}
   .mcq-sec-page .agehub-settitle{
