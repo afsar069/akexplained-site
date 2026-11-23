@@ -67,7 +67,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   Pattern: Set 1 = the whole age (easy + medium); the next sets are one group or genre each; the early sets easy + medium, the later ones
   medium + hard; "terms and criticism" is a hub topic woven into every set, as for the Victorian age. Fifty questions at each level, as for
   the British sets. **Every set is a planned slot with no questions yet** (Coming soon, noindex hub and pages): it opens the way every planned set
-  does (rule 17): the owner uploads it at `/admin/upload-paper/` (**English Literature — MCQ set**, then the age) and marks it Live, with no
+  does (rule 17): the owner uploads it at `/admin/upload-paper/` (**American Literature — MCQ set**, then the age; owner, 2026-11-23: it is its own destination beside **British Literature — MCQ set** (the old "English Literature — MCQ set"), each showing only its own series' ages, and both make the id `<age>-set-N` with no exam) and marks it Live, with no
   rebuild; the hub row flips at view time. `/quizzes/mcq/` has an **American Literature By Age** section (`#american-literature`, five cards in
   one line, same card markup and the timeline's painted pictures), under **British Literature By Age** (that heading used to read "Practise By
   Age"); its cards link to the hubs through `SOON_HUBS` in `assets/mcq.js` and keep saying "Questions coming soon". **When an age's first set
@@ -518,7 +518,7 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   - **The owner picks the destination, and the page builds the id** (2026-11-13, "upload hi aisa ho jo galti hi na
     ho"): a **Where does it go?** step (`_data/paperDestinations.js`, which stops the build if a listed page is
     missing) with the series (UP AP Paper 2 Mock Test → `up-ap-p2-mock-test-N`, UP PGT Mock Test →
-    `up-pgt-mock-test-N`, English Literature MCQ set → `<age>-set-N`), a number, and (for the literature set) an
+    `up-pgt-mock-test-N`, British Literature MCQ set or American Literature MCQ set → `<age>-set-N`), a number, and (for a literature set) an
     age. `assets/upload-paper.js` builds the `set_id` from that and **overwrites the file's own `setId`,
     `setNumber`, `examId`, `kind` and `title`** to match — so a file made with a wrong id (as Mock Test 4 was:
     `up-ap-mock-test-4` instead of `up-ap-p2-mock-test-4`) cannot land in the wrong place. Question ids inside the

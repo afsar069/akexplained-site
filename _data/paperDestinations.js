@@ -47,7 +47,14 @@ pgtMcqDays.forEach(function (d) {
 /* UGC NET previous-year papers that are login papers (no public file, rule 18). The owner picks one by name. */
 const netLoginPapers = require("./netPyqPapers")().filter(function (p) { return p.access === "login"; });
 
-const AGES = (mcqSpec.ages || []).map(function (a) { return { slug: a.slug, name: a.name }; });
+/* The literature MCQ ages, kept in two lists because the site keeps them as two series (/quizzes/mcq/ has
+   "British Literature By Age" and "American Literature By Age"). An age in the registry that says
+   "tradition": "american" is American; every other age is British. */
+const ALL_AGES = (mcqSpec.ages || []).map(function (a) {
+  return { slug: a.slug, name: a.name, american: a.tradition === "american" };
+});
+const BRITISH_AGES = ALL_AGES.filter(function (a) { return !a.american; });
+const AMERICAN_AGES = ALL_AGES.filter(function (a) { return a.american; });
 
 const DESTINATIONS = [
   {
@@ -129,7 +136,7 @@ const DESTINATIONS = [
   },
   {
     id: "lit-mcq",
-    label: "English Literature — MCQ set",
+    label: "British Literature — MCQ set",
     examId: null,
     kind: "mcq-set",
     prefix: null,
@@ -137,7 +144,24 @@ const DESTINATIONS = [
     needsAge: true,
     autoPage: false,
     usesRegistryPlan: true,
-    ages: AGES,
+    ages: BRITISH_AGES,
+    hub: "quizzes/mcq/index.html"
+  },
+  /* American Literature MCQ sets (owner, 2026-11-23): the same upload as the British sets, with its own age
+     list. The id is <age>-set-N (american-renaissance-set-1) and there is no exam, exactly as for a British
+     set. Every American set is already planned in the registry, and its test and review pages are pre-built
+     (set-pending-*.njk), so a set marked Live opens at once with no rebuild (CLAUDE.md rule 17). */
+  {
+    id: "american-mcq",
+    label: "American Literature — MCQ set",
+    examId: null,
+    kind: "mcq-set",
+    prefix: null,
+    titleWord: "Set",
+    needsAge: true,
+    autoPage: false,
+    usesRegistryPlan: true,
+    ages: AMERICAN_AGES,
     hub: "quizzes/mcq/index.html"
   }
 ];
