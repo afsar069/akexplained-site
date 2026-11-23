@@ -203,6 +203,7 @@
     ['Note', '#4A5A6A', 'The Victorian Age \u2014 full notes', '/notes/victorian-age/'],
     ['Note', '#4A5A6A', 'The Modern Age — full notes', '/notes/modern-age/'],
     ['Note', '#4A5A6A', 'Contemporary English Literature — full notes', '/notes/contemporary-age/'],
+    ['Note', '#4A5A6A', 'Indian English Literature (1947-1980) — full notes', '/notes/ages/indian-english-independence-era/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
