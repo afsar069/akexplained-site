@@ -77,6 +77,35 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   row with its `build/` and `custom/` pages, which exist only for an age with a set marked `"live": true` in `_data/mcqSpec.json` (a British age has them from its free sets). Not done on purpose:
   American answers are not in the British level pool (the dashboard has no American level yet), and `validate_mcq.py` only warns "age is not in the
   known list" for an American file (it has no American slugs; the upload page does not run it).
+  **Indian English Literature MCQ ages** (owner, 2026-11-24: "american literature ko mcqs ke liye plan kiya hai, set wise vese hi indian english literature ko bhi karo"):
+  the same again, a third series. `_data/mcqSpec.json` holds six Indian English ages after the American ones, each with `"tradition": "indian"`, **one per notes
+  article**, the same six cards as the timeline's `#indian-english-literature`: `indian-english-introduction`, `indian-english-beginnings`, `indian-english-early-growth`,
+  `indian-english-freedom-years`, `indian-english-independence-era`, `indian-english-late-twentieth` (the slug is the article's `age:` value; `article` is the notes
+  folder itself, e.g. `indian-english-beginnings`, not `ages/...`). A name is "Indian English: " plus the article's own label ("Introduction", "Beginnings to 1857",
+  "1857 to 1920", "1920 to 1947", "1947 to 1980", "1980 to 2000"); the Introduction's years line says "All periods". **The plan** was made by Claude at the owner's
+  request from each article's own text (every writer, work, term and critic named in a set's one-line scope is in that article; nothing from outside; checked name by
+  name with a script, no word missing), so the owner may change any title, scope or level. **29 planned sets**: Introduction 3 (background to 1835; names and the language
+  debate), Beginnings 4 (five writers), 1857 to 1920 5, 1920 to 1947 5, **1947 to 1980 6** (about twenty writers across novel, poetry and drama) and **1980 to 2000 6**
+  (twelve writers). Same pattern as the American ages: Set 1 = the whole age (easy + medium); Set 2 = the world of the age (easy + medium); then one group or genre per set,
+  early ones easy + medium, later ones medium + hard; "terms and criticism" is a hub topic woven into every set; fifty questions at each level. **Every set is a planned slot with
+  no questions yet** (Coming soon, noindex hub and pages) and opens the way every planned set does (rule 17): the owner uploads it at `/admin/upload-paper/` (**Indian English
+  Literature — MCQ set**, its own destination beside the British and American ones, then the age; the id is `<age>-set-N`, no exam) and marks it Live, with no rebuild; the hub
+  row flips at view time and the age's card on `/quizzes/mcq/` opens by itself (`SOON_HUBS` in `assets/mcq.js` holds the six slugs; `catalogAges()`). `/quizzes/mcq/` has an
+  **Indian English Literature By Age** section (`#indian-english-literature`) under the American one: six cards (the timeline's painted pictures), **six in one line from 1400px,
+  three to a line from 761px**, a list on a phone (`#indian-english-literature .mcq-agegrid` rules in `assets/site.css`; the five-column grid would strand the sixth card).
+  `_data/mcqAges.js` counts "the Nth of six Indian English parts" and the next / previous links inside the series (`SERIES_WORDS`); `tools/build-syllabus.js` and
+  `tools/build_skill_zip.py` leave the series out of the British dashboard pool and the UGC NET skill (a registry entry with no `tradition`, or `"british"`, is British).
+  **When the seventh article (2000 to the present) is written:** add one registry entry in the same shape, one card in the `/quizzes/mcq/` section, its slug to `SOON_HUBS` and its period node (see Tagging below);
+  the series text counts to "seven" by itself, and its card on the timeline and the landing page is added as the timeline note says. Same as American, not done on purpose:
+  Indian English answers are not in the British level pool, and `validate_mcq.py` only warns "age is not in the known list" for such a file. **Tagging (settled 2026-11-24; owner: "if there is no node, build it"):** the master taxonomy's Indian area had only five genre `period` nodes
+  (`iwe-beginnings`, `iwe-poetry`, `iwe-fiction`, `iwe-drama`, `iwe-prose`), none for the six articles, so **six `period` nodes were added**, one per article: the id is the article's
+  `age:` slug and the name is the hub's own name (`indian-english-introduction` ... `indian-english-late-twentieth`, under `indian-writing-in-english`; migration
+  `20261124120000_add_indian_english_period_nodes.sql`, also in `taxonomy-indian.csv`, the master and the tagger skill's copy; applied to the live database and read back, 1711 to 1717 rows).
+  Nothing was moved: the five genre nodes and the writers under them stay, and PYQ files already tagged with them keep them. A question in an Indian English set takes `periodId` = its hub's
+  node (the Introduction's questions take `indian-english-introduction`); `topicId` is the writer, work or concept, and every topic id in the six articles' front matter is already in the master.
+  **When the seventh article is written, add its period node the same way** (one migration, `taxonomy-indian.csv`, the master and the tagger copy, `period-nodes.md`, then `python3 tools/build_skill_zip.py`).
+  **Owner's answers, 2026-11-24:** the Introduction stays a hub of its own (3 sets); 6 sets for both 1947 to 1980 and 1980 to 2000 is right; whether Indian English goes into the UGC NET skill zip and
+  into a dashboard level is **to be decided later** (do not add either unasked). Built and browser-tested 2026-11-24 (live row opens a card and hub rows, Draft and a failed read change nothing, "not open yet" pages, filters, 375px). Built and browser-tested 2026-11-24 (live row opens a card and hub rows, Draft and a failed read change nothing, "not open yet" pages, filters, 375px).
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); **UP PGT English is live too** (links to `/exams/pgt/up-pgt/pyqs/`, rule 23; its card, count and years are read from `_data/pgtPyqPapers.js`); TGT English is a non-link Coming soon card. Not hand-written HTML any more.
@@ -90,7 +119,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
   footer, the shared Daily artwork for existing illustrated non-article page heads, and `nav.js` into every built page
 
-The list of literary periods (20, from Old English to Postmodern; the five American MCQ ages are a separate series, see rule 3's `quizzes/mcq` note) is the same on three pages and
+The list of literary periods (20, from Old English to Postmodern; the five American and the six Indian English MCQ ages are separate series, see rule 3's `quizzes/mcq` note) is the same on three pages and
 must stay in step: `_data/mcqSpec.json` (+ the cards in `quizzes/mcq/index.html` and the slugs in
 `assets/mcq.js`), the cards in `quizzes/daily/index.html` (and its period filter, one option per age), and `ages` in `assets/home.js`.
 The timeline page `english-literature/index.html` shows the same 20 ages (one small tile each, 6 to a line on a wide screen, same names, years, writers and notes link as `ages` in `assets/home.js`), so those details must stay in step too. **The timeline and landing page share one card artwork series** (owner, 2026-11-20): original representative painted scenes, one distinct scene per age in one consistent style, in `assets/age-cards/`. Do not replace these with public-domain portraits or reuse these card files as article heroes. Each has a 480 × 300 WebP and a 240 × 150 responsive copy; keep both compressed and inspect them at card size. See `docs/age-card-artwork.md`.
@@ -355,7 +384,7 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1711 rows across 9 areas
+(`area | period | movement | writer | work | concept`). 1717 rows across 9 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
 Language/ELT, Research Methodology, World Literature). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
@@ -380,6 +409,8 @@ thomas-sackville, three-estates, samuel-butler-hudibras, ohthere-and-wulfstan, t
 came in `20261031120000_add_vorticism_gorboduc_and_other_missing_nodes.sql`. Two writers named Samuel
 Butler: `samuel-butler` is the Victorian one and is not to be touched; the author of Hudibras is
 `samuel-butler-hudibras`.
+The Indian area has five genre `period` nodes (`iwe-*`) and, since 2026-11-24, six `period` nodes with the Indian English notes articles' `age:` slugs as ids (rule 3, `quizzes/mcq` note);
+writers and works stay under the genre nodes.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.
@@ -521,7 +552,7 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
   - **The owner picks the destination, and the page builds the id** (2026-11-13, "upload hi aisa ho jo galti hi na
     ho"): a **Where does it go?** step (`_data/paperDestinations.js`, which stops the build if a listed page is
     missing) with the series (UP AP Paper 2 Mock Test → `up-ap-p2-mock-test-N`, UP PGT Mock Test →
-    `up-pgt-mock-test-N`, British Literature MCQ set or American Literature MCQ set → `<age>-set-N`), a number, and (for a literature set) an
+    `up-pgt-mock-test-N`, British, American or Indian English Literature MCQ set → `<age>-set-N`), a number, and (for a literature set) an
     age. `assets/upload-paper.js` builds the `set_id` from that and **overwrites the file's own `setId`,
     `setNumber`, `examId`, `kind` and `title`** to match — so a file made with a wrong id (as Mock Test 4 was:
     `up-ap-mock-test-4` instead of `up-ap-p2-mock-test-4`) cannot land in the wrong place. Question ids inside the

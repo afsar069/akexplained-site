@@ -68,7 +68,15 @@
     'american-renaissance',
     'american-realism',
     'american-modernism',
-    'american-contemporary'
+    'american-contemporary',
+    /* Indian English Literature (owner, 2026-11-24): planned the same way, questions not written yet. The six
+       slugs are the notes articles' own "age:" values (the Introduction and the five periods). */
+    'indian-english-introduction',
+    'indian-english-beginnings',
+    'indian-english-early-growth',
+    'indian-english-freedom-years',
+    'indian-english-independence-era',
+    'indian-english-late-twentieth'
   ];
 
   /* How many questions each age holds, once it is live.
@@ -79,9 +87,9 @@
   };
 
   /* SOON_HUBS ages that already have a live set in the live paper_catalog (filled by catalogAges() below).
-     An American age moves from "Questions coming soon" to ready by itself the moment its first set is
-     marked Live on /admin/papers/, with no rebuild (CLAUDE.md rule 17), so nobody has to move its slug
-     into LIVE_AGES by hand. */
+     An American or Indian English age moves from "Questions coming soon" to ready by itself the moment its
+     first set is marked Live on /admin/papers/, with no rebuild (CLAUDE.md rule 17), so nobody has to move
+     its slug into LIVE_AGES by hand. */
   var catalogLive = {};
   var lastAttempts = [];
 

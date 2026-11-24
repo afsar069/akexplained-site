@@ -53,7 +53,14 @@ American literature:
 `american-contemporary` (1945– ).
 
 Indian Writing in English:
-`iwe-beginnings`, `iwe-poetry`, `iwe-fiction`, `iwe-drama`, `iwe-prose`.
+`iwe-beginnings`, `iwe-poetry`, `iwe-fiction`, `iwe-drama`, `iwe-prose` (five older genre nodes; the
+writers and works sit under these, and the PYQ files already tagged with them keep them), and, since
+2026-11-24, **one period node per Indian English notes article**, the same six as the hubs on
+`/quizzes/mcq/`: `indian-english-introduction` (all periods), `indian-english-beginnings` (1794–1857),
+`indian-english-early-growth` (1857–1920), `indian-english-freedom-years` (1920–1947),
+`indian-english-independence-era` (1947–1980), `indian-english-late-twentieth` (1980–2000).
+For a question in an Indian English MCQ set (rule 3 of the site notes), `periodId` is the node of the
+hub the set belongs to, and `topicId` is the writer, work or concept as always.
 
 New Literatures (Postcolonial):
 `african-literature`, `caribbean-literature`, `canadian-literature`,

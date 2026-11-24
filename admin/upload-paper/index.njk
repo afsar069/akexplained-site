@@ -66,7 +66,7 @@ permalink: /admin/upload-paper/index.html
         <span>Which age?</span>
         <select id="upAge">
           <option value="">Choose the age&hellip;</option>
-          {#- Every age is listed here once, tagged with its series. assets/upload-paper.js keeps only the ages of the series chosen above (British or American). #}
+          {#- Every age is listed here once, tagged with its series. assets/upload-paper.js keeps only the ages of the series chosen above (British, American or Indian English). #}
           {%- for d in paperDestinations %}{% if d.needsAge %}{% for a in d.ages %}
           <option value="{{ a.slug }}" data-dest="{{ d.id }}">{{ a.name }}</option>
           {%- endfor %}{% endif %}{% endfor %}

@@ -47,14 +47,16 @@ pgtMcqDays.forEach(function (d) {
 /* UGC NET previous-year papers that are login papers (no public file, rule 18). The owner picks one by name. */
 const netLoginPapers = require("./netPyqPapers")().filter(function (p) { return p.access === "login"; });
 
-/* The literature MCQ ages, kept in two lists because the site keeps them as two series (/quizzes/mcq/ has
-   "British Literature By Age" and "American Literature By Age"). An age in the registry that says
-   "tradition": "american" is American; every other age is British. */
+/* The literature MCQ ages, kept in three lists because the site keeps them as three series (/quizzes/mcq/ has
+   "British Literature By Age", "American Literature By Age" and "Indian English Literature By Age"). An age in
+   the registry that says "tradition": "american" is American, "tradition": "indian" is Indian English; every
+   other age is British. */
 const ALL_AGES = (mcqSpec.ages || []).map(function (a) {
-  return { slug: a.slug, name: a.name, american: a.tradition === "american" };
+  return { slug: a.slug, name: a.name, american: a.tradition === "american", indian: a.tradition === "indian" };
 });
-const BRITISH_AGES = ALL_AGES.filter(function (a) { return !a.american; });
+const BRITISH_AGES = ALL_AGES.filter(function (a) { return !a.american && !a.indian; });
 const AMERICAN_AGES = ALL_AGES.filter(function (a) { return a.american; });
+const INDIAN_AGES = ALL_AGES.filter(function (a) { return a.indian; });
 
 const DESTINATIONS = [
   {
@@ -162,6 +164,23 @@ const DESTINATIONS = [
     autoPage: false,
     usesRegistryPlan: true,
     ages: AMERICAN_AGES,
+    hub: "quizzes/mcq/index.html"
+  },
+  /* Indian English Literature MCQ sets (owner, 2026-11-24): the same upload again, with its own age list (the
+     Introduction and the five period articles). The id is <age>-set-N (indian-english-freedom-years-set-1) and
+     there is no exam. Every set is already planned in the registry and its pages are pre-built, so a set
+     marked Live opens at once with no rebuild (CLAUDE.md rule 17). */
+  {
+    id: "indian-mcq",
+    label: "Indian English Literature — MCQ set",
+    examId: null,
+    kind: "mcq-set",
+    prefix: null,
+    titleWord: "Set",
+    needsAge: true,
+    autoPage: false,
+    usesRegistryPlan: true,
+    ages: INDIAN_AGES,
     hub: "quizzes/mcq/index.html"
   }
 ];
