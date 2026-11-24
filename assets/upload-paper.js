@@ -331,6 +331,42 @@
         titleInput.value = dest.titleWord + ' ' + number;
       }
       if (titleNote) titleNote.textContent = dest ? dest.titleNote : '';
+      updateReplaceNote();
+    }
+
+    /* Tell the owner, before they upload, whether a paper is already saved at this slug + level, so
+       a replace (overwrite) is never a surprise. Debounced; a stale answer (the choice moved on
+       while the read was in flight) is dropped. Owner, 2026-11-24. */
+    var replaceTimer = null;
+    function updateReplaceNote() {
+      if (!summary) return;
+      if (!client || !papers.length) { summary.textContent = ''; return; }
+      var dest = currentDest();
+      if (!dest) { summary.textContent = ''; return; }
+      var number = currentNumber();
+      var picked = chosenPaper();
+      var slug = slugFor(dest, number, ageSelect.value, picked && picked.id);
+      if (!slug || (!dest.needsPaper && !numberFits(dest, number))) { summary.textContent = ''; return; }
+      var levels = papers.map(function (p) { return p.body.level || chosenLevel(); });
+      clearTimeout(replaceTimer);
+      var mySlug = slug;
+      replaceTimer = setTimeout(function () {
+        client.from('mcq_papers').select('level, rev, status').eq('set_id', mySlug).then(function (res) {
+          var curSlug = slugFor(currentDest(), currentNumber(), ageSelect.value, (chosenPaper() || {}).id);
+          if (curSlug !== mySlug) return;   // the choice moved on: drop this answer
+          var rows = (!res.error && res.data) ? res.data : [];
+          var hit = rows.filter(function (r) { return levels.indexOf(r.level) > -1; });
+          if (!hit.length) {
+            summary.textContent = 'Nothing is saved here yet — this will be a new paper.';
+            return;
+          }
+          var hr = hit.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
+          var anyLive = hit.some(function (r) { return r.status === 'live'; });
+          summary.textContent = '⚠ A paper is already saved here (' +
+            hit.map(function (r) { return cap(r.level); }).join(' and ') + ', rev ' + hr + ', ' +
+            (anyLive ? 'Live' : 'Draft') + '). Uploading will REPLACE it with this file.';
+        }, function () { summary.textContent = ''; });
+      }, 250);
     }
 
     destSelect && destSelect.addEventListener('change', function () { refreshPreview(); });
@@ -698,26 +734,25 @@
       goButton.disabled = true;
       goButton.textContent = 'Checking…';
 
-      // Is this id already taken? If so, the file's rev must be higher to replace it.
-      // Only the SAME level counts: a new level (for example medium, when easy is already saved) may
-      // use the same rev. The database rule is the same: it only refuses a rev that goes down.
+      // Is a paper already saved here? If so, this upload REPLACES it (owner, 2026-11-24).
+      // The corrected or edited file need NOT carry a higher rev by hand: when its own rev is not
+      // above what is already saved, the next free rev is used, so the replace always goes through.
+      // The database accepts this — it refuses only a rev that goes DOWN, and it never treats the
+      // same set + level as a clash with "another paper". Only a DIFFERENT level (for example medium
+      // when easy is already saved) is added beside the old one.
       client.from('mcq_papers').select('set_id, level, rev, status, access').eq('set_id', setId).then(function (res) {
         var chosenLevels = papers.map(levelOf);
         var existing = (!res.error && res.data) ? res.data : [];
         var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-        var newRev = (fileRev >= 1) ? fileRev : highest + 1;
+        var replacing = same.length > 0;
+        // Honor a file that names a higher rev; otherwise take the next free rev above what is saved.
+        var newRev = (fileRev >= 1 && fileRev > highest) ? fileRev : highest + 1;
         // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
         // (the database refuses anything else). Once the pass is on sale, every new paper is paid
         // (owner: everything behind a login goes behind the pass; free files stay free).
         var access = (existing.some(function (r) { return r.access === 'paid'; }) ||
                       dest.access === 'paid' || passOnSale) ? 'paid' : 'login';
-        if (fileRev >= 1 && same.length && !(newRev > highest)) {
-          var lv = same.map(function (r) { return r.level; }).join(' and ');
-          goButton.disabled = false; goButton.textContent = 'Upload this paper';
-          fail(goError, setId + ' (' + lv + ') already exists at rev ' + highest + '. To replace it, raise the file\'s rev above ' + highest + '. This file is rev ' + newRev + '.');
-          return;
-        }
 
         // Build each level's row, with the id, the level, the rev and the catalog fields set from the
         // owner's choice, not from the file. Question ids inside are left exactly as supplied (frozen).
@@ -770,7 +805,10 @@
             goButton.textContent = 'Checking the site…';
             var next = allMatch
               ? Promise.all([finalChecks(ctx), similarCheck(setId)]).then(function (got) {
-                  return items.concat([{ k: 'info', t: 'Saved as ' + setId + (access === 'paid' ? ', a paid paper: students need the All Access pass to open it.' : ', a login paper: any logged-in student can open it.') }], got[1], got[0]);
+                  var head = [];
+                  if (replacing) head.push({ k: 'ok', t: 'This replaced the paper that was already saved here (rev ' + highest + ' → rev ' + newRev + '). The old questions are gone; students now get this file.' });
+                  head.push({ k: 'info', t: 'Saved as ' + setId + (access === 'paid' ? ', a paid paper: students need the All Access pass to open it.' : ', a login paper: any logged-in student can open it.') });
+                  return items.concat(head, got[1], got[0]);
                 })
               : Promise.resolve(items);
             return next.then(function (all) {
