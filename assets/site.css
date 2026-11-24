@@ -1190,6 +1190,16 @@ summary.ptbtn::-webkit-details-marker{display:none}
 /* Hub khula hai par sawal abhi nahi: progress patti ka koi matlab nahi */
 .mcq-agecard.is-soon .mcq-bar{visibility:hidden}
 
+/* Indian English Literature section (owner, 2026-11-24): six cards. The five-column grid would leave one card alone on a
+   second line, so this section has six to a line on a wide screen and three (two lines of three) on a middle one.
+   Under 761px the phone list above still rules (these two rules do not reach it). */
+@media (min-width:761px){
+  #indian-english-literature .mcq-agegrid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (min-width:1400px){
+  #indian-english-literature .mcq-agegrid{grid-template-columns:repeat(6,minmax(0,1fr))}
+}
+
 /* ---------- topic grid ---------- */
 .mcq-topicgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
 .mcq-topic{

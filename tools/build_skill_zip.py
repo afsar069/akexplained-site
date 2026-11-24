@@ -73,7 +73,7 @@ def generated():
                'questions yet. "live, free" means its files are public; "live, login" means only logged-in students read them. Use the title as',
                '`setName` and the scope to choose the set-local `topics`. The levels column is what the plan expects.\n']
     for a in spec['ages']:
-        if a.get('tradition') == 'american':   # this skill is the UGC NET one: British ages only (owner, 2026-11-23)
+        if a.get('tradition') not in (None, 'british'):   # this skill is the UGC NET one: British ages only (American: owner, 2026-11-23; Indian English follows the same rule, 2026-11-24)
             continue
         slug = a['slug']
         nt = '%s — the full notes' % a.get('notesName', '')

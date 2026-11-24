@@ -2735,6 +2735,674 @@
           "label": "Terms and criticism"
         }
       ]
+    },
+    {
+      "slug": "indian-english-introduction",
+      "name": "Indian English: Introduction",
+      "years": "All periods",
+      "article": "indian-english-introduction",
+      "notesName": "Indian English Literature: An Introduction",
+      "color": "#4A5A6A",
+      "image": "/assets/age-cards/indian-english-painted.webp",
+      "tradition": "indian",
+      "notesSub": "The introduction to the series",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole introduction",
+          "meta": "50 questions at each level &middot; the East India Company, Macaulay's Minute, Iyengar, Naik, Indo-Anglian, Dean Mahomet and Rammohan Roy",
+          "topics": [
+            "ground",
+            "names",
+            "language",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "From the Company's charter to the Minute of 1835",
+          "meta": "50 questions at each level &middot; the charter of 1600, <i>Hicky's Bengal Gazette</i>, Warren Hastings, Sir William Jones and the Asiatic Society, the Hindu College, Serampore College, Macaulay's Minute, Bentinck",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Names, the language question and the first books",
+          "meta": "50 questions at each level &middot; Anglo-Indian, Indo-Anglian, Tagore's <i>Sadhana</i>, Gandhi's <i>My Experiments with Truth</i>, applied literature, Iyengar's three complaints, Amaranatha Jha, <i>The Travels of Dean Mahomet</i>, Naik, Wadia",
+          "topics": [
+            "names",
+            "language",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: Introduction MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, the introduction. Three sets are planned, on the whole introduction, the background from the East India Company to the Minute of 1835, and the names, the language debate and the first books. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: Introduction MCQ Practice — AK Explained",
+        "ogDescription": "Practice the introduction to Indian English literature. Three sets are planned; the questions are being written.",
+        "heroSub": "All periods &middot; Three sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The world behind the subject"
+        },
+        {
+          "value": "names",
+          "label": "Names and who counts as a writer"
+        },
+        {
+          "value": "language",
+          "label": "The language question and the first books"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "indian-english-beginnings",
+      "name": "Indian English: Beginnings to 1857",
+      "years": "1794–1857",
+      "article": "indian-english-beginnings",
+      "notesName": "Early Indian English Literature (Beginnings to 1857)",
+      "color": "#6B5A2E",
+      "image": "/assets/age-cards/indian-english-beginnings-painted.webp",
+      "tradition": "indian",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Dean Mahomet, Rammohan Roy, Derozio, Kasi Prasad Ghose and Michael Madhusudan Dutt",
+          "topics": [
+            "ground",
+            "prose",
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Reform, colleges and the press",
+          "meta": "50 questions at each level &middot; Bentinck, the Sati Regulation of 1829, the Hindu College, Young Bengal, the Brahmo Samaj, the Academic Association, the Dispatch of 1854, the universities of 1857",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Early prose and the Anglo-Indian models",
+          "meta": "50 questions at each level &middot; Jones, Leyden's <i>Ode to an Indian Gold Coin</i>, Heber, <i>The Travels of Dean Mahomet</i>, Rammohan Roy's <i>The Precepts of Jesus</i>, <i>Sambad Kaumudi</i>, Michael H. Fisher's edition",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Poetry: Derozio, Kasi Prasad Ghose and Michael Madhusudan Dutt",
+          "meta": "50 questions at each level &middot; <i>The Fakeer of Jungheera</i>, Kasi Prasad Ghose's <i>The Shair and Other Poems</i>, Dutt's <i>The Captive Ladie</i> and <i>Visions of the Past</i>, <i>Meghnad Badh Kavya</i>, metrical tale, metrical romance, Byronic",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: Beginnings to 1857 MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, Beginnings to 1857. Four sets are planned, on the whole age, reform, colleges and the press, early prose and the Anglo-Indian models, and the first poets. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: Beginnings to 1857 MCQ Practice — AK Explained",
+        "ogDescription": "Practice early Indian English literature, 1794 to 1857. Four sets are planned; the questions are being written.",
+        "heroSub": "1794 to 1857 &middot; Four sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "prose",
+          "label": "Early prose and the Anglo-Indian models"
+        },
+        {
+          "value": "poetry",
+          "label": "The first poets"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "indian-english-early-growth",
+      "name": "Indian English: 1857 to 1920",
+      "years": "1857–1920",
+      "article": "indian-english-early-growth",
+      "notesName": "Indian English Literature (1857-1920)",
+      "color": "#3F6B63",
+      "image": "/assets/age-cards/indian-english-early-growth-painted.webp",
+      "tradition": "indian",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Toru Dutt, Romesh Chunder Dutt, Manmohan Ghose, Sri Aurobindo, Sarojini Naidu, Tagore and Malabari",
+          "topics": [
+            "ground",
+            "verse",
+            "voices",
+            "fiction",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Crown rule, the Congress and swadeshi",
+          "meta": "50 questions at each level &middot; the proclamation of 1858, the Indian National Congress of 1885, the Partition of Bengal, swadeshi, the Indian renaissance, Bankimchandra Chatterji, Malabari's campaigns",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Toru Dutt and narrative verse",
+          "meta": "50 questions at each level &middot; <i>A Sheaf Gleaned in French Fields</i>, <i>Ancient Ballads and Legends of Hindustan</i>, <i>Our Casuarina Tree</i>, Romesh Chunder Dutt's <i>Lays of Ancient India</i>, Ram Sharma, Pai's <i>The Angel of Misfortune</i>, Manmohan Ghose's <i>Primavera</i>, Edmund Gosse",
+          "topics": [
+            "verse",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Sri Aurobindo, Sarojini Naidu and Tagore",
+          "meta": "50 questions at each level &middot; <i>Savitri</i>, <i>The Life Divine</i>, <i>Arya</i>, <i>The Golden Threshold</i>, <i>The Bird of Time</i>, <i>The Bangle Sellers</i>, <i>Gitanjali</i>, <i>The Home and the World</i>, Yeats, the Nobel Prize of 1913",
+          "topics": [
+            "voices",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Fiction, prose and the critics",
+          "meta": "50 questions at each level &middot; Rajam Iyer's <i>Vasudeva Sastri</i>, Cornelia Sorabji's <i>Love and Life behind the Purdah</i>, Malabari's <i>The Indian Muse in English Garb</i>, Vivekananda, <i>Stray Sketches in Chakmakpore</i>, Iyengar's verdicts, Sampson, purdah",
+          "topics": [
+            "fiction",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: 1857 to 1920 MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, 1857 to 1920. Five sets are planned, on the world of the age, Toru Dutt and narrative verse, Sri Aurobindo, Sarojini Naidu and Tagore, and fiction and prose. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: 1857 to 1920 MCQ Practice — AK Explained",
+        "ogDescription": "Practice Indian English literature, 1857 to 1920. Five sets are planned; the questions are being written.",
+        "heroSub": "1857 to 1920 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "verse",
+          "label": "Toru Dutt and narrative verse"
+        },
+        {
+          "value": "voices",
+          "label": "Aurobindo, Naidu and Tagore"
+        },
+        {
+          "value": "fiction",
+          "label": "Fiction, prose and journalism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "indian-english-freedom-years",
+      "name": "Indian English: 1920 to 1947",
+      "years": "1920–1947",
+      "article": "indian-english-freedom-years",
+      "notesName": "Indian English Literature (1920-1947)",
+      "color": "#8A5A2B",
+      "image": "/assets/age-cards/indian-english-freedom-years-painted.webp",
+      "tradition": "indian",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Anand, Narayan, Raja Rao, Gandhi, Nehru, Ambedkar and Naik's Gandhian Whirlwind",
+          "topics": [
+            "ground",
+            "novel",
+            "prose",
+            "stage",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "The Gandhian Whirlwind: the freedom struggle and society",
+          "meta": "50 questions at each level &middot; Non-Cooperation, Chauri Chaura, the Salt March, Civil Disobedience, Quit India, untouchability, the Great Depression, <i>Young India</i> and <i>Harijan</i>, ahimsa and satyagraha",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Anand and Narayan: social realism and Malgudi",
+          "meta": "50 questions at each level &middot; <i>Untouchable</i>, <i>Coolie</i>, <i>Two Leaves and a Bud</i>, <i>Swami and Friends</i>, <i>The Bachelor of Arts</i>, <i>The Dark Room</i>, <i>The English Teacher</i>, <i>Malgudi Days</i>, <i>The Guide</i>",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Raja Rao, poetry and drama",
+          "meta": "50 questions at each level &middot; <i>Kanthapura</i>, <i>The Serpent and the Rope</i>, Achakka, the purana, Chattopadhyaya's <i>The Magic Tree</i>, Kailasam's <i>The Burden</i> and <i>The Purpose</i>, Meenakshi Mukherjee, Priyamvada Gopal",
+          "topics": [
+            "novel",
+            "stage",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Prose: Gandhi, Nehru and Ambedkar",
+          "meta": "50 questions at each level &middot; <i>Hind Swaraj</i>, <i>The Story of My Experiments with Truth</i>, Mahadev Desai, <i>Glimpses of World History</i>, <i>An Autobiography</i>, <i>The Discovery of India</i>, <i>Annihilation of Caste</i>",
+          "topics": [
+            "prose",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: 1920 to 1947 MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, 1920 to 1947. Five sets are planned, on the Gandhian Whirlwind, Anand and Narayan, Raja Rao with poetry and drama, and the prose of Gandhi, Nehru and Ambedkar. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: 1920 to 1947 MCQ Practice — AK Explained",
+        "ogDescription": "Practice Indian English literature, 1920 to 1947. Five sets are planned; the questions are being written.",
+        "heroSub": "1920 to 1947 &middot; Five sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "Anand, Narayan and Raja Rao"
+        },
+        {
+          "value": "prose",
+          "label": "Gandhi, Nehru and Ambedkar"
+        },
+        {
+          "value": "stage",
+          "label": "Poetry and drama"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "indian-english-independence-era",
+      "name": "Indian English: 1947 to 1980",
+      "years": "1947–1980",
+      "article": "indian-english-independence-era",
+      "notesName": "Indian English Literature (1947-1980)",
+      "color": "#4C5F8A",
+      "image": "/assets/age-cards/indian-english-independence-era-painted.webp",
+      "tradition": "indian",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Desani, Khushwant Singh, Markandaya, Anita Desai, Ezekiel, Ramanujan, Kamala Das, Karnad and Tendulkar",
+          "topics": [
+            "ground",
+            "novel",
+            "poetry",
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "Independent India and its literary world",
+          "meta": "50 questions at each level &middot; Partition, the Constitution of 1950, the States Reorganisation Act, the Emergency, the Green Revolution, Writers Workshop, Clearing House, the Sahitya Akademi",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "The novel and prose: Desani to Chaudhuri",
+          "meta": "50 questions at each level &middot; <i>All About H. Hatterr</i>, <i>Train to Pakistan</i>, <i>Nectar in a Sieve</i>, <i>Cry, the Peacock</i>, <i>Clear Light of Day</i>, Sahgal, Chaudhuri's <i>The Autobiography of an Unknown Indian</i>, psychological novel, Meenakshi Mukherjee",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Poetry: Ezekiel, Ramanujan, Das and Mahapatra",
+          "meta": "50 questions at each level &middot; <i>A Time to Change</i>, 'Night of the Scorpion', 'The Patriot', <i>The Striders</i>, 'A River', <i>Summer in Calcutta</i>, 'An Introduction', 'Hunger', confessional poetry",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Other poets and the anthologies",
+          "meta": "50 questions at each level &middot; Mehrotra's <i>Nine Enclosures</i>, Daruwalla's <i>Under Orion</i>, Parthasarathy's <i>Rough Passage</i> and <i>Ten Twentieth-Century Indian Poets</i>, Dom Moraes's <i>A Beginning</i>, 'On Killing a Tree', Chitre, Eunice de Souza's <i>Fix</i>, Bruce King",
+          "topics": [
+            "poetry",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 6,
+          "title": "Drama and translation: Karnad, Tendulkar and Sircar",
+          "meta": "50 questions at each level &middot; <i>Tughlaq</i>, <i>Hayavadana</i>, <i>Naga-Mandala</i>, <i>Silence! The Court Is in Session</i>, <i>Ghashiram Kotwal</i>, <i>Evam Indrajit</i>, Third Theatre, Currimbhoy's <i>The Doldrummers</i>",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: 1947 to 1980 MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, 1947 to 1980. Six sets are planned, on independent India and its literary world, the novel, modern poetry in two sets, and drama and translation. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: 1947 to 1980 MCQ Practice — AK Explained",
+        "ogDescription": "Practice Indian English literature, 1947 to 1980. Six sets are planned; the questions are being written.",
+        "heroSub": "1947 to 1980 &middot; Six sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "novel",
+          "label": "The novel and prose"
+        },
+        {
+          "value": "poetry",
+          "label": "Modern poetry"
+        },
+        {
+          "value": "drama",
+          "label": "Drama and translation"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
+    },
+    {
+      "slug": "indian-english-late-twentieth",
+      "name": "Indian English: 1980 to 2000",
+      "years": "1980–2000",
+      "article": "indian-english-late-twentieth",
+      "notesName": "Indian English Literature (1980-2000)",
+      "color": "#7D4A5E",
+      "image": "/assets/age-cards/indian-english-late-twentieth-painted.webp",
+      "tradition": "indian",
+      "sets": [
+        {
+          "n": 1,
+          "title": "Across the whole age",
+          "meta": "50 questions at each level &middot; Rushdie, Ghosh, Seth, Mistry, Arundhati Roy, Deshpande, Bharati Mukherjee and Dattani",
+          "topics": [
+            "ground",
+            "history",
+            "novel",
+            "women",
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 2,
+          "title": "India from 1980 to 2000 and its readers",
+          "meta": "50 questions at each level &middot; Indira Gandhi's assassination, the Mandal Commission, the reforms of 1991, the Babri Masjid, Pokhran, the diaspora, the canon, Naik and Narayan's survey",
+          "topics": [
+            "ground",
+            "terms"
+          ],
+          "levels": [
+            "easy",
+            "medium"
+          ],
+          "count": 50
+        },
+        {
+          "n": 3,
+          "title": "Rushdie and Ghosh: history, memory and borders",
+          "meta": "50 questions at each level &middot; <i>Midnight's Children</i>, <i>Shame</i>, <i>The Satanic Verses</i>, <i>The Circle of Reason</i>, <i>The Shadow Lines</i>, <i>The Hungry Tide</i>, magic realism, unreliable narrator, metafiction",
+          "topics": [
+            "history",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 4,
+          "title": "Seth, Mistry, Chandra, Chatterjee and Tharoor",
+          "meta": "50 questions at each level &middot; <i>The Golden Gate</i>, <i>A Suitable Boy</i>, <i>Such a Long Journey</i>, <i>A Fine Balance</i>, <i>Red Earth and Pouring Rain</i>, <i>English, August</i>, <i>The Great Indian Novel</i>, verse novel, intertextuality",
+          "topics": [
+            "novel",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 5,
+          "title": "Women's lives, migration and caste: Deshpande, Kapur, Mukherjee and Roy",
+          "meta": "50 questions at each level &middot; <i>That Long Silence</i>, <i>Difficult Daughters</i>, <i>Jasmine</i>, <i>The God of Small Things</i>, psychological realism, hybridity, diasporic fiction",
+          "topics": [
+            "women",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        },
+        {
+          "n": 6,
+          "title": "Drama, other forms and criticism",
+          "meta": "50 questions at each level &middot; <i>Tara</i>, <i>Final Solutions</i>, the dramatic chorus, Meenakshi Mukherjee's <i>The Perishable Empire</i>, Naik and Narayan's critical survey, the canon, postcolonial writing",
+          "topics": [
+            "drama",
+            "terms"
+          ],
+          "levels": [
+            "medium",
+            "hard"
+          ],
+          "count": 50
+        }
+      ],
+      "hub": {
+        "title": "Indian English: 1980 to 2000 MCQ Practice | AK Explained",
+        "description": "Indian English literature MCQ practice, 1980 to 2000. Six sets are planned, on India in these years, Rushdie and Ghosh, five more novelists, women's lives and migration, and drama and criticism. The questions are being written; the notes are ready to read.",
+        "ogTitle": "Indian English: 1980 to 2000 MCQ Practice — AK Explained",
+        "ogDescription": "Practice Indian English literature, 1980 to 2000. Six sets are planned; the questions are being written.",
+        "heroSub": "1980 to 2000 &middot; Six sets planned, questions coming soon"
+      },
+      "topics": [
+        {
+          "value": "ground",
+          "label": "The age and its society"
+        },
+        {
+          "value": "history",
+          "label": "Rushdie and Ghosh"
+        },
+        {
+          "value": "novel",
+          "label": "Seth, Mistry, Chandra, Chatterjee and Tharoor"
+        },
+        {
+          "value": "women",
+          "label": "Women's lives, migration and caste"
+        },
+        {
+          "value": "drama",
+          "label": "Drama and criticism"
+        },
+        {
+          "value": "terms",
+          "label": "Terms and criticism"
+        }
+      ]
     }
   ]
 }

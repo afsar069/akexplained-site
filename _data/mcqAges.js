@@ -83,10 +83,15 @@ function fileRev(setId, levels, s) {
 const levelsText = (levels) => levels.join(" or ");
 const yearsText = (y) => y.replace("–", " to ");
 
-/* Ages ki do alag series hain (owner, 2026-11-23): British (registry me bina "tradition" wale, 20 ages)
-   aur "tradition": "american" (5 ages). "Ye 20 me se kaun sa age hai" aur agla/pichhla age har series ke
-   andar hi gine jate hain, isliye American ke aane se British ke 20 ki ginti ya uske shabd nahi badalte. */
+/* Ages ki alag series hain (owner, 2026-11-23/24): British (registry me bina "tradition" wale, 20 ages),
+   "tradition": "american" (5 ages) aur "tradition": "indian" (Indian English, har article ek card: Introduction
+   + periods). "Ye 20 me se kaun sa age hai" aur agla/pichhla age har series ke andar hi gine jate hain, isliye
+   naye series ke aane se British ke 20 ki ginti ya uske shabd nahi badalte. */
 const tradeOf = (a) => a.tradition || "british";
+
+/* Series ka apna shabd: "Colonial ... is the first of five American ages". Indian English me pehla card Introduction
+   hai (period nahi), isliye wahan "parts" likhte hain. British ka shabd purana hi hai ("ages"), neeche. */
+const SERIES_WORDS = { american: "American ages", indian: "Indian English parts" };
 
 module.exports = function () {
   const sizes = {}, seen = {};
@@ -146,10 +151,11 @@ module.exports = function () {
     };
 
     const pos = seen[trade] = (seen[trade] || 0) + 1;
-    const posText = trade === "american"
-      ? (pos === 1 ? a.name + " is the first of " + words(total) + " American ages. " + cap(words(total - 1)) + " more follow it."
-        : pos === total ? a.name + " is the last of " + words(total) + " American ages."
-        : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " American ages.")
+    const sw = SERIES_WORDS[trade];
+    const posText = sw
+      ? (pos === 1 ? a.name + " is the first of " + words(total) + " " + sw + ". " + cap(words(total - 1)) + " more follow it."
+        : pos === total ? a.name + " is the last of " + words(total) + " " + sw + "."
+        : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " " + sw + ".")
       : (pos === 1 ? a.name + " is the first. " + cap(words(total - 1)) + " more follow it."
         : pos === total ? a.name + " is the last of " + words(total) + "."
         : a.name + " is the " + ORDINALS[pos] + " of " + words(total) + " ages.");
