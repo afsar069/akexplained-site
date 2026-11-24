@@ -95,12 +95,17 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
   three to a line from 761px**, a list on a phone (`#indian-english-literature .mcq-agegrid` rules in `assets/site.css`; the five-column grid would strand the sixth card).
   `_data/mcqAges.js` counts "the Nth of six Indian English parts" and the next / previous links inside the series (`SERIES_WORDS`); `tools/build-syllabus.js` and
   `tools/build_skill_zip.py` leave the series out of the British dashboard pool and the UGC NET skill (a registry entry with no `tradition`, or `"british"`, is British).
-  **When the seventh article (2000 to the present) is written:** add one registry entry in the same shape, one card in the `/quizzes/mcq/` section and its slug to `SOON_HUBS`;
+  **When the seventh article (2000 to the present) is written:** add one registry entry in the same shape, one card in the `/quizzes/mcq/` section, its slug to `SOON_HUBS` and its period node (see Tagging below);
   the series text counts to "seven" by itself, and its card on the timeline and the landing page is added as the timeline note says. Same as American, not done on purpose:
-  Indian English answers are not in the British level pool, and `validate_mcq.py` only warns "age is not in the known list" for such a file. **One tagging point to settle with the
-  first set** (the upload checks it): the master taxonomy's Indian area has only genre `period` nodes (`iwe-beginnings`, `iwe-poetry`, `iwe-fiction`, `iwe-drama`, `iwe-prose`),
-  none for the six articles' periods, so a question's `periodId` is one of those or left out (`topicId` is the required tag, and every topic id in the six articles' front matter is
-  already in the master). Built and browser-tested 2026-11-24 (live row opens a card and hub rows, Draft and a failed read change nothing, "not open yet" pages, filters, 375px).
+  Indian English answers are not in the British level pool, and `validate_mcq.py` only warns "age is not in the known list" for such a file. **Tagging (settled 2026-11-24; owner: "if there is no node, build it"):** the master taxonomy's Indian area had only five genre `period` nodes
+  (`iwe-beginnings`, `iwe-poetry`, `iwe-fiction`, `iwe-drama`, `iwe-prose`), none for the six articles, so **six `period` nodes were added**, one per article: the id is the article's
+  `age:` slug and the name is the hub's own name (`indian-english-introduction` ... `indian-english-late-twentieth`, under `indian-writing-in-english`; migration
+  `20261124120000_add_indian_english_period_nodes.sql`, also in `taxonomy-indian.csv`, the master and the tagger skill's copy; applied to the live database and read back, 1711 to 1717 rows).
+  Nothing was moved: the five genre nodes and the writers under them stay, and PYQ files already tagged with them keep them. A question in an Indian English set takes `periodId` = its hub's
+  node (the Introduction's questions take `indian-english-introduction`); `topicId` is the writer, work or concept, and every topic id in the six articles' front matter is already in the master.
+  **When the seventh article is written, add its period node the same way** (one migration, `taxonomy-indian.csv`, the master and the tagger copy, `period-nodes.md`, then `python3 tools/build_skill_zip.py`).
+  **Owner's answers, 2026-11-24:** the Introduction stays a hub of its own (3 sets); 6 sets for both 1947 to 1980 and 1980 to 2000 is right; whether Indian English goes into the UGC NET skill zip and
+  into a dashboard level is **to be decided later** (do not add either unasked). Built and browser-tested 2026-11-24 (live row opens a card and hub rows, Draft and a failed read change nothing, "not open yet" pages, filters, 375px). Built and browser-tested 2026-11-24 (live row opens a card and hub rows, Draft and a failed read change nothing, "not open yet" pages, filters, 375px).
 - `quizzes/daily/<period>/index.html` — instant-quiz hub for one period (hand-written, standalone).
   Engine `assets/instant.js`, questions in `assets/instant/` (see rule 8). Open so far: `anglo-saxon/`, `anglo-norman/`, `age-of-chaucer/`, `fifteenth-century/`, `renaissance/`, `early-tudor/`, `elizabethan/`, `jacobean/`, `caroline/`, `commonwealth/`, `neoclassical/`, `restoration/`, `augustan/`, `age-of-sensibility/`, `romantic/`, `victorian/`, `edwardian/`, `georgian/`, `modern/`, `postmodern/` (all 20 periods are open).
 - `quizzes/pyq/` — the **PYQ front door** (rule 19): one card per exam, made by `quizzes/pyq/index.njk` from `_data/pyqHub.js`. UGC NET English is live (links to `/exams/net/english-pyqs/`, rule 18); **UP PGT English is live too** (links to `/exams/pgt/up-pgt/pyqs/`, rule 23; its card, count and years are read from `_data/pgtPyqPapers.js`); TGT English is a non-link Coming soon card. Not hand-written HTML any more.
@@ -379,7 +384,7 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1711 rows across 9 areas
+(`area | period | movement | writer | work | concept`). 1717 rows across 9 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
 Language/ELT, Research Methodology, World Literature). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
@@ -404,6 +409,8 @@ thomas-sackville, three-estates, samuel-butler-hudibras, ohthere-and-wulfstan, t
 came in `20261031120000_add_vorticism_gorboduc_and_other_missing_nodes.sql`. Two writers named Samuel
 Butler: `samuel-butler` is the Victorian one and is not to be touched; the author of Hudibras is
 `samuel-butler-hudibras`.
+The Indian area has five genre `period` nodes (`iwe-*`) and, since 2026-11-24, six `period` nodes with the Indian English notes articles' `age:` slugs as ids (rule 3, `quizzes/mcq` note);
+writers and works stay under the genre nodes.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.
