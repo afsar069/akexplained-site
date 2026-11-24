@@ -581,8 +581,17 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     choice), and every other check — the per-question checks, the tag check, the fingerprint, the database
     trigger — is unchanged. `out.level` and `out.rev` are written into the saved body, so the body never
     disagrees with its row.
-  - Changing a live paper: upload it again with a **raised rev** (the page refuses an equal/lower rev on an id that
-    exists). Nobody can delete a paper from a browser (no DELETE grant, no DELETE policy); hide it with `status = 'draft'`.
+  - **Replacing / correcting a live paper (owner, 2026-11-24): just upload the corrected or edited file to the
+    same destination again, and it replaces the old one.** The owner no longer has to hand-edit the `rev` inside the
+    JSON: when the file's rev is not above what is already saved, `assets/upload-paper.js` takes the next free rev by
+    itself, so the replace always goes through (the database only ever refuses a rev that goes DOWN, and never treats
+    the same set + level as a clash with "another paper"). Before the upload the page shows, in `#upSummary`, whether a
+    paper is already saved at that slug + level ("… Uploading will REPLACE it with this file"), so an overwrite is never
+    a surprise; the Done card then says "This replaced the paper … (rev N → rev N+1)". A file that names an explicitly
+    higher rev is still honoured. This closes the owner's "replace is not possible" complaint; because replace works,
+    no delete button was added. Nobody can delete a paper from a browser (no DELETE grant, no DELETE policy); to take a
+    paper off the site without replacing it, hide it with `status = 'draft'` on `/admin/papers/`. (A true delete is only
+    needed to free a paper's question ids for a DIFFERENT slot — a wrong-slot move — which has not been asked for.)
 - **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of
   rule 7 steps 3 to 6). The question files stay in the session's scratchpad.
   1. `validate_mcq.py` on them (rule 7 steps 1 and 2), as for any set.
