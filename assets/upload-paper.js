@@ -356,8 +356,15 @@
           if (curSlug !== mySlug) return;   // the choice moved on: drop this answer
           var rows = (!res.error && res.data) ? res.data : [];
           var hit = rows.filter(function (r) { return levels.indexOf(r.level) > -1; });
-          if (!hit.length) {
+          var other = rows.filter(function (r) { return levels.indexOf(r.level) < 0; });
+          if (!hit.length && !other.length) {
             summary.textContent = 'Nothing is saved here yet — this will be a new paper.';
+            return;
+          }
+          if (!hit.length && other.length) {
+            summary.textContent = '⚠ An old copy of this paper is saved here at the ' +
+              other.map(function (r) { return cap(r.level); }).join(' and ') +
+              ' level. Uploading will replace it with this file.';
             return;
           }
           var hr = hit.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
@@ -737,15 +744,27 @@
       // Is a paper already saved here? If so, this upload REPLACES it (owner, 2026-11-24).
       // The corrected or edited file need NOT carry a higher rev by hand: when its own rev is not
       // above what is already saved, the next free rev is used, so the replace always goes through.
-      // The database accepts this — it refuses only a rev that goes DOWN, and it never treats the
-      // same set + level as a clash with "another paper". Only a DIFFERENT level (for example medium
-      // when easy is already saved) is added beside the old one.
-      client.from('mcq_papers').select('set_id, level, rev, status, access').eq('set_id', setId).then(function (res) {
+      // The database refuses only a rev that goes DOWN, and never treats the same set + level as a
+      // clash with "another paper". A STALE copy of this same paper sitting at a WRONG level (for
+      // example Day 25 loaded as "easy" when the day page reads "medium") holds the same frozen
+      // question ids, so the database would block the correct file; such a copy is removed first.
+      client.from('mcq_papers').select('set_id, level, rev, status, access, body').eq('set_id', setId).then(function (res) {
         var chosenLevels = papers.map(levelOf);
         var existing = (!res.error && res.data) ? res.data : [];
         var same = existing.filter(function (r) { return chosenLevels.indexOf(r.level) > -1; });
+        // The ids this upload carries. A row at ANOTHER level of the SAME slot that holds any of them
+        // is a stale prior copy of this paper (the levels of a real set carry different ids), and it
+        // must go before the correct file can be saved.
+        var upIds = {};
+        papers.forEach(function (p) { (p.body.questions || []).forEach(function (q) { if (q && q.id) upIds[q.id] = 1; }); });
+        var stale = existing.filter(function (r) {
+          if (chosenLevels.indexOf(r.level) > -1) return false;   // that level is replaced by the upsert
+          var qs = (r.body && r.body.questions) || [];
+          return qs.some(function (q) { return q && q.id && upIds[q.id]; });
+        });
+        var removed = stale.map(function (r) { return r.level; });
         var highest = same.reduce(function (n, r) { return Math.max(n, r.rev); }, 0);
-        var replacing = same.length > 0;
+        var replacing = same.length > 0 || stale.length > 0;
         // Honor a file that names a higher rev; otherwise take the next free rev above what is saved.
         var newRev = (fileRev >= 1 && fileRev > highest) ? fileRev : highest + 1;
         // Paid or login (owner, 2026-11-18): a paper that is already paid stays paid on a new upload
@@ -770,8 +789,16 @@
           return { set_id: setId, level: out.level, access: access, rev: newRev, status: status, body: out };
         });
 
-        goButton.textContent = 'Uploading…';
-        client.from('mcq_papers').upsert(rows, { onConflict: 'set_id,level' })
+        goButton.textContent = removed.length ? 'Replacing…' : 'Uploading…';
+        // Remove any stale wrong-level copy of this paper first, so the correct file is not blocked.
+        var cleanup = removed.length
+          ? Promise.all(stale.map(function (r) {
+              return client.from('mcq_papers').delete().eq('set_id', setId).eq('level', r.level)
+                .then(function (d) { if (d.error) throw new Error('Could not remove the old ' + r.level + ' copy that was blocking this upload: ' + d.error.message); });
+            }))
+          : Promise.resolve();
+        cleanup
+          .then(function () { return client.from('mcq_papers').upsert(rows, { onConflict: 'set_id,level' }); })
           .then(function (res2) {
             if (res2.error) throw new Error(res2.error.message || 'the database refused it');
             return client.from('mcq_papers').select('set_id, level, rev, status, body').eq('set_id', setId);
@@ -806,7 +833,8 @@
             var next = allMatch
               ? Promise.all([finalChecks(ctx), similarCheck(setId)]).then(function (got) {
                   var head = [];
-                  if (replacing) head.push({ k: 'ok', t: 'This replaced the paper that was already saved here (rev ' + highest + ' → rev ' + newRev + '). The old questions are gone; students now get this file.' });
+                  if (removed.length) head.push({ k: 'ok', t: 'Removed the old copy of this paper that was saved at the ' + removed.map(cap).join(' and ') + ' level (the wrong level for this page) and put this file in its place.' });
+                  else if (replacing) head.push({ k: 'ok', t: 'This replaced the paper that was already saved here (rev ' + highest + ' → rev ' + newRev + '). The old questions are gone; students now get this file.' });
                   head.push({ k: 'info', t: 'Saved as ' + setId + (access === 'paid' ? ', a paid paper: students need the All Access pass to open it.' : ', a login paper: any logged-in student can open it.') });
                   return items.concat(head, got[1], got[0]);
                 })
