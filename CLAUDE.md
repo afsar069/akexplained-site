@@ -582,16 +582,29 @@ Three layers for MCQ sets. **The owner decides the layer of every set when the f
     trigger — is unchanged. `out.level` and `out.rev` are written into the saved body, so the body never
     disagrees with its row.
   - **Replacing / correcting a live paper (owner, 2026-11-24): just upload the corrected or edited file to the
-    same destination again, and it replaces the old one.** The owner no longer has to hand-edit the `rev` inside the
-    JSON: when the file's rev is not above what is already saved, `assets/upload-paper.js` takes the next free rev by
-    itself, so the replace always goes through (the database only ever refuses a rev that goes DOWN, and never treats
-    the same set + level as a clash with "another paper"). Before the upload the page shows, in `#upSummary`, whether a
-    paper is already saved at that slug + level ("… Uploading will REPLACE it with this file"), so an overwrite is never
-    a surprise; the Done card then says "This replaced the paper … (rev N → rev N+1)". A file that names an explicitly
-    higher rev is still honoured. This closes the owner's "replace is not possible" complaint; because replace works,
-    no delete button was added. Nobody can delete a paper from a browser (no DELETE grant, no DELETE policy); to take a
-    paper off the site without replacing it, hide it with `status = 'draft'` on `/admin/papers/`. (A true delete is only
-    needed to free a paper's question ids for a DIFFERENT slot — a wrong-slot move — which has not been asked for.)
+    same destination again, and it replaces the old one — even when the old copy sits at the wrong level.** Two parts:
+    - *Same level:* the owner no longer hand-edits the `rev`. When the file's rev is not above what is already saved,
+      `assets/upload-paper.js` takes the next free rev by itself, so the replace always goes through (the database only
+      ever refuses a rev that goes DOWN, and never treats the same set + level as a clash with "another paper"). The
+      Done card says "This replaced the paper … (rev N → rev N+1)".
+    - *Wrong level (the Day 25 case, 2026-11-24):* a slot can hold a **stale copy at a level its page never reads** —
+      UP PGT MCQ Day 25 had been loaded at `easy`, but the day pages read `medium`, so the old copy never showed AND
+      its frozen question ids blocked the correct `medium` file ("These question ids already belong to another paper").
+      Now, before saving, the upload page **removes any row at the SAME slot, at a level NOT being uploaded, that holds
+      a question id in the new file** (a stale prior copy — the real levels of a set carry different ids, so a genuine
+      easy/medium pair is never touched). The Done card says "Removed the old copy … at the easy level … and put this
+      file in its place." This needs a DELETE, which the browser did not have: migration
+      `20261124140000_admin_delete_and_replace_paper.sql` adds an **admin-only DELETE policy** on `public.mcq_papers`
+      and `public.paper_catalog`, plus `mcq_papers_sync_catalog_delete` (an AFTER DELETE trigger that recomputes the
+      set's catalog count/status, or drops the catalog row when the set has no rows left). The service-role connector
+      could already delete; this opens the browser path for an admin only.
+    - Before the upload the page shows, in `#upSummary`, whether a paper is already saved at that slot and at which
+      level ("… Uploading will REPLACE it" / "An old copy … is saved here at the Easy level. Uploading will replace
+      it"), so an overwrite is never a surprise. A file that names an explicitly higher rev is still honoured; a
+      brand-new upload is unchanged. Browser-tested 2026-11-24 (same-level replace → rev bump; wrong-level copy →
+      removed, correct file saved; new-paper path unchanged). No standalone "delete a paper" button was built — the
+      owner's need was replace, not delete — but the admin DELETE policy now exists if a delete button is ever wanted.
+      To take a paper off the site without replacing it, still hide it with `status = 'draft'` on `/admin/papers/`.
 - **Publishing a login set with SQL** (the older route, still fine when the owner is not at a browser; instead of
   rule 7 steps 3 to 6). The question files stay in the session's scratchpad.
   1. `validate_mcq.py` on them (rule 7 steps 1 and 2), as for any set.
