@@ -32,8 +32,8 @@ const parts = [
     name: "Figures of speech",
     summary:
       "Ways of using words beyond their plain meaning: comparison, substitution, exaggeration, contrast, symbol and irony.",
-    image: "",
-    alt: "",
+    image: "figures-of-speech",
+    alt: "Painted interpretation of a golden lion taking shape from ink above an open page.",
     chapters: [
       {
         title: "Comparing One Thing to Another",
@@ -110,8 +110,8 @@ const parts = [
     name: "Sound, metre and rhyme",
     summary:
       "How a poem sounds and moves: sound devices, repetition, metre and feet, lines, rhyme and stanzas.",
-    image: "",
-    alt: "",
+    image: "sound-metre-and-rhyme",
+    alt: "Painted interpretation of sound ripples crossing a pattern of verse lines beside a metronome.",
     chapters: [
       {
         title: "Sound Devices",
@@ -207,8 +207,8 @@ const parts = [
     name: "Poetic forms",
     summary:
       "The named shapes of poetry, from the sonnet and the ode to the epic, the ballad and the haiku.",
-    image: "",
-    alt: "",
+    image: "poetic-forms",
+    alt: "Painted interpretation of three manuscripts with different arrangements of verse lines.",
     chapters: [
       {
         title: "The Sonnet and Its Kinds",
@@ -277,8 +277,8 @@ const parts = [
     name: "Genres and modes",
     summary:
       "The kinds of literature: the forms of drama, the kinds of fiction, imaginative modes and life writing.",
-    image: "",
-    alt: "",
+    image: "genres-and-modes",
+    alt: "Painted interpretation of comedy and tragedy masks beside a novel and a diary.",
     chapters: [
       {
         title: "Drama: Tragedy, Comedy and Their Kinds",
@@ -346,8 +346,8 @@ const parts = [
     name: "Drama and narrative",
     summary:
       "The terms for how a play is built and how a story is told: plot, character, stage conventions, narrators and techniques.",
-    image: "",
-    alt: "",
+    image: "drama-and-narrative",
+    alt: "Painted interpretation of an actor on stage and scenes sketched in a script in the foreground.",
     chapters: [
       {
         title: "The Shape of a Play",
@@ -442,8 +442,8 @@ const parts = [
     name: "Rhetoric and general terms",
     summary:
       "Terms of persuasion, imitation and taste, and the basic words of criticism: canon, genre, trope and palimpsest.",
-    image: "",
-    alt: "",
+    image: "rhetoric-and-general-terms",
+    alt: "Painted interpretation of a speaker addressing an audience from a wooden lectern.",
     chapters: [
       {
         title: "Rhetoric, Wit and Attack",
@@ -497,8 +497,8 @@ const parts = [
     name: "Terms of criticism",
     summary:
       "The key terms of classical, Indian and formalist criticism, from mimesis and catharsis to close reading.",
-    image: "",
-    alt: "",
+    image: "terms-of-criticism",
+    alt: "Painted interpretation of a Greek vase, a palm-leaf manuscript and a marked-up book.",
     chapters: [
       {
         title: "Classical Criticism: Aristotle, Horace and Longinus",
@@ -557,8 +557,8 @@ const parts = [
     name: "Terms of modern theory",
     summary:
       "The key terms of structuralism, post-structuralism, psychoanalysis, Marxism, feminism, reader-response, new historicism and postcolonial theory.",
-    image: "",
-    alt: "",
+    image: "terms-of-modern-theory",
+    alt: "Painted interpretation of a diagram, a human profile and a city rising from an open book.",
     chapters: [
       {
         title: "Structuralism and Narratology",

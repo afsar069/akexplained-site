@@ -13,7 +13,7 @@ Two sets of cards can each carry a picture:
    `/literary-criticism/literary-theory/<part slug>/` — one card per chapter, the same
    shape as the part cards (owner, 2026-11-25).
 
-The Literary Theory, Cultural Studies and Indian Poetics parts have pictures on the hub.
+The Literary Theory, Cultural Studies, Indian Poetics and Key Terms & Concepts parts have pictures on the hub.
 Each Literary Theory chapter has its own picture on its part page. A chapter without a
 picture shows its number on a plain tinted panel.
 
