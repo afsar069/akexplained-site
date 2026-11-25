@@ -1,9 +1,10 @@
-# Literary Theory, Cultural Studies and Indian Poetics card pictures
+# Literary Theory, Cultural Studies, Indian Poetics and Key Terms card pictures
 
 The series use the same cards (Literary Theory in `_data/literaryTheory.js`, Cultural Studies in
 `_data/culturalStudies.js`, owner 2026-11-25) and the same rules. Pictures for Cultural Studies go
 in `assets/cultural-studies/` instead of `assets/literary-theory/`; Indian Poetics (`_data/indianPoetics.js`, owner
-2026-11-25) uses `assets/indian-poetics/`; everything else below is the same.
+2026-11-25) uses `assets/indian-poetics/`; Key Terms & Concepts (`_data/keyTerms.js`, owner 2026-11-25) uses
+`assets/key-terms/`; everything else below is the same.
 
 Two sets of cards can each carry a picture:
 
@@ -82,3 +83,17 @@ Its three part cards sit in one line of three on the hub page (`.ltx-cards-3`).
     nativism-the-margins-and-the-contemporary
 
 Its chapter cards also show a list of subchapters (`sub` in the registry) under the thinkers line.
+
+## Key Terms & Concepts parts
+
+    figures-of-speech
+    sound-metre-and-rhyme
+    poetic-forms
+    genres-and-modes
+    drama-and-narrative
+    rhetoric-and-general-terms
+    terms-of-criticism
+    terms-of-modern-theory
+
+Its eight part cards sit in the default four-column grid (four and four), and its chapter cards show the terms
+(`sub`) under the title, as in Indian Poetics. Pictures go in `assets/key-terms/`.
