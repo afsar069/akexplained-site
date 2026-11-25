@@ -4518,3 +4518,45 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .dlx-act{grid-column:1 / -1;flex-direction:column;min-width:0}
   .dlx-soon{justify-self:start}
 }
+
+/* ---------- Literary Theory part cards (owner, 2026-11-25) ---------- */
+/* Eight part cards on /literary-criticism/literary-theory/. Each card holds the
+   part's chapter list, so the cards are wider than the normal g3 grid.
+   Yeh cards abhi link nahi hain: article likha nahi gaya, isliye dashed box. */
+.lt-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.lt-card{
+  display:flex;flex-direction:column;
+  border-style:dashed;background:var(--tint);
+}
+.lt-card .meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;color:#8A97A6}
+.lt-card .lt-no{
+  background:var(--teal);color:#fff;border-radius:999px;
+  padding:3px 9px;font-size:.7rem;letter-spacing:.08em;
+}
+.lt-card h3{font-family:var(--serif);color:var(--ink);font-size:1.08rem;margin-bottom:6px}
+.lt-card .lt-sum{color:var(--body);font-size:.88rem;margin-bottom:12px}
+.lt-chapters{
+  max-width:none;margin:0 0 12px;padding-left:1.35rem;
+  font-size:.86rem;color:var(--ink);
+}
+.lt-chapters li{margin-bottom:7px;line-height:1.45}
+.lt-chapters li:last-child{margin-bottom:0}
+.lt-chapters li span{display:block;color:var(--body);font-size:.8rem;margin-top:1px}
+.lt-soon{
+  margin:auto 0 0;padding-top:10px;border-top:1px dashed var(--card-line);
+  font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;
+  font-weight:700;color:#8A97A6;
+}
+@media(max-width:559px){
+  /* .thin-cards ka mobile rule har card paragraph ko 2 line par kaat deta hai.
+     Part card ki summary poori chahiye, isliye yahan clamp hata rahe hain. */
+  .thin-cards .grid > .lt-card{padding:16px 16px;border-radius:14px}
+  .thin-cards .grid > .lt-card p.lt-sum{
+    display:block;-webkit-line-clamp:none;overflow:visible;
+    font-size:.84rem;line-height:1.45;
+  }
+  .thin-cards .grid > .lt-card p.lt-soon{display:block;overflow:visible;font-size:.7rem}
+  .thin-cards .grid > .lt-card h3{font-size:1.08rem;margin:0 0 6px}
+  .thin-cards .grid > .lt-card .meta{margin:0 0 6px;font-size:.7rem}
+  .lt-chapters{font-size:.84rem}
+}
