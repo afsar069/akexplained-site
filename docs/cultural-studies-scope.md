@@ -1,7 +1,7 @@
 # Cultural Studies: what is in the series, and what each chapter rests on
 
 Written 2026-11-25, updated the same day after the owner allowed more sites. The series is
-`_data/culturalStudies.js` (3 parts, 11 chapters, every chapter Coming soon). Rule 2 applies: nothing here
+`_data/culturalStudies.js` (3 parts, 12 chapters, every chapter Coming soon). Rule 2 applies: nothing here
 is invented, and what could not be checked is said plainly.
 
 ## What the official syllabus says (read 2026-11-25)
@@ -45,21 +45,19 @@ Warwick module page (the address returned 404; it has moved).
 | 2 Raymond Williams: Meanings of Culture and Structure of Feeling | The most-tested name in the 33 past questions: which book is his, the order of his books, "structure of feeling", his meanings of "culture". The coaching page lists *Culture and Society* (1958), *The Long Revolution* (1961), *Keywords* (1976) and *Marxism and Literature* (1977). |
 | 3 Cultural Studies: the Birmingham School | The owner's chapter, moved from Theory. EBSCO and the 33 questions (CCCS, Hoggart, Hall, Thompson). |
 | 4 Ideology and Hegemony | Limitless Unit VII line (Gramsci). **No past question on this page.** |
-| 5 Bourdieu: Class, Taste and Cultural Capital | Named only in our own page's study-guide text and in one search summary's key-term list. **Not on the limitless list, and no past question.** Keep or drop: the owner decides. |
-| 6 Popular Culture, Media and Consumer Society | The owner's chapter, moved from Theory. Limitless: popular culture, media and film studies; 5 questions on mass or popular culture. |
-| 7 Media and Audiences: Encoding and Decoding | Hall's "Encoding/Decoding" is in the limitless thinker table and in a university reading list. |
-| 8 Subculture | Hebdige's *Subculture* is on a university reading list (search). **Not on the limitless list, and no past question.** Keep or drop: the owner decides. |
-| 9 Gender and Identity | Limitless: identity (race, class, gender, caste). **No past question.** About identity in everyday culture and media, not feminist and queer theory (Theory Part 6). |
-| 10 Race, Ethnicity and Culture | **Kept on the owner's word.** Race is named in the limitless identity line; EBSCO says the CCCS studied class, race and feminism and names *The Empire Strikes Back*; *Policing the Crisis* is a CCCS book on race, the media and the state. Not Theory's Race and Africana Theory chapter. |
-| 11 Nation, Diaspora and Globalisation | The owner's chapter, moved from Theory. Limitless: globalisation and identity. |
+| 5 Bourdieu: Class, Taste and Cultural Capital | Named only in our own page's study-guide text and in one search summary's key-term list. **Not on the limitless list, and no past question.** **Kept on the owner's word (2026-11-25).** |
+| 6 The Frankfurt School and Critical Theory | **Moved from Literary Theory (owner, 2026-11-25).** The limitless page files the Frankfurt School and the culture industry under Cultural Studies: 6 past questions on the Frankfurt School, 5 on the culture industry, 2 on Habermas's public sphere. The owner's title and thinkers are unchanged. |
+| 7 Popular Culture, Media and Consumer Society | The owner's chapter, moved from Theory. Limitless: popular culture, media and film studies; 5 questions on mass or popular culture. |
+| 8 Media and Audiences: Encoding and Decoding | Hall's "Encoding/Decoding" is in the limitless thinker table and in a university reading list. |
+| 9 Subculture | Hebdige's *Subculture* is on a university reading list (search). **Not on the limitless list, and no past question.** **Kept on the owner's word (2026-11-25).** |
+| 10 Gender and Identity | Limitless: identity (race, class, gender, caste). **No past question.** About identity in everyday culture and media, not feminist and queer theory (Theory Part 6). |
+| 11 Race, Ethnicity and Culture | **Kept on the owner's word.** Race is named in the limitless identity line; EBSCO says the CCCS studied class, race and feminism and names *The Empire Strikes Back*; *Policing the Crisis* is a CCCS book on race, the media and the state. Not Theory's Race and Africana Theory chapter. |
+| 12 Nation, Diaspora and Globalisation | The owner's chapter, moved from Theory. Limitless: globalisation and identity. |
 
 ## Found, but not added (the owner decides)
 
-- **The Frankfurt School and the culture industry (Adorno, Horkheimer), and Habermas's public sphere.** The most
-  striking find: the limitless page files these under Cultural Studies, with 6 past questions on the Frankfurt
-  School and 5 on the culture industry. Literary Theory chapter 13 (The Frankfurt School and Critical Theory)
-  already covers the thinkers. Options: leave it in Theory; move it to Cultural Studies (Theory then has 28
-  chapters); or keep it and add a short Cultural Studies chapter on mass culture and the culture industry.
+(The Frankfurt School chapter was on this list; the owner moved it into the series on 2026-11-25.)
+
 - **Film studies** (limitless Unit VII line; 3 questions mention film).
 - **Caste** as part of identity (limitless line only; no past question).
 - **Discourse (Foucault)** and **subaltern studies** (limitless Unit VII line). Both are already in Literary
