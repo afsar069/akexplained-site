@@ -1,8 +1,9 @@
-# Literary Theory and Cultural Studies card pictures
+# Literary Theory, Cultural Studies and Indian Poetics card pictures
 
 Two series use the same cards (Literary Theory in `_data/literaryTheory.js`, Cultural Studies in
 `_data/culturalStudies.js`, owner 2026-11-25) and the same rules. Pictures for Cultural Studies go
-in `assets/cultural-studies/` instead of `assets/literary-theory/`; everything else below is the same.
+in `assets/cultural-studies/` instead of `assets/literary-theory/`; Indian Poetics (`_data/indianPoetics.js`, owner
+2026-11-25) uses `assets/indian-poetics/`; everything else below is the same.
 
 Two sets of cards can each carry a picture:
 
@@ -65,3 +66,12 @@ The chapter slugs are listed in `_data/literaryTheory.js`, under each part.
     identity-diaspora-and-globalisation
 
 Its three part cards sit in one line of three on the hub page (`.ltx-cards-3`).
+
+## Indian Poetics parts
+
+    drama-rasa-and-the-schools
+    alankara-guna-and-riti
+    dhvani-vakrokti-and-auchitya
+    later-systems-and-other-traditions
+
+Its chapter cards also show a list of subchapters (`sub` in the registry) under the thinkers line.

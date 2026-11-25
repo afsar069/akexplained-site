@@ -13,6 +13,13 @@
 {%- if ch.people %}
 <span class="ltx-sum">{{ ch.people | safe }}</span>
 {%- endif %}
+{%- if ch.sub %}
+<ul class="ltx-subs" aria-label="Topics in this chapter">
+{%- for t in ch.sub %}
+<li>{{ t | safe }}</li>
+{%- endfor %}
+</ul>
+{%- endif %}
 {%- endmacro -%}
 
 <section class="pagehead">
@@ -33,12 +40,12 @@
       {%- for ch in part.chapters %}
       <li>
         {%- if ch.live %}
-        <a class="ltx-card" href="/notes/{{ ch.slug }}/">
+        <a class="ltx-card{% if ch.sub %} ltx-has-subs{% endif %}" href="/notes/{{ ch.slug }}/">
           {{ chbody(ch) }}
           <span class="ltx-cta"><span class="ltx-ch-go">Read</span></span>
         </a>
         {%- else %}
-        <div class="ltx-card ltx-card-soon">
+        <div class="ltx-card ltx-card-soon{% if ch.sub %} ltx-has-subs{% endif %}">
           {{ chbody(ch) }}
           <span class="ltx-cta"><span class="ltx-ch-soon">Coming soon</span></span>
         </div>
