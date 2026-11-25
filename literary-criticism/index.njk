@@ -42,6 +42,8 @@
 <div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/english-literature/">English Literature</a><span>/</span>Literary Criticism</p></div>
 
 <main id="main">
+{% set wideCardImageSizes = "(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 108px) / 2), (max-width: 1023px) calc((100vw - 148px) / 3), min(344px, calc((100vw - 420px) / 3))" %}
+{% set partCardImageSizes = "(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 108px) / 2), (max-width: 1023px) calc((100vw - 148px) / 3), (max-width: 1120px) calc((100vw - 420px) / 3), min(248px, calc((100vw - 460px) / 4))" %}
 
 <section class="pagehead">
   <span class="mark" aria-hidden="true">C</span>
@@ -56,47 +58,20 @@
   <div class="wrap">
     <h2>History of Literary Criticism</h2>
     <p>Criticism in order of time, from the Greeks to about 1960. The series has two layers: first the period articles, then articles on the main critics of each period. Articles become clickable as each one is written.</p>
-    <div class="grid g3">
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-introduction/">Introduction to Literary Criticism</a></h3>
-        <p>What criticism is, what critics do, its main kinds, and a map of the whole history.</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-classical/">Classical Criticism</a></h3>
-        <p>Plato &middot; Aristotle &middot; Horace &middot; Longinus</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-renaissance/">Renaissance Criticism</a></h3>
-        <p>Sidney &middot; Gosson &middot; Puttenham &middot; Jonson</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-neoclassical/">Neoclassical Criticism</a></h3>
-        <p>Dryden &middot; Pope &middot; Addison &middot; Johnson</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-romantic/">Romantic Criticism</a></h3>
-        <p>Wordsworth &middot; Coleridge &middot; Shelley &middot; Hazlitt</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-victorian/">Victorian Criticism</a></h3>
-        <p>Arnold &middot; Ruskin &middot; Pater &middot; Wilde</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-early-twentieth/">Early Twentieth Century</a></h3>
-        <p>Bradley &middot; T. S. Eliot &middot; I. A. Richards</p>
-      </div>
-      <div class="card">
-        <p class="meta">Available now</p>
-        <h3><a href="/notes/literary-criticism-mid-twentieth/">Mid Twentieth Century</a></h3>
-        <p>Empson &middot; Leavis &middot; the New Critics &middot; Frye</p>
-      </div>
+    <div class="grid ltx-cards ltx-cards-3">
+      {%- for article in criticismHistory %}
+      <a class="ltx-card" href="/notes/literary-criticism-{{ article.slug }}/">
+        <span class="ltx-thumb">
+          <img src="/assets/literary-criticism/{{ article.slug }}.webp"
+               srcset="/assets/literary-criticism/{{ article.slug }}-240.webp 240w, /assets/literary-criticism/{{ article.slug }}.webp 480w"
+               sizes="{{ wideCardImageSizes }}"
+               alt="{{ article.alt }}" width="480" height="300"{% if not loop.first %} loading="lazy"{% endif %}>
+        </span>
+        <span class="ltx-meta">Available now</span>
+        <h3 class="ltx-name">{{ article.title }}</h3>
+        <span class="ltx-sum">{{ article.summary }}</span>
+      </a>
+      {%- endfor %}
     </div>
   </div>
 </section>
@@ -109,7 +84,7 @@
       {%- for part in literaryTheory %}
       <a class="ltx-card" href="{{ part.href }}">
         {%- if part.picture %}
-        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), (max-width: 1120px) calc((100vw - 72px) / 3 - 24px), 230px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="{{ partCardImageSizes }}" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
         {%- else %}
         <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
         {%- endif %}
@@ -131,7 +106,7 @@
       {%- for part in culturalStudies %}
       <a class="ltx-card" href="{{ part.href }}">
         {%- if part.picture %}
-        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), 310px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="{{ wideCardImageSizes }}" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
         {%- else %}
         <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
         {%- endif %}
@@ -153,7 +128,7 @@
       {%- for part in indianPoetics %}
       <a class="ltx-card" href="{{ part.href }}">
         {%- if part.picture %}
-        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), (max-width: 1120px) calc((100vw - 72px) / 3 - 24px), 230px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="{{ partCardImageSizes }}" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
         {%- else %}
         <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
         {%- endif %}
