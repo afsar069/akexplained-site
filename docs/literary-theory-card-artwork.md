@@ -13,7 +13,8 @@ Two sets of cards can each carry a picture:
    shape as the part cards (owner, 2026-11-25).
 
 The Literary Theory, Cultural Studies and Indian Poetics parts have pictures on the hub.
-A chapter without a picture shows its number on a plain tinted panel.
+Each Literary Theory chapter has its own picture on its part page. A chapter without a
+picture shows its number on a plain tinted panel.
 
 The eight History of Literary Criticism cards use the same image sizes. Their files are
 in `assets/literary-criticism/`, named after the slugs in `_data/criticismHistory.json`.
