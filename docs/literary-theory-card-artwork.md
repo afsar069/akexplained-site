@@ -1,4 +1,8 @@
-# Literary Theory card pictures
+# Literary Theory and Cultural Studies card pictures
+
+Two series use the same cards (Literary Theory in `_data/literaryTheory.js`, Cultural Studies in
+`_data/culturalStudies.js`, owner 2026-11-25) and the same rules. Pictures for Cultural Studies go
+in `assets/cultural-studies/` instead of `assets/literary-theory/`; everything else below is the same.
 
 Two sets of cards can each carry a picture:
 
@@ -53,3 +57,11 @@ The chapter slugs are listed in `_data/literaryTheory.js`, under each part.
   a surviving historical object, a photograph, or an authentic portrait of a real person.
 - These files are their own set. Do not reuse `assets/age-cards/` files here, and do not
   use these as article headers.
+
+## Cultural Studies parts
+
+    culture-class-and-ideology
+    popular-culture-media-and-subculture
+    identity-diaspora-and-globalisation
+
+Its three part cards sit in one line of three on the hub page (`.ltx-cards-3`).

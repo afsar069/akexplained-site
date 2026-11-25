@@ -1,0 +1,15 @@
+---
+layout: literary-theory-layout.njk
+pagination:
+  data: culturalStudies
+  size: 1
+  alias: part
+permalink: "/literary-criticism/cultural-studies/{{ part.slug }}/index.html"
+eleventyComputed:
+  title: "{{ part.name }}"
+  description: "{{ part.summary }} Part {{ part.number }} of the Cultural Studies notes, with {{ part.count }} chapters, for BA, MA and UGC-NET students."
+  crumb_label: "{{ part.name }}"
+---
+{#- Dhancha _includes/ltx-part.njk me hai (Literary Theory ke part pages ke saath saanjha). -#}
+{% set series = { name: "Cultural Studies", parts: culturalStudies, back: "/literary-criticism/#cultural-studies" } %}
+{% include "ltx-part.njk" %}
