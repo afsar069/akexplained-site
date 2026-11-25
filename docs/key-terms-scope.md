@@ -173,4 +173,8 @@ Aucitya, *Dramatic Monologue (form)* as Dramatic Monologue.
 - Whether the grouping is what the owner wants (the clusters are Claude's).
 - Whether terms outside the taxonomy should be added later (for example more figures of speech or
   forms). New nodes need the owner's word and a taxonomy migration first (rule 11).
-- Whether the Indian poetics terms should stay here as a short list or move wholly into the Indian Poetics series.
+
+## Settled by the owner
+
+- **2026-11-25: the short list of Indian poetics terms stays in Part 7** (chapter 32, Terms of Indian Poetics). It is not moved
+  into the Indian Poetics series; its article should link there for the full treatment of each school.

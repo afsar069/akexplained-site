@@ -58,13 +58,13 @@
   <div class="wrap">
     <h2>History of Literary Criticism</h2>
     <p>Criticism in order of time, from the Greeks to about 1960. The series has two layers: first the period articles, then articles on the main critics of each period. Articles become clickable as each one is written.</p>
-    <div class="grid ltx-cards ltx-cards-3">
+    <div class="grid ltx-cards">
       {%- for article in criticismHistory %}
       <a class="ltx-card" href="/notes/literary-criticism-{{ article.slug }}/">
         <span class="ltx-thumb">
           <img src="/assets/literary-criticism/{{ article.slug }}.webp"
                srcset="/assets/literary-criticism/{{ article.slug }}-240.webp 240w, /assets/literary-criticism/{{ article.slug }}.webp 480w"
-               sizes="{{ wideCardImageSizes }}"
+               sizes="{{ partCardImageSizes }}"
                alt="{{ article.alt }}" width="480" height="300"{% if not loop.first %} loading="lazy"{% endif %}>
         </span>
         <span class="ltx-meta">Available now</span>
