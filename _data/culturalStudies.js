@@ -48,8 +48,8 @@ const parts = [
     name: "Culture, class and ideology",
     summary:
       "Culture seen as a whole way of life, as a field where ideas and power meet, and as a sign of class and taste.",
-    image: "",
-    alt: "",
+    image: "culture-class-and-ideology",
+    alt: "Painted interpretation of a street market and an art gallery with a newspaper between them.",
     chapters: [
       { title: "Introduction to Cultural Studies", people: "", slug: "cultural-studies-introduction" },
       { title: "Raymond Williams: Meanings of Culture and Structure of Feeling", people: "<i>Culture and Society</i> · <i>The Long Revolution</i> · <i>Keywords</i> · <i>Marxism and Literature</i>", slug: "cultural-studies-raymond-williams" },
@@ -63,8 +63,8 @@ const parts = [
     name: "Popular culture, media and subculture",
     summary:
       "Mass and popular culture as the subject: the culture industry, what people watch, read and wear, and the media that carry it.",
-    image: "",
-    alt: "",
+    image: "popular-culture-media-and-subculture",
+    alt: "Painted interpretation of a young person making a fanzine beside a television and records.",
     chapters: [
       { title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "cultural-studies-frankfurt-school" },
       { title: "Popular Culture, Media and Consumer Society", people: "Barthes's <i>Mythologies</i> · McLuhan · Fiske", slug: "cultural-studies-popular-culture-media" },
@@ -77,8 +77,8 @@ const parts = [
     name: "Identity, diaspora and globalisation",
     summary:
       "How gender, race and nation shape who people are and how they show it, and how identity moves across borders in a global world.",
-    image: "",
-    alt: "",
+    image: "identity-diaspora-and-globalisation",
+    alt: "Painted interpretation of travellers with luggage beneath a world map of connected routes.",
     chapters: [
       { title: "Gender and Identity", people: "", slug: "cultural-studies-gender-identity" },
       { title: "Race, Ethnicity and Culture", people: "Hall's <i>Policing the Crisis</i> · <i>The Empire Strikes Back</i>", slug: "cultural-studies-race-ethnicity" },

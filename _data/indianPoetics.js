@@ -35,8 +35,8 @@ const parts = [
     name: "Drama, rasa and the schools",
     summary:
       "Bharata's treatise on drama, the oldest text of the tradition that has come down to us, the ten types of Sanskrit play, the great Sanskrit dramatists, and the theory of rasa and how later thinkers read it.",
-    image: "",
-    alt: "",
+    image: "drama-rasa-and-the-schools",
+    alt: "Painted interpretation of an Indian theatre performer expressing an emotion with a hand gesture.",
     chapters: [
       {
         title: "Introduction to Indian Poetics",
@@ -113,8 +113,8 @@ const parts = [
     name: "Alankara, guna and riti",
     summary:
       "The early schools that looked for what makes poetry beautiful in figures of speech, in qualities of style and in the manner of writing.",
-    image: "",
-    alt: "",
+    image: "alankara-guna-and-riti",
+    alt: "Painted interpretation of gold vines curling out of the lines of a palm-leaf poem.",
     chapters: [
       {
         title: "Bhamaha and the Kavyalankara",
@@ -170,8 +170,8 @@ const parts = [
     name: "Dhvani, vakrokti and auchitya",
     summary:
       "The schools that asked what makes poetry poetry: suggestion, oblique expression and propriety, and how Abhinavagupta joined rasa and dhvani.",
-    image: "",
-    alt: "",
+    image: "dhvani-vakrokti-and-auchitya",
+    alt: "Painted interpretation of a bronze bell and widening ripples beside a palm-leaf manuscript.",
     chapters: [
       {
         title: "Anandavardhana and the Dhvanyaloka",
@@ -228,8 +228,8 @@ const parts = [
     name: "Later systems and other traditions",
     summary:
       "The two great summaries of Sanskrit poetics, Bhartrhari's philosophy of language, and the Tamil poetics of the Tolkappiyam.",
-    image: "",
-    alt: "",
+    image: "later-systems-and-other-traditions",
+    alt: "Painted interpretation of two palm-leaf manuscripts laid side by side beside a lamp.",
     chapters: [
       {
         title: "Mammata and the Kavyaprakasha",
@@ -284,8 +284,8 @@ const parts = [
     name: "Medieval Indian thought",
     summary:
       "Bhakti, Persian and Hindi thinking about poetry, from Jnanesvara to Keshavadasa, and Al-Badaoni on writing history.",
-    image: "",
-    alt: "",
+    image: "medieval-indian-thought",
+    alt: "Painted interpretation of a Bhakti singer and a scribe with a manuscript in a courtyard.",
     chapters: [
       {
         title: "Jnanesvara and Indian Poetics",
@@ -347,8 +347,8 @@ const parts = [
     name: "Modern Indian aesthetics",
     summary:
       "Poets, novelists and thinkers, from Ghalib to Suresh Joshi, who reshaped Indian ideas of beauty, art and criticism.",
-    image: "",
-    alt: "",
+    image: "modern-indian-aesthetics",
+    alt: "Painted interpretation of a writer's desk with an open manuscript, ink and printed books.",
     chapters: [
       {
         title: "Ghalib and His Poetic Thought",
@@ -441,8 +441,8 @@ const parts = [
     name: "Nativism, the margins and the contemporary",
     summary:
       "Challenges to the old canon: nativism, the Hungry Generation, folk and tribal art and Dalit aesthetics, and what Indian poetics means today.",
-    image: "",
-    alt: "",
+    image: "nativism-the-margins-and-the-contemporary",
+    alt: "Painted interpretation of a poet reading to listeners beside a folk art mural.",
     chapters: [
       {
         title: "Bhalchandra Nemade and Nativism",
