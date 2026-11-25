@@ -4,7 +4,8 @@
 // har part ka page (/literary-criticism/literary-theory/<slug>/) aur sitemap lines.
 // Naya chapter ya naya part isi file me jodna hai, page me nahi.
 //
-// Har chapter ka `n` owner ke apne plan ka number hai (2 se 32). Ye numbers page par
+// Har chapter ka `n` owner ke apne plan ka number hai (1 se 32; chapter 1 = Introduction,
+// owner ne 2026-11-25 ko tay kiya). Ye numbers page par
 // dikhte hain, isliye inhe badla nahi jata.
 //
 // `slug` = us chapter ka article kahan rahega: /notes/<slug>/. Article abhi likha nahi
@@ -34,6 +35,7 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
+      { n: 1, title: "Introduction to Literary Theory", people: "", slug: "literary-theory-introduction" },
       { n: 2, title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
       { n: 3, title: "Saussure and Structural Linguistics", people: "", slug: "literary-theory-saussure" },
       { n: 4, title: "Structuralism", people: "Lévi-Strauss · Barthes · Todorov · Greimas", slug: "literary-theory-structuralism" },
