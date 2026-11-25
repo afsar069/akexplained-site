@@ -39,6 +39,8 @@ const parts = [
         title: "Comparing One Thing to Another",
         people: "",
         slug: "key-terms-comparison",
+        image: "key-terms-comparison",
+        alt: "Painted interpretation of a sunflower and the sun echoing one another over an open folio.",
         sub: [
           "Simile",
           "Metaphor",
@@ -54,6 +56,8 @@ const parts = [
         title: "Substitution and Address",
         people: "",
         slug: "key-terms-substitution",
+        image: "key-terms-substitution",
+        alt: "Painted interpretation of a seal and rolled message beside the outline of a face.",
         sub: [
           "Metonymy",
           "Synecdoche",
@@ -66,6 +70,8 @@ const parts = [
         title: "Exaggeration, Understatement and Contrast",
         people: "",
         slug: "key-terms-exaggeration-contrast",
+        image: "key-terms-exaggeration-contrast",
+        alt: "Painted interpretation of a large apple and a tiny apple on a balance scale.",
         sub: [
           "Hyperbole",
           "Litotes",
@@ -81,6 +87,8 @@ const parts = [
         title: "Symbol, Allegory and Hidden Meaning",
         people: "",
         slug: "key-terms-symbol-allegory",
+        image: "key-terms-symbol-allegory",
+        alt: "Painted interpretation of a keyhole-shaped lantern casting the image of a path.",
         sub: [
           "Symbol",
           "Allegory",
@@ -93,6 +101,8 @@ const parts = [
         title: "Irony and Wit",
         people: "",
         slug: "key-terms-irony-wit",
+        image: "key-terms-irony-wit",
+        alt: "Painted interpretation of a jester holding a smiling mask up to a frowning face.",
         sub: [
           "Irony",
           "Verbal Irony",
@@ -664,13 +674,51 @@ const fs = require("fs");
 const path = require("path");
 
 const BASE = "/literary-criticism/key-terms/";
+const ASSETS = "/assets/key-terms/";
+
+// Figures of Speech term thumbnails, kept by name so article URL overrides do not affect them.
+const termArtwork = {
+  "Simile": { image: "term-simile", alt: "Painted interpretation of a dancer and a feather curving in the same way." },
+  "Metaphor": { image: "term-metaphor", alt: "Painted interpretation of a heart carved from stone resting on an open book." },
+  "Extended Metaphor": { image: "term-extended-metaphor", alt: "Painted interpretation of a path continuing across two pages, past mountains and a bridge." },
+  "Vehicle and Tenor": { image: "term-vehicle-and-tenor", alt: "Painted interpretation of a runner and a cheetah joined by a brushstroke." },
+  "Conceit": { image: "term-conceit", alt: "Painted interpretation of a drawing compass spanning two small buildings." },
+  "Personification": { image: "term-personification", alt: "Painted interpretation of the wind taking the shape of a face as it blows a leaf." },
+  "Pathetic Fallacy": { image: "term-pathetic-fallacy", alt: "Painted interpretation of a sorrowful figure beside a rain-streaked window." },
+  "Transferred Epithet": { image: "term-transferred-epithet", alt: "Painted interpretation of a tired traveller resting beside a winding road." },
+  "Metonymy": { image: "term-metonymy", alt: "Painted interpretation of a royal crown on a cushion with a court behind it." },
+  "Synecdoche": { image: "term-synecdoche", alt: "Painted interpretation of sailors' hands pulling a rope on a ship." },
+  "Apostrophe": { image: "term-apostrophe", alt: "Painted interpretation of a poet turning to speak to the moon." },
+  "Periphrasis": { image: "term-periphrasis", alt: "Painted interpretation of a gold crown of rays rising from an open scroll." },
+  "Euphemism": { image: "term-euphemism", alt: "Painted interpretation of soft cloth laid over a jagged stone." },
+  "Hyperbole": { image: "term-hyperbole", alt: "Painted interpretation of an enormous teacup beside a tiny person." },
+  "Litotes": { image: "term-litotes", alt: "Painted interpretation of a thumbs-up beside a frowning face crossed out in red." },
+  "Meiosis": { image: "term-meiosis", alt: "Painted interpretation of a person with a tiny umbrella in a large storm." },
+  "Oxymoron": { image: "term-oxymoron", alt: "Painted interpretation of a snowflake inside a flame." },
+  "Paradox": { image: "term-paradox", alt: "Painted interpretation of a climber on a staircase that loops back on itself." },
+  "Antithesis": { image: "term-antithesis", alt: "Painted interpretation of a tree with leafy branches in sunlight and bare branches in moonlight." },
+  "Zeugma": { image: "term-zeugma", alt: "Painted interpretation of one key reaching toward both a door and a heart." },
+  "Hyperbaton": { image: "term-hyperbaton", alt: "Painted interpretation of a hand lifting an ink-marked tile from a row." },
+  "Symbol": { image: "term-symbol", alt: "Painted interpretation of a white dove carrying an olive sprig." },
+  "Allegory": { image: "term-allegory", alt: "Painted interpretation of a traveller at a fork between a bright hill and a dark gate." },
+  "Allusion": { image: "term-allusion", alt: "Painted interpretation of a wooden Trojan horse rising from the pages of a book." },
+  "Ambiguity": { image: "term-ambiguity", alt: "Painted interpretation of a shape that can look like a vase or two faces." },
+  "Synaesthesia": { image: "term-synaesthesia", alt: "Painted interpretation of coloured ribbons of sound flowing from a violin." },
+  "Irony": { image: "term-irony", alt: "Painted interpretation of an umbrella raining on the person beneath it." },
+  "Verbal Irony": { image: "term-verbal-irony", alt: "Painted interpretation of a smiling person in rain whose speech bubble shows the sun." },
+  "Situational Irony": { image: "term-situational-irony", alt: "Painted interpretation of a locksmith with a bunch of keys standing outside a locked shop." },
+  "Dramatic Irony": { image: "term-dramatic-irony", alt: "Painted interpretation of a figure hiding behind a curtain while an actor looks away." },
+  "Sarcasm": { image: "term-sarcasm", alt: "Painted interpretation of a stern person clapping beside a flattened cake." },
+  "Innuendo": { image: "term-innuendo", alt: "Painted interpretation of two people sharing a whisper behind a fan." },
+  "Pun": { image: "term-pun", alt: "Painted interpretation of a flying bat beside a wooden cricket bat." },
+};
 
 // Part card aur chapter card, dono ki tasveer isi se banti hai.
 function pic(image, alt) {
   if (!image) return null;
   return {
-    src: "/assets/key-terms/" + image + ".webp",
-    small: "/assets/key-terms/" + image + "-240.webp",
+    src: ASSETS + image + ".webp",
+    small: ASSETS + image + "-240.webp",
     alt: alt || ""
   };
 }
@@ -722,7 +770,14 @@ module.exports = parts.map(function (p, i) {
     counter += 1;
     const terms = (c.sub || []).map(function (name) {
       const slug = termSlug(name);
-      return { name: name, slug: slug, href: "/notes/" + slug + "/", live: liveTerms.indexOf(name) !== -1 };
+      const artwork = termArtwork[name];
+      return {
+        name: name,
+        slug: slug,
+        href: "/notes/" + slug + "/",
+        live: liveTerms.indexOf(name) !== -1,
+        picture: artwork ? { src: ASSETS + artwork.image + ".webp", alt: artwork.alt } : null
+      };
     });
     return Object.assign({}, c, {
       n: counter,

@@ -2,6 +2,12 @@
     Page apne front matter me `part` (pagination alias) deta hai, aur body me ye set karta hai:
       series = { name: "Literary Theory", parts: <poori list>, back: "/literary-criticism/#literary-theory" }
     Live chapter <a> hai, baaki <div>, isliye khol neeche alag-alag hai; andar ka hissa macro me. -#}
+{%- macro termbody(t) -%}
+{%- if t.picture %}
+<img class="ltx-term-thumb" src="{{ t.picture.src }}" alt="{{ t.picture.alt }}" width="192" height="120" loading="lazy">
+{%- endif %}
+<span>{{ t.name }}{% if not t.live %}<span class="sr-only"> (article coming soon)</span>{% endif %}</span>
+{%- endmacro -%}
 {%- macro chbody(ch) -%}
 {%- if ch.picture %}
 <span class="ltx-thumb"><img src="{{ ch.picture.src }}" srcset="{{ ch.picture.small }} 240w, {{ ch.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), 310px" alt="{{ ch.picture.alt }}" width="480" height="300" loading="lazy"></span>
@@ -17,11 +23,13 @@
 {#- Key Terms: har term ek poori-chaudai wali patti. Article ho to link, warna sirf patti (404 nahi). -#}
 <ul class="ltx-subs ltx-terms" aria-label="Terms in this chapter">
 {%- for t in ch.sub %}
-{%- if t.live %}
-<li><a class="ltx-term" href="{{ t.href }}">{{ t.name }}</a></li>
-{%- else %}
-<li><span class="ltx-term ltx-term-soon">{{ t.name }}<span class="sr-only"> (article coming soon)</span></span></li>
-{%- endif %}
+<li>
+  {%- if t.live %}
+  <a class="ltx-term{% if t.picture %} ltx-term-has-picture{% endif %}" href="{{ t.href }}"{% if t.picture %} aria-label="{{ t.name }}"{% endif %}>{{ termbody(t) }}</a>
+  {%- else %}
+  <span class="ltx-term ltx-term-soon{% if t.picture %} ltx-term-has-picture{% endif %}">{{ termbody(t) }}</span>
+  {%- endif %}
+</li>
 {%- endfor %}
 </ul>
 {%- elif ch.sub %}
