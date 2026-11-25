@@ -13,7 +13,18 @@
 {%- if ch.people %}
 <span class="ltx-sum">{{ ch.people | safe }}</span>
 {%- endif %}
-{%- if ch.sub %}
+{%- if ch.sub and ch.strips %}
+{#- Key Terms: har term ek poori-chaudai wali patti. Article ho to link, warna sirf patti (404 nahi). -#}
+<ul class="ltx-subs ltx-terms" aria-label="Terms in this chapter">
+{%- for t in ch.sub %}
+{%- if t.live %}
+<li><a class="ltx-term" href="{{ t.href }}">{{ t.name }}</a></li>
+{%- else %}
+<li><span class="ltx-term ltx-term-soon">{{ t.name }}<span class="sr-only"> (article coming soon)</span></span></li>
+{%- endif %}
+{%- endfor %}
+</ul>
+{%- elif ch.sub %}
 <ul class="ltx-subs" aria-label="Topics in this chapter">
 {%- for t in ch.sub %}
 <li>{{ t | safe }}</li>
@@ -35,11 +46,17 @@
   <div class="wrap">
     <p class="ltx-back"><a href="{{ series.back }}">&larr; All parts</a></p>
     <h2>Chapters in this part</h2>
-    <p>{% if part.count == 1 %}One chapter{% else %}{{ part.count }} chapters{% endif %}, in order. Each chapter is one article. It opens with the thinkers of that school, and every name leads to a page of its own.</p>
+    <p>{% if series.note %}{{ series.note }}{% else %}{% if part.count == 1 %}One chapter{% else %}{{ part.count }} chapters{% endif %}, in order. Each chapter is one article. It opens with the thinkers of that school, and every name leads to a page of its own.{% endif %}</p>
     <ol class="grid ltx-chcards">
       {%- for ch in part.chapters %}
       <li>
-        {%- if ch.live %}
+        {%- if ch.strips %}
+        {#- Term wale chapter ka card sirf dibba hai: link har term ki patti par hai, card par nahi (link ke andar link galat hota). -#}
+        <div class="ltx-card ltx-card-terms ltx-has-subs{% if ch.termsLive == 0 %} ltx-card-soon{% endif %}">
+          {{ chbody(ch) }}
+          <span class="ltx-cta"><span class="ltx-ch-soon">{% if ch.termsLive == 0 %}Coming soon{% else %}{{ ch.termsLive }} of {{ ch.sub | length }} articles ready{% endif %}</span></span>
+        </div>
+        {%- elif ch.live %}
         <a class="ltx-card{% if ch.sub %} ltx-has-subs{% endif %}" href="/notes/{{ ch.slug }}/">
           {{ chbody(ch) }}
           <span class="ltx-cta"><span class="ltx-ch-go">Read</span></span>

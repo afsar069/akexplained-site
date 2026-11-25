@@ -4616,6 +4616,30 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   background:var(--teal);opacity:.6;
 }
 
+/* Key Terms (owner, 2026-11-25): each term is a full-width strip with its name in the middle.
+   Colour (owner, 2026-11-25: "button ka thoda colour change karo, jab cursor jaae to aur change ho"):
+   every strip has a soft teal colour that deepens when the cursor is over it. A term WITH an article is
+   a link and is the stronger one (solid teal, white name, darker teal on hover, pointer); a term without
+   one is a softer strip (light teal, dark name, deeper tint on hover, normal cursor). More colour = it opens.
+   The card around the strips is only a box, so it does not lift on hover. */
+.ltx-terms{gap:8px}
+.ltx-terms li{padding:0}
+.ltx-terms li::before{display:none}
+.ltx-term{
+  display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;
+  padding:9px 14px;border-radius:10px;text-align:center;font-size:.9rem;font-weight:600;line-height:1.3;
+  transition:background-color .18s,border-color .18s,color .18s,box-shadow .18s,transform .18s;
+}
+.ltx-term-soon{background:#DCEEE9;border:1px solid #A9D2C9;color:var(--teal-dark);cursor:default}
+.ltx-term-soon:hover{background:#B7DCD3;border-color:#7FBCB0;box-shadow:0 2px 0 rgba(11,87,80,.18)}
+a.ltx-term{background:var(--teal);border:1px solid var(--teal);color:#fff;cursor:pointer}
+a.ltx-term:hover,a.ltx-term:focus-visible{
+  background:var(--teal-dark);border-color:var(--teal-dark);color:#fff;
+  box-shadow:0 3px 0 rgba(0,0,0,.2);transform:translateY(-1px);
+}
+a.ltx-term:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
+.ltx-card-terms:hover{transform:none;border-color:var(--card-line);box-shadow:none}
+
 /* Previous / next part */
 .ltx-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .ltx-nav-link{

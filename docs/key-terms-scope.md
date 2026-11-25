@@ -157,6 +157,31 @@ Aucitya, *Dramatic Monologue (form)* as Dramatic Monologue.
 - **40. Postcolonial and Postmodern Terms** (7 terms) — thinkers: Spivak · Bhabha · Lyotard · Baudrillard · Hutcheon
   The Other; The Subaltern; Hybridity; Mimicry and Ambivalence; The Metanarrative; Hyperreality; Historiographic Metafiction
 
+## Term buttons and how a term opens (owner, 2026-11-25)
+
+Every term in a chapter card is a **full-width strip with its name in the middle**; clicking it opens that term's own article.
+The owner's words: "ye jo list hai, unke buton bana do, ek patti jo puri idhar se udhar, uske beech naam, click karne se seedha
+article khulega." This replaced the bullet list the other series still use.
+
+- **One article per term**, at `/notes/term-<name>/`. The address is made from the term's name by `termSlug()` in
+  `_data/keyTerms.js`: lower case, plain letters, hyphens, brackets kept as words. Examples: Simile -> `term-simile`;
+  The Nine Rasas (Navarasa) -> `term-the-nine-rasas-navarasa`; Ethos, Pathos and Logos -> `term-ethos-pathos-and-logos`.
+  The build stops if two terms make the same address (a check shows 271 different addresses today). In Pages CMS the
+  owner makes the article with the folder name `term-<name>`.
+- **No article yet = a plain strip, no link**, so there is no 404. All 271 are like this today. A screen reader hears
+  "(article coming soon)" after the name.
+- **To open a term:** put its exact name in the `liveTerms` list at the top of the code in `_data/keyTerms.js`. The build
+  then checks that the name is a real term and that `notes/term-<name>/index.md` exists, and says so in plain words if not.
+  The strip turns teal and links to the article, and the chapter card's foot reads "N of M articles ready".
+  If an article must live at another address, add it to `termSlugOverrides` in the same file.
+- **Colours (owner, 2026-11-25: "button ka thoda colour change karo, jab cursor jaae to aur change ho"):** a strip without an article is soft teal (`#DCEEE9`, dark teal name) and turns a deeper teal tint (`#B7DCD3`) when the cursor is over it, with a normal cursor; a strip with an article is solid teal (`--teal`, white name) and turns darker (`--teal-dark`) with a small lift and a pointer. So more colour means the term opens. Name contrast is 5.5 or higher in all four states. Rules `.ltx-term*` in `assets/site.css`.
+- **Why the chapter card does not link:** the terms are the articles, and a link inside a link is invalid, so the card
+  around the strips is only a box. A chapter's own `slug` and `live` are not used for Key Terms.
+- Checked 2026-11-25 with a temporary "Simile" article (removed again): the strip links to it, the build refuses a term
+  that has no article, 271 strips at 1440, 800 and 375 px, none cut off, none narrower than the card, no nested links.
+- Only Key Terms has strips. Indian Poetics, Cultural Studies and Literary Theory keep their plain lists, because their
+  subchapters are sections of a chapter article, not articles of their own. Ask the owner before changing that.
+
 ## Cautions for the articles
 
 - Several terms are used differently by different schools (irony, the Other, ideology, the sublime, genre
