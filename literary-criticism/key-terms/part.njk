@@ -1,0 +1,15 @@
+---
+layout: literary-theory-layout.njk
+pagination:
+  data: keyTerms
+  size: 1
+  alias: part
+permalink: "/literary-criticism/key-terms/{{ part.slug }}/index.html"
+eleventyComputed:
+  title: "{{ part.name }}"
+  description: "{{ part.summary }} Part {{ part.number }} of the Key Terms and Concepts notes, with {{ part.count }} chapters, for BA, MA and UGC-NET students."
+  crumb_label: "{{ part.name }}"
+---
+{#- Dhancha _includes/ltx-part.njk me hai (Literary Theory, Cultural Studies aur Indian Poetics ke part pages ke saath saanjha). -#}
+{% set series = { name: "Key Terms & Concepts", parts: keyTerms, back: "/literary-criticism/#key-terms" } %}
+{% include "ltx-part.njk" %}
