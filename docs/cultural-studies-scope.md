@@ -1,63 +1,82 @@
 # Cultural Studies: what is in the series, and what each chapter rests on
 
-Written 2026-11-25 for the owner and for any later session. The series is `_data/culturalStudies.js`
-(3 parts, 11 chapters, every chapter still Coming soon). Rule 2 applies: nothing here is invented, and
-what could not be checked is said plainly.
+Written 2026-11-25, updated the same day after the owner allowed more sites. The series is
+`_data/culturalStudies.js` (3 parts, 11 chapters, every chapter Coming soon). Rule 2 applies: nothing here
+is invented, and what could not be checked is said plainly.
 
-## What could NOT be checked (read this first)
+## What the official syllabus says (read 2026-11-25)
 
-The official UGC NET / NTA syllabus PDF and the university syllabus PDFs could not be opened from the
-session: the network policy blocked `mu.ac.in` (Mumbai University, MA English Sem II, Course XI-B
-Cultural Studies), `warwick.ac.uk`, `limitlessliterature.com` and `ebsco.com`. So everything below rests on
-**web-search result summaries**, mostly coaching sites and encyclopaedias, not on the official documents.
-Before an article goes live, the owner (or a session with those hosts allowed) should read the NTA syllabus
-and one university syllabus and correct this list. The wording of NET Unit VII in `exams/net/syllabus/`
-is our own summary, not the NTA's text.
+The UGC NET Bureau syllabus for **English, code 30** (one page, from `ugcnetonline.in`, the address the NTA
+information bulletin gives for syllabi) lists only unit titles: I Drama, II Poetry, III Fiction, short story,
+IV Non-Fictional Prose, V Language, VI English in India, **VII Cultural Studies**, VIII Literary Criticism,
+IX Literary Theory post World War II, X Research Methods and Materials in English. **There are no topics or
+thinkers under Unit VII in the official document.** So any list of Unit VII topics is a study guide's, never the
+NTA's. Our own `/exams/net/syllabus/` page says this (its unit texts are "study-guide notes", with a link to the
+official index), and so must anything built from it.
 
-## NET Unit VII as our page words it
+## What the chapters rest on
 
-"The Birmingham school, ideology and hegemony, popular culture, media, subculture, gender, identity,
-diaspora and globalisation, including Williams, Hoggart, Hall, Gramsci and Bourdieu."
-Search results agree that Cultural Studies is Unit VII, between Language and Literary Criticism (VIII), and
-that Literary Theory post World War II is Unit IX. One prep source lists the unit's key terms as hegemony,
-ideology, cultural capital, habitus and the culture industry. Bourdieu was not named in the lists those
-sources gave; the terms "cultural capital" and "habitus" are his, so the unit may test him through them.
+Three kinds of source, none official for topics:
+
+1. **limitlessliterature.com** (a coaching site; read in full): its Unit VII line, which it says is its own list of
+   what has returned in papers since 2008: *Raymond Williams, Stuart Hall and the Birmingham Centre; ideology,
+   hegemony (Gramsci), discourse (Foucault), popular culture, media and film studies, subaltern studies,
+   globalisation and identity (race, class, gender, caste)*. Its page of 33 past NET Cultural Studies questions
+   (we only counted topics; no question is copied) mentions Williams 18 times, Hall 9, the Birmingham school /
+   CCCS 8, Hoggart 7, the Frankfurt School 6 and "culture industry" 5, mass or popular culture 5, film 3,
+   Thompson 2, Habermas 2, cultural imperialism 2. **Gramsci, hegemony, Bourdieu, Hebdige, subculture, gender,
+   caste, diaspora and globalisation do not appear in those 33 questions.**
+2. **EBSCO Research Starter, "The Birmingham School" (Hahn, 2021; read in full):** the Centre for Contemporary
+   Cultural Studies, University of Birmingham, 1964 to 2002; Hoggart director 1964 to 1968, Hall 1969 to 1979; it
+   studied class, race and feminism and the relation of culture and power; *The Empire Strikes Back: Race and
+   Racism in 70s Britain* and Willis's *Learning to Labour* (1978) are named; alumni named include Paul Gilroy.
+3. **Web-search summaries** (not opened as pages): Hall's "Encoding/Decoding" (1973, revised 1980),
+   Hebdige's *Subculture* (1979), Williams's two 1950s and 1960s books, *Policing the Crisis* (1978), and
+   university syllabi (Warwick, SOAS, Western Ontario).
+
+Still not opened: the Mumbai University MA syllabus (`mu.ac.in` did not resolve even after it was allowed) and the
+Warwick module page (the address returned 404; it has moved).
 
 ## The chapters
 
-| Chapter | Where it came from |
+| Chapter | Rests on |
 |---|---|
-| 1 Introduction to Cultural Studies | The owner asked for it (2026-11-25), like Theory's chapter 1. No article yet. |
-| 2 Raymond Williams: Meanings of Culture and Structure of Feeling | Williams is named in Unit VII. One prep source says he alone is behind at least 9 past questions, including "structure of feeling" and his meanings of "culture" (limitlessliterature.com, via search). *Culture and Society* (1958) and *The Long Revolution* (1961) are the books search results give as his key works; "a whole way of life" and "structure of feeling" are his terms. |
-| 3 Cultural Studies: the Birmingham School | The owner's own chapter, moved from Literary Theory. The Centre for Contemporary Cultural Studies was founded at Birmingham in 1964; Hoggart was its first director and Hall led it later (Wikipedia and EBSCO, via search). |
-| 4 Ideology and Hegemony | Named in Unit VII with Gramsci. A university syllabus (Warwick EN937, via search) lists Williams, Gramsci and the Birmingham School together. |
-| 5 Bourdieu: Class, Taste and Cultural Capital | Bourdieu is named in Unit VII. "Cultural capital" and "habitus" are in the one key-term list above. |
-| 6 Popular Culture, Media and Consumer Society | The owner's own chapter, moved from Literary Theory. |
-| 7 Media and Audiences: Encoding and Decoding | Hall's essay was written in 1973 as a CCCS stencilled paper and revised in 1980 in *Culture, Media, Language* (University of Birmingham repository, via search). It treats the audience as an active reader who may accept, negotiate or oppose the message. A Canadian PhD reading list in Cultural Studies (Western University, via search) sets it. |
-| 8 Subculture | Subculture is named in Unit VII. Hebdige, *Subculture: The Meaning of Style* (1979), grew out of the CCCS work on youth subcultures; the same Western reading list sets it. |
-| 9 Gender and Identity | Gender and identity are named in Unit VII. This chapter is about identity in everyday culture and media, not the feminist and queer theory of Literary Theory Part 6. |
-| 10 Race, Ethnicity and Culture | Not named in our Unit VII wording. It is here because race is one of the areas the CCCS worked on (a collected volume of its essays has a section on it, via search) and because *Policing the Crisis: Mugging, the State and Law and Order* (Hall, Critcher, Jefferson, Clarke and Roberts, 1978) is a CCCS book on the moral panic over "mugging", race, the media and the state. It is not Literary Theory's chapter on Race and Africana Theory (Du Bois, Negritude, Gates). **If the NTA text does not cover race, move or drop this chapter.** |
-| 11 Nation, Diaspora and Globalisation | The owner's own chapter, moved from Literary Theory; diaspora and globalisation are named in Unit VII. |
+| 1 Introduction to Cultural Studies | The owner asked for it. No article yet. |
+| 2 Raymond Williams: Meanings of Culture and Structure of Feeling | The most-tested name in the 33 past questions: which book is his, the order of his books, "structure of feeling", his meanings of "culture". The coaching page lists *Culture and Society* (1958), *The Long Revolution* (1961), *Keywords* (1976) and *Marxism and Literature* (1977). |
+| 3 Cultural Studies: the Birmingham School | The owner's chapter, moved from Theory. EBSCO and the 33 questions (CCCS, Hoggart, Hall, Thompson). |
+| 4 Ideology and Hegemony | Limitless Unit VII line (Gramsci). **No past question on this page.** |
+| 5 Bourdieu: Class, Taste and Cultural Capital | Named only in our own page's study-guide text and in one search summary's key-term list. **Not on the limitless list, and no past question.** Keep or drop: the owner decides. |
+| 6 Popular Culture, Media and Consumer Society | The owner's chapter, moved from Theory. Limitless: popular culture, media and film studies; 5 questions on mass or popular culture. |
+| 7 Media and Audiences: Encoding and Decoding | Hall's "Encoding/Decoding" is in the limitless thinker table and in a university reading list. |
+| 8 Subculture | Hebdige's *Subculture* is on a university reading list (search). **Not on the limitless list, and no past question.** Keep or drop: the owner decides. |
+| 9 Gender and Identity | Limitless: identity (race, class, gender, caste). **No past question.** About identity in everyday culture and media, not feminist and queer theory (Theory Part 6). |
+| 10 Race, Ethnicity and Culture | **Kept on the owner's word.** Race is named in the limitless identity line; EBSCO says the CCCS studied class, race and feminism and names *The Empire Strikes Back*; *Policing the Crisis* is a CCCS book on race, the media and the state. Not Theory's Race and Africana Theory chapter. |
+| 11 Nation, Diaspora and Globalisation | The owner's chapter, moved from Theory. Limitless: globalisation and identity. |
 
-## Considered and left out
+## Found, but not added (the owner decides)
 
-- **The culture industry (Adorno, Horkheimer).** In the key-term list, but it is already in Literary Theory
-  chapter 13 (The Frankfurt School and Critical Theory). A second chapter would only repeat it. Popular
-  Culture, Media and Consumer Society (chapter 6) can point to it.
-- **Fandom, consumption as a separate topic.** The searches did not confirm either as a syllabus topic.
-- **Feminist cultural research at the CCCS, "history", "education and work".** Listed among the Centre's
-  research areas by one source; no separate chapter until a syllabus asks for it.
+- **The Frankfurt School and the culture industry (Adorno, Horkheimer), and Habermas's public sphere.** The most
+  striking find: the limitless page files these under Cultural Studies, with 6 past questions on the Frankfurt
+  School and 5 on the culture industry. Literary Theory chapter 13 (The Frankfurt School and Critical Theory)
+  already covers the thinkers. Options: leave it in Theory; move it to Cultural Studies (Theory then has 28
+  chapters); or keep it and add a short Cultural Studies chapter on mass culture and the culture industry.
+- **Film studies** (limitless Unit VII line; 3 questions mention film).
+- **Caste** as part of identity (limitless line only; no past question).
+- **Discourse (Foucault)** and **subaltern studies** (limitless Unit VII line). Both are already in Literary
+  Theory (post-structuralism; Part 7), where the owner's NET-Unit-IX rule keeps them.
+- **Cultural imperialism** (2 questions; Said's *Culture and Imperialism* is a named trap).
 
-## Sources used (all via web search; none opened as a page)
+## Textbooks worth reading when the articles are written
 
-- Stuart Hall, "Encoding/Decoding": University of Birmingham ePapers record, https://epapers.bham.ac.uk/id/eprint/2962/
-- CCCS history and research areas: https://en.wikipedia.org/wiki/Centre_for_Contemporary_Cultural_Studies and the EBSCO research starter
+Storey, *Cultural Theory and Popular Culture*; Barker, *Cultural Studies: Theory and Practice*; During (ed.),
+*The Cultural Studies Reader*; Hoggart, *The Uses of Literacy*; Williams, *Culture and Society*. Check edition and
+page before citing.
+
+## Sources
+
+- UGC NET Bureau, NET Syllabus, English, code 30: `https://ugcnetonline.in/showPdf.php?p1=NTA_All_R_Syllabus/30/English_English.pdf` (index: `https://ugcnetonline.in/syllabus-new.php`; the NTA bulletin, `ugcnet.nta.ac.in/images/information-bulletin-for-ugc-net-june-2025-16042025.pdf`, section 2.3, points to it)
+- Limitless Literature, UGC NET English syllabus: https://limitlessliterature.com/ugc-net-english-syllabus/ and its Cultural Studies past-questions page: https://limitlessliterature.com/cultural-studies-previous-year-ugc-net-english/
+- EBSCO Research Starters, The Birmingham School (Centre for Contemporary Cultural Studies): https://www.ebsco.com/research-starters/ethnic-and-cultural-studies/birmingham-school-centre-contemporary-cultural
+- Hall, "Encoding/Decoding", University of Birmingham ePapers: https://epapers.bham.ac.uk/id/eprint/2962/
 - Hebdige, *Subculture: The Meaning of Style*: https://en.wikipedia.org/wiki/Subculture:_The_Meaning_of_Style
-- Williams, *Culture and Society* and *The Long Revolution*; "structure of feeling": https://en.wikipedia.org/wiki/Structure_of_feeling and the Cambridge *Modern Intellectual History* article on Williams's structure of feeling
-- *Policing the Crisis*: Open University repository record https://oro.open.ac.uk/37679 and the *Journal of Social Policy* review
-- NET Unit VII placement and key terms: prep-site summaries (limitlessliterature.com, arpitakarwa.com, vishwanathbite.com)
-- University syllabi, via search: Warwick (EN937, EN9C1), SOAS (Cultural Studies: Origins, Ideas and New Approaches), University of Western Ontario PhD reading list
-
-Textbooks worth reading when the articles are written (named in the search results or standard in the
-field; check edition and page before citing): Storey, *Cultural Theory and Popular Culture*; Barker,
-*Cultural Studies: Theory and Practice*; During (ed.), *The Cultural Studies Reader*.
+- *Policing the Crisis*: https://oro.open.ac.uk/37679
