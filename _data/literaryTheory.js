@@ -114,8 +114,9 @@ const parts = [
     ]
   },
   {
+    // slug purana hi rakha (URL na tute); naam 2026-11-25 ko owner ke kehne par badla.
     slug: "race-empire-and-nation",
-    name: "Race, empire and nation",
+    name: "Empire, race and postcolonial thought",
     summary:
       "Empire, the writing it produced and the writing that answered back — and how a nation and a race get imagined.",
     image: "",
