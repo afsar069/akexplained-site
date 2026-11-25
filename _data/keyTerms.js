@@ -660,6 +660,9 @@ const parts = [
   }
 ];
 
+const fs = require("fs");
+const path = require("path");
+
 const BASE = "/literary-criticism/key-terms/";
 
 // Part card aur chapter card, dono ki tasveer isi se banti hai.
@@ -672,20 +675,70 @@ function pic(image, alt) {
   };
 }
 
+// TERM BUTTONS (owner, 2026-11-25: "ye jo list hai, unke buton bana do, ek patti jo puri idhar se udhar,
+// uske beech naam, click karne se seedha article khulega"). Chapter card ke andar har term ek poori-chaudai
+// wali patti hai. Har term ka apna article hota hai: /notes/term-<naam>/ (Pages CMS me folder ka naam
+// `term-<naam>`, jaise term-simile). Jab tak article nahi, patti link nahi hoti (404 nahi chahiye).
+//
+// ARTICLE AANE PAR: us term ka naam yahan `liveTerms` me likho (bilkul waisa jaisa upar sub list me hai).
+// Build tab tak nahi chalega jab tak notes/term-<naam>/index.md maujood na ho, ya naam galat ho.
+const liveTerms = [
+  // "Simile",
+];
+// Kisi term ka article kisi aur naam se likha ho to yahan override: { "Simile": "term-simile-and-metaphor" }
+const termSlugOverrides = {};
+
+function termSlug(name) {
+  return termSlugOverrides[name] || "term-" + name
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase().replace(/['\u2019]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+}
+
+const seenSlugs = {};
+const seenNames = {};
+parts.forEach(function (p) {
+  p.chapters.forEach(function (c) {
+    (c.sub || []).forEach(function (t) {
+      const slug = termSlug(t);
+      if (seenSlugs[slug]) throw new Error("keyTerms.js: two terms make the article address '" + slug + "': " + seenSlugs[slug] + " and " + t);
+      seenSlugs[slug] = t;
+      seenNames[t] = slug;
+    });
+  });
+});
+liveTerms.forEach(function (name) {
+  if (!seenNames[name]) throw new Error("keyTerms.js: liveTerms has '" + name + "', which is not a term in the lists");
+  const file = path.join(__dirname, "..", "notes", seenNames[name], "index.md");
+  if (!fs.existsSync(file)) throw new Error("keyTerms.js: '" + name + "' is in liveTerms but notes/" + seenNames[name] + "/index.md does not exist");
+});
+
 let counter = 0;
 
 module.exports = parts.map(function (p, i) {
   const prev = parts[i - 1];
   const next = parts[i + 1];
+  const chapters = p.chapters.map(function (c) {
+    counter += 1;
+    const terms = (c.sub || []).map(function (name) {
+      const slug = termSlug(name);
+      return { name: name, slug: slug, href: "/notes/" + slug + "/", live: liveTerms.indexOf(name) !== -1 };
+    });
+    return Object.assign({}, c, {
+      n: counter,
+      picture: pic(c.image, c.alt),
+      sub: terms,
+      strips: true,
+      termsLive: terms.filter(function (t) { return t.live; }).length
+    });
+  });
   return Object.assign({}, p, {
     number: i + 1,
     href: BASE + p.slug + "/",
     count: p.chapters.length,
-    chapters: p.chapters.map(function (c) {
-      counter += 1;
-      return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
-    }),
-    liveCount: p.chapters.filter(function (c) { return c.live; }).length,
+    chapters: chapters,
+    // Is series me khulne wali cheez term ka article hai (chapter ka card sirf dibba hai).
+    liveCount: chapters.reduce(function (n, c) { return n + c.termsLive; }, 0),
     picture: pic(p.image, p.alt),
     prev: prev ? { name: prev.name, href: BASE + prev.slug + "/", number: i } : null,
     next: next ? { name: next.name, href: BASE + next.slug + "/", number: i + 2 } : null

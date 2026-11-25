@@ -11,5 +11,5 @@ eleventyComputed:
   crumb_label: "{{ part.name }}"
 ---
 {#- Dhancha _includes/ltx-part.njk me hai (Literary Theory, Cultural Studies aur Indian Poetics ke part pages ke saath saanjha). -#}
-{% set series = { name: "Key Terms & Concepts", parts: keyTerms, back: "/literary-criticism/#key-terms" } %}
+{% set series = { name: "Key Terms & Concepts", parts: keyTerms, back: "/literary-criticism/#key-terms", note: part.count ~ " chapters, in order. Each term has its own article. A term opens as soon as its article is ready." } %}
 {% include "ltx-part.njk" %}
