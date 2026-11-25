@@ -70,7 +70,7 @@ In *Culture and Anarchy* (1869), Arnold widened this critique to society at larg
 
 ### Poetry as "a criticism of life"
 
-In "The Study of Poetry" (written in 1880 as the general introduction to T. H. Ward's anthology *The English Poets*, and reprinted in *Essays in Criticism*, Second Series, 1888), Arnold set out his mature view of poetry. Poetry, he declared, is `"a criticism of life under the conditions fixed for such a criticism by the laws of poetic truth and poetic beauty"`.
+In "The Study of Poetry" (written in 1880 as the general introduction to T. H. Ward's anthology *The English Poets*, and reprinted in *Essays in Criticism*, Second Series, 1888), Arnold set out his mature view of poetry. Poetry, he declared, is "a criticism of life under the conditions fixed for such a criticism by the laws of poetic truth and poetic beauty".
 
 Great poetry, Arnold argued, does not merely entertain; it illuminates how to live. To reach the highest rank, a poem must unite superior style—what Arnold called the **grand style**—with **high seriousness**, an idea he adapted from Aristotle's *Poetics* (*spoudaiotes*).
 
@@ -138,7 +138,7 @@ In the famous **Conclusion** to *The Renaissance* (1873), Pater meditated on the
 
 Because art comes to us "proposing frankly to give nothing but the highest quality to your moments as they pass, and simply for those moments' sake", Pater closed the book by praising the love of **"art for its own sake"**.
 
-In his essay "The School of Giorgione" (added in 1877), Pater offered another enduring maxim: `"All art constantly aspires towards the condition of music."` Why music? Because in music, form and content cannot be separated—you cannot summarise a symphony's "message" apart from its notes. Great poetry and painting strive for that same perfect fusion of form and meaning.
+In his essay "The School of Giorgione" (added in 1877), Pater offered another enduring maxim: "All art constantly aspires towards the condition of music." Why music? Because in music, form and content cannot be separated—you cannot summarise a symphony's "message" apart from its notes. Great poetry and painting strive for that same perfect fusion of form and meaning.
 
 ### Important points to remember
 
@@ -157,7 +157,7 @@ Oscar Wilde (1854-1900)—dramatist, novelist and dazzling conversationalist—s
 
 First published in 1889 and collected in *Intentions* (1891), **"The Decay of Lying"** is a sparkling dialogue between **Vivian** and **Cyril**. With playful seriousness, Wilde attacks realistic fiction and turns two thousand years of Aristotelian *mimesis* upside down.
 
-Art, Vivian argues, is not a dull photograph of everyday facts; `"Lying, the telling of beautiful untrue things, is the proper aim of Art."` Even more famously, Wilde reverses the ancient mirror metaphor altogether: `"Life imitates Art far more than Art imitates Life."` People only began noticing the strange beauty of London fogs, Vivian jokes, after Impressionist painters taught them how to look at fog. Nature itself is shaped by the artistic images through which we learn to see it.
+Art, Vivian argues, is not a dull photograph of everyday facts; "Lying, the telling of beautiful untrue things, is the proper aim of Art." Even more famously, Wilde reverses the ancient mirror metaphor altogether: "Life imitates Art far more than Art imitates Life." People only began noticing the strange beauty of London fogs, Vivian jokes, after Impressionist painters taught them how to look at fog. Nature itself is shaped by the artistic images through which we learn to see it.
 
 ### *The Critic as Artist*
 
