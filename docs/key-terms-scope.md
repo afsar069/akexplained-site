@@ -174,6 +174,7 @@ article khulega." This replaced the bullet list the other series still use.
   then checks that the name is a real term and that `notes/term-<name>/index.md` exists, and says so in plain words if not.
   The strip turns teal and links to the article, and the chapter card's foot reads "N of M articles ready".
   If an article must live at another address, add it to `termSlugOverrides` in the same file.
+- **Colours (owner, 2026-11-25: "button ka thoda colour change karo, jab cursor jaae to aur change ho"):** a strip without an article is soft teal (`#DCEEE9`, dark teal name) and turns a deeper teal tint (`#B7DCD3`) when the cursor is over it, with a normal cursor; a strip with an article is solid teal (`--teal`, white name) and turns darker (`--teal-dark`) with a small lift and a pointer. So more colour means the term opens. Name contrast is 5.5 or higher in all four states. Rules `.ltx-term*` in `assets/site.css`.
 - **Why the chapter card does not link:** the terms are the articles, and a link inside a link is invalid, so the card
   around the strips is only a box. A chapter's own `slug` and `live` are not used for Key Terms.
 - Checked 2026-11-25 with a temporary "Simile" article (removed again): the strip links to it, the build refuses a term
