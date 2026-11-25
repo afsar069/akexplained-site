@@ -1,0 +1,103 @@
+// Cultural Studies series (owner, 2026-11-25: "NET syllabus ke according chalenge, jitna
+// literary theory me hota hai utna theory me rehne do, jo cultural studies me hona chahiye
+// wo cultural studies me le jaao; format wahi jo abhi banaya hai").
+//
+// Ye Literary Theory (`_data/literaryTheory.js`) ka bilkul wahi dhancha hai: parts, har part
+// ke chapters, aur ek hi registry se hub ke cards, part pages aur sitemap lines.
+//
+// SCOPE yahan se aaya: hamare NET syllabus page (exams/net/syllabus) ki Unit VII
+// "Cultural Studies" — "The Birmingham school, ideology and hegemony, popular culture,
+// media, subculture, gender, identity, diaspora and globalisation, including Williams,
+// Hoggart, Hall, Gramsci and Bourdieu." Unit IX "Literary Theory post World War II"
+// (structuralism ... Marxism, feminism, New Historicism, postcolonialism, queer theory,
+// ecocriticism) Literary Theory me hi rahi.
+//
+// Teen chapter Literary Theory se yahan aaye hain (title, thinkers aur "people" wahi jo
+// owner ke the): Birmingham School, Popular Culture / Media, Nation / Diaspora /
+// Globalisation. Chaar naye hain, sirf Unit VII ke shabdon se: Ideology and Hegemony,
+// Bourdieu, Subculture, Gender and Identity.
+//
+// `people` me sirf wahi naam hain jo owner ne diye ya syllabus ne likhe (rule 2). Naye
+// chapters me aur naam owner se poochh kar hi jude (jaise Subculture ke liye abhi khaali).
+//
+// `n` yahan typed nahi hota: upar se neeche 1, 2, 3 ... khud banta hai.
+//
+// `slug` = article ka pata /notes/<slug>/. Abhi koi article nahi, isliye sab `live: false`
+// (Coming soon, link nahi). Article aane par us chapter ko `live: true` karo. Slug tab tak
+// badla ja sakta hai.
+//
+// PICTURE: Literary Theory jaisi hi, par files `assets/cultural-studies/` me:
+//   `<naam>.webp` 480 x 300 (200 KB se kam) aur `<naam>-240.webp` 240 x 150, phir us part
+//   ya chapter par `image: "<naam>"` aur `alt: "<jo tasveer me dikh raha hai>"`.
+
+const parts = [
+  {
+    slug: "culture-class-and-ideology",
+    name: "Culture, class and ideology",
+    summary:
+      "Culture seen as a whole way of life, as a field where ideas and power meet, and as a sign of class and taste.",
+    image: "",
+    alt: "",
+    chapters: [
+      { title: "Cultural Studies: the Birmingham School", people: "Hoggart · Williams · Hall · Thompson", slug: "cultural-studies-birmingham-school" },
+      { title: "Ideology and Hegemony", people: "Gramsci", slug: "cultural-studies-ideology-hegemony" },
+      { title: "Bourdieu: Class, Taste and Cultural Capital", people: "", slug: "cultural-studies-bourdieu" }
+    ]
+  },
+  {
+    slug: "popular-culture-media-and-subculture",
+    name: "Popular culture, media and subculture",
+    summary:
+      "Everyday culture as the subject: what people watch, read and wear, and the media that carry it.",
+    image: "",
+    alt: "",
+    chapters: [
+      { title: "Popular Culture, Media and Consumer Society", people: "Barthes's <i>Mythologies</i> · McLuhan · Fiske", slug: "cultural-studies-popular-culture-media" },
+      { title: "Subculture", people: "", slug: "cultural-studies-subculture" }
+    ]
+  },
+  {
+    slug: "identity-diaspora-and-globalisation",
+    name: "Identity, diaspora and globalisation",
+    summary:
+      "How people make and show who they are, and how identity moves across borders in a global world.",
+    image: "",
+    alt: "",
+    chapters: [
+      { title: "Gender and Identity", people: "", slug: "cultural-studies-gender-identity" },
+      { title: "Nation, Diaspora and Globalisation", people: "Anderson · Gilroy · Appadurai · Brah", slug: "cultural-studies-nation-diaspora-globalisation" }
+    ]
+  }
+];
+
+const BASE = "/literary-criticism/cultural-studies/";
+
+// Part card aur chapter card, dono ki tasveer isi se banti hai.
+function pic(image, alt) {
+  if (!image) return null;
+  return {
+    src: "/assets/cultural-studies/" + image + ".webp",
+    small: "/assets/cultural-studies/" + image + "-240.webp",
+    alt: alt || ""
+  };
+}
+
+let counter = 0;
+
+module.exports = parts.map(function (p, i) {
+  const prev = parts[i - 1];
+  const next = parts[i + 1];
+  return Object.assign({}, p, {
+    number: i + 1,
+    href: BASE + p.slug + "/",
+    count: p.chapters.length,
+    chapters: p.chapters.map(function (c) {
+      counter += 1;
+      return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
+    }),
+    liveCount: p.chapters.filter(function (c) { return c.live; }).length,
+    picture: pic(p.image, p.alt),
+    prev: prev ? { name: prev.name, href: BASE + prev.slug + "/", number: i } : null,
+    next: next ? { name: next.name, href: BASE + next.slug + "/", number: i + 2 } : null
+  });
+});

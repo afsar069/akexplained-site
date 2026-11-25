@@ -4528,6 +4528,8 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
    Tasveer `_data/literaryTheory.js` me `image` se aati hai; na ho to numbered panel. */
 /* Aath cards: chaudi screen par 4 + 4, taaki do poori line banein. */
 .ltx-cards{grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0 14px}
+/* Cultural Studies ke teen cards: chaudi screen par teen barabar, chaar-column me ek khaali nahi. */
+.ltx-cards-3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .ltx-card{
   display:flex;flex-direction:column;color:inherit;background:var(--card-paper);
   border:1px solid var(--card-line);border-radius:15px;padding:11px 11px 15px;

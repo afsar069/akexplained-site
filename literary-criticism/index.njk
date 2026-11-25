@@ -123,11 +123,25 @@
   </div>
 </section>
 
-<section style="border-top:1px solid var(--border)">
+<section class="ltx" id="cultural-studies" style="border-top:1px solid var(--border)">
   <div class="wrap">
     <h2>Cultural Studies</h2>
-    <p>Criticism that reads literature through society, history and power — Marxist, feminist, gender and queer, postcolonial, new historicist and ecocritical approaches.</p>
-    <p class="meta" style="margin-top:.75rem">Articles coming soon.</p>
+    <p>Culture itself as the subject, not only books: the Birmingham school, ideology and hegemony, class and taste, popular culture and media, subculture, identity, and diaspora and globalisation. Open a part to see its chapters.</p>
+    <div class="grid ltx-cards ltx-cards-3">
+      {%- for part in culturalStudies %}
+      <a class="ltx-card" href="{{ part.href }}">
+        {%- if part.picture %}
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), 310px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        {%- else %}
+        <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
+        {%- endif %}
+        <span class="ltx-meta">{{ part.count }} chapters</span>
+        <span class="ltx-name">{{ part.name }}</span>
+        <span class="ltx-sum">{{ part.summary }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="meta">{{ culturalStudiesTotals.parts }} parts &middot; {{ culturalStudiesTotals.chapters }} chapters planned{% if culturalStudiesTotals.live == 0 %} &middot; Articles coming soon{% endif %}</p>
   </div>
 </section>
 

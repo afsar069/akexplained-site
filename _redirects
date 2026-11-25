@@ -36,3 +36,6 @@
 # so send anyone who trims the address back to those cards.
 /literary-criticism/literary-theory   /literary-criticism/#literary-theory   301
 /literary-criticism/literary-theory/  /literary-criticism/#literary-theory   301
+# Same for Cultural Studies: its parts are /literary-criticism/cultural-studies/<part>/, the folder has no page.
+/literary-criticism/cultural-studies   /literary-criticism/#cultural-studies   301
+/literary-criticism/cultural-studies/  /literary-criticism/#cultural-studies   301

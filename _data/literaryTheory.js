@@ -4,9 +4,14 @@
 // har part ka page (/literary-criticism/literary-theory/<slug>/) aur sitemap lines.
 // Naya chapter ya naya part isi file me jodna hai, page me nahi.
 //
-// Har chapter ka `n` owner ke apne plan ka number hai (1 se 32; chapter 1 = Introduction,
-// owner ne 2026-11-25 ko tay kiya). Ye numbers page par
-// dikhte hain, isliye inhe badla nahi jata.
+// Chapter ka number (`n`) ab yahan likha nahi jata: ye part-dar-part, upar se neeche
+// 1, 2, 3 ... ginkar khud banta hai, taaki koi chapter hatne ya jaane par number me gap
+// na pade. Chapter 1 = Introduction (owner ne 2026-11-25 ko tay kiya).
+//
+// 2026-11-25 (owner: "NET syllabus ke according chalenge"): NET Unit VII "Cultural Studies"
+// ke chapters (Birmingham School, Popular Culture and Media, Nation / Diaspora /
+// Globalisation) yahan se nikal kar `_data/culturalStudies.js` me chale gaye. Unit IX
+// "Literary Theory post World War II" ki cheezein yahin rahin.
 //
 // `slug` = us chapter ka article kahan rahega: /notes/<slug>/. Article abhi likha nahi
 // gaya, isliye har chapter `live: false` hai aur card link nahi banta — sirf
@@ -35,13 +40,13 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 1, title: "Introduction to Literary Theory", people: "", slug: "literary-theory-introduction" },
-      { n: 2, title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
-      { n: 3, title: "Saussure and Structural Linguistics", people: "", slug: "literary-theory-saussure" },
-      { n: 4, title: "Structuralism", people: "Lévi-Strauss · Barthes · Todorov · Greimas", slug: "literary-theory-structuralism" },
-      { n: 5, title: "Narratology", people: "Genette · Bal · Prince · Chatman", slug: "literary-theory-narratology" },
-      { n: 6, title: "Semiotics", people: "Peirce · Eco · Barthes", slug: "literary-theory-semiotics" },
-      { n: 7, title: "Bakhtin and Dialogism", people: "", slug: "literary-theory-bakhtin" }
+      { title: "Introduction to Literary Theory", people: "", slug: "literary-theory-introduction" },
+      { title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
+      { title: "Saussure and Structural Linguistics", people: "", slug: "literary-theory-saussure" },
+      { title: "Structuralism", people: "Lévi-Strauss · Barthes · Todorov · Greimas", slug: "literary-theory-structuralism" },
+      { title: "Narratology", people: "Genette · Bal · Prince · Chatman", slug: "literary-theory-narratology" },
+      { title: "Semiotics", people: "Peirce · Eco · Barthes", slug: "literary-theory-semiotics" },
+      { title: "Bakhtin and Dialogism", people: "", slug: "literary-theory-bakhtin" }
     ]
   },
   {
@@ -52,8 +57,8 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 8, title: "Phenomenology and Hermeneutics", people: "Husserl · Heidegger · Gadamer · Ricoeur", slug: "literary-theory-phenomenology-hermeneutics" },
-      { n: 9, title: "Reader-Response and Reception Theory", people: "Iser · Jauss · Fish · Rosenblatt · Holland", slug: "literary-theory-reader-response" }
+      { title: "Phenomenology and Hermeneutics", people: "Husserl · Heidegger · Gadamer · Ricoeur", slug: "literary-theory-phenomenology-hermeneutics" },
+      { title: "Reader-Response and Reception Theory", people: "Iser · Jauss · Fish · Rosenblatt · Holland", slug: "literary-theory-reader-response" }
     ]
   },
   {
@@ -64,23 +69,21 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 10, title: "Post-structuralism", people: "later Barthes · Foucault · Kristeva · Lacan", slug: "literary-theory-post-structuralism" },
-      { n: 11, title: "Deconstruction", people: "Derrida · de Man · J. Hillis Miller", slug: "literary-theory-deconstruction" }
+      { title: "Post-structuralism", people: "later Barthes · Foucault · Kristeva · Lacan", slug: "literary-theory-post-structuralism" },
+      { title: "Deconstruction", people: "Derrida · de Man · J. Hillis Miller", slug: "literary-theory-deconstruction" }
     ]
   },
   {
     slug: "society-history-and-culture",
     name: "Society, history and culture",
     summary:
-      "Reading literature as the work of a class, a market and a moment in history, and reading everyday culture by the same light.",
+      "Reading literature as the work of a class, a market and a moment in history.",
     image: "",
     alt: "",
     chapters: [
-      { n: 12, title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
-      { n: 13, title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "literary-theory-frankfurt-school" },
-      { n: 14, title: "New Historicism and Cultural Materialism", people: "Greenblatt · Montrose · Dollimore · Sinfield", slug: "literary-theory-new-historicism" },
-      { n: 15, title: "Cultural Studies: the Birmingham School", people: "Hoggart · Williams · Hall · Thompson", slug: "literary-theory-cultural-studies" },
-      { n: 16, title: "Popular Culture, Media and Consumer Society", people: "Barthes's <i>Mythologies</i> · McLuhan · Fiske", slug: "literary-theory-popular-culture" }
+      { title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
+      { title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "literary-theory-frankfurt-school" },
+      { title: "New Historicism and Cultural Materialism", people: "Greenblatt · Montrose · Dollimore · Sinfield", slug: "literary-theory-new-historicism" }
     ]
   },
   {
@@ -91,8 +94,8 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 17, title: "Psychoanalytic Criticism", people: "Freud · Jung · Lacan · Klein · Bloom", slug: "literary-theory-psychoanalytic" },
-      { n: 18, title: "Myth and Archetypal Criticism", people: "Frazer · Jung · Frye · Campbell", slug: "literary-theory-myth-archetypal" }
+      { title: "Psychoanalytic Criticism", people: "Freud · Jung · Lacan · Klein · Bloom", slug: "literary-theory-psychoanalytic" },
+      { title: "Myth and Archetypal Criticism", people: "Frazer · Jung · Frye · Campbell", slug: "literary-theory-myth-archetypal" }
     ]
   },
   {
@@ -103,10 +106,10 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 19, title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism", people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar", slug: "literary-theory-feminism-anglo-american" },
-      { n: 20, title: "Feminist Theory II: French Feminism", people: "Cixous · Irigaray · Kristeva", slug: "literary-theory-french-feminism" },
-      { n: 21, title: "Black, Third-World and Intersectional Feminism", people: "hooks · Walker · Mohanty · Crenshaw", slug: "literary-theory-intersectional-feminism" },
-      { n: 22, title: "Gender and Queer Theory", people: "Rubin · Butler · Sedgwick · Foucault", slug: "literary-theory-gender-queer" }
+      { title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism", people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar", slug: "literary-theory-feminism-anglo-american" },
+      { title: "Feminist Theory II: French Feminism", people: "Cixous · Irigaray · Kristeva", slug: "literary-theory-french-feminism" },
+      { title: "Black, Third-World and Intersectional Feminism", people: "hooks · Walker · Mohanty · Crenshaw", slug: "literary-theory-intersectional-feminism" },
+      { title: "Gender and Queer Theory", people: "Rubin · Butler · Sedgwick · Foucault", slug: "literary-theory-gender-queer" }
     ]
   },
   {
@@ -117,10 +120,9 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 23, title: "Postcolonial Theory", people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin", slug: "literary-theory-postcolonial" },
-      { n: 24, title: "Subaltern Studies and Indian Postcolonial Thought", people: "Guha · Chatterjee · Chakrabarty · Ahmad", slug: "literary-theory-subaltern-studies" },
-      { n: 25, title: "Race and Africana Theory", people: "Du Bois · Négritude · Gates · Black Arts · Critical Race Theory", slug: "literary-theory-race-africana" },
-      { n: 26, title: "Nation, Diaspora and Globalisation", people: "Anderson · Gilroy · Appadurai · Brah", slug: "literary-theory-nation-diaspora" }
+      { title: "Postcolonial Theory", people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin", slug: "literary-theory-postcolonial" },
+      { title: "Subaltern Studies and Indian Postcolonial Thought", people: "Guha · Chatterjee · Chakrabarty · Ahmad", slug: "literary-theory-subaltern-studies" },
+      { title: "Race and Africana Theory", people: "Du Bois · Négritude · Gates · Black Arts · Critical Race Theory", slug: "literary-theory-race-africana" }
     ]
   },
   {
@@ -131,12 +133,12 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
-      { n: 27, title: "Modernity to Postmodernism", people: "Lyotard · Baudrillard · Jameson · Hutcheon", slug: "literary-theory-postmodernism" },
-      { n: 28, title: "Ecocriticism and Environmental Humanities", people: "", slug: "literary-theory-ecocriticism" },
-      { n: 29, title: "Posthumanism, Animal Studies and Cyberculture", people: "Haraway · Hayles", slug: "literary-theory-posthumanism" },
-      { n: 30, title: "Trauma and Memory Studies", people: "Caruth · LaCapra · Hirsch", slug: "literary-theory-trauma-memory" },
-      { n: 31, title: "Translation Studies and World Literature", people: "Venuti · Bassnett · Moretti · Casanova · Damrosch", slug: "literary-theory-translation-world-literature" },
-      { n: 32, title: "Newer Directions: Disability Studies, Affect Theory, Digital Humanities", people: "", slug: "literary-theory-newer-directions" }
+      { title: "Modernity to Postmodernism", people: "Lyotard · Baudrillard · Jameson · Hutcheon", slug: "literary-theory-postmodernism" },
+      { title: "Ecocriticism and Environmental Humanities", people: "", slug: "literary-theory-ecocriticism" },
+      { title: "Posthumanism, Animal Studies and Cyberculture", people: "Haraway · Hayles", slug: "literary-theory-posthumanism" },
+      { title: "Trauma and Memory Studies", people: "Caruth · LaCapra · Hirsch", slug: "literary-theory-trauma-memory" },
+      { title: "Translation Studies and World Literature", people: "Venuti · Bassnett · Moretti · Casanova · Damrosch", slug: "literary-theory-translation-world-literature" },
+      { title: "Newer Directions: Disability Studies, Affect Theory, Digital Humanities", people: "", slug: "literary-theory-newer-directions" }
     ]
   }
 ];
@@ -153,6 +155,8 @@ function pic(image, alt) {
   };
 }
 
+let counter = 0;
+
 module.exports = parts.map(function (p, i) {
   const prev = parts[i - 1];
   const next = parts[i + 1];
@@ -162,7 +166,8 @@ module.exports = parts.map(function (p, i) {
     count: p.chapters.length,
     // Chapter cards: har chapter ka apna picture rasta (ya null -> numbered panel).
     chapters: p.chapters.map(function (c) {
-      return Object.assign({}, c, { picture: pic(c.image, c.alt) });
+      counter += 1;
+      return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
     }),
     // Kitne chapter likhe ja chuke hain — abhi sab 0, sab "Coming soon".
     liveCount: p.chapters.filter(function (c) { return c.live; }).length,
