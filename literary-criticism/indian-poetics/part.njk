@@ -1,0 +1,15 @@
+---
+layout: literary-theory-layout.njk
+pagination:
+  data: indianPoetics
+  size: 1
+  alias: part
+permalink: "/literary-criticism/indian-poetics/{{ part.slug }}/index.html"
+eleventyComputed:
+  title: "{{ part.name }}"
+  description: "{{ part.summary }} Part {{ part.number }} of the Indian Poetics notes, with {{ part.count }} chapters, for BA, MA and UGC-NET students."
+  crumb_label: "{{ part.name }}"
+---
+{#- Dhancha _includes/ltx-part.njk me hai (Literary Theory aur Cultural Studies ke part pages ke saath saanjha). -#}
+{% set series = { name: "Indian Poetics", parts: indianPoetics, back: "/literary-criticism/#indian-poetics" } %}
+{% include "ltx-part.njk" %}

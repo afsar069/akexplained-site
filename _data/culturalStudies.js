@@ -17,8 +17,20 @@
 // Globalisation. Chaar naye hain, sirf Unit VII ke shabdon se: Ideology and Hegemony,
 // Bourdieu, Subculture, Gender and Identity.
 //
-// `people` me sirf wahi naam hain jo owner ne diye ya syllabus ne likhe (rule 2). Naye
-// chapters me aur naam owner se poochh kar hi jude (jaise Subculture ke liye abhi khaali).
+// 2026-11-25 (owner: "Introduction jod do, aur web search karke dekho aur kya kya aata hai
+// cultural studies me, jo mile wo add karo"; phir "chapter 10 add karna hai"): ek Introduction
+// aur chaar chapter jude (Williams, Media and Audiences, Race and Ethnicity; Subculture me
+// Hebdige). Sources docs/cultural-studies-scope.md me hain.
+//
+// VERIFIED (2026-11-25, jab owner ne sites allow ki): UGC NET Bureau ka asli English syllabus
+// (code 30, ugcnetonline.in se) sirf unit ke TITLE deta hai: "Unit VII: Cultural Studies",
+// uske neeche koi topic nahi. Isliye Unit VII ke topics kisi official document me nahi hain;
+// hamare NET syllabus page ka text "study-guide notes" hai (wahan likha bhi hai). Chapters ka
+// aadhar hai: EBSCO ka Birmingham School overview, limitlessliterature.com ki Unit VII list aur
+// uske 33 purane NET sawal, aur search ke university syllabi. mu.ac.in abhi bhi nahi khula.
+//
+// `people` me sirf wahi naam / kitaabein hain jo owner ne diye ya search ke sources me mili
+// (rule 2). Aur naam owner se poochh kar hi jude.
 //
 // `n` yahan typed nahi hota: upar se neeche 1, 2, 3 ... khud banta hai.
 //
@@ -39,6 +51,8 @@ const parts = [
     image: "",
     alt: "",
     chapters: [
+      { title: "Introduction to Cultural Studies", people: "", slug: "cultural-studies-introduction" },
+      { title: "Raymond Williams: Meanings of Culture and Structure of Feeling", people: "<i>Culture and Society</i> · <i>The Long Revolution</i> · <i>Keywords</i> · <i>Marxism and Literature</i>", slug: "cultural-studies-raymond-williams" },
       { title: "Cultural Studies: the Birmingham School", people: "Hoggart · Williams · Hall · Thompson", slug: "cultural-studies-birmingham-school" },
       { title: "Ideology and Hegemony", people: "Gramsci", slug: "cultural-studies-ideology-hegemony" },
       { title: "Bourdieu: Class, Taste and Cultural Capital", people: "", slug: "cultural-studies-bourdieu" }
@@ -53,18 +67,20 @@ const parts = [
     alt: "",
     chapters: [
       { title: "Popular Culture, Media and Consumer Society", people: "Barthes's <i>Mythologies</i> · McLuhan · Fiske", slug: "cultural-studies-popular-culture-media" },
-      { title: "Subculture", people: "", slug: "cultural-studies-subculture" }
+      { title: "Media and Audiences: Encoding and Decoding", people: "Hall", slug: "cultural-studies-media-audiences" },
+      { title: "Subculture", people: "Hebdige's <i>Subculture</i>", slug: "cultural-studies-subculture" }
     ]
   },
   {
     slug: "identity-diaspora-and-globalisation",
     name: "Identity, diaspora and globalisation",
     summary:
-      "How people make and show who they are, and how identity moves across borders in a global world.",
+      "How gender, race and nation shape who people are and how they show it, and how identity moves across borders in a global world.",
     image: "",
     alt: "",
     chapters: [
       { title: "Gender and Identity", people: "", slug: "cultural-studies-gender-identity" },
+      { title: "Race, Ethnicity and Culture", people: "Hall's <i>Policing the Crisis</i> · <i>The Empire Strikes Back</i>", slug: "cultural-studies-race-ethnicity" },
       { title: "Nation, Diaspora and Globalisation", people: "Anderson · Gilroy · Appadurai · Brah", slug: "cultural-studies-nation-diaspora-globalisation" }
     ]
   }

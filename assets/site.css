@@ -4603,6 +4603,19 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 }
 .ltx-ch-go:hover,.ltx-card:hover .ltx-ch-go{background:var(--teal-dark);color:#fff}
 
+/* Subchapters (owner, 2026-11-25): a chapter may carry `sub`, a short list of what it covers.
+   It sits under the thinkers line, above the Read / Coming soon line. `ul` needs max-width:none
+   (global ul{max-width:74ch} trap). */
+.ltx-subs{
+  list-style:none;margin:11px 3px 0;padding:11px 0 0;max-width:none;
+  border-top:1px solid var(--card-line);display:grid;gap:5px;
+}
+.ltx-subs li{position:relative;padding-left:15px;font-size:.82rem;line-height:1.42;color:var(--body)}
+.ltx-subs li::before{
+  content:"";position:absolute;left:2px;top:.52em;width:5px;height:5px;border-radius:50%;
+  background:var(--teal);opacity:.6;
+}
+
 /* Previous / next part */
 .ltx-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .ltx-nav-link{
@@ -4633,6 +4646,14 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .ltx-chcards{grid-template-columns:minmax(0,1fr);gap:8px;margin-top:14px}
   .ltx-chcards .ltx-thumb{grid-row:1 / span 4}
   .ltx-cta{grid-column:2;margin-top:0;padding:6px 0 0}
+  /* A chapter with subchapters: header row (picture left, words right), then the list and the
+     Read line across the whole card, so a long list never sits beside the small picture. */
+  .ltx-chcards .ltx-has-subs .ltx-thumb{grid-row:1 / 4}
+  .ltx-chcards .ltx-has-subs .ltx-meta{grid-row:1}
+  .ltx-chcards .ltx-has-subs .ltx-name{grid-row:2}
+  .ltx-chcards .ltx-has-subs .ltx-sum{grid-row:3}
+  .ltx-chcards .ltx-has-subs .ltx-subs{grid-column:1 / -1;grid-row:4;margin:10px 0 0}
+  .ltx-chcards .ltx-has-subs .ltx-cta{grid-column:1 / -1;grid-row:5;padding-top:10px}
   .ltx-nav{grid-template-columns:minmax(0,1fr)}
   .ltx-nav-next{text-align:left}
 }
