@@ -1,6 +1,6 @@
 # Literary Theory, Cultural Studies, Indian Poetics and Key Terms card pictures
 
-Two series use the same cards (Literary Theory in `_data/literaryTheory.js`, Cultural Studies in
+The series use the same cards (Literary Theory in `_data/literaryTheory.js`, Cultural Studies in
 `_data/culturalStudies.js`, owner 2026-11-25) and the same rules. Pictures for Cultural Studies go
 in `assets/cultural-studies/` instead of `assets/literary-theory/`; Indian Poetics (`_data/indianPoetics.js`, owner
 2026-11-25) uses `assets/indian-poetics/`; Key Terms & Concepts (`_data/keyTerms.js`, owner 2026-11-25) uses
@@ -13,8 +13,11 @@ Two sets of cards can each carry a picture:
    `/literary-criticism/literary-theory/<part slug>/` — one card per chapter, the same
    shape as the part cards (owner, 2026-11-25).
 
-No picture is supplied yet, so every card shows its number on a plain tinted panel
-instead — the page is never broken by a missing picture.
+The Literary Theory, Cultural Studies and Indian Poetics parts have pictures on the hub.
+A chapter without a picture shows its number on a plain tinted panel.
+
+The eight History of Literary Criticism cards use the same image sizes. Their files are
+in `assets/literary-criticism/`, named after the slugs in `_data/criticismHistory.json`.
 
 ## Adding a picture
 

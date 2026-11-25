@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "introduction",
+    "title": "Introduction to Literary Criticism",
+    "summary": "What criticism is, what critics do, its main kinds, and a map of the whole history.",
+    "alt": "Painted interpretation of close reading, with a magnifying glass over an annotated book."
+  },
+  {
+    "slug": "classical",
+    "title": "Classical Criticism",
+    "summary": "Plato · Aristotle · Horace · Longinus",
+    "alt": "Painted interpretation of classical criticism, with a philosopher's bust and a mask at a Greek theatre."
+  },
+  {
+    "slug": "renaissance",
+    "title": "Renaissance Criticism",
+    "summary": "Sidney · Gosson · Puttenham · Jonson",
+    "alt": "Painted interpretation of a writer with a quill overlooking an Elizabethan playhouse."
+  },
+  {
+    "slug": "neoclassical",
+    "title": "Neoclassical Criticism",
+    "summary": "Dryden · Pope · Addison · Johnson",
+    "alt": "Painted interpretation of two readers discussing a printed page in an eighteenth-century coffeehouse."
+  },
+  {
+    "slug": "romantic",
+    "title": "Romantic Criticism",
+    "summary": "Wordsworth · Coleridge · Shelley · Hazlitt",
+    "alt": "Painted interpretation of an open notebook overlooking the mountains and lakes of the Lake District."
+  },
+  {
+    "slug": "victorian",
+    "title": "Victorian Criticism",
+    "summary": "Arnold · Ruskin · Pater · Wilde",
+    "alt": "Painted interpretation of a Victorian lecturer holding a book before a reading society."
+  },
+  {
+    "slug": "early-twentieth",
+    "title": "Early Twentieth Century",
+    "summary": "Bradley · T. S. Eliot · I. A. Richards",
+    "alt": "Painted interpretation of a typewriter and modernist journal pages on a desk."
+  },
+  {
+    "slug": "mid-twentieth",
+    "title": "Mid Twentieth Century",
+    "summary": "Empson · Leavis · the New Critics · Frye",
+    "alt": "Painted interpretation of students marking up a poem in a mid-century seminar."
+  }
+]

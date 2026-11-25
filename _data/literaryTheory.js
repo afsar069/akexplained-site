@@ -21,9 +21,8 @@
 // kar dena; card khud link ban jayega. Slug tab tak badla ja sakta hai.
 //
 // PICTURE: do jagah tasveer lag sakti hai — har part ke card par
-// (/literary-criticism/) aur har chapter ke card par (part ka page). Abhi ek bhi
-// asli painting nahi hai, isliye `image` khaali hai aur card par ek saaf numbered
-// panel dikhta hai. Tasveer lagane ke liye (site ka apna standard, CLAUDE.md):
+// (/literary-criticism/) aur har chapter ke card par (part ka page). `image`
+// khaali ho to card par numbered panel dikhta hai. Tasveer lagane ke liye:
 //   1. `assets/literary-theory/<naam>.webp`  — 480 x 300, 200 KB se kam
 //   2. `assets/literary-theory/<naam>-240.webp` — 240 x 150, wahi tasveer chhoti
 //   3. us part ya us chapter me `image: "<naam>"` aur
@@ -39,8 +38,8 @@ const parts = [
     name: "Form, language and structure",
     summary:
       "The schools that look inside the text first — at its form, its language and the system of rules that lets it mean anything at all.",
-    image: "",
-    alt: "",
+    image: "form-language-and-structure",
+    alt: "Painted interpretation of a book opening into a diagram of linked signs and shapes.",
     chapters: [
       { title: "Introduction to Literary Theory", people: "", slug: "literary-theory-introduction" },
       { title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
@@ -56,8 +55,8 @@ const parts = [
     name: "Reader and meaning",
     summary:
       "Theory turns to the person holding the book, and asks how understanding itself happens.",
-    image: "",
-    alt: "",
+    image: "reader-and-meaning",
+    alt: "Painted interpretation of a reader imagining different landscapes from an open book.",
     chapters: [
       { title: "Phenomenology and Hermeneutics", people: "Husserl · Heidegger · Gadamer · Ricoeur", slug: "literary-theory-phenomenology-hermeneutics" },
       { title: "Reader-Response and Reception Theory", people: "Iser · Jauss · Fish · Rosenblatt · Holland", slug: "literary-theory-reader-response" }
@@ -68,8 +67,8 @@ const parts = [
     name: "Beyond structure",
     summary:
       "The same thinkers who built the structures begin to take them apart, and meaning stops standing still.",
-    image: "",
-    alt: "",
+    image: "beyond-structure",
+    alt: "Painted interpretation of printed pages breaking apart and reappearing in fragments.",
     chapters: [
       { title: "Post-structuralism", people: "later Barthes · Foucault · Kristeva · Lacan", slug: "literary-theory-post-structuralism" },
       { title: "Deconstruction", people: "Derrida · de Man · J. Hillis Miller", slug: "literary-theory-deconstruction" }
@@ -80,8 +79,8 @@ const parts = [
     name: "Society, history and culture",
     summary:
       "Reading literature as the work of a class, a market and a moment in history.",
-    image: "",
-    alt: "",
+    image: "society-history-and-culture",
+    alt: "Painted interpretation of pages and records set against a city of factory workers.",
     chapters: [
       { title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
       { title: "New Historicism and Cultural Materialism", people: "Greenblatt · Montrose · Dollimore · Sinfield", slug: "literary-theory-new-historicism" }
@@ -92,8 +91,8 @@ const parts = [
     name: "Mind and myth",
     summary:
       "What literature owes to the unconscious, and the old story patterns that keep returning in new books.",
-    image: "",
-    alt: "",
+    image: "mind-and-myth",
+    alt: "Painted interpretation of a maze and a night sky inside a person's silhouette.",
     chapters: [
       { title: "Psychoanalytic Criticism", people: "Freud · Jung · Lacan · Klein · Bloom", slug: "literary-theory-psychoanalytic" },
       { title: "Myth and Archetypal Criticism", people: "Frazer · Jung · Frye · Campbell", slug: "literary-theory-myth-archetypal" }
@@ -104,8 +103,8 @@ const parts = [
     name: "Gender and sexuality",
     summary:
       "From asking where the women writers went to asking what gender itself is, and who was left out of the first answers.",
-    image: "",
-    alt: "",
+    image: "gender-and-sexuality",
+    alt: "Painted interpretation of writers and readers sharing their views around a table.",
     chapters: [
       { title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism", people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar", slug: "literary-theory-feminism-anglo-american" },
       { title: "Feminist Theory II: French Feminism", people: "Cixous · Irigaray · Kristeva", slug: "literary-theory-french-feminism" },
@@ -119,8 +118,8 @@ const parts = [
     name: "Empire, race and postcolonial thought",
     summary:
       "Empire, the writing it produced and the writing that answered back — and how a nation and a race get imagined.",
-    image: "",
-    alt: "",
+    image: "race-empire-and-nation",
+    alt: "Painted interpretation of a hand writing over an old map beside a sailing ship.",
     chapters: [
       { title: "Postcolonial Theory", people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin", slug: "literary-theory-postcolonial" },
       { title: "Subaltern Studies and Indian Postcolonial Thought", people: "Guha · Chatterjee · Chakrabarty · Ahmad", slug: "literary-theory-subaltern-studies" },
@@ -132,8 +131,8 @@ const parts = [
     name: "Postmodern and contemporary",
     summary:
       "The theory of our own time: after the grand stories, and out past the human being and the single language.",
-    image: "",
-    alt: "",
+    image: "postmodern-and-contemporary",
+    alt: "Painted collage of a fragmented book, digital pixels, city buildings and a green plant.",
     chapters: [
       { title: "Modernity to Postmodernism", people: "Lyotard · Baudrillard · Jameson · Hutcheon", slug: "literary-theory-postmodernism" },
       { title: "Ecocriticism and Environmental Humanities", people: "", slug: "literary-theory-ecocriticism" },
