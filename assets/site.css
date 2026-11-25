@@ -4573,25 +4573,23 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 @media(max-width:1120px){.ltx-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:860px){.ltx-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-/* Part page */
+/* Part page: chapters bhi wahi picture card hain (owner, 2026-11-25), taaki har
+   chapter par apni tasveer lag sake. Khol wahi `.ltx-card` hai jo part cards ka
+   hai — sirf grid alag (3 ek line me, kyunki chapter ke naam lambe hote hain)
+   aur niche ek Read / Coming soon patti. */
 .ltx-back{margin:0 0 14px;font-size:.9rem}
-.ltx-chapters{list-style:none;margin:0;padding:0;max-width:none;display:grid;gap:10px}
-.ltx-ch{
-  display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:4px 14px;align-items:center;
-  padding:14px 16px;background:var(--tint);border:1px dashed var(--card-line);border-radius:12px;
+.ltx-chcards{
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  list-style:none;margin:18px 0 0;padding:0;max-width:none;
 }
-.ltx-ch.is-live{background:var(--card-paper);border-style:solid}
-.ltx-ch-no{
-  width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;
-  background:var(--cream);border:1px solid var(--border);
-  font-size:.88rem;font-weight:700;color:var(--body);
-}
-.ltx-ch.is-live .ltx-ch-no{background:var(--teal-soft);border-color:var(--teal-soft);color:var(--teal-dark)}
-.ltx-ch-txt{min-width:0;display:flex;flex-direction:column;gap:2px}
-.ltx-ch-txt strong{font-family:var(--serif);font-size:1.02rem;font-weight:700;line-height:1.3;color:var(--ink)}
-.ltx-ch-txt strong a{color:var(--ink)}
-.ltx-ch-txt strong a:hover{color:var(--teal-dark)}
-.ltx-who{font-size:.88rem;line-height:1.45;color:var(--body)}
+.ltx-chcards > li{display:flex;min-width:0}
+.ltx-chcards > li > .ltx-card{flex:1 1 auto}
+/* Jis chapter ka article abhi nahi likha: dashed, halka, bina hover uthan ke. */
+.ltx-card-soon{background:var(--tint);border-style:dashed;cursor:default}
+.ltx-card-soon:hover{transform:none;border-color:var(--card-line);box-shadow:none}
+/* Card ke sabse neeche wali patti, taaki ek line ke sab buttons barabar baithein. */
+.ltx-cta{display:flex;margin-top:auto;padding:14px 3px 0}
+@media(max-width:1120px){.ltx-chcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .ltx-ch-soon{
   font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;
   color:#8A97A6;white-space:nowrap;
@@ -4601,7 +4599,7 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   border-radius:8px;background:var(--teal);color:#fff;font-size:.92rem;font-weight:700;
   line-height:1;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.18);
 }
-.ltx-ch-go:hover{background:var(--teal-dark);color:#fff}
+.ltx-ch-go:hover,.ltx-card:hover .ltx-ch-go{background:var(--teal-dark);color:#fff}
 
 /* Previous / next part */
 .ltx-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
@@ -4630,10 +4628,9 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   .ltx-meta,.ltx-name,.ltx-sum{grid-column:2;margin-left:0;margin-right:0}
   .ltx-name{font-size:.97rem;margin-bottom:3px}
   .ltx-sum{font-size:.8rem;line-height:1.45}
-  .ltx-ch{grid-template-columns:30px minmax(0,1fr);padding:12px 13px}
-  .ltx-ch-no{width:30px;height:30px;font-size:.8rem}
-  .ltx-ch-soon{grid-column:2;justify-self:start;margin-top:2px}
-  .ltx-ch-go{grid-column:2;justify-self:start;margin-top:6px}
+  .ltx-chcards{grid-template-columns:minmax(0,1fr);gap:8px;margin-top:14px}
+  .ltx-chcards .ltx-thumb{grid-row:1 / span 4}
+  .ltx-cta{grid-column:2;margin-top:0;padding:6px 0 0}
   .ltx-nav{grid-template-columns:minmax(0,1fr)}
   .ltx-nav-next{text-align:left}
 }
