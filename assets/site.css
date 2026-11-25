@@ -4522,34 +4522,56 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 
 
 /* ---------- Literary Theory (owner, 2026-11-25) ---------- */
-/* /literary-criticism/ par aath Part cards. Ek card apna page kholta hai
+/* /literary-criticism/ par aath Part cards — upar wale History cards jaisi shakal,
+   plus ek tasveer (owner, 2026-11-25). Ek card apna page kholta hai
    (/literary-criticism/literary-theory/<slug>/), jahan us part ke chapters hain.
-   Chapter ka article likha jaa chuka ho to row link banti hai (.is-live), warna
-   "Coming soon" dikhati hai. */
-.ltx-cards{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 14px;
-}
+   Tasveer `_data/literaryTheory.js` me `image` se aati hai; na ho to numbered panel. */
+/* Aath cards: chaudi screen par 4 + 4, taaki do poori line banein. */
+.ltx-cards{grid-template-columns:repeat(4,minmax(0,1fr));margin:18px 0 14px}
 .ltx-card{
-  display:flex;align-items:center;gap:12px;min-width:0;padding:14px;
-  background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
-  color:var(--ink);text-decoration:none;
-  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s,background-color .18s;
+  display:flex;flex-direction:column;color:inherit;background:var(--card-paper);
+  border:1px solid var(--card-line);border-radius:15px;padding:11px 11px 15px;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s;
 }
 .ltx-card:hover{
-  background:var(--teal-soft);border-color:var(--teal);color:var(--ink);
-  transform:translateY(-3px);box-shadow:var(--glow),0 16px 30px -14px rgba(22,48,74,.3);
+  transform:translateY(-5px);border-color:var(--teal);
+  box-shadow:var(--glow),0 20px 38px -12px rgba(22,48,74,.32);
 }
-.ltx-card:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
-.ltx-no{
-  flex:none;width:44px;height:44px;border-radius:12px;
+.ltx-card:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.ltx-thumb{
+  position:relative;display:block;aspect-ratio:16/10;border-radius:11px;overflow:hidden;
+  margin-bottom:11px;background:var(--tint);border:1px solid var(--card-line);
+}
+.ltx-thumb img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.ltx-card:hover .ltx-thumb img{transform:scale(1.06)}
+/* Jab tak asli painting nahi aayi: bada number, taaki card adhoora na lage. */
+.ltx-thumb-plain{
   display:flex;align-items:center;justify-content:center;
-  background:var(--teal-soft);color:var(--teal-dark);
-  font-family:var(--serif);font-size:1.25rem;font-weight:700;
+  background:radial-gradient(120% 120% at 30% 15%,var(--teal-soft),var(--tint) 70%);
 }
-.ltx-card:hover .ltx-no{background:var(--teal);color:#fff}
-.ltx-card-txt{min-width:0;display:flex;flex-direction:column;gap:2px}
-.ltx-card-txt strong{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.25}
-.ltx-card-txt span{font-size:.82rem;line-height:1.35;color:var(--body)}
+.ltx-fig{
+  font-family:var(--serif);font-weight:700;font-size:2.9rem;line-height:1;
+  color:var(--teal);opacity:.55;
+}
+/* Numbered panel par bada number hi part bata deta hai, isliye badge sirf
+   asli tasveer par dikhta hai (phone ke chhote thumb me wo number dhak leta tha). */
+.ltx-thumb-plain .ltx-tag{display:none}
+.ltx-tag{
+  position:absolute;left:8px;bottom:8px;background:rgba(22,48,74,.82);color:#fff;
+  font-family:var(--serif);font-weight:700;font-size:.82rem;letter-spacing:.02em;
+  padding:3px 9px;border-radius:7px;backdrop-filter:blur(3px);
+}
+.ltx-meta{
+  display:block;margin:0 3px 3px;font-size:.72rem;letter-spacing:.07em;
+  text-transform:uppercase;font-weight:700;color:var(--teal);
+}
+.ltx-name{
+  display:block;margin:0 3px 5px;font-family:var(--serif);font-weight:700;
+  font-size:1.02rem;line-height:1.25;color:var(--ink);
+}
+.ltx-sum{display:block;margin:0 3px;font-size:.84rem;line-height:1.5;color:var(--body)}
+@media(max-width:1120px){.ltx-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:860px){.ltx-cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Part page */
 .ltx-back{margin:0 0 14px;font-size:.9rem}
@@ -4593,14 +4615,21 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 .ltx-nav-link strong{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.3}
 .ltx-nav-next{text-align:right}
 
-@media(max-width:1000px){
-  .ltx-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
 @media(max-width:559px){
+  /* Phone par card ek patli row ban jati hai: tasveer baayein, lafz daayein
+     (wahi shakal jo timeline ke age cards ki hai). */
   .ltx-cards{grid-template-columns:minmax(0,1fr);gap:8px;margin:14px 0 12px}
-  .ltx-card{padding:11px 12px;gap:10px;border-radius:12px}
-  .ltx-no{width:36px;height:36px;font-size:1.05rem;border-radius:10px}
-  .ltx-card-txt strong{font-size:.95rem}
+  .ltx-card{
+    display:grid;grid-template-columns:84px minmax(0,1fr);
+    column-gap:12px;row-gap:0;align-items:center;padding:10px 12px;border-radius:12px;
+  }
+  .ltx-card:hover{transform:none}
+  .ltx-thumb{grid-row:1 / span 3;margin-bottom:0;border-radius:9px}
+  .ltx-fig{font-size:1.6rem}
+  .ltx-tag{left:4px;bottom:4px;font-size:.6rem;padding:2px 5px;border-radius:5px}
+  .ltx-meta,.ltx-name,.ltx-sum{grid-column:2;margin-left:0;margin-right:0}
+  .ltx-name{font-size:.97rem;margin-bottom:3px}
+  .ltx-sum{font-size:.8rem;line-height:1.45}
   .ltx-ch{grid-template-columns:30px minmax(0,1fr);padding:12px 13px}
   .ltx-ch-no{width:30px;height:30px;font-size:.8rem}
   .ltx-ch-soon{grid-column:2;justify-self:start;margin-top:2px}

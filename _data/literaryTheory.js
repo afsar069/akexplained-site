@@ -11,6 +11,15 @@
 // gaya, isliye har chapter `live: false` hai aur card link nahi banta — sirf
 // "Coming soon" dikhata hai. Jis din article aa jaye, us chapter ko `live: true`
 // kar dena; card khud link ban jayega. Slug tab tak badla ja sakta hai.
+//
+// PICTURE: har part ke card par ek tasveer lag sakti hai. Abhi kisi part ki asli
+// painting nahi hai, isliye `image` khaali hai aur card par ek saaf numbered panel
+// dikhta hai. Tasveer lagane ke liye (site ka apna standard, CLAUDE.md):
+//   1. `assets/literary-theory/<slug>.webp`  — 480 x 300, 200 KB se kam
+//   2. `assets/literary-theory/<slug>-240.webp` — 240 x 150, wahi tasveer chhoti
+//   3. neeche us part me `image: "<slug>"` aur `alt: "<jo tasveer me dikh raha hai>"`
+// Bas itna; card khud tasveer dikhane lagega. `alt` wahi likho jo tasveer me hai
+// (rule 2), aur generated painting ko "painted interpretation" kehna hai.
 
 const parts = [
   {
@@ -18,6 +27,8 @@ const parts = [
     name: "Form, language and structure",
     summary:
       "The schools that look inside the text first — at its form, its language and the system of rules that lets it mean anything at all.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 2, title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
       { n: 3, title: "Saussure and Structural Linguistics", people: "", slug: "literary-theory-saussure" },
@@ -32,6 +43,8 @@ const parts = [
     name: "Reader and meaning",
     summary:
       "Theory turns to the person holding the book, and asks how understanding itself happens.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 8, title: "Phenomenology and Hermeneutics", people: "Husserl · Heidegger · Gadamer · Ricoeur", slug: "literary-theory-phenomenology-hermeneutics" },
       { n: 9, title: "Reader-Response and Reception Theory", people: "Iser · Jauss · Fish · Rosenblatt · Holland", slug: "literary-theory-reader-response" }
@@ -42,6 +55,8 @@ const parts = [
     name: "Beyond structure",
     summary:
       "The same thinkers who built the structures begin to take them apart, and meaning stops standing still.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 10, title: "Post-structuralism", people: "later Barthes · Foucault · Kristeva · Lacan", slug: "literary-theory-post-structuralism" },
       { n: 11, title: "Deconstruction", people: "Derrida · de Man · J. Hillis Miller", slug: "literary-theory-deconstruction" }
@@ -52,6 +67,8 @@ const parts = [
     name: "Society, history and culture",
     summary:
       "Reading literature as the work of a class, a market and a moment in history, and reading everyday culture by the same light.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 12, title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
       { n: 13, title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "literary-theory-frankfurt-school" },
@@ -65,6 +82,8 @@ const parts = [
     name: "Mind and myth",
     summary:
       "What literature owes to the unconscious, and the old story patterns that keep returning in new books.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 17, title: "Psychoanalytic Criticism", people: "Freud · Jung · Lacan · Klein · Bloom", slug: "literary-theory-psychoanalytic" },
       { n: 18, title: "Myth and Archetypal Criticism", people: "Frazer · Jung · Frye · Campbell", slug: "literary-theory-myth-archetypal" }
@@ -75,6 +94,8 @@ const parts = [
     name: "Gender and sexuality",
     summary:
       "From asking where the women writers went to asking what gender itself is, and who was left out of the first answers.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 19, title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism", people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar", slug: "literary-theory-feminism-anglo-american" },
       { n: 20, title: "Feminist Theory II: French Feminism", people: "Cixous · Irigaray · Kristeva", slug: "literary-theory-french-feminism" },
@@ -87,6 +108,8 @@ const parts = [
     name: "Race, empire and nation",
     summary:
       "Empire, the writing it produced and the writing that answered back — and how a nation, a race and a diaspora get imagined.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 23, title: "Postcolonial Theory", people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin", slug: "literary-theory-postcolonial" },
       { n: 24, title: "Subaltern Studies and Indian Postcolonial Thought", people: "Guha · Chatterjee · Chakrabarty · Ahmad", slug: "literary-theory-subaltern-studies" },
@@ -99,6 +122,8 @@ const parts = [
     name: "Postmodern and contemporary",
     summary:
       "The theory of our own time: after the grand stories, and out past the human being and the single language.",
+    image: "",
+    alt: "",
     chapters: [
       { n: 27, title: "Modernity to Postmodernism", people: "Lyotard · Baudrillard · Jameson · Hutcheon", slug: "literary-theory-postmodernism" },
       { n: 28, title: "Ecocriticism and Environmental Humanities", people: "", slug: "literary-theory-ecocriticism" },
@@ -121,6 +146,14 @@ module.exports = parts.map(function (p, i) {
     count: p.chapters.length,
     // Kitne chapter likhe ja chuke hain — abhi sab 0, sab "Coming soon".
     liveCount: p.chapters.filter(function (c) { return c.live; }).length,
+    // Tasveer di hai to uske do rasta, warna null (card numbered panel dikhayega).
+    picture: p.image
+      ? {
+          src: "/assets/literary-theory/" + p.image + ".webp",
+          small: "/assets/literary-theory/" + p.image + "-240.webp",
+          alt: p.alt || ""
+        }
+      : null,
     prev: prev ? { name: prev.name, href: BASE + prev.slug + "/", number: i } : null,
     next: next ? { name: next.name, href: BASE + next.slug + "/", number: i + 2 } : null
   });
