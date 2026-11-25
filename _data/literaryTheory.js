@@ -41,13 +41,55 @@ const parts = [
     image: "form-language-and-structure",
     alt: "Painted interpretation of a book opening into a diagram of linked signs and shapes.",
     chapters: [
-      { title: "Introduction to Literary Theory", people: "", slug: "literary-theory-introduction" },
-      { title: "Russian Formalism and the Prague Circle", people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský", slug: "literary-theory-russian-formalism" },
-      { title: "Saussure and Structural Linguistics", people: "", slug: "literary-theory-saussure" },
-      { title: "Structuralism", people: "Lévi-Strauss · Barthes · Todorov · Greimas", slug: "literary-theory-structuralism" },
-      { title: "Narratology", people: "Genette · Bal · Prince · Chatman", slug: "literary-theory-narratology" },
-      { title: "Semiotics", people: "Peirce · Eco · Barthes", slug: "literary-theory-semiotics" },
-      { title: "Bakhtin and Dialogism", people: "", slug: "literary-theory-bakhtin" }
+      {
+        title: "Introduction to Literary Theory",
+        people: "",
+        slug: "literary-theory-introduction",
+        image: "literary-theory-introduction",
+        alt: "Painted interpretation of coloured lenses revealing different patterns on the pages of a book."
+      },
+      {
+        title: "Russian Formalism and the Prague Circle",
+        people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský",
+        slug: "literary-theory-russian-formalism",
+        image: "literary-theory-russian-formalism",
+        alt: "Painted interpretation of an ordinary teapot redrawn in sharp geometric shapes."
+      },
+      {
+        title: "Saussure and Structural Linguistics",
+        people: "",
+        slug: "literary-theory-saussure",
+        image: "literary-theory-saussure",
+        alt: "Painted interpretation of a sound wave paired with the image of a tree."
+      },
+      {
+        title: "Structuralism",
+        people: "Lévi-Strauss · Barthes · Todorov · Greimas",
+        slug: "literary-theory-structuralism",
+        image: "literary-theory-structuralism",
+        alt: "Painted interpretation of different story symbols arranged in a shared pattern."
+      },
+      {
+        title: "Narratology",
+        people: "Genette · Bal · Prince · Chatman",
+        slug: "literary-theory-narratology",
+        image: "literary-theory-narratology",
+        alt: "Painted interpretation of a ribbon linking three scenes from a traveller's story."
+      },
+      {
+        title: "Semiotics",
+        people: "Peirce · Eco · Barthes",
+        slug: "literary-theory-semiotics",
+        image: "literary-theory-semiotics",
+        alt: "Painted interpretation of a bird symbol, bird tracks and a trail sign."
+      },
+      {
+        title: "Bakhtin and Dialogism",
+        people: "",
+        slug: "literary-theory-bakhtin",
+        image: "literary-theory-bakhtin",
+        alt: "Painted interpretation of different voices meeting in ribbons above an open book."
+      }
     ]
   },
   {
@@ -58,8 +100,20 @@ const parts = [
     image: "reader-and-meaning",
     alt: "Painted interpretation of a reader imagining different landscapes from an open book.",
     chapters: [
-      { title: "Phenomenology and Hermeneutics", people: "Husserl · Heidegger · Gadamer · Ricoeur", slug: "literary-theory-phenomenology-hermeneutics" },
-      { title: "Reader-Response and Reception Theory", people: "Iser · Jauss · Fish · Rosenblatt · Holland", slug: "literary-theory-reader-response" }
+      {
+        title: "Phenomenology and Hermeneutics",
+        people: "Husserl · Heidegger · Gadamer · Ricoeur",
+        slug: "literary-theory-phenomenology-hermeneutics",
+        image: "literary-theory-phenomenology-hermeneutics",
+        alt: "Painted interpretation of a reader surrounded by curving pages."
+      },
+      {
+        title: "Reader-Response and Reception Theory",
+        people: "Iser · Jauss · Fish · Rosenblatt · Holland",
+        slug: "literary-theory-reader-response",
+        image: "literary-theory-reader-response",
+        alt: "Painted interpretation of two readers imagining a coastline and a city from the same book."
+      }
     ]
   },
   {
@@ -70,8 +124,20 @@ const parts = [
     image: "beyond-structure",
     alt: "Painted interpretation of printed pages breaking apart and reappearing in fragments.",
     chapters: [
-      { title: "Post-structuralism", people: "later Barthes · Foucault · Kristeva · Lacan", slug: "literary-theory-post-structuralism" },
-      { title: "Deconstruction", people: "Derrida · de Man · J. Hillis Miller", slug: "literary-theory-deconstruction" }
+      {
+        title: "Post-structuralism",
+        people: "later Barthes · Foucault · Kristeva · Lacan",
+        slug: "literary-theory-post-structuralism",
+        image: "literary-theory-post-structuralism",
+        alt: "Painted interpretation of a red paper ribbon branching out from a geometric grid."
+      },
+      {
+        title: "Deconstruction",
+        people: "Derrida · de Man · J. Hillis Miller",
+        slug: "literary-theory-deconstruction",
+        image: "literary-theory-deconstruction",
+        alt: "Painted interpretation of a balance holding printed pages and casting a shadow."
+      }
     ]
   },
   {
@@ -82,8 +148,20 @@ const parts = [
     image: "society-history-and-culture",
     alt: "Painted interpretation of pages and records set against a city of factory workers.",
     chapters: [
-      { title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
-      { title: "New Historicism and Cultural Materialism", people: "Greenblatt · Montrose · Dollimore · Sinfield", slug: "literary-theory-new-historicism" }
+      {
+        title: "Marxist Literary Theory",
+        people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson",
+        slug: "literary-theory-marxist",
+        image: "literary-theory-marxist",
+        alt: "Painted interpretation of a book in front of factory workers and an overseer's gallery."
+      },
+      {
+        title: "New Historicism and Cultural Materialism",
+        people: "Greenblatt · Montrose · Dollimore · Sinfield",
+        slug: "literary-theory-new-historicism",
+        image: "literary-theory-new-historicism",
+        alt: "Painted interpretation of a theatre scene with old records and a coin in front."
+      }
     ]
   },
   {
@@ -94,8 +172,20 @@ const parts = [
     image: "mind-and-myth",
     alt: "Painted interpretation of a maze and a night sky inside a person's silhouette.",
     chapters: [
-      { title: "Psychoanalytic Criticism", people: "Freud · Jung · Lacan · Klein · Bloom", slug: "literary-theory-psychoanalytic" },
-      { title: "Myth and Archetypal Criticism", people: "Frazer · Jung · Frye · Campbell", slug: "literary-theory-myth-archetypal" }
+      {
+        title: "Psychoanalytic Criticism",
+        people: "Freud · Jung · Lacan · Klein · Bloom",
+        slug: "literary-theory-psychoanalytic",
+        image: "literary-theory-psychoanalytic",
+        alt: "Painted interpretation of a door and a key inside the submerged part of an iceberg."
+      },
+      {
+        title: "Myth and Archetypal Criticism",
+        people: "Frazer · Jung · Frye · Campbell",
+        slug: "literary-theory-myth-archetypal",
+        image: "literary-theory-myth-archetypal",
+        alt: "Painted interpretation of a traveller with a lantern at the entrance to a winding path."
+      }
     ]
   },
   {
@@ -106,10 +196,34 @@ const parts = [
     image: "gender-and-sexuality",
     alt: "Painted interpretation of writers and readers sharing their views around a table.",
     chapters: [
-      { title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism", people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar", slug: "literary-theory-feminism-anglo-american" },
-      { title: "Feminist Theory II: French Feminism", people: "Cixous · Irigaray · Kristeva", slug: "literary-theory-french-feminism" },
-      { title: "Black, Third-World and Intersectional Feminism", people: "hooks · Walker · Mohanty · Crenshaw", slug: "literary-theory-intersectional-feminism" },
-      { title: "Gender and Queer Theory", people: "Rubin · Butler · Sedgwick · Foucault", slug: "literary-theory-gender-queer" }
+      {
+        title: "Feminist Theory I: from early feminism to Anglo-American feminist criticism",
+        people: "Woolf · Beauvoir · Millett · Showalter · Gilbert and Gubar",
+        slug: "literary-theory-feminism-anglo-american",
+        image: "literary-theory-feminism-anglo-american",
+        alt: "Painted interpretation of a woman writing at a desk and another browsing books."
+      },
+      {
+        title: "Feminist Theory II: French Feminism",
+        people: "Cixous · Irigaray · Kristeva",
+        slug: "literary-theory-french-feminism",
+        image: "literary-theory-french-feminism",
+        alt: "Painted interpretation of a pen sending ribbons of coloured ink across a notebook."
+      },
+      {
+        title: "Black, Third-World and Intersectional Feminism",
+        people: "hooks · Walker · Mohanty · Crenshaw",
+        slug: "literary-theory-intersectional-feminism",
+        image: "literary-theory-intersectional-feminism",
+        alt: "Painted interpretation of three women bringing different pieces of patterned cloth together."
+      },
+      {
+        title: "Gender and Queer Theory",
+        people: "Rubin · Butler · Sedgwick · Foucault",
+        slug: "literary-theory-gender-queer",
+        image: "literary-theory-gender-queer",
+        alt: "Painted interpretation of people exploring different styles of dress in a costume workshop."
+      }
     ]
   },
   {
@@ -121,9 +235,27 @@ const parts = [
     image: "race-empire-and-nation",
     alt: "Painted interpretation of a hand writing over an old map beside a sailing ship.",
     chapters: [
-      { title: "Postcolonial Theory", people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin", slug: "literary-theory-postcolonial" },
-      { title: "Subaltern Studies and Indian Postcolonial Thought", people: "Guha · Chatterjee · Chakrabarty · Ahmad", slug: "literary-theory-subaltern-studies" },
-      { title: "Race and Africana Theory", people: "Du Bois · Négritude · Gates · Black Arts · Critical Race Theory", slug: "literary-theory-race-africana" }
+      {
+        title: "Postcolonial Theory",
+        people: "Fanon · Said · Spivak · Bhabha · Ngũgĩ · Ashcroft, Griffiths and Tiffin",
+        slug: "literary-theory-postcolonial",
+        image: "literary-theory-postcolonial",
+        alt: "Painted interpretation of a printmaker lifting a page beside a colonial coat of arms."
+      },
+      {
+        title: "Subaltern Studies and Indian Postcolonial Thought",
+        people: "Guha · Chatterjee · Chakrabarty · Ahmad",
+        slug: "literary-theory-subaltern-studies",
+        image: "literary-theory-subaltern-studies",
+        alt: "Painted interpretation of people sharing their stories with a note-taker in a courtyard."
+      },
+      {
+        title: "Race and Africana Theory",
+        people: "Du Bois · Négritude · Gates · Black Arts · Critical Race Theory",
+        slug: "literary-theory-race-africana",
+        image: "literary-theory-race-africana",
+        alt: "Painted interpretation of a Black writer working with printed pages beside a city window."
+      }
     ]
   },
   {
@@ -134,12 +266,48 @@ const parts = [
     image: "postmodern-and-contemporary",
     alt: "Painted collage of a fragmented book, digital pixels, city buildings and a green plant.",
     chapters: [
-      { title: "Modernity to Postmodernism", people: "Lyotard · Baudrillard · Jameson · Hutcheon", slug: "literary-theory-postmodernism" },
-      { title: "Ecocriticism and Environmental Humanities", people: "", slug: "literary-theory-ecocriticism" },
-      { title: "Posthumanism, Animal Studies and Cyberculture", people: "Haraway · Hayles", slug: "literary-theory-posthumanism" },
-      { title: "Trauma and Memory Studies", people: "Caruth · LaCapra · Hirsch", slug: "literary-theory-trauma-memory" },
-      { title: "Translation Studies and World Literature", people: "Venuti · Bassnett · Moretti · Casanova · Damrosch", slug: "literary-theory-translation-world-literature" },
-      { title: "Newer Directions: Disability Studies, Affect Theory, Digital Humanities", people: "", slug: "literary-theory-newer-directions" }
+      {
+        title: "Modernity to Postmodernism",
+        people: "Lyotard · Baudrillard · Jameson · Hutcheon",
+        slug: "literary-theory-postmodernism",
+        image: "literary-theory-postmodernism",
+        alt: "Painted interpretation of a modernist building beside a collage of city lights and signs."
+      },
+      {
+        title: "Ecocriticism and Environmental Humanities",
+        people: "",
+        slug: "literary-theory-ecocriticism",
+        image: "literary-theory-ecocriticism",
+        alt: "Painted interpretation of a river crossing an open book between a woodland and an industrial bank."
+      },
+      {
+        title: "Posthumanism, Animal Studies and Cyberculture",
+        people: "Haraway · Hayles",
+        slug: "literary-theory-posthumanism",
+        image: "literary-theory-posthumanism",
+        alt: "Painted interpretation of a human hand and a bird linked by glowing circuits."
+      },
+      {
+        title: "Trauma and Memory Studies",
+        people: "Caruth · LaCapra · Hirsch",
+        slug: "literary-theory-trauma-memory",
+        image: "literary-theory-trauma-memory",
+        alt: "Painted interpretation of hands putting the pieces of a faded family photograph together."
+      },
+      {
+        title: "Translation Studies and World Literature",
+        people: "Venuti · Bassnett · Moretti · Casanova · Damrosch",
+        slug: "literary-theory-translation-world-literature",
+        image: "literary-theory-translation-world-literature",
+        alt: "Painted interpretation of a book passed above a globe and an arc of folded paper birds."
+      },
+      {
+        title: "Newer Directions: Disability Studies, Affect Theory, Digital Humanities",
+        people: "",
+        slug: "literary-theory-newer-directions",
+        image: "literary-theory-newer-directions",
+        alt: "Painted interpretation of fingers reading Braille beside a grid of digital documents."
+      }
     ]
   }
 ];
