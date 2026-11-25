@@ -99,3 +99,7 @@ Its chapter cards also show a list of subchapters (`sub` in the registry) under 
 
 Its eight part cards sit in the default four-column grid (four and four), and its chapter cards show the terms
 (`sub`) under the title, as in Indian Poetics. Pictures go in `assets/key-terms/`.
+
+Figures of Speech also has pictures for all five chapter cards and all 33 term strips. A term strip uses one
+192 × 120 WebP, set by the term's name in `termArtwork` in `_data/keyTerms.js`. Its 56px thumbnail sits to the
+left of the centred label.
