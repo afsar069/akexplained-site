@@ -101,11 +101,25 @@
   </div>
 </section>
 
-<section style="background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border)">
+<section class="ltx" id="literary-theory" style="background:linear-gradient(180deg,var(--cream),var(--bg));border-top:1px solid var(--border)">
   <div class="wrap">
     <h2>Literary Theory</h2>
-    <p>The modern schools that ask how a text and its meaning work — Russian formalism, New Criticism, structuralism, deconstruction, psychoanalytic and reader-response criticism.</p>
-    <p class="meta" style="margin-top:.75rem">Articles coming soon.</p>
+    <p>The modern schools that ask how a text and its meaning work. The series runs in eight parts, in a rough order of time and of argument: each part answers, or quarrels with, the one before it. Open a part to see its chapters.</p>
+    <div class="grid ltx-cards">
+      {%- for part in literaryTheory %}
+      <a class="ltx-card" href="{{ part.href }}">
+        {%- if part.picture %}
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), (max-width: 1120px) calc((100vw - 72px) / 3 - 24px), 230px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        {%- else %}
+        <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
+        {%- endif %}
+        <span class="ltx-meta">{{ part.count }} chapters</span>
+        <span class="ltx-name">{{ part.name }}</span>
+        <span class="ltx-sum">{{ part.summary }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="meta">{{ literaryTheoryTotals.parts }} parts &middot; {{ literaryTheoryTotals.chapters }} chapters planned{% if literaryTheoryTotals.live == 0 %} &middot; Articles coming soon{% endif %}</p>
   </div>
 </section>
 

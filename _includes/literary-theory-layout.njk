@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ title }} | AK Explained</title>
+<meta name="description" content="{{ description }}">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<meta property="og:image" content="https://akexplained.com/assets/share-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="mcq-sec-page thin-cards">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"></header>
+
+<div class="wrap"><p class="crumb"><a href="/">Home</a><span>/</span><a href="/english-literature/">English Literature</a><span>/</span><a href="/literary-criticism/">Literary Criticism</a><span>/</span>{{ crumb_label or title }}</p></div>
+
+<main id="main">
+{{ content | safe }}
+</main>
+
+<footer class="site-footer"></footer>
+</body>
+</html>
