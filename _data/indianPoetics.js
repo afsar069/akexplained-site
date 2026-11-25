@@ -13,8 +13,9 @@
 // "Indian Literary Criticism and Theory" (34 modules) aur dusra course "Indian aesthetics and fine
 // arts" (Kavyaprakasha / Sahityadarpana, Rasasutra ki vyakhyayein, Dasharupaka). Chapter aur
 // subchapter unhi modules ke apne sections se hain. Yahan sirf NET se jude classical / Sanskrit
-// poetics wale chapter hain; medieval aur modern modules docs/indian-poetics-scope.md me "mile
-// par jode nahi" ki list me hain. Har chapter ka source wahin likha hai.
+// poetics wale chapter pehle jude; 2026-11-25 ko owner ne kaha "yes, jodlen hai", to ePG ke
+// medieval aur modern modules (Part 5 se 7) aur Sanskrit dramatists ka chapter bhi jude. Har chapter
+// ka source docs/indian-poetics-scope.md me likha hai.
 //
 // Hamare master taxonomy me Indian Poetics ke nodes pehle se hain (owner-approved): bharata-muni,
 // natyashastra, rasa, bhamaha, dandin, vamana, anandavardhana, dhvani, abhinavagupta, kuntaka,
@@ -33,7 +34,7 @@ const parts = [
     slug: "drama-rasa-and-the-schools",
     name: "Drama, rasa and the schools",
     summary:
-      "Bharata's treatise on drama, the oldest text of the tradition that has come down to us, the ten types of Sanskrit play, and the theory of rasa and how later thinkers read it.",
+      "Bharata's treatise on drama, the oldest text of the tradition that has come down to us, the ten types of Sanskrit play, the great Sanskrit dramatists, and the theory of rasa and how later thinkers read it.",
     image: "",
     alt: "",
     chapters: [
@@ -69,6 +70,17 @@ const parts = [
           "Nataka, the principal type",
           "The theme, hero, number of acts and chief sentiment of each type",
           "Dhananjaya's Dasharupaka"
+        ]
+      },
+      {
+        title: "Sanskrit Dramatists: Bhasa, Kalidasa and Bhavabhuti",
+        people: "Bhasa · Kalidasa · Bhavabhuti",
+        slug: "indian-poetics-sanskrit-dramatists",
+        sub: [
+          "Bhasa and his plays",
+          "Kalidasa and the Abhijnanasakuntalam",
+          "Bhavabhuti and the Uttararamacharita",
+          "Other Sanskrit dramatists"
         ]
       },
       {
@@ -263,6 +275,230 @@ const parts = [
           "The Tolkappiyam and Sangam literature",
           "Akam and Puram",
           "The four aims of Sangam poetry: righteousness, worldly success, pleasure and release"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "medieval-indian-thought",
+    name: "Medieval Indian thought",
+    summary:
+      "Bhakti, Persian and Hindi thinking about poetry, from Jnanesvara to Keshavadasa, and Al-Badaoni on writing history.",
+    image: "",
+    alt: "",
+    chapters: [
+      {
+        title: "Jnanesvara and Indian Poetics",
+        people: "Jnanesvara",
+        slug: "indian-poetics-jnanesvara",
+        sub: [
+          "Life and time of Jnanesvara",
+          "Major works: Jnanesvari, Amritanubhava, Changadeva-Pasashthi, Haripatha and the abhangas",
+          "His philosophy: the world as the expression of divine love and joy",
+          "Bhakti, and how his view differs from other thinkers'",
+          "Jnanesvara's contribution"
+        ]
+      },
+      {
+        title: "Bhakti Rasa",
+        people: "Rupa Goswami",
+        slug: "indian-poetics-bhakti-rasa",
+        sub: [
+          "The bhakti movement and Indian literature",
+          "Six characteristics of bhakti poetry (after Andrew Schelling)",
+          "Rupa Goswami and bhakti rasa"
+        ]
+      },
+      {
+        title: "Amir Khusrau and Indian Poetics",
+        people: "Amir Khusrau",
+        slug: "indian-poetics-amir-khusrau",
+        sub: [
+          "Poetry and music in Persian and Hindi",
+          "The Nuh Siphir and its significance",
+          "His other works: poems, masnavis and historical writings"
+        ]
+      },
+      {
+        title: "Keshavadasa and the Rasikpriya",
+        people: "Keshavadasa",
+        slug: "indian-poetics-keshavadasa",
+        sub: [
+          "The periods of Hindi literature: Adikaal, Bhaktikaal, Ritikaal and Adhunik kaal",
+          "Keshavadasa and his major works",
+          "The Rasikpriya and the states of the heroine",
+          "The Kavipriya"
+        ]
+      },
+      {
+        title: "Al-Badaoni and Literary Historiography",
+        people: "Al-Badaoni",
+        slug: "indian-poetics-al-badaoni",
+        sub: [
+          "Al-Badaoni and his work",
+          "Badaoni's idea of history",
+          "Tarikh and Al-Badaoni"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "modern-indian-aesthetics",
+    name: "Modern Indian aesthetics",
+    summary:
+      "Poets, novelists and thinkers, from Ghalib to Suresh Joshi, who reshaped Indian ideas of beauty, art and criticism.",
+    image: "",
+    alt: "",
+    chapters: [
+      {
+        title: "Ghalib and His Poetic Thought",
+        people: "Ghalib",
+        slug: "indian-poetics-ghalib",
+        sub: [
+          "Ghalib and Urdu literature",
+          "Ghalib and the ghazal",
+          "Ghalib and religion",
+          "Ghalib's letters",
+          "Ghalib as a modern poet"
+        ]
+      },
+      {
+        title: "Bankimchandra Chattopadhyay's Aesthetics",
+        people: "Bankimchandra Chattopadhyay",
+        slug: "indian-poetics-bankimchandra",
+        sub: [
+          "Bengal in Bankim's time",
+          "Knowledge, colony and civilisation",
+          "The aesthetics of nationalism",
+          "The aesthetics of the historical novel",
+          "His thought on translation",
+          "Bankim and literary criticism",
+          "Bankim's concept of beauty"
+        ]
+      },
+      {
+        title: "Rabindranath Tagore and Indian Aesthetics",
+        people: "Tagore",
+        slug: "indian-poetics-tagore",
+        sub: [
+          "Life and works of Tagore",
+          "Art and aesthetics",
+          "Tagore's writings on art and aesthetics",
+          "Tagore on beauty"
+        ]
+      },
+      {
+        title: "Sri Aurobindo and Indian Aesthetics",
+        people: "Sri Aurobindo",
+        slug: "indian-poetics-aurobindo",
+        sub: [
+          "A short life and the literary works",
+          "Aurobindo's poetic thought",
+          "The concept of mantra",
+          "Rhythm and movement",
+          "Style and substance",
+          "The essence and the ideal spirit of poetry"
+        ]
+      },
+      {
+        title: "Ananda Coomaraswamy and Indian Poetics",
+        people: "Ananda Coomaraswamy",
+        slug: "indian-poetics-coomaraswamy",
+        sub: [
+          "Major influences",
+          "Coomaraswamy's conception of art",
+          "His conception of the artist",
+          "His conception of beauty",
+          "Traditional aesthetics"
+        ]
+      },
+      {
+        title: "Jainendra Kumar and Indian Poetics",
+        people: "Jainendra Kumar",
+        slug: "indian-poetics-jainendra-kumar",
+        sub: [
+          "A background of Hindi literature: vir-gathas, bhakti, riti and the modern period",
+          "Jainendra Kumar: an introduction",
+          "His novels: Sunita, Tyagpatra and Kalyani"
+        ]
+      },
+      {
+        title: "Suresh Joshi and Indian Poetics",
+        people: "Suresh Joshi",
+        slug: "indian-poetics-suresh-joshi",
+        sub: [
+          "A history of Gujarati literature",
+          "Early life and works",
+          "Joshi as a critic",
+          "His theory of interpretation",
+          "Aesthetic enjoyment and interpretation"
+        ]
+      }
+    ]
+  },
+  {
+    slug: "nativism-the-margins-and-the-contemporary",
+    name: "Nativism, the margins and the contemporary",
+    summary:
+      "Challenges to the old canon: nativism, the Hungry Generation, folk and tribal art and Dalit aesthetics, and what Indian poetics means today.",
+    image: "",
+    alt: "",
+    chapters: [
+      {
+        title: "Bhalchandra Nemade and Nativism",
+        people: "Bhalchandra Nemade",
+        slug: "indian-poetics-nemade",
+        sub: [
+          "What is nativism? The birth of the concept",
+          "Nemade's nativism: native styles and orality",
+          "Modernity, globalisation and nativism",
+          "Nemade's works: the Marathi novel and Arun Kolatkar's bilingual poetry",
+          "A critique of nativism"
+        ]
+      },
+      {
+        title: "The Hungry Generation and Poetics",
+        people: "",
+        slug: "indian-poetics-hungry-generation",
+        sub: [
+          "Bengali poetry from 1920 to 1950",
+          "Modernity and adhunikata",
+          "The history of the Hungry Generation",
+          "The aims and impact of the Hungryalist movement",
+          "The prevailing canons and the Hungryalist canons"
+        ]
+      },
+      {
+        title: "Folk and Tribal Aesthetics",
+        people: "",
+        slug: "indian-poetics-folk-and-tribal",
+        sub: [
+          "The folk culture of India",
+          "Tribal literature",
+          "Folk and tribal art: Kalamkari, Patachitra, Madhubani, Gond and Tanjore",
+          "The art of storytelling",
+          "Difficulties in folk and tribal aesthetics"
+        ]
+      },
+      {
+        title: "Dalit Aesthetics",
+        people: "",
+        slug: "indian-poetics-dalit-aesthetics",
+        sub: [
+          "Dalit literature",
+          "Satyam, shivam and sundaram: truth, goodness and beauty",
+          "What is Dalit aesthetics?"
+        ]
+      },
+      {
+        title: "Contemporary Indian Poetics",
+        people: "C. D. Narasimhaiah · K. R. Srinivasa Iyengar · M. K. Naik · M. Hiriyanna · K. C. Pandey · Krishna Rayan",
+        slug: "indian-poetics-contemporary",
+        sub: [
+          "Some critics and their concepts",
+          "Traditional Indian poetics in contemporary times",
+          "The problems",
+          "The response"
         ]
       }
     ]

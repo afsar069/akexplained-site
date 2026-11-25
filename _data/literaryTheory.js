@@ -10,7 +10,9 @@
 //
 // 2026-11-25 (owner: "NET syllabus ke according chalenge"): NET Unit VII "Cultural Studies"
 // ke chapters (Birmingham School, Popular Culture and Media, Nation / Diaspora /
-// Globalisation) yahan se nikal kar `_data/culturalStudies.js` me chale gaye. Unit IX
+// Globalisation) yahan se nikal kar `_data/culturalStudies.js` me chale gaye.
+// 2026-11-25 (owner: "Frankfurt School chapter Cultural Studies me le jao"): The Frankfurt School and
+// Critical Theory bhi wahin chala gaya (past NET sawal use Cultural Studies me ginte hain). Unit IX
 // "Literary Theory post World War II" ki cheezein yahin rahin.
 //
 // `slug` = us chapter ka article kahan rahega: /notes/<slug>/. Article abhi likha nahi
@@ -82,7 +84,6 @@ const parts = [
     alt: "",
     chapters: [
       { title: "Marxist Literary Theory", people: "Lukács · Brecht · Gramsci · Althusser · Williams · Eagleton · Jameson", slug: "literary-theory-marxist" },
-      { title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "literary-theory-frankfurt-school" },
       { title: "New Historicism and Cultural Materialism", people: "Greenblatt · Montrose · Dollimore · Sinfield", slug: "literary-theory-new-historicism" }
     ]
   },
@@ -113,10 +114,11 @@ const parts = [
     ]
   },
   {
+    // slug purana hi rakha (URL na tute); naam 2026-11-25 ko owner ke kehne par badla.
     slug: "race-empire-and-nation",
-    name: "Race, empire and nation",
+    name: "Empire, race and postcolonial thought",
     summary:
-      "Empire, the writing it produced and the writing that answered back — and how a nation, a race and a diaspora get imagined.",
+      "Empire, the writing it produced and the writing that answered back — and how a nation and a race get imagined.",
     image: "",
     alt: "",
     chapters: [

@@ -12,7 +12,7 @@
 // (structuralism ... Marxism, feminism, New Historicism, postcolonialism, queer theory,
 // ecocriticism) Literary Theory me hi rahi.
 //
-// Teen chapter Literary Theory se yahan aaye hain (title, thinkers aur "people" wahi jo
+// Chaar chapter Literary Theory se yahan aaye hain (Frankfurt School 2026-11-25 ko owner ke kehne par jud gaya) (title, thinkers aur "people" wahi jo
 // owner ke the): Birmingham School, Popular Culture / Media, Nation / Diaspora /
 // Globalisation. Chaar naye hain, sirf Unit VII ke shabdon se: Ideology and Hegemony,
 // Bourdieu, Subculture, Gender and Identity.
@@ -62,10 +62,11 @@ const parts = [
     slug: "popular-culture-media-and-subculture",
     name: "Popular culture, media and subculture",
     summary:
-      "Everyday culture as the subject: what people watch, read and wear, and the media that carry it.",
+      "Mass and popular culture as the subject: the culture industry, what people watch, read and wear, and the media that carry it.",
     image: "",
     alt: "",
     chapters: [
+      { title: "The Frankfurt School and Critical Theory", people: "Adorno · Horkheimer · Marcuse · Benjamin · Habermas", slug: "cultural-studies-frankfurt-school" },
       { title: "Popular Culture, Media and Consumer Society", people: "Barthes's <i>Mythologies</i> · McLuhan · Fiske", slug: "cultural-studies-popular-culture-media" },
       { title: "Media and Audiences: Encoding and Decoding", people: "Hall", slug: "cultural-studies-media-audiences" },
       { title: "Subculture", people: "Hebdige's <i>Subculture</i>", slug: "cultural-studies-subculture" }
