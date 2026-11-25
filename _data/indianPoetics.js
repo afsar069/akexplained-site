@@ -42,6 +42,8 @@ const parts = [
         title: "Introduction to Indian Poetics",
         people: "",
         slug: "indian-poetics-introduction",
+        image: "indian-poetics-introduction",
+        alt: "Painted interpretation of a fan of palm leaves, a ring of coloured petals and a small lamp.",
         sub: [
           "Sanskrit poetics",
           "The eight schools: Alamkara, Rasa, Riti, Guna, Dhvani, Vakrokti, Anumana and Aucitya",
@@ -53,6 +55,8 @@ const parts = [
         title: "Bharata and the Natyashastra",
         people: "Bharata · Abhinavagupta's <i>Abhinavabharati</i>",
         slug: "indian-poetics-natyashastra",
+        image: "indian-poetics-natyashastra",
+        alt: "Painted interpretation of a theatre performer making a hand gesture beside a sketch of the stage.",
         sub: [
           "The Natyashastra: date, chapters and commentaries",
           "The origin of drama (Natyotpatti)",
@@ -65,6 +69,8 @@ const parts = [
         title: "The Ten Types of Sanskrit Drama",
         people: "Bharata · Dhananjaya's <i>Dasharupaka</i>",
         slug: "indian-poetics-ten-types-of-drama",
+        image: "indian-poetics-ten-types-of-drama",
+        alt: "Painted interpretation of miniature stage designs spread across an open folio.",
         sub: [
           "The ten types: Nataka, Prakarana, Bhana, Prahasana, Dima, Vyayoga, Samavakara, Anka, Ihamriga and Vithi",
           "Nataka, the principal type",
@@ -76,6 +82,8 @@ const parts = [
         title: "Sanskrit Dramatists: Bhasa, Kalidasa and Bhavabhuti",
         people: "Bhasa · Kalidasa · Bhavabhuti",
         slug: "indian-poetics-sanskrit-dramatists",
+        image: "indian-poetics-sanskrit-dramatists",
+        alt: "Painted interpretation of a woman and a deer in a forest scene framed by a theatre curtain.",
         sub: [
           "Bhasa and his plays",
           "Kalidasa and the Abhijnanasakuntalam",
@@ -87,6 +95,8 @@ const parts = [
         title: "Rasa: Bharata's Theory",
         people: "Bharata",
         slug: "indian-poetics-rasa",
+        image: "indian-poetics-rasa",
+        alt: "Painted interpretation of three faces showing joy, sorrow and surprise.",
         sub: [
           "Vibhava, anubhava and vyabhicharibhava",
           "Sthayibhava and the eight rasas",
@@ -99,6 +109,8 @@ const parts = [
         title: "Interpretations of the Rasa Sutra",
         people: "Bhatta Lollata · Sri Shankuka · Bhatta Nayaka · Abhinavagupta",
         slug: "indian-poetics-rasa-sutra",
+        image: "indian-poetics-rasa-sutra",
+        alt: "Painted interpretation of four people discussing an illustrated theatre manuscript.",
         sub: [
           "Bhatta Lollata: utpattivada (production)",
           "Sri Shankuka: anumitivada (inference)",
@@ -120,6 +132,8 @@ const parts = [
         title: "Bhamaha and the Kavyalankara",
         people: "Bhamaha · Udbhata",
         slug: "indian-poetics-bhamaha",
+        image: "indian-poetics-bhamaha",
+        alt: "Painted interpretation of gold leaves and a jewel decorating a palm-leaf poem.",
         sub: [
           "The structure of the Kavyalankara",
           "Rasa in Bhamaha",
@@ -133,6 +147,8 @@ const parts = [
         title: "Dandin and the Kavyadarsha",
         people: "Dandin",
         slug: "indian-poetics-dandin",
+        image: "indian-poetics-dandin",
+        alt: "Painted interpretation of a bronze mirror reflecting patterned lines of verse.",
         sub: [
           "The purposes and sources of poetry",
           "The definition and kinds of kavya, including the mahakavya",
@@ -145,6 +161,8 @@ const parts = [
         title: "Vamana and the Riti School",
         people: "Vamana",
         slug: "indian-poetics-vamana",
+        image: "indian-poetics-vamana",
+        alt: "Painted interpretation of three different brushstrokes leading to a fan of palm leaves.",
         sub: [
           "Vamana's contribution",
           "Riti as the soul of poetry",
@@ -157,6 +175,8 @@ const parts = [
         title: "Rajashekhara and the Kavyamimamsa",
         people: "Rajashekhara",
         slug: "indian-poetics-rajashekhara",
+        image: "indian-poetics-rajashekhara",
+        alt: "Painted interpretation of a human figure made of patterned leaves rising from a manuscript.",
         sub: [
           "A short life of Rajashekhara",
           "The Kavyamimamsa",
@@ -177,6 +197,8 @@ const parts = [
         title: "Anandavardhana and the Dhvanyaloka",
         people: "Anandavardhana",
         slug: "indian-poetics-anandavardhana",
+        image: "indian-poetics-anandavardhana",
+        alt: "Painted interpretation of a peacock shape formed by the shadows of leaves on a page.",
         sub: [
           "The four udyotas of the Dhvanyaloka",
           "Dhvani as the soul of poetry",
@@ -190,6 +212,8 @@ const parts = [
         title: "Abhinavagupta and the Abhinavabharati",
         people: "Abhinavagupta",
         slug: "indian-poetics-abhinavagupta",
+        image: "indian-poetics-abhinavagupta",
+        alt: "Painted interpretation of a spectator watching a softly lit dance performance.",
         sub: [
           "The Locana, his commentary on the Dhvanyaloka",
           "Abhinavagupta's contribution to rasa theory: the ninth rasa",
@@ -203,6 +227,8 @@ const parts = [
         title: "Kuntaka and the Vakroktijivita",
         people: "Kuntaka",
         slug: "indian-poetics-kuntaka",
+        image: "indian-poetics-kuntaka",
+        alt: "Painted interpretation of a red ink line curling into a flowering vine above straight lines of verse.",
         sub: [
           "The history of vakrokti",
           "What is vakrokti?",
@@ -215,6 +241,8 @@ const parts = [
         title: "Kshemendra and the Auchityavicharacharcha",
         people: "Kshemendra",
         slug: "indian-poetics-kshemendra",
+        image: "indian-poetics-kshemendra",
+        alt: "Painted interpretation of a miniature painter adding a moon to a night scene.",
         sub: [
           "What earlier critics said about propriety",
           "Kshemendra's life and works",
@@ -235,6 +263,8 @@ const parts = [
         title: "Mammata and the Kavyaprakasha",
         people: "Mammata",
         slug: "indian-poetics-mammata",
+        image: "indian-poetics-mammata",
+        alt: "Painted interpretation of three coloured threads tied around a bundle of manuscripts beside a lamp.",
         sub: [
           "The purpose of poetry",
           "The causes of poetry: pratibha, vyutpatti and abhyasa",
@@ -249,6 +279,8 @@ const parts = [
         title: "Vishwanatha and the Sahityadarpana",
         people: "Vishwanatha Kaviraja",
         slug: "indian-poetics-vishwanatha",
+        image: "indian-poetics-vishwanatha",
+        alt: "Painted interpretation of a round mirror reflecting a stage performer above an open palm-leaf manuscript.",
         sub: [
           "The author and his title Kaviraja",
           "The text and its ten chapters",
@@ -261,6 +293,8 @@ const parts = [
         title: "Bhartrhari and the Vakyapadiya",
         people: "Bhartrhari",
         slug: "indian-poetics-bhartrhari",
+        image: "indian-poetics-bhartrhari",
+        alt: "Painted interpretation of scattered gold brush marks coming together as a lotus.",
         sub: [
           "Shabdabrahman",
           "The theory of sphota",
@@ -271,6 +305,8 @@ const parts = [
         title: "Tolkappiyam and Tamil Poetics",
         people: "Tolkappiyar",
         slug: "indian-poetics-tolkappiyam",
+        image: "indian-poetics-tolkappiyam",
+        alt: "Painted interpretation of a palm-leaf manuscript with a quiet meeting and a distant procession.",
         sub: [
           "The Tolkappiyam and Sangam literature",
           "Akam and Puram",
@@ -291,6 +327,8 @@ const parts = [
         title: "Jnanesvara and Indian Poetics",
         people: "Jnanesvara",
         slug: "indian-poetics-jnanesvara",
+        image: "indian-poetics-jnanesvara",
+        alt: "Painted interpretation of a scribe writing by a river in the early morning.",
         sub: [
           "Life and time of Jnanesvara",
           "Major works: Jnanesvari, Amritanubhava, Changadeva-Pasashthi, Haripatha and the abhangas",
@@ -303,6 +341,8 @@ const parts = [
         title: "Bhakti Rasa",
         people: "Rupa Goswami",
         slug: "indian-poetics-bhakti-rasa",
+        image: "indian-poetics-bhakti-rasa",
+        alt: "Painted interpretation of singers keeping time with cymbals and a hand drum around a lamp.",
         sub: [
           "The bhakti movement and Indian literature",
           "Six characteristics of bhakti poetry (after Andrew Schelling)",
@@ -313,6 +353,8 @@ const parts = [
         title: "Amir Khusrau and Indian Poetics",
         people: "Amir Khusrau",
         slug: "indian-poetics-amir-khusrau",
+        image: "indian-poetics-amir-khusrau",
+        alt: "Painted interpretation of an open folio beside a lute and hand drum in an arched room.",
         sub: [
           "Poetry and music in Persian and Hindi",
           "The Nuh Siphir and its significance",
@@ -323,6 +365,8 @@ const parts = [
         title: "Keshavadasa and the Rasikpriya",
         people: "Keshavadasa",
         slug: "indian-poetics-keshavadasa",
+        image: "indian-poetics-keshavadasa",
+        alt: "Painted interpretation of three women in different moods framed by painted arches.",
         sub: [
           "The periods of Hindi literature: Adikaal, Bhaktikaal, Ritikaal and Adhunik kaal",
           "Keshavadasa and his major works",
@@ -334,6 +378,8 @@ const parts = [
         title: "Al-Badaoni and Literary Historiography",
         people: "Al-Badaoni",
         slug: "indian-poetics-al-badaoni",
+        image: "indian-poetics-al-badaoni",
+        alt: "Painted interpretation of a scholar comparing two chronicles in an archive.",
         sub: [
           "Al-Badaoni and his work",
           "Badaoni's idea of history",
@@ -354,6 +400,8 @@ const parts = [
         title: "Ghalib and His Poetic Thought",
         people: "Ghalib",
         slug: "indian-poetics-ghalib",
+        image: "indian-poetics-ghalib",
+        alt: "Painted interpretation of a letter, a verse manuscript and an inkwell overlooking city rooftops.",
         sub: [
           "Ghalib and Urdu literature",
           "Ghalib and the ghazal",
@@ -366,6 +414,8 @@ const parts = [
         title: "Bankimchandra Chattopadhyay's Aesthetics",
         people: "Bankimchandra Chattopadhyay",
         slug: "indian-poetics-bankimchandra",
+        image: "indian-poetics-bankimchandra",
+        alt: "Painted interpretation of a hand printing press and a bound novel beside a window overlooking a river.",
         sub: [
           "Bengal in Bankim's time",
           "Knowledge, colony and civilisation",
@@ -380,6 +430,8 @@ const parts = [
         title: "Rabindranath Tagore and Indian Aesthetics",
         people: "Tagore",
         slug: "indian-poetics-tagore",
+        image: "indian-poetics-tagore",
+        alt: "Painted interpretation of an art class looking at a painting under a tree.",
         sub: [
           "Life and works of Tagore",
           "Art and aesthetics",
@@ -391,6 +443,8 @@ const parts = [
         title: "Sri Aurobindo and Indian Aesthetics",
         people: "Sri Aurobindo",
         slug: "indian-poetics-aurobindo",
+        image: "indian-poetics-aurobindo",
+        alt: "Painted interpretation of gold ripples rising from the lines of an open poem.",
         sub: [
           "A short life and the literary works",
           "Aurobindo's poetic thought",
@@ -404,6 +458,8 @@ const parts = [
         title: "Ananda Coomaraswamy and Indian Poetics",
         people: "Ananda Coomaraswamy",
         slug: "indian-poetics-coomaraswamy",
+        image: "indian-poetics-coomaraswamy",
+        alt: "Painted interpretation of an artisan carving a floral design into stone.",
         sub: [
           "Major influences",
           "Coomaraswamy's conception of art",
@@ -416,6 +472,8 @@ const parts = [
         title: "Jainendra Kumar and Indian Poetics",
         people: "Jainendra Kumar",
         slug: "indian-poetics-jainendra-kumar",
+        image: "indian-poetics-jainendra-kumar",
+        alt: "Painted interpretation of a woman holding a letter and looking out of a window.",
         sub: [
           "A background of Hindi literature: vir-gathas, bhakti, riti and the modern period",
           "Jainendra Kumar: an introduction",
@@ -426,6 +484,8 @@ const parts = [
         title: "Suresh Joshi and Indian Poetics",
         people: "Suresh Joshi",
         slug: "indian-poetics-suresh-joshi",
+        image: "indian-poetics-suresh-joshi",
+        alt: "Painted interpretation of hands comparing pages beneath a sheet that reveals a pattern.",
         sub: [
           "A history of Gujarati literature",
           "Early life and works",
@@ -448,6 +508,8 @@ const parts = [
         title: "Bhalchandra Nemade and Nativism",
         people: "Bhalchandra Nemade",
         slug: "indian-poetics-nemade",
+        image: "indian-poetics-nemade",
+        alt: "Painted interpretation of a storyteller speaking to two listeners beside an open notebook.",
         sub: [
           "What is nativism? The birth of the concept",
           "Nemade's nativism: native styles and orality",
@@ -460,6 +522,8 @@ const parts = [
         title: "The Hungry Generation and Poetics",
         people: "",
         slug: "indian-poetics-hungry-generation",
+        image: "indian-poetics-hungry-generation",
+        alt: "Painted interpretation of young poets preparing a broadsheet at a small printing press.",
         sub: [
           "Bengali poetry from 1920 to 1950",
           "Modernity and adhunikata",
@@ -472,6 +536,8 @@ const parts = [
         title: "Folk and Tribal Aesthetics",
         people: "",
         slug: "indian-poetics-folk-and-tribal",
+        image: "indian-poetics-folk-and-tribal",
+        alt: "Painted interpretation of an artist painting a patterned bird and a tree.",
         sub: [
           "The folk culture of India",
           "Tribal literature",
@@ -484,6 +550,8 @@ const parts = [
         title: "Dalit Aesthetics",
         people: "",
         slug: "indian-poetics-dalit-aesthetics",
+        image: "indian-poetics-dalit-aesthetics",
+        alt: "Painted interpretation of a writer reading from an open book at a community gathering.",
         sub: [
           "Dalit literature",
           "Satyam, shivam and sundaram: truth, goodness and beauty",
@@ -494,6 +562,8 @@ const parts = [
         title: "Contemporary Indian Poetics",
         people: "C. D. Narasimhaiah · K. R. Srinivasa Iyengar · M. K. Naik · M. Hiriyanna · K. C. Pandey · Krishna Rayan",
         slug: "indian-poetics-contemporary",
+        image: "indian-poetics-contemporary",
+        alt: "Painted interpretation of palm leaves, printed pages and a tablet linked by coloured strands.",
         sub: [
           "Some critics and their concepts",
           "Traditional Indian poetics in contemporary times",
