@@ -16,8 +16,10 @@ Two sets of cards can each carry a picture:
 The Literary Theory, Cultural Studies and Indian Poetics parts have pictures on the hub.
 A chapter without a picture shows its number on a plain tinted panel.
 
-The eight History of Literary Criticism cards use the same image sizes. Their files are
-in `assets/literary-criticism/`, named after the slugs in `_data/criticismHistory.json`.
+The eight History of Literary Criticism cards are the same size as the part cards (owner, 2026-11-25: "cards bade hai,
+chhota karke ek line me 4 kar do"): the default four-column `.ltx-cards` grid (four, then three, two, one as the screen
+narrows) with `partCardImageSizes`, four and four on a wide screen. Their files are in `assets/literary-criticism/`, named
+after the slugs in `_data/criticismHistory.json`.
 
 ## Adding a picture
 
