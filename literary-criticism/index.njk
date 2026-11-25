@@ -167,11 +167,25 @@
   </div>
 </section>
 
-<section style="border-top:1px solid var(--border)">
+<section class="ltx" id="key-terms" style="border-top:1px solid var(--border)">
   <div class="wrap">
     <h2>Key Terms &amp; Concepts</h2>
-    <p>A plain-English glossary of the terms used across criticism and theory, from mimesis and catharsis to canon and close reading.</p>
-    <p class="meta" style="margin-top:.75rem">Articles coming soon.</p>
+    <p>A plain-English glossary of the terms used across criticism and theory, from simile and sonnet to mimesis, catharsis, canon and close reading. Open a part to see its chapters and the terms each one explains.</p>
+    <div class="grid ltx-cards">
+      {%- for part in keyTerms %}
+      <a class="ltx-card" href="{{ part.href }}">
+        {%- if part.picture %}
+        <span class="ltx-thumb"><img src="{{ part.picture.src }}" srcset="{{ part.picture.small }} 240w, {{ part.picture.src }} 480w" sizes="(max-width: 559px) 84px, (max-width: 860px) calc((100vw - 72px) / 2 - 24px), (max-width: 1120px) calc((100vw - 72px) / 3 - 24px), 230px" alt="{{ part.picture.alt }}" width="480" height="300" loading="lazy"><span class="ltx-tag">Part {{ part.number }}</span></span>
+        {%- else %}
+        <span class="ltx-thumb ltx-thumb-plain" aria-hidden="true"><span class="ltx-fig">{{ part.number }}</span></span>
+        {%- endif %}
+        <span class="ltx-meta">{{ part.count }} chapters</span>
+        <span class="ltx-name">{{ part.name }}</span>
+        <span class="ltx-sum">{{ part.summary }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <p class="meta">{{ keyTermsTotals.parts }} parts &middot; {{ keyTermsTotals.chapters }} chapters &middot; {{ keyTermsTotals.topics }} terms planned{% if keyTermsTotals.live == 0 %} &middot; Articles coming soon{% endif %}</p>
   </div>
 </section>
 
