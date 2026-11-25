@@ -30,3 +30,9 @@
 /notes.html    /notes/    301
 /guides.html   /english-literature/   301
 /help.html     /contact/  301
+
+# The Literary Theory parts live at /literary-criticism/literary-theory/<part>/, and the eight
+# cards that open them are on /literary-criticism/. The folder itself has no page of its own,
+# so send anyone who trims the address back to those cards.
+/literary-criticism/literary-theory   /literary-criticism/#literary-theory   301
+/literary-criticism/literary-theory/  /literary-criticism/#literary-theory   301

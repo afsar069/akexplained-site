@@ -4520,20 +4520,25 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
 }
 
 
-/* ---------- Literary Theory parts (owner, 2026-11-25) ---------- */
-/* /literary-criticism/ ke Literary Theory section me aath Part cards; ek card dabane par
-   usi part ka chapter panel neeche khulta hai (assets/literary-theory.js).
-   JavaScript na chale to saare panels khule rehte hain. */
+
+/* ---------- Literary Theory (owner, 2026-11-25) ---------- */
+/* /literary-criticism/ par aath Part cards. Ek card apna page kholta hai
+   (/literary-criticism/literary-theory/<slug>/), jahan us part ke chapters hain.
+   Chapter ka article likha jaa chuka ho to row link banti hai (.is-live), warna
+   "Coming soon" dikhati hai. */
 .ltx-cards{
-  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 22px;
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0 14px;
 }
 .ltx-card{
   display:flex;align-items:center;gap:12px;min-width:0;padding:14px;
   background:var(--card-paper);border:1px solid var(--card-line);border-radius:14px;
-  color:var(--ink);text-decoration:none;position:relative;
-  transition:background-color .18s,border-color .18s,box-shadow .18s;
+  color:var(--ink);text-decoration:none;
+  transition:transform .22s cubic-bezier(.2,.7,.3,1),box-shadow .28s,border-color .22s,background-color .18s;
 }
-.ltx-card:hover{background:var(--teal-soft);border-color:var(--teal);color:var(--ink)}
+.ltx-card:hover{
+  background:var(--teal-soft);border-color:var(--teal);color:var(--ink);
+  transform:translateY(-3px);box-shadow:var(--glow),0 16px 30px -14px rgba(22,48,74,.3);
+}
 .ltx-card:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 .ltx-no{
   flex:none;width:44px;height:44px;border-radius:12px;
@@ -4541,53 +4546,65 @@ a.net-pyq-go[data-pass-getaccess]:focus-visible,
   background:var(--teal-soft);color:var(--teal-dark);
   font-family:var(--serif);font-size:1.25rem;font-weight:700;
 }
+.ltx-card:hover .ltx-no{background:var(--teal);color:#fff}
 .ltx-card-txt{min-width:0;display:flex;flex-direction:column;gap:2px}
 .ltx-card-txt strong{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.25}
 .ltx-card-txt span{font-size:.82rem;line-height:1.35;color:var(--body)}
-.ltx-card[aria-expanded="true"]{
-  background:var(--teal-soft);border-color:var(--teal);
-  box-shadow:0 8px 18px -12px rgba(15,118,110,.55);
-}
-.ltx-card[aria-expanded="true"] .ltx-no{background:var(--teal);color:#fff}
-.ltx-card[aria-expanded="true"]::after{
-  content:"";position:absolute;left:50%;bottom:-9px;width:14px;height:14px;
-  background:var(--teal-soft);border-right:1px solid var(--teal);border-bottom:1px solid var(--teal);
-  transform:translateX(-50%) rotate(45deg);
-}
-.ltx-panel{
-  scroll-margin-top:16px;margin:0 0 20px;padding:22px 24px;
-  border:1px solid #DCC298;border-radius:10px;background:var(--paper);
-}
-.ltx-panel > h3{margin:0 0 4px;font-size:1.12rem}
-.ltx-intro{margin:0 0 16px;max-width:none;font-size:.95rem}
+
+/* Part page */
+.ltx-back{margin:0 0 14px;font-size:.9rem}
 .ltx-chapters{list-style:none;margin:0;padding:0;max-width:none;display:grid;gap:10px}
 .ltx-ch{
-  display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:4px 14px;align-items:center;
-  padding:12px 16px;background:var(--tint);border:1px dashed var(--card-line);border-radius:12px;
+  display:grid;grid-template-columns:36px minmax(0,1fr) auto;gap:4px 14px;align-items:center;
+  padding:14px 16px;background:var(--tint);border:1px dashed var(--card-line);border-radius:12px;
 }
+.ltx-ch.is-live{background:var(--card-paper);border-style:solid}
 .ltx-ch-no{
-  width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;
+  width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;
   background:var(--cream);border:1px solid var(--border);
-  font-size:.86rem;font-weight:700;color:var(--body);
+  font-size:.88rem;font-weight:700;color:var(--body);
 }
+.ltx-ch.is-live .ltx-ch-no{background:var(--teal-soft);border-color:var(--teal-soft);color:var(--teal-dark)}
 .ltx-ch-txt{min-width:0;display:flex;flex-direction:column;gap:2px}
-.ltx-ch-txt strong{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.3;color:var(--ink)}
-.ltx-who{font-size:.86rem;line-height:1.45;color:var(--body)}
+.ltx-ch-txt strong{font-family:var(--serif);font-size:1.02rem;font-weight:700;line-height:1.3;color:var(--ink)}
+.ltx-ch-txt strong a{color:var(--ink)}
+.ltx-ch-txt strong a:hover{color:var(--teal-dark)}
+.ltx-who{font-size:.88rem;line-height:1.45;color:var(--body)}
 .ltx-ch-soon{
   font-size:.7rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;
   color:#8A97A6;white-space:nowrap;
 }
-.ltx-note{margin:16px 0 0;font-size:.88rem;color:var(--body);max-width:none}
+.ltx-ch-go{
+  display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:0 16px;
+  border-radius:8px;background:var(--teal);color:#fff;font-size:.92rem;font-weight:700;
+  line-height:1;white-space:nowrap;box-shadow:0 2px 0 rgba(0,0,0,.18);
+}
+.ltx-ch-go:hover{background:var(--teal-dark);color:#fff}
+
+/* Previous / next part */
+.ltx-nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.ltx-nav-link{
+  display:flex;flex-direction:column;gap:3px;padding:14px 16px;
+  background:var(--card-paper);border:1px solid var(--card-line);border-radius:12px;color:var(--ink);
+  transition:border-color .18s,background-color .18s;
+}
+.ltx-nav-link:hover{border-color:var(--teal);background:var(--teal-soft);color:var(--ink)}
+.ltx-nav-link span{font-size:.76rem;letter-spacing:.07em;text-transform:uppercase;font-weight:700;color:var(--teal)}
+.ltx-nav-link strong{font-family:var(--serif);font-size:1rem;font-weight:700;line-height:1.3}
+.ltx-nav-next{text-align:right}
+
 @media(max-width:1000px){
   .ltx-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:559px){
-  .ltx-cards{grid-template-columns:minmax(0,1fr);gap:8px;margin:14px 0 18px}
+  .ltx-cards{grid-template-columns:minmax(0,1fr);gap:8px;margin:14px 0 12px}
   .ltx-card{padding:11px 12px;gap:10px;border-radius:12px}
   .ltx-no{width:36px;height:36px;font-size:1.05rem;border-radius:10px}
   .ltx-card-txt strong{font-size:.95rem}
-  .ltx-panel{padding:16px 14px;border-radius:12px}
-  .ltx-ch{grid-template-columns:30px minmax(0,1fr);padding:11px 12px}
+  .ltx-ch{grid-template-columns:30px minmax(0,1fr);padding:12px 13px}
   .ltx-ch-no{width:30px;height:30px;font-size:.8rem}
   .ltx-ch-soon{grid-column:2;justify-self:start;margin-top:2px}
+  .ltx-ch-go{grid-column:2;justify-self:start;margin-top:6px}
+  .ltx-nav{grid-template-columns:minmax(0,1fr)}
+  .ltx-nav-next{text-align:left}
 }
