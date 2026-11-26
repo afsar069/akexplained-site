@@ -18,9 +18,6 @@ eleventyExcludeFromCollections: true
   <url><loc>https://akexplained.com/literary-criticism/literary-theory/gender-and-sexuality/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/literary-criticism/literary-theory/race-empire-and-nation/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/literary-criticism/literary-theory/postmodern-and-contemporary/</loc><priority>0.7</priority></url>
-{%- for part in literaryTheory %}{% for chapter in part.chapters %}{% if chapter.live %}
-  <url><loc>https://akexplained.com/notes/{{ chapter.slug }}/</loc><priority>0.7</priority></url>
-{%- endif %}{% endfor %}{% endfor %}
   <url><loc>https://akexplained.com/literary-criticism/cultural-studies/culture-class-and-ideology/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/literary-criticism/cultural-studies/popular-culture-media-and-subculture/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/literary-criticism/cultural-studies/identity-diaspora-and-globalisation/</loc><priority>0.7</priority></url>
@@ -83,47 +80,12 @@ eleventyExcludeFromCollections: true
   <url><loc>https://akexplained.com/university/ignou/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/university/du/</loc><priority>0.5</priority></url>
   <url><loc>https://akexplained.com/notes/</loc><priority>0.9</priority></url>
-  <url><loc>https://akexplained.com/notes/old-english/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/middle-english/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/renaissance/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/jacobean-and-caroline-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/restoration-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/augustan-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/romantic-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/victorian-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/modern-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/contemporary-age/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/anglo-norman/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/age-of-chaucer/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/fifteenth-century/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/early-tudor/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/elizabethan/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/jacobean/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/caroline/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/commonwealth/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/neoclassical/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/age-of-sensibility/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/edwardian/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/georgian/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/american-colonial/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/american-renaissance/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/american-realism/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/american-modernism/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/ages/american-contemporary/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-introduction/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-beginnings/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-early-growth/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-freedom-years/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-independence-era/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/indian-english-late-twentieth/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-introduction/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-classical/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-renaissance/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-neoclassical/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-romantic/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-victorian/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-early-twentieth/</loc><priority>0.7</priority></url>
-  <url><loc>https://akexplained.com/notes/literary-criticism-mid-twentieth/</loc><priority>0.7</priority></url>
+{#- Har notes article (notes/<slug>/index.md aur notes/ages/<slug>/index.md) khud se.
+    Pehle 43 lines haath se likhi thi; ab naya article publish hote hi apne aap aa jata hai
+    (owner, 2026-11-26: /admin/upload-article/ engine). Koi line haath se na jodna. -#}
+{%- for note in notesIndex %}
+  <url><loc>https://akexplained.com{{ note.url }}</loc><priority>0.7</priority></url>
+{%- endfor %}
   <url><loc>https://akexplained.com/quizzes/</loc><priority>0.8</priority></url>
   <url><loc>https://akexplained.com/quizzes/daily/</loc><priority>0.7</priority></url>
   <url><loc>https://akexplained.com/quizzes/daily/anglo-saxon/</loc><priority>0.7</priority></url>

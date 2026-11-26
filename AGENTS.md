@@ -17,7 +17,7 @@ steps, one at a time. Chat may be in Hinglish. **Everything a visitor reads on t
    free files stay free. Never make a paid paper free or a free file paid without the owner's word.
 2b. **Free or login? Ask.** When question files arrive, the owner says which. If not said, ask before writing
    anything into the repo. Never assume free.
-3. **Never put the Supabase secret key, or any Razorpay key or webhook secret,** in the repo, a chat, or a file, and never
+3. **Never put the Supabase secret key, any Razorpay key or webhook secret, or the GitHub article token (`ARTICLE_REPO_TOKEN`, rule 24),** in the repo, a chat, or a file, and never
    ask the owner to paste one. The owner types Razorpay secrets into Supabase → Edge Functions → Secrets themselves. The
    browser uses the public (publishable) key only; row level security protects the data.
 4. **Nothing is invented**: no dates, titles, counts, prices, limits or hub texts that were not supplied or

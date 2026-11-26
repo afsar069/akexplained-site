@@ -775,7 +775,10 @@ module.exports = parts.map(function (p, i) {
         name: name,
         slug: slug,
         href: "/notes/" + slug + "/",
-        live: liveTerms.indexOf(name) !== -1,
+        // Term ka strip khulta hai jab uska article maujood ho. `liveTerms` me likha naam
+        // bhi chalta hai (purani lines waisi hi), par /admin/upload-article/ se naya
+        // term article publish karne par kuch likhna nahi padta (owner, 2026-11-26).
+        live: liveTerms.indexOf(name) !== -1 || fs.existsSync(path.join(__dirname, "..", "notes", slug, "index.md")),
         picture: artwork ? { src: ASSETS + artwork.image + ".webp", alt: artwork.alt } : null
       };
     });

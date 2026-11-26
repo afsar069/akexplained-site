@@ -238,6 +238,28 @@
     return { type: r[0], bg: r[1], name: r[2], href: r[3], hay: r[2].toLowerCase() };
   });
 
+  /* Baaki notes articles khud se (owner, 2026-11-26). /assets/notes-search.json build ke
+     waqt banti hai (notes-search.njk + _data/notesIndex.js), isliye /admin/upload-article/
+     se publish hua naya article yahan apne aap aa jata hai. Upar ki likhi rows ke pate
+     pehle se list me hain, wo waisi hi rehti hain; ye sirf naye pate jodti hai. Ye file na
+     mile to search pehle jaisa hi chalta rehta hai. */
+  (function addNotes() {
+    if (!window.fetch) return;
+    fetch('/assets/notes-search.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (rows) {
+        if (!Array.isArray(rows)) return;
+        var have = {};
+        searchIndex.forEach(function (r) { have[r.href] = true; });
+        rows.forEach(function (row) {
+          if (!row || !row.u || !row.t || have[row.u]) return;
+          have[row.u] = true;
+          searchIndex.push({ type: 'Note', bg: '#4A5A6A', name: row.t, href: row.u, hay: String(row.t).toLowerCase() });
+        });
+      })
+      .catch(function () { /* search pehle jaisa chalta rahe */ });
+  })();
+
 
   /* ---------- Ages: British literary periods ----------
      Ye list /quizzes/daily/ aur /quizzes/mcq/ ki ages se mel khati hai \u2014 teenon jagah ek si.
