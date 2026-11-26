@@ -292,7 +292,12 @@
    page ke background par rehta hai (British ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
 #indian-ages{border-top:1px solid var(--border)}
 
-/* Indian English Literature slider (owner, 2026-11-23): paanch card dikhte hain, baaki side me khisakne se; gol button slide karta hai,
+/* History of Literary Criticism (owner, 2026-11-26): chautha band, Indian ke neeche. Indian page ke background par hai,
+   isliye ye wapas sand-tint me (American ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
+#criticism-history{background:var(--tint);border-top:1px solid var(--border)}
+
+/* Slider (Indian English Literature band, aur 2026-11-26 se History of Literary Criticism band bhi — rules saanjhe hain):
+   paanch card dikhte hain, baaki side me khisakne se; gol button slide karta hai,
    aakhir me timeline ka link ban jata hai (assets/home.js renderIndianAges). --v = ek saath kitne card dikhte hain (agegrid ke columns jaisa:
    2 / 3 / 5). Track overflow-x:auto hai, isliye hover ka uthna aur shadow kategi nahi, iske liye padding + negative margin. */
 .slider{--v:2;--gap:14px;display:flex;align-items:center;gap:12px}
@@ -324,10 +329,10 @@
 
 /* Sirf phone: Ages bhi hari heading patti ke saath, har age ek lamba card, ek ke neeche ek. Desktop par kuch nahi badalta. */
 @media(max-width:559px){
-  #ages,#american-ages,#indian-ages{padding:22px 0}
-  #ages .sechead,#american-ages .sechead,#indian-ages .sechead{margin-bottom:12px}
-  #ages .sechead .more,#ages .seclede,#american-ages .sechead .more,#american-ages .seclede,#indian-ages .sechead .more,#indian-ages .seclede{display:none}
-  #ages .sechead h2,#american-ages .sechead h2,#indian-ages .sechead h2{
+  #ages,#american-ages,#indian-ages,#criticism-history{padding:22px 0}
+  #ages .sechead,#american-ages .sechead,#indian-ages .sechead,#criticism-history .sechead{margin-bottom:12px}
+  #ages .sechead .more,#ages .seclede,#american-ages .sechead .more,#american-ages .seclede,#indian-ages .sechead .more,#indian-ages .seclede,#criticism-history .sechead .more,#criticism-history .seclede{display:none}
+  #ages .sechead h2,#american-ages .sechead h2,#indian-ages .sechead h2,#criticism-history .sechead h2{
     width:100%;margin:0;padding:8px 14px;border-radius:10px;
     background:var(--teal-dark);color:#fff;font-size:1.02rem;line-height:1.3;letter-spacing:.01em;
   }

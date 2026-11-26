@@ -407,6 +407,85 @@
   </div>
 </section>
 
+<!-- ====== HISTORY OF LITERARY CRITICISM (owner, 2026-11-26): ek line me criticism ke card, Indian ages ke neeche.
+     Indian band ki tarah slider hai (8 card hain, ek line me 5 dikhte hain), aur card seedha is HTML me hain, home.js unhe nahi banata.
+     Shabd (title, summary, alt) _data/criticismHistory.json se waise hi liye gaye hain jaise /literary-criticism/ par hain, aur
+     "era" ki line har article ke apne `period:` front matter se hai (notes/literary-criticism-<slug>/index.md): sab ko saath me badlo. ====== -->
+<section id="criticism-history">
+  <div class="wrap">
+    <div class="sechead">
+      <h2>History of Literary Criticism</h2>
+      <a class="more" href="/literary-criticism/">View all criticism notes &rarr;</a>
+    </div>
+    <p class="seclede">Criticism in order of time, from the Greeks to about 1960.</p>
+    <div class="slider" id="criticismSlider">
+      <div class="slider-track" id="criticismTrack" tabindex="0" role="region" aria-label="History of Literary Criticism: the introduction and the periods">
+        <a class="agecard" href="/notes/literary-criticism-introduction/">
+          <span class="thumb"><img src="/assets/literary-criticism/introduction.webp" srcset="/assets/literary-criticism/introduction-240.webp 240w, /assets/literary-criticism/introduction.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of close reading, with a magnifying glass over an annotated book." width="480" height="300" loading="lazy"></span>
+          <h3>Introduction to Literary Criticism</h3>
+          <p class="era">Classical to 1960</p>
+          <p class="who">What criticism is, what critics do, its main kinds, and a map of the whole history.</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-classical/">
+          <span class="thumb"><img src="/assets/literary-criticism/classical.webp" srcset="/assets/literary-criticism/classical-240.webp 240w, /assets/literary-criticism/classical.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of classical criticism, with a philosopher&#x27;s bust and a mask at a Greek theatre." width="480" height="300" loading="lazy"></span>
+          <h3>Classical Criticism</h3>
+          <p class="era">c. 428 BCE&ndash;1st century CE</p>
+          <p class="who">Plato &middot; Aristotle &middot; Horace &middot; Longinus</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-renaissance/">
+          <span class="thumb"><img src="/assets/literary-criticism/renaissance.webp" srcset="/assets/literary-criticism/renaissance-240.webp 240w, /assets/literary-criticism/renaissance.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of a writer with a quill overlooking an Elizabethan playhouse." width="480" height="300" loading="lazy"></span>
+          <h3>Renaissance Criticism</h3>
+          <p class="era">16th&ndash;early 17th century</p>
+          <p class="who">Sidney &middot; Gosson &middot; Puttenham &middot; Jonson</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-neoclassical/">
+          <span class="thumb"><img src="/assets/literary-criticism/neoclassical.webp" srcset="/assets/literary-criticism/neoclassical-240.webp 240w, /assets/literary-criticism/neoclassical.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of two readers discussing a printed page in an eighteenth-century coffeehouse." width="480" height="300" loading="lazy"></span>
+          <h3>Neoclassical Criticism</h3>
+          <p class="era">1660&ndash;1784</p>
+          <p class="who">Dryden &middot; Pope &middot; Addison &middot; Johnson</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-romantic/">
+          <span class="thumb"><img src="/assets/literary-criticism/romantic.webp" srcset="/assets/literary-criticism/romantic-240.webp 240w, /assets/literary-criticism/romantic.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of an open notebook overlooking the mountains and lakes of the Lake District." width="480" height="300" loading="lazy"></span>
+          <h3>Romantic Criticism</h3>
+          <p class="era">1798&ndash;1830s</p>
+          <p class="who">Wordsworth &middot; Coleridge &middot; Shelley &middot; Hazlitt</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-victorian/">
+          <span class="thumb"><img src="/assets/literary-criticism/victorian.webp" srcset="/assets/literary-criticism/victorian-240.webp 240w, /assets/literary-criticism/victorian.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of a Victorian lecturer holding a book before a reading society." width="480" height="300" loading="lazy"></span>
+          <h3>Victorian Criticism</h3>
+          <p class="era">1837&ndash;1901</p>
+          <p class="who">Arnold &middot; Ruskin &middot; Pater &middot; Wilde</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-early-twentieth/">
+          <span class="thumb"><img src="/assets/literary-criticism/early-twentieth.webp" srcset="/assets/literary-criticism/early-twentieth-240.webp 240w, /assets/literary-criticism/early-twentieth.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of a typewriter and modernist journal pages on a desk." width="480" height="300" loading="lazy"></span>
+          <h3>Early Twentieth Century</h3>
+          <p class="era">1900&ndash;1930s</p>
+          <p class="who">Bradley &middot; T. S. Eliot &middot; I. A. Richards</p>
+        </a>
+        <a class="agecard" href="/notes/literary-criticism-mid-twentieth/">
+          <span class="thumb"><img src="/assets/literary-criticism/mid-twentieth.webp" srcset="/assets/literary-criticism/mid-twentieth-240.webp 240w, /assets/literary-criticism/mid-twentieth.webp 480w" sizes="(max-width: 559px) calc(42vw - 29px), (max-width: 619px) calc((100vw - 58px) / 2 - 26px), (max-width: 999px) calc((100vw - 72px) / 3 - 26px), (max-width: 1179px) calc((100vw - 100px) / 5 - 26px), 190px" alt="Painted interpretation of students marking up a poem in a mid-century seminar." width="480" height="300" loading="lazy"></span>
+          <h3>Mid Twentieth Century</h3>
+          <p class="era">1930&ndash;1960s</p>
+          <p class="who">Empson &middot; Leavis &middot; the New Critics &middot; Frye</p>
+        </a>
+      </div>
+      <div class="slider-nav">
+        <button class="slider-btn slider-prev" id="criticismPrev" type="button" aria-label="Slide back to the earlier cards" hidden>
+          <svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 3 5 8l5 5"/></svg>
+        </button>
+        <button class="slider-btn slider-next" id="criticismNext" type="button" aria-label="Slide to show more cards" hidden>
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 3l5 5-5 5"/></svg>
+        </button>
+        <a class="slider-btn slider-end" id="criticismEnd" href="/literary-criticism/" aria-label="Open all the literary criticism notes">
+          <svg viewBox="0 0 16 16" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+          <span class="slider-endtext">Read all the criticism notes &rarr;</span>
+        </a>
+        <span class="slider-cap" id="criticismCap" aria-hidden="true">All notes</span>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ====== VIDEO LESSONS ====== -->
 <section class="videos" id="videos">
   <div class="wrap">
