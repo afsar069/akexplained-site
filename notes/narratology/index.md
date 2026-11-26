@@ -24,6 +24,10 @@ prev:
   label: Structuralism
   href: /notes/structuralism/
   direction: Previous article
+next:
+  label: Semiotics
+  href: /notes/semiotics/
+  direction: Next article
 ---
 
 Imagine a student named Meera standing outside a railway station in Lucknow. She has just missed her train to Delhi and cannot find her phone. Her brother tells this story later, beginning with her return home that evening. Meera herself begins with the moment when she realised that her phone was missing. A newspaper report starts with the delay at the station.
