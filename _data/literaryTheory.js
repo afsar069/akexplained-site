@@ -79,21 +79,24 @@ const parts = [
       {
         title: "Narratology",
         people: "Genette · Bal · Prince · Chatman",
-        slug: "literary-theory-narratology",
+        slug: "narratology",
+        live: true,
         image: "literary-theory-narratology",
         alt: "Painted interpretation of a ribbon linking three scenes from a traveller's story."
       },
       {
         title: "Semiotics",
         people: "Peirce · Eco · Barthes",
-        slug: "literary-theory-semiotics",
+        slug: "semiotics",
+        live: true,
         image: "literary-theory-semiotics",
         alt: "Painted interpretation of a bird symbol, bird tracks and a trail sign."
       },
       {
         title: "Bakhtin and Dialogism",
         people: "",
-        slug: "literary-theory-bakhtin",
+        slug: "bakhtin-dialogism",
+        live: true,
         image: "literary-theory-bakhtin",
         alt: "Painted interpretation of different voices meeting in ribbons above an open book."
       }
