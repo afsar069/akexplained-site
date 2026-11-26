@@ -60,6 +60,7 @@ const parts = [
         title: "Saussure and Structural Linguistics",
         people: "",
         slug: "literary-theory-saussure",
+        live: true,
         image: "literary-theory-saussure",
         alt: "Painted interpretation of a sound wave paired with the image of a tree."
       },
