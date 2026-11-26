@@ -15,9 +15,8 @@
 // Critical Theory bhi wahin chala gaya (past NET sawal use Cultural Studies me ginte hain). Unit IX
 // "Literary Theory post World War II" ki cheezein yahin rahin.
 //
-// `slug` = us chapter ka article kahan rahega: /notes/<slug>/. Article abhi likha nahi
-// gaya, isliye har chapter `live: false` hai aur card link nahi banta — sirf
-// "Coming soon" dikhata hai. Jis din article aa jaye, us chapter ko `live: true`
+// `slug` = us chapter ka article kahan rahega: /notes/<slug>/. Jab tak article
+// nahi aata, card "Coming soon" dikhata hai. Article jodne par `live: true`
 // kar dena; card khud link ban jayega. Slug tab tak badla ja sakta hai.
 //
 // PICTURE: do jagah tasveer lag sakti hai — har part ke card par
@@ -45,6 +44,7 @@ const parts = [
         title: "Introduction to Literary Theory",
         people: "",
         slug: "literary-theory-introduction",
+        live: true,
         image: "literary-theory-introduction",
         alt: "Painted interpretation of coloured lenses revealing different patterns on the pages of a book."
       },
@@ -338,7 +338,7 @@ module.exports = parts.map(function (p, i) {
       counter += 1;
       return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
     }),
-    // Kitne chapter likhe ja chuke hain — abhi sab 0, sab "Coming soon".
+    // Kitne chapter likhe ja chuke hain.
     liveCount: p.chapters.filter(function (c) { return c.live; }).length,
     // Tasveer di hai to uske do rasta, warna null (card numbered panel dikhayega).
     picture: pic(p.image, p.alt),
