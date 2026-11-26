@@ -138,9 +138,25 @@ Deno.serve(async (req: Request) => {
   if (whoErr || !who?.user) return json({ error: "Please log in again." }, 401, origin);
 
   // 2. Admin hai? (rule 16 ki wahi ek allow list)
-  const { data: row, error: rowErr } = await admin
-    .from("paper_admins").select("user_id").eq("user_id", who.user.id).maybeSingle();
-  if (rowErr) return json({ error: "Could not check your account. Please try again." }, 500, origin);
+  //
+  // Ye jaanch CALLER ke apne login se hoti hai, service key se nahi. public.paper_admins
+  // jaan-boojh kar aisi bani hai ki sirf `authenticated` ke paas SELECT hai aur policy
+  // "paper_admins_read_own" har user ko sirf apna row deti hai — service_role ke paas
+  // uspar SELECT hai hi nahi (migration 20261112130000). Isliye service key se padhne par
+  // "permission denied" aata tha. Saari admin pages bhi yahi raasta lati hain: row mila =
+  // admin, nahi mila = nahi. Table ka bulk-read kisi ko bhi nahi milta.
+  const anonKey = Deno.env.get("SUPABASE_ANON_KEY") || token;
+  const asUser = createClient(url, anonKey, {
+    auth: { persistSession: false },
+    global: { headers: { Authorization: "Bearer " + token } },
+  });
+  const { data: row, error: rowErr } = await asUser
+    .from("paper_admins").select("user_id").maybeSingle();
+  if (rowErr) {
+    return json({
+      error: "Could not check your account. Please try again. (" + (rowErr.message || "no reason given") + ")",
+    }, 500, origin);
+  }
   if (!row) return json({ error: "You are not allowed to use this page." }, 403, origin);
 
   // 3. Body
