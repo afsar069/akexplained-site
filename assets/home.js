@@ -427,12 +427,14 @@
      Peeche jane ke liye chhota "<" button tabhi dikhta hai jab track aage khisak chuka ho. Phone par track seedhi list hai
      (CSS sirf pehle paanch card dikhati hai), isliye wahan sirf neeche timeline ka link dikhta hai.
      JavaScript na chale to bhi card dikhte hain (aur side me scroll hote hain) aur timeline ka link kaam karta hai. */
-  function setupIndianSlider() {
-    const track = document.getElementById('indianTrack');
-    const prev = document.getElementById('indianPrev');
-    const next = document.getElementById('indianNext');
-    const end = document.getElementById('indianEnd');
-    const cap = document.getElementById('indianCap');
+  /* Ek slider band chalata hai (Indian English ages, History of Literary Criticism). `name` = id ka shuruaati hissa,
+     jaise 'indian' -> indianTrack / indianPrev / indianNext / indianEnd / indianCap. `endCap` = aakhir me chhoti patti ka text. */
+  function setupSlider(name, endCap) {
+    const track = document.getElementById(name + 'Track');
+    const prev = document.getElementById(name + 'Prev');
+    const next = document.getElementById(name + 'Next');
+    const end = document.getElementById(name + 'End');
+    const cap = document.getElementById(name + 'Cap');
     if (!track || !prev || !next || !end) return;
 
     function update() {
@@ -443,7 +445,7 @@
       prev.hidden = !slideable || atStart;
       next.hidden = atEnd;
       end.hidden = !atEnd;
-      if (cap) cap.textContent = atEnd ? 'Full timeline' : 'More';
+      if (cap) cap.textContent = atEnd ? endCap : 'More';
     }
 
     function moveBy(sign) {
@@ -674,7 +676,8 @@
   document.addEventListener('DOMContentLoaded', function () {
     renderAges();
     renderAmericanAges();
-    setupIndianSlider();
+    setupSlider('indian', 'Full timeline');
+    setupSlider('criticism', 'All notes');
     renderVideos();
     loadReviews().then(renderReviews);
     renderBirthday();
