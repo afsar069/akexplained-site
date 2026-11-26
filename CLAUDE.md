@@ -1128,6 +1128,15 @@ address, as was done for this chapter (its slug is now `phenomenology-hermeneuti
 Semiotics and Bakhtin, which are all bare too). Never move a published article to a new address to match the plan: the old
 address is already out in the world.
 
+**And the card no longer waits for that one line.** It happened twice in a day (Reader-Response went to
+`/notes/reader-response-reception-theory/` against the registry's `literary-theory-reader-response`), so `resolveChapter()` in
+`tools/article-live.js` now gives each chapter both its `live` state **and its `slug`**: the article at the registry's slug if
+there is one, else **the article whose `title` is exactly the chapter's title**, wherever it was published. The card opens by
+itself and its link points at the real address, which is what the engine promises. The build prints one `[article-live]` line
+naming the chapter and both addresses — tidy the registry's slug when you next touch it, but nothing is broken until you do.
+A chapter with a typed `live: true` and no article under either rule still stops the build. Matching is on the title alone, so
+two different chapters must never share a title.
+
 **What the engine does NOT do** (do not tell the owner otherwise): pictures (rule: WebP, 200 KB or less — they still come the
 old way, and the page refuses an article whose picture is missing), a Draft step, a timeline or landing-page card for a new
 age article, a series registry entry for a brand-new chapter slug, and taxonomy work. A broken YAML heading block cannot take

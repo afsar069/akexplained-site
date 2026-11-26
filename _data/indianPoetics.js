@@ -31,7 +31,7 @@
 
 // Chapter ka card khulna uske article ki file se tay hota hai (tools/article-live.js).
 // Article publish hote hi card khud link ban jata hai — koi `live: true` haath se nahi likhna.
-const { chapterLive } = require("../tools/article-live.js");
+const { resolveChapter } = require("../tools/article-live.js");
 
 const parts = [
   {
@@ -598,9 +598,13 @@ module.exports = parts.map(function (p, i) {
   const next = parts[i + 1];
   const chapters = p.chapters.map(function (c) {
     counter += 1;
+    // `live` aur `slug` dono article se aate hain: article us pate par na ho par wahi title
+    // kisi aur pate par ho, to card us asli pate par jud jata hai (tools/article-live.js).
+    const at = resolveChapter("indianPoetics.js", c);
     return Object.assign({}, c, {
       n: counter,
-      live: chapterLive("indianPoetics.js", c),
+      live: at.live,
+      slug: at.slug,
       picture: pic(c.image, c.alt)
     });
   });
