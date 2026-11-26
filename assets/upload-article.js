@@ -110,6 +110,10 @@
     // slug: file ke naam se, warna title se
     var guess = '';
     var base = String(name || '').replace(/\.(md|markdown|txt)$/i, '');
+    // File ka naam aksar "index_<vishay>.md" hota hai (owner, 2026-11-26). "index" sirf
+    // file ka naam hai, pate ka hissa nahi — hata do, warna pata
+    // /notes/index-phenomenology-hermeneutics/ jaisa ban jata hai.
+    base = base.replace(/^index[-_\s]+/i, '');
     if (base && base.toLowerCase() !== 'index') guess = slugify(base);
     if (!guess) guess = slugify(read.fields.title || '');
     var slugBox = el('arSlug');
