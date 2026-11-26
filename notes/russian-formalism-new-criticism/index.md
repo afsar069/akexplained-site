@@ -24,6 +24,10 @@ prev:
   label: What is Literary Theory?
   href: /notes/literary-theory-introduction/
   direction: Previous article
+next:
+  label: Saussure and Structural Linguistics
+  href: /notes/literary-theory-saussure/
+  direction: Next article
 ---
 
 Imagine a student returning from college on a crowded bus. Every day, she passes the same railway crossing without paying much attention to it. One afternoon, she reads a story in which the closed gate seems to divide the town into two impatient worlds. The author describes the crossing without naming it at first. For a moment, the student sees a familiar place as if she had never seen it before.
