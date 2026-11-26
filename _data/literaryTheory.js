@@ -67,7 +67,8 @@ const parts = [
       {
         title: "Structuralism",
         people: "Lévi-Strauss · Barthes · Todorov · Greimas",
-        slug: "literary-theory-structuralism",
+        slug: "structuralism",
+        live: true,
         image: "literary-theory-structuralism",
         alt: "Painted interpretation of different story symbols arranged in a shared pattern."
       },

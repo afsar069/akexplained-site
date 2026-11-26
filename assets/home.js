@@ -210,6 +210,7 @@
     ['Note', '#4A5A6A', 'Indian English Literature (1947-1980)', '/notes/indian-english-independence-era/'],
     ['Note', '#4A5A6A', 'Indian English Literature (1980-2000)', '/notes/indian-english-late-twentieth/'],
     ['Note', '#4A5A6A', 'Russian Formalism and New Criticism', '/notes/russian-formalism-new-criticism/'],
+    ['Note', '#4A5A6A', 'Structuralism', '/notes/structuralism/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],
