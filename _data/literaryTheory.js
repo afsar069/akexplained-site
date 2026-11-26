@@ -91,7 +91,8 @@ const parts = [
       {
         title: "Bakhtin and Dialogism",
         people: "",
-        slug: "literary-theory-bakhtin",
+        slug: "bakhtin-dialogism",
+        live: true,
         image: "literary-theory-bakhtin",
         alt: "Painted interpretation of different voices meeting in ribbons above an open book."
       }

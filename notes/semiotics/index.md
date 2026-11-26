@@ -24,6 +24,10 @@ prev:
   label: Narratology
   href: /notes/narratology/
   direction: Previous article
+next:
+  label: Bakhtin and Dialogism
+  href: /notes/bakhtin-dialogism/
+  direction: Next article
 ---
 
 Imagine a student walking through a market in Lucknow on a rainy day. A tea shop has a picture of a steaming cup above its entrance. A wet umbrella rests beside the door, and a board announces that the tea is made in the traditional way. Behind the counter hangs an advertisement showing a happy family drinking tea together.
