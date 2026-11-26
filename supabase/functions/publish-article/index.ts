@@ -121,7 +121,9 @@ Deno.serve(async (req: Request) => {
 
   const url = Deno.env.get("SUPABASE_URL");
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY");
-  const repoToken = Deno.env.get("ARTICLE_REPO_TOKEN");
+  // Secret paste karte waqt aage/peeche space ya nayi line reh sakti hai — hata do,
+  // warna Authorization header hi galat ban jata hai aur GitHub 401 deta hai.
+  const repoToken = (Deno.env.get("ARTICLE_REPO_TOKEN") || "").trim();
   if (!url || !serviceKey) return json({ error: "Not set up yet." }, 500, origin);
   if (!repoToken) {
     return json({
