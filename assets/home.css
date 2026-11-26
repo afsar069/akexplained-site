@@ -292,9 +292,13 @@
    page ke background par rehta hai (British ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
 #indian-ages{border-top:1px solid var(--border)}
 
-/* History of Literary Criticism (owner, 2026-11-26): chautha band, Indian ke neeche. Indian page ke background par hai,
-   isliye ye wapas sand-tint me (American ki tarah), sirf upar ki line ke saath. Neeche Videos ka border-top hai. */
-#criticism-history{background:var(--tint);border-top:1px solid var(--border)}
+/* History of Literary Criticism (owner, 2026-11-26): chautha band, Indian ke neeche.
+   Owner ka rule: landing page par har section ka background apne saath wale section se thoda alag dikhna chahiye.
+   Indian band page ke background (--bg) par hai aur American sand (--tint) par; --tint aur --bg ka farq itna halka tha ki
+   Indian aur ye band ek jaise lag rahe the, isliye ye band --tint se ek qadam gehra sand hai (--sand-deep, sirf yahin).
+   Neeche Videos ka apna border-top hai. */
+:root{--sand-deep:#EFEAD9}
+#criticism-history{background:var(--sand-deep);border-top:1px solid var(--border)}
 
 /* Slider (Indian English Literature band, aur 2026-11-26 se History of Literary Criticism band bhi — rules saanjhe hain):
    paanch card dikhte hain, baaki side me khisakne se; gol button slide karta hai,
