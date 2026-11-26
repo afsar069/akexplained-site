@@ -219,6 +219,7 @@
     ['Note', '#4A5A6A', 'Early Twentieth-Century Literary Criticism', '/notes/literary-criticism-early-twentieth/'],
     ['Note', '#4A5A6A', 'Mid Twentieth-Century Literary Criticism', '/notes/literary-criticism-mid-twentieth/'],
     ['Note', '#4A5A6A', 'Russian Formalism and New Criticism', '/notes/russian-formalism-new-criticism/'],
+    ['Note', '#4A5A6A', 'Structuralism', '/notes/structuralism/'],
     ['Exam', '#C2410C', 'UGC-NET / JRF / SET English', '/exams/net/'],
     ['Exam', '#C2410C', 'PGT English Literature', '/exams/pgt/'],
     ['Exam', '#C2410C', 'State PSC English', '/exams/state-psc/'],

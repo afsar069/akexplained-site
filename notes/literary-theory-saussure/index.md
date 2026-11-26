@@ -24,6 +24,10 @@ prev:
   label: Russian Formalism and New Criticism
   href: /notes/russian-formalism-new-criticism/
   direction: Previous article
+next:
+  label: Structuralism
+  href: /notes/structuralism/
+  direction: Next article
 ---
 
 Imagine a boy buying vegetables in a market in Uttar Pradesh. He points towards a basket and asks for a kilo of *aloo*. His friend, who speaks English, calls the same vegetable a potato. The seller understands both words, although they sound quite different. None of those sounds is a natural part of the vegetable itself.
