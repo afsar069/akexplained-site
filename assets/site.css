@@ -4732,3 +4732,36 @@ a.ltx-term:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
 @media (max-width:600px){
   .arpreview .article{padding:14px 14px 18px}
 }
+
+/* ---------- /admin/articles/ ki list (owner, 2026-11-26) ----------
+   Har article ki ek line: naam, wo kis series ka chapter hai, uska pata, aur Edit.
+   Chaudi screen par chaar khaane, phone par upar-neeche. Sirf admin page par. */
+.allist{list-style:none;margin:14px 0 0;padding:0;max-width:none}
+.allist li{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr) minmax(0,1.4fr) auto;
+  gap:10px;align-items:center;padding:10px 0;border-top:1px solid var(--line,#e6e2d8)}
+.allist li:last-child{border-bottom:1px solid var(--line,#e6e2d8)}
+.allist-name a{font-weight:600}
+.allist-meta{font-size:.88rem;color:var(--body)}
+.allist-url code{font-size:.82rem;word-break:break-all}
+.allist-go .btn{font-size:.88rem;padding:7px 14px}
+.allist li[hidden]{display:none}
+@media (max-width:760px){
+  .allist li{grid-template-columns:1fr auto;gap:4px 10px}
+  .allist-name{grid-column:1}
+  .allist-go{grid-column:2;grid-row:1 / span 3;align-self:start}
+  .allist-meta,.allist-url{grid-column:1}
+}
+
+/* ---------- /admin/upload-article/ ki tasveer wali list (owner, 2026-11-26) ----------
+   Har gayab tasveer ki ek line: uska pata, haal, aur file chunne ka box. */
+.arpics{list-style:none;margin:12px 0 0;padding:0;max-width:none}
+.arpics li{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) auto;gap:10px;
+  align-items:center;padding:10px 0;border-top:1px solid var(--line,#e6e2d8)}
+.arpics li:last-child{border-bottom:1px solid var(--line,#e6e2d8)}
+.arpics code{font-size:.84rem;word-break:break-all}
+.arpic-ok{color:#0B5B4D;font-weight:600;font-size:.9rem}
+.arpic-wait{color:#7A4A00;font-size:.9rem}
+.arpic-bad{color:#8A2B16;font-size:.9rem}
+@media (max-width:760px){
+  .arpics li{grid-template-columns:1fr;gap:6px}
+}

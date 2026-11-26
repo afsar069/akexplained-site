@@ -7,15 +7,18 @@
 // (MCQ paper database se turant khulta hai; article ko rebuild chahiye, kyunki Google ko
 // asli HTML page chahiye. CLAUDE.md rule 24.)
 //
-// Browser se POST aata hai, body {folder, slug, content, replace}, admin ka login token
-// Authorization me. Asli jaanch YAHAN hoti hai (browser ka code bypass ho sakta hai):
+// Browser se POST aata hai, body {action, folder, slug, content, replace, images}, admin ka login
+// token Authorization me. action "read" ek published article ka text wapas deta hai (sudharne ke
+// liye); "publish" use likhta hai. Asli jaanch YAHAN hoti hai (browser ka code bypass ho sakta hai):
 //   1. token valid hai? (getUser)
 //   2. us login ka row public.paper_admins me hai? (rule 16 ki wahi ek allow list)
 //   3. folder sirf "" ya "ages" — kahin aur nahi likha ja sakta
 //   4. slug ka roop saaf (chhote akshar, hyphen), reserved naam nahi
 //   5. front matter hai, usme title aur description hain, body khali nahi
 //   6. file 400 KB se kam, koi <script> nahi
-// In sab ke baad hi GitHub par likha jata hai, aur sirf notes/ ke andar .md — kahin aur nahi.
+//   7. har tasveer: /assets/... .webp, 200 KB tak, ek baar me 10 tak
+// In sab ke baad hi GitHub par likha jata hai, aur sirf notes/ ke andar .md aur assets/ ke andar
+// .webp — kahin aur nahi.
 //
 // Secret (Supabase -> Edge Functions -> Secrets me owner khud daalta hai, repo me kabhi nahi):
 //   ARTICLE_REPO_TOKEN   = GitHub fine-grained token, sirf isi repo par, Contents: read & write
@@ -35,6 +38,10 @@ const USER_AGENT = "akexplained-article-publisher";
 
 const MAX_BYTES = 400 * 1024;
 const FOLDERS = ["", "ages"];
+// Tasveerein (owner, 2026-11-26): sirf WebP, 200 KB tak, sirf assets/ ke andar, ek baar me 10 tak.
+// Browser pehle hi badal kar chhota kar deta hai; ye uska doosra darwaza hai.
+const MAX_IMAGES = 10;
+const MAX_IMAGE_BYTES = 200 * 1024;
 // Ye naam folder ke naam ban kar site ke doosre pages se takra sakte hain.
 const RESERVED = ["index", "ages", "assets", "admin", "notes"];
 
@@ -64,8 +71,34 @@ function toBase64(text: string): string {
   return btoa(bin);
 }
 
+// GitHub se aaya base64 wapas UTF-8 text me (uske base64 me nayi lines hoti hain).
+function fromBase64(b64: string): string {
+  const bin = atob(String(b64).replace(/\s+/g, ""));
+  const bytes = new Uint8Array(bin.length);
+  for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+  return new TextDecoder().decode(bytes);
+}
+
 function slugOk(slug: string): boolean {
   return /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug) && slug.length <= 80;
+}
+
+// base64 me kitne bytes hain (decode kiye bina)
+function b64Bytes(b64: string): number {
+  const clean = b64.replace(/=+$/, "");
+  return Math.floor(clean.length * 3 / 4);
+}
+
+/* Tasveer ka pata: site ka /assets/... hi ho, .webp hi ho, koi ".." na ho.
+   Repo me rasta "assets/..." banta hai — kahin aur nahi likha ja sakta. */
+function imagePath(site: string): string | null {
+  if (typeof site !== "string") return null;
+  if (!site.startsWith("/assets/")) return null;
+  if (site.includes("..") || site.includes("//")) return null;
+  if (!/\.webp$/i.test(site)) return null;
+  if (!/^\/assets\/[A-Za-z0-9/_-]+\.webp$/.test(site)) return null;
+  if (site.length > 200) return null;
+  return site.slice(1);
 }
 
 /* Front matter ki jaanch. Poora YAML parse nahi karte — sirf itna dekhte hain ki
@@ -163,6 +196,7 @@ Deno.serve(async (req: Request) => {
   let body: Record<string, unknown> = {};
   try { body = await req.json(); } catch { return json({ error: "Nothing was sent." }, 400, origin); }
 
+  const action = String(body.action ?? "publish");
   const folder = String(body.folder ?? "").trim();
   const slug = String(body.slug ?? "").trim().toLowerCase();
   const content = String(body.content ?? "");
@@ -176,6 +210,22 @@ Deno.serve(async (req: Request) => {
   }
   if (RESERVED.includes(slug)) return json({ error: 'The name "' + slug + '" is kept for the site itself. Please choose another.' }, 400, origin);
 
+  const repoPath = "notes/" + (folder ? folder + "/" : "") + slug + "/index.md";
+  const pageUrl = "/notes/" + (folder ? folder + "/" : "") + slug + "/";
+
+  // READ: ek published article ka text wapas, taaki admin page par use sudhara ja sake
+  // (owner, 2026-11-26). Sirf padhna — kuch badalta nahi.
+  if (action === "read") {
+    const got = await gh("/repos/" + REPO + "/contents/" + repoPath + "?ref=" + BRANCH, repoToken);
+    if (got.status === 404) return json({ error: "There is no article at " + pageUrl + " yet." }, 404, origin);
+    if (!got.ok || typeof got.data.content !== "string") {
+      const msg = typeof got.data.message === "string" ? got.data.message : "";
+      return json({ error: "Could not read that article (" + got.status + "). " + msg }, 502, origin);
+    }
+    return json({ ok: true, url: pageUrl, path: repoPath, content: fromBase64(got.data.content as string) }, 200, origin);
+  }
+  if (action !== "publish") return json({ error: "That is not something this page can do." }, 400, origin);
+
   const bytes = new TextEncoder().encode(content).length;
   if (bytes > MAX_BYTES) {
     return json({ error: "This file is too big (" + Math.round(bytes / 1024) + " KB). The limit is 400 KB." }, 400, origin);
@@ -183,8 +233,31 @@ Deno.serve(async (req: Request) => {
   const problem = checkArticle(content);
   if (problem) return json({ error: problem }, 400, origin);
 
-  const repoPath = "notes/" + (folder ? folder + "/" : "") + slug + "/index.md";
-  const pageUrl = "/notes/" + (folder ? folder + "/" : "") + slug + "/";
+  // Tasveerein jaanch lo (likhne se pehle saari, taaki aadhi-adhuri na chadhein).
+  const rawImages = Array.isArray(body.images) ? body.images : [];
+  if (rawImages.length > MAX_IMAGES) {
+    return json({ error: "Too many pictures at once (" + rawImages.length + "). Send up to " + MAX_IMAGES + "." }, 400, origin);
+  }
+  const images: { path: string; site: string; data: string }[] = [];
+  for (const raw of rawImages) {
+    const one = (raw || {}) as Record<string, unknown>;
+    const site = String(one.path ?? "");
+    const data = String(one.data ?? "").replace(/^data:[^,]*,/, "");
+    const path = imagePath(site);
+    if (!path) {
+      return json({
+        error: 'That picture cannot go at "' + site + '". A picture must sit inside /assets/ and be a .webp file.',
+      }, 400, origin);
+    }
+    if (!data) return json({ error: "One of the pictures is empty." }, 400, origin);
+    const size = b64Bytes(data);
+    if (size > MAX_IMAGE_BYTES) {
+      return json({
+        error: "The picture " + site + " is " + Math.round(size / 1024) + " KB. A website picture must be 200 KB or less.",
+      }, 400, origin);
+    }
+    images.push({ path, site, data });
+  }
 
   // 4. Pehle se hai? (replace karne ke liye uska sha chahiye)
   const existing = await gh(
@@ -209,7 +282,36 @@ Deno.serve(async (req: Request) => {
     }, 409, origin);
   }
 
-  // 5. Likho
+  // 5. Pehle tasveerein, phir article — taaki page kabhi khaali dabbon ke saath live na ho.
+  //    Jo tasveer us pate par pehle se hai use haath nahi lagate.
+  const addedImages: string[] = [];
+  for (const img of images) {
+    const has = await gh("/repos/" + REPO + "/contents/" + img.path + "?ref=" + BRANCH, repoToken);
+    if (has.ok) continue;
+    if (has.status !== 404) {
+      return json({
+        error: "Could not check whether " + img.site + " is already there (" + has.status + "). Nothing was saved.",
+      }, 502, origin);
+    }
+    const sent = await gh("/repos/" + REPO + "/contents/" + img.path, repoToken, {
+      method: "PUT",
+      body: JSON.stringify({
+        message: "Add picture: " + img.site + " (from /admin/upload-article/)",
+        content: img.data,
+        branch: BRANCH,
+      }),
+    });
+    if (!sent.ok) {
+      const msg = typeof sent.data.message === "string" ? sent.data.message : "";
+      return json({
+        error: "The picture " + img.site + " could not be saved (" + sent.status + "). " + msg +
+          " The article was not saved either, so nothing is half done.",
+      }, 502, origin);
+    }
+    addedImages.push(img.site);
+  }
+
+  // 6. Ab article
   const put = await gh("/repos/" + REPO + "/contents/" + repoPath, repoToken, {
     method: "PUT",
     body: JSON.stringify({
@@ -237,6 +339,7 @@ Deno.serve(async (req: Request) => {
     url: pageUrl,
     path: repoPath,
     replaced: Boolean(sha),
+    images: addedImages,
     commit: typeof commit.sha === "string" ? (commit.sha as string).slice(0, 7) : "",
   }, 200, origin);
 });
