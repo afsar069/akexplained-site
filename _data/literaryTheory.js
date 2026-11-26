@@ -75,7 +75,8 @@ const parts = [
       {
         title: "Narratology",
         people: "Genette · Bal · Prince · Chatman",
-        slug: "literary-theory-narratology",
+        slug: "narratology",
+        live: true,
         image: "literary-theory-narratology",
         alt: "Painted interpretation of a ribbon linking three scenes from a traveller's story."
       },
