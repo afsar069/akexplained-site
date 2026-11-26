@@ -1,0 +1,92 @@
+---
+permalink: /admin/articles/index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>All articles | AK Explained</title>
+<meta name="description" content="Owner-only page listing every notes article on the site.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-admin="articles">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">A</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>All articles</h1>
+    <p class="lede">Every notes article on the website, and the chapters still waiting to be written.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
+
+  <div id="alNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+
+  <div id="alBody" hidden>
+
+    <div class="authcard">
+      <h2>On the website</h2>
+      <p class="small">
+        <strong>{{ articleAdmin.counts.articles }} articles</strong>, of which {{ articleAdmin.counts.chapters }}
+        are chapters of a series. This list is made when the site is built, so an article published in the
+        last few minutes joins it once the build finishes.
+      </p>
+      <label class="field">
+        <span>Find an article</span>
+        <input id="alFind" type="search" autocomplete="off" placeholder="Type a few letters of the title">
+      </label>
+      <ul class="allist" id="alList">
+        {%- for a in articleAdmin.articles %}
+        <li data-hay="{{ (a.title + ' ' + a.url + ' ' + a.series) | lower }}">
+          <span class="allist-name"><a href="{{ a.url }}">{{ a.title }}</a></span>
+          <span class="allist-meta">
+            {%- if a.series %}{{ a.series }} &middot; chapter {{ a.chapter }}{% elif a.folder %}Age notes{% else %}Notes{% endif -%}
+          </span>
+          <span class="allist-url"><code>{{ a.url }}</code></span>
+          <span class="allist-go"><a class="btn btn-ghost" href="/admin/upload-article/?edit={{ a.slug }}{% if a.folder %}&amp;folder={{ a.folder }}{% endif %}">Edit</a></span>
+        </li>
+        {%- endfor %}
+      </ul>
+      <p class="small" id="alNone" hidden>No article matches that.</p>
+    </div>
+
+    <div class="authcard">
+      <h2>Still to write</h2>
+      <p class="small">{{ articleAdmin.counts.waiting }} of the {{ articleAdmin.counts.planned }} planned chapters have no article yet. Their cards say &ldquo;Coming soon&rdquo;.</p>
+      {%- for group in articleAdmin.waiting %}
+      <h3>{{ group.series }} <span class="small">&mdash; {{ group.chapters.length }} left</span></h3>
+      <ul class="uprep">
+        {%- for c in group.chapters %}
+        <li class="info">Chapter {{ c.n }}: {{ c.title }} <code>/notes/{{ c.slug }}/</code></li>
+        {%- endfor %}
+      </ul>
+      {%- endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script src="/assets/admin.js" defer></script>
+<script src="/assets/admin-articles.js" defer></script>
+</body>
+</html>

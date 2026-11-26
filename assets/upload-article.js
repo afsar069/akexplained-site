@@ -76,8 +76,67 @@
     name: '',          // file ka naam
     addedLayout: false,
     exists: false,     // is pate par pehle se article hai?
-    blocking: 0        // kitne check rok rahe hain
+    blocking: 0,       // kitne check rok rahe hain
+    images: {},        // gayab tasveer ka pata -> {data, bytes, w, h} (WebP me badla hua)
+    editing: ''        // kis article ko sudhar rahe hain (khali = naya)
   };
+
+  /* ---------- tasveerein ----------
+     Gayab tasveer ke liye owner file chunta hai; yahin WebP me badal kar 200 KB se neeche
+     laate hain (site ka niyam), phir article ke saath bhej dete hain. Column 720px ka hai,
+     isliye 1600px se chaudi tasveer ka koi fayda nahi. (owner, 2026-11-26) */
+  var IMG_MAX_BYTES = 200 * 1024;
+  var IMG_MAX_WIDTH = 1600;
+
+  function toWebp(file) {
+    return new Promise(function (resolve, reject) {
+      var url = URL.createObjectURL(file);
+      var img = new Image();
+      img.onload = function () {
+        URL.revokeObjectURL(url);
+        var scales = [1, 0.85, 0.7, 0.55, 0.42];
+        var qualities = [0.9, 0.82, 0.74, 0.66, 0.58, 0.5];
+        var canvas = document.createElement('canvas');
+        var si = 0, qi = 0;
+
+        function attempt() {
+          var base = Math.min(img.naturalWidth, IMG_MAX_WIDTH);
+          var w = Math.max(1, Math.round(base * scales[si]));
+          var h = Math.max(1, Math.round(img.naturalHeight * (w / img.naturalWidth)));
+          canvas.width = w;
+          canvas.height = h;
+          var ctx = canvas.getContext('2d');
+          ctx.clearRect(0, 0, w, h);
+          ctx.drawImage(img, 0, 0, w, h);
+          canvas.toBlob(function (blob) {
+            if (!blob) return reject(new Error('This picture could not be read.'));
+            if (blob.size <= IMG_MAX_BYTES) return done(blob, w, h);
+            qi++;
+            if (qi >= qualities.length) { qi = 0; si++; }
+            if (si >= scales.length) return done(blob, w, h);   // sabse chhota jo ban saka
+            attempt();
+          }, 'image/webp', qualities[qi]);
+        }
+
+        function done(blob, w, h) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            var out = String(reader.result || '');
+            resolve({ data: out.replace(/^data:[^,]*,/, ''), bytes: blob.size, w: w, h: h });
+          };
+          reader.onerror = function () { reject(new Error('This picture could not be read.')); };
+          reader.readAsDataURL(blob);
+        }
+
+        attempt();
+      };
+      img.onerror = function () {
+        URL.revokeObjectURL(url);
+        reject(new Error('That file is not a picture this page can read.'));
+      };
+      img.src = url;
+    });
+  }
 
   function slugify(s) {
     return String(s || '').toLowerCase()
@@ -361,15 +420,20 @@
       var missingLinks = found.filter(function (x) { return r.imgs.indexOf(x.path) === -1 && !x.ok; });
 
       if (r.imgs.length) {
-        if (missingImgs.length) {
+        var waiting = missingImgs.filter(function (x) { return !state.images[x.path]; });
+        var picked = missingImgs.length - waiting.length;
+        if (waiting.length) {
           state.blocking += 1;
-          extra.push(row('no', missingImgs.length + ' of the ' + r.imgs.length + ' pictures are not on the website yet: ' +
-            missingImgs.map(function (x) { return '<code>' + esc(x.path) + '</code>'; }).join(', ') +
-            '. Add the pictures first, or take them out of the file &mdash; otherwise the article shows empty boxes.'));
+          extra.push(row('no', waiting.length + ' of the ' + r.imgs.length + ' pictures are not on the website yet: ' +
+            waiting.map(function (x) { return '<code>' + esc(x.path) + '</code>'; }).join(', ') +
+            '. Choose them below, or take them out of the file &mdash; otherwise the article shows empty boxes.'));
+        } else if (picked) {
+          extra.push(row('ok', picked + ' new picture' + (picked === 1 ? '' : 's') + ' will be saved with this article; the rest are already on the website.'));
         } else {
           extra.push(row('ok', 'All ' + r.imgs.length + ' picture' + (r.imgs.length === 1 ? ' is' : 's are') + ' on the website.'));
         }
       }
+      renderPics(missingImgs.map(function (x) { return x.path; }));
       if (r.links.length) {
         if (missingLinks.length) {
           extra.push(row('warn', missingLinks.length + ' of the ' + r.links.length + ' links inside the article do not open a page yet: ' +
@@ -386,6 +450,45 @@
       list.innerHTML = out.join('') + extra.join('');
       afterChecks();
     });
+  }
+
+  /* Gayab tasveeron ka card: har pate ki ek line, aur uske liye file chunne ka box.
+     Sirf /assets/... .webp pata yahan se bhara ja sakta hai (site ka niyam, aur function
+     bhi yahi maanta hai); kisi aur roop ka pata ho to line bata deti hai kya karna hai. */
+  function renderPics(paths) {
+    var card = el('arPicsCard');
+    var list = el('arPics');
+    if (!card || !list) return;
+    if (!paths.length) { hide(card); list.innerHTML = ''; return; }
+
+    list.innerHTML = paths.map(function (p, i) {
+      var fixable = /^\/assets\/[A-Za-z0-9/_-]+\.webp$/.test(p);
+      var got = state.images[p];
+      var status = got
+        ? '<span class="arpic-ok">Ready &mdash; ' + Math.round(got.bytes / 1024) + ' KB, ' + got.w + ' &times; ' + got.h + '</span>'
+        : (fixable ? '<span class="arpic-wait">No picture chosen yet</span>'
+                   : '<span class="arpic-bad">This address is not a .webp file inside /assets/, so it cannot be added here. Change the address in the article, or ask Claude.</span>');
+      return '<li><code>' + esc(p) + '</code>' + status +
+        (fixable ? '<input type="file" accept="image/*" data-pic="' + i + '">' : '') + '</li>';
+    }).join('');
+
+    Array.prototype.forEach.call(list.querySelectorAll('input[data-pic]'), function (input) {
+      var path = paths[Number(input.getAttribute('data-pic'))];
+      input.addEventListener('change', function () {
+        var f = input.files && input.files[0];
+        if (!f) return;
+        var line = input.parentNode;
+        var mark = line.querySelector('span');
+        if (mark) { mark.className = 'arpic-wait'; mark.textContent = 'Making it smaller…'; }
+        toWebp(f).then(function (out) {
+          state.images[path] = out;
+          runChecks();
+        }).catch(function (e) {
+          if (mark) { mark.className = 'arpic-bad'; mark.textContent = (e && e.message) || 'That picture could not be used.'; }
+        });
+      });
+    });
+    show(card);
   }
 
   function afterChecks() {
@@ -445,10 +548,15 @@
         method: 'POST',
         headers: { 'Authorization': 'Bearer ' + token, 'apikey': cfg.publishableKey, 'Content-Type': 'application/json' },
         body: JSON.stringify({
+          action: 'publish',
           folder: folder(),
           slug: slug(),
           content: state.content,
-          replace: !!(el('arReplace') && el('arReplace').checked)
+          replace: !!(el('arReplace') && el('arReplace').checked),
+          // sirf wahi tasveerein jinka pata is article me sach me likha hai
+          images: Object.keys(state.images)
+            .filter(function (p) { return state.content.indexOf(p) !== -1; })
+            .map(function (p) { return { path: p, data: state.images[p].data }; })
         })
       });
     }).then(function (res) {
@@ -498,11 +606,15 @@
       ? 'Saved. This replaced the article that was there.'
       : 'Saved. The new article is on its way to the website.';
     var url = data.url || pageUrl();
+    var pics = (data.images && data.images.length)
+      ? [row('ok', data.images.length + ' picture' + (data.images.length === 1 ? '' : 's') + ' saved with it: ' +
+          data.images.map(function (p) { return '<code>' + esc(p) + '</code>'; }).join(', '))]
+      : [];
     rep.innerHTML = [
-      row('ok', 'Saved to the website&rsquo;s files' + (data.commit ? ' (' + esc(data.commit) + ')' : '') + '.'),
+      row('ok', 'Saved to the website&rsquo;s files' + (data.commit ? ' (' + esc(data.commit) + ')' : '') + '.')].concat(pics).concat([
       row('ok', 'Address: <a href="' + esc(url) + '">akexplained.com' + esc(url) + '</a>'),
       row('warn', 'The website is building now. The page is usually ready in about two to three minutes. Use the button below to see whether it is live.')
-    ].join('');
+    ]).join('');
     hide(el('arCopy'));
     var btn = el('arCheckBtn');
     show(btn);
@@ -539,6 +651,53 @@
     };
   }
 
+  /* ---------- ek published article ko kholna (owner, 2026-11-26) ----------
+     /admin/articles/ ka Edit button yahan ?edit=<slug>&folder=ages ke saath bhejta hai.
+     Function se uska text wapas maangte hain (sirf admin ko milta hai), box me daal dete hain,
+     replace tick kar dete hain — phir baaki sab wahi: checks, preview, Publish. */
+  function openForEdit(auth, slug, folder) {
+    var notice = el('arEditing');
+    var cfg = window.AK_SUPABASE || {};
+    var url = '/notes/' + (folder ? folder + '/' : '') + slug + '/';
+    if (notice) { notice.textContent = 'Opening ' + url + ' …'; show(notice); }
+
+    return auth.session().then(function (s) {
+      var token = s && s.access_token;
+      if (!token) throw new Error('Please log in again.');
+      return fetch(cfg.url + '/functions/v1/publish-article', {
+        method: 'POST',
+        headers: { 'Authorization': 'Bearer ' + token, 'apikey': cfg.publishableKey, 'Content-Type': 'application/json' },
+        body: JSON.stringify({ action: 'read', folder: folder, slug: slug })
+      });
+    }).then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (d) {
+        return { ok: res.ok, data: d };
+      });
+    }).then(function (r) {
+      if (!r.ok || !r.data.ok || !r.data.content) {
+        throw new Error((r.data && r.data.error) || 'That article could not be opened.');
+      }
+      var fsel = el('arFolder');
+      if (fsel) fsel.value = folder;
+      var sbox = el('arSlug');
+      if (sbox) sbox.value = slug;
+      state.editing = url;
+      var paste = el('arPaste');
+      if (paste) paste.value = r.data.content;
+      setContent(r.data.content, slug + '.md');
+      var cb = el('arReplace');
+      if (cb) cb.checked = true;
+      afterChecks();
+      if (notice) {
+        notice.innerHTML = 'You are changing the article at <strong>' + esc(url) + '</strong>. ' +
+          'Its text is in the box below. Change what you need, look at the preview, then publish &mdash; ' +
+          'this will replace what is on the website.';
+      }
+    }).catch(function (e) {
+      if (notice) notice.textContent = (e && e.message) || 'That article could not be opened.';
+    });
+  }
+
   /* ---------- start ---------- */
 
   function start() {
@@ -572,6 +731,14 @@
           if (pv) pv.addEventListener('click', renderPreview);
           var go = el('arButton');
           if (go) go.addEventListener('click', function () { publish(auth); });
+
+          // /admin/articles/ se "Edit" dabaya gaya ho to wo article khol do
+          var qs = new URLSearchParams(window.location.search);
+          var want = (qs.get('edit') || '').trim().toLowerCase();
+          var wantFolder = (qs.get('folder') || '').trim();
+          if (want && /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(want) && (wantFolder === '' || wantFolder === 'ages')) {
+            openForEdit(auth, want, wantFolder);
+          }
         }, function () { notice.textContent = 'You are not allowed to use this page.'; });
       });
     });

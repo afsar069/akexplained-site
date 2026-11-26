@@ -39,6 +39,8 @@ permalink: /admin/upload-article/index.html
 
   <div id="arBody" hidden>
 
+    <div class="authnotice" id="arEditing" role="status" hidden></div>
+
     <div class="authcard">
       <h2>1. Choose the article file</h2>
       <div class="formerror" id="arFileError" role="alert" hidden></div>
@@ -86,8 +88,14 @@ permalink: /admin/upload-article/index.html
       <button class="btn btn-ghost" id="arPreviewBtn" type="button">Show the preview</button>
     </div>
 
+    <div class="authcard" id="arPicsCard" hidden>
+      <h2>4. Pictures this article needs</h2>
+      <p class="small">These pictures are not on the website yet. Choose the file for each one. It is changed to WebP and made 200 KB or less right here, then saved with the article.</p>
+      <ul class="arpics" id="arPics"></ul>
+    </div>
+
     <div class="authcard" id="arPreviewCard" hidden>
-      <h2>4. Preview</h2>
+      <h2>5. Preview</h2>
       <p class="small">This is the article as the page will read it. The real page also adds the heading, the date, &ldquo;On this page&rdquo; and the study boxes at the side.</p>
       <div class="arpreview">
         <section class="pagehead arpreview-head">
@@ -102,7 +110,7 @@ permalink: /admin/upload-article/index.html
     </div>
 
     <div class="authcard" id="arGo" hidden>
-      <h2>5. Publish</h2>
+      <h2>6. Publish</h2>
       <div class="formerror" id="arError" role="alert" hidden></div>
       <p class="small" id="arSummary"></p>
       <button class="btn" id="arButton" type="button">Publish this article</button>

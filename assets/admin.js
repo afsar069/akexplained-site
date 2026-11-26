@@ -62,6 +62,7 @@
     { page: 'home', label: 'Admin home', href: '/admin/' },
     { page: 'upload', label: 'Upload a paper', href: '/admin/upload-paper/' },
     { page: 'article', label: 'Publish an article', href: '/admin/upload-article/' },
+    { page: 'articles', label: 'All articles', href: '/admin/articles/' },
     { page: 'papers', label: 'All papers', href: '/admin/papers/' },
     { page: 'notify', label: 'Send a notice', href: '/admin/notify/' },
     { page: 'students', label: 'Students', href: '/admin/students/' },

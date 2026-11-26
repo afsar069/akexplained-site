@@ -117,7 +117,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 - `download/index.html` — the **Download hub** (owner, 2026-11-19): one page that lists everything a visitor can download, or the page that holds it, **by exam**. Standalone HTML (not templated, so use `<!-- -->` comments, never `{# #}`). Five exam cards (UGC NET / JRF, UP PGT, UP Assistant Professor, BA, MA); a card opens one panel below it, and each panel has the sub-sections **Syllabus**, **Important Books** and **Notes** (`assets/download-hub.js`, styles `.dlx*` at the end of `site.css`). `/download/#dl-net`, `#dl-up-pgt`, `#dl-up-ap`, `#dl-ba`, `#dl-ma` open a panel directly; with no JavaScript every panel is open. Item kinds: a real PDF (teal **Download PDF**, one click, turns green and says "Download again"; today only the two UP PGT syllabus PDFs in `assets/downloads/`, the same files as `/exams/pgt/up-pgt/syllabus-download/`), a link to a page that really exists (**Read** / **Open**), or a dashed non-link **Coming soon** row. Add an item only when the file or page really exists (rule 2): move a Coming soon row up when the owner supplies the file, and add its size line (`PDF · N pages · N KB`). NET Important Books and NET Complete Syllabus are still `available: false` in `_data/netResources.json`; the Important Books, UP Assistant Professor syllabus, and BA / MA syllabus rows are Coming soon too.
 - `video-lessons/index.njk` — the **Video Lessons page** (owner, 2026-11-20): real videos of the AK Explained YouTube channel, listed from `_data/videoLessons.js` (one line per video: YouTube id, topic, title exactly as on YouTube, length; read from the channel with vidIQ). A dark bar **"Choose Your Playlist"** (`.vl-bar`) opens a panel of 11 playlists plus "All lessons" (owner's request: Poems, Novels, Biography, Essays and so on); picking one filters the cards, shows the name and a "More on YouTube" link when the channel has a matching real playlist (`yt` in the `topics` list; ids read through vidIQ, linked by name only), and closes the panel. Cards show 12 at a time with "Show more" (`assets/video-lessons.js`, styles `assets/video-lessons.css`); with no JavaScript the bar is hidden and every video is listed; `/video-lessons/#poems` opens a playlist directly. The four videos on the landing page (`videos` in `assets/home.js`) come first in "All lessons". Each card opens the video on YouTube in a new tab (no embed, so nothing new is collected). Titles are kept as published (typos too, rule 2); each video's playlist was chosen from its title, so move a line to another topic key if one looks wrong. Playlist names do not say "in Hindi" because not every title says it. The page is just the head (`h1` and one line) and then one section, "Browse the lessons" (owner, 2026-11-20: the "Lessons from the channel" text band and its picture were removed; the only YouTube channel link left is the note under the list). The bar is a light teal (`#0F766E` to `#16847A`, white text above 4.5:1), not the dark navy-green it first had. To add lessons, add lines to `rows`; the channel has more videos than the list (not Shorts).
 - `pass/` (the All Access pass page, `assets/pass.js`) and `refund-policy/` — the paid layer's public pages (rule 22).
-- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
+- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/articles/` (every article, and the chapters still to write, rule 24, `assets/admin-articles.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog, and **every `/notes/` article, which comes from `_data/notesIndex.js`** (rule 24) — never add a notes line by hand. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
@@ -689,6 +689,7 @@ JavaScript is only quick feedback). Migration `20261113120000_admin_dashboard.sq
 menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
 - **Upload a paper** — `/admin/upload-paper/`, rule 15.
 - **Publish an article** — `/admin/upload-article/`, rule 24.
+- **All articles** — `/admin/articles/`, rule 24.
 - **All papers** (`/admin/papers/`) — lists `paper_catalog`; a button flips a set between Live and Draft
   (`update mcq_papers set status=… where set_id=…`; the status-only path skips re-validation; the catalog
   trigger follows). The change is in the database at once. For a **self-serve-published series (rule 17)** this
@@ -1137,10 +1138,38 @@ naming the chapter and both addresses — tidy the registry's slug when you next
 A chapter with a typed `live: true` and no article under either rule still stops the build. Matching is on the title alone, so
 two different chapters must never share a title.
 
-**What the engine does NOT do** (do not tell the owner otherwise): pictures (rule: WebP, 200 KB or less — they still come the
-old way, and the page refuses an article whose picture is missing), a Draft step, a timeline or landing-page card for a new
+**What the engine does NOT do** (do not tell the owner otherwise): a Draft step, a timeline or landing-page card for a new
 age article, a series registry entry for a brand-new chapter slug, and taxonomy work. A broken YAML heading block cannot take
 the site down: the build fails and Cloudflare keeps serving the last good deploy, so only the new article is missing.
+
+## What the owner asked for next (2026-11-26, all four built the same day)
+The owner asked what more the admin page could do. Four things were chosen and built; the engine now covers a whole article,
+not only its text.
+
+**1. Previous / next chapter links, by themselves.** These come from an article's `prev:` / `next:` front matter and were
+typed by hand, so the first two articles published through the engine had none — the reader could not move on. `_data/eleventyComputed.js`
+(the site's only global computed data) now fills them for any article that is a chapter of a series, from the registry's own
+order: the nearest **written** chapter each way, inside the same series, labelled "Previous chapter" / "Next chapter".
+**An article's own `prev:` / `next:` always wins** — nothing typed is ever overwritten — and an article that is not a series
+chapter (age notes, the criticism articles) is untouched. Adding this changed exactly four pages.
+
+**2. Editing a published article from the browser.** `/admin/upload-article/?edit=<slug>` (and `&folder=ages`) asks the
+function for that article's text with `action: "read"` — admin-only, read-only — puts it in the paste box, fills the address,
+ticks replace and says in a banner which article is being changed. Then it is the ordinary flow: checks, preview, Publish.
+A typo no longer costs a re-upload. Reading an article that is not there says so plainly.
+
+**3. `/admin/articles/`** (`admin/articles/index.njk`, `_data/articleAdmin.js`, `assets/admin-articles.js`, `.allist` styles):
+every notes article with its series and chapter number, its address, and an **Edit** button that opens it in the page above;
+under it, the chapters still to be written, by series. The list is built at build time, so an article published in the last
+few minutes joins it when that build finishes — the page says this.
+
+**4. Pictures, through the same engine.** The page already refused an article whose picture was missing; that check is now a
+**fix-it step**. Each missing address gets a row with a file box: the browser converts the chosen file to **WebP and shrinks
+it under 200 KB** (quality then size, capped at 1600px wide — the reading column is 720px), shows the result in KB, and the
+block clears. On Publish the pictures are sent with the article; the function writes **the pictures first and the article
+second**, so a page is never live with empty boxes, and it **never overwrites a picture that is already there**. Only
+`/assets/….webp` addresses can be filled this way (the site's own rule), and any other address still says so and stays
+blocking. Limits in both places: 200 KB each, 10 pictures per publish.
 
 **Pages CMS still works** on the same files, and so does Claude: there is one copy of every article, in the repo.
 Browser-tested 2026-11-26 (56 checks): guest and non-admin see only "You are not allowed to use this page"; a good file
