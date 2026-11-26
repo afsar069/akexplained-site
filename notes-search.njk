@@ -1,0 +1,15 @@
+---
+permalink: /assets/notes-search.json
+eleventyExcludeFromCollections: true
+---
+{#- Home page ke search ke liye har notes article ki ek row (owner, 2026-11-26).
+    assets/home.js me 26 rows haath se likhi hain; wo jaisi hain waisi rahengi (unke apne
+    naam hain, jaise "Old English Literature — full notes"). Ye file unke alawa ke saare
+    articles deti hai, aur home.js wahi rows jodta hai jinka pata pehle se list me nahi hai.
+    Isliye /admin/upload-article/ se publish hua naya article site ke search me apne aap
+    aa jata hai — koi row haath se nahi likhni padti. -#}
+{% set rows = [] -%}
+{%- for note in notesIndex -%}
+{%- set rows = (rows.push({ t: note.title or note.crumbLabel or note.slug, u: note.url }), rows) -%}
+{%- endfor -%}
+{{ rows | dump | safe }}

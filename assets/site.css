@@ -4717,3 +4717,18 @@ a.ltx-term:focus-visible{outline:3px solid var(--teal);outline-offset:2px}
   .ltx-nav{grid-template-columns:minmax(0,1fr)}
   .ltx-nav-next{text-align:left}
 }
+
+/* ---------- /admin/upload-article/ ka preview (owner, 2026-11-26) ----------
+   Article ko publish se pehle usi design me dikhane ke liye ek framed box.
+   Andar wahi .pagehead aur .article hai jo asli page par hota hai, bas box ke
+   andar thoda chhota, taaki admin card se bahar na nikle. Sirf is admin page
+   par lagta hai. */
+.arpreview{border:1px solid var(--line,#ddd);border-radius:12px;overflow:hidden;background:#fff;margin:14px 0 0}
+.arpreview .pagehead{margin:0;padding:18px 0 14px}
+.arpreview .pagehead h3{font-family:Literata,Georgia,serif;font-size:1.5rem;line-height:1.25;margin:.1em 0 .3em}
+.arpreview .article{max-width:none;padding:18px 20px 24px}
+.arpreview .article img{max-width:100%;height:auto}
+.arpreview .article > :first-child{margin-top:0}
+@media (max-width:600px){
+  .arpreview .article{padding:14px 14px 18px}
+}

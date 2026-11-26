@@ -42,6 +42,10 @@
 //   `<naam>.webp` 480 x 300 (200 KB se kam) aur `<naam>-240.webp` 240 x 150, phir us part
 //   ya chapter par `image: "<naam>"` aur `alt: "<jo tasveer me dikh raha hai>"`.
 
+// Chapter ka card khulna uske article ki file se tay hota hai (tools/article-live.js).
+// Article publish hote hi card khud link ban jata hai — koi `live: true` haath se nahi likhna.
+const { chapterLive } = require("../tools/article-live.js");
+
 const parts = [
   {
     slug: "culture-class-and-ideology",
@@ -104,15 +108,20 @@ let counter = 0;
 module.exports = parts.map(function (p, i) {
   const prev = parts[i - 1];
   const next = parts[i + 1];
+  const chapters = p.chapters.map(function (c) {
+    counter += 1;
+    return Object.assign({}, c, {
+      n: counter,
+      live: chapterLive("culturalStudies.js", c),
+      picture: pic(c.image, c.alt)
+    });
+  });
   return Object.assign({}, p, {
     number: i + 1,
     href: BASE + p.slug + "/",
     count: p.chapters.length,
-    chapters: p.chapters.map(function (c) {
-      counter += 1;
-      return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
-    }),
-    liveCount: p.chapters.filter(function (c) { return c.live; }).length,
+    chapters: chapters,
+    liveCount: chapters.filter(function (c) { return c.live; }).length,
     picture: pic(p.image, p.alt),
     prev: prev ? { name: prev.name, href: BASE + prev.slug + "/", number: i } : null,
     next: next ? { name: next.name, href: BASE + next.slug + "/", number: i + 2 } : null

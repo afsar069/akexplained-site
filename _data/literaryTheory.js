@@ -31,6 +31,10 @@
 // likho jo tasveer me hai (rule 2), aur generated painting ko "painted
 // interpretation" kehna hai.
 
+// Chapter ka card khulna uske article ki file se tay hota hai (tools/article-live.js).
+// Article publish hote hi card khud link ban jata hai — koi `live: true` haath se nahi likhna.
+const { chapterLive } = require("../tools/article-live.js");
+
 const parts = [
   {
     slug: "form-language-and-structure",
@@ -335,17 +339,23 @@ let counter = 0;
 module.exports = parts.map(function (p, i) {
   const prev = parts[i - 1];
   const next = parts[i + 1];
+  // Chapter cards: har chapter ka apna picture rasta (ya null -> numbered panel), aur
+  // `live` uske article ki file se.
+  const chapters = p.chapters.map(function (c) {
+    counter += 1;
+    return Object.assign({}, c, {
+      n: counter,
+      live: chapterLive("literaryTheory.js", c),
+      picture: pic(c.image, c.alt)
+    });
+  });
   return Object.assign({}, p, {
     number: i + 1,
     href: BASE + p.slug + "/",
     count: p.chapters.length,
-    // Chapter cards: har chapter ka apna picture rasta (ya null -> numbered panel).
-    chapters: p.chapters.map(function (c) {
-      counter += 1;
-      return Object.assign({}, c, { n: counter, picture: pic(c.image, c.alt) });
-    }),
+    chapters: chapters,
     // Kitne chapter likhe ja chuke hain.
-    liveCount: p.chapters.filter(function (c) { return c.live; }).length,
+    liveCount: chapters.filter(function (c) { return c.live; }).length,
     // Tasveer di hai to uske do rasta, warna null (card numbered panel dikhayega).
     picture: pic(p.image, p.alt),
     prev: prev ? { name: prev.name, href: BASE + prev.slug + "/", number: i } : null,
