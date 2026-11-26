@@ -51,7 +51,8 @@ const parts = [
       {
         title: "Russian Formalism and the Prague Circle",
         people: "Shklovsky · Jakobson · Propp · Tynianov · Mukařovský",
-        slug: "literary-theory-russian-formalism",
+        slug: "russian-formalism-new-criticism",
+        live: true,
         image: "literary-theory-russian-formalism",
         alt: "Painted interpretation of an ordinary teapot redrawn in sharp geometric shapes."
       },

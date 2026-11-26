@@ -20,6 +20,10 @@ age: what-is-literary-theory
 period: 1960s-present
 exam_fit: [net, pgt, psc]
 topics: [literary-criticism-and-theory, russian-formalism, new-criticism, archetypal-criticism, structuralism, post-structuralism, psychoanalytic-criticism, marxist-criticism, feminist-criticism, gender-and-queer-theory, reader-response-criticism, new-historicism, postcolonial-criticism, postmodernism-theory, ecocriticism, jacques-derrida, terry-eagleton, f-r-leavis]
+next:
+  label: Russian Formalism and New Criticism
+  href: /notes/russian-formalism-new-criticism/
+  direction: Next article
 ---
 
 Imagine a short story about a girl in a small town in Uttar Pradesh. She wakes before everyone else to make tea and pack her brother's tiffin before he leaves for coaching classes. She studies late at night, after the last plate has been washed. When the examination results arrive, her name stands at the top of the district list.
