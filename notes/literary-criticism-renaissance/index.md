@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-renaissance/hero.webp
+hero_class: hero-age hero-article-full
 title: Renaissance Literary Criticism
 description: A simple guide to Sidney, Puttenham, Daniel, Bacon and Ben Jonson, the Elizabethan and Jacobean critics who defended poetry and shaped English criticism, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -89,6 +91,11 @@ The first printed answer came quickly from Thomas Lodge (c. 1558-1625), who wrot
 
 ## Sir Philip Sidney: *An Apology for Poetry*
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/criticism-renaissance/portrait.webp" alt="A modern painted portrait of Philip Sidney in a pale doublet and white ruff." width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Sir Philip Sidney in a modern painted interpretation. <a href="https://www.npg.org.uk/collections/search/portrait/mw07877/Sir-Philip-Sidney" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
+
 Sir Philip Sidney (1554-1586) was the ideal Elizabethan gentleman: courtier, diplomat, soldier, scholar and poet. He wrote his defence of poetry around 1579 or 1580, almost certainly sparked by Gosson's *The School of Abuse*, though he never mentions Gosson by name. The essay was not printed during Sidney's short life. It appeared posthumously in 1595 in two separate London editions: Henry Olney printed it as *An Apology for Poetry*, and William Ponsonby printed it as *The Defence of Poesy*. Both titles remain in common use today.
 
 Written in graceful, witty prose and structured like a classical courtroom speech (*oratio*), the essay is the cornerstone of English Renaissance criticism.
@@ -98,6 +105,11 @@ Written in graceful, witty prose and structured like a classical courtroom speec
 Sidney begins by defending the antiquity and nobility of poetry. Poetry, he notes, was the first light-giver to ignorance, and the earliest philosophers and historians wrote in verse. He then looks at the names given to the poet. The Romans called the poet *vates*, meaning a diviner, foreseer or prophet. The Greeks called him *poietes*, from the verb *poiein*, meaning "to make"—which matches the old English word "maker".
 
 Other arts—astronomy, medicine, law, history—are bound to nature as it already exists. Only the poet is free to rise above nature. As Sidney puts it in one of the most famous lines in English criticism, nature's "world is brazen, the poets only deliver a golden". The poet does not merely copy fallen reality; he creates a richer, nobler image of what human life can be.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-renaissance/scene.webp" alt="A glowing city and garden rise from a poet’s open page." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>A painted interpretation of Sidney’s idea that poets make a golden world.</figcaption>
+</figure>
 
 ### The definition of poetry
 
@@ -123,6 +135,16 @@ Like a skilled lawyer in court, Sidney lists the four main charges brought again
 2. **Poetry is the mother of lies.** Sidney's reply is famous: "Now for the poet, he nothing affirms, and therefore never lieth." A historian or astronomer claims to state facts, and can therefore be caught in a lie. A poet never claims his story happened in fact; he offers a fiction to show a higher truth.
 3. **Poetry is the nurse of abuse.** Sidney agrees that bad poems can do harm, but he argues that the fault lies in the misuse, not in the art itself. A sword can be used to murder or to defend one's country; we do not blame the steel. It is man's wit that abuses poetry, not poetry that abuses man.
 4. **Plato banished poets from his *Republic*.** Sidney points out that Plato himself was the most poetical of all philosophers, writing in lively dialogues full of myths and metaphors. Plato banished only the abuse of poetry—false tales about the gods—not poetry itself. In the *Ion*, Plato even called poetry a divine inspiration.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Sidney answers four charges against poetry</figcaption>
+  <ul>
+    <li><strong>Time better spent elsewhere?</strong>Poetry can move people to goodness.</li>
+    <li><strong>Poets tell lies?</strong>Fiction makes no claim to be fact.</li>
+    <li><strong>Poetry encourages abuse?</strong>The fault lies in misuse of the art.</li>
+    <li><strong>Plato banished poets?</strong>Sidney argues Plato rejected the abuse of poetry.</li>
+  </ul>
+</figure>
 
 ### English poetry and drama
 

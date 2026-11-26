@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-introduction/hero.webp
+hero_class: hero-age hero-article-full
 title: Introduction to Literary Criticism
 description: A simple guide to what literary criticism is, what critics do, its main kinds and a map of its history, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -21,6 +23,11 @@ topics: [literary-criticism-and-theory, classical-criticism, plato, aristotle, a
 ---
 
 Every reader is already a critic. After a film, friends walk out of the hall and begin to argue. One says the story was weak. Another says the ending was brave. Each gives reasons, and each tries to win the other over. This habit of giving reasons for a response is the seed of literary criticism.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-introduction/scene.webp" alt="Three viewers in a cinema lobby discuss a film." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined scene of viewers giving reasons for their responses to a film.</figcaption>
+</figure>
 
 Literary criticism is the same habit, made careful and written down. For more than two thousand years, thinkers have asked what literature is, what it is for, what makes a work good and how it should be read. Their answers did not stay still. The Greeks thought of poetry as imitation of life. Critics of the eighteenth century thought of it as a teacher that gives pleasure. The Romantics thought of it as the voice of a feeling mind. Critics of the twentieth century turned to the words on the page.
 
@@ -131,6 +138,16 @@ When a theory looks mainly at the universe, it is called *mimetic*, and it sees 
 | Objective | The work | A self-contained object | Twentieth-century formalism |
 
 The title of the book is itself a picture of this change. The mirror stands for the older view that literature reflects the world. The lamp stands for the Romantic view that the writer's mind gives out its own light. Abrams used the four views as a map, not as boxes. Most critics mix them, and ideas from one age often live on in the next.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Abrams’s four ways to read a work</figcaption>
+  <ul>
+    <li><strong>Mimetic</strong>World and imitation</li>
+    <li><strong>Pragmatic</strong>Audience and effect</li>
+    <li><strong>Expressive</strong>Artist and feeling</li>
+    <li><strong>Objective</strong>The work’s own form</li>
+  </ul>
+</figure>
 
 ### Key terms
 
