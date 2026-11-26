@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-neoclassical/hero.webp
+hero_class: hero-age hero-article-full
 title: Neoclassical Literary Criticism
 description: A simple guide to Dryden, Pope, Addison and Samuel Johnson, the great critics of the Restoration and eighteenth century, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -58,11 +60,21 @@ Joseph Addison signed each of his essays in *The Spectator* with a single capita
 
 ## John Dryden: the father of English criticism
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/restoration/john-dryden.webp" alt="A modern painted portrait of John Dryden with long hair and a white cravat." width="960" height="1200" loading="lazy" decoding="async">
+  <figcaption>John Dryden in a modern painted interpretation.</figcaption>
+</figure>
+
 John Dryden (1631-1700) was the dominant poet, playwright and translator of the Restoration, and in 1668 he became England's first official Poet Laureate. Samuel Johnson later called him "the father of English criticism". Dryden earned that title because he wrote the first body of sustained, practical criticism in clear, modern English prose. Most of his criticism appeared in prefaces and dedications to his plays and translations, alongside his single most famous critical work, *An Essay of Dramatic Poesy*.
 
 ### *An Essay of Dramatic Poesy* (1668)
 
 Written around 1665-1666 while London was shut down by the Great Plague and published in 1668, *An Essay of Dramatic Poesy* is not a lecture at all—it is a dramatic dialogue. Four cultivated gentlemen take a barge down the River Thames on 3 June 1665 to listen to the distant thunder of cannons from the Battle of Lowestoft, where the English fleet is fighting the Dutch. As the gunfire fades and victory seems assured, they fall into a friendly debate about the art of drama.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-neoclassical/scene.webp" alt="Four seventeenth-century men talking on a barge on the Thames." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from Dryden’s dialogue on drama.</figcaption>
+</figure>
 
 Each of the four speakers represents a major critical position of the age (and is traditionally linked to a real contemporary):
 
@@ -70,6 +82,16 @@ Each of the four speakers represents a major critical position of the age (and i
 - **Eugenius** (Charles Sackville, Lord Buckhurst) defends the **Moderns**, arguing that modern playwrights have learned from the ancients and improved upon them.
 - **Lisideius** (Sir Charles Sedley) defends **French drama**, praising its strict observance of the three unities, its single plots and its avoidance of violence on stage.
 - **Neander** (whose name means "new man", representing Dryden himself) defends **English drama**, tragicomedy, lively subplots and the use of rhymed verse in serious plays.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Four voices in Dryden’s dialogue</figcaption>
+  <ul>
+    <li><strong>Crites</strong>Ancient drama</li>
+    <li><strong>Eugenius</strong>Modern drama</li>
+    <li><strong>Lisideius</strong>French drama</li>
+    <li><strong>Neander</strong>English drama</li>
+  </ul>
+</figure>
 
 ### Defining a play and defending English drama
 

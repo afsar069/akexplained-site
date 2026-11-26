@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-romantic/hero.webp
+hero_class: hero-age hero-article-full
 title: Romantic Literary Criticism
 description: A simple guide to Wordsworth, Coleridge, Shelley and Hazlitt, the great critics of the Romantic age who placed imagination and feeling at the heart of poetry, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -57,6 +59,11 @@ When Wordsworth and Coleridge first published *Lyrical Ballads* in 1798, the boo
 
 ## William Wordsworth: *Preface to Lyrical Ballads*
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/sourced/wordsworth-haydon.webp" alt="William Wordsworth with folded arms against the rocks of Helvellyn, painted by Benjamin Robert Haydon." width="640" height="785" loading="lazy" decoding="async">
+  <figcaption>Wordsworth on Helvellyn, painted by Benjamin Robert Haydon in 1842. Public domain. <a href="https://commons.wikimedia.org/wiki/File:Wordsworth_on_Helvellyn_by_Benjamin_Robert_Haydon.jpg" target="_blank" rel="noopener">Portrait source</a></figcaption>
+</figure>
+
 William Wordsworth (1770-1850) wrote the *Preface to Lyrical Ballads* for the second edition of 1800 and revised and enlarged it in 1802 (adding the famous passage "What is a Poet?" and an Appendix on poetic diction). He intended it to defend the unusual simplicity of his poems against hostile reviewers, yet it quickly became the informal manifesto of English Romanticism.
 
 ### Ordinary life and plain language
@@ -101,6 +108,15 @@ In **Chapter 13** of *Biographia Literaria*, Coleridge makes the most famous dis
 - **Secondary Imagination** is an echo of the primary, co-existing with the conscious will. It is the true poetic power: it "dissolves, diffuses, dissipates, in order to recreate", unifying scattered images and ideas into a fresh, living whole. Earlier in the book, Coleridge coined the word **esemplastic** (meaning "to shape into one") for this unifying force.
 - **Fancy**, by contrast, is merely a mechanical mode of memory. It has "no other counters to play with, but fixities and definites". Fancy can place two ready-made images side by side, yet it never melts or transforms them into a new creation.
 
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Coleridge on imagination and fancy</figcaption>
+  <ul>
+    <li><strong>Primary imagination</strong>The mind perceives and orders the world.</li>
+    <li><strong>Secondary imagination</strong>The poet reshapes what the mind perceives.</li>
+    <li><strong>Fancy</strong>Memory rearranges images without changing them.</li>
+  </ul>
+</figure>
+
 ### Poetic faith and the nature of a poem
 
 In **Chapter 14**, Coleridge recalls how he and Wordsworth divided the work of *Lyrical Ballads*. Wordsworth was to give the charm of novelty to everyday things, while Coleridge was to treat supernatural characters and incidents with enough human truth to win from the reader "that willing suspension of disbelief for the moment, which constitutes poetic faith".
@@ -138,6 +154,11 @@ Just as Sidney had answered Stephen Gosson, Shelley wrote in reply to an attack�
 Shelley begins by contrasting two faculties of the mind: **Reason** (*to logizein*), which analyses, counts and compares things already known, and **Imagination** (*to poiein*), which synthesises, creates and perceives the hidden harmony of the universe. Reason is to Imagination, Shelley says, "as the instrument to the agent, as the body to the spirit, as the shadow to the substance".
 
 In a broad sense, Shelley defines poetry as "the expression of the imagination", and argues that poetry is born with humanity itself. Like Plato in the *Ion*, Shelley insists that true poetic creation cannot be switched on by willpower alone: "the mind in creation is as a fading coal, which some invisible influence, like an inconstant wind, awakens to transitory brightness." By the time composition begins, inspiration is already fading, so even the greatest poem is only a feeble shadow of the poet's original vision.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-romantic/scene.webp" alt="A dark coal briefly brightens as a breath of wind carries away its sparks." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>A painted interpretation of Shelley’s fading coal, a metaphor for poetic inspiration.</figcaption>
+</figure>
 
 ### Moral empathy and "unacknowledged legislators"
 

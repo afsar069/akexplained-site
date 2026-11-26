@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-early-twentieth/hero.webp
+hero_class: hero-age hero-article-full
 title: Early Twentieth-Century Literary Criticism
 description: A simple guide to A. C. Bradley, T. S. Eliot and I. A. Richards, the critics who shifted English studies from character analysis to impersonality and close reading, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -83,6 +85,11 @@ Because Bradley examined Hamlet, Iago and Lady Macbeth with the psychological th
 
 ## T. S. Eliot: tradition and impersonality
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/sourced/ts-eliot-morrell.webp" alt="T. S. Eliot in a 1923 photograph by Lady Ottoline Morrell." width="640" height="785" loading="lazy" decoding="async">
+  <figcaption>T. S. Eliot, photographed by Lady Ottoline Morrell in 1923. Public domain. <a href="https://commons.wikimedia.org/wiki/File:T.S._Eliot,_1923.JPG" target="_blank" rel="noopener">Portrait source</a></figcaption>
+</figure>
+
 Thomas Stearns Eliot (1888-1965)—American-born poet, dramatist and Nobel laureate—was the towering literary critic of the twentieth century. Like Dryden, Johnson and Arnold before him, Eliot was a poet-critic whose essays reshaped literary history and taste across the English-speaking world. His most famous early critical essays appeared in *The Sacred Wood* (1920) and *Homage to John Dryden* (1924), later collected in *Selected Essays* (1932).
 
 ### "Tradition and the Individual Talent" (1919)
@@ -135,6 +142,11 @@ Because poetry uses emotive language, its claims are what Richards calls **pseud
 
 Richards's most famous book, *Practical Criticism: A Study of Literary Judgment* (1929), grew directly out of his Cambridge classroom experiment. He gave undergraduates thirteen unidentified poems and collected their candid written comments, which he called **protocols**. Studying these protocols, Richards catalogued **ten main difficulties** that make readers misread poetry—including **stock responses** (ready-made clichés and habitual prejudices), **mnemonic irrelevances** (stray personal memories triggered by a word), **sentimentality** (excessive, unearned emotion), and **doctrinal adhesions** (judging a poem solely by whether you agree with its religious or political beliefs).
 
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-early-twentieth/scene.webp" alt="Students examine unlabelled poems and write comments at their desks." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined scene from Richards’s classroom experiment with unidentified poems.</figcaption>
+</figure>
+
 To train readers to read carefully, Richards divided total poetic meaning into **Four Kinds of Meaning**:
 
 - **Sense:** the plain literal content—what the speaker is saying.
@@ -143,6 +155,16 @@ To train readers to read carefully, Richards divided total poetic meaning into *
 - **Intention:** the speaker's underlying aim—the effect he is trying to produce.
 
 A skilled reader, Richards insisted, must listen to all four strands working together in the words on the page.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Richards’s four kinds of meaning</figcaption>
+  <ul>
+    <li><strong>Sense</strong>What is said</li>
+    <li><strong>Feeling</strong>The speaker’s attitude to the subject</li>
+    <li><strong>Tone</strong>The speaker’s attitude to the listener</li>
+    <li><strong>Intention</strong>The effect the speaker aims to produce</li>
+  </ul>
+</figure>
 
 ### An interesting story
 

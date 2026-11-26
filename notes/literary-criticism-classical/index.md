@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-classical/hero.webp
+hero_class: hero-age hero-article-full
 title: Classical Literary Criticism
 description: A simple guide to Plato, Aristotle, Horace and Longinus, the first great critics of literature, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -74,6 +76,11 @@ In Book 3, he defines imitation (*mimesis*) as impersonation, which means a poet
 
 Book 10 returns to the matter with a harder argument. Plato describes a ladder of reality. At the top is the true Form of a thing, such as a couch, which a god makes. Below it is the couch made by a craftsman, and below that is a painting of a couch made by an imitator. The painter copies only how the couch looks, and not what it is. The imitator, Plato says, is therefore third from the king and from the truth. Poets are imitators of the same kind.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-classical/scene.webp" alt="An ideal couch, a carpenter’s couch and a painter’s image of the same couch." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>A painted interpretation of Plato’s three levels in the couch example.</figcaption>
+</figure>
+
 Plato also criticises Homer as ignorant, which suggests that a poet can write well without real knowledge. And he says that imitation harms the soul by strengthening its irrational part against reason. His main example is the grief shown on the tragic stage. In Benjamin Jowett's translation, poetry "feeds and waters the passions instead of drying them up".
 
 ### Poetry as inspiration: the *Ion*
@@ -101,6 +108,11 @@ Near the end of Book 10, Plato speaks of "an ancient quarrel between philosophy 
 
 ## Aristotle: the *Poetics*
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/criticism-classical/portrait.webp" alt="A painted study of a marble bust of Aristotle." width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Aristotle in a modern painted study of an ancient bust type. <a href="https://artsandculture.google.com/asset/head-of-aristotle-unknown/_QFymkF6DMfotw?hl=en" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
+
 Aristotle (384-322 BCE) was Plato's pupil, and he wrote the *Poetics* in the fourth century BCE. It is the earliest surviving work of Greek dramatic theory, and the first surviving philosophical treatise about literature alone. Only half of it remains. In ancient times the work was split across two rolls, and the second part, on comedy, is lost. What survives is mostly about tragedy.
 
 ### Imitation is natural
@@ -120,6 +132,18 @@ Each word matters. The action is serious, so it deals with weighty things. It is
 Aristotle says that every tragedy must have six parts, and that these parts decide its quality. They are plot (*mythos*), character (*ethos*), thought (*dianoia*), diction (*lexis*), song (*melos*) and spectacle (*opsis*). He also ranks them. Plot, he says, is "the first principle, and, as it were, the soul of a tragedy". Character holds the second place. Spectacle, the look of the stage, is "the least artistic" of the parts.
 
 Plot comes first because a tragedy imitates an action, and plot is the arrangement of the events that make up that action.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Aristotle’s six parts of tragedy</figcaption>
+  <ul>
+    <li><strong>Plot</strong>Arrangement of events</li>
+    <li><strong>Character</strong>Qualities revealed in choices</li>
+    <li><strong>Thought</strong>The ideas expressed</li>
+    <li><strong>Diction</strong>Choice of words</li>
+    <li><strong>Song</strong>The musical element</li>
+    <li><strong>Spectacle</strong>What the audience sees</li>
+  </ul>
+</figure>
 
 ### A plot that holds together
 

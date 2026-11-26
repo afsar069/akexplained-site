@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-mid-twentieth/hero.webp
+hero_class: hero-age hero-article-full
 title: Mid Twentieth-Century Literary Criticism
 description: A simple guide to William Empson, F. R. Leavis, the New Critics and Northrop Frye, who shaped close reading, moral scrutiny and archetypal criticism, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -129,6 +131,11 @@ If a poem is neither the poet's diary nor the reader's private mood, how does it
 - **John Crowe Ransom** (*The New Criticism*, 1941) argued that a poem has two interwoven elements: **structure** (its logical paraphraseable argument) and **texture** (its rich local details, metaphors, metre and sound).
 - **Allen Tate** introduced the term **tension** (combining **extension**, or literal dictionary meaning, with **intension**, or figurative suggestion) to measure the taut richness of good poetry.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-mid-twentieth/scene.webp" alt="An earthenware urn with contrasting designs stands beside an open poem." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>A painted interpretation of the urn as a metaphor for how the parts of a poem hold together.</figcaption>
+</figure>
+
 ### Important points to remember
 
 - New Criticism (1930s-1950s) took its name from John Crowe Ransom's *The New Criticism* (1941).
@@ -139,6 +146,11 @@ If a poem is neither the poet's diary nor the reader's private mood, how does it
 - Ransom distinguished **structure** and **texture**; Allen Tate defined poetic **tension** (extension + intension).
 
 ## Northrop Frye: myths, modes and archetypes
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/criticism-mid-twentieth/portrait.webp" alt="A modern painted portrait of Northrop Frye wearing glasses and a tweed jacket." width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Northrop Frye in a modern painted interpretation. <a href="https://alumni.utoronto.ca/community/awards/awex/northrop-frye-awards" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 While New Critics examined individual lyrics line by line, the Canadian scholar **Northrop Frye** (1912-1991) asked a much larger question: can all of literature be mapped as one interconnected whole? After his groundbreaking study of William Blake, *Fearful Symmetry* (1947), Frye published his masterpiece, ***Anatomy of Criticism: Four Essays*** (1957)—the most influential work of **Archetypal** (or **Myth**) **Criticism** in the twentieth century.
 
@@ -163,6 +175,16 @@ Drawing on anthropology (such as James Frazer's *The Golden Bough*) and Carl Jun
   3. **High Mimetic:** the epic or tragic hero is superior in degree to other people, yet subject to natural law.
   4. **Low Mimetic:** the realistic hero is one of us, neither superior nor inferior.
   5. **Ironic:** the hero is inferior in power or intelligence to ourselves, so we look down on a scene of bondage or absurdity.
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Frye’s four mythoi and the seasons</figcaption>
+  <ul>
+    <li><strong>Spring · Comedy</strong>Renewal</li>
+    <li><strong>Summer · Romance</strong>The heroic quest</li>
+    <li><strong>Autumn · Tragedy</strong>The fall of the hero</li>
+    <li><strong>Winter · Irony and satire</strong>Disillusionment</li>
+  </ul>
+</figure>
 
 ### An interesting story
 

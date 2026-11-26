@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/criticism-victorian/hero.webp
+hero_class: hero-age hero-article-full
 title: Victorian Literary Criticism
 description: A simple guide to Arnold, Ruskin, Pater and Oscar Wilde, the great Victorian critics who debated art, morality and beauty, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Criticism
@@ -56,6 +58,11 @@ Walter Pater was so unsettled when conservative Oxford critics accused the famou
 
 ## Matthew Arnold: culture and the touchstone
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/criticism-victorian/portrait.webp" alt="A modern painted portrait of Matthew Arnold in formal dress with full sideburns." width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Matthew Arnold in a modern painted interpretation. <a href="https://www.npg.org.uk/collections/search/portrait/mw115288/Matthew-Arnold" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
+
 Matthew Arnold (1822-1888)—poet, inspector of schools and Professor of Poetry at Oxford—was the dominant literary critic of the Victorian era. His most influential critical writings include the *Preface to Poems* (1853), *Essays in Criticism* (First Series, 1865; Second Series, 1888), *Culture and Anarchy* (1869), and his landmark essay "The Study of Poetry" (1880).
 
 ### Disinterestedness and the function of criticism
@@ -84,6 +91,15 @@ How should a reader recognise truly great poetry? In "The Study of Poetry", Arno
 Both traps distort judgment. Critics must strive instead for the **real estimate**. To achieve it, Arnold proposed his famous **touchstone method**: keep in mind a few short lines and passages from supreme masters—Homer, Dante, Shakespeare and Milton—and hold other poems beside them, just as a jeweller tests gold against a touchstone.
 
 Applying this strict standard, Arnold delivered famous—and fiercely debated—verdicts. He loved Geoffrey Chaucer's lively humanity, yet denied him the highest rank because he lacked "high seriousness". Even more provocatively, he declared that John Dryden and Alexander Pope were not classics of English poetry at all: "they are classics of our prose".
+
+<figure class="article-illustration criticism-map" aria-labelledby="criticism-map-title">
+  <figcaption id="criticism-map-title">Arnold’s three ways to judge poetry</figcaption>
+  <ul>
+    <li><strong>Historical estimate</strong>The poem’s age or place in literary history may bias the reader.</li>
+    <li><strong>Personal estimate</strong>Private memories or preferences may bias the reader.</li>
+    <li><strong>Real estimate</strong>Compare the poem with passages from acknowledged masters.</li>
+  </ul>
+</figure>
 
 ### Important points to remember
 
@@ -158,6 +174,11 @@ Oscar Wilde (1854-1900)—dramatist, novelist and dazzling conversationalist—s
 First published in 1889 and collected in *Intentions* (1891), **"The Decay of Lying"** is a sparkling dialogue between **Vivian** and **Cyril**. With playful seriousness, Wilde attacks realistic fiction and turns two thousand years of Aristotelian *mimesis* upside down.
 
 Art, Vivian argues, is not a dull photograph of everyday facts; "Lying, the telling of beautiful untrue things, is the proper aim of Art." Even more famously, Wilde reverses the ancient mirror metaphor altogether: "Life imitates Art far more than Art imitates Life." People only began noticing the strange beauty of London fogs, Vivian jokes, after Impressionist painters taught them how to look at fog. Nature itself is shaped by the artistic images through which we learn to see it.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/criticism-victorian/scene.webp" alt="An easel painting and a misty view of London by the river." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>An imagined London scene that illustrates Wilde’s example of art teaching us to see fog.</figcaption>
+</figure>
 
 ### *The Critic as Artist*
 
