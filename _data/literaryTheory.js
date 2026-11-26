@@ -83,7 +83,8 @@ const parts = [
       {
         title: "Semiotics",
         people: "Peirce · Eco · Barthes",
-        slug: "literary-theory-semiotics",
+        slug: "semiotics",
+        live: true,
         image: "literary-theory-semiotics",
         alt: "Painted interpretation of a bird symbol, bird tracks and a trail sign."
       },
