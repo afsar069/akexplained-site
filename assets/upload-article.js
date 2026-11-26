@@ -40,6 +40,24 @@
   }
 
   function el(id) { return document.getElementById(id); }
+
+  /* ---------- the plan ----------
+     Literary Theory / Cultural Studies / Indian Poetics ke planned chapters (naam + pata),
+     build ke waqt #arPlan me daale jaate hain (_data/articlePlan.js). Inse page bata deta hai
+     ki ye article kisi planned chapter ka hai ya nahi, aur uska pata plan se milta hai ya nahi.
+     Milan na hone par article live to ho jata hai, par uska card "Coming soon" hi kehta rehta
+     hai — wahi pehli publish par hua tha (owner, 2026-11-26). */
+  var PLAN = (function () {
+    try {
+      var box = document.getElementById('arPlan');
+      var data = box ? JSON.parse(box.textContent || '{}') : {};
+      return Array.isArray(data.chapters) ? data.chapters : [];
+    } catch (e) { return []; }
+  })();
+
+  function plain(s) {
+    return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+  }
   function show(x) { if (x) x.hidden = false; }
   function hide(x) { if (x) x.hidden = true; }
 
@@ -291,6 +309,25 @@
     }
 
     if (/<script\b/i.test(state.content)) bad('The file has a <code>&lt;script&gt;</code> tag. An article page may not carry one.');
+
+    // Kya ye kisi planned chapter ka article hai, aur pata wahi hai jo plan me likha hai?
+    if (PLAN.length && s && !folder()) {
+      var bySlug = null, byName = null;
+      for (var i = 0; i < PLAN.length; i++) {
+        if (PLAN[i].slug === s) bySlug = PLAN[i];
+        if (f.title && plain(PLAN[i].title) === plain(f.title)) byName = PLAN[i];
+      }
+      if (bySlug) {
+        ok('This is the planned address for <strong>' + esc(bySlug.series) + '</strong>, chapter ' + bySlug.n +
+           ' (' + esc(bySlug.title) + '). Its card will open by itself.');
+      } else if (byName) {
+        warn('The plan has a chapter called <strong>' + esc(byName.title) + '</strong> (' + esc(byName.series) +
+             ', chapter ' + byName.n + ') at the address <code>/notes/' + esc(byName.slug) + '/</code>. ' +
+             'This file is going to <code>' + esc(pageUrl()) + '</code> instead. Both work, but the chapter&rsquo;s card ' +
+             'will keep saying &ldquo;Coming soon&rdquo; until the two match. Either change the address above, or publish ' +
+             'and tell Claude to point the plan at this address.');
+      }
+    }
 
     var bytes = new Blob([state.content]).size;
     if (bytes > MAX_BYTES) bad('The file is too big (' + Math.round(bytes / 1024) + ' KB). The limit is 400 KB.');

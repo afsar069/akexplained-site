@@ -113,7 +113,7 @@ const parts = [
       {
         title: "Phenomenology and Hermeneutics",
         people: "Husserl · Heidegger · Gadamer · Ricoeur",
-        slug: "literary-theory-phenomenology-hermeneutics",
+        slug: "phenomenology-hermeneutics",
         image: "literary-theory-phenomenology-hermeneutics",
         alt: "Painted interpretation of a reader surrounded by curving pages."
       },

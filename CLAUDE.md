@@ -1094,7 +1094,10 @@ articles exist for.
    approximation. Keep it that way if markdown-it is ever upgraded.
 2. **The server** `supabase/functions/publish-article/` (deployed 2026-11-26, `verify_jwt` off, it checks the token itself).
    This is the **real** gate, as the database trigger is for papers: login token → `paper_admins` row (rule 16's one allow
-   list) → folder is `""` or `ages` → slug shape and reserved names → heading block with title and description → body not
+   list; **that read runs as the caller, never with the service key** — `public.paper_admins` grants SELECT to
+   `authenticated` only, with `paper_admins_read_own` giving each user their own row, and `service_role` has no SELECT on it
+   at all, so the service-key read was refused with "permission denied" on the first real publish. Checking as the caller is
+   also what every admin page and every RLS policy on the site does, and nothing gets a bulk read of the table) → folder is `""` or `ages` → slug shape and reserved names → heading block with title and description → body not
    empty → no `<script>` → 400 KB. Only then does it PUT `notes/<slug>/index.md` on **`main`** through the GitHub Contents
    API, and it can write nowhere else. Replacing needs the file's `sha`, so the page's replace box is honoured by the server
    too. Repo and branch are constants in the code; **the only secret is `ARTICLE_REPO_TOKEN`** (a GitHub fine-grained token,
@@ -1112,6 +1115,19 @@ articles exist for.
    Checked on 2026-11-26: with these changes the whole built site is **byte-identical** except `/admin/`, and the sitemap
    holds the same 46 `/notes/` addresses as the hand-written list did.
 
+**The planned-address check** (added 2026-11-26, after the first real publish went wrong in a way nobody would have
+noticed). The Phenomenology article was published at `/notes/phenomenology-hermeneutics/` while its Literary Theory chapter
+named `literary-theory-phenomenology-hermeneutics`; the article was live and perfect, and its card still said "Coming soon",
+because `tools/article-live.js` looks for the article at the **registry's** slug. The page now carries every planned chapter
+of Literary Theory, Cultural Studies and Indian Poetics (`_data/articlePlan.js`, embedded as `#arPlan`; names and addresses
+only), and says in the checks either "this is the planned address for chapter N of <series>" or, when the article's **title**
+matches a planned chapter at another address, warns which address the plan expects and that the card will keep saying "Coming
+soon" until the two agree. That is also why the page is `index.njk` and not `.html` (a `.html` file is not templated).
+When the owner publishes at a different address on purpose, the fix is one line: point the registry's `slug` at the published
+address, as was done for this chapter (its slug is now `phenomenology-hermeneutics`, matching Structuralism, Narratology,
+Semiotics and Bakhtin, which are all bare too). Never move a published article to a new address to match the plan: the old
+address is already out in the world.
+
 **What the engine does NOT do** (do not tell the owner otherwise): pictures (rule: WebP, 200 KB or less — they still come the
 old way, and the page refuses an article whose picture is missing), a Draft step, a timeline or landing-page card for a new
 age article, a series registry entry for a brand-new chapter slug, and taxonomy work. A broken YAML heading block cannot take
@@ -1122,4 +1138,6 @@ Browser-tested 2026-11-26 (56 checks): guest and non-admin see only "You are not
 publishes and the body sent is the whole file; `#` heading, missing description and missing picture each block; the missing
 `layout` line is added; an existing address shows the replace box and sends `replace: true`; the ages folder sends
 `folder: "ages"`; a refusal says nothing changed and offers the copy-for-Claude text; pasting works; 375px has no sideways
-scroll.
+scroll. Four more were added the same day (60 in all): a file named `index_<topic>.md` drops the "index" from the
+suggested address (the owner's generator names files that way, and the first publish was headed for
+`/notes/index-phenomenology-hermeneutics/`), and the planned-address check both ways.
