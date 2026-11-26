@@ -24,6 +24,10 @@ prev:
   label: Saussure and Structural Linguistics
   href: /notes/literary-theory-saussure/
   direction: Previous article
+next:
+  label: Narratology
+  href: /notes/narratology/
+  direction: Next article
 ---
 
 Imagine a story about a village whose only well dries up. A young woman decides to bring water from a distant spring. An elderly farmer shows her a safe path, while a greedy merchant tries to stop her. She reaches the spring and helps her neighbours obtain water again.
