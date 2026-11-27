@@ -11,16 +11,17 @@
    exam-readiness meters: that tracking does not exist yet. Do not
    approximate any of it here (CLAUDE.md rule 2).
 
-   THE LAYOUT (owner's, 2026-11-06)
+   THE LAYOUT (owner's, updated 2026-11-27)
      1  Welcome header
      2  six tiles in one line  (courses, questions, correct, average, streak, progress)
      3  Your rank  |  Today's activity            (two cards, two tiles each)
      4  Your daily streak      (two tiles + the week line)
-     5  Your level in English literature (five stages)
-     6  Progress by British age  |  Progress by topic   (five rows each, "+" opens the full page)
-     7  Your strengths  |  Areas to improve            (five rows each)
-     8  Top students  |  Your paths
-     9  Performance trend  |  Your next goal           (side by side, last row)
+     5  Top students
+     6  Your level in English literature (five stages)
+     7  Progress by British age  |  Progress by topic   (five rows each, links open the full page)
+     8  Your strengths  |  Areas to improve            (five rows each)
+     9  Performance trend  |  Your next goal
+    10  Your paths and study links
 
    HOW TO ADD A SECTION LATER
    Call addSection({ id, order, title, needs, col, bare, more, render }).
@@ -743,7 +744,7 @@
 
       return '<div class="dashlevel">' +
         '<div class="dashlevel-now">' +
-          '<span class="dashlevel-badge">' + stars(at + 1) + '<b>' + esc(B.levelName) + '</b></span>' +
+          '<span class="dashlevel-badge" data-stage="' + at + '">' + stars(at + 1) + '<b>' + esc(B.levelName) + '</b></span>' +
           '<span class="dashlevel-next">' + esc(need) + '</span>' +
         '</div>' +
         '<div class="dashkpis dashkpis-2">' +
@@ -760,7 +761,8 @@
           '</p>' +
         '<ol class="dashladder">' +
           B.ladder.map(function (L, i) {
-            return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '">' +
+            return '<li class="' + (i === at ? 'is-now' : i < at ? 'is-done' : '') + '" data-stage="' + i + '"' +
+              (i === at ? ' aria-current="step"' : '') + '>' +
               '<i></i><b>' + esc(L) + '</b>' + stars(i + 1) + '</li>';
           }).join('') +
         '</ol>' +
@@ -843,7 +845,7 @@
   // layout). Rank, name, points and accuracy only; the function is the privacy wall
   // (see its migration).
   addSection({
-    id: 'board', order: 70, title: 'Top students', needs: 'attempts',
+    id: 'board', order: 35, title: 'Top students', needs: 'attempts',
     render: function (ctx) {
       var b = ctx.board;
       if (!b) return '';                                  // RPC not available: hide quietly
@@ -892,7 +894,7 @@
       }
       var W = 360, H = 158, L = 34, R = 352, T = 12, Bm = 118;
       var step = (R - L) / Math.max(1, weeks.length - 1);
-      var pts = [], dots = '', labels = '';
+      var pts = [], dots = '', labels = '', weekButtons = '';
       weeks.forEach(function (w, i) {
         var x = L + i * step;
         if (w.n > 0) {
@@ -901,6 +903,9 @@
           pts.push(x.toFixed(1) + ',' + y.toFixed(1));
           dots += '<circle cx="' + x.toFixed(1) + '" cy="' + y.toFixed(1) + '" r="3.6" class="dashdot"><title>' +
             esc(weekLabel(w.start)) + ': ' + a + '% correct, ' + answers(w.n) + '</title></circle>';
+          var detail = 'Week of ' + weekLabel(w.start) + ': ' + a + '% correct · ' + answers(w.n);
+          weekButtons += '<button type="button" class="dashchart-point" style="left:' + (x / W * 100) + '%;top:' + (y / H * 100) + '%"' +
+            ' data-week-detail="' + esc(detail) + '" aria-label="' + esc(detail) + '" aria-pressed="false"><span></span></button>';
         }
         if (i % 2 === 0 || i === weeks.length - 1) {
           labels += '<text x="' + x.toFixed(1) + '" y="' + (H - 8) + '" class="dashaxis" text-anchor="middle">' +
@@ -922,7 +927,8 @@
           'aria-label="Your correct answers as a percentage, week by week">' +
           grid +
           '<polyline class="dashline" points="' + pts.join(' ') + '"/>' + dots + labels +
-        '</svg></div>' +
+        '</svg>' + weekButtons + '</div>' +
+        '<p class="dashchart-detail" aria-live="polite">Choose a chart point to see that week.</p>' +
         '<p class="small dashnote">Out of every 100 answers you gave that week, how many were right. ' + note + '</p>';
     }
   });
@@ -1034,35 +1040,40 @@
     '<p>Something went wrong while loading your answers. Please refresh the page to try again.</p>' +
     '</section>';
 
-  /* The header: the banner painting with the owner's own quote, then a
-     centred greeting on its own painted panel. Both pictures carry their own
-     artwork and wording, so nothing here changes when one is replaced:
-       /assets/dash-banner.webp   the wide painting at the top
-       /assets/dash-box.webp      the panel the greeting sits on (CSS) */
-  var HERO_ALT = 'Professor AK beside a university building, with his words: ' +
-    '“Literature is not just to read, but to think, question and connect with life.”';
-
+  // The welcome card uses the avatar and next age already on the dashboard.
   function welcomeHero(ctx) {
     var name = ctx.name || 'there';
     var fresh = !ctx.attemptsError && !ctx.rows.length;
-    var line = fresh
-      ? 'Start your English literature journey.'
-      : 'Continue your English literature journey.';
+    var line = ctx.attemptsError ? 'Your learning journey continues here.' : fresh
+      ? 'Your English literature journey starts here. One question, one new idea, one step forward.'
+      : 'A little practice today, a little more confidence tomorrow. Let’s keep your English literature journey going.';
     var primary = (ctx.exams || []).filter(function (e) { return e.primary; })[0];
-    return '<section class="dashhero">' +
-      '<div class="dashhero-banner">' +
-        '<img src="/assets/dash-banner.webp" alt="' + esc(HERO_ALT) + '" width="1460" height="324">' +
-      '</div>' +
-      '<div class="dashhero-box">' +
-        '<img class="dashhero-ava" src="' + ((window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(ctx.avatar) : '/assets/avatars/default.svg') + '" alt="" width="74" height="74">' +
-        '<p class="eyebrow">Your progress</p>' +
-        '<h2 class="dashhero-title">' +
-          '<span class="dashhero-hi">' + (fresh ? 'Welcome,' : 'Welcome back,') +
-            '<i aria-hidden="true">🙏</i></span>' +
-          '<span class="dashhero-name">' + esc(name) + '<i aria-hidden="true">😊</i></span>' +
+    var next = !ctx.attemptsError && ctx.british && ctx.british.ages.filter(function (a) { return !a.cleared; })[0];
+    var href = next && !fresh ? '/quizzes/daily/' + next.slug + '/' : '/quizzes/daily/';
+    var action = next && !fresh ? 'Practise ' + next.name : fresh ? 'Start a Daily Quiz' : 'Explore Daily Quizzes';
+    var avatar = (window.akAuth && window.akAuth.avatarUrl) ? window.akAuth.avatarUrl(ctx.avatar) : '/assets/avatars/default.svg';
+    return '<section class="dashhero" aria-labelledby="dashWelcomeTitle">' +
+      '<div class="dashwelcome">' +
+       '<div class="dashwelcome-copy">' +
+        '<h2 class="dashhero-title" id="dashWelcomeTitle">' +
+          '<span class="dashhero-hi">' + (fresh ? 'Welcome,' : 'Welcome back, <span class="dashhero-namaste" aria-hidden="true">🙏</span>') + '</span>' +
+          '<span class="dashhero-name">' + esc(name) + '</span>' +
         '</h2>' +
         '<p class="dashhero-line">' + esc(line) + '</p>' +
-        (primary ? '<p class="dashhero-path">Your main path: <b>' + esc(primary.name) + '</b></p>' : '') +
+        (primary ? '<p class="dashhero-path">' + icon(IC_BOOKS) + ' Your main path <b>' + esc(primary.name) + '</b></p>' : '') +
+        '<div class="dashwelcome-actions"><a class="btn" href="' + esc(href) + '">' + esc(action) + '<span aria-hidden="true">&rarr;</span></a>' +
+          '<a class="dashwelcome-secondary" href="/quizzes/mcq/">Explore MCQs <span aria-hidden="true">&rarr;</span></a></div>' +
+       '</div>' +
+       '<div class="dashwelcome-profile-wrap">' +
+        '<a class="dashwelcome-profile" href="/account/">' +
+          '<span class="dashwelcome-portrait">' +
+            '<span class="dashwelcome-orbit" aria-hidden="true"></span>' +
+            '<span class="dashwelcome-avatar"><img src="' + esc(avatar) + '" alt="" width="164" height="164"></span>' +
+          '</span>' +
+          '<span class="dashwelcome-profile-label">My profile <span aria-hidden="true">&rarr;</span></span>' +
+        '</a>' +
+        '<button type="button" class="dashwelcome-motion" aria-label="Pause avatar animation" title="Pause avatar animation"></button>' +
+       '</div>' +
       '</div>' +
     '</section>';
   }
@@ -1073,8 +1084,8 @@
     if (def.title || def.more) {
       head = '<div class="acctcard-head">' +
         (def.title ? '<h2>' + esc(def.title) + '</h2>' : '') +
-        (def.more ? '<a class="dashplus" href="' + esc(def.more.href) + '" title="' + esc(def.more.label) + '">' +
-          '<span aria-hidden="true">+</span><span class="sr-only">' + esc(def.more.label) + '</span></a>' : '') +
+        (def.more ? '<a class="dashplus" href="' + esc(def.more.href) + '" aria-label="' + esc(def.more.label) + '">' +
+          '<span aria-hidden="true">' + (def.id === 'ages' ? 'See all ages' : 'See all topics') + ' &rarr;</span></a>' : '') +
         '</div>';
     }
     return '<section class="acctcard dashcard" data-section="' + esc(def.id) + '">' + head + body + '</section>';
@@ -1346,7 +1357,71 @@
       try { ctx.british = computeBritish(ctx.rows, ctx.syllabus); } catch (e) { ctx.british = null; }
       try { ctx.currentAge = currentAge(ctx.rows, ctx.british); } catch (e) { ctx.currentAge = ''; }
       root.innerHTML = renderAll(ctx, view);
+      if (view === 'main') enhanceDashboard(root);
     });
+  }
+
+  // All values remain visible without motion support. Each bar/line animates
+  // once on entering the viewport, and reduced-motion users see its final state.
+  function enhanceDashboard(root) {
+    if (!document.body.classList.contains('student-dashboard')) return;
+    var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    var active = [];
+    var observer = null;
+    var motionButton = root.querySelector('.dashwelcome-motion');
+    if (motionButton) {
+      motionButton.addEventListener('click', function () {
+        var paused = motionButton.parentNode.classList.toggle('is-orbit-paused');
+        var label = paused ? 'Resume avatar animation' : 'Pause avatar animation';
+        motionButton.setAttribute('aria-label', label);
+        motionButton.title = label;
+      });
+    }
+    function animate(el, frames, options) {
+      if (!el.animate || motion.matches) return;
+      var animation = el.animate(frames, options);
+      active.push(animation);
+      animation.onfinish = animation.oncancel = function () {
+        active = active.filter(function (a) { return a !== animation; });
+      };
+    }
+    function reveal(section) {
+      section.querySelectorAll('.dashbar > span, .dashbigbar > span:not(.dashbarmark)').forEach(function (bar) {
+        animate(bar, [{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+          { duration: 1150, easing: 'cubic-bezier(.16,1,.3,1)' });
+      });
+      var line = section.querySelector('.dashline');
+      if (line) {
+        var length = line.getTotalLength();
+        animate(line, [{ strokeDasharray: length, strokeDashoffset: length },
+          { strokeDasharray: length, strokeDashoffset: 0 }], { duration: 1500, easing: 'ease-in-out' });
+      }
+    }
+    if (!motion.matches && 'IntersectionObserver' in window) {
+      observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          reveal(entry.target);
+          observer.unobserve(entry.target);
+        });
+      }, { threshold: 0.12 });
+      root.querySelectorAll('.dashcard').forEach(function (card) { observer.observe(card); });
+    }
+    function reduceMotion() {
+      if (!motion.matches) return;
+      if (observer) observer.disconnect();
+      active.slice().forEach(function (a) { a.cancel(); });
+    }
+    if (motion.addEventListener) motion.addEventListener('change', reduceMotion);
+    function showWeek(ev) {
+      var point = ev.target.closest('.dashchart-point');
+      if (!point || !root.contains(point)) return;
+      var card = point.closest('.dashcard');
+      card.querySelectorAll('.dashchart-point').forEach(function (p) { p.setAttribute('aria-pressed', String(p === point)); });
+      card.querySelector('.dashchart-detail').textContent = point.getAttribute('data-week-detail');
+    }
+    root.addEventListener('click', showWeek);
+    root.addEventListener('focusin', showWeek);
   }
 
   document.addEventListener('DOMContentLoaded', function () {
