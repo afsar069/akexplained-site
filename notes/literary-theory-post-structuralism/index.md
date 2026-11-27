@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/literary-theory-post-structuralism/hero.webp
-hero_class: hero-age hero-article-full hero-theory
+hero_class: hero-age hero-article-full
 title: Post-structuralism
 description: A guide to post-structuralism, authorship, discourse and intertextuality for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

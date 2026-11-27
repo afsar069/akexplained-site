@@ -351,9 +351,6 @@ strong{color:var(--ink)}
     object-position:90% center;-webkit-mask-image:none;mask-image:none;
   }
   .hero-indian-freedom .pagehead-art{object-position:53% center}
-  .hero-theory-saussure .pagehead-art{object-position:76% center}
-  .hero-theory-semiotics .pagehead-art{object-position:76% center}
-  .hero-theory-bakhtin .pagehead-art{object-position:83% center}
   .hero-article-full::after{
     height:auto;bottom:0;
     background:linear-gradient(180deg,rgba(250,245,233,0) 0%,
@@ -361,27 +358,6 @@ strong{color:var(--ink)}
       rgba(250,245,233,.9) 82%,rgba(250,245,233,.65) 100%);
   }
   .hero-article-full > .wrap{padding-top:210px}
-}
-
-/* Literary Theory keeps the full painting visible around the article copy. */
-@media screen{
-  .hero-theory::after{content:none}
-  .hero-theory > .wrap{isolation:isolate}
-  .hero-theory > .wrap::before{
-    content:"";position:absolute;z-index:-1;pointer-events:none;
-    inset:-18px auto -16px -8px;width:calc(100% + 16px);max-width:660px;
-    background:rgba(250,245,233,.96);border-radius:20px;filter:blur(18px);
-  }
-  .hero-theory .metarow{max-width:610px}
-}
-@media screen and (max-width:760px){
-  .hero-theory > .wrap{
-    --hero-art-space:clamp(200px,58vw,300px);
-    padding-top:var(--hero-art-space);
-  }
-  .hero-theory > .wrap::before{
-    inset:calc(var(--hero-art-space) - 20px) -14px 8px;width:auto;
-  }
 }
 
 .crumb{font-size:.82rem;color:var(--body);padding:12px 0 0}
