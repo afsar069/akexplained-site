@@ -93,6 +93,25 @@
   var catalogLive = {};
   var lastAttempts = [];
 
+  /* Jis age ka koi set live hai, wo build ke waqt /assets/mcq-live-ages.json me likh diya jata hai
+     (owner, 2026-11-27). Ek FREE set sirf ek file hoti hai — database me uska row nahi hota — isliye
+     catalogAges() use nahi dekh sakta. Is list se /admin/upload-mcq/ se chadha free set apne age ka
+     card bhi khud khol deta hai. File na mile to kuch nahi badalta. */
+  function fileLiveAges() {
+    if (!window.fetch) return;
+    fetch('/assets/mcq-live-ages.json', { cache: 'no-cache' })
+      .then(function (r) { return r.ok ? r.json() : []; })
+      .then(function (slugs) {
+        if (!Array.isArray(slugs)) return;
+        var changed = false;
+        slugs.forEach(function (slug) {
+          if (slug && !catalogLive[slug]) { catalogLive[slug] = true; changed = true; }
+        });
+        if (changed) { try { paintAges(lastAttempts); } catch (e) {} }
+      })
+      .catch(function () {});
+  }
+
   var $ = function (sel, root) { return (root || document).querySelector(sel); };
   var $$ = function (sel, root) {
     return Array.prototype.slice.call((root || document).querySelectorAll(sel));
@@ -185,6 +204,7 @@
      read drafts too, and a Draft must not open a card. If the read fails nothing changes: the card simply
      keeps saying "Questions coming soon". */
   function catalogAges() {
+    fileLiveAges();
     if (!SOON_HUBS.length) return;
     whenAuth().then(function (a) {
       if (!a || !a.configured || !a.client) return;

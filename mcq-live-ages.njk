@@ -1,0 +1,15 @@
+---
+permalink: /assets/mcq-live-ages.json
+eleventyExcludeFromCollections: true
+---
+{#- Jin ages ka kam se kam ek set live hai (owner, 2026-11-27).
+    /quizzes/mcq/ ke age cards ke liye. assets/mcq.js me LIVE_AGES ek haath se likhi list hai aur
+    catalogAges() database se login sets dekhta hai — par ek FREE set sirf ek file hoti hai, database me
+    uska koi row nahi. Isliye build yahan likh deta hai ki kis age ka koi set live hai, aur mcq.js use
+    padh kar us age ka card khol deta hai. Matlab /admin/upload-mcq/ se chadha free set apne age ka card
+    bhi khud khol dega — koi slug haath se nahi daalna padta. -#}
+{% set slugs = [] -%}
+{%- for age in mcqAges -%}
+{%- if age.hasLive -%}{% set slugs = (slugs.push(age.slug), slugs) %}{%- endif -%}
+{%- endfor -%}
+{{ slugs | dump | safe }}

@@ -1,0 +1,125 @@
+---
+permalink: /admin/upload-mcq/index.html
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Publish a free MCQ set | AK Explained</title>
+<meta name="description" content="Owner-only page for publishing a free, open MCQ set from its question files.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="/assets/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+</head>
+<body data-admin="freemcq">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header"></header>
+
+<main id="main">
+
+<section class="pagehead">
+  <span class="mark" aria-hidden="true">F</span>
+  <div class="wrap">
+    <p class="eyebrow">Owner only</p>
+    <h1>Publish a free MCQ set</h1>
+    <p class="lede">Put a set of questions on the website for everyone, with no login. Choose the set, choose its question files, check what the page found, then publish. The set is usually live in about two to three minutes.</p>
+  </div>
+</section>
+
+<div class="wrap authwrap">
+
+  <nav id="adminNav" class="adminnav" aria-label="Admin tools" hidden></nav>
+
+  <div id="fqNotice" class="authnotice" role="status">Checking your account&hellip;</div>
+
+  <div id="fqBody" hidden>
+
+    <div class="fqwarn" role="note">
+      <h2>This page makes questions free for everyone, for good</h2>
+      <p>A free set is a file on the website, so anyone can open it without a login, and it stays in the website&rsquo;s history even if it is taken down later. <strong>It can never be turned into a paid set afterwards.</strong> Questions that should need the pass go to <a href="/admin/upload-paper/">Upload a paper</a> instead, where they are kept in the database.</p>
+    </div>
+
+    <div class="authcard">
+      <h2>1. Which set is this?</h2>
+      <p class="small">Only sets that are already planned are listed. A brand-new set has to be planned once by Claude.</p>
+      <label class="field">
+        <span>The set</span>
+        <select id="fqSlot">
+          <option value="">Choose a set&hellip;</option>
+        </select>
+        <span class="hint" id="fqSlotHint"></span>
+      </label>
+      <p class="small" id="fqSlotPlan" aria-live="polite"></p>
+    </div>
+
+    <div class="authcard" id="fqFilesCard" hidden>
+      <h2>2. Choose the question files</h2>
+      <div class="formerror" id="fqFileError" role="alert" hidden></div>
+      <label class="field">
+        <span>Question files (.json)</span>
+        <input id="fqFiles" type="file" accept=".json,application/json" multiple>
+        <span class="hint" id="fqFilesHint">One file for each level of this set.</span>
+      </label>
+      <ul class="uprep" id="fqFileList"></ul>
+    </div>
+
+    <div class="authcard" id="fqChecksCard" hidden>
+      <h2>3. What the page found</h2>
+      <ul class="uprep" id="fqChecks"></ul>
+      <button class="btn btn-ghost" id="fqPreviewBtn" type="button" hidden>Show a few questions</button>
+    </div>
+
+    <div class="authcard" id="fqPreviewCard" hidden>
+      <h2>4. A look at the questions</h2>
+      <p class="small">The first three questions of each file, as they are written. The right option is marked.</p>
+      <div id="fqPreview"></div>
+    </div>
+
+    <div class="authcard" id="fqGo" hidden>
+      <h2>5. Publish</h2>
+      <div class="formerror" id="fqError" role="alert" hidden></div>
+      <p class="small" id="fqSummary"></p>
+      <label class="field admcheck" id="fqReplaceWrap" hidden>
+        <input id="fqReplace" type="checkbox">
+        <span>Replace the questions that are already on the website for this set</span>
+      </label>
+      <label class="field admcheck">
+        <input id="fqConfirm" type="checkbox">
+        <span>I understand these questions will be open to everyone, for good.</span>
+      </label>
+      <button class="btn" id="fqButton" type="button" disabled>Publish this set</button>
+      <p class="small">Publishing saves the files to the website and starts the build. The set, its page and its review page are usually ready in about two to three minutes.</p>
+    </div>
+
+    <div class="authcard" id="fqDone" hidden>
+      <h2 id="fqDoneTitle">Done</h2>
+      <p class="upverdict" id="fqVerdict" role="status"></p>
+      <ul class="uprep" id="fqDoneReport"></ul>
+      <button class="btn btn-ghost" id="fqCheckBtn" type="button" hidden>Is it live yet?</button>
+      <p class="small" id="fqCheckNote" aria-live="polite"></p>
+      <div class="upcopy" id="fqCopy" hidden>
+        <p class="small"><strong>Something needs fixing.</strong> Press the button, then paste the text to Claude.</p>
+        <textarea id="fqCopyText" rows="8" readonly aria-label="Text to paste to Claude"></textarea>
+        <button class="btn" id="fqCopyBtn" type="button">Copy this for Claude</button>
+        <span class="small" id="fqCopyNote" aria-live="polite"></span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+</main>
+
+<footer class="site-footer"></footer>
+
+<script type="application/json" id="fqPlan">{{ freeMcqSlots.json | safe }}</script>
+<script src="/assets/admin.js" defer></script>
+<script src="/assets/upload-mcq.js" defer></script>
+</body>
+</html>

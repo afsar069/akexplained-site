@@ -1,24 +1,22 @@
-// publish-article — admin ke browser se ek article (.md) site ke repo me likhne wala hissa
-// (owner, 2026-11-26: "admin page par jo article publish kar de").
+// publish-article — admin ke browser se site ke repo me likhne wala hissa
+// (owner, 2026-11-26: "admin page par jo article publish kar de"; 2026-11-27: free MCQ set bhi).
 //
-// Kaam ek hi hai: /admin/upload-article/ se aaya markdown file repo ke notes/<slug>/index.md
-// par likh dena. Cloudflare Pages `main` ko dekhta hai, isliye likhne ke 2-3 minute baad
-// article asli static page ban kar live ho jata hai — poora design, Google ke liye indexable.
-// (MCQ paper database se turant khulta hai; article ko rebuild chahiye, kyunki Google ko
-// asli HTML page chahiye. CLAUDE.md rule 24.)
+// Do kaam:
+//   * /admin/upload-article/ se aaya markdown notes/<slug>/index.md par, aur uski tasveerein assets/ me.
+//   * /admin/upload-mcq/ se aayi FREE MCQ set ki file(s) assets/questions/<setId>-<level>.json par.
+// Cloudflare Pages `main` ko dekhta hai, isliye likhne ke 2-3 minute baad page asli static page ban kar
+// live ho jata hai — Google ke liye indexable. (MCQ ka LOGIN paper database se turant khulta hai: wo
+// is page ka kaam nahi, uske sawal repo me kabhi nahi jate. CLAUDE.md rule 15, 17, 24.)
 //
-// Browser se POST aata hai, body {action, folder, slug, content, replace, images}, admin ka login
-// token Authorization me. action "read" ek published article ka text wapas deta hai (sudharne ke
-// liye); "publish" use likhta hai. Asli jaanch YAHAN hoti hai (browser ka code bypass ho sakta hai):
-//   1. token valid hai? (getUser)
-//   2. us login ka row public.paper_admins me hai? (rule 16 ki wahi ek allow list)
-//   3. folder sirf "" ya "ages" — kahin aur nahi likha ja sakta
-//   4. slug ka roop saaf (chhote akshar, hyphen), reserved naam nahi
-//   5. front matter hai, usme title aur description hain, body khali nahi
-//   6. file 400 KB se kam, koi <script> nahi
-//   7. har tasveer: /assets/... .webp, 200 KB tak, ek baar me 10 tak
-// In sab ke baad hi GitHub par likha jata hai, aur sirf notes/ ke andar .md aur assets/ ke andar
-// .webp — kahin aur nahi.
+// Browser se POST aata hai, admin ka login token Authorization me. action:
+//   "read"              ek published article ka text wapas (sudharne ke liye)
+//   "publish"           article + uski tasveerein
+//   "publish-questions" ek free MCQ set ki file(s)
+// Asli jaanch YAHAN hoti hai (browser ka code bypass ho sakta hai):
+//   1. token valid hai? (getUser)   2. us login ka row public.paper_admins me hai?
+//   3. article: folder, slug, front matter, <script>, 400 KB; tasveer: /assets/....webp, 200 KB, 10 tak
+//   4. free MCQ: set registry me PLAN hai aur FREE hai, har question ke 4 option, sahi jawab, explanation
+//      aur asli topicId/periodId (master taxonomy repo se padhi jati hai)
 //
 // Secret (Supabase -> Edge Functions -> Secrets me owner khud daalta hai, repo me kabhi nahi):
 //   ARTICLE_REPO_TOKEN   = GitHub fine-grained token, sirf isi repo par, Contents: read & write
@@ -99,6 +97,101 @@ function imagePath(site: string): string | null {
   if (!/^\/assets\/[A-Za-z0-9/_-]+\.webp$/.test(site)) return null;
   if (site.length > 200) return null;
   return site.slice(1);
+}
+
+/* ---------- FREE MCQ set (owner, 2026-11-27) ----------
+   Ek free set ek PUBLIC file hai: assets/questions/<setId>-<level>.json (rule 15). Isliye use
+   likhna article likhne jaisa hai. Par ek galat file se SITE KA BUILD ruk jata hai (check-topics
+   gate: har topicId/periodId asli hona chahiye, rule 12), aur free matlab hamesha ke liye public —
+   isliye jaanch yahan poori hoti hai, browser ke bharose nahi.
+
+   Kaunsa set? Wahi jo registry me pehle se PLAN hai aur FREE hai. Registry (_data/mcqSpec.json) aur
+   master taxonomy repo se padhi jati hai, taaki browser ka bheja koi bhi naam yahan chal na jaye:
+   login/paid set ki file kabhi repo me nahi ja sakti. */
+const SET_ID = /^[a-z0-9]+(?:-[a-z0-9]+)*-set-[1-9][0-9]*$/;
+const LEVELS = ["easy", "medium", "hard"];
+
+async function repoText(path: string, token: string): Promise<string | null> {
+  const got = await gh("/repos/" + REPO + "/contents/" + path + "?ref=" + BRANCH, token);
+  if (!got.ok || typeof got.data.content !== "string") return null;
+  return fromBase64(got.data.content as string);
+}
+
+type Slot = { setId: string; levels: string[]; count: number };
+
+// Registry me ye set hai, free hai, aur plan kiya gaya hai?
+function findSlot(specText: string, setId: string): Slot | string {
+  let spec: { ages?: Record<string, unknown>[] };
+  try { spec = JSON.parse(specText); } catch { return "The website's set list could not be read."; }
+  for (const age of spec.ages || []) {
+    const slug = String((age as Record<string, unknown>).slug ?? "");
+    for (const set of ((age as Record<string, unknown>).sets ?? []) as Record<string, unknown>[]) {
+      if (slug + "-set-" + set.n !== setId) continue;
+      if (set.access) return "That set is a login set, so its questions may never be a public file.";
+      const levels = Array.isArray(set.levels) ? set.levels.map(String) : [];
+      return { setId, levels, count: Number(set.count) || 0 };
+    }
+  }
+  return 'There is no planned set called "' + setId + '". Ask Claude to plan it first.';
+}
+
+// Taxonomy CSV se: har id, aur kaun si id `period` kind ki hai.
+function readTags(csv: string): { ids: Set<string>; periods: Set<string> } {
+  const ids = new Set<string>();
+  const periods = new Set<string>();
+  const lines = csv.split(/\r?\n/);
+  lines.shift();
+  for (const line of lines) {
+    if (!line.trim()) continue;
+    const f = line.split(",");
+    const id = (f[0] || "").trim();
+    if (!id) continue;
+    ids.add(id);
+    if ((f[2] || "").trim() === "period") periods.add(id);
+  }
+  return { ids, periods };
+}
+
+/* Ek level ki file: dhancha, har question, aur tags. Pehli galti par hi ruk jate hain, poora
+   sandesh saaf English me — wahi page par dikhta hai. */
+function checkQuestions(
+  body: Record<string, unknown>, slot: Slot, level: string,
+  tags: { ids: Set<string>; periods: Set<string> },
+): string | null {
+  if (String(body.setId ?? "") !== slot.setId) return "The file says it belongs to another set.";
+  if (String(body.level ?? "") !== level) return "The file says it is another level.";
+  const rev = Number(body.rev);
+  if (!Number.isInteger(rev) || rev < 1) return "The file has no revision number.";
+  const qs = body.questions;
+  if (!Array.isArray(qs) || !qs.length) return "The file has no questions.";
+  if (slot.count && qs.length !== slot.count) {
+    return "The plan says " + slot.count + " questions, but this file has " + qs.length + ".";
+  }
+  const seen = new Set<string>();
+  for (let i = 0; i < qs.length; i++) {
+    const q = (qs[i] || {}) as Record<string, unknown>;
+    const where = "Question " + (i + 1) + ": ";
+    const id = String(q.id ?? "");
+    if (!id) return where + "it has no id.";
+    if (!id.startsWith(slot.setId + "-")) return where + 'its id "' + id + '" does not belong to this set.';
+    if (seen.has(id)) return where + 'the id "' + id + '" is in this file twice.';
+    seen.add(id);
+    if (!String(q.question ?? "").trim()) return where + "it has no question.";
+    const opts = q.options;
+    if (!Array.isArray(opts) || opts.length !== 4) return where + "a question must have exactly four options.";
+    const clean = opts.map((o) => String(o ?? "").trim());
+    if (clean.some((o) => !o)) return where + "one of its options is empty.";
+    if (new Set(clean).size !== 4) return where + "two of its options are the same.";
+    const right = Number(q.correct_option_id);
+    if (!Number.isInteger(right) || right < 0 || right > 3) return where + "the right option is not marked 0 to 3.";
+    if (!String(q.explanation ?? "").trim()) return where + "it has no explanation.";
+    const topic = String(q.topicId ?? "");
+    if (!topic) return where + "it has no topicId.";
+    if (!tags.ids.has(topic)) return where + 'its topicId "' + topic + '" is not in the topic list.';
+    const period = String(q.periodId ?? "");
+    if (period && !tags.periods.has(period)) return where + 'its periodId "' + period + '" is not a period.';
+  }
+  return null;
 }
 
 /* Front matter ki jaanch. Poora YAML parse nahi karte — sirf itna dekhte hain ki
@@ -201,6 +294,96 @@ Deno.serve(async (req: Request) => {
   const slug = String(body.slug ?? "").trim().toLowerCase();
   const content = String(body.content ?? "");
   const replace = body.replace === true;
+
+  // PUBLISH-QUESTIONS: ek FREE MCQ set ki file(s) assets/questions/ me (owner, 2026-11-27).
+  // Article wala hi raasta, par jaanch zyada: galat file build rok deti hai, aur free hamesha ke liye public hai.
+  if (action === "publish-questions") {
+    const setId = String(body.setId ?? "").trim().toLowerCase();
+    if (!SET_ID.test(setId)) return json({ error: "That is not a set name this page can use." }, 400, origin);
+
+    const rawFiles = Array.isArray(body.files) ? body.files : [];
+    if (!rawFiles.length || rawFiles.length > 3) {
+      return json({ error: "Send one file for each level of the set (up to three)." }, 400, origin);
+    }
+
+    const specText = await repoText("_data/mcqSpec.json", repoToken);
+    if (specText === null) return json({ error: "The website's set list could not be read. Please try again." }, 502, origin);
+    const slot = findSlot(specText, setId);
+    if (typeof slot === "string") return json({ error: slot }, 400, origin);
+
+    const csv = await repoText("supabase/data/taxonomy-master-reference.csv", repoToken);
+    if (csv === null) return json({ error: "The topic list could not be read. Please try again." }, 502, origin);
+    const tags = readTags(csv);
+
+    // Har file jaanch lo (likhne se pehle saari, taaki aadha set kabhi na chadhe).
+    const ready: { path: string; level: string; text: string }[] = [];
+    const levelsSent = new Set<string>();
+    for (const raw of rawFiles) {
+      const one = (raw || {}) as Record<string, unknown>;
+      const level = String(one.level ?? "").trim().toLowerCase();
+      const text = String(one.text ?? "");
+      if (!LEVELS.includes(level)) return json({ error: 'There is no level called "' + level + '".' }, 400, origin);
+      if (!slot.levels.includes(level)) {
+        return json({ error: "This set does not have a " + level + " level, so that file cannot go here." }, 400, origin);
+      }
+      if (levelsSent.has(level)) return json({ error: "Two files were sent for the " + level + " level." }, 400, origin);
+      levelsSent.add(level);
+      if (new TextEncoder().encode(text).length > MAX_BYTES) {
+        return json({ error: "The " + level + " file is too big. The limit is 400 KB." }, 400, origin);
+      }
+      let parsed: Record<string, unknown>;
+      try { parsed = JSON.parse(text); } catch { return json({ error: "The " + level + " file is not a question file this page can read." }, 400, origin); }
+      const problem = checkQuestions(parsed, slot, level, tags);
+      if (problem) return json({ error: "The " + level + " file — " + problem }, 400, origin);
+      ready.push({ path: "assets/questions/" + setId + "-" + level + ".json", level, text });
+    }
+
+    // Pehle se hai? (replace ke bina kuch nahi badla jata)
+    const shas: Record<string, string> = {};
+    for (const f of ready) {
+      const has = await gh("/repos/" + REPO + "/contents/" + f.path + "?ref=" + BRANCH, repoToken);
+      if (has.ok && typeof has.data.sha === "string") {
+        if (!replace) {
+          return json({
+            error: "This set already has its " + f.level + " questions on the website. Tick the replace box to put these in their place.",
+            exists: true,
+          }, 409, origin);
+        }
+        shas[f.path] = has.data.sha as string;
+      } else if (has.status !== 404) {
+        return json({ error: "Could not check the website's files (" + has.status + "). Nothing was saved." }, 502, origin);
+      }
+    }
+
+    const written: string[] = [];
+    for (const f of ready) {
+      const sent = await gh("/repos/" + REPO + "/contents/" + f.path, repoToken, {
+        method: "PUT",
+        body: JSON.stringify({
+          message: (shas[f.path] ? "Update free MCQ set: " : "Publish free MCQ set: ") + setId + " (" + f.level + ", from /admin/upload-mcq/)",
+          content: toBase64(f.text),
+          branch: BRANCH,
+          ...(shas[f.path] ? { sha: shas[f.path] } : {}),
+        }),
+      });
+      if (!sent.ok) {
+        const msg = typeof sent.data.message === "string" ? sent.data.message : "";
+        return json({
+          error: "The " + f.level + " file could not be saved (" + sent.status + "). " + msg +
+            (written.length ? " The " + written.join(" and ") + " file was saved before this, so please try again." : " Nothing was saved."),
+        }, 502, origin);
+      }
+      written.push(f.level);
+    }
+
+    return json({
+      ok: true,
+      setId,
+      levels: written,
+      replaced: Object.keys(shas).length > 0,
+      url: "/quizzes/mcq/" + setId.replace(/-set-\d+$/, "") + "/set-" + setId.split("-set-")[1] + "/",
+    }, 200, origin);
+  }
 
   if (!FOLDERS.includes(folder)) return json({ error: "That is not a folder an article can go in." }, 400, origin);
   if (!slugOk(slug)) {

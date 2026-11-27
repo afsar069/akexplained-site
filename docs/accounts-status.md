@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-26 (the article publish engine below, now live and used for its first article); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
+_Last updated: 2026-11-27 (the free MCQ engine below; the article engine entries are from 2026-11-26); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
 
 ## Article publish engine — `/admin/upload-article/` — 2026-11-26 (on the branch, NOT merged)
 - Owner asked (Hinglish): the MCQ upload engine is a great help, can we have one for articles too — "men .md file du … or aasani se website par publish ho jaae". Their three choices: the article stays a **`.md` file in the repo** (not a database row), **text only** for now, and **preview then Publish** (no Draft step). Built as CLAUDE.md **rule 24**.
@@ -22,6 +22,14 @@ _Last updated: 2026-11-26 (the article publish engine below, now live and used f
 - **Four additions, same day** (owner asked "isko advance banao"; all four chosen, all built, function **version 5**): (1) previous / next chapter links fill themselves from the series registry (`_data/eleventyComputed.js`; an article's own `prev:`/`next:` always wins) — the first two engine-published articles had none; (2) **editing a published article** from `/admin/upload-article/?edit=<slug>` (the function's new read-only `action: "read"`); (3) **`/admin/articles/`** — every article with its series and chapter, an Edit button, and the chapters still to write; (4) **pictures**: a missing picture is now a fix-it row, the browser converts the chosen file to WebP under 200 KB (max 1600px wide) and the function writes pictures first, article second, never overwriting a picture that exists. Only `/assets/….webp` addresses, 10 per publish.
 - 92 Playwright checks pass. Against the build before, six pages change (two admin pages, four articles gaining their chapter links) and one page is new (`/admin/articles/`); the sitemap is identical and the link check is unchanged.
 - The engine is in day-to-day use now: the owner hands over a `.md` file and it is live in two to three minutes.
+
+## Free MCQ engine — `/admin/upload-mcq/` — 2026-11-27
+- Owner asked for the same thing for the **free, no-login** MCQ sets. It fits, because a free set is a public file (`assets/questions/<setId>-<level>.json`), not a database row. Built as CLAUDE.md **rule 25**; function **version 6** (`action: "publish-questions"`), deployed and health-checked.
+- Owner's choices: its own page (not a mode of `/admin/upload-paper/`, so paid questions can never be made public by a wrong click); **only the 114 free slots already planned** in `_data/mcqSpec.json`; MCQ sets only for now (Daily quiz files are not in it).
+- A planned free set now goes live **when its files exist** (`_data/mcqAges.js`), like a chapter following its article — no `"live": true` to type, and `_data/mcqPendingSets.js` drops the slot by itself. `/assets/mcq-live-ages.json` (new, built from the registry) lets `assets/mcq.js` open an age card for a free set, which `catalogAges()` cannot see because there is no catalog row.
+- Both gates check every question: the page (with the master topic ids embedded) and the function (which reads `_data/mcqSpec.json` and the taxonomy CSV from the repo — a login set's questions can never be written as a public file). Stricter than the article engine on purpose: a bad tag stops the whole build, and free is irreversible.
+- Tested: 40 Playwright checks for the new page, the 92 article checks still green, the built site unchanged apart from `/admin/` plus the new page, sitemap identical, link check unchanged.
+- **Not built on purpose:** a brand-new set slot (that is a registry edit, Claude does it once) and the Daily quiz files.
 - Not built on purpose: pictures (still the old way; the page refuses an article whose picture is missing), a Draft step, and the timeline or landing-page card for a new **age** article (that stays a hand edit, CLAUDE.md rule 3).
 
 ## Indian English Literature MCQ plan — 2026-11-24
