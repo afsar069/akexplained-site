@@ -6,6 +6,15 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-27 (the Daily quiz engine and the free MCQ engine below; the article engine entries are from 2026-11-26); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
 
+## Student dashboard design — 2026-11-27
+
+- The owner approved the updated dashboard design for `main`. The welcome card comes first, with the student's chosen picture, an animated name and a books background. Top students follows Your daily streak.
+- The welcome panel keeps its books artwork and Playfair Display name. The owner asked to remove the separate professor banner below the welcome note. The larger profile avatar has a looping gold star, with a pause button and a static ring for reduced motion. The practice link uses the same next British age as Your next goal. New students get Start a Daily Quiz. Profile editing still opens `/account/`.
+- All existing blocks remain. Ranking, streak, quiz counts, the five levels, age/topic coverage, strengths, weak-topic hints and paid-access calculations are unchanged. Top students uses section order 35, directly after streak (30). Main-dashboard styling is isolated in `assets/dashboard.css`; detailed ages/topics pages keep their layout and controls.
+- The returning student greeting includes 🙏. The greeting text, welcome note, name and avatar enter once. Bars grow from zero to their actual width on first viewport entry, and the weekly chart draws its actual line. Chart points support tap, click and keyboard focus to reveal the existing weekly percentage and answer count. Reduced motion shows final values, including when that preference changes while the page is open. The streak card uses a lighter teal with white text and red for missed days. Each level has its own pastel colour. The summary cards use faint leaf art, tighter rows and pale heading strips. The goal card has its own flag background.
+- Validation: Eleventy built 930 pages, the full internal HTML link check found no unresolved destinations, and 120 Chromium checks passed. Checks compare every existing statistic, topic row, leaderboard entry, streak day, level and chart coordinate with the original renderer, cover 320–1920px, long/escaped names, chosen/default avatars, empty/error/complete states, notification reading, detailed pages, animation fallbacks and keyboard chart controls.
+- Production uses the existing authenticated data loading. The sample data used for the local preview stays outside the repository.
+
 ## CBT result page animations — 2026-11-27
 
 - The score board keeps its stats, login or dashboard link, question analysis, review actions, PDF, journey and suggestions in their current order.

@@ -1,0 +1,310 @@
+/* Student dashboard preview, 2026-11-27. Scoped to the main dashboard so
+   account, result and the two detailed progress pages keep their own layouts. */
+.student-dashboard {
+  --dash-ink:#153e3b;
+  --dash-muted:#566862;
+  --dash-line:#e7e5d9;
+  --dash-radius:20px;
+  background:#f8f8f2;
+}
+.student-dashboard .authwrap {padding-top:14px;padding-bottom:44px}
+.student-dashboard .dashtop {
+  display:flex;justify-content:space-between;gap:16px;padding:0 2px;
+  margin-bottom:20px;background:none;border:0;box-shadow:none;
+}
+.student-dashboard .dashtop-side {display:none}
+.student-dashboard .dashtop-title {color:var(--dash-ink);font-size:1.35rem;text-align:left;white-space:normal}
+.student-dashboard .dashtop-user {background:#fffdf8;border-color:var(--dash-line);max-width:260px}
+.student-dashboard .dashtop-bell {background:#fffdf8;border-color:var(--dash-line)}
+.student-dashboard .dashhero {
+  border-color:#d9dfd2;border-radius:24px;box-shadow:0 6px 24px #163d3510;
+  margin-bottom:26px;background:#fcfaf2;
+}
+.dashwelcome {
+  position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) 220px;
+  align-items:center;gap:24px;padding:36px 46px 32px;overflow:hidden;
+  background:linear-gradient(110deg,#fffdf6e6,#fffdf640),url('/assets/dash-box.webp') center/100% 100% no-repeat;
+}
+.dashwelcome::before {
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse at 95% 40%,#d5e8d26b,transparent 56%);
+}
+.dashwelcome-copy {min-width:0}
+.dashwelcome .dashhero-hi {font-family:var(--sans);font-size:1.2rem;font-weight:500;line-height:1.45;color:var(--dash-ink)}
+.dashwelcome .dashhero-namaste {margin-inline-start:.16em}
+.dashwelcome .dashhero-name {
+  display:inline-block;position:relative;max-width:100%;padding-bottom:10px;margin-top:4px;
+  font-size:clamp(2.65rem,4.5vw,4.6rem);line-height:1.14;color:var(--teal-dark);
+  text-wrap:balance;letter-spacing:-.035em;
+}
+.dashwelcome .dashhero-name::after {
+  content:"";position:absolute;bottom:0;left:0;width:70px;height:3px;
+  border-radius:50%;background:#c49b49;transform-origin:left;
+}
+.dashwelcome .dashhero-line {
+  max-width:49ch;margin:14px 0 0;color:var(--dash-muted);
+  font-family:var(--sans);font-weight:400;font-size:1rem;line-height:1.6;
+}
+.dashwelcome .dashhero-path {display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin:13px 0 0;color:var(--dash-muted);font-size:.82rem}
+.dashwelcome .dashhero-path svg {width:15px;height:15px;color:var(--teal);flex:none}
+.dashwelcome .dashhero-path b {color:var(--dash-ink);font-weight:600}
+.dashwelcome-actions {display:flex;flex-wrap:wrap;align-items:center;gap:16px 23px;margin-top:23px}
+.dashwelcome-actions .btn {display:inline-flex;align-items:center;justify-content:space-between;gap:18px;border-radius:10px;padding:12px 17px;min-height:46px;font-size:.85rem}
+.dashwelcome-actions .btn span {font-size:1.15rem}
+.dashwelcome-secondary {display:inline-flex;align-items:center;gap:10px;color:var(--teal-dark);font-size:.85rem;font-weight:600;min-height:44px}
+.dashwelcome-profile-wrap {position:relative;min-width:0;padding:18px 0 0}
+.dashwelcome-profile {display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--dash-ink);border-radius:16px}
+.dashwelcome-portrait {position:relative;display:block}
+.dashwelcome-avatar {position:relative;display:block;padding:8px;background:#fffdf3;border-radius:50%;box-shadow:0 9px 30px #1b59451c,0 0 0 1px #d7c9a8}
+.dashwelcome-avatar img {display:block;width:164px;height:164px;border-radius:50%;object-fit:contain;background:#f0e9d5}
+.dashwelcome-orbit {position:absolute;inset:-14px;border:1px dashed #b5b993;border-radius:50%;transform:rotate(-38deg);pointer-events:none}
+.dashwelcome-orbit::before {
+  content:"";position:absolute;top:0;left:50%;width:21px;height:21px;transform:translate(-50%,-50%);
+  background:#b3842e;clip-path:polygon(50% 0,62% 35%,100% 38%,71% 62%,81% 100%,50% 78%,19% 100%,29% 62%,0 38%,38% 35%);
+}
+.dashwelcome-orbit::after {content:"";position:absolute;bottom:0;left:50%;width:7px;height:7px;border-radius:50%;transform:translate(-50%,50%);background:#6f9a83}
+.dashwelcome-profile-label {margin-top:24px;padding:5px 12px;background:#fffdf1;border:1px solid #e2dac5;border-radius:8px;font-size:.75rem;letter-spacing:.02em;z-index:1}
+.dashwelcome-profile-label span {margin-left:6px;color:var(--teal)}
+.dashwelcome-motion {
+  display:none;position:absolute;right:5px;bottom:0;place-items:center;
+  width:32px;height:32px;border:1px solid #ddd9c7;border-radius:50%;
+  background:#fffefa;color:#56776b;cursor:pointer;
+}
+.dashwelcome-motion::before {content:"";width:8px;height:9px;border-inline:2px solid currentColor}
+.is-orbit-paused .dashwelcome-motion::before {width:0;height:0;border:5px solid transparent;border-left:8px solid currentColor;transform:translateX(3px)}
+.dashwelcome-motion:hover {background:#ebf3e8;color:var(--teal-dark)}
+
+/* Six existing figures, with a clear visual rhythm and readable notes. */
+.student-dashboard .dashkpis-6 {gap:12px;margin-bottom:24px}
+.student-dashboard .dashkpi {border:1px solid var(--dash-line);box-shadow:none;background:#fffefa;border-radius:14px;min-width:0}
+.student-dashboard .dashkpis-6 .dashkpi {position:relative;padding:20px 16px 18px;gap:16px;overflow:hidden}
+.student-dashboard .dashkpis-6 .dashkpi::before {content:"";position:absolute;top:0;left:16px;width:30px;height:3px;background:#8aa69e;border-radius:0 0 5px 5px}
+.student-dashboard .dashkpis-6 .is-gold::before {background:#c5a057}
+.student-dashboard .dashkpis-6 .is-ok::before {background:var(--teal)}
+.student-dashboard .dashkpi-ic {width:36px;height:36px;border-radius:10px}
+.student-dashboard .dashkpi-ic svg {width:20px;height:20px;stroke-width:1.7}
+.student-dashboard .dashkpis-6 .dashkpi-num {font-family:var(--sans);font-size:2rem;letter-spacing:-.04em;color:var(--dash-ink);font-variant-numeric:tabular-nums}
+.student-dashboard .dashkpis-6 .dashkpi-lbl {font-size:.81rem;font-weight:600;margin-top:8px}
+.student-dashboard .dashkpis-6 .dashkpi-sub {font-size:.73rem;line-height:1.5;margin-top:5px;color:#62716e}
+.student-dashboard .dashcard {padding:24px;border-radius:var(--dash-radius);border-color:var(--dash-line);background:#fffefa;box-shadow:0 3px 12px #234d3d05;margin-bottom:24px}
+.student-dashboard :is(.dashcard,.dashkpis-6 .dashkpi,.dashstrip) {position:relative;isolation:isolate}
+/* The welcome painting also supplies the faint leaf detail in the cards. */
+.student-dashboard :is(.dashcard,.dashkpis-6 .dashkpi,.dashstrip)::after {
+  content:"";position:absolute;inset:0;border-radius:inherit;z-index:-1;pointer-events:none;
+  background:var(--dash-card-art,url('/assets/dash-box.webp') right bottom / auto min(100%, 160px) no-repeat);
+  opacity:var(--dash-card-art-opacity,.12);
+  mask-image:var(--dash-card-art-mask,radial-gradient(ellipse 200px 145px at right bottom,#000 20%,transparent 91%));
+}
+.student-dashboard .dashkpis-6 .dashkpi {--dash-card-art: url('/assets/dash-box.webp') right bottom / auto 100px no-repeat}
+.student-dashboard .acctcard-head {display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:18px}
+.student-dashboard .acctcard-head h2 {font-size:1.15rem;color:var(--dash-ink);margin:0;line-height:1.4}
+.student-dashboard .dashpair {gap:20px;margin-bottom:24px}
+.student-dashboard .dashpair>.dashcard {margin-bottom:0}
+.student-dashboard .dashpair .dashkpis-2 {margin-top:0}
+.student-dashboard .dashpair .dashkpi {background:#f7f8f2;border-color:transparent;padding:16px 12px;gap:12px}
+.student-dashboard .dashpair .dashkpi-num {font-family:var(--sans);font-size:1.65rem;color:var(--dash-ink);letter-spacing:-.025em}
+.student-dashboard .dashkpi-lbl {font-size:.85rem}
+.student-dashboard .dashkpi-sub {color:#61706d;line-height:1.5}
+.student-dashboard .dashnote {color:#62716e;font-size:.79rem;line-height:1.6}
+.student-dashboard .dashplus {gap:5px;width:auto;height:auto;min-height:32px;padding:3px 0;border:0;background:none;color:var(--teal-dark);font-size:.76rem;white-space:nowrap;line-height:1.4}
+.student-dashboard .dashplus:hover {color:var(--teal);text-decoration:underline;transform:none}
+.student-dashboard .dashrow {border-color:#eeeee5}
+.student-dashboard .dashname {font-size:.9rem}
+.student-dashboard .dashmeta {font-size:.77rem;color:#60736b;white-space:normal}
+.student-dashboard .dashkind {font-size:.58rem;letter-spacing:.05em;padding:2px 7px}
+.student-dashboard .dashbar {height:7px;background:#eaf0e7;margin-top:10px}
+.student-dashboard .dashbar>span,.student-dashboard .dashbigbar>span:not(.dashbarmark) {transform-origin:left}
+.student-dashboard .dashrow-hint {font-size:.77rem;line-height:1.5;color:#896739}
+.student-dashboard [data-section="areas"] .dashbar>span {background:#bc8b49}
+
+/* Compact summaries, with the same heading strip across the progress cards. */
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"],[data-section="trend"],[data-section="goal"]) {
+  padding:15px 16px 17px;
+}
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"],[data-section="trend"],[data-section="goal"]) .acctcard-head {
+  align-items:center;gap:4px 10px;background:#edf3e9;border-radius:9px;padding:8px 10px;margin-bottom:9px;
+}
+.student-dashboard [data-section="areas"] .acctcard-head {background:#f8efdf}
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"]) .dashlist {margin:0}
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"]) .dashrow {
+  padding:8px 0;
+}
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"]) .dashbar {margin-top:6px}
+.student-dashboard :is([data-section="ages"],[data-section="topics"],[data-section="strengths"],[data-section="areas"]) .dashnote {margin:8px 0 0}
+
+/* The existing streak leads directly into the student board. */
+.student-dashboard [data-section="streak"] {
+  background:linear-gradient(115deg,#347467,#3b766c);border-color:#38776c;
+  --dash-card-art-opacity:.075;
+}
+.student-dashboard [data-section="streak"] .acctcard-head h2 {color:#fff}
+.student-dashboard .dashstreak {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px 32px;align-items:center}
+.student-dashboard .dashstreak .dashkpis {gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin:0}
+.student-dashboard .dashstreak .dashkpi {background:#285f555c;border-color:#ffffff2b;padding:15px 12px;gap:10px}
+.student-dashboard .dashstreak .dashkpi-num {font-family:var(--sans);color:#fff;font-size:1.7rem;letter-spacing:-.035em}
+.student-dashboard .dashstreak .dashkpi-lbl {color:#fff;font-weight:500}
+.student-dashboard .dashstreak .dashkpi-sub {color:#fff;font-size:.73rem}
+.student-dashboard .dashstreak .dashkpi-ic {background:#f8eac319;color:#edcf80;border-color:#f8eac329;width:32px;height:32px;border-radius:9px}
+.student-dashboard .dashweek {flex-wrap:nowrap;gap:7px;margin:0}
+.student-dashboard .dashweek span {min-width:0;min-height:52px;border-radius:12px;font-size:.82rem;background:transparent;border-color:#ffffff44;color:#fff;padding:8px 0}
+.student-dashboard .dashweek span.is-on {background:#226350;border-color:#84b39b;box-shadow:inset 0 -3px 0 #78ad8e}
+.student-dashboard .dashweek span.is-future {opacity:1}
+.student-dashboard .dashweek span.is-missed {background:#ab4049;border-color:#da9190;color:#fff}
+.student-dashboard .dashweek span.is-today {border-color:#e8c476;color:#fff}
+.student-dashboard .dashstreak>.dashnote {grid-column:1/-1;color:#fff;margin:0;font-size:.73rem}
+.student-dashboard [data-section="board"] {background:linear-gradient(125deg,#fffaf0,#fffefa 65%);border-color:#e4dcc5}
+.student-dashboard [data-section="board"] .acctcard-head h2::before {content:"✦";color:#b1893f;margin-right:9px;font-family:var(--sans)}
+.student-dashboard .dashlbrow {gap:12px}
+.student-dashboard .dashlbcard {border-radius:14px;background:#fffefb;border-color:#ece8dc;padding:20px 10px 17px}
+.student-dashboard .dashlbcard.is-top1 {background:#fbf0d1;border-color:#e1c97e}
+.student-dashboard .dashlbcard.is-top2 {background:#f0f3f2;border-color:#d1dcd8}
+.student-dashboard .dashlbcard.is-top3 {background:#f7ebe0;border-color:#e4c6a5}
+.student-dashboard .dashlbcard.is-you {border:2px solid var(--teal);background:#eaf2e6;padding:19px 9px 16px}
+.student-dashboard .dashlbcard-name {font-size:.82rem;margin:3px 0}
+.student-dashboard .dashlbcard-pts {font-family:var(--sans);font-size:1.05rem;color:var(--dash-ink)}
+.student-dashboard .dashlbcard-acc {font-size:.73rem;color:#647269}
+.student-dashboard .dashlb-foot {font-size:.75rem;color:#637168}
+
+/* The five established levels and real chart values retain their meaning. */
+.student-dashboard [data-section="level"] {background:linear-gradient(150deg,#f5f9ef,#fffefa 55%)}
+.student-dashboard [data-stage="0"] {--stage-bg:#e8f2e5;--stage-border:#cadfc7;--stage-ink:#3d6c47}
+.student-dashboard [data-stage="1"] {--stage-bg:#e8f3f8;--stage-border:#c3dae6;--stage-ink:#306783}
+.student-dashboard [data-stage="2"] {--stage-bg:#f0ebf8;--stage-border:#daceec;--stage-ink:#685087}
+.student-dashboard [data-stage="3"] {--stage-bg:#faeee3;--stage-border:#ecd3bd;--stage-ink:#8b562f}
+.student-dashboard [data-stage="4"] {--stage-bg:#fbf3d9;--stage-border:#e8d5a1;--stage-ink:#7d5e1d}
+.student-dashboard .dashlevel-badge {background:var(--stage-bg);border-color:var(--stage-border);padding:8px 16px}
+.student-dashboard .dashlevel-badge b {color:var(--stage-ink);font-family:var(--sans);font-size:1rem}
+.student-dashboard [data-stage] .dashstar {color:var(--stage-border)}
+.student-dashboard [data-stage] .dashstar.on {color:var(--stage-ink)}
+.student-dashboard .dashlevel-next {color:#607065;font-size:.82rem}
+.student-dashboard .dashlevel .dashkpis {gap:14px}
+.student-dashboard .dashlevel .dashkpi {background:#ffffff8c;border-color:#e6e9db}
+.student-dashboard .dashlevel .dashkpi-num {font-family:var(--sans);color:var(--dash-ink);font-size:1.85rem}
+.student-dashboard .dashbigbar {height:14px;margin-top:22px;background:#e4e9dc}
+.student-dashboard .dashbigbar>span:not(.dashbarmark) {background:linear-gradient(90deg,#176e60,#7f9f68,#c8a253)}
+.student-dashboard .dashladder {gap:10px;margin-top:20px}
+.student-dashboard .dashladder li {border-color:var(--stage-border);background:var(--stage-bg);padding:13px 6px}
+.student-dashboard .dashladder li.is-now {border-color:var(--stage-ink);box-shadow:inset 0 0 0 1px var(--stage-ink)}
+.student-dashboard .dashladder li i {background:var(--stage-border)}
+.student-dashboard .dashladder li:is(.is-now,.is-done) i {background:var(--stage-ink)}
+.student-dashboard .dashladder li b {font-size:.8rem;color:var(--stage-ink)}
+.student-dashboard .dashchart {position:relative;margin:7px 8px 0 0}
+.student-dashboard .dashline {stroke-width:2.5;stroke:#237d6b}
+.student-dashboard .dashgrid {stroke:#e6e9de;stroke-dasharray:3 4}
+.student-dashboard .dashdot {fill:#fffefa;stroke:#237d6b}
+.dashchart-point {position:absolute;display:grid;place-items:center;width:28px;height:28px;padding:0;margin:0;transform:translate(-50%,-50%);border:0;border-radius:50%;background:transparent;cursor:pointer}
+.dashchart-point span {width:9px;height:9px;border:2px solid #237d6b;border-radius:50%;background:#fffefa;pointer-events:none}
+.dashchart-point:hover span,.dashchart-point[aria-pressed="true"] span {background:#237d6b;box-shadow:0 0 0 4px #237d6b24}
+.student-dashboard .dashchart-detail {font-size:.76rem;color:var(--teal-dark);padding:10px 12px;background:#eff5e9;border-radius:8px;margin:10px 0 0;min-height:38px;line-height:1.45}
+.student-dashboard [data-section="goal"] {
+  background:#fffaf0;border-color:#e9ddc2;
+  --dash-card-art:url('/assets/dashboard-goal-flag.webp') right center / cover no-repeat;
+  --dash-card-art-opacity:.5;
+  --dash-card-art-mask:linear-gradient(90deg,transparent,#000 68%);
+}
+.student-dashboard [data-section="goal"] .acctcard-head {background:#f8efdc}
+.student-dashboard .dashgoal-name {color:var(--dash-ink);font-size:1.28rem}
+.student-dashboard .dashgoal-sub {margin-top:5px;color:#6f7563}
+.student-dashboard .dashgoal-head {margin:16px 0}
+.student-dashboard .dashgoal-line {font-size:.83rem;line-height:1.7;margin-top:14px}
+.student-dashboard .dashgoal .btn {font-size:.86rem;border-radius:10px}
+.student-dashboard .dashstrip {background:#f1f4eb;border-color:#e0e6d5;border-radius:var(--dash-radius);padding:21px 24px;gap:15px}
+.student-dashboard .dashstrip-row+.dashstrip-row {padding-top:16px;border-color:#dde5d2}
+.student-dashboard .dashstrip-pill {background:#fffdf7;border-color:#dce3d4;font-size:.8rem;padding:9px 12px}
+.student-dashboard .dashstrip-pill.is-tool {background:#fffefa;color:var(--teal-dark);border-color:#dce3d4}
+.student-dashboard .dashstrip-pill.is-tool:hover {color:#fff;background:var(--teal)}
+.student-dashboard .dashstrip-lbl {font-size:.65rem}
+.student-dashboard .dashstrip-link {font-size:.78rem}
+
+@media (prefers-reduced-motion:no-preference) {
+  .dashwelcome :is(.dashhero-hi,.dashhero-line) {
+    animation:dash-greeting-arrive 620ms cubic-bezier(.16,1,.3,1) both;
+  }
+  .dashwelcome .dashhero-line {animation-delay:140ms}
+  .dashwelcome .dashhero-name {animation:dash-name-arrive 900ms cubic-bezier(.16,1,.3,1) both,dash-name-warmth 2400ms ease-out}
+  .dashwelcome .dashhero-name::after {animation:dash-underline 1100ms 250ms cubic-bezier(.16,1,.3,1) both}
+  .dashwelcome-avatar {animation:dash-avatar-arrive 1100ms cubic-bezier(.16,1,.3,1) both}
+  .dashwelcome-orbit {animation:dash-orbit 8s linear infinite}
+  .is-orbit-paused .dashwelcome-orbit {animation-play-state:paused}
+  .dashwelcome-motion {display:grid}
+  .student-dashboard .dashwelcome-actions .btn {transition:transform .2s,box-shadow .2s}
+  .student-dashboard .dashwelcome-actions .btn:hover {transform:translateY(-2px);box-shadow:0 6px 15px #17483f20}
+}
+@keyframes dash-greeting-arrive {
+  from {opacity:.65;transform:translateY(5px)}
+  to {opacity:1;transform:translateY(0)}
+}
+@keyframes dash-name-arrive {from{opacity:.25;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes dash-name-warmth {0%,100%{color:var(--teal-dark)}45%{color:#9c762e}}
+@keyframes dash-underline {from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes dash-avatar-arrive {from{opacity:.3;transform:translateY(10px) scale(.94)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes dash-orbit {to{transform:rotate(322deg)}}
+
+@media (max-width:1200px) {
+  .dashwelcome {padding:30px;grid-template-columns:minmax(0,1fr) 190px;gap:20px}
+  .dashwelcome-avatar img {width:140px;height:140px}
+  .student-dashboard .dashstreak {grid-template-columns:1fr}
+  .student-dashboard .dashstreak>.dashnote {grid-column:auto}
+  .student-dashboard .dashweek {margin-top:2px}
+}
+@media (max-width:919px) {
+  .student-dashboard .dashpair {gap:20px}
+  .student-dashboard .dashpair .dashkpis-2 {grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:620px) {
+  .student-dashboard .authwrap {padding-top:10px}
+  .student-dashboard .dashtop {margin-bottom:15px}
+  .student-dashboard .dashtop-title {font-size:1.16rem}
+  .student-dashboard .dashhero {border-radius:18px;margin-bottom:20px}
+  .dashwelcome {padding:25px 20px 24px;grid-template-columns:minmax(0,1fr);gap:18px;text-align:center}
+  .dashwelcome-copy {grid-row:2}
+  .dashwelcome-profile-wrap {grid-row:1;justify-self:center;width:156px;padding:10px 0 0}
+  .dashwelcome-avatar {padding:5px}
+  .dashwelcome-avatar img {width:86px;height:86px}
+  .dashwelcome-orbit {inset:-10px}
+  .dashwelcome-orbit::before {width:15px;height:15px}
+  .dashwelcome-orbit::after {width:5px;height:5px}
+  .dashwelcome-profile-label {margin-top:18px;white-space:nowrap;font-size:.64rem;padding:4px 8px}
+  .dashwelcome-motion {bottom:-3px;right:0}
+  .dashwelcome .dashhero-hi {font-size:1.04rem}
+  .dashwelcome .dashhero-name {font-size:clamp(2rem,8.6vw,3rem);line-height:1.13;padding-bottom:12px;letter-spacing:-.025em}
+  .dashwelcome .dashhero-name::after {left:calc(50% - 25px);width:50px}
+  .dashwelcome .dashhero-line {font-size:.86rem;line-height:1.6;margin:10px auto 0;max-width:37ch}
+  .dashwelcome .dashhero-path {justify-content:center;font-size:.72rem;margin-top:12px}
+  .dashwelcome-actions {justify-content:center;gap:5px;margin-top:19px;flex-direction:column}
+  .dashwelcome-actions .btn {font-size:.8rem;max-width:100%;text-align:left}
+  .dashwelcome-secondary {font-size:.78rem;min-height:38px}
+  .student-dashboard .dashkpis-6 {gap:10px;margin-bottom:20px}
+  .student-dashboard .dashkpis-6 .dashkpi {padding:16px 13px 14px;gap:12px}
+  .student-dashboard .dashkpis-6 .dashkpi-num {font-size:1.8rem}
+  .student-dashboard .dashkpis-6 .dashkpi-lbl {font-size:.78rem}
+  .student-dashboard .dashkpis-6 .dashkpi-sub {font-size:.71rem}
+  .student-dashboard .dashcard {padding:19px 16px;border-radius:16px;margin-bottom:20px}
+  .student-dashboard .acctcard-head {gap:8px;flex-wrap:wrap;margin-bottom:15px}
+  .student-dashboard .acctcard-head h2 {font-size:1.06rem}
+  .student-dashboard .dashpair {gap:20px;margin-bottom:20px}
+  .student-dashboard .dashpair .dashkpi {padding:14px 10px;flex-direction:column;gap:12px}
+  .student-dashboard .dashpair .dashkpi-num {font-size:1.5rem}
+  .student-dashboard .dashkpi-lbl {font-size:.8rem}
+  .student-dashboard .dashkpi-sub {font-size:.74rem}
+  .student-dashboard .dashstreak .dashkpi {flex-direction:column;gap:10px;padding:13px 12px}
+  .student-dashboard .dashweek {gap:5px}
+  .student-dashboard .dashweek span {min-height:41px;border-radius:8px;font-size:.75rem}
+  .student-dashboard .dashlbrow {gap:9px}
+  .student-dashboard .dashlbcard {padding:16px 8px 13px}
+  .student-dashboard .dashlbcard.is-you {padding:15px 7px 12px}
+  .student-dashboard .dashlbcard-ava,.student-dashboard .dashlbcard-ava img {width:56px;height:56px}
+  .student-dashboard .dashlbcard-name {font-size:.77rem}
+  .student-dashboard .dashlbcard-pts {font-size:.97rem}
+  .student-dashboard .dashlevel .dashkpis {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  .student-dashboard .dashlevel .dashkpi {flex-direction:column;padding:14px 10px;gap:12px}
+  .student-dashboard .dashlevel .dashkpi-num {font-size:1.65rem}
+  .student-dashboard .dashladder {grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+  .student-dashboard .dashladder li {padding:11px 4px}
+  .student-dashboard .dashladder li b {font-size:.73rem}
+  .student-dashboard .dashstars {gap:0}
+  .student-dashboard .dashstars svg {width:11px}
+  .student-dashboard .dashstrip {padding:19px 16px}
+  .student-dashboard .dashstrip-items {gap:8px}
+  .student-dashboard .dashstrip-pill {font-size:.75rem}
+}
