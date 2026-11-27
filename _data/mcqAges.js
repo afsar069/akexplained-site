@@ -80,6 +80,15 @@ function fileRev(setId, levels, s) {
   return revs[0];
 }
 
+/* Free set ki files maujood hain? (owner, 2026-11-27)
+   Article ki tarah hi: ek planned FREE set apni question files aate hi live ho jata hai, registry me
+   `live: true` likhe bina — /admin/upload-mcq/ se file chadhti hai, agli build par set khul jata hai.
+   Login/paid set par ye laagu nahi (uske sawal table me hain, file repo me kabhi nahi: rule 15). */
+function freeFilesPresent(setId, levels) {
+  return (levels || []).length > 0 && levels.every((l) =>
+    fs.existsSync(path.join(__dirname, "..", "assets", "questions", setId + "-" + l + ".json")));
+}
+
 const levelsText = (levels) => levels.join(" or ");
 const yearsText = (y) => y.replace("–", " to ");
 
@@ -109,12 +118,18 @@ module.exports = function () {
       if (s.access && !s.live) throw new Error("mcqSpec: " + id + ' has "access" but is not live');
       // Login wale set par hub me "Login needed" ka tag nahi lagta (owner, 2026-11-07): login tab maanga jata hai jab student Start dabata hai.
       const tags = s.levels.map(cap).concat(s.extraTags || []);
+      // Free set: files hain to live. (Registry ka `live: true` bhi chalta hai — purani lines waisi hi.)
+      const isLive = s.access ? !!s.live : (s.live === true || freeFilesPresent(id, s.levels));
       return Object.assign({}, s, {
-        id, live: !!s.live, tags, rev: s.live ? fileRev(id, s.levels, s) : undefined,
+        id, live: isLive, tags, rev: isLive ? fileRev(id, s.levels, s) : undefined,
         topicAttr: s.topics.join(" "), levelAttr: s.levels.join(" "),
         countWords: cap(words(s.count)), levelsText: levelsText(s.levels),
         defaultLevel: s.levels[0],
         titleCase: s.titleCase || s.title,
+        // Owner ne lede na likha ho to set ki apni ginti aur levels se ek saaf line (rule 15:
+        // "use only the file's own setName, topic names, count and levels, and say so").
+        lede: s.lede || (cap(words(s.count)) + " questions on " + s.title.toLowerCase() +
+          ", at " + levelsText(s.levels) + " level."),
       });
     });
     const liveSets = sets.filter((s) => s.live);

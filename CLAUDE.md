@@ -117,7 +117,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 - `download/index.html` — the **Download hub** (owner, 2026-11-19): one page that lists everything a visitor can download, or the page that holds it, **by exam**. Standalone HTML (not templated, so use `<!-- -->` comments, never `{# #}`). Five exam cards (UGC NET / JRF, UP PGT, UP Assistant Professor, BA, MA); a card opens one panel below it, and each panel has the sub-sections **Syllabus**, **Important Books** and **Notes** (`assets/download-hub.js`, styles `.dlx*` at the end of `site.css`). `/download/#dl-net`, `#dl-up-pgt`, `#dl-up-ap`, `#dl-ba`, `#dl-ma` open a panel directly; with no JavaScript every panel is open. Item kinds: a real PDF (teal **Download PDF**, one click, turns green and says "Download again"; today only the two UP PGT syllabus PDFs in `assets/downloads/`, the same files as `/exams/pgt/up-pgt/syllabus-download/`), a link to a page that really exists (**Read** / **Open**), or a dashed non-link **Coming soon** row. Add an item only when the file or page really exists (rule 2): move a Coming soon row up when the owner supplies the file, and add its size line (`PDF · N pages · N KB`). NET Important Books and NET Complete Syllabus are still `available: false` in `_data/netResources.json`; the Important Books, UP Assistant Professor syllabus, and BA / MA syllabus rows are Coming soon too.
 - `video-lessons/index.njk` — the **Video Lessons page** (owner, 2026-11-20): real videos of the AK Explained YouTube channel, listed from `_data/videoLessons.js` (one line per video: YouTube id, topic, title exactly as on YouTube, length; read from the channel with vidIQ). A dark bar **"Choose Your Playlist"** (`.vl-bar`) opens a panel of 11 playlists plus "All lessons" (owner's request: Poems, Novels, Biography, Essays and so on); picking one filters the cards, shows the name and a "More on YouTube" link when the channel has a matching real playlist (`yt` in the `topics` list; ids read through vidIQ, linked by name only), and closes the panel. Cards show 12 at a time with "Show more" (`assets/video-lessons.js`, styles `assets/video-lessons.css`); with no JavaScript the bar is hidden and every video is listed; `/video-lessons/#poems` opens a playlist directly. The four videos on the landing page (`videos` in `assets/home.js`) come first in "All lessons". Each card opens the video on YouTube in a new tab (no embed, so nothing new is collected). Titles are kept as published (typos too, rule 2); each video's playlist was chosen from its title, so move a line to another topic key if one looks wrong. Playlist names do not say "in Hindi" because not every title says it. The page is just the head (`h1` and one line) and then one section, "Browse the lessons" (owner, 2026-11-20: the "Lessons from the channel" text band and its picture were removed; the only YouTube channel link left is the note under the list). The bar is a light teal (`#0F766E` to `#16847A`, white text above 4.5:1), not the dark navy-green it first had. To add lessons, add lines to `rows`; the channel has more videos than the list (not Shorts).
 - `pass/` (the All Access pass page, `assets/pass.js`) and `refund-policy/` — the paid layer's public pages (rule 22).
-- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/articles/` (every article, and the chapters still to write, rule 24, `assets/admin-articles.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
+- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/articles/` (every article, and the chapters still to write, rule 24, `assets/admin-articles.js`), `admin/upload-mcq/` (a FREE MCQ set from its question files, rule 25, `assets/upload-mcq.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog, and **every `/notes/` article, which comes from `_data/notesIndex.js`** (rule 24) — never add a notes line by hand. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
@@ -690,6 +690,7 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
 - **Upload a paper** — `/admin/upload-paper/`, rule 15.
 - **Publish an article** — `/admin/upload-article/`, rule 24.
 - **All articles** — `/admin/articles/`, rule 24.
+- **Free MCQ set** — `/admin/upload-mcq/`, rule 25.
 - **All papers** (`/admin/papers/`) — lists `paper_catalog`; a button flips a set between Live and Draft
   (`update mcq_papers set status=… where set_id=…`; the status-only path skips re-validation; the catalog
   trigger follows). The change is in the database at once. For a **self-serve-published series (rule 17)** this
@@ -1179,3 +1180,48 @@ publishes and the body sent is the whole file; `#` heading, missing description 
 scroll. Four more were added the same day (60 in all): a file named `index_<topic>.md` drops the "index" from the
 suggested address (the owner's generator names files that way, and the first publish was headed for
 `/notes/index-phenomenology-hermeneutics/`), and the planned-address check both ways.
+
+## 25. The free MCQ engine — `/admin/upload-mcq/` (owner, 2026-11-27)
+The owner asked for the article engine's twin for the **free, no-login** MCQ sets ("jo mcqs login ke bahar sbke liye free
+hote hai"). It fits, because a free set is not a database row at all: it is a **public file**, `assets/questions/<setId>-<level>.json`
+(rule 15). So publishing one is publishing a file, exactly like an article — and the same three parts.
+
+**The owner's three choices (2026-11-27):** its **own page**, not a mode of `/admin/upload-paper/` (one wrong click there
+would make paid questions public for good); **only sets already planned** in `_data/mcqSpec.json` — **114 free slots** are
+planned across the British, American and Indian English ages, each with its title, topics, levels and question count, so a
+brand-new set still needs Claude once; and **MCQ sets only for now** — the Daily quiz files (`assets/instant/`) have their own
+shape and are not in this page yet.
+
+**1. A planned free set goes live when its files exist.** `_data/mcqAges.js` now works out a free set's `live` from its level
+files instead of waiting for `"live": true` to be typed (`freeFilesPresent`), the way a chapter's card follows its article
+(rule 24). A typed `live: true` still works. The hub row, the set page, the review page, "Build your own test" and the sitemap
+line are then generated as always, and `_data/mcqPendingSets.js` drops that slot by itself, so the two templates never build
+the same route. When the registry has no `lede`, one is written from the set's own count, title and levels — the fallback
+rule 15 already allows. **An age's card opens too:** `mcq-live-ages.njk` writes `/assets/mcq-live-ages.json` at build (the
+ages with at least one live set) and `assets/mcq.js` merges it, because a free set has no `paper_catalog` row for
+`catalogAges()` to find.
+
+**2. The page** `admin/upload-mcq/index.njk` + `assets/upload-mcq.js`, with a red band at the top: free means open to
+everyone **for good** — it can never become paid, and the owner must tick a box saying so before Publish turns on. The set is
+chosen from the planned slots (`_data/freeMcqSlots.js`, embedded as `#fqPlan` with the master topic ids); a login set is never
+listed. Then the question files, one per level. **Blocking:** a level missing, a file for a level this set does not have, a
+question count that is not the plan's, an id that does not belong to the set or is used twice, not exactly four different
+non-empty options, no right option 0–3, no explanation, a `topicId` that is not in the master list, a `periodId` that is not a
+period, or two questions with the same words. A file that is a bare list of questions is wrapped (the owner's generator does
+that), and the set name, number and level are always taken from the chosen slot, so a file can never land in the wrong set.
+**Preview** shows the first three questions of each file with the right option marked and the tags printed.
+
+**3. The server** is the same Edge Function, `publish-article`, with `action: "publish-questions"` (version 6, 2026-11-27).
+It reads `_data/mcqSpec.json` **from the repo** to confirm the slot is planned and **free** — so a login set's questions can
+never be written as a public file, whatever the browser sends — and the master taxonomy CSV to check every tag, then repeats
+every per-question check and writes the files. Existing files are never replaced without the replace box.
+
+**Why the checks are stricter here than for an article:** a question with a tag that is not in the master stops the whole
+build (`tools/check-topics.js`, rule 12), and free is irreversible. Both gates run, and nothing is written until every file
+has passed.
+
+Browser-tested 2026-11-27 (40 checks): guest and non-admin blocked; the planned sets listed and no login set among them; two
+good files pass and publish, with the right payload; one level missing, a wrong count, a tag that is not real and a question
+with three options each block; the server's refusal says nothing changed and offers the copy-for-Claude text; an
+already-published set says so; 375px has no sideways scroll. The 92 article checks still pass, and the built site is
+unchanged apart from `/admin/`.
