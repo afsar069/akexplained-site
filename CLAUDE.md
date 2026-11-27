@@ -117,7 +117,7 @@ Change the artistic treatment as the literary age advances, drawing on visual tr
 - `download/index.html` — the **Download hub** (owner, 2026-11-19): one page that lists everything a visitor can download, or the page that holds it, **by exam**. Standalone HTML (not templated, so use `<!-- -->` comments, never `{# #}`). Five exam cards (UGC NET / JRF, UP PGT, UP Assistant Professor, BA, MA); a card opens one panel below it, and each panel has the sub-sections **Syllabus**, **Important Books** and **Notes** (`assets/download-hub.js`, styles `.dlx*` at the end of `site.css`). `/download/#dl-net`, `#dl-up-pgt`, `#dl-up-ap`, `#dl-ba`, `#dl-ma` open a panel directly; with no JavaScript every panel is open. Item kinds: a real PDF (teal **Download PDF**, one click, turns green and says "Download again"; today only the two UP PGT syllabus PDFs in `assets/downloads/`, the same files as `/exams/pgt/up-pgt/syllabus-download/`), a link to a page that really exists (**Read** / **Open**), or a dashed non-link **Coming soon** row. Add an item only when the file or page really exists (rule 2): move a Coming soon row up when the owner supplies the file, and add its size line (`PDF · N pages · N KB`). NET Important Books and NET Complete Syllabus are still `available: false` in `_data/netResources.json`; the Important Books, UP Assistant Professor syllabus, and BA / MA syllabus rows are Coming soon too.
 - `video-lessons/index.njk` — the **Video Lessons page** (owner, 2026-11-20): real videos of the AK Explained YouTube channel, listed from `_data/videoLessons.js` (one line per video: YouTube id, topic, title exactly as on YouTube, length; read from the channel with vidIQ). A dark bar **"Choose Your Playlist"** (`.vl-bar`) opens a panel of 11 playlists plus "All lessons" (owner's request: Poems, Novels, Biography, Essays and so on); picking one filters the cards, shows the name and a "More on YouTube" link when the channel has a matching real playlist (`yt` in the `topics` list; ids read through vidIQ, linked by name only), and closes the panel. Cards show 12 at a time with "Show more" (`assets/video-lessons.js`, styles `assets/video-lessons.css`); with no JavaScript the bar is hidden and every video is listed; `/video-lessons/#poems` opens a playlist directly. The four videos on the landing page (`videos` in `assets/home.js`) come first in "All lessons". Each card opens the video on YouTube in a new tab (no embed, so nothing new is collected). Titles are kept as published (typos too, rule 2); each video's playlist was chosen from its title, so move a line to another topic key if one looks wrong. Playlist names do not say "in Hindi" because not every title says it. The page is just the head (`h1` and one line) and then one section, "Browse the lessons" (owner, 2026-11-20: the "Lessons from the channel" text band and its picture were removed; the only YouTube channel link left is the note under the list). The bar is a light teal (`#0F766E` to `#16847A`, white text above 4.5:1), not the dark navy-green it first had. To add lessons, add lines to `rows`; the channel has more videos than the list (not Shorts).
 - `pass/` (the All Access pass page, `assets/pass.js`) and `refund-policy/` — the paid layer's public pages (rule 22).
-- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/articles/` (every article, and the chapters still to write, rule 24, `assets/admin-articles.js`), `admin/upload-mcq/` (a FREE MCQ set from its question files, rule 25, `assets/upload-mcq.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
+- `admin/` — the owner-only admin area (rule 16). `admin/index.html` is the home; the tools are `admin/upload-paper/` (a login paper, rule 15, `assets/upload-paper.js`), `admin/upload-article/` (a notes article from its `.md` file, rule 24, `assets/upload-article.js`), `admin/articles/` (every article, and the chapters still to write, rule 24, `assets/admin-articles.js`), `admin/upload-mcq/` (a FREE MCQ set from its question files, rule 25, `assets/upload-mcq.js`), `admin/upload-daily/` (a corrected Daily quiz, rule 26, `assets/upload-daily.js`), `admin/papers/` (all papers, make Live/Draft), `admin/notify/` (send a dashboard notice), `admin/students/` (who signed up), `admin/reviews/` (moderate reviews), `admin/payments/` (pass price, promo codes, orders; rule 22). The last five plus the home and the nav run on `assets/admin.js`. Every admin page is **noindex, in no menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`**, and shows nothing but "You are not allowed to use this page." to everyone except the logins in `public.paper_admins`.
 - `sitemap.njk` builds `/sitemap.xml`: hand-written lines, except the UP Assistant Professor mock tests, which come from the paper catalog, and **every `/notes/` article, which comes from `_data/notesIndex.js`** (rule 24) — never add a notes line by hand. Pages CMS edits it as "Sitemap" (`.pages.yml`).
 - `CLAUDE.md`, `AGENTS.md`, `docs/` and `tools/` are notes for maintainers: `eleventy.config.js` keeps them out of the published site.
 - `assets/site.css` — everything shared; `eleventy.config.js` syncs the header,
@@ -691,6 +691,7 @@ menu, in no sitemap, and `/admin/` is Disallowed in `robots.txt`.
 - **Publish an article** — `/admin/upload-article/`, rule 24.
 - **All articles** — `/admin/articles/`, rule 24.
 - **Free MCQ set** — `/admin/upload-mcq/`, rule 25.
+- **Correct a Daily quiz** — `/admin/upload-daily/`, rule 26.
 - **All papers** (`/admin/papers/`) — lists `paper_catalog`; a button flips a set between Live and Draft
   (`update mcq_papers set status=… where set_id=…`; the status-only path skips re-validation; the catalog
   trigger follows). The change is in the database at once. For a **self-serve-published series (rule 17)** this
@@ -1225,3 +1226,52 @@ good files pass and publish, with the right payload; one level missing, a wrong 
 with three options each block; the server's refusal says nothing changed and offers the copy-for-Claude text; an
 already-published set says so; 375px has no sideways scroll. The 92 article checks still pass, and the built site is
 unchanged apart from `/admin/`.
+
+## 26. The Daily quiz engine — `/admin/upload-daily/` (owner, 2026-11-27)
+Right after the free MCQ engine the owner asked for the Daily (Quick) quizzes too: "daily quiz wali function add karo
+lekin ek new section admin page par, ek new card means" — so it is **its own page and its own card on `/admin/`**, not a
+mode of another page. It fits for the same reason: a Daily quiz is a **public file**, `assets/instant/<period>-<level>.json`
+(rule 8), so publishing one is publishing a file, like an article (rule 24) or a free MCQ set (rule 25).
+
+**What makes this one different: there is nothing to create.** All 40 banks (20 periods x easy/hard) are already on the
+site, every one 50 questions at rev 1, and each has its hub page written. So the page's job is **correcting a quiz students
+are already using** — a wrong answer, a clumsy sentence, or reasons added later — and it is built around that:
+- **It shows what changes.** On picking a quiz the page fetches the live file and lists, question by question, whose words,
+  options, answer or reason are not the same ("1 question would change, 49 stay exactly as they are"), with a before/after
+  view of the first ten. Nothing is published blind.
+- **Ids are frozen** (rules 8 and 12). A student's saved progress hangs on the question id, so an id that is on the website
+  and not in the file is **blocking** ("Ids are never taken away"), and an id must carry the bank's own prefix — read from
+  the live file, never typed, so this code can never drift from rule 8's prefix table. A genuinely new id is a warning, and
+  it says the quiz page's "100 questions" line needs Claude.
+- **Reasons may be missing, but never lost.** `explanation` is optional in a Daily file and the two Age of Chaucer banks have
+  none (rule 8). So: a file that drops a reason this quiz already shows is blocking; a file that brings reasons to a quiz
+  that has none is allowed with a warning that **the quiz page's own text must be changed by Claude**, because that page
+  today says nothing about reasons.
+- **Two options are allowed** for a True / False question (one of the 2,000 questions is one), four otherwise.
+- **The wrong-file check of rule 8 step 2.** It compares the file with the other level of the same period and blocks it when
+  60% or more of the questions match word for word — the mistake that actually happened once, a "Literature" upload that was
+  the Age questions with the options shuffled.
+- **`rev` rises by itself.** The owner never edits it: a file whose rev is not above the live one is saved at the next number,
+  and a file that names a higher rev keeps it. `bankId`, `period` and `level` are always taken from the chosen quiz, so a
+  file can never land on another quiz. A bare list of questions is wrapped, as on the other two pages.
+
+**The three parts**, as for rule 25: `_data/dailyBanks.js` reads all 40 files and hands the page each bank's name, count,
+rev, id prefix, whether it has reasons and its hub address (every one read from the file or the folder, nothing assumed);
+`admin/upload-daily/index.njk` + `assets/upload-daily.js`; and the same Edge Function `publish-article` with
+`action: "publish-daily"` (version 7, 2026-11-27), which is the real gate — admin check, the file **must already exist**
+(so a brand-new bank cannot be created from a browser), bankId/period/level unchanged, rev above the live one, every
+per-question check, the master taxonomy read from the repo for the tags, no id taken away, no reason lost. The taxonomy
+reader `tools/taxonomy-ids.js` is now shared by this page and the free MCQ page.
+
+**What it does NOT do** (do not tell the owner otherwise): a brand-new Daily bank, including the planned second
+"The Literature" bank of rule 8 — that needs the hub page's words, its topic buttons and its counts, which is Claude's work;
+the Daily hub's own text (how many questions, whether reasons are shown); and a Draft step.
+
+Browser-tested 2026-11-27 (94 checks): guest and non-admin see only "You are not allowed to use this page"; the 40 quizzes
+are listed in 20 groups; picking one reads the live file and reports it; a one-question correction passes, previews
+before/after and sends the right payload at rev 2; an identical file says nothing would change; a missing id, an id of
+another quiz, a repeated id, three options, an unreal topicId, a periodId that is not a period, a lost reason and the other
+level's questions each block; True / False and a new question pass; a bare list is wrapped; a refusal says nothing changed
+and offers the copy-for-Claude text; changing the quiz clears the checks; 375px has no sideways scroll; the nav and the
+`/admin/` card are there. The 92 article and 40 free-MCQ checks still pass, and the built site is unchanged apart from
+`/admin/`.
