@@ -174,6 +174,8 @@ file as each ships.
   band becomes catalog-driven. `up-pgt-mock-test-N` ids already exist in `paper_catalog` (Tests 6–10 live).
 
 ### Series 5 — UGC NET (new ask, 2026-11-14; numbered 4 before the UP PGT MCQ days took that slot)
+> **2026-11-27:** the owner asked for NET mock tests and NET Paper 1 PYQs (free and paid), plus UP PGT paid PYQs and Literary Theory
+> MCQs. The current plan for all four is `docs/future-plans.md` section 7. Note the new blocker for Paper 1: the master taxonomy has no Paper 1 topics.
 - **Already covered:** NET's **"English Literature MCQs"** resource (`_data/netResources.json`) points at
   `/quizzes/mcq/`, which is series 2 — so NET's literature MCQ practice is **already self-serve**. Nothing to do
   there.
