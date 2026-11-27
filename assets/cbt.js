@@ -1407,6 +1407,23 @@
     document.head.appendChild(script);
   }
 
+  /* Let the reader see each chart fill when it comes into view. */
+  function animateResultCharts() {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var charts = $$('.cbt-donut, .cbt-track', root);
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio < 0.25) return;
+        observer.unobserve(entry.target);
+        entry.target.classList.remove('is-motion-pending');
+      });
+    }, { threshold: 0.25 });
+    charts.forEach(function (chart) {
+      chart.classList.add('is-motion-pending');
+      observer.observe(chart);
+    });
+  }
+
   /* ---------- Login/dashboard ki ek patli patti ----------
      Ye hi ek cheez score board par login ki baat karti hai. Guest ko login
      par le jati hai (login -> course chuno -> dashboard). Jo pehle se logged-in
@@ -1837,8 +1854,15 @@
         '<div class="cbt-anrow cbt-anside">' +
           '<div class="cbt-donutwrap cbt-donutbig">' +
             '<svg class="cbt-donut" viewBox="0 0 120 120" aria-hidden="true">' +
-              seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
-              seg(t.skipped, t.right + t.wrong, 'd-skip') +
+              '<defs><mask id="cbtDonutReveal" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">' +
+                '<circle class="cbt-donut-sweep" cx="60" cy="60" r="42" pathLength="100" fill="none" ' +
+                  'stroke="white" stroke-dasharray="100 100" stroke-dashoffset="0"></circle>' +
+              '</mask></defs>' +
+              '<circle class="cbt-donut-track" cx="60" cy="60" r="42"></circle>' +
+              '<g mask="url(#cbtDonutReveal)">' +
+                seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
+                seg(t.skipped, t.right + t.wrong, 'd-skip') +
+              '</g>' +
             '</svg>' +
             '<p class="cbt-donuttxt"><b>' + Q.length + '</b><span>Questions</span></p>' +
           '</div>' +
@@ -1893,13 +1917,13 @@
           '<span>' + (next ? (next.pc - at) + ' more to reach ' + esc(next.label).toLowerCase()
                             : 'the top of the scale') + '</span></p>' +
       '</div>' +
-      '<div class="cbt-track">' +
-        '<span class="cbt-trackfill" style="width:' + at + '%"></span>' +
+      '<div class="cbt-track" style="--cbt-journey-score:' + at + '%">' +
+        '<span class="cbt-trackfill"></span>' +
         marks.map(function (m) {
           return '<span class="cbt-tick' + (at >= m.pc ? ' is-past' : '') + '" style="left:' + m.pc + '%">' +
             '<i></i><b>' + m.pc + '%</b><em>' + esc(m.label) + '</em></span>';
         }).join('') +
-        '<span class="cbt-you" style="left:' + at + '%"><i></i></span>' +
+        '<span class="cbt-you"><i></i></span>' +
       '</div>' +
       '<p class="cbt-scale"><span>0%</span><span>100%</span></p>' +
     '</section>';
@@ -2418,6 +2442,7 @@
      Result ke sab button
      --------------------------------------------------------- */
   function wireResult(t) {
+    animateResultCharts();
     /* Gol agle frame me bharta hai, warna browser shuruati haalat
        dikhata hi nahi aur animation gayab ho jati hai. */
     var ring = $('.cbt-ring .fill');

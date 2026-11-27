@@ -2613,9 +2613,8 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   margin:30px 0 54px;
 }
 .cbt-trackfill{
-  display:block;height:100%;border-radius:999px;
+  display:block;width:var(--cbt-journey-score);height:100%;border-radius:999px;
   background:linear-gradient(90deg,var(--sage),var(--teal));
-  transition:width 1.1s cubic-bezier(.25,.85,.3,1);
 }
 /* Raste ke padav. Jo paar ho gaya wo teal, jo baaki hai wo halka. */
 .cbt-tick{position:absolute;top:50%;transform:translate(-50%,-50%);text-align:center;z-index:1}
@@ -2634,7 +2633,7 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 }
 .cbt-tick.is-past b,.cbt-tick.is-past em{color:var(--teal)}
 /* Jahan reader abhi hai */
-.cbt-you{position:absolute;top:50%;transform:translate(-50%,-50%);z-index:3}
+.cbt-you{position:absolute;top:50%;left:var(--cbt-journey-score);transform:translate(-50%,-50%);z-index:3}
 .cbt-you i{
   display:block;width:24px;height:24px;border-radius:50%;margin:0 auto;
   background:var(--teal);border:4px solid #fff;
@@ -2798,6 +2797,8 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
 .cbt-donutwrap{position:relative;width:132px;height:132px;margin:0 auto 14px}
 .cbt-donut{width:132px;height:132px;transform:rotate(-90deg)}
 .cbt-donut circle{fill:none;stroke-width:15}
+.cbt-donut .cbt-donut-track{stroke:var(--tint)}
+.cbt-donut circle.cbt-donut-sweep{stroke-width:20}
 .cbt-donut .d-ok{stroke:var(--teal)}
 .cbt-donut .d-no{stroke:var(--mcq-red)}
 .cbt-donut .d-skip{stroke:#D9D4C4}
@@ -3013,10 +3014,19 @@ a.agehub-action:hover{border-color:var(--teal);color:var(--teal-dark)}
   .cbt-begin{width:100%}
   .cbt-score-big b{font-size:2.4rem}
 }
+@media screen and (prefers-reduced-motion:no-preference){
+  .cbt-donut,.cbt-track{--cbt-chart-speed:1.25s cubic-bezier(.25,.85,.3,1)}
+  .cbt-donut:not(.is-motion-pending) .cbt-donut-sweep{transition:stroke-dashoffset var(--cbt-chart-speed)}
+  .cbt-track:not(.is-motion-pending) .cbt-trackfill{transition:width var(--cbt-chart-speed)}
+  .cbt-track:not(.is-motion-pending) .cbt-you{transition:left var(--cbt-chart-speed)}
+  .cbt-donut.is-motion-pending .cbt-donut-sweep{stroke-dashoffset:100}
+  .cbt-track.is-motion-pending .cbt-trackfill{width:0}
+  .cbt-track.is-motion-pending .cbt-you{left:0}
+}
 @media (prefers-reduced-motion:reduce){
   .cbt-begin:hover,.cbt-btn:hover,.cbt-submit:hover,.cbt-cell:hover{transform:none}
   /* Gol bina bhare seedha poora dikh jata hai — ginti ka tamasha nahi. */
-  .cbt-ring .fill,.cbt-trackfill{transition:none}
+  .cbt-ring .fill{transition:none}
   .cbt-cup.is-animated .cbt-cup-motion{visibility:hidden}
   .cbt-cup.is-animated img{visibility:visible}
 }

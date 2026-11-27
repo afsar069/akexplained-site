@@ -10,6 +10,7 @@ _Last updated: 2026-11-27 (the free MCQ engine below; the article engine entries
 
 - The proposal is on `codex/result-page-enhancement` for the owner's review. The existing score board keeps its stats, login or dashboard link, question analysis, review actions, PDF, journey and suggestions in their current order.
 - The score card shows an open book below 50%, a progress chart at 50–74%, and a trophy from 75%. The five messages follow the existing thresholds at 30%, 50%, 75% and 90%, using the score after any negative marking. Each illustration plays once through the site's self-hosted Lottie player. The matching WebP is available immediately and stays visible with reduced motion or if the animation cannot load.
+- The question analysis donut reveals its segments clockwise, and the journey bar and score marker travel from 0% to the result together. Each chart plays once when it comes into view. Reduced-motion and print views show the completed charts immediately.
 - The Eleventy build and internal link check passed. Chromium checks covered submission, saved results, review navigation, PDF download, negative marking, the score thresholds and animation fallbacks. The result layout fit widths from 320px to 1440px.
 
 ## Article publish engine — `/admin/upload-article/` — 2026-11-26 (on the branch, NOT merged)
