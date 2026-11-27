@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/narratology/hero.webp
+hero_class: hero-age hero-article-full
 title: Narratology
 description: A guide to narratology, Genette, Bal, Prince, Chatman, narrative time and focalization for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -104,6 +106,15 @@ Frequency compares how often something happens with how often it is narrated. **
 
 **Iterative narration** presents repeated occurrences together in a single account. A narrator who says that Meera took the early train every Monday describes a habit. The discourse refers once to a series of similar actions. Genette gives sustained attention to iterative narration in his study of Marcel Proust.
 
+<figure class="article-illustration criticism-map" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">Genette’s three questions about narrative time</figcaption>
+  <ul role="list">
+    <li><strong>Order</strong>When is the loss of the phone revealed compared with when it happened?</li>
+    <li><strong>Duration</strong>How much space does the text spend on a few minutes of waiting?</li>
+    <li><strong>Frequency</strong>Does the narrator tell one event twice, or describe a recurring event once?</li>
+  </ul>
+</figure>
+
 ### Voice and narrative levels
 
 **Voice** concerns the activity and position of the narrator. The person who writes a novel is its actual author, while its narrator is a role within the narrative. An author can invent a narrator whose knowledge and judgements differ from the author's own. A first-person statement in fiction is therefore not automatically a statement about the novelist's life.
@@ -120,6 +131,14 @@ In Genette's scheme, zero focalization places no consistent restriction on the a
 
 Internal focalization may remain fixed on one character or move between several. Multiple internal focalization can present the same event through different characters. The loss of a phone may appear first through Meera and then through a passenger. A shift of focalization can occur without a change in narrator.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">Voice and focalization can vary independently</figcaption>
+  <ul role="list">
+    <li><strong>Voice · who speaks?</strong>A narrator outside the action tells Meera’s story.</li>
+    <li><strong>Focalization · whose knowledge shapes the account?</strong>The reader knows only what Meera knows about her missing phone.</li>
+  </ul>
+</figure>
+
 ### Important points to remember
 
 - Genette distinguishes story, narrative discourse and narrating.
@@ -134,6 +153,11 @@ Internal focalization may remain fixed on one character or move between several.
 ## Thinkers and texts
 
 ### Gérard Genette and Narrative Discourse
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/narratology/portrait.webp" alt="Painted portrait of Gérard Genette" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Gérard Genette. Modern painted interpretation. <a href="https://www.fabula.org/actualites/91172/hommage-gerard-genette-ehess-ens-paris.html" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Gérard Genette (1930-2018) developed a detailed vocabulary for analysing narrative presentation. His study of narrative discourse first appeared in French as part of *Figures III* in 1972. Jane E. Lewin translated it into English as *Narrative Discourse: An Essay in Method* in 1980. The English edition was published by Cornell University Press.
 
@@ -217,11 +241,38 @@ In 1978, Cornell University Press published Seymour Chatman's *Story and Discour
 
 The station incident can be arranged into a simple chain of events. Meera visits a shop, loses her phone, misses her train and decides to go home. This is one reconstruction of the fabula, assuming that the facts are known. A storyteller may select only part of the chain or alter its order.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/narratology/scene.webp" alt="A young traveller searches her bag beside a train on a station platform." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. The platform can be the first scene in a telling, even though the events started earlier.</figcaption>
+</figure>
+
 If the account begins at the platform, a later memory of the shop can provide an analepsis. If a narrator reports the future consequences early, that passage can provide a prolepsis. Several minutes of waiting may be given in extended dialogue. The journey home may then be omitted through an ellipsis.
 
 A version in the third person can limit the reader to Meera's experience. Her ignorance of the phone's location becomes the reader's ignorance. An account that reports only her movements and words would create a different restriction. Another version could disclose what a shopkeeper knows while Meera remains unaware.
 
 Prince's approach directs attention to who receives each version. A brother speaking to a parent may emphasise reassurance. A journalist addressing a public audience may stress the station delay. Chatman's model helps identify which event changes the chain of actions and which details merely enrich that telling. These are different questions about the same incident.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Meera’s missed train in two orders</figcaption>
+  <div class="theory-diagram-path">
+    <strong>Chronological order</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Visits the shop</li>
+      <li>Loses her phone</li>
+      <li>Misses the train</li>
+      <li>Decides to go home</li>
+    </ol>
+  </div>
+  <div class="theory-diagram-path">
+    <strong>One possible telling</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Misses the train</li>
+      <li>Recalls the shop</li>
+      <li>Recalls leaving the phone</li>
+      <li>Decides to go home</li>
+    </ol>
+  </div>
+</figure>
 
 ### Pip in Great Expectations
 

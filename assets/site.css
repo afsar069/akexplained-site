@@ -351,6 +351,13 @@ strong{color:var(--ink)}
     object-position:90% center;-webkit-mask-image:none;mask-image:none;
   }
   .hero-indian-freedom .pagehead-art{object-position:53% center}
+  .hero-theory-saussure .pagehead-art{
+    height:69%;object-position:76% center;
+    -webkit-mask-image:linear-gradient(#000 0 67%,transparent);
+    mask-image:linear-gradient(#000 0 67%,transparent);
+  }
+  .hero-theory-semiotics .pagehead-art{object-position:76% center}
+  .hero-theory-bakhtin .pagehead-art{object-position:83% center}
   .hero-article-full::after{
     height:auto;bottom:0;
     background:linear-gradient(180deg,rgba(250,245,233,0) 0%,
@@ -548,11 +555,11 @@ details.faq .body p:last-child{margin-bottom:0}
 @media (max-width:640px){
   .article figure.article-illustration--float{float:none;width:100%;max-width:none;margin:24px 0}
 }
-.article .criticism-map{
+.article :is(.criticism-map,.theory-diagram){
   clear:both;padding:18px;background:var(--cream);border:1px solid var(--card-line);border-radius:12px;
   font-family:var(--sans);
 }
-.article .criticism-map figcaption{
+.article :is(.criticism-map,.theory-diagram) figcaption{
   display:table;margin:0 auto;padding:8px 15px;border-radius:8px;
   background:var(--teal-dark);color:#fff;font-size:1rem;font-weight:700;
 }
@@ -573,11 +580,44 @@ details.faq .body p:last-child{margin-bottom:0}
 .criticism-map li:nth-child(even)::before{left:-13px;right:auto}
 .criticism-map strong{display:block;margin-bottom:2px;color:var(--teal-dark)}
 @media (max-width:560px){
-  .article .criticism-map{padding:12px}
-  .article .criticism-map figcaption{margin-left:0;text-align:left}
+  .article :is(.criticism-map,.theory-diagram){padding:12px}
+  .article :is(.criticism-map,.theory-diagram) figcaption{margin-left:0;text-align:left}
   .article .criticism-map ul{grid-template-columns:minmax(0,1fr);padding:14px 0 0 16px}
   .criticism-map ul::before{left:6px}
   .criticism-map li:nth-child(n)::before{left:-11px;right:auto;width:11px}
+}
+.theory-diagram-path{margin-top:14px}
+.theory-diagram-path > strong{display:block;margin-bottom:7px;font-size:.88rem}
+.article .theory-diagram :is(ol,ul){
+  display:grid;grid-auto-flow:column;grid-auto-columns:minmax(0,1fr);gap:10px;
+  margin:14px 0 0;padding:0;list-style:none;
+}
+.article .theory-diagram .theory-diagram-steps{gap:24px;margin-top:0}
+.article .theory-diagram li{
+  position:relative;margin:0;padding:10px 12px;border:1px solid var(--card-line);
+  border-radius:8px;background:var(--card-paper);font-size:.92rem;line-height:1.4;
+}
+.article .theory-diagram li strong{display:block;margin-bottom:3px;color:var(--teal-dark)}
+.article .theory-diagram-steps li{display:grid;align-content:center}
+.theory-diagram-steps li:not(:last-child)::after{
+  content:"";position:absolute;top:50%;left:calc(100% + 7px);width:8px;height:8px;
+  border:solid var(--teal-dark);border-width:2px 2px 0 0;transform:translateY(-50%) rotate(45deg);
+}
+.article .theory-diagram--triad ul{
+  position:relative;isolation:isolate;max-width:465px;margin-inline:auto;
+  grid-auto-flow:row;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 16px;
+}
+.theory-diagram--triad ul::before{
+  content:"";position:absolute;z-index:-1;inset:25% 20% 20%;background:var(--teal-dark);
+  clip-path:polygon(50% 0,100% 100%,0 100%,50% 0,50% 4px,2% calc(100% - 2px),98% calc(100% - 2px),50% 4px);
+}
+.article .theory-diagram--triad li:first-child{grid-column:1/-1;justify-self:center}
+@media (max-width:560px){
+  .article .theory-diagram:not(.theory-diagram--triad) :is(ol,ul){grid-auto-flow:row}
+  .theory-diagram-steps li:not(:last-child)::after{
+    top:calc(100% + 6px);left:50%;transform:translateX(-50%) rotate(135deg);
+  }
+  .article .theory-diagram--triad li{padding:8px}
 }
 .article table{width:100%;border-collapse:collapse;margin:0 0 22px;font-family:var(--sans);font-size:.92rem}
 .article th,.article td{border:1px solid var(--border);padding:9px 12px;text-align:left}

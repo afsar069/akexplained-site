@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/semiotics/hero.webp
+hero_class: hero-age hero-article-full hero-theory-semiotics
 title: Semiotics
 description: A guide to semiotics, Peirce's signs, Eco's interpretation and Barthes's cultural myths for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -87,6 +89,15 @@ Suppose someone sees a muddy footprint outside a classroom. The footprint acts a
 
 Saussure's signified and Peirce's interpretant should therefore not be treated as perfectly interchangeable terms. The former belongs to Saussure's two-sided linguistic model. The latter belongs to a three-part relation and helps explain how one sign leads to further interpretation.
 
+<figure class="article-illustration theory-diagram theory-diagram--triad" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">Peirce’s three-part sign</figcaption>
+  <ul role="list">
+    <li><strong>Sign-vehicle</strong>A muddy footprint.</li>
+    <li><strong>Object</strong>A person’s earlier presence.</li>
+    <li><strong>Interpretant</strong>The understanding that someone passed through recently.</li>
+  </ul>
+</figure>
+
 ### Icon, index and symbol
 
 Peirce distinguishes signs according to how they relate to their objects. His best-known classification contains the **icon**, **index** and **symbol**. These are different grounds on which a sign can represent an object.
@@ -98,6 +109,15 @@ An index represents through a real connection with its object. Smoke can indicat
 A symbol represents through a general rule, habit or convention. A national flag has its significance through recognised social practices. Most ordinary words function symbolically because speakers learn their meaning through shared linguistic rules. A red traffic signal directs drivers to stop through a convention that people are expected to follow.
 
 The three classes should not be treated as rigid boxes for every physical object. A photograph resembles what it depicts and can thus function iconically. A photograph made by light from an actual scene also has an indexical connection with that scene. In a particular setting, the same photograph can express a conventional idea, such as national pride. Peirce's categories describe relations rather than permanent labels attached to things.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">Three ways a sign can stand for something</figcaption>
+  <ul role="list">
+    <li><strong>Icon · resemblance</strong>The drawing of a cup resembles a cup.</li>
+    <li><strong>Index · connection</strong>A wet umbrella may point to recent rain.</li>
+    <li><strong>Symbol · convention</strong>A red traffic signal means stop by an agreed rule.</li>
+  </ul>
+</figure>
 
 ### Semiosis and the growth of meaning
 
@@ -143,6 +163,11 @@ An advertisement may show a luxurious house and connect its image with personal 
 ## Thinkers and texts
 
 ### Charles Sanders Peirce: signs and reasoning
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/semiotics/portrait.webp" alt="Painted portrait of Charles Sanders Peirce" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Charles Sanders Peirce. Modern painted interpretation. <a href="https://commons.wikimedia.org/wiki/File:Charles_Sanders_Peirce.jpg" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Charles Sanders Peirce (1839-1914) was an American philosopher, logician and scientist. He helped establish the philosophical tradition known as pragmatism. His essays "The Fixation of Belief" (1877) and "How to Make Our Ideas Clear" (1878) examine problems of inquiry and the clarification of ideas. His account of signs belongs to this wider concern with how knowledge develops.
 
@@ -227,9 +252,26 @@ An analysis following Eco examines the knowledge needed to understand the shop. 
 
 Barthes's approach directs attention to the advertisement. A family drinking tea provides a recognisable scene, while its presentation may connect the product with domestic affection. If a caption suggests that the tea brings families together, it anchors that reading. The advertisement invites the viewer to accept a social association as if it were a property of the product.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">How the tea advertisement makes a cultural association feel natural</figcaption>
+  <div class="theory-diagram-path">
+    <strong>A Barthesian reading of the advertisement</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Denotation. A family drinks tea.</li>
+      <li>Connotation. The scene suggests affection.</li>
+      <li>Myth. Tea appears to be a natural part of family closeness.</li>
+    </ol>
+  </div>
+</figure>
+
 ### The handkerchief in Shakespeare's Othello
 
 In Shakespeare's *Othello*, the handkerchief associated with Desdemona acquires several kinds of significance. It is a gift connected with her marriage and thus becomes a token of affection and fidelity. Iago uses the handkerchief to encourage Othello to believe that Desdemona has been unfaithful. Its movement between characters becomes central to the developing deception.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/semiotics/scene.webp" alt="A white handkerchief embroidered with strawberries lies on red fabric." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined still life from Shakespeare’s Othello. Iago turns a gift associated with Desdemona’s fidelity into supposed evidence against her.</figcaption>
+</figure>
 
 Othello treats its supposed possession by Cassio as evidence of an affair. In Peirce's terms, he takes it as an index of an event that he believes has occurred. The inference is mistaken because the object has reached Cassio through a different chain of events. The play shows why a sign must be interpreted through knowledge of its actual connections.
 

@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/structuralism/hero.webp
+hero_class: hero-age hero-article-full
 title: Structuralism
 description: A guide to structuralism, Lévi-Strauss, Barthes, Todorov and Greimas for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -33,6 +35,26 @@ next:
 Imagine a story about a village whose only well dries up. A young woman decides to bring water from a distant spring. An elderly farmer shows her a safe path, while a greedy merchant tries to stop her. She reaches the spring and helps her neighbours obtain water again.
 
 Now imagine a Hindi film about a town where a powerful man controls the supply of electricity. A young engineer, helped by a friend, finds a way to restore the supply. The two stories seem to follow a similar pattern. What makes this pattern recognisable? Can a reader describe it without knowing the personal history of either writer?
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">Two stories share a pattern</figcaption>
+  <div class="theory-diagram-path">
+    <strong>The village well</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>The well dries up</li>
+      <li>A woman seeks water with a farmer’s help</li>
+      <li>Villagers gain access to water</li>
+    </ol>
+  </div>
+  <div class="theory-diagram-path">
+    <strong>The electricity supply</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>A powerful man controls the supply</li>
+      <li>An engineer acts with a friend’s help</li>
+      <li>The town’s supply is restored</li>
+    </ol>
+  </div>
+</figure>
 
 **Structuralism** studies the systems of relationships and conventions that make particular texts and cultural practices meaningful. This article in the literary theory and cultural studies series takes up the ideas that grew from structural linguistics. It explains how Claude Lévi-Strauss studied myths, how Roland Barthes read cultural signs and literary texts, and how Tzvetan Todorov and A. J. Greimas studied narrative.
 
@@ -141,6 +163,11 @@ For a student trying to reach a remote examination centre, a bus might be a help
 
 ### Claude Lévi-Strauss: the structure of myths
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/structuralism/portrait.webp" alt="Painted portrait of Claude Lévi-Strauss" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Claude Lévi-Strauss. Modern painted interpretation. <a href="https://journals.openedition.org/lettre-cdf/232" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
+
 Claude Lévi-Strauss (1908-2009) was a French anthropologist. His work applied insights from structural linguistics to cultural systems. In *The Elementary Structures of Kinship*, first published in French in 1949, he investigated rules of kinship and marriage. He approached these relationships as parts of a social system rather than as independent personal choices.
 
 His essay "The Structural Study of Myth" appeared in the *Journal of American Folklore* in 1955. A revised version was included in *Anthropologie structurale* (1958), published in English as *Structural Anthropology* (1963). In the essay, he explores the relationships between units of myth, often known as **mythemes**. A mytheme is a constituent unit of a myth considered through its structural relations.
@@ -168,6 +195,18 @@ Tzvetan Todorov (1939-2017) was a Bulgarian-born literary theorist who worked in
 Todorov uses the analogy of language to describe the components of a story. Characters can be treated rather like nouns, their qualities like adjectives and actions like verbs. A narrative proposition may state that a character is in a particular condition. Another may describe an action that changes that condition. The units can then be studied in terms of the rules connecting them.
 
 His model of equilibrium, disturbance and renewed equilibrium is a way of describing narrative change. It is useful even if the change is unwelcome to a character. A tragic ending can establish a changed condition without solving the original problem happily. The model concerns the organisation of states, not a guarantee of a pleasant outcome.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">Todorov’s model of narrative change</figcaption>
+  <div class="theory-diagram-path">
+    <strong>The village example</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Equilibrium. The well supplies water.</li>
+      <li>Disturbance. The well dries up.</li>
+      <li>Changed equilibrium. Villagers gain access to a spring.</li>
+    </ol>
+  </div>
+</figure>
 
 ### A. J. Greimas: meaning and the actantial model
 
@@ -222,9 +261,23 @@ During the Second World War, Claude Lévi-Strauss went to New York, where he tau
 
 The imaginary story about the dried well can now be read through these different methods. A reader following Lévi-Strauss might examine the contrasts between scarcity and abundance, selfishness and collective welfare. The journey links the village with a distant source of water. The merchant and the farmer respond differently to a common need. Those relations help organise the meaning of the tale.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/structuralism/scene.webp" alt="An older farmer points along a path while a woman stands at a stone well." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. The farmer shows the woman where to look for water after the village well dries up.</figcaption>
+</figure>
+
 A reader following Barthes might notice the associations attached to the elderly farmer. His age and knowledge may suggest experience or wisdom through a cultural code. The merchant's actions create expectations through the proairetic code. The unanswered question of whether the woman will reach the spring belongs to the hermeneutic code. These codes can coexist within a few lines of narration.
 
 Todorov's model identifies the ordinary supply of water as an initial state. The drying of the well disturbs that arrangement. The journey and the discovery lead towards a changed condition in which water is available. Greimas's model treats the woman as the subject and obtaining water as her object. The shared need motivates the quest, the villagers benefit, the farmer helps and the merchant obstructs it.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Greimas’s three axes in the village story</figcaption>
+  <ul role="list">
+    <li><strong>Desire</strong>The woman is the subject. Her object is access to water.</li>
+    <li><strong>Transmission</strong>The need for water is the sender. The villagers who benefit are the receivers.</li>
+    <li><strong>Power</strong>The farmer is the helper. The merchant is the opponent.</li>
+  </ul>
+</figure>
 
 The approaches overlap, but each reveals something different. Todorov's model explains the change of state over time. Greimas's model describes positions and relationships within the action. A Barthesian reading can consider the cultural meanings attached to the roles themselves.
 
