@@ -394,7 +394,7 @@ and never ask the owner for it.**
 
 ## 11. Topic taxonomy
 `topics` is a self-referencing tree with `parent_id` and `kind`
-(`area | period | movement | writer | work | concept`). 1717 rows across 9 areas
+(`area | period | movement | writer | work | concept`). 1738 rows across 9 areas
 (British, American, Indian, New Literatures, Criticism & Theory, Literary Terms,
 Language/ELT, Research Methodology, World Literature). The per-area CSVs the rows were built from are in
 `supabase/data/`. **`supabase/data/taxonomy-master-reference.csv` is the single source
@@ -421,6 +421,7 @@ Butler: `samuel-butler` is the Victorian one and is not to be touched; the autho
 `samuel-butler-hudibras`.
 The Indian area has five genre `period` nodes (`iwe-*`) and, since 2026-11-24, six `period` nodes with the Indian English notes articles' `age:` slugs as ids (rule 3, `quizzes/mcq` note);
 writers and works stay under the genre nodes.
+**Twenty-one thinkers of the live Literary Theory chapters were added on 2026-11-27** (owner: "i approve 21 nodes"; migration `20261127120000_add_theory_thinker_nodes.sql`, also in `taxonomy-criticism.csv`, the master and the tagger skill's copy; tested on a scratch Postgres, applied to the live database and read back, 1717 to 1738 rows, 0 orphans): Husserl, Heidegger, Gadamer, Ricoeur, Schleiermacher, Dilthey, Ingarden, E. D. Hirsch, Bakhtin, Voloshinov, Medvedev, Peirce, Eco, Mukařovský, Bal, Prince, Chatman and Hoggart directly under the area, Rosenblatt and Holland under `reader-response-criticism`, Tynianov under `russian-formalism`. **No school, concept or period node was added** (none was approved); re-parent with one UPDATE if the owner adds a school.
 
 ## 12. Question ids, tagging, and attempt tracking
 - Every question carries a **stable, frozen `id`** — never derived from array position.
@@ -465,7 +466,7 @@ writers and works stay under the genre nodes.
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
-- **Four plans the owner asked for on 2026-11-27, none started** (full text: `docs/future-plans.md` section 7): **UP PGT English PYQs as paid** papers (the three free years 2000, 2002, 2006 stay free); **UGC NET Paper 1 PYQs, free and paid** (blocked first by the taxonomy: it has no Paper 1 topics, and the owner must supply them, rule 11); **UGC NET mock tests** (Paper II English, and Paper 1 if the owner says so); and **Literary Theory MCQs, free and paid**, where the owner wants the **plan made first** (from the chapter articles, as for the American and Indian English sets) before any page or upload slot is built. **That plan is drafted (2026-11-27): `docs/literary-theory-mcq-plan.md`** (8 hubs, 34 sets; nothing is in the registry yet; it waits for the owner's answers in its section 7, and for a decision on 21 missing thinker nodes in the master taxonomy). Ask the owner the "Decisions owed" lines there before building any of them.
+- **Four plans the owner asked for on 2026-11-27, none started** (full text: `docs/future-plans.md` section 7): **UP PGT English PYQs as paid** papers (the three free years 2000, 2002, 2006 stay free); **UGC NET Paper 1 PYQs, free and paid** (blocked first by the taxonomy: it has no Paper 1 topics, and the owner must supply them, rule 11); **UGC NET mock tests** (Paper II English, and Paper 1 if the owner says so); and **Literary Theory MCQs, free and paid**, where the owner wants the **plan made first** (from the chapter articles, as for the American and Indian English sets) before any page or upload slot is built. **That plan is drafted, version 2 (2026-11-27): `docs/literary-criticism-mcq-plan.md`**, after the owner's answers: it covers **every section of the Literary Criticism hub** (History, Literary Theory, Cultural Studies, Indian Poetics, Key Terms), each chapter has **at least 3 sets** (as many as it takes to cover its article, checked by `node tools/criticism-mcq-plan.js --check`), **a chapter whose article is not written is not planned until it is**, New Criticism is a separate small set, **Set 1 of every hub is free and the rest paid**, hub and section keep the names of the Literary Criticism pages, no `periodId`. Ready now: 18 chapters, 62 sets; nothing is in the registry yet and no page or slot is built. The 21 thinker nodes were approved and added the same day (rule 11). Ask the owner the "Decisions owed" lines there before building any of them.
 - **The paid layer** is launched (rule 22): every login paper is paid; the pass goes **On sale** only when the owner ticks it. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`

@@ -136,11 +136,12 @@ registry line plus a build (rules 18 and 23).
   American 5, Indian English 6; `_data/mcqSpec.json`); there are no theory MCQs. The master taxonomy has the area
   *Literary Criticism and Theory* with schools and thinkers (for example structuralism, post-structuralism, psychoanalytic,
   Marxist and feminist criticism, each with writers and concepts under it).
-- **PLAN DRAFTED 2026-11-27: `docs/literary-theory-mcq-plan.md`** (8 hubs, 34 sets, 3,400 questions; 10 sets can be made now because
-  their articles are live, 24 wait for articles; every name in every scope line is checked by `node tools/theory-mcq-plan.js --check`).
-  **Awaiting the owner's answers (its section 7)**, and one blocker found: 21 thinkers named in the ten live chapters have no node in
-  the master taxonomy (Bakhtin, Husserl, Heidegger, Gadamer, Ricoeur, Peirce, Eco and others), so the owner must approve a node batch
-  or accept coarse fallback tags before the first set is made.
+- **PLAN VERSION 2, 2026-11-27: `docs/literary-criticism-mcq-plan.md`** (it replaces version 1, which covered Literary Theory only). The owner answered: cover **every section** of the
+  Literary Criticism hub (History, Literary Theory, Cultural Studies, Indian Poetics, Key Terms); a chapter gets **as many sets as it needs, at least 3**; chapters with no article are **not planned until
+  their article exists**; New Criticism is kept apart from Formalism in one small set; **Set 1 of every hub is free, the rest paid**; hub and section **keep their names** and appear section by section on
+  `/quizzes/mcq/`; no `periodId`. **Ready now: 18 chapters, 62 sets** (History 27, Literary Theory 35); every sub-heading of every article is in exactly one set (`node tools/criticism-mcq-plan.js --check`).
+  **Still to come at the owner's minimum: about 340 sets** (waiting chapters). **The 21 thinker nodes the owner approved are done** (live in the database, 1717 to 1738). Nothing else is built: no registry entry, page or slot.
+  Open for the owner (plan section 7): whether History is meant by "sbko", the free set in the parts that are not complete, and the four school nodes (not approved, not added).
 - **Step 1 is the plan, and nothing else starts until the owner approves it.** Follow the American and Indian English precedent
   (rule 3, `quizzes/mcq`): Claude drafts the plan **from the site's own chapter articles** (every thinker, work and term named in
   a set's one-line scope must be in that article; nothing from outside; checked name by name with a script), and the owner may
