@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/literary-theory-introduction/hero.webp
-hero_class: hero-age hero-article-full
+hero_class: hero-age hero-article-full hero-theory
 title: What is Literary Theory?
 description: A simple guide to literary theory, how it differs from criticism, how it grew and what its main schools ask, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

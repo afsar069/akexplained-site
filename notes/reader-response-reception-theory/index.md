@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/reader-response-reception-theory/hero.webp
+hero_class: hero-age hero-article-full hero-theory
 title: Reader-Response and Reception Theory
 description: A guide to reader-response, reception, implied readers and interpretive communities for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -84,6 +86,18 @@ The **implied reader** is the role or set of reading possibilities structured by
 
 Iser also describes a text's **repertoire**, the familiar literary conventions and social norms it brings into play. A writer may draw upon marriage customs, ideas of duty or conventions of detective fiction. The text's **strategies** organize this material and guide the reader's activity. Familiar norms can appear strange when a novel places them in an unexpected relationship.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">How Iser’s blank works in Asha’s story</figcaption>
+  <div class="theory-diagram-path">
+    <strong>Readers connect the details the story gives them</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li><strong>What the story gives</strong>Asha’s father leaves an envelope and walks away in silence.</li>
+      <li><strong>What the story leaves open</strong>How does his gesture relate to Asha’s departure? The contents remain undisclosed.</li>
+      <li><strong>What readers supply</strong>A reader may connect the gesture to an offer of help or an apology and test that reading against the story.</li>
+    </ol>
+  </div>
+</figure>
+
 ### The horizon of expectations
 
 Asha's father may seem generous to one generation of readers and controlling to another. Hans Robert Jauss calls the historically formed framework of literary expectations the **horizon of expectations**. It includes familiarity with genres, earlier works and distinctions between literary language and ordinary experience. Readers do not approach a new book without any previous knowledge of literature.
@@ -91,6 +105,18 @@ Asha's father may seem generous to one generation of readers and controlling to 
 Consider the audience of a Hindi film advertised as a comedy. Viewers arrive expecting comic situations and perhaps a reassuring conclusion. If the film gradually becomes a serious account of unemployment, those expectations may be unsettled. The original expectation helps the audience recognize the difference between the promised genre and the experience delivered.
 
 Jauss calls the difference between established expectations and the demands of a new work **aesthetic distance**. A text may satisfy the existing horizon, challenge it or help alter it. A work initially found difficult can become familiar after later literature changes the standards of its readers. What once seemed unusual may then become an accepted convention.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">What happens when a work challenges a horizon of expectations</figcaption>
+  <div class="theory-diagram-path">
+    <strong>Jauss’s idea through the example of a Hindi film</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li><strong>Before the film</strong>Publicity for a comedy makes viewers expect comic situations.</li>
+      <li><strong>During the film</strong>The film turns into a serious story about unemployment.</li>
+      <li><strong>After the turn</strong>The gap between expectation and experience helps viewers reconsider what the film is doing.</li>
+    </ol>
+  </div>
+</figure>
 
 ### Communities of readers
 
@@ -152,6 +178,11 @@ A **synchronic** study compares literary works and expectations within a particu
 
 ### Wolfgang Iser: the act of reading
 
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/reader-response-reception-theory/portrait.webp" alt="Painted portrait of Wolfgang Iser" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Wolfgang Iser. Modern painted interpretation. <a href="https://literariness.org/2018/02/12/key-theories-of-wolfgang-iser/" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
+
 Wolfgang Iser (1926-2007) joined the newly established University of Constance in 1967. His *Der implizite Leser* appeared in German in 1972. The English version, *The Implied Reader*, appeared in 1974. *Der Akt des Lesens* followed in 1976, with the English translation *The Act of Reading* in 1978.
 
 Iser's theory of aesthetic response investigates how textual structures produce possibilities for reading. His account of blanks develops ideas from Roman Ingarden, though the two theorists are not identical. For Iser, the gaps between textual perspectives encourage readers to form relationships and adjust their interpretations. The text offers directions without spelling out every connection.
@@ -210,11 +241,27 @@ In the summer of 1971, Fish taught two courses in the same classroom at the Stat
 
 The teacher now asks the class to explain why they interpreted the envelope differently. Under Iser's approach, the students identify where the story requires connections between its details. The father's silence and the withheld contents are particularly significant. The class also checks whether any of its imagined explanations contradict the words of the story.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/reader-response-reception-theory/scene.webp" alt="Asha holds a ticket beside a closed envelope as her father walks away along the platform." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. The father leaves Asha an envelope, and the story withholds what it contains.</figcaption>
+</figure>
+
 Under Jauss's approach, the teacher asks how the story might be received in different historical settings. Readers familiar with stories of parental sacrifice might expect the father to offer help. Readers accustomed to stories of generational conflict might anticipate a very different conclusion. Actual claims about historical audiences, however, would need contemporary evidence rather than speculation alone.
 
 Under Fish's approach, the class examines its own training in interpretation. Students who have learned to look for symbolism may find the train especially important. Those taught to summarize plot may pay attention to its departure instead. These different habits shape the features they treat as meaningful.
 
 Rosenblatt would direct attention towards the particular encounter with the text. Holland's theory would encourage a researcher to explore recurring patterns across the responses of particular readers. No single statement about the envelope would justify a psychological diagnosis. The theories give the teacher different ways of asking why a reading developed.
+
+<figure class="article-illustration criticism-map" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Five questions about Asha’s envelope</figcaption>
+  <ul role="list">
+    <li><strong>Iser · the text’s blanks</strong>Which details must the reader connect to make sense of the father’s gesture?</li>
+    <li><strong>Jauss · the historical audience</strong>What might readers familiar with stories of parental sacrifice expect?</li>
+    <li><strong>Fish · shared reading practices</strong>Why do some readers attend to the train as a symbol while others track the plot?</li>
+    <li><strong>Rosenblatt · the reading event</strong>How does this particular reading situation shape the student’s experience?</li>
+    <li><strong>Holland · recurring personal patterns</strong>Does a theme such as separation recur in the same reader’s responses to several stories?</li>
+  </ul>
+</figure>
 
 ### A literary example: Great Expectations
 

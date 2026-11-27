@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/phenomenology-hermeneutics/hero.webp
+hero_class: hero-age hero-article-full hero-theory
 title: Phenomenology and Hermeneutics
 description: A guide to phenomenology, hermeneutics, experience and interpretation through four major philosophers, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -70,6 +72,14 @@ Intentionality does not mean having an intention to perform an action. It descri
 
 In *Ideas I* (1913), Husserl uses the terms **noesis** and **noema** to analyse intentional experience. Noesis concerns the intentional act, such as perceiving or remembering. Noema concerns the object as meant or presented in that act. The same letter can be perceived, remembered or imagined, but these are different modes of experiencing it.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">Two aspects of Meera’s experience of the letter</figcaption>
+  <ul role="list">
+    <li><strong>Noesis · the act</strong>Meera sees the letter or remembers seeing it.</li>
+    <li><strong>Noema · what the act presents</strong>The letter as seen on the table or as recalled later.</li>
+  </ul>
+</figure>
+
 ### The epoché and the phenomenological reduction
 
 Ordinarily, people deal with things without investigating how those things appear to them. Husserl calls this everyday stance the **natural attitude**. The **epoché**, also called bracketing, suspends the ordinary unquestioned commitment to the world as simply given. It does not declare that the world is unreal or that external objects do not exist.
@@ -98,6 +108,18 @@ Heidegger gives the circle a more fundamental significance. Interpretation alway
 
 Gadamer develops this historical dimension of understanding. The reader brings inherited assumptions to a text, but the encounter can challenge those assumptions. A responsible interpretation therefore involves more than confirming what one expected to find. It remains open to the possibility that the work will answer a question in an unexpected way.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">The hermeneutic circle in practice</figcaption>
+  <div class="theory-diagram-path">
+    <strong>The parts and the whole can change how Meera reads the letter</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li><strong>Start with a first impression</strong>Meera reads the letter as a story of adventure.</li>
+      <li><strong>Read a detail in context</strong>The writer’s fear points to a painful separation.</li>
+      <li><strong>Revisit the whole letter</strong>The new reading changes how Meera understands the earlier details, which she can now reread.</li>
+    </ol>
+  </div>
+</figure>
+
 ### From a spoken word to a written text
 
 Ricoeur draws attention to the difference between a conversation and writing. In conversation, the speaker may clarify a confusing sentence immediately, and both people may share a situation. Writing allows discourse to travel beyond its original occasion. Its later readers may live in circumstances very different from those of the writer.
@@ -118,6 +140,11 @@ Ricoeur calls the productive distance created by writing **distanciation**. Such
 ## Thinkers and texts
 
 ### Edmund Husserl (1859-1938)
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/phenomenology-hermeneutics/portrait.webp" alt="Painted portrait of Edmund Husserl" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Edmund Husserl. Modern painted interpretation. <a href="https://commons.wikimedia.org/wiki/File:Edmund_Husserl_1910s.jpg" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Husserl was trained in mathematics before developing his philosophical work. His *Logical Investigations* challenges attempts to ground logical validity simply in empirical facts about human psychology. His criticism of **psychologism**, the reduction of logical principles to psychological facts, distinguishes the validity of a truth from someone's mental act of recognising it. Different people can grasp the same mathematical proposition at different times.
 
@@ -199,11 +226,26 @@ In 1922, Gadamer completed a dissertation on pleasure in Plato's dialogues at Ma
 
 At the beginning, Meera thought her grandmother's journey was an adventure. A phenomenological inquiry begins by noticing how the journey becomes present to her through reading. The text awakens imagined sights, remembered sounds and expectations about what will happen next. It allows an absent event to become the object of present consciousness.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/phenomenology-hermeneutics/scene.webp" alt="Meera and her grandmother look at an old letter beside an open wooden box." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. Meera and her grandmother read the same letter through different experiences of leaving home.</figcaption>
+</figure>
+
 A Heideggerian reading turns towards the grandmother's practical world. The train is a means of leaving a familiar place and entering unfamiliar circumstances. Her worry belongs to her relations with home, family and future possibilities. Those relationships give the journey a meaning that a timetable cannot express.
 
 A Gadamerian reading examines the difference between the women's historical situations. Meera's knowledge of independent travel shapes her first interpretation, while the grandmother's experience belongs to another setting. Listening to the grandmother allows Meera to question her initial assumption. Their understanding can develop without pretending that the difference between their lives has disappeared.
 
 A Ricoeurian reading attends to how the letter has selected and arranged events. It asks what world the written account opens to readers and what its omissions might signify. The departure may become part of a larger story about independence or responsibility. A suspicious reading could examine whether family expectations were left unspoken, but would need evidence before claiming this.
+
+<figure class="article-illustration criticism-map" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Four ways to read the same letter</figcaption>
+  <ul role="list">
+    <li><strong>Husserl</strong>How does the absent journey become present to Meera as she reads?</li>
+    <li><strong>Heidegger</strong>What makes the station meaningful to someone leaving home?</li>
+    <li><strong>Gadamer</strong>How does the conversation with her grandmother change the expectations Meera brings to the letter?</li>
+    <li><strong>Ricoeur</strong>How does the written account arrange events and open the journey to a later reader?</li>
+  </ul>
+</figure>
 
 ### A literary example: Mrs Dalloway
 
