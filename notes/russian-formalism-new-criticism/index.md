@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/russian-formalism-new-criticism/hero.webp
+hero_class: hero-age hero-article-full
 title: Russian Formalism and New Criticism
 description: Russian Formalism, defamiliarization, literary devices and New Criticism explained for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -102,6 +104,18 @@ Unexpected expression can slow perception. Difficulty matters when it renews att
 
 Defamiliarization is broader than the use of unusual words. An ordinary sentence can become strange when spoken by an unexpected narrator. Familiar social customs may appear odd when they are described from the viewpoint of someone outside that society. A writer can even make a familiar literary convention strange by deliberately breaking it.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">How defamiliarization renews attention</figcaption>
+  <div class="theory-diagram-path">
+    <strong>The ceiling fan example</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Habit lets readers pass quickly over the word fan</li>
+      <li>A child sees three arms that cannot stop turning</li>
+      <li>Readers slow down and notice the movement again</li>
+    </ol>
+  </div>
+</figure>
+
 ### Practical language and the poetic function
 
 An early Formalist distinction is that between **practical language**, used primarily to communicate information, and **poetic language**, which draws special attention to its own organisation. This distinction concerns the way language is used. It does not mean that poetry and ordinary speech have entirely separate dictionaries.
@@ -121,6 +135,26 @@ Imagine a story about a farmer who loses a bag of money. First he visits a bank,
 A **flashback** presents an earlier event after a later one. Delaying information can create suspense.
 
 The distinction helps a critic explain why a summary is not a substitute for a story. A summary can remove the delays that make a story interesting. The narrative's method of presenting events is itself part of what needs to be studied.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">The farmer’s missing bag in two orders</figcaption>
+  <div class="theory-diagram-path">
+    <strong>Fabula · the order of events</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Visits the bank</li>
+      <li>Takes a bus</li>
+      <li>Notices the bag is missing</li>
+    </ol>
+  </div>
+  <div class="theory-diagram-path">
+    <strong>Syuzhet · one possible order of telling</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>Searches for the bag</li>
+      <li>The story flashes back to the bank</li>
+      <li>The earlier bus ride is shown</li>
+    </ol>
+  </div>
+</figure>
 
 ### Literary change and the dominant
 
@@ -143,6 +177,11 @@ The later Formalists gave increasing attention to the relations between devices.
 ## Thinkers and texts
 
 ### Viktor Shklovsky (1893-1984)
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/russian-formalism-new-criticism/portrait.webp" alt="Painted portrait of Viktor Shklovsky" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Viktor Shklovsky. Modern painted interpretation. <a href="https://www.litfund.ru/auction/77/220/" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Shklovsky helped establish the Formalist study of artistic devices. In "Art as Technique", he considers the ways writers remove objects from familiar habits of perception. His examples include the work of the Russian novelist Leo Tolstoy. Instead of treating artistic expression simply as a means of expressing ideas, Shklovsky studies the experience produced by its construction.
 
@@ -229,6 +268,11 @@ In December 1928, Yuri Tynianov travelled to Prague, where Roman Jakobson was ac
 
 Return to the student on the bus. The story makes a railway crossing look different by describing the waiting people on both sides. It presents the gate as a division between two worlds rather than merely naming it. A Formalist reading begins by identifying how the passage changes perception.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/russian-formalism-new-criticism/scene.webp" alt="A student inside a bus looks through a rain-streaked window at people waiting at a railway crossing." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. A routine level crossing becomes a boundary between two worlds in the student’s story.</figcaption>
+</figure>
+
 The first device is a metaphor, or a comparison made through the language of one thing applied to another. By making the gate a boundary between worlds, the writer draws attention to something ordinarily ignored. The second device is the delay in naming the object. Readers must make sense of the scene before they discover precisely where the people are standing.
 
 Suppose the story opens with the traffic already stopped. Only later does it describe the approaching train that caused the gate to close. The critic can then distinguish the fabula from the syuzhet. The order of the actual events differs from the order in which the story gives readers information.
@@ -269,6 +313,14 @@ Habib, in *A History of Literary Criticism* (2005), also examines the difficulty
 Cleanth Brooks's *The Well Wrought Urn* (1947) treats the relationships among the elements of poetry. His idea of the **heresy of paraphrase** challenges the belief that a poem's meaning can be adequately replaced by a prose summary. Wimsatt and Beardsley describe two critical errors. The **intentional fallacy** treats the author's private intention as the standard for judging the work. The **affective fallacy** judges the work by its emotional effects on readers. Their essays appeared in 1946 and 1949 respectively.
 
 Habib distinguishes the schools by their main interests. The Russian Formalists were particularly concerned with general principles of literary construction and the evolution of techniques. The New Critics concentrated more on interpreting individual works, especially poems, and examining how their parts form a whole. Both approaches attend closely to form, but they are not two names for the same movement.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Two approaches to literary form</figcaption>
+  <ul role="list">
+    <li><strong>Russian Formalism</strong>Studies how devices produce literary effects and how those devices change over time.</li>
+    <li><strong>New Criticism</strong>Uses close reading to see how the parts of an individual work, especially a poem, form a whole.</li>
+  </ul>
+</figure>
 
 ### What lasted and what came next
 

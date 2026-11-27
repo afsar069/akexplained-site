@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/literary-theory-introduction/hero.webp
+hero_class: hero-age hero-article-full
 title: What is Literary Theory?
 description: A simple guide to literary theory, how it differs from criticism, how it grew and what its main schools ask, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -28,6 +30,11 @@ next:
 
 Imagine a short story about a girl in a small town in Uttar Pradesh. She wakes before everyone else to make tea and pack her brother's tiffin before he leaves for coaching classes. She studies late at night, after the last plate has been washed. When the examination results arrive, her name stands at the top of the district list.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/literary-theory-introduction/scene.webp" alt="A student writes by lamplight beside a stack of clean plates." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. A student in Uttar Pradesh finds time to study after finishing the housework.</figcaption>
+</figure>
+
 Give this story to four readers. The first admires the girl and asks why she never complains. The second asks who does the housework and who gets the money for coaching. The third notices an old pattern, in which an overlooked child passes a hard test and rises. The fourth listens for what the girl never says, such as jealousy of her brother.
 
 All four have read the same words, but their questions differ. Behind each question lie ideas about what a story is, where its meaning comes from and what deserves attention. **Literary theory** studies ideas of this kind. Our earlier series followed the history of English literary criticism, and this new series turns to literary theory and cultural studies. It begins by asking what theory is, how it rose and why some scholars have opposed it.
@@ -43,6 +50,18 @@ Vince Brewton, writing in the *Internet Encyclopedia of Philosophy*, offers a cl
 For Brewton, theory does not state the meaning of a particular work. It is an account of the principles, or tools, with which readers try to understand literature. He also holds that all literary interpretation rests on some basis in theory.
 
 A simple case shows why. One student praises a novel because every part fits into a single design, while another praises it for showing the lives of poor workers honestly. The first trusts that unity marks good art, and the second trusts that fiction should tell the truth about society. Theory brings such beliefs into the open. It asks where meaning comes from, what makes writing literature and how far class, race and gender matter.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">How a judgement reveals a theory</figcaption>
+  <div class="theory-diagram-path">
+    <strong>Example from the novel</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>The events fit together closely</li>
+      <li>A reader praises the unity of the novel</li>
+      <li>That judgement assumes unity is a mark of good art</li>
+    </ol>
+  </div>
+</figure>
 
 ### Where the word comes from
 
@@ -258,6 +277,16 @@ A Marxist critic turns to work and money. The girl seems to receive no pay for h
 A psychoanalytic critic follows desire, rivalry and guilt in what the girl never says about her brother. A reader-response critic watches the gaps, since the story does not tell what she thinks at night. Abrams reports that for Wolfgang Iser a literary text always contains gaps, which the reader fills by taking a creative part.
 
 A new historicist, in Abrams's account, attends mainly to the historical and cultural conditions of a text. Such a critic may read this story beside newspaper reports or school notices of its time about daughters' education. No reading wins merely because it carries a famous name. If the story never mentions the cost of coaching, a Marxist reader must show why that silence matters.
+
+<figure class="article-illustration criticism-map" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">One story, four ways to read it</figcaption>
+  <ul role="list">
+    <li><strong>Formalist or structuralist</strong>What familiar plot pattern does the overlooked girl’s success follow?</li>
+    <li><strong>Marxist</strong>Who does unpaid work, and who gets the money for coaching?</li>
+    <li><strong>Feminist</strong>Does the story present silent service as a girl’s duty?</li>
+    <li><strong>Psychoanalytic</strong>What might the girl’s silence suggest about resentment or rivalry?</li>
+  </ul>
+</figure>
 
 ### Reading a theory with care
 

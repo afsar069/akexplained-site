@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/bakhtin-dialogism/hero.webp
+hero_class: hero-age hero-article-full hero-theory-bakhtin
 title: Bakhtin and Dialogism
 description: A guide to Bakhtin's dialogism, polyphony, heteroglossia, carnival and chronotope for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -35,6 +37,11 @@ Everyone is speaking about education, yet the word carries a different history f
 ## Where dialogism came from
 
 ### A thinker in a changing Russia
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/bakhtin-dialogism/portrait.webp" alt="Painted portrait of Mikhail Bakhtin" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Mikhail Bakhtin. Modern painted interpretation. <a href="https://h5.ifeng.com/c/vivo/v002ZvyQN-_3nh1b70dJhZocUajdroLbt7zCibGXD543od6I__" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Mikhail Mikhailovich Bakhtin (1895-1975) was a Russian thinker whose work joined philosophy, language and literary criticism. He lived through the Russian Revolution of 1917 and the growth of the Soviet state. These events formed the historical world in which he developed his ideas. His writings, however, cannot be reduced to a simple response to one political event.
 
@@ -91,6 +98,14 @@ Dialogism is thus wider than a conversation printed between quotation marks. A p
 
 **Monologism** describes an orientation that treats one consciousness or position as the final authority over others. A monologic novelist may allow a character to speak but explain away everything that character says. The character becomes an object of judgement rather than a consciousness with its own position. Bakhtin's contrast concerns the organisation of voices, not simply the number of speakers.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">Two ways to organise the tea-stall debate</figcaption>
+  <ul role="list">
+    <li><strong>Dialogism</strong>The teacher’s statement invites an answer, and the student’s reply changes how readers hear it.</li>
+    <li><strong>Monologism</strong>The narrative supplies a final judgement that all the other voices serve.</li>
+  </ul>
+</figure>
+
 ### Polyphony: a novel with independent voices
 
 In his book on Dostoevsky, Bakhtin uses the term **polyphony**, borrowed from music. In polyphonic music, distinct melodic lines can be heard together without merging into a single melody. Bakhtin applies the analogy to novels in which different consciousnesses retain their independence. Their interaction gives the work its artistic unity, without making them all expressions of one judgement.
@@ -114,6 +129,15 @@ Bakhtin describes two tendencies operating within language. **Centripetal forces
 **Parody** is an important case, since it imitates another discourse while introducing a different intention. Bakhtin also discusses hidden polemic, in which a statement is shaped by an opposing voice that remains unspoken. A person who repeatedly defends his generosity may be answering an accusation the reader never hears. The absent voice can thus shape the form of present speech.
 
 Polyphony and heteroglossia should not be confused with double-voiced discourse. The last term describes a relationship within particular uses of language. Heteroglossia describes social speech diversity, while polyphony describes an artistic organisation of independent consciousnesses. The three ideas are connected, but each directs attention to a different feature of the novel.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">Three features to listen for in a novel</figcaption>
+  <ul role="list">
+    <li><strong>Heteroglossia</strong>Different social languages, such as the speech of a teacher and the speech of a tea seller.</li>
+    <li><strong>Double-voiced discourse</strong>A student repeats the teacher’s words, making one phrase carry both the teacher’s claim and her doubt.</li>
+    <li><strong>Polyphony</strong>The novel gives distinct consciousnesses room to speak without settling their debate for them.</li>
+  </ul>
+</figure>
 
 ### The chronotope and the meeting of worlds
 
@@ -180,6 +204,18 @@ The English collection *Speech Genres and Other Late Essays* appeared in 1986. I
 
 Bakhtin calls these relatively stable forms **speech genres**. **Primary speech genres** arise in comparatively simple everyday communication, such as a greeting or a casual conversation. **Secondary speech genres** arise in more complex cultural communication, as in novels and scientific works. A novel can absorb everyday speech genres and give them a changed function within its larger structure.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">How an everyday speech genre can enter a novel</figcaption>
+  <div class="theory-diagram-path">
+    <strong>A primary genre within a secondary genre</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li>A greeting ordinarily opens a conversation</li>
+      <li>A novelist places the greeting in a scene</li>
+      <li>The wording of the greeting can now show tension between characters</li>
+    </ol>
+  </div>
+</figure>
+
 ### An interesting story
 
 The history of the Dostoevsky book is itself a story of delayed publication and rediscovery. Its first version appeared in Leningrad in 1929, during a difficult period for independent intellectual work. Bakhtin experienced arrest and exile, and his writing was little known for years. In the 1950s and early 1960s, renewed scholarly interest helped bring his earlier work back into discussion. The enlarged Russian edition finally appeared in Moscow in 1963. Caryl Emerson later described the history of the two editions in her preface to the 1984 English translation. The book reached new generations of readers through a process that had taken decades.
@@ -224,6 +260,11 @@ The history of the Dostoevsky book is itself a story of delayed publication and 
 ### Back at the tea stall
 
 The tea stall from the opening now looks like a small meeting place of social languages. The teacher's expressions carry the language of educational institutions. The student speaks with the expectations of a job seeker, while the tea seller speaks from experience of work. Their statements reveal heteroglossia because they bring different social worlds into contact.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/bakhtin-dialogism/scene.webp" alt="Three people talk around a tea counter outside an Indian college." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. The college tea stall brings distinct social voices into the same conversation.</figcaption>
+</figure>
 
 Suppose the student repeats the claim that education brings freedom while looking at her unpaid fees. The statement now carries both the teacher's promise and the student's doubt. This is an example of double-voiced discourse. A reader must hear the earlier claim within the later repetition to understand the change of meaning.
 

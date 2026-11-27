@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/literary-theory-saussure/hero.webp
+hero_class: hero-age hero-article-full hero-theory-saussure
 title: Saussure and Structural Linguistics
 description: A guide to Saussure, linguistic signs, langue and parole, and structural linguistics for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -91,6 +93,14 @@ Saussure made langue the principal object of his linguistic inquiry. It does not
 
 The wider French term *langage* refers to language in its broad sense, including the varied aspects of human language activity. The distinction among these terms helps a reader understand why Saussure limits the object of his investigation. He wants to isolate a coherent system without claiming that individual speech is unimportant.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">The language system and an instance of speech</figcaption>
+  <ul role="list">
+    <li><strong>Langue</strong>Shared vocabulary and grammar let people understand a request.</li>
+    <li><strong>Parole</strong>Asking for a kilo of potatoes is one use of that shared system.</li>
+  </ul>
+</figure>
+
 ### The linguistic sign
 
 Saussure rejects the view that language is simply a list of names attached to objects. For him, a **linguistic sign** unites two psychological elements. One is the **signifier**, or sound pattern that a speaker recognises or mentally recalls. The other is the **signified**, or concept associated with that pattern.
@@ -100,6 +110,14 @@ Consider the word *tree*. A reader can silently recall its sound without making 
 The **referent** is the person, object or other entity to which an expression refers in a particular use. Saussure's two-part sign does not include the referent as a third component. This distinction explains why people can use words for imaginary beings or absent objects. A person can understand the word *unicorn* without meeting such a creature.
 
 The two parts of the sign must be understood together. A sound pattern that carries no recognised concept is not a linguistic sign for the person hearing it. Conversely, the signified in this model is a concept as articulated through a language. The sign is the union of the two, rather than the signifier alone.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">The linguistic sign joins two parts</figcaption>
+  <ul role="list">
+    <li><strong>Signifier</strong>The sound pattern you recognise when you hear or silently recall “tree”.</li>
+    <li><strong>Signified</strong>The concept of a tree that the sound pattern calls to mind.</li>
+  </ul>
+</figure>
 
 ### The arbitrary nature of the sign
 
@@ -149,6 +167,14 @@ Later structural linguistics commonly uses **paradigmatic relation** for relatio
 
 Literary writers continually choose among possible alternatives and combine the choices into sequences. A poet may choose *home* instead of *house* because the words carry different associations. A critic can investigate that choice alongside the words that actually surround it. The two kinds of relation thus help explain how language creates literary effects.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Combining words and choosing words</figcaption>
+  <ul role="list">
+    <li><strong>Syntagmatic relation</strong>In “The child reads a book”, child occurs alongside reads in the sentence.</li>
+    <li><strong>Associative relation</strong>Hearing child may bring absent words such as student or reader to mind.</li>
+  </ul>
+</figure>
+
 ### Important points to remember
 
 - Langue is the shared language system; parole is individual language use.
@@ -163,6 +189,11 @@ Literary writers continually choose among possible alternatives and combine the 
 ## Thinkers and texts
 
 ### Saussure and the Course
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/literary-theory-saussure/portrait.webp" alt="Painted portrait of Ferdinand de Saussure" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Ferdinand de Saussure. Modern painted interpretation. <a href="https://www.tdg.ch/lunige-honore-le-linguiste-ferdinand-de-saussure-531152843658" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Ferdinand de Saussure lived from 1857 to 1913. He was a Swiss linguist who taught three courses in general linguistics at the University of Geneva between 1907 and 1911. These lectures provided the material for the book that later made him famous among students of literary theory.
 
@@ -228,6 +259,11 @@ When Saussure was given responsibility for teaching general linguistics at Genev
 ### Back to the vegetable market
 
 The boy at the market uses a language whose conventions already exist. His actual request belongs to parole, while the shared knowledge that allows the seller to understand it belongs to langue. The words *aloo* and *potato* demonstrate that similar concepts can be expressed through different signifiers.
+
+<figure class="article-illustration">
+  <img src="/assets/articles/literary-theory-saussure/scene.webp" alt="Two boys speak with a vegetable seller, with baskets of potatoes and onions in front of them." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined market scene. The seller can recognise both “aloo” and “potato” when the boys ask for the same vegetable.</figcaption>
+</figure>
 
 The seller distinguishes a request for potatoes from a request for onions because the terms contrast within the vocabulary. The words in the request also form a sequence. A change in quantity or vegetable name may alter what the customer receives. A structural analysis makes visible these relations that speakers normally use without noticing them.
 
