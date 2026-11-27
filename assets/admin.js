@@ -64,6 +64,7 @@
     { page: 'article', label: 'Publish an article', href: '/admin/upload-article/' },
     { page: 'articles', label: 'All articles', href: '/admin/articles/' },
     { page: 'freemcq', label: 'Free MCQ set', href: '/admin/upload-mcq/' },
+    { page: 'daily', label: 'Correct a Daily quiz', href: '/admin/upload-daily/' },
     { page: 'papers', label: 'All papers', href: '/admin/papers/' },
     { page: 'notify', label: 'Send a notice', href: '/admin/notify/' },
     { page: 'students', label: 'Students', href: '/admin/students/' },

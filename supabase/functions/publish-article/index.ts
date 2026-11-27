@@ -1,9 +1,12 @@
 // publish-article — admin ke browser se site ke repo me likhne wala hissa
-// (owner, 2026-11-26: "admin page par jo article publish kar de"; 2026-11-27: free MCQ set bhi).
+// (owner, 2026-11-26: "admin page par jo article publish kar de"; 2026-11-27: free MCQ set bhi,
+// aur usi din Daily quiz bhi: "daily quiz wali function add karo lekin ek new section admin page par").
 //
-// Do kaam:
+// Teen kaam:
 //   * /admin/upload-article/ se aaya markdown notes/<slug>/index.md par, aur uski tasveerein assets/ me.
 //   * /admin/upload-mcq/ se aayi FREE MCQ set ki file(s) assets/questions/<setId>-<level>.json par.
+//   * /admin/upload-daily/ se aayi Daily quiz ki file assets/instant/<period>-<level>.json par —
+//     sirf us file par jo pehle se maujood hai (naya bank page ka text bhi maangta hai, rule 8).
 // Cloudflare Pages `main` ko dekhta hai, isliye likhne ke 2-3 minute baad page asli static page ban kar
 // live ho jata hai — Google ke liye indexable. (MCQ ka LOGIN paper database se turant khulta hai: wo
 // is page ka kaam nahi, uske sawal repo me kabhi nahi jate. CLAUDE.md rule 15, 17, 24.)
@@ -12,11 +15,14 @@
 //   "read"              ek published article ka text wapas (sudharne ke liye)
 //   "publish"           article + uski tasveerein
 //   "publish-questions" ek free MCQ set ki file(s)
+//   "publish-daily"     ek chal rahe Daily quiz ki nayi file
 // Asli jaanch YAHAN hoti hai (browser ka code bypass ho sakta hai):
 //   1. token valid hai? (getUser)   2. us login ka row public.paper_admins me hai?
 //   3. article: folder, slug, front matter, <script>, 400 KB; tasveer: /assets/....webp, 200 KB, 10 tak
 //   4. free MCQ: set registry me PLAN hai aur FREE hai, har question ke 4 option, sahi jawab, explanation
 //      aur asli topicId/periodId (master taxonomy repo se padhi jati hai)
+//   5. Daily: file pehle se hai, bankId/period/level wahi, rev aage, ids jami hui (koi id gayab nahi,
+//      prefix wahi), 4 ya 2 option (True/False), aur jo reasons site par hain wo kho na jaayein
 //
 // Secret (Supabase -> Edge Functions -> Secrets me owner khud daalta hai, repo me kabhi nahi):
 //   ARTICLE_REPO_TOKEN   = GitHub fine-grained token, sirf isi repo par, Contents: read & write
@@ -190,6 +196,91 @@ function checkQuestions(
     if (!tags.ids.has(topic)) return where + 'its topicId "' + topic + '" is not in the topic list.';
     const period = String(q.periodId ?? "");
     if (period && !tags.periods.has(period)) return where + 'its periodId "' + period + '" is not a period.';
+  }
+  return null;
+}
+
+/* ---------- Daily (Quick) quiz (owner, 2026-11-27) ----------
+   Daily quiz ki file bhi PUBLIC hai: assets/instant/<period>-<level>.json (rule 8).
+   Yahan ka kaam **naya bank banana nahi** — site par 40 bank pehle se hain, aur naya bank apne page
+   ka text aur buttons bhi maangta hai (Claude ka kaam). Isliye sirf us file par likha jata hai jo
+   pehle se maujood hai, aur uska bankId/period/level badla nahi ja sakta.
+
+   Sabse badi baat: **ids jami hui hain** (rule 8 aur 12). Student ka saved progress question ki id
+   par tika hai, isliye koi purani id gayab nahi ho sakti aur prefix wahi rehta hai. Prefix file ki
+   apni ids se padha jata hai, likha nahi gaya — taaki ye code rule 8 ki table se kabhi na bhatke. */
+const DAILY_FILE = /^[a-z0-9]+(?:-[a-z0-9]+)*-(easy|hard)\.json$/;
+
+// "ac-e-01" -> "ac-e-"
+function idPrefix(ids: string[]): string {
+  if (!ids.length) return "";
+  const m = ids[0].match(/^(.*-)\d+$/);
+  if (!m) return "";
+  const p = m[1];
+  return ids.every((id) => id.startsWith(p)) ? p : "";
+}
+
+function checkDaily(
+  next: Record<string, unknown>, now: Record<string, unknown>,
+  tags: { ids: Set<string>; periods: Set<string> },
+): string | null {
+  for (const key of ["bankId", "period", "level"]) {
+    if (String(next[key] ?? "") !== String(now[key] ?? "")) {
+      return "the file says it is another quiz (" + key + ").";
+    }
+  }
+  const rev = Number(next.rev);
+  const revNow = Number(now.rev) || 1;
+  if (!Number.isInteger(rev) || rev <= revNow) {
+    return "its revision number must be above " + revNow + ", so readers' browsers pick up the new questions.";
+  }
+  const qs = next.questions;
+  if (!Array.isArray(qs) || !qs.length) return "it has no questions.";
+
+  const oldQs = (Array.isArray(now.questions) ? now.questions : []) as Record<string, unknown>[];
+  const oldIds = oldQs.map((q) => String((q || {}).id ?? "")).filter(Boolean);
+  const prefix = idPrefix(oldIds);
+  const everyReason = oldQs.length > 0 && oldQs.every((q) => String((q || {}).explanation ?? "").trim());
+
+  const seen = new Set<string>();
+  let noReason = 0;
+  for (let i = 0; i < qs.length; i++) {
+    const q = (qs[i] || {}) as Record<string, unknown>;
+    const where = "question " + (i + 1) + ": ";
+    const id = String(q.id ?? "");
+    if (!id) return where + "it has no id.";
+    if (prefix && !id.startsWith(prefix)) return where + 'its id "' + id + '" does not belong to this quiz.';
+    if (seen.has(id)) return where + 'the id "' + id + '" is in this file twice.';
+    seen.add(id);
+    if (!String(q.question ?? "").trim()) return where + "it has no question.";
+    const opts = q.options;
+    if (!Array.isArray(opts) || (opts.length !== 4 && opts.length !== 2)) {
+      return where + "a question needs four options, or two for a True / False question.";
+    }
+    const clean = opts.map((o) => String(o ?? "").trim());
+    if (clean.some((o) => !o)) return where + "one of its options is empty.";
+    if (new Set(clean).size !== clean.length) return where + "two of its options are the same.";
+    const right = Number(q.correct_option_id);
+    if (!Number.isInteger(right) || right < 0 || right >= clean.length) {
+      return where + "the right option is not marked 0 to " + (clean.length - 1) + ".";
+    }
+    if (!String(q.explanation ?? "").trim()) noReason++;
+    const topic = String(q.topicId ?? "");
+    if (!topic) return where + "it has no topicId.";
+    if (!tags.ids.has(topic)) return where + 'its topicId "' + topic + '" is not in the topic list.';
+    const period = String(q.periodId ?? "");
+    if (period && !tags.periods.has(period)) return where + 'its periodId "' + period + '" is not a period.';
+  }
+
+  const missing = oldIds.filter((id) => !seen.has(id));
+  if (missing.length) {
+    return missing.length + " question" + (missing.length === 1 ? "" : "s") + " on the website " +
+      (missing.length === 1 ? "is" : "are") + " not in this file (" + missing.slice(0, 5).join(", ") +
+      (missing.length > 5 ? ", and more" : "") + "). Ids are never taken away: students' saved answers hang on them.";
+  }
+  if (everyReason && noReason > 0) {
+    return noReason + " question" + (noReason === 1 ? " has" : "s have") +
+      " no reason, but every question on this quiz has one today. Readers would stop seeing it.";
   }
   return null;
 }
@@ -382,6 +473,64 @@ Deno.serve(async (req: Request) => {
       levels: written,
       replaced: Object.keys(shas).length > 0,
       url: "/quizzes/mcq/" + setId.replace(/-set-\d+$/, "") + "/set-" + setId.split("-set-")[1] + "/",
+    }, 200, origin);
+  }
+
+  // PUBLISH-DAILY: ek chal rahe Daily quiz ki nayi file assets/instant/ me (owner, 2026-11-27).
+  // Sirf us file par likha ja sakta hai jo pehle se hai — isliye "file nahi mili" ka matlab hai
+  // naya bank, jo page ka text bhi maangta hai (rule 8), aur wo yahan se nahi hota.
+  if (action === "publish-daily") {
+    const file = String(body.file ?? "").trim().toLowerCase();
+    if (!DAILY_FILE.test(file)) return json({ error: "That is not a Daily quiz file this page can use." }, 400, origin);
+    const text = String(body.text ?? "");
+    if (new TextEncoder().encode(text).length > MAX_BYTES) {
+      return json({ error: "This file is too big. The limit is 400 KB." }, 400, origin);
+    }
+    let next: Record<string, unknown>;
+    try { next = JSON.parse(text); } catch { return json({ error: "This is not a question file this page can read." }, 400, origin); }
+
+    const path = "assets/instant/" + file;
+    const has = await gh("/repos/" + REPO + "/contents/" + path + "?ref=" + BRANCH, repoToken);
+    if (has.status === 404) {
+      return json({
+        error: "There is no Daily quiz with that file on the website. This page can only correct a quiz that is already there; a new one needs its page written first.",
+      }, 404, origin);
+    }
+    if (!has.ok || typeof has.data.content !== "string" || typeof has.data.sha !== "string") {
+      const msg = typeof has.data.message === "string" ? has.data.message : "";
+      return json({ error: "Could not read the quiz on the website (" + has.status + "). " + msg + " Nothing was saved." }, 502, origin);
+    }
+    let now: Record<string, unknown>;
+    try { now = JSON.parse(fromBase64(has.data.content as string)); } catch {
+      return json({ error: "The quiz on the website could not be read. Nothing was saved." }, 502, origin);
+    }
+
+    const csvDaily = await repoText("supabase/data/taxonomy-master-reference.csv", repoToken);
+    if (csvDaily === null) return json({ error: "The topic list could not be read. Please try again." }, 502, origin);
+    const problemDaily = checkDaily(next, now, readTags(csvDaily));
+    if (problemDaily) return json({ error: "This file cannot go on the website — " + problemDaily }, 400, origin);
+
+    const sent = await gh("/repos/" + REPO + "/contents/" + path, repoToken, {
+      method: "PUT",
+      body: JSON.stringify({
+        message: "Update Daily quiz: " + String(now.period ?? file) + " (" + String(now.level ?? "") +
+          ", rev " + Number(next.rev) + ", from /admin/upload-daily/)",
+        content: toBase64(text),
+        branch: BRANCH,
+        sha: has.data.sha as string,
+      }),
+    });
+    if (!sent.ok) {
+      const msg = typeof sent.data.message === "string" ? sent.data.message : "";
+      return json({ error: "The quiz could not be saved (" + sent.status + "). " + msg + " Nothing was saved." }, 502, origin);
+    }
+
+    return json({
+      ok: true,
+      file,
+      rev: Number(next.rev),
+      count: (next.questions as unknown[]).length,
+      url: "/quizzes/daily/" + String(now.bankId ?? "") + "/",
     }, 200, origin);
   }
 
