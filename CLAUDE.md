@@ -465,6 +465,7 @@ writers and works stay under the genre nodes.
   publish) stops. (Extends rule 4.)
 
 ## 13. Not built yet (ask before assuming these exist)
+- **Four plans the owner asked for on 2026-11-27, none started** (full text: `docs/future-plans.md` section 7): **UP PGT English PYQs as paid** papers (the three free years 2000, 2002, 2006 stay free); **UGC NET Paper 1 PYQs, free and paid** (blocked first by the taxonomy: it has no Paper 1 topics, and the owner must supply them, rule 11); **UGC NET mock tests** (Paper II English, and Paper 1 if the owner says so); and **Literary Theory MCQs, free and paid**, where the owner wants the **plan made first** (from the chapter articles, as for the American and Indian English sets) before any page or upload slot is built. Ask the owner the "Decisions owed" lines there before building any of them.
 - **The paid layer** is launched (rule 22): every login paper is paid; the pass goes **On sale** only when the owner ticks it. **Big PDFs go to Cloudflare R2** (owner, 2026-11-07): nothing is built for it; ask before building.
 - `attempts.topic_id` and `attempts.period_id` are `null` for attempts made before the tags reach the
   live site. All 2,000 Daily and 300 Old English MCQ questions now carry `topicId` + `periodId`
