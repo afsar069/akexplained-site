@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/phenomenology-hermeneutics/hero.webp
-hero_class: hero-age hero-article-full hero-theory
+hero_class: hero-age hero-article-full
 title: Phenomenology and Hermeneutics
 description: A guide to phenomenology, hermeneutics, experience and interpretation through four major philosophers, for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

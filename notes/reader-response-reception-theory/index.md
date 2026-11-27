@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/reader-response-reception-theory/hero.webp
-hero_class: hero-age hero-article-full hero-theory
+hero_class: hero-age hero-article-full
 title: Reader-Response and Reception Theory
 description: A guide to reader-response, reception, implied readers and interpretive communities for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
