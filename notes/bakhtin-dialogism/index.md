@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/bakhtin-dialogism/hero.webp
-hero_class: hero-age hero-article-full hero-theory hero-theory-bakhtin
+hero_class: hero-age hero-article-full
 title: Bakhtin and Dialogism
 description: A guide to Bakhtin's dialogism, polyphony, heteroglossia, carnival and chronotope for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/structuralism/hero.webp
-hero_class: hero-age hero-article-full hero-theory
+hero_class: hero-age hero-article-full
 title: Structuralism
 description: A guide to structuralism, Lévi-Strauss, Barthes, Todorov and Greimas for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
