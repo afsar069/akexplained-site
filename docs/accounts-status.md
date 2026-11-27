@@ -6,6 +6,13 @@ Keep it updated when the state changes.
 
 _Last updated: 2026-11-27 (the Daily quiz engine and the free MCQ engine below; the article engine entries are from 2026-11-26); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
 
+## CBT result page animations — 2026-11-27
+
+- The score board keeps its stats, login or dashboard link, question analysis, review actions, PDF, journey and suggestions in their current order.
+- The score card shows an open book below 50%, a progress chart at 50–74%, and a trophy from 75%. The five messages follow the existing thresholds at 30%, 50%, 75% and 90%, using the score after any negative marking. Each illustration plays once through the site's self-hosted Lottie player. The matching WebP is available immediately and stays visible with reduced motion or if the animation cannot load.
+- The question analysis donut reveals its segments clockwise, and the journey bar and score marker travel from 0% to the result together. Each chart plays once when it comes into view. Reduced-motion and print views show the completed charts immediately.
+- The Eleventy build and internal link check passed. Chromium checks covered submission, saved results, review navigation, PDF download, negative marking, the score thresholds and animation fallbacks. The result layout fit widths from 320px to 1440px.
+
 ## Article publish engine — `/admin/upload-article/` — 2026-11-26 (on the branch, NOT merged)
 - Owner asked (Hinglish): the MCQ upload engine is a great help, can we have one for articles too — "men .md file du … or aasani se website par publish ho jaae". Their three choices: the article stays a **`.md` file in the repo** (not a database row), **text only** for now, and **preview then Publish** (no Draft step). Built as CLAUDE.md **rule 24**.
 - How it works: the admin page reads the file, checks it, shows a true preview (the vendored `assets/markdown-it-14.3.3.js`, the same parser and options the build uses), then the Edge Function **`publish-article`** writes `notes/<slug>/index.md` to `main` through the GitHub Contents API. Cloudflare Pages rebuilds, so the article is live in about two to three minutes as a real, indexable page. It is not instant like a paper, and must not be: Google needs the HTML page.

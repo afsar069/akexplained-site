@@ -348,7 +348,6 @@
   /* PYQ: paper ka apna naam (file ka setName, jaise "Paper II — December 2012"); upar ageName "UGC NET English" judta hai. */
   function testName() { return PYQ ? (paper.setName || 'Previous-year paper') : EXAM_DAY ? (paper.setName || setTag()) : EXAM_MOCK ? setTag() : CUSTOM ? 'Your own test' : 'Practice Test ' + (paper.setNumber || 1); }
   function thisSet() { return CUSTOM || EXAM_MOCK ? 'this test' : 'this set'; }
-  function retake() { return CUSTOM ? 'build another test from the same sets' : EXAM_DAY ? 'take this day again' : 'take this set again'; }
 
   /* Kaun sa level kholna hai: pehle jo attempt is browser me rakha hai
      uska (taaki adhoora test wahin se chale), phir ?level=, phir default. */
@@ -1354,6 +1353,75 @@
 
     wireResult(t);
     paintAuthBits(root);
+    animateResultArt();
+  }
+
+  /* Decorative art plays once. The matching still is present before loading and after playback. */
+  function animateResultArt() {
+    var art = $('[data-result-art]', root);
+    var motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!art || motion.matches) return;
+
+    function play() {
+      if (!window.lottie || motion.matches || !art.isConnected) return;
+      var scene = document.createElement('span');
+      scene.className = 'cbt-cup-motion';
+      art.appendChild(scene);
+
+      var animation;
+      function restoreStill() {
+        motion.removeEventListener('change', onMotionChange);
+        art.classList.remove('is-animated');
+        if (animation) animation.destroy();
+        scene.remove();
+      }
+      function onMotionChange(event) {
+        if (event.matches) restoreStill();
+      }
+
+      try {
+        animation = window.lottie.loadAnimation({
+          container: scene, renderer: 'svg', loop: false, autoplay: false,
+          path: '/assets/animations/result-' + art.dataset.resultArt + '.json?v=1',
+          rendererSettings: { focusable: false }
+        });
+      } catch (error) {
+        restoreStill();
+        return;
+      }
+      motion.addEventListener('change', onMotionChange);
+      animation.addEventListener('DOMLoaded', function () {
+        if (motion.matches || !scene.isConnected) { restoreStill(); return; }
+        art.classList.add('is-animated');
+        animation.play();
+      });
+      animation.addEventListener('complete', restoreStill);
+      animation.addEventListener('data_failed', restoreStill);
+      animation.addEventListener('error', restoreStill);
+    }
+
+    if (window.lottie) { play(); return; }
+    var script = document.createElement('script');
+    script.src = '/assets/vendor/lottie-light-5.13.0.min.js';
+    script.onload = play;
+    document.head.appendChild(script);
+  }
+
+  /* Let the reader see each chart fill when it comes into view. */
+  function animateResultCharts() {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var charts = $$('.cbt-donut, .cbt-track', root);
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.intersectionRatio < 0.25) return;
+        observer.unobserve(entry.target);
+        entry.target.classList.remove('is-motion-pending');
+      });
+    }, { threshold: 0.25 });
+    charts.forEach(function (chart) {
+      chart.classList.add('is-motion-pending');
+      observer.observe(chart);
+    });
   }
 
   /* ---------- Login/dashboard ki ek patli patti ----------
@@ -1442,6 +1510,8 @@
   /* ---------- 2. jashn ka card, aur bagal me dono pattiyan ---------- */
   function cheerRow(t) {
     var g = grade(t.pc);
+    var message = t.answered ? g.line :
+      'Try answering a few questions next time. Use the explanations to guide your revision.';
     var score = t.neg ? t.net + '/' + Q.length : t.right + '/' + Q.length;
     var used = (st.startedAt && st.endedAt)
       ? Math.max(1, Math.round((st.endedAt - st.startedAt) / 1000)) : 0;
@@ -1451,11 +1521,8 @@
     return '<div class="cbt-top">' +
       '<section class="cbt-cheer ' + g.cls + '" aria-label="Your score">' +
         '<div class="cbt-cheertop">' +
-          /* Yahan aapki tasveer aayegi. Tab tak jagah khali hai, par gol
-             jitni oonchi — taaki tasveer lagte hi naap theek baithe.
-             Image aane par bas is span ke andar <img> daal dein. */
-          '<span class="cbt-cup" aria-hidden="true">' +
-            '<img src="/assets/trophy.webp" alt="" width="420" height="293">' +
+          '<span class="cbt-cup" data-result-art="' + g.art + '" aria-hidden="true">' +
+            '<img src="/assets/animations/result-' + g.art + '.webp" alt="" width="240" height="240">' +
           '</span>' +
           '<div class="cbt-ringwrap">' +
             '<svg class="cbt-ring" viewBox="0 0 120 120" aria-hidden="true">' +
@@ -1468,8 +1535,8 @@
           '</div>' +
         '</div>' +
         '<p class="cbt-who">' + esc(whoAmI()) + '</p>' +
-        '<p class="cbt-badge">' + g.name + '</p>' +
-        '<p class="cbt-cheermsg">' + g.line + '</p>' +
+        '<p class="cbt-badge">' + esc(resultLabel(g)) + '</p>' +
+        '<p class="cbt-cheermsg">' + (EXAM_MOCK ? '<strong>' + g.name + '</strong>' : '') + message + '</p>' +
         (t.neg ? '<p class="cbt-negnote">' + t.right + ' right, less ' + t.lost +
           ' for ' + t.wrong + ' wrong at −' + t.neg + ' each.</p>' : '') +
         /* history() attempt ko ek hi baar darj karta hai, isliye yahan aur
@@ -1787,8 +1854,15 @@
         '<div class="cbt-anrow cbt-anside">' +
           '<div class="cbt-donutwrap cbt-donutbig">' +
             '<svg class="cbt-donut" viewBox="0 0 120 120" aria-hidden="true">' +
-              seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
-              seg(t.skipped, t.right + t.wrong, 'd-skip') +
+              '<defs><mask id="cbtDonutReveal" maskUnits="userSpaceOnUse" x="0" y="0" width="120" height="120">' +
+                '<circle class="cbt-donut-sweep" cx="60" cy="60" r="42" pathLength="100" fill="none" ' +
+                  'stroke="white" stroke-dasharray="100 100" stroke-dashoffset="0"></circle>' +
+              '</mask></defs>' +
+              '<circle class="cbt-donut-track" cx="60" cy="60" r="42"></circle>' +
+              '<g mask="url(#cbtDonutReveal)">' +
+                seg(t.right, 0, 'd-ok') + seg(t.wrong, t.right, 'd-no') +
+                seg(t.skipped, t.right + t.wrong, 'd-skip') +
+              '</g>' +
             '</svg>' +
             '<p class="cbt-donuttxt"><b>' + Q.length + '</b><span>Questions</span></p>' +
           '</div>' +
@@ -1843,13 +1917,13 @@
           '<span>' + (next ? (next.pc - at) + ' more to reach ' + esc(next.label).toLowerCase()
                             : 'the top of the scale') + '</span></p>' +
       '</div>' +
-      '<div class="cbt-track">' +
-        '<span class="cbt-trackfill" style="width:' + at + '%"></span>' +
+      '<div class="cbt-track" style="--cbt-journey-score:' + at + '%">' +
+        '<span class="cbt-trackfill"></span>' +
         marks.map(function (m) {
           return '<span class="cbt-tick' + (at >= m.pc ? ' is-past' : '') + '" style="left:' + m.pc + '%">' +
             '<i></i><b>' + m.pc + '%</b><em>' + esc(m.label) + '</em></span>';
         }).join('') +
-        '<span class="cbt-you" style="left:' + at + '%"><i></i></span>' +
+        '<span class="cbt-you"><i></i></span>' +
       '</div>' +
       '<p class="cbt-scale"><span>0%</span><span>100%</span></p>' +
     '</section>';
@@ -1980,27 +2054,25 @@
   }
 
   /* ---------------------------------------------------------
-     Paanch darje
-     Naam aur lines sirf yahan hain — badalna ho to bas yahi
-     paanch panktiyan badalni hain, aur kahin kuch nahi.
-     Rang CSS me hain: .cbt-score.b1 se .b5 tak.
+     Result messages follow the existing score bands and use the net score
+     percentage when negative marking is enabled.
      --------------------------------------------------------- */
   function grade(pc) {
-    if (EXAM_MOCK) return {
-      cls: pc >= 75 ? 'b4' : pc >= 50 ? 'b3' : pc >= 30 ? 'b2' : 'b1',
-      name: PYQ ? 'Paper complete' : esc(testName()) + ' complete',
-      line: 'Review your answers below to see what you got right and what to revisit.'
-    };
-    if (pc >= 90) return { cls: 'b5', name: 'Outstanding! You nailed it!',
-      line: 'You are awesome. Almost nothing on this paper got past you. Keep it warm with a short run every week, and move on to the next age.' };
-    if (pc >= 75) return { cls: 'b4', name: 'Bravo! You did a great job.',
-      line: 'A strong paper. Close the few gaps below and this age is as good as finished.' };
-    if (pc >= 50) return { cls: 'b3', name: "Good effort. You're getting there!",
-      line: 'You know this age. What is left is the fine print — the dates, the manuscripts, who signed what.' };
-    if (pc >= 30) return { cls: 'b2', name: 'Needs hard work!',
-      line: 'The shape of the age is there, but not the detail. Read the notes through once, then ' + retake() + ' — detail is the easiest thing to fix.' };
-    return { cls: 'b1', name: 'Very bad — but only for today.',
-      line: 'Almost everyone’s first run on a hard set looks like this. Do it in order: read the full notes, then the fifty quick-revision points, then ' + retake() + '. Nobody learns an age by taking tests on it; the tests only show what the reading left behind.' };
+    if (pc >= 90) return { cls: 'b5', art: 'trophy', name: 'Outstanding work',
+      line: 'Keep what you learned fresh with a short practice session, then move on to a new set.' };
+    if (pc >= 75) return { cls: 'b4', art: 'trophy', name: 'Strong performance',
+      line: 'Review any questions you missed, then try another set to build on your score.' };
+    if (pc >= 50) return { cls: 'b3', art: 'progress', name: 'Good progress',
+      line: 'Review the questions you missed and practise the topic you found hardest.' };
+    if (pc >= 30) return { cls: 'b2', art: 'book', name: 'Keep practising',
+      line: 'Pick one topic you found difficult, review it, then try questions on that topic again.' };
+    return { cls: 'b1', art: 'book', name: 'Build your foundation',
+      line: 'Start with a few questions. Read the explanations, then try a short practice set.' };
+  }
+
+  function resultLabel(grade) {
+    if (!EXAM_MOCK) return grade.name;
+    return PYQ ? 'Paper complete' : testName() + ' complete';
   }
 
   /* ---------------------------------------------------------
@@ -2239,13 +2311,12 @@
     y += 26;
 
     /* ---- score ka dabba ---- */
-    var g = grade(t.pc);
     var score = t.neg ? t.net + '/' + Q.length : t.right + '/' + Q.length;
     rect(M, y, W - 2 * M, 92, [0.96, 0.98, 0.97], TEAL);
     text(M + 18, y + 24, 'YOUR SCORE', 9, true, GREY);
     text(M + 18, y + 66, score, 36, true, TEAL);
     text(M + 24 + width(score, 36, true), y + 66, t.pc + '%', 18, true, INK);
-    var gName = plainText(g.name);
+    var gName = resultLabel(grade(t.pc));
     wrap(gName, 13, true, 250).slice(0, 2).forEach(function (ln, i) {
       text(W - M - 18 - 250, y + 38 + i * 17, ln, 13, true, INK, 'right', 250);
     });
@@ -2371,6 +2442,7 @@
      Result ke sab button
      --------------------------------------------------------- */
   function wireResult(t) {
+    animateResultCharts();
     /* Gol agle frame me bharta hai, warna browser shuruati haalat
        dikhata hi nahi aur animation gayab ho jati hai. */
     var ring = $('.cbt-ring .fill');
