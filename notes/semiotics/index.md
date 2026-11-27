@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/semiotics/hero.webp
-hero_class: hero-age hero-article-full hero-theory-semiotics
+hero_class: hero-age hero-article-full hero-theory hero-theory-semiotics
 title: Semiotics
 description: A guide to semiotics, Peirce's signs, Eco's interpretation and Barthes's cultural myths for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

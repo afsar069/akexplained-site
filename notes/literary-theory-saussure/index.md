@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/literary-theory-saussure/hero.webp
-hero_class: hero-age hero-article-full hero-theory-saussure
+hero_class: hero-age hero-article-full hero-theory hero-theory-saussure
 title: Saussure and Structural Linguistics
 description: A guide to Saussure, linguistic signs, langue and parole, and structural linguistics for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

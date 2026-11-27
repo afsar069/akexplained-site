@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/russian-formalism-new-criticism/hero.webp
-hero_class: hero-age hero-article-full
+hero_class: hero-age hero-article-full hero-theory
 title: Russian Formalism and New Criticism
 description: Russian Formalism, defamiliarization, literary devices and New Criticism explained for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory

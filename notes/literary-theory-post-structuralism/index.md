@@ -1,5 +1,7 @@
 ---
 layout: base.njk
+hero_image: /assets/articles/literary-theory-post-structuralism/hero.webp
+hero_class: hero-age hero-article-full hero-theory
 title: Post-structuralism
 description: A guide to post-structuralism, authorship, discourse and intertextuality for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
@@ -69,6 +71,15 @@ Suppose Kavita's story was written by a student who intended to praise good beha
 
 **Plurality** means that a text can sustain more than one line of meaning. The certificate might signify achievement, conformity or the pressure to please others. These readings gain strength from different connections within the same story. The fact that meanings can multiply does not make all unsupported guesses equally useful.
 
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-1">
+  <figcaption id="theory-diagram-1">How one certificate can carry several meanings</figcaption>
+  <ul role="list">
+    <li><strong>Achievement</strong>The college presents it as a prize for Kavita.</li>
+    <li><strong>Conformity</strong>The prize identifies obedience as behaviour the college values.</li>
+    <li><strong>Pressure</strong>Years of praise for silence give the prize a different meaning when Kavita leaves it behind.</li>
+  </ul>
+</figure>
+
 ### Discourse and the production of knowledge
 
 Foucault moves the discussion from a literary text towards the wider social conditions in which statements become meaningful. A **discourse** is a historically organised practice through which objects of knowledge and ways of discussing them are formed. It involves more than conversation or a collection of words. Rules about evidence, authorised speakers and accepted categories help determine what can count as knowledge.
@@ -86,6 +97,18 @@ In *Discipline and Punish* (1975), Foucault studies the emergence of modern disc
 The connection called **power-knowledge** concerns how practices of power and the production of knowledge support one another. An examination gives an institution information about students and makes their performance comparable. Those results can then justify new forms of supervision and correction. The practices that generate knowledge also help organise the conduct of the people being studied.
 
 A student who knows that attendance is recorded may arrive early without being directly ordered each morning. The possibility of observation becomes part of the student's own conduct. Foucault calls attention to this productive aspect of power because it forms habits and categories of persons. He does not suggest that every institutional practice has identical purposes or effects.
+
+<figure class="article-illustration theory-diagram" aria-labelledby="theory-diagram-2">
+  <figcaption id="theory-diagram-2">How power and knowledge reinforce each other</figcaption>
+  <div class="theory-diagram-path">
+    <strong>An example from the college</strong>
+    <ol class="theory-diagram-steps" role="list">
+      <li><strong>Observe conduct</strong>The college records attendance, marks and behaviour.</li>
+      <li><strong>Classify students</strong>The records help define what counts as a good student.</li>
+      <li><strong>Shape conduct</strong>The categories guide rewards and supervision. Students may adapt their behaviour, which the college observes again.</li>
+    </ol>
+  </div>
+</figure>
 
 ### Other texts within a text
 
@@ -123,6 +146,11 @@ In *S/Z* (1970), Barthes studies Balzac's novella through five interacting codes
 In "From Work to Text" (1971), Barthes distinguishes a work as an object from the text as an activity of signification. A printed novel can be placed on a shelf, but the relations involved in reading cannot be stored in the same way. In *The Pleasure of the Text* (1973), he explores reading through pleasure and **jouissance**, often translated as bliss. The latter can unsettle familiar ways of reading and the reader's established sense of self.
 
 ### Michel Foucault (1926-1984): from the author to the institution
+
+<figure class="article-illustration article-illustration--float article-illustration--portrait">
+  <img src="/assets/articles/literary-theory-post-structuralism/portrait.webp" alt="Painted portrait of Michel Foucault" width="640" height="800" loading="lazy" decoding="async">
+  <figcaption>Michel Foucault. Modern painted interpretation. <a href="https://www.college-de-france.fr/en/chair/michel-foucault-history-of-systems-of-thought-statutory-chair" target="_blank" rel="noopener">Portrait reference</a></figcaption>
+</figure>
 
 Foucault's "What Is an Author?" (1969) responds to the problem of authorship by asking how the author operates within discourse. He calls this role the **author-function**, a historically variable way of attributing, classifying and regulating certain texts. A writer's name can connect several books and influence the way they circulate. An anonymous notice and a signed literary work may consequently receive very different treatment.
 
@@ -196,9 +224,24 @@ In October 1966, Johns Hopkins University in Baltimore hosted a four-day symposi
 
 The story of Kavita can now be read through four questions rather than one search for the writer's intention. Barthes draws attention to the meanings produced when the language of reward meets the refusal of the reward. Foucault asks how the school makes obedience an observable quality and gives certain people the authority to judge it. Kristeva asks how familiar moral stories and official language are transformed when they meet within this story.
 
+<figure class="article-illustration">
+  <img src="/assets/articles/literary-theory-post-structuralism/scene.webp" alt="A student leaves an award certificate on a desk and walks toward a sunlit doorway." width="1200" height="720" loading="lazy" decoding="async">
+  <figcaption>Imagined scene. Kavita leaves her certificate behind, and the story leaves her reasons open to interpretation.</figcaption>
+</figure>
+
 Lacan adds a question about the subject who is supposed to be rewarded. Kavita might have learned to recognise herself through the image of a good student. Her decision to leave the certificate unsettles that image without necessarily revealing a completely independent self. Her act can have several meanings, and the text gives no direct access to her unconscious.
 
 The four questions overlap, but their claims require evidence. A comparison of phrases may support a reading inspired by Barthes or Kristeva. An institutional record might support a historical reading inspired by Foucault. Repeated patterns of desire and identification within the story might support a Lacanian reading.
+
+<figure class="article-illustration criticism-map" aria-labelledby="theory-diagram-3">
+  <figcaption id="theory-diagram-3">Four ways to read Kavita’s decision</figcaption>
+  <ul role="list">
+    <li><strong>Barthes · plurality</strong>What meanings emerge when the language of reward meets Kavita’s refusal of the prize?</li>
+    <li><strong>Foucault · power and knowledge</strong>Who has the authority to define and measure obedience at the college?</li>
+    <li><strong>Kristeva · intertextuality</strong>What changes when the language of a school announcement meets patterns from moral tales?</li>
+    <li><strong>Lacan · the divided subject</strong>What happens to Kavita’s image of herself as a good student when she walks out?</li>
+  </ul>
+</figure>
 
 ### Reading Shakespeare's Hamlet
 

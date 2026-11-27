@@ -1,7 +1,7 @@
 ---
 layout: base.njk
 hero_image: /assets/articles/narratology/hero.webp
-hero_class: hero-age hero-article-full
+hero_class: hero-age hero-article-full hero-theory
 title: Narratology
 description: A guide to narratology, Genette, Bal, Prince, Chatman, narrative time and focalization for BA, MA and UGC-NET students.
 eyebrow: Notes · Literary Theory
