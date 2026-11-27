@@ -15,6 +15,14 @@ _Last updated: 2026-11-27 (the Daily quiz engine and the free MCQ engine below; 
 - Validation: Eleventy built 930 pages, the full internal HTML link check found no unresolved destinations, and 120 Chromium checks passed. Checks compare every existing statistic, topic row, leaderboard entry, streak day, level and chart coordinate with the original renderer, cover 320–1920px, long/escaped names, chosen/default avatars, empty/error/complete states, notification reading, detailed pages, animation fallbacks and keyboard chart controls.
 - Production uses the existing authenticated data loading. The sample data used for the local preview stays outside the repository.
 
+## Taxonomy: 21 theory thinkers added — 2026-11-27
+
+- The Literary Criticism MCQ plan (`docs/literary-criticism-mcq-plan.md`) found that 21 thinkers named in the ten live Literary Theory chapter articles had no `writer` node. The owner approved them ("i approve 21 nodes"). **No school, concept or period node was added** (none was approved).
+- Repo: migration `supabase/migrations/20261127120000_add_theory_thinker_nodes.sql`, `supabase/data/taxonomy-criticism.csv`, `taxonomy-master-reference.csv` and the tagger skill's copy (21 lines each, CRLF kept), and the UGC NET skill zip rebuilt (`python3 tools/build_skill_zip.py`). Rule 11's count is now 1738.
+- Placement: Rosenblatt and Holland under `reader-response-criticism`, Tynianov under `russian-formalism` (their peers sit there); the other 18 directly under `literary-criticism-and-theory`, as A. C. Bradley and the Leavises do. Re-parent with one UPDATE if the owner adds a school.
+- Tested on a scratch Postgres (the real 1717-row master loaded, then the migration twice: 1717, 1738, 1738; no orphans). **Applied to the live database through the connector and read back:** 1738 rows, 21 new `writer` rows with the right parents, 0 orphans. A data insert only, so no new advisor was run.
+- Nothing else from the plan is built (no registry entry, page or upload slot).
+
 ## CBT result page animations — 2026-11-27
 
 - The score board keeps its stats, login or dashboard link, question analysis, review actions, PDF, journey and suggestions in their current order.
