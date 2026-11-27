@@ -14,28 +14,10 @@ const fs = require("fs");
 const path = require("path");
 
 const spec = require("./mcqSpec.json");
+// Master taxonomy ki list ab ek hi jagah se (Daily wala page bhi yahi maangta hai).
+const tags = require("../tools/taxonomy-ids.js");
 
 const SERIES = { american: "American Literature", indian: "Indian English Literature" };
-
-// Master taxonomy: har id, aur kaun si id `period` kind ki hai (build gate yahi maangta hai, rule 12).
-function tags() {
-  const file = path.join(__dirname, "..", "supabase", "data", "taxonomy-master-reference.csv");
-  const ids = [];
-  const periods = [];
-  let text = "";
-  try { text = fs.readFileSync(file, "utf8"); } catch { return { ids, periods }; }
-  const lines = text.split(/\r?\n/);
-  lines.shift(); // header: id,name,kind,parent_id,area
-  for (const line of lines) {
-    if (!line.trim()) continue;
-    const f = line.split(",");
-    const id = (f[0] || "").trim();
-    if (!id) continue;
-    ids.push(id);
-    if ((f[2] || "").trim() === "period") periods.push(id);
-  }
-  return { ids, periods };
-}
 
 module.exports = function () {
   const slots = [];

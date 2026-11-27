@@ -4,7 +4,7 @@ A dated snapshot so a new session (or a different AI) can pick up without re-rea
 The **rules** live in `CLAUDE.md` (rules 9–14); this file is only *current state + what is pending*.
 Keep it updated when the state changes.
 
-_Last updated: 2026-11-27 (the free MCQ engine below; the article engine entries are from 2026-11-26); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
+_Last updated: 2026-11-27 (the Daily quiz engine and the free MCQ engine below; the article engine entries are from 2026-11-26); the Indian English entries are from 2026-11-24, and the rest were last read from the live database on 2026-11-19._
 
 ## Article publish engine — `/admin/upload-article/` — 2026-11-26 (on the branch, NOT merged)
 - Owner asked (Hinglish): the MCQ upload engine is a great help, can we have one for articles too — "men .md file du … or aasani se website par publish ho jaae". Their three choices: the article stays a **`.md` file in the repo** (not a database row), **text only** for now, and **preview then Publish** (no Draft step). Built as CLAUDE.md **rule 24**.
@@ -31,6 +31,15 @@ _Last updated: 2026-11-27 (the free MCQ engine below; the article engine entries
 - Tested: 40 Playwright checks for the new page, the 92 article checks still green, the built site unchanged apart from `/admin/` plus the new page, sitemap identical, link check unchanged.
 - **Not built on purpose:** a brand-new set slot (that is a registry edit, Claude does it once) and the Daily quiz files.
 - Not built on purpose: pictures (still the old way; the page refuses an article whose picture is missing), a Draft step, and the timeline or landing-page card for a new **age** article (that stays a hand edit, CLAUDE.md rule 3).
+
+## Daily quiz engine — `/admin/upload-daily/` — 2026-11-27 (on the branch, NOT merged; the function is NOT redeployed yet)
+- Owner asked, right after the free MCQ engine: "daily quiz wali function add karo lekin ek new section admin page par, ek new card means" — so it is its **own** admin page with its own card, not a mode of another page. Built as CLAUDE.md **rule 26**.
+- It fits because a Daily quiz is a public file too (`assets/instant/<period>-<level>.json`, rule 8). What is different: all **40 banks already exist** (20 periods x easy/hard, 50 questions each, all rev 1), so the page **corrects a quiz students are already using** rather than making one. It reads the live file first and lists what would change, question by question, with a before/after view.
+- Built around the two things rule 8 makes delicate: **ids are frozen** (a missing id is blocking — "Ids are never taken away"; the prefix is read from the live file, never typed), and **reasons may be missing but never lost** (the two Age of Chaucer banks have none; a file that drops a reason is blocking, a file that brings reasons is allowed with a warning that the quiz page's own text needs Claude). Two options are allowed for a True / False question. `rev` rises by itself. The rule 8 step 2 wrong-file check is in: 60% or more matching the other level of the same period is blocking.
+- Parts: `_data/dailyBanks.js` (every bank read from its own file — count, rev, id prefix, reasons, hub address), `admin/upload-daily/index.njk` + `assets/upload-daily.js`, the shared taxonomy reader `tools/taxonomy-ids.js`, and the same Edge Function with `action: "publish-daily"` — which **only writes a file that already exists**, so no new bank can be made from a browser.
+- **Pending: the function must be redeployed (version 7) with the merge.** Until then the live page would answer "That is not something this page can do." Nothing else is pending; no secret, no SQL and no migration are needed.
+- Tested on the branch: `npx @11ty/eleventy` clean; the whole built site byte-identical to `origin/main`'s build except `/admin/` and the new `assets/upload-daily.js`; the link check finds the same pre-existing placeholders and nothing new; **94 Playwright checks** for the new page, and the 92 article and 40 free-MCQ checks still pass.
+- **Not built on purpose:** a brand-new Daily bank (including the planned "The Literature" second bank of rule 8 — it needs the hub page's words, buttons and counts), the Daily hub's own text, and a Draft step.
 
 ## Indian English Literature MCQ plan — 2026-11-24
 - Owner asked (Hinglish): on `/quizzes/mcq/`, plan Indian English literature set by set, the way American literature was planned. Done (CLAUDE.md rule 3, `quizzes/mcq` note): six Indian English ages in `_data/mcqSpec.json` (`"tradition": "indian"`), one per notes article, the same six cards as the timeline: **Introduction 3 sets, Beginnings to 1857 4, 1857 to 1920 5, 1920 to 1947 5, 1947 to 1980 6, 1980 to 2000 6 = 29 planned sets, no questions yet**. The owner may change any title, scope or level.
