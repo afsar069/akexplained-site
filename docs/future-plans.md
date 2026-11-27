@@ -136,6 +136,11 @@ registry line plus a build (rules 18 and 23).
   American 5, Indian English 6; `_data/mcqSpec.json`); there are no theory MCQs. The master taxonomy has the area
   *Literary Criticism and Theory* with schools and thinkers (for example structuralism, post-structuralism, psychoanalytic,
   Marxist and feminist criticism, each with writers and concepts under it).
+- **PLAN DRAFTED 2026-11-27: `docs/literary-theory-mcq-plan.md`** (8 hubs, 34 sets, 3,400 questions; 10 sets can be made now because
+  their articles are live, 24 wait for articles; every name in every scope line is checked by `node tools/theory-mcq-plan.js --check`).
+  **Awaiting the owner's answers (its section 7)**, and one blocker found: 21 thinkers named in the ten live chapters have no node in
+  the master taxonomy (Bakhtin, Husserl, Heidegger, Gadamer, Ricoeur, Peirce, Eco and others), so the owner must approve a node batch
+  or accept coarse fallback tags before the first set is made.
 - **Step 1 is the plan, and nothing else starts until the owner approves it.** Follow the American and Indian English precedent
   (rule 3, `quizzes/mcq`): Claude drafts the plan **from the site's own chapter articles** (every thinker, work and term named in
   a set's one-line scope must be in that article; nothing from outside; checked name by name with a script), and the owner may
